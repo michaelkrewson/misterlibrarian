@@ -7,6 +7,21 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>The Coins Exchanges Won't Let Back In</title>
+    <link>https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</guid>
+    <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
+    <description>CoinJoin — a real, measurable Bitcoin privacy technique — mixes coins in a way that risk-scoring vendors flag and some exchanges won't cleanly accept back. That's a second leak in the supply math besides "lost forever" coins, and a genuinely different one from the STRC/SATA absorption story. I went and sized it. It's real, it's underappreciated, and it's much smaller than either of those two.</description>
+    <category>bitcoin</category>
+    <category>coinjoin</category>
+    <category>exchanges</category>
+    <category>privacy</category>
+    <category>chainalysis</category>
+    <category>wasabi</category>
+    <category>samourai</category>
+    <category>bitcoin treasuries</category>
+  </item>
+  <item>
     <title>The Jar Learns to Hide Which Jar</title>
     <link>https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</guid>
@@ -485,21 +500,6 @@
     <category>fully diluted valuation</category>
     <category>ripple</category>
     <category>dtcc</category>
-  </item>
-  <item>
-    <title>XRP, Basel, and the 1,250 Percent Number</title>
-    <link>https://mistertranslation.com/finance/xrp-basel-and-the-1250-percent-number.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/xrp-basel-and-the-1250-percent-number.html</guid>
-    <pubDate>Wed, 16 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A video making the rounds walks through a real trend — stock exchanges tokenizing shares — then pivots to Basel I, II and III, and lands on a specific claim: the newest paper out of Basel mentions XRP dozens of times, therefore the Bank for International Settlements is about to use it. The paper is real. It does name XRP, a lot. Here's what it actually says, and the one number from the same institution that the video leaves out.</description>
-    <category>xrp</category>
-    <category>ripple</category>
-    <category>cryptocurrency</category>
-    <category>bis</category>
-    <category>basel committee</category>
-    <category>bank regulation</category>
-    <category>tokenization</category>
-    <category>misinformation</category>
   </item>
 </channel>
 </rss>

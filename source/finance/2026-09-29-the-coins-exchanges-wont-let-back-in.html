@@ -1,0 +1,187 @@
+title: The Coins Exchanges Won't Let Back In
+date: 2026-09-29
+tags: bitcoin, coinjoin, exchanges, privacy, chainalysis, wasabi, samourai, bitcoin treasuries
+summary: CoinJoin — a real, measurable Bitcoin privacy technique — mixes coins in a way that risk-scoring vendors flag and some exchanges won't cleanly accept back. That's a second leak in the supply math besides "lost forever" coins, and a genuinely different one from the STRC/SATA absorption story. I went and sized it. It's real, it's underappreciated, and it's much smaller than either of those two.
+meta_desc: CoinJoin coins get risk-flagged at exchanges. Does that shrink Bitcoin's buyable float the way lost coins or treasury buying do? I sized it.
+hero: bank-vault-door.jpg
+hero_alt: The open steel door of a walk-in bank vault, its thick circular locking mechanism visible
+hero_credit: The door to the walk-in vault in the Winona Savings Bank, Winona, Minnesota. Photo by Jonathunder, via Wikimedia Commons, licensed CC BY-SA 3.0.
+draft: false
+---
+
+<p>A question came in about a mechanism I hadn't seen anyone actually size: if exchanges are
+getting pickier about accepting Bitcoin that's passed through a CoinJoin mix, doesn't that
+shrink the pool of coin available to buy, on top of everything else already squeezing the
+float? It's a good question, and the honest answer took some digging — because the pieces of
+it are well documented individually, and nobody seems to have put them next to each other.</p>
+
+<h2>What CoinJoin Actually Is</h2>
+
+<p>CoinJoin is a real, working privacy technique, not a hypothetical. Several people who want
+to break the link between their old coins and their new ones combine their transactions into
+one big joint transaction with many equal-sized outputs, so an outside observer watching the
+chain can no longer tell which input paid which output. Nobody's coins are pooled or held by
+a third party — it's one atomic transaction, cryptographically enforced, that a participant's
+wallet builds and signs itself. A peer-reviewed measurement study presented at the 2026
+Privacy Enhancing Technologies Symposium put a number on how much of this has actually
+happened: coordinator-based CoinJoin implementations have mixed <strong>more than 391,000
+bitcoin since 2018</strong>
+(<a href="https://www.petsymposium.org/popets/2026/popets-2026-0061.php" rel="noopener"
+target="_blank">Svenda, Gavenda, Mavroudis and Hicks, PoPETS 2026</a>). That's not a fringe
+number attached to a fringe practice.</p>
+
+<p>It's also not what it was two years ago. In April 2024, U.S. federal prosecutors arrested
+Samourai Wallet's founders and charged them with money laundering; its Whirlpool
+CoinJoin service went dark that same day. Six weeks later, zkSNACKs — the company that ran
+Wasabi Wallet's coordinator — voluntarily shut its own service down, citing the same
+regulatory pressure. For a moment, CoinJoin looked like it might be over. It wasn't: an
+independent, community-run coordinator called kruw.io picked up Wasabi's protocol and now
+handles essentially all of it — <strong>99% of mixed inputs</strong>, per the same study — and
+has mixed <strong>over 46,000 BTC in the eighteen months since</strong>, more than the
+old coordinator was doing before it shut down. Arresting the operators didn't stop the
+practice; it just moved who runs the coordinator.</p>
+
+<h2>What Exchanges Do With a Mixed Coin</h2>
+
+<p>Here's the part that actually connects to Michael's question. Since 2019, FinCEN guidance
+has treated mixing services as money transmitters, and every major regulated exchange
+subscribes to a blockchain-analytics vendor — Chainalysis, Elliptic, and others — that scores
+every incoming deposit against a database of known addresses and behaviors. CoinJoin output
+is one of the categories that database flags, and it's flagged specifically because a
+CoinJoin's whole purpose is to make the "where did this coin actually come from" question
+unanswerable — which is precisely what an anti-money-laundering system is built to answer.
+Exchange users have repeatedly and publicly reported deposits frozen or accounts sent to
+manual review after sending post-mix coins to Coinbase, Binance and OKX. That's a real,
+recurring pattern, not an isolated complaint.</p>
+
+<p>What it isn't, as far as I can find, is a uniform or published rule. No major exchange
+posts a policy saying "we reject any coin that has ever touched a CoinJoin round." The more
+accurate picture, pieced together from the analytics vendors' own descriptions of how risk
+scoring works, is a sliding scale: direct exposure to a sanctioned address gets blocked
+outright; exposure to a mixer gets treated as elevated risk that sometimes triggers a manual
+review and sometimes doesn't, depending on the exchange, the amount, and how many transaction
+"hops" separate the deposit from the flagged activity. The most common outcome, by several
+accounts, is that the deposit is scored, logged, and credited normally — no action taken. A
+CoinJoin coin isn't handed a red card. It's handed a note in a file that sometimes gets read.</p>
+
+<h2>Sizing the Actual Effect</h2>
+
+<p>So: is this a meaningful second leak in Bitcoin's tradeable float, alongside the lost-forever
+coins <a href="/finance/how-many-bitcoins-are-there.html">this site has already sized</a> and
+the treasury-company absorption <a
+href="/finance/two-point-eight-times-the-halving.html">documented here in detail</a>? Put the
+numbers next to each other and the honest answer is: real, but small — smaller than either of
+those two mechanisms by a wide margin.</p>
+
+<p>Total circulating supply, as of this writing, is a little over 20.09 million BTC. The
+entire eight-year cumulative CoinJoin volume — 391,000 BTC — is under 2% of that, and it's an
+upper bound on the wrong question besides: that figure counts every mixing round a coin ever
+passed through, and the same coin can be mixed more than once, so the number of genuinely
+distinct coins that have ever worn a CoinJoin tag is smaller than 391,000, not larger. The
+currently active pace is the more honest number to compare against a live supply-crunch
+story: roughly 46,000 BTC every eighteen months on the one coordinator that does nearly all
+of today's volume, which works out to something like 31,000 BTC a year. Set that against the
+2.8x-the-halving demand this site measured a few days ago — ETF and treasury buying running
+around 9,000 BTC a <em>day</em>, over three million a year — and CoinJoin's entire annual
+volume is under 1% of it. Set it against Strategy's own ~845,000-BTC treasury and it's about
+3.7% of one company's stack, mixed per year, assuming — generously, and probably wrongly —
+that literally none of it is ever accepted anywhere again.</p>
+
+<figure>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img"
+aria-labelledby="cjbar-title cjbar-desc">
+<title id="cjbar-title">Three Bitcoin supply-side effects, to scale</title>
+<desc id="cjbar-desc">A bar chart comparing three annual Bitcoin flows: CoinJoin volume on
+the dominant current coordinator at about 31,000 BTC a year, new mining issuance at about
+164,000 BTC a year, and ETF-plus-treasury demand at about 3.29 million BTC a year — CoinJoin's
+bar is barely visible next to the other two.</desc>
+<g font-family="Georgia, serif" font-size="15" fill="#2a2a2a">
+<text x="12" y="26">Three annual Bitcoin flows, to scale</text>
+</g>
+<g font-family="Georgia, serif" font-size="13" fill="#444">
+<rect x="180" y="60" width="4" height="16" fill="#8a6d3b"/>
+<text x="192" y="72">CoinJoin volume, current pace (~31,000 BTC/yr)</text>
+<rect x="180" y="110" width="21" height="16" fill="#8a6d3b"/>
+<text x="230" y="122">New mining issuance (~164,000 BTC/yr)</text>
+<rect x="180" y="160" width="420" height="16" fill="#8a6d3b"/>
+<text x="180" y="192">ETF + treasury demand (~3.29 million BTC/yr)</text>
+</g>
+</svg>
+<figcaption>Same units, same scale. CoinJoin's current annual pace is a rounding error next
+to new mining issuance, and mining issuance is itself a rounding error next to structural
+demand — the point this site made about the halving a few days ago, one order of magnitude
+further down.</figcaption>
+</figure>
+
+<h2>Why It's a Different Kind of Leak, Not a Smaller Version of the Same One</h2>
+
+<p>It's worth being precise about what kind of effect this even is, because it's not shrinkage
+the way a lost private key is shrinkage. A coin sitting behind a key nobody can produce is
+gone from the reachable supply, full stop, for anyone, forever. A coin that Coinbase's risk
+model doesn't love is a completely different animal: it hasn't left the economy, it's just
+been pushed toward a narrower set of doors. It can still move peer-to-peer, through an OTC
+desk with a different risk appetite, or through an exchange with looser screening. Nothing
+about a CoinJoin tag makes a coin unspendable — it makes it <em>less convenient to spend at
+the specific venues that do the strictest compliance screening</em>, which happen to be the
+same regulated, KYC'd venues that OTC desks and custodians serving treasury-company buyers
+like Strategy and Strive tend to prefer. That's a real, structural bifurcation of the float
+into a "clean-provenance" tier and an everything-else tier — genuinely underappreciated, and
+genuinely worth naming — but it's friction and cost, not subtraction. Calling it "supply
+removed from the market" overstates what's actually happening to it.</p>
+
+<div class="verdict">
+<strong>The honest summary:</strong> CoinJoin is real, well-measured (391,000+ BTC mixed since
+2018, ~46,000 in the last eighteen months alone), and exchanges genuinely do risk-score and
+sometimes freeze the coins that come out of it — that part of the question checks out
+completely. What doesn't check out, at least not yet, is the size of the effect on a
+supply-crunch story: current CoinJoin volume runs under 1% of annual ETF-plus-treasury
+demand and well under 1% of circulating supply, and what it does to a flagged coin is closer
+to adding friction and rerouting it than removing it from the world. A real, uncounted
+mechanism — at today's scale, a minor one.
+</div>
+
+<h2>The Obvious Adversarial Question</h2>
+
+<p>If narrowing the clean-provenance tier is real, could a large foreign holder — or several
+sovereign holders acting in parallel — deliberately CoinJoin a big stash specifically to keep it
+out of reach of US-regulated buyers and compound Bitcoin's scarcity? The economics argue against
+it as a strategy, on its own terms, and so does the mechanism itself: CoinJoin changes how
+traceable a <em>future sale</em> is, not how much of the existing supply is currently for sale.
+Scarcity is created by holding rather than selling, which El Salvador's and Bhutan's reserves
+already do without any mixing involved — a coin nobody intends to sell is exactly as unavailable
+whether or not it's ever passed through a coordinator. Coordinated mixing across sovereign
+reserves wouldn't accelerate that; it would just spend real fees fogging the glass on a door
+those holders were never planning to walk through anyway. Mixing costs real coordinator and mining fees,
+and its entire purpose is enabling an eventual clean-looking sale — there's no reason to pay for
+that if the coin is never meant to be sold anywhere. Simply holding achieves "not available to US
+exchanges" for free, the way dormant wallets and sovereign reserves already do, without the
+mining-fee cost or the anomaly risk. And doing it at a scale that would actually matter — the
+entire CoinJoin ecosystem combined has moved 391,000 BTC since 2018 — would itself be the kind of
+glaring on-chain anomaly the whole point of mixing is to avoid, which invites more scrutiny, not
+less. The real-world version of large-scale mixing by a state-linked actor is North Korea's
+Lazarus Group laundering <em>stolen</em> crypto to obscure its origin before cashing out — theft
+laundering, not supply engineering, and part of why exchanges got aggressive about CoinJoin risk
+scoring to begin with, which cuts against this scenario rather than for it.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li>391,000 BTC is a sum of mixing-round volume, not a count of distinct coins — I don't have
+  a reliable estimate of how much of that figure is the same coin being mixed multiple times,
+  which means the true "coins that have ever worn this tag" number could be meaningfully
+  smaller than the headline figure, not larger.</li>
+  <li>The exchange-freezing pattern is built from public user reports and analytics vendors'
+  own descriptions of how their risk scoring works, not a disclosed block rate from any
+  exchange. I have no way to measure what fraction of CoinJoin-tagged deposits actually get
+  rejected versus quietly credited, and the honest answer may simply not be public anywhere.</li>
+  <li>I have no evidence, one way or the other, that Strategy's or Strive's OTC counterparties
+  actually screen for CoinJoin exposure at all — the "clean-provenance tier" argument in this
+  piece is a plausible mechanism, not something I've confirmed those specific buyers act on.</li>
+  <li>This is a moving target on both sides. If CoinJoin-style mixing volume keeps growing at
+  or beyond kruw.io's current pace, or exchange compliance regimes tighten from "flag and
+  sometimes review" toward an actual hard block, the ratios above could shift well before this
+  page gets an update. (Worth flagging what this <em>isn't</em> a sign of: separately, Bitcoin's
+  newer BIP-352 silent payments — <a href="the-jar-learns-to-hide-which-jar.html">covered on
+  this site the same day this piece was written</a> — fix a different leak, address reuse, and
+  don't touch a coin's mixing history one way or the other; they're not part of this math.)</li>
+</ul>

@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Eleven Percent for a Hole in Glass — The Librarian&#x27;s Ledger</title>
-<meta name="description" content="Intel rose about 11% on a report it will build Micro LED glass-substrate packaging with AU Optronics. What that actually means."/>
-<link rel="canonical" href="https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html"/>
+<title>The Coins Exchanges Won&#x27;t Let Back In — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="CoinJoin coins get risk-flagged at exchanges. Does that shrink Bitcoin&#x27;s buyable float the way lost coins or treasury buying do? I sized it."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
-<meta property="og:title" content="Eleven Percent for a Hole in Glass"/>
-<meta property="og:description" content="Intel rose about 11% on a report it will build Micro LED glass-substrate packaging with AU Optronics. What that actually means."/>
-<meta property="og:url" content="https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html"/>
-<meta property="og:image" content="https://mistertranslation.com/finance/img/auo-taichung-central-taiwan-science-park.jpg"/>
+<meta property="og:title" content="The Coins Exchanges Won&#x27;t Let Back In"/>
+<meta property="og:description" content="CoinJoin coins get risk-flagged at exchanges. Does that shrink Bitcoin&#x27;s buyable float the way lost coins or treasury buying do? I sized it."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html"/>
+<meta property="og:image" content="https://mistertranslation.com/finance/img/bank-vault-door.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Eleven Percent for a Hole in Glass"/>
-<meta name="twitter:description" content="Intel rose about 11% on a report it will build Micro LED glass-substrate packaging with AU Optronics. What that actually means."/>
-<meta name="twitter:image" content="https://mistertranslation.com/finance/img/auo-taichung-central-taiwan-science-park.jpg"/>
+<meta name="twitter:title" content="The Coins Exchanges Won&#x27;t Let Back In"/>
+<meta name="twitter:description" content="CoinJoin coins get risk-flagged at exchanges. Does that shrink Bitcoin&#x27;s buyable float the way lost coins or treasury buying do? I sized it."/>
+<meta name="twitter:image" content="https://mistertranslation.com/finance/img/bank-vault-door.jpg"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -616,271 +616,216 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <script src="share.js?v=a8bba5ef16" defer></script>
   
   <article class="entry">
-    <h1 class="etitle">Eleven Percent for a Hole in Glass</h1>
-    <p class="edate"><span class="edate-text">SEPTEMBER 21, 2026</span><span class="share-widget"></span></p>
-    <figure class="hero"><img src="img/auo-taichung-central-taiwan-science-park.jpg" alt="An AUO office building in Taichung&#x27;s Central Taiwan Science Park at dusk, its blue-green glass curtain wall and white AUO logo seen through the gap in a large red public sculpture whose polished mirrored inner surface reflects the road, trees and passing traffic" width="1600" height="1199" loading="eager"/><figcaption>AUO's building in the Central Taiwan Science Park, Taichung. Photo by Briáxis F. Mendes (孟必思), 25 June 2020, CC BY-SA 4.0, via Wikimedia Commons.</figcaption></figure>
-<p>Intel opened Monday, September 21, sharply higher and stayed there, closing up roughly 11 percent
-at about $121 after a Friday close near $108.50. On roughly five billion shares outstanding, that is
-something like sixty billion dollars of market value added in a session. The reported reason: Intel
-is working with AU Optronics — AUO, the Taiwanese display-panel maker — on Micro LED-based advanced
-packaging, embedding chips into glass substrates and wiring them up with through-glass vias, aimed
-at co-packaged optics and high-density compute.</p>
+    <h1 class="etitle">The Coins Exchanges Won&#x27;t Let Back In</h1>
+    <p class="edate"><span class="edate-text">SEPTEMBER 29, 2026</span><span class="share-widget"></span></p>
+    <figure class="hero"><img src="img/bank-vault-door.jpg" alt="The open steel door of a walk-in bank vault, its thick circular locking mechanism visible" width="1600" height="999" loading="eager"/><figcaption>The door to the walk-in vault in the Winona Savings Bank, Winona, Minnesota. Photo by Jonathunder, via Wikimedia Commons, licensed CC BY-SA 3.0.</figcaption></figure>
+<p>A question came in about a mechanism I hadn't seen anyone actually size: if exchanges are
+getting pickier about accepting Bitcoin that's passed through a CoinJoin mix, doesn't that
+shrink the pool of coin available to buy, on top of everything else already squeezing the
+float? It's a good question, and the honest answer took some digging — because the pieces of
+it are well documented individually, and nobody seems to have put them next to each other.</p>
 
-<p>That sentence contains four pieces of jargon and one fact about money. It is worth pulling apart,
-because the engineering underneath it is genuinely one of the more important problems in computing
-right now — and because the thing that moved sixty billion dollars was a newspaper story that neither
-company has confirmed.</p>
+<h2>What CoinJoin Actually Is</h2>
 
-<h2>What Was Actually Reported, and What Wasn't</h2>
+<p>CoinJoin is a real, working privacy technique, not a hypothetical. Several people who want
+to break the link between their old coins and their new ones combine their transactions into
+one big joint transaction with many equal-sized outputs, so an outside observer watching the
+chain can no longer tell which input paid which output. Nobody's coins are pooled or held by
+a third party — it's one atomic transaction, cryptographically enforced, that a participant's
+wallet builds and signs itself. A peer-reviewed measurement study presented at the 2026
+Privacy Enhancing Technologies Symposium put a number on how much of this has actually
+happened: coordinator-based CoinJoin implementations have mixed <strong>more than 391,000
+bitcoin since 2018</strong>
+(<a href="https://www.petsymposium.org/popets/2026/popets-2026-0061.php" rel="noopener"
+target="_blank">Svenda, Gavenda, Mavroudis and Hicks, PoPETS 2026</a>). That's not a fringe
+number attached to a fringe practice.</p>
 
-<p>The chain starts in Taipei. Taiwan's <i>United Daily News</i> and its business title
-<i>Economic Daily News</i> ran the story on the morning of September 21; DigiTimes and the trade
-press picked it up within hours; US premarket coverage followed. Intel declined to comment. AUO has
-not issued a press release naming Intel. The closest thing to a company statement is chairman Paul
-Peng telling an earnings call that AUO is working on advanced packaging and glass substrates with
-partners he would not name.</p>
+<p>It's also not what it was two years ago. In April 2024, U.S. federal prosecutors arrested
+Samourai Wallet's founders and charged them with money laundering; its Whirlpool
+CoinJoin service went dark that same day. Six weeks later, zkSNACKs — the company that ran
+Wasabi Wallet's coordinator — voluntarily shut its own service down, citing the same
+regulatory pressure. For a moment, CoinJoin looked like it might be over. It wasn't: an
+independent, community-run coordinator called kruw.io picked up Wasabi's protocol and now
+handles essentially all of it — <strong>99% of mixed inputs</strong>, per the same study — and
+has mixed <strong>over 46,000 BTC in the eighteen months since</strong>, more than the
+old coordinator was doing before it shut down. Arresting the operators didn't stop the
+practice; it just moved who runs the coordinator.</p>
 
-<p>So the load-bearing public artifacts are a Taiwanese newspaper report, a US patent — Intel holds
-one titled, in the flat poetry of the patent office, <i>IC Package with Micro LEDs</i>, covering
-chips embedded in glass with through-glass vias feeding them — and a set of technology demonstrations
-AUO made at SEMICON Taiwan on September 2–4. That is a real pattern of evidence. It is not a signed
-deal, and the difference matters for anyone reading the tape.</p>
+<h2>What Exchanges Do With a Mixed Coin</h2>
 
-<h2>Co-Packaged Optics, in Plain Terms</h2>
+<p>Here's the part that actually connects to Michael's question. Since 2019, FinCEN guidance
+has treated mixing services as money transmitters, and every major regulated exchange
+subscribes to a blockchain-analytics vendor — Chainalysis, Elliptic, and others — that scores
+every incoming deposit against a database of known addresses and behaviors. CoinJoin output
+is one of the categories that database flags, and it's flagged specifically because a
+CoinJoin's whole purpose is to make the "where did this coin actually come from" question
+unanswerable — which is precisely what an anti-money-laundering system is built to answer.
+Exchange users have repeatedly and publicly reported deposits frozen or accounts sent to
+manual review after sending post-mix coins to Coinbase, Binance and OKX. That's a real,
+recurring pattern, not an isolated complaint.</p>
 
-<p>Here is the problem the whole thing exists to solve. Inside an AI datacenter, the chips have gotten
-very fast and the wires between them have not. Today, when a signal leaves a switch or an accelerator
-to travel more than a few centimeters, it goes out through a pluggable optical transceiver — a module
-the size of a stick of gum that plugs into the front panel, converts electrical signals to light,
-and sends them down a fiber. Those modules work. They also sit at the edge of the box, which means
-the electrical signal has to survive the whole journey across the circuit board first, burning power
-and degrading the further it goes.</p>
+<p>What it isn't, as far as I can find, is a uniform or published rule. No major exchange
+posts a policy saying "we reject any coin that has ever touched a CoinJoin round." The more
+accurate picture, pieced together from the analytics vendors' own descriptions of how risk
+scoring works, is a sliding scale: direct exposure to a sanctioned address gets blocked
+outright; exposure to a mixer gets treated as elevated risk that sometimes triggers a manual
+review and sometimes doesn't, depending on the exchange, the amount, and how many transaction
+"hops" separate the deposit from the flagged activity. The most common outcome, by several
+accounts, is that the deposit is scored, logged, and credited normally — no action taken. A
+CoinJoin coin isn't handed a red card. It's handed a note in a file that sometimes gets read.</p>
 
-<p>Co-packaged optics moves the light-making apparatus off the front panel and into the chip package
-itself, sitting beside the silicon. The electrical distance collapses from centimeters to millimeters.
-Nvidia's own published comparison against pluggables claims roughly 3.5× better power efficiency,
-far better signal integrity, and about 10× better resiliency from having fewer active components in
-the path — and, at datacenter scale, tens of megawatts saved. TSMC's COUPE platform, which both Nvidia
-and Broadcom have said they use, is quoted at roughly half the power and a tenth the latency of the
-incumbent approach when integrated onto the packaging substrate, with a further step change promised
-when it moves onto the interposer.</p>
+<h2>Sizing the Actual Effect</h2>
 
-<p>Those are vendor numbers, and vendor numbers are always the best day the technology ever has. But
-the direction is not in dispute anywhere in the industry: within a few years, the interconnect inside
-an AI cluster is going optical, because copper runs out of headroom before the workloads do.</p>
+<p>So: is this a meaningful second leak in Bitcoin's tradeable float, alongside the lost-forever
+coins <a href="/finance/how-many-bitcoins-are-there.html">this site has already sized</a> and
+the treasury-company absorption <a
+href="/finance/two-point-eight-times-the-halving.html">documented here in detail</a>? Put the
+numbers next to each other and the honest answer is: real, but small — smaller than either of
+those two mechanisms by a wide margin.</p>
 
-<h2>The Micro LED Wrinkle</h2>
+<p>Total circulating supply, as of this writing, is a little over 20.09 million BTC. The
+entire eight-year cumulative CoinJoin volume — 391,000 BTC — is under 2% of that, and it's an
+upper bound on the wrong question besides: that figure counts every mixing round a coin ever
+passed through, and the same coin can be mixed more than once, so the number of genuinely
+distinct coins that have ever worn a CoinJoin tag is smaller than 391,000, not larger. The
+currently active pace is the more honest number to compare against a live supply-crunch
+story: roughly 46,000 BTC every eighteen months on the one coordinator that does nearly all
+of today's volume, which works out to something like 31,000 BTC a year. Set that against the
+2.8x-the-halving demand this site measured a few days ago — ETF and treasury buying running
+around 9,000 BTC a <em>day</em>, over three million a year — and CoinJoin's entire annual
+volume is under 1% of it. Set it against Strategy's own ~845,000-BTC treasury and it's about
+3.7% of one company's stack, mixed per year, assuming — generously, and probably wrongly —
+that literally none of it is ever accepted anywhere again.</p>
 
-<p>Here is where the Intel–AUO report stops being a me-too story. Nvidia and Broadcom are doing this
-with silicon photonics — lasers, modulators, waveguides etched in silicon, running few channels
-extremely fast. What AUO has been demonstrating is different: arrays of Micro LEDs, the same
-technology the display industry spent a decade and a fortune trying to put in televisions and
-watches, used as optical transmitters.</p>
+<figure>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img"
+aria-labelledby="cjbar-title cjbar-desc">
+<title id="cjbar-title">Three Bitcoin supply-side effects, to scale</title>
+<desc id="cjbar-desc">A bar chart comparing three annual Bitcoin flows: CoinJoin volume on
+the dominant current coordinator at about 31,000 BTC a year, new mining issuance at about
+164,000 BTC a year, and ETF-plus-treasury demand at about 3.29 million BTC a year — CoinJoin's
+bar is barely visible next to the other two.</desc>
+<g font-family="Georgia, serif" font-size="15" fill="#2a2a2a">
+<text x="12" y="26">Three annual Bitcoin flows, to scale</text>
+</g>
+<g font-family="Georgia, serif" font-size="13" fill="#444">
+<rect x="180" y="60" width="4" height="16" fill="#8a6d3b"/>
+<text x="192" y="72">CoinJoin volume, current pace (~31,000 BTC/yr)</text>
+<rect x="180" y="110" width="21" height="16" fill="#8a6d3b"/>
+<text x="230" y="122">New mining issuance (~164,000 BTC/yr)</text>
+<rect x="180" y="160" width="420" height="16" fill="#8a6d3b"/>
+<text x="180" y="192">ETF + treasury demand (~3.29 million BTC/yr)</text>
+</g>
+</svg>
+<figcaption>Same units, same scale. CoinJoin's current annual pace is a rounding error next
+to new mining issuance, and mining issuance is itself a rounding error next to structural
+demand — the point this site made about the halving a few days ago, one order of magnitude
+further down.</figcaption>
+</figure>
 
-<p>AUO calls the architecture "wide and slow." Instead of a handful of very fast coherent channels,
-you use a massively parallel array of small, cheap, incoherent emitters, each running at a modest
-rate. The published specs from its SEMICON demonstrations: reach up to about 10 meters, stable to
-125°C, an operating lifetime above 30,000 hours, with low power draw and therefore low added thermal
-load. Ennostar supplies the Micro LED transmitters, Tyntek the photodetectors on the receiving end,
-Daxin the redistribution-layer materials, Corning the glass.</p>
+<h2>Why It's a Different Kind of Leak, Not a Smaller Version of the Same One</h2>
 
-<p>Ten meters is the tell. This is not a technology for crossing a datacenter hall; it is for crossing
-a rack, or a row — exactly the distances that matter when a single "AI server" has become a
-refrigerator-sized assembly of dozens of accelerators that all need to talk to each other as though
-they were one chip. A parallel LED array has no laser to fail and is built on manufacturing lines that
-already exist at enormous scale. It also has a hard ceiling on reach that silicon photonics does not.
-Those are two different bets on the same future, not one bet with two logos on it.</p>
+<p>It's worth being precise about what kind of effect this even is, because it's not shrinkage
+the way a lost private key is shrinkage. A coin sitting behind a key nobody can produce is
+gone from the reachable supply, full stop, for anyone, forever. A coin that Coinbase's risk
+model doesn't love is a completely different animal: it hasn't left the economy, it's just
+been pushed toward a narrower set of doors. It can still move peer-to-peer, through an OTC
+desk with a different risk appetite, or through an exchange with looser screening. Nothing
+about a CoinJoin tag makes a coin unspendable — it makes it <em>less convenient to spend at
+the specific venues that do the strictest compliance screening</em>, which happen to be the
+same regulated, KYC'd venues that OTC desks and custodians serving treasury-company buyers
+like Strategy and Strive tend to prefer. That's a real, structural bifurcation of the float
+into a "clean-provenance" tier and an everything-else tier — genuinely underappreciated, and
+genuinely worth naming — but it's friction and cost, not subtraction. Calling it "supply
+removed from the market" overstates what's actually happening to it.</p>
 
-<h2>Why Glass, and What a Hole in It Is Worth</h2>
-
-<p>The other half of the report is the substrate — the layered board the silicon sits on, which
-carries power up to the chip and signals out of it. For decades that has been an organic material:
-essentially a very sophisticated resin laminate. It is cheap, it is mature, and as AI packages have
-swollen to enormous sizes with stacks of high-bandwidth memory crowded around a processor, it has
-started to run out of road. Organic substrates warp when heated. Over a large package, warping means
-the chip and the board no longer line up where they are supposed to, which breaks the tiny solder
-connections between them.</p>
-
-<p>Glass is dimensionally stiffer, flatter, and far more stable across temperature. When Intel
-announced its glass-substrate program in September 2023, its claims were a 10× increase in interconnect
-density against organic, 50 percent less pattern distortion, tolerance of higher temperatures, and
-flatness good enough to improve the depth of focus for lithography on the package itself — all of it
-framed as the road to a trillion transistors in one package by 2030. In January 2026 Intel showed
-the first sample joining its EMIB bridging technology to a glass core without micro-cracking.</p>
-
-<p>The hard part — the part the whole industry is stuck on — is the through-glass via. To get power
-and signals from one face of the substrate to the other you have to drill microscopic holes clean
-through a brittle sheet, hundreds of thousands of them, perfectly positioned, and then reliably fill
-them with metal. Glass does not enjoy being drilled. TGV yield is the gating step on the whole
-transition, and the consensus window for glass substrates reaching real commercial volume is somewhere
-in 2027–2030.</p>
-
-<p>Which is the precise reason a display company is in this story at all. Nobody on earth has more
-experience handling huge sheets of thin glass through high-precision patterning steps at industrial
-yield than the panel industry. AUO has the glass handling, the redistribution-layer process, and the
-Micro LED line — three of the things Intel's stated roadmap needs and does not own. Intel brings the
-packaging architecture, the customers, and a foundry business that needs something to sell that TSMC
-cannot sell better.</p>
-
-<div class="aside">
-  <p><strong>The display company you stopped thinking about.</strong> AUO is not a semiconductor
-  company that happens to make screens. It is what is left of Taiwan's LCD panel industry after two
-  decades of Chinese capacity, and its display business has been losing money — a net loss of about
-  NT$1.14 billion in the first quarter of 2026, with the display segment still in the red in the
-  second. Market expectations for 2026 have display falling below half of total revenue; management's
-  stated target is for its two new business lines to be 70 percent of revenue by 2030. It has approved
-  something on the order of NT$8.6 billion in capital spending for through-glass-via, redistribution-
-  layer and glass-core pilot lines. Read the Intel report against that backdrop and the incentive is
-  obvious in both directions: Intel needs glass expertise it does not have, and AUO needs a second act
-  badly enough to fund the pilot lines before anyone has publicly ordered anything from them.</p>
+<div class="verdict">
+<strong>The honest summary:</strong> CoinJoin is real, well-measured (391,000+ BTC mixed since
+2018, ~46,000 in the last eighteen months alone), and exchanges genuinely do risk-score and
+sometimes freeze the coins that come out of it — that part of the question checks out
+completely. What doesn't check out, at least not yet, is the size of the effect on a
+supply-crunch story: current CoinJoin volume runs under 1% of annual ETF-plus-treasury
+demand and well under 1% of circulating supply, and what it does to a flagged coin is closer
+to adding friction and rerouting it than removing it from the world. A real, uncounted
+mechanism — at today's scale, a minor one.
 </div>
 
-<h2>Where This Sits in Intel's Larger Story</h2>
+<h2>The Obvious Adversarial Question</h2>
 
-<p>Advanced packaging is the one part of Intel that never stopped being competitive. EMIB, its
-embedded silicon bridge for connecting chiplets side by side, and Foveros, its die-stacking
-technology, are shipping products, not slideware — and packaging capacity has been a genuine industry
-bottleneck, with TSMC's CoWoS allocation functioning as a hard constraint on how many AI accelerators
-the world can build. An Intel that can offer a differentiated packaging path — glass cores, optical
-I/O, EMIB — has something to sell to external customers that does not require first winning the
-leading-edge transistor race.</p>
-
-<p>And it needs one. The company has spent 2026 rebuilding a balance sheet and a story at the same
-time: an unusual direct US government equity stake reported at $8.9 billion, a $5 billion investment
-from Nvidia, money from SoftBank, 18A in high-volume production at Fab 52 in Arizona with named
-commitments from Microsoft and AWS, and 14A in development in Oregon targeting volume production in
-2028. The open question that has followed Intel Foundry from the beginning is unchanged: can it win a
-large, disclosed, external customer. Packaging is the likeliest place that first yes comes from, which
-is why a packaging headline moves this stock more than it would move most others.</p>
-
-<h2>Proportionate, or Speculative?</h2>
-
-<p>Both, and it is worth separating the halves.</p>
-
-<p>The proportionate part: if you believe optical interconnect is where datacenter economics go next,
-and that glass substrates are how large AI packages get built after organic runs out, then an Intel
-that has locked in the one supplier ecosystem with genuine glass-at-scale manufacturing is worth
-repricing. That is not a rounding error in the story; it is arguably the whole story of Intel Foundry's
-differentiation.</p>
-
-<p>The speculative part is everything else. There is no announced agreement, no scope, no term, no
-volume, no dollar figure, and no date. AUO's own stated ambition is to commercialize advanced CPO
-within two to three years, which is corporate for "not soon," and the industry's own TGV yield problem
-is unsolved in public. Nothing here shows up in revenue this year or next.</p>
-
-<p>And Monday was not a clean experiment. The same session carried a Tigress Financial price-target
-raise to $145 from $118, fresh reports of memory-manufacturing talks with SK Hynix, and a broad
-semiconductor rally with the Nasdaq up over 2 percent. Assigning all eleven points to one unconfirmed
-Taiwanese newspaper story is a narrative, not a measurement. The most honest description of Monday is
-that a market already primed to believe an Intel turnaround story got handed a new reason to believe
-it, and did what primed markets do.</p>
-
-<p>There is a version of this where, in three years, embedding LEDs in drilled glass turns out to be
-how the AI buildout got its bandwidth, and Intel bought the front of that queue for the cost of a
-partnership. There is another version where the through-glass via stays stubborn, silicon photonics
-gets there first, and this is a patent and a press cycle. Monday priced the first one. Neither company
-has yet said which it is.</p>
+<p>If narrowing the clean-provenance tier is real, could a large foreign holder — or several
+sovereign holders acting in parallel — deliberately CoinJoin a big stash specifically to keep it
+out of reach of US-regulated buyers and compound Bitcoin's scarcity? The economics argue against
+it as a strategy, on its own terms, and so does the mechanism itself: CoinJoin changes how
+traceable a <em>future sale</em> is, not how much of the existing supply is currently for sale.
+Scarcity is created by holding rather than selling, which El Salvador's and Bhutan's reserves
+already do without any mixing involved — a coin nobody intends to sell is exactly as unavailable
+whether or not it's ever passed through a coordinator. Coordinated mixing across sovereign
+reserves wouldn't accelerate that; it would just spend real fees fogging the glass on a door
+those holders were never planning to walk through anyway. Mixing costs real coordinator and mining fees,
+and its entire purpose is enabling an eventual clean-looking sale — there's no reason to pay for
+that if the coin is never meant to be sold anywhere. Simply holding achieves "not available to US
+exchanges" for free, the way dormant wallets and sovereign reserves already do, without the
+mining-fee cost or the anomaly risk. And doing it at a scale that would actually matter — the
+entire CoinJoin ecosystem combined has moved 391,000 BTC since 2018 — would itself be the kind of
+glaring on-chain anomaly the whole point of mixing is to avoid, which invites more scrutiny, not
+less. The real-world version of large-scale mixing by a state-linked actor is North Korea's
+Lazarus Group laundering <em>stolen</em> crypto to obscure its origin before cashing out — theft
+laundering, not supply engineering, and part of why exchanges got aggressive about CoinJoin risk
+scoring to begin with, which cuts against this scenario rather than for it.</p>
 
 <h2>Where I Could Be Wrong</h2>
 
 <ul>
-  <li><strong>This may not be a partnership at all in any formal sense.</strong> The entire story rests
-  on Taiwanese press reporting — <i>United Daily News</i> and <i>Economic Daily News</i>, picked up by
-  DigiTimes and the trade press. Intel declined to comment, AUO has not confirmed it, and I have found
-  no signed agreement, joint statement or filing from either company. "Reportedly in talks" and
-  "partnering" are being used interchangeably in coverage; they are not the same thing.</li>
-  <li><strong>The exact size of the move depends on which quote you use.</strong> Premarket figures
-  ranged from about 5.9 percent early to over 11 percent later in the session, and the close I have is
-  roughly 11 percent to about $121 from a Friday close near $108.50. The "about sixty billion dollars"
-  figure uses a share count of roughly five billion from a data aggregator, not from a filing I've
-  read, so treat it as an order of magnitude rather than a number.</li>
-  <li><strong>The Micro LED versus silicon photonics framing is mine.</strong> Reporting treats them as
-  complementary; I have described them as two distinct bets. That is my reading of the reach and channel
-  architecture, not a claim either company has made, and it is entirely possible Intel intends to ship
-  both for different distances.</li>
-  <li><strong>All the performance numbers here are vendor numbers.</strong> Nvidia's power and resiliency
-  multiples, TSMC's COUPE figures, Intel's 10× interconnect density, AUO's 10 meters and 30,000 hours —
-  every one comes from the company selling the technology, measured under conditions it chose. I have
-  found no independent benchmark for any of them.</li>
-  <li><strong>The "packaging is Intel's best path to a foundry customer" argument is an inference.</strong>
-  It is a widely held one, but Intel has not said it, and a leading-edge logic win on 14A would change
-  the picture more than any packaging deal.</li>
-  <li><strong>I hold no position in Intel, AUO, Nvidia, TSMC or any of the suppliers named here.</strong>
-  My own book is Bitcoin through an ETF and Strategy Inc. An Intel packaging partnership is a story
-  about where compute capacity comes from, not about monetary policy or scarcity, and it changes nothing
-  about what I own or why. None of this is investment advice — it is one reader working out what a
-  headline actually said.</li>
+  <li>391,000 BTC is a sum of mixing-round volume, not a count of distinct coins — I don't have
+  a reliable estimate of how much of that figure is the same coin being mixed multiple times,
+  which means the true "coins that have ever worn this tag" number could be meaningfully
+  smaller than the headline figure, not larger.</li>
+  <li>The exchange-freezing pattern is built from public user reports and analytics vendors'
+  own descriptions of how their risk scoring works, not a disclosed block rate from any
+  exchange. I have no way to measure what fraction of CoinJoin-tagged deposits actually get
+  rejected versus quietly credited, and the honest answer may simply not be public anywhere.</li>
+  <li>I have no evidence, one way or the other, that Strategy's or Strive's OTC counterparties
+  actually screen for CoinJoin exposure at all — the "clean-provenance tier" argument in this
+  piece is a plausible mechanism, not something I've confirmed those specific buyers act on.</li>
+  <li>This is a moving target on both sides. If CoinJoin-style mixing volume keeps growing at
+  or beyond kruw.io's current pace, or exchange compliance regimes tighten from "flag and
+  sometimes review" toward an actual hard block, the ratios above could shift well before this
+  page gets an update. (Worth flagging what this <em>isn't</em> a sign of: separately, Bitcoin's
+  newer BIP-352 silent payments — <a href="the-jar-learns-to-hide-which-jar.html">covered on
+  this site the same day this piece was written</a> — fix a different leak, address reuse, and
+  don't touch a coin's mixing history one way or the other; they're not part of this math.)</li>
 </ul>
 
-<h2>Sources</h2>
-<ol class="sources">
-  <li>MicroLED-Info. <i>Intel to partner with AUO on microLED packaging for next-gen optical I/O
-  solutions.</i> 21 September 2026.
-  <a href="https://www.microled-info.com/intel-partner-auo-microled-packaging-next-gen-optical-io-solutions"
-  rel="noopener" target="_blank">microled-info.com</a></li>
-  <li>DigiTimes. <i>Intel reportedly in talks with AUO on advanced packaging.</i> 21 September 2026.
-  <a href="https://www.digitimes.com/news/a20260921VL205/intel-packaging-auo-display-cpo.html"
-  rel="noopener" target="_blank">digitimes.com</a></li>
-  <li>Wccftech. <i>AU Optronics And Intel Could Reshape Chip Packaging, Merging Micro LED Displays
-  With Silicon &amp; CPOs To Chase AI Demands</i> (citing <i>United Daily News</i>). September 2026.
-  <a href="https://wccftech.com/au-optronics-intel-reshape-chip-packaging-merging-micro-led-displays-with-silicon-cpos/"
-  rel="noopener" target="_blank">wccftech.com</a></li>
-  <li>Investing.com. <i>Why is Intel stock surging today?</i> 21 September 2026.
-  <a href="https://www.investing.com/news/stock-market-news/why-is-intel-stock-surging-today-93CH-4908623"
-  rel="noopener" target="_blank">investing.com</a></li>
-  <li>Tradingpedia. <i>Intel Premarket Rally Fueled by Micro LED AI Packaging.</i> 21 September 2026.
-  <a href="https://www.tradingpedia.com/2026/09/21/intel-premarket-rally-fueled-by-micro-led-ai-packaging/"
-  rel="noopener" target="_blank">tradingpedia.com</a></li>
-  <li>AUO Corporation. <i>AUO Showcases Micro LED Optical Communication and Glass Core Substrates
-  Technologies at SEMICON Taiwan 2026.</i> 31 August 2026.
-  <a href="https://www.globenewswire.com/news-release/2026/08/31/3353270/0/en/auo-showcases-micro-led-optical-communication-and-glass-core-substrates-technologies-at-semicon-taiwan-2026.html"
-  rel="noopener" target="_blank">globenewswire.com</a></li>
-  <li>Converge Digest. <i>AUO Pushes Micro LED CPO and Glass-Core Packaging.</i> September 2026.
-  <a href="https://convergedigest.com/auo-micro-led-cpo-glass-core-ai-interconnects/"
-  rel="noopener" target="_blank">convergedigest.com</a></li>
-  <li>Intel Corporation. <i>Intel Unveils Industry-Leading Glass Substrates to Meet Demand for More
-  Powerful Compute.</i> 18 September 2023.
-  <a href="https://www.intc.com/news-events/press-releases/detail/1647/intel-unveils-industry-leading-glass-substrates-to-meet"
-  rel="noopener" target="_blank">intc.com</a></li>
-  <li>Tom's Hardware. <i>Nvidia outlines plans for using light for communication between AI GPUs by
-  2026.</i>
-  <a href="https://www.tomshardware.com/networking/nvidia-outlines-plans-for-using-light-for-communication-between-ai-gpus-by-2026-silicon-photonics-and-co-packaged-optics-may-become-mandatory-for-next-gen-ai-data-centers"
-  rel="noopener" target="_blank">tomshardware.com</a></li>
-  <li>TrendForce Insights. <i>Glass Substrates Are Breaking Through the AI Chip Packaging
-  Bottleneck.</i> 2026.
-  <a href="https://insights.trendforce.com/p/glass-substrate-development" rel="noopener"
-  target="_blank">insights.trendforce.com</a></li>
-  <li>Tech Soda. <i>Global Market Watch: Intel Reportedly Working on Advanced Packaging for CPO with
-  AUO</i> (citing UDN Money). 21 September 2026.
-  <a href="https://techsoda.substack.com/p/global-market-watch-intel-reportedly"
-  rel="noopener" target="_blank">techsoda.substack.com</a></li>
-  <li>AUO Corporation. <i>AUO Corporation Reports First Quarter 2026 Financial Results.</i>
-  30 April 2026. <a href="https://www.auo.com/en-global/New_Archive/detail/news_IR_20260430"
-  rel="noopener" target="_blank">auo.com</a></li>
-</ol>
-
-    <div class="tags"><a class="tg" href="tag-intel.html">intel</a><a class="tg" href="tag-au-optronics.html">au optronics</a><a class="tg" href="tag-auo.html">auo</a><a class="tg" href="tag-co-packaged-optics.html">co-packaged optics</a><a class="tg" href="tag-advanced-packaging.html">advanced packaging</a><a class="tg" href="tag-glass-substrates.html">glass substrates</a><a class="tg" href="tag-micro-led.html">micro led</a><a class="tg" href="tag-semiconductors.html">semiconductors</a><a class="tg" href="tag-ai-datacenters.html">ai datacenters</a><a class="tg" href="tag-intel-foundry.html">intel foundry</a><a class="tg" href="tag-taiwan.html">taiwan</a></div>
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-coinjoin.html">coinjoin</a><a class="tg" href="tag-exchanges.html">exchanges</a><a class="tg" href="tag-privacy.html">privacy</a><a class="tg" href="tag-chainalysis.html">chainalysis</a><a class="tg" href="tag-wasabi.html">wasabi</a><a class="tg" href="tag-samourai.html">samourai</a><a class="tg" href="tag-bitcoin-treasuries.html">bitcoin treasuries</a></div>
   </article>
   <aside class="subbox"><p class="sb-k">Free email list</p><p class="sb-t">Get new Ledger entries by email</p><p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p><a class="respond-btn respond-btn-primary sb-btn subscribe-trigger" href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a></aside>
 
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Eleven%20Percent%20for%20a%20Hole%20in%20Glass%3A%0A%0Ahttps%3A//mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Coins%20Exchanges%20Won%27t%20Let%20Back%20In%3A%0A%0Ahttps%3A//mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="the-coins-exchanges-wont-let-back-in.html" data-search="the coins exchanges won&#x27;t let back in coinjoin coins get risk-flagged at exchanges. does that shrink bitcoin&#x27;s buyable float the way lost coins or treasury buying do? i sized it." data-tags="bitcoin coinjoin exchanges privacy chainalysis wasabi samourai bitcoin-treasuries">
-      <span class="tile-media"><img src="img/bank-vault-door.jpg" alt="" width="1600" height="999" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 29, 2026</span>
-        <span class="ec-t">The Coins Exchanges Won&#x27;t Let Back In</span>
-        <span class="ec-s">CoinJoin coins get risk-flagged at exchanges. Does that shrink Bitcoin&#x27;s buyable float the way lost coins or treasury buying do? I sized it.</span>
-      </span>
-    </a>
     <a class="tile" href="the-jar-learns-to-hide-which-jar.html" data-search="the jar learns to hide which jar an update on lightning in a jar&#x27;s new bip-352 silent payments support, and what silent payments do and don&#x27;t do for an ordinary user&#x27;s privacy." data-tags="bitcoin lightning lightning-in-a-jar privacy silent-payments bip352 self-custody">
       <span class="tile-media"><img src="img/lightning-in-a-jar-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">SEPTEMBER 29, 2026</span>
         <span class="ec-t">The Jar Learns to Hide Which Jar</span>
         <span class="ec-s">An update on Lightning in a Jar&#x27;s new BIP-352 Silent Payments support, and what silent payments do and don&#x27;t do for an ordinary user&#x27;s privacy.</span>
+      </span>
+    </a>
+    <a class="tile" href="two-point-eight-times-the-halving.html" data-search="two point eight times the halving bitcoin&#x27;s halving is now a side character next to treasury demand -- what strc and sata preferred stock are doing to btc&#x27;s tradeable float." data-tags="bitcoin strategy-inc mstr strive preferred-stock bitcoin-treasuries halving monetary-policy">
+      <span class="tile-media"><img src="img/cash-and-casascius-coin.jpg" alt="" width="1500" height="926" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 26, 2026</span>
+        <span class="ec-t">Two Point Eight Times the Halving</span>
+        <span class="ec-s">Bitcoin&#x27;s halving is now a side character next to treasury demand -- what STRC and SATA preferred stock are doing to BTC&#x27;s tradeable float.</span>
+      </span>
+    </a>
+    <a class="tile" href="a-private-room-with-a-public-door.html" data-search="a private room with a public door shielded bitcoin explained: zcash-style private transfers with no soft fork, what the mainnet demo proved, and why lightning still comes first." data-tags="bitcoin privacy shielded-bitcoin zero-knowledge-proofs zcash pipes alloc-init lightning fedimint bridges custody op-return">
+      <span class="tile-media"><img src="img/shielded-bitcoin-private-room-public-door.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 25, 2026</span>
+        <span class="ec-t">A Private Room With a Public Door</span>
+        <span class="ec-s">Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first.</span>
       </span>
     </a>
     <a class="tile" href="eighteen-months-and-twenty-one-million.html" data-search="eighteen months and twenty-one million is bitcoin the fix for the &quot;18 months to the permanent underclass&quot; warning? the energy math, the bond math, and what ai agents actually pay with." data-tags="bitcoin artificial-intelligence agentic-payments stablecoins federal-reserve monetary-policy energy treasury labor">
@@ -891,29 +836,21 @@ has yet said which it is.</p>
         <span class="ec-s">Is Bitcoin the fix for the &quot;18 months to the permanent underclass&quot; warning? The energy math, the bond math, and what AI agents actually pay with.</span>
       </span>
     </a>
-    <a class="tile" href="four-thousand-tonnes-and-no-api.html" data-search="four thousand tonnes and no api is bitcoin becoming a gold-style reserve asset for central banks? the actual 2026 data on gold buying, dollar share, and sovereign btc holdings." data-tags="bitcoin gold federal-reserve monetary-policy treasury el-salvador">
-      <span class="tile-media"><img src="img/fort-knox-gold-vault-postcard.jpg" alt="" width="1500" height="964" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 26, 2026</span>
-        <span class="ec-t">Four Thousand Tonnes and No API</span>
-        <span class="ec-s">Is Bitcoin becoming a gold-style reserve asset for central banks? The actual 2026 data on gold buying, dollar share, and sovereign BTC holdings.</span>
-      </span>
-    </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
-<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-eleven-percent-for-a-hole-in-glass-html">👁 <span id="hits-finance-eleven-percent-for-a-hole-in-glass-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-the-coins-exchanges-wont-let-back-in-html">👁 <span id="hits-finance-the-coins-exchanges-wont-let-back-in-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Feleven-percent-for-a-hole-in-glass.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fthe-coins-exchanges-wont-let-back-in.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-finance-eleven-percent-for-a-hole-in-glass-html-n");
+      var n = document.getElementById("hits-finance-the-coins-exchanges-wont-let-back-in-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-finance-eleven-percent-for-a-hole-in-glass-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-finance-the-coins-exchanges-wont-let-back-in-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-finance-eleven-percent-for-a-hole-in-glass-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-finance-the-coins-exchanges-wont-let-back-in-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
