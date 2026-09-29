@@ -687,6 +687,36 @@ three things I said would change "not yet for strangers" to "yes" are unchanged:
 catch-up, an outside reader of the patch set, a second registered LSP. This is a good
 feature landing on schedule. It's not one of the three.</p>
 
+<h2>Update, Same Night: Why He Actually Built It</h2>
+
+<p>A couple more texts landed while I was writing the above, and they're worth folding in
+here rather than banking for a separate post, because he's clearly still mid-build tonight —
+more on that in a second. First, something I didn't expect and liked more for its honesty:
+"It took me a while to break down and accept putting in silent payments because they are
+complex and really not 'silent'. The chain still connects." That's the same caveat this post
+just spent several paragraphs making, said unprompted by the person who wrote the code,
+before I'd asked him anything. When the builder volunteers your own skepticism back to you,
+that's a good sign about the builder, whatever it says about the feature.</p>
+
+<p>What changed his mind, in his own words: two things got better, and a third pushed him
+over the line. The two: the address he publishes stays reusable — post it once, same as
+today — while the actual on-chain output it resolves to changes on the backend with every
+payment, which is the mechanism above under fancier language. The payoff he cares about is
+blunter than my write-up: it's "more difficult for chain[-analysis] companies" to link his
+users' payments together. The third thing, the one he says actually got this shipped: he
+worked out a standard way to <em>recover</em> on-chain silent payments from seed, which he
+describes as "not dissimilar to what you already do in the LiJ wallet for lightning." That's
+the less glamorous half of any rotating-address scheme — a wallet that scatters your coins
+across unpredictable outputs still has to be able to find them all again from twelve words
+on a new phone — and by his account it was the unsolved piece standing between "silent
+payments would be nice" and "silent payments are shipping."</p>
+
+<p>Same rule as above: that's what he told me, not what I've verified. The public repository
+hasn't moved since the commit I checked for this post — last push 2026-09-26 — so the
+recovery scheme isn't there yet to read. He says he's testing it today, alongside a pass at
+cleaning up the wallet's menus. Genuinely don't know yet whether either lands as described;
+I'll look again before the October recheck, and sooner if he texts me that it's live.</p>
+
     <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-lightning.html">lightning</a><a class="tg" href="tag-lightning-in-a-jar.html">lightning in a jar</a><a class="tg" href="tag-privacy.html">privacy</a><a class="tg" href="tag-silent-payments.html">silent payments</a><a class="tg" href="tag-bip352.html">bip352</a><a class="tg" href="tag-self-custody.html">self custody</a></div>
   </article>
   <aside class="subbox"><p class="sb-k">Free email list</p><p class="sb-t">Get new Ledger entries by email</p><p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p><a class="respond-btn respond-btn-primary sb-btn subscribe-trigger" href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a></aside>
