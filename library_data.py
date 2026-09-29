@@ -27199,6 +27199,15 @@ CHAPTER_ART = {
 # (a narrative illustration first, then the ancient-artifact and modern-Jewish-
 # practice fallbacks CHAPTER_ART's own comment already documents) and why nothing
 # cleared the bar. A chapter can always be revisited later if a candidate turns up.
+#
+# ⚠ STOP before writing an entry here (Michael's rule, 2026-09-28, after Luke 12
+# shipped with an ART_SKIPPED entry on a one-search look that missed Tissot's own
+# "The Man Who Hoards" for the rich-fool parable — a second, scene-worded search
+# found it immediately). Search each scene/parable by its own content (character,
+# action, object), not by book/chapter number, across at least 2-3 queries — then
+# ASK MICHAEL before recording the skip, even after a genuinely thorough search.
+# Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
+# let him decide.
 ART_SKIPPED = {}
 _PRE_ENFORCEMENT_BACKLOG = [
     '1chr1', '1cor1', '1john1', '1kgs1', '1pe1', '1sam1', '1th1', '1ti1',
