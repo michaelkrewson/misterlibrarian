@@ -1,7 +1,7 @@
 title: The Jar Learns to Hide Which Jar
 date: 2026-09-29
 tags: bitcoin, lightning, lightning in a jar, privacy, silent payments, bip352, self custody
-summary: A quick follow-up to my Lightning in a Jar review — the wallet's author tells me he's shipped Silent Payments, send and receive, with the first inter-wallet transactions running tonight. Here's what that feature actually does, why it's not the same as "now anonymous," and what I could and couldn't verify myself before writing about it.
+summary: A quick follow-up to my Lightning in a Jar review — the wallet's author tells me he's shipped Silent Payments, send and receive, with the first inter-wallet transactions running tonight. Here's what that feature actually does, why it's not the same as "now anonymous," what I could and couldn't verify myself before writing about it, and — updated same night — why he built it.
 meta_desc: An update on Lightning in a Jar's new BIP-352 Silent Payments support, and what silent payments do and don't do for an ordinary user's privacy.
 hero: lightning-in-a-jar-icon.png
 hero_alt: The Lightning in a Jar app icon — a cream-outlined jar with an amber lightning bolt inside, on a warm brown gradient
@@ -76,3 +76,32 @@ move my verdict from the original review, which was never about any single featu
 three things I said would change "not yet for strangers" to "yes" are unchanged: an LDK
 catch-up, an outside reader of the patch set, a second registered LSP. This is a good
 feature landing on schedule. It's not one of the three.</p>
+
+<h2>Update, Same Night: Why He Actually Built It</h2>
+
+<p>A couple more messages came in while I was writing the above, worth folding in here
+rather than banking for a separate post, because he's clearly still mid-build tonight —
+more on that in a second. He volunteered, unprompted, the same reservation this post just
+spent several paragraphs on: that silent payments are a more complicated feature than the
+name suggests, and don't actually make a payment invisible on the chain. When the builder
+raises your own caveat before you ask him anything, that's a good sign about the builder,
+whatever it says about the feature.</p>
+
+<p>What moved him from reservation to shipping, roughly: two upsides, then a third that
+settled it. The two — the address he publishes stays reusable, post it once, same as today,
+while the actual on-chain output it resolves to changes on the backend with every payment
+(the mechanism above, under fancier language), and that makes it meaningfully harder for
+chain-analysis firms to link his users' payments together. The third, the one he credits
+with actually getting this shipped: he says he worked out a standard way to
+<em>recover</em> on-chain silent payments from a wallet's seed, using an approach similar to
+how Lightning in a Jar already recovers Lightning funds. That's the less glamorous half of
+any rotating-address scheme — a wallet that scatters your coins across unpredictable outputs
+still has to be able to find them all again from twelve words on a new phone — and by his
+account it was the unsolved piece standing between silent payments being a nice idea and
+silent payments shipping.</p>
+
+<p>Same rule as above: that's what he told me, not what I've verified. The public repository
+hasn't moved since the commit I checked for this post — last push 2026-09-26 — so the
+recovery scheme isn't there yet to read. He says he's testing it today, alongside a pass at
+cleaning up the wallet's menus. Genuinely don't know yet whether either lands as described;
+I'll look again before the October recheck, and sooner if he tells me it's live.</p>
