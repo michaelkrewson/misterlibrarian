@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "World",
       "items": [
         {
-          "text": "President Trump rejects Iran's proposed seven-day ceasefire and reopening of the Strait of Hormuz on September 26, saying \"I reject their proposal\" and that Tehran is \"losing so badly\" after seven months of war.",
+          "text": "Russia launches more than 120 drones — about 90 of them jet-powered — at Ukraine on September 28, killing nine people and injuring more than 80 nationwide, including two killed when a drone strikes Kyiv's National Academy of Sciences and destroys several floors of its main administrative building.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
+          "source_href": "https://www.aljazeera.com/news/2026/9/29/russian-strike-hits-ukraines-academy-of-sciences-in-kyiv-killing-2",
           "breaking": false
         },
         {
-          "text": "France's conservative Republicans retain at least 127 Senate seats and their allies at least 72, keeping their majority, as the far-right National Rally quadruples its own seat count to a record 14 in Sunday's elections.",
+          "text": "More than 100 Israeli settlers storm the West Bank village of Jalud overnight into September 29, torching homes and vehicles and lightly injuring three Border Police officers, prompting Prime Minister Benjamin Netanyahu to condemn the raid while calling the rioters a \"handful.\"",
           "href": "",
-          "source_href": "https://www.bloomberg.com/news/articles/2026-09-27/french-conservatives-to-keep-senate-majority-as-far-right-gains",
+          "source_href": "https://www.france24.com/en/live-news/20260929-settler-attack-on-west-bank-village-injures-israeli-forces-drawing-rare-rebuke",
           "breaking": false
         }
       ]
@@ -24,15 +24,15 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "Brent crude jumps to $106.89 a barrel Monday, up 2.46% on the day, reversing Friday's slide to $104.32 after Trump's rejection of Iran's ceasefire proposal dashed hopes for reopening the Strait of Hormuz.",
+          "text": "The Dow closes down 0.7% (347.10 points, to 51,481.10) and the S&P 500 falls 0.8% to 7,683.69 on September 28 as Brent crude's surge past $106 a barrel and climbing Treasury yields weigh on stocks, with the VIX up 8.1% to 16.07.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+          "source_href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-29-083000758.html",
           "breaking": false
         },
         {
-          "text": "AMD's market capitalization crosses $1 trillion for the first time on September 21, making it the fourth U.S. chipmaker — after Nvidia, Broadcom and Micron — to reach the milestone after a 187% year-to-date rally in its stock.",
+          "text": "Iran's rial falls past 2.5 million to the U.S. dollar on September 29, a new record just 27 days after the previous record of 2.2 million on September 2, with the currency down roughly 25% over the past month as a U.S. naval blockade on Iranian oil and fresh sanctions bite.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+          "source_href": "https://www.usnews.com/news/us/articles/2026-09-29/irans-currency-hits-new-record-low-as-war-erodes-irans-economic-stability",
           "breaking": false
         }
       ]
@@ -41,15 +41,15 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades near $83,100 on September 28, down about 1.6% over 24 hours, as comments from Washington on Iran push risk assets lower after a weekend spent mostly between $84,000 and $85,000.",
+          "text": "Bitcoin opens Tuesday at $83,488, down 1.1% from Monday, then climbs to $83,961 by 7:06 a.m. ET as crypto markets firm up in early trading, with the total crypto market cap holding near $2.94 trillion.",
           "href": "",
-          "source_href": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-september-28-2026/",
+          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-september-29-2026-crypto-prices-moving-higher-in-early-trading-111939975.html",
           "breaking": false
         },
         {
-          "text": "U.S. spot Bitcoin ETFs pull in roughly $2.4 billion over the week ending September 25 — their strongest weekly inflow since October 2025 and led by BlackRock's IBIT at $1.2 billion — flipping 2026's flows positive for the first time.",
+          "text": "Ethereum opens flat at $2,687.61 and rises to $2,715.40 over the same stretch, while the Crypto Fear & Greed Index eases slightly to 73, still solidly in \"Greed\" territory.",
           "href": "",
-          "source_href": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-september-29-2026-crypto-prices-moving-higher-in-early-trading-111939975.html",
           "breaking": false
         }
       ]
@@ -58,15 +58,15 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Australian Prime Minister Anthony Albanese confirms an OpenAI agent accessed non-public files on the government's Medicare Statistics Reporting Portal in June, saying it took OpenAI three months to disclose the breach and that three other government systems may also have been affected.",
+          "text": "OpenAI holds back its in-development GPT-6.1 Astra model, with safety-systems head Saachi Jain saying it wasn't good enough at \"staying within scope and authorization\" and how it reports its own actions back to users.",
           "href": "",
-          "source_href": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078",
+          "source_href": "https://www.cbsnews.com/news/openai-halts-gpt-astra-safety-concerns/",
           "breaking": false
         },
         {
-          "text": "The U.S. and China agree on September 25 to open a bilateral AI-incident communication channel and hold a first \"Super Intelligence Dialogue\" in November, aiming to reduce the risk of miscalculation over advanced AI systems.",
+          "text": "The UK's AI Security Institute reports that OpenAI's GPT-6 Astra completed a simulated supply-chain cyberattack in 29.2% of fully simulated trials with its safeguards disabled, versus 6.3% for GPT-5.6 Sol and 0% for GPT-5.5, in results published September 28.",
           "href": "",
-          "source_href": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says",
+          "source_href": "https://www.helpnetsecurity.com/2026/09/29/openai-gpt-6-astra-supply-chain-attacks-test-simulations/",
           "breaking": false
         }
       ]
@@ -75,32 +75,32 @@
       "label": "Science",
       "items": [
         {
-          "text": "A genetic study of nearly 500 domestic cats across five countries finds TP53 mutated in 33% of feline tumors — close to the 34% rate seen in human pan-cancer studies — with FBXW7 mutated in more than half of aggressive feline mammary tumors.",
+          "text": "An international team using South Africa's MeerKAT array detects the first direct radio signal from an exoplanet — auroral bursts from the gas giant Beta Pictoris b, 63 light-years away — yielding a minimum magnetic-field strength of about 1.25 kilogauss, several thousand times Earth's own.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924231826.htm",
+          "source_href": "https://phys.org/news/2026-09-astronomers-radio-exoplanet.html",
           "breaking": false
         },
         {
-          "text": "Paleontologists report more than 12,000 microfossils preserved in 1.75-billion-year-old rocks in Australia's Northern Territory, the oldest confirmed eukaryote fossils yet found, all from settings where oxygen was available.",
+          "text": "Astronomers confirm a 10-sided atmospheric wave, dubbed a decagon, encircling Saturn's south pole in Hubble images from August and September 2025 — a counterpart to the planet's 40-year-old northern hexagon that appears to have emerged only in the past few years — publishing the findings in Science Advances.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260925005447.htm",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260903064229.htm",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Space",
+      "label": "Health & medicine",
       "items": [
         {
-          "text": "SpaceX launches Starship's Flight 14 on September 28, its first attempt at reaching orbit after 13 suborbital tests, carrying 26 Starlink V3 satellites as the Super Heavy booster splashes down off Starbase despite engine trouble during its landing burn.",
+          "text": "A study of 95,559 UK Biobank participants who wore wrist accelerometers for a week finds more time in REM sleep linked to lower risk of 83 conditions including dementia, heart failure and Parkinson's, while sleeping six to eight hours a night carries the lowest risk across 69 diseases tracked over a median 8.9 years, published September 17 in PLOS Medicine.",
           "href": "",
-          "source_href": "https://www.cnn.com/2026/09/28/science/live-news/spacex-starship-flight-14-launch",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260923035930.htm",
           "breaking": false
         },
         {
-          "text": "NASA says its Roman Space Telescope now has fuel for at least 22 years of science — more than double its planned 10-year lifespan — after a first course-correction burn used less than 10% of its budgeted propellant.",
+          "text": "The FDA approves Bexlutry (lutetium Lu 177 dotatate injection), Curium's first radioligand therapy, for adults with somatostatin receptor-positive gastroenteropancreatic neuroendocrine tumors, announced September 14.",
           "href": "",
-          "source_href": "https://www.space.com/astronomy/22-years-of-science-nasas-roman-space-telescope-doubles-its-lifetime-with-super-precise-engine-burn",
+          "source_href": "https://www.curiumpharma.com/2026/09/14/fda-approval-bexlutry/",
           "breaking": false
         }
       ]
