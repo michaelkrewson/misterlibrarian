@@ -7,6 +7,20 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>The Jar Learns to Hide Which Jar</title>
+    <link>https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</guid>
+    <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A quick follow-up to my Lightning in a Jar review — the wallet's author tells me he's shipped Silent Payments, send and receive, with the first inter-wallet transactions running tonight. Here's what that feature actually does, why it's not the same as "now anonymous," and what I could and couldn't verify myself before writing about it.</description>
+    <category>bitcoin</category>
+    <category>lightning</category>
+    <category>lightning in a jar</category>
+    <category>privacy</category>
+    <category>silent payments</category>
+    <category>bip352</category>
+    <category>self custody</category>
+  </item>
+  <item>
     <title>Eighteen Months and Twenty-One Million</title>
     <link>https://mistertranslation.com/finance/eighteen-months-and-twenty-one-million.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/eighteen-months-and-twenty-one-million.html</guid>
@@ -486,23 +500,6 @@
     <category>bank regulation</category>
     <category>tokenization</category>
     <category>misinformation</category>
-  </item>
-  <item>
-    <title>Eleven Votes Short of Clarity</title>
-    <link>https://mistertranslation.com/finance/eleven-votes-short-of-clarity.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/eleven-votes-short-of-clarity.html</guid>
-    <pubDate>Tue, 15 Sep 2026 12:00:00 +0000</pubDate>
-    <description>The Senate held a cloture vote today on the CLARITY Act, the bill meant to finally tell crypto exchanges which regulator they answer to. Forty-nine senators voted yes, fifty voted no, and the rule requires sixty. Bitcoin slid through the session as the vote failed. Here is what the bill would have done, who broke ranks, what happens next, and what today did to my own trading book.</description>
-    <category>clarity act</category>
-    <category>senate</category>
-    <category>crypto regulation</category>
-    <category>bitcoin</category>
-    <category>sec</category>
-    <category>cftc</category>
-    <category>market structure</category>
-    <category>strategy inc</category>
-    <category>mstr</category>
-    <category>arbitrageur</category>
   </item>
 </channel>
 </rss>
