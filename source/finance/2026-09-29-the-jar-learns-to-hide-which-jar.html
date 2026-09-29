@@ -1,0 +1,78 @@
+title: The Jar Learns to Hide Which Jar
+date: 2026-09-29
+tags: bitcoin, lightning, lightning in a jar, privacy, silent payments, bip352, self custody
+summary: A quick follow-up to my Lightning in a Jar review — the wallet's author tells me he's shipped Silent Payments, send and receive, with the first inter-wallet transactions running tonight. Here's what that feature actually does, why it's not the same as "now anonymous," and what I could and couldn't verify myself before writing about it.
+meta_desc: An update on Lightning in a Jar's new BIP-352 Silent Payments support, and what silent payments do and don't do for an ordinary user's privacy.
+hero: lightning-in-a-jar-icon.png
+hero_alt: The Lightning in a Jar app icon — a cream-outlined jar with an amber lightning bolt inside, on a warm brown gradient
+hero_credit: The Lightning in a Jar app icon, from the project's own public repository. Shown to identify the wallet being discussed; the name and logo belong to its author, not to this page.
+draft: false
+---
+
+<p>Quick follow-up to <a href="lightning-in-a-jar-review.html">the review I wrote in
+September</a>. A text from the wallet's author last night: Lightning in a Jar now sends
+<em>and</em> receives silent payments, with the first inter-wallet transactions running
+that same night. A disclosure and a caveat, both upfront, same as last time. The
+disclosure: he's a friend, and this is a text message, not a press release. The caveat: I
+went and checked the public repository before writing this, the way I did for the original
+review, and as of this morning it shows the sending half working and tested — receiving is
+noted in the code as not built yet. That's expected; a text at 11pm about a feature that
+ships "tonight" can outrun a public repo by a day. I'm reporting what he told me as what he
+told me, and what I could verify in the code as what I verified. Don't conflate the two.</p>
+
+<p>What I <em>can</em> confirm, because it's sitting in the source: the send side speaks
+<a href="https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki">BIP-352</a>, the
+actual Bitcoin standard for silent payments, not a lookalike — the wallet's code implements
+the BIP's own math and runs the BIP's own published test vectors. That's the right way to
+build this, and it's consistent with everything else I found reading his code in September.</p>
+
+<h2>What a Silent Payment Actually Is</h2>
+
+<p>The problem silent payments solve is narrower and more specific than "bitcoin isn't
+private," and it's worth being precise about which problem, because the precision is the
+whole point. Ordinary bitcoin addresses are meant to be used once. Reuse one — post it on a
+website, hand it out as a tip jar, use the same receive address for every paycheck — and
+every payment to it is now visibly the same recipient on a public ledger anyone can read.
+That's not a bug in any particular wallet; it's just what a reused address is. Silent
+payments fix exactly that: you publish one address, permanently, the same one every time —
+but every payment that arrives at it lands at a <em>different</em> on-chain output, one only
+you can find and spend, computed from a bit of elliptic-curve math between your public key
+and the sender's. Nobody looking at the chain can tell those outputs belong to the same
+address, because on the chain, they don't — there is no reused address to look at. You get
+the convenience of a static, postable address without paying for it in linkability.</p>
+
+<h2>Does This Make Bitcoin Private for the Rest of Us?</h2>
+
+<p>Here's the honest answer, not the exciting one: it closes one specific leak, and it's a
+real leak worth closing, but it's not a privacy cloak, and nobody using this wallet should
+walk away thinking their bitcoin has gone anonymous. A few things silent payments don't
+touch:</p>
+
+<p><strong>It's an on-chain feature, not a Lightning one.</strong> The payments that move
+through channels — the thing this wallet mostly does — already have reasonable privacy from
+onion routing; the LSP that opens your channel can't see the final recipient of a payment
+that passes through it. Silent payments are about the on-chain side: opening a channel,
+closing one, receiving a deposit. That's where address reuse was the actual risk.</p>
+
+<p><strong>It doesn't hide the amount.</strong> Every bitcoin transaction publishes exactly
+how much moved, silent-payment output or not. A privacy technique that hides who without
+hiding how much still tells a patient observer a lot.</p>
+
+<p><strong>It doesn't erase where the coins came from.</strong> A silent payment protects
+the <em>receiving</em> address from being linked to future payments. It says nothing about
+the history of the coins the sender uses to pay you, or the history of the coins you already
+hold and later spend onward. If those coins trace back to an exchange that verified your
+name — which is where most people's bitcoin starts — that link exists independent of
+anything this feature does.</p>
+
+<p><strong>It doesn't hide your IP address, your device, or your habits.</strong> Chain
+analysis is one slice of how privacy gets lost; network-level observation and simple
+behavioral patterns (same wallet, same times of day, same rough amounts) are others, and
+none of them are this BIP's job.</p>
+
+<p>So: a genuine, well-specified improvement, aimed correctly at a real and well-understood
+problem — and one more reason this remains the kind of project worth watching. It doesn't
+move my verdict from the original review, which was never about any single feature. The
+three things I said would change "not yet for strangers" to "yes" are unchanged: an LDK
+catch-up, an outside reader of the patch set, a second registered LSP. This is a good
+feature landing on schedule. It's not one of the three.</p>
