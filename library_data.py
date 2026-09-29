@@ -27104,6 +27104,38 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Lord's_Prayer_(Le_Pater_Noster)_-_James_Tissot.jpg",
     )],
+    "luke12": [dict(
+        file="luke12-tissot-rich-fool.jpg",
+        title="The Man Who Hoards",
+        title_es="El hombre que atesora",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="An old, richly robed man sits hunched among a wall of huge stuffed grain sacks, one "
+            "hand at his chin, absorbed in thought — while directly behind him a towering, "
+            "winged, shadowy angel looms with a raised sword, completely unnoticed by the man.",
+        note="⭐⭐⭐ <strong>The sword is the whole painting, and the rich man never sees it.</strong> "
+             "Tissot paints the parable's punchline before Jesus ever speaks it: an old man buried "
+             "to the shoulders in his own grain sacks, so absorbed counting the harvest that he "
+             "does not notice a towering, sword-bearing angel filling the tent behind him — the "
+             "demand for his soul this chapter's own note counts twelve first-person verbs "
+             "leading up to (vv17–19, already on these pages), arriving as a figure he never once "
+             "turns to look at. The man's own hand at his chin is the gesture of someone still "
+             "planning; the angel's sword is already raised.",
+        note_es="⭐⭐⭐ <strong>La espada es todo el cuadro, y el hombre rico nunca la ve.</strong> "
+                "Tissot pinta el remate de la parábola antes de que Jesús lo diga: un anciano "
+                "enterrado hasta los hombros en sus propios sacos de grano, tan absorto contando "
+                "la cosecha que no nota un ángel enorme y alado, con la espada en alto, que llena "
+                "la tienda detrás de él —la exigencia de su alma a la que llevan los doce verbos "
+                "en primera persona que ya cuenta la propia nota de este capítulo (vv17–19, ya en "
+                "estas páginas), llegando como una figura a la que él nunca voltea a mirar. La "
+                "mano del hombre en su barbilla es el gesto de alguien que todavía está "
+                "planeando; la espada del ángel ya está en alto.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Man_Who_Hoards_(L%27homme_qui_th%C3%A9saurise)_-_James_Tissot.jpg",
+    )],
 }
 
 # ART_SKIPPED — the required OTHER outcome of the per-chapter art check (checklist
@@ -27122,14 +27154,7 @@ CHAPTER_ART = {
 # (a narrative illustration first, then the ancient-artifact and modern-Jewish-
 # practice fallbacks CHAPTER_ART's own comment already documents) and why nothing
 # cleared the bar. A chapter can always be revisited later if a candidate turns up.
-ART_SKIPPED = {
-    "luke12": "Searched Tissot's Brooklyn Museum 'Life of Christ' series for the rich fool, the "
-              "wedding-feast servants, the ravens, and the settling-with-a-creditor scenes — none "
-              "of this chapter's Luke-only material turned up a matching narrative illustration "
-              "(Tissot's closest neighbor, 'The Foolish Virgins,' belongs to Matthew 25's own "
-              "parable, not this chapter's); no ancient artifact or modern-practice fallback was a "
-              "closer fit than leaving this one unillustrated.",
-}
+ART_SKIPPED = {}
 _PRE_ENFORCEMENT_BACKLOG = [
     '1chr1', '1cor1', '1john1', '1kgs1', '1pe1', '1sam1', '1th1', '1ti1',
     '2chr1', '2cor1', '2john1', '2kgs1', '2pe1', '2sam1', '2th1', '2ti1', '3john1',
