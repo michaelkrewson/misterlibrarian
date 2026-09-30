@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img"
+     aria-label="Two timelines. Top: what the West froze — February 2022, the EU, US, Japan and Canada freeze roughly $300 billion of Russian central bank reserves and cut banks off SWIFT; December 2025, the EU makes its share of that freeze indefinite to back a reparations loan to Ukraine. Bottom: what Moscow built instead — August 2024, crypto mining legalized; March 2025, Reuters reports Russian oil firms already settling China and India trade in bitcoin, ether and stablecoins; September 1, 2026, a new law makes cross-border crypto trade settlement fully legal.">
+  <rect width="900" height="380" fill="#0a0f1a"/>
+
+  <!-- ===== Row 1: the freeze (Feb 2022 – Dec 2025) ===== -->
+  <text x="60" y="56" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">What the West froze</text>
+  <text x="840" y="56" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">~$300B, indefinitely</text>
+
+  <line x1="60" y1="96" x2="840" y2="96" stroke="#5c6b85" stroke-width="3" stroke-dasharray="10,7" opacity="0.9"/>
+
+  <!-- Feb 2022 -->
+  <circle cx="60" cy="96" r="6" fill="#e8dfd2"/>
+  <text x="60" y="126" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Feb 2022</text>
+  <text x="60" y="144" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">CBR reserves frozen, banks cut from SWIFT</text>
+
+  <!-- Dec 2025 -->
+  <circle cx="840" cy="96" r="6" fill="#e8865c"/>
+  <text x="840" y="126" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Dec 2025</text>
+  <text x="840" y="144" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">EU makes its freeze indefinite</text>
+
+  <!-- divider -->
+  <line x1="60" y1="176" x2="840" y2="176" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+
+  <!-- ===== Row 2: the rail (Aug 2024 – Sep 2026) ===== -->
+  <text x="60" y="210" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">What Moscow built <tspan fill="#94a3b8">instead</tspan></text>
+  <text x="840" y="210" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#a3b378" font-weight="bold">25 months</text>
+
+  <line x1="60" y1="252" x2="840" y2="252" stroke="#a3b378" stroke-width="3" opacity="0.9"/>
+
+  <!-- Aug 2024: mining legalized (below the line) -->
+  <circle cx="60" cy="252" r="6" fill="#a3b378"/>
+  <text x="60" y="282" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Aug 2024</text>
+  <text x="60" y="300" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Crypto mining legalized</text>
+
+  <!-- Mar 2025: oil trade in crypto reported (above the line, room to spread) -->
+  <circle cx="290" cy="252" r="6" fill="#a3b378"/>
+  <text x="290" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Mar 2025</text>
+  <text x="290" y="244" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Oil-crypto trade with China, India reported</text>
+
+  <!-- Aug 2026: Moscow mining ban to 2032 (above the line, opposite side from Sep 2026) -->
+  <circle cx="650" cy="252" r="5" fill="#94a3b8"/>
+  <text x="650" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Aug 2026</text>
+  <text x="650" y="244" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Moscow mining banned to 2032, grid limits</text>
+
+  <!-- Sep 1 2026: settlement law takes effect (below the line) -->
+  <circle cx="840" cy="252" r="7" fill="#e8865c"/>
+  <text x="840" y="282" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8865c" font-weight="bold">Sep 1, 2026</text>
+  <text x="840" y="300" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Cross-border crypto settlement made legal</text>
+
+  <text x="60" y="352" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">Not a store of value first. A rail nobody in Brussels or Washington can freeze.</text>
+</svg>
