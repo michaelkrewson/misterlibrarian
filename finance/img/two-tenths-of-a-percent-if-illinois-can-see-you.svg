@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Illinois's new 0.2 percent Digital Asset Tax, traced through two paths for the same bitcoin. Top: cash into a traditional brokerage account, buying shares of a Bitcoin ETF — no tax point anywhere on this path, because a brokerage trading a security isn't a digital asset broker. Bottom: cash into a crypto exchange (a 0.2 percent tax point, buying the coin), withdrawn to a self-custody wallet (a second 0.2 percent tax point, just for storing it), then spent at a coffee shop over the Lightning Network, wallet to wallet with no broker in the middle — no tax point, and nothing for the state to see.">
+<rect width="900" height="400" fill="#0a0f1a"/>
+<text x="40" y="38" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">The same bitcoin, taxed at different doors</text>
+<text x="40" y="58" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Illinois's 0.2% Digital Asset Tax, traced through two paths</text>
+
+<text x="40" y="95" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#c9b458">1. Kankakee, buying a Bitcoin ETF through a brokerage</text>
+
+<rect x="40" y="108" width="90" height="46" rx="6" fill="#1c2534" stroke="#475569"/>
+<text x="85" y="131" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Cash</text>
+<text x="85" y="145" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">Kankakee</text>
+<path d="M130 131 L178 131" stroke="#475569" stroke-width="2"/>
+<path d="M170 125 L178 131 L170 137" stroke="#475569" stroke-width="2" fill="none"/>
+
+<rect x="178" y="108" width="170" height="46" rx="6" fill="#1c2534" stroke="#7aa2d6"/>
+<text x="263" y="128" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Schwab / Fidelity</text>
+<text x="263" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">a securities broker-dealer</text>
+<path d="M348 131 L396 131" stroke="#475569" stroke-width="2"/>
+<path d="M388 125 L396 131 L388 137" stroke="#475569" stroke-width="2" fill="none"/>
+
+<rect x="396" y="108" width="150" height="46" rx="6" fill="#1c2534" stroke="#7aa2d6"/>
+<text x="471" y="128" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">IBIT shares</text>
+<text x="471" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">a security, not a coin</text>
+
+<line x1="40" y1="184" x2="820" y2="184" stroke="#475569" stroke-width="1.5" stroke-dasharray="2 4"/>
+<circle cx="820" cy="184" r="11" fill="none" stroke="#7aa2d6" stroke-width="2"/>
+<path d="M814 184 L826 184 M820 178 L820 190" stroke="#7aa2d6" stroke-width="2" transform="rotate(45 820 184)"/>
+<text x="796" y="188" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#7aa2d6">zero tax points — no digital asset broker on this path</text>
+
+<line x1="40" y1="210" x2="860" y2="210" stroke="rgba(255,255,255,.08)"/>
+
+<text x="40" y="240" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#c9b458">2. Same city, buying coffee with bitcoin over Lightning</text>
+
+<rect x="40" y="253" width="90" height="46" rx="6" fill="#1c2534" stroke="#475569"/>
+<text x="85" y="276" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Cash</text>
+<text x="85" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">Kankakee</text>
+<path d="M130 276 L178 276" stroke="#475569" stroke-width="2"/>
+<path d="M170 270 L178 276 L170 282" stroke="#475569" stroke-width="2" fill="none"/>
+
+<rect x="178" y="253" width="130" height="46" rx="6" fill="#1c2534" stroke="#c9b458"/>
+<text x="243" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Exchange</text>
+<text x="243" y="288" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">buys the coin</text>
+<circle cx="308" cy="253" r="9" fill="#c9b458"/>
+<text x="308" y="257" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#0a0f1a" font-weight="bold">.2%</text>
+
+<path d="M308 276 L356 276" stroke="#475569" stroke-width="2"/>
+<path d="M348 270 L356 276 L348 282" stroke="#475569" stroke-width="2" fill="none"/>
+<text x="332" y="266" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#94a3b8">withdraws</text>
+
+<rect x="356" y="253" width="170" height="46" rx="6" fill="#1c2534" stroke="#c9b458"/>
+<text x="441" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Self-custody wallet</text>
+<text x="441" y="288" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">no sale, no gain — just storage</text>
+<circle cx="526" cy="253" r="9" fill="#c9b458"/>
+<text x="526" y="257" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#0a0f1a" font-weight="bold">.2%</text>
+
+<path d="M526 276 L574 276" stroke="#e07a5f" stroke-width="2" stroke-dasharray="4 3"/>
+<path d="M566 270 L574 276 L566 282" stroke="#e07a5f" stroke-width="2" fill="none"/>
+<text x="550" y="266" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#94a3b8">Lightning</text>
+
+<rect x="574" y="253" width="180" height="46" rx="6" fill="rgba(224,122,95,.12)" stroke="#e07a5f" stroke-dasharray="4 3"/>
+<text x="664" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Coffee shop</text>
+<text x="664" y="288" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#94a3b8">wallet to wallet, off-chain</text>
+<circle cx="754" cy="253" r="11" fill="none" stroke="#e07a5f" stroke-width="2"/>
+<text x="754" y="258" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e07a5f">?</text>
+
+<text x="574" y="330" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">No broker sits between these two wallets — nothing for the</text>
+<text x="574" y="346" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">state to compel, nothing for it to read.</text>
+
+<circle cx="520" cy="360" r="7" fill="#c9b458"/>
+<text x="534" y="364" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0.2% collected here — a broker touched the coin</text>
+
+<line x1="40" y1="388" x2="0" y2="388" stroke="none"/>
+<text x="40" y="388" font-family="Georgia, serif" font-size="10.5" fill="#94a3b8">Illinois Digital Asset Tax Act (SB 3019), effective Jan. 1, 2027. The path, not the price, is what's taxed — see the post.</text>
+</svg>
