@@ -1,0 +1,227 @@
+title: Two-Tenths of a Percent, If Illinois Can See You
+date: 2026-09-30
+tags: bitcoin, lightning, self-custody, etf, taxes, tax policy, crypto regulation, illinois, notes
+summary: Illinois just became the first state to tax Bitcoin transactions directly — a 0.2% Digital Asset Tax Act taking effect January 1, 2027. I went looking for what it actually reaches, using two Kankakee residents as the test case: one who owns a Bitcoin ETF inside an ordinary brokerage account, and one who wants to buy coffee with sats over the Lightning Network. The tax lands hard on one of them, barely touches the other, and can't see the actual coffee purchase at all — and the reason why says a lot about how a state can tax a ledger it doesn't control.
+meta_desc: Illinois's new 0.2% Bitcoin transaction tax, tested against a brokerage-held ETF and a Lightning coffee payment. Same city, two very different tax bills.
+hero: two-tenths-of-a-percent-if-illinois-can-see-you.svg
+hero_alt: A flow diagram comparing two paths for the same bitcoin in Illinois. Top: cash into a traditional brokerage account, buying shares of a Bitcoin ETF — no tax point anywhere, because a securities broker-dealer isn't a digital asset broker. Bottom: cash into a crypto exchange (a 0.2 percent tax point, buying the coin), withdrawn to a self-custody wallet (a second 0.2 percent tax point, just for storing it), then spent at a coffee shop over the Lightning Network, wallet to wallet with no broker in the middle — no tax point, and nothing for the state to see.
+hero_credit: Diagram is my own, built from the text of Illinois SB 3019 (the Digital Asset Tax Act) and the legal analyses cited below.
+draft: false
+---
+
+<p>A new Illinois law has been making the rounds online, usually summarized as "Illinois just
+started taxing Bitcoin." That's close enough to be useful and vague enough to be wrong in
+exactly the places that matter. So I read the mechanics of the actual statute and ran it
+against two Illinois residents doing two completely ordinary things with bitcoin, in the same
+town, on the same day. One of them owes essentially nothing new. The other one's coffee is,
+depending on how you squint, either taxed twice before he takes a sip or not taxed at all —
+and the reason is the most interesting part of the whole law.</p>
+
+<h2>What Illinois Actually Passed</h2>
+
+<p>On June 16, 2026, Governor JB Pritzker signed the <strong>Digital Asset Tax Act</strong>
+("DATA") into law as Article 3 of Senate Bill 3019, the state's fiscal year 2027 budget
+implementation bill, now Public Act 104-0468 — the first law of its kind in the country.
+Starting <strong>January 1, 2027</strong>, it imposes a <strong>0.2% tax on the value of a
+digital asset</strong> involved in an "exchange, transfer, or storage" carried out by a
+<strong>digital asset broker</strong> on behalf of an Illinois customer. It's technically
+written as a tax on the <em>customer's</em> "privilege of receiving digital asset business
+activity from a broker" — the broker just collects and remits it, the way a retailer collects
+sales tax at the register.</p>
+
+<p>Two design choices matter more than the headline rate:</p>
+
+<ul>
+  <li><strong>The tax is collected at the broker, not the customer.</strong> A "digital asset
+  broker" is defined broadly — anyone who, for consideration, regularly provides services
+  effectuating transfers, custody, or storage of digital assets on behalf of someone else — and
+  must register and collect the tax if it has either a physical presence in Illinois or at
+  least $100,000 in Illinois gross receipts. Registration is required before serving a single
+  Illinois customer, not after crossing that threshold, and the statute presumes every dollar a
+  broker takes in is taxable unless the broker proves otherwise. Failing to register is a Class
+  3 felony — for the broker, not for you.</li>
+  <li><strong>"Storage" is its own taxable event, separate from a sale.</strong> Most taxes on
+  an asset wait for a gain to be realized. This one taxes the <em>act</em> of exchanging,
+  transferring, or storing the asset, on its gross value, whether or not you made or lost a
+  dime. Moving your own coin from an exchange to your own wallet — no sale, no counterparty, no
+  profit — appears to be a taxable transfer in its own right.</li>
+</ul>
+
+<p>The statute is notably silent on a few things a future regulation will have to settle,
+including what "value" means for a coin that moves every few seconds. And the fight over the
+law started almost immediately on two fronts. A bill to repeal it outright, <a
+href="https://ilga.gov/documents/legislation/104/HB/PDF/10400HB5798.pdf"
+rel="noopener" target="_blank">HB 5798</a>, was introduced in the General Assembly less than a
+week after the governor's signature — it stalled in committee that same session, so repeal-by-
+legislature isn't currently moving. The more active challenge is in court: on July 21, 2026, the
+<strong>Chamber of Digital Commerce</strong>, a blockchain-industry trade group, sued the state
+in Sangamon County Circuit Court, arguing the tax is unconstitutionally vague, shifts an
+uncollectible burden onto brokers, imposes disproportionate felony penalties, and violates the
+federal Dormant Commerce Clause and the Internet Tax Freedom Act, among other claims. That case
+is still pending, seeking to block enforcement before January 1, 2027. Nothing about that date
+is locked in yet.</p>
+
+<h2>Resident One: The Bitcoin ETF in a Brokerage Account</h2>
+
+<p>Picture someone in Kankakee who opened a Schwab or Fidelity account years ago and, at some
+point, bought shares of a spot Bitcoin ETF — IBIT, FBTC, whichever. Does DATA touch that
+position at all?</p>
+
+<p>Read the statute's own target and the answer is no, and it's not a loophole — it's the
+design. The tax reaches a <strong>digital asset broker</strong>: an entity effectuating
+transfers or custody of the digital asset itself, for a customer, in exchange for
+consideration. Schwab and Fidelity aren't that. They're registered securities broker-dealers,
+and what they're holding for this customer is a <strong>security</strong> — a share of a fund —
+not bitcoin. The actual coins sit with the fund's own custodian, in a relationship the fund
+manages, not the retail shareholder. The Kankakee investor never personally engages a digital
+asset broker for anything; the fund does that on its own side of a wall the investor never
+crosses. As one tax attorney put it flatly while walking through the new law, <a
+href="https://www.forbes.com/sites/nathangoldman/2026/07/15/illinoiss-crypto-tax-could-tax-you-even-if-you-lose-money/"
+rel="noopener" target="_blank">moving $1 million through a brokerage account triggers no
+Illinois digital asset tax at all</a> — the same $1 million moved through a crypto exchange or
+wallet provider would.</p>
+
+<p>So this resident's tax bill is exactly what it always was: ordinary capital gains when the
+shares are eventually sold, federal and Illinois income tax as usual, and a 4.95% flat state
+income tax rate that hasn't moved. DATA adds a line to nobody's 1099 here. The "Bitcoin tax"
+headline, for this Illinois resident, changes nothing.</p>
+
+<h2>Resident Two: Coffee, Paid for Over Lightning</h2>
+
+<p>Now picture a second Kankakee resident — maybe the first one's neighbor — who actually holds
+bitcoin himself and wants to buy his coffee with it, routed over the Lightning Network, the
+system built specifically to make small bitcoin payments instant and nearly free. Same city,
+same morning, same 0.2% law. This is where it gets genuinely strange, because the honest answer
+splits into three separate moments, and the tax treats them completely differently.</p>
+
+<h3>Moment one: funding the wallet</h3>
+
+<p>To spend bitcoin, he first had to acquire it, almost certainly through a custodial exchange
+or a wallet provider that itself buys bitcoin on his behalf. That's a textbook "digital asset
+broker" transaction — a sale/exchange, on Illinois soil, for consideration. The 0.2% applies
+right there, collected by the exchange, the same way a retailer collects sales tax at the
+register.</p>
+
+<h3>Moment two: moving it to his own wallet</h3>
+
+<p>If he then withdraws those sats out of the custodial exchange into a wallet only he
+controls — the ordinary, sensible thing to do with money you intend to actually spend rather
+than leave sitting on someone else's balance sheet — he has just triggered a second taxable
+event under this law's own "storage" and "transfer" language, even though nothing was sold and
+he's exactly as rich as he was five minutes earlier. This is the specific feature of DATA that
+drew the sharpest criticism from tax commentators: <a
+href="https://www.forbes.com/sites/nathangoldman/2026/07/15/illinoiss-crypto-tax-could-tax-you-even-if-you-lose-money/"
+rel="noopener" target="_blank">it can tax you even on a position that's underwater</a>, because
+it was never measuring gain in the first place.</p>
+
+<h3>Moment three: the actual coffee</h3>
+
+<p>Here's the part worth sitting with. Once those sats are in a wallet he alone holds, paying
+for coffee over Lightning is a direct, off-chain, wallet-to-wallet payment to the shop's own
+node. No exchange sits in the middle. No custodian touches the coin. Nobody "for consideration"
+is effectuating that transfer on his behalf — he's doing it himself, which is the entire point
+of self-custody and the entire point of Lightning. Read against the statute's own definition of
+who has to register and collect, that transaction has no digital asset broker on it at all. A
+close read of the law's mechanics, including a legal summary published by the law firm Jones
+Day the week DATA was signed, reaches the same place: <strong>self-custody wallets,
+peer-to-peer transfers, and Lightning payments routed around an intermediary appear
+unaddressed by the statute and fall outside its collection requirement</strong> — not because
+lawmakers carved out an exception for them, but because the law's entire collection mechanism
+is built on top of a registered broker standing in the middle of the transaction, and a direct
+Lightning payment doesn't have one.</p>
+
+<p>That's also, not incidentally, why the state genuinely <em>can't</em> see it, in a way that's
+different from simply not bothering to look. A Lightning payment isn't broadcast to the
+Bitcoin blockchain the way an on-chain transaction is — it settles inside a private payment
+channel between the two parties, and only the channel's opening and closing ever touch the
+public ledger, often much later and bundled with a lot of other activity. There's no public
+record for the Department of Revenue to read, no exchange ledger to subpoena, no third party
+anywhere in the transaction to compel. The state's actual point of leverage over crypto tax
+compliance is the <strong>registered broker</strong> — it can require Coinbase or Strike or
+Cash App to register, collect, and remit, and threaten a felony if they don't. It has no
+equivalent lever over two people quietly passing sats back and forth, because the law, like the
+Lightning Network itself, was never built with a third party in the room.</p>
+
+<h2>So: Taxed Twice, or Not At All?</h2>
+
+<p>Both, honestly, depending on which leg you're looking at. The buy-in and the move to
+self-custody are squarely inside the law's reach — two separate 0.2% touches before a single
+coin has bought anything. The payment itself, the actual moment of buying coffee, is the one
+leg the law's own architecture can't reach, for the same reason it's the one leg Lightning was
+built to make invisible to fees, delays, and middlemen generally. If he'd instead kept the coins
+sitting on the exchange and paid with the exchange's own debit card (several custodial
+providers offer exactly this), every leg of that would run through a registered broker, and the
+state's collection mechanism works exactly as designed. The tax isn't really a tax on
+<em>bitcoin</em>. It's a tax on going through a business Illinois can require to register — and
+the more a payment resembles handing cash directly to another person, the less that description
+fits.</p>
+
+<p>Set the two residents side by side and the shape of the law comes into focus. The one
+holding bitcoin exposure wrapped inside a regulated security pays nothing new. The one holding
+actual bitcoin, in his own custody, doing the most bitcoin-native thing possible with it, gets
+taxed going in, taxed again just for holding it himself, and then executes the one transaction
+the whole law can't observe. A statute aimed at "digital asset business activity" ends up, in
+practice, taxing custodial convenience and self-custody discipline almost identically hard,
+while leaving the actual payment — the thing a casual reader of the headline would assume is
+the target — as close to untouched as anything in the bill.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>No implementing regulations exist yet.</strong> The Illinois Department of
+  Revenue hasn't published rules defining "value," clarifying whether a single custodial
+  buy-and-hold counts as one taxable event or two, or addressing DeFi protocols with no obvious
+  human broker at all. Anything here could tighten or loosen before January 2027.</li>
+  <li><strong>The ETF answer is an inference from the statute's structure and outside legal
+  commentary, not a direct Illinois Department of Revenue ruling.</strong> No regulator has yet
+  said in so many words "a Bitcoin ETF held at a traditional brokerage is outside DATA's scope" —
+  I'm reasoning from how the definition of "digital asset broker" is written and from how ETF
+  custody is actually structured, not quoting a guidance document that doesn't exist yet.</li>
+  <li><strong>A merchant's own point-of-sale provider could reintroduce a broker into the
+  Lightning leg.</strong> Some businesses accept Lightning through a custodial processor that
+  instantly converts to dollars on their end. If this coffee shop uses one, that processor might
+  be a digital asset broker on the <em>merchant's</em> side of the payment, even though nothing
+  changes on the customer's side. I'm assuming a shop accepting Lightning directly to its own
+  node, which plenty do, but not all.</li>
+  <li><strong>Either the courts or a future legislature could take the whole law off the
+  board before it ever takes effect.</strong> The Chamber of Digital Commerce's lawsuit is
+  pending, unresolved, and specifically asking to enjoin enforcement before January 1, 2027;
+  HB 5798 stalled this session but could be revived. Everything above describes a law that
+  exists today, for a date that hasn't arrived.</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Illinois General Assembly. <i>Senate Bill 3019 (FY2027 Budget Implementation), Public Act
+  104-0468, Article 3 — the Digital Asset Tax Act.</i> Signed June 16, 2026.
+  <a href="https://legiscan.com/IL/research/SB3019" rel="noopener" target="_blank">legiscan.com</a></li>
+  <li>Jones Day. <i>Illinois Passes Nation's First Digital Asset Tax — Here's the Catch.</i>
+  June 2026.
+  <a href="https://www.jonesday.com/en/insights/2026/06/illinois-passes-nations-first-digital-asset-tax-heres-the-catch"
+  rel="noopener" target="_blank">jonesday.com</a></li>
+  <li>PwC. <i>Illinois Enacts Tax on Digital Asset Business Activity.</i> State &amp; Local Tax
+  Insights, 2026.
+  <a href="https://www.pwc.com/us/en/services/tax/library/illinois-enacts-tax-on-digital-asset-business-activity.html"
+  rel="noopener" target="_blank">pwc.com</a></li>
+  <li>BDO. <i>Illinois Enacts Potentially Wide-Reaching Digital Asset Tax.</i> 2026.
+  <a href="https://www.bdo.com/insights/tax/illinois-enacts-potentially-wide-reaching-digital-asset-tax"
+  rel="noopener" target="_blank">bdo.com</a></li>
+  <li>Chandrasekera, Shehan. <i>Illinois Will Tax Crypto Transfers At 0.2% Starting 2027.</i>
+  Forbes, June 18, 2026.
+  <a href="https://www.forbes.com/sites/shehanchandrasekera/2026/06/18/illinois-will-tax-crypto-transfers-at-02-starting-2027/"
+  rel="noopener" target="_blank">forbes.com</a></li>
+  <li>Goldman, Nathan. <i>Illinois's Crypto Tax Could Tax You Even If You Lose Money.</i>
+  Forbes, July 15, 2026.
+  <a href="https://www.forbes.com/sites/nathangoldman/2026/07/15/illinoiss-crypto-tax-could-tax-you-even-if-you-lose-money/"
+  rel="noopener" target="_blank">forbes.com</a></li>
+  <li>PYMNTS. <i>Illinois Puts Crypto Transfers in the Tax Crosshairs.</i> 2026.
+  <a href="https://www.pymnts.com/cryptocurrency/2026/illinois-gov-jb-pritzker-triggers-industry-backlash-with-crypto-tax-law/"
+  rel="noopener" target="_blank">pymnts.com</a></li>
+  <li>Illinois General Assembly. <i>House Bill 5798 (repealing the Digital Asset Tax Act).</i>
+  Introduced June 22, 2026.
+  <a href="https://ilga.gov/documents/legislation/104/HB/PDF/10400HB5798.pdf"
+  rel="noopener" target="_blank">ilga.gov</a></li>
+  <li>Reed Smith. <i>First-in-Nation Digital Asset Tax Hits Illinois — and a Lawsuit.</i> 2026.
+  <a href="https://www.reedsmith.com/articles/first-in-nation-digital-asset-tax-hits-illinois-and-a-lawsuit"
+  rel="noopener" target="_blank">reedsmith.com</a></li>
+</ol>

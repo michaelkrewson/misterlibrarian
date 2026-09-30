@@ -59,6 +59,22 @@
     <category>zaps</category>
   </item>
   <item>
+    <title>Two-Tenths of a Percent, If Illinois Can See You</title>
+    <link>https://mistertranslation.com/finance/two-tenths-of-a-percent-if-illinois-can-see-you.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/two-tenths-of-a-percent-if-illinois-can-see-you.html</guid>
+    <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Illinois just became the first state to tax Bitcoin transactions directly — a 0.2% Digital Asset Tax Act taking effect January 1, 2027. I went looking for what it actually reaches, using two Kankakee residents as the test case: one who owns a Bitcoin ETF inside an ordinary brokerage account, and one who wants to buy coffee with sats over the Lightning Network. The tax lands hard on one of them, barely touches the other, and can't see the actual coffee purchase at all — and the reason why says a lot about how a state can tax a ledger it doesn't control.</description>
+    <category>bitcoin</category>
+    <category>lightning</category>
+    <category>self-custody</category>
+    <category>etf</category>
+    <category>taxes</category>
+    <category>tax policy</category>
+    <category>crypto regulation</category>
+    <category>illinois</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>The Coins Exchanges Won't Let Back In</title>
     <link>https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</guid>
@@ -488,21 +504,6 @@
     <category>market structure</category>
     <category>clarity act</category>
     <category>michael selig</category>
-  </item>
-  <item>
-    <title>The Genie Gets a Five-Year Lease</title>
-    <link>https://mistertranslation.com/finance/the-genie-gets-a-five-year-lease.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-genie-gets-a-five-year-lease.html</guid>
-    <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Yesterday I wrote that the SEC and CFTC would build crypto rules without Congress. This morning the same friend who started that conversation texted me the SEC's "Innovation Exemption" with two words of commentary — "the genie" — and a five-year number. He's right about the number. Here's what the order actually does, the caps nobody is quoting, and the other thing the SEC did in the same building on the same day that matters more than the order.</description>
-    <category>sec</category>
-    <category>tokenization</category>
-    <category>tokenized stocks</category>
-    <category>market structure</category>
-    <category>24-hour trading</category>
-    <category>crypto regulation</category>
-    <category>clarity act</category>
-    <category>paul atkins</category>
   </item>
 </channel>
 </rss>
