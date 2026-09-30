@@ -1,0 +1,71 @@
+title: The Jar Ships What It Promised
+date: 2026-09-30
+tags: bitcoin, lightning, lightning in a jar, nostr wallet connect, nwc, silent payments, self custody, zaps
+summary: Two things I flagged as "he says so, but I can't see it yet" in my last two Lightning in a Jar posts — a recovery scheme for silent payments, and Nostr Wallet Connect — showed up in the public repository overnight. I went and checked. Both are there, and the code backs up what he told me.
+meta_desc: An update on Lightning in a Jar shipping Nostr Wallet Connect (NWC) and its silent-payments recovery scheme, verified against the public repository.
+hero: lightning-in-a-jar-icon.png
+hero_alt: The Lightning in a Jar app icon — a cream-outlined jar with an amber lightning bolt inside, on a warm brown gradient
+hero_credit: The Lightning in a Jar app icon, from the project's own public repository. Shown to identify the wallet being discussed; the name and logo belong to its author, not to this page.
+draft: false
+---
+
+<p>I like following this project because it keeps giving me a reason to come back and check
+its homework, and this time the homework showed up faster than I expected. Two posts back
+I wrote about <a href="the-jar-learns-to-hide-which-jar.html">silent payments landing on the
+send side</a>, with the wallet's author telling me he'd also worked out a way to recover
+those payments from a seed phrase — a claim I flagged as unverified, because the public
+repository hadn't moved since before he told me. Around the same time, in an unrelated
+message, he mentioned in passing that the latest build had picked up Nostr Wallet Connect
+too — the thing that lets you zap from a Nostr client using a wallet you already have,
+instead of every client needing its own. Both were "he told me" items sitting in my notes
+with a question mark next to them.</p>
+
+<p>The question marks can come off. I pulled the public repository this morning and it had
+jumped forward about forty builds since the last time I looked — from page v844 to v882,
+engine v281 to v293, all landed over the last two days. Sitting in that jump: a new file
+called <code>nwc.rs</code>, thirteen hundred lines of it, which is the NWC support; and a
+new file called <code>sp_scan.rs</code>, eight hundred lines, plus a few hundred more added
+to the existing silent-payments code — which is the recovery machinery he described. Both
+things he told me about are now things I can point at.</p>
+
+<h2>What I Actually Checked</h2>
+
+<p>I didn't just count files and call it a day. The part I cared about most was the recovery
+claim, because it's the one that matters for money: if a silent payment scatters your coins
+across addresses nobody but you can find, the wallet had better be able to find all of them
+again from twelve words alone, on a phone that's never seen them before. Reading through it,
+the silent-payment keys the scanner uses to hunt down your coins are derived the same way
+every other key in this wallet is — straight from the same root key the twelve words produce,
+the <code>SpKeys::from_root()</code> call sitting right there in the code. That's the honest
+answer to "does this actually work from a fresh seed," and it does, by construction, the same
+way the rest of the wallet already does. The scanner itself walks the chain from a stored
+"birthday" height forward, hunting for outputs that match your key — which is exactly the
+kind of unglamorous, patient bookkeeping a recovery feature needs and a flashy demo doesn't.
+I haven't walked every line of that scanner start to finish, and I haven't watched it recover
+a real wallet on a real phone — that's still worth doing before the October recheck — but the
+shape of it matches what he told me, and the keys come from the right place.</p>
+
+<p>The NWC side I read more lightly, since nothing about it touches how funds are held — it's
+a remote-control surface, not a custody one. It's there, it's substantial (thirteen hundred
+lines isn't a stub), and it does what he said: lets a Nostr client ask the wallet to pay
+without the client needing its own Lightning stack built in. He mentioned, almost as an
+aside, that he isn't fully happy with how it feels yet — the round trip over Nostr relays has
+some lag compared to a payment made directly in the wallet — and that he plans to keep working
+on that. I'd rather a builder tell me a feature works but isn't polished than tell me nothing
+and let me find out myself, and this is the second time in two posts he's volunteered the
+caveat before I asked for one.</p>
+
+<h2>Where This Leaves the Review</h2>
+
+<p>This doesn't move my verdict from the <a href="lightning-in-a-jar-review.html">original
+review</a>, and it isn't supposed to — the three things I said would turn "not yet for
+strangers" into "yes" were never about any single feature. They're still an LDK catch-up, an
+outside reader of the patch set, and a second registered LSP. But it's worth saying plainly
+what this pattern actually looks like from the outside: a guy tells me what he's building
+before it's done, I go check, and it's there, built the way he described, faster than most
+projects I follow manage with a whole team. Silent payments went from an idea in a text
+message to send-and-receive with a working recovery path in about a week. That's not nothing,
+and if he keeps shipping at this pace while taking his own security posture as seriously as
+the patch notes and the findings file suggest, the gap between "a jar I'd put my own sats in"
+and "a wallet I'd hand a stranger" is going to close a lot faster than most self-custodial
+wallets manage. I'll keep checking. So far, checking keeps being the fun part.</p>
