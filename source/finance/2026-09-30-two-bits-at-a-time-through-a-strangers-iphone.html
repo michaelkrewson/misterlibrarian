@@ -1,0 +1,247 @@
+title: Two Bits at a Time, Through a Stranger's iPhone
+date: 2026-09-30
+tags: bitcoin, cashu, ecash, apple, find my, airtag, bluetooth, offline payments, privacy, calle
+summary: Tonight Calle posted a photo of a thumb-sized board taped to a battery, a screen reading "FIND MY NUTS," and a terminal showing a 409-byte bitcoin ecash token reassembled on the other end. It traveled with no internet connection on the sending side. Every piece of it was carried by iPhones that happened to be nearby and had no idea they were carrying money. Here's how it actually works, what it does and doesn't mean for Bitcoin, and what I think Apple does about it.
+meta_desc: How Calle's demo sent Cashu ecash over Apple's Find My network, two bits at a time, and what Apple is likely to do about it.
+hero: two-bits-find-my-nuts.svg
+hero_alt: A left-to-right flow diagram titled "How a 409-byte ecash token rode Apple's Find My network." A small board with no internet broadcasts fake AirTag beacons, each one carrying two bits hidden in its public key. Passing iPhones hear them and upload ordinary encrypted location reports to Apple's servers, which file each report under a hash of that key. A receiver signed in with an Apple Account asks about all four possible keys for every two-bit slot and keeps the ones that got reports. Once all 1,676 slots are filled, the token is complete and goes to the Cashu mint to be redeemed. Totals along the bottom: 1,676 two-bit pieces, 13,407 reports, about 52 minutes per broadcast pass.
+hero_credit: Diagram by this site. Figures are from Calle's own post of September 30, 2026, and the find-my-nuts protocol document published by its developer, zeugmaster, on GitHub.
+draft: false
+---
+
+<p>The post went up a little after seven in the evening Eastern time. <a
+href="https://x.com/callebtc/status/2105433491437486248" rel="noopener" target="_blank">Calle</a>,
+the developer who created the Cashu ecash protocol, wrote: "BREAKING: bitcoin sent via apple's
+'find my' mesh network. possibly the most absurd medium to send bitcoin yet." Two pictures came with
+it. One was a small development board taped to a flat battery, with a little screen that read
+<strong>FIND MY NUTS</strong>. The other was a terminal showing a progress bar at 100%, the line
+"verified 409-byte cashuB token," and the token itself.</p>
+
+<p>"Absurd" is fair, and also a little modest. A device with no Wi-Fi and no cellular connection
+got a usable piece of money to someone else by persuading strangers' iPhones to carry it, two bits
+at a time, without any of those phones knowing it. I wanted to understand exactly how that works
+before deciding what it means, and the code is public, so I read it.</p>
+
+<h2>The Network It Borrowed</h2>
+
+<p>Since 2019, Apple's Find My has had a feature most iPhone owners never think about. A lost
+Apple device, or an AirTag, sends out a short Bluetooth Low Energy broadcast every so often. That
+broadcast carries a <em>public key</em>, a 28-byte number from a cryptography system called
+elliptic curves. Any nearby iPhone that hears it does three things on its own: it notes where it is,
+encrypts that location so only the holder of the matching <em>private</em> key can read it, and
+uploads the encrypted report to Apple. Apple files the report under a hash of the public key. The
+owner's own device knows which keys its AirTag will use, asks Apple for those hashes, decrypts the
+reports, and puts a dot on a map.</p>
+
+<p>The design is genuinely clever about privacy. Apple never sees where anything is. The iPhone
+that relayed the report is never identified. The keys rotate so that nobody can follow one tag
+around by its broadcasts. If you own an iPhone with Find My switched on, which is the default,
+your phone is one of these couriers, all day, every day.</p>
+
+<p>The security researcher Fabian Bräunlein noticed the loophole in that design in May 2021 and
+called his proof of concept <a href="https://positive.security/blog/send-my" rel="noopener"
+target="_blank">Send My</a>. Nobody checks whether a broadcast public key belongs to a real AirTag.
+So you can choose the "key" yourself and put data in it. Whether Apple ends up storing a report
+under that key becomes the message. Bräunlein got about 3 bytes per second out of a cheap
+microcontroller with no internet connection. Tonight's demo is that idea, rebuilt and pointed at
+money.</p>
+
+<h2>How the Token Actually Traveled</h2>
+
+<p>Calle said the build is by <a href="https://github.com/zeugmaster/find-my-nuts" rel="noopener"
+target="_blank">zeugmaster</a>, a Cashu wallet developer, who published both the firmware and a
+document spelling out the exact wire format. "Nuts" is the Cashu community's word for the ecash
+notes themselves, which explains the name. Here's the path, step by step:</p>
+
+<ol>
+  <li><strong>The board is a wallet first.</strong> It's an ESP32 microcontroller running a Cashu
+  wallet. It does need internet once, at the start, to buy ecash from a Cashu <em>mint</em> by
+  paying a Lightning invoice. After that it holds the ecash locally, and from then on it can work
+  completely offline.</li>
+  <li><strong>The token gets wrapped.</strong> One ecash note is written out as a text string that
+  begins with <code>cashuB</code>, 409 bytes long in tonight's demo. The firmware puts a 10-byte
+  header in front of it: a four-letter marker (<code>FMN1</code>), the length, and a checksum. That
+  makes 419 bytes.</li>
+  <li><strong>The bytes get cut into two-bit slices.</strong> Every byte becomes four pieces, each
+  holding a value from 0 to 3. 419 bytes × 4 = <strong>1,676 pieces</strong>, which is exactly the
+  "1676/1676" on Calle's screen.</li>
+  <li><strong>Each piece is disguised as an AirTag.</strong> For every piece, the firmware builds a
+  28-byte fake public key containing a fixed marker, the piece's position, a message number, a
+  "modem ID" that works like a channel, and, in the last byte, the two-bit value itself. A counter
+  is nudged until the result is a mathematically valid key so that iPhones will accept it. The board
+  then broadcasts it as an ordinary offline-finding beacon for 1.6 seconds and moves on to the next
+  piece.</li>
+  <li><strong>Strangers' iPhones do the uploading.</strong> Any iPhone in range hears what looks
+  like a lost AirTag and files a location report with Apple, exactly as it would for a real one.
+  It has no idea the "key" is a slice of a payment. Its own location is encrypted to that key, and
+  nobody holds the matching private key, so nobody, including the receiver, can read where the
+  phone was.</li>
+  <li><strong>The receiver asks four questions per piece.</strong> On the other end, anywhere in
+  the world, a script logged into an Apple Account rebuilds the same fake keys. It can do that
+  because the recipe is deterministic. For every one of the 1,676 positions it generates all four
+  candidates (value 0, 1, 2 or 3) and asks Apple's servers which of them have reports. The one that
+  does is the value. Calle's screen counted <strong>13,407 reports</strong>, about eight per piece:
+  plenty of iPhones heard each one.</li>
+  <li><strong>The checksum confirms it, and the mint pays out.</strong> Once every piece is filled
+  in, the receiver checks the length, the checksum and the <code>cashuB</code> prefix. Only then
+  does it print a token. The recipient hands that token to the mint and gets fresh ecash, or
+  Lightning sats, back.</li>
+</ol>
+
+<p>The speed is the funny part. Two bits every 1.6 seconds is about <strong>1.25 bits per
+second</strong> on the air. The Bell 103 modem AT&amp;T introduced in 1962 ran at 300. By the
+firmware's own formula, a single broadcast pass for this token, header repeats included, takes
+roughly <strong>52 minutes</strong>, and the board loops indefinitely because Find My provides no
+delivery receipt. A company worth close to <a href="board.html">$4.9 trillion</a> (on the evening
+of September 30) is now, technically, a payment network. It's also the slowest one I've ever seen,
+and it doesn't know it's one.</p>
+
+<h2>What Actually Moved, and What Didn't</h2>
+
+<p>One reply under Calle's post pointed out that you can't really "send bitcoin" this way, since a
+real transaction has to be broadcast to the Bitcoin network. That's correct, and it's the most
+important thing to understand about the demo. <strong>No bitcoin transaction happened.</strong>
+What traveled was a Cashu ecash note: a signed IOU from a mint that holds actual bitcoin and has
+promised to redeem the note for it.</p>
+
+<p>Cashu is a modern version of David Chaum's ecash idea from the 1980s. You pay a mint, and the
+mint signs tokens for you in a "blinded" way, which means that when the tokens come back later the
+mint can confirm they're valid but can't tell who it originally issued them to. They're
+<em>bearer</em> instruments, like paper cash: whoever holds the string can spend it. That's what
+makes them a good fit for a weird transport. A note is just text, so it can go by QR code, NFC,
+paper, or apparently by Find My. It also brings two catches that come with any bearer note:</p>
+
+<ul>
+  <li><strong>You're trusting the mint.</strong> If the mint goes away or refuses to pay, the note
+  is worth nothing. Ecash is custodial by design, and the privacy comes with that trade.</li>
+  <li><strong>Final means redeemed, not received.</strong> The recipient doesn't really have the
+  money until they've swapped the note at the mint. That step needs internet on the
+  <em>receiving</em> side. The offline part covers only the sender.</li>
+</ul>
+
+<p>The developers are blunt about a third catch, which is specific to this channel. The
+<a href="https://github.com/zeugmaster/find-my-nuts/blob/main/docs/FIND_MY_PROTOCOL.md"
+rel="noopener" target="_blank">protocol document</a> calls it "a public, unauthenticated
+bearer-token transport." Nothing is encrypted. Anyone who knows the modem ID and the message number
+can rebuild the same keys, query Apple, and redeem the note before the intended recipient does. The
+README says outright to use only giveaway amounts. It's a postcard, not an envelope.</p>
+
+<h2>Why Ecash, and Not a Normal Bitcoin Transaction</h2>
+
+<p>Here's the part I found most interesting. A signed Bitcoin transaction with one input and two
+outputs comes to roughly 220 bytes. That's <em>smaller</em> than this 409-byte token, and it's safe
+on a public channel: a signed transaction can only pay the address it was signed to pay, so a
+stranger who intercepts it can at most help broadcast it. You could send one through Find My the
+same way. The receiver would push it to the Bitcoin network instead of to a mint.</p>
+
+<p>So why ecash? Because for small amounts, an on-chain transaction is the wrong tool. A one-dollar
+payment would pay a network fee that may be a meaningful fraction of the payment, and wait
+for a block. A Cashu note costs nothing to hand over and settles at the mint in seconds. It also
+leaves no public trail. Lightning, the usual answer for small bitcoin payments, can't work here at
+all, because it needs both sides online and talking back and forth.</p>
+
+<p>The public-channel problem also has a known fix that this proof of concept simply didn't use.
+Cashu's <a href="https://github.com/cashubtc/nuts/blob/main/11.md" rel="noopener"
+target="_blank">NUT-11</a> lets a note be <em>locked</em> to the recipient's public key, so the
+mint only redeems it with that person's signature. A locked note could be shouted across a
+stadium and only one person could cash it. If someone builds a version of this for real, that's
+the first thing I'd expect them to add.</p>
+
+<h2>What It's Actually Good For</h2>
+
+<p>It doesn't fix an internet shutdown. Find My needs <em>somebody</em> nearby to be online: the
+relaying iPhones have to reach Apple. In a city where the government has cut mobile data,
+those phones are cut off too. What the trick does is move the internet requirement out of your
+pocket and into a stranger's. That's useful in a narrower set of places than "offline bitcoin"
+suggests: a device with no data plan, a sensor or vending box out in a field, a roaming phone
+abroad, a Faraday-shielded building people walk in and out of, a crowd where your own signal has
+died but everyone else's hasn't quite.</p>
+
+<p>It also joins a long tradition. Bitcoin's blockchain has been broadcast from satellites since
+2017, transactions have gone over SMS and radio mesh networks, and Calle himself has demoed
+tap-to-pay ecash over NFC. Each one makes the same point: once money is just a short string of
+signed text, the pipe matters a lot less than people assume.</p>
+
+<h2>What Apple Is Likely to Do</h2>
+
+<p>Here's my prediction, from most to least likely.</p>
+
+<p><strong>Most likely: nothing, for now.</strong> The best evidence is the calendar. Send My was
+published in May 2021, and Apple <a href="https://www.theregister.com/2021/05/12/apples_find_network/"
+rel="noopener" target="_blank">didn't respond</a> to requests for comment. Five years later the same
+technique works well enough to move a bitcoin note. That isn't neglect. Bräunlein pointed out at
+the time that the privacy design is the vulnerability. Apple can't check where a broadcast came
+from without learning things it deliberately refuses to learn. An AirTag can't sign its broadcasts
+either: it's a coin-cell device with no internet connection, and the broadcast has no spare room
+for a signature. At about a bit per second, nobody is harmed, and Apple's cost is a rounding error.</p>
+
+<p><strong>Next most likely, if it ever becomes a product: a clampdown on the receiving end.</strong>
+The sending side can't be identified, but the receiving side can. Pulling reports out requires an
+Apple Account with two-factor authentication, accessed through an unofficial, reverse-engineered
+client. That's where Apple actually has an identity to act on. It has done this before. In December
+2023 it shut off Beeper Mini, the app that brought iMessage to Android, within days, saying it had
+<a href="https://techcrunch.com/2023/12/08/apple-cuts-off-beeper-minis-access-after-launch-of-service-that-brought-imessage-to-android/amp"
+rel="noopener" target="_blank">blocked "techniques that exploit fake credentials."</a> If a wallet
+shipped Find My delivery to a lot of users, I'd expect rate limits on how many unfamiliar keys one
+account can look up, or tighter checks on unofficial clients. A rule like "no more than 16 new keys
+per account every 15 minutes," which Bräunlein himself suggested, would turn a 52-minute delivery
+into a multi-day one.</p>
+
+<p><strong>What would really move Apple is a security headline, not a bitcoin one.</strong> The
+same pipe that carries a giveaway token can carry data stolen from a computer that isn't supposed
+to be connected to anything. That was Bräunlein's original framing: getting data out of shielded
+sites. Apple does move fast when Find My harms people. When George Mason University researchers
+showed in early 2025 that the network could be tricked into tracking non-Apple devices (the
+"nRootTag" attack), Apple had already
+<a href="https://content.gmu.edu/news/2025-02/find-my-hacker-how-apples-network-can-be-potential-tracking-tool"
+rel="noopener" target="_blank">shipped fixes in its December 2024 updates</a>. Data smuggling at
+1.25 bits per second doesn't track anyone. Malware smuggling secrets out of a defense contractor
+would be a different conversation.</p>
+
+<p><strong>Least likely: changing the broadcast protocol itself.</strong> Every AirTag ever sold,
+every third-party Find My accessory, and the cross-platform unwanted-tracker standard Apple and
+Google <a href="https://www.apple.com/newsroom/2024/05/apple-and-google-deliver-support-for-unwanted-tracking-alerts-in-ios-and-android/"
+rel="noopener" target="_blank">launched together in May 2024</a> all depend on it. Apple could have
+iPhones quietly stop relaying for a spot that produces hundreds of brand-new "AirTags" an hour,
+which is what this board looks like from the outside. But a stadium full of real AirTags can look
+much the same, and dropping real reports to stop a curiosity is the kind of trade I don't think
+Apple makes.</p>
+
+<p>So my bet is quiet now, and receiver-side rate limits later if this ever scales. I'd be surprised
+to see Apple say a word about bitcoin.</p>
+
+<h2>What I'll Be Watching</h2>
+
+<ul>
+  <li><strong>A recipient-locked version.</strong> If someone adds NUT-11 locking, this goes from a
+  stunt to something you could actually use for small amounts. That's the line between "giveaway"
+  and "payment."</li>
+  <li><strong>Whether the receiver keeps working.</strong> The retrieval side depends on an
+  unofficial client library that its own maintainers say "may stop working" when Apple changes its
+  backend. If it breaks around the time this goes viral, that's my second prediction landing.</li>
+  <li><strong>Any statement from Apple.</strong> I don't expect one. If one comes, the wording will
+  tell you which category Apple puts this in: privacy, security, or terms of service.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The mechanics are from the published code and protocol document</strong>, read the
+  night of the demo. I matched the 1,676-piece and 409-byte figures on Calle's screenshot to the
+  document's formula (four pieces per byte, plus a 10-byte header). I haven't run the hardware
+  myself, so I can't confirm the actual end-to-end delivery time. The 52-minute figure is the
+  firmware's nominal pass time, not a measured delivery.</li>
+  <li><strong>The 220-byte transaction size</strong> is a typical figure for a one-input,
+  two-output native SegWit transaction. Real transactions vary with input count and script
+  type.</li>
+  <li><strong>My Apple predictions are predictions.</strong> Apple has never commented on Send My
+  publicly, so "it can't be fixed without breaking privacy" is the researcher's assessment, which I
+  find convincing. It isn't Apple's. Apple may have rate limits in place already that nobody has
+  measured.</li>
+  <li><strong>"Calle created Cashu"</strong> is how the project describes itself; the underlying
+  blind-signature idea is Chaum's, and today's Cashu software has many contributors, zeugmaster
+  among them.</li>
+  <li><strong>I hold Bitcoin (through an ETF) and Strategy Inc.</strong> I have no position in Apple
+  and no relationship with any Cashu mint, and none of this is investment advice. Please don't send
+  anything over Find My that you'd mind a stranger keeping.</li>
+</ul>
