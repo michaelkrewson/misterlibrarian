@@ -1,32 +1,21 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
     {
-      "label": "World",
-      "items": [
-        {
-          "text": "The U.S. military completes its withdrawal from Iraq on September 30, closing out a 12-year counter-ISIS mission that began in 2014, with Iraqi Prime Minister Ali al-Zaidi confirming the date as the \"fixed and final\" end of the Global Coalition's operations in the country.",
-          "href": "",
-          "source_href": "https://www.cnn.com/2026/09/30/middleeast/us-military-withdrawal-iraq-intl",
-          "breaking": false
-        }
-      ]
-    },
-    {
       "label": "Business & markets",
       "items": [
         {
-          "text": "The Dow closes down 131.59 points (0.26%) to 51,349.92 and the S&P 500 slips 0.16% to 7,670.84 on September 29, with the Nasdaq off 0.09% to 26,797.54, as another rise in long-term Treasury yields weighs on stocks.",
+          "text": "The Dow falls 443.87 points (0.86%) to 50,906.05 and the S&P 500 slips 0.25% to 7,651.54 on September 30, while the Nasdaq edges up 0.24% to 26,861.06, even as the August PCE report — the Fed's preferred inflation gauge — came in cooler than expected.",
           "href": "",
-          "source_href": "https://vistapglobal.com/daily-stock-market-summary-tuesday-september-29-2026-stocks-finish-lower-as-yields-stay-elevated-amzn-ccl-eprx-f-fico-iova-meta-modd-ser-shop-tgt-wmt/",
+          "source_href": "https://www.kare11.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-wednesday-9302026/616-850abec6-880e-4544-a8ba-9a221dee6ea1",
           "breaking": false
         },
         {
-          "text": "U.S. stock futures edge lower Wednesday morning, September 30, as traders await the Commerce Department's August PCE report, the Federal Reserve's preferred inflation gauge.",
+          "text": "September closes with the S&P 500 down 0.5% and the Dow off 4.3% for the month, but the third quarter still finishes in the black: the S&P 500 up 2% and the Nasdaq up 2.5%, while the Dow lagged with a 2.7% quarterly loss.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-30-dow-sp-500-nasdaq-080339262.html",
+          "source_href": "https://www.bnnbloomberg.ca/markets/2026/09/30/wall-street-closes-in-on-a-winning-september-following-an-encouraging-update-on-inflation/",
           "breaking": false
         }
       ]
@@ -35,43 +24,43 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin opens Wednesday, September 30 at $83,624.79 and climbs to $83,767 by 7:17 a.m. ET, holding onto its gains as the month closes out.",
+          "text": "Bitcoin ends Thursday, October 1 essentially flat near $83,554 as its post-PCE rally fades, keeping it inside the recent $82,500–$85,000 range.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-30-2026-red-september-a-thing-of-the-past-monthly-gains-holding-for-crypto-113317483.html",
+          "source_href": "https://riotimesonline.com/crypto-markets-bitcoin-majors-thursday-october-1-2026",
           "breaking": false
         },
         {
-          "text": "Ethereum opens the same morning at $2,676.74, down 0.4% from Tuesday, then recovers to $2,686.56, with 24-hour trading volume running about $28.21 billion for bitcoin and $15.49 billion for ether.",
+          "text": "Ethereum holds around $2,695–$2,713 the same morning, ticking up slightly even as bitcoin trades sideways.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-30-2026-red-september-a-thing-of-the-past-monthly-gains-holding-for-crypto-113317483.html",
+          "source_href": "https://usethebitcoin.com/eth/ethereum-price-october-1-2026/",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Technology",
+      "label": "Space",
       "items": [
         {
-          "text": "Amazon permanently shuts down Mechanical Turk on September 30, ending the 21-year-old crowdsourcing platform that once connected more than 500,000 \"turkers\" to companies paying cents-per-task for work automation couldn't yet do.",
+          "text": "NASA's Crew-13 launches today on a SpaceX Falcon 9 from Cape Canaveral's Space Launch Complex 40, carrying NASA astronauts Jessica Watkins (commander) and Luke Delaney (pilot), Canadian Space Agency astronaut Joshua Kutryk and Roscosmos cosmonaut Sergey Teteryatnikov to the ISS for a roughly six-month stay as part of Expedition 75/76.",
           "href": "",
-          "source_href": "https://www.techrepublic.com/article/news-amazon-mechanical-turk-shutdown/",
+          "source_href": "https://teslanorth.com/2026/09/23/spacex-crew-13-october-1-launch/",
           "breaking": false
         },
         {
-          "text": "Google begins enforcing its new Android developer identity-verification requirement on September 30, starting with users in Brazil, Indonesia, Singapore and Thailand across seven app stores including Google Play, Samsung's Galaxy Store and Xiaomi's GetApps.",
+          "text": "SpaceX also flies its Transporter-18 rideshare mission today from Vandenberg Space Force Base, lofting 45 small satellites for customers in 20 countries into sun-synchronous orbit via Exolaunch.",
           "href": "",
-          "source_href": "https://www.techrepublic.com/article/news-google-android-developer-verification-september-2026/",
+          "source_href": "https://orbitcodex.com/operations/transporter-18-dedicated-sso-rideshare-falcon-9",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Arts & culture",
+      "label": "Science",
       "items": [
         {
-          "text": "Bear 89, known as \"Backpack\" for riding on his mother's back as an injured cub, is crowned the 2026 Fat Bear Week champion at Katmai National Park on September 29, after more than 2.3 million votes were cast.",
+          "text": "The 2026 Nobel Prize announcements open Monday, with Physiology or Medicine first on October 5 and Economic Sciences last on October 12, and this year's award raised to 12 million Swedish kronor (about $1.21 million) per discipline.",
           "href": "",
-          "source_href": "https://alaskapublic.org/news/environment/2026-09-29/meet-backpack-fat-bear-weeks-chunky-champ",
+          "source_href": "https://www.nobelprize.org/prizes/about/prize-announcement-dates",
           "breaking": false
         }
       ]
