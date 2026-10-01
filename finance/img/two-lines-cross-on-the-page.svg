@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-label="A line chart recreating the structure of the San Francisco Fed's September 2026 chart comparing China's Treasury holdings (left axis, 0 to 1,250 billion dollars) against stablecoin issuers' Treasury holdings (right axis, 0 to 250 billion dollars) from 2020 to 2026. China's line declines steadily; the stablecoin line rises steadily; the two lines visually cross on the page around 2024-2025. A callout notes that because the right axis is compressed to a fifth of the left one, the crossing point is not a tie -- it represents roughly 800 billion dollars for China against roughly 160 billion for stablecoin issuers, a five-to-one gap preserved exactly by the axis ratio.">
+<rect width="900" height="460" fill="#0a0f1a"/>
+<text x="90" y="40" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Two lines cross on the page. <tspan fill="#94a3b8">They don't cross in dollars.</tspan></text>
+<text x="90" y="64" font-family="Georgia, serif" font-size="14" fill="#94a3b8">Same shape as SF Fed Econ Letter 2026-26, Fig. 3 &#8212; China (left axis) vs. stablecoins (right axis)</text>
+<line x1="90" y1="350.0" x2="850" y2="350.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="355.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$0B</text>
+<text x="860" y="355.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$0B</text>
+<line x1="90" y1="298.0" x2="850" y2="298.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="303.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$250B</text>
+<text x="860" y="303.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$50B</text>
+<line x1="90" y1="246.0" x2="850" y2="246.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="251.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$500B</text>
+<text x="860" y="251.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$100B</text>
+<line x1="90" y1="194.0" x2="850" y2="194.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="199.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$750B</text>
+<text x="860" y="199.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$150B</text>
+<line x1="90" y1="142.0" x2="850" y2="142.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="147.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$1,000B</text>
+<text x="860" y="147.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$200B</text>
+<line x1="90" y1="90.0" x2="850" y2="90.0" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="95.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">$1,250B</text>
+<text x="860" y="95.0" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#e8865c">$250B</text>
+<text x="80" y="76" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#5ea8d6" font-weight="bold">China</text>
+<text x="895" y="76" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8865c" font-weight="bold">Stablecoins</text>
+<line x1="90" y1="350" x2="850" y2="350" stroke="#5c6b85" stroke-width="1.5"/>
+<line x1="90.0" y1="350" x2="90.0" y2="356" stroke="#5c6b85"/>
+<text x="90.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2020</text>
+<line x1="216.7" y1="350" x2="216.7" y2="356" stroke="#5c6b85"/>
+<text x="216.7" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2021</text>
+<line x1="343.3" y1="350" x2="343.3" y2="356" stroke="#5c6b85"/>
+<text x="343.3" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2022</text>
+<line x1="470.0" y1="350" x2="470.0" y2="356" stroke="#5c6b85"/>
+<text x="470.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2023</text>
+<line x1="596.7" y1="350" x2="596.7" y2="356" stroke="#5c6b85"/>
+<text x="596.7" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2024</text>
+<line x1="723.3" y1="350" x2="723.3" y2="356" stroke="#5c6b85"/>
+<text x="723.3" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2025</text>
+<line x1="850.0" y1="350" x2="850.0" y2="356" stroke="#5c6b85"/>
+<text x="850.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2026</text>
+<polyline points="90.0,121.2 216.7,125.4 343.3,137.8 470.0,152.4 596.7,169.0 723.3,185.7 850.0,200.2" fill="none" stroke="#5ea8d6" stroke-width="3"/>
+<polyline points="90.0,344.8 216.7,324.0 343.3,287.6 470.0,235.6 596.7,183.6 723.3,136.8 850.0,147.2" fill="none" stroke="#e8865c" stroke-width="3"/>
+<circle cx="625.7" cy="172.9" r="7" fill="#e8c968"/>
+<line x1="625.7" y1="172.9" x2="605.7" y2="124.9" stroke="#e8c968" stroke-width="1.5" stroke-dasharray="3,3"/>
+<text x="605.7" y="88.9" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8c968" font-weight="bold">Same point on the page</text>
+<text x="605.7" y="106.9" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">~$852B China vs. ~$170B stablecoins</text>
+<text x="605.7" y="122.9" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">five-to-one, preserved exactly by the axis ratio</text>
+</svg>
