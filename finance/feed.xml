@@ -26,6 +26,21 @@
     <category>regulation</category>
   </item>
   <item>
+    <title>Two Lines Cross on the Page</title>
+    <link>https://mistertranslation.com/finance/two-lines-cross-on-the-page.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/two-lines-cross-on-the-page.html</guid>
+    <pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A friend shared a tweet from Bitwise's CIO citing a San Francisco Fed chart on stablecoin issuers' growing Treasury holdings, with "the entire stablecoin ecosystem is going much, much higher." Another friend in the same group chat flagged the chart's scale. A third asked the more basic question: higher in what? I pulled the actual Fed letter to answer both.</description>
+    <category>stablecoins</category>
+    <category>federal reserve</category>
+    <category>treasury bills</category>
+    <category>china</category>
+    <category>usdc</category>
+    <category>tether</category>
+    <category>charts</category>
+    <category>data literacy</category>
+  </item>
+  <item>
     <title>The Committee That Won't Say Its Own Name</title>
     <link>https://mistertranslation.com/finance/the-committee-that-wont-say-its-own-name.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-committee-that-wont-say-its-own-name.html</guid>
@@ -485,26 +500,6 @@
     <category>russia</category>
     <category>mica</category>
     <category>genius act</category>
-  </item>
-  <item>
-    <title>Same Price, Same Coin Count</title>
-    <link>https://mistertranslation.com/finance/same-price-same-coin-count.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/same-price-same-coin-count.html</guid>
-    <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A post went around this week saying Zcash at $1,200 is Bitcoin at $1,200 — study 2017. The arithmetic behind it is genuinely correct, which is the most interesting thing about it and the reason it's worth taking apart. Here is what the post is actually claiming, why the supply math works, why the conclusion doesn't follow, why my broker won't list the coin but will list the ETF, and what kind of future I think a "Bitcoin plus privacy" actually has. Shorter than the pitch: real, bounded, and not the apex of anything.</description>
-    <category>zcash</category>
-    <category>bitcoin</category>
-    <category>privacy coins</category>
-    <category>altcoins</category>
-    <category>grayscale</category>
-    <category>zcsh</category>
-    <category>etf</category>
-    <category>2017</category>
-    <category>market cap</category>
-    <category>monetary premium</category>
-    <category>monero</category>
-    <category>mica</category>
-    <category>crypto regulation</category>
   </item>
 </channel>
 </rss>
