@@ -7,6 +7,20 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>The Bridge Loan Nobody Signed For</title>
+    <link>https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</guid>
+    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A ZeroHedge post making the rounds argues that $2-3 trillion a year of circular, on-and-off-balance-sheet AI financing is a bridge loan — one that only gets repaid once enterprise AI spend reaches about $3 trillion a year in 2031. I checked how real the "circular financing" part is and how solid the 2031 number actually looks.</description>
+    <category>artificial intelligence</category>
+    <category>debt</category>
+    <category>capex</category>
+    <category>enterprise spending</category>
+    <category>circular financing</category>
+    <category>charts</category>
+    <category>data literacy</category>
+  </item>
+  <item>
     <title>The Vault Rule Got Rewritten the Day Before She Left</title>
     <link>https://mistertranslation.com/finance/the-vault-rule-got-rewritten-the-day-before-she-left.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-vault-rule-got-rewritten-the-day-before-she-left.html</guid>
@@ -479,27 +493,6 @@
     <category>escrow</category>
     <category>bitquery</category>
     <category>xrpscan</category>
-  </item>
-  <item>
-    <title>Reserved for Future Use</title>
-    <link>https://mistertranslation.com/finance/reserved-for-future-use.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/reserved-for-future-use.html</guid>
-    <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
-    <description>The same friend who has kept this week's entries honest sent two more texts tonight — three Ripple links, a line about how "AI and crypto will merge," and a theory involving Elon Musk's favorite letter and a 2 percent stake Stripe took in 2014. I read all three announcements. He's right that the pipeline is full. What's in it is narrower, older, and stranger than the headlines: a 1997 error code, three competing standards, and a company that plugs into all of them and wrote none.</description>
-    <category>xrp</category>
-    <category>ripple</category>
-    <category>artificial intelligence</category>
-    <category>ai</category>
-    <category>agentic payments</category>
-    <category>stripe</category>
-    <category>tempo</category>
-    <category>stablecoins</category>
-    <category>crypto regulation</category>
-    <category>south korea</category>
-    <category>japan</category>
-    <category>russia</category>
-    <category>mica</category>
-    <category>genius act</category>
   </item>
 </channel>
 </rss>

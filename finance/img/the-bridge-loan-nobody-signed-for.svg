@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="A line chart showing AI spend as a share of total global enterprise expenses plus capital expenditure, rising from 5.8 percent today to a projected 7 to 8 percent by 2031, when total enterprise expense and capex is projected at 38 trillion dollars. The 2031 endpoint is annotated as roughly 3 trillion dollars of real enterprise AI spend, the level a circulated research chart says is needed for the AI sector to become self-sustaining. Below the chart, a highlighted band spanning 2026 to 2031 is labeled: 2 to 3 trillion dollars per year of circular, on-and-off-balance-sheet financing bridges the gap until then.">
+<rect width="900" height="520" fill="#0a0f1a"/>
+<text x="90" y="40" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">The debt is the bridge. <tspan fill="#94a3b8">2031 is the other side.</tspan></text>
+<text x="90" y="64" font-family="Georgia, serif" font-size="14" fill="#94a3b8">AI spend as a share of total enterprise expense + capex, per a chart circulated by @zerohedge, Oct. 2, 2026</text>
+
+<line x1="90" y1="350" x2="850" y2="350" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="355" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">0%</text>
+<line x1="90" y1="298" x2="850" y2="298" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="303" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">2%</text>
+<line x1="90" y1="246" x2="850" y2="246" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="251" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">4%</text>
+<line x1="90" y1="194" x2="850" y2="194" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="199" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">6%</text>
+<line x1="90" y1="142" x2="850" y2="142" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="147" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">8%</text>
+<line x1="90" y1="90" x2="850" y2="90" stroke="rgba(255,255,255,.10)"/>
+<text x="80" y="95" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#5ea8d6">10%</text>
+<text x="90" y="76" text-anchor="start" font-family="Georgia, serif" font-size="12" fill="#5ea8d6" font-weight="bold">Share of enterprise expense + capex</text>
+
+<line x1="90" y1="350" x2="850" y2="350" stroke="#5c6b85" stroke-width="1.5"/>
+<line x1="90" y1="350" x2="90" y2="356" stroke="#5c6b85"/>
+<text x="90" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2026</text>
+<line x1="242" y1="350" x2="242" y2="356" stroke="#5c6b85"/>
+<text x="242" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2027</text>
+<line x1="394" y1="350" x2="394" y2="356" stroke="#5c6b85"/>
+<text x="394" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2028</text>
+<line x1="546" y1="350" x2="546" y2="356" stroke="#5c6b85"/>
+<text x="546" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2029</text>
+<line x1="698" y1="350" x2="698" y2="356" stroke="#5c6b85"/>
+<text x="698" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2030</text>
+<line x1="850" y1="350" x2="850" y2="356" stroke="#5c6b85"/>
+<text x="850" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">2031</text>
+
+<polyline points="90,199.2 242,190.4 394,181.5 546,172.7 698,163.8 850,155.0" fill="none" stroke="#5ea8d6" stroke-width="3"/>
+<circle cx="90" cy="199.2" r="5" fill="#5ea8d6"/>
+<circle cx="850" cy="155.0" r="5" fill="#5ea8d6"/>
+
+<line x1="860" y1="142" x2="860" y2="168" stroke="#e8c968" stroke-width="2"/>
+<line x1="855" y1="142" x2="865" y2="142" stroke="#e8c968" stroke-width="2"/>
+<line x1="855" y1="168" x2="865" y2="168" stroke="#e8c968" stroke-width="2"/>
+<text x="868" y="159" font-family="Georgia, serif" font-size="11" fill="#e8c968">7-8%</text>
+
+<text x="90" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">5.8% now</text>
+
+<circle cx="770" cy="118" r="0" fill="none"/>
+<line x1="815" y1="152" x2="770" y2="120" stroke="#e8c968" stroke-width="1.5" stroke-dasharray="3,3"/>
+<text x="770" y="100" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8c968" font-weight="bold">&#8776;$3TN of real spend</text>
+<text x="770" y="118" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">7-8% of a projected $38TN total</text>
+
+<rect x="90" y="396" width="760" height="78" rx="10" fill="rgba(232,134,92,0.12)" stroke="#e8865c" stroke-width="1.5"/>
+<text x="470" y="424" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">Until then: $2-3TN a year, on and off the balance sheet</text>
+<text x="470" y="446" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">circular financing between the same handful of AI companies</text>
+<text x="470" y="464" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8">bridging the gap between today's spend and 2031's enterprise demand</text>
+</svg>
