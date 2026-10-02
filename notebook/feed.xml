@@ -22,6 +22,18 @@
     <category>public health</category>
   </item>
   <item>
+    <title>Track Four: "Feel the AGI"</title>
+    <link>https://mistertranslation.com/notebook/track-four-feel-the-agi.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-four-feel-the-agi.html</guid>
+    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A four-and-a-half-minute music video dressed up as the sleeve and run-out groove of a vinyl record plays "Feel the AGI" as a country-gospel revival number, setting the AI-safety community's own private vocabulary — Moloch, the orthogonality thesis, p(doom), the fire alarm, the context window — as the verses of a tent-meeting hymn. Fourth entry in the Notebook's running AI-music collection.</description>
+    <category>ai music</category>
+    <category>ai country</category>
+    <category>generative video</category>
+    <category>artificial intelligence</category>
+    <category>music</category>
+  </item>
+  <item>
     <title>The Rundown — October 1, 2026</title>
     <link>https://mistertranslation.com/notebook/the-rundown-2026-10-01.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-01.html</guid>
@@ -370,21 +382,6 @@
     <category>forensic science</category>
     <category>metabolomics</category>
     <category>scent</category>
-  </item>
-  <item>
-    <title>The Most-Downloaded AI Models in the World Are Alibaba's</title>
-    <link>https://mistertranslation.com/notebook/the-most-downloaded-ai-models-in-the-world-are-alibabas.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-most-downloaded-ai-models-in-the-world-are-alibabas.html</guid>
-    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
-    <description>On 18 September Alibaba's Qwen team shipped Qwen3.8-Omni-Flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. The release is the news, but the program behind it is the story: Qwen passed three billion downloads this summer, more than Google's and Meta's open models combined. Here is what "omnimodal" actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious AI lab.</description>
-    <category>artificial intelligence</category>
-    <category>alibaba</category>
-    <category>qwen</category>
-    <category>open weights</category>
-    <category>china</category>
-    <category>machine learning</category>
-    <category>deepseek</category>
-    <category>multimodal</category>
   </item>
 </channel>
 </rss>
