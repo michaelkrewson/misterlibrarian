@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01 23:05 UTC",
+ "generated": "2026-10-02 12:17 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-10-01",
@@ -137,9 +137,9 @@
     "m1": 647.897498,
     "m1_date": "2026-08-01",
     "usd_m1": 124.87183155054447,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
+    "m2": 7743.891471,
+    "m2_date": "2026-08-01",
+    "usd_m2": 1492.5106429603932,
     "m3": 14174.654364,
     "m3_date": "2026-08-01",
     "usd_m3": 2731.9368534258456,
@@ -241,9 +241,9 @@
     "flag": "🇯🇵",
     "currency": "JPY",
     "source": "Bank of Japan — \"Main Time-series Statistics\" CSV exports (stat-search.boj.or.jp/ssi/mtshtml/csv/), not the REST API (real and keyless, but its exact M1/M2/M3/monetary-base FAME mnemonics couldn't be pinned down from its own documentation — these codes were instead found by hand from the Monetary Base and Money Stock pages' own CSV downloads, whose \"Series code\" header row names them itself). md01 = Monetary Base (M0, Average Amounts Outstanding); md02 = Money Stock M1/M2/M3 (same measure). 100 million yen.",
-    "m0": 543007.0,
-    "m0_date": "2026/08",
-    "usd_m0": 3437.1882516774276,
+    "m0": 532846.4,
+    "m0_date": "2026/09",
+    "usd_m0": 3372.8725155082925,
     "m1": 1087467.8,
     "m1_date": "2026/08",
     "usd_m1": 6883.578934042284,
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1099767211205.7832
+    "usd": 1100630178484.767
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 453672567760.40857
+    "usd": 454028556352.6858
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 331566359507.7561
+    "usd": 331826533584.73486
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 329538017177.97784
+    "usd": 329796599651.71246
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 312770387251.8107
+    "usd": 313015812472.0603
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 310877267744.01764
+    "usd": 311121207467.906
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 140631734864.62738
+    "usd": 140742086022.8892
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 118996083346.9924
+    "usd": 119089457403.98315
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 114398507399.49498
+    "usd": 114488273822.46564
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 85866491960.61383
+    "usd": 85933869831.28331
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 82756367054.95381
+    "usd": 82821304467.31557
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 78699682395.39725
+    "usd": 78761436601.27068
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 57334476521.732704
+    "usd": 57379465840.10098
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 56252693945.85096
+    "usd": 56296834409.15568
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 51790340820.33874
+    "usd": 51830979756.50631
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3624918188957.7563,
+  "total_usd": 3627762596168.837,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4205.89990234375,
-  "price_as_of": "2026-10-01 23:03 UTC",
-  "world_market_value_usd": 29243963596633.312,
+  "price_usd_oz": 4209.2001953125,
+  "price_as_of": "2026-10-02 12:16 UTC",
+  "world_market_value_usd": 29266910801673.203,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 84707.03125,
-  "market_cap_usd": 1701945583377.7344,
+  "price_usd": 86449.9921875,
+  "market_cap_usd": 1736988633929.0515,
   "btc_rank": 11,
-  "volatility_pct": 37.187084130642575,
-  "turnover_usd": 33644737599.011944,
-  "broad_yoy_pct": 0.8180437470977644,
+  "volatility_pct": 37.20852391542886,
+  "turnover_usd": 39562598148.22201,
+  "broad_yoy_pct": 0.8180328047845101,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2017,12 +2017,12 @@
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 29243963596633.312,
+    "usd": 29266910801673.203,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1701945583377.7344,
+    "usd": 1736988633929.0515,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
