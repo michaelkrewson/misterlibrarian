@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img"
+     aria-label="Two stacked bar charts titled 'Who's actually online, by the numbers.' First bar: share of global web traffic in June 2026, per Cloudflare — 57.5% automated (bot and agent) traffic versus 42.5% human traffic, the first time the automated share has crossed half, marked 'bots cross 50% for the first time.' Second bar: share of newly published web pages in 2025 containing detectable AI-generated text, per Ahrefs — 74.2% with AI-generated content versus 25.8% without. A footnote adds that Google says 86% of the articles it surfaces in search are still human-written, and that Cloudflare's own CEO argues the crossover is agents doing useful work, not bots talking to bots.">
+  <rect width="900" height="420" fill="#0a0f1a"/>
+
+  <text x="40" y="46" font-family="Georgia, serif" font-size="21" fill="#e8dfd2">Who's actually <tspan fill="#e8865c">online</tspan>, by the numbers</text>
+  <text x="40" y="72" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Two separate counts. Neither one is a vibe.</text>
+
+  <!-- Bar 1: web traffic -->
+  <text x="40" y="112" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Share of web traffic, June 2026</text>
+  <text x="860" y="112" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#94a3b8">Cloudflare Radar</text>
+  <rect x="40" y="122" width="820" height="46" rx="6" fill="#111a2b"/>
+  <rect x="40" y="122" width="471.5" height="46" rx="6" fill="#e8865c"/>
+  <rect x="511.5" y="122" width="348.5" height="46" fill="#3a4a66"/>
+  <rect x="505" y="122" width="12" height="46" fill="#0a0f1a"/>
+  <text x="275" y="151" text-anchor="middle" font-family="Menlo, monospace" font-size="14" font-weight="bold" fill="#0a0f1a">57.5% bots &amp; agents</text>
+  <text x="685" y="151" text-anchor="middle" font-family="Menlo, monospace" font-size="14" font-weight="bold" fill="#e8dfd2">42.5% human</text>
+  <path d="M511 176 L511 192" stroke="#e8865c" stroke-width="1.5"/>
+  <text x="511" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#e8865c">bots cross 50% for the first time</text>
+
+  <!-- Bar 2: AI content share -->
+  <text x="40" y="256" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">New web pages with detectable AI text, 2025</text>
+  <text x="860" y="256" text-anchor="end" font-family="Georgia, serif" font-size="11" fill="#94a3b8">Ahrefs</text>
+  <rect x="40" y="266" width="820" height="46" rx="6" fill="#111a2b"/>
+  <rect x="40" y="266" width="608.5" height="46" rx="6" fill="#c9a227"/>
+  <rect x="648.5" y="266" width="211.5" height="46" fill="#3a4a66"/>
+  <text x="340" y="295" text-anchor="middle" font-family="Menlo, monospace" font-size="14" font-weight="bold" fill="#0a0f1a">74.2% AI-detected</text>
+  <text x="754" y="295" text-anchor="middle" font-family="Menlo, monospace" font-size="13" font-weight="bold" fill="#e8dfd2">25.8% not</text>
+
+  <line x1="40" y1="340" x2="860" y2="340" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="364" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Counter-reading: Google says 86% of articles it surfaces in search are still</text>
+  <text x="40" y="382" font-family="Georgia, serif" font-size="12" fill="#94a3b8">human-written. Cloudflare's own CEO calls the bot majority proof the net is</text>
+  <text x="40" y="400" font-family="Georgia, serif" font-size="12" fill="#94a3b8">busier, not deader — agents doing errands, not bots talking to bots.</text>
+</svg>

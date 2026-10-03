@@ -7,6 +7,21 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>One Dashboard, Fifty Accounts, No Human in the Loop</title>
+    <link>https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</guid>
+    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A video making the rounds on X shows a wall of phone screens, each one a social media account posting, replying and liking on its own — the poster's caption claims a single AI dashboard is orchestrating fifty of them at once. The clip is a provocation, not a product demo, but the real numbers behind "dead internet theory" don't need the video's help. Here's what's actually measured, what's just a claim, and what it means for anyone still scrolling in good faith.</description>
+    <category>artificial intelligence</category>
+    <category>ai</category>
+    <category>dead internet theory</category>
+    <category>bots</category>
+    <category>social media</category>
+    <category>agentic ai</category>
+    <category>manus ai</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>The Bridge Loan Nobody Signed For</title>
     <link>https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</guid>
@@ -475,24 +490,6 @@
     <category>succession</category>
     <category>s&amp;p 500</category>
     <category>index funds</category>
-  </item>
-  <item>
-    <title>Eight Million Accounts and a Basketball Court</title>
-    <link>https://mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html</guid>
-    <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
-    <description>My friend sent a screenshot of the XRP rich list and a thought: only 8.13 million XRP accounts exist, so "less than 1 percent of 1 percent" of humanity owns any, and yet the coin gets endless attention. Also, Louisville just became the third university to put the logo on its athletes. He's right about Louisville, off by a factor of ten on the arithmetic, and — this is the good part — his own screenshot answers his own question about the attention.</description>
-    <category>xrp</category>
-    <category>ripple</category>
-    <category>xrp ledger</category>
-    <category>rich list</category>
-    <category>crypto adoption</category>
-    <category>on-chain data</category>
-    <category>college sports</category>
-    <category>sponsorship</category>
-    <category>escrow</category>
-    <category>bitquery</category>
-    <category>xrpscan</category>
   </item>
 </channel>
 </rss>
