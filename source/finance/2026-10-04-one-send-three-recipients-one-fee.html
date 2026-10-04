@@ -1,0 +1,90 @@
+title: One Send, Three Recipients, One Fee
+date: 2026-10-04
+tags: bitcoin, lightning, lightning in a jar, on-chain, silent payments, batching, fees, self custody
+summary: Lightning in a Jar can now pay several people in a single on-chain send, silent-payment addresses included. The builder posted a test spend; I found it in the blockchain, checked the arithmetic, and looked for the matching change in the public repository. Here is what that one transaction shows, what batching does and doesn't buy you, and what I haven't tested.
+meta_desc: Lightning in a Jar's new multi-recipient on-chain sends, silent payments included, checked against the blockchain and the public repository.
+hero: lightning-in-a-jar-icon.png
+hero_alt: The Lightning in a Jar app icon — a cream-outlined jar with an amber lightning bolt inside, on a warm brown gradient
+hero_credit: The Lightning in a Jar app icon, from the project's own public repository. Shown to identify the wallet being discussed; the name and logo belong to its author, not to this page.
+draft: false
+---
+
+<p>Another follow-up on <a href="lightning-in-a-jar-review.html">my Lightning in a Jar
+review</a>, and the usual disclosure applies: the wallet's builder is a friend, and this
+started as a message, not a press release. Last night he posted a screenshot of a test spend
+with a one-line announcement: the wallet now supports multiple recipients in one send,
+silent payments included. His closing line was a rallying cry — <em>get those transactions
+back onchain</em> — which is a notable thing for the author of a Lightning wallet to say, and
+roughly what you'd expect a pizzeria to say if it started handing out salad coupons.</p>
+
+<p>My rule with this project has been to go and check whatever I'm told. This time there was
+something unusually checkable: a transaction. A screenshot proves nothing, but a transaction
+either exists or it doesn't.</p>
+
+<h2>What the Blockchain Says</h2>
+
+<p>It exists. The screenshot gave a block height (969,791) and the first and last characters
+of a transaction id; I pulled that block and found exactly one transaction matching both
+ends. It confirmed on the evening of October 3, Pacific time. The raw facts, which agree
+with the wallet's own display to the satoshi:</p>
+
+<ul>
+<li><strong>One input</strong> of 30,227 sats.</li>
+<li><strong>Three payments</strong> of 1,001, 2,002 and 3,003 sats — the sort of numbers you
+choose when you want to read your own test transaction at a glance.</li>
+<li><strong>One change output</strong> of 23,576 sats back to the wallet.</li>
+<li><strong>One fee</strong> of 645 sats on a 214.5 vbyte transaction: three sats per vbyte,
+as displayed.</li>
+</ul>
+
+<p>Those add up: 1,001 + 2,002 + 3,003 + 23,576 + 645 = 30,227, nothing missing, nothing
+spare. The second payment went to a taproot output (the kind whose addresses start
+<code>bc1p</code>), while the other two went to ordinary native-SegWit addresses. That's what
+you'd see if the second recipient were a silent-payment address, since a silent payment
+lands in a taproot output. The wallet's screen labels that recipient as one.</p>
+
+<h2>What the Repository Says</h2>
+
+<p>The public repository has the matching change. The October 2 sync of the project notes
+engine v305 as <em>several recipients in one on-chain send (at most 20), one fee, one change
+output</em> — which is precisely the shape of the transaction above. I didn't read the
+implementation line by line, as I did for the silent-payment recovery code last time; I'm
+reporting that the code's own description matches what the chain shows.</p>
+
+<h2>What Batching Buys You (and What It Costs)</h2>
+
+<p>The benefit is mostly arithmetic. Every transaction pays for its own overhead — a header,
+an input, a change output — and a batched send pays that once instead of three times. My
+back-of-envelope: three separate one-recipient spends of the same kind would come to roughly
+430 vbytes against this transaction's 214.5, so about half the fee at the same rate. That's
+my estimate from standard transaction sizes, not something I measured, and it assumes each
+separate spend would have had its own change. The saving grows with the number of recipients
+and shrinks if you were going to sweep a whole coin anyway.</p>
+
+<p>The cost is privacy, and it's the usual one: everyone you paid is now in the same
+transaction, visible together, with one change output pointing back at you. For paying
+three people you'd rather keep unlinked, three separate sends are still the more private
+choice, and a silent-payment address doesn't change that — it hides which address the
+recipient owns, not the fact that the payments share a transaction. Worth saying plainly,
+since "silent payments" and "batching" are both words people hear as "private."</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+<li><strong>One transaction is one transaction.</strong> It shows the feature works once, for
+three recipients, on the builder's own device. It says nothing about twenty, about failure
+cases, or about what happens when a recipient's address is malformed.</li>
+<li><strong>I can't confirm the silent payment from the outside.</strong> A taproot output
+looks the same whether it came from a silent-payment address or a plain one. Only the
+recipient's wallet can tell it found a payment. I haven't seen that end of it.</li>
+<li><strong>I haven't run the wallet.</strong> Everything here comes from the chain, the
+public code's own notes, and the builder's word.</li>
+</ul>
+
+<p>None of that moves the verdict in the <a href="lightning-in-a-jar-review.html">original
+review</a>, which was never about any one feature; the gates I named there are the same
+ones. What this adds to the pattern from <a href="the-jar-learns-to-hide-which-jar.html">the
+silent-payments post</a> and <a href="the-jar-ships-what-it-promised.html">its follow-up</a>
+is another small data point: he says what he's building, the code and the chain show it, and
+the caveats come out before I ask for them. A Lightning wallet that keeps getting better at
+on-chain is an odd trajectory. I'll keep checking.</p>
