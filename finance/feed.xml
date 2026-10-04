@@ -22,6 +22,18 @@
     <category>self custody</category>
   </item>
   <item>
+    <title>The Smaller Your Screen, the Bigger Your Title</title>
+    <link>https://mistertranslation.com/finance/screen-size-and-your-importance.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/screen-size-and-your-importance.html</guid>
+    <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A friend sent a joke chart plotting screen size against corporate rank, with the CEO on an iPhone and the bottom rung behind two monitors. It's satire with no data behind it, but it's funny because it's half true. Here's which half, and what the chart accidentally gets right about who has to look at the raw numbers.</description>
+    <category>notes</category>
+    <category>charts</category>
+    <category>data literacy</category>
+    <category>work</category>
+    <category>humor</category>
+  </item>
+  <item>
     <title>One Dashboard, Fifty Accounts, No Human in the Loop</title>
     <link>https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</guid>
@@ -472,25 +484,6 @@
     <category>large language models</category>
     <category>tsinghua</category>
     <category>deepseek</category>
-  </item>
-  <item>
-    <title>Forty Months for a Yes</title>
-    <link>https://mistertranslation.com/finance/forty-months-for-a-yes.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/forty-months-for-a-yes.html</guid>
-    <pubDate>Sun, 20 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Deutsche Bank announced this week that it plans to custody Bitcoin, Ether and three stablecoins for European institutional clients — pending regulators, aiming to onboard its first customers within the next few months. The custody plan is straightforward. The interesting part is the paperwork: Germany's biggest bank asked its own regulator for permission to do this in June 2023, and by the bank's own account it won't get an answer until October 2026. Four smaller German banks asked later and finished years ago.</description>
-    <category>deutsche bank</category>
-    <category>bitcoin</category>
-    <category>ether</category>
-    <category>stablecoins</category>
-    <category>crypto custody</category>
-    <category>bafin</category>
-    <category>mica</category>
-    <category>germany</category>
-    <category>institutional adoption</category>
-    <category>commerzbank</category>
-    <category>taurus</category>
-    <category>bitpanda</category>
   </item>
 </channel>
 </rss>
