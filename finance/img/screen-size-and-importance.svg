@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-label="A hand-redrawn line chart titled 'Correlation between screen size and your importance in the company'. The horizontal axis lists five devices from smallest to largest screen: iPhone, iPad, 13-inch laptop, one monitor, two monitors. The vertical axis lists five job levels from CEO at the top down to 'corporate slave' at the bottom. A smooth S-shaped curve falls from the CEO level at the iPhone to the bottom level at two monitors, passing through executive at the iPad, upper management at the laptop, and middle management at one monitor.">
+<rect width="900" height="460" fill="#0a0f1a"/>
+<text x="40" y="38" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Screen size vs. your importance in the company</text>
+<text x="40" y="60" font-family="Georgia, serif" font-size="13" fill="#94a3b8">A joke chart, redrawn. The x-axis is real (screens do get bigger). The y-axis is vibes.</text>
+<g stroke="rgba(255,255,255,.10)">
+<line x1="150" y1="100" x2="860" y2="100"/><line x1="150" y1="165" x2="860" y2="165"/><line x1="150" y1="230" x2="860" y2="230"/><line x1="150" y1="295" x2="860" y2="295"/><line x1="150" y1="360" x2="860" y2="360"/>
+</g>
+<g font-family="Georgia, serif" font-size="13" fill="#94a3b8" text-anchor="end">
+<text x="140" y="105">CEO</text><text x="140" y="170">Executive</text><text x="140" y="235">Upper mgmt</text><text x="140" y="300">Middle mgmt</text><text x="140" y="365">Corporate drone</text>
+</g>
+<line x1="150" y1="80" x2="150" y2="385" stroke="#94a3b8"/>
+<line x1="150" y1="385" x2="870" y2="385" stroke="#94a3b8"/>
+<path d="M200 102 C 280 100, 300 140, 350 180 S 450 270, 520 300 S 650 356, 800 360" fill="none" stroke="#e8865c" stroke-width="5" stroke-linecap="round"/>
+<g fill="#e8865c"><circle cx="200" cy="102" r="7"/><circle cx="350" cy="180" r="7"/><circle cx="470" cy="260" r="7"/><circle cx="600" cy="326" r="7"/><circle cx="800" cy="360" r="7"/></g>
+<g font-family="Georgia, serif" font-size="14" fill="#e8dfd2" text-anchor="middle">
+<text x="200" y="412">iPhone</text><text x="350" y="412">iPad</text><text x="470" y="412">13&#8243; laptop</text><text x="600" y="412">1 monitor</text><text x="800" y="412">2 monitors</text>
+</g>
+<text x="40" y="446" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Redrawn from a circulating meme of unknown origin. No data behind any point on the curve.</text>
+</svg>
