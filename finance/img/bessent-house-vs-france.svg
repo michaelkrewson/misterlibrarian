@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img"
+     aria-label="Two panels. Left: the US 30-year Treasury yield, a bar from 5.25 percent on September 8 to a high of 5.69 percent about three weeks later, the highest since 2002. Right: France's 10-year yield at 4.917 percent on Monday October 5, near a 24-year high, about 1.46 percentage points above Germany's.">
+  <rect width="900" height="430" fill="#0a0f1a"/>
+
+  <text x="70" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="21"
+        fill="#e8dfd2">Two governments, one price of borrowing for a long time</text>
+  <text x="70" y="72" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#94a3b8">LONG-TERM GOVERNMENT YIELDS, SEPTEMBER – OCTOBER 5, 2026</text>
+
+  <!-- Left panel: US 30-year -->
+  <text x="70" y="125" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#94a3b8">US 30-YEAR TREASURY</text>
+  <rect x="70" y="145" width="330" height="40" rx="4" fill="#334155"/>
+  <text x="80" y="171" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14"
+        fill="#e8dfd2">Sept 8: about 5.25%</text>
+  <rect x="70" y="205" width="348" height="40" rx="4" fill="#f59e0b"/>
+  <text x="80" y="231" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14"
+        fill="#0a0f1a">Three weeks later, high: 5.69%</text>
+  <text x="70" y="275" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13"
+        fill="#cbd5e1">Highest since 2002, after "I am the house."</text>
+
+  <!-- Right panel: France 10-year -->
+  <text x="490" y="125" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#94a3b8">FRANCE 10-YEAR, OCT 5</text>
+  <rect x="490" y="145" width="300" height="40" rx="4" fill="#334155"/>
+  <text x="500" y="171" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14"
+        fill="#e8dfd2">Germany: about 3.46%</text>
+  <rect x="490" y="205" width="321" height="40" rx="4" fill="#f59e0b"/>
+  <text x="500" y="231" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14"
+        fill="#0a0f1a">France: 4.917%</text>
+  <text x="490" y="275" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13"
+        fill="#cbd5e1">About 1.46 points over Germany; near a 24-year high.</text>
+
+  <text x="70" y="340" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        fill="#94a3b8">Bars within each panel are drawn to scale from zero; the two panels are different bonds and are not</text>
+  <text x="70" y="360" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        fill="#94a3b8">directly comparable. Germany's level is France's 4.917% minus the reported spread of about 146 basis points.</text>
+  <text x="70" y="400" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11"
+        fill="#64748b">Sources: Fortune (2 Oct 2026); Euronews (5 Oct 2026).</text>
+</svg>

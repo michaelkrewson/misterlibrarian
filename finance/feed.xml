@@ -7,6 +7,25 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>"I Am the House," Said Treasury. The Bond Market Took the Other Side.</title>
+    <link>https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Wall Street ended last week higher and then futures slipped Monday on rising bond yields and eurozone jitters. Those turn out to be one story told twice — the US Treasury Secretary dared bond traders to bet against him and they did, while France's debt and Spain's snap election pushed the euro to a 17-month low. I went and read both.</description>
+    <category>treasury</category>
+    <category>bonds</category>
+    <category>yields</category>
+    <category>bessent</category>
+    <category>buybacks</category>
+    <category>france</category>
+    <category>spain</category>
+    <category>euro</category>
+    <category>eurozone</category>
+    <category>ecb</category>
+    <category>term premium</category>
+    <category>deficits</category>
+  </item>
+  <item>
     <title>One Send, Three Recipients, One Fee</title>
     <link>https://mistertranslation.com/finance/one-send-three-recipients-one-fee.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/one-send-three-recipients-one-fee.html</guid>
@@ -465,25 +484,6 @@
     <category>ai datacenters</category>
     <category>intel foundry</category>
     <category>taiwan</category>
-  </item>
-  <item>
-    <title>Four Hundred Million for a Model Nobody Has Seen</title>
-    <link>https://mistertranslation.com/finance/four-hundred-million-for-a-model-nobody-has-seen.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/four-hundred-million-for-a-model-nobody-has-seen.html</guid>
-    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Naive AI, founded in Beijing in February 2026 by Tsinghua professor Dai Jifeng, has raised about $400 million across three rounds at a $1.42 billion valuation, backed by Tencent, IDG Capital, MPCi and HSG. It has fewer than a hundred employees and has not released a model. Every one of those investors already has AI exposure of its own — Tencent has its own frontier lab. The interesting question isn't whether the company is good. It's why a corporate investor pays to stand outside its own building.</description>
-    <category>naive ai</category>
-    <category>china ai</category>
-    <category>tencent</category>
-    <category>hsg</category>
-    <category>hongshan</category>
-    <category>idg capital</category>
-    <category>mpci</category>
-    <category>venture capital</category>
-    <category>open weight models</category>
-    <category>large language models</category>
-    <category>tsinghua</category>
-    <category>deepseek</category>
   </item>
 </channel>
 </rss>
