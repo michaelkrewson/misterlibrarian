@@ -1,0 +1,175 @@
+title: Gold Is Still Fixed Twice a Day. It Just Stopped Using a Phone.
+date: 2026-10-05
+time: 22:50
+tags: gold, lbma, spoofing, benchmarks, market structure
+summary: The London Gold Fix did not disappear. Since 2015 it has been an electronic auction at the same two times of day, run by an exchange company instead of five banks. Here is how the auction works, what the old fix was actually caught doing, and whether the new one can be spoofed the way JPMorgan spoofed gold futures.
+meta_desc: The London Gold Fix became the LBMA Gold Price auction in 2015. How it works now, what the Barclays case showed, and whether it can be spoofed.
+hero: gold-bullion-bars.jpg
+hero_alt: A heap of shiny gold bars on a pale background
+hero_credit: Gold bullion bars. Image by Stevebidmead, via Wikimedia Commons, CC0 (public domain dedication).
+draft: false
+---
+
+<p>A reader asked where the twice-a-day London gold fixing went. The answer is that it is still
+there, at the same two times of day, and almost nobody noticed it change hands. Gold is still
+"fixed" every London business day at <strong>10:30 and 15:00</strong>. What changed in March 2015 is
+who runs it and how: the five-bank club is gone, and an electronic auction on a screen replaced
+it. So the old joke that a gold price is whatever a few bankers agree on over the phone has been
+retired. The new question is whether a screen with a rulebook is much harder to cheat than a phone
+call. I read the auction's own spec sheet to find out.</p>
+
+<h2>The Old Fix: Five Banks and a Conference Call</h2>
+
+<p>The London Gold Fixing dates to 1919. For most of its life a small group of member banks set
+the price by phone: an opening number, then a few rounds of "my clients want to buy this much, my
+clients want to sell that much," nudging the price until the two sides roughly matched. The five
+banks later named in a U.S. class action over the PM fix were Barclays, Deutsche Bank, HSBC, Scotiabank
+and Société Générale. Contracts all over the gold world were written to settle off the number they
+produced, which made the number worth more to some people than the gold itself.</p>
+
+<p>On March 20, 2015, that number was renamed the <strong>LBMA Gold Price</strong> and handed to
+<strong>ICE Benchmark Administration</strong> (IBA), which runs it as a twice-daily, physically
+settled electronic auction. At launch there were six direct participants: Barclays, Goldman Sachs,
+HSBC Bank USA, Scotiabank-Mocatta, Société Générale and UBS. On day one, participants bought 95,568
+ounces and sold 90,348 across the two auctions.</p>
+
+<p>One thing worth separating, because it trips up almost everyone: <strong>the price ticking on
+your screen all day is not the fix.</strong> Gold trades around the clock in over-the-counter
+dealing and in futures. The fix is a twice-daily snapshot built for settlement, the number a mining
+royalty, a fund valuation or a structured product points at. Its cousin, the COMEX futures market,
+is a separate venue with a separate set of rules, which matters for the spoofing question below.</p>
+
+<h2>The New Fix, Step by Step</h2>
+
+<p>These figures are from ICE's own January 2026 specification sheet. The auction runs in
+<strong>rounds of 30 seconds</strong> (the 2015 launch announcement said the price updated every
+45 seconds, so the pace has changed). Orders are in troy ounces, from 1 ounce up to a
+100,000-ounce cap per single order. Each round, direct participants can enter, change or cancel
+orders. When the round ends, the platform nets buyers against sellers. If the gap is within
+<strong>10,000 ounces</strong>, the auction is over, the price is set, and everyone trades their
+net amount at it. Any leftover imbalance is shared among all the direct participants. If the gap
+is bigger, the price moves and a new round starts. Minimum quorum: three participants, two of them
+direct.</p>
+
+<figure>
+  <img src="img/lbma-gold-auction-rounds.svg" alt="A flow diagram of one LBMA Gold Price auction. An opening price is set, then a 30-second round where orders can be entered, changed or cancelled, then the book is netted. If the buy-sell gap is 10,000 ounces or less, the price is set and net amounts trade at it. If not, the price moves and a new 30-second round starts. A box below explains why only the book at the end of a round matters, and that this makes spoofing harder but not impossible." loading="lazy"/>
+  <figcaption>The loop repeats until buyers and sellers are within 10,000 ounces of each other. The
+  point that matters for manipulation: only what is standing at the end of a round counts.</figcaption>
+</figure>
+
+<p>Two details in that sheet look like they were written by someone who has read a few enforcement
+actions. Order activity is capped at <strong>75 messages a minute</strong> per participant, which
+puts a ceiling on the machine-gun place-and-cancel pattern that spoofing relies on. And a
+100,000-ounce single-order cap exists, in the sheet's own words, as "fat finger protection," so a
+slip of the keyboard cannot move the benchmark by itself.</p>
+
+<h2>Was the Old Fix Actually Rigged?</h2>
+
+<p>Short answer: one trader was caught doing it on one afternoon, a large group of banks paid to
+settle a lawsuit alleging more, and the statistical evidence is argued both ways.</p>
+
+<p><strong>The documented case.</strong> On June 28, 2012, a Barclays precious-metals trader named
+Daniel Plunkett was managing a digital option he had sold to a customer. If gold fixed above
+$1,558.96 at the 3:00 p.m. fix, Barclays owed the customer a payment of 9% of the notional, about
+$3.9 million. The UK's Financial Conduct Authority found that he placed orders during the fix
+intending to make it fix <em>below</em> that level. It did, Barclays did not have to pay, and his
+trading book came out $1.75 million ahead. The FCA fined Barclays
+£26,033,500 in May 2014 for failing to manage conflicts of interest and for weak controls, and fined
+Plunkett £95,600 and banned him from regulated activity (<a
+href="https://www.fca.org.uk/publication/final-notices/daniel-james-plunkett.pdf">final notice</a>). Barclays later paid the customer in full.
+Notice what the case was about: not a grand conspiracy, but a bank that both helped set a price and
+held a bet on that price.</p>
+
+<p><strong>The lawsuit.</strong> A U.S. class action alleged that five banks in the London gold
+fixing conspired to suppress the PM fix between January 2004 and June 2013. The banks settled:
+Deutsche Bank for $60 million, HSBC for $42 million, and Barclays, Scotiabank, Société Générale and
+the fixing company itself for $50 million together, for $152 million in total, per the plaintiffs'
+lawyers at Berger Montague (preliminary approval of the last deal, February 2022). I did not find
+anything in what I read saying the banks admitted wrongdoing.</p>
+
+<p><strong>The statistics.</strong> Researchers Rosa Abrantes-Metz and Albert Metz found that large
+price moves during the 3 p.m. fix went down at least two-thirds of the time in six different years
+between 2004 and 2013, and 92% of the time in 2010, with the pattern showing up in the afternoon
+fix but not the morning one. A rebuttal published in the LBMA's own magazine argued there are
+innocent explanations: afternoon fixings are more liquid, U.S. economic data lands at 10 a.m. New
+York time (the same moment), and sellers like miners and central banks tend to dominate the
+afternoon session. Both are real arguments. An anomaly is not a verdict, and a verdict is not
+needed for a banking regulator to care about a conflict of interest.</p>
+
+<h2>Can the New One Be Spoofed, Like Chase Did?</h2>
+
+<p>First, a clarification about what Chase did. JPMorgan's $920.2 million 2020 settlement (covered in
+<a href="/finance/nine-hundred-and-twenty-million-paid-in-cash.html">Nine Hundred and Twenty Million,
+Paid in Cash</a>) was for spoofing precious-metals and Treasury <em>futures</em>, placing orders it
+meant to cancel on an open order book. It was not about the London fix. Spoofing is a futures-market
+crime because futures have a continuously visible order book where a big fake order can scare other
+traders for a fraction of a second.</p>
+
+<p>The auction is built differently, and the differences are exactly the ones a spoofer would
+trip over:</p>
+
+<ol>
+  <li><strong>The price moves between rounds based on the net book at the end of each round,</strong>
+  not on whatever was flickering mid-round. A fake order pulled before the bell leaves no mark on
+  the netting.</li>
+  <li><strong>Whatever is standing when the price is finally set is a real trade.</strong> An order
+  you leave in too long gets filled.</li>
+  <li><strong>The message cap</strong> (75 a minute) blunts the rapid-fire pattern.</li>
+  <li><strong>Leftover imbalance is shared among all direct participants,</strong> so it is spread
+  across the room rather than parked on one desk.</li>
+</ol>
+
+<p>So the classic futures-style spoof is harder here. "Harder" is not "impossible." Orders can be
+cancelled during a round, other participants react to what they can see, and I could not confirm
+from the public spec exactly what each participant sees about the live imbalance. The Plunkett
+problem, a firm that influences the price while holding a position referenced to it, is a
+conflicts-of-interest problem that no auction format removes by itself. I did not find a public
+enforcement action or court case about manipulation of the electronic auction itself, which is
+good news, though absence of a case is weaker evidence than a clean audit.</p>
+
+<h2>Can the Banks Just Fix It Anyway?</h2>
+
+<p>The structure is less clubby than it was. Six direct participants at launch has grown, and
+ICE's own materials, as summarized in what I could read, put it at 14 today, including three Chinese
+banks. More seats, more screens, one administrator who is not a bank, and a rulebook that is
+published rather than understood over the phone. That is a better design than a five-bank call.
+It is still a benchmark whose participants are mostly large banks and which sets the reference price
+for contracts those banks also trade, so the incentive to lean on it hasn't gone anywhere. What has
+changed is how easy it is to do quietly.</p>
+
+<p>If you want the broader picture of how much of the gold market is physical metal versus claims on
+it, and where central banks fit in, <a href="/finance/four-thousand-tonnes-and-no-api.html">Four
+Thousand Tonnes and No API</a> covers the buying side, and the <a
+href="/finance/money-worldwide-gold.html">gold page of Money Worldwide</a> has the reserves table.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The participant count.</strong> The "14 direct participants, including three Chinese
+  banks" figure came from an excerpt of ICE's own material that I could not open in full. Treat it
+  as approximately right and check ICE's current participant list before quoting it.</li>
+  <li><strong>What participants can see.</strong> The spec sheet gives limits and thresholds, not
+  the full rulebook. I did not verify whether participants see the aggregate imbalance during a
+  round or exactly how the algorithm sets the next round's price, and those details decide how
+  gameable the auction really is.</li>
+  <li><strong>Cancellation.</strong> My statement that orders can be changed or cancelled during a
+  round comes from ICE's published summary of the rules, not from the full methodology document.</li>
+  <li><strong>The settlements.</strong> The $152 million total is from the plaintiffs' own law firm.
+  A settlement is not a finding that the banks did what was alleged.</li>
+  <li><strong>The statistics.</strong> I read the LBMA magazine's summary of the Abrantes-Metz
+  work and the rebuttal, not the original paper.</li>
+  <li><strong>The phone.</strong> That the old fix ran by telephone conference is long-standing
+  common knowledge in the market, and I did not pull a primary source for it for this entry.</li>
+  <li>None of this is a statement about where gold's price is headed, and nothing here is a
+  recommendation to buy or sell anything.</li>
+</ul>
+
+<h2>Sources</h2>
+
+<ul>
+  <li><a href="https://ir.theice.com/press/news-details/2015/ICE-Benchmark-Administration-Launches-LBMA-Gold-Price-Transitions-Gold-Price-to-Transparent-Electronic-Auction-Process/default.aspx">ICE Benchmark Administration, launch of the LBMA Gold Price, March 2015</a> (first-day volumes, original six participants)</li>
+  <li><a href="https://www.ice.com/publicdocs/futures/IBA_Gold_Auction_Specification.pdf">IBA Gold Auction Specification, ICE, January 2026</a> (30-second rounds, 10,000-ounce threshold, order and message limits)</li>
+  <li><a href="https://www.fca.org.uk/publication/final-notices/daniel-james-plunkett.pdf">FCA Final Notice, Daniel James Plunkett</a></li>
+  <li><a href="https://bergermontague.com/news/preliminary-approval-of-a-50m-settlement-with-barclays-the-bank-of-nova-scotia-societe-generale-and-the-london-gold-market-fixing-ltd-granted-bringing-total-settlements-to-152-million/">Berger Montague, gold fixing settlements totalling $152 million, February 2022</a></li>
+  <li><a href="https://www.lbma.org.uk/alchemist/issue-73/has-there-been-a-decade-of-london-pm-gold-fixing-manipulation">LBMA Alchemist, "Has there been a decade of London PM gold fixing manipulation?"</a> (Peter Fertig's rebuttal of the Abrantes-Metz and Metz analysis)</li>
+</ul>
