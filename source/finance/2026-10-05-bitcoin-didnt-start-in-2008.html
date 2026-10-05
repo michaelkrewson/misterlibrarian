@@ -1,0 +1,114 @@
+title: Bitcoin Didn't Start in 2008
+date: 2026-10-05
+tags: bitcoin, history, cryptography, cypherpunks, hashcash, b-money, bit gold, whitepaper, satoshi nakamoto
+summary: The whitepaper is nine pages and cites eight sources. Behind those eight sits a thirty-four-year pile of other people's work, from TCP/IP in 1974 to Hal Finney in 2004. Here is the whole stack in two minutes of video.
+hero: bitcoin-prehistory-hero.svg
+hero_alt: A timeline from 1974 to 2008 with blue and orange dots for TCP/IP, RSA, Merkle trees, elliptic curves, PGP, Hashcash, b-money, Bit gold and reusable proof of work, ending in a single orange Bitcoin mark in 2008
+hero_credit: Drawn for this entry from the dates in Dan Held's "Bitcoin Prehistory" timeline.
+draft: false
+---
+
+<p>The usual telling of Bitcoin's origin has the shape of a magic trick. Nobody, then a
+pseudonym, then a whitepaper on October 31, 2008, then money. It makes a good story and a
+lousy history, because almost nothing in the paper was new. What was new was the
+<em>arrangement</em>: someone took a dozen ideas that had been sitting in different drawers for
+thirty years and found that they locked together.</p>
+
+<p>I've been looking for a way to show that, and a two-minute screen recording does it better
+than I can in prose. It walks through twenty-seven of the pieces, one card per year, from the
+protocol the internet runs on to the proof-of-work chains that came right before. It is based
+on the "Bitcoin Prehistory" timeline by <a href="https://www.danheld.com/blog/2019/1/6/planting-bitcoinsoil-34"
+rel="noopener" target="_blank">Dan Held</a>, who has been making the case for years that
+Bitcoin's prehistory is forty years of research and demand, not one person's afternoon.
+Headphones are optional, and the clip has a soundtrack.</p>
+
+<figure>
+  <video src="img/bitcoin-prehistory-timeline.mp4" poster="img/bitcoin-prehistory-poster.jpg"
+         controls playsinline preload="metadata"></video>
+  <figcaption>Twenty-seven cards, 1974 to 2008, about two minutes. Timeline based on "Bitcoin
+  Prehistory" by Dan Held (<a href="https://x.com/danheld" rel="noopener"
+  target="_blank">@danheld</a>).</figcaption>
+</figure>
+
+<h2>The Stack, in Four Layers</h2>
+
+<p>Watch it once for the feel and a second time sorted into layers, because the cards fall into
+four groups, and Bitcoin needs all four.</p>
+
+<p><strong>The plumbing.</strong> 1974: Vint Cerf and Bob Kahn publish the protocol that becomes
+TCP/IP. Bitcoin is a network before it is anything else, and it runs on the open one
+that already existed. Nobody had to ask anybody for the road.</p>
+
+<p><strong>The math that makes a coin a signature.</strong> 1978 gives you RSA and digital
+signatures, which is why a Bitcoin transaction can be proven to come from whoever holds the key.
+1980 gives you Ralph Merkle's hash trees, which is how a block summarizes thousands of
+transactions in one short fingerprint. 1985 gives you elliptic curve cryptography, which is why
+the keys are short and the signatures are strong. The curve Bitcoin signs on, secp256k1, is on
+the card. (Yes, the formula in the video really is that small. Seven is the entire "plus b".)</p>
+
+<p><strong>The why.</strong> This layer is not math, which is what makes it the one people skip.
+1988: Timothy May's <em>Crypto Anarchist Manifesto</em>. 1991: Phil Zimmermann's PGP, strong
+encryption for anyone. 1993: Eric Hughes writes that cypherpunks write code. The consistent
+idea across all three is that cryptography is a way to move power toward individuals, and that
+the answer to asking permission is to build the thing instead. If you've wondered why Bitcoin
+people sound like they're in a political movement, it's because the movement came first and the
+coin came second.</p>
+
+<p><strong>The money attempts.</strong> This is the layer that most resembles Bitcoin, and also
+the one that failed the most. 1996: e-gold, which was digital gold run by one company in the
+middle. 1999: Max Keiser's virtual securities market. 2006: Liberty Reserve, another single point of failure, shut down in 2013. The card
+on that last one is stamped SHUT DOWN, and it's the cleanest summary in the whole video: every
+digital cash scheme before Bitcoin had a company in the middle, and every one of them had the
+same off switch.</p>
+
+<p>Against that, the proof-of-work cards are where it starts to look like the finished article.
+1997: Adam Back's Hashcash, a way to make spam expensive by making the sender burn a measurable
+amount of computing. 1998: Wei Dai's b-money, with money created by work and a ledger kept by
+everyone. 1998: Nick Szabo's Bit gold, which chains each proof into the next challenge. 2004:
+Hal Finney's reusable proof of work, a server that can hand a "token" along to the next person.
+Put those four side by side and Bitcoin starts to read less like an invention and more like an
+editor's cut.</p>
+
+<figure>
+  <img src="img/bitcoin-prehistory-hero.svg" alt="The same timeline as the lead image: blue dots for the plumbing and math, orange dots for the proof-of-work and digital-cash attempts, ending in the Bitcoin mark in 2008." loading="lazy"/>
+  <figcaption>Blue is the plumbing and the math, orange is the money attempts. The line only
+  turns into Bitcoin at the right-hand edge. Drawn for this entry.</figcaption>
+</figure>
+
+<h2>The Card That Settles It</h2>
+
+<p>The last real card in the video is the best one, because it's not a claim from the video. It's
+the <a href="https://bitcoin.org/bitcoin.pdf" rel="noopener" target="_blank">whitepaper's own
+reference list</a>, the page where Satoshi had to say who he was standing on. There are eight
+entries. Three of them are on the video's timeline, and the video highlights them: Wei Dai's
+b-money from 1998, Adam Back's Hashcash from 1997, and Merkle's 1980 hash-tree paper. Each is
+cited by name, in a paper that otherwise has the confidence of someone describing a solved
+problem.</p>
+
+<p>That is a more interesting fact than "he copied". The paper does not cite the manifestos, or
+PGP, or Bit gold, or e-gold, and no one reading the reference list alone would guess at the
+thirty years behind it. The ones he names are the load-bearing parts. The rest is the air in the
+room.</p>
+
+<h2>What I Take From It</h2>
+
+<p>The prehistory is evidence of a particular kind, and it's worth saying which kind. It does not show that Bitcoin <em>will</em> work, or that it's worth any price. What it
+shows is that the parts are old and individually well-tested: signatures, hash trees, elliptic
+curves and proof of work were each doing real jobs for decades before anyone wrote the word
+"blockchain" down. The only genuinely new claim in 2008 was that you could remove the company
+from the middle without the whole thing falling over, and the shutdown cards on the video are
+the argument for why that was worth trying.</p>
+
+<p>It is also a reminder for anyone tempted to think Bitcoin had a founder who simply invented
+it. Satoshi did something real and hard, which was to assemble the pieces and make them
+agree. But if that story is told without Cerf, Merkle, May, Zimmermann, Back, Dai, Szabo and
+Finney, it's missing most of its cast.</p>
+
+<p>A caveat on the video itself: it's a timeline, which means it's a selection. Twenty-seven
+cards is somebody's judgment about what mattered, and a different historian would drop some and
+add others. Treat it as a map of
+the neighborhood, not a verdict on who deserves the credit.</p>
+
+<p>The live numbers for where all this ended up are on the Ledger's
+<a href="bitcoin.html">Bitcoin Board</a>. The video is the other end of the same chart: what
+went into it before it had a price.</p>
