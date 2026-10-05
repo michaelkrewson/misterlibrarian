@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" role="img" aria-label="Table comparing four protections and whether each stops the voicemail attack. Voicemail PIN: stops it if your carrier asks for the PIN on remote calls. Remote voicemail access turned off: stops it. Two-step verification in Telegram and WhatsApp: stops it, because the code alone is no longer enough. SIM PIN or number lock: does not stop it; they guard against a stolen SIM or a number being moved to another carrier.">
+<rect width="900" height="530" fill="#0a0f1a"/>
+<text x="450" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#e8dfd2">Four locks, four different jobs</text>
+<text x="450" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#94a3b8" font-style="italic">which one stops what — and the one that’s easy to confuse with the rest</text>
+<rect x="30" y="100" width="840" height="92" rx="12" fill="#111a2b" stroke="#7ee0a1" stroke-width="1.5"/>
+<text x="52" y="136" text-anchor="start" font-family="Georgia, serif" font-size="21" fill="#e8dfd2" font-weight="bold">Voicemail PIN</text>
+<text x="52" y="160" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#94a3b8" font-weight="normal">Stops the “no PIN / default PIN” route.</text>
+<text x="52" y="182" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="normal">*if your carrier asks for it on remote and own-number calls</text>
+<rect x="730" y="121" width="112" height="44" rx="22" fill="#7ee0a1"/>
+<text x="786" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">Yes*</text>
+<rect x="30" y="202" width="840" height="92" rx="12" fill="#111a2b" stroke="#7ee0a1" stroke-width="1.5"/>
+<text x="52" y="238" text-anchor="start" font-family="Georgia, serif" font-size="21" fill="#e8dfd2" font-weight="bold">Remote voicemail off</text>
+<text x="52" y="262" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#94a3b8" font-weight="normal">No “call in to listen” at all.</text>
+<text x="52" y="284" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="normal">on Google Fi: “Call to listen” toggle</text>
+<rect x="730" y="223" width="112" height="44" rx="22" fill="#7ee0a1"/>
+<text x="786" y="252" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">Yes</text>
+<rect x="30" y="304" width="840" height="92" rx="12" fill="#111a2b" stroke="#7ee0a1" stroke-width="1.5"/>
+<text x="52" y="340" text-anchor="start" font-family="Georgia, serif" font-size="21" fill="#e8dfd2" font-weight="bold">Two-step verification</text>
+<text x="52" y="364" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#94a3b8" font-weight="normal">The code alone is useless without your password.</text>
+<text x="52" y="386" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="normal">Telegram and WhatsApp — works even if voicemail leaks</text>
+<rect x="730" y="325" width="112" height="44" rx="22" fill="#7ee0a1"/>
+<text x="786" y="354" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">Yes</text>
+<rect x="30" y="406" width="840" height="92" rx="12" fill="#111a2b" stroke="#1e2a3c" stroke-width="1.5"/>
+<text x="52" y="442" text-anchor="start" font-family="Georgia, serif" font-size="21" fill="#e8dfd2" font-weight="bold">SIM PIN / number lock</text>
+<text x="52" y="466" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#94a3b8" font-weight="normal">Guards a stolen SIM, or a port-out to another carrier.</text>
+<text x="52" y="488" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="normal">worth having — it’s a different attack</text>
+<rect x="730" y="427" width="112" height="44" rx="22" fill="#ff7b72"/>
+<text x="786" y="456" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">No</text>
+</svg>
