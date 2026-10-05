@@ -11,6 +11,204 @@ hero_credit: Yersinia pestis, direct fluorescent antibody stain, 200x magnificat
 ---
 <p>This is a living page. A 27- or 28-year-old laboratory worker at the Irkutsk Anti-Plague Institute in southern Siberia died in early October 2026 after a severe pneumonia, and Russian and foreign outlets have reported that it was pneumonic plague. I wrote a first explainer on <a href="the-institute-built-to-prevent-this-had-the-accident.html">October 2</a>. Rather than stack a new post on top each time something moves, I'll keep this page current: what is confirmed, what is disputed, and what would change my reading. <strong>Last updated October 5, 2026.</strong></p>
 
+<style>
+.ig{--ok:#5fd3a1;--rep:#e8c968;--dis:#f08a5d;--unv:#ef6f6f;--none:#7f8fa6;--card:#0a111c;--line:#1b2738;--ink:#c3d0e0;--mut:#8696ad;--acc:#8fa3ff;
+  margin:8px 0 30px;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.ig *{box-sizing:border-box}
+.ig svg.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.ig .band{border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;margin:0 0 18px;
+  background:radial-gradient(120% 140% at 0% 0%,rgba(239,111,111,.13),transparent 55%),linear-gradient(180deg,#0d1624,#0a111c)}
+.ig .live{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#f3a0a0;font-weight:700}
+.ig .live i{width:8px;height:8px;border-radius:50%;background:var(--unv);box-shadow:0 0 0 0 rgba(239,111,111,.6);animation:igp 1.8s infinite}
+@keyframes igp{70%{box-shadow:0 0 0 9px rgba(239,111,111,0)}100%{box-shadow:0 0 0 0 rgba(239,111,111,0)}}
+@media (prefers-reduced-motion:reduce){.ig .live i{animation:none}}
+.ig .band .big{font-family:Georgia,"Times New Roman",serif;font-size:30px;line-height:1.15;color:#f2f6fc;margin:10px 0 6px}
+.ig .band .sub{font-size:14.5px;color:var(--mut);line-height:1.5}
+.ig .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ig .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.ig .c-ok{color:var(--ok)}.ig .c-rep{color:var(--rep)}.ig .c-dis{color:var(--dis)}.ig .c-unv{color:var(--unv)}.ig .c-none{color:var(--none)}
+.ig .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.ig .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 13px;position:relative;overflow:hidden}
+.ig .stat .ic{font-size:22px;color:var(--acc);margin-bottom:6px}
+.ig .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:34px;line-height:1;color:#f2f6fc}
+.ig .stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--mut);margin-top:6px}
+.ig .stat.zero b{color:var(--ok)}
+.ig .stat.zero .ic{color:var(--ok)}
+.ig .sec{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:26px 0 12px;display:flex;align-items:center;gap:10px}
+.ig .sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.ig .tl{position:relative;margin:0 0 6px 8px;padding-left:26px;border-left:2px solid var(--line)}
+.ig .ev{position:relative;padding:0 0 18px}
+.ig .ev:last-child{padding-bottom:2px}
+.ig .ev::before{content:"";position:absolute;left:-35px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--dot,var(--rep));border:3px solid #060b14;box-shadow:0 0 0 2px var(--dot,var(--rep))}
+.ig .ev .d{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dot,var(--rep))}
+.ig .ev .t{font-size:15.5px;line-height:1.5;color:#dbe5f2;margin-top:2px}
+.ig .ev .t small{display:block;font-size:12.5px;color:var(--mut);margin-top:3px}
+.ig .ev.ok{--dot:var(--ok)}.ig .ev.rep{--dot:var(--rep)}.ig .ev.dis{--dot:var(--dis)}.ig .ev.unv{--dot:var(--unv)}
+.ig .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mut);margin:2px 0 14px}
+.ig .legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;margin-right:6px}
+.ig .fun{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ig .bar{margin:0 0 14px}
+.ig .bar:last-child{margin:0}
+.ig .bar .lab{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:#dbe5f2;margin-bottom:5px}
+.ig .bar .lab em{font-style:normal;color:var(--mut);font-size:12.5px}
+.ig .bar .trk{height:22px;border-radius:6px;background:#0f1a29;overflow:hidden}
+.ig .bar .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#4f63d6,#8fa3ff)}
+.ig .bar.z .fill{background:var(--ok);width:3px!important}
+.ig .fun .note{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.5}
+.ig .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.ig .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.ig .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.ig .card .hd{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-size:19px;color:#f2f6fc}
+.ig .card .hd .ic{font-size:26px;color:var(--acc)}
+.ig .card .row{font-size:13.5px;line-height:1.5;color:var(--ink)}
+.ig .card .row b{color:#f2f6fc}
+.ig .card.hot{border-color:#5a2c2c;background:linear-gradient(180deg,#160e12,#0a111c)}
+.ig .card.hot .hd .ic{color:var(--unv)}
+.ig .pro,.ig .con{font-size:13.5px;line-height:1.45;padding-left:20px;position:relative}
+.ig .pro::before,.ig .con::before{position:absolute;left:0;top:0;font-weight:700}
+.ig .pro::before{content:"+";color:var(--ok)}
+.ig .con::before{content:"\2212";color:var(--unv)}
+.ig .tbl{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.ig .tr{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.ig .tr:first-child{border-top:0}
+.ig .tr .cl{font-size:14px;line-height:1.45;color:#dbe5f2}
+.ig .tr .cl small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.ig .watch{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ig .w{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ig .w .ic{font-size:24px;color:var(--acc)}
+.ig .w .q{font-size:14px;font-weight:700;color:#f2f6fc;line-height:1.35}
+.ig .w .m{font-size:13px;color:var(--mut);line-height:1.45}
+.ig .w .s{margin-top:auto;padding-top:4px}
+.ig .foot{font-size:12px;color:var(--mut);margin-top:18px;line-height:1.5}
+@media (max-width:560px){.ig .stats{grid-template-columns:repeat(2,1fr)}.ig .watch{grid-template-columns:1fr}.ig .band .big{font-size:25px}.ig .stat b{font-size:30px}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M7.5 15h9"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.9.3 5 2.6 5 5.8"/></symbol>
+<symbol id="i-cross" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></symbol>
+<symbol id="i-lungs" viewBox="0 0 24 24"><path d="M12 4v8M12 9C9 8 6 11 5.5 16c-.3 2.5 1.5 3.5 3.2 3 1.8-.5 3.3-2 3.3-4M12 9c3-1 6 2 6.5 7 .3 2.5-1.5 3.5-3.2 3-1.8-.5-3.3-2-3.3-4"/></symbol>
+<symbol id="i-bug" viewBox="0 0 24 24"><ellipse cx="12" cy="13.5" rx="4" ry="5"/><circle cx="12" cy="6.5" r="2"/><path d="M8 11 4 9M8 14H4M8 17l-4 2M16 11l4-2M16 14h4M16 17l4 2"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></symbol>
+<symbol id="i-mask" viewBox="0 0 24 24"><path d="M4 9c4-2 12-2 16 0v4c0 4-3 6-8 6s-8-2-8-6zM4 11H2M20 11h2M8 13h8M8 16h8"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M9.5 12h6M9.5 16h6"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+</defs></svg>
+
+<h2>The briefing at a glance</h2>
+<div class="ig" role="region" aria-label="Infographic: Siberia plague death, status as of October 5, 2026">
+
+  <div class="band">
+    <span class="live"><i></i>Live briefing &middot; updated Oct 5, 2026</span>
+    <div class="big">One death, ~200 people watched, no second case</div>
+    <div class="sub">An Irkutsk Anti-Plague Institute lab worker died in early October. Russian officials call it pneumonia of unknown origin; outlets and local doctors say plague.</div>
+    <div class="chips">
+      <span class="chip c-ok"><svg class="ic"><use href="#i-eye"/></svg>Contained so far</span>
+      <span class="chip c-dis"><svg class="ic"><use href="#i-doc"/></svg>Cause unconfirmed</span>
+      <span class="chip c-dis"><svg class="ic"><use href="#i-flask"/></svg>Exposure disputed</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><svg class="ic"><use href="#i-flask"/></svg><b>1</b><span>death: a lab technician, 27 or 28 depending on the outlet</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-people"/></svg><b>197</b><span>contacts identified (&ldquo;nearly 200&rdquo; in most reports)</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-cross"/></svg><b>189</b><span>of them hospitalized for observation</span></div>
+    <div class="stat zero"><svg class="ic"><use href="#i-eye"/></svg><b>0</b><span>new confirmed cases in anything I could open</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-cross"/></svg><b>4&ndash;5</b><span>hospitals quarantined for three weeks</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-doc"/></svg><b>0</b><span>official confirmations of plague; the line is &ldquo;pneumonia of unknown origin&rdquo;</span></div>
+  </div>
+
+  <div class="sec">Timeline</div>
+  <div class="legend">
+    <span class="c-ok">Well reported</span><span class="c-rep">Reported, details vary</span><span class="c-dis">Disputed</span><span class="c-unv">Unverified</span>
+  </div>
+  <div class="tl">
+    <div class="ev dis"><div class="d">Sep 25</div><div class="t">She reportedly breaks a test tube of live bacteria while preparing samples<small>Her own account to colleagues, per Russian media. Dated Sep 25 by two outlets. Rospotrebnadzor denies any accident.</small></div></div>
+    <div class="ev unv"><div class="d">Sep 26 &ndash; 29</div><div class="t">~40 flights leave Irkutsk, claims an X account<small>No data source cited. Says nothing about whether anyone infectious was aboard.</small></div></div>
+    <div class="ev ok"><div class="d">Sep 29</div><div class="t">Hospitalized in Shelekhov with severe pneumonia</div></div>
+    <div class="ev rep"><div class="d">Oct 2</div><div class="t">Death reported; response begins<small>Some reports say Oct 1 or 3. Health chief Anna Popova flies in; 197 contacts identified; hospitals Nos. 1, 3, 10 and a children&rsquo;s hospital quarantined; masks ordered at the aluminium plant.</small></div></div>
+    <div class="ev rep"><div class="d">Oct 3</div><div class="t">Baikalsk town warns residents off Shelekhov, then deletes the post within ~2 hours<small>REN TV also removes five Telegram posts about the hospitalizations.</small></div></div>
+    <div class="ev rep"><div class="d">Oct 4</div><div class="t">Rospotrebnadzor: no traces of plague in her samples<small>Diagnosis given as pneumonia of unknown aetiology. Contacts still reported negative.</small></div></div>
+    <div class="ev rep"><div class="d">Oct 5</div><div class="t">No new confirmed case; viral claims outrun the reporting<small>&ldquo;Universities canceling classes&rdquo; and &ldquo;outbreak getting worse&rdquo; carry no source.</small></div></div>
+  </div>
+
+  <div class="sec">The contact tracing so far</div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Contacts identified</span><em>197</em></div><div class="trk"><div class="fill" style="width:100%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Hospitalized for observation</span><em>189</em></div><div class="trk"><div class="fill" style="width:96%"></div></div></div>
+    <div class="bar z"><div class="lab"><span>Reported sick or test-positive</span><em>0</em></div><div class="trk"><div class="fill" style="width:3px"></div></div></div>
+    <div class="note">Figures from Governor Igor Kobzev&rsquo;s October 2 statement as relayed by Newsweek, Kyiv Independent and others; contacts were still reported negative on October 4. A clean list is encouraging, not final: it only becomes strong evidence as the incubation window passes.</div>
+  </div>
+
+  <div class="sec">Why the form of plague matters</div>
+  <div class="two">
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-bug"/></svg>Bubonic</div>
+      <div class="row"><b>Where it lives:</b> in wild rodents such as marmots, passed on by fleas.</div>
+      <div class="row"><b>Person to person:</b> generally does not spread directly.</div>
+      <div class="row"><b>Body:</b> swollen lymph nodes (&ldquo;buboes&rdquo;).</div>
+    </div>
+    <div class="card hot">
+      <div class="hd"><svg class="ic"><use href="#i-lungs"/></svg>Pneumonic</div>
+      <div class="row"><b>Where it lives:</b> in the lungs; progresses very fast.</div>
+      <div class="row"><b>Person to person:</b> yes, through respiratory droplets at close range. That is why ~200 contacts were isolated.</div>
+      <div class="row"><b>Outcome:</b> a historical review cited in my October 2 explainer put untreated fatality near 98%, about 50% with treatment. Treatable with antibiotics if caught early.</div>
+    </div>
+  </div>
+
+  <div class="sec">Three explanations, none settled</div>
+  <div class="three">
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-flask"/></svg>Lab accident</div>
+      <div class="pro">She reportedly told colleagues she broke a test tube</div>
+      <div class="pro">She worked with the organism at the institute</div>
+      <div class="con">Rospotrebnadzor denies any accident</div>
+      <div class="con">Epidemiologist Mikhail Favorov calls the story implausible</div>
+    </div>
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-bug"/></svg>Natural exposure</div>
+      <div class="pro">Mongolian sources reportedly isolated plague from an active border focus (I have not opened that report)</div>
+      <div class="con">Buryatia&rsquo;s head says she never visited and there is no outbreak there</div>
+      <div class="con">Plague rodents mostly go dormant by early October (Onishchenko)</div>
+    </div>
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-doc"/></svg>&ldquo;Pneumonia of unknown origin&rdquo;</div>
+      <div class="pro">The official line; no plague traces found in her samples, per Rospotrebnadzor</div>
+      <div class="con">Doctors reportedly &ldquo;openly talking about plague&rdquo;</div>
+      <div class="con">Deleted warnings and posts; Buryatia&rsquo;s head edited his post to say &ldquo;possibly&rdquo;</div>
+    </div>
+  </div>
+
+  <div class="sec">Claim check</div>
+  <div class="tbl">
+    <div class="tr"><div class="cl">About 200 contacts isolated<small>Governor Kobzev, widely reported</small></div><span class="chip c-ok">Confirmed</span></div>
+    <div class="tr"><div class="cl">Several Irkutsk hospitals closed for three weeks<small>Nos. 1, 3, 10 and a children&rsquo;s hospital; a fifth, a maternity hospital, in one report</small></div><span class="chip c-rep">Reported</span></div>
+    <div class="tr"><div class="cl">Warning post and TV posts deleted<small>Baikalsk administration; REN TV</small></div><span class="chip c-rep">Reported</span></div>
+    <div class="tr"><div class="cl">Masks ordered at the aluminium plant<small>Director later called it a routine seasonal measure</small></div><span class="chip c-rep">Reported</span></div>
+    <div class="tr"><div class="cl">It was plague<small>Not confirmed by Russian authorities; Buryatia&rsquo;s head said &ldquo;possibly&rdquo;</small></div><span class="chip c-dis">Disputed</span></div>
+    <div class="tr"><div class="cl">A test-tube accident caused it<small>Per Russian media; denied by the watchdog</small></div><span class="chip c-dis">Disputed</span></div>
+    <div class="tr"><div class="cl">FSB units escorting ambulances<small>Annie Jacobsen, citing local news</small></div><span class="chip c-unv">Unverified</span></div>
+    <div class="tr"><div class="cl">Universities canceling classes<small>Jay in Kyiv on X; no source cited</small></div><span class="chip c-unv">Unverified</span></div>
+    <div class="tr"><div class="cl">~40 flights left Irkutsk before hospitalization<small>Irkutsk Live on X; no data source cited</small></div><span class="chip c-unv">Unverified</span></div>
+    <div class="tr"><div class="cl">The outbreak is getting worse<small>More quarantined facilities, but no new case reported</small></div><span class="chip c-unv">Unsupported so far</span></div>
+    <div class="tr"><div class="cl">Air travel has been halted<small>Called for by Terry Virts; no restriction reported</small></div><span class="chip c-none">Not reported</span></div>
+    <div class="tr"><div class="cl">A second case<small>None in anything I could open</small></div><span class="chip c-none">None reported</span></div>
+  </div>
+
+  <div class="sec">What would change the picture</div>
+  <div class="watch">
+    <div class="w"><svg class="ic"><use href="#i-people"/></svg><div class="q">A sick or positive contact</div><div class="m">Short incubation means the next days are informative. Any new case changes the story at once.</div><div class="s"><span class="chip c-none">Not seen</span></div></div>
+    <div class="w"><svg class="ic"><use href="#i-doc"/></svg><div class="q">Official use of the word &ldquo;plague&rdquo;</div><div class="m">A formal confirmation or international notification would settle the diagnosis question.</div><div class="s"><span class="chip c-none">Not seen</span></div></div>
+    <div class="w"><svg class="ic"><use href="#i-flask"/></svg><div class="q">Independent evidence on the exposure</div><div class="m">Institute records or colleagues on the record would resolve the test-tube account.</div><div class="s"><span class="chip c-none">Not seen</span></div></div>
+    <div class="w"><svg class="ic"><use href="#i-bug"/></svg><div class="q">A natural-focus case nearby</div><div class="m">A case in Buryatia or Mongolia would make the lab explanation less necessary.</div><div class="s"><span class="chip c-none">Not seen</span></div></div>
+  </div>
+
+  <div class="foot">Icons drawn for this page. Status labels are my reading of the sources listed below, not an official classification, and they change as the story does. The written detail behind every box follows.</div>
+</div>
+
+<h2>The full write-up</h2>
+<p>The graphic above is the summary. Below is the detail behind every box, with who said what.</p>
+
 <h2>Where things stand on October 5</h2>
 <p>Contained so far, and unexplained. About 200 people who had contact with the woman (197 identified, 189 hospitalized for observation, by one count) were reported by the regional governor to be symptom-free with negative tests. No second case has been reported in anything I could open. What is not settled is the diagnosis Russian authorities will put their name to, how she was exposed, and how much of the official account can be taken at face value.</p>
 
