@@ -1,0 +1,12 @@
+{
+ "note": "Running pages: standing Notebook entries that are rewritten in place as a story moves (see claude-docs/notebook.md, 'Running stories'). The daily rundown routine reads this file. Add a row when a running page is created; set active to false when the story is over. Not an entry: the leading underscore and .json keep it out of the build.",
+ "stories": [
+  {
+   "href": "siberia-plague-death-what-we-know.html",
+   "title": "Siberia plague death: what we know",
+   "search": "Irkutsk plague Shipilova Rospotrebnadzor WHO new cases",
+   "since": "2026-10-05",
+   "active": true
+  }
+ ]
+}

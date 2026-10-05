@@ -80,3 +80,26 @@ web-sized and EXIF-stripped (`tools/travel_photos.py` for a photo; for a public-
 illustration keep the source and licence for `hero_credit:`). The sitemap is advertised in
 the root `robots.txt`; **submit `notebook/sitemap.xml` once in Google Search Console** — a
 human step, same as the other three.
+
+
+## Running stories (2026-10-05)
+
+A **running page** is an ordinary Notebook entry that is rewritten in place while a story moves
+(first one: `2026-10-05-siberia-plague-death-what-we-know.html`) — an infographic briefing on
+top (stats, timeline, claim-check table; scoped `.ig` CSS and an inline SVG icon sprite, no
+builder changes), the full written detail below, and an `updated:` date plus a dated update log
+that is bumped on every change. Keep status labels honest (confirmed / reported / disputed /
+unverified) and never present a viral claim as established.
+
+**The rundown box and running pages.** The rundown box (`_rundown.json`) is rewritten every day
+by a cloud routine, "Notebook daily rundown" (claude.ai routines, 13:00 UTC), which overwrites
+the file and by default only writes items with an empty `href`. That left a running story with no
+link from the front page, and the routine missed the Siberia story for four days because nothing
+told it to follow one. So: **`source/notebook/_running.json` lists the active running pages**
+(`href`, `title`, `search`, `since`, `active`). For each active row the routine searches the
+phrase, and if there is news from the last ~48 hours it adds ONE rundown item whose `href` is that
+page (the one exception to the empty-`href` rule) and whose `source_href` is the real article.
+The routine does not edit the running page itself; it reports in its final message when the page
+looks behind, and a session on this box or the Mac updates the page. When you create a running
+page, add its row; when a story is over, set `active` to `false`.
+

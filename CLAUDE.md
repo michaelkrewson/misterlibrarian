@@ -594,6 +594,11 @@ Notebook.** Must-knows: **`section:` is REQUIRED** and must be `technology` / `w
 Spanish edition by default; keep geopolitics analytical; never invent his experience or his
 opinion.
 
+**Rundown box and running pages:** the rundown box (`source/notebook/_rundown.json`) is rewritten daily
+by a cloud routine; stories that have their own running page are listed in
+`source/notebook/_running.json` and get a rundown item linking to that page (the one exception to
+the empty-`href` rule). Detail: `claude-docs/notebook.md`, "Running stories".
+
 Full detail: `claude-docs/notebook.md` — read it before working on /notebook/.
 
 ## Source archive
