@@ -2454,6 +2454,8 @@ a{color:__ACCENT__}
 .entry li{margin:0 0 8px}
 .entry figure{margin:26px 0;text-align:center}
 .entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figure video{width:auto;max-width:100%;max-height:640px;border-radius:10px;display:block;
+  margin:0 auto;background:#000}
 .entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
   line-height:1.55}
 .entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid __ACCENT__;

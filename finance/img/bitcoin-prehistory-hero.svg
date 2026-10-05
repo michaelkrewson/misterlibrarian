@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img"
+     aria-label="A timeline from 1974 to 2008 with dots for TCP/IP, RSA, Merkle trees, elliptic curves, PGP, Hashcash, b-money, Bit gold and reusable proof of work, all leading to a single orange mark for Bitcoin in 2008.">
+  <rect width="900" height="430" fill="#0a0f1a"/>
+
+  <text x="60" y="78" font-family="Georgia, serif" font-size="30" fill="#e8dfd2" font-weight="bold">Thirty-four years of other people's work</text>
+  <text x="60" y="108" font-family="Georgia, serif" font-size="16" fill="#94a3b8">1974 to the 2008 whitepaper. Each dot is a piece Bitcoin stands on.</text>
+
+  <!-- axis: 1974..2008 maps to x=70..790 (720px, ~21.2px/yr) -->
+  <line x1="70" y1="270" x2="790" y2="270" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+
+  <g font-family="Georgia, serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    <text x="70" y="298">1974</text>
+    <text x="282" y="298">1984</text>
+    <text x="494" y="298">1994</text>
+    <text x="706" y="298">2004</text>
+  </g>
+
+  <g fill="#7aa2f7">
+    <circle cx="70" cy="270" r="7"/>   <!-- 1974 TCP/IP -->
+    <circle cx="154" cy="270" r="7"/>  <!-- 1978 RSA -->
+    <circle cx="196" cy="270" r="7"/>  <!-- 1980 Merkle -->
+    <circle cx="260" cy="270" r="7"/>  <!-- 1985 elliptic curves -->
+    <circle cx="397" cy="270" r="7"/>  <!-- 1991 PGP -->
+  </g>
+  <g fill="#e8865c">
+    <circle cx="571" cy="270" r="7"/>  <!-- 1997 Hashcash -->
+    <circle cx="592" cy="270" r="7"/>  <!-- 1998 b-money -->
+    <circle cx="612" cy="270" r="7"/>  <!-- 1998 Bit gold -->
+    <circle cx="698" cy="270" r="7"/>  <!-- 2004 RPOW -->
+  </g>
+
+  <g stroke="rgba(255,255,255,.28)" stroke-width="1">
+    <line x1="154" y1="222" x2="154" y2="263"/>
+    <line x1="260" y1="197" x2="260" y2="263"/>
+    <line x1="592" y1="197" x2="592" y2="263"/>
+    <line x1="698" y1="222" x2="698" y2="263"/>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="14" fill="#e8dfd2">
+    <text x="70" y="240" text-anchor="middle">TCP/IP</text>
+    <text x="154" y="215" text-anchor="middle">RSA</text>
+    <text x="214" y="240" text-anchor="middle">Merkle trees</text>
+    <text x="260" y="190" text-anchor="middle">Elliptic curves</text>
+    <text x="397" y="240" text-anchor="middle">PGP</text>
+    <text x="548" y="240" text-anchor="end">Hashcash</text>
+    <text x="592" y="190" text-anchor="middle">b-money</text>
+    <text x="640" y="240" text-anchor="start">Bit gold</text>
+    <text x="698" y="215" text-anchor="middle">RPOW</text>
+  </g>
+
+  <!-- the arrival -->
+  <line x1="698" y1="270" x2="790" y2="270" stroke="#e8865c" stroke-width="3"/>
+  <circle cx="790" cy="270" r="22" fill="#f7931a"/>
+  <text x="790" y="277" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#0a0f1a" font-weight="bold">₿</text>
+  <text x="790" y="324" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f7931a" font-weight="bold">2008</text>
+
+  <text x="60" y="390" font-family="Georgia, serif" font-size="13" fill="#64748b">Dates as shown in Dan Held's "Bitcoin Prehistory" timeline. Drawn for this entry.</text>
+</svg>
