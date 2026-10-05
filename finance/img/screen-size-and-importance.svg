@@ -11,7 +11,13 @@
 <line x1="150" y1="80" x2="150" y2="385" stroke="#94a3b8"/>
 <line x1="150" y1="385" x2="870" y2="385" stroke="#94a3b8"/>
 <path d="M200 102 C 280 100, 300 140, 350 180 S 450 270, 520 300 S 650 356, 800 360" fill="none" stroke="#e8865c" stroke-width="5" stroke-linecap="round"/>
-<g fill="#e8865c"><circle cx="200" cy="102" r="7"/><circle cx="350" cy="180" r="7"/><circle cx="470" cy="260" r="7"/><circle cx="600" cy="326" r="7"/><circle cx="800" cy="360" r="7"/></g>
+<g fill="#0a0f1a" stroke="#e8865c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g transform="translate(200 102)"><rect x="-15" y="-25" width="30" height="50" rx="6"/><rect x="-11" y="-19" width="22" height="34" rx="2" fill="#e8865c" fill-opacity=".22" stroke="none"/><line x1="-4" y1="20" x2="4" y2="20" stroke-width="2"/></g>
+<g transform="translate(350 180)"><rect x="-22" y="-28" width="44" height="56" rx="6"/><rect x="-17" y="-23" width="34" height="42" rx="2" fill="#e8865c" fill-opacity=".22" stroke="none"/><circle cx="0" cy="23.5" r="1.6" fill="#e8865c" stroke="none"/></g>
+<g transform="translate(470 260)"><rect x="-28" y="-24" width="56" height="36" rx="4"/><rect x="-23" y="-19" width="46" height="26" rx="1.5" fill="#e8865c" fill-opacity=".22" stroke="none"/><path d="M-38 12 H38 L33 21 H-33 Z"/></g>
+<g transform="translate(600 326)"><rect x="-32" y="-26" width="64" height="42" rx="4"/><rect x="-27" y="-21" width="54" height="32" rx="1.5" fill="#e8865c" fill-opacity=".22" stroke="none"/><path d="M-5 16 V23 M5 16 V23 M-16 24 H16"/></g>
+<g transform="translate(800 360)"><g transform="translate(-27 0)"><rect x="-24" y="-22" width="48" height="32" rx="3"/><rect x="-20" y="-18" width="40" height="24" rx="1" fill="#e8865c" fill-opacity=".22" stroke="none"/><path d="M0 10 V16 M-10 17 H10"/></g><g transform="translate(27 0)"><rect x="-24" y="-22" width="48" height="32" rx="3"/><rect x="-20" y="-18" width="40" height="24" rx="1" fill="#e8865c" fill-opacity=".22" stroke="none"/><path d="M0 10 V16 M-10 17 H10"/></g></g>
+</g>
 <g font-family="Georgia, serif" font-size="14" fill="#e8dfd2" text-anchor="middle">
 <text x="200" y="412">iPhone</text><text x="350" y="412">iPad</text><text x="470" y="412">13&#8243; laptop</text><text x="600" y="412">1 monitor</text><text x="800" y="412">2 monitors</text>
 </g>

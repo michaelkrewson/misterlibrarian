@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mistertranslation.com/notebook/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/about.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/ask.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/technology.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/world.html</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/culture.html</loc>
@@ -27,6 +27,10 @@
   <url>
     <loc>https://mistertranslation.com/notebook/notes.html</loc>
     <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/siberia-plague-death-what-we-know.html</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</loc>
@@ -305,6 +309,10 @@
     <lastmod>2026-09-26</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-biosafety.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-china.html</loc>
     <lastmod>2026-09-23</lastmod>
   </url>
@@ -397,8 +405,16 @@
     <lastmod>2026-09-20</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-plague.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-pneumonic-plague.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-public-health.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-quantum-mechanics.html</loc>
@@ -409,12 +425,16 @@
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-rospotrebnadzor.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-rundown.html</loc>
     <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-russia.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-saudi-arabia.html</loc>
@@ -435,6 +455,10 @@
   <url>
     <loc>https://mistertranslation.com/notebook/tag-shipping.html</loc>
     <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-siberia.html</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-software.html</loc>
@@ -459,5 +483,9 @@
   <url>
     <loc>https://mistertranslation.com/notebook/tag-technology.html</loc>
     <lastmod>2026-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-yersinia-pestis.html</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
 </urlset>
