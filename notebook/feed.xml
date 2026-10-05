@@ -22,6 +22,21 @@
     <category>public health</category>
   </item>
   <item>
+    <title>Your Voicemail Can Hand Over Your Telegram Login Code — How to Lock It Down on iPhone</title>
+    <link>https://mistertranslation.com/notebook/voicemail-can-hand-over-your-telegram-login-code.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/voicemail-can-hand-over-your-telegram-login-code.html</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A post on X describes an account takeover that never touched the victim's phone: a jammed line sent Telegram's "code by phone call" to voicemail, and the attacker listened in. What happened, why it works, and the iPhone settings that close it.</description>
+    <category>voicemail</category>
+    <category>telegram</category>
+    <category>whatsapp</category>
+    <category>iphone</category>
+    <category>two-step verification</category>
+    <category>sim swap</category>
+    <category>account security</category>
+    <category>google fi</category>
+  </item>
+  <item>
     <title>Amazon's Antitrust Trial Has 17 States — and Not the One It's In</title>
     <link>https://mistertranslation.com/notebook/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</guid>
@@ -356,19 +371,6 @@
     <category>Mounjaro</category>
     <category>GLP-1</category>
     <category>clinical trials</category>
-  </item>
-  <item>
-    <title>Claude Opus 5.5 Is Cheaper and Faster — But the Real News Is What Anthropic Led With</title>
-    <link>https://mistertranslation.com/notebook/claude-opus-5-5-leads-with-a-safety-score.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/claude-opus-5-5-leads-with-a-safety-score.html</guid>
-    <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
-    <description>On September 22, 2026, Anthropic shipped Claude Opus 5.5 — its first new model since CEO Dario Amodei published an essay ten days earlier arguing the whole industry should deliberately slow down. It's 40 percent cheaper than Opus 5, runs about 30 percent faster, performs close to the pricier Fable 5.1 — and the launch announcement opened with an alignment score, not a benchmark.</description>
-    <category>artificial intelligence</category>
-    <category>anthropic</category>
-    <category>claude</category>
-    <category>ai safety</category>
-    <category>llm benchmarks</category>
-    <category>dario amodei</category>
   </item>
 </channel>
 </rss>

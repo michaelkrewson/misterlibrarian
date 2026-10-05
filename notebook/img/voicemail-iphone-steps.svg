@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="Three cards with menu paths. 1, Voicemail PIN: Settings, then Apps, then Phone, then Change Voicemail Password; on older iOS it is Settings, then Phone. 2, Telegram: Settings, then Privacy and Security, then Two-Step Verification; set a password and a recovery email. 3, WhatsApp: Settings, then Account, then Two-step verification; set a six digit PIN and add an email. Optional fourth step: check your carrier for a remote voicemail switch and a number lock.">
+<rect width="900" height="540" fill="#0a0f1a"/>
+<text x="450" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#e8dfd2">On your iPhone: three places, a few minutes</text>
+<text x="450" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#94a3b8" font-style="italic">exact menu paths — screens shift a little between iOS and app versions</text>
+<rect x="30" y="100" width="270" height="360" rx="12" fill="#111a2b" stroke="#f2c46d" stroke-width="1.5"/>
+<circle cx="64" cy="136" r="20" fill="#f2c46d"/>
+<text x="64" y="144" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">1</text>
+<text x="94" y="144" text-anchor="start" font-family="Georgia, serif" font-size="22" fill="#e8dfd2" font-weight="bold">Voicemail PIN</text>
+<rect x="48" y="178" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="165.0" y="201" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Settings</text>
+<text x="165.0" y="222" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="48" y="222" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="165.0" y="245" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Apps</text>
+<text x="165.0" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="48" y="266" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="165.0" y="289" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Phone</text>
+<text x="165.0" y="310" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="48" y="310" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="165.0" y="333" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Change Voicemail Password</text>
+<text x="48" y="376" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">Older iOS: Settings › Phone.</text>
+<text x="48" y="395" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">Pick a PIN that isn’t 1234, a</text>
+<text x="48" y="414" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">birthday, or the end of your</text>
+<text x="48" y="433" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">number.</text>
+<rect x="315" y="100" width="270" height="360" rx="12" fill="#111a2b" stroke="#8fa3ff" stroke-width="1.5"/>
+<circle cx="349" cy="136" r="20" fill="#8fa3ff"/>
+<text x="349" y="144" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">2</text>
+<text x="379" y="144" text-anchor="start" font-family="Georgia, serif" font-size="22" fill="#e8dfd2" font-weight="bold">Telegram</text>
+<rect x="333" y="178" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="450.0" y="201" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Settings</text>
+<text x="450.0" y="222" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="333" y="222" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="450.0" y="245" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Privacy and Security</text>
+<text x="450.0" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="333" y="266" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="450.0" y="289" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Two-Step Verification</text>
+<text x="333" y="332" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">Set a password and a recovery</text>
+<text x="333" y="351" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">email. Then check Settings ›</text>
+<text x="333" y="370" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">Devices for sessions you don’t</text>
+<text x="333" y="389" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">know.</text>
+<rect x="600" y="100" width="270" height="360" rx="12" fill="#111a2b" stroke="#7ee0a1" stroke-width="1.5"/>
+<circle cx="634" cy="136" r="20" fill="#7ee0a1"/>
+<text x="634" y="144" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#0a0f1a" font-weight="bold">3</text>
+<text x="664" y="144" text-anchor="start" font-family="Georgia, serif" font-size="22" fill="#e8dfd2" font-weight="bold">WhatsApp</text>
+<rect x="618" y="178" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="735.0" y="201" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Settings</text>
+<text x="735.0" y="222" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="618" y="222" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="735.0" y="245" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Account</text>
+<text x="735.0" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="normal">↓</text>
+<rect x="618" y="266" width="234" height="34" rx="8" fill="#0a0f1a" stroke="#1e2a3c"/>
+<text x="735.0" y="289" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#e8dfd2" font-weight="normal">Two-step verification</text>
+<text x="618" y="332" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">Six-digit PIN, plus an optional</text>
+<text x="618" y="351" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">email so a forgotten PIN isn’t</text>
+<text x="618" y="370" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#94a3b8" font-weight="normal">a 7-day lockout.</text>
+<rect x="30" y="474" width="840" height="46" rx="12" fill="#111a2b" stroke="#1e2a3c" stroke-width="1.5"/>
+<text x="450" y="503" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#94a3b8" font-weight="normal">Then: ask your carrier whether remote voicemail can be switched off, and whether it offers a number lock.</text>
+</svg>
