@@ -29302,6 +29302,42 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Conversion_on_the_Way_to_Damascus-Caravaggio_(c.1600-1).jpg",
     )],
+    "acts11": [dict(
+        file="de-vos-peters-vision.jpg",
+        title="Saint Peter\u2019s Vision",
+        title_es="La visi\u00f3n de san Pedro",
+        artist="Maerten de Vos",
+        artist_es="Maerten de Vos",
+        year="1588",
+        location="Nasjonalmuseet, Oslo",
+        location_es="Nasjonalmuseet, Oslo",
+        alt="A large pen-and-wash drawing in brown ink of a crowded workshop interior. Animal hides hang from the rafters and down "
+            "the upper left wall. In the foreground several bare-chested men bend over benches and a tub, working skins, and two more at "
+            "the right lift a long bar over a barrel. At the left a doorway opens onto a harbour with ships, where men stand in the "
+            "doorway and one raises an arm; at the centre a woman holds an infant while a small child reaches up to her. At the upper "
+            "right, in arched openings above a balustrade, a kneeling bearded man looks up at a swirl of small figures inside a round "
+            "frame. A signature and the date 1588 are at the lower right.",
+        note="&#9888; The museum catalogues this drawing as <em>Saint Peter&rsquo;s Vision</em>, but most of the sheet is a tannery: "
+             "hides hang from the rafters and men work skins at the benches. <a href=\"acts-9.html#v9-43\">Acts 9:43</a> names Peter&rsquo;s host "
+             "a tanner and <a href=\"acts-10.html#v10-6\">10:6</a> puts his house by the sea, and a harbour shows through the doorway. "
+             "This chapter retells the vision on the roof (<a href=\"acts-11.html#v11-5\">vv5&ndash;10</a>) and the arrival of three men at the house "
+             "(<a href=\"acts-11.html#v11-11\">v11</a>); at the left, men stand in the doorway, and the text says only that they &lsquo;stood before the house.&rsquo; "
+             "The vision itself is the small scene at the upper right, where a kneeling man looks up at figures in a round frame; the Greek "
+             "has Peter on a housetop (<a href=\"acts-10.html#v10-9\">10:9</a>), not kneeling, and this page does not say what the figures are. The woman "
+             "with an infant and the child at the centre are not in the text. The Commons file page places the drawing in the "
+             "Nasjonalmuseet in Oslo.",
+        note_es="&#9888; El museo cataloga este dibujo como <em>La visi&oacute;n de san Pedro</em>, pero la mayor parte de la hoja es una curtidur&iacute;a: "
+                "cueros cuelgan de las vigas y hombres trabajan pieles en los bancos. <a href=\"acts-9.es.html#v9-43\">Hechos 9:43</a> llama curtidor al anfitri&oacute;n de Pedro "
+                "y <a href=\"acts-10.es.html#v10-6\">10:6</a> pone su casa junto al mar, y por la puerta se ve un puerto. "
+                "Este cap&iacute;tulo cuenta de nuevo la visi&oacute;n en la azotea (<a href=\"acts-11.es.html#v11-5\">vv. 5&ndash;10</a>) y la llegada de tres varones a la casa "
+                "(<a href=\"acts-11.es.html#v11-11\">v. 11</a>); a la izquierda hay hombres en la puerta, y el texto dice solo que &laquo;se presentaron tres varones ante la casa&raquo;. "
+                "La visi&oacute;n misma es la peque&ntilde;a escena de arriba a la derecha, donde un hombre arrodillado mira hacia figuras dentro de un marco redondo; el griego "
+                "tiene a Pedro en una azotea (<a href=\"acts-10.es.html#v10-9\">10:9</a>), no arrodillado, y esta p&aacute;gina no dice qu&eacute; son las figuras. La mujer "
+                "con un beb&eacute; y el ni&ntilde;o del centro no est&aacute;n en el texto. La p&aacute;gina del archivo en Commons sit&uacute;a el dibujo en el "
+                "Nasjonalmuseet de Oslo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_Saint_Peter%27s_Vision_-_NG.K%26H.B.15604_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+    )],
     "acts10": [dict(
         file="fetti-peters-vision-sheet.jpg",
         title="Peter\u2019s Vision of a Sheet with Animals",
@@ -29402,10 +29438,6 @@ del _slug, _PRE_ENFORCEMENT_BACKLOG
 ART_SKIPPED['acts4'] = ("Searched Wikimedia Commons on 2026-10-04 for Peter and John before the Sanhedrin, the "
                         "shaken room, and Barnabas laying the price of his field at the apostles' feet; every hit was a "
                         "scanned book or sermon PDF, and no public-domain painting of the chapter's scenes turned up.")
-ART_SKIPPED['acts11'] = ("Searched Wikimedia Commons on 2026-10-05 for Barnabas fetching Saul to Antioch, Peter answering the "
-                         "circumcised party, the prophet Agabus and Antioch on the Orontes; the paintings that surfaced (Paul and "
-                         "Barnabas at Lystra) illustrate Acts 14, the Antioch mosaics are Roman floors of other subjects "
-                         "photographed under the photographer's own licence, and no public-domain image of this chapter's scenes turned up.")
 # ---- Numbers 34: the borders of Canaan ----
 
 ENCYCLOPEDIA_ES["high-priest"] = ("El sumo sacerdote",
