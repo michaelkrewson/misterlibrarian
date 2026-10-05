@@ -7,6 +7,22 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Bitcoin Didn't Start in 2008</title>
+    <link>https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>The whitepaper is nine pages and cites eight sources. Behind those eight sits a thirty-four-year pile of other people's work, from TCP/IP in 1974 to Hal Finney in 2004. Here is the whole stack in two minutes of video.</description>
+    <category>bitcoin</category>
+    <category>history</category>
+    <category>cryptography</category>
+    <category>cypherpunks</category>
+    <category>hashcash</category>
+    <category>b-money</category>
+    <category>bit gold</category>
+    <category>whitepaper</category>
+    <category>satoshi nakamoto</category>
+  </item>
+  <item>
     <title>"I Am the House," Said Treasury. The Bond Market Took the Other Side.</title>
     <link>https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</guid>
@@ -466,24 +482,6 @@
     <category>credit rating</category>
     <category>preferred stock</category>
     <category>arbitrageur</category>
-  </item>
-  <item>
-    <title>Eleven Percent for a Hole in Glass</title>
-    <link>https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html</guid>
-    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Intel jumped in Monday premarket and closed up about 11 percent on reports that it will work with Taiwan's AU Optronics on Micro LED packaging built into glass substrates — embedding chips in glass and wiring them with through-glass vias, aimed at co-packaged optics for AI datacenters. The engineering is real and genuinely important. The announcement is not an announcement: it came from a Taiwanese newspaper, Intel declined to comment, and nobody has put a contract, a date or a dollar figure on the record.</description>
-    <category>intel</category>
-    <category>au optronics</category>
-    <category>auo</category>
-    <category>co-packaged optics</category>
-    <category>advanced packaging</category>
-    <category>glass substrates</category>
-    <category>micro led</category>
-    <category>semiconductors</category>
-    <category>ai datacenters</category>
-    <category>intel foundry</category>
-    <category>taiwan</category>
   </item>
 </channel>
 </rss>
