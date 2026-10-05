@@ -1,38 +1,38 @@
 {
- "generated": "2026-10-05 06:47 UTC",
+ "generated": "2026-10-05 15:49 UTC",
  "fx": {
   "base": "USD",
-  "date": "2026-10-02",
+  "date": "2026-10-05",
   "rates": {
-   "AUD": 1.4411,
-   "BRL": 5.2214,
-   "CAD": 1.424,
-   "CHF": 0.82664,
+   "AUD": 1.4367,
+   "BRL": 4.9847,
+   "CAD": 1.4253,
+   "CHF": 0.83104,
    "CNY": 6.7046,
-   "CZK": 21.8,
-   "DKK": 6.658,
-   "EUR": 0.89087,
-   "GBP": 0.75753,
-   "HKD": 7.8471,
-   "HUF": 328.89,
-   "IDR": 17950,
-   "ILS": 3.0653,
-   "INR": 96.32,
-   "ISK": 122.05,
-   "JPY": 157.67,
-   "KRW": 1348.28,
-   "MXN": 18.335,
-   "MYR": 4.0845,
-   "NOK": 9.6494,
-   "NZD": 1.7819,
-   "PHP": 62.597,
-   "PLN": 3.8998,
-   "RON": 4.7651,
-   "SEK": 10.0579,
-   "SGD": 1.2798,
-   "THB": 33.595,
-   "TRY": 49.145,
-   "ZAR": 16.734
+   "CZK": 21.828,
+   "DKK": 6.6713,
+   "EUR": 0.89254,
+   "GBP": 0.75616,
+   "HKD": 7.8476,
+   "HUF": 328.28,
+   "IDR": 17913,
+   "ILS": 3.0623,
+   "INR": 96.3,
+   "ISK": 122.28,
+   "JPY": 158.23,
+   "KRW": 1343.98,
+   "MXN": 18.1498,
+   "MYR": 4.087,
+   "NOK": 9.6015,
+   "NZD": 1.7885,
+   "PHP": 62.673,
+   "PLN": 3.9089,
+   "RON": 4.7629,
+   "SEK": 10.0433,
+   "SGD": 1.2803,
+   "THB": 33.695,
+   "TRY": 49.157,
+   "ZAR": 16.6247
   }
  },
  "money_supply": {
@@ -72,13 +72,13 @@
     "m2_date": "2026-08",
     "m3": 17628.99235301954,
     "m3_date": "2026-08",
-    "usd_m0": 4453.848485188636,
-    "usd_m1": 12675.968088212578,
-    "usd_m2": 18454.993953343248,
-    "usd_m3": 19788.512749356854,
-    "broad_usd": 19788.512749356854,
+    "usd_m0": 4445.515046944675,
+    "usd_m1": 12652.250533024784,
+    "usd_m2": 18420.463467424317,
+    "usd_m3": 19751.487163622405,
+    "broad_usd": 19751.487163622405,
     "broad_yoy_pct": 4.002702042669748,
-    "volatility_pct": 5.399706064107908,
+    "volatility_pct": 5.391802554826004,
     "turnover_usd": 2774400000000.0,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
    },
@@ -89,19 +89,19 @@
     "source": "Bank of Canada Valet API — M0 (notes in circulation + settlement balances of Payments Canada members, from the Bank's own balance sheet, not seasonally adjusted), M1++, M2, M3 (gross, seasonally adjusted); millions of Canadian dollars. Canada has no officially published \"M0\" aggregate — this is the standard central-bank-money construction (currency + bank reserves), the same definition this board applies to the US and euro-area M0 cells.",
     "m0": 199.37,
     "m0_date": "2026-08-01",
-    "usd_m0": 140.00702247191012,
+    "usd_m0": 139.87932365116117,
     "m1": 2424.596,
     "m1_date": "2026-07-01",
-    "usd_m1": 1702.6657303370787,
+    "usd_m1": 1701.1127481933627,
     "m2": 2851.926,
     "m2_date": "2026-07-01",
-    "usd_m2": 2002.7570224719102,
+    "usd_m2": 2000.9303304567459,
     "m3": 4081.159,
     "m3_date": "2026-07-01",
-    "usd_m3": 2865.982443820225,
-    "broad_usd": 2865.982443820225,
+    "usd_m3": 2863.3684136672982,
+    "broad_usd": 2863.3684136672982,
     "broad_yoy_pct": 5.064228015246464,
-    "volatility_pct": 4.304475798814076,
+    "volatility_pct": 4.29686612344082,
     "turnover_usd": 556800000000.0
    },
    {
@@ -111,19 +111,19 @@
     "source": "Swiss National Bank Data Portal — monetary base M0 (banknotes in circulation + sight deposit accounts of domestic banks at the SNB, not seasonally adjusted, from the SNB's own \"snbmoba\" cube) + monetary aggregates M1/M2/M3 (CHF millions)",
     "m0": 503.948,
     "m0_date": "2026-08",
-    "usd_m0": 609.6341817477983,
+    "usd_m0": 606.406430496727,
     "m1": 777.303,
     "m1_date": "2026-08",
-    "usd_m1": 940.3162198780606,
+    "usd_m1": 935.3376492106277,
     "m2": 1123.976,
     "m2_date": "2026-08",
-    "usd_m2": 1359.6922481370368,
+    "usd_m2": 1352.4932614555257,
     "m3": 1238.158,
     "m3_date": "2026-08",
-    "usd_m3": 1497.8200909706763,
-    "broad_usd": 1497.8200909706763,
+    "usd_m3": 1489.8897766653831,
+    "broad_usd": 1489.8897766653831,
     "broad_yoy_pct": 3.501377613118084,
-    "volatility_pct": 6.919180883070104,
+    "volatility_pct": 6.924577682667158,
     "turnover_usd": 614400000000.0
    },
    {
@@ -131,21 +131,21 @@
     "flag": "🇧🇷",
     "currency": "BRL",
     "source": "Banco Central do Brasil SGS API — série 1788 \"Base monetária restrita\" for M0 (the Bank's own definition: moeda em circulação e as reservas bancárias, currency in circulation + bank reserves — a single ready-made series, unlike Canada/Switzerland's two-series constructions) + Meios de pagamento M1/M2/M3 (thousands of reais)",
-    "m0": 432.655492,
-    "m0_date": "2026-08-01",
-    "usd_m0": 82.86197035277894,
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
     "m1": 647.897498,
     "m1_date": "2026-08-01",
-    "usd_m1": 124.08501513004175,
+    "usd_m1": 129.9772299235661,
     "m2": 7743.891471,
     "m2_date": "2026-08-01",
-    "usd_m2": 1483.1063452330793,
-    "m3": null,
-    "m3_date": null,
-    "usd_m3": null,
-    "broad_usd": 1483.1063452330793,
-    "broad_yoy_pct": 10.29640538049945,
-    "volatility_pct": 9.339363567545895,
+    "usd_m2": 1553.5321024334462,
+    "m3": 14174.654364,
+    "m3_date": "2026-08-01",
+    "usd_m3": 2843.6323879069955,
+    "broad_usd": 2843.6323879069955,
+    "broad_yoy_pct": 10.607306846745978,
+    "volatility_pct": 10.384704897787106,
     "turnover_usd": 86400000000.00002
    },
    {
@@ -155,19 +155,19 @@
     "source": "Bank of England IADB — M0 (Notes & Coin in circulation, monthly average, + Reserve Balances at the Bank of England, both not seasonally adjusted: the Bank discontinued its own \"M0\" label in 2006 and replaced it with exactly these two series, published to be read together, matching its own M0 definition of currency + banks' operational deposits at the Bank) + M2 (\"Retail M4\", the Bank's own parenthetical equivalence for this concept in its M4 documentation — the household/business retail slice of M4 as against wholesale deposits, NOT a classic M1-plus-savings-deposits M2, seasonally adjusted) + M4 (shown in the M3 column: the UK discontinued M1/M2/M3-class reporting in 2006, so M4 is its own broadest published aggregate today, seasonally adjusted); no current UK M1-class series was found — the Bank's own M0 and M4 detail pages define those two but neither defines a current M1; £ millions",
     "m0": 746.889,
     "m0_date": "2026-08-31",
-    "usd_m0": 985.9530315631064,
+    "usd_m0": 987.7393673296656,
     "m1": null,
     "m1_date": null,
     "usd_m1": null,
     "m2": 2505.159,
     "m2_date": "2026-08-31",
-    "usd_m2": 3307.0096233812524,
+    "usd_m2": 3313.0012166737197,
     "m3": 3306.462,
     "m3_date": "2026-08-31",
-    "usd_m3": 4364.7934735258,
-    "broad_usd": 4364.7934735258,
+    "usd_m3": 4372.701544646636,
+    "broad_usd": 4372.701544646636,
     "broad_yoy_pct": 4.148408068641407,
-    "volatility_pct": 6.0740081523215705,
+    "volatility_pct": 6.065028723857218,
     "turnover_usd": 979199999999.9999
    },
    {
@@ -177,19 +177,19 @@
     "source": "Statistics Norway StatBank — base money M0 + monetary aggregates M1/M2/M3 (NOK millions)",
     "m0": 141.409,
     "m0_date": "2026M08",
-    "usd_m0": 14.654693556076024,
+    "usd_m0": 14.727802947456127,
     "m1": 3124.44,
     "m1_date": "2026M08",
-    "usd_m1": 323.79629821543307,
+    "usd_m1": 325.41165442899546,
     "m2": 3597.475,
     "m2_date": "2026M08",
-    "usd_m2": 372.8185172135055,
+    "usd_m2": 374.6784356610946,
     "m3": 3617.42,
     "m3_date": "2026M08",
-    "usd_m3": 374.88548510788235,
-    "broad_usd": 374.88548510788235,
+    "usd_m3": 376.7557152528251,
+    "broad_usd": 376.7557152528251,
     "broad_yoy_pct": 5.01926242477202,
-    "volatility_pct": 8.203571522801743,
+    "volatility_pct": 8.201570044766605,
     "turnover_usd": 124800000000.00002
    },
    {
@@ -211,7 +211,7 @@
     "usd_m3": null,
     "broad_usd": 53024.78895086955,
     "broad_yoy_pct": null,
-    "volatility_pct": 2.096746572335675,
+    "volatility_pct": 2.0927907639525762,
     "turnover_usd": 816000000000.0
    },
    {
@@ -221,19 +221,19 @@
     "source": "Reserve Bank of India — Weekly Statistical Supplement: \"Reserve Money: Components and Sources\" for M0, \"Money Stock: Components and Sources\" for M3 (M1 has no row of its own there — derived by summing that same table's own component rows: Currency with the Public + Demand Deposits with Banks + 'Other' Deposits with the RBI, the RBI's own textbook M1 definition). Not RBI's DBIE portal (a JS app with no confirmed keyless API) — these are separate, permanent, server-rendered WSS release pages, crawled for the latest release each time. No M2 published (needs post office savings-bank data RBI doesn't report on this cadence). ₹ Crore.",
     "m0": 52718.73,
     "m0_date": "Sep 15, 2026",
-    "usd_m0": 547.3290074750831,
+    "usd_m0": 547.4426791277259,
     "m1": 78250.13,
     "m1_date": "Sep 15, 2026",
-    "usd_m1": 812.3975290697675,
+    "usd_m1": 812.566251298027,
     "m2": null,
     "m2_date": null,
     "usd_m2": null,
     "m3": 330674.46,
     "m3_date": "Sep 15, 2026",
-    "usd_m3": 3433.0820182724256,
-    "broad_usd": 3433.0820182724256,
+    "usd_m3": 3433.795015576324,
+    "broad_usd": 3433.795015576324,
     "broad_yoy_pct": null,
-    "volatility_pct": 5.239843086517518,
+    "volatility_pct": 5.229895704472062,
     "turnover_usd": 182400000000.0
    },
    {
@@ -243,19 +243,19 @@
     "source": "Bank of Japan — \"Main Time-series Statistics\" CSV exports (stat-search.boj.or.jp/ssi/mtshtml/csv/), not the REST API (real and keyless, but its exact M1/M2/M3/monetary-base FAME mnemonics couldn't be pinned down from its own documentation — these codes were instead found by hand from the Monetary Base and Money Stock pages' own CSV downloads, whose \"Series code\" header row names them itself). md01 = Monetary Base (M0, Average Amounts Outstanding); md02 = Money Stock M1/M2/M3 (same measure). 100 million yen.",
     "m0": 532846.4,
     "m0_date": "2026/09",
-    "usd_m0": 3379.5040273989985,
+    "usd_m0": 3367.543449409088,
     "m1": 1087467.8,
     "m1_date": "2026/08",
-    "usd_m1": 6897.112957442761,
+    "usd_m1": 6872.70302723883,
     "m2": 1296389.5,
     "m2_date": "2026/08",
-    "usd_m2": 8222.16972157037,
+    "usd_m2": 8193.070214245086,
     "m3": 1639987.8,
     "m3_date": "2026/08",
-    "usd_m3": 10401.394050865734,
-    "broad_usd": 10401.394050865734,
+    "usd_m3": 10364.581937685649,
+    "broad_usd": 10364.581937685649,
     "broad_yoy_pct": 1.2210684580460152,
-    "volatility_pct": 8.13422937526182,
+    "volatility_pct": 8.124932594680192,
     "turnover_usd": 1612800000000.0
    },
    {
@@ -265,19 +265,19 @@
     "source": "Reserve Bank of Australia — \"D3 Monetary Aggregates\" CSV (rba.gov.au/statistics/tables/csv/d3-data.csv), already in A$ billion. Supersedes an earlier finding that this table was xlsx-only (a spreadsheet-parsing dependency this stdlib-only fetcher deliberately avoids) — the RBA has since added a genuine CSV export for it. M0 = \"Money base\" (DMAMMB, not seasonally adjusted — no SA variant is published); M1/M3 use the seasonally-adjusted series (DMAM1S/DMAM3S). No M2 — Australia's own convention skips straight from M1 to M3 (it separately publishes an even-broader \"Broad money\" aggregate, but M3 is this economy's own real M3, not a substitution the way the UK's M4 is).",
     "m0": 304.9,
     "m0_date": "31/08/2026",
-    "usd_m0": 211.57449170772324,
+    "usd_m0": 212.22245423540053,
     "m1": 2013.4,
     "m1_date": "31/08/2026",
-    "usd_m1": 1397.127194504198,
+    "usd_m1": 1401.405999860792,
     "m2": null,
     "m2_date": null,
     "usd_m2": null,
     "m3": 3495.8,
     "m3_date": "31/08/2026",
-    "usd_m3": 2425.7858580251195,
-    "broad_usd": 2425.7858580251195,
+    "usd_m3": 2433.2150066123754,
+    "broad_usd": 2433.2150066123754,
     "broad_yoy_pct": 6.761544099682393,
-    "volatility_pct": 7.700546642149771,
+    "volatility_pct": 7.690780813607177,
     "turnover_usd": 585600000000.0
    },
    {
@@ -290,16 +290,16 @@
     "usd_m0": null,
     "m1": 1703.4438,
     "m1_date": "2026M08",
-    "usd_m1": 255.84917392610393,
+    "usd_m1": 255.3391093190233,
     "m2": 1951.2829,
     "m2_date": "2026M08",
-    "usd_m2": 293.07343045959743,
+    "usd_m2": 292.48915503724913,
     "m3": 2155.8502000000003,
     "m3_date": "2026M08",
-    "usd_m3": 323.79846800841096,
-    "broad_usd": 323.79846800841096,
+    "usd_m3": 323.1529387075983,
+    "broad_usd": 323.1529387075983,
     "broad_yoy_pct": 7.476084286448059,
-    "volatility_pct": 5.397081721968753,
+    "volatility_pct": 5.389561171322104,
     "turnover_usd": 67199999999.99999
    },
    {
@@ -312,16 +312,16 @@
     "usd_m0": null,
     "m1": 4162.753,
     "m1_date": "2026M08",
-    "usd_m1": 413.8789409320037,
+    "usd_m1": 414.48059900630267,
     "m2": 5129.814,
     "m2_date": "2026M08",
-    "usd_m2": 510.02833593493676,
+    "usd_m2": 510.7697669092828,
     "m3": 5184.7,
     "m3_date": "2026M08",
-    "usd_m3": 515.4853398820827,
-    "broad_usd": 515.4853398820827,
+    "usd_m3": 516.2347037328368,
+    "broad_usd": 516.2347037328368,
     "broad_yoy_pct": null,
-    "volatility_pct": 9.091071475024128,
+    "volatility_pct": 9.07493895365588,
     "turnover_usd": null
    },
    {
@@ -334,16 +334,16 @@
     "usd_m0": null,
     "m1": 316.7824,
     "m1_date": "2026Jul",
-    "usd_m1": 247.5249257696515,
+    "usd_m1": 247.42825900179645,
     "m2": 890.9211,
     "m2_date": "2026Jul",
-    "usd_m2": 696.1408813877168,
+    "usd_m2": 695.869015074592,
     "m3": 907.5333,
     "m3_date": "2026Jul",
-    "usd_m3": 709.1211908110643,
-    "broad_usd": 709.1211908110643,
+    "usd_m3": 708.8442552526752,
+    "broad_usd": 708.8442552526752,
     "broad_yoy_pct": null,
-    "volatility_pct": 3.514455577159639,
+    "volatility_pct": 3.507858449213779,
     "turnover_usd": null
    },
    {
@@ -353,19 +353,19 @@
     "source": "Reserve Bank of New Zealand — hand-curated because the ENTIRE rbnz.govt.nz domain sits behind Cloudflare bot protection that 403s any non-browser request, confirmed across four separate page/file paths (the statistics page, the site search, the data-file index, and a direct .xlsx media URL) — Michael downloaded the actual files by hand through a real browser (from the \"Data file index\" page, rbnz.govt.nz/statistics/series/data-file-index-page — exact per-file URLs pending, to be filled in once confirmed) and Claude read them locally with pandas/openpyxl (a one-off manual-extraction tool, not a fetcher dependency — the automated fetcher stays stdlib-only and can't reach this domain regardless). M0 = table R1 \"Reserve Bank Balance Sheet (Annual Report)\" (file hr1.xlsx), Deposits (series RBNZ.MRL121, banks' settlement balances) + Currency in Circulation (RBNZ.MRL124) — the standard currency+bank-reserves construction used everywhere else on this board. M1 + M3 = table C50 \"Money & credit aggregates (depository corporations)\" (file hc50.xlsx): \"A. Narrow money (M1)\" (series MCA.MDB.M1) and \"Broad money (A+B)\" (series MCA.MDB.BM, the RBNZ's own headline broadest aggregate — no separate M2 is published). Refresh periodically the same way, same posture as China's hand-curated entry. NZD billion.",
     "m0": 65.669,
     "m0_date": "2026-07-31",
-    "usd_m0": 36.85335877434199,
+    "usd_m0": 36.717360916969525,
     "m1": 138.369,
     "m1_date": "2026-07-31",
-    "usd_m1": 77.65250575228688,
+    "usd_m1": 77.36594911937378,
     "m2": null,
     "m2_date": null,
     "usd_m2": null,
     "m3": 458.49,
     "m3_date": "2026-07-31",
-    "usd_m3": 257.30400134687693,
-    "broad_usd": 257.30400134687693,
+    "usd_m3": 256.35448700027956,
+    "broad_usd": 256.35448700027956,
     "broad_yoy_pct": null,
-    "volatility_pct": 8.044747397302661,
+    "volatility_pct": 8.036835655070346,
     "turnover_usd": null
    },
    {
@@ -464,7 +464,7 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 124808.66046609578,
+  "total_broad_usd_b": 126101.60229719883,
   "n_resolved": 15,
   "n_total": 20
  },
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1092471888324.6084
+    "usd": 1089177189310.8224
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 450663123734.05396
+    "usd": 449304004689.267
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 329366908910.84955
+    "usd": 328373597465.8965
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 327352021621.42755
+    "usd": 326364786714.67773
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 310695620028.87244
+    "usd": 309758617837.93585
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 308815058558.7452
+    "usd": 307883727803.46497
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 139698852066.59198
+    "usd": 139277545417.8354
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 118206720979.424
+    "usd": 117850230738.16841
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 113639643123.40079
+    "usd": 113296926368.73918
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 85296895252.198
+    "usd": 85039655134.92833
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 82207401408.4176
+    "usd": 81959478649.72621
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 78177626829.5736
+    "usd": 77941857147.28865
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 56954147380.9952
+    "usd": 56782383901.11751
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 55879540826.6368
+    "usd": 55711018167.134155
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 51446788789.908394
+    "usd": 51291634514.45284
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3600872237835.7036,
+  "total_usd": 3590012653861.455,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4178.0,
-  "price_as_of": "2026-10-05 06:45 UTC",
-  "world_market_value_usd": 29049973309789.92,
+  "price_usd_oz": 4165.39990234375,
+  "price_as_of": "2026-10-05 15:47 UTC",
+  "world_market_value_usd": 28962363807488.625,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,26 +2003,26 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 85796.203125,
-  "market_cap_usd": 1723955123338.7695,
-  "btc_rank": 11,
-  "volatility_pct": 37.190509685304995,
-  "turnover_usd": 22648253797.067413,
-  "broad_yoy_pct": 0.8179840788907665,
+  "price_usd": 85373.5625,
+  "market_cap_usd": 1715482491671.0938,
+  "btc_rank": 12,
+  "volatility_pct": 37.19911814610018,
+  "turnover_usd": 31175069061.426052,
+  "broad_yoy_pct": 0.8179746651180991,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
-    "usd": 124808660466095.78,
+    "usd": 126101602297198.83,
     "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 29049973309789.92,
+    "usd": 28962363807488.625,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1723955123338.7695,
+    "usd": 1715482491671.0938,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
