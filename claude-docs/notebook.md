@@ -103,3 +103,7 @@ The routine does not edit the running page itself; it reports in its final messa
 looks behind, and a session on this box or the Mac updates the page. When you create a running
 page, add its row; when a story is over, set `active` to `false`.
 
+A row's `href` may point at another publication with a relative path (the 2026-10-05 Bessent/eurozone
+row points at `../finance/…`). That entry is NOT rewritten in place; the row only keeps the rundown
+linking to it while the story is in the news. Set `active` to `false` once it goes quiet.
+
