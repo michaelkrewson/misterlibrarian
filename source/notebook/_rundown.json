@@ -1,5 +1,5 @@
 {
- "date": "2026-10-05",
+ "date": "2026-10-06",
  "title": "The rundown",
  "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
  "sections": [
@@ -7,83 +7,15 @@
    "label": "The world",
    "items": [
     {
-     "text": "About 200 people are under observation in Russia's Irkutsk region after an Anti-Plague Institute lab worker died of what officials call \"pneumonia of unknown etiology\"; the WHO says no cause is officially confirmed and the risk to the general public appears low, and no contact has been reported sick.",
-     "href": "siberia-plague-death-what-we-know.html",
-     "source_href": "https://www.newsweek.com/russias-response-to-suspected-plague-outbreak-under-scrutiny-12523852",
+     "text": "Nearly 400 schools across France have shut down and roughly 2,000 people — 90% of them minors — have been taken into police custody since high-school student protests over teacher shortages and crumbling buildings turned violent, with more than 100 schools reporting serious damage.",
+     "href": "",
+     "source_href": "https://www.freepressjournal.in/world/france-protests-escalate-as-nearly-400-schools-shut-students-clash-with-police",
      "breaking": false
     },
     {
-     "text": "Brazil's presidential race heads to an October 25 runoff after Sunday's first round, with Senator Flávio Bolsonaro edging ahead of incumbent Luiz Inácio Lula da Silva 47% to 45% with more than 99% of votes counted.",
+     "text": "Yemen's Houthis completed a takeover of the Bab al-Mandab strait area in September, seizing a key Red Sea island and prompting the Saudi-led coalition to move to protect commercial shipping through one of the world's most important chokepoints.",
      "href": "",
-     "source_href": "https://edition.cnn.com/2026/10/05/americas/brazil-election-runoff-takeaways-intl-hnk",
-     "breaking": false
-    },
-    {
-     "text": "Russia struck a bridge in Kyiv on October 4 as German Chancellor Friedrich Merz made an unannounced visit to the Ukrainian capital, with air-raid sirens sounding during his trip.",
-     "href": "",
-     "source_href": "https://www.aljazeera.com/news/2026/10/4/russian-strike-hits-kyiv-bridge-as-german-chancellor-visits-ukraine",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Science",
-   "items": [
-    {
-     "text": "The 2026 Nobel Prize in Physiology or Medicine was awarded today to Karl Deisseroth, Peter Hegemann and Georg Nagel for discovering light-gated ion channels, the basis of optogenetics, which lets researchers switch individual brain cells on and off with light.",
-     "href": "",
-     "source_href": "https://www.nobelprize.org/prizes/medicine/2026/summary/",
-     "breaking": false
-    },
-    {
-     "text": "NASA astronaut Jessica Watkins commanded SpaceX's Crew-13 to the International Space Station on October 1 aboard Dragon Grace, becoming the first active NASA astronaut to fly twice on a Dragon spacecraft, for a planned six-month stay.",
-     "href": "",
-     "source_href": "https://www.ksat.com/news/world/2026/10/01/spacex-launches-4-astronauts-on-a-fast-track-to-the-international-space-station/",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Technology",
-   "items": [
-    {
-     "text": "Google released Gemini 4 Argon on September 30 in a limited rollout to vetted cybersecurity teams, with the model beating GPT-6 Astra and Claude Opus 5.5 on 13 of 19 of Google's own benchmarks and posting a 15% hallucination rate versus Astra's 51%.",
-     "href": "",
-     "source_href": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release",
-     "breaking": false
-    },
-    {
-     "text": "OpenAI unveiled GPT-6.1 Sol at its September 29 DevDay, pricing it at roughly a fifth of GPT-6 Astra's tokens while cutting its factual-error rate from 11.4% to 7.7%, days after reports it had shelved a more capable Astra successor over its own safety-test results.",
-     "href": "",
-     "source_href": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Health & medicine",
-   "items": [
-    {
-     "text": "The FDA approved AbbVie's Juvmo (tavapadon) on September 28 as the first selective D1/D5 receptor agonist for adult Parkinson's disease, taken once daily with or without levodopa.",
-     "href": "",
-     "source_href": "https://news.abbvie.com/2026-09-28-U-S-FDA-Approves-AbbVies-JUVMO-TM-tavapadon-for-Parkinsons-Disease",
-     "breaking": false
-    },
-    {
-     "text": "A multinational study presented at EADV 2026 found nail detachment in 39% of 575 GLP-1 users versus 9% of 1,329 matched non-users, the first controlled look at the drugs' effect on nail health.",
-     "href": "",
-     "source_href": "https://medicalxpress.com/news/2026-09-detachment-common-glp-users.html",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Bitcoin & crypto",
-   "items": [
-    {
-     "text": "Bitcoin traded around $86,377 on CoinDesk's index early Monday, up about 2% on the day but still roughly a third below the $126,210.50 all-time high it set almost exactly a year ago.",
-     "href": "",
-     "source_href": "https://www.coindesk.com/price/bitcoin",
+     "source_href": "https://www.nst.com.my/amp/business/corporate/2026/09/1530630/yemens-houthis-complete-takeover-bab-al-mandab-area-govt",
      "breaking": false
     }
    ]
@@ -92,15 +24,64 @@
    "label": "Business / macro & markets",
    "items": [
     {
-     "text": "Wall Street closed out last week higher — the Dow up 0.5% to 51,176.96, the S&P 500 up 0.7% to 7,722.72, the Nasdaq up 1.2% to 27,190.86 — before futures slipped Monday morning on rising bond yields and eurozone jitters.",
-     "href": "../finance/i-am-the-house-and-the-bond-market-disagreed.html",
-     "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-futures-081220790.html",
-     "breaking": false
-    },
-    {
-     "text": "The Kobeissi Letter reports that shipping 2 million barrels of crude from West Africa to China now costs $27.22 a barrel, up from about $6.50 in July (+319%), as buyers scramble for physical crude with the Strait of Hormuz still closed; the freight figure is the newsletter's own and we haven't confirmed it independently.",
+     "text": "Wall Street closed higher Monday — the Dow up 0.2% to 51,267.90, the S&P 500 up 0.7% to 7,773.99, and the Nasdaq up 1.05% to a record 27,477.31 — as Nvidia hit an all-time high and tech strength outweighed concerns over bond yields and oil prices.",
      "href": "",
-     "source_href": "https://x.com/KobeissiLetter/status/2107178003767705633",
+     "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-treasury-bond-081220790.html",
+     "breaking": false
+    }
+   ]
+  },
+  {
+   "label": "Science",
+   "items": [
+    {
+     "text": "The 2026 Nobel Prize in Physics went to Francis Halzen, 82, of the University of Wisconsin–Madison, for proposing and helping build the IceCube Neutrino Observatory, the detector buried under Antarctic ice that discovered the first high-energy neutrinos from beyond our solar system.",
+     "href": "",
+     "source_href": "https://www.france24.com/en/science/20261006-nobel-prize-in-physics-awarded-to-francis-halzen-for-ice-research",
+     "breaking": false
+    }
+   ]
+  },
+  {
+   "label": "Space",
+   "items": [
+    {
+     "text": "A crescent Moon occults Jupiter before dawn today across the eastern and central U.S. and southern Canada — the best Jupiter occultation visible from North America since 2004 — with the magnitude -1.9 planet vanishing behind the Moon's bright limb and reappearing about 67 minutes later.",
+     "href": "",
+     "source_href": "https://www.astronomy.com/observing/the-moon-occults-jupiter-october-6/",
+     "breaking": false
+    }
+   ]
+  },
+  {
+   "label": "Bitcoin & crypto",
+   "items": [
+    {
+     "text": "Bitcoin held near $85,500 Tuesday after more than $172 million in leveraged positions were liquidated over 24 hours and U.S. spot bitcoin ETFs slipped back into net outflows ahead of Wednesday's Fed minutes.",
+     "href": "",
+     "source_href": "https://www.cryptotimes.io/2026/10/06/bitcoin-price-today-btc-holds-85500-as-172m-liquidations-etf-outflows-hit-before-fed-minutes/",
+     "breaking": false
+    }
+   ]
+  },
+  {
+   "label": "Health & medicine",
+   "items": [
+    {
+     "text": "PAHO's latest regional measles report counts 53,957 confirmed cases and 68 deaths across 17 countries in the Americas as of late September, though the newest two-week tally of 709 cases was a 43% drop from the prior period.",
+     "href": "",
+     "source_href": "https://www.paho.org/sites/default/files/2026/09/pahomeaslessitrep12eng.pdf",
+     "breaking": false
+    }
+   ]
+  },
+  {
+   "label": "Arts & culture",
+   "items": [
+    {
+     "text": "The 2026 Booker Prize shortlist is six novels — Marlon James's The Disappearers, Douglas Stuart's John of John, Elizabeth Strout's The Things We Never Say, M. John Harrison's The End of Everything, Luke Kennard's Black Bag and Rebecca Perry's May We Feed the King — with the winner announced November 9.",
+     "href": "",
+     "source_href": "https://thebookerprizes.com/media-centre/press-releases/shocking-understated-discomfiting-hilarious-shortlist-for-booker-prize",
      "breaking": false
     }
    ]
