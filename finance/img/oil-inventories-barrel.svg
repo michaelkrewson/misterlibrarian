@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img"
+     aria-label="A large oil barrel representing about 8.4 billion barrels of total global oil inventories in early 2026, per JPMorgan. Only a thin slice at the bottom, about 0.8 billion barrels or roughly 9.5 percent, could be drawn without operational stress; by April 23 about 0.5 billion of that remained. A separate note says Aramco CEO Amin Nasser on October 5 put commercial inventories at under 6 billion barrels, most not practically available, which is a different measure and is not drawn on the barrel.">
+  <defs>
+    <clipPath id="b"><path d="M120,70 Q60,235 120,400 L300,400 Q360,235 300,70 Z"/></clipPath>
+  </defs>
+  <rect width="900" height="440" fill="#0a0f1a"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">The barrel is mostly not spendable <tspan fill="#94a3b8">— global oil inventories, JPMorgan's early-2026 view</tspan></text>
+
+  <!-- barrel body -->
+  <path d="M120,70 Q60,235 120,400 L300,400 Q360,235 300,70 Z" fill="#2a3446"/>
+  <g clip-path="url(#b)">
+    <!-- usable sliver: 0.8 of 8.4 = 9.5% of 330px = 31px -->
+    <rect x="40" y="369" width="340" height="31" fill="#d9a441"/>
+    <!-- hoops -->
+    <g stroke="#0a0f1a" stroke-width="5" fill="none" opacity=".75">
+      <path d="M40,120 Q210,150 380,120"/>
+      <path d="M40,235 Q210,265 380,235"/>
+      <path d="M40,330 Q210,360 380,330"/>
+    </g>
+  </g>
+  <ellipse cx="210" cy="70" rx="90" ry="14" fill="#3a465c" stroke="#e8dfd2" stroke-opacity=".5"/>
+  <path d="M120,70 Q60,235 120,400 L300,400 Q360,235 300,70" fill="none" stroke="#e8dfd2" stroke-opacity=".55" stroke-width="2"/>
+  <ellipse cx="210" cy="400" rx="90" ry="10" fill="none" stroke="#e8dfd2" stroke-opacity=".35"/>
+
+  <!-- whole-barrel callout -->
+  <line x1="372" y1="150" x2="440" y2="150" stroke="rgba(255,255,255,.35)"/>
+  <g font-family="Georgia, serif" fill="#e8dfd2">
+    <text x="452" y="146" font-size="30" font-weight="bold">8.4 billion</text>
+    <text x="452" y="168" font-size="13.5">barrels of oil in the world's inventories</text>
+    <text x="452" y="186" font-size="12" fill="#94a3b8">early 2026, before the drawdown · 6.6 onshore + 1.8 afloat</text>
+  </g>
+
+  <!-- sliver callout -->
+  <line x1="318" y1="385" x2="440" y2="330" stroke="#d9a441" stroke-width="1.5"/>
+  <g font-family="Georgia, serif" fill="#e8dfd2">
+    <text x="452" y="326" font-size="30" font-weight="bold" fill="#d9a441">≈ 0.8 billion</text>
+    <text x="452" y="348" font-size="13.5">could be drawn without operational stress (≈ 9½%)</text>
+    <text x="452" y="366" font-size="12" fill="#94a3b8">about 0.5 billion of it still left by April 23, per the same account</text>
+  </g>
+
+  <!-- Nasser note -->
+  <rect x="452" y="206" width="400" height="88" rx="6" fill="rgba(255,255,255,.06)"/>
+  <g font-family="Georgia, serif" fill="#e8dfd2">
+    <text x="466" y="230" font-size="13" font-weight="bold">Not drawn here: Aramco's Nasser, Oct 5</text>
+    <text x="466" y="249" font-size="12.5">"less than six billion barrels of commercial</text>
+    <text x="466" y="266" font-size="12.5">inventories… the vast majority not practically available"</text>
+    <text x="466" y="284" font-size="11" fill="#94a3b8">A different measure (commercial only) — not a fill level.</text>
+  </g>
+  <text x="40" y="430" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">JPMorgan figures as reported by secondary outlets (May 2026). Sources in the entry.</text>
+</svg>
