@@ -319,3 +319,17 @@
      object → piece → live-animal → living-people escalation beat the false "every other").
 9. `python3 build.py` → commit → push. GitHub Pages rebuilds in ~30–90s; poll the live URL
    to confirm.
+
+## SBLGNT archive defects and `tools/sblgnt_corrections.json` (2026-10-06)
+
+The archived Greek (`source/originals/sblgnt/*.json`, a mirror of helloao's SBLGNT JSON) loses or splits
+letters wherever an apparatus footnote sits inside a word, and a few chapters end with stray markup
+(`‘p /’ ‘/book’`). Found while writing Acts 17: the archive printed `τὸ λόγον` at 17:11 (SBLGNT: `τὸν λόγον`).
+A letter-level comparison of all 7,927 archived NT verses against MorphGNT's SBLGNT found 53 verses that
+differ (about 29 with lost or split letters, e.g. `ἐρχόμε ον` for `ἐρχόμενον` at John 6:37, `τοῦ ον` for
+`τοῦτον` at Acts 5:31; the rest only trailing markup, and Mark 16:19 lost its first word `Ὁ`).
+`tools/sblgnt_corrections.json` holds the correct text for those verses; `tools/source_text.py` (readable output)
+and `tools/grk_search.py` apply it, and `--raw` still prints the archive exactly as stored (its sha256 stays in
+the manifest). Eight shipped Greek lines had the damage and were fixed with it: Mark 4:25, 9:50, 10:21, Luke 4:35,
+John 6:37, Acts 5:31, 15:3 and Philippians 4:23 (which printed the stray markup on the live page).
+When composing Greek lines from the archive, take them from `source_text.py` without `--raw`, not from the JSON.

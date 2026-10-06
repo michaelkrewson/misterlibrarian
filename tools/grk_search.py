@@ -35,7 +35,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from archive_sources import SBLGNT_BOOKS  # noqa: E402
-from source_text import fetch, verses  # noqa: E402
+from source_text import fetch, resolve, verses  # noqa: E402
 
 # SBLGNT apparatus sigla printed inline in the verse text.
 _SIGLA = re.compile(r"[⸀-⸅⸆-⸏]")
@@ -56,7 +56,7 @@ def bare(s: str) -> str:
 def chapter_verses(book: str, chapter: int) -> list[tuple[int, str]]:
     raw = fetch(book, chapter, quiet=True)
     out = []
-    for line in verses(raw, "sblgnt").split("\n"):
+    for line in verses(raw, "sblgnt", resolve(book, chapter)[1]).split("\n"):
         m = re.match(r"^(\d+)\s+(.*)$", line.strip())
         if m:
             out.append((int(m.group(1)), m.group(2)))
