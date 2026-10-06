@@ -32553,3 +32553,8 @@ CHAPTER_ART["acts17"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:V%26A_-_Raphael,_St_Paul_Preaching_in_Athens_(1515).jpg",
 )]
+
+_swap17("That the line is from the <em>Phaenomena</em> of Aratus, near the beginning, and that a close phrase stands in a hymn of Cleanthes, a Stoic, is reported, and neither poem has been opened here;",
+        "The line is the fifth of the <em>Phaenomena</em> of Aratus, read in the Greek (<em>tou gar kai genos eimen</em>, with <em>eimen</em> where Luke has <em>esmen</em>); that a close phrase stands in a hymn of Cleanthes, a Stoic, is reported, and that poem has not been opened here;")
+_swap17("Que la línea sea de los <em>Fenómenos</em> de Arato, cerca del comienzo, y que una frase cercana esté en un himno de Cleantes, un estoico, se informa, y ninguno de los dos poemas se ha abierto aquí;",
+        "La línea es el quinto verso de los <em>Fenómenos</em> de Arato, leído en griego (<em>tou gar kai genos eimen</em>, con <em>eimen</em> donde Lucas tiene <em>esmen</em>); que una frase cercana esté en un himno de Cleantes, un estoico, se informa, y ese poema no se ha abierto aquí;")
