@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1750 700" role="img" aria-label="A diagram titled The rule that never mentioned Lightning. Two columns. Left, the six tests in FinCEN's 2023 definition of crypto mixing: pooling funds from many people; code that coordinates a transaction's structure; splitting a payment across independent transactions; single-use wallets and addresses; swapping between types of digital asset; user-initiated delays. Right, where ordinary Lightning plumbing touches each test, in the author's reading: a service provider's liquidity serving many users; batched channel opens and splicing; multi-path payments; one-time invoices; swaps into other assets, only if used; and no close match for delays. A footer notes that the word Lightning appears zero times in the 2023 proposal and zero times in the 2026 withdrawal, and that the right-hand column is the author's reading, not FinCEN's. A timeline strip reads: proposed October 23, 2023; withdrawn October 6, 2026.">
+<rect width="1750" height="700" fill="#0a0f1a"/>
+<text x="875" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" fill="#e8c968" font-style="italic">The rule that never mentioned Lightning</text>
+<text x="875" y="90" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#94a3b8">FinCEN&#8217;s six-part definition of &#8220;mixing,&#8221; and where ordinary Lightning plumbing brushes against each part</text>
+<rect x="60" y="120" width="780" height="440" rx="14" fill="#0d1520" stroke="#e8865c" stroke-width="2"/>
+<rect x="910" y="120" width="780" height="440" rx="14" fill="#0d1520" stroke="#7fb8a4" stroke-width="2"/>
+<text x="450" y="160" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e8dfd2">THE 2023 DEFINITION</text>
+<text x="1300" y="160" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e8dfd2">LIGHTNING, IN MY READING</text>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#e8dfd2">
+<text x="90" y="222">1. Pooling funds from many people</text>
+<text x="90" y="288">2. Code that coordinates a transaction&#8217;s structure</text>
+<text x="90" y="354">3. Splitting a payment into independent pieces</text>
+<text x="90" y="420">4. Single-use wallets and addresses</text>
+<text x="90" y="486">5. Swapping between types of digital asset</text>
+<text x="90" y="540">6. User-initiated delays</text>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#7fb8a4">
+<text x="940" y="222">A provider&#8217;s liquidity serves many users</text>
+<text x="940" y="288">Batched channel opens, splicing</text>
+<text x="940" y="354">Multi-path payments</text>
+<text x="940" y="420">One-time invoices</text>
+<text x="940" y="486">Swaps into other assets, only if used</text>
+<text x="940" y="540" fill="#94a3b8" font-style="italic">No close match</text>
+</g>
+<g stroke="#2a3447" stroke-width="1">
+<line x1="90" y1="244" x2="810" y2="244"/><line x1="90" y1="310" x2="810" y2="310"/><line x1="90" y1="376" x2="810" y2="376"/><line x1="90" y1="442" x2="810" y2="442"/><line x1="90" y1="504" x2="810" y2="504"/>
+<line x1="940" y1="244" x2="1660" y2="244"/><line x1="940" y1="310" x2="1660" y2="310"/><line x1="940" y1="376" x2="1660" y2="376"/><line x1="940" y1="442" x2="1660" y2="442"/><line x1="940" y1="504" x2="1660" y2="504"/>
+</g>
+<text x="875" y="318" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e8c968">&#8594;</text>
+<line x1="150" y1="610" x2="1600" y2="610" stroke="#475569" stroke-width="2"/>
+<circle cx="150" cy="610" r="8" fill="#e8865c"/><circle cx="1600" cy="610" r="8" fill="#7fb8a4"/>
+<text x="150" y="590" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">Proposed &#183; October 23, 2023</text>
+<text x="1600" y="590" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">Withdrawn &#183; October 6, 2026</text>
+<text x="875" y="634" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#94a3b8">The word &#8220;Lightning&#8221; appears 0 times in the proposal and 0 times in the withdrawal.</text>
+<text x="875" y="668" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#94a3b8" font-style="italic">The right-hand column is my reading, not FinCEN&#8217;s.</text>
+</svg>

@@ -41,6 +41,23 @@
     <category>hedging</category>
   </item>
   <item>
+    <title>The Rule That Never Mentioned Lightning</title>
+    <link>https://mistertranslation.com/finance/the-rule-that-never-mentioned-lightning.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/the-rule-that-never-mentioned-lightning.html</guid>
+    <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+    <description>FinCEN withdrew its 2023 proposal to label crypto mixing a "primary money laundering concern." I read the withdrawal notice and the original proposal. Neither says the word Lightning, but the proposal's definition of mixing was written so broadly that a literal reading brushes against how Lightning works. Here is what the rule said, what it would have meant for Lightning service providers, what the withdrawal changes today, and what it leaves alone.</description>
+    <category>bitcoin</category>
+    <category>lightning</category>
+    <category>lsp</category>
+    <category>privacy</category>
+    <category>fincen</category>
+    <category>mixers</category>
+    <category>coinjoin</category>
+    <category>regulation</category>
+    <category>self custody</category>
+    <category>section 311</category>
+  </item>
+  <item>
     <title>Bitcoin Didn't Start in 2008</title>
     <link>https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</guid>
@@ -460,23 +477,6 @@
     <category>strive</category>
     <category>24-hour trading</category>
     <category>arbitrageur</category>
-  </item>
-  <item>
-    <title>Binance Rebuilt My Bitkey, Minus the Metal</title>
-    <link>https://mistertranslation.com/finance/binance-rebuilt-my-bitkey-minus-the-metal.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/binance-rebuilt-my-bitkey-minus-the-metal.html</guid>
-    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
-    <description>An email landed today announcing Binance.US's new self-custody wallet — no seed phrase, keys split three ways, "no single point of failure." I already own the product that pitch describes; it's called a Bitkey, and Block shipped it two years ago. Here's what's actually the same, what's genuinely different, and why one detail — what's doing the signing, not the math behind it — is the whole ballgame.</description>
-    <category>binance us</category>
-    <category>bitkey</category>
-    <category>self custody</category>
-    <category>mpc</category>
-    <category>multisig</category>
-    <category>seed phrase</category>
-    <category>block</category>
-    <category>robinhood chain</category>
-    <category>wallet security</category>
-    <category>web3 wallet</category>
   </item>
 </channel>
 </rss>

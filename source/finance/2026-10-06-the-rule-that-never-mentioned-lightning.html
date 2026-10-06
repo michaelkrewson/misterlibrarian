@@ -1,0 +1,169 @@
+title: The Rule That Never Mentioned Lightning
+date: 2026-10-06
+tags: bitcoin, lightning, lsp, privacy, fincen, mixers, coinjoin, regulation, self custody, section 311
+summary: FinCEN withdrew its 2023 proposal to label crypto mixing a "primary money laundering concern." I read the withdrawal notice and the original proposal. Neither says the word Lightning, but the proposal's definition of mixing was written so broadly that a literal reading brushes against how Lightning works. Here is what the rule said, what it would have meant for Lightning service providers, what the withdrawal changes today, and what it leaves alone.
+meta_desc: FinCEN withdrew its crypto mixer rule. What the 2023 proposal said, how it brushed against Lightning and LSPs, and what the withdrawal changes.
+hero: the-rule-that-never-mentioned-lightning.svg
+hero_alt: A diagram titled "The rule that never mentioned Lightning." Two columns. Left, the six tests in FinCEN's 2023 definition of crypto mixing: pooling funds from many people; code that coordinates a transaction's structure; splitting a payment across independent transactions; single-use wallets and addresses; swapping between types of digital asset; user-initiated delays. Right, where ordinary Lightning plumbing touches each test, in the author's reading: a provider's liquidity serving many users; batched channel opens and splicing; multi-path payments; one-time invoices; swaps into other assets, only if used; and no close match for delays. A footer notes the word Lightning appears zero times in the 2023 proposal and zero times in the 2026 withdrawal, and that the right-hand column is the author's reading, not FinCEN's. A timeline strip reads: proposed October 23, 2023; withdrawn October 6, 2026.
+hero_credit: Original diagram. Definition language from FinCEN's proposed rule, 88 FR 72701 (October 23, 2023), and its withdrawal notice, 91 FR 63513 (October 6, 2026). The Lightning column is the author's own reading.
+draft: false
+---
+
+<p>Alex Stanczyk <a href="https://x.com/alexstanczyk/status/2107466819061559726">posted this morning</a>
+that FinCEN, the Treasury bureau that polices money laundering, had killed its 2023 plan to treat
+crypto mixers as a "primary money laundering concern." My first question was what that means
+for Bitcoin, for Lightning, and for the service providers (LSPs) that phone-wallet Lightning
+leans on. So I went and read the notice, and then the proposal it kills. The first surprise: <strong>neither
+document contains the word "Lightning."</strong> I searched. Zero hits in each. The second
+surprise is that the proposal's definition of "mixing" was written so broadly that, read
+literally, it brushes against Lightning anyway. A rule that never names you can still describe you.</p>
+
+<h2>What Was Actually Withdrawn</h2>
+
+<p>The proposal was published October 23, 2023 (<a
+href="https://www.federalregister.gov/documents/2026/10/06/2026-20429/proposal-of-special-measure-regarding-convertible-virtual-currency-mixing-as-a-class-of-transactions">the
+withdrawal notice</a> cites it as 88 FR 72701). It used Section 311 of the USA PATRIOT Act, which
+lets Treasury declare something a "primary money laundering concern" and then order banks and
+other regulated financial firms to do extra paperwork about it. Here the paperwork was a report to
+FinCEN whenever a firm knew, suspected or had reason to suspect that a crypto transaction involved
+mixing connected to a jurisdiction outside the United States. The report would have carried the
+amount, the coin, which mixer was used, the customer's wallet address, transaction hashes, dates
+and IP addresses, and the firm would have had to keep the customer's identity records too.</p>
+
+<p>The notice was filed October 5 and published October 6, 2026, signed by FinCEN Deputy
+Director Jimmy L. Kirby. FinCEN withdraws both the finding and the proposed rule. The stated
+reason is plain: <em>"the expansive definition of CVC mixing in the proposed rule could have a
+chilling effect on legitimate activity and place a large reporting burden on covered financial
+institutions."</em> (CVC is FinCEN's acronym for convertible virtual currency, which includes
+bitcoin.) The notice doesn't pretend mixers are harmless. It says <em>"illicit actors continue to use
+mixers and other tools and methods to hinder law enforcement investigations,"</em> and that FinCEN
+<em>"will continue to monitor activity involving CVC mixers"</em> and <em>"may take appropriate steps in
+the future."</em></p>
+
+<p>One small correction to the tweet's framing, because it matters for how much weight to put on
+it. The line Alex highlights, that <em>"lawful users of digital assets may leverage mixers to enable
+financial privacy when transacting through public blockchains,"</em> is real and it is in the notice.
+But the notice is quoting the July 2025 report of the President's Working Group on Digital Asset
+Markets, not announcing a new FinCEN finding. That is still significant: FinCEN is leaning on the
+White House's own report to retreat. It's just a citation, not a new policy.</p>
+
+<p>Per <a
+href="https://www.theblock.co/news/regulation/2026-10-05-fincen-drops-crypto-mixing-rule-self-hosted-wallet-proposal-417690">The
+Block</a> and <a
+href="https://www.tftc.io/fincen-withdraws-unhosted-wallet-mixer-surveillance-rules-2026">TFTC</a>,
+a second proposal died the same day: a 2020 plan for banks and money services businesses to
+collect counterparty details on transfers to and from self-hosted wallets, with record-keeping
+above $3,000 and reporting above $10,000. I read the mixer notice itself, not that one, so treat
+the second item as press-reported. It matters more for Lightning users than the mixer rule
+does, and I'll come back to why.</p>
+
+<h2>Why a Rule About Mixers Touches Lightning</h2>
+
+<p>Start with how the proposal defined its target. "CVC mixing" meant <em>"the facilitation of CVC
+transactions in a manner that obfuscates the source, destination, or amount involved in one or
+more transactions, regardless of the type of protocol or service used."</em> A "mixer" was <em>"any
+person, group, service, code, tool, or function that facilitates CVC mixing."</em> Then came six
+examples of what that could look like. Here they are, each next to the piece of ordinary
+Lightning plumbing it brushes against. This is my reading; FinCEN never drew these lines.</p>
+
+<ol>
+  <li><strong>Pooling funds from many people.</strong> An LSP routes many users' payments through
+  one pool of its own liquidity. Your payment and a stranger's both pass through the same balance.</li>
+  <li><strong>Code that coordinates a transaction's structure.</strong> LSPs batch channel opens for
+  several users into one on-chain transaction, and splicing rewrites a channel's on-chain footprint.</li>
+  <li><strong>Splitting a payment across independent transactions.</strong> Multi-path payments are a
+  standard Lightning feature: one payment, carved into pieces that take different routes.</li>
+  <li><strong>Single-use wallets and addresses.</strong> A Lightning invoice is built to be paid once.</li>
+  <li><strong>Swapping between types of digital asset.</strong> Only if you swap out of bitcoin, for
+  example into a sidechain asset. Ordinary Lightning stays in bitcoin.</li>
+  <li><strong>User-initiated delays.</strong> I can't find a close match.</li>
+</ol>
+
+<p>And the test itself, "obfuscates the source, destination, or amount," is close to a one-line
+description of what an off-chain payment does to the public blockchain. Lightning payments don't
+get written to the chain one by one; that is the point of them. So the honest answer to "did the
+rule cover Lightning?" is that <strong>nobody can say, because it didn't say</strong>, and the
+drafting is broad enough that a compliance department could have argued either way. I would be
+surprised if FinCEN meant to target it. Nothing in the proposal's examples is a Lightning
+payment, and the services it names are all mixers (Tornado Cash, Blender and the like), <a
+href="a-private-room-with-a-public-door.html">the privacy-pool kind</a>. But a compliance officer reading "regardless of the type of protocol or service
+used" is not reading FinCEN's mind. That uncertainty is the chilling effect the withdrawal
+cites, and an LSP would have felt it first.</p>
+
+<h2>Why LSPs, Specifically</h2>
+
+<p>The proposal didn't regulate mixers directly. It regulated the <em>regulated firms that touch
+them</em>: banks, money services businesses, exchanges. So the practical question for an LSP was never
+"will FinCEN call me a mixer?" It was "will the bank, exchange or payment processor I depend on
+decide I look like one?" Three things about LSPs made that a live worry:</p>
+
+<ul>
+  <li><strong>They sit in the middle.</strong> An LSP opens channels to users and forwards their
+  payments. That's pooled liquidity with many people's flows crossing it, which is what item 1
+  above describes in the abstract.</li>
+  <li><strong>Many are not American.</strong> The rule keyed on a foreign connection. Phoenix's
+  operator, ACINQ, is a French company, for one. A US exchange with a customer who withdrew to a
+  foreign-run Lightning service might have had a reporting question to answer.</li>
+  <li><strong>The edges are on-chain and visible.</strong> Opening and closing a channel are ordinary
+  Bitcoin transactions. Those are the moments a bank's analytics software could see and flag.</li>
+</ul>
+
+<p>That list describes a risk of <em>over-reading</em>, not a finding that LSPs were covered. The
+withdrawal removes the cloud that made over-reading attractive. A bank can no longer point to a
+pending Treasury rule as the reason to decline a Lightning-adjacent customer. It can still decline
+on its own, which is a business decision and not a regulation.</p>
+
+<h2>What the Withdrawal Does Not Touch</h2>
+
+<p>Three things are not changed by this notice, and I'd rather say so than let the headline
+imply otherwise.</p>
+
+<ul>
+  <li><strong>Nothing was in force.</strong> The 2023 rule was only ever a proposal. No US firm had a
+  mixer-reporting duty that now disappears. What disappears is the possibility that one arrives.</li>
+  <li><strong>The custody question is separate.</strong> Whether an LSP is a "money transmitter"
+  turns mostly on whether it controls users' funds while moving them. FinCEN's 2019 guidance on
+  crypto business models drew that line, and software that never takes custody sits on the favorable
+  side of it. A non-custodial LSP and a custodial wallet with a Lightning front end are different
+  legal animals. This withdrawal doesn't move that line.</li>
+  <li><strong>The cases that hurt privacy developers weren't Section 311.</strong> As I understand
+  them, the prosecutions of mixer builders, Tornado Cash and Samourai among them, were criminal
+  cases under the unlicensed-money-transmitting statute, a different law from the one withdrawn here. I covered
+  the open questions in <a href="a-private-room-with-a-public-door.html">the shielded-Bitcoin
+  piece</a>. A friendlier regulator doesn't erase them.</li>
+</ul>
+
+<p>The self-hosted wallet proposal is where the practical stakes were larger for ordinary
+Lightning users. Most people reach Lightning through an exchange withdrawal to a self-custody
+wallet. A rule that made that step collect names and addresses above $3,000 would have hit that
+on-ramp directly, mixer or no mixer. With it withdrawn, that on-ramp stays as it is.</p>
+
+<h2>What I Take From It</h2>
+
+<p>This is a retreat on <em>one tool</em>, announced with unusually friendly language, by an agency
+that kept the right to come back. The 2025 report FinCEN cites supports lawful users transacting
+privately on a public blockchain. A future administration can read it differently, and a
+rulemaking is cheaper to restart than to finish. So I'd read this as lowering the temperature, not
+as settling the question. For Bitcoin's privacy tools, the best thing the notice does is put
+"lawful users" and "financial privacy" into the same sentence in the Federal Register. For
+Lightning, it removes a rule that never mentioned it and might have caught it anyway.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The Lightning mapping is mine.</strong> FinCEN never said any of these six tests
+  describe Lightning, and the proposal's examples are all mixers. I'm showing where the wording
+  could be stretched, not where it was aimed. A lawyer who works on this could well say the
+  stretch is a long one.</li>
+  <li><strong>I read the mixer notice and the original proposal, not the self-hosted wallet
+  withdrawal.</strong> The $3,000 and $10,000 figures and the same-day timing come from press
+  coverage (The Block, TFTC), and the 2020 proposal itself I only know from those reports.</li>
+  <li><strong>I haven't re-verified the current status of the Tornado Cash and Samourai
+  cases.</strong> I'm describing what kind of case they were, not where they stand today.</li>
+  <li><strong>My point about LSP jurisdictions is an illustration.</strong> I named one operator I
+  know is French. I haven't surveyed where LSPs are incorporated, and many serve US users through
+  other arrangements.</li>
+  <li><strong>I'm not a lawyer, and I hold bitcoin.</strong> I'd like Bitcoin and Lightning to
+  stay private and legal, which is a bias worth naming. None of this is legal or investment
+  advice.</li>
+</ul>
