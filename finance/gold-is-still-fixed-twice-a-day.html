@@ -662,6 +662,20 @@ net amount at it. Any leftover imbalance is shared among all the direct particip
 is bigger, the price moves and a new round starts. Minimum quorum: three participants, two of them
 direct.</p>
 
+<h3>Where does the opening price come from?</h3>
+
+<p>This is the part of the process IBA describes least. Its methodology document says the price in
+each round comes from "an algorithm that takes into account current market conditions and the
+activity in the auction." It does not name the data feed behind "current market conditions." Before
+the auction there is a 30-minute <strong>"Round Zero"</strong> in which participants can queue
+orders with no price shown, and those orders feed the algorithm too. IBA staff supervise every
+auction. So which one wags the other? My reading, not IBA's: the continuous market (over-the-counter
+spot and futures, trading all day) is the dog and the auction is the tail. It opens near where gold
+is already trading and corrects from there. Participants have a reason to keep it honest, because
+trades at the final price are binding, so an auction price that strayed from the live market would
+hand the other side an easy profit. The tail can wag contracts that settle off the fix, which is
+what the Barclays case was about, without moving the market itself.</p>
+
 <figure>
   <img src="img/lbma-gold-auction-rounds.svg" alt="A flow diagram of one LBMA Gold Price auction. An opening price is set, then a 30-second round where orders can be entered, changed or cancelled, then the book is netted. If the buy-sell gap is 10,000 ounces or less, the price is set and net amounts trade at it. If not, the price moves and a new 30-second round starts. A box below explains why only the book at the end of a round matters, and that this makes spoofing harder but not impossible." loading="lazy"/>
   <figcaption>The loop repeats until buyers and sellers are within 10,000 ounces of each other. The
@@ -759,6 +773,9 @@ href="/finance/money-worldwide-gold.html">gold page of Money Worldwide</a> has t
   <li><strong>The participant count.</strong> The "14 direct participants, including three Chinese
   banks" figure came from an excerpt of ICE's own material that I could not open in full. Treat it
   as approximately right and check ICE's current participant list before quoting it.</li>
+  <li><strong>The opening price.</strong> IBA does not publish the data source behind "current
+  market conditions," so the dog-and-tail reading above is my inference from how the auction is
+  built, not a description IBA gives of itself.</li>
   <li><strong>What participants can see.</strong> The spec sheet gives limits and thresholds, not
   the full rulebook. I did not verify whether participants see the aggregate imbalance during a
   round or exactly how the algorithm sets the next round's price, and those details decide how
@@ -779,6 +796,7 @@ href="/finance/money-worldwide-gold.html">gold page of Money Worldwide</a> has t
 
 <ul>
   <li><a href="https://ir.theice.com/press/news-details/2015/ICE-Benchmark-Administration-Launches-LBMA-Gold-Price-Transitions-Gold-Price-to-Transparent-Electronic-Auction-Process/default.aspx">ICE Benchmark Administration, launch of the LBMA Gold Price, March 2015</a> (first-day volumes, original six participants)</li>
+  <li><a href="https://www.ice.com/publicdocs/LBMA_Gold_Price_and_LBMA_Silver_Price_Calculation_Methodology.pdf">IBA, LBMA Gold and LBMA Silver Prices methodology</a> (algorithm-set round prices, Round Zero, staff supervision)</li>
   <li><a href="https://www.ice.com/publicdocs/futures/IBA_Gold_Auction_Specification.pdf">IBA Gold Auction Specification, ICE, January 2026</a> (30-second rounds, 10,000-ounce threshold, order and message limits)</li>
   <li><a href="https://www.fca.org.uk/publication/final-notices/daniel-james-plunkett.pdf">FCA Final Notice, Daniel James Plunkett</a></li>
   <li><a href="https://bergermontague.com/news/preliminary-approval-of-a-50m-settlement-with-barclays-the-bank-of-nova-scotia-societe-generale-and-the-london-gold-market-fixing-ltd-granted-bringing-total-settlements-to-152-million/">Berger Montague, gold fixing settlements totalling $152 million, February 2022</a></li>
