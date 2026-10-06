@@ -50,6 +50,10 @@ surface. (The mstr-trader repo enforces the same pattern with a size-budget comm
 may be added here.) `claude-docs/` is served publicly by GitHub Pages exactly as this file is,
 so the same rule applies: nothing private goes in either.
 
+**Shared wiki:** Michael's Claudes (Mac, dev box, phone, Mac app) share one Claude Docs doc, "Claude
+Shared Notes" (`c563e7c4-2e62-44fe-907d-273ee08ec4bc`). Read its front tab (index + handoff board) at
+session start; its Blogs tab summarizes this file's rules for Claudes outside this repo.
+
 ## Voice — a touch of wit, across every publication (Michael's ask, 2026-09-16)
 
 Michael reads Morning Brew and Robinhood Snacks for their morning newsletters and wants more
