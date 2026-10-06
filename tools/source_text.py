@@ -190,16 +190,33 @@ def fetch(book: str, chapter: int, *, allow_live: bool = False,
     return raw
 
 
-def verses(raw: bytes, subdir: str) -> str:
+def _sblgnt_corrections() -> dict:
+    """tools/sblgnt_corrections.json: {"ACT-17": {"11": "<verse text>"}}.
+
+    The archived SBLGNT pages (a mirror of helloao's JSON) lose or split letters where an apparatus
+    footnote sits inside a word ("τὸ" for "τὸν" at Acts 17:11, "ἐρχόμε ον" at John 6:37) and carry
+    stray markup ("‘p /’ ‘/book’") at the end of some verses. A MorphGNT comparison of all 7,927
+    verses found 53 such verses. The archive file itself stays untouched (its sha256 is in the
+    manifest); the readable output below swaps in the correct text for those verses. `--raw` still
+    prints the file exactly as archived."""
+    try:
+        return json.loads((Path(__file__).with_name("sblgnt_corrections.json")).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def verses(raw: bytes, subdir: str, fn: str = "") -> str:
     """Readable verse text out of an archived page."""
     if subdir == "sblgnt":
         data = json.loads(raw.decode("utf-8"))
+        fixes = _sblgnt_corrections().get(fn.rsplit(".", 1)[0], {})
         out = []
         for c in data.get("chapter", {}).get("content", []):
             if c.get("type") != "verse":
                 continue
             parts = [p for p in c.get("content", []) if isinstance(p, str)]
-            out.append(f"{c.get('number')} {' '.join(parts)}")
+            text = fixes.get(str(c.get("number")), " ".join(parts))
+            out.append(f"{c.get('number')} {text}")
         return "\n".join(out)
 
     t = raw.decode("utf-8", errors="replace")
@@ -231,7 +248,7 @@ def main() -> int:
         return 2
     raw = fetch(args.book, args.chapter, allow_live=args.allow_live)
     sys.stdout.write(raw.decode("utf-8", errors="replace") if args.raw
-                     else verses(raw, subdir) + "\n")
+                     else verses(raw, subdir, _fn) + "\n")
     return 0
 
 
