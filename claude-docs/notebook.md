@@ -107,3 +107,18 @@ A row's `href` may point at another publication with a relative path (the 2026-1
 row points at `../finance/…`). That entry is NOT rewritten in place; the row only keeps the rundown
 linking to it while the story is in the news. Set `active` to `false` once it goes quiet.
 
+
+
+## Standing page: the minimum wage (2026-10-07)
+
+`source/notebook/2026-10-07-minimum-wage-what-it-was-for-and-what-it-pays-now.html` is a running page
+in the infographic format above, but for a number that drifts rather than a story that breaks. To
+refresh it: (1) federal rate (DOL rate chart); (2) California general rate (DIR news release each
+August) and the fast-food rate (check the Fast Food Council; it was $20 with no increase as of
+2026-10-07); (3) CPI-U latest month and average hourly earnings, both from the BLS "Real Earnings"
+release; (4) recompute: 25¢ x (latest CPI-U / 14.1), 1968 $1.60 x (latest CPI-U / 34.8), 7.25 / AHE,
+and annual pay at 2,080 hours; (5) re-stamp the `updated:` front matter, the band, the stat tiles, the
+bars, the claim-check table and the footer, then add a dated line to the update log. The page's own
+"planned additions" list (poverty line, who works these jobs, rent, the job-effects studies) is the
+backlog. Its `_running.json` row means the daily rundown routine may link it when minimum-wage news
+breaks; set `active` to false if that gets noisy.
