@@ -7,8 +7,9 @@ The key file has sat at the repo root since Bing verification
 Bing found pages only by crawling on its own schedule. This is the ping.
 
 Only URLs that appear in one of the site's sitemaps are ever sent — that set
-is exactly "pages we want indexed", so the noindexed /dict/ /ency/ /atlas/
-stubs, the /v/ verse stubs and drafts can never be submitted by accident.
+is exactly "pages we want indexed", so the /v/ verse stubs, redirect stubs and
+drafts can never be submitted by accident. (The /dict/ /ency/ /atlas/ entries
+were noindexed and absent until 2026-10-07; they are in the sitemap now.)
 
     python3 tools/indexnow_ping.py --changed <old-sha> <new-sha>   # what CI runs
     python3 tools/indexnow_ping.py --all                            # every sitemap URL

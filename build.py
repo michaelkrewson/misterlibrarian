@@ -1410,12 +1410,10 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
     return out
 
 
-# Per-entry reference pages that carry `noindex,follow` (see page()). The landing
-# pages (dictionary.html / encyclopedia.html / atlas.html and their Spanish twins)
-# are root files and stay indexable; routes/ (one page, ~330 words) is left alone.
-# "dict/" dropped 2026-10-07 (Michael's call): dictionary entries are indexable
-# again, listed in the sitemap at a low priority beneath the chapters.
-NOINDEX_PREFIXES = ("ency/", "atlas/", "search.html")
+# Pages that would carry `noindex,follow` (see page()). EMPTY since 2026-10-07
+# (Michael's call: no page on the site is noindexed). It held ("dict/", "ency/",
+# "atlas/", "search.html") from 2026-09-17; re-add a prefix to hold one out again.
+NOINDEX_PREFIXES = ()
 
 
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
@@ -1432,7 +1430,8 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
     # img/..., encyclopedia.html#slug, ...) resolve correctly without rewriting a
     # single one of them. Every other page omits it, so this is a no-op everywhere else.
     base_tag = f'\n<base href="{html.escape(base, quote=True)}"/>' if base else ""
-    # Reference-entry stubs are kept OUT of Google's index (2026-09-17). Measured
+    # (Inert since 2026-10-07 — NOINDEX_PREFIXES is empty. History kept below.)
+    # Reference-entry stubs were kept OUT of Google's index (2026-09-17). Measured
     # that day: dict/ median 140 body words, ency/ 172, atlas/ 201 vs 4,114 for a
     # chapter -- 3,077 thin pages against 347 substantial ones. GSC showed the
     # cost plainly: the stubs got crawled in July and made up most of the 1,718
@@ -3586,8 +3585,10 @@ def _plain(s):
 
 def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang="en"):
     """A tiny share-stub page: crawlers read this verse's own OG tags; humans are
-    redirected instantly to the real chapter at the verse anchor. `noindex,follow`
-    keeps these thin pages out of search while the canonical points at the chapter.
+    redirected instantly to the real chapter at the verse anchor. The canonical
+    points at the chapter, so search engines fold the stub into it. (These carried
+    `noindex,follow` until 2026-10-07 — dropped with every other noindex on the
+    site, Michael's call.)
 
     ⚠ The Spanish edition gets its OWN stubs (`<stem>-<v>.es.html`). Until
     2026-08-19 there was one language-neutral stub per verse, so a Spanish reader
@@ -3608,7 +3609,6 @@ def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang="en"):
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{title}</title>
-<meta name="robots" content="noindex,follow"/>
 <link rel="canonical" href="{SITE_URL}/{chfile}"/>
 <link rel="icon" href="{FAVICON}"/>
 <meta name="description" content="{de}"/>
@@ -6126,11 +6126,12 @@ def build_sitemap():
 
     Three decisions worth keeping:
 
-    * The 3,800+ /v/ verse stubs are EXCLUDED. They are `noindex` with a canonical
+    * The /v/ verse stubs are EXCLUDED (never walked). They carry a canonical
       pointing at their chapter and a meta-refresh on top — they exist to give a
-      shared verse link its own card, not to be indexed. Listing noindex URLs in a
-      sitemap is a reported error in Search Console, and 3,800 thin redirect pages
-      would swamp the 320 real ones twelve to one.
+      shared verse link its own card. (They were also `noindex` until 2026-10-07,
+      when every noindex on the site was dropped.) A sitemap URL must match its
+      page's own canonical, so redirect stubs never belong here; any page whose
+      canonical names another URL is skipped below.
     * `lastmod` comes from GIT, not the filesystem. Every build rewrites every
       file, so mtime would stamp today's date on all 320 pages every time — and a
       lastmod that is always "today" is one search engines learn to ignore. One
@@ -6235,6 +6236,12 @@ def build_sitemap():
         # how the home page ended up as a "Duplicate without user-selected
         # canonical" in Search Console.
         loc = f"{SITE_URL}/" if f == "index.html" else f"{SITE_URL}/{f}"
+        # A redirect stub (root ask-*.html → /ask/, dict/matsevah → matzevah)
+        # canonicalises to ANOTHER url. Until 2026-10-07 the noindex sniff above
+        # kept these out; with noindex gone site-wide, this is what does.
+        cm = re.search(r'<link rel="canonical" href="([^"]+)"', head)
+        if cm and cm.group(1) != loc:
+            continue
         alts = []
         if f.endswith(".es.html"):
             en = f[:-8] + ".html"

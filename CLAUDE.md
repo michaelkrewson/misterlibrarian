@@ -639,8 +639,15 @@ the script (idempotent — only fetches what's missing).
   2026-09-10, off by ~5×, for exactly that reason. The authority is the build's own
   `verse cards: N published to S3` line (`ls v/ | wc -l` agrees) — quote *that*, never a figure
   frozen in prose.
-- **2026-10-07 (Michael's call): `dict/` is INDEXABLE again** — dropped from
-  `NOINDEX_PREFIXES`, back in the sitemap at `priority 0.3`. `ency/` + `atlas/` stay noindex.
+- **2026-10-07 (Michael's call): NO PAGE ON THE SITE IS NOINDEXED.** `NOINDEX_PREFIXES` is
+  empty; the verse-stub template, `blogkit.redirect_stub()`, every blog `_shell()` (tags,
+  thanks, tag lists) and travel's drafts list/thanks no longer emit it, and the tag was
+  stripped from ~27.5k built pages. `dict/` `ency/` `atlas/` are in the sitemap at
+  `priority 0.3`. The ONE exception: individual unpublished draft previews keep
+  `noindex,nofollow` (unreviewed text must not reach Google). With noindex gone, the
+  main sitemap now skips any page whose canonical names ANOTHER url (redirect stubs —
+  root `ask-*.html`, `contact.html`, `dict/matsevah`, `dict/splagchnizomai`); don't remove
+  that check or `check_canonicals()` fails the build. /v/ is still never walked.
   Same day: every sitemap now carries `<changefreq>` + `<priority>` from ONE rule table,
   `blogkit.sitemap_hint()` / `add_sitemap_hints()` (home = daily/1.0, blog fronts daily/0.9,
   chapters weekly/0.8, posts monthly/0.7, tags weekly/0.3, reference entries monthly/0.3) —
