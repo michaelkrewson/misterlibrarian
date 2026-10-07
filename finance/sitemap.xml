@@ -121,6 +121,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mistertranslation.com/finance/twenty-eight-questions-nine-thousand-answers.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/finance/aramco-ceo-says-under-6-billion-barrels-remain-of-what.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -518,7 +524,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-agentic-payments.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -542,7 +548,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-artificial-intelligence.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -950,7 +956,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-stablecoins.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>

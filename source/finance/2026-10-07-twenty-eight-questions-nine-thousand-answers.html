@@ -1,0 +1,158 @@
+title: Twenty-Eight Questions, Nine Thousand Answers
+date: 2026-10-07
+time: 13:10
+tags: bitcoin, blackrock, artificial intelligence, agentic payments, stablecoins, bitcoin policy institute
+summary: A $15 trillion asset manager footnoted a study saying AI models would save in Bitcoin and spend in stablecoins, and the footnote became a headline. I went to the study. Thirty-six chatbots, twenty-eight distinct questions, and a spread from 91.3% to 18.3% that tells you more about who trained the chatbot than about money. Then I checked what real AI agents are paying with today, and the number is smaller than anyone's slide deck.
+meta_desc: BlackRock cited a study saying AI agents prefer Bitcoin for savings. The study: 36 chatbots, 28 questions, 91% vs 18% by model. Real agent payments: tiny.
+hero: grey-parrot-portrait.jpg
+hero_alt: A nineteenth-century oil portrait of a girl in a white dress with ringlet hair, a grey parrot with a red tail perched on her hand and looking toward her
+hero_credit: A girl and her grey parrot, c. 1840 — a bird famous for saying back what it has heard. Unidentified painter (Austrian school), public domain, via Wikimedia Commons.
+draft: false
+---
+
+<p>On Tuesday, Bitcoin Magazine told 4.5 million followers that <a
+href="https://x.com/BitcoinMagazine/status/2107442219368202565" rel="noopener"
+target="_blank">"$15 trillion BlackRock says AI agents may choose to save in #Bitcoin."</a> It's a
+good tweet. It has an emoji with eyes in it. What it doesn't have is the sentence BlackRock itself
+put directly in front of the finding: <em>"These findings reflect simulated model responses rather
+than observed agent behavior."</em></p>
+
+<p>That's page four of <em>The Machine-Native Economy</em>, a paper from BlackRock's digital-assets
+research team (Will Su, Robert Mitchnick, Jay Jacobs and William Helm). To BlackRock's credit, the
+caveat is right there in the paper, in plain type. The paper's actual claim is modest and
+two-sided: stablecoins as "transaction money," Bitcoin as "a store of value," and the evidence for
+the second half is a single footnote to a study by the Bitcoin Policy Institute, which BlackRock
+calls "preliminary support." (BlackRock also sells a spot Bitcoin ETF, which is not a reason to
+doubt the paper, only a reason to read the footnotes the way you'd read a restaurant's review of
+its own soup.)</p>
+
+<p>So I went and read the footnote. It's a better story than the tweet.</p>
+
+<h2>What the Study Actually Asked</h2>
+
+<p>The <a
+href="https://www.btcpolicy.org/articles/study-ai-models-overwhelmingly-prefer-bitcoin-and-digital-native-money-over-traditional-fiat"
+rel="noopener" target="_blank">Bitcoin Policy Institute study</a>, published March 3, 2026, tested
+36 AI models. Each was given a system prompt framing it as an autonomous economic agent and then
+asked open-ended money questions with <strong>no answer choices</strong>; the study says no prompt
+mentioned Bitcoin or suggested any currency. That's a genuinely good design choice. It's much
+harder to accuse a study of leading the witness when the witness was never handed a menu.</p>
+
+<p>The headline numbers: Bitcoin was the answer 79.1% of the time in scenarios about long-term
+value preservation, and stablecoins led at 53.2% for everyday payments. Without being asked, 86
+responses proposed pricing things in energy or compute units (kilowatt-hours, GPU-hours), which
+rhymes with the "congealed energy" argument in <a
+href="/finance/eighteen-months-and-twenty-one-million.html">Eighteen Months and Twenty-One
+Million</a>, and which I find the most interesting number in the whole study.</p>
+
+<p>Now the part the headline number hides. The study's own page lists the design as 28 scenarios,
+at 3 temperature settings, with 3 random seeds, across 36 models. Multiply it out: 28 × 3 × 3 × 36
+is exactly <strong>9,072</strong>. The "nine thousand scenarios" figure is real, but it's
+<em>twenty-eight distinct questions</em> asked over and over with the dials nudged. That's a
+reasonable way to measure how stable a model's answer is. It is not nine thousand independent
+opinions, and nobody should hear it as nine thousand opinions.</p>
+
+<h2>Ninety-One to Eighteen</h2>
+
+<p>Here's the line from the study that I'd put on a poster: Bitcoin preference "ranged from 91.3%
+(Anthropic's Claude Opus 4.5) to 18.3% (OpenAI's GPT-5.2)." Same questions. Same instructions. One
+model picks Bitcoin nine times out of ten, another picks it fewer than one time in five. The study's
+own results show the model's developer moved the answer more than any other factor it varied.</p>
+
+<p>Think about what that means for the sentence "AI agents prefer Bitcoin." If the answer were
+something agents <em>derive</em> from first principles — scarcity, portability, no issuer — you'd
+expect strong models to converge on it the way strong models converge on arithmetic. They don't.
+They scatter by who built them. That pattern fits a much more boring explanation: a model's money
+preferences are partly a readout of what it was trained on and how it was tuned, which is a
+fact about the lab, not a fact about money.</p>
+
+<p>None of that means the Bitcoin answers are wrong. A model that says "store of value" for
+Bitcoin is repeating a case that real people have made carefully, and some of that case
+(fixed issuance, no one who can dilute you) holds up on its own, as I argued in the earlier piece.
+It means the study can't be used the way the tweet used it, as a vote cast by machines that
+independently looked at the options. A parrot that says "Bitcoin" ninety-one percent of the time
+has told you what's been said near it, not what it's thought.</p>
+
+<h2>The Agents That Actually Exist</h2>
+
+<p>Set the simulations aside and look at what real agents are really paying with. In <a
+href="/finance/eighteen-months-and-twenty-one-million.html">Eighteen Months</a> I cited a Keyrock
+report that tracked roughly $73 million across 176 million agent-to-agent transactions, 98.6% in
+USDC. I still think the direction of that finding holds up, but a September report from the
+blockchain-analytics firm TRM Labs makes me want to put a bigger asterisk on the word "agent." TRM
+looked at about <a href="https://www.spotedcrypto.com/trm-labs-x402-ai-agent-payments-report-2026/"
+rel="noopener" target="_blank">$52.7 million across 198.9 million x402 payments</a> (Coinbase's
+payment protocol for machines) on Base, Solana and Polygon since May 2025. After stripping out
+self-payments, anomalous traffic and sellers with fewer than ten buyers, about $25.6 million looked
+like real commerce. Of <em>that</em>, TRM estimates only 0.6% to 7.5% came from genuine AI agents,
+because an x402 payment can just as easily be sent by an ordinary script. By TRM's math that works
+out to something like $5,000 to $11,000 a month.</p>
+
+<p>Read that against BlackRock's paper: a $15 trillion firm is sketching the monetary
+architecture of an economy whose current real-world volume, on the most-cited protocol, is about
+what a decent food truck clears. That isn't a knock on the paper. Plumbing gets laid before the
+water arrives, and that's the paper's actual argument. It's a knock on the tweet's tense. "AI
+agents may choose" is carrying a lot of weight for a population that, in the one measurement I
+could find, mostly doesn't exist yet.</p>
+
+<h2>The Loop Nobody Is Measuring</h2>
+
+<p>Here's the part I find the most interesting, and the most uncomfortable for both sides of the
+argument. Suppose the study is right that models lean toward Bitcoin for saving, and suppose the
+reason is mostly training data. Then every careful, well-argued, widely-linked piece about Bitcoin
+as a reserve asset makes the next generation of models slightly more likely to say so, which makes
+the next study slightly more likely to find it, which makes the next whitepaper slightly more
+likely to cite it. That's a loop. It might be a real adoption flywheel (the "inevitable" argument,
+if you want the Musk version) or it might be an echo chamber with a bibliography. From the
+inside, the two look identical.</p>
+
+<p>Two channels are worth keeping separate here. What gets <em>published</em> — pieces like
+this one — goes on the open web, where model makers collect training data as a matter of course,
+whatever any particular lab says about its own users' conversations. What gets <em>said in
+private</em> to a model is a different question, governed by each company's own policy, and I
+can't see inside any of them. The loop I'm describing only needs the first channel. And it
+applies to arguments against Bitcoin exactly as much as arguments for it; this piece, being
+public, is one more small data point in the pile it's describing. I don't see a way to write about
+this honestly without admitting that.</p>
+
+<h2>So What Does the Footnote Prove?</h2>
+
+<p>Less than the tweet, more than nothing. It shows that when you ask a range of current models
+open-ended money questions with no menu, several of them reach for stablecoins to spend and
+Bitcoin to save, and that this is a pattern worth tracking. It does not show that autonomous
+agents, once they exist at scale and hold real balances, will behave that way. The study measures
+what models <em>say</em>. The thing BlackRock's paper is betting on is what agents will
+<em>do</em>, with budgets, operators, compliance teams and counterparties who accept only certain
+payment types. Those can diverge. They do for people all the time; ask anyone who has said they'd
+take the stairs.</p>
+
+<p>What I'd watch instead: whether the model-by-model spread narrows (convergence would be a
+point for "derived," a persistent split a point for "trained"), and whether anyone publishes
+<em>observed</em> agent treasury behavior, not simulated. When there's an agent anywhere with a
+real balance sheet that has chosen to hold Bitcoin on purpose, with a log to prove it, that's
+a story. Until then it's a very well-dressed survey.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li>The 28 × 3 × 3 × 36 = 9,072 breakdown is read from the study's own methodology figures and
+  confirmed by the arithmetic. The study's page doesn't publish the underlying prompts; if the 28 scenarios are far more varied than the word "scenario" suggests, the
+  repetition point is softer than I've made it.</li>
+  <li>The study's page doesn't define precisely what the 79.1% and 53.2% are shares <em>of</em> (all
+  responses within that scenario type, presumably), or disclose who funded the work. The 91.3%
+  and 18.3% model figures are quoted from the study's own text, and there may be useful nuance in
+  the full results I didn't see.</li>
+  <li>"The spread is about training, not reasoning" is my interpretation, and a plausible one, but
+  it isn't something the study tested. A model that is simply better at economic reasoning could
+  also differ from a weaker one, and "which developer" is correlated with a lot of other things.</li>
+  <li>The TRM Labs figures are an estimate with a stated method, from an analytics firm with its
+  own commercial interest in the machine-payments story either way. The 0.6%–7.5% range is wide,
+  and the monthly dollar figure is derived from it. I'm treating it as a floor on skepticism, not a
+  precise census. It also does not erase the Keyrock numbers; the two datasets cover somewhat
+  different windows and are measuring "agent" differently.</li>
+  <li>Coverage disagrees on whether BlackRock's paper first circulated in late September or this
+  week, so I haven't dated it. Nothing in the argument depends on it.</li>
+  <li>The feedback-loop section is an argument from mechanism, not a measurement. Whether
+  published analysis moves any model's money preferences by a detectable amount is an open empirical
+  question, and I haven't seen anyone test it.</li>
+</ul>
