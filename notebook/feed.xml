@@ -7,6 +7,23 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>GLP-1 Drugs: What the Evidence Shows, Organ by Organ</title>
+    <link>https://mistertranslation.com/notebook/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A standing page on the benefits being claimed for GLP-1 drugs beyond weight loss, sorted by how strong the evidence is: four large randomized trials, one mechanism study, two observational signals, and a new preprint that says semaglutide turned back the proteomic age of the heart by 2 to 4 years.</description>
+    <category>GLP-1</category>
+    <category>semaglutide</category>
+    <category>tirzepatide</category>
+    <category>Ozempic</category>
+    <category>Wegovy</category>
+    <category>clinical trials</category>
+    <category>kidney disease</category>
+    <category>heart disease</category>
+    <category>biological age</category>
+    <category>proteomics</category>
+  </item>
+  <item>
     <title>The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living</title>
     <link>https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html</guid>
@@ -348,21 +365,6 @@
     <category>interstellar objects</category>
     <category>3i/atlas</category>
     <category>astrochemistry</category>
-  </item>
-  <item>
-    <title>The Cheapest Fuel in the Solar System Is a Planet</title>
-    <link>https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</guid>
-    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
-    <description>On September 28, the European Space Agency's JUICE spacecraft swings within 8,640 kilometres of Earth over the Indian Ocean, borrowing 3.5 kilometres a second of speed from our planet for free. It's the third of four such thefts on a roundabout route to Jupiter's icy moons that won't actually arrive until 2031 — because JUICE can't carry enough fuel to get there any faster.</description>
-    <category>space</category>
-    <category>esa</category>
-    <category>juice</category>
-    <category>jupiter</category>
-    <category>ganymede</category>
-    <category>gravity assist</category>
-    <category>spaceflight</category>
-    <category>engineering</category>
   </item>
 </channel>
 </rss>
