@@ -122,3 +122,7 @@ bars, the claim-check table and the footer, then add a dated line to the update 
 "planned additions" list (poverty line, who works these jobs, rent, the job-effects studies) is the
 backlog. Its `_running.json` row means the daily rundown routine may link it when minimum-wage news
 breaks; set `active` to false if that gets noisy.
+
+## Standing page: GLP-1 evidence scorecard (2026-10-07)
+
+`source/notebook/2026-10-07-glp-1-drugs-what-the-evidence-shows-organ-by-organ.html` is a running page in the infographic format, a claim-check table graded by study design (randomized / early / observational / not established). New GLP-1 claims go in as a table row plus a timeline event plus an update-log line; link, don't duplicate, the two Regimen posts it summarizes. Public voice: reporting only, never medical advice, never anything about Michael's own use. Row in `_running.json` keeps the daily rundown following it.
