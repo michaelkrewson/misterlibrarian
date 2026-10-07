@@ -1,91 +1,97 @@
 {
- "date": "2026-10-06",
- "title": "The rundown",
- "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
- "sections": [
-  {
-   "label": "The world",
-   "items": [
+  "date": "2026-10-07",
+  "title": "The rundown",
+  "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
+  "sections": [
     {
-     "text": "Nearly 400 schools across France have shut down and roughly 2,000 people — 90% of them minors — have been taken into police custody since high-school student protests over teacher shortages and crumbling buildings turned violent, with more than 100 schools reporting serious damage.",
-     "href": "",
-     "source_href": "https://www.freepressjournal.in/world/france-protests-escalate-as-nearly-400-schools-shut-students-clash-with-police",
-     "breaking": false
+      "label": "The world",
+      "items": [
+        {
+          "text": "Russia told the WHO on October 6 that medical observation has ended for all roughly 200 contacts of lab worker Darya Shipilova, who died October 2 after reportedly breaking a test tube at the Irkutsk Anti-Plague Institute, with every contact testing negative — even as Russian media reported a second plague death that day, which federal health authorities deny.",
+          "href": "siberia-plague-death-what-we-know.html",
+          "source_href": "https://edition.cnn.com/2026/10/06/world/russian-plague-outbreak-what-we-know-intl",
+          "breaking": false
+        },
+        {
+          "text": "UK Maritime Trade Operations logged nine attacks on shipping in the Strait of Hormuz in the first six days of October alone — already half of September's combined total for the strait and the wider Persian Gulf — including five incidents on October 6, four of them tanker strikes, plus an Iranian Revolutionary Guard boarding that forced one tanker to turn back.",
+          "href": "the-global-oil-crisis-where-things-stand.html",
+          "source_href": "https://www.cnbc.com/2026/10/06/crude-oil-tanker-strait-hormuz-iran-attack.html",
+          "breaking": false
+        }
+      ]
     },
     {
-     "text": "Yemen's Houthis completed a takeover of the Bab al-Mandab strait area in September, seizing a key Red Sea island and prompting the Saudi-led coalition to move to protect commercial shipping through one of the world's most important chokepoints.",
-     "href": "houthis-bab-al-mandab-oil-what-it-means.html",
-     "source_href": "https://www.nst.com.my/amp/business/corporate/2026/09/1530630/yemens-houthis-complete-takeover-bab-al-mandab-area-govt",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Business / macro & markets",
-   "items": [
+      "label": "Business / macro & markets",
+      "items": [
+        {
+          "text": "The S&P 500 closed at a record 7,818.93 Tuesday (+0.58%) and the Nasdaq at a record 27,599.79 (+0.45%), while the Dow added 253 points (+0.49%) to 51,521.28, as Treasury yields eased from multi-year highs and Nvidia's market value pushed toward $6 trillion.",
+          "href": "",
+          "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-6-dow-sp-500-nasdaq-080526166.html",
+          "breaking": false
+        },
+        {
+          "text": "France's 10-year bond yield hit 4.99% Friday, pushing its spread over German Bunds past 158 basis points — the widest since 2011 — just as Spain's Pedro Sánchez called a snap election for November 29 after a fragmented parliament rejected his housing decrees, sending the euro to a 17-month low against the dollar.",
+          "href": "../finance/i-am-the-house-and-the-bond-market-disagreed.html",
+          "source_href": "https://www.euronews.com/2026/10/05/euro-hits-17-month-low-as-french-debt-fears-mount-and-spain-heads-for-snap-election",
+          "breaking": false
+        }
+      ]
+    },
     {
-     "text": "Wall Street closed higher Monday — the Dow up 0.2% to 51,267.90, the S&P 500 up 0.7% to 7,773.99, and the Nasdaq up 1.05% to a record 27,477.31 — as Nvidia hit an all-time high and tech strength outweighed concerns over bond yields and oil prices.",
-     "href": "",
-     "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-treasury-bond-081220790.html",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Science",
-   "items": [
+      "label": "Bitcoin & crypto",
+      "items": [
+        {
+          "text": "Bitcoin slid below $84,000 Wednesday morning, down from Tuesday's roughly $85,546 open, as the same oil-price spike tied to the Hormuz tanker attacks helped trigger a fresh wave of leveraged crypto liquidations.",
+          "href": "",
+          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-october-7-2026-crypto-prices-fade-along-with-risk-appetite-113324902.html",
+          "breaking": false
+        }
+      ]
+    },
     {
-     "text": "The 2026 Nobel Prize in Physics went to Francis Halzen, 82, of the University of Wisconsin–Madison, for proposing and helping build the IceCube Neutrino Observatory, the detector buried under Antarctic ice that discovered the first high-energy neutrinos from beyond our solar system.",
-     "href": "",
-     "source_href": "https://www.france24.com/en/science/20261006-nobel-prize-in-physics-awarded-to-francis-halzen-for-ice-research",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Space",
-   "items": [
+      "label": "Technology",
+      "items": [
+        {
+          "text": "Microsoft holds its first major Windows event in over two years today in San Francisco, where CEO Satya Nadella and Nvidia's Jensen Huang are set to detail pricing and availability for Nvidia's new RTX Spark superchip and the AI-focused Surface Laptop Ultra and Surface RTX Spark Dev Box.",
+          "href": "",
+          "source_href": "https://www.windowscentral.com/microsoft/windows-11/microsoft-surface-event-announced-for-october-7-heres-everything-we-know-so-far",
+          "breaking": false
+        }
+      ]
+    },
     {
-     "text": "A crescent Moon occults Jupiter before dawn today across the eastern and central U.S. and southern Canada — the best Jupiter occultation visible from North America since 2004 — with the magnitude -1.9 planet vanishing behind the Moon's bright limb and reappearing about 67 minutes later.",
-     "href": "",
-     "source_href": "https://www.astronomy.com/observing/the-moon-occults-jupiter-october-6/",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Bitcoin & crypto",
-   "items": [
+      "label": "Science",
+      "items": [
+        {
+          "text": "The 2026 Nobel Prize in Chemistry went to Henri Kagan (France) and Kenso Soai (Japan), splitting the $1.2 million award for discoveries in asymmetric autocatalysis that solved a century-old puzzle about how chemistry produces molecules of a single handedness, or \"homochirality.\"",
+          "href": "",
+          "source_href": "https://www.forbes.com/sites/michaeltnietzel/2026/10/07/the-2026-nobel-prize-in-chemistry-is-awarded-to-henri-kagan-and-kenso-soai/",
+          "breaking": false
+        }
+      ]
+    },
     {
-     "text": "Bitcoin held near $85,500 Tuesday after more than $172 million in leveraged positions were liquidated over 24 hours and U.S. spot bitcoin ETFs slipped back into net outflows ahead of Wednesday's Fed minutes.",
-     "href": "",
-     "source_href": "https://www.cryptotimes.io/2026/10/06/bitcoin-price-today-btc-holds-85500-as-172m-liquidations-etf-outflows-hit-before-fed-minutes/",
-     "breaking": false
-    }
-   ]
-  },
-  {
-   "label": "Health & medicine",
-   "items": [
+      "label": "Space",
+      "items": [
+        {
+          "text": "South Korea launched the fifth Nuri rocket today from the Naro Space Center carrying a record 15 satellites — five KAIST-built cluster satellites plus ten university and research CubeSats — the country's first deployment of a satellite constellation in a single mission.",
+          "href": "",
+          "source_href": "https://www.koreajoongangdaily.com/business/korea-sets-oct-7-for-fifth-nuri-rocket-launch",
+          "breaking": false
+        }
+      ]
+    },
     {
-     "text": "PAHO's latest regional measles report counts 53,957 confirmed cases and 68 deaths across 17 countries in the Americas as of late September, though the newest two-week tally of 709 cases was a 43% drop from the prior period.",
-     "href": "",
-     "source_href": "https://www.paho.org/sites/default/files/2026/09/pahomeaslessitrep12eng.pdf",
-     "breaking": false
+      "label": "Health & medicine",
+      "items": [
+        {
+          "text": "The 2026 Nobel Prize in Physiology or Medicine went to Karl Deisseroth (Stanford), Peter Hegemann and Georg Nagel (both Germany) for discovering light-gated ion channels and turning them into optogenetics, the technique researchers now use to switch individual brain cells on and off with light.",
+          "href": "",
+          "source_href": "https://www.cnn.com/2026/10/05/science/nobel-prize-medicine-karl-deisseroth-peter-hegemann-georg-nagel-intl",
+          "breaking": false
+        }
+      ]
     }
-   ]
-  },
-  {
-   "label": "Arts & culture",
-   "items": [
-    {
-     "text": "The 2026 Booker Prize shortlist is six novels — Marlon James's The Disappearers, Douglas Stuart's John of John, Elizabeth Strout's The Things We Never Say, M. John Harrison's The End of Everything, Luke Kennard's Black Bag and Rebecca Perry's May We Feed the King — with the winner announced November 9.",
-     "href": "",
-     "source_href": "https://thebookerprizes.com/media-centre/press-releases/shocking-understated-discomfiting-hilarious-shortlist-for-booker-prize",
-     "breaking": false
-    }
-   ]
-  }
- ],
- "reads": []
+  ],
+  "reads": []
 }
