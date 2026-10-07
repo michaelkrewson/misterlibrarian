@@ -462,7 +462,6 @@ def redirect_stub(to_url, *, title, note=""):
 <title>Moved — {t}</title>
 <link rel="canonical" href="{u}"/>
 <meta http-equiv="refresh" content="0; url={u}"/>
-<meta name="robots" content="noindex,follow"/>
 <style>
 body{{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
   background:#060b14;color:#e8eef7;font:17px/1.6 Georgia,serif;padding:24px;text-align:center}}

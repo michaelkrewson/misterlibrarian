@@ -908,7 +908,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
     """`image` is a filename under notebook/img/ for a page with a picture of
     its own; every standing page today leaves it "" and gets the branded
     default card (see `_social_tags`)."""
-    robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
+    robots = ""  # no published page is noindexed since 2026-10-07 (Michael's call); `noindex` is accepted and ignored
     return """<!doctype html>
 <html lang="en">
 <head>

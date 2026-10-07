@@ -375,8 +375,8 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
     css_v = _asset_ver("style.css")
     share_v = _asset_ver("share.js")
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
-    # noindex is for pages that exist only as a destination (the post-submit
-    # thank-you); they're not content and shouldn't turn up in a search result.
+    # noindex is now ONLY for unpublished draft previews (2026-10-07: every
+    # published page on the site is indexable, Michael's call).
     r = '\n<meta name="robots" content="noindex,follow"/>' if noindex else ""
     return f"""<!doctype html>
 <html lang="en">
@@ -1412,7 +1412,7 @@ def build_drafts_index(all_posts):
 {listing}
 </div>{_pagehits(DRAFTS_INDEX_FILE)}"""
     return page(f"Drafts — {SITE_NAME}", body,
-                desc="Unpublished entries, for preview only.", noindex=True)
+                desc="Unpublished entries, for preview only.")
 
 
 def _prune_leaked_draft_pages(current_draft_slugs):
@@ -1629,9 +1629,8 @@ def build_thanks():
   <p>If you left an email and it wants an answer, you'll get one. Meanwhile the
   <a href="index.html">rest of the entries</a> are here.</p>
 </div>{_pagehits("thanks.html")}"""
-    # noindex: this page only exists as somewhere to land after submitting.
     return page(f"Message received — {SITE_NAME}", body,
-                desc="Your note is on the librarian's desk.", noindex=True)
+                desc="Your note is on the librarian's desk.")
 
 
 def _rfc822(d):

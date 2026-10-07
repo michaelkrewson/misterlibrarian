@@ -1002,7 +1002,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
     own; every standing page today leaves it "" and gets the branded default
     card, picked per `lang` (see `_social_tags`)."""
     u = UI[lang]
-    robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
+    robots = ""  # no published page is noindexed since 2026-10-07 (Michael's call); `noindex` is accepted and ignored
     return """<!doctype html>
 <html lang="%(lang)s">
 <head>

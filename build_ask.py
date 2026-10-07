@@ -519,7 +519,7 @@ def _hits_widget(path, suffix=""):
 
 
 def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website", extra_js=""):
-    robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
+    robots = ""  # no published page is noindexed since 2026-10-07 (Michael's call); `noindex` is accepted and ignored
     return """<!doctype html>
 <html lang="en">
 <head>
