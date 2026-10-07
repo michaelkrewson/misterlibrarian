@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="What the 1938 minimum wage was for, what 25 cents is worth today, how $7.25 compares, and where California&#x27;s $20 fast-food wage fits. Updated over time."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
+<meta property="og:title" content="The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living"/>
+<meta property="og:description" content="What the 1938 minimum wage was for, what 25 cents is worth today, how $7.25 compares, and where California&#x27;s $20 fast-food wage fits. Updated over time."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html"/>
+<meta property="article:section" content="The World"/>
+<meta property="og:image" content="https://mistertranslation.com/notebook/img/minimum-wage-addie-card-1910.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living"/>
+<meta name="twitter:description" content="What the 1938 minimum wage was for, what 25 cents is worth today, how $7.25 compares, and where California&#x27;s $20 fast-food wage fits. Updated over time."/>
+<meta name="twitter:image" content="https://mistertranslation.com/notebook/img/minimum-wage-addie-card-1910.jpg"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(143,163,255,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Breadcrumb up to the hub (2026-09-21, Michael's ask): "Mister Library ›
+   The Librarian's Notebook" — a Notebook page had no way back to the root
+   hub except the browser's back button. The hub mark below is a byte-for-
+   byte copy of the <svg class="mark"> in the root index.html (that file is
+   hand-written, not built, so there's nothing to import from — keep the two
+   in step by hand if the hub mark ever changes, same discipline MARK_SVG's
+   own docstring already calls out for inlining on the hub). */
+.brandcrumb{display:inline-flex;align-items:center;gap:10px}
+.hublink{display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  transition:opacity .15s ease}
+.hublink:hover{opacity:.82}
+/* Same 45px as the Notebook's own .bmark (header.hsm context) — full parity
+   with the current-page icon, not a shrunken ancestor version — plus the
+   same soft gold drop-shadow halo the big <svg class="mark"> wears on the
+   hub's own index.html (Michael's ask, 2026-09-21: size, the shelf-spine
+   pop animation already on the mark, AND the glow, all matched). */
+.hubmark{width:45px;height:45px;flex:0 0 45px;overflow:visible;
+  filter:drop-shadow(0 0 6px rgba(232,201,104,.55)) drop-shadow(0 0 14px rgba(232,201,104,.35))}
+/* Same serif stack + 23px as the Notebook's own .wm (no font-family override
+   needed — both inherit body's Georgia stack), and the SAME gold gradient
+   text-fill as the hub's own <h1>Mister Library</h1> on index.html, so the
+   hub's identity travels with it wherever this crumb appears rather than
+   borrowing the current publication's accent color. */
+.hublink .hubwm{font-size:23px;font-weight:400;letter-spacing:.01em;white-space:nowrap;
+  background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
+  -webkit-background-clip:text;background-clip:text;color:#e8c968;
+  -webkit-text-fill-color:transparent}
+/* An SVG chevron rather than a "›" glyph — a font's own angle-quote glyph
+   reads thin and easy to miss between two now-equal-weight brand names;
+   a drawn stroke gives a caret as thick and deliberate as the crumb it
+   separates (Michael's ask, same pass as the icon glow). */
+.crumbsep{flex:0 0 auto}
+.shelf-spine{transform-box:fill-box;transform-origin:bottom center;
+  animation:spinePop 3.6s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes spinePop{0%,84%,100%{transform:translateY(0);filter:brightness(1)}
+  10%{transform:translateY(-2.4px);filter:brightness(1.55)}}
+@media (prefers-reduced-motion:reduce){.shelf-spine{animation:none}}
+@media (max-width:480px){.hublink .hubwm{display:none}}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#8fa3ff;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#8fa3ff}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#8fa3ff;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#8fa3ff;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#8fa3ff}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#8fa3ff;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#8fa3ff;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #8fa3ff;color:#8fa3ff}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#8fa3ff}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── the rundown box: a running list of story candidates, front and center
+   on the index page. Hand-maintained in source/notebook/_rundown.json — an
+   item is plain text until it becomes its own entry, at which point it turns
+   into a link. Same accent-edged treatment as an in-entry .aside (see the
+   .entry .aside rule below), sized for the front page instead. */
+.rundown{margin:26px 0 34px;padding:22px 26px;border-left:3px solid #8fa3ff;
+  border-radius:0 12px 12px 0;background:#0a111c}
+.rdtitle{margin:0 0 4px;font-size:19px;font-weight:400;color:#e8eef7}
+.rddate{margin:0 0 14px;color:#7f8fa6;font-size:13px;font-style:italic}
+.rdnote{margin:0 0 18px;color:#93a4bd;font-size:14.5px;line-height:1.6}
+.rdsec{margin:18px 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.03em;
+  text-transform:uppercase;color:#8fa3ff}
+.rdsec:first-of-type{margin-top:0}
+.rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
+.rdlist li{margin:0 0 7px}
+.rdlist a:hover{text-decoration:underline}
+.rdlist a.rdsrc{color:#7f8fa6;font-size:12px;text-decoration:none;margin-left:3px}
+.rdlist a.rdsrc:hover{color:#8fa3ff;text-decoration:underline}
+.rdlist li.rdbreak{font-weight:600;color:#e8eef7}
+.rdblocks{display:flex;flex-direction:column}
+.rdblock .rdsec{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rdctl{display:inline-flex;gap:2px;flex:0 0 auto}
+.rdctl button{background:none;border:none;cursor:pointer;padding:2px 5px;font-size:11px;
+  color:#54617a;line-height:1;border-radius:4px}
+.rdctl button:hover,.rdctl button:focus{color:#8fa3ff;background:#131c2b}
+.rdtools{margin:14px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-size:12.5px;color:#7f8fa6}
+.rdreset{background:none;border:none;cursor:pointer;padding:0;font:inherit;color:#7f8fa6;
+  text-decoration:underline}
+.rdreset:hover,.rdreset:focus{color:#8fa3ff}
+.rdhidden:empty{display:none}
+.rdrestore{background:#131c2b;border:none;border-radius:999px;cursor:pointer;
+  padding:2px 9px;font-size:12px;color:#a9b7c9;margin-left:4px}
+.rdrestore:hover,.rdrestore:focus{color:#8fa3ff}
+.rdask{margin:16px 0 0}
+.rdask .respond-btn{flex:0 1 auto;padding:9px 18px;font-size:14px}
+@media (max-width:720px){
+  .rundown{padding:18px 18px;margin:22px 0 28px}
+  .rdtitle{font-size:17px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brandcrumb{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#8fa3ff;border-bottom-color:#8fa3ff}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:#8fa3ff;border-color:#8fa3ff;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:#8fa3ff;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#8fa3ff;
+  box-shadow:0 0 0 3px rgba(143,163,255,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#8fa3ff;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#8fa3ff;font-style:italic}
+a{color:#8fa3ff}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:9px;letter-spacing:.3px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .upd-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#8fa3ff;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #8fa3ff;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #8fa3ff;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:9px;letter-spacing:.08em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;overflow:hidden;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#8fa3ff;color:#8fa3ff}
+.viewbtn.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#8fa3ff;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2001206283779660" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><div class="brandcrumb"><a class="hublink" href="https://mistertranslation.com/" aria-label="Mister Library — every publication"><svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
+  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
+  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
+  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
+  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
+  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
+  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
+</svg><span class="hubwm">Mister Library</span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#8fa3ff" stroke-width="5"/>
+  <rect x="21" y="18" width="24" height="30" rx="2.5" fill="#f2f5f9"/>
+  <rect x="21" y="18" width="4" height="30" rx="1.5" fill="#8fa3ff" opacity=".85"/>
+  <g stroke="#9aa7bd" stroke-width="1.3" stroke-linecap="round">
+    <line x1="29" y1="25" x2="41" y2="25"/>
+    <line x1="29" y1="30" x2="41" y2="30"/>
+    <line x1="29" y1="35" x2="38" y2="35"/>
+  </g>
+  <line class="bmark-ink" x1="29" y1="41" x2="41" y2="41" stroke="#8fa3ff" stroke-width="1.7" stroke-linecap="round"/>
+  <g class="bmark-nib">
+    <g transform="translate(29 41) rotate(-50)">
+      <polygon points="0,0 3.8,-1.8 3.8,1.8" fill="#d9e0ea"/>
+      <rect x="3.8" y="-1.9" width="11" height="3.8" rx="1.6" fill="#f2f5f9"/>
+      <rect x="11.2" y="-1.9" width="3.6" height="3.8" rx="1.2" fill="#8fa3ff"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a></div><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html" class="on">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a><span class="share-widget"></span></nav></div></header>
+<script src="share.js?v=7b0f905f7f" defer></script>
+  <article class="entry">
+    <h1 class="etitle">The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living</h1>
+    <p class="edate"><a class="esec" href="world.html">THE WORLD</a> · OCTOBER 7, 2026 <span class="upd-stamp">· updated October 7, 2026</span></p>
+    <figure class="hero"><img src="img/minimum-wage-addie-card-1910.jpg" alt="A barefoot girl in a checked pinafore leans on a cotton-spinning frame in a mill, rows of bobbins behind her; black-and-white photograph from 1910" width="1600" height="900" loading="eager"/><figcaption>Lewis Hine, <i>Addie Card, 12 years. Spinner in North Pownal Cotton Mill, Vt.</i>, February 1910, for the National Child Labor Committee. Library of Congress, <a href="https://hdl.loc.gov/loc.pnp/nclc.05282" rel="noopener" target="_blank">nclc.05282</a>. Public domain; cropped.</figcaption></figure>
+<p>This is a living page. The question it answers is the one that keeps coming up at the table: <strong>what was the US minimum wage for, and should someone working a fast-food counter expect to make a living from it?</strong> The first federal minimum wage was 25 cents an hour. In today&rsquo;s prices that is about <strong>$5.92</strong>, which means the federal rate of $7.25 would have looked like a raise to the 1938 crowd and looks like a pay cut to anyone who remembers 1968. I&rsquo;ll keep the numbers below current and date every change in the log at the bottom. <strong>Last updated October 7, 2026.</strong></p>
+
+<style>
+.ig{--ok:#5fd3a1;--rep:#e8c968;--dis:#f08a5d;--unv:#ef6f6f;--none:#7f8fa6;--card:#0a111c;--line:#1b2738;--ink:#c3d0e0;--mut:#8696ad;--acc:#8fa3ff;
+  margin:8px 0 30px;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.ig *{box-sizing:border-box}
+.ig svg.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.ig .band{border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;margin:0 0 18px;
+  background:radial-gradient(120% 140% at 0% 0%,rgba(143,163,255,.14),transparent 55%),linear-gradient(180deg,#0d1624,#0a111c)}
+.ig .live{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b9c6ff;font-weight:700}
+.ig .live i{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 rgba(143,163,255,.6);animation:igp 1.8s infinite}
+@keyframes igp{70%{box-shadow:0 0 0 9px rgba(143,163,255,0)}100%{box-shadow:0 0 0 0 rgba(143,163,255,0)}}
+@media (prefers-reduced-motion:reduce){.ig .live i{animation:none}}
+.ig .band .big{font-family:Georgia,"Times New Roman",serif;font-size:30px;line-height:1.15;color:#f2f6fc;margin:10px 0 6px}
+.ig .band .sub{font-size:14.5px;color:var(--mut);line-height:1.5}
+.ig .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ig .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.ig .c-ok{color:var(--ok)}.ig .c-rep{color:var(--rep)}.ig .c-dis{color:var(--dis)}.ig .c-unv{color:var(--unv)}.ig .c-none{color:var(--none)}
+.ig .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.ig .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 13px;position:relative;overflow:hidden}
+.ig .stat .ic{font-size:22px;color:var(--acc);margin-bottom:6px}
+.ig .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:34px;line-height:1;color:#f2f6fc}
+.ig .stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--mut);margin-top:6px}
+.ig .stat.zero b{color:var(--ok)}
+.ig .stat.zero .ic{color:var(--ok)}
+.ig .sec{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:26px 0 12px;display:flex;align-items:center;gap:10px}
+.ig .sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.ig .tl{position:relative;margin:0 0 6px 8px;padding-left:26px;border-left:2px solid var(--line)}
+.ig .ev{position:relative;padding:0 0 18px}
+.ig .ev:last-child{padding-bottom:2px}
+.ig .ev::before{content:"";position:absolute;left:-35px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--dot,var(--rep));border:3px solid #060b14;box-shadow:0 0 0 2px var(--dot,var(--rep))}
+.ig .ev .d{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dot,var(--rep))}
+.ig .ev .t{font-size:15.5px;line-height:1.5;color:#dbe5f2;margin-top:2px}
+.ig .ev .t small{display:block;font-size:12.5px;color:var(--mut);margin-top:3px}
+.ig .ev.ok{--dot:var(--ok)}.ig .ev.rep{--dot:var(--rep)}.ig .ev.dis{--dot:var(--dis)}.ig .ev.unv{--dot:var(--unv)}
+.ig .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mut);margin:2px 0 14px}
+.ig .legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;margin-right:6px}
+.ig .fun{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ig .bar{margin:0 0 14px}
+.ig .bar:last-child{margin:0}
+.ig .bar .lab{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:#dbe5f2;margin-bottom:5px}
+.ig .bar .lab em{font-style:normal;color:var(--mut);font-size:12.5px}
+.ig .bar .trk{height:22px;border-radius:6px;background:#0f1a29;overflow:hidden}
+.ig .bar .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#4f63d6,#8fa3ff)}
+.ig .bar.z .fill{background:var(--ok);width:3px!important}
+.ig .fun .note{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.5}
+.ig .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.ig .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.ig .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.ig .card .hd{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-size:19px;color:#f2f6fc}
+.ig .card .hd .ic{font-size:26px;color:var(--acc)}
+.ig .card .row{font-size:13.5px;line-height:1.5;color:var(--ink)}
+.ig .card .row b{color:#f2f6fc}
+.ig .card.hot{border-color:#5a2c2c;background:linear-gradient(180deg,#160e12,#0a111c)}
+.ig .card.hot .hd .ic{color:var(--unv)}
+.ig .pro,.ig .con{font-size:13.5px;line-height:1.45;padding-left:20px;position:relative}
+.ig .pro::before,.ig .con::before{position:absolute;left:0;top:0;font-weight:700}
+.ig .pro::before{content:"+";color:var(--ok)}
+.ig .con::before{content:"\2212";color:var(--unv)}
+.ig .tbl{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.ig .tr{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.ig .tr:first-child{border-top:0}
+.ig .tr .cl{font-size:14px;line-height:1.45;color:#dbe5f2}
+.ig .tr .cl small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.ig .watch{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ig .w{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ig .w .ic{font-size:24px;color:var(--acc)}
+.ig .w .q{font-size:14px;font-weight:700;color:#f2f6fc;line-height:1.35}
+.ig .w .m{font-size:13px;color:var(--mut);line-height:1.45}
+.ig .w .s{margin-top:auto;padding-top:4px}
+.ig .foot{font-size:12px;color:var(--mut);margin-top:18px;line-height:1.5}
+@media (max-width:560px){.ig .stats{grid-template-columns:repeat(2,1fr)}.ig .watch{grid-template-columns:1fr}.ig .band .big{font-size:25px}.ig .stat b{font-size:30px}}
+.ig .bar .fill.hi{background:linear-gradient(90deg,#2f9d73,#5fd3a1)}
+.ig .bar .fill.lo{background:linear-gradient(90deg,#b5523a,#f08a5d)}
+.ig .bar .trk{position:relative}
+.ig .big2{font-family:Georgia,serif;font-size:21px;color:#f2f6fc;margin:0 0 4px}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M14.6 9.6c-.5-.9-1.5-1.3-2.6-1.3-1.5 0-2.6.8-2.6 2s1 1.7 2.6 2 2.6.8 2.6 2-1.1 2-2.6 2c-1.1 0-2.2-.5-2.7-1.4"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14M5 8l-2.5 6a3 3 0 0 0 5 0zM19 8l-2.5 6a3 3 0 0 0 5 0z"/></symbol>
+<symbol id="i-burger" viewBox="0 0 24 24"><path d="M4 11a8 6 0 0 1 16 0zM3 14h18M4 17h16a0 0 0 0 1 0 0 3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 5h12l-2 4 2 4H5"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M9.5 12h6M9.5 16h6"/></symbol>
+</defs></svg>
+
+<h2>The numbers at a glance</h2>
+<div class="ig" role="region" aria-label="Infographic: the US minimum wage, then and now, as of October 7, 2026">
+
+  <div class="band">
+    <span class="live"><i></i>Standing page &middot; updated Oct 7, 2026</span>
+    <div class="big">A 1938 quarter-an-hour was worth about $5.92 today, and about 40% of what a factory worker made</div>
+    <div class="sub">Today&rsquo;s federal floor of $7.25 buys about 22% more than the original did, but sits at roughly half the original&rsquo;s place in the pay ladder. California&rsquo;s fast-food floor is $20.</div>
+    <div class="chips">
+      <span class="chip c-ok"><svg class="ic"><use href="#i-doc"/></svg>Rates: documented</span>
+      <span class="chip c-rep"><svg class="ic"><use href="#i-chart"/></svg>Comparisons: my arithmetic</span>
+      <span class="chip c-dis"><svg class="ic"><use href="#i-scale"/></svg>Jobs effects: disputed</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><svg class="ic"><use href="#i-coin"/></svg><b>$5.92</b><span>what 25&cent; (1938) is worth in August 2026 dollars, by CPI</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-scale"/></svg><b>40% &rarr; 19%</b><span>minimum as a share of average hourly pay, 1938 vs. now (different pay series, see note)</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-flag"/></svg><b>$7.25</b><span>federal minimum, unchanged since July 24, 2009</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-burger"/></svg><b>$20.00</b><span>California fast-food minimum since April 1, 2024; no increase found as of Oct 7, 2026</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-calendar"/></svg><b>$41,600</b><span>a full year at $20 (2,080 hours), before taxes</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-calendar"/></svg><b>$15,080</b><span>a full year at $7.25 (2,080 hours), before taxes</span></div>
+  </div>
+
+  <div class="sec">Timeline</div>
+  <div class="legend">
+    <span class="c-ok">Documented</span><span class="c-rep">Derived (my arithmetic)</span>
+  </div>
+  <div class="tl">
+    <div class="ev ok"><div class="d">1912</div><div class="t">Massachusetts passes the first state minimum wage law<small>Aimed at women and children. Other states followed over the next decade.</small></div></div>
+    <div class="ev ok"><div class="d">1923</div><div class="t">Supreme Court strikes down DC&rsquo;s minimum wage for women (<i>Adkins v. Children&rsquo;s Hospital</i>)</div></div>
+    <div class="ev ok"><div class="d">June 1933</div><div class="t">FDR on the National Industrial Recovery Act: no business that depends on paying less than living wages &ldquo;has any right to continue in this country&rdquo;</div></div>
+    <div class="ev ok"><div class="d">1937</div><div class="t">The Court reverses itself and upholds a state minimum wage (<i>West Coast Hotel v. Parrish</i>)</div></div>
+    <div class="ev ok"><div class="d">June 25, 1938</div><div class="t">Fair Labor Standards Act signed<small>Minimum wage, 40-hour week and overtime, child-labor limits. Took effect October 24, 1938 at 25&cent;, rising to 30&cent; in 1939 and 40&cent; in 1945.</small></div></div>
+    <div class="ev rep"><div class="d">Feb 1, 1968</div><div class="t">$1.60 an hour, the high-water mark in buying power<small>About $15.36 in August 2026 dollars, roughly double today&rsquo;s $7.25.</small></div></div>
+    <div class="ev ok"><div class="d">July 24, 2009</div><div class="t">Federal rate reaches $7.25, where it still sits</div></div>
+    <div class="ev ok"><div class="d">Apr 1, 2024</div><div class="t">California&rsquo;s $20 fast-food minimum takes effect (AB 1228)<small>Covers limited-service chains with at least 60 locations nationwide.</small></div></div>
+    <div class="ev ok"><div class="d">Jan 1, 2027</div><div class="t">California&rsquo;s general minimum rises from $16.90 to $17.40<small>Certified by the Department of Finance on July 31, 2026 (CPI up 2.99%).</small></div></div>
+  </div>
+
+  <div class="sec">Two clocks: what it buys, and where it sits</div>
+  <div class="fun">
+    <div class="big2">Federal minimum in today&rsquo;s dollars</div>
+    <div class="bar"><div class="lab"><span>1938: 25&cent;</span><em>$5.92</em></div><div class="trk"><div class="fill" style="width:37%"></div></div></div>
+    <div class="bar"><div class="lab"><span>1968: $1.60</span><em>$15.36</em></div><div class="trk"><div class="fill hi" style="width:96%"></div></div></div>
+    <div class="bar"><div class="lab"><span>2026: $7.25</span><em>$7.25</em></div><div class="trk"><div class="fill lo" style="width:45%"></div></div></div>
+    <div class="note">Each year&rsquo;s wage times (August 2026 CPI-U 334.131 &divide; that year&rsquo;s annual-average CPI: 14.1 for 1938, 34.8 for 1968). Bars scale to $16.</div>
+  </div>
+  <div class="fun" style="margin-top:12px">
+    <div class="big2">Minimum wage as a share of average hourly pay</div>
+    <div class="bar"><div class="lab"><span>1938: $0.25 vs. $0.62 (manufacturing production workers)</span><em>about 40%</em></div><div class="trk"><div class="fill hi" style="width:40%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Aug 2026: $7.25 vs. $37.75 (all private employees)</span><em>about 19%</em></div><div class="trk"><div class="fill lo" style="width:19%"></div></div></div>
+    <div class="note">Not the same pay series. The 1938 figure is a factory wage, the 2026 one covers every private-sector worker, so read the gap as a direction, not a decimal. Scaling 25&cent; by the same pay ratio gives roughly $15 an hour.</div>
+  </div>
+
+  <div class="sec">The California ladder</div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Federal minimum</span><em>$7.25 &middot; $15,080 a year</em></div><div class="trk"><div class="fill lo" style="width:36%"></div></div></div>
+    <div class="bar"><div class="lab"><span>California general, 2026</span><em>$16.90 &middot; $35,152 a year</em></div><div class="trk"><div class="fill" style="width:84.5%"></div></div></div>
+    <div class="bar"><div class="lab"><span>California general, from Jan 1, 2027</span><em>$17.40 &middot; $36,192 a year</em></div><div class="trk"><div class="fill" style="width:87%"></div></div></div>
+    <div class="bar"><div class="lab"><span>California fast food (large chains)</span><em>$20.00 &middot; $41,600 a year</em></div><div class="trk"><div class="fill hi" style="width:100%"></div></div></div>
+    <div class="note">Annual figures are hourly rate times 2,080 hours (40 hours, 52 weeks), before taxes. Several California cities set higher local minimums. $20 is 2.8 times the federal rate and about 53% of average hourly pay nationwide.</div>
+  </div>
+
+  <div class="sec">Two readings of &ldquo;the original goal&rdquo;</div>
+  <div class="two">
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-burger"/></svg>A job should support a life</div>
+      <div class="pro">The law&rsquo;s own findings name &ldquo;the minimum standard of living necessary for health, efficiency, and general well-being of workers.&rdquo;</div>
+      <div class="pro">FDR&rsquo;s 1933 language was about &ldquo;living wages,&rdquo; not starter wages.</div>
+      <div class="con">Congress never defined &ldquo;living&rdquo; or tied the rate to a household budget.</div>
+      <div class="con">The 1938 law reached only workers in or producing for interstate commerce; agricultural and domestic workers were left out.</div>
+    </div>
+    <div class="card">
+      <div class="hd"><svg class="ic"><use href="#i-scale"/></svg>A floor, not a family wage</div>
+      <div class="pro">At 25&cent; it was about 40% of the typical factory wage: a floor under the labor market, not its middle.</div>
+      <div class="pro">Raising the floor can cost hours or jobs; economists disagree about how much.</div>
+      <div class="con">&ldquo;Living wages&rdquo; and the statute&rsquo;s standard-of-living language point the other way.</div>
+      <div class="con">A floor that slides to 19% of average pay is a different animal than one at 40%.</div>
+    </div>
+  </div>
+
+  <div class="sec">Claim check</div>
+  <div class="legend">
+    <span class="c-ok">Documented</span><span class="c-rep">Derived (my arithmetic)</span><span class="c-dis">Disputed or contested</span>
+  </div>
+  <div class="tbl">
+    <div class="tr"><div class="cl">The first federal minimum wage was 25&cent; an hour, effective Oct 24, 1938<small>US Department of Labor rate history.</small></div><span class="chip c-ok">Documented</span></div>
+    <div class="tr"><div class="cl">25&cent; is about $5.92 in August 2026 dollars<small>CPI-U 334.131 (Aug 2026) &divide; 14.1 (1938 average) &times; 0.25.</small></div><span class="chip c-rep">Derived</span></div>
+    <div class="tr"><div class="cl">In 1938 the minimum was about 40% of average manufacturing pay<small>$0.25 vs. $0.62, Social Security Administration table.</small></div><span class="chip c-rep">Derived</span></div>
+    <div class="tr"><div class="cl">Today it is about 19% of average hourly pay<small>$7.25 vs. $37.75; mismatched series, so a direction rather than a decimal.</small></div><span class="chip c-rep">Derived</span></div>
+    <div class="tr"><div class="cl">The federal rate has been $7.25 since July 24, 2009<small>US Department of Labor.</small></div><span class="chip c-ok">Documented</span></div>
+    <div class="tr"><div class="cl">California&rsquo;s general minimum is $16.90 now and $17.40 on Jan 1, 2027<small>California Department of Industrial Relations, certified July 31, 2026.</small></div><span class="chip c-ok">Documented</span></div>
+    <div class="tr"><div class="cl">California&rsquo;s fast-food minimum is $20 and has not been raised<small>Law took effect Apr 1, 2024; I found no increase as of Oct 7, 2026, but could not open a California government page that states the current rate.</small></div><span class="chip c-rep">As far as I can tell</span></div>
+    <div class="tr"><div class="cl">The $20 law cost roughly 18,000 to 23,000 fast-food jobs<small>One summary cites two studies; I have not read them, and other researchers have reported smaller effects.</small></div><span class="chip c-dis">Disputed</span></div>
+    <div class="tr"><div class="cl">&ldquo;Congress meant it to be a living wage&rdquo;<small>The statute names a standard of living but never defines one; people read the same text both ways.</small></div><span class="chip c-dis">Contested</span></div>
+  </div>
+
+  <div class="sec">What I will refresh, and what is not here yet</div>
+  <div class="watch">
+    <div class="w"><svg class="ic"><use href="#i-flag"/></svg><div class="q">Is the federal rate still $7.25?</div><div class="m">Changes only if Congress acts. Checked each time the page is updated.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-burger"/></svg><div class="q">Has California&rsquo;s Fast Food Council moved?</div><div class="m">It may raise the $20 each year by up to 3.5% or the CPI change, whichever is lower. It has been slow to meet.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-chart"/></svg><div class="q">New CPI and pay numbers</div><div class="m">September CPI is due October 14, 2026; the $5.92 and 19% figures get recomputed after it.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-eye"/></svg><div class="q">Planned additions</div><div class="m">The poverty line against full-time pay, who actually works minimum-wage jobs (ages, households), rent in a few cities, and what the job-effects studies say.</div></div>
+  </div>
+
+  <div class="foot">Dollar conversions use annual-average CPI-U for 1938 and 1968 against the August 2026 index, so they will drift a little with each new CPI release. Everything labeled &ldquo;derived&rdquo; is my own arithmetic from the cited figures.</div>
+</div>
+
+<h2>The full write-up</h2>
+
+<h2>What the minimum wage was supposed to do</h2>
+<p>The federal minimum wage came from the Fair Labor Standards Act, signed on June 25, 1938 and effective that October at 25 cents an hour. The idea was older than the federal government&rsquo;s nerve: Massachusetts passed the first state minimum wage law in 1912, and the Supreme Court spent the next two and a half decades swatting such laws down (<i>Adkins</i>, 1923) before relenting in <i>West Coast Hotel v. Parrish</i> in 1937.</p>
+<p>The stated purpose was a standard of living. The Act&rsquo;s findings section identifies &ldquo;labor conditions detrimental to the maintenance of the minimum standard of living necessary for health, efficiency, and general well-being of workers&rdquo; as the problem, and Franklin Roosevelt had put it more bluntly in 1933: no business that depends for its existence on paying less than living wages to its workers has any right to continue. The same law set the 40-hour week with overtime and limited child labor, which is why this page wears a Lewis Hine photograph of a twelve-year-old mill spinner. The goals sat alongside the Depression-era economics: put money in pockets, and keep low-wage employers from undercutting everyone else.</p>
+<p>Two features matter for any argument about intent. First, the original law applied generally to workers in or producing goods for interstate commerce, and agricultural and domestic workers were left out; historians tie that to Southern lawmakers&rsquo; votes, and those jobs were held disproportionately by Black workers. Second, &ldquo;living&rdquo; was never defined. There is no household budget in the statute, only a number that Congress sets and occasionally changes.</p>
+
+<h2>What 25 cents is worth now</h2>
+<p>By the Consumer Price Index, 25 cents in 1938 equals about $5.92 in August 2026 dollars: the August 2026 index (334.131) divided by the 1938 annual average (14.1), times 0.25. So on pure buying power, today&rsquo;s $7.25 is about 22% better than the original. The 1968 federal minimum, $1.60, comes to about $15.36 in the same dollars, more than double today&rsquo;s rate. The floor has been a lot higher, and it has been lower, than where it sits now.</p>
+
+<div class="aside"><strong>Second clock: where the floor sits.</strong> In 1938 the minimum, $0.25, was about 40% of the $0.62 average hourly pay of manufacturing production workers (Social Security Administration&rsquo;s table). Today $7.25 is about 19% of the $37.75 average hourly earnings of all private employees (BLS, August 2026). These are different series, so treat the comparison as a direction. Scaled by the same ratio, 25 cents would be roughly $15 an hour now.</div>
+
+<p>The two clocks answer different questions. Buying power asks whether a minimum-wage hour buys more than it used to, and the answer is yes, compared with 1938. The pay-ladder comparison asks where the lowest-paid job sits relative to everyone else&rsquo;s, and the answer is: much lower than in 1938. Which one you reach for tends to decide which side of the argument you are on.</p>
+
+<h2>California: a different ceiling</h2>
+<p>California&rsquo;s general minimum wage is $16.90 an hour in 2026 and rises to $17.40 on January 1, 2027, per the Department of Finance&rsquo;s July 31, 2026 certification (an increase of 2.99%, tied to CPI). Fast food is higher still: since April 1, 2024, limited-service chains with at least 60 locations nationwide have had a $20 minimum under AB 1228. A state Fast Food Council can raise it each year by up to 3.5% or the change in CPI, whichever is lower, but I found no increase so far; the council was reported slow to meet and to vote on a roughly 70-cent adjustment. Some California cities set higher local minimums.</p>
+<p>At $20, a full-time year (2,080 hours) comes to $41,600 before taxes, 2.8 times the federal rate&rsquo;s $15,080. Studies of the law&rsquo;s effects on jobs disagree: one summary reports two studies finding roughly 18,000 to 23,000 fewer fast-food jobs alongside about 13% higher earnings for those who kept them, and other researchers have reported smaller effects. I have not read the studies themselves yet, which is why the claim check marks it as disputed.</p>
+
+<h2>So should a fast-food worker expect to make a living?</h2>
+<p>The history supports two sentences that do not quite fit together. Congress wrote the minimum wage in the language of a standard of living, and it never wrote a formula for one. The 1938 floor sat at about 40% of typical factory pay; the current federal floor sits near 19% of average pay, and California&rsquo;s fast-food floor sits near 53%. What &ldquo;a living&rdquo; costs depends on where a person lives and who depends on their paycheck, which is the next set of numbers this page needs (poverty line against full-time pay, and rent in a few cities). Until those are in, the fair summary is that the law&rsquo;s stated aim points toward yes, its design points toward &ldquo;floor,&rdquo; and the answer depends heavily on which state you stand in.</p>
+
+<h2>Update log</h2>
+<ul>
+  <li><strong>October 7, 2026.</strong> Page created. Figures as of this date: federal $7.25 (DOL); California $16.90 now and $17.40 from January 1, 2027 (DIR); California fast food $20, no increase found; CPI-U August 2026 334.131 and average hourly earnings $37.75 (BLS, released September 11, 2026); 1938 CPI 14.1 and 1968 CPI 34.8 (Minneapolis Fed table). A first draft of this comparison given in conversation estimated average hourly pay at about $35 and the pay-scaled equivalent of 25 cents at about $14; the BLS figure of $37.75 replaces that and moves the equivalent to roughly $15.</li>
+</ul>
+
+<h2>Where I could be wrong</h2>
+<p>The dollar conversions use annual-average CPI for the old years against a single recent month, which is a convention, not the only one. The &ldquo;share of average pay&rdquo; comparison mixes a manufacturing series with an all-private-employee series, so the 40%-to-19% fall is a direction, not a measurement. I could not open a California government page that states the fast-food rate directly, so &ldquo;no increase&rdquo; rests on news coverage and summaries; the job-effects numbers come from a secondary summary, not the studies. The 1912, 1923 and 1937 history, the June 25, 1938 signing date and FDR&rsquo;s 1933 quote are from memory and a search summary, not yet checked against a primary source. The historians&rsquo; link between the original exclusions and Southern votes is widely documented but I have not cited a specific work here yet. Corrections welcome.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>US Department of Labor, Wage and Hour Division. <i>History of Federal Minimum Wage Rates Under the Fair Labor Standards Act, 1938&ndash;2009</i>. <a href="https://www.dol.gov/agencies/whd/minimum-wage/history/chart" rel="noopener" target="_blank">dol.gov</a></li>
+  <li>29 U.S.C. &sect; 202, Congressional findings and declaration of policy (Fair Labor Standards Act). <a href="https://www.law.cornell.edu/uscode/text/29/202" rel="noopener" target="_blank">law.cornell.edu</a></li>
+  <li>Social Security Administration. <i>Annual Statistical Supplement 2024, Table 3.B</i> (1938 minimum wage and average hourly earnings of production workers in manufacturing). <a href="https://www.ssa.gov/policy/docs/statcomps/supplement/2024/3b.pdf" rel="noopener" target="_blank">ssa.gov</a></li>
+  <li>Federal Reserve Bank of Minneapolis. <i>Consumer Price Index, 1913&ndash;</i> (annual average CPI-U: 1938 = 14.1, 1968 = 34.8, 2025 = 321.9; 1983 = 100). <a href="https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-" rel="noopener" target="_blank">minneapolisfed.org</a></li>
+  <li>US Bureau of Labor Statistics. <i>Real Earnings: August 2026</i>, released September 11, 2026 (CPI-U 334.131; average hourly earnings $37.75). <a href="https://www.bls.gov/news.release/archives/realer_09112026.htm" rel="noopener" target="_blank">bls.gov</a></li>
+  <li>California Department of Industrial Relations. <i>California Minimum Wage to Increase to $17.40 on January 1, 2027</i> (News Release 2026-66). <a href="https://dir.ca.gov/DIRNews/2026/2026-66.html" rel="noopener" target="_blank">dir.ca.gov</a></li>
+  <li>Wikipedia. <i>Minimum wage in California</i> (AB 1228 coverage and effective date; summary of studies on fast-food employment). Secondary source. <a href="https://en.wikipedia.org/wiki/Minimum_wage_in_California" rel="noopener" target="_blank">wikipedia.org</a></li>
+  <li>Fast Food Council powers and its stalled cost-of-living adjustment: Restaurant Business, <i>California&rsquo;s Fast Food Council has fallen dormant</i>, and KTLA, <i>California fast-food workers could see another pay increase</i>. Read as search summaries only; the first returned an access error when opened. <a href="https://restaurantbusinessonline.com/workforce/californias-fast-food-council-has-fallen-dormant" rel="noopener" target="_blank">restaurantbusinessonline.com</a> &middot; <a href="https://ktla.com/news/california/california-fast-food-workers-could-see-another-pay-increase/" rel="noopener" target="_blank">ktla.com</a></li>
+  <li>Image: Lewis Hine, <i>Addie Card, 12 years. Spinner in North Pownal Cotton Mill, Vt.</i>, 1910, National Child Labor Committee collection, Library of Congress. Public domain. <a href="https://commons.wikimedia.org/wiki/File:AddieCard05282vLewisHine.jpg" rel="noopener" target="_blank">commons.wikimedia.org</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-minimum-wage.html">minimum wage</a><a class="tg" href="tag-labor.html">labor</a><a class="tg" href="tag-economics.html">economics</a><a class="tg" href="tag-california.html">california</a><a class="tg" href="tag-fast-food.html">fast food</a><a class="tg" href="tag-inflation.html">inflation</a><a class="tg" href="tag-fair-labor-standards-act.html">fair labor standards act</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Minimum%20Wage%3A%20What%20It%20Was%20For%2C%20What%20It%20Buys%20Now%2C%20and%20Whether%20a%20Fast-Food%20Job%20Should%20Pay%20a%20Living%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="track-three-so-you-think-ai-is-a-normal-technology.html" data-search="track three: &quot;so you think ai is a normal technology&quot; a claude-credited music video mocks &quot;ai as normal technology&quot; line by line. who every lyric is aimed at, and what the essay it&#x27;s answering actually says." data-tags="ai-music claude anthropic artificial-intelligence economics satire generative-video music">
+      <span class="tile-media"><img src="img/edison-pearl-street-dynamo-room-1882.jpg" alt="" width="1600" height="900" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">CULTURE · SEPTEMBER 30, 2026</span>
+        <span class="ec-t">Track Three: &quot;So You Think AI Is a Normal Technology&quot;</span>
+        <span class="ec-s">A Claude-credited music video mocks &quot;AI as Normal Technology&quot; line by line. Who every lyric is aimed at, and what the essay it&#x27;s answering actually says.</span>
+      </span>
+    </a>
+    <a class="tile" href="houthis-bab-al-mandab-oil-what-it-means.html" data-search="the houthis took the bab al-mandab strait: what it means for oil, and what the us is likely to do the houthis took the bab al-mandab strait in september 2026. what it carries, what it does to oil prices, and why the us has so far declined to strike." data-tags="yemen houthis bab-al-mandab red-sea oil shipping saudi-arabia strait-of-hormuz iran united-states">
+      <span class="tile-media"><img src="img/bab-al-mandab-iss.jpg" alt="" width="1263" height="939" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · OCTOBER 6, 2026</span>
+        <span class="ec-t">The Houthis Took the Bab al-Mandab Strait: What It Means for Oil, and What the US Is Likely to Do</span>
+        <span class="ec-s">The Houthis took the Bab al-Mandab strait in September 2026. What it carries, what it does to oil prices, and why the US has so far declined to strike.</span>
+      </span>
+    </a>
+    <a class="tile" href="the-global-oil-crisis-where-things-stand.html" data-search="the global oil crisis: where things stand running page on the 2026 oil crisis: a world map of what is flowing, what is stopped, and why oil is still near $100 when gulf exports have recovered." data-tags="oil energy strait-of-hormuz red-sea black-sea shipping saudi-arabia iran russia ukraine geopolitics maps">
+      <span class="tile-media"><img src="img/oil-crisis-world-flows.png" alt="" width="1600" height="1024" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · OCTOBER 6, 2026</span>
+        <span class="ec-t">The Global Oil Crisis: Where Things Stand</span>
+        <span class="ec-s">Running page on the 2026 oil crisis: a world map of what is flowing, what is stopped, and why oil is still near $100 when Gulf exports have recovered.</span>
+      </span>
+    </a>
+    <a class="tile" href="the-rundown-2026-10-06.html" data-search="the rundown — october 6, 2026 8 stories across the world, business / macro &amp; markets, science, space, bitcoin &amp; crypto, health &amp; medicine, arts &amp; culture, tracked on october 6, 2026." data-tags="rundown">
+      <span class="tile-body">
+        <span class="ec-d">WORLD · OCTOBER 6, 2026</span>
+        <span class="ec-t">The Rundown — October 6, 2026</span>
+        <span class="ec-s">8 stories across The world, Business / macro &amp; markets, Science, Space, Bitcoin &amp; crypto, Health &amp; medicine, Arts &amp; culture, tracked on October 6, 2026.</span>
+      </span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-minimum-wage-what-it-was-for-and-what-it-pays-now-html">👁 <span id="hits-notebook-minimum-wage-what-it-was-for-and-what-it-pays-now-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fminimum-wage-what-it-was-for-and-what-it-pays-now.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-notebook-minimum-wage-what-it-was-for-and-what-it-pays-now-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-notebook-minimum-wage-what-it-was-for-and-what-it-pays-now-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-notebook-minimum-wage-what-it-was-for-and-what-it-pays-now-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer>
+</div>
+</body>
+</html>
