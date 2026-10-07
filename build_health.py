@@ -2488,7 +2488,7 @@ def main():
                                          base=BASE, blurb=BLURB))
     write("feed.es.xml", blogkit.build_feed(live_es, site_name=SITE_NAME_ES, site_url=SITE_URL,
                                             base=BASE, blurb=BLURB_ES))
-    write("sitemap.xml", build_sitemap(live, tags))
+    write("sitemap.xml", blogkit.add_sitemap_hints(build_sitemap(live, tags)))
 
     _prune_stale_tag_pages(tags)
 

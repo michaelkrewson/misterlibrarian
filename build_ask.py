@@ -790,7 +790,7 @@ def main():
         write("tags.html", tl)
     write("feed.xml", blogkit.build_feed(live, site_name=SITE_NAME, site_url=SITE_URL,
                                          base="/ask", blurb=BLURB))
-    write("sitemap.xml", build_sitemap(live, tags))
+    write("sitemap.xml", blogkit.add_sitemap_hints(build_sitemap(live, tags)))
     _prune_stale_tag_pages(tags)
 
     indexable = sum(1 for v in tags.values() if len(v) >= TAG_INDEX_MIN)

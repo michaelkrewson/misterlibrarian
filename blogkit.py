@@ -49,6 +49,66 @@ _MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
+# ---------------------------------------------------------- sitemap hints ---
+# <changefreq> + <priority> for every sitemap on the domain, one rule table so
+# the seven sitemaps can't drift apart (2026-10-07, Michael's call — reversing
+# the earlier "Google ignores both, emitting them is noise" decision). Honest
+# caveat kept on record: Google documents that it ignores BOTH fields and uses
+# <lastmod>; Bing says the same. They are harmless, and other crawlers read
+# them — but the signal that actually moves Google is an accurate lastmod.
+
+_SITE_ROOT = "https://mistertranslation.com/"
+_BLOGS = ("travel", "finance", "health", "notebook", "west", "ask")
+_CHAPTER_RE = re.compile(r"^[a-z0-9-]+-\d+(\.es)?\.html$")
+_BIBLE_HUBS = {"bible.html", "es.html", "toc.html", "old-testament.html",
+               "new-testament.html", "library.html", "biblioteca.html"}
+_URL_RE = re.compile(r"(<loc>([^<]+)</loc>)((\s*)<lastmod>[^<]*</lastmod>)?")
+
+
+def sitemap_hint(loc, daily=()):
+    """(changefreq, priority) for one sitemap URL. `daily` lets a builder flag
+    its live-data pages (the Ledger's boards) that genuinely change every day."""
+    if loc == _SITE_ROOT:
+        return "daily", "1.0"                   # the front door
+    if loc in daily:
+        return "daily", "0.6"
+    path = loc[len(_SITE_ROOT):] if loc.startswith(_SITE_ROOT) else loc
+    parts = path.split("/")
+    if parts[0] in _BLOGS and len(parts) == 2:
+        page = parts[1]
+        if page in ("", "es.html"):
+            return "daily", "0.9"               # a blog's front page
+        if page.startswith("tag-"):
+            return "weekly", "0.3"
+        if page in ("about.html", "about.es.html", "ask.html", "ask.es.html",
+                    "write.html", "disclaimer.html", "disclaimer.es.html",
+                    "tags.html"):
+            return "monthly", "0.4"
+        return "monthly", "0.7"                 # an entry / post / section page
+    if parts[0] in ("dict", "ency", "atlas") and len(parts) == 2:
+        return "monthly", "0.3"                 # a short reference entry
+    if len(parts) == 1:
+        if _CHAPTER_RE.match(path):
+            return "weekly", "0.8"              # a Bible chapter (revised often)
+        if path in _BIBLE_HUBS or path.startswith("book-"):
+            return "weekly", "0.7"
+    return "monthly", "0.5"
+
+
+def add_sitemap_hints(xml, daily=()):
+    """Insert <changefreq>/<priority> into every <url> of a built sitemap, after
+    <lastmod> when present (the sitemap XSD is a sequence: loc, lastmod,
+    changefreq, priority, then other-namespace elements like xhtml:link)."""
+    daily = set(daily)
+
+    def _sub(m):
+        freq, prio = sitemap_hint(sax.unescape(m.group(2)), daily)
+        sep = m.group(4) or ""
+        return "%s%s<changefreq>%s</changefreq>%s<priority>%s</priority>" % (
+            m.group(0), sep, freq, sep, prio)
+    return _URL_RE.sub(_sub, xml)
+
+
 # ------------------------------------------------------------- front matter ---
 
 def parse_front_matter(text, where, known_keys, required_keys):
