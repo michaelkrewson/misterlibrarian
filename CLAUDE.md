@@ -639,7 +639,16 @@ the script (idempotent — only fetches what's missing).
   2026-09-10, off by ~5×, for exactly that reason. The authority is the build's own
   `verse cards: N published to S3` line (`ls v/ | wc -l` agrees) — quote *that*, never a figure
   frozen in prose.
-- **The `dict/`, `ency/` and `atlas/` per-entry pages are `noindex,follow` and out of the
+- **2026-10-07 (Michael's call): `dict/` is INDEXABLE again** — dropped from
+  `NOINDEX_PREFIXES`, back in the sitemap at `priority 0.3`. `ency/` + `atlas/` stay noindex.
+  Same day: every sitemap now carries `<changefreq>` + `<priority>` from ONE rule table,
+  `blogkit.sitemap_hint()` / `add_sitemap_hints()` (home = daily/1.0, blog fronts daily/0.9,
+  chapters weekly/0.8, posts monthly/0.7, tags weekly/0.3, reference entries monthly/0.3) —
+  every builder's sitemap write goes through it; don't hand-add the tags. Google says it
+  ignores both fields; `lastmod` is what it reads, so `build_sitemap()`'s git pass now walks
+  the full history (the old 600-commit cap left 420 of 887 URLs with no lastmod). The home
+  page `<head>` also carries `<meta name="robots" content="index,follow,…">` + `rel="sitemap"`.
+- *(Superseded for `dict/` above)* **The `dict/`, `ency/` and `atlas/` per-entry pages are `noindex,follow` and out of the
   sitemap (2026-09-17, Michael's call — reversing the 09-10 wait-and-see).** `NOINDEX_PREFIXES`
   in `build.py`, applied inside `page()` off the `url=` prefix, so no call site opts in or out
   by hand; the sitemap's existing noindex sniff drops them (3,814 → 738 URLs). Measured the

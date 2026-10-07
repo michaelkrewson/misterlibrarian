@@ -7260,6 +7260,9 @@ def build_sitemap(entries, tags):
              for meta in TREASURY_CATEGORIES.values()]
     urls += [("%s%s" % (BASE_URL, meta["file"]), today)
              for meta in MW_SECTIONS.values()]
+    # Everything listed so far bar the front page and ask.html is a live-data
+    # board rebuilt every day — flagged daily in the sitemap hints.
+    daily = {u for u, _ in urls[1:] if not u.endswith("ask.html")}
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -7269,9 +7272,10 @@ def build_sitemap(entries, tags):
     body = "\n".join(
         "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n  </url>" % u
         for u in urls)
-    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            + body + "\n</urlset>\n")
+    return blogkit.add_sitemap_hints(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + body + "\n</urlset>\n", daily=daily)
 
 
 def main():

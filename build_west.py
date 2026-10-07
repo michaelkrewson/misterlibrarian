@@ -879,7 +879,7 @@ def main():
     write("feed.xml", blogkit.build_feed(sorted(live, key=lambda c: c["date"], reverse=True),
                                          site_name=SITE_NAME, site_url=SITE_URL,
                                          base=BASE, blurb=BLURB))
-    write("sitemap.xml", build_sitemap(live))
+    write("sitemap.xml", blogkit.add_sitemap_hints(build_sitemap(live)))
 
     print("built /west/ — %d chapter%s%s" % (
         len(live), "" if len(live) == 1 else "s",

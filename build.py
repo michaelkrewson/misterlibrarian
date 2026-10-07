@@ -1413,7 +1413,9 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
 # Per-entry reference pages that carry `noindex,follow` (see page()). The landing
 # pages (dictionary.html / encyclopedia.html / atlas.html and their Spanish twins)
 # are root files and stay indexable; routes/ (one page, ~330 words) is left alone.
-NOINDEX_PREFIXES = ("dict/", "ency/", "atlas/", "search.html")
+# "dict/" dropped 2026-10-07 (Michael's call): dictionary entries are indexable
+# again, listed in the sitemap at a low priority beneath the chapters.
+NOINDEX_PREFIXES = ("ency/", "atlas/", "search.html")
 
 
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
@@ -6148,7 +6150,11 @@ def build_sitemap():
       snippets on the pages that actually rank") rewrote the meta description of
       1,712 of ~2,772 pages — real content, and it must keep dating them; a flat
       threshold in the hundreds would have thrown it away too.
-    * No `priority` or `changefreq`. Google ignores both; emitting them is noise.
+    * `priority` + `changefreq` ARE emitted since 2026-10-07 (Michael's call),
+      via blogkit.add_sitemap_hints so all seven sitemaps share one rule table.
+      Google documents that it ignores both; lastmod is what it reads — which
+      is why the git pass below now walks the WHOLE history (it was capped at
+      600 commits, which left 420 of 887 URLs with no lastmod at all).
 
     Spanish pages are paired with their English twin via hreflang alternates, so a
     Spanish reader is offered the Spanish edition rather than either being treated
@@ -6173,12 +6179,12 @@ def build_sitemap():
         if os.path.isdir(subdir):
             pages += sorted(f"{sub}/{f}" for f in os.listdir(subdir) if f.endswith(".html"))
 
-    # Real dates, one subprocess call. Recent history is plenty: anything older
-    # than the window simply omits lastmod, which is better than inventing one.
+    # Real dates, one subprocess call over the full history (~1s for ~3k commits).
+    # A page git has never seen simply omits lastmod — better than inventing one.
     dates = {}
     try:
         log = subprocess.run(
-            ["git", "-C", OUT, "log", "--format=%cI", "--name-only", "-n", "600"],
+            ["git", "-C", OUT, "log", "--format=%cI", "--name-only"],
             capture_output=True, text=True, timeout=45).stdout
         # Walk newest-first, buffering each commit's file list so a bulk commit
         # can be discarded whole rather than dated file by file.
@@ -6251,6 +6257,8 @@ def build_sitemap():
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
            + "\n".join(entries) + "\n</urlset>\n")
+    import blogkit
+    xml = blogkit.add_sitemap_hints(xml)
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(xml)
     return len(entries)
 

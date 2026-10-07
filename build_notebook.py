@@ -2009,7 +2009,7 @@ def main():
         write("tags.html", tl)
     write("feed.xml", blogkit.build_feed(entries, site_name=SITE_NAME, site_url=SITE_URL,
                                          base=BASE, blurb=BLURB))
-    write("sitemap.xml", build_sitemap(entries, tags))
+    write("sitemap.xml", blogkit.add_sitemap_hints(build_sitemap(entries, tags)))
 
     _prune_stale_tag_pages(tags)
 

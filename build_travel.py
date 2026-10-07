@@ -1820,7 +1820,7 @@ def main():
     for fn, doc in build_post_pages(posts):
         write(fn, doc)
     write("feed.xml", build_feed(posts))
-    write("sitemap.xml", build_sitemap(posts))
+    write("sitemap.xml", blogkit.add_sitemap_hints(build_sitemap(posts)))
 
     # Always on, regardless of --drafts: this is what makes a draft checkable
     # from the LIVE site (see the big comment above build_draft_previews), so
