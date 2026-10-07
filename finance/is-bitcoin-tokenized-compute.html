@@ -635,8 +635,9 @@ link by link.</p>
 
 <p>Lowery wrote <em>Softwar: A Novel Theory on Power Projection and the National Strategic
 Significance of Bitcoin</em> as a 2023 MIT master's thesis (System Design and Management, advisor
-Joan Rubin) (<a href="https://dspace.mit.edu/handle/1721.1/153030">source</a>). He has been described as an active-duty U.S. Space Force
-officer and defense fellow at MIT (<a href="https://blog.bitfinex.com/education/a-look-at-jason-lowerys-softwar-thesis/">source</a>). The abstract asks readers to stop
+Joan Rubin) (<a href="https://dspace.mit.edu/handle/1721.1/153030">source</a>). The thesis's own biography page (p. 5) calls him an "active-duty
+technology and innovation officer in the US Space Force" and a Department of Defense-sponsored National Defense Fellow; a
+<a href="https://blog.bitfinex.com/education/a-look-at-jason-lowerys-softwar-thesis/">Bitfinex explainer</a> also walks through the thesis. The abstract asks readers to stop
 analyzing Bitcoin's proof-of-work only as money and to treat it as an "electro-cyber security
 technology" instead. The idea underneath is that digital systems have no built-in cost to attack,
 and proof-of-work adds a physical one: you must burn real energy to act, so cheating costs watts,
@@ -658,6 +659,18 @@ chips built to do nothing else, and AI inference is mostly matrix multiplication
 about a block's hashing can be redeemed as inference. What is "transferable" is the energy and
 money that went in, so "tokenized energy expenditure" is closer than "tokenized compute." That's
 also nearer to Lowery's own thesis, which counts power in watts.</p>
+
+<p>His own words make the case better than mine. In §5.10.4 he proposes the name "bitpower" and insists
+it "is not a semantically arbitrary abstraction": it "is meant to be taken literally," and a bitcoin is
+"literally digitized power" (p. 338). Proof-of-work protocols, he writes, are "computationally inefficient not just because of how
+many calculations they require, but because of how many watts must be consumed to make those
+calculations" (§5.7.7, p. 293). So the thesis's literal unit is the watt, and the tweet's "compute" is a
+translation. There is a second wrinkle. His "planetary computer" is deliberately, in his words, "reversed-optimized to be
+as expensive as possible to operate" (p. 41); the machine is built to be wasteful, which is the opposite
+of what you want from AI inference, where the whole business is getting more answers per watt. And the
+tweet's phrasing of Link 1 echoes §5.11.4, where Hal Finney's reusable proof-of-work lets someone
+"present a proof-of-power 'token' to show that the hash cost function was solved at some time in the
+past" (p. 350). That is the same idea with "power" where the tweet says "compute."</p>
 
 <p><strong>Link 2: "AI inference tokens are a digital representation of compute to be consumed in
 the future."</strong> Fair as a loose description of how AI is metered. Model providers charge per
@@ -689,12 +702,17 @@ earns the job if the stable options stop being acceptable, and he has a real arg
 
 <h2>The Best Version of His Argument</h2>
 
-<p>The strongest piece is the "geopolitically neutral" point. A stablecoin has an issuer, and an
-issuer can freeze an address. An AI agent that depends on a single company's permission to pay for
-its own compute has a single point of failure. Bitcoin has no issuer to call. If you believe the
-future involves software that needs money nobody can switch off, Lowery's reasoning about
-cost-imposition and neutral settlement is a coherent case, and nothing in the x402 numbers refutes
-it. They just show it hasn't happened yet.</p>
+<p>The strongest piece is the settlement point, and the thesis makes it better than the tweet does. In
+§5.12.1 Lowery treats cyberspace as an ocean and the financial network as a trade route: a nation that
+sends its money over a network run by one organization "tacitly" relies on that organization's permission
+and must "implicitly trust" it not to abuse that control (pp. 358&ndash;359). His example is the one everyone
+remembers: the US cutting Russia off from SWIFT, a system whose "permissions can be revoked at any
+time" (p. 359). A stablecoin has an issuer, and an issuer can freeze an address. An AI agent that depends
+on a single company's permission to pay for its own compute has the same single point of failure. Bitcoin
+has no issuer to call, which makes it a trade route nobody can revoke. If you believe the future involves
+software that needs money nobody can switch off, that is a coherent case, and nothing in the x402 numbers
+refutes it. They just show it hasn't happened yet. (The tweet's word is "geopolitically neutral"; the
+thesis's words are "zero-trust" and "permissionless," which is a narrower and more defensible claim.)</p>
 
 <h2>The Part I Don't Buy</h2>
 
@@ -708,8 +726,13 @@ insane." Nobody knows, and I'm not offering a view on whether BTC will do that.<
 <p>On Lowery's wider thesis, the most careful critique I've found is Lopp's. He agrees that
 Bitcoin "creates new game theory" and that Lowery analyzes part of it correctly, but argues Bitcoin's
 design doesn't scale to securing arbitrary data, and notes that much of Bitcoin's security rests on
-what Lowery's own framework calls "logical security," the rules coded in software that nodes enforce
-(<a href="https://blog.lopp.net/softwar-thesis-review/">source</a>). I read Lopp's review rather than all 385 pages, so I can't say who is right.</p>
+what Lowery's own framework calls "logical constraints," the rules coded in software that nodes enforce
+(<a href="https://blog.lopp.net/softwar-thesis-review/">source</a>). Lowery's contrast is between "encoded logical
+constraints" and "severe physical costs" (p. 25). The line Lopp goes after is in §1.4.1: "Once we have figured out how to keep financial
+bits of information physically secure against attack, that means we have figured out how to keep all
+bits of information physically secure against attack" (p. 35). I have now read that section and most of
+the rest of the 400-page PDF (the exact list is under "Where I Could Be Wrong"), and Lopp's summary of it is
+fair. Whether the claim itself is right is a security-engineering question I'm not qualified to settle.</p>
 
 <div class="verdict">
   <p><strong>What the evidence supports.</strong> Bitcoin's block production does require large,
@@ -724,12 +747,13 @@ what Lowery's own framework calls "logical security," the rules coded in softwar
 <h2>Where I Could Be Wrong</h2>
 
 <ul>
-  <li><strong>I have not read all of <em>Softwar</em>.</strong> I read the thesis record and abstract,
-  Lopp's review of the full text, and Lowery's post. A reader of the whole thesis may find he answers
-  some of this; his tweet is a summary, not his full argument.</li>
-  <li><strong>The "energy, not compute" distinction is my reading,</strong> and Lowery may mean
-  "compute" in a broader sense than I've given him. If he does, the objection becomes a dispute over
-  words, not facts.</li>
+  <li><strong>I have not read all of <em>Softwar</em>.</strong> I read the executive summary, Chapter 1,
+  Chapter 5 (except roughly pp. 272&ndash;286) and Chapter 6. Chapters 2&ndash;4 I only searched for
+  specific terms, so if he answers some of this there, I missed it. I also read Lopp's review and
+  Lowery's post. The tweet is a summary, not his full argument.</li>
+  <li><strong>"Energy, not compute" still leaves a dispute over words.</strong> The distinction is sourced
+  (his literal term is "bitpower"), but he also calls Bitcoin a "planetary-scale computer" (p. 305), so
+  he does use computer language on purpose, and he may mean "compute" more loosely than I do.</li>
   <li><strong>The x402 figures are one 30-day snapshot,</strong> from the protocol's own dashboard,
   and the USDC share comes from press reports of a Circle executive. Agent payments are growing fast,
   so these numbers will date quickly. Also, I haven't surveyed AI agents paying over Lightning or in
@@ -740,9 +764,49 @@ what Lowery's own framework calls "logical security," the rules coded in softwar
   of this is investment advice.</li>
 </ul>
 
+<h2>Update, October 7: I Read the Thesis</h2>
+
+<p>This post first went up having checked the tweet against Lopp's review and the abstract. Since then I
+have read most of the thesis itself, and it changes the picture in five places. (Page numbers are from the
+400-page PDF.)</p>
+
+<p><strong>The tweet's "imposing costs on autonomous action" has a root, and it's a wall.</strong> §5.8
+describes a "proof-of-power wall," an API that works by "rejecting all incoming control signals that don't
+present proof-of-power" (p. 297); §5.9.10 imagines a future cyberspace where programs "wouldn't be allowed
+to execute certain control signals unless they're backed by substantial proof-of-power" (p. 322). Swap in
+AI agents and you have the tweet. The nearest working thing to that wall is x402, which rejects an HTTP
+request unless it comes with a payment. But x402 mostly charges in USDC, and under Lowery's framework a
+dollar token an issuer can freeze is trust-based, not physical, cost. That last step is my application of his
+categories, not a sentence he wrote. It does sharpen the question: the wall already exists, and what
+matters is what it is paid in.</p>
+
+<p><strong>His own math supports my "21 million doesn't cap the budget" point.</strong> §5.11.2 uses
+Gabriel's Horn, the shape with finite volume and infinite surface, to argue a fixed supply of bitpower
+can be "infinitely scarce and infinitely scalable" (p. 346), because one unit can represent unlimited
+physical power. If so, a capped coin count does not cap what the system can represent, which is what I
+argued above from the price side.</p>
+
+<p><strong>The thesis says it isn't a theory of money.</strong> §5.11.3: "This is not a grounded theory
+about money, it's a grounded theory about power" (p. 348). The tweet asks BTC to be an AI's spending
+budget, a monetary job. That extension is the tweet's, not the thesis's.</p>
+
+<p><strong>The AI-agent idea comes after the thesis.</strong> "Artificial intelligence" appears three times
+in the whole text (pp. 237, 238 and 245). Two are in a passage worrying that AI and drone swarms make
+kinetic war too cheap to deter; the third is in a list of online abuses ("unsupervised artificial
+intelligence controlling the primary information streams of billions of people"). None is about agents
+paying for anything.</p>
+
+<p><strong>One passage fits an AI agent uncomfortably well.</strong> In §5.12.3 Lowery says a nation that
+subscribes to Bitcoin's miners without contributing its own hash power "would tacitly be trusting in that
+militia not to denial-of-service attack them" (p. 361), since everyone else could simply withhold its
+transactions. He wrote about nations, so applying it to an agent is my analogy. But an agent that holds
+BTC with no mining power of its own is in the same position: it depends on strangers choosing to include
+its transactions. That does not make BTC a bad choice for an agent, only a choice with a different
+trust assumption than "no issuer to call" suggests.</p>
+
 <h2>Sources</h2>
 <ol class="sources">
-  <li data-n="1">Lowery JP. <em>Softwar: A Novel Theory on Power Projection and the National Strategic Significance of Bitcoin</em>. MIT, S.M. thesis (System Design and Management), February 2023. <a href="https://dspace.mit.edu/handle/1721.1/153030" rel="noopener" target="_blank">dspace.mit.edu</a></li>
+  <li data-n="1">Lowery JP. <em>Softwar: A Novel Theory on Power Projection and the National Strategic Significance of Bitcoin</em>. MIT, S.M. thesis (System Design and Management), February 2023. Page and section numbers in this post refer to the 400-page PDF. <a href="https://dspace.mit.edu/handle/1721.1/153030" rel="noopener" target="_blank">dspace.mit.edu</a></li>
   <li data-n="2">Lopp J. <em>Softwar Thesis Review</em>. Cypherpunk Cogitations. <a href="https://blog.lopp.net/softwar-thesis-review/" rel="noopener" target="_blank">blog.lopp.net</a></li>
   <li data-n="3">Lowery J (@JasonPLowery). Post on X, October 7, 2026 UTC. <a href="https://x.com/JasonPLowery/status/2107629586603500006" rel="noopener" target="_blank">x.com</a></li>
   <li data-n="4">Bitfinex. <em>A look at Jason Lowery's Softwar thesis</em>. <a href="https://blog.bitfinex.com/education/a-look-at-jason-lowerys-softwar-thesis/" rel="noopener" target="_blank">blog.bitfinex.com</a></li>
@@ -750,6 +814,7 @@ what Lowery's own framework calls "logical security," the rules coded in softwar
   <li data-n="6">CNBC. <em>Bitcoin miner Core Scientific rides AI from bankruptcy to $6.7 billion partnership in eight months</em>. <a href="https://nbcchicago.com/news/business/money-report/bitcoin-miner-core-scientific-rides-ai-from-bankruptcy-to-6-7-billion-partnership-in-eight-months/3513802" rel="noopener" target="_blank">nbcchicago.com</a></li>
   <li data-n="7">x402 Foundation. Network dashboard, last 30 days as shown when read. <a href="https://www.x402.org/" rel="noopener" target="_blank">x402.org</a></li>
   <li data-n="8">KuCoin News. <em>Circle CEO says USDC handles 99.3% of x402 AI agent payments</em>. <a href="https://www.kucoin.com/news/flash/circle-ceo-says-usdc-handles-99-3-of-x402-ai-agent-payments" rel="noopener" target="_blank">kucoin.com</a></li>
+  <li data-n="9">Lowery JP. <em>Softwar</em> thesis PDF (400 pages), the copy I read in full-text form: the Internet Archive's capture of MIT's own file, because MIT's server answers automated requests with a captcha. <a href="https://web.archive.org/web/20251128142024id_/https://dspace.mit.edu/bitstream/handle/1721.1/153030/lowery-jplowery-sm-sdm-2023-thesis.pdf?sequence=1" rel="noopener" target="_blank">web.archive.org</a></li>
 </ol>
 
     <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-ai.html">ai</a><a class="tg" href="tag-jason-lowery.html">jason lowery</a><a class="tg" href="tag-softwar.html">softwar</a><a class="tg" href="tag-proof-of-work.html">proof of work</a><a class="tg" href="tag-compute.html">compute</a><a class="tg" href="tag-stablecoins.html">stablecoins</a><a class="tg" href="tag-x402.html">x402</a><a class="tg" href="tag-ai-agents.html">ai agents</a><a class="tg" href="tag-energy.html">energy</a></div>
@@ -768,6 +833,14 @@ what Lowery's own framework calls "logical security," the rules coded in softwar
         <span class="ec-s">Is Bitcoin the fix for the &quot;18 months to the permanent underclass&quot; warning? The energy math, the bond math, and what AI agents actually pay with.</span>
       </span>
     </a>
+    <a class="tile" href="twenty-eight-questions-nine-thousand-answers.html" data-search="twenty-eight questions, nine thousand answers blackrock cited a study saying ai agents prefer bitcoin for savings. the study: 36 chatbots, 28 questions, 91% vs 18% by model. real agent payments: tiny." data-tags="bitcoin blackrock artificial-intelligence agentic-payments stablecoins bitcoin-policy-institute">
+      <span class="tile-media"><img src="img/grey-parrot-portrait.jpg" alt="" width="1600" height="900" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">OCTOBER 7, 2026</span>
+        <span class="ec-t">Twenty-Eight Questions, Nine Thousand Answers</span>
+        <span class="ec-s">BlackRock cited a study saying AI agents prefer Bitcoin for savings. The study: 36 chatbots, 28 questions, 91% vs 18% by model. Real agent payments: tiny.</span>
+      </span>
+    </a>
     <a class="tile" href="the-exchanges-cme-decided-to-trust.html" data-search="the exchanges cme decided to trust which exchanges feed cme&#x27;s bitcoin reference rate, how they&#x27;re vetted, and the unresolved 2018 manipulation probe into four of them." data-tags="bitcoin cme stablecoins federal-reserve monetary-policy">
       <span class="tile-media"><img src="img/sec-headquarters.jpg" alt="" width="1500" height="900" loading="lazy"/></span>
       <span class="tile-body">
@@ -782,14 +855,6 @@ what Lowery's own framework calls "logical security," the rules coded in softwar
         <span class="ec-d">SEPTEMBER 20, 2026</span>
         <span class="ec-t">Forty Months for a Yes</span>
         <span class="ec-s">Deutsche Bank plans Bitcoin, Ether and stablecoin custody in 2026 — filed with BaFin in 2023, while four smaller German banks got licensed first.</span>
-      </span>
-    </a>
-    <a class="tile" href="reserved-for-future-use.html" data-search="reserved for future use ripple&#x27;s three ai announcements, the 1997 error code behind &quot;xrp joins stripe&#x27;s standard,&quot; stripe&#x27;s stellar stake, and who really leads on crypto rules." data-tags="xrp ripple artificial-intelligence ai agentic-payments stripe tempo stablecoins crypto-regulation south-korea japan russia mica genius-act">
-      <span class="tile-media"><img src="img/http-402-reserved-for-future-use.svg" alt="" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 17, 2026</span>
-        <span class="ec-t">Reserved for Future Use</span>
-        <span class="ec-s">Ripple&#x27;s three AI announcements, the 1997 error code behind &quot;XRP joins Stripe&#x27;s standard,&quot; Stripe&#x27;s Stellar stake, and who really leads on crypto rules.</span>
       </span>
     </a>
     </div>
