@@ -35,6 +35,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import html
+import json
 import os
 import re
 import urllib.parse
@@ -499,3 +500,16 @@ def affiliate_note_missing(body_html):
     word "affiliate" refuses the build. The footer disclosure is Amazon's
     requirement; this one is the site's own."""
     return has_amazon_link(body_html) and "affiliate" not in plain_text(body_html).lower()
+
+
+# ------------------------------------------------------------ structured data ---
+
+def ld_script(obj):
+    """One schema.org object as a <script type="application/ld+json"> tag.
+
+    Strings going in must already be PLAIN text, not HTML — JSON-LD is not
+    HTML, and a front-matter "&amp;" passed through raw reaches Google as a
+    literal "&amp;" (the travel blog paid for that one; see build_travel.py).
+    `</` is escaped so a title can never close the script element early."""
+    body = json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
+    return '<script type="application/ld+json">%s</script>' % body

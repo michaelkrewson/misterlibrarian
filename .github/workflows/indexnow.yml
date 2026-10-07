@@ -1,0 +1,23 @@
+name: IndexNow ping
+
+# Tells Bing (and through it DuckDuckGo / ChatGPT search) which pages a push
+# added or changed, instead of waiting for its crawler to find them. Only URLs
+# listed in a sitemap are ever sent — see tools/indexnow_ping.py. Pushes made
+# with this repo's GITHUB_TOKEN (the board refresh, the draft-publish button)
+# don't trigger workflows, so those never ping.
+on:
+  push:
+    branches: [main]
+    paths: ["**.html"]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Let GitHub Pages finish deploying first, so a crawler that follows the
+      # ping straight away fetches the new page rather than the old one.
+      - run: sleep 120
+      - run: python3 tools/indexnow_ping.py --changed "${{ github.event.before }}" "${{ github.sha }}"

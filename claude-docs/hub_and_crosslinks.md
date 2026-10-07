@@ -66,3 +66,28 @@ because those live one level down). Change the policy → edit `privacy.html` an
 line; don't fork per-publication copies. The AdSense wording (cookies, Ads Settings/aboutads
 opt-outs, partner-sites link, EEA/UK consent) is what Google's program policy asks a publisher's
 policy to say — keep it if the section is ever rewritten.
+
+## Search-engine discovery: structured data + IndexNow (2026-10-07)
+
+Prompted by "I can't find the Ledger on Google at all." Nothing was technically broken
+(indexable, canonical, sitemap, robots.txt all fine); the domain is young, has almost no
+inbound links, and its name says "translation", not "Librarian's Ledger". Two additive fixes:
+
+- **Ledger structured data** (`build_finance.py` `_ld_front` / `_ld_entry`, emitted via
+  `blogkit.ld_script`): a named `Blog` (with `alternateName` "Librarian's Ledger" / "The
+  Ledger") on `/finance/`, and a `BlogPosting` + `BreadcrumbList` (Mr. Librarian › The
+  Librarian's Ledger › entry) on every published entry. Drafts get none. The other blogs
+  don't carry these yet — copy the Ledger's two functions if asked.
+- **IndexNow ping** (`tools/indexnow_ping.py`, `.github/workflows/indexnow.yml`): on every
+  push to main touching `.html`, waits 120s for Pages, then submits the changed files' URLs —
+  **only those listed in a sitemap**, so noindexed stubs/drafts can't leak. Key file
+  `2078cdc5e8e74ac79f60518ddf2f9b03.txt` at the root (from Bing verification) — **never delete
+  it**, same rule as the Google verification file. GITHUB_TOKEN pushes (board refresh,
+  draft-publish button) don't trigger workflows, so they never ping. Backfill/one-off:
+  `python3 tools/indexnow_ping.py --all`.
+- ⚠ **Fresh-worktree gotcha found on the way:** a new checkout gives an SVG hero and its PNG
+  twin the same mtime, `_svg_social_png`'s cache test can see the SVG as newer, the Chromium
+  re-render fails, and the build silently falls back to SVG og:images (broken X/Facebook
+  cards). Before `python3 build_finance.py` in a new worktree: `for s in finance/img/*.svg; do
+  p="${s%.svg}.png"; [ -f "$p" ] && touch "$p"; done`, then check `git diff` for any
+  `og:image` flipping `.png`→`.svg`.
