@@ -1035,6 +1035,73 @@ def _social_tags(title, desc, image=""):
             f'<meta name="twitter:image" content="{esc(src)}"/>')
 
 
+# schema.org structured data (2026-10-07). The publication's name lives in a
+# domain called "mistertranslation", so nothing in the URL tells Google this
+# is "The Librarian's Ledger" — these blocks say it in the one vocabulary
+# search engines read for that: a named Blog, its BlogPosting entries, and a
+# breadcrumb trail (Mr. Librarian › The Librarian's Ledger › entry) that a
+# result can show in place of a bare URL. Travel has carried the same kind
+# of block since its Review markup; the Ledger had none.
+_LD_AUTHOR = {"@type": "Person", "name": "Mr. Librarian",
+              "url": f"{SITE_URL}/librarian.html"}
+_LD_BLOG = {"@type": "Blog", "name": SITE_NAME, "url": BASE_URL}
+
+
+def _ld_plain(s):
+    """Front matter is HTML-escaped text; JSON-LD wants plain text."""
+    return html.unescape(blogkit.plain_text(s or ""))
+
+
+def _ld_front():
+    return blogkit.ld_script({
+        "@context": "https://schema.org",
+        **_LD_BLOG,
+        "alternateName": ["Librarian's Ledger", "The Ledger"],
+        "description": _ld_plain(WRITING_BLURB),
+        "inLanguage": "en",
+        "author": _LD_AUTHOR,
+        "publisher": _LD_AUTHOR,
+        "isPartOf": {"@type": "WebSite", "name": "Mr. Librarian",
+                     "url": f"{SITE_URL}/"},
+    })
+
+
+def _ld_entry(e, desc):
+    image = e["hero"]
+    if image and image.lower().endswith(".svg"):
+        image = _svg_social_png(os.path.join(OUT, "img"), image) or ""
+    url = BASE_URL + e["file"]
+    title = _ld_plain(e["title"])
+    posting = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": title,
+        "description": _ld_plain(desc),
+        "url": url,
+        "mainEntityOfPage": url,
+        "datePublished": e["date"].isoformat(),
+        "inLanguage": "en",
+        "image": f"{SITE_URL}{BASE}/img/{image}" if image else OG_IMAGE,
+        "author": _LD_AUTHOR,
+        "publisher": _LD_AUTHOR,
+        "isPartOf": _LD_BLOG,
+    }
+    if e.get("updated"):
+        posting["dateModified"] = e["updated"].isoformat()
+    crumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Mr. Librarian",
+             "item": f"{SITE_URL}/"},
+            {"@type": "ListItem", "position": 2, "name": SITE_NAME,
+             "item": BASE_URL},
+            {"@type": "ListItem", "position": 3, "name": title},
+        ],
+    }
+    return blogkit.ld_script(posting) + "\n" + blogkit.ld_script(crumbs)
+
+
 # Same system fonts build.py's verse cards use (its _CARD_FONT_PATHS) — repeated
 # here rather than imported, because importing a 6,700-line sibling builder for
 # four file paths is the wrong trade, and build_travel.py is independent too.
@@ -1411,7 +1478,7 @@ def build_entry_page(e, board=None, pool=()):
 <meta property="og:title" content="%(title)s"/>
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
-%(social)s
+%(social)s%(ld)s
 <style>%(css)s</style>%(goat)s
 </head>
 <body>
@@ -1442,6 +1509,8 @@ def build_entry_page(e, board=None, pool=()):
         "noindex": noindex,
         "url": url,
         "social": _social_tags(e["title"], desc, e["hero"]),
+        # A draft is a noindexed preview; it gets no structured data.
+        "ld": "" if e["draft"] else "\n" + _ld_entry(e, desc),
         "css": CSS.replace("__ACCENT__", ACCENT),
         "goat": _goatcounter(),
         # active="home": an entry belongs to Writing, so the nav marks that
@@ -1608,7 +1677,7 @@ def _hits_widget(path, suffix=""):
 
 
 def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website",
-           extra_css="", extra_js="", image=""):
+           extra_css="", extra_js="", image="", ld=""):
     """`extra_css`/`extra_js` exist so one page's chrome does not become every
     page's weight. Every page inlines its whole stylesheet (no external CSS file
     to fetch), so a Bitcoin-board-only grid appended to the shared CSS would ride
@@ -1631,7 +1700,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <meta property="og:title" content="%(title)s"/>
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
-%(social)s
+%(social)s%(ld)s
 <style>%(css)s</style>%(goat)s
 </head>
 <body>
@@ -1646,6 +1715,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
        "site": esc(SITE_NAME), "ogt": og_type,
        "social": _social_tags(title, desc, image),
+       "ld": ("\n" + ld) if ld else "",
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT),
        # The accent is substituted in the SCRIPT too, not just the stylesheet.
        # Page JavaScript that builds SVG has to name the colour somewhere, and
@@ -2069,7 +2139,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
-        desc=WRITING_BLURB, url=BASE_URL, active="home",
+        desc=WRITING_BLURB, url=BASE_URL, active="home", ld=_ld_front(),
         body="""%s%s%s  <section class="writing">
     %s
     %s
