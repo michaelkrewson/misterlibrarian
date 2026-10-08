@@ -7,6 +7,37 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>The AI Scorecard: Which Model Is Best, by Whose Test</title>
+    <link>https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A standing page on where AI models actually stand, built from the scoreboards the AI companies don't run. It covers who leads on human votes versus test batteries, how fast the models are improving, what a point of intelligence costs, how far open models trail, and which headline claims hold up. Updated as new models and new scores land.</description>
+    <category>AI</category>
+    <category>AI Scorecard</category>
+    <category>benchmarks</category>
+    <category>LMArena</category>
+    <category>Artificial Analysis</category>
+    <category>open-weight models</category>
+    <category>Claude</category>
+    <category>Gemini</category>
+    <category>GPT-6</category>
+  </item>
+  <item>
+    <title>Gemini 4 Argon: Google's Benchmarks, Checked</title>
+    <link>https://mistertranslation.com/notebook/gemini-4-argon-benchmarks-checked.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/gemini-4-argon-benchmarks-checked.html</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Google DeepMind says Gemini 4 Argon beats Claude Opus 5.5, Claude Fable 5.1 and GPT-6 Astra on 13 of 19 benchmarks. I read the table, the methodology PDF and the independent scoreboards. The wins are real and mostly don't depend on Google grading its own homework, but the human-vote leaderboard and the biggest independent test battery disagree about whether it is the best model in the world.</description>
+    <category>AI</category>
+    <category>Gemini</category>
+    <category>Google</category>
+    <category>DeepMind</category>
+    <category>benchmarks</category>
+    <category>AI Scorecard</category>
+    <category>Claude</category>
+    <category>GPT-6</category>
+  </item>
+  <item>
     <title>Disney and the Future It Promised: A Living Page</title>
     <link>https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</guid>
@@ -345,35 +376,6 @@
     <category>ai voice synthesis</category>
     <category>generative video</category>
     <category>music</category>
-  </item>
-  <item>
-    <title>Two Sea Spiders Nobody Had Named in Nearly a Hundred Years</title>
-    <link>https://mistertranslation.com/notebook/two-sea-spiders-nobody-had-named-in-a-century.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/two-sea-spiders-nobody-had-named-in-a-century.html</guid>
-    <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A University of British Columbia master's thesis turns up two sea spider species new to science in the Salish Sea — the first described there in almost a century — including a red-eyed, three-lipped species named for the hairy spines on its legs, found on scientific dives to 18 metres and confirmed with DNA barcoding.</description>
-    <category>biology</category>
-    <category>marine biology</category>
-    <category>taxonomy</category>
-    <category>salish sea</category>
-    <category>british columbia</category>
-    <category>pycnogonida</category>
-    <category>sea spiders</category>
-  </item>
-  <item>
-    <title>It Took Its Inventor a Month. The Record Is Now 2.76 Seconds.</title>
-    <link>https://mistertranslation.com/notebook/it-took-its-inventor-a-month.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/it-took-its-inventor-a-month.html</guid>
-    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Ernő Rubik built the first Rubik's Cube in 1974 to work out a problem in how solid objects can move, and then needed about a month to solve it himself. The official record now belongs to a nine-year-old in Poland at 2.76 seconds. Here is how a Hungarian classroom model became a 1980s craze, and why the times fell so far once the kids came back to it.</description>
-    <category>rubiks cube</category>
-    <category>speedcubing</category>
-    <category>erno rubik</category>
-    <category>hungary</category>
-    <category>puzzles</category>
-    <category>world records</category>
-    <category>toys</category>
-    <category>1980s</category>
   </item>
 </channel>
 </rss>

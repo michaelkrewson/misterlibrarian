@@ -1,0 +1,172 @@
+title: Gemini 4 Argon: Google's Benchmarks, Checked
+date: 2026-10-08
+section: technology
+tags: AI, Gemini, Google, DeepMind, benchmarks, AI Scorecard, Claude, GPT-6
+summary: Google DeepMind says Gemini 4 Argon beats Claude Opus 5.5, Claude Fable 5.1 and GPT-6 Astra on 13 of 19 benchmarks. I read the table, the methodology PDF and the independent scoreboards. The wins are real and mostly don't depend on Google grading its own homework, but the human-vote leaderboard and the biggest independent test battery disagree about whether it is the best model in the world.
+meta_desc: Gemini 4 Argon wins 13 of 19 of Google's benchmarks. Which rows Google ran itself, what the independent leaderboards say, and what it costs.
+hero: ramsay-lab-notebook-ucl.jpg
+hero_alt: An open nineteenth-century laboratory notebook belonging to the chemist William Ramsay, its pages filled with handwritten notes, resting on a dark cloth
+hero_credit: One of William Ramsay's laboratory notebooks. Ramsay and Lord Rayleigh discovered argon in 1894. Photo by UCL Mathematical &amp; Physical Sciences, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:Ramsay%27s_Notebook_(39805484302).jpg" rel="noopener" target="_blank">Wikimedia Commons</a>.
+---
+<p>On September 30, 2026 Google DeepMind announced <strong>Gemini 4 Argon</strong> and published a 19-row benchmark table in which it beats Anthropic&rsquo;s Claude Opus 5.5 and Claude Fable 5.1 and OpenAI&rsquo;s GPT-6 Astra on 13 rows, ties one and loses five. Almost nobody can use it yet: it is going first to vetted security teams through Google&rsquo;s Fairwind Program, at an introductory $2 per million input tokens and $10 per million output tokens. The question worth asking about a table like that is not whether the numbers are impressive. They are. It is who ran each test. I went through the methodology document row by row, then checked the leaderboards Google doesn&rsquo;t control. This is the first entry feeding <a href="ai-scorecard-which-model-is-best-by-whose-test.html">the AI Scorecard</a>, the standing page where I keep track of this.</p>
+
+<p>The name is a nice choice, for what it&rsquo;s worth. Argon was discovered in 1894 because two measurements of the same thing didn&rsquo;t agree. Lord Rayleigh found that nitrogen taken from the air was about 0.5% denser than nitrogen made in the lab. He refused to call that experimental error, and the gap turned out to be a gas nobody knew was there. Disagreeing measurements are the subject of this entry too.</p>
+
+<style>
+.ig{--ok:#5fd3a1;--rep:#e8c968;--dis:#f08a5d;--unv:#ef6f6f;--none:#7f8fa6;--card:#0a111c;--line:#1b2738;--ink:#c3d0e0;--mut:#8696ad;--acc:#8fa3ff;
+  margin:8px 0 30px;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.ig *{box-sizing:border-box}
+.ig svg.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.ig .band{border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;margin:0 0 18px;
+  background:radial-gradient(120% 140% at 0% 0%,rgba(143,163,255,.14),transparent 55%),linear-gradient(180deg,#0d1624,#0a111c)}
+.ig .live{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b9c6ff;font-weight:700}
+.ig .band .big{font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.2;color:#f2f6fc;margin:10px 0 6px}
+.ig .band .sub{font-size:14.5px;color:var(--mut);line-height:1.5}
+.ig .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ig .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.ig .c-ok{color:var(--ok)}.ig .c-rep{color:var(--rep)}.ig .c-dis{color:var(--dis)}.ig .c-unv{color:var(--unv)}.ig .c-none{color:var(--none)}
+.ig .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.ig .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 13px}
+.ig .stat .ic{font-size:22px;color:var(--acc);margin-bottom:6px}
+.ig .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:32px;line-height:1;color:#f2f6fc}
+.ig .stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--mut);margin-top:6px}
+.ig .sec{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:26px 0 12px;display:flex;align-items:center;gap:10px}
+.ig .sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.ig .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mut);margin:2px 0 12px}
+.ig .legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;margin-right:6px}
+.ig .bt{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.ig .br{display:grid;grid-template-columns:minmax(0,1.9fr) repeat(4,minmax(40px,.62fr));gap:4px;align-items:center;padding:8px 12px;border-top:1px solid var(--line);font-size:13px}
+.ig .br:first-child{border-top:0}
+.ig .br.hd{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;background:#0d1624}
+.ig .br .nm{color:#dbe5f2;line-height:1.3;min-width:0}
+.ig .br .nm small{display:block;font-size:11px;color:var(--mut)}
+.ig .br .nm small i{font-style:normal;padding:0 5px;border-radius:4px;border:1px solid currentColor;margin-left:4px}
+.ig .br .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--mut)}
+.ig .br .v.a{color:#dbe5f2}
+.ig .br .v.w{color:#f2f6fc;font-weight:700}
+.ig .br.win{box-shadow:inset 3px 0 0 var(--ok)}.ig .br.loss{box-shadow:inset 3px 0 0 var(--dis)}.ig .br.tie{box-shadow:inset 3px 0 0 var(--rep)}
+.ig .s3{color:var(--ok)}.ig .sg{color:var(--rep)}.ig .sm{color:var(--dis)}
+.ig .fun{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ig .bar{margin:0 0 14px}
+.ig .bar:last-child{margin:0}
+.ig .bar .lab{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:#dbe5f2;margin-bottom:5px}
+.ig .bar .lab em{font-style:normal;color:var(--mut);font-size:12.5px}
+.ig .bar .trk{height:20px;border-radius:6px;background:#0f1a29;overflow:hidden;display:flex}
+.ig .bar .fill{height:100%;background:linear-gradient(90deg,#4f63d6,#8fa3ff)}
+.ig .bar .fill.w{background:var(--ok)}.ig .bar .fill.l{background:var(--dis)}.ig .bar .fill.t{background:var(--rep)}
+.ig .fun .note{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.5}
+.ig .foot{font-size:12px;color:var(--mut);margin-top:18px;line-height:1.5}
+@media (max-width:560px){.ig .stats{grid-template-columns:1fr}.ig .band .big{font-size:23px}.ig .stat b{font-size:28px}
+  .ig .br{padding:8px 8px;font-size:12px;grid-template-columns:minmax(0,1.5fr) repeat(4,minmax(34px,.6fr))}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.8c2 .6 3.4 2.3 3.4 5.2"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M14.6 9.6c-.5-.9-1.5-1.3-2.6-1.3-1.5 0-2.6.8-2.6 2s1 1.7 2.6 2 2.6.8 2.6 2-1.1 2-2.6 2c-1.1 0-2.2-.5-2.7-1.4"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M9.5 12h6M9.5 16h6"/></symbol>
+</defs></svg>
+
+<h2>What Google's Gemini 4 Argon benchmarks actually show</h2>
+<div class="ig" role="region" aria-label="Infographic: Gemini 4 Argon's published benchmark results and the independent leaderboards, as of October 8, 2026">
+
+  <div class="band">
+    <span class="live">Checked Oct 8, 2026</span>
+    <div class="big">Argon tops 13 of Google&rsquo;s 19 benchmarks. Two independent scoreboards disagree about what that adds up to.</div>
+    <div class="sub">LMArena&rsquo;s human voters put it first, on a preliminary count of 4,892 votes. Artificial Analysis&rsquo;s test battery scores it 53, tied with GPT-6 Astra and five points behind Claude Opus 5.5.</div>
+    <div class="chips">
+      <span class="chip c-ok"><svg class="ic"><use href="#i-trophy"/></svg>13 wins &middot; 1 tie &middot; 5 losses</span>
+      <span class="chip c-rep"><svg class="ic"><use href="#i-lock"/></svg>Testers only, no public API</span>
+      <span class="chip c-dis"><svg class="ic"><use href="#i-doc"/></svg>No model card linked yet</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><svg class="ic"><use href="#i-users"/></svg><b>#1</b><span>on LMArena&rsquo;s text leaderboard, 1525 &plusmn;9, flagged preliminary (Oct 8)</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-chart"/></svg><b>53</b><span>Artificial Analysis Intelligence Index, tested at &ldquo;high&rdquo;; the leader, Claude Opus 5.5, scores 58</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-coin"/></svg><b>$1.99</b><span>per index task at the introductory price, vs $5.98 for Opus 5.5 and $3.26 for GPT-6 Astra at max</span></div>
+  </div>
+
+  <div class="sec">Google&rsquo;s table, with who ran each test</div>
+  <div class="legend"><span class="s3">Third-party leaderboard for every model</span><span class="sg">Google ran every model</span><span class="sm">Mixed: Google ran Argon, rivals&rsquo; numbers from elsewhere</span></div>
+  <div class="bt">
+    <div class="br hd"><div>Benchmark</div><div class="v">Argon</div><div class="v">Astra</div><div class="v">Fable</div><div class="v">Opus</div></div>
+    <div class="br win"><div class="nm">Vals Index<small>Knowledge work <i class="s3">3rd</i></small></div><div class="v w">68.9</div><div class="v">63.1</div><div class="v">65.8</div><div class="v">67.0</div></div>
+    <div class="br win"><div class="nm">AutomationBench<small>Knowledge work <i class="s3">3rd</i></small></div><div class="v w">51.3</div><div class="v">41.4</div><div class="v">31.4</div><div class="v">42.5</div></div>
+    <div class="br win"><div class="nm">Vals Finance Agent v2<small>Knowledge work <i class="s3">3rd</i></small></div><div class="v w">65.4</div><div class="v">53.5</div><div class="v">58.9</div><div class="v">58.6</div></div>
+    <div class="br win"><div class="nm">Harvey Legal Agent<small>Knowledge work <i class="s3">3rd</i></small></div><div class="v w">19.6</div><div class="v">5.4</div><div class="v">6.7</div><div class="v">3.8</div></div>
+    <div class="br win"><div class="nm">DeepSWE v1.1<small>Agentic coding <i class="sm">mixed</i></small></div><div class="v w">77.9</div><div class="v">74.1</div><div class="v">67.4</div><div class="v">74.2</div></div>
+    <div class="br loss"><div class="nm">FrontierSWE v2<small>Agentic coding <i class="s3">3rd</i></small></div><div class="v a">55.0</div><div class="v w">65.5</div><div class="v">56.3</div><div class="v">62.3</div></div>
+    <div class="br win"><div class="nm">Vibe Code Bench<small>Agentic coding <i class="s3">3rd</i></small></div><div class="v w">91.9</div><div class="v">89.6</div><div class="v">90.3</div><div class="v">90.3</div></div>
+    <div class="br loss"><div class="nm">Terminal-Bench 4.0<small>Agentic coding <i class="sm">mixed</i></small></div><div class="v a">57.4</div><div class="v">58.2</div><div class="v">57.9</div><div class="v w">66.4</div></div>
+    <div class="br loss"><div class="nm">PostTrainBench<small>ML engineering <i class="sg">Google</i></small></div><div class="v a">45.3</div><div class="v">44.3</div><div class="v">40.2</div><div class="v w">49.3</div></div>
+    <div class="br loss"><div class="nm">Terminal-Bench Science<small>Science &amp; math <i class="sm">mixed</i></small></div><div class="v a">57.6</div><div class="v w">68.1</div><div class="v">52.6</div><div class="v">63.3</div></div>
+    <div class="br win"><div class="nm">LABBench 2<small>Science &amp; math <i class="sg">Google</i></small></div><div class="v w">88.8</div><div class="v">85.4</div><div class="v">68.6</div><div class="v">73.1</div></div>
+    <div class="br win"><div class="nm">RiemannBench<small>Science &amp; math <i class="s3">3rd</i></small></div><div class="v w">76.0</div><div class="v">72.0</div><div class="v">65.6</div><div class="v">69.6</div></div>
+    <div class="br win"><div class="nm">GraphWalks &le;128k<small>Long context <i class="sg">Google</i></small></div><div class="v w">99.7</div><div class="v">98.7</div><div class="v">91.4</div><div class="v">90.6</div></div>
+    <div class="br win"><div class="nm">GraphWalks 256k&ndash;1M<small>Long context <i class="sg">Google</i></small></div><div class="v w">84.2</div><div class="v">71.8</div><div class="v">65.0</div><div class="v">66.8</div></div>
+    <div class="br win"><div class="nm">Agent&rsquo;s Last Exam<small>Computer use <i class="sm">mixed</i></small></div><div class="v w">39.5</div><div class="v">34.2</div><div class="v">&ndash;</div><div class="v">38.2</div></div>
+    <div class="br loss"><div class="nm">OSWorld 2.0 (offline)<small>Computer use <i class="sm">mixed</i></small></div><div class="v a">69.2</div><div class="v w">72.6</div><div class="v">&ndash;</div><div class="v">&ndash;</div></div>
+    <div class="br win"><div class="nm">Chartography<small>Multimodal <i class="s3">3rd</i></small></div><div class="v w">71.6</div><div class="v">71.0</div><div class="v">46.2</div><div class="v">66.3</div></div>
+    <div class="br win"><div class="nm">LVBench (video)<small>Multimodal <i class="sg">Google</i></small></div><div class="v w">91.7</div><div class="v">87.5</div><div class="v">79.7</div><div class="v">83.7</div></div>
+    <div class="br tie"><div class="nm">CWE-bench v1<small>Cybersecurity <i class="s3">3rd</i></small></div><div class="v w">68.0</div><div class="v w">68.0</div><div class="v">58.0</div><div class="v">67.0</div></div>
+  </div>
+  <div class="foot">Scores in percent, from the Performance table on Google DeepMind&rsquo;s Gemini page. The source tag for each row is from Google&rsquo;s own methodology PDF. A dash means Google printed no result. Columns: Gemini 4 Argon, GPT-6 Astra, Claude Fable 5.1, Claude Opus 5.5.</div>
+
+  <div class="sec">Does it matter who ran the test?</div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Third-party leaderboards (9 rows)</span><em>7 wins &middot; 1 tie &middot; 1 loss</em></div><div class="trk"><div class="fill w" style="width:77.8%"></div><div class="fill t" style="width:11.1%"></div><div class="fill l" style="width:11.1%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Google ran every model (5 rows)</span><em>4 wins &middot; 1 loss</em></div><div class="trk"><div class="fill w" style="width:80%"></div><div class="fill l" style="width:20%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Mixed sources (5 rows)</span><em>2 wins &middot; 3 losses</em></div><div class="trk"><div class="fill w" style="width:40%"></div><div class="fill l" style="width:60%"></div></div></div>
+    <div class="note">Green is a win for Argon, amber a tie, orange a loss. The surprise runs in Google&rsquo;s favor: Argon does best on the rows where an outside leaderboard scored every model, and worst on the mixed rows, where Google scored Argon itself and took the rivals&rsquo; numbers from public leaderboards or system cards. Every mixed loss is an agent working in a terminal or driving a computer.</div>
+  </div>
+</div>
+
+<h2>The wins are not mostly home cooking</h2>
+<p>My first suspicion with any vendor table is the grading. A company that picks the benchmarks, runs its own model, and pulls competitors&rsquo; numbers from wherever is looking at itself in a flattering mirror. Google&rsquo;s methodology document is unusually plain about which rows are which, and the split doesn&rsquo;t support that suspicion. On the nine rows where an outside leaderboard scored all four models (Vals AI, Zapier, Proximal, Surge, CWE-bench), Argon wins seven, ties one and loses one. The knowledge-work results are not close. On Harvey&rsquo;s legal-agent benchmark, scored by Vals AI, Argon gets 19.6% against 3.8% to 6.7% for the others.</p>
+<p>The rows that deserve an asterisk are the ones Google ran itself. Long context (GraphWalks) and video understanding (LVBench) are where Argon&rsquo;s margins are largest, and Google scored every model there. On LVBench the document notes that Gemini watched at one frame per second while GPT-6 Astra was capped at 800 frames, Opus 5.5 at 600 and Fable 5.1 at 300, &ldquo;due to API limitations.&rdquo; That may be the only fair way to run it, but on a long video it means the rivals saw less of the film. Treat those two rows as Google&rsquo;s word until someone else repeats them.</p>
+<p>The losses tell a consistent story. Every row Argon drops is an agent doing long, hands-on technical work: Terminal-Bench 4.0 (57.4% against Opus 5.5&rsquo;s 66.4%), FrontierSWE v2, Terminal-Bench Science, the ML-engineering test PostTrainBench, and the computer-use test OSWorld. At sitting in a terminal and grinding through a software job, Google&rsquo;s own table says Argon is not the leader yet.</p>
+
+<h2>What the scoreboards Google doesn&rsquo;t control say</h2>
+<p><strong>LMArena</strong> (now at arena.ai) ranks models by blind head-to-head votes from the public. As of October 8 its text leaderboard has <code>gemini-4-argon-high</code> first at 1525, 18 points ahead of Claude Opus 5.5 at 1507. The ratings carry error bars of &plusmn;9 and &plusmn;8 points and the two ranges don&rsquo;t overlap, so the lead is real on today&rsquo;s votes. It rests on 4,892 votes, though, against tens of thousands for the older models behind it, and the site marks it preliminary.</p>
+<p><strong>Artificial Analysis</strong> runs its own battery of tests and folds them into one Intelligence Index. It had pre-release access, and it scores Argon at its &ldquo;high&rdquo; setting at 53. That ties GPT-6 Astra at max and Claude Fable 5.1, and it sits five points behind Claude Opus 5.5 at 58 and three behind Claude Sonnet 5.5 at 56. Two Artificial Analysis findings, as reported by DeepLearning.AI&rsquo;s <i>The Batch</i>, are good news for Google: Argon has the lowest hallucination rate (15%) of any model scoring 45 or more on the index, and it ranks first on Artificial Analysis&rsquo;s own version of AutomationBench at 78%.</p>
+<p>So which is it, best in the world or tied for fifth? Both, depending on the question. Human voters judge an answer by how it reads, and Argon apparently reads very well. The index is weighted toward multi-step reasoning, agentic tasks and coding, which is where Google&rsquo;s own table shows Argon&rsquo;s weak rows. One more caveat runs in Argon&rsquo;s favor. Google&rsquo;s table uses its highest thinking setting, and Artificial Analysis tested &ldquo;high,&rdquo; so the index number may move once a max setting is measured.</p>
+
+<div class="aside">
+  <p><strong>A disclosure, since this is about AI models.</strong> I use Anthropic&rsquo;s Claude for nearly everything, and two of the models Argon is measured against are Claude models. That is why this entry, and the scorecard it feeds, leans on other people&rsquo;s tests and not on my impressions.</p>
+</div>
+
+<h2>What it costs, and why investors are watching</h2>
+<p>The introductory price is $2 per million input tokens and $10 per million output tokens, with cached input 95% off. Google&rsquo;s post says it will rise to $4 and $20 later, with no date given. On Artificial Analysis&rsquo;s cost-per-task measure, Argon at the introductory price comes to $1.99 per index task, against $3.26 for GPT-6 Astra at max and $5.98 for Claude Opus 5.5 at max. At the standard price that roughly doubles to about $3.98. For context, OpenAI&rsquo;s GPT-6.1 Sol scores 52 for $0.72 a task, so &ldquo;cheap&rdquo; has competition too.</p>
+<p>The reason the investor press cares is the bill behind it. Alphabet raised its 2026 capital-spending guidance to $195&ndash;205 billion in July, part of roughly $735&ndash;750 billion planned across Amazon, Microsoft, Alphabet and Meta this year. A model that wins knowledge-work benchmarks and launches at a discount is what that spending is supposed to buy, and the price is a signal that Google intends to compete on cost. None of that says anything about what any stock will do. It is the context the coverage is written in.</p>
+
+<h2>What isn&rsquo;t there yet</h2>
+<ul>
+  <li><strong>Public access.</strong> Only Fairwind Program testers can use it. Google says paid API customers and Google AI Ultra subscribers come first, &ldquo;as soon as possible,&rdquo; with no date.</li>
+  <li><strong>A model card.</strong> Google&rsquo;s Gemini models page links the benchmark table and a methodology PDF, but when I checked on October 8 it linked no model card or system card for Argon.</li>
+  <li><strong>Independent replication of the Google-run rows.</strong> GraphWalks, LVBench, LABBench 2 and PostTrainBench are Google&rsquo;s runs of every model.</li>
+  <li><strong>Cyber guardrails for the first users.</strong> Google says the defenders in the Fairwind Program get the model without its cyber guardrails, which is the point of the program. Everyone else gets the restricted version.</li>
+</ul>
+
+<h2>Where I could be wrong</h2>
+<ul>
+  <li><strong>LMArena moves.</strong> A preliminary rating on under 5,000 votes can shift a lot as votes come in. The 18-point lead is a snapshot from October 8.</li>
+  <li><strong>The source tags are Google&rsquo;s description of its own method.</strong> I sorted rows by what the methodology PDF says, not by re-running anything.</li>
+  <li><strong>&ldquo;Tied for fifth&rdquo; is my count.</strong> Artificial Analysis ranks each reasoning setting separately, so Argon (high) is eighth of 226 entries. Counted one model at a time, it shares a score with GPT-6 Astra and Claude Fable 5.1 behind Opus 5.5 and Sonnet 5.5.</li>
+  <li><strong>The hallucination and AutomationBench-AA figures</strong> are Artificial Analysis results as reported by <i>The Batch</i>. The model page I could read listed those evaluations without the numbers.</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Google. <i>Gemini 4 Argon</i> (announcement), September 30, 2026. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" rel="noopener" target="_blank">blog.google</a></li>
+  <li>Google DeepMind. Gemini models page, Performance table. <a href="https://deepmind.google/models/gemini/" rel="noopener" target="_blank">deepmind.google/models/gemini</a></li>
+  <li>Google DeepMind. <i>Gemini 4 Argon Model evaluation: approach, methodology &amp; results</i> (PDF). <a href="https://deepmind.google/models/evals-methodology/gemini-4-argon" rel="noopener" target="_blank">deepmind.google</a></li>
+  <li>LMArena (arena.ai). Text leaderboard, overall, updated October 8, 2026. <a href="https://arena.ai/leaderboard/text" rel="noopener" target="_blank">arena.ai/leaderboard/text</a></li>
+  <li>Artificial Analysis. Gemini 4 Argon (High) model page and Intelligence Index leaderboard. <a href="https://artificialanalysis.ai/models/gemini-4-argon" rel="noopener" target="_blank">artificialanalysis.ai</a></li>
+  <li>DeepLearning.AI, <i>The Batch</i>. <i>Data Points: Gemini 4 Argon&rsquo;s benchmarks and availability</i>, October 5, 2026. <a href="https://www.deeplearning.ai/the-batch/gemini-4-argons-benchmarks-and-availability" rel="noopener" target="_blank">deeplearning.ai</a></li>
+  <li>Technology.org. <i>Google Gemini 4 Argon Debuts for Cyber Defenders</i>, October 1, 2026. <a href="https://www.technology.org/2026/10/01/google-gemini-4-argon-fairwind-cyber-defenders/" rel="noopener" target="_blank">technology.org</a></li>
+  <li>Platformonomics. <i>Follow the CAPEX: Q2 2026 Scoreboard</i>, July 2026. <a href="https://platformonomics.com/2026/07/follow-the-capex-q2-2026-scoreboard/" rel="noopener" target="_blank">platformonomics.com</a></li>
+  <li>American Physical Society. <i>This Month in Physics History: Lord Rayleigh and the Discovery of Argon, August 13, 1894</i>. APS News, August 2013. <a href="https://www.aps.org/apsnews/2013/08/this-month-in-physics-history" rel="noopener" target="_blank">aps.org</a></li>
+</ol>

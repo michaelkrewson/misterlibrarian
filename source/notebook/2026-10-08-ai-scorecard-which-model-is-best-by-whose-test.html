@@ -1,0 +1,290 @@
+title: The AI Scorecard: Which Model Is Best, by Whose Test
+date: 2026-10-08
+updated: 2026-10-08
+section: technology
+tags: AI, AI Scorecard, benchmarks, LMArena, Artificial Analysis, open-weight models, Claude, Gemini, GPT-6
+summary: A standing page on where AI models actually stand, built from the scoreboards the AI companies don't run. It covers who leads on human votes versus test batteries, how fast the models are improving, what a point of intelligence costs, how far open models trail, and which headline claims hold up. Updated as new models and new scores land.
+meta_desc: Which AI model is best right now? A living scorecard built from LMArena, Artificial Analysis, ARC Prize, METR and Epoch AI, with a claim check and costs.
+hero: mechanical-turk-racknitz-1789.jpg
+hero_alt: An eighteenth-century hand-coloured engraving of the Mechanical Turk chess automaton, a turbaned figure seated behind a cabinet, drawn with the cabinet cut away to reveal a man hidden inside working the chess pieces by candlelight
+hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's 1789 book explaining how the chess-playing machine was really worked (Humboldt University Library). Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Racknitz_-_The_Turk_3.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>.
+---
+<p>This is a living page. Every few weeks an AI company announces a model and a table showing it beating everyone else, and every company tops its own table. The question a reader actually has, <strong>which AI model is best right now</strong>, can't be answered from those tables. So this page answers it from the scoreboards the companies don&rsquo;t run: the human-vote leaderboard LMArena, Artificial Analysis&rsquo;s test battery, the ARC Prize puzzles, METR&rsquo;s task-length measurements and Epoch AI&rsquo;s trend work. I keep it current, write a separate entry when something big lands, and link it from here. <strong>Last updated October 8, 2026.</strong></p>
+
+<p>The picture at the top is the Mechanical Turk, a chess-playing machine built in 1770 that, in the usual telling, beat Benjamin Franklin and Napoleon. The engraving is from a 1789 book by Joseph Racknitz, who set out to explain the trick and drew it: a strong human player hidden in the cabinet. (He got some of the details wrong, but not that one.) The lesson still applies to benchmarks. Before believing a machine is smart, open the cabinet and see who is doing the scoring.</p>
+
+<style>
+.ig{--ok:#5fd3a1;--rep:#e8c968;--dis:#f08a5d;--unv:#ef6f6f;--none:#7f8fa6;--card:#0a111c;--line:#1b2738;--ink:#c3d0e0;--mut:#8696ad;--acc:#8fa3ff;
+  --ant:#e0a57a;--goo:#7fb3ff;--oai:#5fd3a1;--opn:#c99cf2;
+  margin:8px 0 30px;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.ig *{box-sizing:border-box}
+.ig svg.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.ig .band{border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;margin:0 0 18px;
+  background:radial-gradient(120% 140% at 0% 0%,rgba(143,163,255,.14),transparent 55%),linear-gradient(180deg,#0d1624,#0a111c)}
+.ig .live{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b9c6ff;font-weight:700}
+.ig .live i{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 rgba(143,163,255,.6);animation:igp 1.8s infinite}
+@keyframes igp{70%{box-shadow:0 0 0 9px rgba(143,163,255,0)}100%{box-shadow:0 0 0 0 rgba(143,163,255,0)}}
+@media (prefers-reduced-motion:reduce){.ig .live i{animation:none}}
+.ig .band .big{font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.2;color:#f2f6fc;margin:10px 0 6px}
+.ig .band .sub{font-size:14.5px;color:var(--mut);line-height:1.5}
+.ig .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ig .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.ig .c-ok{color:var(--ok)}.ig .c-rep{color:var(--rep)}.ig .c-dis{color:var(--dis)}.ig .c-unv{color:var(--unv)}.ig .c-none{color:var(--none)}
+.ig .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.ig .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 13px}
+.ig .stat .ic{font-size:22px;color:var(--acc);margin-bottom:6px}
+.ig .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:32px;line-height:1;color:#f2f6fc}
+.ig .stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--mut);margin-top:6px}
+.ig .sec{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:28px 0 12px;display:flex;align-items:center;gap:10px}
+.ig .sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.ig .asof{font-size:11px;color:var(--mut);font-weight:400;letter-spacing:.04em;text-transform:none}
+.ig .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--mut);margin:2px 0 12px}
+.ig .legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;margin-right:6px}
+.ig .boards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ig .c-ant{color:var(--ant)}.ig .c-goo{color:var(--goo)}.ig .c-oai{color:var(--oai)}
+.ig .bd{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ig .bd .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.ig .bd .who{font-family:Georgia,serif;font-size:19px;color:#f2f6fc;line-height:1.2}
+.ig .bd .m{font-size:12.5px;color:var(--mut);line-height:1.45}
+.ig .bd .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.ig .fun{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ig .bar{margin:0 0 12px}
+.ig .bar:last-child{margin:0}
+.ig .bar .lab{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:#dbe5f2;margin-bottom:4px}
+.ig .bar .lab em{font-style:normal;color:var(--mut);font-size:12.5px;white-space:nowrap}
+.ig .bar .trk{height:18px;border-radius:6px;background:#0f1a29;overflow:hidden;position:relative}
+.ig .bar .fill{height:100%;border-radius:6px;background:var(--c,var(--acc))}
+.ig .bar .rng{position:absolute;top:0;height:100%;border-radius:6px;background:var(--c,var(--acc));opacity:.85}
+.ig .bar .ant{--c:var(--ant)}.ig .bar .goo{--c:var(--goo)}.ig .bar .oai{--c:var(--oai)}.ig .bar .opn{--c:var(--opn)}.ig .bar .met{--c:#33476a}
+.ig .axis{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:2px;font-variant-numeric:tabular-nums}
+.ig .fun .note{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.5}
+.ig .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.ig .tl{position:relative;margin:0 0 6px 8px;padding-left:26px;border-left:2px solid var(--line)}
+.ig .ev{position:relative;padding:0 0 16px}
+.ig .ev:last-child{padding-bottom:2px}
+.ig .ev::before{content:"";position:absolute;left:-35px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--dot,var(--acc));border:3px solid #060b14;box-shadow:0 0 0 2px var(--dot,var(--acc))}
+.ig .ev .d{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dot,var(--acc))}
+.ig .ev .t{font-size:15px;line-height:1.5;color:#dbe5f2;margin-top:2px}
+.ig .ev .t small{display:block;font-size:12.5px;color:var(--mut);margin-top:3px}
+.ig .tbl{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.ig .tr{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.ig .tr:first-child{border-top:0}
+.ig .tr .cl{font-size:14px;line-height:1.45;color:#dbe5f2}
+.ig .tr .cl small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.ig .uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.ig .use{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:5px}
+.ig .use .ic{font-size:22px;color:var(--acc)}
+.ig .use .q{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.ig .use .a{font-family:Georgia,serif;font-size:18px;color:#f2f6fc;line-height:1.2}
+.ig .use .m{font-size:12.5px;color:var(--mut);line-height:1.45}
+.ig .watch{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ig .w{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.ig .w .ic{font-size:24px;color:var(--acc)}
+.ig .w .q{font-size:14px;font-weight:700;color:#f2f6fc;line-height:1.35}
+.ig .w .m{font-size:13px;color:var(--mut);line-height:1.45}
+.ig .story{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ig .story a{display:flex;flex-direction:column;gap:5px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:inherit}
+.ig .story a:hover{border-color:var(--acc)}
+.ig .story .d{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-weight:700}
+.ig .story .t{font-family:Georgia,serif;font-size:17px;color:#f2f6fc;line-height:1.25}
+.ig .story .m{font-size:12.5px;color:var(--mut);line-height:1.45}
+.ig .story a.new{border-color:#3b4f8f}
+.ig .foot{font-size:12px;color:var(--mut);margin-top:18px;line-height:1.5}
+@media (max-width:560px){.ig .stats{grid-template-columns:repeat(2,1fr)}.ig .watch,.ig .boards{grid-template-columns:1fr}.ig .band .big{font-size:23px}.ig .stat b{font-size:28px}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.8c2 .6 3.4 2.3 3.4 5.2"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M14.6 9.6c-.5-.9-1.5-1.3-2.6-1.3-1.5 0-2.6.8-2.6 2s1 1.7 2.6 2 2.6.8 2.6 2-1.1 2-2.6 2c-1.1 0-2.2-.5-2.7-1.4"/></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M5 5h5a2 2 0 1 1 4 0h5v5a2 2 0 1 0 0 4v5h-5a2 2 0 1 0-4 0H5v-5a2 2 0 1 1 0-4z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-unlock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 7.5-2"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M9.5 12h6M9.5 16h6"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 12h18"/></symbol>
+</defs></svg>
+
+<h2>Which AI model is best right now?</h2>
+<div class="ig" role="region" aria-label="Infographic: the AI Scorecard, independent rankings of AI models, as of October 8, 2026">
+
+  <div class="band">
+    <span class="live"><i></i>Standing page &middot; updated Oct 8, 2026</span>
+    <div class="big">It depends whose test you trust. Human voters put Google&rsquo;s new Gemini 4 Argon first. The biggest test battery puts Anthropic&rsquo;s Claude Opus 5.5 five points clear.</div>
+    <div class="sub">Three independent scoreboards, three different leaders, and a fourth that has run out of ruler. The disagreement is the useful part: each one measures something different, and the &ldquo;best model&rdquo; changes with the job.</div>
+    <div class="chips">
+      <span class="chip c-goo"><svg class="ic"><use href="#i-users"/></svg>Human votes: Gemini 4 Argon</span>
+      <span class="chip c-ant"><svg class="ic"><use href="#i-chart"/></svg>Test battery: Claude Opus 5.5</span>
+      <span class="chip c-oai"><svg class="ic"><use href="#i-puzzle"/></svg>New puzzles: GPT-6 Astra</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><svg class="ic"><use href="#i-users"/></svg><b>1525</b><span>Gemini 4 Argon&rsquo;s LMArena rating, #1, but preliminary on 4,892 votes</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-chart"/></svg><b>58</b><span>Claude Opus 5.5 on the Artificial Analysis Intelligence Index, the top score of 226 entries</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-puzzle"/></svg><b>62.7%</b><span>GPT-6 Astra on ARC-AGI-3&rsquo;s standard harness; 99.9% when allowed its own provider&rsquo;s tools</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-unlock"/></svg><b>~4 mo</b><span>how far the best open-weight models trail the frontier, per Epoch AI (2026 average)</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-coin"/></svg><b>8&times;</b><span>what the top score costs per task ($5.98) vs a model six points behind it ($0.72)</span></div>
+    <div class="stat"><svg class="ic"><use href="#i-bank"/></svg><b>$172B</b><span>big-four capex in Q2 2026 alone, more than their $155B for all of 2023</span></div>
+  </div>
+
+  <div class="sec">The scoreboard of scoreboards</div>
+  <div class="boards">
+    <div class="bd"><div class="k">LMArena &middot; human votes</div><div class="who"><span class="dot" style="background:var(--goo)"></span>Gemini 4 Argon</div><div class="m">Blind head-to-head votes from the public: which answer reads better. #2 Claude Opus 5.5. Rewards answers people like. As of Oct 8.</div></div>
+    <div class="bd"><div class="k">Artificial Analysis &middot; test battery</div><div class="who"><span class="dot" style="background:var(--ant)"></span>Claude Opus 5.5</div><div class="m">A battery of hard evaluations run by an independent firm, folded into one index. #2 Claude Sonnet 5.5. Weighted to reasoning, agents and code. As of Oct 8.</div></div>
+    <div class="bd"><div class="k">ARC-AGI-3 &middot; new puzzles</div><div class="who"><span class="dot" style="background:var(--oai)"></span>GPT-6 Astra</div><div class="m">Puzzle games the model has never seen, scored against 500 members of the public. The harness changes the score from 62.7% to 99.9%. As of Sep 3.</div></div>
+    <div class="bd"><div class="k">METR &middot; task length</div><div class="who">Ruler ran out</div><div class="m">How long a task, measured in human working time, a model can finish half the time. The newest model measured was Claude Mythos Preview in May, and METR says anything above 16 hours is now beyond its tasks. Last update May 8.</div></div>
+  </div>
+  <div class="legend" style="margin-top:12px"><span style="color:var(--ant)">Anthropic</span><span style="color:var(--goo)">Google</span><span style="color:var(--oai)">OpenAI</span><span style="color:var(--opn)">Open-weight models</span></div>
+
+  <div class="sec">Human votes: LMArena&rsquo;s top eight <span class="asof">Oct 8, 2026</span></div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Gemini 4 Argon (high)</span><em>1525 &plusmn;9 &middot; prelim.</em></div><div class="trk"><div class="rng goo" style="left:60%;width:30%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Opus 5.5 (high)</span><em>1507 &plusmn;8</em></div><div class="trk"><div class="rng ant" style="left:31.7%;width:26.7%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Opus 4.6 (high)</span><em>1504 &plusmn;3</em></div><div class="trk"><div class="rng ant" style="left:35%;width:10%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Fable 5 (high)</span><em>1504 &plusmn;4</em></div><div class="trk"><div class="rng ant" style="left:33.3%;width:13.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Opus 4.7 (high)</span><em>1501 &plusmn;4</em></div><div class="trk"><div class="rng ant" style="left:28.3%;width:13.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Fable 5.1 (max)</span><em>1501 &plusmn;6</em></div><div class="trk"><div class="rng ant" style="left:25%;width:20%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Opus 4.6</span><em>1498 &plusmn;3</em></div><div class="trk"><div class="rng ant" style="left:25%;width:10%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Gemini 3.8 Flash (high)</span><em>1497 &plusmn;5 &middot; prelim.</em></div><div class="trk"><div class="rng goo" style="left:20%;width:16.7%"></div></div></div>
+    <div class="axis" aria-hidden="true"><span>1480</span><span>1495</span><span>1510</span><span>1525</span><span>1540</span></div>
+    <div class="note">Each bar is a rating&rsquo;s confidence range on an axis from 1480 to 1540. Ranges that overlap are a statistical tie. Argon&rsquo;s range clears everyone else&rsquo;s, so its lead is real on today&rsquo;s votes, but it rests on 4,892 votes against tens of thousands for most of the models below it. Note how little separates places two through eight.</div>
+  </div>
+
+  <div class="sec">Test battery: Artificial Analysis Intelligence Index <span class="asof">Oct 8, 2026</span></div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Claude Opus 5.5</span><em>58</em></div><div class="trk"><div class="fill ant" style="width:96.7%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Sonnet 5.5</span><em>56</em></div><div class="trk"><div class="fill ant" style="width:93.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Fable 5.1</span><em>53</em></div><div class="trk"><div class="fill ant" style="width:88.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>GPT-6 Astra</span><em>53</em></div><div class="trk"><div class="fill oai" style="width:88.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Gemini 4 Argon (tested at high)</span><em>53</em></div><div class="trk"><div class="fill goo" style="width:88.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>GPT-6.1 Sol</span><em>52</em></div><div class="trk"><div class="fill oai" style="width:86.7%"></div></div></div>
+    <div class="bar"><div class="lab"><span>MiMo-V2.6-Pro (Xiaomi) &middot; best open</span><em>46</em></div><div class="trk"><div class="fill opn" style="width:76.7%"></div></div></div>
+    <div class="bar"><div class="lab"><span>GLM-5.3 (Z AI) &middot; open</span><em>45</em></div><div class="trk"><div class="fill opn" style="width:75%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Kimi K3 (Moonshot) &middot; open</span><em>44</em></div><div class="trk"><div class="fill opn" style="width:73.3%"></div></div></div>
+    <div class="axis" aria-hidden="true"><span>0</span><span>15</span><span>30</span><span>45</span><span>60</span></div>
+    <div class="note">Each model&rsquo;s best reasoning setting, on a scale starting at zero so the gaps aren&rsquo;t exaggerated. Artificial Analysis lists every setting separately; I keep one bar per model. Anthropic holds the top two places outright and shares third with Google and OpenAI, and the best open-weight model sits 12 points back.</div>
+  </div>
+
+  <div class="sec">What a point of intelligence costs <span class="asof">Oct 8, 2026</span></div>
+  <div class="fun">
+    <div class="bar"><div class="lab"><span>Claude Fable 5.1 (max) &middot; scores 53</span><em>$7.63</em></div><div class="trk"><div class="fill ant" style="width:95.4%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Opus 5.5 (max) &middot; 58</span><em>$5.98</em></div><div class="trk"><div class="fill ant" style="width:74.8%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Sonnet 5.5 (max) &middot; 56</span><em>$5.46</em></div><div class="trk"><div class="fill ant" style="width:68.3%"></div></div></div>
+    <div class="bar"><div class="lab"><span>GPT-6 Astra (max) &middot; 53</span><em>$3.26</em></div><div class="trk"><div class="fill oai" style="width:40.8%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Claude Sonnet 5.5 (xhigh) &middot; 52</span><em>$2.01</em></div><div class="trk"><div class="fill ant" style="width:25.1%"></div></div></div>
+    <div class="bar"><div class="lab"><span>Gemini 4 Argon (high) &middot; 53 &middot; intro price</span><em>$1.99</em></div><div class="trk"><div class="fill goo" style="width:24.9%"></div></div></div>
+    <div class="bar"><div class="lab"><span>GPT-6.1 Sol (max) &middot; 52</span><em>$0.72</em></div><div class="trk"><div class="fill oai" style="width:9%"></div></div></div>
+    <div class="axis" aria-hidden="true"><span>$0</span><span>$2</span><span>$4</span><span>$6</span><span>$8</span></div>
+    <div class="note">Artificial Analysis&rsquo;s cost to run one Intelligence Index task, in US dollars, with each model&rsquo;s index score in the label. This measure folds in how many tokens a model burns thinking, which a per-token price list hides. The top score costs about eight times the cheapest score six points below it. Argon&rsquo;s $1.99 is an introductory price that Google says will double.</div>
+  </div>
+
+  <div class="two" style="margin-top:12px">
+    <div class="fun">
+      <div class="big2" style="font-family:Georgia,serif;font-size:18px;color:#f2f6fc;margin:0 0 10px">Flagship list price, per million input tokens</div>
+      <div class="bar"><div class="lab"><span>GPT-4 &middot; Mar 2023</span><em>$30</em></div><div class="trk"><div class="fill oai" style="width:100%"></div></div></div>
+      <div class="bar"><div class="lab"><span>Claude Opus 4.1 &middot; 2025</span><em>$15</em></div><div class="trk"><div class="fill ant" style="width:50%"></div></div></div>
+      <div class="bar"><div class="lab"><span>Claude Fable 5.1 &middot; 2026</span><em>$10</em></div><div class="trk"><div class="fill ant" style="width:33.3%"></div></div></div>
+      <div class="bar"><div class="lab"><span>Gemini 4 Argon &middot; 2026, standard</span><em>$4</em></div><div class="trk"><div class="fill goo" style="width:13.3%"></div></div></div>
+      <div class="note">The newest flagship lists at under a seventh of what GPT-4 cost three and a half years ago, and it is far more capable. The full story of the two speeds at which this price falls is in <a href="/finance/six-million-tokens-in-eleven-minutes.html">Six Million Tokens in Eleven Minutes</a>.</div>
+    </div>
+    <div class="fun">
+      <div class="big2" style="font-family:Georgia,serif;font-size:18px;color:#f2f6fc;margin:0 0 10px">Who pays for it: big-four capex</div>
+      <div class="bar"><div class="lab"><span>All of 2023</span><em>$155B</em></div><div class="trk"><div class="fill met" style="width:20.7%"></div></div></div>
+      <div class="bar"><div class="lab"><span>Q2 2026, one quarter</span><em>$172B</em></div><div class="trk"><div class="fill" style="width:22.9%"></div></div></div>
+      <div class="bar"><div class="lab"><span>2026 guidance</span><em>$735&ndash;750B</em></div><div class="trk"><div class="fill" style="width:100%"></div></div></div>
+      <div class="note">Capital spending by Amazon, Microsoft, Alphabet and Meta, per the Platformonomics tracker. 2026 is guidance as of late July, and the total has risen at each quarterly update this year. Q3 updates arrive with late-October earnings.</div>
+    </div>
+  </div>
+
+  <div class="sec">How fast is it improving? <span class="asof">METR, Jan&ndash;May 2026</span></div>
+  <div class="tl">
+    <div class="ev"><div class="d">Mar 2025</div><div class="t">METR: the length of tasks AI agents can finish has doubled about every 7 months for six years<small>Measured in human working time, at 50% reliability, on software, ML and security tasks.</small></div></div>
+    <div class="ev"><div class="d">Jan 29, 2026</div><div class="t">New task suite: since 2023 the doubling time is about 131 days, roughly four months<small>Top model then: Claude Opus 4.5, about 5 hours 20 minutes (with a 95% range of about 3 to 12 hours).</small></div></div>
+    <div class="ev" style="--dot:var(--rep)"><div class="d">May 8, 2026</div><div class="t">METR adds Claude Mythos Preview and warns that anything above 16 hours is unreliable on its tasks<small>The ruler is running out. No newer model has been added since, including Opus 5.5, GPT-6 Astra or Argon.</small></div></div>
+  </div>
+
+  <div class="sec">Claim check</div>
+  <div class="legend"><span style="color:var(--ok)">Holds up independently</span><span style="color:var(--rep)">True, with a big asterisk</span><span style="color:var(--dis)">Vendor&rsquo;s own number</span><span style="color:var(--unv)">Doesn&rsquo;t hold up</span></div>
+  <div class="tbl">
+    <div class="tr"><div class="cl">Gemini 4 Argon beats Claude and GPT-6 on 13 of 19 benchmarks<small>Google&rsquo;s table, Sep 30. On the nine rows scored by outside leaderboards Argon still wins seven. The biggest margins (long context, video) are rows Google ran itself. <a href="gemini-4-argon-benchmarks-checked.html">Full check</a>.</small></div><span class="chip c-dis">Vendor table</span></div>
+    <div class="tr"><div class="cl">Gemini 4 Argon is the best model in the world<small>#1 on LMArena human votes (preliminary). 53 on Artificial Analysis, five behind Claude Opus 5.5. True on one scoreboard, not the other.</small></div><span class="chip c-rep">Depends on the test</span></div>
+    <div class="tr"><div class="cl">Argon hallucinates less than any other top model<small>Artificial Analysis: 15%, the lowest of models scoring 45+ on its index (as reported by <i>The Batch</i>).</small></div><span class="chip c-ok">Independent</span></div>
+    <div class="tr"><div class="cl">GPT-6 Astra has essentially solved ARC-AGI-3<small>99.9% only with OpenAI&rsquo;s own context tools; 62.7% on the neutral harness everyone else is scored on. ARC Prize calls both state of the art.</small></div><span class="chip c-rep">Depends on harness</span></div>
+    <div class="tr"><div class="cl">Open models have nearly caught the frontier<small>One article in circulation put the gap at 6 points. Artificial Analysis&rsquo;s own board shows 12 (46 vs 58), and Epoch AI found the lag slightly widened in 2026, to about four months.</small></div><span class="chip c-unv">Not on current data</span></div>
+    <div class="tr"><div class="cl">AI&rsquo;s task length is doubling every four months<small>METR&rsquo;s post-2023 estimate on its new suite: 131 days, with a range of 107 to 161. METR&rsquo;s own caveat is that its suite is near its ceiling.</small></div><span class="chip c-ok">Independent</span></div>
+  </div>
+
+  <div class="sec">Who leads at what <span class="asof">by the cited test, not my opinion</span></div>
+  <div class="uses">
+    <div class="use"><svg class="ic"><use href="#i-code"/></svg><div class="q">Coding agent in a terminal</div><div class="a">Claude Opus 5.5</div><div class="m">66.4% on Terminal-Bench 4.0, as printed in Google&rsquo;s own table; Argon 57.4%.</div></div>
+    <div class="use"><svg class="ic"><use href="#i-brief"/></svg><div class="q">Office and professional work</div><div class="a">Gemini 4 Argon</div><div class="m">Leads Vals Index, Finance Agent and Harvey&rsquo;s legal benchmark, all scored by Vals AI.</div></div>
+    <div class="use"><svg class="ic"><use href="#i-doc"/></svg><div class="q">Very long documents</div><div class="a">Gemini 4 Argon</div><div class="m">84.2% on GraphWalks at 256k&ndash;1M tokens vs 71.8% next best. Google&rsquo;s own run.</div></div>
+    <div class="use"><svg class="ic"><use href="#i-puzzle"/></svg><div class="q">Puzzles never seen before</div><div class="a">GPT-6 Astra</div><div class="m">62.7% on ARC-AGI-3&rsquo;s standard harness, verified by ARC Prize.</div></div>
+    <div class="use"><svg class="ic"><use href="#i-coin"/></svg><div class="q">Near-frontier on a budget</div><div class="a">GPT-6.1 Sol</div><div class="m">Index score 52 for $0.72 a task, per Artificial Analysis.</div></div>
+    <div class="use"><svg class="ic"><use href="#i-unlock"/></svg><div class="q">Weights you can download</div><div class="a">MiMo-V2.6-Pro</div><div class="m">Xiaomi&rsquo;s model, 46 on the index, top of 81 open-weight entries.</div></div>
+  </div>
+
+  <div class="sec">What I am watching for</div>
+  <div class="watch">
+    <div class="w"><svg class="ic"><use href="#i-users"/></svg><div class="q">Argon&rsquo;s LMArena rating as votes pile up</div><div class="m">Preliminary ratings often settle. If the lead holds past 20,000 votes, the &ldquo;best on human votes&rdquo; chip stays.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-eye"/></svg><div class="q">Argon&rsquo;s public release and model card</div><div class="m">Also an Artificial Analysis run at its highest setting, which could move the 53.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-bank"/></svg><div class="q">Q3 earnings, late October</div><div class="m">Whether the big four raise 2026 capex again, and what they say about 2027.</div></div>
+    <div class="w"><svg class="ic"><use href="#i-clock"/></svg><div class="q">A new ruler from METR</div><div class="m">The time-horizon chart is the clearest progress measure there is, and it has been quiet since May.</div></div>
+  </div>
+
+  <div class="sec">The story so far</div>
+  <div class="story">
+    <a class="new" href="gemini-4-argon-benchmarks-checked.html"><span class="d">Oct 8, 2026 &middot; new</span><span class="t">Gemini 4 Argon: Google&rsquo;s Benchmarks, Checked</span><span class="m">13 wins of 19, which rows Google ran itself, and why the leaderboards disagree.</span></a>
+    <a href="claude-opus-5-5-leads-with-a-safety-score.html"><span class="d">Sep 22, 2026</span><span class="t">Claude Opus 5.5 Is Cheaper and Faster</span><span class="m">The current Artificial Analysis leader, and a launch that opened with an alignment score.</span></a>
+    <a href="the-most-downloaded-ai-models-in-the-world-are-alibabas.html"><span class="d">Sep 21, 2026</span><span class="t">The Most-Downloaded AI Models in the World Are Alibaba&rsquo;s</span><span class="m">The open-weight side of the race, and Qwen&rsquo;s three billion downloads.</span></a>
+    <a href="the-week-the-ai-labs-asked-to-be-regulated.html"><span class="d">Sep 12, 2026</span><span class="t">The Week the AI Labs Asked to Be Regulated</span><span class="m">GPT-6 Astra&rsquo;s launch, and OpenAI&rsquo;s turn on safety rules.</span></a>
+    <a href="/finance/six-million-tokens-in-eleven-minutes.html"><span class="d">Sep 10, 2026 &middot; the Ledger</span><span class="t">Six Million Tokens in Eleven Minutes</span><span class="m">What intelligence costs, and who pays for the free version.</span></a>
+  </div>
+
+  <div class="foot">Every number on this page is from a named outside source with the date I read it. A lab&rsquo;s own claim is labelled as the lab&rsquo;s until someone else reproduces it. Scores move daily on some of these boards, so check the date in each panel heading.</div>
+</div>
+
+<h2>How this page works</h2>
+<p>Three rules. <strong>Every ranking comes from someone else&rsquo;s test</strong>, named and dated. <strong>A company&rsquo;s own benchmark table is a claim</strong>, and it goes in the claim check until an independent scoreboard confirms or contradicts it. <strong>No single number decides &ldquo;best&rdquo;</strong>, because the scoreboards measure different things, and their disagreements are where the information is.</p>
+<p>One disclosure belongs here. I use Anthropic&rsquo;s Claude for nearly everything, and Claude models do very well on several of these boards. That is the reason the page runs on other people&rsquo;s tests. If Claude slips, the bars will say so.</p>
+
+<div class="aside">
+  <p><strong>The four scoreboards in one line each.</strong> <em>LMArena</em> shows two anonymous answers side by side and asks a person which is better. It measures what people prefer, which rewards style as well as substance. <em>Artificial Analysis</em> runs a fixed battery of hard tests itself and averages them into one index, and it also prices each run. <em>ARC-AGI-3</em> drops a model into puzzle games it has never seen and compares it with ordinary people. It is the closest thing to a test of learning on the spot. <em>METR</em> times how long the tasks a model can finish would take a skilled human. It is the most intuitive measure of progress there is, and the hardest to keep running.</p>
+</div>
+
+<h2>Why the scoreboards disagree</h2>
+<p>Gemini 4 Argon is the clean example this week. People voting on LMArena prefer its answers to everyone else&rsquo;s. On Artificial Analysis&rsquo;s battery, which leans heavily on multi-step reasoning, agent work and code, it ties for the second tier. Google&rsquo;s own table says the same thing in its own way: Argon wins the knowledge-work and long-document rows and loses the terminal and coding-agent rows. There is no contradiction there. A model can write the answer you&rsquo;d pick and still be second-best at grinding through a software job.</p>
+<p>The ARC-AGI-3 result for GPT-6 Astra is the other lesson: <strong>the harness is part of the score</strong>. The same model scores 62.7% when every lab plays by the same neutral rules and 99.9% when it can use OpenAI&rsquo;s own context-management features. Both are real, and they answer different questions. When a headline quotes one number, it is worth asking which harness produced it.</p>
+
+<h2>Update log</h2>
+<ul>
+  <li><strong>October 8, 2026.</strong> Page created. Scoreboards read the same day: LMArena text (updated Oct 8), the Artificial Analysis Intelligence Index and open-weights leaderboard, ARC Prize&rsquo;s Sep 3 post on GPT-6 Astra, METR&rsquo;s time-horizon page (last updated May 8) and Jan 29 TH1.1 post, Epoch AI&rsquo;s May 29 open-vs-closed analysis, and the Platformonomics Q2 capex tracker. First entry: <a href="gemini-4-argon-benchmarks-checked.html">Gemini 4 Argon, checked</a>.</li>
+</ul>
+
+<h2>Where I could be wrong</h2>
+<ul>
+  <li><strong>These boards move daily.</strong> LMArena in particular re-rates as votes arrive, and a preliminary rating can shift a lot. Every panel is a snapshot from the date in its heading.</li>
+  <li><strong>&ldquo;One bar per model&rdquo; is my simplification.</strong> Artificial Analysis scores each reasoning setting separately, and some models were tested at fewer settings than others. Argon was only tested at &ldquo;high.&rdquo;</li>
+  <li><strong>Cost per task is one firm&rsquo;s measurement</strong> on one set of tasks. Real-world bills depend on the job, caching and how much thinking you let a model do.</li>
+  <li><strong>The flagship price line mixes labs</strong> and compares list prices for input tokens only. It shows the direction, not a like-for-like index.</li>
+  <li><strong>The &ldquo;who leads at what&rdquo; cards inherit their sources&rsquo; limits.</strong> Three of the six come from Google&rsquo;s own table, and the long-document card is a test Google ran itself; each card says so.</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>LMArena (arena.ai). Text leaderboard, overall view, updated October 8, 2026. <a href="https://arena.ai/leaderboard/text" rel="noopener" target="_blank">arena.ai/leaderboard/text</a></li>
+  <li>Artificial Analysis. LLM leaderboard (Intelligence Index, cost per task, speed), read October 8, 2026. <a href="https://artificialanalysis.ai/leaderboards/models" rel="noopener" target="_blank">artificialanalysis.ai/leaderboards/models</a></li>
+  <li>Artificial Analysis. Open-weights models leaderboard, read October 8, 2026. <a href="https://artificialanalysis.ai/models/open-source" rel="noopener" target="_blank">artificialanalysis.ai/models/open-source</a></li>
+  <li>ARC Prize. <i>OpenAI&rsquo;s GPT-6 Astra on ARC-AGI-3</i>, September 3, 2026. <a href="https://arcprize.org/blog/astra" rel="noopener" target="_blank">arcprize.org/blog/astra</a></li>
+  <li>METR. <i>Time Horizon 1.1</i>, January 29, 2026. <a href="https://metr.org/blog/2026-1-29-time-horizon-1-1/" rel="noopener" target="_blank">metr.org</a></li>
+  <li>METR. Time-horizons page, last updated May 8, 2026. <a href="https://metr.org/time-horizons/" rel="noopener" target="_blank">metr.org/time-horizons</a></li>
+  <li>METR. <i>Measuring AI Ability to Complete Long Tasks</i>, March 19, 2025. <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/" rel="noopener" target="_blank">metr.org</a></li>
+  <li>Epoch AI. Data Insight: open-weight vs closed models on the Epoch Capabilities Index, May 29, 2026. <a href="https://epoch.ai/data-insights/open-closed-eci-gap" rel="noopener" target="_blank">epoch.ai</a></li>
+  <li>Google DeepMind. Gemini models page (Performance table) and <i>Gemini 4 Argon Model evaluation</i> methodology PDF. <a href="https://deepmind.google/models/gemini/" rel="noopener" target="_blank">deepmind.google/models/gemini</a></li>
+  <li>DeepLearning.AI, <i>The Batch</i>. <i>Data Points: Gemini 4 Argon&rsquo;s benchmarks and availability</i>, October 5, 2026. <a href="https://www.deeplearning.ai/the-batch/gemini-4-argons-benchmarks-and-availability" rel="noopener" target="_blank">deeplearning.ai</a></li>
+  <li>Platformonomics. <i>Follow the CAPEX: Q2 2026 Scoreboard</i>, July 2026. <a href="https://platformonomics.com/2026/07/follow-the-capex-q2-2026-scoreboard/" rel="noopener" target="_blank">platformonomics.com</a></li>
+  <li>The Ledger. <a href="/finance/six-million-tokens-in-eleven-minutes.html">Six Million Tokens in Eleven Minutes</a> (September 10, 2026), for the flagship price history and its sources.</li>
+</ol>
