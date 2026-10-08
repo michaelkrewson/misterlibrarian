@@ -7,6 +7,22 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin</title>
+    <link>https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>A famous cryptographer said today that "we might lose public key cryptography," and Bitcoiners heard their own signature scheme in it. The honest version is narrower and more interesting. ECDSA and Schnorr are not two locks in a row but two kinds of key on one door, so a machine that opens one opens both. What protects most coins today is a hash, not a curve, and the real question is how fast the door can be changed.</description>
+    <category>bitcoin</category>
+    <category>quantum computing</category>
+    <category>cryptography</category>
+    <category>ecdsa</category>
+    <category>schnorr</category>
+    <category>taproot</category>
+    <category>bip-360</category>
+    <category>post-quantum</category>
+    <category>self custody</category>
+  </item>
+  <item>
     <title>Bitcoin Supply Shock: The Exchange Float</title>
     <link>https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</guid>
@@ -448,25 +464,6 @@
     <category>bitcoin treasuries</category>
     <category>halving</category>
     <category>monetary policy</category>
-  </item>
-  <item>
-    <title>A Private Room With a Public Door</title>
-    <link>https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</guid>
-    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Someone sent me a write-up I didn't understand at first, claiming Zcash-style privacy now works on Bitcoin itself — no soft fork, no new coin — and a real private transfer confirmed on mainnet this morning to prove it. Both halves are true. Here is how it works in plain English, what the demo actually proved, the flaws its own builders list first, whether swapping the one-key vault for a decentralized escrow would fix it, and why, if I had to make Bitcoin private for a normal person tomorrow, I would still start with Lightning.</description>
-    <category>bitcoin</category>
-    <category>privacy</category>
-    <category>shielded bitcoin</category>
-    <category>zero knowledge proofs</category>
-    <category>zcash</category>
-    <category>pipes</category>
-    <category>alloc init</category>
-    <category>lightning</category>
-    <category>fedimint</category>
-    <category>bridges</category>
-    <category>custody</category>
-    <category>op_return</category>
   </item>
 </channel>
 </rss>

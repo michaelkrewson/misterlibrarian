@@ -115,6 +115,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -572,7 +578,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-bitcoin.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -651,6 +657,12 @@
   <url>
     <loc>https://mistertranslation.com/finance/tag-crypto-regulation.html</loc>
     <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/finance/tag-cryptography.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -944,7 +956,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-self-custody.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>

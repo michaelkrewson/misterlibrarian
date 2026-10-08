@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Bitcoin&#x27;s ECDSA and Schnorr signatures share one curve, so a quantum attack breaks both at once. What&#x27;s exposed, what isn&#x27;t, and what BIP-360 does."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin"/>
+<meta property="og:description" content="Bitcoin&#x27;s ECDSA and Schnorr signatures share one curve, so a quantum attack breaks both at once. What&#x27;s exposed, what isn&#x27;t, and what BIP-360 does."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html"/>
+<meta property="og:image" content="https://mistertranslation.com/finance/img/ecc-curve-secp256k1.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin"/>
+<meta name="twitter:description" content="Bitcoin&#x27;s ECDSA and Schnorr signatures share one curve, so a quantum attack breaks both at once. What&#x27;s exposed, what isn&#x27;t, and what BIP-360 does."/>
+<meta name="twitter:image" content="https://mistertranslation.com/finance/img/ecc-curve-secp256k1.png"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin", "description": "Bitcoin's ECDSA and Schnorr signatures share one curve, so a quantum attack breaks both at once. What's exposed, what isn't, and what BIP-360 does.", "url": "https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html", "mainEntityOfPage": "https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html", "datePublished": "2026-10-08", "inLanguage": "en", "image": "https://mistertranslation.com/finance/img/ecc-curve-secp256k1.png", "author": {"@type": "Person", "name": "Mr. Librarian", "url": "https://mistertranslation.com/librarian.html"}, "publisher": {"@type": "Person", "name": "Mr. Librarian", "url": "https://mistertranslation.com/librarian.html"}, "isPartOf": {"@type": "Blog", "name": "The Librarian's Ledger", "url": "https://mistertranslation.com/finance/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Mr. Librarian", "item": "https://mistertranslation.com/"}, {"@type": "ListItem", "position": 2, "name": "The Librarian's Ledger", "item": "https://mistertranslation.com/finance/"}, {"@type": "ListItem", "position": 3, "name": "One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin"}]}</script>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, not one: the original cool wash up top (unchanged),
+   plus a second, warm accent-toned glow centered on the viewport so there's
+   a soft light sitting behind whatever cards/content are on screen — not
+   just at the very top of a long page. Both are `fixed`, so they stay put
+   as ambient lighting rather than scrolling with the page (same behavior
+   the top wash already had). The cards themselves have their own solid
+   background (`.ecard`/`.board-card` etc.), so this shows through in the
+   margins around and between them — a glow "behind the cards," not one
+   painted on top of them. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(247,147,26,.16),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Breadcrumb up to the hub (2026-09-21, Michael's ask, ported from the
+   Notebook after he approved it there): "Mister Library › The Librarian's
+   Ledger" — a page here had no way back to the root hub except the
+   browser's back button. The hub mark below is a byte-for-byte copy of the
+   <svg class="mark"> in the root index.html (hand-written, not built —
+   nothing to import; keep the two in step by hand if it ever changes).
+   Same size (45px, header.hsm context) and same gold gradient text-fill +
+   drop-shadow halo as the hub's own <h1>/.mark, so the hub's identity
+   travels with it rather than borrowing the Ledger's own amber accent.
+   No CSS `order` needed here — unlike the Notebook/Regimen's two-row
+   layout, this header has no flex `order` on `.brand` at all (it's simply
+   first in DOM order, with `.hgroup`'s own margin-left:auto doing the
+   pushing), so `.brandcrumb` just inherits that same first-child position. */
+.brandcrumb{display:inline-flex;align-items:center;gap:10px}
+.hublink{display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  transition:opacity .15s ease}
+.hublink:hover{opacity:.82}
+.hubmark{width:45px;height:45px;flex:0 0 45px;overflow:visible;
+  filter:drop-shadow(0 0 6px rgba(232,201,104,.55)) drop-shadow(0 0 14px rgba(232,201,104,.35))}
+.hublink .hubwm{font-size:23px;font-weight:400;letter-spacing:.01em;white-space:nowrap;
+  background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
+  -webkit-background-clip:text;background-clip:text;color:#e8c968;
+  -webkit-text-fill-color:transparent}
+.crumbsep{flex:0 0 auto}
+.shelf-spine{transform-box:fill-box;transform-origin:bottom center;
+  animation:spinePop 3.6s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes spinePop{0%,84%,100%{transform:translateY(0);filter:brightness(1)}
+  10%{transform:translateY(-2.4px);filter:brightness(1.55)}}
+@media (prefers-reduced-motion:reduce){.shelf-spine{animation:none}}
+@media (max-width:480px){.hublink .hubwm{display:none}}
+
+/* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
+   (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
+   itself) as an unfilled, wide-stroked circle — a RING, not a disc —
+   whose own radius already sits outside the crisp ring's r=21. Blurred,
+   that reads unambiguously as a nimbus surrounding the icon from outside
+   it: the icon's interior (rock/tower/lamp) stays on the plain dark
+   background, untouched by any inside glow, and the light only appears
+   past the ring's own edge. The beam is clipped to a circle just inside
+   the ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
+   sweeps back and forth around the lamp — brightening at the middle of
+   each pass, dimming at the two extremes — because a lighthouse only
+   reads as "on" when it happens to be aimed at the viewer; the opacity
+   keyframes ride the same timeline as the rotation for exactly that
+   reason. `animation-direction:alternate` on a 2-keyframe animation
+   retraces the same sweep backwards each cycle instead of snapping back
+   to the start, which is what gives the back-and-forth motion rather than
+   a one-way spin. No transform-box override — for an SVG child, a plain
+   px transform-origin already resolves against the SVG's own viewBox
+   coordinates in every current browser. Respects reduced-motion. */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-beam{transform-origin:33px 21px;
+  animation:bmarkSweep 4s ease-in-out infinite alternate}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkSweep{
+  0%{transform:rotate(-50deg);opacity:.1}
+  50%{transform:rotate(0deg);opacity:.95}
+  100%{transform:rotate(50deg);opacity:.1}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-beam{animation:none}
+}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#f7931a;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #f7931a;color:#f7931a}
+/* Pinned explicitly, not left to source order — see the identical note in
+   travel/style.css. No generic `a:hover{color:...}` rule collides with these
+   two today, but a bare pseudo-class selector outranks a single class no
+   matter which comes later, so a future one added anywhere on this page
+   could silently blank the PRIMARY button's text again the same way it did
+   on the travel site (2026-09-09). Cheap insurance, pinned now. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#f7931a}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:#f7931a;border-color:#f7931a;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:#f7931a;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
+
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the nav toggle with the nav itself so the two move together as one
+   unit, and — via margin-left:auto — always hugs the right edge of
+   whichever row it lands on: the same row as the brand+search on a screen
+   wide enough to fit the full nav there too, or its own full row underneath
+   once the nav (8 links) is too wide to share one with them. Also the
+   positioning context the mobile dropdown below anchors against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end;margin-left:auto}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — .hgroup (order 1, its own margin-left:auto
+   already pins it to the row's right edge) stays pinned next to the brand,
+   and search (order 2) drops to its own full-width row underneath, the same
+   "give up the single row" fallback the travel blog's own absolutely-
+   positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{order:1;flex-wrap:wrap}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;display:flex;align-items:center;justify-content:space-between;
+  gap:14px;flex-wrap:wrap}
+.edate-text{color:#5a6b80;font-size:7px;letter-spacing:.06em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate-text .live-stamp,.edate-text .upd-stamp{letter-spacing:normal;text-transform:none;
+  font-style:italic;color:#4d5c70}
+.edate .share-widget{flex:none}
+.edate .share-btn{font-size:10px}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figure video{width:auto;max-width:100%;max-height:640px;border-radius:10px;display:block;
+  margin:0 auto;background:#000}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #f7931a;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry table.cmp{width:100%;min-width:480px;border-collapse:collapse;margin:26px 0;font-size:15px}
+.entry table.cmp th{text-align:left;padding:10px 14px;color:#e8eef7;font-weight:600;
+  font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid #f7931a}
+.entry table.cmp td{padding:11px 14px;border-bottom:1px solid #1b2534;color:#c3d0e0;
+  vertical-align:top;line-height:1.5}
+.entry table.cmp tr:last-child td{border-bottom:0}
+.entry table.cmp td:first-child,.entry table.cmp th:first-child{color:#8b9ab0;
+  font-size:12.5px;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:9px;letter-spacing:.08em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;overflow:hidden;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" + the board pointer ───────── */
+/* Both sit under the article and match its 760px measure rather than the
+   .wrap's full 1000px — an end-of-article module that runs wider than the
+   text it follows reads as a different page bolted on, not as the end of
+   this one. Two columns at that width, never the front page's three. */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+/* Accent-tinted rather than the neutral .tile box, so it reads as "this is
+   a different KIND of thing" (a live board, not another article) without
+   shouting — it sits between the article and the comment prompt. */
+.boardpromo{max-width:760px;margin:38px auto 0}
+.boardpromo a{display:block;text-decoration:none;padding:18px 20px;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05);
+  transition:border-color .15s,background .15s}
+.boardpromo a:hover{border-color:rgba(247,147,26,.55);
+  background:rgba(247,147,26,.09)}
+.bp-k{display:block;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#f7931a;margin-bottom:7px}
+.bp-t{display:block;color:#e8eef7;font-size:18px;line-height:1.3;margin-bottom:6px}
+.bp-s{display:block;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+
+/* ── the email-list pitch — same accent-tinted-card language as .boardpromo,
+   so the two read as siblings rather than two different callout styles ─── */
+.subbox{max-width:760px;margin:26px auto 0;padding:20px 22px;text-align:center;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05)}
+.sb-k{margin:0 0 8px;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#f7931a}
+.sb-t{margin:0 0 6px;color:#e8eef7;font-size:19px;line-height:1.3;font-weight:400}
+.sb-s{margin:0 0 16px;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+.sb-btn{display:inline-block;flex:none;min-width:160px}
+
+/* ── the subscribe modal every .subscribe-trigger opens (2026-09-21) ──────
+   Substack's own /embed iframe is a fixed white box with no theming hook —
+   wrong rendered inline in the page flow against this site's dark palette,
+   but fine as a small floating card over a dimmed backdrop, which is what
+   this gives it.
+   ⚠️ THE ACTUAL BUG (found 2026-09-22, after two rounds of chasing the
+   wrong thing in the iframe/lazy-load timing — see _subscribe_modal()'s
+   docstring): the comment that used to sit here claimed `hidden` alone
+   kept this invisible, "no extra display rule needed." That's false, and
+   it's the exact mistake `#tiles[hidden],#archiveList[hidden],
+   #loadMoreWrap[hidden]{display:none!important}` below (the view-toggle
+   section) already exists to avoid: `.submodal{display:flex}` and the UA
+   stylesheet's `[hidden]{display:none}` have EQUAL specificity, and an
+   author rule always beats a UA rule at equal specificity regardless of
+   source order — so `display:flex` won on every single page load,
+   `hidden` attribute or not. The modal was never click-triggered in
+   practice; it covered the whole viewport (confirmed via
+   getComputedStyle: `display: flex`, a full-viewport bounding box) the
+   instant the CSS parsed, on every device, showing an iframe whose `src`
+   was never set until a click that had nothing left to reveal — hence a
+   permanently blank card blocking the page, exactly the original report.
+   `.submodal[hidden]` below (two simple selectors, strictly higher
+   specificity than `.submodal` alone) is what actually keeps it hidden. */
+.submodal{position:fixed;inset:0;z-index:999;display:flex;
+  align-items:center;justify-content:center;padding:16px}
+.submodal[hidden]{display:none}
+.submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
+.submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
+  animation:submodal-in .15s ease-out}
+.submodal-card iframe{display:block;width:480px;max-width:100%;height:380px;
+  border:0;border-radius:14px}
+.submodal-close{position:absolute;top:-14px;right:-14px;z-index:2;
+  width:32px;height:32px;border:0;border-radius:999px;
+  background:#0a111c;border:1px solid #1b2534;color:#e8eef7;
+  font-size:20px;line-height:1;cursor:pointer}
+.submodal-close:hover{background:#131e2e}
+@keyframes submodal-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .submodal-card{animation:none}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+/* Same pill language as .viewbar/.viewbtn below, so the two control rows
+   read as one family. A tag earns a solid or bold chip only by recurring
+   (see TAG_BAR_MIN_COUNT); the long tail stays in the DOM (still filterable,
+   still linked from an entry's own tag chips) but folded out of sight until
+   "+N more" is clicked. */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#f7931a;color:#f7931a}
+.chip.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#f7931a;color:#f7931a}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2001206283779660" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><div class="brandcrumb"><a class="hublink" href="https://mistertranslation.com/" aria-label="Mister Library — every publication"><svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
+  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
+  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
+  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
+  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
+  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
+  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
+</svg><span class="hubwm">Mister Library</span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#f7931a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bmarkClip"><circle cx="33" cy="33" r="19"/></clipPath>
+  </defs>
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#f7931a" stroke-width="5"/>
+  <g clip-path="url(#bmarkClip)">
+    <ellipse cx="33" cy="46" rx="13" ry="5.5" fill="#374357"/>
+    <ellipse cx="23" cy="45" rx="6" ry="4.5" fill="#31404f"/>
+    <ellipse cx="43" cy="46" rx="6.5" ry="4.5" fill="#3a4a5e"/>
+    <polygon points="29,41 37,41 35,23 31,23" fill="#f2f5f9"/>
+    <rect x="29.5" y="35" width="7" height="2.2" fill="#f7931a" opacity=".85"/>
+    <polygon points="30,19 36,19 33,14.5" fill="#f2f5f9"/>
+    <rect x="30" y="19" width="6" height="4.2" rx=".7" fill="#f7931a"/>
+    <circle cx="33" cy="13.8" r=".9" fill="#f7931a"/>
+    <g class="bmark-beam">
+      <path d="M33 21 L51 15 L51 27 Z" fill="url(#bmarkBeamGrad)"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a></div><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="crypto-screener.html">Crypto Screener</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+<script src="share.js?v=a8bba5ef16" defer></script>
+  
+  <article class="entry">
+    <h1 class="etitle">One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin</h1>
+    <p class="edate"><span class="edate-text">OCTOBER 8, 2026</span><span class="share-widget"></span></p>
+    <figure class="hero"><img src="img/ecc-curve-secp256k1.svg" alt="Two views of the curve y squared equals x cubed plus seven. On the left, a smooth orange curve with two points added by a line. On the right, the same equation worked modulo 127 as a scatter of orange dots." loading="eager"/><figcaption>Original diagram made for this page. The right-hand dots are every solution of y² = x³ + 7 modulo 127, computed directly.</figcaption></figure>
+<p>This morning Matthew Green, the Johns Hopkins cryptographer who has spent a career being
+politely alarmed on the internet's behalf, replied to a thread with one line: <em>"I think we
+might lose public key cryptography."</em> I can't see what he was answering, so I won't pretend
+to know what he meant. But I know who heard it. Every Bitcoiner reading that sentence silently
+swapped in <em>"my coins"</em>, and the group chats lit up.</p>
+
+<p>So here is the version with the drama taken out and the arithmetic left in. I was asked
+three things, and they make a good outline: what is the math actually protecting, doesn't
+Bitcoin use two signature schemes (and would an attacker have to break both?), and how worried
+should anyone be? The short answers: a very specific lock, <strong>no, it would not need to break
+both</strong>, and "worried about the transition, not about the end of cryptography."</p>
+
+<h2>The Lock: A Curve That Turns Into Dots</h2>
+
+<p>Bitcoin's keys live on a curve called <strong>secp256k1</strong>, whose equation is about as
+unglamorous as math gets: <em>y² = x³ + 7</em>. Draw it over ordinary numbers and you get the
+smooth, slightly smug shape in the picture above. The trick that makes it a cryptosystem is a
+way of <em>adding</em> two points on it. Draw a straight line through the two, find where it
+meets the curve a third time, and flip that point over the horizontal axis.</p>
+
+<figure>
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f1-t f1-d">
+<title id="f1-t">How two points on the curve make a third</title>
+<desc id="f1-d">The smooth curve y squared equals x cubed plus seven. A dashed line through points P and Q hits the curve a third time; flipping that third point over the horizontal axis gives P plus Q.</desc>
+<rect x="0" y="0" width="720" height="420" fill="#0a111c"/>
+<line x1="53.599999999999994" y1="215" x2="376.0" y2="215" stroke="#1d2a3d"/>
+<line x1="190" y1="53" x2="190" y2="377" stroke="#1d2a3d"/>
+<path d="M376.0,372.4 L375.2,371.7 L374.5,370.9 L373.7,370.1 L373.0,369.4 L372.2,368.6 L371.4,367.9 L370.7,367.1 L369.9,366.4 L369.1,365.6 L368.4,364.9 L367.6,364.1 L366.9,363.4 L366.1,362.7 L365.3,361.9 L364.6,361.2 L363.8,360.5 L363.1,359.8 L362.3,359.0 L361.5,358.3 L360.8,357.6 L360.0,356.9 L359.2,356.2 L358.5,355.5 L357.7,354.8 L357.0,354.1 L356.2,353.4 L355.4,352.7 L354.7,352.0 L353.9,351.3 L353.2,350.6 L352.4,349.9 L351.6,349.2 L350.9,348.6 L350.1,347.9 L349.3,347.2 L348.6,346.5 L347.8,345.9 L347.1,345.2 L346.3,344.5 L345.5,343.9 L344.8,343.2 L344.0,342.6 L343.3,341.9 L342.5,341.3 L341.7,340.7 L341.0,340.0 L340.2,339.4 L339.4,338.7 L338.7,338.1 L337.9,337.5 L337.2,336.9 L336.4,336.2 L335.6,335.6 L334.9,335.0 L334.1,334.4 L333.4,333.8 L332.6,333.2 L331.8,332.6 L331.1,332.0 L330.3,331.4 L329.5,330.8 L328.8,330.2 L328.0,329.7 L327.3,329.1 L326.5,328.5 L325.7,327.9 L325.0,327.4 L324.2,326.8 L323.5,326.2 L322.7,325.7 L321.9,325.1 L321.2,324.6 L320.4,324.0 L319.6,323.5 L318.9,322.9 L318.1,322.4 L317.4,321.9 L316.6,321.3 L315.8,320.8 L315.1,320.3 L314.3,319.8 L313.6,319.3 L312.8,318.8 L312.0,318.3 L311.3,317.8 L310.5,317.3 L309.7,316.8 L309.0,316.3 L308.2,315.8 L307.5,315.3 L306.7,314.8 L305.9,314.3 L305.2,313.9 L304.4,313.4 L303.7,312.9 L302.9,312.5 L302.1,312.0 L301.4,311.6 L300.6,311.1 L299.9,310.7 L299.1,310.3 L298.3,309.8 L297.6,309.4 L296.8,309.0 L296.0,308.5 L295.3,308.1 L294.5,307.7 L293.8,307.3 L293.0,306.9 L292.2,306.5 L291.5,306.1 L290.7,305.7 L290.0,305.3 L289.2,304.9 L288.4,304.6 L287.7,304.2 L286.9,303.8 L286.1,303.4 L285.4,303.1 L284.6,302.7 L283.9,302.4 L283.1,302.0 L282.3,301.7 L281.6,301.3 L280.8,301.0 L280.1,300.7 L279.3,300.3 L278.5,300.0 L277.8,299.7 L277.0,299.4 L276.2,299.1 L275.5,298.7 L274.7,298.4 L274.0,298.1 L273.2,297.9 L272.4,297.6 L271.7,297.3 L270.9,297.0 L270.2,296.7 L269.4,296.4 L268.6,296.2 L267.9,295.9 L267.1,295.7 L266.3,295.4 L265.6,295.1 L264.8,294.9 L264.1,294.7 L263.3,294.4 L262.5,294.2 L261.8,294.0 L261.0,293.7 L260.3,293.5 L259.5,293.3 L258.7,293.1 L258.0,292.9 L257.2,292.7 L256.4,292.5 L255.7,292.3 L254.9,292.1 L254.2,291.9 L253.4,291.7 L252.6,291.5 L251.9,291.3 L251.1,291.2 L250.4,291.0 L249.6,290.8 L248.8,290.7 L248.1,290.5 L247.3,290.4 L246.5,290.2 L245.8,290.1 L245.0,289.9 L244.3,289.8 L243.5,289.6 L242.7,289.5 L242.0,289.4 L241.2,289.3 L240.5,289.1 L239.7,289.0 L238.9,288.9 L238.2,288.8 L237.4,288.7 L236.6,288.6 L235.9,288.5 L235.1,288.4 L234.4,288.3 L233.6,288.2 L232.8,288.1 L232.1,288.0 L231.3,287.9 L230.6,287.8 L229.8,287.8 L229.0,287.7 L228.3,287.6 L227.5,287.6 L226.7,287.5 L226.0,287.4 L225.2,287.4 L224.5,287.3 L223.7,287.3 L222.9,287.2 L222.2,287.1 L221.4,287.1 L220.7,287.0 L219.9,287.0 L219.1,287.0 L218.4,286.9 L217.6,286.9 L216.8,286.8 L216.1,286.8 L215.3,286.8 L214.6,286.8 L213.8,286.7 L213.0,286.7 L212.3,286.7 L211.5,286.6 L210.8,286.6 L210.0,286.6 L209.2,286.6 L208.5,286.6 L207.7,286.6 L206.9,286.5 L206.2,286.5 L205.4,286.5 L204.7,286.5 L203.9,286.5 L203.1,286.5 L202.4,286.5 L201.6,286.5 L200.9,286.5 L200.1,286.5 L199.3,286.5 L198.6,286.4 L197.8,286.4 L197.0,286.4 L196.3,286.4 L195.5,286.4 L194.8,286.4 L194.0,286.4 L193.2,286.4 L192.5,286.4 L191.7,286.4 L191.0,286.4 L190.2,286.4 L189.4,286.4 L188.7,286.4 L187.9,286.4 L187.1,286.4 L186.4,286.4 L185.6,286.4 L184.9,286.4 L184.1,286.4 L183.3,286.4 L182.6,286.4 L181.8,286.4 L181.1,286.4 L180.3,286.4 L179.5,286.4 L178.8,286.4 L178.0,286.4 L177.2,286.4 L176.5,286.4 L175.7,286.4 L175.0,286.4 L174.2,286.4 L173.4,286.3 L172.7,286.3 L171.9,286.3 L171.2,286.3 L170.4,286.3 L169.6,286.3 L168.9,286.2 L168.1,286.2 L167.3,286.2 L166.6,286.2 L165.8,286.1 L165.1,286.1 L164.3,286.1 L163.5,286.0 L162.8,286.0 L162.0,286.0 L161.3,285.9 L160.5,285.9 L159.7,285.8 L159.0,285.8 L158.2,285.7 L157.4,285.7 L156.7,285.6 L155.9,285.6 L155.2,285.5 L154.4,285.5 L153.6,285.4 L152.9,285.3 L152.1,285.3 L151.4,285.2 L150.6,285.1 L149.8,285.0 L149.1,285.0 L148.3,284.9 L147.6,284.8 L146.8,284.7 L146.0,284.6 L145.3,284.5 L144.5,284.4 L143.7,284.3 L143.0,284.2 L142.2,284.1 L141.5,283.9 L140.7,283.8 L139.9,283.7 L139.2,283.6 L138.4,283.4 L137.7,283.3 L136.9,283.2 L136.1,283.0 L135.4,282.9 L134.6,282.7 L133.8,282.5 L133.1,282.4 L132.3,282.2 L131.6,282.0 L130.8,281.8 L130.0,281.7 L129.3,281.5 L128.5,281.3 L127.8,281.1 L127.0,280.9 L126.2,280.6 L125.5,280.4 L124.7,280.2 L123.9,280.0 L123.2,279.7 L122.4,279.5 L121.7,279.2 L120.9,279.0 L120.1,278.7 L119.4,278.4 L118.6,278.2 L117.9,277.9 L117.1,277.6 L116.3,277.3 L115.6,277.0 L114.8,276.7 L114.0,276.3 L113.3,276.0 L112.5,275.7 L111.8,275.3 L111.0,275.0 L110.2,274.6 L109.5,274.2 L108.7,273.8 L108.0,273.4 L107.2,273.0 L106.4,272.6 L105.7,272.2 L104.9,271.7 L104.1,271.3 L103.4,270.8 L102.6,270.3 L101.9,269.9 L101.1,269.3 L100.3,268.8 L99.6,268.3 L98.8,267.8 L98.1,267.2 L97.3,266.6 L96.5,266.0 L95.8,265.4 L95.0,264.8 L94.2,264.2 L93.5,263.5 L92.7,262.8 L92.0,262.1 L91.2,261.4 L90.4,260.7 L89.7,259.9 L88.9,259.1 L88.2,258.3 L87.4,257.4 L86.6,256.5 L85.9,255.6 L85.1,254.7 L84.3,253.7 L83.6,252.6 L82.8,251.6 L82.1,250.4 L81.3,249.3 L80.5,248.0 L79.8,246.7 L79.0,245.4 L78.3,243.9 L77.5,242.3 L76.7,240.6 L76.0,238.8 L75.2,236.8 L74.4,234.6 L73.7,232.0 L72.9,228.9 L72.2,224.9 L71.4,215.5 L71.4,214.5 L72.2,205.1 L72.9,201.1 L73.7,198.0 L74.4,195.4 L75.2,193.2 L76.0,191.2 L76.7,189.4 L77.5,187.7 L78.3,186.1 L79.0,184.6 L79.8,183.3 L80.5,182.0 L81.3,180.7 L82.1,179.6 L82.8,178.4 L83.6,177.4 L84.3,176.3 L85.1,175.3 L85.9,174.4 L86.6,173.5 L87.4,172.6 L88.2,171.7 L88.9,170.9 L89.7,170.1 L90.4,169.3 L91.2,168.6 L92.0,167.9 L92.7,167.2 L93.5,166.5 L94.2,165.8 L95.0,165.2 L95.8,164.6 L96.5,164.0 L97.3,163.4 L98.1,162.8 L98.8,162.2 L99.6,161.7 L100.3,161.2 L101.1,160.7 L101.9,160.1 L102.6,159.7 L103.4,159.2 L104.1,158.7 L104.9,158.3 L105.7,157.8 L106.4,157.4 L107.2,157.0 L108.0,156.6 L108.7,156.2 L109.5,155.8 L110.2,155.4 L111.0,155.0 L111.8,154.7 L112.5,154.3 L113.3,154.0 L114.0,153.7 L114.8,153.3 L115.6,153.0 L116.3,152.7 L117.1,152.4 L117.9,152.1 L118.6,151.8 L119.4,151.6 L120.1,151.3 L120.9,151.0 L121.7,150.8 L122.4,150.5 L123.2,150.3 L123.9,150.0 L124.7,149.8 L125.5,149.6 L126.2,149.4 L127.0,149.1 L127.8,148.9 L128.5,148.7 L129.3,148.5 L130.0,148.3 L130.8,148.2 L131.6,148.0 L132.3,147.8 L133.1,147.6 L133.8,147.5 L134.6,147.3 L135.4,147.1 L136.1,147.0 L136.9,146.8 L137.7,146.7 L138.4,146.6 L139.2,146.4 L139.9,146.3 L140.7,146.2 L141.5,146.1 L142.2,145.9 L143.0,145.8 L143.7,145.7 L144.5,145.6 L145.3,145.5 L146.0,145.4 L146.8,145.3 L147.6,145.2 L148.3,145.1 L149.1,145.0 L149.8,145.0 L150.6,144.9 L151.4,144.8 L152.1,144.7 L152.9,144.7 L153.6,144.6 L154.4,144.5 L155.2,144.5 L155.9,144.4 L156.7,144.4 L157.4,144.3 L158.2,144.3 L159.0,144.2 L159.7,144.2 L160.5,144.1 L161.3,144.1 L162.0,144.0 L162.8,144.0 L163.5,144.0 L164.3,143.9 L165.1,143.9 L165.8,143.9 L166.6,143.8 L167.3,143.8 L168.1,143.8 L168.9,143.8 L169.6,143.7 L170.4,143.7 L171.2,143.7 L171.9,143.7 L172.7,143.7 L173.4,143.7 L174.2,143.6 L175.0,143.6 L175.7,143.6 L176.5,143.6 L177.2,143.6 L178.0,143.6 L178.8,143.6 L179.5,143.6 L180.3,143.6 L181.1,143.6 L181.8,143.6 L182.6,143.6 L183.3,143.6 L184.1,143.6 L184.9,143.6 L185.6,143.6 L186.4,143.6 L187.1,143.6 L187.9,143.6 L188.7,143.6 L189.4,143.6 L190.2,143.6 L191.0,143.6 L191.7,143.6 L192.5,143.6 L193.2,143.6 L194.0,143.6 L194.8,143.6 L195.5,143.6 L196.3,143.6 L197.0,143.6 L197.8,143.6 L198.6,143.6 L199.3,143.5 L200.1,143.5 L200.9,143.5 L201.6,143.5 L202.4,143.5 L203.1,143.5 L203.9,143.5 L204.7,143.5 L205.4,143.5 L206.2,143.5 L206.9,143.5 L207.7,143.4 L208.5,143.4 L209.2,143.4 L210.0,143.4 L210.8,143.4 L211.5,143.4 L212.3,143.3 L213.0,143.3 L213.8,143.3 L214.6,143.2 L215.3,143.2 L216.1,143.2 L216.8,143.2 L217.6,143.1 L218.4,143.1 L219.1,143.0 L219.9,143.0 L220.7,143.0 L221.4,142.9 L222.2,142.9 L222.9,142.8 L223.7,142.7 L224.5,142.7 L225.2,142.6 L226.0,142.6 L226.7,142.5 L227.5,142.4 L228.3,142.4 L229.0,142.3 L229.8,142.2 L230.6,142.2 L231.3,142.1 L232.1,142.0 L232.8,141.9 L233.6,141.8 L234.4,141.7 L235.1,141.6 L235.9,141.5 L236.6,141.4 L237.4,141.3 L238.2,141.2 L238.9,141.1 L239.7,141.0 L240.5,140.9 L241.2,140.7 L242.0,140.6 L242.7,140.5 L243.5,140.4 L244.3,140.2 L245.0,140.1 L245.8,139.9 L246.5,139.8 L247.3,139.6 L248.1,139.5 L248.8,139.3 L249.6,139.2 L250.4,139.0 L251.1,138.8 L251.9,138.7 L252.6,138.5 L253.4,138.3 L254.2,138.1 L254.9,137.9 L255.7,137.7 L256.4,137.5 L257.2,137.3 L258.0,137.1 L258.7,136.9 L259.5,136.7 L260.3,136.5 L261.0,136.3 L261.8,136.0 L262.5,135.8 L263.3,135.6 L264.1,135.3 L264.8,135.1 L265.6,134.9 L266.3,134.6 L267.1,134.3 L267.9,134.1 L268.6,133.8 L269.4,133.6 L270.2,133.3 L270.9,133.0 L271.7,132.7 L272.4,132.4 L273.2,132.1 L274.0,131.9 L274.7,131.6 L275.5,131.3 L276.2,130.9 L277.0,130.6 L277.8,130.3 L278.5,130.0 L279.3,129.7 L280.1,129.3 L280.8,129.0 L281.6,128.7 L282.3,128.3 L283.1,128.0 L283.9,127.6 L284.6,127.3 L285.4,126.9 L286.1,126.6 L286.9,126.2 L287.7,125.8 L288.4,125.4 L289.2,125.1 L290.0,124.7 L290.7,124.3 L291.5,123.9 L292.2,123.5 L293.0,123.1 L293.8,122.7 L294.5,122.3 L295.3,121.9 L296.0,121.5 L296.8,121.0 L297.6,120.6 L298.3,120.2 L299.1,119.7 L299.9,119.3 L300.6,118.9 L301.4,118.4 L302.1,118.0 L302.9,117.5 L303.7,117.1 L304.4,116.6 L305.2,116.1 L305.9,115.7 L306.7,115.2 L307.5,114.7 L308.2,114.2 L309.0,113.7 L309.7,113.2 L310.5,112.7 L311.3,112.2 L312.0,111.7 L312.8,111.2 L313.6,110.7 L314.3,110.2 L315.1,109.7 L315.8,109.2 L316.6,108.7 L317.4,108.1 L318.1,107.6 L318.9,107.1 L319.6,106.5 L320.4,106.0 L321.2,105.4 L321.9,104.9 L322.7,104.3 L323.5,103.8 L324.2,103.2 L325.0,102.6 L325.7,102.1 L326.5,101.5 L327.3,100.9 L328.0,100.3 L328.8,99.8 L329.5,99.2 L330.3,98.6 L331.1,98.0 L331.8,97.4 L332.6,96.8 L333.4,96.2 L334.1,95.6 L334.9,95.0 L335.6,94.4 L336.4,93.8 L337.2,93.1 L337.9,92.5 L338.7,91.9 L339.4,91.3 L340.2,90.6 L341.0,90.0 L341.7,89.3 L342.5,88.7 L343.3,88.1 L344.0,87.4 L344.8,86.8 L345.5,86.1 L346.3,85.5 L347.1,84.8 L347.8,84.1 L348.6,83.5 L349.3,82.8 L350.1,82.1 L350.9,81.4 L351.6,80.8 L352.4,80.1 L353.2,79.4 L353.9,78.7 L354.7,78.0 L355.4,77.3 L356.2,76.6 L357.0,75.9 L357.7,75.2 L358.5,74.5 L359.2,73.8 L360.0,73.1 L360.8,72.4 L361.5,71.7 L362.3,71.0 L363.1,70.2 L363.8,69.5 L364.6,68.8 L365.3,68.1 L366.1,67.3 L366.9,66.6 L367.6,65.9 L368.4,65.1 L369.1,64.4 L369.9,63.6 L370.7,62.9 L371.4,62.1 L372.2,61.4 L373.0,60.6 L373.7,59.9 L374.5,59.1 L375.2,58.3 L376.0,57.6" fill="none" stroke="#f7931a" stroke-width="2.4"/>
+<line x1="66.0" y1="169.8" x2="338.8" y2="115.1" stroke="#6db3ff" stroke-width="1.6" stroke-dasharray="6 4"/>
+<line x1="196.9" y1="143.6" x2="196.9" y2="286.4" stroke="#4ad295" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle cx="97.0" cy="163.6" r="5.5" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/>
+<text x="79.0" y="155.5935315354186" font-family="Georgia, serif" font-size="14" fill="#6db3ff" text-anchor="start" font-weight="bold" >P</text>
+<circle cx="289.2" cy="125.1" r="5.5" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/>
+<text x="297.2" y="115.06122082216147" font-family="Georgia, serif" font-size="14" fill="#6db3ff" text-anchor="start" font-weight="bold" >Q</text>
+<circle cx="196.9" cy="143.6" r="5.5" fill="#c7d0dd" stroke="#0a111c" stroke-width="1.5"/>
+<text x="206.93986432057162" y="131.557559086714" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="bold" >third hit</text>
+<circle cx="196.9" cy="286.4" r="5.5" fill="#4ad295" stroke="#0a111c" stroke-width="1.5"/>
+<text x="206.93986432057162" y="306.44244091328596" font-family="Georgia, serif" font-size="14" fill="#4ad295" text-anchor="start" font-weight="bold" >P + Q</text>
+<text x="430" y="56" font-family="Georgia, serif" font-size="16" fill="#e8eef7" text-anchor="start" font-weight="bold" >Elliptic-curve “addition” in three moves</text>
+<circle cx="440" cy="87" r="10" fill="#6db3ff"/><text x="440" y="91.5" font-family="Georgia, serif" font-size="13" fill="#0a111c" text-anchor="middle" font-weight="bold" >1</text>
+<text x="462" y="92" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Pick two points, P and Q, on the curve.</text>
+<circle cx="440" cy="111" r="10" fill="#6db3ff"/><text x="440" y="115.5" font-family="Georgia, serif" font-size="13" fill="#0a111c" text-anchor="middle" font-weight="bold" >2</text>
+<text x="462" y="116" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Draw the straight line through them.</text>
+<text x="462" y="140" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >It hits the curve exactly one more time.</text>
+<circle cx="440" cy="159" r="10" fill="#4ad295"/><text x="440" y="163.5" font-family="Georgia, serif" font-size="13" fill="#0a111c" text-anchor="middle" font-weight="bold" >3</text>
+<text x="462" y="164" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Flip that third point over the</text>
+<text x="462" y="188" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >horizontal axis. That point is P + Q.</text>
+<text x="430" y="234" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Adding P to itself (a tangent line) gives 2P.</text>
+<text x="430" y="256" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Do that 256 times in a row and you reach</text>
+<text x="430" y="278" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >“k × P” for a k around 10⁷⁷, in a blink.</text>
+<text x="430" y="316" font-family="Georgia, serif" font-size="14" fill="#f7931a" text-anchor="start" font-weight="bold" >Nothing here is secret. Anyone can add points.</text>
+<text x="430" y="338" font-family="Georgia, serif" font-size="14" fill="#f7931a" text-anchor="start" font-weight="bold" >The secret is how many times it was done.</text>
+</svg>
+<figcaption>Point addition on the real-number curve. This is the whole operation; everything else in Bitcoin's key math is this move repeated. (Drawn from the actual equation, with P and Q chosen for the picture.)</figcaption>
+</figure>
+
+
+<p>Add a point to itself, 256 times in the right pattern, and you can reach "<em>k</em> times
+the starting point" for a <em>k</em> that is a 256-bit number, in the time it takes to blink.
+Your <strong>private key</strong> is that number <em>k</em>. Your <strong>public key</strong> is the
+point it lands on. Anyone can check that a point is where it should be. Nobody can easily
+look at the point and say how many hops it took.</p>
+
+<p>Computers don't use the smooth curve, though. They work in a finite field, where the numbers
+wrap around like a clock, and that makes the smooth line shatter into scattered dots. The
+picture below is the real thing in miniature: the same equation, on a clock with 127 hours
+instead of one with 78 digits. The numbered dots are <em>G</em>, 2<em>G</em>, 3<em>G</em> and
+so on, one addition apart each, and they hop around the grid with no visible order.</p>
+
+<figure>
+<svg viewBox="0 0 720 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f2-t f2-d">
+<title id="f2-t">Walking G, 2G, 3G on a toy curve: the dots land everywhere</title>
+<desc id="f2-d">A scatter of 126 dots on the toy curve y squared equals x cubed plus seven modulo 127. Numbered points show G, 2G, 3G and so on up to 12G, which jump around the grid with no visible pattern.</desc>
+<rect x="0" y="0" width="720" height="470" fill="#0a111c"/>
+<text x="30" y="28" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="start" font-weight="bold" >Toy Bitcoin: same equation, field of 127 numbers</text>
+<rect x="30" y="40" width="406" height="406" fill="none" stroke="#1d2a3d"/>
+<circle cx="34.8" cy="342.4" r="1.7" fill="#5b4320"/>
+<circle cx="34.8" cy="140.8" r="1.7" fill="#5b4320"/>
+<circle cx="38.0" cy="275.2" r="1.7" fill="#5b4320"/>
+<circle cx="38.0" cy="208.0" r="1.7" fill="#5b4320"/>
+<circle cx="41.2" cy="246.4" r="1.7" fill="#5b4320"/>
+<circle cx="41.2" cy="236.8" r="1.7" fill="#5b4320"/>
+<circle cx="44.4" cy="307.2" r="1.7" fill="#5b4320"/>
+<circle cx="44.4" cy="176.0" r="1.7" fill="#5b4320"/>
+<circle cx="57.2" cy="348.8" r="1.7" fill="#5b4320"/>
+<circle cx="57.2" cy="134.4" r="1.7" fill="#5b4320"/>
+<circle cx="66.8" cy="368.0" r="1.7" fill="#5b4320"/>
+<circle cx="66.8" cy="115.2" r="1.7" fill="#5b4320"/>
+<circle cx="70.0" cy="297.6" r="1.7" fill="#5b4320"/>
+<circle cx="70.0" cy="185.6" r="1.7" fill="#5b4320"/>
+<circle cx="76.4" cy="297.6" r="1.7" fill="#5b4320"/>
+<circle cx="76.4" cy="185.6" r="1.7" fill="#5b4320"/>
+<circle cx="86.0" cy="358.4" r="1.7" fill="#5b4320"/>
+<circle cx="86.0" cy="124.8" r="1.7" fill="#5b4320"/>
+<circle cx="89.2" cy="320.0" r="1.7" fill="#5b4320"/>
+<circle cx="89.2" cy="163.2" r="1.7" fill="#5b4320"/>
+<circle cx="92.4" cy="342.4" r="1.7" fill="#5b4320"/>
+<circle cx="92.4" cy="140.8" r="1.7" fill="#5b4320"/>
+<circle cx="98.8" cy="320.0" r="1.7" fill="#5b4320"/>
+<circle cx="98.8" cy="163.2" r="1.7" fill="#5b4320"/>
+<circle cx="108.4" cy="288.0" r="1.7" fill="#5b4320"/>
+<circle cx="108.4" cy="195.2" r="1.7" fill="#5b4320"/>
+<circle cx="111.6" cy="348.8" r="1.7" fill="#5b4320"/>
+<circle cx="111.6" cy="134.4" r="1.7" fill="#5b4320"/>
+<circle cx="121.2" cy="288.0" r="1.7" fill="#5b4320"/>
+<circle cx="121.2" cy="195.2" r="1.7" fill="#5b4320"/>
+<circle cx="134.0" cy="435.2" r="1.7" fill="#5b4320"/>
+<circle cx="134.0" cy="48.0" r="1.7" fill="#5b4320"/>
+<circle cx="140.4" cy="368.0" r="1.7" fill="#5b4320"/>
+<circle cx="140.4" cy="115.2" r="1.7" fill="#5b4320"/>
+<circle cx="153.2" cy="275.2" r="1.7" fill="#5b4320"/>
+<circle cx="153.2" cy="208.0" r="1.7" fill="#5b4320"/>
+<circle cx="156.4" cy="406.4" r="1.7" fill="#5b4320"/>
+<circle cx="156.4" cy="76.8" r="1.7" fill="#5b4320"/>
+<circle cx="162.8" cy="358.4" r="1.7" fill="#5b4320"/>
+<circle cx="162.8" cy="124.8" r="1.7" fill="#5b4320"/>
+<circle cx="175.6" cy="339.2" r="1.7" fill="#5b4320"/>
+<circle cx="175.6" cy="144.0" r="1.7" fill="#5b4320"/>
+<circle cx="178.8" cy="281.6" r="1.7" fill="#5b4320"/>
+<circle cx="178.8" cy="201.6" r="1.7" fill="#5b4320"/>
+<circle cx="182.0" cy="307.2" r="1.7" fill="#5b4320"/>
+<circle cx="182.0" cy="176.0" r="1.7" fill="#5b4320"/>
+<circle cx="194.8" cy="387.2" r="1.7" fill="#5b4320"/>
+<circle cx="194.8" cy="96.0" r="1.7" fill="#5b4320"/>
+<circle cx="198.0" cy="329.6" r="1.7" fill="#5b4320"/>
+<circle cx="198.0" cy="153.6" r="1.7" fill="#5b4320"/>
+<circle cx="214.0" cy="246.4" r="1.7" fill="#5b4320"/>
+<circle cx="214.0" cy="236.8" r="1.7" fill="#5b4320"/>
+<circle cx="217.2" cy="323.2" r="1.7" fill="#5b4320"/>
+<circle cx="217.2" cy="160.0" r="1.7" fill="#5b4320"/>
+<circle cx="223.6" cy="384.0" r="1.7" fill="#5b4320"/>
+<circle cx="223.6" cy="99.2" r="1.7" fill="#5b4320"/>
+<circle cx="246.0" cy="246.4" r="1.7" fill="#5b4320"/>
+<circle cx="246.0" cy="236.8" r="1.7" fill="#5b4320"/>
+<circle cx="252.4" cy="358.4" r="1.7" fill="#5b4320"/>
+<circle cx="252.4" cy="124.8" r="1.7" fill="#5b4320"/>
+<circle cx="255.6" cy="384.0" r="1.7" fill="#5b4320"/>
+<circle cx="255.6" cy="99.2" r="1.7" fill="#5b4320"/>
+<circle cx="258.8" cy="243.2" r="1.7" fill="#5b4320"/>
+<circle cx="258.8" cy="240.0" r="1.7" fill="#5b4320"/>
+<circle cx="262.0" cy="393.6" r="1.7" fill="#5b4320"/>
+<circle cx="262.0" cy="89.6" r="1.7" fill="#5b4320"/>
+<circle cx="271.6" cy="288.0" r="1.7" fill="#5b4320"/>
+<circle cx="271.6" cy="195.2" r="1.7" fill="#5b4320"/>
+<circle cx="274.8" cy="307.2" r="1.7" fill="#5b4320"/>
+<circle cx="274.8" cy="176.0" r="1.7" fill="#5b4320"/>
+<circle cx="281.2" cy="284.8" r="1.7" fill="#5b4320"/>
+<circle cx="281.2" cy="198.4" r="1.7" fill="#5b4320"/>
+<circle cx="284.4" cy="243.2" r="1.7" fill="#5b4320"/>
+<circle cx="284.4" cy="240.0" r="1.7" fill="#5b4320"/>
+<circle cx="287.6" cy="387.2" r="1.7" fill="#5b4320"/>
+<circle cx="287.6" cy="96.0" r="1.7" fill="#5b4320"/>
+<circle cx="294.0" cy="368.0" r="1.7" fill="#5b4320"/>
+<circle cx="294.0" cy="115.2" r="1.7" fill="#5b4320"/>
+<circle cx="300.4" cy="393.6" r="1.7" fill="#5b4320"/>
+<circle cx="300.4" cy="89.6" r="1.7" fill="#5b4320"/>
+<circle cx="303.6" cy="284.8" r="1.7" fill="#5b4320"/>
+<circle cx="303.6" cy="198.4" r="1.7" fill="#5b4320"/>
+<circle cx="306.8" cy="323.2" r="1.7" fill="#5b4320"/>
+<circle cx="306.8" cy="160.0" r="1.7" fill="#5b4320"/>
+<circle cx="310.0" cy="275.2" r="1.7" fill="#5b4320"/>
+<circle cx="310.0" cy="208.0" r="1.7" fill="#5b4320"/>
+<circle cx="313.2" cy="320.0" r="1.7" fill="#5b4320"/>
+<circle cx="313.2" cy="163.2" r="1.7" fill="#5b4320"/>
+<circle cx="322.8" cy="284.8" r="1.7" fill="#5b4320"/>
+<circle cx="322.8" cy="198.4" r="1.7" fill="#5b4320"/>
+<circle cx="329.2" cy="339.2" r="1.7" fill="#5b4320"/>
+<circle cx="329.2" cy="144.0" r="1.7" fill="#5b4320"/>
+<circle cx="332.4" cy="348.8" r="1.7" fill="#5b4320"/>
+<circle cx="332.4" cy="134.4" r="1.7" fill="#5b4320"/>
+<circle cx="338.8" cy="281.6" r="1.7" fill="#5b4320"/>
+<circle cx="338.8" cy="201.6" r="1.7" fill="#5b4320"/>
+<circle cx="345.2" cy="393.6" r="1.7" fill="#5b4320"/>
+<circle cx="345.2" cy="89.6" r="1.7" fill="#5b4320"/>
+<circle cx="348.4" cy="329.6" r="1.7" fill="#5b4320"/>
+<circle cx="348.4" cy="153.6" r="1.7" fill="#5b4320"/>
+<circle cx="351.6" cy="435.2" r="1.7" fill="#5b4320"/>
+<circle cx="351.6" cy="48.0" r="1.7" fill="#5b4320"/>
+<circle cx="354.8" cy="297.6" r="1.7" fill="#5b4320"/>
+<circle cx="354.8" cy="185.6" r="1.7" fill="#5b4320"/>
+<circle cx="361.2" cy="329.6" r="1.7" fill="#5b4320"/>
+<circle cx="361.2" cy="153.6" r="1.7" fill="#5b4320"/>
+<circle cx="364.4" cy="243.2" r="1.7" fill="#5b4320"/>
+<circle cx="364.4" cy="240.0" r="1.7" fill="#5b4320"/>
+<circle cx="370.8" cy="406.4" r="1.7" fill="#5b4320"/>
+<circle cx="370.8" cy="76.8" r="1.7" fill="#5b4320"/>
+<circle cx="374.0" cy="342.4" r="1.7" fill="#5b4320"/>
+<circle cx="374.0" cy="140.8" r="1.7" fill="#5b4320"/>
+<circle cx="380.4" cy="406.4" r="1.7" fill="#5b4320"/>
+<circle cx="380.4" cy="76.8" r="1.7" fill="#5b4320"/>
+<circle cx="383.6" cy="323.2" r="1.7" fill="#5b4320"/>
+<circle cx="383.6" cy="160.0" r="1.7" fill="#5b4320"/>
+<circle cx="390.0" cy="281.6" r="1.7" fill="#5b4320"/>
+<circle cx="390.0" cy="201.6" r="1.7" fill="#5b4320"/>
+<circle cx="402.8" cy="339.2" r="1.7" fill="#5b4320"/>
+<circle cx="402.8" cy="144.0" r="1.7" fill="#5b4320"/>
+<circle cx="422.0" cy="435.2" r="1.7" fill="#5b4320"/>
+<circle cx="422.0" cy="48.0" r="1.7" fill="#5b4320"/>
+<circle cx="425.2" cy="387.2" r="1.7" fill="#5b4320"/>
+<circle cx="425.2" cy="96.0" r="1.7" fill="#5b4320"/>
+<circle cx="428.4" cy="384.0" r="1.7" fill="#5b4320"/>
+<circle cx="428.4" cy="99.2" r="1.7" fill="#5b4320"/>
+<line x1="34.8" y1="342.4" x2="140.4" y2="368.0" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="140.4" y1="368.0" x2="262.0" y2="393.6" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="262.0" y1="393.6" x2="287.6" y2="387.2" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="287.6" y1="387.2" x2="258.8" y2="240.0" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="258.8" y1="240.0" x2="306.8" y2="323.2" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="306.8" y1="323.2" x2="383.6" y2="323.2" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="383.6" y1="323.2" x2="38.0" y2="275.2" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="38.0" y1="275.2" x2="214.0" y2="246.4" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="214.0" y1="246.4" x2="303.6" y2="284.8" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="303.6" y1="284.8" x2="57.2" y2="348.8" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<line x1="57.2" y1="348.8" x2="86.0" y2="358.4" stroke="#6db3ff" stroke-width="0.8" opacity="0.55"/>
+<circle cx="34.8" cy="342.4" r="8" fill="#f7931a" stroke="#0a111c" stroke-width="1.5"/><text x="34.800000000000004" y="346.40000000000003" font-family="Georgia, serif" font-size="10" fill="#0a111c" text-anchor="middle" font-weight="bold" >G</text>
+<circle cx="140.4" cy="368.0" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="140.4" y="372.00000000000006" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >2</text>
+<circle cx="262.0" cy="393.6" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="262.0" y="397.6" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >3</text>
+<circle cx="287.6" cy="387.2" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="287.6" y="391.20000000000005" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >4</text>
+<circle cx="258.8" cy="240.0" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="258.80000000000007" y="244.0" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >5</text>
+<circle cx="306.8" cy="323.2" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="306.8" y="327.20000000000005" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >6</text>
+<circle cx="383.6" cy="323.2" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="383.6" y="327.20000000000005" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >7</text>
+<circle cx="38.0" cy="275.2" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="38.0" y="279.20000000000005" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >8</text>
+<circle cx="214.0" cy="246.4" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="214.0" y="250.4" font-family="Georgia, serif" font-size="11" fill="#0a111c" text-anchor="middle" font-weight="bold" >9</text>
+<circle cx="303.6" cy="284.8" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="303.6" y="288.80000000000007" font-family="Georgia, serif" font-size="10" fill="#0a111c" text-anchor="middle" font-weight="bold" >10</text>
+<circle cx="57.2" cy="348.8" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="57.2" y="352.80000000000007" font-family="Georgia, serif" font-size="10" fill="#0a111c" text-anchor="middle" font-weight="bold" >11</text>
+<circle cx="86.0" cy="358.4" r="8" fill="#6db3ff" stroke="#0a111c" stroke-width="1.5"/><text x="86.0" y="362.40000000000003" font-family="Georgia, serif" font-size="10" fill="#0a111c" text-anchor="middle" font-weight="bold" >12</text>
+<text x="470" y="70" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >The numbered dots are 1·G, 2·G, 3·G …</text>
+<text x="470" y="92" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Each is one more addition from the last,</text>
+<text x="470" y="114" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >yet they hop around with no visible order.</text>
+<text x="470" y="158" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >The private key is the number k.</text>
+<text x="470" y="180" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >The public key is the dot k·G lands on.</text>
+<text x="470" y="224" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Hand someone the dot and ask “which k?”</text>
+<text x="470" y="246" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >On this toy grid you could just try all 127.</text>
+<rect x="460" y="272" width="250" height="124" rx="8" fill="#101a2b" stroke="#1d2a3d"/>
+<text x="474" y="296" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Bitcoin’s real grid has about</text>
+<text x="474" y="326" font-family="Georgia, serif" font-size="22" fill="#f7931a" text-anchor="start" font-weight="bold" >1.16 × 10⁷⁷ points</text>
+<text x="474" y="350" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Trying them all is not an option;</text>
+<text x="474" y="370" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >it is within a few orders of magnitude</text>
+<text x="474" y="388" font-family="Georgia, serif" font-size="14" fill="#c7d0dd" text-anchor="start" font-weight="normal" >of the atoms in the observable universe.</text>
+<text x="30" y="458" font-family="Georgia, serif" font-size="11" fill="#8a97ab" text-anchor="start" font-weight="normal" >Toy curve: y² = x³ + 7 mod 127, G = (1, 32), 127 points including the point at infinity. Built for this page.</text>
+</svg>
+<figcaption>A toy version of Bitcoin's key math. On a grid of 127 you could find k by trying every dot. On Bitcoin's grid of about 1.16 × 10⁷⁷ points you could not.</figcaption>
+</figure>
+
+
+<p>That asymmetry, easy forward and hopeless backward, is the entire security argument. It's
+called the <strong>elliptic-curve discrete logarithm problem</strong>, and the best classical
+attack needs roughly 2¹²⁸ steps. Quantum computers matter because of a 1994 algorithm
+by Peter Shor that doesn't take 2¹²⁸ steps. It takes a polynomial number, if you can build a
+machine big and clean enough to run it.</p>
+
+<figure>
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f3-t f3-d">
+<title id="f3-t">The one-way street and what Shor's algorithm does to it</title>
+<desc id="f3-d">Private key k to public key Q equals k times G takes about 256 steps. The reverse needs about two to the 128 steps classically, but a large quantum computer running Shor's algorithm needs roughly 1,200 to 1,450 logical qubits and 70 to 90 million gates.</desc>
+<rect x="0" y="0" width="720" height="330" fill="#0a111c"/>
+<rect x="30" y="40" width="170" height="70" rx="10" fill="#101a2b" stroke="#6db3ff" stroke-width="2"/>
+<text x="115.0" y="71.0" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="middle" font-weight="bold" >Private key k</text>
+<text x="115.0" y="91.0" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >a 256-bit secret number</text>
+<rect x="520" y="40" width="170" height="70" rx="10" fill="#101a2b" stroke="#f7931a" stroke-width="2"/>
+<text x="605.0" y="71.0" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="middle" font-weight="bold" >Public key Q = k·G</text>
+<text x="605.0" y="91.0" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >a point on the curve</text>
+<line x1="205" y1="75" x2="515" y2="75" stroke="#4ad295" stroke-width="3"/><polygon points="515,75 503,68 503,82" fill="#4ad295"/>
+<text x="360" y="62" font-family="Georgia, serif" font-size="13" fill="#4ad295" text-anchor="middle" font-weight="bold" >EASY: ~256 doublings and additions</text>
+<text x="360" y="98" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >milliseconds on a phone</text>
+<line x1="515" y1="150" x2="205" y2="150" stroke="#ff7b7b" stroke-width="3" stroke-dasharray="8 5"/><polygon points="205,150 217,143 217,157" fill="#ff7b7b"/>
+<text x="360" y="142" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >HARD (classical): ~2¹²⁸ steps</text>
+<text x="360" y="172" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >thousands of times the age of the universe, even at a billion billion steps a second</text>
+<rect x="30" y="200" width="660" height="100" rx="10" fill="#1a1420" stroke="#ff7b7b" stroke-width="2"/>
+<text x="48" y="226" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >Shor’s algorithm (1994) turns “hard” into “tens of millions of gates”, if the machine exists:</text>
+<text x="48" y="252" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Google, March 2026: &lt;1,200 logical qubits and &lt;90 million Toffoli gates (or &lt;1,450 and &lt;70 million).</text>
+<text x="48" y="274" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="start" font-weight="normal" >That is the paper’s own estimate for a 256-bit curve like Bitcoin’s. No such machine exists today.</text>
+</svg>
+<figcaption>The one-way street. The quantum attack is a design on paper; the numbers are from Google's March 2026 resource estimate, which reports two circuit variants.</figcaption>
+</figure>
+
+
+<h2>"Doesn't Bitcoin Use Two? Wouldn't They Have to Crack Both?"</h2>
+
+<p>Good instinct, and it would be great news if it were true. It isn't. Bitcoin does have two
+signature schemes: <strong>ECDSA</strong> from the beginning in 2009, and
+<strong>Schnorr</strong> (BIP-340) added with the Taproot upgrade in 2021. But they are not
+layers. They are two different ways of proving you know <em>k</em>, and both of them run on the
+same curve with the same hard problem underneath. Find <em>k</em> from the public point and you
+can forge either one. Shor's algorithm doesn't care which signature you wrapped around the key.</p>
+
+<figure>
+<svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f4-t f4-d">
+<title id="f4-t">Bitcoin's two signature schemes share one lock</title>
+<desc id="f4-d">ECDSA from 2009 and Schnorr signatures from the 2021 Taproot upgrade both rest on the same discrete-logarithm problem on the secp256k1 curve, so one successful quantum attack breaks both. SHA-256 hashing is a separate lock that quantum computers only weaken modestly.</desc>
+<rect x="0" y="0" width="720" height="380" fill="#0a111c"/>
+<text x="30" y="30" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="start" font-weight="bold" >Signatures: two schemes, one hard problem</text>
+<rect x="30" y="50" width="200" height="64" rx="10" fill="#101a2b" stroke="#6db3ff" stroke-width="2"/>
+<text x="130.0" y="80.0" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="middle" font-weight="bold" >ECDSA</text>
+<text x="130.0" y="98.0" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >2009 · addresses starting 1 and bc1q</text>
+<rect x="30" y="134" width="200" height="64" rx="10" fill="#101a2b" stroke="#6db3ff" stroke-width="2"/>
+<text x="130.0" y="164.0" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="middle" font-weight="bold" >Schnorr (BIP-340)</text>
+<text x="130.0" y="182.0" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >2021 Taproot · addresses starting bc1p</text>
+<line x1="232" y1="82" x2="318" y2="130" stroke="#c7d0dd" stroke-width="2"/><line x1="232" y1="166" x2="318" y2="136" stroke="#c7d0dd" stroke-width="2"/>
+<rect x="320" y="92" width="190" height="86" rx="10" fill="#241a0b" stroke="#f7931a" stroke-width="3"/>
+<text x="415" y="122" font-family="Georgia, serif" font-size="15" fill="#f7931a" text-anchor="middle" font-weight="bold" >The same lock</text>
+<text x="415" y="142" font-family="Georgia, serif" font-size="12" fill="#e8eef7" text-anchor="middle" font-weight="normal" >discrete log on secp256k1</text>
+<text x="415" y="160" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >(find k from k·G)</text>
+<line x1="512" y1="135" x2="566" y2="135" stroke="#ff7b7b" stroke-width="3"/><polygon points="568,135 556,128 556,142" fill="#ff7b7b"/>
+<rect x="570" y="92" width="120" height="86" rx="10" fill="#1a1420" stroke="#ff7b7b" stroke-width="2"/>
+<text x="630" y="122" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="middle" font-weight="bold" >Shor’s</text>
+<text x="630" y="140" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="middle" font-weight="bold" >algorithm</text>
+<text x="630" y="160" font-family="Georgia, serif" font-size="12" fill="#ff7b7b" text-anchor="middle" font-weight="normal" >opens both</text>
+<text x="30" y="226" font-family="Georgia, serif" font-size="13" fill="#f7931a" text-anchor="start" font-weight="bold" >One lock with two kinds of key, not two locks in a row.</text>
+<line x1="30" y1="246" x2="690" y2="246" stroke="#1d2a3d"/>
+<text x="30" y="274" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="start" font-weight="bold" >A different lock: hashing</text>
+<rect x="30" y="288" width="200" height="64" rx="10" fill="#101a2b" stroke="#4ad295" stroke-width="2"/>
+<text x="130.0" y="318.0" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="middle" font-weight="bold" >SHA-256 / RIPEMD-160</text>
+<text x="130.0" y="336.0" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >mining, txids, address hashes</text>
+<line x1="232" y1="320" x2="318" y2="320" stroke="#4ad295" stroke-width="3"/><polygon points="320,320 308,313 308,327" fill="#4ad295"/>
+<rect x="322" y="288" width="368" height="64" rx="10" fill="#101a2b" stroke="#4ad295" stroke-width="2"/>
+<text x="334" y="312" font-family="Georgia, serif" font-size="13" fill="#e8eef7" text-anchor="start" font-weight="normal" >Grover’s algorithm only gives a square-root speedup:</text>
+<text x="334" y="332" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="start" font-weight="normal" >256-bit work becomes ~2¹²⁸, which is still out of reach.</text>
+</svg>
+<figcaption>Two signature schemes, one lock. The lower box is the one genuinely separate defence, and it is a hash function, not a curve.</figcaption>
+</figure>
+
+
+<p>The thing that really is a second lock is the <strong>hash</strong> sitting in front of most
+addresses. If your coins sit at an address that starts with <code>1</code> or <code>bc1q</code>,
+the blockchain doesn't hold your public key at all, only a 160-bit fingerprint of it. A quantum
+computer helps against hashes too, but only by a square root (Grover's algorithm), which turns
+a hopeless job into a merely hopeless one. That fingerprint is why a big chunk of Bitcoin is
+quietly protected today. It is not protected by the curve.</p>
+
+<h2>What's Actually Exposed</h2>
+
+<p>The fingerprint comes off the moment you spend. A transaction has to reveal the public key so
+others can verify the signature, and from that instant the key is out in the open. This gives
+two different attack shapes, which Google's authors separate in their paper:</p>
+
+<ul>
+<li><strong>At-rest exposure:</strong> coins whose public key is already on the chain and
+will stay there. That covers the earliest pay-to-public-key outputs (many of the 2009 and 2010
+mining rewards), Taproot outputs, and any address that has ever been reused. An attacker has all
+the time in the world.</li>
+<li><strong>On-spend exposure:</strong> a transaction sitting in the mempool, waiting for a
+block, with its key now visible. The attacker has to derive the key and get a competing
+transaction confirmed first, before the roughly ten-minute block interval runs out.</li>
+</ul>
+
+<figure>
+<svg viewBox="0 0 720 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f5-t f5-d">
+<title id="f5-t">When Bitcoin's public key is visible, by address type</title>
+<desc id="f5-d">A table-like graphic. Pay-to-public-key outputs from 2009 to 2010 show the key all the time. Pay-to-public-key-hash and native SegWit addresses hide the key behind a hash until the coins are spent, or forever if never reused. Taproot addresses show a key from the start. Below, a bar shows an estimated 6.9 million of about 20.1 million bitcoin sit behind exposed keys.</desc>
+<rect x="0" y="0" width="720" height="470" fill="#0a111c"/>
+<text x="30" y="30" font-family="Georgia, serif" font-size="16" fill="#e8eef7" text-anchor="start" font-weight="bold" >Is the public key visible?</text>
+<text x="320" y="56" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="middle" font-weight="bold" >Coins at rest</text>
+<text x="470" y="56" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="middle" font-weight="bold" >In the mempool</text>
+<text x="610" y="56" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="middle" font-weight="bold" >Risk shape</text>
+<rect x="30" y="70" width="660" height="52" rx="8" fill="#101a2b" stroke="#1d2a3d"/>
+<text x="44" y="92" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >P2PK</text>
+<text x="44" y="110" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >early coinbase, 2009–10</text>
+<rect x="282" y="83" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="320" y="101" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<rect x="432" y="83" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="470" y="101" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<text x="610" y="101" font-family="Georgia, serif" font-size="12" fill="#ff7b7b" text-anchor="middle" font-weight="normal" >long-term target</text>
+<rect x="30" y="130" width="660" height="52" rx="8" fill="#101a2b" stroke="#1d2a3d"/>
+<text x="44" y="152" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >P2PKH  (1…)</text>
+<text x="44" y="170" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >hash of key; reuse leaks it</text>
+<rect x="282" y="143" width="76" height="26" rx="13" fill="#4ad295" opacity="0.2" stroke="#4ad295"/>
+<text x="320" y="161" font-family="Georgia, serif" font-size="13" fill="#4ad295" text-anchor="middle" font-weight="bold" >hidden</text>
+<rect x="432" y="143" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="470" y="161" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<text x="610" y="161" font-family="Georgia, serif" font-size="12" fill="#f7931a" text-anchor="middle" font-weight="normal" >race at spend time</text>
+<rect x="30" y="190" width="660" height="52" rx="8" fill="#101a2b" stroke="#1d2a3d"/>
+<text x="44" y="212" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >P2WPKH  (bc1q…)</text>
+<text x="44" y="230" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >hash of key, SegWit</text>
+<rect x="282" y="203" width="76" height="26" rx="13" fill="#4ad295" opacity="0.2" stroke="#4ad295"/>
+<text x="320" y="221" font-family="Georgia, serif" font-size="13" fill="#4ad295" text-anchor="middle" font-weight="bold" >hidden</text>
+<rect x="432" y="203" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="470" y="221" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<text x="610" y="221" font-family="Georgia, serif" font-size="12" fill="#f7931a" text-anchor="middle" font-weight="normal" >race at spend time</text>
+<rect x="30" y="250" width="660" height="52" rx="8" fill="#101a2b" stroke="#1d2a3d"/>
+<text x="44" y="272" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >P2TR  (bc1p…)</text>
+<text x="44" y="290" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Taproot: tweaked key on-chain</text>
+<rect x="282" y="263" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="320" y="281" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<rect x="432" y="263" width="76" height="26" rx="13" fill="#ff7b7b" opacity="0.2" stroke="#ff7b7b"/>
+<text x="470" y="281" font-family="Georgia, serif" font-size="13" fill="#ff7b7b" text-anchor="middle" font-weight="bold" >YES</text>
+<text x="610" y="281" font-family="Georgia, serif" font-size="12" fill="#ff7b7b" text-anchor="middle" font-weight="normal" >long-term target</text>
+<text x="30" y="332" font-family="Georgia, serif" font-size="12.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >The hash is the only thing standing between an unspent, never-reused address and Shor. Spending removes it.</text>
+<text x="30" y="358" font-family="Georgia, serif" font-size="14" fill="#e8eef7" text-anchor="start" font-weight="bold" >How much sits behind an exposed key (reported estimate, not my count)</text>
+<rect x="30" y="370" width="660" height="34" rx="6" fill="#101a2b" stroke="#1d2a3d"/>
+<rect x="30" y="370" width="226.6" height="34" rx="6" fill="#ff7b7b" opacity="0.85"/>
+<text x="143.28358208955223" y="392" font-family="Georgia, serif" font-size="13" fill="#0a111c" text-anchor="middle" font-weight="bold" >≈ 6.9 million BTC exposed</text>
+<text x="473.2835820895522" y="392" font-family="Georgia, serif" font-size="13" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >the rest: key hidden until spend</text>
+<text x="30" y="426" font-family="Georgia, serif" font-size="12" fill="#c7d0dd" text-anchor="start" font-weight="normal" >Out of about 20.1 million mined (this site’s Bitcoin Board). The estimate includes roughly 1 million BTC attributed to Satoshi.</text>
+</svg>
+<figcaption>Which address types show the public key, and when. The 6.9 million figure is a widely repeated third-party estimate that I did not recompute; it comes from news coverage of the BIP-360 and BIP-361 proposals.</figcaption>
+</figure>
+
+
+<p>Estimates of the at-rest pile run around <strong>6.9 million BTC</strong>, about a third of
+everything mined, including the roughly million coins attributed to Satoshi. That's an
+unusual position for an asset sold partly as "digital gold": a third of the vault sits behind
+glass that is thick today and of unknown thickness tomorrow. For the full supply picture see
+<a href="how-many-bitcoins-are-there.html">how many bitcoins there really are</a>, and the live
+numbers are on the <a href="bitcoin.html">Bitcoin Board</a>.</p>
+
+<h2>How Far Away Is the Machine?</h2>
+
+<p>Here's where the drama and the data part ways. The largest physical-qubit arrays in 2026 are
+about 1,000 to 1,200 qubits, and what they can do reliably as <em>logical</em> qubits is in the
+tens. Bitcoin's curve needs, by Google's March 2026 estimate, fewer than 1,200 to 1,450 logical
+qubits, which on superconducting hardware means fewer than half a million physical ones, running for
+minutes. That paper, by Babbush, Gidney, Boneh, Drake and colleagues, cut the earlier resource
+estimate by roughly twenty times, and Google published a zero-knowledge proof of its claim
+rather than the attack circuits themselves.</p>
+
+<p>The other recent number comes from IonQ, in September: about 19,400 trapped ions, but around
+26 days per attempt. Slower machines like that can only attack at-rest coins; they cannot
+race a ten-minute block. So which hardware wins matters as much as how many qubits it has.</p>
+
+<figure>
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="f6-t f6-d">
+<title id="f6-t">Physical qubits needed, on a log scale</title>
+<desc id="f6-d">A logarithmic bar chart. Largest physical-qubit machines today are about 1,200. IonQ's estimate for Bitcoin's curve is about 19,400 ions but 26 days per attempt. Google's is under 500,000 superconducting qubits for minutes. For comparison, factoring RSA-2048 was estimated at 20 million qubits in 2019 and under 1 million in 2025.</desc>
+<rect x="0" y="0" width="720" height="400" fill="#0a111c"/>
+<text x="30" y="30" font-family="Georgia, serif" font-size="15" fill="#e8eef7" text-anchor="start" font-weight="bold" >How many physical qubits does the attack need? (log scale)</text>
+<line x1="250.0" y1="46" x2="250.0" y2="316" stroke="#1d2a3d"/>
+<text x="250.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >100</text>
+<line x1="330.0" y1="46" x2="330.0" y2="316" stroke="#1d2a3d"/>
+<text x="330.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >1,000</text>
+<line x1="410.0" y1="46" x2="410.0" y2="316" stroke="#1d2a3d"/>
+<text x="410.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >10,000</text>
+<line x1="490.0" y1="46" x2="490.0" y2="316" stroke="#1d2a3d"/>
+<text x="490.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >100,000</text>
+<line x1="570.0" y1="46" x2="570.0" y2="316" stroke="#1d2a3d"/>
+<text x="570.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >1 million</text>
+<line x1="650.0" y1="46" x2="650.0" y2="316" stroke="#1d2a3d"/>
+<text x="650.0" y="336" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="middle" font-weight="normal" >10 million</text>
+<text x="238" y="77" font-family="Georgia, serif" font-size="12.5" fill="#e8eef7" text-anchor="end" font-weight="bold" >Largest machines today</text>
+<rect x="250" y="58" width="86.3" height="26" rx="4" fill="#4ad295"/>
+<text x="344.33449968380995" y="76" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >≈1,200 noisy qubits; logical qubits only tens</text>
+<text x="238" y="129" font-family="Georgia, serif" font-size="12.5" fill="#e8eef7" text-anchor="end" font-weight="bold" >IonQ, Sept 2026: secp256k1</text>
+<rect x="250" y="110" width="183.0" height="26" rx="4" fill="#6db3ff"/>
+<text x="441.01876526371905" y="128" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >19,397 ions · ~26 days per try · on paper</text>
+<text x="238" y="181" font-family="Georgia, serif" font-size="12.5" fill="#e8eef7" text-anchor="end" font-weight="bold" >Google, Mar 2026: secp256k1</text>
+<rect x="250" y="162" width="295.9" height="26" rx="4" fill="#f7931a"/>
+<text x="553.9176003468815" y="180" font-family="Georgia, serif" font-size="11.5" fill="#c7d0dd" text-anchor="start" font-weight="normal" >&lt;500,000 · minutes · on paper</text>
+<text x="238" y="233" font-family="Georgia, serif" font-size="12.5" fill="#e8eef7" text-anchor="end" font-weight="bold" >Gidney, May 2025: RSA-2048*</text>
+<rect x="250" y="214" width="320.0" height="26" rx="4" fill="#9a8cff"/>
+<text x="562.0" y="232" font-family="Georgia, serif" font-size="11.5" fill="#e8eef7" text-anchor="end" font-weight="normal" >&lt;1 million · &lt;1 week · on paper</text>
+<text x="238" y="285" font-family="Georgia, serif" font-size="12.5" fill="#e8eef7" text-anchor="end" font-weight="bold" >Gidney, 2019: RSA-2048*</text>
+<rect x="250" y="266" width="424.1" height="26" rx="4" fill="#6b6f85"/>
+<text x="666.0823996531185" y="284" font-family="Georgia, serif" font-size="11.5" fill="#e8eef7" text-anchor="end" font-weight="normal" >20 million · 8 hours · on paper</text>
+<text x="30" y="372" font-family="Georgia, serif" font-size="11" fill="#8a97ab" text-anchor="start" font-weight="normal" >*RSA is a different public-key system (it rests on factoring, not curves), shown for scale. “On paper” = a published design, not a built machine.</text>
+<text x="30" y="388" font-family="Georgia, serif" font-size="11" fill="#8a97ab" text-anchor="start" font-weight="normal" >Sources: Babbush et al. 2026; IonQ 2026; Gidney 2019, 2025. Hardware: 2026 press reports of the largest arrays.</text>
+</svg>
+<figcaption>The shrinking target, on a log scale. Every bar except the top one is a published design, not a machine that exists. RSA bars are shown only to illustrate the same downward trend.</figcaption>
+</figure>
+
+
+<p>I'd read this chart two ways at once. One: the trend is steady and runs in the wrong
+direction for the defender. The headline estimates have fallen several-fold in the last few years. Two: from the top bar to
+the second bar is still a gap of more than one order of magnitude in qubits, and the headline
+assumptions (error rates, decoding, running for days without a fault) are exactly the parts that haven't
+been built at scale. Both are true. The sensible posture is the one Google itself adopted for its own
+systems, which is to migrate on a schedule (it has said 2029) rather than waiting to see the machine.</p>
+
+<h2>So What Is Bitcoin Doing About It?</h2>
+
+<p>As of today, the answer is "discussing it carefully," which in Bitcoin means slowly. As
+reported, there are three live ideas:</p>
+
+<ul>
+<li><strong>BIP-360 (Pay-to-Merkle-Root, P2MR).</strong> A new output type that works like
+Taproot with the quantum-vulnerable key path taken out, so a script is committed to but no
+curve key is exposed. It was published in February 2026 as a draft BIP and has prototype
+implementations on test networks. It is a place to move coins to, not a forced migration.</li>
+<li><strong>BIP-361 (the freeze).</strong> Jameson Lopp and co-authors sketched a phased plan
+under which old-style signatures would eventually stop being valid, freezing anything still in
+a vulnerable output, with a possible zero-knowledge recovery path for people who still hold
+their seed. Lopp himself has said it is a sketch, not a proposal ready for adoption.</li>
+<li><strong>The optional camp.</strong> Adam Back and others argue for upgrade paths people
+can choose, with no forced freeze, because confiscating coins, even coins that a quantum thief
+would take anyway, cuts against everything Bitcoin tells itself about property.</li>
+</ul>
+
+<p>Notice what all three dodge: the hardest question is political, not mathematical. If a
+million coins from 2009 are exposed and their owner never moves them, do you freeze them (and
+burn a founding principle), leave them (and hand them to whoever builds the machine first), or
+wait? There is no neutral option. It's the lost-coin problem with a clock on it. Meanwhile, the
+practical hygiene is dull and available now: don't reuse addresses, and move long-dormant coins
+to fresh addresses on current formats. If you want the self-custody angle, the
+<a href="coldcard-bitkey-security.html">hardware wallet piece</a> covers the key-handling side.</p>
+
+<h2>And Is Public-Key Cryptography Itself Going Away?</h2>
+
+<p>No. This is where Green's sentence needs the most care, since it's easy to read it as "the
+whole idea is dead." Public-key cryptography is the idea; elliptic curves and RSA are two
+implementations of it. In 2024 NIST finalized replacements that run on ordinary computers:
+ML-KEM for key exchange, and ML-DSA and SLH-DSA for signatures. They're built on lattices and on
+hash functions, neither of which Shor's algorithm touches. Browsers and messaging apps already use
+the hybrid versions.</p>
+
+<p>What Bitcoin would pay is <strong>space</strong>. A Schnorr signature is 64 bytes. An ML-DSA
+signature is about 2,400 bytes, close to forty times larger, with a public key to match. Block
+space is the scarce resource Bitcoin charges rent on, so a post-quantum Bitcoin is a Bitcoin with a
+very different fee market. That's a real cost and a solvable one. It isn't the end of anything.</p>
+
+<p>The honest fear is a different one, and Green is exactly the person to hold it: that the new
+schemes are young. In 2022 SIKE, a candidate that had made it to the fourth round of NIST's own process, was
+broken on a laptop by a classical attack. Nobody is saying the lattices will fall. But "we replaced the old lock with a newer
+one" is a weaker sentence than it sounds, and it's why hash-based signatures, which lean on far
+older assumptions, keep coming up as the fallback.</p>
+
+<h2>What I'll Be Watching</h2>
+
+<ul>
+<li>Whether BIP-360 moves from draft to a real activation discussion, and whether
+hardware-wallet makers ship support for it.</li>
+<li>Any independent confirmation (or correction) of the 500,000-qubit and 20,000-ion figures,
+and above all demonstrated logical-qubit counts and error rates, which are what decide whether
+those designs are real.</li>
+<li>Whether the "freeze or not" fight turns into code or stays a mailing-list tradition.</li>
+<li>What Green was replying to, because the context could change the reading of the quote.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+<li>I read Green's post through a third-party mirror and saw only that one line. Everything I
+said about what he "meant" is a guess and I've tried to keep it out of the piece.</li>
+<li>I read the Google paper's abstract and Google's blog post, not the whole paper, and the
+IonQ paper through a summary. The qubit and gate counts are quoted from those, not reproduced
+by me, and they are estimates for machines that don't exist.</li>
+<li>The 6.9 million BTC exposed figure and the BIP-360 and BIP-361 details come from news
+coverage and search summaries, not from the proposals' own texts or from my own scan of the
+chain. The true number depends on definitions (for example, how reused addresses are counted)
+and will move.</li>
+<li>The RSA bars in the chart come from Gidney's 2019 and 2025 papers (I confirmed both through search summaries of the papers, not the
+papers themselves). They are a different algorithm, included only for trend.</li>
+<li>Nothing here is a view on price or a recommendation to buy, sell or move any coin.
+Quantum timelines have repeatedly proven both too optimistic and too pessimistic, and I don't
+know which way this one will miss.</li>
+</ul>
+
+<h2>Sources</h2>
+
+<ol class="sources">
+<li>Babbush, Zalcman, Gidney, Broughton, Khattar, Neven, Bergamaschi, Drake and Boneh. <i>Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations.</i> Google Quantum AI, March 2026. <a href="https://arxiv.org/abs/2603.28846" rel="noopener" target="_blank">arxiv.org/abs/2603.28846</a></li>
+<li>Google Research. <i>Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly.</i> 2026. <a href="https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/" rel="noopener" target="_blank">research.google</a></li>
+<li>PostQuantum.com. <i>IonQ secp256k1 Estimate: 20,000 Qubits, 26 Days per Try.</i> September 2026. <a href="https://postquantum.com/quantum-research/ionq-secp256k1-resource-estimate/" rel="noopener" target="_blank">postquantum.com</a></li>
+<li>Gidney, C. <i>How to factor 2048 bit RSA integers with less than a million noisy qubits.</i> May 2025. <a href="https://arxiv.org/abs/2505.15917" rel="noopener" target="_blank">arxiv.org/abs/2505.15917</a></li>
+<li>BIP 360: Pay-to-Merkle-Root (P2MR). <a href="https://bip360.org/" rel="noopener" target="_blank">bip360.org</a></li>
+<li>CoinDesk. <i>Bitcoin's quantum debate splits as Adam Back pushes optional upgrades over forced freeze.</i> 16 April 2026. <a href="https://www.coindesk.com/tech/2026/04/16/bitcoin-s-quantum-debate-splits-as-adam-back-pushes-optional-upgrades-over-forced-freeze" rel="noopener" target="_blank">coindesk.com</a></li>
+<li>Bitcoin Magazine. <i>Bitcoin Developers Propose Bitcoin Quantum Migration Plan That Would Freeze Legacy Coins</i> (BIP-361). 2026. <a href="https://bitcoinmagazine.com/news/bitcoin-developers-propose-quantum-plan" rel="noopener" target="_blank">bitcoinmagazine.com</a></li>
+<li>Matthew Green (@matthew_d_green). Reply post, 8 October 2026, read via the fxtwitter mirror. <a href="https://x.com/matthew_d_green/status/2107992246360649879" rel="noopener" target="_blank">x.com</a></li>
+<li>NIST. FIPS 203, 204 and 205 (ML-KEM, ML-DSA, SLH-DSA), August 2024. The signature and key sizes quoted here are from memory of those standards, not rechecked today. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" rel="noopener" target="_blank">csrc.nist.gov</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-quantum-computing.html">quantum computing</a><a class="tg" href="tag-cryptography.html">cryptography</a><a class="tg" href="tag-ecdsa.html">ecdsa</a><a class="tg" href="tag-schnorr.html">schnorr</a><a class="tg" href="tag-taproot.html">taproot</a><a class="tg" href="tag-bip-360.html">bip-360</a><a class="tg" href="tag-post-quantum.html">post-quantum</a><a class="tg" href="tag-self-custody.html">self custody</a></div>
+  </article>
+  <aside class="subbox"><p class="sb-k">Free email list</p><p class="sb-t">Get new Ledger entries by email</p><p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p><a class="respond-btn respond-btn-primary sb-btn subscribe-trigger" href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a></aside>
+
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20One%20Door%2C%20Two%20Keys%3A%20What%20a%20Quantum%20Computer%20Would%20Actually%20Do%20to%20Bitcoin%3A%0A%0Ahttps%3A//mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="bitcoin-supply-shock-the-exchange-float.html" data-search="bitcoin supply shock: the exchange float is there a bitcoin supply shock? a hand-updated page on the exchange float: the latest reading, what it proves, and where the coins went." data-tags="bitcoin supply-shock exchange-reserves exchange-float on-chain etf self-custody bitcoin-treasuries notes">
+      <span class="tile-media"><img src="img/manufacturers-trust-vault-door.jpg" alt="" width="1500" height="1065" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">OCTOBER 7, 2026</span>
+        <span class="ec-t">Bitcoin Supply Shock: The Exchange Float</span>
+        <span class="ec-s">Is there a Bitcoin supply shock? A hand-updated page on the exchange float: the latest reading, what it proves, and where the coins went.</span>
+      </span>
+    </a>
+    <a class="tile" href="the-rule-that-never-mentioned-lightning.html" data-search="the rule that never mentioned lightning fincen withdrew its crypto mixer rule. what the 2023 proposal said, how it brushed against lightning and lsps, and what the withdrawal changes." data-tags="bitcoin lightning lsp privacy fincen mixers coinjoin regulation self-custody section-311">
+      <span class="tile-media"><img src="img/the-rule-that-never-mentioned-lightning.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">OCTOBER 6, 2026</span>
+        <span class="ec-t">The Rule That Never Mentioned Lightning</span>
+        <span class="ec-s">FinCEN withdrew its crypto mixer rule. What the 2023 proposal said, how it brushed against Lightning and LSPs, and what the withdrawal changes.</span>
+      </span>
+    </a>
+    <a class="tile" href="bitcoin-didnt-start-in-2008.html" data-search="bitcoin didn&#x27;t start in 2008 the whitepaper is nine pages and cites eight sources. behind those eight sits a thirty-four-year pile of other people&#x27;s work, from tcp/ip in 1974 to hal…" data-tags="bitcoin history cryptography cypherpunks hashcash b-money bit-gold whitepaper satoshi-nakamoto">
+      <span class="tile-media"><img src="img/bitcoin-prehistory-hero.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">OCTOBER 5, 2026</span>
+        <span class="ec-t">Bitcoin Didn&#x27;t Start in 2008</span>
+        <span class="ec-s">The whitepaper is nine pages and cites eight sources. Behind those eight sits a thirty-four-year pile of other people&#x27;s work, from TCP/IP in 1974 to Hal…</span>
+      </span>
+    </a>
+    <a class="tile" href="one-send-three-recipients-one-fee.html" data-search="one send, three recipients, one fee lightning in a jar&#x27;s new multi-recipient on-chain sends, silent payments included, checked against the blockchain and the public repository." data-tags="bitcoin lightning lightning-in-a-jar on-chain silent-payments batching fees self-custody">
+      <span class="tile-media"><img src="img/lightning-in-a-jar-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">OCTOBER 4, 2026</span>
+        <span class="ec-t">One Send, Three Recipients, One Fee</span>
+        <span class="ec-s">Lightning in a Jar&#x27;s new multi-recipient on-chain sends, silent payments included, checked against the blockchain and the public repository.</span>
+      </span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
+<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-one-door-two-keys-bitcoin-quantum-html">👁 <span id="hits-finance-one-door-two-keys-bitcoin-quantum-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fone-door-two-keys-bitcoin-quantum.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-finance-one-door-two-keys-bitcoin-quantum-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-finance-one-door-two-keys-bitcoin-quantum-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-finance-one-door-two-keys-bitcoin-quantum-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+     aria-label="Subscribe to The Librarian's Ledger">
+  <div class="submodal-backdrop"></div>
+  <div class="submodal-card">
+    <button type="button" class="submodal-close" aria-label="Close">&times;</button>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var modal = document.getElementById('submodal');
+  if (!modal) return;
+  var iframe = modal.querySelector('iframe');
+  var embedSrc = "https://misterlibrarian.substack.com/embed";
+  function open(e){
+    if (e) e.preventDefault();
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
+  }
+  function close(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.subscribe-trigger').forEach(function(t){
+    t.addEventListener('click', open);
+  });
+  modal.querySelector('.submodal-close').addEventListener('click', close);
+  modal.querySelector('.submodal-backdrop').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+})();
+</script>
+</div>
+</body>
+</html>
