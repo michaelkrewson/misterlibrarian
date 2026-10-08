@@ -499,12 +499,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/notebook/tag-ai-scorecard.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://mistertranslation.com/notebook/tag-claude.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -524,6 +518,12 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-gemini.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-super-intelligence-scorecard.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>

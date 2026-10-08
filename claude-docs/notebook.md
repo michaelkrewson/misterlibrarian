@@ -123,7 +123,7 @@ bars, the claim-check table and the footer, then add a dated line to the update 
 backlog. Its `_running.json` row means the daily rundown routine may link it when minimum-wage news
 breaks; set `active` to false if that gets noisy.
 
-## Standing page: the AI Scorecard (2026-10-08)
+## Standing page: the Super Intelligence Scorecard (2026-10-08; renamed from "AI Scorecard" 2026-10-08, slug unchanged)
 
 `source/notebook/2026-10-08-ai-scorecard-which-model-is-best-by-whose-test.html` is a running page in the infographic
 format for AI model rankings. Michael's call: a standing page plus one ordinary entry per big release, and each release entry
