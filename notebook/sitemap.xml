@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -806,7 +812,7 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-satellites.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -861,6 +867,12 @@
   <url>
     <loc>https://mistertranslation.com/notebook/tag-spaceflight.html</loc>
     <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-starlink.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>

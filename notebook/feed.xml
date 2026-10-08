@@ -38,6 +38,18 @@
     <category>GPT-6</category>
   </item>
   <item>
+    <title>Starlink Mobile just bought the spectrum that goes through walls</title>
+    <link>https://mistertranslation.com/notebook/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>SpaceX agreed to buy 14 MHz of paired 800 MHz spectrum from Grain Management, the missing low-band layer Starlink Mobile needs to reach indoors. Here is what was actually bought, why 800 MHz matters, and what is still unproven.</description>
+    <category>spacex</category>
+    <category>starlink</category>
+    <category>spectrum</category>
+    <category>telecom</category>
+    <category>satellites</category>
+  </item>
+  <item>
     <title>Disney and the Future It Promised: A Living Page</title>
     <link>https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</guid>
@@ -362,20 +374,6 @@
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>12 stories across World, Business &amp; markets, Bitcoin &amp; crypto, Technology, Science &amp; space, Health &amp; medicine, tracked on September 26, 2026.</description>
     <category>rundown</category>
-  </item>
-  <item>
-    <title>Track One: The Song Claude Wrote and Has Never Heard</title>
-    <link>https://mistertranslation.com/notebook/track-one-the-song-claude-wrote-and-has-never-heard.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-one-the-song-claude-wrote-and-has-never-heard.html</guid>
-    <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
-    <description>An X user gave Claude Opus 5.5 free rein and asked it to introduce itself. It wrote a full song about who it thinks it is — lyrics, chords, and a music video coded frame by frame — then said, in its own caption, that it had never heard the result. That turns out to be a literally true, checkable claim about how the pipeline was built, not a philosophical one. First entry in a running collection of AI-made music worth a look.</description>
-    <category>ai music</category>
-    <category>claude</category>
-    <category>anthropic</category>
-    <category>elevenlabs</category>
-    <category>ai voice synthesis</category>
-    <category>generative video</category>
-    <category>music</category>
   </item>
 </channel>
 </rss>
