@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/orbital-debris-breakups-2026-first-space-war.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/houthis-bab-al-mandab-oil-what-it-means.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -739,6 +745,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-satellites.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-saudi-arabia.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -782,13 +794,13 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-space.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-spaceflight.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
