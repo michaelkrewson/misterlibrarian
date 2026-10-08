@@ -33764,3 +33764,8 @@ CHAPTER_ART["rom4"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:God_belooft_Abraham_een_zoon_Het_leven_van_Abraham_(serietitel),_RP-P-1879-A-2934.jpg",
 )]
+
+# Romans 4:19 — pin Sarah (the verse-line linker's once-per-chapter budget went to the notes).
+LINK_OVERRIDES.extend([
+    ('Romans', 4, 19, 'Sarah', 1, 'sarah'),
+])
