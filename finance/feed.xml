@@ -7,11 +7,11 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
-    <title>One Door, Two Keys: What a Quantum Computer Would Actually Do to Bitcoin</title>
+    <title>One Door, Two Keys: What Quantum Computers and Super Intelligence Could Actually Do to Bitcoin</title>
     <link>https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A famous cryptographer said today that "we might lose public key cryptography," and Bitcoiners heard their own signature scheme in it. The honest version is narrower and more interesting. ECDSA and Schnorr are not two locks in a row but two kinds of key on one door, so a machine that opens one opens both. What protects most coins today is a hash, not a curve, and the real question is how fast the door can be changed.</description>
+    <description>A famous cryptographer said "we might lose public key cryptography," and Bitcoiners heard their own signature scheme in it. The thread turned out to be about Super Intelligence (SI) maths as much as quantum computers. The honest version is narrower: ECDSA and Schnorr are one door with two kinds of key, most coins are protected by a hash rather than a curve, and what differs between the two threats is warning time, not which door is at risk.</description>
     <category>bitcoin</category>
     <category>quantum computing</category>
     <category>cryptography</category>
