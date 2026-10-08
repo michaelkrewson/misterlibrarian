@@ -80,13 +80,17 @@ hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's
 .ig .tr .cl small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
 .ig .uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .ig .use{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:5px}
-.ig .use .ic{font-size:22px;color:var(--acc)}
 .ig .use .q{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700}
 .ig .use .a{font-family:Georgia,serif;font-size:18px;color:#f2f6fc;line-height:1.2}
 .ig .use .m{font-size:12.5px;color:var(--mut);line-height:1.45}
+.ig .use,.ig .w{--c:var(--acc)}
+.ig .use.ant,.ig .w.ant{--c:var(--ant)}.ig .use.goo,.ig .w.goo{--c:var(--goo)}.ig .use.oai,.ig .w.oai{--c:var(--oai)}.ig .use.opn,.ig .w.opn{--c:var(--opn)}.ig .use.gld,.ig .w.gld{--c:var(--rep)}
+.ig .use .badge,.ig .w .badge{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;color:var(--c);margin-bottom:6px;
+  background:color-mix(in srgb,var(--c) 16%,transparent);border:1px solid color-mix(in srgb,var(--c) 40%,transparent)}
+.ig .use .badge svg.ic,.ig .w .badge svg.ic{width:30px;height:30px;stroke-width:1.6}
+.ig .use .q{color:var(--c)}
 .ig .watch{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .ig .w{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px}
-.ig .w .ic{font-size:24px;color:var(--acc)}
 .ig .w .q{font-size:14px;font-weight:700;color:#f2f6fc;line-height:1.35}
 .ig .w .m{font-size:13px;color:var(--mut);line-height:1.45}
 .ig .story{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
@@ -231,20 +235,20 @@ hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's
 
   <div class="sec">Who leads at what <span class="asof">by the cited test, not my opinion</span></div>
   <div class="uses">
-    <div class="use"><svg class="ic"><use href="#i-code"/></svg><div class="q">Coding agent in a terminal</div><div class="a">Claude Opus 5.5</div><div class="m">66.4% on Terminal-Bench 4.0, as printed in Google&rsquo;s own table; Argon 57.4%.</div></div>
-    <div class="use"><svg class="ic"><use href="#i-brief"/></svg><div class="q">Office and professional work</div><div class="a">Gemini 4 Argon</div><div class="m">Leads Vals Index, Finance Agent and Harvey&rsquo;s legal benchmark, all scored by Vals AI.</div></div>
-    <div class="use"><svg class="ic"><use href="#i-doc"/></svg><div class="q">Very long documents</div><div class="a">Gemini 4 Argon</div><div class="m">84.2% on GraphWalks at 256k&ndash;1M tokens vs 71.8% next best. Google&rsquo;s own run.</div></div>
-    <div class="use"><svg class="ic"><use href="#i-puzzle"/></svg><div class="q">Puzzles never seen before</div><div class="a">GPT-6 Astra</div><div class="m">62.7% on ARC-AGI-3&rsquo;s standard harness, verified by ARC Prize.</div></div>
-    <div class="use"><svg class="ic"><use href="#i-coin"/></svg><div class="q">Near-frontier on a budget</div><div class="a">GPT-6.1 Sol</div><div class="m">Index score 52 for $0.72 a task, per Artificial Analysis.</div></div>
-    <div class="use"><svg class="ic"><use href="#i-unlock"/></svg><div class="q">Weights you can download</div><div class="a">MiMo-V2.6-Pro</div><div class="m">Xiaomi&rsquo;s model, 46 on the index, top of 81 open-weight entries.</div></div>
+    <div class="use ant"><span class="badge"><svg class="ic"><use href="#i-code"/></svg></span><div class="q">Coding agent in a terminal</div><div class="a">Claude Opus 5.5</div><div class="m">66.4% on Terminal-Bench 4.0, as printed in Google&rsquo;s own table; Argon 57.4%.</div></div>
+    <div class="use goo"><span class="badge"><svg class="ic"><use href="#i-brief"/></svg></span><div class="q">Office and professional work</div><div class="a">Gemini 4 Argon</div><div class="m">Leads Vals Index, Finance Agent and Harvey&rsquo;s legal benchmark, all scored by Vals AI.</div></div>
+    <div class="use goo"><span class="badge"><svg class="ic"><use href="#i-doc"/></svg></span><div class="q">Very long documents</div><div class="a">Gemini 4 Argon</div><div class="m">84.2% on GraphWalks at 256k&ndash;1M tokens vs 71.8% next best. Google&rsquo;s own run.</div></div>
+    <div class="use oai"><span class="badge"><svg class="ic"><use href="#i-puzzle"/></svg></span><div class="q">Puzzles never seen before</div><div class="a">GPT-6 Astra</div><div class="m">62.7% on ARC-AGI-3&rsquo;s standard harness, verified by ARC Prize.</div></div>
+    <div class="use oai"><span class="badge"><svg class="ic"><use href="#i-coin"/></svg></span><div class="q">Near-frontier on a budget</div><div class="a">GPT-6.1 Sol</div><div class="m">Index score 52 for $0.72 a task, per Artificial Analysis.</div></div>
+    <div class="use opn"><span class="badge"><svg class="ic"><use href="#i-unlock"/></svg></span><div class="q">Weights you can download</div><div class="a">MiMo-V2.6-Pro</div><div class="m">Xiaomi&rsquo;s model, 46 on the index, top of 81 open-weight entries.</div></div>
   </div>
 
   <div class="sec">What I am watching for</div>
   <div class="watch">
-    <div class="w"><svg class="ic"><use href="#i-users"/></svg><div class="q">Argon&rsquo;s LMArena rating as votes pile up</div><div class="m">Preliminary ratings often settle. If the lead holds past 20,000 votes, the &ldquo;best on human votes&rdquo; chip stays.</div></div>
-    <div class="w"><svg class="ic"><use href="#i-eye"/></svg><div class="q">Argon&rsquo;s public release and model card</div><div class="m">Also an Artificial Analysis run at its highest setting, which could move the 53.</div></div>
-    <div class="w"><svg class="ic"><use href="#i-bank"/></svg><div class="q">Q3 earnings, late October</div><div class="m">Whether the big four raise 2026 capex again, and what they say about 2027.</div></div>
-    <div class="w"><svg class="ic"><use href="#i-clock"/></svg><div class="q">A new ruler from METR</div><div class="m">The time-horizon chart is the clearest progress measure there is, and it has been quiet since May.</div></div>
+    <div class="w goo"><span class="badge"><svg class="ic"><use href="#i-users"/></svg></span><div class="q">Argon&rsquo;s LMArena rating as votes pile up</div><div class="m">Preliminary ratings often settle. If the lead holds past 20,000 votes, the &ldquo;best on human votes&rdquo; chip stays.</div></div>
+    <div class="w goo"><span class="badge"><svg class="ic"><use href="#i-eye"/></svg></span><div class="q">Argon&rsquo;s public release and model card</div><div class="m">Also an Artificial Analysis run at its highest setting, which could move the 53.</div></div>
+    <div class="w gld"><span class="badge"><svg class="ic"><use href="#i-bank"/></svg></span><div class="q">Q3 earnings, late October</div><div class="m">Whether the big four raise 2026 capex again, and what they say about 2027.</div></div>
+    <div class="w"><span class="badge"><svg class="ic"><use href="#i-clock"/></svg></span><div class="q">A new ruler from METR</div><div class="m">The time-horizon chart is the clearest progress measure there is, and it has been quiet since May.</div></div>
   </div>
 
   <div class="sec">The story so far</div>
