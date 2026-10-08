@@ -33652,3 +33652,74 @@ CHAPTER_ART["rom3"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_The_Ark_of_the_Covenant.jpg",
 )]
+
+
+# ---- Acts 28: geography and titles checked against sources (2026-10-08) ----
+def _fix28b(slug, coords=None, modern=None, pairs=(), pairs_es=()):
+    for e in ENCYCLOPEDIA:
+        if e["slug"] == slug:
+            if coords:
+                e["coords"] = coords; e["approx"] = False
+            if modern:
+                e["modern"] = modern
+            for old, new in pairs:
+                assert old in e["desc"], (slug, old[:50]); e["desc"] = e["desc"].replace(old, new)
+    t = ENCYCLOPEDIA_ES[slug]
+    d = t[1]
+    for old, new in pairs_es:
+        assert old in d, (slug, old[:50]); d = d.replace(old, new)
+    ENCYCLOPEDIA_ES[slug] = (t[0], d) + tuple(t[2:])
+
+_fix28b("malta", (35.888, 14.438, 0.2), "Malta, between Sicily and Libya (Pleiades 462311)",
+ [("&#9888; Reference works identify <em>Melit&emacr;</em> with Malta, south of Sicily, and also name an island of the same Greek name in the Adriatic, now Mljet, as a rival; both are reported here, not checked.",
+   "&#9888; Diodorus Siculus lists three islands out in the sea south of Sicily and puts first &lsquo;the one called Melit&emacr;,&rsquo; about eight hundred stadia from Syracuse and &lsquo;a colony of the Phoenicians&rsquo; (<em>Library of History</em> 5.12, Greek fetched), and Pleiades lists the island of Malta as <em>Melita</em>. An island of the same Greek name in the Adriatic, now Mljet, was proposed instead in the tenth century by Constantine Porphyrogenitus (as the Wikipedia article on Mljet records)."),
+  (" The coordinates are approximate.", " The coordinates are Pleiades&rsquo;s point for the island.")],
+ [("&#9888; Las obras de consulta identifican <em>Melit&emacr;</em> con Malta, al sur de Sicilia, y nombran también como rival una isla del mismo nombre griego en el Adriático, hoy Mljet; ambas se informan aquí, no se comprueban.",
+   "&#9888; Diodoro Sículo enumera tres islas en alta mar al sur de Sicilia y pone primero «la llamada <em>Melit&emacr;</em>», a unos ochocientos estadios de Siracusa y «colonia de los fenicios» (<em>Biblioteca histórica</em> 5.12, griego obtenido), y Pleiades registra la isla de Malta como <em>Melita</em>. Una isla del mismo nombre griego en el Adriático, hoy Mljet, se propuso en su lugar en el siglo X por Constantino Porfirogéneta (según registra el artículo de Wikipedia sobre Mljet)."),
+  (" Las coordenadas son aproximadas.", " Las coordenadas son el punto de Pleiades para la isla.")])
+
+_fix28b("publius", None, None,
+ [("&#9888; Reference works report that inscriptions from Malta use a title of the same form, <em>pr&omacr;tos</em> in Greek and <em>primus</em> in Latin, for a local magistrate (reported, not checked).",
+   "&#9888; Two inscriptions from Malta carry a title of the same shape: a Greek one, IG XIV 601, for Lucius Castricius Prudens, a Roman knight, <em>pr&omacr;tos Melitai&omacr;n</em>, &lsquo;first of the Maltese&rsquo; (dated by Busuttil to the reign of Tiberius, as Cappelletti notes), and a Latin one, CIL X 7495, of the second century AD, from Mdina, <em>municipi Melitensium primus omnium</em>. In Loredana Cappelletti&rsquo;s study (<em>Ger&iacute;on</em>, 2024, 11&ndash;31) the two seem to correspond, and modern scholars divide on whether the title was a supreme local magistracy under the governor (Weiss, Warnecke, Tajra, Zammit) or an honorary title (Suhl). Luke&rsquo;s phrase has &lsquo;the island&rsquo; where the inscriptions have &lsquo;the Maltese.&rsquo;")],
+ [("&#9888; Las obras de consulta informan de que inscripciones de Malta usan un título de la misma forma, <em>pr&omacr;tos</em> en griego y <em>primus</em> en latín, para un magistrado local (informado, no comprobado).",
+   "&#9888; Dos inscripciones de Malta llevan un título de la misma forma: una griega, IG XIV 601, para Lucio Castricio Prudente, caballero romano, <em>pr&omacr;tos Melitai&omacr;n</em>, «primero de los malteses» (fechada por Busuttil en el reinado de Tiberio, según anota Cappelletti), y una latina, CIL X 7495, del siglo II d.C., de Mdina, <em>municipi Melitensium primus omnium</em>. En el estudio de Loredana Cappelletti (<em>Ger&iacute;on</em>, 2024, 11&ndash;31) las dos parecen corresponderse, y los estudiosos modernos se dividen sobre si el título era una magistratura local suprema bajo el gobernador (Weiss, Warnecke, Tajra, Zammit) o un título honorario (Suhl). La frase de Lucas dice «la isla» donde las inscripciones dicen «los malteses».")])
+
+_fix28b("puteoli", (40.826, 14.122, 0.1), "Pozzuoli, on the Bay of Naples (Pleiades 432815)",
+ [("&#9888; Reference works place Puteoli on the north shore of the Bay of Naples and call it a main port for ships from Alexandria (reported, not checked here).",
+   "&#9888; Pleiades places Dikaiarcheia/Puteoli on the Phlegraean peninsula in Campania, a Greek colony that became a Roman colony in 194 BC (Pleiades 432815), the modern Pozzuoli. Josephus has Agrippa say that Alexandria sends Rome, besides money, grain for four months of the year (<em>War</em> 2.386, Greek fetched)."),
+  (" The coordinates are approximate.", "")],
+ [("&#9888; Las obras de consulta sitúan Puteoli en la orilla norte de la bahía de Nápoles y lo llaman puerto principal de las naves de Alejandría (informado, no comprobado aquí).",
+   "&#9888; Pleiades sitúa Dikaiarcheia/Puteoli en la península flegrea de Campania, colonia griega que pasó a ser colonia romana en el 194 a.C. (Pleiades 432815), la actual Pozzuoli. Josefo hace decir a Agripa que Alejandría envía a Roma, además de dinero, grano para cuatro meses del año (<em>Guerra</em> 2.386, griego obtenido)."),
+  (" Las coordenadas son aproximadas.", "")])
+
+_fix28b("syracuse", (37.070, 15.283, 0.1), "Siracusa, on the southeast coast of Sicily (Pleiades 462503)",
+ [("&#9888; Reference works place Syracuse on the east coast of Sicily (reported, not checked here).",
+   "&#9888; Pleiades places Syracuse on the southeastern coast of Sicily, a Corinthian colony of 734/3 BC (Pleiades 462503); Diodorus puts Melit&emacr; about eight hundred stadia from it (<em>Library of History</em> 5.12)."),
+  (" The coordinates are approximate.", "")],
+ [("&#9888; Las obras de consulta sitúan Siracusa en la costa oriental de Sicilia (informado, no comprobado aquí).",
+   "&#9888; Pleiades sitúa Siracusa en la costa sudoriental de Sicilia, colonia corintia del 734/3 a.C. (Pleiades 462503); Diodoro pone Melit&emacr; a unos ochocientos estadios de ella (<em>Biblioteca histórica</em> 5.12)."),
+  (" Las coordenadas son aproximadas.", "")])
+
+_fix28b("rhegium", (38.109, 15.644, 0.1), "Reggio di Calabria, at the toe of Italy (Pleiades 452416)",
+ [("&#9888; Reference works place Rhegium on the Italian side of the Strait of Messina (reported, not checked here).",
+   "&#9888; Pleiades identifies Rhegion with modern Reggio di Calabria, a colony of Chalcis of 743 or 730 BC (Pleiades 452416)."),
+  (" The coordinates are approximate.", "")],
+ [("&#9888; Las obras de consulta sitúan Regio en el lado italiano del estrecho de Mesina (informado, no comprobado aquí).",
+   "&#9888; Pleiades identifica Rhegion con la actual Reggio di Calabria, colonia de Calcis del 743 o 730 a.C. (Pleiades 452416)."),
+  (" Las coordenadas son aproximadas.", "")])
+
+_fix28b("forum-of-appius", (41.466, 12.998, 0.1), "Borgo Faiti, on the Via Appia, 43 Roman miles from Rome (Antonine Itinerary 107.4; Tabula Peutingeriana database, Eichst&auml;tt)",
+ [("&#9888; Reference works place it on the Appian Way south of Rome (reported, not checked here).",
+   "&#9888; The Antonine Itinerary (107.4) puts it forty-three Roman miles from Rome and ten beyond Three Taverns, the Tabula Peutingeriana database of the University of Eichst&auml;tt equates it with modern Borgo Faiti, and Pleiades gives its point on the Via Appia (Pleiades 422927). The database also cites Horace, who names it in <em>Satires</em> 1.5.3 as &lsquo;Forum Appi differtum nautis cauponibus atque malignis&rsquo; (as quoted there)."),
+  (" The coordinates are approximate.", "")],
+ [("&#9888; Las obras de consulta lo sitúan en la vía Apia al sur de Roma (informado, no comprobado aquí).",
+   "&#9888; El Itinerario de Antonino (107.4) lo pone a cuarenta y tres millas romanas de Roma y a diez de Tres Tabernas, la base de datos de la Tabula Peutingeriana de la Universidad de Eichst&auml;tt lo equipara con la actual Borgo Faiti, y Pleiades da su punto en la vía Apia (Pleiades 422927). La base de datos cita también a Horacio, que lo nombra en <em>Sátiras</em> 1.5.3 como «Forum Appi differtum nautis cauponibus atque malignis» (según se cita allí)."),
+  (" Las coordenadas son aproximadas.", "")])
+
+_fix28b("three-taverns", (41.562, 12.874, 0.1), "About 33 Roman miles from Rome, where the Via Ninfina joined the Via Appia (Pleiades 423106)",
+ [("&#9888; Reference works place it nearer Rome than the Forum of Appius (reported, not checked here).",
+   "&#9888; The Antonine Itinerary (107.3) puts it seventeen Roman miles beyond Aricia and ten before the Forum of Appius, thirty-three Roman miles from Rome (Tabula Peutingeriana database, Eichst&auml;tt; Smith&rsquo;s <em>Bible Dictionary</em> gives the same stages, with Aricia sixteen miles from Rome), and Pleiades places it where the Via Appia meets the Via Ninfina (Pleiades 423106). Cicero names it in <em>Letters to Atticus</em> 1.13, 2.10 and 2.12 (the database cites all three; 1.13 and 2.10 were read in the fetched Latin)."),
+  (" The coordinates are approximate.", "")],
+ [("&#9888; Las obras de consulta lo sitúan más cerca de Roma que el Foro de Apio (informado, no comprobado aquí).",
+   "&#9888; El Itinerario de Antonino (107.3) lo pone a diecisiete millas romanas de Aricia y a diez del Foro de Apio, a treinta y tres millas romanas de Roma (base de datos de la Tabula Peutingeriana, Eichst&auml;tt; el <em>Bible Dictionary</em> de Smith da las mismas etapas, con Aricia a dieciséis millas de Roma), y Pleiades lo sitúa donde la vía Apia se cruza con la vía Ninfina (Pleiades 423106). Cicerón lo nombra en <em>Cartas a Ático</em> 1.13, 2.10 y 2.12 (la base de datos cita las tres; 1.13 y 2.10 se leyeron en el latín obtenido)."),
+  (" Las coordenadas son aproximadas.", "")])
