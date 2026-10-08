@@ -32,7 +32,14 @@ hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's
 .ig .c-ok{color:var(--ok)}.ig .c-rep{color:var(--rep)}.ig .c-dis{color:var(--dis)}.ig .c-unv{color:var(--unv)}.ig .c-none{color:var(--none)}
 .ig .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
 .ig .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 13px}
-.ig .stat .ic{font-size:22px;color:var(--acc);margin-bottom:6px}
+.ig .stat{--c:var(--acc)}
+.ig .stat.ant{--c:var(--ant)}.ig .stat.goo{--c:var(--goo)}.ig .stat.oai{--c:var(--oai)}.ig .stat.opn{--c:var(--opn)}.ig .stat.gld{--c:var(--rep)}
+.ig .stat .sh{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.ig .stat .badge{width:46px;height:46px;flex:0 0 46px;border-radius:12px;display:grid;place-items:center;color:var(--c);
+  background:color-mix(in srgb,var(--c) 15%,transparent);border:1px solid color-mix(in srgb,var(--c) 38%,transparent)}
+.ig .stat .badge svg.ic{width:26px;height:26px;stroke-width:1.7}
+.ig .stat .lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--c);line-height:1.35}
+.ig .stat .lbl em{display:block;font-style:normal;color:var(--mut);letter-spacing:.04em;text-transform:none;font-weight:600;font-size:12px}
 .ig .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:32px;line-height:1;color:#f2f6fc}
 .ig .stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--mut);margin-top:6px}
 .ig .sec{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin:28px 0 12px;display:flex;align-items:center;gap:10px}
@@ -97,7 +104,12 @@ hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's
 <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.8c2 .6 3.4 2.3 3.4 5.2"/></symbol>
 <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
 <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M14.6 9.6c-.5-.9-1.5-1.3-2.6-1.3-1.5 0-2.6.8-2.6 2s1 1.7 2.6 2 2.6.8 2.6 2-1.1 2-2.6 2c-1.1 0-2.2-.5-2.7-1.4"/></symbol>
-<symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M5 5h5a2 2 0 1 1 4 0h5v5a2 2 0 1 0 0 4v5h-5a2 2 0 1 0-4 0H5v-5a2 2 0 1 1 0-4z"/></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="4.5" height="4.5" rx=".8" fill="currentColor"/><rect x="9.75" y="3.5" width="4.5" height="4.5" rx=".8"/><rect x="16" y="3.5" width="4.5" height="4.5" rx=".8"/><rect x="3.5" y="9.75" width="4.5" height="4.5" rx=".8"/><rect x="9.75" y="9.75" width="4.5" height="4.5" rx=".8" fill="currentColor"/><rect x="16" y="9.75" width="4.5" height="4.5" rx=".8"/><rect x="3.5" y="16" width="4.5" height="4.5" rx=".8"/><rect x="9.75" y="16" width="4.5" height="4.5" rx=".8"/><rect x="16" y="16" width="4.5" height="4.5" rx=".8" fill="currentColor"/></symbol>
+<symbol id="i-vote" viewBox="0 0 24 24"><path d="M2.5 13h19M4 13v7h16v-7M8 13V4h8v9M9.8 8.3l1.6 1.6 3-3.2"/></symbol>
+<symbol id="i-test" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="17" rx="2"/><path d="M9 3h6v3.5H9zM8.5 12l1.6 1.6 3.2-3.2M8.5 17.5h7"/></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M6 3h12M6 21h12M7.5 3v3.5L12 12l-4.5 5.5V21M16.5 3v3.5L12 12l4.5 5.5V21M9.5 19h5"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12.5V4h8.5l9.5 9.5-8.5 8.5z"/><circle cx="7.6" cy="8.6" r="1.6"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="6" rx="1.5"/><rect x="4" y="11" width="16" height="6" rx="1.5"/><path d="M8 6h.01M8 14h.01M12 17v4M7 21h10"/></symbol>
 <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></symbol>
 <symbol id="i-unlock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 7.5-2"/></symbol>
 <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/></symbol>
@@ -115,19 +127,19 @@ hero_credit: The Mechanical Turk with its cabinet opened, from Joseph Racknitz's
     <div class="big">It depends whose test you trust. Human voters put Google&rsquo;s new Gemini 4 Argon first. The biggest test battery puts Anthropic&rsquo;s Claude Opus 5.5 five points clear.</div>
     <div class="sub">Three independent scoreboards, three different leaders, and a fourth that has run out of ruler. The disagreement is the useful part: each one measures something different, and the &ldquo;best model&rdquo; changes with the job.</div>
     <div class="chips">
-      <span class="chip c-goo"><svg class="ic"><use href="#i-users"/></svg>Human votes: Gemini 4 Argon</span>
-      <span class="chip c-ant"><svg class="ic"><use href="#i-chart"/></svg>Test battery: Claude Opus 5.5</span>
+      <span class="chip c-goo"><svg class="ic"><use href="#i-vote"/></svg>Human votes: Gemini 4 Argon</span>
+      <span class="chip c-ant"><svg class="ic"><use href="#i-test"/></svg>Test battery: Claude Opus 5.5</span>
       <span class="chip c-oai"><svg class="ic"><use href="#i-puzzle"/></svg>New puzzles: GPT-6 Astra</span>
     </div>
   </div>
 
   <div class="stats">
-    <div class="stat"><svg class="ic"><use href="#i-users"/></svg><b>1525</b><span>Gemini 4 Argon&rsquo;s LMArena rating, #1, but preliminary on 4,892 votes</span></div>
-    <div class="stat"><svg class="ic"><use href="#i-chart"/></svg><b>58</b><span>Claude Opus 5.5 on the Artificial Analysis Intelligence Index, the top score of 226 entries</span></div>
-    <div class="stat"><svg class="ic"><use href="#i-puzzle"/></svg><b>62.7%</b><span>GPT-6 Astra on ARC-AGI-3&rsquo;s standard harness; 99.9% when allowed its own provider&rsquo;s tools</span></div>
-    <div class="stat"><svg class="ic"><use href="#i-unlock"/></svg><b>~4 mo</b><span>how far the best open-weight models trail the frontier, per Epoch AI (2026 average)</span></div>
-    <div class="stat"><svg class="ic"><use href="#i-coin"/></svg><b>8&times;</b><span>what the top score costs per task ($5.98) vs a model six points behind it ($0.72)</span></div>
-    <div class="stat"><svg class="ic"><use href="#i-bank"/></svg><b>$172B</b><span>big-four capex in Q2 2026 alone, more than their $155B for all of 2023</span></div>
+    <div class="stat goo"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-vote"/></svg></span><span class="lbl">Human votes<em>LMArena</em></span></div><b>1525</b><span>Gemini 4 Argon&rsquo;s rating, #1, but preliminary on 4,892 votes</span></div>
+    <div class="stat ant"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-test"/></svg></span><span class="lbl">Test battery<em>Artificial Analysis</em></span></div><b>58</b><span>Claude Opus 5.5 on the Intelligence Index, the top score of 226 entries</span></div>
+    <div class="stat oai"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-puzzle"/></svg></span><span class="lbl">New puzzles<em>ARC-AGI-3</em></span></div><b>62.7%</b><span>GPT-6 Astra on the standard harness; 99.9% when allowed its own provider&rsquo;s tools</span></div>
+    <div class="stat opn"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-hourglass"/></svg></span><span class="lbl">Open-model lag<em>Epoch AI</em></span></div><b>~4 mo</b><span>how far the best open-weight models trail the frontier (2026 average)</span></div>
+    <div class="stat"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-tag"/></svg></span><span class="lbl">Price spread<em>Cost per task</em></span></div><b>8&times;</b><span>what the top score costs ($5.98) vs a model six points behind it ($0.72)</span></div>
+    <div class="stat gld"><div class="sh"><span class="badge"><svg class="ic"><use href="#i-server"/></svg></span><span class="lbl">AI spending<em>Big-four capex</em></span></div><b>$172B</b><span>in Q2 2026 alone, more than their $155B for all of 2023</span></div>
   </div>
 
   <div class="sec">The scoreboard of scoreboards</div>
