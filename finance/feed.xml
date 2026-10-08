@@ -7,6 +7,22 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Bitcoin Supply Shock: The Exchange Float</title>
+    <link>https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Bitcoin Magazine says the supply of Bitcoin on exchanges just hit a seven-month low and tells you to "plan accordingly." This is a standing page that tracks that number by hand, says which provider it came from, and keeps asking the awkward question: did the coins leave for good, or just for a different building?</description>
+    <category>bitcoin</category>
+    <category>supply shock</category>
+    <category>exchange reserves</category>
+    <category>exchange float</category>
+    <category>on-chain</category>
+    <category>etf</category>
+    <category>self custody</category>
+    <category>bitcoin treasuries</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>Robinhood Buys Its First Bitcoin, and the Executive Calls It a Rounding Error</title>
     <link>https://mistertranslation.com/finance/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</guid>
@@ -451,22 +467,6 @@
     <category>bridges</category>
     <category>custody</category>
     <category>op_return</category>
-  </item>
-  <item>
-    <title>Bought the Dip, After Selling It</title>
-    <link>https://mistertranslation.com/finance/bought-the-dip-after-selling-it.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/bought-the-dip-after-selling-it.html</guid>
-    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Somebody at Starbucks this morning asked whether I'd heard that Trump bought MicroStrategy. So I read the filing. Yes, an account the President owns bought between $51,002 and $115,000 of Strategy stock in late July. It had sold some in June, days before the year's low, and the purchases came in 11 to 20 percent above that low, not at it. The same filing shows a single Amazon sale that could be two hundred times the size of all the MSTR buys put together.</description>
-    <category>donald trump</category>
-    <category>strategy inc</category>
-    <category>mstr</category>
-    <category>financial disclosure</category>
-    <category>oge form 278-t</category>
-    <category>coinbase</category>
-    <category>bitcoin miners</category>
-    <category>stock trading</category>
-    <category>government ethics</category>
   </item>
 </channel>
 </rss>
