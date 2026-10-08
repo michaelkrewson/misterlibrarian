@@ -123,6 +123,26 @@ bars, the claim-check table and the footer, then add a dated line to the update 
 backlog. Its `_running.json` row means the daily rundown routine may link it when minimum-wage news
 breaks; set `active` to false if that gets noisy.
 
+## Standing page: the AI Scorecard (2026-10-08)
+
+`source/notebook/2026-10-08-ai-scorecard-which-model-is-best-by-whose-test.html` is a running page in the infographic
+format for AI model rankings. Michael's call: a standing page plus one ordinary entry per big release, and each release entry
+feeds the page (first one: `2026-10-08-gemini-4-argon-benchmarks-checked.html`). **The page's point:** which model is best
+*according to the scoreboards the labs don't run*. Its three house rules are printed on the page: every ranking comes from a
+named, dated outside source; a lab's own benchmark table goes in the claim check until someone independent confirms it; no
+single number decides "best". **Claude never ranks Claude** (Michael uses Claude, and the page discloses that); the bars come
+only from the sources.
+
+To refresh: (1) LMArena text leaderboard, overall (arena.ai/leaderboard/text): top 8 with score, ±CI, preliminary flag. The
+bars are CI ranges on a 1480–1540 axis, `left = (score−CI−1480)/60`, `width = 2·CI/60`; widen the axis if scores leave it.
+(2) Artificial Analysis leaderboard: Intelligence Index, ONE bar per model at its best setting, 0–60 axis, plus the top three
+open-weight models (artificialanalysis.ai/models/open-source). (3) The same page's cost-per-task column for the cost panel.
+(4) ARC Prize leaderboard and blog (standard harness vs provider adapter). (5) METR time-horizons page: it has been quiet
+since 2026-05-08; a new suite or model is a timeline event. (6) Epoch AI open-vs-closed gap. (7) Platformonomics capex after
+each earnings season. Then re-stamp `updated:`, the band, the panel `asof` dates and the footer, and add an update-log line.
+A new model announcement becomes a claim-check row plus a story-so-far card linking its entry. All charts are inline HTML/CSS
+in the page; there is no generator script to keep.
+
 ## Standing page: GLP-1 evidence scorecard (2026-10-07)
 
 `source/notebook/2026-10-07-glp-1-drugs-what-the-evidence-shows-organ-by-organ.html` is a running page in the infographic format, a claim-check table graded by study design (randomized / early / observational / not established). New GLP-1 claims go in as a table row plus a timeline event plus an update-log line; link, don't duplicate, the two Regimen posts it summarizes. Public voice: reporting only, never medical advice, never anything about Michael's own use. Row in `_running.json` keeps the daily rundown following it.
