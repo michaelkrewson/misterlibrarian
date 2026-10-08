@@ -7,13 +7,13 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
-    <title>The AI Scorecard: Which Model Is Best, by Whose Test</title>
+    <title>The Super Intelligence Scorecard: Which Model Is Best, by Whose Test</title>
     <link>https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
-    <description>A standing page on where AI models actually stand, built from the scoreboards the AI companies don't run. It covers who leads on human votes versus test batteries, how fast the models are improving, what a point of intelligence costs, how far open models trail, and which headline claims hold up. Updated as new models and new scores land.</description>
+    <description>A standing page on where Super Intelligence models actually stand, built from the scoreboards the Super Intelligence companies don't run. It covers who leads on human votes versus test batteries, how fast the models are improving, what a point of intelligence costs, how far open models trail, and which headline claims hold up. Updated as new models and new scores land.</description>
     <category>AI</category>
-    <category>AI Scorecard</category>
+    <category>Super Intelligence Scorecard</category>
     <category>benchmarks</category>
     <category>LMArena</category>
     <category>Artificial Analysis</category>
@@ -33,7 +33,7 @@
     <category>Google</category>
     <category>DeepMind</category>
     <category>benchmarks</category>
-    <category>AI Scorecard</category>
+    <category>Super Intelligence Scorecard</category>
     <category>Claude</category>
     <category>GPT-6</category>
   </item>
