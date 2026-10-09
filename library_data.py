@@ -34324,3 +34324,209 @@ CHAPTER_ART["josh18"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:A_map_of_the_Land_of_Canaan_or_Holy_Land,_as_divided_among_the_twelve_tribes_which_God_promised_to_Abraham_and_his_seed_LOC_2016586537.jpg",
 )]
+
+# ---- Joshua 19 (EN + ES) ----
+# -- dictionary: new entry chevel
+DICTIONARY.append(('chevel', 'chevel', 'חֶבֶל', 'chevel',
+    """A CORD &mdash; a rope or surveyor&rsquo;s line, and from the cord what it measures: a share, or a district. The word is concrete first: Rahab lets the spies down &ldquo;by a rope&rdquo; through her window (<a href="joshua-2.html#v2-15">Joshua 2:15</a>, now on these pages). Then it carries the measure of the land. Jacob is &ldquo;the measured line of his inheritance&rdquo; (<a href="deuteronomy-32.html#v32-9">Deuteronomy 32:9</a>, now on these pages), Og&rsquo;s sixty cities are &ldquo;all the region of Argob&rdquo; (<a href="deuteronomy-3.html#v3-4">Deuteronomy 3:4</a>, again at 3:13&ndash;14), and in Joshua it is the share an inheritance is measured out in. ⭐ <span data-heb="חבל">The word <em>chevel</em> stands in <strong>five verses</strong> of the book of Joshua</span>: the cord (2:15), Manasseh&rsquo;s ten &ldquo;shares&rdquo; (<a href="joshua-17.html#v17-5">17:5</a>) and Joseph&rsquo;s &ldquo;one lot and one share&rdquo; (<a href="joshua-17.html#v17-14">17:14</a>), the share of Judah out of which Simeon is housed (<a href="joshua-19.html#n19-3">19:9</a>) and the &ldquo;region&rdquo; of Achzib (<a href="joshua-19.html#n19-6">19:29</a>), all now on these pages. ⚠ English has no one word for it, so this translation changes the word with the sense: &lsquo;share&rsquo; where an inheritance is measured out (17:5, 14; 19:9), &lsquo;region&rsquo; where a district is (Deuteronomy 3:4; Joshua 19:29), &lsquo;measured line&rsquo; where the line itself is meant (Deuteronomy 32:9), &lsquo;cord&rsquo; for the rope (2:15). The Geneva Bible takes the <em>chevel</em> of Achzib for a place called Hebel, and the Douay-Rheims for a portion. See also <em><a href="dictionary.html#chevel-middah">chevel middah</a></em>, the measuring line of Zechariah 2:5.""",
+    ('Joshua', 17, 5)))
+DICTIONARY_ES['chevel'] = ('chevel',
+    """UNA SOGA &mdash;una cuerda o cordel de agrimensor, y de la soga lo que ella mide: una parte, o un distrito. La palabra es concreta primero: Rahab hace bajar a los espías «con una soga» por su ventana (<a href="joshua-2.es.html#v2-15">Josué 2:15</a>, ya en estas páginas). Luego lleva la medida de la tierra. Jacob es «el cordel medido de su herencia» (<a href="deuteronomy-32.es.html#v32-9">Deuteronomio 32:9</a>, ya en estas páginas), las sesenta ciudades de Og son «toda la región de Argob» (<a href="deuteronomy-3.es.html#v3-4">Deuteronomio 3:4</a>, otra vez en 3:13&ndash;14), y en Josué es la parte en que se mide una herencia. ⭐ <span data-heb="חבל">La palabra <em>chevel</em> está en <strong>cinco versículos</strong> del libro de Josué</span>: la soga (2:15), las diez «partes» de Manasés (<a href="joshua-17.es.html#v17-5">17:5</a>) y la «una suerte y una parte» de José (<a href="joshua-17.es.html#v17-14">17:14</a>), la parte de Judá de la que se aloja a Simeón (<a href="joshua-19.es.html#n19-3">19:9</a>) y la «región» de Aczib (<a href="joshua-19.es.html#n19-6">19:29</a>), todo ya en estas páginas. ⚠ El español no tiene una palabra para ella, así que esta traducción cambia la palabra con el sentido: «parte» donde se mide una herencia (17:5, 14; 19:9), «región» donde se mide un distrito (Deuteronomio 3:4; Josué 19:29), «cordel medido» donde se habla de la línea misma (Deuteronomio 32:9), «soga» para la cuerda (2:15). La Biblia de Ginebra toma la <em>chevel</em> de Aczib por un lugar llamado Hebel, y la Douay-Rheims por una porción. Véase también <em><a href="diccionario.html#chevel-middah">chevel middah</a></em>, el cordel de medir de Zacarías 2:5.""")
+
+# -- dictionary: goral (flips + the numbered lots + the second grant not by lot)
+_j18_dict('goral',
+    old_en="""and Zebulun's, at 19:10 (not yet on these pages)""",
+    new_en="""and Zebulun's, at <a href="joshua-19.html#v19-10">19:10</a> (now on these pages)""",
+    old_es="""y la de Zabulón, en 19:10 (todavía no en estas páginas)""",
+    new_es="""y la de Zabulón, en <a href="joshua-19.es.html#v19-10">19:10</a> (ya en estas páginas)""")
+_j18_dict('goral',
+    old_en="""and, in Joshua 19 (not yet on these pages), Simeon's, Issachar's, Asher's, Naphtali's and Dan's.""",
+    new_en="""and, in <a href="joshua-19.html#n19-1">Joshua 19</a> (now on these pages), Simeon's (v1), Issachar's (v17), Asher's (v24), Naphtali's (v32) and Dan's (v40).""",
+    old_es="""y, en Josué 19 (todavía no en estas páginas), las de Simeón, Isacar, Aser, Neftalí y Dan.""",
+    new_es="""y, en <a href="joshua-19.es.html#n19-1">Josué 19</a> (ya en estas páginas), las de Simeón (v1), Isacar (v17), Aser (v24), Neftalí (v32) y Dan (v40).""")
+_j18_dict('goral',
+    old_en="""Caleb's own grant at the same chapter's v13 is the one inheritance in the whole division this word is never applied to: no token drawn, only an oath and a blessing.""",
+    new_en="""Caleb's own grant at the same chapter's v13 is the first inheritance in the division this word is never applied to: no token drawn, only an oath and a blessing &mdash; and Joshua's own city, given after the last lot is thrown, is the last (<a href="joshua-19.html#n19-9">19:49&ndash;50</a>, now on these pages): both are given &lsquo;by the mouth of Jehovah.&rsquo;""",
+    old_es="""Y la propia concesión de Caleb en el v13 de ese mismo capítulo es la única herencia de todo el reparto a la que esta palabra nunca se aplica: ningún token echado, solo un juramento y una bendición.""",
+    new_es="""Y la propia concesión de Caleb en el v13 de ese mismo capítulo es la primera herencia del reparto a la que esta palabra nunca se aplica: ningún token echado, solo un juramento y una bendición &mdash;y la ciudad propia de Josué, dada cuando ya se ha echado la última suerte, es la última (<a href="joshua-19.es.html#n19-9">19:49&ndash;50</a>, ya en estas páginas): las dos se dan «por la boca de Jehová».""",
+    add_en=""" ⭐ <a href="joshua-19.html#n19-1">Joshua 19</a> (now on these pages) is where the lots are numbered: <span data-heb="הגורל השני">&lsquo;the second lot&rsquo; stands in <strong>one verse</strong> of the Hebrew Bible</span>, and each ordinal through the seventh is alone in its verse the same way. &lsquo;The first lot&rsquo; is said only of the priests&rsquo; and singers&rsquo; courses (1 Chronicles 24:7 and 25:9, not yet on these pages), never in Joshua, where Benjamin&rsquo;s lot carries no number.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-1">Josué 19</a> (ya en estas páginas) es donde se numeran las suertes: <span data-heb="הגורל השני">«la segunda suerte» está en <strong>un versículo</strong> de la Biblia hebrea</span>, y cada ordinal hasta el séptimo está solo en su versículo de la misma manera. «La primera suerte» se dice solo de los turnos de los sacerdotes y de los cantores (1 Crónicas 24:7 y 25:9, todavía no en estas páginas), nunca en Josué, donde la suerte de Benjamín no lleva número.""")
+
+# -- dictionary: chelek
+_j18_dict('chelek',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-3">Joshua 19:9</a> (now on these pages) has it in &ldquo;the portion of the sons of Judah was too much for them,&rdquo; and its verb is the verb of Jacob&rsquo;s sentence on Simeon, &ldquo;I will divide them in Jacob&rdquo; (<a href="genesis-49.html#v49-7">Genesis 49:7</a>): <span data-heb="אחלקם">the form <em>achallekem</em> stands in <strong>one verse</strong> of the Hebrew Bible</span>. The same root closes the chapter, where the leaders &ldquo;finish dividing&rdquo; the land (<em>mechalleq</em>, v51).""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-3">Josué 19:9</a> (ya en estas páginas) la tiene en «la porción de los hijos de Judá era demasiado para ellos», y su verbo es el verbo de la sentencia de Jacob sobre Simeón, «los dividiré en Jacob» (<a href="genesis-49.es.html#v49-7">Génesis 49:7</a>): <span data-heb="אחלקם">la forma <em>achallekem</em> está en <strong>un versículo</strong> de la Biblia hebrea</span>. La misma raíz cierra el capítulo, donde los jefes «acaban de repartir» la tierra (<em>mechalleq</em>, v51).""")
+
+# -- encyclopedia: new entries (EN + ES)
+ENCYCLOPEDIA.append(dict(slug="tabor", name="Tabor", kind="place", aliases=["Tabor", "Mount Tabor", "Chisloth-tabor", "Aznoth-tabor"],
+    coords=(32.6869, 35.3907, 0.1),
+    modern="Mount Tabor (Har Tavor, Jebel et-Tur), Lower Galilee, Israel",
+    refs=[("Joshua", 19, 22)], videos=[],
+    desc="""The rounded mountain that stands alone at the north-eastern edge of the plain of Jezreel, in Lower Galilee. In <a href="joshua-19.html#n19-5">Joshua 19</a> (now on these pages) three tribal borders are written against it in three forms: Issachar&rsquo;s &ldquo;reached to Tabor&rdquo; (v22), Zebulun&rsquo;s passes &ldquo;the border of Chisloth-tabor&rdquo; (v12), where <em>Chisloth</em> is &lsquo;flanks,&rsquo; and Naphtali&rsquo;s turns at &ldquo;Aznoth-tabor&rdquo; (v34), where <em>Aznoth</em> is &lsquo;ears,&rsquo; the peaks. Radak takes the last two to be two names of one place. ⚠ The text names the mountain three times and never says that the three borders meet on it."""))
+ENCYCLOPEDIA_ES["tabor"] = ("Tabor",
+    """La montaña redondeada que se alza sola en el borde nororiental de la llanura de Jezreel, en la Baja Galilea. En <a href="joshua-19.es.html#n19-5">Josué 19</a> (ya en estas páginas) tres límites tribales se escriben contra ella en tres formas: el de Isacar «llegaba hasta el Tabor» (v22), el de Zabulón pasa por «el límite de Quislot-tabor» (v12), donde <em>Quislot</em> es «flancos», y el de Neftalí gira en «Aznot-tabor» (v34), donde <em>Aznot</em> es «orejas», las cumbres. Radak toma los dos últimos por dos nombres de un solo lugar. ⚠ El texto nombra la montaña tres veces y nunca dice que los tres límites se encuentren en ella.""")
+
+ENCYCLOPEDIA.append(dict(slug="leshem", name="Leshem (Laish, Dan)", kind="place", aliases=["Leshem", "Laish", "Dan", "the city of Dan"],
+    coords=(33.2487, 35.6521, 0.1),
+    modern="Tel Dan (Tell el-Qadi), at the foot of Mount Hermon, Upper Galilee, Israel",
+    refs=[("Joshua", 19, 47)], videos=[],
+    desc="""The northern city the tribe of Dan took when its first allotment &ldquo;went out from them&rdquo;: <em>Leshem</em> in <a href="joshua-19.html#n19-8">Joshua 19:47</a> (now on these pages), <em>Laish</em> in Judges 18:7, 14, 27 and 29 (not yet on these pages), renamed Dan &ldquo;after the name of Dan their father.&rdquo; The mound of Tel Dan is its secure identification. ⚠ The place is called Dan before it is named: <a href="genesis-14.html#n14-13">Genesis 14:14</a> and <a href="deuteronomy-34.html#n34-1">Deuteronomy 34:1</a> (both already on these pages) say &ldquo;as far as Dan,&rdquo; and their notes record that seam. It is the far end of the nation&rsquo;s north&ndash;south span, Dan to Beersheba."""))
+ENCYCLOPEDIA_ES["leshem"] = ("Lesem (Lais, Dan)",
+    """La ciudad del norte que la tribu de Dan tomó cuando su primer lote «salió de ellos»: <em>Lesem</em> en <a href="joshua-19.es.html#n19-8">Josué 19:47</a> (ya en estas páginas), <em>Lais</em> en Jueces 18:7, 14, 27 y 29 (todavía no en estas páginas), rebautizada Dan «del nombre de Dan su padre». El montículo de Tel Dan es su identificación segura. ⚠ El lugar se llama Dan antes de recibir el nombre: Génesis 14:14 (ya en estas páginas, todavía no en español) y <a href="deuteronomy-34.es.html#n34-1">Deuteronomio 34:1</a> (ya en estas páginas) dicen «hasta Dan», y sus notas registran esa costura. Es el extremo lejano de la distancia de norte a sur de la nación, de Dan a Beerseba.""")
+
+ENCYCLOPEDIA.append(dict(slug="timnath-serah", name="Timnath-serah", kind="place", aliases=["Timnath-serah", "Timnath-heres"],
+    coords=(32.11, 35.12, 0.4), approx=True,
+    modern="Disputed: Khirbet Tibnah, which most geographers favour, or Kifl Haris, the traditional tomb site of Joshua; hill country of Ephraim, West Bank",
+    refs=[("Joshua", 19, 50)], videos=[],
+    desc="""The city Joshua asked for and was given &ldquo;by the mouth of Jehovah&rdquo; once every other inheritance had been apportioned: &ldquo;he built the city, and dwelt in it&rdquo; (<a href="joshua-19.html#n19-9">Joshua 19:50</a>, now on these pages). It is in the hill country of Ephraim, and it is where he is buried (Joshua 24:30, not yet on these pages). ⭐ <span data-heb="תמנת סרח">The name <em>Timnat-serach</em> stands in <strong>two verses</strong> of the Hebrew Bible</span>; Judges 2:9 (not yet on these pages) writes it <em>Timnat-heres</em>, the same three letters in the other order. ⚠ Neither candidate site is proven: Khirbet Tibnah is the usual scholarly choice, and Kifl Haris carries the old tomb traditions. The atlas marks it approximate."""))
+ENCYCLOPEDIA_ES["timnath-serah"] = ("Timnat-sera",
+    """La ciudad que Josué pidió y se le dio «por la boca de Jehová» cuando ya se había repartido toda otra herencia: «edificó la ciudad, y habitó en ella» (<a href="joshua-19.es.html#n19-9">Josué 19:50</a>, ya en estas páginas). Está en el monte de Efraín, y es donde lo sepultan (Josué 24:30, todavía no en estas páginas). ⭐ <span data-heb="תמנת סרח">El nombre <em>Timnat-serach</em> está en <strong>dos versículos</strong> de la Biblia hebrea</span>; Jueces 2:9 (todavía no en estas páginas) lo escribe <em>Timnat-heres</em>, las mismas tres letras en el otro orden. ⚠ Ningún sitio candidato está probado: Khirbet Tibnah es la elección académica habitual, y Kifl Haris guarda las viejas tradiciones de la tumba. El atlas la marca como aproximada.""")
+
+ENCYCLOPEDIA.append(dict(slug="cabul", name="Cabul", kind="place", aliases=["Cabul", "Kabul", "the land of Cabul"],
+    coords=(32.87, 35.22, 0.2), approx=True,
+    modern="Kabul, western Galilee, Israel (the traditional identification)",
+    refs=[("Joshua", 19, 27)], videos=[],
+    desc="""A border village of Asher, where the border &ldquo;went out to Cabul on the left&rdquo; (<a href="joshua-19.html#n19-6">Joshua 19:27</a>, now on these pages). <span data-heb="כבול">The name <em>Cabul</em> stands in <strong>two verses</strong> of the Hebrew Bible</span>: that one and 1 Kings 9:13 (not yet on these pages), where Solomon, in debt to Hiram of Tyre, gives him twenty cities in the land of Galilee, they were not right in Hiram&rsquo;s eyes, and he calls them &ldquo;the land of Cabul&rdquo; to this day. ⚠ The Hebrew of Joshua 19 does not say whether the village already had the name or the district took it from Hiram&rsquo;s word."""))
+ENCYCLOPEDIA_ES["cabul"] = ("Cabul",
+    """Una aldea de frontera de Aser, donde el límite «salía a Cabul por la izquierda» (<a href="joshua-19.es.html#n19-6">Josué 19:27</a>, ya en estas páginas). <span data-heb="כבול">El nombre <em>Cabul</em> está en <strong>dos versículos</strong> de la Biblia hebrea</span>: ese y 1 Reyes 9:13 (todavía no en estas páginas), donde Salomón, en deuda con Hiram de Tiro, le da veinte ciudades en la tierra de Galilea, no eran rectas a los ojos de Hiram, y las llama «la tierra de Cabul» hasta hoy. ⚠ El hebreo de Josué 19 no dice si la aldea ya tenía el nombre o si el distrito lo tomó de la palabra de Hiram.""")
+
+# -- encyclopedia: Spanish twins for entries that had none, each extended for this chapter
+ENCYCLOPEDIA_ES["beersheba"] = ("Beerseba",
+    """«Pozo de los siete / pozo del juramento» &mdash;el pozo de doble nombre donde Abraham y Abimelec juraron sobre siete corderas (21:28-31; el hebreo «jurar», nishba, es literalmente «sietearse», de modo que las dos lecturas son una sola palabra). Abraham planta aquí un tamarisco e invoca a El Olam, el Dios Eterno (21:33); Isaac y Jacob se anclarán aquí después de él, y «desde Dan hasta Beerseba» llega a ser la frase de la propia Biblia para toda la tierra, de norte a sur. El montículo excavado (Tel Be'er Sheva) conserva una población planeada de la Edad de Hierro con un pozo monumental en su puerta &mdash;una ciudad construida en torno al bien mismo que este capítulo litiga. ⭐ <a href="joshua-19.es.html#n19-2">Josué 19:2</a> (ya en estas páginas) abre con ella la lista de las ciudades de Simeón, dentro de la porción de Judá, y el hebreo la une a un «Seba» con una simple <em>y</em>, de donde salen los trece y los catorce nombres de esa lista.""")
+_j18_ency('beersheba',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-2">Joshua 19:2</a> (now on these pages) opens Simeon&rsquo;s list of cities with it, inside Judah&rsquo;s portion, and the Hebrew joins it to a &ldquo;Sheba&rdquo; with a plain <em>and</em>, which is where that list&rsquo;s thirteen cities and fourteen names come from.""")
+
+ENCYCLOPEDIA_ES["bethlehem"] = ("Belén",
+    """«Casa de Pan» (Beit-Lejem) &mdash;nombrada por primera vez en la Biblia aquí, bajo su nombre más antiguo, Efrata, cuando Raquel muere de parto «en el camino de Efrata, esto es, Belén» y Jacob marca su tumba con una columna (35:19-20). Un pueblo pequeño a diez kilómetros al sur de Jerusalén, llega a ser el pueblo de Rut y Booz (Rut 1-4) y la casa y ciudad de DAVID (1 Samuel 16), de donde Miqueas anuncia que saldrá el gobernante «cuyos orígenes son de antiguo» (Miqueas 5:2) &mdash;la profecía que Mateo y Lucas ponen sobre el nacimiento de Jesús (Mateo 2; Lucas 2). Así que el borde del camino donde yace sepultada, llorando, la madre de Israel, llega a ser el camino a la cuna del Mesías. ⭐ <a href="joshua-19.es.html#n19-4">Josué 19:15</a> (ya en estas páginas) pone un Belén en la lista de Zabulón, sin ninguna de las glosas que acompañan al de Raquel.""")
+_j18_ency('bethlehem',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-4">Joshua 19:15</a> (now on these pages) puts a Bethlehem in Zebulun&rsquo;s list, with none of the glosses that accompany Rachel&rsquo;s; the name stands in one verse of the book of Joshua.""")
+
+ENCYCLOPEDIA_ES["carmel"] = ("Carmelo",
+    """El promontorio boscoso que se adentra en el Mediterráneo en la actual Haifa &mdash;la tierra más verde y más húmeda del país, que recoge la lluvia del mar, y por eso el ÚLTIMO lugar de la tierra en secarse. Ese es el sentido de Amós 1:2: de los pastos de los pastores en el borde del desierto hasta «la cumbre del Carmelo», lo primero en quemarse y lo último, y por tanto todo lo de en medio. El nombre significa «tierra de jardín» o «huerto». Es también el monte del duelo de Elías con los profetas de Baal, y el lugar donde luego se agachó con el rostro entre las rodillas mientras su criado iba siete veces a mirar el mar (1 Reyes 18). ⭐ <a href="joshua-19.es.html#n19-6">Josué 19:26</a> (ya en estas páginas) lo hace un punto del límite de Aser, «por el occidente».""")
+_j18_ency('carmel',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-6">Joshua 19:26</a> (now on these pages) makes it a point on Asher&rsquo;s border, &ldquo;westward.&rdquo;""")
+
+ENCYCLOPEDIA_ES["ekron"] = ("Ecrón",
+    """La más septentrional de las cinco ciudades filisteas, y la más cercana al territorio israelita &mdash;por eso la delegación de Ocozías va allí. Se la identifica desde 1957 con Tel Miqne, y en 1996 uno de los hallazgos más satisfactorios de la arqueología levantina lo confirmó: una inscripción dedicatoria en un templo del siglo VII que nombra la ciudad como Ecrón y enumera a cinco de sus gobernantes, entre ellos dos reyes conocidos por los registros asirios. En la narración del arca de 1 Samuel es la última de las ciudades filisteas a la que se envía el arca capturada, y la que por fin la manda de vuelta. ⭐ <a href="joshua-19.es.html#n19-8">Josué 19:43</a> (ya en estas páginas) la pone en la lista de Dan; la lista de Judá también la reclama (15:45), y <a href="judges-1.es.html#v18">Jueces 1:18</a> (ya en estas páginas) hace que Judá la capture.""")
+_j18_ency('ekron',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-8">Joshua 19:43</a> (now on these pages) puts it in Dan&rsquo;s list; Judah&rsquo;s list also claims it (15:45), and <a href="judges-1.html#v18">Judges 1:18</a> (now on these pages) has Judah capture it.""")
+
+ENCYCLOPEDIA_ES["gath-hepher"] = ("Gat-héfer",
+    """El pueblo natal de Jonás &mdash;una aldea en el territorio de Zabulón, en la Baja Galilea (Josué 19:13; 2 Reyes 14:25), identificada tradicionalmente con el-Meshhed, unos kilómetros al nordeste de lo que llegaría a ser NAZARET. ⚠ Esa ubicación responde discretamente a los fariseos que dicen a Nicodemo «escudriña y ve: de Galilea no se levanta profeta» (Juan 7:52) &mdash;Jonás, un profeta galileo, se había levantado en la aldea de al lado. No debe confundirse con la ciudad filistea de Gat. ⭐ <a href="joshua-19.es.html#n19-4">Josué 19:13</a> (ya en estas páginas) la nombra en la línea de la suerte de Zabulón, como <em>Gittah-hefer</em>, con la terminación de dirección en el nombre.""")
+_j18_ency('gath-hepher',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-4">Joshua 19:13</a> (now on these pages) names it on the line of Zebulun&rsquo;s lot, as <em>Gittah-hefer</em>, with the direction ending on the name.""")
+
+ENCYCLOPEDIA_ES["judah"] = ("Judá",
+    """El cuarto hijo de Jacob y Lea, y la tribu que descendió de él &mdash;la línea REAL y mesiánica. Nacido con el grito «esta vez alabaré (odeh) a Jehová» (Génesis 29:35), Judá se alza sobre sus hermanos: salva la vida de José, se ofrece como fiador por Benjamín y recibe en la bendición de lecho de muerte de Jacob que «el cetro no se apartará de Judá» (Génesis 49:10). En el censo del desierto su tribu es la mayor de todas (74.600 hombres de guerra, Números 1:27) y ocupa el lugar de honor: acampa al este y marcha a la cabeza del ejército (Números 2:3, 9), con el jefe Naasón. De Judá vienen David, los reyes de Jerusalén y &mdash;anuncia el Nuevo Testamento&mdash; «el León de la tribu de Judá» (Apocalipsis 5:5); la propia palabra «judío» es un desgaste del nombre Judá. ⭐ Josué 7 (ya en estas páginas) es la primera deshonra de la tribu en la tierra: cuando se criba a la nación en busca del ladrón de Jericó, la tribu de Judá fue tomada primero (7:16), y el hombre es un zeraíta de Judá, Acán. ⭐ <a href="joshua-19.es.html#n19-3">Josué 19:9</a> (ya en estas páginas) da la razón por la que Simeón vive dentro de su parte: la porción de Judá era más de lo que Judá necesitaba; y <a href="joshua-19.es.html#n19-7">19:34</a> termina el límite de Neftalí con «y en Judá, el Jordán», una frase que las versiones y los comentaristas leen de tres maneras.""")
+_j18_ency('judah',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-3">Joshua 19:9</a> (now on these pages) gives the reason Simeon lives inside its share: Judah&rsquo;s portion was more than Judah needed; and <a href="joshua-19.html#n19-7">19:34</a> ends Naphtali&rsquo;s border with &ldquo;and at Judah, the Jordan,&rdquo; a phrase the versions and the commentators read three ways.""")
+
+ENCYCLOPEDIA_ES["timnah"] = ("Timna",
+    """El pueblo al que Judá subió para esquilar sus ovejas &mdash;una ocasión de fiesta&mdash; y en cuyo camino Tamar tomó asiento (38:12-14). Se lo identifica por lo común con Tel Batash en el valle de Sorec, excavado y ocupado a lo largo de las Edades de Bronce y de Hierro. Una Timna es también donde Sansón encuentra a su mujer filistea y mata a un león (Jueces 14), aunque si es el mismo pueblo es cuestión discutida. ⭐ <a href="joshua-19.es.html#n19-8">Josué 19:43</a> (ya en estas páginas) pone una Timna en la lista de Dan, con la terminación <em>-ah</em> en el nombre.""")
+_j18_ency('timnah',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-8">Joshua 19:43</a> (now on these pages) puts a Timnah in Dan&rsquo;s list, with the ending <em>-ah</em> on the name.""")
+
+ENCYCLOPEDIA_ES["ziklag"] = ("Siclag",
+    """El pueblo en el Négueb que ACISH, rey filisteo de Gat, dio a David durante su exilio, y que la familia de David conservó después (1 Samuel 27:6). Es donde vive cuando muere Saúl &mdash;un hombre ungido rey de Israel, alojado en territorio enemigo por concesión de un enemigo. ⚠️ Días antes los amalecitas lo habían quemado y se habían llevado a las mujeres y los hijos de los hombres de David, que hablaron de apedrearlo; él los persiguió y lo recuperó todo (1 Samuel 30), que es la incursión de la que acaba de volver cuando se abre 2 Samuel. Su sitio es discutido &mdash;Tell esh-Shari'a y Tel Sera' están entre los candidatos&mdash;, así que el mapa lo marca de forma aproximada. ⭐ <a href="joshua-19.es.html#n19-2">Josué 19:5</a> (ya en estas páginas) lo cuenta entre las ciudades de Simeón, dentro de la porción de Judá.""")
+_j18_ency('ziklag',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-2">Joshua 19:5</a> (now on these pages) counts it among Simeon&rsquo;s cities, inside Judah&rsquo;s portion.""")
+
+# -- encyclopedia: extended entries that already had both languages
+_j18_ency('simeon',
+    old_en="""is swallowed into Judah's (Joshua 19:1)""",
+    new_en="""is swallowed into Judah's (<a href="joshua-19.html#n19-1">Joshua 19:1</a>, now on these pages)""",
+    old_es="""es absorbida por el de Judá (Josué 19:1)""",
+    new_es="""es absorbida por el de Judá (<a href="joshua-19.es.html#n19-1">Josué 19:1</a>, ya en estas páginas)""",
+    add_en=""" ⭐ <a href="joshua-19.html#n19-2">Joshua 19:2&ndash;8</a> (now on these pages) is the lot itself: eleven of its eighteen town names already stand in Judah&rsquo;s own lists, and <a href="joshua-19.html#n19-3">19:9</a> gives the reason, that Judah&rsquo;s share was more than Judah needed. Deuteronomy 27:12 is the one verse of Deuteronomy that names him, and the two censuses of Numbers take him from 59,300 (<a href="numbers-1.html#v1-23">1:23</a>) to 22,200 (<a href="numbers-26.html#v26-14">26:14</a>).""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-2">Josué 19:2&ndash;8</a> (ya en estas páginas) es la suerte misma: once de sus dieciocho nombres de pueblos ya están en las propias listas de Judá, y <a href="joshua-19.es.html#n19-3">19:9</a> da la razón, que la parte de Judá era más de lo que Judá necesitaba. Deuteronomio 27:12 es el único versículo de Deuteronomio que lo nombra, y los dos censos de Números lo llevan de 59.300 (Números 1:23, ya en estas páginas, todavía no en español) a 22.200 (<a href="numbers-26.es.html#v26-14">26:14</a>).""")
+
+_j18_ency('zebulun',
+    old_en="""a tribe whose allotment in Joshua 19 (not yet on these pages) is in fact inland Galilee.""",
+    new_en="""a tribe whose lot in <a href="joshua-19.html#n19-4">Joshua 19:10&ndash;16</a> (now on these pages) names no coast of its own: its western line goes up <em>layyammah</em>, &lsquo;westward&rsquo; or &lsquo;to the sea&rsquo; by how the one word is read.""",
+    old_es="""una tribu cuyo lote en Josué 19 (todavía no en estas páginas) está en realidad en la Galilea interior.""",
+    new_es="""una tribu cuyo lote en <a href="joshua-19.es.html#n19-4">Josué 19:10&ndash;16</a> (ya en estas páginas) no nombra ninguna costa propia: su línea occidental sube <em>layyammah</em>, «hacia el occidente» o «hasta el mar» según cómo se lea la única palabra.""",
+    add_en=""" ⭐ Its lot also holds Gath-hepher, Jonah&rsquo;s town (19:13), and a Nahalal that Judges 1:30 says it never cleared.""",
+    add_es=""" ⭐ Su suerte contiene además Gat-héfer, el pueblo de Jonás (19:13), y un Nahalal que Jueces 1:30 dice que nunca limpió.""")
+
+_j18_ency('issachar',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-5">Joshua 19:17&ndash;23</a> (now on these pages) is his lot, the fourth, and the one whose total can be counted: thirteen names in vv18&ndash;21 and three in v22 make the sixteen cities the verse says. Of the five northern tribes of that chapter, Issachar is the one Judges 1 never names among those that left towns uncleared.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-5">Josué 19:17&ndash;23</a> (ya en estas páginas) es su suerte, la cuarta, y la que tiene un total que se puede contar: trece nombres en los vv18&ndash;21 y tres en el v22 hacen las dieciséis ciudades que dice el versículo. De las cinco tribus del norte de ese capítulo, Isacar es la que Jueces 1 nunca nombra entre las que dejaron pueblos sin limpiar.""")
+
+_j18_ency('asher',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-6">Joshua 19:24&ndash;31</a> (now on these pages) draws his lot up the coast to Great Sidon (v28) and the fortified city of Tyre (v29); four of the seven places that Judges 1:31 says Asher did not drive out stand in its list.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-6">Josué 19:24&ndash;31</a> (ya en estas páginas) traza su suerte por la costa hasta la gran Sidón (v28) y la ciudad fortificada de Tiro (v29); cuatro de los siete lugares que Jueces 1:31 dice que Aser no expulsó están en su lista.""")
+
+_j18_ency('naphtali',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-7">Joshua 19:32&ndash;39</a> (now on these pages) is his lot, the sixth. Its border ends &ldquo;and at Judah, the Jordan&rdquo; (v34), Hazor and Kedesh stand among its fortified cities, and the last two names of the list, Beth-shemesh and Beth-anath, are the two that Judges 1:33 says Naphtali never cleared.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-7">Josué 19:32&ndash;39</a> (ya en estas páginas) es su suerte, la sexta. Su límite termina «y en Judá, el Jordán» (v34), Hazor y Cedes están entre sus ciudades fortificadas, y los dos últimos nombres de la lista, Bet-semes y Bet-anat, son los dos que Jueces 1:33 dice que Neftalí nunca limpió.""")
+
+_j18_ency('dan',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-8">Joshua 19:40&ndash;48</a> (now on these pages) puts both halves of that story in one chapter: the seventh lot <em>went out</em> for Dan (v40), then the border of Dan <em>went out from them</em> (v47), and the tribe took Leshem &mdash; Laish in Judges 18 &mdash; and renamed it Dan. Dan is the one tribe of the six in that chapter whose list carries no total.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-8">Josué 19:40&ndash;48</a> (ya en estas páginas) pone las dos mitades de esa historia en un solo capítulo: la séptima suerte <em>salió</em> para Dan (v40), luego el límite de Dan <em>salió de ellos</em> (v47), y la tribu tomó Lesem &mdash;Lais en Jueces 18&mdash; y la rebautizó Dan. Dan es la única tribu de las seis de ese capítulo cuya lista no lleva total.""")
+
+_j18_ency('joppa',
+    add_en=""" ⭐ It is first named as a boundary: Dan&rsquo;s border runs &ldquo;over against Joppa&rdquo; (<a href="joshua-19.html#n19-8">Joshua 19:46</a>, now on these pages), the first of four verses of the Hebrew Bible that name it. Jonah&rsquo;s own town, Gath-hepher, is on Zebulun&rsquo;s line in the same chapter (19:13).""",
+    add_es=""" ⭐ Se la nombra primero como un límite: el confín de Dan corre «frente a Jope» (<a href="joshua-19.es.html#n19-8">Josué 19:46</a>, ya en estas páginas), el primero de cuatro versículos de la Biblia hebrea que la nombran. El propio pueblo de Jonás, Gat-héfer, está en la línea de Zabulón en el mismo capítulo (19:13).""")
+
+_j18_ency('sidon',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-6">Joshua 19:28</a> (now on these pages) makes &ldquo;Great Sidon&rdquo; the end of Asher&rsquo;s border, the same limit as Joshua&rsquo;s pursuit at 11:8, and Judges 1:31 says the Sidonians were left.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-6">Josué 19:28</a> (ya en estas páginas) hace de «la gran Sidón» el final del límite de Aser, el mismo límite que la persecución de Josué en 11:8, y Jueces 1:31 dice que se dejó a los sidonios.""")
+
+_j18_ency('tyre',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-6">Joshua 19:29</a> (now on these pages) names &ldquo;the fortified city of Tyre&rdquo; on Asher&rsquo;s border; the phrase stands again only in the census route of 2 Samuel 24:7 (not yet on these pages).""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-6">Josué 19:29</a> (ya en estas páginas) nombra «la ciudad fortificada de Tiro» en el límite de Aser; la frase está de nuevo solo en la ruta del censo de 2 Samuel 24:7 (todavía no en estas páginas).""")
+
+_j18_ency('hormah',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-2">Joshua 19:4</a> (now on these pages) counts it among Simeon&rsquo;s cities, and Judges 1:17 gives the city Judah and Simeon struck together. The Douay-Rheims, following the Latin, reads the Ramah of 19:29 as &lsquo;Horma.&rsquo;""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-2">Josué 19:4</a> (ya en estas páginas) la cuenta entre las ciudades de Simeón, y Jueces 1:17 da la ciudad que Judá y Simeón hirieron juntos. La Reina-Valera de 1909, siguiendo el latín, lee la Ramá de 19:29 como «Horma».""")
+
+_j18_ency('hazor',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-7">Joshua 19:36</a> (now on these pages) lists it among Naphtali&rsquo;s fortified cities and does not mention the burning of 11:13.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-7">Josué 19:36</a> (ya en estas páginas) la enumera entre las ciudades fortificadas de Neftalí y no menciona el incendio de 11:13.""")
+
+_j18_ency('kedesh',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-7">Joshua 19:37</a> (now on these pages) lists it in Naphtali&rsquo;s lot, one verse after Hazor; Judges 4:11 (not yet on these pages) puts the great tree of Zaanannim &ldquo;by Kedesh.&rdquo;""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-7">Josué 19:37</a> (ya en estas páginas) la enumera en la suerte de Neftalí, un versículo después de Hazor; Jueces 4:11 (todavía no en estas páginas) pone el gran árbol de Zaananim «junto a Cedes».""")
+
+_j18_ency('jezreel',
+    add_en=""" ⭐ <a href="joshua-19.html#n19-5">Joshua 19:18</a> (now on these pages) puts it first on Issachar&rsquo;s list.""",
+    add_es=""" ⭐ <a href="joshua-19.es.html#n19-5">Josué 19:18</a> (ya en estas páginas) la pone primera en la lista de Isacar.""")
+
+_j18_ency('jokneam',
+    old_en="""Later drawn into Zebulun's own border (Joshua 19:11, not yet on these pages)""",
+    new_en="""Later drawn into Zebulun's own border (<a href="joshua-19.html#v19-11">Joshua 19:11</a>, now on these pages)""",
+    old_es="""Incorporada después a la propia frontera de Zabulón (Josué 19:11, todavía no en estas páginas)""",
+    new_es="""Incorporada después a la propia frontera de Zabulón (<a href="joshua-19.es.html#v19-11">Josué 19:11</a>, ya en estas páginas)""")
+
+_j18_ency('shimron',
+    old_en="""later listed among the twelve towns of Zebulun's inheritance (Joshua 19:15, not yet on these pages)""",
+    new_en="""later listed among the towns of Zebulun's inheritance (<a href="joshua-19.html#v19-15">Joshua 19:15</a>, now on these pages)""",
+    old_es="""listada después entre las doce ciudades de la heredad de Zabulón (Josué 19:15, todavía no en estas páginas)""",
+    new_es="""listada después entre las ciudades de la heredad de Zabulón (<a href="joshua-19.es.html#v19-15">Josué 19:15</a>, ya en estas páginas)""")
+
+_j18_ency('achshaph',
+    old_en="""(Joshua 19:25, not yet on these pages)""",
+    new_en="""(<a href="joshua-19.html#v19-25">Joshua 19:25</a>, now on these pages)""",
+    old_es="""(Josué 19:25, todavía no en estas páginas)""",
+    new_es="""(<a href="joshua-19.es.html#v19-25">Josué 19:25</a>, ya en estas páginas)""")
+
+# -- chronology strip
+CHRON_CHAPTERS["josh19"] = dict(era="exodus",
+    when="The other six lots are thrown at Shiloh before Jehovah, at the door of the tent of meeting, and come out in order: Simeon's inside Judah's share, then Zebulun, Issachar, Asher, Naphtali and Dan, each with a border or a list of towns and, for all but Dan, a total. Dan's border goes out from them, and the tribe takes Leshem in the far north and names it Dan. When the land is divided, the sons of Israel give Joshua the city he asked for, Timnath-serah in the hill country of Ephraim, by the mouth of Jehovah, and he builds it and lives in it.",
+    clock="Like chapters 13-18, a legal/administrative chapter that gives no date or duration of its own: the six lots follow the first at Shiloh, and the book does not say how long the apportioning took. It closes the division that Numbers 34:17-18 commissioned and Joshua 14:1 opened, with the same names, Eleazar and Joshua, and at the Shiloh where Joshua 18:1 settled the tent of meeting. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
+CHAPTER_ART["josh19"] = [dict(
+    file="josh19-roberts-mount-tabor-1839.jpg",
+    title="Mount Tabor from the Plain of Esdraelon, April 19th 1839",
+    title_es="El monte Tabor desde la llanura de Esdrelón, 19 de abril de 1839",
+    artist="David Roberts (artist) and Louis Haghe (lithographer)",
+    artist_es="David Roberts (dibujante) y Louis Haghe (litógrafo)",
+    year="1842, after a sketch of 1839",
+    location="Hand-coloured lithograph, London; Library of Congress (as recorded on Wikimedia Commons)",
+    location_es="Litografía coloreada a mano, Londres; Biblioteca del Congreso de los EE. UU. (según el registro de Wikimedia Commons)",
+    alt="A pale, hand-coloured lithograph of a wide plain with a single smooth, rounded mountain rising from it in the distance under a hazy sky. In the foreground a group of travellers in blue, red, yellow and white robes stands on a path at the edge of a rocky ledge, with rolled bedding and a water jar at their feet. A string of riders and pack animals crosses the plain at the right.",
+    note="&#9888; This is a traveller&rsquo;s view of the mountain from the plain, made in April 1839 and printed in 1842, and it shows what no verse of the chapter says: the mountain standing by itself. Joshua 19 never describes Tabor. It writes three borders against it, Issachar&rsquo;s &ldquo;reached to Tabor&rdquo; (v22), Zebulun&rsquo;s past Chisloth-tabor (v12) and Naphtali&rsquo;s at Aznoth-tabor (v34), and the names are all the text gives. The lithographer has drawn the one landmark all three lines share; whether the three borders actually meet on it the Hebrew does not say.",
+    note_es="&#9888; Es una vista de viajero de la monta&ntilde;a desde la llanura, hecha en abril de 1839 e impresa en 1842, y muestra lo que ning&uacute;n vers&iacute;culo del cap&iacute;tulo dice: la monta&ntilde;a sola. Josu&eacute; 19 nunca describe el Tabor. Escribe tres l&iacute;mites contra &eacute;l, el de Isacar &laquo;llegaba hasta el Tabor&raquo; (v22), el de Zabul&oacute;n junto a Quislot-tabor (v12) y el de Neftal&iacute; en Aznot-tabor (v34), y los nombres son todo lo que da el texto. El lit&oacute;grafo ha dibujado el &uacute;nico hito que comparten las tres l&iacute;neas; si los tres l&iacute;mites se encuentran de verdad en &eacute;l, el hebreo no lo dice.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Mount_Tabor_from_the_Plain_of_Esdraelon_April_19th_1839_LCCN2002717475.jpg",
+)]
