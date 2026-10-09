@@ -34075,3 +34075,143 @@ CHAPTER_ART["rom7"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Cranach_Gesetz_und_Gnade_Gotha.jpg",
 )]
+
+
+# ---- Joshua 18 (EN + ES) ----
+def _j18_dict(slug, add_en='', add_es='', old_en='', new_en='', old_es='', new_es=''):
+    for _i, _t in enumerate(DICTIONARY):
+        if _t[0] == slug:
+            _d = _t[4]
+            if old_en:
+                assert _d.count(old_en) == 1, (slug, 'en', old_en[:50])
+                _d = _d.replace(old_en, new_en)
+            DICTIONARY[_i] = _t[:4] + (_d + add_en,) + _t[5:]
+            break
+    else:
+        raise AssertionError(('no English dictionary entry', slug))
+    _es = DICTIONARY_ES[slug]
+    _d = _es[1]
+    if old_es:
+        assert _d.count(old_es) == 1, (slug, 'es', old_es[:50])
+        _d = _d.replace(old_es, new_es)
+    DICTIONARY_ES[slug] = (_es[0], _d + add_es) + tuple(_es[2:])
+
+
+def _j18_ency(slug, add_en='', add_es='', old_en='', new_en='', old_es='', new_es=''):
+    _hits = [_e for _e in ENCYCLOPEDIA if _e.get('slug') == slug]
+    if old_en:
+        _hits = [_e for _e in _hits if old_en in _e['desc']]
+    assert len(_hits) == 1, ('encyclopedia entry for', slug, len(_hits))
+    _e = _hits[0]
+    _d = _e['desc']
+    if old_en:
+        assert _d.count(old_en) == 1, (slug, 'en', old_en[:50])
+        _d = _d.replace(old_en, new_en)
+    _e['desc'] = _d + add_en
+    if add_es or old_es:
+        _es = ENCYCLOPEDIA_ES[slug]
+        _d = _es[1]
+        if old_es:
+            assert _d.count(old_es) == 1, (slug, 'es', old_es[:50])
+            _d = _d.replace(old_es, new_es)
+        ENCYCLOPEDIA_ES[slug] = (_es[0], _d + add_es) + tuple(_es[2:])
+
+
+# -- dictionary: goral (the opening verbs of the ten tribal lots; the throw verbs)
+_j18_dict('goral',
+    old_en="""Every other tribal lot, including <a href="encyclopedia.html#ephraim">Ephraim</a>'s own at <a href="joshua-16.html#n16-1">Joshua 16:1</a> (now on these pages), opens instead with <em>vayetse ha-goral</em>, 'and the lot WENT OUT' &mdash; the identical verb this chapter's own border lines use of themselves (16:2, 6). The lot that goes out behaves like a border; the lot that simply was does not.""",
+    new_en="""Of Joshua's other eight tribal lots, two open <em>vayaal goral</em>, 'and the lot CAME UP' &mdash; Benjamin's, at <a href="joshua-18.html#v18-11">Joshua 18:11</a> (now on these pages), and Zebulun's, at 19:10 (not yet on these pages) &mdash; and six open <em>vayetse ha-goral</em>, 'and the lot WENT OUT': Joseph's, at <a href="joshua-16.html#n16-1">Joshua 16:1</a> (now on these pages), and, in Joshua 19 (not yet on these pages), Simeon's, Issachar's, Asher's, Naphtali's and Dan's. 'Went out' is the verb this chapter's own border lines use of themselves (16:2, 6). The lot that goes out behaves like a border; the lot that simply was does not; and Benjamin's verse keeps the two apart, the lot <em>coming up</em> while the border of the lot goes out. &#9733; <a href="joshua-18.html#n18-3">Joshua 18:6, 8 and 10</a> (now on these pages) are the only verses of the Hebrew Bible that make the lot the thing thrown by <em>yarah</em> or <em>hishlikh</em>, 'to throw, to cast'; everywhere else lots are made to fall (<em>hippil</em>), cast with <em>yadad</em>, or hurled into the lap (<em>yutal</em>, Proverbs 16:33).""",
+    old_es="""Toda otra suerte tribal, incluida la propia de <a href="enciclopedia.html#ephraim">Efraín</a> en <a href="joshua-16.es.html#n16-1">Josué 16:1</a> (ya en estas páginas), abre en cambio con <em>vayetsé ha-goral</em>, «y la suerte SALIÓ» &mdash;el verbo idéntico que las propias líneas de frontera de ese capítulo usan de sí mismas (16:2, 6). La suerte que sale se comporta como un límite; la suerte que simplemente fue, no.""",
+    new_es="""De las otras ocho suertes tribales de Josué, dos abren <em>vayaal goral</em>, «y la suerte SUBIÓ» &mdash;la de Benjamín, en <a href="joshua-18.es.html#v18-11">Josué 18:11</a> (ya en estas páginas), y la de Zabulón, en 19:10 (todavía no en estas páginas)&mdash;, y seis abren <em>vayetsé ha-goral</em>, «y la suerte SALIÓ»: la de José, en <a href="joshua-16.es.html#n16-1">Josué 16:1</a> (ya en estas páginas) y, en Josué 19 (todavía no en estas páginas), las de Simeón, Isacar, Aser, Neftalí y Dan. «Salió» es el verbo que las propias líneas de frontera de ese capítulo usan de sí mismas (16:2, 6). La suerte que sale se comporta como un límite; la suerte que simplemente fue, no; y el versículo de Benjamín mantiene separados los dos: la suerte <em>sube</em> mientras el límite de la suerte sale. &#9733; <a href="joshua-18.es.html#n18-3">Josué 18:6, 8 y 10</a> (ya en estas páginas) son los únicos versículos de la Biblia hebrea que hacen de la suerte lo lanzado por <em>yará</em> o <em>hishlij</em>, «lanzar, echar»; en todos los demás sitios las suertes se hacen caer (<em>hippil</em>), se echan con <em>yadad</em> o se arrojan al regazo (<em>yutal</em>, Proverbios 16:33).""")
+
+# -- dictionary: raphah, ketef, machaneh, nachalah
+_j18_dict('raphah',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-2">Joshua 18:3</a> (now on these pages) turns the verb on the tribes themselves: <span data-heb="מתרפים"><em>mitrappim</em>, the reflexive participle, &lsquo;going slack&rsquo;, stands in <strong>one verse</strong> of the Hebrew Bible</span>, Joshua&rsquo;s &ldquo;How long will you be slack about going in to take possession of the land?&rdquo; It is the root Jehovah promised Joshua with at <a href="joshua-1.html#v5">Joshua 1:5</a> (<em>lo arpekha</em>, &ldquo;I will not let you go&rdquo;), the Gibeonites used at <a href="joshua-10.html#v10-6">10:6</a> (&ldquo;do not let your hands fall slack&rdquo;), and Pharaoh used at <a href="exodus-5.html#v5-8">Exodus 5:8</a> and <a href="exodus-5.html#v5-17">17</a> in the passive, <em>nirpim</em>, &lsquo;idle&rsquo;. <span data-heb="ירפך|ארפך">The promise form, with or without the &lsquo;forsake&rsquo; that follows it, stands in <strong>five verses</strong> of the Hebrew Bible</span>: Deuteronomy 4:31, 31:6 and 31:8 and Joshua 1:5 on these pages, and 1 Chronicles 28:20.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-2">Josué 18:3</a> (ya en estas páginas) vuelve el verbo contra las propias tribus: <span data-heb="מתרפים"><em>mitrappim</em>, el participio reflexivo, «andando flojos», está en <strong>un versículo</strong> de la Biblia hebrea</span>, el «¿Hasta cuándo serán remisos para ir a tomar posesión de la tierra?» de Josué. Es la raíz con que Jehová prometió a Josué en <a href="joshua-1.es.html#v5">Josué 1:5</a> (<em>lo arpekhá</em>, «no te soltaré»), la que usaron los gabaonitas en <a href="joshua-10.es.html#v10-6">10:6</a> («no dejes caer tus manos») y la que usó el faraón en <a href="exodus-5.es.html#v5-8">Éxodo 5:8</a> y <a href="exodus-5.es.html#v5-17">17</a> en pasivo, <em>nirpim</em>, «ociosos». <span data-heb="ירפך|ארפך">La forma de promesa, con o sin el «abandonar» que la sigue, está en <strong>cinco versículos</strong> de la Biblia hebrea</span>: Deuteronomio 4:31, 31:6 y 31:8 y Josué 1:5 en estas páginas, y 1 Crónicas 28:20.""")
+
+_j18_dict('ketef',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-5">Joshua 18</a> (now on these pages) is where the word is thickest: <span data-heb="כתף">it stands in <strong>eight verses</strong> of the book of Joshua</span>, three in Judah&rsquo;s border (15:8, 10, 11) and five in Benjamin&rsquo;s (18:12, 13, 16, 18, 19), every one a border landmark &mdash; the shoulder of Jericho, of Luz, of the Jebusite, of the Arabah and of Beth-hoglah. <a href="deuteronomy-33.html#v33-12">Deuteronomy 33:12</a> blesses Benjamin in the same noun, &lsquo;between his shoulders he dwells&rsquo;; whether the surveyor heard that the text does not say, and Rashi reads the blessing as the Temple on Benjamin&rsquo;s ridge.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-5">Josué 18</a> (ya en estas páginas) es donde la palabra se espesa: <span data-heb="כתף">está en <strong>ocho versículos</strong> del libro de Josué</span>, tres en el límite de Judá (15:8, 10, 11) y cinco en el de Benjamín (18:12, 13, 16, 18, 19), todos hitos de frontera &mdash;el hombro de Jericó, de Luz, del jebuseo, del Arabá y de Bet-hogla. <a href="deuteronomy-33.es.html#v33-12">Deuteronomio 33:12</a> bendice a Benjamín con el mismo sustantivo, «entre sus hombros habita»; si el agrimensor lo oyó, el texto no lo dice, y Rashi lee la bendición como el templo en la cresta de Benjamín.""")
+
+_j18_dict('machaneh',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-3">Joshua 18:9</a> (now on these pages) is where this book&rsquo;s camp moves: <span data-heb="המחנה הגלגל">&lsquo;to the camp, Gilgal&rsquo; stands in <strong>four verses</strong> of the Hebrew Bible</span>, all in Joshua 9&ndash;10, and <span data-heb="המחנה שלה">&lsquo;to the camp, Shiloh&rsquo; in <strong>two</strong></span>, this one and Judges 21:12 (not yet on these pages), where the camp is what four hundred young women of Jabesh-gilead are brought to for the men of Benjamin.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-3">Josué 18:9</a> (ya en estas páginas) es donde se muda el campamento de este libro: <span data-heb="המחנה הגלגל">«al campamento, Gilgal» está en <strong>cuatro versículos</strong> de la Biblia hebrea</span>, todos en Josué 9&ndash;10, y <span data-heb="המחנה שלה">«al campamento, Siló» en <strong>dos</strong></span>, este y Jueces 21:12 (todavía no en estas páginas), donde el campamento es adonde llevan a cuatrocientas jóvenes de Jabes de Galaad para los hombres de Benjamín.""")
+
+_j18_dict('nachalah',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-3">Joshua 18:7</a> (now on these pages) gives the Levite a third formula, &ldquo;the priesthood of Jehovah is his inheritance&rdquo; (the singular again, as at Deuteronomy 18:2), and says of Gad, Reuben and half of Manasseh, as Numbers 34:14&ndash;15 and Joshua 13:8 do, that they have <em>taken</em> theirs.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-3">Josué 18:7</a> (ya en estas páginas) da al levita una tercera fórmula, «el sacerdocio de Jehová es su herencia» (otra vez el singular, como en Deuteronomio 18:2), y dice de Gad, Rubén y media tribu de Manasés, como Números 34:14&ndash;15 y Josué 13:8, que han <em>tomado</em> la suya.""")
+
+# -- encyclopedia: new entries
+ENCYCLOPEDIA.append(dict(slug="beth-hoglah", name="Beth-hoglah", kind="place", aliases=["Beth-hoglah", "Beth Hoglah", "Bethhoglah"],
+    coords=(31.8203, 35.5019, 0.3), approx=True,
+    modern="Probably near Deir Hajla and 'Ein Hajla, west of the Jordan near Jericho, West Bank",
+    refs=[("Joshua", 15, 6), ("Joshua", 18, 19), ("Joshua", 18, 21)],
+    videos=[],
+    desc="""A town on the line between Judah and Benjamin, near where the Jordan runs into the Salt Sea. Judah&rsquo;s northern border &ldquo;went up to Beth-hoglah&rdquo; (<a href="joshua-15.html#v15-6">Joshua 15:6</a>, now on these pages), Benjamin&rsquo;s southern border passes &ldquo;the shoulder of Beth-hoglah on the north&rdquo; (<a href="joshua-18.html#v18-19">18:19</a>, now on these pages), and the town itself stands second on Benjamin&rsquo;s first list of towns (<a href="joshua-18.html#v18-21">18:21</a>). ⭐ <span data-heb="חגלה">The letters <em>Hoglah</em> stand in <strong>seven verses</strong> of the Hebrew Bible</span>, and four of them are a woman&rsquo;s name: Hoglah, one of Zelophehad&rsquo;s five daughters (<a href="numbers-26.html#v26-33">Numbers 26:33</a>, <a href="numbers-27.html#v27-1">27:1</a>, <a href="numbers-36.html#v36-11">36:11</a>, <a href="joshua-17.html#v17-3">Joshua 17:3</a>). ⚠ Whether the town is named for the woman, or the two share a word, the text does not say. The name is usually taken to mean a partridge, and the Arabic names of the region keep it: the spring is 'Ein Hajla, &lsquo;spring of the partridge&rsquo;, and the monastery beside it Deir Hajla, which is why the site is placed there. The identification rests on that echo of the name, so the coordinates here are a guess."""))
+
+# -- encyclopedia: extended entries
+_j18_ency('shiloh',
+    old_en="here the tabernacle and the ark of the covenant stood (Joshua 18:1)",
+    new_en='here the tent of meeting was settled (<a href="joshua-18.html#v18-1">Joshua 18:1</a>, now on these pages) and the ark stood in Eli\'s day (1 Samuel 3:3, not yet on these pages)',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-1">Joshua 18</a> (now on these pages) is where Shiloh first appears as a town: the congregation assembles and the tent of meeting is settled here (v1), the three men bring the written survey to the camp here (v9), and Joshua throws the lot for the last seven tribes here before Jehovah (vv6, 8, 10). ⚠ That chapter names the tent of meeting and not the ark; the ark is at Shiloh in 1 Samuel (3:3; 4:3&ndash;4, not yet on these pages). Rashi, on Deuteronomy 33:12, counts the Tabernacle at Shiloh as Joseph&rsquo;s sanctuary, beside the Temple in Benjamin&rsquo;s land.""",
+    old_es="aquí estuvieron el tabernáculo y el arca del pacto (Josué 18:1)",
+    new_es='aquí se asentó la tienda de reunión (<a href="joshua-18.es.html#v18-1">Josué 18:1</a>, ya en estas páginas) y en tiempos de Elí estaba el arca (1 Samuel 3:3, todavía no en estas páginas)',
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-1">Josué 18</a> (ya en estas páginas) es donde Silo aparece por primera vez como pueblo: aquí se reúne la congregación y se asienta la tienda de reunión (v1), aquí traen los tres hombres el levantamiento escrito al campamento (v9), y aquí echa Josué la suerte para las últimas siete tribus delante de Jehová (vv6, 8, 10). ⚠ Ese capítulo nombra la tienda de reunión y no el arca; el arca está en Silo en 1 Samuel (3:3; 4:3&ndash;4, todavía no en estas páginas). Rashi, sobre Deuteronomio 33:12, cuenta el tabernáculo de Silo como el santuario de José, junto al templo en la tierra de Benjamín.""")
+
+_j18_ency('benjamin',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-4">Joshua 18</a> (now on these pages) is where the tribe gets its land: the first of the seven lots thrown at Shiloh comes up for Benjamin (v11) and falls between Judah and the house of Joseph &mdash; the two whose tribes stood either side of the boy in Genesis 44. The border runs from the Jordan at Jericho west past Beth-aven and Luz and down past Lower Beth-horon to Kiriath-jearim, then back east along Judah&rsquo;s northern line, through the Valley of Hinnom, past the shoulder of the Jebusite and En-rogel, and down to the Salt Sea; the tribe&rsquo;s twenty-six towns (vv21&ndash;28) include Jericho, Bethel, Gibeon, Beeroth, Ramah and Jerusalem. Moses&rsquo; blessing had already set Benjamin &ldquo;between his shoulders&rdquo; (<a href="deuteronomy-33.html#v33-12">Deuteronomy 33:12</a>), the noun the surveyor uses five times of this border.""")
+ENCYCLOPEDIA_ES["benjamin"] = ("Benjamín",
+    """El duodécimo y último hijo de Jacob, el segundo de Raquel: nació en el camino cerca de Belén mientras ella moría de parto (35:16-18). Su nombre al morir fue BEN-ONÍ, «hijo de mi dolor»; su padre lo cambió por BENJAMÍN, «hijo de la diestra» (la mano de la fuerza y del favor, o «hijo del sur»): el único hijo del Génesis cuyo nombre cambia un padre, un padre que no deja que el último hijo de su amada esposa cargue con su pena toda la vida. Hermano de padre y madre de JOSÉ, se vuelve la prenda y el eje de la historia de José: el hijo que Jacob no soporta enviar a Egipto, la copa escondida en su saco, la prueba que quiebra a los hermanos (caps. 42-45). Su tribu da a Israel su primer rey, Saúl, y al apóstol Pablo («de la tribu de Benjamín», Filipenses 3:5); el lecho de muerte de Jacob lo llama «lobo rapaz» (49:27). ⭐ <a href="joshua-18.es.html#n18-4">Josué 18</a> (ya en estas páginas) es donde la tribu recibe su tierra: la primera de las siete suertes echadas en Silo sube para Benjamín (v11) y cae entre Judá y la casa de José &mdash;las dos cuyas tribus estuvieron a ambos lados del muchacho en Génesis 44. El límite va desde el Jordán junto a Jericó hacia el occidente, pasa por Bet-avén y Luz y baja junto a Bet-horón la de abajo hasta Quiriat-jearim, y luego vuelve al oriente por la línea norte de Judá, por el valle de Hinom, junto al hombro del jebuseo y En-rogel, y baja hasta el mar Salado; los veintiséis pueblos de la tribu (vv21&ndash;28) incluyen Jericó, Betel, Gabaón, Beerot, Ramá y Jerusalén. La bendición de Moisés ya había puesto a Benjamín «entre sus hombros» (<a href="deuteronomy-33.es.html#v33-12">Deuteronomio 33:12</a>), el sustantivo que el agrimensor usa cinco veces de este límite.""")
+
+_j18_ency('bethel',
+    old_en="the one of three Hebrew occurrences of this directional form that does not.",
+    new_en='the one of the three Hebrew occurrences of this directional form (Genesis 35:6, Joshua 16:2, 18:13) that does not. <a href="joshua-18.html#v18-13">Joshua 18:13</a> (now on these pages) is the second to add the gloss, &lsquo;that is, Bethel&rsquo;, runs Benjamin&rsquo;s northern border along the shoulder of Luz, and counts Bethel among Benjamin&rsquo;s own towns (18:22).',
+    old_es="la única de tres apariciones hebreas de esta forma direccional que no lo hace.",
+    new_es='la única de las tres apariciones hebreas de esta forma direccional (Génesis 35:6, Josué 16:2, 18:13) que no lo hace. <a href="joshua-18.es.html#v18-13">Josué 18:13</a> (ya en estas páginas) es la segunda en añadir la glosa, «esa es Betel», lleva el límite norte de Benjamín por el hombro de Luz, y cuenta Betel entre los pueblos propios de Benjamín (18:22).')
+
+_j18_ency('beth-aven',
+    old_en="(Joshua 18:12; 1 Samuel 13:5; 14:23, none yet on these pages)",
+    new_en='(<a href="joshua-18.html#v18-12">Joshua 18:12</a>, now on these pages; 1 Samuel 13:5; 14:23, not yet on these pages)',
+    old_es="(Josué 18:12; 1 Samuel 13:5; 14:23, ninguno todavía en estas páginas)",
+    new_es='(<a href="joshua-18.es.html#v18-12">Josué 18:12</a>, ya en estas páginas; 1 Samuel 13:5; 14:23, todavía no en estas páginas)')
+
+_j18_ency('jebusites',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-6">Joshua 18:28</a> (now on these pages) lists &ldquo;the Jebusite &mdash; that is Jerusalem&rdquo; among Benjamin&rsquo;s towns, while <a href="joshua-15.html#v15-63">15:63</a> leaves the Jebusites with Judah and <a href="judges-1.html#v21">Judges 1:21</a> with Benjamin: the book keeps all three. The border walked at 18:16 passes &ldquo;the shoulder of the Jebusite&rdquo; on the south.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-6">Josué 18:28</a> (ya en estas páginas) enumera «el jebuseo &mdash;esa es Jerusalén» entre los pueblos de Benjamín, mientras que <a href="joshua-15.es.html#v15-63">15:63</a> deja a los jebuseos con Judá y <a href="judges-1.es.html#v21">Jueces 1:21</a> con Benjamín: el libro conserva las tres. El límite que se recorre en 18:16 pasa por «el hombro del jebuseo» por el sur.""")
+
+_j18_ency('kiriath-jearim',
+    add_en=""" ⭐ <a href="joshua-18.html#n18-4">Joshua 18:14&ndash;15</a> (now on these pages) uses it as the corner where Benjamin&rsquo;s western border turns and its southern one begins, &ldquo;a city of the sons of Judah&rdquo;; Judah&rsquo;s own list (<a href="joshua-15.html#v15-60">15:60</a>) counts it, and whether the bare &ldquo;Kiriath&rdquo; that closes Benjamin&rsquo;s list at 18:28 is the same town the text does not say.""",
+    add_es=""" ⭐ <a href="joshua-18.es.html#n18-4">Josué 18:14&ndash;15</a> (ya en estas páginas) la usa como la esquina donde el límite occidental de Benjamín gira y empieza el meridional, «ciudad de los hijos de Judá»; la propia lista de Judá (<a href="joshua-15.es.html#v15-60">15:60</a>) la cuenta, y si el «Quiriat» escueto que cierra la lista de Benjamín en 18:28 es el mismo pueblo, el texto no lo dice.""")
+
+_j18_ency('zelophehad',
+    add_en=""" ⭐ A third daughter&rsquo;s name survives on the map: <em>Hoglah</em> is the spelling of Beth-hoglah, the border town on the line between Judah and Benjamin (<a href="joshua-15.html#v15-6">Joshua 15:6</a>; <a href="joshua-18.html#n18-6">18:19, 21</a>, now on these pages) &mdash; the letters stand in seven verses, four of them hers.""",
+    add_es=""" ⭐ El nombre de una tercera hija sobrevive en el mapa: <em>Hoglá</em> es la grafía de Bet-hogla, el pueblo de frontera en la línea entre Judá y Benjamín (<a href="joshua-15.es.html#v15-6">Josué 15:6</a>; <a href="joshua-18.es.html#n18-6">18:19, 21</a>, ya en estas páginas) &mdash;las letras están en siete versículos, cuatro de ellos suyos.""")
+
+_j18_ency('en-rogel',
+    add_en=""" ⭐ It is a corner of both surveys of the Judah&ndash;Benjamin line: Judah&rsquo;s northern border ends at it (<a href="joshua-15.html#v15-7">Joshua 15:7</a>), and Benjamin&rsquo;s southern border passes it going down the Valley of Hinnom (<a href="joshua-18.html#v18-16">18:16</a>, now on these pages).""")
+ENCYCLOPEDIA_ES["en-rogel"] = ("En-rogel",
+    """Un manantial en la confluencia de los valles del Cedrón y de Hinom, debajo de Jerusalén y fuera de ella; se lo identifica por lo general con Bir Ayyub, «el pozo de Job». Marca el límite entre Judá y Benjamín (Josué 15:7), y es donde esperaron los espías de David durante la rebelión de Absalón (2 Samuel 17:17). En 1 Reyes 1 Adonías celebra aquí su banquete de coronación, junto a la Piedra de Zohélet, fuera de la vista de la ciudad, que es justo la diferencia entre su pretensión y la de Salomón. ⭐ Es una esquina de los dos levantamientos de la línea entre Judá y Benjamín: el límite norte de Judá termina en ella (<a href="joshua-15.es.html#v15-7">Josué 15:7</a>), y el límite sur de Benjamín pasa por ella al bajar por el valle de Hinom (<a href="joshua-18.es.html#v18-16">18:16</a>, ya en estas páginas).""")
+
+ENCYCLOPEDIA_ES["beth-hoglah"] = ("Bet-hogla",
+    """Un pueblo en la línea entre Judá y Benjamín, cerca de donde el Jordán desemboca en el mar Salado. El límite norte de Judá «subía a Bet-hogla» (<a href="joshua-15.es.html#v15-6">Josué 15:6</a>, ya en estas páginas), el límite sur de Benjamín pasa por «el hombro de Bet-hogla, por el norte» (<a href="joshua-18.es.html#v18-19">18:19</a>, ya en estas páginas), y el pueblo mismo está en segundo lugar en la primera lista de pueblos de Benjamín (<a href="joshua-18.es.html#v18-21">18:21</a>). ⭐ <span data-heb="חגלה">Las letras de <em>Hoglá</em> están en <strong>siete versículos</strong> de la Biblia hebrea</span>, y cuatro de ellos son nombre de mujer: Hoglá, una de las cinco hijas de Zelofehad (<a href="numbers-26.es.html#v26-33">Números 26:33</a>, <a href="numbers-27.es.html#v27-1">27:1</a>, <a href="numbers-36.es.html#v36-11">36:11</a>, <a href="joshua-17.es.html#v17-3">Josué 17:3</a>). ⚠ Si el pueblo se llama así por la mujer, o si los dos comparten una palabra, el texto no lo dice. Al nombre se lo suele tomar por «perdiz», y los nombres árabes de la región lo conservan: el manantial es 'Ein Hajla, «manantial de la perdiz», y el monasterio junto a él Deir Hajla, que es la razón de que el sitio se sitúe allí. La identificación descansa en ese eco del nombre, de modo que las coordenadas de aquí son una conjetura.""")
+
+# -- chronology strip
+CHRON_CHAPTERS["josh18"] = dict(era="exodus",
+    when="The seven tribes still without land are asked how long they will go on being slack about taking it. The congregation gathers at Shiloh, where the tent of meeting is settled; three men from each tribe are sent to walk the land and write it up by cities in seven portions in a book; and Joshua throws the lot for them at Shiloh before Jehovah. Benjamin's comes up first, between Judah and the house of Joseph. Its border is walked from the Jordan at Jericho west past Luz and Beth-horon to Kiriath-jearim, then back east along Judah's own northern line past the shoulder of the Jebusite and En-rogel to the Salt Sea, and its twenty-six towns follow in lists of twelve and fourteen, Jerusalem among them.",
+    clock="A legal/administrative chapter like 13-17, giving no date or duration of its own: the survey is a walk across the whole land and back, and the book does not say how long it took. It opens on the condition Numbers 32:22 set for the eastern tribes' release, the land 'subdued', and it moves the camp from Gilgal to Shiloh, where the remaining lots and the tent of meeting (19:51) stay. The other six lots follow in chapter 19. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
+CHAPTER_ART["josh18"] = [dict(
+    file="josh18-bowles-1760-map-of-canaan-twelve-tribes.jpg",
+    title="A Map of the Land of Canaan, or Holy Land, as divided among the Twelve Tribes",
+    title_es="Mapa de la tierra de Canaán, o Tierra Santa, tal como fue dividida entre las doce tribus",
+    artist="John Bowles, printer and publisher, London",
+    artist_es="John Bowles, impresor y editor, Londres",
+    year="1760",
+    location="Hand-coloured engraved map, London; Library of Congress (as recorded on Wikimedia Commons)",
+    location_es="Mapa grabado y coloreado a mano, Londres; Biblioteca del Congreso de los EE. UU. (según el registro de Wikimedia Commons)",
+    alt="A hand-coloured eighteenth-century map of the Land of Canaan filling the right half of the sheet, with the Mediterranean on the left and the narrow Dead Sea running down the east side. The land is cut into pastel tribal territories, each lettered with its name, from Asher and Naphtali at the top to Judah and Simeon at the bottom; Benjamin is a yellow wedge in the middle, between Judah and Ephraim, running down to Jericho and the Dead Sea. A boxed inset at the upper left shows the forty years in the wilderness, and an ornamental cartouche at the lower left carries the title.",
+    note="&#9888; This is an eighteenth-century reconstruction, printed in London about 1760, and the map draws a division the chapter itself never draws: in the Hebrew the three men <em>write</em> the land up by cities, in seven portions, in a book (v9), and the border descriptions that follow are lists of landmarks, not lines. The engraver has done what map-makers always do with such lists and turned them into outlines. Benjamin is the narrow band in the middle, between Judah and Ephraim, running down to Jericho and the Salt Sea, which is where verses 11&ndash;20 put it; the legend says the Roman figures mark each tribe&rsquo;s several divisions as Joshua distributed them.",
+    note_es="&#9888; Es una reconstrucci&oacute;n del siglo XVIII, impresa en Londres hacia 1760, y el mapa dibuja una divisi&oacute;n que el cap&iacute;tulo mismo nunca dibuja: en el hebreo los tres hombres <em>escriben</em> la tierra por ciudades, en siete porciones, en un libro (v9), y las descripciones de frontera que siguen son listas de hitos, no l&iacute;neas. El grabador ha hecho con esas listas lo que siempre hacen los cart&oacute;grafos: convertirlas en contornos. Benjam&iacute;n es la franja estrecha del centro, entre Jud&aacute; y Efra&iacute;n, que baja hasta Jeric&oacute; y el mar Salado, que es donde la ponen los vers&iacute;culos 11&ndash;20; la leyenda dice que las cifras romanas marcan las divisiones de cada tribu tal como las distribuy&oacute; Josu&eacute;.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:A_map_of_the_Land_of_Canaan_or_Holy_Land,_as_divided_among_the_twelve_tribes_which_God_promised_to_Abraham_and_his_seed_LOC_2016586537.jpg",
+)]
