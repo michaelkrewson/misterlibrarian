@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,26 +7,15 @@
       "label": "The world",
       "items": [
         {
-          "text": "Russia told the World Health Organization on October 6 that no case of plague has been recorded in Irkutsk, with Rospotrebnadzor now attributing lab worker Darya Shipilova's October 2 death to \"pneumonia of unknown etiology\" that first presented as a respiratory infection — a reversal of the plague diagnosis Russian media had reported days earlier.",
-          "href": "siberia-plague-death-what-we-know.html",
-          "source_href": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805",
+          "text": "Ukrainian President Volodymyr Zelensky said October 1 that Ukraine used its domestically built FP-7 ballistic missile — made by the Ukrainian firm Fire Point, with a reported range near 200–250 km and a roughly 150 kg warhead — in combat for the first time, without disclosing the target or location.",
+          "href": "",
+          "source_href": "https://www.militarytimes.com/industry/techwatch/2026/10/01/ukraine-deploys-fp-7-tactical-ballistic-missile-in-combat-for-first-time-zelenskyy-says/",
           "breaking": false
         },
         {
-          "text": "Brent crude jumped roughly 5% to about $105 a barrel Thursday on reports the U.S. is weighing large-scale military operations against Iran in the coming weeks, even as a tanker off Qatar's coast was struck by multiple projectiles and Iran and Oman separately announced an agreement on safe transit routes through the Strait of Hormuz.",
-          "href": "the-global-oil-crisis-where-things-stand.html",
-          "source_href": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html",
-          "breaking": false
-        }
-      ]
-    },
-    {
-      "label": "Business / macro & markets",
-      "items": [
-        {
-          "text": "The Bureau of Labor Statistics' September jobs report, released Friday, showed nonfarm payrolls grew by just 29,000 and the unemployment rate ticked up to 4.2% from 4.1%, with July and August job growth revised down a combined 60,000 workers.",
+          "text": "OPEC+'s seven core members agreed October 4 to hold November crude output at September's levels, about 31.01 million barrels a day combined, continuing a pause after four straight months of production hikes as Strait of Hormuz disruptions keep actual exports below target.",
           "href": "",
-          "source_href": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+          "source_href": "https://opec.org/pr-detail/1891616-4-october-2026.html",
           "breaking": false
         }
       ]
@@ -35,20 +24,9 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin was trading around $82,357 Thursday morning, down further from the sub-$84,000 level it fell to Wednesday as the Hormuz-driven oil spike helped trigger roughly $550 million in leveraged crypto liquidations.",
+          "text": "Bitcoin fell below $81,000 on October 8 as Middle East-driven market stress pushed crypto liquidations past $1.1 billion in 24 hours per CoinGlass, before partially recovering to around $82,500 by Friday morning.",
           "href": "",
-          "source_href": "https://www.coindesk.com/business/2026/10/07/live-updates-bitcoin-slides-under-usd84-000-as-usd550-million-in-bets-get-liquidated",
-          "breaking": false
-        }
-      ]
-    },
-    {
-      "label": "Technology",
-      "items": [
-        {
-          "text": "Federal prosecutors in Los Angeles arrested Greg Lui, owner of Earthmade Computer, on October 1 on charges of smuggling more than $300 million worth of Nvidia AI chips to China through Malaysia and Singapore using falsified export paperwork, following a September 29 indictment.",
-          "href": "",
-          "source_href": "https://cryptobriefing.com/california-man-arrested-nvidia-chip-smuggling-china/",
+          "source_href": "https://news.bitcoin.com/market-updates/bitcoin-drops-below-81k-crypto-liquidations-top-1-billion/",
           "breaking": false
         }
       ]
@@ -57,9 +35,20 @@
       "label": "Science",
       "items": [
         {
-          "text": "The 2026 Nobel Prize in Physics went to Francis Halzen, an 82-year-old University of Wisconsin–Madison physicist, for building the IceCube Neutrino Observatory — a cubic kilometer of Antarctic ice rigged with light sensors that caught the first high-energy neutrinos from outside the Milky Way.",
+          "text": "The 2026 Nobel Prize in Chemistry went jointly to Henri B. Kagan of Université Paris-Sud and Kenso Soai, 95, of Tokyo University of Science, announced October 7 \"for the discovery of non-linear effects and autocatalysis in asymmetric organic synthesis.\"",
           "href": "",
-          "source_href": "https://www.cnn.com/2026/10/06/science/nobel-prize-physics-francis-halzen-winner-intl",
+          "source_href": "https://www.nobelprize.org/prizes/chemistry/2026/",
+          "breaking": false
+        }
+      ]
+    },
+    {
+      "label": "Space",
+      "items": [
+        {
+          "text": "NASA's Crew-13 launched October 1 aboard SpaceX's Dragon capsule Grace, carrying commander Jessica Watkins, pilot Luke Delaney, and mission specialists Joshua Kutryk (Canada) and Sergey Teteryatnikov (Russia) for a roughly six-month ISS stay; Watkins becomes the first NASA astronaut to fly twice on a Dragon.",
+          "href": "",
+          "source_href": "https://www.opb.org/article/2026/10/01/nasa-s-crew-13-launches-to-the-international-space-station/",
           "breaking": false
         }
       ]
@@ -68,9 +57,20 @@
       "label": "Arts & culture",
       "items": [
         {
-          "text": "The 70th BFI London Film Festival opened October 7 at the Royal Festival Hall with the European premiere of Simon Stone's \"Elsinore,\" starring Andrew Scott and Olivia Colman, kicking off eleven days of 251 features, shorts and immersive works from 88 countries, including nine VR/AI/gaming projects in the festival's \"LFF Expanded\" strand.",
+          "text": "\"Verity\" opened atop the domestic box office last weekend with $32.6 million across 3,510 theaters, per The Numbers, with the Resident Evil reboot second at $12.5 million.",
           "href": "",
-          "source_href": "https://www.thelocationguide.com/industrynews/bfi-london-film-festival-unveils-2026-programme-spanning-global-talent-new-voices-and-immersive-production",
+          "source_href": "https://www.the-numbers.com/box-office-chart/weekend/2026/10/02",
+          "breaking": false
+        }
+      ]
+    },
+    {
+      "label": "Health & medicine",
+      "items": [
+        {
+          "text": "The FDA's priority-review decision on Merck and Daiichi Sankyo's ifinatamab deruxtecan, an antibody-drug conjugate for previously treated extensive-stage small-cell lung cancer backed by the Phase 2 IDeate-Lung01 trial, is due October 10.",
+          "href": "",
+          "source_href": "https://patientworthy.com/?p=3501463",
           "breaking": false
         }
       ]
