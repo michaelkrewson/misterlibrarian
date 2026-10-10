@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09 16:02 UTC",
+ "generated": "2026-10-10 01:38 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-10-09",
@@ -215,6 +215,28 @@
     "turnover_usd": 816000000000.0
    },
    {
+    "area": "India",
+    "flag": "🇮🇳",
+    "currency": "INR",
+    "source": "Reserve Bank of India — Weekly Statistical Supplement: \"Reserve Money: Components and Sources\" for M0, \"Money Stock: Components and Sources\" for M3 (M1 has no row of its own there — derived by summing that same table's own component rows: Currency with the Public + Demand Deposits with Banks + 'Other' Deposits with the RBI, the RBI's own textbook M1 definition). Not RBI's DBIE portal (a JS app with no confirmed keyless API) — these are separate, permanent, server-rendered WSS release pages, crawled for the latest release each time. No M2 published (needs post office savings-bank data RBI doesn't report on this cadence). ₹ Crore.",
+    "m0": 52781.42,
+    "m0_date": "Sep 30, 2026",
+    "usd_m0": 545.65719011682,
+    "m1": 82249.34,
+    "m1_date": "Sep 30, 2026",
+    "usd_m1": 850.2981494882663,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": 337664.75,
+    "m3_date": "Sep 30, 2026",
+    "usd_m3": 3490.7965470898375,
+    "broad_usd": 3490.7965470898375,
+    "broad_yoy_pct": null,
+    "volatility_pct": 5.227663245151137,
+    "turnover_usd": 182400000000.0
+   },
+   {
     "area": "Japan",
     "flag": "🇯🇵",
     "currency": "JPY",
@@ -279,6 +301,28 @@
     "broad_yoy_pct": 7.476084286448059,
     "volatility_pct": 5.462464146042508,
     "turnover_usd": 67199999999.99999
+   },
+   {
+    "area": "Sweden",
+    "flag": "🇸🇪",
+    "currency": "SEK",
+    "source": "Statistics Sweden (SCB) PxWebApi — table FM5001, the \"Outstanding money supply, SEK millions\" content code (as against the table's other content code, 12-month growth rate, which this board doesn't want); M1/M2/M3, sourced from Sveriges Riksbank. The same PxWebApi 1.0 software as Norway's SSB, but M1/M2/M3 live on their own \"Penningm\" dimension here rather than through ContentsCode directly, so this needed its own small provider (`scb_pxweb`) sharing the same underlying query helper. No M0/monetary-base table found on this API within reasonable effort, despite Sweden's own textbook M0 definition (banknotes and coins held by the public) being real and commonly cited elsewhere. SEK million.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 4162.753,
+    "m1_date": "2026M08",
+    "usd_m1": 417.71223007144573,
+    "m2": 5129.814,
+    "m2_date": "2026M08",
+    "usd_m2": 514.7521473870113,
+    "m3": 5184.7,
+    "m3_date": "2026M08",
+    "usd_m3": 520.2596933451072,
+    "broad_usd": 520.2596933451072,
+    "broad_yoy_pct": null,
+    "volatility_pct": 9.102858829377954,
+    "turnover_usd": null
    },
    {
     "area": "Singapore",
@@ -420,9 +464,9 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 122255.1131545028,
-  "n_resolved": 13,
-  "n_total": 18
+  "total_broad_usd_b": 126266.16939493775,
+  "n_resolved": 15,
+  "n_total": 20
  },
  "reserves_fx": {
   "rows": [
@@ -489,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1102329811628.4028
+    "usd": 1103532526788.638
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 454729683759.16534
+    "usd": 455225824096.3826
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 332338952184.0457
+    "usd": 332701556090.7094
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 330305883553.22974
+    "usd": 330666269246.76135
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 313499182871.81805
+    "usd": 313841231336.79083
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 311601652149.7231
+    "usd": 311941630282.4392
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 140959425069.90518
+    "usd": 141113221180.39877
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 119273359674.53516
+    "usd": 119403494844.95282
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 114665070778.01903
+    "usd": 114790177998.67055
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 86066572037.8748
+    "usd": 86160476393.80118
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 82949200137.29036
+    "usd": 83039703233.08083
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 78883062875.65848
+    "usd": 78969129545.18471
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 57468073297.73058
+    "usd": 57530774788.931816
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 56383770027.96208
+    "usd": 56445288472.159515
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 51911019040.16701
+    "usd": 51967657415.473785
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3633364719085.5273,
+  "total_usd": 3637328961714.3755,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4215.7001953125,
-  "price_as_of": "2026-10-09 16:01 UTC",
-  "world_market_value_usd": 29312105829560.62,
+  "price_usd_oz": 4220.2998046875,
+  "price_as_of": "2026-10-10 01:36 UTC",
+  "world_market_value_usd": 29344087287095.14,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -1959,26 +2003,26 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 82732.328125,
-  "market_cap_usd": 1662568182917.9688,
+  "price_usd": 82540.6484375,
+  "market_cap_usd": 1658729132814.209,
   "btc_rank": 12,
-  "volatility_pct": null,
-  "turnover_usd": null,
-  "broad_yoy_pct": 0.8178968189791374,
+  "volatility_pct": 36.68647094086902,
+  "turnover_usd": 25944197628.6817,
+  "broad_yoy_pct": 0.8178904596551847,
   "lineup": [
    {
-    "label": "Broad money — 13 economies with live data",
-    "usd": 122255113154502.8,
-    "note": "The 13 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 15 economies with live data",
+    "usd": 126266169394937.75,
+    "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 29312105829560.62,
+    "usd": 29344087287095.14,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1662568182917.9688,
+    "usd": 1658729132814.209,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
