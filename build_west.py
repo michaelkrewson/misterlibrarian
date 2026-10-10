@@ -99,7 +99,7 @@ BLURB = ("The Krewson family's four centuries in America — Croesen, Kroesen, K
          "Kreuso, Cruse, Krewson — from a cooper who landed at Breuckelen around 1660, "
          "through Staten Island, Bucks County, Ohio, Iowa and the Pacific. Non-fiction, "
          "read from the family's own record and the colonial church books, published a "
-         "chapter at a time by Michael V. Krewson.")
+         "chapter at a time by Mr. Librarian.")   # real name off the web too (2026-10-10, same call as AUTHOR)
 
 FRONT_DESC = ("A family's four centuries in America, from New Amsterdam to the Pacific — "
               "the Croesen / Kroesen / Krewson line, read from the documents, one chapter "
