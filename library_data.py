@@ -4810,6 +4810,12 @@ DICTIONARY = [
     ["pronoia", "pronoia", "&#960;&#961;&#972;&#957;&#959;&#953;&#945;", "pronoia",
      "PROVISION, FORETHOUGHT &mdash; care taken beforehand, from <em>pro</em>, &lsquo;before&rsquo;, and <em>noeō</em>, &lsquo;to perceive&rsquo;. It stands in <a href=\"romans-12.html#v12-17\">Romans 12:17</a>, &lsquo;take thought for what is good before all people&rsquo;, and in Romans 13:14, where the same care is forbidden in one direction: &lsquo;do not make provision for the flesh to stir up its desires&rsquo;. &#9888; The same care is turned to good in one verse and to the flesh in the next, and the translation keeps one English word, &lsquo;provision&rsquo;, so that the reader sees the two verses together.",
      ["Romans", 13, 14]],
+    ["proslambano", "proslambanō", "προσλαμβάνω", "proslambanō",
+     "TO TAKE TO ONESELF, TO WELCOME &mdash; from <em>pros</em>, &lsquo;to&rsquo;, and <em>lambanō</em>, &lsquo;to take.&rsquo; &#9888; The chapter uses it twice: the command to welcome the one who is weak in faith (<a href=\"romans-14.html#v14-1\">Romans 14:1</a>), and the act the command rests on, &lsquo;God has welcomed him&rsquo; (<a href=\"romans-14.html#v14-3\">14:3</a>). The same verb returns at Romans 15:7 (not yet on these pages), &lsquo;welcome one another, as Christ welcomed you.&rsquo; The reader is asked to do what God has already done, with the same word. Shelf at 14:1: KJV and ASV &lsquo;receive ye&rsquo;; NWT 2013 &lsquo;Welcome.&rsquo;",
+     ["Romans", 14, 1]],
+    ["blasphemeo", "blasphēmeō", "βλασφημέω", "blasphēmeō",
+     "TO SPEAK EVIL OF, TO SLANDER &mdash; from <em>blasphēmos</em>, &lsquo;speaking evil.&rsquo; In Romans 14:16 it is passive and imperative: &lsquo;do not let your good be spoken of as evil&rsquo; (<a href=\"romans-14.html#v14-16\">14:16</a>). &#9888; English has taken the word into talk about God, where &lsquo;blaspheme&rsquo; means to insult him. Here the object is the readers&rsquo; good, and the verb is what outsiders say about it. Shelf at 14:16: KJV and ASV &lsquo;evil spoken of&rsquo;; NWT 2013 &lsquo;spoken of as bad.&rsquo; None of the three prints &lsquo;blaspheme.&rsquo;",
+     ["Romans", 14, 16]],
 ]
 
 ENCYCLOPEDIA = [
@@ -35252,4 +35258,34 @@ CHAPTER_ART["rom13"] = [dict(
     note_es="&#9888; Romanos 13 no tiene una escena que pintar, y esta es la más cercana. A Jesús le preguntan si hay que pagar tributo al César; él pide ver la moneda, pregunta de quién es la imagen y dice que se dé al César lo que es del César (Mateo 22:21, en estas páginas). El cuadro muestra la pregunta de lo que se debe, que es la del versículo 7; no muestra el argumento del capítulo sobre la autoridad y la conciencia, que la carta hace sin imagen.",
     license="Public domain (Gem&auml;ldegalerie Alte Meister, Dresden; via Wikimedia Commons)",
     source_url="https://commons.wikimedia.org/wiki/File:The_Tribute_Money_(1516)_-_Tizian_(Gem%C3%A4ldegalerie_Alte_Meister,_Dresden).jpg",
+)]
+
+DICTIONARY_ES["proslambano"] = ("proslambanó", "TOMAR HACIA UNO MISMO, RECIBIR &mdash; de <em>pros</em>, «hacia», y <em>lambanō</em>, «tomar». &#9888; El capítulo lo usa dos veces: el mandato de recibir al que es débil en la fe (<a href=\"romans-14.es.html#v14-1\">Romanos 14:1</a>), y el acto en que se apoya el mandato, «porque Dios lo ha recibido» (<a href=\"romans-14.es.html#v14-3\">14:3</a>). El mismo verbo vuelve en Romanos 15:7 (todavía no en estas páginas): «reciban unos a otros, como también Cristo los recibió a ustedes». Al lector se le pide hacer lo que Dios ya hizo, con la misma palabra. TNM 1987 y TNM 2019 en 14:1: «reciban con gusto».")
+DICTIONARY_ES["blasphemeo"] = ("blasphēmeō", "HABLAR MAL DE, CALUMNIAR &mdash; de <em>blasphēmos</em>, «que habla mal». En Romanos 14:16 va en imperativo pasivo: «no sea, pues, que se hable mal de lo bueno que ustedes hacen» (<a href=\"romans-14.es.html#v14-16\">14:16</a>). &#9888; En castellano «blasfemar» ha pasado a significar insultar a Dios. Aquí el objeto es el bien de los lectores, y el verbo es lo que dicen los de afuera de ese bien.")
+
+# ---- Romans 14 (EN + ES): the forward claims on Romans 14:9 now point at the page
+_swap7('kyrieuo',
+    'Romans 14:9 (the second not yet on these pages)',
+    '<a href="romans-14.html#v14-9">Romans 14:9</a>',
+    'Romanos 14:9 (este último todavía no en estas páginas)',
+    '<a href="romans-14.es.html#v14-9">Romanos 14:9</a>')
+
+CHRON_CHAPTERS["rom14"] = dict(era='apostolic',
+    when='''The same letter, the same dictation. Chapter 13 closed with the command to put on the Lord Jesus Christ and to make no provision for the flesh; chapter 14 turns to the life of the congregation in Rome, where some eat only vegetables and some keep one day above another. It is the chapter where the letter turns most directly to a dispute inside the congregation, and its answer is one sentence about the kingdom: it is not eating and drinking, but righteousness and peace and joy in the holy spirit.''',
+    clock='''Undated by the text, continuous with chapters 1 to 13. The chapter names no date and no event. Its clock is the one set at the end of chapter 13, that the night has gone far and the day is near, and its own last word is that whatever is not from faith is sin.''')
+
+CHAPTER_ART["rom14"] = [dict(
+    file="rom14-last-judgment-krodel.jpg",
+    title="Wolfgang Krodel, The Last Judgment (1530)",
+    title_es="Wolfgang Krodel, El Juicio Final (1530)",
+    artist="Wolfgang Krodel",
+    artist_es="Wolfgang Krodel",
+    year="1530",
+    location="Painting, dated 1530",
+    location_es="Pintura, fechada en 1530",
+    alt="A painting of the Last Judgment: Christ, in a halo above the clouds, raises his arms as judge; the blessed are gathered on his left and the damned are driven down on his right, and two banners above him carry German verses from Matthew 25.",
+    note="&#9888; Romans 14 has no scene to paint, and this is the nearest one: the seat of God before which every person gives an account (verses 10&ndash;12). The painting is Matthew 25, the separation of the blessed from the cursed, and it does not show the chapter&rsquo;s argument, which is about a brother&rsquo;s conscience and the food on a table. The banners are in German, and the reference to Matthew 25 is written on them.",
+    note_es="&#9888; Romanos 14 no tiene una escena que pintar, y esta es la más cercana: el tribunal de Dios ante el que cada persona da cuenta (versículos 10&ndash;12). El cuadro es Mateo 25, la separación de los benditos y los malditos, y no muestra el argumento del capítulo, que trata de la conciencia del hermano y de la comida sobre la mesa. Las cartelas están en alemán, y en ellas se escribe la referencia a Mateo 25.",
+    license="Public domain (via Wikimedia Commons)",
+    source_url="https://commons.wikimedia.org/wiki/File:Krodel_Last_Judgment.jpg",
 )]
