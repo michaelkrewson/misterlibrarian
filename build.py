@@ -1550,7 +1550,12 @@ def verse_anchor(book, ch, v):
     a broken chip on the Job 1 page and no chip at all on the Lamentations
     side (the injector's `content.find()` just came up empty and skipped it).
     Same bug was already latent for every citation into Lamentations 2."""
-    return f"v{v}" if ch == 1 or book == "Lamentations" else f"v{ch}-{v}"
+    return f"v{v}" if ch == 1 or book == "Lamentations" or (book, ch) in _BARE_VERSE_IDS else f"v{ch}-{v}"
+
+
+# Chapters past the first whose source markup also uses bare vN ids (found by a
+# site-wide link check, 2026-10-10: Numbers 30).
+_BARE_VERSE_IDS = {("Numbers", 30)}
 
 
 def verse_url(book, ch, v):
