@@ -35295,3 +35295,72 @@ CHRON_CHAPTERS["rom15"] = dict(era='apostolic',
     when='The same letter, the same dictation, still from Corinth. Chapter 14 ended on faith and the sentence that whatever is not from faith is sin; chapter 15 begins with the strong bearing the weaknesses of the weak, then Paul turns to himself: a servant of Christ to the nations, hindered for years from coming to Rome, now on his way to Jerusalem with a gift from Macedonia and Achaia, and planning from there to go on to Spain.',
     clock='Undated by the text, continuous with chapters 1 to 14. The chapter names no date and no event that fixes one. Its own clock is the journey: the next step is Jerusalem with the collection, and after that Paul plans to come to Rome and go on to Spain.')
 ART_SKIPPED['rom15'] = ("Searched Wikimedia Commons on 2026-10-10 for Paul and the collection for Jerusalem; the hits were scanned books, and no public-domain painting of this chapter's scene turned up.")
+
+
+# --- Romans 16 (people, a term, and the Spanish twins; see the Romans 16 panel) ---
+DICTIONARY.append(("synergos", "synergos", "συνεργός", "synergos",
+    "A FELLOW WORKER &mdash; someone who labors alongside another, from <em>syn-</em>, together, and <em>ergon</em>, work. "
+    "Paul gives the title to Prisca and Aquila (<a href=\"romans-16.html#v16-3\">Romans 16:3</a>), to Urbanus (<a href=\"romans-16.html#v16-9\">16:9</a>) "
+    "and to Timothy (<a href=\"romans-16.html#v16-21\">16:21</a>), and it is the word of shared labor, not of rank. "
+    "The root <em>ergon</em> is the one of the &ldquo;works&rdquo; of the law that the letter argues over (<a href=\"romans-3.html\">Romans 3</a>); here it names what the readers share with Paul.", ("Romans", 16, 3)))
+
+ENCYCLOPEDIA.extend([
+  dict(slug="phoebe", name="Phoebe", kind="person", aliases=["Phoebe"],
+    refs=[("Romans", 16, 1), ("Romans", 16, 2)], videos=[],
+    desc="A servant of the congregation at <a href=\"encyclopedia.html#cenchreae\">Cenchreae</a>, the eastern port of <a href=\"encyclopedia.html#corinth\">Corinth</a>, whom Paul commends to the Romans (<a href=\"romans-16.html#v16-1\">Romans 16:1</a>) and who has been &ldquo;a patron of many, and of me myself&rdquo; (<a href=\"romans-16.html#v16-2\">16:2</a>). The letter is most often read as one she carried to Rome. Her name is the feminine form of <em>Phoibos</em>, &ldquo;bright,&rdquo; the epithet of Apollo. It appears in the New Testament only here."),
+  dict(slug="andronicus", name="Andronicus", kind="person", aliases=["Andronicus"],
+    refs=[("Romans", 16, 7)], videos=[],
+    desc="Paul&rsquo;s relative and fellow prisoner, &ldquo;outstanding among the apostles,&rdquo; who was in Christ before Paul (<a href=\"romans-16.html#v16-7\">Romans 16:7</a>). The verse names him with <a href=\"encyclopedia.html#junia\">Junia</a>. The name appears in the New Testament only here."),
+  dict(slug="junia", name="Junia", kind="person", aliases=["Junia", "Junias"],
+    refs=[("Romans", 16, 7)], videos=[],
+    desc="The name in <a href=\"romans-16.html#v16-7\">Romans 16:7</a> is the accusative <em>Iounian</em>, which could come from a man&rsquo;s name, Junias, or a woman&rsquo;s, Junia. The Greek does not decide. The KJV and NIV read Junia; the NWT&nbsp;1984 and the TLB read Junias. This project reports the split rather than voting on it. Paul calls the pair <a href=\"encyclopedia.html#andronicus\">Andronicus</a> and Junia &ldquo;outstanding among the apostles,&rdquo; and says they were in Christ before him. The name appears in the New Testament only here."),
+  dict(slug="epaenetus", name="Epaenetus", kind="person", aliases=["Epaenetus"],
+    refs=[("Romans", 16, 5)], videos=[],
+    desc="Paul&rsquo;s beloved, whom he calls &ldquo;the firstfruits of Asia for Christ&rdquo; (<a href=\"romans-16.html#v16-5\">Romans 16:5</a>), that is, the first convert in that province, in his own words. The name appears in the New Testament only here. The KJV reads &ldquo;Achaia&rdquo; instead, and the Spanish RV&nbsp;1909 and RV60 read &ldquo;Acaya&rdquo;, while the NVI and the TNM&nbsp;2019 read &ldquo;Asia&rdquo;."),
+  dict(slug="tertius", name="Tertius", kind="person", aliases=["Tertius"],
+    refs=[("Romans", 16, 22)], videos=[],
+    desc="The scribe who wrote the letter at Paul&rsquo;s dictation and adds his own greeting: &ldquo;I, Tertius, who wrote this letter, greet you in the Lord&rdquo; (<a href=\"romans-16.html#v16-22\">Romans 16:22</a>). The name is Latin, meaning &ldquo;the third.&rdquo; It appears in the New Testament only here."),
+  dict(slug="aristobulus", name="Aristobulus", kind="person", aliases=["Aristobulus"],
+    refs=[("Romans", 16, 10)], videos=[],
+    desc="The name of a household in Rome, not of a man Paul greets by name: &ldquo;Greet those of the household of Aristobulus&rdquo; (<a href=\"romans-16.html#v16-10\">Romans 16:10</a>). The Greek phrase <em>tōn ek</em>, &ldquo;those of,&rdquo; leaves open whether Aristobulus himself is a believer, has died, or lives elsewhere. Some writers and commentators place a man of this name, of the Herodian family, in Rome at this period; that identification is reported here and not checked, and the verse does not make it."),
+  dict(slug="narcissus", name="Narcissus", kind="person", aliases=["Narcissus"],
+    refs=[("Romans", 16, 11)], videos=[],
+    desc="A household named in <a href=\"romans-16.html#v16-11\">Romans 16:11</a>, &ldquo;those of the household of Narcissus who are in the Lord,&rdquo; with no head named. Ancient historians know a freedman named Narcissus at the court of the emperor Claudius; that is reported here and not checked, and the verse does not say whether this is his household."),
+])
+
+DICTIONARY_ES["synergos"] = ("synergos", "UN COLABORADOR &mdash; el que trabaja al lado de otro, de <em>syn-</em>, con, y <em>ergon</em>, obra. "
+    "Pablo lo da a Prisca y Aquila (<a href=\"romans-16.es.html#v16-3\">Romanos 16:3</a>), a Urbano (<a href=\"romans-16.es.html#v16-9\">16:9</a>) y a Timoteo (<a href=\"romans-16.es.html#v16-21\">16:21</a>). "
+    "Es una palabra de trabajo compartido, no de rango. La raíz <em>ergon</em> es la de las «obras» de la ley sobre las que discute la carta (<a href=\"romans-3.es.html\">Romanos 3</a>); aquí nombra lo que los lectores comparten con Pablo.")
+
+ENCYCLOPEDIA_ES.update({
+  "phoebe": ("Febe", "Sierva de la congregación de <a href=\"enciclopedia.html#cenchreae\">Cencreas</a>, el puerto oriental de <a href=\"enciclopedia.html#corinth\">Corinto</a>, a quien Pablo recomienda a los romanos (<a href=\"romans-16.es.html#v16-1\">Romanos 16:1</a>) y que ha sido «protectora de muchos, y de mí mismo» (<a href=\"romans-16.es.html#v16-2\">16:2</a>). Lo más común es leer la carta como la que ella llevó a Roma. Su nombre es el femenino de <em>Phoibos</em>, «brillante», el epíteto de Apolo. Aparece en el Nuevo Testamento solo aquí."),
+  "andronicus": ("Andrónico", "Pariente de Pablo y compañero de prisión, «notable entre los apóstoles», que estaba en Cristo antes que Pablo (<a href=\"romans-16.es.html#v16-7\">Romanos 16:7</a>). El versículo lo nombra junto a <a href=\"enciclopedia.html#junia\">Junia</a>. El nombre aparece en el Nuevo Testamento solo aquí."),
+  "junia": ("Junia", "El nombre de <a href=\"romans-16.es.html#v16-7\">Romanos 16:7</a> es el acusativo <em>Iounian</em>, que puede venir de un nombre de hombre, Junias, o de mujer, Junia. El griego no lo decide. La RV60 y la NVI leen Junias; el estante se divide, y esta página lo registra sin votar. Pablo llama a la pareja, junto con <a href=\"enciclopedia.html#andronicus\">Andrónico</a>, «notables entre los apóstoles», y dice que estaban en Cristo antes que él. El nombre aparece en el Nuevo Testamento solo aquí."),
+  "epaenetus": ("Epéneto", "El amado de Pablo, a quien llama «primicias de Asia para Cristo» (<a href=\"romans-16.es.html#v16-5\">Romanos 16:5</a>), es decir, el primer convertido de esa provincia según sus propias palabras. El nombre aparece en el Nuevo Testamento solo aquí. La RV 1909 y la RV60 dicen «Acaya», mientras que la NVI y la TNM 2019 dicen «Asia»."),
+  "tertius": ("Tercio", "El escriba que escribió la carta al dictado de Pablo y añade su propio saludo: «Yo, Tercio, que escribí esta carta, los saludo en el Señor» (<a href=\"romans-16.es.html#v16-22\">Romanos 16:22</a>). El nombre es latino y significa «el tercero». Aparece en el Nuevo Testamento solo aquí."),
+  "aristobulus": ("Aristóbulo", "El nombre de una casa de Roma, no de un hombre al que Pablo salude por su nombre: «Saluden a los de la casa de Aristóbulo» (<a href=\"romans-16.es.html#v16-10\">Romanos 16:10</a>). La frase griega <em>tōn ek</em>, «los de», deja abierto si Aristóbulo mismo es creyente, si ha muerto o si vive en otro lugar. Algunos autores y comentaristas sitúan en Roma en esta época a un hombre de este nombre, de la familia herodiana; esa identificación se registra aquí sin comprobar, y el versículo no la hace."),
+  "narcissus": ("Narciso", "Una casa nombrada en <a href=\"romans-16.es.html#v16-11\">Romanos 16:11</a>: «los de la casa de Narciso que están en el Señor», sin que se nombre a su cabeza. Los historiadores antiguos conocen a un liberto llamado Narciso en la corte del emperador Claudio; eso se registra aquí sin comprobar, y el versículo no dice si esta casa era la suya."),
+  "mary": ("María, la madre de Jesús", "María de Nazaret, la madre de Jesús. Aparece en <a href=\"mateo-1.es.html#v1-16\">Mateo 1:16</a>, <a href=\"mateo-2.es.html#v2-11\">2:11</a>, Lucas 1:27 y Hechos 1:14. La María de <a href=\"romans-16.es.html#v16-6\">Romanos 16:6</a>, que trabajó mucho, es otra persona: el versículo no la relaciona con la madre de Jesús."),
+})
+
+# --- Romans 16 (chronology) ---
+CHRON_CHAPTERS["rom16"] = dict(era='apostolic',
+    when='The end of the same letter, written from Corinth. Chapter 15 ended with Paul on his way to Jerusalem with the collection and then to Spain. Here the letter closes with greetings from the city where it was written: Gaius hosts Paul and the whole congregation, Erastus is the city&rsquo;s treasurer, and Tertius, the scribe, adds his own name. <a href="acts-20.html#v20-3">Acts 20:3</a> places Paul in Greece for three months before he leaves for Jerusalem, and the people named here are the ones who travel with him.',
+    clock='Undated by the text, continuous with chapters 1 to 15. The chapter names no date and no event. Its clock is the journey that chapter 15 set out: Jerusalem, then Rome, then Spain.')
+
+# --- Romans 16 (chapter art: a painting of Paul writing his letters, Museum of Fine Arts, Boston) ---
+CHAPTER_ART["rom16"] = [dict(
+    file="rom16-valentin-paul-writing-epistles.jpg",
+    title="Valentin de Boulogne, Saint Paul Writing His Epistles (c. 1618&ndash;1620)",
+    title_es="Valentin de Boulogne, San Pablo escribiendo sus epístolas (c. 1618&ndash;1620)",
+    artist="Valentin de Boulogne",
+    artist_es="Valentin de Boulogne",
+    year="between c. 1618 and c. 1620",
+    location="Painting, Museum of Fine Arts, Boston",
+    location_es="Pintura, Museum of Fine Arts, Boston",
+    alt="A painting of Saint Paul at a wooden table in a dark room, in a green tunic and a red cloak, dipping a quill into an inkwell while he writes; an open book, a scroll and loose sheets of paper lie before him.",
+    note="Romans 16 is the end of a letter: greetings, the names of the people who carry them, and a scribe who writes his own. Tertius writes the letter at Paul&rsquo;s dictation (<a href=\"romans-16.html#v16-22\">verse 22</a>); the painting shows the writing itself, the pen moving over the page.",
+    note_es="Romanos 16 es el final de una carta: saludos, los nombres de quienes los llevan, y un escriba que escribe su propio saludo. Tercio escribe la carta al dictado de Pablo (<a href=\"romans-16.es.html#v16-22\">versículo 22</a>); la pintura muestra la escritura misma, la pluma sobre la página.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_BF.1991.4_-_Museum_of_Fine_Arts.jpg",
+)]
