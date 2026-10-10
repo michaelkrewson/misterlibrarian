@@ -10199,7 +10199,7 @@ XREFS = [
     (("Exodus", 25, 10), ("Revelation", 11, 19), "the same chest, built to the cubit out of acacia wood and gold here, seen centuries after it vanishes from the earthly record — inside a temple John locates not on earth but in heaven"),
     (("Matthew", 17, 3), ("Revelation", 11, 3), "the same pairing, transposed from a mountaintop to an unnamed street: Moses and Elijah stand beside Christ listening at the Transfiguration, and a reading many give to John's unnamed two witnesses fuses the same two figures' powers into one prophetic office"),
     # ---- Exodus 27 ----
-    (("Exodus", 27, 1), ("Exodus", 20, 24), "the tabernacle's own bronze altar is explicitly HOLLOW (v8) — the standard explanation offered for how a built, portable structure still satisfies the earlier law's plain 'altar of earth'"),
+    (("Exodus", 27, 1), ("Exodus", 20, 20), "the tabernacle's own bronze altar is explicitly HOLLOW (v8) — the standard explanation offered for how a built, portable structure still satisfies the earlier law's plain 'altar of earth'"),
     (("Exodus", 27, 8), ("Exodus", 24, 12), "the SAME word, luchot — the flat panels named 'tablets of stone' when Moses climbs for the covenant three chapters back now names the ordinary wooden boards of the altar's hollow shell"),
     (("Exodus", 27, 16), ("Exodus", 26, 36), "the same one-faced 'work of an embroiderer' (rokem), no cherubim — the courtyard gate borrows the tent's own plainer outer-door craft"),
     (("Exodus", 27, 21), ("Exodus", 26, 33), "'the testimony' — the same word naming what stands just beyond this veil: the ark holding the covenant tablets, described one chapter back"),
