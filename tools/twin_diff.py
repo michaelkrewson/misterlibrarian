@@ -77,7 +77,10 @@ KNOWN LIMITS, stated rather than implied:
 """
 import argparse, glob, html, os, re, sys
 
-NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)\n {2,4}</div>', re.S)
+# a note ends with its own closing div: on its own line ("\n  </div>") or right after its last
+# paragraph ("</p></div>"); the second form is used by about 170 notes, and the first alone
+# let those notes run on into the next note's text
+NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)(?:\n {2,4}</div>|(?<=</p>)</div>)', re.S)
 PARA = re.compile(r'<p>(.*?)</p>', re.S)
 TAG = re.compile(r'class="tag (t-[a-z0-9]+)"')
 HREF = re.compile(r'href="([^"]+)"')
