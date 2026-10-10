@@ -510,7 +510,7 @@ DICTIONARY = [
     ("tevah", "tevah", "תֵּבָה", "tevah",
      "The ark — a box or chest, not a ship (no sail, rudder, or helm); its only other use is Moses' basket (Exodus 2:3).", (6, 14)),
     ("toldot", "toldot", "תּוֹלְדֹת", "toldot",
-     "'Generations' — Genesis's own structural marker; ten toldot headings organize the book (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; …).", (2, 4)),
+     "'Generations' — Genesis's own structural marker; ten toldot headings, 'these are the generations of…', organize the book (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; 25:12; 25:19; 36:1, repeated for Esau at 36:9; 37:2).", (2, 4)),
     ("tohu-vavohu", "tohu vavohu", "תֹהוּ וָבֹהוּ", "tohu vavohu",
      "'Formless and empty' — the rhyming pair describing the pre-creation earth.", (1, 2)),
     ("tselem", "tselem / demut", "צֶלֶם / דְּמוּת", "tselem / demut",
@@ -7433,15 +7433,15 @@ ENCYCLOPEDIA = [
          coords=(32.13, 35.68, 1.0), approx=True,
          modern="The Zarqa River, north-central Jordan, flowing west into the Jordan"),
     dict(slug="succoth", name="Succoth", kind="place", aliases=["Succoth"],
-         desc="'BOOTHS' — Jacob's first stop after crossing back into the land, west of the Jabbok in the Jordan "
-              "valley. Genesis gives the name its own explanation: he 'built himself a house and made booths "
+         desc="'BOOTHS' — Jacob's stop after he parts from Esau, in the Jordan valley EAST of the river, near the Jabbok; only at the next verse does he come to Shechem, 'which is in the land of Canaan' (33:18), and <a href=\"joshua-13.html#v13-27\">Joshua 13:27</a> counts Succoth in Gad's share, 'beyond the Jordan eastward.' "
+              "Genesis gives the name its own explanation: he 'built himself a house and made booths "
               "(sukkot) for his livestock, therefore the place is named Succoth' (33:17). The word is the same "
               "that names Israel's autumn festival of Sukkot, the Feast of BOOTHS, when the people live a week in "
               "temporary shelters remembering the wilderness. THIS Succoth reappears in the plain of the "
               "Jordan as a town in the days of Gideon (Judges 8) and of Solomon's bronze-casting (1 Kings "
               "7:46). ⚠️ It is NOT the Succoth of the Exodus: the first station out of Egypt (Exodus "
               "12:37) is a different place of the same common name — 'booths' was an ordinary toponym — "
-              "lying in the eastern Nile Delta, some three hundred miles away.",
+              'lying in the eastern Nile Delta, some 380 kilometres (about 240 miles) away in a straight line, on the usual identifications (Tell Deir Alla and Tell el-Maskhuta).',
          refs=[(33, 17)],
          coords=(32.20, 35.61, 0.8), approx=True,
          modern="The Jordan valley east of the river, near the mouth of the Jabbok (northern Jordan)"),
@@ -8566,7 +8566,7 @@ ENCYCLOPEDIA = [
          refs=[("Song of Solomon", 1, 5), ("Jeremiah", 2, 10)], videos=[]),
     dict(slug="en-gedi", name="En-gedi", kind="place", aliases=["En-gedi", "Engedi"],
          coords=(31.4614, 35.3925, 0.12),
-         desc="'Spring of the kid' — a freshwater spring in the cliffs on the WEST SHORE OF THE DEAD SEA, about 400 metres "
+         desc="'Spring of the kid' — a freshwater spring in the cliffs on the WEST SHORE OF THE DEAD SEA, whose surface lies some 420 metres "
               "below sea level, which produces a sudden and improbable oasis in the most barren country in Israel: palms, "
               "reeds, waterfalls and, in antiquity, the balsam and perfume crops the place was famous for. Pliny and Josephus "
               "both single out its palm groves. It is where DAVID hid from Saul among the wild-goat rocks and cut the corner "
@@ -8980,8 +8980,7 @@ ENCYCLOPEDIA = [
               "Mareshah on yoresh, 'the heir / dispossessor' — 'I will bring the dispossessor upon you, inhabitant "
               "of Possession-town.' Later, as MARISA, it became the chief city of Idumea (Edomites resettled in the "
               "southern hills), was Hellenized, and its painted tombs and underground complexes are a major "
-              "excavation (part of the Beit Guvrin–Maresha national park). It was the home town of Herod's "
-              "grandfather.",
+              "excavation (part of the Beit Guvrin–Maresha national park).",
          refs=[("Micah", 1, 15)],
          coords=(31.593, 34.899, 0.10),
          modern="Tel Maresha (Beit Guvrin–Maresha park), Judean Shephelah, Israel", videos=[]),
@@ -34983,3 +34982,163 @@ CHAPTER_ART["josh20"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:David_Roberts_-_Hebron_-_1927.140_-_Cleveland_Museum_of_Art.jpg",
 )]
+
+
+# ---- 2026-10-10 follow-up: entries that Joshua 13/15, Leviticus 2 and Exodus 28 link to but that were never written ----
+ENCYCLOPEDIA.extend([
+    dict(slug="keilah", name="Keilah", kind="place", aliases=["Keilah"],
+         coords=(31.612, 35.003, 0.15), approx=True,
+         modern="Commonly identified with Khirbet Qila, in the hills above the Elah valley northwest of Hebron",
+         refs=[("Joshua", 15, 44)], videos=[],
+         desc="A town of Judah&rsquo;s lowland, listed with Achzib and Mareshah in the ninth group of Judah&rsquo;s towns "
+              "(<a href=\"joshua-15.html#v15-44\">Joshua 15:44</a>). Its one story is David&rsquo;s. Philistines are robbing its "
+              "threshing floors; David drives them off and saves the town; then, asking whether the men of Keilah will hand him "
+              "over to Saul, he is told that they will, and he leaves with about six hundred men (1 Samuel 23:1&ndash;13, not yet "
+              "on these pages). The text gives the question and the answer and never says why the town would betray the man who "
+              "had just saved it. The name stands in fifteen verses of the Hebrew Bible (<em data-heb=\"קעילה\">Qe&lsquo;ilah</em>), "
+              "eleven of them in 1 Samuel 23; after the exile Keilah is a district whose two halves each send a ruler to repair "
+              "Jerusalem&rsquo;s wall (Nehemiah 3:17&ndash;18, not yet on these pages)."),
+    dict(slug="zorah", name="Zorah", kind="place", aliases=["Zorah"],
+         coords=(31.763, 34.983, 0.15), approx=True,
+         modern="Commonly identified with Tel Tzora (Sar&lsquo;a), on the north side of the Sorek valley, across from Beth-shemesh",
+         refs=[("Joshua", 15, 33), ("Joshua", 19, 41)], videos=[],
+         desc="A lowland town that Joshua lists twice: in Judah&rsquo;s towns beside Eshtaol "
+              "(<a href=\"joshua-15.html#v15-33\">Joshua 15:33</a>), and, with Eshtaol again, at the head of Dan&rsquo;s border "
+              "(<a href=\"joshua-19.html#v19-41\">Joshua 19:41</a>), the same pair in the other order claimed for two tribes. "
+              "Dan&rsquo;s story keeps coming back to it: Samson&rsquo;s father Manoah is a man of Zorah of the clan of the Danites "
+              "(Judges 13:2), the spirit first stirs Samson between Zorah and Eshtaol (13:25), he is buried there in his father&rsquo;s "
+              "tomb (16:31), and the Danites send their five scouts and then six hundred armed men from Zorah and Eshtaol to find "
+              "a new home in the north (18:2, 8, 11; Judges 13, 16 and 18 not yet on these pages). Rehoboam lists it among "
+              "Judah&rsquo;s fortified cities (2 Chronicles 11:10), and Judeans live there again after the exile (Nehemiah 11:29; "
+              "both not yet on these pages). &#9888; The name&rsquo;s consonants, <em>tsr&lsquo;h</em>, are those of "
+              "<em>tsir&lsquo;ah</em>, &lsquo;the hornet,&rsquo; of <a href=\"exodus-23.html#v23-28\">Exodus 23:28</a>, with "
+              "different vowels; the text does not connect the two."),
+    dict(slug="eshtaol", name="Eshtaol", kind="place", aliases=["Eshtaol"],
+         coords=(31.784, 35.005, 0.3), approx=True,
+         modern="Site not securely identified; placed near Zorah in the hills on the north side of the Sorek valley",
+         refs=[("Joshua", 15, 33), ("Joshua", 19, 41)], videos=[],
+         desc="A lowland town that the Bible never names without Zorah: in Judah&rsquo;s towns "
+              "(<a href=\"joshua-15.html#v15-33\">Joshua 15:33</a>), at the head of Dan&rsquo;s border "
+              "(<a href=\"joshua-19.html#v19-41\">Joshua 19:41</a>), and in the Samson and Danite stories, &lsquo;between Zorah "
+              "and Eshtaol&rsquo; or &lsquo;from Zorah and from Eshtaol&rsquo; (Judges 13:25, 16:31, 18:2, 8 and 11, not yet on "
+              "these pages). The Hebrew spells it two ways: with a vav, <em>Eshta&rsquo;ol</em>, in its two verses of Joshua, and "
+              "without it, <em>Eshta&rsquo;el</em>, in Judges; 1 Chronicles 2:53 has the clan names, the Zorathites and the "
+              "Eshtaolites, side by side (not yet on these pages). Where the town stood has not been settled."),
+    dict(slug="beth-shemesh", name="Beth-shemesh", kind="place", aliases=["Beth-shemesh"],
+         coords=(31.752, 34.976, 0.08),
+         modern="Tel Beit Shemesh, beside the modern city of Beit Shemesh, Israel",
+         refs=[("Joshua", 15, 10)], videos=[],
+         desc="&lsquo;House of the sun&rsquo; (<em>beit shemesh</em>): a town on Judah&rsquo;s northern border, where the line "
+              "&lsquo;went down to Beth-shemesh&rsquo; (<a href=\"joshua-15.html#v15-10\">Joshua 15:10</a>), later given to the "
+              "priests among Judah&rsquo;s towns (Joshua 21:16, not yet on these pages). It is the first Israelite town the ark "
+              "reaches when the Philistines send it back on a cart: the cows go straight along the road to Beth-shemesh, the "
+              "reapers in the valley look up and rejoice, and men of the town are struck down for looking at the ark "
+              "(1 Samuel 6:9&ndash;20, not yet on these pages). Jehoash of Israel defeats and captures Amaziah of Judah there "
+              "(2 Kings 14:11&ndash;13), and the Philistines take it in the days of Ahaz (2 Chronicles 28:18; both not yet on "
+              "these pages). &#9888; The name is not unique. The same two words name a town in Issachar&rsquo;s lot and one in "
+              "Naphtali&rsquo;s (<a href=\"joshua-19.html#v19-22\">Joshua 19:22</a>, <a href=\"joshua-19.html#v19-38\">19:38</a>), "
+              "the second of which Naphtali never cleared (<a href=\"judges-1.html#v33\">Judges 1:33</a>), and Jeremiah names a "
+              "Beth-shemesh &lsquo;in the land of Egypt&rsquo; (Jeremiah 43:13, not yet on these pages), an Egyptian city commonly "
+              "taken to be Heliopolis. Dan&rsquo;s lot has an Ir-shemesh, &lsquo;city of the sun,&rsquo; beside Zorah and Eshtaol "
+              "(<a href=\"joshua-19.html#v19-41\">Joshua 19:41</a>), which many identify with this town; the text does not say so."),
+])
+
+ENCYCLOPEDIA_ES["keilah"] = ("Keila",
+    "Ciudad de la Sefelá de Judá, en el noveno grupo de las ciudades de Judá junto con Aczib y Maresa "
+    "(<a href=\"joshua-15.es.html#v15-44\">Josué 15:44</a>). Su única historia es la de David. Los filisteos saquean sus eras; "
+    "David los rechaza y salva la ciudad; luego, al preguntar si los hombres de Keila lo entregarán a Saúl, se le responde que "
+    "sí, y se marcha con unos seiscientos hombres (1 Samuel 23:1&ndash;13, todavía no en estas páginas). El texto da la "
+    "pregunta y la respuesta y nunca dice por qué la ciudad traicionaría al hombre que acababa de salvarla. El nombre está en "
+    "quince versículos de la Biblia hebrea (<em data-heb=\"קעילה\">Qe&lsquo;ilah</em>), once de ellos en 1 Samuel 23; después "
+    "del exilio Keila es un distrito cuyas dos mitades envían cada una a un jefe a reparar el muro de Jerusalén "
+    "(Nehemías 3:17&ndash;18, todavía no en estas páginas).")
+ENCYCLOPEDIA_ES["zorah"] = ("Zora",
+    "Ciudad de la Sefelá que Josué nombra dos veces: entre las ciudades de Judá junto a Estaol "
+    "(<a href=\"joshua-15.es.html#v15-33\">Josué 15:33</a>), y, otra vez con Estaol, al comienzo del límite de Dan "
+    "(<a href=\"joshua-19.es.html#v19-41\">Josué 19:41</a>): el mismo par, en el orden inverso, reclamado para dos tribus. La "
+    "historia de Dan vuelve a ella una y otra vez: Manoa, el padre de Sansón, es un hombre de Zora de la familia de los danitas "
+    "(Jueces 13:2), el espíritu empieza a mover a Sansón entre Zora y Estaol (13:25), allí lo sepultan en la tumba de su padre "
+    "(16:31), y los danitas envían desde Zora y Estaol a sus cinco exploradores y después a seiscientos hombres armados para "
+    "buscar un nuevo hogar en el norte (18:2, 8, 11; Jueces 13, 16 y 18 todavía no en estas páginas). Roboam la cuenta entre "
+    "las ciudades fortificadas de Judá (2 Crónicas 11:10), y después del exilio vuelven a habitarla judíos (Nehemías 11:29; "
+    "los dos todavía no en estas páginas). &#9888; Las consonantes del nombre, <em>tsr&lsquo;h</em>, son las de "
+    "<em>tsir&lsquo;ah</em>, «la avispa», de <a href=\"exodus-23.es.html#v23-28\">Éxodo 23:28</a>, con otras vocales; el "
+    "texto no relaciona una cosa con la otra.")
+ENCYCLOPEDIA_ES["eshtaol"] = ("Estaol",
+    "Ciudad de la Sefelá que la Biblia nunca nombra sin Zora: entre las ciudades de Judá "
+    "(<a href=\"joshua-15.es.html#v15-33\">Josué 15:33</a>), al comienzo del límite de Dan "
+    "(<a href=\"joshua-19.es.html#v19-41\">Josué 19:41</a>), y en las historias de Sansón y de los danitas, «entre Zora y "
+    "Estaol» o «desde Zora y desde Estaol» (Jueces 13:25, 16:31, 18:2, 8 y 11, todavía no en estas páginas). El hebreo la "
+    "escribe de dos maneras: con vav, <em>Eshta&rsquo;ol</em>, en sus dos versículos de Josué, y sin ella, "
+    "<em>Eshta&rsquo;el</em>, en Jueces; 1 Crónicas 2:53 pone juntos los nombres de los clanes, los zoratitas y los "
+    "estaolitas (todavía no en estas páginas). Dónde estuvo la ciudad no se ha determinado.")
+ENCYCLOPEDIA_ES["beth-shemesh"] = ("Bet-semes",
+    "«Casa del sol» (<em>beit shemesh</em>): una ciudad en el límite norte de Judá, donde la línea «descendía a Bet-semes» "
+    "(<a href=\"joshua-15.es.html#v15-10\">Josué 15:10</a>), dada después a los sacerdotes entre las ciudades de Judá "
+    "(Josué 21:16, todavía no en estas páginas). Es la primera ciudad israelita a la que llega el arca cuando los filisteos la "
+    "devuelven en una carreta: las vacas van derecho por el camino de Bet-semes, los segadores del valle alzan los ojos y se "
+    "alegran, y hombres de la ciudad son heridos por mirar el arca (1 Samuel 6:9&ndash;20, todavía no en estas páginas). "
+    "Joás de Israel derrota y captura allí a Amasías de Judá (2 Reyes 14:11&ndash;13), y los filisteos la toman en los días de "
+    "Acaz (2 Crónicas 28:18; los dos todavía no en estas páginas). &#9888; El nombre no es único. Las mismas dos palabras "
+    "nombran una ciudad en la suerte de Isacar y otra en la de Neftalí (<a href=\"joshua-19.es.html#v19-22\">Josué 19:22</a>, "
+    "<a href=\"joshua-19.es.html#v19-38\">19:38</a>), y Neftalí nunca expulsó a los habitantes de la segunda "
+    "(<a href=\"judges-1.es.html#v33\">Jueces 1:33</a>); Jeremías nombra una Bet-semes «que está en la tierra de Egipto» "
+    "(Jeremías 43:13, todavía no en estas páginas), una ciudad egipcia que se suele identificar con Heliópolis. La suerte de Dan "
+    "tiene un Ir-semes, «ciudad del sol», junto a Zora y Estaol (<a href=\"joshua-19.es.html#v19-41\">Josué 19:41</a>), que "
+    "muchos identifican con esta ciudad; el texto no lo dice.")
+
+ENCYCLOPEDIA_ES["ashkelon"] = ("Ascalón",
+    "Una de las cinco ciudades filisteas, en la costa del Mediterráneo: un gran puerto, y uno de los lugares habitados sin "
+    "interrupción más antiguos de la región, mencionado en textos egipcios siglos antes de la monarquía de Israel. Va junto a "
+    "Gat en el lamento de David, «no lo proclamen en las calles de Ascalón» "
+    "(<a href=\"2-samuel-1.es.html#v20\">2 Samuel 1:20</a>): las dos ciudades nombradas como los lugares donde la noticia se "
+    "celebraría. Los profetas vuelven a ella una y otra vez en sus oráculos contra Filistea (Amós 1:8; Sofonías 2:4-7; "
+    "Jeremías 47:5-7).")
+ENCYCLOPEDIA_ES["en-gedi"] = ("En-gadi",
+    "«Fuente del cabrito»: un manantial de agua dulce en los acantilados de la ORILLA OCCIDENTAL DEL MAR MUERTO, cuya superficie "
+    "está a unos 420 metros bajo el nivel del mar, que produce un oasis repentino e improbable en la tierra más árida de Israel: "
+    "palmeras, cañas, cascadas y, en la antigüedad, los cultivos de bálsamo y de perfume por los que el lugar era famoso. Plinio "
+    "y Josefo destacan los dos sus palmerales. Es donde DAVID se escondió de Saúl entre los peñascos de las cabras monteses y le "
+    "cortó a Saúl el borde del manto en la cueva (1 Samuel 24), y es donde el Cantar pone su racimo de alheña: el jardín menos "
+    "probable del país, nombrado a propósito.")
+ENCYCLOPEDIA_ES["mareshah"] = ("Maresa",
+    "Una ciudad fortificada de la Sefelá (<a href=\"joshua-15.es.html#v15-44\">Josué 15:44</a>; fortificada por Roboam, "
+    "2 Crónicas 11:8), y escenario de la gran victoria de Asa sobre Zera el cusita (2 Crónicas 14:9-10). &#9888; "
+    "<a href=\"micah-1.es.html#v15\">Miqueas 1:15</a> juega con su nombre —Maresá con <em>yoresh</em>, «el heredero, el que "
+    "despoja»—: «Aún traeré sobre ti al que te despoje, habitante de Maresá —Posesión—». Más tarde, como MARISA, llegó a ser la "
+    "ciudad principal de Idumea (edomitas reasentados en las colinas del sur), se helenizó, y sus tumbas pintadas y sus complejos "
+    "subterráneos son una excavación importante (parte del parque nacional Beit Guvrin–Maresha).")
+ENCYCLOPEDIA_ES["philistines"] = ("los filisteos",
+    "Los «pueblos del mar» de la costa cananea: el gran enemigo de Israel durante la época de los Jueces y de los primeros reyes "
+    "(Sansón y Dalila, el arca capturada, Goliat y David, la muerte de Saúl en Gilboa). Dan su nombre a toda la tierra: "
+    "«Palestina» es «Filistea». En Génesis aparecen ante los patriarcas como el pueblo de Gerar bajo el rey Abimelec, que envidia "
+    "la riqueza de Isaac y le cega los pozos de su padre (Génesis 26, ya en estas páginas, todavía no en español). &#9888; Es "
+    "uno de los ANACRONISMOS famosos del libro: los filisteos tal como los conoce la historia —un pueblo egeo— no se asentaron en "
+    "la costa hasta hacia el 1200 a. C., siglos después de Abraham e Isaac. La mayoría lee aquí «filisteos» como una ACTUALIZACIÓN "
+    "editorial del nombre del lugar para lectores posteriores (la misma modernización que se ve en «Dan», Génesis 14:14, y en "
+    "«Ur de los caldeos»); unos pocos suponen una presencia egea anterior. En cualquier caso es la clase de costura sobre la que "
+    "gira el debate sobre la autoría y la fecha (véase la introducción a Génesis).")
+ENCYCLOPEDIA_ES["succoth"] = ("Sucot",
+    "«CABAÑAS»: la parada de Jacob después de separarse de Esaú, en el valle del Jordán AL ORIENTE del río, cerca del Jaboc. "
+    "Génesis da al nombre su propia explicación: «se edificó una casa e hizo cabañas (<em>sukkot</em>) para su ganado; por eso "
+    "el lugar se llama Sucot» (Génesis 33:17, ya en estas páginas, todavía no en español), y solo en el versículo siguiente llega "
+    "a Siquem, «que está en la tierra de Canaán» (33:18). <a href=\"joshua-13.es.html#v13-27\">Josué 13:27</a> cuenta Sucot en "
+    "la parte de Gad, «al otro lado del Jordán, hacia el oriente». La palabra es la misma que nombra la fiesta otoñal de Israel, "
+    "Sucot, la fiesta de las CABAÑAS, en que el pueblo vive una semana en refugios provisionales recordando el desierto. ESTA "
+    "Sucot reaparece en la llanura del Jordán como ciudad en los días de Gedeón (Jueces 8) y del bronce fundido de Salomón "
+    "(1 Reyes 7:46). &#9888; NO es la Sucot del Éxodo: la primera estación al salir de Egipto "
+    "(<a href=\"exodus-12.es.html#v12-37\">Éxodo 12:37</a>) es otro lugar con el mismo nombre común —«cabañas» era un topónimo "
+    "corriente—, en el delta oriental del Nilo, a unos 380 kilómetros en línea recta (con las identificaciones habituales, Tell Deir Alla y Tell el-Maskhuta).")
+
+DICTIONARY_ES["nichoach"] = ("reyach nichoach",
+    "Un aroma apacible: el «olor tranquilo, agradable» de una ofrenda (<em>nichoach</em> comparte la raíz <em>nuach</em>, "
+    "«descansar», la raíz detrás del nombre de Noé). Su PRIMERA aparición es el holocausto de Noé después del diluvio: «Jehová "
+    "percibió el aroma apacible» y juró no volver a maldecir la tierra (Génesis 8:21, ya en estas páginas, todavía no en "
+    "español). Levítico hace de la misma frase el estribillo de todo el sistema sacrificial (1:9, 13, 17, ya en estas páginas, "
+    "todavía no en español): lo que Noé hizo una vez en el altar se vuelve el culto diario de Israel. "
+    "RV 1909 «olor suave», RV60 «olor grato», TNM de 2019 «aroma muy agradable».")
+DICTIONARY_ES["toldot"] = ("toldot",
+    "«Generaciones»: el marcador estructural propio de Génesis; diez encabezados <em>toldot</em>, «estas son las "
+    "generaciones de…», organizan el libro (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; 25:12; 25:19; 36:1, repetido para Esaú en 36:9; "
+    "37:2; Génesis 2–33 ya en estas páginas, todavía no en español).")
+
