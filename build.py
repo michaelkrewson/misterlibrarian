@@ -5164,7 +5164,7 @@ def _es_dict_ref(book, ch, v, es_slugs):
     label = f"{book_es(book)} {ch}:{v}"
     slug = f"{book_slug(book)}-{ch}"
     if slug in es_slugs:
-        anchor = f"v{v}" if ch == 1 else f"v{ch}-{v}"
+        anchor = verse_anchor(book, ch, v)
         return f'<a href="{slug}.es.html#{anchor}">{label}</a>'
     return f'<span class="ref-unpub" title="capítulo aún no traducido">{label}</span>'
 
