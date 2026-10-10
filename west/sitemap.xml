@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mistertranslation.com/west/</loc>
+    <loc>https://west.m8k.io/</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mistertranslation.com/west/about.html</loc>
-    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/ask.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://west.m8k.io/about.html</loc>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/two-witnesses-at-the-font.html</loc>
+    <loc>https://west.m8k.io/ask.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://west.m8k.io/two-witnesses-at-the-font.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-tree-thief-of-breuckelen.html</loc>
+    <loc>https://west.m8k.io/the-tree-thief-of-breuckelen.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/should-not-have-come-off-alive.html</loc>
+    <loc>https://west.m8k.io/should-not-have-come-off-alive.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-name-came-from-her.html</loc>
+    <loc>https://west.m8k.io/the-name-came-from-her.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/two-strangers-walk-across-staten-island.html</loc>
+    <loc>https://west.m8k.io/two-strangers-walk-across-staten-island.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-voorlezers-hand.html</loc>
+    <loc>https://west.m8k.io/the-voorlezers-hand.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/six-hundred-pounds-of-lawful-silver.html</loc>
+    <loc>https://west.m8k.io/six-hundred-pounds-of-lawful-silver.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-x-on-the-will.html</loc>
+    <loc>https://west.m8k.io/the-x-on-the-will.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/lydia.html</loc>
+    <loc>https://west.m8k.io/lydia.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-flying-camp.html</loc>
+    <loc>https://west.m8k.io/the-flying-camp.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/ten-faces-circa-1890.html</loc>
+    <loc>https://west.m8k.io/ten-faces-circa-1890.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/lest-his-father-find-him.html</loc>
+    <loc>https://west.m8k.io/lest-his-father-find-him.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-four-hundred-dollars.html</loc>
+    <loc>https://west.m8k.io/the-four-hundred-dollars.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/not-irish-by-blood.html</loc>
+    <loc>https://west.m8k.io/not-irish-by-blood.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/incommunicado.html</loc>
+    <loc>https://west.m8k.io/incommunicado.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/vietnam-twice.html</loc>
+    <loc>https://west.m8k.io/vietnam-twice.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/finding-bill.html</loc>
+    <loc>https://west.m8k.io/finding-bill.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/copied-for-frank-k-swain.html</loc>
+    <loc>https://west.m8k.io/copied-for-frank-k-swain.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/the-cousin-who-kept-the-name.html</loc>
+    <loc>https://west.m8k.io/the-cousin-who-kept-the-name.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://mistertranslation.com/west/lets-keep-each-other-posted.html</loc>
+    <loc>https://west.m8k.io/lets-keep-each-other-posted.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

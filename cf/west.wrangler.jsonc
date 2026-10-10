@@ -1,0 +1,14 @@
+// Eight Miles West on its own subdomain (m8k.io umbrella, 2026-10-10).
+// Static-assets-only Worker: serves the built west/ folder exactly as GitHub Pages
+// did — html_handling "none" keeps every URL ending in .html (Cloudflare Pages
+// would 308 /x.html -> /x and break canonicals, sitemaps and old links).
+// Deploy: wrangler deploy -c cf/west.wrangler.jsonc
+{
+  "name": "m8k-west",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "../west",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}
