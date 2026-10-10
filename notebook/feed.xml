@@ -7,6 +7,14 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>The Rundown — October 9, 2026</title>
+    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-09.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-09.html</guid>
+    <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
+    <description>7 stories across The world, Bitcoin &amp; crypto, Science, Space, Arts &amp; culture, Health &amp; medicine, tracked on October 9, 2026.</description>
+    <category>rundown</category>
+  </item>
+  <item>
     <title>The Super Intelligence Scorecard: Which Model Is Best, by Whose Test</title>
     <link>https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</guid>
@@ -360,20 +368,6 @@
     <pubDate>Sun, 27 Sep 2026 12:00:00 +0000</pubDate>
     <description>12 stories across World, Business &amp; markets, Bitcoin &amp; crypto, Technology, Science &amp; space, Health &amp; medicine, tracked on September 27, 2026.</description>
     <category>rundown</category>
-  </item>
-  <item>
-    <title>A Subduction Zone Caught in the Act of Dying</title>
-    <link>https://mistertranslation.com/notebook/a-subduction-zone-caught-in-the-act-of-dying.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/a-subduction-zone-caught-in-the-act-of-dying.html</guid>
-    <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A Science Advances study led by Brandon Shuck of Louisiana State University images a tear opening in the Cascadia subduction zone's Nootka Fault Zone off northern Vancouver Island, where the subducting slab has already dropped about 5 kilometres — evidence, the authors argue, that subduction zones can shut down piece by piece rather than all at once.</description>
-    <category>geology</category>
-    <category>plate tectonics</category>
-    <category>earthquakes</category>
-    <category>cascadia</category>
-    <category>pacific northwest</category>
-    <category>vancouver island</category>
-    <category>seismology</category>
   </item>
 </channel>
 </rss>
