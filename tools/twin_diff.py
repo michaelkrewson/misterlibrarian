@@ -77,10 +77,9 @@ KNOWN LIMITS, stated rather than implied:
 """
 import argparse, glob, html, os, re, sys
 
-# a note ends with its own closing div: on its own line ("\n  </div>") or right after its last
-# paragraph ("</p></div>"); the second form is used by about 170 notes, and the first alone
-# let those notes run on into the next note's text
-NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)(?:\n {2,4}</div>|(?<=</p>)</div>)', re.S)
+# a note runs to the next note or to the end of the article. It cannot stop at its first closing
+# div: a note can carry an info-block after an internal closing div, and its paragraphs belong to it
+NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)(?=<div class="note"|</article>|\Z)', re.S)
 PARA = re.compile(r'<p>(.*?)</p>', re.S)
 TAG = re.compile(r'class="tag (t-[a-z0-9]+)"')
 HREF = re.compile(r'href="([^"]+)"')
