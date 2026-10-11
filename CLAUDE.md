@@ -686,6 +686,15 @@ the script (idempotent — only fetches what's missing).
   ignores both fields; `lastmod` is what it reads, so `build_sitemap()`'s git pass now walks
   the full history (the old 600-commit cap left 420 of 887 URLs with no lastmod). The home
   page `<head>` also carries `<meta name="robots" content="index,follow,…">` + `rel="sitemap"`.
+  ⚠️ **They are emitted by `build.py` `_og_tags()` (url == "index.html"), NOT hand-edited** —
+  the 10-07 hand edit to `index.html` was silently wiped by the 10-10 front-page rebuild
+  (`265b4630d9`); restored in the generator 2026-10-10.
+- **m8k.io move (2026-10-10): robots + llms per host.** Each moved blog folder (`finance/`
+  `notebook/` `health/` `travel/` `west/`) carries a tracked, static `robots.txt` (Sitemap line
+  for its own host) and `llms.txt`; without our own `robots.txt` Cloudflare served ONLY its
+  content-signals comment block (no User-agent, no Sitemap). Root `robots.txt` lists the blogs'
+  sitemaps at their NEW hosts (old `/finance/…` paths 301) and root `llms.txt` points there too.
+  The apex m8k.io serves its own robots/sitemap/llms from `~/projects/m8k/public/`.
 - *(Superseded for `dict/` above)* **The `dict/`, `ency/` and `atlas/` per-entry pages are `noindex,follow` and out of the
   sitemap (2026-09-17, Michael's call — reversing the 09-10 wait-and-see).** `NOINDEX_PREFIXES`
   in `build.py`, applied inside `page()` off the `url=` prefix, so no call site opts in or out

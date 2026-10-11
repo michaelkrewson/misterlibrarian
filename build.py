@@ -1321,6 +1321,14 @@ def _og_tags(title, desc, url="", image="", og_type=None):
         full = f"{SITE_URL}/" if url == "index.html" else f"{SITE_URL}/{url}"
         tags.insert(0, f'<link rel="canonical" href="{full}"/>')
         tags.append(f'<meta property="og:url" content="{full}"/>')
+        if url == "index.html":
+            # Home page only (2026-10-07, restored 2026-10-10): an explicit robots
+            # meta + a rel=sitemap pointer. They were first hand-added to index.html,
+            # and the 10-10 rebuild that made the Bible home the front page wiped
+            # them -- index.html is GENERATED, so they live here now.
+            tags.insert(1, '<meta name="robots" content="index,follow,max-image-preview:large"/>')
+            tags.insert(2, f'<link rel="sitemap" type="application/xml" title="Sitemap" '
+                           f'href="{SITE_URL}/sitemap.xml"/>')
     return "\n" + "\n".join(tags)
 
 

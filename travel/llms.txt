@@ -1,0 +1,17 @@
+# The Librarian Abroad
+
+> Notes from the road and from the table: what was worth the trip, what was worth the plate, and what wasn't.
+
+Mostly restaurant and place reviews around Vancouver, WA and Portland, OR, plus trips.
+
+Part of the m8k.io family of publications by "Mr. Librarian" (index: https://m8k.io/llms.txt).
+
+## Key pages
+
+- [Home](https://abroad.m8k.io/): newest posts
+- [About](https://abroad.m8k.io/about.html): who writes this
+
+## Notes for automated readers
+
+- Every published post is listed in https://abroad.m8k.io/sitemap.xml (with last-modified dates) and the newest in https://abroad.m8k.io/feed.xml.
+- This blog moved from mistertranslation.com/travel/ on 2026-10-10; old addresses 301 here.

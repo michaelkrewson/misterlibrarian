@@ -1,0 +1,21 @@
+# The Librarian's Notebook
+
+> A commonplace book kept by Mr. Librarian: science and technology, the world and its news, the arts, and whatever else didn't fit. Working shown.
+
+Includes "The Rundown", a dated daily digest of news items, each linked to its source.
+
+Part of the m8k.io family of publications by "Mr. Librarian" (index: https://m8k.io/llms.txt).
+
+## Key pages
+
+- [Home](https://notebook.m8k.io/): newest entries
+- [Technology](https://notebook.m8k.io/technology.html): science and technology entries
+- [Culture](https://notebook.m8k.io/culture.html): arts and culture entries
+- [Notes](https://notebook.m8k.io/notes.html): shorter notes
+- [Tags](https://notebook.m8k.io/tags.html): every entry grouped by subject
+- [About](https://notebook.m8k.io/about.html): what this notebook is
+
+## Notes for automated readers
+
+- Every published post is listed in https://notebook.m8k.io/sitemap.xml (with last-modified dates) and the newest in https://notebook.m8k.io/feed.xml.
+- This blog moved from mistertranslation.com/notebook/ on 2026-10-10; old addresses 301 here.
