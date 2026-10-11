@@ -60,7 +60,7 @@ _MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 _SITE_ROOT = "https://mistertranslation.com/"
 _BLOGS = ("travel", "finance", "health", "notebook", "west", "ask")
 _CHAPTER_RE = re.compile(r"^[a-z0-9-]+-\d+(\.es)?\.html$")
-_BIBLE_HUBS = {"bible.html", "es.html", "toc.html", "old-testament.html",
+_BIBLE_HUBS = {"es.html", "toc.html", "old-testament.html",
                "new-testament.html", "library.html", "biblioteca.html"}
 _URL_RE = re.compile(r"(<loc>([^<]+)</loc>)((\s*)<lastmod>[^<]*</lastmod>)?")
 

@@ -146,7 +146,7 @@ SIBLINGS = (
      "A commonplace book — science and technology, the world, arts and culture"),
     ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+    ("Mister Translation", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
@@ -558,7 +558,9 @@ def _shell_hits_path(url):
     """Best-effort "/health/<file>.html" for `_foot`'s view-count widget, derived
     from the same absolute `url` every `_shell` caller already passes. Returns
     None for a url with no filename (the index page's bare BASE_URL)."""
-    name = url.rstrip("/").rsplit("/", 1)[-1]
+    # Only the URL's PATH names the page: on a subdomain root (https://ledger.m8k.io/)
+    # the last "/"-segment would otherwise be the host itself (2026-10-10 fix).
+    name = urllib.parse.urlsplit(url).path.rstrip("/").rsplit("/", 1)[-1]
     return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
@@ -1971,9 +1973,9 @@ header{padding:46px 0 8px;text-align:center}
    links to m8k.io, which lists every publication. The 8 tips over into an infinity sign. */
 .hublink .hubwm.m8kwm{background:none;-webkit-text-fill-color:currentColor;color:#e8eef7;
   font-family:Georgia,'Times New Roman',serif;font-size:27px;letter-spacing:-.01em;line-height:1}
-.m8k8{display:inline-block;color:#e8c968;-webkit-text-fill-color:#e8c968;
-  text-shadow:0 0 8px rgba(232,201,104,.45);animation:m8kLie 6s ease-in-out infinite}
-@keyframes m8kLie{0%,35%{transform:rotate(0)}50%,85%{transform:rotate(90deg)}100%{transform:rotate(180deg)}}
+.m8k8{display:inline-block;margin:0 .05em;color:#00ff9d;-webkit-text-fill-color:#00ff9d;
+  text-shadow:0 0 6px rgba(0,255,157,.55),0 0 16px rgba(0,255,157,.35);animation:m8kLie 12s ease-in-out infinite}
+@keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
@@ -2524,8 +2526,4 @@ def main():
 
 if __name__ == "__main__":
     _rc = main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
     sys.exit(_rc)

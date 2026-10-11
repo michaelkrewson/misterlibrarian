@@ -1,4 +1,5 @@
-// 301s from mistertranslation.com's old blog folders to their m8k.io subdomains.
+// 301s from mistertranslation.com's old blog folders to their m8k.io subdomains,
+// and the old /bible.html home to the root.
 // Routes only fire while mistertranslation.com is PROXIED (orange cloud) in Cloudflare DNS.
 // Deploy: wrangler deploy -c cf/mt-redirects.wrangler.jsonc
 {
@@ -16,6 +17,7 @@
     { "pattern": "mistertranslation.com/west", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/west/*", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/travel", "zone_name": "mistertranslation.com" },
-    { "pattern": "mistertranslation.com/travel/*", "zone_name": "mistertranslation.com" }
+    { "pattern": "mistertranslation.com/travel/*", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/bible.html*", "zone_name": "mistertranslation.com" }
   ]
 }

@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://notebook.m8k.io/a-pin-is-not-a-verification.html"/>
 <meta property="article:section" content="Science &amp; Technology"/>
 <meta property="og:image" content="https://notebook.m8k.io/img/pin-tumbler-unlocked.jpg"/>
-<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Plugin4Shell: A Pin Is Not a Verification"/>
 <meta name="twitter:description" content="Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched."/>
 <meta name="twitter:image" content="https://notebook.m8k.io/img/pin-tumbler-unlocked.jpg"/>
@@ -78,9 +78,9 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
    links to m8k.io, which lists every publication. The 8 tips over into an infinity sign. */
 .hublink .hubwm.m8kwm{background:none;-webkit-text-fill-color:currentColor;color:#e8eef7;
   font-family:Georgia,'Times New Roman',serif;font-size:27px;letter-spacing:-.01em;line-height:1}
-.m8k8{display:inline-block;color:#e8c968;-webkit-text-fill-color:#e8c968;
-  text-shadow:0 0 8px rgba(232,201,104,.45);animation:m8kLie 6s ease-in-out infinite}
-@keyframes m8kLie{0%,35%{transform:rotate(0)}50%,85%{transform:rotate(90deg)}100%{transform:rotate(180deg)}}
+.m8k8{display:inline-block;margin:0 .05em;color:#00ff9d;-webkit-text-fill-color:#00ff9d;
+  text-shadow:0 0 6px rgba(0,255,157,.55),0 0 16px rgba(0,255,157,.35);animation:m8kLie 12s ease-in-out infinite}
+@keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
 
@@ -509,7 +509,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <article class="entry">
     <h1 class="etitle">Plugin4Shell: A Pin Is Not a Verification</h1>
     <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 22, 2026</p>
-    <figure class="hero"><img src="img/pin-tumbler-unlocked.jpg" alt="A cutaway diagram of a pin tumbler lock shown in the unlocked position, with the key inserted and each spring-loaded pin pushed to align exactly at the shear line" width="800" height="600" loading="eager"/><figcaption>Wapcaplet and Mats Halldin, dual-licensed GFDL / CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Pin_tumbler_unlocked.png" rel="noopener" target="_blank">Wikimedia Commons</a>.</figcaption></figure>
+    <figure class="hero"><img src="img/pin-tumbler-unlocked.jpg" alt="A cutaway diagram of a pin tumbler lock shown in the unlocked position, with the key inserted and each spring-loaded pin pushed to align exactly at the shear line" loading="eager"/><figcaption>Wapcaplet and Mats Halldin, dual-licensed GFDL / CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Pin_tumbler_unlocked.png" rel="noopener" target="_blank">Wikimedia Commons</a>.</figcaption></figure>
 <p>On September 17, 2026, the AI-agent security firm AIR Security disclosed "Plugin4Shell" — a zero-click vulnerability in the plugin systems of four AI coding agents: Claude Code, OpenAI Codex, GitHub Copilot, and Gemini CLI. All four let a developer extend the agent with third-party plugins pulled from a git repository, and all four let the plugin's manifest pin that plugin to an exact commit — a 40-character SHA hash — specifically so a marketplace listing can't be swapped for something else after it's been reviewed. Plugin4Shell broke that promise: under the right conditions, the agent would report that it had checked out the pinned commit while a different one sat on disk.</p>
 
 <h2>What SHA-Pinning Was Supposed to Stop</h2>
@@ -570,7 +570,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="not-available-on-this-connection.html" data-search="not available on this connection anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated claude code skills were costing me." data-tags="claude-code anthropic artificial-intelligence ai software documentation debugging">
-      <span class="tile-media"><img src="img/bell-telephone-office-hamburg-1900.jpg" alt="" width="640" height="485" loading="lazy"/></span>
+      <span class="tile-media"><img src="img/bell-telephone-office-hamburg-1900.jpg" alt="" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
         <span class="ec-t">Not Available on This Connection</span>
@@ -578,7 +578,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       </span>
     </a>
     <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
-      <span class="tile-media"><img src="img/usda-card-catalog-1936.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-media"><img src="img/usda-card-catalog-1936.jpg" alt="" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
         <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
@@ -586,7 +586,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       </span>
     </a>
     <a class="tile" href="atomic-machines-the-matter-compiler-and-the-relay-it-built-first.html" data-search="atomic machines came out of stealth with a machine that builds from code. its first product is a power relay. jeff holden&#x27;s atomic machines left six years of stealth on october 7, 2026, with $250 million and a claim that code alone can drive the manufacture of…" data-tags="atomic-machines manufacturing ai-data-centers power jeff-holden startups">
-      <span class="tile-media"><img src="img/edison-pearl-street-dynamo-room-1882.jpg" alt="" width="1600" height="900" loading="lazy"/></span>
+      <span class="tile-media"><img src="img/edison-pearl-street-dynamo-room-1882.jpg" alt="" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">TECHNOLOGY · OCTOBER 11, 2026</span>
         <span class="ec-t">Atomic Machines came out of stealth with a machine that builds from code. Its first product is a power relay.</span>
@@ -594,7 +594,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       </span>
     </a>
     <a class="tile" href="ai-scorecard-which-model-is-best-by-whose-test.html" data-search="the super intelligence scorecard: which model is best, by whose test which super intelligence model is best right now? a living scorecard from lmarena, artificial analysis, arc prize, metr and epoch ai, plus costs." data-tags="ai super-intelligence-scorecard benchmarks lmarena artificial-analysis open-weight-models claude gemini gpt-6">
-      <span class="tile-media"><img src="img/ai-labs-logo-grid.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-media"><img src="img/ai-labs-logo-grid.jpg" alt="" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">TECHNOLOGY · OCTOBER 8, 2026</span>
         <span class="ec-t">The Super Intelligence Scorecard: Which Model Is Best, by Whose Test</span>
@@ -604,7 +604,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
-<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://ledger.m8k.io/">The Librarian&#x27;s Ledger</a> · <a href="https://abroad.m8k.io/">The Librarian Abroad</a> · <a href="https://regimen.m8k.io/">The Librarian&#x27;s Regimen</a> · <a href="https://west.m8k.io/">Eight Miles West</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-a-pin-is-not-a-verification-html">👁 <span id="hits-notebook-a-pin-is-not-a-verification-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://ledger.m8k.io/">The Librarian&#x27;s Ledger</a> · <a href="https://abroad.m8k.io/">The Librarian Abroad</a> · <a href="https://regimen.m8k.io/">The Librarian&#x27;s Regimen</a> · <a href="https://west.m8k.io/">Eight Miles West</a> · <a href="https://mistertranslation.com/">Mister Translation</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-a-pin-is-not-a-verification-html">👁 <span id="hits-notebook-a-pin-is-not-a-verification-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fa-pin-is-not-a-verification.html.json")

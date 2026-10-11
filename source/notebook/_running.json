@@ -4,7 +4,8 @@
   {
    "href": "siberia-plague-death-what-we-know.html",
    "title": "Siberia plague death: what we know",
-   "search": "Irkutsk plague Shipilova Rospotrebnadzor WHO new cases",
+   "search": "Irkutsk plague OR pneumonia Shipilova Rospotrebnadzor WHO pathogen cause of death new case",
+   "status_note": "Quiet since 2026-10-10 (quarantine lifted Oct 8). Keep active about a week for a WHO finding or a named pathogen; set active to false around 2026-10-17 if nothing new.",
    "since": "2026-10-05",
    "active": true
   },

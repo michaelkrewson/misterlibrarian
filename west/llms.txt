@@ -1,0 +1,17 @@
+# Eight Miles West
+
+> A family's four centuries in America, from New Amsterdam to the Pacific: the Croesen / Kroesen / Krewson line, read from the documents, one chapter at a time.
+
+Published as numbered chapters meant to be read in order; each chapter cites the records (church registers, wills, censuses, newspapers) it is built from.
+
+Part of the m8k.io family of publications by "Mr. Librarian" (index: https://m8k.io/llms.txt).
+
+## Key pages
+
+- [Home](https://west.m8k.io/): the chapters in order
+- [About](https://west.m8k.io/about.html): the project and its sources
+
+## Notes for automated readers
+
+- Every published post is listed in https://west.m8k.io/sitemap.xml (with last-modified dates) and the newest in https://west.m8k.io/feed.xml.
+- This blog moved from mistertranslation.com/west/ on 2026-10-10; old addresses 301 here.

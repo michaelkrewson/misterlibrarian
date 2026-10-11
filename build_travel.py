@@ -296,7 +296,7 @@ def header(active=""):
       <a class="sib" href="https://regimen.m8k.io/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
       <a class="sib" href="https://notebook.m8k.io/" title="A commonplace book — science and technology, the world, arts and culture">The Librarian's Notebook →</a>
       <a class="sib" href="https://west.m8k.io/" title="A family history — four centuries in America, one document at a time">Eight Miles West →</a>
-      <a class="sib" href="https://mistertranslation.com/bible.html" title="A fresh translation of the Bible into modern English, one chapter at a time">Mr. Librarian's Bible →</a>
+      <a class="sib" href="https://mistertranslation.com/" title="A fresh translation of the Bible into modern English, one chapter at a time">Mister Translation →</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
@@ -322,8 +322,8 @@ FOOTER = f"""<footer class="site-foot">
   — the other one, about money — <a href="https://regimen.m8k.io/">The
   Librarian's Regimen</a>, about health — <a href="https://notebook.m8k.io/">The
   Librarian's Notebook</a>, about everything else — <a href="https://west.m8k.io/">Eight
-  Miles West</a>, a family history — and <a href="https://mistertranslation.com/bible.html">Mr.
-  Librarian's Bible</a>, a fresh translation of scripture.</p>
+  Miles West</a>, a family history — and <a href="https://mistertranslation.com/">Mister
+  Translation</a>, a fresh translation of scripture.</p>
 </footer>"""
 
 
@@ -1863,7 +1863,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)

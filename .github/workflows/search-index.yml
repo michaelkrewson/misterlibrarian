@@ -1,0 +1,40 @@
+# Keep the m8k.io site-wide search current (2026-10-10).
+#
+# On every push to main that touches a published page or a sitemap, re-index the
+# pages whose content changed (tools/build_search_index.py uploads only changed
+# rows to the Cloudflare D1 database "m8k-search" and deletes pages that left the
+# sitemaps). Bot pushes can't trigger workflows, so publish-draft.yml calls the
+# indexer itself; the hourly Ledger board refresh deliberately doesn't (numbers
+# changing doesn't change what a page is about).
+#
+# Secrets: CLOUDFLARE_API_TOKEN (needs D1 Edit) + CLOUDFLARE_ACCOUNT_ID.
+name: Refresh m8k.io search index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.html"
+      - "**/sitemap.xml"
+      - "sitemap.xml"
+      - "tools/build_search_index.py"
+      - "search/schema.sql"
+  workflow_dispatch:
+
+concurrency:
+  group: search-index
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Re-index changed pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 tools/build_search_index.py

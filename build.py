@@ -57,15 +57,24 @@ ENABLE_LISTEN_BUTTON = False
 NOTES_JS_VER = _asset_ver("reader-notes.js")
 SHARE_JS_VER = _asset_ver("share.js")
 
-SITE_NAME = "The MisterLibrarian Bible Project"
-TAGLINE = "Catalogued &amp; compared, one chapter at a time"
+# Named "Mister Translation" 2026-10-10 (Michael's call): one name for the domain, the
+# header and the Spanish twin (La Traducción Mister); Mr. Librarian stays the keeper.
+SITE_NAME = "Mister Translation"
+TAGLINE = "A new translation of the Bible from the Hebrew and Greek"   # = the Spanish tag, in English
 SITE_URL = "https://mistertranslation.com"
-# The Bible project's own homepage moved off the bare domain root 2026-09-09, when
-# mistertranslation.com/ became a 3-card hub (Bitcoin & Finance / Food & Travel /
-# Religion) — root index.html is now a separate, hand-written static file with no
-# builder of its own (this script never writes it). This project's home page is
-# just a normal page at HOME_URL; the bare root is no longer it.
-HOME_URL = "bible.html"
+# The Bible project is the front page of mistertranslation.com again (2026-10-10,
+# Michael's call). From 2026-09-09 the bare root was a hand-written six-card hub and
+# this home page lived at /bible.html; once the five blogs moved to their own m8k.io
+# subdomains, m8k.io became the page that lists every publication and the hub retired.
+# build_index() writes HOME_FILE (canonical https://mistertranslation.com/), and the
+# old /bible.html 301s to / (cf/mt-redirects.js). HOME_URL is the LINK target: "./"
+# resolves to the root from every page, including the dict/ency/atlas entry pages,
+# which carry <base href="https://mistertranslation.com/">.
+HOME_URL = "./"
+HOME_FILE = "index.html"
+# m8k.io: the umbrella front door + site-wide search (separate repo, michaelkrewson/m8k).
+HUB_URL = "https://m8k.io"
+BIBLE_SEARCH_URL = f"{HUB_URL}/search"   # ?pub=bible keeps results to this project
 OG_IMAGE = f"{SITE_URL}/img/og-default.png"   # branded default link-preview image
 OG_IMAGE_ES = f"{SITE_URL}/img/og-default.es.png"   # …and its Spanish twin
 
@@ -374,6 +383,11 @@ CHAPTERS = [
     ("josh19", "Joshua", 19, "The other six lots come out in order. Simeon&rsquo;s falls inside Judah&rsquo;s own share, with thirteen cities counted and fourteen named, most of them towns Judah&rsquo;s lists already hold. Zebulun&rsquo;s border goes up &lsquo;westward&rsquo; in a word that also means &lsquo;to the sea,&rsquo; and passes Jonah&rsquo;s town. Issachar&rsquo;s sixteen cities can actually be counted. Asher&rsquo;s runs up to Great Sidon and holds four of the seven places Judges 1:31 says it never cleared. Naphtali&rsquo;s ends &lsquo;and at Judah, the Jordan,&rsquo; with no verb to join them. Dan&rsquo;s breaks on the verb that opened it: the lot went out, and then the border &lsquo;went out from them,&rsquo; so the tribe takes Leshem in the north and names it Dan. Last, Joshua is given the city he asked for, by the mouth of Jehovah, and builds it &mdash; Timnath-serah, where the apportioning that began at Numbers 34:17 closes at the door of the tent of meeting."),
     ("josh20", "Joshua", 20, "Jehovah speaks to Joshua for the last time in this book, in a sentence found nowhere else, and what he says is Numbers 35 with Moses&rsquo; name replaced: give for yourselves the cities of refuge. The man they protect is described with two phrases the older laws kept apart, BY ERROR and WITHOUT KNOWING, in a clause no other verse carries. He reaches the gate, speaks to the elders, is gathered in, and stays until he has stood before the congregation and until the death of the high priest &mdash; an office the verse names without a name, in a formula Deuteronomy uses of judges. The six cities are sanctified, and the first of them, Kedesh, is made of the verb&rsquo;s own three letters; the west is listed north to south, the east south to north, and the number six is never said. The chapter ends on the congregation, before any verdict."),
     ("judg1", "Judges", 1, "The conquest, told from underneath. It opens well — Israel asks God, Judah goes up, cities fall — and then, tribe by tribe marching north up the map, the same phrase tolls seven times: DID NOT DRIVE OUT. A king mutilated as he mutilated others, a woman who negotiates for water, iron chariots offered as an excuse, and a redeemed people putting the Canaanites to forced labour instead of removing them."),
+    ("judg2", "Judges", 2, "The angel of Jehovah comes up from Gilgal to Bochim and reads the verdict the first chapter has been building toward: the people weep, Joshua's generation dies, and a generation arises that did not know Jehovah. The judges come, and the cycle begins: deliverance, relapse, and a worse corruption after each judge dies. Then Jehovah keeps the nations in the land on purpose, as a test."),
+    ("judg3", "Judges", 3, "Israel is left with nations it should have driven out, marries into them, and serves their gods. Othniel is raised up, then Ehud, who kills the fat king of Moab with a hidden sword and walks out past the locked doors. Shamgar kills six hundred with an oxgoad."),
+    ("judg4", "Judges", 4, "Ehud is dead and Israel does evil again under Jabin of Hazor, whose commander Sisera has nine hundred iron chariots. Deborah, a prophetess, judges under her palm tree and sends for Barak, who will not go to battle without her. The victory goes to a woman: Jael drives a tent peg into Sisera's temple."),
+    ("judg5", "Judges", 5, "Deborah and Barak sing the victory. The stars fight from heaven, the brook Kishon sweeps Sisera's army away, Jael is blessed above women, and Sisera's mother waits at the window for a chariot that will not come. The song also calls the tribes to account: some came down to the battle, and some stayed by their sheepfolds and ships."),
+    ("judg6", "Judges", 6, "Midian raids Israel for seven years, and Israel hides in the hills. An angel sits under a terebinth in Ophrah while Gideon threshes wheat in a winepress. He tests God twice with a fleece, and the sign comes true. The chapter ends with the altar of Jehovah-shalom and the name Jerubbaal."),
     ("ruth1", "Ruth", 1, "The quiet counter-story to the Judges: a famine empties the House of Bread, a family flees to Moab and loses its men, and a widow named Naomi turns home 'empty' — while a Moabite daughter-in-law refuses to leave her with the Bible's great oath of loyalty: 'your people my people, your God my God.' Names turn to omens, Naomi renames herself Mara ('bitter'), and the last line opens a barley field where redemption is about to begin."),
     ("1sam1", "1 Samuel", 1, "The book that gives Israel its kings opens on a barren woman. Hannah, provoked year after year by her rival, prays silently at Shiloh until the priest Eli takes her for a drunk; she vows her son to God, and when Samuel is born she carries the weaned boy back and gives him away — 'lent to Jehovah' for life. The FIRST 'Jehovah of armies' in the Bible, a wordplay ('asked') that reaches toward Saul, and the seed of the song (ch 2) that Mary's Magnificat will be built on."),
     ("mal1", "Malachi", 1, "The last of the prophets opens his case, and the people answer back — the move that is the book’s signature: ‘I have loved you’ / ‘in WHAT have you loved us?’ Jacob loved and Esau hated, Edom’s highlands left in rubble, and then the charge that fills the chapter: a priesthood bringing blind, lame and stolen animals to the altar of a God they find, above all, BORING. Try that on the Persian governor, says Malachi — and then, astonishingly, in the last book of the Old Testament: ‘from the rising of the sun to its setting my name is great among the nations.’"),
@@ -484,6 +498,11 @@ CHAPTERS = [
     ("1cor2", "1 Corinthians", 2, "The hidden wisdom, and a preacher who admits he came afraid. Paul says he arrived in Corinth without a surplus of speech or wisdom, “in weakness and in fear and in much trembling,” and decided to know nothing among them but Jesus Christ crucified. The wisdom he does speak is not a secret for initiates: it is the plan God set before the ages, which none of the rulers of this age understood. ⚠ Verse 1 is an apparatus question, “testimony” against “mystery,” and the chapter ends on the mind of Christ, which the congregation has, and which nobody has taught the Lord."),
     ("1cor3", "1 Corinthians", 3, "The planting and the watering, and a building that fire will test. Paul says the Corinthians are still babies in Christ, fed on milk because they could not take solid food; the party slogans are the same, and so is the cure. \u201cI planted, Apollos watered, but God kept making it grow.\u201d The congregation is God\u2019s field and God\u2019s building, and God\u2019s temple, where the Spirit lives. \u26a0 Work that survives the fire earns a reward; work that burns is lost, though the builder is saved, as through fire. The apostle does not say what his own work was. The chapter ends on belonging, from the community up to Christ and from Christ to God."),
     ("1cor4", "1 Corinthians", 4, 'Paul turns the party slogans on himself and Apollos. Servants of Christ are under-rowers and stewards, and a steward is tested on one thing: faithfulness. Paul will not be judged by the Corinthians or by a court, and does not judge himself; he judges nothing before the time, and the Lord will bring the hidden things to light. The chapter ends on a choice between the rod and love: ten thousand child-minders, but one father, and a visit that will test power against talk. ⚠ Two verses carry apparatus readings the editions do not agree on (4:6 and 4:13).'),
+    ("1cor5", "1 Corinthians", 5, 'Paul turns to a case of sexual sin that the congregation has tolerated: a man has his father&rsquo;s wife, and the Corinthians are puffed up about it. The judgment is made in the name of the Lord Jesus with his power, and the man is handed over to Satan for the ruin of the flesh, so that the spirit may be saved. Then a proverb about leaven that spreads, the Passover that has been sacrificed, and a list of the people one should not eat with. &#9888; Verse 5 carries an open reading: whether the ruin falls on the body or on the old life.'),
+    ("1cor6", "1 Corinthians", 6, 'Paul turns from the case of the father&rsquo;s wife to the members who take each other to court before outsiders. Holy ones will judge the world and the angels, so the congregation should be able to settle its own disputes, and it cannot find one wise man to do it. Then the list of 5:11 returns as the test of the kingdom, and the chapter ends on the body: members of Christ, not to be joined to a prostitute, a temple of the Holy Spirit, bought with a price. &#9888; Verse 20 carries a clause in the KJV that the critical text here does not print.'),
+    ("1cor7", "1 Corinthians", 7, 'Paul answers the Corinthians&rsquo; questions about marriage: each has a spouse because of the prevalence of immorality, the spouses owe each other their due, and the unmarried are better off remaining as Paul is. He separates a command of the Lord (the wife should not separate) from his own word, and says the time is shortened and the form of this world is passing away. The chapter ends on the widow, free to marry only in the Lord, and on Paul&rsquo;s claim to have God&rsquo;s spirit. &#9888; Several verses name a choice the text does not settle: &ldquo;his virgin&rdquo; (7:36&ndash;38), and the calling of a slave (7:21).'),
+    ("1cor8", "1 Corinthians", 8, 'Paul turns to meat sacrificed to idols. Knowledge puffs up and love builds up; an idol is nothing, and there is one God, the Father, and one Lord, Jesus Christ. But not everyone has the knowledge, and a weak conscience is defiled when it eats. So the right of the knowing must not become a stumbling block for the weak brother, for whom Christ died; and Paul vows never to eat meat again rather than make his brother fall. &#9888; Verse 6 is Paul&rsquo;s creed of one God and one Lord, with the Father and Jesus each given a preposition.'),
+    ("1cor9", "1 Corinthians", 9, 'Paul defends his apostleship: he is free, he has seen the Lord, and the Corinthians are his seal. He has a right to be supported, to eat and drink and to take a believing wife, and to stop working; he has used none of these, so that the gospel is offered free of charge. He becomes all things to all people, a Jew to Jews and one outside the law to those outside it, weak to the weak, to win some. The chapter ends with the runners in a stadium: one wins the prize, so run to win, and discipline the body lest the preacher himself be disqualified. &#9888; Verse 15 breaks off mid-sentence in the Greek, and the translation keeps the break.'),
     ("1cor13", "1 Corinthians", 13, "The love chapter \u2014 read at weddings, written to a congregation fighting about whose spiritual gift outranked whose. Verses 4-7 are FIFTEEN finite verbs and not one adjective: \u26a0 'love is patient, love is kind' is makrothyme\u012b, chr\u0113steuetai \u2014 'love waits long, love acts kindly' \u2014 and the KJV and ASV kept the verbs where the modern versions flattened them into adjectives, turning love from something that DOES into something that IS. One verb, katarge\u014d, runs four times through the chapter and most versions hide it under four different English words. A bronze mirror, not a glass, and a RIDDLE rather than a darkness. And 'greater', not 'greatest'. \u26a0 Verse 3 turns on a single consonant \u2014 'that I may be BURNED' against 'that I may BOAST' \u2014 and the shelf divides with the manuscripts; no vote is taken here."),
     ("2cor1", "2 Corinthians", 1, "The most personal letter Paul wrote opens like a man exhaling. A year after the argumentative First Corinthians, the relationship had nearly broken — a visit that went badly, rival missionaries who had turned the congregation against him, a severe “letter of tears” — and then, at the last moment, reconciliation. So he does not begin with the usual “I thank my God” but with a Jewish blessing: “Blessed be the God and Father of our Lord Jesus Christ, the Father of compassions and God of all comfort.” The word COMFORT then tolls ten times in five verses, an untranslatable drum-beat, because that is the argument: the God who comforts us in affliction does it so that we can comfort others with the comfort we received. He nearly died “in Asia” — an ordeal he pointedly refuses to describe — and it taught him to trust “God, who raises the dead.” Then the wound the whole warm opening was circling: his enemies had used a changed travel plan to call him a double-talker whose “yes” means nothing, and Paul turns even that into one of his great sentences — every promise of God is “Yes” in Christ, and the church&rsquo;s “Amen” is the echo of it. ⚠ The Spirit is a “down payment” (arrabōn — the same word, still, as a modern Greek engagement ring), and the chapter ends with the apostle defending his authority and then disclaiming it in the same breath: “not that we lord it over your faith, but we are fellow workers for your joy.”"),
     ("gal1", "Galatians", 1, "The angriest letter in the New Testament, and you can hear it in what is MISSING. Every other letter Paul wrote opens with a paragraph of thanks for its readers — even the exasperating Corinthians got one. This one says “grace to you and peace,” and then, where the thanks should stand, drops straight into “I am astonished that you are so quickly deserting…” A first-century reader would feel the cold the instant the courtesy did not come. Rival missionaries had followed Paul into his congregations in Galatia teaching that Gentile converts must be circumcised and keep the law of Moses to belong fully to God — and, evidently, that Paul&rsquo;s own authority was second-hand, borrowed from the apostles in Jerusalem. So the letter opens by denying that twice in its first six words (“an apostle — not FROM men nor THROUGH a man”), pronounces a curse on anyone preaching a different gospel — including himself, including “an angel from heaven,” and says it twice — and then spends the rest of the chapter proving its independence with a travelogue: after the revelation he did not go to Jerusalem, he went to Arabia; three years later he visited Cephas for a fortnight and met no other apostle but James the Lord&rsquo;s brother; the Judean congregations had never even seen his face. ⚠ And the chapter that begins in fury ends in something else entirely — the churches he had once tried to destroy repeating a rumour about him, “the one who once persecuted us is now announcing the faith he once tried to destroy,” and glorifying God because of it."),
@@ -610,6 +629,11 @@ TEASERS_ES = {
     "1cor2": "El cap\u00edtulo 2 es la confesi\u00f3n del predicador: lleg\u00f3 a Corinto sin el excedente de palabra o de sabidur\u00eda, \u00ab en debilidad, con temor y con mucho temblor\u00bb, y resolvi\u00f3 no saber entre ellos nada sino a Jesucristo crucificado. La sabidur\u00eda que s\u00ed habla no es un secreto para iniciados: es el plan que Dios dispuso antes de los siglos, que ninguno de los gobernantes de este siglo entendi\u00f3. \u26a0 El v. 1 tiene una cuesti\u00f3n de aparato, \u00abtestimonio\u00bb frente a \u00abmisterio\u00bb, y el cap\u00edtulo termina en la mente de Cristo, que la congregaci\u00f3n tiene y que nadie ense\u00f1\u00f3 al Se\u00f1or.",
     "1cor3": "Pablo dice que los corintios siguen siendo bebés en Cristo, alimentados con leche porque no podían tomar alimento sólido; los lemas de los bandos son los mismos, y también el remedio. «Yo planté, Apolos regó, pero Dios seguía haciendo crecer». La congregación es campo de Dios, edificio de Dios y templo de Dios, donde habita el Espíritu. ⚠ La obra que sobrevive al fuego recibe recompensa; la que arde se pierde, aunque el constructor se salva, como por fuego. El apóstol no dice cuál fue su propia obra.",
     "1cor4": 'Pablo vuelve sobre los lemas de los bandos y se aplica a sí mismo y a Apolos el lenguaje de siervos. Los servidores de Cristo son remeros subalternos y administradores, y al administrador se le prueba en una sola cosa: la fidelidad. Pablo no será juzgado por los corintios ni por un tribunal, y tampoco se juzga a sí mismo; no juzga nada antes de tiempo, y el Señor sacará a la luz lo oculto. El capítulo termina con una elección entre la vara y el amor: diez mil ayos, pero un solo padre, y una visita que pondrá a prueba el poder frente a las palabras. ⚠ Dos versículos llevan lecturas del aparato sobre las que las ediciones no coinciden (4:6 y 4:13).',
+    "1cor5": "Pablo pasa a un caso de pecado sexual que la congregación ha tolerado: un hombre tiene a la mujer de su padre, y los corintios se sienten orgullosos de ello. El juicio se hace en el nombre del Señor Jesús, con su poder, y el hombre es entregado a Satanás para la ruina de la carne, para que el espíritu sea salvado. Luego, un proverbio sobre la levadura que se extiende, la Pascua que ya ha sido sacrificada y una lista de personas con las que no se debe comer. ⚠ El versículo 5 tiene una lectura abierta: si la ruina cae sobre el cuerpo o sobre la vieja vida.",
+    "1cor6": "Pablo pasa del caso de la mujer del padre a los miembros que llevan sus pleitos unos contra otros ante los de afuera. Los santos juzgarán al mundo y a los ángeles, así que la congregación debería poder zanjar sus propios asuntos, y no encuentra ni un solo sabio que lo haga. Luego la lista de 5:11 vuelve como prueba del reino, y el capítulo termina en el cuerpo: miembros de Cristo, que no deben unirse a una prostituta, templo del espíritu santo, comprados a precio. ⚠ El versículo 20 tiene una cláusula de la KJV que el texto crítico de aquí no imprime.",
+    "1cor7": "Pablo responde a las preguntas de los corintios sobre el matrimonio: cada uno tiene su cónyuge a causa de la inmoralidad, los cónyuges se deben el uno al otro lo debido, y los solteros estarían mejor como Pablo. Separa un mandato del Señor (la esposa no debe separarse) de su propia palabra, y dice que el tiempo se ha acortado y que la forma de este mundo pasa. El capítulo termina con la viuda, libre para casarse solo en el Señor, y con la afirmación de Pablo de tener el Espíritu de Dios. ⚠ Varios versículos nombran una elección que el texto no resuelve: «su virgen» (7:36&ndash;38), y el llamado del esclavo (7:21).",
+    "1cor8": "Pablo pasa a la carne sacrificada a los ídolos. El conocimiento hincha y el amor edifica; un ídolo no es nada, y hay un solo Dios, el Padre, y un solo Señor, Jesucristo. Pero no todos tienen el conocimiento, y una conciencia débil se mancha al comer. Así que el derecho de los que saben no debe ser tropiezo para el hermano débil, por quien Cristo murió; y Pablo promete no volver a comer carne antes que hacer caer a su hermano. ⚠ El versículo 6 es el credo de un solo Dios y un solo Señor, con el Padre y Jesús cada uno con su preposición.",
+    "1cor9": "Pablo defiende su apostolado: es libre, ha visto al Señor, y los corintios son su sello. Tiene derecho a ser sostenido, a comer y beber, a llevar consigo una esposa creyente y a dejar de trabajar; no ha usado ninguno de estos derechos, para ofrecer el evangelio gratuitamente. Se hace todo para todos: judío con los judíos, y sin ley con los que están sin ley, débil con los débiles, para ganar a algunos. El capítulo termina con los corredores del estadio: uno solo recibe el premio, así que corran para ganar, y domen el cuerpo para que el predicador mismo no quede descalificado. ⚠ El versículo 15 se corta a mitad de frase en el griego, y la traducción conserva la interrupción.",
     "1cor13": "El cap\u00edtulo del amor \u2014 le\u00eddo en las bodas, escrito a una congregaci\u00f3n que se peleaba por qui\u00e9n ten\u00eda el don m\u00e1s alto. Los vv. 4-7 son QUINCE verbos conjugados y ning\u00fan adjetivo: \u26a0 \u00abel amor es sufrido, es benigno\u00bb es makrothyme\u012b, chr\u0113steuetai \u2014 \u00abel amor espera largamente, obra con bondad\u00bb. Un solo verbo, katarg\u00e9o, recorre cuatro veces el cap\u00edtulo y RV lo reparte en tres expresiones distintas. Un espejo de bronce, no de vidrio, y un ENIGMA en vez de una oscuridad. Y en el v. 13 el castellano lee mejor que el ingl\u00e9s: \u00abla MAYOR\u00bb es comparativo, como el griego, mientras que todas las versiones inglesas fuerzan el superlativo. \u26a0 El v. 3 depende de una sola consonante \u2014 \u00abpara ser QUEMADO\u00bb frente a \u00abpara JACTARME\u00bb \u2014 y aqu\u00ed no se vota.",
     "rom1": "El comienzo de la carta más consecuente jamás escrita. Pablo está en Corinto, con unos cincuenta y seis años, el Mediterráneo oriental a la espalda y España delante —y necesita el respaldo de unas congregaciones de la capital que nunca ha visto y que no fundó—. Así que les escribe una carta de presentación, y le sale el argumento más sostenido del Nuevo Testamento. Los siete primeros versículos son UNA sola frase griega en la que se llama ESCLAVO antes de llamarse apóstol; luego una aproximación cuidadosa, y hasta simpática, a unos desconocidos: se ofrece a darles un don espiritual y acto seguido se corrige y dice que quiere recibir otro. Y entonces, en dos frases, la tesis que reorganizó Europa: «No me avergüenzo del evangelio; porque es poder de Dios para salvación a todo el que cree, al judío primeramente y también al griego. Porque en él se revela la justicia de Dios, de fe a fe» —citando a Habacuc, la respuesta que el profeta subió a su atalaya a esperar, y la línea en la que Agustín, Lutero y Wesley fecharon cada uno su vuelco—. El resto del capítulo es la acusación: la humanidad conoció a Dios, no quiso honrarlo, y cambió su gloria bajando por la lista de criaturas de Génesis 1 al revés —hombre, aves, bestias, reptiles—, tras lo cual Dios, tres veces, sencillamente «los entregó». ⚠ Contiene el párrafo más discutido de la Biblia, impreso aquí con el vocabulario desplegado, las lecturas con su linaje y ningún voto emitido. ⚠ Y es una trampa: la lista de vicios es cebo, y la frase que sigue al corte de capítulo la cierra —«por lo cual estás sin defensa, quienquiera que seas tú que juzgas»—.",
     "rom2": "La trampa que el cap\u00edtulo 1 tendi\u00f3 se cierra en la primera palabra: \u00abpor lo cual eres inexcusable, quienquiera que seas t\u00fa que juzgas \u2014pues en lo que juzgas a otro, te condenas a ti mismo\u2014\u00bb. Dios no muestra ACEPCI\u00d3N DE PERSONAS, y paga a cada uno conforme a sus obras, \u00abal jud\u00edo primeramente y tambi\u00e9n al griego\u00bb \u2014la misma frase de la tesis de la carta, ahora cortando hacia el juicio en vez de hacia el avance del evangelio\u2014. \u26a0 Luego la frase que sobrevivir\u00eda al argumento que la rodea: los gentiles que nunca recibieron la ley pueden, aun as\u00ed, hacer por naturaleza lo que la ley exige, \u00abley para s\u00ed mismos\u00bb, su obra \u00abescrita en sus corazones\u00bb \u2014lo m\u00e1s cercano en el Nuevo Testamento a una doctrina de la conciencia y la ley natural, citada durante siglos por lectores que nunca abrieron el resto de la carta\u2014. Cuatro preguntas ret\u00f3ricas golpean al maestro seguro de s\u00ed que no puede ense\u00f1arse a s\u00ed mismo \u2014hurto, adulterio, \u00eddolos, sacrilegio\u2014 y \u00abel nombre de Dios es blasfemado entre los gentiles por causa de vosotros, como est\u00e1 escrito\u00bb. Cierra con la frase m\u00e1s dura que la propia nota final del cap\u00edtulo 1 anunci\u00f3 de antemano: el verdadero jud\u00edo lo es interiormente, y la circuncisi\u00f3n es la del coraz\u00f3n, \u00aben esp\u00edritu, no en letra\u00bb.",
@@ -735,6 +759,11 @@ TEASERS_ES = {
     "jude1": "La carta breve más feroz del NT: un hermano de Jesús que se llama solo «esclavo», luchando por «la fe una vez dada» — y que cita a Enoc, un libro que no está en la Biblia.",
     "2john1": "El libro más corto de la Biblia: \u00abel anciano\u00bb a \u00abuna se\u00f1ora elegida\u00bb — verdad y amor, y una puerta que no se abre.",
     "judg1": "La conquista contada por debajo: empieza bien, y luego, tribu por tribu, la misma frase suena siete veces — no expuls\u00f3.",
+    "judg2": "El ángel de Jehová sube a Boquim y lee el veredicto: muere Josué, surge una generación que no conocía a Jehová, y empieza el ciclo de los jueces.",
+    "judg3": "Israel se casa con los pueblos que debía expulsar y sirve a sus dioses; Otniel, Ehúd y Samgar lo libran, y Ehúd mata a Eglón con una espada oculta.",
+    "judg4": "Israel vuelve a hacer lo malo; Débora, profetisa, juzga bajo su palmera y envía por Barac, que no irá sin ella. La victoria es de una mujer: Jael clava una estaca en la sien de Sísara.",
+    "judg5": "Débora y Barac cantan la victoria: desde el cielo pelean las estrellas, el torrente Quisón arrastra a Sísara, y Jael es bendita sobre las mujeres.",
+    "judg6": "Madián oprime a Israel siete años; el ángel se sienta bajo el terebinto de Ofra, Gedeón bate trigo en el lagar, y dos veces pone a prueba a Dios con un vellón.",
     "ruth1": "La contrahistoria serena de los Jueces: hambre, huida a Moab, tres muertes — y una nuera moabita que no se aparta con el gran juramento: «tu pueblo mi pueblo, tu Dios mi Dios».",
     "1sam1": "El libro que da reyes a Israel abre sobre una mujer estéril: Ana ora en silencio en Silo, el sacerdote Elí la toma por ebria, y cuando nace Samuel lo entrega —«prestado a Jehová» de por vida. El primer «Jehová de los ejércitos» de la Biblia, y la semilla del cántico que será el Magníficat.",
     "josh1": "\u00abMois\u00e9s ha muerto\u00bb — y ahora, cruza el Jord\u00e1n. Tres veces: s\u00e9 fuerte y resuelto; y el valor es para el rollo, no la espada.",
@@ -940,7 +969,7 @@ TEASERS_ES = {
     "rev22": "El \u00faltimo cap\u00edtulo de la Biblia: el r\u00edo, el \u00e1rbol de la vida en las dos orillas y hojas para la curaci\u00f3n de las naciones. \u26a0 Dos variantes de aqu\u00ed valen m\u00e1s que muchos libros de cr\u00edtica textual. El v. 14 es \u00ablavan sus ropas\u00bb en todos los textos cr\u00edticos y tambi\u00e9n en el mayoritario bizantino \u2014RV y NVI aciertan aqu\u00ed donde la King James se equivoca\u2014. Y el v. 19 dice \u00ab\u00e1rbol de la vida\u00bb en todos los testigos griegos: el \u00ablibro de la vida\u00bb de la RV viene de Erasmo retraduciendo desde el lat\u00edn en 1516, porque a su \u00fanico manuscrito le faltaba la \u00faltima hoja. La frase que proh\u00edbe a\u00f1adir al libro tiene, en la Biblia castellana m\u00e1s le\u00edda, una palabra que le fue a\u00f1adida.",
 }
 
-NEXT_UP = "Acts 28"            # (legacy; nav is now book-scoped in nav_strip; Acts is complete)
+NEXT_UP = "Judges 7"            # (legacy; nav is now book-scoped in nav_strip; Acts is complete)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),
@@ -1049,24 +1078,6 @@ SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3
   <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
 </svg>"""
 
-# The hub mark: a byte-for-byte copy of <svg class="mark"> in the hand-written
-# root index.html, used in the small breadcrumb line above the brand (see
-# header() and .hubcrumb in style.css). That file is hand-written, not built
-# by a script here, so there is nothing to import — if the hub mark ever
-# changes, this copy needs to change with it, same as every other cross-file
-# "port it by hand" case in this repo.
-HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
-  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
-  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
-  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
-  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
-  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
-  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
-  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
-  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
-  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
-</svg>"""
-
 CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="7" height="15" aria-hidden="true" '
                 'focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" '
                 'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
@@ -1097,8 +1108,8 @@ def header(active="", lang="en"):
     </details>
   </div>
   <div class="hubcrumb">
-    <a class="hublink" href="{SITE_URL}/" aria-label="Mister Library — every publication">
-      {HUB_MARK_SVG}<span class="hubwm">Mister Library</span>
+    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
+      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
     </a>
     {CRUMBSEP_SVG}
   </div>
@@ -1141,8 +1152,9 @@ def header(active="", lang="en"):
     # the language switch, which is the one thing up there that IS a control.
     return f"""<header class="site-head">
   <div class="utilnav utilnav-right">
-    <form class="headersearch" action="search.html" method="get" role="search">
-      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
+    <form class="headersearch" action="{BIBLE_SEARCH_URL}" method="get" role="search">
+      <input type="hidden" name="pub" value="bible"/>
+      <input type="search" name="q" id="headerSearch" placeholder="Search or John 3:16" aria-label="Search the Bible, or jump to a verse"/>
     </form>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
@@ -1153,14 +1165,14 @@ def header(active="", lang="en"):
     </details>
   </div>
   <div class="hubcrumb">
-    <a class="hublink" href="{SITE_URL}/" aria-label="Mister Library — every publication">
-      {HUB_MARK_SVG}<span class="hubwm">Mister Library</span>
+    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
+      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
     </a>
     {CRUMBSEP_SVG}
   </div>
   <a class="brand" href="{HOME_URL}">
     {SCROLL_SVG}
-    <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
+    <span class="brand-name">Mister <span class="lib">Translation</span></span>
   </a>
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
@@ -1176,8 +1188,9 @@ def header(active="", lang="en"):
       <div class="mobmenu-sep"></div>
       <a href="ask/ask.html">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
-      <form class="headersearch" action="search.html" method="get" role="search">
-        <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
+      <form class="headersearch" action="{BIBLE_SEARCH_URL}" method="get" role="search">
+        <input type="hidden" name="pub" value="bible"/>
+        <input type="search" name="q" id="headerSearchMob" placeholder="Search or John 3:16" aria-label="Search the Bible, or jump to a verse"/>
       </form>
       <div class="mobmenu-sep"></div>
       <a href="{HOME_URL}" class="cur">English</a>
@@ -1207,22 +1220,20 @@ def header(active="", lang="en"):
 _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
                     if GOATCOUNTER_CODE else "")
 
-# The five sibling publications, same names/order/hrefs the hub (index.html) itself uses for
-# their cards -- every other blog's footer already links out to its siblings this way (see
-# e.g. finance/index.html's footer); the Bible project's footer didn't, until 2026-09-19. Bible
-# pages sit at the site root (or one level down under a <base> tag on dict/ency/atlas stub
-# pages -- see page()), so a root-relative "finance/" resolves correctly from anywhere.
-_SIBLING_LINKS = ('<a href="finance/">The Librarian\'s Ledger</a> · '
-                   '<a href="travel/">The Librarian Abroad</a> · '
-                   '<a href="health/">The Librarian\'s Regimen</a> · '
-                   '<a href="notebook/">The Librarian\'s Notebook</a> · '
-                   '<a href="west/">Eight Miles West</a>')
+# The five sibling publications, linked from every Bible page's footer (since
+# 2026-09-19). They moved to their own m8k.io subdomains 2026-10-10, so these are
+# absolute URLs now (the old mistertranslation.com/<blog>/ paths only 301 there).
+_SIBLING_LINKS = ('<a href="https://ledger.m8k.io/">The Librarian\'s Ledger</a> · '
+                   '<a href="https://abroad.m8k.io/">The Librarian Abroad</a> · '
+                   '<a href="https://regimen.m8k.io/">The Librarian\'s Regimen</a> · '
+                   '<a href="https://notebook.m8k.io/">The Librarian\'s Notebook</a> · '
+                   '<a href="https://west.m8k.io/">Eight Miles West</a>')
 
 FOOTER = f"""<footer class="site-foot">
-  <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
+  <p>Mister Translation — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacy</a></p>
   <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -1232,7 +1243,7 @@ ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
@@ -1324,6 +1335,14 @@ def _og_tags(title, desc, url="", image="", og_type=None):
         full = f"{SITE_URL}/" if url == "index.html" else f"{SITE_URL}/{url}"
         tags.insert(0, f'<link rel="canonical" href="{full}"/>')
         tags.append(f'<meta property="og:url" content="{full}"/>')
+        if url == "index.html":
+            # Home page only (2026-10-07, restored 2026-10-10): an explicit robots
+            # meta + a rel=sitemap pointer. They were first hand-added to index.html,
+            # and the 10-10 rebuild that made the Bible home the front page wiped
+            # them -- index.html is GENERATED, so they live here now.
+            tags.insert(1, '<meta name="robots" content="index,follow,max-image-preview:large"/>')
+            tags.insert(2, f'<link rel="sitemap" type="application/xml" title="Sitemap" '
+                           f'href="{SITE_URL}/sitemap.xml"/>')
     return "\n" + "\n".join(tags)
 
 
@@ -1402,7 +1421,7 @@ def _chapter_jsonld(book, num, desc, url, lang="en", label=None):
         f'"isPartOf":{{"@type":"Book","name":{esc(book)}}},'
         f'"inLanguage":{esc(lang)},'
         '"author":{"@type":"Person","name":"Mr. Librarian"},'
-        '"publisher":{"@type":"Organization","name":"The MisterLibrarian Bible Project",'
+        '"publisher":{"@type":"Organization","name":"Mister Translation",'
         f'"url":{esc(site)}}}}},'
         '{"@type":"BreadcrumbList","itemListElement":['
         + crumbs +
@@ -3316,7 +3335,7 @@ leads with its narrative maps before the alphabetical index at the back.</p>
 <p class="lede">Jump here straight from any chapter's own 🗺️ Atlas toggle, or browse chapter by chapter.</p>
 {''.join(sections)}"""
     out = page(f"Atlas — {SITE_NAME}", body, active="library",
-               desc="An atlas of the MisterLibrarian Bible Project — the big journeys mapped in full, "
+               desc="An atlas of Mister Translation — the big journeys mapped in full, "
                     "every named place in an A-Z gazetteer, and a chapter-by-chapter browse.", url="atlas.html",
                og_type="website")
     open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
@@ -3422,7 +3441,7 @@ chapter is translated, so the library is always exactly as deep as the translati
   shelf.</p>
 </div>"""
     out = page(f"Library — {SITE_NAME}", body, active="library",
-               desc="The reference room of the MisterLibrarian Bible Project: concordance, dictionary, "
+               desc="The reference room of Mister Translation: concordance, dictionary, "
                     "encyclopedia, and cross-references — all growing with the translation.", url="library.html",
                og_type="website")
     open(os.path.join(OUT, "library.html"), "w", encoding="utf-8").write(out)
@@ -4513,7 +4532,7 @@ still ahead.</p>
 
 {_note_nudge("Table of Contents", "toc.html")}"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
-               desc="Progress tracker for the MisterLibrarian Bible Project: every published chapter of "
+               desc="Progress tracker for Mister Translation: every published chapter of "
                     "the fresh-from-the-Hebrew translation, and everything still ahead.", url="toc.html",
                og_type="website")
     open(os.path.join(OUT, "toc.html"), "w", encoding="utf-8").write(out)
@@ -4536,7 +4555,7 @@ def votd_entries(chapters):
     return entries
 
 
-def build_index(chapters):
+def build_index(chapters, ref):
     # "Newest" = most-recently-published = the LAST panel in the source file
     # (PUBLISH_ORDER), NOT CHAPTERS[-1]: CHAPTERS is in canonical order, so its tail is
     # the canonically-last chapter (currently Exodus), not the one shipped most recently.
@@ -4559,20 +4578,16 @@ def build_index(chapters):
 <section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
   <div class="hero-copy">
-  <p>Welcome. This project translates the Bible into modern English directly from the original Hebrew —
-  the Masoretic Text, reproduced verse-by-verse alongside the new rendering so every choice can be checked
-  against the source. Beneath each chapter sit <strong>translator's notes, verse by verse</strong>,
-  explaining each decision and comparing it against seven landmark versions: the NIV, the KJV, the
-  Douay-Rheims, The Living Bible, the 1599 Geneva Bible, the American Standard Version, and the New World
-  Translation.</p>
-  <p>No verse is smoothed over, no difficulty hidden: where the Hebrew puns, the translation puns or the
-  notes confess it can't; where the text is uncertain or the manuscripts disagree, the notes say so plainly.
-  The work advances one chapter per sitting — follow along from the beginning, or jump in at the newest
-  chapter.</p>
+  <p>Modern English, straight from the Hebrew and the Greek, with the original text beside every verse and
+  <strong>translator's notes</strong> weighing each choice against seven landmark versions.</p>
   <div class="hero-cta">
     <a class="btn" href="genesis-1.html">Start at Genesis 1</a>
     <a class="btn btn-2" href="{chapter_filename(latest[1], latest[2])}">Newest: {latest[1]} {latest[2]}</a>
   </div>
+  <p class="hero-more">No verse is smoothed over and no difficulty hidden: where the Hebrew puns, the
+  translation puns or the notes admit it can't; where the manuscripts disagree, the notes say so. The seven
+  versions are the NIV, the KJV, the Douay-Rheims, The Living Bible, the 1599 Geneva, the ASV and the New
+  World Translation. <a href="about.html">More on the method →</a></p>
   </div>
 </section>
 
@@ -4596,6 +4611,25 @@ def build_index(chapters):
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
 </div>
 
+<h2>The reference room</h2>
+<p class="lede">Every shelf grows as each chapter is translated, so the library is always exactly as deep
+as the translation itself.</p>
+<div class="cardgrid refroom">
+  <a class="card" href="dictionary.html"><div class="card-t">\U0001F4D6 Dictionary</div>
+  <div class="card-d">{ref["dict"]:,} terms behind the translation, each linked to the note that first discussed it.</div></a>
+  <a class="card" href="encyclopedia.html"><div class="card-t">\U0001F3FA Encyclopedia</div>
+  <div class="card-d">{ref["ency"]:,} people, places and crafts, every entry verse-linked.</div></a>
+  <a class="card" href="atlas.html"><div class="card-t">\U0001F5FA\uFE0F Atlas</div>
+  <div class="card-d">{ref["mapped"]:,} places mapped so far, plus the big journeys traced in full.</div></a>
+  <a class="card" href="concordance.html"><div class="card-t">\U0001F520 Concordance</div>
+  <div class="card-d">{ref["words"]:,} English words, each indexed to every verse it appears in.</div></a>
+  <a class="card" href="chronology.html"><div class="card-t">\U0001F570 Chronology</div>
+  <div class="card-d">Where you are in time: the Bible's own year-count, Ussher's dates, and what archaeology can date.</div></a>
+  <a class="card" href="toc.html"><div class="card-t">\U0001F4DC Progress</div>
+  <div class="card-d">{len(CHAPTERS):,} of {TOTAL_BIBLE_CHAPTERS:,} chapters translated, book by book, in the full Table of Contents.</div></a>
+</div>
+<p class="muted" style="margin:10px 0 0"><a href="library.html">\U0001F4DA Enter the library →</a></p>
+
 <h2>All 66 Books</h2>
 <p class="lede">Every book of the Bible, and how far the translation has reached in each. A book in
 gold has been started — open it for its chapters and the commentary on each one.</p>
@@ -4616,12 +4650,12 @@ var MTLIB_VOTD = {votd_json};
 }})();
 </script>
 
-{_note_nudge(SITE_NAME, HOME_URL)}"""
-    out = page(SITE_NAME, body, active="home",
+{_note_nudge(SITE_NAME, "")}"""
+    out = page(f"{SITE_NAME} — The Bible in modern English", body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
-               url=HOME_URL, og_type="website")
-    open(os.path.join(OUT, HOME_URL), "w", encoding="utf-8").write(out)
+               url=HOME_FILE, og_type="website")
+    open(os.path.join(OUT, HOME_FILE), "w", encoding="utf-8").write(out)
 
 
 def build_about():
@@ -4664,7 +4698,7 @@ def build_about():
   {_stats_box()}
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",
-               desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
+               desc="How Mister Translation works: translated from the Masoretic Hebrew, "
                     "essentially literal in a modern register, compared against seven landmark versions.",
                url="about.html", og_type="website")
     open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(out)
@@ -5646,30 +5680,66 @@ function toggleHeb(){{
         built.append((slug, book, num, es_title))
 
     # Spanish home / índice
-    built.sort(key=lambda x: (x[1], x[2]))
+    _book_pos = {b: i for i, (b, _n) in enumerate(BOOKS_OT + BOOKS_NT)}   # Bible order, not A-Z
+    built.sort(key=lambda x: (_book_pos.get(x[1], 999), x[2]))
     cards = "\n".join(
         f'  <a class="card" href="{chapter_filename(b, n)[:-5]}.es.html"><div class="card-t">{t}</div>'
         f'<div class="card-d">{es_teaser(s)}</div></a>'
         for (s, b, n, t) in built)
-    home = f"""<h1 class="pagetitle">La Traducción Mister</h1>
-<p class="lede">Una nueva traducción de la Biblia <strong>desde el hebreo y el griego</strong>, capítulo por
-capítulo y versículo por versículo, con notas del traductor y comparación con la Reina-Valera, la NVI, La Biblia
-de las Américas y Dios Habla Hoy. El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la
-Reina-Valera.</p>
+    # Reworked 2026-10-10 to mirror the English home (now the site's front page):
+    # the same Isaiah-scroll hero, a short welcome above the buttons, the rest below
+    # them, and a reference-room row -- the Spanish biblioteca is real now, so the
+    # old "the library lives in English for now" note is gone.
+    def _n(x):                               # Spanish digit grouping: 1.189
+        return f"{x:,}".replace(",", ".")
+    home = f"""<figure class="fronthero">
+    <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="eager"
+      alt="Dos columnas del Gran Rollo de Isaías de Qumrán: hebreo escrito a mano sobre pergamino, con una grieta antigua entre las hojas"/>
+    <figcaption>
+      <span class="ms-name">El Gran Rollo de Isaías — Qumrán, siglo II a. C.</span>
+      Dos columnas del <em>Gran Rollo de Isaías</em> (1QIsa<sup>a</sup>), de la Cueva 1 de Qumrán: la copia completa
+      más antigua de un libro de la Biblia, el tesoro para el que se construyó el Santuario del Libro en Jerusalén.
+      <span class="ms-credit">Fotografía: Ardon Bar Hama — vía
+      <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · dominio público (detalle)</span>
+    </figcaption>
+  </figure>
+<section class="hero">
+  <h1>Una nueva traducción de la Biblia,<br/>hecha capítulo por capítulo.</h1>
+  <div class="hero-copy">
+  <p>Español moderno, directo del hebreo y del griego, con el texto original junto a cada versículo y
+  <strong>notas del traductor</strong> que comparan cada decisión con la Reina-Valera, la NVI, La Biblia de las
+  Américas y Dios Habla Hoy.</p>
+  <div class="hero-cta">
+    <a class="btn" href="genesis-1.es.html">Empezar en Génesis 1</a>
+    <a class="btn btn-2" href="#capitulos">Capítulos en español: {_n(len(built))}</a>
+  </div>
+  <p class="hero-more">El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la Reina-Valera. Nada se
+  traduce a la ligera: «bóveda», no «expansión»; «la humanidad», no «el hombre». Esta edición crece capítulo por
+  capítulo detrás de la <a href="{HOME_URL}">edición en inglés</a>, que va más adelantada; si además lees inglés,
+  allí puedes mostrar u ocultar el hebreo, el inglés y el español, versículo por versículo.</p>
+  </div>
+</section>
 
-<div class="panel prose">
-  <h2 style="margin-top:2px">Una edición que está naciendo</h2>
-  <p>Esta es la edición en español, apenas comenzando y creciendo <strong>capítulo por capítulo</strong> junto a
-  la <a href="{HOME_URL}">edición en inglés</a>, que va más adelantada. Por ahora la biblioteca completa
-  (enciclopedia, diccionario, atlas, cronología) y el aparato de notas más extenso viven en inglés; todo eso se
-  irá traduciendo. Nada se traduce a la ligera: el texto viene del hebreo con el mismo cuidado que la edición
-  inglesa — «bóveda», no «expansión»; «la humanidad», no «el hombre» — y las notas comparan con la Reina-Valera
-  en vez de con las versiones inglesas.</p>
-  <p>Si además lees inglés, en cada capítulo de la edición inglesa puedes <strong>activar u ocultar</strong> el
-  hebreo, el inglés y el español a la vez, versículo por versículo.</p>
+<h2>La sala de consulta</h2>
+<p class="lede">Cada estante crece con cada capítulo traducido, así que la biblioteca siempre tiene
+exactamente la profundidad de la traducción.</p>
+<div class="cardgrid refroom">
+  <a class="card" href="diccionario.html"><div class="card-t">\U0001F4D6 Diccionario</div>
+  <div class="card-d">{_n(es_lib[2])} términos detrás de la traducción, cada uno enlazado a la nota que lo trató primero.</div></a>
+  <a class="card" href="enciclopedia.html"><div class="card-t">\U0001F3FA Enciclopedia</div>
+  <div class="card-d">{_n(es_lib[3])} personas, lugares y oficios, cada entrada enlazada a sus versículos.</div></a>
+  <a class="card" href="atlas-es.html"><div class="card-t">\U0001F5FA\uFE0F Atlas</div>
+  <div class="card-d">{_n(es_lib[4])} lugares en el mapa hasta ahora, capítulo por capítulo.</div></a>
+  <a class="card" href="concordancia.html"><div class="card-t">\U0001F520 Concordancia</div>
+  <div class="card-d">{_n(es_lib[0])} palabras en español, cada una con todos los versículos donde aparece.</div></a>
+  <a class="card" href="#capitulos"><div class="card-t">\U0001F4DC Progreso</div>
+  <div class="card-d">{_n(len(built))} de {_n(TOTAL_BIBLE_CHAPTERS)} capítulos ya están en español.</div></a>
+  <a class="card" href="{HOME_URL}"><div class="card-t">\U0001F310 Edición en inglés</div>
+  <div class="card-d">La edición más adelantada, con la cronología y el aparato de notas completo.</div></a>
 </div>
+<p class="muted" style="margin:10px 0 0"><a href="biblioteca.html">\U0001F4DA Entrar en la biblioteca →</a></p>
 
-<h2>Capítulos disponibles</h2>
+<h2 id="capitulos">Capítulos en español</h2>
 <div class="cardgrid">
 {cards}
 </div>"""
@@ -6570,7 +6640,6 @@ def main():
     _render_default_card(os.path.join(OUT, "img", "og-default.es.png"), "es")
     build_chapter_pages(chapters)
     build_toc()
-    build_index(chapters)
     build_about()
     build_old_testament()
     build_new_testament()
@@ -6589,6 +6658,8 @@ def main():
     build_atlas_entry_pages()
     build_route_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
+    build_index(chapters, {"dict": n_dict, "ency": n_places + n_people + n_things,
+                           "mapped": n_mapped, "words": n_words})
     n_search = build_search_index()
     build_search_page()
     n_feed = build_feed_page()
@@ -6606,7 +6677,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
