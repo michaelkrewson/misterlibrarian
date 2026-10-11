@@ -29831,7 +29831,6 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
-    "josh21": "Searched Wikimedia Commons for Shiloh and the tabernacle, for the Levitical cities, and for Hebron and Caleb. The results were public-domain book scans and no scene from Joshua 21, so the page carries no picture.",
     "judg6": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg5": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
@@ -35435,6 +35434,20 @@ CHRON_CHAPTERS["josh20"] = dict(era="exodus",
 CHRON_CHAPTERS["josh21"] = dict(era="exodus",
     when="The heads of the Levites come to Eleazar, Joshua and the tribal chiefs at Shiloh and ask for the cities and pasture-land Moses had promised them, and the lots are cast: thirteen cities for Aaron's sons, ten for the rest of Kohath, thirteen for Gershon, twelve for Merari, forty-eight in all. The Masoretic text drops the four cities of Reuben (verses 36-37), which the Chronicles parallel supplies. The chapter ends with the formula that the land was given and that not one word failed.",
     clock="Like chapters 13-20, a legal/administrative chapter with no date or duration of its own; it follows the division of the land at Shiloh (18:1, 19:51) and the book does not say how long afterwards. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
+CHAPTER_ART["josh21"] = [dict(
+    file="joshua-21-city-of-refuge-foster-1897.jpg",
+    title="The City of Refuge",            title_es="La ciudad de refugio",
+    artist="Illustrators of the 1897 Bible Pictures and What They Teach Us by Charles Foster",
+    year="1897",
+    location="Printed book: Bible Pictures and What They Teach Us (1897), digitised on Wikimedia Commons",
+    location_es="Libro impreso: Bible Pictures and What They Teach Us (1897), digitalizado en Wikimedia Commons",
+    alt="Black-and-white engraving: a sword-carrying pursuer runs toward a fugitive who is held back at a city gate by two bearded men.",
+    note="An 1897 engraving of the scene Joshua 20 describes: the man who killed by error reaching the gate of a city of refuge, where the elders take him in while the avenger is kept back. The picture illustrates the law, not this chapter's lists; it is here because Joshua 21 names the cities of refuge among the Levites' towns.",
+    note_es="Un grabado de 1897 de la escena que describe Josué 20: el que mató sin querer llega a la puerta de una ciudad de refugio, donde los ancianos lo acogen mientras el vengador es contenido. La imagen ilustra la ley, no las listas de este capítulo; está aquí porque Josué 21 nombra las ciudades de refugio entre las ciudades de los levitas.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Foster_Bible_Pictures_0083-1_The_City_of_Refuge.jpg",
+)]
 
 CHAPTER_ART["josh20"] = [dict(
     file="josh20-roberts-hebron-1839.jpg",
