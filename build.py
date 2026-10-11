@@ -5652,30 +5652,66 @@ function toggleHeb(){{
         built.append((slug, book, num, es_title))
 
     # Spanish home / índice
-    built.sort(key=lambda x: (x[1], x[2]))
+    _book_pos = {b: i for i, (b, _n) in enumerate(BOOKS_OT + BOOKS_NT)}   # Bible order, not A-Z
+    built.sort(key=lambda x: (_book_pos.get(x[1], 999), x[2]))
     cards = "\n".join(
         f'  <a class="card" href="{chapter_filename(b, n)[:-5]}.es.html"><div class="card-t">{t}</div>'
         f'<div class="card-d">{es_teaser(s)}</div></a>'
         for (s, b, n, t) in built)
-    home = f"""<h1 class="pagetitle">La Traducción Mister</h1>
-<p class="lede">Una nueva traducción de la Biblia <strong>desde el hebreo y el griego</strong>, capítulo por
-capítulo y versículo por versículo, con notas del traductor y comparación con la Reina-Valera, la NVI, La Biblia
-de las Américas y Dios Habla Hoy. El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la
-Reina-Valera.</p>
+    # Reworked 2026-10-10 to mirror the English home (now the site's front page):
+    # the same Isaiah-scroll hero, a short welcome above the buttons, the rest below
+    # them, and a reference-room row -- the Spanish biblioteca is real now, so the
+    # old "the library lives in English for now" note is gone.
+    def _n(x):                               # Spanish digit grouping: 1.189
+        return f"{x:,}".replace(",", ".")
+    home = f"""<figure class="fronthero">
+    <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="eager"
+      alt="Dos columnas del Gran Rollo de Isaías de Qumrán: hebreo escrito a mano sobre pergamino, con una grieta antigua entre las hojas"/>
+    <figcaption>
+      <span class="ms-name">El Gran Rollo de Isaías — Qumrán, siglo II a. C.</span>
+      Dos columnas del <em>Gran Rollo de Isaías</em> (1QIsa<sup>a</sup>), de la Cueva 1 de Qumrán: la copia completa
+      más antigua de un libro de la Biblia, el tesoro para el que se construyó el Santuario del Libro en Jerusalén.
+      <span class="ms-credit">Fotografía: Ardon Bar Hama — vía
+      <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · dominio público (detalle)</span>
+    </figcaption>
+  </figure>
+<section class="hero">
+  <h1>Una nueva traducción de la Biblia,<br/>hecha capítulo por capítulo.</h1>
+  <div class="hero-copy">
+  <p>Español moderno, directo del hebreo y del griego, con el texto original junto a cada versículo y
+  <strong>notas del traductor</strong> que comparan cada decisión con la Reina-Valera, la NVI, La Biblia de las
+  Américas y Dios Habla Hoy.</p>
+  <div class="hero-cta">
+    <a class="btn" href="genesis-1.es.html">Empezar en Génesis 1</a>
+    <a class="btn btn-2" href="#capitulos">Capítulos en español: {_n(len(built))}</a>
+  </div>
+  <p class="hero-more">El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la Reina-Valera. Nada se
+  traduce a la ligera: «bóveda», no «expansión»; «la humanidad», no «el hombre». Esta edición crece capítulo por
+  capítulo detrás de la <a href="{HOME_URL}">edición en inglés</a>, que va más adelantada; si además lees inglés,
+  allí puedes mostrar u ocultar el hebreo, el inglés y el español, versículo por versículo.</p>
+  </div>
+</section>
 
-<div class="panel prose">
-  <h2 style="margin-top:2px">Una edición que está naciendo</h2>
-  <p>Esta es la edición en español, apenas comenzando y creciendo <strong>capítulo por capítulo</strong> junto a
-  la <a href="{HOME_URL}">edición en inglés</a>, que va más adelantada. Por ahora la biblioteca completa
-  (enciclopedia, diccionario, atlas, cronología) y el aparato de notas más extenso viven en inglés; todo eso se
-  irá traduciendo. Nada se traduce a la ligera: el texto viene del hebreo con el mismo cuidado que la edición
-  inglesa — «bóveda», no «expansión»; «la humanidad», no «el hombre» — y las notas comparan con la Reina-Valera
-  en vez de con las versiones inglesas.</p>
-  <p>Si además lees inglés, en cada capítulo de la edición inglesa puedes <strong>activar u ocultar</strong> el
-  hebreo, el inglés y el español a la vez, versículo por versículo.</p>
+<h2>La sala de consulta</h2>
+<p class="lede">Cada estante crece con cada capítulo traducido, así que la biblioteca siempre tiene
+exactamente la profundidad de la traducción.</p>
+<div class="cardgrid refroom">
+  <a class="card" href="diccionario.html"><div class="card-t">\U0001F4D6 Diccionario</div>
+  <div class="card-d">{_n(es_lib[2])} términos detrás de la traducción, cada uno enlazado a la nota que lo trató primero.</div></a>
+  <a class="card" href="enciclopedia.html"><div class="card-t">\U0001F3FA Enciclopedia</div>
+  <div class="card-d">{_n(es_lib[3])} personas, lugares y oficios, cada entrada enlazada a sus versículos.</div></a>
+  <a class="card" href="atlas-es.html"><div class="card-t">\U0001F5FA\uFE0F Atlas</div>
+  <div class="card-d">{_n(es_lib[4])} lugares en el mapa hasta ahora, capítulo por capítulo.</div></a>
+  <a class="card" href="concordancia.html"><div class="card-t">\U0001F520 Concordancia</div>
+  <div class="card-d">{_n(es_lib[0])} palabras en español, cada una con todos los versículos donde aparece.</div></a>
+  <a class="card" href="#capitulos"><div class="card-t">\U0001F4DC Progreso</div>
+  <div class="card-d">{_n(len(built))} de {_n(TOTAL_BIBLE_CHAPTERS)} capítulos ya están en español.</div></a>
+  <a class="card" href="{HOME_URL}"><div class="card-t">\U0001F310 Edición en inglés</div>
+  <div class="card-d">La edición más adelantada, con la cronología y el aparato de notas completo.</div></a>
 </div>
+<p class="muted" style="margin:10px 0 0"><a href="biblioteca.html">\U0001F4DA Entrar en la biblioteca →</a></p>
 
-<h2>Capítulos disponibles</h2>
+<h2 id="capitulos">Capítulos en español</h2>
 <div class="cardgrid">
 {cards}
 </div>"""
