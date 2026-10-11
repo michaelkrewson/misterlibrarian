@@ -971,3 +971,13 @@ a.directions:hover { border-color: var(--olive); text-decoration: none; }
 .topnav a.sib { border-color: transparent; }
 .topnav a.sib:hover, .mobmenu-panel a.sib:hover { color: #5eb3d6; border-color: #2f4257; opacity: 1; }
 .sibfoot { margin-top: .55rem; font-size: .82rem; opacity: .72; }
+
+/* m8k mark (2026-10-10, Michael's choice): replaces the round Mister Library badge;
+   links to m8k.io, which lists every publication. The 8 tips over into an infinity sign. */
+.hublink .hubwm.m8kwm{background:none;-webkit-text-fill-color:currentColor;color:#e8eef7;
+  font-family:Georgia,'Times New Roman',serif;font-size:27px;letter-spacing:-.01em;line-height:1}
+.m8k8{display:inline-block;color:#e8c968;-webkit-text-fill-color:#e8c968;
+  text-shadow:0 0 8px rgba(232,201,104,.45);animation:m8kLie 6s ease-in-out infinite}
+@keyframes m8kLie{0%,35%{transform:rotate(0)}50%,85%{transform:rotate(90deg)}100%{transform:rotate(180deg)}}
+@media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
+@media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
