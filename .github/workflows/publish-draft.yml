@@ -118,7 +118,9 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: bash tools/deploy_blogs.sh abroad
+        run: |
+          bash tools/deploy_blogs.sh abroad
+          python3 tools/build_search_index.py   # make the new entry searchable on m8k.io
 
       - name: Report back and close the issue
         if: github.event_name == 'issues'
