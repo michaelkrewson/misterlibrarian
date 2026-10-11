@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Librarian's Regimen</title>
-  <link>https://mistertranslation.com/health/</link>
-  <atom:link href="https://mistertranslation.com/health/feed.xml" rel="self" type="application/rss+xml"/>
+  <link>https://regimen.m8k.io/</link>
+  <atom:link href="https://regimen.m8k.io/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Notes on health, nutrition and medicine, worked through one question at a time from the primary literature: what the studies actually found, how sure anyone can honestly be, and what that leaves a reasonable person to do. Written by a reader, not a clinician — nothing here is medical advice.</description>
   <language>en</language>
   <item>
     <title>The GLP-1 Benefit List Keeps Growing. Here's What's Actually Been Shown.</title>
-    <link>https://mistertranslation.com/health/glp-1-benefits-beyond-weight-loss.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/glp-1-benefits-beyond-weight-loss.html</guid>
+    <link>https://regimen.m8k.io/glp-1-benefits-beyond-weight-loss.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/glp-1-benefits-beyond-weight-loss.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>Semaglutide and tirzepatide keep turning up benefits that have nothing to do with the number on the scale — a kidney, a liver, an airway, even an addiction. Here's what's been shown in a randomized trial, what's still a mechanistic finding from a biopsy, and what's only an observational signal so far.</description>
     <category>GLP-1</category>
@@ -27,8 +27,8 @@
   </item>
   <item>
     <title>How Fenbendazole and Mebendazole Actually Kill a Parasite</title>
-    <link>https://mistertranslation.com/health/how-fenbendazole-mebendazole-kill-parasites.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/how-fenbendazole-mebendazole-kill-parasites.html</guid>
+    <link>https://regimen.m8k.io/how-fenbendazole-mebendazole-kill-parasites.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/how-fenbendazole-mebendazole-kill-parasites.html</guid>
     <pubDate>Mon, 28 Sep 2026 12:00:00 +0000</pubDate>
     <description>How do fenbendazole and mebendazole actually kill a parasite? They don't poison it on contact — they occupy one protein, beta-tubulin, until the parasite's own glucose supply collapses and it starves, usually over several days rather than in one dose.</description>
     <category>fenbendazole</category>
@@ -44,8 +44,8 @@
   </item>
   <item>
     <title>How Ivermectin Actually Kills a Parasite</title>
-    <link>https://mistertranslation.com/health/how-ivermectin-actually-kills-a-parasite.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/how-ivermectin-actually-kills-a-parasite.html</guid>
+    <link>https://regimen.m8k.io/how-ivermectin-actually-kills-a-parasite.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/how-ivermectin-actually-kills-a-parasite.html</guid>
     <pubDate>Mon, 28 Sep 2026 12:00:00 +0000</pubDate>
     <description>How does ivermectin actually kill a parasite? Not by starving it. Ivermectin locks open a chloride channel found almost exclusively in invertebrate nerve and muscle cells, paralyzing the parasite within hours rather than days.</description>
     <category>ivermectin</category>
@@ -61,8 +61,8 @@
   </item>
   <item>
     <title>Why Are Tattoos Permanent, and Where Does the Ink Actually Go?</title>
-    <link>https://mistertranslation.com/health/why-are-tattoos-permanent-and-where-does-the-ink-go.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/why-are-tattoos-permanent-and-where-does-the-ink-go.html</guid>
+    <link>https://regimen.m8k.io/why-are-tattoos-permanent-and-where-does-the-ink-go.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/why-are-tattoos-permanent-and-where-does-the-ink-go.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>A tattoo needle deposits ink once, in seconds, and the picture stays for decades. The obvious explanation — the ink just sits inertly in your skin cells — is wrong. What actually holds it there is your immune system, running a relay that never stops, and part of the ink doesn't stay in the skin at all.</description>
     <category>tattoos</category>
@@ -76,8 +76,8 @@
   </item>
   <item>
     <title>Do Calcium and Vitamin D Supplements Actually Prevent Fractures and Falls?</title>
-    <link>https://mistertranslation.com/health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html</guid>
+    <link>https://regimen.m8k.io/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html</guid>
     <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
     <description>A BMJ systematic review of 69 randomised trials and 153,902 adults found calcium alone, vitamin D alone, and the two combined all produced little to no meaningful reduction in fractures or falls. One combination did clear statistical significance — but missed the review's own bar for a clinically meaningful benefit, and the signal traces largely to a single 1992 French nursing-home trial. Here is what the numbers say, outcome by outcome, and why "statistically significant" and "worth taking" turned out to be two different questions.</description>
     <category>calcium</category>
@@ -97,8 +97,8 @@
   </item>
   <item>
     <title>Folate vs. Folic Acid: What's the Difference, and What Does the Evidence Say About Autism?</title>
-    <link>https://mistertranslation.com/health/folate-vs-folic-acid-and-the-autism-evidence.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/folate-vs-folic-acid-and-the-autism-evidence.html</guid>
+    <link>https://regimen.m8k.io/folate-vs-folic-acid-and-the-autism-evidence.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/folate-vs-folic-acid-and-the-autism-evidence.html</guid>
     <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
     <description>"Folate" and "folic acid" get used as if they're the same word, and they aren't quite the same molecule. Here's the actual biochemical difference, why folic acid ended up in bread in the first place, and what a genuinely active — and fast-moving — body of research says about folate and autism, including a striking but very small 2026 pilot trial.</description>
     <category>folate</category>
@@ -118,8 +118,8 @@
   </item>
   <item>
     <title>The First Blood Test for Fifty Cancers Reached the FDA Today. It Still Misses Most Early Ones</title>
-    <link>https://mistertranslation.com/health/the-first-blood-test-for-fifty-cancers-reaches-the-fda.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/the-first-blood-test-for-fifty-cancers-reaches-the-fda.html</guid>
+    <link>https://regimen.m8k.io/the-first-blood-test-for-fifty-cancers-reaches-the-fda.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/the-first-blood-test-for-fifty-cancers-reaches-the-fda.html</guid>
     <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
     <description>A tweet promoting a podcast with oncologist Azra Raza asks whether medicine should chase cancer's first cell instead of its last. The technology closest to doing that, GRAIL's Galleri blood test, had its first-ever FDA advisory panel hearing today. What it actually finds, what a 142,942-person trial found it missing, and how far Dr. Raza's own, more radical idea still has to go.</description>
     <category>cancer</category>
@@ -136,8 +136,8 @@
   </item>
   <item>
     <title>Why Do IBD Patients Relapse Even in Remission?</title>
-    <link>https://mistertranslation.com/health/why-do-ibd-patients-relapse-even-in-remission.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/why-do-ibd-patients-relapse-even-in-remission.html</guid>
+    <link>https://regimen.m8k.io/why-do-ibd-patients-relapse-even-in-remission.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/why-do-ibd-patients-relapse-even-in-remission.html</guid>
     <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
     <description>A WEHI-led study of roughly 900 gut biopsies from 80 people, published in Science, finds that intestinal cells in inflammatory bowel disease patients can stay primed for an inflammatory kind of cell death even during symptom-free remission — and the stronger that signal, the higher the relapse risk over the following two years. Ordinary gut lining renews itself through cell death constantly; here's what's actually different about this one, and what the study can and can't say about a healthy gut.</description>
     <category>inflammatory bowel disease</category>
@@ -153,8 +153,8 @@
   </item>
   <item>
     <title>A Drug for Hair Loss That Clears Aging Cells Instead of Blocking a Hormone</title>
-    <link>https://mistertranslation.com/health/a-drug-for-hair-loss-that-clears-aging-cells-instead-of-blocking-a-hormone.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/a-drug-for-hair-loss-that-clears-aging-cells-instead-of-blocking-a-hormone.html</guid>
+    <link>https://regimen.m8k.io/a-drug-for-hair-loss-that-clears-aging-cells-instead-of-blocking-a-hormone.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/a-drug-for-hair-loss-that-clears-aging-cells-instead-of-blocking-a-hormone.html</guid>
     <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
     <description>A biotech company is about to put the first GPX4-modulating "senolytic" into a human trial for male pattern hair loss, after ex vivo human follicle data that matched or beat finasteride. It's a genuinely new mechanism after nearly thirty years of the same two drugs — but the data so far is six days old, from follicles in a dish, not scalps.</description>
     <category>hair loss</category>
@@ -170,8 +170,8 @@
   </item>
   <item>
     <title>Does Light at Night Hurt Your Heart?</title>
-    <link>https://mistertranslation.com/health/does-light-at-night-hurt-your-heart.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/does-light-at-night-hurt-your-heart.html</guid>
+    <link>https://regimen.m8k.io/does-light-at-night-hurt-your-heart.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/does-light-at-night-hurt-your-heart.html</guid>
     <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
     <description>A UK Biobank study of 11,071 adults found that people with bedroom light above roughly 3 lux at night — dimmer than almost any lamp, but bright enough for closed eyes to register — developed a thicker, stiffer-pumping heart and higher rates of heart failure, stroke and atrial fibrillation years later than people who slept in real darkness. Led by Tulane's Lu Qi, published September 9, 2026 in the European Heart Journal. Here's what "3 lux" actually looks like, and what the study can and can't say about a nightstand lamp.</description>
     <category>sleep</category>
@@ -186,8 +186,8 @@
   </item>
   <item>
     <title>Does Red Light Therapy Work, and Why Does the Price Range From $60 to $1,200?</title>
-    <link>https://mistertranslation.com/health/does-red-light-therapy-work.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/does-red-light-therapy-work.html</guid>
+    <link>https://regimen.m8k.io/does-red-light-therapy-work.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/does-red-light-therapy-work.html</guid>
     <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
     <description>Red light therapy panels run from about $50 for a handheld unit to well over $1,200 for a full-body array, all promising some version of the same benefits. The clinical evidence is genuinely strong for exactly one use case that has nothing to do with a home panel, real but modest for a couple of things people actually buy these for, and weak or backwards for most of what gets marketed. And independent measurement has found $1,200 panels overstating their light output by roughly the same margin as $60 ones.</description>
     <category>red light therapy</category>
@@ -203,8 +203,8 @@
   </item>
   <item>
     <title>Does Stopping a GLP-1 Drug Raise Your Heart Risk?</title>
-    <link>https://mistertranslation.com/health/does-stopping-a-glp-1-raise-heart-risk.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/does-stopping-a-glp-1-raise-heart-risk.html</guid>
+    <link>https://regimen.m8k.io/does-stopping-a-glp-1-raise-heart-risk.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/does-stopping-a-glp-1-raise-heart-risk.html</guid>
     <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
     <description>A Veterans Affairs study of 333,687 people with type 2 diabetes found that the longer someone went off a GLP-1 drug like semaglutide, the higher their risk of stroke, heart attack or death climbed — 4% higher at six months off, 14% at a year, 22% at two years — compared with staying on it, and restarting the drug only partly closed the gap. Here's what the study actually measured, and the one comparison group that changes how the headline number should be read.</description>
     <category>GLP-1</category>
@@ -220,8 +220,8 @@
   </item>
   <item>
     <title>Alexander Disease, and the First Drug Approved to Treat It</title>
-    <link>https://mistertranslation.com/health/alexander-disease-and-the-first-drug-approved-for-it.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/alexander-disease-and-the-first-drug-approved-for-it.html</guid>
+    <link>https://regimen.m8k.io/alexander-disease-and-the-first-drug-approved-for-it.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/alexander-disease-and-the-first-drug-approved-for-it.html</guid>
     <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
     <description>What is Alexander disease, and what did the FDA actually approve for it? AxD is an ultra-rare, usually fatal genetic disorder of the brain's astrocytes, caused by mutations in the GFAP gene. On September 3, 2026, the FDA approved Zanvastro (zilganersen), an RNA-targeted drug given by quarterly spinal injection, as the first treatment aimed at the disease itself rather than its symptoms. The trial behind it enrolled 49 randomized patients.</description>
     <category>alexander disease</category>
@@ -236,8 +236,8 @@
   </item>
   <item>
     <title>Do Common Food Preservatives Raise Blood Pressure and Heart Risk?</title>
-    <link>https://mistertranslation.com/health/do-food-preservatives-raise-blood-pressure.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/do-food-preservatives-raise-blood-pressure.html</guid>
+    <link>https://regimen.m8k.io/do-food-preservatives-raise-blood-pressure.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/do-food-preservatives-raise-blood-pressure.html</guid>
     <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
     <description>A French cohort of 112,395 adults, followed a median of 7.9 years, found that the heaviest consumers of preservative food additives developed hypertension and cardiovascular disease at higher rates than the lightest. Eight individual preservatives were each tied to high blood pressure, including sodium nitrite, potassium sorbate, citric acid and — oddly — ascorbic acid, plain vitamin C. This is a cohort study, so it shows association, not proof of cause. Here is what the numbers actually say, and how the eight show up on an American ingredient panel.</description>
     <category>food additives</category>
@@ -255,8 +255,8 @@
   </item>
   <item>
     <title>The First Approved Treatment for Ataxia in Ataxia-Telangiectasia</title>
-    <link>https://mistertranslation.com/health/the-first-approved-treatment-for-ataxia-in-a-t.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/the-first-approved-treatment-for-ataxia-in-a-t.html</guid>
+    <link>https://regimen.m8k.io/the-first-approved-treatment-for-ataxia-in-a-t.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/the-first-approved-treatment-for-ataxia-in-a-t.html</guid>
     <pubDate>Sat, 19 Sep 2026 12:00:00 +0000</pubDate>
     <description>What is ataxia-telangiectasia, and does the drug the FDA just approved for it actually work? A-T is a rare, inherited disorder in a DNA-repair gene that causes progressive loss of coordination starting in early childhood. On September 18, 2026, the FDA approved levacetylleucine (Aqneursa) as the first treatment for the ataxia itself, based on a 73-patient trial showing a real, statistically significant improvement on the standard ataxia rating scale.</description>
     <category>ataxia telangiectasia</category>
@@ -269,8 +269,8 @@
   </item>
   <item>
     <title>Pancreatic Cancer Has a Drug That Works. Now the FDA Wants It Tried First</title>
-    <link>https://mistertranslation.com/health/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html</guid>
+    <link>https://regimen.m8k.io/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html</guid>
     <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
     <description>Three weeks after approving daraxonrasib for pancreatic cancer that has already been treated — the first drug to roughly double survival in that disease — the FDA gave it Breakthrough Therapy status for newly diagnosed patients, on top of chemotherapy. What the drug does, what the trials actually showed, what "breakthrough" legally means, and the $39,800-a-month company behind it.</description>
     <category>cancer</category>
@@ -288,8 +288,8 @@
   </item>
   <item>
     <title>What Radioligand Therapy Is, and Why a Second Lutathera Matters</title>
-    <link>https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html</guid>
+    <link>https://regimen.m8k.io/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html</guid>
     <pubDate>Thu, 17 Sep 2026 12:00:00 +0000</pubDate>
     <description>On September 14 the FDA approved Bexlutry, Curium's copy of Novartis's Lutathera — the first "radioligand equivalent" ever cleared. The question underneath the headline: what is a radioligand therapy, what does the evidence say it does for neuroendocrine tumours, and why did it take a Delaware courtroom to get a second one to market? With numbers, and the companies.</description>
     <category>cancer</category>
@@ -307,8 +307,8 @@
   </item>
   <item>
     <title>What a Kidney Stone Actually Is, and Why It Forms</title>
-    <link>https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html</guid>
+    <link>https://regimen.m8k.io/what-a-kidney-stone-is-and-why-it-forms.html</link>
+    <guid isPermaLink="true">https://regimen.m8k.io/what-a-kidney-stone-is-and-why-it-forms.html</guid>
     <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
     <description>About one adult in ten will make a kidney stone. Before the questions about water, calcium and what to eat, the first one: what a stone actually is, what it is made of, and why it forms in some kidneys and not others — read from the studies. With a postscript on hard water, distillers, and calcium pills.</description>
     <category>kidney stones</category>
