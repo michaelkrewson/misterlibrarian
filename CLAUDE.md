@@ -28,9 +28,10 @@ PUBLICATION's name (the brand), the small eyebrow is its category; the persona i
    science & technology, the world, arts & culture, and whatever else fits none of the
    other four. The one ORDINARY blog on the domain. Added 2026-09-11; see its own section
    below.
-6. **Eight Miles West** (`/west/`, `build_west.py`) — a family history published a
-   chapter at a time; a BOOK (numbered chapters in five fixed parts, read in order), not a
-   blog. Added 2026-09-11; see its own section below.
+6. **Eight Miles West** (**https://west.m8k.io** since 2026-10-10 — was `/west/`; `build_west.py`)
+   — a family history published a chapter at a time; a BOOK (numbered chapters in five fixed
+   parts, read in order), not a blog. Added 2026-09-11; see its own section below.
+   ⚠️ **Pushing does NOT publish West any more** — see "Publishing West" in its section.
 
 **Read `README.md` first** for the mechanical how-to (build commands, how to add a chapter
 or a travel entry, publishing). It's well-maintained and this file doesn't repeat it. This
@@ -713,7 +714,7 @@ of `project_misterlibrarian_site` and `project_misterlibrarian_methods` in the m
 before starting a new book, or when this file's doctrine and the actual code disagree — trust
 the code and the live site over any memory note, this file included.
 
-## Eight Miles West (`/west/`)
+## Eight Miles West (https://west.m8k.io — was `/west/`)
 
 `build_west.py` (standard library) — Michael's family history, published as a BOOK (numbered
 `NN-slug.html` chapters in five fixed parts, read in order), not a blog. Must-knows: every
@@ -725,4 +726,17 @@ his real name is OFF the web version** (`AUTHOR` = `"mistertranslation.com"`), e
 is a cited SOURCE inside a chapter — and don't spread the real name to the other five
 publications.
 
-Full detail: `claude-docs/west.md` — read it before working on /west/.
+**Publishing West (since 2026-10-10 — the m8k.io umbrella pilot).** The book lives at
+**https://west.m8k.io**, served by the Cloudflare Worker `m8k-west` (static assets from the
+built `west/` folder, `cf/west.wrangler.jsonc` + shared `cf/static-site.js`).
+`mistertranslation.com/west/*` 301s there via the `mt-redirects` Worker
+(`cf/mt-redirects.*`; mistertranslation.com's A records are now PROXIED in Cloudflare, SSL
+mode Full). So GitHub Pages' copy of `west/` is never seen by visitors — **a chapter goes live
+only after:** `python3 build_west.py` → commit → push → **`wrangler deploy -c
+cf/west.wrangler.jsonc`** (from the repo root; wrangler is logged in on the Mac). Verify on
+west.m8k.io, not mistertranslation.com/west/. URLs keep their `.html` (html_handling "none") —
+don't switch the blogs to Cloudflare *Pages*, which 308s `/x.html` → `/x`. GoatCounter still
+records West under `/west/…` (`STATS_PREFIX`). The other blogs follow the same pattern as
+they move (plan: abroad → regimen → notebook → ledger).
+
+Full detail: `claude-docs/west.md` — read it before working on West.

@@ -1,0 +1,13 @@
+// 301s from mistertranslation.com's old blog folders to their m8k.io subdomains.
+// Routes only fire while mistertranslation.com is PROXIED (orange cloud) in Cloudflare DNS.
+// Deploy: wrangler deploy -c cf/mt-redirects.wrangler.jsonc
+{
+  "name": "mt-redirects",
+  "main": "mt-redirects.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "mistertranslation.com/west", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/west/*", "zone_name": "mistertranslation.com" }
+  ]
+}

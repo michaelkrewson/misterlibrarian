@@ -105,9 +105,18 @@ FRONT_DESC = ("A family's four centuries in America, from New Amsterdam to the P
               "the Croesen / Kroesen / Krewson line, read from the documents, one chapter "
               "at a time.")
 
-BASE_URL = "https://mistertranslation.com/west/"
-SITE_URL = "https://mistertranslation.com"
-BASE = "/west"
+# Moved to its own subdomain 2026-10-10 (the m8k.io umbrella pilot): the book now
+# lives at the root of west.m8k.io, and mistertranslation.com/west/* 301s there.
+BASE_URL = "https://west.m8k.io/"
+SITE_URL = "https://west.m8k.io"
+BASE = ""
+# The "Mister Library — every publication" mark still points at the hub, which
+# stays on mistertranslation.com.
+HUB_URL = "https://mistertranslation.com"
+# GoatCounter keeps recording these pages under /west/… so the book's view counts
+# carry on unbroken from the mistertranslation.com era and never collide with the
+# hub's own paths on the shared "mistertranslation" GoatCounter site.
+STATS_PREFIX = "/west"
 
 GOATCOUNTER_CODE = "mistertranslation"
 ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-2001…, swapped 2026-09-18 — the 2026-09-17 pub-7435… account was duplicate-flagged); the tag rides with the GoatCounter script into every <head>
@@ -284,7 +293,7 @@ def _chrome(active=""):
                 'stroke-linejoin="round"/></svg>')
     hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
                '%s<span class="hubwm">Mister Library</span></a>%s'
-               % (SITE_URL, HUB_MARK_SVG, crumbsep))
+               % (HUB_URL, HUB_MARK_SVG, crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">Eight Miles <span class="em">West</span></span></a>'
              % MARK_SVG.replace("__ACCENT__", ACCENT))
@@ -320,13 +329,14 @@ def _foot(hits_path=None):
 
 def _shell_hits_path(url):
     name = url.rstrip("/").rsplit("/", 1)[-1]
-    return "%s/%s" % (BASE, name) if "." in name else None
+    return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
-    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+    return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
+            f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
             f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
             f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
@@ -501,7 +511,7 @@ def _prevnext(c, live):
 
 
 def build_chapter_page(c, live):
-    hits_path = None if c["draft"] else "%s/%s" % (BASE, c["file"])
+    hits_path = None if c["draft"] else "%s/%s" % (STATS_PREFIX, c["file"])
     desc = _desc(c)
     url = BASE_URL + c["file"]
     noindex = '<meta name="robots" content="noindex,nofollow"/>\n' if c["draft"] else ""
