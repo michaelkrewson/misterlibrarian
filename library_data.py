@@ -14469,6 +14469,9 @@ CHRON_CHAPTERS = {
     "judg1": dict(era="exodus",
                   when="After Joshua's death, the tribes attempt to complete the conquest individually rather than as one nation under a single commander. Judah and Simeon succeed against Adoni-bezek and take several cities, but the chapter settles into a grim, repeated refrain — tribe after tribe (Benjamin, Manasseh, Ephraim, Zebulun, Asher, Naphtali, Dan) fails to drive the Canaanites out, choosing coexistence and forced labor instead of the conquest commanded. The pattern the whole book will trace begins here.",
                   clock="Undated within the chapter, opening 'after the death of Joshua' (1:1) — traditionally the generation following the conquest, roughly the early-to-mid 1300s BC on the early-date chronology, though the book of Judges as a whole spans about two centuries down to Samuel. ⚠ This project's era taxonomy has no dedicated slot for the conquest-and-judges period; filed here under 'Egypt and the Exodus' as the closest available era, immediately preceding the kingdom."),
+    "judg2": dict(era="exodus",
+                  when="The angel of Jehovah comes up from Gilgal to Bochim with the verdict the first chapter was building toward: Joshua dies at a hundred and ten, and a generation arises that does not know Jehovah. The cycle of judges begins, with deliverance, relapse and a worse corruption after each judge dies.",
+                  clock="Undated within the chapter. It follows directly on from Judges 1 and takes the same undated window the library gives that chapter, a span the book itself does not close."),
     "ruth1": dict(era="exodus",
                   when="Famine drives Elimelech's family from Bethlehem to Moab, where his sons marry Moabite women, Orpah and Ruth; all three men then die, leaving Naomi bereft. She decides to return home and releases her daughters-in-law to remarry — Orpah stays, but Ruth refuses to leave her: 'where you go I will go... your people shall be my people, and your God my God.' They arrive in Bethlehem at the start of the barley harvest.",
                   clock="Set 'in the days when the judges ruled' (1:1), with no more specific anchor given; estimates for Ruth's own generation range across the whole period, bounded loosely by the fact that her great-grandson David is born c. 1040 BC. ⚠ Like Judges, this falls in a stretch with no dedicated era of its own in this project's taxonomy; filed here under 'Egypt and the Exodus,' the closest available era."),
@@ -29541,7 +29544,9 @@ CHAPTER_ART = {
 # ASK MICHAEL before recording the skip, even after a genuinely thorough search.
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
-ART_SKIPPED = {}
+ART_SKIPPED = {
+    "judg2": "No picture has been searched for or chosen for this chapter yet, so the page carries none; a candidate would need a public-domain source and a check that it shows the Bochim scene rather than a generic one.",
+}
 _PRE_ENFORCEMENT_BACKLOG = [
     '1chr1', '1cor1', '1john1', '1kgs1', '1pe1', '1sam1', '1th1', '1ti1',
     '2chr1', '2cor1', '2john1', '2kgs1', '2pe1', '2sam1', '2th1', '2ti1', '3john1',
