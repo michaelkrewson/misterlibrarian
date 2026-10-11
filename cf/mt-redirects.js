@@ -4,6 +4,7 @@
 // the Bible project, the hub, Dear Mr. Librarian — never touches this Worker.
 // To move another blog: add its prefix here AND its two routes in the config.
 const MOVED = {
+  "/health": "https://regimen.m8k.io",
   "/west": "https://west.m8k.io",
   "/travel": "https://abroad.m8k.io",
 };

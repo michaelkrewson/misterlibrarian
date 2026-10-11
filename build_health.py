@@ -88,9 +88,16 @@ BLURB = ("Notes on health, nutrition and medicine, worked through one question a
          "can honestly be, and what that leaves a reasonable person to do. Written by a "
          "reader, not a clinician — nothing here is medical advice.")
 
-BASE_URL = "https://mistertranslation.com/health/"
-SITE_URL = "https://mistertranslation.com"
-BASE = "/health"
+# Moved to its own subdomain 2026-10-10 (m8k.io umbrella): the blog lives at the
+# root of regimen.m8k.io, and mistertranslation.com/health/* 301s there (cf/mt-redirects.js).
+BASE_URL = "https://regimen.m8k.io/"
+SITE_URL = "https://regimen.m8k.io"
+BASE = ""
+# The "Mister Library" mark still points at the hub on mistertranslation.com.
+HUB_URL = "https://mistertranslation.com"
+# GoatCounter keeps recording under /health/… so view counts continue unbroken
+# and never collide with the hub's paths on the shared "mistertranslation" site.
+STATS_PREFIX = "/health"
 OG_IMAGE = f"{SITE_URL}{BASE}/img/og-default.png"
 OG_IMAGE_ES = f"{SITE_URL}{BASE}/img/og-default.es.png"
 
@@ -426,7 +433,7 @@ def _chrome(active="", lang="en", lang_href=None):
                 'stroke-linejoin="round"/></svg>')
     hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
                '%s<span class="hubwm">Mister Library</span></a>%s'
-               % (SITE_URL, HUB_MARK_SVG, crumbsep))
+               % (HUB_URL, HUB_MARK_SVG, crumbsep))
     brand = ('<a class="brand" href="%s">%s<span class="wm">%s</span></a>'
              % (u["front"], MARK_SVG.replace("__ACCENT__", ACCENT), u["brand"]))
     return ('<header class="hsm">'
@@ -552,7 +559,7 @@ def _shell_hits_path(url):
     from the same absolute `url` every `_shell` caller already passes. Returns
     None for a url with no filename (the index page's bare BASE_URL)."""
     name = url.rstrip("/").rsplit("/", 1)[-1]
-    return "%s/%s" % (BASE, name) if "." in name else None
+    return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
 FRONT_HERO_IMG = "tacuinum-cabbage-harvest.jpg"
@@ -709,7 +716,7 @@ def _render_default_card(path, lang="en"):
     for ln in lines:
         d.text((W / 2, ty), ln, font=tf, fill=(200, 206, 214), anchor="mm")
         ty += 36
-    d.text((W / 2, ty + 40), "mistertranslation.com/health",
+    d.text((W / 2, ty + 40), "regimen.m8k.io",
            font=font("sans", 21), fill=(133, 147, 166), anchor="mm")
 
     img.quantize(colors=128, dither=Image.FLOYDSTEINBERG).save(path, "PNG", optimize=True)
@@ -821,7 +828,7 @@ def build_entry_page(e, pool=()):
         # here until this gets a lang-aware version.
         date_line += ' <span class="upd-stamp">· %s</span>' % esc(
             blogkit.pretty_updated(e["updated"], e.get("updated_time")))
-    hits_path = None if e["draft"] else "%s/%s" % (BASE, e["file"])
+    hits_path = None if e["draft"] else "%s/%s" % (STATS_PREFIX, e["file"])
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
     alt_url = (BASE_URL + e["twin"]) if e["twin"] else None
@@ -958,7 +965,8 @@ def _archive_row(item):
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
-    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+    return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
+            f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
             f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
             f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
@@ -1850,7 +1858,7 @@ def build_front(entries, lang="en"):
                      .replace("__JS_OF__", u["js_of"]).replace("__JS_FEWER__", u["js_fewer"]))
 
     url = BASE_URL if lang == "en" else BASE_URL + "es.html"
-    hits_path = "%s/%s" % (BASE, u["front"])
+    hits_path = "%s/%s" % (STATS_PREFIX, u["front"])
     index_hits = _hits_widget(hits_path, u["visits"])
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(u["tagline"])
