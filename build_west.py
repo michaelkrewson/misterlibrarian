@@ -159,13 +159,13 @@ PARTS = {
 # The Bible project was reached only via the root hub until 2026-09-18
 # (Michael's call), when it joined this list directly like the others.
 SIBLINGS = (
-    ("The Librarian's Notebook", "https://mistertranslation.com/notebook/",
+    ("The Librarian's Notebook", "https://notebook.m8k.io/",
      "A commonplace book — science and technology, the world, arts and culture"),
-    ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
+    ("The Librarian's Ledger", "https://ledger.m8k.io/",
      "What the world's money is actually in"),
-    ("The Librarian Abroad", "https://mistertranslation.com/travel/",
+    ("The Librarian Abroad", "https://abroad.m8k.io/",
      "Notes from the road and the table"),
-    ("The Librarian's Regimen", "https://mistertranslation.com/health/",
+    ("The Librarian's Regimen", "https://regimen.m8k.io/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
     ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
      "A fresh translation of the Bible into modern English, one chapter at a time"),

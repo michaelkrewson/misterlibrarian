@@ -174,13 +174,13 @@ FRONT_TILE_LIMIT = 6
 # The Bible project was reached only via the root hub until 2026-09-18
 # (Michael's call), when it joined this list directly like the others.
 SIBLINGS = (
-    ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
+    ("The Librarian's Ledger", "https://ledger.m8k.io/",
      "What the world's money is actually in"),
-    ("The Librarian Abroad", "https://mistertranslation.com/travel/",
+    ("The Librarian Abroad", "https://abroad.m8k.io/",
      "Notes from the road and the table"),
-    ("The Librarian's Regimen", "https://mistertranslation.com/health/",
+    ("The Librarian's Regimen", "https://regimen.m8k.io/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
-    ("Eight Miles West", "https://mistertranslation.com/west/",
+    ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
     ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
@@ -993,8 +993,8 @@ ABOUT_BODY = """  <section class="asklede">
   <div class="panel">
     <h2>What it's not</h2>
     <p>Not advice — not financial, legal, medical, technical or any other kind — and no reply
-    from me is either. The money writing lives at <a href="https://mistertranslation.com/finance/">the
-    Ledger</a>, the health writing at <a href="https://mistertranslation.com/health/">the
+    from me is either. The money writing lives at <a href="https://ledger.m8k.io/">the
+    Ledger</a>, the health writing at <a href="https://regimen.m8k.io/">the
     Regimen</a>, and each of those says at length what it is and isn't. This one ranges over
     everything else, and disclaims it all once, in the small print at the foot of every
     page.</p>
