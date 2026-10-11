@@ -66,8 +66,8 @@ BLURB = ("Notes from the road and from the table — what was worth the trip, "
 # root of abroad.m8k.io, and mistertranslation.com/travel/* 301s there (cf/mt-redirects.js).
 SITE_URL = "https://abroad.m8k.io"
 BASE = ""                           # served at the subdomain root
-# The "Mister Library" mark still points at the hub on mistertranslation.com.
-HUB_URL = "https://mistertranslation.com"
+# The top-left mark is now "m8k" (2026-10-10), linking to the m8k.io front door.
+HUB_URL = "https://m8k.io"   # the m8k mark at the top of every page (was the Mister Library hub)
 # GoatCounter keeps recording under /travel/… so view counts continue unbroken
 # and never collide with the hub's paths on the shared "mistertranslation" site.
 STATS_PREFIX = "/travel"
@@ -268,9 +268,8 @@ def header(active=""):
         return ' class="on"' if k == active else ""
     return f"""<header class="site-head">
   <div class="brandcrumb">
-    <a class="hublink" href="{HUB_URL}/" aria-label="Mister Library — every publication">
-      {HUB_MARK_SVG}
-      <span class="hubwm">Mister Library</span>
+    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
+      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
     </a>
     {CRUMBSEP_SVG}
     {'<h1 class="brandwrap">' if active == "home" else '<div class="brandwrap">'}
