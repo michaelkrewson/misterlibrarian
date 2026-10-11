@@ -888,7 +888,9 @@ def _shell_hits_path(url):
     sync. Returns None for a url with no filename (the index page's bare
     BASE_URL, which already shows its own "visits to this page" line
     in-body) rather than guessing."""
-    name = url.rstrip("/").rsplit("/", 1)[-1]
+    # Only the URL's PATH names the page: on a subdomain root (https://ledger.m8k.io/)
+    # the last "/"-segment would otherwise be the host itself (2026-10-10 fix).
+    name = urllib.parse.urlsplit(url).path.rstrip("/").rsplit("/", 1)[-1]
     return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
@@ -2142,7 +2144,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     # Shown at the bottom of the page, not up under the tagline — page
     # metadata belongs near the footer, not competing with the intro for a
     # reader's first-glance attention.
-    index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
+    index_hits = _hits_widget("%s/index.html" % STATS_PREFIX, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
     return _shell(
