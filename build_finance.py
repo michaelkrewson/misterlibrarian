@@ -99,7 +99,7 @@ ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-
 # so the entry rebuilds itself hourly right alongside the board. Every other
 # entry ignores this key entirely; a body with no tokens is untouched by it.
 KNOWN_KEYS = {"title", "date", "time", "updated", "tags", "summary", "meta_desc",
-              "hero", "hero_alt", "hero_credit", "draft", "live"}
+              "hero", "hero_alt", "hero_credit", "draft", "live", "ads"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
@@ -728,6 +728,7 @@ def load_entries(include_drafts=False):
             "hero_credit": meta.get("hero_credit", "").strip(),
             "draft": draft,
             "live": live,
+            "noads": blogkit.ads_off(meta, "source/finance/" + fn),
             "body": body,
         })
     entries.sort(key=lambda e: e["date"], reverse=True)
@@ -1521,7 +1522,7 @@ def build_entry_page(e, board=None, pool=()):
         # A draft is a noindexed preview; it gets no structured data.
         "ld": "" if e["draft"] else "\n" + _ld_entry(e, desc),
         "css": CSS.replace("__ACCENT__", ACCENT),
-        "goat": _goatcounter(),
+        "goat": _goatcounter(e["noads"]),
         # active="home": an entry belongs to Writing, so the nav marks that
         # section current — the newspaper convention of telling an arriving
         # reader which neighbourhood they landed in.
@@ -1637,14 +1638,15 @@ def _archive_row(item):
             % (esc(item["search"]), esc(data_tags), esc(item["label"]), esc(item["href"]), esc(item["title"])))
 
 
-def _goatcounter():
+def _goatcounter(noads=False):
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
             f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
-            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
+            + ('' if noads else
+               f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+               f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'))
 
 
 def _hits_id(path):

@@ -127,7 +127,7 @@ ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-
 # The Notebook's front-matter vocabulary: the Regimen's, plus `section`, minus
 # `draft` (no draft mechanism exists here — see the module docstring).
 KNOWN_KEYS = {"title", "date", "updated", "section", "tags", "summary", "meta_desc",
-              "hero", "hero_alt", "hero_credit"}
+              "hero", "hero_alt", "hero_credit", "ads"}
 REQUIRED_KEYS = {"title", "date", "section", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
@@ -274,6 +274,7 @@ def load_entries():
             "hero": meta.get("hero", "").strip(),
             "hero_alt": meta.get("hero_alt", "").strip(),
             "hero_credit": meta.get("hero_credit", "").strip(),
+            "noads": blogkit.ads_off(meta, "source/notebook/" + fn),
             "body": body,
         })
     entries.sort(key=lambda e: e["date"], reverse=True)
@@ -804,7 +805,7 @@ def build_entry_page(e, pool=()):
         "section": esc(_section_name(e["section"])),
         "social": _social_tags(e["title"], desc, e["hero"]),
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
-        "goat": _goatcounter(),
+        "goat": _goatcounter(e["noads"]),
         "chrome": _chrome(e["section"]),
         "sharever": SHARE_JS_VER,
         "sec_line": sec_line,
@@ -874,14 +875,15 @@ def _archive_row(item):
             % (esc(item["search"]), esc(data_tags), esc(item["label"]), esc(item["href"]), esc(item["title"])))
 
 
-def _goatcounter():
+def _goatcounter(noads=False):
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
             f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
-            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
+            + ('' if noads else
+               f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+               f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'))
 
 
 def _hits_id(path):

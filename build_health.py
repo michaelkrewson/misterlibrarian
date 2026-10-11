@@ -109,7 +109,7 @@ ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-
 # The Regimen's front-matter vocabulary. The Ledger's minus `live` (nothing here
 # rebuilds itself from a data feed) — an entry has no stars, no place, no chart.
 KNOWN_KEYS = {"title", "date", "updated", "tags", "summary", "meta_desc",
-              "hero", "hero_alt", "hero_credit", "draft"}
+              "hero", "hero_alt", "hero_credit", "draft", "ads"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
@@ -335,6 +335,7 @@ def load_entries(include_drafts=False):
             "hero_alt": meta.get("hero_alt", "").strip(),
             "hero_credit": meta.get("hero_credit", "").strip(),
             "draft": draft,
+            "noads": blogkit.ads_off(meta, "source/health/" + fn),
             "twin": None,
             "body": body,
         })
@@ -891,7 +892,7 @@ def build_entry_page(e, pool=()):
         "locale": u["locale"],
         "social": _social_tags(e["title"], desc, e["hero"], lang),
         "css": CSS.replace("__ACCENT__", ACCENT),
-        "goat": _goatcounter(),
+        "goat": _goatcounter(e["noads"]),
         "chrome": _chrome("home", lang, e["twin"] or _other_front(lang)),
         "sharever": SHARE_JS_VER,
         "banner": banner,
@@ -964,14 +965,15 @@ def _archive_row(item):
             % (esc(item["search"]), esc(data_tags), esc(item["label"]), esc(item["href"]), esc(item["title"])))
 
 
-def _goatcounter():
+def _goatcounter(noads=False):
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
             f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
-            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
+            + ('' if noads else
+               f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+               f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'))
 
 
 def _hits_id(path):

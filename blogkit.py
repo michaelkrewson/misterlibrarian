@@ -144,6 +144,23 @@ def parse_front_matter(text, where, known_keys, required_keys):
     return meta, body.lstrip("\n")
 
 
+def ads_off(meta, where):
+    """True when an entry's front matter says `ads: off`.
+
+    The AdSense tag rides in every page's <head>, so a sensitive piece (war, a
+    disaster, anything Google restricts ads on) can't be left ad-free without a
+    switch. Absent = ads as usual. Anything but on/off fails LOUDLY: a typo like
+    `ads: of` must not quietly leave the ad tag on a page meant to be clean.
+    Only the AdSense tag is dropped; page-view counting is untouched.
+    """
+    raw = meta.get("ads", "").strip().lower()
+    if raw in ("", "on", "yes", "true"):
+        return False
+    if raw in ("off", "no", "false"):
+        return True
+    raise ValueError(f"{where}: `ads: {raw}` must be `on` or `off`")
+
+
 def plain_text(body_html):
     """Strip tags out of a post body for search indexing. Not a sanitizer —
     the input is our own post source, never reader-supplied — just enough to
