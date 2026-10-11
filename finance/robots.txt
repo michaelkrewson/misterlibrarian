@@ -1,0 +1,9 @@
+# ledger.m8k.io — The Librarian's Ledger. Crawling is allowed everywhere; this file exists
+# to advertise the sitemap. (Cloudflare prepends its content-signals block when it
+# serves this file.) Tracked and static -- the sitemap itself is rebuilt by the
+# blog's build script on every build.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ledger.m8k.io/sitemap.xml

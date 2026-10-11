@@ -1,0 +1,22 @@
+# The Librarian's Ledger
+
+> Writing on Bitcoin, money, and the people who regulate it, read from the filings and the footnotes, plus a standing board of the world's biggest assets ranked by market value.
+
+Every post cites its primary sources (filings, rulemakings, court dockets, on-chain data) and closes with a "where I could be wrong" section. The asset boards are refreshed automatically from market data; their figures are as of the timestamp shown on the page.
+
+Part of the m8k.io family of publications by "Mr. Librarian" (index: https://m8k.io/llms.txt).
+
+## Key pages
+
+- [Home](https://ledger.m8k.io/): newest posts and the boards
+- [Biggest assets board](https://ledger.m8k.io/board.html): the world's largest assets (gold, silver, companies, Bitcoin) ranked by value
+- [Bitcoin](https://ledger.m8k.io/bitcoin.html): Bitcoin's standing on the board, holders and supply
+- [Crypto](https://ledger.m8k.io/crypto.html): the largest crypto assets
+- [Bitcoin treasuries](https://ledger.m8k.io/treasuries.html): companies, ETFs, countries and others holding Bitcoin
+- [Money worldwide](https://ledger.m8k.io/money-worldwide.html): money supply, reserves, gold, exchange rates and debt by country
+- [Tags](https://ledger.m8k.io/tags.html): every post grouped by subject
+
+## Notes for automated readers
+
+- Every published post is listed in https://ledger.m8k.io/sitemap.xml (with last-modified dates) and the newest in https://ledger.m8k.io/feed.xml.
+- This blog moved from mistertranslation.com/finance/ on 2026-10-10; old addresses 301 here.

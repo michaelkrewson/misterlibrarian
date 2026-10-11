@@ -1,7 +1,7 @@
 # mistertranslation.com — crawling is allowed everywhere.
 # (This file changes nothing about what crawlers may read; with no robots.txt at
 # all the default is already "crawl everything". It exists only to advertise the
-# sitemap below.)
+# sitemaps below.)
 
 User-agent: *
 Allow: /
@@ -18,29 +18,18 @@ Allow: /
 # The live number is the build's own "verse cards: N published to S3" line.
 Sitemap: https://mistertranslation.com/sitemap.xml
 
-# /travel/ -- The Librarian Abroad. Since the 3-card hub landed on the home page
-# (2026-09-09) this IS linked from mistertranslation.com/, so the line below is no
-# longer its only route in; it stays as belt-and-braces.
-Sitemap: https://mistertranslation.com/travel/sitemap.xml
-
-# /finance/ -- The Librarian's Ledger. Same as travel: linked from the home page's
-# 3-card hub since 2026-09-09, and listed here as well.
-Sitemap: https://mistertranslation.com/finance/sitemap.xml
-
-# /health/ -- The Librarian's Regimen (added 2026-09-10). Linked from the home
-# page's hub card like the other two, and listed here as well.
-Sitemap: https://mistertranslation.com/health/sitemap.xml
-
-# /notebook/ -- The Librarian's Notebook (added 2026-09-11). Linked from the home
-# page's hub card like the other three blogs, and listed here as well.
-Sitemap: https://mistertranslation.com/notebook/sitemap.xml
-
-# /west/ -- Eight Miles West, the family history (added 2026-09-11). Linked from
-# the home page's hub card like the others, and listed here as well.
-Sitemap: https://mistertranslation.com/west/sitemap.xml
-
-# /ask/ -- Dear Mr. Librarian (split out 2026-09-19, build_ask.py). Deliberately
-# NOT linked from the home page's hub card -- reachable only via the Bible
-# project's own nav -- but still gets a sitemap line here like every other
-# publication; "no hub card" and "no sitemap" are different decisions.
+# /ask/ -- Dear Mr. Librarian (split out 2026-09-19, build_ask.py). Still served
+# from this host, reachable via the Bible project's own nav.
 Sitemap: https://mistertranslation.com/ask/sitemap.xml
+
+# The five blogs moved to their own m8k.io subdomains on 2026-10-10; the old
+# /finance/ /travel/ /health/ /notebook/ /west/ paths here 301 to them (Worker
+# mt-redirects). Their sitemaps are listed at their NEW hosts -- a sitemap line
+# may name another host (sitemaps.org cross-submission via robots.txt), and
+# pointing at the old paths would hand crawlers a redirect instead of a sitemap.
+# Each blog also lists its own sitemap in its own robots.txt.
+Sitemap: https://ledger.m8k.io/sitemap.xml
+Sitemap: https://notebook.m8k.io/sitemap.xml
+Sitemap: https://regimen.m8k.io/sitemap.xml
+Sitemap: https://abroad.m8k.io/sitemap.xml
+Sitemap: https://west.m8k.io/sitemap.xml
