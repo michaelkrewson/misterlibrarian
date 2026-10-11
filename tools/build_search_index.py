@@ -162,9 +162,19 @@ def collect():
             descr = re.sub(r"\s+", " ", html.unescape(p.descr)).strip()
             body = p.main_text()[:BODY_MAX]
             pub, kind, lang = _classify(host, path)
-            h = hashlib.sha1(f"{pub}|{kind}|{lang}|{title}|{descr}|{body}".encode()).hexdigest()
+            anchor = ""
+            if kind == "chapter":
+                # Chapters label verses two ways: id="v3-16" (most) or id="v16" (~70 older
+                # ones). Record which, so a "John 3:16" search jump lands on the verse.
+                mch = re.search(r"-(\d+)(?:\.es)?\.html$", rel)
+                raw = open(f, encoding="utf-8", errors="replace").read()
+                if mch and f'id="v{mch.group(1)}-1"' in raw:
+                    anchor = "cv"
+                elif 'id="v1"' in raw:
+                    anchor = "v"
+            h = hashlib.sha1(f"{pub}|{kind}|{lang}|{anchor}|{title}|{descr}|{body}".encode()).hexdigest()
             docs[url] = dict(url=url, pub=pub, kind=kind, lang=lang, title=title,
-                             descr=descr, body=body, date=(lastmod or "")[:10], hash=h)
+                             descr=descr, body=body, date=(lastmod or "")[:10], anchor=anchor, hash=h)
     return docs, missing
 
 
@@ -219,12 +229,15 @@ def main():
         return
 
     run_sql_file([open(os.path.join(ROOT, "search", "schema.sql"), encoding="utf-8").read()])
+    info = json.loads(_wrangler(["d1", "execute", DB, "--remote", "--json", "--command", "PRAGMA table_info(docs)"]))
+    if not any(c.get("name") == "anchor" for c in info[0].get("results", [])):
+        run_sql_file(["ALTER TABLE docs ADD COLUMN anchor TEXT NOT NULL DEFAULT '';"])
     have = {} if a.full else remote_hashes()
     changed = [d for u, d in docs.items() if have.get(u) != d["hash"]]
     gone = [u for u in have if u not in docs]
     print(f"to upload: {len(changed)}   to delete: {len(gone)}")
 
-    cols = ("url", "pub", "kind", "lang", "title", "descr", "body", "date", "hash")
+    cols = ("url", "pub", "kind", "lang", "title", "descr", "body", "date", "anchor", "hash")
     for i in range(0, len(changed), BATCH):
         stm = []
         for d in changed[i:i + BATCH]:
@@ -232,7 +245,7 @@ def main():
             stm.append(f"INSERT INTO docs ({', '.join(cols)}) VALUES ({vals}) "
                        f"ON CONFLICT(url) DO UPDATE SET pub=excluded.pub, kind=excluded.kind, "
                        f"lang=excluded.lang, title=excluded.title, descr=excluded.descr, "
-                       f"body=excluded.body, date=excluded.date, hash=excluded.hash;")
+                       f"body=excluded.body, date=excluded.date, anchor=excluded.anchor, hash=excluded.hash;")
         run_sql_file(stm)
         print(f"  uploaded {min(i + BATCH, len(changed))}/{len(changed)}")
     for i in range(0, len(gone), 200):

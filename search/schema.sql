@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS docs (
   descr TEXT NOT NULL DEFAULT '',
   body  TEXT NOT NULL DEFAULT '',
   date  TEXT NOT NULL DEFAULT '',
+  anchor TEXT NOT NULL DEFAULT '',  -- chapters: 'cv' = id="v3-16", 'v' = id="v16", '' = none
   hash  TEXT NOT NULL
 );
 CREATE VIRTUAL TABLE IF NOT EXISTS docs_fts USING fts5(
