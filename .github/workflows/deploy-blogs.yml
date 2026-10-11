@@ -1,0 +1,45 @@
+# Publish the blogs that moved to m8k.io subdomains (2026-10-10).
+#
+# Each moved blog is a static-assets Cloudflare Worker (cf/<blog>.wrangler.jsonc)
+# serving its built folder, so GitHub Pages no longer reaches visitors for
+# them — this workflow restores "push = publish": any push to main that touches
+# a moved blog's folder (or cf/) redeploys every moved blog. Wrangler uploads
+# only changed files, so redeploying an unchanged blog costs a few seconds.
+#
+# Pushes made by github-actions[bot] (the hourly board refresh, the phone
+# publish-draft button) do NOT trigger workflows, so those two workflows call
+# tools/deploy_blogs.sh themselves after they push.
+#
+# Secrets: CLOUDFLARE_API_TOKEN (Workers edit) + CLOUDFLARE_ACCOUNT_ID.
+name: Deploy m8k.io blogs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "west/**"
+      - "travel/**"
+      - "health/**"
+      - "notebook/**"
+      - "finance/**"
+      - "cf/**"
+      - "tools/deploy_blogs.sh"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-blogs
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Deploy every moved blog
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: bash tools/deploy_blogs.sh
