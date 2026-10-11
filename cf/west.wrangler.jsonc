@@ -6,6 +6,8 @@
 {
   "name": "m8k-west",
   "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "west.m8k.io", "custom_domain": true }],
+  "workers_dev": true,
   "assets": {
     "directory": "../west",
     "html_handling": "none",
