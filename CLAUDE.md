@@ -23,8 +23,9 @@ builders are unchanged — only where the output is SERVED moved:
   it, so `refresh-asset-board.yml` (hourly Ledger boards) and `publish-draft.yml` (phone publish
   for Abroad) call `tools/deploy_blogs.sh <blog>` themselves. Manual: `bash tools/deploy_blogs.sh
   [blog]`. Secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`. **Verify on the subdomain.**
-- **Each builder:** `SITE_URL`/`BASE_URL` = the subdomain, `BASE = ""`; `HUB_URL` keeps the
-  "Mister Library" mark on mistertranslation.com; `STATS_PREFIX` keeps GoatCounter paths under
+- **Each builder:** `SITE_URL`/`BASE_URL` = the subdomain, `BASE = ""`; `HUB_URL` = https://m8k.io —
+  the top-left crumb is the "m8k" mark (gold 8 that tips into ∞; replaced the round Mister
+  Library badge 2026-10-10, Michael's choice); `STATS_PREFIX` keeps GoatCounter paths under
   the old `/<folder>/…` so stats continue. Cross-blog links are ABSOLUTE subdomain URLs; same-blog
   links relative — never write `/finance/…`-style root-absolute links in a blog entry.
 - Still pointing through the redirects (fine, deferred): the Bible pages' site menu and the hub's

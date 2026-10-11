@@ -31,6 +31,7 @@ import re
 import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 HOST = "mistertranslation.com"
@@ -50,13 +51,28 @@ def sitemap_urls():
     return urls
 
 
+# Since 2026-10-10 the five blogs are served from their own m8k.io subdomains
+# (folder → host). Each blog folder carries its own copy of the key file, since
+# IndexNow requires the key on the same host as the URLs it vouches for.
+MOVED = {"finance/": "ledger.m8k.io", "notebook/": "notebook.m8k.io",
+         "health/": "regimen.m8k.io", "travel/": "abroad.m8k.io", "west/": "west.m8k.io"}
+
+
+def _base_and_rest(rel):
+    for folder, host in MOVED.items():
+        if rel.startswith(folder):
+            return f"https://{host}/", rel[len(folder):]
+    return SITE, rel
+
+
 def path_urls(rel):
     """The URL(s) a repo-relative file is served at: `x/index.html` is also `x/`."""
-    out = [SITE + rel]
-    if rel == "index.html":
-        out.append(SITE)
-    elif rel.endswith("/index.html"):
-        out.append(SITE + rel[: -len("index.html")])
+    base, rest = _base_and_rest(rel)
+    out = [base + rest]
+    if rest == "index.html":
+        out.append(base)
+    elif rest.endswith("/index.html"):
+        out.append(base + rest[: -len("index.html")])
     return out
 
 
@@ -74,15 +90,23 @@ def changed_urls(old, new, allowed):
 
 
 def ping(urls):
+    by_host = {}
+    for u in urls:                                 # one request per host (IndexNow rule)
+        by_host.setdefault(urllib.parse.urlsplit(u).netloc, []).append(u)
+    for host, hurls in sorted(by_host.items()):
+        _ping_host(host, hurls)
+
+
+def _ping_host(host, urls):
     for i in range(0, len(urls), 10000):          # IndexNow's per-request cap
-        body = json.dumps({"host": HOST, "key": KEY,
-                           "keyLocation": f"{SITE}{KEY}.txt",
+        body = json.dumps({"host": host, "key": KEY,
+                           "keyLocation": f"https://{host}/{KEY}.txt",
                            "urlList": urls[i:i + 10000]}).encode()
         req = urllib.request.Request(ENDPOINT, data=body, method="POST",
                                      headers={"Content-Type": "application/json; charset=utf-8"})
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
-                print(f"IndexNow: {r.status} for {len(urls[i:i + 10000])} URL(s)")
+                print(f"IndexNow {host}: {r.status} for {len(urls[i:i + 10000])} URL(s)")
         except urllib.error.HTTPError as e:
             # 202 = accepted, key not yet validated (normal on a first ping);
             # 403 = key file not reachable; 422 = URL not on this host.

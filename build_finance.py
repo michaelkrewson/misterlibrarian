@@ -72,8 +72,8 @@ WRITING_BLURB = ("Writing on Bitcoin, money, and the people who regulate it — 
 BASE_URL = "https://ledger.m8k.io/"
 SITE_URL = "https://ledger.m8k.io"
 BASE = ""
-# The "Mister Library" mark still points at the hub on mistertranslation.com.
-HUB_URL = "https://mistertranslation.com"
+# The top-left mark is now "m8k" (2026-10-10), linking to the m8k.io front door.
+HUB_URL = "https://m8k.io"   # the m8k mark at the top of every page (was the Mister Library hub)
 # GoatCounter keeps recording under /finance/… so view counts continue unbroken
 # and never collide with the hub's paths on the shared "mistertranslation" site.
 STATS_PREFIX = "/finance"
@@ -821,9 +821,9 @@ def _chrome(active=""):
                 'aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" '
                 'stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" '
                 'stroke-linejoin="round"/></svg>')
-    hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
-               '%s<span class="hubwm">Mister Library</span></a>%s'
-               % (HUB_URL, HUB_MARK_SVG, crumbsep))
+    hublink = ('<a class="hublink" href="%s/" aria-label="m8k — every publication">'
+               '%s<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s'
+               % (HUB_URL, "", crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
              % MARK_SVG.replace("__ACCENT__", ACCENT))
@@ -2259,6 +2259,15 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
   10%{transform:translateY(-2.4px);filter:brightness(1.55)}}
 @media (prefers-reduced-motion:reduce){.shelf-spine{animation:none}}
 @media (max-width:480px){.hublink .hubwm{display:none}}
+/* m8k mark (2026-10-10, Michael's choice): replaces the round Mister Library badge;
+   links to m8k.io, which lists every publication. The 8 tips over into an infinity sign. */
+.hublink .hubwm.m8kwm{background:none;-webkit-text-fill-color:currentColor;color:#e8eef7;
+  font-family:Georgia,'Times New Roman',serif;font-size:27px;letter-spacing:-.01em;line-height:1}
+.m8k8{display:inline-block;color:#e8c968;-webkit-text-fill-color:#e8c968;
+  text-shadow:0 0 8px rgba(232,201,104,.45);animation:m8kLie 6s ease-in-out infinite}
+@keyframes m8kLie{0%,35%{transform:rotate(0)}50%,85%{transform:rotate(90deg)}100%{transform:rotate(180deg)}}
+@media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
+@media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
    (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
