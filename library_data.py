@@ -14490,6 +14490,9 @@ CHRON_CHAPTERS = {
     "judg3": dict(era="exodus",
                   when="The nations Jehovah left are used to test Israel. Israel intermarries with them and serves their gods. Othniel, Ehud and Shamgar deliver the land in turn, against a king of Aram, a king of Moab, and six hundred Philistines.",
                   clock="Undated within the chapter. It follows directly on from Judges 2, so it takes the same undated window the library gives that chapter."),
+    "judg4": dict(era="exodus",
+                  when="Israel does evil again after Ehud dies, and Jabin king of Hazor oppresses it for twenty years with nine hundred iron chariots. Deborah judges under her palm; Barak wins the battle at the brook Kishon, and Jael kills the fleeing commander Sisera with a tent peg.",
+                  clock="Undated within the chapter. It follows directly on from Judges 3, so it takes the same undated window the library gives that chapter."),
     "ruth1": dict(era="exodus",
                   when="Famine drives Elimelech's family from Bethlehem to Moab, where his sons marry Moabite women, Orpah and Ruth; all three men then die, leaving Naomi bereft. She decides to return home and releases her daughters-in-law to remarry — Orpah stays, but Ruth refuses to leave her: 'where you go I will go... your people shall be my people, and your God my God.' They arrive in Bethlehem at the start of the barley harvest.",
                   clock="Set 'in the days when the judges ruled' (1:1), with no more specific anchor given; estimates for Ruth's own generation range across the whole period, bounded loosely by the fact that her great-grandson David is born c. 1040 BC. ⚠ Like Judges, this falls in a stretch with no dedicated era of its own in this project's taxonomy; filed here under 'Egypt and the Exodus,' the closest available era."),
@@ -29563,6 +29566,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg3": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg2": "No picture has been searched for or chosen for this chapter yet, so the page carries none; a candidate would need a public-domain source and a check that it shows the Bochim scene rather than a generic one.",
 }
