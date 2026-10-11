@@ -146,7 +146,7 @@ SIBLINGS = (
      "A commonplace book — science and technology, the world, arts and culture"),
     ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
@@ -2526,8 +2526,4 @@ def main():
 
 if __name__ == "__main__":
     _rc = main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
     sys.exit(_rc)
