@@ -9724,6 +9724,31 @@ ENCYCLOPEDIA = [
          desc="The place by Kedesh where Heber pitched his tent (<a href=\"judges-4.html#v11\">Judges 4:11</a>, now on these pages). The same name appears as Elon-beza-anannim in <a href=\"joshua-19.html#v19-33\">Joshua 19:33</a> (already on these pages). The Hebrew names the place twice in one verse, so its exact form is uncertain, and its site has not been identified.",
          coords=(33.1000, 35.5500, 0.5), approx=True,
          modern="Near Kedesh in Naphtali (site not identified)"),
+    dict(slug="gideon", name="Gideon", kind="person", aliases=["Gideon", "Jerubbaal"],
+         refs=[("Judges", 6, 11), ("Judges", 6, 12), ("Judges", 6, 32), ("Judges", 6, 36), ("Judges", 7, 2)], videos=[],
+         desc="The man from Ophrah who threshes wheat in a winepress to hide it from Midian and is called 'mighty man of valour' by an angel under the terebinth (<a href=\"judges-6.html#v11\">Judges 6:11&ndash;12</a>, now on these pages). He asks for signs twice with a fleece (<a href=\"judges-6.html#v36\">6:36&ndash;40</a>), builds Jehovah-shalom, and is named Jerubbaal after he tears down his father's altar to Baal (<a href=\"judges-6.html#v32\">6:32</a>). The name Jerubbaal is also a name the book uses for him from here on."),
+    dict(slug="joash", name="Joash the Abiezrite", kind="person", aliases=["Joash"],
+         refs=[("Judges", 6, 11), ("Judges", 6, 30)], videos=[],
+         desc="Gideon's father, of Ophrah, who owns the altar of Baal and the Asherah beside it (<a href=\"judges-6.html#v25\">Judges 6:25</a>, now on these pages). When the men of the city demand his son's death, he answers them with the question of whether Baal needs to defend himself (<a href=\"judges-6.html#v31\">6:31</a>)."),
+    dict(slug="ophrah", name="Ophrah", kind="place", aliases=["Ophrah", "Ofra"],
+         refs=[("Judges", 6, 11), ("Judges", 6, 24)], videos=[],
+         desc="The town of Joash the Abiezrite, where the angel sits under the terebinth (<a href=\"judges-6.html#v11\">Judges 6:11</a>, now on these pages), and where Gideon builds the altar Jehovah-shalom, which the text says is still there in its own day (<a href=\"judges-6.html#v24\">6:24</a>). The site is not identified with certainty.",
+         coords=(32.2000, 35.3000, 0.8), approx=True,
+         modern="Manasseh hill country west of the Jordan (site not identified)"),
+    dict(slug="shamgar", name="Shamgar son of Anath", kind="person", aliases=["Shamgar"],
+         refs=[("Judges", 3, 31), ("Judges", 5, 6)], videos=[],
+         desc="The judge who strikes six hundred Philistines with an oxgoad (<a href=\"judges-3.html#v31\">Judges 3:31</a>, now on these pages). The Song of Deborah names him in its opening lines of the roads deserted (<a href=\"judges-5.html#v6\">Judges 5:6</a>, now on these pages)."),
+    dict(slug="ehud", name="Ehud son of Gera", kind="person", aliases=["Ehud"],
+         refs=[("Judges", 3, 15), ("Judges", 3, 21), ("Judges", 3, 27), ("Judges", 4, 1)], videos=[],
+         desc="The left-handed Benjaminite who carries tribute to Eglon of Moab, kills him with a hidden sword in the upper room, and calls Israel to the fords of the Jordan (<a href=\"judges-3.html#v15\">Judges 3:15&ndash;30</a>, now on these pages). Judges 4 begins with Israel doing evil again 'when Ehud was dead' (<a href=\"judges-4.html#v1\">Judges 4:1</a>, now on these pages)."),
+    dict(slug="meroz", name="Meroz", kind="place", aliases=["Meroz"],
+         refs=[("Judges", 5, 23)], videos=[],
+         desc="A town cursed by the angel of Jehovah for not coming to help Jehovah against the mighty (<a href=\"judges-5.html#v23\">Judges 5:23</a>, now on these pages). <span data-heb=\"מֵרוֹז\">The name stands in <strong>one verse</strong> of the Hebrew Bible</span>, so no other passage tells us where it lay or why it stayed out.",
+         coords=(32.6000, 35.3000, 1.0), approx=True,
+         modern="Not identified; placed by the song in the north of Israel (approximate)"),
+    dict(slug="hobab", name="Hobab", kind="person", aliases=["Hobab"],
+         refs=[("Judges", 1, 16), ("Judges", 4, 11)], videos=[],
+         desc="Moses' father-in-law, whose descendants are the Kenites. Judges 1:16 has the Kenites come up with Judah from the City of Palms (<a href=\"judges-1.html#v16\">Judges 1:16</a>, now on these pages), and Judges 4:11 traces Heber the Kenite's line to Hobab (<a href=\"judges-4.html#v11\">4:11</a>, now on these pages)."),
     dict(slug="goiim-gilgal", name="Goiim (at Gilgal)", kind="place", aliases=["Goiim"],
          refs=[("Joshua", 12, 23)], videos=[],
          desc="A king struck by Joshua whose own title, 'king of Goiim', is the identical phrase Genesis gives Tidal, one of the four kings Abram's household routs &mdash; a title this project's own note on <a href=\"genesis-14.html#n14-1\">Genesis 14:1</a> (already on these pages) already reads as 'king of Nations' (<a href=\"joshua-12.html#v12-23\">Joshua 12:23</a>, now on these pages). The Masoretic Text locates him 'at Gilgal'; the Septuagint reads 'of Galilee', a one-consonant difference in the Hebrew behind it. If the Greek is right, this king sat in the exact district Isaiah will later call 'Galilee of the nations' (Isaiah 8:23, not yet on these pages), the phrase Matthew quotes over the start of Jesus' own ministry (<a href=\"matthew-4.html#n4-12\">Matthew 4:15</a>, already on these pages). This translation follows the Hebrew Gilgal in the text and states the Greek variant here without adopting it."),
@@ -14580,6 +14605,9 @@ CHRON_CHAPTERS = {
     "judg5": dict(era="exodus",
                   when="Deborah and Barak sing the victory on the day of the battle. The song names the tribes who came down and those who stayed, tells how the stars and the brook Kishon fought, praises Jael, and closes with Sisera's mother waiting for a chariot that does not return.",
                   clock="Undated within the chapter. The song is set on the day of the battle in Judges 4, so it takes that chapter's undated window."),
+    "judg6": dict(era="exodus",
+                  when="Midian raids Israel for seven years. An angel sits under a terebinth at Ophrah while Gideon threshes wheat in a winepress; Gideon asks for signs, and the altar named Jehovah-shalom is built. He tears down his father's altar to Baal by night, and is named Jerubbaal.",
+                  clock="Undated within the chapter. It follows directly on from Judges 5, so it takes the same undated window the library gives the judges period."),
     "ruth1": dict(era="exodus",
                   when="Famine drives Elimelech's family from Bethlehem to Moab, where his sons marry Moabite women, Orpah and Ruth; all three men then die, leaving Naomi bereft. She decides to return home and releases her daughters-in-law to remarry — Orpah stays, but Ruth refuses to leave her: 'where you go I will go... your people shall be my people, and your God my God.' They arrive in Bethlehem at the start of the barley harvest.",
                   clock="Set 'in the days when the judges ruled' (1:1), with no more specific anchor given; estimates for Ruth's own generation range across the whole period, bounded loosely by the fact that her great-grandson David is born c. 1040 BC. ⚠ Like Judges, this falls in a stretch with no dedicated era of its own in this project's taxonomy; filed here under 'Egypt and the Exodus,' the closest available era."),
@@ -29722,6 +29750,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "judg6": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg5": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg3": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
@@ -32221,6 +32250,28 @@ ENCYCLOPEDIA_ES["deborah"] = ("Débora",
     "La profetisa que juzga a Israel bajo una palmera entre Ramá y Betel, y que llama a Barac a la batalla (<a href=\"judges-4.es.html#v4\">Jueces 4:4&ndash;9</a>, ya en estas páginas). Canta con Barac el cántico de la victoria (<a href=\"judges-5.es.html#v1\">Jueces 5</a>, ya en estas páginas).")
 ENCYCLOPEDIA_ES["kenites"] = ("Quenitas",
     "El pueblo de Héber, descendiente de Hobab, suegro de Moisés; sube con Judá desde la ciudad de las palmeras (<a href=\"judges-1.es.html#v16\">Jueces 1:16</a>, ya en estas páginas) y mantiene la paz con Jabín de Hazor en el tiempo de Débora (<a href=\"judges-4.es.html#v17\">Jueces 4:17</a>, ya en estas páginas).")
+ENCYCLOPEDIA_ES["gideon"] = ("Gedeón",
+    "El hombre de Ofra que bate trigo en el lagar para esconderlo de Madián, y a quien el ángel bajo el terebinto llama «hombre valiente y fuerte» (<a href=\"judges-6.es.html#v11\">Jueces 6:11&ndash;12</a>, ya en estas páginas). Pide dos señales con un vellón (<a href=\"judges-6.es.html#v36\">6:36&ndash;40</a>), construye Jehová-salom, y es llamado Jerobaal después de derribar el altar de Baal de su padre (<a href=\"judges-6.es.html#v32\">6:32</a>). El libro lo llama así desde aquí en adelante.")
+ENCYCLOPEDIA_ES["jerubbaal"] = ("Jerobaal",
+    "Segundo nombre de Gedeón, dado por su acción contra el altar de Baal: «pelee contra él Baal» (<a href=\"judges-6.es.html#v32\">Jueces 6:32</a>, ya en estas páginas). Véase Gedeón.")
+ENCYCLOPEDIA_ES["joash"] = ("Joás el abiezerita",
+    "El padre de Gedeón, de Ofra, dueño del altar de Baal y de la Asera junto a él (<a href=\"judges-6.es.html#v25\">Jueces 6:25</a>, ya en estas páginas). Cuando los hombres de la ciudad exigen la muerte de su hijo, les responde con la pregunta de si Baal necesita defenderse (<a href=\"judges-6.es.html#v31\">6:31</a>).")
+ENCYCLOPEDIA_ES["ophrah"] = ("Ofra",
+    "La ciudad de Joás el abiezerita, donde el ángel se sienta bajo el terebinto (<a href=\"judges-6.es.html#v11\">Jueces 6:11</a>, ya en estas páginas), y donde Gedeón construye el altar Jehová-salom, que el texto dice que todavía está allí en su tiempo (<a href=\"judges-6.es.html#v24\">6:24</a>). El sitio no está identificado con certeza.")
+ENCYCLOPEDIA_ES["shamgar"] = ("Samgar hijo de Anat",
+    "El juez que derriba a seiscientos filisteos con una aguijada (<a href=\"judges-3.es.html#v31\">Jueces 3:31</a>, ya en estas páginas). El cántico de Débora lo nombra en sus primeros versos, con los caminos desiertos (<a href=\"judges-5.es.html#v6\">Jueces 5:6</a>, ya en estas páginas).")
+ENCYCLOPEDIA_ES["ehud"] = ("Ehúd hijo de Guerá",
+    "El benjaminita zurdo que lleva el tributo a Eglón de Moab, lo mata con una espada escondida en la sala alta y llama a Israel a los vados del Jordán (<a href=\"judges-3.es.html#v15\">Jueces 3:15&ndash;30</a>, ya en estas páginas). Jueces 4 empieza con Israel haciendo el mal otra vez «ahora que Ehúd había muerto» (<a href=\"judges-4.es.html#v1\">Jueces 4:1</a>, ya en estas páginas).")
+ENCYCLOPEDIA_ES["meroz"] = ("Meroz",
+    "Una ciudad maldecida por el ángel de Jehová por no venir a ayudar a Jehová contra los poderosos (<a href=\"judges-5.es.html#v23\">Jueces 5:23</a>, ya en estas páginas). <span data-heb=\"מֵרוֹז\">El nombre aparece en <strong>un solo versículo</strong> de la Biblia hebrea</span>, así que ningún otro pasaje dice dónde estaba ni por qué se quedó.")
+ENCYCLOPEDIA_ES["hobab"] = ("Hobab",
+    "El suegro de Moisés, de cuyos descendientes vienen los quenitas. <a href=\"judges-1.es.html#v16\">Jueces 1:16</a> (ya en estas páginas) hace subir a los quenitas con Judá, y <a href=\"judges-4.es.html#v11\">Jueces 4:11</a> (ya en estas páginas) traza la línea de Héber el quenita hasta Hobab.")
+ENCYCLOPEDIA_ES["midian"] = ("Madián",
+    "El pueblo que oprime a Israel siete años (<a href=\"judges-6.es.html#v1\">Jueces 6:1</a>, ya en estas páginas), y que sale del desierto con sus camellos «como langostas en multitud» (<a href=\"judges-6.es.html#v5\">6:5</a>). Gedeón los vence con trescientos hombres en capítulos posteriores (todavía no en estas páginas).")
+ENCYCLOPEDIA_ES["abiezer"] = ("Abiezer",
+    "El clan de Manasés que se reúne tras Gedeón cuando el espíritu de Jehová lo reviste (<a href=\"judges-6.es.html#v34\">Jueces 6:34</a>, ya en estas páginas).")
+ENCYCLOPEDIA_ES["amalek"] = ("Amalec",
+    "El pueblo que sube con Madián y con los hijos del oriente contra Israel en tiempos de Gedeón (<a href=\"judges-6.es.html#v3\">Jueces 6:3</a>, ya en estas páginas), y el antiguo enemigo de Israel en el desierto que el cántico menciona a propósito de Efraín (<a href=\"judges-5.es.html#v14\">Jueces 5:14</a>, ya en estas páginas).")
 ENCYCLOPEDIA_ES["goiim-gilgal"] =("Goim (en Gilgal)", 'Un rey herido por Josué cuyo propio título, «rey de Goim», es la frase idéntica que Génesis da a Tidal, uno de los cuatro reyes que la casa de Abram derrota &mdash;un título que la propia nota de este proyecto sobre Génesis 14:1 (ya en estas páginas) ya lee como «rey de las Naciones» (<a href="joshua-12.es.html#v12-23">Josué 12:23</a>, ya en estas páginas). El texto masorético lo sitúa «en Gilgal»; la Septuaginta lee «de Galilea», una diferencia de una consonante en el hebreo detrás de ella. Si el griego tiene razón, este rey se sentaba en el distrito exacto que Isaías llamará después «Galilea de las naciones» (Isaías 8:23, todavía no en estas páginas), la frase que Mateo cita sobre el comienzo del propio ministerio de Jesús (<a href="matthew-4.es.html#n4-12">Mateo 4:15</a>, ya en estas páginas). Esta traducción sigue el Gilgal hebreo en el texto y declara aquí la variante griega sin adoptarla.')
 ENCYCLOPEDIA_ES["geshurites"] = ("Los guesuritas (Transjordania)", "Un pueblo pequeño en la frontera de <a href=\"enciclopedia.html#bashan\">Basán</a>, nombrado solo como marca fronteriza cuando las conquistas de <a href=\"enciclopedia.html#jair\">Jair</a> llegan a «la frontera de los guesuritas y los maacateos» (<a href=\"deuteronomy-3.es.html#v3-14\">Deuteronomio 3:14</a>, ya en estas páginas) &mdash;nunca herido, nunca en ninguna lista de reyes, y todavía «morando en medio de Israel» cuando este capítulo reparte la tierra que nunca se le exigió entregar (<a href=\"joshua-13.es.html#v13-13\">Josué 13:13</a>). &#9733; La mayoría ubica este mismo pequeño reino de Transjordania, siglos después, como el Guesur que gobierna Talmay, cuya hija Maaca se casa con David y da a luz a Absalón (2 Samuel 3:3, todavía no en estas páginas) &mdash;un pueblo que este capítulo deja en pie y que sigue en pie, por nombre, para emparentar con el trono de Israel.")
 ENCYCLOPEDIA_ES["maacathites"] = ("Los maacateos", "Un pueblo arameo pequeño de <a href=\"enciclopedia.html#bashan\">Basán</a>, emparejado con los <a href=\"enciclopedia.html#geshurites\">guesuritas</a> cada vez que se nombra a cualquiera de los dos &mdash;la fórmula fronteriza idéntica aparece tres veces en la Biblia hebrea (<a href=\"deuteronomy-3.es.html#v3-14\">Deuteronomio 3:14</a>; <a href=\"joshua-12.es.html#v12-5\">Josué 12:5</a>, ambos ya en estas páginas; y el propio v11 de este capítulo)&mdash; y, como los guesuritas, nunca expulsados (<a href=\"joshua-13.es.html#v13-13\">Josué 13:13</a>). Su pequeño reino de Maaca sobrevive para alquilarse como fuerza mercenaria contra David junto con Amón (2 Samuel 10:6, 8, todavía no en estas páginas), todavía un asunto en marcha en la frontera de Israel generaciones después de que este capítulo lo deja sin conquistar.")
