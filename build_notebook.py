@@ -182,7 +182,7 @@ SIBLINGS = (
      "Health, nutrition and medicine — one question at a time, from the studies"),
     ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/",
+    ("Mister Translation", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 

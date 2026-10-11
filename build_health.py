@@ -146,7 +146,7 @@ SIBLINGS = (
      "A commonplace book — science and technology, the world, arts and culture"),
     ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/",
+    ("Mister Translation", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 

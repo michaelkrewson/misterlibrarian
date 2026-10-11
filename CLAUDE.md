@@ -43,7 +43,9 @@ This repo publishes **six separate things**: the Bible project at mistertranslat
 five blogs on m8k.io subdomains. (2026-09-09 → 2026-10-10 a hand-written six-card hub sat at the
 bare root, refreshed by `build_hub.py`; both retired when the Bible home took the root back.)
 
-1. **The Bible project** (https://mistertranslation.com/, `build.py`; at `/bible.html`
+1. **Mister Translation** — the Bible project, named so 2026-10-10 (was "The MisterLibrarian Bible
+   Project" / "Mr. Librarian's Bible"; tagline = the Spanish one in English; Mr. Librarian stays
+   the keeper) (https://mistertranslation.com/, `build.py`; at `/bible.html`
    2026-09-09 → 2026-10-10, now 301'd to `/`) — a fresh translation of the Bible into modern English,
    made from the original Hebrew/Greek one chapter at a time, with the source text reproduced
    verse-by-verse and notes comparing every rendering choice against a fixed shelf of landmark

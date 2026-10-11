@@ -18,6 +18,6 @@
     { "pattern": "mistertranslation.com/west/*", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/travel", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/travel/*", "zone_name": "mistertranslation.com" },
-    { "pattern": "mistertranslation.com/bible.html", "zone_name": "mistertranslation.com" }
+    { "pattern": "mistertranslation.com/bible.html*", "zone_name": "mistertranslation.com" }
   ]
 }

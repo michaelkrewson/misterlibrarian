@@ -144,7 +144,7 @@ SIBLINGS = (
     ("The Librarian Abroad", "https://abroad.m8k.io/"),
     ("The Librarian's Regimen", "https://regimen.m8k.io/"),
     ("The Librarian's Notebook", "https://notebook.m8k.io/"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/"),
+    ("Mister Translation", "https://mistertranslation.com/"),
     ("Eight Miles West", "https://west.m8k.io/"),
 )
 

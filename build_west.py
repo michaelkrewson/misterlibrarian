@@ -166,7 +166,7 @@ SIBLINGS = (
      "Notes from the road and the table"),
     ("The Librarian's Regimen", "https://regimen.m8k.io/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/",
+    ("Mister Translation", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
