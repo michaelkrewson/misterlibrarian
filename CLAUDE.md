@@ -192,6 +192,14 @@ application day, seeing the AdSense home-page banner:
   explicit, no shocking content, no promotion of dangerous products. Financial content is
   allowed; **financial advice** and "get rich" framing is where the Ledger's own "measurement,
   never a recommendation" rule does the work.
+- **Per-entry `ads: off` (2026-10-11).** Google *restricts* ads on sensitive topics (war, disasters) but
+  treats **sexually explicit** content as a policy violation that can suspend the account, and the AdSense
+  tag rides in every page `<head>`. A Ledger / Notebook / Regimen / Abroad entry can now carry
+  `ads: off` in its front matter (`blogkit.ads_off`; a typo like `ads: of` fails the build). It drops ONLY
+  the AdSense tag on that entry's page; GoatCounter and everything else stay. Not wired for the Bible
+  (`build.py`), Ask or West. **Explicit material never goes on any of these sites** — Michael's call
+  2026-10-11: it lives on a free `pages.dev` annex with no ad code, NOT in the m8k.io search index and
+  NOT linked from any page here (ask Michael for the link; don't add it to `PUBS`, sitemaps or footers).
 - **Mechanics to remember:** don't click your own ads (an instant ban); don't place ads on
   the 404/thanks/contact pages or pop them into the middle of a form; if ads ever go on the
   Bible chapters, keep them out of the Hebrew/Greek source panels. `privacy.html` §6 already

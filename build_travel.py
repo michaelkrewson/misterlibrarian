@@ -145,7 +145,7 @@ OUT_DIR = os.path.join(ROOT, "travel")
 # better a loud typo than a silently-ignored `sumary:` line.
 KNOWN_KEYS = {
     "title", "date", "updated", "place", "tags", "hero", "hero_alt", "hero_credit",
-    "summary", "draft", "stars", "subject", "subject_type", "meta_desc",
+    "summary", "draft", "stars", "subject", "subject_type", "meta_desc", "ads",
 }
 REQUIRED_KEYS = {"title", "date", "summary"}
 
@@ -337,14 +337,15 @@ def _footer():
     return FOOTER.replace("</footer>", line + "</footer>")
 
 
-def _goatcounter():
+def _goatcounter(noads=False):
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
             f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
-            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
+            + ('' if noads else
+               f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+               f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'))
 
 
 def _og(title, desc, url="", image=""):
@@ -378,7 +379,7 @@ def _og(title, desc, url="", image=""):
     return "\n" + "\n".join(tags)
 
 
-def page(title, body, active="", desc="", url="", image="", noindex=False):
+def page(title, body, active="", desc="", url="", image="", noindex=False, noads=False):
     css_v = _asset_ver("style.css")
     share_v = _asset_ver("share.js")
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
@@ -393,7 +394,7 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
 <title>{html.escape(title)}</title>{d}{r}{_og(title, desc, url, image)}
 <link rel="icon" href="img/favicon.svg"/>
 <link rel="alternate" type="application/rss+xml" title="{html.escape(SITE_NAME, quote=True)}" href="feed.xml"/>
-<link rel="stylesheet" href="style.css?v={css_v}"/>{_goatcounter()}
+<link rel="stylesheet" href="style.css?v={css_v}"/>{_goatcounter(noads)}
 </head>
 <body>
 <div class="wrap">
@@ -547,6 +548,7 @@ def load_posts(include_drafts=False):
             "summary": meta["summary"],
             "meta_desc": meta.get("meta_desc", ""),
             "draft": is_draft,
+            "noads": blogkit.ads_off(meta, f"source/travel/{fn}"),
             "body": body,
             # Lowercased haystack for the on-page search box — title/place/tags/
             # summary in full (short, and exactly the fields a reader searches
@@ -1295,7 +1297,7 @@ def build_post_pages(posts):
         img = f"{SITE_URL}{BASE}/img/{p['hero']}" if p["hero"] else ""
         out.append((p["file"],
                     page(f"{p['title']} — {SITE_NAME}", body,
-                         desc=_meta_desc(p), url=p["file"], image=img)))
+                         desc=_meta_desc(p), url=p["file"], image=img, noads=p["noads"])))
     return out
 
 
