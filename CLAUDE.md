@@ -31,6 +31,10 @@ builders are unchanged — only where the output is SERVED moved:
 - Still pointing through the redirects (fine, deferred): the Bible pages' site menu and the hub's
   cards use relative `finance/`-style links.
 - Search Console: Domain property **m8k.io** (Mister Librarian account) covers every subdomain.
+- **Site-wide search** (https://m8k.io search box → /search; 2026-10-10): Cloudflare D1 `m8k-search` (FTS5) indexed from
+  EVERY sitemap here by `tools/build_search_index.py` (incremental: only changed pages upload). `search-index.yml`
+  re-indexes on any push touching pages/sitemaps (publish-draft too); API/pages live in `~/projects/m8k`
+  (`functions/api/search.js`, `suggest.js`, `_bible.js` for "John 3:16" jumps). A page reaches search only via a sitemap.
 
 This repo publishes **six separate things at mistertranslation.com**, reached through a
 hand-written 6-card hub at the bare domain root (`index.html` — added 2026-09-09 with three
