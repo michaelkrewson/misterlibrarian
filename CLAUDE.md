@@ -1,5 +1,36 @@
 # MisterLibrarian — Claude instructions
 
+## ⚠️ Since 2026-10-10 the five blogs live on m8k.io subdomains, not on mistertranslation.com
+
+| Blog | Folder / builder | Live at | Worker |
+|---|---|---|---|
+| The Librarian's Ledger | `finance/`, `build_finance.py` | https://ledger.m8k.io | `m8k-ledger` |
+| The Librarian's Notebook | `notebook/`, `build_notebook.py` | https://notebook.m8k.io | `m8k-notebook` |
+| The Librarian's Regimen | `health/`, `build_health.py` | https://regimen.m8k.io | `m8k-regimen` |
+| The Librarian Abroad | `travel/`, `build_travel.py` | https://abroad.m8k.io | `m8k-abroad` |
+| Eight Miles West | `west/`, `build_west.py` | https://west.m8k.io | `m8k-west` |
+
+m8k.io is Michael's umbrella domain (front door at https://m8k.io, repo `~/projects/m8k`);
+mistertranslation.com is now the Bible project + Dear Mr. Librarian + the hub. Folders and
+builders are unchanged — only where the output is SERVED moved:
+- **Serving:** each blog is a Cloudflare static-assets Worker (`cf/<blog>.wrangler.jsonc` +
+  shared `cf/static-site.js`), `html_handling: "none"` so URLs keep `.html` exactly as before.
+  GitHub Pages still builds the folders but visitors never reach them:
+  `mistertranslation.com/<folder>/*` → 301 → the subdomain (Worker `mt-redirects`,
+  `cf/mt-redirects.*`; mistertranslation.com's A records are PROXIED in Cloudflare, SSL Full).
+- **Publishing is still build → commit → push.** `.github/workflows/deploy-blogs.yml` redeploys
+  every moved blog on any push to main touching a blog folder or `cf/`. Bot pushes can't trigger
+  it, so `refresh-asset-board.yml` (hourly Ledger boards) and `publish-draft.yml` (phone publish
+  for Abroad) call `tools/deploy_blogs.sh <blog>` themselves. Manual: `bash tools/deploy_blogs.sh
+  [blog]`. Secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`. **Verify on the subdomain.**
+- **Each builder:** `SITE_URL`/`BASE_URL` = the subdomain, `BASE = ""`; `HUB_URL` keeps the
+  "Mister Library" mark on mistertranslation.com; `STATS_PREFIX` keeps GoatCounter paths under
+  the old `/<folder>/…` so stats continue. Cross-blog links are ABSOLUTE subdomain URLs; same-blog
+  links relative — never write `/finance/…`-style root-absolute links in a blog entry.
+- Still pointing through the redirects (fine, deferred): the Bible pages' site menu and the hub's
+  cards use relative `finance/`-style links.
+- Search Console: Domain property **m8k.io** (Mister Librarian account) covers every subdomain.
+
 This repo publishes **six separate things at mistertranslation.com**, reached through a
 hand-written 6-card hub at the bare domain root (`index.html` — added 2026-09-09 with three
 cards; the fourth 2026-09-10; the fifth and sixth 2026-09-11). **Since 2026-09-18 the hub has
@@ -18,20 +49,20 @@ PUBLICATION's name (the brand), the small eyebrow is its category; the persona i
    made from the original Hebrew/Greek one chapter at a time, with the source text reproduced
    verse-by-verse and notes comparing every rendering choice against a fixed shelf of landmark
    versions.
-2. **The Librarian Abroad** (`/travel/`, `build_travel.py`) — Michael's travel & food blog.
-3. **A finance board** (`/finance/`, `build_finance.py`) — a standing "world's largest
+2. **The Librarian Abroad** (**https://abroad.m8k.io** — folder `travel/`, `build_travel.py`) — Michael's travel & food blog.
+3. **The Librarian's Ledger** (**https://ledger.m8k.io** — folder `finance/`, `build_finance.py`; began as a finance board) — a standing "world's largest
    assets by market cap" board, built offline from a JSON snapshot.
-4. **The Librarian's Regimen** (`/health/`, `build_health.py`) — a blog on health,
+4. **The Librarian's Regimen** (**https://regimen.m8k.io** — folder `health/`, `build_health.py`) — a blog on health,
    nutrition and medicine, one question at a time, read from the primary literature.
    Added 2026-09-10; see its own section below.
-5. **The Librarian's Notebook** (`/notebook/`, `build_notebook.py`) — a commonplace book:
+5. **The Librarian's Notebook** (**https://notebook.m8k.io** — folder `notebook/`, `build_notebook.py`) — a commonplace book:
    science & technology, the world, arts & culture, and whatever else fits none of the
    other four. The one ORDINARY blog on the domain. Added 2026-09-11; see its own section
    below.
 6. **Eight Miles West** (**https://west.m8k.io** since 2026-10-10 — was `/west/`; `build_west.py`)
    — a family history published a chapter at a time; a BOOK (numbered chapters in five fixed
    parts, read in order), not a blog. Added 2026-09-11; see its own section below.
-   ⚠️ **Pushing does NOT publish West any more** — see "Publishing West" in its section.
+   (Blogs 2–5 also moved to m8k.io subdomains the same day — see the table at the top.)
 
 **Read `README.md` first** for the mechanical how-to (build commands, how to add a chapter
 or a travel entry, publishing). It's well-maintained and this file doesn't repeat it. This
@@ -729,12 +760,9 @@ publications.
 **Publishing West (since 2026-10-10 — the m8k.io umbrella pilot).** The book lives at
 **https://west.m8k.io**, served by the Cloudflare Worker `m8k-west` (static assets from the
 built `west/` folder, `cf/west.wrangler.jsonc` + shared `cf/static-site.js`).
-`mistertranslation.com/west/*` 301s there via the `mt-redirects` Worker
-(`cf/mt-redirects.*`; mistertranslation.com's A records are now PROXIED in Cloudflare, SSL
-mode Full). So GitHub Pages' copy of `west/` is never seen by visitors — **a chapter goes live
-only after:** `python3 build_west.py` → commit → push → **`wrangler deploy -c
-cf/west.wrangler.jsonc`** (from the repo root; wrangler is logged in on the Mac). Verify on
-west.m8k.io, not mistertranslation.com/west/. URLs keep their `.html` (html_handling "none") —
+`mistertranslation.com/west/*` 301s there via the `mt-redirects` Worker. Publishing is
+build → commit → push; the deploy-blogs workflow publishes it (see the table at the top).
+Verify on west.m8k.io, not mistertranslation.com/west/. URLs keep their `.html` (html_handling "none") —
 don't switch the blogs to Cloudflare *Pages*, which 308s `/x.html` → `/x`. GoatCounter still
 records West under `/west/…` (`STATS_PREFIX`). The other blogs follow the same pattern as
 they move (plan: abroad → regimen → notebook → ledger).
