@@ -74,7 +74,7 @@ BLURB = ("Reader questions about the translation — a word-choice, the text, th
 SITE_URL = "https://mistertranslation.com"
 BASE_URL = "https://mistertranslation.com/ask/"
 BASE = "/ask"
-BIBLE_URL = "https://mistertranslation.com/bible.html"
+BIBLE_URL = "https://mistertranslation.com/"
 
 GOATCOUNTER_CODE = "mistertranslation"
 ADSENSE_CLIENT = "ca-pub-2001206283779660"
@@ -273,21 +273,9 @@ MARK_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.o
 <path d="M8.5 18.3 L23 29 L37.5 18.3" fill="none" stroke="#e8c968" stroke-width="0.8" stroke-linejoin="round"/>
 </svg>"""
 
-# The hub mark + caret, byte-for-byte copies of build.py's own HUB_MARK_SVG/CRUMBSEP_SVG
-# (itself a copy of the hand-written root index.html's <svg class="mark">) -- same
-# discipline as every other publication's own copy: nothing to import, keep the three
-# in step by hand if the hub mark ever changes.
-HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
-  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
-  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
-  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
-  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
-  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
-  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
-  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
-  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
-  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
-</svg>"""
+# The m8k mark (2026-10-10) replaced the round Mister Library badge here as on every
+# other publication; its CSS (.m8kwm/.m8k8) comes from the Bible's ../style.css.
+HUB_URL = "https://m8k.io"
 
 # Thicker, brighter than build.py's own CRUMBSEP_SVG on purpose (2026-09-21, Michael's
 # ask, after seeing the mockup) -- this crumb carries THREE links instead of every
@@ -299,7 +287,7 @@ CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="9" height="18"
                 'stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
 # A SIMPLIFIED derivative of build.py's own SCROLL_SVG for the "Mr. Librarian's Bible"
-# crumb link -- deliberately NOT a byte-for-byte copy the way HUB_MARK_SVG is. The real
+# crumb link -- deliberately NOT a byte-for-byte copy the way the old hub mark was. The real
 # scroll's fine linework (the three ruled lines, the quill) is drawn for the 44-56px
 # sizes it appears at elsewhere (the Bible's own header, the About page) and blurs to a
 # smudge at this crumb's 26px -- measured directly (see the mockup this shipped from).
@@ -326,16 +314,16 @@ def _chrome(active=""):
     # /ask/ isn't a sibling of Ledger/Regimen/Notebook/Abroad off the root hub, it's
     # nested one level deeper (part of the Bible project, which is itself one of the
     # hub's publications), so this is a THREE-level trail rather than every other
-    # blog's two: Mister Library > Mr. Librarian's Bible > Dear Mr. Librarian (the
+    # blog's two: m8k > Mr. Librarian's Bible > Dear Mr. Librarian (the
     # last of those is .askmain's own big brand, rendered on the row below). The
     # search box rides at the end of THIS row, not the brand row below -- see the
     # .askhead layout comment in ask/style.css for why (Option B of that mockup).
     crumb = ('<div class="askcrumb">'
-             '<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
-             '%s<span class="hubwm">Mister Library</span></a>%s'
+             '<a class="hublink" href="%s/" aria-label="m8k — every publication">'
+             '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s'
              '<a class="biblelink" href="%s">%s<span class="biblewm">Mr. Librarian’s Bible</span></a>%s'
              '%s'
-             '</div>' % (SITE_URL, HUB_MARK_SVG, CRUMBSEP_SVG,
+             '</div>' % (HUB_URL, CRUMBSEP_SVG,
                          BIBLE_URL, CRUMB_BIBLE_SVG, CRUMBSEP_SVG, search))
     main = ('<div class="askmain">'
             '<a class="brand" href="index.html">%s<span class="wm">Dear <span class="em">Mr.</span> <span class="em">Librarian</span></span></a>'
@@ -803,8 +791,4 @@ def main():
 
 if __name__ == "__main__":
     _rc = main()
-    try:
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
     sys.exit(_rc)

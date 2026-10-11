@@ -11,7 +11,7 @@
 | Eight Miles West | `west/`, `build_west.py` | https://west.m8k.io | `m8k-west` |
 
 m8k.io is Michael's umbrella domain (front door at https://m8k.io, repo `~/projects/m8k`);
-mistertranslation.com is now the Bible project + Dear Mr. Librarian + the hub. Folders and
+mistertranslation.com is now the Bible project (its home IS the root since 2026-10-10) + Dear Mr. Librarian. Folders and
 builders are unchanged — only where the output is SERVED moved:
 - **Serving:** each blog is a Cloudflare static-assets Worker (`cf/<blog>.wrangler.jsonc` +
   shared `cf/static-site.js`), `html_handling: "none"` so URLs keep `.html` exactly as before.
@@ -24,33 +24,27 @@ builders are unchanged — only where the output is SERVED moved:
   for Abroad) call `tools/deploy_blogs.sh <blog>` themselves. Manual: `bash tools/deploy_blogs.sh
   [blog]`. Secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`. **Verify on the subdomain.**
 - **Each builder:** `SITE_URL`/`BASE_URL` = the subdomain, `BASE = ""`; `HUB_URL` = https://m8k.io —
-  the top-left crumb is the "m8k" mark (gold 8 that tips into ∞; replaced the round Mister
+  the top-left crumb is the "m8k" mark (emerald 8 that tips into ∞; replaced the round Mister
   Library badge 2026-10-10, Michael's choice); `STATS_PREFIX` keeps GoatCounter paths under
   the old `/<folder>/…` so stats continue. Cross-blog links are ABSOLUTE subdomain URLs; same-blog
   links relative — never write `/finance/…`-style root-absolute links in a blog entry.
-- Still pointing through the redirects (fine, deferred): the Bible pages' site menu and the hub's
-  cards use relative `finance/`-style links.
+- **The Bible home is the site's front page (2026-10-10, Michael's call):** `build.py` writes it to
+  root `index.html` (`HOME_FILE`; links use `HOME_URL = "./"`); `/bible.html` 301s to `/` (`mt-redirects`).
+  The six-card hub and `build_hub.py` are RETIRED — m8k.io now lists every publication. Bible pages and
+  Dear Mr. Librarian carry the m8k crumb; the Bible header search goes to `m8k.io/search?pub=bible`
+  (the old in-site `search.html` still builds). Bible footers link the blogs by subdomain URL.
 - Search Console: Domain property **m8k.io** (Mister Librarian account) covers every subdomain.
 - **Site-wide search** (https://m8k.io search box → /search; 2026-10-10): Cloudflare D1 `m8k-search` (FTS5) indexed from
   EVERY sitemap here by `tools/build_search_index.py` (incremental: only changed pages upload). `search-index.yml`
   re-indexes on any push touching pages/sitemaps (publish-draft too); API/pages live in `~/projects/m8k`
   (`functions/api/search.js`, `suggest.js`, `_bible.js` for "John 3:16" jumps). A page reaches search only via a sitemap.
 
-This repo publishes **six separate things at mistertranslation.com**, reached through a
-hand-written 6-card hub at the bare domain root (`index.html` — added 2026-09-09 with three
-cards; the fourth 2026-09-10; the fifth and sixth 2026-09-11). **Since 2026-09-18 the hub has
-one small builder, `build_hub.py`**, which does NOT write the page: it refills the one
-`<div class="latest" data-pub="…">` line inside each card from that publication's sources
-(newest non-draft entry; the Bible's from bible.html's own "Newest:" button) and renders the
-hub's own share image `img/og-hub.png`. Every builder below calls `build_hub.refresh()` at the
-end of its `__main__`, so publishing anywhere refreshes the hub — never hand-edit a latest
-line, and keep the six `data-pub` slots when editing the cards. The copy, cards and styling
-stay hand-written in `index.html`. Card convention (2026-09-18 review): the big `<h2>` is the
-PUBLICATION's name (the brand), the small eyebrow is its category; the persona is
-"Mr. Librarian" everywhere on the hub.
+This repo publishes **six separate things**: the Bible project at mistertranslation.com and the
+five blogs on m8k.io subdomains. (2026-09-09 → 2026-10-10 a hand-written six-card hub sat at the
+bare root, refreshed by `build_hub.py`; both retired when the Bible home took the root back.)
 
-1. **The Bible project** (`/bible.html`, `build.py`; moved off the bare root 2026-09-09 when
-   the hub took over `/` — see below) — a fresh translation of the Bible into modern English,
+1. **The Bible project** (https://mistertranslation.com/, `build.py`; at `/bible.html`
+   2026-09-09 → 2026-10-10, now 301'd to `/`) — a fresh translation of the Bible into modern English,
    made from the original Hebrew/Greek one chapter at a time, with the source text reproduced
    verse-by-verse and notes comparing every rendering choice against a fixed shelf of landmark
    versions.
@@ -113,7 +107,7 @@ someone's lunch money" (same fact, now it has a pulse).
 - **The Librarian Abroad** (`/travel/`) and **The Librarian's Regimen** (`/health/`) take it
   more lightly — travel already has personality built in; health writing needs the humor to
   never read as flippant about someone's actual medical situation.
-- **The Bible project** (`/bible.html`) and **Eight Miles West** (`/west/`) take the least —
+- **The Bible project** (the root, `/`) and **Eight Miles West** (`/west/`) take the least —
   the translation doctrine above already forbids first-person meta-commentary on the page, and
   a family history has real people's real lives in it. Any wit there lives in a genuinely
   interesting turn of phrase about the text or the history itself (a name-pun payoff, an
@@ -226,17 +220,15 @@ this is plumbing so a link written anyway gets credited, not a revenue plan.
 ## Hub, cross-links and site-wide legal pages
 
 The old "the Bible project links to nothing and is linked from nothing" isolation rule was
-**RETIRED 2026-09-09 — don't reintroduce it.** Current state: the hub (`index.html`) links all
-six publications; since 2026-09-18 every blog's footer (each builder's `SIBLINGS`, and
-`build_travel.py`'s hand-rolled header/footer links) also links straight to `bible.html`, while
-`build.py`'s own ~2,772 pages were deliberately left untouched. Librarian Abroad ↔ finance
-board link directly too. Bible pages keep their root-level URLs; only the old homepage moved,
-to `bible.html` (`HOME_URL`). **Each builder writes only inside its own output area, never
+**RETIRED 2026-09-09 — don't reintroduce it.** Current state: m8k.io links all six publications;
+every blog's footer (each builder's `SIBLINGS`, and `build_travel.py`'s hand-rolled header/footer
+links) links the Bible at https://mistertranslation.com/, and every Bible page's footer links the
+five blogs (`build.py` `_SIBLING_LINKS`). Librarian Abroad ↔ finance board link directly too. **Each builder writes only inside its own output area, never
 globs or deletes elsewhere, and never imports another builder.** ⚠ `build.py`'s
 `check_built_descriptions()` also scans the hand-written root pages and FAILS the Bible build
-when any `<meta name="description">` runs past 160 characters — count it when editing the hub.
+when any `<meta name="description">` runs past 160 characters — count it when editing them.
 `privacy.html` (one policy for all six publications) and `librarian.html` (site-wide About &
-Contact) are hand-written in the hub's style; every footer links the policy — change it by
+Contact) are hand-written; every footer links the policy — change it by
 editing `privacy.html` and moving its dated line, never by forking per-publication copies.
 
 Full detail (the retirement history, the Spanish-footer imprecision, the AdSense wording the

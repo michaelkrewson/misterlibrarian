@@ -166,7 +166,7 @@ SIBLINGS = (
      "Notes from the road and the table"),
     ("The Librarian's Regimen", "https://regimen.m8k.io/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
-    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/",
      "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
@@ -1455,8 +1455,4 @@ HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
 
 if __name__ == "__main__":
     _rc = main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
     sys.exit(_rc)

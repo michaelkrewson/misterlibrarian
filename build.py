@@ -60,12 +60,19 @@ SHARE_JS_VER = _asset_ver("share.js")
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
 SITE_URL = "https://mistertranslation.com"
-# The Bible project's own homepage moved off the bare domain root 2026-09-09, when
-# mistertranslation.com/ became a 3-card hub (Bitcoin & Finance / Food & Travel /
-# Religion) — root index.html is now a separate, hand-written static file with no
-# builder of its own (this script never writes it). This project's home page is
-# just a normal page at HOME_URL; the bare root is no longer it.
-HOME_URL = "bible.html"
+# The Bible project is the front page of mistertranslation.com again (2026-10-10,
+# Michael's call). From 2026-09-09 the bare root was a hand-written six-card hub and
+# this home page lived at /bible.html; once the five blogs moved to their own m8k.io
+# subdomains, m8k.io became the page that lists every publication and the hub retired.
+# build_index() writes HOME_FILE (canonical https://mistertranslation.com/), and the
+# old /bible.html 301s to / (cf/mt-redirects.js). HOME_URL is the LINK target: "./"
+# resolves to the root from every page, including the dict/ency/atlas entry pages,
+# which carry <base href="https://mistertranslation.com/">.
+HOME_URL = "./"
+HOME_FILE = "index.html"
+# m8k.io: the umbrella front door + site-wide search (separate repo, michaelkrewson/m8k).
+HUB_URL = "https://m8k.io"
+BIBLE_SEARCH_URL = f"{HUB_URL}/search"   # ?pub=bible keeps results to this project
 OG_IMAGE = f"{SITE_URL}/img/og-default.png"   # branded default link-preview image
 OG_IMAGE_ES = f"{SITE_URL}/img/og-default.es.png"   # …and its Spanish twin
 
@@ -1049,24 +1056,6 @@ SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3
   <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
 </svg>"""
 
-# The hub mark: a byte-for-byte copy of <svg class="mark"> in the hand-written
-# root index.html, used in the small breadcrumb line above the brand (see
-# header() and .hubcrumb in style.css). That file is hand-written, not built
-# by a script here, so there is nothing to import — if the hub mark ever
-# changes, this copy needs to change with it, same as every other cross-file
-# "port it by hand" case in this repo.
-HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
-  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
-  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
-  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
-  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
-  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
-  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
-  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
-  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
-  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
-</svg>"""
-
 CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="7" height="15" aria-hidden="true" '
                 'focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" '
                 'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
@@ -1097,8 +1086,8 @@ def header(active="", lang="en"):
     </details>
   </div>
   <div class="hubcrumb">
-    <a class="hublink" href="{SITE_URL}/" aria-label="Mister Library — every publication">
-      {HUB_MARK_SVG}<span class="hubwm">Mister Library</span>
+    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
+      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
     </a>
     {CRUMBSEP_SVG}
   </div>
@@ -1141,8 +1130,9 @@ def header(active="", lang="en"):
     # the language switch, which is the one thing up there that IS a control.
     return f"""<header class="site-head">
   <div class="utilnav utilnav-right">
-    <form class="headersearch" action="search.html" method="get" role="search">
-      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
+    <form class="headersearch" action="{BIBLE_SEARCH_URL}" method="get" role="search">
+      <input type="hidden" name="pub" value="bible"/>
+      <input type="search" name="q" id="headerSearch" placeholder="Search or John 3:16" aria-label="Search the Bible, or jump to a verse"/>
     </form>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
@@ -1153,8 +1143,8 @@ def header(active="", lang="en"):
     </details>
   </div>
   <div class="hubcrumb">
-    <a class="hublink" href="{SITE_URL}/" aria-label="Mister Library — every publication">
-      {HUB_MARK_SVG}<span class="hubwm">Mister Library</span>
+    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
+      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
     </a>
     {CRUMBSEP_SVG}
   </div>
@@ -1176,8 +1166,9 @@ def header(active="", lang="en"):
       <div class="mobmenu-sep"></div>
       <a href="ask/ask.html">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
-      <form class="headersearch" action="search.html" method="get" role="search">
-        <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
+      <form class="headersearch" action="{BIBLE_SEARCH_URL}" method="get" role="search">
+        <input type="hidden" name="pub" value="bible"/>
+        <input type="search" name="q" id="headerSearchMob" placeholder="Search or John 3:16" aria-label="Search the Bible, or jump to a verse"/>
       </form>
       <div class="mobmenu-sep"></div>
       <a href="{HOME_URL}" class="cur">English</a>
@@ -1207,22 +1198,20 @@ def header(active="", lang="en"):
 _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
                     if GOATCOUNTER_CODE else "")
 
-# The five sibling publications, same names/order/hrefs the hub (index.html) itself uses for
-# their cards -- every other blog's footer already links out to its siblings this way (see
-# e.g. finance/index.html's footer); the Bible project's footer didn't, until 2026-09-19. Bible
-# pages sit at the site root (or one level down under a <base> tag on dict/ency/atlas stub
-# pages -- see page()), so a root-relative "finance/" resolves correctly from anywhere.
-_SIBLING_LINKS = ('<a href="finance/">The Librarian\'s Ledger</a> · '
-                   '<a href="travel/">The Librarian Abroad</a> · '
-                   '<a href="health/">The Librarian\'s Regimen</a> · '
-                   '<a href="notebook/">The Librarian\'s Notebook</a> · '
-                   '<a href="west/">Eight Miles West</a>')
+# The five sibling publications, linked from every Bible page's footer (since
+# 2026-09-19). They moved to their own m8k.io subdomains 2026-10-10, so these are
+# absolute URLs now (the old mistertranslation.com/<blog>/ paths only 301 there).
+_SIBLING_LINKS = ('<a href="https://ledger.m8k.io/">The Librarian\'s Ledger</a> · '
+                   '<a href="https://abroad.m8k.io/">The Librarian Abroad</a> · '
+                   '<a href="https://regimen.m8k.io/">The Librarian\'s Regimen</a> · '
+                   '<a href="https://notebook.m8k.io/">The Librarian\'s Notebook</a> · '
+                   '<a href="https://west.m8k.io/">Eight Miles West</a>')
 
 FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacy</a></p>
   <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -1232,7 +1221,7 @@ ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
@@ -4536,7 +4525,7 @@ def votd_entries(chapters):
     return entries
 
 
-def build_index(chapters):
+def build_index(chapters, ref):
     # "Newest" = most-recently-published = the LAST panel in the source file
     # (PUBLISH_ORDER), NOT CHAPTERS[-1]: CHAPTERS is in canonical order, so its tail is
     # the canonically-last chapter (currently Exodus), not the one shipped most recently.
@@ -4559,20 +4548,16 @@ def build_index(chapters):
 <section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
   <div class="hero-copy">
-  <p>Welcome. This project translates the Bible into modern English directly from the original Hebrew —
-  the Masoretic Text, reproduced verse-by-verse alongside the new rendering so every choice can be checked
-  against the source. Beneath each chapter sit <strong>translator's notes, verse by verse</strong>,
-  explaining each decision and comparing it against seven landmark versions: the NIV, the KJV, the
-  Douay-Rheims, The Living Bible, the 1599 Geneva Bible, the American Standard Version, and the New World
-  Translation.</p>
-  <p>No verse is smoothed over, no difficulty hidden: where the Hebrew puns, the translation puns or the
-  notes confess it can't; where the text is uncertain or the manuscripts disagree, the notes say so plainly.
-  The work advances one chapter per sitting — follow along from the beginning, or jump in at the newest
-  chapter.</p>
+  <p>Modern English, straight from the Hebrew and the Greek, with the original text beside every verse and
+  <strong>translator's notes</strong> weighing each choice against seven landmark versions.</p>
   <div class="hero-cta">
     <a class="btn" href="genesis-1.html">Start at Genesis 1</a>
     <a class="btn btn-2" href="{chapter_filename(latest[1], latest[2])}">Newest: {latest[1]} {latest[2]}</a>
   </div>
+  <p class="hero-more">No verse is smoothed over and no difficulty hidden: where the Hebrew puns, the
+  translation puns or the notes admit it can't; where the manuscripts disagree, the notes say so. The seven
+  versions are the NIV, the KJV, the Douay-Rheims, The Living Bible, the 1599 Geneva, the ASV and the New
+  World Translation. <a href="about.html">More on the method →</a></p>
   </div>
 </section>
 
@@ -4596,6 +4581,25 @@ def build_index(chapters):
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
 </div>
 
+<h2>The reference room</h2>
+<p class="lede">Every shelf grows as each chapter is translated, so the library is always exactly as deep
+as the translation itself.</p>
+<div class="cardgrid refroom">
+  <a class="card" href="dictionary.html"><div class="card-t">\U0001F4D6 Dictionary</div>
+  <div class="card-d">{ref["dict"]:,} terms behind the translation, each linked to the note that first discussed it.</div></a>
+  <a class="card" href="encyclopedia.html"><div class="card-t">\U0001F3FA Encyclopedia</div>
+  <div class="card-d">{ref["ency"]:,} people, places and crafts, every entry verse-linked.</div></a>
+  <a class="card" href="atlas.html"><div class="card-t">\U0001F5FA\uFE0F Atlas</div>
+  <div class="card-d">{ref["mapped"]:,} places mapped so far, plus the big journeys traced in full.</div></a>
+  <a class="card" href="concordance.html"><div class="card-t">\U0001F520 Concordance</div>
+  <div class="card-d">{ref["words"]:,} English words, each indexed to every verse it appears in.</div></a>
+  <a class="card" href="chronology.html"><div class="card-t">\U0001F570 Chronology</div>
+  <div class="card-d">Where you are in time: the Bible's own year-count, Ussher's dates, and what archaeology can date.</div></a>
+  <a class="card" href="toc.html"><div class="card-t">\U0001F4DC Progress</div>
+  <div class="card-d">{len(CHAPTERS):,} of {TOTAL_BIBLE_CHAPTERS:,} chapters translated, book by book, in the full Table of Contents.</div></a>
+</div>
+<p class="muted" style="margin:10px 0 0"><a href="library.html">\U0001F4DA Enter the library →</a></p>
+
 <h2>All 66 Books</h2>
 <p class="lede">Every book of the Bible, and how far the translation has reached in each. A book in
 gold has been started — open it for its chapters and the commentary on each one.</p>
@@ -4616,12 +4620,12 @@ var MTLIB_VOTD = {votd_json};
 }})();
 </script>
 
-{_note_nudge(SITE_NAME, HOME_URL)}"""
+{_note_nudge(SITE_NAME, "")}"""
     out = page(SITE_NAME, body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
-               url=HOME_URL, og_type="website")
-    open(os.path.join(OUT, HOME_URL), "w", encoding="utf-8").write(out)
+               url=HOME_FILE, og_type="website")
+    open(os.path.join(OUT, HOME_FILE), "w", encoding="utf-8").write(out)
 
 
 def build_about():
@@ -6570,7 +6574,6 @@ def main():
     _render_default_card(os.path.join(OUT, "img", "og-default.es.png"), "es")
     build_chapter_pages(chapters)
     build_toc()
-    build_index(chapters)
     build_about()
     build_old_testament()
     build_new_testament()
@@ -6589,6 +6592,8 @@ def main():
     build_atlas_entry_pages()
     build_route_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
+    build_index(chapters, {"dict": n_dict, "ency": n_places + n_people + n_things,
+                           "mapped": n_mapped, "words": n_words})
     n_search = build_search_index()
     build_search_page()
     n_feed = build_feed_page()
@@ -6606,7 +6611,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    try:                      # keep the hub at / in step with this publication
-        import build_hub; build_hub.refresh()
-    except Exception as _e:
-        print("build_hub: %s" % _e)
