@@ -107,9 +107,16 @@ BLURB = ("A commonplace book kept by Mr. Librarian: notes on science and technol
 FRONT_DESC = ("A commonplace book kept by Mr. Librarian: science and technology, the world "
               "and its news, the arts, and whatever else didn't fit. Working shown.")
 
-BASE_URL = "https://mistertranslation.com/notebook/"
-SITE_URL = "https://mistertranslation.com"
-BASE = "/notebook"
+# Moved to its own subdomain 2026-10-10 (m8k.io umbrella): the blog lives at the
+# root of notebook.m8k.io, and mistertranslation.com/notebook/* 301s there (cf/mt-redirects.js).
+BASE_URL = "https://notebook.m8k.io/"
+SITE_URL = "https://notebook.m8k.io"
+BASE = ""
+# The "Mister Library" mark still points at the hub on mistertranslation.com.
+HUB_URL = "https://mistertranslation.com"
+# GoatCounter keeps recording under /notebook/… so view counts continue unbroken
+# and never collide with the hub's paths on the shared "mistertranslation" site.
+STATS_PREFIX = "/notebook"
 OG_IMAGE = f"{SITE_URL}{BASE}/img/og-default.png"
 
 # Cookie-less, no-consent-banner analytics, same account as the other four so
@@ -367,7 +374,7 @@ def _chrome(active=""):
                 'stroke-linejoin="round"/></svg>')
     hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
                '%s<span class="hubwm">Mister Library</span></a>%s'
-               % (SITE_URL, HUB_MARK_SVG, crumbsep))
+               % (HUB_URL, HUB_MARK_SVG, crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">The Librarian\'s <span class="em">Notebook</span></span></a>'
              % MARK_SVG.replace("__ACCENT__", ACCENT))
@@ -423,7 +430,7 @@ def _shell_hits_path(url):
     derived from the same absolute `url` every `_shell` caller already passes.
     Returns None for a url with no filename (the index page's bare BASE_URL)."""
     name = url.rstrip("/").rsplit("/", 1)[-1]
-    return "%s/%s" % (BASE, name) if "." in name else None
+    return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
 FRONT_HERO_IMG = "leonardo-codex-flight-17v.jpg"
@@ -556,7 +563,7 @@ def _render_default_card(path):
     for ln in lines:
         d.text((W / 2, ty), ln, font=tf, fill=(200, 206, 214), anchor="mm")
         ty += 36
-    d.text((W / 2, ty + 40), "mistertranslation.com/notebook",
+    d.text((W / 2, ty + 40), "notebook.m8k.io",
            font=font("sans", 21), fill=(133, 147, 166), anchor="mm")
 
     img.quantize(colors=128, dither=Image.FLOYDSTEINBERG).save(path, "PNG", optimize=True)
@@ -660,7 +667,7 @@ def _rundown_box(data, entries=()):
     if has_archive:
         parts.append('    <p class="rdarchive"><a href="%s">See past rundowns →</a></p>'
                       % _tag_file("rundown"))
-    missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
+    missed_url = blogkit.x_missed_url(BASE_URL)
     parts.append(
         '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
         'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>' % esc(missed_url))
@@ -741,7 +748,7 @@ def _related_block(e, pool):
 
 def build_entry_page(e, pool=()):
     """Render one entry."""
-    hits_path = "%s/%s" % (BASE, e["file"])
+    hits_path = "%s/%s" % (STATS_PREFIX, e["file"])
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
     date_bit = blogkit.pretty_date(e["date"]).upper()
@@ -868,7 +875,8 @@ def _archive_row(item):
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
-    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+    return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
+            f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
             f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
             f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
