@@ -366,7 +366,7 @@ def _parts_and_chapters(chapters, sizes=None):
 def _back():
     return """<section class="back">
 <h1>About this book</h1>
-<p>%(t)s was written and published one chapter at a time at mistertranslation.com/west/, where each chapter keeps its own page, its sources, and a place for readers to write. The family's private record — the letters, certificates, photographs and DNA results the book was read from — is kept by the author and is described in the last chapter, together with the list of what is still not known. Corrections and additions from cousins are the point; the address is on the website.</p>
+<p>%(t)s was written and published one chapter at a time at mistertranslation.com/west/ (now west.m8k.io), where each chapter keeps its own page, its sources, and a place for readers to write. The family's private record — the letters, certificates, photographs and DNA results the book was read from — is kept by the author and is described in the last chapter, together with the list of what is still not known. Corrections and additions from cousins are the point; the address is on the website.</p>
 <p>The book's rule, kept on every page: <i>documented</i>, <i>inferred</i>, or <i>family legend</i>, and say which.</p>
 <p>%(a)s is the great-great-great-grandson of Lewis Krewson of Ohio and Iowa, and the ninth-generation descendant of Garret Dircksen Croesen of Breuckelen. He lives in California.</p>
 </section>""" % {"t": esc(TITLE), "a": esc(AUTHOR)}

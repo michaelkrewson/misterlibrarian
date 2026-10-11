@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Librarian's Ledger</title>
-  <link>https://mistertranslation.com/finance/</link>
-  <atom:link href="https://mistertranslation.com/finance/feed.xml" rel="self" type="application/rss+xml"/>
+  <link>https://ledger.m8k.io/</link>
+  <atom:link href="https://ledger.m8k.io/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
     <title>One Door, Two Keys: What Quantum Computers and Super Intelligence Could Actually Do to Bitcoin</title>
-    <link>https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/one-door-two-keys-bitcoin-quantum.html</guid>
+    <link>https://ledger.m8k.io/one-door-two-keys-bitcoin-quantum.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/one-door-two-keys-bitcoin-quantum.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>A famous cryptographer said "we might lose public key cryptography," and Bitcoiners heard their own signature scheme in it. The thread turned out to be about Super Intelligence (SI) maths as much as quantum computers. The honest version is narrower: ECDSA and Schnorr are one door with two kinds of key, most coins are protected by a hash rather than a curve, and what differs between the two threats is warning time, not which door is at risk.</description>
     <category>bitcoin</category>
@@ -24,8 +24,8 @@
   </item>
   <item>
     <title>Will the US Government Really Start Buying Stocks? Checking Cem Karsan's "Big Print" Call</title>
-    <link>https://mistertranslation.com/finance/will-the-us-government-buy-stocks-checking-karsans-big-print-call.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/will-the-us-government-buy-stocks-checking-karsans-big-print-call.html</guid>
+    <link>https://ledger.m8k.io/will-the-us-government-buy-stocks-checking-karsans-big-print-call.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/will-the-us-government-buy-stocks-checking-karsans-big-print-call.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>A 69-minute interview says the US will print money and buy stocks through a sovereign wealth fund, probably after the midterms and after a 25 to 35 percent crash. The headline is bolder than the speaker. Here is what he actually argues, which pieces check out, and which pieces do not follow.</description>
     <category>sovereign wealth fund</category>
@@ -38,8 +38,8 @@
   </item>
   <item>
     <title>Bitcoin Supply Shock: The Exchange Float</title>
-    <link>https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-supply-shock-the-exchange-float.html</guid>
+    <link>https://ledger.m8k.io/bitcoin-supply-shock-the-exchange-float.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/bitcoin-supply-shock-the-exchange-float.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>Bitcoin Magazine says the supply of Bitcoin on exchanges just hit a seven-month low and tells you to "plan accordingly." This is a standing page that tracks that number by hand, says which provider it came from, and keeps asking the awkward question: did the coins leave for good, or just for a different building?</description>
     <category>bitcoin</category>
@@ -54,8 +54,8 @@
   </item>
   <item>
     <title>Robinhood Buys Its First Bitcoin, and the Executive Calls It a Rounding Error</title>
-    <link>https://mistertranslation.com/finance/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</guid>
+    <link>https://ledger.m8k.io/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/robinhood-buys-its-first-bitcoin-a-rounding-error-by-design.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>Robinhood disclosed on 7 October 2026 that it bought about $25 million of Bitcoin for its own balance sheet, the first time it has ever done so. The company's own crypto chief says the position "is not going to change a lot of the current trajectory of the company." Held against Robinhood's size and against Strategy's pile, it is a gesture, and the interesting question is who the gesture is for.</description>
     <category>bitcoin</category>
@@ -67,8 +67,8 @@
   </item>
   <item>
     <title>Twenty-Eight Questions, Nine Thousand Answers</title>
-    <link>https://mistertranslation.com/finance/twenty-eight-questions-nine-thousand-answers.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/twenty-eight-questions-nine-thousand-answers.html</guid>
+    <link>https://ledger.m8k.io/twenty-eight-questions-nine-thousand-answers.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/twenty-eight-questions-nine-thousand-answers.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A $15 trillion asset manager footnoted a study saying AI models would save in Bitcoin and spend in stablecoins, and the footnote became a headline. I went to the study. Thirty-six chatbots, twenty-eight distinct questions, and a spread from 91.3% to 18.3% that tells you more about who trained the chatbot than about money. Then I checked what real AI agents are paying with today, and the number is smaller than anyone's slide deck.</description>
     <category>bitcoin</category>
@@ -80,8 +80,8 @@
   </item>
   <item>
     <title>Aramco's CEO Says Under 6 Billion Barrels Remain. Under 6 Billion of What?</title>
-    <link>https://mistertranslation.com/finance/aramco-ceo-says-under-6-billion-barrels-remain-of-what.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/aramco-ceo-says-under-6-billion-barrels-remain-of-what.html</guid>
+    <link>https://ledger.m8k.io/aramco-ceo-says-under-6-billion-barrels-remain-of-what.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/aramco-ceo-says-under-6-billion-barrels-remain-of-what.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>Saudi Aramco's chief executive told a London conference that less than six billion barrels of commercial oil inventories remain, "the vast majority not practically available." A viral post set that beside JPMorgan's "operational floor" of 6.8 billion and implied the line had been crossed. The two numbers measure different things, and the real warning in his speech is somewhere else.</description>
     <category>oil</category>
@@ -96,8 +96,8 @@
   </item>
   <item>
     <title>CME Dropped 24/7 Oil Trading. "Staffing" Is the Smallest Reason.</title>
-    <link>https://mistertranslation.com/finance/cme-dropped-247-oil-trading-staffing-is-the-smallest-reason.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/cme-dropped-247-oil-trading-staffing-is-the-smallest-reason.html</guid>
+    <link>https://ledger.m8k.io/cme-dropped-247-oil-trading-staffing-is-the-smallest-reason.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/cme-dropped-247-oil-trading-staffing-is-the-smallest-reason.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>On Friday CME Group withdrew its filing for a 24/7 oil futures contract, and a widely shared post made it sound like an exchange that couldn't find weekend staff. The record is stranger and more useful than that — a regulator's stay in July, a stated worry about unintended consequences, and a list of objections in which staffing is the least interesting one.</description>
     <category>oil</category>
@@ -114,8 +114,8 @@
   </item>
   <item>
     <title>Is Bitcoin "Tokenized Compute"? Jason Lowery's AI Argument, Checked</title>
-    <link>https://mistertranslation.com/finance/is-bitcoin-tokenized-compute.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/is-bitcoin-tokenized-compute.html</guid>
+    <link>https://ledger.m8k.io/is-bitcoin-tokenized-compute.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/is-bitcoin-tokenized-compute.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>Jason Lowery, the MIT researcher behind Softwar, posted that Bitcoin is "tokenized compute" and that AI will need BTC to afford its own actions. Some links in that chain hold and some strain. Here is what his thesis actually says, what the numbers on AI payments look like today, and where I think the argument bends.</description>
     <category>bitcoin</category>
@@ -131,8 +131,8 @@
   </item>
   <item>
     <title>The Rule That Never Mentioned Lightning</title>
-    <link>https://mistertranslation.com/finance/the-rule-that-never-mentioned-lightning.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-rule-that-never-mentioned-lightning.html</guid>
+    <link>https://ledger.m8k.io/the-rule-that-never-mentioned-lightning.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-rule-that-never-mentioned-lightning.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>FinCEN withdrew its 2023 proposal to label crypto mixing a "primary money laundering concern." I read the withdrawal notice and the original proposal. Neither says the word Lightning, but the proposal's definition of mixing was written so broadly that a literal reading brushes against how Lightning works. Here is what the rule said, what it would have meant for Lightning service providers, what the withdrawal changes today, and what it leaves alone.</description>
     <category>bitcoin</category>
@@ -148,8 +148,8 @@
   </item>
   <item>
     <title>Bitcoin Didn't Start in 2008</title>
-    <link>https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/bitcoin-didnt-start-in-2008.html</guid>
+    <link>https://ledger.m8k.io/bitcoin-didnt-start-in-2008.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/bitcoin-didnt-start-in-2008.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>The whitepaper is nine pages and cites eight sources. Behind those eight sits a thirty-four-year pile of other people's work, from TCP/IP in 1974 to Hal Finney in 2004. Here is the whole stack in two minutes of video.</description>
     <category>bitcoin</category>
@@ -164,8 +164,8 @@
   </item>
   <item>
     <title>Gold Is Still Fixed Twice a Day. It Just Stopped Using a Phone.</title>
-    <link>https://mistertranslation.com/finance/gold-is-still-fixed-twice-a-day.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/gold-is-still-fixed-twice-a-day.html</guid>
+    <link>https://ledger.m8k.io/gold-is-still-fixed-twice-a-day.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/gold-is-still-fixed-twice-a-day.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>The London Gold Fix did not disappear. Since 2015 it has been an electronic auction at the same two times of day, run by an exchange company instead of five banks. Here is how the auction works, what the old fix was actually caught doing, and whether the new one can be spoofed the way JPMorgan spoofed gold futures.</description>
     <category>gold</category>
@@ -176,8 +176,8 @@
   </item>
   <item>
     <title>"I Am the House," Said Treasury. The Bond Market Took the Other Side.</title>
-    <link>https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/i-am-the-house-and-the-bond-market-disagreed.html</guid>
+    <link>https://ledger.m8k.io/i-am-the-house-and-the-bond-market-disagreed.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/i-am-the-house-and-the-bond-market-disagreed.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>Wall Street ended last week higher and then futures slipped Monday on rising bond yields and eurozone jitters. Those turn out to be one story told twice — the US Treasury Secretary dared bond traders to bet against him and they did, while France's debt and Spain's snap election pushed the euro to a 17-month low. I went and read both.</description>
     <category>treasury</category>
@@ -195,8 +195,8 @@
   </item>
   <item>
     <title>One Send, Three Recipients, One Fee</title>
-    <link>https://mistertranslation.com/finance/one-send-three-recipients-one-fee.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/one-send-three-recipients-one-fee.html</guid>
+    <link>https://ledger.m8k.io/one-send-three-recipients-one-fee.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/one-send-three-recipients-one-fee.html</guid>
     <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
     <description>Lightning in a Jar can now pay several people in a single on-chain send, silent-payment addresses included. The builder posted a test spend; I found it in the blockchain, checked the arithmetic, and looked for the matching change in the public repository. Here is what that one transaction shows, what batching does and doesn't buy you, and what I haven't tested.</description>
     <category>bitcoin</category>
@@ -210,8 +210,8 @@
   </item>
   <item>
     <title>The Smaller Your Screen, the Bigger Your Title</title>
-    <link>https://mistertranslation.com/finance/screen-size-and-your-importance.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/screen-size-and-your-importance.html</guid>
+    <link>https://ledger.m8k.io/screen-size-and-your-importance.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/screen-size-and-your-importance.html</guid>
     <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
     <description>A friend sent a joke chart plotting screen size against corporate rank, with the CEO on an iPhone and the bottom rung behind two monitors. It's satire with no data behind it, but it's funny because it's half true. Here's which half, and what the chart accidentally gets right about who has to look at the raw numbers.</description>
     <category>notes</category>
@@ -222,8 +222,8 @@
   </item>
   <item>
     <title>One Dashboard, Fifty Accounts, No Human in the Loop</title>
-    <link>https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/one-dashboard-fifty-accounts-no-human.html</guid>
+    <link>https://ledger.m8k.io/one-dashboard-fifty-accounts-no-human.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/one-dashboard-fifty-accounts-no-human.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>A video making the rounds on X shows a wall of phone screens, each one a social media account posting, replying and liking on its own — the poster's caption claims a single AI dashboard is orchestrating fifty of them at once. The clip is a provocation, not a product demo, but the real numbers behind "dead internet theory" don't need the video's help. Here's what's actually measured, what's just a claim, and what it means for anyone still scrolling in good faith.</description>
     <category>artificial intelligence</category>
@@ -237,8 +237,8 @@
   </item>
   <item>
     <title>The Bridge Loan Nobody Signed For</title>
-    <link>https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-bridge-loan-nobody-signed-for.html</guid>
+    <link>https://ledger.m8k.io/the-bridge-loan-nobody-signed-for.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-bridge-loan-nobody-signed-for.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>A ZeroHedge post making the rounds argues that $2-3 trillion a year of circular, on-and-off-balance-sheet AI financing is a bridge loan — one that only gets repaid once enterprise AI spend reaches about $3 trillion a year in 2031. I checked how real the "circular financing" part is and how solid the 2031 number actually looks.</description>
     <category>artificial intelligence</category>
@@ -251,8 +251,8 @@
   </item>
   <item>
     <title>The Vault Rule Got Rewritten the Day Before She Left</title>
-    <link>https://mistertranslation.com/finance/the-vault-rule-got-rewritten-the-day-before-she-left.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-vault-rule-got-rewritten-the-day-before-she-left.html</guid>
+    <link>https://ledger.m8k.io/the-vault-rule-got-rewritten-the-day-before-she-left.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-vault-rule-got-rewritten-the-day-before-she-left.html</guid>
     <pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate>
     <description>Today the SEC proposed the rule that decides whether your financial advisor can actually hold crypto for you, and it does something the custody rule hasn't done since it was written in response to Bernie Madoff: let the advisor be the vault. It also quietly blesses something the industry has been doing in a legal gray zone for years. The vote landed on commissioner Hester Peirce's second-to-last day on the job, and her own statement reads like a closing argument.</description>
     <category>sec</category>
@@ -270,8 +270,8 @@
   </item>
   <item>
     <title>Two Lines Cross on the Page</title>
-    <link>https://mistertranslation.com/finance/two-lines-cross-on-the-page.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/two-lines-cross-on-the-page.html</guid>
+    <link>https://ledger.m8k.io/two-lines-cross-on-the-page.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/two-lines-cross-on-the-page.html</guid>
     <pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate>
     <description>A friend shared a tweet from Bitwise's CIO citing a San Francisco Fed chart on stablecoin issuers' growing Treasury holdings, with "the entire stablecoin ecosystem is going much, much higher." Another friend in the same group chat flagged the chart's scale. A third asked the more basic question: higher in what? I pulled the actual Fed letter to answer both.</description>
     <category>stablecoins</category>
@@ -285,8 +285,8 @@
   </item>
   <item>
     <title>The Committee That Won't Say Its Own Name</title>
-    <link>https://mistertranslation.com/finance/the-committee-that-wont-say-its-own-name.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-committee-that-wont-say-its-own-name.html</guid>
+    <link>https://ledger.m8k.io/the-committee-that-wont-say-its-own-name.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-committee-that-wont-say-its-own-name.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>A policy paper published today calls index providers "Wall Street's invisible committee." I went and found the actual committees — six unnamed people at MSCI who can decide whether Bitcoin counts as an operating asset, a board at FTSE Russell that is contractually forbidden from naming its own members, and the one index manager anyone actually knows by name, only because the SEC caught him trading on what he knew. Feedback on the live MSCI proposal closes today. The decision lands October 16.</description>
     <category>index funds</category>
@@ -306,8 +306,8 @@
   </item>
   <item>
     <title>The Great Power That Can't Use SWIFT</title>
-    <link>https://mistertranslation.com/finance/the-great-power-that-cant-use-swift.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-great-power-that-cant-use-swift.html</guid>
+    <link>https://ledger.m8k.io/the-great-power-that-cant-use-swift.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-great-power-that-cant-use-swift.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>"Our country can either be a great power, or it will not exist at all," Dmitry Medvedev told regional party officials on September 16. That's the Kremlin's own case for why the war continues — existential, civilizational, not up for negotiation. I wanted to know what that case looks like from the inside, and once I went looking, I found something more concrete than rhetoric sitting right next to it: $300 billion frozen, a payments system Russia no longer trusts, and a very specific, very measurable pivot toward crypto rails that started well before this month's headlines.</description>
     <category>russia</category>
@@ -322,8 +322,8 @@
   </item>
   <item>
     <title>The Jar Ships What It Promised</title>
-    <link>https://mistertranslation.com/finance/the-jar-ships-what-it-promised.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-jar-ships-what-it-promised.html</guid>
+    <link>https://ledger.m8k.io/the-jar-ships-what-it-promised.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-jar-ships-what-it-promised.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>Two things I flagged as "he says so, but I can't see it yet" in my last two Lightning in a Jar posts — a recovery scheme for silent payments, and Nostr Wallet Connect — showed up in the public repository overnight. I went and checked. Both are there, and the code backs up what he told me.</description>
     <category>bitcoin</category>
@@ -337,8 +337,8 @@
   </item>
   <item>
     <title>Two Bits at a Time, Through a Stranger's iPhone</title>
-    <link>https://mistertranslation.com/finance/two-bits-at-a-time-through-a-strangers-iphone.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/two-bits-at-a-time-through-a-strangers-iphone.html</guid>
+    <link>https://ledger.m8k.io/two-bits-at-a-time-through-a-strangers-iphone.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/two-bits-at-a-time-through-a-strangers-iphone.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>Tonight Calle posted a photo of a thumb-sized board taped to a battery, a screen reading "FIND MY NUTS," and a terminal showing a 409-byte bitcoin ecash token reassembled on the other end. It traveled with no internet connection on the sending side. Every piece of it was carried by iPhones that happened to be nearby and had no idea they were carrying money. Here's how it actually works, what it does and doesn't mean for Bitcoin, and what I think Apple does about it.</description>
     <category>bitcoin</category>
@@ -354,8 +354,8 @@
   </item>
   <item>
     <title>Two-Tenths of a Percent, If Illinois Can See You</title>
-    <link>https://mistertranslation.com/finance/two-tenths-of-a-percent-if-illinois-can-see-you.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/two-tenths-of-a-percent-if-illinois-can-see-you.html</guid>
+    <link>https://ledger.m8k.io/two-tenths-of-a-percent-if-illinois-can-see-you.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/two-tenths-of-a-percent-if-illinois-can-see-you.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>Illinois just became the first state to tax Bitcoin transactions directly — a 0.2% Digital Asset Tax Act taking effect January 1, 2027. I went looking for what it actually reaches, using two Kankakee residents as the test case: one who owns a Bitcoin ETF inside an ordinary brokerage account, and one who wants to buy coffee with sats over the Lightning Network. The tax lands hard on one of them, barely touches the other, and can't see the actual coffee purchase at all — and the reason why says a lot about how a state can tax a ledger it doesn't control.</description>
     <category>bitcoin</category>
@@ -370,8 +370,8 @@
   </item>
   <item>
     <title>The Coins Exchanges Won't Let Back In</title>
-    <link>https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-coins-exchanges-wont-let-back-in.html</guid>
+    <link>https://ledger.m8k.io/the-coins-exchanges-wont-let-back-in.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-coins-exchanges-wont-let-back-in.html</guid>
     <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
     <description>CoinJoin — a real, measurable Bitcoin privacy technique — mixes coins in a way that risk-scoring vendors flag and some exchanges won't cleanly accept back. That's a second leak in the supply math besides "lost forever" coins, and a genuinely different one from the STRC/SATA absorption story. I went and sized it. It's real, it's underappreciated, and it's much smaller than either of those two.</description>
     <category>bitcoin</category>
@@ -385,8 +385,8 @@
   </item>
   <item>
     <title>The Jar Learns to Hide Which Jar</title>
-    <link>https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-jar-learns-to-hide-which-jar.html</guid>
+    <link>https://ledger.m8k.io/the-jar-learns-to-hide-which-jar.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-jar-learns-to-hide-which-jar.html</guid>
     <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
     <description>A quick follow-up to my Lightning in a Jar review — the wallet's author tells me he's shipped Silent Payments, send and receive, with the first inter-wallet transactions running tonight. Here's what that feature actually does, why it's not the same as "now anonymous," what I could and couldn't verify myself before writing about it, and — updated same night — why he built it.</description>
     <category>bitcoin</category>
@@ -399,8 +399,8 @@
   </item>
   <item>
     <title>Eighteen Months and Twenty-One Million</title>
-    <link>https://mistertranslation.com/finance/eighteen-months-and-twenty-one-million.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/eighteen-months-and-twenty-one-million.html</guid>
+    <link>https://ledger.m8k.io/eighteen-months-and-twenty-one-million.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/eighteen-months-and-twenty-one-million.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>A Microsoft executive says most white-collar work gets automated in the next 12 to 18 months. A New York Times investigation says Silicon Valley is already bracing for the underclass that leaves behind. And I keep getting told, in real time, that Bitcoin is the one thing standing between any person, company, or AI agent and what comes next. I checked the actual mechanism — the energy, the bond math, the reserve data, and what AI agents are literally paying each other with this year — and the honest answer splits the argument instead of settling it.</description>
     <category>bitcoin</category>
@@ -415,8 +415,8 @@
   </item>
   <item>
     <title>Four Thousand Tonnes and No API</title>
-    <link>https://mistertranslation.com/finance/four-thousand-tonnes-and-no-api.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/four-thousand-tonnes-and-no-api.html</guid>
+    <link>https://ledger.m8k.io/four-thousand-tonnes-and-no-api.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/four-thousand-tonnes-and-no-api.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>Central banks bought more than 4,000 tonnes of gold between 2022 and early 2026 — the largest sustained institutional accumulation in modern financial history — because it's a reserve asset nobody else's government controls. Bitcoin's pitch to the same reserve managers isn't replacing gold, it's being gold with an API: instantly portable, verifiable without an assay, settleable in ten minutes instead of a bonded shipment. This is a watching piece, not a verdict — I'll update it as the actual sovereign-reserve data moves rather than wait for a tidy ending.</description>
     <category>bitcoin</category>
@@ -428,8 +428,8 @@
   </item>
   <item>
     <title>Nine Hundred and Twenty Million, Paid in Cash</title>
-    <link>https://mistertranslation.com/finance/nine-hundred-and-twenty-million-paid-in-cash.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/nine-hundred-and-twenty-million-paid-in-cash.html</guid>
+    <link>https://ledger.m8k.io/nine-hundred-and-twenty-million-paid-in-cash.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/nine-hundred-and-twenty-million-paid-in-cash.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>A reasonable question keeps coming up: if CME can move Bitcoin's price with paper contracts, can it eventually undermine the 21 million cap the same way gold's paper market has allegedly floated free of physical reality for decades? The honest answer needs two separate facts held apart — what CME's contracts actually settle in, and what a real bank actually got caught and fined $920 million for doing to gold.</description>
     <category>bitcoin</category>
@@ -442,8 +442,8 @@
   </item>
   <item>
     <title>The Exchanges CME Decided to Trust</title>
-    <link>https://mistertranslation.com/finance/the-exchanges-cme-decided-to-trust.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/the-exchanges-cme-decided-to-trust.html</guid>
+    <link>https://ledger.m8k.io/the-exchanges-cme-decided-to-trust.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/the-exchanges-cme-decided-to-trust.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>"Nine Hundred and Twenty Million, Paid in Cash" left one honest thread hanging: CME's Bitcoin futures settle against a reference rate built from real spot exchanges, but can those specific exchanges be gamed? I went and found out which six exchanges CME actually uses, what vets them, and what's still genuinely unresolved about two of them.</description>
     <category>bitcoin</category>
@@ -454,8 +454,8 @@
   </item>
   <item>
     <title>Track One: Satoshi Raps the Whitepaper</title>
-    <link>https://mistertranslation.com/finance/track-one-satoshi-raps-the-whitepaper.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/track-one-satoshi-raps-the-whitepaper.html</guid>
+    <link>https://ledger.m8k.io/track-one-satoshi-raps-the-whitepaper.html</link>
+    <guid isPermaLink="true">https://ledger.m8k.io/track-one-satoshi-raps-the-whitepaper.html</guid>
     <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
     <description>A stranger on X asked an AI agent to track down Satoshi Nakamoto and get him to rap the Bitcoin whitepaper. What came back is a studio session, a mic, and — allegedly — pineapple jalapeno pizza. It's also the first entry in something new here: a running, tagged collection of the songs, videos and memes Bitcoin's culture keeps producing, filed so the next one is easy to find.</description>
     <category>bitcoin</category>

@@ -138,13 +138,13 @@ FRONT_TILE_LIMIT = 6
 # a known, accepted imprecision rather than threading a per-language URL
 # through SIBLINGS for one entry.
 SIBLINGS = (
-    ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
+    ("The Librarian's Ledger", "https://ledger.m8k.io/",
      "What the world's money is actually in"),
-    ("The Librarian Abroad", "https://mistertranslation.com/travel/",
+    ("The Librarian Abroad", "https://abroad.m8k.io/",
      "Notes from the road and the table"),
-    ("The Librarian's Notebook", "https://mistertranslation.com/notebook/",
+    ("The Librarian's Notebook", "https://notebook.m8k.io/",
      "A commonplace book — science and technology, the world, arts and culture"),
-    ("Eight Miles West", "https://mistertranslation.com/west/",
+    ("Eight Miles West", "https://west.m8k.io/",
      "A family history — four centuries in America, one document at a time"),
     ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
      "A fresh translation of the Bible into modern English, one chapter at a time"),

@@ -1,0 +1,17 @@
+// The Librarian's Ledger on its own subdomain (m8k.io umbrella, 2026-10-10).
+// Same pattern as cf/west.wrangler.jsonc: static-assets Worker, .html URLs kept
+// (html_handling "none"), static-site.js serves index.html for "/" paths.
+// Deploy: bash tools/deploy_blogs.sh ledger   (CI does this on push to main)
+{
+  "name": "m8k-ledger",
+  "main": "static-site.js",
+  "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "ledger.m8k.io", "custom_domain": true }],
+  "workers_dev": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "../finance",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}
