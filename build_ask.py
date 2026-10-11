@@ -314,14 +314,14 @@ def _chrome(active=""):
     # /ask/ isn't a sibling of Ledger/Regimen/Notebook/Abroad off the root hub, it's
     # nested one level deeper (part of the Bible project, which is itself one of the
     # hub's publications), so this is a THREE-level trail rather than every other
-    # blog's two: m8k > Mr. Librarian's Bible > Dear Mr. Librarian (the
+    # blog's two: m8k > Mister Translation > Dear Mr. Librarian (the
     # last of those is .askmain's own big brand, rendered on the row below). The
     # search box rides at the end of THIS row, not the brand row below -- see the
     # .askhead layout comment in ask/style.css for why (Option B of that mockup).
     crumb = ('<div class="askcrumb">'
              '<a class="hublink" href="%s/" aria-label="m8k — every publication">'
              '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s'
-             '<a class="biblelink" href="%s">%s<span class="biblewm">Mr. Librarian’s Bible</span></a>%s'
+             '<a class="biblelink" href="%s">%s<span class="biblewm">Mister Translation</span></a>%s'
              '%s'
              '</div>' % (HUB_URL, CRUMBSEP_SVG,
                          BIBLE_URL, CRUMB_BIBLE_SVG, CRUMBSEP_SVG, search))
@@ -343,7 +343,7 @@ def _foot(hits_path=None):
     hits_bit = " · %s" % hitswidget if hitswidget else ""
     return ('<footer class="askfoot">'
             '<p><a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
-            '<a href="feed.xml">RSS</a> · <a href="%s">Mr. Librarian’s Bible</a>%s</p>'
+            '<a href="feed.xml">RSS</a> · <a href="%s">Mister Translation</a>%s</p>'
             '<p class="legal">© %d mistertranslation.com. '
             '<a href="%s">Privacy policy</a>.</p>'
             '</footer>' % (BIBLE_URL, hits_bit, year,

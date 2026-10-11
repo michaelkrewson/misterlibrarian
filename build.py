@@ -57,8 +57,10 @@ ENABLE_LISTEN_BUTTON = False
 NOTES_JS_VER = _asset_ver("reader-notes.js")
 SHARE_JS_VER = _asset_ver("share.js")
 
-SITE_NAME = "The MisterLibrarian Bible Project"
-TAGLINE = "Catalogued &amp; compared, one chapter at a time"
+# Named "Mister Translation" 2026-10-10 (Michael's call): one name for the domain, the
+# header and the Spanish twin (La Traducción Mister); Mr. Librarian stays the keeper.
+SITE_NAME = "Mister Translation"
+TAGLINE = "A new translation of the Bible from the Hebrew and Greek"   # = the Spanish tag, in English
 SITE_URL = "https://mistertranslation.com"
 # The Bible project is the front page of mistertranslation.com again (2026-10-10,
 # Michael's call). From 2026-09-09 the bare root was a hand-written six-card hub and
@@ -1150,7 +1152,7 @@ def header(active="", lang="en"):
   </div>
   <a class="brand" href="{HOME_URL}">
     {SCROLL_SVG}
-    <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
+    <span class="brand-name">Mister <span class="lib">Translation</span></span>
   </a>
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
@@ -1208,7 +1210,7 @@ _SIBLING_LINKS = ('<a href="https://ledger.m8k.io/">The Librarian\'s Ledger</a> 
                    '<a href="https://west.m8k.io/">Eight Miles West</a>')
 
 FOOTER = f"""<footer class="site-foot">
-  <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
+  <p>Mister Translation — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
   <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacy</a></p>
@@ -1391,7 +1393,7 @@ def _chapter_jsonld(book, num, desc, url, lang="en", label=None):
         f'"isPartOf":{{"@type":"Book","name":{esc(book)}}},'
         f'"inLanguage":{esc(lang)},'
         '"author":{"@type":"Person","name":"Mr. Librarian"},'
-        '"publisher":{"@type":"Organization","name":"The MisterLibrarian Bible Project",'
+        '"publisher":{"@type":"Organization","name":"Mister Translation",'
         f'"url":{esc(site)}}}}},'
         '{"@type":"BreadcrumbList","itemListElement":['
         + crumbs +
@@ -3305,7 +3307,7 @@ leads with its narrative maps before the alphabetical index at the back.</p>
 <p class="lede">Jump here straight from any chapter's own 🗺️ Atlas toggle, or browse chapter by chapter.</p>
 {''.join(sections)}"""
     out = page(f"Atlas — {SITE_NAME}", body, active="library",
-               desc="An atlas of the MisterLibrarian Bible Project — the big journeys mapped in full, "
+               desc="An atlas of Mister Translation — the big journeys mapped in full, "
                     "every named place in an A-Z gazetteer, and a chapter-by-chapter browse.", url="atlas.html",
                og_type="website")
     open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
@@ -3411,7 +3413,7 @@ chapter is translated, so the library is always exactly as deep as the translati
   shelf.</p>
 </div>"""
     out = page(f"Library — {SITE_NAME}", body, active="library",
-               desc="The reference room of the MisterLibrarian Bible Project: concordance, dictionary, "
+               desc="The reference room of Mister Translation: concordance, dictionary, "
                     "encyclopedia, and cross-references — all growing with the translation.", url="library.html",
                og_type="website")
     open(os.path.join(OUT, "library.html"), "w", encoding="utf-8").write(out)
@@ -4502,7 +4504,7 @@ still ahead.</p>
 
 {_note_nudge("Table of Contents", "toc.html")}"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
-               desc="Progress tracker for the MisterLibrarian Bible Project: every published chapter of "
+               desc="Progress tracker for Mister Translation: every published chapter of "
                     "the fresh-from-the-Hebrew translation, and everything still ahead.", url="toc.html",
                og_type="website")
     open(os.path.join(OUT, "toc.html"), "w", encoding="utf-8").write(out)
@@ -4621,7 +4623,7 @@ var MTLIB_VOTD = {votd_json};
 </script>
 
 {_note_nudge(SITE_NAME, "")}"""
-    out = page(SITE_NAME, body, active="home",
+    out = page(f"{SITE_NAME} — The Bible in modern English", body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
                url=HOME_FILE, og_type="website")
@@ -4668,7 +4670,7 @@ def build_about():
   {_stats_box()}
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",
-               desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
+               desc="How Mister Translation works: translated from the Masoretic Hebrew, "
                     "essentially literal in a modern register, compared against seven landmark versions.",
                url="about.html", og_type="website")
     open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(out)
