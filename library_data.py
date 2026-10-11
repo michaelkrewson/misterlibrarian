@@ -9695,7 +9695,7 @@ ENCYCLOPEDIA = [
          coords=(32.6578, 35.1097, 0.4),
          modern="Tel Yokneam, foot of Mount Carmel, Israel",
          refs=[("Joshua", 12, 22)], videos=[],
-         desc="A city whose king Joshua struck, 'in Carmel' (<a href=\"joshua-12.html#v12-22\">Joshua 12:22</a>, now on these pages) &mdash; the mountain ridge, not the town of the same name in Judah's hill country where Nabal lived (1 Samuel 25, not yet on these pages). Later drawn into Zebulun's own border (Joshua 19:11, not yet on these pages) and given to the Levites (Joshua 21:34, not yet on these pages)."),
+         desc="A city whose king Joshua struck, 'in Carmel' (<a href=\"joshua-12.html#v12-22\">Joshua 12:22</a>, now on these pages) &mdash; the mountain ridge, not the town of the same name in Judah's hill country where Nabal lived (1 Samuel 25, not yet on these pages). Later drawn into Zebulun's own border (Joshua 19:11, not yet on these pages) and given to the Levites (Joshua 21:34, now on these pages)."),
     dict(slug="dor", name="Dor", kind="place", aliases=["Dor", "Naphath-dor"],
          coords=(32.6150, 34.9158, 0.4),
          modern="Tel Dor, Carmel coast, Israel",
@@ -29815,6 +29815,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "josh21": "Searched Wikimedia Commons for Shiloh and the tabernacle, for the Levitical cities, and for Hebron and Caleb. The results were public-domain book scans and no scene from Joshua 21, so the page carries no picture.",
     "judg6": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg5": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
@@ -32306,7 +32307,7 @@ ENCYCLOPEDIA_ES["sharon"] =("El Sarón", "La llanura costera que corre desde Jop
 ENCYCLOPEDIA_ES["taanach"] =("Taanac", "Una ciudad cuyo rey hirió Josué, emparejada en este versículo con <a href=\"enciclopedia.html#megiddo\">Meguido</a> como lo será dos veces más (<a href=\"joshua-12.es.html#v12-21\">Josué 12:21</a>, ya en estas páginas). Manasés no logra expulsar a sus cananeos (Jueces 1:27, ya en estas páginas), y el propio cántico de victoria de Débora sitúa una batalla «junto a las aguas de Meguido» nombrando a Taanac en el mismo verso (Jueces 5:19, ya en estas páginas) &mdash;el mismo emparejamiento, un rey herido y una ciudad sin conquistar, repitiéndose como campo de batalla generaciones después.")
 ENCYCLOPEDIA_ES["megiddo"] =("Meguido", "Una ciudad cuyo rey hirió Josué (<a href=\"joshua-12.es.html#v12-21\">Josué 12:21</a>, ya en estas páginas), aunque sus cananeos nunca son expulsados de verdad (Jueces 1:27, ya en estas páginas) hasta que Salomón la fortifica, con Hazor y Gezer, generaciones después (1 Reyes 9:15, todavía no en estas páginas). Guardando el paso donde el camino costero entra al valle de Jezreel, se peleó por ella durante mil años antes de este capítulo y mucho después &mdash;los propios anales del faraón Tutmosis III registran una batalla aquí siglos antes, fuera por completo de la Biblia. El nombre sobrevive, transliterado en vez de traducido, como el escenario de la batalla final del Nuevo Testamento: «un lugar llamado en hebreo Armagedón» (Apocalipsis 16:16, todavía no en estas páginas) &mdash;la mayoría lee <em>har</em>, «monte», como un apego suelto a una ciudad que de hecho está en una llanura.")
 ENCYCLOPEDIA_ES["kedesh"] =("Cedes", "Una ciudad cuyo rey hirió Josué (<a href=\"joshua-12.es.html#v12-22\">Josué 12:22</a>, ya en estas páginas) &mdash;no <a href=\"enciclopedia.html#kadesh\">Cades-barnea</a>, el oasis del desierto muy al sur, un nombre distinto bajo una ortografía española parecida. Esta Cedes, en la propia montaña de Neftalí, será nombrada una de las seis ciudades de refugio (Josué 20, todavía no en estas páginas), y es el pueblo natal de Barac, el general que por fin derrota a un rey llamado Jabín, todavía reinando en Hazor (Jueces 4:6, ya en estas páginas) &mdash;los mismos dos nombres que el propio capítulo once de este libro ya señaló como sobrevivientes a la vida de un solo rey.")
-ENCYCLOPEDIA_ES["jokneam"] =("Jocneam", "Una ciudad cuyo rey hirió Josué, «del Carmelo» (<a href=\"joshua-12.es.html#v12-22\">Josué 12:22</a>, ya en estas páginas) &mdash;la cordillera, no el pueblo del mismo nombre en la montaña de Judá donde vivía Nabal (1 Samuel 25, todavía no en estas páginas). Incorporada después a la propia frontera de Zabulón (Josué 19:11, todavía no en estas páginas) y entregada a los levitas (Josué 21:34, todavía no en estas páginas).")
+ENCYCLOPEDIA_ES["jokneam"] =("Jocneam", "Una ciudad cuyo rey hirió Josué, «del Carmelo» (<a href=\"joshua-12.es.html#v12-22\">Josué 12:22</a>, ya en estas páginas) &mdash;la cordillera, no el pueblo del mismo nombre en la montaña de Judá donde vivía Nabal (1 Samuel 25, todavía no en estas páginas). Incorporada después a la propia frontera de Zabulón (Josué 19:11, todavía no en estas páginas) y entregada a los levitas (Josué 21:34, ya en estas páginas).")
 ENCYCLOPEDIA_ES["dor"] =("Dor", "Una ciudad costera bajo control <a href=\"enciclopedia.html#canaan\">cananeo</a>, nombrada primero solo por sus «regiones» circundantes entre el propio territorio de la coalición del norte (<a href=\"joshua-11.es.html#v11-2\">Josué 11:2</a>, ya en estas páginas) y ahora con un rey propio, herido y «en la región de Dor» una segunda vez (<a href=\"joshua-12.es.html#v12-23\">Josué 12:23</a>, ya en estas páginas). Manasés no logra expulsar a sus cananeos aun así (Jueces 1:27, ya en estas páginas); el propio yerno de Salomón gobierna después como distrito administrativo (1 Reyes 4:11, todavía no en estas páginas). Un puerto antiguo famoso por el tinte púrpura que producían sus moluscos múrex costeros, un comercio del que la lista desnuda de reyes de este capítulo no da ninguna pista.")
 ENCYCLOPEDIA_ES["bochim"] = ("Boquim",
     "El lugar donde el ángel de Jehová habla al comienzo de <a href=\"judges-2.es.html#v1\">Jueces 2</a> (ya en estas páginas): sube desde Gilgal, reprende al pueblo, y ellos lloran; por eso el nombre es el plural del verbo llorar. El texto no da otro lugar, solo que está en el camino de subida desde Gilgal, así que el sitio no está identificado.")
@@ -35413,6 +35414,10 @@ CHRON_CHAPTERS["josh20"] = dict(era="exodus",
     when="Jehovah tells Joshua to have the sons of Israel give the cities of refuge he spoke of by the hand of Moses, and the chapter says how they work: the man who kills by error flees to one of them, states his case to the elders at the gate, is taken in, and stays until he has stood before the congregation and until the death of the high priest, when he may go home. Three cities are named west of the Jordan (Kedesh in Naphtali, Shechem in Ephraim, Kiriath-arba, that is Hebron, in Judah) and three east of it (Bezer, Ramoth in Gilead, Golan), the same three Moses had set apart before he died.",
     clock="Like chapters 13-19, a legal/administrative chapter that gives no date or duration of its own: it follows the division of the land at Shiloh (19:51), and the book does not say how long afterwards. The three eastern cities were set apart by Moses before his death (Deuteronomy 4:41-43), so only the three western ones are newly named. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
 
+CHRON_CHAPTERS["josh21"] = dict(era="exodus",
+    when="The heads of the Levites come to Eleazar, Joshua and the tribal chiefs at Shiloh and ask for the cities and pasture-land Moses had promised them, and the lots are cast: thirteen cities for Aaron's sons, ten for the rest of Kohath, thirteen for Gershon, twelve for Merari, forty-eight in all. The Masoretic text drops the four cities of Reuben (verses 36-37), which the Chronicles parallel supplies. The chapter ends with the formula that the land was given and that not one word failed.",
+    clock="Like chapters 13-20, a legal/administrative chapter with no date or duration of its own; it follows the division of the land at Shiloh (18:1, 19:51) and the book does not say how long afterwards. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
 CHAPTER_ART["josh20"] = [dict(
     file="josh20-roberts-hebron-1839.jpg",
     title="Hebron, March 18th 1839",
@@ -35476,7 +35481,7 @@ ENCYCLOPEDIA.extend([
          refs=[("Joshua", 15, 10)], videos=[],
          desc="&lsquo;House of the sun&rsquo; (<em>beit shemesh</em>): a town on Judah&rsquo;s northern border, where the line "
               "&lsquo;went down to Beth-shemesh&rsquo; (<a href=\"joshua-15.html#v15-10\">Joshua 15:10</a>), later given to the "
-              "priests among Judah&rsquo;s towns (Joshua 21:16, not yet on these pages). It is the first Israelite town the ark "
+              "priests among Judah&rsquo;s towns (Joshua 21:16, now on these pages). It is the first Israelite town the ark "
               "reaches when the Philistines send it back on a cart: the cows go straight along the road to Beth-shemesh, the "
               "reapers in the valley look up and rejoice, and men of the town are struck down for looking at the ark "
               "(1 Samuel 6:9&ndash;20, not yet on these pages). Jehoash of Israel defeats and captures Amaziah of Judah there "
@@ -35521,7 +35526,7 @@ ENCYCLOPEDIA_ES["eshtaol"] = ("Estaol",
 ENCYCLOPEDIA_ES["beth-shemesh"] = ("Bet-semes",
     "«Casa del sol» (<em>beit shemesh</em>): una ciudad en el límite norte de Judá, donde la línea «descendía a Bet-semes» "
     "(<a href=\"joshua-15.es.html#v15-10\">Josué 15:10</a>), dada después a los sacerdotes entre las ciudades de Judá "
-    "(Josué 21:16, todavía no en estas páginas). Es la primera ciudad israelita a la que llega el arca cuando los filisteos la "
+    "(Josué 21:16, ya en estas páginas). Es la primera ciudad israelita a la que llega el arca cuando los filisteos la "
     "devuelven en una carreta: las vacas van derecho por el camino de Bet-semes, los segadores del valle alzan los ojos y se "
     "alegran, y hombres de la ciudad son heridos por mirar el arca (1 Samuel 6:9&ndash;20, todavía no en estas páginas). "
     "Joás de Israel derrota y captura allí a Amasías de Judá (2 Reyes 14:11&ndash;13), y los filisteos la toman en los días de "
