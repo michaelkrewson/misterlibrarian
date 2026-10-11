@@ -327,7 +327,9 @@ def _foot(hits_path=None):
 
 
 def _shell_hits_path(url):
-    name = url.rstrip("/").rsplit("/", 1)[-1]
+    # Only the URL's PATH names the page: on a subdomain root (https://ledger.m8k.io/)
+    # the last "/"-segment would otherwise be the host itself (2026-10-10 fix).
+    name = urllib.parse.urlsplit(url).path.rstrip("/").rsplit("/", 1)[-1]
     return "%s/%s" % (STATS_PREFIX, name) if "." in name else None
 
 
