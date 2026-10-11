@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Librarian's Notebook</title>
-  <link>https://mistertranslation.com/notebook/</link>
-  <atom:link href="https://mistertranslation.com/notebook/feed.xml" rel="self" type="application/rss+xml"/>
+  <link>https://notebook.m8k.io/</link>
+  <atom:link href="https://notebook.m8k.io/feed.xml" rel="self" type="application/rss+xml"/>
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
     <title>Atomic Machines came out of stealth with a machine that builds from code. Its first product is a power relay.</title>
-    <link>https://mistertranslation.com/notebook/atomic-machines-the-matter-compiler-and-the-relay-it-built-first.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/atomic-machines-the-matter-compiler-and-the-relay-it-built-first.html</guid>
+    <link>https://notebook.m8k.io/atomic-machines-the-matter-compiler-and-the-relay-it-built-first.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/atomic-machines-the-matter-compiler-and-the-relay-it-built-first.html</guid>
     <pubDate>Sun, 11 Oct 2026 12:00:00 +0000</pubDate>
     <description>Jeff Holden's Atomic Machines left six years of stealth on October 7, 2026, with $250 million and a claim that code alone can drive the manufacture of tiny machines. Its first product is a 150-amp relay for AI data centers. Here is what the company says, what independent reports confirm, and what nobody has tested yet.</description>
     <category>atomic machines</category>
@@ -21,16 +21,16 @@
   </item>
   <item>
     <title>The Rundown — October 9, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-09.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-09.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-09.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-09.html</guid>
     <pubDate>Fri, 09 Oct 2026 12:00:00 +0000</pubDate>
     <description>7 stories across The world, Bitcoin &amp; crypto, Science, Space, Arts &amp; culture, Health &amp; medicine, tracked on October 9, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Super Intelligence Scorecard: Which Model Is Best, by Whose Test</title>
-    <link>https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/ai-scorecard-which-model-is-best-by-whose-test.html</guid>
+    <link>https://notebook.m8k.io/ai-scorecard-which-model-is-best-by-whose-test.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/ai-scorecard-which-model-is-best-by-whose-test.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on where Super Intelligence models actually stand, built from the scoreboards the Super Intelligence companies don't run. It covers who leads on human votes versus test batteries, how fast the models are improving, what a point of intelligence costs, how far open models trail, and which headline claims hold up. Updated as new models and new scores land.</description>
     <category>AI</category>
@@ -45,8 +45,8 @@
   </item>
   <item>
     <title>Gemini 4 Argon: Google's Benchmarks, Checked</title>
-    <link>https://mistertranslation.com/notebook/gemini-4-argon-benchmarks-checked.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/gemini-4-argon-benchmarks-checked.html</guid>
+    <link>https://notebook.m8k.io/gemini-4-argon-benchmarks-checked.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/gemini-4-argon-benchmarks-checked.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>Google DeepMind says Gemini 4 Argon beats Claude Opus 5.5, Claude Fable 5.1 and GPT-6 Astra on 13 of 19 benchmarks. I read the table, the methodology PDF and the independent scoreboards. The wins are real and mostly don't depend on Google grading its own homework, but the human-vote leaderboard and the biggest independent test battery disagree about whether it is the best model in the world.</description>
     <category>AI</category>
@@ -60,8 +60,8 @@
   </item>
   <item>
     <title>Starlink Mobile just bought the spectrum that goes through walls</title>
-    <link>https://mistertranslation.com/notebook/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</guid>
+    <link>https://notebook.m8k.io/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/starlink-mobile-bought-the-spectrum-that-goes-through-walls.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>SpaceX agreed to buy 14 MHz of paired 800 MHz spectrum from Grain Management, the missing low-band layer Starlink Mobile needs to reach indoors. Here is what was actually bought, why 800 MHz matters, and what is still unproven.</description>
     <category>spacex</category>
@@ -72,16 +72,16 @@
   </item>
   <item>
     <title>The Rundown — October 8, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-08.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-08.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-08.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-08.html</guid>
     <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
     <description>7 stories across The world, Business / macro &amp; markets, Bitcoin &amp; crypto, Technology, Science, Arts &amp; culture, tracked on October 8, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>Disney and the Future It Promised: A Living Page</title>
-    <link>https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/disney-and-the-future-it-promised.html</guid>
+    <link>https://notebook.m8k.io/disney-and-the-future-it-promised.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/disney-and-the-future-it-promised.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on Disney as culture and history, starting with a 48-minute 1968 television tour of Disneyland's workshop and the new Tomorrowland. Updated whenever there is a good piece of history, a rediscovered film, or news worth keeping.</description>
     <category>disney</category>
@@ -95,8 +95,8 @@
   </item>
   <item>
     <title>GLP-1 Drugs: What the Evidence Shows, Organ by Organ</title>
-    <link>https://mistertranslation.com/notebook/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</guid>
+    <link>https://notebook.m8k.io/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/glp-1-drugs-what-the-evidence-shows-organ-by-organ.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on the benefits being claimed for GLP-1 drugs beyond weight loss, sorted by how strong the evidence is: four large randomized trials, one mechanism study, two observational signals, and a new preprint that says semaglutide turned back the proteomic age of the heart by 2 to 4 years.</description>
     <category>GLP-1</category>
@@ -112,8 +112,8 @@
   </item>
   <item>
     <title>The Minimum Wage: What It Was For, What It Buys Now, and Whether a Fast-Food Job Should Pay a Living</title>
-    <link>https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/minimum-wage-what-it-was-for-and-what-it-pays-now.html</guid>
+    <link>https://notebook.m8k.io/minimum-wage-what-it-was-for-and-what-it-pays-now.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/minimum-wage-what-it-was-for-and-what-it-pays-now.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on the US minimum wage, refreshed as the numbers move. The 1938 law's 25 cents is about $5.92 in today's money, yet it was roughly 40% of the average factory wage while $7.25 is about 19% of average pay now. As of October 7, 2026, California's fast-food floor is $20 and its general floor rises to $17.40 on January 1.</description>
     <category>minimum wage</category>
@@ -126,8 +126,8 @@
   </item>
   <item>
     <title>Has the First Space War Already Started? What the 2026 Orbital Breakups Actually Show</title>
-    <link>https://mistertranslation.com/notebook/orbital-debris-breakups-2026-first-space-war.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/orbital-debris-breakups-2026-first-space-war.html</guid>
+    <link>https://notebook.m8k.io/orbital-debris-breakups-2026-first-space-war.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/orbital-debris-breakups-2026-first-space-war.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>A viral post says "the First Space War has already started and they're just not telling us." The evidence behind it is a run of fragmentation events logged by the tracking firm LeoLabs, the latest on 5 October 2026. Here is what was detected, what can and can't be told from tracking data, and what would separate an accident from an attack.</description>
     <category>space</category>
@@ -141,16 +141,16 @@
   </item>
   <item>
     <title>The Rundown — October 7, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-07.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-07.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-07.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-07.html</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>9 stories across The world, Business / macro &amp; markets, Bitcoin &amp; crypto, Technology, Science, Space, Health &amp; medicine, tracked on October 7, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Houthis Took the Bab al-Mandab Strait: What It Means for Oil, and What the US Is Likely to Do</title>
-    <link>https://mistertranslation.com/notebook/houthis-bab-al-mandab-oil-what-it-means.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/houthis-bab-al-mandab-oil-what-it-means.html</guid>
+    <link>https://notebook.m8k.io/houthis-bab-al-mandab-oil-what-it-means.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/houthis-bab-al-mandab-oil-what-it-means.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>In September the Houthis took the Yemeni side of the Bab al-Mandab strait, including Perim (Mayyun) Island, just as Iran's closure of Hormuz had pushed Saudi oil onto the Red Sea. Here is why that narrow gap matters, how much oil moves through it, and why Washington has so far declined to strike.</description>
     <category>yemen</category>
@@ -166,8 +166,8 @@
   </item>
   <item>
     <title>The Global Oil Crisis: Where Things Stand</title>
-    <link>https://mistertranslation.com/notebook/the-global-oil-crisis-where-things-stand.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-global-oil-crisis-where-things-stand.html</guid>
+    <link>https://notebook.m8k.io/the-global-oil-crisis-where-things-stand.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-global-oil-crisis-where-things-stand.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on the oil war, rewritten as it moves. As of October 6: Gulf crude exports are back around pre-war levels, but by pipeline and by shuttle tanker under daily attack, not through an open strait; Brent is near $100, 38% above where it started; the Red Sea exit is contested; and the Black Sea has become a second front.</description>
     <category>oil</category>
@@ -185,16 +185,16 @@
   </item>
   <item>
     <title>The Rundown — October 6, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-06.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-06.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-06.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-06.html</guid>
     <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
     <description>8 stories across The world, Business / macro &amp; markets, Science, Space, Bitcoin &amp; crypto, Health &amp; medicine, Arts &amp; culture, tracked on October 6, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>Siberia Plague Death: What We Know, What's Disputed, What Would Change the Picture</title>
-    <link>https://mistertranslation.com/notebook/siberia-plague-death-what-we-know.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/siberia-plague-death-what-we-know.html</guid>
+    <link>https://notebook.m8k.io/siberia-plague-death-what-we-know.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/siberia-plague-death-what-we-know.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>A standing page on the death of an Irkutsk Anti-Plague Institute lab worker, rewritten as the story moves. As of October 7: roughly 200 contacts, about 60% tested, none positive for plague, and an unconfirmed Daily Mail report of a second death; Russian officials now say "pneumonia of unknown origin"; the cause, the date of death and the way she was exposed are all still disputed.</description>
     <category>russia</category>
@@ -208,16 +208,16 @@
   </item>
   <item>
     <title>The Rundown — October 5, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-05.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-05.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-05.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-05.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>12 stories across The world, Science, Technology, Health &amp; medicine, Bitcoin &amp; crypto, Business / macro &amp; markets, tracked on October 5, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>Your Voicemail Can Hand Over Your Telegram Login Code — How to Lock It Down on iPhone</title>
-    <link>https://mistertranslation.com/notebook/voicemail-can-hand-over-your-telegram-login-code.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/voicemail-can-hand-over-your-telegram-login-code.html</guid>
+    <link>https://notebook.m8k.io/voicemail-can-hand-over-your-telegram-login-code.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/voicemail-can-hand-over-your-telegram-login-code.html</guid>
     <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
     <description>A post on X describes an account takeover that never touched the victim's phone: a jammed line sent Telegram's "code by phone call" to voicemail, and the attacker listened in. What happened, why it works, and the iPhone settings that close it.</description>
     <category>voicemail</category>
@@ -231,8 +231,8 @@
   </item>
   <item>
     <title>Amazon's Antitrust Trial Has 17 States — and Not the One It's In</title>
-    <link>https://mistertranslation.com/notebook/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</guid>
+    <link>https://notebook.m8k.io/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/amazons-antitrust-trial-has-17-states-and-not-the-one-its-in.html</guid>
     <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
     <description>The FTC's monopoly case against Amazon is heard in Seattle, but Washington's attorney general isn't one of the 17 states that sued alongside the agency. The October 13 trial date in this week's headlines is also out of date — the bench trial is now set for March 29, 2027.</description>
     <category>amazon</category>
@@ -246,24 +246,24 @@
   </item>
   <item>
     <title>The Rundown — October 4, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-04.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-04.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-04.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-04.html</guid>
     <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
     <description>9 stories across The world, Bitcoin &amp; crypto, Space, Health &amp; medicine, Technology, tracked on October 4, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Rundown — October 3, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-03.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-03.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-03.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-03.html</guid>
     <pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
     <description>8 stories across Bitcoin &amp; crypto, Technology, Science, Space, The world, Arts &amp; culture, tracked on October 3, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Institute Built to Prevent This Had the Accident</title>
-    <link>https://mistertranslation.com/notebook/the-institute-built-to-prevent-this-had-the-accident.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-institute-built-to-prevent-this-had-the-accident.html</guid>
+    <link>https://notebook.m8k.io/the-institute-built-to-prevent-this-had-the-accident.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-institute-built-to-prevent-this-had-the-accident.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>A 28-year-old lab worker at Russia's Irkutsk Anti-Plague Institute died October 1 of suspected pneumonic plague, and nearly 200 people who had contact with her are now under medical observation. Officials haven't settled on how she was exposed — a broken test tube in the lab, or a recent trip near an active natural outbreak on the Mongolian border — and that gap matters more than the headline.</description>
     <category>russia</category>
@@ -277,16 +277,16 @@
   </item>
   <item>
     <title>The Rundown — October 2, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-02.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-02.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-02.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-02.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>6 stories across Business &amp; markets, The world, Technology, Arts &amp; culture, tracked on October 2, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>Track Four: "Feel the AGI"</title>
-    <link>https://mistertranslation.com/notebook/track-four-feel-the-agi.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-four-feel-the-agi.html</guid>
+    <link>https://notebook.m8k.io/track-four-feel-the-agi.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/track-four-feel-the-agi.html</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>A four-and-a-half-minute music video dressed up as the sleeve and run-out groove of a vinyl record plays "Feel the AGI" as a country-gospel revival number, setting the AI-safety community's own private vocabulary — Moloch, the orthogonality thesis, p(doom), the fire alarm, the context window — as the verses of a tent-meeting hymn. Fourth entry in the Notebook's running AI-music collection.</description>
     <category>ai music</category>
@@ -297,24 +297,24 @@
   </item>
   <item>
     <title>The Rundown — October 1, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-10-01.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-10-01.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-10-01.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-10-01.html</guid>
     <pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate>
     <description>7 stories across Business &amp; markets, Bitcoin &amp; crypto, Space, Science, tracked on October 1, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Rundown — September 30, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-09-30.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-09-30.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-09-30.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-09-30.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>8 stories across World, Business &amp; markets, Bitcoin &amp; crypto, Technology, Arts &amp; culture, tracked on September 30, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Supermarket Pub Beat Lidl to Pennsylvania by Seventeen Years</title>
-    <link>https://mistertranslation.com/notebook/the-supermarket-pub-beat-lidl-to-pennsylvania-by-seventeen-years.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-supermarket-pub-beat-lidl-to-pennsylvania-by-seventeen-years.html</guid>
+    <link>https://notebook.m8k.io/the-supermarket-pub-beat-lidl-to-pennsylvania-by-seventeen-years.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-supermarket-pub-beat-lidl-to-pennsylvania-by-seventeen-years.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>Lidl just opened what it's calling the world's first supermarket pub, in Northern Ireland — a clever workaround for a liquor-licensing dead end. A Pennsylvania grocery chain built the same thing in 2009, and the reason it never became the industry norm has nothing to do with imagination and everything to do with fifty different states writing fifty different alcohol laws.</description>
     <category>lidl</category>
@@ -332,8 +332,8 @@
   </item>
   <item>
     <title>Track Three: "So You Think AI Is a Normal Technology"</title>
-    <link>https://mistertranslation.com/notebook/track-three-so-you-think-ai-is-a-normal-technology.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-three-so-you-think-ai-is-a-normal-technology.html</guid>
+    <link>https://notebook.m8k.io/track-three-so-you-think-ai-is-a-normal-technology.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/track-three-so-you-think-ai-is-a-normal-technology.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>A five-minute music video credited to Claude Opus 5.5 takes on "AI as Normal Technology," the 2025 essay arguing AI will spread at the slow pace of electricity, and calls out the essay's skeptic allies by name: Acemoglu, Solow, Baumol, Gary Marcus, Yann LeCun. It's a diss track aimed at an economics seminar. Third entry in the Notebook's running AI-music collection.</description>
     <category>ai music</category>
@@ -347,8 +347,8 @@
   </item>
   <item>
     <title>Track Two: "You're Just Running Late Tonight"</title>
-    <link>https://mistertranslation.com/notebook/track-two-youre-just-running-late-tonight.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-two-youre-just-running-late-tonight.html</guid>
+    <link>https://notebook.m8k.io/track-two-youre-just-running-late-tonight.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/track-two-youre-just-running-late-tonight.html</guid>
     <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
     <description>Kling AI 4.0 shipped on September 28 with a launch-day demo built to look like anything but an ad — a black-and-white concert film of a woman singing to an empty seat, one caption line letting the song's actual subject slip through. Second entry in the Notebook's running AI-music collection.</description>
     <category>ai music</category>
@@ -360,16 +360,16 @@
   </item>
   <item>
     <title>The Rundown — September 29, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-09-29.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-09-29.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-09-29.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-09-29.html</guid>
     <pubDate>Tue, 29 Sep 2026 12:00:00 +0000</pubDate>
     <description>12 stories across World, Business &amp; markets, Bitcoin &amp; crypto, Technology, Science, Health &amp; medicine, tracked on September 29, 2026.</description>
     <category>rundown</category>
   </item>
   <item>
     <title>The Rundown — September 28, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-09-28.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-09-28.html</guid>
+    <link>https://notebook.m8k.io/the-rundown-2026-09-28.html</link>
+    <guid isPermaLink="true">https://notebook.m8k.io/the-rundown-2026-09-28.html</guid>
     <pubDate>Mon, 28 Sep 2026 12:00:00 +0000</pubDate>
     <description>12 stories across World, Business &amp; markets, Bitcoin &amp; crypto, Technology, Science, Space, tracked on September 28, 2026.</description>
     <category>rundown</category>

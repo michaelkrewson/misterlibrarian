@@ -1,0 +1,17 @@
+// The Librarian's Notebook on its own subdomain (m8k.io umbrella, 2026-10-10).
+// Same pattern as cf/west.wrangler.jsonc: static-assets Worker, .html URLs kept
+// (html_handling "none"), static-site.js serves index.html for "/" paths.
+// Deploy: bash tools/deploy_blogs.sh notebook   (CI does this on push to main)
+{
+  "name": "m8k-notebook",
+  "main": "static-site.js",
+  "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "notebook.m8k.io", "custom_domain": true }],
+  "workers_dev": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "../notebook",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}
