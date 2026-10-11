@@ -62,8 +62,15 @@ TAGLINE = "Travels, meals, and musings by Mr. Librarian"
 BLURB = ("Notes from the road and from the table — what was worth the trip, "
          "what was worth the plate, and what wasn't.")
 
-SITE_URL = "https://mistertranslation.com"
-BASE = "/travel"                     # published under this path
+# Moved to its own subdomain 2026-10-10 (m8k.io umbrella): the blog lives at the
+# root of abroad.m8k.io, and mistertranslation.com/travel/* 301s there (cf/mt-redirects.js).
+SITE_URL = "https://abroad.m8k.io"
+BASE = ""                           # served at the subdomain root
+# The "Mister Library" mark still points at the hub on mistertranslation.com.
+HUB_URL = "https://mistertranslation.com"
+# GoatCounter keeps recording under /travel/… so view counts continue unbroken
+# and never collide with the hub's paths on the shared "mistertranslation" site.
+STATS_PREFIX = "/travel"
 OG_IMAGE = f"{SITE_URL}{BASE}/img/og-default.png"
 
 # Cookie-less, no-consent-banner analytics, same account as the Bible site so
@@ -261,7 +268,7 @@ def header(active=""):
         return ' class="on"' if k == active else ""
     return f"""<header class="site-head">
   <div class="brandcrumb">
-    <a class="hublink" href="{SITE_URL}/" aria-label="Mister Library — every publication">
+    <a class="hublink" href="{HUB_URL}/" aria-label="Mister Library — every publication">
       {HUB_MARK_SVG}
       <span class="hubwm">Mister Library</span>
     </a>
@@ -334,7 +341,8 @@ def _footer():
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
-    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+    return (f'\n<script>window.goatcounter = {{path: function(p) {{ return "{STATS_PREFIX}" + p; }}}};</script>'
+            f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
             f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
             f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
@@ -712,7 +720,7 @@ def _pagehits(file):
     build inline, factored out for the standing utility pages below (About,
     Bookmarked, Write, Thanks, Drafts) that had none — same "—" placeholder,
     fetched client-side, same fail-silent-on-a-zero-hit-page posture."""
-    hits = _hits_widget(f"{BASE}/{file}", " views")
+    hits = _hits_widget(f"{STATS_PREFIX}/{file}", " views")
     return f'\n<p class="pagehits">{hits}</p>' if hits else ""
 
 
@@ -729,7 +737,7 @@ def _meta_line(p, show_hits=False):
     # Hits are skipped on a draft: it's an unlisted preview, not a real page
     # visitors land on, so a view count there would be nearly meaningless noise.
     if show_hits and not p["draft"]:
-        bits.append(_hits_widget(f"{BASE}/{p['file']}", " views"))
+        bits.append(_hits_widget(f"{STATS_PREFIX}/{p['file']}", " views"))
     return '<div class="postmeta">' + " · ".join(bits) + "</div>"
 
 
@@ -869,7 +877,7 @@ def build_index(posts):
 
     # Shown at the bottom of the page, not up under the blurb — page metadata
     # belongs near the footer, not competing with the intro for attention.
-    index_hits = _hits_widget(f"{BASE}/index.html", " visits to this page")
+    index_hits = _hits_widget(f"{STATS_PREFIX}/index.html", " visits to this page")
     index_hits_html = f'\n<p class="pagehits">{index_hits}</p>' if index_hits else ""
     body = f"""<section class="lede lede-home">
   <p>{html.escape(BLURB)}</p>
@@ -1275,7 +1283,7 @@ def build_post_pages(posts):
         # metadata, not something competing with the headline for attention.
         # Skipped on a draft: an unlisted preview, not a real page a visitor
         # lands on, so a view count there would be nearly meaningless noise.
-        hits = _hits_widget(f"{BASE}/{p['file']}", " views") if not p["draft"] else ""
+        hits = _hits_widget(f"{STATS_PREFIX}/{p['file']}", " views") if not p["draft"] else ""
         hits_html = f'<p class="pagehits">{hits}</p>' if hits else ""
 
         body = f"""{_post_article(p)}

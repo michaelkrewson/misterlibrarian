@@ -8,6 +8,8 @@
   "workers_dev": false,
   "routes": [
     { "pattern": "mistertranslation.com/west", "zone_name": "mistertranslation.com" },
-    { "pattern": "mistertranslation.com/west/*", "zone_name": "mistertranslation.com" }
+    { "pattern": "mistertranslation.com/west/*", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/travel", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/travel/*", "zone_name": "mistertranslation.com" }
   ]
 }

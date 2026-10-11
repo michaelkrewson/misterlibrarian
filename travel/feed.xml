@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Librarian Abroad</title>
-  <link>https://mistertranslation.com/travel/</link>
-  <atom:link href="https://mistertranslation.com/travel/feed.xml" rel="self" type="application/rss+xml"/>
+  <link>https://abroad.m8k.io/</link>
+  <atom:link href="https://abroad.m8k.io/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Notes from the road and from the table — what was worth the trip, what was worth the plate, and what wasn't.</description>
   <language>en</language>
   <item>
     <title>The Night It Ran Out of Everything, at Five Guys</title>
-    <link>https://mistertranslation.com/travel/five-guys-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/five-guys-vancouver.html</guid>
+    <link>https://abroad.m8k.io/five-guys-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/five-guys-vancouver.html</guid>
     <pubDate>Fri, 18 Sep 2026 12:00:00 +0000</pubDate>
     <description>National Cheeseburger Day, a Vancouver, Washington location that ran out of buns, lettuce, and pickles by six, and a two-hour wait made bearable by free peanuts and better company than expected — plus where this one lands against In-N-Out and Habit. (Vancouver, Washington)</description>
     <category>food</category>
@@ -25,8 +25,8 @@
   </item>
   <item>
     <title>Bún Chả, the Hanoi Way, at Pho Hathanh</title>
-    <link>https://mistertranslation.com/travel/pho-hathanh-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/pho-hathanh-portland.html</guid>
+    <link>https://abroad.m8k.io/pho-hathanh-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/pho-hathanh-portland.html</guid>
     <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
     <description>Bún chả Hanoi at Pho Hathanh, a Vietnamese restaurant in a converted craftsman house in Portland, Oregon, run by a husband-and-wife team cooking in the style of their hometown. Five out of five, and one of my favorite Asian dishes done right. (Portland, Oregon)</description>
     <category>food</category>
@@ -45,8 +45,8 @@
   </item>
   <item>
     <title>The Dan Dan Noodles at Dough Zone</title>
-    <link>https://mistertranslation.com/travel/dough-zone-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/dough-zone-vancouver.html</guid>
+    <link>https://abroad.m8k.io/dough-zone-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/dough-zone-vancouver.html</guid>
     <pubDate>Sun, 06 Sep 2026 12:00:00 +0000</pubDate>
     <description>A Dough Zone opened on Mill Plain in Vancouver, Washington, and the best dish on the menu turned out to be sitting in the noodle section, not the dumpling case. Five out of five, and worth the trip for the Dan Dan noodles alone. (Vancouver, Washington)</description>
     <category>food</category>
@@ -64,8 +64,8 @@
   </item>
   <item>
     <title>A Washington Apple Haul, Bound for Cider</title>
-    <link>https://mistertranslation.com/travel/longview-apple-press.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/longview-apple-press.html</guid>
+    <link>https://abroad.m8k.io/longview-apple-press.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/longview-apple-press.html</guid>
     <pubDate>Sat, 05 Sep 2026 12:00:00 +0000</pubDate>
     <description>An afternoon in Longview, Washington running a backyard apple haul — one of them a real Cox's Orange Pippin — through a hand-crank press, well ahead of the actual cider. (Longview, Washington)</description>
     <category>apples</category>
@@ -81,8 +81,8 @@
   </item>
   <item>
     <title>A Burger a Size Too Big, and Shrimp Worth the Drive</title>
-    <link>https://mistertranslation.com/travel/ondus-vancouver-waterfront.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/ondus-vancouver-waterfront.html</guid>
+    <link>https://abroad.m8k.io/ondus-vancouver-waterfront.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/ondus-vancouver-waterfront.html</guid>
     <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
     <description>Dinner at Ondus on the Waterfront inside Vancouver, Washington's AC Hotel — a Waterfront Burger a size bigger than it needed to be, a Mediterranean salmon that's good but not quite Oswego Grill-level, and a sizzling garlic shrimp cazuela worth driving across town for on its own. (Vancouver, Washington)</description>
     <category>food</category>
@@ -99,8 +99,8 @@
   </item>
   <item>
     <title>The Best Barbecue I've Ever Had, at Bark City BBQ</title>
-    <link>https://mistertranslation.com/travel/bark-city-bbq-the-heist-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/bark-city-bbq-the-heist-portland.html</guid>
+    <link>https://abroad.m8k.io/bark-city-bbq-the-heist-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/bark-city-bbq-the-heist-portland.html</guid>
     <pubDate>Fri, 28 Aug 2026 12:00:00 +0000</pubDate>
     <description>Bark City BBQ, inside The Heist food cart pod in a converted bank building in Portland, Oregon, makes the best barbecue I've ever had — five out of five. The old vault door is still built into the furniture. (Portland, Oregon)</description>
     <category>food</category>
@@ -130,8 +130,8 @@
   </item>
   <item>
     <title>Tiger Sauce on the Italian, at Philly Bilmos</title>
-    <link>https://mistertranslation.com/travel/philly-bilmos-tiger-sauce.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/philly-bilmos-tiger-sauce.html</guid>
+    <link>https://abroad.m8k.io/philly-bilmos-tiger-sauce.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/philly-bilmos-tiger-sauce.html</guid>
     <pubDate>Thu, 27 Aug 2026 12:00:00 +0000</pubDate>
     <description>Tiger Sauce, grated parmesan and Italian dressing, on one of the best Italian subs in Vancouver, Washington. A second trip to Philly Bilmos, what Tiger Sauce actually is, and why a shop named for its cheesesteaks earns five stars either way. (Vancouver, Washington)</description>
     <category>food</category>
@@ -160,8 +160,8 @@
   </item>
   <item>
     <title>Worth Driving Across Town For, at Tacos Fita</title>
-    <link>https://mistertranslation.com/travel/tacos-fita-woodstock-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/tacos-fita-woodstock-portland.html</guid>
+    <link>https://abroad.m8k.io/tacos-fita-woodstock-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/tacos-fita-woodstock-portland.html</guid>
     <pubDate>Tue, 25 Aug 2026 12:00:00 +0000</pubDate>
     <description>Tacos Fita is a food truck in a cart pod on SE Woodstock Blvd in Portland, Oregon, and the carne asada taco there is the best in the region — five out of five. The pickled red onions on top make it, and the habanero sauce is no joke. (Portland, Oregon)</description>
     <category>food</category>
@@ -182,8 +182,8 @@
   </item>
   <item>
     <title>Three Stars and a Wall of Pinball, at Pizza Roma</title>
-    <link>https://mistertranslation.com/travel/pizza-roma-woodstock-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/pizza-roma-woodstock-portland.html</guid>
+    <link>https://abroad.m8k.io/pizza-roma-woodstock-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/pizza-roma-woodstock-portland.html</guid>
     <pubDate>Tue, 25 Aug 2026 12:00:00 +0000</pubDate>
     <description>Pizza Roma is a slice-and-pie counter on SE Woodstock Blvd in Portland, Oregon, with a full bar, video poker and a back room lined with pinball machines. Three out of five for the pizza itself — fine, nothing more — but the room around it is doing a lot of the work. (Portland, Oregon)</description>
     <category>food</category>
@@ -204,8 +204,8 @@
   </item>
   <item>
     <title>The Correct Way to Eat Pho, at Pho Hung</title>
-    <link>https://mistertranslation.com/travel/pho-hung-82nd-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/pho-hung-82nd-portland.html</guid>
+    <link>https://abroad.m8k.io/pho-hung-82nd-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/pho-hung-82nd-portland.html</guid>
     <pubDate>Sun, 23 Aug 2026 12:00:00 +0000</pubDate>
     <description>Most people never learn the actual mechanics of eating a bowl of pho — what the little cup of onion and vinegar is for, or how to build the bite. Five out of five at Pho Hung on 82nd in Portland, Oregon, and here's the method. (Portland, Oregon)</description>
     <category>food</category>
@@ -225,8 +225,8 @@
   </item>
   <item>
     <title>Is PDX the World's Most Beautiful Airport?</title>
-    <link>https://mistertranslation.com/travel/pdx-worlds-most-beautiful-airport.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/pdx-worlds-most-beautiful-airport.html</guid>
+    <link>https://abroad.m8k.io/pdx-worlds-most-beautiful-airport.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/pdx-worlds-most-beautiful-airport.html</guid>
     <pubDate>Sat, 22 Aug 2026 12:00:00 +0000</pubDate>
     <description>PDX's new main terminal actually won a real World's Most Beautiful Airport award — a nine-acre wood ceiling built from timber sourced within 300 miles. (Portland, Oregon)</description>
     <category>notes</category>
@@ -240,8 +240,8 @@
   </item>
   <item>
     <title>The Cheapest Tacos on the Planet (Possibly Not Beef)</title>
-    <link>https://mistertranslation.com/travel/jack-in-the-box-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/jack-in-the-box-vancouver.html</guid>
+    <link>https://abroad.m8k.io/jack-in-the-box-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/jack-in-the-box-vancouver.html</guid>
     <pubDate>Fri, 21 Aug 2026 12:00:00 +0000</pubDate>
     <description>A Friday-night run to the Jack in the Box on NE 117th in Vancouver, Washington — decent fast food, three out of five, the honest kind of meal you eat because you're busy rather than because you're excited about it. The Sourdough Jack earns its keep. The two tacos might be the cheapest food on the planet, and nobody at the company will actually call them beef tacos. (Vancouver, Washington)</description>
     <category>food</category>
@@ -255,8 +255,8 @@
   </item>
   <item>
     <title>The Best Bolognese Since France, at Chuckie Pies</title>
-    <link>https://mistertranslation.com/travel/chuckie-pies-lake-oswego.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/chuckie-pies-lake-oswego.html</guid>
+    <link>https://abroad.m8k.io/chuckie-pies-lake-oswego.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/chuckie-pies-lake-oswego.html</guid>
     <pubDate>Thu, 20 Aug 2026 12:00:00 +0000</pubDate>
     <description>I went back to Chuckie Pies in Lake Oswego for the pizza I had been bookmarking since July, and came away talking about the rigatoni Bolognese instead. Ten-inch Neapolitan pies out of a wood oven, a seriously Italian wine list with a Barbaresco on it, and the best Bolognese I have had since the south of France. (Lake Oswego, Oregon)</description>
     <category>food</category>
@@ -274,8 +274,8 @@
   </item>
   <item>
     <title>The Time It Beat In-N-Out, at Habit</title>
-    <link>https://mistertranslation.com/travel/habit-burger-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/habit-burger-vancouver.html</guid>
+    <link>https://abroad.m8k.io/habit-burger-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/habit-burger-vancouver.html</guid>
     <pubDate>Mon, 17 Aug 2026 12:00:00 +0000</pubDate>
     <description>A free Double Char that showed up in the app for my birthday, a surfboard bolted to a brick wall two thousand miles from the nearest one, and the honest case — onion rings and spicy ranch included — for why Habit edges out my beloved In-N-Out, strictly at the fast-food level. (Vancouver, Washington)</description>
     <category>food</category>
@@ -291,8 +291,8 @@
   </item>
   <item>
     <title>Worth Crossing the River For, at Saburo's</title>
-    <link>https://mistertranslation.com/travel/saburos-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/saburos-portland.html</guid>
+    <link>https://abroad.m8k.io/saburos-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/saburos-portland.html</guid>
     <pubDate>Fri, 14 Aug 2026 12:00:00 +0000</pubDate>
     <description>Saburo's Sushi House in Portland's Sellwood neighborhood is a once-or-twice-a-year drive across the river, and the Seared Salmon is the reason. Five stars, huge portions, prices that aren't terrible for what shows up on the plate. (Portland, Oregon)</description>
     <category>food</category>
@@ -308,8 +308,8 @@
   </item>
   <item>
     <title>Dress It Yourself, at Philly Bilmos</title>
-    <link>https://mistertranslation.com/travel/philly-bilmos-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/philly-bilmos-vancouver.html</guid>
+    <link>https://abroad.m8k.io/philly-bilmos-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/philly-bilmos-vancouver.html</guid>
     <pubDate>Fri, 14 Aug 2026 12:00:00 +0000</pubDate>
     <description>Philly Bilmos is a cheesesteak shop in Vancouver, Washington, and the sandwich that got five stars here wasn't the cheesesteak — it was the Italian sub, dressed at the table with its own oil, vinegar and parmesan. The best one I've had. (Vancouver, Washington)</description>
     <category>food</category>
@@ -330,8 +330,8 @@
   </item>
   <item>
     <title>The Mild Fish Sauce, at Broken Rice</title>
-    <link>https://mistertranslation.com/travel/broken-rice-portland.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/broken-rice-portland.html</guid>
+    <link>https://abroad.m8k.io/broken-rice-portland.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/broken-rice-portland.html</guid>
     <pubDate>Fri, 14 Aug 2026 12:00:00 +0000</pubDate>
     <description>Broken Rice is a Vietnamese cart off 82nd Avenue in Portland, Oregon, serving grilled pork over com tam — broken rice — with a fish sauce that's milder than expected and genuinely good. Five stars, indoor seating if it's raining, worth the drive despite the block it's on. (Portland, Oregon)</description>
     <category>food</category>
@@ -348,8 +348,8 @@
   </item>
   <item>
     <title>A Dry Ribeye and a Long Wait, at Black Angus Steakhouse</title>
-    <link>https://mistertranslation.com/travel/black-angus-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/black-angus-vancouver.html</guid>
+    <link>https://abroad.m8k.io/black-angus-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/black-angus-vancouver.html</guid>
     <pubDate>Tue, 11 Aug 2026 12:00:00 +0000</pubDate>
     <description>The New York strip was okay at best, the ribeye was dry and thin — ironic, for the cut that's supposed to be the fatty one — and both landed on the table only a little warmer than the room. Everyone who worked there was kind about it. Three stars: glad I went, and next time I'll ask them to hurry. (Vancouver, Washington)</description>
     <category>food</category>
@@ -371,8 +371,8 @@
   </item>
   <item>
     <title>A Lamb and Beef Gyro, and a Request for Sunglasses</title>
-    <link>https://mistertranslation.com/travel/anoush-deli-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/anoush-deli-vancouver.html</guid>
+    <link>https://abroad.m8k.io/anoush-deli-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/anoush-deli-vancouver.html</guid>
     <pubDate>Sat, 08 Aug 2026 12:00:00 +0000</pubDate>
     <description>The lamb and beef gyro at Anoush Deli in Vancouver, Washington might be the meatiest one I've had in this part of town. Three stars: I wouldn't drive across the city for it, but it's a generous, genuinely good gyro from a place that's part halal deli and part Eastern European grocery. (Vancouver, Washington)</description>
     <category>food</category>
@@ -396,8 +396,8 @@
   </item>
   <item>
     <title>The Black and Bleu, and the Nicest Ladies in Town</title>
-    <link>https://mistertranslation.com/travel/uptown-barrel-room.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/uptown-barrel-room.html</guid>
+    <link>https://abroad.m8k.io/uptown-barrel-room.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/uptown-barrel-room.html</guid>
     <pubDate>Thu, 06 Aug 2026 12:00:00 +0000</pubDate>
     <description>The Black and Bleu Burger at the Uptown Barrel Room on Main Street in Vancouver, Washington is eighteen dollars and the best burger I have had in a long time — a blackened Angus patty under melting bleu cheese and bacon. Five stars, which on this site means worth crossing a city for, and I would. (Vancouver, Washington)</description>
     <category>food</category>
@@ -418,8 +418,8 @@
   </item>
   <item>
     <title>Quesabirria, and a Sun the Wrong Color</title>
-    <link>https://mistertranslation.com/travel/muchas-gracias-ne-76th.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/muchas-gracias-ne-76th.html</guid>
+    <link>https://abroad.m8k.io/muchas-gracias-ne-76th.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/muchas-gracias-ne-76th.html</guid>
     <pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>
     <description>The quesabirria at Muchas Gracias Mexican Food on NE 76th in Vancouver, Washington is genuinely good, and the consomé that comes with it is thinner than it ought to be. Three stars: glad I went, and I wouldn't cross town for it — plus a sun turned red by wildfire smoke on the way home. (Vancouver, Washington)</description>
     <category>food</category>
@@ -440,8 +440,8 @@
   </item>
   <item>
     <title>O-M-Cheese, and a Water Hole That Isn't Anymore</title>
-    <link>https://mistertranslation.com/travel/applebees-mill-plain.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/applebees-mill-plain.html</guid>
+    <link>https://abroad.m8k.io/applebees-mill-plain.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/applebees-mill-plain.html</guid>
     <pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
     <description>The new O-M-Cheese Burger at the Applebee's on Mill Plain in Vancouver, Washington, earns its name — melted into a skillet of queso, it's one of the best cheeseburgers I've had in a while. The room around it has had a harder time; the old bar that used to be the neighborhood's actual water hole isn't, quite, anymore. (Vancouver, Washington)</description>
     <category>food</category>
@@ -458,8 +458,8 @@
   </item>
   <item>
     <title>Waiting for Blissful Heaven, at Healing Garden</title>
-    <link>https://mistertranslation.com/travel/wendy-bohon-lmt.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/wendy-bohon-lmt.html</guid>
+    <link>https://abroad.m8k.io/wendy-bohon-lmt.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/wendy-bohon-lmt.html</guid>
     <pubDate>Sun, 02 Aug 2026 12:00:00 +0000</pubDate>
     <description>Five stars for Wendy Bohon, LMT, a massage therapist working out of a converted house in Vancouver, Washington, that smells like essential oils. (Vancouver, Washington)</description>
     <category>massage</category>
@@ -471,8 +471,8 @@
   </item>
   <item>
     <title>Twenty-Four Secrets in a Bottle, at La Provence</title>
-    <link>https://mistertranslation.com/travel/la-provence-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/la-provence-vancouver.html</guid>
+    <link>https://abroad.m8k.io/la-provence-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/la-provence-vancouver.html</guid>
     <pubDate>Sat, 01 Aug 2026 12:00:00 +0000</pubDate>
     <description>A French bakery on Mill Plain with a line out the door, a mezzanine, and a bottle of house sauce said to hold twenty-four ingredients. I ordered the salmon Benedict, which was very good, and spent the rest of the meal quietly wishing I had ordered the ham one. (Vancouver, Washington)</description>
     <category>food</category>
@@ -497,8 +497,8 @@
   </item>
   <item>
     <title>Mad Love and a Seattle Corner, at Red Robin</title>
-    <link>https://mistertranslation.com/travel/red-robin-mill-plain.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/red-robin-mill-plain.html</guid>
+    <link>https://abroad.m8k.io/red-robin-mill-plain.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/red-robin-mill-plain.html</guid>
     <pubDate>Fri, 31 Jul 2026 12:00:00 +0000</pubDate>
     <description>A national chain in an East Vancouver strip is precisely what a travel notebook is supposed to skip. Except this one started at a corner in Seattle, there is a photograph of that corner hanging in the lobby, and the MadLove is one of the best burgers I have eaten anywhere. (Vancouver, Washington)</description>
     <category>food</category>
@@ -514,8 +514,8 @@
   </item>
   <item>
     <title>Our Lady of Sorrows, on the Way to Fetch the Car</title>
-    <link>https://mistertranslation.com/travel/our-lady-of-sorrows.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/our-lady-of-sorrows.html</guid>
+    <link>https://abroad.m8k.io/our-lady-of-sorrows.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/our-lady-of-sorrows.html</guid>
     <pubDate>Wed, 29 Jul 2026 12:00:00 +0000</pubDate>
     <description>The morning after a padlocked gate on SE Woodstock, driving back down the same street to collect my car, I looked up and found a church that had been named for the occasion. (Portland, Oregon)</description>
     <category>notes</category>
@@ -525,8 +525,8 @@
   </item>
   <item>
     <title>A Good Burger and a Locked Gate, at Dick's Primal Kitchen</title>
-    <link>https://mistertranslation.com/travel/dicks-primal-kitchen.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/dicks-primal-kitchen.html</guid>
+    <link>https://abroad.m8k.io/dicks-primal-kitchen.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/dicks-primal-kitchen.html</guid>
     <pubDate>Tue, 28 Jul 2026 12:00:00 +0000</pubDate>
     <description>The kitchen here is doing something genuinely uncommon — 100% grass-fed and finished beef, a menu built to be taken apart and rebuilt. Then some time after nine they padlocked the back gate with my car still behind it, and that is why this entry has one star instead of four. (Portland, Oregon)</description>
     <category>food</category>
@@ -540,8 +540,8 @@
   </item>
   <item>
     <title>Fully Involved, at Firehouse Subs</title>
-    <link>https://mistertranslation.com/travel/firehouse-subs-vancouver.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/firehouse-subs-vancouver.html</guid>
+    <link>https://abroad.m8k.io/firehouse-subs-vancouver.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/firehouse-subs-vancouver.html</guid>
     <pubDate>Mon, 27 Jul 2026 12:00:00 +0000</pubDate>
     <description>A New York Steamer ordered "fully involved," a hot sauce bar named after the founders' own father, and the case for why a sandwich chain's branding can be this good and its app can still be this bad. (Vancouver, Washington)</description>
     <category>food</category>
@@ -553,8 +553,8 @@
   </item>
   <item>
     <title>The Egg Coffee at Trung Nguyên Legend</title>
-    <link>https://mistertranslation.com/travel/trung-nguyen-legend.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/trung-nguyen-legend.html</guid>
+    <link>https://abroad.m8k.io/trung-nguyen-legend.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/trung-nguyen-legend.html</guid>
     <pubDate>Sun, 26 Jul 2026 12:00:00 +0000</pubDate>
     <description>A tray, a bowl of hot water underneath to keep it warm, and a whipped egg-yolk foam dusted with cocoa — Vietnam's answer to tiramisu in a cup, plus a whole rotating board of specialty drinks worth its own second visit. (Portland, Oregon)</description>
     <category>food</category>
@@ -565,8 +565,8 @@
   </item>
   <item>
     <title>The Prosciutto and Brie Panini at St Honoré Boulangerie</title>
-    <link>https://mistertranslation.com/travel/st-honore-boulangerie.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/travel/st-honore-boulangerie.html</guid>
+    <link>https://abroad.m8k.io/st-honore-boulangerie.html</link>
+    <guid isPermaLink="true">https://abroad.m8k.io/st-honore-boulangerie.html</guid>
     <pubDate>Sun, 26 Jul 2026 12:00:00 +0000</pubDate>
     <description>A grilled panini of prosciutto and brie on the boulangerie's own baguette, eaten at a sidewalk table in downtown Lake Oswego — worth traveling across the city for, and I did. (Lake Oswego, Oregon)</description>
     <category>food</category>

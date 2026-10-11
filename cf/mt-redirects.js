@@ -5,6 +5,7 @@
 // To move another blog: add its prefix here AND its two routes in the config.
 const MOVED = {
   "/west": "https://west.m8k.io",
+  "/travel": "https://abroad.m8k.io",
 };
 
 export default {
