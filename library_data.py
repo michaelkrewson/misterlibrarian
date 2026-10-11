@@ -27611,6 +27611,19 @@ CHAPTER_ART = {
         },
     ],
     "1cor5": [{
+        "file": "magnasco-ambrose-theodosius.jpg",
+        "title": "Theodosius Repulsed from the Church by Saint Ambrose",
+        "title_es": "Teodosio rechazado de la iglesia por san Ambrosio",
+        "artist": "Alessandro Magnasco",
+        "year": "c. 1705",
+        "location": "Art Institute of Chicago (1961.43)",
+        "location_es": "Instituto de Arte de Chicago (1961.43)",
+        "alt": "The Emperor Theodosius, in armour and a red cloak, is halted at the steps of a church by Saint Ambrose in a mitre and white vestments, who raises his hand; behind the emperor a crowd, and in the foreground figures lying on the steps",
+        "note": "A museum record of the same event as the Rubens below, and the closer picture of it: the figures crowded on the steps in the foreground point to the violence that the exclusion answers. The church shuts its door on the powerful man who has done the wrong, until he repents. That is what chapter 5 asks the congregation to do.",
+        "note_es": "Un registro de museo del mismo episodio que el de Rubens, y la imagen más cercana: las figuras del primer plano, tendidas en los escalones, apuntan a la violencia a la que responde la exclusión. La iglesia cierra la puerta al hombre poderoso que ha hecho el mal, hasta que se arrepienta. Eso es lo que el capítulo 5 pide a la congregación.",
+        "license": "Public domain (Art Institute of Chicago, API: is_public_domain true)",
+        "source_url": "https://www.artic.edu/artworks/12891",
+    }, {
         "file": "ambrose-theodosius-church-door.jpg",
         "title": "Saint Ambrose and Emperor Theodosius",
         "title_es": "San Ambrosio y el emperador Teodosio",
@@ -27651,6 +27664,20 @@ CHAPTER_ART = {
         "note_es": "El capítulo 7 empieza con «en cuanto a lo que ustedes escribieron»: Pablo responde a una carta de Corinto. El cuadro muestra el acto de escribir una carta, no la cuestión del matrimonio a la que responde. Es el que escribe, no el contenido de la carta.",
         "license": "Public domain (PD-Art) \u2014 faithful photographic reproduction of a two-dimensional painting in the public domain",
         "source_url": "https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_BF.1991.4_-_Museum_of_Fine_Arts.jpg",
+    }],
+    "1cor8": [{
+        "file": "feast-of-the-gods-bellini-titian.jpg",
+        "title": "The Feast of the Gods",
+        "title_es": "El festín de los dioses",
+        "artist": "Giovanni Bellini and Titian",
+        "year": "1514 and 1529",
+        "location": "National Gallery of Art, Washington",
+        "location_es": "Galería Nacional de Arte, Washington",
+        "alt": "A woodland banquet: revellers recline and drink under trees, a satyr carries a jug, nymphs bring bowls and pitchers, and a donkey stands among the company",
+        "note": "Paul&rsquo;s warning is about a man who sees a believer &ldquo;reclining at a meal in an idol&rsquo;s temple&rdquo; (8:10). This is a feast of the gods themselves, in a grove, after Ovid&rsquo;s account of the gods&rsquo; banquet. It is not a temple and the Corinthians are not in it, but it shows how a Renaissance painter pictured a meal in the presence of gods.",
+        "note_es": "La advertencia de Pablo trata de alguien que ve a un creyente «reclinado a la mesa en el templo de un ídolo» (8:10). Este es un festín de los propios dioses, en un bosque, según el relato de Ovidio del banquete de los dioses. No es un templo y los corintios no están en él, pero muestra cómo imaginó un pintor del Renacimiento una comida en presencia de dioses.",
+        "license": "Public domain (National Gallery of Art; Commons Google Art Project copy)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Bellini_and_Titian_-_The_Feast_of_the_Gods_-_Google_Art_Project.jpg",
     }],
     "1cor13": [
         {
@@ -35577,6 +35604,5 @@ ART_SKIPPED['1cor4'] = "Searched Wikimedia Commons on 2026-10-11 for Paul's apos
 CHRON_CHAPTERS['1cor8'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul turns to meat that had been offered to idols and sold in the market, and to the Corinthians who think that knowledge settles the question. Acts 19 has Paul in Ephesus, the city where idols were sold: the silversmiths of Acts 19:24&ndash;27 make their living from the images of Artemis.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 7, written from Ephesus. Nothing in Acts dates this question; the chapter gives no date of its own.'}
 CHRON_CHAPTERS['1cor7'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul answers the questions the Corinthians wrote him about marriage, and the chapter is the longest answer in the letter. Acts 18 has Paul in Corinth before he wrote, and Acts 19 has him in Ephesus, the city the letter is written from.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 6, written from Ephesus. Nothing in Acts dates the questions about marriage; the chapter gives no date of its own.'}
 CHRON_CHAPTERS['1cor6'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul turns from the case inside the congregation to lawsuits between believers, heard before the civil courts of the city. Acts 18:12&ndash;17 has the Corinthian courts at work, with Gallio&rsquo;s tribunal and the beating of Sosthenes before it, the proconsul who would not hear a dispute over the law.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 5, written from Ephesus. Nothing in Acts dates these lawsuits; the chapter gives no date of its own.'}
-ART_SKIPPED['1cor8'] = "Web-searched on 2026-10-11 for public-domain art of meat sacrificed to idols and of a meal in an idol's temple (1 Corinthians 8); the results were Old Testament idol sacrifices (Jeroboam, Fragonard, 1752), a Manichaean idol in Augustine's life, and saints refusing sacrifice. None depicts the Corinthian question. Not a direct browse of the Commons category pages."
 CHRON_CHAPTERS['1cor5'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul turns from the factions to a case of sexual sin inside the congregation: a man has his father&rsquo;s wife, and the Corinthians have not mourned it. Acts 19:8&ndash;10 has Paul teaching in Ephesus for two years, the setting from which this letter is written.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 4, written from Ephesus. Nothing in Acts dates the case itself; the chapter gives no date of its own.'}
 CHRON_CHAPTERS['1cor4'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul gives the apostles their office: under-rowers and stewards, judged by faithfulness rather than by the verdict of a court. Timothy is on his way to remind the Corinthians of his ways (4:17), as Acts 19:22 has him sent ahead into Macedonia.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 3, written from Ephesus. Acts 19:22 has Paul send Timothy and Erastus into Macedonia; this chapter has him on the road to Corinth, in 4:17 and again in 16:10.'}
