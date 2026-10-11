@@ -1,19 +1,20 @@
-# MisterLibrarian
+# Mister Translation
 
 > A fresh translation of the Bible into modern English, made one chapter at a time from the
 > original Hebrew (the Masoretic Text) and Greek (SBLGNT), with the source text reproduced
 > verse-by-verse and translator's notes comparing every rendering choice against a fixed shelf
 > of seven landmark versions (NIV 2011, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva
-> Bible, the ASV, and the NWT 1984). Published alongside five smaller sourced blogs under the
-> same "Mr. Librarian" persona, all reachable from the home page hub.
+> Bible, the ASV, and the NWT 1984). Written by "Mr. Librarian", who also publishes five
+> smaller sourced blogs, each on its own subdomain of m8k.io (listed below).
 
 Every translation choice is footnoted against the seven-version shelf rather than asserted;
-where a shelf version differs for doctrinal (not factual) reasons, that's flagged as such. Full
-Table of Contents and translation doctrine: https://mistertranslation.com/bible.html
+where a shelf version differs for doctrinal (not factual) reasons, that's flagged as such. The
+home page is the front door: https://mistertranslation.com/
 
 ## Bible translation
 
-- [Table of Contents](https://mistertranslation.com/bible.html): every translated chapter, English and Spanish, with progress tracked by book
+- [Home](https://mistertranslation.com/): the newest chapters, the verse of the day, and the way into every book
+- [Table of Contents](https://mistertranslation.com/toc.html): every translated chapter, English and Spanish, with progress tracked by book
 - [Dictionary](https://mistertranslation.com/dictionary.html): per-term entries for names, places and concepts referenced in the translation
 - [Encyclopedia](https://mistertranslation.com/encyclopedia.html): background entries on people, events and customs
 - [Atlas](https://mistertranslation.com/atlas.html): place entries with historical/geographic context
@@ -21,17 +22,20 @@ Table of Contents and translation doctrine: https://mistertranslation.com/bible.
 
 ## Other publications (same author, same sourcing discipline)
 
-- [The Librarian's Ledger](https://mistertranslation.com/finance/): finance & markets blog, cites primary sources, states "where I could be wrong"
-- [The Librarian Abroad](https://mistertranslation.com/travel/): travel & food blog
-- [The Librarian's Regimen](https://mistertranslation.com/health/): health & nutrition, read from primary literature, never medical advice
-- [The Librarian's Notebook](https://mistertranslation.com/notebook/): science/tech, world affairs and arts, general-interest
-- [Eight Miles West](https://mistertranslation.com/west/): a family history published as numbered chapters, in order
+Since 2026-10-10 these live on m8k.io subdomains; their old mistertranslation.com/<folder>/
+addresses 301 to the new ones. Each has its own /llms.txt and /sitemap.xml.
+
+- [The Librarian's Ledger](https://ledger.m8k.io/): Bitcoin, money and the people who regulate it, read from the filings; cites primary sources, states "where I could be wrong"
+- [The Librarian's Notebook](https://notebook.m8k.io/): a commonplace book: science and technology, world affairs, the arts
+- [The Librarian's Regimen](https://regimen.m8k.io/): health, nutrition and medicine from the primary literature, never medical advice
+- [The Librarian Abroad](https://abroad.m8k.io/): travel and food
+- [Eight Miles West](https://west.m8k.io/): a family history published as numbered chapters, in order
 
 ## Notes for automated readers
 
 - Spanish editions of the Bible pages exist at the same path with a `.es.html` suffix; both
   are listed with reciprocal hreflang in /sitemap.xml.
-- Per-verse `/v/*.html` stub pages exist for link previews and are intentionally noindex; cite
-  the chapter page they canonicalize to instead.
-- Full sitemaps: /sitemap.xml (Bible), /travel/sitemap.xml, /finance/sitemap.xml,
-  /health/sitemap.xml, /notebook/sitemap.xml, /west/sitemap.xml, /ask/sitemap.xml
+- Per-verse `/v/*.html` stub pages exist for link previews and redirect to their chapter;
+  cite the chapter page they canonicalize to instead.
+- Sitemaps: https://mistertranslation.com/sitemap.xml (Bible), https://mistertranslation.com/ask/sitemap.xml,
+  and https://<blog>.m8k.io/sitemap.xml for each blog above.

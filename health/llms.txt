@@ -1,0 +1,20 @@
+# The Librarian's Regimen
+
+> Health, nutrition and medicine, worked through one question at a time from the primary literature: what the studies actually found and how sure anyone can honestly be.
+
+Written by a reader, not a clinician. Nothing here is medical advice; see the disclaimer. Spanish editions use a `.es.html` suffix.
+
+Part of the m8k.io family of publications by "Mr. Librarian" (index: https://m8k.io/llms.txt).
+
+## Key pages
+
+- [Home](https://regimen.m8k.io/): newest posts
+- [Tags](https://regimen.m8k.io/tags.html): every post grouped by subject
+- [About](https://regimen.m8k.io/about.html): who writes this and how
+- [Disclaimer](https://regimen.m8k.io/disclaimer.html): not medical advice
+- [Español](https://regimen.m8k.io/es.html): the Spanish edition
+
+## Notes for automated readers
+
+- Every published post is listed in https://regimen.m8k.io/sitemap.xml (with last-modified dates) and the newest in https://regimen.m8k.io/feed.xml.
+- This blog moved from mistertranslation.com/health/ on 2026-10-10; old addresses 301 here.
