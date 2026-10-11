@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "The world",
       "items": [
         {
-          "text": "The 2026 Nobel Peace Prize went to Navi Pillay, the South African jurist and former UN human rights chief, announced October 9 in Oslo for decades of work holding perpetrators of war crimes, crimes against humanity and genocide accountable.",
+          "text": "Houthi-claimed strikes on Riyadh's King Khalid International Airport on October 8 killed three Saudi citizens and damaged a Saudia aircraft on the ground, Saudi aviation authorities said, prompting Lufthansa to suspend its Riyadh flights through October 16.",
           "href": "",
-          "source_href": "https://www.aljazeera.com/news/2026/10/9/2026-nobel-peace-prize-awarded-to-navi-pillay",
+          "source_href": "https://www.khaleejtimes.com/world/gulf/3-saudi-citizens-saudia-captain-killed-riyadh-airport-attack-oct-8-2026",
           "breaking": false
         },
         {
-          "text": "Tanker attacks in the Strait of Hormuz hit a wartime high in the week ending October 4 — eleven vessels struck, per IMO data, the most since the war began in February — even as oil flows through the strait partially rebounded to somewhere between 8.5 and 10.3 million barrels a day depending on the tracker, still 23 to 40 percent below prewar levels.",
-          "href": "the-global-oil-crisis-where-things-stand.html",
-          "source_href": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "text": "President Trump announced October 9 that Russia will supply more than 300,000 tons of diesel immediately, 500,000 tons in November and several million more tons after that to ease U.S. fuel prices ahead of the midterms, a move Ukraine's Zelensky called \"a weak decision by strong partners.\"",
+          "href": "",
+          "source_href": "https://www.wlrn.org/national-politics/2026-10-09/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
           "breaking": false
         }
       ]
@@ -24,38 +24,15 @@
       "label": "Business / macro & markets",
       "items": [
         {
-          "text": "U.S. stocks closed higher Friday, October 9, with the Dow Jones Industrial Average up 0.8% to 51,655.01, the S&P 500 up 0.6% to about 7,811.5, and the Nasdaq Composite up 0.6%, capping a volatile week heading into earnings season.",
+          "text": "Bank earnings season opens Tuesday, October 13 with JPMorgan Chase's Q3 report, where analysts expect EPS near $5.86 to $5.91 on roughly $51 billion in revenue, following Q2's $21.2 billion profit.",
           "href": "",
-          "source_href": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-09-2026",
+          "source_href": "https://www.marketpulse.com/markets/jpmorgan-q3-earnings-preview-can-strong-banking-momentum-continue/",
           "breaking": false
         },
         {
-          "text": "Humana shares jumped 13% Friday after an improved Medicare Advantage star rating and an analyst upgrade.",
+          "text": "The Bureau of Labor Statistics releases September's Consumer Price Index on Wednesday, October 14 at 8:30 a.m. ET, with economists forecasting headline inflation ticking up to about 3.6-3.7% year-over-year from August's 3.4%.",
           "href": "",
-          "source_href": "https://fool.com/coverage/stock-market-today/2026/10/09/stock-market-midday-oct-9-stocks-edge-higher-humana-jumps-13",
-          "breaking": false
-        },
-        {
-          "text": "Spain's Pedro Sánchez called a snap election for November 29 after parliament rejected his government's housing decrees, pushing the Spanish 10-year yield up nearly 5 basis points to 4.13% even as French 10-year yields eased to 4.86%, narrowing the spread over German bunds to 138 basis points.",
-          "href": "https://ledger.m8k.io/i-am-the-house-and-the-bond-market-disagreed.html",
-          "source_href": "https://www.lse.co.uk/news/french-bonds-find-relief-as-yields-ease-spanish-election-also-in-spotlight-ieph7hlr8owsrms.html",
-          "breaking": false
-        }
-      ]
-    },
-    {
-      "label": "Bitcoin & crypto",
-      "items": [
-        {
-          "text": "Bitcoin traded around $82,800 on Saturday, October 10, up from about $81,900 a day earlier as the market steadied after this week's Middle East-driven selloff.",
-          "href": "",
-          "source_href": "https://coinspectator.com/bitcoin-com/2026/10/10/bitcoin-price-clings-to-82800-as-the-next-breakout-remains-elusive",
-          "breaking": false
-        },
-        {
-          "text": "Crypto investment funds shed $1.07 billion over the past week, CoinShares reported, ending a six-week streak of inflows as Iran-related geopolitical anxiety weighed on sentiment.",
-          "href": "",
-          "source_href": "https://decrypt.co/368183/bitcoin-etfs-bleed-crypto-funds-shed-1-billion?amp=1",
+          "source_href": "https://admiralmarkets.com/analytics/traders-blog/us-cpi-preview-september-2026-forecasts-and-the-core-cpi-outlook",
           "breaking": false
         }
       ]
@@ -64,32 +41,49 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Anthropic released Claude Haiku 5.5 on October 7, the last model in its 5.5 family, priced about 75% below Haiku 4.5 for high-volume tasks like summarization and classification and available on AWS, Google Cloud and Azure alongside Anthropic's own platform.",
+          "text": "Cloudflare announced October 9 it is acquiring Deno, the JavaScript/TypeScript runtime Ryan Dahl co-created; the whole Deno team joins Cloudflare, Deno Deploy winds down over about six months, and the open-source runtime gets one more year of maintenance releases before development ends.",
           "href": "",
-          "source_href": "https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-with-lower-prices-and-eff-f698c663",
+          "source_href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
           "breaking": false
         },
         {
-          "text": "OpenAI began rolling out GPT-6 with an \"Intelligent UI\" mode in ChatGPT on October 7, mixing text answers with tappable buttons, charts, forms and editable diagrams, reaching Plus, Pro, Business and Enterprise users first and Free and Go users by October 8.",
+          "text": "Microsoft unveiled Decision-1 on October 9, a 9-billion-parameter model built on Alibaba's open-weight Qwen3.5 to score yes/no, multiple-choice and rating decisions rather than generate open-ended text, which Microsoft says runs 35 times faster than GPT-6 Sol at matching latency.",
           "href": "",
-          "source_href": "https://letsdatascience.com/news/openai-brings-gpt-6-and-intelligent-ui-to-chatgpt-4f0d797c",
-          "breaking": false
-        },
-        {
-          "text": "Google made its Nano Banana 2.1 image-generation and editing model generally available in the Gemini API on October 6, replacing Nano Banana 2 (Gemini 3.1 Flash Image), which it will shut off on October 29.",
-          "href": "",
-          "source_href": "https://letsdatascience.com/news/google-rolls-out-nano-banana-21-image-model-c6ac3b89",
+          "source_href": "https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Health & medicine",
+      "label": "Science",
       "items": [
         {
-          "text": "Russia's health watchdog Rospotrebnadzor said October 8 that contact observation around the Irkutsk plague death had ended and the regional quarantine was lifted, while dismissing social-media reports of a second infection as \"incorrect\"; the WHO said it is still seeking details from Russia.",
-          "href": "siberia-plague-death-what-we-know.html",
-          "source_href": "https://www.anews.com.tr/world/2026/10/08/russia-denies-reports-of-2nd-plague-case-in-siberias-irkutsk/amp",
+          "text": "The 2026 Nobel Prize in Physiology or Medicine went October 5 to Karl Deisseroth, Peter Hegemann and Georg Nagel for discovering and developing optogenetics, the light-gated ion channels researchers use to switch neurons on and off with light.",
+          "href": "",
+          "source_href": "https://www.nobelprize.org/prizes/medicine/2026/summary",
+          "breaking": false
+        },
+        {
+          "text": "The 2026 Nobel Prize in Physics went October 6 to Francis Halzen for his work on the IceCube Neutrino Observatory, a cubic kilometer of light detectors frozen into the Antarctic ice that led to the discovery of high-energy astrophysical neutrinos.",
+          "href": "",
+          "source_href": "https://www.nobelprize.org/prizes/physics/2026/summary",
+          "breaking": false
+        },
+        {
+          "text": "The 2026 Nobel Prize in Chemistry went October 7 to Henri Kagan and Kenso Soai, split equally, for their work on non-linear effects and autocatalysis in asymmetric organic synthesis, the chemistry behind why life builds its molecules in only one of two possible mirror-image forms.",
+          "href": "",
+          "source_href": "https://www.nobelprize.org/prizes/chemistry/2026/summary",
+          "breaking": false
+        }
+      ]
+    },
+    {
+      "label": "Arts & culture",
+      "items": [
+        {
+          "text": "The 2026 Nobel Prize in Literature went October 8 to Canadian poet and classicist Anne Carson, best known for the verse novel \"Autobiography of Red,\" with the Swedish Academy citing her inventive work's playful engagement with the classical tradition; the prize carries 12 million Swedish kronor and a December 10 Stockholm ceremony.",
+          "href": "",
+          "source_href": "https://www.nobelprize.org/prizes/literature/2026/",
           "breaking": false
         }
       ]
