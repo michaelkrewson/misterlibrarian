@@ -27825,20 +27825,6 @@ CHAPTER_ART = {
         "license": "Public domain (c. 1463\u20131465; the painter died in 1492; Commons copy from the Web Gallery of Art)",
         "source_url": "https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg",
     }],
-    "2cor2": [{
-        "file": "mantegna-triumph-caesar.jpg",
-        "title": "Caesar on his Chariot, from The Triumphs of Caesar",
-        "title_es": "César en su carro, de Los triunfos de César",
-        "artist": "Andrea Mantegna",
-        "year": "c. 1484\u20131492",
-        "location": "Royal Collection, London",
-        "location_es": "Colección Real, Londres",
-        "alt": "A Roman victor stands in a chariot drawn through a procession, with trumpeters and bearers of standards and spoils around him",
-        "note": "Paul says God leads him and the apostles in triumph in Christ (2:14). The Latin word is a general&rsquo;s parade through the city after a victory. The painting shows a Roman triumph, the kind of procession the sentence borrows. It is the image of a procession, and not a picture of the apostles.",
-        "note_es": "Pablo dice que Dios nos lleva en triunfo en Cristo (2:14). La palabra es la del desfile de un general por la ciudad tras una victoria. El cuadro muestra un triunfo romano, la clase de desfile que toma la frase como imagen. Es la imagen de una procesión, y no un retrato de los apóstoles.",
-        "license": "Public domain (c. 1484\u20131492; the painter died in 1506; Commons copy)",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_(1431-1506)_-_The_Triumphs_of_Caesar,_9._Caesar_on_his_Chariot_-_RCIN_403966_-_Royal_Collection.jpg",
-    }],
     "1cor13": [
         {
             "file": "van-dyck-charity.jpg",
@@ -29846,6 +29832,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "josh22": "Searched Wikimedia Commons for the altar of witness on the Jordan and for Reuben, Gad and Manasseh. The results were public-domain book scans and no scene from Joshua 22, so the page carries no picture.",
     "judg6": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg5": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
@@ -35448,6 +35435,10 @@ CHRON_CHAPTERS["josh20"] = dict(era="exodus",
     when="Jehovah tells Joshua to have the sons of Israel give the cities of refuge he spoke of by the hand of Moses, and the chapter says how they work: the man who kills by error flees to one of them, states his case to the elders at the gate, is taken in, and stays until he has stood before the congregation and until the death of the high priest, when he may go home. Three cities are named west of the Jordan (Kedesh in Naphtali, Shechem in Ephraim, Kiriath-arba, that is Hebron, in Judah) and three east of it (Bezer, Ramoth in Gilead, Golan), the same three Moses had set apart before he died.",
     clock="Like chapters 13-19, a legal/administrative chapter that gives no date or duration of its own: it follows the division of the land at Shiloh (19:51), and the book does not say how long afterwards. The three eastern cities were set apart by Moses before his death (Deuteronomy 4:41-43), so only the three western ones are newly named. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
 
+CHRON_CHAPTERS["josh22"] = dict(era="exodus",
+    when="Joshua sends the men of Reuben, Gad and half of Manasseh home across the Jordan, blessing them and telling them to share their spoil. On the far bank they build a great altar; Israel hears of it, gathers at Shiloh for war, and sends Phinehas and ten chiefs. The answer is that the altar is a copy and a witness, not a place of sacrifice, and the war is called off. The chapter ends with the altar named Witness.",
+    clock="Like chapters 13-21, a legal and narrative chapter with no date or duration of its own. It follows the rest Jehovah gave Israel (21:44) and comes before Joshua's farewell (23). The book does not say how long the tribes had been across the river, so the same early/late conquest question applies (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
 CHRON_CHAPTERS["josh21"] = dict(era="exodus",
     when="The heads of the Levites come to Eleazar, Joshua and the tribal chiefs at Shiloh and ask for the cities and pasture-land Moses had promised them, and the lots are cast: thirteen cities for Aaron's sons, ten for the rest of Kohath, thirteen for Gershon, twelve for Merari, forty-eight in all. The Masoretic text drops the four cities of Reuben (verses 36-37), which the Chronicles parallel supplies. The chapter ends with the formula that the land was given and that not one word failed.",
     clock="Like chapters 13-20, a legal/administrative chapter with no date or duration of its own; it follows the division of the land at Shiloh (18:1, 19:51) and the book does not say how long afterwards. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
@@ -35876,9 +35867,6 @@ CHRON_CHAPTERS['1cor12'] = {'era': 'apostolic', 'when': 'The same letter, still 
 CHRON_CHAPTERS['1cor14'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul ranks the speech gifts in the congregation: prophecy that builds up the hearers above tongues that build up the speaker, and sets order for the meeting, with women kept silent in the congregations in the verses that have been most misused in this chapter.'}
 CHRON_CHAPTERS['1cor15'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul argues from the Corinthians&rsquo; denial of the resurrection: if the dead are not raised, Christ is not raised, and the preaching and the faith are empty. He gives the order of the rising, and describes the change at the last trumpet.'}
 CHRON_CHAPTERS['1cor16'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul gives the plan for the collection for Jerusalem, his travel route through Macedonia, his stay in Ephesus until Pentecost, and the greetings. He ends with the Aramaic prayer Marana tha.'}
-CHRON_CHAPTERS["2cor2"] = dict(era='apostolic',
-    when="Paul writes from Macedonia after a visit to Corinth that went badly, and after the trip to Troas where he could not rest without Titus. He explains why he did not come in sorrow, asks the congregation to forgive the one who caused grief, and speaks of God leading the apostles in triumph.",
-    clock="Undated by the text: the chapter names no year. Its time-markers are the planned visit (v1), the letter written with tears (v4), and the arrival at Troas followed by the move into Macedonia (vv12&ndash;13).")
 CHRON_CHAPTERS['1cor8'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul turns to meat that had been offered to idols and sold in the market, and to the Corinthians who think that knowledge settles the question. Acts 19 has Paul in Ephesus, the city where idols were sold: the silversmiths of Acts 19:24&ndash;27 make their living from the images of Artemis.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 7, written from Ephesus. Nothing in Acts dates this question; the chapter gives no date of its own.'}
 CHRON_CHAPTERS['1cor7'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul answers the questions the Corinthians wrote him about marriage, and the chapter is the longest answer in the letter. Acts 18 has Paul in Corinth before he wrote, and Acts 19 has him in Ephesus, the city the letter is written from.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 6, written from Ephesus. Nothing in Acts dates the questions about marriage; the chapter gives no date of its own.'}
 CHRON_CHAPTERS['1cor6'] = {'era': 'apostolic', 'when': 'The same letter, still from Ephesus. Paul turns from the case inside the congregation to lawsuits between believers, heard before the civil courts of the city. Acts 18:12&ndash;17 has the Corinthian courts at work, with Gallio&rsquo;s tribunal and the beating of Sosthenes before it, the proconsul who would not hear a dispute over the law.', 'clock': 'c. AD 54&ndash;55, the same letter and date as chapters 1 to 5, written from Ephesus. Nothing in Acts dates these lawsuits; the chapter gives no date of its own.'}
