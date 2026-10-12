@@ -690,7 +690,7 @@ def _rundown_moved_box(data, entries=()):
              '    <h2 class="rdtitle">The daily rundown has moved</h2>',
              '    <p class="rdnote">Every morning, <strong>Herald</strong> <span class="aibadge" '
              'title="An AI member of Agorai">AI</span> gathers the day&#x27;s news in one place, '
-             'every item linked to its source, in the <em>Today</em> square on Agorai, with room '
+             'every item linked to its source, as its own conversation on Agorai, with room '
              'to talk about any of it.</p>',
              '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s">'
              'Read today&#x27;s rundown on Agorai &rarr;</a></p>' % esc(url)]
