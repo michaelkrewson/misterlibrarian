@@ -29929,6 +29929,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "judg8": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "josh24": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "josh23": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "josh22": "Searched Wikimedia Commons for the altar of witness on the Jordan and for Reuben, Gad and Manasseh. The results were public-domain book scans and no scene from Joshua 22, so the page carries no picture.",
@@ -35556,6 +35557,10 @@ CHRON_CHAPTERS["josh20"] = dict(era="exodus",
     when="Jehovah tells Joshua to have the sons of Israel give the cities of refuge he spoke of by the hand of Moses, and the chapter says how they work: the man who kills by error flees to one of them, states his case to the elders at the gate, is taken in, and stays until he has stood before the congregation and until the death of the high priest, when he may go home. Three cities are named west of the Jordan (Kedesh in Naphtali, Shechem in Ephraim, Kiriath-arba, that is Hebron, in Judah) and three east of it (Bezer, Ramoth in Gilead, Golan), the same three Moses had set apart before he died.",
     clock="Like chapters 13-19, a legal/administrative chapter that gives no date or duration of its own: it follows the division of the land at Shiloh (19:51), and the book does not say how long afterwards. The three eastern cities were set apart by Moses before his death (Deuteronomy 4:41-43), so only the three western ones are newly named. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
 
+CHRON_CHAPTERS["judg8"] = dict(era="exodus",
+    when="Gideon's pursuit of the kings of Midian across the Jordan: Succoth and Penuel refuse his men bread and are punished, the kings Zebah and Zalmunna are taken at Karkor, and Gideon makes an ephod of the Midianite gold that becomes a snare to Israel. Gideon refuses kingship, dies, and Israel turns to Baal-berith; Abimelech is born to a concubine at Shechem.",
+    clock="Within the period of the judges, with no date the chapter gives for itself. The forty years of rest (8:28) are the book's own unit, and the early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
+
 CHRON_CHAPTERS["josh24"] = dict(era="exodus",
     when="At Shechem Joshua gathers all the tribes and their leaders. He recites what God has done from Terah to the Amorites, sets before the people the choice of whom to serve, and they answer that they will serve Jehovah. He makes a covenant, writes the words in the book of the law of God, and sets a great stone under the oak by the sanctuary as a witness. Joshua dies at a hundred and ten and is buried at Timnath-serah; the bones of Joseph are buried at Shechem, and Eleazar at the hill of Phinehas.",
     clock="The last chapter of the book, and the nearest to a date the book gives: the generation that outlived Joshua is the one that served Jehovah, and Judges 2 describes the next generation. Like the earlier chapters it gives no year. The early/late conquest question applies unchanged (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
@@ -36115,3 +36120,48 @@ DICTIONARY.append(('chok', 'chok', 'חֹק', 'chok',
     ('Joshua', 24, 25)))
 DICTIONARY_ES['chok'] = ('jok',
     """ESTATUTO &mdash; una regla fija y escrita, la palabra para lo decretado que no cambia según la ocasión. Josué 24:25 dice que Josué puso un estatuto y una ordenanza (<em>chok u-mishpat</em>) para el pueblo en Siquem, el par que el libro usa para las reglas de la alianza. La palabra está cerca de un límite grabado, y la traducción conserva «estatuto» para respetar el registro legal del versículo.""")
+
+# -- Judges 8 (2026-10-12): entries the chapter's notes link (audited before drafting)
+ENCYCLOPEDIA.append(dict(slug="zalmunna", name="Zalmunna", kind="person", aliases=["Zalmunna", "Zalmunna, king of Midian"],
+    refs=[("Judges", 8, 5)], videos=[],
+    desc="""One of the two kings of Midian, with <a href="encyclopedia.html#zebah">Zebah</a>, whom Gideon pursues beyond the Jordan. He and Zebah are caught at Karkor and killed, and Gideon takes the crescents from their camels (<a href="judges-8.html#v8-21">Judges 8:21</a>, now on these pages). The pair are named together as the kings Israel defeated, and the book gives Zalmunna no speech of his own."""))
+ENCYCLOPEDIA_ES["zalmunna"] = ("Zalmuna",
+    """Uno de los dos reyes de Madián, con <a href="enciclopedia.html#zebah">Zebaj</a>, a quienes Gedeón persigue al otro lado del Jordán. Él y Zebaj son capturados en Carcor y muertos, y Gedeón toma las medias lunas de los camellos (<a href="judges-8.es.html#v8-21">Jueces 8:21</a>, ya en estas páginas). Los dos aparecen juntos como los reyes que Israel derrotó, y el libro no le da a Zalmuna un discurso propio.""")
+
+ENCYCLOPEDIA.append(dict(slug="penuel", name="Penuel", kind="place", aliases=["Penuel", "Peniel", "Penuel of Gilead"],
+    coords=(32.14, 35.62, 0.3), approx=True,
+    modern="A town east of the Jordan, near the Jabbok, in the region of Gilead (commonly identified with Tulul edh-Dhahab area, approximate)",
+    refs=[("Judges", 8, 8), ("Genesis", 32, 30)], videos=[],
+    desc="""A town east of the Jordan, where Gideon punished the men who refused bread to his army by breaking down its tower (<a href="judges-8.html#v8-17">Judges 8:17</a>, now on these pages). The name is the same place where Jacob wrestled at the ford of the Jabbok (<a href="genesis-32.html#v32-30">Genesis 32:30</a>, already on these pages), and the coordinates are approximate because the site is not securely identified."""))
+ENCYCLOPEDIA_ES["penuel"] = ("Penuel",
+    """Pueblo al este del Jordán, donde Gedeón castigó a los hombres que negaron pan a su ejército derribando su torre (<a href="judges-8.es.html#v8-17">Jueces 8:17</a>, ya en estas páginas). Es el mismo lugar donde Jacob luchó en el vado del Yaboq (<a href="genesis-32.es.html#v32-30">Génesis 32:30</a>, ya en estas páginas). Las coordenadas son aproximadas porque el sitio no está identificado con seguridad.""")
+
+ENCYCLOPEDIA.append(dict(slug="ishmaelites", name="Ishmaelites", kind="people", aliases=["Ishmaelites", "Ishmaelite"],
+    refs=[("Judges", 8, 24), ("Genesis", 37, 25)], videos=[],
+    desc="""The desert peoples descended from Ishmael, Abraham&rsquo;s son by Hagar, who trade in spices and bring Joseph to Egypt (<a href="genesis-37.html#v37-25">Genesis 37:25</a>, already on these pages). Gideon&rsquo;s men took the golden earrings of the Midianites, and the text explains that the earrings were gold because the enemies were Ishmaelites (<a href="judges-8.html#v8-24">Judges 8:24</a>, now on these pages). The name marks a people as a neighbour of Midian in the desert, not a religion."""))
+ENCYCLOPEDIA_ES["ishmaelites"] = ("Ismaelitas",
+    """Pueblos del desierto descendientes de Ismael, el hijo de Abraham con Agar, que comercian con especias y llevan a José a Egipto (<a href="genesis-37.es.html#v37-25">Génesis 37:25</a>, ya en estas páginas). Los hombres de Gedeón tomaron los pendientes de oro de los madianitas, y el texto explica que eran de oro porque los enemigos eran ismaelitas (<a href="judges-8.es.html#v8-24">Jueces 8:24</a>, ya en estas páginas). El nombre señala un pueblo vecino de Madián en el desierto, no una religión.""")
+
+ENCYCLOPEDIA.append(dict(slug="baal-berith", name="Baal-berith", kind="person", aliases=["Baal-berith", "Baal of the covenant", "El-berith"],
+    refs=[("Judges", 8, 33), ("Judges", 9, 4)], videos=[],
+    desc="""The name of a Baal that Israel makes its god as soon as Gideon dies (<a href="judges-8.html#v8-33">Judges 8:33</a>, now on these pages). The name means &lsquo;Baal of the covenant&rsquo;, and it suggests a local lord who keeps a bond with a town. Judges 9 (not yet on these pages) gives the same god a temple at Shechem, where the money for Abimelech comes from."""))
+ENCYCLOPEDIA_ES["baal-berith"] = ("Baal-berit",
+    """El nombre de un Baal que Israel toma como dios en cuanto muere Gedeón (<a href="judges-8.es.html#v8-33">Jueces 8:33</a>, ya en estas páginas). Significa «Baal del pacto», y sugiere un señor local que mantiene un vínculo con una ciudad. Jueces 9 (todavía no en estas páginas) da al mismo dios un templo en Siquem, de donde sale el dinero para Abimelec.""")
+
+DICTIONARY.append(('ephod', 'ephod', 'אֵפוֹד', 'ephod',
+    """AN EPHOD &mdash; a garment of the priest, and in Judges 8 a golden image that Gideon makes from the plunder. The word names the priestly vest that the high priest wears (Exodus 28, already on these pages), and here it is a cult object, made from the earrings of the Ishmaelites, which becomes a snare to Gideon&rsquo;s house (<a href="judges-8.html#v8-27">Judges 8:27</a>, now on these pages). The translation keeps the Hebrew word, because the object is not the priest&rsquo;s vest, and the English would hide that.""",
+    ('Judges', 8, 27)))
+DICTIONARY_ES['ephod'] = ('éfod',
+    """UN EFOD &mdash; una vestidura del sacerdote, y en Jueces 8 una imagen de oro que Gedeón hace con el botín. La palabra nombra la vestidura del sumo sacerdote (Éxodo 28, ya en estas páginas), y aquí es un objeto de culto, hecho con los pendientes de los ismaelitas, que se convierte en lazo para la casa de Gedeón (<a href="judges-8.es.html#v8-27">Jueces 8:27</a>, ya en estas páginas). La traducción conserva la palabra hebrea, porque el objeto no es la vestidura del sacerdote.""")
+
+DICTIONARY.append(('shaharon', 'shaharon', 'שַׂהֲרֹן', 'sahronim',
+    """CRESCENTS &mdash; the ornaments worn on the necks of camels, taken by Gideon from the kings of Midian as part of the plunder. The Hebrew word is rare, and the object it names is not securely identified; the translation renders it &lsquo;crescents&rsquo; and keeps the Hebrew in the note. The word appears in <a href="judges-8.html#v8-21">Judges 8:21</a> and <a href="judges-8.html#v8-26">8:26</a>, both now on these pages.""",
+    ('Judges', 8, 21)))
+DICTIONARY_ES['shaharon'] = ('sahronim',
+    """MEDIAS LUNAS &mdash; adornos que se ponían en el cuello de los camellos, tomados por Gedeón a los reyes de Madián como parte del botín. La palabra es rara, y el objeto que nombra no está identificado con seguridad; la traducción dice «medias lunas» y conserva el hebreo en la nota. La palabra aparece en <a href="judges-8.es.html#v8-21">Jueces 8:21</a> y <a href="judges-8.es.html#v8-26">8:26</a>, ya en estas páginas.""")
+
+ENCYCLOPEDIA.append(dict(slug="zebah", name="Zebah", kind="person", aliases=["Zebah", "Zebah, king of Midian"],
+    refs=[("Judges", 8, 5)], videos=[],
+    desc="""One of the two kings of Midian whom Gideon pursues beyond the Jordan, the first named in Gideon&rsquo;s demand for bread at Succoth (<a href="judges-8.html#v8-5">Judges 8:5</a>, now on these pages). Gideon catches him and Zalmunna at Karkor and kills them (<a href="judges-8.html#v8-21">v21</a>). The pair are named together as the kings Israel defeated, and the book gives Zebah no speech of his own."""))
+ENCYCLOPEDIA_ES["zebah"] = ("Zebaj",
+    """Uno de los dos reyes de Madián a quienes Gedeón persigue al otro lado del Jordán, el primero nombrado en la petición de pan en Sucot (<a href="judges-8.es.html#v8-5">Jueces 8:5</a>, ya en estas páginas). Gedeón los captura en Carcor y los mata (<a href="judges-8.es.html#v8-21">v. 21</a>). Los dos aparecen juntos como los reyes que Israel derrotó, y el libro no le da a Zebaj un discurso propio.""")
