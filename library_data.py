@@ -29832,6 +29832,7 @@ CHAPTER_ART = {
 # Never self-resolve to ART_SKIPPED and move on; tell him what was searched and
 # let him decide.
 ART_SKIPPED = {
+    "josh22": "Searched Wikimedia Commons for the altar of witness on the Jordan and for Reuben, Gad and Manasseh. The results were public-domain book scans and no scene from Joshua 22, so the page carries no picture.",
     "judg6": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg5": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
     "judg4": "No picture has been searched for or chosen for this chapter yet, so the page carries none.",
@@ -35433,6 +35434,10 @@ _j18_ency('golan',
 CHRON_CHAPTERS["josh20"] = dict(era="exodus",
     when="Jehovah tells Joshua to have the sons of Israel give the cities of refuge he spoke of by the hand of Moses, and the chapter says how they work: the man who kills by error flees to one of them, states his case to the elders at the gate, is taken in, and stays until he has stood before the congregation and until the death of the high priest, when he may go home. Three cities are named west of the Jordan (Kedesh in Naphtali, Shechem in Ephraim, Kiriath-arba, that is Hebron, in Judah) and three east of it (Bezer, Ramoth in Gilead, Golan), the same three Moses had set apart before he died.",
     clock="Like chapters 13-19, a legal/administrative chapter that gives no date or duration of its own: it follows the division of the land at Shiloh (19:51), and the book does not say how long afterwards. The three eastern cities were set apart by Moses before his death (Deuteronomy 4:41-43), so only the three western ones are newly named. Same contested early/late-date question as the rest of the conquest (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
+
+CHRON_CHAPTERS["josh22"] = dict(era="exodus",
+    when="Joshua sends the men of Reuben, Gad and half of Manasseh home across the Jordan, blessing them and telling them to share their spoil. On the far bank they build a great altar; Israel hears of it, gathers at Shiloh for war, and sends Phinehas and ten chiefs. The answer is that the altar is a copy and a witness, not a place of sacrifice, and the war is called off. The chapter ends with the altar named Witness.",
+    clock="Like chapters 13-21, a legal and narrative chapter with no date or duration of its own. It follows the rest Jehovah gave Israel (21:44) and comes before Joshua's farewell (23). The book does not say how long the tribes had been across the river, so the same early/late conquest question applies (c. 1406 BC on the early date this project foregrounds, c. 1230-1210 BC on the late).")
 
 CHRON_CHAPTERS["josh21"] = dict(era="exodus",
     when="The heads of the Levites come to Eleazar, Joshua and the tribal chiefs at Shiloh and ask for the cities and pasture-land Moses had promised them, and the lots are cast: thirteen cities for Aaron's sons, ten for the rest of Kohath, thirteen for Gershon, twelve for Merari, forty-eight in all. The Masoretic text drops the four cities of Reuben (verses 36-37), which the Chronicles parallel supplies. The chapter ends with the formula that the land was given and that not one word failed.",
