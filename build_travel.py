@@ -1191,24 +1191,16 @@ def _respond_nudge(p):
 
 
 def _x_respond_nudge(p):
-    """Per-post nudge for a real, published entry: X as the comment system
-    (blogkit.x_comment_url / x_search_url), replacing the form-based
-    _respond_nudge above (2026-09-09, Michael's call — see blogkit's own
-    docstring on the two functions this calls). The general write.html page
-    is unchanged and still nav-linked for anything not tied to one entry."""
+    """Per-post conversation on Agorai's Travel square (2026-10-12, replacing the X
+    buttons). The general write.html page is unchanged and still nav-linked."""
     full_url = f"{SITE_URL}{BASE}/{p['file']}"
-    comment = blogkit.x_comment_url(p["title"], full_url)
-    search = blogkit.x_search_url(full_url)
+    href = html.escape(blogkit.agorai_discuss_url(full_url, p["title"], "travel"), quote=True)
     return (
         '<div class="respond">'
         '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
-        'should have gone instead? Comment on X and it posts publicly, pinging me '
-        'directly — or see what other readers have already said.</p>'
+        'should have gone instead? Say so on Agorai, where other travelers can join in.</p>'
         '<div class="respond-actions">'
-        f'<a class="respond-btn respond-btn-primary" href="{comment}" target="_blank" '
-        'rel="noopener">💬 Comment on X</a>'
-        f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
-        'rel="noopener">🔍 See what others said</a>'
+        f'<a class="respond-btn respond-btn-primary" href="{href}">💬 Discuss on Agorai</a>'
         '</div></div>')
 
 

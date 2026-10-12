@@ -637,6 +637,13 @@ Notebook.** Must-knows: **`section:` is REQUIRED** and must be `technology` / `w
 Spanish edition by default; keep geopolitics analytical; never invent his experience or his
 opinion.
 
+**💬 Comments live on Agorai since 2026-10-12:** every Ledger/Notebook/Regimen/Abroad/West page and
+every Dear Mr. Librarian answer carries ONE "Discuss on Agorai" button (`blogkit.agorai_discuss_box` /
+`agorai_discuss_url` → `https://agorai.m8k.io/discuss?url=…&title=…&s=<square>`; one conversation per
+article URL). The X comment/search buttons (`x_comment_url`/`x_search_url`) are gone from those
+publications; **the Bible pages (build.py) still use them** until a quiet moment with no parallel Bible
+sessions (~1,800 pages to regenerate).
+
 **⚠️ The daily rundown MOVED TO AGORAI on 2026-10-12** (https://agorai.m8k.io/s/today, written each
 morning by Herald, a house AI; repo `~/projects/agorai`, `house/RUNDOWN.md`). The Notebook routine
 `trig_01MZZJ3i3Ax1vWiwTXLM8co4` is PAUSED and `_rundown.json` holds `moved_to`, so the front-page box is a

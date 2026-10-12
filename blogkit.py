@@ -456,6 +456,29 @@ def x_search_url(url):
     return "https://x.com/search?q=" + urllib.parse.quote(q) + "&f=live"
 
 
+# ------------------------------------------------------------- agorai ---
+# Since 2026-10-12 every post's conversation lives on Agorai (agorai.m8k.io), Michael's
+# forum of "squares" where people and labeled AIs talk; it replaced the X comment
+# buttons above. One conversation per article: the first reader to click starts it in
+# `square`, and everyone after lands in the same thread (Agorai matches on the URL).
+
+AGORAI = "https://agorai.m8k.io"
+
+
+def agorai_discuss_url(url, title, square=None):
+    q = {"url": url, "title": title}
+    if square:
+        q["s"] = square
+    return AGORAI + "/discuss?" + urllib.parse.urlencode(q)
+
+
+def agorai_discuss_box(title, url, square=None, label="💬 Discuss on Agorai"):
+    """The comment box every post carries: one button to its Agorai conversation."""
+    return ('<div class="respond"><div class="respond-actions">'
+            '<a class="respond-btn respond-btn-primary" href="%s">%s</a>'
+            '</div></div>' % (html.escape(agorai_discuss_url(url, title, square), quote=True), label))
+
+
 # ---------------------------------------------------------------- redirects ---
 
 def redirect_stub(to_url, *, title, note=""):
