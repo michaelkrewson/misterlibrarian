@@ -370,12 +370,11 @@ def _entry_hero(e):
 
 
 def _comment_box(title, url):
-    comment = blogkit.x_comment_url(title, url)
-    search = blogkit.x_search_url(url)
+    """Each answer's conversation lives on Agorai's Scripture square (2026-10-12, replacing X)."""
+    href = html.escape(blogkit.agorai_discuss_url(url, title, "scripture"), quote=True)
     return ('<div class="notebtns">'
-            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" rel="noopener">\U0001F4AC Comment on X</a>'
-            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" rel="noopener">\U0001F50D See what others said</a>'
-            '</div>' % (comment, search))
+            '<a class="respond-btn respond-btn-primary" href="%s">\U0001F4AC Discuss on Agorai</a>'
+            '</div>' % href)
 
 
 def _related_entries(e, pool, limit=4):

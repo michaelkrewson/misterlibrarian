@@ -727,18 +727,9 @@ def _render_default_card(path, lang="en"):
 
 
 def _comment_box(title, url, lang="en"):
-    """The site's whole comment system: X as the comment layer
-    (blogkit.x_comment_url / x_search_url) — two buttons, no pitch copy."""
-    u = UI[lang]
-    comment = blogkit.x_comment_url(title, url)
-    search = blogkit.x_search_url(url)
-    return ('<div class="respond"><div class="respond-actions">'
-            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
-            'rel="noopener">%s</a>'
-            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
-            'rel="noopener">%s</a>'
-            '</div></div>'
-            % (comment, u["comment"], search, u["seen"]))
+    """Every entry's conversation lives on Agorai's Health square (2026-10-12, replacing X)."""
+    label = "💬 Comentar en Agorai" if lang == "es" else "💬 Discuss on Agorai"
+    return blogkit.agorai_discuss_box(title, url, "health", label)
 
 
 def _ask_nudge(e):

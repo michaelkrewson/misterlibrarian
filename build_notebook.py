@@ -720,18 +720,13 @@ def _rdblock(label, lis_html):
     ) % (esc(label), esc(label), esc(label), esc(label), esc(label), lis_html)
 
 
-def _comment_box(title, url):
-    """The site's whole comment system: X as the comment layer
-    (blogkit.x_comment_url / x_search_url) — two buttons, no pitch copy."""
-    comment = blogkit.x_comment_url(title, url)
-    search = blogkit.x_search_url(url)
-    return ('<div class="respond"><div class="respond-actions">'
-            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
-            'rel="noopener">💬 Comment on X</a>'
-            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
-            'rel="noopener">🔍 See what others said</a>'
-            '</div></div>'
-            % (comment, search))
+# Which Agorai square a Notebook section's conversations belong in.
+_AGORAI_SQUARE = {"technology": "science", "world": "world", "culture": "culture"}
+
+
+def _comment_box(title, url, square=None):
+    """Every entry's conversation lives on Agorai (2026-10-12, replacing the X buttons)."""
+    return blogkit.agorai_discuss_box(title, url, square)
 
 
 # ──────────────────────────────────────────── entry-page recirculation ──
@@ -834,7 +829,7 @@ def build_entry_page(e, pool=()):
         "hero": _entry_hero(e),
         "body": e["body"],
         "tags": _tag_chips(e),
-        "nudge": _comment_box(e["title"], url),
+        "nudge": _comment_box(e["title"], url, _AGORAI_SQUARE.get(e.get("section"))),
         "related": _related_block(e, pool),
         "foot": _foot(hits_path),
     }

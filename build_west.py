@@ -480,18 +480,11 @@ def _prepare_plates(body):
 
 
 def _comment_box(c, url):
-    """X as the comment layer, published chapters only — a draft preview's URL
-    is unlisted and must never be pushed to X."""
+    """Each published chapter's conversation lives on Agorai (2026-10-12, replacing X);
+    a draft preview's URL is unlisted and gets no button."""
     if c["draft"]:
         return ""
-    comment = blogkit.x_comment_url(c["title"], url)
-    search = blogkit.x_search_url(url)
-    return ('<div class="respond"><div class="respond-actions">'
-            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
-            'rel="noopener">💬 Comment on X</a>'
-            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
-            'rel="noopener">🔍 See what others said</a>'
-            '</div></div>' % (comment, search))
+    return blogkit.agorai_discuss_box(c["title"], url, "culture")
 
 
 def _prevnext(c, live):

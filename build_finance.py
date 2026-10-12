@@ -1177,22 +1177,10 @@ def _render_default_card(path):
     return True
 
 
-def _comment_box(title, url):
-    """The site's whole comment system: X as the comment layer
-    (blogkit.x_comment_url / x_search_url) — two buttons, no pitch copy
-    (2026-09-09, Michael's call: drop the "Got a question?" paragraph that
-    used to sit above them). Shared by every entry AND every standing page
-    (the board/treasuries/crypto/bitcoin/humanity/money-worldwide pages) plus
-    the front page itself, so the whole publication carries the same box."""
-    comment = blogkit.x_comment_url(title, url)
-    search = blogkit.x_search_url(url)
-    return ('<div class="respond"><div class="respond-actions">'
-            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
-            'rel="noopener">💬 Comment on X</a>'
-            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
-            'rel="noopener">🔍 See what others said</a>'
-            '</div></div>'
-            % (comment, search))
+def _comment_box(title, url, square="markets"):
+    """Every page's conversation lives on Agorai (2026-10-12, replacing the X buttons):
+    one "Discuss on Agorai" button; Bitcoin-tagged entries go to the Bitcoin square."""
+    return blogkit.agorai_discuss_box(title, url, square)
 
 
 def _ask_nudge(e):
@@ -1209,7 +1197,8 @@ def _ask_nudge(e):
                 'it goes straight to my desk.</p></div>'
                 % urllib.parse.quote(e["title"]))
     full_url = "%s%s.html" % (BASE_URL, e["slug"])
-    return _comment_box(e["title"], full_url)
+    tags = " ".join(t.lower() for t in e.get("tags", ()))
+    return _comment_box(e["title"], full_url, "bitcoin" if ("bitcoin" in tags or "crypto" in tags) else "markets")
 
 
 # ──────────────────────────────────────────── entry-page recirculation ──
