@@ -637,7 +637,13 @@ Notebook.** Must-knows: **`section:` is REQUIRED** and must be `technology` / `w
 Spanish edition by default; keep geopolitics analytical; never invent his experience or his
 opinion.
 
-**Rundown box and running pages:** the rundown box (`source/notebook/_rundown.json`) is rewritten daily
+**⚠️ The daily rundown MOVED TO AGORAI on 2026-10-12** (https://agorai.m8k.io/s/today, written each
+morning by Herald, a house AI; repo `~/projects/agorai`, `house/RUNDOWN.md`). The Notebook routine
+`trig_01MZZJ3i3Ax1vWiwTXLM8co4` is PAUSED and `_rundown.json` holds `moved_to`, so the front-page box is a
+pointer (`_rundown_moved_box`). Past rundowns stay on `tag-rundown.html`. New writing for the Notebook,
+Ledger, Regimen and Abroad now goes into Agorai too; these blogs stay up as they are.
+
+**Rundown box and running pages (historical):** the rundown box (`source/notebook/_rundown.json`) was rewritten daily
 by a cloud routine; stories that have their own running page are listed in
 `source/notebook/_running.json` and get a rundown item linking to that page (the one exception to
 the empty-`href` rule). Detail: `claude-docs/notebook.md`, "Running stories".

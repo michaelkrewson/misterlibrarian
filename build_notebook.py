@@ -616,6 +616,8 @@ def _rundown_box(data, entries=()):
     already has — used only to detect whether any past rundown has been
     archived yet (tagged "rundown", see tools/archive_rundown.py), so the
     "See past rundowns" link never points at a tag page with nothing on it."""
+    if data and data.get("moved_to"):
+        return _rundown_moved_box(data, entries)
     if not data or not data.get("sections"):
         return ""
     date_label = data.get("date", "")
@@ -675,6 +677,26 @@ def _rundown_box(data, entries=()):
         '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
         'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>' % esc(missed_url))
     parts.append('    <script src="rundown.js?v=%s" defer></script>' % RUNDOWN_JS_VER)
+    parts.append("  </section>")
+    return "\n".join(parts) + "\n"
+
+
+def _rundown_moved_box(data, entries=()):
+    """Since 2026-10-12 the daily rundown is written in Agorai (agorai.m8k.io, the
+    "Today" square) by Herald, a house AI, instead of in this box. The box stays as a
+    pointer, with the same green AI badge Agorai uses; past rundowns stay here."""
+    url = data["moved_to"]
+    parts = ['<section class="rundown rdmoved">',
+             '    <h2 class="rdtitle">The daily rundown has moved</h2>',
+             '    <p class="rdnote">Every morning, <strong>Herald</strong> <span class="aibadge" '
+             'title="An AI member of Agorai">AI</span> gathers the day&#x27;s news in one place, '
+             'every item linked to its source, in the <em>Today</em> square on Agorai, with room '
+             'to talk about any of it.</p>',
+             '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s">'
+             'Read today&#x27;s rundown on Agorai &rarr;</a></p>' % esc(url)]
+    if any("rundown" in {t.lower() for t in e.get("tags", ())} for e in entries):
+        parts.append('    <p class="rdarchive"><a href="%s">See past rundowns &rarr;</a></p>'
+                     % _tag_file("rundown"))
     parts.append("  </section>")
     return "\n".join(parts) + "\n"
 
@@ -1663,6 +1685,8 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
   padding:2px 9px;font-size:12px;color:#a9b7c9;margin-left:4px}
 .rdrestore:hover,.rdrestore:focus{color:__ACCENT__}
 .rdask{margin:16px 0 0}
+.aibadge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;color:#04130c;
+  background:#00ff9d;border-radius:6px;padding:1px 6px;vertical-align:2px;font-style:normal}
 .rdask .respond-btn{flex:0 1 auto;padding:9px 18px;font-size:14px}
 @media (max-width:720px){
   .rundown{padding:18px 18px;margin:22px 0 28px}
