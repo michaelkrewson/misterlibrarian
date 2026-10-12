@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "The world",
       "items": [
         {
-          "text": "Houthi-claimed strikes on Riyadh's King Khalid International Airport on October 8 killed three Saudi citizens and damaged a Saudia aircraft on the ground, Saudi aviation authorities said, prompting Lufthansa to suspend its Riyadh flights through October 16.",
+          "text": "President Trump said Sunday that Russia and Ukraine had agreed to an \"energy ceasefire,\" but Ukraine's Zelensky said Russia had already violated it with a strike on a Kharkiv power plant, calling the announcement \"news to me.\"",
           "href": "",
-          "source_href": "https://www.khaleejtimes.com/world/gulf/3-saudi-citizens-saudia-captain-killed-riyadh-airport-attack-oct-8-2026",
+          "source_href": "https://www.cnn.com/2026/10/11/politics/trump-ukraine-russia-energy-ceasefire",
           "breaking": false
         },
         {
-          "text": "President Trump announced October 9 that Russia will supply more than 300,000 tons of diesel immediately, 500,000 tons in November and several million more tons after that to ease U.S. fuel prices ahead of the midterms, a move Ukraine's Zelensky called \"a weak decision by strong partners.\"",
+          "text": "A year after the Gaza ceasefire took effect, Al Jazeera reports Israeli forces have kept moving the buffer \"Yellow Line\" farther west, leaving nearly two-thirds of Gaza under Israeli military control or access restrictions.",
           "href": "",
-          "source_href": "https://www.wlrn.org/national-politics/2026-10-09/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
+          "source_href": "https://aljazeera.com/news/2026/10/12/maps-show-how-israels-yellow-line-keeps-squeezing-palestinians-in-gaza",
           "breaking": false
         }
       ]
@@ -24,15 +24,20 @@
       "label": "Business / macro & markets",
       "items": [
         {
-          "text": "Bank earnings season opens Tuesday, October 13 with JPMorgan Chase's Q3 report, where analysts expect EPS near $5.86 to $5.91 on roughly $51 billion in revenue, following Q2's $21.2 billion profit.",
+          "text": "Wall Street closed last week at record highs — the Dow at 51,654.95, the S&P 500 at 7,811.54 and the Nasdaq at 27,366.17 on Friday — with Monday's futures flat ahead of bank earnings season and lingering worries about an AI bubble and elevated Treasury yields.",
           "href": "",
-          "source_href": "https://www.marketpulse.com/markets/jpmorgan-q3-earnings-preview-can-strong-banking-momentum-continue/",
+          "source_href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-12-dow-sp-500-nasdaq-080321571.html",
           "breaking": false
-        },
+        }
+      ]
+    },
+    {
+      "label": "Bitcoin & crypto",
+      "items": [
         {
-          "text": "The Bureau of Labor Statistics releases September's Consumer Price Index on Wednesday, October 14 at 8:30 a.m. ET, with economists forecasting headline inflation ticking up to about 3.6-3.7% year-over-year from August's 3.4%.",
+          "text": "Bitcoin traded around $83,000 to $84,000 Monday, still well below the $126,210.50 all-time high it hit on October 6, 2025, with traders watching Wednesday's September inflation data.",
           "href": "",
-          "source_href": "https://admiralmarkets.com/analytics/traders-blog/us-cpi-preview-september-2026-forecasts-and-the-core-cpi-outlook",
+          "source_href": "https://fortune.com/article/price-of-bitcoin-10-12-2026",
           "breaking": false
         }
       ]
@@ -41,15 +46,15 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Cloudflare announced October 9 it is acquiring Deno, the JavaScript/TypeScript runtime Ryan Dahl co-created; the whole Deno team joins Cloudflare, Deno Deploy winds down over about six months, and the open-source runtime gets one more year of maintenance releases before development ends.",
+          "text": "Anthropic released Claude Haiku 5.5 on October 7, cutting short-prompt pricing to $0.10/$0.50 per million input/output tokens from Haiku 4.5's $1/$5 while reporting a jump to 72.4% on the OSWorld 2.1 computer-use benchmark, up from 15.7%.",
           "href": "",
-          "source_href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+          "source_href": "https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-with-lower-prices-and-eff-f698c663",
           "breaking": false
         },
         {
-          "text": "Microsoft unveiled Decision-1 on October 9, a 9-billion-parameter model built on Alibaba's open-weight Qwen3.5 to score yes/no, multiple-choice and rating decisions rather than generate open-ended text, which Microsoft says runs 35 times faster than GPT-6 Sol at matching latency.",
+          "text": "Google announced its Gemini 4 Argon flagship model on September 30, giving cybersecurity partners first access at introductory API pricing of $2 per million input tokens and $10 per million output tokens, with no public release date set yet.",
           "href": "",
-          "source_href": "https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/",
+          "source_href": "https://aiweekly.co/alerts/googles-gemini-4-argon-rolls-out-to-cyber-defenders-first",
           "breaking": false
         }
       ]
@@ -58,21 +63,26 @@
       "label": "Science",
       "items": [
         {
-          "text": "The 2026 Nobel Prize in Physiology or Medicine went October 5 to Karl Deisseroth, Peter Hegemann and Georg Nagel for discovering and developing optogenetics, the light-gated ion channels researchers use to switch neurons on and off with light.",
+          "text": "Underwater archaeologists recovered a bronze signet ring engraved with the Lighthouse of Alexandria from the sunken island of Antirhodos in Alexandria's Eastern Harbour — the first known seal ring depicting the lost wonder, Egypt's Supreme Council of Antiquities said.",
           "href": "",
-          "source_href": "https://www.nobelprize.org/prizes/medicine/2026/summary",
+          "source_href": "https://www.smithsonianmag.com/smart-news/this-one-of-a-kind-bronze-ring-offers-a-tantalizing-glimpse-at-the-lighthouse-of-alexandria-a-lost-wonder-of-the-ancient-world-180989661/",
+          "breaking": false
+        }
+      ]
+    },
+    {
+      "label": "Health & medicine",
+      "items": [
+        {
+          "text": "The FDA approved atezolizumab (Tecentriq) plus chemotherapy on October 8 for stage III colon cancer with deficient DNA mismatch repair, based on the ATOMIC trial's finding of a 50% reduction in recurrence or death risk among 711 adult patients.",
+          "href": "",
+          "source_href": "https://ascopost.com/news/october-2026/fda-approves-atezolizumab-in-combination-with-chemotherapy-for-stage-iii-dmmr-colon-cancer/",
           "breaking": false
         },
         {
-          "text": "The 2026 Nobel Prize in Physics went October 6 to Francis Halzen for his work on the IceCube Neutrino Observatory, a cubic kilometer of light detectors frozen into the Antarctic ice that led to the discovery of high-energy astrophysical neutrinos.",
+          "text": "A Vanderbilt-led study published October 8 in JAMA Otolaryngology found that genetic risk scores built from detailed hearing-test data on 16,000 BioVU biobank participants predicted hearing loss better than scores built from diagnostic billing codes alone.",
           "href": "",
-          "source_href": "https://www.nobelprize.org/prizes/physics/2026/summary",
-          "breaking": false
-        },
-        {
-          "text": "The 2026 Nobel Prize in Chemistry went October 7 to Henri Kagan and Kenso Soai, split equally, for their work on non-linear effects and autocatalysis in asymmetric organic synthesis, the chemistry behind why life builds its molecules in only one of two possible mirror-image forms.",
-          "href": "",
-          "source_href": "https://www.nobelprize.org/prizes/chemistry/2026/summary",
+          "source_href": "https://www.news-medical.net/news/20261008/Precise-phenotyping-improves-genetic-prediction-of-sensorineural-hearing-loss.aspx",
           "breaking": false
         }
       ]
@@ -81,9 +91,15 @@
       "label": "Arts & culture",
       "items": [
         {
-          "text": "The 2026 Nobel Prize in Literature went October 8 to Canadian poet and classicist Anne Carson, best known for the verse novel \"Autobiography of Red,\" with the Swedish Academy citing her inventive work's playful engagement with the classical tradition; the prize carries 12 million Swedish kronor and a December 10 Stockholm ceremony.",
+          "text": "Universal's horror release \"Other Mommy\" won the weekend box office with an estimated $27.5 million from 3,365 theaters, while Amazon MGM's \"Verity\" fell 64.5% in its second weekend to about $11.5 million for second place.",
           "href": "",
-          "source_href": "https://www.nobelprize.org/prizes/literature/2026/",
+          "source_href": "https://www.hollywoodreporter.com/movies/movie-news/other-mommy-box-office-social-reckoning-opening-1236726908/",
+          "breaking": false
+        },
+        {
+          "text": "Sony's \"The Social Reckoning\" bombed in its opening weekend, debuting in fifth place with just $5.5 million.",
+          "href": "",
+          "source_href": "https://www.hollywoodreporter.com/movies/movie-news/other-mommy-box-office-social-reckoning-opening-1236726908/",
           "breaking": false
         }
       ]
