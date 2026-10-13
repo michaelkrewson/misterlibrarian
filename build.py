@@ -55,6 +55,7 @@ AUDIO_JS_VER = _asset_ver("audio-reader.js")
 # audio-reader.js and gen_audio.py are left in place, ready to re-enable.
 ENABLE_LISTEN_BUTTON = False
 NOTES_JS_VER = _asset_ver("reader-notes.js")
+AGORAI_JS_VER = _asset_ver("agorai-verses.js")
 SHARE_JS_VER = _asset_ver("share.js")
 
 # Named "Mister Translation" 2026-10-10 (Michael's call): one name for the domain, the
@@ -1575,6 +1576,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
+<script src="agorai-verses.js?v={AGORAI_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
 {ES_FOOTER if lang == "es" else FOOTER}
@@ -2534,7 +2536,7 @@ def build_encyclopedia_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="encyclopedia.html">🏺 Encyclopedia</a></p>
 {_ency_card(e, permalink=False)}
-{_note_nudge(e['name'], f"ency/{e['slug']}.html")}"""
+{_note_nudge(e['name'], f"ency/{e['slug']}.html", square="scripture/religious-history")}"""
         out = page(f"{e['name']} — Encyclopedia — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(e['name'], e['desc']), url=f"ency/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
@@ -2770,7 +2772,7 @@ def build_dictionary_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="dictionary.html">📖 Dictionary</a></p>
 {_dict_card(slug, term, orig, translit, gloss, ref, permalink=False)}
-{_note_nudge(term, f"dict/{slug}.html")}"""
+{_note_nudge(term, f"dict/{slug}.html", square="scripture/translations")}"""
         out = page(f"{term} — Dictionary — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(term, gloss), url=f"dict/{slug}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.html"), "w", encoding="utf-8").write(out)
@@ -3402,7 +3404,7 @@ def build_atlas_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
 {_atlas_card(e, permalink=False)}
-{_note_nudge(e['name'], f"atlas/{e['slug']}.html")}"""
+{_note_nudge(e['name'], f"atlas/{e['slug']}.html", square="history/ancient")}"""
         out = page(f"{e['name']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(e['name'], e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
@@ -3425,7 +3427,7 @@ def build_route_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
 {render_route_panel(r)}
-{_note_nudge(r['title'], f"routes/{r['slug']}.html")}"""
+{_note_nudge(r['title'], f"routes/{r['slug']}.html", square="history/ancient")}"""
         out = page(f"{r['title']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(r['title'], r["blurb"]), url=f"routes/{r['slug']}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{r['slug']}.html"), "w", encoding="utf-8").write(out)
@@ -4214,34 +4216,35 @@ def inject_chapter_art(content, slug, lang="en"):
     return content[:i] + "\n" + block + content[i:]
 
 
-def _note_nudge(title, path, top=False):
-    """Two-button 'take a note' row — X as the note/comment layer for a
-    chapter/dictionary/encyclopedia/atlas/route page (blogkit.x_note_url /
-    x_search_url), added 2026-09-09 (Michael's call). No pitch copy and no
-    surrounding box (Michael's follow-up the same day — the paragraph+box
-    "would scare people off from actually taking a note"); just the two
-    links, styled as slim pills (.notebtns). "Public" is deliberately absent
-    from the button's own label for the same reason, even though the note
-    itself is public once posted. Still deliberately NOT reader-notes.js's
-    own "Add note" wording/icon — see blogkit.py's X-comment-system section
-    header for why the two coexist rather than read as the same feature.
+def _note_nudge(title, path, top=False, square="scripture", chapter=False):
+    """The public-discussion button for a chapter/dictionary/encyclopedia/atlas/route page:
+    one pill to the page's conversation on Agorai (agorai.m8k.io), Michael's forum. The first
+    reader to write starts it in `square`; everyone after lands in the same conversation.
+    Replaced the two X buttons ("Take a Note" / "View Notes by Others", 2026-09-09) on
+    2026-10-13 (Michael's call): the blogs and Dear Mr. Librarian already moved their
+    conversations to Agorai.
 
-    `path` is root-relative to SITE_URL (e.g. "genesis-1.html" or
-    "ency/pharaoh.html") — every caller already builds one of those.
+    On a chapter (`chapter=True`) the button also carries the page's Agorai address, square
+    and reference, which agorai-verses.js uses for verse-by-verse discussion: "💬 Discuss"
+    in each verse's ⋯ menu, a bar to stretch the selection over a few verses, and a 💬 count
+    on verses that already have a conversation. Still separate from reader-notes.js's
+    private highlights and notes, which never leave the reader's browser.
 
-    `top=True` (chapter pages only, via _insert_before_first_verse below)
-    swaps in the tight-margin .notebtns-top variant — this is the SAME slot
-    reader-notes.js's now-removed per-chapter "My notes" panel used to
-    occupy, right above verse 1."""
+    `path` is root-relative to SITE_URL (e.g. "genesis-1.html" or "ency/pharaoh.html").
+    `top=True` (chapter pages) uses the tight-margin .notebtns-top variant, right above
+    verse 1 (see _insert_before_first_verse)."""
     full_url = f"{SITE_URL}/{path}"
-    note = blogkit.x_note_url(title, full_url)
-    search = blogkit.x_search_url(full_url)
+    href = html.escape(blogkit.agorai_discuss_url(full_url, title, square), quote=True)
     cls = "notebtns notebtns-top" if top else "notebtns"
-    return (f'<div class="{cls}">'
-            f'<a class="respond-btn respond-btn-primary" href="{note}" target="_blank" '
-            'rel="noopener">✏️ Take a Note</a>'
-            f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
-            'rel="noopener">🔍 View Notes by Others</a>'
+    data = ""
+    if chapter:
+        data = (f' data-agorai-page="{html.escape(full_url, quote=True)}"'
+                f' data-agorai-square="{html.escape(square, quote=True)}"'
+                f' data-agorai-ref="{html.escape(title, quote=True)}"')
+    label = "💬 Discuss this chapter" if chapter else "💬 Discuss on Agorai"
+    return (f'<div class="{cls}"{data}>'
+            f'<a class="respond-btn respond-btn-primary" href="{href}" target="_blank" '
+            f'rel="noopener" data-agorai-chapter>{label}</a>'
             '</div>')
 
 
@@ -4271,7 +4274,8 @@ def build_chapter_pages(chapters):
         content = render_film_clips(content)
         content, has_es = inject_spanish(content, slug, es_panels)
         content = _insert_before_first_verse(
-            content, _note_nudge(f"{book} {num}", chapter_filename(book, num), top=True))
+            content, _note_nudge(f"{book} {num}", chapter_filename(book, num), top=True,
+                        square="scripture/greek" if _is_nt(book) else "scripture/hebrew", chapter=True))
         orig_lang = _source_lang(book, num)   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the

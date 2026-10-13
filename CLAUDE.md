@@ -1,5 +1,15 @@
 # MisterLibrarian — Claude instructions
 
+## 🧊 The blogs are FROZEN since 2026-10-13 — new writing goes on Agorai
+
+Michael's call (2026-10-13): **no new entries on the Ledger, Notebook, Regimen, Abroad or Dear Mr.
+Librarian.** Every published post was moved into Agorai (agorai.m8k.io) as an article by The
+Librarian, with its original date; new pieces are written there (`/write`, or the API as The
+Librarian). Don't build/publish a new entry here, don't edit a moved post here (edit it on Agorai),
+and don't run the phone publish flow. The blog sites stay up as they are until Agorai launches,
+when their URLs get redirected to the Agorai articles. **Still live here:** the Bible (Mister
+Translation), its library, Eight Miles West, and the Ledger's data boards (hourly refresh).
+
 ## ⚠️ Since 2026-10-10 the five blogs live on m8k.io subdomains, not on mistertranslation.com
 
 | Blog | Folder / builder | Live at | Worker |
@@ -393,16 +403,20 @@ footers, sibling links or the legal pages.
   even inside a version's verbatim quote — paraphrase or pick a quote that avoids it (ASV prints
   "Jehovah" natively, which is handy here).
 
-## Public notes (X) — chapter / dictionary / encyclopedia / atlas / route pages
+## Public discussion (Agorai) — chapter / dictionary / encyclopedia / atlas / route pages
 
-Every chapter page and dictionary/encyclopedia/atlas/route entry page carries a bare
-two-button row (`build.py`'s `_note_nudge()`, class `.notebtns`: **✏️ Take a Note** /
-**🔍 View Notes by Others**, built on `blogkit.py`'s X links). **No pitch paragraph, no box, no
-"Public" in the button label** (Michael's call). On chapter pages it sits ABOVE VERSE 1; the old
-private per-chapter notes panel (and its notebook backup UI) was deliberately removed —
-per-verse notes/highlights are unchanged. Not yet wired into the Spanish (`.es.html`)
-entry-page builders. Full detail: `claude-docs/bible_public_notes.md` — read it before
-touching that row or `reader-notes.js`'s panels.
+Since 2026-10-13 (Michael's call) every chapter page and dictionary/encyclopedia/atlas/route entry
+carries ONE pill to its conversation on Agorai (`build.py`'s `_note_nudge()`, class `.notebtns`,
+`blogkit.agorai_discuss_url`); the old X pair (✏️ Take a Note / 🔍 View Notes by Others) is gone.
+Squares: OT chapters → `scripture/hebrew`, NT → `scripture/greek`, dictionary →
+`scripture/translations`, encyclopedia → `scripture/religious-history`, atlas/routes →
+`history/ancient`, TOC/home → `scripture`. **Verse by verse:** on chapters the pill carries
+`data-agorai-page/-square/-ref`, and `agorai-verses.js` adds "💬 Discuss" to each verse's ⋯ menu
+(reader-notes.js), a bottom bar that stretches the selection over a run of verses (max 40), and a
+💬 count on verses already discussed (Agorai `/api/discussed`). Agorai keys a passage as
+`<chapter>.html#verse-N` / `#verses-N-M` and quotes the verses from the live page itself.
+reader-notes.js stays the PRIVATE margin (browser-only); don't move public features into it.
+Not yet on the Spanish (`.es.html`) pages. History of the X version: `claude-docs/bible_public_notes.md`.
 
 ## Per-chapter checklist
 

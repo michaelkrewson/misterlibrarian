@@ -370,6 +370,9 @@
         '<button class="v-mi" data-act="share">' + T.share + "</button>" +
         '<button class="v-mi" data-act="image">' + T.shareImage + "</button>" +
         '<button class="v-mi" data-act="copytext">' + T.copyVerse + "</button>" +
+        // Public discussion lives on Agorai (agorai-verses.js), not here: this file keeps
+        // everything in the reader's browser. Offered only where that script is active.
+        (window.mlAgorai ? '<button class="v-mi" data-act="discuss">💬 Discuss</button>' : "") +
       "</div>";
 
     document.body.appendChild(menu);
@@ -391,6 +394,9 @@
         if (act === "note") openEditor(vrs, verseId);
         else if (act === "share") shareVerse(vrs, verseId);
         else if (act === "image") shareImage(vrs, verseId);
+        else if (act === "discuss") {
+          document.dispatchEvent(new CustomEvent("ml:discuss", { detail: { verseId: verseId } }));
+        }
         else if (act === "copytext") {
           copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", " + T.brand + "\n" + urlFor(verseId),
             T.verseCopied);
