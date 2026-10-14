@@ -781,6 +781,27 @@ def _nav(active=""):
                         cls("money-worldwide")))
 
 
+AGORAI_URL = "https://agorai.m8k.io"
+# Which Agorai square each page belongs to (agorai's functions/_lib/boards.js lists the same boards
+# as "Live numbers" buttons on those squares). Anything else goes to Agorai's front page.
+AGORAI_SQUARE = {"bitcoin": "/s/bitcoin", "treasuries": "/s/bitcoin", "humanity": "/s/bitcoin",
+                 "crypto": "/s/bitcoin", "board": "/s/markets", "money-worldwide": "/s/markets",
+                 "crypto-screener": "/s/markets"}
+
+
+def _agorai_home(active=""):
+    return AGORAI_URL + AGORAI_SQUARE.get(active, "/")
+
+
+# Agorai links here with ?from=<the Agorai page> (its browser only tells other sites the bare
+# origin). If it's there, the Agorai mark goes straight back to that page. Only an Agorai path
+# is accepted, so the parameter can't turn the mark into a link anywhere else.
+AGORAI_BACK_JS = """<script>(function(){try{var f=new URLSearchParams(location.search).get("from");
+if(!f||f.charAt(0)!=="/"||f.charAt(1)==="/"||f.charAt(1)==="\\\\")return;var u=new URL(f,"%s");
+if(u.origin!=="%s")return;var a=document.querySelectorAll("a[data-agorai-back]");
+for(var i=0;i<a.length;i++)a[i].href=u.href;}catch(e){}})();</script>""" % (AGORAI_URL, AGORAI_URL)
+
+
 def _chrome(active=""):
     """Header used by every page in the publication.
 
@@ -822,9 +843,13 @@ def _chrome(active=""):
                 'aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" '
                 'stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" '
                 'stroke-linejoin="round"/></svg>')
-    hublink = ('<a class="hublink" href="%s/" aria-label="m8k — every publication">'
-               '%s<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s'
-               % (HUB_URL, "", crumbsep))
+    # Agorai's wordmark (2026-10-13, Michael's call): the Ledger's writing lives on Agorai now and
+    # these boards are what's left here, so the top-left mark leads back there — to the square the
+    # page belongs to, or to the exact page the reader came from (AGORAI_BACK_JS). The m8k mark
+    # moved to the footer (_foot).
+    hublink = ('<a class="hublink agorailink" href="%s" data-agorai-back aria-label="Back to Agorai">'
+               '<span class="agoraiwm">agor<span class="ai">ai</span></span></a>%s'
+               % (_agorai_home(active), crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
              % MARK_SVG.replace("__ACCENT__", ACCENT))
@@ -857,6 +882,11 @@ def _legal():
                PRIVACY_URL))
 
 
+# The m8k mark (moved down from the header 2026-10-13): m8k.io lists every publication.
+FOOT_M8K = ('<p class="foot-m8k"><a class="hublink" href="%s/" aria-label="m8k — every publication">'
+            '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a></p>' % HUB_URL)
+
+
 def _foot(hits_path=None):
     """`hits_path` (e.g. "/finance/board.html") gets its own live-fetched view
     count appended, same per-path GoatCounter counter every board already uses
@@ -878,8 +908,9 @@ def _foot(hits_path=None):
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · '
             '<a href="%s" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · %s · '
-            'nothing here is investment advice%s%s</footer>%s'
-            % (esc(SITE_NAME), SUBSTACK_SUBSCRIBE_URL, sibs, hits_bit, _legal(), _subscribe_modal()))
+            'nothing here is investment advice%s%s%s</footer>%s%s'
+            % (esc(SITE_NAME), SUBSTACK_SUBSCRIBE_URL, sibs, hits_bit, _legal(), FOOT_M8K,
+               _subscribe_modal(), AGORAI_BACK_JS))
 
 
 def _shell_hits_path(url):
@@ -2261,6 +2292,15 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 @keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
+/* Agorai wordmark (2026-10-13): leads back to Agorai, where the writing lives now. */
+.hublink .agoraiwm{font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
+  letter-spacing:-.015em;line-height:1;color:#e8eef7}
+.hublink .agoraiwm .ai{color:#ff6a3d}
+.hublink:hover .agoraiwm{text-decoration:none}
+footer .foot-m8k{margin:18px 0 0}
+footer .foot-m8k .hubwm.m8kwm{font-size:21px}
+footer .foot-m8k a:hover{text-decoration:none}
+@media (max-width:480px){.hublink .agoraiwm{font-size:23px}}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
    (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
