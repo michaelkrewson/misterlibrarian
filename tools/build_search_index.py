@@ -195,8 +195,15 @@ def _q(s):
     return "'" + s.replace("'", "''") + "'"
 
 
+# Publications whose rows another site writes into the same index. This script never compares,
+# updates or deletes them: Agorai keeps its own rows current (agorai functions/_lib/sitesearch.js),
+# and treating them as "gone" here would wipe Agorai out of m8k search on every build.
+FOREIGN_PUBS = ("agorai",)
+
+
 def remote_hashes():
-    out = _wrangler(["d1", "execute", DB, "--remote", "--json", "--command", "SELECT url, hash FROM docs"])
+    where = " AND ".join(f"pub != {_q(p)}" for p in FOREIGN_PUBS)
+    out = _wrangler(["d1", "execute", DB, "--remote", "--json", "--command", f"SELECT url, hash FROM docs WHERE {where}"])
     data = json.loads(out)
     rows = data[0]["results"] if data and "results" in data[0] else []
     return {r["url"]: r["hash"] for r in rows}
