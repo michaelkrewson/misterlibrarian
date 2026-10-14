@@ -2169,6 +2169,10 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     index_hits = _hits_widget("%s/index.html" % STATS_PREFIX, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
+    # Agorai launch, 2026-10-14: the entries moved there (each old entry URL 301s to its
+    # article, cf/static-site.js). The live boards stay on this site.
+    intro += ('  <p class="tag ftag" style="font-style:normal">The Librarian\'s articles now live on '
+              '<a href="https://agorai.m8k.io/u/TheLibrarian">Agorai</a>. The live boards stay here.</p>\n')
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=WRITING_BLURB, url=BASE_URL, active="home", ld=_ld_front(),

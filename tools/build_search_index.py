@@ -162,6 +162,8 @@ def collect():
             descr = re.sub(r"\s+", " ", html.unescape(p.descr)).strip()
             body = p.main_text()[:BODY_MAX]
             pub, kind, lang = _classify(host, path)
+            if pub in MOVED_TO_AGORAI or (pub == "ledger" and kind != "board" and path not in ("", "index.html")):
+                continue          # their entries are Agorai articles now; Agorai indexes those
             anchor = ""
             if kind == "chapter":
                 # Chapters label verses two ways: id="v3-16" (most) or id="v16" (~70 older
@@ -199,6 +201,9 @@ def _q(s):
 # updates or deletes them: Agorai keeps its own rows current (agorai functions/_lib/sitesearch.js),
 # and treating them as "gone" here would wipe Agorai out of m8k search on every build.
 FOREIGN_PUBS = ("agorai",)
+# Moved whole to Agorai at its launch (2026-10-14); the Ledger's entries moved too, but its
+# boards and pages stay here. Leaving them out makes the next build delete their old rows.
+MOVED_TO_AGORAI = ("notebook", "regimen", "abroad", "ask")
 
 
 def remote_hashes():
