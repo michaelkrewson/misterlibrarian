@@ -8,10 +8,13 @@
   "compatibility_date": "2026-10-01",
   "routes": [{ "pattern": "notebook.m8k.io", "custom_domain": true }],
   "workers_dev": false,
+  // Agorai launch (2026-10-14): which redirect map static-site.js uses.
+  "vars": { "BLOG": "notebook" },
   "assets": {
     "binding": "ASSETS",
     "directory": "../notebook",
     "html_handling": "none",
-    "not_found_handling": "none"
+    "not_found_handling": "none",
+    "run_worker_first": true
   }
 }

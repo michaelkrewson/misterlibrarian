@@ -10,6 +10,9 @@
   "routes": [
     { "pattern": "mistertranslation.com/finance", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/finance/*", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/ask", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/ask/*", "zone_name": "mistertranslation.com" },
+    { "pattern": "mistertranslation.com/ask.html", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/notebook", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/notebook/*", "zone_name": "mistertranslation.com" },
     { "pattern": "mistertranslation.com/health", "zone_name": "mistertranslation.com" },
