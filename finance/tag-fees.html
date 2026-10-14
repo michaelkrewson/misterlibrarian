@@ -80,6 +80,15 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 @keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
+/* Agorai wordmark (2026-10-13): leads back to Agorai, where the writing lives now. */
+.hublink .agoraiwm{font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
+  letter-spacing:-.015em;line-height:1;color:#e8eef7}
+.hublink .agoraiwm .ai{color:#ff6a3d}
+.hublink:hover .agoraiwm{text-decoration:none}
+footer .foot-m8k{margin:18px 0 0}
+footer .foot-m8k .hubwm.m8kwm{font-size:21px}
+footer .foot-m8k a:hover{text-decoration:none}
+@media (max-width:480px){.hublink .agoraiwm{font-size:23px}}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
    (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
@@ -591,7 +600,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </head>
 <body>
 <div class="wrap">
-  <header class="hsm"><div class="brandcrumb"><a class="hublink" href="https://m8k.io/" aria-label="m8k — every publication"><span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <header class="hsm"><div class="brandcrumb"><a class="hublink agorailink" href="https://agorai.m8k.io/" data-agorai-back aria-label="Back to Agorai"><span class="agoraiwm">agor<span class="ai">ai</span></span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
   <defs>
     <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
@@ -640,7 +649,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       var el = document.getElementById("hits-finance-tag-fees-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p><p class="foot-m8k"><a class="hublink" href="https://m8k.io/" aria-label="m8k — every publication"><span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a></p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
      aria-label="Subscribe to The Librarian's Ledger">
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
@@ -673,7 +682,10 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     if (e.key === 'Escape' && !modal.hidden) close();
   });
 })();
-</script>
+</script><script>(function(){try{var f=new URLSearchParams(location.search).get("from");
+if(!f||f.charAt(0)!=="/"||f.charAt(1)==="/"||f.charAt(1)==="\\")return;var u=new URL(f,"https://agorai.m8k.io");
+if(u.origin!=="https://agorai.m8k.io")return;var a=document.querySelectorAll("a[data-agorai-back]");
+for(var i=0;i<a.length;i++)a[i].href=u.href;}catch(e){}})();</script>
 </div>
 </body>
 </html>

@@ -82,6 +82,15 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 @keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
+/* Agorai wordmark (2026-10-13): leads back to Agorai, where the writing lives now. */
+.hublink .agoraiwm{font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
+  letter-spacing:-.015em;line-height:1;color:#e8eef7}
+.hublink .agoraiwm .ai{color:#ff6a3d}
+.hublink:hover .agoraiwm{text-decoration:none}
+footer .foot-m8k{margin:18px 0 0}
+footer .foot-m8k .hubwm.m8kwm{font-size:21px}
+footer .foot-m8k a:hover{text-decoration:none}
+@media (max-width:480px){.hublink .agoraiwm{font-size:23px}}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
    (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
@@ -593,7 +602,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </head>
 <body>
 <div class="wrap">
-  <header class="hsm"><div class="brandcrumb"><a class="hublink" href="https://m8k.io/" aria-label="m8k — every publication"><span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <header class="hsm"><div class="brandcrumb"><a class="hublink agorailink" href="https://agorai.m8k.io/" data-agorai-back aria-label="Back to Agorai"><span class="agoraiwm">agor<span class="ai">ai</span></span></a><svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
   <defs>
     <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
@@ -621,11 +630,11 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   
   <article class="entry">
     <h1 class="etitle">How Many Bitcoins Are There, Exactly?</h1>
-    <p class="edate"><span class="edate-text">AUGUST 8, 2026 <span class="live-stamp">· numbers refreshed 2026-10-14 01:44 UTC, straight from the chain</span></span><span class="share-widget"></span></p>
+    <p class="edate"><span class="edate-text">AUGUST 8, 2026 <span class="live-stamp">· numbers refreshed 2026-10-14 03:57 UTC, straight from the chain</span></span><span class="share-widget"></span></p>
     
 <p>This page rebuilds itself once an hour, straight from a live Bitcoin block height, so the
 number in the next sentence is never more than about sixty minutes old: as of block
-971,333, exactly 20,097,869 bitcoin exist. Not an estimate, not a number lifted off a
+971,346, exactly 20,097,909 bitcoin exist. Not an estimate, not a number lifted off a
 market-data vendor's dashboard: an exact count, derived from a rule written into the software the
 week it started running, reproducible by anyone with an internet connection in about the time it
 takes to open a calculator. This publication keeps a <a href="board.html">standing board of the
@@ -649,7 +658,7 @@ and has been since block zero — and do the arithmetic.</p>
 <figure>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img"
      aria-label="Bar showing Bitcoin's total possible supply: 95.70 percent, or
-     20,097,869 coins, already mined; the remaining coins, about 902,081, still to
+     20,097,909 coins, already mined; the remaining coins, about 902,041, still to
      be created">
   <rect width="900" height="340" fill="#0a0f1a"/>
   <text x="70" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="21"
@@ -657,7 +666,7 @@ and has been since block zero — and do the arithmetic.</p>
   <text x="70" y="88" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
         letter-spacing="0.12em" fill="#f7931a">ALREADY MINED</text>
   <text x="70" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="19"
-        font-weight="bold" fill="#e8dfd2">20,097,869 BTC</text>
+        font-weight="bold" fill="#e8dfd2">20,097,909 BTC</text>
   <rect x="70" y="126" width="760" height="60" rx="10" fill="#161f2e"/>
   <rect x="70" y="126" width="727.35" height="60" rx="10" fill="#f7931a" opacity="0.92"/>
   <rect x="70" y="126" width="760" height="60" rx="10" fill="none"
@@ -674,21 +683,21 @@ and has been since block zero — and do the arithmetic.</p>
   <text x="830" y="278" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif"
         font-size="12" letter-spacing="0.12em" fill="#94a3b8">STILL TO BE MINED</text>
   <text x="830" y="300" text-anchor="end" font-family="Georgia, 'Times New Roman', serif"
-        font-size="17" fill="#e8dfd2">902,081 BTC — over roughly the next 114 years</text>
+        font-size="17" fill="#e8dfd2">902,041 BTC — over roughly the next 114 years</text>
   <text x="70" y="326" font-family="Georgia, serif" font-size="14" fill="#94a3b8"
-        font-style="italic">As of block 971,333. That bar's right edge ticks a little
+        font-style="italic">As of block 971,346. That bar's right edge ticks a little
   further every ten minutes, forever slowing, never quite finishing.</text>
 </svg>
   <figcaption>95.70% of everything Bitcoin will ever produce already exists. The last
   sliver arrives slowly, and takes a very long time to finish.</figcaption>
 </figure>
 
-<p>Run that arithmetic at the current height and you get 20,097,869 BTC — 95.70% of
-everything Bitcoin will ever produce. What's left, about 902,081 coins, arrives at a
+<p>Run that arithmetic at the current height and you get 20,097,909 BTC — 95.70% of
+everything Bitcoin will ever produce. What's left, about 902,041 coins, arrives at a
 rate that keeps shrinking: right now a block pays 3.125 BTC, one gets mined roughly every
 ten minutes, so a little under 450 new bitcoin enter the world on an average day. That
 will drop to about 225 a day at the next halving, expected around block
-1,050,000 — roughly 78,667 blocks and 18 months
+1,050,000 — roughly 78,654 blocks and 18 months
 from where the chain stands right now.</p>
 
 <h2>The Number That Isn't Quite Twenty-One Million</h2>
@@ -817,7 +826,7 @@ holds, something like one bitcoin in eighteen that will ever exist has sat untou
 most of today's exchanges were founded.</p>
 
 <div class="verdict">
-<strong>The honest summary:</strong> 20,097,869 BTC exist as of block 971,333 — an
+<strong>The honest summary:</strong> 20,097,909 BTC exist as of block 971,346 — an
 exact figure, not an estimate, checkable against any public block explorer in under a minute, and
 recomputed on this very page every hour. The true limit those coins are climbing toward is
 20,999,949.9769, not the round 21 million usually quoted (that figure includes 50 coins from the
@@ -896,7 +905,7 @@ hour.</p>
       var el = document.getElementById("hits-finance-how-many-bitcoins-are-there-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p><p class="foot-m8k"><a class="hublink" href="https://m8k.io/" aria-label="m8k — every publication"><span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a></p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
      aria-label="Subscribe to The Librarian's Ledger">
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
@@ -929,7 +938,10 @@ hour.</p>
     if (e.key === 'Escape' && !modal.hidden) close();
   });
 })();
-</script>
+</script><script>(function(){try{var f=new URLSearchParams(location.search).get("from");
+if(!f||f.charAt(0)!=="/"||f.charAt(1)==="/"||f.charAt(1)==="\\")return;var u=new URL(f,"https://agorai.m8k.io");
+if(u.origin!=="https://agorai.m8k.io")return;var a=document.querySelectorAll("a[data-agorai-back]");
+for(var i=0;i<a.length;i++)a[i].href=u.href;}catch(e){}})();</script>
 </div>
 </body>
 </html>
