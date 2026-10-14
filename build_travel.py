@@ -486,12 +486,12 @@ def load_posts(include_drafts=False):
         # moment any entry links to Amazon (see _footer) — data, not prose. And
         # the opening entry's promise ("if that ever changes, it would say so
         # plainly where it happened") is a build check, not a memory.
-        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS["travel"])
+        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS.get("travel"))
         if blogkit.affiliate_note_missing(body):
             raise ValueError(
                 f"source/travel/{fn}: links to Amazon but never says 'affiliate' in its "
                 f"own text — a paid link says so where it happens")
-        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.has_amazon_link(body)
+        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.paid_amazon_link(body, blogkit.AMAZON_TAGS.get("travel"))
 
         is_draft = meta.get("draft", "").lower() in ("1", "true", "yes")
         if is_draft and not include_drafts:

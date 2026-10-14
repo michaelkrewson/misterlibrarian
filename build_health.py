@@ -295,8 +295,8 @@ def load_entries(include_drafts=False):
         # gets this publication's tracking ID + rel="sponsored" here, so an entry
         # never carries the tag by hand. The footer disclosure switches on the
         # moment any entry links to Amazon (see _legal) — data, not prose.
-        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS["health"])
-        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.has_amazon_link(body)
+        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS.get("health"))
+        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.paid_amazon_link(body, blogkit.AMAZON_TAGS.get("health"))
 
         m = re.match(r"(\d{4})-(\d{2})-(\d{2})-(.+?)(\.es)?\.html$", fn)
         if not m:
