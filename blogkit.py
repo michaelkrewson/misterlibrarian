@@ -526,11 +526,11 @@ a{{color:#5eb3d6}}
 # Associates report can say WHICH blog a click came from; the older
 # `thwoneme-20` was the account's single catch-all and is no longer used here.
 # The Notebook has no ID on purpose — nothing there mentions products.
-AMAZON_TAGS = {
-    "finance": "librarianledger-20",
-    "health": "librarianregimen-20",
-    "travel": "librarianabroad-20",
-}
+# SWITCHED OFF 2026-10-13 (Michael's call): the blogs are frozen and their posts now live on Agorai,
+# whose Amazon links carry the Ledger ID (agorai functions/_lib/format.js). An empty table builds
+# every Amazon link plain (no tag, no "sponsored") and drops the footer disclosure. To turn a blog
+# back on, put its ID back here.
+AMAZON_TAGS = {}
 
 # Amazon's own required wording (Operating Agreement §5), in the two languages
 # this domain publishes. Keep the sentence verbatim — it is the one line Amazon's
@@ -546,6 +546,11 @@ _HREF_RE = re.compile(r'href="([^"]*)"', re.I)
 _REL_RE = re.compile(r'\srel="[^"]*"', re.I)
 _AMAZON_HOST_RE = re.compile(r"^https?://(www\.)?amazon\.[a-z.]+/", re.I)
 _AMZN_SHORT_RE = re.compile(r"^https?://amzn\.to/", re.I)
+
+
+def paid_amazon_link(body_html, tag):
+    """An Amazon link that carries one of our tags: only then does the footer disclosure show."""
+    return bool(tag) and has_amazon_link(body_html)
 
 
 def has_amazon_link(body_html):
@@ -571,7 +576,8 @@ def tag_amazon_links(body_html, tag):
     (`https://www.amazon.com/dp/B0XXXXXXXX`) and never has to know the tag.
     `amzn.to` short links are left untouched: their tag is baked into the
     redirect and can't be rewritten — resolve one to its `/dp/` URL instead.
-    Any other `<a>` is returned byte-identical."""
+    Any other `<a>` is returned byte-identical. With no tag (affiliate links switched off), an
+    Amazon link is written plain: any `tag=` removed and `rel="nofollow noopener"`."""
     def fix(m):
         a = m.group(0)
         h = _HREF_RE.search(a)
@@ -581,11 +587,12 @@ def tag_amazon_links(body_html, tag):
         parts = urllib.parse.urlsplit(url)
         q = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
              if k != "tag"]
-        q.append(("tag", tag))
+        if tag:
+            q.append(("tag", tag))
         url = urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(q)))
         a = a[:h.start(1)] + html.escape(url, quote=True) + a[h.end(1):]
         a = _REL_RE.sub("", a)
-        return a[:-1] + ' rel="sponsored nofollow noopener">'
+        return a[:-1] + (' rel="sponsored nofollow noopener">' if tag else ' rel="nofollow noopener">')
     return _A_TAG_RE.sub(fix, body_html)
 
 
@@ -598,6 +605,8 @@ def affiliate_note_missing(body_html):
     check rather than a memory: an Amazon link with no sentence containing the
     word "affiliate" refuses the build. The footer disclosure is Amazon's
     requirement; this one is the site's own."""
+    if not AMAZON_TAGS:                       # nothing is paid while affiliate links are off
+        return False
     return has_amazon_link(body_html) and "affiliate" not in plain_text(body_html).lower()
 
 
