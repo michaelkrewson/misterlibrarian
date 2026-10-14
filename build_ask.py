@@ -318,13 +318,12 @@ def _chrome(active=""):
     # last of those is .askmain's own big brand, rendered on the row below). The
     # search box rides at the end of THIS row, not the brand row below -- see the
     # .askhead layout comment in ask/style.css for why (Option B of that mockup).
+    # The m8k mark left the front of this trail on 2026-10-13, as on the Bible pages (Michael's
+    # call); it now sits in the footer's link row instead (see _foot).
     crumb = ('<div class="askcrumb">'
-             '<a class="hublink" href="%s/" aria-label="m8k — every publication">'
-             '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s'
              '<a class="biblelink" href="%s">%s<span class="biblewm">Mister Translation</span></a>%s'
              '%s'
-             '</div>' % (HUB_URL, CRUMBSEP_SVG,
-                         BIBLE_URL, CRUMB_BIBLE_SVG, CRUMBSEP_SVG, search))
+             '</div>' % (BIBLE_URL, CRUMB_BIBLE_SVG, CRUMBSEP_SVG, search))
     main = ('<div class="askmain">'
             '<a class="brand" href="index.html">%s<span class="wm">Dear <span class="em">Mr.</span> <span class="em">Librarian</span></span></a>'
             '<nav class="nav">'
@@ -343,10 +342,12 @@ def _foot(hits_path=None):
     hits_bit = " · %s" % hitswidget if hitswidget else ""
     return ('<footer class="askfoot">'
             '<p><a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
-            '<a href="feed.xml">RSS</a> · <a href="%s">Mister Translation</a>%s</p>'
+            '<a href="feed.xml">RSS</a> · <a href="%s">Mister Translation</a> · '
+            '<a class="hublink foot-m8k" href="%s/" aria-label="m8k — every publication">'
+            '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>%s</p>'
             '<p class="legal">© %d mistertranslation.com. '
             '<a href="%s">Privacy policy</a>.</p>'
-            '</footer>' % (BIBLE_URL, hits_bit, year,
+            '</footer>' % (BIBLE_URL, HUB_URL, hits_bit, year,
                             "https://mistertranslation.com/privacy.html"))
 
 

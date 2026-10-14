@@ -1152,12 +1152,6 @@ def header(active="", lang="en"):
       </div>
     </details>
   </div>
-  <div class="hubcrumb">
-    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
-      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
-    </a>
-    {CRUMBSEP_SVG}
-  </div>
   <a class="brand" href="es.html">
     {SCROLL_SVG}
     <span class="brand-name">La Traducción <span class="lib">Mister</span></span>
@@ -1209,12 +1203,6 @@ def header(active="", lang="en"):
       </div>
     </details>
   </div>
-  <div class="hubcrumb">
-    <a class="hublink" href="{HUB_URL}/" aria-label="m8k — every publication">
-      <span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span>
-    </a>
-    {CRUMBSEP_SVG}
-  </div>
   <a class="brand" href="{HOME_URL}">
     {SCROLL_SVG}
     <span class="brand-name">Mister <span class="lib">Translation</span></span>
@@ -1265,21 +1253,19 @@ def header(active="", lang="en"):
 _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
                     if GOATCOUNTER_CODE else "")
 
-# The five sibling publications, linked from every Bible page's footer (since
-# 2026-09-19). They moved to their own m8k.io subdomains 2026-10-10, so these are
-# absolute URLs now (the old mistertranslation.com/<blog>/ paths only 301 there).
-_SIBLING_LINKS = ('<a href="https://ledger.m8k.io/">The Librarian\'s Ledger</a> · '
-                   '<a href="https://abroad.m8k.io/">The Librarian Abroad</a> · '
-                   '<a href="https://regimen.m8k.io/">The Librarian\'s Regimen</a> · '
-                   '<a href="https://notebook.m8k.io/">The Librarian\'s Notebook</a> · '
-                   '<a href="https://west.m8k.io/">Eight Miles West</a>')
+# The m8k mark (the 8 that tips into ∞) links to m8k.io, the page listing every publication.
+# It sat above the brand at the top of every page until 2026-10-13, when Michael moved it
+# here, into the footer's link row, in place of a plain "m8k.io" link. The same day the line
+# of sibling blogs (Ledger, Abroad, Regimen, Notebook, Eight Miles West) left the footer: the
+# blogs are frozen and their posts now live on Agorai.
+_FOOT_M8K = ('<a class="hublink foot-m8k" href="%s/" aria-label="m8k — every publication">'
+             '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>' % HUB_URL)
 
 FOOTER = f"""<footer class="site-foot">
   <p>Mister Translation — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacy</a></p>
-  <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · {_FOOT_M8K} · <a href="privacy.html">Privacy</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
@@ -1288,7 +1274,7 @@ ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="{HUB_URL}/">m8k.io</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · {_FOOT_M8K} · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
