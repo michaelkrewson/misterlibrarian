@@ -6658,6 +6658,70 @@ def check_chapter_art_coverage(chapters):
                            "right after the CHAPTER_ART dict)")
 
 
+
+# ---- "Not yet on these pages" → reader-facing wording (2026-10-14) ------------------------------
+# The source text tags references to chapters that aren't translated yet ("(Ezekiel 36:26, not yet
+# on these pages)"). check_forward_claims() relies on those tags in the SOURCE, so they stay there;
+# but on the published pages roughly 2,500 of them read like a site under construction, which is
+# a likely reason AdSense turned mistertranslation.com down (2026-10-14). So, on the built HTML only:
+# a tag that just labels a reference is dropped ("(Ezekiel 36:26)"), and one that is part of a
+# sentence is reworded ("Psalm 32 is yet to come in this translation"). Spanish likewise.
+# "now on these pages" (the shipped marker) is left alone.
+_PENDING_RULES = [
+    # English: a parenthesis that is only the tag
+    (re.compile(r" ?\((?:not|none|neither) yet on these pages\)"), ""),
+    # English: the tag after a reference: ", not yet on these pages)" and the like
+    (re.compile(r"[,;] (?:not|none|neither) yet on these pages(?=[);:,.\s<&])"), ""),
+    # English: inside a sentence
+    (re.compile(r"\b(?:not|none|neither) yet on these pages\b"), "yet to come in this translation"),
+    # English: the negative came earlier ("neither chapter is yet on these pages", "none of them yet…")
+    (re.compile(r"\byet on these pages\b"), "translated here yet"),
+    # Spanish: a parenthesis that is only the tag
+    (re.compile(r" ?\((?:todavía|aún)\s+no\s+en\s+(?:estas\s+páginas(?:\s+en\s+español)?|español|esta\s+estantería)\)"), ""),
+    # Spanish: the tag after a reference
+    (re.compile(r"[,;] (?:todavía|aún)\s+no\s+en\s+(?:estas\s+páginas(?:\s+en\s+español)?|español|esta\s+estantería)(?=[);:,.\s<&])"), ""),
+    # Spanish: inside a sentence
+    (re.compile(r"\b(?:todavía|aún)\s+no\s+(está|están)\s+en\s+estas\s+páginas(?:\s+en\s+español)?\b"), r"\1 aún por llegar en esta traducción"),
+    (re.compile(r"\b(?:todavía|aún)\s+no\s+en\s+estas\s+páginas(?:\s+en\s+español)?\b"), "aún por llegar en esta traducción"),
+    (re.compile(r"\b(?:todavía|aún)\s+no\s+en\s+español\b"), "aún sin versión en español"),
+]
+# The blogs are built by their own builders and now live on m8k.io; this pass is the Bible site's.
+_PENDING_SKIP_DIRS = {"finance", "health", "notebook", "travel", "west", "source", "tools", "research", "claude-docs", "img", "cf"}
+
+
+def tidy_pending_text(text):
+    for rx, rep in _PENDING_RULES:
+        text = rx.sub(rep, text)
+    return text
+
+
+def tidy_pending_notes():
+    """Rewrite the built Bible-site pages so pending-chapter tags read naturally (see above)."""
+    changed = 0
+    for root, dirs, files in os.walk(OUT):
+        rel = os.path.relpath(root, OUT)
+        top = rel.split(os.sep)[0]
+        if rel != "." and (top in _PENDING_SKIP_DIRS or top.startswith(".")):
+            dirs[:] = []
+            continue
+        if rel == ".":
+            dirs[:] = [d for d in dirs if d not in _PENDING_SKIP_DIRS and not d.startswith(".")]
+        for f in files:
+            if not f.endswith(".html"):
+                continue
+            path = os.path.join(root, f)
+            with open(path, encoding="utf-8") as fh:
+                s = fh.read()
+            if "yet on these pages" not in s and "estas páginas" not in s and "no en español" not in s and "esta estantería" not in s:
+                continue
+            t = tidy_pending_text(s)
+            if t != s:
+                with open(path, "w", encoding="utf-8") as fh:
+                    fh.write(t)
+                changed += 1
+    return changed
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -6701,6 +6765,8 @@ def main():
     n_search = build_search_index()
     build_search_page()
     n_feed = build_feed_page()
+    n_tidy = tidy_pending_notes()        # after every page is written, before the sitemap
+    print(f"pending-chapter notes reworded on {n_tidy} pages")
     n_sitemap = build_sitemap()
     check_canonicals()
     check_built_descriptions()
