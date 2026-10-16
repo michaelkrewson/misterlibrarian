@@ -333,3 +333,16 @@ and `tools/grk_search.py` apply it, and `--raw` still prints the archive exactly
 the manifest). Eight shipped Greek lines had the damage and were fixed with it: Mark 4:25, 9:50, 10:21, Luke 4:35,
 John 6:37, Acts 5:31, 15:3 and Philippians 4:23 (which printed the stray markup on the live page).
 When composing Greek lines from the archive, take them from `source_text.py` without `--raw`, not from the JSON.
+
+## Two build fixes found while shipping 2 Corinthians 11 (2026-10-15)
+
+- **Bare verse ids are now detected, not listed.** `verse_anchor()` assumed every chapter after the first uses
+  `v<ch>-<n>` ids, with a hand list of exceptions (`_BARE_VERSE_IDS`, then only Numbers 30). Thirty more chapters
+  use bare `v<n>` ids (1 Corinthians 2–16, 2 Corinthians 2–11, Judges 2–7), so every XREF chip and library citation
+  into them built a dead `#v11-24`-style anchor, and no chips rendered on those pages at all. `detect_bare_verse_ids()`
+  now reads the source markup at the start of `main()`. About 180 built links changed; a site-wide check afterwards
+  found 5 dead verse anchors left, all in older hand-written links.
+- **`tidy_pending_notes()` re-trims descriptions.** Its Spanish rewording ("aún por llegar en esta traducción") is
+  longer than the tag it replaces, so a description capped earlier could come out over 160 characters
+  (`dict/chanukkah.es.html`, 164), which failed `check_built_descriptions()` and skipped the verse-card manifest
+  step that runs after it. The tidy pass now re-trims any meta/og/twitter description it pushes over the limit.
