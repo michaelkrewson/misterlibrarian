@@ -530,6 +530,7 @@ CHAPTERS = [
     ("2cor8", "2 Corinthians", 8, 'Paul tells the Corinthians of the generosity of the Macedonian congregations, who gave beyond their means in their poverty. He urges them to finish the gift for the holy ones that they began a year before, points to the grace of the Lord who was rich and became poor, and sends Titus and two brothers to receive it, so that no one can fault the administration.'),
     ("2cor9", "2 Corinthians", 9, 'Paul writes about the ministry for the holy ones, says he boasted of the Corinthians to the Macedonians, and sends the brothers so that the gift is ready and not extorted. Whoever sows bountifully will reap bountifully, God loves a cheerful giver, and the gift overflows in thanksgiving to God.'),
     ("2cor10", "2 Corinthians", 10, 'Paul appeals by the meekness and gentleness of Christ, and answers those who say his letters are weighty but his presence weak. The weapons of his warfare tear down arguments and take every thought captive. He will not boast beyond the measure God gave him, and the one who boasts should boast in the Lord.'),
+    ("2cor11", "2 Corinthians", 11, 'Paul asks the Corinthians to put up with a little foolishness, and then plays the fool on purpose. He is jealous for them as a father who has promised his daughter to one husband, and afraid that, as the serpent deceived Eve, someone preaching another Jesus will lead them astray. He is not inferior to the &lsquo;super-apostles,&rsquo; he took no money from Corinth, and the rivals are false apostles, disguised as Satan disguises himself as an angel of light. &#9888; Then the fool&rsquo;s boast: Hebrews, Israelites, the seed of Abraham &mdash; so am I &mdash; and a list of what was done to him, five times forty lashes less one from the synagogues (the ceiling of Deuteronomy 25:3, counted on his back), three beatings with rods, a stoning, three shipwrecks, a night and a day in the deep, and eight kinds of danger. It ends not with a victory but with a retreat: let down the wall of Damascus in a basket while King Aretas&rsquo; ethnarch guarded the city.'),
     ("gal1", "Galatians", 1, "The angriest letter in the New Testament, and you can hear it in what is MISSING. Every other letter Paul wrote opens with a paragraph of thanks for its readers — even the exasperating Corinthians got one. This one says “grace to you and peace,” and then, where the thanks should stand, drops straight into “I am astonished that you are so quickly deserting…” A first-century reader would feel the cold the instant the courtesy did not come. Rival missionaries had followed Paul into his congregations in Galatia teaching that Gentile converts must be circumcised and keep the law of Moses to belong fully to God — and, evidently, that Paul&rsquo;s own authority was second-hand, borrowed from the apostles in Jerusalem. So the letter opens by denying that twice in its first six words (“an apostle — not FROM men nor THROUGH a man”), pronounces a curse on anyone preaching a different gospel — including himself, including “an angel from heaven,” and says it twice — and then spends the rest of the chapter proving its independence with a travelogue: after the revelation he did not go to Jerusalem, he went to Arabia; three years later he visited Cephas for a fortnight and met no other apostle but James the Lord&rsquo;s brother; the Judean congregations had never even seen his face. ⚠ And the chapter that begins in fury ends in something else entirely — the churches he had once tried to destroy repeating a rumour about him, “the one who once persecuted us is now announcing the faith he once tried to destroy,” and glorifying God because of it."),
     ("eph2", "Ephesians", 2, "Chapter 1 ended in doxology; chapter 2 opens with a diagnosis nobody softens. “You were DEAD” — not sick, not struggling, dead in trespasses and sins, following “the ruler of the authority of the air” — and then, four verses in, the hinge of the whole letter: “BUT GOD.” Two words the Greek grammar itself was straining toward, since the opening sentence never finds its own main verb until God supplies one. By grace you have been saved — the phrase interrupts its own sentence twice, muttered almost, as if Paul cannot get three clauses into the argument without saying it again. Then the letter turns to the Gentile readers directly: once called “the uncircumcision” by the so-called “circumcision,” without hope and without God in the world — but now brought near by blood. ⚠ “The dividing wall of the fence” is very likely not an abstraction: the Jerusalem temple's actual inner courts were fenced by a stone barrier, the soreg, posted with warning inscriptions threatening death to any Gentile who crossed it — two of those exact stones have been excavated and sit today in museums in Istanbul and Jerusalem. Paul nearly died over an accusation of breaking that precise rule (Acts 21:28). He tells this church that Christ has broken the wall down and made ONE NEW MAN where there were two — and closes on a building metaphor that will not hold still: “are being built together,” present tense, into a temple that is not finished yet."),
     ("eph1", "Ephesians", 1, "The calmest and most cosmic thing Paul wrote — and it may not be addressed where the title says. ⚠ The words “in Ephesus” are MISSING from the earliest manuscripts, leaving a blank where an address should stand; Marcion knew this letter as the one to Laodicea; and although Paul spent three years in Ephesus, longer than anywhere else, the letter contains not one personal greeting and twice says he has only HEARD of his readers&rsquo; faith. It reads exactly like a circular carried round a group of congregations with the destination left open. What follows the address is extraordinary: verses 3 to 14 are ONE SENTENCE in Greek — about two hundred words without a full stop, the longest in the New Testament — a man who set out to say “blessed be God” and could not find a place to stop. It runs from before the founding of the world to the gathering up of all things in heaven and earth under one head, and it is not an argument but a doxology that got away from him. Then he prays — not that anything be added, but that “the eyes of your heart” might be opened to see what is already theirs. And when he reaches for a measure of God&rsquo;s power he does not use a metaphor: he uses an event. How great is it? It is the power that raised Jesus from the dead and seated him above every rule and authority and power and lordship — which, in a city famous for magic and amulets and the great temple of Artemis, was the most practical sentence in the letter."),
@@ -659,6 +660,7 @@ TEASERS_ES = {
     "2cor8": "Pablo cuenta a los corintios la generosidad de las congregaciones de Macedonia, que dieron más de lo que podían en medio de su pobreza. Los anima a terminar el donativo para los santos que empezaron un año antes, señala la gracia del Señor que era rico y se hizo pobre, y envía a Tito y a dos hermanos para recibirlo, de modo que nadie pueda censurar la administración.",
     "2cor9": "Pablo escribe sobre el servicio para los santos, dice que se jactó de los corintios ante los macedonios, y envía a los hermanos para que el donativo esté listo y no se dé a la fuerza. El que siembra mucho cosechará mucho, Dios ama al que da con alegría, y el donativo abunda en acción de gracias a Dios.",
     "2cor10": "Pablo apela por la apacibilidad y la bondad de Cristo, y responde a quienes dicen que sus cartas son de peso pero su presencia débil. Las armas de su guerra derriban razonamientos y hacen prisionero todo pensamiento. No quiere presumir más allá de la medida que Dios le dio, y el que presume debe presumir de Jehová.",
+    "2cor11": "Pablo pide a los corintios que le soporten un poco de insensatez, y luego hace de insensato a propósito. Los cela como un padre que ha prometido a su hija a un solo esposo, y teme que, así como la serpiente engañó a Eva, alguien que predica a otro Jesús los desvíe. No es inferior a los «superapóstoles», no tomó dinero de Corinto, y los rivales son falsos apóstoles, disfrazados como Satanás se disfraza de ángel de luz. &#9888; Luego la jactancia del insensato: hebreos, israelitas, simiente de Abraham &mdash;yo también&mdash; y una lista de lo que le hicieron: cinco veces cuarenta azotes menos uno en las sinagogas (el máximo de Deuteronomio 25:3, contado en su espalda), tres palizas con varas, una pedrada, tres naufragios, una noche y un día en lo profundo y ocho clases de peligro. No termina con una victoria sino con una retirada: bajado en un canasto por la muralla de Damasco mientras el etnarca del rey Aretas vigilaba la ciudad.",
     "1cor1": "El libro más práctico del Nuevo Testamento abre con la primera división eclesial de la que hay registro —y no va de doctrina—. Va de qué predicador le caía mejor a cada cual. A Pablo, en Éfeso, le ha llegado noticia por medio de una mujer llamada Cloé y su casa de que la congregación que él fundó en Corinto se ha partido en bandos que corean consignas: «yo soy de Pablo», «yo de Apolos», «yo de Cefas», «yo de Cristo». Su respuesta no arbitra entre ellos. Se mete por debajo, hasta aquello por lo que compiten en realidad los cuatro bandos —posición, ingenio, un nombre que dejar caer— y les quita el suelo: «¿Ha sido repartido Cristo? ¿Acaso fue Pablo crucificado por vosotros?». Y luego el argumento que nunca ha dejado de ser difícil: el instrumento escogido por Dios es un provinciano ejecutado, lo cual para los griegos es una idiotez y para los judíos una obscenidad, y Dios parece haberlo escogido justamente porque no impresiona. «Mirad vuestra vocación, hermanos: no muchos sabios, no muchos poderosos, no muchos de noble cuna». ⚠ Por el camino el apóstol pierde la cuenta de a quién ha bautizado y lo dice por escrito; aparece un cofirmante que puede ser el hombre golpeado por causa de Pablo en Hechos 18; y todo el capítulo termina donde siempre iba: «El que se jacta, jáctese en Jehová».",
     "1cor2": "El cap\u00edtulo 2 es la confesi\u00f3n del predicador: lleg\u00f3 a Corinto sin el excedente de palabra o de sabidur\u00eda, \u00ab en debilidad, con temor y con mucho temblor\u00bb, y resolvi\u00f3 no saber entre ellos nada sino a Jesucristo crucificado. La sabidur\u00eda que s\u00ed habla no es un secreto para iniciados: es el plan que Dios dispuso antes de los siglos, que ninguno de los gobernantes de este siglo entendi\u00f3. \u26a0 El v. 1 tiene una cuesti\u00f3n de aparato, \u00abtestimonio\u00bb frente a \u00abmisterio\u00bb, y el cap\u00edtulo termina en la mente de Cristo, que la congregaci\u00f3n tiene y que nadie ense\u00f1\u00f3 al Se\u00f1or.",
     "1cor3": "Pablo dice que los corintios siguen siendo bebés en Cristo, alimentados con leche porque no podían tomar alimento sólido; los lemas de los bandos son los mismos, y también el remedio. «Yo planté, Apolos regó, pero Dios seguía haciendo crecer». La congregación es campo de Dios, edificio de Dios y templo de Dios, donde habita el Espíritu. ⚠ La obra que sobrevive al fuego recibe recompensa; la que arde se pierde, aunque el constructor se salva, como por fuego. El apóstol no dice cuál fue su propia obra.",
@@ -1627,6 +1629,21 @@ def verse_anchor(book, ch, v):
 # Chapters past the first whose source markup also uses bare vN ids (found by a
 # site-wide link check, 2026-10-10: Numbers 30).
 _BARE_VERSE_IDS = {("Numbers", 30)}
+
+
+def detect_bare_verse_ids(chapters):
+    """Add every chapter past the first whose source markup uses bare vN ids.
+
+    The hand list above missed 30 more (1 Corinthians 2-16, 2 Corinthians 2-11,
+    Judges 2-7, found 2026-10-15 when 2 Corinthians 11's cross-reference chips
+    pointed at #v11-24 on a page whose ids are #v24), so read the markup instead."""
+    meta = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
+    for slug, body in chapters.items():
+        book, num = meta.get(slug, (None, None))
+        if not book or num == 1 or book == "Lamentations":
+            continue
+        if 'id="v1"' in body and f'id="v{num}-1"' not in body:
+            _BARE_VERSE_IDS.add((book, num))
 
 
 def verse_url(book, ch, v):
@@ -6689,10 +6706,22 @@ _PENDING_RULES = [
 _PENDING_SKIP_DIRS = {"finance", "health", "notebook", "travel", "west", "source", "tools", "research", "claude-docs", "img", "cf"}
 
 
+_DESC_META_RE = re.compile(r'(<meta (?:name="description"|property="og:description"|name="twitter:description") content=")([^"]*)(")')
+
+
+def _retrim_desc_meta(m):
+    # The Spanish rewording is longer than the tag it replaces, so a description that
+    # was capped before this pass can come out over the limit (dict/chanukkah.es did).
+    c = html.unescape(m.group(2))
+    if len(c) <= 160:
+        return m.group(0)
+    return m.group(1) + html.escape(_trim_desc(c), quote=True) + m.group(3)
+
+
 def tidy_pending_text(text):
     for rx, rep in _PENDING_RULES:
         text = rx.sub(rep, text)
-    return text
+    return _DESC_META_RE.sub(_retrim_desc_meta, text)
 
 
 def tidy_pending_notes():
@@ -6727,6 +6756,7 @@ def main():
     ap.add_argument("--source", default=DEFAULT_SOURCE)
     args = ap.parse_args()
     chapters = extract_source(args.source)
+    detect_bare_verse_ids(chapters)
     check_shelf_density(chapters)
     check_library_dupes()
     check_library_parity()
