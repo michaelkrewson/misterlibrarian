@@ -34699,7 +34699,7 @@ DICTIONARY.extend([
   '''TO PUT IN ORDER, MAKE READY, MEND &mdash; the prefix <em>kata-</em> with a root meaning &lsquo;fitted&rsquo; (reported, not checked in a lexicon). &#9888; The verb and its nouns stand in sixteen verses of the New Testament (searched; two have the noun, 2 Corinthians 13:9 and Ephesians 4:12). It is said of mending nets (<a href="matthew-4.html#v4-21">Matthew 4:21</a>, <a href="mark-1.html#v19">Mark 1:19</a>), of a student who is fully trained (<a href="luke-6.html#v6-40">Luke 6:40</a>), of praise prepared out of the mouth of infants (<a href="matthew-21.html#v21-16">Matthew 21:16</a>) and of the worlds set in order by God&rsquo;s word (<a href="hebrews-11.html#v11-3">Hebrews 11:3</a>). In <a href="romans-9.html#v9-22">Romans 9:22</a> the perfect participle <em>katērtismena</em>, &lsquo;made ready,&rsquo; has an ending that is the same for the middle and the passive, so it can mean made ready by someone or having made oneself ready; the verb for the vessels of mercy in verse 23 is a different one, <a href="dictionary.html#proetoimazo">proetoimazō</a>.''',
   ('Matthew', 4, 21)),
  ('euchomai', 'euchomai', 'εὔχομαι', 'eúchomai',
-  '''TO PRAY, TO WISH &mdash; the verb stands in seven verses of the New Testament (searched): <a href="acts-26.html#v26-29">Acts 26:29</a> (&lsquo;I would pray to God&rsquo;), <a href="acts-27.html#v27-29">27:29</a> (&lsquo;they were praying for day to come&rsquo;), <a href="romans-9.html#v9-3">Romans 9:3</a>, and 2 Corinthians 13:7 and 13:9 and James 5:16 (these three not yet on these pages), and <a href="3-john-1.html#v2">3 John 2</a>. &#9888; It means &lsquo;pray&rsquo; and &lsquo;wish&rsquo; with no line between them. <em>Proseuchomai</em>, the common verb for praying, is another word and is not counted here. In Romans 9:3 the imperfect without <em>an</em> (<em>ēuchomēn</em>) leaves open whether Paul once prayed it, prays it now, or would pray it if praying it could help; this library prints &lsquo;I could pray.&rsquo;''',
+  '''TO PRAY, TO WISH &mdash; the verb stands in seven verses of the New Testament (searched): <a href="acts-26.html#v26-29">Acts 26:29</a> (&lsquo;I would pray to God&rsquo;), <a href="acts-27.html#v27-29">27:29</a> (&lsquo;they were praying for day to come&rsquo;), <a href="romans-9.html#v9-3">Romans 9:3</a>, and <a href="2-corinthians-13.html#v7">2 Corinthians 13:7</a> and <a href="2-corinthians-13.html#v9">13:9</a> and James 5:16 (not yet on these pages), and <a href="3-john-1.html#v2">3 John 2</a>. &#9888; It means &lsquo;pray&rsquo; and &lsquo;wish&rsquo; with no line between them. <em>Proseuchomai</em>, the common verb for praying, is another word and is not counted here. In Romans 9:3 the imperfect without <em>an</em> (<em>ēuchomēn</em>) leaves open whether Paul once prayed it, prays it now, or would pray it if praying it could help; this library prints &lsquo;I could pray.&rsquo;''',
   ('Acts', 26, 29)),
  ('phthano', 'phthánō', 'φθάνω', 'phthánō',
   '''TO ARRIVE, COME UPON, REACH &mdash; it stands in eight verses of the New Testament (searched): <a href="matthew-12.html#v12-28">Matthew 12:28</a> and <a href="luke-11.html#v11-20">Luke 11:20</a> (the kingdom of God &lsquo;has come upon you&rsquo;), Matthew 17:25 (<em>proephthasen</em>, the compound), <a href="romans-9.html#v9-31">Romans 9:31</a>, and 2 Corinthians 10:14, Philippians 3:16, 1 Thessalonians 2:16 and 4:15 (these four not yet on these pages). &#9888; In Romans 9:31 it is the word for the finish of a race, and Israel is said not to have reached it, after the nations in verse 30 had &lsquo;laid hold of&rsquo; (<em>katalambanō</em>) righteousness.''',
@@ -34730,7 +34730,7 @@ DICTIONARY_ES.update({
  'katartizo': ('katartízō',
   '''PONER EN ORDEN, DEJAR LISTO, REMENDAR &mdash; el prefijo <em>kata-</em> con una raíz que significa «ajustado» (referido, no comprobado en un léxico). &#9888; El verbo y sus sustantivos están en dieciséis versículos del Nuevo Testamento (buscado; dos tienen el sustantivo, 2 Corintios 13:9 y Efesios 4:12). Se dice de remendar redes (<a href="matthew-4.es.html#v4-21">Mateo 4:21</a>, <a href="mark-1.es.html#v19">Marcos 1:19</a>), de un discípulo bien instruido (<a href="luke-6.es.html#v6-40">Lucas 6:40</a>), de la alabanza preparada de la boca de los pequeñuelos (<a href="matthew-21.es.html#v21-16">Mateo 21:16</a>) y de los mundos puestos en orden por la palabra de Dios (<a href="hebrews-11.es.html#v11-3">Hebreos 11:3</a>). En <a href="romans-9.es.html#v9-22">Romanos 9:22</a> el participio perfecto <em>katērtismena</em>, «dispuestos», tiene una terminación que es la misma para el medio y el pasivo, de modo que puede significar dispuestos por alguien o habiéndose dispuesto a sí mismos; el verbo para los vasos de misericordia en el versículo 23 es otro, <a href="diccionario.html#proetoimazo">proetoimázō</a>.'''),
  'euchomai': ('eúchomai',
-  '''ROGAR, DESEAR &mdash; el verbo está en siete versículos del Nuevo Testamento (buscado): <a href="acts-26.es.html#v26-29">Hechos 26:29</a> («Rogaría a Dios»), <a href="acts-27.es.html#v27-29">27:29</a> («rogaban que amaneciera»), <a href="romans-9.es.html#v9-3">Romanos 9:3</a>, y 2 Corintios 13:7 y 13:9 y Santiago 5:16 (estos tres todavía no en estas páginas), y <a href="3-john-1.es.html#v2">3 Juan 2</a>. &#9888; Significa «rogar» y «desear» sin línea entre las dos. <em>Proseúchomai</em>, el verbo común para orar, es otra palabra y no se cuenta aquí. En Romanos 9:3 el imperfecto sin <em>an</em> (<em>ēuchómēn</em>) deja abierto si Pablo lo pidió una vez, lo pide ahora, o lo pediría si pedirlo pudiera ayudar; esta biblioteca imprime «podría rogar».'''),
+  '''ROGAR, DESEAR &mdash; el verbo está en siete versículos del Nuevo Testamento (buscado): <a href="acts-26.es.html#v26-29">Hechos 26:29</a> («Rogaría a Dios»), <a href="acts-27.es.html#v27-29">27:29</a> («rogaban que amaneciera»), <a href="romans-9.es.html#v9-3">Romanos 9:3</a>, y <a href="2-corinthians-13.es.html#v7">2 Corintios 13:7</a> y <a href="2-corinthians-13.es.html#v9">13:9</a> y Santiago 5:16 (todavía no en estas páginas), y <a href="3-john-1.es.html#v2">3 Juan 2</a>. &#9888; Significa «rogar» y «desear» sin línea entre las dos. <em>Proseúchomai</em>, el verbo común para orar, es otra palabra y no se cuenta aquí. En Romanos 9:3 el imperfecto sin <em>an</em> (<em>ēuchómēn</em>) deja abierto si Pablo lo pidió una vez, lo pide ahora, o lo pediría si pedirlo pudiera ayudar; esta biblioteca imprime «podría rogar».'''),
  'phthano': ('phthánō',
   '''LLEGAR, ALCANZAR &mdash; está en ocho versículos del Nuevo Testamento (buscado): <a href="matthew-12.es.html#v12-28">Mateo 12:28</a> y <a href="luke-11.es.html#v11-20">Lucas 11:20</a> (el reino de Dios «ha llegado a ustedes»), Mateo 17:25 (<em>proéphthasen</em>, el compuesto), <a href="romans-9.es.html#v9-31">Romanos 9:31</a>, y 2 Corintios 10:14, Filipenses 3:16, 1 Tesalonicenses 2:16 y 4:15 (estos cuatro todavía no en estas páginas). &#9888; En Romanos 9:31 es la palabra para la meta de una carrera, y se dice que Israel no la alcanzó, después de que las naciones, en el versículo 30, «alcanzaron» (<em>katalambánō</em>) la justicia.'''),
  'proetoimazo': ('proetoimázō',
@@ -36774,3 +36774,192 @@ CHAPTER_ART["isa7"] = [dict(
 CHRON_CHAPTERS["isa7"] = dict(era="monarchy",
     when="Rezin of Aram and Pekah of Israel march on Jerusalem to replace Ahaz with a king of their own. Isaiah meets Ahaz at the conduit of the upper pool with his son Shear-jashub and a message not to fear; offered any sign he likes, Ahaz refuses, and is given the sign of Immanuel, a child whose infancy will outlast both enemy kings. Then the warning: the Assyria Ahaz is about to pay for will shave the land and leave it to briers and thorns.",
     clock="c. 734&ndash;733 BC, the Syro-Ephraimite war in the reign of Ahaz (2 Kings 16:5). The sign&rsquo;s own clock is a child&rsquo;s infancy (7:16), and on the usual dates it ran: Damascus fell to Tiglath-pileser III in 732 BC and Samaria in 722. The &lsquo;sixty-five years&rsquo; of 7:8 has no agreed date.")
+
+
+# ---- 2 Corinthians 13 -------------------------------------------------------
+DICTIONARY.append(("kathairesis", "kathairesis", "καθαίρεσις", "kathairesis",
+    "TEARING DOWN, DEMOLITION &mdash; from <em>kathaireō</em>, to take down. &#9888; It stands in three verses of the New "
+    "Testament, and all three are in 2 Corinthians: &lsquo;tearing down strongholds&rsquo; at "
+    "<a href=\"2-corinthians-10.html#v4\">10:4</a>; the authority the Lord gave &lsquo;for building you up and not for tearing "
+    "you down&rsquo; at <a href=\"2-corinthians-10.html#v8\">10:8</a>; and the same words, without the &lsquo;you,&rsquo; at "
+    "<a href=\"2-corinthians-13.html#v10\">13:10</a>, &lsquo;for building up and not for tearing down.&rsquo; In the last two its "
+    "opposite is <a href=\"dictionary.html#oikodome\"><em>oikodomē</em></a>, building up. At 13:10 the KJV reads &lsquo;not to "
+    "destruction,&rsquo; the ASV &lsquo;not for casting down,&rsquo; the NWT 1984 &lsquo;not to tear down.&rsquo;",
+    ("2 Corinthians", 10, 4)))
+DICTIONARY_ES["kathairesis"] = ("kathairesis",
+    "DERRIBAR, DEMOLICIÓN &mdash; de <em>kathaireō</em>, bajar, derribar. &#9888; Está en tres versículos del Nuevo Testamento, "
+    "y los tres están en 2 Corintios: «derrumbar fortalezas» en <a href=\"2-corinthians-10.es.html#v4\">10:4</a>; la autoridad "
+    "que el Señor dio «para edificarlos, y no para derribarlos» en <a href=\"2-corinthians-10.es.html#v8\">10:8</a>; y las "
+    "mismas palabras, sin el «los», en <a href=\"2-corinthians-13.es.html#v10\">13:10</a>, «para edificar y no para derribar». "
+    "En los dos últimos su opuesto es <a href=\"diccionario.html#oikodome\"><em>oikodomē</em></a>, edificar. En 13:10 la RV60 "
+    "dice «y no para destrucción»; la TNM 1987, «y no para demoler».")
+
+DICTIONARY.append(("eireneuo", "eirēneuō", "εἰρηνεύω", "eirēneuō",
+    "TO BE AT PEACE, TO KEEP THE PEACE &mdash; the verb of <em>eirēnē</em>, peace. &#9888; It stands in four verses of the New "
+    "Testament: <a href=\"mark-9.html#v9-50\">Mark 9:50</a>, &lsquo;be at peace with one another&rsquo;; "
+    "<a href=\"romans-12.html#v12-18\">Romans 12:18</a>, &lsquo;as far as it depends on you, be at peace with all people&rsquo;; "
+    "<a href=\"2-corinthians-13.html#v11\">2 Corinthians 13:11</a>, the last of five commands before &lsquo;the God of love and "
+    "peace will be with you&rsquo;; and 1 Thessalonians 5:13 (not yet on these pages). At 2 Corinthians 13:11 the KJV reads "
+    "&lsquo;live in peace,&rsquo; the NWT 1984 &lsquo;to live peaceably.&rsquo;",
+    ("Mark", 9, 50)))
+DICTIONARY_ES["eireneuo"] = ("eirēneuō",
+    "ESTAR EN PAZ, VIVIR EN PAZ &mdash; el verbo de <em>eirēnē</em>, paz. &#9888; Está en cuatro versículos del Nuevo "
+    "Testamento: <a href=\"mark-9.es.html#v9-50\">Marcos 9:50</a>, «tengan paz los unos con los otros»; "
+    "<a href=\"romans-12.es.html#v12-18\">Romanos 12:18</a>, «en cuanto dependa de ustedes, vivan en paz con todos los "
+    "hombres»; <a href=\"2-corinthians-13.es.html#v11\">2 Corintios 13:11</a>, el último de cinco mandatos antes de «el Dios de "
+    "amor y de paz estará con ustedes»; y 1 Tesalonicenses 5:13 (todavía no en estas páginas). En 2 Corintios 13:11 la RV60 dice "
+    "«vivid en paz»; la TNM 1987, «viviendo pacíficamente».")
+
+DICTIONARY.append(("proamartano", "proamartanō", "προαμαρτάνω", "proamartanō",
+    "TO SIN BEFORE &mdash; <em>pro-</em>, before, and <em>hamartanō</em>, to sin. &#9888; It stands in two verses of the New "
+    "Testament, both in 2 Corinthians and both about the same people: at <a href=\"2-corinthians-12.html#v21\">12:21</a> Paul "
+    "fears he will mourn over &lsquo;many of those who sinned before and have not repented,&rsquo; and at "
+    "<a href=\"2-corinthians-13.html#v2\">13:2</a> he warns &lsquo;those who sinned before and all the rest&rsquo; that if he "
+    "comes again he will not spare. At 13:2 it follows two more words with <em>pro-</em>: &lsquo;I said it before, and I say it "
+    "beforehand.&rsquo; At 13:2 the KJV reads &lsquo;them which heretofore have sinned,&rsquo; the NWT 1984 &lsquo;those who have "
+    "sinned before.&rsquo;",
+    ("2 Corinthians", 12, 21)))
+DICTIONARY_ES["proamartano"] = ("proamartanō",
+    "PECAR ANTES &mdash; <em>pro-</em>, antes, y <em>hamartanō</em>, pecar. &#9888; Está en dos versículos del Nuevo Testamento, "
+    "los dos en 2 Corintios y los dos sobre las mismas personas: en <a href=\"2-corinthians-12.es.html#v21\">12:21</a> Pablo "
+    "teme tener que llorar «por muchos de los que pecaron antes y no se han arrepentido», y en "
+    "<a href=\"2-corinthians-13.es.html#v2\">13:2</a> advierte «a los que pecaron antes y a todos los demás» que, si vuelve, no "
+    "será indulgente. En 13:2 sigue a otras dos palabras con <em>pro-</em>: «Lo dije antes, y lo digo de antemano». En 13:2 la "
+    "RV60 dice «a los que antes pecaron»; la TNM 1987, «a los que han pecado antes».")
+
+
+def _2cor13_edit(entries, slug, old, new):
+    """Replace text in an existing DICTIONARY entry's definition (index 4), EN list of tuples/lists."""
+    for i, e in enumerate(entries):
+        if e[0] == slug:
+            assert old in e[4], (slug, old)
+            e = list(e)
+            e[4] = e[4].replace(old, new)
+            entries[i] = tuple(e) if not isinstance(entries[i], list) else e
+            return
+    raise KeyError(slug)
+
+
+def _2cor13_edit_es(slug, old, new):
+    name, desc = DICTIONARY_ES[slug]
+    assert old in desc, (slug, old)
+    DICTIONARY_ES[slug] = (name, desc.replace(old, new))
+
+
+_2cor13_edit(DICTIONARY, "adokimos",
+    "Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself.",
+    "Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself. &#9888; "
+    "It stands in eight verses of the New Testament, and three of them are in <a href=\"2-corinthians-13.html#v5\">2 Corinthians "
+    "13:5</a>&ndash;7, where Paul tells the Corinthians to test themselves &lsquo;unless you are unapproved&rsquo; and sets it "
+    "against <em>dokimos</em>, &lsquo;approved&rsquo; (13:7). At <a href=\"titus-1.html#v16\">Titus 1:16</a> this translation "
+    "prints &lsquo;worthless.&rsquo;")
+_2cor13_edit_es("adokimos",
+    "La traducción conserva «descalificado».",
+    "La traducción conserva «descalificado» en 9:27. &#9888; Está en ocho versículos del Nuevo Testamento, y tres de ellos están "
+    "en <a href=\"2-corinthians-13.es.html#v5\">2 Corintios 13:5</a>&ndash;7, donde Pablo pide a los corintios que se prueben "
+    "«a menos que estén reprobados» y lo pone frente a <em>dokimos</em>, «aprobados» (13:7); allí esta traducción imprime "
+    "«reprobados», en buena parte del mundo hispano la palabra corriente para el examen que no se aprueba. En <a href=\"romans-1.es.html#v28\">Romanos 1:28</a> es "
+    "«una mente no aprobada», y en <a href=\"titus-1.es.html#v16\">Tito 1:16</a>, «inútiles».")
+
+_2cor13_edit(DICTIONARY, "dokime",
+    "and 2 Corinthians 2:9, 8:2, 9:13 and 13:3 and Philippians 2:22 (those five not yet on these pages)",
+    "and <a href=\"2-corinthians-2.html#v9\">2 Corinthians 2:9</a>, <a href=\"2-corinthians-8.html#v2\">8:2</a>, "
+    "<a href=\"2-corinthians-9.html#v13\">9:13</a> and <a href=\"2-corinthians-13.html#v3\">13:3</a>, where the Corinthians "
+    "seek &lsquo;proof&rsquo; of the Christ who speaks in Paul, and Philippians 2:22 (not yet on these pages)")
+_2cor13_edit_es("dokime",
+    "y 2 Corintios 2:9, 8:2, 9:13 y 13:3 y Filipenses 2:22 (esos cinco todavía no en estas páginas)",
+    "y <a href=\"2-corinthians-2.es.html#v9\">2 Corintios 2:9</a>, <a href=\"2-corinthians-8.es.html#v2\">8:2</a>, "
+    "<a href=\"2-corinthians-9.es.html#v13\">9:13</a> y <a href=\"2-corinthians-13.es.html#v3\">13:3</a>, donde los corintios "
+    "buscan «una prueba» del Cristo que habla en Pablo, y Filipenses 2:22 (todavía no en estas páginas)")
+
+_2cor13_edit(DICTIONARY, "philema",
+    "five of them Paul\'s or Peter\'s own closing instruction to a congregation, \'greet one another with a holy kiss\' (Romans 16:16; 1 Corinthians 16:20; 2 Corinthians 13:12; 1 Thessalonians 5:26; 1 Peter 5:14, none yet on these pages)",
+    "five of them Paul\'s or Peter\'s own closing instruction to a congregation to greet with a kiss, a &lsquo;holy kiss&rsquo; in "
+    "Paul\'s four and &lsquo;a kiss of love&rsquo; in Peter\'s (<a href=\"romans-16.html#v16-16\">Romans 16:16</a>, "
+    "<a href=\"1-corinthians-16.html#v20\">1 Corinthians 16:20</a> and <a href=\"2-corinthians-13.html#v12\">2 Corinthians "
+    "13:12</a>, now on these pages; 1 Thessalonians 5:26 and 1 Peter 5:14, not yet)")
+_2cor13_edit_es("philema",
+    "cinco de ellos la propia instrucción final de Pablo o Pedro a una congregación, «salúdense unos a otros con un beso santo» (Romanos 16:16; 1 Corintios 16:20; 2 Corintios 13:12; 1 Tesalonicenses 5:26; 1 Pedro 5:14, ninguno todavía en estas páginas)",
+    "cinco de ellos la propia instrucción final de Pablo o Pedro a una congregación de saludarse con un beso, un «beso santo» en "
+    "los cuatro de Pablo y «un beso de amor» en el de Pedro (<a href=\"romans-16.es.html#v16-16\">Romanos 16:16</a>, "
+    "<a href=\"1-corinthians-16.es.html#v20\">1 Corintios 16:20</a> y <a href=\"2-corinthians-13.es.html#v12\">2 Corintios "
+    "13:12</a>, ya en estas páginas; 1 Tesalonicenses 5:26 y 1 Pedro 5:14, todavía no)")
+
+_2cor13_edit(DICTIONARY, "apotomia",
+    "as the adverb <em>apotomōs</em>, &lsquo;severely&rsquo;: 2 Corinthians 13:10 (not yet on these pages) and",
+    "as the adverb <em>apotomōs</em>, which this translation prints &lsquo;sharply&rsquo;: "
+    "<a href=\"2-corinthians-13.html#v10\">2 Corinthians 13:10</a>, &lsquo;so that when present I may not deal sharply,&rsquo; and")
+_2cor13_edit_es("apotomia",
+    "2 Corintios 13:10 (todavía no en estas páginas) y",
+    "<a href=\"2-corinthians-13.es.html#v10\">2 Corintios 13:10</a>, «no tenga que tratarlos severamente», y")
+
+_2cor13_edit(DICTIONARY, "katartizo",
+    "two have the noun, 2 Corinthians 13:9 and Ephesians 4:12).",
+    "two have a noun: <em>katartisis</em> at <a href=\"2-corinthians-13.html#v9\">2 Corinthians 13:9</a>, &lsquo;your "
+    "mending,&rsquo; and <em>katartismos</em> at Ephesians 4:12). Paul uses the verb to the Corinthians near the start of the "
+    "first letter and at the end of the second: &lsquo;mended together in the same mind&rsquo; "
+    "(<a href=\"1-corinthians-1.html#v10\">1 Corinthians 1:10</a>) and &lsquo;be mended&rsquo; "
+    "(<a href=\"2-corinthians-13.html#v11\">2 Corinthians 13:11</a>).")
+_2cor13_edit_es("katartizo",
+    "dos tienen el sustantivo, 2 Corintios 13:9 y Efesios 4:12).",
+    "dos tienen un sustantivo: <em>katartisis</em> en <a href=\"2-corinthians-13.es.html#v9\">2 Corintios 13:9</a>, «que "
+    "queden remendados», y <em>katartismos</em> en Efesios 4:12). Pablo usa el verbo con los corintios cerca del comienzo de la "
+    "primera carta y al final de la segunda: «remendados juntos en un mismo sentir» "
+    "(<a href=\"1-corinthians-1.es.html#v10\">1 Corintios 1:10</a>) y «sean remendados» "
+    "(<a href=\"2-corinthians-13.es.html#v11\">2 Corintios 13:11</a>).")
+
+_2cor13_edit(DICTIONARY, "koinonia",
+    "who have stopped behaving like joint owners of anything.",
+    "who have stopped behaving like joint owners of anything. At <a href=\"2-corinthians-13.html#v13\">2 Corinthians 13:13</a> "
+    "it closes the letter, &lsquo;the fellowship of the Holy Spirit&rsquo;: with the genitive it can be the fellowship the Spirit "
+    "creates or the share believers have in the Spirit, and &lsquo;of&rsquo; keeps both.")
+_2cor13_edit_es("koinonia",
+    "socios de la misma barca antes de serlo de la misma misión.",
+    "socios de la misma barca antes de serlo de la misma misión. En <a href=\"2-corinthians-13.es.html#v13\">2 Corintios "
+    "13:13</a> cierra la carta, «la comunión del Espíritu Santo»: con el genitivo puede ser la comunión que el Espíritu crea o la "
+    "parte que los creyentes tienen en el Espíritu, y «del» conserva las dos.")
+
+_2COR13_REFS = {
+    'paul': [('2 Corinthians', 13, 1)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _2COR13_REFS:
+        _e["refs"] = list(_e.get("refs", [])) + [r for r in _2COR13_REFS[_e["slug"]] if r not in _e.get("refs", [])]
+
+XREFS.extend([
+    (("Deuteronomy", 19, 15), ("2 Corinthians", 13, 1), "at the mouth of two witnesses or three; Paul quotes it with the Greek 'and'"),
+    (("Matthew", 18, 16), ("2 Corinthians", 13, 1), "two or three witnesses: Jesus' rule for a brother, and Paul's third visit"),
+    (("2 Corinthians", 12, 14), ("2 Corinthians", 13, 1), "'this third time': ready to come, and coming"),
+    (("2 Corinthians", 12, 21), ("2 Corinthians", 13, 2), "those who sinned before: mourned over, then warned"),
+    (("2 Corinthians", 1, 23), ("2 Corinthians", 13, 2), "to spare you, and 'I will not spare'"),
+    (("Romans", 11, 21), ("2 Corinthians", 13, 2), "not sparing, one verse from severity"),
+    (("2 Corinthians", 12, 9), ("2 Corinthians", 13, 4), "power in weakness: said to Paul, then told of Christ crucified"),
+    (("Romans", 1, 28), ("2 Corinthians", 13, 5), "adokimos: an unapproved mind, and 'unless you are unapproved'"),
+    (("Mark", 1, 19), ("2 Corinthians", 13, 9), "katartizō: mending nets, and the Corinthians' mending"),
+    (("Titus", 1, 13), ("2 Corinthians", 13, 10), "apotomōs: rebuke sharply, deal sharply"),
+    (("2 Corinthians", 10, 8), ("2 Corinthians", 13, 10), "authority for building up and not for tearing down, said twice"),
+    (("1 Corinthians", 1, 10), ("2 Corinthians", 13, 11), "mended together in the same mind, and 'be mended'"),
+    (("Philippians", 4, 2), ("2 Corinthians", 13, 11), "be of the same mind"),
+    (("Matthew", 28, 9), ("2 Corinthians", 13, 11), "chairete: 'Greetings' from the risen Jesus, 'rejoice' at a letter's end"),
+    (("Romans", 16, 16), ("2 Corinthians", 13, 12), "greet one another with a holy kiss"),
+    (("1 Corinthians", 16, 20), ("2 Corinthians", 13, 12), "the holy kiss, in both letters to Corinth"),
+    (("1 Corinthians", 16, 23), ("2 Corinthians", 13, 13), "the grace of the Lord Jesus: one member, then three"),
+])
+
+CHAPTER_ART["2cor13"] = [dict(
+    file="valentin-saint-paul-writing-epistles.jpg",
+    title="Saint Paul Writing His Epistles",       title_es="San Pablo escribiendo sus epístolas",
+    artist="Attributed to Valentin de Boulogne",
+    year="c. 1618–1620",
+    location="Oil on canvas, Museum of Fine Arts, Houston (BF.1991.4)",
+    location_es="Óleo sobre lienzo, Museo de Bellas Artes de Houston (BF.1991.4)",
+    alt="Oil painting: a balding man with a long reddish-brown beard, in a green robe and a red cloak, sits at a wooden table against a dark background and writes with a quill, his other hand holding down a loose sheet laid over an open book. Another open book, a small closed book, a rolled scroll and a few folded slips of paper lie on the table, and the hilt of a sword stands upright at the right edge.",
+    note="&#9888; <a href=\"2-corinthians-13.html#v10\">Verse 10</a> is the reason this letter exists: &lsquo;That is why I write these things while absent, so that when present I may not deal sharply.&rsquo; The painting shows Paul writing with his own hand. The letters themselves vary: Romans names the man who wrote it down, &lsquo;I, Tertius, who wrote this letter&rsquo; (<a href=\"romans-16.html#v16-22\">Romans 16:22</a>), and First Corinthians marks only its greeting as &lsquo;in my own hand&rsquo; (<a href=\"1-corinthians-16.html#v21\">1 Corinthians 16:21</a>); Second Corinthians says neither, so whose hand held the pen is not known. The sword is Paul&rsquo;s traditional emblem in Christian art, for the death tradition gives him, which the New Testament does not narrate. The painting is attributed to Valentin; Wikimedia Commons also files it under Nicolas Tournier, and that question is reported here, not settled.",
+    note_es="&#9888; El <a href=\"2-corinthians-13.es.html#v10\">versículo 10</a> es la razón de que esta carta exista: «Por eso escribo estas cosas estando ausente, para que, cuando esté presente, no tenga que tratarlos severamente». La pintura muestra a Pablo escribiendo de su propia mano. Las cartas mismas varían: Romanos nombra al hombre que la puso por escrito, «Yo, Tercio, que escribí esta carta» (<a href=\"romans-16.es.html#v16-22\">Romanos 16:22</a>), y Primera de Corintios marca solo su saludo como escrito «de mi propia mano» (<a href=\"1-corinthians-16.es.html#v21\">1 Corintios 16:21</a>); Segunda de Corintios no dice ninguna de las dos cosas, así que no se sabe de quién era la mano que sostuvo la pluma. La espada es el emblema tradicional de Pablo en el arte cristiano, por la muerte que le da la tradición, que el Nuevo Testamento no narra. La pintura se atribuye a Valentin; Wikimedia Commons la clasifica también bajo Nicolas Tournier, y esa cuestión se informa aquí, no se resuelve.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Saint_Paul_Writing_His_Epistles_-_BF.1991.4_-_Museum_of_Fine_Arts.jpg",
+)]
+
+CHRON_CHAPTERS["2cor13"] = dict(era='apostolic',
+    when="The same letter, still written from Macedonia, and its last chapter. Paul announces his third visit to Corinth, quotes the law of two or three witnesses, warns those who sinned before that he will not spare, tells the Corinthians to test themselves, and closes with five commands, a holy kiss and a three-part blessing.",
+    clock="Undated by the text: the chapter names no year for the letter. It looks ahead to a third visit; at Acts 20:2&ndash;3 Paul spends three months in Greece, a stay commonly identified with that visit, though Luke does not name Corinth.")
