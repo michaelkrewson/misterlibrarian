@@ -37669,3 +37669,128 @@ CHAPTER_ART["gal6"] = [dict(
 CHRON_CHAPTERS["gal6"] = dict(era='apostolic',
     when="Paul closes his letter to the Galatians: mend the fallen and bear one another&rsquo;s burdens, sow to the Spirit, and then, in his own large handwriting, boast only in the cross, a new creation, and peace upon the Israel of God.",
     clock="Undated by the text: Galatians names no year, and the letter does not say where it was written; a later note in some manuscripts says Rome.")
+
+# ---- Ephesians 3 ------------------------------------------------------------
+DICTIONARY.append(("synkleronomos", "synklēronomos", "συγκληρονόμος", "synklēronomos",
+    "A CO-HEIR, one who inherits together with another &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>klēronomos</em>, &lsquo;heir.&rsquo; "
+    "&#9888; It stands in four verses of the New Testament: <a href=\"romans-8.html#v8-17\">Romans 8:17</a>, &lsquo;heirs together with Christ&rsquo;; <a href=\"ephesians-3.html#v6\">Ephesians 3:6</a>; <a href=\"hebrews-11.html#v11-9\">Hebrews 11:9</a>, "
+    "&lsquo;heirs with him of the same promise&rsquo;; and 1 Peter 3:7 (not yet on these pages). At Ephesians 3:6 it opens a run of three "
+    "<em>syn-</em> words that state the content of the mystery: the nations are co-heirs, <em>syssōma</em>, co-members of the body (in "
+    "this verse alone), and <em>symmetocha</em>, co-sharers of the promise (here and Ephesians 5:7, not yet on these pages). The Greek "
+    "does not say with whom they share; the NIV supplies &lsquo;heirs together with Israel.&rsquo; KJV &lsquo;fellowheirs, and of the same "
+    "body, and partakers,&rsquo; ASV &lsquo;fellow-heirs, and fellow-members of the body, and fellow-partakers.&rsquo;",
+    ("Ephesians", 3, 6)))
+DICTIONARY_ES["synkleronomos"] = ("synklēronómos",
+    "UN COHEREDERO, quien hereda junto con otro &mdash; <em>syn</em>, «con», y <em>klēronomos</em>, «heredero». &#9888; Está en cuatro "
+    "versículos del Nuevo Testamento: <a href=\"romans-8.es.html#v8-17\">Romanos 8:17</a>, «coherederos con Cristo»; <a href=\"ephesians-3.es.html#v6\">Efesios 3:6</a>; <a href=\"hebrews-11.es.html#v11-9\">Hebreos 11:9</a>, «herederos con él de la misma promesa»; y "
+    "1 Pedro 3:7 (todavía no en estas páginas). En Efesios 3:6 abre una serie de tres palabras con <em>syn-</em> que enuncian el contenido "
+    "del misterio: las naciones son coherederas, <em>syssōma</em>, comiembros del cuerpo (solo en este versículo), y <em>symmetocha</em>, "
+    "copartícipes de la promesa (aquí y en Efesios 5:7, todavía no en estas páginas). El griego no dice con quién comparten; la NVI lo "
+    "suple, «junto con Israel». RV60 «coherederos y miembros del mismo cuerpo, y copartícipes», RV 1909 «juntamente herederos, é "
+    "incorporados, y consortes».")
+
+DICTIONARY.append(("elachistoteros", "elachistoteros", "ἐλαχιστότερος", "elachistoteros",
+    "LESS THAN THE LEAST &mdash; a comparative built on the superlative <em>elachistos</em>, &lsquo;least,&rsquo; as if &lsquo;leaster&rsquo;: "
+    "a form the grammar does not allow, made on purpose. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v8\">Ephesians 3:8</a>: &lsquo;To me, less "
+    "than the least of all the holy ones, this grace was given.&rsquo; At <a href=\"1-corinthians-15.html#v9\">1 Corinthians 15:9</a> Paul is &lsquo;the least of the apostles&rsquo;; here he "
+    "goes below the least of all believers. KJV and ASV &lsquo;less than the least of all saints&rsquo;; the Douay, from the Vulgate&rsquo;s "
+    "<em>minimo</em>, &lsquo;the least of all the saints&rsquo;; TLB &lsquo;the most useless Christian there is.&rsquo;",
+    ("Ephesians", 3, 8)))
+DICTIONARY_ES["elachistoteros"] = ("elachistóteros",
+    "MENOS QUE EL MENOR &mdash; un comparativo hecho sobre el superlativo <em>elachistos</em>, «mínimo», como si fuera «más mínimo»: una "
+    "forma que la gramática no permite, hecha a propósito. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v8\">Efesios 3:8</a>: «A mí, que "
+    "soy menos que el menor de todos los santos, me fue dada esta gracia». En <a href=\"1-corinthians-15.es.html#v9\">1 Corintios 15:9</a> Pablo es «el menor de los apóstoles»; aquí baja "
+    "por debajo del menor de todos los creyentes. RV60 «menos que el más pequeño de todos los santos», NVI «el más insignificante de "
+    "todos los creyentes».")
+
+DICTIONARY.append(("polypoikilos", "polypoikilos", "πολυποίκιλος", "polypoikilos",
+    "MANY-COLOURED, MANIFOLD &mdash; <em>polys</em>, &lsquo;much,&rsquo; and <em>poikilos</em>, &lsquo;varied, of many colours.&rsquo; "
+    "&#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v10\">Ephesians 3:10</a>: &lsquo;the many-sided wisdom of God&rsquo; made known through the "
+    "congregation to the rulers and the authorities in the heavenly places, the congregation of Jews and nations made one being the "
+    "display. KJV, ASV and NIV &lsquo;the manifold wisdom of God,&rsquo; NWT 1984 &lsquo;the greatly diversified wisdom of God.&rsquo;",
+    ("Ephesians", 3, 10)))
+DICTIONARY_ES["polypoikilos"] = ("polypoíkilos",
+    "DE MUCHOS COLORES, MULTIFORME &mdash; <em>polys</em>, «mucho», y <em>poikilos</em>, «variado, de muchos colores». &#9888; Está en un "
+    "solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v10\">Efesios 3:10</a>: «la multiforme sabiduría de Dios» dada a conocer por medio de la congregación a los "
+    "principados y a las autoridades en los lugares celestiales, y lo que se muestra es la congregación misma, judíos y naciones hechos "
+    "uno. RV60 «la multiforme sabiduría de Dios», TNM 1987 «la grandemente diversificada sabiduría de Dios».")
+
+DICTIONARY.append(("patria", "patria", "πατριά", "patria",
+    "A FAMILY, A CLAN &mdash; a line descended from one father, from <em>patēr</em>, &lsquo;father.&rsquo; &#9888; It is the &lsquo;house and "
+    "family line of David&rsquo; at <a href=\"luke-2.html#v2-4\">Luke 2:4</a>, &lsquo;all the families of the earth&rsquo; at <a href=\"acts-3.html#v3-25\">Acts 3:25</a>, and the word of <a href=\"ephesians-3.html#v15\">Ephesians 3:15</a>, &lsquo;the "
+    "Father, from whom every family in heaven and on earth is named,&rsquo; where Father and family are one word apart and English cannot "
+    "keep the pair. The Vulgate prints <em>paternitas</em>, &lsquo;fatherhood,&rsquo; and so the Douay, &lsquo;Of whom all paternity in heaven "
+    "and earth is named.&rsquo; KJV &lsquo;the whole family,&rsquo; ASV &lsquo;every family.&rsquo;",
+    ("Ephesians", 3, 15)))
+DICTIONARY_ES["patria"] = ("patriá",
+    "UNA FAMILIA, UN LINAJE &mdash; una descendencia de un mismo padre, de <em>patēr</em>, «padre». &#9888; Es el «linaje de David» en "
+    "<a href=\"luke-2.es.html#v2-4\">Lucas 2:4</a>, «todas las familias de la tierra» en <a href=\"acts-3.es.html#v3-25\">Hechos 3:25</a>, y la palabra de <a href=\"ephesians-3.es.html#v15\">Efesios 3:15</a>, «el Padre, de quien toma nombre toda familia en "
+    "los cielos y en la tierra», donde Padre y familia están a una palabra de distancia y el español no puede conservar el par. La Vulgata "
+    "imprime <em>paternitas</em>, «paternidad». RV60 «toda familia», RV 1909 «toda la parentela», TNM 1987 «toda familia».")
+
+
+_gal3_fix([
+    ("(so too Ephesians 3:1, 'the prisoner of Christ Jesus for you Gentiles')",
+     "(so too <a href=\"ephesians-3.html#v1\">Ephesians 3:1</a>, 'the prisoner of Christ Jesus on behalf of you, the nations')"),
+    ("(así también Efesios 3:1, «el preso de Cristo Jesús por ustedes los gentiles»)",
+     "(así también <a href=\"ephesians-3.es.html#v1\">Efesios 3:1</a>, «el preso de Cristo Jesús a favor de ustedes, las naciones»)"),
+    ("Paul uses the word of the 'stewardship of God's grace' given to him (Ephesians 3:2)",
+     "Paul uses the word of the 'stewardship of the grace of God' given to him (<a href=\"ephesians-3.html#v2\">Ephesians 3:2</a>)"),
+    ("and Ephesians 3:12 (not yet on these pages).", "and <a href=\"ephesians-3.html#v12\">Ephesians 3:12</a>, &lsquo;boldness and access with confidence.&rsquo;"),
+    ("y Efesios 3:12 (todavía no en estas páginas).", "y <a href=\"ephesians-3.es.html#v12\">Efesios 3:12</a>, «franqueza y acceso con confianza»."),
+    ("Ephesians 3:16 and 2 Corinthians 4:16 (these two not yet on these pages).", "<a href=\"ephesians-3.html#v16\">Ephesians 3:16</a> and <a href=\"2-corinthians-4.html#v16\">2 Corinthians 4:16</a>."),
+    ("Efesios 3:16 y 2 Corintios 4:16 (estos dos todavía no en estas páginas).", "<a href=\"ephesians-3.es.html#v16\">Efesios 3:16</a> y <a href=\"2-corinthians-4.es.html#v16\">2 Corintios 4:16</a>."),
+    ("and Ephesians 3:8 (&lsquo;the unsearchable riches of the Christ,&rsquo; not yet on these pages)",
+     "and <a href=\"ephesians-3.html#v8\">Ephesians 3:8</a> (&lsquo;the untraceable riches of Christ&rsquo;)"),
+    ("y Efesios 3:8 («las inescrutables riquezas del Cristo», todavía no en estas páginas)",
+     "y <a href=\"ephesians-3.es.html#v8\">Efesios 3:8</a> («las riquezas de Cristo, imposibles de rastrear»)"),
+    ("; and Ephesians 3:13 and 2 Thessalonians 3:13 (not yet on these pages).",
+     "; <a href=\"ephesians-3.html#v13\">Ephesians 3:13</a>; and 2 Thessalonians 3:13 (not yet on these pages)."),
+    ("; y Efesios 3:13 y 2 Tesalonicenses 3:13 (todavía no en estas páginas).",
+     "; <a href=\"ephesians-3.es.html#v13\">Efesios 3:13</a>; y 2 Tesalonicenses 3:13 (todavía no en estas páginas)."),
+])
+
+XREFS.extend([
+    (("Philemon", 1, 1), ("Ephesians", 3, 1), "a prisoner of Christ Jesus"),
+    (("Ephesians", 1, 10), ("Ephesians", 3, 2), "stewardship"),
+    (("Colossians", 1, 25), ("Ephesians", 3, 2), "the stewardship of God given to me for you"),
+    (("Ephesians", 1, 9), ("Ephesians", 3, 3), "the mystery made known"),
+    (("Galatians", 1, 12), ("Ephesians", 3, 3), "through a revelation"),
+    (("Colossians", 1, 26), ("Ephesians", 3, 5), "hidden for ages, now revealed"),
+    (("Ephesians", 2, 20), ("Ephesians", 3, 5), "apostles and prophets"),
+    (("Romans", 8, 17), ("Ephesians", 3, 6), "co-heirs"),
+    (("Ephesians", 2, 15), ("Ephesians", 3, 6), "one new man, one body"),
+    (("Ephesians", 1, 19), ("Ephesians", 3, 7), "the working of his power"),
+    (("1 Corinthians", 15, 9), ("Ephesians", 3, 8), "the least"),
+    (("Romans", 11, 33), ("Ephesians", 3, 8), "untraceable"),
+    (("1 Corinthians", 2, 7), ("Ephesians", 3, 9), "wisdom hidden in a mystery"),
+    (("Ephesians", 1, 21), ("Ephesians", 3, 10), "rule and authority"),
+    (("Ephesians", 2, 18), ("Ephesians", 3, 12), "access"),
+    (("Romans", 5, 2), ("Ephesians", 3, 12), "access by faith"),
+    (("Galatians", 6, 9), ("Ephesians", 3, 13), "do not lose heart"),
+    (("Romans", 14, 11), ("Ephesians", 3, 14), "every knee will bow"),
+    (("Acts", 3, 25), ("Ephesians", 3, 15), "all the families of the earth"),
+    (("Romans", 7, 22), ("Ephesians", 3, 16), "the inner man"),
+    (("Ephesians", 2, 22), ("Ephesians", 3, 17), "dwelling"),
+    (("Ephesians", 1, 23), ("Ephesians", 3, 19), "the fullness"),
+    (("Romans", 16, 25), ("Ephesians", 3, 20), "to him who is able"),
+    (("Galatians", 1, 5), ("Ephesians", 3, 21), "glory to the ages of the ages, Amen"),
+])
+
+CHAPTER_ART["eph3"] = [dict(
+    file="rembrandt-paul-in-prison-1627.jpg",
+    title="Saint Paul in Prison",        title_es="San Pablo en la prisión",
+    artist="Rembrandt van Rijn",
+    year="1627",
+    location="Staatsgalerie, Stuttgart",
+    location_es="Staatsgalerie, Stuttgart",
+    alt="Oil painting: an old man with a long white beard and bare feet sits on a cot in a stone cell, a hand at his mouth in thought, a pen and an open book of papers in his lap. A shaft of light falls across the wall behind him from a barred window at the upper left; a large sword and a pile of books and a leather bag rest beside him.",
+    note="&#9888; Rembrandt was about twenty-one when he painted <a href=\"ephesians-3.html#v3-1\">verse 1</a>&rsquo;s &lsquo;prisoner of Christ Jesus&rsquo;: Paul in a cell, pen in hand, light coming through the bars. The letter itself does not say where Paul was held. The sword is his traditional emblem in art, from the tradition that he was beheaded.",
+    note_es="&#9888; Rembrandt tenía unos veintiún años cuando pintó al «preso de Cristo Jesús» del <a href=\"ephesians-3.es.html#v3-1\">versículo 1</a>: Pablo en una celda, con la pluma en la mano, y la luz entrando por las rejas. La carta misma no dice dónde estaba detenido Pablo. La espada es su emblema tradicional en el arte, por la tradición de que fue decapitado.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:1627_Rembrandt_Paulus_im_Gef%C3%A4ngnis_Staatsgalerie_Stuttgart_anagoria.JPG",
+)]
+
+CHRON_CHAPTERS["eph3"] = dict(era='apostolic',
+    when="Paul, a prisoner, explains the mystery he was given to steward, that the nations are co-heirs and co-members of one body, then kneels in prayer that the readers may grasp the love of Christ that surpasses knowledge.",
+    clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
