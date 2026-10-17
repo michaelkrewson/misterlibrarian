@@ -39050,3 +39050,104 @@ CHRON_CHAPTERS["1th2"] = dict(era='apostolic',
     when="Paul recalls the founding visit to Thessalonica after the beating at Philippi: no flattery or greed, gentle as a nursing mother, working night and day, a father to each; the word received as God's word; the persecution shared with the congregations of Judea; and his thwarted wish to return.",
     clock="c. AD 50–51, from Corinth, a few months after the founding visit of Acts 17:1–10.")
 
+# ---- 1 Thessalonians 3 -----------------------------------------------------------
+DICTIONARY.append(('saino', 'sainō', 'σαίνω', 'sainō',
+    'TO WAG THE TAIL, and so to fawn, to coax &mdash; said of a dog greeting its master, then of people won over by soft words. &#9888; Its passive stands in one verse of the New Testament, <a href="1-thessalonians-3.html#v3-3">1 Thessalonians 3:3</a>, &lsquo;so that no one would be shaken by these afflictions,&rsquo; and readers divide: &lsquo;shaken, disturbed,&rsquo; or &lsquo;coaxed away,&rsquo; drawn off by flattering voices in a hard time. KJV &lsquo;moved,&rsquo; NWT 1984 &lsquo;swayed,&rsquo; NIV &lsquo;unsettled.&rsquo;',
+    ('1 Thessalonians', 3, 3)))
+DICTIONARY_ES['saino'] = ('saínō',
+    'MOVER LA COLA, y de ahí halagar, engatusar &mdash; dicho del perro que saluda a su amo, y luego de las personas ganadas con palabras suaves. &#9888; Su pasiva está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-3.es.html#v3-3">1 Tesalonicenses 3:3</a>, «para que nadie fuera sacudido por estas tribulaciones», y los lectores se dividen: «sacudido, perturbado», o «engatusado», apartado por voces aduladoras en un tiempo duro. RV60 «se inquiete», TNM 1987 «se dejara mover».')
+
+DICTIONARY.append(('sterizo', 'stērizō', 'στηρίζω', 'stērizō',
+    'TO STRENGTHEN, to make firm, to set fast &mdash; to prop something so that it stands. &#9888; The simple verb stands in twelve verses of the New Testament. At <a href="luke-9.html#v9-51">Luke 9:51</a> Jesus &lsquo;set his face&rsquo; to go to Jerusalem; at <a href="luke-16.html#v16-26">Luke 16:26</a> a great chasm &lsquo;has been fixed&rsquo;; at <a href="luke-22.html#v22-32">Luke 22:32</a> Peter is told, &lsquo;strengthen your brothers&rsquo;; at <a href="romans-1.html#v11">Romans 1:11</a> Paul longs to see the Romans &lsquo;to strengthen you.&rsquo; <a href="1-thessalonians-3.html#v3-2">1 Thessalonians 3:2</a> and <a href="1-thessalonians-3.html#v3-13">1 Thessalonians 3:13</a> begin and end the chapter with it: Timothy is sent &lsquo;to strengthen you,&rsquo; and the prayer is that the Lord will &lsquo;strengthen your hearts blameless in holiness.&rsquo; KJV &lsquo;establish,&rsquo; NIV &lsquo;strengthen.&rsquo;',
+    ('1 Thessalonians', 3, 2)))
+DICTIONARY_ES['sterizo'] = ('stērízō',
+    'FORTALECER, afirmar, fijar &mdash; apuntalar algo para que se tenga en pie. &#9888; El verbo simple está en doce versículos del Nuevo Testamento. En <a href="luke-9.es.html#v9-51">Lucas 9:51</a> Jesús «afirmó su rostro» para ir a Jerusalén; en <a href="luke-16.es.html#v16-26">Lucas 16:26</a> un gran abismo «se ha establecido»; en <a href="luke-22.es.html#v22-32">Lucas 22:32</a> se le dice a Pedro: «fortalece a tus hermanos»; en <a href="romans-1.es.html#v11">Romanos 1:11</a> Pablo anhela ver a los romanos «a fin de fortalecerlos». <a href="1-thessalonians-3.es.html#v3-2">1 Tesalonicenses 3:2</a> y <a href="1-thessalonians-3.es.html#v3-13">1 Tesalonicenses 3:13</a> abren y cierran el capítulo con él: Timoteo es enviado «para fortalecerlos», y la oración pide que el Señor «fortalezca sus corazones irreprochables en santidad». RV60 «confirmaros», TNM 1987 «hacerlos firmes».')
+
+DICTIONARY.append(('hagiosyne', 'hagiōsynē', 'ἁγιωσύνη', 'hagiōsynē',
+    'HOLINESS &mdash; the quality of being holy, <em>hagios</em>; a rare word beside the commoner <em>hagiasmos</em>, the process of being made holy. &#9888; It stands in three verses of the New Testament: <a href="romans-1.html#v4">Romans 1:4</a>, &lsquo;according to the Spirit of holiness&rsquo;; <a href="2-corinthians-7.html#v1">2 Corinthians 7:1</a>, &lsquo;perfecting holiness in the fear of God&rsquo;; and <a href="1-thessalonians-3.html#v3-13">1 Thessalonians 3:13</a>, &lsquo;blameless in holiness&rsquo; (see <a href="dictionary.html#hagios"><em>hagios</em></a>). KJV, ASV and NWT 1984 &lsquo;holiness.&rsquo;',
+    ('1 Thessalonians', 3, 13)))
+DICTIONARY_ES['hagiosyne'] = ('hagiōsýnē',
+    'SANTIDAD &mdash; la cualidad de ser santo, <em>hagios</em>; una palabra rara junto a la más común <em>hagiasmos</em>, el proceso de ser santificado. &#9888; Está en tres versículos del Nuevo Testamento: <a href="romans-1.es.html#v4">Romanos 1:4</a>, «según el Espíritu de santidad»; <a href="2-corinthians-7.es.html#v1">2 Corintios 7:1</a>, «perfeccionando nuestra santidad con el temor de Dios»; y <a href="1-thessalonians-3.es.html#v3-13">1 Tesalonicenses 3:13</a>, «irreprochables en santidad» (véase <a href="diccionario.html#hagios"><em>hagios</em></a>). RV60 y TNM 1987 «santidad».')
+
+DICTIONARY.append(('kateuthyno', 'kateuthynō', 'κατευθύνω', 'kateuthynō',
+    'TO GUIDE, to make straight, to direct &mdash; <em>kata</em> with <em>euthynō</em>, &lsquo;to straighten.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="luke-1.html#v79">Luke 1:79</a>, &lsquo;to guide our feet into the way of peace&rsquo;; <a href="1-thessalonians-3.html#v3-11">1 Thessalonians 3:11</a>, &lsquo;may our God and Father himself, and our Lord Jesus, guide our way to you,&rsquo; where the verb is singular with two subjects; and 2 Thessalonians 3:5, &lsquo;may the Lord guide your hearts&rsquo; (not yet on these pages). KJV &lsquo;direct,&rsquo; NIV &lsquo;clear the way.&rsquo;',
+    ('1 Thessalonians', 3, 11)))
+DICTIONARY_ES['kateuthyno'] = ('kateuthýnō',
+    'GUIAR, enderezar, dirigir &mdash; <em>kata</em> con <em>euthynō</em>, «enderezar». &#9888; Está en tres versículos del Nuevo Testamento: <a href="luke-1.es.html#v79">Lucas 1:79</a>, «para guiar nuestros pies por el camino de la paz»; <a href="1-thessalonians-3.es.html#v3-11">1 Tesalonicenses 3:11</a>, «que el mismo Dios y Padre nuestro, y nuestro Señor Jesús, guíe nuestro camino hacia ustedes», donde el verbo está en singular con dos sujetos; y 2 Tesalonicenses 3:5, «el Señor guíe sus corazones» (todavía no en estas páginas). RV60 «dirija», TNM 1987 «dirijan».')
+
+DICTIONARY.append(('hyperekperissou', 'hyperekperissou', 'ὑπερεκπερισσοῦ', 'hyperekperissou',
+    'BEYOND ALL MEASURE, far more abundantly &mdash; a triple compound, <em>hyper</em>, &lsquo;over,&rsquo; <em>ek</em>, &lsquo;out of,&rsquo; and <em>perissos</em>, &lsquo;abundant,&rsquo; piled up to say more than &lsquo;more.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="ephesians-3.html#v3-20">Ephesians 3:20</a>, &lsquo;far more abundantly than what we ask or think&rsquo;; <a href="1-thessalonians-3.html#v3-10">1 Thessalonians 3:10</a>, &lsquo;night and day praying beyond all measure&rsquo;; and 1 Thessalonians 5:13, of esteeming those who lead &lsquo;very highly in love&rsquo; (not yet on these pages). KJV &lsquo;exceeding abundantly&rsquo; and &lsquo;exceedingly,&rsquo; NWT 1984 &lsquo;more than extraordinary.&rsquo;',
+    ('1 Thessalonians', 3, 10)))
+DICTIONARY_ES['hyperekperissou'] = ('hyperekperissoû',
+    'SIN MEDIDA, mucho más abundantemente &mdash; un compuesto triple, <em>hyper</em>, «sobre», <em>ek</em>, «fuera de», y <em>perissos</em>, «abundante», apilados para decir más que «más». &#9888; Está en tres versículos del Nuevo Testamento: <a href="ephesians-3.es.html#v3-20">Efesios 3:20</a>, «mucho más abundantemente de lo que pedimos o pensamos»; <a href="1-thessalonians-3.es.html#v3-10">1 Tesalonicenses 3:10</a>, «rogando noche y día sin medida»; y 1 Tesalonicenses 5:13, de tener en mucha estima, en amor, a los que dirigen (todavía no en estas páginas). RV60 «con gran insistencia», TNM 1987 «más que extraordinarios».')
+
+DICTIONARY.append(('hysterema', 'hysterēma', 'ὑστέρημα', 'hysterēma',
+    'WHAT IS LACKING, a shortfall, a need &mdash; from <em>hystereō</em>, to come too late, to fall short. &#9888; It stands in eight verses of the New Testament, among them <a href="luke-21.html#v21-4">Luke 21:4</a>, the widow who gave &lsquo;out of her lack&rsquo;; <a href="2-corinthians-8.html#v14">2 Corinthians 8:14</a>, abundance supplying &lsquo;their need&rsquo;; <a href="colossians-1.html#v24">Colossians 1:24</a>, &lsquo;what is lacking of the afflictions of Christ&rsquo;; and <a href="1-thessalonians-3.html#v3-10">1 Thessalonians 3:10</a>, &lsquo;to mend what is lacking in your faith,&rsquo; where the verb is the net-mender&rsquo;s (see <a href="dictionary.html#katartizo"><em>katartizō</em></a>). KJV &lsquo;that which is lacking,&rsquo; NIV &lsquo;what is lacking.&rsquo;',
+    ('1 Thessalonians', 3, 10)))
+DICTIONARY_ES['hysterema'] = ('hystérēma',
+    'LO QUE FALTA, una carencia, una necesidad &mdash; de <em>hystereō</em>, llegar tarde, quedarse corto. &#9888; Está en ocho versículos del Nuevo Testamento, entre ellos <a href="luke-21.es.html#v21-4">Lucas 21:4</a>, la viuda que echó «de su escasez»; <a href="2-corinthians-8.es.html#v14">2 Corintios 8:14</a>, lo que unos tienen de más supliendo «su necesidad»; <a href="colossians-1.es.html#v24">Colosenses 1:24</a>, «lo que falta de las aflicciones de Cristo»; y <a href="1-thessalonians-3.es.html#v3-10">1 Tesalonicenses 3:10</a>, «remendar lo que falta a su fe», donde el verbo es el de remendar redes (véase <a href="diccionario.html#katartizo"><em>katartizō</em></a>). RV60 «lo que falte», TNM 1987 «las cosas que faltan».')
+
+DICTIONARY_ES['hyperauxano'] = ('hyperauxánō',
+    'CRECER SOBREMANERA &mdash; <em>auxanō</em>, «crecer», con el prefijo intensivo <em>hyper</em>, «sobre, más allá»; un compuesto raro que no aparece en ningún otro lugar de la Biblia griega y quizá se acuñó para la frase en que está. &#9888; En 2 Tesalonicenses 1:3 es lo que hace la fe de los tesalonicenses, «crece sobremanera», junto a <em>pleonazō</em>, «abunda», dicho de su amor. La primera carta había PEDIDO en oración que el Señor los hiciera «crecer y abundar» en amor (<a href="1-thessalonians-3.es.html#v3-12">1 Tesalonicenses 3:12</a>); la segunda informa, con una palabra más fuerte, que así ha sido.')
+
+_gal3_fix([("had PRAYED that their love would 'increase and abound' (1 Thessalonians 3:12);", 'had PRAYED that they would \'increase and overflow\' in love (<a href="1-thessalonians-3.html#v3-12">1 Thessalonians 3:12</a>);')])
+
+def _1th3_ency_fix(pairs):
+    """Replace text in already-built ENCYCLOPEDIA / ENCYCLOPEDIA_ES entries; every old string must be found at least once."""
+    for old, new in pairs:
+        hits = 0
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1th3_ency_fix([('and at 1 Thessalonians 3:1 (not yet on these pages), where Paul writes that &ldquo;we thought it good to be left behind in Athens alone.&rdquo;', 'and at <a href="1-thessalonians-3.html#v3-1">1 Thessalonians 3:1</a>, where Paul writes that &ldquo;we thought it good to be left behind at Athens alone.&rdquo;'), ('y en 1 Tesalonicenses 3:1 (todavía no en estas páginas), donde Pablo escribe: «tuvimos a bien quedarnos solos en Atenas».', 'y en <a href="1-thessalonians-3.es.html#v3-1">1 Tesalonicenses 3:1</a>, donde Pablo escribe: «nos pareció bien quedarnos atrás, solos, en Atenas».')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"athens": [("1 Thessalonians", 3, 1)], "timothy": [("1 Thessalonians", 3, 2)]}.get(_e["slug"], [])
+    if _add:
+        _e["refs"] = list(_e["refs"]) + [r for r in _add if tuple(r) not in {tuple(x) for x in _e["refs"]}]
+
+XREFS.extend([
+    (("Acts", 17, 16), ("1 Thessalonians", 3, 1), "Paul waiting at Athens"),
+    (("1 Corinthians", 3, 9), ("1 Thessalonians", 3, 2), "God's co-worker"),
+    (("Romans", 1, 11), ("1 Thessalonians", 3, 2), "to strengthen you"),
+    (("Acts", 14, 22), ("1 Thessalonians", 3, 3), "through many afflictions"),
+    (("Philippians", 1, 16), ("1 Thessalonians", 3, 3), "appointed for this"),
+    (("Matthew", 4, 3), ("1 Thessalonians", 3, 5), "the tempter"),
+    (("Acts", 18, 5), ("1 Thessalonians", 3, 6), "Timothy rejoins Paul"),
+    (("Philippians", 4, 1), ("1 Thessalonians", 3, 8), "stand firm in the Lord"),
+    (("Ephesians", 3, 20), ("1 Thessalonians", 3, 10), "beyond all measure"),
+    (("Galatians", 6, 1), ("1 Thessalonians", 3, 10), "mend"),
+    (("Luke", 1, 79), ("1 Thessalonians", 3, 11), "guide our way"),
+    (("Philippians", 1, 9), ("1 Thessalonians", 3, 12), "love that overflows"),
+    (("Mark", 8, 38), ("1 Thessalonians", 3, 13), "with the holy ones"),
+])
+
+CHAPTER_ART["1th3"] = [dict(
+    file="dodwell-athens-from-lycabettus.jpg",
+    title="Athens, from the foot of Mount Anchesmus",   title_es="Atenas, desde el pie del monte Anquesmo",
+    artist="Edward Dodwell",
+    year="published 1819",
+    location="From Dodwell&rsquo;s published views of his travels in Greece, London",
+    location_es="De las vistas publicadas por Dodwell de sus viajes por Grecia, Londres",
+    alt="Coloured print of a wide, open plain under a pale sky. In the middle distance the walled town of Athens spreads out below a steep "
+        "rock crowned with ruined temples, the Acropolis; the columns of another temple stand alone at the far left, and the sea and "
+        "mountains lie beyond. In the foreground a small party of travellers in local dress, some on donkeys, walks along a dirt track "
+        "toward the town.",
+    note="&#9888; Athens as a traveller saw it about 1803, the Acropolis rising over the town. &lsquo;When we could bear it no longer, we "
+         "thought it good to be left behind at Athens alone&rsquo; (<a href=\"1-thessalonians-3.html#v3-1\">verse 1</a>).",
+    note_es="&#9888; Atenas tal como la vio un viajero hacia 1803, con la Acrópolis alzándose sobre la ciudad. «Cuando ya no pudimos soportarlo "
+            "más, nos pareció bien quedarnos atrás, solos, en Atenas» (<a href=\"1-thessalonians-3.es.html#v3-1\">versículo 1</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Athens,_from_the_foot_of_Mount_Anchesmus_-_Lecabettus_Hill_-_Dodwell_Edward_1819.jpg",
+)]
+
+CHRON_CHAPTERS["1th3"] = dict(era='apostolic',
+    when="Unable to bear the separation, Paul stays at Athens and sends Timothy back to Thessalonica; Timothy returns with good news of their faith and love, and the chapter ends in a prayer that God and the Lord Jesus will guide the way back and strengthen their hearts for his presence.",
+    clock="c. AD 50–51, from Corinth, soon after Timothy's return (Acts 18:5).")
+
