@@ -38953,3 +38953,100 @@ CHRON_CHAPTERS["col4"] = dict(era='apostolic',
     when="The masters' instruction that closes the household code; prayer, a door for the word, and speech seasoned with salt; then Tychicus and Onesimus sent with the letter, greetings from Aristarchus, Mark, Justus, Epaphras, Luke and Demas, the exchange of letters with Laodicea, a word to Archippus, and the greeting in Paul's own hand.",
     clock="Undated by the text; Paul writes in chains, traditionally from Rome, and the letter's authorship is argued.")
 
+# ---- 1 Thessalonians 2 -----------------------------------------------------------
+DICTIONARY.append(('epios', 'ēpios', 'ἤπιος', 'ēpios',
+    'GENTLE, kind, mild &mdash; the manner of a nurse or a good teacher. &#9888; It stands in two verses of the New Testament: <a href="1-thessalonians-2.html#v2-7">1 Thessalonians 2:7</a>, &lsquo;we became gentle among you, as a nursing mother cherishes her own children,&rsquo; on the reading this translation follows, and 2 Timothy 2:24, &lsquo;the Lord&rsquo;s slave must be gentle toward all&rsquo; (not yet on these pages). At 1 Thessalonians 2:7 the oldest copies read <a href="dictionary.html#nepios"><em>nēpioi</em></a>, &lsquo;infants,&rsquo; one letter different, and editions divide. KJV and ASV &lsquo;gentle,&rsquo; NIV &lsquo;like young children.&rsquo;',
+    ('1 Thessalonians', 2, 7)))
+DICTIONARY_ES['epios'] = ('ḗpios',
+    'AMABLE, bondadoso, suave &mdash; el trato de una nodriza o de un buen maestro. &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-thessalonians-2.es.html#v2-7">1 Tesalonicenses 2:7</a>, «fuimos amables entre ustedes, como una madre que amamanta cuida a sus propios hijos», en la lectura que sigue esta traducción, y 2 Timoteo 2:24, «el esclavo del Señor debe ser amable con todos» (todavía no en estas páginas). En 1 Tesalonicenses 2:7 las copias más antiguas dicen <a href="diccionario.html#nepios"><em>nēpioi</em></a>, «niños pequeños», con una letra de diferencia, y las ediciones se dividen. RV60 «tiernos», TNM 1987 «amables».')
+
+DICTIONARY.append(('trophos', 'trophos', 'τροφός', 'trophos',
+    'A NURSE, a nursing mother &mdash; from <em>trephō</em>, to feed: the woman who feeds a child at the breast, often a hired wet-nurse who stayed in the household as the child grew. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-2.html#v2-7">1 Thessalonians 2:7</a>, &lsquo;as a nursing mother cherishes her own children,&rsquo; where &lsquo;her own&rsquo; makes her a mother feeding her own. KJV &lsquo;a nurse,&rsquo; NWT 1984 &lsquo;a nursing mother.&rsquo;',
+    ('1 Thessalonians', 2, 7)))
+DICTIONARY_ES['trophos'] = ('trophós',
+    'NODRIZA, madre que amamanta &mdash; de <em>trephō</em>, alimentar: la mujer que da el pecho a un niño, a menudo una nodriza pagada que seguía en la casa mientras el niño crecía. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-2.es.html#v2-7">1 Tesalonicenses 2:7</a>, «como una madre que amamanta cuida a sus propios hijos», donde «sus propios» la hace una madre que alimenta a los suyos. RV60 «la nodriza», TNM 1987 «una madre que cría».')
+
+DICTIONARY.append(('homeiromai', 'homeiromai', 'ὁμείρομαι', 'homeiromai',
+    'TO LONG FOR, to yearn after &mdash; a rare verb of affection. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-2.html#v2-8">1 Thessalonians 2:8</a>, &lsquo;longing for you, we were glad to share with you not only the gospel of God but also our own lives.&rsquo; The Textus Receptus spells it <em>himeiromai</em>. KJV &lsquo;being affectionately desirous of you,&rsquo; NWT 1984 &lsquo;having a tender affection for YOU.&rsquo;',
+    ('1 Thessalonians', 2, 8)))
+DICTIONARY_ES['homeiromai'] = ('homeíromai',
+    'DESEAR ARDIENTEMENTE, añorar &mdash; un verbo raro de afecto. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-2.es.html#v2-8">1 Tesalonicenses 2:8</a>, «deseándolos ardientemente, nos complacíamos en compartir con ustedes no solo el evangelio de Dios, sino también nuestras propias vidas». El Textus Receptus lo escribe <em>himeiromai</em>. RV60 «Tan grande es nuestro afecto por vosotros», TNM 1987 «teniéndoles tierno cariño».')
+
+DICTIONARY.append(('kolakeia', 'kolakeia', 'κολακεία', 'kolakeia',
+    'FLATTERY &mdash; the speech of the <em>kolax</em>, the flatterer who praises for profit, a stock figure of Greek comedy and of the moralists. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-2.html#v2-5">1 Thessalonians 2:5</a>, &lsquo;we never came with a word of flattery, as you know, nor with a pretext for greed.&rsquo; KJV &lsquo;flattering words,&rsquo; NWT 1984 &lsquo;flattering speech.&rsquo;',
+    ('1 Thessalonians', 2, 5)))
+DICTIONARY_ES['kolakeia'] = ('kolakeía',
+    'ADULACIÓN &mdash; el habla del <em>kolax</em>, el adulador que alaba por interés, una figura fija de la comedia griega y de los moralistas. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-2.es.html#v2-5">1 Tesalonicenses 2:5</a>, «nunca llegamos con palabras de adulación, como saben, ni con pretexto para la avaricia». RV60 «palabras lisonjeras», TNM 1987 «habla lisonjera».')
+
+DICTIONARY.append(('aporphanizo', 'aporphanizō', 'ἀπορφανίζω', 'aporphanizō',
+    'TO BE ORPHANED FROM, to be bereaved of &mdash; <em>apo</em>, &lsquo;from,&rsquo; and <em>orphanos</em>, &lsquo;orphan&rsquo;; the word could be used of children who lose parents or of parents who lose children. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-2.html#v2-17">1 Thessalonians 2:17</a>, &lsquo;orphaned from you for a short time &mdash; in face, not in heart,&rsquo; where the writer who was mother (v7) and father (v11) is now the bereaved one. KJV &lsquo;being taken from you,&rsquo; ASV &lsquo;being bereaved of you,&rsquo; NIV &lsquo;orphaned.&rsquo;',
+    ('1 Thessalonians', 2, 17)))
+DICTIONARY_ES['aporphanizo'] = ('aporphanízō',
+    'QUEDAR HUÉRFANO DE, ser privado de &mdash; <em>apo</em>, «de», y <em>orphanos</em>, «huérfano»; la palabra podía usarse de hijos que pierden a sus padres o de padres que pierden a sus hijos. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-2.es.html#v2-17">1 Tesalonicenses 2:17</a>, «huérfanos de ustedes por un breve tiempo &mdash;de rostro, no de corazón», donde el que fue madre (v. 7) y padre (v. 11) es ahora el privado de los suyos. RV60 «separados de vosotros», TNM 1987 «se nos hubo privado de ustedes».')
+
+DICTIONARY.append(('symphyletes', 'symphyletēs', 'συμφυλέτης', 'symphyletēs',
+    'A FELLOW COUNTRYMAN &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>phylē</em>, &lsquo;tribe&rsquo;: one of the same tribe or people. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-2.html#v2-14">1 Thessalonians 2:14</a>, &lsquo;you also suffered the same things from your own fellow countrymen as they did from the Jews.&rsquo; Readers take the Thessalonians&rsquo; persecutors to be their Gentile neighbors, or the city as a whole; at <a href="acts-17.html#v17-5">Acts 17:5</a> the trouble begins with the Jews of the city and a mob of the marketplace. KJV &lsquo;your own countrymen.&rsquo;',
+    ('1 Thessalonians', 2, 14)))
+DICTIONARY_ES['symphyletes'] = ('symphylétēs',
+    'COMPATRIOTA &mdash; <em>syn</em>, «con», y <em>phylē</em>, «tribu»: uno de la misma tribu o pueblo. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-2.es.html#v2-14">1 Tesalonicenses 2:14</a>, «también ustedes sufrieron lo mismo de parte de sus propios compatriotas que ellas de parte de los judíos». Los lectores entienden que los perseguidores de los tesalonicenses son sus vecinos gentiles, o la ciudad entera; en <a href="acts-17.es.html#v17-5">Hechos 17:5</a> el problema comienza con los judíos de la ciudad y una turba de la plaza. RV60 «los de vuestra propia nación».')
+
+DICTIONARY.append(('ioudaios', 'Ioudaios', 'Ἰουδαῖος', 'Ioudaios',
+    'A JEW, a Judean &mdash; from <em>Ioudaia</em>, Judea, and behind it Judah: a member of the people of Israel, by birth, land and worship. Some translators write &lsquo;Judean&rsquo; to keep the link with the land; others keep &lsquo;Jew,&rsquo; since the word was used just as much of Jews living far from Judea. Paul uses it of himself: &lsquo;We are Jews by birth&rsquo; (<a href="galatians-2.html#v15">Galatians 2:15</a>); in Acts he says &lsquo;I am a Jewish man&rsquo; (<a href="acts-21.html#v21-39">Acts 21:39</a>). &#9888; <a href="1-thessalonians-2.html#v2-14">1 Thessalonians 2:14</a> speaks of &lsquo;the Jews who killed both the Lord Jesus and the prophets&rsquo;, the one place in Paul&rsquo;s letters that says so, and a sentence long used to support the charge that the Jewish people as a whole were Christ&rsquo;s killers; the chapter&rsquo;s notes give that history, the Second Vatican Council&rsquo;s rejection of the charge in 1965, and the readings of the verse.',
+    ('1 Thessalonians', 2, 14)))
+DICTIONARY_ES['ioudaios'] = ('Ioudaîos',
+    'JUDÍO, judeo &mdash; de <em>Ioudaia</em>, Judea, y detrás de ella Judá: miembro del pueblo de Israel, por nacimiento, tierra y culto. Algunos traductores escriben «judeo» para conservar el vínculo con la tierra; otros conservan «judío», pues la palabra se usaba igual para los judíos que vivían lejos de Judea. Pablo la usa de sí mismo: «Nosotros somos judíos de nacimiento» (<a href="galatians-2.es.html#v15">Gálatas 2:15</a>); en Hechos dice «Yo soy un hombre judío» (<a href="acts-21.es.html#v21-39">Hechos 21:39</a>). &#9888; <a href="1-thessalonians-2.es.html#v2-14">1 Tesalonicenses 2:14</a> habla de «los judíos que mataron tanto al Señor Jesús como a los profetas», el único lugar de las cartas de Pablo que lo dice, y una frase usada durante mucho tiempo para apoyar la acusación de que el pueblo judío en su conjunto mató a Cristo; las notas del capítulo dan esa historia, el rechazo de la acusación por el Concilio Vaticano II en 1965 y las lecturas del versículo.')
+
+_gal3_fix([('and 1 Thessalonians 2:2 (the last not yet on these pages).', 'and <a href="1-thessalonians-2.html#v2-2">1 Thessalonians 2:2</a>.'), ('y 1 Tesalonicenses 2:2 (el último todavía no en estas páginas).', 'y <a href="1-thessalonians-2.es.html#v2-2">1 Tesalonicenses 2:2</a>.'), ('and 1 Thessalonians 2:16 and 4:15 (these two not yet on these pages).', 'and <a href="1-thessalonians-2.html#v2-16">1 Thessalonians 2:16</a> and 4:15 (the second not yet on these pages).'), ('y 1 Tesalonicenses 2:16 y 4:15 (estos dos todavía no en estas páginas).', 'y <a href="1-thessalonians-2.es.html#v2-16">1 Tesalonicenses 2:16</a> y 4:15 (el segundo todavía no en estas páginas).'), ('follows the race; and 1 Thessalonians 2:18 and 1 Peter 3:7 (not yet on these pages).', 'follows the race; <a href="1-thessalonians-2.html#v2-18">1 Thessalonians 2:18</a>; and 1 Peter 3:7 (not yet on these pages).'), ('sigue la carrera; y 1 Tesalonicenses 2:18 y 1 Pedro 3:7 (todavía no en estas páginas).', 'sigue la carrera; <a href="1-thessalonians-2.es.html#v2-18">1 Tesalonicenses 2:18</a>; y 1 Pedro 3:7 (todavía no en estas páginas).'), ("KJV and ASV soften to 'child'.", 'KJV and ASV soften to \'child\'. At <a href="1-thessalonians-2.html#v2-7">1 Thessalonians 2:7</a> the oldest copies read nēpioi, &lsquo;infants,&rsquo; where later copies read <a href="dictionary.html#epios"><em>ēpioi</em></a>, &lsquo;gentle.&rsquo;'), ('y quienes no tienen ningún equipo son quienes las reciben.', 'y quienes no tienen ningún equipo son quienes las reciben. En <a href="1-thessalonians-2.es.html#v2-7">1 Tesalonicenses 2:7</a> las copias más antiguas dicen <em>nēpioi</em>, «niños pequeños», donde copias posteriores dicen <a href="diccionario.html#epios"><em>ēpioi</em></a>, «amables».')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"philippi": [("1 Thessalonians", 2, 2)], "judea": [("1 Thessalonians", 2, 14)],
+            "satan": [("1 Thessalonians", 2, 18)]}.get(_e["slug"], [])
+    if _add:
+        _e["refs"] = list(_e["refs"]) + [r for r in _add if tuple(r) not in {tuple(x) for x in _e["refs"]}]
+
+XREFS.extend([
+    (("1 Thessalonians", 1, 9), ("1 Thessalonians", 2, 1), "our entrance among you"),
+    (("Acts", 16, 22), ("1 Thessalonians", 2, 2), "treated outrageously at Philippi"),
+    (("Philippians", 1, 30), ("1 Thessalonians", 2, 2), "the same struggle"),
+    (("Galatians", 1, 10), ("1 Thessalonians", 2, 4), "pleasing men"),
+    (("Colossians", 3, 5), ("1 Thessalonians", 2, 5), "greed"),
+    (("2 Corinthians", 11, 9), ("1 Thessalonians", 2, 7), "not a burden"),
+    (("Ephesians", 5, 29), ("1 Thessalonians", 2, 7), "cherishes"),
+    (("Galatians", 4, 19), ("1 Thessalonians", 2, 7), "Paul as a mother"),
+    (("2 Corinthians", 11, 27), ("1 Thessalonians", 2, 9), "labor and hardship"),
+    (("Acts", 18, 3), ("1 Thessalonians", 2, 9), "working night and day"),
+    (("Colossians", 1, 10), ("1 Thessalonians", 2, 12), "walk worthily"),
+    (("Colossians", 1, 29), ("1 Thessalonians", 2, 13), "at work in you"),
+    (("Acts", 17, 5), ("1 Thessalonians", 2, 14), "persecution in Thessalonica"),
+    (("Matthew", 23, 37), ("1 Thessalonians", 2, 15), "killing the prophets"),
+    (("Acts", 17, 10), ("1 Thessalonians", 2, 15), "driven out"),
+    (("Genesis", 15, 16), ("1 Thessalonians", 2, 16), "sins filled up"),
+    (("Matthew", 23, 32), ("1 Thessalonians", 2, 16), "fill up the measure"),
+    (("Galatians", 5, 7), ("1 Thessalonians", 2, 18), "cut in"),
+    (("Philippians", 4, 16), ("1 Thessalonians", 2, 18), "both once and twice"),
+    (("Philippians", 4, 1), ("1 Thessalonians", 2, 19), "joy and crown"),
+])
+
+CHAPTER_ART["1th2"] = [dict(
+    file="met-terracotta-nurse-carrying-child.jpg",
+    title="Statuette of a nurse carrying a child",   title_es="Estatuilla de una nodriza con un niño en brazos",
+    artist="Greek, possibly Attic",
+    year="late 4th–early 3rd century BC",
+    location="Metropolitan Museum of Art, New York (06.1066)",
+    location_es="Metropolitan Museum of Art, Nueva York (06.1066)",
+    alt="Black-and-white photograph of a small, weathered terracotta figure on a square base: an older woman with curled hair, wrapped in a "
+        "long, heavily folded robe, holds a swaddled child against her chest with both arms. The surface is pitted and patchy.",
+    note="&#9888; A Greek household&rsquo;s <em>trophos</em>, the nurse who fed and raised its children, a figure familiar enough to be modelled "
+         "in clay. &lsquo;We became gentle among you, as a nursing mother cherishes her own children&rsquo; "
+         "(<a href=\"1-thessalonians-2.html#v2-7\">verse 7</a>).",
+    note_es="&#9888; La <em>trophos</em> de una casa griega, la nodriza que alimentaba y criaba a sus niños, una figura tan conocida que se "
+            "modelaba en barro. «Fuimos amables entre ustedes, como una madre que amamanta cuida a sus propios hijos» "
+            "(<a href=\"1-thessalonians-2.es.html#v2-7\">versículo 7</a>).",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Terracotta_statuette_of_a_nurse_carrying_a_child_MET_sf061066.jpg",
+)]
+
+CHRON_CHAPTERS["1th2"] = dict(era='apostolic',
+    when="Paul recalls the founding visit to Thessalonica after the beating at Philippi: no flattery or greed, gentle as a nursing mother, working night and day, a father to each; the word received as God's word; the persecution shared with the congregations of Judea; and his thwarted wish to return.",
+    clock="c. AD 50–51, from Corinth, a few months after the founding visit of Acts 17:1–10.")
+
