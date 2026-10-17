@@ -38670,3 +38670,135 @@ CHAPTER_ART["col2"] = [dict(
 CHRON_CHAPTERS["col2"] = dict(era='apostolic',
     when="Paul warns a congregation he has never visited against a teaching of food rules, festivals, visions and the worship of angels: all the fullness of deity dwells in Christ, the debt is nailed to the cross, and the powers are led in triumph.",
     clock="Undated by the text; Paul writes as a prisoner, traditionally from Rome, and the letter's authorship is argued.")
+
+# ---- Colossians 3 -----------------------------------------------------------
+DICTIONARY.append(("pleonexia", "pleonexia", "πλεονεξία", "pleonexia",
+    "GREED &mdash; <em>pleon</em>, &lsquo;more,&rsquo; and <em>echō</em>, &lsquo;to have&rsquo;: wanting more, having more than one&rsquo;s share. "
+    "&#9888; At <a href=\"colossians-3.html#v3-5\">Colossians 3:5</a> it ends the list of what is to be put to death, &lsquo;greed, which is idolatry,&rsquo; and "
+    "<a href=\"ephesians-5.html#v5-5\">Ephesians 5:5</a> says the same of the greedy person, &lsquo;that is, an idolater&rsquo;: the thing wanted takes God&rsquo;s "
+    "place. KJV &lsquo;covetousness,&rsquo; NIV &lsquo;greed.&rsquo;",
+    ("Colossians", 3, 5)))
+DICTIONARY_ES["pleonexia"] = ("pleonexía",
+    "AVARICIA &mdash; <em>pleon</em>, «más», y <em>echō</em>, «tener»: querer más, tener más de lo que a uno le toca. &#9888; En "
+    "<a href=\"colossians-3.es.html#v3-5\">Colosenses 3:5</a> cierra la lista de lo que hay que hacer morir, «la avaricia, que es idolatría», y <a href=\"ephesians-5.es.html#v5-5\">Efesios 5:5</a> dice lo "
+    "mismo del avaro, «es decir, idólatra»: la cosa deseada ocupa el lugar de Dios. RV60 «avaricia», TNM 1987 «codicia».")
+
+DICTIONARY.append(("aischrologia", "aischrologia", "αἰσχρολογία", "aischrologia",
+    "OBSCENE TALK &mdash; <em>aischros</em>, &lsquo;shameful,&rsquo; and <em>logos</em>, &lsquo;speech.&rsquo; &#9888; It stands in one verse of "
+    "the New Testament, <a href=\"colossians-3.html#v3-8\">Colossians 3:8</a>, at the end of a list of the sins of speech, &lsquo;slander, obscene talk from "
+    "your mouth.&rsquo; A different word, <em>aischrotēs</em>, &lsquo;obscenity,&rsquo; stands at <a href=\"ephesians-5.html#v5-4\">Ephesians 5:4</a>. KJV &lsquo;filthy "
+    "communication,&rsquo; NWT 1984 &lsquo;obscene talk,&rsquo; NIV &lsquo;filthy language.&rsquo;",
+    ("Colossians", 3, 8)))
+DICTIONARY_ES["aischrologia"] = ("aischrología",
+    "PALABRAS OBSCENAS &mdash; <em>aischros</em>, «vergonzoso», y <em>logos</em>, «palabra». &#9888; Está en un solo versículo del Nuevo "
+    "Testamento, <a href=\"colossians-3.es.html#v3-8\">Colosenses 3:8</a>, al final de una lista de pecados de la lengua, «calumnia, palabras obscenas de su boca». "
+    "Otra palabra, <em>aischrotēs</em>, «obscenidad», está en <a href=\"ephesians-5.es.html#v5-4\">Efesios 5:4</a>. RV60 «palabras deshonestas», TNM 1987 «habla obscena».")
+
+DICTIONARY.append(("skythes", "Skythēs", "Σκύθης", "Skythēs",
+    "SCYTHIAN &mdash; one of the horse peoples of the steppes north of the Black Sea, reported to have been the Greeks&rsquo; byword "
+    "for the wildest of outsiders; Scythian archers in their patterned dress are a common figure in Athenian vase painting. &#9888; The "
+    "word stands in one verse of the New Testament, <a href=\"colossians-3.html#v3-11\">Colossians 3:11</a>, &lsquo;barbarian, Scythian, slave, free; but Christ is "
+    "all things and in all&rsquo; (see <a href=\"dictionary.html#barbaros\"><em>barbaros</em></a>).",
+    ("Colossians", 3, 11)))
+DICTIONARY_ES["skythes"] = ("Skýthēs",
+    "ESCITA &mdash; uno de los pueblos de jinetes de las estepas al norte del mar Negro; se informa que eran para los griegos el ejemplo "
+    "de los forasteros más salvajes, y los arqueros escitas con su traje estampado son una figura común en la pintura de vasos de Atenas. "
+    "&#9888; La palabra está en un solo versículo del Nuevo Testamento, <a href=\"colossians-3.es.html#v3-11\">Colosenses 3:11</a>, «bárbaro, escita, esclavo, libre; sino "
+    "que Cristo es todo y en todos» (véase <a href=\"diccionario.html#barbaros\"><em>barbaros</em></a>).")
+
+DICTIONARY.append(("syndesmos", "syndesmos", "σύνδεσμος", "syndesmos",
+    "A BOND, a ligament &mdash; what binds things together. &#9888; It stands in four verses of the New Testament: <a href=\"acts-8.html#v8-23\">Acts 8:23</a>, "
+    "&lsquo;the bond of wickedness&rsquo;; <a href=\"ephesians-4.html#v4-3\">Ephesians 4:3</a>, &lsquo;the bond of peace&rsquo;; <a href=\"colossians-2.html#v2-19\">Colossians 2:19</a>, the &lsquo;ligaments&rsquo; that hold "
+    "the body together; and <a href=\"colossians-3.html#v3-14\">Colossians 3:14</a>, love, &lsquo;the bond of maturity.&rsquo; KJV &lsquo;the bond of perfectness,&rsquo; NWT 1984 &lsquo;a "
+    "perfect bond of union.&rsquo;",
+    ("Acts", 8, 23)))
+DICTIONARY_ES["syndesmos"] = ("sýndesmos",
+    "UN VÍNCULO, un ligamento &mdash; lo que ata cosas entre sí. &#9888; Está en cuatro versículos del Nuevo Testamento: <a href=\"acts-8.es.html#v8-23\">Hechos 8:23</a>, "
+    "«atadura de injusticia»; <a href=\"ephesians-4.es.html#v4-3\">Efesios 4:3</a>, «el vínculo de la paz»; <a href=\"colossians-2.es.html#v2-19\">Colosenses 2:19</a>, los «ligamentos» que mantienen unido el "
+    "cuerpo; y <a href=\"colossians-3.es.html#v3-14\">Colosenses 3:14</a>, el amor, «el vínculo de la madurez». RV 1909 «el vínculo de la perfección», RV60 «el vínculo perfecto».")
+
+DICTIONARY.append(("brabeuo", "brabeuō", "βραβεύω", "brabeuō",
+    "TO BE UMPIRE, to decide a contest and award the prize &mdash; the verb of the <em>brabeus</em>, the umpire. &#9888; It stands in one "
+    "verse of the New Testament, <a href=\"colossians-3.html#v3-15\">Colossians 3:15</a>, &lsquo;let the peace of Christ be umpire in your hearts.&rsquo; Its compound "
+    "<em>katabrabeuō</em>, &lsquo;disqualify,&rsquo; is the false umpire of <a href=\"colossians-2.html#v2-18\">Colossians 2:18</a> (see <a href=\"dictionary.html#katabrabeuo\"><em>katabrabeuō</em></a>), and the "
+    "prize itself is the <a href=\"dictionary.html#brabeion\"><em>brabeion</em></a>. KJV &lsquo;rule,&rsquo; NWT 1984 &lsquo;control.&rsquo;",
+    ("Colossians", 3, 15)))
+DICTIONARY_ES["brabeuo"] = ("brabeúō",
+    "SER ÁRBITRO, decidir una competición y dar el premio &mdash; el verbo del <em>brabeus</em>, el árbitro. &#9888; Está en un solo "
+    "versículo del Nuevo Testamento, <a href=\"colossians-3.es.html#v3-15\">Colosenses 3:15</a>, «que la paz de Cristo sea árbitro en sus corazones». Su compuesto "
+    "<em>katabrabeuō</em>, «descalificar», es el árbitro falso de <a href=\"colossians-2.es.html#v2-18\">Colosenses 2:18</a> (véase <a href=\"diccionario.html#katabrabeuo\"><em>katabrabeuō</em></a>), y el premio "
+    "mismo es el <a href=\"diccionario.html#brabeion\"><em>brabeion</em></a>. RV60 «gobierne», TNM 1987 «controle».")
+
+DICTIONARY.append(("erethizo", "erethizō", "ἐρεθίζω", "erethizō",
+    "TO STIR UP, to provoke, to irritate &mdash; good or bad depending on what is stirred. &#9888; It stands in two verses of the New "
+    "Testament: <a href=\"2-corinthians-9.html#v2\">2 Corinthians 9:2</a>, where the zeal of Achaia &lsquo;has stirred up the majority&rsquo; to give, and <a href=\"colossians-3.html#v3-21\">Colossians 3:21</a>, "
+    "&lsquo;Fathers, do not irritate your children, so that they do not lose heart.&rsquo; KJV &lsquo;provoke not your children to anger,&rsquo; "
+    "NIV &lsquo;do not embitter your children.&rsquo;",
+    ("Colossians", 3, 21)))
+DICTIONARY_ES["erethizo"] = ("erethízō",
+    "AGITAR, provocar, irritar &mdash; bueno o malo según lo que se agite. &#9888; Está en dos versículos del Nuevo Testamento: "
+    "<a href=\"2-corinthians-9.es.html#v2\">2 Corintios 9:2</a>, donde el entusiasmo de Acaya «ha motivado a la mayoría» a dar, y <a href=\"colossians-3.es.html#v3-21\">Colosenses 3:21</a>, «Padres, no irriten a sus "
+    "hijos, para que no se desanimen». RV60 «no exasperéis a vuestros hijos», RV 1909 «no irritéis á vuestros hijos».")
+
+
+_gal3_fix([
+    ("Romans 1:14; and 1 Corinthians 14:11 and Colossians 3:11 (the last two not yet on these pages).",
+     "<a href=\"romans-1.html#v14\">Romans 1:14</a>; and <a href=\"1-corinthians-14.html#v11\">1 Corinthians 14:11</a> and <a href=\"colossians-3.html#v3-11\">Colossians 3:11</a>."),
+    ("Romanos 1:14; 1 Corintios 14:11 y Colosenses 3:11 (los dos últimos todavía no en estas páginas).",
+     "<a href=\"romans-1.es.html#v14\">Romanos 1:14</a>; <a href=\"1-corinthians-14.es.html#v11\">1 Corintios 14:11</a> y <a href=\"colossians-3.es.html#v3-11\">Colosenses 3:11</a>."),
+    ("Ephesians 6:9</a>, Colossians 3:25 and James 2:1; the verb",
+     "Ephesians 6:9</a>, <a href=\"colossians-3.html#v3-25\">Colossians 3:25</a> and James 2:1; the verb"),
+    ("(Colossians 3:25 and James 2:1 and 2:9 not yet on these pages)", "(James 2:1 and 2:9 not yet on these pages)"),
+    ("Efesios 6:9</a>, Colosenses 3:25 y Santiago 2:1; el verbo",
+     "Efesios 6:9</a>, <a href=\"colossians-3.es.html#v3-25\">Colosenses 3:25</a> y Santiago 2:1; el verbo"),
+    ("(Colosenses 3:25 y Santiago 2:1 y 2:9 todavía no en estas páginas)", "(Santiago 2:1 y 2:9 todavía no en estas páginas)"),
+    (", and Colossians 3:12 and 1 Peter 5:5 (those two not yet on these pages).",
+     ", <a href=\"colossians-3.html#v3-12\">Colossians 3:12</a>, and 1 Peter 5:5 (not yet on these pages)."),
+    (", y Colosenses 3:12 y 1 Pedro 5:5 (esos dos todavía no en estas páginas).",
+     ", <a href=\"colossians-3.es.html#v3-12\">Colosenses 3:12</a>, y 1 Pedro 5:5 (todavía no en estas páginas)."),
+])
+
+XREFS.extend([
+    (("Colossians", 2, 12), ("Colossians", 3, 1), "raised with Christ"),
+    (("Ephesians", 1, 20), ("Colossians", 3, 1), "seated at the right hand"),
+    (("Mark", 12, 36), ("Colossians", 3, 1), "sit at my right hand"),
+    (("Philippians", 3, 19), ("Colossians", 3, 2), "where the mind is set"),
+    (("Ephesians", 5, 5), ("Colossians", 3, 5), "greed is idolatry"),
+    (("Ephesians", 5, 6), ("Colossians", 3, 6), "the sons of disobedience"),
+    (("Ephesians", 4, 31), ("Colossians", 3, 8), "anger, fury, malice, slander"),
+    (("Ephesians", 4, 22), ("Colossians", 3, 9), "the old man"),
+    (("Genesis", 1, 27), ("Colossians", 3, 10), "the image of the creator"),
+    (("2 Corinthians", 4, 16), ("Colossians", 3, 10), "renewed"),
+    (("Galatians", 3, 28), ("Colossians", 3, 11), "no Greek and Jew, slave, free"),
+    (("Acts", 28, 2), ("Colossians", 3, 11), "barbarians"),
+    (("Ephesians", 4, 2), ("Colossians", 3, 12), "humility, gentleness, patience"),
+    (("Ephesians", 4, 32), ("Colossians", 3, 13), "freely forgiving"),
+    (("Ephesians", 4, 3), ("Colossians", 3, 14), "the bond"),
+    (("Colossians", 2, 18), ("Colossians", 3, 15), "umpire"),
+    (("Ephesians", 5, 19), ("Colossians", 3, 16), "psalms, hymns, spiritual songs"),
+    (("Ephesians", 5, 20), ("Colossians", 3, 17), "in the name of the Lord, giving thanks"),
+    (("Ephesians", 5, 22), ("Colossians", 3, 18), "wives"),
+    (("Ephesians", 6, 4), ("Colossians", 3, 21), "fathers and children"),
+    (("Ephesians", 6, 5), ("Colossians", 3, 22), "slaves"),
+    (("Romans", 2, 11), ("Colossians", 3, 25), "no partiality"),
+])
+
+CHAPTER_ART["col3"] = [dict(
+    file="epiktetos-scythian-archer-plate.jpg",
+    title="Scythian archer",   title_es="Arquero escita",
+    artist="Epiktetos (signed)",
+    year="about 520–500 BC",
+    location="British Museum, London",
+    location_es="British Museum, Londres",
+    alt="Red-figure painting on the inside of a black Greek plate: an archer in a tall pointed cap with long flaps, and a close-fitting "
+        "suit patterned with small spots, runs to the right, holding a strung bow out in front of him and an arrow in his other hand, a "
+        "scaled quiver hanging at his hip. Greek letters run around the edge of the plate.",
+    note="&#9888; An Athenian painter&rsquo;s Scythian, in the patterned dress by which Greek artists marked these horsemen of the steppes. &lsquo;Barbarian, Scythian, slave, free; but Christ is all things and in all&rsquo; (<a href=\"colossians-3.html#v3-11\">verse 11</a>).",
+    note_es="&#9888; Un escita pintado por un ateniense, con el traje estampado con que los artistas griegos señalaban a estos jinetes de las estepas. «Bárbaro, escita, esclavo, libre; sino que Cristo es todo y en todos» (<a href=\"colossians-3.es.html#v3-11\">versículo 11</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Skythian_archer_plate_BM_E135_by_Epiktetos.jpg",
+)]
+
+CHRON_CHAPTERS["col3"] = dict(era='apostolic',
+    when="Raised with Christ, the readers are to put off the old man and put on the new, where there is no Greek and Jew, barbarian, Scythian, slave, free; then the household instructions to wives and husbands, children and fathers, and slaves.",
+    clock="Undated by the text; Paul writes as a prisoner, traditionally from Rome, and the letter's authorship is argued.")
