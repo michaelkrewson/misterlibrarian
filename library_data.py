@@ -39259,3 +39259,155 @@ CHRON_CHAPTERS["1th4"] = dict(era='apostolic',
     when="Instructions on holiness, brotherly love and a quiet working life, and then comfort for the grieving: the dead in Christ will rise first, and the living will be snatched up with them to meet the Lord.",
     clock="c. AD 50–51, from Corinth, a few months after the founding of the congregation; some of its members had already died.")
 
+# ---- 1 Thessalonians 5 -----------------------------------------------------------
+DICTIONARY.append(('aiphnidios', 'aiphnidios', 'αἰφνίδιος', 'aiphnidios',
+    'SUDDEN, unforeseen. &#9888; It stands in two verses of the New Testament, both of a day that arrives without warning and both with the verb <em>ephist&#275;mi</em>, to come upon: <a href="luke-21.html#v21-34">Luke 21:34</a>, &lsquo;and that day come upon you suddenly,&rsquo; and <a href="1-thessalonians-5.html#v5-3">1 Thessalonians 5:3</a>, &lsquo;then sudden destruction comes upon them.&rsquo; KJV &lsquo;sudden destruction.&rsquo;',
+    ('1 Thessalonians', 5, 3)))
+DICTIONARY_ES['aiphnidios'] = ('aiphnídios',
+    'REPENTINO, imprevisto. &#9888; Está en dos versículos del Nuevo Testamento, ambos de un día que llega sin aviso y ambos con el verbo <em>ephist&#275;mi</em>, sobrevenir: <a href="luke-21.es.html#v21-34">Lucas 21:34</a>, «y les sorprenda de repente aquel día», y <a href="1-thessalonians-5.es.html#v5-3">1 Tesalonicenses 5:3</a>, «entonces les sobreviene una destrucción repentina». RV60 «destrucción repentina».')
+
+DICTIONARY.append(('asphaleia', 'asphaleia', 'ἀσφάλεια', 'asphaleia',
+    'SECURITY, safety, certainty &mdash; from <em>asphal&#275;s</em>, &lsquo;not liable to fall,&rsquo; and so firm, safe, sure. &#9888; It stands in three verses of the New Testament: <a href="luke-1.html#v4">Luke 1:4</a>, &lsquo;the certainty of the things about which you were instructed&rsquo;; <a href="acts-5.html#v5-23">Acts 5:23</a>, the prison &lsquo;locked with complete security&rsquo;; and <a href="1-thessalonians-5.html#v5-3">1 Thessalonians 5:3</a>, &lsquo;Peace and security,&rsquo; the slogan readers hear either as the false peace the prophets warned against or as the peace and security Rome claimed to bring. The Vulgate has <em>securitas</em>; KJV &lsquo;Peace and safety.&rsquo;',
+    ('1 Thessalonians', 5, 3)))
+DICTIONARY_ES['asphaleia'] = ('aspháleia',
+    'SEGURIDAD, certeza &mdash; de <em>asphal&#275;s</em>, «que no puede caer», y así firme, seguro, cierto. &#9888; Está en tres versículos del Nuevo Testamento: <a href="luke-1.es.html#v4">Lucas 1:4</a>, «la certeza de las cosas en que fuiste instruido»; <a href="acts-5.es.html#v5-23">Hechos 5:23</a>, la cárcel «cerrada con toda seguridad»; y <a href="1-thessalonians-5.es.html#v5-3">1 Tesalonicenses 5:3</a>, «Paz y seguridad», el lema que los lectores oyen o como la falsa paz contra la que advertían los profetas o como la paz y la seguridad que Roma decía traer. La Vulgata tiene <em>securitas</em>; RV60 «Paz y seguridad».')
+
+DICTIONARY.append(('gregoreo', 'grēgoreō', 'γρηγορέω', 'grēgoreō',
+    'TO STAY AWAKE, to keep watch &mdash; a verb formed from <em>egr&#275;gora</em>, &lsquo;I am awake,&rsquo; the perfect of <em>egeir&#333;</em>, to rouse. &#9888; It is Jesus&rsquo; word for readiness: the householder who &lsquo;would have stayed awake&rsquo; at <a href="matthew-24.html#v24-43">Matthew 24:43</a>, &lsquo;Keep watch&rsquo; at <a href="mark-13.html#v13-35">Mark 13:35</a>, and &lsquo;Keep watch and pray&rsquo; in Gethsemane at <a href="mark-14.html#v14-38">Mark 14:38</a>. Paul uses it at <a href="1-corinthians-16.html#v13">1 Corinthians 16:13</a>, &lsquo;Stay awake, stand firm in the faith,&rsquo; and <a href="colossians-4.html#v4-2">Colossians 4:2</a>; at <a href="1-thessalonians-5.html#v5-6">1 Thessalonians 5:6</a>, &lsquo;let us stay awake and be sober,&rsquo; and four verses later &lsquo;whether we are awake or asleep&rsquo; means alive or dead. KJV &lsquo;watch.&rsquo;',
+    ('1 Thessalonians', 5, 6)))
+DICTIONARY_ES['gregoreo'] = ('grēgoréō',
+    'MANTENERSE DESPIERTO, velar &mdash; un verbo formado de <em>egr&#275;gora</em>, «estoy despierto», el perfecto de <em>egeir&#333;</em>, despertar. &#9888; Es la palabra de Jesús para estar preparados: el dueño de casa que «habría permanecido despierto» en <a href="matthew-24.es.html#v24-43">Mateo 24:43</a>, «Manténganse alerta» en <a href="mark-13.es.html#v13-35">Marcos 13:35</a>, y «Manténganse alerta y oren» en Getsemaní en <a href="mark-14.es.html#v14-38">Marcos 14:38</a>. Pablo lo usa en <a href="1-corinthians-16.es.html#v13">1 Corintios 16:13</a>, «Estén despiertos, permanezcan firmes en la fe», y <a href="colossians-4.es.html#v4-2">Colosenses 4:2</a>; en <a href="1-thessalonians-5.es.html#v5-6">1 Tesalonicenses 5:6</a>, «mantengámonos despiertos y seamos sobrios», y cuatro versículos después «ya sea que estemos despiertos o dormidos» significa vivos o muertos. RV60 «velemos».')
+
+DICTIONARY.append(('nepho', 'nēphō', 'νήφω', 'nēphō',
+    'TO BE SOBER, not drunk, and so clear-headed. &#9888; The verb stands in six verses of the New Testament: <a href="1-thessalonians-5.html#v5-6">1 Thessalonians 5:6</a> and <a href="1-thessalonians-5.html#v5-8">1 Thessalonians 5:8</a>, where the night of sleep and drunkenness is in view (&lsquo;those who get drunk are drunk at night&rsquo;); <a href="1-peter-1.html#v13">1 Peter 1:13</a>, &lsquo;being fully sober&rsquo;; and 2 Timothy 4:5 and 1 Peter 4:7 and 5:8 (these three not yet on these pages). The adjective <em>n&#275;phalios</em>, &lsquo;temperate,&rsquo; is a separate word. KJV &lsquo;be sober&rsquo;; NWT 1984 &lsquo;keep our senses.&rsquo;',
+    ('1 Thessalonians', 5, 6)))
+DICTIONARY_ES['nepho'] = ('nḗphō',
+    'ESTAR SOBRIO, no ebrio, y así lúcido. &#9888; El verbo está en seis versículos del Nuevo Testamento: <a href="1-thessalonians-5.es.html#v5-6">1 Tesalonicenses 5:6</a> y <a href="1-thessalonians-5.es.html#v5-8">1 Tesalonicenses 5:8</a>, donde está a la vista la noche del sueño y de la borrachera («los que se emborrachan, de noche están ebrios»), <a href="1-peter-1.es.html#v13">1 Pedro 1:13</a>, «siendo del todo sobrios»; y 2 Timoteo 4:5 y 1 Pedro 4:7 y 5:8 (estos tres todavía no en estas páginas). El adjetivo <em>n&#275;phalios</em>, «sobrio, moderado», es otra palabra. RV60 «seamos sobrios»; TNM 1987 «mantengamos nuestro juicio».')
+
+DICTIONARY.append(('ataktos', 'ataktos', 'ἄτακτος', 'ataktos',
+    'DISORDERLY, out of order &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>tass&#333;</em>, to arrange or draw up in order; a word used of soldiers who break ranks. &#9888; The adjective stands in one verse of the New Testament, <a href="1-thessalonians-5.html#v5-14">1 Thessalonians 5:14</a>, &lsquo;admonish the disorderly&rsquo;; the adverb <em>atakt&#333;s</em> at 2 Thessalonians 3:6 and 3:11 and the verb <em>atakte&#333;</em> at 3:7 describe some who are &lsquo;doing no work&rsquo; (not yet on these pages). Readers take the word as disorder in general or as idleness in particular. ASV &lsquo;the disorderly,&rsquo; KJV &lsquo;them that are unruly,&rsquo; NIV &lsquo;those who are idle and disruptive.&rsquo;',
+    ('1 Thessalonians', 5, 14)))
+DICTIONARY_ES['ataktos'] = ('átaktos',
+    'DESORDENADO, fuera de orden &mdash; <em>a-</em>, «no», y <em>tass&#333;</em>, ordenar o formar en orden; una palabra que se usaba de los soldados que rompen filas. &#9888; El adjetivo está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-5.es.html#v5-14">1 Tesalonicenses 5:14</a>, «amonesten a los desordenados»; el adverbio <em>atakt&#333;s</em> en 2 Tesalonicenses 3:6 y 3:11 y el verbo <em>atakte&#333;</em> en 3:7 describen a algunos que «no trabajan en nada» (todavía no en estas páginas). Los lectores entienden la palabra como desorden en general o como ociosidad en particular. TNM 1987 «los desordenados», RV60 «los ociosos», NVI «los holgazanes».')
+
+DICTIONARY.append(('oligopsychos', 'oligopsychos', 'ὀλιγόψυχος', 'oligopsychos',
+    'FAINTHEARTED, discouraged &mdash; <em>oligos</em>, &lsquo;little,&rsquo; and <em>psych&#275;</em>, &lsquo;soul&rsquo;: small-souled. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-5.html#v5-14">1 Thessalonians 5:14</a>, &lsquo;comfort the fainthearted.&rsquo; KJV &lsquo;comfort the feebleminded&rsquo;; NWT 1984 &lsquo;speak consolingly to the depressed souls.&rsquo;',
+    ('1 Thessalonians', 5, 14)))
+DICTIONARY_ES['oligopsychos'] = ('oligópsychos',
+    'DE POCO ÁNIMO, desanimado &mdash; <em>oligos</em>, «poco», y <em>psych&#275;</em>, «alma»: de alma pequeña. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-5.es.html#v5-14">1 Tesalonicenses 5:14</a>, «consuelen a los de poco ánimo». RV60 «que alentéis a los de poco ánimo»; TNM 1987 «hablen confortadoramente a las almas abatidas».')
+
+DICTIONARY.append(('adialeiptos', 'adialeiptōs', 'ἀδιαλείπτως', 'adialeiptōs',
+    'UNCEASINGLY, without a break &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>dialeip&#333;</em>, to leave a gap. &#9888; The adverb stands in four verses of the New Testament, all in Paul and all of prayer or thanks: <a href="romans-1.html#v9">Romans 1:9</a>, <a href="1-thessalonians-1.html#v2">1 Thessalonians 1:2</a>, <a href="1-thessalonians-2.html#v2-13">1 Thessalonians 2:13</a> and <a href="1-thessalonians-5.html#v5-17">1 Thessalonians 5:17</a>, &lsquo;Pray unceasingly,&rsquo; one of the two two-word verses of the Greek text followed here. The adjective <em>adialeiptos</em> is at <a href="romans-9.html#v9-2">Romans 9:2</a>, &lsquo;unceasing pain,&rsquo; and <a href="2-timothy-1.html#v3">2 Timothy 1:3</a>. KJV &lsquo;without ceasing.&rsquo;',
+    ('1 Thessalonians', 5, 17)))
+DICTIONARY_ES['adialeiptos'] = ('adialeíptōs',
+    'SIN CESAR, sin interrupción &mdash; <em>a-</em>, «no», y <em>dialeip&#333;</em>, dejar un hueco. &#9888; El adverbio está en cuatro versículos del Nuevo Testamento, todos de Pablo y todos de oración o de gratitud: <a href="romans-1.es.html#v9">Romanos 1:9</a>, <a href="1-thessalonians-1.es.html#v2">1 Tesalonicenses 1:2</a>, <a href="1-thessalonians-2.es.html#v2-13">1 Tesalonicenses 2:13</a> y <a href="1-thessalonians-5.es.html#v5-17">1 Tesalonicenses 5:17</a>, «Oren sin cesar», uno de los dos versículos de dos palabras del texto griego que se sigue aquí. El adjetivo <em>adialeiptos</em> está en <a href="romans-9.es.html#v9-2">Romanos 9:2</a>, «un dolor incesante», y <a href="2-timothy-1.es.html#v3">2 Timoteo 1:3</a>. RV60 «Orad sin cesar».')
+
+DICTIONARY.append(('eidos', 'eidos', 'εἶδος', 'eidos',
+    'FORM, outward appearance, and so a sort or kind &mdash; from the root of <em>eidon</em>, &lsquo;I saw.&rsquo; &#9888; It stands in five verses of the New Testament: <a href="luke-3.html#v3-22">Luke 3:22</a>, the Spirit &lsquo;in bodily form&rsquo;; <a href="luke-9.html#v9-29">Luke 9:29</a>, &lsquo;the appearance of his face became different&rsquo;; <a href="john-5.html#v5-37">John 5:37</a>, &lsquo;nor seen his form&rsquo;; <a href="2-corinthians-5.html#v7">2 Corinthians 5:7</a>, &lsquo;not by sight&rsquo;; and <a href="1-thessalonians-5.html#v5-22">1 Thessalonians 5:22</a>, &lsquo;Keep away from every form of evil.&rsquo; At the last, the KJV &lsquo;all appearance of evil,&rsquo; after the Vulgate&rsquo;s <em>specie</em>, is often quoted as a rule to avoid even what looks wrong; the ASV has &lsquo;every form of evil&rsquo; and the NIV &lsquo;every kind of evil.&rsquo;',
+    ('1 Thessalonians', 5, 22)))
+DICTIONARY_ES['eidos'] = ('eîdos',
+    'FORMA, aspecto exterior, y así clase o especie &mdash; de la raíz de <em>eidon</em>, «vi». &#9888; Está en cinco versículos del Nuevo Testamento: <a href="luke-3.es.html#v3-22">Lucas 3:22</a>, el Espíritu «en forma corporal»; <a href="luke-9.es.html#v9-29">Lucas 9:29</a>, «el aspecto de su rostro se hizo diferente»; <a href="john-5.es.html#v5-37">Juan 5:37</a>, «ni han visto su forma»; <a href="2-corinthians-5.es.html#v7">2 Corintios 5:7</a>, «no por vista»; y <a href="1-thessalonians-5.es.html#v5-22">1 Tesalonicenses 5:22</a>, «Apártense de toda forma de mal». En el último, la KJV inglesa «all appearance of evil», según la <em>specie</em> de la Vulgata, se cita a menudo como regla para evitar incluso lo que parece malo; la RV60 dice «toda especie de mal» y la NVI «toda clase de mal».')
+
+DICTIONARY.append(('holoteles', 'holotelēs', 'ὁλοτελής', 'holotelēs',
+    'COMPLETE, through and through &mdash; <em>holos</em>, &lsquo;whole,&rsquo; and <em>telos</em>, &lsquo;end&rsquo;: whole all the way to the end. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-5.html#v5-23">1 Thessalonians 5:23</a>, &lsquo;may the God of peace himself sanctify you completely,&rsquo; beside its near neighbor <em>holokl&#275;ros</em>, which says the same thing from another side: nothing missing. KJV &lsquo;wholly&rsquo;; NIV &lsquo;through and through.&rsquo;',
+    ('1 Thessalonians', 5, 23)))
+DICTIONARY_ES['holoteles'] = ('holotelḗs',
+    'COMPLETO, de parte a parte &mdash; <em>holos</em>, «entero», y <em>telos</em>, «fin»: entero hasta el fin. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-5.es.html#v5-23">1 Tesalonicenses 5:23</a>, «que el mismo Dios de paz los santifique por completo», junto a su vecino cercano <em>holokl&#275;ros</em>, que dice lo mismo desde otro lado: que no falte nada. RV60 «por completo»; TNM 1987 «completamente».')
+
+DICTIONARY.append(('holokleros', 'holoklēros', 'ὁλόκληρος', 'holoklēros',
+    'WHOLE, intact, with every part present &mdash; <em>holos</em>, &lsquo;whole,&rsquo; and <em>kl&#275;ros</em>, &lsquo;lot, share&rsquo;: having its whole share. &#9888; The adjective stands in two verses of the New Testament: <a href="1-thessalonians-5.html#v5-23">1 Thessalonians 5:23</a>, &lsquo;may your spirit and soul and body be kept whole,&rsquo; and <a href="james-1.html#v4">James 1:4</a>, &lsquo;perfect and complete, lacking in nothing&rsquo;; its noun <em>holokl&#275;ria</em> is the &lsquo;perfect health&rsquo; of the healed man at <a href="acts-3.html#v3-16">Acts 3:16</a>. Its near neighbor in 1 Thessalonians 5:23 is <em>holotel&#275;s</em>, &lsquo;completely.&rsquo; KJV &lsquo;your whole spirit.&rsquo;',
+    ('1 Thessalonians', 5, 23)))
+DICTIONARY_ES['holokleros'] = ('holóklēros',
+    'ENTERO, intacto, con todas sus partes &mdash; <em>holos</em>, «entero», y <em>kl&#275;ros</em>, «suerte, porción»: que tiene toda su porción. &#9888; El adjetivo está en dos versículos del Nuevo Testamento: <a href="1-thessalonians-5.es.html#v5-23">1 Tesalonicenses 5:23</a>, «que su espíritu y alma y cuerpo sean guardados enteros», y <a href="james-1.es.html#v4">Santiago 1:4</a>, «perfectos y cabales, sin que les falte cosa alguna»; su sustantivo <em>holokl&#275;ria</em> es la «perfecta sanidad» del hombre sanado en <a href="acts-3.es.html#v3-16">Hechos 3:16</a>. Su vecino cercano en 1 Tesalonicenses 5:23 es <em>holotel&#275;s</em>, «por completo». RV60 «todo vuestro ser».')
+
+DICTIONARY.append(('enorkizo', 'enorkizō', 'ἐνορκίζω', 'enorkizō',
+    'TO PUT UNDER OATH, to adjure &mdash; <em>en</em> and <em>horkiz&#333;</em>, to make someone swear, from <em>horkos</em>, &lsquo;oath.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-5.html#v5-27">1 Thessalonians 5:27</a>, &lsquo;I put you under oath by the Lord to have this letter read to all the brothers,&rsquo; where the Byzantine text has the simple <em>horkiz&#333;</em>. That simple verb is the demoniac&rsquo;s &lsquo;I adjure you by God&rsquo; at <a href="mark-5.html#v5-7">Mark 5:7</a> and the exorcists&rsquo; formula at <a href="acts-19.html#v19-13">Acts 19:13</a>; the compound <em>exorkiz&#333;</em> is the high priest&rsquo;s at <a href="matthew-26.html#v26-63">Matthew 26:63</a>. KJV &lsquo;I charge you by the Lord&rsquo;; ASV &lsquo;I adjure you by the Lord.&rsquo;',
+    ('1 Thessalonians', 5, 27)))
+DICTIONARY_ES['enorkizo'] = ('enorkízō',
+    'PONER BAJO JURAMENTO, conjurar &mdash; <em>en</em> y <em>horkiz&#333;</em>, hacer jurar a alguien, de <em>horkos</em>, «juramento». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-5.es.html#v5-27">1 Tesalonicenses 5:27</a>, «Los pongo bajo juramento, por el Señor, de que esta carta se lea a todos los hermanos», donde el texto bizantino tiene el simple <em>horkiz&#333;</em>. Ese verbo simple es el «Te conjuro por Dios» del endemoniado en <a href="mark-5.es.html#v5-7">Marcos 5:7</a> y la fórmula de los exorcistas en <a href="acts-19.es.html#v19-13">Hechos 19:13</a>; el compuesto <em>exorkiz&#333;</em> es el del sumo sacerdote en <a href="matthew-26.es.html#v26-63">Mateo 26:63</a>. RV60 «Os conjuro por el Señor».')
+
+ENCYCLOPEDIA.append(dict(slug='justin-martyr', name='Justin Martyr', kind='person', aliases=['Justin Martyr'], refs=[('1 Thessalonians', 5, 26)], videos=[],
+    desc='A Christian teacher and writer of the second century, born at Flavia Neapolis in Samaria (modern Nablus) about AD 100, who taught at Rome and was beheaded there about 165 under the city prefect Junius Rusticus. &#9888; His <em>First Apology</em>, addressed to the emperor Antoninus Pius (who reigned 138&ndash;161), defends the Christians and describes what they did when they met. After the prayers that follow a baptism, he writes, &lsquo;Having ended the prayers, we salute one another with a kiss&rsquo; (chapter 65), the holy kiss of <a href="1-thessalonians-5.html#v5-26">1 Thessalonians 5:26</a> and <a href="romans-16.html#v16-16">Romans 16:16</a>; then bread and a cup of wine mixed with water are brought to the one presiding.'))
+ENCYCLOPEDIA_ES['justin-martyr'] = ('Justino Mártir',
+    'Un maestro y escritor cristiano del siglo II, nacido en Flavia Neápolis de Samaria (la actual Nablus) hacia el año 100, que enseñó en Roma y fue decapitado allí hacia el 165 bajo el prefecto de la ciudad Junio Rústico. &#9888; Su <em>Primera Apología</em>, dirigida al emperador Antonino Pío (que reinó de 138 a 161), defiende a los cristianos y describe lo que hacían al reunirse. Tras las oraciones que siguen a un bautismo, escribe: «Terminadas las oraciones, nos saludamos unos a otros con un beso» (capítulo 65), el beso santo de <a href="1-thessalonians-5.es.html#v5-26">1 Tesalonicenses 5:26</a> y <a href="romans-16.es.html#v16-16">Romanos 16:16</a>; luego se lleva pan y una copa de vino mezclado con agua al que preside.')
+
+def _1th5_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1th5_fix([(' and <a href="2-corinthians-13.html#v12">2 Corinthians 13:12</a>, now on these pages; 1 Thessalonians 5:26 and 1 Peter 5:14, not yet)', ', <a href="2-corinthians-13.html#v12">2 Corinthians 13:12</a> and <a href="1-thessalonians-5.html#v5-26">1 Thessalonians 5:26</a>, now on these pages; 1 Peter 5:14, not yet)'), (' y <a href="2-corinthians-13.es.html#v12">2 Corintios 13:12</a>, ya en estas páginas; 1 Tesalonicenses 5:26 y 1 Pedro 5:14, todavía no)', ', <a href="2-corinthians-13.es.html#v12">2 Corintios 13:12</a> y <a href="1-thessalonians-5.es.html#v5-26">1 Tesalonicenses 5:26</a>, ya en estas páginas; 1 Pedro 5:14, todavía no)'), ('1 Thessalonians 5:27 (<em>enorkizō</em>; not yet on these pages)', '<a href="1-thessalonians-5.html#v5-27">1 Thessalonians 5:27</a> (<em>enorkizō</em>)'), ('1 Tesalonicenses 5:27 (<em>enorkizō</em>; todavía no en estas páginas)', '<a href="1-thessalonians-5.es.html#v5-27">1 Tesalonicenses 5:27</a> (<em>enorkizō</em>)'), ('and 1 Thessalonians 5:13, of esteeming those who lead &lsquo;very highly in love&rsquo; (not yet on these pages)', 'and <a href="1-thessalonians-5.html#v5-13">1 Thessalonians 5:13</a>, of esteeming those who lead &lsquo;very highly in love&rsquo;'), ('y 1 Tesalonicenses 5:13, de tener en mucha estima, en amor, a los que dirigen (todavía no en estas páginas)', 'y <a href="1-thessalonians-5.es.html#v5-13">1 Tesalonicenses 5:13</a>, de tener en altísima estima, en amor, a los que dirigen'), ('and 1 Thessalonians 5:13 (not yet on these pages)', 'and <a href="1-thessalonians-5.html#v5-13">1 Thessalonians 5:13</a>'), ('y 1 Tesalonicenses 5:13 (todavía no en estas páginas)', 'y <a href="1-thessalonians-5.es.html#v5-13">1 Tesalonicenses 5:13</a>')])
+
+XREFS.extend([
+    (("Acts", 1, 7), ("1 Thessalonians", 5, 1), "times and seasons"),
+    (("Zephaniah", 1, 14), ("1 Thessalonians", 5, 2), "the day"),
+    (("Matthew", 24, 43), ("1 Thessalonians", 5, 2), "like a thief"),
+    (("Luke", 12, 39), ("1 Thessalonians", 5, 2), "like a thief"),
+    (("Revelation", 3, 3), ("1 Thessalonians", 5, 2), "like a thief"),
+    (("Luke", 21, 34), ("1 Thessalonians", 5, 3), "suddenly"),
+    (("Matthew", 24, 8), ("1 Thessalonians", 5, 3), "birth pangs"),
+    (("John", 12, 35), ("1 Thessalonians", 5, 4), "overtake"),
+    (("Luke", 16, 8), ("1 Thessalonians", 5, 5), "sons of light"),
+    (("John", 12, 36), ("1 Thessalonians", 5, 5), "sons of light"),
+    (("Mark", 14, 38), ("1 Thessalonians", 5, 6), "keep watch"),
+    (("Ephesians", 6, 14), ("1 Thessalonians", 5, 8), "the breastplate"),
+    (("Ephesians", 6, 17), ("1 Thessalonians", 5, 8), "the helmet"),
+    (("Romans", 13, 12), ("1 Thessalonians", 5, 8), "the armor of light"),
+    (("1 Thessalonians", 1, 10), ("1 Thessalonians", 5, 9), "the wrath"),
+    (("Mark", 5, 39), ("1 Thessalonians", 5, 10), "sleeping"),
+    (("1 Thessalonians", 4, 18), ("1 Thessalonians", 5, 11), "comfort one another"),
+    (("Romans", 12, 8), ("1 Thessalonians", 5, 12), "the one who leads"),
+    (("Romans", 12, 18), ("1 Thessalonians", 5, 13), "be at peace"),
+    (("1 Thessalonians", 4, 11), ("1 Thessalonians", 5, 14), "work with your hands"),
+    (("Romans", 12, 17), ("1 Thessalonians", 5, 15), "evil for evil"),
+    (("Philippians", 4, 4), ("1 Thessalonians", 5, 16), "rejoice always"),
+    (("Luke", 18, 1), ("1 Thessalonians", 5, 17), "always to pray"),
+    (("Ephesians", 6, 16), ("1 Thessalonians", 5, 19), "quench"),
+    (("1 Corinthians", 14, 29), ("1 Thessalonians", 5, 21), "weigh what is said"),
+    (("1 Thessalonians", 4, 3), ("1 Thessalonians", 5, 22), "keep away from"),
+    (("Deuteronomy", 6, 5), ("1 Thessalonians", 5, 23), "the whole person"),
+    (("1 Corinthians", 1, 9), ("1 Thessalonians", 5, 24), "God is faithful"),
+    (("Romans", 16, 16), ("1 Thessalonians", 5, 26), "a holy kiss"),
+    (("Colossians", 4, 16), ("1 Thessalonians", 5, 27), "the letter read"),
+    (("Acts", 18, 5), ("1 Thessalonians", 5, 28), "Timothy rejoins Paul at Corinth"),
+])
+
+CHAPTER_ART["1th5"] = [dict(
+    file="claudius-denarius-paci-augustae.jpg",
+    title="Silver denarius of Claudius: PACI AVGVSTAE",   title_es="Denario de plata de Claudio: PACI AVGVSTAE",
+    artist="Mint of Rome, under the emperor Claudius",
+    year="AD 46–47",
+    location="Coin offered at auction; photograph from Coin Archives",
+    location_es="Moneda ofrecida en subasta; fotografía de Coin Archives",
+    alt="Both sides of a small silver coin. On the left, the laureate head of the emperor Claudius facing right, with his name and titles around the edge. "
+        "On the right, a winged female figure in a long robe walking right, holding a fold of her robe below her chin and pointing a staff down at a snake, "
+        "with the words PACI AVGVSTAE around her.",
+    note="&#9888; Struck at Rome a few years before this letter, the coin salutes PACI AVGVSTAE, &lsquo;to Augustan Peace,&rsquo; with the winged figure "
+         "of Pax-Nemesis. &lsquo;When they are saying, &ldquo;Peace and security,&rdquo; then sudden destruction comes upon them&rsquo; "
+         "(<a href=\"1-thessalonians-5.html#v5-3\">verse 3</a>).",
+    note_es="&#9888; Acuñada en Roma pocos años antes de esta carta, la moneda saluda PACI AVGVSTAE, «a la Paz Augusta», con la figura alada de "
+            "Pax-Némesis. «Cuando estén diciendo: &lsquo;Paz y seguridad&rsquo;, entonces les sobreviene una destrucción repentina» "
+            "(<a href=\"1-thessalonians-5.es.html#v5-3\">versículo 3</a>).",
+    license="CC BY-SA 2.5 (photo: Coin Archives)",
+    source_url="https://commons.wikimedia.org/wiki/File:Claudius,_RIC_I_39.jpg",
+)]
+
+CHRON_CHAPTERS["1th5"] = dict(era='apostolic',
+    when="The day of the Lord comes like a thief in the night, but the readers are sons of light, to stay awake and be sober; then the last instructions, a prayer that spirit, soul and body be kept whole, the holy kiss, and an oath that the letter be read to all.",
+    clock="c. AD 50–51, from Corinth; a note added in later copies says Athens.")
+
