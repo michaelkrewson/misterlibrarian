@@ -35487,7 +35487,7 @@ CHAPTER_ART["rom11"] = [dict(
     title_es="Olivos (Romanos 11)",
     artist="Vincent van Gogh",
     artist_es="Vincent van Gogh",
-    year="Saint-R&eacute;my, November 1889",
+    year="Saint-Rémy, November 1889",
     location="Minneapolis Institute of Art (as recorded on Wikimedia Commons)",
     location_es="Minneapolis Institute of Art (seg&uacute;n el registro de Wikimedia Commons)",
     alt="An olive grove under a pale yellow sky with a round sun at the top, the sky painted in spiralling strokes. Gnarled red-brown trunks twist up from orange ground streaked with blue shadows, and the trees carry rounded masses of grey-green foliage; the trees on the left and right face each other across the middle of the picture, and low blue-violet hills show between them.",
@@ -38351,7 +38351,7 @@ CHAPTER_ART["php2"] = [dict(
     file="madox-brown-jesus-washing-peters-feet.jpg",
     title="Jesus Washing Peter&rsquo;s Feet",   title_es="Jesús lava los pies de Pedro",
     artist="Ford Madox Brown",
-    year="1852&ndash;56",
+    year="1852–56",
     location="Tate Britain, London",
     location_es="Tate Britain, Londres",
     alt="Oil painting: at a long table covered with a white cloth, Jesus, with a gold halo and a towel tied at his waist, kneels on "
@@ -38531,3 +38531,142 @@ CHAPTER_ART["php3"] = [dict(
 CHRON_CHAPTERS["php3"] = dict(era='apostolic',
     when="Paul warns against those who would circumcise gentile believers, sets his own credentials in the flesh beside 'the surpassing worth' of knowing Christ, and runs for the prize, with a citizenship in the heavens.",
     clock="Written from prison; Rome is the traditional place, and Ephesus and Caesarea are also proposed.")
+
+# ---- Colossians 2 -----------------------------------------------------------
+DICTIONARY.append(("theotes", "theotēs", "θεότης", "theotēs",
+    "DEITY &mdash; being God, the quality of the one who is God. &#9888; It stands in one verse of the New Testament, "
+    "<a href=\"colossians-2.html#v2-9\">Colossians 2:9</a>, &lsquo;in him all the fullness of deity dwells bodily.&rsquo; It is a different word from <em>theiotēs</em>, "
+    "&lsquo;divinity,&rsquo; the godlike character that can be seen in what God made, which stands in one verse, <a href=\"romans-1.html#v20\">Romans 1:20</a>, &lsquo;his "
+    "eternal power and divinity.&rsquo; KJV and ASV &lsquo;the Godhead,&rsquo; NIV &lsquo;the Deity,&rsquo; NWT 1984 &lsquo;the divine quality,&rsquo; a "
+    "rendering nearer to <em>theiotēs</em> and in line with the Witnesses&rsquo; teaching about the Son.",
+    ("Colossians", 2, 9)))
+DICTIONARY_ES["theotes"] = ("theótēs",
+    "DEIDAD &mdash; el ser Dios, la cualidad del que es Dios. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"colossians-2.es.html#v2-9\">Colosenses 2:9</a>, "
+    "«en él habita corporalmente toda la plenitud de la deidad». Es una palabra distinta de <em>theiotēs</em>, «divinidad», el carácter divino "
+    "que se ve en lo que Dios hizo, que está en un solo versículo, <a href=\"romans-1.es.html#v20\">Romanos 1:20</a>, «su eterno poder como su divinidad». RV60 «la "
+    "Deidad», RV 1909 «la divinidad», TNM 1987 «la cualidad divina», una traducción más cercana a <em>theiotēs</em> y conforme a la "
+    "enseñanza de los Testigos sobre el Hijo.")
+
+DICTIONARY.append(("cheirographon", "cheirographon", "χειρόγραφον", "cheirographon",
+    "A HANDWRITTEN DOCUMENT &mdash; <em>cheir</em>, &lsquo;hand,&rsquo; and <em>graphō</em>, &lsquo;write&rsquo;: a paper in one&rsquo;s own hand, and, "
+    "it is reported, the ordinary word for a signed note of debt. &#9888; It stands in one verse of the New Testament, <a href=\"colossians-2.html#v2-14\">Colossians 2:14</a>, "
+    "&lsquo;having blotted out the handwritten bond that stood against us, with its decrees &hellip; nailing it to the cross.&rsquo; Whether "
+    "the bond is a debt of sin or the law&rsquo;s charge is read both ways. KJV &lsquo;the handwriting of ordinances,&rsquo; ASV &lsquo;the "
+    "bond written in ordinances,&rsquo; NWT 1984 &lsquo;the handwritten document.&rsquo;",
+    ("Colossians", 2, 14)))
+DICTIONARY_ES["cheirographon"] = ("cheirógraphon",
+    "UN DOCUMENTO ESCRITO A MANO &mdash; <em>cheir</em>, «mano», y <em>graphō</em>, «escribir»: un papel de la propia mano, y, se informa, la "
+    "palabra corriente para un pagaré firmado. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"colossians-2.es.html#v2-14\">Colosenses 2:14</a>, "
+    "«habiendo borrado el documento escrito a mano que había contra nosotros, con sus decretos &hellip; clavándolo en la cruz». Si el "
+    "documento es una deuda de pecado o la acusación de la ley se lee de ambos modos. RV 1909 «la cédula de los ritos», RV60 «el acta de los "
+    "decretos», TNM 1987 «el documento manuscrito».")
+
+DICTIONARY.append(("katabrabeuo", "katabrabeuō", "καταβραβεύω", "katabrabeuō",
+    "TO DISQUALIFY, to rule a contestant out of the prize &mdash; <em>kata</em>, &lsquo;against,&rsquo; and <em>brabeuō</em>, to act as umpire. "
+    "&#9888; It stands in one verse of the New Testament, <a href=\"colossians-2.html#v2-18\">Colossians 2:18</a>, &lsquo;Let no one disqualify you.&rsquo; The prize is the "
+    "<em>brabeion</em> of <a href=\"philippians-3.html#v3-14\">Philippians 3:14</a> and <a href=\"1-corinthians-9.html#v24\">1 Corinthians 9:24</a> (see <a href=\"dictionary.html#brabeion\"><em>brabeion</em></a>). KJV &lsquo;beguile you of your "
+    "reward,&rsquo; ASV &lsquo;rob you of your prize,&rsquo; NWT 1984 &lsquo;deprive YOU of the prize,&rsquo; NIV &lsquo;disqualify you.&rsquo;",
+    ("Colossians", 2, 18)))
+DICTIONARY_ES["katabrabeuo"] = ("katabrabeúō",
+    "DESCALIFICAR, dejar a un competidor sin el premio &mdash; <em>kata</em>, «contra», y <em>brabeuō</em>, hacer de árbitro. &#9888; Está en un "
+    "solo versículo del Nuevo Testamento, <a href=\"colossians-2.es.html#v2-18\">Colosenses 2:18</a>, «Que nadie los descalifique». El premio es el <em>brabeion</em> de "
+    "<a href=\"philippians-3.es.html#v3-14\">Filipenses 3:14</a> y <a href=\"1-corinthians-9.es.html#v24\">1 Corintios 9:24</a> (véase <a href=\"diccionario.html#brabeion\"><em>brabeion</em></a>). RV60 «Nadie os prive de vuestro "
+    "premio», TNM 1987 «Que no los prive del premio nadie».")
+
+DICTIONARY.append(("embateuo", "embateuō", "ἐμβατεύω", "embateuō",
+    "TO ENTER INTO, to set foot on &mdash; to go into a place, or to go into a matter in depth. &#9888; It stands in one verse of the "
+    "New Testament, <a href=\"colossians-2.html#v2-18\">Colossians 2:18</a>, &lsquo;entering into the things he has seen&rsquo;; it is reported to be used in inscriptions of "
+    "initiates entering a sanctuary after their rites, which some readers think is the sense here. The Byzantine text adds &lsquo;not&rsquo;: "
+    "KJV &lsquo;intruding into those things which he hath not seen,&rsquo; ASV &lsquo;dwelling in the things which he hath seen,&rsquo; NWT "
+    "1984 &lsquo;&ldquo;taking his stand on&rdquo; the things he has seen.&rsquo;",
+    ("Colossians", 2, 18)))
+DICTIONARY_ES["embateuo"] = ("embateúō",
+    "ADENTRARSE, poner pie en &mdash; entrar en un lugar, o entrar a fondo en un asunto. &#9888; Está en un solo versículo del Nuevo "
+    "Testamento, <a href=\"colossians-2.es.html#v2-18\">Colosenses 2:18</a>, «adentrándose en lo que ha visto»; se informa que se usa en inscripciones de iniciados que entran "
+    "en un santuario después de sus ritos, y algunos lectores creen que ese es el sentido aquí. El texto bizantino añade «no»: RV 1909 "
+    "«metiéndose en lo que no ha visto», TNM 1987 «“plantándose en” las cosas que ha visto».")
+
+DICTIONARY.append(("ethelothreskia", "ethelothrēskia", "ἐθελοθρησκία", "ethelothrēskia",
+    "SELF-MADE WORSHIP &mdash; <em>thelō</em>, &lsquo;to will,&rsquo; and <em>thrēskeia</em>, &lsquo;worship&rsquo;: worship of one&rsquo;s own "
+    "devising. &#9888; It stands in one verse of the New Testament, <a href=\"colossians-2.html#v2-23\">Colossians 2:23</a>, beside &lsquo;humility&rsquo; and &lsquo;harsh "
+    "treatment of the body,&rsquo; and no earlier use of the word is known to the reference works, which report it as perhaps coined for the "
+    "occasion (see <a href=\"dictionary.html#threskeia\"><em>thrēskeia</em></a>). KJV &lsquo;will worship,&rsquo; NWT 1984 &lsquo;a self-imposed form of worship,&rsquo; NIV "
+    "&lsquo;self-imposed worship.&rsquo;",
+    ("Colossians", 2, 23)))
+DICTIONARY_ES["ethelothreskia"] = ("ethelothrēskía",
+    "CULTO INVENTADO POR UNO MISMO &mdash; <em>thelō</em>, «querer», y <em>thrēskeia</em>, «culto»: culto de la propia invención. &#9888; Está en un "
+    "solo versículo del Nuevo Testamento, <a href=\"colossians-2.es.html#v2-23\">Colosenses 2:23</a>, junto a «humildad» y «el trato sin miramientos del cuerpo», y las obras de "
+    "consulta no conocen un uso anterior de la palabra; se informa que quizá se acuñó para la ocasión (véase <a href=\"diccionario.html#threskeia\"><em>thrēskeia</em></a>). RV60 "
+    "«culto voluntario», TNM 1987 «una forma autoimpuesta de adoración», NVI «afectada devoción».")
+
+DICTIONARY_ES["plerophoria"] = ("plērophoría",
+    "PLENA CERTIDUMBRE &mdash; de <em>plērophoreō</em>, llevar algo hasta su plena medida, llenarlo del todo. La imagen es la de quien es "
+    "llevado por completo a la convicción, no solo persuadido; el verbo emparentado se usa de un asunto cumplido del todo y de una persona "
+    "«plenamente convencida» en su propia mente (<a href=\"romans-14.es.html#v14-5\">Romanos 14:5</a>). En <a href=\"1-thessalonians-1.es.html#v5\">1 Tesalonicenses 1:5</a> es el cuarto elemento de la lista de "
+    "cómo llegó el evangelio &mdash;palabra, poder, espíritu santo y mucha <em>plērophoria</em>&mdash; y describe el estado que produjo en los "
+    "oyentes. En <a href=\"colossians-2.es.html#v2-2\">Colosenses 2:2</a> es «la plena certidumbre del entendimiento».")
+
+
+_gal3_fix([
+    ("and Colossians 2:14 and 2:20 (Colossians 2 not yet on these pages).",
+     "and <a href=\"colossians-2.html#v2-14\">Colossians 2:14</a> and <a href=\"colossians-2.html#v2-20\">2:20</a>."),
+    ("y Colosenses 2:14 y 2:20 (Colosenses 2 todavía no en estas páginas).",
+     "y <a href=\"colossians-2.es.html#v2-14\">Colosenses 2:14</a> y <a href=\"colossians-2.es.html#v2-20\">2:20</a>."),
+    ("and Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those four not yet on these pages).",
+     "<a href=\"colossians-2.html#v2-18\">Colossians 2:18</a> and <a href=\"colossians-2.html#v2-23\">2:23</a>, and Colossians 3:12 and 1 Peter 5:5 (those two not yet on these pages)."),
+    ("y Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cuatro todavía no en estas páginas).",
+     "<a href=\"colossians-2.es.html#v2-18\">Colosenses 2:18</a> y <a href=\"colossians-2.es.html#v2-23\">2:23</a>, y Colosenses 3:12 y 1 Pedro 5:5 (esos dos todavía no en estas páginas)."),
+    ("so are five of the other seven, <a href=\"1-corinthians-15.html#v22\">",
+     "so are six of the other seven, <a href=\"1-corinthians-15.html#v22\">"),
+    ("<a href=\"2-corinthians-3.html#v6\">2 Corinthians 3:6</a> and <a href=\"galatians-3.html#v21\">Galatians 3:21</a>; Colossians 2:13 and 1 Peter 3:18 are not yet.",
+     "<a href=\"2-corinthians-3.html#v6\">2 Corinthians 3:6</a>, <a href=\"galatians-3.html#v21\">Galatians 3:21</a> and <a href=\"colossians-2.html#v2-13\">Colossians 2:13</a>; 1 Peter 3:18 is not yet."),
+    ("también cinco de los otros siete, <a href=\"1-corinthians-15.es.html#v22\">",
+     "también seis de los otros siete, <a href=\"1-corinthians-15.es.html#v22\">"),
+    ("<a href=\"2-corinthians-3.es.html#v6\">2 Corintios 3:6</a> y <a href=\"galatians-3.es.html#v21\">Gálatas 3:21</a>; Colosenses 2:13 y 1 Pedro 3:18 todavía no.",
+     "<a href=\"2-corinthians-3.es.html#v6\">2 Corintios 3:6</a>, <a href=\"galatians-3.es.html#v21\">Gálatas 3:21</a> y <a href=\"colossians-2.es.html#v2-13\">Colosenses 2:13</a>; 1 Pedro 3:18 todavía no."),
+])
+
+XREFS.extend([
+    (("Colossians", 1, 29), ("Colossians", 2, 1), "struggle"),
+    (("Revelation", 3, 14), ("Colossians", 2, 1), "Laodicea"),
+    (("Colossians", 1, 27), ("Colossians", 2, 2), "the mystery, Christ"),
+    (("Mark", 4, 22), ("Colossians", 2, 3), "hidden away"),
+    (("1 Corinthians", 15, 3), ("Colossians", 2, 6), "received"),
+    (("Ephesians", 3, 17), ("Colossians", 2, 7), "rooted"),
+    (("Galatians", 4, 3), ("Colossians", 2, 8), "the elements of the world"),
+    (("Colossians", 1, 19), ("Colossians", 2, 9), "all the fullness"),
+    (("Romans", 1, 20), ("Colossians", 2, 9), "divinity and deity"),
+    (("Ephesians", 1, 21), ("Colossians", 2, 10), "every rule and authority"),
+    (("Deuteronomy", 10, 16), ("Colossians", 2, 11), "circumcision of the heart"),
+    (("2 Corinthians", 5, 1), ("Colossians", 2, 11), "not made with hands"),
+    (("Romans", 6, 4), ("Colossians", 2, 12), "buried with him in baptism"),
+    (("Ephesians", 2, 5), ("Colossians", 2, 13), "made alive together"),
+    (("Ephesians", 2, 15), ("Colossians", 2, 14), "decrees"),
+    (("Acts", 3, 19), ("Colossians", 2, 14), "blotted out"),
+    (("2 Corinthians", 2, 14), ("Colossians", 2, 15), "led in triumph"),
+    (("Galatians", 4, 10), ("Colossians", 2, 16), "days and seasons"),
+    (("Romans", 14, 5), ("Colossians", 2, 16), "days"),
+    (("Philippians", 3, 14), ("Colossians", 2, 18), "the prize"),
+    (("Ephesians", 4, 16), ("Colossians", 2, 19), "joints, the body growing"),
+    (("Mark", 7, 7), ("Colossians", 2, 22), "commandments of men"),
+])
+
+CHAPTER_ART["col2"] = [dict(
+    file="mantegna-triumphs-caesar-chariot.jpg",
+    title="The Triumphs of Caesar: Caesar on his Chariot",   title_es="Los triunfos de César: César en su carro",
+    artist="Andrea Mantegna",
+    year="about 1484–92",
+    location="Royal Collection, Hampton Court Palace",
+    location_es="Royal Collection, palacio de Hampton Court",
+    alt="Painting: an elderly Roman general in a gold robe sits high on an ornate gilded chariot, a palm branch rising beside him, while a "
+        "figure behind him holds a wreath over his head. A youth in a short tunic walks beside a white horse past a triumphal arch hung with "
+        "captured arms and shields, and small children carrying branches run beside the great carved wheel.",
+    note="&#9888; The last canvas of Mantegna&rsquo;s nine-part procession: the victor himself, after the captives and the spoils have gone by. &lsquo;Leading them in triumph&rsquo; (<a href=\"colossians-2.html#v2-15\">verse 15</a>) borrows this Roman ceremony, with the powers in the place of the captives.",
+    note_es="&#9888; El último lienzo de la procesión de nueve partes de Mantegna: el vencedor mismo, después de que han pasado los cautivos y el botín. «Llevándolos en triunfo» (<a href=\"colossians-2.es.html#v2-15\">versículo 15</a>) toma prestada esta ceremonia romana, con los poderes en el lugar de los cautivos.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_(1431-1506)_-_The_Triumphs_of_Caesar,_9._Caesar_on_his_Chariot_-_RCIN_403966_-_Royal_Collection.jpg",
+)]
+
+CHRON_CHAPTERS["col2"] = dict(era='apostolic',
+    when="Paul warns a congregation he has never visited against a teaching of food rules, festivals, visions and the worship of angels: all the fullness of deity dwells in Christ, the debt is nailed to the cross, and the powers are led in triumph.",
+    clock="Undated by the text; Paul writes as a prisoner, traditionally from Rome, and the letter's authorship is argued.")
