@@ -37556,3 +37556,116 @@ CHAPTER_ART["gal5"] = [dict(
 CHRON_CHAPTERS["gal5"] = dict(era='apostolic',
     when="Paul tells the Galatians to stand firm in the freedom Christ gave and not take up circumcision and the law, sums the law up in &lsquo;love your neighbor as yourself,&rsquo; and sets the works of the flesh against the fruit of the Spirit.",
     clock="Undated by the text: Galatians names no year, and its date depends on questions about Galatia and Paul&rsquo;s visits that are argued.")
+
+# ---- Galatians 6 ------------------------------------------------------------
+DICTIONARY.append(("stigma", "stigma", "στίγμα", "stigma",
+    "A MARK, A BRAND &mdash; a mark pricked or burned into the skin; in Paul&rsquo;s world, the mark that showed a slave, and by report a "
+    "soldier or a devotee of a god, to belong to someone. &#9888; It stands in one verse of the New Testament, <a href=\"galatians-6.html#v17\">Galatians 6:17</a>: &lsquo;I bear on my "
+    "body the brand-marks of Jesus,&rsquo; most often read as the scars of the lashes, rods and stoning Paul lists at <a href=\"2-corinthians-11.html#v24\">2 Corinthians 11:24</a> and "
+    "11:25. English &lsquo;stigma&rsquo; and &lsquo;stigmata&rsquo; come from it; &lsquo;stigmata&rsquo; was later the word for the "
+    "wounds reported on Francis of Assisi. KJV &lsquo;the marks of the Lord Jesus,&rsquo; ASV &lsquo;I bear branded on my body the marks "
+    "of Jesus,&rsquo; NWT 1984 &lsquo;the brand marks [of a slave] of Jesus.&rsquo;",
+    ("Galatians", 6, 17)))
+DICTIONARY_ES["stigma"] = ("stígma",
+    "UNA MARCA, UN HIERRO &mdash; una marca pinchada o quemada en la piel; en el mundo de Pablo, la marca que mostraba que un esclavo, y "
+    "según se cuenta un soldado o un devoto de un dios, pertenecía a alguien. &#9888; Está en un solo versículo del Nuevo Testamento, "
+    "<a href=\"galatians-6.es.html#v17\">Gálatas 6:17</a>: «yo llevo en mi cuerpo las marcas a fuego de Jesús», que suele leerse como las cicatrices de los azotes, las varas y la "
+    "lapidación que Pablo enumera en <a href=\"2-corinthians-11.es.html#v24\">2 Corintios 11:24</a> y 11:25. De ella vienen «estigma» y «estigmas»; «estigmas» fue después la palabra para "
+    "las llagas que se cuentan de Francisco de Asís. RV60 «las marcas del Señor Jesús», TNM 1987 «las marcas [de un esclavo] de Jesús», "
+    "NVI «las cicatrices de Jesús».")
+
+DICTIONARY.append(("kanon", "kanōn", "κανών", "kanōn",
+    "A MEASURING ROD, A RULE &mdash; a straight rod for measuring, and so a standard, or the measured extent of something. English "
+    "&lsquo;canon&rsquo; comes from it. &#9888; It stands in four verses of the New Testament: <a href=\"2-corinthians-10.html#v13\">2 Corinthians 10:13</a>, 10:15 and 10:16, where Paul "
+    "will not boast beyond the measured field God assigned him and this translation prints &lsquo;sphere&rsquo;; and <a href=\"galatians-6.html#v16\">Galatians 6:16</a>, &lsquo;as "
+    "many as will walk in line with this rule,&rsquo; where it is joined to <a href=\"dictionary.html#stoicheo\">stoicheō</a>. KJV and "
+    "ASV &lsquo;rule&rsquo; at Galatians 6:16, NWT 1984 &lsquo;this rule of conduct.&rsquo;",
+    ("Galatians", 6, 16)))
+DICTIONARY_ES["kanon"] = ("kanṓn",
+    "UNA VARA DE MEDIR, UNA NORMA &mdash; una vara recta para medir, y de ahí un criterio, o la extensión medida de algo. De ella viene "
+    "«canon». &#9888; Está en cuatro versículos del Nuevo Testamento: <a href=\"2-corinthians-10.es.html#v13\">2 Corintios 10:13</a>, 10:15 y 10:16, donde Pablo no se jactará más allá del "
+    "campo medido que Dios le asignó y esta traducción habla del límite y el territorio; y <a href=\"galatians-6.es.html#v16\">Gálatas 6:16</a>, «los que anden en regla con esta "
+    "norma», donde va unida a <a href=\"diccionario.html#stoicheo\">stoicheō</a>. RV60 «regla» en Gálatas 6:16, TNM 1987 «esta regla de "
+    "conducta», NVI «esta norma».")
+
+DICTIONARY.append(("enkakeo", "enkakeō", "ἐγκακέω", "enkakeō",
+    "TO LOSE HEART, to give in to weariness. &#9888; It stands in six verses of the New Testament, the Byzantine text spelling it "
+    "<em>ekkakeō</em>: <a href=\"luke-18.html#v18-1\">Luke 18:1</a>, &lsquo;always to pray and not lose heart&rsquo;; <a href=\"2-corinthians-4.html#v1\">2 Corinthians 4:1</a> and 4:16, &lsquo;we do not lose heart&rsquo;; "
+    "<a href=\"galatians-6.html#v9\">Galatians 6:9</a>, &lsquo;let us not lose heart in doing what is good&rsquo;; and Ephesians 3:13 and 2 Thessalonians 3:13 (not yet on these "
+    "pages). KJV &lsquo;let us not be weary in well doing,&rsquo; NIV &lsquo;Let us not become weary in doing good,&rsquo; NWT 1984 "
+    "&lsquo;let us not give up.&rsquo;",
+    ("Galatians", 6, 9)))
+DICTIONARY_ES["enkakeo"] = ("enkakéō",
+    "RENDIRSE, DESANIMARSE, ceder al cansancio. &#9888; Está en seis versículos del Nuevo Testamento, que el texto bizantino escribe "
+    "<em>ekkakeō</em>: <a href=\"luke-18.es.html#v18-1\">Lucas 18:1</a>, «orar siempre y no desanimarse»; <a href=\"2-corinthians-4.es.html#v1\">2 Corintios 4:1</a> y 4:16, «no nos rendimos»; <a href=\"galatians-6.es.html#v9\">Gálatas 6:9</a>, «no nos rindamos "
+    "haciendo el bien»; y Efesios 3:13 y 2 Tesalonicenses 3:13 (todavía no en estas páginas). RV60 «No nos cansemos, pues, de hacer "
+    "bien», NVI «No nos cansemos de hacer el bien», TNM 1987 «no desistamos».")
+
+DICTIONARY_ES["israel"] = ("Yisrael",
+    "«ÉL LUCHA con Dios» (o «Dios lucha / Dios gobierna») &mdash; el nombre nuevo arrancado a Jacob en el Jaboc: «ya no Jacob, sino "
+    "Israel, porque has luchado (<em>sarita</em>, de <em>sarah</em>, «luchar, porfiar, persistir») con Dios y con los hombres, y has "
+    "vencido» (Génesis 32:29). Responde a «Jacob» («el que agarra el talón, el suplantador»): el hombre que siempre se hacía con las "
+    "cosas por astucia vence ahora AGARRÁNDOSE, negándose, aunque cojo, a soltar sin una bendición. El nombre se confirma en Betel "
+    "(35:10) y llega a ser el nombre de toda la nación, los «hijos de Israel», un pueblo nombrado no por un triunfo sino por una lucha "
+    "de toda una noche, cojeando, con Dios, que no se rindió. &#9888; En <a href=\"galatians-6.es.html#v16\">Gálatas 6:16</a> Pablo bendice «al Israel de Dios», una frase que se lee "
+    "como los creyentes, como los creyentes judíos o como Israel en cuanto pueblo; la biblioteca expone las lecturas y no elige.")
+
+
+_gal3_fix([
+    ("1 Corinthians 14:19 and Galatians 6:6 (1 Corinthians 14 and Galatians 6 not yet on these pages).",
+     "<a href=\"1-corinthians-14.html#v19\">1 Corinthians 14:19</a> and <a href=\"galatians-6.html#v6\">Galatians 6:6</a>."),
+    ("1 Corintios 14:19 y Gálatas 6:6 (1 Corintios 14 y Gálatas 6 todavía no en estas páginas).",
+     "<a href=\"1-corinthians-14.es.html#v19\">1 Corintios 14:19</a> y <a href=\"galatians-6.es.html#v6\">Gálatas 6:6</a>."),
+    ("; and Galatians 6:16 and Philippians 3:16 (those two not yet on these pages).",
+     "; <a href=\"galatians-6.html#v16\">Galatians 6:16</a>; and Philippians 3:16 (not yet on these pages)."),
+    ("; y Gálatas 6:16 y Filipenses 3:16 (estos dos todavía no en estas páginas).",
+     "; <a href=\"galatians-6.es.html#v16\">Gálatas 6:16</a>; y Filipenses 3:16 (todavía no en estas páginas)."),
+    ("and 2 Corinthians 3:6 (&lsquo;the letter kills, but the spirit gives life,&rsquo; not yet on these pages).",
+     "and <a href=\"2-corinthians-3.html#v6\">2 Corinthians 3:6</a> (&lsquo;the letter kills, but the Spirit gives life&rsquo;)."),
+    ("y 2 Corintios 3:6 («la letra mata, pero el espíritu da vida», todavía no en estas páginas).",
+     "y <a href=\"2-corinthians-3.es.html#v6\">2 Corintios 3:6</a> («la letra mata, pero el Espíritu da vida»)."),
+    ("a night-long, limping struggle with God that would not quit.",
+     "a night-long, limping struggle with God that would not quit. &#9888; At <a href=\"galatians-6.html#v16\">Galatians 6:16</a> Paul blesses &lsquo;the Israel of God,&rsquo; a "
+     "phrase read as the believers, as Jewish believers, or as Israel the people; the library sets out the readings and does not choose."),
+])
+
+XREFS.extend([
+    (("2 Corinthians", 13, 11), ("Galatians", 6, 1), "be mended"),
+    (("1 Corinthians", 4, 21), ("Galatians", 6, 1), "a spirit of gentleness"),
+    (("Romans", 15, 1), ("Galatians", 6, 2), "bear the weaknesses of the weak"),
+    (("1 Corinthians", 9, 21), ("Galatians", 6, 2), "under Christ's law"),
+    (("2 Corinthians", 13, 5), ("Galatians", 6, 4), "test yourselves"),
+    (("1 Corinthians", 9, 14), ("Galatians", 6, 6), "those who teach live from it"),
+    (("2 Corinthians", 9, 6), ("Galatians", 6, 7), "sowing and reaping"),
+    (("1 Corinthians", 15, 42), ("Galatians", 6, 8), "sown in corruption"),
+    (("2 Corinthians", 4, 1), ("Galatians", 6, 9), "we do not lose heart"),
+    (("Ephesians", 2, 19), ("Galatians", 6, 10), "members of the household"),
+    (("1 Corinthians", 16, 21), ("Galatians", 6, 11), "in my own hand"),
+    (("Romans", 16, 22), ("Galatians", 6, 11), "the scribe who wrote the letter"),
+    (("Galatians", 5, 11), ("Galatians", 6, 12), "persecuted for the cross"),
+    (("Galatians", 2, 20), ("Galatians", 6, 14), "crucified with Christ"),
+    (("2 Corinthians", 5, 17), ("Galatians", 6, 15), "a new creation"),
+    (("Galatians", 5, 25), ("Galatians", 6, 16), "walk in line"),
+    (("Romans", 11, 26), ("Galatians", 6, 16), "all Israel"),
+    (("Romans", 9, 6), ("Galatians", 6, 16), "not all who are of Israel are Israel"),
+    (("2 Corinthians", 11, 24), ("Galatians", 6, 17), "the scars of lashes and rods"),
+    (("Philippians", 4, 23), ("Galatians", 6, 18), "grace be with your spirit"),
+])
+
+CHAPTER_ART["gal6"] = [dict(
+    file="rembrandt-apostle-paul-1657.jpg",
+    title="The Apostle Paul",        title_es="El apóstol Pablo",
+    artist="Rembrandt van Rijn (and workshop?)",
+    year="about 1657",
+    location="National Gallery of Art, Washington",
+    location_es="National Gallery of Art, Washington",
+    alt="Oil painting in dark browns and reds: an old man with a long grey beard sits in a wooden chair beside a desk, his head resting on his raised left hand and his eyes lowered in thought. His right hand holds a quill pen in his lap. An open book lies on the desk, and the hilt of a large sword stands upright against the wall behind it.",
+    note="&#9888; Rembrandt paints Paul between sentences, pen in hand, as he is at <a href=\"galatians-6.html#v11\">verse 11</a>: &lsquo;See with what large letters I have written to you with my own hand.&rsquo; The sword is Paul&rsquo;s traditional emblem in art, from the tradition that he was beheaded; the New Testament does not tell of his death.",
+    note_es="&#9888; Rembrandt pinta a Pablo entre frase y frase, con la pluma en la mano, como en el <a href=\"galatians-6.es.html#v11\">versículo 11</a>: «Miren con qué letras tan grandes les he escrito de mi propia mano». La espada es el emblema tradicional de Pablo en el arte, por la tradición de que fue decapitado; el Nuevo Testamento no cuenta su muerte.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Saint_Paul,_Rembrandt_van_Rijn_(and_Workshop%3F),_c._1657.jpg",
+)]
+
+CHRON_CHAPTERS["gal6"] = dict(era='apostolic',
+    when="Paul closes his letter to the Galatians: mend the fallen and bear one another&rsquo;s burdens, sow to the Spirit, and then, in his own large handwriting, boast only in the cross, a new creation, and peace upon the Israel of God.",
+    clock="Undated by the text: Galatians names no year, and the letter does not say where it was written; a later note in some manuscripts says Rome.")
