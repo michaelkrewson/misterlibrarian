@@ -39151,3 +39151,111 @@ CHRON_CHAPTERS["1th3"] = dict(era='apostolic',
     when="Unable to bear the separation, Paul stays at Athens and sends Timothy back to Thessalonica; Timothy returns with good news of their faith and love, and the chapter ends in a prayer that God and the Lord Jesus will guide the way back and strengthen their hearts for his presence.",
     clock="c. AD 50–51, from Corinth, soon after Timothy's return (Acts 18:5).")
 
+# ---- 1 Thessalonians 4 -----------------------------------------------------------
+DICTIONARY.append(('hyperbaino', 'hyperbainō', 'ὑπερβαίνω', 'hyperbainō',
+    'TO OVERSTEP, to go beyond a boundary &mdash; <em>hyper</em>, &lsquo;over,&rsquo; and <em>bainō</em>, &lsquo;to step,&rsquo; and so to transgress. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-4.html#v4-6">1 Thessalonians 4:6</a>, &lsquo;that no one overstep and take advantage of his brother in the matter,&rsquo; where readers take &lsquo;the matter&rsquo; as the sexual conduct just discussed or as business dealings. KJV &lsquo;go beyond,&rsquo; ASV &lsquo;transgress.&rsquo;',
+    ('1 Thessalonians', 4, 6)))
+DICTIONARY_ES['hyperbaino'] = ('hyperbaínō',
+    'TRASPASAR, ir más allá de un límite &mdash; <em>hyper</em>, «sobre», y <em>bainō</em>, «pisar», y así transgredir. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-4.es.html#v4-6">1 Tesalonicenses 4:6</a>, «que nadie traspase los límites ni se aproveche de su hermano en el asunto», donde los lectores entienden «el asunto» como la conducta sexual que se acaba de tratar o como los negocios. RV60 «agravie», TNM 1987 «llegue al punto de perjudicar».')
+
+DICTIONARY.append(('theodidaktos', 'theodidaktos', 'θεοδίδακτος', 'theodidaktos',
+    'TAUGHT BY GOD &mdash; <em>theos</em>, &lsquo;God,&rsquo; and <em>didaktos</em>, &lsquo;taught.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-4.html#v4-9">1 Thessalonians 4:9</a>, &lsquo;you yourselves are taught by God to love one another,&rsquo; and is reported to appear here for the first time in Greek; the Greek of Isaiah 54:13 has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (not yet on these pages). KJV &lsquo;taught of God.&rsquo;',
+    ('1 Thessalonians', 4, 9)))
+DICTIONARY_ES['theodidaktos'] = ('theodídaktos',
+    'ENSEÑADO POR DIOS &mdash; <em>theos</em>, «Dios», y <em>didaktos</em>, «enseñado». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-4.es.html#v4-9">1 Tesalonicenses 4:9</a>, «ustedes mismos son enseñados por Dios a amarse unos a otros», y se informa que aparece aquí por primera vez en griego; el griego de Isaías 54:13 tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (todavía no en estas páginas). RV60 «habéis aprendido de Dios».')
+
+DICTIONARY.append(('philotimeomai', 'philotimeomai', 'φιλοτιμέομαι', 'philotimeomai',
+    'TO MAKE IT ONE&rsquo;S AIM, to strive eagerly &mdash; from <em>philotimia</em>, love of honor, the public ambition of a benefactor; in the New Testament turned to other ends. &#9888; It stands in three verses: <a href="romans-15.html#v15-20">Romans 15:20</a>, &lsquo;I made it my ambition to preach the good news not where Christ was already named&rsquo;; <a href="2-corinthians-5.html#v9">2 Corinthians 5:9</a>, &lsquo;we make it our aim to be pleasing to him&rsquo;; and <a href="1-thessalonians-4.html#v4-11">1 Thessalonians 4:11</a>, &lsquo;make it your aim to live quietly,&rsquo; where the ambition is not to be noticed. KJV &lsquo;study,&rsquo; NIV &lsquo;make it your ambition.&rsquo;',
+    ('1 Thessalonians', 4, 11)))
+DICTIONARY_ES['philotimeomai'] = ('philotiméomai',
+    'PROCURAR CON EMPEÑO, aspirar &mdash; de <em>philotimia</em>, amor a la honra, la ambición pública de un benefactor; en el Nuevo Testamento vuelta a otros fines. &#9888; Está en tres versículos: <a href="romans-15.es.html#v15-20">Romanos 15:20</a>, «me empeñé en anunciar el evangelio no donde ya se había nombrado a Cristo»; <a href="2-corinthians-5.es.html#v9">2 Corintios 5:9</a>, «nos esforzamos &hellip; por agradarle»; y <a href="1-thessalonians-4.es.html#v4-11">1 Tesalonicenses 4:11</a>, «que procuren con empeño vivir tranquilos», donde la ambición es no llamar la atención. RV60 «procuréis», TNM 1987 «tener como mira suya».')
+
+DICTIONARY.append(('keleusma', 'keleusma', 'κέλευσμα', 'keleusma',
+    'A SHOUT OF COMMAND, a word of command &mdash; from <em>keleuō</em>, to order: the call given to troops, to a team, or to rowers to keep the stroke. &#9888; It stands in one verse of the New Testament, <a href="1-thessalonians-4.html#v4-16">1 Thessalonians 4:16</a>, &lsquo;the Lord himself, with a shout of command, with an archangel&rsquo;s voice and with God&rsquo;s trumpet, will come down from heaven.&rsquo; KJV &lsquo;a shout,&rsquo; NWT 1984 &lsquo;a commanding call,&rsquo; NIV &lsquo;a loud command.&rsquo;',
+    ('1 Thessalonians', 4, 16)))
+DICTIONARY_ES['keleusma'] = ('kéleusma',
+    'VOZ DE MANDO, una orden &mdash; de <em>keleuō</em>, ordenar: la voz que se da a las tropas, a un equipo o a los remeros para marcar la boga. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-thessalonians-4.es.html#v4-16">1 Tesalonicenses 4:16</a>, «el Señor mismo, con voz de mando, con voz de arcángel y con trompeta de Dios, descenderá del cielo». RV60 «voz de mando», TNM 1987 «una llamada imperativa», RV 1909 «aclamación».')
+
+DICTIONARY.append(('archangelos', 'archangelos', 'ἀρχάγγελος', 'archangelos',
+    'AN ARCHANGEL, a chief angel &mdash; <em>archē</em>, &lsquo;first, chief,&rsquo; and <em>angelos</em>, &lsquo;messenger, angel.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="1-thessalonians-4.html#v4-16">1 Thessalonians 4:16</a>, &lsquo;with an archangel&rsquo;s voice,&rsquo; where no archangel is named, and <a href="jude-1.html#v9">Jude 1:9</a>, &lsquo;Michael the archangel&rsquo; (see <a href="encyclopedia.html#michael">Michael</a>). The Greek of 1 Thessalonians 4:16 has no article, &lsquo;an archangel&rsquo;s voice&rsquo;; the KJV prints &lsquo;the voice of the archangel.&rsquo;',
+    ('1 Thessalonians', 4, 16)))
+DICTIONARY_ES['archangelos'] = ('archángelos',
+    'ARCÁNGEL, ángel principal &mdash; <em>archē</em>, «primero, jefe», y <em>angelos</em>, «mensajero, ángel». &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-thessalonians-4.es.html#v4-16">1 Tesalonicenses 4:16</a>, «con voz de arcángel», donde no se nombra a ningún arcángel, y <a href="jude-1.es.html#v9">Judas 1:9</a>, «Miguel el arcángel» (véase <a href="enciclopedia.html#michael">Miguel</a>). El griego de 1 Tesalonicenses 4:16 no tiene artículo, «voz de arcángel», y así la RV60.')
+
+DICTIONARY_ES['philadelphia'] = ('philadelphía',
+    'AMOR FRATERNAL &mdash; <em>philos</em>, «que ama», y <em>adelphos</em>, «hermano»: el afecto entre hermanos de sangre, y en el Nuevo Testamento el amor entre creyentes como familia. &#9888; La iglesia antigua tomó una palabra que significaba amor entre hermanos y la extendió a toda la comunidad de fe: «con amor fraternal, sean cariñosos unos con otros» (<a href="romans-12.es.html#v12-10">Romanos 12:10</a>); «en cuanto al amor fraternal, no tienen necesidad de que nadie les escriba» (<a href="1-thessalonians-4.es.html#v4-9">1 Tesalonicenses 4:9</a>); y en <a href="1-peter-1.es.html#v22">1 Pedro 1:22</a> «un amor fraternal sincero». Es más estrecha que <em>agapē</em>: el amor precisamente al hermano y a la hermana. La ciudad estadounidense de Filadelfia lleva su nombre.')
+
+def _1th4_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1th4_fix([('and of the living &lsquo;snatched up in the clouds&rsquo; (1 Thessalonians 4:17, not yet on these pages),', 'and of the living &lsquo;snatched up &hellip; in clouds&rsquo; (<a href="1-thessalonians-4.html#v4-17">1 Thessalonians 4:17</a>),'), ('y de los vivos «arrebatados en las nubes» (1 Tesalonicenses 4:17, todavía no en estas páginas),', 'y de los vivos «arrebatados &hellip; en nubes» (<a href="1-thessalonians-4.es.html#v4-17">1 Tesalonicenses 4:17</a>),'), ('and 1 Thessalonians 4:11 (the last not yet on these pages), where Paul&rsquo;s friends', 'and <a href="1-thessalonians-4.html#v4-11">1 Thessalonians 4:11</a>, where Paul&rsquo;s friends'), ('y 1 Tesalonicenses 4:11 (el último todavía no en estas páginas), donde los amigos', 'y <a href="1-thessalonians-4.es.html#v4-11">1 Tesalonicenses 4:11</a>, donde los amigos'), ('the other six are Luke 16:28, 1 Thessalonians 4:6, 1 Timothy 5:21, 2 Timothy 2:14, 2 Timothy 4:1 and Hebrews 2:6 (the last five not yet on these pages)', 'the other six are Luke 16:28, <a href="1-thessalonians-4.html#v4-6">1 Thessalonians 4:6</a>, 1 Timothy 5:21, 2 Timothy 2:14, 2 Timothy 4:1 and Hebrews 2:6 (the last four not yet on these pages)'), ('los otros seis son Lucas 16:28, 1 Tesalonicenses 4:6, 1 Timoteo 5:21, 2 Timoteo 2:14, 2 Timoteo 4:1 y Hebreos 2:6 (los cinco últimos todavía no en estas páginas)', 'los otros seis son Lucas 16:28, <a href="1-thessalonians-4.es.html#v4-6">1 Tesalonicenses 4:6</a>, 1 Timoteo 5:21, 2 Timoteo 2:14, 2 Timoteo 4:1 y Hebreos 2:6 (los cuatro últimos todavía no en estas páginas)'), ('and 1 Thessalonians 4:17 (not yet on these pages). The phrase is what a city does', 'and <a href="1-thessalonians-4.html#v4-17">1 Thessalonians 4:17</a>. The phrase is what a city does'), ('y 1 Tesalonicenses 4:17 (todavía no en estas páginas). La expresión es lo que una ciudad', 'y <a href="1-thessalonians-4.es.html#v4-17">1 Tesalonicenses 4:17</a>. La expresión es lo que una ciudad'), ('and six more in 1 Thessalonians 4:3, 4 and 7, 2 Thessalonians 2:13, 1 Timothy 2:15 and Hebrews 12:14 (these six not yet on these pages).', 'and six more: <a href="1-thessalonians-4.html#v4-3">1 Thessalonians 4:3</a>, <a href="1-thessalonians-4.html#v4-4">4</a> and <a href="1-thessalonians-4.html#v4-7">7</a>; and 2 Thessalonians 2:13, 1 Timothy 2:15 and Hebrews 12:14 (these three not yet on these pages).'), ('y seis más en 1 Tesalonicenses 4:3, 4 y 7, 2 Tesalonicenses 2:13, 1 Timoteo 2:15 y Hebreos 12:14 (estos seis todavía no en estas páginas).', 'y seis más: <a href="1-thessalonians-4.es.html#v4-3">1 Tesalonicenses 4:3</a>, <a href="1-thessalonians-4.es.html#v4-4">4</a> y <a href="1-thessalonians-4.es.html#v4-7">7</a>; y 2 Tesalonicenses 2:13, 1 Timoteo 2:15 y Hebreos 12:14 (estos tres todavía no en estas páginas).'), ("(leaning on 1 Thessalonians 4:16's 'voice of an archangel')", '(leaning on the &lsquo;archangel&rsquo;s voice&rsquo; of <a href="1-thessalonians-4.html#v4-16">1 Thessalonians 4:16</a>)'), ('(apoy&aacute;ndose en &laquo;voz de arc&aacute;ngel&raquo; de 1 Tesalonicenses 4:16)', '(apoy&aacute;ndose en &laquo;voz de arc&aacute;ngel&raquo; de <a href="1-thessalonians-4.es.html#v4-16">1 Tesalonicenses 4:16</a>)')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"macedonia": [("1 Thessalonians", 4, 10)]}.get(_e["slug"], [])
+    if _add:
+        _e["refs"] = list(_e["refs"]) + [r for r in _add if tuple(r) not in {tuple(x) for x in _e["refs"]}]
+
+XREFS.extend([
+    (("1 Thessalonians", 2, 12), ("1 Thessalonians", 4, 1), "how you ought to walk"),
+    (("1 Corinthians", 1, 30), ("1 Thessalonians", 4, 3), "sanctification"),
+    (("Acts", 8, 20), ("1 Thessalonians", 4, 4), "to acquire"),
+    (("2 Corinthians", 4, 7), ("1 Thessalonians", 4, 4), "vessels"),
+    (("Galatians", 4, 8), ("1 Thessalonians", 4, 5), "not knowing God"),
+    (("Romans", 13, 4), ("1 Thessalonians", 4, 6), "the avenger"),
+    (("Galatians", 2, 21), ("1 Thessalonians", 4, 8), "set aside"),
+    (("Romans", 12, 10), ("1 Thessalonians", 4, 9), "brotherly love"),
+    (("2 Corinthians", 5, 9), ("1 Thessalonians", 4, 11), "make it your aim"),
+    (("Romans", 13, 13), ("1 Thessalonians", 4, 12), "walk properly"),
+    (("Ephesians", 2, 12), ("1 Thessalonians", 4, 13), "having no hope"),
+    (("1 Corinthians", 15, 18), ("1 Thessalonians", 4, 14), "fallen asleep in him"),
+    (("1 Corinthians", 15, 51), ("1 Thessalonians", 4, 15), "the living at his coming"),
+    (("Jude", 1, 9), ("1 Thessalonians", 4, 16), "the archangel"),
+    (("1 Corinthians", 15, 52), ("1 Thessalonians", 4, 16), "the trumpet"),
+    (("Exodus", 19, 16), ("1 Thessalonians", 4, 16), "the trumpet at Sinai"),
+    (("2 Corinthians", 12, 2), ("1 Thessalonians", 4, 17), "snatched up"),
+    (("Matthew", 25, 6), ("1 Thessalonians", 4, 17), "to meet"),
+    (("Acts", 28, 15), ("1 Thessalonians", 4, 17), "to meet"),
+    (("Philippians", 1, 23), ("1 Thessalonians", 4, 17), "with the Lord"),
+])
+
+CHAPTER_ART["1th4"] = [dict(
+    file="stele-of-hegeso-athens.jpg",
+    title="Grave stele of Hegeso",   title_es="Estela funeraria de Hegeso",
+    artist="Athenian sculptor (attributed by some to Callimachus)",
+    year="about 410–400 BC",
+    location="National Archaeological Museum, Athens (from the Kerameikos cemetery)",
+    location_es="Museo Arqueológico Nacional, Atenas (del cementerio del Cerámico)",
+    alt="A marble grave relief framed like a small temple, with a name carved along the top. A woman sits on a chair with her feet on a "
+        "footstool, looking down at a jewel box held out to her by a standing servant girl, and lifts something from it with her right hand. "
+        "Both wear long, finely folded garments.",
+    note="&#9888; An Athenian family&rsquo;s memorial to Hegeso, daughter of Proxenos, shown in a quiet household moment. &lsquo;We do not want "
+         "you to be ignorant, brothers, about those who are sleeping, so that you do not grieve as the rest do, who have no hope&rsquo; "
+         "(<a href=\"1-thessalonians-4.html#v4-13\">verse 13</a>).",
+    note_es="&#9888; El monumento de una familia ateniense a Hegeso, hija de Próxeno, mostrada en un momento tranquilo de la casa. «Pero no "
+            "queremos, hermanos, que ignoren lo que se refiere a los que duermen, para que no se entristezcan como los demás, que no tienen "
+            "esperanza» (<a href=\"1-thessalonians-4.es.html#v4-13\">versículo 13</a>).",
+    license="CC BY-SA 4.0 (photo: George E. Koronaios)",
+    source_url="https://commons.wikimedia.org/wiki/File:The_Grave_Stele_of_Hegeso_(5th_cent._B.C.)_at_the_National_Archaeological_Museum_on_3_April_2018.jpg",
+)]
+
+CHRON_CHAPTERS["1th4"] = dict(era='apostolic',
+    when="Instructions on holiness, brotherly love and a quiet working life, and then comfort for the grieving: the dead in Christ will rise first, and the living will be snatched up with them to meet the Lord.",
+    clock="c. AD 50–51, from Corinth, a few months after the founding of the congregation; some of its members had already died.")
+
