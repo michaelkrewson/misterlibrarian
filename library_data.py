@@ -38367,3 +38367,167 @@ CHAPTER_ART["php2"] = [dict(
 CHRON_CHAPTERS["php2"] = dict(era='apostolic',
     when="Paul asks the Philippians for one mind and quotes the hymn of Christ who emptied himself and took a slave's form, then plans to send Timothy and sends back Epaphroditus, who nearly died.",
     clock="Written from prison; Rome is the traditional place, and Ephesus and Caesarea are also proposed.")
+
+# ---- Philippians 3 ----------------------------------------------------------
+DICTIONARY.append(("kyon", "kyōn", "κύων", "kyōn",
+    "DOG &mdash; in the ancient Mediterranean mostly a scavenger of the streets, not a pet, and an insult when said of a person. &#9888; It "
+    "stands in five verses of the New Testament: <a href=\"matthew-7.html#v7-6\">Matthew 7:6</a>, &lsquo;Do not give what is holy to the dogs&rsquo;; <a href=\"luke-16.html#v16-21\">Luke 16:21</a>, the dogs "
+    "that licked Lazarus&rsquo;s sores; <a href=\"philippians-3.html#v3-2\">Philippians 3:2</a>, &lsquo;Watch out for the dogs&rsquo;; 2 Peter 2:22 (not yet on these pages); and "
+    "<a href=\"revelation-22.html#v22-15\">Revelation 22:15</a>, &lsquo;Outside are the dogs.&rsquo; The &lsquo;little dogs&rsquo; of <a href=\"mark-7.html#v7-27\">Mark 7:27</a> are a different word, "
+    "<em>kynarion</em>. At Philippians 3:2 the word was later turned against the Jewish people, as the note there records. KJV &lsquo;Beware "
+    "of dogs,&rsquo; NWT 1984 &lsquo;Look out for the dogs.&rsquo;",
+    ("Matthew", 7, 6)))
+DICTIONARY_ES["kyon"] = ("kýōn",
+    "PERRO &mdash; en el Mediterráneo antiguo sobre todo un carroñero de las calles, no un animal de compañía, y un insulto dicho de una "
+    "persona. &#9888; Está en cinco versículos del Nuevo Testamento: Mateo 7:6, «No den lo santo a los perros» (ya en estas páginas, todavía "
+    "no en español); <a href=\"luke-16.es.html#v16-21\">Lucas 16:21</a>, los perros que lamían las llagas de Lázaro; <a href=\"philippians-3.es.html#v3-2\">Filipenses 3:2</a>, «Cuídense de los perros»; "
+    "2 Pedro 2:22 (todavía no en estas páginas); y <a href=\"revelation-22.es.html#v22-15\">Apocalipsis 22:15</a>, «Fuera están los perros». Los «perritos» de "
+    "<a href=\"mark-7.es.html#v7-27\">Marcos 7:27</a> son otra palabra, <em>kynarion</em>. En Filipenses 3:2 la palabra se volvió después contra el pueblo judío, como "
+    "lo registra la nota de ese capítulo. RV60 «Guardaos de los perros», TNM 1987 «Cuídense de los perros».")
+
+DICTIONARY.append(("katatome", "katatomē", "κατατομή", "katatomē",
+    "MUTILATION, a cutting-up &mdash; <em>kata</em>, &lsquo;down, to pieces,&rsquo; and <em>tomē</em>, &lsquo;a cut.&rsquo; &#9888; It stands in one verse of "
+    "the New Testament, <a href=\"philippians-3.html#v3-2\">Philippians 3:2</a>, &lsquo;watch out for the mutilation,&rsquo; and it is a pun on <em>peritomē</em>, "
+    "&lsquo;circumcision,&rsquo; a cutting-around, which follows in the next verse: &lsquo;For we are the circumcision.&rsquo; Compare the "
+    "bitter wordplay of <a href=\"galatians-5.html#v12\">Galatians 5:12</a>, &lsquo;would even castrate themselves.&rsquo; KJV &lsquo;the concision,&rsquo; NWT 1984 &lsquo;those who "
+    "mutilate the flesh,&rsquo; NIV &lsquo;mutilators of the flesh.&rsquo;",
+    ("Philippians", 3, 2)))
+DICTIONARY_ES["katatome"] = ("katatomḗ",
+    "MUTILACIÓN, un cortar en pedazos &mdash; <em>kata</em>, «abajo, en pedazos», y <em>tomē</em>, «corte». &#9888; Está en un solo versículo "
+    "del Nuevo Testamento, <a href=\"philippians-3.es.html#v3-2\">Filipenses 3:2</a>, «cuídense de la mutilación», y es un juego con <em>peritomē</em>, «circuncisión», un "
+    "cortar alrededor, que sigue en el versículo siguiente: «Porque nosotros somos la circuncisión». Compárese el juego amargo de "
+    "<a href=\"galatians-5.es.html#v12\">Gálatas 5:12</a>, «llegaran incluso a castrarse». RV 1909 «cortamiento», RV60 «los mutiladores del cuerpo», TNM 1987 «los "
+    "que mutilan la carne».")
+
+DICTIONARY.append(("skybalon", "skybalon", "σκύβαλον", "skybalon",
+    "REFUSE &mdash; what is thrown out: scraps from the table, rubbish, or dung; the ancient uses run across all three, and which Paul means "
+    "is argued. &#9888; It stands in one verse of the New Testament, <a href=\"philippians-3.html#v3-8\">Philippians 3:8</a>, &lsquo;I count them refuse, so that I may "
+    "gain Christ.&rsquo; KJV and Douay &lsquo;dung,&rsquo; ASV &lsquo;refuse,&rsquo; NIV &lsquo;garbage,&rsquo; NWT 1984 &lsquo;a lot of refuse.&rsquo;",
+    ("Philippians", 3, 8)))
+DICTIONARY_ES["skybalon"] = ("skýbalon",
+    "DESECHO &mdash; lo que se tira: sobras de la mesa, basura o estiércol; los usos antiguos abarcan los tres, y cuál quiere decir Pablo "
+    "se discute. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"philippians-3.es.html#v3-8\">Filipenses 3:8</a>, «las considero desecho, para ganar a "
+    "Cristo». RV 1909 y NVI «estiércol», RV60 «basura», TNM 1987 «un montón de basura».")
+
+DICTIONARY.append(("exanastasis", "exanastasis", "ἐξανάστασις", "exanastasis",
+    "RESURRECTION OUT &mdash; <em>anastasis</em>, &lsquo;resurrection,&rsquo; with <em>ex</em>, &lsquo;out of,&rsquo; added. &#9888; It stands in one "
+    "verse of the New Testament, <a href=\"philippians-3.html#v3-11\">Philippians 3:11</a>, &lsquo;if somehow I may arrive at the resurrection from among the dead.&rsquo; "
+    "Whether the prefix only strengthens the word or marks a rising out from among the dead, readers differ. KJV &lsquo;the resurrection "
+    "of the dead,&rsquo; ASV &lsquo;the resurrection from the dead,&rsquo; NWT 1984 &lsquo;the earlier resurrection from the dead,&rsquo; whose "
+    "&lsquo;earlier&rsquo; is not in the Greek and fits the Witnesses&rsquo; teaching of a first resurrection.",
+    ("Philippians", 3, 11)))
+DICTIONARY_ES["exanastasis"] = ("exanástasis",
+    "RESURRECCIÓN HACIA FUERA &mdash; <em>anastasis</em>, «resurrección», con <em>ex</em>, «fuera de», añadido. &#9888; Está en un solo "
+    "versículo del Nuevo Testamento, <a href=\"philippians-3.es.html#v3-11\">Filipenses 3:11</a>, «por si de algún modo llego a la resurrección de entre los muertos». Si "
+    "el prefijo solo refuerza la palabra o señala un levantarse de entre los muertos, los lectores difieren. RV 1909 «la resurrección de "
+    "los muertos», RV60 «la resurrección de entre los muertos», TNM 1987 «la resurrección más temprana de entre los muertos», cuyo «más "
+    "temprana» no está en el griego y concuerda con la enseñanza de los Testigos de una primera resurrección.")
+
+DICTIONARY.append(("symmorphos", "symmorphos", "σύμμορφος", "symmorphos",
+    "FORMED WITH, sharing the same form &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>morphē</em>, &lsquo;form.&rsquo; &#9888; The family stands "
+    "in three verses of the New Testament: <a href=\"romans-8.html#v8-29\">Romans 8:29</a>, &lsquo;to be formed with the image of his Son&rsquo;; <a href=\"philippians-3.html#v3-10\">Philippians 3:10</a>, "
+    "&lsquo;being formed with his death,&rsquo; where the verb <em>symmorphizomai</em> stands; and <a href=\"philippians-3.html#v3-21\">3:21</a>, &lsquo;to be formed with the body of "
+    "his glory.&rsquo; Its root is the <em>morphē</em> of <a href=\"philippians-2.html#v2-6\">Philippians 2:6</a>&ndash;7 (see <a href=\"dictionary.html#morphe\"><em>morphē</em></a>). KJV &lsquo;being made "
+    "conformable unto his death,&rsquo; ASV &lsquo;conformed to the body of his glory.&rsquo;",
+    ("Romans", 8, 29)))
+DICTIONARY_ES["symmorphos"] = ("sýmmorphos",
+    "FORMADO CON, que comparte la misma forma &mdash; <em>syn</em>, «con», y <em>morphē</em>, «forma». &#9888; La familia está en tres "
+    "versículos del Nuevo Testamento: <a href=\"romans-8.es.html#v8-29\">Romanos 8:29</a>, «para ser formados con la imagen de su Hijo»; <a href=\"philippians-3.es.html#v3-10\">Filipenses 3:10</a>, «siendo "
+    "formado con su muerte», donde está el verbo <em>symmorphizomai</em>; y <a href=\"philippians-3.es.html#v3-21\">3:21</a>, «para que sea formado con el cuerpo de su "
+    "gloria». Su raíz es la <em>morphē</em> de <a href=\"philippians-2.es.html#v2-6\">Filipenses 2:6</a>&ndash;7 (véase <a href=\"diccionario.html#morphe\"><em>morphē</em></a>). RV60 «llegando a ser semejante a él "
+    "en su muerte».")
+
+DICTIONARY.append(("politeuma", "politeuma", "πολίτευμα", "politeuma",
+    "CITIZENSHIP, COMMONWEALTH &mdash; the state a citizen belongs to, or the body of citizens itself. &#9888; It stands in one verse of "
+    "the New Testament, <a href=\"philippians-3.html#v3-20\">Philippians 3:20</a>, &lsquo;our citizenship is in the heavens&rsquo;; its verb <em>politeuomai</em> is the "
+    "&lsquo;live out your citizenship&rsquo; of <a href=\"philippians-1.html#v27\">Philippians 1:27</a> (see <a href=\"dictionary.html#politeuomai\"><em>politeuomai</em></a>). Philippi was &lsquo;a colony&rsquo; "
+    "(<a href=\"acts-16.html#v16-12\">Acts 16:12</a>), a Roman city far from Rome. KJV &lsquo;conversation,&rsquo; ASV &lsquo;citizenship,&rsquo; TLB &lsquo;homeland.&rsquo;",
+    ("Philippians", 3, 20)))
+DICTIONARY_ES["politeuma"] = ("políteuma",
+    "CIUDADANÍA, COMUNIDAD DE CIUDADANOS &mdash; el estado al que pertenece un ciudadano, o el conjunto mismo de los ciudadanos. &#9888; "
+    "Está en un solo versículo del Nuevo Testamento, <a href=\"philippians-3.es.html#v3-20\">Filipenses 3:20</a>, «nuestra ciudadanía está en los cielos»; su verbo "
+    "<em>politeuomai</em> es el «ejerzan su ciudadanía» de <a href=\"philippians-1.es.html#v27\">Filipenses 1:27</a> (véase <a href=\"diccionario.html#politeuomai\"><em>politeuomai</em></a>). Filipos era «una "
+    "colonia» (<a href=\"acts-16.es.html#v16-12\">Hechos 16:12</a>), una ciudad romana lejos de Roma. RV 1909 «vivienda», RV60 «ciudadanía».")
+
+DICTIONARY_ES["tapeinosis"] = ("tapeínōsis",
+    "HUMILDE CONDICIÓN, bajeza, humillación &mdash; una condición baja, no la humildad como virtud. En el Magníficat Dios «miró la humilde "
+    "condición de su esclava» (<a href=\"luke-1.es.html#v48\">Lucas 1:48</a>), la misma palabra que usa en griego la oración de Ana (1 Samuel 1:11). Lo que "
+    "quiere decir Lucas es que Dios SE FIJA en el lugar bajo y luego lo invierte; el cántico lo explica: los poderosos derribados, los "
+    "humildes levantados, los hambrientos saciados, los ricos despedidos vacíos. En <a href=\"philippians-3.es.html#v3-21\">Filipenses 3:21</a> es «el cuerpo de nuestra "
+    "humillación», el sustantivo del «se humilló» de 2:8.")
+
+
+_gal3_fix([
+    ("the very word Hannah's Greek song uses (1 Samuel 1:11).",
+     "the very word of Hannah's prayer in the Greek (1 Samuel 1:11)."),
+    ("rulers pulled down, the lowly lifted, the hungry filled, the rich sent empty away.",
+     "rulers pulled down, the lowly lifted, the hungry filled, the rich sent empty away. At <a href=\"philippians-3.html#v3-21\">Philippians 3:21</a> it is &lsquo;the "
+     "body of our humiliation,&rsquo; the noun of 2:8&rsquo;s &lsquo;he humbled himself.&rsquo;"),
+    ("only in this passage and in Philippians 3:14 (not yet on these pages).",
+     "only in this passage and in <a href=\"philippians-3.html#v3-14\">Philippians 3:14</a>."),
+    ("solo aquí y en Filipenses 3:14 (todavía no en estas páginas).",
+     "solo aquí y en <a href=\"philippians-3.es.html#v3-14\">Filipenses 3:14</a>."),
+    ("and Philippians 3:16 (not yet on these pages).", "and <a href=\"philippians-3.html#v3-16\">Philippians 3:16</a>."),
+    ("y Filipenses 3:16 (todavía no en estas páginas).", "y <a href=\"philippians-3.es.html#v3-16\">Filipenses 3:16</a>."),
+    ("and 2 Corinthians 10:14, Philippians 3:16, 1 Thessalonians 2:16 and 4:15 (these four not yet on these pages).",
+     "and <a href=\"2-corinthians-10.html#v14\">2 Corinthians 10:14</a>, <a href=\"philippians-3.html#v3-16\">Philippians 3:16</a>, and 1 Thessalonians 2:16 and 4:15 (these two not yet on these pages)."),
+    ("y 2 Corintios 10:14, Filipenses 3:16, 1 Tesalonicenses 2:16 y 4:15 (estos cuatro todavía no en estas páginas).",
+     "y <a href=\"2-corinthians-10.es.html#v14\">2 Corintios 10:14</a>, <a href=\"philippians-3.es.html#v3-16\">Filipenses 3:16</a>, y 1 Tesalonicenses 2:16 y 4:15 (estos dos todavía no en estas páginas)."),
+    ("At Philippians 3:21 (not yet on these pages) Christ will change the body of humiliation to be like his body of glory.",
+     "At <a href=\"philippians-3.html#v3-21\">Philippians 3:21</a> Christ will change the outward form of the body of humiliation, to be formed with his body of glory."),
+    ("En Filipenses 3:21 (todavía no en estas páginas) Cristo transformará el cuerpo de la humillación para que sea como su cuerpo",
+     "En <a href=\"philippians-3.es.html#v3-21\">Filipenses 3:21</a> Cristo transformará el cuerpo de la humillación para que sea como su cuerpo"),
+])
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "benjamin":
+        _old = "(and at Philippians 3:5, not yet on these pages)"
+        assert _e["desc"].count(_old) == 1
+        _e["desc"] = _e["desc"].replace(_old, "(and at <a href=\"philippians-3.html#v3-5\">Philippians 3:5</a>)")
+
+XREFS.extend([
+    (("Philippians", 4, 4), ("Philippians", 3, 1), "rejoice in the Lord"),
+    (("Revelation", 22, 15), ("Philippians", 3, 2), "dogs"),
+    (("Galatians", 5, 12), ("Philippians", 3, 2), "the cut"),
+    (("Romans", 2, 29), ("Philippians", 3, 3), "circumcision of the heart"),
+    (("1 Corinthians", 1, 31), ("Philippians", 3, 3), "boasting"),
+    (("Genesis", 17, 12), ("Philippians", 3, 5), "the eighth day"),
+    (("Leviticus", 12, 3), ("Philippians", 3, 5), "the eighth day"),
+    (("Romans", 11, 1), ("Philippians", 3, 5), "tribe of Benjamin"),
+    (("2 Corinthians", 11, 22), ("Philippians", 3, 5), "Hebrews"),
+    (("Acts", 23, 6), ("Philippians", 3, 5), "a Pharisee"),
+    (("Galatians", 1, 13), ("Philippians", 3, 6), "persecuting the congregation"),
+    (("Philippians", 1, 21), ("Philippians", 3, 7), "gain"),
+    (("Acts", 27, 10), ("Philippians", 3, 7), "loss"),
+    (("Philippians", 2, 6), ("Philippians", 3, 7), "counted"),
+    (("Galatians", 2, 16), ("Philippians", 3, 9), "faith in Christ"),
+    (("Romans", 10, 3), ("Philippians", 3, 9), "a righteousness of one's own"),
+    (("Romans", 8, 29), ("Philippians", 3, 10), "formed with"),
+    (("1 Corinthians", 9, 24), ("Philippians", 3, 14), "the prize"),
+    (("Galatians", 6, 16), ("Philippians", 3, 16), "walk in line"),
+    (("1 Corinthians", 11, 1), ("Philippians", 3, 17), "imitators"),
+    (("Romans", 16, 18), ("Philippians", 3, 19), "the belly"),
+    (("Philippians", 1, 27), ("Philippians", 3, 20), "citizenship"),
+    (("Romans", 8, 23), ("Philippians", 3, 20), "waiting"),
+    (("Philippians", 2, 7), ("Philippians", 3, 21), "outward form"),
+    (("1 Corinthians", 15, 27), ("Philippians", 3, 21), "all things subjected"),
+])
+
+CHAPTER_ART["php3"] = [dict(
+    file="euphiletos-panathenaic-amphora-runners.jpg",
+    title="Footrace, on a Panathenaic prize amphora",   title_es="Carrera a pie, en un ánfora de premio panatenaica",
+    artist="Attributed to the Euphiletos Painter",
+    year="about 530 BC",
+    location="The Metropolitan Museum of Art, New York",
+    location_es="The Metropolitan Museum of Art, Nueva York",
+    alt="Black-figure painting on the orange clay of a Greek jar: four bearded runners, black figures with incised lines for muscles, "
+        "race to the right in a tight pack, arms pumping and legs stretched in long strides; the legs of a fifth show at the right edge.",
+    note="&#9888; Runners in the stadium race, painted on a jar of the kind filled with olive oil and given as a prize at the games of Athens. &lsquo;I pursue toward the goal, for the prize&rsquo; (<a href=\"philippians-3.html#v3-14\">verse 14</a>): Paul&rsquo;s <em>brabeion</em> is the victor&rsquo;s reward.",
+    note_es="&#9888; Corredores en la carrera del estadio, pintados en un ánfora del tipo que se llenaba de aceite de oliva y se daba como premio en los juegos de Atenas. «Voy tras la meta, hacia el premio» (<a href=\"philippians-3.es.html#v3-14\">versículo 14</a>): el <em>brabeion</em> de Pablo es la recompensa del vencedor.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Terracotta_Panathenaic_prize_amphora_MET_DP244583.jpg",
+)]
+
+CHRON_CHAPTERS["php3"] = dict(era='apostolic',
+    when="Paul warns against those who would circumcise gentile believers, sets his own credentials in the flesh beside 'the surpassing worth' of knowing Christ, and runs for the prize, with a citizenship in the heavens.",
+    clock="Written from prison; Rome is the traditional place, and Ephesus and Caesarea are also proposed.")
