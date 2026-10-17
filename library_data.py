@@ -38180,3 +38180,190 @@ CHAPTER_ART["eph6"] = [dict(
 CHRON_CHAPTERS["eph6"] = dict(era='apostolic',
     when="The household instructions end with children and parents and with slaves and masters, both under one Master in the heavens; then the full armor of God, drawn from Isaiah, a request for prayer from 'an ambassador in a chain,' and Tychicus sent with the news.",
     clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
+
+# ---- Philippians 2 ----------------------------------------------------------
+DICTIONARY.append(("eritheia", "eritheia", "ἐριθεία", "eritheia",
+    "SELFISH AMBITION, RIVALRY &mdash; the self-seeking of one who works for his own side. It is reported to come from <em>erithos</em>, a hired "
+    "worker, and to have been used of men canvassing for office. &#9888; It stands in seven verses of the New Testament: <a href=\"romans-2.html#v2-8\">Romans 2:8</a>, "
+    "<a href=\"2-corinthians-12.html#v20\">2 Corinthians 12:20</a>, <a href=\"galatians-5.html#v20\">Galatians 5:20</a>, <a href=\"philippians-1.html#v17\">Philippians 1:17</a> and <a href=\"philippians-2.html#v2-3\">2:3</a>, and James 3:14 and 3:16 (the last two not yet "
+    "on these pages). At Philippians 1:17 it is the motive of the rival preachers; at 2:3 it is named as a danger inside the "
+    "congregation, and the remedy that follows is the mind of Christ. KJV &lsquo;strife,&rsquo; ASV &lsquo;faction,&rsquo; NIV &lsquo;selfish "
+    "ambition,&rsquo; NWT 1984 &lsquo;contentiousness.&rsquo;",
+    ("Philippians", 1, 17)))
+DICTIONARY_ES["eritheia"] = ("eritheía",
+    "AMBICIÓN EGOÍSTA, RIVALIDAD &mdash; el afán de quien trabaja para su propio bando. Se informa que viene de <em>erithos</em>, un "
+    "jornalero, y que se usaba de los que hacían campaña por un cargo. &#9888; Está en siete versículos del Nuevo Testamento: <a href=\"romans-2.es.html#v2-8\">Romanos 2:8</a>, "
+    "<a href=\"2-corinthians-12.es.html#v20\">2 Corintios 12:20</a>, <a href=\"galatians-5.es.html#v20\">Gálatas 5:20</a>, <a href=\"philippians-1.es.html#v17\">Filipenses 1:17</a> y <a href=\"philippians-2.es.html#v2-3\">2:3</a>, y Santiago 3:14 y 3:16 (los dos últimos todavía no "
+    "en estas páginas). En Filipenses 1:17 es el motivo de los predicadores rivales; en 2:3 se nombra como un peligro dentro de la "
+    "congregación, y el remedio que sigue es el sentir de Cristo. RV60 «contienda», NVI «egoísmo», TNM 1987 «espíritu de contradicción».")
+
+DICTIONARY.append(("kenodoxia", "kenodoxia", "κενοδοξία", "kenodoxia",
+    "EMPTY GLORY &mdash; <em>kenos</em>, &lsquo;empty,&rsquo; and <em>doxa</em>, &lsquo;glory&rsquo;: conceit, glory with nothing behind it. "
+    "&#9888; The noun stands in one verse of the New Testament, <a href=\"philippians-2.html#v2-3\">Philippians 2:3</a>, &lsquo;doing nothing out of selfish ambition or "
+    "out of empty glory&rsquo;; its adjective <em>kenodoxos</em> stands in one, <a href=\"galatians-5.html#v26\">Galatians 5:26</a>, &lsquo;Let us not become hungry for "
+    "empty glory.&rsquo; KJV &lsquo;vainglory,&rsquo; NIV &lsquo;vain conceit,&rsquo; NWT 1984 &lsquo;egotism.&rsquo;",
+    ("Philippians", 2, 3)))
+DICTIONARY_ES["kenodoxia"] = ("kenodoxía",
+    "GLORIA VACÍA &mdash; <em>kenos</em>, «vacío», y <em>doxa</em>, «gloria»: la presunción, una gloria sin nada detrás. &#9888; El "
+    "sustantivo está en un solo versículo del Nuevo Testamento, <a href=\"philippians-2.es.html#v2-3\">Filipenses 2:3</a>, «sin hacer nada por ambición egoísta ni por "
+    "gloria vacía»; su adjetivo <em>kenodoxos</em> está en uno, <a href=\"galatians-5.es.html#v26\">Gálatas 5:26</a>, «No nos volvamos ávidos de gloria vacía». RV60 "
+    "«vanagloria», NVI «vanidad», TNM 1987 «egotismo».")
+
+DICTIONARY.append(("harpagmos", "harpagmos", "ἁρπαγμός", "harpagmos",
+    "A SEIZING, A THING SEIZED &mdash; from <em>harpazō</em>, &lsquo;to snatch.&rsquo; &#9888; It stands in one verse of the New Testament, "
+    "<a href=\"philippians-2.html#v2-6\">Philippians 2:6</a>, where Christ &lsquo;did not count being equal with God a thing to be grasped,&rsquo; and three readings have long "
+    "histories: robbery (equality was his by right, so claiming it was no theft: Vulgate <em>rapinam</em>, KJV &lsquo;thought it not "
+    "robbery&rsquo;); a thing to be seized (he did not reach for what he lacked: NWT 1984 &lsquo;gave no consideration to a seizure&rsquo;); "
+    "and a thing to be held on to or used (he had it and did not cling to it: NIV &lsquo;something to be used to his own advantage&rsquo;). "
+    "English &lsquo;grasp&rsquo; covers both reaching and holding. The library sets out the readings and does not choose.",
+    ("Philippians", 2, 6)))
+DICTIONARY_ES["harpagmos"] = ("harpagmós",
+    "UN ARREBATAR, ALGO ARREBATADO &mdash; de <em>harpazō</em>, «arrebatar». &#9888; Está en un solo versículo del Nuevo Testamento, "
+    "<a href=\"philippians-2.es.html#v2-6\">Filipenses 2:6</a>, donde Cristo «no consideró el ser igual a Dios como cosa que asir», y tres lecturas tienen larga historia: "
+    "usurpación (la igualdad era suya por derecho, así que reclamarla no era robo: Vulgata <em>rapinam</em>, RV 1909 «no tuvo por "
+    "usurpación»); algo que arrebatar (no intentó alcanzar lo que no tenía: TNM 1987 «no dio consideración a una usurpación»); y algo "
+    "que retener o aprovechar (lo tenía y no se aferró a ello: RV60 «cosa a que aferrarse»). El español «asir» abarca tanto alcanzar "
+    "como sujetar. La biblioteca expone las lecturas y no elige.")
+
+DICTIONARY.append(("spendo", "spendō", "σπένδω", "spendō",
+    "TO POUR OUT AS A DRINK OFFERING &mdash; to pour a libation of wine over a sacrifice. &#9888; It stands in two verses of the New "
+    "Testament: <a href=\"philippians-2.html#v2-17\">Philippians 2:17</a>, &lsquo;even if I am poured out as a drink offering upon the sacrifice and service of your faith,&rsquo; and "
+    "2 Timothy 4:6, &lsquo;I am already being poured out&rsquo; (not yet on these pages). In the Greek Old Testament it is the verb of the "
+    "drink offering, as at <a href=\"numbers-28.html#v28-7\">Numbers 28:7</a> (see <a href=\"dictionary.html#nesekh\"><em>nesekh</em></a>). KJV &lsquo;if I be offered,&rsquo; NIV &lsquo;poured out "
+    "like a drink offering,&rsquo; Douay &lsquo;made a victim.&rsquo;",
+    ("Philippians", 2, 17)))
+DICTIONARY_ES["spendo"] = ("spéndō",
+    "DERRAMAR COMO LIBACIÓN &mdash; verter vino sobre un sacrificio. &#9888; Está en dos versículos del Nuevo Testamento: <a href=\"philippians-2.es.html#v2-17\">Filipenses 2:17</a>, "
+    "«aunque yo sea derramado como libación sobre el sacrificio y el servicio de la fe de ustedes», y 2 Timoteo 4:6, «ya estoy siendo "
+    "derramado» (todavía no en estas páginas). En el Antiguo Testamento griego es el verbo de la libación, como en <a href=\"numbers-28.es.html#v28-7\">Números 28:7</a> "
+    "(véase <a href=\"diccionario.html#nesekh\"><em>nesekh</em></a>). RV60 «derramado en libación», TNM 1987 «derramado como libación».")
+
+DICTIONARY.append(("phoster", "phōstēr", "φωστήρ", "phōstēr",
+    "A LIGHT, A LUMINARY &mdash; a body that gives light. &#9888; It stands in two verses of the New Testament: <a href=\"philippians-2.html#v2-15\">Philippians 2:15</a>, "
+    "&lsquo;among whom you shine like lights in the world,&rsquo; and <a href=\"revelation-21.html#v21-11\">Revelation 21:11</a>, the &lsquo;radiance&rsquo; of the holy city. In the Greek Old "
+    "Testament it is the word for the lights of creation, &lsquo;Let there be lights in the vault of the sky&rsquo; (<a href=\"genesis-1.html#v14\">Genesis 1:14</a>), the "
+    "sun and moon of 1:16. KJV &lsquo;lights,&rsquo; NWT 1984 &lsquo;illuminators,&rsquo; NIV &lsquo;stars in the sky.&rsquo;",
+    ("Philippians", 2, 15)))
+DICTIONARY_ES["phoster"] = ("phōstḗr",
+    "UNA LUMBRERA &mdash; un cuerpo que da luz. &#9888; Está en dos versículos del Nuevo Testamento: <a href=\"philippians-2.es.html#v2-15\">Filipenses 2:15</a>, «entre la cual "
+    "brillan como lumbreras en el mundo», y <a href=\"revelation-21.es.html#v21-11\">Apocalipsis 21:11</a>, el «resplandor» de la ciudad santa. En el Antiguo Testamento griego es la "
+    "palabra para las lumbreras de la creación, «Haya lumbreras en la bóveda del cielo» (<a href=\"genesis-1.es.html#v14\">Génesis 1:14</a>), el sol y la luna de "
+    "1:16. RV60 «luminares», TNM 1987 «iluminadores», NVI «estrellas».")
+
+DICTIONARY.append(("ademoneo", "adēmoneō", "ἀδημονέω", "adēmoneō",
+    "TO BE IN ANGUISH, deeply distressed. &#9888; It stands in three verses of the New Testament: two in Gethsemane, <a href=\"matthew-26.html#v26-37\">Matthew 26:37</a> "
+    "and <a href=\"mark-14.html#v14-33\">Mark 14:33</a>, where Jesus &lsquo;began to be grieved and anguished,&rsquo; and <a href=\"philippians-2.html#v2-26\">Philippians 2:26</a>, where Epaphroditus is "
+    "anguished because the Philippians heard he had been sick. KJV &lsquo;very heavy&rsquo; in Matthew and &lsquo;full of heaviness&rsquo; in "
+    "Philippians; NIV &lsquo;distressed.&rsquo;",
+    ("Matthew", 26, 37)))
+DICTIONARY_ES["ademoneo"] = ("adēmonéō",
+    "ESTAR ANGUSTIADO, profundamente afligido. &#9888; Está en tres versículos del Nuevo Testamento: dos en Getsemaní, <a href=\"matthew-26.es.html#v26-37\">Mateo 26:37</a> y "
+    "<a href=\"mark-14.es.html#v14-33\">Marcos 14:33</a>, donde Jesús «comenzó a entristecerse y a angustiarse», y <a href=\"philippians-2.es.html#v2-26\">Filipenses 2:26</a>, donde Epafrodito está angustiado "
+    "porque los filipenses oyeron que había estado enfermo. RV60 «gravemente se angustió», TNM 1987 «se siente abatido».")
+
+DICTIONARY.append(("paraboleuomai", "paraboleuomai", "παραβολεύομαι", "paraboleuomai",
+    "TO GAMBLE, TO STAKE &mdash; to risk something on a throw. &#9888; It stands in one verse of the New Testament, <a href=\"philippians-2.html#v2-30\">Philippians 2:30</a>, "
+    "where Epaphroditus came near to death &lsquo;gambling with his life.&rsquo; It is reported to be a gamester&rsquo;s word, and a later "
+    "Christian brotherhood that nursed the sick in Alexandria, the <em>parabolani</em>, is reported to have taken its name from it. "
+    "The Byzantine text reads <em>paraboulesamenos</em>, &lsquo;having disregarded&rsquo;: KJV &lsquo;not regarding his life,&rsquo; ASV "
+    "&lsquo;hazarding his life.&rsquo;",
+    ("Philippians", 2, 30)))
+DICTIONARY_ES["paraboleuomai"] = ("paraboleúomai",
+    "JUGARSE, APOSTAR &mdash; arriesgar algo a una tirada. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"philippians-2.es.html#v2-30\">Filipenses 2:30</a>, "
+    "donde Epafrodito llegó cerca de la muerte «jugándose la vida». Se informa que es una palabra de jugador, y se informa que una "
+    "hermandad cristiana posterior que cuidaba enfermos en Alejandría, los <em>parabolani</em>, tomó de ella su nombre. El texto "
+    "bizantino dice <em>paraboulesamenos</em>, «habiendo desatendido»: RV60 «exponiendo su vida», RV 1909 «poniendo su vida».")
+
+DICTIONARY_ES["splanchna"] = ("splánchna",
+    "LAS ENTRAÑAS &mdash; las vísceras; y en la manera de hablar griega y hebrea, la sede del sentimiento más hondo, donde el español "
+    "pone el corazón. Es la palabra de afecto más fuerte que hay: el verbo emparentado <em>splanchnizomai</em> es el que usan los "
+    "Evangelios cuando Jesús se conmueve ante una multitud o un leproso, y las entrañas de Judas «derramadas» en Hechos 1:18 son el "
+    "mismo sustantivo en su sentido literal. Pablo añora a los filipenses «con el entrañable afecto de Cristo Jesús» (<a href=\"philippians-1.es.html#v8\">Filipenses 1:8</a>), "
+    "y en <a href=\"philippians-2.es.html#v2-1\">2:1</a> pregunta «si algún afecto entrañable y compasiones». La RV 1909 imprime «entrañas» sin reparo; las versiones "
+    "modernas se retiran a «afecto», que es una sustitución más que una traducción.")
+
+DICTIONARY_ES["presbytes"] = ("presbýtēs",
+    "UN ANCIANO, un hombre de edad &mdash; distinto de <em>presbyteros</em>, el cargo de la congregación, aunque las raíces son "
+    "comunes. &#9888; En Filemón 9 Pablo se llama a sí mismo «siendo como soy, Pablo, un <em>presbytēs</em>», apoyando el ruego en lo "
+    "que conmueve la edad. Pero hay un problema famoso: <em>presbeutēs</em>, «embajador», difiere en una sola letra, las dos se "
+    "escribían a menudo igual en esa época, y «Pablo embajador, y ahora también preso» encaja con lo que dice de sí mismo en "
+    "<a href=\"ephesians-6.es.html#v6-20\">Efesios 6:20</a> («embajador en una cadena»). La mayoría de las ediciones y versiones conservan «anciano»; una "
+    "minoría fuerte lee «embajador». La biblioteca conserva el texto llano y señala la alternativa.")
+
+
+_gal3_fix([
+    ("<a href=\"philippians-2.html\">Philippians 2:7</a> (not yet on these pages), where he is found in the form of a man.",
+     "<a href=\"philippians-2.html#v2-7\">Philippians 2:7</a>, where he is found in outward form as a human being."),
+    ("The translation keeps &ldquo;form,&rdquo; because the Greek is the shape of a thing, not a style.",
+     "The translation keeps &ldquo;form,&rdquo; because the Greek is the shape of a thing, not a style; at Philippians 2:7, where "
+     "<em>morphē</em> stands beside it, it writes &ldquo;outward form&rdquo; so that the two stay apart."),
+    ("La traducción conserva «forma», porque el griego es la figura de una cosa, no un estilo.",
+     "La traducción conserva «forma», porque el griego es la figura de una cosa, no un estilo; en <a href=\"philippians-2.es.html#v2-7\">Filipenses 2:7</a>, donde "
+     "<em>morphē</em> está a su lado, escribe «forma exterior» para que las dos no se confundan."),
+    (", 2 Corinthians 9:3 and Philippians 2:7 (those two not yet on these pages).",
+     ", <a href=\"2-corinthians-9.html#v3\">2 Corinthians 9:3</a> and <a href=\"philippians-2.html#v2-7\">Philippians 2:7</a>."),
+    (", 2 Corintios 9:3 y Filipenses 2:7 (estos dos todavía no en estas páginas).",
+     ", <a href=\"2-corinthians-9.es.html#v3\">2 Corintios 9:3</a> y <a href=\"philippians-2.es.html#v2-7\">Filipenses 2:7</a>."),
+    ("and Philippians 2:7 (not yet on these pages). &#11088;", "and <a href=\"philippians-2.html#v2-7\">Philippians 2:7</a>. &#11088;"),
+    ("y Filipenses 2:7 (todavía no en estas páginas). &#11088;", "y <a href=\"philippians-2.es.html#v2-7\">Filipenses 2:7</a>. &#11088;"),
+    ("and Philippians 2:22 (not yet on these pages).", "and <a href=\"philippians-2.html#v2-22\">Philippians 2:22</a>."),
+    ("y Filipenses 2:22 (todavía no en estas páginas).", "y <a href=\"philippians-2.es.html#v2-22\">Filipenses 2:22</a>."),
+    ("and Philippians 2:15 (not yet on these pages). This translation",
+     "and <a href=\"philippians-2.html#v2-15\">Philippians 2:15</a>, &lsquo;a crooked and twisted generation.&rsquo; This translation"),
+    ("y Filipenses 2:15 (todavía no en estas páginas). Esta traducción",
+     "y <a href=\"philippians-2.es.html#v2-15\">Filipenses 2:15</a>, «una generación torcida y perversa». Esta traducción"),
+    ("Ephesians 4:2</a>, and Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those five not yet on",
+     "Ephesians 4:2</a>, <a href=\"philippians-2.html#v2-3\">Philippians 2:3</a>, and Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those four not yet on"),
+    ("Efesios 4:2</a>, y Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cinco todavía no",
+     "Efesios 4:2</a>, <a href=\"philippians-2.es.html#v2-3\">Filipenses 2:3</a>, y Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cuatro todavía no"),
+    ("and Philippians 2:14 and 1 Peter 4:9 (neither yet on these pages).",
+     "and <a href=\"philippians-2.html#v2-14\">Philippians 2:14</a> and 1 Peter 4:9 (the second not yet on these pages)."),
+    ("y Filipenses 2:14 y 1 Pedro 4:9 (ninguno todavía en estas páginas).",
+     "y <a href=\"philippians-2.es.html#v2-14\">Filipenses 2:14</a> y 1 Pedro 4:9 (el segundo todavía no en estas páginas)."),
+])
+
+XREFS.extend([
+    (("Philippians", 1, 17), ("Philippians", 2, 3), "selfish ambition"),
+    (("Galatians", 5, 26), ("Philippians", 2, 3), "empty glory"),
+    (("Romans", 12, 16), ("Philippians", 2, 2), "the same mind"),
+    (("Philippians", 4, 2), ("Philippians", 2, 2), "the same mind"),
+    (("John", 5, 18), ("Philippians", 2, 6), "equal with God"),
+    (("Romans", 4, 14), ("Philippians", 2, 7), "emptied"),
+    (("Romans", 8, 3), ("Philippians", 2, 7), "in the likeness"),
+    (("Isaiah", 53, 12), ("Philippians", 2, 7), "poured out his life to death"),
+    (("Romans", 14, 11), ("Philippians", 2, 10), "every knee shall bow"),
+    (("Romans", 10, 9), ("Philippians", 2, 11), "Jesus is Lord"),
+    (("1 Corinthians", 12, 3), ("Philippians", 2, 11), "Jesus is Lord"),
+    (("Ephesians", 2, 8), ("Philippians", 2, 12), "salvation and works"),
+    (("Exodus", 16, 8), ("Philippians", 2, 14), "grumblings"),
+    (("Deuteronomy", 32, 5), ("Philippians", 2, 15), "a crooked generation"),
+    (("Luke", 9, 41), ("Philippians", 2, 15), "a twisted generation"),
+    (("Genesis", 1, 14), ("Philippians", 2, 15), "lights"),
+    (("Galatians", 2, 2), ("Philippians", 2, 16), "running in vain"),
+    (("Numbers", 28, 7), ("Philippians", 2, 17), "a drink offering poured out"),
+    (("1 Corinthians", 4, 17), ("Philippians", 2, 19), "sending Timothy"),
+    (("Romans", 5, 4), ("Philippians", 2, 22), "proven character"),
+    (("2 Corinthians", 8, 23), ("Philippians", 2, 25), "messengers"),
+    (("Mark", 14, 33), ("Philippians", 2, 26), "anguished"),
+])
+
+CHAPTER_ART["php2"] = [dict(
+    file="madox-brown-jesus-washing-peters-feet.jpg",
+    title="Jesus Washing Peter&rsquo;s Feet",   title_es="Jesús lava los pies de Pedro",
+    artist="Ford Madox Brown",
+    year="1852&ndash;56",
+    location="Tate Britain, London",
+    location_es="Tate Britain, Londres",
+    alt="Oil painting: at a long table covered with a white cloth, Jesus, with a gold halo and a towel tied at his waist, kneels on "
+        "the floor and washes the bare feet of Peter, a grey-bearded man in a dark red robe who sits with his hands clasped and his head "
+        "bowed. A copper basin is under Peter&rsquo;s feet and a jug stands behind it. The other disciples crowd along the table, watching; "
+        "one at the left bends to unfasten his sandal.",
+    note="&#9888; Jesus kneels at the feet of a disciple with a towel at his waist (<a href=\"john-13.html#v13-5\">John 13:5</a>), the &lsquo;form of a slave&rsquo; of <a href=\"philippians-2.html#v2-7\">verse 7</a> shown as a single act. Brown is reported to have first painted Christ stripped to the waist and to have clothed him after the picture was criticized.",
+    note_es="&#9888; Jesús se arrodilla a los pies de un discípulo con una toalla a la cintura (<a href=\"john-13.es.html#v13-5\">Juan 13:5</a>), la «forma de esclavo» del <a href=\"philippians-2.es.html#v2-7\">versículo 7</a> mostrada en un solo acto. Se informa que Brown pintó primero a Cristo desnudo hasta la cintura y que lo vistió después de que el cuadro fuera criticado.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jesus_washing_Peter%27s_feet.jpg",
+)]
+
+CHRON_CHAPTERS["php2"] = dict(era='apostolic',
+    when="Paul asks the Philippians for one mind and quotes the hymn of Christ who emptied himself and took a slave's form, then plans to send Timothy and sends back Epaphroditus, who nearly died.",
+    clock="Written from prison; Rome is the traditional place, and Ephesus and Caesarea are also proposed.")
