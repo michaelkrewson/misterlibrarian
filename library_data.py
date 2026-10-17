@@ -37128,3 +37128,152 @@ CHAPTER_ART["gal2"] = [dict(
 CHRON_CHAPTERS["gal2"] = dict(era='apostolic',
     when="Paul goes up to Jerusalem a second time, fourteen years on, with Barnabas and Titus, lays his gospel before James, Cephas and John, and leaves with their right hands of partnership and one request, to remember the poor. Later, at Antioch, he opposes Cephas to his face for withdrawing from the table of the nations.",
     clock="Undated by the text: the chapter gives only its own interval, &lsquo;after fourteen years,&rsquo; counted either from Paul&rsquo;s call or from his first visit to Jerusalem. Which visit in Acts it is (the famine relief of Acts 11:30 or the council of Acts 15) is argued, and the Antioch incident has no date of its own.")
+
+
+# ---- Galatians 3 ------------------------------------------------------------
+DICTIONARY.append(("baskaino", "baskainō", "βασκαίνω", "baskainō",
+    "TO PUT THE EVIL EYE ON, TO BEWITCH &mdash; in ordinary Greek, the envious look that does harm. &#9888; It stands in one verse "
+    "of the New Testament, <a href=\"galatians-3.html#v1\">Galatians 3:1</a>: &lsquo;O senseless Galatians, who has put the evil eye on "
+    "you &mdash; you before whose eyes Jesus Christ was publicly portrayed as crucified?&rsquo; The eye is in the next words, "
+    "<em>kat&rsquo; ophthalmous</em>, &lsquo;before whose eyes.&rsquo; KJV and ASV &lsquo;bewitch,&rsquo; NWT 1984 &lsquo;brought YOU under "
+    "evil influence,&rsquo; TLB &lsquo;cast an evil spell upon you.&rsquo;",
+    ("Galatians", 3, 1)))
+DICTIONARY_ES["baskaino"] = ("baskainō",
+    "ECHAR MAL DE OJO, HECHIZAR &mdash; en el griego corriente, la mirada envidiosa que hace daño. &#9888; Está en un solo versículo del "
+    "Nuevo Testamento, <a href=\"galatians-3.es.html#v1\">Gálatas 3:1</a>: «¡Oh gálatas insensatos! ¿Quién les ha echado mal de ojo, a "
+    "ustedes, ante cuyos ojos Jesucristo fue presentado públicamente como crucificado?». El ojo está en las palabras siguientes, "
+    "<em>kat&rsquo; ophthalmous</em>, «ante cuyos ojos». RV60 «fascinó», TNM 1987 «los puso bajo mala influencia», NVI «los ha hechizado».")
+
+DICTIONARY.append(("epikataratos", "epikataratos", "ἐπικατάρατος", "epikataratos",
+    "CURSED &mdash; the adjective of the Greek Old Testament&rsquo;s curses, as in Deuteronomy 27:26. &#9888; It stands in two verses of "
+    "the New Testament, both in <a href=\"galatians-3.html#v10\">Galatians 3:10</a> and <a href=\"galatians-3.html#v13\">3:13</a>. At 3:10 it "
+    "is the word of Deuteronomy 27:26 quoted; at 3:13 Paul uses it again for <a href=\"deuteronomy-21.html#v21-23\">Deuteronomy 21:23</a>, "
+    "where the Greek Old Testament has a different word, <em>kekatēramenos</em>, &lsquo;cursed by God&rsquo;; Paul leaves out &lsquo;by "
+    "God.&rsquo; KJV &lsquo;Cursed is every one,&rsquo; NWT 1984 &lsquo;Cursed&rsquo; and &lsquo;Accursed.&rsquo;",
+    ("Galatians", 3, 10)))
+DICTIONARY_ES["epikataratos"] = ("epikataratos",
+    "MALDITO &mdash; el adjetivo de las maldiciones del Antiguo Testamento griego, como en Deuteronomio 27:26. &#9888; Está en dos "
+    "versículos del Nuevo Testamento, los dos en <a href=\"galatians-3.es.html#v10\">Gálatas 3:10</a> y <a href=\"galatians-3.es.html#v13\">3:13</a>. "
+    "En 3:10 es la palabra de Deuteronomio 27:26 citada; en 3:13 Pablo la usa otra vez para <a href=\"deuteronomy-21.es.html#v21-23\">Deuteronomio "
+    "21:23</a>, donde el Antiguo Testamento griego tiene otra palabra, <em>kekatēramenos</em>, «maldito por Dios»; Pablo deja fuera «por "
+    "Dios». RV60 «Maldito todo aquel», TNM 1987 «Maldito es todo el que».")
+
+DICTIONARY.append(("exagorazo", "exagorazō", "ἐξαγοράζω", "exagorazō",
+    "TO BUY OUT, TO REDEEM &mdash; <em>ex</em>, out of, and <em>agorazō</em>, to buy in the market. &#9888; It stands in four verses of the "
+    "New Testament: <a href=\"galatians-3.html#v13\">Galatians 3:13</a>, &lsquo;Christ bought us out from the curse of the law by becoming a "
+    "curse for us&rsquo;; Galatians 4:5, &lsquo;to buy out those under law&rsquo;; and Ephesians 5:16 and Colossians 4:5, &lsquo;buying "
+    "out the time&rsquo; (those three not yet on these pages). KJV and ASV &lsquo;redeemed,&rsquo; NWT 1984 &lsquo;by purchase "
+    "released.&rsquo;",
+    ("Galatians", 3, 13)))
+DICTIONARY_ES["exagorazo"] = ("exagorazō",
+    "COMPRAR Y SACAR, REDIMIR &mdash; <em>ex</em>, fuera de, y <em>agorazō</em>, comprar en el mercado. &#9888; Está en cuatro versículos "
+    "del Nuevo Testamento: <a href=\"galatians-3.es.html#v13\">Gálatas 3:13</a>, «Cristo nos compró y nos sacó de la maldición de la ley, "
+    "haciéndose maldición por nosotros»; Gálatas 4:5, «para comprar y sacar a los que estaban bajo ley»; y Efesios 5:16 y Colosenses 4:5, "
+    "«comprando el tiempo» (esos tres todavía no en estas páginas). RV60 «nos redimió», TNM 1987 «por compra, nos libró».")
+
+DICTIONARY.append(("mesites", "mesitēs", "μεσίτης", "mesitēs",
+    "A MEDIATOR, a go-between &mdash; from <em>mesos</em>, middle. &#9888; It stands in six verses of the New Testament: "
+    "<a href=\"galatians-3.html#v19\">Galatians 3:19</a> and <a href=\"galatians-3.html#v20\">3:20</a>, where the law was ordained &lsquo;by the "
+    "hand of a mediator&rsquo; and &lsquo;a mediator is not of one, but God is one&rsquo;; 1 Timothy 2:5; and Hebrews 8:6, 9:15 and 12:24, "
+    "the mediator of a better and a new covenant (those four not yet on these pages). Galatians 3:20 is one of the hardest sentences in "
+    "Paul and has no agreed reading. KJV &lsquo;a mediator is not a mediator of one,&rsquo; NIV &lsquo;implies more than one party.&rsquo;",
+    ("Galatians", 3, 19)))
+DICTIONARY_ES["mesites"] = ("mesitēs",
+    "UN MEDIADOR, un intermediario &mdash; de <em>mesos</em>, medio. &#9888; Está en seis versículos del Nuevo Testamento: "
+    "<a href=\"galatians-3.es.html#v19\">Gálatas 3:19</a> y <a href=\"galatians-3.es.html#v20\">3:20</a>, donde la ley fue dispuesta «en mano de "
+    "un mediador» y «el mediador no es de uno solo, pero Dios es uno»; 1 Timoteo 2:5; y Hebreos 8:6, 9:15 y 12:24, el mediador de un pacto "
+    "mejor y nuevo (esos cuatro todavía no en estas páginas). Gálatas 3:20 es una de las frases más difíciles de Pablo y no tiene una "
+    "lectura acordada. RV60 «el mediador no lo es de uno solo», TNM 1987 «no hay mediador cuando se trata de una sola persona».")
+
+
+def _gal3_fix(pairs):
+    """Replace text in already-built library entries; every old string must be found exactly once overall."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        assert hits == 1, (hits, old[:60])
+
+
+_gal3_fix([
+    ("is the sentence Galatians 3:13 (not yet on these pages) quotes",
+     "is the sentence <a href=\"galatians-3.html#v13\">Galatians 3:13</a> quotes"),
+    ("Jeremías 11:3 toma prestada la forma", "Jeremías 11:3 (todavía no en estas páginas) toma prestada la forma"),
+    ("y Pablo cita 27:26 en Gálatas 3:10 (ninguno todavía en estas páginas).",
+     "y Pablo cita 27:26 en <a href=\"galatians-3.es.html#v10\">Gálatas 3:10</a>."),
+    ("and Galatians 3:19, 1 Timothy 2:14, Hebrews 2:2 and 9:15 (those four not yet on these pages).",
+     "<a href=\"galatians-3.html#v19\">Galatians 3:19</a>, and 1 Timothy 2:14, Hebrews 2:2 and 9:15 (those three not yet on these pages)."),
+    ("y Gálatas 3:19, 1 Timoteo 2:14, Hebreos 2:2 y 9:15 (estos cuatro todavía no en estas páginas).",
+     "<a href=\"galatians-3.es.html#v19\">Gálatas 3:19</a>, y 1 Timoteo 2:14, Hebreos 2:2 y 9:15 (estos tres todavía no en estas páginas)."),
+    ("the other seven (1 Corinthians 15:22, 36 and 45, 2 Corinthians 3:6, Galatians 3:21, Colossians 2:13 and 1 Peter 3:18) are not yet.",
+     "so are five of the other seven, <a href=\"1-corinthians-15.html#v22\">1 Corinthians 15:22</a>, 36 and 45, "
+     "<a href=\"2-corinthians-3.html#v6\">2 Corinthians 3:6</a> and <a href=\"galatians-3.html#v21\">Galatians 3:21</a>; Colossians 2:13 and "
+     "1 Peter 3:18 are not yet."),
+    ("los otros siete (1 Corintios 15:22, 36 y 45, 2 Corintios 3:6, Gálatas 3:21, Colosenses 2:13 y 1 Pedro 3:18) todavía no.",
+     "también cinco de los otros siete, <a href=\"1-corinthians-15.es.html#v22\">1 Corintios 15:22</a>, 36 y 45, "
+     "<a href=\"2-corinthians-3.es.html#v6\">2 Corintios 3:6</a> y <a href=\"galatians-3.es.html#v21\">Gálatas 3:21</a>; Colosenses 2:13 y "
+     "1 Pedro 3:18 todavía no."),
+    ("and Galatians 3:22 and 3:23 (not yet on these pages)",
+     "and <a href=\"galatians-3.html#v22\">Galatians 3:22</a> and <a href=\"galatians-3.html#v23\">3:23</a>"),
+    ("y Gálatas 3:22 y 3:23 (todavía no en estas páginas)",
+     "y <a href=\"galatians-3.es.html#v22\">Gálatas 3:22</a> y <a href=\"galatians-3.es.html#v23\">3:23</a>"),
+    ("and Galatians 3:24&ndash;25 (not yet on these pages), where the law is our guardian until Christ.",
+     "and <a href=\"galatians-3.html#v24\">Galatians 3:24</a>&ndash;25, where the law is our child-minder until Christ."),
+    ("y Gálatas 3:24&ndash;25 (todavía no en estas páginas), donde la ley es nuestro guardián hasta Cristo.",
+     "y <a href=\"galatians-3.es.html#v24\">Gálatas 3:24</a>&ndash;25, donde la ley es nuestro ayo hasta Cristo."),
+])
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "abraham":
+        _e["refs"] = list(_e.get("refs", [])) + [r for r in [("Galatians", 3, 6), ("Galatians", 3, 16), ("Galatians", 3, 29)]
+                                                 if r not in _e.get("refs", [])]
+
+XREFS.extend([
+    (("Luke", 24, 25), ("Galatians", 3, 1), "'O senseless ones': the risen Jesus, and Paul to the Galatians"),
+    (("Philippians", 1, 6), ("Galatians", 3, 3), "began and brought to completion"),
+    (("Genesis", 15, 6), ("Galatians", 3, 6), "Abraham believed, and it was reckoned to him as righteousness"),
+    (("Romans", 4, 3), ("Galatians", 3, 6), "Abraham believed God, quoted twice by Paul"),
+    (("Genesis", 12, 3), ("Galatians", 3, 8), "in you all the families of the ground will be blessed"),
+    (("Genesis", 18, 18), ("Galatians", 3, 8), "all the nations of the earth blessed through Abraham"),
+    (("Deuteronomy", 27, 26), ("Galatians", 3, 10), "cursed is he who does not uphold the words of this law"),
+    (("Romans", 1, 17), ("Galatians", 3, 11), "the righteous will live by faith"),
+    (("Leviticus", 18, 5), ("Galatians", 3, 12), "the one who does them will live by them"),
+    (("Romans", 10, 5), ("Galatians", 3, 12), "Leviticus 18:5 quoted twice by Paul"),
+    (("Deuteronomy", 21, 23), ("Galatians", 3, 13), "one who is hanged is a curse of God"),
+    (("Acts", 5, 30), ("Galatians", 3, 13), "hanging him on a tree"),
+    (("Genesis", 12, 7), ("Galatians", 3, 16), "to your seed"),
+    (("Genesis", 22, 18), ("Galatians", 3, 16), "in your seed all the nations blessed"),
+    (("Exodus", 12, 40), ("Galatians", 3, 17), "four hundred and thirty years"),
+    (("Genesis", 15, 13), ("Galatians", 3, 17), "four hundred years of affliction"),
+    (("Acts", 7, 53), ("Galatians", 3, 19), "the law as ordinances of angels"),
+    (("Leviticus", 26, 46), ("Galatians", 3, 19), "by the hand of Moses, by the hand of a mediator"),
+    (("Romans", 3, 30), ("Galatians", 3, 20), "God is one"),
+    (("Romans", 11, 32), ("Galatians", 3, 22), "shut up, so that"),
+    (("1 Corinthians", 4, 15), ("Galatians", 3, 24), "child-minders"),
+    (("Romans", 13, 14), ("Galatians", 3, 27), "put on Christ"),
+    (("Genesis", 1, 27), ("Galatians", 3, 28), "male and female he created them"),
+    (("Mark", 10, 6), ("Galatians", 3, 28), "male and female"),
+])
+
+CHAPTER_ART["gal3"] = [dict(
+    file="dore-abraham-three-angels.jpg",
+    title="Abraham and the Three Angels",        title_es="Abraham y los tres ángeles",
+    artist="Gustave Doré",
+    year="1866",
+    location="Wood engraving, from Doré’s illustrated Bible",
+    location_es="Grabado en madera, de la Biblia ilustrada de Doré",
+    alt="Black-and-white engraving: three winged figures in long robes stand together on a rise of ground against a wide evening sky, looking down at an old man in a hooded cloak who kneels before them with a staff in his hand. Behind him, in the low light, are tents and a seated camel.",
+    note="&#9888; <a href=\"galatians-3.html#v8\">Verse 8</a> quotes a promise spoken during this visit: &lsquo;Abraham shall surely become a great and mighty nation, and through him all the nations of the earth will be blessed&rsquo; (<a href=\"genesis-18.html#v18-18\">Genesis 18:18</a>). Genesis calls the visitors &lsquo;three men&rsquo; (<a href=\"genesis-18.html#v18-2\">18:2</a>) and later calls two of them angels (19:1); the wings are Doré&rsquo;s.",
+    note_es="&#9888; El <a href=\"galatians-3.es.html#v8\">versículo 8</a> cita una promesa dicha durante esta visita: que Abraham llegará a ser una nación grande y fuerte, y que en él serán bendecidas todas las naciones de la tierra (Génesis 18:18, ya en estas páginas, todavía no en español). Génesis llama a los visitantes «tres hombres» (18:2) y después llama ángeles a dos de ellos (19:1); las alas son de Doré.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Abraham_and_the_Three_Angels.png",
+)]
+
+CHRON_CHAPTERS["gal3"] = dict(era='apostolic',
+    when="Paul writes to the congregations of Galatia that the Spirit came to them by the hearing of faith, not by works of law, and argues from Abraham, who believed God, that the promise came 430 years before the law and that those who are Christ&rsquo;s are Abraham&rsquo;s seed.",
+    clock="Undated by the text: Galatians names no year. Its date depends on which Galatia it was written to and which Jerusalem visit chapter 2 describes, both argued. The chapter&rsquo;s own number, 430 years from the promise to the law, is a count of the past, not a date for the letter.")
