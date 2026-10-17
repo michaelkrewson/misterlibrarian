@@ -37415,3 +37415,144 @@ CHAPTER_ART["gal4"] = [dict(
 CHRON_CHAPTERS["gal4"] = dict(era='apostolic',
     when="Paul tells the Galatians that the heir under guardians has come of age in Christ, that God sent his Son, born of a woman, and the Spirit crying &lsquo;Abba! Father!&rsquo;; he recalls how they first received him in his weakness, and reads Hagar and Sarah as two covenants.",
     clock="Undated by the text: Galatians names no year. &lsquo;The first time&rsquo; at 4:13 implies at least two visits to Galatia, but which visits, and so the letter&rsquo;s date, is argued.")
+
+# ---- Galatians 5 ------------------------------------------------------------
+DICTIONARY.append(("pharmakeia", "pharmakeia", "φαρμακεία", "pharmakeia",
+    "SORCERY, MAGIC &mdash; the practice of the <em>pharmakos</em>, from <em>pharmakon</em>, a drug, a potion or a poison; the source of "
+    "English &lsquo;pharmacy.&rsquo; &#9888; It stands in two verses of the New Testament: <a href=\"galatians-5.html#v20\">Galatians 5:20</a>, among the works of the flesh, set "
+    "next to idolatry; and Revelation 18:23 (not yet on these pages), where Babylon deceived the nations by it. The etymology is "
+    "sometimes pressed to make Galatians 5:20 about drug use or about medicine; beside idolatry the word names magic, the potions and "
+    "spells of the ancient cults, and the shelf takes it so. See <a href=\"dictionary.html#pharmakos\">pharmakos</a>. KJV and NIV "
+    "&lsquo;witchcraft,&rsquo; ASV &lsquo;sorcery,&rsquo; NWT 1984 &lsquo;practice of spiritism.&rsquo;",
+    ("Galatians", 5, 20)))
+DICTIONARY_ES["pharmakeia"] = ("pharmakeía",
+    "HECHICERÍA, MAGIA &mdash; la práctica del <em>pharmakos</em>, de <em>pharmakon</em>, droga, poción o veneno; de ahí viene «farmacia». "
+    "&#9888; Está en dos versículos del Nuevo Testamento: <a href=\"galatians-5.es.html#v20\">Gálatas 5:20</a>, entre las obras de la carne, junto a la idolatría; y Apocalipsis "
+    "18:23 (todavía no en estas páginas), donde Babilonia engañó con ella a las naciones. La etimología a veces se fuerza para hacer "
+    "de Gálatas 5:20 una condena del uso de drogas o de la medicina; junto a la idolatría la palabra nombra la magia, las pociones y "
+    "los conjuros de los cultos antiguos, y así la toma el estante. Véase <a href=\"diccionario.html#pharmakos\">pharmakos</a>. RV60 "
+    "«hechicerías», NVI «hechicería», TNM 1987 «práctica de espiritismo».")
+
+DICTIONARY.append(("apokopto", "apokoptō", "ἀποκόπτω", "apokoptō",
+    "TO CUT OFF &mdash; <em>apo</em>, away, and <em>koptō</em>, to cut. &#9888; It stands in six verses of the New Testament: the hand "
+    "and the foot cut off at <a href=\"mark-9.html#v9-43\">Mark 9:43</a> and 9:45; Malchus&rsquo;s ear at <a href=\"john-18.html#v18-10\">John 18:10</a> and 18:26; the ropes of the ship&rsquo;s boat at "
+    "<a href=\"acts-27.html#v27-32\">Acts 27:32</a>; and <a href=\"galatians-5.html#v12\">Galatians 5:12</a>, the one verse where it is middle voice, of men cutting themselves. There Paul wishes the agitators who press "
+    "circumcision &lsquo;would even castrate themselves.&rsquo; The Greek Old Testament uses its participle at Deuteronomy 23:1 (23:2 in "
+    "its own numbering) of the castrated man barred from the assembly. KJV and Douay &lsquo;I would they were even cut off,&rsquo; ASV "
+    "&lsquo;would even go beyond circumcision,&rsquo; NWT 1984 &lsquo;get themselves emasculated,&rsquo; NIV &lsquo;emasculate "
+    "themselves.&rsquo;",
+    ("Galatians", 5, 12)))
+DICTIONARY_ES["apokopto"] = ("apokóptō",
+    "CORTAR &mdash; <em>apo</em>, fuera, y <em>koptō</em>, cortar. &#9888; Está en seis versículos del Nuevo Testamento: la mano y el pie "
+    "cortados en <a href=\"mark-9.es.html#v9-43\">Marcos 9:43</a> y 9:45; la oreja de Malco en <a href=\"john-18.es.html#v18-10\">Juan 18:10</a> y 18:26; las amarras del esquife en <a href=\"acts-27.es.html#v27-32\">Hechos 27:32</a>; y <a href=\"galatians-5.es.html#v12\">Gálatas 5:12</a>, el único "
+    "versículo donde está en voz media, de hombres que se cortan a sí mismos. Allí Pablo desea que los agitadores que imponen la "
+    "circuncisión «llegaran incluso a castrarse». El Antiguo Testamento griego usa su participio en Deuteronomio 23:1 (23:2 en su propia "
+    "numeración) para el hombre castrado excluido de la asamblea. RV 1909 «Ojalá fuesen también cortados», RV60 «¡Ojalá se mutilasen!», "
+    "TNM 1987 «Quisiera que hasta se castraran».")
+
+DICTIONARY.append(("agathosyne", "agathōsynē", "ἀγαθωσύνη", "agathōsynē",
+    "GOODNESS &mdash; the noun of <em>agathos</em>, &lsquo;good.&rsquo; "
+    "&#9888; It stands in four verses of the New Testament, all in Paul: <a href=\"romans-15.html#v15-14\">Romans 15:14</a>, &lsquo;full of goodness&rsquo;; <a href=\"galatians-5.html#v22\">Galatians 5:22</a>, the sixth "
+    "name of the fruit of the Spirit, beside <a href=\"dictionary.html#chrestotes\">chrēstotēs</a>, &lsquo;kindness&rsquo;; Ephesians "
+    "5:9 (not yet on these pages); and <a href=\"2-thessalonians-1.html#v11\">2 Thessalonians 1:11</a>, &lsquo;every good resolve of goodness.&rsquo; KJV, ASV, NIV and NWT 1984 &lsquo;goodness&rsquo; at Galatians "
+    "5:22.",
+    ("Galatians", 5, 22)))
+DICTIONARY_ES["agathosyne"] = ("agathōsýnē",
+    "BONDAD &mdash; el sustantivo de <em>agathos</em>, «bueno». &#9888; Está en cuatro versículos del Nuevo Testamento, todos de Pablo: <a href=\"romans-15.es.html#v15-14\">Romanos 15:14</a>, «llenos de bondad»; <a href=\"galatians-5.es.html#v22\">Gálatas 5:22</a>, el sexto "
+    "nombre del fruto del Espíritu, junto a <a href=\"diccionario.html#chrestotes\">chrēstotēs</a>, «benignidad»; Efesios 5:9 "
+    "(todavía no en estas páginas); y <a href=\"2-thessalonians-1.es.html#v11\">2 Tesalonicenses 1:11</a>. RV60, NVI y TNM 1987 «bondad» en Gálatas 5:22.")
+
+DICTIONARY.append(("enkopto", "enkoptō", "ἐγκόπτω", "enkoptō",
+    "TO HINDER &mdash; literally to cut into, as a road is cut to block it. &#9888; The verb stands in five verses of the New Testament: "
+    "<a href=\"acts-24.html#v24-4\">Acts 24:4</a>, &lsquo;so that I may not detain you any further&rsquo;; <a href=\"romans-15.html#v15-22\">Romans 15:22</a>, &lsquo;I was often hindered from coming to you&rsquo;; "
+    "<a href=\"galatians-5.html#v7\">Galatians 5:7</a>, &lsquo;You were running well. Who cut in on you?&rsquo;, where this translation follows the race; and 1 Thessalonians 2:18 "
+    "and 1 Peter 3:7 (not yet on these pages). Its noun <em>enkopē</em> is at <a href=\"1-corinthians-9.html#v12\">1 Corinthians 9:12</a>, &lsquo;so as not to hinder the good news of Christ.&rsquo; KJV &lsquo;who did "
+    "hinder you,&rsquo; Geneva &lsquo;who did let you&rsquo; (the old English &lsquo;let,&rsquo; to hinder), NIV &lsquo;Who cut in on "
+    "you.&rsquo;",
+    ("Galatians", 5, 7)))
+DICTIONARY_ES["enkopto"] = ("enkóptō",
+    "ESTORBAR &mdash; literalmente cortar, como se corta un camino para cerrarlo. &#9888; El verbo está en cinco versículos del Nuevo "
+    "Testamento: <a href=\"acts-24.es.html#v24-4\">Hechos 24:4</a>, «para no detenerte más»; <a href=\"romans-15.es.html#v15-22\">Romanos 15:22</a>, «muchas veces me vi impedido de ir a ustedes»; <a href=\"galatians-5.es.html#v7\">Gálatas 5:7</a>, «Corrían bien. "
+    "¿Quién se les atravesó?», donde esta traducción sigue la carrera; y 1 Tesalonicenses 2:18 y 1 Pedro 3:7 (todavía no en estas "
+    "páginas). Su sustantivo <em>enkopē</em> está en <a href=\"1-corinthians-9.es.html#v12\">1 Corintios 9:12</a>, «para no poner obstáculo al evangelio de Cristo». RV60 «¿quién os estorbó», RV 1909 «¿quién os embarazó», "
+    "TNM 1987 «¿Quién les causó estorbo».")
+
+DICTIONARY_ES["aselgeia"] = ("asélgeia",
+    "LIBERTINAJE, desvergüenza sin freno &mdash; la sensualidad sin vergüenza ni contención, exhibida en lugar de escondida. La acusación de "
+    "Judas es exacta: los falsos maestros «convierten la gracia de nuestro Dios en ASELGEIA» (1:4), haciendo del perdón una licencia. En "
+    "<a href=\"galatians-5.es.html#v19\">Gálatas 5:19</a> está entre las primeras obras de la carne, «inmoralidad sexual, impureza, sensualidad», las mismas tres palabras de "
+    "<a href=\"2-corinthians-12.es.html#v21\">2 Corintios 12:21</a> en otro orden, y nombra el abandono de la vida antigua en 1 Pedro 4:3.")
+
+
+_gal3_fix([
+    ("'a little leaven leavens the whole batch' (1 Corinthians 5:6; Galatians 5:9, the second not yet on these pages)",
+     "'a little leaven leavens the whole lump' (<a href=\"1-corinthians-5.html#v6\">1 Corinthians 5:6</a>; <a href=\"galatians-5.html#v9\">Galatians 5:9</a>)"),
+    ("«un poco de levadura leuda toda la masa» (1 Corintios 5:6; Gálatas 5:9, todavía no en estas páginas)",
+     "«un poco de levadura leuda toda la masa» (<a href=\"1-corinthians-5.es.html#v6\">1 Corintios 5:6</a>; <a href=\"galatians-5.es.html#v9\">Gálatas 5:9</a>)"),
+    ("Galatians 5:20 and 2 Peter 2:1, not yet on these pages)", "<a href=\"galatians-5.html#v20\">Galatians 5:20</a>, and 2 Peter 2:1, not yet on these pages)"),
+    ("Gálatas 5:20 y 2 Pedro 2:1, todavía no en estas páginas)", "<a href=\"galatians-5.es.html#v20\">Gálatas 5:20</a>, y 2 Pedro 2:1, todavía no en estas páginas)"),
+    ("Galatians 5:23 (not yet on these pages)", "<a href=\"galatians-5.html#v23\">Galatians 5:23</a>"),
+    ("Gálatas 5:23 (todavía no en estas páginas)", "<a href=\"galatians-5.es.html#v23\">Gálatas 5:23</a>"),
+    ("and Galatians 5:25, Galatians 6:16 and Philippians 3:16 (those three not yet on these pages).",
+     "<a href=\"galatians-5.html#v25\">Galatians 5:25</a>; and Galatians 6:16 and Philippians 3:16 (those two not yet on these pages)."),
+    ("y Gálatas 5:25, Gálatas 6:16 y Filipenses 3:16 (estos tres todavía no en estas páginas).",
+     "<a href=\"galatians-5.es.html#v25\">Gálatas 5:25</a>; y Gálatas 6:16 y Filipenses 3:16 (estos dos todavía no en estas páginas)."),
+    ("and Galatians 5:1 (not yet on these pages).", "and <a href=\"galatians-5.html#v1\">Galatians 5:1</a>."),
+    ("y Gálatas 5:1 (todavía no en estas páginas).", "y <a href=\"galatians-5.es.html#v1\">Gálatas 5:1</a>."),
+    ("Galatians 5:13 and 1 Timothy 5:14 (the last two not yet on these pages).",
+     "<a href=\"galatians-5.html#v13\">Galatians 5:13</a> and 1 Timothy 5:14 (the last not yet on these pages)."),
+    ("Gálatas 5:13 y 1 Timoteo 5:14 (estos dos últimos todavía no en estas páginas).",
+     "<a href=\"galatians-5.es.html#v13\">Gálatas 5:13</a> y 1 Timoteo 5:14 (el último todavía no en estas páginas)."),
+    ("and Galatians 5:24 (&lsquo;the passions and the desires,&rsquo; not yet on these pages).",
+     "and <a href=\"galatians-5.html#v24\">Galatians 5:24</a> (&lsquo;the passions and the desires&rsquo;)."),
+    ("y Gálatas 5:24 (todavía no en estas páginas).", "y <a href=\"galatians-5.es.html#v24\">Gálatas 5:24</a> («las pasiones y los deseos»)."),
+    ("and Galatians 5:9 (Galatians 5:9 not yet on these pages).", "and <a href=\"galatians-5.html#v9\">Galatians 5:9</a>."),
+    ("y Gálatas 5:9 (Gálatas 5:9, todavía no en estas páginas).", "y <a href=\"galatians-5.es.html#v9\">Gálatas 5:9</a>."),
+    ("grace that a person falls from (Galatians 5:4),", "grace that a person falls from (<a href=\"galatians-5.html#v4\">Galatians 5:4</a>),"),
+    ("la gracia de la que uno cae (Gálatas 5:4),", "la gracia de la que uno cae (<a href=\"galatians-5.es.html#v4\">Gálatas 5:4</a>),"),
+])
+
+XREFS.extend([
+    (("Galatians", 4, 31), ("Galatians", 5, 1), "children of the free woman, so: for freedom Christ set us free"),
+    (("Acts", 15, 10), ("Galatians", 5, 1), "a yoke that neither our fathers nor we could bear"),
+    (("Romans", 7, 6), ("Galatians", 5, 4), "released from the law; released from Christ"),
+    (("Romans", 8, 23), ("Galatians", 5, 5), "eagerly awaiting"),
+    (("1 Corinthians", 7, 19), ("Galatians", 5, 6), "circumcision is nothing, and uncircumcision is nothing"),
+    (("Galatians", 2, 2), ("Galatians", 5, 7), "running"),
+    (("1 Corinthians", 9, 24), ("Galatians", 5, 7), "run so as to win"),
+    (("1 Corinthians", 5, 6), ("Galatians", 5, 9), "a little leaven leavens the whole lump"),
+    (("Galatians", 1, 7), ("Galatians", 5, 10), "those troubling you"),
+    (("Acts", 16, 3), ("Galatians", 5, 11), "Paul circumcises Timothy"),
+    (("1 Corinthians", 1, 23), ("Galatians", 5, 11), "the stumbling-block of the cross"),
+    (("Acts", 17, 6), ("Galatians", 5, 12), "turning upside down"),
+    (("Romans", 7, 8), ("Galatians", 5, 13), "an opportunity"),
+    (("Leviticus", 19, 18), ("Galatians", 5, 14), "you shall love your neighbor as yourself"),
+    (("Romans", 13, 9), ("Galatians", 5, 14), "summed up in one word"),
+    (("Romans", 7, 15), ("Galatians", 5, 17), "not doing what one wants"),
+    (("Romans", 8, 14), ("Galatians", 5, 18), "led by the Spirit"),
+    (("2 Corinthians", 12, 21), ("Galatians", 5, 19), "impurity, sexual immorality, sensuality"),
+    (("2 Corinthians", 12, 20), ("Galatians", 5, 20), "strife, jealousy, fits of anger, self-seeking"),
+    (("Romans", 13, 13), ("Galatians", 5, 21), "revels and drunkenness"),
+    (("1 Corinthians", 6, 9), ("Galatians", 5, 21), "will not inherit the kingdom of God"),
+    (("1 Corinthians", 13, 4), ("Galatians", 5, 22), "love waits long, shows kindness"),
+    (("Galatians", 2, 19), ("Galatians", 5, 24), "crucified"),
+    (("Acts", 21, 24), ("Galatians", 5, 25), "walk in line"),
+])
+
+CHAPTER_ART["gal5"] = [dict(
+    file="speculum-virginum-tree-of-virtues.jpg",
+    title="The Tree of Virtues",        title_es="El árbol de las virtudes",
+    artist="Unknown artist, Speculum Virginum",
+    year="about 1200",
+    location="Walters Art Museum, Baltimore (MS W.72, fol. 26r)",
+    location_es="Walters Art Museum, Baltimore (MS W.72, fol. 26r)",
+    alt="Manuscript page in green and red ink: a tall stylised tree grows from a seated figure at its foot holding a book, with an angel on either side. Seven branches end in round medallions with Latin names of virtues, each sprouting a spray of leaf-shaped labels; at the top a haloed figure rises behind the highest medallion, with more labelled leaves fanning out above it.",
+    note="&#9888; A medieval diagram of the virtues as a tree, its leaves marked as fruits. The labels are Latin, and among the leaves are words of the Vulgate&rsquo;s twelve-name list in <a href=\"galatians-5.html#v22\">verses 22&ndash;23</a>, such as <em>pax</em>, <em>gaudium</em>, <em>longanimitas</em>, <em>continentia</em> and <em>castitas</em>: peace, joy, longanimity, continency and chastity. The facing page of the same book draws the tree of vices.",
+    note_es="&#9888; Un diagrama medieval de las virtudes como un árbol, con sus hojas marcadas como frutos. Los rótulos están en latín, y entre las hojas hay palabras de la lista de doce nombres de la Vulgata en los <a href=\"galatians-5.es.html#v22\">versículos 22&ndash;23</a>, como <em>pax</em>, <em>gaudium</em>, <em>longanimitas</em>, <em>continentia</em> y <em>castitas</em>: paz, gozo, longanimidad, continencia y castidad. La página de enfrente del mismo libro dibuja el árbol de los vicios.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Virtues_Speculum_Virginum_W72_26r.jpg",
+)]
+
+CHRON_CHAPTERS["gal5"] = dict(era='apostolic',
+    when="Paul tells the Galatians to stand firm in the freedom Christ gave and not take up circumcision and the law, sums the law up in &lsquo;love your neighbor as yourself,&rsquo; and sets the works of the flesh against the fruit of the Spirit.",
+    clock="Undated by the text: Galatians names no year, and its date depends on questions about Galatia and Paul&rsquo;s visits that are argued.")
