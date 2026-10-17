@@ -37794,3 +37794,115 @@ CHAPTER_ART["eph3"] = [dict(
 CHRON_CHAPTERS["eph3"] = dict(era='apostolic',
     when="Paul, a prisoner, explains the mystery he was given to steward, that the nations are co-heirs and co-members of one body, then kneels in prayer that the readers may grasp the love of Christ that surpasses knowledge.",
     clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
+
+# ---- Ephesians 4 ------------------------------------------------------------
+DICTIONARY.append(("kybeia", "kybeia", "κυβεία", "kybeia",
+    "DICE-PLAYING, SLEIGHT &mdash; from <em>kybos</em>, a cube or die: the gambler&rsquo;s game, and so trickery. &#9888; It stands in one "
+    "verse of the New Testament, <a href=\"ephesians-4.html#v14\">Ephesians 4:14</a>: &lsquo;so that we may no longer be infants, tossed by the waves and carried around by every "
+    "wind of teaching, by the dice-playing of men.&rsquo; KJV and ASV &lsquo;by the sleight of men,&rsquo; NWT 1984 &lsquo;by means of the "
+    "trickery of men,&rsquo; NIV &lsquo;the cunning and craftiness of people.&rsquo;",
+    ("Ephesians", 4, 14)))
+DICTIONARY_ES["kybeia"] = ("kybeía",
+    "JUEGO DE DADOS, ARTIMAÑA &mdash; de <em>kybos</em>, cubo o dado: el juego del tahúr, y de ahí el engaño. &#9888; Está en un solo "
+    "versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v14\">Efesios 4:14</a>: «para que ya no seamos niños, zarandeados por las olas y llevados de un lado a otro por "
+    "todo viento de enseñanza, por el juego de dados de los hombres». RV60 «por estratagema de hombres», TNM 1987 «por medio de las "
+    "tretas de los hombres».")
+
+DICTIONARY.append(("sapros", "sapros", "σαπρός", "sapros",
+    "ROTTEN, decayed, and so worthless. &#9888; It stands in six verses of the New Testament: the rotten tree and its rotten fruit at "
+    "<a href=\"matthew-7.html#v7-17\">Matthew 7:17</a>, 7:18, 12:33 and <a href=\"luke-6.html#v6-43\">Luke 6:43</a>; the bad fish thrown away at Matthew 13:48; and <a href=\"ephesians-4.html#v29\">Ephesians 4:29</a>, &lsquo;Let no rotten word come out of "
+    "your mouth.&rsquo; KJV &lsquo;corrupt communication,&rsquo; NWT 1984 &lsquo;a rotten saying,&rsquo; NIV &lsquo;unwholesome talk.&rsquo;",
+    ("Ephesians", 4, 29)))
+DICTIONARY_ES["sapros"] = ("saprós",
+    "PODRIDO, echado a perder, y de ahí sin valor. &#9888; Está en seis versículos del Nuevo Testamento: el árbol podrido y su fruto "
+    "podrido en Mateo 7:17 (ya en estas páginas, todavía no en español), 7:18, 12:33 y <a href=\"luke-6.es.html#v6-43\">Lucas 6:43</a>; los peces malos echados fuera en Mateo 13:48; y <a href=\"ephesians-4.es.html#v29\">Efesios 4:29</a>, «Ninguna palabra podrida "
+    "salga de su boca». RV60 «Ninguna palabra corrompida», TNM 1987 «ningún dicho corrompido».")
+
+DICTIONARY.append(("parorgismos", "parorgismos", "παροργισμός", "parorgismos",
+    "PROVOCATION, EXASPERATION &mdash; anger stirred up, the state of being provoked, built on <em>orgē</em>, &lsquo;anger.&rsquo; &#9888; It "
+    "stands in one verse of the New Testament, <a href=\"ephesians-4.html#v26\">Ephesians 4:26</a>: &lsquo;Be angry and do not sin; do not let the sun go down on your provocation.&rsquo; "
+    "The first half is Psalm 4:4 word for word as the Greek Old Testament has it; the Hebrew there has <em>rigzu</em>, &lsquo;tremble.&rsquo; "
+    "KJV &lsquo;let not the sun go down upon your wrath,&rsquo; NWT 1984 &lsquo;let the sun not set with YOU in a provoked state.&rsquo;",
+    ("Ephesians", 4, 26)))
+DICTIONARY_ES["parorgismos"] = ("parorgismós",
+    "EXASPERACIÓN, PROVOCACIÓN &mdash; la ira removida, el estado de quien ha sido provocado, hecho sobre <em>orgē</em>, «ira». &#9888; Está "
+    "en un solo versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v26\">Efesios 4:26</a>: «Aírense y no pequen; no se ponga el sol sobre su exasperación». La primera "
+    "mitad es el Salmo 4:4 palabra por palabra como lo trae el Antiguo Testamento griego; el hebreo dice allí <em>rigzu</em>, «tiemblen». "
+    "RV60 «no se ponga el sol sobre vuestro enojo», TNM 1987 «estando ustedes en estado provocado».")
+
+DICTIONARY_ES["teleios"] = ("téleios",
+    "PERFECTO, COMPLETO &mdash; de <em>telos</em>, «fin, meta»: no sin defecto sino TERMINADO, que ha llegado a su fin propio, como es "
+    "«perfecto» el fruto maduro, el adulto crecido o la tarea acabada. &#9888; Es palabra clave de Santiago &mdash;la «obra perfecta» de la "
+    "paciencia, el «don perfecto» que viene de arriba, la «ley perfecta de la libertad» (1:4, 17, 25; también 3:2)&mdash;, con el sentido "
+    "de entereza y madurez, no de pureza moral sin mancha. Es la palabra detrás de «sean <em>teleioi</em> como su Padre celestial es "
+    "<em>teleios</em>» (Mateo 5:48), que en su contexto significa abarcarlo todo en el amor, no estar libre de defectos. Es la contraparte "
+    "griega del hebreo <em>tamim</em>, el encargo de El Shaddai a Abram, «anda delante de mí, y sé íntegro» (Génesis 17:1), y el paralelo "
+    "de Lucas dice «misericordiosos» (6:36): la entereza de que se trata es un amor sin cerca. En <a href=\"ephesians-4.es.html#v13\">Efesios 4:13</a> es el «hombre maduro», lo "
+    "contrario de los «niños» del versículo siguiente.")
+
+
+_gal3_fix([
+    ("and Ephesians 4:19 (not yet on these pages).", "and <a href=\"ephesians-4.html#v19\">Ephesians 4:19</a>."),
+    ("y Efesios 4:19 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v19\">Efesios 4:19</a>."),
+    ("&lsquo;for the practice of every uncleanness&rsquo;", "&lsquo;for the practice of every impurity&rsquo;"),
+    ("Ephesians 4:2, Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (none yet on these pages).",
+     "<a href=\"ephesians-4.html#v2\">Ephesians 4:2</a>, and Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those five not yet on these pages)."),
+    ("Efesios 4:2, Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (ninguno todavía en estas páginas).",
+     "<a href=\"ephesians-4.es.html#v2\">Efesios 4:2</a>, y Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cinco todavía no en estas páginas)."),
+    ("and Ephesians 4:14 (not yet on these pages).", "and <a href=\"ephesians-4.html#v14\">Ephesians 4:14</a>."),
+    ("y Efesios 4:14 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v14\">Efesios 4:14</a>."),
+    ("and at Ephesians 4:18. KJV reads", "and at <a href=\"ephesians-4.html#v18\">Ephesians 4:18</a>. KJV reads"),
+    ("y en Efesios 4:18.", "y en <a href=\"ephesians-4.es.html#v18\">Efesios 4:18</a>."),
+    ("(Ephesians 4:32; Philippians 2:9)", "(<a href=\"ephesians-4.html#v32\">Ephesians 4:32</a>; Philippians 2:9)"),
+    ("(Efesios 4:32; Filipenses 2:9)", "(<a href=\"ephesians-4.es.html#v32\">Efesios 4:32</a>; Filipenses 2:9)"),
+    ("and <em>katartismos</em> at Ephesians 4:12)", "and <em>katartismos</em> at <a href=\"ephesians-4.html#v12\">Ephesians 4:12</a>)"),
+    ("y <em>katartismos</em> en Efesios 4:12)", "y <em>katartismos</em> en <a href=\"ephesians-4.es.html#v12\">Efesios 4:12</a>)"),
+])
+
+XREFS.extend([
+    (("Ephesians", 3, 1), ("Ephesians", 4, 1), "the prisoner"),
+    (("Ephesians", 1, 18), ("Ephesians", 4, 1), "the calling"),
+    (("Acts", 20, 19), ("Ephesians", 4, 2), "all humility"),
+    (("Ephesians", 2, 14), ("Ephesians", 4, 3), "peace that made the two one"),
+    (("Deuteronomy", 6, 4), ("Ephesians", 4, 6), "Jehovah is one"),
+    (("1 Corinthians", 8, 6), ("Ephesians", 4, 6), "one God, the Father; one Lord"),
+    (("1 Corinthians", 12, 13), ("Ephesians", 4, 4), "one Spirit, one body"),
+    (("Romans", 12, 6), ("Ephesians", 4, 7), "grace given in measure"),
+    (("Acts", 2, 33), ("Ephesians", 4, 8), "received and poured out"),
+    (("John", 3, 13), ("Ephesians", 4, 9), "the one who came down"),
+    (("Romans", 10, 7), ("Ephesians", 4, 9), "going down into the abyss"),
+    (("Acts", 1, 9), ("Ephesians", 4, 10), "the ascension"),
+    (("1 Corinthians", 12, 28), ("Ephesians", 4, 11), "apostles, prophets, teachers"),
+    (("Acts", 21, 8), ("Ephesians", 4, 11), "Philip the evangelist"),
+    (("James", 1, 6), ("Ephesians", 4, 14), "a wave driven by the wind"),
+    (("Ephesians", 2, 21), ("Ephesians", 4, 16), "fitted together"),
+    (("Romans", 1, 21), ("Ephesians", 4, 17), "futile reasoning, darkened heart"),
+    (("Mark", 3, 5), ("Ephesians", 4, 18), "the hardening of their heart"),
+    (("Romans", 6, 6), ("Ephesians", 4, 22), "the old man"),
+    (("Romans", 13, 12), ("Ephesians", 4, 22), "throw off, put on"),
+    (("Ephesians", 2, 15), ("Ephesians", 4, 24), "the new man"),
+    (("Romans", 12, 5), ("Ephesians", 4, 25), "members of one another"),
+    (("Romans", 12, 19), ("Ephesians", 4, 27), "give place"),
+    (("1 Corinthians", 4, 12), ("Ephesians", 4, 28), "working with our own hands"),
+    (("Luke", 6, 43), ("Ephesians", 4, 29), "rotten"),
+    (("Ephesians", 1, 13), ("Ephesians", 4, 30), "sealed with the Spirit"),
+    (("Luke", 7, 42), ("Ephesians", 4, 32), "freely forgave"),
+])
+
+CHAPTER_ART["eph4"] = [dict(
+    file="copley-ascension-1775.jpg",
+    title="The Ascension",        title_es="La Ascensión",
+    artist="John Singleton Copley",
+    year="1775",
+    location="Museum of Fine Arts, Boston",
+    location_es="Museum of Fine Arts, Boston",
+    alt="Oil painting: a figure in white rises with open arms through a break in golden clouds above a broad landscape of hills. Below, a crowd of men in red, green, yellow and blue robes look up, kneel or shield their faces; at the right stand two figures in white, one winged, one pointing upward.",
+    note="&#9888; <a href=\"ephesians-4.html#v4-8\">Verses 8&ndash;10</a> read Psalm 68&rsquo;s &lsquo;going up on high&rsquo; as Christ&rsquo;s; Acts tells the going up as a scene (<a href=\"acts-1.html#v9\">Acts 1:9</a>), and the two figures in white at the right are its &lsquo;two men&rsquo; who &lsquo;stood beside them in white clothing&rsquo; (1:10).",
+    note_es="&#9888; Los <a href=\"ephesians-4.es.html#v4-8\">versículos 8&ndash;10</a> leen el «subiendo a lo alto» del Salmo 68 como de Cristo; Hechos cuenta esa subida como una escena (<a href=\"acts-1.es.html#v9\">Hechos 1:9</a>), y las dos figuras de blanco a la derecha son los «dos varones» que «se pusieron junto a ellos con vestiduras blancas» (1:10).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jesus_ascending_to_heaven.jpg",
+)]
+
+CHRON_CHAPTERS["eph4"] = dict(era='apostolic',
+    when="The letter turns to conduct: one body and one Spirit, the gifts of the ascended Christ given as apostles, prophets, evangelists, shepherds and teachers, and the old man put off for the new.",
+    clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
