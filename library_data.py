@@ -37906,3 +37906,123 @@ CHAPTER_ART["eph4"] = [dict(
 CHRON_CHAPTERS["eph4"] = dict(era='apostolic',
     when="The letter turns to conduct: one body and one Spirit, the gifts of the ascended Christ given as apostles, prophets, evangelists, shepherds and teachers, and the old man put off for the new.",
     clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
+
+# ---- Ephesians 5 ------------------------------------------------------------
+DICTIONARY.append(("eutrapelia", "eutrapelia", "εὐτραπελία", "eutrapelia",
+    "CLEVER JESTING &mdash; literally &lsquo;turning well,&rsquo; the quick wit of a good talker. Aristotle is reported to have counted it a "
+    "virtue, the mean between the buffoon and the boor. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-5.html#v4\">Ephesians 5:4</a>, beside "
+    "<em>aischrotēs</em>, &lsquo;obscenity,&rsquo; and <em>mōrologia</em>, &lsquo;foolish talk&rsquo; (each also in that verse alone): "
+    "wit that has slid into the coarse, set against <em>eucharistia</em>, &lsquo;thanksgiving,&rsquo; a word that sounds like it. KJV "
+    "&lsquo;jesting,&rsquo; NIV &lsquo;coarse joking,&rsquo; NWT 1984 &lsquo;obscene jesting.&rsquo;",
+    ("Ephesians", 5, 4)))
+DICTIONARY_ES["eutrapelia"] = ("eutrapelía",
+    "EL CHISTE INGENIOSO &mdash; literalmente «el buen giro», el ingenio rápido del buen conversador. Se informa que Aristóteles la "
+    "contaba como virtud, el justo medio entre el bufón y el rústico. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-5.es.html#v4\">Efesios 5:4</a>, "
+    "junto a <em>aischrotēs</em>, «obscenidad», y <em>mōrologia</em>, «palabrería necia» (cada una también solo en ese versículo): el "
+    "ingenio que se ha deslizado a lo grosero, frente a <em>eucharistia</em>, «acción de gracias», una palabra que suena parecida. RV60 "
+    "«truhanerías», NVI «chistes groseros», TNM 1987 «bromear obsceno».")
+
+DICTIONARY.append(("kephale", "kephalē", "κεφαλή", "kephalē",
+    "HEAD &mdash; the head of the body, and by figure the one at the top or at the source. &#9888; What the figure means when Paul uses it "
+    "of persons is argued: authority, as a ruler is head; or source and origin, as a river has a head; or both. In Ephesians Christ is "
+    "given &lsquo;as head over all things to the congregation&rsquo; (<a href=\"ephesians-1.html#v22\">Ephesians 1:22</a>), the head &lsquo;from whom the whole body&rsquo; grows "
+    "(<a href=\"ephesians-4.html#v4-15\">Ephesians 4:15</a>), and at <a href=\"ephesians-5.html#v23\">Ephesians 5:23</a> &lsquo;a husband is head of the wife as Christ also is head of the congregation.&rsquo; At <a href=\"1-corinthians-11.html#v3\">1 Corinthians 11:3</a> "
+    "&lsquo;the head of a woman is the man, and the head of Christ is God.&rsquo; The library sets out the readings and does not vote.",
+    ("Ephesians", 5, 23)))
+DICTIONARY_ES["kephale"] = ("kephalḗ",
+    "CABEZA &mdash; la cabeza del cuerpo, y en figura el que está arriba o en el origen. &#9888; Qué significa la figura cuando Pablo la "
+    "usa de personas se discute: autoridad, como un gobernante es cabeza; o fuente y origen, como un río tiene cabecera; o las dos "
+    "cosas. En Efesios Cristo es dado «por cabeza sobre todas las cosas a la congregación» (<a href=\"ephesians-1.es.html#v22\">Efesios 1:22</a>), la cabeza de quien crece todo "
+    "el cuerpo (<a href=\"ephesians-4.es.html#v4-15\">Efesios 4:15</a>), y en <a href=\"ephesians-5.es.html#v23\">Efesios 5:23</a> «el marido es cabeza de la esposa, así como también Cristo es cabeza de la congregación». En "
+    "<a href=\"1-corinthians-11.es.html#v3\">1 Corintios 11:3</a> «la cabeza de la mujer es el varón, y la cabeza de Cristo es Dios». La biblioteca expone las lecturas y no vota.")
+
+DICTIONARY.append(("loutron", "loutron", "λουτρόν", "loutron",
+    "A WASHING, A BATH. &#9888; It stands in two verses of the New Testament: <a href=\"ephesians-5.html#v26\">Ephesians 5:26</a>, &lsquo;having cleansed her by the washing of water "
+    "with the word,&rsquo; and Titus 3:5, &lsquo;the washing of rebirth&rsquo; (not yet on these pages). Many read baptism in both; at "
+    "Ephesians 5:26 others read the bride&rsquo;s bath before the wedding. KJV &lsquo;the washing of water by the word,&rsquo; NWT 1984 "
+    "&lsquo;the bath of water,&rsquo; Douay &lsquo;the laver of water.&rsquo;",
+    ("Ephesians", 5, 26)))
+DICTIONARY_ES["loutron"] = ("loutrón",
+    "UN LAVAMIENTO, UN BAÑO. &#9888; Está en dos versículos del Nuevo Testamento: <a href=\"ephesians-5.es.html#v26\">Efesios 5:26</a>, «habiéndola purificado con el lavamiento del "
+    "agua por la palabra», y Tito 3:5, «el lavamiento de la regeneración» (todavía no en estas páginas). Muchos leen el bautismo en los "
+    "dos; en Efesios 5:26 otros leen el baño de la novia antes de la boda. RV60 «el lavamiento del agua por la palabra», TNM 1987 «el "
+    "baño de agua».")
+
+DICTIONARY_ES["mimetes"] = ("mimētḗs",
+    "UN IMITADOR &mdash; la raíz de «mímica», «mimo» y «mímesis», y en el mundo antiguo una palabra sin vergüenza para cómo se aprendía "
+    "de verdad: un oficio o una filosofía se adquiría copiando a alguien que lo tenía. Pablo la usa de sí mismo sin disculparse («háganse "
+    "imitadores míos, así como yo también lo soy de Cristo», 1 Corintios 11:1) y en su primer uso, 1 Tesalonicenses 1:6, en un orden que "
+    "no es el piadoso: imitadores «de nosotros y del Señor». &#9888; No se trata de vanidad: en un mundo sin Nuevo Testamento que poner "
+    "en las manos de nadie, la copia disponible de la cosa era una persona. La cadena sigue en 2:14, donde los tesalonicenses se hacen "
+    "imitadores de las congregaciones de Judea. Solo en <a href=\"ephesians-5.es.html#v1\">Efesios 5:1</a> se pide imitar a Dios mismo.")
+
+
+_gal3_fix([
+    ("Ephesians 5:18 and 1 Peter 4:4 (neither yet on these pages), and",
+     "<a href=\"ephesians-5.html#v18\">Ephesians 5:18</a> and 1 Peter 4:4 (the second not yet on these pages), and"),
+    ("Efesios 5:18 y 1 Pedro 4:4, ninguna todavía en estas páginas, y",
+     "<a href=\"ephesians-5.es.html#v18\">Efesios 5:18</a> y 1 Pedro 4:4, esta todavía no en estas páginas, y"),
+    ("and in Ephesians 5:22 (not yet on these pages), where wives are told to be subject to their husbands.",
+     "and in <a href=\"ephesians-5.html#v21\">Ephesians 5:21</a>, &lsquo;submitting to one another,&rsquo; whose verb carries over into the instruction to wives in 5:22, a verse "
+     "with no verb of its own in the critical text."),
+    ("y en Efesios 5:22 (todavía no en estas páginas), donde a las esposas se les dice que se sujeten a sus maridos.",
+     "y en <a href=\"ephesians-5.es.html#v21\">Efesios 5:21</a>, «sometiéndose unos a otros», cuyo verbo pasa a la instrucción a las esposas en 5:22, un versículo sin verbo "
+     "propio en el texto crítico."),
+    ("Romans 15:16 (&lsquo;the offering of the nations&rsquo;), Ephesians 5:2 and Hebrews 10:5, 8, 10, 14 and 18 (those last seven not yet on these pages)",
+     "<a href=\"romans-15.html#v15-16\">Romans 15:16</a> (&lsquo;the offering of the nations&rsquo;), <a href=\"ephesians-5.html#v2\">Ephesians 5:2</a>, and Hebrews 10:5, 8, 10, 14 and 18 (those five not yet on these pages)"),
+    ("Romanos 15:16 («la ofrenda de las naciones»), Efesios 5:2 y Hebreos 10:5, 8, 10, 14 y 18 (esos siete últimos todavía no en estas páginas)",
+     "<a href=\"romans-15.es.html#v15-16\">Romanos 15:16</a> («la ofrenda de las naciones»), <a href=\"ephesians-5.es.html#v2\">Efesios 5:2</a>, y Hebreos 10:5, 8, 10, 14 y 18 (esos cinco todavía no en estas páginas)"),
+    ("and Ephesians 5:16 and Colossians 4:5, &lsquo;buying out the time&rsquo; (those two not yet on these pages).",
+     "and <a href=\"ephesians-5.html#v16\">Ephesians 5:16</a> and Colossians 4:5, &lsquo;buying out the time&rsquo; (the second not yet on these pages)."),
+    ("y Efesios 5:16 y Colosenses 4:5, «comprando el tiempo» (esos dos todavía no en estas páginas).",
+     "y <a href=\"ephesians-5.es.html#v16\">Efesios 5:16</a> y Colosenses 4:5, «comprando el tiempo» (el segundo todavía no en estas páginas)."),
+    ("; Ephesians 5:9 (not yet on these pages);", "; <a href=\"ephesians-5.html#v9\">Ephesians 5:9</a>;"),
+    ("; Efesios 5:9 (todavía no en estas páginas);", "; <a href=\"ephesians-5.es.html#v9\">Efesios 5:9</a>;"),
+    ("(here and Ephesians 5:7, not yet on these pages)", "(here and <a href=\"ephesians-5.html#v7\">Ephesians 5:7</a>)"),
+    ("(aquí y en Efesios 5:7, todavía no en estas páginas)", "(aquí y en <a href=\"ephesians-5.es.html#v7\">Efesios 5:7</a>)"),
+])
+
+XREFS.extend([
+    (("1 Corinthians", 11, 1), ("Ephesians", 5, 1), "imitators"),
+    (("Galatians", 2, 20), ("Ephesians", 5, 2), "handed himself over"),
+    (("Philippians", 4, 18), ("Ephesians", 5, 2), "a fragrant aroma"),
+    (("Exodus", 29, 18), ("Ephesians", 5, 2), "the aroma of the offering"),
+    (("Galatians", 5, 19), ("Ephesians", 5, 3), "sexual immorality, impurity"),
+    (("1 Corinthians", 6, 9), ("Ephesians", 5, 5), "no inheritance in the kingdom"),
+    (("Ephesians", 2, 2), ("Ephesians", 5, 6), "the sons of disobedience"),
+    (("Ephesians", 3, 6), ("Ephesians", 5, 7), "co-sharers"),
+    (("John", 12, 36), ("Ephesians", 5, 8), "sons of light"),
+    (("Galatians", 5, 22), ("Ephesians", 5, 9), "fruit"),
+    (("Romans", 12, 2), ("Ephesians", 5, 10), "testing what pleases God"),
+    (("John", 3, 20), ("Ephesians", 5, 11), "works exposed by the light"),
+    (("Romans", 13, 11), ("Ephesians", 5, 14), "wake from sleep"),
+    (("Galatians", 4, 5), ("Ephesians", 5, 16), "buying out"),
+    (("Acts", 2, 13), ("Ephesians", 5, 18), "filled, not drunk"),
+    (("Titus", 1, 6), ("Ephesians", 5, 18), "debauchery"),
+    (("1 Corinthians", 11, 3), ("Ephesians", 5, 23), "head"),
+    (("Ephesians", 1, 22), ("Ephesians", 5, 23), "head of the congregation"),
+    (("2 Corinthians", 11, 2), ("Ephesians", 5, 27), "presented as a bride"),
+    (("Ephesians", 1, 4), ("Ephesians", 5, 27), "holy and unblemished"),
+    (("Genesis", 2, 23), ("Ephesians", 5, 30), "bone of my bones, flesh of my flesh"),
+    (("Genesis", 2, 24), ("Ephesians", 5, 31), "one flesh"),
+    (("Mark", 10, 8), ("Ephesians", 5, 31), "the two will become one flesh"),
+    (("1 Corinthians", 6, 16), ("Ephesians", 5, 31), "one flesh"),
+])
+
+CHAPTER_ART["eph5"] = [dict(
+    file="van-eyck-arnolfini-portrait.jpg",
+    title="The Arnolfini Portrait",        title_es="El matrimonio Arnolfini",
+    artist="Jan van Eyck",
+    year="1434",
+    location="National Gallery, London",
+    location_es="National Gallery, Londres",
+    alt="Oil painting: in a bedroom with a red-curtained bed, a man in a broad black hat and a dark fur-trimmed robe stands facing out, his right hand raised, his left holding the hand of a woman in a full green gown and white headdress. A brass chandelier hangs above them, a round convex mirror on the back wall reflects the room, a small dog stands at their feet, and a pair of wooden clogs lies on the floor at the left.",
+    note="&#9888; A man and a woman joined by the hand, the image the passage at <a href=\"ephesians-5.html#v5-31\">verse 31</a> takes up from Genesis. Above the mirror Van Eyck wrote &lsquo;Johannes de eyck fuit hic 1434,&rsquo; &lsquo;Jan van Eyck was here.&rsquo; Whether the painting records a wedding, a betrothal, or simply a married couple is argued among historians of art.",
+    note_es="&#9888; Un hombre y una mujer unidos de la mano, la imagen que el pasaje del <a href=\"ephesians-5.es.html#v5-31\">versículo 31</a> toma de Génesis. Encima del espejo Van Eyck escribió «Johannes de eyck fuit hic 1434», «Jan van Eyck estuvo aquí». Si el cuadro registra una boda, un compromiso o simplemente a un matrimonio, lo discuten los historiadores del arte.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",
+)]
+
+CHRON_CHAPTERS["eph5"] = dict(era='apostolic',
+    when="The readers are told to imitate God and walk as children of light, to be filled with the Spirit, and to submit to one another; the household instructions to wives and husbands read marriage as a picture of Christ and the congregation.",
+    clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
