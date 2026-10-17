@@ -310,7 +310,7 @@ DICTIONARY = [
     ["hypostasis", "hypostasis", "ὑπόστασις", "hypostasis", "That which STANDS UNDER — hypo, 'under', + stasis, 'a standing': the underlying reality, substance or ground of a thing. ⚠ It has two New Testament lives: at Hebrews 1:3 it means God's REAL BEING, of which the Son is the exact imprint; at Hebrews 11:1 the sense is genuinely open — 'faith is the hypostasis of things hoped for', which the versions render as OBJECTIVE substance (KJV, RV 'sustancia'), SUBJECTIVE assurance (ASV, TNM 'certeza'), or NWT's hybrid 'assured expectation'; and in the Greek commercial papyri the same noun is a TITLE-DEED, the document proving you own what you cannot presently see, which may be the sharpest option of all. The word occurs five times in the New Testament. ⚠ And it became the single most fought-over term of the fourth-century Trinitarian debates: the church settled on three hypostaseis (Father, Son and Spirit) in one ousia (being) — but for a long time hypostasis and ousia were used as synonyms, and the confusion nearly wrecked the councils. Latin rendered it substantia and then persona, which is why the KJV reads 'person' here.", ["Hebrews", 1, 3]],
     ["leitourgos", "leitourgos", "λειτουργός", "leitourgos", "A public SERVANT, a minister — from leitos (of the people, public) + ergon (work): first one who performed a costly public duty at Athens (funding a warship or a chorus) at his own expense, then any official servant, and in the Greek Old Testament the priest or Levite who serves at the altar — the source, through 'liturgy', of the church's word for public worship. ⚠ At Hebrews 1:7 the ANGELS are God's leitourgoi, servants made 'winds and a flame of fire' — the point being that they serve, while the Son is served and enthroned; at 1:14 they are 'ministering (leitourgika) spirits' sent to serve the heirs of salvation. Paul calls himself a leitourgos of Christ to the nations (Romans 15:16), priestly language for his mission.", ["Hebrews", 1, 7]],
     ["desmios", "desmios", "δέσμιος", "desmios", "A PRISONER, one in bonds — from desmos, 'a chain, a fetter'. ⚠ It is the self-title Paul chooses in Philemon, where he might have written 'apostle': 'Paul, a PRISONER of Christ Jesus' (Philemon 1, 9), repeated with 'my chains' (vv10, 13) so that the whole appeal is made from below, in fetters, to the free man he is asking a favour of. Note the genitive — a prisoner OF Christ Jesus, not of Rome: Paul reads his imprisonment as Christ's doing and Christ's service (so too Ephesians 3:1, 'the prisoner of Christ Jesus for you Gentiles'). The word disarms; a man in chains asking is harder to refuse than an apostle commanding.", ["Philemon", 1, 1]],
-    ["presbytes", "presbytēs", "πρεσβύτης", "presbytēs", "An OLD MAN, an elder in years — distinct from presbyteros, the church office, though the roots are shared. ⚠ At Philemon 9 Paul calls himself 'such a one as Paul, a presbytēs', leaning the appeal on the pathos of age. But there is a famous crux: presbeutēs, 'an AMBASSADOR', differs by a single letter, the two were often spelled alike in this period, and 'Paul an ambassador, and now also a prisoner' fits his self-description at Ephesians 6:20 ('an ambassador in chains'). Most editions and versions keep 'old man'; a strong minority read 'ambassador'. The library keeps the plain text and flags the alternative.", ["Philemon", 1, 9]],
+    ["presbytes", "presbytēs", "πρεσβύτης", "presbytēs", "An OLD MAN, an elder in years — distinct from presbyteros, the church office, though the roots are shared. ⚠ At Philemon 9 Paul calls himself 'such a one as Paul, a presbytēs', leaning the appeal on the pathos of age. But there is a famous crux: presbeutēs, 'an AMBASSADOR', differs by a single letter, the two were often spelled alike in this period, and 'Paul an ambassador, and now also a prisoner' fits his self-description at Ephesians 6:20 ('an ambassador in a chain'). Most editions and versions keep 'old man'; a strong minority read 'ambassador'. The library keeps the plain text and flags the alternative.", ["Philemon", 1, 9]],
     ["euchrestos", "euchrēstos", "εὔχρηστος", "euchrēstos", "USEFUL, serviceable — eu, 'well', + chrēstos, 'usable, good'; the opposite of achrēstos, 'useless'. ⚠ The pair carries the central pun of Philemon: the runaway slave is named ONESIMUS, 'useful, profitable', and Paul plays on it — 'once achrēstos (useless) to you, now euchrēstos (useful)' (Philemon 11) — the man living down to his name and then up to it. A second pun likely hides beneath: achrēstos and Christos were near-homophones, so 'useless' whispers 'Christless'. Paul uses the word again of the once-failed Mark, 'useful to me for ministry' (2 Timothy 4:11), and of the vessel 'useful to the master' (2 Timothy 2:21) — usefulness restored is a quiet theme.", ["Philemon", 1, 11]],
     ["eleos", "eleos", "ἔλεος", "eleos", "MERCY, compassion — the pity that acts, not merely feels; the Greek Old Testament's regular word for the Hebrew hesed, God's covenant loyalty and steadfast love. ⚠ It is folded into the greeting only in the PASTORAL letters — 'grace, mercy, peace' (1 Timothy 1:2; 2 Timothy 1:2; and 2 John 3) — where Paul's usual 'grace and peace' is widened by one term, a small sign that the letter-formulas had grown. At 2 Timothy 1:16, 18 it is what Paul prays for Onesiphorus, 'may the Lord grant mercy… may he find mercy on that day'. English 'alms' and 'eleemosynary' descend from it, and the liturgical cry Kyrie eleison, 'Lord, have mercy', keeps it in use.", ["2 Timothy", 1, 2]],
     ["anupokritos", "anypokritos", "ἀνυπόκριτος", "anypokritos", "UNFEIGNED, sincere — literally 'un-play-acted': a-, 'not', + hypokritēs, 'an actor, a stage-player' (the source of 'hypocrite'). ⚠ To call faith or love anypokritos is to say it is not a performance, not a mask worn for an audience — the metaphor is straight from the Greek theatre, where the hypokritēs answered from behind a mask. It describes Timothy's 'sincere faith' at 2 Timothy 1:5, love 'without hypocrisy' at Romans 12:9, and the wisdom from above at James 3:17. The word quietly recalls Jesus' charge against the Pharisees as hypokritai — actors performing a righteousness they did not have.", ["2 Timothy", 1, 5]],
@@ -13937,7 +13937,7 @@ CHRON_CHAPTERS = {
         clock="c. AD 60–62 on the traditional reading, from the Roman imprisonment — the two clues being 'the whole praetorium' (1:13) and 'Caesar's household' (4:22). ⚠ Ephesus and Caesarea have both been proposed instead, which would move it earlier; and because 'praetorium' can mean any governor's headquarters, the clue is suggestive rather than decisive."),
     "eph1": dict(era="apostolic",
         when="A circular letter of extraordinary calm — no crisis, no opponents, not one personal greeting — opening with a two-hundred-word blessing that runs without a full stop from before the founding of the world to the gathering up of all things in Christ.",
-        clock="c. AD 60–62 on the traditional reading, from Paul's Roman imprisonment (3:1; 4:1; 6:20 — 'an ambassador in chains'), carried with Colossians and Philemon by Tychicus. ⚠ Two uncertainties ride along: the earliest manuscripts LACK 'in Ephesus' at 1:1, so the address itself is disputed (Marcion knew it as the letter to LAODICEA); and a substantial body of scholarship holds the letter to be by a disciple writing in Paul's name, which would move it later. Both are reported here, neither settled."),
+        clock="c. AD 60–62 on the traditional reading, from Paul's Roman imprisonment (3:1; 4:1; 6:20 — 'an ambassador in a chain'), carried with Colossians and Philemon by Tychicus. ⚠ Two uncertainties ride along: the earliest manuscripts LACK 'in Ephesus' at 1:1, so the address itself is disputed (Marcion knew it as the letter to LAODICEA); and a substantial body of scholarship holds the letter to be by a disciple writing in Paul's name, which would move it later. Both are reported here, neither settled."),
     "eph2": dict(era="apostolic",
         when="The same letter, the same imprisonment — no narrative time passes between chapters. The doxology of chapter 1 turns to diagnosis: the readers were dead, and God made them alive.",
         clock="c. AD 60–62, continuous with chapter 1's dating — the same Roman imprisonment, not a new scene with its own date."),
@@ -17549,7 +17549,7 @@ BOOK_INTROS = {
         genre="A LETTER in form, but closer to a MEDITATION or a circular homily — the only Pauline letter with no local problem behind it. Its Greek is unusually liturgical: long piled-up sentences (1:3-14 is a single two-hundred-word sentence, the longest in the New Testament), heaped synonyms, and the cadences of prayer and blessing rather than argument.",
         canon="The TENTH book of the New Testament and one of the four 'prison letters' (with Philippians, Colossians and Philemon). Its influence is enormous and quiet: 'by grace you have been saved through faith' (2:8), 'one Lord, one faith, one baptism' (4:5), the household code of chapter 5, and the armour of God (6:10-18).",
         author="⚠ DISPUTED — the sharpest authorship question among the letters traditionally ascribed to Paul. It names Paul twice (1:1; 3:1) and the ancient church never doubted it. Against that, a substantial body of modern scholarship notes: its Greek style (long periodic sentences, unusual vocabulary) differs from the undisputed letters; roughly a third of it runs closely parallel to COLOSSIANS, sometimes phrase for phrase, but with words shifted in sense; 'the church' means the universal body rather than a local assembly; and the apostles are spoken of as a foundation already laid (2:20), which reads like a later vantage. Others answer that a circular written at leisure in prison would naturally differ in style from a crisis letter dictated at speed. The library reports both and does not vote.",
-        date="c. AD 60–62 if Paul wrote it, from the Roman imprisonment ('an ambassador in chains', 6:20), carried with Colossians and Philemon by Tychicus (6:21). If a disciple wrote it, somewhere in the 80s or 90s.",
+        date="c. AD 60–62 if Paul wrote it, from the Roman imprisonment ('an ambassador in a chain', 6:20), carried with Colossians and Philemon by Tychicus (6:21). If a disciple wrote it, somewhere in the 80s or 90s.",
         place="Rome, on the traditional view; some prefer an earlier imprisonment at Caesarea or Ephesus.",
         audience="⚠ Uncertain, and deliberately so on the circular-letter theory: congregations in the Roman province of Asia, of which Ephesus was the chief city. The letter's own evidence points away from a congregation Paul knew personally — he twice says he has only HEARD of their faith (1:15; 3:2), and there are no greetings by name, which is extraordinary in a letter to a city where he had spent three years.",
         structure=[
@@ -37673,7 +37673,7 @@ CHRON_CHAPTERS["gal6"] = dict(era='apostolic',
 # ---- Ephesians 3 ------------------------------------------------------------
 DICTIONARY.append(("synkleronomos", "synklēronomos", "συγκληρονόμος", "synklēronomos",
     "A CO-HEIR, one who inherits together with another &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>klēronomos</em>, &lsquo;heir.&rsquo; "
-    "&#9888; It stands in four verses of the New Testament: <a href=\"romans-8.html#v8-17\">Romans 8:17</a>, &lsquo;heirs together with Christ&rsquo;; <a href=\"ephesians-3.html#v6\">Ephesians 3:6</a>; <a href=\"hebrews-11.html#v11-9\">Hebrews 11:9</a>, "
+    "&#9888; It stands in four verses of the New Testament: <a href=\"romans-8.html#v8-17\">Romans 8:17</a>, &lsquo;heirs together with Christ&rsquo;; <a href=\"ephesians-3.html#v3-6\">Ephesians 3:6</a>; <a href=\"hebrews-11.html#v11-9\">Hebrews 11:9</a>, "
     "&lsquo;heirs with him of the same promise&rsquo;; and 1 Peter 3:7 (not yet on these pages). At Ephesians 3:6 it opens a run of three "
     "<em>syn-</em> words that state the content of the mystery: the nations are co-heirs, <em>syssōma</em>, co-members of the body (in "
     "this verse alone), and <em>symmetocha</em>, co-sharers of the promise (here and Ephesians 5:7, not yet on these pages). The Greek "
@@ -37682,7 +37682,7 @@ DICTIONARY.append(("synkleronomos", "synklēronomos", "συγκληρονόμο�
     ("Ephesians", 3, 6)))
 DICTIONARY_ES["synkleronomos"] = ("synklēronómos",
     "UN COHEREDERO, quien hereda junto con otro &mdash; <em>syn</em>, «con», y <em>klēronomos</em>, «heredero». &#9888; Está en cuatro "
-    "versículos del Nuevo Testamento: <a href=\"romans-8.es.html#v8-17\">Romanos 8:17</a>, «coherederos con Cristo»; <a href=\"ephesians-3.es.html#v6\">Efesios 3:6</a>; <a href=\"hebrews-11.es.html#v11-9\">Hebreos 11:9</a>, «herederos con él de la misma promesa»; y "
+    "versículos del Nuevo Testamento: <a href=\"romans-8.es.html#v8-17\">Romanos 8:17</a>, «coherederos con Cristo»; <a href=\"ephesians-3.es.html#v3-6\">Efesios 3:6</a>; <a href=\"hebrews-11.es.html#v11-9\">Hebreos 11:9</a>, «herederos con él de la misma promesa»; y "
     "1 Pedro 3:7 (todavía no en estas páginas). En Efesios 3:6 abre una serie de tres palabras con <em>syn-</em> que enuncian el contenido "
     "del misterio: las naciones son coherederas, <em>syssōma</em>, comiembros del cuerpo (solo en este versículo), y <em>symmetocha</em>, "
     "copartícipes de la promesa (aquí y en Efesios 5:7, todavía no en estas páginas). El griego no dice con quién comparten; la NVI lo "
@@ -37691,63 +37691,63 @@ DICTIONARY_ES["synkleronomos"] = ("synklēronómos",
 
 DICTIONARY.append(("elachistoteros", "elachistoteros", "ἐλαχιστότερος", "elachistoteros",
     "LESS THAN THE LEAST &mdash; a comparative built on the superlative <em>elachistos</em>, &lsquo;least,&rsquo; as if &lsquo;leaster&rsquo;: "
-    "a form the grammar does not allow, made on purpose. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v8\">Ephesians 3:8</a>: &lsquo;To me, less "
+    "a form the grammar does not allow, made on purpose. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v3-8\">Ephesians 3:8</a>: &lsquo;To me, less "
     "than the least of all the holy ones, this grace was given.&rsquo; At <a href=\"1-corinthians-15.html#v9\">1 Corinthians 15:9</a> Paul is &lsquo;the least of the apostles&rsquo;; here he "
     "goes below the least of all believers. KJV and ASV &lsquo;less than the least of all saints&rsquo;; the Douay, from the Vulgate&rsquo;s "
     "<em>minimo</em>, &lsquo;the least of all the saints&rsquo;; TLB &lsquo;the most useless Christian there is.&rsquo;",
     ("Ephesians", 3, 8)))
 DICTIONARY_ES["elachistoteros"] = ("elachistóteros",
     "MENOS QUE EL MENOR &mdash; un comparativo hecho sobre el superlativo <em>elachistos</em>, «mínimo», como si fuera «más mínimo»: una "
-    "forma que la gramática no permite, hecha a propósito. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v8\">Efesios 3:8</a>: «A mí, que "
+    "forma que la gramática no permite, hecha a propósito. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v3-8\">Efesios 3:8</a>: «A mí, que "
     "soy menos que el menor de todos los santos, me fue dada esta gracia». En <a href=\"1-corinthians-15.es.html#v9\">1 Corintios 15:9</a> Pablo es «el menor de los apóstoles»; aquí baja "
     "por debajo del menor de todos los creyentes. RV60 «menos que el más pequeño de todos los santos», NVI «el más insignificante de "
     "todos los creyentes».")
 
 DICTIONARY.append(("polypoikilos", "polypoikilos", "πολυποίκιλος", "polypoikilos",
     "MANY-COLOURED, MANIFOLD &mdash; <em>polys</em>, &lsquo;much,&rsquo; and <em>poikilos</em>, &lsquo;varied, of many colours.&rsquo; "
-    "&#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v10\">Ephesians 3:10</a>: &lsquo;the many-sided wisdom of God&rsquo; made known through the "
+    "&#9888; It stands in one verse of the New Testament, <a href=\"ephesians-3.html#v3-10\">Ephesians 3:10</a>: &lsquo;the many-sided wisdom of God&rsquo; made known through the "
     "congregation to the rulers and the authorities in the heavenly places, the congregation of Jews and nations made one being the "
     "display. KJV, ASV and NIV &lsquo;the manifold wisdom of God,&rsquo; NWT 1984 &lsquo;the greatly diversified wisdom of God.&rsquo;",
     ("Ephesians", 3, 10)))
 DICTIONARY_ES["polypoikilos"] = ("polypoíkilos",
     "DE MUCHOS COLORES, MULTIFORME &mdash; <em>polys</em>, «mucho», y <em>poikilos</em>, «variado, de muchos colores». &#9888; Está en un "
-    "solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v10\">Efesios 3:10</a>: «la multiforme sabiduría de Dios» dada a conocer por medio de la congregación a los "
+    "solo versículo del Nuevo Testamento, <a href=\"ephesians-3.es.html#v3-10\">Efesios 3:10</a>: «la multiforme sabiduría de Dios» dada a conocer por medio de la congregación a los "
     "principados y a las autoridades en los lugares celestiales, y lo que se muestra es la congregación misma, judíos y naciones hechos "
     "uno. RV60 «la multiforme sabiduría de Dios», TNM 1987 «la grandemente diversificada sabiduría de Dios».")
 
 DICTIONARY.append(("patria", "patria", "πατριά", "patria",
     "A FAMILY, A CLAN &mdash; a line descended from one father, from <em>patēr</em>, &lsquo;father.&rsquo; &#9888; It is the &lsquo;house and "
-    "family line of David&rsquo; at <a href=\"luke-2.html#v2-4\">Luke 2:4</a>, &lsquo;all the families of the earth&rsquo; at <a href=\"acts-3.html#v3-25\">Acts 3:25</a>, and the word of <a href=\"ephesians-3.html#v15\">Ephesians 3:15</a>, &lsquo;the "
+    "family line of David&rsquo; at <a href=\"luke-2.html#v2-4\">Luke 2:4</a>, &lsquo;all the families of the earth&rsquo; at <a href=\"acts-3.html#v3-25\">Acts 3:25</a>, and the word of <a href=\"ephesians-3.html#v3-15\">Ephesians 3:15</a>, &lsquo;the "
     "Father, from whom every family in heaven and on earth is named,&rsquo; where Father and family are one word apart and English cannot "
     "keep the pair. The Vulgate prints <em>paternitas</em>, &lsquo;fatherhood,&rsquo; and so the Douay, &lsquo;Of whom all paternity in heaven "
     "and earth is named.&rsquo; KJV &lsquo;the whole family,&rsquo; ASV &lsquo;every family.&rsquo;",
     ("Ephesians", 3, 15)))
 DICTIONARY_ES["patria"] = ("patriá",
     "UNA FAMILIA, UN LINAJE &mdash; una descendencia de un mismo padre, de <em>patēr</em>, «padre». &#9888; Es el «linaje de David» en "
-    "<a href=\"luke-2.es.html#v2-4\">Lucas 2:4</a>, «todas las familias de la tierra» en <a href=\"acts-3.es.html#v3-25\">Hechos 3:25</a>, y la palabra de <a href=\"ephesians-3.es.html#v15\">Efesios 3:15</a>, «el Padre, de quien toma nombre toda familia en "
+    "<a href=\"luke-2.es.html#v2-4\">Lucas 2:4</a>, «todas las familias de la tierra» en <a href=\"acts-3.es.html#v3-25\">Hechos 3:25</a>, y la palabra de <a href=\"ephesians-3.es.html#v3-15\">Efesios 3:15</a>, «el Padre, de quien toma nombre toda familia en "
     "los cielos y en la tierra», donde Padre y familia están a una palabra de distancia y el español no puede conservar el par. La Vulgata "
     "imprime <em>paternitas</em>, «paternidad». RV60 «toda familia», RV 1909 «toda la parentela», TNM 1987 «toda familia».")
 
 
 _gal3_fix([
     ("(so too Ephesians 3:1, 'the prisoner of Christ Jesus for you Gentiles')",
-     "(so too <a href=\"ephesians-3.html#v1\">Ephesians 3:1</a>, 'the prisoner of Christ Jesus on behalf of you, the nations')"),
+     "(so too <a href=\"ephesians-3.html#v3-1\">Ephesians 3:1</a>, 'the prisoner of Christ Jesus on behalf of you, the nations')"),
     ("(así también Efesios 3:1, «el preso de Cristo Jesús por ustedes los gentiles»)",
-     "(así también <a href=\"ephesians-3.es.html#v1\">Efesios 3:1</a>, «el preso de Cristo Jesús a favor de ustedes, las naciones»)"),
+     "(así también <a href=\"ephesians-3.es.html#v3-1\">Efesios 3:1</a>, «el preso de Cristo Jesús a favor de ustedes, las naciones»)"),
     ("Paul uses the word of the 'stewardship of God's grace' given to him (Ephesians 3:2)",
-     "Paul uses the word of the 'stewardship of the grace of God' given to him (<a href=\"ephesians-3.html#v2\">Ephesians 3:2</a>)"),
-    ("and Ephesians 3:12 (not yet on these pages).", "and <a href=\"ephesians-3.html#v12\">Ephesians 3:12</a>, &lsquo;boldness and access with confidence.&rsquo;"),
-    ("y Efesios 3:12 (todavía no en estas páginas).", "y <a href=\"ephesians-3.es.html#v12\">Efesios 3:12</a>, «franqueza y acceso con confianza»."),
-    ("Ephesians 3:16 and 2 Corinthians 4:16 (these two not yet on these pages).", "<a href=\"ephesians-3.html#v16\">Ephesians 3:16</a> and <a href=\"2-corinthians-4.html#v16\">2 Corinthians 4:16</a>."),
-    ("Efesios 3:16 y 2 Corintios 4:16 (estos dos todavía no en estas páginas).", "<a href=\"ephesians-3.es.html#v16\">Efesios 3:16</a> y <a href=\"2-corinthians-4.es.html#v16\">2 Corintios 4:16</a>."),
+     "Paul uses the word of the 'stewardship of the grace of God' given to him (<a href=\"ephesians-3.html#v3-2\">Ephesians 3:2</a>)"),
+    ("and Ephesians 3:12 (not yet on these pages).", "and <a href=\"ephesians-3.html#v3-12\">Ephesians 3:12</a>, &lsquo;boldness and access with confidence.&rsquo;"),
+    ("y Efesios 3:12 (todavía no en estas páginas).", "y <a href=\"ephesians-3.es.html#v3-12\">Efesios 3:12</a>, «franqueza y acceso con confianza»."),
+    ("Ephesians 3:16 and 2 Corinthians 4:16 (these two not yet on these pages).", "<a href=\"ephesians-3.html#v3-16\">Ephesians 3:16</a> and <a href=\"2-corinthians-4.html#v16\">2 Corinthians 4:16</a>."),
+    ("Efesios 3:16 y 2 Corintios 4:16 (estos dos todavía no en estas páginas).", "<a href=\"ephesians-3.es.html#v3-16\">Efesios 3:16</a> y <a href=\"2-corinthians-4.es.html#v16\">2 Corintios 4:16</a>."),
     ("and Ephesians 3:8 (&lsquo;the unsearchable riches of the Christ,&rsquo; not yet on these pages)",
-     "and <a href=\"ephesians-3.html#v8\">Ephesians 3:8</a> (&lsquo;the untraceable riches of Christ&rsquo;)"),
+     "and <a href=\"ephesians-3.html#v3-8\">Ephesians 3:8</a> (&lsquo;the untraceable riches of Christ&rsquo;)"),
     ("y Efesios 3:8 («las inescrutables riquezas del Cristo», todavía no en estas páginas)",
-     "y <a href=\"ephesians-3.es.html#v8\">Efesios 3:8</a> («las riquezas de Cristo, imposibles de rastrear»)"),
+     "y <a href=\"ephesians-3.es.html#v3-8\">Efesios 3:8</a> («las riquezas de Cristo, imposibles de rastrear»)"),
     ("; and Ephesians 3:13 and 2 Thessalonians 3:13 (not yet on these pages).",
-     "; <a href=\"ephesians-3.html#v13\">Ephesians 3:13</a>; and 2 Thessalonians 3:13 (not yet on these pages)."),
+     "; <a href=\"ephesians-3.html#v3-13\">Ephesians 3:13</a>; and 2 Thessalonians 3:13 (not yet on these pages)."),
     ("; y Efesios 3:13 y 2 Tesalonicenses 3:13 (todavía no en estas páginas).",
-     "; <a href=\"ephesians-3.es.html#v13\">Efesios 3:13</a>; y 2 Tesalonicenses 3:13 (todavía no en estas páginas)."),
+     "; <a href=\"ephesians-3.es.html#v3-13\">Efesios 3:13</a>; y 2 Tesalonicenses 3:13 (todavía no en estas páginas)."),
 ])
 
 XREFS.extend([
@@ -37798,35 +37798,35 @@ CHRON_CHAPTERS["eph3"] = dict(era='apostolic',
 # ---- Ephesians 4 ------------------------------------------------------------
 DICTIONARY.append(("kybeia", "kybeia", "κυβεία", "kybeia",
     "DICE-PLAYING, SLEIGHT &mdash; from <em>kybos</em>, a cube or die: the gambler&rsquo;s game, and so trickery. &#9888; It stands in one "
-    "verse of the New Testament, <a href=\"ephesians-4.html#v14\">Ephesians 4:14</a>: &lsquo;so that we may no longer be infants, tossed by the waves and carried around by every "
+    "verse of the New Testament, <a href=\"ephesians-4.html#v4-14\">Ephesians 4:14</a>: &lsquo;so that we may no longer be infants, tossed by the waves and carried around by every "
     "wind of teaching, by the dice-playing of men.&rsquo; KJV and ASV &lsquo;by the sleight of men,&rsquo; NWT 1984 &lsquo;by means of the "
     "trickery of men,&rsquo; NIV &lsquo;the cunning and craftiness of people.&rsquo;",
     ("Ephesians", 4, 14)))
 DICTIONARY_ES["kybeia"] = ("kybeía",
     "JUEGO DE DADOS, ARTIMAÑA &mdash; de <em>kybos</em>, cubo o dado: el juego del tahúr, y de ahí el engaño. &#9888; Está en un solo "
-    "versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v14\">Efesios 4:14</a>: «para que ya no seamos niños, zarandeados por las olas y llevados de un lado a otro por "
+    "versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v4-14\">Efesios 4:14</a>: «para que ya no seamos niños, zarandeados por las olas y llevados de un lado a otro por "
     "todo viento de enseñanza, por el juego de dados de los hombres». RV60 «por estratagema de hombres», TNM 1987 «por medio de las "
     "tretas de los hombres».")
 
 DICTIONARY.append(("sapros", "sapros", "σαπρός", "sapros",
     "ROTTEN, decayed, and so worthless. &#9888; It stands in six verses of the New Testament: the rotten tree and its rotten fruit at "
-    "<a href=\"matthew-7.html#v7-17\">Matthew 7:17</a>, 7:18, 12:33 and <a href=\"luke-6.html#v6-43\">Luke 6:43</a>; the bad fish thrown away at Matthew 13:48; and <a href=\"ephesians-4.html#v29\">Ephesians 4:29</a>, &lsquo;Let no rotten word come out of "
+    "<a href=\"matthew-7.html#v7-17\">Matthew 7:17</a>, 7:18, 12:33 and <a href=\"luke-6.html#v6-43\">Luke 6:43</a>; the bad fish thrown away at Matthew 13:48; and <a href=\"ephesians-4.html#v4-29\">Ephesians 4:29</a>, &lsquo;Let no rotten word come out of "
     "your mouth.&rsquo; KJV &lsquo;corrupt communication,&rsquo; NWT 1984 &lsquo;a rotten saying,&rsquo; NIV &lsquo;unwholesome talk.&rsquo;",
     ("Ephesians", 4, 29)))
 DICTIONARY_ES["sapros"] = ("saprós",
     "PODRIDO, echado a perder, y de ahí sin valor. &#9888; Está en seis versículos del Nuevo Testamento: el árbol podrido y su fruto "
-    "podrido en Mateo 7:17 (ya en estas páginas, todavía no en español), 7:18, 12:33 y <a href=\"luke-6.es.html#v6-43\">Lucas 6:43</a>; los peces malos echados fuera en Mateo 13:48; y <a href=\"ephesians-4.es.html#v29\">Efesios 4:29</a>, «Ninguna palabra podrida "
+    "podrido en Mateo 7:17 (ya en estas páginas, todavía no en español), 7:18, 12:33 y <a href=\"luke-6.es.html#v6-43\">Lucas 6:43</a>; los peces malos echados fuera en Mateo 13:48; y <a href=\"ephesians-4.es.html#v4-29\">Efesios 4:29</a>, «Ninguna palabra podrida "
     "salga de su boca». RV60 «Ninguna palabra corrompida», TNM 1987 «ningún dicho corrompido».")
 
 DICTIONARY.append(("parorgismos", "parorgismos", "παροργισμός", "parorgismos",
     "PROVOCATION, EXASPERATION &mdash; anger stirred up, the state of being provoked, built on <em>orgē</em>, &lsquo;anger.&rsquo; &#9888; It "
-    "stands in one verse of the New Testament, <a href=\"ephesians-4.html#v26\">Ephesians 4:26</a>: &lsquo;Be angry and do not sin; do not let the sun go down on your provocation.&rsquo; "
+    "stands in one verse of the New Testament, <a href=\"ephesians-4.html#v4-26\">Ephesians 4:26</a>: &lsquo;Be angry and do not sin; do not let the sun go down on your provocation.&rsquo; "
     "The first half is Psalm 4:4 word for word as the Greek Old Testament has it; the Hebrew there has <em>rigzu</em>, &lsquo;tremble.&rsquo; "
     "KJV &lsquo;let not the sun go down upon your wrath,&rsquo; NWT 1984 &lsquo;let the sun not set with YOU in a provoked state.&rsquo;",
     ("Ephesians", 4, 26)))
 DICTIONARY_ES["parorgismos"] = ("parorgismós",
     "EXASPERACIÓN, PROVOCACIÓN &mdash; la ira removida, el estado de quien ha sido provocado, hecho sobre <em>orgē</em>, «ira». &#9888; Está "
-    "en un solo versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v26\">Efesios 4:26</a>: «Aírense y no pequen; no se ponga el sol sobre su exasperación». La primera "
+    "en un solo versículo del Nuevo Testamento, <a href=\"ephesians-4.es.html#v4-26\">Efesios 4:26</a>: «Aírense y no pequen; no se ponga el sol sobre su exasperación». La primera "
     "mitad es el Salmo 4:4 palabra por palabra como lo trae el Antiguo Testamento griego; el hebreo dice allí <em>rigzu</em>, «tiemblen». "
     "RV60 «no se ponga el sol sobre vuestro enojo», TNM 1987 «estando ustedes en estado provocado».")
 
@@ -37837,26 +37837,26 @@ DICTIONARY_ES["teleios"] = ("téleios",
     "de entereza y madurez, no de pureza moral sin mancha. Es la palabra detrás de «sean <em>teleioi</em> como su Padre celestial es "
     "<em>teleios</em>» (Mateo 5:48), que en su contexto significa abarcarlo todo en el amor, no estar libre de defectos. Es la contraparte "
     "griega del hebreo <em>tamim</em>, el encargo de El Shaddai a Abram, «anda delante de mí, y sé íntegro» (Génesis 17:1), y el paralelo "
-    "de Lucas dice «misericordiosos» (6:36): la entereza de que se trata es un amor sin cerca. En <a href=\"ephesians-4.es.html#v13\">Efesios 4:13</a> es el «hombre maduro», lo "
+    "de Lucas dice «misericordiosos» (6:36): la entereza de que se trata es un amor sin cerca. En <a href=\"ephesians-4.es.html#v4-13\">Efesios 4:13</a> es el «hombre maduro», lo "
     "contrario de los «niños» del versículo siguiente.")
 
 
 _gal3_fix([
-    ("and Ephesians 4:19 (not yet on these pages).", "and <a href=\"ephesians-4.html#v19\">Ephesians 4:19</a>."),
-    ("y Efesios 4:19 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v19\">Efesios 4:19</a>."),
+    ("and Ephesians 4:19 (not yet on these pages).", "and <a href=\"ephesians-4.html#v4-19\">Ephesians 4:19</a>."),
+    ("y Efesios 4:19 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v4-19\">Efesios 4:19</a>."),
     ("&lsquo;for the practice of every uncleanness&rsquo;", "&lsquo;for the practice of every impurity&rsquo;"),
     ("Ephesians 4:2, Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (none yet on these pages).",
-     "<a href=\"ephesians-4.html#v2\">Ephesians 4:2</a>, and Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those five not yet on these pages)."),
+     "<a href=\"ephesians-4.html#v4-2\">Ephesians 4:2</a>, and Philippians 2:3, Colossians 2:18, 2:23, 3:12 and 1 Peter 5:5 (those five not yet on these pages)."),
     ("Efesios 4:2, Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (ninguno todavía en estas páginas).",
-     "<a href=\"ephesians-4.es.html#v2\">Efesios 4:2</a>, y Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cinco todavía no en estas páginas)."),
-    ("and Ephesians 4:14 (not yet on these pages).", "and <a href=\"ephesians-4.html#v14\">Ephesians 4:14</a>."),
-    ("y Efesios 4:14 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v14\">Efesios 4:14</a>."),
-    ("and at Ephesians 4:18. KJV reads", "and at <a href=\"ephesians-4.html#v18\">Ephesians 4:18</a>. KJV reads"),
-    ("y en Efesios 4:18.", "y en <a href=\"ephesians-4.es.html#v18\">Efesios 4:18</a>."),
-    ("(Ephesians 4:32; Philippians 2:9)", "(<a href=\"ephesians-4.html#v32\">Ephesians 4:32</a>; Philippians 2:9)"),
-    ("(Efesios 4:32; Filipenses 2:9)", "(<a href=\"ephesians-4.es.html#v32\">Efesios 4:32</a>; Filipenses 2:9)"),
-    ("and <em>katartismos</em> at Ephesians 4:12)", "and <em>katartismos</em> at <a href=\"ephesians-4.html#v12\">Ephesians 4:12</a>)"),
-    ("y <em>katartismos</em> en Efesios 4:12)", "y <em>katartismos</em> en <a href=\"ephesians-4.es.html#v12\">Efesios 4:12</a>)"),
+     "<a href=\"ephesians-4.es.html#v4-2\">Efesios 4:2</a>, y Filipenses 2:3, Colosenses 2:18, 2:23, 3:12 y 1 Pedro 5:5 (esos cinco todavía no en estas páginas)."),
+    ("and Ephesians 4:14 (not yet on these pages).", "and <a href=\"ephesians-4.html#v4-14\">Ephesians 4:14</a>."),
+    ("y Efesios 4:14 (todavía no en estas páginas).", "y <a href=\"ephesians-4.es.html#v4-14\">Efesios 4:14</a>."),
+    ("and at Ephesians 4:18. KJV reads", "and at <a href=\"ephesians-4.html#v4-18\">Ephesians 4:18</a>. KJV reads"),
+    ("y en Efesios 4:18.", "y en <a href=\"ephesians-4.es.html#v4-18\">Efesios 4:18</a>."),
+    ("(Ephesians 4:32; Philippians 2:9)", "(<a href=\"ephesians-4.html#v4-32\">Ephesians 4:32</a>; Philippians 2:9)"),
+    ("(Efesios 4:32; Filipenses 2:9)", "(<a href=\"ephesians-4.es.html#v4-32\">Efesios 4:32</a>; Filipenses 2:9)"),
+    ("and <em>katartismos</em> at Ephesians 4:12)", "and <em>katartismos</em> at <a href=\"ephesians-4.html#v4-12\">Ephesians 4:12</a>)"),
+    ("y <em>katartismos</em> en Efesios 4:12)", "y <em>katartismos</em> en <a href=\"ephesians-4.es.html#v4-12\">Efesios 4:12</a>)"),
 ])
 
 XREFS.extend([
@@ -37910,14 +37910,14 @@ CHRON_CHAPTERS["eph4"] = dict(era='apostolic',
 # ---- Ephesians 5 ------------------------------------------------------------
 DICTIONARY.append(("eutrapelia", "eutrapelia", "εὐτραπελία", "eutrapelia",
     "CLEVER JESTING &mdash; literally &lsquo;turning well,&rsquo; the quick wit of a good talker. Aristotle is reported to have counted it a "
-    "virtue, the mean between the buffoon and the boor. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-5.html#v4\">Ephesians 5:4</a>, beside "
+    "virtue, the mean between the buffoon and the boor. &#9888; It stands in one verse of the New Testament, <a href=\"ephesians-5.html#v5-4\">Ephesians 5:4</a>, beside "
     "<em>aischrotēs</em>, &lsquo;obscenity,&rsquo; and <em>mōrologia</em>, &lsquo;foolish talk&rsquo; (each also in that verse alone): "
     "wit that has slid into the coarse, set against <em>eucharistia</em>, &lsquo;thanksgiving,&rsquo; a word that sounds like it. KJV "
     "&lsquo;jesting,&rsquo; NIV &lsquo;coarse joking,&rsquo; NWT 1984 &lsquo;obscene jesting.&rsquo;",
     ("Ephesians", 5, 4)))
 DICTIONARY_ES["eutrapelia"] = ("eutrapelía",
     "EL CHISTE INGENIOSO &mdash; literalmente «el buen giro», el ingenio rápido del buen conversador. Se informa que Aristóteles la "
-    "contaba como virtud, el justo medio entre el bufón y el rústico. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-5.es.html#v4\">Efesios 5:4</a>, "
+    "contaba como virtud, el justo medio entre el bufón y el rústico. &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"ephesians-5.es.html#v5-4\">Efesios 5:4</a>, "
     "junto a <em>aischrotēs</em>, «obscenidad», y <em>mōrologia</em>, «palabrería necia» (cada una también solo en ese versículo): el "
     "ingenio que se ha deslizado a lo grosero, frente a <em>eucharistia</em>, «acción de gracias», una palabra que suena parecida. RV60 "
     "«truhanerías», NVI «chistes groseros», TNM 1987 «bromear obsceno».")
@@ -37926,24 +37926,24 @@ DICTIONARY.append(("kephale", "kephalē", "κεφαλή", "kephalē",
     "HEAD &mdash; the head of the body, and by figure the one at the top or at the source. &#9888; What the figure means when Paul uses it "
     "of persons is argued: authority, as a ruler is head; or source and origin, as a river has a head; or both. In Ephesians Christ is "
     "given &lsquo;as head over all things to the congregation&rsquo; (<a href=\"ephesians-1.html#v22\">Ephesians 1:22</a>), the head &lsquo;from whom the whole body&rsquo; grows "
-    "(<a href=\"ephesians-4.html#v4-15\">Ephesians 4:15</a>), and at <a href=\"ephesians-5.html#v23\">Ephesians 5:23</a> &lsquo;a husband is head of the wife as Christ also is head of the congregation.&rsquo; At <a href=\"1-corinthians-11.html#v3\">1 Corinthians 11:3</a> "
+    "(<a href=\"ephesians-4.html#v4-15\">Ephesians 4:15</a>), and at <a href=\"ephesians-5.html#v5-23\">Ephesians 5:23</a> &lsquo;a husband is head of the wife as Christ also is head of the congregation.&rsquo; At <a href=\"1-corinthians-11.html#v3\">1 Corinthians 11:3</a> "
     "&lsquo;the head of a woman is the man, and the head of Christ is God.&rsquo; The library sets out the readings and does not vote.",
     ("Ephesians", 5, 23)))
 DICTIONARY_ES["kephale"] = ("kephalḗ",
     "CABEZA &mdash; la cabeza del cuerpo, y en figura el que está arriba o en el origen. &#9888; Qué significa la figura cuando Pablo la "
     "usa de personas se discute: autoridad, como un gobernante es cabeza; o fuente y origen, como un río tiene cabecera; o las dos "
     "cosas. En Efesios Cristo es dado «por cabeza sobre todas las cosas a la congregación» (<a href=\"ephesians-1.es.html#v22\">Efesios 1:22</a>), la cabeza de quien crece todo "
-    "el cuerpo (<a href=\"ephesians-4.es.html#v4-15\">Efesios 4:15</a>), y en <a href=\"ephesians-5.es.html#v23\">Efesios 5:23</a> «el marido es cabeza de la esposa, así como también Cristo es cabeza de la congregación». En "
+    "el cuerpo (<a href=\"ephesians-4.es.html#v4-15\">Efesios 4:15</a>), y en <a href=\"ephesians-5.es.html#v5-23\">Efesios 5:23</a> «el marido es cabeza de la esposa, así como también Cristo es cabeza de la congregación». En "
     "<a href=\"1-corinthians-11.es.html#v3\">1 Corintios 11:3</a> «la cabeza de la mujer es el varón, y la cabeza de Cristo es Dios». La biblioteca expone las lecturas y no vota.")
 
 DICTIONARY.append(("loutron", "loutron", "λουτρόν", "loutron",
-    "A WASHING, A BATH. &#9888; It stands in two verses of the New Testament: <a href=\"ephesians-5.html#v26\">Ephesians 5:26</a>, &lsquo;having cleansed her by the washing of water "
+    "A WASHING, A BATH. &#9888; It stands in two verses of the New Testament: <a href=\"ephesians-5.html#v5-26\">Ephesians 5:26</a>, &lsquo;having cleansed her by the washing of water "
     "with the word,&rsquo; and Titus 3:5, &lsquo;the washing of rebirth&rsquo; (not yet on these pages). Many read baptism in both; at "
     "Ephesians 5:26 others read the bride&rsquo;s bath before the wedding. KJV &lsquo;the washing of water by the word,&rsquo; NWT 1984 "
     "&lsquo;the bath of water,&rsquo; Douay &lsquo;the laver of water.&rsquo;",
     ("Ephesians", 5, 26)))
 DICTIONARY_ES["loutron"] = ("loutrón",
-    "UN LAVAMIENTO, UN BAÑO. &#9888; Está en dos versículos del Nuevo Testamento: <a href=\"ephesians-5.es.html#v26\">Efesios 5:26</a>, «habiéndola purificado con el lavamiento del "
+    "UN LAVAMIENTO, UN BAÑO. &#9888; Está en dos versículos del Nuevo Testamento: <a href=\"ephesians-5.es.html#v5-26\">Efesios 5:26</a>, «habiéndola purificado con el lavamiento del "
     "agua por la palabra», y Tito 3:5, «el lavamiento de la regeneración» (todavía no en estas páginas). Muchos leen el bautismo en los "
     "dos; en Efesios 5:26 otros leen el baño de la novia antes de la boda. RV60 «el lavamiento del agua por la palabra», TNM 1987 «el "
     "baño de agua».")
@@ -37954,32 +37954,32 @@ DICTIONARY_ES["mimetes"] = ("mimētḗs",
     "imitadores míos, así como yo también lo soy de Cristo», 1 Corintios 11:1) y en su primer uso, 1 Tesalonicenses 1:6, en un orden que "
     "no es el piadoso: imitadores «de nosotros y del Señor». &#9888; No se trata de vanidad: en un mundo sin Nuevo Testamento que poner "
     "en las manos de nadie, la copia disponible de la cosa era una persona. La cadena sigue en 2:14, donde los tesalonicenses se hacen "
-    "imitadores de las congregaciones de Judea. Solo en <a href=\"ephesians-5.es.html#v1\">Efesios 5:1</a> se pide imitar a Dios mismo.")
+    "imitadores de las congregaciones de Judea. Solo en <a href=\"ephesians-5.es.html#v5-1\">Efesios 5:1</a> se pide imitar a Dios mismo.")
 
 
 _gal3_fix([
     ("Ephesians 5:18 and 1 Peter 4:4 (neither yet on these pages), and",
-     "<a href=\"ephesians-5.html#v18\">Ephesians 5:18</a> and 1 Peter 4:4 (the second not yet on these pages), and"),
+     "<a href=\"ephesians-5.html#v5-18\">Ephesians 5:18</a> and 1 Peter 4:4 (the second not yet on these pages), and"),
     ("Efesios 5:18 y 1 Pedro 4:4, ninguna todavía en estas páginas, y",
-     "<a href=\"ephesians-5.es.html#v18\">Efesios 5:18</a> y 1 Pedro 4:4, esta todavía no en estas páginas, y"),
+     "<a href=\"ephesians-5.es.html#v5-18\">Efesios 5:18</a> y 1 Pedro 4:4, esta todavía no en estas páginas, y"),
     ("and in Ephesians 5:22 (not yet on these pages), where wives are told to be subject to their husbands.",
-     "and in <a href=\"ephesians-5.html#v21\">Ephesians 5:21</a>, &lsquo;submitting to one another,&rsquo; whose verb carries over into the instruction to wives in 5:22, a verse "
+     "and in <a href=\"ephesians-5.html#v5-21\">Ephesians 5:21</a>, &lsquo;submitting to one another,&rsquo; whose verb carries over into the instruction to wives in 5:22, a verse "
      "with no verb of its own in the critical text."),
     ("y en Efesios 5:22 (todavía no en estas páginas), donde a las esposas se les dice que se sujeten a sus maridos.",
-     "y en <a href=\"ephesians-5.es.html#v21\">Efesios 5:21</a>, «sometiéndose unos a otros», cuyo verbo pasa a la instrucción a las esposas en 5:22, un versículo sin verbo "
+     "y en <a href=\"ephesians-5.es.html#v5-21\">Efesios 5:21</a>, «sometiéndose unos a otros», cuyo verbo pasa a la instrucción a las esposas en 5:22, un versículo sin verbo "
      "propio en el texto crítico."),
     ("Romans 15:16 (&lsquo;the offering of the nations&rsquo;), Ephesians 5:2 and Hebrews 10:5, 8, 10, 14 and 18 (those last seven not yet on these pages)",
-     "<a href=\"romans-15.html#v15-16\">Romans 15:16</a> (&lsquo;the offering of the nations&rsquo;), <a href=\"ephesians-5.html#v2\">Ephesians 5:2</a>, and Hebrews 10:5, 8, 10, 14 and 18 (those five not yet on these pages)"),
+     "<a href=\"romans-15.html#v15-16\">Romans 15:16</a> (&lsquo;the offering of the nations&rsquo;), <a href=\"ephesians-5.html#v5-2\">Ephesians 5:2</a>, and Hebrews 10:5, 8, 10, 14 and 18 (those five not yet on these pages)"),
     ("Romanos 15:16 («la ofrenda de las naciones»), Efesios 5:2 y Hebreos 10:5, 8, 10, 14 y 18 (esos siete últimos todavía no en estas páginas)",
-     "<a href=\"romans-15.es.html#v15-16\">Romanos 15:16</a> («la ofrenda de las naciones»), <a href=\"ephesians-5.es.html#v2\">Efesios 5:2</a>, y Hebreos 10:5, 8, 10, 14 y 18 (esos cinco todavía no en estas páginas)"),
+     "<a href=\"romans-15.es.html#v15-16\">Romanos 15:16</a> («la ofrenda de las naciones»), <a href=\"ephesians-5.es.html#v5-2\">Efesios 5:2</a>, y Hebreos 10:5, 8, 10, 14 y 18 (esos cinco todavía no en estas páginas)"),
     ("and Ephesians 5:16 and Colossians 4:5, &lsquo;buying out the time&rsquo; (those two not yet on these pages).",
-     "and <a href=\"ephesians-5.html#v16\">Ephesians 5:16</a> and Colossians 4:5, &lsquo;buying out the time&rsquo; (the second not yet on these pages)."),
+     "and <a href=\"ephesians-5.html#v5-16\">Ephesians 5:16</a> and Colossians 4:5, &lsquo;buying out the time&rsquo; (the second not yet on these pages)."),
     ("y Efesios 5:16 y Colosenses 4:5, «comprando el tiempo» (esos dos todavía no en estas páginas).",
-     "y <a href=\"ephesians-5.es.html#v16\">Efesios 5:16</a> y Colosenses 4:5, «comprando el tiempo» (el segundo todavía no en estas páginas)."),
-    ("; Ephesians 5:9 (not yet on these pages);", "; <a href=\"ephesians-5.html#v9\">Ephesians 5:9</a>;"),
-    ("; Efesios 5:9 (todavía no en estas páginas);", "; <a href=\"ephesians-5.es.html#v9\">Efesios 5:9</a>;"),
-    ("(here and Ephesians 5:7, not yet on these pages)", "(here and <a href=\"ephesians-5.html#v7\">Ephesians 5:7</a>)"),
-    ("(aquí y en Efesios 5:7, todavía no en estas páginas)", "(aquí y en <a href=\"ephesians-5.es.html#v7\">Efesios 5:7</a>)"),
+     "y <a href=\"ephesians-5.es.html#v5-16\">Efesios 5:16</a> y Colosenses 4:5, «comprando el tiempo» (el segundo todavía no en estas páginas)."),
+    ("; Ephesians 5:9 (not yet on these pages);", "; <a href=\"ephesians-5.html#v5-9\">Ephesians 5:9</a>;"),
+    ("; Efesios 5:9 (todavía no en estas páginas);", "; <a href=\"ephesians-5.es.html#v5-9\">Efesios 5:9</a>;"),
+    ("(here and Ephesians 5:7, not yet on these pages)", "(here and <a href=\"ephesians-5.html#v5-7\">Ephesians 5:7</a>)"),
+    ("(aquí y en Efesios 5:7, todavía no en estas páginas)", "(aquí y en <a href=\"ephesians-5.es.html#v5-7\">Efesios 5:7</a>)"),
 ])
 
 XREFS.extend([
@@ -38025,4 +38025,158 @@ CHAPTER_ART["eph5"] = [dict(
 
 CHRON_CHAPTERS["eph5"] = dict(era='apostolic',
     when="The readers are told to imitate God and walk as children of light, to be filled with the Spirit, and to submit to one another; the household instructions to wives and husbands read marriage as a picture of Christ and the congregation.",
+    clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
+
+# ---- Ephesians 6 ------------------------------------------------------------
+DICTIONARY.append(("panoplia", "panoplia", "πανοπλία", "panoplia",
+    "FULL ARMOR &mdash; the whole kit of a heavy-armed soldier, from <em>pan</em>, &lsquo;all,&rsquo; and <em>hopla</em>, &lsquo;arms.&rsquo; "
+    "&#9888; It stands in three verses of the New Testament: <a href=\"luke-11.html#v11-22\">Luke 11:22</a>, where the stronger man &lsquo;takes away his full armor, "
+    "in which he had trusted,&rsquo; and <a href=\"ephesians-6.html#v6-11\">Ephesians 6:11</a> and <a href=\"ephesians-6.html#v6-13\">6:13</a>, &lsquo;the full armor of God.&rsquo; Several of the pieces Ephesians names "
+    "come from Isaiah, where it is God who arms himself: in the Greek of Isaiah 59:17 he &lsquo;put on righteousness as a breastplate, and "
+    "set a helmet of salvation on his head&rsquo; (not yet on these pages). KJV &lsquo;the whole armour of God,&rsquo; NWT 1984 &lsquo;the "
+    "complete suit of armor from God.&rsquo;",
+    ("Ephesians", 6, 11)))
+DICTIONARY_ES["panoplia"] = ("panoplía",
+    "TODA LA ARMADURA &mdash; el equipo completo del soldado de infantería pesada, de <em>pan</em>, «todo», y <em>hopla</em>, «armas». "
+    "&#9888; Está en tres versículos del Nuevo Testamento: <a href=\"luke-11.es.html#v11-22\">Lucas 11:22</a>, donde el más fuerte le quita «toda la armadura en que "
+    "confiaba», y <a href=\"ephesians-6.es.html#v6-11\">Efesios 6:11</a> y <a href=\"ephesians-6.es.html#v6-13\">6:13</a>, «toda la armadura de Dios». Varias de las piezas que nombra Efesios vienen de "
+    "Isaías, donde es Dios quien se arma: en el griego de Isaías 59:17 «se vistió de justicia como de coraza, y se puso el casco de "
+    "salvación en la cabeza» (todavía no en estas páginas). RV60 «toda la armadura de Dios», TNM 1987 «la armadura completa que proviene "
+    "de Dios».")
+
+DICTIONARY.append(("methodeia", "methodeia", "μεθοδεία", "methodeia",
+    "SCHEMING, A STRATAGEM &mdash; a planned approach, from the family of <em>methodos</em>, the root of English &lsquo;method.&rsquo; "
+    "&#9888; It stands in two verses of the New Testament, both in Ephesians: <a href=\"ephesians-4.html#v4-14\">4:14</a>, &lsquo;craftiness that serves the scheming of "
+    "error,&rsquo; and <a href=\"ephesians-6.html#v6-11\">6:11</a>, &lsquo;the schemes of the devil.&rsquo; KJV &lsquo;the wiles of the devil,&rsquo; Geneva &lsquo;the "
+    "assaults of the devil,&rsquo; NWT 1984 &lsquo;the machinations of the Devil.&rsquo;",
+    ("Ephesians", 4, 14)))
+DICTIONARY_ES["methodeia"] = ("methodeía",
+    "ARTIMAÑAS, UNA ESTRATAGEMA &mdash; un plan de ataque, de la familia de <em>methodos</em>, la raíz de «método». &#9888; Está en dos "
+    "versículos del Nuevo Testamento, los dos en Efesios: <a href=\"ephesians-4.es.html#v4-14\">4:14</a>, «la astucia al servicio de las artimañas del error», y <a href=\"ephesians-6.es.html#v6-11\">6:11</a>, «las "
+    "artimañas del diablo». RV60 «las asechanzas del diablo», TNM 1987 «las maquinaciones del Diablo».")
+
+DICTIONARY.append(("kosmokrator", "kosmokratōr", "κοσμοκράτωρ", "kosmokratōr",
+    "WORLD-RULER &mdash; <em>kosmos</em>, &lsquo;world,&rsquo; and <em>kratos</em>, &lsquo;might.&rsquo; &#9888; It stands in one verse of the "
+    "New Testament, <a href=\"ephesians-6.html#v6-12\">Ephesians 6:12</a>, &lsquo;the world-rulers of this darkness,&rsquo; among the powers the readers wrestle with "
+    "&lsquo;in the heavenly places.&rsquo; Greek writers are reported to have given the title to gods. The Byzantine text reads &lsquo;the "
+    "darkness of this age,&rsquo; and so KJV &lsquo;the rulers of the darkness of this world&rsquo;; ASV &lsquo;the world-rulers of this "
+    "darkness.&rsquo;",
+    ("Ephesians", 6, 12)))
+DICTIONARY_ES["kosmokrator"] = ("kosmokrátōr",
+    "DOMINADOR DEL MUNDO &mdash; <em>kosmos</em>, «mundo», y <em>kratos</em>, «poder». &#9888; Está en un solo versículo del Nuevo "
+    "Testamento, <a href=\"ephesians-6.es.html#v6-12\">Efesios 6:12</a>, «los dominadores del mundo de estas tinieblas», entre los poderes con que luchan los lectores «en los "
+    "lugares celestiales». Se informa que escritores griegos daban el título a dioses. El texto bizantino dice «las tinieblas de este "
+    "siglo», y así RV60 «los gobernadores de las tinieblas de este siglo»; TNM 1987 «los gobernantes mundiales de esta oscuridad».")
+
+DICTIONARY.append(("presbeuo", "presbeuō", "πρεσβεύω", "presbeuō",
+    "TO BE AN AMBASSADOR &mdash; from <em>presbys</em>, &lsquo;old,&rsquo; the root also of <em>presbyteros</em>, &lsquo;elder.&rsquo; &#9888; It "
+    "stands in two verses of the New Testament: <a href=\"2-corinthians-5.html#v20\">2 Corinthians 5:20</a>, &lsquo;we are ambassadors on behalf of Christ,&rsquo; and "
+    "<a href=\"ephesians-6.html#v6-20\">Ephesians 6:20</a>, &lsquo;for which I am an ambassador in a chain.&rsquo; By custom an envoy was not to be touched; this one is "
+    "chained. At Philemon 9 some read <em>presbytēs</em>, &lsquo;old man,&rsquo; as &lsquo;ambassador&rsquo; (see <a href=\"dictionary.html#presbytes\"><em>presbytēs</em></a>). KJV "
+    "&lsquo;an ambassador in bonds,&rsquo; Douay &lsquo;an ambassador in a chain.&rsquo;",
+    ("Ephesians", 6, 20)))
+DICTIONARY_ES["presbeuo"] = ("presbeúō",
+    "SER EMBAJADOR &mdash; de <em>presbys</em>, «anciano», raíz también de <em>presbyteros</em>, «anciano» de la congregación. &#9888; Está en "
+    "dos versículos del Nuevo Testamento: <a href=\"2-corinthians-5.es.html#v20\">2 Corintios 5:20</a>, «somos embajadores en nombre de Cristo», y <a href=\"ephesians-6.es.html#v6-20\">Efesios 6:20</a>, «por el "
+    "cual soy embajador en una cadena». Por costumbre a un enviado no se le tocaba; a este lo tienen encadenado. En Filemón 9 algunos leen "
+    "<em>presbytēs</em>, «anciano», como «embajador» (véase <a href=\"diccionario.html#presbytes\"><em>presbytēs</em></a>). RV60 «embajador en cadenas», TNM 1987 «actúo como "
+    "embajador en cadenas».")
+
+ENCYCLOPEDIA.append(dict(slug="tychicus", name="Tychicus", kind="person", aliases=["Tychicus"],
+    refs=[("Acts", 20, 4), ("Ephesians", 6, 21)], videos=[],
+    desc="A man &lsquo;of Asia&rsquo; who travelled with Paul, named with Trophimus in <a href=\"acts-20.html#v20-4\">Acts 20:4</a>. The name stands in five "
+         "verses of the New Testament: Acts 20:4, <a href=\"ephesians-6.html#v6-21\">Ephesians 6:21</a>, Colossians 4:7, 2 Timothy 4:12 and Titus 3:12 (the last three not yet on these "
+         "pages). In Ephesians and Colossians he is &lsquo;the beloved brother and faithful servant in the Lord&rsquo; who carries Paul&rsquo;s "
+         "news; <a href=\"ephesians-6.html#v6-22\">Ephesians 6:22</a> is word for word the Greek of Colossians 4:8, and in Colossians he travels with <a href=\"encyclopedia.html#onesimus\">Onesimus</a> (4:9), "
+         "so the letters seem to have gone together. At 2 Timothy 4:12 Paul writes &lsquo;Tychicus I sent to Ephesus,&rsquo; and at Titus "
+         "3:12 he means to send Artemas or Tychicus to Titus. The name is formed from <em>tychē</em>, &lsquo;fortune.&rsquo;"))
+ENCYCLOPEDIA_ES["tychicus"] = ("Tíquico",
+    "Un hombre «de Asia» que viajó con Pablo, nombrado con Trófimo en <a href=\"acts-20.es.html#v20-4\">Hechos 20:4</a>. El nombre está en cinco versículos del Nuevo "
+    "Testamento: Hechos 20:4, <a href=\"ephesians-6.es.html#v6-21\">Efesios 6:21</a>, Colosenses 4:7, 2 Timoteo 4:12 y Tito 3:12 (los tres últimos todavía no en estas páginas). En "
+    "Efesios y Colosenses es «el hermano amado y fiel servidor en el Señor» que lleva las noticias de Pablo; <a href=\"ephesians-6.es.html#v6-22\">Efesios 6:22</a> es palabra por "
+    "palabra el griego de Colosenses 4:8, y en Colosenses viaja con <a href=\"enciclopedia.html#onesimus\">Onésimo</a> (4:9), así que las cartas parecen haber ido juntas. En "
+    "2 Timoteo 4:12 Pablo escribe «a Tíquico lo envié a Éfeso», y en Tito 3:12 piensa enviar a Ártemas o a Tíquico a Tito. El nombre "
+    "está formado de <em>tychē</em>, «fortuna».")
+
+
+_gal3_fix([
+    ("</a>, Ephesians 6:9, Colossians 3:25 and James 2:1; the verb",
+     "</a>, <a href=\"ephesians-6.html#v6-9\">Ephesians 6:9</a>, Colossians 3:25 and James 2:1; the verb"),
+    ("(Ephesians 6:9, Colossians 3:25 and James 2:1 and 2:9 not yet on these pages)",
+     "(Colossians 3:25 and James 2:1 and 2:9 not yet on these pages)"),
+    ("</a>, Efesios 6:9, Colosenses 3:25 y Santiago 2:1; el verbo",
+     "</a>, <a href=\"ephesians-6.es.html#v6-9\">Efesios 6:9</a>, Colosenses 3:25 y Santiago 2:1; el verbo"),
+    ("(Efesios 6:9, Colosenses 3:25 y Santiago 2:1 y 2:9 todavía no en estas páginas)",
+     "(Colosenses 3:25 y Santiago 2:1 y 2:9 todavía no en estas páginas)"),
+    ("with Ephesians 6:20 and 1 Thessalonians 2:2 (the last two not yet on these pages).",
+     "with <a href=\"ephesians-6.html#v6-20\">Ephesians 6:20</a> and 1 Thessalonians 2:2 (the last not yet on these pages)."),
+    ("con Efesios 6:20 y 1 Tesalonicenses 2:2 (los dos últimos todavía no en estas páginas).",
+     "con <a href=\"ephesians-6.es.html#v6-20\">Efesios 6:20</a> y 1 Tesalonicenses 2:2 (el último todavía no en estas páginas)."),
+    ("</a>, Ephesians 6:20 and Revelation 20:1 (the last two not yet on these pages).",
+     "</a>, <a href=\"ephesians-6.html#v6-20\">Ephesians 6:20</a> and Revelation 20:1 (the last not yet on these pages)."),
+    ("</a>, Efesios 6:20 y Apocalipsis 20:1 (los dos últimos todavía no en estas páginas).",
+     "</a>, <a href=\"ephesians-6.es.html#v6-20\">Efesios 6:20</a> y Apocalipsis 20:1 (el último todavía no en estas páginas)."),
+    ("; and Ephesians 6:10, 2 Timothy 2:1 and 2 Timothy 4:17 (those three not yet on these pages).",
+     "; and <a href=\"ephesians-6.html#v6-10\">Ephesians 6:10</a>, 2 Timothy 2:1 and 2 Timothy 4:17 (those two not yet on these pages)."),
+    ("; y Efesios 6:10, 2 Timoteo 2:1 y 2 Timoteo 4:17 (estos tres todavía no en estas páginas).",
+     "; y <a href=\"ephesians-6.es.html#v6-10\">Efesios 6:10</a>, 2 Timoteo 2:1 y 2 Timoteo 4:17 (estos dos todavía no en estas páginas)."),
+    ("and 2 Corinthians 1:11 and 9:14, Ephesians 6:18, Philippians 4:6, 1 Timothy 2:1 and 5:5, Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these not yet on these pages).",
+     "and <a href=\"2-corinthians-1.html#v11\">2 Corinthians 1:11</a> and <a href=\"2-corinthians-9.html#v14\">9:14</a>, <a href=\"ephesians-6.html#v6-18\">Ephesians 6:18</a>, <a href=\"philippians-4.html#v4-6\">Philippians 4:6</a>, 1 Timothy 2:1 and 5:5, Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last five not yet on these pages)."),
+    ("y 2 Corintios 1:11 y 9:14, Efesios 6:18, Filipenses 4:6, 1 Timoteo 2:1 y 5:5, Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos todavía no en estas páginas).",
+     "y <a href=\"2-corinthians-1.es.html#v11\">2 Corintios 1:11</a> y <a href=\"2-corinthians-9.es.html#v14\">9:14</a>, <a href=\"ephesians-6.es.html#v6-18\">Efesios 6:18</a>, <a href=\"philippians-4.es.html#v4-6\">Filipenses 4:6</a>, 1 Timoteo 2:1 y 5:5, Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos cinco últimos todavía no en estas páginas)."),
+    ("in 'the helmet of salvation' (Ephesians 6:17).",
+     "in 'the helmet of salvation' (<a href=\"ephesians-6.html#v6-17\">Ephesians 6:17</a>)."),
+    ("en «el yelmo de la salvación» (Efesios 6:17).",
+     "en «el casco de la salvación» (<a href=\"ephesians-6.es.html#v6-17\">Efesios 6:17</a>)."),
+    ("the noun stands once, Ephesians 6:18.", "the noun stands once, <a href=\"ephesians-6.html#v6-18\">Ephesians 6:18</a>."),
+    ("el sustantivo está una vez, Efesios 6:18.", "el sustantivo está una vez, <a href=\"ephesians-6.es.html#v6-18\">Efesios 6:18</a>."),
+])
+
+XREFS.extend([
+    (("Exodus", 20, 11), ("Ephesians", 6, 2), "honor your father and mother"),
+    (("Deuteronomy", 5, 15), ("Ephesians", 6, 3), "that it may go well with you"),
+    (("Matthew", 15, 4), ("Ephesians", 6, 2), "honor your father and mother"),
+    (("Romans", 10, 19), ("Ephesians", 6, 4), "provoke to anger"),
+    (("Ephesians", 5, 29), ("Ephesians", 6, 4), "bring up, nourish"),
+    (("1 Corinthians", 10, 11), ("Ephesians", 6, 4), "admonition"),
+    (("Galatians", 1, 10), ("Ephesians", 6, 6), "pleasing men, slaves of Christ"),
+    (("Romans", 2, 11), ("Ephesians", 6, 9), "no partiality"),
+    (("Galatians", 3, 28), ("Ephesians", 6, 8), "slave or free"),
+    (("Philemon", 1, 16), ("Ephesians", 6, 5), "slave and brother"),
+    (("Philippians", 4, 13), ("Ephesians", 6, 10), "empowered"),
+    (("Ephesians", 1, 19), ("Ephesians", 6, 10), "the might of his strength"),
+    (("Luke", 11, 22), ("Ephesians", 6, 11), "full armor"),
+    (("Romans", 13, 12), ("Ephesians", 6, 11), "the armor of light"),
+    (("Ephesians", 4, 14), ("Ephesians", 6, 11), "scheming"),
+    (("Ephesians", 3, 10), ("Ephesians", 6, 12), "rulers and authorities in the heavenly places"),
+    (("Ephesians", 5, 16), ("Ephesians", 6, 13), "the evil day"),
+    (("Romans", 10, 15), ("Ephesians", 6, 15), "the feet of those who announce good news"),
+    (("Ephesians", 2, 17), ("Ephesians", 6, 15), "the good news of peace"),
+    (("Ephesians", 3, 12), ("Ephesians", 6, 19), "boldness"),
+    (("2 Corinthians", 5, 20), ("Ephesians", 6, 20), "ambassadors"),
+    (("Acts", 28, 20), ("Ephesians", 6, 20), "this chain"),
+    (("Acts", 20, 4), ("Ephesians", 6, 21), "Tychicus"),
+    (("Ephesians", 1, 2), ("Ephesians", 6, 23), "grace and peace"),
+    (("1 Corinthians", 15, 42), ("Ephesians", 6, 24), "incorruption"),
+])
+
+CHAPTER_ART["eph6"] = [dict(
+    file="durer-knight-death-devil.jpg",
+    title="Knight, Death and the Devil",   title_es="El caballero, la muerte y el diablo",
+    artist="Albrecht Dürer",
+    year="1513",
+    location="Engraving; this impression in the Metropolitan Museum of Art, New York",
+    location_es="Grabado; esta estampa en el Metropolitan Museum of Art, Nueva York",
+    alt="Black-and-white engraving: a knight in full plate armor and a plumed helmet rides a heavy horse to the left through a rocky "
+        "ravine, a lance over his shoulder and a sword at his side, a dog running beneath the horse. Beside him Death, a crowned, "
+        "decaying figure on a pale horse, holds up an hourglass; behind him a horned, pig-snouted devil holds a halberd. A skull lies "
+        "on a ledge at lower left beside a tablet with the date 1513 and Dürer&rsquo;s monogram, and a walled town stands on the hill above.",
+    note="&#9888; A knight in full armor rides on past Death and the devil without looking at them, the posture of <a href=\"ephesians-6.html#v6-13\">verse 13</a>, &lsquo;having done everything, to stand.&rsquo; The engraving is often read beside Erasmus&rsquo;s <em>Handbook of the Christian Soldier</em>; whether Dürer meant that is argued among historians of art.",
+    note_es="&#9888; Un caballero con armadura completa sigue adelante junto a la Muerte y el diablo sin mirarlos, la postura del <a href=\"ephesians-6.es.html#v6-13\">versículo 13</a>, «habiéndolo hecho todo, estar firmes». El grabado se lee a menudo junto al <em>Manual del caballero cristiano</em> de Erasmo; si Dürer lo quiso así lo discuten los historiadores del arte.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Knight,_Death_and_the_Devil_MET_DP159049.jpg",
+)]
+
+CHRON_CHAPTERS["eph6"] = dict(era='apostolic',
+    when="The household instructions end with children and parents and with slaves and masters, both under one Master in the heavens; then the full armor of God, drawn from Isaiah, a request for prayer from 'an ambassador in a chain,' and Tychicus sent with the news.",
     clock="Undated by the text: the letter says Paul is a prisoner but not where, and its date and authorship are argued.")
