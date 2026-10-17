@@ -37277,3 +37277,141 @@ CHAPTER_ART["gal3"] = [dict(
 CHRON_CHAPTERS["gal3"] = dict(era='apostolic',
     when="Paul writes to the congregations of Galatia that the Spirit came to them by the hearing of faith, not by works of law, and argues from Abraham, who believed God, that the promise came 430 years before the law and that those who are Christ&rsquo;s are Abraham&rsquo;s seed.",
     clock="Undated by the text: Galatians names no year. Its date depends on which Galatia it was written to and which Jerusalem visit chapter 2 describes, both argued. The chapter&rsquo;s own number, 430 years from the promise to the law, is a count of the past, not a date for the letter.")
+
+# ---- Galatians 4 ------------------------------------------------------------
+DICTIONARY.append(("stoicheion", "stoicheion", "στοιχεῖον", "stoicheion",
+    "AN ELEMENT, A FIRST PRINCIPLE &mdash; a thing set in a row: in ordinary Greek the letters of the alphabet, the elements of "
+    "matter, the first principles of a subject. &#9888; It stands in seven verses of the New Testament: <a href=\"galatians-4.html#v3\">Galatians 4:3</a> and <a href=\"galatians-4.html#v9\">4:9</a>, "
+    "&lsquo;the elements of the world&rsquo; and &lsquo;the weak and poor elements&rsquo;; Colossians 2:8 and 2:20, again &lsquo;of the "
+    "world&rsquo;; Hebrews 5:12, the first elements of God&rsquo;s sayings; and 2 Peter 3:10 and 3:12, the elements that burn and melt "
+    "(those five not yet on these pages). In Galatians and Colossians it is argued whether Paul means elementary principles or the "
+    "powers thought to rule the elements and the stars; the library reports both and does not choose. KJV &lsquo;the elements of the "
+    "world,&rsquo; ASV &lsquo;the rudiments of the world,&rsquo; NWT 1984 &lsquo;the elementary things belonging to the world,&rsquo; NIV "
+    "&lsquo;the elemental spiritual forces of the world.&rsquo;",
+    ("Galatians", 4, 3)))
+DICTIONARY_ES["stoicheion"] = ("stoicheion",
+    "UN ELEMENTO, UN PRIMER PRINCIPIO &mdash; algo puesto en fila: en el griego corriente las letras del alfabeto, los elementos de la "
+    "materia, los primeros principios de una materia. &#9888; Está en siete versículos del Nuevo Testamento: <a href=\"galatians-4.es.html#v3\">Gálatas 4:3</a> y <a href=\"galatians-4.es.html#v9\">4:9</a>, «los "
+    "elementos del mundo» y «los elementos débiles y pobres»; Colosenses 2:8 y 2:20, otra vez «del mundo»; Hebreos 5:12, los primeros "
+    "elementos de los dichos de Dios; y 2 Pedro 3:10 y 3:12, los elementos que arden y se funden (esos cinco todavía no en estas "
+    "páginas). En Gálatas y Colosenses se discute si Pablo se refiere a principios elementales o a los poderes que se creía que regían "
+    "los elementos y los astros; la biblioteca informa de las dos lecturas y no elige. RV60 «los rudimentos del mundo», NVI «los "
+    "principios de este mundo», TNM 1987 «las cosas elementales que pertenecen al mundo».")
+
+DICTIONARY.append(("allegoreo", "allēgoreō", "ἀλληγορέω", "allēgoreō",
+    "TO SPEAK ALLEGORICALLY &mdash; <em>allos</em>, other, and <em>agoreuō</em>, to speak in public: to say one thing and mean another. "
+    "The English word &lsquo;allegory&rsquo; comes from it. &#9888; It stands in one verse of the New Testament, <a href=\"galatians-4.html#v24\">Galatians 4:24</a>: &lsquo;These "
+    "things are said allegorically: for these women are two covenants.&rsquo; Whether what Paul does with Hagar and Sarah is allegory in "
+    "the strict sense or the matching of a past story to a present one is argued; the word is his. KJV &lsquo;Which things are an "
+    "allegory,&rsquo; NWT 1984 &lsquo;These things stand as a symbolic drama,&rsquo; NIV &lsquo;These things are being taken "
+    "figuratively.&rsquo;",
+    ("Galatians", 4, 24)))
+DICTIONARY_ES["allegoreo"] = ("allēgoreō",
+    "HABLAR EN ALEGORÍA &mdash; <em>allos</em>, otro, y <em>agoreuō</em>, hablar en público: decir una cosa y significar otra. De ella "
+    "viene la palabra «alegoría». &#9888; Está en un solo versículo del Nuevo Testamento, <a href=\"galatians-4.es.html#v24\">Gálatas 4:24</a>: «Estas cosas se dicen en alegoría: "
+    "porque estas mujeres son dos pactos». Si lo que Pablo hace con Agar y Sara es alegoría en sentido estricto o el emparejar una "
+    "historia pasada con una presente se discute; la palabra es suya. RV60 «Lo cual es una alegoría», TNM 1987 «Estas cosas quedan "
+    "como un drama simbólico», NVI «Ese relato puede interpretarse en sentido figurado».")
+
+DICTIONARY.append(("odino", "ōdinō", "ὠδίνω", "ōdinō",
+    "TO BE IN LABOR, to suffer the pains of giving birth. &#9888; The verb stands in three verses of the New Testament: <a href=\"galatians-4.html#v19\">Galatians 4:19</a>, where "
+    "Paul is the mother, &lsquo;my children, over whom I am in labor again until Christ is formed in you&rsquo;; <a href=\"galatians-4.html#v27\">4:27</a>, quoting "
+    "Isaiah 54:1, &lsquo;you who are not in labor&rsquo;; and <a href=\"revelation-12.html#v12-2\">Revelation 12:2</a>, the woman &lsquo;in labor and in agony to give birth.&rsquo; "
+    "The noun <em>ōdin</em> is the &lsquo;birth pangs&rsquo; of <a href=\"mark-13.html#v13-8\">Mark 13:8</a> and <a href=\"acts-2.html#v2-24\">Acts 2:24</a>, &lsquo;the birth pangs of death&rsquo;; the compound "
+    "<em>synōdinō</em> is the creation that &lsquo;travails together&rsquo; at <a href=\"romans-8.html#v8-22\">Romans 8:22</a>. KJV &lsquo;of whom I travail in birth again,&rsquo; "
+    "NIV &lsquo;for whom I am again in the pains of childbirth,&rsquo; NWT 1984 &lsquo;with whom I am again in childbirth pains.&rsquo;",
+    ("Galatians", 4, 19)))
+DICTIONARY_ES["odino"] = ("ōdinō",
+    "ESTAR DE PARTO, sufrir los dolores de dar a luz. &#9888; El verbo está en tres versículos del Nuevo Testamento: <a href=\"galatians-4.es.html#v19\">Gálatas 4:19</a>, donde "
+    "Pablo es la madre, «hijos míos, por quienes otra vez sufro dolores de parto hasta que Cristo sea formado en ustedes»; <a href=\"galatians-4.es.html#v27\">4:27</a>, "
+    "que cita Isaías 54:1, «tú que no tienes dolores de parto»; y <a href=\"revelation-12.es.html#v12-2\">Apocalipsis 12:2</a>, la mujer que «clama con los dolores de parto». El "
+    "sustantivo <em>ōdin</em> son los «dolores de parto» de <a href=\"mark-13.es.html#v13-8\">Marcos 13:8</a> y de <a href=\"acts-2.es.html#v2-24\">Hechos 2:24</a>, «los dolores de parto de la muerte»; el compuesto "
+    "<em>synōdinō</em> es la creación que «está de parto juntamente» en <a href=\"romans-8.es.html#v8-22\">Romanos 8:22</a>. RV60 «por quienes vuelvo a sufrir dolores de parto», "
+    "TNM 1987 «por quienes vuelvo a estar en dolores de parto», NVI «por quienes vuelvo a sufrir dolores de parto».")
+
+
+_gal3_fix([
+    ("the girl with a Python spirit, and Galatians 4:22, 4:23, 4:30 and 4:31 (not yet on these pages)",
+     "the girl with a Python spirit, and <a href=\"galatians-4.html#v22\">Galatians 4:22</a>, <a href=\"galatians-4.html#v23\">4:23</a>, <a href=\"galatians-4.html#v30\">4:30</a> and <a href=\"galatians-4.html#v31\">4:31</a>, Hagar in Paul&rsquo;s allegory"),
+    ("la muchacha con un espíritu Pitón, y Gálatas 4:22, 4:23, 4:30 y 4:31 (todavía no en estas páginas)",
+     "la muchacha con un espíritu Pitón, y <a href=\"galatians-4.es.html#v22\">Gálatas 4:22</a>, <a href=\"galatians-4.es.html#v23\">4:23</a>, <a href=\"galatians-4.es.html#v30\">4:30</a> y <a href=\"galatians-4.es.html#v31\">4:31</a>, Agar en la alegoría de Pablo"),
+    ("a bodily illness (Galatians 4:13&ndash;15, not yet on these pages, is read as an eye disease)",
+     "a bodily illness (<a href=\"galatians-4.html#v13\">Galatians 4:13</a>&ndash;15 is read as an eye disease)"),
+    ("una enfermedad del cuerpo (Gálatas 4:13&ndash;15, todavía no en estas páginas, se lee como una enfermedad de la vista)",
+     "una enfermedad del cuerpo (<a href=\"galatians-4.es.html#v13\">Gálatas 4:13</a>&ndash;15 se lee como una enfermedad de la vista)"),
+    ("curse for us&rsquo;; Galatians 4:5, &lsquo;to buy out those under law&rsquo;; and Ephesians 5:16 and Colossians 4:5, &lsquo;buying "
+     "out the time&rsquo; (those three not yet on these pages).",
+     "curse for us&rsquo;; <a href=\"galatians-4.html#v5\">Galatians 4:5</a>, &lsquo;to buy out those under law&rsquo;; and Ephesians 5:16 and Colossians 4:5, &lsquo;buying "
+     "out the time&rsquo; (those two not yet on these pages)."),
+    ("Gálatas 4:5, «para comprar y sacar a los que estaban bajo ley»; y Efesios 5:16 y Colosenses 4:5, "
+     "«comprando el tiempo» (esos tres todavía no en estas páginas).",
+     "<a href=\"galatians-4.es.html#v5\">Gálatas 4:5</a>, «para comprar y sacar a los que estaban bajo ley»; y Efesios 5:16 y Colosenses 4:5, "
+     "«comprando el tiempo» (esos dos todavía no en estas páginas)."),
+])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"hagar": [("Galatians", 4, 24), ("Galatians", 4, 25)], "isaac": [("Galatians", 4, 28)],
+            "abraham": [("Galatians", 4, 22)], "arabia": [("Galatians", 4, 25)],
+            "mount-sinai": [("Galatians", 4, 24), ("Galatians", 4, 25)]}.get(_e["slug"])
+    if _add:
+        _e["refs"] = list(_e.get("refs", [])) + [r for r in _add if r not in _e.get("refs", [])]
+    if _e["slug"] == "hagar":
+        _e["desc"] += (" &#9888; In Galatians 4 Paul reads her story &lsquo;allegorically&rsquo; (<a href=\"galatians-4.html#v24\">Galatians 4:24</a>): Hagar is the covenant "
+                       "from Mount Sinai, bearing children for slavery, and Sarah&rsquo;s &lsquo;Drive out this slave-woman and her "
+                       "son&rsquo; (21:10) is quoted as &lsquo;what the Scripture says&rsquo; (<a href=\"galatians-4.html#v30\">4:30</a>). Genesis itself goes on: God "
+                       "hears the boy and promises Hagar, &lsquo;I will make him into a great nation&rsquo; (21:18).")
+    if _e["slug"] == "arabia":
+        _e["desc"] += (" At <a href=\"galatians-4.html#v25\">Galatians 4:25</a> Paul places Mount Sinai &lsquo;in Arabia,&rsquo; and some read Hagar&rsquo;s descendants there; "
+                       "the Latin Vulgate&rsquo;s text of that verse leaves Hagar&rsquo;s name out.")
+
+ENCYCLOPEDIA_ES["hagar"] = ("Agar",
+    "La esclava egipcia de Sarai, dada a Abram como madre sustituta (Génesis 16:1-3). Cuando huye, el ángel de Jehová &mdash;el primero "
+    "de la Biblia&mdash; la encuentra en el camino del desierto de vuelta a Egipto: es la primera persona de la Biblia a la que él visita, "
+    "la única mujer de Génesis que recibe directamente de Dios la promesa de una descendencia que no se podrá contar (16:10), y la única "
+    "persona de la Biblia que da un nombre a Dios: El Roí, «el Dios que me ve» (16:13). Su historia sigue en Génesis 21 (Génesis todavía "
+    "no en español en estas páginas). &#9888; En Gálatas 4 Pablo lee su historia «en alegoría» (<a href=\"galatians-4.es.html#v24\">Gálatas 4:24</a>): Agar es el pacto del monte "
+    "Sinaí, que da a luz hijos para la esclavitud, y el «Echa fuera a esta esclava y a su hijo» de Sara (21:10) se cita como «lo que dice "
+    "la Escritura» (<a href=\"galatians-4.es.html#v30\">4:30</a>). Génesis mismo sigue adelante: Dios oye al muchacho y le promete a Agar: «haré de él una gran nación» "
+    "(21:18).")
+
+XREFS.extend([
+    (("Galatians", 3, 24), ("Galatians", 4, 2), "child-minder, then guardians and stewards"),
+    (("Matthew", 20, 8), ("Galatians", 4, 2), "epitropos: steward, guardian"),
+    (("1 Corinthians", 4, 1), ("Galatians", 4, 2), "stewards"),
+    (("Galatians", 3, 13), ("Galatians", 4, 5), "buy out from the law"),
+    (("Mark", 14, 36), ("Galatians", 4, 6), "Abba, Father"),
+    (("Romans", 8, 17), ("Galatians", 4, 7), "if children, also heirs"),
+    (("1 Corinthians", 8, 3), ("Galatians", 4, 9), "known by God"),
+    (("Romans", 14, 5), ("Galatians", 4, 10), "one day above another"),
+    (("1 Corinthians", 9, 21), ("Galatians", 4, 12), "became as one outside the law"),
+    (("2 Corinthians", 12, 7), ("Galatians", 4, 13), "the thorn, and the weakness of the flesh"),
+    (("Acts", 16, 6), ("Galatians", 4, 13), "the first visit to the Galatian country"),
+    (("2 Corinthians", 11, 2), ("Galatians", 4, 17), "zealous over you"),
+    (("Revelation", 12, 2), ("Galatians", 4, 19), "in labor to give birth"),
+    (("Genesis", 16, 15), ("Galatians", 4, 22), "Hagar bore Abram a son"),
+    (("Genesis", 21, 2), ("Galatians", 4, 22), "Sarah bore Abraham a son"),
+    (("Galatians", 1, 17), ("Galatians", 4, 25), "Arabia"),
+    (("Revelation", 21, 2), ("Galatians", 4, 26), "the Jerusalem from above"),
+    (("Genesis", 21, 9), ("Galatians", 4, 29), "Ishmael 'laughing', read as persecution"),
+    (("Genesis", 21, 10), ("Galatians", 4, 30), "Drive out the slave-woman and her son"),
+    (("Romans", 9, 7), ("Galatians", 4, 28), "in Isaac shall seed be called"),
+    (("Romans", 11, 1), ("Galatians", 4, 30), "God has not pushed away his people"),
+])
+
+CHAPTER_ART["gal4"] = [dict(
+    file="dore-abraham-sends-hagar-away.jpg",
+    title="Abraham Sends Hagar and Ishmael Away",        title_es="Abraham despide a Agar y a Ismael",
+    artist="Gustave Doré",
+    year="1866",
+    location="Wood engraving, from Doré’s illustrated Bible",
+    location_es="Grabado en madera, de la Biblia ilustrada de Doré",
+    alt="Black-and-white engraving: in a flat desert under a pale sky, a tall young woman walks toward the viewer with a large two-handled jar raised on her shoulder and her eyes lowered, a curly-haired boy clinging to her robe. Behind her an old bearded man with a long staff points away with his outstretched arm, and further back, by a tent, a seated woman holds a small child on her lap.",
+    note="&#9888; <a href=\"galatians-4.html#v30\">Verse 30</a> quotes the words that start this scene: &lsquo;Drive out this slave-woman and her son&rsquo; (<a href=\"genesis-21.html#v21-10\">Genesis 21:10</a>). Genesis has Abraham give Hagar bread and &lsquo;a skin of water&rsquo; (<a href=\"genesis-21.html#v21-14\">21:14</a>); Doré draws a jar. The woman holding a child by the tent would be Sarah with Isaac. Paul makes the scene an allegory; Genesis goes on to God hearing the boy in the wilderness (<a href=\"genesis-21.html#v21-17\">21:17</a>).",
+    note_es="&#9888; El <a href=\"galatians-4.es.html#v30\">versículo 30</a> cita las palabras con que empieza esta escena: «Echa fuera a esta esclava y a su hijo» (Génesis 21:10, ya en estas páginas, todavía no en español). Génesis cuenta que Abraham dio a Agar pan y «un odre de agua» (21:14); Doré dibuja un cántaro. La mujer que sostiene a un niño junto a la tienda sería Sara con Isaac. Pablo convierte la escena en alegoría; Génesis sigue con Dios que oye al muchacho en el desierto (21:17).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:014.Abraham_Sends_Hagar_and_Ishmael_Away.jpg",
+)]
+
+CHRON_CHAPTERS["gal4"] = dict(era='apostolic',
+    when="Paul tells the Galatians that the heir under guardians has come of age in Christ, that God sent his Son, born of a woman, and the Spirit crying &lsquo;Abba! Father!&rsquo;; he recalls how they first received him in his weakness, and reads Hagar and Sarah as two covenants.",
+    clock="Undated by the text: Galatians names no year. &lsquo;The first time&rsquo; at 4:13 implies at least two visits to Galatia, but which visits, and so the letter&rsquo;s date, is argued.")
