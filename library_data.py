@@ -39944,3 +39944,173 @@ CHRON_CHAPTERS["1ti3"] = dict(era='apostolic',
     when="The overseer and the servants, and what each must be; 'women likewise'; the household of God, a pillar and mainstay of the truth; and the six-line confession 'great is the mystery of godliness.'",
     clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
 
+# ---- 1 Timothy 4 -----------------------------------------------------------
+DICTIONARY.append(('rhetos', 'rhētōs', 'ῥητῶς', 'rhētōs',
+    'EXPRESSLY, in so many words &mdash; an adverb from <em>rh&#275;tos</em>, &lsquo;stated, spoken.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-1">1 Timothy 4:1</a>, &lsquo;the Spirit says expressly that in later times some will fall away from the faith.&rsquo; KJV &lsquo;expressly&rsquo;; NWT 1984 &lsquo;definitely.&rsquo;',
+    ('1 Timothy', 4, 1)))
+DICTIONARY_ES['rhetos'] = ('rhētṓs',
+    'EXPRESAMENTE, con todas las letras &mdash; un adverbio de <em>rh&#275;tos</em>, «dicho, declarado». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-1">1 Timoteo 4:1</a>, «el Espíritu dice expresamente que en tiempos posteriores algunos se apartarán de la fe». RV60 «claramente»; RV 1909 «manifiestamente».')
+
+DICTIONARY.append(('pseudologos', 'pseudologos', 'ψευδολόγος', 'pseudologos',
+    'SPEAKING LIES, a liar &mdash; <em>pseudos</em>, &lsquo;a lie,&rsquo; and <em>leg&#333;</em>, &lsquo;to speak.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-2">1 Timothy 4:2</a>, &lsquo;through the hypocrisy of liars.&rsquo; KJV &lsquo;Speaking lies in hypocrisy&rsquo;; NIV &lsquo;hypocritical liars.&rsquo;',
+    ('1 Timothy', 4, 2)))
+DICTIONARY_ES['pseudologos'] = ('pseudológos',
+    'QUE DICE MENTIRAS, mentiroso &mdash; <em>pseudos</em>, «mentira», y <em>leg&#333;</em>, «hablar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-2">1 Timoteo 4:2</a>, «por la hipocresía de mentirosos». RV60 «de mentirosos»; RV 1909 «hablarán mentira».')
+
+DICTIONARY.append(('kausteriazo', 'kaustēriazō', 'καυστηριάζω', 'kaustēriazō',
+    'TO BRAND or to SEAR with a hot iron &mdash; from <em>kaust&#275;rion</em>, a branding iron. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-2">1 Timothy 4:2</a>, &lsquo;branded in their own conscience,&rsquo; where the Byzantine copies spell it <em>kaut&#275;riaz&#333;</em>, the word behind &lsquo;cauterize.&rsquo; Readers take it as a conscience seared until it feels nothing, or as one branded like a slave&rsquo;s or a criminal&rsquo;s. KJV &lsquo;seared with a hot iron&rsquo;; ASV &lsquo;branded in their own conscience as with a hot iron.&rsquo;',
+    ('1 Timothy', 4, 2)))
+DICTIONARY_ES['kausteriazo'] = ('kaustēriázō',
+    'MARCAR o CAUTERIZAR con hierro candente &mdash; de <em>kaust&#275;rion</em>, el hierro de marcar. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-2">1 Timoteo 4:2</a>, «marcados a fuego en su propia conciencia», donde las copias bizantinas lo escriben <em>kaut&#275;riaz&#333;</em>, la palabra detrás de «cauterizar». Los lectores lo entienden como una conciencia cauterizada hasta no sentir nada, o como una marcada como la de un esclavo o un criminal. RV60 «teniendo cauterizada la conciencia»; TNM 1987 «marcados en su conciencia como si fuera con hierro de marcar».')
+
+DICTIONARY.append(('metalempsis', 'metalēmpsis', 'μετάλημψις', 'metalēmpsis',
+    'PARTAKING, taking a share &mdash; from <em>metalamban&#333;</em>, &lsquo;to receive a share of.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-3">1 Timothy 4:3</a>, foods &lsquo;which God created to be partaken of with thanksgiving.&rsquo; KJV &lsquo;to be received with thanksgiving&rsquo;; NWT 1984 &lsquo;to be partaken of with thanksgiving.&rsquo;',
+    ('1 Timothy', 4, 3)))
+DICTIONARY_ES['metalempsis'] = ('metálēmpsis',
+    'EL TOMAR PARTE, el recibir una porción &mdash; de <em>metalamban&#333;</em>, «recibir una parte de». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-3">1 Timoteo 4:3</a>, alimentos «que Dios creó para que los tomen con acción de gracias». RV60 «para que con acción de gracias participasen de ellos»; TNM 1987 «para que participen de ellos con acción de gracias».')
+
+DICTIONARY.append(('ktisma', 'ktisma', 'κτίσμα', 'ktisma',
+    'A CREATED THING, a creature &mdash; from <em>ktiz&#333;</em>, &lsquo;to create.&rsquo; &#9888; It stands in four verses of the New Testament: <a href="1-timothy-4.html#v4-4">1 Timothy 4:4</a>, &lsquo;everything created by God is good&rsquo;; <a href="james-1.html#v18">James 1:18</a>, &lsquo;a kind of firstfruits of his creatures&rsquo;; and <a href="revelation-5.html#v5-13">Revelation 5:13</a> and <a href="revelation-8.html#v8-9">Revelation 8:9</a>, the creatures of heaven, earth and sea. KJV at 1 Timothy 4:4 &lsquo;every creature of God is good&rsquo;; NIV &lsquo;everything God created is good.&rsquo;',
+    ('1 Timothy', 4, 4)))
+DICTIONARY_ES['ktisma'] = ('ktísma',
+    'UNA COSA CREADA, una criatura &mdash; de <em>ktiz&#333;</em>, «crear». &#9888; Está en cuatro versículos del Nuevo Testamento: <a href="1-timothy-4.es.html#v4-4">1 Timoteo 4:4</a>, «todo lo creado por Dios es bueno»; <a href="james-1.es.html#v18">Santiago 1:18</a>, «una especie de primicias de sus criaturas»; y <a href="revelation-5.es.html#v5-13">Apocalipsis 5:13</a> y <a href="revelation-8.es.html#v8-9">Apocalipsis 8:9</a>, las criaturas del cielo, de la tierra y del mar. RV60 en 1 Timoteo 4:4 «todo lo que Dios creó es bueno»; TNM 1987 «toda creación de Dios es excelente».')
+
+DICTIONARY.append(('enteuxis', 'enteuxis', 'ἔντευξις', 'enteuxis',
+    'AN APPEAL, an intercession, a prayer &mdash; from <em>entynchan&#333;</em>, &lsquo;to meet with, to make a petition to.&rsquo; &#9888; It stands in two verses of the New Testament, both in this letter: <a href="1-timothy-2.html#v2-1">1 Timothy 2:1</a>, &lsquo;petitions, prayers, intercessions and thanksgivings,&rsquo; and <a href="1-timothy-4.html#v4-5">1 Timothy 4:5</a>, food &lsquo;sanctified through the word of God and prayer.&rsquo; KJV &lsquo;intercessions&rsquo; at 2:1 and &lsquo;prayer&rsquo; at 4:5.',
+    ('1 Timothy', 2, 1)))
+DICTIONARY_ES['enteuxis'] = ('énteuxis',
+    'UNA PETICIÓN, una intercesión, una oración &mdash; de <em>entynchan&#333;</em>, «encontrarse con, presentar una petición a». &#9888; Está en dos versículos del Nuevo Testamento, los dos en esta carta: <a href="1-timothy-2.es.html#v2-1">1 Timoteo 2:1</a>, «peticiones, oraciones, intercesiones y acciones de gracias», y <a href="1-timothy-4.es.html#v4-5">1 Timoteo 4:5</a>, el alimento «santificado por medio de la palabra de Dios y la oración». RV60 «peticiones» en 2:1 y «oración» en 4:5.')
+
+DICTIONARY.append(('entrepho', 'entrephō', 'ἐντρέφω', 'entrephō',
+    'TO NOURISH, to bring up in &mdash; <em>en</em> and <em>treph&#333;</em>, &lsquo;to feed, to rear.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-6">1 Timothy 4:6</a>, &lsquo;nourished on the words of the faith and of the good teaching.&rsquo; KJV &lsquo;nourished up in the words of faith&rsquo;; NWT 1984 &lsquo;one nourished with the words of the faith.&rsquo;',
+    ('1 Timothy', 4, 6)))
+DICTIONARY_ES['entrepho'] = ('entréphō',
+    'NUTRIR, criar en &mdash; <em>en</em> y <em>treph&#333;</em>, «alimentar, criar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-6">1 Timoteo 4:6</a>, «nutrido con las palabras de la fe y de la buena enseñanza». RV60 «nutrido con las palabras de la fe»; RV 1909 «criado en las palabras de la fe».')
+
+DICTIONARY.append(('parakoloutheo', 'parakoloutheō', 'παρακολουθέω', 'parakoloutheō',
+    'TO FOLLOW CLOSELY, to accompany, to trace step by step &mdash; <em>para</em>, &lsquo;beside,&rsquo; and <em>akolouthe&#333;</em>, &lsquo;to follow.&rsquo; &#9888; It stands in four verses of the New Testament: the signs that will &lsquo;accompany&rsquo; believers at <a href="mark-16.html#v16-17">Mark 16:17</a>; Luke&rsquo;s &lsquo;having followed all things closely&rsquo; at <a href="luke-1.html#v3">Luke 1:3</a>; the teaching Timothy &lsquo;has followed closely&rsquo; at <a href="1-timothy-4.html#v4-6">1 Timothy 4:6</a>; and 2 Timothy 3:10 (not yet on these pages). KJV at 1 Timothy 4:6 &lsquo;whereunto thou hast attained&rsquo;; NWT 1984 &lsquo;which you have followed closely.&rsquo;',
+    ('1 Timothy', 4, 6)))
+DICTIONARY_ES['parakoloutheo'] = ('parakolouthéō',
+    'SEGUIR DE CERCA, acompañar, rastrear paso a paso &mdash; <em>para</em>, «junto a», y <em>akolouthe&#333;</em>, «seguir». &#9888; Está en cuatro versículos del Nuevo Testamento: las señales que «acompañarán» a los creyentes en <a href="mark-16.es.html#v16-17">Marcos 16:17</a>; el «habiéndolo investigado todo con cuidado» de Lucas en <a href="luke-1.es.html#v3">Lucas 1:3</a>; la enseñanza que Timoteo «ha seguido de cerca» en <a href="1-timothy-4.es.html#v4-6">1 Timoteo 4:6</a>; y 2 Timoteo 3:10 (todavía no en estas páginas). RV60 en 1 Timoteo 4:6 «que has seguido»; TNM 1987 «que has seguido con sumo cuidado y atención».')
+
+DICTIONARY.append(('graodes', 'graōdēs', 'γραώδης', 'graōdēs',
+    'OLD-WOMANISH, fit for old women &mdash; from <em>graus</em>, &lsquo;an old woman.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-7">1 Timothy 4:7</a>, &lsquo;the profane myths that old women tell,&rsquo; a sneer at tales fit for the nursery. KJV &lsquo;old wives&rsquo; fables&rsquo;; NIV &lsquo;old wives&rsquo; tales.&rsquo;',
+    ('1 Timothy', 4, 7)))
+DICTIONARY_ES['graodes'] = ('graṓdēs',
+    'DE VIEJAS, propio de mujeres viejas &mdash; de <em>graus</em>, «mujer vieja». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-7">1 Timoteo 4:7</a>, «los mitos profanos que cuentan las viejas», una burla de cuentos buenos para la cuna. RV60 «las fábulas profanas y de viejas»; TNM 1987 «los cuales las viejas cuentan».')
+
+DICTIONARY.append(('gymnasia', 'gymnasia', 'γυμνασία', 'gymnasia',
+    'TRAINING, exercise &mdash; from <em>gymnaz&#333;</em>, &lsquo;to train,&rsquo; the verb of the gymnasium, where athletes trained naked, <em>gymnos</em>. &#9888; The noun stands in one verse of the New Testament, <a href="1-timothy-4.html#v4-8">1 Timothy 4:8</a>, &lsquo;bodily training is of profit for a little,&rsquo; beside the verb in <a href="1-timothy-4.html#v4-7">1 Timothy 4:7</a>, &lsquo;train yourself for godliness.&rsquo; KJV &lsquo;bodily exercise&rsquo;; NWT 1984 &lsquo;bodily training.&rsquo;',
+    ('1 Timothy', 4, 8)))
+DICTIONARY_ES['gymnasia'] = ('gymnasía',
+    'ENTRENAMIENTO, ejercicio &mdash; de <em>gymnaz&#333;</em>, «entrenar», el verbo del gimnasio, donde los atletas se entrenaban desnudos, <em>gymnos</em>. &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-timothy-4.es.html#v4-8">1 Timoteo 4:8</a>, «el entrenamiento corporal es provechoso para poco», junto al verbo en <a href="1-timothy-4.es.html#v4-7">1 Timoteo 4:7</a>, «entrénate para la piedad». RV60 «el ejercicio corporal»; TNM 1987 «el entrenamiento corporal».')
+
+DICTIONARY.append(('neotes', 'neotēs', 'νεότης', 'neotēs',
+    'YOUTH &mdash; from <em>neos</em>, &lsquo;new, young.&rsquo; &#9888; It stands in four verses of the New Testament: the rich man&rsquo;s &lsquo;from my youth&rsquo; at <a href="mark-10.html#v10-20">Mark 10:20</a> and <a href="luke-18.html#v18-21">Luke 18:21</a>, Paul&rsquo;s &lsquo;from youth&rsquo; at <a href="acts-26.html#v26-4">Acts 26:4</a>, and Timothy&rsquo;s youth at <a href="1-timothy-4.html#v4-12">1 Timothy 4:12</a>, which no one is to look down on. KJV &lsquo;Let no man despise thy youth.&rsquo;',
+    ('1 Timothy', 4, 12)))
+DICTIONARY_ES['neotes'] = ('neótēs',
+    'JUVENTUD &mdash; de <em>neos</em>, «nuevo, joven». &#9888; Está en cuatro versículos del Nuevo Testamento: el «desde mi juventud» del hombre rico en <a href="mark-10.es.html#v10-20">Marcos 10:20</a> y <a href="luke-18.es.html#v18-21">Lucas 18:21</a>, el «desde la juventud» de Pablo en <a href="acts-26.es.html#v26-4">Hechos 26:4</a>, y la juventud de Timoteo en <a href="1-timothy-4.es.html#v4-12">1 Timoteo 4:12</a>, que no ha de ser tenida en poco. RV60 «Ninguno tenga en poco tu juventud».')
+
+DICTIONARY.append(('hagneia', 'hagneia', 'ἁγνεία', 'hagneia',
+    'PURITY, chastity &mdash; the noun of <em>hagnos</em>, &lsquo;pure&rsquo;; the verb <em>hagniz&#333;</em> is a separate entry. &#9888; It stands in two verses of the New Testament, both in this letter: <a href="1-timothy-4.html#v4-12">1 Timothy 4:12</a>, &lsquo;in love, in faith, in purity,&rsquo; and 1 Timothy 5:2, of how Timothy is to treat younger women (not yet on these pages). KJV &lsquo;purity&rsquo;; NWT 1984 &lsquo;chasteness.&rsquo;',
+    ('1 Timothy', 4, 12)))
+DICTIONARY_ES['hagneia'] = ('hagneía',
+    'PUREZA, castidad &mdash; el sustantivo de <em>hagnos</em>, «puro»; el verbo <em>hagniz&#333;</em> es una entrada aparte. &#9888; Está en dos versículos del Nuevo Testamento, los dos en esta carta: <a href="1-timothy-4.es.html#v4-12">1 Timoteo 4:12</a>, «en amor, en fe, en pureza», y 1 Timoteo 5:2, de cómo ha de tratar Timoteo a las mujeres jóvenes (todavía no en estas páginas). RV60 «pureza»; TNM 1987 «castidad».')
+
+DICTIONARY.append(('anagnosis', 'anagnōsis', 'ἀνάγνωσις', 'anagnōsis',
+    'READING, reading aloud &mdash; from <em>anagin&#333;sk&#333;</em>, &lsquo;to read.&rsquo; &#9888; It stands in three verses of the New Testament: the synagogue&rsquo;s &lsquo;reading of the Law and the Prophets&rsquo; at <a href="acts-13.html#v13-15">Acts 13:15</a>, the reading of the old covenant at <a href="2-corinthians-3.html#v14">2 Corinthians 3:14</a>, and <a href="1-timothy-4.html#v4-13">1 Timothy 4:13</a>, &lsquo;pay attention to the reading,&rsquo; reading aloud to the gathered congregation. KJV &lsquo;give attendance to reading&rsquo;; NIV &lsquo;the public reading of Scripture.&rsquo;',
+    ('Acts', 13, 15)))
+DICTIONARY_ES['anagnosis'] = ('anágnōsis',
+    'LECTURA, lectura en voz alta &mdash; de <em>anagin&#333;sk&#333;</em>, «leer». &#9888; Está en tres versículos del Nuevo Testamento: «la lectura de la Ley y de los Profetas» de la sinagoga en <a href="acts-13.es.html#v13-15">Hechos 13:15</a>, la lectura del antiguo pacto en <a href="2-corinthians-3.es.html#v14">2 Corintios 3:14</a>, y <a href="1-timothy-4.es.html#v4-13">1 Timoteo 4:13</a>, «presta atención a la lectura», la lectura en voz alta ante la congregación reunida. RV60 «ocúpate en la lectura»; NVI «la lectura pública de las Escrituras».')
+
+DICTIONARY.append(('meletao', 'meletaō', 'μελετάω', 'meletaō',
+    'TO WORK AT, to give careful thought to, to practise; and so also to plan or plot &mdash; from <em>melet&#275;</em>, &lsquo;care, practice.&rsquo; &#9888; It is the verb of &lsquo;the peoples plot empty things&rsquo; at <a href="acts-4.html#v4-25">Acts 4:25</a>, quoting Psalm 2:1, and of <a href="1-timothy-4.html#v4-15">1 Timothy 4:15</a>, &lsquo;Work at these things.&rsquo; KJV at 1 Timothy 4:15 &lsquo;Meditate upon these things,&rsquo; after the Vulgate&rsquo;s <em>meditare</em>; ASV &lsquo;Be diligent in these things.&rsquo;',
+    ('1 Timothy', 4, 15)))
+DICTIONARY_ES['meletao'] = ('meletáō',
+    'TRABAJAR EN, pensar con cuidado, practicar; y así también tramar &mdash; de <em>melet&#275;</em>, «cuidado, práctica». &#9888; Es el verbo de «los pueblos tramaron cosas vacías» en <a href="acts-4.es.html#v4-25">Hechos 4:25</a>, que cita el Salmo 2:1, y de <a href="1-timothy-4.es.html#v4-15">1 Timoteo 4:15</a>, «Trabaja en estas cosas». RV 1909 «Medita estas cosas», tras el <em>meditare</em> de la Vulgata; RV60 «Ocúpate en estas cosas».')
+
+DICTIONARY.append(('prokope', 'prokopē', 'προκοπή', 'prokopē',
+    'PROGRESS, advance &mdash; from <em>prokopt&#333;</em>, &lsquo;to go forward, to advance.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;the advance of the gospel&rsquo; at <a href="philippians-1.html#v12">Philippians 1:12</a>, the Philippians&rsquo; progress in the faith at <a href="philippians-1.html#v25">Philippians 1:25</a>, and Timothy&rsquo;s progress, to be &lsquo;evident to all,&rsquo; at <a href="1-timothy-4.html#v4-15">1 Timothy 4:15</a>. KJV &lsquo;that thy profiting may appear to all&rsquo;; ASV &lsquo;that thy progress may be manifest unto all.&rsquo;',
+    ('Philippians', 1, 12)))
+DICTIONARY_ES['prokope'] = ('prokopḗ',
+    'PROGRESO, avance &mdash; de <em>prokopt&#333;</em>, «avanzar, ir adelante». &#9888; Está en tres versículos del Nuevo Testamento: «el avance del evangelio» en <a href="philippians-1.es.html#v12">Filipenses 1:12</a>, el progreso de los filipenses en la fe en <a href="philippians-1.es.html#v25">Filipenses 1:25</a>, y el progreso de Timoteo, que ha de ser «manifiesto a todos», en <a href="1-timothy-4.es.html#v4-15">1 Timoteo 4:15</a>. RV60 «para que tu aprovechamiento sea manifiesto a todos»; TNM 1987 «para que tu adelantamiento sea manifiesto a todos».')
+
+ENCYCLOPEDIA.append(dict(slug='irenaeus', name='Irenaeus of Lyon', kind='person', aliases=['Irenaeus'], refs=[('1 Timothy', 4, 3)], videos=[],
+    desc='A Christian teacher and writer of the second century, born in Asia Minor, who as a young man in Smyrna heard Polycarp, and who became bishop of Lyon in Gaul after the persecution there of 177; he died about 200. &#9888; His <em>Against Heresies</em>, written about 180 in five books, sets out and answers the Gnostic teachers of his day. In book 1 (1.28.1) he describes the Encratites, the &lsquo;self-controlled,&rsquo; springing from Saturninus and Marcion, who &lsquo;preached against marriage&rsquo; and among whom some &lsquo;introduced abstinence from animal food,&rsquo; the two rules named at <a href="1-timothy-4.html#v4-3">1 Timothy 4:3</a>; he calls this ingratitude to the God who made all things.'))
+ENCYCLOPEDIA_ES['irenaeus'] = ('Ireneo de Lyon',
+    'Un maestro y escritor cristiano del siglo II, nacido en Asia Menor, que de joven escuchó a Policarpo en Esmirna, y que llegó a ser obispo de Lyon, en la Galia, después de la persecución de 177 en esa ciudad; murió hacia el año 200. &#9888; Su <em>Contra las herejías</em>, escrita hacia el 180 en cinco libros, expone y responde a los maestros gnósticos de su tiempo. En el libro 1 (1.28.1) describe a los encratitas, los «continentes», surgidos de Saturnino y Marción, que «predicaban contra el matrimonio» y entre los cuales algunos «introdujeron la abstinencia de alimentos de origen animal», las dos reglas nombradas en <a href="1-timothy-4.es.html#v4-3">1 Timoteo 4:3</a>; él lo llama ingratitud hacia el Dios que hizo todas las cosas.')
+
+def _1ti4_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1ti4_fix([("The adjective appears once more in the New Testament, 'bodily training is of some use' (1 Timothy 4:8),", 'The adjective appears once more in the New Testament, \'bodily training is of profit for a little\' (<a href="1-timothy-4.html#v4-8">1 Timothy 4:8</a>),'), ('El adjetivo aparece una vez más en el Nuevo Testamento, «el ejercicio corporal es útil para poco» (1 Timoteo 4:8),', 'El adjetivo aparece una vez más en el Nuevo Testamento, «el entrenamiento corporal es provechoso para poco» (<a href="1-timothy-4.es.html#v4-8">1 Timoteo 4:8</a>),'), ('of the body that formally commissioned Paul and Timothy, laying its hands on Timothy (1 Timothy 4:14, not yet on these pages);', 'of the congregation&rsquo;s body of elders that laid its hands on Timothy (<a href="1-timothy-4.html#v4-14">1 Timothy 4:14</a>);'), ('del cuerpo que formalmente comisionó a Pablo y a Timoteo, imponiéndole las manos a Timoteo (1 Timoteo 4:14, todavía no en estas páginas);', 'del consejo de ancianos de la congregación que impuso las manos a Timoteo (<a href="1-timothy-4.es.html#v4-14">1 Timoteo 4:14</a>);')])
+
+XREFS.extend([
+    (("2 Thessalonians", 2, 3), ("1 Timothy", 4, 1), "the falling away"),
+    (("Titus", 1, 14), ("1 Timothy", 4, 1), "paying attention to"),
+    (("1 Timothy", 1, 19), ("1 Timothy", 4, 2), "conscience"),
+    (("Colossians", 2, 21), ("1 Timothy", 4, 3), "do not taste"),
+    (("1 Corinthians", 7, 1), ("1 Timothy", 4, 3), "not to touch a woman"),
+    (("Genesis", 1, 31), ("1 Timothy", 4, 4), "very good"),
+    (("Mark", 7, 19), ("1 Timothy", 4, 4), "all foods clean"),
+    (("Romans", 14, 6), ("1 Timothy", 4, 4), "gives thanks"),
+    (("1 Corinthians", 10, 30), ("1 Timothy", 4, 4), "partake with thanks"),
+    (("1 Timothy", 2, 1), ("1 Timothy", 4, 5), "intercessions, prayer"),
+    (("Luke", 1, 3), ("1 Timothy", 4, 6), "followed closely"),
+    (("1 Timothy", 3, 8), ("1 Timothy", 4, 6), "servant"),
+    (("Titus", 1, 14), ("1 Timothy", 4, 7), "myths"),
+    (("1 Corinthians", 9, 25), ("1 Timothy", 4, 8), "the athlete"),
+    (("1 Timothy", 3, 1), ("1 Timothy", 4, 9), "faithful is the saying"),
+    (("Romans", 15, 3), ("1 Timothy", 4, 10), "reproached"),
+    (("Galatians", 6, 10), ("1 Timothy", 4, 10), "especially"),
+    (("1 Corinthians", 16, 11), ("1 Timothy", 4, 12), "despise Timothy"),
+    (("Acts", 16, 2), ("1 Timothy", 4, 12), "young Timothy"),
+    (("Acts", 13, 15), ("1 Timothy", 4, 13), "the reading"),
+    (("1 Thessalonians", 5, 27), ("1 Timothy", 4, 13), "read aloud"),
+    (("1 Timothy", 1, 18), ("1 Timothy", 4, 14), "prophecies"),
+    (("2 Timothy", 1, 6), ("1 Timothy", 4, 14), "laying on of hands"),
+    (("Acts", 22, 5), ("1 Timothy", 4, 14), "body of elders"),
+    (("Philippians", 1, 25), ("1 Timothy", 4, 15), "progress"),
+    (("1 Corinthians", 9, 22), ("1 Timothy", 4, 16), "save some"),
+])
+
+CHAPTER_ART["1ti4"] = [dict(
+    file="drost-timothy-and-lois.jpg",
+    title="Timothy with his Grandmother Lois (also catalogued as The Prophetess Anna Teaching a Child)",   title_es="Timoteo con su abuela Loida (catalogado también como La profetisa Ana enseñando a un niño)",
+    artist="Willem Drost",
+    year="1650s",
+    location="Hermitage Museum, St. Petersburg",
+    location_es="Museo del Hermitage, San Petersburgo",
+    alt="An oil painting in warm browns and reds: an old woman in a dark hood and white collar sits with her arm around a fair-haired child, who leans "
+        "against her and reads from a small open book held in both hands while she looks down at the page.",
+    note="&#9888; The painting has carried two titles, and the reading is not certain: a grandmother, Lois, teaching young Timothy, or the prophetess Anna "
+         "with a child. Either way it shows the reading aloud and the youth of these verses: &lsquo;Let no one look down on your youth&rsquo; and &lsquo;pay "
+         "attention to the reading&rsquo; (<a href=\"1-timothy-4.html#v4-12\">verses 12&ndash;13</a>).",
+    note_es="&#9888; El cuadro ha llevado dos títulos, y la lectura no es segura: una abuela, Loida, que enseña al joven Timoteo, o la profetisa Ana con un "
+            "niño. De un modo u otro muestra la lectura en voz alta y la juventud de estos versículos: «Que nadie tenga en poco tu juventud» y «presta atención "
+            "a la lectura» (<a href=\"1-timothy-4.es.html#v4-12\">versículos 12&ndash;13</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Timothy-and-Lois.jpg",
+)]
+
+CHRON_CHAPTERS["1ti4"] = dict(era='apostolic',
+    when="Later times and teachers who forbid marriage and foods; 'everything created by God is good'; train yourself for godliness; the Savior of all people; Timothy's youth, the reading, and the gift given with the laying on of hands.",
+    clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
+
