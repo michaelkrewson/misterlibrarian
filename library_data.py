@@ -40258,3 +40258,123 @@ CHRON_CHAPTERS["1ti5"] = dict(era='apostolic',
     when="Older and younger men and women; honor for widows who are truly widows, and the list of widows; younger widows; double honor for elders who lead well, the ox and the worker's wages; accusations, the laying on of hands, and a little wine.",
     clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
 
+# ---- 1 Timothy 6 -----------------------------------------------------------
+DICTIONARY.append(('logomachia', 'logomachia', 'λογομαχία', 'logomachia',
+    'A WAR OF WORDS, a quarrel about words &mdash; <em>logos</em>, &lsquo;word,&rsquo; and <em>mach&#275;</em>, &lsquo;battle.&rsquo; &#9888; The noun stands in one verse of the New Testament, <a href="1-timothy-6.html#v6-4">1 Timothy 6:4</a>, the teacher &lsquo;sick with controversies and quarrels about words&rsquo;; its verb <em>logomache&#333;</em> is at 2 Timothy 2:14 (not yet on these pages). KJV &lsquo;strifes of words&rsquo;; NWT 1984 &lsquo;debates about words.&rsquo;',
+    ('1 Timothy', 6, 4)))
+DICTIONARY_ES['logomachia'] = ('logomachía',
+    'UNA GUERRA DE PALABRAS, una disputa sobre palabras &mdash; <em>logos</em>, «palabra», y <em>mach&#275;</em>, «batalla». &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-timothy-6.es.html#v6-4">1 Timoteo 6:4</a>, el maestro «enfermo de controversias y disputas de palabras»; su verbo <em>logomache&#333;</em> está en 2 Timoteo 2:14 (todavía no en estas páginas). RV60 «contiendas de palabras»; TNM 1987 «debates acerca de palabras».')
+
+DICTIONARY.append(('porismos', 'porismos', 'πορισμός', 'porismos',
+    'A MEANS OF GAIN, a source of profit &mdash; from <em>poriz&#333;</em>, &lsquo;to provide, to procure.&rsquo; &#9888; It stands in two verses of the New Testament, side by side: <a href="1-timothy-6.html#v6-5">1 Timothy 6:5</a>, teachers &lsquo;who suppose that godliness is a means of gain,&rsquo; and <a href="1-timothy-6.html#v6-6">1 Timothy 6:6</a>, &lsquo;But godliness with contentment is great gain&rsquo; &mdash; the word turned from money to what money cannot buy. KJV &lsquo;supposing that gain is godliness&rsquo;; ASV &lsquo;supposing that godliness is a way of gain.&rsquo;',
+    ('1 Timothy', 6, 5)))
+DICTIONARY_ES['porismos'] = ('porismós',
+    'UN MEDIO DE GANANCIA, una fuente de provecho &mdash; de <em>poriz&#333;</em>, «proveer, procurar». &#9888; Está en dos versículos del Nuevo Testamento, uno junto al otro: <a href="1-timothy-6.es.html#v6-5">1 Timoteo 6:5</a>, maestros «que piensan que la piedad es un medio de ganancia», y <a href="1-timothy-6.es.html#v6-6">1 Timoteo 6:6</a>, «Pero la piedad con contentamiento es gran ganancia» &mdash;la palabra vuelta del dinero a lo que el dinero no puede comprar&mdash;. RV60 «que toman la piedad como fuente de ganancia»; RV 1909 «que tienen la piedad por granjería».')
+
+DICTIONARY.append(('autarkeia', 'autarkeia', 'αὐτάρκεια', 'autarkeia',
+    'CONTENTMENT, self-sufficiency, having enough &mdash; <em>autos</em>, &lsquo;self,&rsquo; and <em>arke&#333;</em>, &lsquo;to suffice.&rsquo; In Greek moral teaching it was the Stoic and Cynic ideal of needing nothing outside oneself. &#9888; The noun stands in two verses of the New Testament: <a href="2-corinthians-9.html#v8">2 Corinthians 9:8</a>, &lsquo;complete sufficiency in everything,&rsquo; and <a href="1-timothy-6.html#v6-6">1 Timothy 6:6</a>, &lsquo;godliness with contentment is great gain&rsquo;; its adjective is Paul&rsquo;s &lsquo;I myself have learned, in whatever circumstances I am, to be self-sufficient&rsquo; at <a href="philippians-4.html#v4-11">Philippians 4:11</a>. KJV at 1 Timothy 6:6 &lsquo;contentment&rsquo;; NWT 1984 &lsquo;self-sufficiency.&rsquo;',
+    ('1 Timothy', 6, 6)))
+DICTIONARY_ES['autarkeia'] = ('autárkeia',
+    'CONTENTAMIENTO, suficiencia propia, tener lo bastante &mdash; <em>autos</em>, «uno mismo», y <em>arke&#333;</em>, «bastar». En la enseñanza moral griega era el ideal estoico y cínico de no necesitar nada fuera de uno mismo. &#9888; El sustantivo está en dos versículos del Nuevo Testamento: <a href="2-corinthians-9.es.html#v8">2 Corintios 9:8</a> y <a href="1-timothy-6.es.html#v6-6">1 Timoteo 6:6</a>, «la piedad con contentamiento es gran ganancia»; su adjetivo es el de Pablo, «he aprendido a ser autosuficiente en cualesquiera circunstancias en que esté», en <a href="philippians-4.es.html#v4-11">Filipenses 4:11</a>. RV60 en 1 Timoteo 6:6 «contentamiento»; TNM 1987 «autosuficiencia».')
+
+DICTIONARY.append(('philargyria', 'philargyria', 'φιλαργυρία', 'philargyria',
+    'THE LOVE OF MONEY &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>argyros</em>, &lsquo;silver.&rsquo; &#9888; The noun stands in one verse of the New Testament, <a href="1-timothy-6.html#v6-10">1 Timothy 6:10</a>, &lsquo;the love of money is a root of all evils&rsquo;; its adjective <em>philargyros</em> is the Pharisees &lsquo;who loved money&rsquo; at <a href="luke-16.html#v16-14">Luke 16:14</a> and the &lsquo;lovers of money&rsquo; of 2 Timothy 3:2 (not yet on these pages), and its opposite, &lsquo;not a lover of money,&rsquo; is asked of the overseer at <a href="1-timothy-3.html#v3-3">1 Timothy 3:3</a>. Polycarp opens the fourth chapter of his letter to the Philippians with the line. KJV &lsquo;the love of money is the root of all evil&rsquo;; ASV &lsquo;a root of all kinds of evil.&rsquo;',
+    ('1 Timothy', 6, 10)))
+DICTIONARY_ES['philargyria'] = ('philargyría',
+    'EL AMOR AL DINERO &mdash; <em>philos</em>, «que ama», y <em>argyros</em>, «plata». &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-timothy-6.es.html#v6-10">1 Timoteo 6:10</a>, «el amor al dinero es una raíz de todos los males»; su adjetivo <em>philargyros</em> son los fariseos «que amaban el dinero» en <a href="luke-16.es.html#v16-14">Lucas 16:14</a> y los amantes del dinero de 2 Timoteo 3:2 (todavía no en estas páginas), y su contrario, «no amante del dinero», se pide al supervisor en <a href="1-timothy-3.es.html#v3-3">1 Timoteo 3:3</a>. Policarpo abre con esa línea el cuarto capítulo de su carta a los filipenses. RV60 «raíz de todos los males es el amor al dinero»; NVI «la raíz de toda clase de males».')
+
+DICTIONARY.append(('praupathia', 'praupathia', 'πραϋπαθία', 'praupathia',
+    'GENTLENESS, a gentle temper &mdash; <em>praus</em>, &lsquo;gentle,&rsquo; and <em>pathos</em>, &lsquo;feeling.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-6.html#v6-11">1 Timothy 6:11</a>, last in the list of what the man of God is to pursue, where the Byzantine text has the common <em>praot&#275;s</em>. KJV &lsquo;meekness&rsquo;; NWT 1984 &lsquo;mildness of temper.&rsquo;',
+    ('1 Timothy', 6, 11)))
+DICTIONARY_ES['praupathia'] = ('praüpathía',
+    'MANSEDUMBRE, un ánimo apacible &mdash; <em>praus</em>, «manso», y <em>pathos</em>, «sentimiento». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-6.es.html#v6-11">1 Timoteo 6:11</a>, la última de la lista de lo que el hombre de Dios ha de seguir, donde el texto bizantino tiene la palabra común <em>praot&#275;s</em>. RV60 «la mansedumbre»; TNM 1987 «la apacibilidad de genio».')
+
+DICTIONARY.append(('athanasia', 'athanasia', 'ἀθανασία', 'athanasia',
+    'IMMORTALITY, deathlessness &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>thanatos</em>, &lsquo;death.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="1-corinthians-15.html#v53">1 Corinthians 15:53</a> and <a href="1-corinthians-15.html#v54">1 Corinthians 15:54</a>, &lsquo;this mortal must put on immortality,&rsquo; a gift given at the resurrection, and <a href="1-timothy-6.html#v6-16">1 Timothy 6:16</a>, God &lsquo;who alone has immortality,&rsquo; his by nature. KJV &lsquo;Who only hath immortality&rsquo;; NWT 1984 &lsquo;the one alone having immortality.&rsquo;',
+    ('1 Timothy', 6, 16)))
+DICTIONARY_ES['athanasia'] = ('athanasía',
+    'INMORTALIDAD &mdash; <em>a-</em>, «no», y <em>thanatos</em>, «muerte». &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-corinthians-15.es.html#v53">1 Corintios 15:53</a> y <a href="1-corinthians-15.es.html#v54">1 Corintios 15:54</a>, «esto mortal tiene que vestirse de inmortalidad», un don dado en la resurrección, y <a href="1-timothy-6.es.html#v6-16">1 Timoteo 6:16</a>, Dios, «el único que tiene inmortalidad», suya por naturaleza. RV60 «el único que tiene inmortalidad».')
+
+DICTIONARY.append(('eumetadotos', 'eumetadotos', 'εὐμετάδοτος', 'eumetadotos',
+    'GENEROUS, ready to give &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>metadid&#333;mi</em>, &lsquo;to give a share.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-6.html#v6-18">1 Timothy 6:18</a>, of the rich, beside its partner <em>koin&#333;nikos</em>, &lsquo;ready to share,&rsquo; also found only there. KJV &lsquo;ready to distribute, willing to communicate&rsquo;; NWT 1984 &lsquo;to be liberal, ready to share.&rsquo;',
+    ('1 Timothy', 6, 18)))
+DICTIONARY_ES['eumetadotos'] = ('eumetádotos',
+    'GENEROSO, dispuesto a dar &mdash; <em>eu</em>, «bien», y <em>metadid&#333;mi</em>, «dar una parte». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-6.es.html#v6-18">1 Timoteo 6:18</a>, de los ricos, junto a su compañera <em>koin&#333;nikos</em>, «dispuesto a compartir», también solo allí. RV60 «dadivosos, generosos»; TNM 1987 «que sean liberales, listos para compartir».')
+
+DICTIONARY_ES['paratheke'] = ('parathḗkē',
+    'UN DEPÓSITO &mdash; algo puesto junto a otro para su custodia, de <em>paratith&#275;mi</em>, «poner al lado, confiar». En el derecho griego nombraba los bienes dejados con un depositario, que estaba obligado por honor y por juramento a devolverlos intactos y sin usar. &#9888; Las cartas PASTORALES lo hacen su imagen del evangelio: un bien recibido que ha de entregarse sin daño. Pablo está seguro de que Dios «es poderoso para guardar mi depósito hasta aquel día» (<a href="2-timothy-1.es.html#v12">2 Timoteo 1:12</a>), y enseguida dice a Timoteo: «guarda el buen depósito» (<a href="2-timothy-1.es.html#v14">2 Timoteo 1:14</a>; también <a href="1-timothy-6.es.html#v6-20">1 Timoteo 6:20</a>) &mdash;la palabra en los dos sentidos, lo que Pablo confía a Dios y lo que Dios confía a Pablo&mdash;. Es una de las imágenes más tempranas de la tradición como algo transmitido intacto más allá de la muerte de los apóstoles.')
+
+ENCYCLOPEDIA.append(dict(slug='marcion', name='Marcion', kind='person', aliases=['Marcion'], refs=[('1 Timothy', 6, 20)], videos=[],
+    desc='A Christian teacher of the second century from Sinope in Pontus, on the Black Sea, who came to Rome and broke with the congregation there, traditionally in 144. He taught that the God of the Law and the Prophets was not the Father of Jesus, and gathered his followers around a collection of an edited Gospel of Luke and ten letters of Paul. &#9888; His book <em>Antitheses</em> set the Law against the Gospel, as Tertullian describes it in <em>Against Marcion</em>; some readers hear it in &lsquo;the antitheses of what is falsely called knowledge&rsquo; at <a href="1-timothy-6.html#v6-20">1 Timothy 6:20</a>, and Tertullian adds that Marcion &lsquo;rejected the two epistles to Timothy and the one to Titus&rsquo; (<em>Against Marcion</em> 5.21).'))
+ENCYCLOPEDIA_ES['marcion'] = ('Marción',
+    'Un maestro cristiano del siglo II, de Sinope en el Ponto, junto al mar Negro, que llegó a Roma y rompió con la congregación de allí, según la tradición en el 144. Enseñó que el Dios de la Ley y los Profetas no era el Padre de Jesús, y reunió a sus seguidores en torno a una colección de un Evangelio de Lucas editado y diez cartas de Pablo. &#9888; Su libro <em>Antítesis</em> oponía la Ley al Evangelio, como lo describe Tertuliano en <em>Contra Marción</em>; algunos lectores lo oyen en «las antítesis de lo que falsamente se llama conocimiento» de <a href="1-timothy-6.es.html#v6-20">1 Timoteo 6:20</a>, y Tertuliano añade que Marción «rechazó las dos cartas a Timoteo y la de Tito» (<em>Contra Marción</em> 5.21).')
+
+def _1ti6_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1ti6_fix([("and 1 Timothy 6:12 its 'fight the good fight' (<em>agōnizou ton kalon agōna</em>, not yet on these pages)", 'and <a href="1-timothy-6.html#v6-12">1 Timothy 6:12</a> its \'fight the good fight\' (<em>agōnizou ton kalon agōna</em>)'), ('y a 1 Timoteo 6:12 su «pelea la buena batalla» (<em>agōnízou tòn kalòn agṓna</em>, todavía no en estas páginas)', 'y a <a href="1-timothy-6.es.html#v6-12">1 Timoteo 6:12</a> su «pelea la buena batalla» (<em>agōnízou tòn kalòn agṓna</em>)'), ('(<a href="luke-17.html#v17-33">Luke 17:33</a>, Acts 7:19 and 1 Timothy 6:13, not yet on these pages)', '(<a href="luke-17.html#v17-33">Luke 17:33</a>, <a href="acts-7.html#v7-19">Acts 7:19</a> and <a href="1-timothy-6.html#v6-13">1 Timothy 6:13</a>)'), ('(<a href="luke-17.es.html#v17-33">Lucas 17:33</a>, Hechos 7:19 y 1 Timoteo 6:13, todavía no en estas páginas)', '(<a href="luke-17.es.html#v17-33">Lucas 17:33</a>, <a href="acts-7.es.html#v7-19">Hechos 7:19</a> y <a href="1-timothy-6.es.html#v6-13">1 Timoteo 6:13</a>)'), ('at 1 Timothy 6:15 (not yet on these pages).', 'at <a href="1-timothy-6.html#v6-15">1 Timothy 6:15</a>.'), ('en 1 Timoteo 6:15 (todavía no en estas páginas).', 'en <a href="1-timothy-6.es.html#v6-15">1 Timoteo 6:15</a>.'), ('1 Timothy 6:4, of the false teacher; and 2 Timothy 3:4, in a list of the last days (these two not yet on these pages).', '<a href="1-timothy-6.html#v6-4">1 Timothy 6:4</a>, of the false teacher; and 2 Timothy 3:4, in a list of the last days (not yet on these pages).'), ('1 Timoteo 6:4, del falso maestro; y 2 Timoteo 3:4, en una lista de los últimos días (estos dos todavía no en estas páginas).', '<a href="1-timothy-6.es.html#v6-4">1 Timoteo 6:4</a>, del falso maestro; y 2 Timoteo 3:4, en una lista de los últimos días (todavía no en estas páginas).'), ('en Tito 2:13 y 1 Timoteo 6:14 (todavía no en estas páginas),', 'en Tito 2:13 (todavía no en estas páginas) y <a href="1-timothy-6.es.html#v6-14">1 Timoteo 6:14</a>,'), ("'until the appearing of our Lord', 1 Timothy 6:14)", '\'until the appearing of our Lord\', <a href="1-timothy-6.html#v6-14">1 Timothy 6:14</a>)'), ('the words of 1 Timothy 6:10 and 6:7 (not yet on these pages).', 'the words of <a href="1-timothy-6.html#v6-10">1 Timothy 6:10</a> and <a href="1-timothy-6.html#v6-7">6:7</a>.'), ('las palabras de 1 Timoteo 6:10 y 6:7 (todavía no en estas páginas).', 'las palabras de <a href="1-timothy-6.es.html#v6-10">1 Timoteo 6:10</a> y <a href="1-timothy-6.es.html#v6-7">6:7</a>.'), ('(1:14; also 1 Timothy 6:20)', '(1:14; also <a href="1-timothy-6.html#v6-20">1 Timothy 6:20</a>)'), ('1 Timothy 5:7</a>, and 6:14 (not yet on these pages).', '1 Timothy 5:7</a>, and <a href="1-timothy-6.html#v6-14">6:14</a>.'), ('1 Timoteo 5:7</a>, y 6:14 (todavía no en estas páginas).', '1 Timoteo 5:7</a>, y <a href="1-timothy-6.es.html#v6-14">6:14</a>.')])
+
+XREFS.extend([
+    (("Romans", 2, 24), ("1 Timothy", 6, 1), "the name of God blasphemed"),
+    (("1 Timothy", 1, 10), ("1 Timothy", 6, 1), "slave-traders"),
+    (("1 Corinthians", 7, 21), ("1 Timothy", 6, 1), "slave and free"),
+    (("Philemon", 1, 16), ("1 Timothy", 6, 2), "a beloved brother"),
+    (("Luke", 2, 29), ("1 Timothy", 6, 1), "Master"),
+    (("1 Timothy", 1, 3), ("1 Timothy", 6, 3), "a different doctrine"),
+    (("2 Corinthians", 9, 8), ("1 Timothy", 6, 6), "sufficiency"),
+    (("Philippians", 4, 11), ("1 Timothy", 6, 6), "self-sufficient"),
+    (("Job", 1, 21), ("1 Timothy", 6, 7), "naked I came"),
+    (("1 Timothy", 3, 7), ("1 Timothy", 6, 9), "the snare"),
+    (("Mark", 10, 23), ("1 Timothy", 6, 9), "those who have wealth"),
+    (("Luke", 16, 14), ("1 Timothy", 6, 10), "lovers of money"),
+    (("Deuteronomy", 33, 1), ("1 Timothy", 6, 11), "man of God"),
+    (("1 Corinthians", 9, 25), ("1 Timothy", 6, 12), "the contest"),
+    (("Luke", 17, 33), ("1 Timothy", 6, 13), "keep alive"),
+    (("John", 18, 37), ("1 Timothy", 6, 13), "testify before Pilate"),
+    (("1 Timothy", 1, 17), ("1 Timothy", 6, 16), "the only God"),
+    (("1 Corinthians", 15, 53), ("1 Timothy", 6, 16), "immortality"),
+    (("Exodus", 33, 20), ("1 Timothy", 6, 16), "no one can see God"),
+    (("Luke", 12, 21), ("1 Timothy", 6, 19), "rich toward God"),
+    (("2 Timothy", 1, 14), ("1 Timothy", 6, 20), "guard the deposit"),
+    (("1 Timothy", 1, 6), ("1 Timothy", 6, 21), "missed the mark"),
+])
+
+CHAPTER_ART["1ti6"] = [dict(
+    file="massys-moneylender-and-his-wife.jpg",
+    title="The Moneylender and his Wife",   title_es="El cambista y su mujer",
+    artist="Quentin Massys",
+    year="1514",
+    location="Louvre, Paris",
+    location_es="Museo del Louvre, París",
+    alt="A painting of a man and a woman seated side by side at a green table. He weighs gold coins on a small balance, a pile of coins in front of him; she, "
+        "in a red dress and white headdress, turns the page of an illuminated prayer book but looks across at the coins. A small round mirror on the table "
+        "reflects a window and a figure outside.",
+    note="&#9888; The wife&rsquo;s hand is on a book of devotions, and her eyes are on her husband&rsquo;s gold: &lsquo;those who suppose that godliness is a means "
+         "of gain&rsquo; and &lsquo;the love of money is a root of all evils&rsquo; (<a href=\"1-timothy-6.html#v6-5\">verses 5&ndash;10</a>).",
+    note_es="&#9888; La mano de la esposa está sobre un libro de devoción, y sus ojos sobre el oro de su marido: «que piensan que la piedad es un medio de "
+            "ganancia» y «el amor al dinero es una raíz de todos los males» (<a href=\"1-timothy-6.es.html#v6-5\">versículos 5&ndash;10</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Massysm_Quentin_%E2%80%94_The_Moneylender_and_his_Wife_%E2%80%94_1514.jpg",
+)]
+
+CHRON_CHAPTERS["1ti6"] = dict(era='apostolic',
+    when="Slaves and masters; the teacher sick with controversies; godliness with contentment and the love of money; the good fight, the good confession before Pontius Pilate, and the King of those who reign; a charge to the rich; guard the deposit.",
+    clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
+
