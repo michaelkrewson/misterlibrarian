@@ -39649,3 +39649,131 @@ CHRON_CHAPTERS["2th3"] = dict(era='apostolic',
     when="The letter closes: a request for prayer, a command to keep away from the disorderly, the rule that anyone not willing to work should not eat, and the greeting in Paul's own hand.",
     clock="Undated by the text; on the traditional reading, from Corinth soon after the first letter, c. AD 50–51; many scholars date the letter later.")
 
+# ---- 1 Timothy 2 -----------------------------------------------------------
+DICTIONARY.append(('authenteo', 'authenteō', 'αὐθεντέω', 'authenteō',
+    'TO HAVE DOMINION OVER, to act on one&rsquo;s own authority over someone &mdash; from <em>authent&#275;s</em>, one who acts by his own hand, a master. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-12">1 Timothy 2:12</a>, &lsquo;I do not permit a woman to teach or to have dominion over a man,&rsquo; and its meaning there is disputed. Readers take it as the ordinary exercise of authority or as a domineering or seized authority. The shelf shows the range: KJV and Geneva &lsquo;to usurp authority over the man,&rsquo; Douay &lsquo;to use authority,&rsquo; after the Vulgate&rsquo;s <em>dominari in virum</em>, ASV &lsquo;to have dominion over a man,&rsquo; NWT 1984 &lsquo;to exercise authority over a man,&rsquo; NIV &lsquo;to assume authority over a man&rsquo; (its 2011 wording; in 1984, <em>have authority</em>).',
+    ('1 Timothy', 2, 12)))
+DICTIONARY_ES['authenteo'] = ('authentéō',
+    'TENER DOMINIO SOBRE, actuar con autoridad propia sobre alguien &mdash; de <em>authent&#275;s</em>, el que actúa por su propia mano, un amo. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-12">1 Timoteo 2:12</a>, «No permito a la mujer enseñar ni tener dominio sobre el varón», y su sentido allí se discute. Los lectores lo entienden como el ejercicio ordinario de la autoridad o como una autoridad dominante o usurpada. El estante muestra el abanico: RV60 «ni ejercer dominio sobre el hombre», RV 1909 «ni tomar autoridad sobre el hombre», TNM 1987 «ni que ejerza autoridad sobre el hombre», la Vulgata <em>dominari in virum</em>.')
+
+DICTIONARY.append(('antilytron', 'antilytron', 'ἀντίλυτρον', 'antilytron',
+    'A RANSOM GIVEN IN EXCHANGE &mdash; <em>anti</em>, &lsquo;in place of, in exchange for,&rsquo; and <em>lytron</em>, &lsquo;ransom.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-6">1 Timothy 2:6</a>, &lsquo;who gave himself as a ransom for all,&rsquo; where Jesus&rsquo; saying at <a href="mark-10.html#v10-45">Mark 10:45</a> has &lsquo;a ransom in exchange for many&rsquo; with the plain <em>lytron</em> and a separate <em>anti</em>. KJV &lsquo;a ransom for all&rsquo;; Douay &lsquo;a redemption for all&rsquo;; NWT 1984 &lsquo;a corresponding ransom,&rsquo; the wording on which the Watchtower&rsquo;s teaching of a perfect man corresponding to the perfect Adam builds.',
+    ('1 Timothy', 2, 6)))
+DICTIONARY_ES['antilytron'] = ('antílytron',
+    'UN RESCATE DADO A CAMBIO &mdash; <em>anti</em>, «en lugar de, a cambio de», y <em>lytron</em>, «rescate». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-6">1 Timoteo 2:6</a>, «que se dio a sí mismo como rescate por todos», donde el dicho de Jesús en <a href="mark-10.es.html#v10-45">Marcos 10:45</a> tiene «rescate en cambio por muchos» con el simple <em>lytron</em> y un <em>anti</em> aparte. RV60 «en rescate por todos»; TNM 1987 «como rescate correspondiente», la redacción en que se apoya la enseñanza de la Watchtower de un hombre perfecto que corresponde al Adán perfecto.')
+
+DICTIONARY.append(('teknogonia', 'teknogonia', 'τεκνογονία', 'teknogonia',
+    'CHILDBEARING &mdash; <em>teknon</em>, &lsquo;child,&rsquo; and <em>gonos</em>, &lsquo;birth.&rsquo; &#9888; The noun stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-15">1 Timothy 2:15</a>, &lsquo;she will be saved through the childbearing,&rsquo; with the article; the verb <em>teknogone&#333;</em> is at 1 Timothy 5:14, of younger widows (not yet on these pages). Readers take the verse as saved through the birth of the promised Child, kept safe through childbirth, saved in the course of ordinary life, or saved even through the pain of Genesis 3:16. KJV &lsquo;she shall be saved in childbearing&rsquo;; NWT 1984 &lsquo;she will be kept safe through childbearing.&rsquo;',
+    ('1 Timothy', 2, 15)))
+DICTIONARY_ES['teknogonia'] = ('teknogonía',
+    'EL TENER HIJOS, el alumbramiento &mdash; <em>teknon</em>, «hijo», y <em>gonos</em>, «nacimiento». &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-15">1 Timoteo 2:15</a>, «se salvará por medio del alumbramiento», con artículo; el verbo <em>teknogone&#333;</em> está en 1 Timoteo 5:14, de las viudas jóvenes (todavía no en estas páginas). Los lectores entienden el versículo como salvada por el nacimiento del Hijo prometido, guardada a salvo en el parto, salvada en el curso de la vida ordinaria, o salvada aun a través del dolor de Génesis 3:16. RV60 «se salvará engendrando hijos»; TNM 1987 «a ella se le mantendrá en seguridad mediante el tener hijos».')
+
+DICTIONARY.append(('hesychios', 'hēsychios', 'ἡσύχιος', 'hēsychios',
+    'QUIET, tranquil &mdash; the adjective of <em>h&#275;sychia</em>, &lsquo;quietness&rsquo; (a separate entry). &#9888; It stands in two verses of the New Testament: <a href="1-timothy-2.html#v2-2">1 Timothy 2:2</a>, &lsquo;so that we may lead a calm and quiet life,&rsquo; a prayer for everyone, and 1 Peter 3:4, &lsquo;a gentle and quiet spirit&rsquo; (not yet on these pages). The same root is &lsquo;work quietly&rsquo; at <a href="2-thessalonians-3.html#v3-12">2 Thessalonians 3:12</a> and the &lsquo;quietness&rsquo; asked of a woman at <a href="1-timothy-2.html#v2-11">1 Timothy 2:11</a>. KJV &lsquo;a quiet and peaceable life&rsquo;; ASV &lsquo;a tranquil and quiet life.&rsquo;',
+    ('1 Timothy', 2, 2)))
+DICTIONARY_ES['hesychios'] = ('hēsýchios',
+    'TRANQUILO, sosegado &mdash; el adjetivo de <em>h&#275;sychia</em>, «quietud» (una entrada aparte). &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-timothy-2.es.html#v2-2">1 Timoteo 2:2</a>, «para que llevemos una vida tranquila y sosegada», una oración para todos, y 1 Pedro 3:4, «un espíritu afable y apacible» (todavía no en estas páginas). La misma raíz es «trabajando con tranquilidad» en <a href="2-thessalonians-3.es.html#v3-12">2 Tesalonicenses 3:12</a> y la «quietud» que se pide a la mujer en <a href="1-timothy-2.es.html#v2-11">1 Timoteo 2:11</a>. RV60 «para que vivamos quieta y reposadamente».')
+
+DICTIONARY.append(('eremos', 'ēremos', 'ἤρεμος', 'ēremos',
+    'CALM, still. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-2">1 Timothy 2:2</a>, &lsquo;so that we may lead a calm and quiet life,&rsquo; paired with its near neighbor <em>h&#275;sychios</em>, &lsquo;quiet.&rsquo; KJV &lsquo;a quiet and peaceable life&rsquo;; NWT 1984 &lsquo;a calm and quiet life.&rsquo;',
+    ('1 Timothy', 2, 2)))
+DICTIONARY_ES['eremos'] = ('ḗremos',
+    'TRANQUILO, en calma. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-2">1 Timoteo 2:2</a>, «para que llevemos una vida tranquila y sosegada», junto a su vecino cercano <em>h&#275;sychios</em>, «sosegado». RV60 «quieta y reposadamente»; TNM 1987 «una vida tranquila y quieta».')
+
+DICTIONARY.append(('sophrosyne', 'sōphrosynē', 'σωφροσύνη', 'sōphrosynē',
+    'SOUNDNESS OF MIND, good sense, self-command &mdash; from <em>s&#333;s</em>, &lsquo;sound,&rsquo; and <em>phr&#275;n</em>, &lsquo;mind&rsquo;; one of the virtues Greek moralists prized most. &#9888; It stands in three verses of the New Testament: Paul&rsquo;s &lsquo;words of truth and of a sound mind&rsquo; to Festus at <a href="acts-26.html#v26-25">Acts 26:25</a>, and <a href="1-timothy-2.html#v2-9">1 Timothy 2:9</a> and <a href="1-timothy-2.html#v2-15">1 Timothy 2:15</a>, of women. KJV at 2:9 &lsquo;sobriety&rsquo;; NWT 1984 &lsquo;soundness of mind.&rsquo;',
+    ('1 Timothy', 2, 9)))
+DICTIONARY_ES['sophrosyne'] = ('sōphrosýnē',
+    'SANO JUICIO, sensatez, dominio de sí &mdash; de <em>s&#333;s</em>, «sano», y <em>phr&#275;n</em>, «mente»; una de las virtudes más estimadas por los moralistas griegos. &#9888; Está en tres versículos del Nuevo Testamento: las «palabras de verdad y de sano juicio» de Pablo ante Festo en <a href="acts-26.es.html#v26-25">Hechos 26:25</a>, y <a href="1-timothy-2.es.html#v2-9">1 Timoteo 2:9</a> y <a href="1-timothy-2.es.html#v2-15">1 Timoteo 2:15</a>, de las mujeres. RV60 en 2:9 «modestia»; TNM 1987 «buen juicio».')
+
+DICTIONARY.append(('plegma', 'plegma', 'πλέγμα', 'plegma',
+    'SOMETHING WOVEN OR BRAIDED, braided hair &mdash; from <em>plek&#333;</em>, &lsquo;to plait,&rsquo; the verb of the crown of thorns. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-9">1 Timothy 2:9</a>, &lsquo;not with braided hair and gold or pearls or costly garments&rsquo;; 1 Peter 3:3 makes the same list with other words (not yet on these pages). KJV &lsquo;broided hair&rsquo;; NIV &lsquo;elaborate hairstyles.&rsquo;',
+    ('1 Timothy', 2, 9)))
+DICTIONARY_ES['plegma'] = ('plégma',
+    'ALGO TEJIDO O TRENZADO, la trenza &mdash; de <em>plek&#333;</em>, «trenzar», el verbo de la corona de espinas. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-9">1 Timoteo 2:9</a>, «no con trenzas, ni oro, ni perlas, ni vestidos costosos»; 1 Pedro 3:3 hace la misma lista con otras palabras (todavía no en estas páginas). RV60 «peinado ostentoso»; RV 1909 «cabellos encrespados».')
+
+DICTIONARY.append(('theosebeia', 'theosebeia', 'θεοσέβεια', 'theosebeia',
+    'REVERENCE FOR GOD &mdash; <em>theos</em>, &lsquo;God,&rsquo; and <em>sebomai</em>, &lsquo;to revere.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-2.html#v2-10">1 Timothy 2:10</a>, &lsquo;as is fitting for women who profess reverence for God, with good works&rsquo;; its adjective <em>theoseb&#275;s</em> is the &lsquo;devout&rsquo; of <a href="john-9.html#v9-31">John 9:31</a>. A near neighbor of <em>eusebeia</em>, &lsquo;godliness&rsquo; (a separate entry). KJV &lsquo;godliness&rsquo;; NWT 1984 &lsquo;to reverence God.&rsquo;',
+    ('1 Timothy', 2, 10)))
+DICTIONARY_ES['theosebeia'] = ('theosébeia',
+    'REVERENCIA A DIOS &mdash; <em>theos</em>, «Dios», y <em>sebomai</em>, «venerar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-2.es.html#v2-10">1 Timoteo 2:10</a>, «como corresponde a mujeres que profesan reverencia a Dios, con buenas obras»; su adjetivo <em>theoseb&#275;s</em> es el «piadoso» de <a href="john-9.es.html#v9-31">Juan 9:31</a>. Vecino cercano de <em>eusebeia</em>, «piedad» (una entrada aparte). RV60 «piedad»; TNM 1987 «reverenciar a Dios».')
+
+DICTIONARY.append(('hypotage', 'hypotagē', 'ὑποταγή', 'hypotagē',
+    'SUBMISSION, subjection &mdash; the noun of <em>hypotass&#333;</em>, to place under. &#9888; Paul uses it of his refusal to yield to false brothers, &lsquo;to them we did not yield in submission even for an hour,&rsquo; at <a href="galatians-2.html#v5">Galatians 2:5</a>, of the Corinthians&rsquo; &lsquo;submission to the good news&rsquo; at <a href="2-corinthians-9.html#v13">2 Corinthians 9:13</a>, and at <a href="1-timothy-2.html#v2-11">1 Timothy 2:11</a>, &lsquo;Let a woman learn in quietness, in all submission,&rsquo; where the verse does not say to whom; it returns of an overseer&rsquo;s children at 1 Timothy 3:4. KJV &lsquo;with all subjection&rsquo;; NWT 1984 &lsquo;with full submissiveness.&rsquo;',
+    ('1 Timothy', 2, 11)))
+DICTIONARY_ES['hypotage'] = ('hypotagḗ',
+    'SUMISIÓN, sujeción &mdash; el sustantivo de <em>hypotass&#333;</em>, poner debajo. &#9888; Pablo lo usa de su negativa a ceder ante los falsos hermanos, «ni por una hora cedimos sometiéndonos», en <a href="galatians-2.es.html#v5">Gálatas 2:5</a>, de la sumisión de los corintios al evangelio en <a href="2-corinthians-9.es.html#v13">2 Corintios 9:13</a>, y en <a href="1-timothy-2.es.html#v2-11">1 Timoteo 2:11</a>, «Que la mujer aprenda en quietud, con toda sumisión», donde el versículo no dice a quién; vuelve de los hijos del supervisor en 1 Timoteo 3:4. RV60 «con toda sujeción»; TNM 1987 «con plena sumisión».')
+
+DICTIONARY_ES['eusebeia'] = ('eusébeia',
+    'PIEDAD, devoción &mdash; la reverencia bien dirigida, de <em>eu</em>, «bien», y <em>sebomai</em>, «adorar, venerar». En el griego más amplio nombraba la honra debida a los dioses, a los padres y a la ciudad. &#9888; Las cartas PASTORALES la hacen casi un término técnico de la vida cristiana como devoción ordenada y visible &mdash;una palabra casi ausente del Pablo indiscutido y presente en todas partes aquí: «con toda piedad y dignidad» en <a href="1-timothy-2.es.html#v2-2">1 Timoteo 2:2</a>; «grande es el misterio de la piedad» en 1 Timoteo 3:16; «la piedad acompañada de contentamiento» en 1 Timoteo 6:6; Tito 1:1, una verdad «que es conforme a la piedad»&mdash;. Su prominencia es una de las marcas que distinguen a las tres cartas: la religión descrita menos como fe contada por justicia que como una reverencia asentada y obediente que se muestra en la conducta. 2 Timoteo 3:5 advierte contra los que tienen «apariencia de piedad» pero niegan su poder.')
+
+def _1ti2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1ti2_fix([('and 1 Timothy 2:11 and 2:12 (these two not yet on these pages).', 'and <a href="1-timothy-2.html#v2-11">1 Timothy 2:11</a> and <a href="1-timothy-2.html#v2-12">2:12</a>.'), ('y 1 Timoteo 2:11 y 2:12 (estos dos todavía no en estas páginas).', 'y <a href="1-timothy-2.es.html#v2-11">1 Timoteo 2:11</a> y <a href="1-timothy-2.es.html#v2-12">2:12</a>.'), ('Galatians 3:19</a>, and 1 Timothy 2:14, Hebrews 2:2 and 9:15 (those three not yet on these pages).', 'Galatians 3:19</a>, and <a href="1-timothy-2.html#v2-14">1 Timothy 2:14</a>; and Hebrews 2:2 and 9:15 (these two not yet on these pages).'), ('Gálatas 3:19</a>, y 1 Timoteo 2:14, Hebreos 2:2 y 9:15 (estos tres todavía no en estas páginas).', 'Gálatas 3:19</a>, y <a href="1-timothy-2.es.html#v2-14">1 Timoteo 2:14</a>; y Hebreos 2:2 y 9:15 (estos dos todavía no en estas páginas).'), ('2 Thessalonians 2:13</a>; and 1 Timothy 2:15 and Hebrews 12:14 (these two not yet on these pages).', '2 Thessalonians 2:13</a>; <a href="1-timothy-2.html#v2-15">1 Timothy 2:15</a>; and Hebrews 12:14 (not yet on these pages).'), ('2 Tesalonicenses 2:13</a>; y 1 Timoteo 2:15 y Hebreos 12:14 (estos dos todavía no en estas páginas).', '2 Tesalonicenses 2:13</a>; <a href="1-timothy-2.es.html#v2-15">1 Timoteo 2:15</a>; y Hebreos 12:14 (todavía no en estas páginas).'), ('and 1 Timothy 2:14 (the last not yet on these pages);', 'and <a href="1-timothy-2.html#v2-14">1 Timothy 2:14</a>;'), ('y 1 Timoteo 2:14 (este último todavía no en estas páginas);', 'y <a href="1-timothy-2.es.html#v2-14">1 Timoteo 2:14</a>;'), ('and 1 Timothy 2:13 (&lsquo;Adam was formed first&rsquo;; not yet on these pages).', 'and <a href="1-timothy-2.html#v2-13">1 Timothy 2:13</a> (&lsquo;Adam was formed first&rsquo;).'), ('y 1 Timoteo 2:13 («Adán fue formado primero»; todavía no en estas páginas).', 'y <a href="1-timothy-2.es.html#v2-13">1 Timoteo 2:13</a> («Adán fue formado primero»).'), ('Philippians 4:6</a>, 1 Timothy 2:1 and 5:5, Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last five not yet on these pages).', 'Philippians 4:6</a>, <a href="1-timothy-2.html#v2-1">1 Timothy 2:1</a>, and 1 Timothy 5:5, Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last four not yet on these pages).'), ('Filipenses 4:6</a>, 1 Timoteo 2:1 y 5:5, Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos cinco últimos todavía no en estas páginas).', 'Filipenses 4:6</a>, <a href="1-timothy-2.es.html#v2-1">1 Timoteo 2:1</a>, y 1 Timoteo 5:5, Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos cuatro últimos todavía no en estas páginas).'), ('&lsquo;a mediator is not of one, but God is one&rsquo;; 1 Timothy 2:5; and Hebrews 8:6, 9:15 and 12:24, the mediator of a better and a new covenant (those four not yet on these pages).', '&lsquo;a mediator is not of one, but God is one&rsquo;; <a href="1-timothy-2.html#v2-5">1 Timothy 2:5</a>, &lsquo;one mediator between God and humans&rsquo;; and Hebrews 8:6, 9:15 and 12:24, the mediator of a better and a new covenant (these three not yet on these pages).'), ('«el mediador no es de uno solo, pero Dios es uno»; 1 Timoteo 2:5; y Hebreos 8:6, 9:15 y 12:24, el mediador de un pacto mejor y nuevo (esos cuatro todavía no en estas páginas).', '«el mediador no es de uno solo, pero Dios es uno»; <a href="1-timothy-2.es.html#v2-5">1 Timoteo 2:5</a>, «un solo mediador entre Dios y los seres humanos»; y Hebreos 8:6, 9:15 y 12:24, el mediador de un pacto mejor y nuevo (esos tres todavía no en estas páginas).')])
+
+XREFS.extend([
+    (("Jeremiah", 29, 7), ("1 Timothy", 2, 2), "pray for the city"),
+    (("Romans", 13, 1), ("1 Timothy", 2, 2), "the governing authorities"),
+    (("2 Thessalonians", 3, 12), ("1 Timothy", 2, 2), "quiet"),
+    (("1 Timothy", 1, 1), ("1 Timothy", 2, 3), "God our Savior"),
+    (("Deuteronomy", 6, 4), ("1 Timothy", 2, 5), "one God"),
+    (("1 Corinthians", 8, 6), ("1 Timothy", 2, 5), "one God"),
+    (("Galatians", 3, 20), ("1 Timothy", 2, 5), "mediator"),
+    (("Mark", 10, 45), ("1 Timothy", 2, 6), "ransom"),
+    (("2 Timothy", 1, 11), ("1 Timothy", 2, 7), "herald, apostle, teacher"),
+    (("Romans", 9, 1), ("1 Timothy", 2, 7), "I am not lying"),
+    (("1 Corinthians", 1, 2), ("1 Timothy", 2, 8), "in every place"),
+    (("John", 9, 31), ("1 Timothy", 2, 10), "devout"),
+    (("Luke", 10, 39), ("1 Timothy", 2, 11), "learning at the feet"),
+    (("1 Corinthians", 14, 34), ("1 Timothy", 2, 12), "women silent"),
+    (("Acts", 18, 26), ("1 Timothy", 2, 12), "Priscilla teaching"),
+    (("Genesis", 2, 7), ("1 Timothy", 2, 13), "formed"),
+    (("Genesis", 3, 13), ("1 Timothy", 2, 14), "the serpent deceived me"),
+    (("2 Corinthians", 11, 3), ("1 Timothy", 2, 14), "Eve deceived"),
+    (("Romans", 5, 12), ("1 Timothy", 2, 14), "through one man"),
+    (("Genesis", 3, 15), ("1 Timothy", 2, 15), "the offspring"),
+    (("Genesis", 3, 16), ("1 Timothy", 2, 15), "pain in childbirth"),
+])
+
+CHAPTER_ART["1ti2"] = [dict(
+    file="priscilla-catacomb-orans-woman.jpg",
+    title="A woman praying with lifted hands (orans), Catacomb of Priscilla",   title_es="Una mujer en oración con las manos levantadas (orante), catacumba de Priscila",
+    artist="Unknown painter, Rome; reproduced from a photograph by Joseph Wilpert in Walter Lowrie, Monuments of the Early Church (1906)",
+    year="3rd century",
+    location="Catacomb of Priscilla, Rome",
+    location_es="Catacumba de Priscila, Roma",
+    alt="A black-and-white book reproduction of a wall painting: a veiled woman in a long tunic with wide sleeves stands facing the viewer with both arms "
+        "raised and palms open, the early Christian posture of prayer. A printed caption below reads that it is an orans from the Catacomb of Priscilla, third "
+        "century.",
+    note="&#9888; Early Christians prayed standing with their arms raised and their hands open, the posture called <em>orans</em>, &lsquo;praying&rsquo;; here a "
+         "woman prays so in a Roman catacomb. &lsquo;So I want the men to pray in every place, lifting up holy hands&rsquo; "
+         "(<a href=\"1-timothy-2.html#v2-8\">verse 8</a>).",
+    note_es="&#9888; Los primeros cristianos oraban de pie con los brazos levantados y las manos abiertas, la postura llamada <em>orans</em>, «orante»; aquí ora "
+            "así una mujer en una catacumba romana. «Quiero, pues, que los varones oren en todo lugar, levantando manos santas» "
+            "(<a href=\"1-timothy-2.es.html#v2-8\">versículo 8</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Consecrated_Virgin,_praying_with_Orans_position,_wearing_dalmatic,_tunic,_and_veil,_from_the_Catacomb_of_Priscilla,_3rd_century_AD,_cropped_sharpened.jpg",
+)]
+
+CHRON_CHAPTERS["1ti2"] = dict(era='apostolic',
+    when="Prayer for all people and for kings; one God and one mediator, a ransom for all; then men at prayer, women's dress, and the disputed instruction on women learning, teaching and authority.",
+    clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
+
