@@ -40378,3 +40378,152 @@ CHRON_CHAPTERS["1ti6"] = dict(era='apostolic',
     when="Slaves and masters; the teacher sick with controversies; godliness with contentment and the love of money; the good fight, the good confession before Pontius Pilate, and the King of those who reign; a charge to the rich; guard the deposit.",
     clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
 
+# ---- 2 Timothy 2 -----------------------------------------------------------
+DICTIONARY.append(('synkakopatheo', 'synkakopatheō', 'συγκακοπαθέω', 'synkakopatheō',
+    'TO SUFFER HARDSHIP ALONG WITH someone &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>kakopathe&#333;</em>, &lsquo;to suffer hardship.&rsquo; &#9888; It stands in two verses of the New Testament, both in 2 Timothy: <a href="2-timothy-1.html#v8">2 Timothy 1:8</a>, &lsquo;suffer along with me for the gospel,&rsquo; and <a href="2-timothy-2.html#v2-3">2 Timothy 2:3</a>, &lsquo;Suffer along with me as a good soldier of Christ Jesus,&rsquo; where the Byzantine text has the simple verb. ASV &lsquo;Suffer hardship with me&rsquo;; NIV &lsquo;Join with me in suffering.&rsquo;',
+    ('2 Timothy', 1, 8)))
+DICTIONARY_ES['synkakopatheo'] = ('synkakopathéō',
+    'SUFRIR PENALIDADES JUNTO CON alguien &mdash; <em>syn</em>, «con», y <em>kakopathe&#333;</em>, «sufrir penalidades». &#9888; Está en dos versículos del Nuevo Testamento, los dos en 2 Timoteo: <a href="2-timothy-1.es.html#v8">2 Timoteo 1:8</a>, «sufre conmigo por el evangelio», y <a href="2-timothy-2.es.html#v2-3">2 Timoteo 2:3</a>, «Sufre conmigo como buen soldado de Cristo Jesús», donde el texto bizantino tiene el verbo simple. RV60 «sufre penalidades»; NVI «Comparte nuestros sufrimientos».')
+
+DICTIONARY.append(('nomimos', 'nomimōs', 'νομίμως', 'nomimōs',
+    'LAWFULLY, according to the rules &mdash; an adverb from <em>nomos</em>, &lsquo;law.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="1-timothy-1.html#v8">1 Timothy 1:8</a>, &lsquo;the law is good, if one uses it lawfully,&rsquo; and <a href="2-timothy-2.html#v2-5">2 Timothy 2:5</a>, the athlete who &lsquo;is not crowned unless he competes lawfully.&rsquo; KJV &lsquo;lawfully&rsquo; in both; NWT 1984 at 2 Timothy 2:5 &lsquo;according to the rules.&rsquo;',
+    ('1 Timothy', 1, 8)))
+DICTIONARY_ES['nomimos'] = ('nomímōs',
+    'LEGÍTIMAMENTE, conforme a las reglas &mdash; un adverbio de <em>nomos</em>, «ley». &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-timothy-1.es.html#v8">1 Timoteo 1:8</a>, «la ley es buena, si uno la usa legítimamente», y <a href="2-timothy-2.es.html#v2-5">2 Timoteo 2:5</a>, el atleta que «no es coronado si no compite legítimamente». RV60 «legítimamente» en los dos; TNM 1987 en 2 Timoteo 2:5 «de acuerdo con las reglas».')
+
+DICTIONARY.append(('symbasileuo', 'symbasileuō', 'συμβασιλεύω', 'symbasileuō',
+    'TO REIGN WITH, to share a throne &mdash; <em>syn</em> and <em>basileu&#333;</em>, &lsquo;to reign.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="1-corinthians-4.html#v8">1 Corinthians 4:8</a>, Paul&rsquo;s irony, &lsquo;I wish you really had begun to reign, so that we could reign with you,&rsquo; and <a href="2-timothy-2.html#v2-12">2 Timothy 2:12</a>, &lsquo;if we endure, we will also reign with him.&rsquo; KJV &lsquo;we shall also reign with him&rsquo;; NWT 1984 &lsquo;we shall also rule together as kings.&rsquo;',
+    ('1 Corinthians', 4, 8)))
+DICTIONARY_ES['symbasileuo'] = ('symbasiléuō',
+    'REINAR CON, compartir un trono &mdash; <em>syn</em> y <em>basileu&#333;</em>, «reinar». &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-corinthians-4.es.html#v8">1 Corintios 4:8</a>, la ironía de Pablo, «¡ojalá de verdad hubieran empezado a reinar, para que también nosotros reináramos con ustedes!», y <a href="2-timothy-2.es.html#v2-12">2 Timoteo 2:12</a>, «si perseveramos, también reinaremos con él». RV60 «también reinaremos con él»; TNM 1987 «también reinaremos juntos».')
+
+DICTIONARY.append(('orthotomeo', 'orthotomeō', 'ὀρθοτομέω', 'orthotomeō',
+    'TO CUT STRAIGHT, and so to handle rightly &mdash; <em>orthos</em>, &lsquo;straight,&rsquo; and <em>temn&#333;</em>, &lsquo;to cut.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-15">2 Timothy 2:15</a>, &lsquo;rightly handling the word of truth&rsquo;; the Greek Old Testament uses it of cutting straight paths at Proverbs 3:6 and 11:5 (not yet on these pages). Readers picture a road cut straight, a furrow ploughed straight, or a stone cut true. The KJV&rsquo;s &lsquo;rightly dividing the word of truth&rsquo; became the title of C. I. Scofield&rsquo;s 1888 pamphlet on dividing Scripture into dispensations; the Greek pictures a straight cut, not a division into parts. ASV &lsquo;handling aright&rsquo;; NIV &lsquo;correctly handles.&rsquo;',
+    ('2 Timothy', 2, 15)))
+DICTIONARY_ES['orthotomeo'] = ('orthotoméō',
+    'CORTAR RECTO, y así manejar con rectitud &mdash; <em>orthos</em>, «recto», y <em>temn&#333;</em>, «cortar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-15">2 Timoteo 2:15</a>, «que maneja con rectitud la palabra de verdad»; el Antiguo Testamento griego lo usa de abrir caminos rectos en Proverbios 3:6 y 11:5 (todavía no en estas páginas). Los lectores imaginan un camino trazado recto, un surco arado recto, o una piedra cortada con exactitud. El «rightly dividing» de la King James inglesa se volvió el título del folleto de C. I. Scofield de 1888 sobre la división de la Escritura en dispensaciones; el griego pinta un corte recto, no una división en partes. RV 1909 «que traza bien»; RV60 «que usa bien».')
+
+DICTIONARY.append(('anepaischyntos', 'anepaischyntos', 'ἀνεπαίσχυντος', 'anepaischyntos',
+    'WITH NOTHING TO BE ASHAMED OF &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>epaischynomai</em>, &lsquo;to be ashamed.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-15">2 Timothy 2:15</a>, &lsquo;a worker with nothing to be ashamed of&rsquo;; the verb is Paul&rsquo;s &lsquo;I am not ashamed&rsquo; at <a href="2-timothy-1.html#v12">2 Timothy 1:12</a>. KJV &lsquo;a workman that needeth not to be ashamed&rsquo;; NWT 1984 &lsquo;a workman with nothing to be ashamed of.&rsquo;',
+    ('2 Timothy', 2, 15)))
+DICTIONARY_ES['anepaischyntos'] = ('anepaíschyntos',
+    'QUE NO TIENE DE QUÉ AVERGONZARSE &mdash; <em>a-</em>, «no», y <em>epaischynomai</em>, «avergonzarse». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-15">2 Timoteo 2:15</a>, «obrero que no tiene de qué avergonzarse»; el verbo es el «no me avergüenzo» de Pablo en <a href="2-timothy-1.es.html#v12">2 Timoteo 1:12</a>. RV60 «como obrero que no tiene de qué avergonzarse».')
+
+DICTIONARY.append(('gangraina', 'gangraina', 'γάγγραινα', 'gangraina',
+    'GANGRENE, a spreading, eating sore &mdash; the word English borrowed. &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-17">2 Timothy 2:17</a>, &lsquo;their word will spread like gangrene,&rsquo; where &lsquo;spread&rsquo; is &lsquo;will have <em>nom&#275;</em>,&rsquo; pasture, as if the talk grazed outward. KJV &lsquo;as doth a canker&rsquo;; ASV &lsquo;as doth a gangrene.&rsquo;',
+    ('2 Timothy', 2, 17)))
+DICTIONARY_ES['gangraina'] = ('gángraina',
+    'GANGRENA, una llaga que se extiende y devora &mdash; la palabra que tomó el castellano. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-17">2 Timoteo 2:17</a>, «su palabra se extenderá como gangrena», donde «se extenderá» es «tendrá <em>nom&#275;</em>», pasto, como si la palabrería paciera hacia afuera. RV60 «carcomerá como gangrena»; TNM 1987 «se esparcirá como gangrena».')
+
+DICTIONARY.append(('ostrakinos', 'ostrakinos', 'ὀστράκινος', 'ostrakinos',
+    'OF CLAY, earthenware &mdash; from <em>ostrakon</em>, a potsherd. &#9888; It stands in two verses of the New Testament: <a href="2-corinthians-4.html#v7">2 Corinthians 4:7</a>, &lsquo;this treasure in clay jars,&rsquo; and <a href="2-timothy-2.html#v2-20">2 Timothy 2:20</a>, the vessels &lsquo;of wood and clay&rsquo; in a great house. KJV &lsquo;earthen vessels&rsquo; and &lsquo;of earth&rsquo;; NIV &lsquo;jars of clay&rsquo; and &lsquo;of wood and clay.&rsquo;',
+    ('2 Corinthians', 4, 7)))
+DICTIONARY_ES['ostrakinos'] = ('ostrákinos',
+    'DE BARRO, de loza &mdash; de <em>ostrakon</em>, un tiesto. &#9888; Está en dos versículos del Nuevo Testamento: <a href="2-corinthians-4.es.html#v7">2 Corintios 4:7</a>, «este tesoro en vasijas de barro», y <a href="2-timothy-2.es.html#v2-20">2 Timoteo 2:20</a>, los vasos «de madera y de barro» de una casa grande. RV60 «vasos de barro» y «de barro».')
+
+DICTIONARY.append(('ekkathairo', 'ekkathairō', 'ἐκκαθαίρω', 'ekkathairō',
+    'TO CLEAN OUT, to purge thoroughly &mdash; <em>ek</em>, &lsquo;out,&rsquo; and <em>kathair&#333;</em>, &lsquo;to cleanse.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="1-corinthians-5.html#v7">1 Corinthians 5:7</a>, &lsquo;Clear out the old leaven,&rsquo; and <a href="2-timothy-2.html#v2-21">2 Timothy 2:21</a>, &lsquo;if anyone cleanses himself from these.&rsquo; KJV &lsquo;Purge out&rsquo; and &lsquo;purge himself.&rsquo;',
+    ('1 Corinthians', 5, 7)))
+DICTIONARY_ES['ekkathairo'] = ('ekkathaírō',
+    'LIMPIAR POR COMPLETO, purgar &mdash; <em>ek</em>, «fuera», y <em>kathair&#333;</em>, «limpiar». &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-corinthians-5.es.html#v7">1 Corintios 5:7</a>, «Saquen la levadura vieja», y <a href="2-timothy-2.es.html#v2-21">2 Timoteo 2:21</a>, «si alguno se limpia de estas cosas». RV60 en 2 Timoteo 2:21 «si alguno se limpia de estas cosas».')
+
+DICTIONARY.append(('neoterikos', 'neōterikos', 'νεωτερικός', 'neōterikos',
+    'YOUTHFUL, belonging to the young &mdash; from <em>ne&#333;teros</em>, &lsquo;younger.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-22">2 Timothy 2:22</a>, &lsquo;Flee youthful desires,&rsquo; read of the passions of the body or of the young man&rsquo;s love of argument and novelty. KJV &lsquo;youthful lusts&rsquo;; NWT 1984 &lsquo;the desires incidental to youth.&rsquo;',
+    ('2 Timothy', 2, 22)))
+DICTIONARY_ES['neoterikos'] = ('neōterikós',
+    'JUVENIL, propio de los jóvenes &mdash; de <em>ne&#333;teros</em>, «más joven». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-22">2 Timoteo 2:22</a>, «Huye de los deseos juveniles», que se lee de las pasiones del cuerpo o del gusto del joven por la discusión y la novedad. RV60 «las pasiones juveniles»; TNM 1987 «los deseos que acompañan a la juventud».')
+
+DICTIONARY.append(('anexikakos', 'anexikakos', 'ἀνεξίκακος', 'anexikakos',
+    'BEARING EVIL WITHOUT RESENTMENT, patient under wrong &mdash; <em>anechomai</em>, &lsquo;to bear,&rsquo; and <em>kakos</em>, &lsquo;evil.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-24">2 Timothy 2:24</a>, of the Lord&rsquo;s slave. KJV &lsquo;patient&rsquo;; NWT 1984 &lsquo;keeping himself restrained under evil&rsquo;; NIV &lsquo;not resentful.&rsquo;',
+    ('2 Timothy', 2, 24)))
+DICTIONARY_ES['anexikakos'] = ('anexíkakos',
+    'QUE SOPORTA EL MAL SIN RESENTIMIENTO, sufrido ante el agravio &mdash; <em>anechomai</em>, «soportar», y <em>kakos</em>, «mal». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-24">2 Timoteo 2:24</a>, del esclavo del Señor. RV60 «sufrido»; TNM 1987 «manteniéndose reprimido bajo lo malo».')
+
+DICTIONARY.append(('ananepho', 'ananēphō', 'ἀνανήφω', 'ananēphō',
+    'TO SOBER UP AGAIN, to come back to one&rsquo;s senses &mdash; <em>ana</em>, &lsquo;again,&rsquo; and <em>n&#275;ph&#333;</em>, &lsquo;to be sober&rsquo; (a separate entry). &#9888; It stands in one verse of the New Testament, <a href="2-timothy-2.html#v2-26">2 Timothy 2:26</a>, those who &lsquo;will come back to their senses out of the snare of the devil.&rsquo; KJV &lsquo;recover themselves&rsquo;; NWT 1984 &lsquo;come back to their proper senses.&rsquo;',
+    ('2 Timothy', 2, 26)))
+DICTIONARY_ES['ananepho'] = ('ananḗphō',
+    'RECOBRAR LA SOBRIEDAD, volver en sí &mdash; <em>ana</em>, «de nuevo», y <em>n&#275;ph&#333;</em>, «estar sobrio» (una entrada aparte). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-2.es.html#v2-26">2 Timoteo 2:26</a>, los que «vuelvan en sí, saliendo del lazo del diablo». RV60 «escapen»; TNM 1987 «recobren el juicio».')
+
+ENCYCLOPEDIA.append(dict(slug='hymenaeus', name='Hymenaeus', kind='person', aliases=['Hymenaeus'], refs=[('1 Timothy', 1, 20), ('2 Timothy', 2, 17)], videos=[],
+    desc='A man named twice in the letters to Timothy. At <a href="1-timothy-1.html#v20">1 Timothy 1:20</a> he is one of those who &lsquo;have made shipwreck of their faith,&rsquo; with Alexander, &lsquo;whom I handed over to Satan so that they may be taught not to blaspheme.&rsquo; At <a href="2-timothy-2.html#v2-17">2 Timothy 2:17</a> and <a href="2-timothy-2.html#v2-18">2 Timothy 2:18</a>, with Philetus, he is &lsquo;saying that the resurrection has already happened.&rsquo; &#9888; Readers usually take the two as the same man; nothing else is known of him.'))
+ENCYCLOPEDIA_ES['hymenaeus'] = ('Himeneo',
+    'Un hombre nombrado dos veces en las cartas a Timoteo. En <a href="1-timothy-1.es.html#v20">1 Timoteo 1:20</a> es uno de los que «naufragaron en cuanto a la fe», con Alejandro, «a quienes entregué a Satanás para que aprendan a no blasfemar». En <a href="2-timothy-2.es.html#v2-17">2 Timoteo 2:17</a> y <a href="2-timothy-2.es.html#v2-18">2 Timoteo 2:18</a>, con Fileto, anda «diciendo que la resurrección ya ha ocurrido». &#9888; Los lectores suelen tomar a los dos como el mismo hombre; no se sabe nada más de él.')
+ENCYCLOPEDIA.append(dict(slug='philetus', name='Philetus', kind='person', aliases=['Philetus'], refs=[('2 Timothy', 2, 17)], videos=[],
+    desc='A man named once, at <a href="2-timothy-2.html#v2-17">2 Timothy 2:17</a>, with Hymenaeus, among those whose word &lsquo;will spread like gangrene,&rsquo; &lsquo;saying that the resurrection has already happened&rsquo; (<a href="2-timothy-2.html#v2-18">2 Timothy 2:18</a>). Nothing else is known of him.'))
+ENCYCLOPEDIA_ES['philetus'] = ('Fileto',
+    'Un hombre nombrado una sola vez, en <a href="2-timothy-2.es.html#v2-17">2 Timoteo 2:17</a>, con Himeneo, entre aquellos cuya palabra «se extenderá como gangrena», «diciendo que la resurrección ya ha ocurrido» (<a href="2-timothy-2.es.html#v2-18">2 Timoteo 2:18</a>). No se sabe nada más de él.')
+
+def _2ti2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_2ti2_fix([('<a href="1-timothy-5.html#v5-21">1 Timothy 5:21</a>, and 2 Timothy 2:14, 2 Timothy 4:1 and Hebrews 2:6 (the last three not yet on these pages).', '<a href="1-timothy-5.html#v5-21">1 Timothy 5:21</a>, <a href="2-timothy-2.html#v2-14">2 Timothy 2:14</a>, and 2 Timothy 4:1 and Hebrews 2:6 (the last two not yet on these pages).'), ('<a href="1-timothy-5.es.html#v5-21">1 Timoteo 5:21</a>, y 2 Timoteo 2:14, 2 Timoteo 4:1 y Hebreos 2:6 (los tres últimos todavía no en estas páginas).', '<a href="1-timothy-5.es.html#v5-21">1 Timoteo 5:21</a>, <a href="2-timothy-2.es.html#v2-14">2 Timoteo 2:14</a>, y 2 Timoteo 4:1 y Hebreos 2:6 (los dos últimos todavía no en estas páginas).'), ('<a href="ephesians-6.html#v6-10">Ephesians 6:10</a>, 2 Timothy 2:1 and 2 Timothy 4:17 (those two not yet on these pages).', '<a href="ephesians-6.html#v6-10">Ephesians 6:10</a>, <a href="2-timothy-2.html#v2-1">2 Timothy 2:1</a> and 2 Timothy 4:17 (not yet on these pages).'), ('<a href="ephesians-6.es.html#v6-10">Efesios 6:10</a>, 2 Timoteo 2:1 y 2 Timoteo 4:17 (estos dos todavía no en estas páginas).', '<a href="ephesians-6.es.html#v6-10">Efesios 6:10</a>, <a href="2-timothy-2.es.html#v2-1">2 Timoteo 2:1</a> y 2 Timoteo 4:17 (todavía no en estas páginas).'), ('and six more, 1 Corinthians 9:7, 2 Corinthians 10:3, 1 Timothy 1:18, 2 Timothy 2:4, James 4:1', 'and six more, <a href="1-corinthians-9.html#v7">1 Corinthians 9:7</a>, <a href="2-corinthians-10.html#v3">2 Corinthians 10:3</a>, <a href="1-timothy-1.html#v18">1 Timothy 1:18</a>, <a href="2-timothy-2.html#v2-4">2 Timothy 2:4</a>, James 4:1'), ('against the soul&rsquo;) (these six not yet on these pages).', 'against the soul&rsquo;) (these two not yet on these pages).'), ('y seis más, 1 Corintios 9:7, 2 Corintios 10:3, 1 Timoteo 1:18, 2 Timoteo 2:4, Santiago 4:1', 'y seis más, <a href="1-corinthians-9.es.html#v7">1 Corintios 9:7</a>, <a href="2-corinthians-10.es.html#v3">2 Corintios 10:3</a>, <a href="1-timothy-1.es.html#v18">1 Timoteo 1:18</a>, <a href="2-timothy-2.es.html#v2-4">2 Timoteo 2:4</a>, Santiago 4:1'), ('contra el alma») (estos seis todavía no en estas páginas).', 'contra el alma») (estos dos todavía no en estas páginas).'), ('and 2 Timothy 2:24, &lsquo;the Lord&rsquo;s slave must be gentle toward all&rsquo; (not yet on these pages).', 'and <a href="2-timothy-2.html#v2-24">2 Timothy 2:24</a>, &lsquo;the Lord&rsquo;s slave must not quarrel, but be gentle toward all.&rsquo;'), ('y 2 Timoteo 2:24, «el esclavo del Señor debe ser amable con todos» (todavía no en estas páginas).', 'y <a href="2-timothy-2.es.html#v2-24">2 Timoteo 2:24</a>, «el esclavo del Señor no debe pelear, sino ser amable con todos».'), ('and 2 Timothy 2:24, of the Lord&rsquo;s slave (not yet on these pages).', 'and <a href="2-timothy-2.html#v2-24">2 Timothy 2:24</a>, of the Lord&rsquo;s slave.'), ('y 2 Timoteo 2:24, del esclavo del Señor (todavía no en estas páginas).', 'y <a href="2-timothy-2.es.html#v2-24">2 Timoteo 2:24</a>, del esclavo del Señor.'), ('is at 2 Timothy 2:14 (not yet on these pages).', 'is at <a href="2-timothy-2.html#v2-14">2 Timothy 2:14</a>.'), ('está en 2 Timoteo 2:14 (todavía no en estas páginas).', 'está en <a href="2-timothy-2.es.html#v2-14">2 Timoteo 2:14</a>.'), ("and of the vessel 'useful to the master' (2 Timothy 2:21)", 'and of the vessel \'useful to the master\' (<a href="2-timothy-2.html#v2-21">2 Timothy 2:21</a>)'), ('(2 Timoteo 4:11), y del vaso «útil al dueño» (2 Timoteo 2:21; los dos todavía no en estas páginas)', '(2 Timoteo 4:11, todavía no en estas páginas), y del vaso «útil al dueño» (<a href="2-timothy-2.es.html#v2-21">2 Timoteo 2:21</a>)')])
+
+XREFS.extend([
+    (("2 Timothy", 1, 2), ("2 Timothy", 2, 1), "my child"),
+    (("1 Timothy", 1, 12), ("2 Timothy", 2, 1), "empowered"),
+    (("2 Timothy", 1, 14), ("2 Timothy", 2, 2), "entrust, the deposit"),
+    (("2 Timothy", 1, 8), ("2 Timothy", 2, 3), "suffer along with me"),
+    (("1 Corinthians", 9, 7), ("2 Timothy", 2, 4), "soldier and farmer"),
+    (("1 Corinthians", 9, 25), ("2 Timothy", 2, 5), "the crown"),
+    (("1 Timothy", 1, 8), ("2 Timothy", 2, 5), "lawfully"),
+    (("1 Corinthians", 9, 10), ("2 Timothy", 2, 6), "the farmer's share"),
+    (("Romans", 1, 3), ("2 Timothy", 2, 8), "seed of David"),
+    (("Romans", 2, 16), ("2 Timothy", 2, 8), "according to my gospel"),
+    (("Luke", 23, 32), ("2 Timothy", 2, 9), "evildoers"),
+    (("Philippians", 1, 14), ("2 Timothy", 2, 9), "chains and the word"),
+    (("Romans", 6, 8), ("2 Timothy", 2, 11), "died with him, live with him"),
+    (("Luke", 12, 9), ("2 Timothy", 2, 12), "deny"),
+    (("Romans", 3, 3), ("2 Timothy", 2, 13), "unfaithful, faithful"),
+    (("1 Timothy", 6, 4), ("2 Timothy", 2, 14), "quarrels about words"),
+    (("1 Timothy", 1, 20), ("2 Timothy", 2, 17), "Hymenaeus"),
+    (("1 Corinthians", 15, 12), ("2 Timothy", 2, 18), "the resurrection denied"),
+    (("Colossians", 2, 12), ("2 Timothy", 2, 18), "raised with him"),
+    (("Numbers", 16, 5), ("2 Timothy", 2, 19), "Jehovah knows those who are his"),
+    (("Numbers", 16, 26), ("2 Timothy", 2, 19), "turn away"),
+    (("Romans", 9, 21), ("2 Timothy", 2, 20), "honor and dishonor"),
+    (("2 Corinthians", 4, 7), ("2 Timothy", 2, 20), "clay"),
+    (("Philemon", 1, 11), ("2 Timothy", 2, 21), "useful"),
+    (("1 Thessalonians", 2, 7), ("2 Timothy", 2, 24), "gentle"),
+    (("Acts", 11, 18), ("2 Timothy", 2, 25), "God gave repentance"),
+    (("Luke", 5, 10), ("2 Timothy", 2, 26), "caught alive"),
+])
+
+CHAPTER_ART["2ti2"] = [dict(
+    file="bruegel-harvesters-detail.jpg",
+    title="The Harvesters (detail)",   title_es="Los segadores (detalle)",
+    artist="Pieter Bruegel the Elder",
+    year="1565",
+    location="Metropolitan Museum of Art, New York",
+    location_es="Museo Metropolitano de Arte, Nueva York",
+    alt="A detail of a painting of a golden wheat field in summer: stubble rows across the ground, tall sheaves stacked in cones, and labourers bent double "
+        "binding sheaves, one in a red vest, one in white with a white cap; another worker walks at the left with a scythe over his shoulder.",
+    note="&#9888; Labourers at the wheat harvest, binding the sheaves they have cut: &lsquo;The farmer who labors ought to be the first to partake of the "
+         "fruits&rsquo; (<a href=\"2-timothy-2.html#v2-6\">verse 6</a>).",
+    note_es="&#9888; Trabajadores en la siega del trigo, atando las gavillas que han cortado: «El labrador que trabaja debe ser el primero en participar de los "
+            "frutos» (<a href=\"2-timothy-2.es.html#v2-6\">versículo 6</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder-_The_Harvesters_-_Google_Art_Project_(cropped).jpg",
+)]
+
+CHRON_CHAPTERS["2ti2"] = dict(era='apostolic',
+    when="Paul in chains writes to Timothy: the soldier, the athlete and the farmer; 'Remember Jesus Christ, raised from the dead'; a faithful saying; rightly handling the word of truth against talk that spreads like gangrene; vessels for honor; and the Lord's slave who must not quarrel.",
+    clock="Undated by the text; on the traditional reading, Paul's last imprisonment at Rome, mid-60s AD; many scholars date the Pastoral letters later.")
+
