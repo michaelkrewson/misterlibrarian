@@ -39777,3 +39777,170 @@ CHRON_CHAPTERS["1ti2"] = dict(era='apostolic',
     when="Prayer for all people and for kings; one God and one mediator, a ransom for all; then men at prayer, women's dress, and the disputed instruction on women learning, teaching and authority.",
     clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
 
+# ---- 1 Timothy 3 -----------------------------------------------------------
+DICTIONARY.append(('anepilemptos', 'anepilēmptos', 'ἀνεπίλημπτος', 'anepilēmptos',
+    'ABOVE REPROACH &mdash; literally &lsquo;not to be taken hold of,&rsquo; from <em>a-</em>, &lsquo;not,&rsquo; and <em>epilambanomai</em>, &lsquo;to lay hold of&rsquo;: a man who gives an accuser nothing to grab. &#9888; It stands in three verses of the New Testament, all in this letter: <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a>, the first demand made of the overseer, and 1 Timothy 5:7 and 6:14 (these two not yet on these pages). It is a different word from <em>anegkl&#275;tos</em>, the &lsquo;blameless&rsquo; of <a href="1-timothy-3.html#v3-10">1 Timothy 3:10</a> and <a href="titus-1.html#v6">Titus 1:6</a>. KJV &lsquo;blameless&rsquo;; NWT 1984 &lsquo;irreprehensible.&rsquo;',
+    ('1 Timothy', 3, 2)))
+DICTIONARY_ES['anepilemptos'] = ('anepílēmptos',
+    'INTACHABLE &mdash; literalmente «que no se puede agarrar», de <em>a-</em>, «no», y <em>epilambanomai</em>, «asir»: un hombre que no da al acusador nada de qué asirse. &#9888; Está en tres versículos del Nuevo Testamento, todos de esta carta: <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a>, la primera exigencia hecha al supervisor, y 1 Timoteo 5:7 y 6:14 (estos dos todavía no en estas páginas). Es una palabra distinta de <em>anegkl&#275;tos</em>, el «irreprensible» de <a href="1-timothy-3.es.html#v3-10">1 Timoteo 3:10</a> y <a href="titus-1.es.html#v6">Tito 1:6</a>. RV60 «irreprensible»; TNM 1987 «irreprensible».')
+
+DICTIONARY.append(('nephalios', 'nēphalios', 'νηφάλιος', 'nēphalios',
+    'TEMPERATE, sober, clear-headed &mdash; the adjective of <em>n&#275;ph&#333;</em>, &lsquo;to be sober&rsquo; (a separate entry), first of wine and then of the mind. &#9888; It stands in three verses of the New Testament: <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a>, of the overseer; <a href="1-timothy-3.html#v3-11">1 Timothy 3:11</a>, of the women; and Titus 2:2, of older men (not yet on these pages). KJV &lsquo;vigilant&rsquo; at 3:2 and &lsquo;sober&rsquo; at 3:11; NWT 1984 &lsquo;moderate in habits.&rsquo;',
+    ('1 Timothy', 3, 2)))
+DICTIONARY_ES['nephalios'] = ('nēphálios',
+    'SOBRIO, moderado, lúcido &mdash; el adjetivo de <em>n&#275;ph&#333;</em>, «estar sobrio» (una entrada aparte), primero del vino y luego de la mente. &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a>, del supervisor; <a href="1-timothy-3.es.html#v3-11">1 Timoteo 3:11</a>, de las mujeres; y Tito 2:2, de los ancianos (todavía no en estas páginas). RV60 «sobrio» en 3:2 y «sobrias» en 3:11; TNM 1987 «moderado en los hábitos».')
+
+DICTIONARY.append(('kosmios', 'kosmios', 'κόσμιος', 'kosmios',
+    'RESPECTABLE, orderly, well-arranged &mdash; from <em>kosmos</em>, &lsquo;order, arrangement, ornament,&rsquo; the root also of &lsquo;cosmetic.&rsquo; &#9888; It stands in two verses of the New Testament, both in this letter: <a href="1-timothy-2.html#v2-9">1 Timothy 2:9</a>, &lsquo;respectable clothing,&rsquo; and <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a>, of the overseer himself. KJV at 2:9 &lsquo;modest apparel&rsquo; and at 3:2 &lsquo;of good behaviour&rsquo;; NWT 1984 at 3:2 &lsquo;orderly.&rsquo;',
+    ('1 Timothy', 2, 9)))
+DICTIONARY_ES['kosmios'] = ('kósmios',
+    'DECOROSO, ordenado, bien dispuesto &mdash; de <em>kosmos</em>, «orden, disposición, adorno», raíz también de «cosmético». &#9888; Está en dos versículos del Nuevo Testamento, los dos en esta carta: <a href="1-timothy-2.es.html#v2-9">1 Timoteo 2:9</a>, «ropa decorosa», y <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a>, del propio supervisor. RV60 en 3:2 «decoroso»; TNM 1987 en 3:2 «ordenado».')
+
+DICTIONARY.append(('philoxenos', 'philoxenos', 'φιλόξενος', 'philoxenos',
+    'HOSPITABLE &mdash; literally &lsquo;a lover of strangers,&rsquo; <em>philos</em> and <em>xenos</em> (a separate entry). &#9888; It stands in three verses of the New Testament: <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a> and <a href="titus-1.html#v8">Titus 1:8</a>, of the overseer, and 1 Peter 4:9 (not yet on these pages). The noun <em>philoxenia</em> is the &lsquo;hospitality&rsquo; of <a href="romans-12.html#v12-13">Romans 12:13</a> and of Hebrews 13:2 (not yet on these pages). KJV &lsquo;given to hospitality&rsquo;; NWT 1984 &lsquo;hospitable.&rsquo;',
+    ('1 Timothy', 3, 2)))
+DICTIONARY_ES['philoxenos'] = ('philóxenos',
+    'HOSPITALARIO &mdash; literalmente «amigo de los forasteros», <em>philos</em> y <em>xenos</em> (una entrada aparte). &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a> y <a href="titus-1.es.html#v8">Tito 1:8</a>, del supervisor, y 1 Pedro 4:9 (todavía no en estas páginas). El sustantivo <em>philoxenia</em> es la «hospitalidad» de <a href="romans-12.es.html#v12-13">Romanos 12:13</a> y de Hebreos 13:2 (todavía no en estas páginas). RV60 «hospedador»; TNM 1987 «hospitalario».')
+
+DICTIONARY.append(('didaktikos', 'didaktikos', 'διδακτικός', 'didaktikos',
+    'ABLE TO TEACH, skilled in teaching &mdash; from <em>didask&#333;</em>, &lsquo;to teach.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a>, the one skill in a list of the overseer&rsquo;s qualities of character, and 2 Timothy 2:24, of the Lord&rsquo;s slave (not yet on these pages). KJV &lsquo;apt to teach&rsquo;; NWT 1984 &lsquo;qualified to teach.&rsquo;',
+    ('1 Timothy', 3, 2)))
+DICTIONARY_ES['didaktikos'] = ('didaktikós',
+    'CAPAZ DE ENSEÑAR, hábil para la enseñanza &mdash; de <em>didask&#333;</em>, «enseñar». &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a>, la única destreza en una lista de cualidades de carácter del supervisor, y 2 Timoteo 2:24, del esclavo del Señor (todavía no en estas páginas). RV60 «apto para enseñar»; TNM 1987 «capacitado para enseñar».')
+
+DICTIONARY.append(('proistemi', 'proistēmi', 'προΐστημι', 'proistēmi',
+    'TO STAND BEFORE, to lead, to be at the head of; and so also to care for, to give oneself to &mdash; <em>pro</em>, &lsquo;before,&rsquo; and <em>hist&#275;mi</em>, &lsquo;to stand.&rsquo; &#9888; It stands in eight verses of the New Testament: <a href="romans-12.html#v12-8">Romans 12:8</a>, &lsquo;the one who leads, with diligence&rsquo;; <a href="1-thessalonians-5.html#v5-12">1 Thessalonians 5:12</a>, &lsquo;those who labor among you and lead you in the Lord&rsquo;; <a href="1-timothy-3.html#v3-4">1 Timothy 3:4</a>, <a href="1-timothy-3.html#v3-5">1 Timothy 3:5</a> and <a href="1-timothy-3.html#v3-12">1 Timothy 3:12</a>, of the overseer&rsquo;s and the servants&rsquo; households; 1 Timothy 5:17, of elders who lead well; and Titus 3:8 and 3:14, of giving oneself to good works (these last three not yet on these pages). Its noun <em>prostatis</em> is Phoebe&rsquo;s title at <a href="romans-16.html#v16-2">Romans 16:2</a>, &lsquo;a patron of many.&rsquo; KJV at 3:4 &lsquo;one that ruleth well his own house&rsquo;; NWT 1984 &lsquo;presiding over his own household.&rsquo;',
+    ('Romans', 12, 8)))
+DICTIONARY_ES['proistemi'] = ('proḯstēmi',
+    'ESTAR AL FRENTE, dirigir, presidir; y así también cuidar de, dedicarse a &mdash; <em>pro</em>, «delante», e <em>hist&#275;mi</em>, «estar de pie». &#9888; Está en ocho versículos del Nuevo Testamento: <a href="romans-12.es.html#v12-8">Romanos 12:8</a>, «el que dirige, con diligencia»; <a href="1-thessalonians-5.es.html#v5-12">1 Tesalonicenses 5:12</a>, «los que trabajan entre ustedes y los dirigen en el Señor»; <a href="1-timothy-3.es.html#v3-4">1 Timoteo 3:4</a>, <a href="1-timothy-3.es.html#v3-5">1 Timoteo 3:5</a> y <a href="1-timothy-3.es.html#v3-12">1 Timoteo 3:12</a>, de las casas del supervisor y de los servidores; 1 Timoteo 5:17, de los ancianos que dirigen bien; y Tito 3:8 y 3:14, de dedicarse a las buenas obras (estos tres últimos todavía no en estas páginas). Su sustantivo <em>prostatis</em> es el título de Febe en <a href="romans-16.es.html#v16-2">Romanos 16:2</a>, «protectora de muchos». RV60 en 3:4 «que gobierne bien su casa»; TNM 1987 «que presida su propia casa».')
+
+DICTIONARY.append(('neophytos', 'neophytos', 'νεόφυτος', 'neophytos',
+    'NEWLY PLANTED, and so a new convert &mdash; <em>neos</em>, &lsquo;new,&rsquo; and <em>phyton</em>, &lsquo;plant&rsquo;; the source, through Latin, of English &lsquo;neophyte.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-3.html#v3-6">1 Timothy 3:6</a>, &lsquo;not a new convert, so that he may not be puffed up.&rsquo; KJV &lsquo;a novice&rsquo;; NWT 1984 &lsquo;a newly converted man&rsquo;; Douay &lsquo;a neophyte.&rsquo;',
+    ('1 Timothy', 3, 6)))
+DICTIONARY_ES['neophytos'] = ('neóphytos',
+    'RECIÉN PLANTADO, y así un recién convertido &mdash; <em>neos</em>, «nuevo», y <em>phyton</em>, «planta»; origen, a través del latín, del castellano «neófito». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-3.es.html#v3-6">1 Timoteo 3:6</a>, «no un recién convertido, para que no se envanezca». RV60 «un neófito»; TNM 1987 «un hombre recién convertido».')
+
+DICTIONARY.append(('typhoo', 'typhoō', 'τυφόω', 'typhoō',
+    'TO BE PUFFED UP, conceited &mdash; literally &lsquo;to be wrapped in smoke,&rsquo; from <em>typhos</em>, &lsquo;smoke, mist,&rsquo; and so to have one&rsquo;s head clouded with self-importance. &#9888; It stands in three verses of the New Testament, all in the letters to Timothy: <a href="1-timothy-3.html#v3-6">1 Timothy 3:6</a>, of the new convert; 1 Timothy 6:4, of the false teacher; and 2 Timothy 3:4, in a list of the last days (these two not yet on these pages). KJV &lsquo;lifted up with pride&rsquo;; ASV &lsquo;puffed up.&rsquo;',
+    ('1 Timothy', 3, 6)))
+DICTIONARY_ES['typhoo'] = ('typhóō',
+    'ENVANECERSE, engreírse &mdash; literalmente «envolverse en humo», de <em>typhos</em>, «humo, niebla», y así tener la cabeza nublada de importancia propia. &#9888; Está en tres versículos del Nuevo Testamento, todos en las cartas a Timoteo: <a href="1-timothy-3.es.html#v3-6">1 Timoteo 3:6</a>, del recién convertido; 1 Timoteo 6:4, del falso maestro; y 2 Timoteo 3:4, en una lista de los últimos días (estos dos todavía no en estas páginas). RV60 «envaneciéndose»; RV 1909 «inflándose».')
+
+DICTIONARY.append(('semnos', 'semnos', 'σεμνός', 'semnos',
+    'DIGNIFIED, worthy of respect, serious &mdash; in wider Greek a word for what is august and venerable, even of the gods. &#9888; The adjective stands in four verses of the New Testament: <a href="philippians-4.html#v4-8">Philippians 4:8</a>, &lsquo;whatever is dignified&rsquo;; <a href="1-timothy-3.html#v3-8">1 Timothy 3:8</a>, of the servants; <a href="1-timothy-3.html#v3-11">1 Timothy 3:11</a>, of the women; and Titus 2:2, of older men (not yet on these pages). The noun <em>semnot&#275;s</em>, &lsquo;dignity,&rsquo; is at <a href="1-timothy-2.html#v2-2">1 Timothy 2:2</a> and <a href="1-timothy-3.html#v3-4">1 Timothy 3:4</a>, and at Titus 2:7 (not yet on these pages). KJV &lsquo;grave&rsquo;; NWT 1984 &lsquo;serious&rsquo;; NIV &lsquo;worthy of respect.&rsquo;',
+    ('1 Timothy', 3, 8)))
+DICTIONARY_ES['semnos'] = ('semnós',
+    'DIGNO, respetable, serio &mdash; en el griego más amplio una palabra para lo augusto y venerable, aun de los dioses. &#9888; El adjetivo está en cuatro versículos del Nuevo Testamento: <a href="philippians-4.es.html#v4-8">Filipenses 4:8</a>, «todo lo digno»; <a href="1-timothy-3.es.html#v3-8">1 Timoteo 3:8</a>, de los servidores; <a href="1-timothy-3.es.html#v3-11">1 Timoteo 3:11</a>, de las mujeres; y Tito 2:2, de los ancianos (todavía no en estas páginas). El sustantivo <em>semnot&#275;s</em>, «dignidad», está en <a href="1-timothy-2.es.html#v2-2">1 Timoteo 2:2</a> y <a href="1-timothy-3.es.html#v3-4">1 Timoteo 3:4</a>, y en Tito 2:7 (todavía no en estas páginas). RV60 «honestos»; TNM 1987 «serios».')
+
+DICTIONARY.append(('dilogos', 'dilogos', 'δίλογος', 'dilogos',
+    'DOUBLE-TONGUED &mdash; <em>dis</em>, &lsquo;twice,&rsquo; and <em>logos</em>, &lsquo;word&rsquo;: saying one thing to one person and another to the next. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-3.html#v3-8">1 Timothy 3:8</a>, of the servants. KJV &lsquo;not doubletongued&rsquo;; NIV &lsquo;sincere.&rsquo;',
+    ('1 Timothy', 3, 8)))
+DICTIONARY_ES['dilogos'] = ('dílogos',
+    'DE DOBLE LENGUA &mdash; <em>dis</em>, «dos veces», y <em>logos</em>, «palabra»: el que dice una cosa a uno y otra al siguiente. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-3.es.html#v3-8">1 Timoteo 3:8</a>, de los servidores. RV60 «sin doblez»; RV 1909 «no bilingües».')
+
+DICTIONARY.append(('aischrokerdes', 'aischrokerdēs', 'αἰσχροκερδής', 'aischrokerdēs',
+    'GREEDY FOR SHAMEFUL GAIN &mdash; <em>aischros</em>, &lsquo;shameful,&rsquo; and <em>kerdos</em>, &lsquo;gain.&rsquo; &#9888; The adjective stands in two verses of the New Testament: <a href="1-timothy-3.html#v3-8">1 Timothy 3:8</a>, of the servants, and <a href="titus-1.html#v7">Titus 1:7</a>, of the overseer; the Byzantine text adds it to the overseer&rsquo;s list at <a href="1-timothy-3.html#v3-3">1 Timothy 3:3</a> as well. The adverb is at 1 Peter 5:2, of elders who shepherd the flock (not yet on these pages). KJV &lsquo;greedy of filthy lucre&rsquo;; NWT 1984 &lsquo;greedy of dishonest gain.&rsquo;',
+    ('1 Timothy', 3, 8)))
+DICTIONARY_ES['aischrokerdes'] = ('aischrokerdḗs',
+    'CODICIOSO DE GANANCIAS DESHONESTAS &mdash; <em>aischros</em>, «vergonzoso», y <em>kerdos</em>, «ganancia». &#9888; El adjetivo está en dos versículos del Nuevo Testamento: <a href="1-timothy-3.es.html#v3-8">1 Timoteo 3:8</a>, de los servidores, y <a href="titus-1.es.html#v7">Tito 1:7</a>, del supervisor; el texto bizantino lo añade también a la lista del supervisor en <a href="1-timothy-3.es.html#v3-3">1 Timoteo 3:3</a>. El adverbio está en 1 Pedro 5:2, de ancianos que pastorean el rebaño (todavía no en estas páginas). RV60 «codiciosos de ganancias deshonestas»; RV 1909 «amadores de torpes ganancias».')
+
+DICTIONARY.append(('bathmos', 'bathmos', 'βαθμός', 'bathmos',
+    'A STEP, a stair; and so a standing or rank &mdash; from <em>bain&#333;</em>, &lsquo;to step.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-3.html#v3-13">1 Timothy 3:13</a>, &lsquo;those who have served well gain for themselves a good standing,&rsquo; and readers take it three ways: a step up to a higher office, as John Chrysostom reads it; a good standing in the congregation; or a good standing before God. KJV, after the Vulgate&rsquo;s <em>gradum bonum</em>, &lsquo;a good degree&rsquo;; ASV &lsquo;a good standing.&rsquo;',
+    ('1 Timothy', 3, 13)))
+DICTIONARY_ES['bathmos'] = ('bathmós',
+    'UN PELDAÑO, un escalón; y así una posición o rango &mdash; de <em>bain&#333;</em>, «dar un paso». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-3.es.html#v3-13">1 Timoteo 3:13</a>, «los que han servido bien adquieren para sí una buena posición», y los lectores lo entienden de tres maneras: un ascenso a un cargo más alto, como lo lee Juan Crisóstomo; una buena posición en la congregación; o una buena posición ante Dios. RV 1909, tras el <em>gradum bonum</em> de la Vulgata, «buen grado»; RV60 «un grado honroso».')
+
+DICTIONARY.append(('hedraioma', 'hedraiōma', 'ἑδραίωμα', 'hedraiōma',
+    'A MAINSTAY, a support, that which holds firm &mdash; from <em>hedraios</em>, &lsquo;seated, firm,&rsquo; the &lsquo;founded and firm&rsquo; of <a href="colossians-1.html#v23">Colossians 1:23</a> and the &lsquo;steadfast&rsquo; of <a href="1-corinthians-15.html#v58">1 Corinthians 15:58</a>. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-3.html#v3-15">1 Timothy 3:15</a>, the congregation as &lsquo;a pillar and mainstay of the truth.&rsquo; KJV &lsquo;ground&rsquo;; NIV &lsquo;foundation&rsquo;; NWT 1984 &lsquo;support.&rsquo;',
+    ('1 Timothy', 3, 15)))
+DICTIONARY_ES['hedraioma'] = ('hedraíōma',
+    'UN SOSTÉN, un apoyo, lo que mantiene firme &mdash; de <em>hedraios</em>, «asentado, firme», el «cimentados y firmes» de <a href="colossians-1.es.html#v23">Colosenses 1:23</a> y el «firmes» de <a href="1-corinthians-15.es.html#v58">1 Corintios 15:58</a>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-3.es.html#v3-15">1 Timoteo 3:15</a>, la congregación como «columna y sostén de la verdad». RV60 «baluarte»; NVI «fundamento»; TNM 1987 «apoyo».')
+
+DICTIONARY.append(('homologoumenos', 'homologoumenōs', 'ὁμολογουμένως', 'homologoumenōs',
+    'BY COMMON CONFESSION, confessedly, beyond dispute &mdash; an adverb from the participle of <em>homologe&#333;</em>, &lsquo;to confess, to agree&rsquo; (a separate entry). &#9888; It stands in one verse of the New Testament, <a href="1-timothy-3.html#v3-16">1 Timothy 3:16</a>, &lsquo;by common confession great is the mystery of godliness,&rsquo; where it introduces lines that read like a confession or hymn. KJV &lsquo;without controversy&rsquo;; NWT 1984 &lsquo;admittedly&rsquo;; NIV &lsquo;Beyond all question.&rsquo;',
+    ('1 Timothy', 3, 16)))
+DICTIONARY_ES['homologoumenos'] = ('homologouménōs',
+    'POR CONFESIÓN COMÚN, sin discusión &mdash; un adverbio del participio de <em>homologe&#333;</em>, «confesar, estar de acuerdo» (una entrada aparte). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-3.es.html#v3-16">1 Timoteo 3:16</a>, «por confesión común, grande es el misterio de la piedad», donde introduce líneas que suenan como una confesión o un himno. RV60 «indiscutiblemente»; TNM 1987 «se reconoce».')
+
+DICTIONARY_ES['episkope'] = ('episkopḗ',
+    'EL CARGO DE SUPERVISOR &mdash; el oficio del que vigila; de <em>episkopos</em>, «supervisor», que pasó por el latín al castellano como OBISPO. Pedro aplica el Salmo 109:8 a la vacante que dejó Judas en <a href="acts-1.es.html#v20">Hechos 1:20</a>: «Tome otro su cargo de supervisión». La KJV inglesa pone ya la palabra posterior, «bishoprick», una traducción justa del término y a la vez un anacronismo, pues en esa sala no existía tal cargo. En <a href="1-timothy-3.es.html#v3-1">1 Timoteo 3:1</a> es «el cargo de supervisor» al que alguno aspira. El mismo sustantivo significa en otros lugares una «visitación» divina (Lucas 19:44).')
+
+ENCYCLOPEDIA.append(dict(slug='pliny-the-younger', name='Pliny the Younger', kind='person', aliases=['Pliny the Younger'], refs=[('1 Timothy', 3, 11)], videos=[],
+    desc='Gaius Plinius Caecilius Secundus, a Roman senator and letter-writer (about 61 to about 113), nephew and adopted son of Pliny the Elder, and governor of Bithynia and Pontus, on the Black Sea coast of Asia Minor, under the emperor Trajan from about 110. &#9888; In a letter to Trajan (<em>Letters</em> 10.96), written about 112, he asks how to deal with people accused of being Christians. He reports that they met before dawn on a fixed day to sing a hymn &lsquo;to Christ as to a god&rsquo; and bound themselves by oath not to steal, commit adultery or break faith; and that he questioned under torture two slave women &lsquo;who were called <em>ministrae</em>,&rsquo; the Latin for women servants, a word many read as women deacons like Phoebe at <a href="romans-16.html#v16-1">Romans 16:1</a> and the &lsquo;women likewise&rsquo; of <a href="1-timothy-3.html#v3-11">1 Timothy 3:11</a>. Trajan&rsquo;s reply (10.97) says Christians are not to be sought out, and anonymous accusations are not to be accepted.'))
+ENCYCLOPEDIA_ES['pliny-the-younger'] = ('Plinio el Joven',
+    'Cayo Plinio Cecilio Segundo, senador romano y escritor de cartas (hacia el 61 hasta hacia el 113), sobrino e hijo adoptivo de Plinio el Viejo, y gobernador de Bitinia y el Ponto, en la costa del mar Negro de Asia Menor, bajo el emperador Trajano desde hacia el 110. &#9888; En una carta a Trajano (<em>Cartas</em> 10.96), escrita hacia el 112, pregunta cómo tratar a los acusados de ser cristianos. Informa que se reunían antes del alba en un día fijo para cantar un himno «a Cristo como a un dios» y se comprometían bajo juramento a no robar, no cometer adulterio y no faltar a la palabra dada; y que interrogó bajo tortura a dos esclavas «a las que llamaban <em>ministrae</em>», la palabra latina para mujeres servidoras, que muchos leen como mujeres diáconos, como Febe en <a href="romans-16.es.html#v16-1">Romanos 16:1</a> y las «mujeres, asimismo» de <a href="1-timothy-3.es.html#v3-11">1 Timoteo 3:11</a>. La respuesta de Trajano (10.97) dice que no se debe ir a buscar a los cristianos, ni aceptar acusaciones anónimas.')
+
+def _1ti3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1ti3_fix([('1 Timothy 3:15 (not yet on these pages), the congregation as &lsquo;a pillar and support of the truth&rsquo;;', '<a href="1-timothy-3.html#v3-15">1 Timothy 3:15</a>, the congregation as &lsquo;a pillar and mainstay of the truth&rsquo;;'), ('1 Timoteo 3:15 (todavía no en estas páginas), la congregación como «columna y apoyo de la verdad»;', '<a href="1-timothy-3.es.html#v3-15">1 Timoteo 3:15</a>, la congregación como «columna y sostén de la verdad»;'), ('it returns of an overseer&rsquo;s children at 1 Timothy 3:4. KJV', 'it returns of an overseer&rsquo;s children at <a href="1-timothy-3.html#v3-4">1 Timothy 3:4</a>. KJV'), ('vuelve de los hijos del supervisor en 1 Timoteo 3:4. RV60', 'vuelve de los hijos del supervisor en <a href="1-timothy-3.es.html#v3-4">1 Timoteo 3:4</a>. RV60'), ("(1 Timothy 3:16, 'great is the mystery of godliness';", '(<a href="1-timothy-3.html#v3-16">1 Timothy 3:16</a>, \'great is the mystery of godliness\';'), ('«grande es el misterio de la piedad» en 1 Timoteo 3:16;', '«grande es el misterio de la piedad» en <a href="1-timothy-3.es.html#v3-16">1 Timoteo 3:16</a>;'), ("the hymn fragment of 1 Timothy 3:16, 'taken up in glory'", 'the hymn fragment of <a href="1-timothy-3.html#v3-16">1 Timothy 3:16</a>, \'taken up in glory\''), ('de 1 Timoteo 3:16, «recibido arriba en gloria»', 'de <a href="1-timothy-3.es.html#v3-16">1 Timoteo 3:16</a>, «tomado arriba en gloria»')])
+
+XREFS.extend([
+    (("1 Timothy", 1, 15), ("1 Timothy", 3, 1), "faithful is the saying"),
+    (("Acts", 1, 20), ("1 Timothy", 3, 1), "office of oversight"),
+    (("Titus", 1, 7), ("1 Timothy", 3, 2), "the overseer's list"),
+    (("Titus", 1, 6), ("1 Timothy", 3, 2), "husband of one wife"),
+    (("Acts", 20, 28), ("1 Timothy", 3, 2), "elders made overseers"),
+    (("1 Timothy", 2, 9), ("1 Timothy", 3, 2), "respectable, sound mind"),
+    (("Romans", 12, 13), ("1 Timothy", 3, 2), "hospitality"),
+    (("Philippians", 4, 5), ("1 Timothy", 3, 3), "reasonable"),
+    (("1 Thessalonians", 5, 12), ("1 Timothy", 3, 4), "those who lead"),
+    (("Luke", 10, 35), ("1 Timothy", 3, 5), "take care of him"),
+    (("Ephesians", 4, 27), ("1 Timothy", 3, 7), "the devil"),
+    (("Acts", 6, 3), ("1 Timothy", 3, 7), "of good testimony"),
+    (("Philippians", 1, 1), ("1 Timothy", 3, 8), "overseers and servants"),
+    (("Acts", 6, 2), ("1 Timothy", 3, 8), "serve tables"),
+    (("Colossians", 1, 26), ("1 Timothy", 3, 9), "the mystery"),
+    (("Romans", 16, 1), ("1 Timothy", 3, 11), "Phoebe, servant of the congregation"),
+    (("Acts", 4, 13), ("1 Timothy", 3, 13), "boldness"),
+    (("1 Timothy", 1, 3), ("1 Timothy", 3, 14), "left at Ephesus"),
+    (("Ephesians", 2, 19), ("1 Timothy", 3, 15), "household of God"),
+    (("Galatians", 2, 9), ("1 Timothy", 3, 15), "pillars"),
+    (("Colossians", 1, 23), ("1 Timothy", 3, 15), "firm"),
+    (("Romans", 10, 9), ("1 Timothy", 3, 16), "confess"),
+    (("Romans", 1, 3), ("1 Timothy", 3, 16), "flesh and Spirit"),
+    (("1 Corinthians", 15, 5), ("1 Timothy", 3, 16), "he was seen"),
+    (("Acts", 1, 2), ("1 Timothy", 3, 16), "taken up"),
+])
+
+CHAPTER_ART["1ti3"] = [dict(
+    file="sinaiticus-1-timothy-3-16.jpg",
+    title="1 Timothy 3:16 in Codex Sinaiticus, with a corrector&rsquo;s mark above the line",   title_es="1 Timoteo 3:16 en el Códice Sinaítico, con una marca de corrector sobre la línea",
+    artist="Unknown scribe; detail of Codex Sinaiticus",
+    year="4th century",
+    location="British Library, London",
+    location_es="Biblioteca Británica, Londres",
+    alt="A close photograph of four lines of brown Greek capital letters on pale parchment, written without spaces between words. The lines read TO TES "
+        "EUSEBEIAS MYSTERION OS EPHANEROTHE EN SARKI EDIKAIOTHE EN: the mystery of godliness, who was made manifest in flesh, was vindicated in. Above the "
+        "word OS a later hand has written small letters between marks.",
+    note="&#9888; The line of verse 16 as Codex Sinaiticus first wrote it: &Omicron;&Sigma;, &lsquo;who was made manifest in flesh.&rsquo; Above it a later "
+         "corrector has added the letters for <em>theos</em>, &lsquo;God,&rsquo; the reading of most later manuscripts and of the King James Version "
+         "(<a href=\"1-timothy-3.html#v3-16\">verse 16</a>).",
+    note_es="&#9888; La línea del versículo 16 tal como la escribió primero el Códice Sinaítico: &Omicron;&Sigma;, «el que fue manifestado en carne». Encima, un "
+            "corrector posterior ha añadido las letras de <em>theos</em>, «Dios», la lectura de la mayoría de los manuscritos posteriores y de la Reina-Valera "
+            "(<a href=\"1-timothy-3.es.html#v3-16\">versículo 16</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Cod._Sinaiticus_1_Tim_3,16.jpg",
+)]
+
+CHRON_CHAPTERS["1ti3"] = dict(era='apostolic',
+    when="The overseer and the servants, and what each must be; 'women likewise'; the household of God, a pillar and mainstay of the truth; and the six-line confession 'great is the mystery of godliness.'",
+    clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
+
