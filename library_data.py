@@ -39411,3 +39411,137 @@ CHRON_CHAPTERS["1th5"] = dict(era='apostolic',
     when="The day of the Lord comes like a thief in the night, but the readers are sons of light, to stay awake and be sober; then the last instructions, a prayer that spirit, soul and body be kept whole, the holy kiss, and an oath that the letter be read to all.",
     clock="c. AD 50–51, from Corinth; a note added in later copies says Athens.")
 
+# ---- 2 Thessalonians 2 -----------------------------------------------------------
+DICTIONARY.append(('apostasia', 'apostasia', 'ἀποστασία', 'apostasia',
+    'REVOLT, DEFECTION, APOSTASY &mdash; from <em>aphist&#275;mi</em>, &lsquo;to stand away from&rsquo;; in Greek a rebellion, political or religious. &#9888; It stands in two verses of the New Testament: <a href="acts-21.html#v21-21">Acts 21:21</a>, the charge that Paul taught &lsquo;apostasy from Moses,&rsquo; and <a href="2-thessalonians-2.html#v2-3">2 Thessalonians 2:3</a>, &lsquo;unless the apostasy comes first,&rsquo; with the article, as of something the readers knew. Readers take the second as a falling away from the faith, as a revolt against God, or, with some pretribulational writers, as the departure of the church, pointing to the Geneva Bible&rsquo;s &lsquo;a departing.&rsquo; A different noun, <em>apostasion</em>, is the &lsquo;certificate of divorce&rsquo; of <a href="matthew-5.html#v5-31">Matthew 5:31</a>. KJV &lsquo;a falling away,&rsquo; NWT 1984 &lsquo;the apostasy,&rsquo; NIV &lsquo;the rebellion.&rsquo;',
+    ('2 Thessalonians', 2, 3)))
+DICTIONARY_ES['apostasia'] = ('apostasía',
+    'REBELIÓN, DEFECCIÓN, APOSTASÍA &mdash; de <em>aphist&#275;mi</em>, «apartarse»; en griego una rebelión, política o religiosa. &#9888; Está en dos versículos del Nuevo Testamento: <a href="acts-21.es.html#v21-21">Hechos 21:21</a>, la acusación de que Pablo enseñaba «la apostasía de Moisés», y <a href="2-thessalonians-2.es.html#v2-3">2 Tesalonicenses 2:3</a>, «sin que antes venga la apostasía», con artículo, como de algo que los lectores conocían. Los lectores entienden la segunda como un alejamiento de la fe, como una rebelión contra Dios o, con algunos autores pretribulacionistas, como la partida de la iglesia, apoyándose en el «a departing» de la Biblia de Ginebra inglesa. Un sustantivo distinto, <em>apostasion</em>, es el «certificado de divorcio» de Mateo 5:31 (ya en estas páginas, todavía no en español). RV60 «la apostasía», NVI «la rebelión contra Dios».')
+
+DICTIONARY.append(('anomos', 'anomos', 'ἄνομος', 'anomos',
+    'LAWLESS, without law &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>nomos</em>, &lsquo;law.&rsquo; &#9888; At <a href="2-thessalonians-2.html#v2-8">2 Thessalonians 2:8</a> it is a title, &lsquo;the lawless one,&rsquo; the &lsquo;man of lawlessness&rsquo; of 2:3 (see <em>anomia</em>, the noun, a separate entry). Elsewhere it is the &lsquo;lawless&rsquo; among whom Jesus was numbered at <a href="luke-22.html#v22-37">Luke 22:37</a>, the &lsquo;lawless men&rsquo; by whose hand he was killed at <a href="acts-2.html#v2-23">Acts 2:23</a>, and, without blame, those &lsquo;outside the law&rsquo; to whom Paul became as one outside the law at <a href="1-corinthians-9.html#v21">1 Corinthians 9:21</a>. KJV &lsquo;that Wicked&rsquo;; ASV and NWT 1984 &lsquo;the lawless one.&rsquo;',
+    ('2 Thessalonians', 2, 8)))
+DICTIONARY_ES['anomos'] = ('ánomos',
+    'SIN LEY, inicuo &mdash; <em>a-</em>, «no», y <em>nomos</em>, «ley». &#9888; En <a href="2-thessalonians-2.es.html#v2-8">2 Tesalonicenses 2:8</a> es un título, «el inicuo», el «hombre de la iniquidad» de 2:3 (véase <em>anomia</em>, el sustantivo, una entrada aparte). En otros lugares son los «inicuos» entre los que Jesús fue contado en <a href="luke-22.es.html#v22-37">Lucas 22:37</a>, los «inicuos» por cuya mano fue muerto en <a href="acts-2.es.html#v2-23">Hechos 2:23</a> y, sin reproche, los que «están sin ley» para quienes Pablo se hizo como sin ley en <a href="1-corinthians-9.es.html#v21">1 Corintios 9:21</a>. RV60 «aquel inicuo»; TNM 1987 «el desaforado».')
+
+DICTIONARY.append(('katecho', 'katechō', 'κατέχω', 'katechō',
+    'TO HOLD FAST, TO HOLD BACK &mdash; <em>kata</em> and <em>ech&#333;</em>, &lsquo;to have, to hold.&rsquo; &#9888; The same verb faces two ways. It keeps hold of something good: &lsquo;hold fast to the traditions&rsquo; at <a href="1-corinthians-11.html#v2">1 Corinthians 11:2</a>, &lsquo;hold fast what is good&rsquo; at <a href="1-thessalonians-5.html#v5-21">1 Thessalonians 5:21</a>. And it holds someone back: the crowds &lsquo;tried to hold him back from leaving them&rsquo; at <a href="luke-4.html#v4-42">Luke 4:42</a>, and &lsquo;what restrains&rsquo; and &lsquo;the one who restrains&rsquo; at <a href="2-thessalonians-2.html#v2-6">2 Thessalonians 2:6</a>&ndash;7, the <em>katechon</em>, neuter and then masculine. Who or what restrains has been argued since Tertullian, who named the Roman state, and Augustine, who wrote, &lsquo;I frankly confess I do not know what he means.&rsquo; KJV &lsquo;what withholdeth&hellip; he who now letteth,&rsquo; ASV &lsquo;that which restraineth.&rsquo;',
+    ('2 Thessalonians', 2, 6)))
+DICTIONARY_ES['katecho'] = ('katéchō',
+    'RETENER, CONTENER &mdash; <em>kata</em> y <em>ech&#333;</em>, «tener, sostener». &#9888; El mismo verbo mira en dos direcciones. Retiene algo bueno: «mantienen firmes las tradiciones» en <a href="1-corinthians-11.es.html#v2">1 Corintios 11:2</a>, «retengan lo bueno» en <a href="1-thessalonians-5.es.html#v5-21">1 Tesalonicenses 5:21</a>. Y contiene a alguien: las multitudes «trataban de retenerlo para que no se fuera de ellos» en <a href="luke-4.es.html#v4-42">Lucas 4:42</a>, y «lo que retiene» y «el que retiene» en <a href="2-thessalonians-2.es.html#v2-6">2 Tesalonicenses 2:6</a>&ndash;7, el <em>katechon</em>, neutro y luego masculino. Quién o qué retiene se discute desde Tertuliano, que nombró al Estado romano, y Agustín, que confesó no saber qué quiso decir el apóstol. RV60 «lo que lo detiene», RV 1909 «lo que impide».')
+
+DICTIONARY.append(('sebasma', 'sebasma', 'σέβασμα', 'sebasma',
+    'AN OBJECT OF WORSHIP &mdash; from <em>sebazomai</em>, &lsquo;to revere, to worship.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="acts-17.html#v17-23">Acts 17:23</a>, the Athenians&rsquo; &lsquo;things you revere,&rsquo; among which Paul found an altar &lsquo;To an unknown god,&rsquo; and <a href="2-thessalonians-2.html#v2-4">2 Thessalonians 2:4</a>, where the man of lawlessness lifts himself up &lsquo;above every so-called god or object of worship.&rsquo; KJV &lsquo;or that is worshipped&rsquo;; NWT 1984 &lsquo;an object of reverence.&rsquo;',
+    ('2 Thessalonians', 2, 4)))
+DICTIONARY_ES['sebasma'] = ('sébasma',
+    'OBJETO DE CULTO &mdash; de <em>sebazomai</em>, «venerar, adorar». &#9888; Está en dos versículos del Nuevo Testamento: <a href="acts-17.es.html#v17-23">Hechos 17:23</a>, «lo que ustedes veneran» de los atenienses, entre lo cual Pablo halló un altar «A un dios desconocido», y <a href="2-thessalonians-2.es.html#v2-4">2 Tesalonicenses 2:4</a>, donde el hombre de la iniquidad se levanta «por encima de todo lo que se llama dios o es objeto de culto». RV60 «o es objeto de culto»; TNM 1987 «objeto de reverencia».')
+
+DICTIONARY.append(('throeo', 'throeō', 'θροέω', 'throeō',
+    'TO BE ALARMED, startled &mdash; from <em>throos</em>, an outcry. &#9888; It stands in three verses of the New Testament, always in the passive and always a warning against alarm about the end: &lsquo;See that you are not alarmed&rsquo; at <a href="matthew-24.html#v24-6">Matthew 24:6</a>, &lsquo;do not be alarmed&rsquo; at <a href="mark-13.html#v13-7">Mark 13:7</a>, and &lsquo;not to be quickly shaken from your mind or alarmed&rsquo; at <a href="2-thessalonians-2.html#v2-2">2 Thessalonians 2:2</a>, against the rumor that the day of the Lord had come. KJV at 2:2 &lsquo;or be troubled&rsquo;; NWT 1984 &lsquo;nor to be excited.&rsquo;',
+    ('2 Thessalonians', 2, 2)))
+DICTIONARY_ES['throeo'] = ('throéō',
+    'ALARMARSE, sobresaltarse &mdash; de <em>throos</em>, un griterío. &#9888; Está en tres versículos del Nuevo Testamento, siempre en pasiva y siempre como advertencia contra la alarma por el fin: «Miren, no se alarmen» en <a href="matthew-24.es.html#v24-6">Mateo 24:6</a>, «no se alarmen» en <a href="mark-13.es.html#v13-7">Marcos 13:7</a>, y «que no se dejen sacudir pronto en su modo de pensar ni se alarmen» en <a href="2-thessalonians-2.es.html#v2-2">2 Tesalonicenses 2:2</a>, contra el rumor de que el día del Señor había llegado. RV60 en 2:2 «ni os conturbéis»; TNM 1987 «ni se dejen excitar».')
+
+DICTIONARY.append(('episynagoge', 'episynagōgē', 'ἐπισυναγωγή', 'episynagōgē',
+    'A GATHERING TOGETHER, an assembling &mdash; <em>epi</em>, <em>syn</em> and <em>ag&#333;</em>, &lsquo;to lead together to.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="2-thessalonians-2.html#v2-1">2 Thessalonians 2:1</a>, &lsquo;our being gathered together to him,&rsquo; and Hebrews 10:25, of the believers&rsquo; meeting together, which some were neglecting (not yet on these pages). Its verb is Jesus&rsquo; word for the angels who &lsquo;will gather together his chosen from the four winds&rsquo; at <a href="matthew-24.html#v24-31">Matthew 24:31</a>. KJV &lsquo;our gathering together unto him&rsquo;; NWT 1984 &lsquo;our being gathered together to him.&rsquo;',
+    ('2 Thessalonians', 2, 1)))
+DICTIONARY_ES['episynagoge'] = ('episynagōgḗ',
+    'REUNIÓN, el reunirse &mdash; <em>epi</em>, <em>syn</em> y <em>ag&#333;</em>, «conducir juntos hacia». &#9888; Está en dos versículos del Nuevo Testamento: <a href="2-thessalonians-2.es.html#v2-1">2 Tesalonicenses 2:1</a>, «nuestra reunión con él», y Hebreos 10:25, de las reuniones de los creyentes que algunos descuidaban (todavía no en estas páginas). Su verbo es la palabra de Jesús para los ángeles que «reunirán a sus escogidos de los cuatro vientos» en <a href="matthew-24.es.html#v24-31">Mateo 24:31</a>. RV60 «nuestra reunión con él»; TNM 1987 «el ser nosotros reunidos a él».')
+
+DICTIONARY.append(('energeia', 'energeia', 'ἐνέργεια', 'energeia',
+    'WORKING, active power, operation &mdash; from <em>energe&#333;</em>, &lsquo;to be at work&rsquo;; English &lsquo;energy&rsquo; comes from it. &#9888; It stands in eight verses of the New Testament, all in Paul. Mostly it is God&rsquo;s power at work: &lsquo;the working of the might of his strength&rsquo; at <a href="ephesians-1.html#v19">Ephesians 1:19</a>, &lsquo;faith in the working of God&rsquo; at <a href="colossians-2.html#v2-12">Colossians 2:12</a>. At <a href="2-thessalonians-2.html#v2-9">2 Thessalonians 2:9</a> it is &lsquo;the working of Satan,&rsquo; and at <a href="2-thessalonians-2.html#v2-11">2 Thessalonians 2:11</a> &lsquo;a working of error&rsquo; that God sends. KJV &lsquo;the working of Satan&rsquo; and &lsquo;strong delusion&rsquo;; NWT 1984 &lsquo;the operation of Satan&rsquo; and &lsquo;an operation of error.&rsquo;',
+    ('2 Thessalonians', 2, 9)))
+DICTIONARY_ES['energeia'] = ('enérgeia',
+    'OPERACIÓN, poder en acción &mdash; de <em>energe&#333;</em>, «estar obrando»; de ella viene «energía». &#9888; Está en ocho versículos del Nuevo Testamento, todos de Pablo. Casi siempre es el poder de Dios en acción: «la operación del vigor de su fuerza» en <a href="ephesians-1.es.html#v19">Efesios 1:19</a>, «la fe en la operación de Dios» en <a href="colossians-2.es.html#v2-12">Colosenses 2:12</a>. En <a href="2-thessalonians-2.es.html#v2-9">2 Tesalonicenses 2:9</a> es «la operación de Satanás», y en <a href="2-thessalonians-2.es.html#v2-11">2 Tesalonicenses 2:11</a> «una operación de error» que Dios envía. RV60 «por obra de Satanás» y «un poder engañoso»; TNM 1987 «la operación de Satanás» y «una operación de error».')
+
+DICTIONARY.append(('plane', 'planē', 'πλάνη', 'planē',
+    'ERROR, a wandering, a leading astray &mdash; the noun of <em>plana&#333;</em>, &lsquo;to lead astray&rsquo;; the &lsquo;planets&rsquo; were the wandering stars. &#9888; Paul disowns it at <a href="1-thessalonians-2.html#v2-3">1 Thessalonians 2:3</a>, &lsquo;our exhortation does not come from error,&rsquo; and names it at <a href="2-thessalonians-2.html#v2-11">2 Thessalonians 2:11</a>, &lsquo;God sends them a working of error, so that they believe the lie.&rsquo; KJV at 2:11 &lsquo;strong delusion&rsquo;; ASV &lsquo;a working of error.&rsquo;',
+    ('2 Thessalonians', 2, 11)))
+DICTIONARY_ES['plane'] = ('plánē',
+    'ERROR, extravío &mdash; el sustantivo de <em>plana&#333;</em>, «extraviar»; los «planetas» eran las estrellas errantes. &#9888; Pablo la rechaza en <a href="1-thessalonians-2.es.html#v2-3">1 Tesalonicenses 2:3</a>, «nuestra exhortación no procede del error», y la nombra en <a href="2-thessalonians-2.es.html#v2-11">2 Tesalonicenses 2:11</a>, «Dios les envía una operación de error, para que crean la mentira». RV60 en 2:11 «un poder engañoso»; RV 1909 «operación de error».')
+
+DICTIONARY.append(('enistemi', 'enistēmi', 'ἐνίστημι', 'enistēmi',
+    'TO BE PRESENT, to have arrived &mdash; <em>en</em> and <em>hist&#275;mi</em>, &lsquo;to stand in&rsquo;; in the perfect, to have set in, to be here now. &#9888; Its forms stand in six verses of the New Testament, and five of them speak of what is already present: &lsquo;things present&rsquo; at <a href="romans-8.html#v8-38">Romans 8:38</a> and <a href="1-corinthians-3.html#v22">1 Corinthians 3:22</a>, &lsquo;the present distress&rsquo; at <a href="1-corinthians-7.html#v26">1 Corinthians 7:26</a>, &lsquo;the present evil age&rsquo; at <a href="galatians-1.html#v4">Galatians 1:4</a>, and Hebrews 9:9 (not yet on these pages). The sixth is <a href="2-thessalonians-2.html#v2-2">2 Thessalonians 2:2</a>, the rumor &lsquo;that the day of the Lord has come.&rsquo; KJV &lsquo;is at hand&rsquo; and ASV &lsquo;is just at hand&rsquo; make it a claim about nearness; NIV &lsquo;has already come&rsquo;; NWT 1984 &lsquo;is here.&rsquo;',
+    ('2 Thessalonians', 2, 2)))
+DICTIONARY_ES['enistemi'] = ('enístēmi',
+    'ESTAR PRESENTE, haber llegado &mdash; <em>en</em> e <em>hist&#275;mi</em>, «estar en»; en perfecto, haberse instalado, estar ya aquí. &#9888; Sus formas están en seis versículos del Nuevo Testamento, y cinco hablan de lo que ya está presente: «lo presente» en <a href="romans-8.es.html#v8-38">Romanos 8:38</a> y <a href="1-corinthians-3.es.html#v22">1 Corintios 3:22</a>, «la angustia presente» en <a href="1-corinthians-7.es.html#v26">1 Corintios 7:26</a>, «el presente siglo malo» en <a href="galatians-1.es.html#v4">Gálatas 1:4</a>, y Hebreos 9:9 (todavía no en estas páginas). El sexto es <a href="2-thessalonians-2.es.html#v2-2">2 Tesalonicenses 2:2</a>, el rumor de que «el día del Señor ya ha llegado». RV60 «está cerca» lo convierte en una afirmación de cercanía; NVI «¡Ya llegó el día del Señor!»; TNM 1987 «esté aquí».')
+
+DICTIONARY_ES['epiphaneia'] = ('epipháneia',
+    'UNA APARICIÓN, una manifestación &mdash; <em>epi</em>, «sobre», y <em>phain&#333;</em>, «brillar, aparecer»: un resplandecer. En el griego más amplio nombraba la súbita manifestación de un dios y, en el culto imperial, la visita de un emperador a una ciudad. &#9888; Es la palabra característica de las cartas PASTORALES para la venida de Cristo, usada tanto de su PRIMERA aparición, «manifestada por la aparición de nuestro Salvador Cristo Jesús» en <a href="2-timothy-1.es.html#v10">2 Timoteo 1:10</a>, como de su REGRESO, en Tito 2:13 y 1 Timoteo 6:14 (todavía no en estas páginas), donde el resto de Pablo prefiere <em>parousia</em>. Fuera de esas cartas está una sola vez, en <a href="2-thessalonians-2.es.html#v2-8">2 Tesalonicenses 2:8</a>, unida a <em>parousia</em>: «la aparición de su presencia». De ella descienden directamente «epifanía» y la fiesta de la Epifanía.')
+
+def _2th2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_2th2_fix([('and 2 Thessalonians 2:4 (not yet on these pages), of the one who &lsquo;exalts himself above every so-called god.&rsquo;', 'and <a href="2-thessalonians-2.html#v2-4">2 Thessalonians 2:4</a>, of the one who &lsquo;lifts himself up above every so-called god.&rsquo;'), ('y 2 Tesalonicenses 2:4 (todavía no en estas páginas), del que «se levanta contra todo lo que se llama dios».', 'y <a href="2-thessalonians-2.es.html#v2-4">2 Tesalonicenses 2:4</a>, del que «se levanta por encima de todo lo que se llama dios».'), ('(2 Thessalonians 2:15, not yet on these pages)', '(<a href="2-thessalonians-2.html#v2-15">2 Thessalonians 2:15</a>)'), ('where the rest of Paul prefers parousia.', 'where the rest of Paul prefers parousia. Outside those letters it stands once, at <a href="2-thessalonians-2.html#v2-8">2 Thessalonians 2:8</a>, joined to parousia: ‘the appearing of his presence.’'), ('«retengan las tradiciones… ya sea de palabra o por carta nuestra» (2 Tesalonicenses 2:15, todavía no en estas páginas)', '«aférrense a las tradiciones… sea de palabra o por carta nuestra» (<a href="2-thessalonians-2.es.html#v2-15">2 Tesalonicenses 2:15</a>)'), ('<a href="1-thessalonians-4.html#v4-7">7</a>; and 2 Thessalonians 2:13, 1 Timothy 2:15 and Hebrews 12:14 (these three not yet on these pages).', '<a href="1-thessalonians-4.html#v4-7">7</a>; <a href="2-thessalonians-2.html#v2-13">2 Thessalonians 2:13</a>; and 1 Timothy 2:15 and Hebrews 12:14 (these two not yet on these pages).'), ('<a href="1-thessalonians-4.es.html#v4-7">7</a>; y 2 Tesalonicenses 2:13, 1 Timoteo 2:15 y Hebreos 12:14 (estos tres todavía no en estas páginas).', '<a href="1-thessalonians-4.es.html#v4-7">7</a>; <a href="2-thessalonians-2.es.html#v2-13">2 Tesalonicenses 2:13</a>; y 1 Timoteo 2:15 y Hebreos 12:14 (estos dos todavía no en estas páginas).'), ('2 Corinthians 11:3</a>, 2 Thessalonians 2:3 and 1 Timothy 2:14 (the last two not yet on these pages);', '2 Corinthians 11:3</a>, <a href="2-thessalonians-2.html#v2-3">2 Thessalonians 2:3</a> and 1 Timothy 2:14 (the last not yet on these pages);'), ('2 Corintios 11:3</a>, 2 Tesalonicenses 2:3 y 1 Timoteo 2:14 (estos dos últimos todavía no en estas páginas);', '2 Corintios 11:3</a>, <a href="2-thessalonians-2.es.html#v2-3">2 Tesalonicenses 2:3</a> y 1 Timoteo 2:14 (este último todavía no en estas páginas);'), ('Romans 16:5, 1 Corinthians 15:20 and 15:23 (Christ), 1 Corinthians 16:15, 2 Thessalonians 2:13, James 1:18 and Revelation 14:4 (those seven not yet on these pages).', '<a href="romans-16.html#v16-5">Romans 16:5</a>, <a href="1-corinthians-15.html#v20">1 Corinthians 15:20</a> and <a href="1-corinthians-15.html#v23">15:23</a> (Christ), <a href="1-corinthians-16.html#v15">1 Corinthians 16:15</a>, <a href="2-thessalonians-2.html#v2-13">2 Thessalonians 2:13</a>, <a href="james-1.html#v18">James 1:18</a> and Revelation 14:4 (the last not yet on these pages).'), ('Romanos 16:5, 1 Corintios 15:20 y 15:23 (Cristo), 1 Corintios 16:15, 2 Tesalonicenses 2:13, Santiago 1:18 y Apocalipsis 14:4 (esos siete todavía no en estas páginas).', '<a href="romans-16.es.html#v16-5">Romanos 16:5</a>, <a href="1-corinthians-15.es.html#v20">1 Corintios 15:20</a> y <a href="1-corinthians-15.es.html#v23">15:23</a> (Cristo), <a href="1-corinthians-16.es.html#v15">1 Corintios 16:15</a>, <a href="2-thessalonians-2.es.html#v2-13">2 Tesalonicenses 2:13</a>, <a href="james-1.es.html#v18">Santiago 1:18</a> y Apocalipsis 14:4 (este último todavía no en estas páginas).')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"satan": [("2 Thessalonians", 2, 9)]}.get(_e["slug"], [])
+    if _add:
+        _e["refs"] = list(_e["refs"]) + [r for r in _add if tuple(r) not in {tuple(x) for x in _e["refs"]}]
+
+XREFS.extend([
+    (("1 Thessalonians", 4, 17), ("2 Thessalonians", 2, 1), "gathered together to him"),
+    (("Matthew", 24, 31), ("2 Thessalonians", 2, 1), "gather together"),
+    (("Matthew", 24, 6), ("2 Thessalonians", 2, 2), "not alarmed"),
+    (("1 Thessalonians", 5, 2), ("2 Thessalonians", 2, 2), "the day of the Lord"),
+    (("Acts", 21, 21), ("2 Thessalonians", 2, 3), "apostasy"),
+    (("John", 17, 12), ("2 Thessalonians", 2, 3), "the son of destruction"),
+    (("Daniel", 11, 36), ("2 Thessalonians", 2, 4), "above every god"),
+    (("Matthew", 24, 15), ("2 Thessalonians", 2, 4), "in a holy place"),
+    (("Acts", 17, 23), ("2 Thessalonians", 2, 4), "objects of worship"),
+    (("1 Thessalonians", 5, 21), ("2 Thessalonians", 2, 6), "hold fast / restrain"),
+    (("1 Corinthians", 2, 7), ("2 Thessalonians", 2, 7), "mystery"),
+    (("2 Timothy", 1, 10), ("2 Thessalonians", 2, 8), "the appearing"),
+    (("Mark", 13, 22), ("2 Thessalonians", 2, 9), "signs and wonders"),
+    (("Revelation", 13, 13), ("2 Thessalonians", 2, 9), "great signs"),
+    (("Romans", 1, 24), ("2 Thessalonians", 2, 11), "God gave them over"),
+    (("Romans", 1, 25), ("2 Thessalonians", 2, 11), "the lie"),
+    (("Deuteronomy", 33, 12), ("2 Thessalonians", 2, 13), "beloved of the Lord"),
+    (("1 Thessalonians", 1, 4), ("2 Thessalonians", 2, 13), "brothers loved"),
+    (("1 Corinthians", 15, 20), ("2 Thessalonians", 2, 13), "firstfruits"),
+    (("1 Thessalonians", 5, 9), ("2 Thessalonians", 2, 14), "for obtaining"),
+    (("1 Corinthians", 11, 2), ("2 Thessalonians", 2, 15), "the traditions"),
+    (("1 Thessalonians", 3, 11), ("2 Thessalonians", 2, 16), "the Father and the Lord, one verb"),
+])
+
+CHAPTER_ART["2th2"] = [dict(
+    file="signorelli-sermon-deeds-antichrist.jpg",
+    title="Sermon and Deeds of the Antichrist",   title_es="Predicación y hechos del Anticristo",
+    artist="Luca Signorelli",
+    year="1499–1502",
+    location="San Brizio Chapel, Orvieto Cathedral",
+    location_es="Capilla de San Brizio, catedral de Orvieto",
+    alt="A large fresco under an arch. In the foreground a bearded figure in a red robe, made to look like Christ, stands on a pedestal preaching to a crowd while a "
+        "devil at his shoulder whispers in his ear. Behind them a great domed temple rises on a hill with figures on its steps, and at upper left a figure falls "
+        "headlong from the sky amid rays of light, scattering the people below. At the left edge two men in black robes look out at the viewer.",
+    note="&#9888; Painted for a cathedral chapel at the turn of the year 1500, the fresco gives the deceiver Christ&rsquo;s own face and a devil for a "
+         "prompter, with a temple behind and his fall above. &lsquo;The one whose presence is by the working of Satan, with every power and signs and wonders "
+         "of falsehood&rsquo; (<a href=\"2-thessalonians-2.html#v2-9\">verse 9</a>).",
+    note_es="&#9888; Pintado para una capilla de catedral hacia el año 1500, el fresco da al engañador el rostro de Cristo y un diablo por apuntador, con "
+            "un templo detrás y su caída arriba. «Aquel cuya presencia es conforme a la operación de Satanás, con todo poder y señales y prodigios de mentira» "
+            "(<a href=\"2-thessalonians-2.es.html#v2-9\">versículo 9</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Luca_Signorelli_-_Sermon_and_Deeds_of_the_Antichrist_-_WGA21202.jpg",
+)]
+
+CHRON_CHAPTERS["2th2"] = dict(era='apostolic',
+    when="Against a rumor that the day of the Lord had already come: first the apostasy and the man of lawlessness, held back for now by what restrains; then thanks for readers chosen for salvation, and the charge to hold to the traditions.",
+    clock="Undated by the text; on the traditional reading, from Corinth soon after the first letter, c. AD 50–51; many scholars date the letter later.")
+
