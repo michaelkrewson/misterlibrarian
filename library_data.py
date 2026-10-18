@@ -40527,3 +40527,195 @@ CHRON_CHAPTERS["2ti2"] = dict(era='apostolic',
     when="Paul in chains writes to Timothy: the soldier, the athlete and the farmer; 'Remember Jesus Christ, raised from the dead'; a faithful saying; rightly handling the word of truth against talk that spreads like gangrene; vessels for honor; and the Lord's slave who must not quarrel.",
     clock="Undated by the text; on the traditional reading, Paul's last imprisonment at Rome, mid-60s AD; many scholars date the Pastoral letters later.")
 
+# ---- 2 Timothy 3 -----------------------------------------------------------
+DICTIONARY.append(('philautos', 'philautos', 'φίλαυτος', 'philautos',
+    'A LOVER OF SELF &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>autos</em>, &lsquo;self.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-2">2 Timothy 3:2</a>, where it opens the list of the last days, &lsquo;people will be lovers of self, lovers of money,&rsquo; and the list closes with &lsquo;lovers of pleasure rather than lovers of God&rsquo; (<a href="2-timothy-3.html#v3-4">3:4</a>). KJV &lsquo;lovers of their own selves&rsquo;; ASV &lsquo;lovers of self.&rsquo;',
+    ('2 Timothy', 3, 2)))
+DICTIONARY_ES['philautos'] = ('fílautos',
+    'AMANTE DE SÍ MISMO &mdash; <em>philos</em>, «que ama», y <em>autos</em>, «uno mismo». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-2">2 Timoteo 3:2</a>, donde abre la lista de los últimos días, «los hombres serán amantes de sí mismos, amantes del dinero», y la lista se cierra con «amantes de los placeres más que amantes de Dios» (<a href="2-timothy-3.es.html#v3-4">3:4</a>). RV60 «amadores de sí mismos»; TNM 1987 «amadores de sí mismos».')
+
+DICTIONARY.append(('astorgos', 'astorgos', 'ἄστοργος', 'astorgos',
+    'WITHOUT NATURAL AFFECTION &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>storg&#275;</em>, the love that holds parents and children together. &#9888; It stands in two verses of the New Testament, both in vice-lists: <a href="romans-1.html#v31">Romans 1:31</a> and <a href="2-timothy-3.html#v3-3">2 Timothy 3:3</a>. KJV &lsquo;without natural affection&rsquo; in both; NIV at 2 Timothy 3:3 &lsquo;without love.&rsquo;',
+    ('Romans', 1, 31)))
+DICTIONARY_ES['astorgos'] = ('ástorgos',
+    'SIN AFECTO NATURAL &mdash; <em>a-</em>, «sin», y <em>storg&#275;</em>, el amor que une a padres e hijos. &#9888; Está en dos versículos del Nuevo Testamento, los dos en listas de vicios: <a href="romans-1.es.html#v31">Romanos 1:31</a> y <a href="2-timothy-3.es.html#v3-3">2 Timoteo 3:3</a>. RV60 «sin afecto natural» en los dos; NVI en 2 Timoteo 3:3 «insensibles».')
+
+DICTIONARY.append(('aspondos', 'aspondos', 'ἄσπονδος', 'aspondos',
+    'IRRECONCILABLE, one who will make no truce &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>spond&#275;</em>, the drink offering poured out when a truce was sworn. &#9888; It stands in one verse of the printed New Testament, <a href="2-timothy-3.html#v3-3">2 Timothy 3:3</a>; the Byzantine text has it at <a href="romans-1.html#v31">Romans 1:31</a> as well, where the KJV prints &lsquo;implacable.&rsquo; KJV at 2 Timothy 3:3 &lsquo;trucebreakers&rsquo;; ASV &lsquo;implacable&rsquo;; NWT 1984 &lsquo;not open to any agreement.&rsquo;',
+    ('2 Timothy', 3, 3)))
+DICTIONARY_ES['aspondos'] = ('áspondos',
+    'IRRECONCILIABLE, el que no acepta tregua &mdash; <em>a-</em>, «sin», y <em>spond&#275;</em>, la libación que se derramaba al jurar una tregua. &#9888; Está en un solo versículo del Nuevo Testamento impreso, <a href="2-timothy-3.es.html#v3-3">2 Timoteo 3:3</a>; el texto bizantino la tiene también en <a href="romans-1.es.html#v31">Romanos 1:31</a>. RV 1909 en 2 Timoteo 3:3 «desleales»; RV60 «implacables»; TNM 1987 «no dispuestos a ningún acuerdo».')
+
+DICTIONARY.append(('aphilagathos', 'aphilagathos', 'ἀφιλάγαθος', 'aphilagathos',
+    'NO LOVER OF GOOD &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>philagathos</em>, &lsquo;a lover of good.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-3">2 Timothy 3:3</a>, in the list of the last days; its opposite, &lsquo;a lover of good,&rsquo; is asked of the overseer at <a href="titus-1.html#v8">Titus 1:8</a>. KJV &lsquo;despisers of those that are good&rsquo;; ASV &lsquo;no lovers of good.&rsquo;',
+    ('2 Timothy', 3, 3)))
+DICTIONARY_ES['aphilagathos'] = ('afilágathos',
+    'SIN AMOR AL BIEN &mdash; <em>a-</em>, «no», y <em>philagathos</em>, «amante del bien». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-3">2 Timoteo 3:3</a>, en la lista de los últimos días; su contrario, «amante del bien», se pide al supervisor en <a href="titus-1.es.html#v8">Tito 1:8</a>. RV60 «aborrecedores de lo bueno»; TNM 1987 «sin amor del bien».')
+
+DICTIONARY.append(('philedonos', 'philēdonos', 'φιλήδονος', 'philēdonos',
+    'A LOVER OF PLEASURE &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>h&#275;don&#275;</em>, &lsquo;pleasure.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-4">2 Timothy 3:4</a>, &lsquo;lovers of pleasure rather than lovers of God,&rsquo; the pair that closes the list of the last days (see <a href="dictionary.html#philotheos">philotheos</a>). KJV &lsquo;lovers of pleasures more than lovers of God&rsquo;; ASV &lsquo;lovers of pleasure rather than lovers of God.&rsquo;',
+    ('2 Timothy', 3, 4)))
+DICTIONARY_ES['philedonos'] = ('filḗdonos',
+    'AMANTE DE LOS PLACERES &mdash; <em>philos</em>, «que ama», y <em>h&#275;don&#275;</em>, «placer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-4">2 Timoteo 3:4</a>, «amantes de los placeres más que amantes de Dios», el par que cierra la lista de los últimos días (véase <a href="diccionario.html#philotheos">philotheos</a>). RV60 «amadores de los deleites más que de Dios»; TNM 1987 «amadores de placeres más bien que amadores de Dios».')
+
+DICTIONARY.append(('philotheos', 'philotheos', 'φιλόθεος', 'philotheos',
+    'A LOVER OF GOD &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>theos</em>, &lsquo;God.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-4">2 Timothy 3:4</a>, and there only as what the people of the last days are not: &lsquo;lovers of pleasure rather than lovers of God&rsquo; (see <a href="dictionary.html#philedonos">phil&#275;donos</a>). Douay &lsquo;lovers of pleasures more than of God&rsquo;; NIV &lsquo;lovers of pleasure rather than lovers of God.&rsquo;',
+    ('2 Timothy', 3, 4)))
+DICTIONARY_ES['philotheos'] = ('filótheos',
+    'AMANTE DE DIOS &mdash; <em>philos</em>, «que ama», y <em>theos</em>, «Dios». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-4">2 Timoteo 3:4</a>, y allí solo como lo que no son los hombres de los últimos días: «amantes de los placeres más que amantes de Dios» (véase <a href="diccionario.html#philedonos">phil&#275;donos</a>). RV 1909 «amadores de los deleites más que de Dios»; NVI «más amigos del placer que de Dios».')
+
+DICTIONARY.append(('morphosis', 'morphōsis', 'μόρφωσις', 'morphōsis',
+    'FORM, OUTWARD SHAPE, embodiment &mdash; from <em>morpho&#333;</em>, &lsquo;to give form.&rsquo; &#9888; It stands in two verses of the New Testament, and the two point different ways: at <a href="romans-2.html#v2-20">Romans 2:20</a> the law gives &lsquo;the embodiment of knowledge and of the truth,&rsquo; and at <a href="2-timothy-3.html#v3-5">2 Timothy 3:5</a> people have &lsquo;a form of godliness&rsquo; while &lsquo;having denied its power.&rsquo; KJV at 2 Timothy 3:5 &lsquo;a form of godliness&rsquo;; Douay &lsquo;an appearance indeed of godliness.&rsquo;',
+    ('Romans', 2, 20)))
+DICTIONARY_ES['morphosis'] = ('mórfōsis',
+    'FORMA, FIGURA EXTERIOR &mdash; de <em>morpho&#333;</em>, «dar forma». &#9888; Está en dos versículos del Nuevo Testamento, y los dos apuntan en direcciones distintas: en <a href="romans-2.es.html#v2-20">Romanos 2:20</a> la ley da «la forma de la ciencia y de la verdad», y en <a href="2-timothy-3.es.html#v3-5">2 Timoteo 3:5</a> hay quienes tienen «forma de piedad» mientras han «negado su poder». RV60 en 2 Timoteo 3:5 «apariencia de piedad»; TNM 1987 «una forma de devoción piadosa».')
+
+DICTIONARY.append(('endyno', 'endynō', 'ἐνδύνω', 'endynō',
+    'TO SLIP IN, to get inside &mdash; <em>en</em>, &lsquo;in,&rsquo; and <em>dyn&#333;</em>, &lsquo;to go down, to sink into.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-6">2 Timothy 3:6</a>, of those who &lsquo;slip into households and take captive silly women.&rsquo; KJV &lsquo;creep into houses&rsquo;; NIV &lsquo;worm their way into homes&rsquo;; NWT 1984 &lsquo;slyly work their way into households.&rsquo;',
+    ('2 Timothy', 3, 6)))
+DICTIONARY_ES['endyno'] = ('endýnō',
+    'METERSE, introducirse &mdash; <em>en</em>, «en», y <em>dyn&#333;</em>, «hundirse, entrar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-6">2 Timoteo 3:6</a>, de los que «se meten en las casas y llevan cautivas a mujercillas». RV 1909 «se entran por las casas»; TNM 1987 «astutamente logran introducirse en las casas».')
+
+DICTIONARY.append(('gynaikarion', 'gynaikarion', 'γυναικάριον', 'gynaikarion',
+    'A LITTLE WOMAN, said in contempt &mdash; the diminutive of <em>gyn&#275;</em>, &lsquo;woman.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-6">2 Timothy 3:6</a>, of women &lsquo;loaded with sins, led by various desires, always learning and never able to come to the knowledge of the truth.&rsquo; The diminutive carries the contempt; English has no diminutive for &lsquo;woman,&rsquo; and the KJV and ASV give it as &lsquo;silly women,&rsquo; the NWT 1984 as &lsquo;weak women,&rsquo; the NIV as &lsquo;gullible women.&rsquo; How far the description reaches is read differently; the note on the verse sets out the readings.',
+    ('2 Timothy', 3, 6)))
+DICTIONARY_ES['gynaikarion'] = ('gynaikárion',
+    'MUJERCITA, dicho con desprecio &mdash; el diminutivo de <em>gyn&#275;</em>, «mujer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-6">2 Timoteo 3:6</a>, de mujeres «cargadas de pecados, llevadas por diversos deseos, que siempre están aprendiendo y nunca pueden llegar al conocimiento de la verdad». El diminutivo lleva el desprecio, y el español lo tiene tal cual: «mujercillas», como la RV 1909 y la RV60; la TNM 1987 y la NVI «mujeres débiles». Hasta dónde llega la descripción se lee de distintas maneras; la nota del versículo expone las lecturas.')
+
+DICTIONARY.append(('goes', 'goēs', 'γόης', 'goēs',
+    'A SORCERER, an enchanter, and from that a CHEAT who works by tricks; a charlatan. &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-13">2 Timothy 3:13</a>, &lsquo;evil people and charlatans will progress from bad to worse, deceiving and being deceived,&rsquo; five verses after Pharaoh&rsquo;s magicians, Jannes and Jambres (<a href="2-timothy-3.html#v3-8">3:8</a>). KJV &lsquo;seducers&rsquo;; ASV and NWT 1984 &lsquo;impostors.&rsquo;',
+    ('2 Timothy', 3, 13)))
+DICTIONARY_ES['goes'] = ('góēs',
+    'UN HECHICERO, un encantador, y de ahí un ESTAFADOR que obra con trucos; un charlatán. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-13">2 Timoteo 3:13</a>, «los hombres malos y los charlatanes progresarán de mal en peor, engañando y siendo engañados», cinco versículos después de los magos del faraón, Janes y Jambres (<a href="2-timothy-3.es.html#v3-8">3:8</a>). RV60 «los engañadores»; TNM 1987 «impostores»; NVI «farsantes».')
+
+DICTIONARY.append(('sophizo', 'sophizō', 'σοφίζω', 'sophizō',
+    'TO MAKE WISE; in the middle and passive, to devise cleverly &mdash; from <em>sophos</em>, &lsquo;wise.&rsquo; &#9888; It stands in two verses of the New Testament, and the two pull apart: the sacred writings &lsquo;able to make you wise for salvation&rsquo; at <a href="2-timothy-3.html#v3-15">2 Timothy 3:15</a>, and the &lsquo;cleverly devised myths&rsquo; that 2 Peter disowns at <a href="2-peter-1.html#v16">2 Peter 1:16</a>. The Greek of Psalm 19:7 (18:8 in its numbering) has &lsquo;the testimony of Jehovah is faithful, making infants wise&rsquo; (not yet on these pages; the Hebrew has the name, the Greek <em>kyrios</em>). KJV at 2 Timothy 3:15 &lsquo;to make thee wise unto salvation.&rsquo;',
+    ('2 Timothy', 3, 15)))
+DICTIONARY_ES['sophizo'] = ('sofízō',
+    'HACER SABIO; en voz media y pasiva, idear con astucia &mdash; de <em>sophos</em>, «sabio». &#9888; Está en dos versículos del Nuevo Testamento, y los dos tiran en sentidos opuestos: las sagradas letras «que pueden hacerte sabio para la salvación» en <a href="2-timothy-3.es.html#v3-15">2 Timoteo 3:15</a>, y las «fábulas artificiosas» que 2 Pedro rechaza en <a href="2-peter-1.es.html#v16">2 Pedro 1:16</a>. El griego del Salmo 19:7 (18:8 en su numeración) dice «el testimonio de Jehová es fiel, hace sabios a los pequeños» (todavía no en estas páginas; el hebreo trae el nombre, el griego <em>kyrios</em>). RV60 en 2 Timoteo 3:15 «te pueden hacer sabio para la salvación».')
+
+DICTIONARY.append(('theopneustos', 'theopneustos', 'θεόπνευστος', 'theopneustos',
+    'GOD-BREATHED &mdash; <em>theos</em>, &lsquo;God,&rsquo; and <em>pne&#333;</em>, &lsquo;to breathe, to blow,&rsquo; the stem of <em>pneuma</em>, &lsquo;breath, wind, spirit.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>, &lsquo;All Scripture is God-breathed and profitable.&rsquo; Its form is that of <em>theodidaktos</em>, &lsquo;taught by God,&rsquo; at <a href="1-thessalonians-4.html#v4-9">1 Thessalonians 4:9</a>, so it is read as &lsquo;breathed by God.&rsquo; The Latin rendered it <em>divinitus inspirata</em>, and the English word &lsquo;inspiration&rsquo; comes from that Latin through the KJV&rsquo;s &lsquo;given by inspiration of God.&rsquo; Whether the picture is of God breathing the writings out or breathing into them is debated, and so is whether the adjective is said of all Scripture (&lsquo;All Scripture is God-breathed&rsquo;) or picks out the Scripture meant (&lsquo;Every God-breathed Scripture is also profitable,&rsquo; the Vulgate and the ASV); the note on the verse sets out both. NIV &lsquo;God-breathed&rsquo;; NWT 1984 &lsquo;inspired of God.&rsquo;',
+    ('2 Timothy', 3, 16)))
+DICTIONARY_ES['theopneustos'] = ('theópneustos',
+    'EXHALADA POR DIOS &mdash; <em>theos</em>, «Dios», y <em>pne&#333;</em>, «soplar, respirar», la raíz de <em>pneuma</em>, «aliento, viento, espíritu». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-16">2 Timoteo 3:16</a>, «Toda Escritura es exhalada por Dios y provechosa». Su forma es la de <em>theodidaktos</em>, «enseñado por Dios», en <a href="1-thessalonians-4.es.html#v4-9">1 Tesalonicenses 4:9</a>, así que se lee como «soplada por Dios». El latín la tradujo <em>divinitus inspirata</em>, y de ese latín viene la palabra «inspiración». Si la imagen es la de Dios que exhala los escritos o la de Dios que sopla dentro de ellos se discute, y también si el adjetivo se dice de toda la Escritura («Toda Escritura es exhalada por Dios») o señala la Escritura de que se habla («Toda Escritura exhalada por Dios es también provechosa», la Vulgata y la ASV inglesa); la nota del versículo expone las dos. RV60 «inspirada por Dios»; TNM 1987 «inspirada de Dios».')
+
+DICTIONARY.append(('ophelimos', 'ōphelimos', 'ὠφέλιμος', 'ōphelimos',
+    'PROFITABLE, useful &mdash; from <em>&#333;phele&#333;</em>, &lsquo;to help, to benefit.&rsquo; &#9888; It stands in three verses of the New Testament, all in the Pastoral letters: bodily training &lsquo;of profit for a little&rsquo; and godliness &lsquo;of profit for all things&rsquo; at <a href="1-timothy-4.html#v4-8">1 Timothy 4:8</a>; Scripture &lsquo;profitable for teaching&rsquo; at <a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>; and Titus 3:8 (not yet on these pages). KJV &lsquo;profitable&rsquo;; NIV at 2 Timothy 3:16 &lsquo;useful.&rsquo;',
+    ('1 Timothy', 4, 8)))
+DICTIONARY_ES['ophelimos'] = ('ōfélimos',
+    'PROVECHOSO, útil &mdash; de <em>&#333;phele&#333;</em>, «ayudar, beneficiar». &#9888; Está en tres versículos del Nuevo Testamento, todos en las cartas Pastorales: el entrenamiento corporal «provechoso para poco» y la piedad «provechosa para todo» en <a href="1-timothy-4.es.html#v4-8">1 Timoteo 4:8</a>; la Escritura «provechosa para la enseñanza» en <a href="2-timothy-3.es.html#v3-16">2 Timoteo 3:16</a>; y Tito 3:8 (todavía no en estas páginas). RV 1909 «útil»; TNM 1987 «provechosa».')
+
+DICTIONARY.append(('elegmos', 'elegmos', 'ἐλεγμός', 'elegmos',
+    'REPROOF, the bringing of a fault to light &mdash; from <em>elench&#333;</em>, &lsquo;to expose, to convict.&rsquo; &#9888; It stands in one verse of the printed New Testament, <a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>, Scripture &lsquo;profitable &hellip; for reproof&rsquo;; the Byzantine text has <em>elenchos</em> there, the word of &lsquo;the proof of matters not seen&rsquo; at <a href="hebrews-11.html#v11-1">Hebrews 11:1</a>. KJV &lsquo;for reproof&rsquo;; NWT 1984 &lsquo;for reproving.&rsquo;',
+    ('2 Timothy', 3, 16)))
+DICTIONARY_ES['elegmos'] = ('elegmós',
+    'REPRENSIÓN, el sacar a la luz una falta &mdash; de <em>elench&#333;</em>, «poner al descubierto, convencer». &#9888; Está en un solo versículo del Nuevo Testamento impreso, <a href="2-timothy-3.es.html#v3-16">2 Timoteo 3:16</a>, la Escritura «provechosa &hellip; para la reprensión»; el texto bizantino trae allí <em>elenchos</em>, la palabra de «la prueba de asuntos que no se ven» en <a href="hebrews-11.es.html#v11-1">Hebreos 11:1</a>. RV60 «para redargüir»; TNM 1987 «para censurar».')
+
+DICTIONARY.append(('epanorthosis', 'epanorthōsis', 'ἐπανόρθωσις', 'epanorthōsis',
+    'CORRECTION, a setting upright again &mdash; <em>epi</em>, <em>ana</em>, &lsquo;again,&rsquo; and <em>orthos</em>, &lsquo;straight, upright.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>, Scripture &lsquo;profitable &hellip; for correction.&rsquo; KJV &lsquo;for correction&rsquo;; NWT 1984 &lsquo;for setting things straight.&rsquo;',
+    ('2 Timothy', 3, 16)))
+DICTIONARY_ES['epanorthosis'] = ('epanórthōsis',
+    'CORRECCIÓN, un volver a poner derecho &mdash; <em>epi</em>, <em>ana</em>, «de nuevo», y <em>orthos</em>, «derecho». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-16">2 Timoteo 3:16</a>, la Escritura «provechosa &hellip; para la corrección». RV60 «para corregir»; TNM 1987 «para rectificar las cosas».')
+
+DICTIONARY.append(('artios', 'artios', 'ἄρτιος', 'artios',
+    'COMPLETE, fit, fully capable &mdash; what fits exactly. &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-17">2 Timothy 3:17</a>, &lsquo;so that the man of God may be complete, completely equipped for every good work,&rsquo; where the verb that follows, <em>exartiz&#333;</em>, is built on the same root (see <a href="dictionary.html#exartizo">exartiz&#333;</a>). KJV &lsquo;perfect&rsquo;; ASV &lsquo;complete&rsquo;; NWT 1984 &lsquo;fully competent.&rsquo;',
+    ('2 Timothy', 3, 17)))
+DICTIONARY_ES['artios'] = ('ártios',
+    'COMPLETO, apto, plenamente capaz &mdash; lo que encaja exactamente. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-17">2 Timoteo 3:17</a>, «a fin de que el hombre de Dios sea completo, completamente equipado para toda buena obra», donde el verbo que sigue, <em>exartiz&#333;</em>, está hecho sobre la misma raíz (véase <a href="diccionario.html#exartizo">exartiz&#333;</a>). RV60 «perfecto»; TNM 1987 «enteramente competente».')
+
+DICTIONARY.append(('exartizo', 'exartizō', 'ἐξαρτίζω', 'exartizō',
+    'TO FIT OUT COMPLETELY, to equip; also to complete a span of time &mdash; <em>ex</em> and <em>artiz&#333;</em>, from <em>artios</em>, &lsquo;complete.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;when it came about that we had completed the days&rsquo; at Tyre, <a href="acts-21.html#v21-5">Acts 21:5</a>, and the man of God &lsquo;completely equipped for every good work&rsquo; at <a href="2-timothy-3.html#v3-17">2 Timothy 3:17</a>. KJV at 2 Timothy 3:17 &lsquo;throughly furnished&rsquo;; ASV &lsquo;furnished completely.&rsquo;',
+    ('Acts', 21, 5)))
+DICTIONARY_ES['exartizo'] = ('exartízō',
+    'EQUIPAR POR COMPLETO; también completar un plazo &mdash; <em>ex</em> y <em>artiz&#333;</em>, de <em>artios</em>, «completo». &#9888; Está en dos versículos del Nuevo Testamento: «cuando sucedió que cumplimos los días» en Tiro, <a href="acts-21.es.html#v21-5">Hechos 21:5</a>, y el hombre de Dios «completamente equipado para toda buena obra» en <a href="2-timothy-3.es.html#v3-17">2 Timoteo 3:17</a>. RV60 en 2 Timoteo 3:17 «enteramente preparado»; TNM 1987 «completamente equipado».')
+
+ENCYCLOPEDIA.append(dict(slug='jannes-and-jambres', name='Jannes and Jambres', kind='person', aliases=['Jannes and Jambres', 'Jannes', 'Jambres'],
+    refs=[('2 Timothy', 3, 8)], videos=[],
+    desc='The names Paul gives to the magicians of Pharaoh: &lsquo;just as Jannes and Jambres opposed Moses, so these also oppose the truth&rsquo; (<a href="2-timothy-3.html#v3-8">2 Timothy 3:8</a>). The names stand in one verse of the New Testament and in no book of the Hebrew Bible; Exodus speaks only of &lsquo;the magicians of Egypt,&rsquo; who did the same &lsquo;with their secret arts&rsquo; (<a href="exodus-7.html#v7-11">Exodus 7:11</a>, <a href="exodus-7.html#v7-22">7:22</a>) until they could not (<a href="exodus-8.html#v8-14">8:14</a>). &#9888; The names were known outside Scripture. Pliny the Elder (<em>Natural History</em> 30.2, read in the Latin) speaks of another faction of magic &lsquo;depending on Moses and Jannes and Lotapes and the Jews&rsquo;; the philosopher Numenius, quoted by Eusebius (<em>Preparation for the Gospel</em> 9.8, read in Gifford&rsquo;s English), names &lsquo;Jannes and Jambres, Egyptian sacred scribes.&rsquo; They are also reported in the Aramaic Targum that bears Jonathan&rsquo;s name, in a related form in the Damascus Document found at Qumran, and in Origen, who is reported to say the verse came from a book called <em>Jannes and Jambres</em>; those three are reported here, not checked. The Latin Vulgate prints &lsquo;Mambres,&rsquo; and so the Douay-Rheims. See <a href="encyclopedia.html#moses">Moses</a>.'))
+ENCYCLOPEDIA_ES['jannes-and-jambres'] = ('Janes y Jambres',
+    'Los nombres que Pablo da a los magos del faraón: «así como Janes y Jambres se opusieron a Moisés, así también estos se oponen a la verdad» (<a href="2-timothy-3.es.html#v3-8">2 Timoteo 3:8</a>). Los nombres están en un solo versículo del Nuevo Testamento y en ningún libro de la Biblia hebrea; Éxodo habla solo de «los magos de Egipto», que hicieron lo mismo «con sus artes secretas» (<a href="exodus-7.es.html#v7-11">Éxodo 7:11</a>, <a href="exodus-7.es.html#v7-22">7:22</a>) hasta que no pudieron (<a href="exodus-8.es.html#v8-14">8:14</a>). &#9888; Los nombres se conocían fuera de la Escritura. Plinio el Viejo (<em>Historia natural</em> 30.2, leído en latín) habla de otra facción de la magia «que depende de Moisés y de Janes y de Lotapes y de los judíos»; el filósofo Numenio, citado por Eusebio (<em>Preparación evangélica</em> 9.8, leído en la traducción inglesa de Gifford), nombra a «Janes y Jambres, escribas sagrados egipcios». Se informan también en el Targum arameo que lleva el nombre de Jonatán, en una forma emparentada en el Documento de Damasco hallado en Qumrán, y en Orígenes, de quien se informa que dijo que el versículo procedía de un libro llamado <em>Janes y Jambres</em>; esos tres se informan aquí, no se comprobaron. La Vulgata latina imprime «Mambres». Véase <a href="enciclopedia.html#moses">Moisés</a>.')
+ENCYCLOPEDIA_ES['eunice'] = ('Eunice',
+    'La madre de Timoteo: una judía creyente de Listra casada con un griego (<a href="acts-16.es.html#v16-1">Hechos 16:1</a>), y el eslabón del medio de la única fe de familia que el Nuevo Testamento sigue por nombre a lo largo de tres generaciones: «tu abuela Loida y tu madre Eunice, y estoy persuadido de que también en ti» (<a href="2-timothy-1.es.html#v5">2 Timoteo 1:5</a>). &#9888; Que su marido fuera gentil, y se pase en silencio, significa que la fe que Timoteo heredó le llegó por el lado MATERNO de un matrimonio mixto. En <a href="2-timothy-3.es.html#v3-14">2 Timoteo 3:14</a>–15 Timoteo conoce las sagradas letras «desde la infancia» y sabe «de quiénes» las aprendió, un plural en el texto impreso que los lectores entienden como inclusivo de Loida y Eunice. Los dos nombres de mujer son griegos (<em>Eunik&#275;</em>, «buena victoria»), una pequeña señal de una casa judía helenizada.')
+
+def _2ti3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_2ti3_fix([("and Paul's description of two magicians whose &lsquo;folly will be plain to all&rsquo; (2 Timothy 3:9, not yet on these pages).", 'and the opponents of <a href="2-timothy-3.html#v3-9">2 Timothy 3:9</a>, whose &lsquo;mindlessness will be plain to all,&rsquo; as that of Pharaoh&rsquo;s two magicians also became.'), ('y la descripción que hace Pablo de dos magos cuya «insensatez quedará clara a todos» (2 Timoteo 3:9, todavía no en estas páginas).', 'y los adversarios de <a href="2-timothy-3.es.html#v3-9">2 Timoteo 3:9</a>, cuya «insensatez será manifiesta a todos», como también lo llegó a ser la de los dos magos del faraón.'), ('<a href="romans-7.html#v7-23">Romans 7:23</a>, 2 Corinthians 10:5 and 2 Timothy 3:6 (these two not yet on these pages).', '<a href="romans-7.html#v7-23">Romans 7:23</a>, <a href="2-corinthians-10.html#v5">2 Corinthians 10:5</a> and <a href="2-timothy-3.html#v3-6">2 Timothy 3:6</a>.'), ('<a href="romans-7.es.html#v7-23">Romanos 7:23</a>, 2 Corintios 10:5 y 2 Timoteo 3:6 (estos dos todavía no en estas páginas).', '<a href="romans-7.es.html#v7-23">Romanos 7:23</a>, <a href="2-corinthians-10.es.html#v5">2 Corintios 10:5</a> y <a href="2-timothy-3.es.html#v3-6">2 Timoteo 3:6</a>.'), ('and 2 Timothy 3:4, in a list of the last days (not yet on these pages).', 'and <a href="2-timothy-3.html#v3-4">2 Timothy 3:4</a>, in a list of the last days.'), ('y 2 Timoteo 3:4, en una lista de los últimos días (todavía no en estas páginas).', 'y <a href="2-timothy-3.es.html#v3-4">2 Timoteo 3:4</a>, en una lista de los últimos días.'), ('and 2 Timothy 3:10 (not yet on these pages).', 'and <a href="2-timothy-3.html#v3-10">2 Timothy 3:10</a>.'), ('y 2 Timoteo 3:10 (todavía no en estas páginas).', 'y <a href="2-timothy-3.es.html#v3-10">2 Timoteo 3:10</a>.'), ('the &lsquo;lovers of money&rsquo; of 2 Timothy 3:2 (not yet on these pages),', 'the &lsquo;lovers of money&rsquo; of <a href="2-timothy-3.html#v3-2">2 Timothy 3:2</a>,'), ('los amantes del dinero de 2 Timoteo 3:2 (todavía no en estas páginas),', 'los amantes del dinero de <a href="2-timothy-3.es.html#v3-2">2 Timoteo 3:2</a>,'), ('among the places of his persecutions in 2 Timothy 3:11 (not yet on these pages). The coordinates', 'among the places of his persecutions in <a href="2-timothy-3.html#v3-11">2 Timothy 3:11</a>. The coordinates'), ('entre los lugares de sus persecuciones en 2 Timoteo 3:11 (todavía no en estas páginas). Las coordenadas', 'entre los lugares de sus persecuciones en <a href="2-timothy-3.es.html#v3-11">2 Timoteo 3:11</a>. Las coordenadas'), ('and at 2 Timothy 3:11 (the second not yet on these pages).', 'and at <a href="2-timothy-3.html#v3-11">2 Timothy 3:11</a>.'), ('y en 2 Timoteo 3:11 (el segundo todavía no en estas páginas).', 'y en <a href="2-timothy-3.es.html#v3-11">2 Timoteo 3:11</a>.'), ('in 2 Timothy 3:11 (not yet on these pages), and <a href="acts-16.html#v16-1">', 'in <a href="2-timothy-3.html#v3-11">2 Timothy 3:11</a>, and <a href="acts-16.html#v16-1">'), ('en 2 Timoteo 3:11 (todavía no en estas páginas), y <a href="acts-16.es.html#v16-1">', 'en <a href="2-timothy-3.es.html#v3-11">2 Timoteo 3:11</a>, y <a href="acts-16.es.html#v16-1">'), ("It was Lois and Eunice who gave the boy the Scriptures he had known 'from childhood' (2 Timothy 3:15).", 'At <a href="2-timothy-3.html#v3-14">2 Timothy 3:14</a>&ndash;15 Timothy has known the sacred writings &lsquo;from infancy&rsquo; and knows &lsquo;from whom&rsquo; he learned, a plural in the printed text that readers take to include Lois and Eunice.'), ('(1 Timothy 2:4; 2 Timothy 3:7)', '(1 Timothy 2:4; <a href="2-timothy-3.html#v3-7">2 Timothy 3:7</a>)'), ('(1 Timoteo 2:4; 2 Timoteo 3:7)', '(1 Timoteo 2:4; <a href="2-timothy-3.es.html#v3-7">2 Timoteo 3:7</a>)'), ("2 Timothy 3:5 warns of those 'having a form of godliness but denying its power'", '<a href="2-timothy-3.html#v3-5">2 Timothy 3:5</a> warns of those \'having a form of godliness but having denied its power\''), ('2 Timoteo 3:5 advierte contra los que tienen «apariencia de piedad» pero niegan su poder', '<a href="2-timothy-3.es.html#v3-5">2 Timoteo 3:5</a> advierte contra los que tienen «forma de piedad» pero han negado su poder'), ("2 Timothy 3:15 ('from infancy you have known the sacred writings')", '<a href="2-timothy-3.html#v3-15">2 Timothy 3:15</a> (\'from infancy you have known the sacred writings\')')])
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "eunice" and ("2 Timothy", 3, 14) not in _e["refs"]:
+        _e["refs"].append(("2 Timothy", 3, 14))
+
+XREFS.extend([
+    (("Acts", 2, 17), ("2 Timothy", 3, 1), "the last days"),
+    (("1 Timothy", 4, 1), ("2 Timothy", 3, 1), "later times"),
+    (("Romans", 1, 30), ("2 Timothy", 3, 2), "boasters, arrogant, disobedient to parents"),
+    (("Luke", 16, 14), ("2 Timothy", 3, 2), "lovers of money"),
+    (("Romans", 1, 31), ("2 Timothy", 3, 3), "without natural affection"),
+    (("Titus", 1, 8), ("2 Timothy", 3, 3), "lover of good"),
+    (("Luke", 6, 16), ("2 Timothy", 3, 4), "traitor"),
+    (("Acts", 19, 36), ("2 Timothy", 3, 4), "rash"),
+    (("1 Timothy", 6, 4), ("2 Timothy", 3, 4), "puffed up"),
+    (("Romans", 2, 20), ("2 Timothy", 3, 5), "form, embodiment"),
+    (("Titus", 1, 16), ("2 Timothy", 3, 5), "deny"),
+    (("1 Timothy", 5, 13), ("2 Timothy", 3, 6), "house to house"),
+    (("1 Timothy", 2, 4), ("2 Timothy", 3, 7), "the knowledge of the truth"),
+    (("Exodus", 7, 11), ("2 Timothy", 3, 8), "the magicians of Egypt"),
+    (("Exodus", 8, 14), ("2 Timothy", 3, 9), "the magicians could not"),
+    (("2 Timothy", 2, 16), ("2 Timothy", 3, 9), "progress"),
+    (("Luke", 6, 11), ("2 Timothy", 3, 9), "mindlessness"),
+    (("1 Timothy", 4, 6), ("2 Timothy", 3, 10), "followed closely"),
+    (("Acts", 13, 50), ("2 Timothy", 3, 11), "Antioch"),
+    (("Acts", 14, 5), ("2 Timothy", 3, 11), "Iconium"),
+    (("Acts", 14, 19), ("2 Timothy", 3, 11), "Lystra"),
+    (("2 Corinthians", 1, 10), ("2 Timothy", 3, 11), "rescued"),
+    (("Acts", 14, 22), ("2 Timothy", 3, 12), "through many tribulations"),
+    (("2 Timothy", 1, 5), ("2 Timothy", 3, 14), "Lois and Eunice"),
+    (("Acts", 16, 1), ("2 Timothy", 3, 15), "a believing Jewish mother"),
+    (("2 Peter", 1, 21), ("2 Timothy", 3, 16), "carried along by the Holy Spirit"),
+    (("1 Timothy", 4, 8), ("2 Timothy", 3, 16), "profitable"),
+    (("1 Timothy", 5, 18), ("2 Timothy", 3, 16), "the Scripture says"),
+    (("Deuteronomy", 33, 1), ("2 Timothy", 3, 17), "the man of God"),
+    (("1 Timothy", 6, 11), ("2 Timothy", 3, 17), "O man of God"),
+])
+
+CHAPTER_ART["2ti3"] = [dict(
+    file="sister-haggadah-aarons-rod-and-the-magicians.jpg",
+    title="Aaron&rsquo;s rod swallowing the magicians&rsquo; rods",   title_es="La vara de Aarón se traga las varas de los magos",
+    artist="Unknown illuminator, the Sister Haggadah",
+    year="2nd or 3rd quarter of the 14th century",
+    location="British Library, London",
+    location_es="Biblioteca Británica, Londres",
+    alt="A medieval manuscript painting in red, pink, blue and grey: a crowned king seated at the left raises a finger; in front of him two figures kneel or stand "
+        "holding thin serpents; at the right two bearded men in red and pink robes stand before a gateway, and a long grey serpent stretches across the floor, its "
+        "open jaws taking in the smaller serpents.",
+    note="&#9888; The magicians of Egypt do &lsquo;the same with their secret arts,&rsquo; and Aaron&rsquo;s staff swallows theirs (Exodus 7:11&ndash;12). Exodus "
+         "gives them no names; Paul calls them Jannes and Jambres (<a href=\"2-timothy-3.html#v3-8\">verse 8</a>).",
+    note_es="&#9888; Los magos de Egipto hacen «lo mismo con sus artes secretas», y la vara de Aarón se traga las suyas (Éxodo 7:11&ndash;12). Éxodo no les da "
+            "nombre; Pablo los llama Janes y Jambres (<a href=\"2-timothy-3.es.html#v3-8\">versículo 8</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Aaron%27s_rod_swallowing_the_magicians%27_rods.jpg",
+)]
+
+CHRON_CHAPTERS["2ti3"] = dict(era='apostolic',
+    when="Paul warns Timothy of hard times in the last days, eighteen marks of the people in them, Jannes and Jambres who opposed Moses, and persecutions at Antioch, Iconium and Lystra; then the sacred writings known from infancy, and 'All Scripture is God-breathed.'",
+    clock="Undated by the text; on the traditional reading, Paul's last imprisonment at Rome, mid-60s AD; many scholars date the Pastoral letters later.")
+
