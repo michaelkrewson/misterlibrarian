@@ -39545,3 +39545,107 @@ CHRON_CHAPTERS["2th2"] = dict(era='apostolic',
     when="Against a rumor that the day of the Lord had already come: first the apostasy and the man of lawlessness, held back for now by what restrains; then thanks for readers chosen for salvation, and the charge to hold to the traditions.",
     clock="Undated by the text; on the traditional reading, from Corinth soon after the first letter, c. AD 50–51; many scholars date the letter later.")
 
+# ---- 2 Thessalonians 3 -----------------------------------------------------------
+DICTIONARY.append(('atopos', 'atopos', 'ἄτοπος', 'atopos',
+    'OUT OF PLACE, improper, perverse &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>topos</em>, &lsquo;place.&rsquo; &#9888; It stands in four verses of the New Testament: the thief&rsquo;s &lsquo;this man has done nothing out of place&rsquo; at <a href="luke-23.html#v23-41">Luke 23:41</a>; Festus&rsquo;s &lsquo;if there is anything out of place in the man&rsquo; at <a href="acts-25.html#v25-5">Acts 25:5</a>; the islanders watching &lsquo;nothing out of place happen&rsquo; to Paul at <a href="acts-28.html#v28-6">Acts 28:6</a>; and the &lsquo;perverse and evil people&rsquo; of <a href="2-thessalonians-3.html#v3-2">2 Thessalonians 3:2</a>. KJV at 3:2 &lsquo;unreasonable,&rsquo; Douay &lsquo;importunate,&rsquo; NWT 1984 &lsquo;harmful.&rsquo;',
+    ('2 Thessalonians', 3, 2)))
+DICTIONARY_ES['atopos'] = ('átopos',
+    'FUERA DE LUGAR, indebido, perverso &mdash; <em>a-</em>, «no», y <em>topos</em>, «lugar». &#9888; Está en cuatro versículos del Nuevo Testamento: el «este no ha hecho nada indebido» del ladrón en <a href="luke-23.es.html#v23-41">Lucas 23:41</a>; el «si hay algo fuera de lugar en este hombre» de Festo en <a href="acts-25.es.html#v25-5">Hechos 25:5</a>; los isleños que ven que «nada fuera de lugar» le sucede a Pablo en <a href="acts-28.es.html#v28-6">Hechos 28:6</a>; y las «personas perversas y malas» de <a href="2-thessalonians-3.es.html#v3-2">2 Tesalonicenses 3:2</a>. RV60 en 3:2 «perversos», RV 1909 «importunos», TNM 1987 «dañinos».')
+
+DICTIONARY.append(('periergazomai', 'periergazomai', 'περιεργάζομαι', 'periergazomai',
+    'TO BE A BUSYBODY, to work around instead of at &mdash; <em>peri</em>, &lsquo;around,&rsquo; and <em>ergazomai</em>, &lsquo;to work.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-thessalonians-3.html#v3-11">2 Thessalonians 3:11</a>, in a pun on the plain verb: <em>m&#275;den ergazomenous alla periergazomenous</em>, &lsquo;not busy at work but busybodies.&rsquo; Its adjective <em>periergos</em> is the &lsquo;curious arts&rsquo; of <a href="acts-19.html#v19-19">Acts 19:19</a> and the busybody of 1 Timothy 5:13 (not yet on these pages). KJV &lsquo;working not at all, but are busybodies&rsquo;; NWT 1984 &lsquo;meddling with what does not concern them.&rsquo;',
+    ('2 Thessalonians', 3, 11)))
+DICTIONARY_ES['periergazomai'] = ('periergázomai',
+    'ENTREMETERSE, trabajar alrededor en vez de en lo propio &mdash; <em>peri</em>, «alrededor», y <em>ergazomai</em>, «trabajar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-thessalonians-3.es.html#v3-11">2 Tesalonicenses 3:11</a>, en un juego con el verbo simple: <em>m&#275;den ergazomenous alla periergazomenous</em>, «sin trabajar en nada, sino entremetidos en lo ajeno». Su adjetivo <em>periergos</em> son las «artes curiosas» de <a href="acts-19.es.html#v19-19">Hechos 19:19</a> y el entremetido de 1 Timoteo 5:13 (todavía no en estas páginas). RV60 «entremetiéndose en lo ajeno»; RV 1909 «ocupados en curiosear».')
+
+DICTIONARY.append(('semeioo', 'sēmeioō', 'σημειόω', 'sēmeioō',
+    'TO MARK, to take note of &mdash; from <em>s&#275;meion</em>, &lsquo;sign.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-thessalonians-3.html#v3-14">2 Thessalonians 3:14</a>, &lsquo;take note of that person,&rsquo; of anyone who does not obey the letter; its noun is &lsquo;a sign in every letter&rsquo; three verses later, at <a href="2-thessalonians-3.html#v3-17">2 Thessalonians 3:17</a>. The next verse sets the limit: &lsquo;do not regard him as an enemy, but admonish him as a brother.&rsquo; KJV &lsquo;note that man&rsquo;; NWT 1984 &lsquo;keep this one marked.&rsquo;',
+    ('2 Thessalonians', 3, 14)))
+DICTIONARY_ES['semeioo'] = ('sēmeióō',
+    'SEÑALAR, tomar nota de alguien &mdash; de <em>s&#275;meion</em>, «señal». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-thessalonians-3.es.html#v3-14">2 Tesalonicenses 3:14</a>, «señálenlo», de quien no obedece la carta; su sustantivo es «la señal en toda carta» tres versículos después, en <a href="2-thessalonians-3.es.html#v3-17">2 Tesalonicenses 3:17</a>. El versículo siguiente pone el límite: «no lo consideren como enemigo, sino amonéstenlo como a hermano». RV60 «a ese señaladlo»; TNM 1987 «mantengan a este señalado».')
+
+DICTIONARY.append(('kalopoieo', 'kalopoieō', 'καλοποιέω', 'kalopoieō',
+    'TO DO GOOD &mdash; <em>kalos</em>, &lsquo;good,&rsquo; and <em>poie&#333;</em>, &lsquo;to do.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-thessalonians-3.html#v3-13">2 Thessalonians 3:13</a>, &lsquo;do not lose heart in doing good&rsquo;; <a href="galatians-6.html#v9">Galatians 6:9</a> says the same thing in two words, &lsquo;let us not lose heart in doing what is good.&rsquo; KJV &lsquo;be not weary in well doing&rsquo;; NWT 1984 &lsquo;do not give up in doing right.&rsquo;',
+    ('2 Thessalonians', 3, 13)))
+DICTIONARY_ES['kalopoieo'] = ('kalopoiéō',
+    'HACER EL BIEN &mdash; <em>kalos</em>, «bueno», y <em>poie&#333;</em>, «hacer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-thessalonians-3.es.html#v3-13">2 Tesalonicenses 3:13</a>, «no se rindan haciendo el bien»; <a href="galatians-6.es.html#v9">Gálatas 6:9</a> dice lo mismo con dos palabras, «no nos rindamos haciendo el bien». RV60 «no os canséis de hacer bien»; TNM 1987 «no desistan de hacer lo correcto».')
+
+DICTIONARY.append(('synanamignymi', 'synanamignymi', 'συναναμίγνυμι', 'synanamignymi',
+    'TO MIX IN COMPANY WITH, to associate &mdash; <em>syn</em>, &lsquo;with,&rsquo; <em>ana</em>, &lsquo;up, among,&rsquo; and <em>mignymi</em>, &lsquo;to mix.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="1-corinthians-5.html#v9">1 Corinthians 5:9</a>, &lsquo;not to mix in company with fornicators&rsquo;; <a href="1-corinthians-5.html#v11">1 Corinthians 5:11</a>, &lsquo;not to mix in company with anyone called a brother&rsquo; who is a fornicator or greedy; and <a href="2-thessalonians-3.html#v3-14">2 Thessalonians 3:14</a>, of anyone who does not obey the letter, with the limit of 3:15, &lsquo;do not regard him as an enemy.&rsquo; KJV &lsquo;have no company with him.&rsquo;',
+    ('2 Thessalonians', 3, 14)))
+DICTIONARY_ES['synanamignymi'] = ('synanamígnymi',
+    'MEZCLARSE EN COMPAÑÍA, asociarse &mdash; <em>syn</em>, «con», <em>ana</em>, «entre», y <em>mignymi</em>, «mezclar». &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-corinthians-5.es.html#v9">1 Corintios 5:9</a>, «que no se mezclaran en compañía de fornicadores»; <a href="1-corinthians-5.es.html#v11">1 Corintios 5:11</a>, «que no se mezclen en compañía de nadie que, llamándose hermano», sea fornicador o codicioso; y <a href="2-thessalonians-3.es.html#v3-14">2 Tesalonicenses 3:14</a>, de quien no obedece la carta, con el límite de 3:15, «no lo consideren como enemigo». RV60 «no os juntéis con él».')
+
+DICTIONARY.append(('mochthos', 'mochthos', 'μόχθος', 'mochthos',
+    'HARDSHIP, toil, labor that wears a person down. &#9888; It stands in three verses of the New Testament, each time paired with <em>kopos</em>, &lsquo;labor&rsquo;: <a href="2-corinthians-11.html#v27">2 Corinthians 11:27</a>, &lsquo;in labor and hardship, in sleepless nights often&rsquo;; <a href="1-thessalonians-2.html#v2-9">1 Thessalonians 2:9</a>, &lsquo;our labor and hardship: working night and day&rsquo;; and <a href="2-thessalonians-3.html#v3-8">2 Thessalonians 3:8</a>, &lsquo;in labor and hardship, working night and day, so as not to be a burden to any of you.&rsquo; KJV &lsquo;labour and travail.&rsquo;',
+    ('2 Thessalonians', 3, 8)))
+DICTIONARY_ES['mochthos'] = ('mójthos',
+    'FATIGA, trabajo penoso, la labor que desgasta. &#9888; Está en tres versículos del Nuevo Testamento, siempre emparejado con <em>kopos</em>, «trabajo»: <a href="2-corinthians-11.es.html#v27">2 Corintios 11:27</a>, «en trabajo y fatiga, en noches sin dormir muchas veces»; <a href="1-thessalonians-2.es.html#v2-9">1 Tesalonicenses 2:9</a>, «nuestro trabajo y fatiga: trabajando noche y día»; y <a href="2-thessalonians-3.es.html#v3-8">2 Tesalonicenses 3:8</a>, «con trabajo y fatiga, trabajando noche y día, para no ser una carga a ninguno de ustedes». RV60 «con afán y fatiga».')
+
+def _2th3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_2th3_fix([('and 2 Thessalonians 3:11 (<em>periergazomenous</em>), neither yet on these pages.', 'and <a href="2-thessalonians-3.html#v3-11">2 Thessalonians 3:11</a> (<em>periergazomenous</em>); the first is not yet on these pages.'), ('y 2 Tesalonicenses 3:11 (<em>periergazomenous</em>), ninguno todavía en estas páginas.', 'y <a href="2-thessalonians-3.es.html#v3-11">2 Tesalonicenses 3:11</a> (<em>periergazomenous</em>); el primero todavía no en estas páginas.'), ('the adverb <em>atakt&#333;s</em> at 2 Thessalonians 3:6 and 3:11 and the verb <em>atakte&#333;</em> at 3:7 describe some who are &lsquo;doing no work&rsquo; (not yet on these pages).', 'the adverb <em>atakt&#333;s</em> at <a href="2-thessalonians-3.html#v3-6">2 Thessalonians 3:6</a> and <a href="2-thessalonians-3.html#v3-11">3:11</a>, where some are &lsquo;not busy at work but busybodies,&rsquo; and the verb <em>atakte&#333;</em> at <a href="2-thessalonians-3.html#v3-7">3:7</a>, &lsquo;we were not disorderly among you.&rsquo;'), ('el adverbio <em>atakt&#333;s</em> en 2 Tesalonicenses 3:6 y 3:11 y el verbo <em>atakte&#333;</em> en 3:7 describen a algunos que «no trabajan en nada» (todavía no en estas páginas).', 'el adverbio <em>atakt&#333;s</em> en <a href="2-thessalonians-3.es.html#v3-6">2 Tesalonicenses 3:6</a> y <a href="2-thessalonians-3.es.html#v3-11">3:11</a>, donde algunos andan «sin trabajar en nada, sino entremetidos en lo ajeno», y el verbo <em>atakte&#333;</em> en <a href="2-thessalonians-3.es.html#v3-7">3:7</a>, «no fuimos desordenados entre ustedes».'), ('here, 2 Thessalonians 3:12, where those who &lsquo;work with quietness&rsquo; eat their own bread, and 1 Timothy 2:11 and 2:12 (all three not yet on these pages).', 'here, <a href="2-thessalonians-3.html#v3-12">2 Thessalonians 3:12</a>, where those who &lsquo;work quietly&rsquo; eat their own bread, and 1 Timothy 2:11 and 2:12 (these two not yet on these pages).'), ('este, 2 Tesalonicenses 3:12, donde los que «trabajan con sosiego» comen su propio pan, y 1 Timoteo 2:11 y 2:12 (los tres todavía no en estas páginas).', 'este, <a href="2-thessalonians-3.es.html#v3-12">2 Tesalonicenses 3:12</a>, donde los que trabajan «con tranquilidad» comen su propio pan, y 1 Timoteo 2:11 y 2:12 (estos dos todavía no en estas páginas).'), ('and at 2 Thessalonians 3:8 (not yet on these pages) Paul did not eat', 'and at <a href="2-thessalonians-3.html#v3-8">2 Thessalonians 3:8</a> Paul did not eat'), ('y en 2 Tesalonicenses 3:8 (todavía no en estas páginas) Pablo no comió', 'y en <a href="2-thessalonians-3.es.html#v3-8">2 Tesalonicenses 3:8</a> Pablo no comió'), ('and 2 Thessalonians 3:13 (not yet on these pages).', 'and <a href="2-thessalonians-3.html#v3-13">2 Thessalonians 3:13</a>, &lsquo;do not lose heart in doing good.&rsquo;'), ('y 2 Tesalonicenses 3:13 (todavía no en estas páginas).', 'y <a href="2-thessalonians-3.es.html#v3-13">2 Tesalonicenses 3:13</a>, «no se rindan haciendo el bien».'), ('and 2 Thessalonians 3:5, &lsquo;may the Lord guide your hearts&rsquo; (not yet on these pages).', 'and <a href="2-thessalonians-3.html#v3-5">2 Thessalonians 3:5</a>, &lsquo;may the Lord guide your hearts.&rsquo;'), ('y 2 Tesalonicenses 3:5, «el Señor guíe sus corazones» (todavía no en estas páginas).', 'y <a href="2-thessalonians-3.es.html#v3-5">2 Tesalonicenses 3:5</a>, «que el Señor guíe sus corazones».')])
+
+XREFS.extend([
+    (("1 Thessalonians", 1, 8), ("2 Thessalonians", 3, 1), "the word of the Lord"),
+    (("Luke", 23, 41), ("2 Thessalonians", 3, 2), "out of place"),
+    (("1 Thessalonians", 5, 24), ("2 Thessalonians", 3, 3), "faithful"),
+    (("Matthew", 6, 13), ("2 Thessalonians", 3, 3), "the evil one"),
+    (("1 Thessalonians", 3, 11), ("2 Thessalonians", 3, 5), "guide"),
+    (("1 Thessalonians", 5, 14), ("2 Thessalonians", 3, 6), "the disorderly"),
+    (("2 Thessalonians", 2, 15), ("2 Thessalonians", 3, 6), "the tradition"),
+    (("1 Thessalonians", 1, 6), ("2 Thessalonians", 3, 7), "imitate us"),
+    (("1 Thessalonians", 2, 9), ("2 Thessalonians", 3, 8), "night and day, not a burden"),
+    (("Acts", 18, 3), ("2 Thessalonians", 3, 8), "working at a trade"),
+    (("Acts", 20, 34), ("2 Thessalonians", 3, 8), "these hands"),
+    (("1 Corinthians", 9, 12), ("2 Thessalonians", 3, 9), "the right not used"),
+    (("1 Thessalonians", 4, 11), ("2 Thessalonians", 3, 12), "work quietly"),
+    (("Galatians", 6, 9), ("2 Thessalonians", 3, 13), "do not lose heart"),
+    (("1 Corinthians", 5, 11), ("2 Thessalonians", 3, 14), "mix in company"),
+    (("Matthew", 18, 17), ("2 Thessalonians", 3, 15), "the one who will not listen"),
+    (("Numbers", 6, 26), ("2 Thessalonians", 3, 16), "give you peace"),
+    (("Colossians", 4, 18), ("2 Thessalonians", 3, 17), "in my own hand"),
+    (("2 Thessalonians", 2, 2), ("2 Thessalonians", 3, 17), "a letter as though from us"),
+])
+
+CHAPTER_ART["2th3"] = [dict(
+    file="pompeii-bread-fresco-naples-9071.jpg",
+    title="Bread at the counter: a fresco from Pompeii",   title_es="Pan en el mostrador: un fresco de Pompeya",
+    artist="Roman wall painter, Pompeii",
+    year="before AD 79",
+    location="National Archaeological Museum, Naples (inv. 9071)",
+    location_es="Museo Arqueológico Nacional, Nápoles (inv. 9071)",
+    alt="A Roman wall painting. Behind a wooden counter piled high with round loaves sits a man in a white garment, handing a loaf down to the people in "
+        "front of the counter: two men in dark cloaks and a boy who reaches up with both hands. A basket hangs on the wall behind.",
+    note="&#9888; Long called a sale of bread, the scene may instead show a candidate or an official in a white toga handing bread out free; either way, "
+         "bread changes hands across a counter in a Roman town. &lsquo;Nor did we eat anyone&rsquo;s bread without paying&rsquo; "
+         "(<a href=\"2-thessalonians-3.html#v3-8\">verse 8</a>).",
+    note_es="&#9888; Llamada durante mucho tiempo una venta de pan, la escena puede mostrar en cambio a un candidato o un magistrado con toga blanca que "
+            "reparte pan gratis; en cualquier caso, el pan pasa de mano en mano sobre un mostrador en una ciudad romana. «Ni comimos el pan de nadie sin "
+            "pagarlo» (<a href=\"2-thessalonians-3.es.html#v3-8\">versículo 8</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Sale_bread_MAN_Napoli_Inv9071_n01.jpg",
+)]
+
+CHRON_CHAPTERS["2th3"] = dict(era='apostolic',
+    when="The letter closes: a request for prayer, a command to keep away from the disorderly, the rule that anyone not willing to work should not eat, and the greeting in Paul's own hand.",
+    clock="Undated by the text; on the traditional reading, from Corinth soon after the first letter, c. AD 50–51; many scholars date the letter later.")
+
