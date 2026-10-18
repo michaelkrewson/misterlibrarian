@@ -40114,3 +40114,147 @@ CHRON_CHAPTERS["1ti4"] = dict(era='apostolic',
     when="Later times and teachers who forbid marriage and foods; 'everything created by God is good'; train yourself for godliness; the Savior of all people; Timothy's youth, the reading, and the gift given with the laying on of hands.",
     clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
 
+# ---- 1 Timothy 5 -----------------------------------------------------------
+DICTIONARY.append(('epiplesso', 'epiplēssō', 'ἐπιπλήσσω', 'epiplēssō',
+    'TO STRIKE AT, to rebuke sharply &mdash; <em>epi</em> and <em>pl&#275;ss&#333;</em>, &lsquo;to strike.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-1">1 Timothy 5:1</a>, &lsquo;Do not rebuke an older man sharply, but appeal to him as to a father.&rsquo; KJV &lsquo;Rebuke not an elder&rsquo;; NWT 1984 &lsquo;Do not severely criticize an older man.&rsquo;',
+    ('1 Timothy', 5, 1)))
+DICTIONARY_ES['epiplesso'] = ('epiplḗssō',
+    'GOLPEAR, reprender con dureza &mdash; <em>epi</em> y <em>pl&#275;ss&#333;</em>, «golpear». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-1">1 Timoteo 5:1</a>, «No reprendas con dureza a un hombre mayor, sino exhórtalo como a un padre». RV60 «No reprendas al anciano»; TNM 1987 «No critiques severamente a un hombre mayor».')
+
+DICTIONARY.append(('amoibe', 'amoibē', 'ἀμοιβή', 'amoibē',
+    'A RETURN, a repayment, what is given back in exchange. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-4">1 Timothy 5:4</a>, where children and grandchildren are to learn &lsquo;to make a return to their forebears,&rsquo; repaying the care they received; the duty is counted as godliness. KJV &lsquo;to requite their parents&rsquo;; NWT 1984 &lsquo;to keep paying a due compensation to their parents and grandparents.&rsquo;',
+    ('1 Timothy', 5, 4)))
+DICTIONARY_ES['amoibe'] = ('amoibḗ',
+    'UNA RETRIBUCIÓN, un pago, lo que se devuelve a cambio. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-4">1 Timoteo 5:4</a>, donde hijos y nietos han de aprender «a corresponder a sus progenitores», devolviendo el cuidado que recibieron; el deber cuenta como piedad. RV60 «a recompensar a sus padres»; TNM 1987 «a seguir pagando la debida compensación a sus padres y abuelos».')
+
+DICTIONARY.append(('spatalao', 'spatalaō', 'σπαταλάω', 'spatalaō',
+    'TO LIVE IN LUXURY, to live self-indulgently. &#9888; It stands in two verses of the New Testament: <a href="1-timothy-5.html#v5-6">1 Timothy 5:6</a>, &lsquo;the one who lives in self-indulgence is dead while she lives,&rsquo; and James 5:5, the rich who &lsquo;lived in luxury&rsquo; on the earth (not yet on these pages). KJV &lsquo;she that liveth in pleasure&rsquo;; NWT 1984 &lsquo;the one that goes in for sensual gratification.&rsquo;',
+    ('1 Timothy', 5, 6)))
+DICTIONARY_ES['spatalao'] = ('spataláō',
+    'VIVIR EN EL LUJO, vivir entregado a sí mismo. &#9888; Está en dos versículos del Nuevo Testamento: <a href="1-timothy-5.es.html#v5-6">1 Timoteo 5:6</a>, «la que vive entregada a los placeres, aunque vive, está muerta», y Santiago 5:5, los ricos que vivieron en deleites sobre la tierra (todavía no en estas páginas). RV60 «la que se entrega a los placeres»; TNM 1987 «la que se entrega a la satisfacción sensual».')
+
+DICTIONARY.append(('katalego', 'katalegō', 'καταλέγω', 'katalegō',
+    'TO ENROLL, to put on a list &mdash; <em>kata</em> and <em>leg&#333;</em>, &lsquo;to count, to reckon.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-9">1 Timothy 5:9</a>, &lsquo;Let a widow be put on the list who is not less than sixty years old.&rsquo; Readers take the list as a roll of widows supported by the congregation, or as an order of widows with duties and a pledge. KJV &lsquo;Let not a widow be taken into the number&rsquo;; NWT 1984 &lsquo;Let a widow be put on the list.&rsquo;',
+    ('1 Timothy', 5, 9)))
+DICTIONARY_ES['katalego'] = ('katalégō',
+    'INSCRIBIR, poner en una lista &mdash; <em>kata</em> y <em>leg&#333;</em>, «contar, enumerar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-9">1 Timoteo 5:9</a>, «Que se ponga en la lista a la viuda que tenga no menos de sesenta años». Los lectores entienden la lista como un registro de viudas sostenidas por la congregación, o como un orden de viudas con tareas y un compromiso. RV60 «Sea puesta en la lista»; RV 1909 «La viuda sea puesta en clase especial».')
+
+DICTIONARY.append(('eparkeo', 'eparkeō', 'ἐπαρκέω', 'eparkeō',
+    'TO HELP, to relieve, to be enough for &mdash; from <em>arke&#333;</em>, &lsquo;to suffice.&rsquo; &#9888; It stands in two verses of the New Testament, both in one chapter: <a href="1-timothy-5.html#v5-10">1 Timothy 5:10</a>, the widow who &lsquo;has helped the afflicted,&rsquo; and <a href="1-timothy-5.html#v5-16">1 Timothy 5:16</a>, twice, the believing woman who is to help her own widows so that the congregation &lsquo;may help those who are truly widows.&rsquo; KJV &lsquo;relieved,&rsquo; &lsquo;relieve.&rsquo;',
+    ('1 Timothy', 5, 10)))
+DICTIONARY_ES['eparkeo'] = ('eparkéō',
+    'SOCORRER, aliviar, bastar para &mdash; de <em>arke&#333;</em>, «bastar». &#9888; Está en dos versículos del Nuevo Testamento, los dos en un mismo capítulo: <a href="1-timothy-5.es.html#v5-10">1 Timoteo 5:10</a>, la viuda que «ha socorrido a los afligidos», y <a href="1-timothy-5.es.html#v5-16">1 Timoteo 5:16</a>, dos veces, la creyente que ha de socorrer a sus propias viudas para que la congregación «pueda socorrer a las que en verdad son viudas». RV60 «socorrido», «mantenga».')
+
+DICTIONARY.append(('katastreniao', 'katastrēniaō', 'καταστρηνιάω', 'katastrēniaō',
+    'TO GROW WANTON AGAINST &mdash; <em>kata</em>, &lsquo;against,&rsquo; and <em>str&#275;nia&#333;</em>, &lsquo;to run riot, to live wantonly.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-11">1 Timothy 5:11</a>, of younger widows: &lsquo;when their desires turn them against Christ, they want to marry.&rsquo; KJV &lsquo;when they have begun to wax wanton against Christ&rsquo;; NIV &lsquo;when their sensual desires overcome their dedication to Christ.&rsquo;',
+    ('1 Timothy', 5, 11)))
+DICTIONARY_ES['katastreniao'] = ('katastrēniáō',
+    'DESENFRENARSE CONTRA &mdash; <em>kata</em>, «contra», y <em>str&#275;nia&#333;</em>, «desenfrenarse, vivir con lujuria». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-11">1 Timoteo 5:11</a>, de las viudas jóvenes: «cuando sus deseos las vuelven contra Cristo, quieren casarse». RV 1909 «después de hacerse licenciosas contra Cristo»; RV60 «impulsadas por sus deseos, se rebelan contra Cristo».')
+
+DICTIONARY.append(('phlyaros', 'phlyaros', 'φλύαρος', 'phlyaros',
+    'A BABBLER, a gossip &mdash; from <em>phly&#333;</em>, &lsquo;to bubble over.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-13">1 Timothy 5:13</a>, &lsquo;not only idle, but also gossips and busybodies&rsquo;; its verb <em>phlyare&#333;</em> is Diotrephes &lsquo;prating against us&rsquo; at <a href="3-john-1.html#v10">3 John 1:10</a>. KJV &lsquo;tattlers&rsquo;; NWT 1984 &lsquo;gossipers.&rsquo;',
+    ('1 Timothy', 5, 13)))
+DICTIONARY_ES['phlyaros'] = ('phlýaros',
+    'UN CHARLATÁN, un chismoso &mdash; de <em>phly&#333;</em>, «borbotear». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-13">1 Timoteo 5:13</a>, «no solo ociosas, sino también charlatanas y entremetidas»; su verbo <em>phlyare&#333;</em> es el «parloteando contra nosotros» de Diótrefes en <a href="3-john-1.es.html#v10">3 Juan 1:10</a>. RV60 «chismosas»; RV 1909 «parleras».')
+
+DICTIONARY.append(('oikodespoteo', 'oikodespoteō', 'οἰκοδεσποτέω', 'oikodespoteō',
+    'TO BE MASTER OF A HOUSE, to manage a household &mdash; the verb of <em>oikodespot&#275;s</em>, &lsquo;master of the house,&rsquo; as in &lsquo;say to the master of the house&rsquo; at <a href="mark-14.html#v14-14">Mark 14:14</a>. &#9888; The verb stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-14">1 Timothy 5:14</a>, where the younger ones are to marry, bear children and &lsquo;manage their households&rsquo;: the woman is given the verb of the master of the house. KJV &lsquo;guide the house&rsquo;; ASV &lsquo;rule the household.&rsquo;',
+    ('1 Timothy', 5, 14)))
+DICTIONARY_ES['oikodespoteo'] = ('oikodespotéō',
+    'SER DUEÑO DE UNA CASA, gobernar una casa &mdash; el verbo de <em>oikodespot&#275;s</em>, «dueño de la casa», como en «digan al dueño de la casa» de <a href="mark-14.es.html#v14-14">Marcos 14:14</a>. &#9888; El verbo está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-14">1 Timoteo 5:14</a>, donde las más jóvenes han de casarse, tener hijos y «gobernar su casa»: a la mujer se le da el verbo del dueño de la casa. RV60 «gobiernen su casa»; TNM 1987 «que manejen la casa».')
+
+DICTIONARY.append(('prokrima', 'prokrima', 'πρόκριμα', 'prokrima',
+    'A JUDGMENT MADE BEFOREHAND, prejudice &mdash; <em>pro</em>, &lsquo;before,&rsquo; and <em>krima</em>, &lsquo;judgment.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-21">1 Timothy 5:21</a>, &lsquo;to keep these things without prejudging, doing nothing out of partiality,&rsquo; beside its partner <em>prosklisis</em>, &lsquo;a leaning toward one side,&rsquo; also found only there. KJV &lsquo;without preferring one before another&rsquo;; NWT 1984 &lsquo;without prejudgment.&rsquo;',
+    ('1 Timothy', 5, 21)))
+DICTIONARY_ES['prokrima'] = ('prókrima',
+    'UN JUICIO HECHO DE ANTEMANO, prejuicio &mdash; <em>pro</em>, «antes», y <em>krima</em>, «juicio». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-21">1 Timoteo 5:21</a>, «que guardes estas cosas sin prejuicio, no haciendo nada por parcialidad», junto a su compañera <em>prosklisis</em>, «inclinación hacia un lado», que también está solo allí. RV60 «sin prejuicios»; TNM 1987 «sin prejuicio».')
+
+DICTIONARY.append(('hydropoteo', 'hydropoteō', 'ὑδροποτέω', 'hydropoteō',
+    'TO DRINK WATER, to be a water-drinker &mdash; <em>hyd&#333;r</em>, &lsquo;water,&rsquo; and <em>pot&#275;s</em>, &lsquo;drinker&rsquo;: one who drinks water only. &#9888; It stands in one verse of the New Testament, <a href="1-timothy-5.html#v5-23">1 Timothy 5:23</a>, &lsquo;No longer be a water-drinker, but use a little wine for the sake of your stomach,&rsquo; where <em>stomachos</em>, &lsquo;stomach,&rsquo; is also found only there. KJV &lsquo;Drink no longer water&rsquo;; ASV &lsquo;Be no longer a drinker of water.&rsquo;',
+    ('1 Timothy', 5, 23)))
+DICTIONARY_ES['hydropoteo'] = ('hydropotéō',
+    'BEBER AGUA, ser bebedor de agua &mdash; <em>hyd&#333;r</em>, «agua», y <em>pot&#275;s</em>, «bebedor»: el que bebe solo agua. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-timothy-5.es.html#v5-23">1 Timoteo 5:23</a>, «No sigas siendo bebedor de agua, sino usa un poco de vino a causa de tu estómago», donde <em>stomachos</em>, «estómago», está también solo allí. RV60 «Ya no bebas agua»; NVI «No sigas bebiendo solo agua».')
+
+DICTIONARY.append(('prodelos', 'prodēlos', 'πρόδηλος', 'prodēlos',
+    'EVIDENT, plain beforehand, conspicuous &mdash; <em>pro</em> and <em>d&#275;los</em>, &lsquo;clear.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="1-timothy-5.html#v5-24">1 Timothy 5:24</a> and <a href="1-timothy-5.html#v5-25">1 Timothy 5:25</a>, sins and good works that are &lsquo;evident,&rsquo; and Hebrews 7:14, of the Lord&rsquo;s descent from Judah (not yet on these pages). KJV at 1 Timothy 5:24 &lsquo;open beforehand&rsquo;; NWT 1984 &lsquo;publicly manifest.&rsquo;',
+    ('1 Timothy', 5, 24)))
+DICTIONARY_ES['prodelos'] = ('pródēlos',
+    'EVIDENTE, manifiesto de antemano, notorio &mdash; <em>pro</em> y <em>d&#275;los</em>, «claro». &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-timothy-5.es.html#v5-24">1 Timoteo 5:24</a> y <a href="1-timothy-5.es.html#v5-25">1 Timoteo 5:25</a>, pecados y buenas obras que son «evidentes», y Hebreos 7:14, de que nuestro Señor surgió de Judá (todavía no en estas páginas). RV60 en 1 Timoteo 5:24 «se hacen patentes»; TNM 1987 «públicamente manifiestos».')
+
+ENCYCLOPEDIA.append(dict(slug='polycarp', name='Polycarp of Smyrna', kind='person', aliases=['Polycarp'], refs=[('1 Timothy', 5, 9)], videos=[],
+    desc='Bishop of Smyrna in Asia Minor in the first half of the second century, whom Irenaeus heard as a young man, and who was put to death at Smyrna in his old age, about the middle of the century. &#9888; The account of his death, the <em>Martyrdom of Polycarp</em>, gives his answer to the governor: &lsquo;Eighty and six years have I served Him, and He never did me any injury: how then can I blaspheme my King and my Saviour?&rsquo; His one surviving letter, <em>To the Philippians</em>, tells the widows to pray continually for all and to know &lsquo;that they are the altar of God&rsquo; (chapter 4), the widows of <a href="1-timothy-5.html#v5-9">1 Timothy 5:9</a>; the same chapter opens, &lsquo;But the love of money is the root of all evils. Knowing, therefore, that as we brought nothing into the world, so we can carry nothing out,&rsquo; the words of 1 Timothy 6:10 and 6:7 (not yet on these pages).'))
+ENCYCLOPEDIA_ES['polycarp'] = ('Policarpo de Esmirna',
+    'Obispo de Esmirna, en Asia Menor, en la primera mitad del siglo II, a quien Ireneo escuchó de joven, y que fue ejecutado en Esmirna en su vejez, hacia mediados del siglo. &#9888; El relato de su muerte, el <em>Martirio de Policarpo</em>, da su respuesta al gobernador: «Ochenta y seis años le he servido, y nunca me hizo ningún mal: ¿cómo, pues, puedo blasfemar de mi Rey y mi Salvador?». Su única carta conservada, <em>A los filipenses</em>, pide a las viudas que oren sin cesar por todos y que sepan «que son el altar de Dios» (capítulo 4), las viudas de <a href="1-timothy-5.es.html#v5-9">1 Timoteo 5:9</a>; el mismo capítulo comienza: «Pero el amor al dinero es la raíz de todos los males. Sabiendo, pues, que nada trajimos al mundo, y nada podemos sacar», las palabras de 1 Timoteo 6:10 y 6:7 (todavía no en estas páginas).')
+
+def _1ti5_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_1ti5_fix([('are at 1 Timothy 5:13 (<em>periergoi</em>)', 'are at <a href="1-timothy-5.html#v5-13">1 Timothy 5:13</a> (<em>periergoi</em>)'), ('están en 1 Timoteo 5:13 (<em>periergoi</em>)', 'están en <a href="1-timothy-5.es.html#v5-13">1 Timoteo 5:13</a> (<em>periergoi</em>)'), ('1 Timothy 5:21, 2 Timothy 2:14, 2 Timothy 4:1 and Hebrews 2:6 (the last four not yet on these pages).', '<a href="1-timothy-5.html#v5-21">1 Timothy 5:21</a>, and 2 Timothy 2:14, 2 Timothy 4:1 and Hebrews 2:6 (the last three not yet on these pages).'), ('1 Timoteo 5:21, 2 Timoteo 2:14, 2 Timoteo 4:1 y Hebreos 2:6 (los cuatro últimos todavía no en estas páginas).', '<a href="1-timothy-5.es.html#v5-21">1 Timoteo 5:21</a>, y 2 Timoteo 2:14, 2 Timoteo 4:1 y Hebreos 2:6 (los tres últimos todavía no en estas páginas).'), ('and 1 Timothy 5:14 (the last not yet on these pages).', 'and <a href="1-timothy-5.html#v5-14">1 Timothy 5:14</a>.'), ('y 1 Timoteo 5:14 (el último todavía no en estas páginas).', 'y <a href="1-timothy-5.es.html#v5-14">1 Timoteo 5:14</a>.'), ('and 1 Timothy 5:5, Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last four not yet on these pages).', 'and <a href="1-timothy-5.html#v5-5">1 Timothy 5:5</a>; and Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last three not yet on these pages).'), ('y 1 Timoteo 5:5, Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos cuatro últimos todavía no en estas páginas).', 'y <a href="1-timothy-5.es.html#v5-5">1 Timoteo 5:5</a>; y Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos tres últimos todavía no en estas páginas).'), ('the busybody of 1 Timothy 5:13 (not yet on these pages).', 'the busybody of <a href="1-timothy-5.html#v5-13">1 Timothy 5:13</a>.'), ('el entremetido de 1 Timoteo 5:13 (todavía no en estas páginas).', 'el entremetido de <a href="1-timothy-5.es.html#v5-13">1 Timoteo 5:13</a>.'), ('the verb <em>teknogone&#333;</em> is at 1 Timothy 5:14, of younger widows (not yet on these pages).', 'the verb <em>teknogone&#333;</em> is at <a href="1-timothy-5.html#v5-14">1 Timothy 5:14</a>, of the younger ones.'), ('el verbo <em>teknogone&#333;</em> está en 1 Timoteo 5:14, de las viudas jóvenes (todavía no en estas páginas).', 'el verbo <em>teknogone&#333;</em> está en <a href="1-timothy-5.es.html#v5-14">1 Timoteo 5:14</a>, de las más jóvenes.'), ('and 1 Timothy 5:7 and 6:14 (these two not yet on these pages).', 'and <a href="1-timothy-5.html#v5-7">1 Timothy 5:7</a>, and 6:14 (not yet on these pages).'), ('y 1 Timoteo 5:7 y 6:14 (estos dos todavía no en estas páginas).', 'y <a href="1-timothy-5.es.html#v5-7">1 Timoteo 5:7</a>, y 6:14 (todavía no en estas páginas).'), ('1 Timothy 5:17, of elders who lead well; and Titus 3:8 and 3:14, of giving oneself to good works (these last three not yet on these pages).', '<a href="1-timothy-5.html#v5-17">1 Timothy 5:17</a>, of elders who lead well; and Titus 3:8 and 3:14, of giving oneself to good works (these two not yet on these pages).'), ('1 Timoteo 5:17, de los ancianos que dirigen bien; y Tito 3:8 y 3:14, de dedicarse a las buenas obras (estos tres últimos todavía no en estas páginas).', '<a href="1-timothy-5.es.html#v5-17">1 Timoteo 5:17</a>, de los ancianos que dirigen bien; y Tito 3:8 y 3:14, de dedicarse a las buenas obras (estos dos todavía no en estas páginas).'), ('and 1 Timothy 5:2, of how Timothy is to treat younger women (not yet on these pages).', 'and <a href="1-timothy-5.html#v5-2">1 Timothy 5:2</a>, of how Timothy is to treat younger women.'), ('y 1 Timoteo 5:2, de cómo ha de tratar Timoteo a las mujeres jóvenes (todavía no en estas páginas).', 'y <a href="1-timothy-5.es.html#v5-2">1 Timoteo 5:2</a>, de cómo ha de tratar Timoteo a las mujeres jóvenes.'), ('1 Corinthians 9:9, <em>is it for oxen that God is concerned?</em>, and 1 Timothy 5:18, where it stands beside <em>the labourer deserves his wages</em> as <em>the Scripture</em> (neither yet on these pages).', '<a href="1-corinthians-9.html#v9">1 Corinthians 9:9</a>, <em>is it for oxen that God is concerned?</em>, and <a href="1-timothy-5.html#v5-18">1 Timothy 5:18</a>, where it stands beside <em>the worker is worthy of his wages</em> as <em>the Scripture</em>.'), ('1 Corintios 9:9, <em>¿acaso Dios se preocupa por los bueyes?</em>, y 1 Timoteo 5:18, donde está junto a <em>el obrero es digno de su salario</em> como <em>la Escritura</em> (ninguno todavía en estas páginas).', '<a href="1-corinthians-9.es.html#v9">1 Corintios 9:9</a>, <em>¿se preocupa Dios por los bueyes?</em>, y <a href="1-timothy-5.es.html#v5-18">1 Timoteo 5:18</a>, donde está junto a <em>el obrero es digno de su salario</em> como <em>la Escritura</em>.')])
+
+XREFS.extend([
+    (("1 Timothy", 4, 12), ("1 Timothy", 5, 2), "purity"),
+    (("Mark", 7, 10), ("1 Timothy", 5, 3), "honor father and mother"),
+    (("Acts", 6, 1), ("1 Timothy", 5, 3), "widows overlooked"),
+    (("James", 1, 27), ("1 Timothy", 5, 3), "orphans and widows"),
+    (("Deuteronomy", 10, 18), ("1 Timothy", 5, 3), "justice for the widow"),
+    (("2 Timothy", 1, 3), ("1 Timothy", 5, 4), "forebears"),
+    (("Luke", 2, 37), ("1 Timothy", 5, 5), "night and day"),
+    (("Revelation", 3, 1), ("1 Timothy", 5, 6), "dead while alive"),
+    (("Galatians", 6, 10), ("1 Timothy", 5, 8), "members of the household"),
+    (("1 Timothy", 3, 2), ("1 Timothy", 5, 9), "one wife, one husband"),
+    (("John", 13, 14), ("1 Timothy", 5, 10), "washing feet"),
+    (("1 Corinthians", 7, 8), ("1 Timothy", 5, 14), "widows remaining"),
+    (("1 Corinthians", 7, 39), ("1 Timothy", 5, 14), "free to marry"),
+    (("2 Thessalonians", 3, 11), ("1 Timothy", 5, 13), "busybodies"),
+    (("1 Timothy", 1, 20), ("1 Timothy", 5, 15), "Satan"),
+    (("1 Timothy", 3, 4), ("1 Timothy", 5, 17), "lead well"),
+    (("Deuteronomy", 25, 4), ("1 Timothy", 5, 18), "the ox"),
+    (("1 Corinthians", 9, 9), ("1 Timothy", 5, 18), "the ox"),
+    (("Luke", 10, 7), ("1 Timothy", 5, 18), "the worker's wages"),
+    (("Deuteronomy", 19, 15), ("1 Timothy", 5, 19), "two or three witnesses"),
+    (("Matthew", 18, 16), ("1 Timothy", 5, 19), "two or three witnesses"),
+    (("Jude", 1, 6), ("1 Timothy", 5, 21), "angels"),
+    (("1 Timothy", 4, 14), ("1 Timothy", 5, 22), "laying on of hands"),
+    (("1 Timothy", 4, 3), ("1 Timothy", 5, 23), "abstinence"),
+])
+
+CHAPTER_ART["1ti5"] = [dict(
+    file="rembrandt-prophetess-anna-rijksmuseum.jpg",
+    title="Old Woman Reading, Probably the Prophetess Anna",   title_es="Anciana leyendo, probablemente la profetisa Ana",
+    artist="Rembrandt van Rijn",
+    year="1631",
+    location="Rijksmuseum, Amsterdam",
+    location_es="Rijksmuseum, Ámsterdam",
+    alt="An oil painting of an old woman seen from the side, in a gold-embroidered hood and a heavy fur-trimmed red cloak, bent over a large open book "
+        "on her lap, one wrinkled hand resting flat on the page, lit from the upper right against a dark background.",
+    note="&#9888; The museum&rsquo;s own title says &lsquo;probably&rsquo;: the old woman is taken to be Anna, the widow of Luke 2:37 who &lsquo;never left the "
+         "temple, serving night and day with fastings and prayers,&rsquo; the picture the chapter draws of a widow who &lsquo;continues in petitions and prayers "
+         "night and day&rsquo; (<a href=\"1-timothy-5.html#v5-5\">verse 5</a>).",
+    note_es="&#9888; El propio título del museo dice «probablemente»: la anciana se toma por Ana, la viuda de Lucas 2:37 que «no se apartaba del templo, "
+            "sirviendo de noche y de día con ayunos y ruegos», el retrato que el capítulo hace de la viuda que «persevera en peticiones y oraciones noche y día» "
+            "(<a href=\"1-timothy-5.es.html#v5-5\">versículo 5</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Oude_lezende_vrouw,_waarschijnlijk_de_profetes_Hanna_Rijksmuseum_SK-A-3066.jpeg",
+)]
+
+CHRON_CHAPTERS["1ti5"] = dict(era='apostolic',
+    when="Older and younger men and women; honor for widows who are truly widows, and the list of widows; younger widows; double honor for elders who lead well, the ox and the worker's wages; accusations, the laying on of hands, and a little wine.",
+    clock="Undated by the text; on the traditional reading, mid-60s AD, from Macedonia to Timothy at Ephesus; many scholars date the Pastoral letters later.")
+
