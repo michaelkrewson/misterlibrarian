@@ -43613,3 +43613,195 @@ CHRON_CHAPTERS["jas5"] = dict(era='apostolic',
     when="'Come now, you rich': rotted wealth and rust as a witness; the wages of the mowers held back, crying to Jehovah of armies; 'be patient until the presence of the Lord,' the farmer and the early and late rain; the endurance of Job; 'let your yes be yes'; the elders, the oil and the prayer of faith; Elijah's prayer; and turning a sinner back. The letter ends with no farewell.",
     clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
 
+# ---- 1 Peter 2 -----------------------------------------------------------
+DICTIONARY.append(('artigennetos', 'artigennētos', 'ἀρτιγέννητος', 'artigennētos',
+    'NEWBORN &mdash; <em>arti</em>, &lsquo;just now,&rsquo; and <em>genna&#333;</em>, &lsquo;to beget, give birth.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-2">1 Peter 2:2</a>, &lsquo;like newborn infants, long for the unadulterated milk of the word,&rsquo; after the readers were &lsquo;born again&rsquo; at <a href="1-peter-1.html#v23">1 Peter 1:23</a> (<a href="dictionary.html#brephos">brephos</a>). KJV &lsquo;As newborn babes&rsquo;; NWT 1984 &lsquo;as newborn infants.&rsquo;',
+    ('1 Peter', 2, 2)))
+DICTIONARY_ES['artigennetos'] = ('artigénn&#275;tos',
+    'RECIÉN NACIDO &mdash; <em>árti</em>, «ahora mismo», y <em>gennáō</em>, «engendrar, dar a luz». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-2">1 Pedro 2:2</a>, «como niños recién nacidos, deseen con anhelo la leche no adulterada de la palabra», después de que los lectores «nacieron de nuevo» en <a href="1-peter-1.es.html#v23">1 Pedro 1:23</a> (<a href="diccionario.html#brephos">brephos</a>). RV60 «como niños recién nacidos»; TNM 1987 «como criaturas recién nacidas».')
+
+DICTIONARY.append(('logikos', 'logikos', 'λογικός', 'logikos',
+    'REASONABLE; OF THE WORD &mdash; from <em>logos</em>, &lsquo;word, reason.&rsquo; &#9888; It stands in two verses of the New Testament: the &lsquo;reasonable service&rsquo; of <a href="romans-12.html#v12-1">Romans 12:1</a> and the milk of <a href="1-peter-2.html#v2-2">1 Peter 2:2</a>. Readers take it as &lsquo;rational,&rsquo; as &lsquo;spiritual,&rsquo; or, at 1 Peter 2:2, as &lsquo;of the word,&rsquo; since the verses before end with &lsquo;the word of God&rsquo; (<a href="1-peter-1.html#v23">1 Peter 1:23</a>); this translation prints &lsquo;reasonable&rsquo; at Romans 12:1 and &lsquo;of the word&rsquo; in 1 Peter. KJV at 1 Peter 2:2 &lsquo;the sincere milk of the word&rsquo;; ASV &lsquo;the spiritual milk&rsquo;; NWT 1984 &lsquo;the unadulterated milk belonging to the word.&rsquo;',
+    ('Romans', 12, 1)))
+DICTIONARY_ES['logikos'] = ('logikós',
+    'RACIONAL; DE LA PALABRA &mdash; de <em>lógos</em>, «palabra, razón». &#9888; Está en dos versículos del Nuevo Testamento: el «servicio racional» de <a href="romans-12.es.html#v12-1">Romanos 12:1</a> y la leche de <a href="1-peter-2.es.html#v2-2">1 Pedro 2:2</a>. Los lectores lo toman como «racional», como «espiritual», o, en 1 Pedro 2:2, como «de la palabra», puesto que los versículos anteriores terminan con «la palabra de Dios» (<a href="1-peter-1.es.html#v23">1 Pedro 1:23</a>); esta traducción imprime «racional» en Romanos 12:1 y «de la palabra» en 1 Pedro. RV60 en 1 Pedro 2:2 «la leche espiritual no adulterada»; TNM 1987 «la leche no adulterada que pertenece a la palabra».')
+
+DICTIONARY.append(('adolos', 'adolos', 'ἄδολος', 'adolos',
+    'UNADULTERATED, without deceit &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>dolos</em>, &lsquo;deceit, bait.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-2">1 Peter 2:2</a>, one verse after the readers are told to put away &lsquo;all deceit&rsquo; (<em>dolos</em>, <a href="1-peter-2.html#v2-1">2:1</a>), so the milk is free of the very thing they shed; and in verse 22, &lsquo;nor was deceit found in his mouth.&rsquo; ASV &lsquo;the spiritual milk which is without guile&rsquo;; NWT 1984 &lsquo;the unadulterated milk.&rsquo;',
+    ('1 Peter', 2, 2)))
+DICTIONARY_ES['adolos'] = ('ádolos',
+    'NO ADULTERADO, sin engaño &mdash; <em>a-</em>, «no», y <em>dólos</em>, «engaño, cebo». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-2">1 Pedro 2:2</a>, un versículo después de que se pide a los lectores desechar «todo engaño» (<em>dólos</em>, <a href="1-peter-2.es.html#v2-1">2:1</a>), de modo que la leche no tiene aquello mismo que ellos desechan; y en el versículo 22, «ni se halló engaño en su boca». RV 1909 «la leche espiritual, sin engaño»; TNM 1987 «la leche no adulterada».')
+
+DICTIONARY.append(('hierateuma', 'hierateuma', 'ἱεράτευμα', 'hierateuma',
+    'PRIESTHOOD, a body of priests &mdash; from <em>hiereus</em>, &lsquo;priest.&rsquo; &#9888; It stands in two verses of the New Testament, both in 1 Peter 2: &lsquo;a holy priesthood, to offer up spiritual sacrifices&rsquo; (<a href="1-peter-2.html#v2-5">1 Peter 2:5</a>) and &lsquo;a royal priesthood, a holy nation&rsquo; (<a href="1-peter-2.html#v2-9">1 Peter 2:9</a>), the second word for word the Greek of Exodus 19:6, where the Hebrew has &lsquo;a kingdom of priests and a holy nation&rsquo; (<a href="exodus-19.html#v19-6">Exodus 19:6</a>). KJV &lsquo;an holy priesthood&rsquo; and &lsquo;a royal priesthood&rsquo;; NWT 1984 &lsquo;a royal priesthood.&rsquo;',
+    ('1 Peter', 2, 5)))
+DICTIONARY_ES['hierateuma'] = ('hieráteuma',
+    'SACERDOCIO, un cuerpo de sacerdotes &mdash; de <em>hiereús</em>, «sacerdote». &#9888; Está en dos versículos del Nuevo Testamento, los dos en 1 Pedro 2: «un sacerdocio santo, para ofrecer sacrificios espirituales» (<a href="1-peter-2.es.html#v2-5">1 Pedro 2:5</a>) y «sacerdocio real, nación santa» (<a href="1-peter-2.es.html#v2-9">1 Pedro 2:9</a>), lo segundo palabra por palabra el griego de Éxodo 19:6, donde el hebreo tiene «un reino de sacerdotes y una nación santa» (<a href="exodus-19.es.html#v19-6">Éxodo 19:6</a>). RV60 «real sacerdocio»; TNM 1987 «un sacerdocio real».')
+
+DICTIONARY.append(('katalalia', 'katalalia', 'καταλαλιά', 'katalalia',
+    'SLANDER, speaking against &mdash; the noun of <em>katalale&#333;</em> (<a href="dictionary.html#katalaleo">katalaleo</a>). &#9888; It stands in two verses of the New Testament: the &lsquo;slanders&rsquo; Paul fears to find at Corinth (<a href="2-corinthians-12.html#v20">2 Corinthians 12:20</a>) and &lsquo;all slanders&rsquo; to be put away (<a href="1-peter-2.html#v2-1">1 Peter 2:1</a>). KJV at 1 Peter 2:1 &lsquo;all evil speakings&rsquo;; NWT 1984 &lsquo;all sorts of backbiting.&rsquo;',
+    ('2 Corinthians', 12, 20)))
+DICTIONARY_ES['katalalia'] = ('katalaliá',
+    'CALUMNIA, hablar mal de otro &mdash; el sustantivo de <em>katalaléō</em> (<a href="diccionario.html#katalaleo">katalaleo</a>). &#9888; Está en dos versículos del Nuevo Testamento: las «calumnias» que Pablo teme hallar en Corinto (<a href="2-corinthians-12.es.html#v20">2 Corintios 12:20</a>) y «toda calumnia» que hay que desechar (<a href="1-peter-2.es.html#v2-1">1 Pedro 2:1</a>). RV60 en 1 Pedro 2:1 «todas las detracciones»; TNM 1987 «toda suerte de difamación solapada».')
+
+DICTIONARY.append(('sarkikos', 'sarkikos', 'σαρκικός', 'sarkikos',
+    'FLESHLY, of the flesh &mdash; from <em>sarx</em>, &lsquo;flesh&rsquo;: belonging to the body and its appetites, or to merely human ways. &#9888; It stands in six verses of the New Testament: Paul&rsquo;s word for the Corinthians&rsquo; ways (1 Corinthians 3:3) and for merely human wisdom (2 Corinthians 1:12), for material goods shared in return for spiritual ones (Romans 15:27; 1 Corinthians 9:11), for the weapons he does not use (2 Corinthians 10:4), and &lsquo;fleshly desires, which wage war against the soul&rsquo; (<a href="1-peter-2.html#v2-11">1 Peter 2:11</a>). KJV at 1 Peter 2:11 &lsquo;abstain from fleshly lusts&rsquo;; NWT 1984 &lsquo;fleshly desires.&rsquo;',
+    ('1 Peter', 2, 11)))
+DICTIONARY_ES['sarkikos'] = ('sarkikós',
+    'DE LA CARNE, carnal &mdash; de <em>sárx</em>, «carne»: propio del cuerpo y sus apetitos, o de los modos simplemente humanos. &#9888; Está en seis versículos del Nuevo Testamento: la palabra de Pablo para los modos de los corintios (1 Corintios 3:3) y para la sabiduría meramente humana (2 Corintios 1:12), para los bienes materiales dados a cambio de los espirituales (Romanos 15:27; 1 Corintios 9:11), para las armas que él no usa (2 Corintios 10:4), y «los deseos de la carne, que hacen guerra contra el alma» (<a href="1-peter-2.es.html#v2-11">1 Pedro 2:11</a>). RV60 en 1 Pedro 2:11 «los deseos carnales»; TNM 1987 «los deseos carnales».')
+
+DICTIONARY.append(('anastrophe', 'anastrophē', 'ἀναστροφή', 'anastrophē',
+    'CONDUCT, way of life &mdash; from <em>anastreph&#333;</em>, &lsquo;to turn about, live&rsquo;: how one goes about one&rsquo;s life. &#9888; It is a word 1 Peter returns to: &lsquo;be holy in all your conduct&rsquo; (<a href="1-peter-1.html#v15">1 Peter 1:15</a>), &lsquo;ransomed from the futile way of life handed down from your fathers&rsquo; (<a href="1-peter-1.html#v18">1 Peter 1:18</a>), and &lsquo;keeping your conduct among the nations good&rsquo; (<a href="1-peter-2.html#v2-12">1 Peter 2:12</a>); elsewhere it is &lsquo;the outcome of their conduct&rsquo; (<a href="hebrews-13.html#v13-7">Hebrews 13:7</a>) and &lsquo;good conduct&rsquo; (<a href="james-3.html#v3-13">James 3:13</a>). KJV at 1 Peter 2:12 &lsquo;Having your conversation honest,&rsquo; with &lsquo;conversation&rsquo; in its old sense of manner of life; ASV &lsquo;having your behavior seemly&rsquo;; NWT 1984 &lsquo;Maintain YOUR conduct fine.&rsquo;',
+    ('1 Peter', 1, 15)))
+DICTIONARY_ES['anastrophe'] = ('anastroph&#275;́',
+    'CONDUCTA, manera de vivir &mdash; de <em>anastréphō</em>, «volverse, vivir»: cómo se lleva la propia vida. &#9888; Es una palabra a la que 1 Pedro vuelve: «sean también ustedes santos en toda su conducta» (<a href="1-peter-1.es.html#v15">1 Pedro 1:15</a>), «rescatados de su vana manera de vivir heredada de sus padres» (<a href="1-peter-1.es.html#v18">1 Pedro 1:18</a>), y «manteniendo buena su conducta entre las naciones» (<a href="1-peter-2.es.html#v2-12">1 Pedro 2:12</a>); en otros lugares es «el resultado de su conducta» (<a href="hebrews-13.es.html#v13-7">Hebreos 13:7</a>) y «su buena conducta» (<a href="james-3.es.html#v3-13">Santiago 3:13</a>). RV60 en 1 Pedro 2:12 «manteniendo buena vuestra manera de vivir»; TNM 1987 «Mantengan excelente su conducta».')
+
+DICTIONARY.append(('epikalymma', 'epikalymma', 'ἐπικάλυμμα', 'epikalymma',
+    'COVER, cloak, pretext &mdash; from <em>epikalypt&#333;</em>, &lsquo;to cover over.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-16">1 Peter 2:16</a>, &lsquo;not using your freedom as a cover for malice&rsquo;; Paul&rsquo;s version is &lsquo;do not turn that freedom into an opportunity for the flesh&rsquo; (<a href="galatians-5.html#v13">Galatians 5:13</a>). KJV &lsquo;a cloke of maliciousness&rsquo;; ASV &lsquo;a cloak of wickedness&rsquo;; NWT 1984 &lsquo;a blind for badness.&rsquo;',
+    ('1 Peter', 2, 16)))
+DICTIONARY_ES['epikalymma'] = ('epikálymma',
+    'CUBIERTA, pretexto &mdash; de <em>epikalýptō</em>, «cubrir por encima». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-16">1 Pedro 2:16</a>, «no usando la libertad como pretexto para la malicia»; la versión de Pablo es «no conviertan esa libertad en oportunidad para la carne» (<a href="galatians-5.es.html#v13">Gálatas 5:13</a>). RV60 «como pretexto para hacer lo malo»; TNM 1987 «como disfraz para la maldad».')
+
+DICTIONARY.append(('adelphotes', 'adelphotēs', 'ἀδελφότης', 'adelphotēs',
+    'BROTHERHOOD, the whole body of brothers &mdash; from <em>adelphos</em>, &lsquo;brother.&rsquo; &#9888; It stands in two verses of the New Testament, both in 1 Peter: &lsquo;Love the brotherhood&rsquo; (<a href="1-peter-2.html#v2-17">1 Peter 2:17</a>) and the same sufferings laid on &lsquo;your brotherhood in the world&rsquo; at 5:9 (not yet on these pages). KJV &lsquo;Love the brotherhood&rsquo;; NWT 1984 &lsquo;have love for the whole association of brothers.&rsquo;',
+    ('1 Peter', 2, 17)))
+DICTIONARY_ES['adelphotes'] = ('adelphót&#275;s',
+    'HERMANDAD, el conjunto de los hermanos &mdash; de <em>adelphós</em>, «hermano». &#9888; Está en dos versículos del Nuevo Testamento, los dos en 1 Pedro: «Amen a la hermandad» (<a href="1-peter-2.es.html#v2-17">1 Pedro 2:17</a>) y los mismos sufrimientos que pasa «su hermandad en el mundo» en 5:9 (todavía no en estas páginas). RV60 «Amad a los hermanos»; TNM 1987 «tengan amor a toda la asociación de hermanos».')
+
+DICTIONARY.append(('oiketes', 'oiketēs', 'οἰκέτης', 'oiketēs',
+    'HOUSEHOLD SLAVE, house servant &mdash; from <em>oikos</em>, &lsquo;house&rsquo;: one who belongs to a household as its servant. &#9888; It stands in four verses of the New Testament: &lsquo;No servant can be a slave to two masters&rsquo; (<a href="luke-16.html#v16-13">Luke 16:13</a>); the servants Cornelius sends (<a href="acts-10.html#v10-7">Acts 10:7</a>); &lsquo;Who are you to judge someone else&rsquo;s servant?&rsquo; (<a href="romans-14.html#v14-4">Romans 14:4</a>); and &lsquo;Household slaves, be subject to your masters&rsquo; (<a href="1-peter-2.html#v2-18">1 Peter 2:18</a>), a verse later cited in defense of slavery, a use the note at that verse names and answers. KJV at 1 Peter 2:18 &lsquo;Servants&rsquo;; NWT 1984 &lsquo;house servants.&rsquo;',
+    ('1 Peter', 2, 18)))
+DICTIONARY_ES['oiketes'] = ('oikét&#275;s',
+    'ESCLAVO DE CASA, sirviente doméstico &mdash; de <em>oîkos</em>, «casa»: el que pertenece a una casa como su sirviente. &#9888; Está en cuatro versículos del Nuevo Testamento: «Ningún siervo puede ser esclavo de dos señores» (<a href="luke-16.es.html#v16-13">Lucas 16:13</a>); los sirvientes que envía Cornelio (<a href="acts-10.es.html#v10-7">Hechos 10:7</a>); «¿Quién eres tú para juzgar al criado de otro?» (<a href="romans-14.es.html#v14-4">Romanos 14:4</a>); y «Esclavos de casa, estén sujetos a sus amos» (<a href="1-peter-2.es.html#v2-18">1 Pedro 2:18</a>), un versículo citado después en defensa de la esclavitud, uso que la nota de ese versículo nombra y responde. RV60 en 1 Pedro 2:18 «Criados»; TNM 1987 «los sirvientes de casa».')
+
+DICTIONARY.append(('skolios', 'skolios', 'σκολιός', 'skolios',
+    'CROOKED &mdash; bent, winding; of people, perverse or harsh. &#9888; It stands in four verses of the New Testament: &lsquo;the crooked shall become straight&rsquo; (<a href="luke-3.html#v3-5">Luke 3:5</a>, from Isaiah 40:4); &lsquo;Be saved from this crooked generation&rsquo; (<a href="acts-2.html#v2-40">Acts 2:40</a>); &lsquo;a crooked and twisted generation&rsquo; (<a href="philippians-2.html#v2-15">Philippians 2:15</a>); and masters who are &lsquo;crooked&rsquo; (<a href="1-peter-2.html#v2-18">1 Peter 2:18</a>). KJV at 1 Peter 2:18 &lsquo;the froward&rsquo;; NWT 1984 &lsquo;those hard to please.&rsquo;',
+    ('Acts', 2, 40)))
+DICTIONARY_ES['skolios'] = ('skoliós',
+    'TORCIDO &mdash; curvo, sinuoso; dicho de personas, perverso o duro. &#9888; Está en cuatro versículos del Nuevo Testamento: «lo torcido se volverá recto» (<a href="luke-3.es.html#v3-5">Lucas 3:5</a>, de Isaías 40:4); «Sed salvados de esta generación torcida» (<a href="acts-2.es.html#v2-40">Hechos 2:40</a>); «una generación torcida y perversa» (<a href="philippians-2.es.html#v2-15">Filipenses 2:15</a>); y los amos que son «torcidos» (<a href="1-peter-2.es.html#v2-18">1 Pedro 2:18</a>). RV60 en 1 Pedro 2:18 «los difíciles de soportar»; TNM 1987 «los que son difíciles de complacer».')
+
+DICTIONARY.append(('kleos', 'kleos', 'κλέος', 'kleos',
+    'GLORY, fame, credit &mdash; what is said of a person, a good name. &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-20">1 Peter 2:20</a>, &lsquo;For what glory is there if, when you sin and are beaten with fists, you endure it?&rsquo; KJV &lsquo;For what glory is it&rsquo;; NWT 1984 &lsquo;what merit is there in it.&rsquo;',
+    ('1 Peter', 2, 20)))
+DICTIONARY_ES['kleos'] = ('kléos',
+    'GLORIA, fama, mérito &mdash; lo que se dice de alguien, el buen nombre. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-20">1 Pedro 2:20</a>, «Porque ¿qué gloria hay si, cuando pecan y les dan puñetazos, lo soportan?». RV60 «¿qué gloria es»; TNM 1987 «¿qué mérito hay en ello».')
+
+DICTIONARY.append(('hypogrammos', 'hypogrammos', 'ὑπογραμμός', 'hypogrammos',
+    'PATTERN, model to copy &mdash; from <em>hypograph&#333;</em>, &lsquo;to write under, trace&rsquo;; said to be the word for the model letters a child traces in learning to write (reported, not checked here). &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-21">1 Peter 2:21</a>, &lsquo;Christ also suffered for you, leaving you a pattern, so that you may follow in his footsteps&rsquo; (<a href="dictionary.html#ichnos">ichnos</a>). KJV &lsquo;leaving us an example&rsquo;; NWT 1984 &lsquo;leaving YOU a model.&rsquo;',
+    ('1 Peter', 2, 21)))
+DICTIONARY_ES['hypogrammos'] = ('hypogrammós',
+    'MODELO, muestra para copiar &mdash; de <em>hypográphō</em>, «escribir debajo, calcar»; se dice que es la palabra para las letras de muestra que un niño calca al aprender a escribir (dato referido, no comprobado aquí). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-21">1 Pedro 2:21</a>, «también Cristo sufrió por ustedes, dejándoles un modelo, para que sigan sus pisadas» (<a href="diccionario.html#ichnos">ichnos</a>). RV60 «dejándonos ejemplo»; TNM 1987 «dejándoles dechado».')
+
+DICTIONARY.append(('ichnos', 'ichnos', 'ἴχνος', 'ichnos',
+    'FOOTSTEP, track &mdash; the print a foot leaves. &#9888; It stands in three verses of the New Testament: those who walk &lsquo;in the footsteps of the faith&rsquo; of Abraham (<a href="romans-4.html#v4-12">Romans 4:12</a>); &lsquo;In the same footsteps?&rsquo; (<a href="2-corinthians-12.html#v18">2 Corinthians 12:18</a>); and &lsquo;so that you may follow in his footsteps&rsquo; (<a href="1-peter-2.html#v2-21">1 Peter 2:21</a>). KJV at 1 Peter 2:21 &lsquo;that ye should follow his steps&rsquo;; NIV &lsquo;that you should follow in his steps.&rsquo;',
+    ('Romans', 4, 12)))
+DICTIONARY_ES['ichnos'] = ('íchnos',
+    'PISADA, huella &mdash; la marca que deja un pie. &#9888; Está en tres versículos del Nuevo Testamento: los que andan «en las pisadas de la fe» de Abraham (<a href="romans-4.es.html#v4-12">Romanos 4:12</a>); «¿No en las mismas pisadas?» (<a href="2-corinthians-12.es.html#v18">2 Corintios 12:18</a>); y «para que sigan sus pisadas» (<a href="1-peter-2.es.html#v2-21">1 Pedro 2:21</a>). RV60 en 1 Pedro 2:21 «para que sigáis sus pisadas»; TNM 1987 «para que sigan sus pasos con sumo cuidado y atención».')
+
+DICTIONARY.append(('molops', 'mōlōps', 'μώλωψ', 'mōlōps',
+    'WELT, weal &mdash; the raised mark a blow leaves on the skin. &#9888; It stands in one verse of the New Testament, <a href="1-peter-2.html#v2-24">1 Peter 2:24</a>, &lsquo;by his welt you were healed,&rsquo; taken from the Greek of Isaiah 53:5, &lsquo;by his welt we were healed&rsquo;; the Hebrew there is printed &lsquo;by his welt there was healing for us&rsquo; (<a href="isaiah-53.html#v53-5">Isaiah 53:5</a>). KJV &lsquo;by whose stripes ye were healed&rsquo;; NWT 1984 &lsquo;by his stripes YOU were healed.&rsquo;',
+    ('1 Peter', 2, 24)))
+DICTIONARY_ES['molops'] = ('mṓlōps',
+    'VERDUGÓN &mdash; la marca levantada que deja un golpe en la piel. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-2.es.html#v2-24">1 Pedro 2:24</a>, «por su verdugón fueron sanados», tomado del griego de Isaías 53:5, «por su verdugón fuimos sanados»; el hebreo allí se imprime «por su verdugón hubo sanidad para nosotros» (<a href="isaiah-53.es.html#v53-5">Isaías 53:5</a>). RV60 «por cuya herida fuisteis sanados»; TNM 1987 «por sus heridas ustedes fueron sanados».')
+
+DICTIONARY_ES['parepidemos'] = ('parepíd&#275;mos',
+    'RESIDENTE EXTRANJERO, expatriado &mdash; <em>pará</em>, «junto a», y <em>epíd&#275;mos</em>, «que está de paso en un lugar»; el que vive fuera solo por un tiempo, un forastero sin ciudadanía donde reside. &#9888; Es la nota clave de 1 Pedro, que llama a los creyentes «los expatriados elegidos de la Dispersión» (<a href="1-peter-1.es.html#v1">1 Pedro 1:1</a>) y «peregrinos y expatriados» (<em>pároikoi kai parepíd&#275;moi</em>) en <a href="1-peter-2.es.html#v2-11">2:11</a>: ser cristiano es vivir como residente temporal en un mundo que no es la propia casa. El Antiguo Testamento griego usa la misma pareja de Abraham en Génesis 23:4 (comprobado). Hebreos 11:13 lo junta con <em>xénos</em>: los del rol confesaron que eran «extranjeros y residentes foráneos en la tierra» (<a href="hebrews-11.es.html#v11-13">Hebreos 11:13</a>).')
+DICTIONARY_ES['arete'] = ('aret&#275;́',
+    'EXCELENCIA, virtud &mdash; la gran palabra de la filosofía moral griega: la cualidad que hace excelente a una cosa en lo que es, el filo de un buen cuchillo, el valor de un hombre bueno. &#9888; El Nuevo Testamento casi no la usa: Pablo una vez, en «si hay alguna virtud» de <a href="philippians-4.es.html#v4-8">Filipenses 4:8</a>; Pedro en plural, «las excelencias» de aquel que llamó a los lectores, del griego de Isaías 43:21 (<a href="1-peter-2.es.html#v2-9">1 Pedro 2:9</a>); y 2 Pedro 1:3 y 1:5, donde es el primer peldaño que los creyentes añaden a su fe. RV60 en 1 Pedro 2:9 «las virtudes».')
+DICTIONARY_ES['ammi'] = ('ammí',
+    'MI PUEBLO &mdash; la mitad de la fórmula del pacto de Éxodo 6:7, mi pueblo y su Dios, que se repite así en toda la Ley y los Profetas. &#9888; Oseas la desarma al llamar a un hijo Lo-ammí, «No-mi-pueblo» (<a href="hosea-1.es.html#v9">Oseas 1:9</a>), y la reversión sigue a los pocos versículos, donde a los llamados «no mi pueblo» se les llama «hijos del Dios viviente». Pablo cita esa reversión en <a href="romans-9.es.html#v9-25">Romanos 9:25</a>&ndash;26, de los llamados «no solo de entre judíos sino también de entre naciones», y <a href="1-peter-2.es.html#v2-10">1 Pedro 2:10</a> se apoya en ella; los dos aplican a sus lectores una promesa hecha al reino del norte.')
+
+def _pe2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe2_fix([('Paul quotes that reversal at Romans 9:25-26 and 1 Peter 2:10 draws on it, applying to gentiles a promise made here to the northern kingdom.', 'Paul quotes that reversal at Romans 9:25-26, of those called \'not only from Jews but also from nations,\' and <a href="1-peter-2.html#v2-10">1 Peter 2:10</a> draws on it as well; both apply to their readers a promise made here to the northern kingdom.'), ('1 Peter 2:6-7, where it is fused', '<a href="1-peter-2.html#v2-6">1 Peter 2:6-7</a>, where it is fused'), ('1 Pedro 2:6-7, donde se fusiona', '<a href="1-peter-2.es.html#v2-6">1 Pedro 2:6-7</a>, donde se fusiona'), ('1 Peter 2:2. ⭐', '<a href="1-peter-2.html#v2-2">1 Peter 2:2</a>. ⭐'), ('Galatians 3:13; 1 Peter 2:24)', 'Galatians 3:13; <a href="1-peter-2.html#v2-24">1 Peter 2:24</a>)'), ('Gálatas 3:13; 1 Pedro 2:24)', 'Gálatas 3:13; <a href="1-peter-2.es.html#v2-24">1 Pedro 2:24</a>)'), ('requoted of Christ again at 1 Peter 2:6-7.', 'requoted of Christ again at <a href="1-peter-2.html#v2-6">1 Peter 2:6-7</a>.'), ('citado de nuevo de Cristo en 1 Pedro 2:6-7.', 'citado de nuevo de Cristo en <a href="1-peter-2.es.html#v2-6">1 Pedro 2:6-7</a>.'), ('and 1 Peter 2:11 (not yet on these pages). The Greek of', 'and <a href="1-peter-2.html#v2-11">1 Peter 2:11</a>. The Greek of'), ('y 1 Pedro 2:11 (todavía no en estas páginas). El griego de', 'y <a href="1-peter-2.es.html#v2-11">1 Pedro 2:11</a>. El griego de'), ('(one verse elsewhere, 1 Peter 2:16, is', '(one verse elsewhere, <a href="1-peter-2.html#v2-16">1 Peter 2:16</a>, is'), ('(uno fuera, 1 Pedro 2:16, es', '(uno fuera, <a href="1-peter-2.es.html#v2-16">1 Pedro 2:16</a>, es'), ('1 Corinthians 4:12 and 1 Peter 2:23; the noun', '1 Corinthians 4:12 and <a href="1-peter-2.html#v2-23">1 Peter 2:23</a>; the noun'), ('1 Corintios 4:12 y 1 Pedro 2:23; el sustantivo', '1 Corintios 4:12 y <a href="1-peter-2.es.html#v2-23">1 Pedro 2:23</a>; el sustantivo'), ('and it is the verb of 1 Peter 2:23, where Jesus, &lsquo;when reviled, did not revile in return,&rsquo; and of <a href="1-corinthians-4.html#v12">1 Corinthians 4:12</a>, &lsquo;when reviled, we bless&rsquo; (1 Peter 2:23 not yet on these pages).', 'and it is the verb of <a href="1-peter-2.html#v2-23">1 Peter 2:23</a>, where Jesus, &lsquo;when he was reviled, did not revile in return,&rsquo; and of <a href="1-corinthians-4.html#v12">1 Corinthians 4:12</a>, &lsquo;When insulted, we bless.&rsquo;'), ('y es el verbo de 1 Pedro 2:23, donde Jesús, «cuando lo injuriaban, no respondía con injuria», y de <a href="1-corinthians-4.es.html#v12">1 Corintios 4:12</a>, «injuriados, bendecimos» (1 Pedro 2:23 todavía no en estas páginas).', 'y es el verbo de <a href="1-peter-2.es.html#v2-23">1 Pedro 2:23</a>, donde Jesús, «cuando lo injuriaban, no respondía con injuria», y de <a href="1-corinthians-4.es.html#v12">1 Corintios 4:12</a>, «Cuando nos insultan, bendecimos».'), ('and 1 Peter 2:11 (&lsquo;the fleshly desires that wage war against the soul,&rsquo; not yet on these pages)', 'and <a href="1-peter-2.html#v2-11">1 Peter 2:11</a> (&lsquo;fleshly desires, which wage war against the soul&rsquo;)'), ('y 1 Pedro 2:11 («los deseos de la carne que hacen guerra contra el alma», todavía no en estas páginas)', 'y <a href="1-peter-2.es.html#v2-11">1 Pedro 2:11</a> («los deseos de la carne, que hacen guerra contra el alma»)'), ('1 Corinthians 8:9 and 1 Peter 2:8 (1 Peter 2:8 not yet on these pages).', '1 Corinthians 8:9 and <a href="1-peter-2.html#v2-8">1 Peter 2:8</a>.'), ('1 Corintios 8:9 y 1 Pedro 2:8 (1 Pedro 2:8 todavía no en estas páginas).', '1 Corintios 8:9 y <a href="1-peter-2.es.html#v2-8">1 Pedro 2:8</a>.'), ('and 1 Peter 2:20 (not yet on these pages).', 'and <a href="1-peter-2.html#v2-20">1 Peter 2:20</a>.'), ('y 1 Pedro 2:20 (todavía no en estas páginas).', 'y <a href="1-peter-2.es.html#v2-20">1 Pedro 2:20</a>.'), ('&lsquo;a people for possession&rsquo; at 1 Peter 2:9 (not yet on these pages).', '&lsquo;a people for his own possession&rsquo; at <a href="1-peter-2.html#v2-9">1 Peter 2:9</a>.'), ('«pueblo adquirido» en 1 Pedro 2:9 (todavía no en estas páginas).', '«pueblo para posesión suya» en <a href="1-peter-2.es.html#v2-9">1 Pedro 2:9</a>.'), ('and 1 Peter 2:4 and 2:7 (not yet on these pages);', 'and <a href="1-peter-2.html#v2-4">1 Peter 2:4</a> and <a href="1-peter-2.html#v2-7">2:7</a>;'), ('y 1 Pedro 2:4 y 2:7 (todavía no en estas páginas);', 'y <a href="1-peter-2.es.html#v2-4">1 Pedro 2:4</a> y <a href="1-peter-2.es.html#v2-7">2:7</a>;'), ('at 1 Peter 2:11 (not yet on these pages). Paul&rsquo;s compound', 'at <a href="1-peter-2.html#v2-11">1 Peter 2:11</a>. Paul&rsquo;s compound'), ('en 1 Pedro 2:11 (todavía no en estas páginas). El compuesto de Pablo', 'en <a href="1-peter-2.es.html#v2-11">1 Pedro 2:11</a>. El compuesto de Pablo'), ('1 Pedro 2:18). ⚠', '<a href="1-peter-2.es.html#v2-18">1 Pedro 2:18</a>). ⚠'), ("'strangers and parepidēmoi' again at 2:11", '\'sojourners and exiles\' (paroikoi kai parepidēmoi) again at <a href="1-peter-2.html#v2-11">2:11</a>'), ('each a New Testament hapax.', 'each a New Testament hapax. At <a href="1-peter-2.html#v2-9">1 Peter 2:9</a> Peter has it in the plural, \'the excellencies\' of the one who called the readers, from the Greek of Isaiah 43:21.')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"zion": [("1 Peter", 2, 6)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("James", 1, 21), ("1 Peter", 2, 1), "putting away"),
+    (("2 Corinthians", 12, 20), ("1 Peter", 2, 1), "slanders"),
+    (("1 Peter", 1, 23), ("1 Peter", 2, 2), "born again / newborn"),
+    (("Romans", 12, 1), ("1 Peter", 2, 2), "logikos"),
+    (("Hebrews", 5, 13), ("1 Peter", 2, 2), "milk"),
+    (("Luke", 6, 35), ("1 Peter", 2, 3), "kind"),
+    (("Mark", 12, 10), ("1 Peter", 2, 4), "the rejected stone"),
+    (("1 Peter", 1, 19), ("1 Peter", 2, 4), "precious"),
+    (("Romans", 9, 33), ("1 Peter", 2, 6), "a stone in Zion"),
+    (("Ephesians", 2, 20), ("1 Peter", 2, 6), "cornerstone"),
+    (("Acts", 4, 11), ("1 Peter", 2, 7), "head of the corner"),
+    (("Luke", 20, 17), ("1 Peter", 2, 7), "head of the corner"),
+    (("Exodus", 19, 6), ("1 Peter", 2, 9), "royal priesthood, holy nation"),
+    (("Exodus", 19, 5), ("1 Peter", 2, 9), "possession"),
+    (("Ephesians", 1, 14), ("1 Peter", 2, 9), "possession"),
+    (("Hosea", 1, 9), ("1 Peter", 2, 10), "not my people"),
+    (("Hosea", 1, 6), ("1 Peter", 2, 10), "not pitied"),
+    (("Romans", 9, 25), ("1 Peter", 2, 10), "not my people / my people"),
+    (("Genesis", 23, 4), ("1 Peter", 2, 11), "sojourner and exile"),
+    (("1 Peter", 1, 1), ("1 Peter", 2, 11), "exiles"),
+    (("Hebrews", 11, 13), ("1 Peter", 2, 11), "exiles on the earth"),
+    (("James", 4, 1), ("1 Peter", 2, 11), "desires that wage war"),
+    (("1 Peter", 1, 15), ("1 Peter", 2, 12), "conduct"),
+    (("Luke", 19, 44), ("1 Peter", 2, 12), "visitation"),
+    (("Romans", 13, 1), ("1 Peter", 2, 13), "be subject to authorities"),
+    (("John", 19, 15), ("1 Peter", 2, 13), "king"),
+    (("Mark", 1, 25), ("1 Peter", 2, 15), "muzzle"),
+    (("Galatians", 5, 13), ("1 Peter", 2, 16), "freedom"),
+    (("1 Corinthians", 7, 22), ("1 Peter", 2, 16), "free / slave of God"),
+    (("Luke", 16, 13), ("1 Peter", 2, 18), "household slave"),
+    (("Acts", 2, 40), ("1 Peter", 2, 18), "crooked"),
+    (("Luke", 6, 32), ("1 Peter", 2, 19), "charis, credit"),
+    (("Mark", 14, 65), ("1 Peter", 2, 20), "beaten with fists"),
+    (("Romans", 4, 12), ("1 Peter", 2, 21), "footsteps"),
+    (("Isaiah", 53, 9), ("1 Peter", 2, 22), "no deceit in his mouth"),
+    (("Isaiah", 53, 7), ("1 Peter", 2, 23), "silent under suffering"),
+    (("Mark", 15, 5), ("1 Peter", 2, 23), "no answer"),
+    (("Hebrews", 9, 28), ("1 Peter", 2, 24), "bear the sins"),
+    (("Acts", 5, 30), ("1 Peter", 2, 24), "the tree"),
+    (("Isaiah", 53, 5), ("1 Peter", 2, 24), "by his welt"),
+    (("Isaiah", 53, 6), ("1 Peter", 2, 25), "like sheep wandering"),
+    (("John", 10, 11), ("1 Peter", 2, 25), "the shepherd"),
+    (("Acts", 20, 28), ("1 Peter", 2, 25), "overseer"),
+])
+
+CHAPTER_ART["1pe2"] = [dict(
+    file="champaigne-the-good-shepherd.jpg",
+    title="The Good Shepherd",   title_es="El buen pastor",
+    artist="Philippe de Champaigne",
+    year="17th century",
+    location="Musée des Ursulines, Mâcon",
+    location_es="Museo de las Ursulinas, Mâcon",
+    alt="Christ in a white robe and a deep blue mantle walks toward the viewer along a country path, carrying a sheep across his shoulders and holding its legs, with hills, trees and a farmhouse behind him under a cloudy sky.",
+    note="&#9888; The shepherd carrying home the sheep that had wandered, the picture behind <a href=\"1-peter-2.html#v2-25\">verse 25</a>, &lsquo;you were like sheep wandering, but now you have "
+         "turned back to the shepherd and overseer of your souls.&rsquo;",
+    note_es="&#9888; El pastor que trae a casa la oveja extraviada, la imagen detrás del <a href=\"1-peter-2.es.html#v2-25\">versículo 25</a>, «eran como ovejas que se extraviaban, pero ahora "
+            "se han vuelto al pastor y supervisor de sus almas».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Le_Bon_Pasteur_Philippe_de_Champaigne.jpg",
+)]
+
+CHRON_CHAPTERS["1pe2"] = dict(era='apostolic',
+    when="Newborn infants longing for the milk of the word; Christ the living stone, rejected and chosen, from Isaiah 28:16, Psalm 118:22 and Isaiah 8:14; 'a chosen race, a royal priesthood, a holy nation' (Exodus 19:6); sojourners and exiles among the nations; subject to the king and the governors; household slaves and unjust masters; and Christ's suffering in the words of Isaiah 53, 'by his welt you were healed.'",
+    clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
+
