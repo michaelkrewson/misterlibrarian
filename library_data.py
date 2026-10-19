@@ -44155,3 +44155,157 @@ CHRON_CHAPTERS["1pe4"] = dict(era='apostolic',
     when="'Arm yourselves with the same way of thinking'; the old life of revels and drinking parties, and neighbors surprised at the change; the good news proclaimed also to the dead; 'the end of all things has drawn near'; 'love covers a multitude of sins'; gifts held as stewards; 'the burning among you'; insulted 'for the name of Christ' and suffering 'as a Christian'; judgment beginning from the house of God, with Proverbs 11:31 in Greek; and souls entrusted to a faithful Creator.",
     clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
 
+# ---- 1 Peter 5 -----------------------------------------------------------
+DICTIONARY.append(('sympresbyteros', 'sympresbyteros', 'συμπρεσβύτερος', 'sympresbyteros',
+    'A FELLOW ELDER &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <a href="dictionary.html#presbyteros">presbyteros</a>, &lsquo;elder.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-1">1 Peter 5:1</a>, where the writer who opened as &lsquo;an apostle of Jesus Christ&rsquo; (<a href="1-peter-1.html#v1">1 Peter 1:1</a>) speaks to the elders as one of them. KJV &lsquo;who am also an elder&rsquo;; ASV &lsquo;who am a fellow-elder&rsquo;; NWT 1984 &lsquo;I too am an older man with [them].&rsquo;',
+    ('1 Peter', 5, 1)))
+DICTIONARY_ES['sympresbyteros'] = ('sympresbýteros',
+    'ANCIANO COMO ELLOS, coanciano &mdash; <em>sýn</em>, «con», y <a href="diccionario.html#presbyteros">presbýteros</a>, «anciano». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-1">1 Pedro 5:1</a>, donde el que se presentó como «apóstol de Jesucristo» (<a href="1-peter-1.es.html#v1">1 Pedro 1:1</a>) habla a los ancianos como uno de ellos. RV60 «yo anciano también con ellos»; TNM 1987 «yo también soy anciano con [ellos]».')
+
+DICTIONARY.append(('episkopeo', 'episkopeō', 'ἐπισκοπέω', 'episkopeō',
+    'TO WATCH OVER, to look after &mdash; the verb of <a href="dictionary.html#episkopos">episkopos</a>, &lsquo;overseer.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;watching that no one falls short of the grace of God&rsquo; at <a href="hebrews-12.html#v12-15">Hebrews 12:15</a>, and the elders who shepherd the flock, &lsquo;watching over it,&rsquo; at <a href="1-peter-5.html#v5-2">1 Peter 5:2</a>, where Westcott and Hort do not have the word. KJV at 1 Peter 5:2 &lsquo;taking the oversight thereof&rsquo;; ASV &lsquo;exercising the oversight.&rsquo;',
+    ('Hebrews', 12, 15)))
+DICTIONARY_ES['episkopeo'] = ('episkopé&#333;',
+    'VELAR POR, cuidar &mdash; el verbo de <a href="diccionario.html#episkopos">epískopos</a>, «supervisor». &#9888; Está en dos versículos del Nuevo Testamento: «velando para que nadie se quede atrás de la gracia de Dios» en <a href="hebrews-12.es.html#v12-15">Hebreos 12:15</a>, y los ancianos que pastorean el rebaño, «velando por él», en <a href="1-peter-5.es.html#v5-2">1 Pedro 5:2</a>, donde Westcott y Hort no tienen la palabra. RV60 en 1 Pedro 5:2 «cuidando de ella»; RV 1909 «teniendo cuidado de ella».')
+
+DICTIONARY.append(('anankastos', 'anankastōs', 'ἀναγκαστῶς', 'anankastōs',
+    'UNDER COMPULSION, by force &mdash; from <em>anank&#275;</em>, &lsquo;necessity.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-2">1 Peter 5:2</a>, &lsquo;not under compulsion but willingly&rsquo; (<a href="dictionary.html#hekousios">hekousi&#333;s</a>). Paul makes the same contrast with other words at <a href="philemon-1.html#v14">Philemon 1:14</a>, &lsquo;not &hellip; as by compulsion but of your own free will.&rsquo; KJV &lsquo;not by constraint&rsquo;; NWT 1984 &lsquo;not under compulsion.&rsquo;',
+    ('1 Peter', 5, 2)))
+DICTIONARY_ES['anankastos'] = ('anankast&#333;̂s',
+    'POR OBLIGACIÓN, a la fuerza &mdash; de <em>anánk&#275;</em>, «necesidad». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-2">1 Pedro 5:2</a>, «no por obligación sino voluntariamente» (<a href="diccionario.html#hekousios">hekousí&#333;s</a>). Pablo hace el mismo contraste con otras palabras en <a href="philemon-1.es.html#v14">Filemón 1:14</a>, «no &hellip; como por obligación, sino de tu propia voluntad». RV60 «no por fuerza»; TNM 1987 «no como obligados».')
+
+DICTIONARY.append(('katakyrieuo', 'katakyrieuō', 'κατακυριεύω', 'katakyrieuō',
+    'TO LORD IT OVER, to master &mdash; <em>kata</em>, &lsquo;down, against,&rsquo; and <em>kyrieu&#333;</em>, &lsquo;to be lord.&rsquo; &#9888; It stands in four verses of the New Testament: the rulers of the nations who &lsquo;lord it over&rsquo; them at <a href="matthew-20.html#v20-25">Matthew 20:25</a> and <a href="mark-10.html#v10-42">Mark 10:42</a>; the man with the evil spirit who &lsquo;mastered both&rsquo; of the sons of Sceva at <a href="acts-19.html#v19-16">Acts 19:16</a>; and the elders told not to lord it &lsquo;over the portions allotted to you&rsquo; at <a href="1-peter-5.html#v5-3">1 Peter 5:3</a>. KJV at 1 Peter 5:3 &lsquo;as being lords over God&rsquo;s heritage&rsquo;; NWT 1984 &lsquo;lording it over those who are God&rsquo;s inheritance.&rsquo;',
+    ('Mark', 10, 42)))
+DICTIONARY_ES['katakyrieuo'] = ('katakyrieú&#333;',
+    'ENSEÑOREARSE, dominar &mdash; <em>katá</em>, «abajo, contra», y <em>kyrieú&#333;</em>, «ser señor». &#9888; Está en cuatro versículos del Nuevo Testamento: los gobernantes de las naciones que «se enseñorean» de ellas en <a href="matthew-20.es.html#v20-25">Mateo 20:25</a> y <a href="mark-10.es.html#v10-42">Marcos 10:42</a>; el hombre del espíritu malo que «dominó a ambos» hijos de Esceva en <a href="acts-19.es.html#v19-16">Hechos 19:16</a>; y los ancianos a quienes se dice que no se enseñoreen «de las porciones que les tocaron» en <a href="1-peter-5.es.html#v5-3">1 Pedro 5:3</a>. RV60 en 1 Pedro 5:3 «no como teniendo señorío sobre los que están a vuestro cuidado»; TNM 1987 «enseñoreándose de los que son la herencia de Dios».')
+
+DICTIONARY.append(('archipoimen', 'archipoimēn', 'ἀρχιποίμην', 'archipoimēn',
+    'THE CHIEF SHEPHERD &mdash; <em>archi-</em>, &lsquo;chief,&rsquo; and <a href="dictionary.html#poimen">poim&#275;n</a>, &lsquo;shepherd.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-4">1 Peter 5:4</a>, &lsquo;when the chief shepherd is made manifest,&rsquo; of Christ over the elders who shepherd the flock under him; the same letter calls him &lsquo;the shepherd and overseer of your souls&rsquo; at <a href="1-peter-2.html#v2-25">1 Peter 2:25</a>, and Hebrews calls him &lsquo;the great shepherd of the sheep&rsquo; (<a href="hebrews-13.html#v13-20">Hebrews 13:20</a>). KJV &lsquo;the chief Shepherd&rsquo;; Douay &lsquo;the prince of pastors.&rsquo;',
+    ('1 Peter', 5, 4)))
+DICTIONARY_ES['archipoimen'] = ('archipoím&#275;n',
+    'EL PASTOR PRINCIPAL &mdash; <em>archi-</em>, «principal», y <a href="diccionario.html#poimen">poim&#275;́n</a>, «pastor». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-4">1 Pedro 5:4</a>, «cuando el pastor principal sea manifestado», de Cristo sobre los ancianos que pastorean el rebaño bajo él; la misma carta lo llama «el pastor y supervisor de sus almas» en <a href="1-peter-2.es.html#v2-25">1 Pedro 2:25</a>, y Hebreos lo llama «el gran pastor de las ovejas» (<a href="hebrews-13.es.html#v13-20">Hebreos 13:20</a>). RV60 «el Príncipe de los pastores»; TNM 1987 «el pastor principal».')
+
+DICTIONARY.append(('amarantinos', 'amarantinos', 'ἀμαράντινος', 'amarantinos',
+    'UNFADING &mdash; built on <em>marain&#333;</em>, &lsquo;to wither, fade,&rsquo; with <em>a-</em>, &lsquo;not.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-4">1 Peter 5:4</a>, &lsquo;the unfading crown of glory&rsquo;; its near twin <em>amarantos</em>, also in one verse, is the &lsquo;unfading&rsquo; inheritance of <a href="1-peter-1.html#v4">1 Peter 1:4</a>. A crown of leaves fades; this one does not. KJV &lsquo;a crown of glory that fadeth not away&rsquo;; NWT 1984 &lsquo;the unfadable crown of glory.&rsquo;',
+    ('1 Peter', 5, 4)))
+DICTIONARY_ES['amarantinos'] = ('amarántinos',
+    'INMARCESIBLE, que no se marchita &mdash; formada sobre <em>maraín&#333;</em>, «marchitarse», con <em>a-</em>, «no». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-4">1 Pedro 5:4</a>, «la corona inmarcesible de la gloria»; su casi gemela <em>amárantos</em>, también en un solo versículo, es la herencia «inmarcesible» de <a href="1-peter-1.es.html#v4">1 Pedro 1:4</a>. Una corona de hojas se marchita; esta no. RV60 «la corona incorruptible de gloria»; TNM 1987 «la inmarcesible corona de la gloria».')
+
+DICTIONARY.append(('enkomboomai', 'enkomboomai', 'ἐγκομβόομαι', 'enkomboomai',
+    'TO TIE ON, to put on as a garment knotted in place &mdash; from <em>kombos</em>, &lsquo;a knot.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-5">1 Peter 5:5</a>, &lsquo;all of you, tie on humility toward one another&rsquo;: humility is put on and fastened, not worn loose. KJV &lsquo;be clothed with humility&rsquo;; ASV and NWT 1984 &lsquo;gird yourselves&rsquo;; Douay &lsquo;insinuate humility,&rsquo; from the Latin.',
+    ('1 Peter', 5, 5)))
+DICTIONARY_ES['enkomboomai'] = ('enkombóomai',
+    'ANUDARSE, ponerse una prenda atada &mdash; de <em>kómbos</em>, «nudo». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-5">1 Pedro 5:5</a>, «todos ustedes, cíñanse de humildad unos para con otros»: la humildad se pone y se ata, no se lleva suelta. RV60 «revestíos de humildad»; TNM 1987 «cíñanse con humildad mental».')
+
+DICTIONARY.append(('merimna', 'merimna', 'μέριμνα', 'merimna',
+    'ANXIETY, care, worry &mdash; the noun of <em>merimna&#333;</em>, &lsquo;to be anxious.&rsquo; &#9888; It is the &lsquo;care of this age&rsquo; that chokes the word in <a href="matthew-13.html#v13-22">Matthew 13:22</a>, the &lsquo;anxieties of life&rsquo; of <a href="luke-21.html#v21-34">Luke 21:34</a>, Paul&rsquo;s &lsquo;anxiety for all the congregations&rsquo; at <a href="2-corinthians-11.html#v28">2 Corinthians 11:28</a>, and the &lsquo;anxiety&rsquo; cast on God at <a href="1-peter-5.html#v5-7">1 Peter 5:7</a>, in words close to the Greek of Psalm 55:22 (54:23 in the Greek numbering; not yet on these pages, checked). KJV at 1 Peter 5:7 &lsquo;all your care&rsquo;; ASV &lsquo;all your anxiety.&rsquo;',
+    ('Matthew', 13, 22)))
+DICTIONARY_ES['merimna'] = ('mérimna',
+    'PREOCUPACIÓN, afán, ansiedad &mdash; el sustantivo de <em>merimnáō</em>, «estar ansioso». &#9888; Es «el afán de este siglo» que ahoga la palabra en <a href="matthew-13.es.html#v13-22">Mateo 13:22</a>, «las preocupaciones de esta vida» de <a href="luke-21.es.html#v21-34">Lucas 21:34</a>, «la preocupación por todas las congregaciones» de Pablo en <a href="2-corinthians-11.es.html#v28">2 Corintios 11:28</a>, y la «preocupación» echada sobre Dios en <a href="1-peter-5.es.html#v5-7">1 Pedro 5:7</a>, con palabras cercanas al griego del Salmo 55:22 (54:23 en la numeración griega; todavía no en estas páginas, comprobado). RV60 en 1 Pedro 5:7 «toda vuestra ansiedad»; RV 1909 «toda vuestra solicitud».')
+
+DICTIONARY.append(('antidikos', 'antidikos', 'ἀντίδικος', 'antidikos',
+    'AN ADVERSARY, an opponent at law &mdash; <em>anti</em>, &lsquo;against,&rsquo; and <em>dik&#275;</em>, &lsquo;a lawsuit.&rsquo; &#9888; It stands in four verses of the New Testament: the &lsquo;accuser&rsquo; on the way to court at <a href="matthew-5.html#v5-25">Matthew 5:25</a> and <a href="luke-12.html#v12-58">Luke 12:58</a>; the widow&rsquo;s &lsquo;Give me justice against my adversary&rsquo; at <a href="luke-18.html#v18-3">Luke 18:3</a>; and &lsquo;your adversary the devil&rsquo; at <a href="1-peter-5.html#v5-8">1 Peter 5:8</a>, the one place it names the devil. KJV and ASV &lsquo;your adversary&rsquo;; NIV &lsquo;your enemy.&rsquo;',
+    ('Matthew', 5, 25)))
+DICTIONARY_ES['antidikos'] = ('antídikos',
+    'ADVERSARIO, la parte contraria en un pleito &mdash; <em>antí</em>, «contra», y <em>dík&#275;</em>, «pleito». &#9888; Está en cuatro versículos del Nuevo Testamento: el adversario camino del tribunal en Mateo 5:25 (ya en estas páginas, todavía no en español) y <a href="luke-12.es.html#v12-58">Lucas 12:58</a>; el «Hazme justicia contra mi adversario» de la viuda en <a href="luke-18.es.html#v18-3">Lucas 18:3</a>; y «su adversario el diablo» en <a href="1-peter-5.es.html#v5-8">1 Pedro 5:8</a>, el único lugar donde nombra al diablo. RV60 «vuestro adversario»; NVI «su enemigo».')
+
+DICTIONARY.append(('oryomai', 'ōryomai', 'ὠρύομαι', 'ōryomai',
+    'TO ROAR, to howl &mdash; the sound of a hungry beast. &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-8">1 Peter 5:8</a>, &lsquo;like a roaring lion.&rsquo; In the Greek of Psalm 22:13 (21:14 in the Greek numbering) the enemies are &lsquo;like a lion that snatches and roars,&rsquo; with this verb; the Hebrew has <em>sho&rsquo;eg</em> (<a href="dictionary.html#shaag">sha&rsquo;ag</a>), &lsquo;roaring&rsquo; (both checked; Psalm 22 not yet on these pages). KJV and ASV &lsquo;as a roaring lion.&rsquo;',
+    ('1 Peter', 5, 8)))
+DICTIONARY_ES['oryomai'] = ('&#333;rýomai',
+    'RUGIR, aullar &mdash; el sonido de una fiera hambrienta. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-8">1 Pedro 5:8</a>, «como león rugiente». En el griego del Salmo 22:13 (21:14 en la numeración griega) los enemigos son «como león que arrebata y ruge», con este verbo; el hebreo tiene <em>sho&rsquo;eg</em>, «rugiente» (ambos comprobados; Salmo 22 todavía no en estas páginas). RV60 y RV 1909 «león rugiente».')
+
+DICTIONARY.append(('sthenoo', 'sthenoō', 'σθενόω', 'sthenoō',
+    'TO MAKE STRONG &mdash; from <em>sthenos</em>, &lsquo;strength.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-10">1 Peter 5:10</a>, the third of four verbs: &lsquo;will himself mend, strengthen, make strong and ground you.&rsquo; KJV &lsquo;strengthen&rsquo;; NWT 1984 &lsquo;he will make YOU strong.&rsquo;',
+    ('1 Peter', 5, 10)))
+DICTIONARY_ES['sthenoo'] = ('sthenó&#333;',
+    'ROBUSTECER, hacer fuerte &mdash; de <em>sthénos</em>, «fuerza». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-10">1 Pedro 5:10</a>, el tercero de cuatro verbos: «él mismo los remendará, fortalecerá, robustecerá y cimentará». RV60 «fortalezca»; TNM 1987 «él los hará fuertes».')
+
+DICTIONARY.append(('themelioo', 'themelioō', 'θεμελιόω', 'themelioō',
+    'TO GROUND, to set on a foundation &mdash; the verb of <em>themelios</em>, &lsquo;foundation.&rsquo; &#9888; The house &lsquo;founded on the rock&rsquo; at <a href="matthew-7.html#v7-25">Matthew 7:25</a>; &lsquo;rooted and grounded in love&rsquo; at <a href="ephesians-3.html#v3-17">Ephesians 3:17</a>; &lsquo;founded and firm&rsquo; at <a href="colossians-1.html#v23">Colossians 1:23</a>; &lsquo;You, Lord, in the beginning laid the foundation of the earth&rsquo; at <a href="hebrews-1.html#v10">Hebrews 1:10</a>; and the last of four verbs at <a href="1-peter-5.html#v5-10">1 Peter 5:10</a>, &lsquo;mend, strengthen, make strong and ground you,&rsquo; where Westcott and Hort and Tregelles do not have it. KJV at 1 Peter 5:10 &lsquo;settle you&rsquo;; the ASV has three verbs.',
+    ('Matthew', 7, 25)))
+DICTIONARY_ES['themelioo'] = ('themelió&#333;',
+    'CIMENTAR, poner sobre un fundamento &mdash; el verbo de <em>themélios</em>, «fundamento». &#9888; La casa «fundada sobre la roca» de Mateo 7:25 (ya en estas páginas, todavía no en español); «arraigados y cimentados en amor» en <a href="ephesians-3.es.html#v3-17">Efesios 3:17</a>; «cimentados y firmes» en <a href="colossians-1.es.html#v23">Colosenses 1:23</a>; «Tú, Señor, en el principio fundaste la tierra» en <a href="hebrews-1.es.html#v10">Hebreos 1:10</a>; y el último de cuatro verbos en <a href="1-peter-5.es.html#v5-10">1 Pedro 5:10</a>, «los remendará, fortalecerá, robustecerá y cimentará», donde Westcott y Hort y Tregelles no lo tienen. RV60 en 1 Pedro 5:10 «establezca»; la TNM 1987 tiene tres verbos.')
+
+DICTIONARY.append(('syneklektos', 'syneklektos', 'συνεκλεκτός', 'syneklektos',
+    'CHOSEN TOGETHER, chosen along with &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>eklektos</em>, &lsquo;chosen.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-5.html#v5-13">1 Peter 5:13</a>, &lsquo;She who is in Babylon, chosen together with you,&rsquo; feminine and with no noun; it takes up the &lsquo;chosen exiles&rsquo; of <a href="1-peter-1.html#v1">1 Peter 1:1</a>. KJV &lsquo;The church that is at Babylon, elected together with you,&rsquo; supplying &lsquo;church&rsquo;; ASV &lsquo;She that is in Babylon, elect together with you.&rsquo;',
+    ('1 Peter', 5, 13)))
+DICTIONARY_ES['syneklektos'] = ('syneklektós',
+    'ELEGIDA JUNTAMENTE, escogida a la vez &mdash; <em>sýn</em>, «con», y <em>eklektós</em>, «elegido». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-5.es.html#v5-13">1 Pedro 5:13</a>, «la que está en Babilonia, elegida juntamente con ustedes», en femenino y sin sustantivo; retoma los «expatriados elegidos» de <a href="1-peter-1.es.html#v1">1 Pedro 1:1</a>. RV60 «La iglesia que está en Babilonia, elegida juntamente con vosotros», que suple «iglesia»; TNM 1987 «La que está en Babilonia, escogida igual [que ustedes]».')
+
+def _pe5_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe5_fix([("twice call Jesus the 'chief Shepherd' or 'great Shepherd' over every under-shepherd who leads a congregation (1 Peter 5:4, not yet on these pages; ", 'twice call Jesus the \'chief shepherd\' or \'great shepherd\' over every under-shepherd who leads a congregation (<a href="1-peter-5.html#v5-4">1 Peter 5:4</a>; '), ('llaman a Jesús dos veces «Pastor principal» o «Pastor grande» sobre cada pastor subordinado que dirige una congregación (1 Pedro 5:4, todavía no en estas páginas; ', 'llaman a Jesús dos veces «pastor principal» o «gran pastor» sobre cada pastor subordinado que dirige una congregación (<a href="1-peter-5.es.html#v5-4">1 Pedro 5:4</a>; '), ('1 Peter 5:8 gives it, in Greek, to the adversary.', '<a href="1-peter-5.html#v5-8">1 Peter 5:8</a> gives it, in Greek, to the adversary (<a href="dictionary.html#oryomai">&#333;ryomai</a>).'), ('now on these pages; 1 Peter 5:14, not yet)', 'now on these pages; and <a href="1-peter-5.html#v5-14">1 Peter 5:14</a>, &lsquo;a kiss of love&rsquo;)'), ('ya en estas páginas; 1 Pedro 5:14, todavía no)', 'ya en estas páginas; y <a href="1-peter-5.es.html#v5-14">1 Pedro 5:14</a>, «un beso de amor»)'), ('and 1 Peter 5:5 (not yet on these pages). At Colossians 2:18', 'and <a href="1-peter-5.html#v5-5">1 Peter 5:5</a>. At Colossians 2:18'), ('y 1 Pedro 5:5 (todavía no en estas páginas). En Colosenses 2:18', 'y <a href="1-peter-5.es.html#v5-5">1 Pedro 5:5</a>. En Colosenses 2:18'), ('The adverb is at 1 Peter 5:2, of elders who shepherd the flock (not yet on these pages).', 'The adverb is at <a href="1-peter-5.html#v5-2">1 Peter 5:2</a>, of elders who shepherd the flock, &lsquo;not for shameful gain.&rsquo;'), ('El adverbio está en 1 Pedro 5:2, de ancianos que pastorean el rebaño (todavía no en estas páginas).', 'El adverbio está en <a href="1-peter-5.es.html#v5-2">1 Pedro 5:2</a>, de ancianos que pastorean el rebaño, «no por ganancia deshonesta».'), ('and the elders who shepherd &lsquo;willingly&rsquo; at 1 Peter 5:2 (not yet on these pages);', 'and the elders who shepherd &lsquo;willingly&rsquo; at <a href="1-peter-5.html#v5-2">1 Peter 5:2</a>;'), ('y los ancianos que apacientan «de buena gana» en 1 Pedro 5:2 (todavía no en estas páginas);', 'y los ancianos que pastorean «voluntariamente» en <a href="1-peter-5.es.html#v5-2">1 Pedro 5:2</a>;'), ('2 Timothy 3:2 (not yet on these pages); and the line of Greek Proverbs 3:34 quoted at <a href="james-4.html#v4-6">James 4:6</a> and at 1 Peter 5:5 (not yet on these pages),', '<a href="2-timothy-3.html#v3-2">2 Timothy 3:2</a>; and the line of Greek Proverbs 3:34 quoted at <a href="james-4.html#v4-6">James 4:6</a> and at <a href="1-peter-5.html#v5-5">1 Peter 5:5</a>,'), ('2 Timoteo 3:2 (todavía no en estas páginas); y la línea de Proverbios 3:34 en griego citada en <a href="james-4.es.html#v4-6">Santiago 4:6</a> y en 1 Pedro 5:5 (todavía no en estas páginas),', '<a href="2-timothy-3.es.html#v3-2">2 Timoteo 3:2</a>; y la línea de Proverbios 3:34 en griego citada en <a href="james-4.es.html#v4-6">Santiago 4:6</a> y en <a href="1-peter-5.es.html#v5-5">1 Pedro 5:5</a>,'), ('and later carried 1 Peter (1 Peter 5:12).', 'and is named at <a href="1-peter-5.html#v5-12">1 Peter 5:12</a>, &lsquo;Through Silvanus &hellip; I have written to you,&rsquo; read both of the one who carried the letter and of the one who helped write it.'), ('y más tarde llevó 1 Pedro (1 Pedro 5:12).', 'y es nombrado en <a href="1-peter-5.es.html#v5-12">1 Pedro 5:12</a>, «Por medio de Silvano &hellip; les he escrito», que se lee tanto del que llevó la carta como del que ayudó a escribirla.'), ('2 Timothy 4:11</a>) &mdash; and tradition, old but unverifiable', '2 Timothy 4:11</a>), and Peter sends greetings from &lsquo;Mark my son&rsquo; (<a href="1-peter-5.html#v5-13">1 Peter 5:13</a>) &mdash; and tradition, old but unverifiable'), ('2 Timoteo 4:11</a>)—, y la tradición, antigua pero no verificable', '2 Timoteo 4:11</a>) y Pedro envía saludos de «Marcos, mi hijo» (<a href="1-peter-5.es.html#v5-13">1 Pedro 5:13</a>)—, y la tradición, antigua pero no verificable'), ("and Revelation will pick the name up again as the world-city's cipher (chs. 17–18).", 'and Revelation will pick the name up again as the world-city\'s cipher (chs. 17–18). <a href="1-peter-5.html#v5-13">1 Peter 5:13</a> sends greetings from &lsquo;she who is in Babylon,&rsquo; which most readers take as a name for Rome and others as this city or a Babylon in Egypt.'), ('Mucho después, el Apocalipsis convierte el nombre en una cifra.', 'Mucho después, el Apocalipsis convierte el nombre en una cifra. <a href="1-peter-5.es.html#v5-13">1 Pedro 5:13</a> envía saludos de «la que está en Babilonia», que la mayoría de los lectores toma como un nombre de Roma y otros como esta ciudad o una Babilonia en Egipto.')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"silvanus": [("1 Peter", 5, 12)], "john-mark": [("1 Peter", 5, 13)], "babylon": [("1 Peter", 5, 13)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Romans", 8, 18), ("1 Peter", 5, 1), "the glory about to be revealed"),
+    (("1 Peter", 4, 13), ("1 Peter", 5, 1), "sufferings and glory"),
+    (("Acts", 20, 28), ("1 Peter", 5, 2), "shepherd the flock"),
+    (("Hebrews", 12, 15), ("1 Peter", 5, 2), "watching over"),
+    (("1 Timothy", 3, 8), ("1 Peter", 5, 2), "shameful gain"),
+    (("Mark", 10, 42), ("1 Peter", 5, 3), "lord it over"),
+    (("1 Timothy", 4, 12), ("1 Peter", 5, 3), "an example"),
+    (("1 Peter", 2, 25), ("1 Peter", 5, 4), "the shepherd"),
+    (("Hebrews", 13, 20), ("1 Peter", 5, 4), "the great shepherd"),
+    (("1 Peter", 1, 4), ("1 Peter", 5, 4), "unfading"),
+    (("1 Corinthians", 9, 25), ("1 Peter", 5, 4), "an imperishable crown"),
+    (("James", 4, 6), ("1 Peter", 5, 5), "God opposes the proud"),
+    (("James", 4, 10), ("1 Peter", 5, 6), "humble yourselves"),
+    (("Deuteronomy", 26, 8), ("1 Peter", 5, 6), "the mighty hand"),
+    (("Luke", 21, 34), ("1 Peter", 5, 7), "anxieties"),
+    (("1 Thessalonians", 5, 6), ("1 Peter", 5, 8), "stay awake and be sober"),
+    (("Luke", 18, 3), ("1 Peter", 5, 8), "adversary"),
+    (("James", 4, 7), ("1 Peter", 5, 9), "resist the devil"),
+    (("1 Peter", 2, 17), ("1 Peter", 5, 9), "the brotherhood"),
+    (("Galatians", 6, 1), ("1 Peter", 5, 10), "mend"),
+    (("1 Peter", 4, 11), ("1 Peter", 5, 11), "the might"),
+    (("2 Corinthians", 1, 19), ("1 Peter", 5, 12), "Silvanus"),
+    (("Acts", 15, 23), ("1 Peter", 5, 12), "writing by their hand"),
+    (("1 Peter", 1, 1), ("1 Peter", 5, 13), "chosen"),
+    (("Acts", 12, 12), ("1 Peter", 5, 13), "Mark"),
+    (("Romans", 16, 16), ("1 Peter", 5, 14), "a kiss"),
+])
+
+CHAPTER_ART["1pe5"] = [dict(
+    file="fra-angelico-peter-preaching-with-mark.jpg",
+    title="Saint Peter Preaching in the Presence of Saint Mark",   title_es="San Pedro predicando en presencia de san Marcos",
+    artist="Fra Angelico",
+    year="c. 1433",
+    location="Museo di San Marco, Florence (predella of the Linaioli Tabernacle)",
+    location_es="Museo de San Marcos, Florencia (predela del Tabernáculo de los Linaioli)",
+    alt="Peter, haloed, stands in a raised pulpit in a city square with his arms open, preaching to a crowd of kneeling women and standing men; at the left an old haloed man sits writing in a book while a young man holds an inkpot for him.",
+    note="&#9888; Peter preaching while Mark writes, the later tradition that Mark set down Peter&rsquo;s preaching. The letter itself says only &lsquo;Mark my son&rsquo; (<a href=\"1-peter-5.html#v5-13\">verse 13</a>), and names Silvanus, not Mark, as the one &lsquo;through&rsquo; whom it was written (<a href=\"1-peter-5.html#v5-12\">verse 12</a>).",
+    note_es="&#9888; Pedro predica mientras Marcos escribe, la tradición posterior de que Marcos puso por escrito la predicación de Pedro. La carta misma dice solo «Marcos, mi hijo» (<a href=\"1-peter-5.es.html#v5-13\">versículo 13</a>), y nombra a Silvano, no a Marcos, como aquel «por medio de» quien fue escrita (<a href=\"1-peter-5.es.html#v5-12\">versículo 12</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Fra_Angelico_%E2%80%94_St_Peter_Preaching_in_the_Presence_of_St_Mark.jpg",
+)]
+
+CHRON_CHAPTERS["1pe5"] = dict(era='apostolic',
+    when="To the elders from 'a fellow elder': 'shepherd the flock of God,' not for shameful gain and not lording it, and the chief shepherd's unfading crown; Proverbs 3:34 again, 'God opposes the proud'; anxiety cast on God; the adversary 'like a roaring lion'; 'the God of all grace' who will mend and ground; and the letter sent 'through Silvanus,' with greetings from 'she who is in Babylon' and from Mark.",
+    clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
+
