@@ -43805,3 +43805,188 @@ CHRON_CHAPTERS["1pe2"] = dict(era='apostolic',
     when="Newborn infants longing for the milk of the word; Christ the living stone, rejected and chosen, from Isaiah 28:16, Psalm 118:22 and Isaiah 8:14; 'a chosen race, a royal priesthood, a holy nation' (Exodus 19:6); sojourners and exiles among the nations; subject to the king and the governors; household slaves and unjust masters; and Christ's suffering in the words of Isaiah 53, 'by his welt you were healed.'",
     clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
 
+# ---- 1 Peter 3 -----------------------------------------------------------
+DICTIONARY.append(('emploke', 'emplokē', 'ἐμπλοκή', 'emplokē',
+    'BRAIDING, plaiting &mdash; from <em>emplek&#333;</em>, &lsquo;to weave in.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-3">1 Peter 3:3</a>, &lsquo;braiding of hair and putting on of gold, or wearing of clothes&rsquo;; the same list with another word for braided hair is at <a href="1-timothy-2.html#v2-9">1 Timothy 2:9</a> (<a href="dictionary.html#plegma">plegma</a>). KJV &lsquo;of plaiting the hair&rsquo;; ASV &lsquo;of braiding the hair&rsquo;; NWT 1984 &lsquo;the external braiding of the hair.&rsquo;',
+    ('1 Peter', 3, 3)))
+DICTIONARY_ES['emploke'] = ('emplok&#275;́',
+    'TRENZADO &mdash; de <em>empléko&#333;</em>, «entretejer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-3">1 Pedro 3:3</a>, «trenzas del cabello y ponerse oro, o vestirse ropas»; la misma lista con otra palabra para el cabello trenzado está en <a href="1-timothy-2.es.html#v2-9">1 Timoteo 2:9</a> (<a href="diccionario.html#plegma">plegma</a>). RV60 «de peinados ostentosos»; TNM 1987 «trenzados externos del cabello».')
+
+DICTIONARY.append(('polyteles', 'polytelēs', 'πολυτελής', 'polytelēs',
+    'COSTLY, of great worth &mdash; <em>polys</em>, &lsquo;much,&rsquo; and <em>telos</em>, &lsquo;cost.&rsquo; &#9888; It stands in three verses of the New Testament: the alabaster jar of ointment &lsquo;very costly&rsquo; at <a href="mark-14.html#v14-3">Mark 14:3</a>; &lsquo;costly garments&rsquo; at <a href="1-timothy-2.html#v2-9">1 Timothy 2:9</a>; and &lsquo;a meek and quiet spirit, which is of great worth in God&rsquo;s sight&rsquo; at <a href="1-peter-3.html#v3-4">1 Peter 3:4</a>, where the costly thing is no longer the clothes. KJV at 1 Peter 3:4 &lsquo;of great price&rsquo;; NWT 1984 &lsquo;of great value.&rsquo;',
+    ('Mark', 14, 3)))
+DICTIONARY_ES['polyteles'] = ('polytel&#275;́s',
+    'COSTOSO, de gran valor &mdash; <em>polýs</em>, «mucho», y <em>télos</em>, «costo». &#9888; Está en tres versículos del Nuevo Testamento: el frasco de perfume «muy costoso» de <a href="mark-14.es.html#v14-3">Marcos 14:3</a>; los «vestidos costosos» de <a href="1-timothy-2.es.html#v2-9">1 Timoteo 2:9</a>; y «un espíritu manso y sosegado, que es de gran valor delante de Dios» en <a href="1-peter-3.es.html#v3-4">1 Pedro 3:4</a>, donde lo costoso ya no es la ropa. RV60 en 1 Pedro 3:4 «de grande estima»; TNM 1987 «de gran valor».')
+
+DICTIONARY.append(('ptoesis', 'ptoēsis', 'πτόησις', 'ptoēsis',
+    'TERROR, fright &mdash; from <em>ptoe&#333;</em>, &lsquo;to terrify.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-6">1 Peter 3:6</a>, &lsquo;if you do good and do not fear any terror,&rsquo; in words close to the Greek of Proverbs 3:25, &lsquo;you shall not fear terror&rsquo; (not yet on these pages, checked). KJV &lsquo;are not afraid with any amazement&rsquo;; ASV &lsquo;are not put in fear by any terror&rsquo;; NWT 1984 &lsquo;not fearing any cause for terror.&rsquo;',
+    ('1 Peter', 3, 6)))
+DICTIONARY_ES['ptoesis'] = ('ptó&#275;sis',
+    'ESPANTO, terror &mdash; de <em>ptoéō</em>, «aterrorizar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-6">1 Pedro 3:6</a>, «si hacen el bien y no temen ningún espanto», con palabras cercanas al griego de Proverbios 3:25, «no temerás espanto» (todavía no en estas páginas, comprobado). RV60 «sin temer ninguna amenaza»; TNM 1987 «no teman a ninguna causa de terror».')
+
+DICTIONARY.append(('synoikeo', 'synoikeō', 'συνοικέω', 'synoikeō',
+    'TO LIVE WITH, to share a home &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>oike&#333;</em>, &lsquo;to dwell.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-7">1 Peter 3:7</a>, &lsquo;Husbands, likewise, live with them with understanding.&rsquo; KJV &lsquo;dwell with them according to knowledge&rsquo;; NWT 1984 &lsquo;continue dwelling in like manner with them according to knowledge.&rsquo;',
+    ('1 Peter', 3, 7)))
+DICTIONARY_ES['synoikeo'] = ('synoikéō',
+    'CONVIVIR, compartir la casa &mdash; <em>sýn</em>, «con», y <em>oikéō</em>, «habitar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-7">1 Pedro 3:7</a>, «Maridos, asimismo, convivan con ellas con entendimiento». RV60 «vivid con ellas sabiamente»; TNM 1987 «continúen morando con ellas de igual manera».')
+
+DICTIONARY.append(('gynaikeios', 'gynaikeios', 'γυναικεῖος', 'gynaikeios',
+    'FEMALE, belonging to a woman &mdash; from <em>gyn&#275;</em>, &lsquo;woman, wife.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-7">1 Peter 3:7</a>, &lsquo;as with a weaker vessel, the female one,&rsquo; where it names the wife beside the &lsquo;vessel&rsquo; (<a href="dictionary.html#skeuos">skeuos</a>). KJV &lsquo;giving honour unto the wife&rsquo;; NWT 1984 &lsquo;the feminine one.&rsquo;',
+    ('1 Peter', 3, 7)))
+DICTIONARY_ES['gynaikeios'] = ('gynaikeîos',
+    'FEMENINO, propio de la mujer &mdash; de <em>gyn&#275;́</em>, «mujer, esposa». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-7">1 Pedro 3:7</a>, «como con un vaso más débil, el femenino», donde nombra a la esposa junto al «vaso» (<a href="diccionario.html#skeuos">skeuos</a>). RV60 «dando honor a la mujer»; TNM 1987 «el femenino».')
+
+DICTIONARY.append(('homophron', 'homophrōn', 'ὁμόφρων', 'homophrōn',
+    'OF ONE MIND, like-minded &mdash; <em>homos</em>, &lsquo;same,&rsquo; and <em>phr&#275;n</em>, &lsquo;mind.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-8">1 Peter 3:8</a>, &lsquo;all of you, be of one mind,&rsquo; first of five adjectives for a congregation. KJV &lsquo;be ye all of one mind&rsquo;; NWT 1984 &lsquo;be like-minded.&rsquo;',
+    ('1 Peter', 3, 8)))
+DICTIONARY_ES['homophron'] = ('homóphrōn',
+    'DE UN MISMO SENTIR &mdash; <em>homós</em>, «mismo», y <em>phr&#275;́n</em>, «mente». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-8">1 Pedro 3:8</a>, «todos ustedes, sean de un mismo sentir», el primero de cinco adjetivos para una congregación. RV60 «sed todos de un mismo sentir»; TNM 1987 «sean de un mismo ánimo y parecer».')
+
+DICTIONARY.append(('eusplanchnos', 'eusplanchnos', 'εὔσπλαγχνος', 'eusplanchnos',
+    'TENDERHEARTED &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>splanchna</em>, the inward parts as the seat of feeling (<a href="dictionary.html#splanchna">splanchna</a>). &#9888; It stands in two verses of the New Testament: &lsquo;become kind to one another, tenderhearted&rsquo; (<a href="ephesians-4.html#v4-32">Ephesians 4:32</a>) and &lsquo;tenderhearted, humble in mind&rsquo; (<a href="1-peter-3.html#v3-8">1 Peter 3:8</a>). KJV at 1 Peter 3:8 &lsquo;be pitiful&rsquo;; ASV &lsquo;tenderhearted&rsquo;; NWT 1984 &lsquo;tenderly compassionate.&rsquo;',
+    ('Ephesians', 4, 32)))
+DICTIONARY_ES['eusplanchnos'] = ('eúsplanchnos',
+    'DE CORAZÓN TIERNO &mdash; <em>eu</em>, «bien», y <em>splánchna</em>, las entrañas como sede del sentimiento (<a href="diccionario.html#splanchna">splanchna</a>). &#9888; Está en dos versículos del Nuevo Testamento: «sean bondadosos unos con otros, de corazón tierno» (<a href="ephesians-4.es.html#v4-32">Efesios 4:32</a>) y «de corazón tierno, humildes de mente» (<a href="1-peter-3.es.html#v3-8">1 Pedro 3:8</a>). RV60 en 1 Pedro 3:8 «misericordiosos»; TNM 1987 «siendo tiernamente compasivos».')
+
+DICTIONARY.append(('tapeinophron', 'tapeinophrōn', 'ταπεινόφρων', 'tapeinophrōn',
+    'HUMBLE IN MIND &mdash; <em>tapeinos</em>, &lsquo;lowly,&rsquo; and <em>phr&#275;n</em>, &lsquo;mind&rsquo;; the adjective of <em>tapeinophrosyn&#275;</em>, &lsquo;humility.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-8">1 Peter 3:8</a>, where the Robinson&ndash;Pierpont text reads <em>philophr&#333;n</em>, &lsquo;friendly&rsquo; (the apparatus) (<a href="dictionary.html#tapeinoo">tapeinoo</a>). ASV &lsquo;humbleminded&rsquo;; NWT 1984 &lsquo;humble in mind&rsquo;; KJV &lsquo;be courteous,&rsquo; from the other reading.',
+    ('1 Peter', 3, 8)))
+DICTIONARY_ES['tapeinophron'] = ('tapeinóphrōn',
+    'HUMILDE DE MENTE &mdash; <em>tapeinós</em>, «bajo», y <em>phr&#275;́n</em>, «mente»; el adjetivo de <em>tapeinophrosýn&#275;</em>, «humildad». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-8">1 Pedro 3:8</a>, donde el texto de Robinson&ndash;Pierpont lee <em>philóphrōn</em>, «amigable» (el aparato) (<a href="diccionario.html#tapeinoo">tapeinoo</a>). RV60 «amigables», de la otra lectura; TNM 1987 «de mente humilde».')
+
+DICTIONARY.append(('loidoria', 'loidoria', 'λοιδορία', 'loidoria',
+    'REVILING, abuse &mdash; the noun of <em>loidore&#333;</em>, &lsquo;to revile&rsquo; (<a href="dictionary.html#loidoreo">loidoreo</a>). &#9888; It stands in two verses of the New Testament: &lsquo;to give the adversary no occasion for reviling&rsquo; (<a href="1-timothy-5.html#v5-14">1 Timothy 5:14</a>) and &lsquo;not repaying evil for evil or reviling for reviling&rsquo; (<a href="1-peter-3.html#v3-9">1 Peter 3:9</a>), after Christ who &lsquo;when he was reviled, did not revile in return&rsquo; (<a href="1-peter-2.html#v2-23">1 Peter 2:23</a>). KJV at 1 Peter 3:9 &lsquo;railing for railing&rsquo;; ASV &lsquo;reviling for reviling.&rsquo;',
+    ('1 Timothy', 5, 14)))
+DICTIONARY_ES['loidoria'] = ('loidoría',
+    'INJURIA, insulto &mdash; el sustantivo de <em>loidoréō</em>, «injuriar» (<a href="diccionario.html#loidoreo">loidoreo</a>). &#9888; Está en dos versículos del Nuevo Testamento: «no den al adversario ocasión alguna para la injuria» (<a href="1-timothy-5.es.html#v5-14">1 Timoteo 5:14</a>) y «no devolviendo mal por mal ni injuria por injuria» (<a href="1-peter-3.es.html#v3-9">1 Pedro 3:9</a>), después de Cristo, que «cuando lo injuriaban, no respondía con injuria» (<a href="1-peter-2.es.html#v2-23">1 Pedro 2:23</a>). RV60 en 1 Pedro 3:9 «maldición por maldición»; TNM 1987 «injuria por injuria».')
+
+DICTIONARY.append(('epereazo', 'epēreazō', 'ἐπηρεάζω', 'epēreazō',
+    'TO MISTREAT, to abuse spitefully &mdash; to treat insultingly. &#9888; It stands in two verses of the New Testament: &lsquo;pray for those who mistreat you&rsquo; (<a href="luke-6.html#v6-28">Luke 6:28</a>) and &lsquo;those who mistreat your good conduct in Christ may be put to shame&rsquo; (<a href="1-peter-3.html#v3-16">1 Peter 3:16</a>). KJV at 1 Peter 3:16 &lsquo;that falsely accuse&rsquo;; ASV &lsquo;who revile&rsquo;; NWT 1984 &lsquo;who are speaking slightingly.&rsquo;',
+    ('Luke', 6, 28)))
+DICTIONARY_ES['epereazo'] = ('ep&#275;reázō',
+    'MALTRATAR, injuriar con saña &mdash; tratar con insulto. &#9888; Está en dos versículos del Nuevo Testamento: «oren por los que los maltratan» (<a href="luke-6.es.html#v6-28">Lucas 6:28</a>) y «sean avergonzados los que maltratan su buena conducta en Cristo» (<a href="1-peter-3.es.html#v3-16">1 Pedro 3:16</a>). RV60 en 1 Pedro 3:16 «los que calumnian»; TNM 1987 «los que están hablando con menosprecio».')
+
+DICTIONARY.append(('kibotos', 'kibōtos', 'κιβωτός', 'kibōtos',
+    'ARK, chest &mdash; a wooden box, used both of Noah&rsquo;s ark and of the ark of the covenant. &#9888; Noah&rsquo;s: &lsquo;until the day Noah entered the ark&rsquo; (<a href="matthew-24.html#v24-38">Matthew 24:38</a>), &lsquo;built an ark to save his household&rsquo; (<a href="hebrews-11.html#v11-7">Hebrews 11:7</a>), and &lsquo;while the ark was being built&rsquo; (<a href="1-peter-3.html#v3-20">1 Peter 3:20</a>). The covenant&rsquo;s: &lsquo;the ark of the covenant covered on all sides with gold&rsquo; (<a href="hebrews-9.html#v9-4">Hebrews 9:4</a>). KJV at 1 Peter 3:20 &lsquo;while the ark was a preparing&rsquo;; NWT 1984 &lsquo;while the ark was being constructed.&rsquo;',
+    ('Hebrews', 11, 7)))
+DICTIONARY_ES['kibotos'] = ('kibōtós',
+    'ARCA, cofre &mdash; una caja de madera, que se dice del arca de Noé y del arca del pacto. &#9888; La de Noé: «hasta el día en que Noé entró en el arca» (<a href="matthew-24.es.html#v24-38">Mateo 24:38</a>), «construyó un arca para salvar a su casa» (<a href="hebrews-11.es.html#v11-7">Hebreos 11:7</a>), y «mientras se construía el arca» (<a href="1-peter-3.es.html#v3-20">1 Pedro 3:20</a>). La del pacto: «el arca del pacto cubierta de oro por todas partes» (<a href="hebrews-9.es.html#v9-4">Hebreos 9:4</a>). RV60 en 1 Pedro 3:20 «mientras se preparaba el arca»; TNM 1987 «mientras se construía el arca».')
+
+DICTIONARY.append(('diasozo', 'diasōzō', 'διασῴζω', 'diasōzō',
+    'TO BRING SAFELY THROUGH, to rescue &mdash; <em>dia</em>, &lsquo;through,&rsquo; and <em>s&#333;z&#333;</em>, &lsquo;to save.&rsquo; &#9888; It stands in eight verses of the New Testament, five of them in Acts: Paul brought &lsquo;safely through&rsquo; to Felix (<a href="acts-23.html#v23-24">Acts 23:24</a>), and the shipwreck, &lsquo;all were brought safely through to the land&rsquo; (<a href="acts-27.html#v27-44">Acts 27:44</a>) and &lsquo;having been brought safely through&rsquo; (<a href="acts-28.html#v28-1">Acts 28:1</a>); at <a href="matthew-14.html#v14-36">Matthew 14:36</a> it is healing, &lsquo;as many as touched it were healed&rsquo;; and at <a href="1-peter-3.html#v3-20">1 Peter 3:20</a> it is Noah&rsquo;s eight, &lsquo;brought safely through water.&rsquo; KJV at 1 Peter 3:20 &lsquo;were saved by water&rsquo;; NWT 1984 &lsquo;were carried safely through the water.&rsquo;',
+    ('Acts', 27, 44)))
+DICTIONARY_ES['diasozo'] = ('diasṓzō',
+    'LLEVAR A SALVO, rescatar &mdash; <em>diá</em>, «a través», y <em>sṓzō</em>, «salvar». &#9888; Está en ocho versículos del Nuevo Testamento, cinco de ellos en Hechos: Pablo llevado «a salvo hasta Félix» (<a href="acts-23.es.html#v23-24">Hechos 23:24</a>), y el naufragio, «todos fueron llevados a salvo a tierra» (<a href="acts-27.es.html#v27-44">Hechos 27:44</a>) y «habiendo sido llevados a salvo» (<a href="acts-28.es.html#v28-1">Hechos 28:1</a>); en <a href="matthew-14.es.html#v14-36">Mateo 14:36</a> es sanar, «todos los que lo tocaron quedaron sanos»; y en <a href="1-peter-3.es.html#v3-20">1 Pedro 3:20</a> son los ocho de Noé, «llevados a salvo a través del agua». RV60 en 1 Pedro 3:20 «fueron salvadas por agua»; TNM 1987 «fueron llevadas a salvo a través del agua».')
+
+DICTIONARY.append(('rhypos', 'rhypos', 'ῥύπος', 'rhypos',
+    'FILTH, dirt &mdash; kin to <em>rhyparia</em>, &lsquo;filth&rsquo; (<a href="james-1.html#v21">James 1:21</a>). &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-21">1 Peter 3:21</a>, baptism as &lsquo;not the putting off of the filth of the flesh,&rsquo; that is, not a bath. KJV &lsquo;the putting away of the filth of the flesh&rsquo;; NIV &lsquo;not the removal of dirt from the body.&rsquo;',
+    ('1 Peter', 3, 21)))
+DICTIONARY_ES['rhypos'] = ('rhýpos',
+    'SUCIEDAD, mugre &mdash; pariente de <em>rhyparía</em>, «inmundicia» (<a href="james-1.es.html#v21">Santiago 1:21</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-21">1 Pedro 3:21</a>, el bautismo como «no el quitar la suciedad de la carne», es decir, no un baño. RV60 «no quitando las inmundicias de la carne»; TNM 1987 «no el desechar la suciedad de la carne».')
+
+DICTIONARY.append(('eperotema', 'eperōtēma', 'ἐπερώτημα', 'eperōtēma',
+    'APPEAL, request; or PLEDGE, answer &mdash; from <em>eperota&#333;</em>, &lsquo;to ask, put a question.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-3.html#v3-21">1 Peter 3:21</a>, baptism as &lsquo;the appeal of a good conscience to God,&rsquo; and its sense there is disputed: a request to God for a good conscience, a pledge made to God from a good conscience, or the answer given to the questions put at baptism (reported, not checked here). KJV &lsquo;the answer of a good conscience&rsquo;; ASV &lsquo;the interrogation of a good conscience&rsquo;; NWT 1984 &lsquo;the request made to God for a good conscience&rsquo;; NIV &lsquo;the pledge of a clear conscience.&rsquo;',
+    ('1 Peter', 3, 21)))
+DICTIONARY_ES['eperotema'] = ('eperṓt&#275;ma',
+    'PETICIÓN, solicitud; o COMPROMISO, respuesta &mdash; de <em>eperōtáō</em>, «preguntar, interrogar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-3.es.html#v3-21">1 Pedro 3:21</a>, el bautismo como «la petición de una buena conciencia a Dios», y allí su sentido se discute: una petición a Dios de una buena conciencia, un compromiso hecho a Dios desde una buena conciencia, o la respuesta dada a las preguntas del bautismo (dato referido, no comprobado aquí). RV60 «la aspiración de una buena conciencia hacia Dios»; RV 1909 «demanda de una buena conciencia»; TNM 1987 «la solicitud hecha a Dios para una buena conciencia».')
+
+DICTIONARY.append(('baptisma', 'baptisma', 'βάπτισμα', 'baptisma',
+    'BAPTISM &mdash; from <em>baptiz&#333;</em>, &lsquo;to dip, immerse.&rsquo; &#9888; John proclaimed &lsquo;a baptism of repentance&rsquo; (<a href="mark-1.html#v4">Mark 1:4</a>; &lsquo;John baptized a baptism of repentance,&rsquo; <a href="acts-19.html#v19-4">Acts 19:4</a>); Paul writes &lsquo;buried with him through baptism&rsquo; (<a href="romans-6.html#v6-4">Romans 6:4</a>) and &lsquo;one Lord, one faith, one baptism&rsquo; (<a href="ephesians-4.html#v4-5">Ephesians 4:5</a>); and at <a href="1-peter-3.html#v3-21">1 Peter 3:21</a> baptism is the counterpart of the water of the flood that &lsquo;now saves you,&rsquo; &lsquo;through the resurrection of Jesus Christ.&rsquo; KJV at 1 Peter 3:21 &lsquo;even baptism doth also now save us&rsquo;; NWT 1984 &lsquo;namely, baptism.&rsquo;',
+    ('Mark', 1, 4)))
+DICTIONARY_ES['baptisma'] = ('báptisma',
+    'BAUTISMO &mdash; de <em>baptízō</em>, «sumergir». &#9888; Juan proclamaba «un bautismo de arrepentimiento» (<a href="mark-1.es.html#v4">Marcos 1:4</a>; «Juan bautizó un bautismo de arrepentimiento», <a href="acts-19.es.html#v19-4">Hechos 19:4</a>); Pablo escribe «Fuimos sepultados con él, pues, mediante el bautismo» (<a href="romans-6.es.html#v6-4">Romanos 6:4</a>) y «un solo Señor, una sola fe, un solo bautismo» (<a href="ephesians-4.es.html#v4-5">Efesios 4:5</a>); y en <a href="1-peter-3.es.html#v3-21">1 Pedro 3:21</a> el bautismo es la contrapartida del agua del diluvio que «ahora los salva», «por medio de la resurrección de Jesucristo». RV60 en 1 Pedro 3:21 «El bautismo que corresponde a esto ahora nos salva»; TNM 1987 «a saber, el bautismo».')
+
+DICTIONARY_ES['hapax'] = ('hápax',
+    'UNA VEZ, una vez para siempre &mdash; una sola vez decisiva, que no se repite. &#9888; Es el gozne de la exhortación de Judas: luchar por «la fe una vez para siempre entregada a los santos» (<a href="jude-1.es.html#v3">Judas 3</a>), entregada una vez, completa, sin revisarse ni añadírsele. La misma palabra lleva el peso del sacrificio de Cristo en Hebreos, «ofrecido una vez para llevar los pecados de muchos» (<a href="hebrews-9.es.html#v9-28">Hebreos 9:28</a>), y de <a href="1-peter-3.es.html#v3-18">1 Pedro 3:18</a>, «también Cristo sufrió una vez por los pecados»; su forma larga es el «una vez para siempre» de <a href="romans-6.es.html#v6-10">Romanos 6:10</a> (<a href="diccionario.html#ephapax">ephapax</a>).')
+
+ENCYCLOPEDIA_ES['noah'] = ('Noé',
+    '«Este nos consolará» (Génesis 5:29): justo, íntegro en su generación, anduvo con Dios (6:9). Construyó el arca, ofreció el sacrificio del primer altar (8:20), recibió el primer pacto (9:9&ndash;17), plantó la primera viña y cayó (9:20&ndash;21), y murió a los 950 años (9:29). La raíz de «descanso» de su nombre (n-ch) juega a lo largo de todo el relato del diluvio. En el Nuevo Testamento es nombrado en ocho versículos, entre ellos «los días de Noé» en <a href="matthew-24.es.html#v24-37">Mateo 24:37</a>, «construyó un arca para salvar a su casa» en <a href="hebrews-11.es.html#v11-7">Hebreos 11:7</a>, y las «ocho almas» llevadas a salvo a través del agua en <a href="1-peter-3.es.html#v3-20">1 Pedro 3:20</a>.')
+
+def _pe3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe3_fix([('a husband (1 Peter 3:6)', 'a husband (<a href="1-peter-3.html#v3-6">1 Peter 3:6</a>)'), ('un esposo (1 Pedro 3:6)', 'un esposo (<a href="1-peter-3.es.html#v3-6">1 Pedro 3:6</a>)'), ('and 1 Peter 3:13 (the last not yet on these pages).', 'and <a href="1-peter-3.html#v3-13">1 Peter 3:13</a>.'), ('y 1 Pedro 3:13 (el último todavía no en estas páginas).', 'y <a href="1-peter-3.es.html#v3-13">1 Pedro 3:13</a>.'), ('and 1 Peter 3:15, where believers are to be ready &lsquo;for a defense&rsquo; to anyone who asks for an account (<em>logon</em>) of their hope (all but 22:1 and the two in Philippians not yet on these pages).', 'and <a href="1-peter-3.html#v3-15">1 Peter 3:15</a>, where believers are to be &lsquo;always ready to make a defense&rsquo; to everyone who asks for an account (<em>logon</em>) of their hope.'), ('y 1 Pedro 3:15, donde los creyentes han de estar listos «para una defensa» ante quien les pida cuenta (<em>logon</em>) de su esperanza (todos salvo 22:1 y los dos de Filipenses todavía no en estas páginas).', 'y <a href="1-peter-3.es.html#v3-15">1 Pedro 3:15</a>, donde los creyentes han de estar «siempre preparados para presentar defensa» ante todo el que les pida cuenta (<em>logon</em>) de su esperanza.'), ('the noun <em>loidoria</em> at 1 Timothy 5:14 and 1 Peter 3:9;', 'the noun <em>loidoria</em> at 1 Timothy 5:14 and <a href="1-peter-3.html#v3-9">1 Peter 3:9</a> (<a href="dictionary.html#loidoria">loidoria</a>);'), ('el sustantivo <em>loidoria</em> en 1 Timoteo 5:14 y 1 Pedro 3:9;', 'el sustantivo <em>loidoria</em> en 1 Timoteo 5:14 y <a href="1-peter-3.es.html#v3-9">1 Pedro 3:9</a> (<a href="diccionario.html#loidoria">loidoria</a>);'), ('; 1 Peter 3:18 is not yet.', '; and so is <a href="1-peter-3.html#v3-18">1 Peter 3:18</a>.'), ('; 1 Pedro 3:18 todavía no.', '; y también <a href="1-peter-3.es.html#v3-18">1 Pedro 3:18</a>.'), ('and 2 Corinthians 6:9 and 1 Peter 3:18 (these two not yet on these pages).', 'and 2 Corinthians 6:9 and <a href="1-peter-3.html#v3-18">1 Peter 3:18</a>, &lsquo;put to death in the flesh.&rsquo;'), ('y 2 Corintios 6:9 y 1 Pedro 3:18 (estos dos todavía no en estas páginas).', 'y 2 Corintios 6:9 y <a href="1-peter-3.es.html#v3-18">1 Pedro 3:18</a>, «muerto en la carne».'), ('and 1 Peter 3:12 (the last not yet on these pages).', 'and <a href="1-peter-3.html#v3-12">1 Peter 3:12</a>.'), ('y 1 Pedro 3:12 (el último todavía no en estas páginas).', 'y <a href="1-peter-3.es.html#v3-12">1 Pedro 3:12</a>.'), ('and 1 Peter 3:7 (not yet on these pages). Its noun', 'and <a href="1-peter-3.html#v3-7">1 Peter 3:7</a>. Its noun'), ('y 1 Pedro 3:7 (todavía no en estas páginas). Su sustantivo', 'y <a href="1-peter-3.es.html#v3-7">1 Pedro 3:7</a>. Su sustantivo'), ('and 1 Peter 3:7 (not yet on these pages). At Ephesians 3:6', 'and <a href="1-peter-3.html#v3-7">1 Peter 3:7</a>. At Ephesians 3:6'), ('y 1 Pedro 3:7 (todavía no en estas páginas). En Efesios 3:6', 'y <a href="1-peter-3.es.html#v3-7">1 Pedro 3:7</a>. En Efesios 3:6'), ('and 1 Peter 3:4, &lsquo;a gentle and quiet spirit&rsquo; (not yet on these pages).', 'and <a href="1-peter-3.html#v3-4">1 Peter 3:4</a>, &lsquo;a meek and quiet spirit.&rsquo;'), ('y 1 Pedro 3:4, «un espíritu afable y apacible» (todavía no en estas páginas).', 'y <a href="1-peter-3.es.html#v3-4">1 Pedro 3:4</a>, «un espíritu manso y sosegado».'), ('1 Peter 3:3 makes the same list with other words (not yet on these pages).', '<a href="1-peter-3.html#v3-3">1 Peter 3:3</a> makes the same list with other words (<a href="dictionary.html#emploke">emploke</a>).'), ('1 Pedro 3:3 hace la misma lista con otras palabras (todavía no en estas páginas).', '<a href="1-peter-3.es.html#v3-3">1 Pedro 3:3</a> hace la misma lista con otras palabras (<a href="diccionario.html#emploke">emploke</a>).'), ('Hebrews 11:7</a>; 1 Peter 3:20)', 'Hebrews 11:7</a>; <a href="1-peter-3.html#v3-20">1 Peter 3:20</a>)'), ('Hebreos 11:7</a>; 1 Pedro 3:20)', 'Hebreos 11:7</a>; <a href="1-peter-3.es.html#v3-20">1 Pedro 3:20</a>)'), ('stands at 1 Peter 3:8.', 'stands at <a href="1-peter-3.html#v3-8">1 Peter 3:8</a>.'), ('está en 1 Pedro 3:8.', 'está en <a href="1-peter-3.es.html#v3-8">1 Pedro 3:8</a>.'), ('and baptism, which &lsquo;corresponds&rsquo; to the flood at 1 Peter 3:21 (not yet on these pages).', 'and baptism, the &lsquo;counterpart&rsquo; of the water of the flood at <a href="1-peter-3.html#v3-21">1 Peter 3:21</a>.'), ('y el bautismo, que «corresponde» al diluvio en 1 Pedro 3:21 (todavía no en estas páginas).', 'y el bautismo, la «contrapartida» del agua del diluvio en <a href="1-peter-3.es.html#v3-21">1 Pedro 3:21</a>.')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"sarah": [("1 Peter", 3, 6)], "noah": [("1 Peter", 3, 20)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Colossians", 3, 18), ("1 Peter", 3, 1), "wives, be subject"),
+    (("Ephesians", 5, 22), ("1 Peter", 3, 1), "wives and husbands"),
+    (("1 Corinthians", 7, 16), ("1 Peter", 3, 1), "winning a husband"),
+    (("1 Peter", 2, 12), ("1 Peter", 3, 2), "as they watch"),
+    (("1 Timothy", 2, 9), ("1 Peter", 3, 3), "braided hair and gold"),
+    (("Matthew", 11, 29), ("1 Peter", 3, 4), "meek"),
+    (("2 Corinthians", 4, 16), ("1 Peter", 3, 4), "the inner self"),
+    (("Genesis", 18, 12), ("1 Peter", 3, 6), "my lord"),
+    (("1 Thessalonians", 4, 4), ("1 Peter", 3, 7), "vessel"),
+    (("Romans", 8, 17), ("1 Peter", 3, 7), "fellow heirs"),
+    (("Ephesians", 4, 32), ("1 Peter", 3, 8), "tenderhearted"),
+    (("Hebrews", 4, 15), ("1 Peter", 3, 8), "sympathize"),
+    (("Romans", 12, 17), ("1 Peter", 3, 9), "evil for evil"),
+    (("1 Thessalonians", 5, 15), ("1 Peter", 3, 9), "evil for evil"),
+    (("1 Peter", 2, 23), ("1 Peter", 3, 9), "reviling"),
+    (("Luke", 6, 28), ("1 Peter", 3, 9), "bless"),
+    (("James", 1, 26), ("1 Peter", 3, 10), "the tongue"),
+    (("Titus", 2, 14), ("1 Peter", 3, 13), "zealous for good"),
+    (("Matthew", 5, 10), ("1 Peter", 3, 14), "for righteousness' sake"),
+    (("Acts", 22, 1), ("1 Peter", 3, 15), "defense"),
+    (("1 Peter", 1, 3), ("1 Peter", 3, 15), "the living hope"),
+    (("Luke", 6, 28), ("1 Peter", 3, 16), "those who mistreat you"),
+    (("1 Peter", 2, 20), ("1 Peter", 3, 17), "suffering for doing good"),
+    (("Hebrews", 9, 28), ("1 Peter", 3, 18), "once for sins"),
+    (("Romans", 6, 10), ("1 Peter", 3, 18), "once for all"),
+    (("1 Peter", 2, 21), ("1 Peter", 3, 18), "Christ also suffered"),
+    (("Ephesians", 4, 9), ("1 Peter", 3, 19), "went down"),
+    (("Genesis", 6, 2), ("1 Peter", 3, 19), "sons of God"),
+    (("Jude", 1, 6), ("1 Peter", 3, 19), "imprisoned angels"),
+    (("Genesis", 7, 13), ("1 Peter", 3, 20), "eight souls"),
+    (("Hebrews", 11, 7), ("1 Peter", 3, 20), "Noah's ark"),
+    (("Matthew", 24, 37), ("1 Peter", 3, 20), "the days of Noah"),
+    (("Acts", 27, 44), ("1 Peter", 3, 20), "brought safely through"),
+    (("Hebrews", 9, 24), ("1 Peter", 3, 21), "counterpart"),
+    (("Romans", 6, 4), ("1 Peter", 3, 21), "baptism"),
+    (("Romans", 8, 34), ("1 Peter", 3, 22), "at the right hand"),
+    (("Ephesians", 1, 21), ("1 Peter", 3, 22), "authorities and powers"),
+])
+
+CHAPTER_ART["1pe3"] = [dict(
+    file="hicks-noahs-ark.jpg",
+    title="Noah's Ark",   title_es="El arca de Noé",
+    artist="Edward Hicks",
+    year="1846",
+    location="Philadelphia Museum of Art",
+    location_es="Museo de Arte de Filadelfia",
+    alt="Under a dark storm sky, pairs of animals walk up a gangplank into a long wooden ark on the water, while lions, horses, zebras, giraffes, sheep and other animals wait their turn in the foreground beneath a tree.",
+    note="&#9888; The animals going up into the ark as the storm gathers, the scene behind <a href=\"1-peter-3.html#v3-20\">verse 20</a>, &lsquo;while the ark was being built, in which a few, "
+         "that is, eight souls, were brought safely through water.&rsquo;",
+    note_es="&#9888; Los animales subiendo al arca mientras se forma la tormenta, la escena detrás del <a href=\"1-peter-3.es.html#v3-20\">versículo 20</a>, «mientras se construía el arca, en la "
+            "cual unos pocos, es decir, ocho almas, fueron llevados a salvo a través del agua».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Edward_Hicks,_American_-_Noah%27s_Ark_-_Google_Art_Project.jpg",
+)]
+
+CHRON_CHAPTERS["1pe3"] = dict(era='apostolic',
+    when="Wives and husbands: unbelieving husbands won 'without a word,' the hidden person of the heart, Sarah who called Abraham 'lord,' and a husband's honor for a wife as a fellow heir; 'not repaying evil for evil'; Psalm 34; Isaiah 8 with Christ in the place of Jehovah of armies, 'always ready to make a defense'; 'Christ also suffered once for sins'; the spirits in prison, Noah's eight, and baptism as 'the appeal of a good conscience to God.'",
+    clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
+
