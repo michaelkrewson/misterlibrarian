@@ -41466,3 +41466,111 @@ CHRON_CHAPTERS["heb3"] = dict(era='apostolic',
     when="Jesus, 'the apostle and high priest of our confession,' set beside Moses: Moses faithful in God's house as an attendant, Christ as a Son over it; then Psalm 95, 'Today, if you hear his voice,' read as a warning from the wilderness generation who provoked God at Massah and Meribah and did not enter his rest.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 4 -----------------------------------------------------------
+DICTIONARY.append(('synkerannymi', 'synkerannymi', 'συγκεράννυμι', 'synkerannymi',
+    'TO MIX TOGETHER, to blend, to unite &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>kerannymi</em>, &lsquo;to mix&rsquo; (as wine with water). &#9888; It stands in two verses of the New Testament: &lsquo;God has composed the body&rsquo; at <a href="1-corinthians-12.html#v24">1 Corinthians 12:24</a>, and <a href="hebrews-4.html#v4-2">Hebrews 4:2</a>, where the editions divide between the plural, &lsquo;they were not united by faith with those who listened,&rsquo; and the singular of the Textus Receptus and the Latin Vulgate, &lsquo;it was not mixed with faith.&rsquo; KJV &lsquo;not being mixed with faith&rsquo;; NWT 1984 &lsquo;they were not united by faith.&rsquo;',
+    ('1 Corinthians', 12, 24)))
+DICTIONARY_ES['synkerannymi'] = ('synkeránnymi',
+    'MEZCLAR, combinar, unir &mdash; <em>syn</em>, «con», y <em>kerannymi</em>, «mezclar» (como el vino con agua). &#9888; Está en dos versículos del Nuevo Testamento: «Dios compuso el cuerpo» en <a href="1-corinthians-12.es.html#v24">1 Corintios 12:24</a>, y <a href="hebrews-4.es.html#v4-2">Hebreos 4:2</a>, donde las ediciones se dividen entre el plural, «no estaban unidos por la fe con los que escucharon», y el singular del Textus Receptus y de la Vulgata latina, «no iba mezclada con fe». RV 1909 «sin mezclar fe»; TNM 1987 «no estaban unidos por fe».')
+
+DICTIONARY.append(('apeitheia', 'apeitheia', 'ἀπείθεια', 'apeitheia',
+    'DISOBEDIENCE, a refusal to be persuaded &mdash; the noun of <em>apeithe&#333;</em> (<a href="dictionary.html#apeitheo">apeithe&#333;</a>). &#9888; It stands in seven verses of the New Testament, among them Romans 11:30 and 11:32, &lsquo;the sons of disobedience&rsquo; at <a href="ephesians-2.html#v2-2">Ephesians 2:2</a>, and twice in Hebrews 4: the wilderness generation &lsquo;did not enter because of disobedience&rsquo; (<a href="hebrews-4.html#v4-6">Hebrews 4:6</a>), and &lsquo;so that no one falls by the same example of disobedience&rsquo; (<a href="hebrews-4.html#v4-11">4:11</a>). KJV at Hebrews 4:6 &lsquo;unbelief&rsquo;; ASV &lsquo;disobedience.&rsquo;',
+    ('Ephesians', 2, 2)))
+DICTIONARY_ES['apeitheia'] = ('apeítheia',
+    'DESOBEDIENCIA, negarse a ser persuadido &mdash; el sustantivo de <em>apeithe&#333;</em> (<a href="diccionario.html#apeitheo">apeithe&#333;</a>). &#9888; Está en siete versículos del Nuevo Testamento, entre ellos Romanos 11:30 y 11:32, «los hijos de la desobediencia» en <a href="ephesians-2.es.html#v2-2">Efesios 2:2</a>, y dos veces en Hebreos 4: la generación del desierto «no entró a causa de la desobediencia» (<a href="hebrews-4.es.html#v4-6">Hebreos 4:6</a>), y «para que nadie caiga en el mismo ejemplo de desobediencia» (<a href="hebrews-4.es.html#v4-11">4:11</a>). RV60 en Hebreos 4:6 «desobediencia».')
+
+DICTIONARY.append(('sabbatismos', 'sabbatismos', 'σαββατισμός', 'sabbatismos',
+    'A SABBATH REST, a keeping of sabbath &mdash; from <em>sabbatiz&#333;</em>, &lsquo;to keep sabbath,&rsquo; built on <em>sabbaton</em> (<a href="dictionary.html#sabbaton">sabbaton</a>), from the Hebrew <em>shabbat</em>. &#9888; It stands in one verse of the New Testament, <a href="hebrews-4.html#v4-9">Hebrews 4:9</a>, &lsquo;So then, a sabbath rest remains for the people of God,&rsquo; where the letter changes its word for &lsquo;rest&rsquo; from <em>katapausis</em> (<a href="dictionary.html#katapausis">katapausis</a>) to this one, and ties it to God&rsquo;s rest on the seventh day. ASV &lsquo;a sabbath rest&rsquo;; KJV &lsquo;a rest&rsquo;; NWT 1984 &lsquo;a sabbath resting.&rsquo;',
+    ('Hebrews', 4, 9)))
+DICTIONARY_ES['sabbatismos'] = ('sabbatismós',
+    'UN REPOSO SABÁTICO, un guardar sábado &mdash; de <em>sabbatiz&#333;</em>, «guardar sábado», hecho sobre <em>sabbaton</em> (<a href="diccionario.html#sabbaton">sabbaton</a>), del hebreo <em>shabbat</em>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-4.es.html#v4-9">Hebreos 4:9</a>, «Así que queda un reposo sabático para el pueblo de Dios», donde la carta cambia su palabra para «descanso», de <em>katapausis</em> (<a href="diccionario.html#katapausis">katapausis</a>) a esta, y la ata al descanso de Dios el séptimo día. RV60 «un reposo»; TNM 1987 «un descanso sabático».')
+
+DICTIONARY.append(('kritikos', 'kritikos', 'κριτικός', 'kritikos',
+    'ABLE TO JUDGE, discerning &mdash; from <em>krin&#333;</em>, &lsquo;to judge,&rsquo; and the source of English &lsquo;critic.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-4.html#v4-12">Hebrews 4:12</a>, of the word of God, &lsquo;able to judge the thoughts and intentions of the heart.&rsquo; KJV &lsquo;a discerner&rsquo;; ASV &lsquo;quick to discern.&rsquo;',
+    ('Hebrews', 4, 12)))
+DICTIONARY_ES['kritikos'] = ('kritikós',
+    'CAPAZ DE JUZGAR, que discierne &mdash; de <em>krin&#333;</em>, «juzgar», y origen de «crítico». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-4.es.html#v4-12">Hebreos 4:12</a>, de la palabra de Dios, «capaz de juzgar los pensamientos y las intenciones del corazón». RV60 «discierne».')
+
+DICTIONARY.append(('trachelizo', 'trachēlizō', 'τραχηλίζω', 'trachēlizō',
+    'TO LAY BARE, to expose &mdash; built on <em>trach&#275;los</em>, &lsquo;neck.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-4.html#v4-13">Hebrews 4:13</a>, &lsquo;all things are naked and laid bare to the eyes of him to whom we must give our account.&rsquo; The picture is read as a wrestler&rsquo;s hold on an opponent&rsquo;s throat or as the neck of a sacrificial victim bent back (both reported here, not checked). KJV &lsquo;opened&rsquo;; ASV &lsquo;laid open&rsquo;; NWT 1984 &lsquo;openly exposed.&rsquo;',
+    ('Hebrews', 4, 13)))
+DICTIONARY_ES['trachelizo'] = ('trachēlízō',
+    'DEJAR EXPUESTO, poner al descubierto &mdash; hecho sobre <em>trach&#275;los</em>, «cuello». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-4.es.html#v4-13">Hebreos 4:13</a>, «todas las cosas están desnudas y expuestas a los ojos de aquel a quien hemos de rendir cuentas». La imagen se lee como la llave de un luchador al cuello del adversario o como el cuello de una víctima doblado hacia atrás (las dos cosas se informan aquí, no se comprobaron). RV60 «abiertas»; TNM 1987 «abiertamente expuestas».')
+
+DICTIONARY.append(('sympatheo', 'sympatheō', 'συμπαθέω', 'sympatheō',
+    'TO SYMPATHIZE, to suffer with &mdash; <em>syn</em>, &lsquo;with,&rsquo; and <em>pasch&#333;</em>, &lsquo;to suffer.&rsquo; &#9888; It stands in two verses of the New Testament, both in Hebrews: the high priest who is not &lsquo;unable to sympathize with our weaknesses&rsquo; (<a href="hebrews-4.html#v4-15">Hebrews 4:15</a>), and readers who &lsquo;sympathized with the prisoners&rsquo; at 10:34 (not yet on these pages). The adjective <em>sympath&#275;s</em> stands at 1 Peter 3:8. KJV at 4:15 &lsquo;touched with the feeling of&rsquo;; NWT 1984 &lsquo;sympathize.&rsquo;',
+    ('Hebrews', 4, 15)))
+DICTIONARY_ES['sympatheo'] = ('sympathéō',
+    'COMPADECERSE, padecer con &mdash; <em>syn</em>, «con», y <em>pasch&#333;</em>, «padecer». &#9888; Está en dos versículos del Nuevo Testamento, los dos en Hebreos: el sumo sacerdote que no es incapaz de «compadecerse de nuestras debilidades» (<a href="hebrews-4.es.html#v4-15">Hebreos 4:15</a>), y los lectores que «se compadecieron de los presos» en 10:34 (todavía no en estas páginas). El adjetivo <em>sympath&#275;s</em> está en 1 Pedro 3:8. RV60 en 4:15 «compadecerse».')
+
+DICTIONARY.append(('boetheia', 'boētheia', 'βοήθεια', 'boētheia',
+    'HELP, aid; in the plural, SUPPORTS &mdash; the noun of <em>bo&#275;the&#333;</em> (<a href="dictionary.html#boetheo">bo&#275;the&#333;</a>). &#9888; It stands in two verses of the New Testament: the &lsquo;supports&rsquo; with which the sailors undergird the ship at <a href="acts-27.html#v27-17">Acts 27:17</a>, and &lsquo;grace for timely help&rsquo; at <a href="hebrews-4.html#v4-16">Hebrews 4:16</a>, two verses after the high priest of <a href="hebrews-2.html#v2-18">Hebrews 2:18</a> who &lsquo;is able to help.&rsquo; KJV at 4:16 &lsquo;to help in time of need&rsquo;; Douay &lsquo;seasonable aid.&rsquo;',
+    ('Acts', 27, 17)))
+DICTIONARY_ES['boetheia'] = ('boḗtheia',
+    'AYUDA, socorro; en plural, REFUERZOS &mdash; el sustantivo de <em>bo&#275;the&#333;</em> (<a href="diccionario.html#boetheo">bo&#275;the&#333;</a>). &#9888; Está en dos versículos del Nuevo Testamento: los «refuerzos» con que los marineros ciñen la nave en <a href="acts-27.es.html#v27-17">Hechos 27:17</a>, y «gracia para el socorro oportuno» en <a href="hebrews-4.es.html#v4-16">Hebreos 4:16</a>, después del sumo sacerdote de <a href="hebrews-2.es.html#v2-18">Hebreos 2:18</a>, que «puede socorrer». RV60 en 4:16 «el oportuno socorro».')
+
+def _heb4_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb4_fix([("'...lest anyone fall, after the same HYPODEIGMA of disobedience' (Hebrews 4:11, not yet on these pages);", '\'so that no one falls by the same HYPODEIGMA of disobedience\' (<a href="hebrews-4.html#v4-11">Hebrews 4:11</a>);'), ('«según este mismo HYPÓDEIGMA de desobediencia» (Hebreos 4:11, todavía no en estas páginas);', '«para que nadie caiga en el mismo HYPÓDEIGMA de desobediencia» (<a href="hebrews-4.es.html#v4-11">Hebreos 4:11</a>);'), ('and Hebrews 4:12, where the word of God pierces &lsquo;to the division of soul and spirit&rsquo; (not yet on these pages).', 'and <a href="hebrews-4.html#v4-12">Hebrews 4:12</a>, where the word of God pierces &lsquo;as far as the division of soul and of spirit.&rsquo;'), ('y Hebreos 4:12, donde la palabra de Dios penetra «hasta la división del alma y del espíritu» (todavía no en estas páginas).', 'y <a href="hebrews-4.es.html#v4-12">Hebreos 4:12</a>, donde la palabra de Dios penetra «hasta la división del alma y del espíritu».'), ("'if Joshua had given them rest, God would not have spoken of another day'", '\'if Joshua had given them rest, he would not have spoken afterward about another day\' (<a href="hebrews-4.html#v4-8">Hebrews 4:8</a>)'), ('«si Josué les hubiera dado reposo, Dios no habría hablado de otro día»', '«si Josué les hubiera dado descanso, no habría hablado después de otro día» (<a href="hebrews-4.es.html#v4-8">Hebreos 4:8</a>)'), ('what the word of God is sharper than (Hebrews 4:12),', 'what the word of God is sharper than (<a href="hebrews-4.html#v4-12">Hebrews 4:12</a>),'), ('aquello más cortante que lo cual es la palabra de Dios (Hebreos 4:12).', 'aquello más cortante que lo cual es la palabra de Dios (<a href="hebrews-4.es.html#v4-12">Hebreos 4:12</a>).'), ('and five in chapter 4 (not yet on these pages), where', 'and five in chapter 4 (<a href="hebrews-4.html#v4-1">4:1</a>, <a href="hebrews-4.html#v4-3">4:3</a>, <a href="hebrews-4.html#v4-5">4:5</a>, <a href="hebrews-4.html#v4-10">4:10</a>, <a href="hebrews-4.html#v4-11">4:11</a>), where'), ('y cinco en el capítulo 4 (todavía no en estas páginas), donde', 'y cinco en el capítulo 4 (<a href="hebrews-4.es.html#v4-1">4:1</a>, <a href="hebrews-4.es.html#v4-3">4:3</a>, <a href="hebrews-4.es.html#v4-5">4:5</a>, <a href="hebrews-4.es.html#v4-10">4:10</a>, <a href="hebrews-4.es.html#v4-11">4:11</a>), donde'), ('&lsquo;let us hold fast our confession&rsquo; at 4:14, and 10:23 (these two not yet on these pages).', '&lsquo;let us hold fast to the confession&rsquo; at <a href="hebrews-4.html#v4-14">4:14</a>, and 10:23 (not yet on these pages).'), ('«retengamos nuestra confesión» en 4:14, y 10:23 (estos dos todavía no en estas páginas).', '«retengamos la confesión» en <a href="hebrews-4.es.html#v4-14">4:14</a>, y 10:23 (todavía no en estas páginas).'), ('</a> and 4:7 it is the command &lsquo;do not harden your hearts,&rsquo;', '</a> and <a href="hebrews-4.html#v4-7">4:7</a> it is the command &lsquo;do not harden your hearts,&rsquo;'), ('&lsquo;so that not one of you is hardened&rsquo; (4:7 not yet on these pages).', '&lsquo;so that not one of you is hardened.&rsquo;'), ('</a> y 4:7 es el mandato «no endurezcan sus corazones»', '</a> y <a href="hebrews-4.es.html#v4-7">4:7</a> es el mandato «no endurezcan sus corazones»'), ('«para que ninguno de ustedes sea endurecido» (4:7 todavía no en estas páginas).', '«para que ninguno de ustedes sea endurecido».'), ('</a>, and at 4:14 and on through chapter 9 (these not yet on these pages).', '</a> and <a href="hebrews-4.html#v4-14">4:14</a>, and on through chapter 9 (not yet on these pages).'), ('</a>, y en 4:14 y hasta el capítulo 9 (estos todavía no en estas páginas).', '</a> y <a href="hebrews-4.es.html#v4-14">4:14</a>, y hasta el capítulo 9 (todavía no en estas páginas).'), ('the noun <em>bo&#275;theia</em> follows at 4:16,', 'the noun <em>bo&#275;theia</em> follows at <a href="hebrews-4.html#v4-16">4:16</a>,'), ('el sustantivo <em>bo&#275;theia</em> sigue en 4:16,', 'el sustantivo <em>bo&#275;theia</em> sigue en <a href="hebrews-4.es.html#v4-16">4:16</a>,')])
+
+XREFS.extend([
+    (("Hebrews", 3, 11), ("Hebrews", 4, 1), "the rest"),
+    (("Romans", 3, 23), ("Hebrews", 4, 1), "fall short"),
+    (("1 Thessalonians", 2, 13), ("Hebrews", 4, 2), "the word you heard"),
+    (("Matthew", 25, 34), ("Hebrews", 4, 3), "the founding of the world"),
+    (("Genesis", 2, 2), ("Hebrews", 4, 4), "God rested on the seventh day"),
+    (("Hebrews", 3, 18), ("Hebrews", 4, 6), "disobedience"),
+    (("Acts", 17, 31), ("Hebrews", 4, 7), "he sets a day"),
+    (("Joshua", 21, 44), ("Hebrews", 4, 8), "Jehovah gave them rest"),
+    (("Acts", 7, 45), ("Hebrews", 4, 8), "Joshua, Iesous"),
+    (("John", 13, 15), ("Hebrews", 4, 11), "example"),
+    (("2 Timothy", 4, 9), ("Hebrews", 4, 11), "do your best"),
+    (("Ephesians", 6, 17), ("Hebrews", 4, 12), "the sword, the word of God"),
+    (("Revelation", 1, 16), ("Hebrews", 4, 12), "two-edged sword"),
+    (("1 Thessalonians", 5, 23), ("Hebrews", 4, 12), "spirit and soul"),
+    (("Hebrews", 3, 1), ("Hebrews", 4, 14), "high priest, confession"),
+    (("Leviticus", 16, 2), ("Hebrews", 4, 14), "inside the veil"),
+    (("Hebrews", 2, 18), ("Hebrews", 4, 15), "tested, help"),
+    (("Hebrews", 11, 6), ("Hebrews", 4, 16), "draw near to God"),
+    (("Acts", 27, 17), ("Hebrews", 4, 16), "supports, help"),
+])
+
+CHAPTER_ART["heb4"] = [dict(
+    file="monreale-god-resting-seventh-day.jpg",
+    title="God resting on the seventh day",   title_es="Dios descansa el séptimo día",
+    artist="Mosaicists of Monreale Cathedral",
+    year="12th century",
+    location="Cathedral of Monreale, Sicily",
+    location_es="Catedral de Monreale, Sicilia",
+    alt="A Byzantine mosaic on a gold ground: a bearded figure with a halo, in a blue robe, sits on a blue globe between stylized trees, his hands resting on his "
+        "knees, with a Latin inscription above.",
+    note="&#9888; One of the creation mosaics of Monreale: God seated on the world, resting, with a Latin inscription above that names the seventh day (&lsquo;DIE "
+         "VII&rsquo;). Verse 4 quotes Genesis 2:2, &lsquo;And God rested on the seventh day from all his works&rsquo; (<a href=\"hebrews-4.html#v4-4\">verse 4</a>).",
+    note_es="&#9888; Uno de los mosaicos de la creación de Monreale: Dios sentado sobre el mundo, descansando, con una inscripción latina encima que nombra el séptimo "
+            "día («DIE VII»). El versículo 4 cita Génesis 2:2, «Y descansó Dios el séptimo día de todas sus obras» (<a href=\"hebrews-4.es.html#v4-4\">versículo 4</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Monreale_god_resting_after_creation.jpg",
+)]
+
+CHRON_CHAPTERS["heb4"] = dict(era='apostolic',
+    when="The rest of Psalm 95 still open: God's own rest on the seventh day, a 'Today' spoken through David long after Joshua, 'a sabbath rest for the people of God'; the word of God sharper than any two-edged sword; and a great high priest, tested in every respect, who has passed through the heavens.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
