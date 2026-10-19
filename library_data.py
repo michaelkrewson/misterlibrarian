@@ -42502,3 +42502,211 @@ CHRON_CHAPTERS["heb10"] = dict(era='apostolic',
     when="The law a shadow of the good things to come; the blood of bulls and goats cannot take away sins; Psalm 40, 'a body you prepared for me'; one sacrifice for all time and a priest who sat down; Jeremiah's covenant again; a new and living way through the curtain; a warning against willful sin; and 'my righteous one will live by faith.'",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 12 -----------------------------------------------------------
+DICTIONARY.append(('euperistatos', 'euperistatos', 'εὐπερίστατος', 'euperistatos',
+    'THAT CLINGS CLOSELY, that easily entangles &mdash; an adjective whose parts are <em>eu</em>, &lsquo;well, readily,&rsquo; and <em>peristatos</em>, &lsquo;standing around&rsquo;; its exact sense is uncertain. &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-1">Hebrews 12:1</a>, &lsquo;the sin that clings so closely.&rsquo; The early papyrus P46 is reported to read <em>euperispastos</em>, &lsquo;easily distracting&rsquo; (reported, not checked here). KJV &lsquo;the sin which doth so easily beset us&rsquo;; NWT 1984 &lsquo;the sin that easily entangles us&rsquo;; NIV &lsquo;the sin that so easily entangles.&rsquo;',
+    ('Hebrews', 12, 1)))
+DICTIONARY_ES['euperistatos'] = ('euperístatos',
+    'QUE TAN ESTRECHAMENTE SE ADHIERE, que fácilmente enreda &mdash; un adjetivo cuyas partes son <em>eu</em>, «bien, fácilmente», y <em>perístatos</em>, «que está alrededor»; su sentido exacto es incierto. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-1">Hebreos 12:1</a>, «el pecado que tan estrechamente se nos adhiere». Se dice que el papiro temprano P46 lee <em>euperíspastos</em>, «que distrae fácilmente» (dato referido, no comprobado aquí). RV60 «el pecado que nos asedia»; TNM 1987 «el pecado que fácilmente nos enreda».')
+
+DICTIONARY.append(('teleiotes-completer', 'teleiōtēs', 'τελειωτής', 'teleiōtēs',
+    'COMPLETER, perfecter &mdash; the one who brings something to its end; the noun of <em>teleio&#333;</em>, &lsquo;to make complete&rsquo; (<a href="dictionary.html#teleioo">teleioo</a>), the verb of <a href="hebrews-2.html#v2-10">Hebrews 2:10</a>, <a href="hebrews-10.html#v10-14">10:14</a> and <a href="hebrews-11.html#v11-40">11:40</a>. It is not the same word as <em>teleiot&#275;s</em>, &lsquo;maturity&rsquo; (<a href="dictionary.html#teleiotes">teleiotes</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-2">Hebrews 12:2</a>, &lsquo;the Author and Completer of faith,&rsquo; beside <em>arch&#275;gos</em>, &lsquo;Author&rsquo; (<a href="dictionary.html#archegos">archegos</a>). KJV &lsquo;finisher&rsquo;; ASV and NIV &lsquo;perfecter&rsquo;; NWT 1984 &lsquo;Perfecter.&rsquo;',
+    ('Hebrews', 12, 2)))
+DICTIONARY_ES['teleiotes-completer'] = ('teleiōt&#275;s',
+    'CONSUMADOR, el que completa &mdash; el que lleva algo a su fin; el sustantivo de <em>teleió&#333;</em>, «hacer completo» (<a href="diccionario.html#teleioo">teleioo</a>), el verbo de <a href="hebrews-2.es.html#v2-10">Hebreos 2:10</a>, <a href="hebrews-10.es.html#v10-14">10:14</a> y <a href="hebrews-11.es.html#v11-40">11:40</a>. No es la misma palabra que <em>teleiót&#275;s</em>, «madurez» (<a href="diccionario.html#teleiotes">teleiotes</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-2">Hebreos 12:2</a>, «el Autor y Consumador de la fe», junto a <em>arch&#275;gós</em>, «Autor» (<a href="diccionario.html#archegos">archegos</a>). RV60 «consumador»; NVI y TNM 1987 «perfeccionador».')
+
+DICTIONARY.append(('antilogia', 'antilogia', 'ἀντιλογία', 'antilogia',
+    'OPPOSITION, dispute, a speaking against &mdash; <em>anti</em>, &lsquo;against,&rsquo; and <em>logos</em>, &lsquo;word.&rsquo; &#9888; It stands in four verses of the New Testament: the oath as &lsquo;an end of every dispute&rsquo; (<a href="hebrews-6.html#v6-16">Hebrews 6:16</a>); &lsquo;beyond all dispute&rsquo; (<a href="hebrews-7.html#v7-7">Hebrews 7:7</a>); &lsquo;such opposition from sinners&rsquo; (<a href="hebrews-12.html#v12-3">Hebrews 12:3</a>); and &lsquo;the rebellion of Korah&rsquo; (<a href="jude-1.html#v11">Jude 11</a>), Korah who spoke against Moses. KJV at 12:3 &lsquo;contradiction&rsquo;; ASV &lsquo;gainsaying&rsquo;; NWT 1984 &lsquo;contrary talk.&rsquo;',
+    ('Hebrews', 6, 16)))
+DICTIONARY_ES['antilogia'] = ('antilogía',
+    'OPOSICIÓN, disputa, un hablar en contra &mdash; <em>antí</em>, «contra», y <em>lógos</em>, «palabra». &#9888; Está en cuatro versículos del Nuevo Testamento: el juramento como «fin de toda disputa» (<a href="hebrews-6.es.html#v6-16">Hebreos 6:16</a>); «fuera de toda disputa» (<a href="hebrews-7.es.html#v7-7">Hebreos 7:7</a>); «tal oposición de parte de los pecadores» (<a href="hebrews-12.es.html#v12-3">Hebreos 12:3</a>); y «la rebelión de Coré» (<a href="jude-1.es.html#v11">Judas 11</a>), Coré, que habló contra Moisés. RV60 en 12:3 «contradicción»; TNM 1987 «habla contraria»; NVI «oposición».')
+
+DICTIONARY.append(('paideia', 'paideia', 'παιδεία', 'paideia',
+    'DISCIPLINE, training &mdash; the upbringing of a child (<em>pais</em>), with the correction that belongs to it. &#9888; It stands in six verses of the New Testament: &lsquo;the discipline and admonition of the Lord&rsquo; (<a href="ephesians-6.html#v6-4">Ephesians 6:4</a>); &lsquo;discipline in righteousness&rsquo; (<a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>); and four verses of Hebrews 12, <a href="hebrews-12.html#v12-5">12:5</a>, <a href="hebrews-12.html#v12-7">12:7</a>, <a href="hebrews-12.html#v12-8">12:8</a> and <a href="hebrews-12.html#v12-11">12:11</a>, where it begins from Proverbs 3:11 in the Greek (not yet on these pages). Its verb <em>paideu&#333;</em> is &lsquo;discipline&rsquo; at <a href="hebrews-12.html#v12-6">Hebrews 12:6</a>, <a href="hebrews-12.html#v12-7">12:7</a> and <a href="hebrews-12.html#v12-10">12:10</a>. KJV &lsquo;chastening&rsquo; and &lsquo;chastisement&rsquo;; ASV &lsquo;chastening&rsquo;; NWT 1984 and NIV &lsquo;discipline.&rsquo;',
+    ('Ephesians', 6, 4)))
+DICTIONARY_ES['paideia'] = ('paideía',
+    'DISCIPLINA, formación &mdash; la crianza de un niño (<em>país</em>), con la corrección que le corresponde. &#9888; Está en seis versículos del Nuevo Testamento: «la disciplina y amonestación del Señor» (<a href="ephesians-6.es.html#v6-4">Efesios 6:4</a>); «disciplina en la justicia» (<a href="2-timothy-3.es.html#v3-16">2 Timoteo 3:16</a>); y cuatro versículos de Hebreos 12, <a href="hebrews-12.es.html#v12-5">12:5</a>, <a href="hebrews-12.es.html#v12-7">12:7</a>, <a href="hebrews-12.es.html#v12-8">12:8</a> y <a href="hebrews-12.es.html#v12-11">12:11</a>, donde parte de Proverbios 3:11 en griego (todavía no en estas páginas). Su verbo <em>paideú&#333;</em> es «disciplinar» en <a href="hebrews-12.es.html#v12-6">Hebreos 12:6</a>, <a href="hebrews-12.es.html#v12-7">12:7</a> y <a href="hebrews-12.es.html#v12-10">12:10</a>. RV60 y TNM 1987 «disciplina»; RV 1909 «castigo».')
+
+DICTIONARY.append(('nothos', 'nothos', 'νόθος', 'nothos',
+    'ILLEGITIMATE &mdash; a child born outside marriage, with no standing as an heir. &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-8">Hebrews 12:8</a>: &lsquo;if you are without discipline &hellip; then you are illegitimate and not sons.&rsquo; KJV, ASV and Douay &lsquo;bastards&rsquo;; NWT 1984 &lsquo;illegitimate children&rsquo;; NIV &lsquo;not legitimate.&rsquo;',
+    ('Hebrews', 12, 8)))
+DICTIONARY_ES['nothos'] = ('nóthos',
+    'ILEGÍTIMO &mdash; un hijo nacido fuera del matrimonio, sin derecho a heredar. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-8">Hebreos 12:8</a>: «si están sin disciplina &hellip; entonces son ilegítimos y no hijos». RV60 y NVI «bastardos»; TNM 1987 «hijos ilegítimos».')
+
+DICTIONARY.append(('anorthoo', 'anorthoō', 'ἀνορθόω', 'anorthoō',
+    'TO STRAIGHTEN UP, to set upright again &mdash; <em>ana</em>, &lsquo;up, again,&rsquo; and <em>orthos</em>, &lsquo;straight.&rsquo; &#9888; It stands in three verses of the New Testament: the bent woman who &lsquo;straightened up&rsquo; when Jesus laid his hands on her (<a href="luke-13.html#v13-13">Luke 13:13</a>); Amos as quoted at <a href="acts-15.html#v15-16">Acts 15:16</a>, &lsquo;I will set it up again&rsquo;; and &lsquo;straighten up the hands that hang down&rsquo; (<a href="hebrews-12.html#v12-12">Hebrews 12:12</a>). KJV at Hebrews 12:12 &lsquo;lift up&rsquo;; NWT 1984 &lsquo;straighten up&rsquo;; NIV &lsquo;strengthen.&rsquo;',
+    ('Luke', 13, 13)))
+DICTIONARY_ES['anorthoo'] = ('anorthó&#333;',
+    'ENDEREZAR, volver a poner en pie &mdash; <em>aná</em>, «arriba, de nuevo», y <em>orthós</em>, «recto». &#9888; Está en tres versículos del Nuevo Testamento: la mujer encorvada que «se enderezó» cuando Jesús le impuso las manos (<a href="luke-13.es.html#v13-13">Lucas 13:13</a>); Amós citado en <a href="acts-15.es.html#v15-16">Hechos 15:16</a>, «la levantaré de nuevo»; y «enderecen las manos caídas» (<a href="hebrews-12.es.html#v12-12">Hebreos 12:12</a>). RV60 en Hebreos 12:12 «levantad»; TNM 1987 «enderecen».')
+
+DICTIONARY.append(('trochia', 'trochia', 'τροχιά', 'trochia',
+    'A TRACK, a wheel-rut &mdash; from <em>trochos</em>, &lsquo;wheel&rsquo;: the line a road wears where it is used. &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-13">Hebrews 12:13</a>, &lsquo;make straight tracks for your feet,&rsquo; from the Greek of Proverbs 4:26 (checked; not yet on these pages), where the Hebrew has &lsquo;Level the path of your foot&rsquo; (checked). KJV &lsquo;straight paths&rsquo;; Douay and Geneva &lsquo;straight steps&rsquo;; NIV &lsquo;level paths.&rsquo;',
+    ('Hebrews', 12, 13)))
+DICTIONARY_ES['trochia'] = ('trochiá',
+    'UNA SENDA, un surco de rueda &mdash; de <em>trochós</em>, «rueda»: la línea que deja un camino donde se usa. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-13">Hebreos 12:13</a>, «hagan sendas rectas para sus pies», del griego de Proverbios 4:26 (comprobado; todavía no en estas páginas), donde el hebreo dice «Allana el camino de tu pie» (comprobado). RV60 «sendas derechas»; RV 1909 «derechos pasos»; TNM 1987 «sendas rectas».')
+
+DICTIONARY.append(('pikria', 'pikria', 'πικρία', 'pikria',
+    'BITTERNESS &mdash; from <em>pikros</em>, &lsquo;bitter.&rsquo; &#9888; It stands in four verses of the New Testament: Simon &lsquo;in the gall of bitterness&rsquo; (<a href="acts-8.html#v8-23">Acts 8:23</a>); &lsquo;whose mouth is full of cursing and bitterness&rsquo; (<a href="romans-3.html#v3-14">Romans 3:14</a>); &lsquo;let all bitterness &hellip; be put away from you&rsquo; (<a href="ephesians-4.html#v4-31">Ephesians 4:31</a>); and &lsquo;a root of bitterness&rsquo; (<a href="hebrews-12.html#v12-15">Hebrews 12:15</a>), from the Greek of <a href="deuteronomy-29.html#v29-17">Deuteronomy 29:17</a>, 29:18 in English Bibles, &lsquo;a root springing up in gall and bitterness&rsquo; (checked). KJV and ASV &lsquo;root of bitterness&rsquo;; NWT 1984 &lsquo;poisonous root&rsquo;; NIV &lsquo;bitter root.&rsquo;',
+    ('Acts', 8, 23)))
+DICTIONARY_ES['pikria'] = ('pikría',
+    'AMARGURA &mdash; de <em>pikrós</em>, «amargo». &#9888; Está en cuatro versículos del Nuevo Testamento: Simón «en hiel de amargura» (<a href="acts-8.es.html#v8-23">Hechos 8:23</a>); «cuya boca está llena de maldición y amargura» (<a href="romans-3.es.html#v3-14">Romanos 3:14</a>); «quítese de ustedes toda amargura» (<a href="ephesians-4.es.html#v4-31">Efesios 4:31</a>); y «raíz de amargura» (<a href="hebrews-12.es.html#v12-15">Hebreos 12:15</a>), del griego de <a href="deuteronomy-29.es.html#v29-17">Deuteronomio 29:17</a>, 29:18 en las Biblias en castellano, «una raíz que brota en hiel y amargura» (comprobado). RV60 «raíz de amargura»; TNM 1987 «raíz venenosa»; NVI «raíz amarga».')
+
+DICTIONARY.append(('bebelos', 'bebēlos', 'βέβηλος', 'bebēlos',
+    'PROFANE, unhallowed &mdash; what is common and open to anyone, the opposite of what is set apart; not bad language. &#9888; It is said of people at <a href="1-timothy-1.html#v9">1 Timothy 1:9</a>, &lsquo;the unholy and profane&rsquo;; of myths at <a href="1-timothy-4.html#v4-7">1 Timothy 4:7</a>; of empty chatter at <a href="1-timothy-6.html#v6-20">1 Timothy 6:20</a> and <a href="2-timothy-2.html#v2-16">2 Timothy 2:16</a>; and of Esau at <a href="hebrews-12.html#v12-16">Hebrews 12:16</a>, who sold his birthright for a single meal. Its verb is &lsquo;the priests in the temple profane the sabbath&rsquo; at <a href="matthew-12.html#v12-5">Matthew 12:5</a>. KJV, ASV and Douay &lsquo;profane&rsquo;; NIV &lsquo;godless&rsquo;; NWT 1984 &lsquo;anyone not appreciating sacred things.&rsquo;',
+    ('1 Timothy', 1, 9)))
+DICTIONARY_ES['bebelos'] = ('béb&#275;los',
+    'PROFANO, no consagrado &mdash; lo común y abierto a cualquiera, lo contrario de lo apartado; no lenguaje grosero. &#9888; Se dice de personas en <a href="1-timothy-1.es.html#v9">1 Timoteo 1:9</a>, «los irreverentes y profanos»; de mitos en <a href="1-timothy-4.es.html#v4-7">1 Timoteo 4:7</a>; de palabrerías vacías en <a href="1-timothy-6.es.html#v6-20">1 Timoteo 6:20</a> y <a href="2-timothy-2.es.html#v2-16">2 Timoteo 2:16</a>; y de Esaú en <a href="hebrews-12.es.html#v12-16">Hebreos 12:16</a>, que vendió su primogenitura por una sola comida. Su verbo es «los sacerdotes, en el templo, profanan el sábado» en <a href="matthew-12.es.html#v12-5">Mateo 12:5</a>. RV60 y RV 1909 «profano»; NVI «profano»; TNM 1987 «nadie que no aprecie cosas sagradas».')
+
+DICTIONARY.append(('prototokia', 'prōtotokia', 'πρωτοτόκια', 'prōtotokia',
+    'BIRTHRIGHT, the rights of the firstborn &mdash; from <em>pr&#333;totokos</em>, &lsquo;firstborn&rsquo; (<a href="dictionary.html#prototokos">prototokos</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-16">Hebrews 12:16</a>, of Esau, who &lsquo;for a single meal sold his own birthright&rsquo;; it is the word of the Greek Genesis at 25:33&ndash;34 (checked), for the Hebrew <em>bekhorah</em> (<a href="dictionary.html#bekhorah">bekhorah</a>; <a href="genesis-25.html#v25-34">Genesis 25:34</a>). The &lsquo;congregation of the firstborn&rsquo; at <a href="hebrews-12.html#v12-23">Hebrews 12:23</a> is the same root. KJV &lsquo;birthright&rsquo;; NWT 1984 &lsquo;his rights as firstborn&rsquo;; NIV &lsquo;his inheritance rights as the oldest son.&rsquo;',
+    ('Hebrews', 12, 16)))
+DICTIONARY_ES['prototokia'] = ('pr&#333;totókia',
+    'PRIMOGENITURA, los derechos del primogénito &mdash; de <em>pr&#333;tótokos</em>, «primogénito» (<a href="diccionario.html#prototokos">prototokos</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-16">Hebreos 12:16</a>, de Esaú, que «por una sola comida vendió su propia primogenitura»; es la palabra del Génesis griego en 25:33&ndash;34 (comprobado), por el hebreo <em>bekhorah</em> (<a href="diccionario.html#bekhorah">bekhorah</a>; Génesis 25:34 (ya en estas páginas, todavía no en español)). La «congregación de los primogénitos» de <a href="hebrews-12.es.html#v12-23">Hebreos 12:23</a> es la misma raíz. RV60 «primogenitura»; TNM 1987 «derechos de primogénito».')
+
+DICTIONARY.append(('apodokimazo', 'apodokimazō', 'ἀποδοκιμάζω', 'apodokimazō',
+    'TO REJECT after testing &mdash; <em>apo</em>, &lsquo;away,&rsquo; and <em>dokimaz&#333;</em>, &lsquo;to test, to approve&rsquo;: to examine and turn down. &#9888; It stands in nine verses of the New Testament: the stone the builders rejected, from Psalm 118:22 (not yet on these pages), at <a href="matthew-21.html#v21-42">Matthew 21:42</a>, <a href="mark-12.html#v12-10">Mark 12:10</a>, <a href="luke-20.html#v20-17">Luke 20:17</a>, and 1 Peter 2:4 and 2:7 (not yet on these pages); the Son of Man who must &lsquo;be rejected&rsquo; at <a href="mark-8.html#v8-31">Mark 8:31</a>, <a href="luke-9.html#v9-22">Luke 9:22</a> and <a href="luke-17.html#v17-25">Luke 17:25</a>; and Esau, who &lsquo;was rejected&rsquo; when he wanted to inherit the blessing (<a href="hebrews-12.html#v12-17">Hebrews 12:17</a>). KJV, ASV and NIV &lsquo;rejected.&rsquo;',
+    ('Matthew', 21, 42)))
+DICTIONARY_ES['apodokimazo'] = ('apodokimáz&#333;',
+    'RECHAZAR tras examinar &mdash; <em>apó</em>, «lejos», y <em>dokimáz&#333;</em>, «probar, aprobar»: examinar y desechar. &#9888; Está en nueve versículos del Nuevo Testamento: la piedra que desecharon los edificadores, del Salmo 118:22 (todavía no en estas páginas), en <a href="matthew-21.es.html#v21-42">Mateo 21:42</a>, <a href="mark-12.es.html#v12-10">Marcos 12:10</a>, <a href="luke-20.es.html#v20-17">Lucas 20:17</a>, y 1 Pedro 2:4 y 2:7 (todavía no en estas páginas); el Hijo del Hombre que tenía que «ser rechazado» en <a href="mark-8.es.html#v8-31">Marcos 8:31</a>, <a href="luke-9.es.html#v9-22">Lucas 9:22</a> y <a href="luke-17.es.html#v17-25">Lucas 17:25</a>; y Esaú, que «fue rechazado» cuando quiso heredar la bendición (<a href="hebrews-12.es.html#v12-17">Hebreos 12:17</a>). RV60 «desechado»; TNM 1987 y NVI «rechazado».')
+
+DICTIONARY.append(('gnophos', 'gnophos', 'γνόφος', 'gnophos',
+    'THICK DARKNESS, a dark cloud &mdash; the Greek Bible&rsquo;s word for the darkness at Sinai: &lsquo;Moses drew near to the thick darkness where God was&rsquo; (<a href="exodus-20.html#v20-17">Exodus 20:17</a>, 20:21 in English Bibles; the Greek checked), and the &lsquo;darkness, thick darkness, storm&rsquo; of the Greek of <a href="deuteronomy-4.html#v4-11">Deuteronomy 4:11</a> and <a href="deuteronomy-5.html#v5-18">Deuteronomy 5:18</a> (checked). &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-18">Hebrews 12:18</a>. KJV and ASV &lsquo;blackness&rsquo;; NWT 1984 &lsquo;a dark cloud&rsquo;; NIV &lsquo;darkness.&rsquo;',
+    ('Hebrews', 12, 18)))
+DICTIONARY_ES['gnophos'] = ('gnóphos',
+    'DENSA OSCURIDAD, una nube oscura &mdash; la palabra de la Biblia griega para la oscuridad del Sinaí: «Moisés se acercó a la densa oscuridad donde estaba Dios» (<a href="exodus-20.es.html#v20-17">Éxodo 20:17</a>, 20:21 en las Biblias en castellano; el griego comprobado), y la «oscuridad, densa oscuridad, tormenta» del griego de <a href="deuteronomy-4.es.html#v4-11">Deuteronomio 4:11</a> y <a href="deuteronomy-5.es.html#v5-18">Deuteronomio 5:18</a> (comprobado). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-18">Hebreos 12:18</a>. RV60 «oscuridad»; TNM 1987 «nube oscura».')
+
+DICTIONARY.append(('ekphobos', 'ekphobos', 'ἔκφοβος', 'ekphobos',
+    'TERRIFIED, badly frightened &mdash; <em>ek</em>, &lsquo;out,&rsquo; and <em>phobos</em>, &lsquo;fear.&rsquo; &#9888; It stands in two verses of the New Testament: on the mountain of the transfiguration, &lsquo;they had become terrified&rsquo; (<a href="mark-9.html#v9-6">Mark 9:6</a>); and Moses at Sinai, &lsquo;I am terrified and trembling&rsquo; (<a href="hebrews-12.html#v12-21">Hebrews 12:21</a>), the words of the Greek of Deuteronomy 9:19 (checked; <a href="deuteronomy-9.html#v9-19">Deuteronomy 9:19</a>). Its verb <em>ekphobe&#333;</em> is &lsquo;to frighten&rsquo; at <a href="2-corinthians-10.html#v9">2 Corinthians 10:9</a>. KJV &lsquo;I exceedingly fear&rsquo;; NIV &lsquo;I am trembling with fear&rsquo;; Douay &lsquo;I am frighted.&rsquo;',
+    ('Mark', 9, 6)))
+DICTIONARY_ES['ekphobos'] = ('ékphobos',
+    'ATERRADO, muy asustado &mdash; <em>ek</em>, «fuera», y <em>phóbos</em>, «miedo». &#9888; Está en dos versículos del Nuevo Testamento: en el monte de la transfiguración, «se habían llenado de terror» (<a href="mark-9.es.html#v9-6">Marcos 9:6</a>); y Moisés en el Sinaí, «Estoy aterrado y temblando» (<a href="hebrews-12.es.html#v12-21">Hebreos 12:21</a>), las palabras del griego de Deuteronomio 9:19 (comprobado; <a href="deuteronomy-9.es.html#v9-19">Deuteronomio 9:19</a>). Su verbo <em>ekphobé&#333;</em> es «atemorizar» en <a href="2-corinthians-10.es.html#v9">2 Corintios 10:9</a>. RV60 «Estoy espantado»; RV 1909 «Estoy asombrado»; TNM 1987 «Estoy aterrado».')
+
+DICTIONARY.append(('entromos', 'entromos', 'ἔντρομος', 'entromos',
+    'TREMBLING &mdash; <em>en</em>, &lsquo;in,&rsquo; and <em>tromos</em>, &lsquo;trembling.&rsquo; &#9888; It stands in three verses of the New Testament: Moses at the burning bush (<a href="acts-7.html#v7-32">Acts 7:32</a>); the jailer at Philippi (<a href="acts-16.html#v16-29">Acts 16:29</a>); and Moses at Sinai, &lsquo;I am terrified and trembling&rsquo; (<a href="hebrews-12.html#v12-21">Hebrews 12:21</a>). KJV and ASV &lsquo;quake&rsquo;; NWT 1984 &lsquo;trembling&rsquo;; Douay &lsquo;tremble.&rsquo;',
+    ('Acts', 7, 32)))
+DICTIONARY_ES['entromos'] = ('éntromos',
+    'TEMBLOROSO &mdash; <em>en</em>, «en», y <em>trómos</em>, «temblor». &#9888; Está en tres versículos del Nuevo Testamento: Moisés ante la zarza ardiente (<a href="acts-7.es.html#v7-32">Hechos 7:32</a>); el carcelero de Filipos (<a href="acts-16.es.html#v16-29">Hechos 16:29</a>); y Moisés en el Sinaí, «Estoy aterrado y temblando» (<a href="hebrews-12.es.html#v12-21">Hebreos 12:21</a>). RV60, RV 1909 y TNM 1987 «temblando».')
+
+DICTIONARY.append(('panegyris', 'panēgyris', 'πανήγυρις', 'panēgyris',
+    'FESTAL GATHERING &mdash; <em>pan</em>, &lsquo;all,&rsquo; and <em>agyris</em>, &lsquo;assembly&rsquo;: a crowd gathered for a public festival. &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-22">Hebrews 12:22</a>, and whether it belongs with the &lsquo;myriads of angels&rsquo; or with &lsquo;the congregation of the firstborn&rsquo; of <a href="hebrews-12.html#v12-23">12:23</a> is read both ways. KJV &lsquo;the general assembly&rsquo;; NWT 1984 &lsquo;in general assembly&rsquo;; NIV &lsquo;in joyful assembly.&rsquo;',
+    ('Hebrews', 12, 22)))
+DICTIONARY_ES['panegyris'] = ('pan&#275;gyris',
+    'REUNIÓN FESTIVA &mdash; <em>pan</em>, «todo», y <em>ágyris</em>, «asamblea»: una multitud reunida para una fiesta pública. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-22">Hebreos 12:22</a>, y si va con las «miríadas de ángeles» o con «la congregación de los primogénitos» de <a href="hebrews-12.es.html#v12-23">12:23</a> se lee de las dos maneras. TNM 1987 «en asamblea general»; NVI «a una asamblea gozosa».')
+
+DICTIONARY.append(('apographo', 'apographō', 'ἀπογράφω', 'apographō',
+    'TO ENROLL, to register &mdash; <em>apo</em> and <em>graph&#333;</em>, &lsquo;to write&rsquo;: to write a name onto a list. &#9888; It stands in four verses of the New Testament: the registration under Augustus at <a href="luke-2.html#v2-1">Luke 2:1</a>, <a href="luke-2.html#v2-3">2:3</a> and <a href="luke-2.html#v2-5">2:5</a>, and &lsquo;the firstborn who are enrolled in the heavens&rsquo; at <a href="hebrews-12.html#v12-23">Hebrews 12:23</a>. Its noun <em>apograph&#275;</em> is &lsquo;the registration&rsquo; at <a href="luke-2.html#v2-2">Luke 2:2</a> and <a href="acts-5.html#v5-37">Acts 5:37</a>. KJV &lsquo;written in heaven&rsquo;; ASV and NWT 1984 &lsquo;enrolled.&rsquo;',
+    ('Luke', 2, 1)))
+DICTIONARY_ES['apographo'] = ('apográph&#333;',
+    'INSCRIBIR, registrar &mdash; <em>apó</em> y <em>gráph&#333;</em>, «escribir»: escribir un nombre en una lista. &#9888; Está en cuatro versículos del Nuevo Testamento: el registro bajo Augusto en <a href="luke-2.es.html#v2-1">Lucas 2:1</a>, <a href="luke-2.es.html#v2-3">2:3</a> y <a href="luke-2.es.html#v2-5">2:5</a>, y «los primogénitos inscritos en los cielos» en <a href="hebrews-12.es.html#v12-23">Hebreos 12:23</a>. Su sustantivo <em>apograph&#275;</em> es «el registro» en <a href="luke-2.es.html#v2-2">Lucas 2:2</a> y <a href="acts-5.es.html#v5-37">Hechos 5:37</a>. RV60 «inscritos»; RV 1909 «alistados»; TNM 1987 «matriculados».')
+
+DICTIONARY.append(('rhantismos', 'rhantismos', 'ῥαντισμός', 'rhantismos',
+    'SPRINKLING &mdash; the noun of <em>rhantiz&#333;</em>, &lsquo;to sprinkle&rsquo; (<a href="dictionary.html#rhantizo">rhantizo</a>). &#9888; It stands in two verses of the New Testament: &lsquo;sprinkling with the blood of Jesus Christ&rsquo; (<a href="1-peter-1.html#v2">1 Peter 1:2</a>), and &lsquo;the blood of sprinkling that speaks better than Abel&rsquo; (<a href="hebrews-12.html#v12-24">Hebrews 12:24</a>). The &lsquo;sprinkling of the blood&rsquo; of the Passover at <a href="hebrews-11.html#v11-28">Hebrews 11:28</a> is a different word, <em>proschysis</em>. KJV and ASV &lsquo;the blood of sprinkling&rsquo;; NIV &lsquo;the sprinkled blood.&rsquo;',
+    ('1 Peter', 1, 2)))
+DICTIONARY_ES['rhantismos'] = ('rhantismós',
+    'ROCIAMIENTO &mdash; el sustantivo de <em>rhantíz&#333;</em>, «rociar» (<a href="diccionario.html#rhantizo">rhantizo</a>). &#9888; Está en dos versículos del Nuevo Testamento: «ser rociados con la sangre de Jesucristo» (<a href="1-peter-1.es.html#v2">1 Pedro 1:2</a>), y «la sangre del rociamiento que habla mejor que Abel» (<a href="hebrews-12.es.html#v12-24">Hebreos 12:24</a>). La «aspersión de la sangre» de la Pascua en <a href="hebrews-11.es.html#v11-28">Hebreos 11:28</a> es otra palabra, <em>próschysis</em>. RV60 «la sangre rociada»; RV 1909 «la sangre del esparcimiento»; TNM 1987 «la sangre de la rociadura».')
+
+DICTIONARY.append(('asaleutos', 'asaleutos', 'ἀσάλευτος', 'asaleutos',
+    'THAT CANNOT BE SHAKEN, immovable &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>saleu&#333;</em>, &lsquo;to shake.&rsquo; &#9888; It stands in two verses of the New Testament: the bow of Paul&rsquo;s ship that &lsquo;remained immovable&rsquo; when it ran aground (<a href="acts-27.html#v27-41">Acts 27:41</a>), and &lsquo;a kingdom that cannot be shaken&rsquo; (<a href="hebrews-12.html#v12-28">Hebrews 12:28</a>), after the things &lsquo;that are shaken&rsquo; of <a href="hebrews-12.html#v12-27">12:27</a>. KJV &lsquo;which cannot be moved&rsquo;; ASV &lsquo;that cannot be shaken&rsquo;; Douay &lsquo;an immoveable kingdom.&rsquo;',
+    ('Acts', 27, 41)))
+DICTIONARY_ES['asaleutos'] = ('asáleutos',
+    'QUE NO PUEDE SER SACUDIDO, inmóvil &mdash; <em>a-</em>, «no», y <em>saleú&#333;</em>, «sacudir». &#9888; Está en dos versículos del Nuevo Testamento: la proa de la nave de Pablo que «quedó inmóvil» al encallar (<a href="acts-27.es.html#v27-41">Hechos 27:41</a>), y «un reino que no puede ser sacudido» (<a href="hebrews-12.es.html#v12-28">Hebreos 12:28</a>), después de las cosas «sacudidas» de <a href="hebrews-12.es.html#v12-27">12:27</a>. RV60 «inconmovible»; RV 1909 «inmóvil»; TNM 1987 «que no puede ser sacudido».')
+
+DICTIONARY.append(('katanalisko', 'katanaliskō', 'καταναλίσκω', 'katanaliskō',
+    'TO CONSUME utterly &mdash; <em>kata</em>, &lsquo;down, completely,&rsquo; and <em>analisk&#333;</em>, &lsquo;to use up.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-12.html#v12-29">Hebrews 12:29</a>, &lsquo;our God is a consuming fire,&rsquo; from the Greek of Deuteronomy 4:24 (checked), where the Hebrew has &lsquo;a devouring fire, a jealous God&rsquo; (<a href="deuteronomy-4.html#v4-24">Deuteronomy 4:24</a>). KJV, ASV and NWT 1984 &lsquo;a consuming fire.&rsquo;',
+    ('Hebrews', 12, 29)))
+DICTIONARY_ES['katanalisko'] = ('katanalísk&#333;',
+    'CONSUMIR por completo &mdash; <em>katá</em>, «abajo, del todo», y <em>analísk&#333;</em>, «gastar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-12.es.html#v12-29">Hebreos 12:29</a>, «nuestro Dios es fuego consumidor», del griego de Deuteronomio 4:24 (comprobado), donde el hebreo dice «fuego devorador, un Dios celoso» (<a href="deuteronomy-4.es.html#v4-24">Deuteronomio 4:24</a>). RV60, RV 1909 y TNM 1987 «fuego consumidor».')
+
+def _heb12_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb12_fix([("the same root that gives Hebrews 12:1 its image of the Christian life as a race 'set before us' (not yet on these pages)", 'the same root that gives <a href="hebrews-12.html#v12-1">Hebrews 12:1</a> its image of the Christian life as a race \'set before us\''), ('la misma raíz que da a Hebreos 12:1 su imagen de la vida cristiana como una carrera «puesta delante de nosotros» (todavía no en estas páginas)', 'la misma raíz que da a <a href="hebrews-12.es.html#v12-1">Hebreos 12:1</a> su imagen de la vida cristiana como una carrera «puesta delante de nosotros»'), ('and Hebrews 12:6 (not yet on these pages) says it of every son.', 'and <a href="hebrews-12.html#v12-6">Hebrews 12:6</a> says it of every son.'), ('y Hebreos 12:6 (todavía no en estas páginas) lo dice de todo hijo.', 'y <a href="hebrews-12.es.html#v12-6">Hebreos 12:6</a> lo dice de todo hijo.'), ('Hebrews 12:5 (not yet on these pages) and <a', '<a href="hebrews-12.html#v12-5">Hebrews 12:5</a> and <a'), ('Hebreos 12:5 (todavía no en estas páginas) y <a', '<a href="hebrews-12.es.html#v12-5">Hebreos 12:5</a> y <a'), ('and Hebrews 12:14 (not yet on these pages).', 'and <a href="hebrews-12.html#v12-14">Hebrews 12:14</a>.'), ('y Hebreos 12:14 (todavía no en estas páginas).', 'y <a href="hebrews-12.es.html#v12-14">Hebreos 12:14</a>.'), ('at Hebrews 12:28 (not yet on these pages).', 'at <a href="hebrews-12.html#v12-28">Hebrews 12:28</a>.'), ('en Hebreos 12:28 (todavía no en estas páginas).', 'en <a href="hebrews-12.es.html#v12-28">Hebreos 12:28</a>.'), ('at Hebrews 12:11; and a heart &lsquo;trained in greed&rsquo; at 2 Peter 2:14 (these two not yet on these pages).', 'at <a href="hebrews-12.html#v12-11">Hebrews 12:11</a>; and a heart &lsquo;trained in greed&rsquo; at 2 Peter 2:14 (not yet on these pages).'), ('en Hebreos 12:11; y un corazón «entrenado en la codicia» en 2 Pedro 2:14 (estos dos todavía no en estas páginas).', 'en <a href="hebrews-12.es.html#v12-11">Hebreos 12:11</a>; y un corazón «entrenado en la codicia» en 2 Pedro 2:14 (todavía no en estas páginas).'), ('at Hebrews 12:27 (not yet on these pages).', 'at <a href="hebrews-12.html#v12-27">Hebrews 12:27</a>.'), ('en Hebreos 12:27 (todavía no en estas páginas).', 'en <a href="hebrews-12.es.html#v12-27">Hebreos 12:27</a>.'), ('at Hebrews 12:24 (not yet on these pages) and <a', 'at <a href="hebrews-12.html#v12-24">Hebrews 12:24</a> and <a'), ('en Hebreos 12:24 (todavía no en estas páginas) y <a', 'en <a href="hebrews-12.es.html#v12-24">Hebreos 12:24</a> y <a'), ("perfecter of faith' (12:2). Four", 'perfecter of faith\' (<a href="hebrews-12.html#v12-2">12:2</a>). Four'), ('Hebrews 2:10</a> and 12:2), one consistent', 'Hebrews 2:10</a> and <a href="hebrews-12.html#v12-2">12:2</a>), one consistent'), ('consumador de la fe» (12:2). Cuatro', 'consumador de la fe» (<a href="hebrews-12.es.html#v12-2">12:2</a>). Cuatro'), ('Hebreos 2:10</a> y 12:2), una sola', 'Hebreos 2:10</a> y <a href="hebrews-12.es.html#v12-2">12:2</a>), una sola'), ('in Hebrews (5:7 and 12:28, the noun', 'in Hebrews (<a href="hebrews-5.html#v5-7">5:7</a> and <a href="hebrews-12.html#v12-28">12:28</a>, the noun'), ('en Hebreos (5:7 y 12:28, el sustantivo', 'en Hebreos (<a href="hebrews-5.es.html#v5-7">5:7</a> y <a href="hebrews-12.es.html#v12-28">12:28</a>, el sustantivo'), ('9:15</a> and 12:24, the mediator of a better and a new covenant (the last not yet on these pages).', '9:15</a> and <a href="hebrews-12.html#v12-24">12:24</a>, the mediator of a better and a new covenant.'), ('9:15</a> y 12:24, el mediador de un pacto mejor y nuevo (el último todavía no en estas páginas).', '9:15</a> y <a href="hebrews-12.es.html#v12-24">12:24</a>, el mediador de un pacto mejor y nuevo.'), ('9:15</a> and 12:24 (the last not yet on these pages).', '9:15</a> and <a href="hebrews-12.html#v12-24">12:24</a>.'), ('9:15</a> y 12:24 (el último todavía no en estas páginas).', '9:15</a> y <a href="hebrews-12.es.html#v12-24">12:24</a>.'), ('(Hebrews 12:16)', '(<a href="hebrews-12.html#v12-16">Hebrews 12:16</a>)'), ('Hebrews 12:17 makes him the man', '<a href="hebrews-12.html#v12-17">Hebrews 12:17</a> makes him the man'), ("His blood 'cries out from the ground' (4:10).", 'His blood \'cries out from the ground\' (4:10). <a href="hebrews-12.html#v12-24">Hebrews 12:24</a> sets beside it &lsquo;the blood of sprinkling that speaks better than Abel,&rsquo; after <a href="hebrews-11.html#v11-4">Hebrews 11:4</a> had said that, though he died, &lsquo;he is still speaking.&rsquo;'), ("recogiendo el 'la sangre de tu hermano clama a mí desde la tierra' de Génesis 4:10.", 'recogiendo el \'la sangre de tu hermano clama a mí desde la tierra\' de Génesis 4:10; y <a href="hebrews-12.es.html#v12-24">Hebreos 12:24</a> pone a su lado «la sangre del rociamiento que habla mejor que Abel».'), ('the Greek Old Testament &lsquo;for Zion&rsquo;s sake.&rsquo;', 'the Greek Old Testament &lsquo;for Zion&rsquo;s sake.&rsquo; <a href="hebrews-12.html#v12-22">Hebrews 12:22</a> sets &lsquo;Mount Zion &hellip; the heavenly Jerusalem&rsquo; against the mountain of Sinai that &lsquo;can be touched.&rsquo;'), ('el Antiguo Testamento griego «por causa de Sión».', 'el Antiguo Testamento griego «por causa de Sión». <a href="hebrews-12.es.html#v12-22">Hebreos 12:22</a> opone «el monte Sión &hellip; la Jerusalén celestial» al monte del Sinaí «que se puede palpar».'), ('and the angel who spoke to Moses &lsquo;on Mount Sinai&rsquo; (<a href="acts-7.html#v7-38">Acts 7:38</a>).', 'and the angel who spoke to Moses &lsquo;on Mount Sinai&rsquo; (<a href="acts-7.html#v7-38">Acts 7:38</a>). <a href="hebrews-12.html#v12-18">Hebrews 12:18&ndash;21</a> recalls the mountain without naming it: fire, thick darkness, a trumpet, a voice, and Moses &lsquo;terrified and trembling.&rsquo;'), ('y al ángel que habló a Moisés «en el monte Sinaí» (<a href="acts-7.es.html#v7-38">Hechos 7:38</a>).', 'y al ángel que habló a Moisés «en el monte Sinaí» (<a href="acts-7.es.html#v7-38">Hechos 7:38</a>). <a href="hebrews-12.es.html#v12-18">Hebreos 12:18&ndash;21</a> recuerda el monte sin nombrarlo: fuego, densa oscuridad, una trompeta, una voz, y Moisés «aterrado y temblando».'), ('y el texto la plantea así al hacer que Moisés diga «tu hermano Israel».', 'y el texto la plantea así al hacer que Moisés diga «tu hermano Israel». <a href="hebrews-12.es.html#v12-16">Hebreos 12:16</a> lo pone como el «profano» que vendió su primogenitura por una sola comida, y <a href="hebrews-12.es.html#v12-17">12:17</a> como el que «no halló lugar para el arrepentimiento, aunque la buscó con lágrimas».')])
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in ("abel", "zion", "mount-sinai", "esau"):
+        _r = {"abel": ("Hebrews", 12, 24), "zion": ("Hebrews", 12, 22), "mount-sinai": ("Hebrews", 12, 18), "esau": ("Hebrews", 12, 16)}[_e["slug"]]
+        if _r not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Hebrews", 11, 39), ("Hebrews", 12, 1), "witnesses"),
+    (("Hebrews", 10, 36), ("Hebrews", 12, 1), "endurance"),
+    (("2 Timothy", 4, 7), ("Hebrews", 12, 1), "the contest"),
+    (("Hebrews", 2, 10), ("Hebrews", 12, 2), "Author"),
+    (("Hebrews", 1, 3), ("Hebrews", 12, 2), "sat down at the right hand"),
+    (("Hebrews", 6, 16), ("Hebrews", 12, 3), "antilogia"),
+    (("Acts", 17, 2), ("Hebrews", 12, 5), "dialegomai"),
+    (("John", 19, 1), ("Hebrews", 12, 6), "scourge"),
+    (("Hebrews", 3, 14), ("Hebrews", 12, 8), "companions"),
+    (("Numbers", 16, 22), ("Hebrews", 12, 9), "the God of the spirits of all flesh"),
+    (("Hebrews", 5, 14), ("Hebrews", 12, 11), "trained"),
+    (("Luke", 13, 13), ("Hebrews", 12, 12), "straightened up"),
+    (("Romans", 6, 19), ("Hebrews", 12, 14), "sanctification"),
+    (("Deuteronomy", 29, 17), ("Hebrews", 12, 15), "a root bearing gall and wormwood"),
+    (("Acts", 8, 23), ("Hebrews", 12, 15), "gall of bitterness"),
+    (("Genesis", 25, 34), ("Hebrews", 12, 16), "Esau despised his birthright"),
+    (("Hebrews", 11, 20), ("Hebrews", 12, 16), "Esau"),
+    (("Genesis", 27, 34), ("Hebrews", 12, 17), "Esau's bitter cry"),
+    (("Genesis", 27, 38), ("Hebrews", 12, 17), "Esau wept"),
+    (("Deuteronomy", 4, 11), ("Hebrews", 12, 18), "fire and darkness at the mountain"),
+    (("Exodus", 19, 16), ("Hebrews", 12, 19), "the trumpet"),
+    (("Deuteronomy", 5, 18), ("Hebrews", 12, 19), "he added nothing more"),
+    (("Exodus", 19, 13), ("Hebrews", 12, 20), "beast or man stoned"),
+    (("Deuteronomy", 9, 19), ("Hebrews", 12, 21), "I am terrified"),
+    (("Acts", 7, 32), ("Hebrews", 12, 21), "Moses trembling"),
+    (("Galatians", 4, 26), ("Hebrews", 12, 22), "the Jerusalem above"),
+    (("Hebrews", 11, 16), ("Hebrews", 12, 22), "the city"),
+    (("Luke", 2, 1), ("Hebrews", 12, 23), "enrolled"),
+    (("Hebrews", 11, 40), ("Hebrews", 12, 23), "made complete"),
+    (("Hebrews", 9, 15), ("Hebrews", 12, 24), "mediator of a new covenant"),
+    (("1 Peter", 1, 2), ("Hebrews", 12, 24), "sprinkling"),
+    (("Hebrews", 11, 4), ("Hebrews", 12, 24), "Abel still speaking"),
+    (("Genesis", 4, 10), ("Hebrews", 12, 24), "the voice of Abel's blood"),
+    (("Hebrews", 8, 5), ("Hebrews", 12, 25), "warned"),
+    (("Hebrews", 2, 3), ("Hebrews", 12, 25), "escape"),
+    (("Acts", 4, 31), ("Hebrews", 12, 26), "shaken"),
+    (("Hebrews", 7, 12), ("Hebrews", 12, 27), "metathesis"),
+    (("Acts", 27, 41), ("Hebrews", 12, 28), "immovable"),
+    (("Hebrews", 5, 7), ("Hebrews", 12, 28), "reverence"),
+    (("Deuteronomy", 4, 24), ("Hebrews", 12, 29), "a consuming fire"),
+])
+
+CHAPTER_ART["heb12"] = [dict(
+    file="gerome-moses-on-mount-sinai.jpg",
+    title="Moses on Mount Sinai",   title_es="Moisés en el monte Sinaí",
+    artist="Jean-Léon Gérôme",
+    year="1895&ndash;1900",
+    location="Oil painting; the Wikimedia Commons record read here does not name where it hangs",
+    location_es="Óleo; el registro de Wikimedia Commons consultado aquí no indica dónde se encuentra",
+    alt="A dark mountain wrapped in smoke and cloud, with a small figure on its summit lit by a red-gold blaze and two shafts of light, above a plain crowded with people and flocks.",
+    note="&#9888; Gérôme paints the mountain the way <a href=\"hebrews-12.html#v12-18\">verse 18</a> lists it: fire, thick darkness and gloom, with the people kept back "
+         "on the plain below, where &lsquo;if even a beast touches the mountain, it shall be stoned&rsquo; (<a href=\"hebrews-12.html#v12-20\">verse 20</a>; "
+         "<a href=\"exodus-19.html#v13\">Exodus 19:13</a>).",
+    note_es="&#9888; Gérôme pinta el monte como lo enumera el <a href=\"hebrews-12.es.html#v12-18\">versículo 18</a>: fuego, densa oscuridad y tinieblas, con el pueblo "
+            "retenido en la llanura de abajo, donde «si aun una bestia toca el monte, será apedreada» (<a href=\"hebrews-12.es.html#v12-20\">versículo 20</a>; "
+            "<a href=\"exodus-19.es.html#v13\">Éxodo 19:13</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:G%C3%A9r%C3%B4me,_Jean-L%C3%A9on_-_Moses_on_Mount_Sinai_Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-1895-1900.jpg",
+)]
+
+CHRON_CHAPTERS["heb12"] = dict(era='apostolic',
+    when="A cloud of witnesses and a race run with endurance, looking to the Author and Completer of faith; Proverbs 3 on a father's discipline; Esau and the birthright sold for a single meal; Sinai and Zion set side by side; Haggai's 'yet once more I will shake'; and 'our God is a consuming fire.'",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
