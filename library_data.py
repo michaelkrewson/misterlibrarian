@@ -42907,3 +42907,172 @@ CHRON_CHAPTERS["heb13"] = dict(era='apostolic',
     when="The letter's close: brotherly love and hospitality, 'some have entertained angels'; prisoners, marriage and money; 'Jesus Christ the same yesterday and today, and forever'; an altar and a camp, a sacrifice of praise; leaders who keep watch; the God of peace and the great shepherd; Timothy released, and 'those from Italy.'",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- James 2 -----------------------------------------------------------
+DICTIONARY.append(('synagoge', 'synagōgē', 'συναγωγή', 'synagōgē',
+    'SYNAGOGUE, gathering &mdash; <em>syn</em>, &lsquo;together,&rsquo; and <em>ag&#333;</em>, &lsquo;to bring&rsquo;: a bringing together, then the assembly and the building where it met. &#9888; In the Gospels and Acts it is the Jewish synagogue, as at Nazareth (<a href="luke-4.html#v4-16">Luke 4:16</a>). At <a href="james-2.html#v2-2">James 2:2</a> James uses it for the gathering of his own readers, &lsquo;if a man &hellip; comes into your synagogue,&rsquo; and later calls the community an <em>ekkl&#275;sia</em>, &lsquo;congregation,&rsquo; at 5:14 (not yet on these pages) (<a href="dictionary.html#ekklesia">ekklesia</a>). KJV at James 2:2 &lsquo;your assembly&rsquo;; ASV &lsquo;your synagogue&rsquo;; NWT 1984 &lsquo;a gathering of YOU.&rsquo;',
+    ('Luke', 4, 16)))
+DICTIONARY_ES['synagoge'] = ('synagōg&#275;',
+    'SINAGOGA, reunión &mdash; <em>syn</em>, «juntos», y <em>ág&#333;</em>, «llevar»: un reunir, luego la asamblea y el edificio donde se reunía. &#9888; En los Evangelios y Hechos es la sinagoga judía, como en Nazaret (<a href="luke-4.es.html#v4-16">Lucas 4:16</a>). En <a href="james-2.es.html#v2-2">Santiago 2:2</a> Santiago la usa para la reunión de sus propios lectores, «si en su sinagoga entra un hombre», y más adelante llama a la comunidad <em>ekkl&#275;sía</em>, «congregación», en 5:14 (todavía no en estas páginas) (<a href="diccionario.html#ekklesia">ekklesia</a>). RV60 y RV 1909 en Santiago 2:2 «vuestra congregación»; TNM 1987 «una reunión de ustedes».')
+
+DICTIONARY.append(('chrysodaktylios', 'chrysodaktylios', 'χρυσοδακτύλιος', 'chrysodaktylios',
+    'WITH GOLD RINGS ON HIS FINGERS &mdash; <em>chrysos</em>, &lsquo;gold,&rsquo; and <em>daktylios</em>, &lsquo;ring,&rsquo; from <em>daktylos</em>, &lsquo;finger&rsquo;: gold-fingered. &#9888; It stands in one verse of the New Testament, <a href="james-2.html#v2-2">James 2:2</a>, the man who walks into the gathering &lsquo;with gold rings on his fingers and in bright clothing.&rsquo; KJV and ASV &lsquo;a man with a gold ring&rsquo;; NWT 1984 &lsquo;a man with gold rings on his fingers.&rsquo;',
+    ('James', 2, 2)))
+DICTIONARY_ES['chrysodaktylios'] = ('chrysodaktýlios',
+    'CON ANILLOS DE ORO EN LOS DEDOS &mdash; <em>chrysós</em>, «oro», y <em>daktýlios</em>, «anillo», de <em>dáktylos</em>, «dedo»: de dedos de oro. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-2.es.html#v2-2">Santiago 2:2</a>, el hombre que entra en la reunión «con anillos de oro en los dedos y con ropa resplandeciente». RV60 «un hombre con anillo de oro»; TNM 1987 «un varón con anillos de oro en los dedos».')
+
+DICTIONARY.append(('lampros', 'lampros', 'λαμπρός', 'lampros',
+    'BRIGHT, shining, splendid &mdash; from <em>lamp&#333;</em>, &lsquo;to shine.&rsquo; &#9888; It is the &lsquo;bright robe&rsquo; Herod puts on Jesus (<a href="luke-23.html#v23-11">Luke 23:11</a>), the man &lsquo;in bright clothing&rsquo; who stands before Cornelius (<a href="acts-10.html#v10-30">Acts 10:30</a>), and the &lsquo;bright clothing&rsquo; of the rich man at <a href="james-2.html#v2-2">James 2:2</a> and <a href="james-2.html#v2-3">2:3</a>. KJV at James 2:2 &lsquo;goodly apparel&rsquo;; ASV &lsquo;fine clothing&rsquo;; NWT 1984 &lsquo;splendid clothing.&rsquo;',
+    ('Luke', 23, 11)))
+DICTIONARY_ES['lampros'] = ('lamprós',
+    'RESPLANDECIENTE, brillante, espléndido &mdash; de <em>lámp&#333;</em>, «brillar». &#9888; Es la «vestidura resplandeciente» que Herodes pone a Jesús (<a href="luke-23.es.html#v23-11">Lucas 23:11</a>), el hombre «con ropa resplandeciente» que se presenta ante Cornelio (<a href="acts-10.es.html#v10-30">Hechos 10:30</a>), y la «ropa resplandeciente» del rico en <a href="james-2.es.html#v2-2">Santiago 2:2</a> y <a href="james-2.es.html#v2-3">2:3</a>. RV60 «ropa espléndida»; TNM 1987 «ropa espléndida».')
+
+DICTIONARY.append(('epiblepo', 'epiblepō', 'ἐπιβλέπω', 'epiblepō',
+    'TO LOOK UPON, to look with favor &mdash; <em>epi</em>, &lsquo;upon,&rsquo; and <em>blep&#333;</em>, &lsquo;to look.&rsquo; &#9888; Mary says God &lsquo;has looked on the low estate of his bondslave&rsquo; (<a href="luke-1.html#v48">Luke 1:48</a>); a father begs Jesus to &lsquo;look at my son&rsquo; (<a href="luke-9.html#v9-38">Luke 9:38</a>); and the readers of <a href="james-2.html#v2-3">James 2:3</a> &lsquo;look with favor on the one wearing the bright clothing.&rsquo; KJV at James 2:3 &lsquo;have respect to him&rsquo;; ASV &lsquo;have regard to him&rsquo;; NWT 1984 &lsquo;look with favor upon.&rsquo;',
+    ('Luke', 1, 48)))
+DICTIONARY_ES['epiblepo'] = ('epiblép&#333;',
+    'MIRAR SOBRE, mirar con favor &mdash; <em>epí</em>, «sobre», y <em>blép&#333;</em>, «mirar». &#9888; María dice que Dios «miró la humilde condición de su esclava» (<a href="luke-1.es.html#v48">Lucas 1:48</a>); un padre ruega a Jesús que mire a su hijo (<a href="luke-9.es.html#v9-38">Lucas 9:38</a>); y los lectores de <a href="james-2.es.html#v2-3">Santiago 2:3</a> «miran con favor al que lleva la ropa resplandeciente». RV60 en Santiago 2:3 «miráis con agrado»; TNM 1987 «miran con favor».')
+
+DICTIONARY.append(('basilikos', 'basilikos', 'βασιλικός', 'basilikos',
+    'ROYAL, belonging to a king &mdash; from <em>basileus</em>, &lsquo;king.&rsquo; &#9888; It stands in five verses of the New Testament: the &lsquo;royal official&rsquo; of Capernaum (<a href="john-4.html#v4-46">John 4:46</a> and <a href="john-4.html#v4-49">4:49</a>); the king&rsquo;s territory at <a href="acts-12.html#v12-20">Acts 12:20</a> and Herod&rsquo;s &lsquo;royal apparel&rsquo; at <a href="acts-12.html#v12-21">12:21</a>; and &lsquo;the royal law&rsquo; of <a href="james-2.html#v2-8">James 2:8</a>, &lsquo;You shall love your neighbor as yourself,&rsquo; read as the king&rsquo;s law, the law of the kingdom of 2:5, or the law that rules the rest. KJV and ASV &lsquo;the royal law&rsquo;; NWT 1984 &lsquo;the kingly law.&rsquo;',
+    ('John', 4, 46)))
+DICTIONARY_ES['basilikos'] = ('basilikós',
+    'REAL, propio de un rey &mdash; de <em>basiléus</em>, «rey». &#9888; Está en cinco versículos del Nuevo Testamento: el «funcionario real» de Capernaúm (<a href="john-4.es.html#v4-46">Juan 4:46</a> y <a href="john-4.es.html#v4-49">4:49</a>); el territorio del rey en <a href="acts-12.es.html#v12-20">Hechos 12:20</a> y el «ropaje real» de Herodes en <a href="acts-12.es.html#v12-21">12:21</a>; y «la ley real» de <a href="james-2.es.html#v2-8">Santiago 2:8</a>, «Amarás a tu prójimo como a ti mismo», leída como la ley del rey, la ley del reino de 2:5, o la ley que gobierna a las demás. RV60 y TNM 1987 «la ley real»; NVI «la ley suprema».')
+
+DICTIONARY.append(('parabates', 'parabatēs', 'παραβάτης', 'parabatēs',
+    'TRANSGRESSOR &mdash; one who steps across a line, from <em>parabain&#333;</em>, &lsquo;to step aside.&rsquo; &#9888; It stands in five verses of the New Testament: &lsquo;if you are a transgressor of the law&rsquo; (<a href="romans-2.html#v2-25">Romans 2:25</a>) and <a href="romans-2.html#v2-27">Romans 2:27</a>; &lsquo;I demonstrate that I am a transgressor&rsquo; (<a href="galatians-2.html#v18">Galatians 2:18</a>); and twice in <a href="james-2.html#v2-9">James 2:9</a> and <a href="james-2.html#v2-11">2:11</a>, &lsquo;you have become a transgressor of law.&rsquo; Its noun <em>parabasis</em> is &lsquo;transgression&rsquo; (<a href="dictionary.html#parabasis">parabasis</a>). KJV, ASV and NWT 1984 &lsquo;transgressors.&rsquo;',
+    ('Romans', 2, 25)))
+DICTIONARY_ES['parabates'] = ('parabát&#275;s',
+    'TRANSGRESOR &mdash; el que cruza una línea, de <em>parabaín&#333;</em>, «apartarse». &#9888; Está en cinco versículos del Nuevo Testamento: «si eres transgresor de la ley» (<a href="romans-2.es.html#v2-25">Romanos 2:25</a>) y <a href="romans-2.es.html#v2-27">Romanos 2:27</a>; «demuestro que soy transgresor» (<a href="galatians-2.es.html#v18">Gálatas 2:18</a>); y dos veces en <a href="james-2.es.html#v2-9">Santiago 2:9</a> y <a href="james-2.es.html#v2-11">2:11</a>, «te has hecho transgresor de ley». Su sustantivo <em>parábasis</em> es «transgresión» (<a href="diccionario.html#parabasis">parabasis</a>). RV60 y TNM 1987 «transgresores».')
+
+DICTIONARY.append(('aneleos', 'aneleos', 'ἀνέλεος', 'aneleos',
+    'MERCILESS, without mercy &mdash; <em>an-</em>, &lsquo;not,&rsquo; and <em>eleos</em>, &lsquo;mercy.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-2.html#v2-13">James 2:13</a>, &lsquo;judgment is merciless to the one who has not shown mercy; mercy boasts over judgment.&rsquo; The Textus Receptus spells it <em>anile&#333;s</em> (checked). KJV &lsquo;judgment without mercy&rsquo;; NIV &lsquo;judgment without mercy will be shown.&rsquo;',
+    ('James', 2, 13)))
+DICTIONARY_ES['aneleos'] = ('anéleos',
+    'SIN MISERICORDIA &mdash; <em>an-</em>, «no», y <em>éleos</em>, «misericordia». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-2.es.html#v2-13">Santiago 2:13</a>, «el juicio es sin misericordia para el que no ha hecho misericordia; la misericordia se gloría sobre el juicio». El Textus Receptus lo escribe <em>anile&#333;s</em> (comprobado). RV60 «juicio sin misericordia».')
+
+DICTIONARY.append(('katakauchaomai', 'katakauchaomai', 'κατακαυχάομαι', 'katakauchaomai',
+    'TO BOAST OVER, to exult against &mdash; <em>kata</em>, &lsquo;down on,&rsquo; and <em>kauchaomai</em>, &lsquo;to boast.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;do not boast over the branches&rsquo; (<a href="romans-11.html#v11-18">Romans 11:18</a>); &lsquo;mercy boasts over judgment&rsquo; (<a href="james-2.html#v2-13">James 2:13</a>); and &lsquo;do not boast and lie against the truth&rsquo; at James 3:14 (not yet on these pages). KJV at James 2:13 &lsquo;mercy rejoiceth against judgment&rsquo;; ASV &lsquo;mercy glorieth against judgment&rsquo;; NIV &lsquo;Mercy triumphs over judgment.&rsquo;',
+    ('Romans', 11, 18)))
+DICTIONARY_ES['katakauchaomai'] = ('katakaucháomai',
+    'GLORIARSE SOBRE, jactarse contra &mdash; <em>katá</em>, «sobre», y <em>kaucháomai</em>, «gloriarse». &#9888; Está en tres versículos del Nuevo Testamento: «no te gloríes sobre las ramas» (<a href="romans-11.es.html#v11-18">Romanos 11:18</a>); «la misericordia se gloría sobre el juicio» (<a href="james-2.es.html#v2-13">Santiago 2:13</a>); y Santiago 3:14 (todavía no en estas páginas). RV 1909 en Santiago 2:13 «la misericordia se gloría contra el juicio»; RV60 «la misericordia triunfa sobre el juicio».')
+
+DICTIONARY.append(('ophelos', 'ophelos', 'ὄφελος', 'ophelos',
+    'PROFIT, use, good &mdash; the noun of <em>ophelle&#333;</em>, &lsquo;to owe&rsquo; and so &lsquo;to be of use.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;what does it profit me?&rsquo; (<a href="1-corinthians-15.html#v32">1 Corinthians 15:32</a>), and twice in <a href="james-2.html#v2-14">James 2:14</a> and <a href="james-2.html#v2-16">2:16</a>, &lsquo;What good is it?&rsquo;, the question that frames the paragraph on faith without works. KJV &lsquo;What doth it profit&rsquo;; NWT 1984 &lsquo;Of what benefit is it&rsquo;; NIV &lsquo;What good is it.&rsquo;',
+    ('1 Corinthians', 15, 32)))
+DICTIONARY_ES['ophelos'] = ('óphelos',
+    'PROVECHO, utilidad &mdash; el sustantivo de <em>ophélle&#333;</em>, «deber», y de ahí «servir de algo». &#9888; Está en tres versículos del Nuevo Testamento: «¿de qué me sirve?» (<a href="1-corinthians-15.es.html#v32">1 Corintios 15:32</a>), y dos veces en <a href="james-2.es.html#v2-14">Santiago 2:14</a> y <a href="james-2.es.html#v2-16">2:16</a>, «¿De qué sirve?», la pregunta que enmarca el párrafo de la fe sin obras. RV60 «¿de qué aprovechará?»; TNM 1987 «¿De qué provecho es?».')
+
+DICTIONARY.append(('ephemeros', 'ephēmeros', 'ἐφήμερος', 'ephēmeros',
+    'DAILY, for the day &mdash; <em>epi</em>, &lsquo;for,&rsquo; and <em>h&#275;mera</em>, &lsquo;day.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-2.html#v2-15">James 2:15</a>, &lsquo;lacking daily food&rsquo;; its relative <em>eph&#275;meria</em> is the priestly &lsquo;division&rsquo; of <a href="luke-1.html#v5">Luke 1:5</a>. English &lsquo;ephemeral&rsquo; comes from it. KJV and ASV &lsquo;daily food&rsquo;; NWT 1984 &lsquo;the food sufficient for the day.&rsquo;',
+    ('James', 2, 15)))
+DICTIONARY_ES['ephemeros'] = ('eph&#275;meros',
+    'DE CADA DÍA, para el día &mdash; <em>epí</em>, «para», y <em>h&#275;méra</em>, «día». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-2.es.html#v2-15">Santiago 2:15</a>, «les falta el alimento de cada día»; su pariente <em>eph&#275;mería</em> es la «clase» sacerdotal de <a href="luke-1.es.html#v5">Lucas 1:5</a>. De ella viene «efímero». RV60 «el mantenimiento de cada día»; TNM 1987 «el alimento suficiente para el día».')
+
+DICTIONARY.append(('epitedeios', 'epitēdeios', 'ἐπιτήδειος', 'epitēdeios',
+    'NEEDFUL, what is necessary &mdash; what is suited to a purpose. &#9888; It stands in one verse of the New Testament, <a href="james-2.html#v2-16">James 2:16</a>, &lsquo;you do not give them what the body needs.&rsquo; KJV &lsquo;those things which are needful to the body&rsquo;; NWT 1984 &lsquo;the necessities for [their] body.&rsquo;',
+    ('James', 2, 16)))
+DICTIONARY_ES['epitedeios'] = ('epit&#275;deios',
+    'LO NECESARIO &mdash; lo que sirve para un fin. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-2.es.html#v2-16">Santiago 2:16</a>, «no les dan lo necesario para el cuerpo». RV60 «las cosas que son necesarias para el cuerpo»; NVI «lo necesario para el cuerpo».')
+
+DICTIONARY.append(('thermaino', 'thermainō', 'θερμαίνω', 'thermainō',
+    'TO WARM; in the middle, to warm oneself &mdash; from <em>therm&#275;</em>, &lsquo;heat.&rsquo; &#9888; It stands in five verses of the New Testament: four are Peter warming himself at the fire in the high priest&rsquo;s courtyard (<a href="mark-14.html#v14-54">Mark 14:54</a>, <a href="mark-14.html#v14-67">14:67</a>, <a href="john-18.html#v18-18">John 18:18</a>, <a href="john-18.html#v18-25">18:25</a>), and the fifth is the empty blessing &lsquo;Go in peace, keep warm and eat your fill&rsquo; (<a href="james-2.html#v2-16">James 2:16</a>). KJV &lsquo;be ye warmed and filled&rsquo;; NWT 1984 &lsquo;keep warm and well fed.&rsquo;',
+    ('Mark', 14, 54)))
+DICTIONARY_ES['thermaino'] = ('thermaín&#333;',
+    'CALENTAR; en voz media, calentarse &mdash; de <em>therm&#275;</em>, «calor». &#9888; Está en cinco versículos del Nuevo Testamento: cuatro son Pedro calentándose junto al fuego en el patio del sumo sacerdote (<a href="mark-14.es.html#v14-54">Marcos 14:54</a>, <a href="mark-14.es.html#v14-67">14:67</a>, <a href="john-18.es.html#v18-18">Juan 18:18</a>, <a href="john-18.es.html#v18-25">18:25</a>), y el quinto es la bendición vacía «Vayan en paz, abríguense y sáciense» (<a href="james-2.es.html#v2-16">Santiago 2:16</a>). RV60 «calentaos y saciaos».')
+
+DICTIONARY.append(('phrisso', 'phrissō', 'φρίσσω', 'phrissō',
+    'TO SHUDDER, to bristle with fear &mdash; of hair standing on end. &#9888; It stands in one verse of the New Testament, <a href="james-2.html#v2-19">James 2:19</a>, &lsquo;Even the demons believe &mdash; and shudder.&rsquo; KJV &lsquo;the devils also believe, and tremble&rsquo;; ASV &lsquo;the demons also believe, and shudder&rsquo;; NWT 1984 &lsquo;the demons believe and shudder.&rsquo;',
+    ('James', 2, 19)))
+DICTIONARY_ES['phrisso'] = ('phríss&#333;',
+    'ESTREMECERSE, erizarse de miedo &mdash; como el pelo que se pone de punta. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-2.es.html#v2-19">Santiago 2:19</a>, «También los demonios creen, y se estremecen». RV60 «también los demonios creen, y tiemblan»; TNM 1987 «los demonios creen y se estremecen».')
+
+DICTIONARY.append(('argos', 'argos', 'ἀργός', 'argos',
+    'IDLE, workless, useless &mdash; contracted from <em>a-ergos</em>, &lsquo;without work&rsquo; (<em>ergon</em>). &#9888; It is the &lsquo;idle word&rsquo; that will be accounted for (<a href="matthew-12.html#v12-36">Matthew 12:36</a>) and the workers standing &lsquo;idle&rsquo; in the marketplace (<a href="matthew-20.html#v20-3">Matthew 20:3</a>); at <a href="james-2.html#v2-20">James 2:20</a> &lsquo;faith apart from the works is idle,&rsquo; a play on &lsquo;works,&rsquo; where Robinson&ndash;Pierpont reads &lsquo;dead.&rsquo; KJV at James 2:20 &lsquo;dead&rsquo;; ASV &lsquo;barren&rsquo;; NWT 1984 &lsquo;inactive&rsquo;; NIV &lsquo;useless.&rsquo;',
+    ('Matthew', 12, 36)))
+DICTIONARY_ES['argos'] = ('argós',
+    'OCIOSO, sin obra, inútil &mdash; contracción de <em>a-ergós</em>, «sin obra» (<em>érgon</em>). &#9888; Es la «palabra ociosa» de la que se dará cuenta (<a href="matthew-12.es.html#v12-36">Mateo 12:36</a>) y los que estaban «en la plaza sin trabajo» (<a href="matthew-20.es.html#v20-3">Mateo 20:3</a>); en <a href="james-2.es.html#v2-20">Santiago 2:20</a> «la fe sin las obras es ociosa», un juego con «obras», donde Robinson&ndash;Pierpont lee «muerta». RV60 «muerta»; TNM 1987 «inactiva»; NVI «estéril».')
+
+DICTIONARY.append(('hypodechomai', 'hypodechomai', 'ὑποδέχομαι', 'hypodechomai',
+    'TO RECEIVE AS A GUEST, to welcome under one&rsquo;s roof &mdash; <em>hypo</em>, &lsquo;under,&rsquo; and <em>dechomai</em>, &lsquo;to receive.&rsquo; &#9888; It stands in three verses of the New Testament: Martha &lsquo;welcomed him&rsquo; (<a href="luke-10.html#v10-38">Luke 10:38</a>); Zacchaeus &lsquo;received him joyfully&rsquo; (<a href="luke-19.html#v19-6">Luke 19:6</a>); and Rahab, who &lsquo;received the messengers&rsquo; (<a href="james-2.html#v2-25">James 2:25</a>). KJV and ASV at James 2:25 &lsquo;received the messengers&rsquo;; NWT 1984 &lsquo;received the messengers hospitably.&rsquo;',
+    ('Luke', 10, 38)))
+DICTIONARY_ES['hypodechomai'] = ('hypodéchomai',
+    'RECIBIR COMO HUÉSPED, acoger bajo el propio techo &mdash; <em>hypó</em>, «debajo», y <em>déchomai</em>, «recibir». &#9888; Está en tres versículos del Nuevo Testamento: Marta «lo recibió» (<a href="luke-10.es.html#v10-38">Lucas 10:38</a>); Zaqueo «lo recibió con alegría» (<a href="luke-19.es.html#v19-6">Lucas 19:6</a>); y Rahab, que «recibió a los mensajeros» (<a href="james-2.es.html#v2-25">Santiago 2:25</a>). RV60 «cuando recibió a los mensajeros»; TNM 1987 «hubo recibido hospitalariamente a los mensajeros».')
+
+def _jas2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jas2_fix([('and James 2:1, where it becomes a direct command to the church, not just a description of God.', 'and <a href="james-2.html#v2-1">James 2:1</a>, where it is turned on the congregation itself, as a question or a command (the Greek can be read either way), not just a description of God.'), ('y Santiago 2:1, donde se convierte en un mandato directo a la iglesia, no solo en una descripción de Dios.', 'y <a href="james-2.es.html#v2-1">Santiago 2:1</a>, donde se vuelve hacia la congregación misma, como pregunta o como mandato (el griego admite las dos lecturas), no solo como descripción de Dios.'), ('Colossians 3:25</a> and James 2:1; the verb <em>prosopolēmpteō</em> at James 2:9; and the adverb', 'Colossians 3:25</a> and <a href="james-2.html#v2-1">James 2:1</a>; the verb <em>prosopolēmpteō</em> at <a href="james-2.html#v2-9">James 2:9</a>; and the adverb'), ('1 Peter 1:17</a> (James 2:1 and 2:9 not yet on these pages).', '1 Peter 1:17</a>.'), ('Colosenses 3:25</a> y Santiago 2:1; el verbo <em>prosopolēmpteō</em> en Santiago 2:9; y el adverbio', 'Colosenses 3:25</a> y <a href="james-2.es.html#v2-1">Santiago 2:1</a>; el verbo <em>prosopolēmpteō</em> en <a href="james-2.es.html#v2-9">Santiago 2:9</a>; y el adverbio'), ('1 Pedro 1:17</a> (Santiago 2:1 y 2:9 todavía no en estas páginas).', '1 Pedro 1:17</a>.'), ('and James 2:6, said of the rich (not yet on these pages).', 'and <a href="james-2.html#v2-6">James 2:6</a>, said of the rich.'), ('y Santiago 2:6, dicho de los ricos (todavía no en estas páginas).', 'y <a href="james-2.es.html#v2-6">Santiago 2:6</a>, dicho de los ricos.'), ('James 2:10 (&lsquo;whoever keeps the whole law', '<a href="james-2.html#v2-10">James 2:10</a> (&lsquo;whoever keeps the whole law'), ('Santiago 2:10 («el que guarda toda la ley', '<a href="james-2.es.html#v2-10">Santiago 2:10</a> («el que guarda toda la ley'), ('and James 2:3 has a seat by someone&rsquo;s footstool (not yet on these pages).', 'and <a href="james-2.html#v2-3">James 2:3</a> has a seat below someone&rsquo;s footstool.'), ('y Santiago 2:3 tiene un asiento junto al estrado de alguien (todavía no en estas páginas).', 'y <a href="james-2.es.html#v2-3">Santiago 2:3</a> tiene un asiento bajo el estrado de alguien.'), ('(Hebrews 11:31, James 2:25)', '(<a href="hebrews-11.html#v11-31">Hebrews 11:31</a>, <a href="james-2.html#v2-25">James 2:25</a>)'), ('(Hebreos 11:31, Santiago 2:25)', '(<a href="hebrews-11.es.html#v11-31">Hebreos 11:31</a>, <a href="james-2.es.html#v2-25">Santiago 2:25</a>)'), ('(James 2:25) — cited by the letter that argues faith and works from opposite directions.', '(<a href="james-2.html#v2-25">James 2:25</a>) — the same act told &lsquo;by faith&rsquo; in one letter and &lsquo;by works&rsquo; in the other.'), ('y Santiago 2:25 la usa como ejemplo de fe con obras.', 'y <a href="james-2.es.html#v2-25">Santiago 2:25</a> cuenta el mismo acto como justificada «por obras».'), ('The chapter&rsquo;s speech begins with him, not with Moses.', 'The chapter&rsquo;s speech begins with him, not with Moses. <a href="james-2.html#v2-21">James 2:21&ndash;23</a> cites him as &lsquo;justified by works when he offered up Isaac,&rsquo; quotes the same Genesis 15:6 that Paul quotes at <a href="romans-4.html#v4-3">Romans 4:3</a>, and calls him &lsquo;a friend of God.&rsquo;'), ('El discurso del capítulo empieza con él, no con Moisés.', 'El discurso del capítulo empieza con él, no con Moisés. <a href="james-2.es.html#v2-21">Santiago 2:21&ndash;23</a> lo presenta «justificado por obras cuando ofreció a su hijo Isaac», cita el mismo Génesis 15:6 que Pablo cita en <a href="romans-4.es.html#v4-3">Romanos 4:3</a>, y lo llama «amigo de Dios».')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"abraham": [("James", 2, 21), ("James", 2, 23)], "rahab": [("James", 2, 25)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Romans", 2, 11), ("James", 2, 1), "partiality"),
+    (("1 Corinthians", 2, 8), ("James", 2, 1), "the Lord of glory"),
+    (("James", 1, 21), ("James", 2, 2), "filth"),
+    (("Luke", 23, 11), ("James", 2, 2), "bright clothing"),
+    (("James", 1, 6), ("James", 2, 4), "diakrino"),
+    (("Luke", 6, 20), ("James", 2, 5), "the poor and the kingdom"),
+    (("James", 1, 12), ("James", 2, 5), "promised to those who love him"),
+    (("Acts", 10, 38), ("James", 2, 6), "oppressed"),
+    (("Acts", 15, 17), ("James", 2, 7), "the name called over"),
+    (("Leviticus", 19, 18), ("James", 2, 8), "love your neighbor as yourself"),
+    (("Romans", 13, 9), ("James", 2, 8), "love your neighbor"),
+    (("Romans", 11, 11), ("James", 2, 10), "trip"),
+    (("Luke", 18, 20), ("James", 2, 11), "adultery before murder"),
+    (("James", 1, 25), ("James", 2, 12), "the law of liberty"),
+    (("Romans", 11, 18), ("James", 2, 13), "boast over"),
+    (("James", 1, 22), ("James", 2, 14), "doers"),
+    (("Mark", 5, 34), ("James", 2, 16), "go in peace"),
+    (("Deuteronomy", 6, 4), ("James", 2, 19), "God is one"),
+    (("Matthew", 12, 36), ("James", 2, 20), "idle"),
+    (("Genesis", 22, 9), ("James", 2, 21), "Isaac on the altar"),
+    (("Hebrews", 11, 17), ("James", 2, 21), "Abraham offered up Isaac"),
+    (("Genesis", 15, 6), ("James", 2, 23), "Abraham believed"),
+    (("Romans", 4, 3), ("James", 2, 23), "Abraham believed God"),
+    (("Romans", 3, 28), ("James", 2, 24), "justified by faith / by works"),
+    (("Joshua", 6, 25), ("James", 2, 25), "the messengers"),
+    (("Hebrews", 11, 31), ("James", 2, 25), "Rahab"),
+])
+
+CHAPTER_ART["jas2"] = [dict(
+    file="master-of-alkmaar-clothing-the-naked.jpg",
+    title="The Seven Works of Mercy: Clothing the Naked",   title_es="Las siete obras de misericordia: vestir al desnudo",
+    artist="Master of Alkmaar",
+    year="1504",
+    location="Rijksmuseum, Amsterdam",
+    location_es="Rijksmuseum, Ámsterdam",
+    alt="On a town street, a man in a red robe hands a dark garment to a barefoot old man at a doorway, while a crowd of poor people waits with folded clothes, and among them stands Christ.",
+    note="&#9888; One of seven panels the Master of Alkmaar painted for a church in Alkmaar (reported): a householder clothing the poor at his own door, with Christ among "
+         "them, the picture of <a href=\"james-2.html#v2-15\">verses 15&ndash;16</a>, &lsquo;If a brother or sister is naked &hellip; but you do not give them what the body needs.&rsquo;",
+    note_es="&#9888; Uno de los siete paneles que el Maestro de Alkmaar pintó para una iglesia de Alkmaar (dato referido): un vecino que viste a los pobres a su propia puerta, "
+            "con Cristo entre ellos, la imagen de los <a href=\"james-2.es.html#v2-15\">versículos 15&ndash;16</a>, «Si un hermano o una hermana están desnudos &hellip; pero no "
+            "les dan lo necesario para el cuerpo».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:De_zeven_werken_van_barmhartigheid_Rijksmuseum_SK-A-2815-3.jpeg",
+)]
+
+CHRON_CHAPTERS["jas2"] = dict(era='apostolic',
+    when="Partiality in the gathering: the man with gold rings and the poor man; 'did not God choose the poor?'; the royal law, 'love your neighbor as yourself'; guilty of all for one point; faith without works is dead, the demons believe and shudder; Abraham and Rahab justified by works, and 'not by faith alone.'",
+    clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
+
