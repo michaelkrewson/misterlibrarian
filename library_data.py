@@ -41574,3 +41574,123 @@ CHRON_CHAPTERS["heb4"] = dict(era='apostolic',
     when="The rest of Psalm 95 still open: God's own rest on the seventh day, a 'Today' spoken through David long after Joshua, 'a sabbath rest for the people of God'; the word of God sharper than any two-edged sword; and a great high priest, tested in every respect, who has passed through the heavens.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 5 -----------------------------------------------------------
+DICTIONARY.append(('metriopatheo', 'metriopatheō', 'μετριοπαθέω', 'metriopatheō',
+    'TO DEAL GENTLY, to keep one&rsquo;s feelings in measure &mdash; <em>metrios</em>, &lsquo;moderate,&rsquo; and <em>pathos</em>, &lsquo;feeling.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-5.html#v5-2">Hebrews 5:2</a>: the high priest is &lsquo;able to deal gently with the ignorant and those who go astray, since he himself is surrounded by weakness&rsquo;: neither indifferent to their sins nor harsh about them. KJV &lsquo;have compassion on&rsquo;; ASV &lsquo;bear gently with&rsquo;; NWT 1984 &lsquo;deal moderately with.&rsquo;',
+    ('Hebrews', 5, 2)))
+DICTIONARY_ES['metriopatheo'] = ('metriopathéō',
+    'TRATAR CON INDULGENCIA, mantener los sentimientos en su medida &mdash; <em>metrios</em>, «moderado», y <em>pathos</em>, «sentimiento». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-5.es.html#v5-2">Hebreos 5:2</a>: el sumo sacerdote «puede tratar con indulgencia a los ignorantes y a los que se extravían, puesto que él mismo está rodeado de debilidad»: ni indiferente a sus pecados ni duro con ellos. RV60 «que se muestre paciente»; TNM 1987 «tratar con moderación».')
+
+DICTIONARY.append(('hiketeria', 'hiketēria', 'ἱκετηρία', 'hiketēria',
+    'SUPPLICATION, an earnest plea &mdash; from <em>hiket&#275;s</em>, &lsquo;suppliant.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-5.html#v5-7">Hebrews 5:7</a>, &lsquo;he offered up prayers and supplications, with loud crying and tears.&rsquo; In classical Greek the word is reported to name the olive branch a suppliant carried (reported here, not checked). KJV and ASV &lsquo;supplications.&rsquo;',
+    ('Hebrews', 5, 7)))
+DICTIONARY_ES['hiketeria'] = ('hiketēría',
+    'SÚPLICA, ruego encarecido &mdash; de <em>hiket&#275;s</em>, «suplicante». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-5.es.html#v5-7">Hebreos 5:7</a>, «ofreció ruegos y súplicas, con gran clamor y lágrimas». Se informa que en el griego clásico la palabra nombra la rama de olivo que llevaba el suplicante (se informa aquí, no se comprobó). RV60 «súplicas».')
+
+DICTIONARY.append(('eulabeia', 'eulabeia', 'εὐλάβεια', 'eulabeia',
+    'REVERENCE, godly fear, a careful awe &mdash; from <em>eu</em>, &lsquo;well,&rsquo; and <em>lamban&#333;</em>, &lsquo;to take hold&rsquo;: holding oneself rightly before God. &#9888; It stands in two verses of the New Testament: Jesus &lsquo;was heard because of his reverence&rsquo; (<a href="hebrews-5.html#v5-7">Hebrews 5:7</a>), a phrase also read as &lsquo;heard and set free from his fear&rsquo;; and &lsquo;with reverence and awe&rsquo; at Hebrews 12:28 (not yet on these pages). The adjective <em>eulab&#275;s</em> names the &lsquo;devout&rsquo; men of <a href="acts-2.html#v2-5">Acts 2:5</a> and <a href="acts-8.html#v8-2">Acts 8:2</a>. KJV at 5:7 &lsquo;in that he feared&rsquo;; ASV &lsquo;for his godly fear.&rsquo;',
+    ('Hebrews', 5, 7)))
+DICTIONARY_ES['eulabeia'] = ('eulábeia',
+    'REVERENCIA, temor piadoso, un respeto cuidadoso &mdash; de <em>eu</em>, «bien», y <em>lamban&#333;</em>, «tomar»: tenerse rectamente delante de Dios. &#9888; Está en dos versículos del Nuevo Testamento: Jesús «fue escuchado por su reverencia» (<a href="hebrews-5.es.html#v5-7">Hebreos 5:7</a>), frase que se lee también «escuchado y librado de su temor»; y «con reverencia y temor» en Hebreos 12:28 (todavía no en estas páginas). El adjetivo <em>eulab&#275;s</em> nombra a los hombres «piadosos» de <a href="acts-2.es.html#v2-5">Hechos 2:5</a> y <a href="acts-8.es.html#v8-2">Hechos 8:2</a>. RV60 en 5:7 «a causa de su temor reverente».')
+
+DICTIONARY.append(('aitios', 'aitios', 'αἴτιος', 'aitios',
+    'CAUSE, SOURCE; as a neuter noun, ground for a charge &mdash; &#9888; at <a href="hebrews-5.html#v5-9">Hebrews 5:9</a> the Son, made complete, &lsquo;became the source of eternal salvation for all who obey him.&rsquo; This translation prints &lsquo;source&rsquo; to keep it apart from <em>arch&#275;gos</em>, &lsquo;Author,&rsquo; at <a href="hebrews-2.html#v2-10">Hebrews 2:10</a> (<a href="dictionary.html#archegos">arch&#275;gos</a>). The neuter <em>aition</em> is Pilate&rsquo;s word, &lsquo;I find no ground for a charge&rsquo; (Luke 23:4). KJV at 5:9 &lsquo;the author&rsquo;; Douay &lsquo;the cause.&rsquo;',
+    ('Hebrews', 5, 9)))
+DICTIONARY_ES['aitios'] = ('aítios',
+    'CAUSA, FUENTE; como sustantivo neutro, motivo de acusación &mdash; &#9888; en <a href="hebrews-5.es.html#v5-9">Hebreos 5:9</a> el Hijo, hecho completo, «llegó a ser fuente de salvación eterna para todos los que le obedecen». Esta traducción dice «fuente» para mantenerla apartada de <em>arch&#275;gos</em>, «Autor», en <a href="hebrews-2.es.html#v2-10">Hebreos 2:10</a> (<a href="diccionario.html#archegos">arch&#275;gos</a>). El neutro <em>aition</em> es la palabra de Pilato, «no hallo ningún motivo de acusación» (Lucas 23:4). RV 1909 «causa»; RV60 «autor».')
+
+DICTIONARY.append(('nothros', 'nōthros', 'νωθρός', 'nōthros',
+    'SLUGGISH, dull, slow &mdash; &#9888; it stands in two verses of the New Testament, both in Hebrews: &lsquo;you have become sluggish in hearing&rsquo; (<a href="hebrews-5.html#v5-11">Hebrews 5:11</a>), and &lsquo;so that you may not be sluggish&rsquo; at 6:12 (not yet on these pages). KJV at 5:11 &lsquo;dull of hearing&rsquo;; NWT 1984 &lsquo;dull in your hearing.&rsquo;',
+    ('Hebrews', 5, 11)))
+DICTIONARY_ES['nothros'] = ('nōthrós',
+    'LENTO, torpe, perezoso &mdash; &#9888; está en dos versículos del Nuevo Testamento, los dos en Hebreos: «se han vuelto lentos para oír» (<a href="hebrews-5.es.html#v5-11">Hebreos 5:11</a>), y «para que no sean perezosos» en 6:12 (todavía no en estas páginas). RV60 en 5:11 «tardos para oír»; TNM 1987 «embotados en su oír».')
+
+DICTIONARY.append(('gymnazo', 'gymnazō', 'γυμνάζω', 'gymnazō',
+    'TO TRAIN, to exercise &mdash; the athlete&rsquo;s word, from <em>gymnos</em>, &lsquo;naked,&rsquo; as Greek athletes trained; English &lsquo;gymnasium&rsquo; comes from it. &#9888; It stands in four verses of the New Testament: &lsquo;train yourself rather for godliness&rsquo; (<a href="1-timothy-4.html#v4-7">1 Timothy 4:7</a>); faculties &lsquo;trained to distinguish good and evil&rsquo; (<a href="hebrews-5.html#v5-14">Hebrews 5:14</a>); discipline that yields fruit &lsquo;to those trained by it&rsquo; at Hebrews 12:11; and a heart &lsquo;trained in greed&rsquo; at 2 Peter 2:14 (these two not yet on these pages). KJV &lsquo;exercised.&rsquo;',
+    ('1 Timothy', 4, 7)))
+DICTIONARY_ES['gymnazo'] = ('gymnázō',
+    'ENTRENAR, ejercitar &mdash; la palabra del atleta, de <em>gymnos</em>, «desnudo», porque así se entrenaban los atletas griegos; de ella viene «gimnasio». &#9888; Está en cuatro versículos del Nuevo Testamento: «entrénate más bien para la piedad» (<a href="1-timothy-4.es.html#v4-7">1 Timoteo 4:7</a>); los sentidos «entrenados para distinguir el bien y el mal» (<a href="hebrews-5.es.html#v5-14">Hebreos 5:14</a>); la disciplina que da fruto «a los que han sido entrenados por ella» en Hebreos 12:11; y un corazón «entrenado en la codicia» en 2 Pedro 2:14 (estos dos todavía no en estas páginas). RV60 «ejercitados».')
+
+DICTIONARY.append(('aistheterion', 'aisthētērion', 'αἰσθητήριον', 'aisthētērion',
+    'A FACULTY, an organ of sense &mdash; from <em>aisthanomai</em>, &lsquo;to perceive,&rsquo; the root of English &lsquo;aesthetic.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-5.html#v5-14">Hebrews 5:14</a>, &lsquo;who through practice have their faculties trained to distinguish good and evil.&rsquo; KJV and ASV &lsquo;senses&rsquo;; NWT 1984 &lsquo;perceptive powers.&rsquo;',
+    ('Hebrews', 5, 14)))
+DICTIONARY_ES['aistheterion'] = ('aisthētḗrion',
+    'FACULTAD, órgano de los sentidos &mdash; de <em>aisthanomai</em>, «percibir», raíz de «estético». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-5.es.html#v5-14">Hebreos 5:14</a>, «los que por la práctica tienen los sentidos entrenados para distinguir el bien y el mal». RV60 «los sentidos»; TNM 1987 «facultades perceptivas».')
+
+DICTIONARY.append(('diakrisis', 'diakrisis', 'διάκρισις', 'diakrisis',
+    'DISTINGUISHING, discernment; also a dispute &mdash; from <em>diakrin&#333;</em>, &lsquo;to judge between.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;not to pass judgment on his opinions&rsquo; at <a href="romans-14.html#v14-1">Romans 14:1</a>; &lsquo;the distinguishing of spirits&rsquo; at <a href="1-corinthians-12.html#v10">1 Corinthians 12:10</a>; and faculties trained &lsquo;to distinguish good and evil&rsquo; at <a href="hebrews-5.html#v5-14">Hebrews 5:14</a>. KJV at Hebrews 5:14 &lsquo;to discern&rsquo;; NWT 1984 &lsquo;to distinguish.&rsquo;',
+    ('Romans', 14, 1)))
+DICTIONARY_ES['diakrisis'] = ('diákrisis',
+    'DISCERNIMIENTO, el distinguir; también una disputa &mdash; de <em>diakrin&#333;</em>, «juzgar entre». &#9888; Está en tres versículos del Nuevo Testamento: «no para juzgar sus opiniones» en <a href="romans-14.es.html#v14-1">Romanos 14:1</a>; el «discernimiento de espíritus» en <a href="1-corinthians-12.es.html#v10">1 Corintios 12:10</a>; y los sentidos entrenados «para distinguir el bien y el mal» en <a href="hebrews-5.es.html#v5-14">Hebreos 5:14</a>. RV60 en Hebreos 5:14 «en el discernimiento».')
+
+DICTIONARY.append(('taxis', 'taxis', 'τάξις', 'taxis',
+    'ORDER, rank, an arrangement &mdash; from <em>tass&#333;</em>, &lsquo;to arrange.&rsquo; &#9888; It stands in eight verses of the New Testament: Zechariah serving &lsquo;in the order of his division&rsquo; (<a href="luke-1.html#v8">Luke 1:8</a>); &lsquo;let all things be done decently and in order&rsquo; (<a href="1-corinthians-14.html#v40">1 Corinthians 14:40</a>); Colossians 2:5; and five in Hebrews, in &lsquo;according to the order of Melchizedek&rsquo; (<a href="hebrews-5.html#v5-6">Hebrews 5:6</a>, <a href="hebrews-5.html#v5-10">5:10</a>, and 6:20, 7:11 and 7:17, not yet on these pages). It is the Greek Psalter&rsquo;s word in Psalm 110:4, where the Hebrew has <em>al-divrati</em>, &lsquo;after the manner of&rsquo; (both checked). KJV &lsquo;after the order&rsquo;; NWT 1984 &lsquo;according to the manner.&rsquo;',
+    ('Luke', 1, 8)))
+DICTIONARY_ES['taxis'] = ('táxis',
+    'ORDEN, rango, disposición &mdash; de <em>tass&#333;</em>, «disponer». &#9888; Está en ocho versículos del Nuevo Testamento: Zacarías, que ejercía el sacerdocio «en el orden de su clase» (<a href="luke-1.es.html#v8">Lucas 1:8</a>); «háganse todas las cosas decentemente y con orden» (<a href="1-corinthians-14.es.html#v40">1 Corintios 14:40</a>); Colosenses 2:5; y cinco en Hebreos, en «según el orden de Melquisedec» (<a href="hebrews-5.es.html#v5-6">Hebreos 5:6</a>, <a href="hebrews-5.es.html#v5-10">5:10</a>, y 6:20, 7:11 y 7:17, todavía no en estas páginas). Es la palabra del Salterio griego en el Salmo 110:4, donde el hebreo tiene <em>al-divrati</em>, «a la manera de» (los dos comprobados). RV60 «según el orden»; TNM 1987 «a la manera de».')
+
+def _heb5_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb5_fix([('Hebrews 5:12; and 1 Peter 4:11, &lsquo;as oracles of God&rsquo; (the last two not yet on these pages).', '<a href="hebrews-5.html#v5-12">Hebrews 5:12</a>; and 1 Peter 4:11, &lsquo;as oracles of God&rsquo; (not yet on these pages).'), ('Hebreos 5:12; y 1 Pedro 4:11, «como oráculos de Dios» (los dos últimos todavía no en estas páginas).', '<a href="hebrews-5.es.html#v5-12">Hebreos 5:12</a>; y 1 Pedro 4:11, «como oráculos de Dios» (todavía no en estas páginas).'), ('and Hebrews 5:7, James 5:16 and 1 Peter 3:12 (these last three not yet on these pages).', 'and <a href="hebrews-5.html#v5-7">Hebrews 5:7</a>; and James 5:16 and 1 Peter 3:12 (these two not yet on these pages).'), ('y Hebreos 5:7, Santiago 5:16 y 1 Pedro 3:12 (estos tres últimos todavía no en estas páginas).', 'y <a href="hebrews-5.es.html#v5-7">Hebreos 5:7</a>; y Santiago 5:16 y 1 Pedro 3:12 (estos dos todavía no en estas páginas).'), ('Colossians 2:8 and 2:20, again &lsquo;of the world&rsquo;; Hebrews 5:12, the first elements of God&rsquo;s sayings; and 2 Peter 3:10 and 3:12, the elements that burn and melt (those five not yet on these pages).', '<a href="colossians-2.html#v2-8">Colossians 2:8</a> and <a href="colossians-2.html#v2-20">2:20</a>, again &lsquo;of the world&rsquo;; <a href="hebrews-5.html#v5-12">Hebrews 5:12</a>, the first elements of God&rsquo;s sayings; and 2 Peter 3:10 and 3:12, the elements that burn and melt (these two not yet on these pages).'), ('Colosenses 2:8 y 2:20, otra vez «del mundo»; Hebreos 5:12, los primeros elementos de los dichos de Dios; y 2 Pedro 3:10 y 3:12, los elementos que arden y se funden (esos cinco todavía no en estas páginas).', '<a href="colossians-2.es.html#v2-8">Colosenses 2:8</a> y <a href="colossians-2.es.html#v2-20">2:20</a>, otra vez «del mundo»; <a href="hebrews-5.es.html#v5-12">Hebreos 5:12</a>, los primeros elementos de los dichos de Dios; y 2 Pedro 3:10 y 3:12, los elementos que arden y se funden (estos dos todavía no en estas páginas).')])
+
+XREFS.extend([
+    (("Hebrews", 2, 17), ("Hebrews", 5, 1), "in the things relating to God"),
+    (("Hebrews", 3, 10), ("Hebrews", 5, 2), "go astray"),
+    (("Acts", 28, 20), ("Hebrews", 5, 2), "surrounded, the chain"),
+    (("Numbers", 15, 28), ("Hebrews", 5, 2), "sinning through error"),
+    (("Leviticus", 9, 7), ("Hebrews", 5, 3), "for yourself and for the people"),
+    (("Leviticus", 16, 6), ("Hebrews", 5, 3), "for himself"),
+    (("Exodus", 28, 1), ("Hebrews", 5, 4), "Aaron called"),
+    (("Numbers", 16, 3), ("Hebrews", 5, 4), "taking the honor"),
+    (("Hebrews", 1, 5), ("Hebrews", 5, 5), "You are my Son"),
+    (("Genesis", 14, 18), ("Hebrews", 5, 6), "Melchizedek"),
+    (("Hebrews", 1, 13), ("Hebrews", 5, 6), "Psalm 110"),
+    (("Mark", 14, 36), ("Hebrews", 5, 7), "take this cup"),
+    (("Hebrews", 2, 10), ("Hebrews", 5, 9), "made complete"),
+    (("Romans", 3, 2), ("Hebrews", 5, 12), "oracles of God"),
+    (("Galatians", 4, 3), ("Hebrews", 5, 12), "elements"),
+    (("1 Corinthians", 3, 2), ("Hebrews", 5, 12), "milk, not solid food"),
+    (("1 Corinthians", 14, 20), ("Hebrews", 5, 14), "mature"),
+    (("1 Timothy", 4, 7), ("Hebrews", 5, 14), "train"),
+    (("Deuteronomy", 1, 39), ("Hebrews", 5, 14), "good and evil"),
+])
+
+CHAPTER_ART["heb5"] = [dict(
+    file="bellini-agony-in-the-garden.jpg",
+    title="The Agony in the Garden",   title_es="La oración en el huerto",
+    artist="Giovanni Bellini",
+    year="c. 1458-60",
+    location="National Gallery, London",
+    location_es="National Gallery, Londres",
+    alt="Jesus kneels in prayer on a rocky outcrop at dawn, looking up toward a small angel holding a cup in the sky; below him three disciples sleep, and soldiers "
+        "led by Judas approach along a path through a wide river valley with a hill town behind.",
+    note="&#9888; Jesus praying in Gethsemane while the disciples sleep and the arresting party approaches: the scene readers hear in &lsquo;prayers and "
+         "supplications, with loud crying and tears, to the one who was able to save him from death&rsquo; (<a href=\"hebrews-5.html#v5-7\">verse 7</a>).",
+    note_es="&#9888; Jesús ora en Getsemaní mientras los discípulos duermen y se acerca la gente que viene a arrestarlo: la escena que los lectores oyen en «ruegos y "
+            "súplicas, con gran clamor y lágrimas, al que podía salvarlo de la muerte» (<a href=\"hebrews-5.es.html#v5-7\">versículo 7</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Bellini,Giovanni_-_Agony_in_the_Garden_-_National_Gallery.jpg",
+)]
+
+CHRON_CHAPTERS["heb5"] = dict(era='apostolic',
+    when="Every high priest is taken from among human beings and called by God, like Aaron; so Christ was named high priest by the one who said 'You are my Son' and 'a priest forever, according to the order of Melchizedek.' In the days of his flesh he prayed with loud crying and tears and learned obedience from what he suffered. Then a rebuke: readers who should be teachers still need milk, not solid food.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
