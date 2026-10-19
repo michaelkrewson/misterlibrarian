@@ -41694,3 +41694,125 @@ CHRON_CHAPTERS["heb5"] = dict(era='apostolic',
     when="Every high priest is taken from among human beings and called by God, like Aaron; so Christ was named high priest by the one who said 'You are my Son' and 'a priest forever, according to the order of Melchizedek.' In the days of his flesh he prayed with loud crying and tears and learned obedience from what he suffered. Then a rebuke: readers who should be teachers still need milk, not solid food.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 6 -----------------------------------------------------------
+DICTIONARY.append(('teleiotes', 'teleiotēs', 'τελειότης', 'teleiotēs',
+    'MATURITY, completeness &mdash; the noun of <em>teleios</em>, &lsquo;mature, complete&rsquo; (<a href="dictionary.html#teleios">teleios</a>). &#9888; It stands in two verses of the New Testament: love as &lsquo;the bond of maturity&rsquo; at <a href="colossians-3.html#v3-14">Colossians 3:14</a>, and &lsquo;let us be carried on to maturity&rsquo; at <a href="hebrews-6.html#v6-1">Hebrews 6:1</a>, a verse after the &lsquo;mature&rsquo; of <a href="hebrews-5.html#v5-14">Hebrews 5:14</a>. KJV &lsquo;perfection&rsquo;; NWT 1984 &lsquo;maturity.&rsquo;',
+    ('Colossians', 3, 14)))
+DICTIONARY_ES['teleiotes'] = ('teleiótēs',
+    'MADUREZ, plenitud &mdash; el sustantivo de <em>teleios</em>, «maduro, completo» (<a href="diccionario.html#teleios">teleios</a>). &#9888; Está en dos versículos del Nuevo Testamento: el amor como «el vínculo de la madurez» en <a href="colossians-3.es.html#v3-14">Colosenses 3:14</a>, y «dejémonos llevar hacia la madurez» en <a href="hebrews-6.es.html#v6-1">Hebreos 6:1</a>, un versículo después de los «maduros» de <a href="hebrews-5.es.html#v5-14">Hebreos 5:14</a>. RV60 «la perfección»; TNM 1987 «la madurez».')
+
+DICTIONARY.append(('baptismos', 'baptismos', 'βαπτισμός', 'baptismos',
+    'A WASHING, an immersion &mdash; a different noun from <em>baptisma</em>, the usual word for baptism. &#9888; It stands in four verses of the New Testament: &lsquo;the washing of cups and pitchers&rsquo; at <a href="mark-7.html#v7-4">Mark 7:4</a>; &lsquo;buried with him in baptism&rsquo; at <a href="colossians-2.html#v2-12">Colossians 2:12</a>; &lsquo;teaching about washings&rsquo; at <a href="hebrews-6.html#v6-2">Hebrews 6:2</a>, in the plural; and the &lsquo;various washings&rsquo; of the Law at Hebrews 9:10 (not yet on these pages). At Hebrews 6:2 readers take it as the Law&rsquo;s purifications, as Christian baptism beside other washings, or as both. KJV and NWT 1984 at 6:2 &lsquo;baptisms&rsquo;; NIV &lsquo;cleansing rites.&rsquo;',
+    ('Mark', 7, 4)))
+DICTIONARY_ES['baptismos'] = ('baptismós',
+    'UN LAVAMIENTO, una inmersión &mdash; un sustantivo distinto de <em>baptisma</em>, la palabra habitual para el bautismo. &#9888; Está en cuatro versículos del Nuevo Testamento: «el lavado de copas y jarros» en <a href="mark-7.es.html#v7-4">Marcos 7:4</a>; «sepultados con él en el bautismo» en <a href="colossians-2.es.html#v2-12">Colosenses 2:12</a>; «la enseñanza sobre lavamientos» en <a href="hebrews-6.es.html#v6-2">Hebreos 6:2</a>, en plural; y los «diversos lavamientos» de la Ley en Hebreos 9:10 (todavía no en estas páginas). En Hebreos 6:2 los lectores lo entienden como las purificaciones de la Ley, como el bautismo cristiano junto a otros lavamientos, o como las dos cosas. RV60 en 6:2 «bautismos».')
+
+DICTIONARY.append(('parapipto', 'parapiptō', 'παραπίπτω', 'parapiptō',
+    'TO FALL AWAY, to fall aside &mdash; <em>para</em>, &lsquo;aside,&rsquo; and <em>pipt&#333;</em>, &lsquo;to fall&rsquo;; its noun <em>parapt&#333;ma</em> is a &lsquo;trespass.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-6.html#v6-6">Hebrews 6:6</a>: &lsquo;and then have fallen away, to renew them again to repentance.&rsquo; The KJV and the Geneva turn the participle into a condition, &lsquo;If they shall fall away&rsquo;; the ASV and NWT 1984 keep it as a description, &lsquo;and then fell away&rsquo; and &lsquo;but who have fallen away.&rsquo; See the note on the verse for the readings of the passage.',
+    ('Hebrews', 6, 6)))
+DICTIONARY_ES['parapipto'] = ('parapíptō',
+    'CAER, apartarse &mdash; <em>para</em>, «a un lado», y <em>pipt&#333;</em>, «caer»; su sustantivo <em>parapt&#333;ma</em> es una «transgresión». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-6.es.html#v6-6">Hebreos 6:6</a>: «y después cayeron, renovarlos otra vez para arrepentimiento». La KJV inglesa y la Biblia de Ginebra convierten el participio en una condición, «If they shall fall away»; la RV60 dice «y recayeron», y la TNM 1987 «pero que han caído en la apostasía». Véase la nota del versículo para las lecturas del pasaje.')
+
+DICTIONARY.append(('anastauroo', 'anastauroō', 'ἀνασταυρόω', 'anastauroō',
+    'TO CRUCIFY AGAIN, or simply to crucify &mdash; <em>ana</em>, &lsquo;up&rsquo; or &lsquo;again,&rsquo; and <em>stauro&#333;</em>, &lsquo;to crucify.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-6.html#v6-6">Hebrews 6:6</a>, &lsquo;as they crucify the Son of God again for themselves.&rsquo; Greek writers are reported to use the word for crucifying without any sense of &lsquo;again&rsquo; (reported here, not checked); the context, &lsquo;to renew them again,&rsquo; is why most versions print &lsquo;afresh&rsquo; or &lsquo;again.&rsquo; KJV &lsquo;crucify &hellip; afresh&rsquo;; NWT 1984 &lsquo;impale &hellip; afresh.&rsquo;',
+    ('Hebrews', 6, 6)))
+DICTIONARY_ES['anastauroo'] = ('anastauróō',
+    'CRUCIFICAR DE NUEVO, o simplemente crucificar &mdash; <em>ana</em>, «arriba» o «de nuevo», y <em>stauro&#333;</em>, «crucificar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-6.es.html#v6-6">Hebreos 6:6</a>, «al crucificar de nuevo para sí mismos al Hijo de Dios». Se informa que los escritores griegos usan la palabra para crucificar sin sentido de «de nuevo» (se informa aquí, no se comprobó); el contexto, «renovarlos otra vez», es la razón por la que casi todas las versiones dicen «de nuevo». RV60 «crucificando de nuevo»; TNM 1987 «de nuevo fijan en un madero».')
+
+DICTIONARY.append(('paradeigmatizo', 'paradeigmatizō', 'παραδειγματίζω', 'paradeigmatizō',
+    'TO EXPOSE TO DISGRACE, to make a public example of &mdash; <em>para</em> and <em>deigmatiz&#333;</em>, &lsquo;to make a show of.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-6.html#v6-6">Hebrews 6:6</a>, &lsquo;and expose him to disgrace.&rsquo; The simple verb is Joseph&rsquo;s at <a href="matthew-1.html#v19">Matthew 1:19</a>, &lsquo;unwilling to expose her to disgrace.&rsquo; KJV &lsquo;put him to an open shame&rsquo;; NWT 1984 &lsquo;expose him to public shame.&rsquo;',
+    ('Hebrews', 6, 6)))
+DICTIONARY_ES['paradeigmatizo'] = ('paradeigmatízō',
+    'EXPONER A LA VERGÜENZA PÚBLICA, hacer escarmiento público de &mdash; <em>para</em> y <em>deigmatiz&#333;</em>, «exhibir». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-6.es.html#v6-6">Hebreos 6:6</a>, «y exponerlo a la vergüenza pública». El verbo simple es el de José en <a href="matthew-1.es.html#v19">Mateo 1:19</a>, «no queriendo exponerla a la vergüenza pública». RV60 «exponiéndole a vituperio»; TNM 1987 «lo exponen a vergüenza pública».')
+
+DICTIONARY.append(('mesiteuo', 'mesiteuō', 'μεσιτεύω', 'mesiteuō',
+    'TO ACT AS GUARANTOR, to mediate &mdash; the verb of <em>mesit&#275;s</em>, &lsquo;mediator,&rsquo; the one who stands in the middle. &#9888; It stands in one verse of the New Testament, <a href="hebrews-6.html#v6-17">Hebrews 6:17</a>, &lsquo;God &hellip; guaranteed it with an oath&rsquo;: God himself stands surety for his own promise. The noun is the word of <a href="galatians-3.html#v19">Galatians 3:19</a>, &lsquo;by the hand of a mediator,&rsquo; and <a href="1-timothy-2.html#v2-5">1 Timothy 2:5</a>, &lsquo;one mediator between God and humans,&rsquo; and returns at Hebrews 8:6, 9:15 and 12:24 (not yet on these pages). KJV &lsquo;confirmed it by an oath&rsquo;; ASV &lsquo;interposed with an oath.&rsquo;',
+    ('Hebrews', 6, 17)))
+DICTIONARY_ES['mesiteuo'] = ('mesiteúō',
+    'ACTUAR COMO GARANTE, mediar &mdash; el verbo de <em>mesit&#275;s</em>, «mediador», el que está en medio. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-6.es.html#v6-17">Hebreos 6:17</a>, «Dios &hellip; lo garantizó con un juramento»: Dios mismo sale fiador de su propia promesa. El sustantivo es la palabra de <a href="galatians-3.es.html#v19">Gálatas 3:19</a>, «en mano de un mediador», y de <a href="1-timothy-2.es.html#v2-5">1 Timoteo 2:5</a>, «un solo mediador entre Dios y los seres humanos», y vuelve en Hebreos 8:6, 9:15 y 12:24 (todavía no en estas páginas). RV60 «interpuso juramento».')
+
+DICTIONARY.append(('ametathetos', 'ametathetos', 'ἀμετάθετος', 'ametathetos',
+    'UNCHANGEABLE &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>metatith&#275;mi</em>, &lsquo;to change, to transfer.&rsquo; &#9888; It stands in two verses of the New Testament, both in Hebrews 6: &lsquo;the unchangeableness of his purpose&rsquo; (<a href="hebrews-6.html#v6-17">Hebrews 6:17</a>) and &lsquo;two unchangeable things, in which it is impossible for God to lie&rsquo; (<a href="hebrews-6.html#v6-18">6:18</a>), the promise and the oath. KJV &lsquo;immutability&rsquo; and &lsquo;immutable.&rsquo;',
+    ('Hebrews', 6, 17)))
+DICTIONARY_ES['ametathetos'] = ('ametáthetos',
+    'INMUTABLE &mdash; <em>a-</em>, «no», y <em>metatith&#275;mi</em>, «cambiar, trasladar». &#9888; Está en dos versículos del Nuevo Testamento, los dos en Hebreos 6: «lo inmutable de su propósito» (<a href="hebrews-6.es.html#v6-17">Hebreos 6:17</a>) y «dos cosas inmutables, en las cuales es imposible que Dios mienta» (<a href="hebrews-6.es.html#v6-18">6:18</a>), la promesa y el juramento. RV60 «la inmutabilidad» e «inmutables».')
+
+DICTIONARY.append(('ankyra', 'ankyra', 'ἄγκυρα', 'ankyra',
+    'AN ANCHOR &mdash; &#9888; it stands in four verses of the New Testament: three in the storm off Malta, &lsquo;throwing four anchors from the stern&rsquo; (<a href="acts-27.html#v27-29">Acts 27:29</a>), the sailors&rsquo; pretext of laying out anchors from the bow (<a href="acts-27.html#v27-30">27:30</a>), and &lsquo;casting off the anchors&rsquo; (<a href="acts-27.html#v27-40">27:40</a>); and the hope &lsquo;we have as an anchor of the soul, both secure and firm, and entering inside the curtain&rsquo; (<a href="hebrews-6.html#v6-19">Hebrews 6:19</a>). KJV and ASV &lsquo;an anchor of the soul.&rsquo;',
+    ('Acts', 27, 29)))
+DICTIONARY_ES['ankyra'] = ('ánkyra',
+    'UN ANCLA &mdash; &#9888; está en cuatro versículos del Nuevo Testamento: tres en la tormenta frente a Malta, «echando cuatro anclas desde la popa» (<a href="acts-27.es.html#v27-29">Hechos 27:29</a>), el pretexto de los marineros de extender anclas desde la proa (<a href="acts-27.es.html#v27-30">27:30</a>), y «soltando las anclas» (<a href="acts-27.es.html#v27-40">27:40</a>); y la esperanza que «tenemos como ancla del alma, segura y firme, y que entra hasta dentro del velo» (<a href="hebrews-6.es.html#v6-19">Hebreos 6:19</a>). RV60 «ancla del alma».')
+
+DICTIONARY.append(('prodromos', 'prodromos', 'πρόδρομος', 'prodromos',
+    'FORERUNNER &mdash; <em>pro</em>, &lsquo;before,&rsquo; and <em>dromos</em>, &lsquo;a running&rsquo; (<a href="dictionary.html#dromos">dromos</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-6.html#v6-20">Hebrews 6:20</a>, &lsquo;where a forerunner has entered for us, Jesus.&rsquo; The high priest of Leviticus went inside the veil alone (<a href="leviticus-16.html#v16-17">Leviticus 16:17</a>); a forerunner goes ahead of others who will follow. KJV &lsquo;the forerunner&rsquo;; NWT 1984 &lsquo;a forerunner.&rsquo;',
+    ('Hebrews', 6, 20)))
+DICTIONARY_ES['prodromos'] = ('pródromos',
+    'PRECURSOR &mdash; <em>pro</em>, «antes», y <em>dromos</em>, «carrera» (<a href="diccionario.html#dromos">dromos</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-6.es.html#v6-20">Hebreos 6:20</a>, «adonde entró por nosotros como precursor Jesús». El sumo sacerdote del Levítico entraba solo dentro del velo (<a href="leviticus-16.es.html#v16-17">Levítico 16:17</a>); un precursor va delante de otros que lo seguirán. RV60 «como precursor».')
+
+def _heb6_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb6_fix([('</a>, and 6:20, 7:11 and 7:17, not yet on these pages).', '</a>, <a href="hebrews-6.html#v6-20">6:20</a>, and 7:11 and 7:17, not yet on these pages).'), ('</a>, y 6:20, 7:11 y 7:17, todavía no en estas páginas).', '</a>, <a href="hebrews-6.es.html#v6-20">6:20</a>, y 7:11 y 7:17, todavía no en estas páginas).'), ('&lsquo;so that you may not be sluggish&rsquo; at 6:12 (not yet on these pages).', '&lsquo;so that you may not become sluggish&rsquo; at <a href="hebrews-6.html#v6-12">6:12</a>.'), ('«para que no sean perezosos» en 6:12 (todavía no en estas páginas).', '«para que no se vuelvan perezosos» en <a href="hebrews-6.es.html#v6-12">6:12</a>.'), ("the same assurance as Hebrews 6:18, 'it is impossible for God to lie'.", 'the same assurance as <a href="hebrews-6.html#v6-18">Hebrews 6:18</a>, \'it is impossible for God to lie\'.'), ('Ephesians 1:11 and Hebrews 6:17 (the verb', 'Ephesians 1:11 and <a href="hebrews-6.html#v6-17">Hebrews 6:17</a> (the verb'), ('Efesios 1:11 y Hebreos 6:17 (el verbo', 'Efesios 1:11 y <a href="hebrews-6.es.html#v6-17">Hebreos 6:17</a> (el verbo'), ('<em>prodromos</em> (Hebrews 6:20);', '<em>prodromos</em> (<a href="hebrews-6.html#v6-20">Hebrews 6:20</a>);'), ('<em>prodromos</em> (Hebreos 6:20);', '<em>prodromos</em> (<a href="hebrews-6.es.html#v6-20">Hebreos 6:20</a>);')])
+
+XREFS.extend([
+    (("Hebrews", 5, 12), ("Hebrews", 6, 1), "first elements, beginning teaching"),
+    (("Colossians", 3, 14), ("Hebrews", 6, 1), "maturity"),
+    (("Mark", 7, 4), ("Hebrews", 6, 2), "washings"),
+    (("1 Timothy", 4, 14), ("Hebrews", 6, 2), "laying on of hands"),
+    (("1 Corinthians", 16, 7), ("Hebrews", 6, 3), "if the Lord permits"),
+    (("Hebrews", 2, 9), ("Hebrews", 6, 4), "tasted"),
+    (("Hebrews", 3, 14), ("Hebrews", 6, 4), "companions, sharers"),
+    (("Matthew", 1, 19), ("Hebrews", 6, 6), "expose to disgrace"),
+    (("Deuteronomy", 11, 11), ("Hebrews", 6, 7), "land that drinks the rain"),
+    (("Genesis", 3, 18), ("Hebrews", 6, 8), "thorns and thistles"),
+    (("1 Thessalonians", 1, 3), ("Hebrews", 6, 10), "labour of love"),
+    (("Hebrews", 5, 11), ("Hebrews", 6, 12), "sluggish"),
+    (("Genesis", 22, 16), ("Hebrews", 6, 13), "by myself I have sworn"),
+    (("Genesis", 22, 17), ("Hebrews", 6, 14), "blessing I will bless you"),
+    (("Luke", 1, 73), ("Hebrews", 6, 13), "the oath to Abraham"),
+    (("Titus", 1, 2), ("Hebrews", 6, 18), "God who does not lie"),
+    (("Numbers", 23, 19), ("Hebrews", 6, 18), "God is not a man that he should lie"),
+    (("Deuteronomy", 4, 42), ("Hebrews", 6, 18), "fled for refuge"),
+    (("Acts", 27, 29), ("Hebrews", 6, 19), "anchor"),
+    (("Leviticus", 16, 2), ("Hebrews", 6, 19), "inside the veil"),
+    (("Hebrews", 5, 6), ("Hebrews", 6, 20), "order of Melchizedek"),
+])
+
+CHAPTER_ART["heb6"] = [dict(
+    file="licinia-amias-stele-anchor-fish.jpg",
+    title="Funerary stele of Licinia Amias",   title_es="Estela funeraria de Licinia Amias",
+    artist="Unknown carver; photograph by Marie-Lan Nguyen",
+    year="Early 3rd century (photograph 2006)",
+    location="Museo Nazionale Romano, Baths of Diocletian, Rome",
+    location_es="Museo Nacional Romano, Termas de Diocleciano, Roma",
+    alt="A small marble gravestone with a pointed top and a wreath: above, the letters D M and the Greek words ICHTHYS ZONTON; in the middle, two fish facing an "
+        "anchor; below, a Latin inscription for Licinia Amias.",
+    note="&#9888; One of the oldest Christian gravestones from Rome, found near the Vatican necropolis: the Greek &lsquo;fish of the living&rsquo; above two fish and an "
+         "anchor, the image of <a href=\"hebrews-6.html#v6-19\">verse 19</a>, &lsquo;an anchor of the soul, both secure and firm.&rsquo;",
+    note_es="&#9888; Una de las lápidas cristianas más antiguas de Roma, hallada cerca de la necrópolis vaticana: el griego «pez de los vivientes» sobre dos peces y un "
+            "ancla, la imagen del <a href=\"hebrews-6.es.html#v6-19\">versículo 19</a>, «ancla del alma, segura y firme».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Stele_Licinia_Amias_Terme_67646.jpg",
+)]
+
+CHRON_CHAPTERS["heb6"] = dict(era='apostolic',
+    when="A call to go on to maturity, then the letter's hardest warning: for those who have tasted the heavenly gift and fallen away, it is impossible to renew them again to repentance. Then reassurance, 'better things' for the readers, and God's oath to Abraham, two unchangeable things, and a hope that is an anchor of the soul, entering inside the curtain where Jesus has gone as forerunner.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
