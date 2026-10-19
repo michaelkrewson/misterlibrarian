@@ -42171,3 +42171,172 @@ CHRON_CHAPTERS["heb8"] = dict(era='apostolic',
     when="The main point: a high priest seated at the right hand of the Majesty, minister of the true tent which Jehovah pitched; the earthly priests serving a copy and shadow, made according to the pattern shown to Moses on the mountain; and the mediator of a better covenant, set out in Jeremiah's promise of a new covenant written on the heart.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 9 -----------------------------------------------------------
+DICTIONARY.append(('latreia', 'latreia', 'λατρεία', 'latreia',
+    'SACRED SERVICE, worship &mdash; the noun of <em>latreu&#333;</em>, &lsquo;to serve&rsquo; a god. &#9888; It stands in five verses of the New Testament: the hour when whoever kills the disciples &lsquo;will think he is offering sacred service to God&rsquo; (<a href="john-16.html#v16-2">John 16:2</a>); Israel&rsquo;s &lsquo;sacred service&rsquo; (<a href="romans-9.html#v9-4">Romans 9:4</a>); &lsquo;your reasonable service&rsquo; (<a href="romans-12.html#v12-1">Romans 12:1</a>); and the &lsquo;regulations for sacred service&rsquo; and &lsquo;services&rsquo; of the first tent (<a href="hebrews-9.html#v9-1">Hebrews 9:1</a>, <a href="hebrews-9.html#v9-6">9:6</a>). KJV at Hebrews 9:1 &lsquo;divine service&rsquo;; NWT 1984 &lsquo;sacred service.&rsquo;',
+    ('John', 16, 2)))
+DICTIONARY_ES['latreia'] = ('latreía',
+    'SERVICIO SAGRADO, culto &mdash; el sustantivo de <em>latreú&#333;</em>, «servir» a un dios. &#9888; Está en cinco versículos del Nuevo Testamento: la hora en que el que mate a los discípulos «pensará que le está rindiendo un servicio sagrado a Dios» (<a href="john-16.es.html#v16-2">Juan 16:2</a>); el «servicio sagrado» de Israel (<a href="romans-9.es.html#v9-4">Romanos 9:4</a>); «su servicio racional» (<a href="romans-12.es.html#v12-1">Romanos 12:1</a>); y las «ordenanzas de servicio sagrado» y los «servicios» de la primera tienda (<a href="hebrews-9.es.html#v9-1">Hebreos 9:1</a>, <a href="hebrews-9.es.html#v9-6">9:6</a>). RV60 en Hebreos 9:1 «ordenanzas de culto»; TNM 1987 «servicio sagrado».')
+
+DICTIONARY.append(('kosmikos', 'kosmikos', 'κοσμικός', 'kosmikos',
+    'EARTHLY, worldly &mdash; from <em>kosmos</em>, &lsquo;world.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;denying ungodliness and worldly desires&rsquo; (<a href="titus-2.html#v2-12">Titus 2:12</a>), and the first covenant&rsquo;s &lsquo;earthly sanctuary&rsquo; (<a href="hebrews-9.html#v9-1">Hebrews 9:1</a>), a sanctuary of this world as against the heavenly one. KJV &lsquo;a worldly sanctuary&rsquo;; ASV &lsquo;a sanctuary of this world&rsquo;; NIV &lsquo;an earthly sanctuary.&rsquo;',
+    ('Titus', 2, 12)))
+DICTIONARY_ES['kosmikos'] = ('kosmikós',
+    'TERRENAL, mundano &mdash; de <em>kósmos</em>, «mundo». &#9888; Está en dos versículos del Nuevo Testamento: «renunciando a la impiedad y a los deseos mundanos» (<a href="titus-2.es.html#v2-12">Tito 2:12</a>), y el «santuario terrenal» del primer pacto (<a href="hebrews-9.es.html#v9-1">Hebreos 9:1</a>), un santuario de este mundo frente al celestial. RV60 «un santuario terrenal»; RV 1909 «santuario mundano».')
+
+DICTIONARY.append(('thymiaterion', 'thymiatērion', 'θυμιατήριον', 'thymiatērion',
+    'INCENSE ALTAR, or CENSER &mdash; from <em>thymia&#333;</em>, &lsquo;to burn incense.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-9.html#v9-4">Hebrews 9:4</a>, among the furnishings of the inner room, and readers divide over what it names: the golden altar of incense, which Exodus places &lsquo;in front of the veil&rsquo; (<a href="exodus-30.html#v30-6">Exodus 30:6</a>) but on whose horns atonement is made once a year (<a href="exodus-30.html#v30-10">Exodus 30:10</a>); or a golden censer, as in the Greek of 2 Chronicles 26:19, where it is the censer in Uzziah&rsquo;s hand (checked, not yet on these pages). KJV and NWT 1984 &lsquo;censer&rsquo;; ASV and NIV &lsquo;altar of incense.&rsquo;',
+    ('Hebrews', 9, 4)))
+DICTIONARY_ES['thymiaterion'] = ('thymiat&#275;rion',
+    'ALTAR DEL INCIENSO, o INCENSARIO &mdash; de <em>thymiá&#333;</em>, «quemar incienso». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-9.es.html#v9-4">Hebreos 9:4</a>, entre los objetos del cuarto interior, y los lectores se dividen sobre lo que nombra: el altar de oro del incienso, que el Éxodo pone «delante del velo» (<a href="exodus-30.es.html#v30-6">Éxodo 30:6</a>) pero sobre cuyos cuernos se hace expiación una vez al año (<a href="exodus-30.es.html#v30-10">Éxodo 30:10</a>); o un incensario de oro, como en el griego de 2 Crónicas 26:19, donde es el incensario en la mano de Uzías (comprobado, todavía no en estas páginas). RV60 y TNM 1987 «incensario»; NVI «altar de oro para el incienso».')
+
+DICTIONARY.append(('stamnos', 'stamnos', 'στάμνος', 'stamnos',
+    'A JAR, an earthenware or metal vessel for keeping. &#9888; It stands in one verse of the New Testament, <a href="hebrews-9.html#v9-4">Hebrews 9:4</a>, &lsquo;a golden jar holding the manna.&rsquo; The Hebrew of <a href="exodus-16.html#v16-33">Exodus 16:33</a> says only &lsquo;a jar,&rsquo; and the Greek of Exodus says &lsquo;a golden jar&rsquo; (checked), which is where Hebrews&rsquo; &lsquo;golden&rsquo; comes from. KJV &lsquo;the golden pot&rsquo;; NIV &lsquo;the gold jar.&rsquo;',
+    ('Hebrews', 9, 4)))
+DICTIONARY_ES['stamnos'] = ('stámnos',
+    'UNA JARRA, una vasija para guardar. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-9.es.html#v9-4">Hebreos 9:4</a>, «una jarra de oro que contenía el maná». El hebreo de <a href="exodus-16.es.html#v16-33">Éxodo 16:33</a> dice solo «una vasija», y el griego del Éxodo dice «una jarra de oro» (comprobado), de donde viene el «de oro» de Hebreos. RV60 «una urna de oro»; TNM 1987 «la jarra de oro».')
+
+DICTIONARY.append(('agnoema', 'agnoēma', 'ἀγνόημα', 'agnoēma',
+    'A SIN OF IGNORANCE, a wrong done unknowingly &mdash; from <em>agnoe&#333;</em>, &lsquo;not to know,&rsquo; the verb of &lsquo;the ignorant&rsquo; at <a href="hebrews-5.html#v5-2">Hebrews 5:2</a>. &#9888; It stands in one verse of the New Testament, <a href="hebrews-9.html#v9-7">Hebrews 9:7</a>, the blood the high priest offers &lsquo;for himself and for the people&rsquo;s sins of ignorance.&rsquo; It names the kind of sin the Law calls sin &lsquo;through error&rsquo; (<a href="dictionary.html#shegagah">shegagah</a>, <a href="leviticus-4.html#v4-2">Leviticus 4:2</a>). KJV and ASV &lsquo;the errors of the people&rsquo;; NWT 1984 &lsquo;the sins of ignorance.&rsquo;',
+    ('Hebrews', 9, 7)))
+DICTIONARY_ES['agnoema'] = ('agnó&#275;ma',
+    'PECADO DE IGNORANCIA, una falta cometida sin saberlo &mdash; de <em>agnoé&#333;</em>, «no saber», el verbo de «los ignorantes» de <a href="hebrews-5.es.html#v5-2">Hebreos 5:2</a>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-9.es.html#v9-7">Hebreos 9:7</a>, la sangre que el sumo sacerdote ofrece «por sí mismo y por los pecados de ignorancia del pueblo». Nombra la clase de pecado que la Ley llama pecado «por error» (<a href="diccionario.html#shegagah">shegagah</a>, <a href="leviticus-4.es.html#v4-2">Levítico 4:2</a>). RV60 y TNM 1987 «los pecados de ignorancia del pueblo».')
+
+DICTIONARY.append(('diorthosis', 'diorthōsis', 'διόρθωσις', 'diorthōsis',
+    'SETTING THINGS RIGHT, a reform, a correction &mdash; <em>dia</em> and <em>orthos</em>, &lsquo;straight.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-9.html#v9-10">Hebrews 9:10</a>, the regulations of the first tent &lsquo;imposed until a time of setting things right.&rsquo; KJV &lsquo;the time of reformation&rsquo;; Douay &lsquo;the time of correction&rsquo;; NIV &lsquo;the time of the new order.&rsquo;',
+    ('Hebrews', 9, 10)))
+DICTIONARY_ES['diorthosis'] = ('diórth&#333;sis',
+    'ENDEREZAR LAS COSAS, reforma, corrección &mdash; <em>dia</em> y <em>orthós</em>, «recto». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-9.es.html#v9-10">Hebreos 9:10</a>, las ordenanzas de la primera tienda «impuestas hasta el tiempo de enderezar las cosas». RV60 «hasta el tiempo de reformar las cosas»; RV 1909 «hasta el tiempo de la corrección».')
+
+DICTIONARY.append(('lytrosis', 'lytrōsis', 'λύτρωσις', 'lytrōsis',
+    'REDEMPTION, release by a ransom &mdash; the noun of <em>lytro&#333;</em>, &lsquo;to ransom,&rsquo; and a different word from <em>apolytr&#333;sis</em> (<a href="dictionary.html#apolytrosis">apolytr&#333;sis</a>). &#9888; It stands in three verses of the New Testament: Zechariah&rsquo;s &lsquo;he has visited and worked redemption for his people&rsquo; (<a href="luke-1.html#v68">Luke 1:68</a>); those &lsquo;waiting for the redemption of Jerusalem&rsquo; (<a href="luke-2.html#v2-38">Luke 2:38</a>); and &lsquo;having obtained eternal redemption&rsquo; (<a href="hebrews-9.html#v9-12">Hebrews 9:12</a>). KJV &lsquo;eternal redemption for us,&rsquo; with &lsquo;for us&rsquo; supplied; NWT 1984 &lsquo;an everlasting deliverance.&rsquo;',
+    ('Luke', 1, 68)))
+DICTIONARY_ES['lytrosis'] = ('lýtr&#333;sis',
+    'REDENCIÓN, liberación por rescate &mdash; el sustantivo de <em>lytró&#333;</em>, «rescatar», y una palabra distinta de <em>apolýtr&#333;sis</em> (<a href="diccionario.html#apolytrosis">apolýtr&#333;sis</a>). &#9888; Está en tres versículos del Nuevo Testamento: el «ha visitado y ha obrado redención para su pueblo» de Zacarías (<a href="luke-1.es.html#v68">Lucas 1:68</a>); los que «esperaban la redención de Jerusalén» (<a href="luke-2.es.html#v2-38">Lucas 2:38</a>); y «habiendo obtenido una redención eterna» (<a href="hebrews-9.es.html#v9-12">Hebreos 9:12</a>). RV60 «eterna redención»; TNM 1987 «liberación eterna».')
+
+DICTIONARY.append(('rhantizo', 'rhantizō', 'ῥαντίζω', 'rhantizō',
+    'TO SPRINKLE &mdash; the word of the cleansing rites. &#9888; As a verb it stands in four verses of the New Testament, all in Hebrews: the ashes of a heifer &lsquo;sprinkling those who have been defiled&rsquo; (<a href="hebrews-9.html#v9-13">Hebrews 9:13</a>); Moses who &lsquo;sprinkled both the book itself and all the people&rsquo; (<a href="hebrews-9.html#v9-19">9:19</a>) and the tent and its vessels (<a href="hebrews-9.html#v9-21">9:21</a>); and hearts &lsquo;sprinkled&rsquo; clean at 10:22 (not yet on these pages). Its noun, <em>rhantismos</em>, is &lsquo;the blood of sprinkling&rsquo; at Hebrews 12:24 and 1 Peter 1:2 (neither yet on these pages). KJV and ASV &lsquo;sprinkled.&rsquo;',
+    ('Hebrews', 9, 13)))
+DICTIONARY_ES['rhantizo'] = ('rhantíz&#333;',
+    'ROCIAR &mdash; la palabra de los ritos de purificación. &#9888; Como verbo está en cuatro versículos del Nuevo Testamento, todos en Hebreos: la ceniza de una novilla «rociada sobre los que se han contaminado» (<a href="hebrews-9.es.html#v9-13">Hebreos 9:13</a>); Moisés que «roció tanto el libro mismo como a todo el pueblo» (<a href="hebrews-9.es.html#v9-19">9:19</a>) y la tienda y sus utensilios (<a href="hebrews-9.es.html#v9-21">9:21</a>); y los corazones «rociados» en 10:22 (todavía no en estas páginas). Su sustantivo, <em>rhantismós</em>, es «la sangre rociada» en Hebreos 12:24 y 1 Pedro 1:2 (ninguno todavía en estas páginas). RV60 «roció».')
+
+DICTIONARY.append(('amomos', 'amōmos', 'ἄμωμος', 'amōmos',
+    'WITHOUT BLEMISH, unblemished &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>m&#333;mos</em>, &lsquo;blemish&rsquo;: the word the Greek of the Law uses of an animal fit for sacrifice, as of the red heifer, &lsquo;without blemish&rsquo; (<a href="numbers-19.html#v19-2">Numbers 19:2</a>, checked in the Greek). &#9888; In the New Testament it is said of Christ, who &lsquo;offered himself without blemish to God&rsquo; (<a href="hebrews-9.html#v9-14">Hebrews 9:14</a>), and &lsquo;a lamb without blemish or spot&rsquo; (<a href="1-peter-1.html#v19">1 Peter 1:19</a>); and of his people, chosen &lsquo;to be holy and unblemished before him&rsquo; (<a href="ephesians-1.html#v4">Ephesians 1:4</a>) and &lsquo;children of God without blemish&rsquo; (<a href="philippians-2.html#v2-15">Philippians 2:15</a>). KJV at Hebrews 9:14 &lsquo;without spot&rsquo;; ASV and NWT 1984 &lsquo;without blemish.&rsquo;',
+    ('Hebrews', 9, 14)))
+DICTIONARY_ES['amomos'] = ('ám&#333;mos',
+    'SIN DEFECTO, sin mancha &mdash; <em>a-</em>, «no», y <em>m&#333;mos</em>, «defecto»: la palabra que el griego de la Ley usa de un animal apto para el sacrificio, como de la vaca roja, «sin defecto» (<a href="numbers-19.es.html#v19-2">Números 19:2</a>, comprobado en el griego). &#9888; En el Nuevo Testamento se dice de Cristo, que «se ofreció a sí mismo sin defecto a Dios» (<a href="hebrews-9.es.html#v9-14">Hebreos 9:14</a>), y «un cordero sin defecto y sin mancha» (<a href="1-peter-1.es.html#v19">1 Pedro 1:19</a>); y de su pueblo, escogido «para que fuéramos santos y sin mancha delante de él» (<a href="ephesians-1.es.html#v4">Efesios 1:4</a>) e «hijos de Dios sin mancha» (<a href="philippians-2.es.html#v2-15">Filipenses 2:15</a>). RV60 en Hebreos 9:14 «sin mancha»; TNM 1987 «sin tacha».')
+
+DICTIONARY.append(('enkainizo', 'enkainizō', 'ἐγκαινίζω', 'enkainizō',
+    'TO INAUGURATE, to dedicate &mdash; from <em>kainos</em>, &lsquo;new&rsquo;: to make new, to put into use for the first time. &#9888; It stands in two verses of the New Testament: &lsquo;not even the first was inaugurated without blood&rsquo; (<a href="hebrews-9.html#v9-18">Hebrews 9:18</a>), and the &lsquo;new and living way&rsquo; inaugurated through the curtain at Hebrews 10:20 (not yet on these pages). The related noun <em>enkainia</em> is the festival of the Dedication at John 10:22 (not yet on these pages). KJV &lsquo;dedicated&rsquo;; NWT 1984 &lsquo;inaugurated.&rsquo;',
+    ('Hebrews', 9, 18)))
+DICTIONARY_ES['enkainizo'] = ('enkainíz&#333;',
+    'INAUGURAR, dedicar &mdash; de <em>kainós</em>, «nuevo»: hacer nuevo, poner en uso por primera vez. &#9888; Está en dos versículos del Nuevo Testamento: «ni siquiera el primero fue inaugurado sin sangre» (<a href="hebrews-9.es.html#v9-18">Hebreos 9:18</a>), y el «camino nuevo y vivo» inaugurado a través del velo en Hebreos 10:20 (todavía no en estas páginas). El sustantivo emparentado <em>enkaínia</em> es la fiesta de la Dedicación en Juan 10:22 (todavía no en estas páginas). RV60 «instituido»; TNM 1987 «inaugurado».')
+
+DICTIONARY.append(('haimatekchysia', 'haimatekchysia', 'αἱματεκχυσία', 'haimatekchysia',
+    'SHEDDING OF BLOOD &mdash; <em>haima</em>, &lsquo;blood,&rsquo; and <em>ekchy&#333;</em>, &lsquo;to pour out.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-9.html#v9-22">Hebrews 9:22</a>, &lsquo;without the shedding of blood there is no forgiveness.&rsquo; The principle is that of <a href="leviticus-17.html#v17-11">Leviticus 17:11</a>, &lsquo;it is the blood, by reason of the life, that makes atonement&rsquo;; the writer&rsquo;s &lsquo;almost everything&rsquo; leaves room for the poor person&rsquo;s sin offering of flour (<a href="leviticus-5.html#v5-11">Leviticus 5:11</a>). KJV &lsquo;without shedding of blood is no remission&rsquo;; NIV &lsquo;without the shedding of blood there is no forgiveness.&rsquo;',
+    ('Hebrews', 9, 22)))
+DICTIONARY_ES['haimatekchysia'] = ('haimatekchysía',
+    'DERRAMAMIENTO DE SANGRE &mdash; <em>haíma</em>, «sangre», y <em>ekchý&#333;</em>, «derramar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-9.es.html#v9-22">Hebreos 9:22</a>, «sin derramamiento de sangre no hay perdón». El principio es el de <a href="leviticus-17.es.html#v17-11">Levítico 17:11</a>, «es la sangre, por razón de la vida, la que hace expiación»; el «casi todo» del autor deja lugar a la ofrenda por el pecado del pobre, de harina (<a href="leviticus-5.es.html#v5-11">Levítico 5:11</a>). RV60 «sin derramamiento de sangre no se hace remisión».')
+
+DICTIONARY.append(('antitypos', 'antitypos', 'ἀντίτυπος', 'antitypos',
+    'A COUNTERPART, a copy answering to a pattern &mdash; <em>anti</em>, &lsquo;corresponding to,&rsquo; and <em>typos</em>, &lsquo;pattern&rsquo; (<a href="dictionary.html#typos">typos</a>). &#9888; It stands in two verses of the New Testament: the sanctuary made with hands, &lsquo;a counterpart of the true one&rsquo; (<a href="hebrews-9.html#v9-24">Hebrews 9:24</a>), and baptism, which &lsquo;corresponds&rsquo; to the flood at 1 Peter 3:21 (not yet on these pages). English &lsquo;antitype&rsquo; comes from it. KJV at Hebrews 9:24 &lsquo;the figures of the true&rsquo;; NWT 1984 &lsquo;a copy of the reality.&rsquo;',
+    ('Hebrews', 9, 24)))
+DICTIONARY_ES['antitypos'] = ('antítypos',
+    'UNA CONTRAPARTIDA, una copia que responde a un modelo &mdash; <em>antí</em>, «en correspondencia con», y <em>týpos</em>, «patrón» (<a href="diccionario.html#typos">typos</a>). &#9888; Está en dos versículos del Nuevo Testamento: el santuario hecho por manos, «contrapartida del verdadero» (<a href="hebrews-9.es.html#v9-24">Hebreos 9:24</a>), y el bautismo, que «corresponde» al diluvio en 1 Pedro 3:21 (todavía no en estas páginas). De ella viene la palabra «antitipo». RV60 en Hebreos 9:24 «figura del verdadero»; TNM 1987 «copia de la realidad».')
+
+DICTIONARY.append(('apokeimai', 'apokeimai', 'ἀπόκειμαι', 'apokeimai',
+    'TO BE LAID UP, kept in store, reserved. &#9888; It stands in four verses of the New Testament: the mina &lsquo;kept laid away in a cloth&rsquo; (<a href="luke-19.html#v19-20">Luke 19:20</a>); &lsquo;the hope laid up for you in the heavens&rsquo; (<a href="colossians-1.html#v5">Colossians 1:5</a>); &lsquo;there is laid up for me the crown of righteousness&rsquo; (<a href="2-timothy-4.html#v4-8">2 Timothy 4:8</a>); and &lsquo;it is in store for human beings to die once&rsquo; (<a href="hebrews-9.html#v9-27">Hebrews 9:27</a>). KJV at Hebrews 9:27 &lsquo;it is appointed unto men&rsquo;; NWT 1984 &lsquo;it is reserved for men.&rsquo;',
+    ('Luke', 19, 20)))
+DICTIONARY_ES['apokeimai'] = ('apókeimai',
+    'ESTAR GUARDADO, reservado. &#9888; Está en cuatro versículos del Nuevo Testamento: la mina que se tenía «guardada en un paño» (<a href="luke-19.es.html#v19-20">Lucas 19:20</a>); «la esperanza que les está guardada en los cielos» (<a href="colossians-1.es.html#v5">Colosenses 1:5</a>); «me está guardada la corona de la justicia» (<a href="2-timothy-4.es.html#v4-8">2 Timoteo 4:8</a>); y «a los seres humanos les está reservado morir una vez» (<a href="hebrews-9.es.html#v9-27">Hebreos 9:27</a>). RV60 en Hebreos 9:27 «está establecido»; TNM 1987 «está reservado».')
+
+DICTIONARY.append(('apekdechomai', 'apekdechomai', 'ἀπεκδέχομαι', 'apekdechomai',
+    'TO AWAIT EAGERLY &mdash; <em>apo</em>, <em>ek</em> and <em>dechomai</em>, &lsquo;to receive,&rsquo; a strengthened word for waiting. &#9888; It stands in eight verses of the New Testament, among them &lsquo;waiting for adoption, the redemption of our body&rsquo; (<a href="romans-8.html#v8-23">Romans 8:23</a>); &lsquo;as you eagerly await the revelation of our Lord Jesus Christ&rsquo; (<a href="1-corinthians-1.html#v7">1 Corinthians 1:7</a>); &lsquo;we are waiting for a Savior&rsquo; (<a href="philippians-3.html#v3-20">Philippians 3:20</a>); and &lsquo;those who eagerly await him&rsquo; (<a href="hebrews-9.html#v9-28">Hebrews 9:28</a>). KJV at Hebrews 9:28 &lsquo;them that look for him&rsquo;; NWT 1984 &lsquo;those earnestly looking for him.&rsquo;',
+    ('Romans', 8, 19)))
+DICTIONARY_ES['apekdechomai'] = ('apekdéchomai',
+    'ESPERAR CON ANHELO &mdash; <em>apó</em>, <em>ek</em> y <em>déchomai</em>, «recibir», una palabra reforzada para la espera. &#9888; Está en ocho versículos del Nuevo Testamento, entre ellos «esperando la adopción, el rescate de nuestro cuerpo» (<a href="romans-8.es.html#v8-23">Romanos 8:23</a>); «mientras aguardan con anhelo la revelación de nuestro Señor Jesucristo» (<a href="1-corinthians-1.es.html#v7">1 Corintios 1:7</a>); «esperamos a un Salvador» (<a href="philippians-3.es.html#v3-20">Filipenses 3:20</a>); y «los que lo esperan con anhelo» (<a href="hebrews-9.es.html#v9-28">Hebreos 9:28</a>). RV60 en Hebreos 9:28 «a los que le esperan»; TNM 1987 «los que lo están esperando con intenso anhelo».')
+
+DICTIONARY.append(('acheiropoietos', 'acheiropoiētos', 'ἀχειροποίητος', 'acheiropoiētos',
+    'NOT MADE WITH HANDS &mdash; the negative of <em>cheiropoi&#275;tos</em>, &lsquo;made with hands&rsquo; (<a href="dictionary.html#cheiropoietos">cheiropoi&#275;tos</a>). &#9888; It stands in three verses of the New Testament: the charge that Jesus said he would build in three days another sanctuary &lsquo;not made with hands&rsquo; (<a href="mark-14.html#v14-58">Mark 14:58</a>); &lsquo;a house not made with hands, eternal, in the heavens&rsquo; (<a href="2-corinthians-5.html#v1">2 Corinthians 5:1</a>); and &lsquo;a circumcision not made with hands&rsquo; (<a href="colossians-2.html#v2-11">Colossians 2:11</a>). Hebrews 9:11 says the same of the greater tent with the plain negative, &lsquo;not made with hands&rsquo;; KJV and ASV there &lsquo;not made with hands.&rsquo;',
+    ('Mark', 14, 58)))
+DICTIONARY_ES['acheiropoietos'] = ('acheiropoí&#275;tos',
+    'NO HECHO POR MANOS &mdash; la negación de <em>cheiropoí&#275;tos</em>, «hecho por manos» (<a href="diccionario.html#cheiropoietos">cheiropoi&#275;tos</a>). &#9888; Está en tres versículos del Nuevo Testamento: la acusación de que Jesús dijo que en tres días edificaría otro santuario «no hecho por manos» (<a href="mark-14.es.html#v14-58">Marcos 14:58</a>); «una casa no hecha de manos, eterna, en los cielos» (<a href="2-corinthians-5.es.html#v1">2 Corintios 5:1</a>); y «una circuncisión no hecha a mano» (<a href="colossians-2.es.html#v2-11">Colosenses 2:11</a>). Hebreos 9:11 dice lo mismo de la tienda mayor con la negación simple, «no hecha por manos»; RV60 allí «no hecho de manos».')
+
+def _heb9_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb9_fix([('for a sign. Hebrews 9:4 (not yet on these pages) remembers it', 'for a sign. <a href="hebrews-9.html#v9-4">Hebrews 9:4</a> remembers it'), ('como señal. Hebreos 9:4 (todavía no en estas páginas) lo recuerda', 'como señal. <a href="hebrews-9.es.html#v9-4">Hebreos 9:4</a> lo recuerda'), ('and Hebrews 9:8 (the last, in Hebrews, not yet on these pages).', 'and <a href="hebrews-9.html#v9-8">Hebrews 9:8</a>.'), ('y Hebreos 9:8 (el último, de Hebreos, todavía no en estas páginas).', 'y <a href="hebrews-9.es.html#v9-8">Hebreos 9:8</a>.'), ('and Hebrews 9:5, where the cherubim of glory overshadow it above the ark (not yet on these pages).', 'and <a href="hebrews-9.html#v9-5">Hebrews 9:5</a>, where the cherubim of glory overshadow it above the ark.'), ('y Hebreos 9:5, donde los querubines de gloria cubren con su sombra el <em>hilastērion</em> sobre el arca (todavía no en estas páginas).', 'y <a href="hebrews-9.es.html#v9-5">Hebreos 9:5</a>, donde los querubines de gloria cubren con su sombra el <em>hilastērion</em> sobre el arca.'), ('Galatians 1:4</a>, and Hebrews 9:9 (not yet on these pages).', 'Galatians 1:4</a>, and <a href="hebrews-9.html#v9-9">Hebrews 9:9</a>, &lsquo;a parable for the present time.&rsquo;'), ('Gálatas 1:4</a>, y Hebreos 9:9 (todavía no en estas páginas).', 'Gálatas 1:4</a>, y <a href="hebrews-9.es.html#v9-9">Hebreos 9:9</a>, «una parábola para el tiempo presente».'), ('fitted out at Hebrews 9:2 and 9:6 (not yet on these pages);', 'fitted out at <a href="hebrews-9.html#v9-2">Hebrews 9:2</a> and <a href="hebrews-9.html#v9-6">9:6</a>;'), ('equipado en Hebreos 9:2 y 9:6 (todavía no en estas páginas);', 'equipado en <a href="hebrews-9.es.html#v9-2">Hebreos 9:2</a> y <a href="hebrews-9.es.html#v9-6">9:6</a>;'), ('of the Law at Hebrews 9:10 (not yet on these pages).', 'of the Law at <a href="hebrews-9.html#v9-10">Hebrews 9:10</a>.'), ('de la Ley en Hebreos 9:10 (todavía no en estas páginas).', 'de la Ley en <a href="hebrews-9.es.html#v9-10">Hebreos 9:10</a>.'), ('and the putting away of sin at Hebrews 9:26 (not yet on these pages).', 'and &lsquo;the setting aside of sin&rsquo; at <a href="hebrews-9.html#v9-26">Hebrews 9:26</a>.'), ('y la remoción del pecado en Hebreos 9:26 (todavía no en estas páginas).', 'y «la anulación del pecado» en <a href="hebrews-9.es.html#v9-26">Hebreos 9:26</a>.'), ('of the ministry&rsquo; at Hebrews 9:21 (not yet on these pages).', 'of the ministry&rsquo; at <a href="hebrews-9.html#v9-21">Hebrews 9:21</a>.'), ('«del ministerio» en Hebreos 9:21 (todavía no en estas páginas).', '«del ministerio» en <a href="hebrews-9.es.html#v9-21">Hebreos 9:21</a>.')])
+
+XREFS.extend([
+    (("Exodus", 26, 33), ("Hebrews", 9, 3), "the holy place and the most holy"),
+    (("Exodus", 25, 30), ("Hebrews", 9, 2), "bread of the presence"),
+    (("Exodus", 30, 10), ("Hebrews", 9, 4), "the golden altar, atonement once a year"),
+    (("Exodus", 16, 33), ("Hebrews", 9, 4), "the jar of manna"),
+    (("Numbers", 17, 23), ("Hebrews", 9, 4), "Aaron's rod that budded"),
+    (("Exodus", 25, 16), ("Hebrews", 9, 4), "the tablets in the ark"),
+    (("Exodus", 25, 18), ("Hebrews", 9, 5), "the cherubim"),
+    (("Romans", 3, 25), ("Hebrews", 9, 5), "place of atonement"),
+    (("Leviticus", 16, 2), ("Hebrews", 9, 7), "not at just any time"),
+    (("Leviticus", 16, 34), ("Hebrews", 9, 7), "once a year"),
+    (("Leviticus", 4, 2), ("Hebrews", 9, 7), "sins through error"),
+    (("Hebrews", 6, 2), ("Hebrews", 9, 10), "washings"),
+    (("Mark", 14, 58), ("Hebrews", 9, 11), "not made with hands"),
+    (("Luke", 1, 68), ("Hebrews", 9, 12), "redemption"),
+    (("Numbers", 19, 9), ("Hebrews", 9, 13), "the ashes of the heifer"),
+    (("Numbers", 19, 2), ("Hebrews", 9, 14), "without blemish"),
+    (("1 Peter", 1, 19), ("Hebrews", 9, 14), "without blemish"),
+    (("Hebrews", 6, 1), ("Hebrews", 9, 14), "dead works"),
+    (("Hebrews", 8, 6), ("Hebrews", 9, 15), "mediator of a new covenant"),
+    (("Exodus", 24, 8), ("Hebrews", 9, 20), "the blood of the covenant"),
+    (("Matthew", 26, 28), ("Hebrews", 9, 20), "this is the blood of the covenant"),
+    (("Leviticus", 14, 4), ("Hebrews", 9, 19), "scarlet and hyssop"),
+    (("Leviticus", 16, 16), ("Hebrews", 9, 21), "atonement for the tent"),
+    (("Leviticus", 17, 11), ("Hebrews", 9, 22), "the blood makes atonement"),
+    (("Leviticus", 5, 11), ("Hebrews", 9, 22), "almost everything"),
+    (("Hebrews", 8, 5), ("Hebrews", 9, 23), "copies"),
+    (("Acts", 7, 48), ("Hebrews", 9, 24), "made with hands"),
+    (("Hebrews", 7, 18), ("Hebrews", 9, 26), "setting aside"),
+    (("Matthew", 28, 20), ("Hebrews", 9, 26), "completion of the age"),
+    (("Isaiah", 53, 12), ("Hebrews", 9, 28), "bore the sin of many"),
+    (("Hebrews", 4, 15), ("Hebrews", 9, 28), "without sin"),
+    (("Philippians", 3, 20), ("Hebrews", 9, 28), "eagerly awaiting"),
+])
+
+
+CHAPTER_ART["heb9"] = [dict(
+    file="tissot-high-priest-costume-jewish-museum.jpg",
+    title="The Costume of the High Priest",   title_es="La vestidura del sumo sacerdote",
+    artist="James Tissot",
+    year="c. 1896&ndash;1902",
+    location="The Jewish Museum, New York",
+    location_es="Museo Judío, Nueva York",
+    alt="A bearded high priest stands facing forward with open hands, wearing a white turban, a breastplate of square coloured stones, an embroidered sash and "
+        "a long fringed robe, in front of a striped curtain.",
+    note="&#9888; Tissot painted the high priest in the vestments of Exodus 28, the breastplate set with stones: the one who goes into the inner room &lsquo;alone, "
+         "once a year, not without blood&rsquo; (<a href=\"hebrews-9.html#v9-7\">verse 7</a>).",
+    note_es="&#9888; Tissot pintó al sumo sacerdote con las vestiduras de Éxodo 28, el pectoral engastado de piedras: el que entra en el cuarto interior «solo, una vez "
+            "al año, no sin sangre» (<a href=\"hebrews-9.es.html#v9-7\">versículo 7</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:The_Costume_of_the_High_Priest,_James_Jacques_Tissot_(1896-1901)(The_Jewish_Museum).jpg",
+)]
+
+CHRON_CHAPTERS["heb9"] = dict(era='apostolic',
+    when="The first covenant's tent and its furniture, and the high priest's entry into the inner room once a year, not without blood; then Christ entering the sanctuary through his own blood, having obtained eternal redemption; the mediator of a new covenant, with covenant and will set side by side; the blood of the covenant at Sinai; and Christ offered once, to be seen a second time by those who eagerly await him.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
