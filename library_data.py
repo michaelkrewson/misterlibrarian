@@ -43990,3 +43990,168 @@ CHRON_CHAPTERS["1pe3"] = dict(era='apostolic',
     when="Wives and husbands: unbelieving husbands won 'without a word,' the hidden person of the heart, Sarah who called Abraham 'lord,' and a husband's honor for a wife as a fellow heir; 'not repaying evil for evil'; Psalm 34; Isaiah 8 with Christ in the place of Jehovah of armies, 'always ready to make a defense'; 'Christ also suffered once for sins'; the spirits in prison, Noah's eight, and baptism as 'the appeal of a good conscience to God.'",
     clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
 
+# ---- 1 Peter 4 -----------------------------------------------------------
+DICTIONARY.append(('hoplizo', 'hoplizō', 'ὁπλίζω', 'hoplizō',
+    'TO ARM, to equip with weapons &mdash; from <em>hopla</em>, &lsquo;weapons, armor.&rsquo; &#9888; The verb stands in one verse of the New Testament, <a href="1-peter-4.html#v4-1">1 Peter 4:1</a>, &lsquo;arm yourselves with the same way of thinking&rsquo;: the weapon is a thought. The noun <em>hopla</em> is the &lsquo;armor of light&rsquo; of <a href="romans-13.html#v13-12">Romans 13:12</a>. KJV &lsquo;arm yourselves likewise with the same mind&rsquo;; NIV &lsquo;arm yourselves also with the same attitude.&rsquo;',
+    ('1 Peter', 4, 1)))
+DICTIONARY_ES['hoplizo'] = ('hoplíz&#333;',
+    'ARMAR, equipar con armas &mdash; de <em>hopla</em>, «armas». &#9888; El verbo está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-1">1 Pedro 4:1</a>, «ármense también ustedes de la misma manera de pensar»: el arma es un pensamiento. El sustantivo <em>hopla</em> son las «armas de la luz» de <a href="romans-13.es.html#v13-12">Romanos 13:12</a>. RV60 «armaos del mismo pensamiento»; TNM 1987 «ármense de la misma disposición mental».')
+
+DICTIONARY.append(('ennoia', 'ennoia', 'ἔννοια', 'ennoia',
+    'A THOUGHT, an intention &mdash; <em>en</em>, &lsquo;in,&rsquo; and <em>nous</em>, &lsquo;mind&rsquo;: what one has in mind. &#9888; It stands in two verses of the New Testament: &lsquo;the thoughts and intentions of the heart&rsquo; at <a href="hebrews-4.html#v4-12">Hebrews 4:12</a>, where this translation reads &lsquo;intentions,&rsquo; and <a href="1-peter-4.html#v4-1">1 Peter 4:1</a>, &lsquo;arm yourselves with the same way of thinking.&rsquo; KJV and ASV at 1 Peter 4:1 &lsquo;the same mind&rsquo;; NWT 1984 &lsquo;the same mental disposition&rsquo;; Douay &lsquo;the same thought.&rsquo;',
+    ('Hebrews', 4, 12)))
+DICTIONARY_ES['ennoia'] = ('énnoia',
+    'PENSAMIENTO, intención &mdash; <em>en</em>, «en», y <em>noûs</em>, «mente»: lo que uno tiene en mente. &#9888; Está en dos versículos del Nuevo Testamento: «los pensamientos y las intenciones del corazón» de <a href="hebrews-4.es.html#v4-12">Hebreos 4:12</a>, donde esta traducción lee «intenciones», y <a href="1-peter-4.es.html#v4-1">1 Pedro 4:1</a>, «ármense &hellip; de la misma manera de pensar». RV60 en 1 Pedro 4:1 «del mismo pensamiento»; TNM 1987 «de la misma disposición mental».')
+
+DICTIONARY.append(('oinophlygia', 'oinophlygia', 'οἰνοφλυγία', 'oinophlygia',
+    'HEAVY DRINKING, bouts of drunkenness &mdash; a compound built on <em>oinos</em>, &lsquo;wine.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-4.html#v4-3">1 Peter 4:3</a>, in a list with revels and drinking parties (<a href="dictionary.html#komos">k&#333;mos</a>, <a href="dictionary.html#potos">potos</a>). KJV &lsquo;excess of wine&rsquo;; ASV &lsquo;winebibbings&rsquo;; NWT 1984 &lsquo;excesses with wine.&rsquo;',
+    ('1 Peter', 4, 3)))
+DICTIONARY_ES['oinophlygia'] = ('oinophlygía',
+    'EXCESO DE VINO, borracheras &mdash; un compuesto formado sobre <em>oînos</em>, «vino». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>, en una lista con orgías y juergas de bebida (<a href="diccionario.html#komos">k&#333;mos</a>, <a href="diccionario.html#potos">potos</a>). RV60 «embriagueces»; TNM 1987 «excesos con vino».')
+
+DICTIONARY.append(('potos', 'potos', 'πότος', 'potos',
+    'A DRINKING PARTY &mdash; from the stem of <em>pin&#333;</em>, &lsquo;to drink.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-4.html#v4-3">1 Peter 4:3</a>. KJV &lsquo;banquetings&rsquo;; ASV &lsquo;carousings&rsquo;; NWT 1984 &lsquo;drinking matches.&rsquo;',
+    ('1 Peter', 4, 3)))
+DICTIONARY_ES['potos'] = ('pótos',
+    'JUERGA DE BEBIDA &mdash; de la raíz de <em>pín&#333;</em>, «beber». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>. RV60 «disipación»; TNM 1987 «partidas de beber»; NVI «parrandas».')
+
+DICTIONARY.append(('komos', 'kōmos', 'κῶμος', 'kōmos',
+    'A REVEL, a drunken feast &mdash; a party that spills over into disorder. &#9888; It stands in three verses of the New Testament, all in lists of the old life: &lsquo;not in revels and drunkenness&rsquo; at <a href="romans-13.html#v13-13">Romans 13:13</a>, &lsquo;envy, drunkenness, revels&rsquo; at <a href="galatians-5.html#v21">Galatians 5:21</a>, and <a href="1-peter-4.html#v4-3">1 Peter 4:3</a>. KJV at 1 Peter 4:3 &lsquo;revellings&rsquo;; NIV &lsquo;orgies.&rsquo;',
+    ('Romans', 13, 13)))
+DICTIONARY_ES['komos'] = ('k&#333;̂mos',
+    'ORGÍA, banquete de borrachos &mdash; una fiesta que se desborda en desorden. &#9888; Está en tres versículos del Nuevo Testamento, todos en listas de la vida antigua: «no en orgías y borracheras» en <a href="romans-13.es.html#v13-13">Romanos 13:13</a>, «envidias, borracheras, orgías» en <a href="galatians-5.es.html#v21">Gálatas 5:21</a>, y <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>. RV60 en 1 Pedro 4:3 «orgías»; TNM 1987 «diversiones estrepitosas».')
+
+DICTIONARY.append(('xenizo', 'xenizō', 'ξενίζω', 'xenizō',
+    'TO RECEIVE AS A GUEST, and TO SURPRISE &mdash; from <a href="dictionary.html#xenos">xenos</a>, &lsquo;stranger, guest&rsquo;: to treat as a stranger, in both senses. &#9888; It stands in ten verses of the New Testament. Most are hospitality: Peter &lsquo;is a guest with a certain Simon&rsquo; (<a href="acts-10.html#v10-6">Acts 10:6</a>), and some &lsquo;have entertained angels&rsquo; (<a href="hebrews-13.html#v13-2">Hebrews 13:2</a>); at <a href="acts-17.html#v17-20">Acts 17:20</a> the Athenians hear &lsquo;some strange things.&rsquo; At <a href="1-peter-4.html#v4-4">1 Peter 4:4</a> the readers&rsquo; old neighbors &lsquo;are surprised&rsquo; at them, and at <a href="1-peter-4.html#v4-12">1 Peter 4:12</a> the readers are told, &lsquo;do not be surprised at the burning among you.&rsquo; KJV at 4:12 &lsquo;think it not strange&rsquo;; NWT 1984 &lsquo;do not be puzzled.&rsquo;',
+    ('1 Peter', 4, 4)))
+DICTIONARY_ES['xenizo'] = ('xeníz&#333;',
+    'HOSPEDAR, y SORPRENDER &mdash; de <a href="diccionario.html#xenos">xenos</a>, «extraño, huésped»: tratar como extraño, en los dos sentidos. &#9888; Está en diez versículos del Nuevo Testamento. La mayoría son hospitalidad: Pedro «se hospeda con cierto Simón» (<a href="acts-10.es.html#v10-6">Hechos 10:6</a>), y algunos «hospedaron ángeles» (<a href="hebrews-13.es.html#v13-2">Hebreos 13:2</a>); en <a href="acts-17.es.html#v17-20">Hechos 17:20</a> los atenienses oyen «cosas extrañas». En <a href="1-peter-4.es.html#v4-4">1 Pedro 4:4</a> los antiguos vecinos de los lectores «se sorprenden» de ellos, y en <a href="1-peter-4.es.html#v4-12">1 Pedro 4:12</a> a los lectores se les dice: «no se sorprendan del fuego ardiente que hay entre ustedes». RV60 en 4:12 «no os sorprendáis»; TNM 1987 «no estén perplejos».')
+
+DICTIONARY.append(('anachysis', 'anachysis', 'ἀνάχυσις', 'anachysis',
+    'A POURING OUT, a flood &mdash; <em>ana</em>, &lsquo;up, over,&rsquo; and <em>che&#333;</em>, &lsquo;to pour.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="1-peter-4.html#v4-4">1 Peter 4:4</a>, &lsquo;the same flood of debauchery&rsquo; (<a href="dictionary.html#asotia">as&#333;tia</a>). KJV &lsquo;the same excess of riot&rsquo;; NWT 1984 &lsquo;the same low sink of debauchery&rsquo;; Douay &lsquo;the same confusion of riotousness.&rsquo;',
+    ('1 Peter', 4, 4)))
+DICTIONARY_ES['anachysis'] = ('anáchysis',
+    'DERRAMAMIENTO, desborde &mdash; <em>aná</em>, «arriba, por encima», y <em>ché&#333;</em>, «derramar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-4">1 Pedro 4:4</a>, «el mismo desborde de disolución» (<a href="diccionario.html#asotia">as&#333;tia</a>). RV60 «el mismo desenfreno de disolución»; TNM 1987 «al mismo bajo sumidero de disolución».')
+
+DICTIONARY.append(('asotia', 'asōtia', 'ἀσωτία', 'asōtia',
+    'DEBAUCHERY, reckless living &mdash; the noun of <a href="dictionary.html#asotos">as&#333;t&#333;s</a>, &lsquo;dissolutely,&rsquo; the prodigal son&rsquo;s way of spending. &#9888; It stands in three verses of the New Testament: &lsquo;do not get drunk with wine, in which is debauchery&rsquo; at <a href="ephesians-5.html#v5-18">Ephesians 5:18</a>; children &lsquo;not open to a charge of debauchery&rsquo; at <a href="titus-1.html#v6">Titus 1:6</a>; and &lsquo;the same flood of debauchery&rsquo; at <a href="1-peter-4.html#v4-4">1 Peter 4:4</a>. KJV at 1 Peter 4:4 &lsquo;the same excess of riot&rsquo;; NWT 1984 &lsquo;the same low sink of debauchery.&rsquo;',
+    ('Ephesians', 5, 18)))
+DICTIONARY_ES['asotia'] = ('as&#333;tía',
+    'DISOLUCIÓN, vida desenfrenada &mdash; el sustantivo de <a href="diccionario.html#asotos">as&#333;t&#333;s</a>, «perdidamente», la manera de gastar del hijo pródigo. &#9888; Está en tres versículos del Nuevo Testamento: «no se emborrachen con vino, en lo cual hay disolución» en <a href="ephesians-5.es.html#v5-18">Efesios 5:18</a>; hijos «no acusados de disolución» en <a href="titus-1.es.html#v6">Tito 1:6</a>; y «el mismo desborde de disolución» en <a href="1-peter-4.es.html#v4-4">1 Pedro 4:4</a>. RV60 en 1 Pedro 4:4 «el mismo desenfreno de disolución»; TNM 1987 «al mismo bajo sumidero de disolución».')
+
+DICTIONARY.append(('ektenes', 'ektenēs', 'ἐκτενής', 'ektenēs',
+    'EARNEST, intense &mdash; literally &lsquo;stretched out,&rsquo; from <em>ektein&#333;</em>, &lsquo;to stretch out.&rsquo; &#9888; The adjective stands in one verse of the New Testament, <a href="1-peter-4.html#v4-8">1 Peter 4:8</a>, &lsquo;keep your love for one another earnest.&rsquo; The adverb <em>ekten&#333;s</em> is &lsquo;love one another earnestly&rsquo; at <a href="1-peter-1.html#v22">1 Peter 1:22</a> and the prayer made &lsquo;earnestly&rsquo; for Peter at <a href="acts-12.html#v12-5">Acts 12:5</a>. KJV at 4:8 &lsquo;fervent charity&rsquo;; NWT 1984 &lsquo;intense love&rsquo;; Douay &lsquo;a constant mutual charity.&rsquo;',
+    ('1 Peter', 4, 8)))
+DICTIONARY_ES['ektenes'] = ('ekten&#275;́s',
+    'ENTRAÑABLE, intenso &mdash; literalmente «extendido», de <em>ekteín&#333;</em>, «extender». &#9888; El adjetivo está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-8">1 Pedro 4:8</a>, «mantengan entrañable el amor de unos por otros». El adverbio <em>ekten&#333;̂s</em> es el «ámense unos a otros entrañablemente» de <a href="1-peter-1.es.html#v22">1 Pedro 1:22</a> y la oración hecha «con fervor» por Pedro en <a href="acts-12.es.html#v12-5">Hechos 12:5</a>. RV60 en 4:8 «ferviente amor»; TNM 1987 «amor intenso».')
+
+DICTIONARY.append(('chorego', 'chorēgeō', 'χορηγέω', 'chorēgeō',
+    'TO SUPPLY, to provide what is needed &mdash; from <em>chor&#275;gos</em>, the citizen who paid for a chorus at a festival. &#9888; It stands in two verses of the New Testament: <a href="2-corinthians-9.html#v10">2 Corinthians 9:10</a>, &lsquo;the one who supplies seed to the sower &hellip; will supply,&rsquo; and <a href="1-peter-4.html#v4-11">1 Peter 4:11</a>, &lsquo;the strength that God supplies.&rsquo; KJV at 1 Peter 4:11 &lsquo;the ability which God giveth&rsquo;; ASV &lsquo;the strength which God supplieth&rsquo;; NWT 1984 &lsquo;the strength that God supplies.&rsquo;',
+    ('2 Corinthians', 9, 10)))
+DICTIONARY_ES['chorego'] = ('chor&#275;gé&#333;',
+    'SUMINISTRAR, proveer lo necesario &mdash; de <em>chor&#275;gós</em>, el ciudadano que pagaba un coro en una fiesta. &#9888; Está en dos versículos del Nuevo Testamento: <a href="2-corinthians-9.es.html#v10">2 Corintios 9:10</a>, «el que suministra abundante semilla al sembrador &hellip; suministrará», y <a href="1-peter-4.es.html#v4-11">1 Pedro 4:11</a>, «la fuerza que Dios suministra». RV60 en 1 Pedro 4:11 «el poder que Dios da»; TNM 1987 «la fuerza que Dios suministra».')
+
+DICTIONARY.append(('kratos', 'kratos', 'κράτος', 'kratos',
+    'MIGHT, power that prevails &mdash; a word of the doxologies. &#9888; &lsquo;To him be honor and eternal might&rsquo; at <a href="1-timothy-6.html#v6-16">1 Timothy 6:16</a>; &lsquo;to whom belong the glory and the might&rsquo; at <a href="1-peter-4.html#v4-11">1 Peter 4:11</a>; and in Jude&rsquo;s closing list, &lsquo;glory, majesty, dominion, and authority&rsquo; (<a href="jude-1.html#v25">Jude 1:25</a>), where this translation prints &lsquo;dominion.&rsquo; KJV at 1 Peter 4:11 &lsquo;praise and dominion&rsquo;; ASV &lsquo;the glory and the dominion&rsquo;; NWT 1984 &lsquo;the glory and the might.&rsquo;',
+    ('1 Timothy', 6, 16)))
+DICTIONARY_ES['kratos'] = ('krátos',
+    'PODER, fuerza que prevalece &mdash; una palabra de las doxologías. &#9888; «A él sea la honra y el poder eterno» en <a href="1-timothy-6.es.html#v6-16">1 Timoteo 6:16</a>; «a quien pertenecen la gloria y el poder» en <a href="1-peter-4.es.html#v4-11">1 Pedro 4:11</a>; y en la lista final de Judas, «gloria, majestad, dominio y autoridad» (<a href="jude-1.es.html#v25">Judas 1:25</a>), donde esta traducción imprime «dominio». RV60 en 1 Pedro 4:11 «la gloria y el imperio»; TNM 1987 «la gloria y la potencia».')
+
+DICTIONARY.append(('pyrosis', 'pyrōsis', 'πύρωσις', 'pyrōsis',
+    'BURNING &mdash; from <em>pyro&#333;</em>, &lsquo;to set on fire,&rsquo; and <em>pyr</em>, &lsquo;fire.&rsquo; &#9888; It stands in three verses of the New Testament: <a href="1-peter-4.html#v4-12">1 Peter 4:12</a>, &lsquo;do not be surprised at the burning among you,&rsquo; and &lsquo;the smoke of her burning&rsquo; at Revelation 18:9 and 18:18 (not yet on these pages). In the Greek of Proverbs 27:21 it is the testing of silver and gold. KJV at 1 Peter 4:12 &lsquo;the fiery trial&rsquo;; NWT 1984 &lsquo;the burning among YOU&rsquo;; Douay &lsquo;the burning heat.&rsquo;',
+    ('1 Peter', 4, 12)))
+DICTIONARY_ES['pyrosis'] = ('pýr&#333;sis',
+    'FUEGO ARDIENTE, incendio &mdash; de <em>pyró&#333;</em>, «encender», y <em>pŷr</em>, «fuego». &#9888; Está en tres versículos del Nuevo Testamento: <a href="1-peter-4.es.html#v4-12">1 Pedro 4:12</a>, «no se sorprendan del fuego ardiente que hay entre ustedes», y «el humo de su incendio» en Apocalipsis 18:9 y 18:18 (todavía no en estas páginas). En el griego de Proverbios 27:21 es la prueba de la plata y del oro. RV60 en 1 Pedro 4:12 «del fuego de prueba»; TNM 1987 «del incendio entre ustedes».')
+
+DICTIONARY.append(('allotriepiskopos', 'allotriepiskopos', 'ἀλλοτριεπίσκοπος', 'allotriepiskopos',
+    'A MEDDLER (?) &mdash; <em>allotrios</em>, &lsquo;belonging to another,&rsquo; and <a href="dictionary.html#episkopos">episkopos</a>, &lsquo;overseer&rsquo;: an overseer of what is not his. &#9888; It stands in one verse of the New Testament, <a href="1-peter-4.html#v4-15">1 Peter 4:15</a>, last in a list after murderer, thief and evildoer, and no earlier Greek use of it is known (reported, not checked here), so its sense is uncertain. KJV &lsquo;a busybody in other men&rsquo;s matters&rsquo;; ASV &lsquo;a meddler in other men&rsquo;s matters&rsquo;; Douay &lsquo;a coveter of other men&rsquo;s things,&rsquo; from the Latin <em>alienorum appetitor</em>.',
+    ('1 Peter', 4, 15)))
+DICTIONARY_ES['allotriepiskopos'] = ('allotriepískopos',
+    'ENTROMETIDO (?) &mdash; <em>allótrios</em>, «de otro», y <a href="diccionario.html#episkopos">epískopos</a>, «supervisor»: un supervisor de lo que no es suyo. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-15">1 Pedro 4:15</a>, el último de una lista tras asesino, ladrón y malhechor, y no se conoce ningún uso griego anterior (se informa, no comprobado aquí), así que su sentido es incierto. RV60 «por entremeterse en lo ajeno»; TNM 1987 «entremetido en asuntos ajenos»; la Vulgata <em>alienorum appetitor</em>, «el que desea lo ajeno».')
+
+DICTIONARY.append(('ktistes', 'ktistēs', 'κτίστης', 'ktistēs',
+    'CREATOR &mdash; from <em>ktiz&#333;</em>, &lsquo;to create.&rsquo; &#9888; The noun stands in one verse of the New Testament, <a href="1-peter-4.html#v4-19">1 Peter 4:19</a>, &lsquo;entrust their souls to a faithful Creator.&rsquo; Elsewhere the New Testament uses the verb, as in &lsquo;the creation rather than the Creator&rsquo; at <a href="romans-1.html#v25">Romans 1:25</a>, where the Greek reads &lsquo;the one who created.&rsquo; KJV at 1 Peter 4:19 &lsquo;as unto a faithful Creator&rsquo;; NWT 1984 &lsquo;a faithful Creator.&rsquo;',
+    ('1 Peter', 4, 19)))
+DICTIONARY_ES['ktistes'] = ('ktíst&#275;s',
+    'CREADOR &mdash; de <em>ktíz&#333;</em>, «crear». &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-19">1 Pedro 4:19</a>, «encomienden sus almas a un Creador fiel». En otros lugares el Nuevo Testamento usa el verbo, como en «a la creación antes que al Creador» de <a href="romans-1.es.html#v25">Romanos 1:25</a>, donde el griego dice «el que creó». RV60 en 1 Pedro 4:19 «al fiel Creador»; TNM 1987 «a un fiel Creador».')
+
+DICTIONARY.append(('agathopoiia', 'agathopoiia', 'ἀγαθοποιΐα', 'agathopoiia',
+    'DOING GOOD &mdash; <em>agathos</em>, &lsquo;good,&rsquo; and <em>poie&#333;</em>, &lsquo;to do.&rsquo; &#9888; The noun stands in one verse of the New Testament, <a href="1-peter-4.html#v4-19">1 Peter 4:19</a>, &lsquo;in doing good.&rsquo; The verb <em>agathopoie&#333;</em> is the &lsquo;doing good&rsquo; of <a href="1-peter-2.html#v2-15">1 Peter 2:15</a>, <a href="1-peter-2.html#v2-20">1 Peter 2:20</a>, <a href="1-peter-3.html#v3-6">1 Peter 3:6</a> and <a href="1-peter-3.html#v3-17">1 Peter 3:17</a>, and the adjective is &lsquo;those who do good&rsquo; at <a href="1-peter-2.html#v2-14">1 Peter 2:14</a>. KJV &lsquo;in well doing&rsquo;; NWT 1984 &lsquo;while they are doing good.&rsquo;',
+    ('1 Peter', 4, 19)))
+DICTIONARY_ES['agathopoiia'] = ('agathopoiía',
+    'EL HACER EL BIEN &mdash; <em>agathós</em>, «bueno», y <em>poié&#333;</em>, «hacer». &#9888; El sustantivo está en un solo versículo del Nuevo Testamento, <a href="1-peter-4.es.html#v4-19">1 Pedro 4:19</a>, «haciendo el bien». El verbo <em>agathopoié&#333;</em> es el «hacer el bien» de <a href="1-peter-2.es.html#v2-15">1 Pedro 2:15</a>, <a href="1-peter-2.es.html#v2-20">1 Pedro 2:20</a>, <a href="1-peter-3.es.html#v3-6">1 Pedro 3:6</a> y <a href="1-peter-3.es.html#v3-17">1 Pedro 3:17</a>, y el adjetivo es «los que hacen el bien» de <a href="1-peter-2.es.html#v2-14">1 Pedro 2:14</a>. RV60 «y hagan el bien»; TNM 1987 «mientras están haciendo el bien».')
+
+def _pe4_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe4_fix([('and 1 Peter 4:4 (the second not yet on these pages), and Titus 1:6', 'and <a href="1-peter-4.html#v4-4">1 Peter 4:4</a>, and Titus 1:6'), ('y 1 Pedro 4:4, esta todavía no en estas páginas, y', 'y <a href="1-peter-4.es.html#v4-4">1 Pedro 4:4</a>, y'), ('and 1 Peter 4:9 (the second not yet on these pages).', 'and <a href="1-peter-4.html#v4-9">1 Peter 4:9</a>.'), ('y 1 Pedro 4:9 (el segundo todavía no en estas páginas).', 'y <a href="1-peter-4.es.html#v4-9">1 Pedro 4:9</a>.'), ('and 1 Peter 4:11, &lsquo;as oracles of God&rsquo; (not yet on these pages).', 'and <a href="1-peter-4.html#v4-11">1 Peter 4:11</a>, &lsquo;as oracles of God.&rsquo;'), ('y 1 Pedro 4:11, «como oráculos de Dios» (todavía no en estas páginas).', 'y <a href="1-peter-4.es.html#v4-11">1 Pedro 4:11</a>, «como oráculos de Dios».'), ('and 1 Peter 4:3 (not yet on these pages), &lsquo;lawless idolatries.&rsquo;', 'and <a href="1-peter-4.html#v4-3">1 Peter 4:3</a>, &lsquo;unlawful idolatries.&rsquo;'), ('y 1 Pedro 4:3 (todavía no en estas páginas), «idolatrías ilícitas».', 'y <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>, «idolatrías ilícitas».'), ('1 Peter 4:16 (&lsquo;if as a Christian&hellip;&rsquo;; not yet on these pages)', '<a href="1-peter-4.html#v4-16">1 Peter 4:16</a> (&lsquo;if as a Christian&hellip;&rsquo;)'), ('1 Pedro 4:16 («si como cristiano…»; todavía no en estas páginas)', '<a href="1-peter-4.es.html#v4-16">1 Pedro 4:16</a> («si como cristiano…»)'), ('the verb of the same stem is at 1 Peter 4:2 (not yet on these pages)', 'the verb of the same stem is at <a href="1-peter-4.html#v4-2">1 Peter 4:2</a>'), ('el verbo de la misma raíz está en 1 Pedro 4:2 (todavía no en estas páginas)', 'el verbo de la misma raíz está en <a href="1-peter-4.es.html#v4-2">1 Pedro 4:2</a>'), ('and 1 Peter 4:3 (not yet on these pages). Romans 9 uses', 'and <a href="1-peter-4.html#v4-3">1 Peter 4:3</a>, &lsquo;what the nations intend.&rsquo; Romans 9 uses'), ('y 1 Pedro 4:3 (todavía no en estas páginas). Romanos 9 usa', 'y <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>, «lo que se proponen las naciones». Romanos 9 usa'), ('and 1 Peter 4:7 and 5:8 (these two not yet on these pages)', 'and <a href="1-peter-4.html#v4-7">1 Peter 4:7</a> and 5:8 (the last not yet on these pages)'), ('y 1 Pedro 4:7 y 5:8 (estos dos todavía no en estas páginas)', 'y <a href="1-peter-4.es.html#v4-7">1 Pedro 4:7</a> y 5:8 (el último todavía no en estas páginas)'), ('and 1 Peter 4:9 (not yet on these pages). The noun', 'and <a href="1-peter-4.html#v4-9">1 Peter 4:9</a>. The noun'), ('y 1 Pedro 4:9 (todavía no en estas páginas). El sustantivo', 'y <a href="1-peter-4.es.html#v4-9">1 Pedro 4:9</a>. El sustantivo'), ('and 1 Peter 4:7 (not yet on these pages). KJV at Titus 2:6', 'and <a href="1-peter-4.html#v4-7">1 Peter 4:7</a>. KJV at Titus 2:6'), ('y 1 Pedro 4:7 (todavía no en estas páginas). RV60 en Tito 2:6', 'y <a href="1-peter-4.es.html#v4-7">1 Pedro 4:7</a>. RV60 en Tito 2:6'), ("names the old life's abandon (1 Peter 4:3).", 'names the old life\'s abandon (<a href="1-peter-4.html#v4-3">1 Peter 4:3</a>).'), ('nombra el abandono de la vida antigua en 1 Pedro 4:3.', 'nombra el abandono de la vida antigua en <a href="1-peter-4.es.html#v4-3">1 Pedro 4:3</a>.')])
+
+XREFS.extend([
+    (("1 Peter", 3, 18), ("1 Peter", 4, 1), "suffered in the flesh"),
+    (("Romans", 6, 7), ("1 Peter", 4, 1), "done with sin"),
+    (("Romans", 13, 13), ("1 Peter", 4, 3), "revels"),
+    (("Galatians", 5, 21), ("1 Peter", 4, 3), "revels"),
+    (("Acts", 10, 28), ("1 Peter", 4, 3), "unlawful"),
+    (("Ephesians", 5, 18), ("1 Peter", 4, 4), "debauchery"),
+    (("Acts", 10, 42), ("1 Peter", 4, 5), "the living and the dead"),
+    (("2 Timothy", 4, 1), ("1 Peter", 4, 5), "judge the living and the dead"),
+    (("1 Peter", 3, 19), ("1 Peter", 4, 6), "proclaimed to the dead"),
+    (("James", 5, 8), ("1 Peter", 4, 7), "has drawn near"),
+    (("Romans", 13, 12), ("1 Peter", 4, 7), "the day has drawn near"),
+    (("1 Peter", 1, 22), ("1 Peter", 4, 8), "earnest love"),
+    (("James", 5, 20), ("1 Peter", 4, 8), "a multitude of sins"),
+    (("Philippians", 2, 14), ("1 Peter", 4, 9), "without grumbling"),
+    (("Romans", 12, 6), ("1 Peter", 4, 10), "gifts"),
+    (("1 Corinthians", 4, 2), ("1 Peter", 4, 10), "stewards"),
+    (("Romans", 3, 2), ("1 Peter", 4, 11), "the oracles of God"),
+    (("Hebrews", 13, 21), ("1 Peter", 4, 11), "to whom be the glory"),
+    (("1 Peter", 1, 7), ("1 Peter", 4, 12), "tested by fire"),
+    (("Philippians", 3, 10), ("1 Peter", 4, 13), "sharing his sufferings"),
+    (("Matthew", 5, 11), ("1 Peter", 4, 14), "insulted"),
+    (("Acts", 5, 41), ("1 Peter", 4, 14), "for the Name"),
+    (("Acts", 11, 26), ("1 Peter", 4, 16), "Christian"),
+    (("Jeremiah", 25, 29), ("1 Peter", 4, 17), "judgment begins at home"),
+    (("1 Peter", 2, 8), ("1 Peter", 4, 17), "disobey"),
+    (("Romans", 5, 7), ("1 Peter", 4, 18), "scarcely"),
+    (("Luke", 23, 46), ("1 Peter", 4, 19), "entrust"),
+])
+
+CHAPTER_ART["1pe4"] = [dict(
+    file="priscilla-three-youths-in-the-furnace.jpg",
+    title="The Three Young Men in the Fiery Furnace",   title_es="Los tres jóvenes en el horno de fuego",
+    artist="Unknown Roman painter (as reproduced by Joseph Wilpert, 1903)",
+    year="3rd century",
+    location="Catacomb of Priscilla, Rome",
+    location_es="Catacumba de Priscila, Roma",
+    alt="Three young men in tunics, trousers and pointed caps stand side by side with their arms raised, flames rising around their feet, while a dove flies above them.",
+    note="&#9888; The three of <a href=\"daniel-3.html#v3-25\">Daniel 3</a>, &lsquo;walking in the middle of the fire, and they are unharmed,&rsquo; painted on a wall where Christians of Rome "
+         "buried their dead. The chapter names no persecution; the painting sits beside <a href=\"1-peter-4.html#v4-12\">verse 12</a>, &lsquo;do not be surprised at the burning among you, "
+         "which is coming upon you to test you.&rsquo;",
+    note_es="&#9888; Los tres de <a href=\"daniel-3.es.html#v3-25\">Daniel 3</a>, «que se pasean en medio del fuego, y no sufren daño alguno», pintados en un muro donde los cristianos de Roma "
+            "enterraban a sus muertos. El capítulo no nombra ninguna persecución; la pintura acompaña al <a href=\"1-peter-4.es.html#v4-12\">versículo 12</a>, «no se sorprendan del fuego "
+            "ardiente que hay entre ustedes, que les viene para probarlos».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Shadrach,_Meshach,_and_Abednego_in_the_fiery_furnace,_from_the_book_Die_Malereien_der_Katakomben_Roms,_plate_78,_levels_adjusted.jpg",
+)]
+
+CHRON_CHAPTERS["1pe4"] = dict(era='apostolic',
+    when="'Arm yourselves with the same way of thinking'; the old life of revels and drinking parties, and neighbors surprised at the change; the good news proclaimed also to the dead; 'the end of all things has drawn near'; 'love covers a multitude of sins'; gifts held as stewards; 'the burning among you'; insulted 'for the name of Christ' and suffering 'as a Christian'; judgment beginning from the house of God, with Proverbs 11:31 in Greek; and souls entrusted to a faithful Creator.",
+    clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
+
