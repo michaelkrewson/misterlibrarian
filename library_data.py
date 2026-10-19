@@ -42007,3 +42007,167 @@ CHRON_CHAPTERS["heb7"] = dict(era='apostolic',
     when="Melchizedek, king of Salem and priest of God Most High, read from Genesis 14 and Psalm 110: without father, without mother, without genealogy, receiving a tenth from Abraham and blessing him, so that Levi 'paid tithes' through Abraham. A change of priesthood brings a change of law; a priest from Judah 'by the power of an indestructible life'; the oath 'Jehovah has sworn'; Jesus the guarantor of a better covenant, who always lives to plead, and who offered himself once for all.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 8 -----------------------------------------------------------
+DICTIONARY.append(('kephalaion', 'kephalaion', 'κεφάλαιον', 'kephalaion',
+    'THE MAIN POINT, the sum &mdash; from <em>kephal&#275;</em>, &lsquo;head&rsquo;: the head of a matter, or the sum a column of figures adds up to, and so a sum of money. &#9888; It stands in two verses of the New Testament: the tribune&rsquo;s &lsquo;I bought this citizenship for a large sum&rsquo; (<a href="acts-22.html#v22-28">Acts 22:28</a>), and &lsquo;Now the main point in what we are saying is this&rsquo; (<a href="hebrews-8.html#v8-1">Hebrews 8:1</a>). At Hebrews 8:1 the KJV and Douay &lsquo;this is the sum&rsquo;; ASV &lsquo;the chief point&rsquo;; NWT 1984 &lsquo;the main point.&rsquo;',
+    ('Acts', 22, 28)))
+DICTIONARY_ES['kephalaion'] = ('kephálaion',
+    'EL PUNTO PRINCIPAL, la suma &mdash; de <em>kephal&#275;́</em>, «cabeza»: la cabeza de un asunto, o la suma a la que asciende una columna de cifras, y de ahí una suma de dinero. &#9888; Está en dos versículos del Nuevo Testamento: el «Yo adquirí esta ciudadanía por una gran suma» del tribuno (<a href="acts-22.es.html#v22-28">Hechos 22:28</a>), y «el punto principal de lo que decimos es este» (<a href="hebrews-8.es.html#v8-1">Hebreos 8:1</a>). En Hebreos 8:1 la RV 1909 «la suma»; RV60 y TNM 1987 «el punto principal».')
+
+DICTIONARY.append(('megalosyne', 'megalōsynē', 'μεγαλωσύνη', 'megalōsynē',
+    'MAJESTY, greatness &mdash; from <em>megas</em>, &lsquo;great.&rsquo; &#9888; It stands in three verses of the New Testament: the Son &lsquo;sat down at the right hand of the Majesty on high&rsquo; (<a href="hebrews-1.html#v3">Hebrews 1:3</a>); &lsquo;the throne of the Majesty in the heavens&rsquo; (<a href="hebrews-8.html#v8-1">Hebrews 8:1</a>); and the closing praise of Jude, &lsquo;glory, majesty, dominion, and authority&rsquo; (<a href="jude-1.html#v25">Jude 1:25</a>). In Hebrews it stands for God himself, a reverent way of naming him. KJV and ASV &lsquo;the Majesty.&rsquo;',
+    ('Hebrews', 1, 3)))
+DICTIONARY_ES['megalosyne'] = ('megal&#333;sýn&#275;',
+    'MAJESTAD, grandeza &mdash; de <em>megas</em>, «grande». &#9888; Está en tres versículos del Nuevo Testamento: el Hijo «se sentó a la diestra de la Majestad en las alturas» (<a href="hebrews-1.es.html#v3">Hebreos 1:3</a>); «el trono de la Majestad en los cielos» (<a href="hebrews-8.es.html#v8-1">Hebreos 8:1</a>); y la alabanza final de Judas, «gloria, majestad, dominio y autoridad» (<a href="jude-1.es.html#v25">Judas 1:25</a>). En Hebreos está en lugar de Dios mismo, una manera reverente de nombrarlo. RV60 «la Majestad».')
+
+DICTIONARY.append(('pegnymi', 'pēgnymi', 'πήγνυμι', 'pēgnymi',
+    'TO PITCH a tent, to fix in the ground. &#9888; It stands in one verse of the New Testament, <a href="hebrews-8.html#v8-2">Hebrews 8:2</a>, &lsquo;the true tent, which Jehovah pitched, not a human being.&rsquo; The phrase is the Greek of <a href="numbers-24.html#v24-6">Numbers 24:6</a>, &lsquo;like tents which the Lord pitched&rsquo; (checked), where the Hebrew, as this translation reads it, has &lsquo;like aloes Jehovah has planted.&rsquo; KJV &lsquo;which the Lord pitched&rsquo;; NWT 1984 &lsquo;which Jehovah put up.&rsquo;',
+    ('Hebrews', 8, 2)))
+DICTIONARY_ES['pegnymi'] = ('p&#275;́gnymi',
+    'LEVANTAR una tienda, clavar en tierra. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-8.es.html#v8-2">Hebreos 8:2</a>, «la tienda verdadera, que levantó Jehová, no un ser humano». La frase es el griego de <a href="numbers-24.es.html#v24-6">Números 24:6</a>, «como tiendas que levantó el Señor» (comprobado), donde el hebreo, tal como lo lee esta traducción, tiene «como áloes que Jehová ha plantado». RV60 «que levantó el Señor»; TNM 1987 «que Jehová levantó».')
+
+DICTIONARY.append(('leitourgia', 'leitourgia', 'λειτουργία', 'leitourgia',
+    'PUBLIC SERVICE, ministry &mdash; in ordinary Greek a public duty performed for the city at one&rsquo;s own cost (reported, not checked here), and in the Greek Bible the service of priests; the word that gives English &lsquo;liturgy.&rsquo; It is the noun of <em>leitourgos</em>, &lsquo;minister&rsquo; (<a href="dictionary.html#leitourgos">leitourgos</a>). &#9888; It stands in six verses of the New Testament: Zechariah&rsquo;s days of &lsquo;service&rsquo; in the temple (<a href="luke-1.html#v23">Luke 1:23</a>); the collection for Jerusalem (<a href="2-corinthians-9.html#v12">2 Corinthians 9:12</a>); &lsquo;the sacrifice and service of your faith&rsquo; (<a href="philippians-2.html#v2-17">Philippians 2:17</a>); Epaphroditus&rsquo;s service (<a href="philippians-2.html#v2-30">Philippians 2:30</a>); the high priest&rsquo;s &lsquo;more excellent ministry&rsquo; (<a href="hebrews-8.html#v8-6">Hebrews 8:6</a>); and the vessels &lsquo;of the ministry&rsquo; at Hebrews 9:21 (not yet on these pages). KJV at Hebrews 8:6 &lsquo;a more excellent ministry&rsquo;; NWT 1984 &lsquo;a more excellent public service.&rsquo;',
+    ('Luke', 1, 23)))
+DICTIONARY_ES['leitourgia'] = ('leitourgía',
+    'SERVICIO PÚBLICO, ministerio &mdash; en el griego corriente, una obligación pública prestada a la ciudad a costa propia (dato referido, no comprobado aquí), y en la Biblia griega el servicio de los sacerdotes; la palabra de la que viene «liturgia». Es el sustantivo de <em>leitourgós</em>, «ministro» (<a href="diccionario.html#leitourgos">leitourgos</a>). &#9888; Está en seis versículos del Nuevo Testamento: los días de «servicio» de Zacarías en el templo (<a href="luke-1.es.html#v23">Lucas 1:23</a>); la colecta para Jerusalén (<a href="2-corinthians-9.es.html#v12">2 Corintios 9:12</a>); «el sacrificio y el servicio de la fe de ustedes» (<a href="philippians-2.es.html#v2-17">Filipenses 2:17</a>); el servicio de Epafrodito (<a href="philippians-2.es.html#v2-30">Filipenses 2:30</a>); el «ministerio tanto más excelente» del sumo sacerdote (<a href="hebrews-8.es.html#v8-6">Hebreos 8:6</a>); y los utensilios «del ministerio» en Hebreos 9:21 (todavía no en estas páginas). RV60 en Hebreos 8:6 «tanto mejor ministerio»; TNM 1987 «un servicio público más admirable».')
+
+DICTIONARY.append(('skia', 'skia', 'σκιά', 'skia',
+    'SHADOW, shade. &#9888; It stands in seven verses of the New Testament: &lsquo;the region and shadow of death&rsquo; (<a href="matthew-4.html#v4-16">Matthew 4:16</a>, from Isaiah, and <a href="luke-1.html#v79">Luke 1:79</a>); the mustard plant whose shade the birds nest in (<a href="mark-4.html#v4-32">Mark 4:32</a>); Peter&rsquo;s shadow falling on the sick (<a href="acts-5.html#v5-15">Acts 5:15</a>); and three verses that set a shadow against the reality that casts it: &lsquo;a shadow of the things to come, but the body is Christ&rsquo;s&rsquo; (<a href="colossians-2.html#v2-17">Colossians 2:17</a>), &lsquo;a copy and shadow of the heavenly things&rsquo; (<a href="hebrews-8.html#v8-5">Hebrews 8:5</a>), and the law&rsquo;s &lsquo;shadow of the good things to come&rsquo; at Hebrews 10:1 (not yet on these pages). KJV and NWT 1984 &lsquo;shadow&rsquo; in all three.',
+    ('Matthew', 4, 16)))
+DICTIONARY_ES['skia'] = ('skiá',
+    'SOMBRA. &#9888; Está en siete versículos del Nuevo Testamento: «región y sombra de muerte» (<a href="matthew-4.es.html#v4-16">Mateo 4:16</a>, tomado de Isaías, y <a href="luke-1.es.html#v79">Lucas 1:79</a>); la planta de mostaza bajo cuya sombra anidan las aves (<a href="mark-4.es.html#v4-32">Marcos 4:32</a>); la sombra de Pedro que cae sobre los enfermos (<a href="acts-5.es.html#v5-15">Hechos 5:15</a>); y tres versículos que oponen una sombra a la realidad que la proyecta: «sombra de lo que ha de venir, pero el cuerpo es de Cristo» (<a href="colossians-2.es.html#v2-17">Colosenses 2:17</a>), «copia y sombra de las cosas celestiales» (<a href="hebrews-8.es.html#v8-5">Hebreos 8:5</a>), y la «sombra de los bienes venideros» de la ley en Hebreos 10:1 (todavía no en estas páginas). RV60 «sombra» en los tres.')
+
+DICTIONARY.append(('amemptos', 'amemptos', 'ἄμεμπτος', 'amemptos',
+    'FAULTLESS, blameless &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>memphomai</em>, &lsquo;to find fault&rsquo; (<a href="dictionary.html#memphomai">memphomai</a>). &#9888; As an adjective it stands in five verses of the New Testament: Zechariah and Elizabeth &lsquo;walking blamelessly&rsquo; (<a href="luke-1.html#v6">Luke 1:6</a>); &lsquo;blameless and innocent&rsquo; (<a href="philippians-2.html#v2-15">Philippians 2:15</a>); Paul &lsquo;as to the righteousness that is in the law, become blameless&rsquo; (<a href="philippians-3.html#v3-6">Philippians 3:6</a>); hearts &lsquo;blameless in holiness&rsquo; (<a href="1-thessalonians-3.html#v3-13">1 Thessalonians 3:13</a>); and &lsquo;if that first one had been faultless&rsquo; (<a href="hebrews-8.html#v8-7">Hebrews 8:7</a>). Its adverb stands at <a href="1-thessalonians-2.html#v2-10">1 Thessalonians 2:10</a> and <a href="1-thessalonians-5.html#v5-23">1 Thessalonians 5:23</a>. At Hebrews 8:7 this translation prints &lsquo;faultless&rsquo; to keep the pair with &lsquo;finding fault&rsquo; in the next verse. KJV, ASV and NWT 1984 at Hebrews 8:7 &lsquo;faultless.&rsquo;',
+    ('Luke', 1, 6)))
+DICTIONARY_ES['amemptos'] = ('ámemptos',
+    'SIN FALTA, irreprochable &mdash; <em>a-</em>, «no», y <em>mémphomai</em>, «hallar falta» (<a href="diccionario.html#memphomai">memphomai</a>). &#9888; Como adjetivo está en cinco versículos del Nuevo Testamento: Zacarías y Elisabet «andando irreprensibles» (<a href="luke-1.es.html#v6">Lucas 1:6</a>); «irreprochables e inocentes» (<a href="philippians-2.es.html#v2-15">Filipenses 2:15</a>); Pablo «en cuanto a la justicia que está en la ley, llegado a ser irreprochable» (<a href="philippians-3.es.html#v3-6">Filipenses 3:6</a>); corazones «irreprochables en santidad» (<a href="1-thessalonians-3.es.html#v3-13">1 Tesalonicenses 3:13</a>); y «si aquel primero hubiera sido sin falta» (<a href="hebrews-8.es.html#v8-7">Hebreos 8:7</a>). Su adverbio está en <a href="1-thessalonians-2.es.html#v2-10">1 Tesalonicenses 2:10</a> y <a href="1-thessalonians-5.es.html#v5-23">1 Tesalonicenses 5:23</a>. En Hebreos 8:7 esta traducción dice «sin falta» para conservar el par con «hallándoles falta» del versículo siguiente. RV60 en Hebreos 8:7 «sin defecto»; TNM 1987 «exento de falta».')
+
+DICTIONARY.append(('memphomai', 'memphomai', 'μέμφομαι', 'memphomai',
+    'TO FIND FAULT, to blame. &#9888; It stands in two verses of the New Testament: &lsquo;Why does he still find fault?&rsquo; (<a href="romans-9.html#v9-19">Romans 9:19</a>), and &lsquo;For finding fault with them, he says&rsquo; (<a href="hebrews-8.html#v8-8">Hebrews 8:8</a>), a verse after its negative <em>amemptos</em>, &lsquo;faultless&rsquo; (<a href="dictionary.html#amemptos">amemptos</a>). At Hebrews 8:8 the editions differ between &lsquo;finding fault with them&rsquo; and &lsquo;finding fault, he says to them&rsquo;; see the note on the verse. KJV at Hebrews 8:8 &lsquo;finding fault with them&rsquo;; NWT 1984 &lsquo;he does find fault with the people.&rsquo;',
+    ('Romans', 9, 19)))
+DICTIONARY_ES['memphomai'] = ('mémphomai',
+    'HALLAR FALTA, culpar. &#9888; Está en dos versículos del Nuevo Testamento: «¿Por qué todavía encuentra faltas?» (<a href="romans-9.es.html#v9-19">Romanos 9:19</a>), y «Porque, hallándoles falta, dice» (<a href="hebrews-8.es.html#v8-8">Hebreos 8:8</a>), un versículo después de su negación <em>ámemptos</em>, «sin falta» (<a href="diccionario.html#amemptos">amemptos</a>). En Hebreos 8:8 las ediciones difieren entre «hallándoles falta» y «hallando falta, les dice»; véase la nota del versículo. RV60 en Hebreos 8:8 «reprendiéndolos»; TNM 1987 «él encuentra falta en el pueblo».')
+
+DICTIONARY.append(('emmeno', 'emmenō', 'ἐμμένω', 'emmenō',
+    'TO CONTINUE IN, to abide by, to stay &mdash; <em>en</em>, &lsquo;in,&rsquo; and <em>men&#333;</em>, &lsquo;to remain.&rsquo; &#9888; It stands in four verses of the New Testament: &lsquo;encouraging them to remain in the faith&rsquo; (<a href="acts-14.html#v14-22">Acts 14:22</a>); Paul who &lsquo;stayed on a whole two years in his own rented quarters&rsquo; (<a href="acts-28.html#v28-30">Acts 28:30</a>); &lsquo;Cursed is everyone who does not abide by all the things written in the book of the law&rsquo; (<a href="galatians-3.html#v10">Galatians 3:10</a>); and &lsquo;they did not continue in my covenant&rsquo; (<a href="hebrews-8.html#v8-9">Hebrews 8:9</a>). KJV at Hebrews 8:9 &lsquo;they continued not in my covenant&rsquo;; NWT 1984 &lsquo;they did not continue in my covenant.&rsquo;',
+    ('Acts', 14, 22)))
+DICTIONARY_ES['emmeno'] = ('emmén&#333;',
+    'PERMANECER EN, atenerse a, quedarse &mdash; <em>en</em>, «en», y <em>mén&#333;</em>, «permanecer». &#9888; Está en cuatro versículos del Nuevo Testamento: «animándolos a permanecer en la fe» (<a href="acts-14.es.html#v14-22">Hechos 14:22</a>); Pablo que «permaneció dos años enteros en su propia vivienda alquilada» (<a href="acts-28.es.html#v28-30">Hechos 28:30</a>); «Maldito todo el que no permanece en todas las cosas escritas en el libro de la ley» (<a href="galatians-3.es.html#v10">Gálatas 3:10</a>); y «no permanecieron en mi pacto» (<a href="hebrews-8.es.html#v8-9">Hebreos 8:9</a>). RV60 en Hebreos 8:9 «no permanecieron en mi pacto»; TNM 1987 «no continuaron en mi pacto».')
+
+DICTIONARY.append(('dianoia', 'dianoia', 'διάνοια', 'dianoia',
+    'MIND, understanding, way of thinking &mdash; <em>dia</em>, &lsquo;through,&rsquo; and <em>nous</em>, &lsquo;mind.&rsquo; &#9888; It is the word of &lsquo;You shall love Jehovah your God with your whole heart and with your whole soul and with your whole mind&rsquo; (<a href="matthew-22.html#v22-37">Matthew 22:37</a>), where the Hebrew of <a href="deuteronomy-6.html#v6-5">Deuteronomy 6:5</a> has &lsquo;utmost&rsquo; in the third place (checked); and of the new covenant, &lsquo;putting my laws into their mind&rsquo; (<a href="hebrews-8.html#v8-10">Hebrews 8:10</a>), where the Hebrew of Jeremiah has &lsquo;within them&rsquo; (<a href="jeremiah-31.html#v31-32">Jeremiah 31:32</a>). KJV and ASV at Hebrews 8:10 &lsquo;into their mind.&rsquo;',
+    ('Matthew', 22, 37)))
+DICTIONARY_ES['dianoia'] = ('diánoia',
+    'MENTE, entendimiento, manera de pensar &mdash; <em>dia</em>, «a través», y <em>nous</em>, «mente». &#9888; Es la palabra de «Amarás a Jehová tu Dios con todo tu corazón y con toda tu alma y con toda tu mente» (<a href="matthew-22.es.html#v22-37">Mateo 22:37</a>), donde el hebreo de <a href="deuteronomy-6.es.html#v6-5">Deuteronomio 6:5</a> tiene «máximo» en tercer lugar (comprobado); y del pacto nuevo, «poniendo mis leyes en su mente» (<a href="hebrews-8.es.html#v8-10">Hebreos 8:10</a>), donde el hebreo de Jeremías tiene «en su interior» (<a href="jeremiah-31.es.html#v31-32">Jeremías 31:32</a>). RV60 en Hebreos 8:10 «en la mente de ellos»; RV 1909 «en el alma de ellos».')
+
+DICTIONARY.append(('epigrapho', 'epigraphō', 'ἐπιγράφω', 'epigraphō',
+    'TO WRITE ON, to inscribe &mdash; <em>epi</em>, &lsquo;on,&rsquo; and <em>graph&#333;</em>, &lsquo;to write&rsquo;; its noun <em>epigraph&#275;</em> is an &lsquo;inscription,&rsquo; as on the coin at <a href="matthew-22.html#v22-20">Matthew 22:20</a>. &#9888; The verb stands in five verses of the New Testament: &lsquo;the inscription of the charge against him was written&rsquo; (<a href="mark-15.html#v15-26">Mark 15:26</a>); the altar at Athens &lsquo;on which had been inscribed, To an unknown god&rsquo; (<a href="acts-17.html#v17-23">Acts 17:23</a>); &lsquo;I will also write them on their hearts&rsquo; (<a href="hebrews-8.html#v8-10">Hebrews 8:10</a>) and its repetition at Hebrews 10:16 (not yet on these pages); and the names of the twelve tribes written on the gates of the new Jerusalem (<a href="revelation-21.html#v21-12">Revelation 21:12</a>). KJV at Hebrews 8:10 &lsquo;write them in their hearts.&rsquo;',
+    ('Mark', 15, 26)))
+DICTIONARY_ES['epigrapho'] = ('epigráph&#333;',
+    'ESCRIBIR SOBRE, inscribir &mdash; <em>epi</em>, «sobre», y <em>gráph&#333;</em>, «escribir»; su sustantivo <em>epigraph&#275;́</em> es una «inscripción», como la de la moneda en <a href="matthew-22.es.html#v22-20">Mateo 22:20</a>. &#9888; El verbo está en cinco versículos del Nuevo Testamento: «estaba escrita la inscripción de su causa» (<a href="mark-15.es.html#v15-26">Marcos 15:26</a>); el altar de Atenas «en el cual estaba inscrito: A un dios desconocido» (<a href="acts-17.es.html#v17-23">Hechos 17:23</a>); «también las escribiré sobre sus corazones» (<a href="hebrews-8.es.html#v8-10">Hebreos 8:10</a>) y su repetición en Hebreos 10:16 (todavía no en estas páginas); y los nombres de las doce tribus escritos en las puertas de la nueva Jerusalén (<a href="revelation-21.es.html#v21-12">Apocalipsis 21:12</a>). RV60 en Hebreos 8:10 «sobre su corazón las escribiré».')
+
+DICTIONARY.append(('polites', 'politēs', 'πολίτης', 'politēs',
+    'CITIZEN, fellow citizen &mdash; from <em>polis</em>, &lsquo;city.&rsquo; &#9888; It stands in four verses of the New Testament: the prodigal who &lsquo;attached himself to one of the citizens of that country&rsquo; (<a href="luke-15.html#v15-15">Luke 15:15</a>); the nobleman&rsquo;s &lsquo;citizens&rsquo; who &lsquo;hated him&rsquo; (<a href="luke-19.html#v19-14">Luke 19:14</a>); Paul, &lsquo;a citizen of a city not without distinction&rsquo; (<a href="acts-21.html#v21-39">Acts 21:39</a>); and &lsquo;each one his fellow citizen&rsquo; (<a href="hebrews-8.html#v8-11">Hebrews 8:11</a>), the word of the Greek of Jeremiah. The Textus Receptus printed <em>pl&#275;sion</em>, &lsquo;neighbour,&rsquo; at Hebrews 8:11, and the KJV follows it; ASV &lsquo;fellow-citizen&rsquo;; NWT 1984 &lsquo;fellow citizen.&rsquo;',
+    ('Luke', 15, 15)))
+DICTIONARY_ES['polites'] = ('polít&#275;s',
+    'CIUDADANO, conciudadano &mdash; de <em>polis</em>, «ciudad». &#9888; Está en cuatro versículos del Nuevo Testamento: el hijo pródigo que «se puso al servicio de uno de los ciudadanos de aquel país» (<a href="luke-15.es.html#v15-15">Lucas 15:15</a>); los «ciudadanos» del noble que «lo odiaban» (<a href="luke-19.es.html#v19-14">Lucas 19:14</a>); Pablo, «ciudadano de una ciudad no sin distinción» (<a href="acts-21.es.html#v21-39">Hechos 21:39</a>); y «cada uno a su conciudadano» (<a href="hebrews-8.es.html#v8-11">Hebreos 8:11</a>), la palabra del griego de Jeremías. El Textus Receptus imprimió <em>pl&#275;síon</em>, «prójimo», en Hebreos 8:11, y la Reina-Valera lo sigue; TNM 1987 «conciudadano».')
+
+DICTIONARY.append(('hileos', 'hileōs', 'ἵλεως', 'hileōs',
+    'MERCIFUL, gracious &mdash; of the family of <em>hilaskomai</em>, &lsquo;to be merciful, to make atonement&rsquo; (<a href="dictionary.html#hilaskomai">hilaskomai</a>). &#9888; It stands in two verses of the New Testament: Peter&rsquo;s &lsquo;God forbid, Lord!&rsquo; (<a href="matthew-16.html#v16-22">Matthew 16:22</a>), literally &lsquo;[God be] merciful to you,&rsquo; an idiom for warding something off; and &lsquo;I will be merciful to their unrighteous deeds&rsquo; (<a href="hebrews-8.html#v8-12">Hebrews 8:12</a>), from the Greek of Jeremiah, where the Hebrew has &lsquo;I will forgive their guilt&rsquo; (<a href="jeremiah-31.html#v31-33">Jeremiah 31:33</a>). KJV at Hebrews 8:12 &lsquo;I will be merciful&rsquo;; NIV &lsquo;I will forgive.&rsquo;',
+    ('Matthew', 16, 22)))
+DICTIONARY_ES['hileos'] = ('híle&#333;s',
+    'PROPICIO, clemente &mdash; de la familia de <em>hiláskomai</em>, «ser propicio, hacer expiación» (<a href="diccionario.html#hilaskomai">hilaskomai</a>). &#9888; Está en dos versículos del Nuevo Testamento: el «¡Lejos esté eso de ti, Señor!» de Pedro (<a href="matthew-16.es.html#v16-22">Mateo 16:22</a>), literalmente «[Dios te sea] propicio», un giro para conjurar algo; y «seré propicio a sus injusticias» (<a href="hebrews-8.es.html#v8-12">Hebreos 8:12</a>), del griego de Jeremías, donde el hebreo tiene «perdonaré su maldad» (<a href="jeremiah-31.es.html#v31-33">Jeremías 31:33</a>). RV60 en Hebreos 8:12 «seré propicio»; NVI «perdonaré».')
+
+DICTIONARY.append(('palaioo', 'palaioō', 'παλαιόω', 'palaioō',
+    'TO MAKE OLD, to wear out; in the passive, to grow old &mdash; from <em>palaios</em>, &lsquo;old.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;purses that do not wear out&rsquo; (<a href="luke-12.html#v12-33">Luke 12:33</a>); the heavens that &lsquo;will all wear out like a garment&rsquo; (<a href="hebrews-1.html#v11">Hebrews 1:11</a>); and twice in <a href="hebrews-8.html#v8-13">Hebrews 8:13</a>, &lsquo;he has made the first one old; and what is growing old and aging is near to vanishing.&rsquo; KJV at Hebrews 8:13 &lsquo;he hath made the first old&rsquo;; NWT 1984 &lsquo;he has made the former one obsolete.&rsquo;',
+    ('Luke', 12, 33)))
+DICTIONARY_ES['palaioo'] = ('palaió&#333;',
+    'HACER VIEJO, desgastar; en pasiva, envejecer &mdash; de <em>palaiós</em>, «viejo». &#9888; Está en tres versículos del Nuevo Testamento: «bolsas que no se desgasten» (<a href="luke-12.es.html#v12-33">Lucas 12:33</a>); los cielos que «como una vestidura se envejecerán» (<a href="hebrews-1.es.html#v11">Hebreos 1:11</a>); y dos veces en <a href="hebrews-8.es.html#v8-13">Hebreos 8:13</a>, «ha dado por viejo al primero; y lo que se va haciendo viejo y envejece está cerca de desaparecer». RV60 en Hebreos 8:13 «ha dado por viejo al primero»; TNM 1987 «ha hecho anticuado al anterior».')
+
+DICTIONARY.append(('gerasko', 'gēraskō', 'γηράσκω', 'gēraskō',
+    'TO GROW OLD, to age &mdash; from <em>g&#275;ras</em>, &lsquo;old age.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;when you grow old, you will stretch out your hands&rsquo; (<a href="john-21.html#v21-18">John 21:18</a>), to Peter, and &lsquo;what is growing old and aging is near to vanishing&rsquo; (<a href="hebrews-8.html#v8-13">Hebrews 8:13</a>). KJV at Hebrews 8:13 &lsquo;waxeth old&rsquo;; ASV &lsquo;waxeth aged.&rsquo;',
+    ('John', 21, 18)))
+DICTIONARY_ES['gerasko'] = ('g&#275;rásk&#333;',
+    'ENVEJECER &mdash; de <em>g&#275;́ras</em>, «vejez». &#9888; Está en dos versículos del Nuevo Testamento: «cuando seas viejo, extenderás tus manos» (<a href="john-21.es.html#v21-18">Juan 21:18</a>), dicho a Pedro, y «lo que se va haciendo viejo y envejece está cerca de desaparecer» (<a href="hebrews-8.es.html#v8-13">Hebreos 8:13</a>). RV60 en Hebreos 8:13 «se envejece».')
+
+DICTIONARY.append(('aphanismos', 'aphanismos', 'ἀφανισμός', 'aphanismos',
+    'VANISHING, disappearance, destruction &mdash; from <em>aphaniz&#333;</em>, &lsquo;to make unseen, to destroy,&rsquo; the verb of <a href="matthew-6.html#v6-19">Matthew 6:19</a>, where &lsquo;moth and devouring make them disappear.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-8.html#v8-13">Hebrews 8:13</a>, &lsquo;near to vanishing.&rsquo; KJV &lsquo;ready to vanish away&rsquo;; NIV &lsquo;will soon disappear.&rsquo;',
+    ('Hebrews', 8, 13)))
+DICTIONARY_ES['aphanismos'] = ('aphanismós',
+    'DESAPARICIÓN, destrucción &mdash; de <em>aphaníz&#333;</em>, «hacer desaparecer, destruir», el verbo de Mateo 6:19 (ya en estas páginas, todavía no en español), donde «la polilla y lo que carcome los hacen desaparecer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-8.es.html#v8-13">Hebreos 8:13</a>, «cerca de desaparecer». RV60 «próximo a desaparecer»; RV 1909 «cerca está de desvanecerse».')
+
+def _heb8_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb8_fix([('Exodus 25:40</a>, and of Hebrews 8:5, not yet on these pages).', 'Exodus 25:40</a>, and of <a href="hebrews-8.html#v8-5">Hebrews 8:5</a>).'), ('Éxodo 25:40</a>, y de Hebreos 8:5, todavía no en estas páginas).', 'Éxodo 25:40</a>, y de <a href="hebrews-8.es.html#v8-5">Hebreos 8:5</a>).'), ('(25:40, quoted directly at Hebrews 8:5, not yet on these pages).', '(25:40, quoted directly at <a href="hebrews-8.html#v8-5">Hebrews 8:5</a>).'), ('(25:40, citada directamente en Hebreos 8:5, todavía no en estas páginas).', '(25:40, citada directamente en <a href="hebrews-8.es.html#v8-5">Hebreos 8:5</a>).'), ('1 Corinthians 11:25 and Hebrews 8:8&ndash;12 (neither yet on these pages) both go on', '<a href="1-corinthians-11.html#v25">1 Corinthians 11:25</a> and <a href="hebrews-8.html#v8-8">Hebrews 8:8&ndash;12</a> both go on'), ('1 Corintios 11:25 y Hebreos 8:8–12 (ninguno todavía en estas páginas) citan', '<a href="1-corinthians-11.es.html#v25">1 Corintios 11:25</a> y <a href="hebrews-8.es.html#v8-8">Hebreos 8:8–12</a> citan'), ('and Hebrews 8:6, 9:15 and 12:24, the mediator of a better and a new covenant (these three not yet on these pages).', 'and <a href="hebrews-8.html#v8-6">Hebrews 8:6</a>, 9:15 and 12:24, the mediator of a better and a new covenant (the last two not yet on these pages).'), ('y Hebreos 8:6, 9:15 y 12:24, el mediador de un pacto mejor y nuevo (esos tres todavía no en estas páginas).', 'y <a href="hebrews-8.es.html#v8-6">Hebreos 8:6</a>, 9:15 y 12:24, el mediador de un pacto mejor y nuevo (los dos últimos todavía no en estas páginas).'), ('and Hebrews 8:9, where God &lsquo;paid no attention&rsquo; to those who did not remain in his covenant (not yet on these pages).', 'and <a href="hebrews-8.html#v8-9">Hebrews 8:9</a>, where God says &lsquo;I neglected them&rsquo; of those who did not continue in his covenant.'), ('y Hebreos 8:9, donde Dios «no hizo caso» de los que no permanecieron en su pacto (todavía no en estas páginas).', 'y <a href="hebrews-8.es.html#v8-9">Hebreos 8:9</a>, donde Dios dice «yo los descuidé» de los que no permanecieron en su pacto.'), ('At Hebrews 8:9 God takes Israel &lsquo;by the hand&rsquo; to lead them out of Egypt (not yet on these pages).', 'At <a href="hebrews-8.html#v8-9">Hebrews 8:9</a> God takes Israel &lsquo;by the hand&rsquo; to lead them out of Egypt.'), ('En Hebreos 8:9 Dios toma a Israel «de la mano» para sacarlo de Egipto (todavía no en estas páginas).', 'En <a href="hebrews-8.es.html#v8-9">Hebreos 8:9</a> Dios toma a Israel «de la mano» para sacarlo de Egipto.'), ('and returns at Hebrews 8:6, 9:15 and 12:24 (not yet on these pages).', 'and returns at <a href="hebrews-8.html#v8-6">Hebrews 8:6</a>, 9:15 and 12:24 (the last two not yet on these pages).'), ('y vuelve en Hebreos 8:6, 9:15 y 12:24 (todavía no en estas páginas).', 'y vuelve en <a href="hebrews-8.es.html#v8-6">Hebreos 8:6</a>, 9:15 y 12:24 (los dos últimos todavía no en estas páginas).')])
+
+XREFS.extend([
+    (("Hebrews", 1, 3), ("Hebrews", 8, 1), "sat down at the right hand of the Majesty"),
+    (("Acts", 22, 28), ("Hebrews", 8, 1), "sum, main point"),
+    (("Hebrews", 1, 7), ("Hebrews", 8, 2), "ministers"),
+    (("Numbers", 24, 6), ("Hebrews", 8, 2), "tents which the Lord pitched"),
+    (("Hebrews", 5, 1), ("Hebrews", 8, 3), "gifts and sacrifices"),
+    (("Exodus", 25, 40), ("Hebrews", 8, 5), "according to the pattern shown on the mountain"),
+    (("Acts", 7, 44), ("Hebrews", 8, 5), "the pattern"),
+    (("Colossians", 2, 17), ("Hebrews", 8, 5), "shadow"),
+    (("Hebrews", 4, 11), ("Hebrews", 8, 5), "example, copy"),
+    (("Hebrews", 1, 4), ("Hebrews", 8, 6), "more excellent"),
+    (("Galatians", 3, 19), ("Hebrews", 8, 6), "mediator"),
+    (("1 Timothy", 2, 5), ("Hebrews", 8, 6), "one mediator"),
+    (("Hebrews", 7, 22), ("Hebrews", 8, 6), "better covenant"),
+    (("Romans", 9, 19), ("Hebrews", 8, 8), "find fault"),
+    (("Jeremiah", 31, 30), ("Hebrews", 8, 8), "new covenant"),
+    (("Luke", 22, 20), ("Hebrews", 8, 8), "new covenant"),
+    (("Hebrews", 2, 3), ("Hebrews", 8, 9), "neglect"),
+    (("Jeremiah", 31, 31), ("Hebrews", 8, 9), "not like the covenant with their fathers"),
+    (("Galatians", 3, 10), ("Hebrews", 8, 9), "continue in, abide by"),
+    (("Jeremiah", 31, 32), ("Hebrews", 8, 10), "write it on their heart"),
+    (("2 Corinthians", 3, 3), ("Hebrews", 8, 10), "tablets of human hearts"),
+    (("Jeremiah", 31, 33), ("Hebrews", 8, 11), "they will all know me"),
+    (("Luke", 18, 13), ("Hebrews", 8, 12), "be merciful"),
+    (("Hebrews", 1, 11), ("Hebrews", 8, 13), "wear out, grow old"),
+    (("2 Corinthians", 3, 14), ("Hebrews", 8, 13), "old covenant"),
+])
+
+CHAPTER_ART["heb8"] = [dict(
+    file="dura-europos-consecration-of-the-tabernacle.jpg",
+    title="The Consecration of the Tabernacle",   title_es="La consagración del tabernáculo",
+    artist="Unknown painter, Dura-Europos synagogue",
+    year="c. AD 245&ndash;256",
+    location="National Museum of Damascus (the reconstructed synagogue of Dura-Europos)",
+    location_es="Museo Nacional de Damasco (la sinagoga reconstruida de Dura-Europos)",
+    alt="A wall painting: a tall robed priest labelled in Greek AARON stands beside a columned shrine with a golden lampstand and an ark inside, above a walled "
+        "enclosure with three doors; attendants lead a bull, a cow and a ram.",
+    note="&#9888; Painted on the wall of a synagogue on the Euphrates a few years before the city fell in 256: Aaron, named in Greek, beside the sanctuary of the "
+         "wilderness tent, which the painter drew in the form of a classical temple of his own day &mdash; a picture, itself, of the earthly sanctuary as &lsquo;a "
+         "copy and shadow of the heavenly things&rsquo; (<a href=\"hebrews-8.html#v8-5\">verse 5</a>).",
+    note_es="&#9888; Pintada en el muro de una sinagoga junto al Éufrates pocos años antes de que la ciudad cayera en 256: Aarón, nombrado en griego, junto al santuario "
+            "de la tienda del desierto, que el pintor dibujó con la forma de un templo clásico de su propia época; una imagen, ella misma, del santuario terrenal "
+            "como «copia y sombra de las cosas celestiales» (<a href=\"hebrews-8.es.html#v8-5\">versículo 5</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Consecration_of_the_tabernacle.png",
+)]
+
+CHRON_CHAPTERS["heb8"] = dict(era='apostolic',
+    when="The main point: a high priest seated at the right hand of the Majesty, minister of the true tent which Jehovah pitched; the earthly priests serving a copy and shadow, made according to the pattern shown to Moses on the mountain; and the mediator of a better covenant, set out in Jeremiah's promise of a new covenant written on the heart.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
