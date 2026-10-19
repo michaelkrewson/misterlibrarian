@@ -41201,3 +41201,153 @@ CHRON_CHAPTERS["tit3"] = dict(era='apostolic',
     when="The close of the letter to Titus: submission to rulers, 'the kindness and love for humankind of God our Saviour appeared,' 'the washing of rebirth,' the last faithful saying, a factious person refused after two warnings, and the travellers: Artemas, Tychicus, Zenas and Apollos, and a winter at Nicopolis.",
     clock="Undated by the text; on the traditional reading, between Paul's imprisonments, mid-60s AD; many scholars date the Pastoral letters later.")
 
+# ---- Hebrews 2 -----------------------------------------------------------
+DICTIONARY.append(('pararreo', 'pararreō', 'παραρρέω', 'pararreō',
+    'TO FLOW PAST, to slip away, to drift &mdash; <em>para</em>, &lsquo;beside, past,&rsquo; and <em>rhe&#333;</em>, &lsquo;to flow.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-2.html#v2-1">Hebrews 2:1</a>, &lsquo;so that we do not drift away&rsquo;: the letter&rsquo;s first warning, about being carried off by a current rather than deciding to leave. The printed Greek spells it with one <em>rho</em>, the Byzantine text with two. KJV &lsquo;lest at any time we should let them slip&rsquo;; ASV &lsquo;lest haply we drift away from them.&rsquo;',
+    ('Hebrews', 2, 1)))
+DICTIONARY_ES['pararreo'] = ('pararréō',
+    'FLUIR DE LARGO, escurrirse, irse a la deriva &mdash; <em>para</em>, «junto a, de largo», y <em>rhe&#333;</em>, «fluir». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-2.es.html#v2-1">Hebreos 2:1</a>, «para que no nos vayamos a la deriva»: la primera advertencia de la carta, sobre ser llevado por una corriente más que sobre decidir irse. El griego impreso lo escribe con una sola <em>rho</em>, el texto bizantino con dos. RV60 «no sea que nos deslicemos»; TNM 1987 «para que nunca se nos lleve a la deriva».')
+
+DICTIONARY.append(('misthapodosia', 'misthapodosia', 'μισθαποδοσία', 'misthapodosia',
+    'RECOMPENSE, payment of wages &mdash; <em>misthos</em>, &lsquo;wage,&rsquo; and <em>apodid&#333;mi</em>, &lsquo;to pay back.&rsquo; &#9888; It stands in three verses of the New Testament, all in Hebrews: the &lsquo;just recompense&rsquo; that every transgression of the Law received at <a href="hebrews-2.html#v2-2">Hebrews 2:2</a>; the &lsquo;great reward&rsquo; of confidence at 10:35 (not yet on these pages); and the reward Moses &lsquo;was looking ahead to&rsquo; at <a href="hebrews-11.html#v11-26">Hebrews 11:26</a>. The wage can be punishment or reward. KJV at 2:2 &lsquo;a just recompence of reward&rsquo;; NIV &lsquo;its just punishment.&rsquo;',
+    ('Hebrews', 2, 2)))
+DICTIONARY_ES['misthapodosia'] = ('misthapodosía',
+    'RETRIBUCIÓN, pago de un salario &mdash; <em>misthos</em>, «salario», y <em>apodid&#333;mi</em>, «devolver, pagar». &#9888; Está en tres versículos del Nuevo Testamento, todos en Hebreos: la «justa retribución» que recibió toda transgresión de la Ley en <a href="hebrews-2.es.html#v2-2">Hebreos 2:2</a>; la «gran recompensa» de la confianza en 10:35 (todavía no en estas páginas); y la recompensa en que Moisés «tenía la mirada puesta» en <a href="hebrews-11.es.html#v11-26">Hebreos 11:26</a>. El salario puede ser castigo o premio. RV60 en 2:2 «justa retribución»; NVI «su justo castigo».')
+
+DICTIONARY.append(('ameleo', 'ameleō', 'ἀμελέω', 'ameleō',
+    'TO NEGLECT, to pay no attention &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>mel&#333;</em>, &lsquo;to be a care.&rsquo; &#9888; It stands in four verses of the New Testament: the guests who &lsquo;paid no attention&rsquo; to the wedding invitation at <a href="matthew-22.html#v22-5">Matthew 22:5</a>; &lsquo;Do not neglect the gift&rsquo; at <a href="1-timothy-4.html#v4-14">1 Timothy 4:14</a>; &lsquo;if we neglect so great a salvation&rsquo; at <a href="hebrews-2.html#v2-3">Hebrews 2:3</a>; and Hebrews 8:9, where God &lsquo;paid no attention&rsquo; to those who did not remain in his covenant (not yet on these pages). KJV at Hebrews 2:3 &lsquo;if we neglect.&rsquo;',
+    ('Matthew', 22, 5)))
+DICTIONARY_ES['ameleo'] = ('ameléō',
+    'DESCUIDAR, no hacer caso &mdash; <em>a-</em>, «no», y <em>mel&#333;</em>, «importar». &#9888; Está en cuatro versículos del Nuevo Testamento: los invitados que «no hicieron caso» de la invitación a la boda en <a href="matthew-22.es.html#v22-5">Mateo 22:5</a>; «No descuides el don» en <a href="1-timothy-4.es.html#v4-14">1 Timoteo 4:14</a>; «si descuidamos una salvación tan grande» en <a href="hebrews-2.es.html#v2-3">Hebreos 2:3</a>; y Hebreos 8:9, donde Dios «no hizo caso» de los que no permanecieron en su pacto (todavía no en estas páginas). RV60 en Hebreos 2:3 «si descuidamos».')
+
+DICTIONARY.append(('synepimartyreo', 'synepimartyreō', 'συνεπιμαρτυρέω', 'synepimartyreō',
+    'TO BEAR WITNESS ALONG WITH &mdash; <em>syn</em>, &lsquo;with,&rsquo; <em>epi</em>, &lsquo;in addition,&rsquo; and <em>martyre&#333;</em>, &lsquo;to bear witness.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-2.html#v2-4">Hebrews 2:4</a>: God bore witness with those who heard the Lord, &lsquo;by signs and wonders and various acts of power, and by distributions of the Holy Spirit.&rsquo; KJV &lsquo;God also bearing them witness&rsquo;; ASV &lsquo;God also bearing witness with them.&rsquo;',
+    ('Hebrews', 2, 4)))
+DICTIONARY_ES['synepimartyreo'] = ('synepimartyréō',
+    'DAR TESTIMONIO JUNTAMENTE &mdash; <em>syn</em>, «con», <em>epi</em>, «además», y <em>martyre&#333;</em>, «dar testimonio». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-2.es.html#v2-4">Hebreos 2:4</a>: Dios daba testimonio junto con los que oyeron al Señor, «con señales y prodigios y diversas obras de poder, y con distribuciones del Espíritu Santo». RV60 «testificando Dios juntamente con ellos».')
+
+DICTIONARY.append(('merismos', 'merismos', 'μερισμός', 'merismos',
+    'DISTRIBUTION, DIVISION &mdash; from <em>meriz&#333;</em>, &lsquo;to divide, to apportion.&rsquo; &#9888; It stands in two verses of the New Testament: the &lsquo;distributions of the Holy Spirit according to his will&rsquo; at <a href="hebrews-2.html#v2-4">Hebrews 2:4</a>, and Hebrews 4:12, where the word of God pierces &lsquo;to the division of soul and spirit&rsquo; (not yet on these pages). One word, a sharing out in the first, a cutting apart in the second. KJV at 2:4 &lsquo;gifts&rsquo;; Douay &lsquo;distributions.&rsquo;',
+    ('Hebrews', 2, 4)))
+DICTIONARY_ES['merismos'] = ('merismós',
+    'DISTRIBUCIÓN, DIVISIÓN &mdash; de <em>meriz&#333;</em>, «dividir, repartir». &#9888; Está en dos versículos del Nuevo Testamento: las «distribuciones del Espíritu Santo según su voluntad» en <a href="hebrews-2.es.html#v2-4">Hebreos 2:4</a>, y Hebreos 4:12, donde la palabra de Dios penetra «hasta la división del alma y del espíritu» (todavía no en estas páginas). Una sola palabra: un reparto en el primero, un corte en el segundo. RV60 en 2:4 «repartimientos».')
+
+DICTIONARY.append(('epaischynomai', 'epaischynomai', 'ἐπαισχύνομαι', 'epaischynomai',
+    'TO BE ASHAMED OF &mdash; <em>epi</em> and <em>aischyn&#333;</em>, &lsquo;to shame.&rsquo; &#9888; It stands in nine verses of the New Testament, among them &lsquo;whoever is ashamed of me and of my words&rsquo; at <a href="mark-8.html#v8-38">Mark 8:38</a>, &lsquo;I am not ashamed of the gospel&rsquo; at <a href="romans-1.html#v16">Romans 1:16</a>, three times in 2 Timothy 1, and twice in Hebrews, both in the negative: the Son &lsquo;is not ashamed to call them brothers&rsquo; at <a href="hebrews-2.html#v2-11">Hebrews 2:11</a>, and &lsquo;God is not ashamed of them, or to be called their God&rsquo; at <a href="hebrews-11.html#v11-16">Hebrews 11:16</a>. See <a href="dictionary.html#anepaischyntos">anepaischyntos</a>.',
+    ('Mark', 8, 38)))
+DICTIONARY_ES['epaischynomai'] = ('epaischýnomai',
+    'AVERGONZARSE DE &mdash; <em>epi</em> y <em>aischyn&#333;</em>, «avergonzar». &#9888; Está en nueve versículos del Nuevo Testamento, entre ellos «el que se avergüence de mí y de mis palabras» en <a href="mark-8.es.html#v8-38">Marcos 8:38</a>, «no me avergüenzo del evangelio» en <a href="romans-1.es.html#v16">Romanos 1:16</a>, tres veces en 2 Timoteo 1, y dos veces en Hebreos, las dos en negativo: el Hijo «no se avergüenza de llamarlos hermanos» en <a href="hebrews-2.es.html#v2-11">Hebreos 2:11</a>, y «Dios no se avergüenza de ellos, ni de ser llamado su Dios» en <a href="hebrews-11.es.html#v11-16">Hebreos 11:16</a>. Véase <a href="diccionario.html#anepaischyntos">anepaischyntos</a>.')
+
+DICTIONARY.append(('apallasso', 'apallassō', 'ἀπαλλάσσω', 'apallassō',
+    'TO RELEASE, to set free &mdash; <em>apo</em>, &lsquo;from,&rsquo; and <em>allass&#333;</em>, &lsquo;to change.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;make an effort along the way to be released from him&rsquo; at <a href="luke-12.html#v12-58">Luke 12:58</a>; diseases released from the sick at <a href="acts-19.html#v19-12">Acts 19:12</a>; and the Son who would &lsquo;release all those who through fear of death were subject to slavery all their lives&rsquo; at <a href="hebrews-2.html#v2-15">Hebrews 2:15</a>. KJV at Hebrews 2:15 &lsquo;deliver&rsquo;; NWT 1984 &lsquo;emancipate.&rsquo;',
+    ('Luke', 12, 58)))
+DICTIONARY_ES['apallasso'] = ('apallássō',
+    'LIBERAR, soltar &mdash; <em>apo</em>, «de», y <em>allass&#333;</em>, «cambiar». &#9888; Está en tres versículos del Nuevo Testamento: el que procura librarse de su adversario en el camino en <a href="luke-12.es.html#v12-58">Lucas 12:58</a>; enfermedades que dejan a los enfermos en <a href="acts-19.es.html#v19-12">Hechos 19:12</a>; y el Hijo que había de «liberar a todos los que por temor de la muerte estaban sujetos a esclavitud durante toda la vida» en <a href="hebrews-2.es.html#v2-15">Hebreos 2:15</a>. RV60 en Hebreos 2:15 «librar»; TNM 1987 «emancipara».')
+
+DICTIONARY.append(('douleia', 'douleia', 'δουλεία', 'douleia',
+    'SLAVERY, bondage &mdash; the noun of <em>doulos</em>, &lsquo;slave&rsquo; (<a href="dictionary.html#doulos">doulos</a>). &#9888; It stands in five verses of the New Testament: &lsquo;you did not receive a spirit of slavery, back into fear&rsquo; at <a href="romans-8.html#v8-15">Romans 8:15</a>; creation&rsquo;s &lsquo;slavery of decay&rsquo; at <a href="romans-8.html#v8-21">8:21</a>; the covenant &lsquo;bearing children for slavery&rsquo; at <a href="galatians-4.html#v24">Galatians 4:24</a>; &lsquo;a yoke of slavery&rsquo; at <a href="galatians-5.html#v1">Galatians 5:1</a>; and those &lsquo;subject to slavery all their lives&rsquo; through fear of death at <a href="hebrews-2.html#v2-15">Hebrews 2:15</a>. Twice, at Romans 8:15 and Hebrews 2:15, slavery and fear stand together. KJV &lsquo;bondage.&rsquo;',
+    ('Romans', 8, 15)))
+DICTIONARY_ES['douleia'] = ('douleía',
+    'ESCLAVITUD, servidumbre &mdash; el sustantivo de <em>doulos</em>, «esclavo» (<a href="diccionario.html#doulos">doulos</a>). &#9888; Está en cinco versículos del Nuevo Testamento: «no recibieron un espíritu de esclavitud, de vuelta al temor» en <a href="romans-8.es.html#v8-15">Romanos 8:15</a>; la «esclavitud de la corrupción» de la creación en <a href="romans-8.es.html#v8-21">8:21</a>; el pacto «que da a luz hijos para la esclavitud» en <a href="galatians-4.es.html#v24">Gálatas 4:24</a>; «un yugo de esclavitud» en <a href="galatians-5.es.html#v1">Gálatas 5:1</a>; y los que estaban «sujetos a esclavitud durante toda la vida» por temor de la muerte en <a href="hebrews-2.es.html#v2-15">Hebreos 2:15</a>. Dos veces, en Romanos 8:15 y Hebreos 2:15, la esclavitud y el temor van juntos. RV60 «servidumbre».')
+
+DICTIONARY.append(('epilambanomai', 'epilambanomai', 'ἐπιλαμβάνομαι', 'epilambanomai',
+    'TO TAKE HOLD OF, to lay hold of &mdash; <em>epi</em> and <em>lamban&#333;</em>, &lsquo;to take.&rsquo; &#9888; Paul tells Timothy to &lsquo;take hold of the eternal life&rsquo; at <a href="1-timothy-6.html#v6-12">1 Timothy 6:12</a>, and at <a href="hebrews-2.html#v2-16">Hebrews 2:16</a> it is said twice: &lsquo;it is not angels that he takes hold of; he takes hold of the seed of Abraham.&rsquo; There readers take it as taking hold in order to help (ASV &lsquo;doth he give help,&rsquo; NWT 1984 &lsquo;assisting&rsquo;) or, with the KJV and the Geneva, as taking on a nature (&lsquo;he took on him the seed of Abraham&rsquo;). At Hebrews 8:9 God takes Israel &lsquo;by the hand&rsquo; to lead them out of Egypt (not yet on these pages).',
+    ('1 Timothy', 6, 12)))
+DICTIONARY_ES['epilambanomai'] = ('epilambánomai',
+    'TOMAR, ECHAR MANO DE &mdash; <em>epi</em> y <em>lamban&#333;</em>, «tomar». &#9888; Pablo dice a Timoteo «echa mano de la vida eterna» en <a href="1-timothy-6.es.html#v6-12">1 Timoteo 6:12</a>, y en <a href="hebrews-2.es.html#v2-16">Hebreos 2:16</a> se dice dos veces: «no es a los ángeles a quienes toma de la mano, sino que toma de la mano a la simiente de Abraham». Allí los lectores lo entienden como tomar para ayudar (RV60 «socorrió», TNM 1987 «prestando ayuda») o, con las versiones inglesas antiguas, como tomar una naturaleza (RV 1909 «á la simiente de Abraham tomó»). En Hebreos 8:9 Dios toma a Israel «de la mano» para sacarlo de Egipto (todavía no en estas páginas).')
+
+DICTIONARY.append(('eleemon', 'eleēmōn', 'ἐλεήμων', 'eleēmōn',
+    'MERCIFUL &mdash; the adjective of <em>eleos</em>, &lsquo;mercy&rsquo; (<a href="dictionary.html#eleos">eleos</a>). &#9888; It stands in two verses of the New Testament: &lsquo;Happy the merciful&rsquo; at <a href="matthew-5.html#v5-7">Matthew 5:7</a>, and the &lsquo;merciful and faithful high priest&rsquo; of <a href="hebrews-2.html#v2-17">Hebrews 2:17</a>. The noun <em>ele&#275;mosyn&#275;</em>, &lsquo;alms,&rsquo; is the same family (<a href="dictionary.html#eleemosyne">ele&#275;mosyn&#275;</a>).',
+    ('Matthew', 5, 7)))
+DICTIONARY_ES['eleemon'] = ('eleḗmōn',
+    'MISERICORDIOSO &mdash; el adjetivo de <em>eleos</em>, «misericordia» (<a href="diccionario.html#eleos">eleos</a>). &#9888; Está en dos versículos del Nuevo Testamento: «Dichosos los misericordiosos» en Mateo 5:7 (ya en estas páginas, todavía no en español), y el «sumo sacerdote misericordioso y fiel» de <a href="hebrews-2.es.html#v2-17">Hebreos 2:17</a>. El sustantivo <em>ele&#275;mosyn&#275;</em>, «limosna», es de la misma familia (<a href="diccionario.html#eleemosyne">ele&#275;mosyn&#275;</a>).')
+
+DICTIONARY.append(('archiereus', 'archiereus', 'ἀρχιερεύς', 'archiereus',
+    'HIGH PRIEST &mdash; <em>archi-</em>, &lsquo;chief,&rsquo; and <em>hiereus</em>, &lsquo;priest.&rsquo; &#9888; Outside Hebrews the word stands only in the Gospels and Acts (searched), of the temple&rsquo;s high priest and, in the plural, the chief priests, as at <a href="matthew-26.html#v26-57">Matthew 26:57</a>. Hebrews alone gives the title to Jesus, first at <a href="hebrews-2.html#v2-17">Hebrews 2:17</a>, &lsquo;a merciful and faithful high priest,&rsquo; and then through the middle of the letter, at 3:1, 4:14 and on through chapter 9 (not yet on these pages). See also <a href="encyclopedia.html#high-priest">the high priest</a>.',
+    ('Hebrews', 2, 17)))
+DICTIONARY_ES['archiereus'] = ('archiereús',
+    'SUMO SACERDOTE &mdash; <em>archi-</em>, «principal», y <em>hiereus</em>, «sacerdote». &#9888; Fuera de Hebreos la palabra está solo en los Evangelios y Hechos (buscado), del sumo sacerdote del templo y, en plural, de los principales sacerdotes, como en <a href="matthew-26.es.html#v26-57">Mateo 26:57</a>. Solo Hebreos da el título a Jesús, primero en <a href="hebrews-2.es.html#v2-17">Hebreos 2:17</a>, «un sumo sacerdote misericordioso y fiel», y luego por el centro de la carta, en 3:1, 4:14 y hasta el capítulo 9 (todavía no en estas páginas). Véase también <a href="enciclopedia.html#high-priest">el sumo sacerdote</a>.')
+
+DICTIONARY.append(('hilaskomai', 'hilaskomai', 'ἱλάσκομαι', 'hilaskomai',
+    'TO PROPITIATE, TO MAKE ATONEMENT, to be merciful &mdash; the verb of the family of <em>hilast&#275;rion</em> (<a href="dictionary.html#hilasterion">hilast&#275;rion</a>). &#9888; It stands in two verses of the New Testament: the tax collector&rsquo;s &lsquo;God, be merciful to me, a sinner!&rsquo; at <a href="luke-18.html#v18-13">Luke 18:13</a>, in the passive, and &lsquo;to make atonement for the sins of the people&rsquo; at <a href="hebrews-2.html#v2-17">Hebrews 2:17</a>, where its object is the sins. The readings are those of Romans 3:25: turning away wrath (ASV &lsquo;to make propitiation&rsquo;), removing the sins (&lsquo;expiation&rsquo;), or reconciling (KJV &lsquo;to make reconciliation&rsquo;). This translation prints &lsquo;make atonement for,&rsquo; as for the Hebrew <em>kipper</em> at <a href="leviticus-16.html#v16-6">Leviticus 16:6</a>, and does not choose among them.',
+    ('Luke', 18, 13)))
+DICTIONARY_ES['hilaskomai'] = ('hiláskomai',
+    'APLACAR, HACER EXPIACIÓN, ser propicio &mdash; el verbo de la familia de <em>hilast&#275;rion</em> (<a href="diccionario.html#hilasterion">hilast&#275;rion</a>). &#9888; Está en dos versículos del Nuevo Testamento: el «Dios, ten compasión de mí, pecador» del recaudador de impuestos en <a href="luke-18.es.html#v18-13">Lucas 18:13</a>, en pasiva, y «hacer expiación por los pecados del pueblo» en <a href="hebrews-2.es.html#v2-17">Hebreos 2:17</a>, donde su objeto son los pecados. Las lecturas son las de Romanos 3:25: apartar la ira («propiciación»), quitar los pecados (RV60 «para expiar»), o reconciliar. Esta traducción dice «hacer expiación por», como para el hebreo <em>kipper</em> en <a href="leviticus-16.es.html#v16-6">Levítico 16:6</a>, y no elige entre ellas.')
+
+DICTIONARY.append(('boetheo', 'boētheō', 'βοηθέω', 'boētheō',
+    'TO HELP, to come to the aid of &mdash; from <em>bo&#275;</em>, &lsquo;a cry,&rsquo; and <em>the&#333;</em>, &lsquo;to run&rsquo;: to run at a cry for help (an etymology reported, not checked). &#9888; In Hebrews the verb stands at <a href="hebrews-2.html#v2-18">Hebrews 2:18</a>, &lsquo;he is able to help those who are being tested&rsquo;; the noun <em>bo&#275;theia</em> follows at 4:16, &lsquo;grace for timely help,&rsquo; and <em>bo&#275;thos</em>, &lsquo;helper,&rsquo; at 13:6 (not yet on these pages). KJV at 2:18 &lsquo;to succour&rsquo;; NWT 1984 &lsquo;to come to the aid of.&rsquo;',
+    ('Hebrews', 2, 18)))
+DICTIONARY_ES['boetheo'] = ('boēthéō',
+    'SOCORRER, acudir en ayuda &mdash; de <em>bo&#275;</em>, «grito», y <em>the&#333;</em>, «correr»: correr ante un grito de auxilio (etimología que se informa, no se comprobó). &#9888; En Hebreos el verbo está en <a href="hebrews-2.es.html#v2-18">Hebreos 2:18</a>, «puede socorrer a los que están siendo probados»; el sustantivo <em>bo&#275;theia</em> sigue en 4:16, «gracia para el socorro oportuno», y <em>bo&#275;thos</em>, «ayudador», en 13:6 (todavía no en estas páginas). RV60 en 2:18 «para socorrer».')
+
+def _heb2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb2_fix([('<a href="hebrews-1.html#v6">Hebrews 1:6</a>, Hebrews 2:5, <a href="revelation-3.html#v3-10">Revelation 3:10</a>, <a href="revelation-12.html#v12-9">12:9</a> and 16:14 (Hebrews 2 and Revelation 16 not yet on these pages).', '<a href="hebrews-1.html#v6">Hebrews 1:6</a>, <a href="hebrews-2.html#v2-5">Hebrews 2:5</a>, <a href="revelation-3.html#v3-10">Revelation 3:10</a>, <a href="revelation-12.html#v12-9">12:9</a> and 16:14 (Revelation 16 not yet on these pages).'), ('<a href="hebrews-1.es.html#v6">Hebreos 1:6</a>, Hebreos 2:5, <a href="revelation-3.es.html#v3-10">Apocalipsis 3:10</a>, <a href="revelation-12.es.html#v12-9">12:9</a> y 16:14 (Hebreos 2 y Apocalipsis 16 todavía no en estas páginas).', '<a href="hebrews-1.es.html#v6">Hebreos 1:6</a>, <a href="hebrews-2.es.html#v2-5">Hebreos 2:5</a>, <a href="revelation-3.es.html#v3-10">Apocalipsis 3:10</a>, <a href="revelation-12.es.html#v12-9">12:9</a> y 16:14 (Apocalipsis 16 todavía no en estas páginas).'), ("'the archēgos of their salvation' made perfect through suffering (2:10)", '\'the archēgos of their salvation\' made complete through sufferings (<a href="hebrews-2.html#v2-10">2:10</a>)'), ('Four occurrences (Acts 3:15 and 5:31, Hebrews 2:10 and 12:2)', 'Four occurrences (Acts 3:15 and 5:31, <a href="hebrews-2.html#v2-10">Hebrews 2:10</a> and 12:2)'), ('«el archēgós de su salvación» hecho perfecto por el sufrimiento (2:10)', '«el archēgós de su salvación» hecho completo por medio de sufrimientos (<a href="hebrews-2.es.html#v2-10">2:10</a>)'), ('Cuatro apariciones (Hechos 3:15 y 5:31, Hebreos 2:10 y 12:2)', 'Cuatro apariciones (Hechos 3:15 y 5:31, <a href="hebrews-2.es.html#v2-10">Hebreos 2:10</a> y 12:2)'), ('and Hebrews 2:6 (not yet on these pages).', 'and <a href="hebrews-2.html#v2-6">Hebrews 2:6</a>.'), ('y Hebreos 2:6 (todavía no en estas páginas).', 'y <a href="hebrews-2.es.html#v2-6">Hebreos 2:6</a>.'), ('(<a href="luke-18.html#v18-13">Luke 18:13</a>, Hebrews 2:17, 1 John 2:2 and 4:10 beside those two)', '(<a href="luke-18.html#v18-13">Luke 18:13</a>, <a href="hebrews-2.html#v2-17">Hebrews 2:17</a>, 1 John 2:2 and 4:10 beside those two; 1 John not yet on these pages)'), ('(<a href="luke-18.es.html#v18-13">Lucas 18:13</a>, Hebreos 2:17, 1 Juan 2:2 y 4:10, junto a esos dos)', '(<a href="luke-18.es.html#v18-13">Lucas 18:13</a>, <a href="hebrews-2.es.html#v2-17">Hebreos 2:17</a>, 1 Juan 2:2 y 4:10, junto a esos dos; 1 Juan todavía no en estas páginas)'), ('and Hebrews 2:2 and 9:15 (these two not yet on these pages). In <a href="romans-4.html#v4-15">', 'and <a href="hebrews-2.html#v2-2">Hebrews 2:2</a> and 9:15 (the last not yet on these pages). In <a href="romans-4.html#v4-15">'), ('y Hebreos 2:2 y 9:15 (estos dos todavía no en estas páginas). En <a href="romans-4.es.html#v4-15">', 'y <a href="hebrews-2.es.html#v2-2">Hebreos 2:2</a> y 9:15 (el último todavía no en estas páginas). En <a href="romans-4.es.html#v4-15">'), ('<a href="romans-5.html#v5-19">Romans 5:19</a>, Hebrews 2:2 and 2 Corinthians 10:6 (the last two not yet on these pages).', '<a href="romans-5.html#v5-19">Romans 5:19</a>, <a href="hebrews-2.html#v2-2">Hebrews 2:2</a> and <a href="2-corinthians-10.html#v6">2 Corinthians 10:6</a>.'), ('<a href="romans-5.es.html#v5-19">Romanos 5:19</a>, Hebreos 2:2 y 2 Corintios 10:6 (los dos últimos todavía no en estas páginas).', '<a href="romans-5.es.html#v5-19">Romanos 5:19</a>, <a href="hebrews-2.es.html#v2-2">Hebreos 2:2</a> y <a href="2-corinthians-10.es.html#v6">2 Corintios 10:6</a>.')])
+
+XREFS.extend([
+    (("Hebrews", 1, 14), ("Hebrews", 2, 1), "heirs of salvation"),
+    (("Galatians", 3, 19), ("Hebrews", 2, 2), "the Law through angels"),
+    (("Acts", 7, 53), ("Hebrews", 2, 2), "ordinances of angels"),
+    (("Hebrews", 11, 26), ("Hebrews", 2, 2), "recompense, reward"),
+    (("Acts", 2, 22), ("Hebrews", 2, 4), "signs and wonders and acts of power"),
+    (("1 Corinthians", 12, 11), ("Hebrews", 2, 4), "distributing as he wills"),
+    (("Hebrews", 1, 6), ("Hebrews", 2, 5), "the inhabited world"),
+    (("1 Corinthians", 15, 27), ("Hebrews", 2, 8), "all things under his feet"),
+    (("Ephesians", 1, 22), ("Hebrews", 2, 8), "all things under his feet"),
+    (("Mark", 15, 34), ("Hebrews", 2, 9), "forsaken, apart from God"),
+    (("Matthew", 16, 28), ("Hebrews", 2, 9), "taste death"),
+    (("Acts", 3, 15), ("Hebrews", 2, 10), "Author"),
+    (("Hebrews", 11, 40), ("Hebrews", 2, 10), "made complete"),
+    (("Romans", 11, 36), ("Hebrews", 2, 10), "through him are all things"),
+    (("Hebrews", 11, 16), ("Hebrews", 2, 11), "not ashamed"),
+    (("Matthew", 28, 10), ("Hebrews", 2, 12), "my brothers"),
+    (("Isaiah", 7, 3), ("Hebrews", 2, 13), "the prophet's children as signs"),
+    (("1 Corinthians", 15, 26), ("Hebrews", 2, 14), "death put out of action"),
+    (("Romans", 8, 15), ("Hebrews", 2, 15), "slavery and fear"),
+    (("Luke", 1, 54), ("Hebrews", 2, 16), "taken hold of, the seed of Abraham"),
+    (("Galatians", 3, 29), ("Hebrews", 2, 16), "Abraham's seed"),
+    (("Philippians", 2, 7), ("Hebrews", 2, 17), "made like"),
+    (("Romans", 3, 25), ("Hebrews", 2, 17), "atonement"),
+    (("Luke", 18, 13), ("Hebrews", 2, 17), "hilaskomai"),
+    (("Matthew", 4, 1), ("Hebrews", 2, 18), "tested"),
+])
+
+CHAPTER_ART["heb2"] = [dict(
+    file="christ-great-high-priest-corfu.jpg",
+    title="Christ the Great High Priest",   title_es="Cristo, el Gran Sumo Sacerdote",
+    artist="Unknown icon painter; photograph by GualdimG",
+    year="18th century (photograph 2024)",
+    location="Antivouniotissa Museum, Corfu, Greece",
+    location_es="Museo Antivouniotissa, Corfú, Grecia",
+    alt="A small icon on a gold ground set in a large carved and gilded wooden frame: Christ, crowned, wearing a bishop's white stole marked with large crosses, "
+        "raising his right hand in blessing.",
+    note="&#9888; An eighteenth-century Greek icon of Christ as the Great High Priest, crowned and robed as a bishop: the &lsquo;crowned with glory and honor&rsquo; "
+         "of <a href=\"hebrews-2.html#v2-9\">verse 9</a> and the &lsquo;merciful and faithful high priest&rsquo; of <a href=\"hebrews-2.html#v2-17\">verse 17</a>.",
+    note_es="&#9888; Un icono griego del siglo XVIII de Cristo como Gran Sumo Sacerdote, coronado y vestido de obispo: el «coronado de gloria y de honra» del "
+            "<a href=\"hebrews-2.es.html#v2-9\">versículo 9</a> y el «sumo sacerdote misericordioso y fiel» del <a href=\"hebrews-2.es.html#v2-17\">versículo 17</a>.",
+    license="CC BY-SA 4.0",
+    source_url="https://commons.wikimedia.org/wiki/File:Christ,_the_Great_High_Priest,_Antivouniotissa_Museum,_Corfu_01.jpg",
+)]
+
+CHRON_CHAPTERS["heb2"] = dict(era='apostolic',
+    when="The first warning of Hebrews ('so that we do not drift away') and the case for a Son made for a little while lower than the angels: Psalm 8 read of Jesus, crowned after the suffering of death; the Author of salvation made complete through sufferings; the brothers he is not ashamed of; the devil put out of action; and the first naming of Jesus as 'a merciful and faithful high priest.'",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note); verse 3, 'confirmed to us by those who heard,' places the writer among those who received the message from the first hearers.")
+
