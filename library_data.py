@@ -41043,3 +41043,161 @@ CHRON_CHAPTERS["tit2"] = dict(era='apostolic',
     when="Titus is told what to teach on Crete: older men, older women, younger women and younger men, and slaves; then 'the grace of God has appeared, bringing salvation to all people,' and the appearing of 'our great God and Saviour, Jesus Christ.'",
     clock="Undated by the text; on the traditional reading, between Paul's imprisonments, mid-60s AD; many scholars date the Pastoral letters later.")
 
+# ---- Titus 3 -----------------------------------------------------------
+DICTIONARY.append(('amachos', 'amachos', 'ἄμαχος', 'amachos',
+    'NOT QUARRELSOME, peaceable &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>mach&#275;</em>, &lsquo;fight.&rsquo; &#9888; It stands in two verses of the New Testament: the overseer at <a href="1-timothy-3.html#v3-3">1 Timothy 3:3</a>, &lsquo;reasonable, not quarrelsome,&rsquo; and every believer at <a href="titus-3.html#v3-2">Titus 3:2</a>. ASV at Titus 3:2 &lsquo;not to be contentious&rsquo;; NWT 1984 &lsquo;not to be belligerent.&rsquo;',
+    ('1 Timothy', 3, 3)))
+DICTIONARY_ES['amachos'] = ('ámachos',
+    'NO PENDENCIERO, pacífico &mdash; <em>a-</em>, «no», y <em>mach&#275;</em>, «pelea». &#9888; Está en dos versículos del Nuevo Testamento: el supervisor en <a href="1-timothy-3.es.html#v3-3">1 Timoteo 3:3</a>, «ecuánime, no pendenciero», y todo creyente en <a href="titus-3.es.html#v3-2">Tito 3:2</a>. RV60 en Tito 3:2 «que no sean pendencieros»; TNM 1987 «que no sean belicosos».')
+
+DICTIONARY.append(('anoetos', 'anoētos', 'ἀνόητος', 'anoētos',
+    'SENSELESS, without understanding &mdash; <em>a-</em> and <em>noe&#333;</em>, &lsquo;to perceive, understand.&rsquo; &#9888; It stands in six verses of the New Testament: &lsquo;O senseless ones, and slow of heart&rsquo; at <a href="luke-24.html#v24-25">Luke 24:25</a>; the &lsquo;senseless&rsquo; to whom Paul is a debtor at <a href="romans-1.html#v14">Romans 1:14</a>; &lsquo;O senseless Galatians&rsquo; at <a href="galatians-3.html#v1">Galatians 3:1</a> and <a href="galatians-3.html#v3">3:3</a>; the &lsquo;foolish and harmful desires&rsquo; of <a href="1-timothy-6.html#v6-9">1 Timothy 6:9</a>; and &lsquo;we too were once senseless&rsquo; at <a href="titus-3.html#v3-3">Titus 3:3</a>. KJV at Titus 3:3 &lsquo;foolish&rsquo;; NWT 1984 &lsquo;senseless.&rsquo;',
+    ('Luke', 24, 25)))
+DICTIONARY_ES['anoetos'] = ('anóētos',
+    'INSENSATO, sin entendimiento &mdash; <em>a-</em> y <em>noe&#333;</em>, «percibir, entender». &#9888; Está en seis versículos del Nuevo Testamento: «¡Oh insensatos, y lentos de corazón!» en <a href="luke-24.es.html#v24-25">Lucas 24:25</a>; los «insensatos» de quienes Pablo es deudor en <a href="romans-1.es.html#v14">Romanos 1:14</a>; «¡Oh gálatas insensatos!» en <a href="galatians-3.es.html#v1">Gálatas 3:1</a> y <a href="galatians-3.es.html#v3">3:3</a>; los deseos «insensatos y dañinos» de <a href="1-timothy-6.es.html#v6-9">1 Timoteo 6:9</a>; y «también nosotros éramos en otro tiempo insensatos» en <a href="titus-3.es.html#v3-3">Tito 3:3</a>. RV60 en Tito 3:3 «insensatos»; TNM 1987 «insensatos».')
+
+DICTIONARY.append(('hedone', 'hēdonē', 'ἡδονή', 'hēdonē',
+    'PLEASURE &mdash; the word that gives English &lsquo;hedonism.&rsquo; &#9888; It stands in five verses of the New Testament, never in praise: the &lsquo;pleasures of life&rsquo; that choke the seed at <a href="luke-8.html#v8-14">Luke 8:14</a>; &lsquo;slaves to various desires and pleasures&rsquo; at <a href="titus-3.html#v3-3">Titus 3:3</a>; the pleasures that make war at James 4:1 and 4:3; and 2 Peter 2:13 (these three not yet on these pages). KJV at Titus 3:3 &lsquo;pleasures&rsquo;; NIV &lsquo;pleasures.&rsquo;',
+    ('Luke', 8, 14)))
+DICTIONARY_ES['hedone'] = ('hēdonḗ',
+    'PLACER &mdash; la palabra que da «hedonismo». &#9888; Está en cinco versículos del Nuevo Testamento, nunca para alabarlo: los «placeres de la vida» que ahogan la semilla en <a href="luke-8.es.html#v8-14">Lucas 8:14</a>; «esclavos de diversos deseos y placeres» en <a href="titus-3.es.html#v3-3">Tito 3:3</a>; los placeres que hacen la guerra en Santiago 4:1 y 4:3; y 2 Pedro 2:13 (estos tres todavía no en estas páginas). RV60 en Tito 3:3 «deleites»; TNM 1987 «placeres».')
+
+DICTIONARY.append(('stygetos', 'stygētos', 'στυγητός', 'stygētos',
+    'HATEFUL, detestable &mdash; from <em>stuge&#333;</em>, &lsquo;to hate, to shudder at.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-3.html#v3-3">Titus 3:3</a>, &lsquo;hateful, hating one another,&rsquo; in the writer&rsquo;s list of what &lsquo;we too were once.&rsquo; KJV and ASV &lsquo;hateful&rsquo;; NWT 1984 &lsquo;abhorrent.&rsquo;',
+    ('Titus', 3, 3)))
+DICTIONARY_ES['stygetos'] = ('stygētós',
+    'ABORRECIBLE, detestable &mdash; de <em>stuge&#333;</em>, «aborrecer, estremecerse ante». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-3.es.html#v3-3">Tito 3:3</a>, «aborrecibles, aborreciéndonos unos a otros», en la lista de lo que «también nosotros éramos». RV60 «aborrecibles»; TNM 1987 «aborrecibles».')
+
+DICTIONARY.append(('anakainosis', 'anakainōsis', 'ἀνακαίνωσις', 'anakainōsis',
+    'RENEWAL, a making new again &mdash; <em>ana</em>, &lsquo;again,&rsquo; and <em>kainos</em>, &lsquo;new.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;be transformed by the renewing of your mind&rsquo; at <a href="romans-12.html#v12-2">Romans 12:2</a>, and &lsquo;the washing of rebirth and renewal of the Holy Spirit&rsquo; at <a href="titus-3.html#v3-5">Titus 3:5</a>. KJV &lsquo;renewing&rsquo;; NWT 1984 at Titus 3:5 &lsquo;the making of us new.&rsquo;',
+    ('Romans', 12, 2)))
+DICTIONARY_ES['anakainosis'] = ('anakaínōsis',
+    'RENOVACIÓN, un hacer nuevo otra vez &mdash; <em>ana</em>, «de nuevo», y <em>kainos</em>, «nuevo». &#9888; Está en dos versículos del Nuevo Testamento: «transfórmense por la renovación de su mente» en <a href="romans-12.es.html#v12-2">Romanos 12:2</a>, y «el lavamiento de la regeneración y la renovación del Espíritu Santo» en <a href="titus-3.es.html#v3-5">Tito 3:5</a>. RV60 «renovación»; TNM 1987 en Tito 3:5 «hacernos nuevos».')
+
+DICTIONARY.append(('diabebaioomai', 'diabebaioomai', 'διαβεβαιόομαι', 'diabebaioomai',
+    'TO AFFIRM CONFIDENTLY, to insist &mdash; <em>dia</em> strengthening <em>bebaio&#333;</em>, &lsquo;to make firm.&rsquo; &#9888; It stands in two verses of the New Testament: the would-be teachers of the law who do not understand &lsquo;the things about which they make their confident assertions&rsquo; at <a href="1-timothy-1.html#v7">1 Timothy 1:7</a>, and Titus told to &lsquo;affirm confidently&rsquo; the right things at <a href="titus-3.html#v3-8">Titus 3:8</a>. KJV at Titus 3:8 &lsquo;affirm constantly&rsquo;; ASV &lsquo;affirm confidently.&rsquo;',
+    ('1 Timothy', 1, 7)))
+DICTIONARY_ES['diabebaioomai'] = ('diabebaióomai',
+    'AFIRMAR CON SEGURIDAD, insistir &mdash; <em>dia</em> que refuerza <em>bebaio&#333;</em>, «afirmar, hacer firme». &#9888; Está en dos versículos del Nuevo Testamento: los que quieren ser maestros de la ley sin entender «aquello que afirman con tanta seguridad» en <a href="1-timothy-1.es.html#v7">1 Timoteo 1:7</a>, y Tito, que ha de «afirmar con seguridad» las cosas debidas en <a href="titus-3.es.html#v3-8">Tito 3:8</a>. RV60 en Tito 3:8 «que insistas con firmeza».')
+
+DICTIONARY.append(('phrontizo', 'phrontizō', 'φροντίζω', 'phrontizō',
+    'TO TAKE CARE, to be intent on &mdash; from <em>phrontis</em>, &lsquo;thought, care.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-3.html#v3-8">Titus 3:8</a>, &lsquo;so that those who have believed God may take care to lead in good works.&rsquo; KJV &lsquo;might be careful to maintain good works&rsquo;; NWT 1984 &lsquo;may keep their minds on.&rsquo;',
+    ('Titus', 3, 8)))
+DICTIONARY_ES['phrontizo'] = ('frontízō',
+    'PROCURAR, poner empeño &mdash; de <em>phrontis</em>, «pensamiento, cuidado». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-3.es.html#v3-8">Tito 3:8</a>, «para que los que han creído a Dios procuren ponerse al frente de las buenas obras». RV60 «procuren ocuparse en buenas obras».')
+
+DICTIONARY.append(('anopheles', 'anōphelēs', 'ἀνωφελής', 'anōphelēs',
+    'UNPROFITABLE, useless &mdash; <em>an-</em>, &lsquo;not,&rsquo; and <em>&#333;phele&#333;</em>, &lsquo;to profit.&rsquo; &#9888; It stands in two verses of the New Testament: the controversies that are &lsquo;unprofitable and futile&rsquo; at <a href="titus-3.html#v3-9">Titus 3:9</a>, one verse after the good works that are &lsquo;good and profitable&rsquo; (see <a href="dictionary.html#ophelimos">&#333;phelimos</a>), and Hebrews 7:18 (not yet on these pages). KJV &lsquo;unprofitable.&rsquo;',
+    ('Titus', 3, 9)))
+DICTIONARY_ES['anopheles'] = ('anōfelḗs',
+    'SIN PROVECHO, inútil &mdash; <em>an-</em>, «no», y <em>&#333;phele&#333;</em>, «aprovechar». &#9888; Está en dos versículos del Nuevo Testamento: las controversias que son «sin provecho y vanas» en <a href="titus-3.es.html#v3-9">Tito 3:9</a>, un versículo después de las buenas obras que son «buenas y provechosas» (véase <a href="diccionario.html#ophelimos">&#333;phelimos</a>), y Hebreos 7:18 (todavía no en estas páginas). RV60 «sin provecho».')
+
+DICTIONARY.append(('hairetikos', 'hairetikos', 'αἱρετικός', 'hairetikos',
+    'FACTIOUS, causing division; later, HERETIC &mdash; the adjective of <em>hairesis</em>, &lsquo;party, faction&rsquo; (<a href="dictionary.html#hairesis">hairesis</a>). &#9888; It stands in one verse of the New Testament, <a href="titus-3.html#v3-10">Titus 3:10</a>, &lsquo;a factious person, after a first and a second admonition, refuse.&rsquo; Later Christian usage made it &lsquo;heretic,&rsquo; one who holds a doctrine the church condemns; the verse was cited in arguments for putting heretics to death, a use the note on the verse sets out and answers. KJV &lsquo;an heretick&rsquo;; ASV &lsquo;A factious man&rsquo;; NWT 1984 &lsquo;a man that promotes a sect.&rsquo;',
+    ('Titus', 3, 10)))
+DICTIONARY_ES['hairetikos'] = ('hairetikós',
+    'FACCIOSO, que causa división; más tarde, HEREJE &mdash; el adjetivo de <em>hairesis</em>, «partido, facción» (<a href="diccionario.html#hairesis">hairesis</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-3.es.html#v3-10">Tito 3:10</a>, «al hombre faccioso, después de una primera y una segunda amonestación, recházalo». El uso cristiano posterior la hizo «hereje», el que sostiene una doctrina que la iglesia condena; el versículo se citó en argumentos para dar muerte a los herejes, uso que la nota del versículo expone y responde. RV 1909 «hombre hereje»; RV60 «Al hombre que cause divisiones»; TNM 1987 «el hombre que promueve una secta».')
+
+DICTIONARY.append(('ekstrepho', 'ekstrephō', 'ἐκστρέφω', 'ekstrephō',
+    'TO TURN INSIDE OUT, to pervert &mdash; <em>ek</em>, &lsquo;out,&rsquo; and <em>streph&#333;</em>, &lsquo;to turn.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-3.html#v3-11">Titus 3:11</a>, &lsquo;such a person is perverted and sins.&rsquo; KJV &lsquo;subverted&rsquo;; ASV &lsquo;perverted&rsquo;; NWT 1984 &lsquo;turned out of the way.&rsquo;',
+    ('Titus', 3, 11)))
+DICTIONARY_ES['ekstrepho'] = ('ekstréphō',
+    'VOLVER DEL REVÉS, pervertir &mdash; <em>ek</em>, «fuera», y <em>streph&#333;</em>, «volver». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-3.es.html#v3-11">Tito 3:11</a>, «el tal se ha pervertido y peca». RV60 «se ha pervertido»; RV 1909 «es trastornado»; TNM 1987 «ha sido descaminado».')
+
+DICTIONARY.append(('autokatakritos', 'autokatakritos', 'αὐτοκατάκριτος', 'autokatakritos',
+    'SELF-CONDEMNED &mdash; <em>autos</em>, &lsquo;self,&rsquo; and <em>katakrin&#333;</em>, &lsquo;to condemn.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-3.html#v3-11">Titus 3:11</a>, &lsquo;being self-condemned&rsquo;: the verse leaves the judgment with the person himself. KJV &lsquo;condemned of himself&rsquo;; ASV &lsquo;self-condemned&rsquo;; Douay &lsquo;condemned by his own judgment.&rsquo;',
+    ('Titus', 3, 11)))
+DICTIONARY_ES['autokatakritos'] = ('autokatákritos',
+    'CONDENADO POR SÍ MISMO &mdash; <em>autos</em>, «uno mismo», y <em>katakrin&#333;</em>, «condenar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-3.es.html#v3-11">Tito 3:11</a>, «condenado por sí mismo»: el versículo deja el juicio en la persona misma. RV60 «condenado por su propio juicio»; TNM 1987 «a sí mismo se condena».')
+
+DICTIONARY.append(('akarpos', 'akarpos', 'ἄκαρπος', 'akarpos',
+    'UNFRUITFUL, fruitless &mdash; <em>a-</em> and <em>karpos</em>, &lsquo;fruit.&rsquo; &#9888; It stands in seven verses of the New Testament, among them the seed among thorns that &lsquo;becomes unfruitful&rsquo; at <a href="matthew-13.html#v13-22">Matthew 13:22</a> and <a href="mark-4.html#v4-19">Mark 4:19</a>, &lsquo;the fruitless works of darkness&rsquo; at <a href="ephesians-5.html#v5-11">Ephesians 5:11</a>, &lsquo;neither idle nor unfruitful&rsquo; at <a href="2-peter-1.html#v8">2 Peter 1:8</a>, and the last line of instruction to Titus, &lsquo;so that they may not be unfruitful&rsquo; (<a href="titus-3.html#v3-14">Titus 3:14</a>). KJV and ASV &lsquo;unfruitful.&rsquo;',
+    ('Matthew', 13, 22)))
+DICTIONARY_ES['akarpos'] = ('ákarpos',
+    'SIN FRUTO, infructuoso &mdash; <em>a-</em> y <em>karpos</em>, «fruto». &#9888; Está en siete versículos del Nuevo Testamento, entre ellos la semilla entre espinos que «se hace infructuosa» en <a href="matthew-13.es.html#v13-22">Mateo 13:22</a> y <a href="mark-4.es.html#v4-19">Marcos 4:19</a>, «las obras infructuosas de las tinieblas» en <a href="ephesians-5.es.html#v5-11">Efesios 5:11</a>, «ni ociosos ni sin fruto» en <a href="2-peter-1.es.html#v8">2 Pedro 1:8</a>, y la última línea de instrucción a Tito, «para que no sean sin fruto» (<a href="titus-3.es.html#v3-14">Tito 3:14</a>). RV60 «sin fruto».')
+
+DICTIONARY_ES['eleos'] = ('éleos',
+    'MISERICORDIA, compasión &mdash; la piedad que actúa, no solo la que siente; la palabra regular del Antiguo Testamento griego para el hebreo <em>hesed</em>, la lealtad y el amor constante de Dios a su pacto. &#9888; Entra en el saludo solo en las cartas PASTORALES &mdash;«gracia, misericordia, paz» (<a href="1-timothy-1.es.html#v2">1 Timoteo 1:2</a>; <a href="2-timothy-1.es.html#v2">2 Timoteo 1:2</a>; y 2 Juan 3)&mdash;, donde el habitual «gracia y paz» de Pablo se ensancha con un término. En <a href="2-timothy-1.es.html#v16">2 Timoteo 1:16</a> y 1:18 es lo que Pablo pide para Onesíforo. En <a href="titus-3.es.html#v3-5">Tito 3:5</a> es la razón de la salvación: «no por obras hechas en justicia &hellip; sino según su misericordia nos salvó». De ella descienden «limosna» y el clamor litúrgico <em>Kyrie eleison</em>.')
+
+ENCYCLOPEDIA.append(dict(slug='artemas', name='Artemas', kind='person', aliases=['Artemas'], refs=[('Titus', 3, 12)], videos=[],
+    desc='A companion of Paul named once in the New Testament: &lsquo;When I send Artemas or Tychicus to you&rsquo; (<a href="titus-3.html#v3-12">Titus 3:12</a>). One of the two is to relieve Titus on Crete so that he can come to Nicopolis. Nothing else is known of him. The name is a short form built on Artemis, the goddess of the Ephesians (<a href="encyclopedia.html#artemis">Artemis</a>); that derivation is reported here, not checked.'))
+ENCYCLOPEDIA_ES['artemas'] = ('Ártemas',
+    'Un compañero de Pablo nombrado una sola vez en el Nuevo Testamento: «Cuando te envíe a Ártemas o a Tíquico» (<a href="titus-3.es.html#v3-12">Tito 3:12</a>). Uno de los dos ha de relevar a Tito en Creta para que pueda ir a Nicópolis. No se sabe nada más de él. El nombre es una forma breve hecha sobre Artemisa, la diosa de los efesios (<a href="enciclopedia.html#artemis">Artemisa</a>); esa derivación se informa aquí, no se comprobó.')
+
+ENCYCLOPEDIA.append(dict(slug='zenas', name='Zenas', kind='person', aliases=['Zenas'], refs=[('Titus', 3, 13)], videos=[],
+    desc='&lsquo;Zenas the lawyer,&rsquo; whom Titus is to send on his way with Apollos, &lsquo;so that they lack nothing&rsquo; (<a href="titus-3.html#v3-13">Titus 3:13</a>). The name stands in that one verse of the New Testament. &lsquo;Lawyer&rsquo; is <em>nomikos</em>, Luke&rsquo;s word for the experts in the law of Moses (<a href="dictionary.html#nomikos">nomikos</a>); whether Zenas was one of those or a Roman jurist the text does not say. See <a href="encyclopedia.html#apollos">Apollos</a>.'))
+ENCYCLOPEDIA_ES['zenas'] = ('Zenas',
+    '«Zenas el jurista», a quien Tito ha de encaminar con Apolos, «de modo que nada les falte» (<a href="titus-3.es.html#v3-13">Tito 3:13</a>). El nombre está en ese único versículo del Nuevo Testamento. «Jurista» traduce <em>nomikos</em>, la palabra de Lucas para los expertos en la ley de Moisés (<a href="diccionario.html#nomikos">nomikos</a>); si Zenas era uno de ellos o un jurista romano el texto no lo dice. Véase <a href="enciclopedia.html#apollos">Apolos</a>.')
+
+ENCYCLOPEDIA.append(dict(slug='nicopolis', name='Nicopolis', kind='place', aliases=['Nicopolis'], refs=[('Titus', 3, 12)], videos=[], coords=(39.01, 20.73, 0.3), approx=True, modern='Near Preveza, Greece',
+    desc='&lsquo;Do your best to come to me at Nicopolis, for I have decided to spend the winter there&rsquo; (<a href="titus-3.html#v3-12">Titus 3:12</a>). The name, &lsquo;city of victory,&rsquo; stands in that one verse of the New Testament, and more than one ancient city bore it. The one on the coast of Epirus in western Greece is the usual identification; the closing note of the Textus Receptus says &lsquo;Nicopolis of Macedonia&rsquo; (both reported here, not checked). The coordinates are those of Nicopolis in Epirus and are approximate.'))
+ENCYCLOPEDIA_ES['nicopolis'] = ('Nicópolis',
+    '«Procura venir a mí en Nicópolis, porque he decidido pasar allí el invierno» (<a href="titus-3.es.html#v3-12">Tito 3:12</a>). El nombre, «ciudad de la victoria», está en ese único versículo del Nuevo Testamento, y más de una ciudad antigua lo llevó. La de la costa del Epiro, en el oeste de Grecia, es la identificación habitual; la nota final del Textus Receptus dice «Nicópolis de Macedonia» (las dos cosas se informan aquí, no se comprobaron). Las coordenadas son las de Nicópolis del Epiro y son aproximadas.')
+
+def _tit3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_tit3_fix([('the instruction to be subject to rulers and authorities (Titus 3:1, not yet on these pages).', 'the instruction to be subject to rulers and authorities (<a href="titus-3.html#v3-1">Titus 3:1</a>).'), ('la instrucción de someterse a gobernantes y autoridades (Tito 3:1, todavía no en estas páginas).', 'la instrucción de someterse a gobernantes y autoridades (<a href="titus-3.es.html#v3-1">Tito 3:1</a>).'), ('1 Corinthians 3:20 and 15:17 and Titus 3:9 (none yet on these pages),', '<a href="1-corinthians-3.html#v20">1 Corinthians 3:20</a> and <a href="1-corinthians-15.html#v17">15:17</a> and <a href="titus-3.html#v3-9">Titus 3:9</a>,'), ('<a href="1-corinthians-3.es.html#v20">1 Corintios 3:20</a> (ya en estas páginas), 1 Corintios 15:17 y Tito 3:9 (estos dos todavía no en estas páginas),', '<a href="1-corinthians-3.es.html#v20">1 Corintios 3:20</a>, <a href="1-corinthians-15.es.html#v17">1 Corintios 15:17</a> y <a href="titus-3.es.html#v3-9">Tito 3:9</a>,'), ('and Titus 3:4 (not yet on these pages).', 'and <a href="titus-3.html#v3-4">Titus 3:4</a>.'), ('y Tito 3:4 (todavía no en estas páginas).', 'y <a href="titus-3.es.html#v3-4">Tito 3:4</a>.'), ('and Titus 3:5, &lsquo;the washing of rebirth&rsquo; (not yet on these pages).', 'and <a href="titus-3.html#v3-5">Titus 3:5</a>, &lsquo;the washing of rebirth.&rsquo;'), ('y Tito 3:5, «el lavamiento de la regeneración» (todavía no en estas páginas).', 'y <a href="titus-3.es.html#v3-5">Tito 3:5</a>, «el lavamiento de la regeneración».'), ('and Titus 3:8 and 3:14, of giving oneself to good works (these two not yet on these pages).', 'and <a href="titus-3.html#v3-8">Titus 3:8</a> and <a href="titus-3.html#v3-14">3:14</a>, of giving oneself to good works.'), ('y Tito 3:8 y 3:14, de dedicarse a las buenas obras (estos dos todavía no en estas páginas).', 'y <a href="titus-3.es.html#v3-8">Tito 3:8</a> y <a href="titus-3.es.html#v3-14">3:14</a>, de dedicarse a las buenas obras.'), ('and Titus 3:8 (not yet on these pages).', 'and <a href="titus-3.html#v3-8">Titus 3:8</a>.'), ('y Tito 3:8 (todavía no en estas páginas).', 'y <a href="titus-3.es.html#v3-8">Tito 3:8</a>.'), ('and Titus 3:12 (not yet on these pages).', 'and <a href="titus-3.html#v3-12">Titus 3:12</a>.'), ('y Tito 3:12 (todavía no en estas páginas).', 'y <a href="titus-3.es.html#v3-12">Tito 3:12</a>.'), ('and at Titus 3:12 he means to send Artemas or Tychicus to Titus.', 'and at <a href="titus-3.html#v3-12">Titus 3:12</a> he means to send <a href="encyclopedia.html#artemas">Artemas</a> or Tychicus to Titus.'), ('y en Tito 3:12 piensa enviar a Ártemas o a Tíquico a Tito.', 'y en <a href="titus-3.es.html#v3-12">Tito 3:12</a> piensa enviar a <a href="enciclopedia.html#artemas">Ártemas</a> o a Tíquico a Tito.'), ("The noun family gives 'regeneration' (palingenesia, Titus 3:5).", 'The noun family gives \'regeneration\' (palingenesia, <a href="titus-3.html#v3-5">Titus 3:5</a>).'), ('(Romans 15:24; 1 Corinthians 16:6, 11; Titus 3:13).', '(Romans 15:24; 1 Corinthians 16:6, 11; <a href="titus-3.html#v3-13">Titus 3:13</a>).'), ('(Romanos 15:24; 1 Corintios 16:6, 11; Tito 3:13).', '(Romanos 15:24; 1 Corintios 16:6, 11; <a href="titus-3.es.html#v3-13">Tito 3:13</a>).'), ('here and Titus 3:5, of the washing of rebirth', 'here and <a href="titus-3.html#v3-5">Titus 3:5</a>, of the washing of rebirth'), ('aquí y en Tito 3:5, del lavamiento de la regeneración', 'aquí y en <a href="titus-3.es.html#v3-5">Tito 3:5</a>, del lavamiento de la regeneración'), ('Colossians 3:12 and Titus 3:4. Its pair', 'Colossians 3:12 and <a href="titus-3.html#v3-4">Titus 3:4</a>. Its pair'), ('Colosenses 3:12 y Tito 3:4. Su pareja', 'Colosenses 3:12 y <a href="titus-3.es.html#v3-4">Tito 3:4</a>. Su pareja'), ('(Artemas at Titus 3:12 is another name)', '(<a href="encyclopedia.html#artemas">Artemas</a> at <a href="titus-3.html#v3-12">Titus 3:12</a> is another name)'), ('(Artemas, en Tito 3:12, es otro nombre)', '(<a href="enciclopedia.html#artemas">Ártemas</a>, en <a href="titus-3.es.html#v3-12">Tito 3:12</a>, es otro nombre)')])
+
+XREFS.extend([
+    (("Romans", 13, 1), ("Titus", 3, 1), "be subject to the authorities"),
+    (("Acts", 5, 29), ("Titus", 3, 1), "obey"),
+    (("1 Timothy", 3, 3), ("Titus", 3, 2), "not quarrelsome, reasonable"),
+    (("Galatians", 3, 1), ("Titus", 3, 3), "senseless"),
+    (("Titus", 2, 11), ("Titus", 3, 4), "appeared"),
+    (("Acts", 28, 2), ("Titus", 3, 4), "kindness, love for humankind"),
+    (("2 Timothy", 1, 9), ("Titus", 3, 5), "not according to our works"),
+    (("Ephesians", 2, 9), ("Titus", 3, 5), "not of works"),
+    (("Ephesians", 5, 26), ("Titus", 3, 5), "the washing"),
+    (("Matthew", 19, 28), ("Titus", 3, 5), "rebirth, renewal of all things"),
+    (("Romans", 12, 2), ("Titus", 3, 5), "renewing"),
+    (("Acts", 2, 33), ("Titus", 3, 6), "poured out"),
+    (("Romans", 3, 24), ("Titus", 3, 7), "justified by his grace"),
+    (("Romans", 8, 17), ("Titus", 3, 7), "heirs"),
+    (("1 Timothy", 1, 15), ("Titus", 3, 8), "Faithful is the saying"),
+    (("1 Timothy", 1, 7), ("Titus", 3, 8), "confident assertions"),
+    (("1 Timothy", 1, 4), ("Titus", 3, 9), "genealogies"),
+    (("Galatians", 5, 20), ("Titus", 3, 10), "factions"),
+    (("2 Timothy", 4, 12), ("Titus", 3, 12), "Tychicus"),
+    (("Acts", 18, 24), ("Titus", 3, 13), "Apollos"),
+    (("Matthew", 13, 22), ("Titus", 3, 14), "unfruitful"),
+])
+
+CHAPTER_ART["tit3"] = [dict(
+    file="nicopolis-northern-nymphaeum.jpg",
+    title="The northern nymphaeum at the western gate, Nicopolis",   title_es="El ninfeo septentrional junto a la puerta occidental, Nicópolis",
+    artist="Photograph by Albinfo",
+    year="2023 (photograph)",
+    location="Ancient Nicopolis, Epirus, Greece",
+    location_es="Antigua Nicópolis, Epiro, Grecia",
+    alt="The ruins of a Roman brick building in a green field under a blue sky: a long wall of brick and stone with rounded arched niches, partly overgrown with "
+        "trees and shrubs, with ferns in the foreground.",
+    note="&#9888; The ruins of the northern nymphaeum, a public fountain building, at the western gate of Nicopolis in Epirus, the usual identification of the city "
+         "where Paul planned &lsquo;to spend the winter&rsquo; (<a href=\"titus-3.html#v3-12\">verse 12</a>).",
+    note_es="&#9888; Las ruinas del ninfeo septentrional, una fuente pública, junto a la puerta occidental de Nicópolis del Epiro, la identificación habitual de la "
+            "ciudad donde Pablo pensaba «pasar el invierno» (<a href=\"titus-3.es.html#v3-12\">versículo 12</a>).",
+    license="CC0 1.0 (public domain dedication)",
+    source_url="https://commons.wikimedia.org/wiki/File:Nicopolis_northern_nymphaeum.jpg",
+)]
+
+CHRON_CHAPTERS["tit3"] = dict(era='apostolic',
+    when="The close of the letter to Titus: submission to rulers, 'the kindness and love for humankind of God our Saviour appeared,' 'the washing of rebirth,' the last faithful saying, a factious person refused after two warnings, and the travellers: Artemas, Tychicus, Zenas and Apollos, and a winter at Nicopolis.",
+    clock="Undated by the text; on the traditional reading, between Paul's imprisonments, mid-60s AD; many scholars date the Pastoral letters later.")
+
