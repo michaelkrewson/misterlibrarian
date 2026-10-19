@@ -43252,3 +43252,178 @@ CHRON_CHAPTERS["jas3"] = dict(era='apostolic',
     when="The tongue: not many teachers, for 'we all trip in many ways'; a bit in a horse's mouth, a ship's steering oar, a small fire and a great forest; the tongue set on fire by Gehenna, tamed by no one; blessing and cursing from one mouth; and two wisdoms, the earthly kind with its jealousy and self-seeking, and the wisdom from above, 'first pure, then peaceful.'",
     clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
 
+# ---- James 4 -----------------------------------------------------------
+DICTIONARY.append(('polemos', 'polemos', 'πόλεμος', 'polemos',
+    'WAR, battle &mdash; armed conflict, and its verb <em>poleme&#333;</em>, &lsquo;to wage war.&rsquo; &#9888; The noun stands in sixteen verses of the New Testament, nine of them in Revelation: the &lsquo;battle&rsquo; of the king who counts his men at <a href="luke-14.html#v14-31">Luke 14:31</a>, those who &lsquo;became mighty in war&rsquo; at <a href="hebrews-11.html#v11-34">Hebrews 11:34</a>, and at <a href="james-4.html#v4-1">James 4:1</a> the &lsquo;wars&rsquo; among the letter&rsquo;s own readers, whose source is &lsquo;your pleasures that wage war in your members&rsquo; (<a href="dictionary.html#strateuomai">strateuomai</a>). KJV at James 4:1 &lsquo;From whence come wars and fightings among you?&rsquo;; NWT 1984 &lsquo;From what source are there wars.&rsquo;',
+    ('James', 4, 1)))
+DICTIONARY_ES['polemos'] = ('pólemos',
+    'GUERRA, batalla &mdash; el conflicto armado, y su verbo <em>polemé&#333;</em>, «hacer guerra». &#9888; El sustantivo está en dieciséis versículos del Nuevo Testamento, nueve de ellos en Apocalipsis: la «guerra» del rey que cuenta a sus hombres en <a href="luke-14.es.html#v14-31">Lucas 14:31</a>, los que «se hicieron poderosos en la guerra» en <a href="hebrews-11.es.html#v11-34">Hebreos 11:34</a>, y en <a href="james-4.es.html#v4-1">Santiago 4:1</a> las «guerras» entre los propios lectores de la carta, cuyo origen son «sus placeres, que hacen guerra en sus miembros» (<a href="diccionario.html#strateuomai">strateuomai</a>). RV60 en Santiago 4:1 «¿De dónde vienen las guerras y los pleitos entre vosotros?»; TNM 1987 «¿De qué fuente son las guerras».')
+
+DICTIONARY.append(('strateuomai', 'strateuomai', 'στρατεύομαι', 'strateuomai',
+    'TO SERVE AS A SOLDIER, to wage war &mdash; from <em>stratos</em>, &lsquo;army.&rsquo; &#9888; It stands in seven verses of the New Testament: the soldiers who ask John the Baptist &lsquo;what shall we do?&rsquo; (<a href="luke-3.html#v3-14">Luke 3:14</a>); &lsquo;Who ever serves as a soldier at his own expense?&rsquo; (<a href="1-corinthians-9.html#v7">1 Corinthians 9:7</a>); &lsquo;we do not wage war according to the flesh&rsquo; (<a href="2-corinthians-10.html#v3">2 Corinthians 10:3</a>); and the pleasures &lsquo;that wage war in your members&rsquo; at <a href="james-4.html#v4-1">James 4:1</a>, beside the desires that wage war &lsquo;against the soul&rsquo; at 1 Peter 2:11 (not yet on these pages). Paul&rsquo;s compound is <a href="dictionary.html#antistrateuomai">antistrateuomai</a>. KJV at James 4:1 &lsquo;your lusts that war in your members&rsquo;; NWT 1984 &lsquo;that carry on a conflict in YOUR members.&rsquo;',
+    ('Luke', 3, 14)))
+DICTIONARY_ES['strateuomai'] = ('strateúomai',
+    'SERVIR COMO SOLDADO, hacer guerra &mdash; de <em>stratós</em>, «ejército». &#9888; Está en siete versículos del Nuevo Testamento: los soldados que preguntan a Juan el Bautista «¿qué haremos?» (<a href="luke-3.es.html#v3-14">Lucas 3:14</a>); «¿Quién sirve como soldado a sus propias expensas?» (<a href="1-corinthians-9.es.html#v7">1 Corintios 9:7</a>); «no guerreamos como lo hacen los humanos» (<a href="2-corinthians-10.es.html#v3">2 Corintios 10:3</a>); y los placeres «que hacen guerra en sus miembros» en <a href="james-4.es.html#v4-1">Santiago 4:1</a>, junto a los deseos que hacen guerra «contra el alma» en 1 Pedro 2:11 (todavía no en estas páginas). El compuesto de Pablo es <a href="diccionario.html#antistrateuomai">antistrateuomai</a>. RV60 en Santiago 4:1 «las cuales combaten en vuestros miembros»; TNM 1987 «que se hallan en conflicto en sus miembros».')
+
+DICTIONARY.append(('moichalis', 'moichalis', 'μοιχαλίς', 'moichalis',
+    'ADULTERESS; as an adjective, adulterous &mdash; the feminine of <em>moichos</em>, &lsquo;adulterer&rsquo; (<a href="dictionary.html#moichos">moichos</a>). &#9888; It stands in six verses of the New Testament. At <a href="romans-7.html#v7-3">Romans 7:3</a> it is literal, the wife who &lsquo;will be called an adulteress.&rsquo; Jesus uses it of &lsquo;an evil and adulterous generation&rsquo; (<a href="matthew-12.html#v12-39">Matthew 12:39</a>; <a href="mark-8.html#v8-38">Mark 8:38</a>), and James cries it at his readers, &lsquo;Adulteresses!&rsquo; (<a href="james-4.html#v4-4">James 4:4</a>), in the prophets&rsquo; picture of the people as Jehovah&rsquo;s unfaithful wife (<a href="hosea-1.html#v2">Hosea 1:2</a>). KJV at James 4:4 &lsquo;Ye adulterers and adulteresses,&rsquo; following the longer reading of the Robinson&ndash;Pierpont and Textus Receptus texts; ASV &lsquo;Ye adulteresses&rsquo;; NWT 1984 &lsquo;Adulteresses.&rsquo;',
+    ('James', 4, 4)))
+DICTIONARY_ES['moichalis'] = ('moichalís',
+    'ADÚLTERA; como adjetivo, adúltero &mdash; el femenino de <em>moichós</em>, «adúltero» (<a href="diccionario.html#moichos">moichos</a>). &#9888; Está en seis versículos del Nuevo Testamento. En <a href="romans-7.es.html#v7-3">Romanos 7:3</a> es literal, la esposa que «será llamada adúltera». Jesús lo usa de «la generación mala y adulterina» (<a href="matthew-12.es.html#v12-39">Mateo 12:39</a>) y de «esta generación adúltera y pecadora» (<a href="mark-8.es.html#v8-38">Marcos 8:38</a>), y Santiago se lo grita a sus lectores, «¡Adúlteras!» (<a href="james-4.es.html#v4-4">Santiago 4:4</a>), con la imagen de los profetas del pueblo como esposa infiel de Jehová (<a href="hosea-1.es.html#v2">Oseas 1:2</a>). RV 1909 en Santiago 4:4 «Adúlteros y adúlteras», la lectura más larga de los textos de Robinson&ndash;Pierpont y Textus Receptus; RV60 «¡Oh almas adúlteras!»; TNM 1987 «Adúlteras».')
+
+DICTIONARY.append(('philia', 'philia', 'φιλία', 'philia',
+    'FRIENDSHIP &mdash; the noun of <em>philos</em>, &lsquo;friend&rsquo; (<a href="dictionary.html#philos">philos</a>). &#9888; It stands in one verse of the New Testament, <a href="james-4.html#v4-4">James 4:4</a>, &lsquo;friendship with the world is hostility toward God,&rsquo; two chapters after Abraham was &lsquo;called a friend of God&rsquo; (<a href="james-2.html#v2-23">James 2:23</a>); compare &lsquo;You are my friends if you do what I command you&rsquo; at <a href="john-15.html#v15-14">John 15:14</a>. KJV &lsquo;the friendship of the world is enmity with God&rsquo;; NIV &lsquo;friendship with the world means enmity against God.&rsquo;',
+    ('James', 4, 4)))
+DICTIONARY_ES['philia'] = ('philía',
+    'AMISTAD &mdash; el sustantivo de <em>phílos</em>, «amigo» (<a href="diccionario.html#philos">philos</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-4.es.html#v4-4">Santiago 4:4</a>, «la amistad con el mundo es hostilidad hacia Dios», dos capítulos después de que Abraham «fue llamado amigo de Dios» (<a href="james-2.es.html#v2-23">Santiago 2:23</a>); compárese «Ustedes son mis amigos si hacen lo que yo les mando» en <a href="john-15.es.html#v15-14">Juan 15:14</a>. RV60 «la amistad del mundo es enemistad contra Dios»; TNM 1987 «la amistad con el mundo es enemistad con Dios».')
+
+DICTIONARY.append(('echthra', 'echthra', 'ἔχθρα', 'echthra',
+    'HOSTILITY, enmity &mdash; the noun of <em>echthros</em>, &lsquo;enemy.&rsquo; &#9888; It stands in six verses of the New Testament: Herod and Pilate, who &lsquo;had been at enmity with one another&rsquo; (<a href="luke-23.html#v23-12">Luke 23:12</a>); &lsquo;the mind of the flesh is hostility toward God&rsquo; (<a href="romans-8.html#v8-7">Romans 8:7</a>); &lsquo;hostilities&rsquo; among the works of the flesh (<a href="galatians-5.html#v20">Galatians 5:20</a>); the dividing wall, &lsquo;the hostility,&rsquo; broken down at <a href="ephesians-2.html#v2-14">Ephesians 2:14</a> and killed at <a href="ephesians-2.html#v2-16">2:16</a>; and &lsquo;friendship with the world is hostility toward God&rsquo; (<a href="james-4.html#v4-4">James 4:4</a>). KJV and NWT 1984 at James 4:4 &lsquo;enmity with God.&rsquo;',
+    ('Romans', 8, 7)))
+DICTIONARY_ES['echthra'] = ('échthra',
+    'HOSTILIDAD, enemistad &mdash; el sustantivo de <em>echthrós</em>, «enemigo». &#9888; Está en seis versículos del Nuevo Testamento: Herodes y Pilato, que «habían estado enemistados entre ellos» (<a href="luke-23.es.html#v23-12">Lucas 23:12</a>); «la mentalidad de la carne es hostilidad hacia Dios» (<a href="romans-8.es.html#v8-7">Romanos 8:7</a>); las «hostilidades» entre las obras de la carne (<a href="galatians-5.es.html#v20">Gálatas 5:20</a>); el muro divisorio, «la enemistad», derribado en <a href="ephesians-2.es.html#v2-14">Efesios 2:14</a> y muerto en <a href="ephesians-2.es.html#v2-16">2:16</a>; y «la amistad con el mundo es hostilidad hacia Dios» (<a href="james-4.es.html#v4-4">Santiago 4:4</a>). RV60 en Santiago 4:4 «enemistad contra Dios»; TNM 1987 «enemistad con Dios».')
+
+DICTIONARY.append(('phthonos', 'phthonos', 'φθόνος', 'phthonos',
+    'ENVY &mdash; resentment at another&rsquo;s good; its verb is <em>phthone&#333;</em>. &#9888; With its verb it stands in ten verses of the New Testament, and outside <a href="james-4.html#v4-5">James 4:5</a> it is always a vice: Jesus was handed over &lsquo;out of envy&rsquo; (<a href="matthew-27.html#v27-18">Matthew 27:18</a>); some proclaim Christ &lsquo;out of envy and rivalry&rsquo; (<a href="philippians-1.html#v15">Philippians 1:15</a>); &lsquo;envying one another&rsquo; (<a href="galatians-5.html#v26">Galatians 5:26</a>); &lsquo;malice and envy&rsquo; (<a href="titus-3.html#v3-3">Titus 3:3</a>). That is part of why readers divide over James 4:5, &lsquo;The spirit that he made to dwell in us yearns enviously&rsquo;: whether it speaks of human envy or, unusually, of God&rsquo;s jealous longing. It is not <em>z&#275;los</em>, &lsquo;jealousy,&rsquo; of <a href="james-3.html#v3-14">James 3:14</a>. KJV at James 4:5 &lsquo;lusteth to envy&rsquo;; ASV &lsquo;long unto envying&rsquo;; NWT 1984 &lsquo;with a tendency to envy.&rsquo;',
+    ('Matthew', 27, 18)))
+DICTIONARY_ES['phthonos'] = ('phthónos',
+    'ENVIDIA &mdash; el resentimiento por el bien ajeno; su verbo es <em>phthoné&#333;</em>. &#9888; Con su verbo está en diez versículos del Nuevo Testamento, y fuera de <a href="james-4.es.html#v4-5">Santiago 4:5</a> siempre es un vicio: a Jesús lo entregaron «por envidia» (<a href="matthew-27.es.html#v27-18">Mateo 27:18</a>); algunos predican a Cristo «por envidia y rivalidad» (<a href="philippians-1.es.html#v15">Filipenses 1:15</a>); «envidiándonos unos a otros» (<a href="galatians-5.es.html#v26">Gálatas 5:26</a>); «malicia y envidia» (<a href="titus-3.es.html#v3-3">Tito 3:3</a>). Por eso, en parte, los lectores se dividen sobre Santiago 4:5, «El espíritu que él hizo habitar en nosotros anhela con envidia»: si habla de la envidia humana o, de modo insólito, del celo con que Dios anhela. No es el <em>z&#275;́los</em>, «celos», de <a href="james-3.es.html#v3-14">Santiago 3:14</a>. RV 1909 en Santiago 4:5 «codicia para envidia»; TNM 1987 «Es con tendencia hacia la envidia».')
+
+DICTIONARY.append(('epipotheo', 'epipotheō', 'ἐπιποθέω', 'epipotheō',
+    'TO LONG FOR, to yearn &mdash; <em>epi</em>, &lsquo;toward,&rsquo; and <em>pothe&#333;</em>, &lsquo;to miss, to desire.&rsquo; &#9888; It stands in nine verses of the New Testament, nearly always of a warm longing: &lsquo;I long to see you&rsquo; (<a href="romans-1.html#v11">Romans 1:11</a>); &lsquo;longing to put on over it our dwelling from heaven&rsquo; (<a href="2-corinthians-5.html#v2">2 Corinthians 5:2</a>); &lsquo;how I long for you all&rsquo; (<a href="philippians-1.html#v8">Philippians 1:8</a>). At <a href="james-4.html#v4-5">James 4:5</a> it is joined to &lsquo;envy,&rsquo; and who is longing there is disputed (<a href="dictionary.html#phthonos">phthonos</a>). ASV at James 4:5 &lsquo;long unto envying&rsquo;; NWT 1984 &lsquo;keeps longing&rsquo;; NIV &lsquo;he jealously longs for the spirit he has caused to dwell in us.&rsquo;',
+    ('Romans', 1, 11)))
+DICTIONARY_ES['epipotheo'] = ('epipothé&#333;',
+    'ANHELAR, añorar &mdash; <em>epí</em>, «hacia», y <em>pothé&#333;</em>, «echar de menos, desear». &#9888; Está en nueve versículos del Nuevo Testamento, casi siempre de un anhelo cálido: «anhelo verlos» (<a href="romans-1.es.html#v11">Romanos 1:11</a>); «deseando ardientemente ponernos encima nuestra morada celestial» (<a href="2-corinthians-5.es.html#v2">2 Corintios 5:2</a>); «cuánto los añoro a todos» (<a href="philippians-1.es.html#v8">Filipenses 1:8</a>). En <a href="james-4.es.html#v4-5">Santiago 4:5</a> va unido a «envidia», y quién es el que anhela allí se discute (<a href="diccionario.html#phthonos">phthonos</a>). RV60 en Santiago 4:5 «nos anhela celosamente»; TNM 1987 «sigue anhelando».')
+
+DICTIONARY.append(('hyperephanos', 'hyperēphanos', 'ὑπερήφανος', 'hyperēphanos',
+    'PROUD, arrogant &mdash; <em>hyper</em>, &lsquo;above,&rsquo; and <em>phainomai</em>, &lsquo;to appear&rsquo;: one who shows himself above others. &#9888; It stands in five verses of the New Testament: &lsquo;he has scattered the proud&rsquo; in Mary&rsquo;s song (<a href="luke-1.html#v51">Luke 1:51</a>); &lsquo;arrogant&rsquo; in Paul&rsquo;s list at <a href="romans-1.html#v30">Romans 1:30</a>; 2 Timothy 3:2 (not yet on these pages); and the line of Greek Proverbs 3:34 quoted at <a href="james-4.html#v4-6">James 4:6</a> and at 1 Peter 5:5 (not yet on these pages), &lsquo;God opposes the proud, but gives grace to the humble.&rsquo; KJV at James 4:6 &lsquo;God resisteth the proud&rsquo;; NWT 1984 &lsquo;God opposes the haughty ones.&rsquo;',
+    ('Luke', 1, 51)))
+DICTIONARY_ES['hyperephanos'] = ('hyper&#275;phanos',
+    'SOBERBIO, arrogante &mdash; <em>hypér</em>, «por encima», y <em>phaínomai</em>, «aparecer»: el que se muestra por encima de los demás. &#9888; Está en cinco versículos del Nuevo Testamento: «dispersó a los soberbios» en el canto de María (<a href="luke-1.es.html#v51">Lucas 1:51</a>); «soberbios» en la lista de Pablo en <a href="romans-1.es.html#v30">Romanos 1:30</a>; 2 Timoteo 3:2 (todavía no en estas páginas); y la línea de Proverbios 3:34 en griego citada en <a href="james-4.es.html#v4-6">Santiago 4:6</a> y en 1 Pedro 5:5 (todavía no en estas páginas), «Dios se opone a los soberbios, pero da gracia a los humildes». RV60 en Santiago 4:6 «Dios resiste a los soberbios»; TNM 1987 «Dios se opone a los altivos».')
+
+DICTIONARY.append(('katepheia', 'katēpheia', 'κατήφεια', 'katēpheia',
+    'GLOOM, dejection &mdash; a downcast look; the word is said to picture eyes cast down (reported, not checked here). &#9888; It stands in one verse of the New Testament, <a href="james-4.html#v4-9">James 4:9</a>, &lsquo;Let your laughter be turned to mourning, and your joy to gloom.&rsquo; KJV &lsquo;your joy to heaviness&rsquo;; NWT 1984 &lsquo;[YOUR] joy into dejection&rsquo;; NIV &lsquo;your joy to gloom.&rsquo;',
+    ('James', 4, 9)))
+DICTIONARY_ES['katepheia'] = ('kat&#275;pheia',
+    'ABATIMIENTO, desaliento &mdash; una mirada caída; se dice que la palabra pinta los ojos bajos (dato referido, no comprobado aquí). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-4.es.html#v4-9">Santiago 4:9</a>, «Que su risa se convierta en lamento, y su gozo en abatimiento». RV60 «vuestro gozo en tristeza»; TNM 1987 «[su] gozo en desaliento».')
+
+DICTIONARY.append(('katalaleo', 'katalaleō', 'καταλαλέω', 'katalaleō',
+    'TO SPEAK AGAINST, to slander &mdash; <em>kata</em>, &lsquo;against,&rsquo; and <em>lale&#333;</em>, &lsquo;to speak.&rsquo; &#9888; The verb stands in three verses of the New Testament: <a href="james-4.html#v4-11">James 4:11</a>, where it comes three times, and two in 1 Peter (not yet on these pages), where outsiders speak against believers. The noun is the &lsquo;slanders&rsquo; of <a href="2-corinthians-12.html#v20">2 Corinthians 12:20</a>, and the adjective the &lsquo;slanderers&rsquo; of <a href="romans-1.html#v30">Romans 1:30</a>. KJV at James 4:11 &lsquo;Speak not evil one of another&rsquo;; ASV &lsquo;Speak not one against another&rsquo;; NWT 1984 &lsquo;Quit speaking against one another.&rsquo;',
+    ('James', 4, 11)))
+DICTIONARY_ES['katalaleo'] = ('katalalé&#333;',
+    'HABLAR MAL DE, calumniar &mdash; <em>katá</em>, «contra», y <em>lalé&#333;</em>, «hablar». &#9888; El verbo está en tres versículos del Nuevo Testamento: <a href="james-4.es.html#v4-11">Santiago 4:11</a>, donde sale tres veces, y dos en 1 Pedro (todavía no en estas páginas), donde los de fuera hablan mal de los creyentes. El sustantivo son las «calumnias» de <a href="2-corinthians-12.es.html#v20">2 Corintios 12:20</a>, y el adjetivo los «calumniadores» de <a href="romans-1.es.html#v30">Romanos 1:30</a>. RV60 en Santiago 4:11 «no murmuréis los unos de los otros»; TNM 1987 «Dejen de hablar unos contra otros».')
+
+DICTIONARY.append(('nomothetes', 'nomothetēs', 'νομοθέτης', 'nomothetēs',
+    'LAWGIVER &mdash; <em>nomos</em>, &lsquo;law,&rsquo; and <em>tith&#275;mi</em>, &lsquo;to set&rsquo;: the one who lays down law. &#9888; It stands in one verse of the New Testament, <a href="james-4.html#v4-12">James 4:12</a>, &lsquo;There is one lawgiver and judge, the one who is able to save and to destroy.&rsquo; Its kin is the &lsquo;giving of the law&rsquo; at <a href="romans-9.html#v9-4">Romans 9:4</a> (<a href="dictionary.html#nomothesia">nomothesia</a>). The Robinson&ndash;Pierpont text lacks &lsquo;and judge,&rsquo; and the KJV follows it: &lsquo;There is one lawgiver, who is able to save and to destroy.&rsquo; ASV &lsquo;One only is the lawgiver and judge.&rsquo;',
+    ('James', 4, 12)))
+DICTIONARY_ES['nomothetes'] = ('nomothét&#275;s',
+    'LEGISLADOR &mdash; <em>nómos</em>, «ley», y <em>títh&#275;mi</em>, «poner»: el que establece la ley. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-4.es.html#v4-12">Santiago 4:12</a>, «Uno es el legislador y juez, el que puede salvar y destruir». Su pariente es la «entrega de la ley» de <a href="romans-9.es.html#v9-4">Romanos 9:4</a> (<a href="diccionario.html#nomothesia">nomothesia</a>). El texto de Robinson&ndash;Pierpont no tiene «y juez», y la RV60 lo sigue: «Uno solo es el dador de la ley, que puede salvar y perder»; TNM 1987 «Uno solo hay que es legislador y juez».')
+
+DICTIONARY.append(('emporeuomai', 'emporeuomai', 'ἐμπορεύομαι', 'emporeuomai',
+    'TO TRADE, to do business &mdash; <em>en</em>, &lsquo;in,&rsquo; and <em>poreuomai</em>, &lsquo;to travel&rsquo;: the travelling merchant&rsquo;s word, from which <em>emporion</em>, &lsquo;market,&rsquo; comes. &#9888; It stands in two verses of the New Testament: the plan at <a href="james-4.html#v4-13">James 4:13</a>, &lsquo;we will go into such and such a city, and spend a year there, and trade, and make a profit,&rsquo; and 2 Peter 2:3 (not yet on these pages), of teachers who trade on their hearers. KJV at James 4:13 &lsquo;buy and sell&rsquo;; ASV &lsquo;trade&rsquo;; NWT 1984 &lsquo;engage in business.&rsquo;',
+    ('James', 4, 13)))
+DICTIONARY_ES['emporeuomai'] = ('emporeúomai',
+    'COMERCIAR, hacer negocios &mdash; <em>en</em>, «en», y <em>poreúomai</em>, «viajar»: la palabra del mercader que viaja, de donde viene <em>empórion</em>, «mercado». &#9888; Está en dos versículos del Nuevo Testamento: el plan de <a href="james-4.es.html#v4-13">Santiago 4:13</a>, «iremos a tal ciudad, y pasaremos allí un año, y comerciaremos, y obtendremos ganancia», y 2 Pedro 2:3 (todavía no en estas páginas), de maestros que comercian con sus oyentes. RV 1909 en Santiago 4:13 «compraremos mercadería»; RV60 «traficaremos»; TNM 1987 «negociaremos».')
+
+DICTIONARY.append(('atmis', 'atmis', 'ἀτμίς', 'atmis',
+    'VAPOR, mist, steam &mdash; what rises from water or fire and is gone. &#9888; It stands in two verses of the New Testament: &lsquo;blood and fire and a vapour of smoke&rsquo; in Joel&rsquo;s words at <a href="acts-2.html#v2-19">Acts 2:19</a>, and &lsquo;you are a mist that appears for a little while and then disappears&rsquo; at <a href="james-4.html#v4-14">James 4:14</a> (<a href="dictionary.html#aphanizo">aphanizo</a>). KJV at James 4:14 &lsquo;It is even a vapour&rsquo;; ASV &lsquo;For ye are a vapor&rsquo;; NWT 1984 &lsquo;YOU are a mist.&rsquo;',
+    ('Acts', 2, 19)))
+DICTIONARY_ES['atmis'] = ('atmís',
+    'VAPOR, neblina &mdash; lo que sube del agua o del fuego y se va. &#9888; Está en dos versículos del Nuevo Testamento: «sangre y fuego y vapor de humo» en las palabras de Joel en <a href="acts-2.es.html#v2-19">Hechos 2:19</a>, y «son una neblina que aparece por un poco de tiempo y luego desaparece» en <a href="james-4.es.html#v4-14">Santiago 4:14</a> (<a href="diccionario.html#aphanizo">aphanizo</a>). RV 1909 en Santiago 4:14 «es un vapor»; RV60 «Ciertamente es neblina»; TNM 1987 «son una neblina».')
+
+DICTIONARY.append(('aphanizo', 'aphanizō', 'ἀφανίζω', 'aphanizō',
+    'TO MAKE DISAPPEAR, to disfigure, to destroy &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>phain&#333;</em>, &lsquo;to show&rsquo;: to make unseen. &#9888; It stands in five verses of the New Testament, and twice it is set against its opposite: the hypocrites &lsquo;make their faces disappear, so that they may appear to men as fasting&rsquo; (<a href="matthew-6.html#v6-16">Matthew 6:16</a>), and the mist &lsquo;that appears for a little while and then disappears&rsquo; (<a href="james-4.html#v4-14">James 4:14</a>). Moth and devouring &lsquo;make them disappear&rsquo; at <a href="matthew-6.html#v6-19">Matthew 6:19</a>, and the despisers are told to &lsquo;vanish&rsquo; at <a href="acts-13.html#v13-41">Acts 13:41</a>. KJV at James 4:14 &lsquo;and then vanisheth away&rsquo;; NWT 1984 &lsquo;and then disappearing.&rsquo;',
+    ('Matthew', 6, 16)))
+DICTIONARY_ES['aphanizo'] = ('aphaníz&#333;',
+    'HACER DESAPARECER, desfigurar, destruir &mdash; <em>a-</em>, «no», y <em>phaín&#333;</em>, «mostrar»: hacer invisible. &#9888; Está en cinco versículos del Nuevo Testamento, y dos veces se pone frente a su contrario: los hipócritas «hacen desaparecer su rostro para aparecer ante los hombres como que ayunan» (Mateo 6:16 (ya en estas páginas, todavía no en español)), y la neblina «que aparece por un poco de tiempo y luego desaparece» (<a href="james-4.es.html#v4-14">Santiago 4:14</a>). La polilla y la carcoma «hacen desaparecer» en Mateo 6:19 (ya en estas páginas, todavía no en español), y a los despreciadores se les dice «desaparezcan» en <a href="acts-13.es.html#v13-41">Hechos 13:41</a>. RV60 en Santiago 4:14 «y luego se desvanece»; TNM 1987 «y luego desaparece».')
+
+DICTIONARY.append(('alazoneia', 'alazoneia', 'ἀλαζονεία', 'alazoneia',
+    'ARROGANCE, boastful pretension &mdash; from <em>alaz&#333;n</em>, &lsquo;a braggart,&rsquo; one who claims more than he has. &#9888; It stands in two verses of the New Testament: &lsquo;you boast in your arrogance&rsquo; at <a href="james-4.html#v4-16">James 4:16</a>, in the plural, the shows of it, and 1 John 2:16 (not yet on these pages). The braggart himself is among the &lsquo;boasters&rsquo; of <a href="romans-1.html#v30">Romans 1:30</a>. KJV at James 4:16 &lsquo;ye rejoice in your boastings&rsquo;; ASV &lsquo;ye glory in your vauntings&rsquo;; NWT 1984 &lsquo;YOUR self-assuming brags.&rsquo;',
+    ('James', 4, 16)))
+DICTIONARY_ES['alazoneia'] = ('alazoneía',
+    'ARROGANCIA, jactancia pretenciosa &mdash; de <em>alaz&#333;́n</em>, «fanfarrón», el que pretende más de lo que tiene. &#9888; Está en dos versículos del Nuevo Testamento: «se jactan en su arrogancia» en <a href="james-4.es.html#v4-16">Santiago 4:16</a>, en plural, las muestras de ella, y 1 Juan 2:16 (todavía no en estas páginas). El fanfarrón mismo está entre los «jactanciosos» de <a href="romans-1.es.html#v30">Romanos 1:30</a>. RV60 en Santiago 4:16 «os jactáis en vuestras soberbias»; TNM 1987 «sus alardes llenos de presunción».')
+
+DICTIONARY_ES['dipsychos'] = ('dípsychos',
+    'DE DOBLE ALMA, de dos ánimos &mdash; <em>di-</em>, «dos veces», y <em>psych&#275;́</em>, «alma»: una persona con dos centros por dentro, medio vuelta a Dios y medio al mundo. &#9888; Está en dos versículos, los dos en Santiago: «hombre de doble alma, inestable en todos sus caminos» (<a href="james-1.es.html#v8">Santiago 1:8</a>) y «purifiquen sus corazones, ustedes los de doble alma» (<a href="james-4.es.html#v4-8">Santiago 4:8</a>). Se dice que la palabra no aparece en griego antes de Santiago y que la retomaron pronto el Pastor de Hermas y las cartas de Clemente (dato referido, no comprobado aquí). RV60 en Santiago 4:8 «vosotros los de doble ánimo»; TNM 1987 «indecisos».')
+
+def _jas4_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jas4_fix([('; James 4:8 and 1 John 3:3 (the last two not yet on these pages).', '; <a href="james-4.html#v4-8">James 4:8</a> and 1 John 3:3 (the last not yet on these pages).'), ('; Santiago 4:8 y 1 Juan 3:3 (los dos últimos todavía no en estas páginas).', '; <a href="james-4.es.html#v4-8">Santiago 4:8</a> y 1 Juan 3:3 (el último todavía no en estas páginas).'), ('and James 5:1, and the verb at James 4:9 (these two not yet on these pages):', 'and James 5:1 (not yet on these pages), and the verb at <a href="james-4.html#v4-9">James 4:9</a>:'), ('y Santiago 5:1, y el verbo en Santiago 4:9 (estos dos todavía no en estas páginas):', 'y Santiago 5:1 (todavía no en estas páginas), y el verbo en <a href="james-4.es.html#v4-9">Santiago 4:9</a>:'), ('James 4:1 (&lsquo;the pleasures that wage war in your members&rsquo;) and 1 Peter 2:11 (&lsquo;the fleshly desires that wage war against the soul&rsquo;) (these two not yet on these pages)', '<a href="james-4.html#v4-1">James 4:1</a> (&lsquo;your pleasures that wage war in your members&rsquo;) and 1 Peter 2:11 (&lsquo;the fleshly desires that wage war against the soul,&rsquo; not yet on these pages)'), ('Santiago 4:1 («los placeres que hacen guerra en sus miembros») y 1 Pedro 2:11 («los deseos de la carne que hacen guerra contra el alma») (estos dos todavía no en estas páginas)', '<a href="james-4.es.html#v4-1">Santiago 4:1</a> («sus placeres, que hacen guerra en sus miembros») y 1 Pedro 2:11 («los deseos de la carne que hacen guerra contra el alma», todavía no en estas páginas)'), ('the pleasures that make war at James 4:1 and 4:3; and 2 Peter 2:13 (these three not yet on these pages).', 'the pleasures that wage war at <a href="james-4.html#v4-1">James 4:1</a> and <a href="james-4.html#v4-3">4:3</a>; and 2 Peter 2:13 (not yet on these pages).'), ('los placeres que hacen la guerra en Santiago 4:1 y 4:3; y 2 Pedro 2:13 (estos tres todavía no en estas páginas).', 'los placeres que hacen guerra en <a href="james-4.es.html#v4-1">Santiago 4:1</a> y <a href="james-4.es.html#v4-3">4:3</a>; y 2 Pedro 2:13 (todavía no en estas páginas).'), ('The word appears nowhere in Greek before James (1:8; 4:8)', 'The word appears nowhere in Greek before James (<a href="james-1.html#v8">1:8</a>; <a href="james-4.html#v4-8">4:8</a>)')])
+
+XREFS.extend([
+    (("James", 3, 16), ("James", 4, 1), "disorder and wars"),
+    (("Luke", 8, 14), ("James", 4, 1), "pleasures"),
+    (("Romans", 7, 23), ("James", 4, 1), "war in the members"),
+    (("James", 2, 11), ("James", 4, 2), "murder"),
+    (("James", 3, 14), ("James", 4, 2), "jealousy"),
+    (("James", 1, 5), ("James", 4, 2), "ask"),
+    (("Luke", 15, 14), ("James", 4, 3), "spent"),
+    (("Hosea", 1, 2), ("James", 4, 4), "the unfaithful wife"),
+    (("Matthew", 12, 39), ("James", 4, 4), "adulterous"),
+    (("James", 2, 23), ("James", 4, 4), "friend of God / of the world"),
+    (("Romans", 8, 7), ("James", 4, 4), "hostility toward God"),
+    (("Titus", 3, 3), ("James", 4, 5), "envy"),
+    (("Philippians", 1, 8), ("James", 4, 5), "long for"),
+    (("Luke", 1, 51), ("James", 4, 6), "the proud"),
+    (("Ephesians", 6, 13), ("James", 4, 7), "resist"),
+    (("Matthew", 4, 11), ("James", 4, 7), "the devil leaves"),
+    (("Zechariah", 1, 3), ("James", 4, 8), "return to me / draw near"),
+    (("James", 1, 8), ("James", 4, 8), "double-souled"),
+    (("Acts", 21, 24), ("James", 4, 8), "purify"),
+    (("Romans", 7, 24), ("James", 4, 9), "wretched"),
+    (("Luke", 6, 25), ("James", 4, 9), "laugh, mourn and weep"),
+    (("Matthew", 23, 12), ("James", 4, 10), "humbled and exalted"),
+    (("Luke", 14, 11), ("James", 4, 10), "humbled and exalted"),
+    (("James", 1, 9), ("James", 4, 10), "the lowly lifted"),
+    (("Romans", 2, 13), ("James", 4, 11), "doers of the law"),
+    (("James", 1, 22), ("James", 4, 11), "doers"),
+    (("Romans", 9, 4), ("James", 4, 12), "lawgiving"),
+    (("Matthew", 10, 28), ("James", 4, 12), "able to destroy"),
+    (("James", 2, 8), ("James", 4, 12), "neighbor"),
+    (("Luke", 12, 19), ("James", 4, 13), "plans for many years"),
+    (("Acts", 2, 19), ("James", 4, 14), "vapour"),
+    (("Matthew", 6, 19), ("James", 4, 14), "make disappear"),
+    (("1 Corinthians", 4, 19), ("James", 4, 15), "if the Lord wills"),
+    (("Acts", 18, 21), ("James", 4, 15), "God willing"),
+    (("Romans", 1, 30), ("James", 4, 16), "boasters"),
+    (("Luke", 12, 47), ("James", 4, 17), "knew and did not do"),
+])
+
+CHAPTER_ART["jas4"] = [dict(
+    file="steenwijck-vanitas-still-life.jpg",
+    title="Vanitas Still Life",   title_es="Naturaleza muerta vanitas",
+    artist="Harmen Steenwijck",
+    year="c. 1640",
+    location="National Gallery, London",
+    location_es="National Gallery, Londres",
+    alt="On a stone ledge lit by a shaft of light, a skull lies among books, a shell, a flute, a sword and a pocket watch, beside a large jar and a brass lamp whose flame has just gone out, a thin thread of smoke still rising from it.",
+    note="&#9888; A Dutch still life of things that do not last; the lamp has just been put out and its smoke is still in the air, the picture of <a href=\"james-4.html#v4-14\">verse "
+         "14</a>, &lsquo;you are a mist that appears for a little while and then disappears.&rsquo;",
+    note_es="&#9888; Una naturaleza muerta holandesa de cosas que no duran; la lámpara se acaba de apagar y su humo sigue en el aire, la imagen del <a href=\"james-4.es.html#v4-14\">versículo "
+            "14</a>, «son una neblina que aparece por un poco de tiempo y luego desaparece».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Harmen_Steenwijck_-_Vanitas_Still-Life_-_WGA21768.jpg",
+)]
+
+CHRON_CHAPTERS["jas4"] = dict(era='apostolic',
+    when="Wars and fights among the readers, from 'your pleasures that wage war in your members'; 'you do not have, because you do not ask'; 'Adulteresses!', friendship with the world as hostility toward God; Proverbs 3:34, 'God opposes the proud'; 'resist the devil,' 'draw near to God'; do not speak against one another; the merchants' plans for tomorrow, 'a mist that appears for a little while'; and 'if the Lord wills.'",
+    clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
+
