@@ -42710,3 +42710,200 @@ CHRON_CHAPTERS["heb12"] = dict(era='apostolic',
     when="A cloud of witnesses and a race run with endurance, looking to the Author and Completer of faith; Proverbs 3 on a father's discipline; Esau and the birthright sold for a single meal; Sinai and Zion set side by side; Haggai's 'yet once more I will shake'; and 'our God is a consuming fire.'",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 13 -----------------------------------------------------------
+DICTIONARY.append(('lanthano', 'lanthanō', 'λανθάνω', 'lanthanō',
+    'TO ESCAPE NOTICE, to be hidden &mdash; often with a participle, &lsquo;to do something without knowing it.&rsquo; &#9888; It stands in six verses of the New Testament: Jesus &lsquo;could not escape notice&rsquo; in the region of Tyre (<a href="mark-7.html#v7-24">Mark 7:24</a>); the woman saw &lsquo;that she had not gone unnoticed&rsquo; (<a href="luke-8.html#v8-47">Luke 8:47</a>); Paul is persuaded that none of these things &lsquo;escapes his notice&rsquo; (<a href="acts-26.html#v26-26">Acts 26:26</a>); &lsquo;some have entertained angels without knowing it&rsquo; (<a href="hebrews-13.html#v13-2">Hebrews 13:2</a>); and two verses of 2 Peter 3 (not yet on these pages). KJV at Hebrews 13:2 &lsquo;unawares&rsquo;; NWT 1984 &lsquo;unknown to themselves.&rsquo;',
+    ('Mark', 7, 24)))
+DICTIONARY_ES['lanthano'] = ('lanthán&#333;',
+    'PASAR INADVERTIDO, estar oculto &mdash; a menudo con un participio, «hacer algo sin saberlo». &#9888; Está en seis versículos del Nuevo Testamento: Jesús «no pudo pasar inadvertido» en la región de Tiro (<a href="mark-7.es.html#v7-24">Marcos 7:24</a>); la mujer vio «que no había pasado inadvertida» (<a href="luke-8.es.html#v8-47">Lucas 8:47</a>); Pablo está persuadido de que «no se le oculta nada de esto» al rey (<a href="acts-26.es.html#v26-26">Hechos 26:26</a>); «algunos, sin saberlo, hospedaron ángeles» (<a href="hebrews-13.es.html#v13-2">Hebreos 13:2</a>); y dos versículos de 2 Pedro 3 (todavía no en estas páginas). RV60 en Hebreos 13:2 «sin saberlo».')
+
+DICTIONARY.append(('kakoucheo', 'kakoucheō', 'κακουχέω', 'kakoucheō',
+    'TO ILL-TREAT, to mistreat &mdash; <em>kakos</em>, &lsquo;bad,&rsquo; and <em>ech&#333;</em>, &lsquo;to hold&rsquo;: to keep someone in a bad state. &#9888; It stands in two verses of the New Testament, both in Hebrews: the faithful &lsquo;destitute, oppressed, ill-treated&rsquo; (<a href="hebrews-11.html#v11-37">Hebrews 11:37</a>), and &lsquo;those who are ill-treated,&rsquo; to be remembered as prisoners are (<a href="hebrews-13.html#v13-3">Hebrews 13:3</a>). KJV at 13:3 &lsquo;them which suffer adversity&rsquo;; ASV &lsquo;them that are illtreated&rsquo;; NWT 1984 &lsquo;those being ill-treated.&rsquo;',
+    ('Hebrews', 11, 37)))
+DICTIONARY_ES['kakoucheo'] = ('kakouché&#333;',
+    'MALTRATAR &mdash; <em>kakós</em>, «malo», y <em>éch&#333;</em>, «tener»: tener a alguien en mal estado. &#9888; Está en dos versículos del Nuevo Testamento, los dos en Hebreos: los fieles «indigentes, oprimidos, maltratados» (<a href="hebrews-11.es.html#v11-37">Hebreos 11:37</a>), y «los maltratados», a quienes hay que recordar como a los presos (<a href="hebrews-13.es.html#v13-3">Hebreos 13:3</a>). RV60 en 13:3 «los maltratados»; TNM 1987 «los que son maltratados».')
+
+DICTIONARY.append(('moichos', 'moichos', 'μοιχός', 'moichos',
+    'AN ADULTERER &mdash; a man who takes another man&rsquo;s wife, or a married man who goes outside his marriage. &#9888; The noun stands in three verses of the New Testament: the Pharisee who thanks God he is not like &lsquo;adulterers&rsquo; (<a href="luke-18.html#v18-11">Luke 18:11</a>); the list of those who will not inherit the kingdom of God (<a href="1-corinthians-6.html#v9">1 Corinthians 6:9</a>); and &lsquo;God will judge the sexually immoral and adulterers&rsquo; (<a href="hebrews-13.html#v13-4">Hebrews 13:4</a>). The verb <em>moicheu&#333;</em> is the commandment &lsquo;You shall not commit adultery.&rsquo; KJV at Hebrews 13:4 &lsquo;whoremongers and adulterers&rsquo;; ASV and NWT 1984 &lsquo;fornicators and adulterers.&rsquo;',
+    ('Luke', 18, 11)))
+DICTIONARY_ES['moichos'] = ('moichós',
+    'UN ADÚLTERO &mdash; el hombre que toma la mujer de otro, o el casado que sale de su matrimonio. &#9888; El sustantivo está en tres versículos del Nuevo Testamento: el fariseo que da gracias porque no es como los «adúlteros» (<a href="luke-18.es.html#v18-11">Lucas 18:11</a>); la lista de los que no heredarán el reino de Dios (<a href="1-corinthians-6.es.html#v9">1 Corintios 6:9</a>); y «a los sexualmente inmorales y a los adúlteros los juzgará Dios» (<a href="hebrews-13.es.html#v13-4">Hebreos 13:4</a>). El verbo <em>moicheú&#333;</em> es el mandamiento «No cometerás adulterio». RV60 en Hebreos 13:4 «a los fornicarios y a los adúlteros»; TNM 1987 «a los fornicadores y a los adúlteros».')
+
+DICTIONARY.append(('aphilargyros', 'aphilargyros', 'ἀφιλάργυρος', 'aphilargyros',
+    'FREE FROM THE LOVE OF MONEY &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>philargyros</em>, &lsquo;money-loving&rsquo; (<a href="dictionary.html#philargyria">philargyria</a>). &#9888; It stands in two verses of the New Testament: the overseer &lsquo;not a lover of money&rsquo; (<a href="1-timothy-3.html#v3-3">1 Timothy 3:3</a>), and &lsquo;Let your way of life be free from the love of money&rsquo; (<a href="hebrews-13.html#v13-5">Hebrews 13:5</a>). KJV at Hebrews 13:5 &lsquo;without covetousness&rsquo;; ASV &lsquo;free from the love of money.&rsquo;',
+    ('1 Timothy', 3, 3)))
+DICTIONARY_ES['aphilargyros'] = ('aphilárgyros',
+    'LIBRE DEL AMOR AL DINERO &mdash; <em>a-</em>, «no», y <em>philárgyros</em>, «amante del dinero» (<a href="diccionario.html#philargyria">philargyria</a>). &#9888; Está en dos versículos del Nuevo Testamento: el supervisor «no amante del dinero» (<a href="1-timothy-3.es.html#v3-3">1 Timoteo 3:3</a>), y «Que su manera de vivir esté libre del amor al dinero» (<a href="hebrews-13.es.html#v13-5">Hebreos 13:5</a>). RV60 en Hebreos 13:5 «sin avaricia»; TNM 1987 «exento del amor al dinero».')
+
+DICTIONARY.append(('boethos', 'boēthos', 'βοηθός', 'boēthos',
+    'HELPER &mdash; one who comes running at a cry for help; the noun of <em>bo&#275;the&#333;</em>, &lsquo;to help&rsquo; (<a href="dictionary.html#boetheo">boetheo</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-13.html#v13-6">Hebrews 13:6</a>, &lsquo;Jehovah is my helper,&rsquo; from the Greek of Psalm 118:6, 117:6 in the Greek Psalter (checked; not yet on these pages), where the Hebrew has &lsquo;Jehovah is for me&rsquo; (checked). Its verb is the &lsquo;help&rsquo; of <a href="hebrews-2.html#v2-18">Hebrews 2:18</a>. KJV and ASV &lsquo;The Lord is my helper&rsquo;; NWT 1984 &lsquo;Jehovah is my helper.&rsquo;',
+    ('Hebrews', 13, 6)))
+DICTIONARY_ES['boethos'] = ('boēthós',
+    'AYUDADOR &mdash; el que acude corriendo a un grito de auxilio; el sustantivo de <em>bo&#275;thé&#333;</em>, «ayudar» (<a href="diccionario.html#boetheo">boetheo</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-13.es.html#v13-6">Hebreos 13:6</a>, «Jehová es mi ayudador», del griego del Salmo 118:6, 117:6 en el Salterio griego (comprobado; todavía no en estas páginas), donde el hebreo dice «Jehová está por mí» (comprobado). Su verbo es el «socorrer» de <a href="hebrews-2.es.html#v2-18">Hebreos 2:18</a>. RV60 «El Señor es mi ayudador»; TNM 1987 «Jehová es mi ayudante».')
+
+DICTIONARY.append(('hegoumenos', 'hēgoumenos', 'ἡγούμενος', 'hēgoumenos',
+    'LEADER &mdash; the participle of <em>h&#275;geomai</em>, &lsquo;to lead&rsquo; (the same verb also means &lsquo;to consider&rsquo;), used as a noun: the one who leads. &#9888; It is the &lsquo;ruler who will shepherd my people Israel&rsquo; (<a href="matthew-2.html#v2-6">Matthew 2:6</a>); &lsquo;the leader like the one who serves&rsquo; (<a href="luke-22.html#v22-26">Luke 22:26</a>); Joseph &lsquo;governor over Egypt&rsquo; (<a href="acts-7.html#v7-10">Acts 7:10</a>); Paul &lsquo;leading the speaking&rsquo; (<a href="acts-14.html#v14-12">Acts 14:12</a>); Judas and Silas, &lsquo;leading men among the brothers&rsquo; (<a href="acts-15.html#v15-22">Acts 15:22</a>); and the congregation&rsquo;s &lsquo;leaders&rsquo; three times in <a href="hebrews-13.html#v13-7">Hebrews 13:7</a>, <a href="hebrews-13.html#v13-17">13:17</a> and <a href="hebrews-13.html#v13-24">13:24</a>. KJV in Hebrews 13 &lsquo;them that have the rule over you&rsquo;; NWT 1984 &lsquo;those who are taking the lead&rsquo;; NIV &lsquo;your leaders&rsquo;; Douay &lsquo;your prelates.&rsquo;',
+    ('Matthew', 2, 6)))
+DICTIONARY_ES['hegoumenos'] = ('h&#275;goúmenos',
+    'DIRIGENTE &mdash; el participio de <em>h&#275;géomai</em>, «guiar» (el mismo verbo significa también «considerar»), usado como sustantivo: el que guía. &#9888; Es el «gobernante que pastoreará a mi pueblo Israel» (<a href="matthew-2.es.html#v2-6">Mateo 2:6</a>); «el que dirige, como el que sirve» (<a href="luke-22.es.html#v22-26">Lucas 22:26</a>); José «gobernador sobre Egipto» (<a href="acts-7.es.html#v7-10">Hechos 7:10</a>); Pablo, «el que llevaba la palabra» (<a href="acts-14.es.html#v14-12">Hechos 14:12</a>); Judas y Silas, «hombres dirigentes entre los hermanos» (<a href="acts-15.es.html#v15-22">Hechos 15:22</a>); y los «dirigentes» de la congregación, tres veces, en <a href="hebrews-13.es.html#v13-7">Hebreos 13:7</a>, <a href="hebrews-13.es.html#v13-17">13:17</a> y <a href="hebrews-13.es.html#v13-24">13:24</a>. RV60 en Hebreos 13 «vuestros pastores»; TNM 1987 «los que llevan la delantera»; NVI «sus dirigentes».')
+
+DICTIONARY.append(('ekbasis', 'ekbasis', 'ἔκβασις', 'ekbasis',
+    'A WAY OUT, an outcome &mdash; <em>ek</em>, &lsquo;out,&rsquo; and <em>bain&#333;</em>, &lsquo;to go&rsquo;: where a thing comes out. &#9888; It stands in two verses of the New Testament: God &lsquo;will also make the way out&rsquo; with the temptation (<a href="1-corinthians-10.html#v13">1 Corinthians 10:13</a>), and &lsquo;considering the outcome of their conduct&rsquo; (<a href="hebrews-13.html#v13-7">Hebrews 13:7</a>), read as the end of the leaders&rsquo; lives or as the result of how they lived. KJV at Hebrews 13:7 &lsquo;the end of their conversation&rsquo;; ASV &lsquo;the issue of their life&rsquo;; NIV &lsquo;the outcome of their way of life.&rsquo;',
+    ('1 Corinthians', 10, 13)))
+DICTIONARY_ES['ekbasis'] = ('ékbasis',
+    'UNA SALIDA, un resultado &mdash; <em>ek</em>, «fuera», y <em>baín&#333;</em>, «ir»: el punto adonde algo sale. &#9888; Está en dos versículos del Nuevo Testamento: Dios «dará la salida» junto con la prueba (<a href="1-corinthians-10.es.html#v13">1 Corintios 10:13</a>), y «considerando el resultado de su conducta» (<a href="hebrews-13.es.html#v13-7">Hebreos 13:7</a>), leído como el fin de la vida de los dirigentes o como el fruto de cómo vivieron. RV60 en Hebreos 13:7 «el resultado de su conducta»; RV 1909 «el éxito de su conducta».')
+
+DICTIONARY.append(('echthes', 'echthes', 'ἐχθές', 'echthes',
+    'YESTERDAY. &#9888; It stands in three verses of the New Testament: &lsquo;Yesterday at the seventh hour the fever left him&rsquo; (<a href="john-4.html#v4-52">John 4:52</a>); &lsquo;the way you killed the Egyptian yesterday&rsquo; (<a href="acts-7.html#v7-28">Acts 7:28</a>); and &lsquo;Jesus Christ is the same yesterday and today, and forever&rsquo; (<a href="hebrews-13.html#v13-8">Hebrews 13:8</a>). Robinson&ndash;Pierpont spells it <em>chthes</em> at Hebrews 13:8 (checked). KJV &lsquo;Jesus Christ the same yesterday, and to day, and for ever&rsquo;; NWT 1984 &lsquo;Jesus Christ is the same yesterday and today, and forever.&rsquo;',
+    ('John', 4, 52)))
+DICTIONARY_ES['echthes'] = ('echthés',
+    'AYER. &#9888; Está en tres versículos del Nuevo Testamento: «Ayer a la hora séptima lo dejó la fiebre» (<a href="john-4.es.html#v4-52">Juan 4:52</a>); «como mataste ayer al egipcio» (<a href="acts-7.es.html#v7-28">Hechos 7:28</a>); y «Jesucristo es el mismo ayer y hoy, y por los siglos» (<a href="hebrews-13.es.html#v13-8">Hebreos 13:8</a>). Robinson&ndash;Pierpont lo escribe <em>chthés</em> en Hebreos 13:8 (comprobado). RV60 «Jesucristo es el mismo ayer, y hoy, y por los siglos».')
+
+DICTIONARY.append(('thysiasterion', 'thysiastērion', 'θυσιαστήριον', 'thysiastērion',
+    'ALTAR &mdash; the place of sacrifice, from <em>thysia</em>, &lsquo;sacrifice&rsquo;; the Greek Bible&rsquo;s word for the Hebrew <em>mizbeach</em> (<a href="dictionary.html#mizbeach">mizbeach</a>). &#9888; It is the altar where a gift is offered (<a href="matthew-5.html#v5-23">Matthew 5:23</a>), &lsquo;the altar of incense&rsquo; (<a href="luke-1.html#v11">Luke 1:11</a>), Elijah&rsquo;s &lsquo;they have dug down your altars&rsquo; (<a href="romans-11.html#v11-3">Romans 11:3</a>), and &lsquo;those who attend the altar share the altar&rsquo; (<a href="1-corinthians-9.html#v13">1 Corinthians 9:13</a>). In Hebrews it is the altar of the tribe of Levi (<a href="hebrews-7.html#v7-13">Hebrews 7:13</a>) and &lsquo;We have an altar&rsquo; (<a href="hebrews-13.html#v13-10">Hebrews 13:10</a>), which the letter does not identify; it has been read as the cross, the Lord&rsquo;s table, or a heavenly altar. KJV, ASV, NWT 1984 and NIV &lsquo;an altar.&rsquo;',
+    ('Matthew', 5, 23)))
+DICTIONARY_ES['thysiasterion'] = ('thysiast&#275;rion',
+    'ALTAR &mdash; el lugar del sacrificio, de <em>thysía</em>, «sacrificio»; la palabra de la Biblia griega para el hebreo <em>mizbeach</em> (<a href="diccionario.html#mizbeach">mizbeach</a>). &#9888; Es el altar donde se presenta una ofrenda (Mateo 5:23 (ya en estas páginas, todavía no en español)), «el altar del incienso» (<a href="luke-1.es.html#v11">Lucas 1:11</a>), el «tus altares han socavado» de Elías (<a href="romans-11.es.html#v11-3">Romanos 11:3</a>), y «los que atienden el altar participan del altar» (<a href="1-corinthians-9.es.html#v13">1 Corintios 9:13</a>). En Hebreos es el altar de la tribu de Leví (<a href="hebrews-7.es.html#v7-13">Hebreos 7:13</a>) y «Tenemos un altar» (<a href="hebrews-13.es.html#v13-10">Hebreos 13:10</a>), que la carta no identifica; se ha leído como la cruz, la mesa del Señor, o un altar celestial. RV60, TNM 1987 y NVI «un altar».')
+
+DICTIONARY.append(('oneidismos', 'oneidismos', 'ὀνειδισμός', 'oneidismos',
+    'REPROACH, insult, disgrace &mdash; the noun of <em>oneidiz&#333;</em>, &lsquo;to reproach.&rsquo; &#9888; It stands in five verses of the New Testament: Psalm 69 as Paul quotes it, &lsquo;The reproaches of those who reproached you have fallen on me&rsquo; (<a href="romans-15.html#v15-3">Romans 15:3</a>); an overseer, &lsquo;so that he may not fall into reproach&rsquo; (<a href="1-timothy-3.html#v3-7">1 Timothy 3:7</a>); the readers &lsquo;made a public spectacle by insults&rsquo; (<a href="hebrews-10.html#v10-33">Hebrews 10:33</a>); Moses &lsquo;reckoning the reproach of the Anointed to be greater wealth&rsquo; (<a href="hebrews-11.html#v11-26">Hebrews 11:26</a>); and &lsquo;bearing his reproach&rsquo; outside the camp (<a href="hebrews-13.html#v13-13">Hebrews 13:13</a>). KJV and ASV at 13:13 &lsquo;bearing his reproach&rsquo;; NIV &lsquo;bearing the disgrace he bore.&rsquo;',
+    ('Romans', 15, 3)))
+DICTIONARY_ES['oneidismos'] = ('oneidismós',
+    'OPROBIO, insulto, deshonra &mdash; el sustantivo de <em>oneidíz&#333;</em>, «reprochar». &#9888; Está en cinco versículos del Nuevo Testamento: el Salmo 69 como lo cita Pablo, «Los insultos de los que te insultaban cayeron sobre mí» (<a href="romans-15.es.html#v15-3">Romanos 15:3</a>); el supervisor, «para que no caiga en oprobio» (<a href="1-timothy-3.es.html#v3-7">1 Timoteo 3:7</a>); los lectores «hechos espectáculo público con insultos» (<a href="hebrews-10.es.html#v10-33">Hebreos 10:33</a>); Moisés, «considerando el oprobio del Ungido mayor riqueza» (<a href="hebrews-11.es.html#v11-26">Hebreos 11:26</a>); y «llevando su oprobio» fuera del campamento (<a href="hebrews-13.es.html#v13-13">Hebreos 13:13</a>). RV60 en 13:13 «llevando su vituperio»; NVI «llevando la deshonra que él llevó».')
+
+DICTIONARY.append(('ainesis', 'ainesis', 'αἴνεσις', 'ainesis',
+    'PRAISE &mdash; the noun of <em>aine&#333;</em>, &lsquo;to praise.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-13.html#v13-15">Hebrews 13:15</a>, &lsquo;a sacrifice of praise,&rsquo; the Greek Bible&rsquo;s name for the offering the Hebrew calls <em>todah</em>, &lsquo;thanksgiving&rsquo; (<a href="dictionary.html#todah">todah</a>), as at <a href="leviticus-7.html#v7-12">Leviticus 7:12</a> and Psalm 50:14 and 50:23, 49:14 and 49:23 in the Greek Psalter (all checked; the Psalm not yet on these pages). KJV &lsquo;the sacrifice of praise&rsquo;; ASV &lsquo;a sacrifice of praise.&rsquo;',
+    ('Hebrews', 13, 15)))
+DICTIONARY_ES['ainesis'] = ('aínesis',
+    'ALABANZA &mdash; el sustantivo de <em>ainé&#333;</em>, «alabar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-13.es.html#v13-15">Hebreos 13:15</a>, «un sacrificio de alabanza», el nombre que la Biblia griega da a la ofrenda que el hebreo llama <em>todah</em>, «acción de gracias» (<a href="diccionario.html#todah">todah</a>), como en <a href="leviticus-7.es.html#v7-12">Levítico 7:12</a> y en el Salmo 50:14 y 50:23, 49:14 y 49:23 en el Salterio griego (todo comprobado; el Salmo todavía no en estas páginas). RV60 «sacrificio de alabanza».')
+
+DICTIONARY.append(('eupoiia', 'eupoiia', 'εὐποιΐα', 'eupoiia',
+    'DOING GOOD, kindness in deed &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>poie&#333;</em>, &lsquo;to do.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-13.html#v13-16">Hebrews 13:16</a>, &lsquo;do not forget doing good and sharing, for with such sacrifices God is well pleased,&rsquo; beside <em>koin&#333;nia</em> (<a href="dictionary.html#koinonia">koinonia</a>). KJV and ASV &lsquo;to do good&rsquo;; NWT 1984 &lsquo;the doing of good.&rsquo;',
+    ('Hebrews', 13, 16)))
+DICTIONARY_ES['eupoiia'] = ('eupoiía',
+    'HACER EL BIEN, bondad en obras &mdash; <em>eu</em>, «bien», y <em>poié&#333;</em>, «hacer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-13.es.html#v13-16">Hebreos 13:16</a>, «no olviden hacer el bien y compartir, porque de tales sacrificios se agrada Dios», junto a <em>koin&#333;nía</em> (<a href="diccionario.html#koinonia">koinonia</a>). RV60 «de hacer bien»; TNM 1987 «el hacer bien».')
+
+DICTIONARY.append(('hypeiko', 'hypeikō', 'ὑπείκω', 'hypeikō',
+    'TO YIELD, to give way &mdash; <em>hypo</em>, &lsquo;under,&rsquo; and <em>eik&#333;</em>, &lsquo;to give way.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-13.html#v13-17">Hebrews 13:17</a>, &lsquo;Obey your leaders and yield to them.&rsquo; KJV &lsquo;submit yourselves&rsquo;; ASV &lsquo;submit to them&rsquo;; NWT 1984 &lsquo;be submissive.&rsquo;',
+    ('Hebrews', 13, 17)))
+DICTIONARY_ES['hypeiko'] = ('hypeík&#333;',
+    'CEDER, dar paso &mdash; <em>hypó</em>, «debajo», y <em>eík&#333;</em>, «ceder». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-13.es.html#v13-17">Hebreos 13:17</a>, «Obedezcan a sus dirigentes y cedan ante ellos». RV60 «sujetaos a ellos»; TNM 1987 «sean sumisos»; NVI «sométanse a ellos».')
+
+DICTIONARY.append(('agrypneo', 'agrypneō', 'ἀγρυπνέω', 'agrypneō',
+    'TO KEEP WATCH, to stay awake &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>hypnos</em>, &lsquo;sleep.&rsquo; &#9888; It stands in four verses of the New Testament: &lsquo;Keep alert!&rsquo; (<a href="mark-13.html#v13-33">Mark 13:33</a>); &lsquo;keep alert at all times, praying&rsquo; (<a href="luke-21.html#v21-36">Luke 21:36</a>); &lsquo;staying awake with all perseverance&rsquo; (<a href="ephesians-6.html#v6-18">Ephesians 6:18</a>); and leaders who &lsquo;keep watch over your souls&rsquo; (<a href="hebrews-13.html#v13-17">Hebrews 13:17</a>). KJV at Hebrews 13:17 &lsquo;they watch for your souls&rsquo;; NWT 1984 &lsquo;they are keeping watch over YOUR souls.&rsquo;',
+    ('Mark', 13, 33)))
+DICTIONARY_ES['agrypneo'] = ('agrypné&#333;',
+    'VELAR, mantenerse despierto &mdash; <em>a-</em>, «sin», e <em>hýpnos</em>, «sueño». &#9888; Está en cuatro versículos del Nuevo Testamento: «¡Manténganse despiertos!» (<a href="mark-13.es.html#v13-33">Marcos 13:33</a>); «Manténganse despiertos en todo tiempo, orando» (<a href="luke-21.es.html#v21-36">Lucas 21:36</a>); «manteniéndose despiertos para ello con toda perseverancia» (<a href="ephesians-6.es.html#v6-18">Efesios 6:18</a>); y los dirigentes que «velan por sus almas» (<a href="hebrews-13.es.html#v13-17">Hebreos 13:17</a>). RV60 en Hebreos 13:17 «ellos velan por vuestras almas».')
+
+DICTIONARY.append(('alysiteles', 'alysitelēs', 'ἀλυσιτελής', 'alysitelēs',
+    'OF NO PROFIT, harmful &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>lysitel&#275;s</em>, &lsquo;paying the costs&rsquo;: a bad bargain. &#9888; It stands in one verse of the New Testament, <a href="hebrews-13.html#v13-17">Hebrews 13:17</a>, &lsquo;for that would be of no profit to you.&rsquo; KJV &lsquo;for that is unprofitable for you&rsquo;; NWT 1984 &lsquo;for this would be damaging to YOU&rsquo;; NIV &lsquo;for that would be of no benefit to you.&rsquo;',
+    ('Hebrews', 13, 17)))
+DICTIONARY_ES['alysiteles'] = ('alysitel&#275;s',
+    'SIN PROVECHO, perjudicial &mdash; <em>a-</em>, «no», y <em>lysitel&#275;s</em>, «que cubre los gastos»: un mal negocio. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-13.es.html#v13-17">Hebreos 13:17</a>, «porque eso no les sería de provecho». RV60 «porque esto no os es provechoso»; TNM 1987 «esto les sería gravemente dañoso».')
+
+DICTIONARY.append(('euarestos', 'euarestos', 'εὐάρεστος', 'euarestos',
+    'PLEASING, acceptable &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>arest&#333;</em>, &lsquo;pleasing.&rsquo; &#9888; The adjective stands in nine verses of the New Testament, among them the &lsquo;living sacrifice, holy, acceptable to God&rsquo; (<a href="romans-12.html#v12-1">Romans 12:1</a>), &lsquo;testing what is pleasing to the Lord&rsquo; (<a href="ephesians-5.html#v5-10">Ephesians 5:10</a>), &lsquo;we make it our aim to be pleasing to him&rsquo; (<a href="2-corinthians-5.html#v9">2 Corinthians 5:9</a>), and &lsquo;working in us what is pleasing in his sight&rsquo; (<a href="hebrews-13.html#v13-21">Hebrews 13:21</a>). Its adverb is the &lsquo;acceptably&rsquo; of <a href="hebrews-12.html#v12-28">Hebrews 12:28</a>, and its verb is Enoch&rsquo;s &lsquo;having pleased God&rsquo; (<a href="hebrews-11.html#v11-5">Hebrews 11:5</a>) and &lsquo;with such sacrifices God is well pleased&rsquo; (<a href="hebrews-13.html#v13-16">Hebrews 13:16</a>). KJV at 13:21 &lsquo;wellpleasing&rsquo;; NIV &lsquo;pleasing.&rsquo;',
+    ('Romans', 12, 1)))
+DICTIONARY_ES['euarestos'] = ('euárestos',
+    'AGRADABLE, aceptable &mdash; <em>eu</em>, «bien», y <em>arestós</em>, «que agrada». &#9888; El adjetivo está en nueve versículos del Nuevo Testamento, entre ellos el «sacrificio vivo, santo, agradable a Dios» (<a href="romans-12.es.html#v12-1">Romanos 12:1</a>), «comprobando lo que es agradable al Señor» (<a href="ephesians-5.es.html#v5-10">Efesios 5:10</a>), «nos esforzamos &hellip; por agradarle» (<a href="2-corinthians-5.es.html#v9">2 Corintios 5:9</a>), y «haciendo en nosotros lo que es agradable delante de él» (<a href="hebrews-13.es.html#v13-21">Hebreos 13:21</a>). Su adverbio es el «de manera agradable» de <a href="hebrews-12.es.html#v12-28">Hebreos 12:28</a>, y su verbo es el «haber agradado a Dios» de Enoc (<a href="hebrews-11.es.html#v11-5">Hebreos 11:5</a>) y «de tales sacrificios se agrada Dios» (<a href="hebrews-13.es.html#v13-16">Hebreos 13:16</a>). RV60 en 13:21 «lo que es agradable delante de él».')
+
+DICTIONARY.append(('anecho', 'anechō', 'ἀνέχω', 'anechō',
+    'TO BEAR WITH, to put up with &mdash; in the middle voice, to hold oneself up under something. &#9888; It is Gallio&rsquo;s &lsquo;I would with reason have put up with you&rsquo; (<a href="acts-18.html#v18-14">Acts 18:14</a>); Paul&rsquo;s &lsquo;I wish you would put up with a little foolishness from me&rsquo; (<a href="2-corinthians-11.html#v1">2 Corinthians 11:1</a>); the time when &lsquo;they will not put up with sound teaching&rsquo; (<a href="2-timothy-4.html#v4-3">2 Timothy 4:3</a>); and &lsquo;bear with the word of exhortation&rsquo; (<a href="hebrews-13.html#v13-22">Hebrews 13:22</a>). KJV at Hebrews 13:22 &lsquo;suffer the word of exhortation&rsquo;; ASV and NWT 1984 &lsquo;bear with.&rsquo;',
+    ('Acts', 18, 14)))
+DICTIONARY_ES['anecho'] = ('anéch&#333;',
+    'SOPORTAR, aguantar &mdash; en voz media, sostenerse bajo algo. &#9888; Es el «con razón los habría soportado» de Galión (<a href="acts-18.es.html#v18-14">Hechos 18:14</a>); el «Ojalá me soportaran un poco de insensatez» de Pablo (<a href="2-corinthians-11.es.html#v1">2 Corintios 11:1</a>); el tiempo en que «no soportarán la sana enseñanza» (<a href="2-timothy-4.es.html#v4-3">2 Timoteo 4:3</a>); y «que soporten la palabra de exhortación» (<a href="hebrews-13.es.html#v13-22">Hebreos 13:22</a>). RV60 en Hebreos 13:22 «que soportéis la palabra de exhortación».')
+
+def _heb13_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb13_fix([("'let philadelphia continue' (Hebrews 13:1)", '\'let philadelphia continue\' (<a href="hebrews-13.html#v13-1">Hebrews 13:1</a>)'), ("entertained angels unawares' (Hebrews 13:2).", 'entertained angels unawares\' (<a href="hebrews-13.html#v13-2">Hebrews 13:2</a>).'), ('hospedaron ángeles sin saberlo» (Hebreos 13:2).', 'hospedaron ángeles sin saberlo» (<a href="hebrews-13.es.html#v13-2">Hebreos 13:2</a>).'), ('The Greek of Hebrews 13:5 (not yet on these pages) keeps the hand', 'The Greek of <a href="hebrews-13.html#v13-5">Hebrews 13:5</a> keeps the hand'), ('El griego de Hebreos 13:5 (todavía no en estas páginas) conserva', 'El griego de <a href="hebrews-13.es.html#v13-5">Hebreos 13:5</a> conserva'), ('(1 Peter 5:4; Hebrews 13:20, neither yet on these pages).', '(1 Peter 5:4, not yet on these pages; <a href="hebrews-13.html#v13-20">Hebrews 13:20</a>).'), ('(1 Pedro 5:4; Hebreos 13:20, ninguno todavía en estas páginas).', '(1 Pedro 5:4, todavía no en estas páginas; <a href="hebrews-13.es.html#v13-20">Hebreos 13:20</a>).'), ('Hebrews 13:11 and 13:13, the camp', '<a href="hebrews-13.html#v13-11">Hebrews 13:11</a> and <a href="hebrews-13.html#v13-13">13:13</a>, the camp'), ('Hebreos 13:11 y 13:13, el campamento', '<a href="hebrews-13.es.html#v13-11">Hebreos 13:11</a> y <a href="hebrews-13.es.html#v13-13">13:13</a>, el campamento'), ('and of Hebrews 13:2 (not yet on these pages).', 'and of <a href="hebrews-13.html#v13-2">Hebrews 13:2</a>.'), ('y de Hebreos 13:2 (todavía no en estas páginas).', 'y de <a href="hebrews-13.es.html#v13-2">Hebreos 13:2</a>.'), ('&lsquo;helper,&rsquo; at 13:6 (not yet on these pages).', '&lsquo;helper,&rsquo; at <a href="hebrews-13.html#v13-6">13:6</a>.'), ('«ayudador», en 13:6 (todavía no en estas páginas).', '«ayudador», en <a href="hebrews-13.es.html#v13-6">13:6</a>.'), ('the marriage bed at Hebrews 13:4 (not yet on these pages);', 'the marriage bed at <a href="hebrews-13.html#v13-4">Hebrews 13:4</a>;'), ('el lecho matrimonial en Hebreos 13:4 (todavía no en estas páginas);', 'el lecho matrimonial en <a href="hebrews-13.es.html#v13-4">Hebreos 13:4</a>;'), ('and tells him not to let anyone despise his youth.', 'and tells him not to let anyone despise his youth. Hebrews names him once, at its close: &lsquo;our brother Timothy has been released&rsquo; (<a href="hebrews-13.html#v13-23">Hebrews 13:23</a>), without saying from what.'), ('y le dice que no deje que nadie desprecie su juventud.', 'y le dice que no deje que nadie desprecie su juventud. Hebreos lo nombra una vez, al cerrar: «nuestro hermano Timoteo ha sido liberado» (<a href="hebrews-13.es.html#v13-23">Hebreos 13:23</a>), sin decir de qué.')])
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "timothy" and ("Hebrews", 13, 23) not in _e["refs"]:
+        _e["refs"].append(("Hebrews", 13, 23))
+
+ENCYCLOPEDIA.append(dict(slug='italy', name='Italy', kind='place', aliases=['Italy'], coords=(42.5, 12.5, 4.0), approx=True,
+    modern='Italy', refs=[('Acts', 18, 2), ('Acts', 27, 1), ('Acts', 27, 6), ('Hebrews', 13, 24)], videos=[],
+    desc='The peninsula south of the Alps, with <a href="encyclopedia.html#rome">Rome</a> as its capital. &#9888; The name stands in four verses of the New Testament: Aquila, &lsquo;lately come from Italy&rsquo; with Priscilla his wife after Claudius ordered the Jews out of Rome (<a href="acts-18.html#v18-2">Acts 18:2</a>); the decision that Paul should &lsquo;sail away to Italy&rsquo; (<a href="acts-27.html#v27-1">Acts 27:1</a>); the ship of Alexandria &lsquo;sailing to Italy&rsquo; (<a href="acts-27.html#v27-6">Acts 27:6</a>); and &lsquo;Those from Italy greet you&rsquo; (<a href="hebrews-13.html#v13-24">Hebrews 13:24</a>). The last is read two ways: Italians away from home sending greetings back, or people in Italy greeting a congregation elsewhere; the letter does not say where it was written. The adjective names Cornelius&rsquo;s &lsquo;cohort called Italian&rsquo; at <a href="acts-10.html#v10-1">Acts 10:1</a>.'))
+ENCYCLOPEDIA_ES['italy'] = ('Italia',
+    'La península al sur de los Alpes, con <a href="enciclopedia.html#rome">Roma</a> por capital. &#9888; El nombre está en cuatro versículos del Nuevo Testamento: Áquila, «recién llegado de Italia» con Priscila su mujer después de que Claudio ordenara a los judíos salir de Roma (<a href="acts-18.es.html#v18-2">Hechos 18:2</a>); la decisión «que navegáramos a Italia» (<a href="acts-27.es.html#v27-1">Hechos 27:1</a>); la nave de Alejandría «que navegaba a Italia» (<a href="acts-27.es.html#v27-6">Hechos 27:6</a>); y «Los de Italia los saludan» (<a href="hebrews-13.es.html#v13-24">Hebreos 13:24</a>). Lo último se lee de dos maneras: italianos lejos de casa que envían saludos, o gente en Italia que saluda a una congregación de otro lugar; la carta no dice dónde se escribió. El adjetivo nombra la «cohorte llamada Italiana» de Cornelio en <a href="acts-10.es.html#v10-1">Hechos 10:1</a>.')
+
+XREFS.extend([
+    (("Romans", 12, 10), ("Hebrews", 13, 1), "brotherly love"),
+    (("Romans", 12, 13), ("Hebrews", 13, 2), "hospitality"),
+    (("Genesis", 18, 2), ("Hebrews", 13, 2), "Abraham's three visitors"),
+    (("Genesis", 19, 1), ("Hebrews", 13, 2), "Lot and the two angels"),
+    (("Hebrews", 10, 34), ("Hebrews", 13, 3), "the prisoners"),
+    (("Hebrews", 11, 37), ("Hebrews", 13, 3), "ill-treated"),
+    (("Hebrews", 12, 16), ("Hebrews", 13, 4), "sexually immoral"),
+    (("1 Timothy", 3, 3), ("Hebrews", 13, 5), "free from the love of money"),
+    (("Deuteronomy", 31, 6), ("Hebrews", 13, 5), "he will not let go of you or forsake you"),
+    (("Joshua", 1, 5), ("Hebrews", 13, 5), "I will not let you go or forsake you"),
+    (("Hebrews", 2, 18), ("Hebrews", 13, 6), "help"),
+    (("Acts", 15, 22), ("Hebrews", 13, 7), "leading men"),
+    (("Hebrews", 6, 12), ("Hebrews", 13, 7), "imitate their faith"),
+    (("Hebrews", 1, 12), ("Hebrews", 13, 8), "the same"),
+    (("Hebrews", 9, 10), ("Hebrews", 13, 9), "foods"),
+    (("Hebrews", 7, 13), ("Hebrews", 13, 10), "the altar"),
+    (("Leviticus", 16, 27), ("Hebrews", 13, 11), "burned outside the camp"),
+    (("John", 19, 20), ("Hebrews", 13, 12), "outside the city"),
+    (("Hebrews", 11, 26), ("Hebrews", 13, 13), "reproach"),
+    (("Hebrews", 10, 34), ("Hebrews", 13, 14), "abiding"),
+    (("Hebrews", 11, 14), ("Hebrews", 13, 14), "looking for a homeland"),
+    (("Hebrews", 12, 22), ("Hebrews", 13, 14), "the city"),
+    (("Leviticus", 7, 12), ("Hebrews", 13, 15), "sacrifice of praise"),
+    (("Hebrews", 10, 23), ("Hebrews", 13, 15), "confession"),
+    (("Romans", 15, 26), ("Hebrews", 13, 16), "sharing"),
+    (("Hebrews", 11, 5), ("Hebrews", 13, 16), "pleased God"),
+    (("Mark", 13, 33), ("Hebrews", 13, 17), "keep watch"),
+    (("Hebrews", 10, 22), ("Hebrews", 13, 18), "conscience"),
+    (("Romans", 16, 20), ("Hebrews", 13, 20), "the God of peace"),
+    (("Romans", 10, 7), ("Hebrews", 13, 20), "brought up from the dead"),
+    (("John", 10, 11), ("Hebrews", 13, 20), "shepherd"),
+    (("Hebrews", 9, 20), ("Hebrews", 13, 20), "the blood of the covenant"),
+    (("Hebrews", 10, 5), ("Hebrews", 13, 21), "katartizo"),
+    (("Hebrews", 12, 28), ("Hebrews", 13, 21), "pleasing"),
+    (("Acts", 13, 15), ("Hebrews", 13, 22), "word of exhortation"),
+    (("Hebrews", 12, 5), ("Hebrews", 13, 22), "exhortation"),
+    (("Acts", 16, 35), ("Hebrews", 13, 23), "released"),
+    (("Acts", 18, 2), ("Hebrews", 13, 24), "from Italy"),
+    (("Titus", 3, 15), ("Hebrews", 13, 25), "Grace be with you all"),
+])
+
+CHAPTER_ART["heb13"] = [dict(
+    file="nucci-abraham-and-the-three-angels.jpg",
+    title="Abraham and the Three Angels",   title_es="Abraham y los tres ángeles",
+    artist="Avanzino Nucci",
+    year="before 1629",
+    location="Painting; the Wikimedia Commons record read here credits the Dorotheum auction house and does not name a present owner",
+    location_es="Pintura; el registro de Wikimedia Commons consultado aquí cita la casa de subastas Dorotheum y no nombra a su propietario actual",
+    alt="Three winged angels sit at a table under a tree, served by a man carrying a dish, while an old man in a turban and a yellow cloak stands at the right with an old woman behind him in a doorway.",
+    note="&#9888; Nucci paints Abraham&rsquo;s meal at Mamre (<a href=\"genesis-18.html#v18-2\">Genesis 18</a>), the scene behind &lsquo;some have entertained angels "
+         "without knowing it&rsquo; (<a href=\"hebrews-13.html#v13-2\">verse 2</a>); Genesis calls the visitors &lsquo;three men,&rsquo; and the painter gives them wings.",
+    note_es="&#9888; Nucci pinta la comida de Abraham en Mamre (Génesis 18, ya en estas páginas, todavía no en español), la escena que está detrás de «algunos, sin "
+            "saberlo, hospedaron ángeles» (<a href=\"hebrews-13.es.html#v13-2\">versículo 2</a>); Génesis llama a los visitantes «tres hombres», y el pintor les da alas.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Avanzino_Nucci_-_Abraham_and_the_three_Angels.jpg",
+)]
+
+CHRON_CHAPTERS["heb13"] = dict(era='apostolic',
+    when="The letter's close: brotherly love and hospitality, 'some have entertained angels'; prisoners, marriage and money; 'Jesus Christ the same yesterday and today, and forever'; an altar and a camp, a sacrifice of praise; leaders who keep watch; the God of peace and the great shepherd; Timothy released, and 'those from Italy.'",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
