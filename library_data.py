@@ -43427,3 +43427,189 @@ CHRON_CHAPTERS["jas4"] = dict(era='apostolic',
     when="Wars and fights among the readers, from 'your pleasures that wage war in your members'; 'you do not have, because you do not ask'; 'Adulteresses!', friendship with the world as hostility toward God; Proverbs 3:34, 'God opposes the proud'; 'resist the devil,' 'draw near to God'; do not speak against one another; the merchants' plans for tomorrow, 'a mist that appears for a little while'; and 'if the Lord wills.'",
     clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
 
+# ---- James 5 -----------------------------------------------------------
+DICTIONARY.append(('setobrotos', 'sētobrōtos', 'σητόβρωτος', 'sētobrōtos',
+    'MOTH-EATEN &mdash; <em>s&#275;s</em>, &lsquo;moth,&rsquo; and <em>bibr&#333;sk&#333;</em>, &lsquo;to eat.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-5.html#v5-2">James 5:2</a>, &lsquo;your clothes have become moth-eaten,&rsquo; the moth of Jesus&rsquo; saying, &lsquo;where moth and devouring make them disappear&rsquo; (<a href="matthew-6.html#v6-19">Matthew 6:19</a>). KJV &lsquo;your garments are motheaten&rsquo;; NWT 1984 &lsquo;YOUR outer garments have become moth-eaten.&rsquo;',
+    ('James', 5, 2)))
+DICTIONARY_ES['setobrotos'] = ('s&#275;tóbr&#333;tos',
+    'APOLILLADO &mdash; <em>s&#275;́s</em>, «polilla», y <em>bibrṓsk&#333;</em>, «comer». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-5.es.html#v5-2">Santiago 5:2</a>, «sus ropas se han apolillado», la polilla del dicho de Jesús, «donde la polilla y la carcoma los hacen desaparecer» (Mateo 6:19 (ya en estas páginas, todavía no en español)). RV60 «vuestras ropas están comidas de polilla»; TNM 1987 «han quedado apolilladas».')
+
+DICTIONARY.append(('ios', 'ios', 'ἰός', 'ios',
+    'VENOM; RUST &mdash; one word for two corrosions, the poison that eats flesh and the tarnish that eats metal. &#9888; It stands in three verses of the New Testament: &lsquo;the venom of asps is under their lips&rsquo; (<a href="romans-3.html#v3-13">Romans 3:13</a>); the tongue &lsquo;full of death-bringing venom&rsquo; (<a href="james-3.html#v3-8">James 3:8</a>); and the gold and silver whose &lsquo;rust will be a witness against you and will eat your flesh&rsquo; (<a href="james-5.html#v5-3">James 5:3</a>), so that James uses the one word for the tongue and for the hoarded coin. KJV at James 5:3 &lsquo;the rust of them shall be a witness against you&rsquo;; NWT 1984 &lsquo;their rust will be as a witness against YOU.&rsquo;',
+    ('James', 3, 8)))
+DICTIONARY_ES['ios'] = ('iós',
+    'VENENO; MOHO &mdash; una sola palabra para dos corrosiones, el veneno que come la carne y el óxido que come el metal. &#9888; Está en tres versículos del Nuevo Testamento: «veneno de áspides hay bajo sus labios» (<a href="romans-3.es.html#v3-13">Romanos 3:13</a>); la lengua «llena de veneno mortífero» (<a href="james-3.es.html#v3-8">Santiago 3:8</a>); y el oro y la plata cuyo «moho será testimonio contra ustedes y comerá sus carnes» (<a href="james-5.es.html#v5-3">Santiago 5:3</a>), de modo que Santiago usa la misma palabra para la lengua y para la moneda acumulada. RV60 en Santiago 5:3 «su moho testificará contra vosotros»; TNM 1987 «el moho de estos servirá como testimonio contra ustedes».')
+
+DICTIONARY.append(('thesaurizo', 'thēsaurizō', 'θησαυρίζω', 'thēsaurizō',
+    'TO STORE UP TREASURE, to lay up &mdash; from <em>th&#275;sauros</em>, &lsquo;treasure, storehouse.&rsquo; &#9888; It stands in seven verses of the New Testament: &lsquo;Do not store up for yourselves treasures on the earth&rsquo; and its answer (<a href="matthew-6.html#v6-19">Matthew 6:19</a>; <a href="matthew-6.html#v6-20">6:20</a>); &lsquo;the one who stores up treasure for himself, and is not rich toward God&rsquo; (<a href="luke-12.html#v12-21">Luke 12:21</a>); &lsquo;you are storing up for yourself wrath&rsquo; (<a href="romans-2.html#v2-5">Romans 2:5</a>); parents who &lsquo;lay up treasure&rsquo; for their children (<a href="2-corinthians-12.html#v14">2 Corinthians 12:14</a>); and the rich at <a href="james-5.html#v5-3">James 5:3</a>, &lsquo;Like fire you have stored up treasure in the last days.&rsquo; KJV at James 5:3 &lsquo;Ye have heaped treasure together for the last days&rsquo;; ASV &lsquo;Ye have laid up your treasure in the last days.&rsquo;',
+    ('Matthew', 6, 19)))
+DICTIONARY_ES['thesaurizo'] = ('th&#275;saurízō',
+    'ATESORAR, acumular &mdash; de <em>th&#275;saurós</em>, «tesoro, almacén». &#9888; Está en siete versículos del Nuevo Testamento: «No acumulen tesoros para ustedes en la tierra» y su respuesta (Mateo 6:19 (ya en estas páginas, todavía no en español); 6:20 (ya en estas páginas, todavía no en español)); «el que atesora para sí mismo, y no es rico para con Dios» (<a href="luke-12.es.html#v12-21">Lucas 12:21</a>); «atesoras para ti mismo ira» (<a href="romans-2.es.html#v2-5">Romanos 2:5</a>); los padres que «atesoran» para los hijos (<a href="2-corinthians-12.es.html#v14">2 Corintios 12:14</a>); y los ricos de <a href="james-5.es.html#v5-3">Santiago 5:3</a>, «Como fuego han atesorado en los últimos días». RV60 en Santiago 5:3 «Habéis acumulado tesoros para los días postreros»; TNM 1987 «han acumulado en los últimos días».')
+
+DICTIONARY.append(('aphystereo', 'aphystereō', 'ἀφυστερέω', 'aphystereō',
+    'TO HOLD BACK, to withhold &mdash; <em>apo</em>, &lsquo;away,&rsquo; and <em>hystere&#333;</em>, &lsquo;to be behind, to fall short.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-5.html#v5-4">James 5:4</a>, the wages &lsquo;which you have held back,&rsquo; in the text of Westcott&ndash;Hort and Tregelles; NA28 and Robinson&ndash;Pierpont read <em>apostere&#333;</em>, &lsquo;defraud.&rsquo; The law behind it is <a href="deuteronomy-24.html#v24-15">Deuteronomy 24:15</a>, the wage paid on the day &lsquo;so that he does not cry out against you to Jehovah.&rsquo; KJV &lsquo;which is of you kept back by fraud&rsquo;; NWT 1984 &lsquo;which are held up by YOU.&rsquo;',
+    ('James', 5, 4)))
+DICTIONARY_ES['aphystereo'] = ('aphysteréō',
+    'RETENER &mdash; <em>apó</em>, «lejos», y <em>hysteréō</em>, «quedarse atrás, faltar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-5.es.html#v5-4">Santiago 5:4</a>, el jornal «el cual ustedes han retenido», en el texto de Westcott&ndash;Hort y Tregelles; NA28 y Robinson&ndash;Pierpont leen <em>aposteréō</em>, «defraudar». La ley que hay detrás es <a href="deuteronomy-24.es.html#v24-15">Deuteronomio 24:15</a>, el jornal pagado en su día «para que no clame contra ti a Jehová». RV60 «el cual por engaño no les ha sido pagado por vosotros»; TNM 1987 «el cual es retenido por ustedes».')
+
+DICTIONARY.append(('sphage', 'sphagē', 'σφαγή', 'sphagē',
+    'SLAUGHTER &mdash; the killing of animals for food or sacrifice. &#9888; It stands in three verses of the New Testament, two of them quoting the Greek Old Testament: &lsquo;Like a sheep he was led to slaughter&rsquo; (<a href="acts-8.html#v8-32">Acts 8:32</a>), &lsquo;we were reckoned as sheep for slaughter&rsquo; (<a href="romans-8.html#v8-36">Romans 8:36</a>), and the rich who &lsquo;fattened your hearts in a day of slaughter&rsquo; (<a href="james-5.html#v5-5">James 5:5</a>), a phrase of the Greek of Jeremiah 12:3 (not yet on these pages). KJV at James 5:5 &lsquo;as in a day of slaughter,&rsquo; with the &lsquo;as&rsquo; of the Robinson&ndash;Pierpont text; ASV &lsquo;in a day of slaughter.&rsquo;',
+    ('Acts', 8, 32)))
+DICTIONARY_ES['sphage'] = ('sphag&#275;́',
+    'MATANZA &mdash; la muerte de animales para comida o sacrificio. &#9888; Está en tres versículos del Nuevo Testamento, dos de ellos citando el Antiguo Testamento griego: «Como oveja fue llevado al matadero» (<a href="acts-8.es.html#v8-32">Hechos 8:32</a>), «fuimos contados como ovejas para el matadero» (<a href="romans-8.es.html#v8-36">Romanos 8:36</a>), y los ricos que «han engordado sus corazones en un día de matanza» (<a href="james-5.es.html#v5-5">Santiago 5:5</a>), una frase del griego de Jeremías 12:3 (todavía no en estas páginas). RV60 en Santiago 5:5 «como en día de matanza», con el «como» del texto de Robinson&ndash;Pierpont; TNM 1987 «en el día del degüello».')
+
+DICTIONARY.append(('stenazo', 'stenazō', 'στενάζω', 'stenazō',
+    'TO GROAN, to sigh &mdash; the sound of something pressed. &#9888; It stands in six verses of the New Testament: Jesus &lsquo;sighed&rsquo; before healing the deaf man (<a href="mark-7.html#v7-34">Mark 7:34</a>); &lsquo;we ourselves groan within ourselves, waiting for adoption&rsquo; (<a href="romans-8.html#v8-23">Romans 8:23</a>); &lsquo;in this we groan&rsquo; (<a href="2-corinthians-5.html#v2">2 Corinthians 5:2</a>); and &lsquo;Do not groan against one another, brothers&rsquo; (<a href="james-5.html#v5-9">James 5:9</a>), the only place it is aimed at other people. KJV at James 5:9 &lsquo;Grudge not one against another&rsquo;; ASV &lsquo;Murmur not&rsquo;; NWT 1984 &lsquo;Do not heave sighs against one another.&rsquo;',
+    ('Romans', 8, 23)))
+DICTIONARY_ES['stenazo'] = ('stenázō',
+    'GEMIR, suspirar &mdash; el sonido de algo apretado. &#9888; Está en seis versículos del Nuevo Testamento: Jesús «suspiró» antes de sanar al sordo (<a href="mark-7.es.html#v7-34">Marcos 7:34</a>); «nosotros mismos gemimos por dentro, esperando la adopción» (<a href="romans-8.es.html#v8-23">Romanos 8:23</a>); «en esta gemimos» (<a href="2-corinthians-5.es.html#v2">2 Corintios 5:2</a>); y «No giman unos contra otros, hermanos» (<a href="james-5.es.html#v5-9">Santiago 5:9</a>), el único lugar donde se dirige contra otras personas. RV60 en Santiago 5:9 «no os quejéis unos contra otros»; TNM 1987 «No exhalen suspiros unos contra otros».')
+
+DICTIONARY.append(('kakopatheia', 'kakopatheia', 'κακοπάθεια', 'kakopatheia',
+    'SUFFERING, hardship &mdash; <em>kakos</em>, &lsquo;bad,&rsquo; and <em>paschō</em>, &lsquo;to undergo&rsquo;: undergoing what is bad. &#9888; The noun stands in one verse, <a href="james-5.html#v5-10">James 5:10</a>, the prophets as &lsquo;an example of suffering and of patience&rsquo;; its verb <em>kakopathe&#333;</em> is Paul&rsquo;s &lsquo;I suffer hardship even to the point of chains&rsquo; (<a href="2-timothy-2.html#v2-9">2 Timothy 2:9</a>) and &lsquo;suffer hardship&rsquo; (<a href="2-timothy-4.html#v4-5">2 Timothy 4:5</a>), and &lsquo;Is anyone among you suffering?&rsquo; (<a href="james-5.html#v5-13">James 5:13</a>). KJV at James 5:10 &lsquo;for an example of suffering affliction&rsquo;; ASV &lsquo;for an example of suffering.&rsquo;',
+    ('James', 5, 10)))
+DICTIONARY_ES['kakopatheia'] = ('kakopátheia',
+    'SUFRIMIENTO, penalidad &mdash; <em>kakós</em>, «malo», y <em>páschō</em>, «padecer»: padecer lo malo. &#9888; El sustantivo está en un solo versículo, <a href="james-5.es.html#v5-10">Santiago 5:10</a>, los profetas como «ejemplo del sufrimiento y de la paciencia»; su verbo <em>kakopathéō</em> es el «sufro penalidades hasta las cadenas» de Pablo (<a href="2-timothy-2.es.html#v2-9">2 Timoteo 2:9</a>) y «sufre penalidades» (<a href="2-timothy-4.es.html#v4-5">2 Timoteo 4:5</a>), y «¿Está sufriendo alguno entre ustedes?» (<a href="james-5.es.html#v5-13">Santiago 5:13</a>). RV60 en Santiago 5:10 «ejemplo de aflicción»; TNM 1987 «por modelo de sufrir el mal».')
+
+DICTIONARY.append(('makarizo', 'makarizō', 'μακαρίζω', 'makarizō',
+    'TO CALL HAPPY, to count blessed &mdash; the verb of <em>makarios</em>, &lsquo;happy, blessed&rsquo; (<a href="dictionary.html#makarios">makarios</a>). &#9888; It stands in two verses of the New Testament: Mary&rsquo;s &lsquo;all generations will call me happy&rsquo; (<a href="luke-1.html#v48">Luke 1:48</a>) and &lsquo;we call happy those who endured&rsquo; (<a href="james-5.html#v5-11">James 5:11</a>), which looks back to &lsquo;Blessed is the man who endures trial&rsquo; (<a href="james-1.html#v12">James 1:12</a>). KJV at James 5:11 &lsquo;we count them happy which endure&rsquo;; ASV &lsquo;we call them blessed that endured&rsquo;; NWT 1984 &lsquo;We pronounce happy those who have endured.&rsquo;',
+    ('Luke', 1, 48)))
+DICTIONARY_ES['makarizo'] = ('makarízō',
+    'LLAMAR FELIZ, tener por dichoso &mdash; el verbo de <em>makários</em>, «feliz, bienaventurado» (<a href="diccionario.html#makarios">makarios</a>). &#9888; Está en dos versículos del Nuevo Testamento: el «todas las generaciones me llamarán feliz» de María (<a href="luke-1.es.html#v48">Lucas 1:48</a>) y «llamamos felices a los que perseveraron» (<a href="james-5.es.html#v5-11">Santiago 5:11</a>), que mira hacia «Bienaventurado el varón que soporta la prueba» (<a href="james-1.es.html#v12">Santiago 1:12</a>). RV60 en Santiago 5:11 «tenemos por bienaventurados a los que sufren»; TNM 1987 «Pronunciamos felices a los que han aguantado».')
+
+DICTIONARY.append(('polysplanchnos', 'polysplanchnos', 'πολύσπλαγχνος', 'polysplanchnos',
+    'FULL OF COMPASSION &mdash; <em>polys</em>, &lsquo;much,&rsquo; and <em>splanchna</em>, &lsquo;inward parts,&rsquo; the seat of feeling (<a href="dictionary.html#splanchna">splanchna</a>). &#9888; It stands in one verse of the New Testament, <a href="james-5.html#v5-11">James 5:11</a>, &lsquo;Jehovah is full of compassion and merciful,&rsquo; after the endurance of Job; the pair recalls the Greek of Psalm 103:8 (not yet on these pages) and &lsquo;a God merciful and gracious&rsquo; at <a href="exodus-34.html#v34-6">Exodus 34:6</a>. KJV &lsquo;the Lord is very pitiful&rsquo;; ASV &lsquo;the Lord is full of pity&rsquo;; NWT 1984 &lsquo;Jehovah is very tender in affection.&rsquo;',
+    ('James', 5, 11)))
+DICTIONARY_ES['polysplanchnos'] = ('polýsplanchnos',
+    'MUY COMPASIVO &mdash; <em>polýs</em>, «mucho», y <em>splánchna</em>, «entrañas», la sede del sentimiento (<a href="diccionario.html#splanchna">splanchna</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-5.es.html#v5-11">Santiago 5:11</a>, «Jehová es muy compasivo y misericordioso», después de la perseverancia de Job; la pareja recuerda el griego del Salmo 103:8 (todavía no en estas páginas) y «Dios misericordioso y clemente» en <a href="exodus-34.es.html#v34-6">Éxodo 34:6</a>. RV60 «el Señor es muy misericordioso y compasivo»; TNM 1987 «Jehová es muy tierno en cariño».')
+
+DICTIONARY.append(('omnyo', 'omnyō', 'ὀμνύω', 'omnyō',
+    'TO SWEAR, to take an oath &mdash; to call something greater to witness. &#9888; It stands in twenty verses of the New Testament. God swears: &lsquo;he swore by himself&rsquo; (<a href="hebrews-6.html#v6-13">Hebrews 6:13</a>). People swear by the sanctuary and its gold (<a href="matthew-23.html#v23-16">Matthew 23:16</a>). And Jesus says &lsquo;do not swear at all&rsquo; (<a href="matthew-5.html#v5-34">Matthew 5:34</a>), which James gives as &lsquo;do not swear, either by heaven or by the earth or by any other oath; but let your yes be yes, and your no be no&rsquo; (<a href="james-5.html#v5-12">James 5:12</a>). Readers differ on whether this forbids every oath or the casual oath. KJV at James 5:12 &lsquo;swear not&rsquo;; NWT 1984 &lsquo;stop swearing.&rsquo;',
+    ('Matthew', 5, 34)))
+DICTIONARY_ES['omnyo'] = ('omnýō',
+    'JURAR, prestar juramento &mdash; poner por testigo algo mayor. &#9888; Está en veinte versículos del Nuevo Testamento. Dios jura: «juró por sí mismo» (<a href="hebrews-6.es.html#v6-13">Hebreos 6:13</a>). La gente jura por el santuario y por su oro (<a href="matthew-23.es.html#v23-16">Mateo 23:16</a>). Y Jesús dice «no juren en absoluto» (Mateo 5:34 (ya en estas páginas, todavía no en español)), que Santiago da como «no juren, ni por el cielo, ni por la tierra, ni con ningún otro juramento; sino que su sí sea sí, y su no sea no» (<a href="james-5.es.html#v5-12">Santiago 5:12</a>). Los lectores difieren sobre si prohíbe todo juramento o el juramento ligero. RV60 en Santiago 5:12 «no juréis»; TNM 1987 «dejen de jurar».')
+
+DICTIONARY.append(('euthymeo', 'euthymeō', 'εὐθυμέω', 'euthymeō',
+    'TO BE CHEERFUL, to take heart &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>thymos</em>, &lsquo;spirit.&rsquo; &#9888; The verb stands in three verses of the New Testament: Paul&rsquo;s &lsquo;take courage&rsquo; to the crew in the storm (<a href="acts-27.html#v27-22">Acts 27:22</a>; <a href="acts-27.html#v27-25">27:25</a>) and &lsquo;Is anyone cheerful? Let him sing praise&rsquo; (<a href="james-5.html#v5-13">James 5:13</a>); the adjective follows at <a href="acts-27.html#v27-36">Acts 27:36</a>, &lsquo;all became cheerful.&rsquo; KJV at James 5:13 &lsquo;Is any merry?&rsquo;; ASV &lsquo;Is any cheerful?&rsquo;; NWT 1984 &lsquo;Is there anyone in good spirits?&rsquo;',
+    ('Acts', 27, 22)))
+DICTIONARY_ES['euthymeo'] = ('euthyméō',
+    'ESTAR DE BUEN ÁNIMO, animarse &mdash; <em>eu</em>, «bien», y <em>thymós</em>, «ánimo». &#9888; El verbo está en tres versículos del Nuevo Testamento: el «tener ánimo» de Pablo a la tripulación en la tormenta (<a href="acts-27.es.html#v27-22">Hechos 27:22</a>; <a href="acts-27.es.html#v27-25">27:25</a>) y «¿Está alguno de buen ánimo? Que cante alabanzas» (<a href="james-5.es.html#v5-13">Santiago 5:13</a>); el adjetivo sigue en <a href="acts-27.es.html#v27-36">Hechos 27:36</a>, «todos se animaron». RV60 en Santiago 5:13 «¿Está alguno alegre?»; TNM 1987 «¿Hay alguno que se sienta contento?».')
+
+DICTIONARY.append(('psallo', 'psallō', 'ψάλλω', 'psallō',
+    'TO SING PRAISE, to make music &mdash; first of plucking a string, then of singing to it; the word behind &lsquo;psalm.&rsquo; &#9888; It stands in four verses of the New Testament: &lsquo;and sing to your name&rsquo; (<a href="romans-15.html#v15-9">Romans 15:9</a>); &lsquo;I will sing with the spirit&rsquo; (<a href="1-corinthians-14.html#v15">1 Corinthians 14:15</a>); &lsquo;singing and making music with your heart to the Lord&rsquo; (<a href="ephesians-5.html#v5-19">Ephesians 5:19</a>); and &lsquo;Is anyone cheerful? Let him sing praise&rsquo; (<a href="james-5.html#v5-13">James 5:13</a>). KJV at James 5:13 &lsquo;let him sing psalms&rsquo;; ASV &lsquo;Let him sing praise.&rsquo;',
+    ('Romans', 15, 9)))
+DICTIONARY_ES['psallo'] = ('psállō',
+    'CANTAR ALABANZAS, hacer música &mdash; primero, pulsar una cuerda; luego, cantar con ella; la palabra que hay detrás de «salmo». &#9888; Está en cuatro versículos del Nuevo Testamento: «y cantaré a tu nombre» (<a href="romans-15.es.html#v15-9">Romanos 15:9</a>); «cantaré con el espíritu» (<a href="1-corinthians-14.es.html#v15">1 Corintios 14:15</a>); «cantando y alabando con su corazón al Señor» (<a href="ephesians-5.es.html#v5-19">Efesios 5:19</a>); y «¿Está alguno de buen ánimo? Que cante alabanzas» (<a href="james-5.es.html#v5-13">Santiago 5:13</a>). RV60 en Santiago 5:13 «Cante alabanzas»; TNM 1987 «Que cante salmos».')
+
+DICTIONARY.append(('aleipho', 'aleiphō', 'ἀλείφω', 'aleiphō',
+    'TO ANOINT, to rub with oil &mdash; the everyday word for oiling the head or body, for comfort, grooming or care of the sick; it is not <em>chri&#333;</em>, the verb behind &lsquo;Christ.&rsquo; &#9888; It stands in eight verses of the New Testament: &lsquo;oil your head and wash your face&rsquo; (<a href="matthew-6.html#v6-17">Matthew 6:17</a>); the Twelve who &lsquo;anointed with oil many who were sick&rsquo; (<a href="mark-6.html#v6-13">Mark 6:13</a>); &lsquo;You did not anoint my head with oil&rsquo; (<a href="luke-7.html#v7-46">Luke 7:46</a>); and the elders &lsquo;anointing him with oil in the name of the Lord&rsquo; (<a href="james-5.html#v5-14">James 5:14</a>). KJV at James 5:14 &lsquo;anointing him with oil&rsquo;; NWT 1984 &lsquo;greasing [him] with oil.&rsquo;',
+    ('Mark', 6, 13)))
+DICTIONARY_ES['aleipho'] = ('aleíphō',
+    'UNGIR, frotar con aceite &mdash; la palabra corriente para untar la cabeza o el cuerpo, por alivio, aseo o cuidado del enfermo; no es <em>chríō</em>, el verbo que hay detrás de «Cristo». &#9888; Está en ocho versículos del Nuevo Testamento: «unge tu cabeza y lava tu rostro» (Mateo 6:17 (ya en estas páginas, todavía no en español)); los Doce que «ungían con aceite a muchos enfermos» (<a href="mark-6.es.html#v6-13">Marcos 6:13</a>); «No ungiste mi cabeza con aceite» (<a href="luke-7.es.html#v7-46">Lucas 7:46</a>); y los ancianos «ungiéndolo con aceite en el nombre del Señor» (<a href="james-5.es.html#v5-14">Santiago 5:14</a>). RV60 en Santiago 5:14 «ungiéndole con aceite»; TNM 1987 «untándo[lo] con aceite».')
+
+DICTIONARY.append(('kamno', 'kamnō', 'κάμνω', 'kamnō',
+    'TO GROW WEARY; to be sick &mdash; from tiring with work to wearing out with illness. &#9888; It stands in two verses of the New Testament: &lsquo;so that you do not grow weary and give out in your souls&rsquo; (<a href="hebrews-12.html#v12-3">Hebrews 12:3</a>) and &lsquo;the prayer of faith will save the one who is sick&rsquo; (<a href="james-5.html#v5-15">James 5:15</a>). KJV at James 5:15 &lsquo;shall save the sick&rsquo;; NWT 1984 &lsquo;will make the indisposed one well.&rsquo;',
+    ('Hebrews', 12, 3)))
+DICTIONARY_ES['kamno'] = ('kámnō',
+    'CANSARSE; ESTAR ENFERMO &mdash; del cansarse con el trabajo al agotarse con la enfermedad. &#9888; Está en dos versículos del Nuevo Testamento: «para que no se cansen ni desfallezcan en sus almas» (<a href="hebrews-12.es.html#v12-3">Hebreos 12:3</a>) y «la oración de fe salvará al que está enfermo» (<a href="james-5.es.html#v5-15">Santiago 5:15</a>). RV60 en Santiago 5:15 «salvará al enfermo»; TNM 1987 «sanará al indispuesto».')
+
+DICTIONARY.append(('exomologeo', 'exomologeō', 'ἐξομολογέω', 'exomologeō',
+    'TO CONFESS, to acknowledge openly; also, to praise &mdash; <em>ex</em>, &lsquo;out,&rsquo; and <em>homologe&#333;</em>, &lsquo;to say the same, agree.&rsquo; &#9888; It stands in nine verses of the New Testament, in two senses: confessing sins, as the crowds at the Jordan &lsquo;confessing their sins&rsquo; (<a href="mark-1.html#v5">Mark 1:5</a>) and &lsquo;confess your sins to one another&rsquo; (<a href="james-5.html#v5-16">James 5:16</a>); and acknowledging in praise, as &lsquo;every tongue should confess that Jesus Christ is Lord&rsquo; (<a href="philippians-2.html#v2-11">Philippians 2:11</a>). KJV at James 5:16 &lsquo;Confess your faults one to another,&rsquo; with the &lsquo;faults&rsquo; of the Robinson&ndash;Pierpont text; NWT 1984 &lsquo;openly confess YOUR sins to one another.&rsquo;',
+    ('Mark', 1, 5)))
+DICTIONARY_ES['exomologeo'] = ('exomologéō',
+    'CONFESAR, reconocer abiertamente; también, alabar &mdash; <em>ex</em>, «fuera», y <em>homologéō</em>, «decir lo mismo, estar de acuerdo». &#9888; Está en nueve versículos del Nuevo Testamento, en dos sentidos: confesar pecados, como las multitudes en el Jordán «confesando sus pecados» (<a href="mark-1.es.html#v5">Marcos 1:5</a>) y «confiésense unos a otros los pecados» (<a href="james-5.es.html#v5-16">Santiago 5:16</a>); y reconocer en alabanza, como «toda lengua confiese que Jesucristo es Señor» (<a href="philippians-2.es.html#v2-11">Filipenses 2:11</a>). RV60 en Santiago 5:16 «Confesaos vuestras ofensas unos a otros», con las «faltas» del texto de Robinson&ndash;Pierpont; TNM 1987 «confiesen abiertamente sus pecados unos a otros».')
+
+ENCYCLOPEDIA_ES['job-person'] = ('Job',
+    'El protagonista del libro que lleva su nombre &mdash; un hombre de la tierra de Uz, fuera de Israel y fuera del pacto, «íntegro y recto, temeroso de Dios y apartado del mal» (<a href="job-1.es.html#v1">Job 1:1</a>), y el más rico de los hijos del oriente. Pierde diez hijos, su ganado y su salud en dos capítulos, y pasa treinta y nueve más negándose tanto a maldecir a Dios como a aceptar la explicación de sus amigos sobre por qué ocurrió. Ezequiel lo nombra con Noé y Daniel como modelo de justicia (Ezequiel 14:14, 20), y Santiago cita su perseverancia (<a href="james-5.es.html#v5-11">Santiago 5:11</a>), el único lugar donde el Nuevo Testamento lo nombra. Fuera del libro no se sabe nada de él; si es historia recordada o una figura hecha para el argumento se discute desde la antigüedad, y el Talmud conserva la opinión de que «Job nunca existió y fue una parábola» (Bava Batra 15a) junto a los que sostenían que sí existió (dato referido).')
+
+def _jas5_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jas5_fix([('and James 5:4 has the kept-back wage itself cry out.', 'and <a href="james-5.html#v5-4">James 5:4</a> has the held-back wage itself cry out.'), ('y Santiago 5:4 hace clamar al jornal retenido.', 'y <a href="james-5.es.html#v5-4">Santiago 5:4</a> hace clamar al jornal retenido.'), ('(James 5:10, not yet on these pages).', '(<a href="james-5.html#v5-10">James 5:10</a>).'), ('(Santiago 5:10, todavía no en estas páginas).', '(<a href="james-5.es.html#v5-10">Santiago 5:10</a>).'), ('and James 5:17 (not yet on these pages), where Elijah is &lsquo;a man of like nature with us.&rsquo;', 'and <a href="james-5.html#v5-17">James 5:17</a>, where Elijah is &lsquo;a human who shared our nature.&rsquo;'), ('y Santiago 5:17 (todavía no en estas páginas), donde Elías es «un hombre de naturaleza semejante a la nuestra».', 'y <a href="james-5.es.html#v5-17">Santiago 5:17</a>, donde Elías es «un hombre que compartía nuestra naturaleza».'), ('and James 5:15, where it is &lsquo;the <em>euchē</em> of faith&rsquo; that will save the sick man (James 5 not yet on these pages).', 'and <a href="james-5.html#v5-15">James 5:15</a>, where it is &lsquo;the <em>euchē</em> of faith&rsquo; that will save the one who is sick.'), ('y Santiago 5:15, donde es «la <em>euchē</em> de la fe» la que salvará al enfermo (Santiago 5 todavía no en estas páginas).', 'y <a href="james-5.es.html#v5-15">Santiago 5:15</a>, donde es «la <em>euchē</em> de la fe» la que salvará al que está enfermo.'), ('and James 5:1 (not yet on these pages), and the verb at', 'and <a href="james-5.html#v5-1">James 5:1</a>, and the verb at'), ('y Santiago 5:1 (todavía no en estas páginas), y el verbo en', 'y <a href="james-5.es.html#v5-1">Santiago 5:1</a>, y el verbo en'), ('and James 5:16 (not yet on these pages), and <a href="3-john-1.html#v2">3 John 2</a>.', 'and <a href="james-5.html#v5-16">James 5:16</a>, and <a href="3-john-1.html#v2">3 John 2</a>.'), ('y Santiago 5:16 (todavía no en estas páginas), y <a href="3-john-1.es.html#v2">3 Juan 2</a>.', 'y <a href="james-5.es.html#v5-16">Santiago 5:16</a>, y <a href="3-john-1.es.html#v2">3 Juan 2</a>.'), ('and James 5:4 (not yet on these pages), in the phrase <em>kyrios Sabaōth</em>', 'and <a href="james-5.html#v5-4">James 5:4</a>, in the phrase <em>kyrios Sabaōth</em>'), ('y Santiago 5:4 (todavía no en estas páginas), en la frase <em>kýrios Sabaōth</em>', 'y <a href="james-5.es.html#v5-4">Santiago 5:4</a>, en la frase <em>kýrios Sabaōth</em>'), ('and James 5:16 and 1 Peter 3:12 (these two not yet on these pages).', 'and <a href="james-5.html#v5-16">James 5:16</a> and 1 Peter 3:12 (the last not yet on these pages).'), ('y Santiago 5:16 y 1 Pedro 3:12 (estos dos todavía no en estas páginas).', 'y <a href="james-5.es.html#v5-16">Santiago 5:16</a> y 1 Pedro 3:12 (el último todavía no en estas páginas).'), ('and James 5:5, the rich who &lsquo;lived in luxury&rsquo; on the earth (not yet on these pages).', 'and <a href="james-5.html#v5-5">James 5:5</a>, the rich who lived &lsquo;in self-indulgence&rsquo; on the earth.'), ('y Santiago 5:5, los ricos que vivieron en deleites sobre la tierra (todavía no en estas páginas).', 'y <a href="james-5.es.html#v5-5">Santiago 5:5</a>, los ricos que vivieron «entregados a los placeres» sobre la tierra.'), ('as James 5:17 does too, where 1 Kings 18:1 has the rain return \'in the third year\' (<a href="luke-4.html#v4-25">Luke 4:25-26</a>; James and 1 Kings 17-18 not yet on these pages).', 'as <a href="james-5.html#v5-17">James 5:17</a> does too, where 1 Kings 18:1 has the rain return \'in the third year\' (<a href="luke-4.html#v4-25">Luke 4:25-26</a>; 1 Kings 17-18 not yet on these pages).'), ('como también Santiago 5:17, donde 1 Reyes 18:1 hace volver la lluvia «en el tercer año» (<a href="luke-4.es.html#v4-25">Lucas 4:25-26</a>; Santiago y 1 Reyes 17-18 todavía no en estas páginas).', 'como también <a href="james-5.es.html#v5-17">Santiago 5:17</a>, donde 1 Reyes 18:1 hace volver la lluvia «en el tercer año» (<a href="luke-4.es.html#v4-25">Lucas 4:25-26</a>; 1 Reyes 17-18 todavía no en estas páginas).'), ('and James cites his endurance (James 5:11).', 'and James cites his endurance (<a href="james-5.html#v5-11">James 5:11</a>), the one place the New Testament names him.')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"elijah": [("James", 5, 17)], "job-person": [("James", 5, 11)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("James", 4, 13), ("James", 5, 1), "Come now"),
+    (("Luke", 6, 24), ("James", 5, 1), "woe to the rich"),
+    (("James", 4, 9), ("James", 5, 1), "wretchedness"),
+    (("Matthew", 6, 19), ("James", 5, 2), "moth"),
+    (("James", 3, 8), ("James", 5, 3), "venom / rust"),
+    (("Romans", 2, 5), ("James", 5, 3), "storing up"),
+    (("Luke", 12, 21), ("James", 5, 3), "storing up treasure"),
+    (("Deuteronomy", 24, 15), ("James", 5, 4), "the wage that cries out"),
+    (("Leviticus", 19, 13), ("James", 5, 4), "wages held back"),
+    (("Romans", 9, 29), ("James", 5, 4), "Jehovah of armies"),
+    (("1 Timothy", 5, 6), ("James", 5, 5), "self-indulgence"),
+    (("Acts", 8, 32), ("James", 5, 5), "slaughter"),
+    (("Acts", 7, 52), ("James", 5, 6), "the Righteous One"),
+    (("James", 4, 6), ("James", 5, 6), "oppose"),
+    (("Matthew", 24, 3), ("James", 5, 7), "presence"),
+    (("Deuteronomy", 11, 14), ("James", 5, 7), "the early and the late rain"),
+    (("1 Corinthians", 13, 4), ("James", 5, 7), "patient"),
+    (("1 Thessalonians", 3, 13), ("James", 5, 8), "strengthen your hearts"),
+    (("Romans", 8, 23), ("James", 5, 9), "groan"),
+    (("Mark", 13, 29), ("James", 5, 9), "at the doors"),
+    (("James", 4, 12), ("James", 5, 9), "the judge"),
+    (("Hebrews", 6, 15), ("James", 5, 10), "patience"),
+    (("Job", 1, 21), ("James", 5, 11), "Job"),
+    (("James", 1, 12), ("James", 5, 11), "endure"),
+    (("Luke", 1, 48), ("James", 5, 11), "call happy"),
+    (("Exodus", 34, 6), ("James", 5, 11), "merciful"),
+    (("Luke", 6, 36), ("James", 5, 11), "merciful"),
+    (("Matthew", 5, 34), ("James", 5, 12), "do not swear"),
+    (("Matthew", 5, 37), ("James", 5, 12), "yes, yes; no, no"),
+    (("Acts", 27, 22), ("James", 5, 13), "take courage"),
+    (("1 Corinthians", 14, 15), ("James", 5, 13), "sing"),
+    (("Mark", 6, 13), ("James", 5, 14), "anointed with oil"),
+    (("Hebrews", 12, 3), ("James", 5, 15), "weary"),
+    (("Mark", 1, 5), ("James", 5, 16), "confessing sins"),
+    (("Acts", 14, 15), ("James", 5, 17), "sharing our nature"),
+    (("Luke", 4, 25), ("James", 5, 17), "three years and six months"),
+    (("Matthew", 5, 45), ("James", 5, 17), "rain"),
+    (("James", 1, 16), ("James", 5, 19), "led astray"),
+    (("Matthew", 18, 12), ("James", 5, 19), "goes astray"),
+    (("Galatians", 6, 1), ("James", 5, 19), "restoring the one who strays"),
+    (("Luke", 1, 16), ("James", 5, 20), "turn back"),
+])
+
+CHAPTER_ART["jas5"] = [dict(
+    file="bruegel-the-harvesters.jpg",
+    title="The Harvesters",   title_es="Los segadores",
+    artist="Pieter Bruegel the Elder",
+    year="1565",
+    location="The Metropolitan Museum of Art, New York",
+    location_es="Museo Metropolitano de Arte, Nueva York",
+    alt="A wide summer landscape of golden wheat: on the left, men mow with scythes and a path is cut through the tall grain; under a pear tree in the foreground, harvesters rest, eat and sleep beside sheaves, with a village, a church and the sea beyond.",
+    note="&#9888; Workers at the harvest, mowing and then resting in the noon heat, the people of <a href=\"james-5.html#v5-4\">verse 4</a>, &lsquo;the workers who mowed your fields,&rsquo; "
+         "whose wages, held back, &lsquo;cry out.&rsquo;",
+    note_es="&#9888; Obreros en la cosecha, segando y luego descansando en el calor del mediodía, la gente del <a href=\"james-5.es.html#v5-4\">versículo 4</a>, «los obreros que segaron "
+            "sus campos», cuyo jornal, retenido, «clama».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder-_The_Harvesters_-_Google_Art_Project.jpg",
+)]
+
+CHRON_CHAPTERS["jas5"] = dict(era='apostolic',
+    when="'Come now, you rich': rotted wealth and rust as a witness; the wages of the mowers held back, crying to Jehovah of armies; 'be patient until the presence of the Lord,' the farmer and the early and late rain; the endurance of Job; 'let your yes be yes'; the elders, the oil and the prayer of faith; Elijah's prayer; and turning a sinner back. The letter ends with no farewell.",
+    clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
+
