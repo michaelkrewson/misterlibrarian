@@ -43076,3 +43076,179 @@ CHRON_CHAPTERS["jas2"] = dict(era='apostolic',
     when="Partiality in the gathering: the man with gold rings and the poor man; 'did not God choose the poor?'; the royal law, 'love your neighbor as yourself'; guilty of all for one point; faith without works is dead, the demons believe and shudder; Abraham and Rahab justified by works, and 'not by faith alone.'",
     clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
 
+# ---- James 3 -----------------------------------------------------------
+DICTIONARY.append(('chalinagogeo', 'chalinagōgeō', 'χαλιναγωγέω', 'chalinagōgeō',
+    'TO BRIDLE, to lead with a bridle &mdash; <em>chalinos</em>, &lsquo;bit, bridle,&rsquo; and <em>ag&#333;</em>, &lsquo;to lead.&rsquo; &#9888; It stands in two verses of the New Testament, both in James: the man who thinks he is religious, &lsquo;not bridling his tongue&rsquo; (<a href="james-1.html#v26">James 1:26</a>), and the perfect man, &lsquo;able to bridle the whole body as well&rsquo; (<a href="james-3.html#v3-2">James 3:2</a>). The noun <em>chalinos</em>, &lsquo;bit,&rsquo; follows at once in <a href="james-3.html#v3-3">3:3</a>. KJV at James 3:2 &lsquo;able also to bridle the whole body&rsquo;; NWT 1984 &lsquo;able to bridle also [his] whole body.&rsquo;',
+    ('James', 1, 26)))
+DICTIONARY_ES['chalinagogeo'] = ('chalinag&#333;gé&#333;',
+    'REFRENAR, llevar con freno &mdash; <em>chalinós</em>, «freno», y <em>ág&#333;</em>, «llevar». &#9888; Está en dos versículos del Nuevo Testamento, los dos en Santiago: el que se cree religioso y «no refrena su lengua» (<a href="james-1.es.html#v26">Santiago 1:26</a>), y el varón perfecto, «capaz de refrenar también todo el cuerpo» (<a href="james-3.es.html#v3-2">Santiago 3:2</a>). El sustantivo <em>chalinós</em>, «freno», sigue en seguida en <a href="james-3.es.html#v3-3">3:3</a>. RV60 en Santiago 3:2 «capaz también de refrenar todo el cuerpo»; TNM 1987 «capaz de refrenar también [su] cuerpo entero».')
+
+DICTIONARY.append(('pedalion', 'pēdalion', 'πηδάλιον', 'pēdalion',
+    'STEERING OAR, rudder &mdash; the broad oar at a ship&rsquo;s stern by which it was steered; ships of the period are said to have carried a pair of them (reported, not checked here). &#9888; It stands in two verses of the New Testament: the shipwreck at Malta, &lsquo;loosing the ropes of the steering oars&rsquo; (<a href="acts-27.html#v27-40">Acts 27:40</a>), and the ships of <a href="james-3.html#v3-4">James 3:4</a>, &lsquo;guided by a very small steering oar wherever the impulse of the helmsman wishes&rsquo; (<a href="dictionary.html#horme">horme</a>). KJV at James 3:4 &lsquo;a very small helm&rsquo;; ASV and NWT 1984 &lsquo;a very small rudder.&rsquo;',
+    ('Acts', 27, 40)))
+DICTIONARY_ES['pedalion'] = ('p&#275;dálion',
+    'TIMÓN, remo de gobierno &mdash; el remo ancho de la popa con el que se gobernaba la nave; se dice que las naves de la época llevaban dos (dato referido, no comprobado aquí). &#9888; Está en dos versículos del Nuevo Testamento: el naufragio de Malta, «aflojando al mismo tiempo las amarras de los timones» (<a href="acts-27.es.html#v27-40">Hechos 27:40</a>), y las naves de <a href="james-3.es.html#v3-4">Santiago 3:4</a>, «dirigidas por un timón muy pequeño adonde quiere el impulso del que las gobierna» (<a href="diccionario.html#horme">horme</a>). RV60 en Santiago 3:4 «un muy pequeño timón»; TNM 1987 «un timón muy pequeño».')
+
+DICTIONARY.append(('hyle', 'hylē', 'ὕλη', 'hylē',
+    'FOREST, wood, brushwood &mdash; standing timber, then cut wood and fuel. &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-5">James 3:5</a>, &lsquo;Look how small a fire sets how great a forest ablaze!&rsquo; Greek philosophy later used the same word for &lsquo;matter,&rsquo; the stuff a thing is made of (reported, not checked here). KJV &lsquo;how great a matter a little fire kindleth&rsquo;; ASV &lsquo;how much wood is kindled by how small a fire&rsquo;; NWT 1984 &lsquo;so great a woodland.&rsquo;',
+    ('James', 3, 5)))
+DICTIONARY_ES['hyle'] = ('hýl&#275;',
+    'BOSQUE, leña, maleza &mdash; madera en pie, luego madera cortada y combustible. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-5">Santiago 3:5</a>, «¡Miren qué pequeño fuego enciende qué gran bosque!». La filosofía griega usó después la misma palabra para «materia», aquello de lo que algo está hecho (dato referido, no comprobado aquí). RV60 «¡cuán grande bosque enciende un pequeño fuego!»; TNM 1987 «¡Con cuán pequeño fuego se incendia tan grande bosque!».')
+
+DICTIONARY.append(('spiloo', 'spiloō', 'σπιλόω', 'spiloō',
+    'TO STAIN, to spot &mdash; from <em>spilos</em>, &lsquo;a spot, a stain.&rsquo; &#9888; It stands in two verses of the New Testament: the tongue &lsquo;staining the whole body&rsquo; (<a href="james-3.html#v3-6">James 3:6</a>), and &lsquo;the garment stained by the flesh&rsquo; (<a href="jude-1.html#v23">Jude 23</a>). Its negative, <em>aspilos</em>, is the &lsquo;unspotted&rsquo; of <a href="james-1.html#v27">James 1:27</a>, &lsquo;to keep oneself unspotted from the world.&rsquo; KJV at James 3:6 &lsquo;defileth the whole body&rsquo;; NWT 1984 &lsquo;it spots up all the body.&rsquo;',
+    ('James', 3, 6)))
+DICTIONARY_ES['spiloo'] = ('spiló&#333;',
+    'MANCHAR &mdash; de <em>spílos</em>, «mancha». &#9888; Está en dos versículos del Nuevo Testamento: la lengua que va «manchando todo el cuerpo» (<a href="james-3.es.html#v3-6">Santiago 3:6</a>), y «la ropa contaminada por la carne» (<a href="jude-1.es.html#v23">Judas 23</a>). Su negación, <em>áspilos</em>, es el «sin mancha» de <a href="james-1.es.html#v27">Santiago 1:27</a>, «guardarse sin mancha del mundo». RV60 en Santiago 3:6 «contamina todo el cuerpo»; TNM 1987 «mancha todo el cuerpo».')
+
+DICTIONARY.append(('trochos', 'trochos', 'τροχός', 'trochos',
+    'WHEEL &mdash; from <em>trech&#333;</em>, &lsquo;to run&rsquo;: the thing that runs round. &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-6">James 3:6</a>, where the tongue is &lsquo;setting on fire the wheel of birth&rsquo;; &lsquo;birth&rsquo; is <em>genesis</em>, as in &lsquo;the face of his birth&rsquo; at <a href="james-1.html#v23">James 1:23</a> (<a href="dictionary.html#genesis">genesis</a>). The phrase is read as the whole round of a life from its beginning, and is said to come from Greek writers on the cycle of existence (reported, not checked here). KJV &lsquo;the course of nature&rsquo;; ASV &lsquo;the wheel of nature&rsquo;; NWT 1984 &lsquo;the wheel of natural life.&rsquo;',
+    ('James', 3, 6)))
+DICTIONARY_ES['trochos'] = ('trochós',
+    'RUEDA &mdash; de <em>tréch&#333;</em>, «correr»: lo que corre dando vueltas. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-6">Santiago 3:6</a>, donde la lengua va «inflamando la rueda del nacimiento»; «nacimiento» es <em>génesis</em>, como en «el rostro de su nacimiento» de <a href="james-1.es.html#v23">Santiago 1:23</a> (<a href="diccionario.html#genesis">genesis</a>). La frase se lee como el curso entero de una vida desde su principio, y se dice que viene de escritores griegos que hablaban del ciclo de la existencia (dato referido, no comprobado aquí). RV60 «la rueda de la creación»; TNM 1987 «la rueda de la vida natural».')
+
+DICTIONARY.append(('damazo', 'damazō', 'δαμάζω', 'damazō',
+    'TO TAME, to subdue &mdash; used of breaking animals. &#9888; It stands in three verses of the New Testament: the man of the tombs, whom &lsquo;no one had the strength to subdue&rsquo; (<a href="mark-5.html#v5-4">Mark 5:4</a>); every kind of creature that &lsquo;is tamed and has been tamed by humankind&rsquo; (<a href="james-3.html#v3-7">James 3:7</a>); and the tongue that &lsquo;no one among humans can tame&rsquo; (<a href="james-3.html#v3-8">3:8</a>). KJV at James 3:8 &lsquo;the tongue can no man tame&rsquo;; NWT 1984 &lsquo;not one of mankind can get it tamed.&rsquo;',
+    ('Mark', 5, 4)))
+DICTIONARY_ES['damazo'] = ('damáz&#333;',
+    'DOMAR, someter &mdash; dicho de amansar animales. &#9888; Está en tres versículos del Nuevo Testamento: el hombre de los sepulcros, a quien «nadie tenía fuerza para someterlo» (<a href="mark-5.es.html#v5-4">Marcos 5:4</a>); toda clase de criaturas que «se doma y ha sido domada por la naturaleza humana» (<a href="james-3.es.html#v3-7">Santiago 3:7</a>); y la lengua que «nadie de entre los hombres la puede domar» (<a href="james-3.es.html#v3-8">3:8</a>). RV60 en Santiago 3:8 «ningún hombre puede domar la lengua»; TNM 1987 «nadie de la humanidad puede domarla».')
+
+DICTIONARY.append(('akatastatos', 'akatastatos', 'ἀκατάστατος', 'akatastatos',
+    'UNSTABLE, unsettled &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>kathist&#275;mi</em>, &lsquo;to set down, settle&rsquo;: never settled. &#9888; It stands in two verses of the New Testament, both in James: the double-souled man, &lsquo;unstable in all his ways&rsquo; (<a href="james-1.html#v8">James 1:8</a>), and the tongue, &lsquo;an unstable evil&rsquo; (<a href="james-3.html#v3-8">James 3:8</a>), where the Robinson&ndash;Pierpont text reads <em>akataschetos</em>, &lsquo;that cannot be held back.&rsquo; Its noun is <em>akatastasia</em>, &lsquo;disorder,&rsquo; at <a href="james-3.html#v3-16">3:16</a> (<a href="dictionary.html#akatastasia">akatastasia</a>). ASV at James 3:8 &lsquo;a restless evil&rsquo;; KJV &lsquo;an unruly evil&rsquo;; NWT 1984 &lsquo;An unruly injurious thing.&rsquo;',
+    ('James', 1, 8)))
+DICTIONARY_ES['akatastatos'] = ('akatástatos',
+    'INESTABLE, sin asiento &mdash; <em>a-</em>, «no», y <em>kathíst&#275;mi</em>, «asentar»: que nunca se asienta. &#9888; Está en dos versículos del Nuevo Testamento, los dos en Santiago: el hombre de doble alma, «inestable en todos sus caminos» (<a href="james-1.es.html#v8">Santiago 1:8</a>), y la lengua, «un mal inestable» (<a href="james-3.es.html#v3-8">Santiago 3:8</a>), donde el texto de Robinson&ndash;Pierpont lee <em>akatáschetos</em>, «que no se puede contener». Su sustantivo es <em>akatastasía</em>, «desorden», en <a href="james-3.es.html#v3-16">3:16</a> (<a href="diccionario.html#akatastasia">akatastasia</a>). RV60 en Santiago 3:8 «un mal que no puede ser refrenado»; TNM 1987 «Cosa ingobernable y perjudicial».')
+
+DICTIONARY.append(('homoiosis', 'homoiōsis', 'ὁμοίωσις', 'homoiōsis',
+    'LIKENESS &mdash; from <em>homoio&#333;</em>, &lsquo;to make like.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-9">James 3:9</a>, human beings &lsquo;who have been made according to the likeness of God,&rsquo; in the words of the Greek of <a href="genesis-1.html#v26">Genesis 1:26</a>, &lsquo;according to our likeness.&rsquo; James uses it to make cursing a person into cursing the image of the one being blessed. KJV &lsquo;after the similitude of God&rsquo;; ASV &lsquo;after the likeness of God&rsquo;; NWT 1984 &lsquo;in the likeness of God.&rsquo;',
+    ('James', 3, 9)))
+DICTIONARY_ES['homoiosis'] = ('homoí&#333;sis',
+    'SEMEJANZA &mdash; de <em>homoió&#333;</em>, «hacer semejante». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-9">Santiago 3:9</a>, los hombres «que han sido hechos conforme a la semejanza de Dios», con las palabras del griego de <a href="genesis-1.es.html#v26">Génesis 1:26</a>, «conforme a nuestra semejanza». Santiago la usa para que maldecir a una persona sea maldecir la imagen de aquel a quien se bendice. RV60 «a la semejanza de Dios»; TNM 1987 «a la semejanza de Dios».')
+
+DICTIONARY.append(('ope', 'opē', 'ὀπή', 'opē',
+    'OPENING, hole &mdash; a gap in rock or earth. &#9888; It stands in two verses of the New Testament: those who wandered &lsquo;in deserts and mountains and caves and holes in the ground&rsquo; (<a href="hebrews-11.html#v11-38">Hebrews 11:38</a>), and the spring of <a href="james-3.html#v3-11">James 3:11</a>, &lsquo;Does a spring pour out the sweet and the bitter from the same opening?&rsquo; (<a href="dictionary.html#pege">pege</a>). KJV at James 3:11 &lsquo;at the same place&rsquo;; ASV &lsquo;from the same opening&rsquo;; NWT 1984 &lsquo;out of the same opening.&rsquo;',
+    ('Hebrews', 11, 38)))
+DICTIONARY_ES['ope'] = ('op&#275;',
+    'ABERTURA, agujero &mdash; una hendidura en la roca o en la tierra. &#9888; Está en dos versículos del Nuevo Testamento: los que andaban errando «por desiertos y montes y cuevas y agujeros de la tierra» (<a href="hebrews-11.es.html#v11-38">Hebreos 11:38</a>), y la fuente de <a href="james-3.es.html#v3-11">Santiago 3:11</a>, «¿Acaso una fuente echa por la misma abertura lo dulce y lo amargo?» (<a href="diccionario.html#pege">pege</a>). RV60 en Santiago 3:11 «por una misma abertura»; TNM 1987 «por la misma abertura».')
+
+DICTIONARY.append(('halykos', 'halykos', 'ἁλυκός', 'halykos',
+    'SALT, salty &mdash; from <em>hals</em>, &lsquo;salt.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-12">James 3:12</a>, &lsquo;Neither can salt water produce sweet.&rsquo; The Robinson&ndash;Pierpont text has a longer sentence there, &lsquo;So no spring produces salt water and sweet,&rsquo; the reading behind the KJV&rsquo;s &lsquo;so can no fountain both yield salt water and fresh.&rsquo; ASV &lsquo;Neither can salt water yield sweet&rsquo;; NWT 1984 &lsquo;Neither can salt water produce sweet water.&rsquo;',
+    ('James', 3, 12)))
+DICTIONARY_ES['halykos'] = ('halykós',
+    'SALADO &mdash; de <em>hals</em>, «sal». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-12">Santiago 3:12</a>, «Tampoco el agua salada puede dar agua dulce». El texto de Robinson&ndash;Pierpont tiene allí una frase más larga, «Así ninguna fuente da agua salada y dulce», la lectura detrás de la RV60, «Así también ninguna fuente puede dar agua salada y dulce»; TNM 1987 «Tampoco puede el agua salada producir agua dulce».')
+
+DICTIONARY.append(('epistemon', 'epistēmōn', 'ἐπιστήμων', 'epistēmōn',
+    'UNDERSTANDING, knowledgeable, expert &mdash; from <em>epistamai</em>, &lsquo;to know how, to understand.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-13">James 3:13</a>, &lsquo;Who is wise and understanding among you?&rsquo; The pair &lsquo;wise and understanding&rsquo; is the one the Greek Old Testament uses at <a href="deuteronomy-1.html#v13">Deuteronomy 1:13</a>, where Moses asks for &lsquo;men who are wise and discerning and known&rsquo; to lead the tribes. KJV &lsquo;a wise man and endued with knowledge&rsquo;; ASV and NWT 1984 &lsquo;wise and understanding.&rsquo;',
+    ('James', 3, 13)))
+DICTIONARY_ES['epistemon'] = ('epist&#275;m&#333;n',
+    'ENTENDIDO, conocedor, experto &mdash; de <em>epístamai</em>, «saber hacer, entender». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-13">Santiago 3:13</a>, «¿Quién es sabio y entendido entre ustedes?». La pareja «sabio y entendido» es la que usa el Antiguo Testamento griego en <a href="deuteronomy-1.es.html#v13">Deuteronomio 1:13</a>, donde Moisés pide «hombres sabios y entendidos y conocidos» para dirigir las tribus. RV 1909 «sabio y avisado»; RV60 «sabio y entendido»; TNM 1987 «sabio y entendido».')
+
+DICTIONARY.append(('prautes', 'prautēs', 'πραΰτης', 'prautēs',
+    'MEEKNESS, gentleness &mdash; the noun of <em>praus</em>, &lsquo;meek&rsquo; (<a href="dictionary.html#praus">praus</a>): strength that does not push. &#9888; It stands in ten verses of the New Testament, among them the fruit of the Spirit at <a href="galatians-5.html#v23">Galatians 5:23</a>, printed &lsquo;gentleness&rsquo; there; &lsquo;the meekness and gentleness of Christ&rsquo; at <a href="2-corinthians-10.html#v1">2 Corinthians 10:1</a>; &lsquo;receive with meekness the implanted word&rsquo; at <a href="james-1.html#v21">James 1:21</a>; and &lsquo;the meekness of wisdom&rsquo; at <a href="james-3.html#v3-13">James 3:13</a>. KJV at James 3:13 &lsquo;with meekness of wisdom&rsquo;; NWT 1984 &lsquo;with a mildness that belongs to wisdom.&rsquo;',
+    ('James', 3, 13)))
+DICTIONARY_ES['prautes'] = ('praýt&#275;s',
+    'MANSEDUMBRE, apacibilidad &mdash; el sustantivo de <em>praÿs</em>, «manso» (<a href="diccionario.html#praus">praus</a>): una fuerza que no empuja. &#9888; Está en diez versículos del Nuevo Testamento, entre ellos el fruto del Espíritu en <a href="galatians-5.es.html#v23">Gálatas 5:23</a>, «mansedumbre»; «la apacibilidad y la bondad del Cristo» en <a href="2-corinthians-10.es.html#v1">2 Corintios 10:1</a>; «reciban con mansedumbre la palabra implantada» en <a href="james-1.es.html#v21">Santiago 1:21</a>; y «la mansedumbre de la sabiduría» en <a href="james-3.es.html#v3-13">Santiago 3:13</a>. RV60 en Santiago 3:13 «en sabia mansedumbre»; TNM 1987 «con una apacibilidad que pertenece a la sabiduría».')
+
+DICTIONARY.append(('daimoniodes', 'daimoniōdēs', 'δαιμονιώδης', 'daimoniōdēs',
+    'DEMONIC, demon-like &mdash; <em>daimonion</em>, &lsquo;demon&rsquo; (<a href="dictionary.html#daimonion">daimonion</a>), with the ending <em>-&#333;d&#275;s</em>, &lsquo;having the nature of.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-15">James 3:15</a>, the wisdom that is &lsquo;earthly, natural, demonic,&rsquo; a chapter after &lsquo;Even the demons believe &mdash; and shudder&rsquo; (<a href="james-2.html#v2-19">James 2:19</a>). KJV and ASV &lsquo;devilish&rsquo;; NWT 1984 &lsquo;demonic.&rsquo;',
+    ('James', 3, 15)))
+DICTIONARY_ES['daimoniodes'] = ('daimoni&#333;d&#275;s',
+    'DEMONÍACO, propio de demonios &mdash; <em>daimónion</em>, «demonio» (<a href="diccionario.html#daimonion">daimonion</a>), con la terminación <em>-&#333;d&#275;s</em>, «de la naturaleza de». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-15">Santiago 3:15</a>, la sabiduría «terrenal, natural, demoníaca», un capítulo después de «También los demonios creen, y se estremecen» (<a href="james-2.es.html#v2-19">Santiago 2:19</a>). RV60 «diabólica»; TNM 1987 «demoníaca».')
+
+DICTIONARY.append(('eupeithes', 'eupeithēs', 'εὐπειθής', 'eupeithēs',
+    'OPEN TO PERSUASION, compliant &mdash; <em>eu</em>, &lsquo;well,&rsquo; and <em>peith&#333;</em>, &lsquo;to persuade&rsquo;: easily persuaded. &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-17">James 3:17</a>, in the list of what the wisdom from above is. The same verb, in the form that means &lsquo;to obey,&rsquo; stands in &lsquo;obey unrighteousness&rsquo; at <a href="romans-2.html#v2-8">Romans 2:8</a>, and the versions split between the two senses here. KJV &lsquo;easy to be intreated&rsquo;; ASV &lsquo;easy to be entreated&rsquo;; NWT 1984 &lsquo;ready to obey.&rsquo;',
+    ('James', 3, 17)))
+DICTIONARY_ES['eupeithes'] = ('eupeith&#275;s',
+    'FÁCIL DE PERSUADIR, dócil &mdash; <em>eu</em>, «bien», y <em>peíth&#333;</em>, «persuadir»: que se deja persuadir. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-17">Santiago 3:17</a>, en la lista de lo que es la sabiduría de lo alto. El mismo verbo, en la forma que significa «obedecer», está en «obedecen a la injusticia» de <a href="romans-2.es.html#v2-8">Romanos 2:8</a>, y las versiones se reparten aquí entre los dos sentidos. RV60 «benigna»; TNM 1987 «lista para obedecer».')
+
+DICTIONARY.append(('adiakritos', 'adiakritos', 'ἀδιάκριτος', 'adiakritos',
+    'WITHOUT MAKING DISTINCTIONS, impartial, or undivided &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>diakrin&#333;</em> (<a href="dictionary.html#diakrino">diakrino</a>). &#9888; It stands in one verse of the New Testament, <a href="james-3.html#v3-17">James 3:17</a>, the wisdom from above &lsquo;without making distinctions.&rsquo; James has used the verb both ways: &lsquo;have you not made distinctions among yourselves&rsquo; (<a href="james-2.html#v2-4">James 2:4</a>) and &lsquo;doubting nothing&rsquo; (<a href="james-1.html#v6">James 1:6</a>); so the adjective is read either as impartial or as undivided, and the versions split. KJV &lsquo;without partiality&rsquo;; ASV &lsquo;without variance&rsquo;; NWT 1984 &lsquo;not making partial distinctions.&rsquo;',
+    ('James', 3, 17)))
+DICTIONARY_ES['adiakritos'] = ('adiákritos',
+    'SIN HACER DISTINCIONES, imparcial, o sin división &mdash; <em>a-</em>, «no», y <em>diakrín&#333;</em> (<a href="diccionario.html#diakrino">diakrino</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="james-3.es.html#v3-17">Santiago 3:17</a>, la sabiduría de lo alto «sin hacer distinciones». Santiago ha usado el verbo de las dos maneras: «¿no han hecho distinciones entre ustedes mismos?» (<a href="james-2.es.html#v2-4">Santiago 2:4</a>) y «no dudando nada» (<a href="james-1.es.html#v6">Santiago 1:6</a>); por eso el adjetivo se lee como imparcial o como sin división, y las versiones se reparten. RV 1909 «no juzgadora»; RV60 «sin incertidumbre»; TNM 1987 «sin hacer distinciones por parcialidad».')
+
+DICTIONARY_ES['genesis'] = ('génesis',
+    'ORIGEN, nacimiento, llegar a ser &mdash; de <em>gínomai</em>, «llegar a ser»; el sustantivo que da nombre al primer libro de la Biblia. &#9888; Mateo abre su Evangelio con él dos veces, en <a href="matthew-1.es.html#v1">Mateo 1:1</a> y en 1:18, la primera para la genealogía y la segunda para el nacimiento. El Antiguo Testamento griego usa las mismas palabras en Génesis 2:4 y 5:1, «el libro de la génesis». En Santiago está dos veces: «el rostro de su nacimiento» (<a href="james-1.es.html#v23">Santiago 1:23</a>) y «la rueda del nacimiento» (<a href="james-3.es.html#v3-6">Santiago 3:6</a>).')
+
+DICTIONARY_ES['anupokritos'] = ('anypókritos',
+    'NO FINGIDO, sincero &mdash; literalmente «no actuado»: <em>a-</em>, «no», y <em>hypokrit&#275;s</em>, «actor, comediante» (de donde viene «hipócrita»). &#9888; Llamar <em>anypókritos</em> a la fe o al amor es decir que no es una función, no es una máscara para un público; la imagen viene del teatro griego, donde el <em>hypokrit&#275;s</em> hablaba detrás de una máscara. Describe la «fe no fingida» de Timoteo en <a href="2-timothy-1.es.html#v5">2 Timoteo 1:5</a>, «el amor sin hipocresía» en <a href="romans-12.es.html#v12-9">Romanos 12:9</a> y la sabiduría de lo alto, «sin hipocresía», en <a href="james-3.es.html#v3-17">Santiago 3:17</a>. La palabra recuerda la acusación de Jesús contra los fariseos como <em>hypokritaí</em>, actores que representaban una justicia que no tenían.')
+
+def _jas3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jas3_fix([('and James 3:4, the helmsman&rsquo;s &lsquo;impulse&rsquo; that turns a ship (not yet on these pages).', 'and <a href="james-3.html#v3-4">James 3:4</a>, the helmsman&rsquo;s &lsquo;impulse&rsquo; that turns a ship (<a href="dictionary.html#pedalion">pedalion</a>).'), ('y Santiago 3:4, el «impulso» del timonel que gira una nave (todavía no en estas páginas).', 'y <a href="james-3.es.html#v3-4">Santiago 3:4</a>, el «impulso» del timonel que gira una nave (<a href="diccionario.html#pedalion">pedalion</a>).'), ('and James 3:2 (&lsquo;we all trip in many ways&rsquo;), not yet on these pages, and', 'and <a href="james-3.html#v3-2">James 3:2</a> (&lsquo;we all trip in many ways&rsquo;), and'), ('y Santiago 3:2 («todos damos muchos traspiés»), todavía no en estas páginas, y', 'y <a href="james-3.es.html#v3-2">Santiago 3:2</a> («todos damos muchos traspiés»), y'), ('and James 3:14 and 3:16 (the last two not yet on these pages).', 'and <a href="james-3.html#v3-14">James 3:14</a> and <a href="james-3.html#v3-16">3:16</a>.'), ('y Santiago 3:14 y 3:16 (los dos últimos todavía no en estas páginas).', 'y <a href="james-3.es.html#v3-14">Santiago 3:14</a> y <a href="james-3.es.html#v3-16">3:16</a>.'), ('at James 3:14 (not yet on these pages).', 'at <a href="james-3.html#v3-14">James 3:14</a>.'), ('y Santiago 3:14 (todavía no en estas páginas).', 'y «no se gloríen ni mientan contra la verdad» en <a href="james-3.es.html#v3-14">Santiago 3:14</a>.'), ('and the wisdom from above at James 3:17.', 'and the wisdom from above at <a href="james-3.html#v3-17">James 3:17</a>.'), ("It describes Timothy's 'sincere faith' at 2 Timothy 1:5, love 'without hypocrisy' at Romans 12:9,", 'It describes Timothy\'s \'unfeigned faith\' at <a href="2-timothy-1.html#v5">2 Timothy 1:5</a>, love \'without hypocrisy\' at <a href="romans-12.html#v12-9">Romans 12:9</a>,'), ('all lose the audible tie to Genesis that the Greek makes on purpose.', 'all lose the audible tie to Genesis that the Greek makes on purpose. In James it stands twice: &lsquo;the face of his birth&rsquo; (<a href="james-1.html#v23">James 1:23</a>) and &lsquo;the wheel of birth&rsquo; (<a href="james-3.html#v3-6">James 3:6</a>).')])
+
+XREFS.extend([
+    (("Matthew", 23, 8), ("James", 3, 1), "one teacher"),
+    (("Hebrews", 5, 12), ("James", 3, 1), "teachers"),
+    (("James", 2, 10), ("James", 3, 2), "trip"),
+    (("James", 1, 26), ("James", 3, 2), "bridle"),
+    (("Matthew", 12, 37), ("James", 3, 2), "by your words"),
+    (("Acts", 27, 40), ("James", 3, 4), "steering oar"),
+    (("Acts", 14, 5), ("James", 3, 4), "impulse"),
+    (("James", 1, 23), ("James", 3, 6), "birth"),
+    (("James", 1, 27), ("James", 3, 6), "unspotted / staining"),
+    (("Jude", 1, 23), ("James", 3, 6), "stained"),
+    (("Mark", 9, 43), ("James", 3, 6), "Gehenna"),
+    (("Genesis", 9, 2), ("James", 3, 7), "beast, bird, creeping thing, fish"),
+    (("Mark", 5, 4), ("James", 3, 8), "tame"),
+    (("James", 1, 8), ("James", 3, 8), "unstable"),
+    (("Romans", 3, 13), ("James", 3, 8), "venom"),
+    (("Genesis", 1, 26), ("James", 3, 9), "likeness"),
+    (("Luke", 6, 28), ("James", 3, 10), "bless those who curse"),
+    (("Romans", 12, 14), ("James", 3, 10), "bless and do not curse"),
+    (("Hebrews", 11, 38), ("James", 3, 11), "opening"),
+    (("Luke", 6, 44), ("James", 3, 12), "figs"),
+    (("Deuteronomy", 1, 13), ("James", 3, 13), "wise and understanding"),
+    (("James", 1, 21), ("James", 3, 13), "meekness"),
+    (("James", 2, 18), ("James", 3, 13), "show"),
+    (("Galatians", 5, 20), ("James", 3, 14), "self-seeking"),
+    (("James", 2, 13), ("James", 3, 14), "boast"),
+    (("James", 1, 17), ("James", 3, 15), "from above"),
+    (("1 Corinthians", 2, 14), ("James", 3, 15), "natural"),
+    (("1 Corinthians", 14, 33), ("James", 3, 16), "disorder"),
+    (("John", 3, 20), ("James", 3, 16), "worthless"),
+    (("Hebrews", 12, 11), ("James", 3, 17), "peaceful fruit"),
+    (("Philippians", 4, 5), ("James", 3, 17), "reasonable"),
+    (("James", 2, 4), ("James", 3, 17), "made distinctions"),
+    (("Romans", 12, 9), ("James", 3, 17), "without hypocrisy"),
+    (("Matthew", 5, 9), ("James", 3, 18), "peacemakers"),
+])
+
+CHAPTER_ART["jas3"] = [dict(
+    file="bakhuizen-warships-in-a-storm.jpg",
+    title="Warships in a Heavy Storm",   title_es="Barcos de guerra en una fuerte tormenta",
+    artist="Ludolf Bakhuizen",
+    year="c. 1695",
+    location="Rijksmuseum, Amsterdam",
+    location_es="Rijksmuseum, Ámsterdam",
+    alt="Under a dark storm sky, a large warship flying a striped flag heels over on a towering green wave, its sails torn loose, while smaller ships pitch in the surf near a rocky headland.",
+    note="&#9888; A Dutch marine painter&rsquo;s storm: great ships &lsquo;driven by hard winds,&rsquo; the picture of <a href=\"james-3.html#v3-4\">verse 4</a>, where "
+         "a ship that size is still turned by &lsquo;a very small steering oar wherever the impulse of the helmsman wishes.&rsquo;",
+    note_es="&#9888; La tormenta de un pintor de marinas holandés: grandes naves «llevadas por vientos recios», la imagen del <a href=\"james-3.es.html#v3-4\">versículo "
+            "4</a>, donde una nave de ese tamaño se dirige aun así «por un timón muy pequeño adonde quiere el impulso del que las gobierna».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Oorlogsschepen_tijdens_een_storm_Rijksmuseum_SK-A-4856.jpeg",
+)]
+
+CHRON_CHAPTERS["jas3"] = dict(era='apostolic',
+    when="The tongue: not many teachers, for 'we all trip in many ways'; a bit in a horse's mouth, a ship's steering oar, a small fire and a great forest; the tongue set on fire by Gehenna, tamed by no one; blessing and cursing from one mouth; and two wisdoms, the earthly kind with its jealousy and self-seeking, and the wisdom from above, 'first pure, then peaceful.'",
+    clock="Undated in the letter, and one of the most disputed dates in the New Testament (see chapter 1).")
+
