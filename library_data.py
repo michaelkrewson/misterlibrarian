@@ -40880,3 +40880,166 @@ CHRON_CHAPTERS["2ti4"] = dict(era='apostolic',
     when="Paul's last charge to Timothy: 'Preach the word'; 'I am already being poured out as a drink offering'; 'I have fought the good fight, I have finished the course, I have kept the faith'; Demas gone, Luke alone with him, the cloak and the parchments; the first defense and the lion's mouth; and the last greetings.",
     clock="Undated by the text; on the traditional reading, Paul's last imprisonment at Rome, mid-60s AD; many scholars date the Pastoral letters later.")
 
+# ---- Titus 2 -----------------------------------------------------------
+DICTIONARY.append(('sophron', 'sōphrōn', 'σώφρων', 'sōphrōn',
+    'SENSIBLE, of sound sense, self-commanded &mdash; <em>s&#333;s</em>, &lsquo;safe, sound,&rsquo; and <em>phr&#275;n</em>, &lsquo;mind.&rsquo; &#9888; It stands in four verses of the New Testament, all in the Pastoral letters: the overseer at <a href="1-timothy-3.html#v3-2">1 Timothy 3:2</a> (&lsquo;of sound mind&rsquo;) and <a href="titus-1.html#v8">Titus 1:8</a> (&lsquo;sensible&rsquo;), the older men at <a href="titus-2.html#v2-2">Titus 2:2</a> and the young women at <a href="titus-2.html#v2-5">Titus 2:5</a>. In Titus 2 its whole family appears, five words in one chapter (see <a href="dictionary.html#sophronizo">s&#333;phroniz&#333;</a>, <a href="dictionary.html#sophroneo">s&#333;phrone&#333;</a>, <a href="dictionary.html#sophronos">s&#333;phron&#333;s</a>; the noun is <a href="dictionary.html#sophrosyne">s&#333;phrosyn&#275;</a>). KJV at Titus 2:2 &lsquo;temperate&rsquo;; NWT 1984 &lsquo;sound in mind.&rsquo;',
+    ('1 Timothy', 3, 2)))
+DICTIONARY_ES['sophron'] = ('sṓphrōn',
+    'SENSATO, de buen juicio, dueño de sí &mdash; <em>s&#333;s</em>, «a salvo, sano», y <em>phr&#275;n</em>, «mente». &#9888; Está en cuatro versículos del Nuevo Testamento, todos en las cartas Pastorales: el supervisor en <a href="1-timothy-3.es.html#v3-2">1 Timoteo 3:2</a> («de sano juicio») y <a href="titus-1.es.html#v8">Tito 1:8</a> («sensato»), los ancianos en <a href="titus-2.es.html#v2-2">Tito 2:2</a> y las jóvenes en <a href="titus-2.es.html#v2-5">Tito 2:5</a>. En Tito 2 aparece toda su familia, cinco palabras en un capítulo (véanse <a href="diccionario.html#sophronizo">s&#333;phroniz&#333;</a>, <a href="diccionario.html#sophroneo">s&#333;phrone&#333;</a>, <a href="diccionario.html#sophronos">s&#333;phron&#333;s</a>; el sustantivo es <a href="diccionario.html#sophrosyne">s&#333;phrosyn&#275;</a>). RV60 en Tito 2:2 «prudentes»; TNM 1987 «de juicio sano».')
+
+DICTIONARY.append(('sophronizo', 'sōphronizō', 'σωφρονίζω', 'sōphronizō',
+    'TO TRAIN IN GOOD SENSE, to bring someone to their senses &mdash; a causative of <em>s&#333;phr&#333;n</em>. &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-4">Titus 2:4</a>, where the older women are to &lsquo;train the young women in good sense.&rsquo; NWT 1984 &lsquo;recall the young women to their senses&rsquo;; ASV &lsquo;train the young women.&rsquo;',
+    ('Titus', 2, 4)))
+DICTIONARY_ES['sophronizo'] = ('sōphronízō',
+    'ENSEÑAR LA SENSATEZ, hacer entrar en razón &mdash; un causativo de <em>s&#333;phr&#333;n</em>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-4">Tito 2:4</a>, donde las ancianas han de «enseñar la sensatez a las jóvenes». TNM 1987 «para que hagan recobrar el juicio a las mujeres jóvenes»; RV 1909 «Que enseñen á las mujeres jóvenes á ser predentes».')
+
+DICTIONARY.append(('sophroneo', 'sōphroneō', 'σωφρονέω', 'sōphroneō',
+    'TO BE SENSIBLE, to be in one&rsquo;s right mind &mdash; the verb of <em>s&#333;phr&#333;n</em>. &#9888; It stands in six verses of the New Testament: the healed man &lsquo;in his right mind&rsquo; at <a href="mark-5.html#v5-15">Mark 5:15</a> and <a href="luke-8.html#v8-35">Luke 8:35</a>; &lsquo;think soundly&rsquo; at <a href="romans-12.html#v12-3">Romans 12:3</a>; &lsquo;if we are sober-minded&rsquo; at <a href="2-corinthians-5.html#v13">2 Corinthians 5:13</a>; the younger men urged &lsquo;to be sensible&rsquo; at <a href="titus-2.html#v2-6">Titus 2:6</a>; and 1 Peter 4:7 (not yet on these pages). KJV at Titus 2:6 &lsquo;to be sober minded&rsquo;; NIV &lsquo;to be self-controlled.&rsquo;',
+    ('Mark', 5, 15)))
+DICTIONARY_ES['sophroneo'] = ('sōphronéō',
+    'SER SENSATO, estar en su sano juicio &mdash; el verbo de <em>s&#333;phr&#333;n</em>. &#9888; Está en seis versículos del Nuevo Testamento: el hombre sanado «en su sano juicio» en <a href="mark-5.es.html#v5-15">Marcos 5:15</a> y <a href="luke-8.es.html#v8-35">Lucas 8:35</a>; «piense con sensatez» en <a href="romans-12.es.html#v12-3">Romanos 12:3</a>; «si estamos en nuestro juicio» en <a href="2-corinthians-5.es.html#v13">2 Corintios 5:13</a>; los jóvenes exhortados «a ser sensatos» en <a href="titus-2.es.html#v2-6">Tito 2:6</a>; y 1 Pedro 4:7 (todavía no en estas páginas). RV60 en Tito 2:6 «a que sean prudentes»; NVI «a ser sensatos».')
+
+DICTIONARY.append(('sophronos', 'sōphronōs', 'σωφρόνως', 'sōphronōs',
+    'SENSIBLY &mdash; the adverb of <em>s&#333;phr&#333;n</em>. &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-12">Titus 2:12</a>, where the grace of God trains us to &lsquo;live sensibly and justly and godly in the present age.&rsquo; KJV &lsquo;soberly&rsquo;; NWT 1984 &lsquo;with soundness of mind.&rsquo;',
+    ('Titus', 2, 12)))
+DICTIONARY_ES['sophronos'] = ('sōphrónōs',
+    'SENSATAMENTE &mdash; el adverbio de <em>s&#333;phr&#333;n</em>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-12">Tito 2:12</a>, donde la gracia de Dios nos educa para que «vivamos sensata, justa y piadosamente en el siglo presente». RV60 «sobria»; TNM 1987 «con buen juicio».')
+
+DICTIONARY.append(('philandros', 'philandros', 'φίλανδρος', 'philandros',
+    'LOVING ONE&rsquo;S HUSBAND &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>an&#275;r</em>, &lsquo;man, husband.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-4">Titus 2:4</a>, &lsquo;to love their husbands,&rsquo; one of the <em>phil-</em> words set against the &lsquo;lovers of self&rsquo; of <a href="2-timothy-3.html#v3-2">2 Timothy 3:2</a> (see <a href="dictionary.html#philoteknos">philoteknos</a>). KJV and ASV &lsquo;to love their husbands.&rsquo;',
+    ('Titus', 2, 4)))
+DICTIONARY_ES['philandros'] = ('fílandros',
+    'QUE AMA A SU MARIDO &mdash; <em>philos</em>, «que ama», y <em>an&#275;r</em>, «hombre, marido». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-4">Tito 2:4</a>, «a amar a sus maridos», una de las palabras en <em>phil-</em> puestas frente a los «amantes de sí mismos» de <a href="2-timothy-3.es.html#v3-2">2 Timoteo 3:2</a> (véase <a href="diccionario.html#philoteknos">philoteknos</a>). RV60 «a amar a sus maridos».')
+
+DICTIONARY.append(('philoteknos', 'philoteknos', 'φιλότεκνος', 'philoteknos',
+    'LOVING ONE&rsquo;S CHILDREN &mdash; <em>philos</em>, &lsquo;loving,&rsquo; and <em>teknon</em>, &lsquo;child.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-4">Titus 2:4</a>, &lsquo;to love their children,&rsquo; beside <a href="dictionary.html#philandros">philandros</a>. KJV and ASV &lsquo;to love their children.&rsquo;',
+    ('Titus', 2, 4)))
+DICTIONARY_ES['philoteknos'] = ('filóteknos',
+    'QUE AMA A SUS HIJOS &mdash; <em>philos</em>, «que ama», y <em>teknon</em>, «hijo». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-4">Tito 2:4</a>, «a amar a sus hijos», junto a <a href="diccionario.html#philandros">philandros</a>. RV60 «a amar a sus maridos y a sus hijos».')
+
+DICTIONARY.append(('oikourgos', 'oikourgos', 'οἰκουργός', 'oikourgos',
+    'WORKING AT HOME, busy with the household &mdash; <em>oikos</em>, &lsquo;house,&rsquo; and <em>ergon</em>, &lsquo;work.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-5">Titus 2:5</a>, in the text of Westcott and Hort, Tregelles and the Nestle-Aland; the Byzantine text has <em>oikouros</em>, &lsquo;keeping the house, staying at home.&rsquo; The KJV, from the second, reads &lsquo;keepers at home&rsquo;; the ASV and NWT 1984, from the first, &lsquo;workers at home.&rsquo;',
+    ('Titus', 2, 5)))
+DICTIONARY_ES['oikourgos'] = ('oikourgós',
+    'QUE TRABAJA EN CASA, ocupada en la casa &mdash; <em>oikos</em>, «casa», y <em>ergon</em>, «obra». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-5">Tito 2:5</a>, en el texto de Westcott y Hort, Tregelles y el Nestle-Aland; el texto bizantino trae <em>oikouros</em>, «que guarda la casa, que se queda en casa». La RV 1909, del segundo, dice «que tengan cuidado de la casa»; la TNM 1987, del primero, «trabajadoras en casa».')
+
+DICTIONARY.append(('hieroprepes', 'hieroprepēs', 'ἱεροπρεπής', 'hieroprepēs',
+    'REVERENT, fitting for what is sacred &mdash; <em>hieros</em>, &lsquo;sacred,&rsquo; and <em>prep&#333;</em>, &lsquo;to be fitting.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-3">Titus 2:3</a>, of the older women, &lsquo;reverent in demeanor.&rsquo; KJV &lsquo;in behaviour as becometh holiness&rsquo;; ASV &lsquo;reverent in demeanor.&rsquo;',
+    ('Titus', 2, 3)))
+DICTIONARY_ES['hieroprepes'] = ('hieroprepḗs',
+    'REVERENTE, propio de lo sagrado &mdash; <em>hieros</em>, «sagrado», y <em>prep&#333;</em>, «convenir». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-3">Tito 2:3</a>, de las ancianas, «reverentes en su porte». RV60 «reverentes en su porte»; RV 1909 «se distingan en un porte santo».')
+
+DICTIONARY.append(('kalodidaskalos', 'kalodidaskalos', 'καλοδιδάσκαλος', 'kalodidaskalos',
+    'A TEACHER OF WHAT IS GOOD &mdash; <em>kalos</em>, &lsquo;good, fine,&rsquo; and <em>didaskalos</em>, &lsquo;teacher.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-3">Titus 2:3</a>, of the older women, who are then to train the younger (2:4). KJV &lsquo;teachers of good things&rsquo;; ASV &lsquo;teachers of that which is good.&rsquo;',
+    ('Titus', 2, 3)))
+DICTIONARY_ES['kalodidaskalos'] = ('kalodidáskalos',
+    'MAESTRA DEL BIEN &mdash; <em>kalos</em>, «bueno, bello», y <em>didaskalos</em>, «maestro». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-3">Tito 2:3</a>, de las ancianas, que luego han de enseñar a las jóvenes (2:4). RV60 «maestras del bien»; RV 1909 «maestras de honestidad».')
+
+DICTIONARY.append(('presbytis', 'presbytis', 'πρεσβῦτις', 'presbytis',
+    'AN OLDER WOMAN &mdash; the feminine of <em>presbyt&#275;s</em>, &lsquo;old man&rsquo; (<a href="dictionary.html#presbytes">presbyt&#275;s</a>), an age and not an office. &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-3">Titus 2:3</a>. KJV &lsquo;The aged women&rsquo;; NIV &lsquo;the older women.&rsquo;',
+    ('Titus', 2, 3)))
+DICTIONARY_ES['presbytis'] = ('presbŷtis',
+    'UNA ANCIANA &mdash; el femenino de <em>presbyt&#275;s</em>, «anciano» (<a href="diccionario.html#presbytes">presbyt&#275;s</a>), una edad y no un cargo. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-3">Tito 2:3</a>. RV60 «Las ancianas»; TNM 1987 «las mujeres de edad».')
+
+DICTIONARY.append(('aphthoria', 'aphthoria', 'ἀφθορία', 'aphthoria',
+    'INTEGRITY, incorruption, soundness &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>phthora</em>, &lsquo;corruption.&rsquo; &#9888; It stands in one verse of the printed New Testament, <a href="titus-2.html#v2-7">Titus 2:7</a>, &lsquo;in your teaching, integrity&rsquo;; the Byzantine text has <em>adiaphthoria</em> and adds <em>aphtharsia</em>, and so the KJV, &lsquo;uncorruptness, gravity, sincerity.&rsquo; NWT 1984 &lsquo;uncorruptness.&rsquo;',
+    ('Titus', 2, 7)))
+DICTIONARY_ES['aphthoria'] = ('afthoría',
+    'INTEGRIDAD, incorrupción &mdash; <em>a-</em>, «no», y <em>phthora</em>, «corrupción». &#9888; Está en un solo versículo del Nuevo Testamento impreso, <a href="titus-2.es.html#v2-7">Tito 2:7</a>, «en tu enseñanza, integridad»; el texto bizantino trae <em>adiaphthoria</em> y añade <em>aphtharsia</em>. RV60 «integridad»; TNM 1987 «incorrupción».')
+
+DICTIONARY.append(('akatagnostos', 'akatagnōstos', 'ἀκατάγνωστος', 'akatagnōstos',
+    'THAT CANNOT BE CONDEMNED, beyond reproach &mdash; <em>a-</em> and <em>kataginosk&#333;</em>, &lsquo;to condemn.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-8">Titus 2:8</a>, &lsquo;sound speech that cannot be condemned.&rsquo; KJV and ASV &lsquo;that cannot be condemned.&rsquo;',
+    ('Titus', 2, 8)))
+DICTIONARY_ES['akatagnostos'] = ('akatágnōstos',
+    'IRREPROCHABLE, que no se puede condenar &mdash; <em>a-</em> y <em>kataginosk&#333;</em>, «condenar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-8">Tito 2:8</a>, «palabra sana e irreprochable». RV60 «irreprochable»; RV 1909 «irreprensible».')
+
+DICTIONARY.append(('soterios', 'sōtērios', 'σωτήριος', 'sōtērios',
+    'BRINGING SALVATION, saving &mdash; the adjective of <em>s&#333;t&#275;r</em>, &lsquo;saviour.&rsquo; &#9888; As an adjective it stands in one verse of the New Testament, <a href="titus-2.html#v2-11">Titus 2:11</a>, &lsquo;the grace of God has appeared, bringing salvation to all people&rsquo;; its neuter, used as a noun, is the <a href="dictionary.html#soterion">s&#333;t&#275;rion</a> of <a href="luke-2.html#v2-30">Luke 2:30</a>. ASV &lsquo;bringing salvation to all men&rsquo;; KJV &lsquo;that bringeth salvation.&rsquo;',
+    ('Titus', 2, 11)))
+DICTIONARY_ES['soterios'] = ('sōtḗrios',
+    'QUE TRAE SALVACIÓN &mdash; el adjetivo de <em>s&#333;t&#275;r</em>, «salvador». &#9888; Como adjetivo está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-11">Tito 2:11</a>, «ha aparecido la gracia de Dios, trayendo salvación a todos los seres humanos»; su neutro, usado como sustantivo, es el <a href="diccionario.html#soterion">s&#333;t&#275;rion</a> de <a href="luke-2.es.html#v2-30">Lucas 2:30</a>. RV 1909 «que trae salvación»; TNM 1987 «que trae salvación».')
+
+DICTIONARY.append(('periousios', 'periousios', 'περιούσιος', 'periousios',
+    'ONE&rsquo;S OWN, TREASURED, specially possessed &mdash; from <em>periousia</em>, &lsquo;what is over and above, one&rsquo;s own store.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-14">Titus 2:14</a>, &lsquo;to cleanse for himself a people as his treasured possession.&rsquo; It is the Greek Old Testament&rsquo;s word for the Hebrew <a href="dictionary.html#segullah">segullah</a>: <em>laos periousios</em> at <a href="exodus-19.html#v19-5">Exodus 19:5</a>, <a href="deuteronomy-7.html#v7-6">Deuteronomy 7:6</a>, <a href="deuteronomy-14.html#v14-2">Deuteronomy 14:2</a> and <a href="deuteronomy-26.html#v26-18">Deuteronomy 26:18</a> (Greek checked). KJV &lsquo;a peculiar people&rsquo;; ASV &lsquo;a people for his own possession.&rsquo;',
+    ('Titus', 2, 14)))
+DICTIONARY_ES['periousios'] = ('perioúsios',
+    'PROPIO, ATESORADO, poseído de manera especial &mdash; de <em>periousia</em>, «lo que sobra, el caudal propio». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-14">Tito 2:14</a>, «purificar para sí un pueblo como posesión atesorada». Es la palabra del Antiguo Testamento griego para el hebreo <a href="diccionario.html#segullah">segulá</a>: <em>laos periousios</em> en <a href="exodus-19.es.html#v19-5">Éxodo 19:5</a>, <a href="deuteronomy-7.es.html#v7-6">Deuteronomio 7:6</a>, <a href="deuteronomy-14.es.html#v14-2">Deuteronomio 14:2</a> y <a href="deuteronomy-26.es.html#v26-18">Deuteronomio 26:18</a> (griego comprobado). RV60 «un pueblo propio»; TNM 1987 «un pueblo peculiarmente suyo».')
+
+DICTIONARY.append(('periphroneo', 'periphroneō', 'περιφρονέω', 'periphroneō',
+    'TO DISREGARD, to think past someone &mdash; <em>peri</em>, &lsquo;around, beyond,&rsquo; and <em>phrone&#333;</em>, &lsquo;to think.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="titus-2.html#v2-15">Titus 2:15</a>, &lsquo;Let no one disregard you&rsquo;; it is close to the <em>kataphrone&#333;</em>, &lsquo;look down on,&rsquo; of <a href="1-timothy-4.html#v4-12">1 Timothy 4:12</a>. KJV and ASV &lsquo;Let no man despise thee.&rsquo;',
+    ('Titus', 2, 15)))
+DICTIONARY_ES['periphroneo'] = ('periphronéō',
+    'TENER EN MENOS, pasar por alto a alguien &mdash; <em>peri</em>, «alrededor, más allá», y <em>phrone&#333;</em>, «pensar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="titus-2.es.html#v2-15">Tito 2:15</a>, «Que nadie te tenga en menos»; está cerca del <em>kataphrone&#333;</em>, «tener en poco», de <a href="1-timothy-4.es.html#v4-12">1 Timoteo 4:12</a>. RV60 «Nadie te menosprecie»; RV 1909 «Nadie te desprecie».')
+
+DICTIONARY_ES['lytroo'] = ('lytróō',
+    'RESCATAR, redimir pagando un precio &mdash; de <em>lytron</em>, «rescate», la suma pagada para liberar a un esclavo o a un prisionero de guerra. &#9888; En <a href="1-peter-1.es.html#v18">1 Pedro 1:18</a>–19 la metáfora se lleva lejos: «fueron rescatados (<em>elytr&#333;th&#275;te</em>) &hellip; no con cosas corruptibles, plata u oro», sino con la sangre preciosa de Cristo; los dos metales que miden todo otro rescate quedan de lado. Detrás está el Éxodo: Dios «redimió» a Israel de Egipto (el mismo verbo en el Antiguo Testamento griego). El verbo está en tres versículos del Nuevo Testamento: «el que iba a redimir a Israel» en <a href="luke-24.es.html#v24-21">Lucas 24:21</a>, «para redimirnos de toda iniquidad» en <a href="titus-2.es.html#v2-14">Tito 2:14</a>, y 1 Pedro 1:18. Es la raíz de <em>apolytr&#333;sis</em>, «redención», y del «para dar su vida en rescate por muchos» de Jesús (<a href="mark-10.es.html#v10-45">Marcos 10:45</a>).')
+
+def _tit2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_tit2_fix([('and slaves are told not to &lsquo;pilfer&rsquo; (Titus 2:10, not yet on these pages).', 'and slaves are told not to &lsquo;pilfer&rsquo; (<a href="titus-2.html#v2-10">Titus 2:10</a>).'), ('y a los esclavos se les dice que no «sustraigan» (Tito 2:10, todavía no en estas páginas).', 'y a los esclavos se les dice que no «sisen» (<a href="titus-2.es.html#v2-10">Tito 2:10</a>).'), ('and 1 Corinthians 14:12, Titus 2:14 and 1 Peter 3:13 (not yet on these pages).', 'and <a href="1-corinthians-14.html#v12">1 Corinthians 14:12</a>, <a href="titus-2.html#v2-14">Titus 2:14</a> and 1 Peter 3:13 (the last not yet on these pages).'), ('y 1 Corintios 14:12, Tito 2:14 y 1 Pedro 3:13 (todavía no en estas páginas).', 'y <a href="1-corinthians-14.es.html#v12">1 Corintios 14:12</a>, <a href="titus-2.es.html#v2-14">Tito 2:14</a> y 1 Pedro 3:13 (el último todavía no en estas páginas).'), ('and Titus 2:2, of older men (not yet on these pages).', 'and <a href="titus-2.html#v2-2">Titus 2:2</a>, of older men.'), ('y Tito 2:2, de los ancianos (todavía no en estas páginas).', 'y <a href="titus-2.es.html#v2-2">Tito 2:2</a>, de los ancianos.'), ('and at Titus 2:7 (not yet on these pages).', 'and at <a href="titus-2.html#v2-7">Titus 2:7</a>.'), ('y en Tito 2:7 (todavía no en estas páginas).', 'y en <a href="titus-2.es.html#v2-7">Tito 2:7</a>.'), ("('the appearing of the glory of our great God and Saviour', Titus 2:13;", '(\'the appearing of the glory of our great God and Saviour\', <a href="titus-2.html#v2-13">Titus 2:13</a>;'), ('como de su REGRESO, en Tito 2:13 (todavía no en estas páginas) y', 'como de su REGRESO, en <a href="titus-2.es.html#v2-13">Tito 2:13</a> y'), ('(<a href="titus-1.es.html#v13">Tito 1:13</a>; Tito 2:2, todavía no en estas páginas)', '(<a href="titus-1.es.html#v13">Tito 1:13</a>; <a href="titus-2.es.html#v2-2">Tito 2:2</a>)'), ('(1 Timoteo 6:1-2; Tito 2:9; 1 Pedro 2:18)', '(1 Timoteo 6:1-2; <a href="titus-2.es.html#v2-9">Tito 2:9</a>; 1 Pedro 2:18)')])
+
+XREFS.extend([
+    (("Titus", 1, 9), ("Titus", 2, 1), "the sound teaching"),
+    (("1 Timothy", 3, 2), ("Titus", 2, 2), "temperate, of sound mind"),
+    (("1 Timothy", 3, 11), ("Titus", 2, 3), "not slanderers"),
+    (("2 Timothy", 3, 2), ("Titus", 2, 4), "lovers of self / lovers of husbands"),
+    (("1 Timothy", 5, 14), ("Titus", 2, 5), "managing the household"),
+    (("Colossians", 3, 18), ("Titus", 2, 5), "wives, submit"),
+    (("1 Timothy", 6, 1), ("Titus", 2, 5), "so that the word / name of God may not be blasphemed"),
+    (("Romans", 12, 3), ("Titus", 2, 6), "think soundly / be sensible"),
+    (("1 Timothy", 4, 12), ("Titus", 2, 7), "an example"),
+    (("2 Thessalonians", 3, 14), ("Titus", 2, 8), "put to shame"),
+    (("1 Timothy", 6, 1), ("Titus", 2, 9), "slaves and masters"),
+    (("Acts", 5, 2), ("Titus", 2, 10), "kept back, pilfering"),
+    (("1 Timothy", 2, 9), ("Titus", 2, 10), "adorn"),
+    (("Luke", 2, 30), ("Titus", 2, 11), "salvation"),
+    (("Titus", 1, 16), ("Titus", 2, 12), "deny"),
+    (("2 Timothy", 4, 8), ("Titus", 2, 13), "the appearing"),
+    (("2 Peter", 1, 1), ("Titus", 2, 13), "our God and Saviour"),
+    (("1 Timothy", 2, 6), ("Titus", 2, 14), "gave himself"),
+    (("Luke", 24, 21), ("Titus", 2, 14), "redeem"),
+    (("Exodus", 19, 5), ("Titus", 2, 14), "treasured possession"),
+    (("1 Timothy", 4, 12), ("Titus", 2, 15), "look down on / disregard"),
+])
+
+CHAPTER_ART["tit2"] = [dict(
+    file="gortyn-boustrophedon-inscription.jpg",
+    title="Archaic Greek inscription at Gortyn, Crete",   title_es="Inscripción griega arcaica en Gortina, Creta",
+    artist="Photograph by Jebulon",
+    year="2015 (photograph)",
+    location="Gortyn (Gortys), Crete",
+    location_es="Gortina (Gortys), Creta",
+    alt="A close view of a stone wall: a long block of pale limestone carved with rows of archaic Greek letters, running in alternate directions line by line, "
+        "set above a course of rough rubble and a red brick.",
+    note="&#9888; An archaic Greek text cut into a wall at Gortyn on Crete and written <em>boustroph&#275;don</em>, &lsquo;as the ox turns&rsquo; in ploughing, one "
+         "line left to right and the next right to left. Crete is where the letter leaves Titus to teach its households (<a href=\"titus-1.html#v5\">1:5</a>; "
+         "<a href=\"titus-2.html#v2-1\">2:1</a>).",
+    note_es="&#9888; Un texto griego arcaico grabado en un muro de Gortina, en Creta, y escrito <em>boustroph&#275;don</em>, «como gira el buey» al arar, una línea de "
+            "izquierda a derecha y la siguiente de derecha a izquierda. Creta es donde la carta deja a Tito para enseñar a sus casas (<a href=\"titus-1.es.html#v5\">1:5</a>; "
+            "<a href=\"titus-2.es.html#v2-1\">2:1</a>).",
+    license="CC0 1.0 (public domain dedication)",
+    source_url="https://commons.wikimedia.org/wiki/File:Boustrophedon_inscriptions_Gortys.jpg",
+)]
+
+CHRON_CHAPTERS["tit2"] = dict(era='apostolic',
+    when="Titus is told what to teach on Crete: older men, older women, younger women and younger men, and slaves; then 'the grace of God has appeared, bringing salvation to all people,' and the appearing of 'our great God and Saviour, Jesus Christ.'",
+    clock="Undated by the text; on the traditional reading, between Paul's imprisonments, mid-60s AD; many scholars date the Pastoral letters later.")
+
