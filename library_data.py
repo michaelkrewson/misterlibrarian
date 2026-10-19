@@ -41351,3 +41351,118 @@ CHRON_CHAPTERS["heb2"] = dict(era='apostolic',
     when="The first warning of Hebrews ('so that we do not drift away') and the case for a Son made for a little while lower than the angels: Psalm 8 read of Jesus, crowned after the suffering of death; the Author of salvation made complete through sufferings; the brothers he is not ashamed of; the devil put out of action; and the first naming of Jesus as 'a merciful and faithful high priest.'",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note); verse 3, 'confirmed to us by those who heard,' places the writer among those who received the message from the first hearers.")
 
+# ---- Hebrews 3 -----------------------------------------------------------
+DICTIONARY.append(('homologia', 'homologia', 'ὁμολογία', 'homologia',
+    'CONFESSION &mdash; <em>homou</em>, &lsquo;together,&rsquo; and <em>leg&#333;</em>, &lsquo;to say&rsquo;: saying the same thing, an agreed and public statement. &#9888; It stands in six verses of the New Testament: <a href="2-corinthians-9.html#v13">2 Corinthians 9:13</a>; Timothy&rsquo;s &lsquo;good confession before many witnesses&rsquo; at <a href="1-timothy-6.html#v6-12">1 Timothy 6:12</a>, and Christ Jesus, &lsquo;who testified the good confession before Pontius Pilate,&rsquo; at <a href="1-timothy-6.html#v6-13">6:13</a>; and three times in Hebrews, &lsquo;the apostle and high priest of our confession&rsquo; at <a href="hebrews-3.html#v3-1">Hebrews 3:1</a>, &lsquo;let us hold fast our confession&rsquo; at 4:14, and 10:23 (these two not yet on these pages). KJV at Hebrews 3:1 &lsquo;profession&rsquo;; ASV &lsquo;confession.&rsquo;',
+    ('2 Corinthians', 9, 13)))
+DICTIONARY_ES['homologia'] = ('homología',
+    'CONFESIÓN &mdash; <em>homou</em>, «juntamente», y <em>leg&#333;</em>, «decir»: decir lo mismo, una declaración acordada y pública. &#9888; Está en seis versículos del Nuevo Testamento: <a href="2-corinthians-9.es.html#v13">2 Corintios 9:13</a>; la «buena confesión delante de muchos testigos» de Timoteo en <a href="1-timothy-6.es.html#v6-12">1 Timoteo 6:12</a>, y Cristo Jesús, «que dio testimonio de la buena confesión delante de Poncio Pilato», en <a href="1-timothy-6.es.html#v6-13">6:13</a>; y tres veces en Hebreos, «el apóstol y sumo sacerdote de nuestra confesión» en <a href="hebrews-3.es.html#v3-1">Hebreos 3:1</a>, «retengamos nuestra confesión» en 4:14, y 10:23 (estos dos todavía no en estas páginas). RV60 en Hebreos 3:1 «profesión»; TNM 1987 «que nosotros confesamos».')
+
+DICTIONARY.append(('therapon', 'therapōn', 'θεράπων', 'therapōn',
+    'ATTENDANT, a servant in a household &mdash; a free servant&rsquo;s word, distinct from <em>doulos</em>, &lsquo;slave&rsquo; (<a href="dictionary.html#doulos">doulos</a>), and the root of English &lsquo;therapy.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-3.html#v3-5">Hebrews 3:5</a>, &lsquo;Moses was faithful in all his house as an attendant.&rsquo; The word comes from the Greek of <a href="numbers-12.html#v12-7">Numbers 12:7</a>, &lsquo;my attendant Moses,&rsquo; where the Hebrew has <em>&lsquo;eved</em>, &lsquo;servant&rsquo; (both checked). KJV &lsquo;as a servant&rsquo;; NWT 1984 &lsquo;as an attendant.&rsquo;',
+    ('Hebrews', 3, 5)))
+DICTIONARY_ES['therapon'] = ('therápōn',
+    'SERVIDOR, el que sirve en una casa &mdash; palabra de un servidor libre, distinta de <em>doulos</em>, «esclavo» (<a href="diccionario.html#doulos">doulos</a>), y raíz de «terapia». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-3.es.html#v3-5">Hebreos 3:5</a>, «Moisés fue fiel en toda su casa como servidor». La palabra viene del griego de <a href="numbers-12.es.html#v12-7">Números 12:7</a>, «mi servidor Moisés», donde el hebreo tiene <em>&lsquo;eved</em>, «siervo» (los dos comprobados). RV60 «como siervo»; TNM 1987 «como servidor».')
+
+DICTIONARY.append(('katapausis', 'katapausis', 'κατάπαυσις', 'katapausis',
+    'REST, a place of rest &mdash; from <em>katapau&#333;</em>, &lsquo;to bring to rest&rsquo;; the Greek Old Testament&rsquo;s word for the Hebrew <em>menuchah</em> (<a href="dictionary.html#menuchah">menuchah</a>) in Psalm 95:11, &lsquo;They shall not enter my rest.&rsquo; &#9888; It stands in eight verses of the New Testament: <a href="acts-7.html#v7-49">Acts 7:49</a>, &lsquo;what is the place of my rest?&rsquo;, from Isaiah 66:1; and seven in Hebrews, <a href="hebrews-3.html#v3-11">Hebrews 3:11</a> and <a href="hebrews-3.html#v3-18">3:18</a>, and five in chapter 4 (not yet on these pages), where the letter asks what rest the psalm still holds open. KJV and NWT 1984 &lsquo;rest.&rsquo;',
+    ('Acts', 7, 49)))
+DICTIONARY_ES['katapausis'] = ('katápausis',
+    'DESCANSO, lugar de reposo &mdash; de <em>katapau&#333;</em>, «hacer descansar»; la palabra del Antiguo Testamento griego para el hebreo <em>menuchah</em> (<a href="diccionario.html#menuchah">menuchah</a>) en el Salmo 95:11, «No entrarán en mi descanso». &#9888; Está en ocho versículos del Nuevo Testamento: <a href="acts-7.es.html#v7-49">Hechos 7:49</a>, «¿cuál es el lugar de mi reposo?», de Isaías 66:1; y siete en Hebreos, <a href="hebrews-3.es.html#v3-11">Hebreos 3:11</a> y <a href="hebrews-3.es.html#v3-18">3:18</a>, y cinco en el capítulo 4 (todavía no en estas páginas), donde la carta pregunta qué descanso deja abierto todavía el salmo. RV60 «reposo»; TNM 1987 «descanso».')
+
+DICTIONARY.append(('parapikrasmos', 'parapikrasmos', 'παραπικρασμός', 'parapikrasmos',
+    'PROVOCATION, EMBITTERMENT &mdash; from <em>parapikrain&#333;</em>, &lsquo;to embitter, to provoke,&rsquo; built on <em>pikros</em>, &lsquo;bitter.&rsquo; &#9888; It stands in two verses of the New Testament, <a href="hebrews-3.html#v3-8">Hebrews 3:8</a> and <a href="hebrews-3.html#v3-15">3:15</a>, in the quotation of Psalm 95, where it translates the place-name Meribah, &lsquo;Strife&rsquo; (<a href="dictionary.html#massah-meribah">Massah / Meribah</a>); this translation prints &lsquo;the Provocation,&rsquo; capitalized as a name. The verb <em>parapikrain&#333;</em> stands in one verse, <a href="hebrews-3.html#v3-16">Hebrews 3:16</a>, &lsquo;who were they who heard and provoked?&rsquo; KJV &lsquo;the provocation&rsquo;; NWT 1984 &lsquo;the occasion of causing bitter anger.&rsquo;',
+    ('Hebrews', 3, 8)))
+DICTIONARY_ES['parapikrasmos'] = ('parapikrasmós',
+    'PROVOCACIÓN, AMARGURA &mdash; de <em>parapikrain&#333;</em>, «amargar, provocar», hecho sobre <em>pikros</em>, «amargo». &#9888; Está en dos versículos del Nuevo Testamento, <a href="hebrews-3.es.html#v3-8">Hebreos 3:8</a> y <a href="hebrews-3.es.html#v3-15">3:15</a>, en la cita del Salmo 95, donde traduce el nombre de lugar Meribá, «Rencilla» (<a href="diccionario.html#massah-meribah">Masah / Meriba</a>); esta traducción dice «la Provocación», con mayúscula como nombre. El verbo <em>parapikrain&#333;</em> está en un solo versículo, <a href="hebrews-3.es.html#v3-16">Hebreos 3:16</a>, «¿quiénes fueron los que oyeron y provocaron?». RV60 «la provocación»; TNM 1987 «la ocasión de causar amarga cólera».')
+
+DICTIONARY.append(('prosochthizo', 'prosochthizō', 'προσοχθίζω', 'prosochthizō',
+    'TO BE DISGUSTED WITH, to loathe &mdash; the Greek Old Testament&rsquo;s word for the Hebrew <em>qut</em> in Psalm 95:10, &lsquo;forty years I loathed a generation&rsquo; (checked). &#9888; It stands in two verses of the New Testament, both in Hebrews 3: &lsquo;Therefore I was disgusted with this generation&rsquo; (<a href="hebrews-3.html#v3-10">Hebrews 3:10</a>) and &lsquo;with whom was he disgusted for forty years?&rsquo; (<a href="hebrews-3.html#v3-17">3:17</a>). KJV &lsquo;grieved&rsquo;; ASV &lsquo;displeased&rsquo;; NWT 1984 &lsquo;disgusted.&rsquo;',
+    ('Hebrews', 3, 10)))
+DICTIONARY_ES['prosochthizo'] = ('prosochthízō',
+    'DISGUSTARSE CON, aborrecer &mdash; la palabra del Antiguo Testamento griego para el hebreo <em>qut</em> en el Salmo 95:10, «cuarenta años aborrecí a una generación» (comprobado). &#9888; Está en dos versículos del Nuevo Testamento, los dos en Hebreos 3: «Por eso me disgusté con esta generación» (<a href="hebrews-3.es.html#v3-10">Hebreos 3:10</a>) y «¿con quiénes se disgustó durante cuarenta años?» (<a href="hebrews-3.es.html#v3-17">3:17</a>). RV60 «me disgusté»; TNM 1987 «quedé asqueado».')
+
+DICTIONARY.append(('kolon', 'kōlon', 'κῶλον', 'kōlon',
+    'LIMB; in the plural, CORPSES, carcasses &mdash; &#9888; it stands in one verse of the New Testament, <a href="hebrews-3.html#v3-17">Hebrews 3:17</a>, &lsquo;whose carcasses fell in the wilderness,&rsquo; and it is the word of the Greek of <a href="numbers-14.html#v14-29">Numbers 14:29</a>, &lsquo;In this wilderness your carcasses will fall,&rsquo; for the Hebrew <em>peger</em> (<a href="dictionary.html#peger">peger</a>) (checked). KJV &lsquo;carcases&rsquo;; ASV &lsquo;bodies.&rsquo;',
+    ('Hebrews', 3, 17)))
+DICTIONARY_ES['kolon'] = ('kôlon',
+    'MIEMBRO; en plural, CADÁVERES &mdash; &#9888; está en un solo versículo del Nuevo Testamento, <a href="hebrews-3.es.html#v3-17">Hebreos 3:17</a>, «cuyos cadáveres cayeron en el desierto», y es la palabra del griego de <a href="numbers-14.es.html#v14-29">Números 14:29</a>, «En este desierto caerán vuestros cadáveres», por el hebreo <em>peger</em> (<a href="diccionario.html#peger">peger</a>) (comprobado). RV60 «cuerpos»; TNM 1987 «cadáveres».')
+
+DICTIONARY.append(('aphistemi', 'aphistēmi', 'ἀφίστημι', 'aphistēmi',
+    'TO STAND AWAY, to depart, to FALL AWAY &mdash; <em>apo</em>, &lsquo;from,&rsquo; and <em>hist&#275;mi</em>, &lsquo;to stand&rsquo;; its noun <em>apostasia</em> gives English &lsquo;apostasy&rsquo; (&lsquo;apostasy from Moses&rsquo; at <a href="acts-21.html#v21-21">Acts 21:21</a>). &#9888; It can be plain departure, as when the devil &lsquo;departed from him until an opportune time&rsquo; (<a href="luke-4.html#v4-13">Luke 4:13</a>), or falling away: those who &lsquo;in a time of testing fall away&rsquo; (<a href="luke-8.html#v8-13">Luke 8:13</a>), &lsquo;some will fall away from the faith&rsquo; (<a href="1-timothy-4.html#v4-1">1 Timothy 4:1</a>), and &lsquo;an evil heart of unbelief, in falling away from the living God&rsquo; (<a href="hebrews-3.html#v3-12">Hebrews 3:12</a>). KJV at Hebrews 3:12 &lsquo;in departing&rsquo;; ASV &lsquo;in falling away.&rsquo;',
+    ('Luke', 4, 13)))
+DICTIONARY_ES['aphistemi'] = ('afístēmi',
+    'APARTARSE, alejarse, CAER &mdash; <em>apo</em>, «de», e <em>hist&#275;mi</em>, «estar en pie»; su sustantivo <em>apostasia</em> da «apostasía» («la apostasía de Moisés» en <a href="acts-21.es.html#v21-21">Hechos 21:21</a>). &#9888; Puede ser un simple alejarse, como cuando el diablo «se apartó de él hasta el momento oportuno» (<a href="luke-4.es.html#v4-13">Lucas 4:13</a>), o un apartarse de la fe: los que «en tiempo de prueba se apartan» (<a href="luke-8.es.html#v8-13">Lucas 8:13</a>), «algunos se apartarán de la fe» (<a href="1-timothy-4.es.html#v4-1">1 Timoteo 4:1</a>), y «un corazón malo de incredulidad, al apartarse del Dios vivo» (<a href="hebrews-3.es.html#v3-12">Hebreos 3:12</a>). RV60 en Hebreos 3:12 «para apartarse».')
+
+DICTIONARY.append(('kataskeuazo', 'kataskeuazō', 'κατασκευάζω', 'kataskeuazō',
+    'TO BUILD, to prepare, to fit out &mdash; <em>kata</em> and <em>skeuaz&#333;</em>, &lsquo;to equip.&rsquo; &#9888; It stands in ten verses of the New Testament: the messenger who &lsquo;will prepare your way&rsquo; (<a href="matthew-11.html#v11-10">Matthew 11:10</a>, with <a href="mark-1.html#v2">Mark 1:2</a> and <a href="luke-7.html#v7-27">Luke 7:27</a>); &lsquo;a people prepared&rsquo; (<a href="luke-1.html#v17">Luke 1:17</a>); the house and its builder at <a href="hebrews-3.html#v3-3">Hebrews 3:3</a> and <a href="hebrews-3.html#v3-4">3:4</a>, &lsquo;the one who built all things is God&rsquo;; the tabernacle &lsquo;prepared&rsquo; and fitted out at Hebrews 9:2 and 9:6 (not yet on these pages); and Noah, who &lsquo;built an ark&rsquo; (<a href="hebrews-11.html#v11-7">Hebrews 11:7</a>; 1 Peter 3:20). KJV at Hebrews 3:4 &lsquo;builded.&rsquo;',
+    ('Matthew', 11, 10)))
+DICTIONARY_ES['kataskeuazo'] = ('kataskeuázō',
+    'CONSTRUIR, preparar, equipar &mdash; <em>kata</em> y <em>skeuaz&#333;</em>, «equipar». &#9888; Está en diez versículos del Nuevo Testamento: el mensajero que «preparará tu camino» (<a href="matthew-11.es.html#v11-10">Mateo 11:10</a>, con <a href="mark-1.es.html#v2">Marcos 1:2</a> y <a href="luke-7.es.html#v7-27">Lucas 7:27</a>); «un pueblo dispuesto» (<a href="luke-1.es.html#v17">Lucas 1:17</a>); la casa y su constructor en <a href="hebrews-3.es.html#v3-3">Hebreos 3:3</a> y <a href="hebrews-3.es.html#v3-4">3:4</a>, «el que construyó todas las cosas es Dios»; el tabernáculo «preparado» y equipado en Hebreos 9:2 y 9:6 (todavía no en estas páginas); y Noé, que «construyó un arca» (<a href="hebrews-11.es.html#v11-7">Hebreos 11:7</a>; 1 Pedro 3:20). RV60 en Hebreos 3:4 «es hecha».')
+
+def _heb3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb3_fix([('then through the middle of the letter, at 3:1, 4:14 and on through chapter 9 (not yet on these pages).', 'then through the middle of the letter, at <a href="hebrews-3.html#v3-1">3:1</a>, and at 4:14 and on through chapter 9 (these not yet on these pages).'), ('y luego por el centro de la carta, en 3:1, 4:14 y hasta el capítulo 9 (todavía no en estas páginas).', 'y luego por el centro de la carta, en <a href="hebrews-3.es.html#v3-1">3:1</a>, y en 4:14 y hasta el capítulo 9 (estos todavía no en estas páginas).'), ('The verse is quoted twice in Hebrews 3 (not yet on these pages).', 'The verse is quoted twice in Hebrews 3, at <a href="hebrews-3.html#v3-2">3:2</a> and <a href="hebrews-3.html#v3-5">3:5</a>.'), ('El versículo se cita dos veces en Hebreos 3 (todavía no en estas páginas).', 'El versículo se cita dos veces en Hebreos 3, en <a href="hebrews-3.es.html#v3-2">3:2</a> y <a href="hebrews-3.es.html#v3-5">3:5</a>.'), ('in Hebrews 3:8, 3:15 and 4:7 it is the command &lsquo;do not harden your hearts,&rsquo; and in 3:13 the warning &lsquo;that none of you be hardened&rsquo; (these four not yet on these pages).', 'in <a href="hebrews-3.html#v3-8">Hebrews 3:8</a>, <a href="hebrews-3.html#v3-15">3:15</a> and 4:7 it is the command &lsquo;do not harden your hearts,&rsquo; and in <a href="hebrews-3.html#v3-13">3:13</a> the warning &lsquo;so that not one of you is hardened&rsquo; (4:7 not yet on these pages).'), ('en Hebreos 3:8, 3:15 y 4:7 es el mandato «no endurezcan sus corazones», y en 3:13 la advertencia «que ninguno de ustedes sea endurecido» (estos cuatro todavía no en estas páginas).', 'en <a href="hebrews-3.es.html#v3-8">Hebreos 3:8</a>, <a href="hebrews-3.es.html#v3-15">3:15</a> y 4:7 es el mandato «no endurezcan sus corazones», y en <a href="hebrews-3.es.html#v3-13">3:13</a> la advertencia «para que ninguno de ustedes sea endurecido» (4:7 todavía no en estas páginas).')])
+
+XREFS.extend([
+    (("Hebrews", 1, 9), ("Hebrews", 3, 1), "companions"),
+    (("Hebrews", 2, 17), ("Hebrews", 3, 1), "high priest"),
+    (("1 Timothy", 6, 12), ("Hebrews", 3, 1), "the good confession"),
+    (("John", 20, 21), ("Hebrews", 3, 1), "sent, apostle"),
+    (("Numbers", 12, 7), ("Hebrews", 3, 2), "faithful in all my house"),
+    (("Numbers", 12, 7), ("Hebrews", 3, 5), "Moses the attendant"),
+    (("Hebrews", 11, 7), ("Hebrews", 3, 3), "built"),
+    (("Acts", 4, 13), ("Hebrews", 3, 6), "boldness"),
+    (("Exodus", 17, 7), ("Hebrews", 3, 8), "Massah and Meribah"),
+    (("Numbers", 14, 23), ("Hebrews", 3, 11), "they shall not enter"),
+    (("Deuteronomy", 12, 9), ("Hebrews", 3, 11), "the rest"),
+    (("Acts", 7, 49), ("Hebrews", 3, 11), "my rest"),
+    (("Luke", 8, 13), ("Hebrews", 3, 12), "fall away"),
+    (("Matthew", 16, 16), ("Hebrews", 3, 12), "the living God"),
+    (("Mark", 4, 19), ("Hebrews", 3, 13), "deceitfulness"),
+    (("Hebrews", 2, 2), ("Hebrews", 3, 14), "firm"),
+    (("Hebrews", 11, 1), ("Hebrews", 3, 14), "hypostasis"),
+    (("Numbers", 14, 30), ("Hebrews", 3, 16), "Caleb and Joshua excepted"),
+    (("Numbers", 14, 29), ("Hebrews", 3, 17), "carcasses in the wilderness"),
+    (("Hebrews", 11, 31), ("Hebrews", 3, 18), "disobeyed, refused to believe"),
+])
+
+CHAPTER_ART["heb3"] = [dict(
+    file="steen-moses-striking-the-rock.jpg",
+    title="Moses Striking the Rock",   title_es="Moisés golpea la peña",
+    artist="Jan Steen",
+    year="c. 1660-61",
+    location="Philadelphia Museum of Art",
+    location_es="Museo de Arte de Filadelfia",
+    alt="A crowd in a wooded landscape: Moses, robed in red and gold with a staff, stands beside the rock while people kneel and stoop to catch the water in bowls "
+        "and basins; a dog drinks from the stream, and the camp with horses and a camel stretches into the distance.",
+    note="&#9888; Water from the rock in the wilderness: the story of Massah and Meribah in Exodus 17, the &lsquo;Testing&rsquo; and the &lsquo;Provocation&rsquo; that "
+         "Psalm 95 recalls and <a href=\"hebrews-3.html#v3-8\">verse 8</a> quotes.",
+    note_es="&#9888; Agua de la peña en el desierto: la historia de Masah y Meribá en Éxodo 17, la «Prueba» y la «Provocación» que recuerda el Salmo 95 y cita el "
+            "<a href=\"hebrews-3.es.html#v3-8\">versículo 8</a>.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jan_Steen,_Dutch_(active_Leiden,_Haarlem,_and_The_Hague)_-_Moses_Striking_the_Rock_-_Google_Art_Project.jpg",
+)]
+
+CHRON_CHAPTERS["heb3"] = dict(era='apostolic',
+    when="Jesus, 'the apostle and high priest of our confession,' set beside Moses: Moses faithful in God's house as an attendant, Christ as a Son over it; then Psalm 95, 'Today, if you hear his voice,' read as a warning from the wilderness generation who provoked God at Massah and Meribah and did not enter his rest.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
