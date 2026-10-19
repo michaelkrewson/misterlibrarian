@@ -41816,3 +41816,194 @@ CHRON_CHAPTERS["heb6"] = dict(era='apostolic',
     when="A call to go on to maturity, then the letter's hardest warning: for those who have tasted the heavenly gift and fallen away, it is impossible to renew them again to repentance. Then reassurance, 'better things' for the readers, and God's oath to Abraham, two unchangeable things, and a hope that is an anchor of the soul, entering inside the curtain where Jesus has gone as forerunner.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
 
+# ---- Hebrews 7 -----------------------------------------------------------
+DICTIONARY.append(('apator', 'apatōr', 'ἀπάτωρ', 'apatōr',
+    'WITHOUT FATHER &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>pat&#275;r</em>, &lsquo;father.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-3">Hebrews 7:3</a>, the first of three words of the same shape in a row: &lsquo;without father, without mother, without genealogy&rsquo; (see <a href="dictionary.html#ametor">am&#275;t&#333;r</a> and <a href="dictionary.html#agenealogetos">agenealog&#275;tos</a>). Genesis 14 names no parents for Melchizedek, and the note on the verse sets out how traditions read the silence. KJV, ASV and Douay &lsquo;Without father&rsquo;; NWT 1984 &lsquo;fatherless.&rsquo;',
+    ('Hebrews', 7, 3)))
+DICTIONARY_ES['apator'] = ('apát&#333;r',
+    'SIN PADRE &mdash; <em>a-</em>, «no», y <em>pat&#275;r</em>, «padre». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-3">Hebreos 7:3</a>, la primera de tres palabras de la misma forma seguidas: «sin padre, sin madre, sin genealogía» (véanse <a href="diccionario.html#ametor">am&#275;t&#333;r</a> y <a href="diccionario.html#agenealogetos">agenealog&#275;tos</a>). Génesis 14 no nombra padres de Melquisedec, y la nota del versículo expone cómo leen las tradiciones ese silencio. RV60 y TNM 1987 «sin padre».')
+
+DICTIONARY.append(('ametor', 'amētōr', 'ἀμήτωρ', 'amētōr',
+    'WITHOUT MOTHER &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>m&#275;t&#275;r</em>, &lsquo;mother.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-3">Hebrews 7:3</a>, between &lsquo;without father&rsquo; (<a href="dictionary.html#apator">apat&#333;r</a>) and &lsquo;without genealogy&rsquo; (<a href="dictionary.html#agenealogetos">agenealog&#275;tos</a>). KJV, ASV and Douay &lsquo;without mother&rsquo;; NWT 1984 &lsquo;motherless.&rsquo;',
+    ('Hebrews', 7, 3)))
+DICTIONARY_ES['ametor'] = ('amét&#333;r',
+    'SIN MADRE &mdash; <em>a-</em>, «no», y <em>m&#275;t&#275;r</em>, «madre». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-3">Hebreos 7:3</a>, entre «sin padre» (<a href="diccionario.html#apator">apat&#333;r</a>) y «sin genealogía» (<a href="diccionario.html#agenealogetos">agenealog&#275;tos</a>). RV60 y TNM 1987 «sin madre».')
+
+DICTIONARY.append(('agenealogetos', 'agenealogētos', 'ἀγενεαλόγητος', 'agenealogētos',
+    'WITHOUT GENEALOGY, with no recorded descent &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>genealoge&#333;</em>, &lsquo;to trace descent,&rsquo; whose participle stands three verses later, &lsquo;the one whose genealogy is not traced from them&rsquo; (<a href="hebrews-7.html#v7-6">Hebrews 7:6</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-3">Hebrews 7:3</a>. The point in context is priestly: the sons of Levi held office by descent, and Melchizedek has none on record. KJV &lsquo;without descent&rsquo;; ASV, Douay and NWT 1984 &lsquo;without genealogy&rsquo;; Geneva &lsquo;without kindred.&rsquo;',
+    ('Hebrews', 7, 3)))
+DICTIONARY_ES['agenealogetos'] = ('agenealógētos',
+    'SIN GENEALOGÍA, sin ascendencia registrada &mdash; <em>a-</em>, «no», y <em>genealoge&#333;</em>, «trazar la ascendencia», cuyo participio está tres versículos después, «aquel cuya genealogía no se traza a partir de ellos» (<a href="hebrews-7.es.html#v7-6">Hebreos 7:6</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-3">Hebreos 7:3</a>. En el contexto el punto es sacerdotal: los hijos de Leví ejercían el oficio por linaje, y Melquisedec no tiene ninguno registrado. RV60 «sin genealogía»; RV 1909 «sin linaje».')
+
+DICTIONARY.append(('aphomoioo', 'aphomoioō', 'ἀφομοιόω', 'aphomoioō',
+    'TO MAKE LIKE, to liken &mdash; <em>apo</em> and <em>homoio&#333;</em>, &lsquo;to make like,&rsquo; the verb of <a href="hebrews-2.html#v2-17">Hebrews 2:17</a>, &lsquo;he had to be made like his brothers.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-3">Hebrews 7:3</a>, &lsquo;but made like the Son of God&rsquo;: Melchizedek is made like the Son, not the Son like Melchizedek. KJV and ASV &lsquo;made like unto&rsquo;; Geneva and Douay &lsquo;likened unto.&rsquo;',
+    ('Hebrews', 7, 3)))
+DICTIONARY_ES['aphomoioo'] = ('aph&#333;moió&#333;',
+    'HACER SEMEJANTE, asemejar &mdash; <em>apo</em> y <em>homoio&#333;</em>, «hacer semejante», el verbo de <a href="hebrews-2.es.html#v2-17">Hebreos 2:17</a>, «debía ser hecho semejante a sus hermanos». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-3">Hebreos 7:3</a>, «sino hecho semejante al Hijo de Dios»: Melquisedec es hecho semejante al Hijo, no el Hijo a Melquisedec. RV60 y RV 1909 «hecho semejante».')
+
+DICTIONARY.append(('dienekes', 'diēnekēs', 'διηνεκής', 'diēnekēs',
+    'CONTINUOUS, unbroken &mdash; in the phrase <em>eis to di&#275;nek&#275;s</em>, &lsquo;for all time, perpetually.&rsquo; &#9888; It stands in four verses, all in Hebrews: Melchizedek &lsquo;remains a priest for all time&rsquo; (<a href="hebrews-7.html#v7-3">Hebrews 7:3</a>), and 10:1, 10:12 and 10:14 (not yet on these pages). It is a different phrase from <em>eis ton ai&#333;na</em>, the &lsquo;forever&rsquo; of Psalm 110:4 quoted at <a href="hebrews-5.html#v5-6">Hebrews 5:6</a>, and this translation keeps the two apart. KJV and ASV at 7:3 &lsquo;continually&rsquo;; NWT 1984 &lsquo;perpetually.&rsquo;',
+    ('Hebrews', 7, 3)))
+DICTIONARY_ES['dienekes'] = ('di&#275;nekés',
+    'CONTINUO, ininterrumpido &mdash; en la frase <em>eis to di&#275;nek&#275;s</em>, «a perpetuidad». &#9888; Está en cuatro versículos, todos en Hebreos: Melquisedec «permanece sacerdote a perpetuidad» (<a href="hebrews-7.es.html#v7-3">Hebreos 7:3</a>), y 10:1, 10:12 y 10:14 (todavía no en estas páginas). Es una frase distinta de <em>eis ton ai&#333;na</em>, el «para siempre» del Salmo 110:4 citado en <a href="hebrews-5.es.html#v5-6">Hebreos 5:6</a>, y esta traducción mantiene separadas las dos. RV60 en 7:3 «para siempre»; TNM 1987 «perpetuamente».')
+
+DICTIONARY.append(('akrothinion', 'akrothinion', 'ἀκροθίνιον', 'akrothinion',
+    'THE BEST OF THE SPOILS, the top of the heap &mdash; from <em>akros</em>, &lsquo;topmost&rsquo;; the choicest part of plunder, which Greeks set aside for the gods (the custom reported, not checked here). &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-4">Hebrews 7:4</a>, &lsquo;to whom Abraham the patriarch gave a tenth from the best of the spoils.&rsquo; KJV &lsquo;the spoils&rsquo;; ASV and NWT 1984 &lsquo;the chief spoils&rsquo;; Douay &lsquo;the principal things.&rsquo;',
+    ('Hebrews', 7, 4)))
+DICTIONARY_ES['akrothinion'] = ('akrothínion',
+    'LO MEJOR DEL BOTÍN, lo de encima del montón &mdash; de <em>akros</em>, «lo más alto»; la parte escogida del botín, que los griegos apartaban para los dioses (la costumbre referida, no comprobada aquí). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-4">Hebreos 7:4</a>, «a quien Abraham el patriarca dio la décima parte de lo mejor del botín». RV60 «del botín»; TNM 1987 «de los despojos principales».')
+
+DICTIONARY.append(('dekate', 'dekatē', 'δεκάτη', 'dekatē',
+    'A TENTH, a tithe &mdash; the feminine of <em>dekatos</em>, &lsquo;tenth,&rsquo; with <em>meris</em>, &lsquo;part,&rsquo; understood; the Greek of Genesis 14:20 for the Hebrew <em>ma&rsquo;aser</em> (<a href="dictionary.html#maaser">ma&rsquo;aser</a>). &#9888; Hebrews 7 uses the noun at <a href="hebrews-7.html#v7-2">Hebrews 7:2</a>, <a href="hebrews-7.html#v7-4">7:4</a>, <a href="hebrews-7.html#v7-8">7:8</a> and <a href="hebrews-7.html#v7-9">7:9</a>, and two verbs built on it: <em>apodekato&#333;</em>, &lsquo;to collect a tenth from,&rsquo; of the sons of Levi at <a href="hebrews-7.html#v7-5">7:5</a>, the verb of &lsquo;you tithe the mint&rsquo; at <a href="matthew-23.html#v23-23">Matthew 23:23</a> and <a href="luke-11.html#v11-42">Luke 11:42</a> and of &lsquo;I give a tenth of everything I acquire&rsquo; at <a href="luke-18.html#v18-12">Luke 18:12</a>; and <em>dekato&#333;</em>, &lsquo;to take a tenth,&rsquo; at <a href="hebrews-7.html#v7-6">7:6</a> and <a href="hebrews-7.html#v7-9">7:9</a>, where Levi &lsquo;has paid tithes&rsquo; &mdash; in the Greek, &lsquo;has been tithed.&rsquo; KJV &lsquo;the tenth&rsquo; and &lsquo;tithes&rsquo;; NWT 1984 &lsquo;a tenth&rsquo; and &lsquo;tithes.&rsquo;',
+    ('Hebrews', 7, 2)))
+DICTIONARY_ES['dekate'] = ('dekát&#275;',
+    'LA DÉCIMA PARTE, el diezmo &mdash; el femenino de <em>dekatos</em>, «décimo», con <em>meris</em>, «parte», sobrentendido; el griego de Génesis 14:20 para el hebreo <em>ma&rsquo;aser</em> (<a href="diccionario.html#maaser">ma&rsquo;aser</a>). &#9888; Hebreos 7 usa el sustantivo en <a href="hebrews-7.es.html#v7-2">Hebreos 7:2</a>, <a href="hebrews-7.es.html#v7-4">7:4</a>, <a href="hebrews-7.es.html#v7-8">7:8</a> y <a href="hebrews-7.es.html#v7-9">7:9</a>, y dos verbos formados sobre él: <em>apodekató&#333;</em>, «cobrar la décima parte de», de los hijos de Leví en <a href="hebrews-7.es.html#v7-5">7:5</a>, el verbo de «diezman la menta» en <a href="matthew-23.es.html#v23-23">Mateo 23:23</a> y <a href="luke-11.es.html#v11-42">Lucas 11:42</a> y de «doy el diezmo de todo lo que gano» en <a href="luke-18.es.html#v18-12">Lucas 18:12</a>; y <em>dekató&#333;</em>, «tomar la décima parte», en <a href="hebrews-7.es.html#v7-6">7:6</a> y <a href="hebrews-7.es.html#v7-9">7:9</a>, donde Leví «ha pagado los diezmos» &mdash; en el griego, «ha sido diezmado». RV60 «los diezmos»; TNM 1987 «el décimo» y «los diezmos».')
+
+DICTIONARY.append(('hierateia', 'hierateia', 'ἱερατεία', 'hierateia',
+    'PRIESTLY OFFICE, the service of a priest &mdash; a different word from <em>hier&#333;syn&#275;</em>, &lsquo;priesthood&rsquo; (<a href="dictionary.html#hierosyne">hier&#333;syn&#275;</a>). &#9888; It stands in two verses of the New Testament: <a href="luke-1.html#v9">Luke 1:9</a>, &lsquo;according to the custom of the priesthood,&rsquo; when the lot falls to Zechariah to burn incense, and <a href="hebrews-7.html#v7-5">Hebrews 7:5</a>, the sons of Levi &lsquo;who receive the priestly office.&rsquo; KJV at Hebrews 7:5 &lsquo;the office of the priesthood&rsquo;; ASV &lsquo;the priest&rsquo;s office&rsquo;; NWT 1984 &lsquo;their priestly office.&rsquo;',
+    ('Luke', 1, 9)))
+DICTIONARY_ES['hierateia'] = ('hierateía',
+    'OFICIO SACERDOTAL, el servicio de un sacerdote &mdash; una palabra distinta de <em>hier&#333;syn&#275;</em>, «sacerdocio» (<a href="diccionario.html#hierosyne">hier&#333;syn&#275;</a>). &#9888; Está en dos versículos del Nuevo Testamento: <a href="luke-1.es.html#v9">Lucas 1:9</a>, «conforme a la costumbre del sacerdocio», cuando a Zacarías le toca en suerte quemar el incienso, y <a href="hebrews-7.es.html#v7-5">Hebreos 7:5</a>, los hijos de Leví «que reciben el oficio sacerdotal». RV60 en Hebreos 7:5 «el sacerdocio»; TNM 1987 «su oficio sacerdotal».')
+
+DICTIONARY.append(('hierosyne', 'hierōsynē', 'ἱερωσύνη', 'hierōsynē',
+    'PRIESTHOOD &mdash; the institution and its standing, as against <em>hierateia</em>, the &lsquo;priestly office&rsquo; or service (<a href="dictionary.html#hierateia">hierateia</a>). &#9888; It stands in three verses of the New Testament, all in Hebrews 7: &lsquo;the Levitical priesthood&rsquo; (<a href="hebrews-7.html#v7-11">Hebrews 7:11</a>), &lsquo;when the priesthood is changed&rsquo; (<a href="hebrews-7.html#v7-12">7:12</a>), and &lsquo;a permanent priesthood&rsquo; (<a href="hebrews-7.html#v7-24">7:24</a>). KJV &lsquo;priesthood&rsquo; at all three.',
+    ('Hebrews', 7, 11)))
+DICTIONARY_ES['hierosyne'] = ('hier&#333;sýn&#275;',
+    'SACERDOCIO &mdash; la institución y su rango, frente a <em>hierateia</em>, el «oficio sacerdotal» o servicio (<a href="diccionario.html#hierateia">hierateia</a>). &#9888; Está en tres versículos del Nuevo Testamento, todos en Hebreos 7: «el sacerdocio levítico» (<a href="hebrews-7.es.html#v7-11">Hebreos 7:11</a>), «cambiado el sacerdocio» (<a href="hebrews-7.es.html#v7-12">7:12</a>) y «un sacerdocio permanente» (<a href="hebrews-7.es.html#v7-24">7:24</a>). RV60 «sacerdocio» en los tres.')
+
+DICTIONARY.append(('teleiosis', 'teleiōsis', 'τελείωσις', 'teleiōsis',
+    'COMPLETION, fulfilment &mdash; the noun of <em>teleio&#333;</em>, &lsquo;to make complete,&rsquo; the verb of <a href="hebrews-2.html#v2-10">Hebrews 2:10</a>, <a href="hebrews-5.html#v5-9">Hebrews 5:9</a>, <a href="hebrews-7.html#v7-19">Hebrews 7:19</a> and <a href="hebrews-7.html#v7-28">Hebrews 7:28</a>. &#9888; It stands in two verses of the New Testament: <a href="luke-1.html#v45">Luke 1:45</a>, &lsquo;there would be a fulfilment of the things spoken to her,&rsquo; and <a href="hebrews-7.html#v7-11">Hebrews 7:11</a>, &lsquo;if completion had been through the Levitical priesthood.&rsquo; KJV at Luke 1:45 &lsquo;a performance&rsquo;; at Hebrews 7:11 &lsquo;perfection.&rsquo;',
+    ('Luke', 1, 45)))
+DICTIONARY_ES['teleiosis'] = ('teleí&#333;sis',
+    'CONSUMACIÓN, cumplimiento &mdash; el sustantivo de <em>teleió&#333;</em>, «hacer completo», el verbo de <a href="hebrews-2.es.html#v2-10">Hebreos 2:10</a>, <a href="hebrews-5.es.html#v5-9">Hebreos 5:9</a>, <a href="hebrews-7.es.html#v7-19">Hebreos 7:19</a> y <a href="hebrews-7.es.html#v7-28">Hebreos 7:28</a>. &#9888; Está en dos versículos del Nuevo Testamento: <a href="luke-1.es.html#v45">Lucas 1:45</a>, «habrá cumplimiento de las cosas que le fueron dichas», y <a href="hebrews-7.es.html#v7-11">Hebreos 7:11</a>, «si la consumación hubiera sido por medio del sacerdocio levítico». RV60 en Hebreos 7:11 «la perfección».')
+
+DICTIONARY.append(('metathesis', 'metathesis', 'μετάθεσις', 'metathesis',
+    'CHANGE, removal, transfer &mdash; the noun of <em>metatith&#275;mi</em>, &lsquo;to change, to transfer.&rsquo; &#9888; It stands in three verses of the New Testament: &lsquo;a change of law&rsquo; (<a href="hebrews-7.html#v7-12">Hebrews 7:12</a>); Enoch&rsquo;s being taken (<a href="hebrews-11.html#v11-5">Hebrews 11:5</a>); and the removal of what can be shaken at Hebrews 12:27 (not yet on these pages). The verb is the &lsquo;deserting&rsquo; of <a href="galatians-1.html#v6">Galatians 1:6</a>, and its negative <em>ametathetos</em> is the &lsquo;unchangeable&rsquo; of <a href="hebrews-6.html#v6-17">Hebrews 6:17</a> (<a href="dictionary.html#ametathetos">ametathetos</a>). KJV at 7:12 &lsquo;a change&rsquo;; Douay &lsquo;a translation.&rsquo;',
+    ('Hebrews', 7, 12)))
+DICTIONARY_ES['metathesis'] = ('metáthesis',
+    'CAMBIO, traslado &mdash; el sustantivo de <em>metatíth&#275;mi</em>, «cambiar, trasladar». &#9888; Está en tres versículos del Nuevo Testamento: «un cambio de ley» (<a href="hebrews-7.es.html#v7-12">Hebreos 7:12</a>); el ser llevado de Enoc (<a href="hebrews-11.es.html#v11-5">Hebreos 11:5</a>); y la remoción de lo que puede ser sacudido en Hebreos 12:27 (todavía no en estas páginas). El verbo es el «se estén apartando» de <a href="galatians-1.es.html#v6">Gálatas 1:6</a>, y su negación <em>ametathetos</em> es el «inmutable» de <a href="hebrews-6.es.html#v6-17">Hebreos 6:17</a> (<a href="diccionario.html#ametathetos">ametathetos</a>). RV60 en 7:12 «cambio»; RV 1909 «mudanza».')
+
+DICTIONARY.append(('akatalytos', 'akatalytos', 'ἀκατάλυτος', 'akatalytos',
+    'INDESTRUCTIBLE, indissoluble &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>katalu&#333;</em>, &lsquo;to destroy, to dissolve,&rsquo; the verb of &lsquo;I will destroy this sanctuary&rsquo; (<a href="mark-14.html#v14-58">Mark 14:58</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-16">Hebrews 7:16</a>, &lsquo;according to the power of an indestructible life.&rsquo; KJV &lsquo;endless&rsquo;; Douay &lsquo;indissoluble&rsquo;; NWT 1984 &lsquo;indestructible.&rsquo;',
+    ('Hebrews', 7, 16)))
+DICTIONARY_ES['akatalytos'] = ('akatálytos',
+    'INDESTRUCTIBLE, indisoluble &mdash; <em>a-</em>, «no», y <em>katalý&#333;</em>, «destruir, disolver», el verbo de «Yo destruiré este santuario» (<a href="mark-14.es.html#v14-58">Marcos 14:58</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-16">Hebreos 7:16</a>, «según el poder de una vida indestructible». RV60 «indestructible»; RV 1909 «indisoluble».')
+
+DICTIONARY.append(('athetesis', 'athetēsis', 'ἀθέτησις', 'athetēsis',
+    'SETTING ASIDE, annulment &mdash; the noun of <em>athete&#333;</em>, &lsquo;to set aside, to reject.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;a setting aside of a former commandment&rsquo; (<a href="hebrews-7.html#v7-18">Hebrews 7:18</a>), and the putting away of sin at Hebrews 9:26 (not yet on these pages). The verb is Paul&rsquo;s at <a href="galatians-3.html#v15">Galatians 3:15</a>, of a covenant once it has been confirmed. KJV at 7:18 &lsquo;a disannulling&rsquo;; NWT 1984 &lsquo;a setting aside.&rsquo;',
+    ('Hebrews', 7, 18)))
+DICTIONARY_ES['athetesis'] = ('athét&#275;sis',
+    'ANULACIÓN, abrogación &mdash; el sustantivo de <em>athete&#333;</em>, «desechar, anular». &#9888; Está en dos versículos del Nuevo Testamento: «la anulación de un mandamiento anterior» (<a href="hebrews-7.es.html#v7-18">Hebreos 7:18</a>), y la remoción del pecado en Hebreos 9:26 (todavía no en estas páginas). El verbo es el de Pablo en <a href="galatians-3.es.html#v15">Gálatas 3:15</a>, de un pacto una vez confirmado. RV 1909 en 7:18 «se abroga»; TNM 1987 «un poner a un lado».')
+
+DICTIONARY.append(('horkomosia', 'horkōmosia', 'ὁρκωμοσία', 'horkōmosia',
+    'A SWORN OATH, the taking of an oath &mdash; <em>horkos</em>, &lsquo;oath,&rsquo; and <em>omnymi</em>, &lsquo;to swear.&rsquo; &#9888; It stands in three verses of the New Testament, all in Hebrews 7 (<a href="hebrews-7.html#v7-20">Hebrews 7:20</a>, <a href="hebrews-7.html#v7-21">7:21</a>, <a href="hebrews-7.html#v7-28">7:28</a>), where the oath of Psalm 110:4, &lsquo;Jehovah has sworn,&rsquo; sets the Son&rsquo;s priesthood apart from the priests made without one. A different word from <em>horkos</em>, the &lsquo;oath&rsquo; of <a href="hebrews-6.html#v6-16">Hebrews 6:16</a>. KJV &lsquo;an oath&rsquo;; ASV &lsquo;the taking of an oath&rsquo;; NWT 1984 &lsquo;a sworn oath.&rsquo;',
+    ('Hebrews', 7, 20)))
+DICTIONARY_ES['horkomosia'] = ('hork&#333;mosía',
+    'UN JURAMENTO SOLEMNE, el prestar juramento &mdash; <em>hórkos</em>, «juramento», y <em>ómnymi</em>, «jurar». &#9888; Está en tres versículos del Nuevo Testamento, todos en Hebreos 7 (<a href="hebrews-7.es.html#v7-20">Hebreos 7:20</a>, <a href="hebrews-7.es.html#v7-21">7:21</a>, <a href="hebrews-7.es.html#v7-28">7:28</a>), donde el juramento del Salmo 110:4, «Jehová ha jurado», aparta el sacerdocio del Hijo del de los sacerdotes hechos sin él. Una palabra distinta de <em>hórkos</em>, el «juramento» de <a href="hebrews-6.es.html#v6-16">Hebreos 6:16</a>. RV60 «juramento»; TNM 1987 «firme juramento».')
+
+DICTIONARY.append(('engyos', 'engyos', 'ἔγγυος', 'engyos',
+    'A GUARANTOR, a surety &mdash; the one who stands security for another&rsquo;s debt or promise. &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-22">Hebrews 7:22</a>, &lsquo;Jesus has become the guarantor of a better covenant,&rsquo; the first time the letter names the covenant (<a href="dictionary.html#diatheke">diath&#275;k&#275;</a>). KJV &lsquo;a surety&rsquo;; NWT 1984 &lsquo;the one given in pledge&rsquo;; NIV &lsquo;the guarantor.&rsquo;',
+    ('Hebrews', 7, 22)))
+DICTIONARY_ES['engyos'] = ('éngyos',
+    'UN FIADOR, garante &mdash; el que responde por la deuda o la promesa de otro. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-22">Hebreos 7:22</a>, «Jesús ha llegado a ser fiador de un pacto mejor», la primera vez que la carta nombra el pacto (<a href="diccionario.html#diatheke">diath&#275;k&#275;</a>). RV60 «fiador»; TNM 1987 «el que es dado en fianza».')
+
+DICTIONARY.append(('aparabatos', 'aparabatos', 'ἀπαράβατος', 'aparabatos',
+    'PERMANENT &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>parabain&#333;</em>, &lsquo;to step aside, to pass over.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-7.html#v7-24">Hebrews 7:24</a>, &lsquo;he has a permanent priesthood,&rsquo; and it is read two ways: &lsquo;unchangeable, inviolable,&rsquo; or &lsquo;not passing to another,&rsquo; a priesthood with no successor. KJV &lsquo;unchangeable&rsquo;; Geneva &lsquo;which cannot pass from one to another&rsquo;; NWT 1984 &lsquo;without any successors.&rsquo;',
+    ('Hebrews', 7, 24)))
+DICTIONARY_ES['aparabatos'] = ('aparábatos',
+    'PERMANENTE &mdash; <em>a-</em>, «no», y <em>parabaín&#333;</em>, «apartarse, pasar de largo». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-7.es.html#v7-24">Hebreos 7:24</a>, «tiene un sacerdocio permanente», y se lee de dos maneras: «inmutable, inviolable», o «que no pasa a otro», un sacerdocio sin sucesor. RV60 «inmutable»; TNM 1987 «sin sucesores».')
+
+DICTIONARY.append(('panteles', 'pantelēs', 'παντελής', 'pantelēs',
+    'COMPLETE, entire &mdash; in the phrase <em>eis to pantel&#275;s</em>, &lsquo;completely&rsquo; or &lsquo;at all.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="luke-13.html#v13-11">Luke 13:11</a>, the woman who &lsquo;could not straighten up at all,&rsquo; and <a href="hebrews-7.html#v7-25">Hebrews 7:25</a>, &lsquo;able to save completely.&rsquo; At Hebrews 7:25 readers take it as completeness or as time, and the shelf divides: KJV &lsquo;to the uttermost&rsquo;; Douay &lsquo;for ever&rsquo;; NWT 1984 &lsquo;completely.&rsquo;',
+    ('Luke', 13, 11)))
+DICTIONARY_ES['panteles'] = ('pantel&#275;s',
+    'COMPLETO, entero &mdash; en la frase <em>eis to pantel&#275;s</em>, «por completo» o «en absoluto». &#9888; Está en dos versículos del Nuevo Testamento: <a href="luke-13.es.html#v13-11">Lucas 13:11</a>, la mujer que «no podía enderezarse en absoluto», y <a href="hebrews-7.es.html#v7-25">Hebreos 7:25</a>, «puede salvar por completo». En Hebreos 7:25 los lectores lo entienden como plenitud o como tiempo, y el estante se divide: RV60 «perpetuamente»; NVI «por completo».')
+
+DICTIONARY.append(('akakos', 'akakos', 'ἄκακος', 'akakos',
+    'INNOCENT, without guile &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>kakos</em>, &lsquo;bad.&rsquo; &#9888; It stands in two verses of the New Testament: <a href="romans-16.html#v16-18">Romans 16:18</a>, &lsquo;the hearts of the innocent,&rsquo; deceived by smooth speech, and <a href="hebrews-7.html#v7-26">Hebrews 7:26</a>, of the high priest. KJV at Hebrews 7:26 &lsquo;harmless&rsquo;; ASV and NWT 1984 &lsquo;guileless&rsquo;; Douay &lsquo;innocent.&rsquo;',
+    ('Romans', 16, 18)))
+DICTIONARY_ES['akakos'] = ('ákakos',
+    'INOCENTE, sin malicia &mdash; <em>a-</em>, «no», y <em>kakós</em>, «malo». &#9888; Está en dos versículos del Nuevo Testamento: <a href="romans-16.es.html#v16-18">Romanos 16:18</a>, «los corazones de los inocentes», engañados con palabras suaves, y <a href="hebrews-7.es.html#v7-26">Hebreos 7:26</a>, del sumo sacerdote. RV60 en Hebreos 7:26 «inocente»; TNM 1987 «sin engaño».')
+
+DICTIONARY.append(('amiantos', 'amiantos', 'ἀμίαντος', 'amiantos',
+    'UNDEFILED, unstained &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>miain&#333;</em>, &lsquo;to stain, to defile.&rsquo; &#9888; It stands in four verses of the New Testament: the high priest &lsquo;holy, innocent, undefiled&rsquo; (<a href="hebrews-7.html#v7-26">Hebrews 7:26</a>); the marriage bed at Hebrews 13:4 (not yet on these pages); &lsquo;religion pure and undefiled&rsquo; (<a href="james-1.html#v27">James 1:27</a>); and &lsquo;an inheritance imperishable and undefiled&rsquo; (<a href="1-peter-1.html#v4">1 Peter 1:4</a>). KJV &lsquo;undefiled&rsquo; at all four.',
+    ('Hebrews', 7, 26)))
+DICTIONARY_ES['amiantos'] = ('amíantos',
+    'SIN MÁCULA, incontaminado &mdash; <em>a-</em>, «no», y <em>miaín&#333;</em>, «manchar, contaminar». &#9888; Está en cuatro versículos del Nuevo Testamento: el sumo sacerdote «santo, inocente, sin mácula» (<a href="hebrews-7.es.html#v7-26">Hebreos 7:26</a>); el lecho matrimonial en Hebreos 13:4 (todavía no en estas páginas); «la religión pura y sin mácula» (<a href="james-1.es.html#v27">Santiago 1:27</a>); y «una herencia incorruptible, incontaminada e inmarcesible» (<a href="1-peter-1.es.html#v4">1 Pedro 1:4</a>). RV60 en Hebreos 7:26 «sin mancha»; TNM 1987 «incontaminado».')
+
+def _heb7_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb7_fix([('6:20</a>, and 7:11 and 7:17, not yet on these pages).', '6:20</a>, <a href="hebrews-7.html#v7-11">7:11</a> and <a href="hebrews-7.html#v7-17">7:17</a>).'), ('6:20</a>, y 7:11 y 7:17, todavía no en estas páginas).', '6:20</a>, <a href="hebrews-7.es.html#v7-11">7:11</a> y <a href="hebrews-7.es.html#v7-17">7:17</a>).'), ('and Abraham at Hebrews 7:4 (not yet on these pages).', 'and Abraham at <a href="hebrews-7.html#v7-4">Hebrews 7:4</a>.'), ('y Abraham en Hebreos 7:4 (todavía no en estas páginas).', 'y Abraham en <a href="hebrews-7.es.html#v7-4">Hebreos 7:4</a>.'), ('1 Corinthians 15:6 (&lsquo;at one time,&rsquo; of the appearance to more than five hundred) and Hebrews 7:27, 9:12 and 10:10 (these four not yet on these pages).', '<a href="1-corinthians-15.html#v6">1 Corinthians 15:6</a> (&lsquo;at one time,&rsquo; of the appearance to more than five hundred), <a href="hebrews-7.html#v7-27">Hebrews 7:27</a> (&lsquo;once for all when he offered up himself&rsquo;), and 9:12 and 10:10 (these two not yet on these pages).'), ('1 Corintios 15:6 («a la vez», de la aparición a más de quinientos) y Hebreos 7:27, 9:12 y 10:10 (estos cuatro todavía no en estas páginas).', '<a href="1-corinthians-15.es.html#v6">1 Corintios 15:6</a> («a la vez», de la aparición a más de quinientos), <a href="hebrews-7.es.html#v7-27">Hebreos 7:27</a> («una vez para siempre cuando se ofreció a sí mismo»), y 9:12 y 10:10 (estos dos todavía no en estas páginas).'), ('2 Corinthians 3:3 (&lsquo;tablets of flesh&rsquo;) and Hebrews 7:16 (these two not yet on these pages).', '<a href="2-corinthians-3.html#v3">2 Corinthians 3:3</a> (&lsquo;tablets of human hearts&rsquo;) and <a href="hebrews-7.html#v7-16">Hebrews 7:16</a> (&lsquo;the law of a fleshly commandment&rsquo;).'), ('2 Corintios 3:3 («tablas de carne») y Hebreos 7:16 (estos dos todavía no en estas páginas).', '<a href="2-corinthians-3.es.html#v3">2 Corintios 3:3</a> («tablas de corazones de carne») y <a href="hebrews-7.es.html#v7-16">Hebreos 7:16</a> («la ley de un mandamiento carnal»).'), ('and Hebrews 7:25 (not yet on these pages);', 'and <a href="hebrews-7.html#v7-25">Hebrews 7:25</a> (&lsquo;he always lives to plead for them&rsquo;);'), ('y Hebreos 7:25 (todavía no en estas páginas);', 'y <a href="hebrews-7.es.html#v7-25">Hebreos 7:25</a> («vive siempre para interceder por ellos»);'), ('and Hebrews 7:14, of the Lord&rsquo;s descent from Judah (not yet on these pages).', 'and <a href="hebrews-7.html#v7-14">Hebrews 7:14</a>, of the Lord&rsquo;s descent from Judah.'), ('y Hebreos 7:14, de que nuestro Señor surgió de Judá (todavía no en estas páginas).', 'y <a href="hebrews-7.es.html#v7-14">Hebreos 7:14</a>, de que nuestro Señor ha surgido de Judá.'), ('and Hebrews 7:18 (not yet on these pages). KJV', 'and <a href="hebrews-7.html#v7-18">Hebrews 7:18</a>, the former commandment set aside &lsquo;because of its weakness and unprofitableness.&rsquo; KJV'), ('y Hebreos 7:18 (todavía no en estas páginas). RV60', 'y <a href="hebrews-7.es.html#v7-18">Hebreos 7:18</a>, el mandamiento anterior anulado «a causa de su debilidad y de su falta de provecho». RV60'), ("and the letter to the Hebrews (chapters 5–7) makes his order the type of Christ's own priesthood.", 'and the letter to the Hebrews (chapters 5–7) makes his order the type of Christ\'s own priesthood: \'without father, without mother, without genealogy\' (<a href="hebrews-7.html#v7-3">Hebrews 7:3</a>).'), ("'sin padre, sin madre, sin genealogía' (7:3),", '\'sin padre, sin madre, sin genealogía\' (<a href="hebrews-7.es.html#v7-3">7:3</a>),')])
+
+XREFS.extend([
+    (("Genesis", 14, 18), ("Hebrews", 7, 1), "Melchizedek, king of Salem, priest of God Most High"),
+    (("Genesis", 14, 20), ("Hebrews", 7, 2), "a tenth of everything"),
+    (("Hebrews", 6, 20), ("Hebrews", 7, 1), "order of Melchizedek"),
+    (("Acts", 2, 29), ("Hebrews", 7, 4), "the patriarch"),
+    (("Numbers", 18, 21), ("Hebrews", 7, 5), "tithes to the sons of Levi"),
+    (("Genesis", 35, 11), ("Hebrews", 7, 5), "out of the loins"),
+    (("Hebrews", 6, 16), ("Hebrews", 7, 7), "dispute"),
+    (("Luke", 1, 45), ("Hebrews", 7, 11), "completion, fulfilment"),
+    (("Hebrews", 11, 5), ("Hebrews", 7, 12), "change, taken up"),
+    (("Numbers", 24, 17), ("Hebrews", 7, 14), "rise, spring up"),
+    (("Revelation", 5, 5), ("Hebrews", 7, 14), "the tribe of Judah"),
+    (("Hebrews", 4, 15), ("Hebrews", 7, 15), "in the likeness"),
+    (("Mark", 14, 58), ("Hebrews", 7, 16), "destroy, indestructible"),
+    (("Hebrews", 5, 6), ("Hebrews", 7, 17), "a priest forever according to the order of Melchizedek"),
+    (("Galatians", 3, 15), ("Hebrews", 7, 18), "set aside"),
+    (("Titus", 3, 9), ("Hebrews", 7, 18), "unprofitable"),
+    (("2 Corinthians", 7, 8), ("Hebrews", 7, 21), "regret, change his mind"),
+    (("Luke", 22, 20), ("Hebrews", 7, 22), "covenant"),
+    (("Numbers", 20, 28), ("Hebrews", 7, 23), "prevented by death"),
+    (("Luke", 13, 11), ("Hebrews", 7, 25), "completely, at all"),
+    (("Romans", 8, 34), ("Hebrews", 7, 25), "pleads for us"),
+    (("Hebrews", 2, 10), ("Hebrews", 7, 26), "it was fitting"),
+    (("Romans", 16, 18), ("Hebrews", 7, 26), "innocent"),
+    (("James", 1, 27), ("Hebrews", 7, 26), "undefiled"),
+    (("Leviticus", 16, 6), ("Hebrews", 7, 27), "first for his own sins"),
+    (("Leviticus", 6, 13), ("Hebrews", 7, 27), "daily offering"),
+    (("Romans", 6, 10), ("Hebrews", 7, 27), "once for all"),
+    (("Hebrews", 5, 2), ("Hebrews", 7, 28), "weakness"),
+])
+
+CHAPTER_ART["heb7"] = [dict(
+    file="witz-abraham-and-melchizedek.jpg",
+    title="Abraham before Melchizedek",   title_es="Abraham ante Melquisedec",
+    artist="Konrad Witz",
+    year="c. 1435",
+    location="Kunstmuseum Basel (a panel of the Heilspiegel altarpiece)",
+    location_es="Kunstmuseum de Basilea (una tabla del retablo del Heilspiegel)",
+    alt="A seated king in a long red robe and a jewelled green hat holds out a gold cup with a round loaf on top to a kneeling man in full steel armour, who reaches "
+        "up with both hands, against a gold background.",
+    note="&#9888; Witz paints the meeting of <a href=\"hebrews-7.html#v7-1\">verse 1</a>: the king of Salem with bread and wine, and Abraham, still armed from "
+         "&lsquo;the slaughter of the kings,&rsquo; kneeling to receive the blessing &mdash; &lsquo;the lesser is blessed by the better&rsquo; "
+         "(<a href=\"hebrews-7.html#v7-7\">verse 7</a>).",
+    note_es="&#9888; Witz pinta el encuentro del <a href=\"hebrews-7.es.html#v7-1\">versículo 1</a>: el rey de Salem con pan y vino, y Abraham, armado todavía "
+            "desde «la matanza de los reyes», arrodillado para recibir la bendición: «lo menor es bendecido por lo mejor» "
+            "(<a href=\"hebrews-7.es.html#v7-7\">versículo 7</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Konrad_Witz_-_Abraham_et_Melchis%C3%A9dech_(c._1435).jpg",
+)]
+
+CHRON_CHAPTERS["heb7"] = dict(era='apostolic',
+    when="Melchizedek, king of Salem and priest of God Most High, read from Genesis 14 and Psalm 110: without father, without mother, without genealogy, receiving a tenth from Abraham and blessing him, so that Levi 'paid tithes' through Abraham. A change of priesthood brings a change of law; a priest from Judah 'by the power of an indestructible life'; the oath 'Jehovah has sworn'; Jesus the guarantor of a better covenant, who always lives to plead, and who offered himself once for all.",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
