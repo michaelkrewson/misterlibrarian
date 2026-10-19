@@ -42340,3 +42340,165 @@ CHAPTER_ART["heb9"] = [dict(
 CHRON_CHAPTERS["heb9"] = dict(era='apostolic',
     when="The first covenant's tent and its furniture, and the high priest's entry into the inner room once a year, not without blood; then Christ entering the sanctuary through his own blood, having obtained eternal redemption; the mediator of a new covenant, with covenant and will set side by side; the blood of the covenant at Sinai; and Christ offered once, to be seen a second time by those who eagerly await him.",
     clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
+# ---- Hebrews 10 -----------------------------------------------------------
+DICTIONARY.append(('holokautoma', 'holokautōma', 'ὁλοκαύτωμα', 'holokautōma',
+    'WHOLE BURNT OFFERING &mdash; <em>holos</em>, &lsquo;whole,&rsquo; and <em>kai&#333;</em>, &lsquo;to burn&rsquo;: the offering burned entire on the altar, the Greek Bible&rsquo;s word for the Hebrew <em>olah</em>. &#9888; It stands in three verses of the New Testament: the scribe&rsquo;s &lsquo;more than all whole burnt offerings and sacrifices&rsquo; (<a href="mark-12.html#v12-33">Mark 12:33</a>), and Psalm 40 as quoted at <a href="hebrews-10.html#v10-6">Hebrews 10:6</a> and <a href="hebrews-10.html#v10-8">10:8</a>. KJV &lsquo;burnt offerings&rsquo;; ASV and NWT 1984 &lsquo;whole burnt offerings.&rsquo;',
+    ('Mark', 12, 33)))
+DICTIONARY_ES['holokautoma'] = ('holokaút&#333;ma',
+    'HOLOCAUSTO &mdash; <em>hólos</em>, «entero», y <em>kaí&#333;</em>, «quemar»: la ofrenda quemada entera sobre el altar, la palabra de la Biblia griega para el hebreo <em>olah</em>. &#9888; Está en tres versículos del Nuevo Testamento: el «más que todos los holocaustos y sacrificios» del escriba (<a href="mark-12.es.html#v12-33">Marcos 12:33</a>), y el Salmo 40 citado en <a href="hebrews-10.es.html#v10-6">Hebreos 10:6</a> y <a href="hebrews-10.es.html#v10-8">10:8</a>. RV60 «holocaustos».')
+
+DICTIONARY.append(('kephalis', 'kephalis', 'κεφαλίς', 'kephalis',
+    'A ROLL, a scroll &mdash; from <em>kephal&#275;</em>, &lsquo;head&rsquo;: the knob at the end of the rod a scroll was wound on, and so the scroll itself. &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-7">Hebrews 10:7</a>, &lsquo;in the roll of the book it is written of me,&rsquo; from the Greek of Psalm 40 (checked). KJV &lsquo;in the volume of the book&rsquo;; ASV and NWT 1984 &lsquo;in the roll of the book&rsquo;; Douay &lsquo;in the head of the book.&rsquo;',
+    ('Hebrews', 10, 7)))
+DICTIONARY_ES['kephalis'] = ('kephalís',
+    'UN ROLLO &mdash; de <em>kephal&#275;</em>, «cabeza»: el pomo del extremo de la vara en que se enrollaba un rollo, y de ahí el rollo mismo. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-7">Hebreos 10:7</a>, «en el rollo del libro está escrito de mí», del griego del Salmo 40 (comprobado). RV 1909 «en la cabecera del libro»; RV60 y TNM 1987 «en el rollo del libro».')
+
+DICTIONARY.append(('hypopodion', 'hypopodion', 'ὑποπόδιον', 'hypopodion',
+    'FOOTSTOOL &mdash; <em>hypo</em>, &lsquo;under,&rsquo; and <em>pous</em>, &lsquo;foot.&rsquo; &#9888; It stands in seven verses of the New Testament. Four are Psalm 110:1, &lsquo;until I make your enemies a footstool for your feet&rsquo;: <a href="luke-20.html#v20-43">Luke 20:43</a>, <a href="acts-2.html#v2-35">Acts 2:35</a>, <a href="hebrews-1.html#v13">Hebrews 1:13</a> and <a href="hebrews-10.html#v10-13">Hebrews 10:13</a>; the earth as God&rsquo;s footstool is <a href="matthew-5.html#v5-35">Matthew 5:35</a> and <a href="acts-7.html#v7-49">Acts 7:49</a>, &lsquo;the earth is the footstool of my feet&rsquo;; and James 2:3 has a seat by someone&rsquo;s footstool (not yet on these pages). KJV and NIV &lsquo;footstool.&rsquo;',
+    ('Matthew', 5, 35)))
+DICTIONARY_ES['hypopodion'] = ('hypopódion',
+    'ESTRADO &mdash; <em>hypó</em>, «debajo», y <em>poús</em>, «pie». &#9888; Está en siete versículos del Nuevo Testamento. Cuatro son el Salmo 110:1, «hasta que ponga a tus enemigos por estrado de tus pies»: <a href="luke-20.es.html#v20-43">Lucas 20:43</a>, <a href="acts-2.es.html#v2-35">Hechos 2:35</a>, <a href="hebrews-1.es.html#v13">Hebreos 1:13</a> y <a href="hebrews-10.es.html#v10-13">Hebreos 10:13</a>; la tierra como estrado de Dios es Mateo 5:35 (ya en estas páginas, todavía no en español) y <a href="acts-7.es.html#v7-49">Hechos 7:49</a>, «la tierra el estrado de mis pies»; y Santiago 2:3 tiene un asiento junto al estrado de alguien (todavía no en estas páginas). RV60 «estrado».')
+
+DICTIONARY.append(('prosphatos', 'prosphatos', 'πρόσφατος', 'prosphatos',
+    'NEW, recent, fresh &mdash; an adjective whose parts are reported to have once meant &lsquo;freshly slain&rsquo; (reported, not checked here); in ordinary use it means recent. &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-20">Hebrews 10:20</a>, &lsquo;the new and living way&rsquo;; its adverb is Aquila &lsquo;lately come from Italy&rsquo; at <a href="acts-18.html#v18-2">Acts 18:2</a>. KJV, ASV and NWT 1984 &lsquo;a new and living way.&rsquo;',
+    ('Hebrews', 10, 20)))
+DICTIONARY_ES['prosphatos'] = ('prósphatos',
+    'NUEVO, reciente, fresco &mdash; un adjetivo cuyas partes se dice que significaban en otro tiempo «recién sacrificado» (dato referido, no comprobado aquí); en el uso corriente significa reciente. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-20">Hebreos 10:20</a>, «el camino nuevo y vivo»; su adverbio es Áquila «recién llegado de Italia» en <a href="acts-18.es.html#v18-2">Hechos 18:2</a>. RV60 «el camino nuevo y vivo».')
+
+DICTIONARY.append(('aklines', 'aklinēs', 'ἀκλινής', 'aklinēs',
+    'UNWAVERING, not bending &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <em>klin&#333;</em>, &lsquo;to bend, to lean.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-23">Hebrews 10:23</a>, &lsquo;Let us hold fast the confession of our hope unwavering.&rsquo; KJV &lsquo;without wavering&rsquo;; ASV &lsquo;that it waver not&rsquo;; NIV &lsquo;unswervingly.&rsquo;',
+    ('Hebrews', 10, 23)))
+DICTIONARY_ES['aklines'] = ('aklin&#275;s',
+    'INQUEBRANTABLE, que no se inclina &mdash; <em>a-</em>, «no», y <em>klín&#333;</em>, «inclinar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-23">Hebreos 10:23</a>, «Retengamos inquebrantable la confesión de nuestra esperanza». RV60 «sin fluctuar»; TNM 1987 «sin titubear».')
+
+DICTIONARY.append(('hekousios', 'hekousiōs', 'ἑκουσίως', 'hekousiōs',
+    'WILLFULLY, willingly, of one&rsquo;s own accord &mdash; the adverb of <em>hekousios</em>, &lsquo;voluntary.&rsquo; &#9888; As an adverb it stands in two verses of the New Testament: &lsquo;if we go on sinning willfully&rsquo; (<a href="hebrews-10.html#v10-26">Hebrews 10:26</a>), and the elders who shepherd &lsquo;willingly&rsquo; at 1 Peter 5:2 (not yet on these pages); the adjective is Paul&rsquo;s &lsquo;of your own free will&rsquo; at <a href="philemon-1.html#v14">Philemon 1:14</a>. At Hebrews 10:26 the KJV and ASV &lsquo;wilfully&rsquo;; NIV &lsquo;deliberately.&rsquo;',
+    ('Hebrews', 10, 26)))
+DICTIONARY_ES['hekousios'] = ('hekousí&#333;s',
+    'VOLUNTARIAMENTE, de buena gana, por propia voluntad &mdash; el adverbio de <em>hekoúsios</em>, «voluntario». &#9888; Como adverbio está en dos versículos del Nuevo Testamento: «si seguimos pecando voluntariamente» (<a href="hebrews-10.es.html#v10-26">Hebreos 10:26</a>), y los ancianos que apacientan «de buena gana» en 1 Pedro 5:2 (todavía no en estas páginas); el adjetivo es el «de tu propia voluntad» de Pablo en <a href="philemon-1.es.html#v14">Filemón 1:14</a>. En Hebreos 10:26 la RV60 «voluntariamente»; NVI «obstinadamente».')
+
+DICTIONARY.append(('ekdoche', 'ekdochē', 'ἐκδοχή', 'ekdochē',
+    'EXPECTATION, a waiting for &mdash; the noun of <em>ekdechomai</em>, &lsquo;to wait,&rsquo; the verb of the priest &lsquo;waiting until his enemies are made a footstool&rsquo; at <a href="hebrews-10.html#v10-13">Hebrews 10:13</a>. &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-27">Hebrews 10:27</a>, &lsquo;a fearful expectation of judgment.&rsquo; KJV &lsquo;a certain fearful looking for of judgment&rsquo;; ASV and NWT 1984 &lsquo;a certain fearful expectation.&rsquo;',
+    ('Hebrews', 10, 27)))
+DICTIONARY_ES['ekdoche'] = ('ekdoch&#275;',
+    'EXPECTACIÓN, espera &mdash; el sustantivo de <em>ekdéchomai</em>, «esperar», el verbo del sacerdote que está «esperando hasta que sus enemigos sean puestos por estrado» en <a href="hebrews-10.es.html#v10-13">Hebreos 10:13</a>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-27">Hebreos 10:27</a>, «una temible expectación de juicio». RV60 «una horrenda expectación de juicio».')
+
+DICTIONARY.append(('enybrizo', 'enybrizō', 'ἐνυβρίζω', 'enybrizō',
+    'TO INSULT, to treat with outrage &mdash; <em>en</em> and <em>hybriz&#333;</em>, &lsquo;to mistreat, to treat with arrogance.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-29">Hebrews 10:29</a>, &lsquo;and has insulted the Spirit of grace.&rsquo; KJV &lsquo;hath done despite unto the Spirit of grace&rsquo;; NIV &lsquo;has insulted the Spirit of grace&rsquo;; NWT 1984 &lsquo;has outraged the spirit of undeserved kindness with contempt.&rsquo;',
+    ('Hebrews', 10, 29)))
+DICTIONARY_ES['enybrizo'] = ('enybríz&#333;',
+    'ULTRAJAR, tratar con insolencia &mdash; <em>en</em> e <em>hybríz&#333;</em>, «maltratar, tratar con soberbia». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-29">Hebreos 10:29</a>, «y ha ultrajado al Espíritu de la gracia». RV60 «e hiciere afrenta al Espíritu de gracia»; NVI «ha insultado al Espíritu de la gracia».')
+
+DICTIONARY.append(('timoria', 'timōria', 'τιμωρία', 'timōria',
+    'PUNISHMENT, a penalty exacted &mdash; the noun of <em>tim&#333;re&#333;</em>, &lsquo;to punish,&rsquo; the verb of the prisoners Paul brought to Jerusalem to be punished (<a href="acts-22.html#v22-5">Acts 22:5</a>, <a href="acts-26.html#v26-11">Acts 26:11</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-29">Hebrews 10:29</a>, &lsquo;How much worse a punishment.&rsquo; KJV &lsquo;Of how much sorer punishment&rsquo;; NWT 1984 &lsquo;Of how much more severe a punishment.&rsquo;',
+    ('Hebrews', 10, 29)))
+DICTIONARY_ES['timoria'] = ('tim&#333;ría',
+    'CASTIGO, una pena exigida &mdash; el sustantivo de <em>tim&#333;ré&#333;</em>, «castigar», el verbo de los presos que Pablo llevaba a Jerusalén para que fueran castigados (<a href="acts-22.es.html#v22-5">Hechos 22:5</a>, <a href="acts-26.es.html#v26-11">Hechos 26:11</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-29">Hebreos 10:29</a>, «¿De cuánto peor castigo». RV60 «¿Cuánto mayor castigo»; TNM 1987 «¿De cuánto más severo castigo».')
+
+DICTIONARY.append(('athlesis', 'athlēsis', 'ἄθλησις', 'athlēsis',
+    'A CONTEST, a struggle &mdash; an athlete&rsquo;s word, the noun of <em>athle&#333;</em>, &lsquo;to compete,&rsquo; as in &lsquo;if anyone competes as an athlete, he is not crowned unless he competes lawfully&rsquo; (<a href="2-timothy-2.html#v2-5">2 Timothy 2:5</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-32">Hebrews 10:32</a>, &lsquo;you endured a great contest of sufferings.&rsquo; KJV &lsquo;a great fight of afflictions&rsquo;; ASV &lsquo;a great conflict of sufferings&rsquo;; NWT 1984 &lsquo;a great contest.&rsquo;',
+    ('Hebrews', 10, 32)))
+DICTIONARY_ES['athlesis'] = ('áthl&#275;sis',
+    'UN COMBATE, una lucha &mdash; palabra de atleta, el sustantivo de <em>athlé&#333;</em>, «competir», como en «si alguno compite como atleta, no es coronado si no compite legítimamente» (<a href="2-timothy-2.es.html#v2-5">2 Timoteo 2:5</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-32">Hebreos 10:32</a>, «soportaron un gran combate de sufrimientos». RV60 «gran combate de padecimientos»; TNM 1987 «una gran contienda».')
+
+DICTIONARY.append(('theatrizo', 'theatrizō', 'θεατρίζω', 'theatrizō',
+    'TO MAKE A PUBLIC SPECTACLE of, to expose as on a stage &mdash; from <em>theatron</em>, &lsquo;theater,&rsquo; the theater at Ephesus of <a href="acts-19.html#v19-29">Acts 19:29</a> and the &lsquo;spectacle&rsquo; the apostles became at <a href="1-corinthians-4.html#v9">1 Corinthians 4:9</a>. &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-33">Hebrews 10:33</a>, &lsquo;made a public spectacle by insults and afflictions.&rsquo; KJV &lsquo;made a gazingstock&rsquo;; NWT 1984 &lsquo;exposed as in a theater.&rsquo;',
+    ('Hebrews', 10, 33)))
+DICTIONARY_ES['theatrizo'] = ('theatríz&#333;',
+    'HACER ESPECTÁCULO PÚBLICO de, exponer como en un escenario &mdash; de <em>théatron</em>, «teatro», el teatro de Éfeso de <a href="acts-19.es.html#v19-29">Hechos 19:29</a> y el «espectáculo» en que se convirtieron los apóstoles en <a href="1-corinthians-4.es.html#v9">1 Corintios 4:9</a>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-33">Hebreos 10:33</a>, «hechos espectáculo público con insultos y aflicciones». RV60 «fuisteis hechos espectáculo»; TNM 1987 «expuestos como en un teatro».')
+
+DICTIONARY.append(('hyparxis', 'hyparxis', 'ὕπαρξις', 'hyparxis',
+    'POSSESSION, property, what one has &mdash; from <em>hyparch&#333;</em>, &lsquo;to be, to belong.&rsquo; &#9888; It stands in two verses of the New Testament: the &lsquo;possessions and belongings&rsquo; sold at <a href="acts-2.html#v2-45">Acts 2:45</a>, and &lsquo;a better possession, and an abiding one&rsquo; (<a href="hebrews-10.html#v10-34">Hebrews 10:34</a>). KJV at Hebrews 10:34 &lsquo;a better and an enduring substance&rsquo;; ASV &lsquo;a better possession and an abiding one.&rsquo;',
+    ('Acts', 2, 45)))
+DICTIONARY_ES['hyparxis'] = ('hýparxis',
+    'POSESIÓN, bienes, lo que uno tiene &mdash; de <em>hypárch&#333;</em>, «ser, pertenecer». &#9888; Está en dos versículos del Nuevo Testamento: las «propiedades y bienes» vendidos en <a href="acts-2.es.html#v2-45">Hechos 2:45</a>, y «una posesión mejor y que permanece» (<a href="hebrews-10.es.html#v10-34">Hebreos 10:34</a>). RV60 en Hebreos 10:34 «una mejor y perdurable herencia»; TNM 1987 «una posesión mejor y duradera».')
+
+DICTIONARY.append(('hypostole', 'hypostolē', 'ὑποστολή', 'hypostolē',
+    'SHRINKING BACK, a drawing back &mdash; the noun of <em>hypostell&#333;</em>, &lsquo;to shrink back&rsquo; (<a href="dictionary.html#hypostello">hypostell&#333;</a>). &#9888; It stands in one verse of the New Testament, <a href="hebrews-10.html#v10-39">Hebrews 10:39</a>, &lsquo;we are not of those who shrink back to destruction,&rsquo; a verse after the verb in the quotation of Habakkuk. KJV &lsquo;of them who draw back&rsquo;; ASV &lsquo;of them that shrink back.&rsquo;',
+    ('Hebrews', 10, 39)))
+DICTIONARY_ES['hypostole'] = ('hypostol&#275;',
+    'EL RETRAERSE, un echarse atrás &mdash; el sustantivo de <em>hypostéll&#333;</em>, «retraerse» (<a href="diccionario.html#hypostello">hypostell&#333;</a>). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="hebrews-10.es.html#v10-39">Hebreos 10:39</a>, «no somos de los que se retraen para perdición», un versículo después del verbo en la cita de Habacuc. RV60 «de los que retroceden».')
+
+DICTIONARY.append(('peripoiesis', 'peripoiēsis', 'περιποίησις', 'peripoiēsis',
+    'PRESERVING, obtaining, possession &mdash; the noun of <em>peripoie&#333;</em>, &lsquo;to keep safe, to acquire.&rsquo; &#9888; It stands in five verses of the New Testament: &lsquo;the redemption of the possession&rsquo; (<a href="ephesians-1.html#v14">Ephesians 1:14</a>); &lsquo;obtaining salvation&rsquo; (<a href="1-thessalonians-5.html#v5-9">1 Thessalonians 5:9</a>); &lsquo;obtaining the glory of our Lord Jesus Christ&rsquo; (<a href="2-thessalonians-2.html#v2-14">2 Thessalonians 2:14</a>); &lsquo;to the preserving of the soul&rsquo; (<a href="hebrews-10.html#v10-39">Hebrews 10:39</a>); and &lsquo;a people for possession&rsquo; at 1 Peter 2:9 (not yet on these pages). KJV at Hebrews 10:39 &lsquo;the saving of the soul&rsquo;; NWT 1984 &lsquo;the preserving alive of the soul.&rsquo;',
+    ('Ephesians', 1, 14)))
+DICTIONARY_ES['peripoiesis'] = ('peripoí&#275;sis',
+    'CONSERVACIÓN, adquisición, posesión &mdash; el sustantivo de <em>peripoié&#333;</em>, «guardar, adquirir». &#9888; Está en cinco versículos del Nuevo Testamento: «la redención de la posesión adquirida» (<a href="ephesians-1.es.html#v14">Efesios 1:14</a>); «obtener la salvación» (<a href="1-thessalonians-5.es.html#v5-9">1 Tesalonicenses 5:9</a>); «obtener la gloria de nuestro Señor Jesucristo» (<a href="2-thessalonians-2.es.html#v2-14">2 Tesalonicenses 2:14</a>); «para conservación del alma» (<a href="hebrews-10.es.html#v10-39">Hebreos 10:39</a>); y «pueblo adquirido» en 1 Pedro 2:9 (todavía no en estas páginas). RV60 en Hebreos 10:39 «para preservación del alma».')
+
+def _heb10_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_heb10_fix([("At Hebrews 10:24 (not yet on these pages) the same root turns constructive: believers are to 'consider one another so as to provoke to love and good works'", 'At <a href="hebrews-10.html#v10-24">Hebrews 10:24</a> the same root turns constructive: believers are to \'consider one another, to stir one another up to love and good works\''), ('En Hebreos 10:24 (todavía no en estas páginas) la misma raíz se vuelve constructiva: los creyentes deben «considerarse unos a otros para provocarse al amor y a las', 'En <a href="hebrews-10.es.html#v10-24">Hebreos 10:24</a> la misma raíz se vuelve constructiva: los creyentes deben «considerarse unos a otros para estimularse al amor y a las'), ('at 1 Corinthians 11:24&ndash;25 (neither yet on these pages)', 'at <a href="1-corinthians-11.html#v24">1 Corinthians 11:24&ndash;25</a>'), ('en 1 Corintios 11:24&ndash;25 (ninguno todavía en estas páginas)', 'en <a href="1-corinthians-11.es.html#v24">1 Corintios 11:24&ndash;25</a>'), ("the yearly sacrifices that Hebrews 10:3 (not yet on these pages) says can only ever be 'a reminder [<em>anamnēsis</em>] of sins'", 'the yearly sacrifices that <a href="hebrews-10.html#v10-3">Hebrews 10:3</a> says can only ever be \'a remembrance [<em>anamnēsis</em>] of sins\''), ('los sacrificios anuales que Hebreos 10:3 (todavía no en estas páginas) dice que solo pueden ser «un recordatorio [<em>anámnēsis</em>] de pecados»', 'los sacrificios anuales que <a href="hebrews-10.es.html#v10-3">Hebreos 10:3</a> dice que solo pueden ser «memoria [<em>anámnēsis</em>] de los pecados»'), ('and Hebrews 10:39, Revelation 17:8 and 17:11 (these three not yet on these pages).', 'and <a href="hebrews-10.html#v10-39">Hebrews 10:39</a>, and Revelation 17:8 and 17:11 (these two not yet on these pages).'), ('y Hebreos 10:39, Apocalipsis 17:8 y 17:11 (estos tres todavía no en estas páginas).', 'y <a href="hebrews-10.es.html#v10-39">Hebreos 10:39</a>, y Apocalipsis 17:8 y 17:11 (estos dos todavía no en estas páginas).'), ('and Hebrews 10:11 (not yet on these pages), of a priest', 'and <a href="hebrews-10.html#v10-11">Hebrews 10:11</a>, of a priest'), ('y Hebreos 10:11 (todavía no en estas páginas), de un sacerdote', 'y <a href="hebrews-10.es.html#v10-11">Hebreos 10:11</a>, de un sacerdote'), ('Galatians 2:12</a> and Hebrews 10:38 (not yet on these pages).', 'Galatians 2:12</a> and <a href="hebrews-10.html#v10-38">Hebrews 10:38</a>.'), ('Gálatas 2:12</a> y Hebreos 10:38 (todavía no en estas páginas).', 'Gálatas 2:12</a> y <a href="hebrews-10.es.html#v10-38">Hebreos 10:38</a>.'), ('and Hebrews 10:5, 8, 10, 14 and 18 (those five not yet on these pages).', 'and <a href="hebrews-10.html#v10-5">Hebrews 10:5</a>, <a href="hebrews-10.html#v10-8">8</a>, <a href="hebrews-10.html#v10-10">10</a>, <a href="hebrews-10.html#v10-14">14</a> and <a href="hebrews-10.html#v10-18">18</a>.'), ('y Hebreos 10:5, 8, 10, 14 y 18 (esos cinco todavía no en estas páginas).', 'y <a href="hebrews-10.es.html#v10-5">Hebreos 10:5</a>, <a href="hebrews-10.es.html#v10-8">8</a>, <a href="hebrews-10.es.html#v10-10">10</a>, <a href="hebrews-10.es.html#v10-14">14</a> y <a href="hebrews-10.es.html#v10-18">18</a>.'), ('and Hebrews 10:25, of the believers&rsquo; meeting together, which some were neglecting (not yet on these pages).', 'and <a href="hebrews-10.html#v10-25">Hebrews 10:25</a>, of the believers&rsquo; meeting together, which some were neglecting.'), ('y Hebreos 10:25, de las reuniones de los creyentes que algunos descuidaban (todavía no en estas páginas).', 'y <a href="hebrews-10.es.html#v10-25">Hebreos 10:25</a>, de las reuniones de los creyentes que algunos descuidaban.'), ('of the good things to come&rsquo; at Hebrews 10:1 (not yet on these pages).', 'of the good things to come&rsquo; at <a href="hebrews-10.html#v10-1">Hebrews 10:1</a>.'), ('de la ley en Hebreos 10:1 (todavía no en estas páginas).', 'de la ley en <a href="hebrews-10.es.html#v10-1">Hebreos 10:1</a>.'), ('and its repetition at Hebrews 10:16 (not yet on these pages);', 'and its repetition at <a href="hebrews-10.html#v10-16">Hebrews 10:16</a>;'), ('y su repetición en Hebreos 10:16 (todavía no en estas páginas);', 'y su repetición en <a href="hebrews-10.es.html#v10-16">Hebreos 10:16</a>;'), ('inaugurated through the curtain at Hebrews 10:20 (not yet on these pages).', 'inaugurated through the curtain at <a href="hebrews-10.html#v10-20">Hebrews 10:20</a>.'), ('inaugurado a través del velo en Hebreos 10:20 (todavía no en estas páginas).', 'inaugurado a través del velo en <a href="hebrews-10.es.html#v10-20">Hebreos 10:20</a>.'), ('and hearts &lsquo;sprinkled&rsquo; clean at 10:22 (not yet on these pages).', 'and hearts &lsquo;sprinkled&rsquo; clean at <a href="hebrews-10.html#v10-22">10:22</a>.'), ('y los corazones «rociados» en 10:22 (todavía no en estas páginas).', 'y los corazones «rociados» en <a href="hebrews-10.es.html#v10-22">10:22</a>.'), ('at Hebrews 12:24 and 1 Peter 1:2 (neither yet on these pages).', 'at Hebrews 12:24 (not yet on these pages) and <a href="1-peter-1.html#v2">1 Peter 1:2</a>, &lsquo;sprinkling with the blood of Jesus Christ.&rsquo;'), ('en Hebreos 12:24 y 1 Pedro 1:2 (ninguno todavía en estas páginas).', 'en Hebreos 12:24 (todavía no en estas páginas) y <a href="1-peter-1.es.html#v2">1 Pedro 1:2</a>, «ser rociados con la sangre de Jesucristo».'), ('the &lsquo;great reward&rsquo; of confidence at 10:35 (not yet on these pages);', 'the &lsquo;great recompense&rsquo; of boldness at <a href="hebrews-10.html#v10-35">10:35</a>;'), ('la «gran recompensa» de la confianza en 10:35 (todavía no en estas páginas);', 'la «gran retribución» de la valentía en <a href="hebrews-10.es.html#v10-35">10:35</a>;'), ('4:14</a>, and 10:23 (not yet on these pages).', '4:14</a>, and <a href="hebrews-10.html#v10-23">10:23</a>.'), ('4:14</a>, y 10:23 (todavía no en estas páginas).', '4:14</a>, y <a href="hebrews-10.es.html#v10-23">10:23</a>.'), ('with the prisoners&rsquo; at 10:34 (not yet on these pages).', 'with the prisoners&rsquo; at <a href="hebrews-10.html#v10-34">10:34</a>.'), ('de los presos» en 10:34 (todavía no en estas páginas).', 'de los presos» en <a href="hebrews-10.es.html#v10-34">10:34</a>.'), ('and 10:1, 10:12 and 10:14 (not yet on these pages).', 'and <a href="hebrews-10.html#v10-1">10:1</a>, <a href="hebrews-10.html#v10-12">10:12</a> and <a href="hebrews-10.html#v10-14">10:14</a>.'), ('y 10:1, 10:12 y 10:14 (todavía no en estas páginas).', 'y <a href="hebrews-10.es.html#v10-1">10:1</a>, <a href="hebrews-10.es.html#v10-12">10:12</a> y <a href="hebrews-10.es.html#v10-14">10:14</a>.'), ('and 9:12 and 10:10 (these two not yet on these pages).', 'and <a href="hebrews-9.html#v9-12">9:12</a> and <a href="hebrews-10.html#v10-10">10:10</a>.'), ('y 9:12 y 10:10 (estos dos todavía no en estas páginas).', 'y <a href="hebrews-9.es.html#v9-12">9:12</a> y <a href="hebrews-10.es.html#v10-10">10:10</a>.'), ('Hebrews 2:2</a> and 9:15 (the last not yet on these pages).', 'Hebrews 2:2</a> and <a href="hebrews-9.html#v9-15">9:15</a>.'), ('Hebreos 2:2</a> y 9:15 (el último todavía no en estas páginas).', 'Hebreos 2:2</a> y <a href="hebrews-9.es.html#v9-15">9:15</a>.'), ('8:6</a>, 9:15 and 12:24, the mediator of a better and a new covenant (the last two not yet on these pages).', '8:6</a>, <a href="hebrews-9.html#v9-15">9:15</a> and 12:24, the mediator of a better and a new covenant (the last not yet on these pages).'), ('8:6</a>, 9:15 y 12:24, el mediador de un pacto mejor y nuevo (los dos últimos todavía no en estas páginas).', '8:6</a>, <a href="hebrews-9.es.html#v9-15">9:15</a> y 12:24, el mediador de un pacto mejor y nuevo (el último todavía no en estas páginas).'), ('8:6</a>, 9:15 and 12:24 (the last two not yet on these pages).', '8:6</a>, <a href="hebrews-9.html#v9-15">9:15</a> and 12:24 (the last not yet on these pages).'), ('8:6</a>, 9:15 y 12:24 (los dos últimos todavía no en estas páginas).', '8:6</a>, <a href="hebrews-9.es.html#v9-15">9:15</a> y 12:24 (el último todavía no en estas páginas).')])
+
+XREFS.extend([
+    (("Hebrews", 8, 5), ("Hebrews", 10, 1), "shadow"),
+    (("Colossians", 1, 15), ("Hebrews", 10, 1), "image"),
+    (("Luke", 22, 19), ("Hebrews", 10, 3), "remembrance"),
+    (("Hebrews", 9, 13), ("Hebrews", 10, 4), "the blood of bulls and goats"),
+    (("Mark", 12, 33), ("Hebrews", 10, 6), "whole burnt offerings"),
+    (("Hebrews", 9, 12), ("Hebrews", 10, 10), "once for all"),
+    (("Hebrews", 1, 13), ("Hebrews", 10, 13), "footstool"),
+    (("Acts", 2, 35), ("Hebrews", 10, 13), "footstool"),
+    (("Hebrews", 8, 10), ("Hebrews", 10, 16), "the covenant written on hearts and minds"),
+    (("Hebrews", 9, 22), ("Hebrews", 10, 18), "forgiveness"),
+    (("Hebrews", 9, 8), ("Hebrews", 10, 20), "the way into the sanctuary"),
+    (("Matthew", 27, 51), ("Hebrews", 10, 20), "the curtain"),
+    (("Hebrews", 4, 16), ("Hebrews", 10, 22), "draw near"),
+    (("Hebrews", 3, 1), ("Hebrews", 10, 23), "confession"),
+    (("Acts", 15, 39), ("Hebrews", 10, 24), "paroxysmos"),
+    (("2 Thessalonians", 2, 1), ("Hebrews", 10, 25), "gathering together"),
+    (("Numbers", 15, 30), ("Hebrews", 10, 26), "sin with a high hand"),
+    (("Hebrews", 6, 4), ("Hebrews", 10, 26), "after enlightenment"),
+    (("Deuteronomy", 17, 6), ("Hebrews", 10, 28), "two or three witnesses"),
+    (("Hebrews", 9, 20), ("Hebrews", 10, 29), "the blood of the covenant"),
+    (("Deuteronomy", 32, 35), ("Hebrews", 10, 30), "vengeance is mine"),
+    (("Romans", 12, 19), ("Hebrews", 10, 30), "vengeance is mine, I will repay"),
+    (("Deuteronomy", 32, 36), ("Hebrews", 10, 30), "Jehovah will judge his people"),
+    (("1 Corinthians", 4, 9), ("Hebrews", 10, 33), "spectacle"),
+    (("Hebrews", 4, 15), ("Hebrews", 10, 34), "sympathize"),
+    (("Hebrews", 2, 2), ("Hebrews", 10, 35), "recompense"),
+    (("Romans", 1, 17), ("Hebrews", 10, 38), "the righteous will live by faith"),
+    (("Galatians", 3, 11), ("Hebrews", 10, 38), "the righteous will live by faith"),
+    (("Galatians", 2, 12), ("Hebrews", 10, 38), "shrink back"),
+])
+
+CHAPTER_ART["heb10"] = [dict(
+    file="tissot-the-earthquake.jpg",
+    title="The Earthquake",   title_es="El terremoto",
+    artist="James Tissot",
+    year="1886&ndash;1894",
+    location="Brooklyn Museum, New York",
+    location_es="Museo de Brooklyn, Nueva York",
+    alt="Below three crosses on a hill outside a walled city, under a dark sky, the people who had come to watch lie face down on the stony ground.",
+    note="&#9888; Tissot paints the moment of Jesus&rsquo; death, when &lsquo;the curtain of the sanctuary was torn in two&rsquo; (<a href=\"matthew-27.html#v27-51\">Matthew "
+         "27:51</a>): the offering of &lsquo;the body of Jesus Christ once for all&rsquo; (<a href=\"hebrews-10.html#v10-10\">verse 10</a>), and the way opened "
+         "&lsquo;through the curtain, that is, his flesh&rsquo; (<a href=\"hebrews-10.html#v10-20\">verse 20</a>).",
+    note_es="&#9888; Tissot pinta el momento de la muerte de Jesús, cuando «la cortina del santuario se rasgó en dos» (<a href=\"matthew-27.es.html#v27-51\">Mateo "
+            "27:51</a>): la ofrenda «del cuerpo de Jesucristo una vez para siempre» (<a href=\"hebrews-10.es.html#v10-10\">versículo 10</a>), y el camino abierto "
+            "«a través del velo, es decir, de su carne» (<a href=\"hebrews-10.es.html#v10-20\">versículo 20</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Earthquake_(Le_tremblement_de_terre_)_-_James_Tissot.jpg",
+)]
+
+CHRON_CHAPTERS["heb10"] = dict(era='apostolic',
+    when="The law a shadow of the good things to come; the blood of bulls and goats cannot take away sins; Psalm 40, 'a body you prepared for me'; one sacrifice for all time and a priest who sat down; Jeremiah's covenant again; a new and living way through the curtain; a warning against willful sin; and 'my righteous one will live by faith.'",
+    clock="Before AD 70, most likely c. AD 60-69, continuing the same letter as chapter 1 (see that note).")
+
