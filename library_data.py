@@ -45784,3 +45784,62 @@ CHAPTER_ART["judg13"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_028.jpg",
 )]
+
+# -- Judges 14 (2026-10-20): tsalach and mishteh in Spanish; chidah, Timnah, Ashkelon, Samson extended
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "chidah":
+        _a = "The same noun elsewhere names Samson’s wedding puzzle and the Queen of Sheba’s hard questions (neither yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'The same noun names Samson’s wedding puzzle, &ldquo;Let me riddle you a riddle&rdquo; (<a href="judges-14.html#v14-12">Judges 14:12</a>, now on these pages, with verb and noun from one root), and the Queen of Sheba’s hard questions (1 Kings 10:1, not yet on these pages)'),) + _d[5:]
+    elif _d[0] == "tsalach":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#9888; The same letters describe the spirit of Jehovah &ldquo;rushing&rdquo; on Samson, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.html#v14-6">Judges 14:6</a> and <a href="judges-14.html#v14-19">14:19</a>, now on these pages; 15:14 and 1 Samuel 10:10, not yet). Whether &ldquo;prosper&rdquo; and &ldquo;rush&rdquo; are one verb or two that happen to share their letters is debated, and this library does not decide.',) + _d[5:]
+    elif _d[0] == "mishteh":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#11088; Samson&rsquo;s seven-day wedding feast at Timnah is a <em>mishteh</em> (<a href="judges-14.html#v14-10">Judges 14:10</a>, now on these pages), a drinking feast held by a man vowed from the womb to touch no wine; the chapter does not say whether he drank.',) + _d[5:]
+_a = "el acertijo de bodas de Sansón y las preguntas difíciles de la reina de Sabá (ninguno todavía en estas páginas)"
+assert DICTIONARY_ES["chidah"][1].count(_a) == 1
+DICTIONARY_ES["chidah"] = (DICTIONARY_ES["chidah"][0], DICTIONARY_ES["chidah"][1].replace(_a, 'el acertijo de bodas de Sansón, «Déjenme proponerles un enigma» (<a href="judges-14.es.html#v14-12">Jueces 14:12</a>, ya en estas páginas, con verbo y sustantivo de una sola raíz), y las preguntas difíciles de la reina de Sabá (1 Reyes 10:1, todavía no en estas páginas)'))
+DICTIONARY_ES["tsalach"] = ("tsalach",
+    """PROSPERAR, tener éxito, ser llevado a buen fin. Génesis 39 lo usa como el redoble de la esclavitud de José: «Jehová estaba con José, y llegó a ser un hombre que prosperaba» (<a href="genesis-39.es.html#v39-2">Génesis 39:2</a>, ya en estas páginas), y otra vez en la cárcel (39:23). La incomodidad es deliberada y pertenece al hebreo: el hombre descrito es propiedad de otro y luego preso; lo que la palabra promete no es que las cosas sean agradables. &#9888; Las mismas letras describen al espíritu de Jehová que «irrumpe» sobre Sansón, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.es.html#v14-6">Jueces 14:6</a> y <a href="judges-14.es.html#v14-19">14:19</a>, ya en estas páginas; 15:14 y 1 Samuel 10:10, todavía no). Si «prosperar» e «irrumpir» son un verbo o dos que comparten letras se discute, y esta biblioteca no lo decide.""")
+DICTIONARY_ES["mishteh"] = ("mishteh",
+    """UN BANQUETE —literalmente una BEBIDA, de <em>shatah</em>, «beber». Es la unidad que estructura Ester: el libro tiene diez, en pares, y todo lo decisivo ocurre en uno (<a href="esther-1.es.html#v3">Ester 1:3</a>, ya en estas páginas). &#11088; El banquete de bodas de siete días de Sansón en Timna es un <em>mishteh</em> (<a href="judges-14.es.html#v14-10">Jueces 14:10</a>, ya en estas páginas), un banquete de bebida ofrecido por un hombre consagrado desde el vientre a no tocar vino; el capítulo no dice si bebió.""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "timnah":
+        _a = "kills a lion (Judges 14), though"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'kills a lion (<a href="judges-14.html#v14-1">Judges 14</a>, now on these pages), though')
+    elif _e["slug"] == "ashkelon":
+        _e["refs"] = _e["refs"] + [("Judges", 14, 19)]
+        _e["desc"] += ' &#11088; Judah takes it in <a href="judges-1.html#v18">Judges 1:18</a> (now on these pages), but it is Philistine again when Samson goes down to it, kills thirty men and strips them to pay his wedding guests (<a href="judges-14.html#v14-19">Judges 14:19</a>, now on these pages).'
+    elif _e["slug"] == "samson":
+        _a = "(chapters 14&ndash;16 not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, "(chapters 15&ndash;16 not yet on these pages)") + ' At Timnah he takes a Philistine wife because she is &ldquo;right in my eyes&rdquo;, tears a young lion apart with nothing in his hand, eats honey from its carcass without telling his parents, and loses his wedding riddle when his bride is threatened with fire (<a href="judges-14.html#v14-1">Judges 14</a>, now on these pages).'
+_s = ENCYCLOPEDIA_ES["timnah"][1]
+_a = "mata a un león (Jueces 14), aunque"
+assert _s.count(_a) == 1
+ENCYCLOPEDIA_ES["timnah"] = (ENCYCLOPEDIA_ES["timnah"][0], _s.replace(_a, 'mata a un león (<a href="judges-14.es.html#v14-1">Jueces 14</a>, ya en estas páginas), aunque'))
+ENCYCLOPEDIA_ES["ashkelon"] = (ENCYCLOPEDIA_ES["ashkelon"][0], ENCYCLOPEDIA_ES["ashkelon"][1] + ' &#11088; Judá la toma en <a href="judges-1.es.html#v18">Jueces 1:18</a> (ya en estas páginas), pero vuelve a ser filistea cuando Sansón baja a ella, mata a treinta hombres y los despoja para pagar a sus invitados de bodas (<a href="judges-14.es.html#v14-19">Jueces 14:19</a>, ya en estas páginas).')
+_s = ENCYCLOPEDIA_ES["samson"][1]
+_a = "(los capítulos 14&ndash;16 todavía no en estas páginas)"
+assert _s.count(_a) == 1
+ENCYCLOPEDIA_ES["samson"] = (ENCYCLOPEDIA_ES["samson"][0], _s.replace(_a, "(los capítulos 15&ndash;16 todavía no en estas páginas)") + ' En Timna toma una mujer filistea porque es «recta a mis ojos», despedaza un león joven sin tener nada en la mano, come miel de su cadáver sin contarlo a sus padres, y pierde su enigma de bodas cuando a su novia la amenazan con fuego (<a href="judges-14.es.html#v14-1">Jueces 14</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["judg14"] = dict(era="exodus",
+    when="Samson goes down to Timnah, sees a Philistine woman and asks his parents to get her for him, because she is right in his eyes; the narrator says it was from Jehovah, seeking an occasion against the Philistines. In the vineyards of Timnah the spirit of Jehovah rushes on him and he tears a young lion apart; later he takes honey from its carcass and tells no one. At the seven-day wedding feast he sets thirty companions a riddle; on the seventh day they threaten his bride with fire, she presses him, he tells her, and she tells them. The spirit rushes on him again: he kills thirty men of Ashkelon to pay the wager, goes up to his father's house in anger, and his wife is given to his companion.",
+    clock="Within the period of the judges, with no date the chapter gives for itself; it falls inside the Philistine forty years of Judges 13:1. The early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
+
+CHAPTER_ART["judg14"] = [dict(
+    file="rembrandt-samsons-wedding-1638.jpg",
+    title="Samson's Wedding (Samson Posing the Riddle at the Wedding Feast)",
+    title_es="La boda de Sansón (Sansón propone el enigma en el banquete)",
+    artist="Rembrandt",
+    year="1638",
+    location="Oil on canvas (1638), digitised on Wikimedia Commons (Web Gallery of Art)",
+    location_es="Óleo sobre lienzo (1638), digitalizado en Wikimedia Commons (Web Gallery of Art)",
+    alt="Oil painting of a crowded feast in a dark hall: a crowned bride in a pale gown sits in the light at the centre of a round table, and at the right a long-haired man in a light robe leans toward a group of men, counting on his fingers.",
+    note="The bride sits still and lit at the centre, as the chapter never gives her a name or a word until the guests threaten her; Samson, at the right, counts on his fingers to the men leaning in, the riddle of verse 14 being put to the thirty companions. The cup and the dish on the table are the <em>mishteh</em>, the drinking feast of verse 10.",
+    note_es="La novia está quieta e iluminada en el centro, como en el capítulo, que no le da nombre ni palabra hasta que los invitados la amenazan; Sansón, a la derecha, cuenta con los dedos ante los hombres que se inclinan hacia él: el enigma del versículo 14 propuesto a los treinta compañeros. La copa y el plato sobre la mesa son el <em>mishteh</em>, el banquete de bebida del versículo 10.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Wedding_of_Samson_-_WGA19100.jpg",
+)]
