@@ -45961,3 +45961,59 @@ _s = ENCYCLOPEDIA_ES["eshtaol"][1]
 _a = "y Jueces 16:31 y 18:2, 8 y 11, todavía no en estas páginas)"
 assert _s.count(_a) == 1
 ENCYCLOPEDIA_ES["eshtaol"] = (ENCYCLOPEDIA_ES["eshtaol"][0], _s.replace(_a, 'y <a href="judges-16.es.html#v16-31">Jueces 16:31</a>, ya en estas páginas, y 18:2, 8 y 11, todavía no en estas páginas)'))
+
+# --- Judges 17 ---
+ENCYCLOPEDIA.append(dict(slug="micah-of-ephraim", name="Micah of Ephraim", kind="person", aliases=["Micah", "Micayehu"],
+    refs=[("Judges", 17, 1)], videos=[],
+    desc="""A man of the hill country of Ephraim, called <em>Mikhayehu</em>, &ldquo;Who is like Jehovah?&rdquo;, in Judges 17:1 and 4 and by the short form <em>Mikhah</em> after that (<a href="judges-17.html#v17-1">Judges 17</a>, now on these pages). He confesses to his mother that he took the eleven hundred pieces of silver she had cursed; she blesses him, dedicates the silver &ldquo;to Jehovah&rdquo; to make &ldquo;a carved and cast image&rdquo;, and gives two hundred pieces to a silversmith. Micah keeps the image in his &ldquo;house of God&rdquo; with an ephod and teraphim, fills the hand of one of his sons as priest, and then hires a young Levite from Bethlehem as &ldquo;a father and a priest&rdquo; for ten pieces of silver a year: &ldquo;Now I know that Jehovah will do me good.&rdquo; In Judges 18 (not yet on these pages) the Danites carry off his image and his priest. He is not the prophet <a href="encyclopedia.html#micah">Micah</a> of Moresheth."""))
+ENCYCLOPEDIA_ES["micah-of-ephraim"] = ("Miqueas de Efraín",
+    """Un hombre de la serranía de Efraín, llamado <em>Mikhayehu</em>, «¿Quién como Jehová?», en Jueces 17:1 y 4, y con la forma corta <em>Mikhah</em> después (<a href="judges-17.es.html#v17-1">Jueces 17</a>, ya en estas páginas). Confiesa a su madre que él tomó las mil cien piezas de plata que ella había maldecido; ella lo bendice, consagra la plata «a Jehová» para hacer «una imagen tallada y fundida», y da doscientas piezas a un platero. Miqueas guarda la imagen en su «casa de Dios» con un efod y terafim, llena la mano de uno de sus hijos como sacerdote, y luego contrata a un joven levita de Belén como «padre y sacerdote» por diez piezas de plata al año: «Ahora sé que Jehová me hará bien». En Jueces 18 (todavía no en estas páginas) los danitas se llevan su imagen y su sacerdote. No es el profeta <a href="enciclopedia.html#micah">Miqueas</a> de Moréset.""")
+
+ENCYCLOPEDIA_ES["micah"] = ("Miqueas",
+    """«¿Quién como Jehová?» (<em>Mikhah</em>, forma corta de <em>Mikha-yahu</em>) — un profeta de Judá de finales del siglo VIII a.&nbsp;C., contemporáneo de ISAÍAS en Jerusalén y (antes) de Amós y Oseas en el norte. ⚠ Donde Isaías es un hombre de la corte real, Miqueas es un hombre del CAMPO —«de Moréset», una aldea de labradores en la Sefelá, a unos 40 kilómetros al suroeste de Jerusalén— y habla por los pobres del campo despojados por la élite de la capital que acapara tierras (2:1-2). Los dos profetas comparten incluso un poema (las espadas convertidas en rejas de arado, Miqueas 4:1-3 = Isaías 2:1-4). Miqueas tiene una distinción que ningún otro profeta tiene: un profeta posterior lo cita POR NOMBRE —los ancianos que defienden a Jeremías citan a «Miqueas de Moréset… en los días de Ezequías» y su frase «Sion será arada como un campo» como el precedente de que Ezequías se arrepintió en vez de matar al profeta (Jeremías 26:18-19, la única cita así en la Biblia hebrea). Su libro da al Nuevo Testamento el lugar de nacimiento del Mesías (5:2, Belén, citado en Mateo 2:6) y el resumen en una línea más famoso de la religión verdadera del Antiguo Testamento (6:8, «hacer justicia, amar la misericordia, andar humildemente»). ⚠ No es el mismo que MICAÍAS hijo de Imla, el profeta anterior del norte de 1 Reyes 22, aunque los nombres son la misma palabra; ni que <a href="enciclopedia.html#micah-of-ephraim">Miqueas de Efraín</a>, el hombre de la imagen de plata de Jueces 17. ⚠ Un detalle más que conserva el rollo del juicio: en Jeremías 26:18 las consonantes tal como están ESCRITAS forman la forma larga de su nombre, <em>Mikhayahu</em>, mientras que las vocales añadidas leen el <em>Mikhah</em> corto que usa su propio libro —un ketiv/qere que mantiene juntas las dos mitades del mismo nombre.""")
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "micah":
+        _a = "though the names are the same word."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'though the names are the same word; nor the same as <a href="encyclopedia.html#micah-of-ephraim">Micah of Ephraim</a>, the man of the silver image in Judges 17.')
+
+DICTIONARY_ES["teraphim"] = ("terafim",
+    """DIOSES domésticos —pequeños ídolos o figurillas de la casa (la RV60 «terafines»), usados para la suerte y la adivinación y, según las costumbres de aquel mundo, al parecer ligados a los derechos de herencia de la familia. Raquel roba los terafim de su padre al marcharse (Génesis 31:19, ya en estas páginas, todavía no en español), y por qué los quería el texto lo deja abierto: para reclamar la herencia que Labán le negó (v. 14), por su supuesta protección, o —la conjetura más amable de los rabinos— para apartar a su padre de la idolatría. Los esconde en la montura del camello y se sienta sobre ellos, y «los dioses de Labán» acaban sirviendo de asiento (31:34). La palabra vuelve en toda la Biblia como señal de culto prohibido: en el santuario de Miqueas (<a href="judges-17.es.html#v17-5">Jueces 17:5</a>, ya en estas páginas, y Jueces 18), en el señuelo que Mical pone en la cama de David (1 Samuel 19:13), y entre las idolatrías que Josías extirpa (2 Reyes 23:24).""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "teraphim":
+        _a = "in Micah's shrine (Judges 17-18)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'in Micah\'s shrine (<a href="judges-17.html#v17-5">Judges 17:5</a>, now on these pages, and Judges 18)'),) + _d[5:]
+    elif _d[0] == "millu-yad":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⚠ In Judges it is done with no Aaron and no altar: Micah of Ephraim fills the hand of one of his own sons, and then of a hired Levite, to serve his household image (<a href="judges-17.html#v17-5">Judges 17:5</a> and <a href="judges-17.html#v17-12">17:12</a>, now on these pages).',) + _d[5:]
+_s = DICTIONARY_ES["millu-yad"]
+DICTIONARY_ES["millu-yad"] = (_s[0], _s[1] + ' ⚠ En Jueces se hace sin Aarón y sin altar: Miqueas de Efraín llena la mano de uno de sus propios hijos, y luego la de un levita a sueldo, para servir a su imagen doméstica (<a href="judges-17.es.html#v17-5">Jueces 17:5</a> y <a href="judges-17.es.html#v17-12">17:12</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["judg17"] = dict(era="exodus",
+    when="Micayehu, a man of the hill country of Ephraim, confesses to his mother that he took the eleven hundred pieces of silver she had cursed. She blesses him and dedicates the silver to Jehovah to make a carved and cast image; two hundred pieces go to a silversmith, and the image stands in Micah's house of God with an ephod and teraphim, served by one of his sons, whose hand he fills as priest. 'In those days there was no king in Israel; each man did what was right in his own eyes.' A young Levite from Bethlehem in Judah, sojourning wherever he can find a place, comes to the house; Micah hires him as father and priest for ten pieces of silver a year, clothes and keep, and says, 'Now I know that Jehovah will do me good.'",
+    clock="Undated within the period of the judges; the closing chapters of Judges (17–21) stand outside the book's sequence of judges and are framed by 'there was no king in Israel'. Judges 18:30 (not yet on these pages) says the priests of the Danites' image served 'until the day of the exile of the land'.")
+
+CHAPTER_ART["judg17"] = [dict(
+    file="facial-chronicle-micahs-idolatry.jpg",
+    title="Micah's Idolatry",
+    title_es="La idolatría de Miqueas",
+    artist="Anonymous Russian illuminators, Illustrated Chronicle of Ivan the Terrible",
+    year="1560s–1570s",
+    location="Manuscript illumination, Illustrated Chronicle (Litsevoy Svod), book 2, page 585; digitised on Wikimedia Commons",
+    location_es="Miniatura de manuscrito, Crónica Ilustrada (Litsevói Svod), libro 2, página 585; digitalizada en Wikimedia Commons",
+    alt="Manuscript illumination in red, blue and green: before a town of towers and gabled roofs, a man speaks with a woman in a red cloak, a young man hands a woman a small bag, and she passes a bag on to a bearded man; below, on rocky ground, one man works a bellows while another holds a crucible over a furnace.",
+    note="The illuminators read verses 2&ndash;4 as a chain of hands: the son and his mother talk, the bag of silver is handed back, and the mother passes it on to the craftsman. Below, the silver is melted down at a furnace with bellows &mdash; the &ldquo;cast&rdquo; half of the &ldquo;carved and cast image&rdquo;; the verse itself says only that the silversmith &ldquo;made it&rdquo;.",
+    note_es="Los miniaturistas leen los versículos 2&ndash;4 como una cadena de manos: el hijo y su madre hablan, la bolsa de plata se devuelve, y la madre se la pasa al artesano. Abajo, la plata se funde en un horno con fuelle &mdash;la mitad «fundida» de la «imagen tallada y fundida»; el versículo mismo solo dice que el platero «hizo de ella» la imagen.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Facial_Chronicle_-_b.02,_p.585_-_Micah%27s_idolatry.jpg",
+)]
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "pesel":
+        _a = "(Judges 17:3, 17:4, 18:14; none yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="judges-17.html#v17-3">Judges 17:3</a> and <a href="judges-17.html#v17-4">17:4</a>, now on these pages; 18:14, not yet)'),) + _d[5:]
+_s = DICTIONARY_ES["pesel"]
+_a = "(Jueces 17:3, 17:4, 18:14; ninguno todavía en estas páginas)"
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["pesel"] = (_s[0], _s[1].replace(_a, '(<a href="judges-17.es.html#v17-3">Jueces 17:3</a> y <a href="judges-17.es.html#v17-4">17:4</a>, ya en estas páginas; 18:14, todavía no)'))
