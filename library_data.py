@@ -45312,3 +45312,114 @@ CHAPTER_ART["rev17"] = [dict(
 CHRON_CHAPTERS["rev17"] = dict(era='apostolic',
     when="One of the seven angels with the bowls shows John the great prostitute seated on many waters, a woman on a scarlet beast with seven heads and ten horns, 'Babylon the great, the mother of prostitutes,' drunk with the blood of the holy ones; the angel explains the beast that was and is not and will be present, the seven heads that are seven mountains and seven kings, the ten horns that are ten kings for one hour who make war on the Lamb, 'Lord of lords and King of kings'; the beast and the horns turn on the prostitute, and the woman is named as the great city.",
     clock="c. AD 95, between the bowls (chapters 15-16) and Babylon's fall (chapter 18); the riddle of the seven kings is the book's nearest approach to dating itself, and readers count the emperors in different ways.")
+
+# ---- Revelation 18 ------------------------------------------------------
+DICTIONARY.append(('emporos', 'emporos', 'ἔμπορος', 'emporos',
+    'MERCHANT, TRADER &mdash; from <em>en</em>, &lsquo;in,&rsquo; and <em>poros</em>, &lsquo;a way through&rsquo;: the trader who travels by road or sea. &#9888; It stands in five verses of the New Testament: the merchant &lsquo;seeking fine pearls&rsquo; who sells all he has for one (<a href="matthew-13.html#v13-45">Matthew 13:45</a>), and four in Revelation 18, where the merchants of the earth grow rich from Babylon&rsquo;s luxury (<a href="revelation-18.html#v18-3">18:3</a>), weep because no one buys their cargo (<a href="revelation-18.html#v18-11">18:11</a>, <a href="revelation-18.html#v18-15">18:15</a>), and are named &lsquo;the great ones of the earth&rsquo; (<a href="revelation-18.html#v18-23">18:23</a>). Compare the verb <a href="dictionary.html#emporeuomai">emporeuomai</a>. KJV &lsquo;merchants&rsquo;; NWT 1984 &lsquo;traveling merchants.&rsquo;',
+    ('Matthew', 13, 45)))
+DICTIONARY_ES['emporos'] = ('émporos',
+    'MERCADER, COMERCIANTE &mdash; de <em>en</em>, «en», y <em>póros</em>, «paso, camino»: el comerciante que viaja por tierra o por mar. &#9888; Está en cinco versículos del Nuevo Testamento: el mercader «que busca buenas perlas» y vende todo lo que tiene por una (<a href="matthew-13.es.html#v13-45">Mateo 13:45</a>), y cuatro en Apocalipsis 18, donde los mercaderes de la tierra se enriquecen del lujo de Babilonia (<a href="revelation-18.es.html#v18-3">18:3</a>), lloran porque nadie compra su cargamento (<a href="revelation-18.es.html#v18-11">18:11</a>, <a href="revelation-18.es.html#v18-15">18:15</a>), y son llamados «los grandes de la tierra» (<a href="revelation-18.es.html#v18-23">18:23</a>). Compárese el verbo <a href="diccionario.html#emporeuomai">emporeúomai</a>. RV60 «mercaderes»; TNM 1987 «comerciantes viajeros».')
+
+DICTIONARY.append(('katoiketerion', 'katoikētērion', 'κατοικητήριον', 'katoikētērion',
+    'DWELLING PLACE, HABITATION &mdash; from <em>katoike&#333;</em>, &lsquo;to dwell.&rsquo; &#9888; It stands in two verses of the New Testament, and they face each other: the congregation &lsquo;built together into a dwelling place of God in the Spirit&rsquo; (<a href="ephesians-2.html#v2-22">Ephesians 2:22</a>), and fallen Babylon, which &lsquo;has become a dwelling place of demons&rsquo; (<a href="revelation-18.html#v18-2">Revelation 18:2</a>). KJV &lsquo;habitation&rsquo;; NWT 1984 &lsquo;a dwelling place of demons.&rsquo;',
+    ('Ephesians', 2, 22)))
+DICTIONARY_ES['katoiketerion'] = ('katoik&#275;t&#275;rion',
+    'MORADA, HABITACIÓN &mdash; de <em>katoiké&#333;</em>, «habitar». &#9888; Está en dos versículos del Nuevo Testamento, y se miran el uno al otro: la congregación «juntamente edificados para morada de Dios en el Espíritu» (<a href="ephesians-2.es.html#v2-22">Efesios 2:22</a>), y la Babilonia caída, que «se ha convertido en morada de demonios» (<a href="revelation-18.es.html#v18-2">Apocalipsis 18:2</a>). RV60 «habitación de demonios»; TNM 1987 «lugar de habitación de demonios».')
+
+DICTIONARY.append(('strenos', 'strēnos', 'στρῆνος', 'strēnos',
+    'LUXURY, WANTONNESS &mdash; luxury that runs to arrogance and excess. &#9888; The noun stands only at <a href="revelation-18.html#v18-3">Revelation 18:3</a>, &lsquo;the power of her luxury,&rsquo; and its verb <em>str&#275;nia&#333;</em>, &lsquo;to live in luxury,&rsquo; in two verses of the same chapter, Babylon who &lsquo;glorified herself and lived in luxury&rsquo; and the kings who &lsquo;lived in luxury with her&rsquo; (<a href="revelation-18.html#v18-7">18:7</a>, <a href="revelation-18.html#v18-9">18:9</a>). A compound, <em>katastr&#275;nia&#333;</em>, stands at <a href="1-timothy-5.html#v5-11">1 Timothy 5:11</a>, of desires that turn against Christ. KJV &lsquo;the abundance of her delicacies&rsquo; and &lsquo;lived deliciously&rsquo;; ASV &lsquo;wantonness&rsquo;; NWT 1984 &lsquo;shameless luxury.&rsquo;',
+    ('Revelation', 18, 3)))
+DICTIONARY_ES['strenos'] = ('str&#275;nos',
+    'LUJO, DESENFRENO &mdash; el lujo que se vuelve arrogancia y exceso. &#9888; El sustantivo está solo en <a href="revelation-18.es.html#v18-3">Apocalipsis 18:3</a>, «el poder de su lujo», y su verbo <em>str&#275;niá&#333;</em>, «vivir en lujo», en dos versículos del mismo capítulo, Babilonia que «se glorificó y vivió en lujo» y los reyes que «vivieron en lujo con ella» (<a href="revelation-18.es.html#v18-7">18:7</a>, <a href="revelation-18.es.html#v18-9">18:9</a>). Un compuesto, <em>katastr&#275;niá&#333;</em>, está en <a href="1-timothy-5.es.html#v5-11">1 Timoteo 5:11</a>, de deseos que se vuelven contra Cristo. RV60 «la potencia de sus deleites» y «ha vivido en deleites»; TNM 1987 «lujo desvergonzado».')
+
+DICTIONARY.append(('technites', 'technitēs', 'τεχνίτης', 'technitēs',
+    'CRAFTSMAN, ARTISAN &mdash; from <em>techn&#275;</em>, &lsquo;craft, skill.&rsquo; &#9888; It stands in four verses of the New Testament: Demetrius the silversmith &lsquo;providing the craftsmen no small profit&rsquo; at Ephesus (<a href="acts-19.html#v19-24">Acts 19:24</a>), and those craftsmen again at <a href="acts-19.html#v19-38">19:38</a>; the city Abraham waited for, &lsquo;whose craftsman and maker is God&rsquo; (<a href="hebrews-11.html#v11-10">Hebrews 11:10</a>); and Babylon, where &lsquo;no craftsman of any craft will ever be found&rsquo; again (<a href="revelation-18.html#v18-22">Revelation 18:22</a>). God is the craftsman of the city that lasts; the city that falls loses all of hers. KJV at Hebrews 11:10 &lsquo;whose builder and maker is God&rsquo;; NIV at Revelation 18:22 &lsquo;No worker of any trade.&rsquo;',
+    ('Acts', 19, 24)))
+DICTIONARY_ES['technites'] = ('technít&#275;s',
+    'ARTESANO, ARTÍFICE &mdash; de <em>téchn&#275;</em>, «arte, oficio». &#9888; Está en cuatro versículos del Nuevo Testamento: Demetrio el platero, que «proporcionaba a los artesanos no poca ganancia» en Éfeso (<a href="acts-19.es.html#v19-24">Hechos 19:24</a>), y esos artesanos otra vez en <a href="acts-19.es.html#v19-38">19:38</a>; la ciudad que Abraham esperaba, «cuyo artesano y hacedor es Dios» (<a href="hebrews-11.es.html#v11-10">Hebreos 11:10</a>); y Babilonia, donde «ningún artesano de ningún oficio» se hallará más (<a href="revelation-18.es.html#v18-22">Apocalipsis 18:22</a>). Dios es el artesano de la ciudad que permanece; la ciudad que cae pierde a todos los suyos. RV60 en Hebreos 11:10 «cuyo arquitecto y constructor es Dios»; NVI en Apocalipsis 18:22 «ningún tipo de artesano».')
+
+_jn1_3_fix([
+    ('and, in the plural, Revelation 18:5 (not yet on these pages).',
+     'and, in the plural, <a href="revelation-18.html#v18-5">Revelation 18:5</a>, the &lsquo;unjust deeds&rsquo; of Babylon that God has remembered.'),
+    ('y, en plural, Apocalipsis 18:5 (todavía no en estas páginas).',
+     'y, en plural, <a href="revelation-18.es.html#v18-5">Apocalipsis 18:5</a>, las «injusticias» de Babilonia de las que Dios se ha acordado.'),
+    ('and Revelation 18:23 (not yet on these pages), where Babylon',
+     'and <a href="revelation-18.html#v18-23">Revelation 18:23</a>, where Babylon'),
+    ('y Apocalipsis 18:23 (todavía no en estas páginas), donde Babilonia',
+     'y <a href="revelation-18.es.html#v18-23">Apocalipsis 18:23</a>, donde Babilonia'),
+    ('at Revelation 18:9 and 18:18 (not yet on these pages).',
+     'at <a href="revelation-18.html#v18-9">Revelation 18:9</a> and <a href="revelation-18.html#v18-18">18:18</a>.'),
+    ('en Apocalipsis 18:9 y 18:18 (todavía no en estas páginas).',
+     'en <a href="revelation-18.es.html#v18-9">Apocalipsis 18:9</a> y <a href="revelation-18.es.html#v18-18">18:18</a>.'),
+    ('in Revelation 18:12 and 18:16 (not yet on these pages).',
+     'in <a href="revelation-18.html#v18-12">Revelation 18:12</a> and <a href="revelation-18.html#v18-16">18:16</a>.'),
+    ('en Apocalipsis 18:12 y 18:16 (todavía no en estas páginas).',
+     'en <a href="revelation-18.es.html#v18-12">Apocalipsis 18:12</a> y <a href="revelation-18.es.html#v18-16">18:16</a>.'),
+])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"babylon": [("Revelation", 18, 2)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Revelation", 10, 1), ("Revelation", 18, 1), "another angel coming down out of heaven"),
+    (("Revelation", 21, 23), ("Revelation", 18, 1), "lit up by glory"),
+    (("Revelation", 14, 8), ("Revelation", 18, 2), "Fallen, fallen is Babylon the great"),
+    (("Isaiah", 21, 9), ("Revelation", 18, 2), "Fallen, fallen is Babylon"),
+    (("Ephesians", 2, 22), ("Revelation", 18, 2), "a dwelling place"),
+    (("Matthew", 13, 45), ("Revelation", 18, 3), "merchants and pearls"),
+    (("Jeremiah", 51, 45), ("Revelation", 18, 4), "Come out of her, my people"),
+    (("2 Corinthians", 6, 17), ("Revelation", 18, 4), "come out from among them"),
+    (("Jeremiah", 51, 9), ("Revelation", 18, 5), "reached to heaven"),
+    (("Revelation", 16, 19), ("Revelation", 18, 5), "remembered before God"),
+    (("Jeremiah", 50, 29), ("Revelation", 18, 6), "as she has done, do to her"),
+    (("Isaiah", 40, 2), ("Revelation", 18, 6), "double"),
+    (("Revelation", 14, 10), ("Revelation", 18, 6), "the cup mixed"),
+    (("Isaiah", 47, 8), ("Revelation", 18, 7), "I shall not sit as a widow"),
+    (("Revelation", 3, 17), ("Revelation", 18, 7), "the boast of the rich"),
+    (("Isaiah", 47, 9), ("Revelation", 18, 8), "in one day"),
+    (("Revelation", 1, 7), ("Revelation", 18, 9), "beat their breasts over"),
+    (("Ezekiel", 26, 16), ("Revelation", 18, 9), "the princes lament Tyre"),
+    (("1 Peter", 4, 12), ("Revelation", 18, 9), "burning"),
+    (("Revelation", 17, 12), ("Revelation", 18, 10), "one hour"),
+    (("Revelation", 13, 17), ("Revelation", 18, 11), "no one buys"),
+    (("Acts", 21, 3), ("Revelation", 18, 11), "cargo"),
+    (("Ezekiel", 27, 12), ("Revelation", 18, 12), "the wares of Tyre"),
+    (("Ezekiel", 27, 13), ("Revelation", 18, 13), "the souls of men"),
+    (("Revelation", 17, 4), ("Revelation", 18, 16), "purple, scarlet, gold, stone, pearl"),
+    (("Revelation", 17, 16), ("Revelation", 18, 17), "made desolate"),
+    (("Revelation", 13, 4), ("Revelation", 18, 18), "Who is like ...?"),
+    (("Ezekiel", 27, 32), ("Revelation", 18, 18), "Who was like Tyre?"),
+    (("Ezekiel", 27, 30), ("Revelation", 18, 19), "dust on their heads"),
+    (("Revelation", 12, 12), ("Revelation", 18, 20), "be glad, you heavens"),
+    (("Jeremiah", 51, 48), ("Revelation", 18, 20), "heaven sings for joy over Babylon"),
+    (("Revelation", 6, 10), ("Revelation", 18, 20), "judge and avenge our blood"),
+    (("Jeremiah", 51, 63), ("Revelation", 18, 21), "a stone thrown in: thus shall Babylon sink"),
+    (("Matthew", 18, 6), ("Revelation", 18, 21), "a millstone and the sea"),
+    (("Jeremiah", 25, 10), ("Revelation", 18, 22), "bridegroom and bride, millstones, lamp"),
+    (("Hebrews", 11, 10), ("Revelation", 18, 22), "craftsman"),
+    (("Isaiah", 23, 8), ("Revelation", 18, 23), "merchants who are princes"),
+    (("Galatians", 5, 20), ("Revelation", 18, 23), "sorcery"),
+    (("Jeremiah", 51, 49), ("Revelation", 18, 24), "the slain of all the earth"),
+    (("Matthew", 23, 35), ("Revelation", 18, 24), "all the righteous blood"),
+])
+
+CHAPTER_ART["rev18"] = [dict(
+    file="lorraine-apocalypse-fall-of-babylon.jpg",
+    title="The Fall of Babylon",   title_es="La caída de Babilonia",
+    artist="Unknown illuminator, Lorraine",
+    year="c. 1290",
+    location="Cleveland Museum of Art, leaf from a manuscript of the Apocalypse",
+    location_es="Museo de Arte de Cleveland, hoja de un manuscrito del Apocalipsis",
+    alt="A manuscript painting on a red patterned ground: on the left John, haloed and barefoot in a blue robe, holds a staff and raises his hand; two haloed angels lean down out of a white cloud, one pointing; below them the towers of a city tumble over, and among the ruins sit long-necked birds and grimacing grey, red and blue demon faces.",
+    note="&#9888; A miniature from Lorraine of <a href=\"revelation-18.html#v18-2\">verse 2</a>, &lsquo;Fallen, fallen is Babylon the great! And she has become a dwelling place of demons &hellip; and a prison of every unclean bird.&rsquo; The painter shows the city&rsquo;s towers toppling and fills the ruin with the birds and the demons the angel names, while John watches from the side.",
+    note_es="&#9888; Una miniatura de Lorena del <a href=\"revelation-18.es.html#v18-2\">versículo 2</a>, «¡Cayó, cayó Babilonia la grande! Y se ha convertido en morada de demonios &hellip; y en prisión de toda ave inmunda». El pintor muestra las torres de la ciudad derrumbándose y llena la ruina con las aves y los demonios que nombra el ángel, mientras Juan mira desde un lado.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:France,_Lorraine,_13th_century_-_Miniature_from_a_Manuscript_of_the_Apocalypse-_The_Fall_of_Babylon_-_1983.73.1.b_-_Cleveland_Museum_of_Art.jpg",
+)]
+
+CHRON_CHAPTERS["rev18"] = dict(era='apostolic',
+    when="Another angel, lighting the earth with his glory, cries 'Fallen, fallen is Babylon the great'; a voice from heaven calls 'Come out of her, my people' and pays her double for her boast 'I sit a queen'; the kings, the merchants with their cargo of gold, silk, spices, bodies and human souls, and the seafarers stand far off and lament her judgment 'in one hour'; heaven is told to be glad; and a mighty angel throws a stone like a great millstone into the sea, silencing music, craft, mill, lamp, bridegroom and bride.",
+    clock="c. AD 95, the fall of Babylon told as laments (chapter 18), between her portrait (chapter 17) and heaven's Hallelujah (chapter 19); its words are taken from the prophets' oracles against Babylon and Tyre.")
