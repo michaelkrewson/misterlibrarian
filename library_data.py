@@ -44690,3 +44690,108 @@ CHRON_CHAPTERS["1john2"] = dict(era='apostolic',
     when="The letter's second movement: 'we have an Advocate with the Father, Jesus Christ the righteous,' the atonement 'for the whole world'; the test of keeping his commandments; the commandment both old and new; six lines to little children, fathers and young men; 'Do not love the world'; the last hour and the many antichrists who 'went out from us'; and the anointing that teaches them, with the call to remain in him.",
     clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
 
+# ---- 1 John 3 -----------------------------------------------------------
+DICTIONARY.append(('sphazo', 'sphazō', 'σφάζω', 'sphazō',
+    'TO SLAUGHTER &mdash; to cut the throat: of an animal butchered or offered in sacrifice, and of a person killed by violence. &#9888; It stands in nine verses of the New Testament: Cain, who &lsquo;slaughtered his brother&rsquo; (<a href="1-john-3.html#v3-12">1 John 3:12</a>), and eight in Revelation, among them the Lamb &lsquo;standing as though slain&rsquo; (<a href="revelation-5.html#v5-6">Revelation 5:6</a>) and &lsquo;the souls of those who had been slain because of the word of God&rsquo; (<a href="revelation-6.html#v6-9">Revelation 6:9</a>). The noun <em>sphag&#275;</em>, &lsquo;slaughter,&rsquo; is the sheep &lsquo;led to slaughter&rsquo; of <a href="acts-8.html#v8-32">Acts 8:32</a> and <a href="romans-8.html#v8-36">Romans 8:36</a>. KJV at 1 John 3:12 &lsquo;slew&rsquo;; NWT 1984 &lsquo;slaughtered&rsquo;; NIV &lsquo;murdered.&rsquo;',
+    ('1 John', 3, 12)))
+DICTIONARY_ES['sphazo'] = ('spház&#333;',
+    'DEGOLLAR &mdash; cortar el cuello: a un animal que se mata o se ofrece en sacrificio, y a una persona muerta con violencia. &#9888; Está en nueve versículos del Nuevo Testamento: Caín, que «degolló a su hermano» (<a href="1-john-3.es.html#v3-12">1 Juan 3:12</a>), y ocho en Apocalipsis, entre ellos el Cordero «en pie, como inmolado» (<a href="revelation-5.es.html#v5-6">Apocalipsis 5:6</a>) y «las almas de los que habían sido muertos por causa de la palabra de Dios» (<a href="revelation-6.es.html#v6-9">Apocalipsis 6:9</a>). El sustantivo <em>sphag&#275;́</em>, «matanza», es el «matadero» al que se lleva la oveja en <a href="acts-8.es.html#v8-32">Hechos 8:32</a> y <a href="romans-8.es.html#v8-36">Romanos 8:36</a>. RV60 en 1 Juan 3:12 «mató»; TNM 1987 «degolló»; NVI «asesinó».')
+
+DICTIONARY.append(('anthropoktonos', 'anthrōpoktonos', 'ἀνθρωποκτόνος', 'anthrōpoktonos',
+    'MURDERER &mdash; literally &lsquo;man-killer,&rsquo; from <em>anthr&#333;pos</em>, &lsquo;human being,&rsquo; and <em>kteinō</em>, &lsquo;kill.&rsquo; &#9888; It stands in two verses of the New Testament: the devil, who &lsquo;was a murderer from the beginning&rsquo; (<a href="john-8.html#v8-44">John 8:44</a>), and &lsquo;Everyone who hates his brother is a murderer&rsquo; (<a href="1-john-3.html#v3-15">1 John 3:15</a>), twice in that verse. The ordinary word for a murderer is <em>phoneus</em>, the &lsquo;murderer&rsquo; the crowd asked for in place of Jesus at <a href="acts-3.html#v3-14">Acts 3:14</a>. KJV &lsquo;murderer&rsquo;; NWT 1984 &lsquo;manslayer.&rsquo;',
+    ('John', 8, 44)))
+DICTIONARY_ES['anthropoktonos'] = ('anthr&#333;poktónos',
+    'HOMICIDA &mdash; literalmente «matador de hombres», de <em>ánthr&#333;pos</em>, «ser humano», y <em>kteínō</em>, «matar». &#9888; Está en dos versículos del Nuevo Testamento: el diablo, que «fue homicida desde el principio» (<a href="john-8.es.html#v8-44">Juan 8:44</a>), y «Todo el que odia a su hermano es homicida» (<a href="1-john-3.es.html#v3-15">1 Juan 3:15</a>), dos veces en ese versículo. La palabra corriente para un asesino es <em>phoneús</em>, el «homicida» que la multitud pidió en lugar de Jesús en <a href="acts-3.es.html#v3-14">Hechos 3:14</a>; el español dice «homicida» para las dos. RV60 «homicida»; NVI «asesino».')
+
+DICTIONARY.append(('kataginosko', 'kataginōskō', 'καταγινώσκω', 'kataginōskō',
+    'TO CONDEMN &mdash; <em>kata</em>, &lsquo;against,&rsquo; and <em>gin&#333;sk&#333;</em>, &lsquo;know&rsquo;: to know something against someone, to find them in the wrong. &#9888; It stands in three verses of the New Testament: Paul opposed Cephas at Antioch &lsquo;because he stood condemned&rsquo; (<a href="galatians-2.html#v11">Galatians 2:11</a>), and the heart that condemns us in <a href="1-john-3.html#v3-20">1 John 3:20</a> and <a href="1-john-3.html#v3-21">1 John 3:21</a>. KJV &lsquo;condemn&rsquo;; Douay-Rheims &lsquo;reprehend,&rsquo; from the Latin <em>reprehenderit</em>.',
+    ('Galatians', 2, 11)))
+DICTIONARY_ES['kataginosko'] = ('katagin&#333;́sk&#333;',
+    'CONDENAR &mdash; <em>katá</em>, «contra», y <em>gin&#333;́sk&#333;</em>, «conocer»: conocer algo contra alguien, hallarlo en falta. &#9888; Está en tres versículos del Nuevo Testamento: Pablo se opuso a Cefas en Antioquía «porque estaba condenado» (<a href="galatians-2.es.html#v11">Gálatas 2:11</a>), y el corazón que nos condena en <a href="1-john-3.es.html#v3-20">1 Juan 3:20</a> y <a href="1-john-3.es.html#v3-21">1 Juan 3:21</a>. RV60 «reprende»; TNM 1987 «condena».')
+
+DICTIONARY.append(('sperma', 'sperma', 'σπέρμα', 'sperma',
+    'SEED &mdash; the seed sown in a field, as in &lsquo;a man who sowed good seed in his field&rsquo; (<a href="matthew-13.html#v13-24">Matthew 13:24</a>), and from there offspring, descendants: &lsquo;the promises were spoken to Abraham and to his seed,&rsquo; where Paul argues from the singular (<a href="galatians-3.html#v16">Galatians 3:16</a>). &#9888; At <a href="1-john-3.html#v3-9">1 John 3:9</a>, &lsquo;his seed remains in him,&rsquo; the seed is God&rsquo;s in the one born of God, and readings differ on what it is: the Spirit; the word, as in &lsquo;born again, not of perishable seed but imperishable, through the living and abiding word of God&rsquo; (<a href="1-peter-1.html#v23">1 Peter 1:23</a>, where the Greek word is the related <em>spora</em>); the new life; or God&rsquo;s offspring, the believer. KJV &lsquo;his seed&rsquo;; NIV &lsquo;God&rsquo;s seed&rsquo;; NWT 1984 &lsquo;His [reproductive] seed.&rsquo;',
+    ('1 John', 3, 9)))
+DICTIONARY_ES['sperma'] = ('spérma',
+    'SEMILLA, SIMIENTE &mdash; la semilla que se siembra en un campo, como en «un hombre que sembró buena semilla en su campo» (<a href="matthew-13.es.html#v13-24">Mateo 13:24</a>), y de ahí la descendencia: «las promesas fueron dichas a Abraham y a su simiente», donde Pablo argumenta a partir del singular (<a href="galatians-3.es.html#v16">Gálatas 3:16</a>). &#9888; En <a href="1-john-3.es.html#v3-9">1 Juan 3:9</a>, «la semilla de él permanece en él», la semilla es de Dios en el que ha nacido de Dios, y las lecturas difieren sobre qué es: el Espíritu; la palabra, como en «habiendo nacido de nuevo, no de semilla corruptible sino incorruptible, por la palabra de Dios que vive y permanece» (<a href="1-peter-1.es.html#v23">1 Pedro 1:23</a>, donde la palabra griega es la emparentada <em>sporá</em>); la vida nueva; o la descendencia de Dios, el creyente. RV60 «la simiente de Dios»; TNM 1987 «la semilla [reproductiva] de Él».')
+
+def _jn1_3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jn1_3_fix([('(John 15:18&ndash;19, 23, already on these pages; 1 John 3:13, not yet on these pages)', '(John 15:18&ndash;19, 23, and <a href="1-john-3.html#v3-13">1 John 3:13</a>, already on these pages)'), ('(Juan 15:18&ndash;19, 23; 1 Juan 3:13; ninguno todavía en estas páginas)', '(Juan 15:18&ndash;19, 23, y <a href="1-john-3.es.html#v3-13">1 Juan 3:13</a>, ya en estas páginas)'), ('and 1 John 3:3 (the last not yet on these pages)', 'and <a href="1-john-3.html#v3-3">1 John 3:3</a>'), ('y 1 Juan 3:3 (el último todavía no en estas páginas)', 'y <a href="1-john-3.es.html#v3-3">1 Juan 3:3</a>')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"cain": [("1 John", 3, 12)], "abel": [("1 John", 3, 12)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("John", 1, 12), ("1 John", 3, 1), "children of God"),
+    (("John", 17, 25), ("1 John", 3, 1), "the world has not known him"),
+    (("1 John", 2, 28), ("1 John", 3, 2), "when he is made manifest"),
+    (("1 Corinthians", 13, 12), ("1 John", 3, 2), "seeing him as he is"),
+    (("Colossians", 3, 4), ("1 John", 3, 2), "made manifest with him"),
+    (("James", 4, 8), ("1 John", 3, 3), "purify"),
+    (("2 Thessalonians", 2, 3), ("1 John", 3, 4), "lawlessness"),
+    (("Matthew", 7, 23), ("1 John", 3, 4), "workers of lawlessness"),
+    (("John", 1, 29), ("1 John", 3, 5), "takes away sin"),
+    (("1 John", 1, 8), ("1 John", 3, 6), "sin and the believer"),
+    (("3 John", 1, 11), ("1 John", 3, 6), "has not seen God"),
+    (("1 John", 2, 29), ("1 John", 3, 7), "whoever does righteousness"),
+    (("John", 8, 44), ("1 John", 3, 8), "the devil from the beginning"),
+    (("Hebrews", 2, 14), ("1 John", 3, 8), "undoing the devil"),
+    (("1 Peter", 1, 23), ("1 John", 3, 9), "born of imperishable seed"),
+    (("1 John", 1, 5), ("1 John", 3, 11), "the message"),
+    (("John", 13, 34), ("1 John", 3, 11), "love one another"),
+    (("Genesis", 4, 8), ("1 John", 3, 12), "Cain killed Abel"),
+    (("Hebrews", 11, 4), ("1 John", 3, 12), "Abel righteous"),
+    (("Jude", 1, 11), ("1 John", 3, 12), "the way of Cain"),
+    (("John", 15, 18), ("1 John", 3, 13), "the world hates you"),
+    (("John", 5, 24), ("1 John", 3, 14), "passed out of death into life"),
+    (("Matthew", 5, 22), ("1 John", 3, 15), "anger and murder"),
+    (("John", 10, 11), ("1 John", 3, 16), "laid down his life"),
+    (("John", 15, 13), ("1 John", 3, 16), "greater love"),
+    (("James", 2, 15), ("1 John", 3, 17), "a brother in need"),
+    (("Galatians", 2, 11), ("1 John", 3, 20), "condemned"),
+    (("John", 14, 13), ("1 John", 3, 22), "whatever we ask"),
+    (("John", 8, 29), ("1 John", 3, 22), "what pleases him"),
+    (("John", 15, 4), ("1 John", 3, 24), "remain in him, and he in us"),
+    (("John", 14, 17), ("1 John", 3, 24), "the Spirit in us"),
+])
+
+CHAPTER_ART["1john3"] = [dict(
+    file="tissot-cain-leadeth-abel-to-death.jpg",
+    title="Cain Leadeth Abel to Death",   title_es="Caín lleva a Abel a la muerte",
+    artist="James Tissot",
+    year="c. 1896–1902",
+    location="The Jewish Museum, New York",
+    location_es="Museo Judío, Nueva York",
+    alt="A watercolour of two men in animal-skin garments walking hand in hand along a path under great twisted trees: a heavy red-bearded man holding a club in his other hand, and a slender younger man beside him looking up, unaware.",
+    note="&#9888; Tissot&rsquo;s Cain, club in hand, leading his brother out to the field, beside <a href=\"1-john-3.html#v3-12\">verse 12</a>, &lsquo;not as Cain, who was of the evil one and slaughtered his brother.&rsquo; Genesis says only that Cain spoke to Abel and killed him in the field; the club and the held hand are the painter&rsquo;s.",
+    note_es="&#9888; El Caín de Tissot, con un garrote en la mano, llevando a su hermano al campo, junto al <a href=\"1-john-3.es.html#v3-12\">versículo 12</a>, «no como Caín, que era del maligno y degolló a su hermano». Génesis dice solo que Caín habló a Abel y lo mató en el campo; el garrote y la mano tomada son del pintor.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Cain_leadeth_abel_to_death_tissot.jpg",
+)]
+
+CHRON_CHAPTERS["1john3"] = dict(era='apostolic',
+    when="The letter's third movement: 'See what sort of love the Father has given us, that we should be called children of God'; 'we will be like him, because we will see him just as he is'; sin as lawlessness and the hard saying that whoever is born of God does not sin; the Son of God made manifest to undo the works of the devil; Cain, 'of the evil one'; 'passed out of death into life'; love 'in deed and in truth'; God greater than our heart; and the Spirit named for the first time.",
+    clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
+
