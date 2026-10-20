@@ -44893,3 +44893,84 @@ CHAPTER_ART["1john4"] = [dict(
 CHRON_CHAPTERS["1john4"] = dict(era='apostolic',
     when="The letter's fourth movement: 'test the spirits,' because many false prophets have gone out into the world; the spirit that confesses Jesus Christ come in flesh, and that of the antichrist; 'God is love,' said twice; God's only Son sent as the atonement for our sins; 'No one has ever looked upon God'; 'There is no fear in love'; and 'We love, because he first loved us.'",
     clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
+
+# ---- 1 John 5 -----------------------------------------------------------
+DICTIONARY.append(('nike', 'nikē', 'νίκη', 'nikē',
+    'VICTORY &mdash; the noun of <a href="dictionary.html#nikao">nika&#333;</a>, &lsquo;to conquer.&rsquo; &#9888; It stands in one verse of the New Testament: &lsquo;And this is the victory that has conquered the world, our faith&rsquo; (<a href="1-john-5.html#v5-4">1 John 5:4</a>). The related form <em>nikos</em> stands in four verses, among them &lsquo;Death is swallowed up in victory&rsquo; and &lsquo;who gives us the victory through our Lord Jesus Christ&rsquo; (<a href="1-corinthians-15.html#v54">1 Corinthians 15:54</a>, <a href="1-corinthians-15.html#v57">15:57</a>). KJV &lsquo;the victory that overcometh the world&rsquo;; NWT 1984 &lsquo;the conquest that has conquered the world.&rsquo;',
+    ('1 John', 5, 4)))
+DICTIONARY_ES['nike'] = ('ník&#275;',
+    'VICTORIA &mdash; el sustantivo de <a href="diccionario.html#nikao">niká&#333;</a>, «vencer». &#9888; Está en un solo versículo del Nuevo Testamento: «Y esta es la victoria que ha vencido al mundo, nuestra fe» (<a href="1-john-5.es.html#v5-4">1 Juan 5:4</a>). La forma emparentada <em>nîkos</em> está en cuatro versículos, entre ellos «La muerte fue devorada en victoria» y «que nos da la victoria por medio de nuestro Señor Jesucristo» (<a href="1-corinthians-15.es.html#v54">1 Corintios 15:54</a>, <a href="1-corinthians-15.es.html#v57">15:57</a>). RV60 «la victoria que ha vencido al mundo»; TNM 1987 «la victoria que ha vencido al mundo».')
+
+DICTIONARY.append(('barus', 'barus', 'βαρύς', 'barus',
+    'HEAVY &mdash; weighty, burdensome, and so also serious or severe. &#9888; It stands in six verses of the New Testament: the &lsquo;heavy loads&rsquo; the scribes lay on people&rsquo;s shoulders (<a href="matthew-23.html#v23-4">Matthew 23:4</a>) and &lsquo;the weightier matters of the Law&rsquo; (<a href="matthew-23.html#v23-23">Matthew 23:23</a>); the &lsquo;grievous wolves&rsquo; Paul warns of (<a href="acts-20.html#v20-29">Acts 20:29</a>) and the &lsquo;many heavy accusations&rsquo; brought against him (<a href="acts-25.html#v25-7">Acts 25:7</a>); &lsquo;His letters are weighty and forceful&rsquo; (<a href="2-corinthians-10.html#v10">2 Corinthians 10:10</a>); and &lsquo;his commandments are not heavy&rsquo; (<a href="1-john-5.html#v5-3">1 John 5:3</a>). KJV and ASV at 1 John 5:3 &lsquo;not grievous&rsquo;; NWT 1984 &lsquo;not burdensome.&rsquo;',
+    ('Matthew', 23, 4)))
+DICTIONARY_ES['barus'] = ('barýs',
+    'PESADO &mdash; de peso, gravoso, y de ahí también grave o severo. &#9888; Está en seis versículos del Nuevo Testamento: las «cargas pesadas» que los escribas ponen sobre los hombros de los hombres (<a href="matthew-23.es.html#v23-4">Mateo 23:4</a>) y «lo más pesado de la Ley» (<a href="matthew-23.es.html#v23-23">Mateo 23:23</a>); los «lobos feroces» de los que advierte Pablo (<a href="acts-20.es.html#v20-29">Hechos 20:29</a>) y las «muchas y pesadas acusaciones» contra él (<a href="acts-25.es.html#v25-7">Hechos 25:7</a>); «Sus cartas son de peso y enérgicas» (<a href="2-corinthians-10.es.html#v10">2 Corintios 10:10</a>); y «sus mandamientos no son pesados» (<a href="1-john-5.es.html#v5-3">1 Juan 5:3</a>). RV60 en 1 Juan 5:3 «no son gravosos»; RV 1909 «no son penosos».')
+
+DICTIONARY.append(('aitema', 'aitēma', 'αἴτημα', 'aitēma',
+    'REQUEST &mdash; a thing asked for, from <a href="dictionary.html#aiteo">aite&#333;</a>, &lsquo;to ask.&rsquo; &#9888; It stands in three verses of the New Testament: Pilate deciding that the crowd&rsquo;s &lsquo;demand should be granted&rsquo; (<a href="luke-23.html#v23-24">Luke 23:24</a>); &lsquo;let your requests be made known to God&rsquo; (<a href="philippians-4.html#v4-6">Philippians 4:6</a>); and &lsquo;we know that we have the requests that we have asked of him&rsquo; (<a href="1-john-5.html#v5-15">1 John 5:15</a>). KJV at 1 John 5:15 &lsquo;the petitions that we desired of him.&rsquo;',
+    ('Luke', 23, 24)))
+DICTIONARY_ES['aitema'] = ('aít&#275;ma',
+    'PETICIÓN &mdash; lo que se pide, de <a href="diccionario.html#aiteo">aité&#333;</a>, «pedir». &#9888; Está en tres versículos del Nuevo Testamento: Pilato decidiendo «que se concediera lo que pedían» (<a href="luke-23.es.html#v23-24">Lucas 23:24</a>); «se den a conocer sus solicitudes a Dios» (<a href="philippians-4.es.html#v4-6">Filipenses 4:6</a>); y «sabemos que tenemos las peticiones que le hemos pedido» (<a href="1-john-5.es.html#v5-15">1 Juan 5:15</a>). RV60 en 1 Juan 5:15 «las peticiones que le hayamos hecho».')
+
+DICTIONARY.append(('martyria', 'martyria', 'μαρτυρία', 'martyria',
+    'TESTIMONY &mdash; the witness given, the noun of <a href="dictionary.html#martyreo">martyre&#333;</a>, &lsquo;to testify.&rsquo; &#9888; It stands in thirty-two verses of the New Testament, and twenty-six of them are in John&rsquo;s Gospel, letters and Revelation. The Gospel closes on it: &lsquo;we know that his testimony is true&rsquo; (<a href="john-21.html#v21-24">John 21:24</a>), as at the cross, &lsquo;his testimony is true&rsquo; (<a href="john-19.html#v19-35">John 19:35</a>); Jesus says &lsquo;I have the testimony greater than John&rsquo;s&rsquo; (<a href="john-5.html#v5-36">John 5:36</a>); and 3 John ends &lsquo;you know that our testimony is true&rsquo; (<a href="3-john-1.html#v12">3 John 1:12</a>). In <a href="1-john-5.html#v5-9">1 John 5:9</a>&ndash;11 it comes six times in three verses: &lsquo;the testimony of God is greater.&rsquo; KJV there &lsquo;witness&rsquo; and &lsquo;record&rsquo;; NIV &lsquo;testimony.&rsquo;',
+    ('John', 5, 36)))
+DICTIONARY_ES['martyria'] = ('martyría',
+    'TESTIMONIO &mdash; el testimonio dado, el sustantivo de <a href="diccionario.html#martyreo">martyré&#333;</a>, «dar testimonio». &#9888; Está en treinta y dos versículos del Nuevo Testamento, y veintiséis de ellos están en el Evangelio, las cartas y el Apocalipsis de Juan. El Evangelio cierra con él: «sabemos que su testimonio es verdadero» (<a href="john-21.es.html#v21-24">Juan 21:24</a>), como junto a la cruz, «su testimonio es verdadero» (<a href="john-19.es.html#v19-35">Juan 19:35</a>); Jesús dice «yo tengo un testimonio mayor que el de Juan» (<a href="john-5.es.html#v5-36">Juan 5:36</a>); y 3 Juan termina «sabes que nuestro testimonio es verdadero» (<a href="3-john-1.es.html#v12">3 Juan 1:12</a>). En <a href="1-john-5.es.html#v5-9">1 Juan 5:9</a>&ndash;11 aparece seis veces en tres versículos: «el testimonio de Dios es mayor». RV60 allí «testimonio»; TNM 1987 «el testimonio que Dios da».')
+
+_jn1_3_fix([
+    ('(<a href="1-john-4.html#v4-20">4:20</a>), and 1 John 5:10 (not yet on these pages).',
+     '(<a href="1-john-4.html#v4-20">4:20</a>), and &lsquo;Whoever does not believe God has made him a liar&rsquo; (<a href="1-john-5.html#v5-10">5:10</a>).'),
+    ('(<a href="1-john-4.es.html#v4-20">4:20</a>), y 1 Juan 5:10 (todavía no en estas páginas).',
+     '(<a href="1-john-4.es.html#v4-20">4:20</a>), y «El que no cree a Dios lo ha hecho mentiroso» (<a href="1-john-5.es.html#v5-10">5:10</a>).'),
+])
+
+XREFS.extend([
+    (("1 John", 2, 22), ("1 John", 5, 1), "Jesus is the Christ"),
+    (("Matthew", 1, 2), ("1 John", 5, 1), "fathered"),
+    (("John", 14, 15), ("1 John", 5, 3), "keep my commandments"),
+    (("Matthew", 11, 30), ("1 John", 5, 3), "my burden is light"),
+    (("Matthew", 23, 4), ("1 John", 5, 3), "heavy loads"),
+    (("John", 16, 33), ("1 John", 5, 4), "I have conquered the world"),
+    (("1 John", 4, 4), ("1 John", 5, 4), "you have conquered"),
+    (("John", 19, 34), ("1 John", 5, 6), "blood and water"),
+    (("1 John", 1, 7), ("1 John", 5, 6), "the blood of Jesus"),
+    (("John", 15, 26), ("1 John", 5, 6), "the Spirit testifies"),
+    (("Deuteronomy", 19, 15), ("1 John", 5, 8), "two or three witnesses"),
+    (("John", 8, 17), ("1 John", 5, 8), "the testimony of two"),
+    (("John", 5, 36), ("1 John", 5, 9), "a greater testimony"),
+    (("1 John", 1, 10), ("1 John", 5, 10), "making him a liar"),
+    (("1 John", 2, 25), ("1 John", 5, 11), "eternal life promised"),
+    (("John", 20, 31), ("1 John", 5, 13), "written so that"),
+    (("1 John", 3, 22), ("1 John", 5, 14), "whatever we ask"),
+    (("John", 16, 23), ("1 John", 5, 14), "ask the Father"),
+    (("Philippians", 4, 6), ("1 John", 5, 15), "requests"),
+    (("John", 11, 4), ("1 John", 5, 16), "not unto death"),
+    (("Numbers", 15, 30), ("1 John", 5, 16), "sin with a high hand"),
+    (("Mark", 3, 29), ("1 John", 5, 16), "the unforgivable sin"),
+    (("1 John", 1, 9), ("1 John", 5, 17), "all unrighteousness"),
+    (("1 John", 3, 9), ("1 John", 5, 18), "born of God does not sin"),
+    (("John", 17, 15), ("1 John", 5, 18), "keep them from the evil one"),
+    (("John", 17, 3), ("1 John", 5, 20), "the only true God"),
+    (("John", 20, 28), ("1 John", 5, 20), "my Lord and my God"),
+    (("1 Thessalonians", 1, 9), ("1 John", 5, 21), "from idols to the true God"),
+])
+
+CHAPTER_ART["1john5"] = [dict(
+    file="bolswert-rubens-coup-de-lance.jpg",
+    title="Le Coup de Lance (The Thrust of the Lance)",   title_es="La lanzada",
+    artist="Boëtius à Bolswert, after Peter Paul Rubens",
+    year="1631",
+    location="National Gallery of Art, Washington",
+    location_es="Galería Nacional de Arte, Washington",
+    alt="An engraving of the crucifixion: Jesus dead on the central cross between two thieves, a mounted soldier on the left driving a long lance into his side, a man on a ladder breaking a thief's legs with a club, and the mourning women at the foot of the cross. Under the plate, the title IESVS CRVCIFIXVS and a line of Latin.",
+    note="&#9888; Bolswert&rsquo;s engraving of Rubens&rsquo;s altarpiece, beside <a href=\"1-john-5.html#v5-6\">verse 6</a>, &lsquo;This is the one who came through water and blood.&rsquo; The plate is lettered with John 19 in Latin, ending &lsquo;et continuo exivit sanguis et aqua,&rsquo; &lsquo;and at once blood and water came out.&rsquo; That the letter&rsquo;s water and blood are this water and blood is one reading among several.",
+    note_es="&#9888; El grabado de Bolswert sobre el retablo de Rubens, junto al <a href=\"1-john-5.es.html#v5-6\">versículo 6</a>, «Este es el que vino mediante agua y sangre». La lámina lleva Juan 19 en latín, que termina «et continuo exivit sanguis et aqua», «y al instante salió sangre y agua». Que el agua y la sangre de la carta sean estas es una lectura entre varias.",
+    license="CC0 (National Gallery of Art open access)",
+    source_url="https://commons.wikimedia.org/wiki/File:Bo%C3%ABtius_Adams_Bolswert_after_Sir_Peter_Paul_Rubens,_Le_Coup_de_Lance,_1631,_NGA_126853.jpg",
+)]
+
+CHRON_CHAPTERS["1john5"] = dict(era='apostolic',
+    when="The letter's last movement: 'Everyone who believes that Jesus is the Christ has been born of God'; 'his commandments are not heavy'; 'the victory that has conquered the world, our faith'; the one who came through water and blood, and the three who testify; the testimony of God and eternal life in the Son; 'sin leading to death'; and 'the true God and eternal life,' with a last word: 'Little children, guard yourselves from idols.'",
+    clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
