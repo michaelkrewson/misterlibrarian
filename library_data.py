@@ -45792,14 +45792,14 @@ for _i, _d in enumerate(DICTIONARY):
         assert _d[4].count(_a) == 1
         DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'The same noun names Samson’s wedding puzzle, &ldquo;Let me riddle you a riddle&rdquo; (<a href="judges-14.html#v14-12">Judges 14:12</a>, now on these pages, with verb and noun from one root), and the Queen of Sheba’s hard questions (1 Kings 10:1, not yet on these pages)'),) + _d[5:]
     elif _d[0] == "tsalach":
-        DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#9888; The same letters describe the spirit of Jehovah &ldquo;rushing&rdquo; on Samson, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.html#v14-6">Judges 14:6</a> and <a href="judges-14.html#v14-19">14:19</a>, now on these pages; 15:14 and 1 Samuel 10:10, not yet). Whether &ldquo;prosper&rdquo; and &ldquo;rush&rdquo; are one verb or two that happen to share their letters is debated, and this library does not decide.',) + _d[5:]
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#9888; The same letters describe the spirit of Jehovah &ldquo;rushing&rdquo; on Samson, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.html#v14-6">Judges 14:6</a>, <a href="judges-14.html#v14-19">14:19</a> and <a href="judges-15.html#v15-14">15:14</a>, now on these pages; 1 Samuel 10:10, not yet). Whether &ldquo;prosper&rdquo; and &ldquo;rush&rdquo; are one verb or two that happen to share their letters is debated, and this library does not decide.',) + _d[5:]
     elif _d[0] == "mishteh":
         DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#11088; Samson&rsquo;s seven-day wedding feast at Timnah is a <em>mishteh</em> (<a href="judges-14.html#v14-10">Judges 14:10</a>, now on these pages), a drinking feast held by a man vowed from the womb to touch no wine; the chapter does not say whether he drank.',) + _d[5:]
 _a = "el acertijo de bodas de Sansón y las preguntas difíciles de la reina de Sabá (ninguno todavía en estas páginas)"
 assert DICTIONARY_ES["chidah"][1].count(_a) == 1
 DICTIONARY_ES["chidah"] = (DICTIONARY_ES["chidah"][0], DICTIONARY_ES["chidah"][1].replace(_a, 'el acertijo de bodas de Sansón, «Déjenme proponerles un enigma» (<a href="judges-14.es.html#v14-12">Jueces 14:12</a>, ya en estas páginas, con verbo y sustantivo de una sola raíz), y las preguntas difíciles de la reina de Sabá (1 Reyes 10:1, todavía no en estas páginas)'))
 DICTIONARY_ES["tsalach"] = ("tsalach",
-    """PROSPERAR, tener éxito, ser llevado a buen fin. Génesis 39 lo usa como el redoble de la esclavitud de José: «Jehová estaba con José, y llegó a ser un hombre que prosperaba» (<a href="genesis-39.es.html#v39-2">Génesis 39:2</a>, ya en estas páginas), y otra vez en la cárcel (39:23). La incomodidad es deliberada y pertenece al hebreo: el hombre descrito es propiedad de otro y luego preso; lo que la palabra promete no es que las cosas sean agradables. &#9888; Las mismas letras describen al espíritu de Jehová que «irrumpe» sobre Sansón, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.es.html#v14-6">Jueces 14:6</a> y <a href="judges-14.es.html#v14-19">14:19</a>, ya en estas páginas; 15:14 y 1 Samuel 10:10, todavía no). Si «prosperar» e «irrumpir» son un verbo o dos que comparten letras se discute, y esta biblioteca no lo decide.""")
+    """PROSPERAR, tener éxito, ser llevado a buen fin. Génesis 39 lo usa como el redoble de la esclavitud de José: «Jehová estaba con José, y llegó a ser un hombre que prosperaba» (<a href="genesis-39.es.html#v39-2">Génesis 39:2</a>, ya en estas páginas), y otra vez en la cárcel (39:23). La incomodidad es deliberada y pertenece al hebreo: el hombre descrito es propiedad de otro y luego preso; lo que la palabra promete no es que las cosas sean agradables. &#9888; Las mismas letras describen al espíritu de Jehová que «irrumpe» sobre Sansón, <em>vatitslach alav ruach YHWH</em> (<a href="judges-14.es.html#v14-6">Jueces 14:6</a>, <a href="judges-14.es.html#v14-19">14:19</a> y <a href="judges-15.es.html#v15-14">15:14</a>, ya en estas páginas; 1 Samuel 10:10, todavía no). Si «prosperar» e «irrumpir» son un verbo o dos que comparten letras se discute, y esta biblioteca no lo decide.""")
 DICTIONARY_ES["mishteh"] = ("mishteh",
     """UN BANQUETE —literalmente una BEBIDA, de <em>shatah</em>, «beber». Es la unidad que estructura Ester: el libro tiene diez, en pares, y todo lo decisivo ocurre en uno (<a href="esther-1.es.html#v3">Ester 1:3</a>, ya en estas páginas). &#11088; El banquete de bodas de siete días de Sansón en Timna es un <em>mishteh</em> (<a href="judges-14.es.html#v14-10">Jueces 14:10</a>, ya en estas páginas), un banquete de bebida ofrecido por un hombre consagrado desde el vientre a no tocar vino; el capítulo no dice si bebió.""")
 
@@ -45842,4 +45842,50 @@ CHAPTER_ART["judg14"] = [dict(
     note_es="La novia está quieta e iluminada en el centro, como en el capítulo, que no le da nombre ni palabra hasta que los invitados la amenazan; Sansón, a la derecha, cuenta con los dedos ante los hombres que se inclinan hacia él: el enigma del versículo 14 propuesto a los treinta compañeros. La copa y el plato sobre la mesa son el <em>mishteh</em>, el banquete de bebida del versículo 10.",
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Wedding_of_Samson_-_WGA19100.jpg",
+)]
+
+# -- Judges 15 (2026-10-20): Lehi (Ramath-lehi, En-hakkore) and the rock of Etam; Samson extended
+ENCYCLOPEDIA.append(dict(slug="lehi", name="Lehi", kind="place", aliases=["Lehi", "Ramath-lehi", "En-hakkore"],
+    coords=(31.72, 34.95, 0.4), approx=True,
+    modern="Unlocated; in Judah, somewhere near the Philistine border (Judges 15:9)",
+    refs=[("Judges", 15, 9)], videos=[],
+    desc="""&ldquo;Jaw&rdquo;: the place in Judah where the Philistines spread out to take Samson, where the men of Judah handed him over bound, and where he killed a thousand men with the fresh jawbone of a donkey (<a href="judges-15.html#v15-9">Judges 15:9&ndash;17</a>, now on these pages). He named the spot <strong>Ramath-lehi</strong>, &ldquo;Height of the Jaw&rdquo;, and when he called to Jehovah in his thirst God split open the hollow &ldquo;that is in Lehi&rdquo; and the spring was named <strong>En-hakkore</strong>, &ldquo;the spring of the one who called&rdquo;, &ldquo;which is in Lehi to this day&rdquo; (15:19). &#9888; Because <em>lechi</em> also means &ldquo;jaw&rdquo;, the KJV, the Geneva and the Douay make the water come out of the jawbone itself. Where Lehi was is not known; the map point is a guess in the lowland of Judah."""))
+ENCYCLOPEDIA_ES["lehi"] = ("Lehi",
+    """«Quijada»: el lugar de Judá donde los filisteos se desplegaron para capturar a Sansón, donde los hombres de Judá lo entregaron atado, y donde él mató a mil hombres con la quijada fresca de un asno (<a href="judges-15.es.html#v15-9">Jueces 15:9&ndash;17</a>, ya en estas páginas). Llamó al lugar <strong>Ramat-lehi</strong>, «Altura de la Quijada», y cuando clamó a Jehová en su sed, Dios abrió la hondonada «que hay en Lehi» y el manantial se llamó <strong>En-hacoré</strong>, «el manantial del que clamó», «que está en Lehi hasta el día de hoy» (15:19). &#9888; Como <em>lechi</em> significa también «quijada», la RV 1909 y la Douay hacen salir el agua de la quijada misma. No se sabe dónde estaba Lehi; el punto del mapa es una estimación en la Sefelá de Judá.""")
+
+ENCYCLOPEDIA.append(dict(slug="rock-of-etam", name="Rock of Etam", kind="place", aliases=["rock of Etam", "Etam"],
+    coords=(31.69, 35.17, 0.4), approx=True,
+    modern="Unlocated; perhaps near the Etam of 2 Chronicles 11:6, south of Bethlehem (reported)",
+    refs=[("Judges", 15, 8)], videos=[],
+    desc="""The crag in whose cleft Samson stayed after the slaughter &ldquo;leg on thigh&rdquo;, and where three thousand men of Judah came down to bind him (<a href="judges-15.html#v15-8">Judges 15:8</a> and <a href="judges-15.html#v15-11">15:11</a>, now on these pages). <em>Se&rsquo;if</em> is a cleft or fissure; the KJV has &ldquo;the top of the rock&rdquo;, the NIV &ldquo;a cave&rdquo;. A town Etam near Bethlehem is fortified by Rehoboam (2 Chronicles 11:6, not yet on these pages); whether the rock is near it is not settled, and the map point follows that town only as a guess."""))
+ENCYCLOPEDIA_ES["rock-of-etam"] = ("Peña de Etam",
+    """El peñasco en cuya hendidura se quedó Sansón después de la matanza «pierna sobre muslo», y adonde bajaron tres mil hombres de Judá para atarlo (<a href="judges-15.es.html#v15-8">Jueces 15:8</a> y <a href="judges-15.es.html#v15-11">15:11</a>, ya en estas páginas). <em>Se&rsquo;if</em> es una hendidura o grieta; la RV60 dice «la cueva». Una ciudad Etam cerca de Belén es fortificada por Roboam (2 Crónicas 11:6, todavía no en estas páginas); si la peña está cerca de ella no está decidido, y el punto del mapa sigue a esa ciudad solo como estimación.""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "samson":
+        _a = "(chapters 15&ndash;16 not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, "(chapter 16 not yet on these pages)") + ' When his wife is given away he burns the Philistine harvest with three hundred foxes and torches; the Philistines burn her and her father; Judah binds him and hands him over at <a href="encyclopedia.html#lehi">Lehi</a>, where the spirit rushes on him, the ropes melt, and he kills a thousand men with the jawbone of a donkey; then, dying of thirst, he calls to Jehovah for the first time and is given a spring (<a href="judges-15.html#v15-1">Judges 15</a>, now on these pages). He judges Israel twenty years &ldquo;in the days of the Philistines&rdquo;.'
+_s = ENCYCLOPEDIA_ES["samson"][1]
+_a = "(los capítulos 15&ndash;16 todavía no en estas páginas)"
+assert _s.count(_a) == 1
+ENCYCLOPEDIA_ES["samson"] = (ENCYCLOPEDIA_ES["samson"][0], _s.replace(_a, "(el capítulo 16 todavía no en estas páginas)") + ' Cuando le quitan la mujer, quema la cosecha filistea con trescientas zorras y antorchas; los filisteos la queman a ella y a su padre; Judá lo ata y lo entrega en <a href="enciclopedia.html#lehi">Lehi</a>, donde el espíritu irrumpe sobre él, las cuerdas se derriten, y mata a mil hombres con la quijada de un asno; luego, muriéndose de sed, clama a Jehová por primera vez y recibe un manantial (<a href="judges-15.es.html#v15-1">Jueces 15</a>, ya en estas páginas). Juzga a Israel veinte años «en los días de los filisteos».')
+
+CHRON_CHAPTERS["judg15"] = dict(era="exodus",
+    when="At wheat harvest Samson comes back to Timnah with a young goat and finds his wife given to his companion. He burns the Philistines' sheaves, standing grain, vineyards and olive trees with three hundred foxes tied tail to tail with torches; the Philistines burn the woman and her father. He strikes them 'leg on thigh' and goes down to the cleft of the rock of Etam. Three thousand men of Judah bind him with two new ropes and hand him over at Lehi, where the spirit of Jehovah rushes on him: the ropes melt, and he kills a thousand men with a fresh jawbone of a donkey. Dying of thirst, he calls to Jehovah, and God splits the hollow in Lehi for a spring, En-hakkore. He judges Israel twenty years in the days of the Philistines.",
+    clock="Within the period of the judges, with no date the chapter gives for itself; Samson's twenty years fall inside the Philistine forty of Judges 13:1. The early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
+
+CHAPTER_ART["judg15"] = [dict(
+    file="langetti-samson-drinks-from-the-jawbone.jpg",
+    title="Samson Drinking from the Jawbone",
+    title_es="Sansón bebe de la quijada",
+    artist="Giovanni Battista Langetti",
+    year="c. 1650–1660",
+    location="Oil painting (c. 1650–1660), digitised on Wikimedia Commons",
+    location_es="Óleo (h. 1650–1660), digitalizado en Wikimedia Commons",
+    alt="Oil painting: a half-naked muscular man kneels among fallen bodies on rocky ground, his head thrown back and mouth open, drinking a stream of water that pours from a jawbone he holds high in one hand.",
+    note="Langetti paints the reading of verse 19 that the King James, the Geneva and the Douay give, where the water runs from the jawbone itself: Samson, kneeling among the dead, drinks from the bone he killed them with. The Hebrew can also be read, as this translation reads it, as a hollow in the place called Lehi, &ldquo;Jaw&rdquo;; the painting shows the older reading at its most literal.",
+    note_es="Langetti pinta la lectura del versículo 19 que dan la RV 1909 y la Douay, en la que el agua sale de la quijada misma: Sansón, arrodillado entre los muertos, bebe del hueso con que los mató. El hebreo puede leerse también, como lo lee esta traducción, como una hondonada en el lugar llamado Lehi, «Quijada»; el cuadro muestra la lectura antigua en su forma más literal.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Giovan_Battista_Langetti_-_Samson_drinks_from_the_jawbone_-_fountain_of_the_crier.jpg",
 )]
