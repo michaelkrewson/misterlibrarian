@@ -44309,3 +44309,156 @@ CHRON_CHAPTERS["1pe5"] = dict(era='apostolic',
     when="To the elders from 'a fellow elder': 'shepherd the flock of God,' not for shameful gain and not lording it, and the chief shepherd's unfading crown; Proverbs 3:34 again, 'God opposes the proud'; anxiety cast on God; the adversary 'like a roaring lion'; 'the God of all grace' who will mend and ground; and the letter sent 'through Silvanus,' with greetings from 'she who is in Babylon' and from Mark.",
     clock="c. AD 62–64 on the traditional reading, later on others (see chapter 1).")
 
+# ---- 2 Peter 2 -----------------------------------------------------------
+DICTIONARY.append(('pseudodidaskalos', 'pseudodidaskalos', 'ψευδοδιδάσκαλος', 'pseudodidaskalos',
+    'A FALSE TEACHER &mdash; <em>pseud&#275;s</em>, &lsquo;false,&rsquo; and <em>didaskalos</em>, &lsquo;teacher.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-peter-2.html#v2-1">2 Peter 2:1</a>, &lsquo;just as there will also be false teachers among you,&rsquo; set beside the false prophets who &lsquo;arose among the people&rsquo; of Israel. KJV and NWT 1984 &lsquo;false teachers&rsquo;; Douay &lsquo;lying teachers.&rsquo;',
+    ('2 Peter', 2, 1)))
+DICTIONARY_ES['pseudodidaskalos'] = ('pseudodidáskalos',
+    'FALSO MAESTRO &mdash; <em>pseud&#275;́s</em>, «falso», y <em>didáskalos</em>, «maestro». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-2.es.html#v2-1">2 Pedro 2:1</a>, «como también entre ustedes habrá falsos maestros», junto a los falsos profetas que hubo «en el pueblo» de Israel. RV60 y TNM 1987 «falsos maestros»; RV 1909 «falsos doctores».')
+
+DICTIONARY.append(('plastos', 'plastos', 'πλαστός', 'plastos',
+    'FABRICATED, made up &mdash; from <em>plass&#333;</em>, &lsquo;to mould, to shape,&rsquo; as a potter shapes clay. &#9888; It stands in one verse of the New Testament, <a href="2-peter-2.html#v2-3">2 Peter 2:3</a>, &lsquo;they will make a business of you with fabricated words,&rsquo; the answer to the &lsquo;cleverly devised myths&rsquo; the writer denies following at <a href="2-peter-1.html#v16">2 Peter 1:16</a>. KJV &lsquo;feigned words&rsquo;; NWT 1984 &lsquo;counterfeit words&rsquo;; NIV &lsquo;fabricated stories.&rsquo;',
+    ('2 Peter', 2, 3)))
+DICTIONARY_ES['plastos'] = ('plastós',
+    'FABRICADO, inventado &mdash; de <em>plássō</em>, «modelar, dar forma», como el alfarero al barro. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-2.es.html#v2-3">2 Pedro 2:3</a>, «harán negocio de ustedes con palabras fabricadas», respuesta a las «fábulas artificiosas» que el autor niega haber seguido en <a href="2-peter-1.es.html#v16">2 Pedro 1:16</a>. RV60 y TNM 1987 «palabras fingidas»; NVI «palabras engañosas».')
+
+DICTIONARY.append(('tartaroo', 'tartaroō', 'ταρταρόω', 'tartaroō',
+    'TO CAST INTO TARTARUS &mdash; the verb of <em>Tartaros</em>, in Greek the deepest pit below the world of the dead (reported, not checked here). &#9888; It stands in one verse of the New Testament, <a href="2-peter-2.html#v2-4">2 Peter 2:4</a>, of the angels who sinned. It is not Hades, the realm of the dead (<a href="dictionary.html#hades">hades</a>), and not Gehenna (<a href="dictionary.html#gehenna">gehenna</a>); this translation keeps all three names apart. KJV &lsquo;cast them down to hell&rsquo;; NIV &lsquo;sent them to hell&rsquo;; NWT 1984 keeps the name; the Latin has <em>in tartarum</em>.',
+    ('2 Peter', 2, 4)))
+DICTIONARY_ES['tartaroo'] = ('tartaró&#333;',
+    'ARROJAR AL TÁRTARO &mdash; el verbo de <em>Tártaros</em>, en griego el pozo más hondo bajo el mundo de los muertos (se informa, no comprobado aquí). &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-2.es.html#v2-4">2 Pedro 2:4</a>, de los ángeles que pecaron. No es el Hades, el reino de los muertos (<a href="diccionario.html#hades">hades</a>), ni la Gehena (<a href="diccionario.html#gehenna">gehenna</a>); esta traducción mantiene separados los tres nombres. RV60 «arrojándolos al infierno»; NVI «los arrojó al abismo»; TNM 1987 «al echarlos en el Tártaro»; la Vulgata <em>in tartarum</em>.')
+
+DICTIONARY.append(('zophos', 'zophos', 'ζόφος', 'zophos',
+    'GLOOM, the thick dark of the underworld &mdash; deeper than plain darkness. &#9888; It stands in five verses of the New Testament: the &lsquo;thick darkness and gloom&rsquo; at Sinai in <a href="hebrews-12.html#v12-18">Hebrews 12:18</a>; the angels &lsquo;kept in eternal chains under gloom&rsquo; at <a href="jude-1.html#v6">Jude 1:6</a>; &lsquo;the gloom of darkness&rsquo; kept forever at <a href="jude-1.html#v13">Jude 1:13</a>; and the &lsquo;chains of gloom&rsquo; and &lsquo;the gloom of darkness&rsquo; at <a href="2-peter-2.html#v2-4">2 Peter 2:4</a> and <a href="2-peter-2.html#v2-17">2 Peter 2:17</a>. KJV at 2 Peter 2:17 &lsquo;the mist of darkness&rsquo;; ASV and NWT 1984 &lsquo;the blackness of darkness.&rsquo;',
+    ('Hebrews', 12, 18)))
+DICTIONARY_ES['zophos'] = ('zóphos',
+    'TINIEBLAS, lobreguez, la oscuridad espesa del mundo inferior &mdash; más honda que la simple oscuridad. &#9888; Está en cinco versículos del Nuevo Testamento: «densa oscuridad, tinieblas y tormenta» en el Sinaí, en <a href="hebrews-12.es.html#v12-18">Hebreos 12:18</a>; los ángeles guardados «en cadenas eternas bajo tinieblas» en <a href="jude-1.es.html#v6">Judas 1:6</a>; «la lobreguez de las tinieblas» guardada para siempre en <a href="jude-1.es.html#v13">Judas 1:13</a>; y las «cadenas de tinieblas» y «la lobreguez de las tinieblas» en <a href="2-peter-2.es.html#v2-4">2 Pedro 2:4</a> y <a href="2-peter-2.es.html#v2-17">2 Pedro 2:17</a>. RV60 en 2 Pedro 2:17 «la más densa oscuridad»; TNM 1987 «la negrura de la oscuridad».')
+
+DICTIONARY.append(('kyriotes', 'kyriotēs', 'κυριότης', 'kyriotēs',
+    'LORDSHIP, dominion &mdash; from <em>kyrios</em>, &lsquo;lord.&rsquo; &#9888; It stands in four verses of the New Testament. At <a href="ephesians-1.html#v21">Ephesians 1:21</a>, &lsquo;far above every rule and authority and power and lordship,&rsquo; and <a href="colossians-1.html#v16">Colossians 1:16</a>, &lsquo;thrones or lordships or rulers or authorities,&rsquo; it is one of the powers in the heavens. At <a href="jude-1.html#v8">Jude 1:8</a> the intruders &lsquo;reject authority,&rsquo; and at <a href="2-peter-2.html#v2-10">2 Peter 2:10</a> they &lsquo;despise lordship&rsquo;; whether God&rsquo;s or Christ&rsquo;s rule, angelic powers, or human authority is meant, readings differ. KJV at 2 Peter 2:10 &lsquo;despise government&rsquo;; ASV &lsquo;despise dominion&rsquo;; NWT 1984 &lsquo;look down on lordship.&rsquo;',
+    ('Ephesians', 1, 21)))
+DICTIONARY_ES['kyriotes'] = ('kyriót&#275;s',
+    'SEÑORÍO, dominio &mdash; de <em>kýrios</em>, «señor». &#9888; Está en cuatro versículos del Nuevo Testamento. En <a href="ephesians-1.es.html#v21">Efesios 1:21</a>, «muy por encima de todo principado y autoridad y poder y señorío», y <a href="colossians-1.es.html#v16">Colosenses 1:16</a>, «sean tronos, sean señoríos, sean principados, sean autoridades», es uno de los poderes en los cielos. En <a href="jude-1.es.html#v8">Judas 1:8</a> los intrusos «rechazan la autoridad», y en <a href="2-peter-2.es.html#v2-10">2 Pedro 2:10</a> «desprecian el señorío»; si se trata del señorío de Dios o de Cristo, de poderes angélicos o de autoridad humana, las lecturas difieren. RV60 en 2 Pedro 2:10 «desprecian el señorío»; TNM 1987 «menosprecian el señorío».')
+
+DICTIONARY.append(('deleazo', 'deleazō', 'δελεάζω', 'deleazō',
+    'TO BAIT, to lure with bait &mdash; from <em>delear</em>, &lsquo;bait,&rsquo; a word of fishing and trapping. &#9888; It stands in three verses of the New Testament: &lsquo;each is tempted by his own desire, being dragged off and baited&rsquo; at <a href="james-1.html#v14">James 1:14</a>; &lsquo;baiting unstable souls&rsquo; at <a href="2-peter-2.html#v2-14">2 Peter 2:14</a>; and &lsquo;they bait with the desires of the flesh&rsquo; at <a href="2-peter-2.html#v2-18">2 Peter 2:18</a>. KJV at 2 Peter 2:14 &lsquo;beguiling unstable souls&rsquo;; ASV &lsquo;enticing&rsquo;; NWT 1984 &lsquo;they entice.&rsquo;',
+    ('James', 1, 14)))
+DICTIONARY_ES['deleazo'] = ('deleáz&#333;',
+    'CEBAR, atraer con cebo &mdash; de <em>délear</em>, «cebo», palabra de pesca y de trampas. &#9888; Está en tres versículos del Nuevo Testamento: «cada uno es tentado por su propia concupiscencia, arrastrado y cebado» en <a href="james-1.es.html#v14">Santiago 1:14</a>; «cebando a almas inestables» en <a href="2-peter-2.es.html#v2-14">2 Pedro 2:14</a>; y «ceban con los deseos de la carne» en <a href="2-peter-2.es.html#v2-18">2 Pedro 2:18</a>. RV 1909 en 2 Pedro 2:14 «cebando las almas inconstantes»; RV60 «seducen a las almas inconstantes».')
+
+DICTIONARY.append(('tephroo', 'tephroō', 'τεφρόω', 'tephroō',
+    'TO REDUCE TO ASHES &mdash; from <em>tephra</em>, &lsquo;ash.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-peter-2.html#v2-6">2 Peter 2:6</a>, &lsquo;reducing the cities of Sodom and Gomorrah to ashes.&rsquo; Genesis tells of &lsquo;sulfur and fire&rsquo; and of smoke going up &lsquo;like the smoke of a kiln&rsquo; (<a href="genesis-19.html#v19-24">Genesis 19:24</a>, <a href="genesis-19.html#v19-28">19:28</a>); the account in Genesis 19 does not speak of ashes (Hebrew checked). KJV &lsquo;turning the cities of Sodom and Gomorrha into ashes.&rsquo;',
+    ('2 Peter', 2, 6)))
+DICTIONARY_ES['tephroo'] = ('tephró&#333;',
+    'REDUCIR A CENIZA &mdash; de <em>téphra</em>, «ceniza». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-2.es.html#v2-6">2 Pedro 2:6</a>, «reduciendo a ceniza las ciudades de Sodoma y Gomorra». Génesis habla de «azufre y fuego» y de humo que sube «como el humo de un horno» (Génesis 19:24 (ya en estas páginas, todavía no en español), 19:28 (ya en estas páginas, todavía no en español)); el relato de Génesis 19 no habla de ceniza (hebreo comprobado). RV60 «reduciéndolas a ceniza»; TNM 1987 «al reducir a cenizas a las ciudades».')
+
+DICTIONARY.append(('athesmos', 'athesmos', 'ἄθεσμος', 'athesmos',
+    'UNPRINCIPLED, lawless &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>thesmos</em>, &lsquo;what is laid down,&rsquo; a custom or ordinance. &#9888; It stands in two verses of the New Testament, both in 2 Peter: the people of Sodom at <a href="2-peter-2.html#v2-7">2 Peter 2:7</a>, &lsquo;the conduct of the unprincipled in their sensuality,&rsquo; and 3:17 (not yet on these pages). It is a different word from <em>anomos</em>, &lsquo;lawless,&rsquo; of the &lsquo;lawless deeds&rsquo; in the next verse. KJV &lsquo;the wicked&rsquo;; NWT 1984 &lsquo;the law-defying people.&rsquo;',
+    ('2 Peter', 2, 7)))
+DICTIONARY_ES['athesmos'] = ('áthesmos',
+    'SIN PRINCIPIOS, desaforado &mdash; <em>a-</em>, «sin», y <em>thesmós</em>, «lo establecido», una costumbre u ordenanza. &#9888; Está en dos versículos del Nuevo Testamento, ambos en 2 Pedro: la gente de Sodoma en <a href="2-peter-2.es.html#v2-7">2 Pedro 2:7</a>, «la conducta de los sin principios en su sensualidad», y 3:17 (todavía no en estas páginas). Es otra palabra que <em>ánomos</em>, «sin ley», de las «obras sin ley» del versículo siguiente. RV60 «los malvados»; TNM 1987 «la gente desafiadora de ley».')
+
+DICTIONARY.append(('asteriktos', 'astēriktos', 'ἀστήρικτος', 'astēriktos',
+    'UNSTABLE, unsteady &mdash; <em>a-</em>, &lsquo;not,&rsquo; and <a href="dictionary.html#sterizo">st&#275;riz&#333;</a>, &lsquo;to make firm.&rsquo; &#9888; It stands in two verses of the New Testament, both in 2 Peter: &lsquo;baiting unstable souls&rsquo; at <a href="2-peter-2.html#v2-14">2 Peter 2:14</a>, and the &lsquo;untaught and unstable&rsquo; who twist Paul&rsquo;s letters at 3:16 (not yet on these pages). It is the opposite of &lsquo;established in the truth&rsquo; at <a href="2-peter-1.html#v12">2 Peter 1:12</a>. KJV &lsquo;unstable souls&rsquo;; NWT 1984 &lsquo;unsteady souls.&rsquo;',
+    ('2 Peter', 2, 14)))
+DICTIONARY_ES['asteriktos'] = ('ast&#275;́riktos',
+    'INESTABLE, inconstante &mdash; <em>a-</em>, «no», y <a href="diccionario.html#sterizo">st&#275;ríz&#333;</a>, «afirmar». &#9888; Está en dos versículos del Nuevo Testamento, ambos en 2 Pedro: «cebando a almas inestables» en <a href="2-peter-2.es.html#v2-14">2 Pedro 2:14</a>, y los «indoctos e inestables» que tuercen las cartas de Pablo en 3:16 (todavía no en estas páginas). Es lo contrario de «afirmados en la verdad» en <a href="2-peter-1.es.html#v12">2 Pedro 1:12</a>. RV60 «almas inconstantes»; TNM 1987 «almas inconstantes».')
+
+DICTIONARY.append(('anydros', 'anydros', 'ἄνυδρος', 'anydros',
+    'WATERLESS, dry &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>hyd&#333;r</em>, &lsquo;water.&rsquo; &#9888; It stands in four verses of the New Testament: the &lsquo;waterless places&rsquo; the unclean spirit passes through at <a href="matthew-12.html#v12-43">Matthew 12:43</a> and <a href="luke-11.html#v11-24">Luke 11:24</a>; Jude&rsquo;s &lsquo;waterless clouds carried along by winds&rsquo; (<a href="jude-1.html#v12">Jude 1:12</a>); and &lsquo;springs without water&rsquo; at <a href="2-peter-2.html#v2-17">2 Peter 2:17</a>. A spring that gives nothing and a cloud that drops nothing are the same picture. KJV at 2 Peter 2:17 &lsquo;wells without water&rsquo;; ASV &lsquo;springs without water.&rsquo;',
+    ('Matthew', 12, 43)))
+DICTIONARY_ES['anydros'] = ('ánydros',
+    'SIN AGUA, seco &mdash; <em>a-</em>, «sin», y <em>hýd&#333;r</em>, «agua». &#9888; Está en cuatro versículos del Nuevo Testamento: los «lugares secos» por donde pasa el espíritu inmundo en <a href="matthew-12.es.html#v12-43">Mateo 12:43</a> y <a href="luke-11.es.html#v11-24">Lucas 11:24</a>; las «nubes sin agua llevadas por los vientos» de Judas (<a href="jude-1.es.html#v12">Judas 1:12</a>); y las «fuentes sin agua» de <a href="2-peter-2.es.html#v2-17">2 Pedro 2:17</a>. Una fuente que no da nada y una nube que no deja caer nada son la misma imagen. RV60 en 2 Pedro 2:17 «fuentes sin agua».')
+
+DICTIONARY.append(('hyperonkos', 'hyperonkos', 'ὑπέρογκος', 'hyperonkos',
+    'SWOLLEN, inflated, overblown &mdash; <em>hyper</em>, &lsquo;over,&rsquo; and <em>onkos</em>, &lsquo;bulk, swelling.&rsquo; &#9888; It stands in two verses of the New Testament: &lsquo;their mouth speaks swollen words&rsquo; at <a href="jude-1.html#v16">Jude 1:16</a>, and &lsquo;uttering swollen words of futility&rsquo; at <a href="2-peter-2.html#v2-18">2 Peter 2:18</a>. KJV at 2 Peter 2:18 &lsquo;great swelling words of vanity&rsquo;; NIV &lsquo;empty, boastful words.&rsquo;',
+    ('Jude', 1, 16)))
+DICTIONARY_ES['hyperonkos'] = ('hypéronkos',
+    'HINCHADO, inflado, desmesurado &mdash; <em>hypér</em>, «sobre», y <em>ónkos</em>, «volumen, hinchazón». &#9888; Está en dos versículos del Nuevo Testamento: «su boca habla palabras hinchadas» en <a href="jude-1.es.html#v16">Judas 1:16</a>, y «pronunciando palabras hinchadas de vanidad» en <a href="2-peter-2.es.html#v2-18">2 Pedro 2:18</a>. RV60 en 2 Pedro 2:18 «palabras infladas y vanas»; TNM 1987 «expresiones hinchadas de ningún provecho».')
+
+DICTIONARY.append(('exerama', 'exerama', 'ἐξέραμα', 'exerama',
+    'VOMIT, what is thrown up &mdash; from <em>exera&#333;</em>, &lsquo;to pour out, to vomit.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-peter-2.html#v2-22">2 Peter 2:22</a>, &lsquo;A dog turns back to its own vomit,&rsquo; the proverb of the Hebrew of Proverbs 26:11, where the Greek of Proverbs uses another word, <em>emetos</em> (both checked; Proverbs 26 not yet on these pages). KJV &lsquo;The dog is turned to his own vomit again&rsquo;; NWT 1984 &lsquo;The dog has returned to its own vomit.&rsquo;',
+    ('2 Peter', 2, 22)))
+DICTIONARY_ES['exerama'] = ('exérama',
+    'VÓMITO, lo que se arroja &mdash; de <em>exeráō</em>, «derramar, vomitar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-2.es.html#v2-22">2 Pedro 2:22</a>, «El perro se vuelve a su propio vómito», el proverbio del hebreo de Proverbios 26:11, donde el griego de Proverbios usa otra palabra, <em>émetos</em> (ambos comprobados; Proverbios 26 todavía no en estas páginas). RV60 «El perro vuelve a su vómito»; TNM 1987 «El perro ha vuelto a su propio vómito».')
+
+DICTIONARY_ES['spilas'] = ('spilás',
+    'ESCOLLO OCULTO (plural <em>spilades</em>) &mdash; una roca justo bajo la superficie que destroza el casco de una nave que nunca la vio. Es la imagen de Judas para los intrusos «en sus ágapes» (<a href="jude-1.es.html#v12">Judas 1:12</a>): se sientan a la mesa común y hunden a la congregación desde abajo, sin ser vistos. ⚠️ Una palabra casi idéntica, <em>spílos</em>, «mancha», está detrás del pasaje paralelo de <a href="2-peter-2.es.html#v2-13">2 Pedro 2:13</a>, y algunos traducen la palabra de Judas por «manchas»; pero el «escollo» marinero conviene a su tormenta de imágenes del mar (olas, estrellas errantes) y aquí se conserva.')
+
+def _pe2_2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe2_2_fix([("they sit at the common table and wreck the church from below, unseen. ⚠️ A near-identical word, spilos ('spot, blemish'), stands behind the parallel in 2 Peter 2:13,", 'they sit at the common table and wreck the congregation from below, unseen. ⚠️ A near-identical word, spilos (\'spot, blemish\'), stands behind the parallel in <a href="2-peter-2.html#v2-13">2 Peter 2:13</a>,'), ('TARTARUS (2 Peter 2:4)', 'TARTARUS (<a href="2-peter-2.html#v2-4">2 Peter 2:4</a>; <a href="dictionary.html#tartaroo">tartaroo</a>)'), ('TÁRTARO (2 Pedro 2:4)', 'TÁRTARO (<a href="2-peter-2.es.html#v2-4">2 Pedro 2:4</a>; <a href="diccionario.html#tartaroo">tartaroo</a>)'), ('plus once more outside it (2 Peter 2:22).', 'plus once more outside it (<a href="2-peter-2.html#v2-22">2 Peter 2:22</a>).'), ('más una vez fuera de él (2 Pedro 2:22).', 'más una vez fuera de él (<a href="2-peter-2.es.html#v2-22">2 Pedro 2:22</a>).'), ('and 2 Peter 2:1, not yet on these pages) it appears', 'and <a href="2-peter-2.html#v2-1">2 Peter 2:1</a>, &lsquo;factions of destruction&rsquo;) it appears'), ('y 2 Pedro 2:1, todavía no en estas páginas) aparece', 'y <a href="2-peter-2.es.html#v2-1">2 Pedro 2:1</a>, «partidos de destrucción») aparece'), ('its noun <em>paranomia</em> stands once, at 2 Peter 2:16 (not yet on these pages).', 'its noun <em>paranomia</em> stands once, at <a href="2-peter-2.html#v2-16">2 Peter 2:16</a>, &lsquo;transgression.&rsquo;'), ('su sustantivo <em>paranomia</em> está una vez, en 2 Pedro 2:16 (todavía no en estas páginas).', 'su sustantivo <em>paranomia</em> está una vez, en <a href="2-peter-2.es.html#v2-16">2 Pedro 2:16</a>, «transgresión».'), ('2 Peter 2:22 (not yet on these pages); and <a href="revelation-22.html', '<a href="2-peter-2.html#v2-22">2 Peter 2:22</a>, &lsquo;A dog turns back to its own vomit&rsquo;; and <a href="revelation-22.html'), ('2 Pedro 2:22 (todavía no en estas páginas); y <a href="revelation-22.es.html', '<a href="2-peter-2.es.html#v2-22">2 Pedro 2:22</a>, «El perro se vuelve a su propio vómito»; y <a href="revelation-22.es.html'), ('and 2 Peter 2:13 (not yet on these pages). KJV at Titus 3:3', 'and <a href="2-peter-2.html#v2-13">2 Peter 2:13</a>, &lsquo;They count it a pleasure to revel in the daytime.&rsquo; KJV at Titus 3:3'), ('y 2 Pedro 2:13 (todavía no en estas páginas). RV60 en Tito 3:3', 'y <a href="2-peter-2.es.html#v2-13">2 Pedro 2:13</a>, «Tienen por placer el lujo en pleno día». RV60 en Tito 3:3'), ('a heart &lsquo;trained in greed&rsquo; at 2 Peter 2:14 (not yet on these pages).', 'a heart &lsquo;trained in greed&rsquo; at <a href="2-peter-2.html#v2-14">2 Peter 2:14</a>.'), ('un corazón «entrenado en la codicia» en 2 Pedro 2:14 (todavía no en estas páginas).', 'un corazón «entrenado en la avaricia» en <a href="2-peter-2.es.html#v2-14">2 Pedro 2:14</a>.'), ('and 2 Peter 2:3 (not yet on these pages), of teachers who trade on their hearers.', 'and <a href="2-peter-2.html#v2-3">2 Peter 2:3</a>, of teachers who &lsquo;make a business of you.&rsquo;'), ('y 2 Pedro 2:3 (todavía no en estas páginas), de maestros que comercian con sus oyentes.', 'y <a href="2-peter-2.es.html#v2-3">2 Pedro 2:3</a>, de maestros que «harán negocio de ustedes».'), ('and 2 Peter 2:15 and Revelation 2:14 use him the same way.', 'and <a href="2-peter-2.html#v2-15">2 Peter 2:15</a> and <a href="revelation-2.html#v2-14">Revelation 2:14</a> use him the same way.'), ('(2 Pedro 2:15, Judas 11, Apocalipsis 2:14)', '(<a href="2-peter-2.es.html#v2-15">2 Pedro 2:15</a>, <a href="jude-1.es.html#v11">Judas 11</a>, Apocalipsis 2:14)')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"noah": [("2 Peter", 2, 5)], "sodom": [("2 Peter", 2, 6)], "lot": [("2 Peter", 2, 7)], "balaam": [("2 Peter", 2, 15)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("2 Peter", 1, 21), ("2 Peter", 2, 1), "true and false prophets"),
+    (("Deuteronomy", 18, 20), ("2 Peter", 2, 1), "the false prophet"),
+    (("Jude", 1, 4), ("2 Peter", 2, 1), "denying the Master"),
+    (("1 Corinthians", 6, 20), ("2 Peter", 2, 1), "bought"),
+    (("Galatians", 5, 20), ("2 Peter", 2, 1), "factions"),
+    (("Romans", 2, 24), ("2 Peter", 2, 2), "blasphemed because of you"),
+    (("2 Peter", 1, 16), ("2 Peter", 2, 3), "made-up stories"),
+    (("Jude", 1, 6), ("2 Peter", 2, 4), "angels kept in gloom"),
+    (("1 Peter", 3, 19), ("2 Peter", 2, 4), "the spirits in prison"),
+    (("1 Peter", 3, 20), ("2 Peter", 2, 5), "Noah and the eight"),
+    (("Matthew", 24, 38), ("2 Peter", 2, 5), "the flood"),
+    (("Jude", 1, 7), ("2 Peter", 2, 6), "Sodom and Gomorrah as an example"),
+    (("Genesis", 19, 29), ("2 Peter", 2, 7), "Lot rescued"),
+    (("Luke", 17, 29), ("2 Peter", 2, 7), "the day Lot went out"),
+    (("Jude", 1, 8), ("2 Peter", 2, 10), "despising lordship, blaspheming glories"),
+    (("Jude", 1, 9), ("2 Peter", 2, 11), "angels do not blaspheme"),
+    (("Jude", 1, 10), ("2 Peter", 2, 12), "unreasoning animals"),
+    (("Jude", 1, 12), ("2 Peter", 2, 13), "feasting with you"),
+    (("Acts", 1, 18), ("2 Peter", 2, 13), "the wages of wickedness"),
+    (("James", 1, 14), ("2 Peter", 2, 14), "baited"),
+    (("Numbers", 22, 7), ("2 Peter", 2, 15), "Balaam's fees"),
+    (("Jude", 1, 11), ("2 Peter", 2, 15), "the error of Balaam"),
+    (("Numbers", 22, 28), ("2 Peter", 2, 16), "the donkey speaks"),
+    (("Jude", 1, 13), ("2 Peter", 2, 17), "the gloom of darkness"),
+    (("Jude", 1, 16), ("2 Peter", 2, 18), "swollen words"),
+    (("Romans", 6, 16), ("2 Peter", 2, 19), "slaves of what you obey"),
+    (("Matthew", 12, 45), ("2 Peter", 2, 20), "the last state worse than the first"),
+    (("Hebrews", 6, 4), ("2 Peter", 2, 21), "falling away"),
+])
+
+CHAPTER_ART["2pe2"] = [dict(
+    file="durer-lot-and-his-daughters.jpg",
+    title="Lot and His Daughters",   title_es="Lot y sus hijas",
+    artist="Albrecht Dürer",
+    year="c. 1496–1499",
+    location="National Gallery of Art, Washington",
+    location_es="Galería Nacional de Arte, Washington",
+    alt="An old man in a turban strides along a path carrying a staff and a bundle, followed by two young women carrying a sack, a box and a spindle, while behind them a city burns under a dark column of smoke and fire across the water.",
+    note="&#9888; Lot walking away from the burning cities with his daughters, his wife a small figure left behind on the hill path, the scene behind <a href=\"2-peter-2.html#v2-6\">verses 6&ndash;7</a>, &lsquo;reducing the cities of Sodom and Gomorrah to ashes &hellip; and rescued righteous Lot.&rsquo; Painted on the back of a Madonna panel.",
+    note_es="&#9888; Lot se aleja de las ciudades en llamas con sus hijas, y su mujer es una figura pequeña que queda atrás en el sendero del monte: la escena detrás de los <a href=\"2-peter-2.es.html#v2-6\">versículos 6&ndash;7</a>, «reduciendo a ceniza las ciudades de Sodoma y Gomorra &hellip; y rescató al justo Lot». Pintada en el reverso de una tabla de la Virgen.",
+    license="CC0 (National Gallery of Art open access)",
+    source_url="https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Lot_and_His_Daughters_(reverse),_c._1496-1499,_NGA_41599.jpg",
+)]
+
+CHRON_CHAPTERS["2pe2"] = dict(era='apostolic',
+    when="The false teachers: 'factions of destruction' and the Master who bought them denied; angels cast into Tartarus, Noah 'the eighth,' Sodom and Gomorrah reduced to ashes and 'righteous Lot' rescued; glories blasphemed, spots and blemishes at the feast, the way of Balaam son of Bosor and the speaking donkey; springs without water; freedom promised by slaves of corruption; and the dog and the washed sow. Closely parallel to Jude.",
+    clock="c. AD 64–65 on the traditional reading; the date is disputed (see chapter 1).")
+
