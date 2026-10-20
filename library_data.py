@@ -45690,7 +45690,7 @@ DICTIONARY_ES["shechitah"] = ("shachat",
 
 CHRON_CHAPTERS["judg12"] = dict(era="exodus",
     when="Ephraim is called out, crosses to Zaphon (or northward) and threatens to burn Jephthah's house over him for not calling them to the war on Ammon. Jephthah answers that he cried to them and they did not save him; the men of Gilead strike Ephraim, hold the fords of the Jordan, and kill every man who says Sibboleth for Shibboleth, forty-two thousand of Ephraim. Jephthah judges six years and is buried in the cities of Gilead; Ibzan of Bethlehem judges seven, Elon the Zebulunite ten, and Abdon son of Hillel the Pirathonite eight.",
-    clock="Within the period of the judges, with no date the chapter gives for itself. Its own years run Jephthah 6, Ibzan 7, Elon 10 and Abdon 8, thirty-one in all, after Jephthah's war with Ammon (11:33) and before the Philistine forty years of Judges 13:1 (not yet on these pages). The early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
+    clock="Within the period of the judges, with no date the chapter gives for itself. Its own years run Jephthah 6, Ibzan 7, Elon 10 and Abdon 8, thirty-one in all, after Jephthah's war with Ammon (11:33) and before the Philistine forty years of Judges 13:1, now on these pages. The early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
 
 CHAPTER_ART["judg12"] = [dict(
     file="collaert-ibzan-jephthah-1585.jpg",
@@ -45705,4 +45705,82 @@ CHAPTER_ART["judg12"] = [dict(
     note_es="Dos jueces de una serie de Amberes de los doce jueces de Israel, numerados 8 y 7 en la plancha. «Abessan» es la grafía de Ibzán en la Biblia latina (la «Abesan» de la Douay): señala un banquete de bodas delante de su casa, las treinta hijas enviadas fuera y las treinta traídas de fuera del versículo 9, y el latín bajo él dice «Abessan floreció siete años con las varas del mando; floreció en paz, llevando los mayores dones». Jefté, con armadura, se apoya en su espada; detrás de él la procesión y el fuego del altar pertenecen a Jueces 11, y sus versos dicen «Con el cetro en la mano, Jefté vence con valor a Amón, y por los votos de su padre cae la hija casta». El grabador da a Ibzán paz y dones; el capítulo solo le da hijos, años y una tumba.",
     license="CC0 (public domain)",
     source_url="https://commons.wikimedia.org/wiki/File:Ibsan_en_Jefta,_RP-P-1988-312-84.jpg",
+)]
+
+# -- Judges 13 (2026-10-20): Samson, Manoah, Mahaneh-dan; Zorah, Eshtaol, nazir and pala extended
+ENCYCLOPEDIA.append(dict(slug="samson", name="Samson", kind="person", aliases=["Samson"],
+    refs=[("Judges", 13, 24)], videos=[],
+    desc="""The last of the judges in the book, son of <a href="encyclopedia.html#manoah">Manoah</a> of Zorah and of a wife the text never names. An angel announces him to his barren mother as &ldquo;a Nazirite of God from the womb&rdquo; who &ldquo;will begin to save Israel from the hand of the Philistines&rdquo;; no razor is to touch his head (<a href="judges-13.html#v13-5">Judges 13:5</a>, now on these pages). His name, <em>Shimshon</em>, is built on <em>shemesh</em>, &ldquo;sun&rdquo;; Josephus, in the Greek of the <em>Antiquities</em> (5.285, numbered 5.8.4 in Whiston), says it means &ldquo;strong&rdquo;, which the Hebrew letters do not say. The spirit of Jehovah first stirs him in Mahaneh-dan, between Zorah and Eshtaol (<a href="judges-13.html#v13-25">13:25</a>). The name stands in thirty-seven verses of the Hebrew Bible, all in Judges 13&ndash;16 (chapters 14&ndash;16 not yet on these pages). Hebrews names him among those of faith, with Gideon, Barak and Jephthah (<a href="hebrews-11.html#v11-32">Hebrews 11:32</a>, now on these pages)."""))
+ENCYCLOPEDIA_ES["samson"] = ("Sansón",
+    """El último de los jueces del libro, hijo de <a href="enciclopedia.html#manoah">Manoa</a> de Zora y de una mujer a la que el texto nunca nombra. Un ángel lo anuncia a su madre estéril como «nazareo de Dios desde el vientre» que «comenzará a salvar a Israel de la mano de los filisteos»; navaja no ha de pasar sobre su cabeza (<a href="judges-13.es.html#v13-5">Jueces 13:5</a>, ya en estas páginas). Su nombre, <em>Shimshon</em>, está hecho sobre <em>shemesh</em>, «sol»; Josefo, en el griego de las <em>Antigüedades</em> (5.285, numerado 5.8.4 en Whiston), dice que significa «fuerte», lo cual las letras hebreas no dicen. El espíritu de Jehová comienza a agitarlo en Mahané-dan, entre Zora y Estaol (<a href="judges-13.es.html#v13-25">13:25</a>). El nombre está en treinta y siete versículos de la Biblia hebrea, todos en Jueces 13&ndash;16 (los capítulos 14&ndash;16 todavía no en estas páginas). Hebreos lo nombra entre los de la fe, con Gedeón, Barac y Jefté (<a href="hebrews-11.es.html#v11-32">Hebreos 11:32</a>, ya en estas páginas).""")
+
+ENCYCLOPEDIA.append(dict(slug="manoah", name="Manoah", kind="person", aliases=["Manoah"],
+    refs=[("Judges", 13, 2)], videos=[],
+    desc="""&ldquo;A certain man of Zorah, of the clan of the Danites&rdquo;, the father of <a href="encyclopedia.html#samson">Samson</a> (<a href="judges-13.html#v13-2">Judges 13:2</a>, now on these pages). His name is built on <em>nuach</em>, &ldquo;rest&rdquo;. The angel comes twice to his wife, not to him; he entreats Jehovah to send the man of God back to teach them, asks the boy&rsquo;s &ldquo;rule&rdquo; and the visitor&rsquo;s name, offers a young goat on the rock, and when the angel goes up in the flame says &ldquo;We will surely die, for we have seen God&rdquo;, until his wife reasons him out of it (13:8&ndash;23). &#9888; Josephus (<em>Antiquities</em> 5.276&ndash;284, numbered 5.8.2&ndash;3 in Whiston) makes him a jealous husband suspicious of a handsome young visitor; that is not in Judges."""))
+ENCYCLOPEDIA_ES["manoah"] = ("Manoa",
+    """«Un hombre de Zora, del clan de los danitas», el padre de <a href="enciclopedia.html#samson">Sansón</a> (<a href="judges-13.es.html#v13-2">Jueces 13:2</a>, ya en estas páginas). Su nombre está hecho sobre <em>nuach</em>, «descanso». El ángel viene dos veces a su mujer, no a él; él suplica a Jehová que envíe otra vez al hombre de Dios para que les enseñe, pregunta la «norma» del niño y el nombre del visitante, ofrece un cabrito sobre la peña, y cuando el ángel sube en la llama dice «Ciertamente moriremos, porque hemos visto a Dios», hasta que su mujer lo saca de ese miedo con razones (13:8&ndash;23). &#9888; Josefo (<em>Antigüedades</em> 5.276&ndash;284, numerado 5.8.2&ndash;3 en Whiston) lo hace un marido celoso que sospecha de un visitante joven y hermoso; eso no está en Jueces.""")
+
+ENCYCLOPEDIA.append(dict(slug="mahaneh-dan", name="Mahaneh-dan", kind="place", aliases=["Mahaneh-dan"],
+    coords=(31.775, 34.995, 0.3), approx=True,
+    modern="Unlocated; between Zorah and Eshtaol (Judges 13:25)",
+    refs=[("Judges", 13, 25)], videos=[],
+    desc="""&ldquo;The camp of Dan&rdquo;, between Zorah and Eshtaol, where the spirit of Jehovah first began to stir Samson (<a href="judges-13.html#v13-25">Judges 13:25</a>, now on these pages). The words are the name of Dan&rsquo;s camp in the wilderness order (<a href="numbers-2.html#v2-25">Numbers 2:25</a>, now on these pages). &#9888; Judges 18:12 (not yet on these pages) gives the name to a place where the Danites camped, west of Kiriath-jearim in Judah; whether the two are one place is not settled. The map point is a guess between Zorah and Eshtaol."""))
+ENCYCLOPEDIA_ES["mahaneh-dan"] = ("Mahané-dan",
+    """«El campamento de Dan», entre Zora y Estaol, donde el espíritu de Jehová comenzó a agitar a Sansón (<a href="judges-13.es.html#v13-25">Jueces 13:25</a>, ya en estas páginas). Las palabras son el nombre del campamento de Dan en el orden del desierto (<a href="numbers-2.es.html#v2-25">Números 2:25</a>, ya en estas páginas). &#9888; Jueces 18:12 (todavía no en estas páginas) da el nombre a un lugar donde acamparon los danitas, al oeste de Quiriat-jearim en Judá; si los dos son el mismo lugar no está decidido. El punto del mapa es una estimación entre Zora y Estaol.""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "zorah":
+        _s = _e["desc"]
+        for _a, _b in [("(Judges 13:2)", '(<a href="judges-13.html#v13-2">Judges 13:2</a>)'),
+                       ("(13:25)", '(<a href="judges-13.html#v13-25">13:25</a>)'),
+                       ("Judges 13, 16 and 18 not yet on these pages", "Judges 16 and 18 not yet on these pages")]:
+            assert _s.count(_a) == 1, _a
+            _s = _s.replace(_a, _b)
+        _e["desc"] = _s
+        _e["refs"] = _e["refs"] + [("Judges", 13, 2)]
+    elif _e["slug"] == "eshtaol":
+        _a = "(Judges 13:25, 16:31, 18:2, 8 and 11, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="judges-13.html#v13-25">Judges 13:25</a>, now on these pages, and Judges 16:31 and 18:2, 8 and 11, not yet on these pages)')
+        _e["refs"] = _e["refs"] + [("Judges", 13, 25)]
+_s = ENCYCLOPEDIA_ES["zorah"][1]
+for _a, _b in [("(Jueces 13:2)", '(<a href="judges-13.es.html#v13-2">Jueces 13:2</a>)'),
+               ("(13:25)", '(<a href="judges-13.es.html#v13-25">13:25</a>)'),
+               ("Jueces 13, 16 y 18 todavía no en estas páginas", "Jueces 16 y 18 todavía no en estas páginas")]:
+    assert _s.count(_a) == 1, _a
+    _s = _s.replace(_a, _b)
+ENCYCLOPEDIA_ES["zorah"] = (ENCYCLOPEDIA_ES["zorah"][0], _s)
+_a = "(Jueces 13:25, 16:31, 18:2, 8 y 11, todavía no en estas páginas)"
+assert ENCYCLOPEDIA_ES["eshtaol"][1].count(_a) == 1
+ENCYCLOPEDIA_ES["eshtaol"] = (ENCYCLOPEDIA_ES["eshtaol"][0], ENCYCLOPEDIA_ES["eshtaol"][1].replace(_a, '(<a href="judges-13.es.html#v13-25">Jueces 13:25</a>, ya en estas páginas, y Jueces 16:31 y 18:2, 8 y 11, todavía no en estas páginas)'))
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "nazir":
+        _a = "the mark of Samson, Judges 13)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'the mark of Samson, <a href="judges-13.html#v13-5">Judges 13:5</a>, now on these pages, where he is &ldquo;a Nazirite of God from the womb&rdquo; and his mother keeps the food rules for him)'),) + _d[5:]
+    elif _d[0] == "pala":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' &#11088; At <a href="judges-13.html#v13-18">Judges 13:18</a> (now on these pages) the angel will not give Manoah his name: &ldquo;It is wonderful&rdquo;, <em>pil&rsquo;i</em>; and in the next verse the same root is a verb, <em>u-mafli la&rsquo;asot</em>, &ldquo;and he did a wonder&rdquo;, as the angel goes up in the flame.',) + _d[5:]
+_a = "y la marca de Sans&oacute;n, Jueces 13, todav&iacute;a no en estas p&aacute;ginas)"
+assert DICTIONARY_ES["nazir"][1].count(_a) == 1
+DICTIONARY_ES["nazir"] = (DICTIONARY_ES["nazir"][0], DICTIONARY_ES["nazir"][1].replace(_a, 'y la marca de Sans&oacute;n, <a href="judges-13.es.html#v13-5">Jueces 13:5</a>, ya en estas p&aacute;ginas, donde es «nazareo de Dios desde el vientre» y su madre guarda por él las reglas de comida)'))
+DICTIONARY_ES["pala"] = (DICTIONARY_ES["pala"][0], DICTIONARY_ES["pala"][1] + ' &#11088; En <a href="judges-13.es.html#v13-18">Jueces 13:18</a> (ya en estas páginas) el ángel no da a Manoa su nombre: «Es maravilloso», <em>pil&rsquo;i</em>; y en el versículo siguiente la misma raíz es verbo, <em>u-mafli la&rsquo;asot</em>, «y él hizo una maravilla», mientras el ángel sube en la llama.')
+
+CHRON_CHAPTERS["judg13"] = dict(era="exodus",
+    when="Israel again does evil and is given into the hand of the Philistines for forty years, and this time no one cries out. The angel of Jehovah appears to the barren wife of Manoah of Zorah, a Danite, and promises a son who will be a Nazirite of God from the womb and will begin to save Israel. Manoah prays for the visitor to return; the angel comes again to the woman, will not eat, will not give his name (\"It is wonderful\"), and goes up in the flame of the offering on the rock. Samson is born, Jehovah blesses him, and the spirit begins to stir him in Mahaneh-dan, between Zorah and Eshtaol.",
+    clock="Within the period of the judges, with no date the chapter gives for itself. The Philistine forty years (13:1) are the longest oppression the book gives, and Samson only begins the deliverance (13:5). The early/late question applies (c. 1200 BC on the early reckoning this project foregrounds, c. 1100 BC on the late).")
+
+CHAPTER_ART["judg13"] = [dict(
+    file="follower-of-rembrandt-manoahs-sacrifice.jpg",
+    title="Manoah's Sacrifice",
+    title_es="El sacrificio de Manoa",
+    artist="Follower of Rembrandt (as the Wikimedia Commons record attributes it)",
+    year="c. 1641",
+    location="Oil painting (c. 1641), digitised on Wikimedia Commons (The Yorck Project)",
+    location_es="Óleo (h. 1641), digitalizado en Wikimedia Commons (The Yorck Project)",
+    alt="Oil painting in deep shadow: a bearded old man in a red robe and a young woman in a red cloak kneel with their hands joined, and at the upper left a glowing figure in white rises into the dark above a small fire burning on a stone altar.",
+    note="Manoah and his wife kneel in the dark while the visitor rises out of the picture at the upper left, above the fire on the rock: verse 20, &ldquo;the angel of Jehovah went up in the flame of the altar, while Manoah and his wife were watching; and they fell on their faces to the ground.&rdquo; The painter has them praying rather than face down, and gives the wife the light, as the chapter gives her the understanding (v. 23).",
+    note_es="Manoa y su mujer se arrodillan en la oscuridad mientras el visitante sale del cuadro por arriba a la izquierda, sobre el fuego de la peña: el versículo 20, «el ángel de Jehová subió en la llama del altar, mientras Manoa y su mujer miraban; y cayeron sobre sus rostros en tierra». El pintor los pone orando en vez de rostro en tierra, y da la luz a la mujer, como el capítulo le da el entendimiento (v. 23).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_028.jpg",
 )]

@@ -178,7 +178,7 @@ SCOPE_PATTERNS = [
 COUNTING = (r"stands? in|occurs? in|appears? in|est[aá]n? en|aparecen? en"
             r"|nowhere else|ning[uú]n otro|the only|la [uú]nica|el [uú]nico")
 
-NUM = r"(?:\d+|[^\W\d_]+(?:-[^\W\d_]+)?)"   # \w minus digits: keeps á é í ó ú ñ
+NUM = r"(?:\d+|(?:treinta|cuarenta) y [^\W\d_]+|[^\W\d_]+(?:-[^\W\d_]+)?)"   # \w minus digits: keeps á é í ó ú ñ; "treinta y siete" is one number
 # The number must be the one the CLAIM VERB governs. Taking the first "N verses"
 # in the sentence read "the two verses that hold it" as the count for a claim
 # that said six, and reported a mismatch that was the tool's and not the text's.
