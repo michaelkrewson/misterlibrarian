@@ -45528,3 +45528,105 @@ CHAPTER_ART["rev19"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:The_Horseman_Faithful_and_True,_the_Army_of_Heaven_on_White_Horses_and_the_Horseman_in_the_Winepre..._-_Google_Art_Project_crop.jpg",
 )]
+
+# ---- Revelation 20 ------------------------------------------------------
+DICTIONARY.append(('anastasis', 'anastasis', 'ἀνάστασις', 'anastasis',
+    'RESURRECTION, RISING &mdash; from <em>anist&#275;mi</em>, &lsquo;to stand up, to rise.&rsquo; &#9888; It can mean a rising in general, as when the child Jesus is set &lsquo;for the falling and the rising of many in Israel&rsquo; (<a href="luke-2.html#v2-34">Luke 2:34</a>), but almost always it is the rising of the dead: &lsquo;I am the resurrection and the life&rsquo; (<a href="john-11.html#v11-25">John 11:25</a>); &lsquo;how do some among you say that there is no resurrection of the dead?&rsquo; (<a href="1-corinthians-15.html#v12">1 Corinthians 15:12</a>); and the two of <a href="john-5.html#v5-29">John 5:29</a>, &lsquo;a resurrection of life&rsquo; and &lsquo;a resurrection of judgment.&rsquo; In Revelation it stands only at <a href="revelation-20.html#v20-5">20:5</a> and <a href="revelation-20.html#v20-6">20:6</a>, &lsquo;the first resurrection,&rsquo; and the book never names a second; readings of what the first resurrection is differ. KJV and NWT 1984 &lsquo;the first resurrection.&rsquo;',
+    ('Luke', 2, 34)))
+DICTIONARY_ES['anastasis'] = ('anástasis',
+    'RESURRECCIÓN, LEVANTAMIENTO &mdash; de <em>aníst&#275;mi</em>, «ponerse de pie, levantarse». &#9888; Puede significar un levantamiento en general, como cuando el niño Jesús es puesto «para caída y levantamiento de muchos en Israel» (<a href="luke-2.es.html#v2-34">Lucas 2:34</a>), pero casi siempre es el levantarse de los muertos: «Yo soy la resurrección y la vida» (<a href="john-11.es.html#v11-25">Juan 11:25</a>); «¿cómo es que algunos de ustedes dicen que no hay resurrección de los muertos?» (<a href="1-corinthians-15.es.html#v12">1 Corintios 15:12</a>); y las dos de <a href="john-5.es.html#v5-29">Juan 5:29</a>, «resurrección de vida» y «resurrección de juicio». En el Apocalipsis está solo en <a href="revelation-20.es.html#v20-5">20:5</a> y <a href="revelation-20.es.html#v20-6">20:6</a>, «la primera resurrección», y el libro nunca nombra una segunda; las lecturas de qué es la primera resurrección difieren. RV60 y TNM 1987 «la primera resurrección».')
+
+DICTIONARY.append(('chilioi', 'chilioi', 'χίλιοι', 'chilioi',
+    'THOUSAND; THE THOUSAND YEARS, THE MILLENNIUM &mdash; the plain number, as in &lsquo;1,260 days&rsquo; (<a href="revelation-12.html#v12-6">Revelation 12:6</a>) and the &lsquo;thousand six hundred stadia&rsquo; of <a href="revelation-14.html#v14-20">14:20</a>. &#9888; &lsquo;A thousand years,&rsquo; <em>chilia et&#275;</em>, stands six times in a row at <a href="revelation-20.html#v20-2">Revelation 20:2</a>&ndash;7, the binding of Satan and the reign of the martyrs with Christ, and otherwise only in &lsquo;with the Lord one day is like a thousand years, and a thousand years like one day&rsquo; (<a href="2-peter-3.html#v3-8">2 Peter 3:8</a>). The Latin <em>mille anni</em> gave English &lsquo;millennium.&rsquo; Whether the thousand years are a future reign on earth after Christ&rsquo;s return, the present age, or an age of the gospel&rsquo;s spread before it, and whether the number is exact or a round whole, readings differ; see the note at Revelation 20:4&ndash;6.',
+    ('Revelation', 20, 2)))
+DICTIONARY_ES['chilioi'] = ('chílioi',
+    'MIL; LOS MIL AÑOS, EL MILENIO &mdash; el número simple, como en «mil doscientos sesenta días» (<a href="revelation-12.es.html#v12-6">Apocalipsis 12:6</a>) y los «mil seiscientos estadios» de <a href="revelation-14.es.html#v14-20">14:20</a>. &#9888; «Mil años», <em>chília ét&#275;</em>, está seis veces seguidas en <a href="revelation-20.es.html#v20-2">Apocalipsis 20:2</a>&ndash;7, el atar a Satanás y el reinado de los mártires con Cristo, y fuera de allí solo en «para con el Señor un día es como mil años, y mil años como un día» (<a href="2-peter-3.es.html#v3-8">2 Pedro 3:8</a>). El latín <em>mille anni</em> dio la palabra «milenio». Si los mil años son un reinado futuro en la tierra después del regreso de Cristo, la era presente, o una era de expansión del evangelio antes de él, y si el número es exacto o un todo redondo, las lecturas difieren; véase la nota de Apocalipsis 20:4&ndash;6.')
+
+DICTIONARY.append(('pelekizo', 'pelekizō', 'πελεκίζω', 'pelekizō',
+    'TO BEHEAD WITH THE AXE &mdash; from <em>pelekys</em>, &lsquo;axe.&rsquo; &#9888; It stands only at <a href="revelation-20.html#v20-4">Revelation 20:4</a>, &lsquo;the souls of those who had been beheaded because of the testimony of Jesus and because of the word of God.&rsquo; The Gospels use a different verb for John the Baptist, beheaded in prison. KJV &lsquo;beheaded&rsquo;; NWT 1984 &lsquo;executed with the ax.&rsquo;',
+    ('Revelation', 20, 4)))
+DICTIONARY_ES['pelekizo'] = ('pelekíz&#333;',
+    'DECAPITAR CON HACHA &mdash; de <em>pélekys</em>, «hacha». &#9888; Está solo en <a href="revelation-20.es.html#v20-4">Apocalipsis 20:4</a>, «las almas de los que habían sido decapitados por causa del testimonio de Jesús y por causa de la palabra de Dios». Los Evangelios usan otro verbo para Juan el Bautista, decapitado en la cárcel. RV60 «decapitados»; TNM 1987 «ejecutados con hacha».')
+
+_jn1_3_fix([
+    ('It surfaces seven times in Revelation (9:1, 2, 11; 11:7; <a href="revelation-17.html#v17-8">17:8</a>; 20:1, 3 — the first five now translated)',
+     'It surfaces seven times in Revelation (9:1, 2, 11; 11:7; <a href="revelation-17.html#v17-8">17:8</a>; <a href="revelation-20.html#v20-1">20:1</a>, <a href="revelation-20.html#v20-3">3</a>)'),
+    ('Aparece siete veces en Apocalipsis (9:1, 2, 11; 11:7; <a href="revelation-17.es.html#v17-8">17:8</a>; 20:1, 3 — las primeras cinco ya traducidas)',
+     'Aparece siete veces en Apocalipsis (9:1, 2, 11; 11:7; <a href="revelation-17.es.html#v17-8">17:8</a>; <a href="revelation-20.es.html#v20-1">20:1</a>, <a href="revelation-20.es.html#v20-3">3</a>)'),
+    ('and Revelation 20:9, &lsquo;the camp of the saints&rsquo; (the last three not yet on these pages).',
+     'and <a href="revelation-20.html#v20-9">Revelation 20:9</a>, &lsquo;the camp of the holy ones.&rsquo;'),
+    ('y Apocalipsis 20:9, «el campamento de los santos» (los últimos tres todavía no en estas páginas).',
+     'y <a href="revelation-20.es.html#v20-9">Apocalipsis 20:9</a>, «el campamento de los santos».'),
+    ('and Revelation 20:1 (the last not yet on these pages).',
+     'and <a href="revelation-20.html#v20-1">Revelation 20:1</a>, the angel&rsquo;s &lsquo;great chain.&rsquo;'),
+    ('y Apocalipsis 20:1 (el último todavía no en estas páginas).',
+     'y <a href="revelation-20.es.html#v20-1">Apocalipsis 20:1</a>, la «gran cadena» del ángel.'),
+    ('<a href="revelation-19.html#v19-20">19:20</a>, and 20:10 (the last not yet on these pages).',
+     '<a href="revelation-19.html#v19-20">19:20</a>, and <a href="revelation-20.html#v20-10">20:10</a>.'),
+    ('<a href="revelation-19.es.html#v19-20">19:20</a>, y 20:10 (el último todavía no en estas páginas).',
+     '<a href="revelation-19.es.html#v19-20">19:20</a>, y <a href="revelation-20.es.html#v20-10">20:10</a>.'),
+])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"satan": [("Revelation", 20, 2), ("Revelation", 20, 7)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Revelation", 9, 1), ("Revelation", 20, 1), "the key of the Abyss"),
+    (("Jude", 1, 6), ("Revelation", 20, 1), "angels kept in chains"),
+    (("Revelation", 12, 9), ("Revelation", 20, 2), "the dragon, the ancient serpent, the Devil and Satan"),
+    (("Genesis", 3, 1), ("Revelation", 20, 2), "the serpent"),
+    (("Mark", 3, 27), ("Revelation", 20, 2), "binding the strong man"),
+    (("2 Peter", 3, 8), ("Revelation", 20, 2), "a thousand years"),
+    (("Isaiah", 24, 22), ("Revelation", 20, 3), "shut up in a prison, punished after many days"),
+    (("Revelation", 6, 11), ("Revelation", 20, 3), "a little time"),
+    (("Daniel", 7, 9), ("Revelation", 20, 4), "thrones were placed"),
+    (("Daniel", 7, 22), ("Revelation", 20, 4), "judgment given to the holy ones"),
+    (("Matthew", 19, 28), ("Revelation", 20, 4), "sitting on thrones, judging"),
+    (("1 Corinthians", 6, 2), ("Revelation", 20, 4), "the holy ones will judge the world"),
+    (("Revelation", 6, 9), ("Revelation", 20, 4), "souls of those slain for the word of God"),
+    (("Revelation", 2, 8), ("Revelation", 20, 4), "came to life"),
+    (("John", 5, 29), ("Revelation", 20, 5), "two resurrections"),
+    (("Revelation", 2, 11), ("Revelation", 20, 6), "the second death"),
+    (("Revelation", 1, 6), ("Revelation", 20, 6), "priests who reign"),
+    (("Revelation", 5, 10), ("Revelation", 20, 6), "they reign"),
+    (("Ezekiel", 38, 2), ("Revelation", 20, 8), "Gog of the land of Magog"),
+    (("Revelation", 7, 1), ("Revelation", 20, 8), "the four corners of the earth"),
+    (("Revelation", 16, 14), ("Revelation", 20, 8), "gathered for the war"),
+    (("Hebrews", 13, 13), ("Revelation", 20, 9), "the camp"),
+    (("2 Kings", 1, 10), ("Revelation", 20, 9), "fire came down from heaven"),
+    (("Ezekiel", 38, 22), ("Revelation", 20, 9), "fire and sulfur on Gog"),
+    (("Revelation", 19, 20), ("Revelation", 20, 10), "the lake of fire with the beast and false prophet"),
+    (("Matthew", 25, 41), ("Revelation", 20, 10), "fire prepared for the devil"),
+    (("Revelation", 12, 8), ("Revelation", 20, 11), "no place found for them"),
+    (("Daniel", 7, 10), ("Revelation", 20, 12), "books were opened"),
+    (("Daniel", 12, 1), ("Revelation", 20, 12), "found written in the book"),
+    (("Exodus", 32, 32), ("Revelation", 20, 12), "God's book"),
+    (("Revelation", 3, 5), ("Revelation", 20, 12), "the book of life"),
+    (("Romans", 2, 6), ("Revelation", 20, 12), "according to works"),
+    (("Revelation", 6, 8), ("Revelation", 20, 13), "Death and Hades"),
+    (("Daniel", 12, 2), ("Revelation", 20, 13), "the dead wake to judgment"),
+    (("1 Corinthians", 15, 26), ("Revelation", 20, 14), "death the last enemy"),
+    (("Revelation", 21, 8), ("Revelation", 20, 14), "the second death, the lake of fire"),
+    (("Philippians", 4, 3), ("Revelation", 20, 15), "names in the book of life"),
+])
+
+CHAPTER_ART["rev20"] = [dict(
+    file="durer-angel-key-bottomless-pit.jpg",
+    title="The Angel with the Key to the Bottomless Pit",   title_es="El ángel con la llave del abismo",
+    artist="Albrecht Dürer",
+    year="1498",
+    location="National Gallery of Art, Washington, from The Apocalypse",
+    location_es="Galería Nacional de Arte, Washington, de El Apocalipsis",
+    alt="A black-and-white woodcut: in the foreground a winged angel with a large key and a ring of keys bends over a scaly, many-headed dragon, pushing it down into an opening in the ground; on a hill above, another angel points and speaks to a man beside him; on the left a walled city with towers stretches into the distance, an angel standing at its gate, and birds fly in the sky.",
+    note="&#9888; The last woodcut of Dürer&rsquo;s Apocalypse joins two chapters: in the foreground the angel of <a href=\"revelation-20.html#v20-1\">verses 1&ndash;3</a>, holding the key, shuts the dragon into the Abyss; above, an angel shows John the new Jerusalem of chapter 21, which lies spread out on the left with an angel at its gate.",
+    note_es="&#9888; El último grabado del Apocalipsis de Durero une dos capítulos: en primer plano el ángel de los <a href=\"revelation-20.es.html#v20-1\">versículos 1&ndash;3</a>, con la llave, encierra al dragón en el abismo; arriba, un ángel muestra a Juan la nueva Jerusalén del capítulo 21, que se extiende a la izquierda con un ángel en su puerta.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_The_Angel_with_the_Key_to_the_Bottomless_Pit,_1498,_NGA_142363.jpg",
+)]
+
+CHRON_CHAPTERS["rev20"] = dict(era='apostolic',
+    when="An angel with the key of the Abyss binds the dragon, the ancient serpent, for a thousand years; John sees thrones, and the souls of those beheaded for the testimony of Jesus come to life and reign with Christ a thousand years, 'the first resurrection'; Satan is released, gathers Gog and Magog against the camp of the holy ones and the beloved city, is consumed by fire from heaven and thrown into the lake of fire with the beast and the false prophet; the dead, great and small, are judged before a great white throne from the books and the book of life, and Death and Hades are thrown into the lake of fire, the second death.",
+    clock="c. AD 95; the only passage in the Bible that names a thousand-year reign, read as a future reign, as the present age, or as an age before Christ's return.")
