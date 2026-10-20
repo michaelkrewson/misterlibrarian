@@ -44795,3 +44795,101 @@ CHRON_CHAPTERS["1john3"] = dict(era='apostolic',
     when="The letter's third movement: 'See what sort of love the Father has given us, that we should be called children of God'; 'we will be like him, because we will see him just as he is'; sin as lawlessness and the hard saying that whoever is born of God does not sin; the Son of God made manifest to undo the works of the devil; Cain, 'of the evil one'; 'passed out of death into life'; love 'in deed and in truth'; God greater than our heart; and the Spirit named for the first time.",
     clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
 
+
+# ---- 1 John 4 -----------------------------------------------------------
+DICTIONARY.append(('dokimazo', 'dokimazō', 'δοκιμάζω', 'dokimazō',
+    'TO TEST &mdash; to put to the proof, as metal is tried in the fire, and so to approve what passes; kin to <a href="dictionary.html#dokime">dokim&#275;</a>, &lsquo;proven character,&rsquo; and <a href="dictionary.html#adokimos">adokimos</a>, &lsquo;failing the test.&rsquo; Paul writes &lsquo;But test everything; hold fast what is good&rsquo; (<a href="1-thessalonians-5.html#v5-21">1 Thessalonians 5:21</a>) and &lsquo;so that you may test what the will of God is&rsquo; (<a href="romans-12.html#v12-2">Romans 12:2</a>); 1 Peter sets faith beside gold, &lsquo;which perishes though tested by fire&rsquo; (<a href="1-peter-1.html#v7">1 Peter 1:7</a>). &#9888; In John&rsquo;s Gospel and letters it stands only once: &lsquo;test the spirits to see whether they are of God&rsquo; (<a href="1-john-4.html#v4-1">1 John 4:1</a>). KJV &lsquo;try the spirits&rsquo;; ASV &lsquo;prove the spirits&rsquo;; NWT 1984 &lsquo;test the inspired expressions.&rsquo;',
+    ('1 John', 4, 1)))
+DICTIONARY_ES['dokimazo'] = ('dokimáz&#333;',
+    'PONER A PRUEBA &mdash; probar, como se prueba el metal en el fuego, y así aprobar lo que pasa la prueba; emparentada con <a href="diccionario.html#dokime">dokim&#275;́</a>, «carácter probado», y <a href="diccionario.html#adokimos">adókimos</a>, «reprobado». Pablo escribe «Pero examínenlo todo; retengan lo bueno» (<a href="1-thessalonians-5.es.html#v5-21">1 Tesalonicenses 5:21</a>) y «para que comprueben cuál es la voluntad de Dios» (<a href="romans-12.es.html#v12-2">Romanos 12:2</a>); 1 Pedro pone la fe junto al oro, «que perece aunque se prueba por fuego» (<a href="1-peter-1.es.html#v7">1 Pedro 1:7</a>). &#9888; En el Evangelio y las cartas de Juan está una sola vez: «pongan a prueba los espíritus para ver si son de Dios» (<a href="1-john-4.es.html#v4-1">1 Juan 4:1</a>). RV60 «probad los espíritus»; TNM 1987 «prueben las expresiones inspiradas».')
+
+DICTIONARY.append(('pseudoprophetes', 'pseudoprophētēs', 'ψευδοπροφήτης', 'pseudoprophētēs',
+    'FALSE PROPHET &mdash; <em>pseudo-</em>, &lsquo;false,&rsquo; and <em>proph&#275;t&#275;s</em>, &lsquo;prophet.&rsquo; &#9888; It stands in eleven verses of the New Testament: Jesus&rsquo;s warnings, &lsquo;Beware of the false prophets&rsquo; (<a href="matthew-7.html#v7-15">Matthew 7:15</a>) and &lsquo;many false prophets will rise up and lead many astray&rsquo; (<a href="matthew-24.html#v24-11">Matthew 24:11</a>), with false christs at <a href="matthew-24.html#v24-24">Matthew 24:24</a> and <a href="mark-13.html#v13-22">Mark 13:22</a>; the fathers who spoke well of the false prophets (<a href="luke-6.html#v6-26">Luke 6:26</a>); Bar-Jesus at Paphos, &lsquo;a magician, a false prophet&rsquo; (<a href="acts-13.html#v13-6">Acts 13:6</a>); &lsquo;false prophets also arose among the people&rsquo; (<a href="2-peter-2.html#v2-1">2 Peter 2:1</a>); &lsquo;many false prophets have gone out into the world&rsquo; (<a href="1-john-4.html#v4-1">1 John 4:1</a>); and three in Revelation, where &lsquo;the false prophet&rsquo; stands with the dragon and the beast, Revelation 16:13, 19:20 and 20:10 (not yet on these pages). Compare <a href="dictionary.html#pseudochristos">pseudochristos</a>, &lsquo;false christ.&rsquo; KJV and NIV &lsquo;false prophets.&rsquo;',
+    ('Matthew', 7, 15)))
+DICTIONARY_ES['pseudoprophetes'] = ('pseudoproph&#275;́t&#275;s',
+    'FALSO PROFETA &mdash; <em>pseudo-</em>, «falso», y <em>proph&#275;́t&#275;s</em>, «profeta». &#9888; Está en once versículos del Nuevo Testamento: las advertencias de Jesús, «Guárdense de los falsos profetas» (Mateo 7:15, ya en estas páginas, todavía no en español) y «se levantarán muchos falsos profetas y extraviarán a muchos» (<a href="matthew-24.es.html#v24-11">Mateo 24:11</a>), con falsos cristos en <a href="matthew-24.es.html#v24-24">Mateo 24:24</a> y <a href="mark-13.es.html#v13-22">Marcos 13:22</a>; los padres que hablaban bien de los falsos profetas (<a href="luke-6.es.html#v6-26">Lucas 6:26</a>); Bar-Jesús en Pafos, «un mago, falso profeta» (<a href="acts-13.es.html#v13-6">Hechos 13:6</a>); «hubo también falsos profetas en el pueblo» (<a href="2-peter-2.es.html#v2-1">2 Pedro 2:1</a>); «muchos falsos profetas han salido al mundo» (<a href="1-john-4.es.html#v4-1">1 Juan 4:1</a>); y tres en Apocalipsis, donde «el falso profeta» está con el dragón y la bestia, Apocalipsis 16:13, 19:20 y 20:10 (todavía no en estas páginas). Compárese <a href="diccionario.html#pseudochristos">pseudóchristos</a>, «falso cristo». RV60 y NVI «falsos profetas».')
+
+DICTIONARY.append(('theaomai', 'theaomai', 'θεάομαι', 'theaomai',
+    'TO LOOK UPON &mdash; to gaze at, behold, take in with the eyes; the verb behind &lsquo;theatre,&rsquo; and kin to <a href="dictionary.html#theatrizo">theatriz&#333;</a>, &lsquo;to make a spectacle of.&rsquo; In the Gospel it is &lsquo;we saw his glory&rsquo; (<a href="john-1.html#v14">John 1:14</a>). &#9888; In 1 John it stands three times, and the letter builds on it: &lsquo;that which we looked upon and our hands handled&rsquo; (<a href="1-john-1.html#v1">1 John 1:1</a>); &lsquo;No one has ever looked upon God&rsquo; (<a href="1-john-4.html#v4-12">1 John 4:12</a>); and &lsquo;we ourselves have looked upon it and testify that the Father has sent the Son&rsquo; (<a href="1-john-4.html#v4-14">1 John 4:14</a>). The Gospel&rsquo;s &lsquo;No one has ever seen God&rsquo; (<a href="john-1.html#v18">John 1:18</a>) has the other verb, <em>hora&#333;</em>. ASV and NWT 1984 at 1 John 4:12 &lsquo;beheld&rsquo;; KJV &lsquo;seen.&rsquo;',
+    ('1 John', 1, 1)))
+DICTIONARY_ES['theaomai'] = ('theáomai',
+    'CONTEMPLAR &mdash; mirar con atención, observar, abarcar con los ojos; el verbo detrás de «teatro», y emparentado con <a href="diccionario.html#theatrizo">theatríz&#333;</a>, «exponer como espectáculo». En el Evangelio es el «vimos su gloria» de Juan 1:14 (ya en estas páginas, todavía no en español). &#9888; En 1 Juan está tres veces, y la carta construye sobre él: «lo que contemplamos y palparon nuestras manos» (<a href="1-john-1.es.html#v1">1 Juan 1:1</a>); «A Dios nadie lo ha contemplado jamás» (<a href="1-john-4.es.html#v4-12">1 Juan 4:12</a>); y «nosotros mismos lo hemos contemplado y damos testimonio de que el Padre ha enviado al Hijo» (<a href="1-john-4.es.html#v4-14">1 Juan 4:14</a>). El «nadie ha visto jamás a Dios» del Evangelio (Juan 1:18, ya en estas páginas, todavía no en español) lleva el otro verbo, <em>horá&#333;</em>. TNM 1987 en 1 Juan 4:12 «contemplado»; RV60 «visto».')
+
+DICTIONARY.append(('phobos', 'phobos', 'φόβος', 'phobos',
+    'FEAR &mdash; fright and dread, and also the reverent awe owed to God, the noun of the verb in &lsquo;Fear God&rsquo; (<a href="1-peter-2.html#v2-17">1 Peter 2:17</a>). In the Gospel the crowds would not speak openly &lsquo;for fear of the Jewish leaders&rsquo; (<a href="john-7.html#v7-13">John 7:13</a>), and the disciples sat behind locked doors for the same fear (<a href="john-20.html#v20-19">John 20:19</a>). Paul: &lsquo;you did not receive a spirit of slavery, back into fear&rsquo; (<a href="romans-8.html#v8-15">Romans 8:15</a>). &#9888; In John&rsquo;s letters the noun stands in one verse only: &lsquo;There is no fear in love, but complete love throws fear out, because fear has punishment&rsquo; (<a href="1-john-4.html#v4-18">1 John 4:18</a>), where the fear is of the day of judgment named in the verse before. Compare <a href="dictionary.html#ekphobos">ekphobos</a> and <a href="dictionary.html#phobethron">phob&#275;thron</a>. KJV &lsquo;perfect love casteth out fear&rsquo;; NWT 1984 &lsquo;perfect love throws fear outside.&rsquo;',
+    ('1 John', 4, 18)))
+DICTIONARY_ES['phobos'] = ('phóbos',
+    'TEMOR, MIEDO &mdash; espanto y pavor, y también el temor reverente que se debe a Dios, el sustantivo del verbo de «Teman a Dios» (<a href="1-peter-2.es.html#v2-17">1 Pedro 2:17</a>). En el Evangelio nadie hablaba abiertamente «por miedo a los líderes judíos» (<a href="john-7.es.html#v7-13">Juan 7:13</a>), y los discípulos estaban con las puertas cerradas por el mismo miedo (<a href="john-20.es.html#v20-19">Juan 20:19</a>). Pablo: «no recibieron un espíritu de esclavitud, de vuelta al temor» (<a href="romans-8.es.html#v8-15">Romanos 8:15</a>). &#9888; En las cartas de Juan el sustantivo está en un solo versículo: «En el amor no hay temor, sino que el amor completo echa fuera el temor, porque el temor tiene castigo» (<a href="1-john-4.es.html#v4-18">1 Juan 4:18</a>), donde el temor es el del día del juicio nombrado en el versículo anterior. Compárense <a href="diccionario.html#ekphobos">ékphobos</a> y <a href="diccionario.html#phobethron">phób&#275;thron</a>. RV60 «el perfecto amor echa fuera el temor»; TNM 1987 «el amor perfecto echa fuera el temor».')
+
+DICTIONARY.append(('pseustes', 'pseustēs', 'ψεύστης', 'pseustēs',
+    'LIAR &mdash; from <em>pseudomai</em>, &lsquo;to lie,&rsquo; the root of every <em>pseudo-</em> word. Jesus calls the devil &lsquo;a liar and the father of lies&rsquo; (<a href="john-8.html#v8-44">John 8:44</a>) and says of himself, &lsquo;If I said I did not know him, I would be a liar like you&rsquo; (<a href="john-8.html#v8-55">John 8:55</a>); Paul writes &lsquo;let God be true, and every man a liar&rsquo; (<a href="romans-3.html#v3-4">Romans 3:4</a>) and quotes &lsquo;Cretans are always liars&rsquo; (<a href="titus-1.html#v12">Titus 1:12</a>); <a href="1-timothy-1.html#v10">1 Timothy 1:10</a> puts liars in a list of the lawless. &#9888; It stands in ten verses of the New Testament, and five of them are in 1 John, where the word tests what people say: &lsquo;we make him a liar&rsquo; (<a href="1-john-1.html#v10">1:10</a>), &lsquo;is a liar, and the truth is not in him&rsquo; (<a href="1-john-2.html#v2-4">2:4</a>), &lsquo;Who is the liar but the one who denies that Jesus is the Christ?&rsquo; (<a href="1-john-2.html#v2-22">2:22</a>), &lsquo;If anyone says, &ldquo;I love God,&rdquo; and hates his brother, he is a liar&rsquo; (<a href="1-john-4.html#v4-20">4:20</a>), and 1 John 5:10 (not yet on these pages). KJV &lsquo;liar.&rsquo;',
+    ('John', 8, 44)))
+DICTIONARY_ES['pseustes'] = ('pseúst&#275;s',
+    'MENTIROSO &mdash; de <em>pseúdomai</em>, «mentir», la raíz de toda palabra con <em>pseudo-</em>. Jesús llama al diablo «mentiroso y padre de la mentira» (<a href="john-8.es.html#v8-44">Juan 8:44</a>) y dice de sí mismo: «Si dijera que no lo conozco, sería mentiroso como ustedes» (<a href="john-8.es.html#v8-55">Juan 8:55</a>); Pablo escribe «sea Dios veraz, y todo hombre mentiroso» (<a href="romans-3.es.html#v3-4">Romanos 3:4</a>) y cita «Los cretenses, siempre mentirosos» (<a href="titus-1.es.html#v12">Tito 1:12</a>); <a href="1-timothy-1.es.html#v10">1 Timoteo 1:10</a> pone a los mentirosos en una lista de los que viven sin ley. &#9888; Está en diez versículos del Nuevo Testamento, y cinco de ellos están en 1 Juan, donde la palabra pone a prueba lo que la gente dice: «le hacemos a él mentiroso» (<a href="1-john-1.es.html#v10">1:10</a>), «es mentiroso, y la verdad no está en él» (<a href="1-john-2.es.html#v2-4">2:4</a>), «¿Quién es el mentiroso, sino el que niega que Jesús es el Cristo?» (<a href="1-john-2.es.html#v2-22">2:22</a>), «Si alguno dice: “Amo a Dios”, y odia a su hermano, es mentiroso» (<a href="1-john-4.es.html#v4-20">4:20</a>), y 1 Juan 5:10 (todavía no en estas páginas). RV60 «mentiroso».')
+
+_jn1_3_fix([
+    ('<a href="1-john-2.html#v2-2">1 John 2:2</a> and 4:10 beside those two; 4:10 not yet on these pages)',
+     '<a href="1-john-2.html#v2-2">1 John 2:2</a> and <a href="1-john-4.html#v4-10">1 John 4:10</a> beside those two)'),
+    ('(<a href="1-john-2.html#v2-2">1 John 2:2</a>) and 4:10 (not yet on these pages).',
+     '(<a href="1-john-2.html#v2-2">1 John 2:2</a>) and &lsquo;sent his Son as the atonement for our sins&rsquo; (<a href="1-john-4.html#v4-10">1 John 4:10</a>).'),
+    ('<a href="1-john-2.html#v2-22">1 John 2:22</a>, 4:3 (not yet on these pages) and',
+     '<a href="1-john-2.html#v2-22">1 John 2:22</a>, <a href="1-john-4.html#v4-3">1 John 4:3</a> and'),
+    ('<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a> y 4:10, junto a esos dos; 4:10 todavía no en estas páginas)',
+     '<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a> y <a href="1-john-4.es.html#v4-10">1 Juan 4:10</a>, junto a esos dos)'),
+    ('(<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a>) y 4:10 (todavía no en estas páginas).',
+     '(<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a>) y «envió a su Hijo como expiación por nuestros pecados» (<a href="1-john-4.es.html#v4-10">1 Juan 4:10</a>).'),
+    ('<a href="1-john-2.es.html#v2-22">1 Juan 2:22</a>, 4:3 (todavía no en estas páginas) y',
+     '<a href="1-john-2.es.html#v2-22">1 Juan 2:22</a>, <a href="1-john-4.es.html#v4-3">1 Juan 4:3</a> y'),
+])
+
+XREFS.extend([
+    (("1 Thessalonians", 5, 21), ("1 John", 4, 1), "test everything"),
+    (("Matthew", 24, 11), ("1 John", 4, 1), "many false prophets"),
+    (("2 Peter", 2, 1), ("1 John", 4, 1), "false prophets among the people"),
+    (("2 John", 1, 7), ("1 John", 4, 1), "gone out into the world"),
+    (("John", 1, 14), ("1 John", 4, 2), "the Word became flesh"),
+    (("2 John", 1, 7), ("1 John", 4, 2), "Jesus Christ in flesh"),
+    (("1 John", 2, 18), ("1 John", 4, 3), "antichrist is coming"),
+    (("John", 16, 33), ("1 John", 4, 4), "I have conquered the world"),
+    (("1 John", 2, 13), ("1 John", 4, 4), "you have conquered"),
+    (("John", 3, 31), ("1 John", 4, 5), "speaking from the earth"),
+    (("John", 8, 47), ("1 John", 4, 6), "whoever is of God hears"),
+    (("John", 14, 17), ("1 John", 4, 6), "the spirit of truth"),
+    (("John", 13, 34), ("1 John", 4, 7), "love one another"),
+    (("1 John", 1, 5), ("1 John", 4, 8), "God is light, God is love"),
+    (("John", 4, 24), ("1 John", 4, 8), "God is spirit"),
+    (("John", 3, 16), ("1 John", 4, 9), "his only Son"),
+    (("John", 3, 17), ("1 John", 4, 9), "sent into the world"),
+    (("1 John", 2, 2), ("1 John", 4, 10), "the atonement for our sins"),
+    (("Romans", 5, 8), ("1 John", 4, 10), "God's love first"),
+    (("John", 1, 18), ("1 John", 4, 12), "no one has seen God"),
+    (("1 John", 2, 5), ("1 John", 4, 12), "love made complete"),
+    (("1 John", 3, 24), ("1 John", 4, 13), "the Spirit he gave us"),
+    (("John", 4, 42), ("1 John", 4, 14), "Saviour of the world"),
+    (("1 John", 1, 1), ("1 John", 4, 14), "we have looked upon"),
+    (("John", 6, 69), ("1 John", 4, 16), "believed and come to know"),
+    (("1 John", 2, 28), ("1 John", 4, 17), "boldness"),
+    (("Matthew", 12, 36), ("1 John", 4, 17), "the day of judgment"),
+    (("Matthew", 25, 46), ("1 John", 4, 18), "punishment"),
+    (("Romans", 8, 15), ("1 John", 4, 18), "not a spirit of fear"),
+    (("1 John", 2, 9), ("1 John", 4, 20), "says and hates his brother"),
+    (("Mark", 12, 31), ("1 John", 4, 21), "love God and neighbour"),
+])
+
+CHAPTER_ART["1john4"] = [dict(
+    file="giotto-scrovegni-charity.jpg",
+    title="Charity (Karitas)",   title_es="La Caridad (Karitas)",
+    artist="Giotto",
+    year="c. 1306",
+    location="Scrovegni Chapel, Padua",
+    location_es="Capilla de los Scrovegni, Padua",
+    alt="A fresco of a tall woman in a pale robe, crowned with flowers and haloed, standing in a painted niche under the word KARITAS. She raises her right hand to a small haloed figure leaning out of the upper corner and holds out a bowl of fruit and flowers in her left. Bags lie under her feet, and a long crack runs down the plaster.",
+    note="&#9888; Giotto&rsquo;s Charity, one of the virtues painted in the Scrovegni Chapel, beside <a href=\"1-john-4.html#v4-8\">verse 8</a> and <a href=\"1-john-4.html#v4-16\">verse 16</a>, which the Douay, translating the Latin <em>caritas</em>, reads &lsquo;God is charity.&rsquo; She reaches up to God with one hand and holds out her gifts with the other, the two loves of <a href=\"1-john-4.html#v4-21\">verse 21</a>. What passes between her hand and God&rsquo;s, and the bags under her feet, are the painter&rsquo;s, not the letter&rsquo;s.",
+    note_es="&#9888; La Caridad de Giotto, una de las virtudes pintadas en la Capilla de los Scrovegni, junto al <a href=\"1-john-4.es.html#v4-8\">versículo 8</a> y al <a href=\"1-john-4.es.html#v4-16\">versículo 16</a>, que la Douay, traduciendo el latín <em>caritas</em>, lee «Dios es caridad». Con una mano se alza hacia Dios y con la otra ofrece sus dones, los dos amores del <a href=\"1-john-4.es.html#v4-21\">versículo 21</a>. Lo que pasa entre su mano y la de Dios, y las bolsas bajo sus pies, son del pintor, no de la carta.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Giotto_di_Bondone_-_No._45_The_Seven_Virtues_-_Charity_-_WGA09272.jpg",
+)]
+
+CHRON_CHAPTERS["1john4"] = dict(era='apostolic',
+    when="The letter's fourth movement: 'test the spirits,' because many false prophets have gone out into the world; the spirit that confesses Jesus Christ come in flesh, and that of the antichrist; 'God is love,' said twice; God's only Son sent as the atonement for our sins; 'No one has ever looked upon God'; 'There is no fear in love'; and 'We love, because he first loved us.'",
+    clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
