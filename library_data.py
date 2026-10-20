@@ -44590,3 +44590,103 @@ CHRON_CHAPTERS["2pe3"] = dict(era='apostolic',
     when="The second letter's last word: mockers asking 'Where is the promise of his presence?'; the earth formed out of water, the world that perished in the flood, and the present heavens 'stored up for fire'; 'with the Lord one day is like a thousand years'; a Lord not slow but patient; the day of the Lord 'like a thief,' with the earth and its works 'found'; new heavens and a new earth; and 'our beloved brother Paul,' whose letters have 'some things hard to understand.'",
     clock="c. AD 64–65 on the traditional reading; the date is disputed (see chapter 1).")
 
+# ---- 1 John 2 -----------------------------------------------------------
+DICTIONARY.append(('hilasmos', 'hilasmos', 'ἱλασμός', 'hilasmos',
+    'ATONEMENT &mdash; the act or means by which sin is dealt with before God; from the verb <a href="dictionary.html#hilaskomai">hilaskomai</a>, the tax collector&rsquo;s &lsquo;be merciful to me,&rsquo; and kin to <a href="dictionary.html#hilasterion">hilast&#275;rion</a>, &lsquo;place of atonement.&rsquo; &#9888; It stands in two verses of the New Testament, both in 1 John: &lsquo;he himself is the atonement for our sins&rsquo; (<a href="1-john-2.html#v2-2">1 John 2:2</a>) and 4:10 (not yet on these pages). Whether it means turning away God&rsquo;s anger (&lsquo;propitiation&rsquo;) or wiping away the sin (&lsquo;expiation&rsquo;), readings differ, and the note at <a href="romans-3.html#n3-24">Romans 3:25</a> sets them out. KJV &lsquo;propitiation&rsquo;; NWT 1984 &lsquo;a propitiatory sacrifice&rsquo;; NIV &lsquo;the atoning sacrifice.&rsquo;',
+    ('1 John', 2, 2)))
+DICTIONARY_ES['hilasmos'] = ('hilasmós',
+    'EXPIACIÓN &mdash; el acto o el medio por el que se trata el pecado ante Dios; del verbo <a href="diccionario.html#hilaskomai">hiláskomai</a>, el «ten compasión de mí» del recaudador de impuestos, y pariente de <a href="diccionario.html#hilasterion">hilast&#275;́rion</a>, «lugar de expiación». &#9888; Está en dos versículos del Nuevo Testamento, los dos en 1 Juan: «él mismo es la expiación por nuestros pecados» (<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a>) y 4:10 (todavía no en estas páginas). Si significa apartar la ira de Dios («propiciación») o borrar el pecado («expiación»), las lecturas difieren, y la nota de <a href="romans-3.es.html#n3-24">Romanos 3:25</a> las expone. RV60 «propiciación»; TNM 1987 «un sacrificio propiciatorio»; NVI «el sacrificio por el perdón de nuestros pecados».')
+
+DICTIONARY.append(('teknion', 'teknion', 'τεκνίον', 'teknion',
+    'LITTLE CHILD &mdash; the diminutive of <em>teknon</em>, &lsquo;child,&rsquo; a word of affection, used in the New Testament only in the plural, as a form of address. &#9888; It stands in eight verses: Jesus at the supper, &lsquo;Little children, I am with you only a little while longer&rsquo; (<a href="john-13.html#v13-33">John 13:33</a>), and seven in 1 John, where it is the name the writer gives his readers, beginning with &lsquo;My little children, I am writing these things to you so that you may not sin&rsquo; (<a href="1-john-2.html#v2-1">1 John 2:1</a>) and <a href="1-john-2.html#v2-12">1 John 2:12</a> and <a href="1-john-2.html#v2-28">1 John 2:28</a>. The letter&rsquo;s other word for them is <a href="dictionary.html#paidion">paidion</a>, &lsquo;children&rsquo; (<a href="1-john-2.html#v2-14">1 John 2:14</a>, <a href="1-john-2.html#v2-18">1 John 2:18</a>). KJV &lsquo;little children&rsquo;; NIV &lsquo;dear children.&rsquo;',
+    ('1 John', 2, 1)))
+DICTIONARY_ES['teknion'] = ('tekníon',
+    'HIJITO &mdash; el diminutivo de <em>téknon</em>, «hijo», una palabra de cariño, usada en el Nuevo Testamento solo en plural, como forma de dirigirse a alguien. &#9888; Está en ocho versículos: Jesús en la cena, «Hijitos, todavía estoy con ustedes un poco más» (<a href="john-13.es.html#v13-33">Juan 13:33</a>), y siete en 1 Juan, donde es el nombre que el autor da a sus lectores, empezando por «Hijitos míos, les escribo estas cosas para que no pequen» (<a href="1-john-2.es.html#v2-1">1 Juan 2:1</a>) y <a href="1-john-2.es.html#v2-12">1 Juan 2:12</a> y <a href="1-john-2.es.html#v2-28">1 Juan 2:28</a>. La otra palabra de la carta para ellos es <a href="diccionario.html#paidion">paidíon</a>, «niños» (<a href="1-john-2.es.html#v2-14">1 Juan 2:14</a>, <a href="1-john-2.es.html#v2-18">1 Juan 2:18</a>). RV60 «hijitos»; NVI «queridos hijos».')
+
+DICTIONARY.append(('antichristos', 'antichristos', 'ἀντίχριστος', 'antichristos',
+    'ANTICHRIST &mdash; <em>anti-</em>, &lsquo;against&rsquo; or &lsquo;in place of,&rsquo; and <em>Christos</em>. &#9888; It stands in four verses of the New Testament, all in John&rsquo;s letters: <a href="1-john-2.html#v2-18">1 John 2:18</a>, <a href="1-john-2.html#v2-22">1 John 2:22</a>, 4:3 (not yet on these pages) and <a href="2-john-1.html#v7">2 John 1:7</a>. It is not in Revelation. The letter says &lsquo;many antichrists have come&rsquo; and calls the antichrist &lsquo;the one who denies the Father and the Son.&rsquo; Readers have long joined the word to &lsquo;the man of lawlessness&rsquo; of <a href="2-thessalonians-2.html#v2-3">2 Thessalonians 2:3</a> and to the beasts of Revelation, and looked for one figure at the end; whether John also expects one, readings differ. Compare <a href="dictionary.html#pseudochristos">pseudochristos</a>, &lsquo;false christ&rsquo; (<a href="mark-13.html#v13-22">Mark 13:22</a>). KJV at 2:18 &lsquo;antichrist shall come&rsquo;; NIV &lsquo;the antichrist is coming.&rsquo;',
+    ('1 John', 2, 18)))
+DICTIONARY_ES['antichristos'] = ('antíchristos',
+    'ANTICRISTO &mdash; <em>anti-</em>, «contra» o «en lugar de», y <em>Christós</em>. &#9888; Está en cuatro versículos del Nuevo Testamento, todos en las cartas de Juan: <a href="1-john-2.es.html#v2-18">1 Juan 2:18</a>, <a href="1-john-2.es.html#v2-22">1 Juan 2:22</a>, 4:3 (todavía no en estas páginas) y <a href="2-john-1.es.html#v7">2 Juan 1:7</a>. No está en Apocalipsis. La carta dice «han surgido muchos anticristos» y llama anticristo a «el que niega al Padre y al Hijo». Los lectores han unido desde hace mucho la palabra al «hombre de la iniquidad» de <a href="2-thessalonians-2.es.html#v2-3">2 Tesalonicenses 2:3</a> y a las bestias del Apocalipsis, y han esperado una sola figura al final; si Juan espera además una, las lecturas difieren. Compárese <a href="diccionario.html#pseudochristos">pseudóchristos</a>, «falso cristo» (<a href="mark-13.es.html#v13-22">Marcos 13:22</a>). RV60 en 2:18 «el anticristo viene»; NVI «el anticristo vendría».')
+
+DICTIONARY.append(('chrisma', 'chrisma', 'χρῖσμα', 'chrisma',
+    'ANOINTING &mdash; the oil, or the act, of anointing; from <em>chri&#333;</em>, &lsquo;to anoint,&rsquo; the root of <em>Christos</em>, &lsquo;the anointed one.&rsquo; &#9888; It stands in two verses of the New Testament, both in 1 John: &lsquo;you have an anointing from the Holy One&rsquo; (<a href="1-john-2.html#v2-20">1 John 2:20</a>) and &lsquo;the anointing that you received from him remains in you&rsquo; (<a href="1-john-2.html#v2-27">1 John 2:27</a>). Against the &lsquo;antichrists,&rsquo; the readers have the <em>chrisma</em>. Whether it is the Spirit, or the word they heard from the beginning, readings differ. KJV &lsquo;an unction&rsquo; at 2:20 and &lsquo;the anointing&rsquo; at 2:27.',
+    ('1 John', 2, 20)))
+DICTIONARY_ES['chrisma'] = ('chrísma',
+    'UNCIÓN &mdash; el aceite, o el acto, de ungir; de <em>chríō</em>, «ungir», la raíz de <em>Christós</em>, «el ungido». &#9888; Está en dos versículos del Nuevo Testamento, los dos en 1 Juan: «ustedes tienen una unción del Santo» (<a href="1-john-2.es.html#v2-20">1 Juan 2:20</a>) y «la unción que recibieron de él permanece en ustedes» (<a href="1-john-2.es.html#v2-27">1 Juan 2:27</a>). Frente a los «anticristos», los lectores tienen la <em>chrísma</em>. Si es el Espíritu, o la palabra que oyeron desde el principio, las lecturas difieren. RV60 «la unción» en los dos versículos.')
+
+def _jn1_2_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_jn1_2_fix([('16:7 — and 1 John 2:1, where the paraklētos is JESUS', '16:7 — and <a href="1-john-2.html#v2-1">1 John 2:1</a>, where the paraklētos is JESUS'), ('16:7 y 1 Juan 2:1, donde el paraklētos es JESÚS', '16:7 y <a href="1-john-2.es.html#v2-1">1 Juan 2:1</a>, donde el paraklētos es JESÚS'), ('1 John 2:2 and 4:10 beside those two; 1 John not yet on these pages)', '<a href="1-john-2.html#v2-2">1 John 2:2</a> and 4:10 beside those two; 4:10 not yet on these pages)'), ('1 Juan 2:2 y 4:10, junto a esos dos; 1 Juan todavía no en estas páginas)', '<a href="1-john-2.es.html#v2-2">1 Juan 2:2</a> y 4:10, junto a esos dos; 4:10 todavía no en estas páginas)'), ('and 1 John 2:16 (not yet on these pages).', 'and <a href="1-john-2.html#v2-16">1 John 2:16</a>, &lsquo;the arrogance of possessions.&rsquo;'), ('y 1 Juan 2:16 (todavía no en estas páginas).', 'y <a href="1-john-2.es.html#v2-16">1 Juan 2:16</a>, «la arrogancia de los bienes».')])
+
+XREFS.extend([
+    (("John", 14, 16), ("1 John", 2, 1), "the Advocate"),
+    (("1 John", 1, 9), ("1 John", 2, 1), "the righteous one"),
+    (("Romans", 3, 25), ("1 John", 2, 2), "atonement"),
+    (("Hebrews", 2, 17), ("1 John", 2, 2), "atonement for sins"),
+    (("John", 1, 29), ("1 John", 2, 2), "the sin of the world"),
+    (("John", 14, 15), ("1 John", 2, 3), "keep his commandments"),
+    (("John", 8, 55), ("1 John", 2, 4), "a liar"),
+    (("John", 13, 15), ("1 John", 2, 6), "walk as he walked"),
+    (("John", 13, 34), ("1 John", 2, 8), "a new commandment"),
+    (("2 John", 1, 5), ("1 John", 2, 7), "the commandment from the beginning"),
+    (("1 Corinthians", 7, 31), ("1 John", 2, 8), "passing away"),
+    (("John", 1, 9), ("1 John", 2, 8), "the true light"),
+    (("John", 11, 10), ("1 John", 2, 10), "stumbling in the dark"),
+    (("John", 12, 35), ("1 John", 2, 11), "does not know where he is going"),
+    (("2 Corinthians", 4, 4), ("1 John", 2, 11), "blinded"),
+    (("John", 16, 33), ("1 John", 2, 13), "conquered"),
+    (("John", 17, 15), ("1 John", 2, 13), "the evil one"),
+    (("James", 4, 4), ("1 John", 2, 15), "love of the world"),
+    (("James", 4, 16), ("1 John", 2, 16), "arrogance"),
+    (("Mark", 13, 22), ("1 John", 2, 18), "false christs"),
+    (("2 Thessalonians", 2, 3), ("1 John", 2, 18), "the man of lawlessness"),
+    (("2 John", 1, 7), ("1 John", 2, 18), "the antichrist"),
+    (("Acts", 20, 30), ("1 John", 2, 19), "from among yourselves"),
+    (("Acts", 10, 38), ("1 John", 2, 20), "anointed"),
+    (("John", 6, 69), ("1 John", 2, 20), "the Holy One"),
+    (("John", 5, 23), ("1 John", 2, 23), "honoring the Son and the Father"),
+    (("2 John", 1, 9), ("1 John", 2, 23), "having the Father and the Son"),
+    (("John", 17, 3), ("1 John", 2, 25), "eternal life"),
+    (("Hebrews", 8, 11), ("1 John", 2, 27), "no need to teach"),
+    (("John", 14, 26), ("1 John", 2, 27), "he will teach you"),
+    (("Mark", 8, 38), ("1 John", 2, 28), "ashamed at his coming"),
+    (("John", 3, 3), ("1 John", 2, 29), "born of God"),
+])
+
+CHAPTER_ART["1john2"] = [dict(
+    file="bosch-death-and-the-miser.jpg",
+    title="Death and the Miser",   title_es="La muerte y el avaro",
+    artist="Hieronymus Bosch",
+    year="c. 1485–1490",
+    location="National Gallery of Art, Washington",
+    location_es="Galería Nacional de Arte, Washington",
+    alt="A tall narrow panel: a dying man sits up in a curtained bed as Death, a shrouded skeleton, comes through the door with an arrow; an angel at his shoulder points him to a small crucifix in the window, while a demon offers him a bag of money, and in the foreground the same man in a green robe drops coins into a chest where small demons lurk.",
+    note="&#9888; Bosch&rsquo;s miser, torn at the hour of death between the crucifix in the window and the bag a demon holds out to him, beside <a href=\"1-john-2.html#v2-17\">verse 17</a>, &lsquo;the world is passing away, and its desire, but whoever does the will of God remains forever.&rsquo; The painting is one artist&rsquo;s moral picture; the letter does not describe a deathbed.",
+    note_es="&#9888; El avaro de Bosch, dividido a la hora de la muerte entre el crucifijo de la ventana y la bolsa que le tiende un demonio, junto al <a href=\"1-john-2.es.html#v2-17\">versículo 17</a>, «el mundo va pasando, y su deseo, pero el que hace la voluntad de Dios permanece para siempre». La pintura es la imagen moral de un artista; la carta no describe un lecho de muerte.",
+    license="Public domain (CC0, National Gallery of Art open access)",
+    source_url="https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch,_Death_and_the_Miser,_c._1485-1490,_NGA_41645.jpg",
+)]
+
+CHRON_CHAPTERS["1john2"] = dict(era='apostolic',
+    when="The letter's second movement: 'we have an Advocate with the Father, Jesus Christ the righteous,' the atonement 'for the whole world'; the test of keeping his commandments; the commandment both old and new; six lines to little children, fathers and young men; 'Do not love the world'; the last hour and the many antichrists who 'went out from us'; and the anointing that teaches them, with the call to remain in him.",
+    clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
+
