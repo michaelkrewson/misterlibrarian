@@ -219,6 +219,8 @@ def norm(s):
     # rather than let the filter below turn them into spaces, which split "Moab" into
     # "mo ab" and failed a quote that was verbatim correct (Numbers 24:17).
     s = re.sub(r'[\u02b9\u02ba\u02bb\u02bd\u2032]', '', s)
+    # Its syllable dots too -- Gil'e.ad, A.mal'ek.ite (Judges 12:7, 15).
+    s = s.replace("\u00b7", "")
     s = ''.join(c for c in unicodedata.normalize("NFD", s) if not unicodedata.combining(c))
     s = re.sub(r'[^0-9a-zA-Z\' ]+', ' ', s)
     return re.sub(r'\s+', ' ', s).strip().casefold()
