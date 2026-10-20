@@ -45241,3 +45241,74 @@ CHAPTER_ART["rev16"] = [dict(
 CHRON_CHAPTERS["rev16"] = dict(era='apostolic',
     when="The seven bowls of the fury of God poured out in the order of the trumpets, several of them the plagues of Egypt again: sores, sea and rivers turned to blood, a scorching sun, darkness on the beast's throne, the Euphrates dried up for the kings from the east; three frog-like spirits gathering the kings to the place called Harmagedon; 'Look, I am coming like a thief'; and at the seventh bowl 'It has happened,' the greatest earthquake, Babylon remembered, and hail the weight of a talent.",
     clock="c. AD 95, the second half of the bowls cycle (chapters 15-16); the people blaspheme three times and twice do not repent, where at 11:13 the survivors gave glory to God.")
+
+# ---- Revelation 17 ------------------------------------------------------
+DICTIONARY.append(('porne', 'pornē', 'πόρνη', 'pornē',
+    'PROSTITUTE, HARLOT &mdash; a woman who sells herself; the word is usually traced to <em>pern&#275;mi</em>, &lsquo;to sell.&rsquo; &#9888; It stands in twelve verses of the New Testament: &lsquo;the tax collectors and the prostitutes are going ahead of you into the kingdom of God&rsquo; (<a href="matthew-21.html#v21-31">Matthew 21:31</a>, with <a href="matthew-21.html#v21-32">21:32</a>); the son who &lsquo;devoured your property with prostitutes&rsquo; (<a href="luke-15.html#v15-30">Luke 15:30</a>); &lsquo;the one who joins himself to a prostitute becomes one body with her&rsquo; (<a href="1-corinthians-6.html#v15">1 Corinthians 6:15</a>&ndash;16); &lsquo;Rahab the prostitute&rsquo; (<a href="hebrews-11.html#v11-31">Hebrews 11:31</a>, <a href="james-2.html#v2-25">James 2:25</a>); and five in Revelation, where &lsquo;the great prostitute who is seated on many waters&rsquo; is Babylon (<a href="revelation-17.html#v17-1">Revelation 17:1</a>, <a href="revelation-17.html#v17-5">17:5</a>, <a href="revelation-17.html#v17-15">17:15</a>, <a href="revelation-17.html#v17-16">17:16</a>), and 19:2 (not yet on these pages). The act is <a href="dictionary.html#porneia">porneia</a>. KJV &lsquo;whore&rsquo; and &lsquo;harlot&rsquo;; ASV and NWT 1984 &lsquo;harlot&rsquo;; NIV &lsquo;prostitute.&rsquo;',
+    ('Matthew', 21, 31)))
+DICTIONARY_ES['porne'] = ('pórn&#275;',
+    'PROSTITUTA, RAMERA &mdash; una mujer que se vende; la palabra suele derivarse de <em>pérn&#275;mi</em>, «vender». &#9888; Está en doce versículos del Nuevo Testamento: «los recaudadores de impuestos y las prostitutas les van delante al reino de Dios» (<a href="matthew-21.es.html#v21-31">Mateo 21:31</a>, con <a href="matthew-21.es.html#v21-32">21:32</a>); el hijo «que devoró tus bienes con prostitutas» (<a href="luke-15.es.html#v15-30">Lucas 15:30</a>); «el que se une a una prostituta forma un solo cuerpo con ella» (<a href="1-corinthians-6.es.html#v15">1 Corintios 6:15</a>&ndash;16); «Rahab la prostituta» (<a href="hebrews-11.es.html#v11-31">Hebreos 11:31</a>, <a href="james-2.es.html#v2-25">Santiago 2:25</a>); y cinco en el Apocalipsis, donde «la gran prostituta que está sentada sobre muchas aguas» es Babilonia (<a href="revelation-17.es.html#v17-1">Apocalipsis 17:1</a>, <a href="revelation-17.es.html#v17-5">17:5</a>, <a href="revelation-17.es.html#v17-15">17:15</a>, <a href="revelation-17.es.html#v17-16">17:16</a>), y 19:2 (todavía no en estas páginas). El acto es la <a href="diccionario.html#porneia">porneía</a>. RV 1909 y RV60 «ramera»; TNM 1987 «ramera»; NVI «prostituta».')
+
+DICTIONARY.append(('kokkinos', 'kokkinos', 'κόκκινος', 'kokkinos',
+    'SCARLET &mdash; the deep red dye made from the <em>kokkos</em>, the &lsquo;grain&rsquo; of the kermes insect, the costly colour of rich cloth. &#9888; It stands in six verses of the New Testament: the &lsquo;scarlet cloak&rsquo; the soldiers put on Jesus (<a href="matthew-27.html#v27-28">Matthew 27:28</a>); the &lsquo;scarlet wool&rsquo; Moses used with water and hyssop to sprinkle the book and the people (<a href="hebrews-9.html#v9-19">Hebrews 9:19</a>); the &lsquo;scarlet beast&rsquo; and the woman &lsquo;clothed in purple and scarlet&rsquo; (<a href="revelation-17.html#v17-3">Revelation 17:3</a>, <a href="revelation-17.html#v17-4">17:4</a>); and scarlet among the merchants&rsquo; cargoes and the great city&rsquo;s clothing in Revelation 18:12 and 18:16 (not yet on these pages). KJV &lsquo;scarlet coloured beast&rsquo;; NWT 1984 &lsquo;scarlet-colored wild beast.&rsquo;',
+    ('Matthew', 27, 28)))
+DICTIONARY_ES['kokkinos'] = ('kókkinos',
+    'ESCARLATA &mdash; el tinte rojo intenso hecho del <em>kókkos</em>, el «grano» del insecto quermes, el color costoso de la tela rica. &#9888; Está en seis versículos del Nuevo Testamento: el «manto escarlata» que los soldados le pusieron a Jesús (<a href="matthew-27.es.html#v27-28">Mateo 27:28</a>); la «lana escarlata» con agua e hisopo con que Moisés roció el libro y al pueblo (<a href="hebrews-9.es.html#v9-19">Hebreos 9:19</a>); la «bestia escarlata» y la mujer «vestida de púrpura y escarlata» (<a href="revelation-17.es.html#v17-3">Apocalipsis 17:3</a>, <a href="revelation-17.es.html#v17-4">17:4</a>); y la escarlata entre las mercancías de los mercaderes y en el vestido de la gran ciudad en Apocalipsis 18:12 y 18:16 (todavía no en estas páginas). RV 1909 «una bestia bermeja»; RV60 y TNM 1987 «escarlata».')
+
+_jn1_3_fix([
+    ('and Revelation 17:8 and 17:11 (these two not yet on these pages).',
+     'and <a href="revelation-17.html#v17-8">Revelation 17:8</a> and <a href="revelation-17.html#v17-11">17:11</a>, the beast that goes to destruction.'),
+    ('y Apocalipsis 17:8 y 17:11 (estos dos todavía no en estas páginas).',
+     'y <a href="revelation-17.es.html#v17-8">Apocalipsis 17:8</a> y <a href="revelation-17.es.html#v17-11">17:11</a>, la bestia que va a la destrucción.'),
+    ('one of the angels &lsquo;who had the seven bowls&rsquo; at 17:1 (not yet on these pages) and <a href="revelation-21.html#v21-9">21:9</a>.',
+     'one of the angels &lsquo;who had the seven bowls&rsquo; at <a href="revelation-17.html#v17-1">17:1</a> and <a href="revelation-21.html#v21-9">21:9</a>.'),
+    ('uno de los ángeles «que tenían las siete copas» en 17:1 (todavía no en estas páginas) y <a href="revelation-21.es.html#v21-9">21:9</a>.',
+     'uno de los ángeles «que tenían las siete copas» en <a href="revelation-17.es.html#v17-1">17:1</a> y <a href="revelation-21.es.html#v21-9">21:9</a>.'),
+    ('It surfaces seven times in the New Testament, all in Revelation (9:1, 2, 11; 11:7; 17:8; 20:1, 3 — the first four now translated)',
+     'It surfaces seven times in Revelation (9:1, 2, 11; 11:7; <a href="revelation-17.html#v17-8">17:8</a>; 20:1, 3 — the first five now translated)'),
+    ('Aparece siete veces en el Nuevo Testamento, todas en Apocalipsis (9:1, 2, 11; 11:7; 17:8; 20:1, 3 — las primeras cuatro ya traducidas)',
+     'Aparece siete veces en Apocalipsis (9:1, 2, 11; 11:7; <a href="revelation-17.es.html#v17-8">17:8</a>; 20:1, 3 — las primeras cinco ya traducidas)'),
+])
+
+XREFS.extend([
+    (("Revelation", 21, 9), ("Revelation", 17, 1), "one of the seven angels with the bowls: 'Come, I will show you'"),
+    (("Jeremiah", 51, 13), ("Revelation", 17, 1), "dwelling on many waters"),
+    (("Revelation", 14, 8), ("Revelation", 17, 2), "the wine of her sexual immorality"),
+    (("Revelation", 12, 6), ("Revelation", 17, 3), "the woman in the wilderness"),
+    (("Revelation", 13, 1), ("Revelation", 17, 3), "seven heads, ten horns, names of blasphemy"),
+    (("Matthew", 27, 28), ("Revelation", 17, 4), "scarlet"),
+    (("Jeremiah", 51, 7), ("Revelation", 17, 4), "Babylon a golden cup"),
+    (("Revelation", 14, 1), ("Revelation", 17, 5), "a name on the forehead"),
+    (("Revelation", 16, 6), ("Revelation", 17, 6), "the blood of the holy ones"),
+    (("Revelation", 4, 8), ("Revelation", 17, 8), "who was and is and is to come"),
+    (("Revelation", 11, 7), ("Revelation", 17, 8), "the beast out of the Abyss"),
+    (("Revelation", 13, 8), ("Revelation", 17, 8), "the book of life from the founding of the world"),
+    (("Revelation", 13, 18), ("Revelation", 17, 9), "here is wisdom"),
+    (("Daniel", 7, 24), ("Revelation", 17, 12), "ten horns are ten kings"),
+    (("Deuteronomy", 10, 17), ("Revelation", 17, 14), "Lord of lords"),
+    (("1 Timothy", 6, 15), ("Revelation", 17, 14), "King of kings and Lord of lords"),
+    (("Matthew", 22, 14), ("Revelation", 17, 14), "called and chosen"),
+    (("Revelation", 5, 9), ("Revelation", 17, 15), "peoples, nations and tongues"),
+    (("Ezekiel", 23, 29), ("Revelation", 17, 16), "hated, left naked and bare"),
+    (("Leviticus", 21, 9), ("Revelation", 17, 16), "burned with fire"),
+    (("Revelation", 10, 7), ("Revelation", 17, 17), "finished"),
+    (("Revelation", 16, 19), ("Revelation", 17, 18), "the great city"),
+])
+
+CHAPTER_ART["rev17"] = [dict(
+    file="durer-babylonian-whore.jpg",
+    title="The Babylonian Whore",   title_es="La ramera de Babilonia",
+    artist="Albrecht Dürer",
+    year="probably c. 1496/1498",
+    location="National Gallery of Art, Washington, from The Apocalypse",
+    location_es="Galería Nacional de Arte, Washington, de El Apocalipsis",
+    alt="A black-and-white woodcut: on the right a richly dressed woman in an ornate headdress sits on a seven-headed beast and holds up a tall covered cup; on the left a crowd of men in fine clothes and turbans gazes at her; above, an angel lifts a millstone and another flies with outstretched arm, a city burns by the sea on the right, and on the upper left a rider on a white horse leads an army out of the clouds.",
+    note="&#9888; The last woodcut but one of Dürer&rsquo;s Apocalypse puts three chapters on one block: the woman on the beast holding up the golden cup of <a href=\"revelation-17.html#v17-4\">verse 4</a> to a crowd of onlookers, in the rich dress of Dürer&rsquo;s own day; above her, Babylon burning and an angel with the millstone of chapter 18; and at the upper left the rider of chapter 19 with the armies of heaven.",
+    note_es="&#9888; El penúltimo grabado del Apocalipsis de Durero pone tres capítulos en una sola plancha: la mujer sobre la bestia, alzando la copa de oro del <a href=\"revelation-17.es.html#v17-4\">versículo 4</a> ante una multitud que la mira, con el rico vestido de la época de Durero; sobre ella, Babilonia ardiendo y un ángel con la piedra de molino del capítulo 18; y arriba a la izquierda el jinete del capítulo 19 con los ejércitos del cielo.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_The_Babylonian_Whore,_probably_c._1496-1498,_NGA_6684.jpg",
+)]
+
+CHRON_CHAPTERS["rev17"] = dict(era='apostolic',
+    when="One of the seven angels with the bowls shows John the great prostitute seated on many waters, a woman on a scarlet beast with seven heads and ten horns, 'Babylon the great, the mother of prostitutes,' drunk with the blood of the holy ones; the angel explains the beast that was and is not and will be present, the seven heads that are seven mountains and seven kings, the ten horns that are ten kings for one hour who make war on the Lamb, 'Lord of lords and King of kings'; the beast and the horns turn on the prostitute, and the woman is named as the great city.",
+    clock="c. AD 95, between the bowls (chapters 15-16) and Babylon's fall (chapter 18); the riddle of the seven kings is the book's nearest approach to dating itself, and readers count the emperors in different ways.")
