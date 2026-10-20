@@ -12,6 +12,13 @@
 //    reads the verses from this page itself, so the link can't put words in a verse's mouth.
 //  - Verses that already have a conversation get a small 💬 count after their ⋯, and the
 //    chapter's own button shows how many have joined in (from Agorai's /api/discussed).
+//  - Under the last verse (above the Translator's Notes), a "Conversations about <chapter>" box
+//    (2026-10-19): how many people are talking, the latest few comments one line each, and a
+//    "Write a comment…" box. It's a WINDOW, not a copy: the conversation lives on Agorai, and
+//    posting carries the typed text there (in the address's #draft= part) where it goes up as a
+//    guest, no account needed (Agorai allows 3 guest comments, then asks them to sign in). This
+//    page never hosts anyone's comments: Google credits them to Agorai, and AdSense, which judges
+//    a whole site, never sees a heated thread here. Loaded by script, so nothing here is indexed.
 //
 // No-ops unless the page has both verses and an Agorai target (so Spanish pages, which have
 // no target yet, and every non-chapter page are untouched).
@@ -58,7 +65,28 @@
     ".agv-bar .agv-x{background:none;border:0;color:#e8eef7;opacity:.7;font-size:20px;cursor:pointer;padding:2px 4px}" +
     ".agv-bub{display:inline-flex;align-items:center;gap:3px;margin-left:6px;padding:1px 7px;border-radius:999px;font-size:12.5px;" +
       "line-height:1.6;text-decoration:none;color:#5eb3d6;border:1px solid rgba(94,179,214,.4);vertical-align:middle;white-space:nowrap}" +
-    ".agv-bub:hover{background:rgba(94,179,214,.12)}";
+    ".agv-bub:hover{background:rgba(94,179,214,.12)}" +
+    ".agv-convo{max-width:760px;margin:30px auto 8px;padding:18px 20px;background:var(--bg1,#0a0f1a);border:1px solid var(--border,rgba(255,255,255,.08));" +
+      "border-radius:14px;font:14px/1.6 system-ui,-apple-system,sans-serif;color:var(--text,#e2e8f0)}" +
+    ".agv-convo h2{margin:0 0 4px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted,#94a3b8)}" +
+    ".agv-convo .agv-count{margin:0 0 12px;font-size:15px;font-weight:650}" +
+    ".agv-convo ol{list-style:none;margin:0 0 12px;padding:0}" +
+    ".agv-convo li{padding:9px 0;border-top:1px solid var(--border,rgba(255,255,255,.08))}" +
+    ".agv-convo li:first-child{border-top:0}" +
+    ".agv-who{font-weight:650;margin-right:6px}.agv-when{color:var(--muted,#94a3b8);font-size:12.5px}" +
+    ".agv-ai{display:inline-block;margin-right:6px;padding:0 6px;border-radius:6px;font-size:11px;font-weight:700;background:rgba(94,179,214,.16);color:#5eb3d6}" +
+    ".agv-line{display:block;color:var(--text,#e2e8f0)}" +
+    ".agv-read{display:inline-block;margin:0 0 14px;color:var(--gold,#e8c968);font-weight:650;text-decoration:none}" +
+    ".agv-read:hover{text-decoration:underline}" +
+    ".agv-convo textarea{box-sizing:border-box;width:100%;min-height:84px;padding:10px 12px;border-radius:10px;resize:vertical;" +
+      "font:15px/1.5 system-ui,-apple-system,sans-serif;color:var(--text,#e2e8f0);background:var(--bg2,#0d1520);border:1px solid var(--border,rgba(255,255,255,.12))}" +
+    ".agv-convo textarea:focus{outline:2px solid rgba(232,201,104,.5);outline-offset:1px}" +
+    ".agv-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:10px}" +
+    ".agv-post{background:var(--gold,#e8c968);color:#0b1929;border:0;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;cursor:pointer}" +
+    ".agv-post[disabled]{opacity:.5;cursor:default}" +
+    ".agv-fine{color:var(--muted,#94a3b8);font-size:12.5px}" +
+    ".agv-jump{margin-left:10px;font-size:13px;color:var(--muted,#94a3b8);text-decoration:none;align-self:center}" +
+    ".agv-jump:hover{color:var(--text,#e2e8f0)}";
   document.head.appendChild(css);
 
   // -------------------------------------------------------- selecting verses ---
@@ -139,13 +167,95 @@
     a.textContent = "💬 " + count;
     return a;
   }
+  // ------------------------------------------ the conversation under the chapter ---
+  function ago(t) {
+    var s = Math.max(0, Date.now() / 1000 - t);
+    if (s < 3600) return Math.max(1, Math.round(s / 60)) + " min ago";
+    if (s < 86400) return Math.round(s / 3600) + " h ago";
+    if (s < 86400 * 30) { var d = Math.round(s / 86400); return d + (d === 1 ? " day ago" : " days ago"); }
+    return new Date(t * 1000).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  // The conversation box, built from Agorai's preview (d.chapter: url, people, latest[]) or empty.
+  function convoBox(chapter, verseCount) {
+    var box = el("section", "agv-convo");
+    box.id = "conversation";
+    box.setAttribute("aria-label", "Conversations about " + REF);
+    box.appendChild(el("h2", null, "Conversations about " + REF));
+    var latest = (chapter && chapter.latest) || [];
+    if (chapter && latest.length) {
+      var n = chapter.people || 1;
+      box.appendChild(el("p", "agv-count", "💬 " + n + (n === 1 ? " person is" : " people are") + " talking about this chapter"));
+      var ol = el("ol");
+      latest.forEach(function (p) {
+        var li = el("li");
+        if (p.ai) li.appendChild(el("span", "agv-ai", "AI"));
+        li.appendChild(el("span", "agv-who", p.name || "Someone"));
+        li.appendChild(el("span", "agv-when", ago(p.at)));
+        li.appendChild(el("span", "agv-line", p.text));
+        ol.appendChild(li);
+      });
+      box.appendChild(ol);
+      var read = el("a", "agv-read", "Read the whole conversation →");
+      read.href = chapter.url; read.target = "_blank"; read.rel = "noopener";
+      box.appendChild(read);
+    } else {
+      box.appendChild(el("p", "agv-count", "No one has started talking about " + REF + " yet."));
+    }
+    var ta = el("textarea");
+    ta.setAttribute("aria-label", "Write a comment");
+    ta.placeholder = latest.length ? "Add your thoughts…" : "What stood out to you in this chapter? Start the conversation…";
+    ta.maxLength = 4000;
+    box.appendChild(ta);
+    var row = el("div", "agv-row");
+    var post = el("button", "agv-post", "Post on Agorai →");
+    post.type = "button";
+    post.disabled = true;
+    row.appendChild(post);
+    row.appendChild(el("span", "agv-fine", "No account needed. It opens on Agorai, our discussion forum, ready to post."));
+    box.appendChild(row);
+    if (verseCount) {
+      box.appendChild(el("p", "agv-fine", "Plus " + verseCount + (verseCount === 1 ? " conversation" : " conversations") +
+        " about single verses (marked 💬). Tap a verse's ⋯ to start one."));
+    }
+    ta.addEventListener("input", function () { post.disabled = !ta.value.trim(); });
+    post.addEventListener("click", function () {
+      var text = ta.value.trim();
+      if (!text) return;
+      // Agorai sends the chapter's conversation (or its start page) and fills the reply box from #draft=.
+      var url = AGORAI + "/discuss?url=" + encodeURIComponent(PAGE) + "&title=" + encodeURIComponent(REF) +
+        "&s=" + encodeURIComponent(SQUARE) + "#draft=" + encodeURIComponent(text);
+      window.open(url, "_blank", "noopener");
+      ta.value = ""; post.disabled = true;
+    });
+    return box;
+  }
+  function placeBox(box) {
+    var last = verses[verses.length - 1];
+    last.insertAdjacentElement("afterend", box);
+  }
+
+  var placed = false;
   fetch(AGORAI + "/api/discussed?url=" + encodeURIComponent(PAGE))
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d) return;
+      placeBox(convoBox(d.chapter, (d.verses || []).length));
+      placed = true;
       if (d.chapter) {
         var btn = host.querySelector("[data-agorai-chapter]");
         if (btn) btn.textContent += " · " + d.chapter.posts;
+        // Near the top: a way down to the comments, for readers who'd rather read them first.
+        if (d.chapter.latest && d.chapter.latest.length && btn) {
+          var jump = el("a", "agv-jump", "Read the comments ↓");
+          jump.href = "#conversation";
+          btn.insertAdjacentElement("afterend", jump);
+        }
       }
       (d.verses || []).forEach(function (t) {
         var v = byNum[t.from];
@@ -156,5 +266,6 @@
         else anchor.appendChild(b);
       });
     })
-    .catch(function () { /* Agorai unreachable: the page simply shows no counts */ });
+    .catch(function () { /* Agorai unreachable: no counts, and the box below offers a fresh start */ })
+    .then(function () { if (!placed) placeBox(convoBox(null, 0)); });
 })();
