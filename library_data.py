@@ -45131,3 +45131,113 @@ _jn1_3_fix([
     ('1 Corintios 15:55 y 15:56 (todavía no en estas páginas) y Apocalipsis 9:10.',
      '<a href="1-corinthians-15.es.html#v55">1 Corintios 15:55</a> y <a href="1-corinthians-15.es.html#v56">15:56</a> y <a href="revelation-9.es.html#v9-10">Apocalipsis 9:10</a>.'),
 ])
+
+# ---- Revelation 16 ------------------------------------------------------
+DICTIONARY.append(('helkos', 'helkos', 'ἕλκος', 'helkos',
+    'SORE, ULCER &mdash; an open wound or festering sore. &#9888; It stands in three verses of the New Testament: Lazarus at the rich man&rsquo;s gate, whose sores the dogs licked (<a href="luke-16.html#v16-21">Luke 16:21</a>), and the first and fifth bowls, &lsquo;a bad and evil sore&rsquo; on those who bore the beast&rsquo;s mark and the &lsquo;sores&rsquo; for which they blasphemed God (<a href="revelation-16.html#v16-2">Revelation 16:2</a>, <a href="revelation-16.html#v16-11">16:11</a>). The first bowl repeats the sixth plague of Egypt, the boils on man and beast (<a href="exodus-9.html#v9-10">Exodus 9:10</a>). KJV &lsquo;a noisome and grievous sore&rsquo;; NWT 1984 &lsquo;a hurtful and malignant ulcer.&rsquo;',
+    ('Luke', 16, 21)))
+DICTIONARY_ES['helkos'] = ('hélkos',
+    'LLAGA, ÚLCERA &mdash; una herida abierta o una llaga que supura. &#9888; Está en tres versículos del Nuevo Testamento: Lázaro a la puerta del rico, cuyas llagas lamían los perros (<a href="luke-16.es.html#v16-21">Lucas 16:21</a>), y la primera y la quinta copa, «una llaga mala y maligna» sobre los que llevaban la marca de la bestia y las «llagas» por las que blasfemaron contra Dios (<a href="revelation-16.es.html#v16-2">Apocalipsis 16:2</a>, <a href="revelation-16.es.html#v16-11">16:11</a>). La primera copa repite la sexta plaga de Egipto, las úlceras en el hombre y en la bestia (<a href="exodus-9.es.html#v9-10">Éxodo 9:10</a>). RV60 «una úlcera maligna y pestilente»; TNM 1987 «una úlcera perjudicial y maligna».')
+
+DICTIONARY.append(('batrachos', 'batrachos', 'βάτραχος', 'batrachos',
+    'FROG. &#9888; It stands in one verse of the New Testament: &lsquo;three unclean spirits like frogs&rsquo; coming out of the mouths of the dragon, the beast and the false prophet at the sixth bowl (<a href="revelation-16.html#v16-13">Revelation 16:13</a>). The frogs recall the second plague of Egypt, when &lsquo;the frogs came up and covered the land of Egypt&rsquo; (<a href="exodus-8.html#v8-2">Exodus 8:2</a>), an unclean animal that croaks without stopping. KJV &lsquo;three unclean spirits like frogs&rsquo;; NWT 1984 &lsquo;three unclean inspired expressions [that looked] like frogs.&rsquo;',
+    ('Revelation', 16, 13)))
+DICTIONARY_ES['batrachos'] = ('bátrachos',
+    'RANA. &#9888; Está en un solo versículo del Nuevo Testamento: «tres espíritus inmundos como ranas» que salen de la boca del dragón, de la bestia y del falso profeta en la sexta copa (<a href="revelation-16.es.html#v16-13">Apocalipsis 16:13</a>). Las ranas recuerdan la segunda plaga de Egipto, cuando «subieron las ranas y cubrieron la tierra de Egipto» (<a href="exodus-8.es.html#v8-2">Éxodo 8:2</a>), un animal impuro que croa sin parar. RV60 «tres espíritus inmundos a manera de ranas»; TNM 1987 «tres expresiones inspiradas inmundas [que se parecían] a ranas».')
+
+DICTIONARY.append(('harmagedon', 'Harmagedōn', 'Ἁρμαγεδών', 'Harmagedōn',
+    'HARMAGEDON, ARMAGEDDON &mdash; &lsquo;the place called in Hebrew Harmagedon&rsquo; where the spirits from the dragon, the beast and the false prophet gather the kings of the whole inhabited earth &lsquo;for the war of the great day of God the Almighty&rsquo; (<a href="revelation-16.html#v16-16">Revelation 16:16</a>). &#9888; It stands only there. The usual reading takes it as <em>har M&#277;giddo</em>, &lsquo;mountain of Megiddo,&rsquo; the city by whose waters the kings of Canaan fought (<a href="judges-5.html#v19">Judges 5:19</a>) (<a href="encyclopedia.html#megiddo">encyclopedia</a>); but Megiddo is a mound in a plain, not a mountain, and other readings are offered, among them <em>har mo&lsquo;ed</em>, &lsquo;the mount of assembly,&rsquo; Isaiah 14:13 (not yet on these pages). The critical Greek writes it with an opening <em>H</em>; the Latin and the older printed Greek do not, whence the English &lsquo;Armageddon.&rsquo; ASV &lsquo;Har-magedon&rsquo;; KJV &lsquo;Armageddon.&rsquo;',
+    ('Revelation', 16, 16)))
+DICTIONARY_ES['harmagedon'] = ('Harmagedṓn',
+    'ARMAGEDÓN, HARMAGEDÓN &mdash; «el lugar que en hebreo se llama Armagedón», donde los espíritus que salen del dragón, de la bestia y del falso profeta reúnen a los reyes de toda la tierra habitada «para la guerra del gran día de Dios el Todopoderoso» (<a href="revelation-16.es.html#v16-16">Apocalipsis 16:16</a>). &#9888; Está solo allí. La lectura usual lo toma como <em>har Meguidó</em>, «monte de Meguido», la ciudad junto a cuyas aguas pelearon los reyes de Canaán (<a href="judges-5.es.html#v19">Jueces 5:19</a>) (<a href="enciclopedia.html#megiddo">enciclopedia</a>); pero Meguido es un montículo en una llanura, no un monte, y se proponen otras lecturas, entre ellas <em>har mo‘ed</em>, «el monte de la asamblea», Isaías 14:13 (todavía no en estas páginas). El griego crítico lo escribe con <em>H</em> inicial; el latín y el griego impreso antiguo no, de donde «Armagedón». RV60 «Armagedón»; TNM 1987 «Har–Magedón».')
+
+DICTIONARY.append(('chalaza', 'chalaza', 'χάλαζα', 'chalaza',
+    'HAIL. &#9888; It stands in three verses of the New Testament, all in Revelation: the first trumpet&rsquo;s &lsquo;hail and fire, mixed with blood&rsquo; (<a href="revelation-8.html#v8-7">Revelation 8:7</a>), the &lsquo;great hail&rsquo; when the temple in heaven is opened (<a href="revelation-11.html#v11-19">11:19</a>), and the seventh bowl&rsquo;s &lsquo;great hail, as heavy as a talent&rsquo; (<a href="revelation-16.html#v16-21">16:21</a>), the word <em>talantiaios</em> standing only there. Behind them is the seventh plague of Egypt, &lsquo;hail, and fire flashing in the midst of the hail&rsquo; (<a href="exodus-9.html#v9-24">Exodus 9:24</a>), and the great stones Jehovah threw from the heavens at Beth-horon (<a href="joshua-10.html#v10-11">Joshua 10:11</a>). KJV &lsquo;every stone about the weight of a talent&rsquo;; NIV &lsquo;each weighing about a hundred pounds.&rsquo;',
+    ('Revelation', 8, 7)))
+DICTIONARY_ES['chalaza'] = ('chálaza',
+    'GRANIZO. &#9888; Está en tres versículos del Nuevo Testamento, todos en el Apocalipsis: el «granizo y fuego mezclados con sangre» de la primera trompeta (<a href="revelation-8.es.html#v8-7">Apocalipsis 8:7</a>), el «granizo grande» cuando se abre el templo del cielo (<a href="revelation-11.es.html#v11-19">11:19</a>), y el «gran granizo, del peso de un talento» de la séptima copa (<a href="revelation-16.es.html#v16-21">16:21</a>), donde la palabra <em>talantiaîos</em> está sola. Detrás está la séptima plaga de Egipto, «granizo, y fuego que llameaba en medio del granizo» (<a href="exodus-9.es.html#v9-24">Éxodo 9:24</a>), y las grandes piedras que Jehová arrojó desde los cielos en Bet-horón (<a href="joshua-10.es.html#v10-11">Josué 10:11</a>). RV60 «un enorme granizo como del peso de un talento»; NVI «de casi cuarenta y cinco kilogramos cada uno».')
+
+_jn1_3_fix([
+    ('and 16:27 (not yet on these pages), where a jailer draws one to kill himself.',
+     'and <a href="acts-16.html#v16-27">16:27</a>, where a jailer draws one to kill himself.'),
+    ('y 16:27 (todavía no en estas páginas), donde un carcelero saca una para matarse.',
+     'y <a href="acts-16.es.html#v16-27">16:27</a>, donde un carcelero saca una para matarse.'),
+    ('<a href="revelation-12.html#v12-9">12:9</a> and 16:14 (Revelation 16 not yet on these pages).',
+     '<a href="revelation-12.html#v12-9">12:9</a> and <a href="revelation-16.html#v16-14">16:14</a>.'),
+    ('<a href="revelation-12.es.html#v12-9">12:9</a> y 16:14 (Apocalipsis 16 todavía no en estas páginas).',
+     '<a href="revelation-12.es.html#v12-9">12:9</a> y <a href="revelation-16.es.html#v16-14">16:14</a>.'),
+    ('blaspheme God &lsquo;from their pains&rsquo; (not yet on these pages);',
+     'blaspheme God &lsquo;from their pains&rsquo; (<a href="revelation-16.html#v16-10">Revelation 16:10</a>, <a href="revelation-16.html#v16-11">16:11</a>);'),
+    ('blasfema contra Dios «por sus dolores» (todavía no en estas páginas);',
+     'blasfema contra Dios «por sus dolores» (<a href="revelation-16.es.html#v16-10">Apocalipsis 16:10</a>, <a href="revelation-16.es.html#v16-11">16:11</a>);'),
+    ('Revelation 16:13, 19:20 and 20:10 (not yet on these pages).',
+     '<a href="revelation-16.html#v16-13">Revelation 16:13</a>, and 19:20 and 20:10 (the last two not yet on these pages).'),
+    ('Apocalipsis 16:13, 19:20 y 20:10 (todavía no en estas páginas).',
+     '<a href="revelation-16.es.html#v16-13">Apocalipsis 16:13</a>, y 19:20 y 20:10 (los dos últimos todavía no en estas páginas).'),
+    ('and four in chapters 16&ndash;19 (not yet on these pages).',
+     'two in chapter 16, the seven bowls &lsquo;of the fury of God&rsquo; and &lsquo;the cup of the wine of the fury of his wrath&rsquo; (<a href="revelation-16.html#v16-1">16:1</a>, <a href="revelation-16.html#v16-19">16:19</a>), and two in chapters 18 and 19 (not yet on these pages).'),
+    ('y cuatro en los capítulos 16&ndash;19 (todavía no en estas páginas).',
+     'dos en el capítulo 16, las siete copas «del furor de Dios» y «la copa del vino del furor de su ira» (<a href="revelation-16.es.html#v16-1">16:1</a>, <a href="revelation-16.es.html#v16-19">16:19</a>), y dos en los capítulos 18 y 19 (todavía no en estas páginas).'),
+    ('which are poured out one by one in chapter 16, and the angel &lsquo;who had the seven bowls&rsquo; at 17:1 and 21:9 (all not yet on these pages).',
+     'which are poured out one by one in <a href="revelation-16.html">chapter 16</a>; and one of the angels &lsquo;who had the seven bowls&rsquo; at 17:1 (not yet on these pages) and <a href="revelation-21.html#v21-9">21:9</a>.'),
+    ('que se derraman una a una en el capítulo 16, y el ángel «que tenía las siete copas» en 17:1 y 21:9 (todos todavía no en estas páginas).',
+     'que se derraman una a una en el <a href="revelation-16.es.html">capítulo 16</a>; y uno de los ángeles «que tenían las siete copas» en 17:1 (todavía no en estas páginas) y <a href="revelation-21.es.html#v21-9">21:9</a>.'),
+    ("'a place called in Hebrew Harmagedon' (Revelation 16:16, not yet on these pages)",
+     "'a place called in Hebrew Harmagedon' (<a href=\"revelation-16.html#v16-16\">Revelation 16:16</a>)"),
+    ('«un lugar llamado en hebreo Armagedón» (Apocalipsis 16:16, todavía no en estas páginas)',
+     '«un lugar llamado en hebreo Armagedón» (<a href="revelation-16.es.html#v16-16">Apocalipsis 16:16</a>)'),
+])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"megiddo": [("Revelation", 16, 16)], "euphrates": [("Revelation", 16, 12)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Revelation", 15, 7), ("Revelation", 16, 1), "the seven bowls"),
+    (("Exodus", 9, 10), ("Revelation", 16, 2), "boils"),
+    (("Luke", 16, 21), ("Revelation", 16, 2), "sores"),
+    (("Exodus", 7, 20), ("Revelation", 16, 3), "water turned to blood"),
+    (("Revelation", 8, 9), ("Revelation", 16, 3), "the sea struck"),
+    (("Revelation", 11, 17), ("Revelation", 16, 5), "who is and who was"),
+    (("Revelation", 15, 4), ("Revelation", 16, 5), "the Holy One"),
+    (("Revelation", 6, 10), ("Revelation", 16, 6), "avenge our blood"),
+    (("Revelation", 6, 9), ("Revelation", 16, 7), "the altar"),
+    (("Revelation", 7, 16), ("Revelation", 16, 8), "scorching heat"),
+    (("Revelation", 9, 21), ("Revelation", 16, 9), "they did not repent"),
+    (("Revelation", 13, 2), ("Revelation", 16, 10), "the throne of the beast"),
+    (("Exodus", 10, 22), ("Revelation", 16, 10), "darkness"),
+    (("Revelation", 9, 14), ("Revelation", 16, 12), "the great river Euphrates"),
+    (("Exodus", 8, 2), ("Revelation", 16, 13), "frogs"),
+    (("Revelation", 13, 13), ("Revelation", 16, 13), "the false prophet's signs"),
+    (("Revelation", 6, 17), ("Revelation", 16, 14), "the great day"),
+    (("Revelation", 3, 3), ("Revelation", 16, 15), "like a thief"),
+    (("Matthew", 24, 43), ("Revelation", 16, 15), "the thief and the watch"),
+    (("Revelation", 3, 18), ("Revelation", 16, 15), "the shame of nakedness"),
+    (("Judges", 5, 19), ("Revelation", 16, 16), "the waters of Megiddo"),
+    (("Revelation", 21, 6), ("Revelation", 16, 17), "It has happened"),
+    (("Exodus", 9, 24), ("Revelation", 16, 18), "such as had not been"),
+    (("Revelation", 11, 19), ("Revelation", 16, 18), "lightning, thunder, earthquake, hail"),
+    (("Revelation", 14, 10), ("Revelation", 16, 19), "the cup of his wrath"),
+    (("Revelation", 6, 14), ("Revelation", 16, 20), "mountains and islands"),
+    (("Joshua", 10, 11), ("Revelation", 16, 21), "great stones from heaven"),
+])
+
+CHAPTER_ART["rev16"] = [dict(
+    file="royal-15dii-frog-spirits.jpg",
+    title="Three Unclean Spirits like Frogs",   title_es="Tres espíritus inmundos como ranas",
+    artist="Unknown English illuminator",
+    year="c. 1310",
+    location="British Library, Royal MS 15 D. II, f. 174",
+    location_es="Biblioteca Británica, Royal MS 15 D. II, f. 174",
+    alt="A manuscript painting on a blue patterned ground: on the left, John with a halo and a book raises his hand; beside him a man in a red robe and a tall tiered gold cap has a pale frog-like creature coming from his mouth; in the middle a winged orange-headed dragon with a second head on its tail has another in its mouth; on the right a shaggy grey beast with a green head has a third.",
+    note="&#9888; An English illuminator&rsquo;s sixth bowl, beside <a href=\"revelation-16.html#v16-13\">verse 13</a>, &lsquo;three unclean spirits like frogs&rsquo; coming out of the mouths of the false prophet, the dragon and the beast, with John watching. The painter gives the false prophet a human body and a tall gold cap; the frogs look more like insects than frogs.",
+    note_es="&#9888; La sexta copa según un iluminador inglés, junto al <a href=\"revelation-16.es.html#v16-13\">versículo 13</a>, «tres espíritus inmundos como ranas» que salen de la boca del falso profeta, del dragón y de la bestia, mientras Juan mira. El pintor da al falso profeta un cuerpo humano y un alto gorro de oro; las ranas parecen más insectos que ranas.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Royal_MS_15_D._II._fo._174_Dragon_Beast_and_False_Pophet.jpg",
+)]
+
+CHRON_CHAPTERS["rev16"] = dict(era='apostolic',
+    when="The seven bowls of the fury of God poured out in the order of the trumpets, several of them the plagues of Egypt again: sores, sea and rivers turned to blood, a scorching sun, darkness on the beast's throne, the Euphrates dried up for the kings from the east; three frog-like spirits gathering the kings to the place called Harmagedon; 'Look, I am coming like a thief'; and at the seventh bowl 'It has happened,' the greatest earthquake, Babylon remembered, and hail the weight of a talent.",
+    clock="c. AD 95, the second half of the bowls cycle (chapters 15-16); the people blaspheme three times and twice do not repent, where at 11:13 the survivors gave glory to God.")
