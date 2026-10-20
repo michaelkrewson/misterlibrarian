@@ -46017,3 +46017,102 @@ _s = DICTIONARY_ES["pesel"]
 _a = "(Jueces 17:3, 17:4, 18:14; ninguno todavía en estas páginas)"
 assert _s[1].count(_a) == 1
 DICTIONARY_ES["pesel"] = (_s[0], _s[1].replace(_a, '(<a href="judges-17.es.html#v17-3">Jueces 17:3</a> y <a href="judges-17.es.html#v17-4">17:4</a>, ya en estas páginas; 18:14, todavía no)'))
+
+# --- Judges 18 ---
+ENCYCLOPEDIA.append(dict(slug="gershom", name="Gershom (son of Moses)", kind="person", aliases=["Gershom"],
+    refs=[("Exodus", 2, 22), ("Exodus", 18, 3), ("Judges", 18, 30)], videos=[],
+    desc="""Moses&rsquo; firstborn by Zipporah, named for his father&rsquo;s exile: &ldquo;I have been a resident alien in a foreign land&rdquo; (<a href="exodus-2.html#v2-22">Exodus 2:22</a> and <a href="exodus-18.html#v18-3">18:3</a>, now on these pages). His name comes back in the last chapters of Judges, where the priest of the Danites&rsquo; image is &ldquo;Jonathan son of Gershom, son of Ma<sup>n</sup>asseh&rdquo; (<a href="judges-18.html#v18-30">Judges 18:30</a>, now on these pages): the Masoretic text hangs the <em>nun</em> of &ldquo;Manasseh&rdquo; above the line, and without it the letters spell Moses. The Talmud (Bava Batra 109b) and Rashi read the verse as naming Moses&rsquo; grandson. ⚠ A Levite named Gershom, Levi&rsquo;s son (Genesis 46:11, where the name is spelled Gershon), is a different man."""))
+ENCYCLOPEDIA_ES["gershom"] = ("Gersón (hijo de Moisés)",
+    """El primogénito de Moisés y Séfora, llamado por el exilio de su padre: «He sido residente extranjero en tierra extraña» (Éxodo 2:22, ya en estas páginas, todavía no en español, y <a href="exodus-18.es.html#v18-3">18:3</a>, ya en estas páginas). Su nombre vuelve en los últimos capítulos de Jueces, donde el sacerdote de la imagen de los danitas es «Jonatán hijo de Gersón, hijo de Ma<sup>n</sup>asés» (<a href="judges-18.es.html#v18-30">Jueces 18:30</a>, ya en estas páginas): el texto masorético cuelga la <em>nun</em> de «Manasés» sobre la línea, y sin ella las letras dicen Moisés. El Talmud (Bava Batra 109b) y Rashi leen el versículo como el nombre del nieto de Moisés. ⚠ Un levita llamado Gersón, hijo de Leví (Génesis 46:11), es otro hombre.""")
+
+ENCYCLOPEDIA.append(dict(slug="jonathan-son-of-gershom", name="Jonathan son of Gershom", kind="person", aliases=[],
+    refs=[("Judges", 18, 30)], videos=[],
+    desc="""The priest of the Danites&rsquo; image at Dan: &ldquo;Jonathan son of Gershom, son of Ma<sup>n</sup>asseh, he and his sons were priests to the tribe of the Danites until the day of the exile of the land&rdquo; (<a href="judges-18.html#v18-30">Judges 18:30</a>, now on these pages). The raised <em>nun</em> turns <em>Mosheh</em>, Moses, into Manasseh; the KJV and the B Greek text read &ldquo;son of Manasseh&rdquo;, the ASV, the NIV, the NWT and the A Greek text &ldquo;son of Moses&rdquo;. The book never names the young Levite whom Micah hired and the Danites carried off (<a href="judges-17.html#v17-7">Judges 17:7</a>, now on these pages); the Talmud (Bava Batra 109b) reads him and Jonathan as one man. Not the same as <a href="encyclopedia.html#jonathan">Jonathan</a> son of Saul."""))
+ENCYCLOPEDIA_ES["jonathan-son-of-gershom"] = ("Jonatán hijo de Gersón",
+    """El sacerdote de la imagen de los danitas en Dan: «Jonatán hijo de Gersón, hijo de Ma<sup>n</sup>asés, él y sus hijos fueron sacerdotes de la tribu de los danitas hasta el día del exilio de la tierra» (<a href="judges-18.es.html#v18-30">Jueces 18:30</a>, ya en estas páginas). La <em>nun</em> en alto convierte <em>Mosheh</em>, Moisés, en Manasés; la RV 1909 y el texto griego B leen «hijo de Manasés», la RV60, la TNM y el texto griego A «hijo de Moisés». El libro nunca nombra al joven levita que Miqueas contrató y los danitas se llevaron (<a href="judges-17.es.html#v17-7">Jueces 17:7</a>, ya en estas páginas); el Talmud (Bava Batra 109b) los lee como un mismo hombre. No es Jonatán hijo de Saúl.""")
+
+ENCYCLOPEDIA.append(dict(slug="beth-rehob", name="Beth-rehob", kind="place", aliases=["Beth-rehob"],
+    refs=[("Judges", 18, 28)], videos=[],
+    coords=(33.2, 35.62, 0.6), approx=True,
+    modern="Unlocated; in or near the upper Jordan valley below Mount Hermon (reported)",
+    desc="""The place whose valley held Laish, the city the Danites burned and rebuilt as Dan (<a href="judges-18.html#v18-28">Judges 18:28</a>, now on these pages). It is probably the Rehob that marked the northern reach of Moses&rsquo; spies, &ldquo;as far as Rehob, at Lebo-hamath&rdquo; (<a href="numbers-13.html#v13-21">Numbers 13:21</a>, now on these pages), and later an Aramean town that sent soldiers against David (2 Samuel 10:6, not yet on these pages). Its site is not known; the map point is a guess near Tel Dan."""))
+ENCYCLOPEDIA_ES["beth-rehob"] = ("Bet-rehob",
+    """El lugar en cuyo valle estaba Lais, la ciudad que los danitas quemaron y reedificaron como Dan (<a href="judges-18.es.html#v18-28">Jueces 18:28</a>, ya en estas páginas). Probablemente es el Rehob que marcó el alcance más al norte de los espías de Moisés, «hasta Rehob, en Lebo-hamat» (<a href="numbers-13.es.html#v13-21">Números 13:21</a>, ya en estas páginas), y después una ciudad aramea que envió soldados contra David (2 Samuel 10:6, todavía no en estas páginas). Su emplazamiento no se conoce; el punto del mapa es una estimación cerca de Tel Dan.""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "leshem":
+        _a = "<em>Laish</em> in Judges 18:7, 14, 27 and 29 (not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '<em>Laish</em> in <a href="judges-18.html#v18-7">Judges 18:7</a>, 14, 27 and 29 (now on these pages)') + ' ⭐ In Judges the spies find &ldquo;a people quiet and secure&rdquo;, far from Sidon, and the Danites burn the city and set up Micah&rsquo;s image there with Jonathan son of Gershom as its priest. <em>Layish</em> is also a poetic word for a lion, and Moses had said, &ldquo;Dan is a lion&rsquo;s cub&rdquo; (<a href="deuteronomy-33.html#v33-22">Deuteronomy 33:22</a>, now on these pages).'
+        _e["refs"].append(("Judges", 18, 7))
+    elif _e["slug"] == "mahaneh-dan":
+        _a = "&#9888; Judges 18:12 (not yet on these pages) gives the name"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '&#9888; <a href="judges-18.html#v18-12">Judges 18:12</a> (now on these pages) gives the name')
+        _e["refs"].append(("Judges", 18, 12))
+    elif _e["slug"] == "dan-city":
+        _a = "(Judges 18:29, not yet on these pages;"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="judges-18.html#v18-29">Judges 18:29</a>, now on these pages;')
+    elif _e["slug"] == "kiriath-jearim":
+        _e["desc"] += ' ⭐ The Danites marching north camp there, and the place behind it is called Mahaneh-dan &ldquo;to this day&rdquo; (<a href="judges-18.html#v18-12">Judges 18:12</a>, now on these pages).'
+        _e["refs"].append(("Judges", 18, 12))
+    elif _e["slug"] == "micah-of-ephraim":
+        _a = "In Judges 18 (not yet on these pages) the Danites carry off his image and his priest."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'In <a href="judges-18.html#v18-14">Judges 18</a> (now on these pages) the Danites carry off his image and his priest; he follows them, cries &ldquo;My gods that I made you have taken&rdquo;, and turns back when he sees they are stronger than he.')
+        _e["refs"].append(("Judges", 18, 2))
+for _k, _a, _b in [
+    ("leshem", "<em>Lais</em> en Jueces 18:7, 14, 27 y 29 (todavía no en estas páginas)", '<em>Lais</em> en <a href="judges-18.es.html#v18-7">Jueces 18:7</a>, 14, 27 y 29 (ya en estas páginas)'),
+    ("mahaneh-dan", "&#9888; Jueces 18:12 (todavía no en estas páginas) da el nombre", '&#9888; <a href="judges-18.es.html#v18-12">Jueces 18:12</a> (ya en estas páginas) da el nombre'),
+    ("dan-city", "(Jueces 18:29, todavía no en estas páginas;", '(<a href="judges-18.es.html#v18-29">Jueces 18:29</a>, ya en estas páginas;'),
+    ("micah-of-ephraim", "En Jueces 18 (todavía no en estas páginas) los danitas se llevan su imagen y su sacerdote.", 'En <a href="judges-18.es.html#v18-14">Jueces 18</a> (ya en estas páginas) los danitas se llevan su imagen y su sacerdote; él los sigue, grita «Mis dioses que yo hice me los han quitado», y se vuelve cuando ve que son más fuertes que él.'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k][1]
+    assert _s.count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], _s.replace(_a, _b))
+ENCYCLOPEDIA_ES["leshem"] = (ENCYCLOPEDIA_ES["leshem"][0], ENCYCLOPEDIA_ES["leshem"][1] + ' ⭐ En Jueces los espías hallan «un pueblo tranquilo y confiado», lejos de Sidón, y los danitas queman la ciudad y ponen allí la imagen de Miqueas con Jonatán hijo de Gersón como sacerdote. <em>Layish</em> es también una palabra poética para el león, y Moisés había dicho: «Dan es cachorro de león» (<a href="deuteronomy-33.es.html#v33-22">Deuteronomio 33:22</a>, ya en estas páginas).')
+ENCYCLOPEDIA_ES["kiriath-jearim"] = (ENCYCLOPEDIA_ES["kiriath-jearim"][0], ENCYCLOPEDIA_ES["kiriath-jearim"][1] + ' ⭐ Los danitas que marchan al norte acampan allí, y el lugar detrás de ella se llama Mahané-dan «hasta hoy» (<a href="judges-18.es.html#v18-12">Jueces 18:12</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["judg18"] = dict(era="exodus",
+    when="The tribe of Dan, still without an inheritance it holds, sends five men of valour from Zorah and Eshtaol to spy out the land. They lodge at Micah's house, recognize the voice of the young Levite, and ask him to inquire of God; he sends them off: 'Go in peace.' At Laish, far from Sidon, they find a people quiet and secure, and report that the land is very good. Six hundred armed men march north, camping at Mahaneh-dan behind Kiriath-jearim, and at Micah's house they take the carved image, the ephod, the teraphim and the cast image, and the priest, who goes gladly to serve a tribe instead of one man. Micah and his neighbours pursue and turn back. The Danites strike Laish with the sword, burn it, rebuild it as Dan, and set up the image, with Jonathan son of Gershom, son of Ma(n)asseh, and his sons as priests until the exile of the land, all the days the house of God was at Shiloh.",
+    clock="Undated within the period of the judges; the Danite migration is told again, briefly, at Joshua 19:47. Judges 18:30 says the priesthood at Dan lasted 'until the day of the exile of the land', which the verse does not date (Rashi: Sennacherib's time).")
+
+CHAPTER_ART["judg18"] = [dict(
+    file="tel-dan-canaanite-gate.jpg",
+    title="The Canaanite Gate at Tel Dan",
+    title_es="La puerta cananea de Tel Dan",
+    artist="Photograph by Ani Nimi",
+    year="2011",
+    location="Tel Dan, northern Israel, the mound of Laish/Dan; photograph on Wikimedia Commons",
+    location_es="Tel Dan, norte de Israel, el montículo de Lais/Dan; fotografía en Wikimedia Commons",
+    alt="Photograph: under a large arched canopy, a reconstructed mud-brick city gate with a rounded arch and a small wooden door stands above a path of rounded stones climbing toward it.",
+    note="The arched mud-brick gate of the city the Danites took, excavated at Tel Dan and usually dated to the Middle Bronze Age, centuries before the Danites came (reported). It was the gate of Laish, the city &ldquo;quiet and secure&rdquo; of verses 7 and 27, long before the chapter gives the place its new name.",
+    note_es="La puerta de adobe con arco de la ciudad que tomaron los danitas, excavada en Tel Dan y fechada por lo general en la Edad del Bronce Medio, siglos antes de que llegaran los danitas (según se informa). Era la puerta de Lais, la ciudad «tranquila y confiada» de los versículos 7 y 27, mucho antes de que el capítulo le dé su nuevo nombre.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Tel_Dan_Canaanite_Gate.JPG",
+)]
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "dan":
+        _a = "a story told in Judges 18 (not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'a story told in <a href="judges-18.html#v18-1">Judges 18</a> (now on these pages)')
+    elif _e["slug"] == "zorah":
+        _a = "(18:2, 8, 11; Judges 18 not yet on these pages)."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="judges-18.html#v18-2">18:2</a>, 8, 11, now on these pages).')
+        _e["refs"].append(("Judges", 18, 2))
+    elif _e["slug"] == "eshtaol":
+        _a = "and 18:2, 8 and 11, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'and <a href="judges-18.html#v18-2">18:2</a>, 8 and 11, now on these pages)')
+        _e["refs"].append(("Judges", 18, 2))
+for _k, _a, _b in [
+    ("dan", "una historia contada en Jueces 18 (todavía no en estas páginas)", 'una historia contada en <a href="judges-18.es.html#v18-1">Jueces 18</a> (ya en estas páginas)'),
+    ("zorah", "(18:2, 8, 11; Jueces 18 todavía no en estas páginas).", '(<a href="judges-18.es.html#v18-2">18:2</a>, 8, 11, ya en estas páginas).'),
+    ("eshtaol", "y 18:2, 8 y 11, todavía no en estas páginas)", 'y <a href="judges-18.es.html#v18-2">18:2</a>, 8 y 11, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k][1]
+    assert _s.count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], _s.replace(_a, _b))
