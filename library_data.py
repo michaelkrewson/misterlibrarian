@@ -44974,3 +44974,98 @@ CHAPTER_ART["1john5"] = [dict(
 CHRON_CHAPTERS["1john5"] = dict(era='apostolic',
     when="The letter's last movement: 'Everyone who believes that Jesus is the Christ has been born of God'; 'his commandments are not heavy'; 'the victory that has conquered the world, our faith'; the one who came through water and blood, and the three who testify; the testimony of God and eternal life in the Son; 'sin leading to death'; and 'the true God and eternal life,' with a last word: 'Little children, guard yourselves from idols.'",
     clock="c. AD 85–95 on the traditional reading; the date is debated (see chapter 1).")
+
+# ---- Revelation 14 ------------------------------------------------------
+DICTIONARY.append(('thymos', 'thymos', 'θυμός', 'thymos',
+    'FURY &mdash; hot anger, passion that boils up, beside <a href="dictionary.html#orge">org&#275;</a>, the settled &lsquo;wrath&rsquo;; Paul lists them together, &lsquo;anger, fury, malice&rsquo; (<a href="colossians-3.html#v3-8">Colossians 3:8</a>). The synagogue at Nazareth &lsquo;were filled with rage&rsquo; (<a href="luke-4.html#v4-28">Luke 4:28</a>). &#9888; It stands in eighteen verses of the New Testament, and ten are in Revelation: the devil come down &lsquo;having great fury&rsquo; (<a href="revelation-12.html#v12-12">Revelation 12:12</a>), then three in chapter 14, &lsquo;the wine of the fury of her sexual immorality&rsquo; (<a href="revelation-14.html#v14-8">14:8</a>), &lsquo;the wine of the fury of God&rsquo; (<a href="revelation-14.html#v14-10">14:10</a>) and &lsquo;the great winepress of the fury of God&rsquo; (<a href="revelation-14.html#v14-19">14:19</a>), and six more in chapters 15&ndash;19 (not yet on these pages). KJV &lsquo;wrath&rsquo;; NWT 1984 &lsquo;anger.&rsquo;',
+    ('Revelation', 12, 12)))
+DICTIONARY_ES['thymos'] = ('thymós',
+    'FUROR &mdash; la ira caliente, la pasión que hierve, junto a <a href="diccionario.html#orge">org&#275;́</a>, la «ira» asentada; Pablo las nombra juntas, «ira, furor, malicia» (<a href="colossians-3.es.html#v3-8">Colosenses 3:8</a>). Los de la sinagoga de Nazaret «se llenaron de furor» (<a href="luke-4.es.html#v4-28">Lucas 4:28</a>). &#9888; Está en dieciocho versículos del Nuevo Testamento, y diez están en el Apocalipsis: el diablo que ha descendido «con gran furor» (<a href="revelation-12.es.html#v12-12">Apocalipsis 12:12</a>), luego tres en el capítulo 14, «el vino del furor de su inmoralidad sexual» (<a href="revelation-14.es.html#v14-8">14:8</a>), «el vino del furor de Dios» (<a href="revelation-14.es.html#v14-10">14:10</a>) y «el gran lagar del furor de Dios» (<a href="revelation-14.es.html#v14-19">14:19</a>), y seis más en los capítulos 15&ndash;19 (todavía no en estas páginas). RV60 «furor» e «ira»; TNM 1987 «cólera».')
+
+DICTIONARY.append(('akratos', 'akratos', 'ἄκρατος', 'akratos',
+    'UNMIXED &mdash; wine at full strength, not cut with water, from <em>a-</em>, &lsquo;not,&rsquo; and <em>kerannymi</em>, &lsquo;to mix.&rsquo; &#9888; It stands in one verse of the New Testament, where it meets its own verb: &lsquo;the wine of the fury of God, mixed unmixed in the cup of his wrath&rsquo; (<a href="revelation-14.html#v14-10">Revelation 14:10</a>), the cup mixed for drinking with nothing to soften it. KJV &lsquo;poured out without mixture&rsquo;; ASV &lsquo;prepared unmixed&rsquo;; NIV &lsquo;poured full strength.&rsquo;',
+    ('Revelation', 14, 10)))
+DICTIONARY_ES['akratos'] = ('ákratos',
+    'PURO, SIN MEZCLA &mdash; el vino con toda su fuerza, sin cortar con agua, de <em>a-</em>, «no», y <em>keránnymi</em>, «mezclar». &#9888; Está en un solo versículo del Nuevo Testamento, donde se encuentra con su propio verbo: «el vino del furor de Dios, mezclado puro en la copa de su ira» (<a href="revelation-14.es.html#v14-10">Apocalipsis 14:10</a>), la copa servida para beber sin nada que la suavice. RV60 «vaciado puro»; TNM 1987 «vertido sin diluir».')
+
+DICTIONARY.append(('mesouranema', 'mesouranēma', 'μεσουράνημα', 'mesouranēma',
+    'MIDHEAVEN &mdash; the highest point of the sky, where the sun stands at noon, from <em>mesos</em>, &lsquo;middle,&rsquo; and <em>ouranos</em>, &lsquo;heaven.&rsquo; &#9888; It stands in three verses of the New Testament, all in Revelation, each time for a creature that cries aloud so that all the earth can hear: the eagle &lsquo;flying in midheaven&rsquo; with its three woes (<a href="revelation-8.html#v8-13">Revelation 8:13</a>), the angel &lsquo;flying in midheaven, having eternal good news&rsquo; (<a href="revelation-14.html#v14-6">Revelation 14:6</a>), and the birds &lsquo;that fly in midheaven&rsquo; at Revelation 19:17 (not yet on these pages). KJV &lsquo;in the midst of heaven&rsquo;; NIV &lsquo;in midair.&rsquo;',
+    ('Revelation', 8, 13)))
+DICTIONARY_ES['mesouranema'] = ('mesouránema',
+    'MEDIO DEL CIELO &mdash; el punto más alto del cielo, donde está el sol a mediodía, de <em>mésos</em>, «medio», y <em>ouranós</em>, «cielo». &#9888; Está en tres versículos del Nuevo Testamento, todos en el Apocalipsis, cada vez de una criatura que clama para que toda la tierra la oiga: el águila «que volaba en medio del cielo» con sus tres ayes (<a href="revelation-8.es.html#v8-13">Apocalipsis 8:13</a>), el ángel «que volaba en medio del cielo, que tenía una buena noticia eterna» (<a href="revelation-14.es.html#v14-6">Apocalipsis 14:6</a>), y las aves que vuelan en medio del cielo en Apocalipsis 19:17 (todavía no en estas páginas). RV60 «en medio del cielo».')
+
+DICTIONARY.append(('drepanon', 'drepanon', 'δρέπανον', 'drepanon',
+    'SICKLE &mdash; the curved blade for cutting grain or pruning vines. &#9888; It stands in seven verses of the New Testament: once in a parable, &lsquo;immediately he sends in the sickle, because the harvest has come&rsquo; (<a href="mark-4.html#v4-29">Mark 4:29</a>), and six times in <a href="revelation-14.html#v14-14">Revelation 14:14</a>&ndash;19, in the hand of one like a son of man for the grain and of an angel for the grapes. The command &lsquo;Send your sickle&rsquo; is Joel&rsquo;s, Joel 3:13 (not yet on these pages). KJV &lsquo;Thrust in thy sickle&rsquo;; ASV &lsquo;Send forth thy sickle.&rsquo;',
+    ('Mark', 4, 29)))
+DICTIONARY_ES['drepanon'] = ('drépanon',
+    'HOZ &mdash; la hoja curva para cortar el grano o podar la vid. &#9888; Está en siete versículos del Nuevo Testamento: una vez en una parábola, «enseguida envía la hoz, porque ha llegado la siega» (<a href="mark-4.es.html#v4-29">Marcos 4:29</a>), y seis veces en <a href="revelation-14.es.html#v14-14">Apocalipsis 14:14</a>&ndash;19, en la mano de uno semejante a un hijo de hombre para el grano y de un ángel para la uva. La orden «Envía tu hoz» es de Joel, Joel 3:13 (todavía no en estas páginas). RV60 «Mete tu hoz».')
+
+DICTIONARY.append(('lenos', 'lēnos', 'ληνός', 'lēnos',
+    'WINEPRESS &mdash; the trough, often cut in rock, where grapes were trodden underfoot and the juice ran off into a vat below. &#9888; It stands in four verses of the New Testament: the householder who &lsquo;dug a winepress&rsquo; in his vineyard (<a href="matthew-21.html#v21-33">Matthew 21:33</a>); &lsquo;the great winepress of the fury of God&rsquo; and the winepress &lsquo;trodden outside the city&rsquo; (<a href="revelation-14.html#v14-19">Revelation 14:19</a>, <a href="revelation-14.html#v14-20">14:20</a>); and Revelation 19:15 (not yet on these pages). The picture is Isaiah&rsquo;s, &lsquo;I have trodden the winepress alone,&rsquo; Isaiah 63:3 (not yet on these pages). KJV &lsquo;winepress&rsquo;; Douay at Revelation 14:19 &lsquo;the great press.&rsquo;',
+    ('Matthew', 21, 33)))
+DICTIONARY_ES['lenos'] = ('l&#275;nós',
+    'LAGAR &mdash; la pila, a menudo tallada en la roca, donde se pisaba la uva y el mosto corría a una tina debajo. &#9888; Está en cuatro versículos del Nuevo Testamento: el dueño de casa que «cavó en ella un lagar» (<a href="matthew-21.es.html#v21-33">Mateo 21:33</a>); «el gran lagar del furor de Dios» y el lagar «pisado fuera de la ciudad» (<a href="revelation-14.es.html#v14-19">Apocalipsis 14:19</a>, <a href="revelation-14.es.html#v14-20">14:20</a>); y Apocalipsis 19:15 (todavía no en estas páginas). La imagen es de Isaías, «He pisado yo solo el lagar», Isaías 63:3 (todavía no en estas páginas). RV60 «lagar».')
+
+_jn1_3_fix([
+    ('<a href="james-1.html#v18">James 1:18</a> and Revelation 14:4 (the last not yet on these pages).',
+     '<a href="james-1.html#v18">James 1:18</a> and <a href="revelation-14.html#v14-4">Revelation 14:4</a>.'),
+    ('<a href="james-1.es.html#v18">Santiago 1:18</a> y Apocalipsis 14:4 (este último todavía no en estas páginas).',
+     '<a href="james-1.es.html#v18">Santiago 1:18</a> y <a href="revelation-14.es.html#v14-4">Apocalipsis 14:4</a>.'),
+])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"babylon": [("Revelation", 14, 8)], "zion": [("Revelation", 14, 1)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("Revelation", 13, 16), ("Revelation", 14, 1), "the mark and the name on the forehead"),
+    (("Revelation", 7, 4), ("Revelation", 14, 1), "the 144,000"),
+    (("Revelation", 3, 12), ("Revelation", 14, 1), "the name written on them"),
+    (("Hebrews", 12, 22), ("Revelation", 14, 1), "Mount Zion"),
+    (("Revelation", 1, 15), ("Revelation", 14, 2), "the sound of many waters"),
+    (("Revelation", 5, 9), ("Revelation", 14, 3), "a new song, purchased"),
+    (("Revelation", 3, 4), ("Revelation", 14, 4), "not soiled"),
+    (("2 Corinthians", 11, 2), ("Revelation", 14, 4), "a pure virgin"),
+    (("James", 1, 18), ("Revelation", 14, 4), "firstfruits"),
+    (("Isaiah", 53, 9), ("Revelation", 14, 5), "no deceit in his mouth"),
+    (("1 Peter", 2, 22), ("Revelation", 14, 5), "no deceit found"),
+    (("Revelation", 8, 13), ("Revelation", 14, 6), "flying in midheaven"),
+    (("Mark", 1, 1), ("Revelation", 14, 6), "the good news"),
+    (("Exodus", 20, 11), ("Revelation", 14, 7), "who made heaven, earth and sea"),
+    (("Acts", 14, 15), ("Revelation", 14, 7), "the God who made heaven and earth"),
+    (("1 Peter", 5, 13), ("Revelation", 14, 8), "Babylon"),
+    (("Jeremiah", 25, 15), ("Revelation", 14, 8), "the cup of the wine of fury"),
+    (("Revelation", 13, 17), ("Revelation", 14, 9), "the mark of the beast"),
+    (("Genesis", 19, 24), ("Revelation", 14, 10), "fire and sulfur"),
+    (("Revelation", 4, 8), ("Revelation", 14, 11), "no rest day or night"),
+    (("Revelation", 13, 10), ("Revelation", 14, 12), "the endurance of the holy ones"),
+    (("Revelation", 12, 17), ("Revelation", 14, 12), "keeping the commandments of God"),
+    (("Revelation", 1, 3), ("Revelation", 14, 13), "blessed"),
+    (("Revelation", 1, 13), ("Revelation", 14, 14), "one like a son of man"),
+    (("Mark", 4, 29), ("Revelation", 14, 15), "sending the sickle"),
+    (("Matthew", 13, 39), ("Revelation", 14, 15), "the harvest at the end of the age"),
+    (("Revelation", 8, 5), ("Revelation", 14, 18), "fire from the altar"),
+    (("Matthew", 21, 33), ("Revelation", 14, 19), "a winepress"),
+    (("Hebrews", 13, 12), ("Revelation", 14, 20), "outside the gate"),
+    (("James", 3, 3), ("Revelation", 14, 20), "horses' bits"),
+])
+
+CHAPTER_ART["rev14"] = [dict(
+    file="durer-adoration-of-the-lamb.jpg",
+    title="The Adoration of the Lamb (The Hymn of the Chosen)",   title_es="La adoración del Cordero (El himno de los elegidos)",
+    artist="Albrecht Dürer",
+    year="c. 1496–98",
+    location="Cleveland Museum of Art",
+    location_es="Museo de Arte de Cleveland",
+    alt="A woodcut: at the top the Lamb, holding a banner, stands in a circle of light, ringed by the four living creatures and crowds of crowned elders; below, a dense crowd in white robes holds up palm branches, and angels and kneeling elders fill the foreground above a band of clouds. Dürer's AD monogram is at the bottom.",
+    note="&#9888; Dürer&rsquo;s woodcut from his Apocalypse series, beside <a href=\"revelation-14.html#v14-1\">verse 1</a>, the Lamb with the 144,000 and the new song &lsquo;before the throne and before the four living creatures and the elders&rsquo; (<a href=\"revelation-14.html#v14-3\">verse 3</a>). The palm branches belong to the great multitude of <a href=\"revelation-7.html#v7-9\">Revelation 7:9</a>; Dürer draws the two scenes as one.",
+    note_es="&#9888; La xilografía de Durero de su serie del Apocalipsis, junto al <a href=\"revelation-14.es.html#v14-1\">versículo 1</a>, el Cordero con los 144.000 y el cántico nuevo «delante del trono y delante de los cuatro seres vivientes y de los ancianos» (<a href=\"revelation-14.es.html#v14-3\">versículo 3</a>). Las palmas son de la gran multitud de <a href=\"revelation-7.es.html#v7-9\">Apocalipsis 7:9</a>; Durero dibuja las dos escenas como una.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_(German,_1471-1528)_-_Apocalypse,_The_Adoration_of_the_Lamb%E2%80%94The_Hymn_of_the_Chosen_-_2015.580_-_Cleveland_Museum_of_Art.jpg",
+)]
+
+CHRON_CHAPTERS["rev14"] = dict(era='apostolic',
+    when="The Lamb on Mount Zion with the 144,000 who bear his name and his Father's on their foreheads, answering the beast's mark; three angels in midheaven, with eternal good news, 'Fallen, fallen is Babylon the great,' and the cup of the fury of God for those who took the mark; 'Blessed are the dead who die in the Lord from now on'; and two harvests, the grain reaped by one like a son of man and the grapes trodden in the great winepress of the fury of God.",
+    clock="c. AD 95, closing the second vision cycle opened in chapter 12: the beast's mark is answered by the Lamb's name, and the judgments the next chapters pour out are announced here in advance, Babylon's fall, the cup of God's fury and the winepress.")
