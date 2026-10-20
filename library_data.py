@@ -45423,3 +45423,108 @@ CHAPTER_ART["rev18"] = [dict(
 CHRON_CHAPTERS["rev18"] = dict(era='apostolic',
     when="Another angel, lighting the earth with his glory, cries 'Fallen, fallen is Babylon the great'; a voice from heaven calls 'Come out of her, my people' and pays her double for her boast 'I sit a queen'; the kings, the merchants with their cargo of gold, silk, spices, bodies and human souls, and the seafarers stand far off and lament her judgment 'in one hour'; heaven is told to be glad; and a mighty angel throws a stone like a great millstone into the sea, silencing music, craft, mill, lamp, bridegroom and bride.",
     clock="c. AD 95, the fall of Babylon told as laments (chapter 18), between her portrait (chapter 17) and heaven's Hallelujah (chapter 19); its words are taken from the prophets' oracles against Babylon and Tyre.")
+
+# ---- Revelation 19 ------------------------------------------------------
+DICTIONARY.append(('hallelouia', 'hallēlouia', 'ἁλληλουϊά', 'hallēlouia',
+    'HALLELUJAH &mdash; a Hebrew phrase spelled in Greek letters: <em>hallelu-yah</em>, &lsquo;praise Jah,&rsquo; Jah being the short form of the name Jehovah. In the Hebrew Bible it opens and closes psalms from Psalm 104 to Psalm 150 (not yet on these pages). &#9888; In the Greek New Testament it stands in four verses, all in <a href="revelation-19.html">Revelation 19</a>: the great multitude over the judgment of the great prostitute (<a href="revelation-19.html#v19-1">19:1</a>, <a href="revelation-19.html#v19-3">19:3</a>), the elders&rsquo; &lsquo;Amen, Hallelujah!&rsquo; (<a href="revelation-19.html#v19-4">19:4</a>), and &lsquo;Hallelujah! For Jehovah God the Almighty has begun to reign&rsquo; (<a href="revelation-19.html#v19-6">19:6</a>). This translation spells it as the Greek does. KJV &lsquo;Alleluia&rsquo;; ASV &lsquo;Hallelujah&rsquo;; NWT 1984 &lsquo;Praise Jah, YOU people!&rsquo;',
+    ('Revelation', 19, 1)))
+DICTIONARY_ES['hallelouia'] = ('hall&#275;louiá',
+    'ALELUYA &mdash; una frase hebrea escrita con letras griegas: <em>halelu-yah</em>, «alaben a Jah», y Jah es la forma breve del nombre Jehová. En la Biblia hebrea abre y cierra salmos desde el Salmo 104 hasta el Salmo 150 (todavía no en estas páginas). &#9888; En el Nuevo Testamento griego está en cuatro versículos, todos en <a href="revelation-19.es.html">Apocalipsis 19</a>: la gran multitud por el juicio de la gran prostituta (<a href="revelation-19.es.html#v19-1">19:1</a>, <a href="revelation-19.es.html#v19-3">19:3</a>), el «¡Amén, aleluya!» de los ancianos (<a href="revelation-19.es.html#v19-4">19:4</a>), y «¡Aleluya! Porque ha comenzado a reinar Jehová Dios el Todopoderoso» (<a href="revelation-19.es.html#v19-6">19:6</a>). Esta traducción la escribe como la escribe el griego. RV60 «¡Aleluya!»; TNM 1987 «¡Alaben a Jah!».')
+
+DICTIONARY.append(('gamos', 'gamos', 'γάμος', 'gamos',
+    'WEDDING, WEDDING FEAST; MARRIAGE &mdash; the celebration, and the bond. &#9888; In the Gospels it is the wedding at Cana (<a href="john-2.html#v2-1">John 2:1</a>), the king who &lsquo;made a wedding feast for his son&rsquo; and sent &lsquo;to call those who had been called to the wedding&rsquo; (<a href="matthew-22.html#v22-2">Matthew 22:2</a>, <a href="matthew-22.html#v22-3">22:3</a>), and the virgins who &lsquo;went in with him to the wedding&rsquo; (<a href="matthew-25.html#v25-10">Matthew 25:10</a>); Hebrews uses it of marriage itself, &lsquo;Let marriage be held in honor among all&rsquo; (<a href="hebrews-13.html#v13-4">Hebrews 13:4</a>). In Revelation it is &lsquo;the wedding of the Lamb&rsquo; and its supper (<a href="revelation-19.html#v19-7">Revelation 19:7</a>, <a href="revelation-19.html#v19-9">19:9</a>). KJV &lsquo;the marriage of the Lamb&rsquo;; NIV &lsquo;the wedding of the Lamb.&rsquo;',
+    ('John', 2, 1)))
+DICTIONARY_ES['gamos'] = ('gámos',
+    'BODA, BANQUETE DE BODAS; MATRIMONIO &mdash; la celebración, y el vínculo. &#9888; En los Evangelios son las bodas de Caná (Juan 2:1, ya en estas páginas, todavía no en español), el rey que «hizo un banquete de bodas para su hijo» y envió «a llamar a los llamados a las bodas» (<a href="matthew-22.es.html#v22-2">Mateo 22:2</a>, <a href="matthew-22.es.html#v22-3">22:3</a>), y las vírgenes que entraron con él a las bodas (<a href="matthew-25.es.html#v25-10">Mateo 25:10</a>); Hebreos lo usa del matrimonio mismo, «Que el matrimonio sea honroso entre todos» (<a href="hebrews-13.es.html#v13-4">Hebreos 13:4</a>). En el Apocalipsis son «las bodas del Cordero» y su cena (<a href="revelation-19.es.html#v19-7">Apocalipsis 19:7</a>, <a href="revelation-19.es.html#v19-9">19:9</a>). RV60 «las bodas del Cordero».')
+
+DICTIONARY.append(('diadema', 'diadēma', 'διάδημα', 'diadēma',
+    'DIADEM &mdash; the band of royal power, as distinct from the <em>stephanos</em>, the crown or wreath of a victor (the &lsquo;crown&rsquo; given to the rider of <a href="revelation-6.html#v6-2">Revelation 6:2</a>). &#9888; It stands in three verses of the New Testament, all in Revelation: the dragon&rsquo;s &lsquo;seven diadems&rsquo; (<a href="revelation-12.html#v12-3">12:3</a>), the beast&rsquo;s &lsquo;ten diadems&rsquo; (<a href="revelation-13.html#v13-1">13:1</a>), and the &lsquo;many diadems&rsquo; on the head of the rider called Faithful and True (<a href="revelation-19.html#v19-12">19:12</a>). KJV &lsquo;crowns&rsquo; at 12:3 and 19:12; ASV &lsquo;diadems.&rsquo;',
+    ('Revelation', 12, 3)))
+DICTIONARY_ES['diadema'] = ('diád&#275;ma',
+    'DIADEMA &mdash; la banda del poder real, distinta del <em>stéphanos</em>, la corona o guirnalda del vencedor (la «corona» dada al jinete de <a href="revelation-6.es.html#v6-2">Apocalipsis 6:2</a>). &#9888; Está en tres versículos del Nuevo Testamento, todos en el Apocalipsis: las «siete diademas» del dragón (<a href="revelation-12.es.html#v12-3">12:3</a>), las «diez diademas» de la bestia (<a href="revelation-13.es.html#v13-1">13:1</a>), y las «muchas diademas» en la cabeza del jinete llamado Fiel y Verdadero (<a href="revelation-19.es.html#v19-12">19:12</a>). RV60 «diademas».')
+
+DICTIONARY.append(('byssinos', 'byssinos', 'βύσσινος', 'byssinos',
+    'OF FINE LINEN, FINE LINEN &mdash; cloth woven from <em>byssos</em>, fine flax, the costly linen the rich man wore with his purple (<a href="luke-16.html#v16-19">Luke 16:19</a>). &#9888; The adjective stands in four verses, all in Revelation, and two women wear it: Babylon, among the merchants&rsquo; cargo and in her own dress, &lsquo;clothed in fine linen and purple and scarlet&rsquo; (<a href="revelation-18.html#v18-12">18:12</a>, <a href="revelation-18.html#v18-16">18:16</a>), and the bride of the Lamb, given &lsquo;fine linen, bright and pure &mdash; for the fine linen is the righteous acts of the holy ones&rsquo; (<a href="revelation-19.html#v19-8">19:8</a>), which the armies of heaven also wear (<a href="revelation-19.html#v19-14">19:14</a>). KJV &lsquo;the fine linen is the righteousness of saints&rsquo;; ASV &lsquo;the righteous acts of the saints.&rsquo;',
+    ('Revelation', 18, 12)))
+DICTIONARY_ES['byssinos'] = ('býssinos',
+    'DE LINO FINO, LINO FINO &mdash; tela tejida de <em>býssos</em>, lino delicado, el lino costoso que vestía el rico con su púrpura (<a href="luke-16.es.html#v16-19">Lucas 16:19</a>). &#9888; El adjetivo está en cuatro versículos, todos en el Apocalipsis, y lo visten dos mujeres: Babilonia, entre el cargamento de los mercaderes y en su propio vestido, «vestida de lino fino y de púrpura y de escarlata» (<a href="revelation-18.es.html#v18-12">18:12</a>, <a href="revelation-18.es.html#v18-16">18:16</a>), y la novia del Cordero, a quien se concede «lino fino, resplandeciente y puro; porque el lino fino son los actos de justicia de los santos» (<a href="revelation-19.es.html#v19-8">19:8</a>), el que visten también los ejércitos del cielo (<a href="revelation-19.es.html#v19-14">19:14</a>). RV60 «el lino fino es las acciones justas de los santos».')
+
+_jn1_3_fix([
+    ('&lsquo;let us rejoice greatly&rsquo;, at the marriage supper of the Lamb (Revelation 19:7, not yet on these pages)',
+     '&lsquo;let us rejoice and be glad,&rsquo; at the wedding of the Lamb (<a href="revelation-19.html#v19-7">Revelation 19:7</a>)'),
+    ('«regocijémonos en gran manera», en la cena de las bodas del Cordero (Apocalipsis 19:7, todavía no en estas páginas)',
+     '«alegrémonos y regocijémonos», en las bodas del Cordero (<a href="revelation-19.es.html#v19-7">Apocalipsis 19:7</a>)'),
+    ('<a href="revelation-16.html#v16-13">Revelation 16:13</a>, and 19:20 and 20:10 (the last two not yet on these pages).',
+     '<a href="revelation-16.html#v16-13">Revelation 16:13</a>, <a href="revelation-19.html#v19-20">19:20</a>, and 20:10 (the last not yet on these pages).'),
+    ('<a href="revelation-16.es.html#v16-13">Apocalipsis 16:13</a>, y 19:20 y 20:10 (los dos últimos todavía no en estas páginas).',
+     '<a href="revelation-16.es.html#v16-13">Apocalipsis 16:13</a>, <a href="revelation-19.es.html#v19-20">19:20</a>, y 20:10 (el último todavía no en estas páginas).'),
+    ('at Revelation 19:17 (not yet on these pages).',
+     'at <a href="revelation-19.html#v19-17">Revelation 19:17</a>.'),
+    ('en Apocalipsis 19:17 (todavía no en estas páginas).',
+     'en <a href="revelation-19.es.html#v19-17">Apocalipsis 19:17</a>.'),
+    ('and Revelation 19:15 (not yet on these pages).',
+     'and <a href="revelation-19.html#v19-15">Revelation 19:15</a>, where the rider on the white horse treads it.'),
+    ('y Apocalipsis 19:15 (todavía no en estas páginas).',
+     'y <a href="revelation-19.es.html#v19-15">Apocalipsis 19:15</a>, donde lo pisa el jinete del caballo blanco.'),
+])
+
+XREFS.extend([
+    (("Psalms", 106, 48), ("Revelation", 19, 4), "Amen. Hallelujah"),
+    (("Revelation", 7, 10), ("Revelation", 19, 1), "salvation belongs to our God"),
+    (("Revelation", 16, 7), ("Revelation", 19, 2), "true and righteous are his judgments"),
+    (("Deuteronomy", 32, 43), ("Revelation", 19, 2), "he avenges the blood of his servants"),
+    (("Revelation", 6, 10), ("Revelation", 19, 2), "avenge our blood"),
+    (("Revelation", 14, 11), ("Revelation", 19, 3), "the smoke goes up forever and ever"),
+    (("Isaiah", 34, 10), ("Revelation", 19, 3), "its smoke shall go up forever"),
+    (("Revelation", 11, 18), ("Revelation", 19, 5), "those who fear him, small and great"),
+    (("Psalms", 115, 13), ("Revelation", 19, 5), "the small with the great"),
+    (("Revelation", 11, 17), ("Revelation", 19, 6), "begun to reign"),
+    (("Psalms", 93, 1), ("Revelation", 19, 6), "Jehovah reigns"),
+    (("Matthew", 5, 12), ("Revelation", 19, 7), "rejoice and be glad"),
+    (("Matthew", 22, 2), ("Revelation", 19, 7), "the wedding feast"),
+    (("Revelation", 21, 9), ("Revelation", 19, 7), "the bride, the wife of the Lamb"),
+    (("Revelation", 15, 4), ("Revelation", 19, 8), "righteous acts"),
+    (("Revelation", 18, 16), ("Revelation", 19, 8), "clothed in fine linen"),
+    (("Luke", 14, 15), ("Revelation", 19, 9), "blessed at the meal of the kingdom"),
+    (("Revelation", 22, 8), ("Revelation", 19, 10), "John falls before the angel"),
+    (("Revelation", 6, 2), ("Revelation", 19, 11), "a white horse"),
+    (("Revelation", 3, 14), ("Revelation", 19, 11), "faithful and true"),
+    (("Isaiah", 11, 4), ("Revelation", 19, 11), "in righteousness he judges"),
+    (("Revelation", 1, 14), ("Revelation", 19, 12), "eyes a flame of fire"),
+    (("Revelation", 2, 17), ("Revelation", 19, 12), "a name no one knows"),
+    (("Isaiah", 63, 1), ("Revelation", 19, 13), "garments red with blood"),
+    (("Genesis", 49, 11), ("Revelation", 19, 13), "garment in the blood of grapes"),
+    (("John", 1, 1), ("Revelation", 19, 13), "the Word"),
+    (("Revelation", 14, 4), ("Revelation", 19, 14), "following the Lamb"),
+    (("Revelation", 1, 16), ("Revelation", 19, 15), "the sword from his mouth"),
+    (("Psalms", 2, 9), ("Revelation", 19, 15), "shepherd them with an iron rod"),
+    (("Revelation", 14, 20), ("Revelation", 19, 15), "the winepress trodden"),
+    (("Revelation", 17, 14), ("Revelation", 19, 16), "King of kings and Lord of lords"),
+    (("Psalms", 45, 3), ("Revelation", 19, 16), "the sword on the thigh"),
+    (("Ezekiel", 39, 17), ("Revelation", 19, 17), "birds summoned to God's feast"),
+    (("Revelation", 6, 15), ("Revelation", 19, 18), "kings, commanders, the mighty"),
+    (("Revelation", 16, 14), ("Revelation", 19, 19), "gathered for the war"),
+    (("Revelation", 13, 13), ("Revelation", 19, 20), "the signs of the false prophet"),
+    (("Numbers", 16, 33), ("Revelation", 19, 20), "went down alive"),
+    (("Daniel", 7, 11), ("Revelation", 19, 20), "the beast given to the fire"),
+    (("Revelation", 21, 8), ("Revelation", 19, 20), "the lake that burns with fire and sulfur"),
+    (("Mark", 6, 42), ("Revelation", 19, 21), "they were satisfied"),
+])
+
+CHRON_CHAPTERS["rev19"] = dict(era='apostolic',
+    when="A great multitude in heaven cries the New Testament's only Hallelujahs over the judgment of the great prostitute; 'Jehovah God the Almighty has begun to reign'; the wedding of the Lamb has come and the bride is given fine linen, the righteous acts of the holy ones; John falls to worship the angel and is told 'Worship God.' Heaven opens on a white horse whose rider is called Faithful and True and The Word of God, with 'King of kings and Lord of lords' on his garment and thigh; the beast and the false prophet are seized and thrown alive into the lake of fire, and the rest fall to the sword from his mouth.",
+    clock="c. AD 95, the turn from Babylon's fall (chapters 17-18) to the end of the beast; the war gathered since 16:14 ends before it begins.")
+
+CHAPTER_ART["rev19"] = [dict(
+    file="getty-apocalypse-faithful-and-true.jpg",
+    title="The Horseman Faithful and True",   title_es="El jinete Fiel y Verdadero",
+    artist="Unknown English illuminator",
+    year="c. 1255–1260",
+    location="J. Paul Getty Museum, Los Angeles (the Getty Apocalypse)",
+    location_es="Museo J. Paul Getty, Los Ángeles (el Apocalipsis Getty)",
+    alt="A pen-and-wash manuscript drawing: on the left John, haloed, with a staff, watches; in the middle a haloed rider on a white horse rides out of a cloud with a sword held crosswise through his mouth and a scepter in his hand, red Latin words written on his robe; behind him soldiers in helmets ride with raised swords; on the right the same haloed figure, again with a sword at his mouth and words on his robe, stands treading grapes in a wooden winepress.",
+    note="&#9888; An English Apocalypse of the 1250s draws <a href=\"revelation-19.html#v19-11\">verses 11&ndash;16</a> as two scenes: the rider called Faithful and True leading the armies of heaven out of the cloud, and the same figure treading the winepress. The painter shows the sword from his mouth literally, as a blade passing through it, and writes the name on his robe in Latin, <em>rex regum et dominus dominantium</em>, &lsquo;King of kings and Lord of lords.&rsquo;",
+    note_es="&#9888; Un Apocalipsis inglés de la década de 1250 dibuja los <a href=\"revelation-19.es.html#v19-11\">versículos 11&ndash;16</a> como dos escenas: el jinete llamado Fiel y Verdadero que saca de la nube a los ejércitos del cielo, y la misma figura pisando el lagar. El pintor muestra literalmente la espada de su boca, como una hoja que la atraviesa, y escribe el nombre en su manto en latín, <em>rex regum et dominus dominantium</em>, «Rey de reyes y Señor de señores».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:The_Horseman_Faithful_and_True,_the_Army_of_Heaven_on_White_Horses_and_the_Horseman_in_the_Winepre..._-_Google_Art_Project_crop.jpg",
+)]
