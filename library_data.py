@@ -44462,3 +44462,131 @@ CHRON_CHAPTERS["2pe2"] = dict(era='apostolic',
     when="The false teachers: 'factions of destruction' and the Master who bought them denied; angels cast into Tartarus, Noah 'the eighth,' Sodom and Gomorrah reduced to ashes and 'righteous Lot' rescued; glories blasphemed, spots and blemishes at the feast, the way of Balaam son of Bosor and the speaking donkey; springs without water; freedom promised by slaves of corruption; and the dog and the washed sow. Closely parallel to Jude.",
     clock="c. AD 64–65 on the traditional reading; the date is disputed (see chapter 1).")
 
+# ---- 2 Peter 3 -----------------------------------------------------------
+DICTIONARY.append(('eilikrines', 'eilikrinēs', 'εἰλικρινής', 'eilikrinēs',
+    'SINCERE, unmixed, pure &mdash; of something with nothing else blended in. &#9888; The adjective stands in two verses of the New Testament: &lsquo;that you may be sincere and without stumbling&rsquo; at <a href="philippians-1.html#v10">Philippians 1:10</a>, and &lsquo;your sincere mind&rsquo; at <a href="2-peter-3.html#v3-1">2 Peter 3:1</a>. The noun <em>eilikrineia</em>, &lsquo;sincerity,&rsquo; is Paul&rsquo;s word at <a href="1-corinthians-5.html#v8">1 Corinthians 5:8</a> and <a href="2-corinthians-1.html#v12">2 Corinthians 1:12</a>. KJV at 2 Peter 3:1 &lsquo;your pure minds&rsquo;; ASV &lsquo;your sincere mind.&rsquo;',
+    ('Philippians', 1, 10)))
+DICTIONARY_ES['eilikrines'] = ('eilikrin&#275;́s',
+    'SINCERO, sin mezcla, puro &mdash; de algo a lo que no se ha mezclado nada. &#9888; El adjetivo está en dos versículos del Nuevo Testamento: «a fin de que sean sinceros y sin tropiezo» en <a href="philippians-1.es.html#v10">Filipenses 1:10</a>, y «el entendimiento sincero de ustedes» en <a href="2-peter-3.es.html#v3-1">2 Pedro 3:1</a>. El sustantivo <em>eilikríneia</em>, «sinceridad», es la palabra de Pablo en <a href="1-corinthians-5.es.html#v8">1 Corintios 5:8</a> y <a href="2-corinthians-1.es.html#v12">2 Corintios 1:12</a>. RV60 en 2 Pedro 3:1 «vuestro limpio entendimiento».')
+
+DICTIONARY.append(('empaiktes', 'empaiktēs', 'ἐμπαίκτης', 'empaiktēs',
+    'A MOCKER &mdash; from <em>empaiz&#333;</em>, &lsquo;to mock,&rsquo; the verb of the soldiers who mocked Jesus. &#9888; It stands in two verses of the New Testament: Jude&rsquo;s &lsquo;In the last time there will be mockers, following after their own ungodly desires&rsquo; (<a href="jude-1.html#v18">Jude 1:18</a>), and <a href="2-peter-3.html#v3-3">2 Peter 3:3</a>, &lsquo;mockers will come with mockery,&rsquo; where the noun <em>empaigmon&#275;</em>, &lsquo;mockery,&rsquo; stands beside it in its one verse. KJV &lsquo;scoffers&rsquo;; ASV &lsquo;mockers&rsquo;; NWT 1984 &lsquo;ridiculers.&rsquo;',
+    ('Jude', 1, 18)))
+DICTIONARY_ES['empaiktes'] = ('empaíkt&#275;s',
+    'BURLADOR &mdash; de <em>empaíz&#333;</em>, «burlarse», el verbo de los soldados que se burlaron de Jesús. &#9888; Está en dos versículos del Nuevo Testamento: el de Judas, «En el último tiempo habrá burladores, que andarán tras sus propios deseos impíos» (<a href="jude-1.es.html#v18">Judas 1:18</a>), y <a href="2-peter-3.es.html#v3-3">2 Pedro 3:3</a>, «vendrán burladores con burla», donde el sustantivo <em>empaigmon&#275;́</em>, «burla», está a su lado en su único versículo. RV60 «burladores»; TNM 1987 «burlones».')
+
+DICTIONARY.append(('rhoizedon', 'rhoizēdon', 'ῥοιζηδόν', 'rhoizēdon',
+    'WITH A ROAR, with a rushing noise &mdash; from <em>rhoizos</em>, the whistle or rush of something moving fast through the air, an arrow or a wing. &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-10">2 Peter 3:10</a>, &lsquo;the heavens will pass away with a roar.&rsquo; KJV &lsquo;with a great noise&rsquo;; NWT 1984 &lsquo;with a hissing noise&rsquo;; NIV &lsquo;with a roar.&rsquo;',
+    ('2 Peter', 3, 10)))
+DICTIONARY_ES['rhoizedon'] = ('rhoiz&#275;dón',
+    'CON ESTRUENDO, con un silbido veloz &mdash; de <em>rhoîzos</em>, el silbido o zumbido de algo que pasa rápido por el aire, una flecha o un ala. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-10">2 Pedro 3:10</a>, «los cielos pasarán con estruendo». RV60 «con grande estruendo»; TNM 1987 «con un ruido de silbido».')
+
+DICTIONARY.append(('kausoo', 'kausoō', 'καυσόω', 'kausoō',
+    'TO BURN, to be consumed with great heat &mdash; from <em>kausos</em>, &lsquo;burning heat,&rsquo; a word also used of fever. &#9888; It stands in two verses of the New Testament, both in 2 Peter: &lsquo;the elements will burn and be dissolved&rsquo; (<a href="2-peter-3.html#v3-10">2 Peter 3:10</a>) and &lsquo;the elements will burn and melt&rsquo; (<a href="2-peter-3.html#v3-12">2 Peter 3:12</a>). KJV &lsquo;melt with fervent heat&rsquo;; NWT 1984 &lsquo;being intensely hot.&rsquo;',
+    ('2 Peter', 3, 10)))
+DICTIONARY_ES['kausoo'] = ('kausó&#333;',
+    'ARDER, consumirse por un calor intenso &mdash; de <em>kaûsos</em>, «calor abrasador», palabra que se usa también de la fiebre. &#9888; Está en dos versículos del Nuevo Testamento, ambos en 2 Pedro: «los elementos, ardiendo, serán disueltos» (<a href="2-peter-3.es.html#v3-10">2 Pedro 3:10</a>) y «los elementos, ardiendo, se derretirán» (<a href="2-peter-3.es.html#v3-12">2 Pedro 3:12</a>). RV60 «los elementos ardiendo serán deshechos»; TNM 1987 «estando intensamente calientes».')
+
+DICTIONARY.append(('teko', 'tēkō', 'τήκω', 'tēkō',
+    'TO MELT &mdash; as wax melts or metal runs in a furnace. &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-12">2 Peter 3:12</a>, &lsquo;the elements will burn and melt.&rsquo; It is the verb of the Greek of Isaiah 34:4, &lsquo;all the powers of the heavens will melt,&rsquo; where the Hebrew reads &lsquo;all the host of heaven will rot away&rsquo; (both checked; Isaiah 34 not yet on these pages). KJV &lsquo;shall melt with fervent heat&rsquo;; NWT 1984 &lsquo;will melt.&rsquo;',
+    ('2 Peter', 3, 12)))
+DICTIONARY_ES['teko'] = ('t&#275;́k&#333;',
+    'DERRETIR, fundir &mdash; como se derrite la cera o corre el metal en el horno. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-12">2 Pedro 3:12</a>, «los elementos, ardiendo, se derretirán». Es el verbo del griego de Isaías 34:4, «todos los poderes de los cielos se derretirán», donde el hebreo lee «todo el ejército de los cielos se pudrirá» (ambos comprobados; Isaías 34 todavía no en estas páginas). RV60 «se fundirán»; TNM 1987 «se derretirán».')
+
+DICTIONARY.append(('dysnoetos', 'dysnoētos', 'δυσνόητος', 'dysnoētos',
+    'HARD TO UNDERSTAND &mdash; <em>dys-</em>, &lsquo;hard, ill,&rsquo; and <em>noe&#333;</em>, &lsquo;to understand.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-16">2 Peter 3:16</a>, of Paul&rsquo;s letters: &lsquo;In them are some things hard to understand.&rsquo; KJV &lsquo;hard to be understood&rsquo;; NWT 1984 &lsquo;hard to understand.&rsquo;',
+    ('2 Peter', 3, 16)))
+DICTIONARY_ES['dysnoetos'] = ('dysnó&#275;tos',
+    'DIFÍCIL DE ENTENDER &mdash; <em>dys-</em>, «difícil, mal», y <em>noé&#333;</em>, «entender». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-16">2 Pedro 3:16</a>, de las cartas de Pablo: «En ellas hay algunas cosas difíciles de entender». RV60 y TNM 1987 «difíciles de entender».')
+
+DICTIONARY.append(('strebloo', 'strebloō', 'στρεβλόω', 'strebloō',
+    'TO TWIST, to wrench &mdash; from <em>strebl&#275;</em>, a windlass, the instrument of the rack on which a limb was wrenched out of its joint. &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-16">2 Peter 3:16</a>, &lsquo;which the untaught and unstable twist, as they do the rest of the Scriptures too.&rsquo; KJV &lsquo;wrest&rsquo;; NWT 1984 &lsquo;are twisting&rsquo;; NIV &lsquo;distort.&rsquo;',
+    ('2 Peter', 3, 16)))
+DICTIONARY_ES['strebloo'] = ('strebló&#333;',
+    'TORCER, descoyuntar &mdash; de <em>strebl&#275;́</em>, el torno del potro en el que se descoyuntaba un miembro. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-16">2 Pedro 3:16</a>, «que los indoctos e inestables tuercen, como también las demás Escrituras». RV60 y TNM 1987 «tuercen»; NVI «tergiversan».')
+
+DICTIONARY.append(('sterigmos', 'stērigmos', 'στηριγμός', 'stērigmos',
+    'FIRM FOOTING, steadiness &mdash; the noun of <a href="dictionary.html#sterizo">st&#275;riz&#333;</a>, &lsquo;to make firm.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-17">2 Peter 3:17</a>, &lsquo;fall from your own firm footing.&rsquo; It is the third word of this root in 2 Peter, after &lsquo;established in the truth&rsquo; (<a href="2-peter-1.html#v12">2 Peter 1:12</a>) and &lsquo;unstable&rsquo; (<a href="dictionary.html#asteriktos">ast&#275;riktos</a>, <a href="2-peter-2.html#v2-14">2 Peter 2:14</a> and <a href="2-peter-3.html#v3-16">2 Peter 3:16</a>). KJV &lsquo;your own stedfastness&rsquo;; NIV &lsquo;your secure position.&rsquo;',
+    ('2 Peter', 3, 17)))
+DICTIONARY_ES['sterigmos'] = ('st&#275;rigmós',
+    'FIRMEZA, estabilidad &mdash; el sustantivo de <a href="diccionario.html#sterizo">st&#275;ríz&#333;</a>, «afirmar». &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-17">2 Pedro 3:17</a>, «caigan de su propia firmeza». Es la tercera palabra de esta raíz en 2 Pedro, tras «afirmados en la verdad» (<a href="2-peter-1.es.html#v12">2 Pedro 1:12</a>) e «inestables» (<a href="diccionario.html#asteriktos">ast&#275;́riktos</a>, <a href="2-peter-2.es.html#v2-14">2 Pedro 2:14</a> y <a href="2-peter-3.es.html#v3-16">2 Pedro 3:16</a>). RV60 «vuestra firmeza»; TNM 1987 «su propia constancia».')
+
+DICTIONARY.append(('amometos', 'amōmētos', 'ἀμώμητος', 'amōmētos',
+    'WITHOUT BLEMISH, faultless &mdash; <em>a-</em>, &lsquo;without,&rsquo; and <em>m&#333;mos</em>, &lsquo;blemish&rsquo;; a near twin of <a href="dictionary.html#amomos">am&#333;mos</a>. &#9888; It stands in one verse of the New Testament, <a href="2-peter-3.html#v3-14">2 Peter 3:14</a>, &lsquo;without spot and without blemish,&rsquo; the reverse of the false teachers&rsquo; &lsquo;spots and blemishes&rsquo; at <a href="2-peter-2.html#v2-13">2 Peter 2:13</a>. KJV &lsquo;without spot, and blameless&rsquo;; NWT 1984 &lsquo;spotless and unblemished.&rsquo;',
+    ('2 Peter', 3, 14)))
+DICTIONARY_ES['amometos'] = ('am&#333;́m&#275;tos',
+    'SIN DEFECTO, intachable &mdash; <em>a-</em>, «sin», y <em>m&#333;̂mos</em>, «defecto»; casi gemela de <a href="diccionario.html#amomos">ámōmos</a>. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-peter-3.es.html#v3-14">2 Pedro 3:14</a>, «sin mancha y sin defecto», lo contrario de las «manchas y defectos» de los falsos maestros en <a href="2-peter-2.es.html#v2-13">2 Pedro 2:13</a>. RV60 «sin mancha e irreprensibles»; TNM 1987 «inmaculados y sin tacha».')
+
+def _pe2_3_fix(pairs):
+    """Replace text in already-built DICTIONARY, DICTIONARY_ES, ENCYCLOPEDIA and ENCYCLOPEDIA_ES entries; each old string must be found."""
+    for old, new in pairs:
+        hits = 0
+        for i, e in enumerate(DICTIONARY):
+            if old in e[4]:
+                lst = list(e); lst[4] = lst[4].replace(old, new)
+                DICTIONARY[i] = lst if isinstance(e, list) else tuple(lst); hits += 1
+        for k, (name, desc) in list(DICTIONARY_ES.items()):
+            if old in desc:
+                DICTIONARY_ES[k] = (name, desc.replace(old, new)); hits += 1
+        for e in ENCYCLOPEDIA:
+            if old in e["desc"]:
+                e["desc"] = e["desc"].replace(old, new); hits += 1
+        for k, v in list(ENCYCLOPEDIA_ES.items()):
+            if old in v[1]:
+                ENCYCLOPEDIA_ES[k] = (v[0], v[1].replace(old, new)); hits += 1
+        assert hits >= 1, old[:60]
+
+
+_pe2_3_fix([('steadiness (2 Peter 3:17) and,', 'steadiness (<a href="2-peter-3.html#v3-17">2 Peter 3:17</a>) and,'), ('la firmeza (2 Pedro 3:17) y,', 'la firmeza (<a href="2-peter-3.es.html#v3-17">2 Pedro 3:17</a>) y,'), ('and 2 Peter 3:10 and 3:12, the elements that burn and melt (these two not yet on these pages).', 'and <a href="2-peter-3.html#v3-10">2 Peter 3:10</a> and <a href="2-peter-3.html#v3-12">3:12</a>, the elements that burn and melt.'), ('y 2 Pedro 3:10 y 3:12, los elementos que arden y se funden (estos dos todavía no en estas páginas).', 'y <a href="2-peter-3.es.html#v3-10">2 Pedro 3:10</a> y <a href="2-peter-3.es.html#v3-12">3:12</a>, los elementos que arden y se derriten.'), ('and two verses of 2 Peter 3 (not yet on these pages).', 'and two verses of 2 Peter 3, <a href="2-peter-3.html#v3-5">3:5</a> and <a href="2-peter-3.html#v3-8">3:8</a>.'), ('y dos versículos de 2 Pedro 3 (todavía no en estas páginas).', 'y dos versículos de 2 Pedro 3, <a href="2-peter-3.es.html#v3-5">3:5</a> y <a href="2-peter-3.es.html#v3-8">3:8</a>.'), ('and 3:17 (not yet on these pages). It is a different word', 'and <a href="2-peter-3.html#v3-17">3:17</a>, &lsquo;the error of the unprincipled.&rsquo; It is a different word'), ('y 3:17 (todavía no en estas páginas). Es otra palabra', 'y <a href="2-peter-3.es.html#v3-17">3:17</a>, «el error de los sin principios». Es otra palabra'), ('who twist Paul&rsquo;s letters at 3:16 (not yet on these pages).', 'who twist Paul&rsquo;s letters at <a href="2-peter-3.html#v3-16">3:16</a>.'), ('que tuercen las cartas de Pablo en 3:16 (todavía no en estas páginas).', 'que tuercen las cartas de Pablo en <a href="2-peter-3.es.html#v3-16">3:16</a>.')])
+
+for _e in ENCYCLOPEDIA:
+    _add = {"paul": [("2 Peter", 3, 15)]}.get(_e["slug"], [])
+    for _r in _add:
+        if _r not in _e["refs"] and list(_r) not in _e["refs"]:
+            _e["refs"].append(_r)
+
+XREFS.extend([
+    (("2 Peter", 1, 13), ("2 Peter", 3, 1), "by way of reminder"),
+    (("Jude", 1, 17), ("2 Peter", 3, 2), "the words spoken beforehand"),
+    (("Jude", 1, 18), ("2 Peter", 3, 3), "mockers in the last time"),
+    (("Acts", 2, 17), ("2 Peter", 3, 3), "in the last days"),
+    (("James", 5, 8), ("2 Peter", 3, 4), "the presence of the Lord"),
+    (("Matthew", 24, 37), ("2 Peter", 3, 4), "the presence of the Son of Man"),
+    (("Genesis", 1, 6), ("2 Peter", 3, 5), "out of water"),
+    (("Hebrews", 11, 3), ("2 Peter", 3, 5), "by the word of God"),
+    (("Genesis", 7, 11), ("2 Peter", 3, 6), "the world flooded"),
+    (("Genesis", 9, 11), ("2 Peter", 3, 7), "never again a flood"),
+    (("1 Peter", 3, 20), ("2 Peter", 3, 9), "the patience of God"),
+    (("1 Timothy", 2, 4), ("2 Peter", 3, 9), "wanting all to be saved"),
+    (("Romans", 2, 4), ("2 Peter", 3, 9), "patience leading to repentance"),
+    (("1 Thessalonians", 5, 2), ("2 Peter", 3, 10), "like a thief"),
+    (("Matthew", 24, 35), ("2 Peter", 3, 10), "heaven and earth will pass away"),
+    (("1 Corinthians", 3, 13), ("2 Peter", 3, 10), "the day will show it"),
+    (("1 Peter", 1, 15), ("2 Peter", 3, 11), "holy conduct"),
+    (("Revelation", 21, 1), ("2 Peter", 3, 13), "a new heaven and a new earth"),
+    (("1 Peter", 1, 19), ("2 Peter", 3, 14), "without spot or blemish"),
+    (("2 Peter", 2, 13), ("2 Peter", 3, 14), "spots and blemishes"),
+    (("1 Corinthians", 3, 10), ("2 Peter", 3, 15), "the wisdom given him"),
+    (("2 Timothy", 3, 16), ("2 Peter", 3, 16), "the Scriptures"),
+    (("Galatians", 2, 13), ("2 Peter", 3, 17), "carried away"),
+    (("2 Peter", 1, 2), ("2 Peter", 3, 18), "grace and knowledge"),
+])
+
+CHAPTER_ART["2pe3"] = [dict(
+    file="martin-plains-of-heaven.jpg",
+    title="The Plains of Heaven",   title_es="Las llanuras del cielo",
+    artist="John Martin",
+    year="1851–1853",
+    location="Tate Britain, London",
+    location_es="Tate Britain, Londres",
+    alt="A wide luminous landscape of blue lake, waterfalls, wooded hills and distant snowy mountains under a pale sky, with small white-robed figures gathered among flowers on a slope in the foreground.",
+    note="&#9888; The last panel of Martin&rsquo;s Last Judgement triptych, a world remade and full of light, beside <a href=\"2-peter-3.html#v3-13\">verse 13</a>, &lsquo;we are waiting for new heavens and a new earth, in which righteousness dwells.&rsquo; The painting is one artist&rsquo;s picture; the letter does not describe the new earth.",
+    note_es="&#9888; El último panel del tríptico del Juicio Final de Martin, un mundo rehecho y lleno de luz, junto al <a href=\"2-peter-3.es.html#v3-13\">versículo 13</a>, «esperamos cielos nuevos y una tierra nueva, en los cuales mora la justicia». La pintura es la imagen de un artista; la carta no describe la tierra nueva.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg",
+)]
+
+CHRON_CHAPTERS["2pe3"] = dict(era='apostolic',
+    when="The second letter's last word: mockers asking 'Where is the promise of his presence?'; the earth formed out of water, the world that perished in the flood, and the present heavens 'stored up for fire'; 'with the Lord one day is like a thousand years'; a Lord not slow but patient; the day of the Lord 'like a thief,' with the earth and its works 'found'; new heavens and a new earth; and 'our beloved brother Paul,' whose letters have 'some things hard to understand.'",
+    clock="c. AD 64–65 on the traditional reading; the date is disputed (see chapter 1).")
+
