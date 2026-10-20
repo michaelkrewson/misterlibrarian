@@ -45069,3 +45069,65 @@ CHAPTER_ART["rev14"] = [dict(
 CHRON_CHAPTERS["rev14"] = dict(era='apostolic',
     when="The Lamb on Mount Zion with the 144,000 who bear his name and his Father's on their foreheads, answering the beast's mark; three angels in midheaven, with eternal good news, 'Fallen, fallen is Babylon the great,' and the cup of the fury of God for those who took the mark; 'Blessed are the dead who die in the Lord from now on'; and two harvests, the grain reaped by one like a son of man and the grapes trodden in the great winepress of the fury of God.",
     clock="c. AD 95, closing the second vision cycle opened in chapter 12: the beast's mark is answered by the Lamb's name, and the judgments the next chapters pour out are announced here in advance, Babylon's fall, the cup of God's fury and the winepress.")
+
+# ---- Revelation 15 ------------------------------------------------------
+DICTIONARY.append(('phiale', 'phialē', 'φιάλη', 'phialē',
+    'BOWL &mdash; a broad, shallow bowl for pouring, used in temple worship for drink offerings and incense; the English &lsquo;vial&rsquo; of the KJV comes from it, though a vial is now a small bottle. &#9888; It stands in twelve verses of the New Testament, all in Revelation: first the elders&rsquo; &lsquo;golden bowls full of incense, which are the prayers of the saints&rsquo; (<a href="revelation-5.html#v5-8">Revelation 5:8</a>), then the &lsquo;seven golden bowls full of the fury of God&rsquo; given to the seven angels (<a href="revelation-15.html#v15-7">Revelation 15:7</a>), which are poured out one by one in chapter 16, and the angel &lsquo;who had the seven bowls&rsquo; at 17:1 and 21:9 (all not yet on these pages). The same golden bowls carry prayer up and judgment down. KJV &lsquo;vials&rsquo;; ASV and NWT 1984 &lsquo;bowls.&rsquo;',
+    ('Revelation', 5, 8)))
+DICTIONARY_ES['phiale'] = ('phiál&#275;',
+    'COPA &mdash; un cuenco ancho y poco profundo para derramar, usado en el culto del templo para libaciones e incienso. &#9888; Está en doce versículos del Nuevo Testamento, todos en el Apocalipsis: primero las «copas de oro llenas de incienso, que son las oraciones de los santos» de los ancianos (<a href="revelation-5.es.html#v5-8">Apocalipsis 5:8</a>), luego las «siete copas de oro llenas del furor de Dios» dadas a los siete ángeles (<a href="revelation-15.es.html#v15-7">Apocalipsis 15:7</a>), que se derraman una a una en el capítulo 16, y el ángel «que tenía las siete copas» en 17:1 y 21:9 (todos todavía no en estas páginas). Las mismas copas de oro suben la oración y bajan el juicio. RV60 «copas»; TNM 1987 «tazones».')
+
+for _i, _e in enumerate(DICTIONARY):
+    if _e[0] == 'hosios':
+        _l = list(_e)
+        _l[4] = _l[4] + ' &#9888; In Revelation it is said of God himself: &lsquo;For you alone are holy&rsquo; (<a href="revelation-15.html#v15-4">Revelation 15:4</a>), where the Byzantine text reads <em>hagios</em>; NWT 1984 &lsquo;you alone are loyal.&rsquo;'
+        DICTIONARY[_i] = tuple(_l) if isinstance(_e, tuple) else _l
+DICTIONARY_ES['hosios'] = (DICTIONARY_ES['hosios'][0], DICTIONARY_ES['hosios'][1] + ' &#9888; En el Apocalipsis se dice de Dios mismo: «Porque solo tú eres santo» (<a href="revelation-15.es.html#v15-4">Apocalipsis 15:4</a>), donde el texto bizantino lee <em>hágios</em>; TNM 1987 «solo tú eres leal».')
+
+XREFS.extend([
+    (("Revelation", 12, 3), ("Revelation", 15, 1), "another sign in heaven"),
+    (("Revelation", 10, 7), ("Revelation", 15, 1), "finished"),
+    (("Revelation", 4, 6), ("Revelation", 15, 2), "the sea of glass"),
+    (("Revelation", 13, 17), ("Revelation", 15, 2), "the number of its name"),
+    (("Exodus", 15, 1), ("Revelation", 15, 3), "the song of Moses"),
+    (("Exodus", 14, 31), ("Revelation", 15, 3), "Moses the servant"),
+    (("Deuteronomy", 32, 4), ("Revelation", 15, 3), "his ways are justice"),
+    (("Psalms", 139, 14), ("Revelation", 15, 3), "wonderful are your works"),
+    (("1 Timothy", 1, 17), ("Revelation", 15, 3), "King of the ages"),
+    (("Acts", 2, 27), ("Revelation", 15, 4), "hosios, holy"),
+    (("Acts", 7, 44), ("Revelation", 15, 5), "the tent of the testimony"),
+    (("Revelation", 11, 19), ("Revelation", 15, 5), "the temple in heaven opened"),
+    (("Revelation", 1, 13), ("Revelation", 15, 6), "golden sash"),
+    (("Revelation", 5, 8), ("Revelation", 15, 7), "golden bowls"),
+    (("Revelation", 4, 9), ("Revelation", 15, 7), "who lives forever and ever"),
+    (("Exodus", 40, 35), ("Revelation", 15, 8), "no one could enter for the glory"),
+])
+
+CHAPTER_ART["rev15"] = [dict(
+    file="flemish-apocalypse-seven-vials.jpg",
+    title="The Seven Angels Receive the Bowls (Flemish Apocalypse)",   title_es="Los siete ángeles reciben las copas (Apocalipsis flamenco)",
+    artist="Unknown Flemish illuminator",
+    year="c. 1400",
+    location="Bibliothèque nationale de France (Néerlandais 3, f. 16r)",
+    location_es="Biblioteca Nacional de Francia (Néerlandais 3, f. 16r)",
+    alt="A manuscript painting in a gilded frame: at the top, a row of angels holding golden jars against a red sky; below them, angels with harps standing on wavy water with small flames in it; lower down, beside a pink church building, a winged living creature hands golden jars to a crowd of angels; at the bottom, John lies on a rocky shore under a starry blue sea.",
+    note="&#9888; A Flemish illuminator&rsquo;s whole chapter on one page, beside <a href=\"revelation-15.html#v15-2\">verse 2</a>, the harpists standing on &lsquo;a sea of glass mixed with fire,&rsquo; with flames in the water, and <a href=\"revelation-15.html#v15-7\">verse 7</a>, one of the four living creatures handing the seven golden bowls to the angels beside the temple. The painter draws the bowls as lidless jars, and puts John on the shore of Patmos watching.",
+    note_es="&#9888; Un iluminador flamenco pone todo el capítulo en una página, junto al <a href=\"revelation-15.es.html#v15-2\">versículo 2</a>, los arpistas de pie sobre «un mar de vidrio mezclado con fuego», con llamas en el agua, y el <a href=\"revelation-15.es.html#v15-7\">versículo 7</a>, uno de los cuatro seres vivientes entregando las siete copas de oro a los ángeles junto al templo. El pintor dibuja las copas como jarras, y pone a Juan mirando desde la orilla de Patmos.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Apocalypse_flamande_-_BNF_N%C3%A9erl3_f.16r_Seven_vials.jpg",
+)]
+
+CHRON_CHAPTERS["rev15"] = dict(era='apostolic',
+    when="Seven angels with the seven last plagues; the conquerors of the beast standing by a sea of glass mixed with fire and singing the song of Moses and the song of the Lamb, 'Great and marvelous are your works'; the temple of the tent of the testimony opened in heaven; seven golden bowls full of the fury of God given to the angels; and the temple filled with smoke, closed until the plagues are finished.",
+    clock="c. AD 95, opening the cycle of the seven bowls (chapters 15-16): the last plagues are framed as a new Exodus, the song by the sea sung before the plagues fall rather than after.")
+
+_jn1_3_fix([
+    ('and six more in chapters 15&ndash;19 (not yet on these pages).',
+     'two more in chapter 15, &lsquo;in them the fury of God is finished&rsquo; and the &lsquo;seven golden bowls full of the fury of God&rsquo; (<a href="revelation-15.html#v15-1">15:1</a>, <a href="revelation-15.html#v15-7">15:7</a>), and four in chapters 16&ndash;19 (not yet on these pages).'),
+    ('y seis más en los capítulos 15&ndash;19 (todavía no en estas páginas).',
+     'dos más en el capítulo 15, «en ellas se consuma el furor de Dios» y las «siete copas de oro llenas del furor de Dios» (<a href="revelation-15.es.html#v15-1">15:1</a>, <a href="revelation-15.es.html#v15-7">15:7</a>), y cuatro en los capítulos 16&ndash;19 (todavía no en estas páginas).'),
+    ('1 Corinthians 15:55 and 15:56 (not yet on these pages) and Revelation 9:10.',
+     '<a href="1-corinthians-15.html#v55">1 Corinthians 15:55</a> and <a href="1-corinthians-15.html#v56">15:56</a> and <a href="revelation-9.html#v9-10">Revelation 9:10</a>.'),
+    ('1 Corintios 15:55 y 15:56 (todavía no en estas páginas) y Apocalipsis 9:10.',
+     '<a href="1-corinthians-15.es.html#v55">1 Corintios 15:55</a> y <a href="1-corinthians-15.es.html#v56">15:56</a> y <a href="revelation-9.es.html#v9-10">Apocalipsis 9:10</a>.'),
+])
