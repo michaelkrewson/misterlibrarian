@@ -46275,3 +46275,82 @@ CHAPTER_ART["judg20"] = [dict(
     license="Public domain (published 1881)",
     source_url="https://commons.wikimedia.org/wiki/File:Taleil-el-F%C3%BBl,_from_Neby_Samwil,_generally_regarded_as_the_Gibeah_of_Saul_(NYPL_b10607452-80372).tiff",
 )]
+
+# --- Judges 21 ---
+ENCYCLOPEDIA.append(dict(slug="jabesh-gilead", name="Jabesh-gilead", kind="place", aliases=["Jabesh-gilead"],
+    refs=[("Judges", 21, 8)], videos=[],
+    coords=(32.3900, 35.6600, 0.4), approx=True,
+    modern="In the Wadi Yabis east of the Jordan; Tell el-Maqlub and Tell Abu al-Kharaz have both been proposed (reported)",
+    desc="""&ldquo;Jabesh of Gilead&rdquo; &mdash; a town of Gilead across the Jordan, whose name survives in the Wadi Yabis. When all Israel was mustered against Benjamin, &ldquo;there was not a man there of the inhabitants of Jabesh-gilead&rdquo;, and the assembly sent twelve thousand men to strike the town, keeping alive four hundred virgins as wives for the six hundred survivors of Benjamin (<a href="judges-21.html#v21-8">Judges 21:8&ndash;14</a>, now on these pages). The town and Benjamin stay bound together: Saul of Gibeah&rsquo;s first act as king is to rescue Jabesh from Nahash the Ammonite (1 Samuel 11:1&ndash;11), and the men of Jabesh take down the bodies of Saul and his sons from the wall of Beth-shan and bury them (1 Samuel 31:11&ndash;13), both not yet on these pages. The site is not certain; the map point is placed in the Wadi Yabis."""))
+ENCYCLOPEDIA_ES["jabesh-gilead"] = ("Jabes de Galaad",
+    """«Jabes de Galaad» — una ciudad de Galaad al otro lado del Jordán, cuyo nombre sobrevive en el Wadi Yabis. Cuando todo Israel pasó revista contra Benjamín, «no había allí ningún hombre de los habitantes de Jabes de Galaad», y la asamblea envió doce mil hombres a herir la ciudad, dejando con vida a cuatrocientas vírgenes como mujeres para los seiscientos sobrevivientes de Benjamín (<a href="judges-21.es.html#v21-8">Jueces 21:8&ndash;14</a>, ya en estas páginas). La ciudad y Benjamín quedan unidas: el primer acto de Saúl de Guibeá como rey es librar a Jabes de Nahás el amonita (1 Samuel 11:1&ndash;11), y los hombres de Jabes bajan los cuerpos de Saúl y sus hijos del muro de Bet-seán y los sepultan (1 Samuel 31:11&ndash;13), los dos todavía no en estas páginas. El sitio no es seguro; el punto del mapa está en el Wadi Yabis.""")
+
+ENCYCLOPEDIA.append(dict(slug="lebonah", name="Lebonah", kind="place", aliases=["Lebonah"],
+    refs=[("Judges", 21, 19)], videos=[],
+    coords=(32.0720, 35.2390, 0.2), approx=True,
+    modern="Usually identified with the village of al-Lubban ash-Sharqiya, north of Shiloh (reported)",
+    desc="""A town on the highway north from Bethel to Shechem, named once in the Bible, to fix the place of Shiloh: the feast of Jehovah is held &ldquo;in Shiloh, which is north of Bethel, east of the highway that goes up from Bethel to Shechem, and south of Lebonah&rdquo; (<a href="judges-21.html#v21-19">Judges 21:19</a>, now on these pages). The A Greek text reads &ldquo;south of the Lebanon of Lebona&rdquo;. The name lives on in the village of al-Lubban, a few kilometres north-west of Seilun, the site of Shiloh."""))
+ENCYCLOPEDIA_ES["lebonah"] = ("Lebona",
+    """Una ciudad en el camino que sube de Betel a Siquem, nombrada una sola vez en la Biblia, para fijar el lugar de Siló: la fiesta de Jehová se celebra «en Siló, que está al norte de Betel, al oriente del camino que sube de Betel a Siquem, y al sur de Lebona» (<a href="judges-21.es.html#v21-19">Jueces 21:19</a>, ya en estas páginas). El texto griego A dice «al sur del Líbano de Lebona». El nombre sigue vivo en la aldea de al-Lubban, unos kilómetros al noroeste de Seilún, el sitio de Siló.""")
+
+DICTIONARY.append(("chataf", "chataf", "חָטַף", "chataf",
+    """TO SNATCH, seize suddenly and carry off. The verb is rare: besides <a href="judges-21.html#v21-21">Judges 21:21</a> (now on these pages), where the men of Benjamin are told to come out of the vineyards and &ldquo;snatch for yourselves each man his wife from the daughters of Shiloh&rdquo;, it stands only in Psalm 10:9 (not yet on these pages), twice in one verse, of the wicked man who &ldquo;lies in wait&rdquo; like a lion in its thicket &ldquo;to snatch the poor&rdquo;. Both passages pair it with <em>arav</em>, to lie in wait. The KJV and the ASV have &ldquo;catch you every man his wife&rdquo;, the NWT 1984 &ldquo;carry off for yourselves by force&rdquo;, the NIV &ldquo;seize one of them&rdquo;. ⚠ Distinct from <em>gazal</em>, &ldquo;rob, carry off&rdquo;, which the same story uses two verses later (21:23).""",
+    ("Judges", 21, 21)))
+DICTIONARY_ES["chataf"] = ("jataf",
+    """ARREBATAR, agarrar de improviso y llevarse. El verbo es raro: además de <a href="judges-21.es.html#v21-21">Jueces 21:21</a> (ya en estas páginas), donde a los hombres de Benjamín se les dice que salgan de las viñas y «arrebaten para ustedes cada uno su mujer de entre las hijas de Siló», solo está en el Salmo 10:9 (todavía no en estas páginas), dos veces en un mismo versículo, del malvado que «acecha» como león en su guarida «para arrebatar al pobre». Los dos pasajes lo juntan con <em>arav</em>, poner emboscada. La RV 1909 dice «arrebataréis cada uno mujer para sí», la RV60 «arrebatad cada uno mujer para sí», la TNM 1987 «llevarse a la fuerza cada cual su esposa». ⚠ Distinto de <em>gazal</em>, «robar, llevarse», que la misma historia usa dos versículos después (21:23).""")
+
+DICTIONARY_ES["perets"] = ("perets",
+    """UNA BRECHA — un hueco abierto a la fuerza en un muro; de <em>parats</em>, irrumpir. El grito de la partera al nacer el gemelo de Judá es un juego con el nombre que le está dando: «¡Qué brecha has abierto sobre ti!» (<a href="genesis-38.es.html#v38-29">Génesis 38:29</a>, ya en estas páginas). Suena a consternación y se queda como nombre. Fares importa mucho más allá de ese capítulo: Rut termina trazando «las generaciones de Fares» diez nombres abajo hasta DAVID (Rut 4:18&ndash;22), y Mateo abre el Nuevo Testamento con la misma línea, nombrando a «Fares y Zara, de Tamar» (Mateo 1:3). ⭐ En <a href="judges-21.es.html#v21-15">Jueces 21:15</a> (ya en estas páginas) el pueblo dice que «Jehová había abierto una brecha en las tribus de Israel»: la tribu de Benjamín casi borrada.""")
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "perets":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ At <a href="judges-21.html#v21-15">Judges 21:15</a> (now on these pages) the people say that &ldquo;Jehovah had made a breach in the tribes of Israel&rdquo;: the tribe of Benjamin all but wiped out.',) + _d[5:]
+    elif _d[0] == "machah":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ At <a href="judges-21.html#v21-17">Judges 21:17</a> (now on these pages) the elders take the words of the brother-in-law&rsquo;s law, &ldquo;so that his name is not blotted out from Israel&rdquo; (Deuteronomy 25:6), and say them of a tribe: &ldquo;so that a tribe is not blotted out from Israel&rdquo;.',) + _d[5:]
+    elif _d[0] == "machaneh":
+        _a = "this one and Judges 21:12 (not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'this one and <a href="judges-21.html#v21-12">Judges 21:12</a> (now on these pages)'),) + _d[5:]
+_s = DICTIONARY_ES["machah"]
+DICTIONARY_ES["machah"] = (_s[0], _s[1] + ' ⭐ En <a href="judges-21.es.html#v21-17">Jueces 21:17</a> (ya en estas páginas) los ancianos toman las palabras de la ley del cuñado, «para que su nombre no sea borrado de Israel» (Deuteronomio 25:6), y las dicen de una tribu: «para que no sea borrada de Israel una tribu».')
+_s = DICTIONARY_ES["machaneh"]
+_a = "este y Jueces 21:12 (todavía no en estas páginas)"
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["machaneh"] = (_s[0], _s[1].replace(_a, 'este y <a href="judges-21.es.html#v21-12">Jueces 21:12</a> (ya en estas páginas)'))
+
+for _e in ENCYCLOPEDIA:
+    for _slug, _a, _b in [
+        ("levites-concubine", "and in Judges 21 (not yet on these pages)", 'and in <a href="judges-21.html#v21-1">Judges 21</a> (now on these pages)'),
+        ("mizpah-benjamin", "(Judges 21:1, not yet on these pages)", '(<a href="judges-21.html#v21-1">Judges 21:1</a>, now on these pages)'),
+        ("rock-of-rimmon", "(Judges 21:13, not yet on these pages)", '(<a href="judges-21.html#v21-13">Judges 21:13</a>, now on these pages)'),
+    ]:
+        if _e["slug"] == _slug:
+            assert _e["desc"].count(_a) == 1, _slug
+            _e["desc"] = _e["desc"].replace(_a, _b)
+for _k, _a, _b in [
+    ("levites-concubine", "y en Jueces 21 (todavía no en estas páginas)", 'y en <a href="judges-21.es.html#v21-1">Jueces 21</a> (ya en estas páginas)'),
+    ("mizpah-benjamin", "(Jueces 21:1, todavía no en estas páginas)", '(<a href="judges-21.es.html#v21-1">Jueces 21:1</a>, ya en estas páginas)'),
+    ("rock-of-rimmon", "(Jueces 21:13, todavía no en estas páginas)", '(<a href="judges-21.es.html#v21-13">Jueces 21:13</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+CHRON_CHAPTERS["judg21"] = dict(era="exodus",
+    when="After the war Israel weeps at Bethel that a tribe is missing, bound by two oaths sworn at Mizpah: no man will give his daughter to Benjamin, and whoever did not come up shall die. Jabesh-gilead sent no one, so twelve thousand men strike it and bring four hundred virgins to the camp at Shiloh; peace is proclaimed to the six hundred at the rock of Rimmon, and the women are given to them. For the two hundred still without wives the elders devise a way around the oath: at the yearly feast of Jehovah at Shiloh the men of Benjamin lie in wait in the vineyards and snatch wives from the dancing daughters of Shiloh. Benjamin rebuilds its cities, Israel goes home each to his inheritance, and the book ends: 'In those days there was no king in Israel; each man did what was right in his own eyes.'",
+    clock="Undated, like the war it follows; Phinehas son of Eleazar still before the ark (20:28) sets these chapters early in the period of the judges, though the book tells them last.")
+
+CHAPTER_ART["judg21"] = [dict(
+    file="tel-shiloh-2017.jpg",
+    title="Tel Shiloh (Khirbet Seilun)",
+    title_es="Tel Siló (Jirbet Seilún)",
+    artist="Photograph by Deg777, Wikimedia Commons",
+    year="modern photograph",
+    location="Tel Shiloh, north of Bethel, east of the road to Shechem",
+    location_es="Tel Siló, al norte de Betel, al oriente del camino a Siquem",
+    alt="Photograph of rolling hill country: in the middle distance a low, terraced mound with paths and a round modern visitor building on top, a steep stony hillside rising on the right, and fields, young trees and greenhouses in the foreground.",
+    note="The mound of ancient Shiloh, where the yearly &ldquo;feast of Jehovah&rdquo; of verse 19 was held and where the daughters of Shiloh came out to dance. The site lies where the chapter puts it, north of Bethel and east of the highway to Shechem; the terraced slopes around it are the kind of ground where the men of Benjamin lay in wait &ldquo;in the vineyards&rdquo;. The round building on the mound is a modern visitor centre.",
+    note_es="El montículo de la antigua Siló, donde se celebraba la «fiesta de Jehová» anual del versículo 19 y donde las hijas de Siló salían a danzar. El sitio está donde lo pone el capítulo, al norte de Betel y al oriente del camino a Siquem; las laderas en terrazas que lo rodean son el tipo de terreno donde los hombres de Benjamín se emboscaron «en las viñas». El edificio redondo sobre el montículo es un centro de visitantes moderno.",
+    license="CC BY-SA 4.0",
+    source_url="https://commons.wikimedia.org/wiki/File:Tel_Shiloh_(biblical_site)_2017.jpg",
+)]
