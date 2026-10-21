@@ -119,7 +119,8 @@ def _meta(titles):
 
 def _looks_free(lic):
     low = (lic or "").lower()
-    return any(k in low for k in ("public domain", "pd-", "cc0", "cc by", "cc-by"))
+    # "PDM-owner": the Creative Commons Public Domain Mark, applied by the holding museum.
+    return any(k in low for k in ("public domain", "pd-", "pdm", "cc0", "cc by", "cc-by"))
 
 
 def cmd_search(args):
