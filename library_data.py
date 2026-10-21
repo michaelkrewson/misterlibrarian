@@ -46666,3 +46666,69 @@ CHAPTER_ART["1sam2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Eeckhout,_Gerbrand_van_den_-_The_Infant_Samuel_brought_by_Hannah_to_Eli_-_Ashmolean_Museum.jpg",
 )]
+
+# --- 1 Samuel 3 ---
+DICTIONARY_ES["hineni"] = ("hinení",
+    """«Aquí estoy» — la palabra de la disponibilidad total, que suena tres veces en la atadura de Isaac: a Dios (Génesis 22:1), a Isaac (22:7) y al ángel junto al cuchillo (22:11). No informa de un lugar sino de una disposición: es la misma respuesta que da Moisés en la zarza e Isaías ante el trono («heme aquí, envíame a mí»). La RV60 dice «Heme aquí». ⭐ En <a href="1-samuel-3.es.html#v3-4">1 Samuel 3</a> (ya en estas páginas) el muchacho Samuel la dice una y otra vez: al primer llamado de Jehová, tres veces a Elí, que no lo había llamado, y a Elí por la mañana (vv. 4, 5, 6, 8, 16).""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "hineni":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ In <a href="1-samuel-3.html#v3-4">1 Samuel 3</a> (now on these pages) the boy Samuel says it again and again: to Jehovah&rsquo;s first call, three times to Eli, who had not called him, and to Eli in the morning (vv. 4, 5, 6, 8, 16).',) + _d[5:]
+    elif _d[0] == "kahah":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ The root carries a pun in <a href="1-samuel-3.html#v3-2">1 Samuel 3</a> (now on these pages): Eli&rsquo;s eyes &ldquo;had begun to grow dim&rdquo; (v. 2), and his fault is that &ldquo;he did not restrain them&rdquo;, <em>lo kihah bam</em> (v. 13), the same verb in another stem: the man whose eyes grew dim did not dim his sons.',) + _d[5:]
+    elif _d[0] == "qalal":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ At <a href="1-samuel-3.html#v3-13">1 Samuel 3:13</a> (now on these pages) Eli&rsquo;s sons &ldquo;were bringing a curse on themselves&rdquo;, <em>meqallelim lahem</em>; the Greek reads &ldquo;speaking evil of God&rdquo;, and rabbinic tradition counts the verse among the &ldquo;corrections of the scribes&rdquo;.',) + _d[5:]
+    elif _d[0] == "naphal":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Of a prophet&rsquo;s words: Jehovah &ldquo;let none of his words fall to the ground&rdquo; (<a href="1-samuel-3.html#v3-19">1 Samuel 3:19</a>, now on these pages).',) + _d[5:]
+    elif _d[0] == "aman":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Its passive participle <em>ne&rsquo;eman</em> runs through two chapters of 1 Samuel: God promises &ldquo;a faithful priest&rdquo; and &ldquo;a faithful house&rdquo; (<a href="1-samuel-2.html#v2-35">2:35</a>), and all Israel knows that Samuel is &ldquo;faithful as a prophet of Jehovah&rdquo; (<a href="1-samuel-3.html#v3-20">3:20</a>, both now on these pages).',) + _d[5:]
+for _k, _b in [
+    ("kahah", ' ⭐ La raíz encierra un juego en <a href="1-samuel-3.es.html#v3-2">1 Samuel 3</a> (ya en estas páginas): los ojos de Elí «habían comenzado a nublarse» (v. 2), y su culpa es que «no los refrenó», <em>lo kihah bam</em> (v. 13), el mismo verbo en otra forma: el hombre cuyos ojos se nublaron no nubló a sus hijos.'),
+    ("qalal", ' ⭐ En <a href="1-samuel-3.es.html#v3-13">1 Samuel 3:13</a> (ya en estas páginas) los hijos de Elí «se acarreaban maldición», <em>meqalelim lahem</em>; el griego dice «hablando mal de Dios», y la tradición rabínica cuenta el versículo entre las «correcciones de los escribas».'),
+    ("naphal", ' ⭐ De las palabras de un profeta: Jehová «no dejó caer a tierra ninguna de sus palabras» (<a href="1-samuel-3.es.html#v3-19">1 Samuel 3:19</a>, ya en estas páginas).'),
+    ("aman", ' ⭐ Su participio pasivo <em>neemán</em> recorre dos capítulos de 1 Samuel: Dios promete «un sacerdote fiel» y «una casa fiel» (<a href="1-samuel-2.es.html#v2-35">2:35</a>), y todo Israel sabe que Samuel es «fiel como profeta de Jehová» (<a href="1-samuel-3.es.html#v3-20">3:20</a>, los dos ya en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "samuel":
+        _a = "('speak, for your servant hears,' ch 3)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(&lsquo;Speak, for your servant is listening&rsquo;, <a href="1-samuel-3.html#v3-10">1 Samuel 3:10</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 3, 10), ("1 Samuel", 3, 20)]
+    elif _e["slug"] == "eli":
+        _e["desc"] += ' ⭐ In <a href="1-samuel-3.html#v3-2">1 Samuel 3</a> (now on these pages), his eyes already dimming, he is the one who understands that Jehovah is calling the boy, makes Samuel tell him the word against his house, and answers, &ldquo;He is Jehovah; let him do what is good in his eyes&rdquo; (3:18).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 3, 8), ("1 Samuel", 3, 18)]
+_s = ENCYCLOPEDIA_ES["samuel"]
+_a = "(«habla, que tu siervo escucha», capítulo 3)"
+assert _s[1].count(_a) == 1
+ENCYCLOPEDIA_ES["samuel"] = (_s[0], _s[1].replace(_a, '(«Habla, que tu siervo escucha», <a href="1-samuel-3.es.html#v3-10">1 Samuel 3:10</a>, ya en estas páginas)'))
+_s = ENCYCLOPEDIA_ES["eli"]
+ENCYCLOPEDIA_ES["eli"] = (_s[0], _s[1] + ' ⭐ En <a href="1-samuel-3.es.html#v3-2">1 Samuel 3</a> (ya en estas páginas), con los ojos ya nublándose, es él quien entiende que Jehová llama al muchacho, obliga a Samuel a contarle la palabra contra su casa, y responde: «Él es Jehová; haga lo que es bueno a sus ojos» (3:18).')
+
+CHRON_CHAPTERS["1sam3"] = dict(era="monarchy",
+    when="The call of Samuel at Shiloh, when 'the word of Jehovah was rare': before the lamp of God goes out, Jehovah calls the boy three times and he runs to Eli; the fourth time Jehovah comes and stands and calls 'Samuel! Samuel!', and Samuel answers 'Speak, for your servant is listening'. The word is the end of Eli's house; Eli hears it and says 'He is Jehovah'. Samuel grows, none of his words falls to the ground, and all Israel from Dan to Beersheba knows him for a prophet.",
+    clock="Late in the period of the Judges, in Samuel's boyhood at Shiloh; Josephus makes him twelve.")
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "shiloh":
+        _a = "(1 Samuel 3:3, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-3.html#v3-3">1 Samuel 3:3</a>, now on these pages, where Jehovah calls the boy Samuel there)')
+_s = ENCYCLOPEDIA_ES["shiloh"]
+_a = "(1 Samuel 3:3, todavía no en estas páginas)"
+assert _s[1].count(_a) == 1
+ENCYCLOPEDIA_ES["shiloh"] = (_s[0], _s[1].replace(_a, '(<a href="1-samuel-3.es.html#v3-3">1 Samuel 3:3</a>, ya en estas páginas, donde Jehová llama allí al muchacho Samuel)'))
+CHAPTER_ART["1sam3"] = [dict(
+    file="reynolds-infant-samuel.jpg",
+    title="The Infant Samuel",
+    title_es="El niño Samuel",
+    artist="Joshua Reynolds",
+    year="1776",
+    location="Musée Fabre, Montpellier",
+    location_es="Museo Fabre, Montpellier",
+    alt="Oil painting of a small curly-haired child in a long white nightshirt kneeling on a bare floor with hands pressed together in prayer, looking up toward a faint glow in the dark upper corner of the picture.",
+    note="Joshua Reynolds painted the boy Samuel several times; this version shows him kneeling in the dark, turned toward a light in the corner, at the moment the chapter builds to: “Speak, for your servant is listening” (v. 10). The prayer pose is the painter’s; the chapter has Samuel lying down and running to Eli.",
+    note_es="Joshua Reynolds pintó varias veces al muchacho Samuel; esta versión lo muestra de rodillas en la oscuridad, vuelto hacia una luz en un rincón, en el momento al que se encamina el capítulo: «Habla, que tu siervo escucha» (v. 10). La postura de oración es del pintor; el capítulo tiene a Samuel acostado y corriendo hacia Elí.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:InfantSamuel.jpg",
+)]
