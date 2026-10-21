@@ -46903,3 +46903,123 @@ CHAPTER_ART["1sam5"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:DuraSyn-WB4-Ark_and_Temple_of_Dagon.jpg",
 )]
+
+# --- 1 Samuel 6 ---
+DICTIONARY.extend([
+    ("akhbar", "akhbar", "עַכְבָּר", "akhbar",
+     'MOUSE &mdash; a small rodent, listed among the unclean &ldquo;swarming things that swarm on the earth&rdquo;, &ldquo;the mole-rat, the mouse&rdquo; (<a href="leviticus-11.html#v11-29">Leviticus 11:29</a>, already on these pages). <span data-heb="עכבר">The word stands in six verses of the Hebrew Bible</span>: that law, four verses of 1 Samuel 6, and Isaiah 66:17, where people who eat pork and the mouse are condemned (not yet on these pages). ⭐ In <a href="1-samuel-6.html#v6-4">1 Samuel 6:4</a>&ndash;5 (now on these pages) the Philistines send back &ldquo;five golden mice&rdquo; beside the golden tumours, &ldquo;images of your mice that are ruining the land&rdquo;, and verse 18 counts the mice by every Philistine town. The Hebrew of chapter 5 has no mice at all; the Greek puts them into the plague there (5:6). &#9888; Which animal is meant is not certain: the NWT 1984 says &ldquo;jerboas&rdquo;, the NIV &ldquo;rats&rdquo;, most of the shelf &ldquo;mice&rdquo;.',
+     ("1 Samuel", 6, 4)),
+    ("agalah", "&lsquo;agalah", "עֲגָלָה", "agalah",
+     'CART, WAGON &mdash; a wheeled vehicle drawn by cattle. The chieftains bring &ldquo;six covered wagons&rdquo; for carrying the tabernacle (<a href="numbers-7.html#v7-3">Numbers 7:3</a>, already on these pages). ⭐ In <a href="1-samuel-6.html#v6-7">1 Samuel 6:7</a>&ndash;14 (now on these pages) the Philistines build &ldquo;one new cart&rdquo; for the captured ark and hitch to it two milk cows that have never borne a yoke; at Beth-shemesh the townsmen split its wood for the fire of a burnt offering. David will set the ark on &ldquo;a new cart&rdquo; again (2 Samuel 6:3; 1 Chronicles 13:7, neither yet on these pages). &#9888; Unpointed, the same letters spell <em>&lsquo;eglah</em>, &ldquo;heifer&rdquo;, the animal of <a href="deuteronomy-21.html#v21-4">Deuteronomy 21:4</a> (already on these pages).',
+     ("1 Samuel", 6, 7)),
+    ("argaz", "argaz", "אַרְגַּז", "argaz",
+     'BOX, CHEST &mdash; the container the Philistines set &ldquo;at the side&rdquo; of the ark on the cart, holding the golden tumours and golden mice. <span data-heb="הארגז|בארגז">The word stands in three verses of the Hebrew Bible</span>, all in <a href="1-samuel-6.html#v6-8">1 Samuel 6</a> (vv. 8, 11 and 15, now on these pages), so its sense comes from that chapter alone. The Greek leaves it untranslated, as a word of Hebrew sound (<em>ergab</em>); the KJV and ASV say &ldquo;coffer&rdquo;, the NWT 1984 &ldquo;box&rdquo;, the Douay &ldquo;a little box&rdquo;.',
+     ("1 Samuel", 6, 8)),
+])
+DICTIONARY_ES["akhbar"] = ("akhbar",
+    'RATÓN &mdash; un roedor pequeño, contado entre los «animales bullidores que bullen sobre la tierra» impuros, «la rata topo, el ratón» (<a href="leviticus-11.es.html#v11-29">Levítico 11:29</a>, ya en estas páginas). <span data-heb="עכבר">La palabra aparece en seis versículos de la Biblia hebrea</span>: esa ley, cuatro versículos de 1 Samuel 6 e Isaías 66:17, donde se condena a los que comen cerdo y ratón (todavía no en estas páginas). ⭐ En <a href="1-samuel-6.es.html#v6-4">1 Samuel 6:4</a>&ndash;5 (ya en estas páginas) los filisteos devuelven «cinco ratones de oro» junto a los tumores de oro, «imágenes de sus ratones que están arruinando la tierra», y el versículo 18 cuenta los ratones por cada pueblo filisteo. El hebreo del capítulo 5 no tiene ratones; el griego los pone en la plaga de allí (5:6). &#9888; Qué animal es no es seguro: la TNM 1987 dice «jerbos», la NVI «ratas», la mayor parte del estante «ratones».')
+DICTIONARY_ES["agalah"] = ("&lsquo;agalah",
+    'CARRO, CARRETA &mdash; un vehículo de ruedas tirado por reses. Los jefes traen «seis carros cubiertos» para llevar el tabernáculo (<a href="numbers-7.es.html#v7-3">Números 7:3</a>, ya en estas páginas). ⭐ En <a href="1-samuel-6.es.html#v6-7">1 Samuel 6:7</a>&ndash;14 (ya en estas páginas) los filisteos hacen «un carro nuevo» para el arca capturada y le uncen dos vacas que crían que nunca han llevado yugo; en Bet-semes los del pueblo parten su madera para el fuego de un holocausto. David pondrá el arca otra vez sobre «un carro nuevo» (2 Samuel 6:3; 1 Crónicas 13:7, ninguno todavía en estas páginas). &#9888; Sin vocales, las mismas letras escriben <em>&lsquo;eglah</em>, «becerra», el animal de <a href="deuteronomy-21.es.html#v21-4">Deuteronomio 21:4</a> (ya en estas páginas).')
+DICTIONARY_ES["argaz"] = ("argaz",
+    'CAJA, COFRE &mdash; el recipiente que los filisteos ponen «a su lado», junto al arca en el carro, con los tumores de oro y los ratones de oro. <span data-heb="הארגז|בארגז">La palabra aparece en tres versículos de la Biblia hebrea</span>, todos de <a href="1-samuel-6.es.html#v6-8">1 Samuel 6</a> (vv. 8, 11 y 15, ya en estas páginas), así que su sentido sale solo de ese capítulo. El griego la deja sin traducir, como una palabra de sonido hebreo (<em>ergab</em>); la RV60 y la TNM 1987 dicen «caja».')
+DICTIONARY_ES["zevach"] = ("zevach",
+    'SACRIFICIO &mdash; en concreto un animal degollado ofrecido a Dios, y por lo general un BANQUETE compartido: la mayor parte de un zevach la comían los que adoraban, así que nombra a la vez la ofrenda y la comida en torno a ella. &#9888; Sofonías 1:7&ndash;8 vuelve del revés la imagen alegre: «Jehová ha preparado un ZEVACH, ha consagrado a sus convidados» &mdash;pero aquí JUDÁ es el sacrificio sobre el altar, y «sus convidados» son el ejército invasor invitado al banquete. El pueblo que creía venir a cenar es la carne. La misma inversión sombría mueve Isaías 34:6 (un sacrificio en Bosra) y, al otro extremo de la Biblia, la «gran cena de Dios» donde las aves comen a los reyes (Apocalipsis 19:17&ndash;18). ⭐ <a href="1-samuel-6.es.html#v6-15">1 Samuel 6:15</a> (ya en estas páginas) hace que los hombres de Bet-semes ofrezcan holocaustos y «sacrifiquen sacrificios», <em>vayizbechu zevachim</em>, el día en que el arca vuelve.')
+
+_DICT6_EN = {
+    "asham": ' ⭐ <a href="1-samuel-6.html#v6-3">1 Samuel 6:3</a>&ndash;4, 8 and 17 (now on these pages) puts the word in Philistine mouths: their priests say the captured ark must not go back empty but with an <em>asham</em>, and the payment is five golden tumours and five golden mice, &ldquo;by the number of the lords of the Philistines&rdquo;.',
+    "reqam": ' ⭐ The Philistine priests apply it to the captured ark: &ldquo;do not send it away empty&rdquo;, but with a guilt offering (<a href="1-samuel-6.html#v6-3">1 Samuel 6:3</a>, now on these pages).',
+    "qosem": ' ⭐ The Philistines consult &ldquo;the priests and the diviners&rdquo;, <em>qosemim</em>, on how to send the ark home (<a href="1-samuel-6.html#v6-2">1 Samuel 6:2</a>, now on these pages).',
+    "kavod": ' ⭐ Then the Philistines are told to give it back: &ldquo;you shall give glory to the God of Israel&rdquo;, with golden images of their tumours and mice (<a href="1-samuel-6.html#v6-5">1 Samuel 6:5</a>, now on these pages).',
+    "qalal": ' ⭐ <a href="1-samuel-6.html#v6-5">1 Samuel 6:5</a> (now on these pages) sets it against <em>kaved</em> again: after Jehovah&rsquo;s hand was &ldquo;heavy&rdquo; on Ashdod (5:6), the Philistine priests hope he will &ldquo;lighten his hand from off you&rdquo;.',
+    "kaved": ' ⭐ The Philistine priests then quote the exodus: &ldquo;why should you make your heart heavy, as Egypt and Pharaoh made their heart heavy?&rdquo; (<a href="1-samuel-6.html#v6-6">1 Samuel 6:6</a>, now on these pages).',
+    "ol": ' ⭐ The Philistines choose for the ark&rsquo;s cart &ldquo;two milk cows on which no yoke has come&rdquo;, the wording of the red cow of Numbers 19:2 (<a href="1-samuel-6.html#v6-7">1 Samuel 6:7</a>, now on these pages).',
+    "even": ' ⭐ <a href="1-samuel-6.html#v6-14">1 Samuel 6:14</a>&ndash;18 (now on these pages) has &ldquo;a great stone&rdquo; in the field of Joshua at Beth-shemesh, on which the Levites set the ark; the Hebrew of verse 18 then reads &ldquo;the great Abel&rdquo;, with a feminine adjective that fits <em>even</em>, and the Greek reads &ldquo;the great stone&rdquo;.',
+    "qadosh": ' ⭐ The men of Beth-shemesh ask &ldquo;Who is able to stand before Jehovah, this holy God?&rdquo; (<a href="1-samuel-6.html#v6-20">1 Samuel 6:20</a>, now on these pages).',
+    "ofalim": ' ⭐ <a href="1-samuel-6.html#v6-4">1 Samuel 6:4</a>&ndash;5 (now on these pages) has the same written and read pair for the Philistines&rsquo; golden tumours, and 6:11 and 17 have the read word in the text itself.',
+    "zevach": ' ⭐ <a href="1-samuel-6.html#v6-15">1 Samuel 6:15</a> (now on these pages) has the men of Beth-shemesh offer burnt offerings and &ldquo;sacrifice sacrifices&rdquo;, <em>vayizbechu zevachim</em>, the day the ark comes home.',
+}
+_DICT6_SWAP = {
+    "parah": ("the milk-cows that pull the ark home in 1 Samuel 6.", 'the milk-cows that pull the ark home in <a href="1-samuel-6.html#v6-7">1 Samuel 6:7</a>&ndash;14 (now on these pages).'),
+    "miqreh": ("1 Samuel 6:9 uses it of pure chance ('it was not his hand that struck us; it was a miqreh')", '<a href="1-samuel-6.html#v6-9">1 Samuel 6:9</a> (now on these pages) uses it of pure chance (&lsquo;it was not his hand that touched us &mdash; it was a chance that happened to us&rsquo;)'),
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT6_EN:
+        DICTIONARY[_i] = _d[:4] + (_d[4] + _DICT6_EN[_d[0]],) + _d[5:]
+    elif _d[0] in _DICT6_SWAP:
+        _a, _b = _DICT6_SWAP[_d[0]]
+        assert _d[4].count(_a) == 1, _d[0]
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+for _k, _b in [
+    ("asham", ' ⭐ <a href="1-samuel-6.es.html#v6-3">1 Samuel 6:3</a>&ndash;4, 8 y 17 (ya en estas páginas) pone la palabra en boca de filisteos: sus sacerdotes dicen que el arca capturada no debe volver vacía sino con un <em>asham</em>, y el pago son cinco tumores de oro y cinco ratones de oro, «por el número de los príncipes de los filisteos».'),
+    ("reqam", ' ⭐ Los sacerdotes filisteos la aplican al arca capturada: «no la envíen vacía», sino con una ofrenda por la culpa (<a href="1-samuel-6.es.html#v6-3">1 Samuel 6:3</a>, ya en estas páginas).'),
+    ("qosem", ' ⭐ Los filisteos consultan a «los sacerdotes y a los adivinos», <em>qosemim</em>, sobre cómo devolver el arca (<a href="1-samuel-6.es.html#v6-2">1 Samuel 6:2</a>, ya en estas páginas).'),
+    ("kavod", ' ⭐ Después a los filisteos se les dice que la devuelvan: «darán gloria al Dios de Israel», con imágenes de oro de sus tumores y sus ratones (<a href="1-samuel-6.es.html#v6-5">1 Samuel 6:5</a>, ya en estas páginas).'),
+    ("qalal", ' ⭐ <a href="1-samuel-6.es.html#v6-5">1 Samuel 6:5</a> (ya en estas páginas) lo opone otra vez a <em>kaved</em>: después de que la mano de Jehová «pesó» sobre Asdod (5:6), los sacerdotes filisteos esperan que «aligere su mano de sobre ustedes».'),
+    ("kaved", ' ⭐ Los sacerdotes filisteos citan luego el éxodo: «¿por qué harán pesado su corazón, como Egipto y el faraón hicieron pesado su corazón?» (<a href="1-samuel-6.es.html#v6-6">1 Samuel 6:6</a>, ya en estas páginas).'),
+    ("ol", ' ⭐ Los filisteos escogen para el carro del arca «dos vacas que crían sobre las cuales no haya venido yugo», las palabras de la vaca roja de Números 19:2 (<a href="1-samuel-6.es.html#v6-7">1 Samuel 6:7</a>, ya en estas páginas).'),
+    ("even", ' ⭐ <a href="1-samuel-6.es.html#v6-14">1 Samuel 6:14</a>&ndash;18 (ya en estas páginas) tiene «una gran piedra» en el campo de Josué en Bet-semes, sobre la que los levitas ponen el arca; el hebreo del versículo 18 dice luego «la gran Abel», con un adjetivo femenino que cuadra con <em>even</em>, y el griego dice «la gran piedra».'),
+    ("qadosh", ' ⭐ Los hombres de Bet-semes preguntan: «¿Quién podrá estar de pie delante de Jehová, este Dios santo?» (<a href="1-samuel-6.es.html#v6-20">1 Samuel 6:20</a>, ya en estas páginas).'),
+    ("ofalim", ' ⭐ <a href="1-samuel-6.es.html#v6-4">1 Samuel 6:4</a>&ndash;5 (ya en estas páginas) tiene el mismo par escrito y leído para los tumores de oro de los filisteos, y 6:11 y 17 tienen la palabra leída en el propio texto.'),
+    ("parah", ' ⭐ Las vacas que crían que llevan el arca de vuelta a Israel son también <em>parot</em> (<a href="1-samuel-6.es.html#v6-7">1 Samuel 6:7</a>&ndash;14, ya en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+_s = DICTIONARY_ES["miqreh"]
+_a = "1 Samuel 6:9 lo usa del puro azar."
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["miqreh"] = (_s[0], _s[1].replace(_a, '<a href="1-samuel-6.es.html#v6-9">1 Samuel 6:9</a> (ya en estas páginas) lo usa del puro azar: «no fue su mano la que nos tocó: fue una casualidad lo que nos sucedió».'))
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "beth-shemesh":
+        _a = "(1 Samuel 6:9&ndash;20, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-6.html#v6-9">1 Samuel 6:9&ndash;20</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 9), ("1 Samuel", 6, 13), ("1 Samuel", 6, 19)]
+    elif _e["slug"] == "kiriath-jearim":
+        _a = "(1 Samuel 6:21–7:2)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-6.html#v6-21">1 Samuel 6:21</a>, now on these pages, and 7:1&ndash;2)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 21)]
+    elif _e["slug"] == "gaza":
+        _e["desc"] += ' ⭐ One of the five golden tumours the Philistines send back with the ark is &ldquo;for Gaza&rdquo; (<a href="1-samuel-6.html#v6-17">1 Samuel 6:17</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 17)]
+    elif _e["slug"] == "ashkelon":
+        _e["desc"] += ' ⭐ One of the five golden tumours the Philistines send back with the ark is &ldquo;for Ashkelon&rdquo; (<a href="1-samuel-6.html#v6-17">1 Samuel 6:17</a>, now on these pages), and in the Greek the five lords go home to Ashkelon rather than Ekron (6:16).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 17)]
+    elif _e["slug"] == "ekron":
+        _e["desc"] += ' ⭐ The five lords follow the ark&rsquo;s cart to the border of Beth-shemesh, watch it arrive, and return to Ekron the same day (<a href="1-samuel-6.html#v6-16">1 Samuel 6:16</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 16)]
+    elif _e["slug"] in ("ashdod", "gath"):
+        _e["refs"] = _e["refs"] + [("1 Samuel", 6, 17)]
+for _k, _a, _b in [
+    ("beth-shemesh", "(1 Samuel 6:9&ndash;20, todavía no en estas páginas)", '(<a href="1-samuel-6.es.html#v6-9">1 Samuel 6:9&ndash;20</a>, ya en estas páginas)'),
+    ("kiriath-jearim", "(1 Samuel 6:21–7:2)", '(<a href="1-samuel-6.es.html#v6-21">1 Samuel 6:21</a>, ya en estas páginas, y 7:1&ndash;2)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("gaza", ' ⭐ Uno de los cinco tumores de oro que los filisteos devuelven con el arca es «por Gaza» (<a href="1-samuel-6.es.html#v6-17">1 Samuel 6:17</a>, ya en estas páginas).'),
+    ("ashkelon", ' ⭐ Uno de los cinco tumores de oro que los filisteos devuelven con el arca es «por Ascalón» (<a href="1-samuel-6.es.html#v6-17">1 Samuel 6:17</a>, ya en estas páginas), y en el griego los cinco príncipes vuelven a Ascalón en lugar de a Ecrón (6:16).'),
+    ("ekron", ' ⭐ Los cinco príncipes siguen el carro del arca hasta el límite de Bet-semes, la ven llegar y vuelven a Ecrón el mismo día (<a href="1-samuel-6.es.html#v6-16">1 Samuel 6:16</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam6"] = dict(era="monarchy",
+    when="After seven months the Philistines ask their priests and diviners how to send the ark back. They are told to return it with a guilt offering, five golden tumours and five golden mice, on a new cart drawn by two milk cows whose calves are shut up at home; if the cows take the road to Beth-shemesh, the plague was Jehovah's hand. The cows go straight, lowing, and stop by a great stone in the field of Joshua at Beth-shemesh, where the reapers rejoice and offer the cows as a burnt offering. Men of Beth-shemesh are struck for gazing at the ark, and the town sends to Kiriath-jearim to take it.",
+    clock="The wheat harvest (1 Samuel 6:13), late in the period of the Judges; the ark then stays twenty years at Kiriath-jearim (1 Samuel 7:2).")
+CHAPTER_ART["1sam6"] = [dict(
+    file="dore-ark-returned-beth-shemesh.jpg",
+    title="The Ark Is Returned to Beth-shemesh",
+    title_es="El arca es devuelta a Bet-semes",
+    artist="Gustave Doré",
+    year="1866",
+    location="Engraving from Doré's illustrated Bible (La Sainte Bible, Tours, 1866)",
+    location_es="Grabado de la Biblia ilustrada por Doré (La Sainte Bible, Tours, 1866)",
+    alt="Black-and-white engraving: reapers in a tall field of wheat turn and point, one raising a sickle, toward the horizon, where a cart drawn by two cattle carries the winged ark against the sun; riders on camels stand in the middle distance, and in the right foreground lie two yoked oxen beside a wagon loaded with sheaves.",
+    note="Doré sets the scene of verse 13, the men of Beth-shemesh reaping the wheat harvest and lifting up their eyes to see the ark. He puts the ark against the sun itself, a fitting choice for a town whose name means &ldquo;house of the sun&rdquo;; the camel riders behind the reapers may be meant for the Philistine lords who followed the cart to the border.",
+    note_es="Doré pinta la escena del versículo 13, los de Bet-semes segando la cosecha del trigo y alzando los ojos para ver el arca. Pone el arca contra el sol mismo, una elección justa para un pueblo cuyo nombre significa «casa del sol»; los jinetes en camellos detrás de los segadores quizá quieran ser los príncipes filisteos que siguieron el carro hasta el límite.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:070.The_Ark_Is_Returned_to_Beth-shemesh.jpg",
+)]
