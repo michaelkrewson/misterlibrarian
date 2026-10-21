@@ -46567,3 +46567,102 @@ CHAPTER_ART["ruth4"] = [dict(
     license="Public domain (Public Domain Mark, Städel Museum)",
     source_url="https://commons.wikimedia.org/wiki/File:Boaz_assumes_the_Legacy_of_Elimelech_(SM_581).png",
 )]
+
+# --- 1 Samuel 2 ---
+DICTIONARY.append(("baat", "ba'at", "בָּעַט", "ba'at",
+    """TO KICK &mdash; the kick of an animal that has been fed too well and turns on its owner. <span data-heb="ויבעט|תבעטו">The verb stands in two verses of the Hebrew Bible</span>, and both times it follows getting fat: &ldquo;Jeshurun grew fat and kicked&rdquo; (<a href="deuteronomy-32.html#v32-15">Deuteronomy 32:15</a>, now on these pages), and the man of God&rsquo;s charge against Eli&rsquo;s house, &ldquo;Why do you kick at my sacrifice and at my offering &hellip; fattening yourselves on the first of every offering?&rdquo; (<a href="1-samuel-2.html#v2-29">1 Samuel 2:29</a>, now on these pages). The Greek of 1 Samuel 2:29 has no kick: it reads &ldquo;why have you looked &hellip; with a shameless eye&rdquo;.""",
+    ("1 Samuel", 2, 29)))
+DICTIONARY_ES["baat"] = ("baat",
+    """DAR COCES, patear — la coz del animal demasiado bien alimentado que se vuelve contra su dueño. <span data-heb="ויבעט|תבעטו">El verbo está en dos versículos de la Biblia hebrea</span>, y las dos veces viene después de engordar: «Jesurún engordó, y dio patadas» (<a href="deuteronomy-32.es.html#v32-15">Deuteronomio 32:15</a>, ya en estas páginas), y la acusación del hombre de Dios contra la casa de Elí, «¿Por qué dan coces contra mi sacrificio y contra mi ofrenda … engordándose con lo primero de toda ofrenda?» (<a href="1-samuel-2.es.html#v2-29">1 Samuel 2:29</a>, ya en estas páginas). El griego de 1 Samuel 2:29 no tiene coz: dice «¿por qué has mirado … con ojo desvergonzado?».""")
+
+DICTIONARY_ES["tzevaot"] = ("tsevaot",
+    """EJÉRCITOS — el plural del título divino YHWH TSEVAOT, «Jehová de los ejércitos», que aparece por PRIMERA vez en la Biblia en 1 Samuel 1:3, en boca de la familia de Elcaná en Silo. Los «ejércitos» son los ejércitos del cielo y de la tierra, todo el poder ordenado de la creación, del que Jehová es el comandante. ⚠ La tradición inglesa lo vierte «Jehová de las HUESTES»; el castellano de la Reina-Valera ya dice «Jehová de los ejércitos», la palabra llana que esta traducción mantiene. El título resuena luego por los profetas y los Salmos como el nombre del Dios que pelea por su pueblo, y entra, como corresponde, en un santuario, en un acto de adoración.""")
+DICTIONARY_ES["naar"] = ("naar",
+    """UN JOVEN, muchacho, mozo — y también un criado o asistente. Jeremías objeta su llamamiento con ella: «No sé hablar, porque soy solo un NAAR» (1:6), el ruego de incapacidad del profeta renuente (compárese Moisés, Gedeón, Isaías). Dios no le discute la juventud; le responde «no digas: soy un muchacho», y lo envía de todos modos. La misma palabra cubre un amplio arco de edad y de condición: el niño Moisés en la arquilla, el muchacho Isaac en Moriá, el criado de un rey. ⭐ En <a href="1-samuel-2.es.html#v2-11">1 Samuel 2</a> (ya en estas páginas) la palabra divide el capítulo: «el muchacho» Samuel sirve a Jehová (vv. 11, 18, 21, 26), mientras «el criado del sacerdote», el <em>naar</em> de los hijos de Elí, saca la carne con el tenedor (vv. 13, 15), y «el pecado de los jóvenes» es muy grande (v. 17).""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "naar":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ In <a href="1-samuel-2.html#v2-11">1 Samuel 2</a> (now on these pages) the word divides the chapter: &ldquo;the boy&rdquo; Samuel ministers to Jehovah (vv. 11, 18, 21, 26), while &ldquo;the priest&rsquo;s servant&rdquo;, the <em>na&rsquo;ar</em> of Eli&rsquo;s sons, fishes out the meat with his fork (vv. 13, 15), and &ldquo;the sin of the young men&rdquo; is very great (v. 17).',) + _d[5:]
+    elif _d[0] == "qeren":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Hannah&rsquo;s song opens and closes on it: &ldquo;my horn is lifted high in Jehovah&rdquo; and &ldquo;he lifts high the horn of his anointed&rdquo; (<a href="1-samuel-2.html#v2-1">1 Samuel 2:1</a>, 10, now on these pages), and Zechariah&rsquo;s &ldquo;horn of salvation in the house of David&rdquo; takes it up (<a href="luke-1.html#v69">Luke 1:69</a>, now on these pages).',) + _d[5:]
+    elif _d[0] == "mishpat":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ It is also the priests&rsquo; DUE: &ldquo;this shall be the priests&rsquo; due from the people&rdquo; (<a href="deuteronomy-18.html#v18-3">Deuteronomy 18:3</a>, now on these pages), and Eli&rsquo;s sons turn it into whatever a three-pronged fork brings up out of the pot (<a href="1-samuel-2.html#v2-13">1 Samuel 2:13</a>, now on these pages).',) + _d[5:]
+    elif _d[0] == "kavod":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ The verb plays HEAVY against LIGHT in the sentence on Eli&rsquo;s house: &ldquo;those who honour me (<em>kabed</em>) I will honour, and those who despise me shall be lightly esteemed (<em>qalal</em>, &lsquo;be light&rsquo;)&rdquo; (<a href="1-samuel-2.html#v2-30">1 Samuel 2:30</a>, now on these pages), after Eli had &ldquo;honoured&rdquo; his sons above God (2:29).',) + _d[5:]
+    elif _d[0] == "beliyaal":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ <a href="1-samuel-2.html#v2-12">1 Samuel 2:12</a> (now on these pages) gives Eli&rsquo;s sons the label of the men of Gibeah, &ldquo;sons of worthlessness&rdquo;, a chapter after Hannah begged Eli not to take her for &ldquo;a worthless woman&rdquo; (<a href="1-samuel-1.html#v16">1:16</a>).',) + _d[5:]
+for _k, _b in [
+    ("qeren", ' ⭐ El cántico de Ana abre y cierra con él: «mi cuerno se alza en Jehová» y «alza el cuerno de su ungido» (<a href="1-samuel-2.es.html#v2-1">1 Samuel 2:1</a>, 10, ya en estas páginas), y el «cuerno de salvación en la casa de David» de Zacarías lo retoma (<a href="luke-1.es.html#v69">Lucas 1:69</a>, ya en estas páginas).'),
+    ("mishpat", ' ⭐ Es también el DERECHO de los sacerdotes: «este será el derecho de los sacerdotes de parte del pueblo» (<a href="deuteronomy-18.es.html#v18-3">Deuteronomio 18:3</a>, ya en estas páginas), y los hijos de Elí lo convierten en lo que saque de la olla un tenedor de tres dientes (<a href="1-samuel-2.es.html#v2-13">1 Samuel 2:13</a>, ya en estas páginas).'),
+    ("kavod", ' ⭐ El verbo juega lo PESADO contra lo LIGERO en la sentencia sobre la casa de Elí: «a los que me honran (<em>kabed</em>) honraré, y los que me desprecian serán tenidos en poco (<em>qalal</em>, «ser ligero»)» (<a href="1-samuel-2.es.html#v2-30">1 Samuel 2:30</a>, ya en estas páginas), después de que Elí «honrara» a sus hijos más que a Dios (2:29).'),
+    ("beliyaal", ' ⭐ <a href="1-samuel-2.es.html#v2-12">1 Samuel 2:12</a> (ya en estas páginas) da a los hijos de Elí la etiqueta de los hombres de Guibeá, «hijos de la nada», un capítulo después de que Ana rogara a Elí que no la tuviera por «una mujer indigna» (<a href="1-samuel-1.es.html#v16">1:16</a>).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="elkanah", name="Elkanah", kind="person", aliases=["Elkanah"],
+    refs=[("1 Samuel", 1, 1), ("1 Samuel", 2, 11), ("1 Samuel", 2, 20)], videos=[],
+    desc="""&lsquo;God has acquired&rsquo; (or &lsquo;God has created&rsquo;) &mdash; the father of SAMUEL, a man of Ramathaim-zophim in the hill country of Ephraim, with two wives, HANNAH and Peninnah (<a href="1-samuel-1.html#v1">1 Samuel 1:1&ndash;2</a>, now on these pages). He goes up to Shiloh every year to sacrifice, gives Hannah a double portion, and asks her the kind, useless question, &ldquo;Am I not better to you than ten sons?&rdquo; (1:8). After Samuel is left with Eli he goes home to Ramah, and Eli blesses him and his wife each year, &ldquo;May Jehovah give you offspring from this woman&rdquo; (<a href="1-samuel-2.html#v2-20">1 Samuel 2:20</a>, now on these pages). Josephus calls him a Levite (<em>Antiquities</em> 5.342, numbered 5.10.2 in Whiston), as 1 Chronicles 6 does in its Levite lists. ⚠ The name is common: several other Elkanahs appear in Chronicles."""))
+ENCYCLOPEDIA_ES["elkanah"] = ("Elcaná",
+    """«Dios ha adquirido» (o «Dios ha creado») — el padre de SAMUEL, un hombre de Ramataim-zofim, en la región montañosa de Efraín, con dos esposas, ANA y Penina (<a href="1-samuel-1.es.html#v1">1 Samuel 1:1&ndash;2</a>, ya en estas páginas). Sube cada año a Silo a sacrificar, da a Ana una porción doble y le hace la pregunta bondadosa e inútil: «¿No soy yo para ti mejor que diez hijos?» (1:8). Después de dejar a Samuel con Elí vuelve a su casa en Ramá, y Elí lo bendice cada año a él y a su mujer: «Jehová te dé descendencia de esta mujer» (<a href="1-samuel-2.es.html#v2-20">1 Samuel 2:20</a>, ya en estas páginas). Josefo lo llama levita (<em>Antigüedades</em> 5.342, numerado 5.10.2 en Whiston), como lo hace 1 Crónicas 6 en sus listas de levitas. ⚠ El nombre es común: varios otros Elcanás aparecen en Crónicas.""")
+
+ENCYCLOPEDIA.append(dict(slug="hophni", name="Hophni", kind="person", aliases=["Hophni"],
+    refs=[("1 Samuel", 1, 3), ("1 Samuel", 2, 34)], videos=[],
+    desc="""The elder of ELI&rsquo;s two sons, always named with his brother PHINEHAS; both were priests at Shiloh (<a href="1-samuel-1.html#v3">1 Samuel 1:3</a>, now on these pages). The narrator calls the pair &ldquo;sons of worthlessness; they did not know Jehovah&rdquo;: they took meat from the pot with a three-pronged fork, demanded it raw before the fat was burned, and &ldquo;lay with the women who served at the door of the tent of meeting&rdquo; (<a href="1-samuel-2.html#v2-12">1 Samuel 2:12&ndash;22</a>, now on these pages). A man of God gives Eli the sign: &ldquo;in one day the two of them shall die&rdquo; (2:34), as they do when the ark is taken at the battle of Aphek (1 Samuel 4, not yet on these pages). Josephus calls him Ophnies (<em>Antiquities</em> 5.338, numbered 5.10.1 in Whiston). The name is often taken as Egyptian, like his brother&rsquo;s."""))
+ENCYCLOPEDIA_ES["hophni"] = ("Ofni",
+    """El mayor de los dos hijos de ELÍ, siempre nombrado con su hermano FINEES; los dos eran sacerdotes en Silo (<a href="1-samuel-1.es.html#v3">1 Samuel 1:3</a>, ya en estas páginas). El narrador llama a los dos «hijos de la nada; no conocían a Jehová»: sacaban la carne de la olla con un tenedor de tres dientes, la exigían cruda antes de que se quemara la grasa, y «se acostaban con las mujeres que servían a la puerta de la tienda de reunión» (<a href="1-samuel-2.es.html#v2-12">1 Samuel 2:12&ndash;22</a>, ya en estas páginas). Un hombre de Dios da a Elí la señal: «en un mismo día morirán los dos» (2:34), como sucede cuando el arca es tomada en la batalla de Afec (1 Samuel 4, todavía no en estas páginas). Josefo lo llama Ophnies (<em>Antigüedades</em> 5.338, numerado 5.10.1 en Whiston). El nombre suele tenerse por egipcio, como el de su hermano.""")
+
+ENCYCLOPEDIA.append(dict(slug="phinehas-eli", name="Phinehas son of Eli", kind="person", aliases=["Phinehas"],
+    refs=[("1 Samuel", 1, 3), ("1 Samuel", 2, 34)], videos=[],
+    desc="""The younger of ELI&rsquo;s two sons, a priest at Shiloh with his brother HOPHNI (<a href="1-samuel-1.html#v3">1 Samuel 1:3</a>, now on these pages), and one of the &ldquo;sons of worthlessness&rdquo; of <a href="1-samuel-2.html#v2-12">1 Samuel 2</a> (now on these pages), whose death &ldquo;in one day&rdquo; with his brother is the sign given to Eli (2:34). ⚠ He bears the name of Aaron&rsquo;s grandson <a href="encyclopedia.html#phinehas">Phinehas</a>, to whom God gave &ldquo;a covenant of everlasting priesthood&rdquo; (Numbers 25:13), and is a different man. His widow dies giving birth to a son she names Ichabod, saying, &ldquo;the glory has gone into exile from Israel&rdquo; (1 Samuel 4, not yet on these pages), and his line continues through Ahitub (1 Samuel 14:3)."""))
+ENCYCLOPEDIA_ES["phinehas-eli"] = ("Finees hijo de Elí",
+    """El menor de los dos hijos de ELÍ, sacerdote en Silo con su hermano OFNI (<a href="1-samuel-1.es.html#v3">1 Samuel 1:3</a>, ya en estas páginas), y uno de los «hijos de la nada» de <a href="1-samuel-2.es.html#v2-12">1 Samuel 2</a> (ya en estas páginas), cuya muerte «en un mismo día» con su hermano es la señal dada a Elí (2:34). ⚠ Lleva el nombre de <a href="enciclopedia.html#phinehas">Finees</a>, el nieto de Aarón, a quien Dios dio «un pacto de sacerdocio perpetuo» (Números 25:13), y es otro hombre. Su viuda muere al dar a luz un hijo al que llama Icabod, diciendo: «la gloria se ha ido al exilio de Israel» (1 Samuel 4, todavía no en estas páginas), y su línea sigue por Ahitob (1 Samuel 14:3).""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "hannah":
+        _a = "(2:1-10)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-2.html#v2-1">1 Samuel 2:1&ndash;10</a>, now on these pages)')
+        _e["desc"] += ' Each year she brings Samuel &ldquo;a little robe&rdquo;, and Jehovah &ldquo;visited Hannah&rdquo; with three more sons and two daughters (2:19, 21).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 2, 1)]
+    elif _e["slug"] == "eli":
+        _a = "(ch 2)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-2.html#v2-27">1 Samuel 2:27&ndash;36</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 2, 11), ("1 Samuel", 2, 22)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ <a href="1-samuel-2.html#v2-18">1 Samuel 2</a> (now on these pages) keeps returning to him between the reports on Eli&rsquo;s sons: the boy &ldquo;girded with a linen ephod&rdquo;, the little robe his mother brings each year, and the boy who &ldquo;went on growing, and was in favour both with Jehovah and with men&rdquo; (2:18&ndash;26), a line Luke uses of Jesus (Luke 2:52).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 2, 18), ("1 Samuel", 2, 26)]
+ENCYCLOPEDIA_ES["hannah"] = ("Ana",
+    """«Gracia, favor» — la esposa estéril y amada de ELCANÁ, provocada año tras año por su rival Penina, que ora en silencio en Silo hasta que el sacerdote Elí la toma por ebria, promete su hijo a Dios si se lo da, y cuando nace SAMUEL lo lleva de vuelta al santuario y lo deja allí (<a href="1-samuel-1.es.html#v1">1 Samuel 1</a>, ya en estas páginas). Se une a la línea de las madres estériles de Israel (Sara, Rebeca, Raquel), y su cántico del Dios que «levanta del polvo al pobre» y «abate, y también enaltece» (<a href="1-samuel-2.es.html#v2-1">1 Samuel 2:1&ndash;10</a>, ya en estas páginas) llega a ser, siglos después, el modelo del Magníficat de María (Lucas 1:46-55). Cada año le lleva a Samuel «un manto pequeño», y Jehová «visitó a Ana» con tres hijos más y dos hijas (2:19, 21).""")
+ENCYCLOPEDIA_ES["eli"] = ("Elí",
+    """El sacerdote y juez de SILO en la niñez de Samuel. Bendice a Ana mientras ora (después de tomarla primero por ebria) y cría al niño Samuel en el santuario; pero no refrena a sus propios hijos perversos, OFNI y FINEES, que profanan el sacerdocio, y un hombre de Dios anuncia el fin de su casa (<a href="1-samuel-2.es.html#v2-27">1 Samuel 2:27&ndash;36</a>, ya en estas páginas). Viejo y ciego, muere al caer de su silla cuando le llega la noticia de que el arca de Dios ha sido tomada y sus hijos muertos (capítulo 4), el derrumbe del viejo orden que reemplaza el ascenso de Samuel.""")
+ENCYCLOPEDIA_ES["samuel"] = ("Samuel",
+    """«Dios ha oído» (o «nombre de Dios») — el niño pedido a Jehová por su madre estéril ANA y devuelto para servir en Silo (<a href="1-samuel-1.es.html#v20">1 Samuel 1</a>, ya en estas páginas). Llega a ser el ÚLTIMO de los jueces y el primero de los grandes profetas, la figura bisagra de la historia de Israel: guía a un Israel arrepentido contra los filisteos, y luego, cuando el pueblo exige un rey «como todas las naciones», le advierte, unge a SAÚL y más tarde unge a DAVID en lugar de Saúl. Nazareo de por vida, llamado por Dios siendo niño («habla, que tu siervo escucha», capítulo 3), es el profeta bajo cuya palabra comienza toda la monarquía. Muere en 1 Samuel 25, antes de que termine el libro que lleva su nombre. ⭐ <a href="1-samuel-2.es.html#v2-18">1 Samuel 2</a> (ya en estas páginas) vuelve a él una y otra vez entre los informes sobre los hijos de Elí: el muchacho «ceñido de un efod de lino», el manto pequeño que su madre le trae cada año, y el muchacho que «iba creciendo, y era bien visto tanto por Jehová como por los hombres» (2:18&ndash;26), una línea que Lucas usa de Jesús (Lucas 2:52).""")
+
+CHRON_CHAPTERS["1sam2"] = dict(era="monarchy",
+    when="Hannah's song at Shiloh: the God who breaks the bows of the mighty, makes the barren bear seven, brings down to Sheol and brings up, and lifts the horn of his anointed. Against it, Eli's sons, 'sons of worthlessness', take meat with a fork before the fat is burned and lie with the women at the door of the tent of meeting, while the boy Samuel ministers in a linen ephod. A man of God announces the end of Eli's house: both sons will die in one day, and God will raise up a faithful priest.",
+    clock="Late in the period of the Judges, in Samuel's boyhood at Shiloh.")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "tzava":
+        _a = "(1 Samuel 2:22, not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="1-samuel-2.html#v2-22">1 Samuel 2:22</a>, now on these pages)'),) + _d[5:]
+_s = DICTIONARY_ES["tzava"]
+_a = "(1 Samuel 2:22, todavía no en estas páginas)"
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["tzava"] = (_s[0], _s[1].replace(_a, '(<a href="1-samuel-2.es.html#v2-22">1 Samuel 2:22</a>, ya en estas páginas)'))
+
+CHAPTER_ART["1sam2"] = [dict(
+    file="eeckhout-infant-samuel-hannah-eli.jpg",
+    title="The Infant Samuel Brought by Hannah to Eli",
+    title_es="El niño Samuel llevado por Ana a Elí",
+    artist="Gerbrand van den Eeckhout",
+    year="between 1660 and 1663",
+    location="Ashmolean Museum, Oxford",
+    location_es="Museo Ashmolean, Oxford",
+    alt="Oil painting of a small child in a long white robe standing before an old priest in a patterned robe and turban, who sits in a carved chair beside a table with a smoking golden vessel and reaches out a hand toward the child. A young woman kneels behind the child, holding him by the hand; a bearded man in a turban stands behind her leaning on a staff, and a metal jug lies on the floor in front.",
+    note="Gerbrand van den Eeckhout, a pupil of Rembrandt, paints the boy left with Eli at Shiloh, the scene this chapter opens on: &ldquo;the boy was ministering to Jehovah in the presence of Eli the priest&rdquo; (v. 11). The child already wears the long white robe that Hannah will make him &ldquo;year by year&rdquo; (v. 19).",
+    note_es="Gerbrand van den Eeckhout, discípulo de Rembrandt, pinta al muchacho dejado con Elí en Silo, la escena con que abre este capítulo: «el muchacho servía a Jehová en presencia del sacerdote Elí» (v. 11). El niño ya lleva el manto largo y blanco que Ana le hará «año tras año» (v. 19).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Eeckhout,_Gerbrand_van_den_-_The_Infant_Samuel_brought_by_Hannah_to_Eli_-_Ashmolean_Museum.jpg",
+)]
