@@ -47226,3 +47226,92 @@ CHAPTER_ART["1sam8"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Isra%C3%ABlieten_vragen_Samuel_om_een_koning_aan_te_stellen,_RP-P-1934-250.jpg",
 )]
+
+# --- 1 Samuel 9 ---
+DICTIONARY.extend([
+    ("roeh-seer", "ro&rsquo;eh (seer)", "רֹאֶה", "ro'eh",
+     'SEER &mdash; &ldquo;one who sees&rdquo;, the participle of <em>ra&rsquo;ah</em>, to see: the older title of the man of God who could be consulted. ⭐ <a href="1-samuel-9.html#v9-9">1 Samuel 9:9</a> (now on these pages) explains it in an aside: &ldquo;Formerly in Israel, when a man went to inquire of God, this is what he said: Come, let us go to the seer; for the one called a prophet today was formerly called a seer.&rdquo; Saul then asks for &ldquo;the seer&rdquo; and Samuel answers &ldquo;I am the seer&rdquo; (9:11, 18&ndash;19). &#9888; Not the same word as <em><a href="dictionary.html#roeh">ro&lsquo;eh</a></em>, &ldquo;shepherd&rdquo;, which begins with the letter ayin (רֹעֶה) where the seer begins with aleph (רֹאֶה); the two sound alike and are easily confused in transliteration.',
+     ("1 Samuel", 9, 9)),
+    ("teshurah", "teshurah", "תְּשׁוּרָה", "teshurah",
+     'A PRESENT, a gift brought to someone one visits. <span data-heb="תשורה">The word stands in one verse of the Hebrew Bible</span>, <a href="1-samuel-9.html#v9-7">1 Samuel 9:7</a> (now on these pages), where Saul worries that &ldquo;there is no present to bring to the man of God&rdquo;, and his servant offers a quarter shekel of silver; its sense comes from that verse alone. Josephus adds that the two did not know the prophet took no fee (<em>Antiquities</em> 6.48). The KJV and ASV say &ldquo;present&rdquo;, the NWT 1984 &ldquo;gift&rdquo;.',
+     ("1 Samuel", 9, 7)),
+])
+DICTIONARY_ES["roeh-seer"] = ("ro&rsquo;eh (vidente)",
+    'VIDENTE &mdash; «el que ve», el participio de <em>ra&rsquo;ah</em>, ver: el título más antiguo del hombre de Dios al que se podía consultar. ⭐ <a href="1-samuel-9.es.html#v9-9">1 Samuel 9:9</a> (ya en estas páginas) lo explica en un aparte: «Antes en Israel, cuando un hombre iba a consultar a Dios, decía así: Vengan y vamos al vidente; porque al que hoy se llama profeta antes se le llamaba vidente». Saúl pregunta luego por «el vidente» y Samuel responde «Yo soy el vidente» (9:11, 18&ndash;19). &#9888; No es la misma palabra que <em><a href="diccionario.html#roeh">ro&lsquo;eh</a></em>, «pastor», que empieza con la letra ayin (רֹעֶה) donde vidente empieza con álef (רֹאֶה); las dos suenan igual y se confunden fácilmente en la transliteración.')
+DICTIONARY_ES["teshurah"] = ("teshurah",
+    'UN PRESENTE, un regalo que se lleva a quien se visita. <span data-heb="תשורה">La palabra aparece en un solo versículo de la Biblia hebrea</span>, <a href="1-samuel-9.es.html#v9-7">1 Samuel 9:7</a> (ya en estas páginas), donde a Saúl le preocupa que «no hay presente que llevar al hombre de Dios», y su criado ofrece un cuarto de siclo de plata; su sentido sale solo de ese versículo. Josefo añade que los dos no sabían que el profeta no aceptaba paga (<em>Antigüedades</em> 6.48). La RV60 dice «qué ofrecerle»; la TNM 1987 «regalo».')
+DICTIONARY_ES["gibbor"] = ("gibbor",
+    'Hombre fuerte, guerrero. Se usa de la época de los nefilim (Génesis 6:4) y de Nimrod, el primer constructor de imperios después del diluvio. ⭐ Con <em><a href="diccionario.html#chayil">chayil</a></em> forma el título <em>gibbor chayil</em>, «hombre valiente y poderoso», que se dice de Booz (<a href="ruth-2.es.html#v2-1">Rut 2:1</a>) y de Cis, el padre de Saúl (<a href="1-samuel-9.es.html#v9-1">1 Samuel 9:1</a>, los dos ya en estas páginas); la TNM 1987 lo entiende allí de la riqueza, «un hombre poderoso en riquezas».')
+DICTIONARY_ES["nagid"] = ("nagid",
+    'CAUDILLO, gobernante designado &mdash; la palabra más antigua y menos solemne que la tradición de Israel prefiere para el hombre que Dios pone sobre su pueblo, distinta de <em>melekh</em>, «rey». Samuel unge a Saúl como <em>nagid</em> antes de que nadie lo llame rey: «lo ungirás como caudillo sobre mi pueblo Israel» (<a href="1-samuel-9.es.html#v9-16">1 Samuel 9:16</a>, ya en estas páginas); David usa la palabra de Salomón en 1 Reyes 1:35 («a él he designado para que sea caudillo sobre Israel y sobre Judá»). Un <em>nagid</em> es designado por alguien; un <em>melekh</em> simplemente reina.')
+DICTIONARY_ES["atsar"] = ("atsar",
+    'Refrenar, retener, cerrar. Es la palabra de Saray para su esterilidad &mdash;«Jehová me ha impedido dar a luz» (Génesis 16:2)&mdash; que vuelve redoblada en 20:18: la casa que tomó a Sara recibe, por un tiempo, la condición de Sara. ⭐ En <a href="1-samuel-9.es.html#v9-17">1 Samuel 9:17</a> (ya en estas páginas) Jehová dice de Saúl: «Este refrenará a mi pueblo», el verbo de retener usado de gobernar; la TNM 1987 dice «mantendrá a mi pueblo dentro de límites», la RV60 «gobernará».')
+
+_DICT9_EN = {
+    "gibbor": ' ⭐ With <em><a href="dictionary.html#chayil">chayil</a></em> it makes the title <em>gibbor chayil</em>, &ldquo;a mighty man of valour&rdquo;, used of Boaz (<a href="ruth-2.html#v2-1">Ruth 2:1</a>) and of Kish, Saul&rsquo;s father (<a href="1-samuel-9.html#v9-1">1 Samuel 9:1</a>, both now on these pages); the NWT 1984 takes it there of wealth, &ldquo;a man mighty in wealth&rdquo;.',
+    "nagid": ' ⭐ <a href="1-samuel-9.html#v9-16">1 Samuel 9:16</a> (now on these pages): &ldquo;you shall anoint him as leader over my people Israel&rdquo;, the day after the people asked for a <em>melekh</em>.',
+    "atsar": ' ⭐ At <a href="1-samuel-9.html#v9-17">1 Samuel 9:17</a> (now on these pages) Jehovah says of Saul, &ldquo;This one will restrain my people&rdquo;, the verb of holding back used of governing; the NWT 1984 says &ldquo;keep my people within bounds&rdquo;, the KJV &ldquo;reign over&rdquo;.',
+    "navi": ' ⭐ <a href="1-samuel-9.html#v9-9">1 Samuel 9:9</a> (now on these pages) says that &ldquo;the one called a prophet today was formerly called a seer&rdquo; (<a href="dictionary.html#roeh-seer">ro&rsquo;eh</a>).',
+    "ish-haelohim": ' ⭐ <a href="1-samuel-9.html#v9-6">1 Samuel 9:6</a>&ndash;10 (now on these pages) uses it of Samuel, unnamed, in a servant&rsquo;s mouth: &ldquo;there is a man of God in this city … all that he says surely comes about&rdquo;.',
+    "bamah": ' ⭐ <a href="1-samuel-9.html#v9-12">1 Samuel 9:12</a>&ndash;25 (now on these pages) shows a high place in ordinary use and without reproach: the people sacrifice there, Samuel blesses the sacrifice, and about thirty guests eat in its hall.',
+    "shaal": ' ⭐ The king appears in <a href="1-samuel-9.html#v9-2">1 Samuel 9:2</a> (now on these pages): &ldquo;he had a son whose name was Saul&rdquo;.',
+}
+_DICT9_SWAP = {
+    "avad": ("Saul's father's donkeys, which <em>were lost</em> (1 Samuel 9:3); Psalm 119:176, <em>I have strayed like a lost sheep</em>, and Jeremiah 50:6's <em>lost sheep</em> (none of the last three yet on these pages).",
+             'Saul\'s father\'s donkeys, which <em>were lost</em> (<a href="1-samuel-9.html#v9-3">1 Samuel 9:3</a>, now on these pages); Psalm 119:176, <em>I have strayed like a lost sheep</em>, and Jeremiah 50:6\'s <em>lost sheep</em> (neither yet on these pages).'),
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT9_SWAP:
+        _a, _b = _DICT9_SWAP[_d[0]]
+        assert _d[4].count(_a) == 1, _d[0]
+        _d = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+    if _d[0] in _DICT9_EN:
+        _d = _d[:4] + (_d[4] + _DICT9_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+_s = DICTIONARY_ES["avad"]
+_a = "las asnas del padre de Saúl, que <em>se habían perdido</em> (1 Samuel 9:3); el Salmo 119:176, <em>anduve errante como oveja perdida</em>, y las <em>ovejas perdidas</em> de Jeremías 50:6 (ninguno de los tres últimos todavía en estas páginas)."
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["avad"] = (_s[0], _s[1].replace(_a, 'las asnas del padre de Saúl, que <em>se habían perdido</em> (<a href="1-samuel-9.es.html#v9-3">1 Samuel 9:3</a>, ya en estas páginas); el Salmo 119:176, <em>anduve errante como oveja perdida</em>, y las <em>ovejas perdidas</em> de Jeremías 50:6 (ninguno de los dos todavía en estas páginas).'))
+for _k, _b in [
+    ("navi", ' ⭐ <a href="1-samuel-9.es.html#v9-9">1 Samuel 9:9</a> (ya en estas páginas) dice que «al que hoy se llama profeta antes se le llamaba vidente» (<a href="diccionario.html#roeh-seer">ro&rsquo;eh</a>).'),
+    ("ish-haelohim", ' ⭐ <a href="1-samuel-9.es.html#v9-6">1 Samuel 9:6</a>&ndash;10 (ya en estas páginas) lo usa de Samuel, sin nombrarlo, en boca de un criado: «hay en esta ciudad un hombre de Dios … todo lo que dice ciertamente sucede».'),
+    ("bamah", ' ⭐ <a href="1-samuel-9.es.html#v9-12">1 Samuel 9:12</a>&ndash;25 (ya en estas páginas) muestra un lugar alto en uso ordinario y sin reproche: el pueblo sacrifica allí, Samuel bendice el sacrificio, y unos treinta convidados comen en su sala.'),
+    ("shaal", ' ⭐ El rey aparece en <a href="1-samuel-9.es.html#v9-2">1 Samuel 9:2</a> (ya en estas páginas): «tenía un hijo cuyo nombre era Saúl».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="kish", name="Kish (Saul's father)", kind="person", aliases=["Kish"],
+    refs=[("1 Samuel", 9, 1), ("1 Samuel", 9, 3)], videos=[],
+    desc='A Benjaminite, son of Abiel, &ldquo;a mighty man of valour&rdquo; (<em>gibbor chayil</em>), and the father of Saul, Israel&rsquo;s first king (<a href="1-samuel-9.html#v9-1">1 Samuel 9:1</a>&ndash;3, now on these pages). It is Kish&rsquo;s lost she-donkeys that send Saul to Samuel. Josephus calls him &ldquo;a man of good family and good character&rdquo; and says he prized the donkeys above his other possessions (<em>Antiquities</em> 6.45&ndash;46). &#9888; The name is not unique: a Levite Kish of the clan of Merari (1 Chronicles 23:21) and Mordecai&rsquo;s ancestor Kish, &ldquo;a Benjamite&rdquo; (Esther 2:5), are other men (none of these yet on these pages); the New Testament calls Saul &ldquo;the son of Kish&rdquo; (<a href="acts-13.html#v13-21">Acts 13:21</a>, already on these pages).'))
+ENCYCLOPEDIA_ES["kish"] = ("Cis (padre de Saúl)",
+    'Un benjamita, hijo de Abiel, «un hombre valiente y poderoso» (<em>gibbor chayil</em>), y padre de Saúl, el primer rey de Israel (<a href="1-samuel-9.es.html#v9-1">1 Samuel 9:1</a>&ndash;3, ya en estas páginas). Son las asnas perdidas de Cis las que llevan a Saúl hasta Samuel. Josefo lo llama «hombre de buena familia y de buen carácter» y dice que apreciaba las asnas más que sus otras posesiones (<em>Antigüedades</em> 6.45&ndash;46). &#9888; El nombre no es único: un levita Cis del clan de Merari (1 Crónicas 23:21) y Cis, el antepasado de Mardoqueo, «benjamita» (Ester 2:5), son otros hombres (ninguno todavía en estas páginas); el Nuevo Testamento llama a Saúl «hijo de Cis» (<a href="acts-13.es.html#v13-21">Hechos 13:21</a>, ya en estas páginas).')
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "saul-king":
+        _e["desc"] += ' ⭐ He enters at <a href="1-samuel-9.html#v9-2">1 Samuel 9</a> (now on these pages): the son of Kish, &ldquo;a young man, and good&rdquo;, taller than all the people from his shoulders upward, sent with a servant to find his father&rsquo;s she-donkeys; the servant suggests asking the seer, and Jehovah has already told Samuel, &ldquo;About this time tomorrow I will send you a man from the land of Benjamin&rdquo;. Saul answers Samuel&rsquo;s hints with &ldquo;Am I not a Benjamite, from the smallest of the tribes of Israel?&rdquo;'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 9, 2), ("1 Samuel", 9, 17), ("1 Samuel", 9, 21)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ As &ldquo;the seer&rdquo; of an unnamed town in the land of Zuph he receives Saul, seats him at the head of the table and gives him the kept portion, having been told the day before, &ldquo;you shall anoint him as leader over my people Israel&rdquo; (<a href="1-samuel-9.html#v9-15">1 Samuel 9:15</a>&ndash;27, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 9, 14), ("1 Samuel", 9, 19)]
+ENCYCLOPEDIA_ES["saul-king"] = ("Saúl (el primer rey de Israel)",
+    'El PRIMER rey de Israel &mdash; un joven benjamita alto enviado a buscar unas asnas perdidas que volvió ungido (1 Samuel 9&ndash;10). Es la respuesta a una petición que el pueblo hizo y de la que se le advirtió: «danos un rey que nos juzgue, como todas las naciones». ⚠️ Su reinado es el estudio de un hombre que se deshace: victorias tempranas, luego dos actos de desobediencia que le cuestan el reino &mdash;ofrecer él mismo el sacrificio en Gilgal, y perdonar a Agag y lo mejor de los rebaños cuando se le mandó destruir a AMALEC (1 Samuel 15)&mdash;, seguidos de los celos contra David, una lanza arrojada contra él dos veces, la matanza de los sacerdotes de Nob y una visita nocturna a una médium en Endor. Muere por su propia espada en el monte Gilboa con tres de sus hijos, y David, a quien persiguió durante años, rasga sus vestidos y compone su elegía (2 Samuel 1). No confundir con SAULO de Tarso, el apóstol Pablo, que llevaba su nombre. ⭐ Entra en escena en <a href="1-samuel-9.es.html#v9-2">1 Samuel 9</a> (ya en estas páginas): el hijo de Cis, «joven y bueno», más alto que todo el pueblo de los hombros arriba, enviado con un criado a buscar las asnas de su padre; el criado propone consultar al vidente, y Jehová ya le ha dicho a Samuel: «Mañana a esta hora te enviaré un hombre de la tierra de Benjamín». Saúl responde a las insinuaciones de Samuel con «¿No soy yo benjamita, de la más pequeña de las tribus de Israel?».')
+_s = ENCYCLOPEDIA_ES["samuel"]
+ENCYCLOPEDIA_ES["samuel"] = (_s[0], _s[1] + ' ⭐ Como «el vidente» de una ciudad sin nombre en la tierra de Zuf recibe a Saúl, lo sienta a la cabecera de la mesa y le da la porción guardada, después de que se le dijera el día antes: «lo ungirás como caudillo sobre mi pueblo Israel» (<a href="1-samuel-9.es.html#v9-15">1 Samuel 9:15</a>&ndash;27, ya en estas páginas).')
+
+CHRON_CHAPTERS["1sam9"] = dict(era="monarchy",
+    when="Kish of Benjamin loses his she-donkeys and sends his son Saul, a young man taller than all the people, to look for them with a servant. After three days in the land of Zuph the servant proposes asking the man of God in the town, the seer. Jehovah has told Samuel the day before that he will send a man from Benjamin to be anointed leader over Israel. Samuel meets Saul at the gate, tells him the donkeys are found, seats him at the head of thirty guests at the high place, sets the kept portion before him, and at dawn takes him to the edge of the town to give him the word of God.",
+    clock="The day before and the day of Saul's arrival, at the end of Samuel's judgeship (1 Samuel 9:15, 26).")
+CHAPTER_ART["1sam9"] = [dict(
+    file="tissot-saul-meets-samuel.jpg",
+    title="Saul Meets Samuel",
+    title_es="Saúl se encuentra con Samuel",
+    artist="James Tissot",
+    year="about 1896–1900",
+    location="Pen-and-ink drawing for Tissot's illustrated Old Testament, published in Paris by M. de Brunoff",
+    location_es="Dibujo a pluma para el Antiguo Testamento ilustrado de Tissot, publicado en París por M. de Brunoff",
+    alt="Pen drawing: in a stone gateway under an arch, a tall bearded young man in a belted robe stands facing an old man in a hooded cloak who leans on a staff and looks up at him.",
+    note="Tissot draws verse 18: Saul, a head taller, meets an old man &ldquo;in the middle of the gate&rdquo; and asks him the way to the seer&rsquo;s house, not knowing that the old man is the seer.",
+    note_es="Tissot dibuja el versículo 18: Saúl, más alto por una cabeza, encuentra a un anciano «en medio de la puerta» y le pregunta por la casa del vidente, sin saber que el anciano es el vidente.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_255_Saul_meets_with_Samuel_1_Samuel_9_17_for_Brunoff_242_Sa%C3%BCl_rencontre_Samuel.jpg",
+)]
