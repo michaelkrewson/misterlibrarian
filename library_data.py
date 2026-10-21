@@ -46354,3 +46354,78 @@ CHAPTER_ART["judg21"] = [dict(
     license="CC BY-SA 4.0",
     source_url="https://commons.wikimedia.org/wiki/File:Tel_Shiloh_(biblical_site)_2017.jpg",
 )]
+
+# --- Ruth 2 ---
+ENCYCLOPEDIA.append(dict(slug="boaz", name="Boaz", kind="person", aliases=["Boaz"],
+    refs=[("Ruth", 2, 1), ("Matthew", 1, 5)], videos=[],
+    desc="""A landowner of Bethlehem, &ldquo;a kinsman of her husband&rsquo;s&rdquo; to Naomi, &ldquo;a mighty man of valour, of the clan of Elimelech&rdquo; (<a href="ruth-2.html#v2-1">Ruth 2:1</a>, now on these pages). <em>Gibbor chayil</em> is the title of Jephthah, and <em>chayil</em> covers strength, worth and wealth; the KJV and the ASV have &ldquo;a mighty man of wealth&rdquo;. In <a href="ruth-2.html#v2-4">Ruth 2</a> he greets his reapers in Jehovah&rsquo;s name, notices the Moabite gleaner, tells her to keep to his field, blesses her &ldquo;under whose wings you have come to take refuge&rdquo;, feeds her at the meal, and has his men leave grain for her on purpose; Naomi then calls him &ldquo;one of our redeemers&rdquo; (2:20). He later marries Ruth as redeemer (Ruth 3&ndash;4, not yet on these pages) and is great-grandfather of David; Matthew&rsquo;s genealogy names him with Rahab as his mother (Matthew 1:5). Josephus calls him Booz and says he took Ruth in when she first came to Bethlehem (<em>Antiquities</em> 5.323, numbered 5.9.2 in Whiston)."""))
+ENCYCLOPEDIA_ES["boaz"] = ("Booz",
+    """Un propietario de Belén, «un pariente de su marido» para Noemí, «un hombre valiente y poderoso, del clan de Elimélec» (<a href="ruth-2.es.html#v2-1">Rut 2:1</a>, ya en estas páginas). <em>Guibor jáyil</em> es el título de Jefté, y <em>jáyil</em> abarca fuerza, valía y riqueza; la RV60 dice «hombre rico». En <a href="ruth-2.es.html#v2-4">Rut 2</a> saluda a sus segadores en nombre de Jehová, se fija en la espigadora moabita, le dice que se quede en su campo, la bendice «bajo cuyas alas has venido a refugiarte», le da de comer y hace que sus hombres le dejen grano a propósito; luego Noemí lo llama «uno de nuestros redentores» (2:20). Después se casa con Rut como redentor (Rut 3&ndash;4, todavía no en estas páginas) y es bisabuelo de David; la genealogía de Mateo lo nombra con Rahab como madre (Mateo 1:5). Josefo lo llama Booz y dice que acogió a Rut cuando ella llegó a Belén (<em>Antigüedades</em> 5.323, numerado 5.9.2 en Whiston).""")
+
+ENCYCLOPEDIA_ES["ruth"] = ("Rut",
+    """Una mujer de MOAB, viuda de Mahlón, que se une a su suegra israelita NOEMÍ con el gran juramento «tu pueblo es mi pueblo, y tu Dios mi Dios» (<a href="ruth-1.es.html#v16">1:16</a>) y vuelve con ella a Belén. El libro que lleva su nombre cuenta cómo esta extranjera convertida espiga en el campo de Booz (<a href="ruth-2.es.html#v2-2">Rut 2</a>, ya en estas páginas), reclama la redención del pariente y se casa con él, y llega a ser bisabuela de DAVID (4:17) y, en la genealogía de Mateo, antepasada de Jesús (Mateo 1:5). ⚠️ Que la heroína sea una MOABITA va directamente contra la prohibición de <a href="deuteronomy-23.es.html#v23-4">Deuteronomio 23:4</a> de que los moabitas entren en la asamblea de Jehová: la pertenencia de Rut al pacto se gana con <em>jésed</em> y fe, no con la sangre. El sentido de su nombre es incierto; se lo suele relacionar con <em>reut</em>, «amistad, compañía», o con una raíz de «refresco».""")
+ENCYCLOPEDIA_ES["naomi"] = ("Noemí (Mara)",
+    """Esposa de ELIMÉLEC de Belén, que pierde en Moab al marido y a sus dos hijos y vuelve vacía a su ciudad, y dice a las mujeres que no la llamen Noemí («mi dulzura») sino Mara («amarga»), «porque el Todopoderoso me ha amargado mucho» (<a href="ruth-1.es.html#v20">1:20</a>). Su manera franca de nombrar a Dios como autor de su dolor recorre el libro. En <a href="ruth-2.es.html#v2-20">Rut 2:20</a> (ya en estas páginas) es ella quien bendice primero al desconocido que se fijó en Rut y quien reconoce en Booz a «uno de nuestros redentores»; su plan para buscar «descanso» a su nuera RUT (3:1) mueve el desenlace. Al final las mujeres de Belén le dicen que ha nacido un redentor y que «a Noemí le ha nacido un hijo» (4:17): el vacío invertido, y el linaje de David comenzado.""")
+ENCYCLOPEDIA_ES["elimelech"] = ("Elimélec",
+    """«Mi Dios es Rey» — un hombre de Belén, marido de NOEMÍ, que lleva a su familia a residir en MOAB durante un hambre y muere allí (<a href="ruth-1.es.html#v2">Rut 1:2&ndash;3</a>), dejando el nombre y la tierra que Booz «redimirá» más tarde al casarse con Rut (4:9&ndash;10). En <a href="ruth-2.es.html#v2-1">Rut 2:1</a> (ya en estas páginas) Booz es presentado como «del clan de Elimélec». Su nombre, pesado y esperanzado, está sobre una historia de destierro y muerte, y luego sobre un reinado, el de David, restaurado por su linaje.""")
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "naomi":
+        _e["desc"] += ' In <a href="ruth-2.html#v2-20">Ruth 2:20</a> (now on these pages) she is the first to bless the unknown man who took notice of Ruth, and the one who recognizes Boaz as &ldquo;one of our redeemers&rdquo;.'
+    elif _e["slug"] == "elimelech":
+        _e["desc"] += ' <a href="ruth-2.html#v2-1">Ruth 2:1</a> (now on these pages) introduces Boaz as &ldquo;of the clan of Elimelech&rdquo;.'
+    elif _e["slug"] == "ruth":
+        _e["desc"] += ' <a href="ruth-2.html#v2-2">Ruth 2</a> (now on these pages) tells her first day in the field of Boaz.'
+
+DICTIONARY.append(("laqat", "laqat", "לָקַט", "laqat",
+    """TO GLEAN, gather up what is left lying &mdash; the poor&rsquo;s right in a harvested field. The law forbids the owner to gather &ldquo;the gleanings of your harvest&rdquo;, <em>leqet</em> (<a href="leviticus-19.html#v19-9">Leviticus 19:9</a> and <a href="leviticus-23.html#v23-22">23:22</a>, both now on these pages), and leaves them for the poor and the foreigner. ⭐ Ruth 2 is the word&rsquo;s chapter: Ruth asks to glean (2:2), gleans after the reapers (2:3), is allowed to glean &ldquo;even among the sheaves&rdquo; (2:15), gleans until evening (2:17), and is asked &ldquo;Where did you glean today?&rdquo; (2:19), all in <a href="ruth-2.html#v2-2">Ruth 2</a> (now on these pages). The same verb is used of gathering manna (<a href="exodus-16.html#v16-4">Exodus 16:4</a>, now on these pages) and of the &ldquo;empty men&rdquo; who &ldquo;gathered&rdquo; to Jephthah (<a href="judges-11.html#v11-3">Judges 11:3</a>, now on these pages). The KJV and the ASV have &ldquo;glean&rdquo; throughout Ruth 2; the NIV &ldquo;pick up the leftover grain&rdquo; at 2:2.""",
+    ("Ruth", 2, 2)))
+DICTIONARY_ES["laqat"] = ("laqat",
+    """ESPIGAR, recoger lo que queda en el suelo — el derecho del pobre en un campo ya segado. La ley prohíbe al dueño recoger «las espigas de tu siega», <em>léqet</em> (<a href="leviticus-19.es.html#v19-9">Levítico 19:9</a> y <a href="leviticus-23.es.html#v23-22">23:22</a>, los dos ya en estas páginas), y las deja para el pobre y el extranjero. ⭐ Rut 2 es el capítulo de esta palabra: Rut pide espigar (2:2), espiga detrás de los segadores (2:3), se le permite espigar «también entre las gavillas» (2:15), espiga hasta la tarde (2:17), y se le pregunta «¿Dónde espigaste hoy?» (2:19), todo en <a href="ruth-2.es.html#v2-2">Rut 2</a> (ya en estas páginas). El mismo verbo se usa para recoger el maná (<a href="exodus-16.es.html#v16-4">Éxodo 16:4</a>, ya en estas páginas) y para los «hombres vanos» que se «juntaron» con Jefté (<a href="judges-11.es.html#v11-3">Jueces 11:3</a>, ya en estas páginas). La RV60 dice «espigar» a lo largo de Rut 2; la RV 1909 «coger espigas» en 2:2.""")
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "omer":
+        _a = "Ruth 2:15 (not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '<a href="ruth-2.html#v2-15">Ruth 2:15</a> (now on these pages)'),) + _d[5:]
+    elif _d[0] == "taval":
+        _a = "(Ruth 2:14, not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="ruth-2.html#v2-14">Ruth 2:14</a>, now on these pages)'),) + _d[5:]
+    elif _d[0] == "kanaf":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Boaz blesses Ruth by Jehovah &ldquo;under whose wings you have come to take refuge&rdquo; (<a href="ruth-2.html#v2-12">Ruth 2:12</a>, now on these pages); &ldquo;under his wings&rdquo; stands elsewhere only at Psalm 91:4, and the same word returns when Ruth asks Boaz to spread his own &ldquo;wing&rdquo; over her (Ruth 3:9, not yet on these pages).',) + _d[5:]
+    elif _d[0] == "goel":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Ruth 2:20 is the first time the book uses the word: Naomi says of Boaz, &ldquo;he is one of our redeemers&rdquo; (<a href="ruth-2.html#v2-20">Ruth 2:20</a>, now on these pages), and &ldquo;one of&rdquo; leaves room for a nearer one (3:12).',) + _d[5:]
+    elif _d[0] == "shibbolet":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Ruth gleans &ldquo;among the ears of grain&rdquo;, <em>ba-shibbolim</em> (<a href="ruth-2.html#v2-2">Ruth 2:2</a>, now on these pages), the plural of the word Ephraim could not say at the fords (<a href="judges-12.html#v12-6">Judges 12:6</a>).',) + _d[5:]
+for _k, _a, _b in [
+    ("omer", "Rut 2:15 (todavía no en estas páginas)", '<a href="ruth-2.es.html#v2-15">Rut 2:15</a> (ya en estas páginas)'),
+    ("taval", "(Rut 2:14, todavía no en estas páginas)", '(<a href="ruth-2.es.html#v2-14">Rut 2:14</a>, ya en estas páginas)'),
+    ("kanaf", None, ' ⭐ Booz bendice a Rut por Jehová, «bajo cuyas alas has venido a refugiarte» (<a href="ruth-2.es.html#v2-12">Rut 2:12</a>, ya en estas páginas); «bajo sus alas» solo vuelve en el Salmo 91:4, y la misma palabra regresa cuando Rut le pide a Booz que extienda su propia «ala» sobre ella (Rut 3:9, todavía no en estas páginas).'),
+    ("goel", None, ' ⭐ Rut 2:20 es la primera vez que el libro usa la palabra: Noemí dice de Booz, «es uno de nuestros redentores» (<a href="ruth-2.es.html#v2-20">Rut 2:20</a>, ya en estas páginas), y el «uno de» deja lugar a otro más cercano (3:12).'),
+    ("shibbolet", None, ' ⭐ Rut espiga «entre las espigas», <em>ba-shibolim</em> (<a href="ruth-2.es.html#v2-2">Rut 2:2</a>, ya en estas páginas), el plural de la palabra que Efraín no podía decir en los vados (<a href="judges-12.es.html#v12-6">Jueces 12:6</a>).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    if _a is None:
+        DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+    else:
+        assert _s[1].count(_a) == 1, _k
+        DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+CHRON_CHAPTERS["ruth2"] = dict(era="exodus",
+    when="At the beginning of the barley harvest in Bethlehem, Ruth the Moabite goes out to glean and by chance comes to the field of Boaz, a kinsman of Elimelech. Boaz greets his reapers in Jehovah's name, learns who she is, tells her to stay with his young women, blesses her 'under whose wings you have come to take refuge', feeds her at the meal and has grain left for her on purpose. She brings home about an ephah of barley, and Naomi recognizes Boaz as 'one of our redeemers'. Ruth gleans with his workers through the barley and wheat harvests.",
+    clock="'In the days when the judges judged' (Ruth 1:1); undated within that period. The genealogy of Ruth 4 puts Boaz three generations before David.")
+
+CHAPTER_ART["ruth2"] = [dict(
+    file="poussin-summer-ruth-and-boaz.jpg",
+    title="Summer (Ruth and Boaz)",
+    title_es="El verano (Rut y Booz)",
+    artist="Nicolas Poussin",
+    year="1660–1664",
+    location="Musée du Louvre, Paris (one of The Four Seasons)",
+    location_es="Museo del Louvre, París (una de Las cuatro estaciones)",
+    alt="Oil painting of a broad wheat harvest under a cloudy sky: in the foreground a man in a turban and orange robe stands and gestures toward a young woman kneeling with a handful of ears of grain; around them reapers cut and bind sheaves, a man stands with a staff, women prepare food in the shade of a large tree at left, and horses tread grain beyond, with a hill town in the distance.",
+    note="Poussin sets verses 5&ndash;10 in a full summer field: Boaz, his foreman standing by with a staff, and Ruth kneeling at his feet with her gleanings, while the reapers work on around them and bread is set out under the tree for the meal of verse 14. The painting is &ldquo;Summer&rdquo; in Poussin&rsquo;s late cycle of the four seasons, each told through a scene from the Bible.",
+    note_es="Poussin sitúa los versículos 5&ndash;10 en un campo de pleno verano: Booz, su capataz de pie con un bastón, y Rut arrodillada a sus pies con sus espigas, mientras los segadores siguen trabajando alrededor y bajo el árbol se pone el pan para la comida del versículo 14. El cuadro es «El verano» del ciclo tardío de Poussin sobre las cuatro estaciones, cada una contada con una escena de la Biblia.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27%C3%89t%C3%A9_ou_Ruth_et_Booz.jpg",
+)]
