@@ -46174,3 +46174,104 @@ _s = DICTIONARY_ES["nevalah"]
 _a = "la misma palabra nombra la violación colectiva que enciende la guerra civil de Israel (Jueces 19-20), el asalto de Amnón a Tamar (2 Samuel 13:12) y el sacrilegio de Acán (Josué 7:15) — ninguno de los tres todavía en estas páginas."
 assert _s[1].count(_a) == 1
 DICTIONARY_ES["nevalah"] = (_s[0], _s[1].replace(_a, 'la misma palabra nombra la violación colectiva que enciende la guerra civil de Israel (<a href="judges-19.es.html#v19-23">Jueces 19:23&ndash;24</a>, ya en estas páginas, y Jueces 20), el asalto de Amnón a Tamar (2 Samuel 13:12, todavía no en estas páginas) y el sacrilegio de Acán (<a href="joshua-7.es.html#v7-15">Josué 7:15</a>, ya en estas páginas).'))
+
+# --- Judges 20 ---
+ENCYCLOPEDIA.append(dict(slug="mizpah-benjamin", name="Mizpah (of Benjamin)", kind="place", aliases=[],
+    refs=[("Judges", 20, 1)], videos=[],
+    coords=(31.8856, 35.2170, 0.4), approx=True,
+    modern="Usually identified with Tell en-Nasbeh, about 12 km north of Jerusalem (reported)",
+    desc="""&ldquo;The watchtower&rdquo; &mdash; a town of Benjamin on the road north from Jerusalem, distinct from the Mizpah in Gilead where Israel camped against Ammon (<a href="judges-10.html#v10-17">Judges 10:17</a>, now on these pages). In <a href="judges-20.html#v20-1">Judges 20</a> (now on these pages) all Israel gathers here &ldquo;as one man, from Dan to Beersheba&rdquo;, hears the Levite&rsquo;s account of Gibeah and resolves on war against Benjamin; the oath not to give their daughters to Benjamin was sworn here too (Judges 21:1, not yet on these pages). Samuel later gathers Israel at Mizpah and judges there (1 Samuel 7:5&ndash;6, not yet on these pages). The identification with Tell en-Nasbeh is the usual one; Nebi Samwil has also been proposed. The map point follows Tell en-Nasbeh."""))
+ENCYCLOPEDIA_ES["mizpah-benjamin"] = ("Mizpá (de Benjamín)",
+    """«La atalaya» — una ciudad de Benjamín en el camino que sube al norte desde Jerusalén, distinta de la Mizpá de Galaad donde Israel acampó contra Amón (<a href="judges-10.es.html#v10-17">Jueces 10:17</a>, ya en estas páginas). En <a href="judges-20.es.html#v20-1">Jueces 20</a> (ya en estas páginas) todo Israel se reúne aquí «como un solo hombre, desde Dan hasta Beerseba», oye el relato del levita sobre Guibeá y decide la guerra contra Benjamín; aquí se juró también no dar sus hijas a Benjamín (Jueces 21:1, todavía no en estas páginas). Más tarde Samuel reúne a Israel en Mizpá y juzga allí (1 Samuel 7:5&ndash;6, todavía no en estas páginas). La identificación con Tell en-Nasbeh es la habitual; también se ha propuesto Nebi Samwil. El punto del mapa sigue a Tell en-Nasbeh.""")
+
+ENCYCLOPEDIA.append(dict(slug="rock-of-rimmon", name="The rock of Rimmon", kind="place", aliases=[],
+    refs=[("Judges", 20, 45)], videos=[],
+    coords=(31.9300, 35.2975, 0.3), approx=True,
+    modern="Often placed at Rammun, east of Bethel at the edge of the wilderness (reported)",
+    desc="""&ldquo;The rock of the pomegranate&rdquo; (<em>sela ha-rimmon</em>) &mdash; a crag toward the wilderness east of Benjamin&rsquo;s towns. In <a href="judges-20.html#v20-45">Judges 20:45&ndash;47</a> (now on these pages) the Benjaminites flee toward it after the ambush at Gibeah, and six hundred men reach it and hold out there &ldquo;four months&rdquo;; the assembly later sends to them there to make peace (Judges 21:13, not yet on these pages). Josephus calls it &ldquo;a rock called Rhoa&rdquo; in the wilderness (<em>Antiquities</em> 5.166, numbered 5.2.12 in Whiston). The site is not certain; the map point follows the usual identification with the village of Rammun."""))
+ENCYCLOPEDIA_ES["rock-of-rimmon"] = ("La peña de Rimón",
+    """«La peña del granado» (<em>sela ha-rimón</em>) — un peñasco hacia el desierto, al este de las ciudades de Benjamín. En <a href="judges-20.es.html#v20-45">Jueces 20:45&ndash;47</a> (ya en estas páginas) los benjamitas huyen hacia ella después de la emboscada de Guibeá, y seiscientos hombres la alcanzan y resisten allí «cuatro meses»; después la asamblea les envía mensajeros allí para hacer la paz (Jueces 21:13, todavía no en estas páginas). Josefo la llama «una peña llamada Roa» en el desierto (<em>Antigüedades</em> 5.166, numerado 5.2.12 en Whiston). El sitio no es seguro; el punto del mapa sigue la identificación habitual con la aldea de Rammún.""")
+
+DICTIONARY.append(("zimmah", "zimmah", "זִמָּה", "zimmah",
+    """DEPRAVITY &mdash; a deliberate, shameful wickedness, most often sexual. In the Torah it stands only in Leviticus, of a man who takes a woman and her daughter (<a href="leviticus-18.html#v18-17">18:17</a>), of a father who makes his daughter a prostitute (<a href="leviticus-19.html#v19-29">19:29</a>), and of a man who takes a woman and her mother (<a href="leviticus-20.html#v20-14">20:14</a>), all now on these pages; this translation renders it &ldquo;depravity&rdquo; each time. ⭐ In the history from Joshua to Kings it stands once, in the Levite&rsquo;s account of Gibeah: &ldquo;they have done depravity and an outrage in Israel&rdquo; (<a href="judges-20.html#v20-6">Judges 20:6</a>, now on these pages), the one verse that pairs it with <em>nevalah</em>. Ezekiel uses it again and again of Jerusalem pictured as an unfaithful wife (Ezekiel 16 and 23, not yet on these pages). ⚠ The same root gives <em>mezimmah</em>, a plan or scheme, good or bad, and Job 42:2 and Proverbs 10:23 show the word drifting between &ldquo;plan&rdquo; and &ldquo;wicked plan&rdquo;. The KJV and the ASV have &ldquo;lewdness&rdquo; at Judges 20:6, the NWT 1984 &ldquo;loose conduct&rdquo;.""",
+    ("Leviticus", 18, 17)))
+DICTIONARY_ES["zimmah"] = ("zimá",
+    """DEPRAVACIÓN — una maldad deliberada y vergonzosa, casi siempre sexual. En la Torá está solo en Levítico: del hombre que toma a una mujer y a su hija (<a href="leviticus-18.es.html#v18-17">18:17</a>), del padre que hace prostituta a su hija (<a href="leviticus-19.es.html#v19-29">19:29</a>) y del hombre que toma a una mujer y a su madre (<a href="leviticus-20.es.html#v20-14">20:14</a>), todos ya en estas páginas; esta traducción la vierte «depravación» en 18:17 y 20:14, y «perversidad» en 19:29. ⭐ En la historia de Josué a Reyes está una sola vez, en el relato del levita sobre Guibeá: «han cometido depravación e infamia en Israel» (<a href="judges-20.es.html#v20-6">Jueces 20:6</a>, ya en estas páginas), el único versículo que la junta con <em>nevalah</em>. Ezequiel la usa una y otra vez de Jerusalén pintada como esposa infiel (Ezequiel 16 y 23, todavía no en estas páginas). ⚠ De la misma raíz sale <em>mezimá</em>, un plan o designio, bueno o malo, y Job 42:2 y Proverbios 10:23 muestran la palabra oscilando entre «plan» y «plan perverso». La RV 1909 y la RV60 dicen «maldad y crimen» en Jueces 20:6, la TNM 1987 «conducta relajada».""")
+
+DICTIONARY.append(("ratsach", "ratsach", "רָצַח", "ratsach",
+    """TO MURDER, to kill a human being &mdash; the verb of the commandment &ldquo;You shall not murder&rdquo; (<a href="exodus-20.html#v20-12">Exodus 20:12</a>, 20:13 in English Bibles; <a href="deuteronomy-5.html#v5-16">Deuteronomy 5:16</a>, 5:17 in English Bibles, both now on these pages). The law also uses it of the one who kills without intent, the <em>rotseach</em> or manslayer who may flee to a city of refuge (<a href="numbers-35.html#v35-11">Numbers 35:11</a>; <a href="joshua-20.html#v20-3">Joshua 20:3</a>, both now on these pages), and Numbers 35 is where the line between murder and manslaughter is drawn. ⭐ In <a href="judges-20.html#v20-4">Judges 20:4</a> (now on these pages) the Levite is introduced as &ldquo;the husband of the murdered woman&rdquo;, <em>ha-nirtsachah</em>, a form found in no other verse: the narrator calls her death by the commandment&rsquo;s word. The KJV has &ldquo;the woman that was slain&rdquo;, the ASV &ldquo;the woman that was murdered&rdquo;.""",
+    ("Exodus", 20, 12)))
+DICTIONARY_ES["ratsach"] = ("ratsaj",
+    """ASESINAR, matar a un ser humano — el verbo del mandamiento, «No asesinarás» en <a href="exodus-20.es.html#v20-12">Éxodo 20:12</a> (20:13 en las Biblias castellanas) y «No matarás» en <a href="deuteronomy-5.es.html#v5-16">Deuteronomio 5:16</a> (5:17 en las Biblias castellanas), los dos ya en estas páginas. La ley lo usa también de quien mata sin intención, el <em>rotséaj</em> u homicida que puede huir a una ciudad de refugio (<a href="numbers-35.es.html#v35-11">Números 35:11</a>; <a href="joshua-20.es.html#v20-3">Josué 20:3</a>, los dos ya en estas páginas), y Números 35 es donde se traza la línea entre asesinato y homicidio. ⭐ En <a href="judges-20.es.html#v20-4">Jueces 20:4</a> (ya en estas páginas) al levita se lo presenta como «el marido de la mujer asesinada», <em>ha-nirtsajá</em>, una forma que no está en ningún otro versículo: el narrador llama su muerte con la palabra del mandamiento. La RV60 dice «la mujer muerta», la TNM 1987 «la mujer asesinada».""")
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "itter":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ The phrase returns once, at <a href="judges-20.html#v20-16">Judges 20:16</a> (now on these pages): seven hundred chosen men of Benjamin, &ldquo;left-handed&rdquo;, who could sling a stone at a hair and not miss. Both times the men are Benjaminites, of the tribe whose name means &ldquo;son of the right hand&rdquo;, and both Greek texts call them &ldquo;ambidextrous&rdquo;.',) + _d[5:]
+    elif _d[0] == "kalil":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Deuteronomy uses it of a city of Israel that has turned to other gods: it is to be burned with all its spoil &ldquo;entirely, to Jehovah your God&rdquo; (<a href="deuteronomy-13.html#v13-17">Deuteronomy 13:17</a>, now on these pages). At Gibeah the smoke goes up and &ldquo;the whole city&rdquo;, <em>kelil ha-ir</em>, goes up to the sky (<a href="judges-20.html#v20-40">Judges 20:40</a>, now on these pages).',) + _d[5:]
+    elif _d[0] == "olel":
+        _a = "and Judges 20:45 turns the verb on men"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'and <a href="judges-20.html#v20-45">Judges 20:45</a> (now on these pages) turns the verb on men'),) + _d[5:]
+    elif _d[0] == "nataq":
+        _a = "(Joshua 8:16) and Benjamin at Judges 20:31 (none yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="joshua-8.html#v8-16">Joshua 8:16</a>) and Benjamin at <a href="judges-20.html#v20-31">Judges 20:31</a>, both now on these pages'),) + _d[5:]
+    elif _d[0] == "nevalah":
+        _s = _d[4]
+        for _a, _b in [("now on these pages, and Judges 20)", 'and <a href="judges-20.html#v20-6">Judges 20:6</a>, both now on these pages)'),
+                       ("Gibeah twice (Judges 20:6, 10)", 'Gibeah twice (<a href="judges-20.html#v20-6">Judges 20:6</a> and <a href="judges-20.html#v20-10">20:10</a>)')]:
+            assert _s.count(_a) == 1, _a
+            _s = _s.replace(_a, _b)
+        DICTIONARY[_i] = _d[:4] + (_s,) + _d[5:]
+
+for _k, _a, _b in [
+    ("itter", None, ' ⭐ La frase vuelve una vez, en <a href="judges-20.es.html#v20-16">Jueces 20:16</a> (ya en estas páginas): setecientos hombres escogidos de Benjamín, «zurdos», que tiraban con la honda una piedra a un cabello y no fallaban. Las dos veces son benjamitas, de la tribu cuyo nombre significa «hijo de la mano derecha», y los dos textos griegos los llaman «ambidextros».'),
+    ("kalil", None, ' ⭐ Deuteronomio la usa de una ciudad de Israel que se ha vuelto a otros dioses: ha de quemarse con todo su botín «enteramente, para Jehová tu Dios» (<a href="deuteronomy-13.es.html#v13-17">Deuteronomio 13:17</a>, ya en estas páginas). En Guibeá sube el humo y «la ciudad entera», <em>kelil ha-ir</em>, sube al cielo (<a href="judges-20.es.html#v20-40">Jueces 20:40</a>, ya en estas páginas).'),
+    ("olel", "y Jueces 20:45 vuelve el verbo contra hombres", 'y <a href="judges-20.es.html#v20-45">Jueces 20:45</a> (ya en estas páginas) vuelve el verbo contra hombres'),
+    ("nataq", "(Josué 8:16) y Benjamín en Jueces 20:31 (ninguno todavía en estas páginas)", '(<a href="joshua-8.es.html#v8-16">Josué 8:16</a>) y Benjamín en <a href="judges-20.es.html#v20-31">Jueces 20:31</a>, los dos ya en estas páginas'),
+    ("nevalah", "ya en estas páginas, y Jueces 20)", 'y <a href="judges-20.es.html#v20-6">Jueces 20:6</a>, los dos ya en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    if _a is None:
+        DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+    else:
+        assert _s[1].count(_a) == 1, _k
+        DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "gibeah":
+        _a = "in Judges 20 (not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'in <a href="judges-20.html#v20-4">Judges 20</a> (now on these pages), where the city is taken by an ambush and burned')
+        _e["refs"].append(("Judges", 20, 4))
+    elif _e["slug"] == "levites-concubine":
+        _a = "the cause of the war against Benjamin in Judges 20&ndash;21 (not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'the cause of the war against Benjamin in <a href="judges-20.html#v20-4">Judges 20</a> (now on these pages), where the narrator calls her &ldquo;the murdered woman&rdquo;, and in Judges 21 (not yet on these pages)')
+for _k, _a, _b in [
+    ("gibeah", "en Jueces 20 (todavía no en estas páginas)", 'en <a href="judges-20.es.html#v20-4">Jueces 20</a> (ya en estas páginas), donde la ciudad es tomada por una emboscada y quemada'),
+    ("levites-concubine", "la causa de la guerra contra Benjamín en Jueces 20&ndash;21 (todavía no en estas páginas)", 'la causa de la guerra contra Benjamín en <a href="judges-20.es.html#v20-4">Jueces 20</a> (ya en estas páginas), donde el narrador la llama «la mujer asesinada», y en Jueces 21 (todavía no en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+CHRON_CHAPTERS["judg20"] = dict(era="exodus",
+    when="All Israel gathers as one man at Mizpah, from Dan to Beersheba, and the Levite tells what was done at Gibeah. The tribes demand the men of Gibeah; Benjamin refuses and musters twenty-six thousand swordsmen and seven hundred left-handed slingers. Asking at Bethel, where the ark is, Israel sends Judah first and loses twenty-two thousand men, then eighteen thousand more. After weeping, fasting and sacrifice, with Phinehas son of Eleazar standing before the ark, Jehovah promises victory; an ambush on the pattern of Ai takes Gibeah and burns it, twenty-five thousand Benjaminites fall, and six hundred escape to the rock of Rimmon for four months while the cities of Benjamin are put to the sword and burned.",
+    clock="Undated within the period of the judges; Phinehas son of Eleazar, Aaron's grandson, still serving before the ark (20:28) sets the war early in the period, within a generation or two of Joshua, though the book tells it last.")
+
+CHAPTER_ART["judg20"] = [dict(
+    file="picturesque-palestine-tell-el-ful-gibeah.jpg",
+    title="Taleil-el-Fûl, from Neby Samwil, generally regarded as the Gibeah of Saul",
+    title_es="Tell el-Ful visto desde Nebi Samwil, tenido por la Guibeá de Saúl",
+    artist="Wood engraving in Picturesque Palestine, Sinai and Egypt, edited by Charles W. Wilson (engraver not named on the page)",
+    year="1881",
+    location="Book illustration (p. 188); scan by the New York Public Library, via Wikimedia Commons; cropped to the upper part of the engraving",
+    location_es="Ilustración de libro (p. 188); escaneo de la New York Public Library, vía Wikimedia Commons; recortada a la parte superior del grabado",
+    alt="Wood engraving framed by a rounded arch: a gnarled, leaning oak on a grassy slope in the foreground, and beyond it rolling, terraced hill country under a pale sky, with a low conical hill rising on the right horizon and a few birds in flight.",
+    note="Not a picture of the battle but of its ground. The view is taken from Nebi Samwil, one of the sites proposed for Mizpah, and the conical hill on the horizon is Tell el-Ful, the usual identification of Gibeah; the folded hill country between is the land of Benjamin, where the &ldquo;highways&rdquo; of verses 31&ndash;32 ran and the ambush lay.",
+    note_es="No es una imagen de la batalla sino de su terreno. La vista está tomada desde Nebi Samwil, uno de los sitios propuestos para Mizpá, y el cerro cónico del horizonte es Tell el-Ful, la identificación habitual de Guibeá; la serranía plegada que hay en medio es la tierra de Benjamín, donde corrían los «caminos» de los versículos 31&ndash;32 y estaba la emboscada.",
+    license="Public domain (published 1881)",
+    source_url="https://commons.wikimedia.org/wiki/File:Taleil-el-F%C3%BBl,_from_Neby_Samwil,_generally_regarded_as_the_Gibeah_of_Saul_(NYPL_b10607452-80372).tiff",
+)]
