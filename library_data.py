@@ -46732,3 +46732,97 @@ CHAPTER_ART["1sam3"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:InfantSamuel.jpg",
 )]
+
+# --- 1 Samuel 4 ---
+ENCYCLOPEDIA.append(dict(slug="ebenezer", name="Eben-ezer", kind="place", coords=(32.104, 34.968, 0.3), approx=True,
+    modern="Unknown; one proposed site is Izbet Sartah, near Rosh HaAyin, Israel",
+    aliases=["Eben-ezer", "Ebenezer"],
+    refs=[("1 Samuel", 4, 1)], videos=[],
+    desc="""&lsquo;Stone of help&rsquo; &mdash; the place where Israel camped against the Philistines at <a href="encyclopedia.html#aphek">Aphek</a>, lost four thousand men, brought the ark from Shiloh, and lost the ark and thirty thousand more (<a href="1-samuel-4.html#v4-1">1 Samuel 4:1</a>, now on these pages). The book gives the name before it explains it: years later Samuel sets up a stone after a victory and calls it Eben-ezer, &ldquo;Thus far Jehovah has helped us&rdquo; (1 Samuel 7:12, not yet on these pages), and whether that stone stands at the same spot is not clear. ⚠ The site of the battle is unknown; one proposal is Izbet Sartah, a small hill village a few kilometres east of Aphek, and the map marker here is approximate."""))
+ENCYCLOPEDIA_ES["ebenezer"] = ("Eben-ezer",
+    """«Piedra de ayuda» — el lugar donde Israel acampó frente a los filisteos en <a href="enciclopedia.html#aphek">Afec</a>, perdió cuatro mil hombres, trajo el arca de Silo, y perdió el arca y treinta mil más (<a href="1-samuel-4.es.html#v4-1">1 Samuel 4:1</a>, ya en estas páginas). El libro da el nombre antes de explicarlo: años después Samuel levanta una piedra tras una victoria y la llama Eben-ezer, «Hasta aquí nos ayudó Jehová» (1 Samuel 7:12, todavía no en estas páginas), y no está claro si esa piedra está en el mismo sitio. ⚠ El lugar de la batalla es desconocido; una propuesta es Izbet Sartah, una pequeña aldea en una colina a pocos kilómetros al este de Afec, y la marca del mapa es aproximada.""")
+
+ENCYCLOPEDIA.append(dict(slug="ichabod", name="Ichabod", kind="person", aliases=["Ichabod"],
+    refs=[("1 Samuel", 4, 21), ("1 Samuel", 14, 3)], videos=[],
+    desc="""&lsquo;Where is the glory?&rsquo; or &lsquo;No glory&rsquo; &mdash; the son of PHINEHAS son of Eli, born on the day the ark was taken. His mother, dying in childbirth when she heard that the ark was captured and her husband and father-in-law were dead, named him, &ldquo;saying, &lsquo;The glory has gone into exile from Israel&rsquo;&rdquo; (<a href="1-samuel-4.html#v4-21">1 Samuel 4:21&ndash;22</a>, now on these pages). He is named once more, as the brother of Ahitub, whose son Ahijah wears the ephod in Saul&rsquo;s day (1 Samuel 14:3, not yet on these pages). Josephus calls him Iachobes, says the name means &ldquo;inglory&rdquo;, and adds that he was born at seven months and lived (<em>Antiquities</em> 5.360, numbered 5.11.4 in Whiston)."""))
+ENCYCLOPEDIA_ES["ichabod"] = ("Icabod",
+    """«¿Dónde está la gloria?» o «Sin gloria» — el hijo de FINEES hijo de Elí, nacido el día en que el arca fue tomada. Su madre, que murió de parto al oír que el arca había sido capturada y que su marido y su suegro habían muerto, le puso el nombre «diciendo: “La gloria se ha ido al exilio de Israel”» (<a href="1-samuel-4.es.html#v4-21">1 Samuel 4:21&ndash;22</a>, ya en estas páginas). Se le nombra una vez más, como hermano de Ahitob, cuyo hijo Ahías lleva el efod en los días de Saúl (1 Samuel 14:3, todavía no en estas páginas). Josefo lo llama Iachobes, dice que el nombre significa «deshonra» y añade que nació a los siete meses y vivió (<em>Antigüedades</em> 5.360, numerado 5.11.4 en Whiston).""")
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "aphek":
+        _a = "(1 Samuel 4, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-4.html#v4-1">1 Samuel 4:1</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 4, 1)]
+    elif _e["slug"] in ("hophni", "phinehas-eli"):
+        _a = "(1 Samuel 4, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, _e["slug"]
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-4.html#v4-11">1 Samuel 4</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 4, 11)]
+    elif _e["slug"] == "eli":
+        _a = "(ch 4)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-4.html#v4-18">1 Samuel 4:18</a>, now on these pages, &ldquo;for the man was old and heavy&rdquo;, at ninety-eight, having judged Israel forty years)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 4, 18)]
+    elif _e["slug"] == "shiloh":
+        _a = "it falls when the ark is captured in battle (ch 4)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'it loses the ark when the elders carry it out to the battle at Eben-ezer and the Philistines capture it (<a href="1-samuel-4.html#v4-3">1 Samuel 4</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 4, 3)]
+    elif _e["slug"] == "ark-of-the-covenant":
+        _e["desc"] += ' ⭐ In <a href="1-samuel-4.html#v4-3">1 Samuel 4</a> (now on these pages) the elders fetch it from Shiloh after a defeat, &ldquo;that it may come among us and save us&rdquo;; Israel greets it with &ldquo;a great shout&rdquo;, the Philistines cry &ldquo;God has come into the camp&rdquo;, and the ark is taken in the battle (4:11).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 4, 11)]
+for _k, _a, _b in [
+    ("aphek", "(1 Samuel 4, todavía no en estas páginas)", '(<a href="1-samuel-4.es.html#v4-1">1 Samuel 4:1</a>, ya en estas páginas)'),
+    ("hophni", "(1 Samuel 4, todavía no en estas páginas)", '(<a href="1-samuel-4.es.html#v4-11">1 Samuel 4</a>, ya en estas páginas)'),
+    ("phinehas-eli", "(1 Samuel 4, todavía no en estas páginas)", '(<a href="1-samuel-4.es.html#v4-11">1 Samuel 4</a>, ya en estas páginas)'),
+    ("eli", "(capítulo 4)", '(<a href="1-samuel-4.es.html#v4-18">1 Samuel 4:18</a>, ya en estas páginas, «porque el hombre era viejo y pesado», a los noventa y ocho años, después de juzgar a Israel cuarenta años)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+_s = ENCYCLOPEDIA_ES["ark-of-the-covenant"]
+ENCYCLOPEDIA_ES["ark-of-the-covenant"] = (_s[0], _s[1] + ' ⭐ En <a href="1-samuel-4.es.html#v4-3">1 Samuel 4</a> (ya en estas páginas) los ancianos la traen de Silo después de una derrota, «para que venga en medio de nosotros y nos salve»; Israel la recibe con «gran júbilo», los filisteos claman «Dios ha entrado en el campamento», y el arca es tomada en la batalla (4:11).')
+
+DICTIONARY_ES["kisse"] = ("kisé",
+    """TRONO — literalmente un asiento de honor. Es el tambor de 1 Reyes 1, nombrado unas diez veces en cincuenta y tres versículos: quién «se sentará en el trono de mi señor el rey después de él» es toda la pregunta del capítulo, y cada parte de la disputa repite la frase. Detrás está la promesa de 2 Samuel 7:16, que el trono de David sería establecido para siempre, una promesa que el resto del libro ve torcerse. ⭐ La misma palabra es la «silla» de Elí en Silo: está sentado en ella junto al poste del templo cuando Ana ora (<a href="1-samuel-1.es.html#v9">1 Samuel 1:9</a>), y cae de ella hacia atrás y muere cuando oye que el arca ha sido tomada (<a href="1-samuel-4.es.html#v4-18">1 Samuel 4:18</a>, los dos ya en estas páginas).""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "kisse":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ The same word is Eli&rsquo;s &ldquo;seat&rdquo; at Shiloh: he sits on it by the doorpost of the temple when Hannah prays (<a href="1-samuel-1.html#v9">1 Samuel 1:9</a>), and falls backward off it and dies when he hears that the ark has been taken (<a href="1-samuel-4.html#v4-18">1 Samuel 4:18</a>, both now on these pages).',) + _d[5:]
+    elif _d[0] == "kavod":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ <a href="1-samuel-4.html#v4-18">1 Samuel 4</a> (now on these pages) plays on both senses: Eli dies &ldquo;for the man was old and heavy&rdquo;, <em>kaved</em>, and his grandson is named <em>I-khavod</em>, &ldquo;No glory&rdquo;, because &ldquo;the glory has gone into exile from Israel&rdquo; (4:21&ndash;22).',) + _d[5:]
+    elif _d[0] == "teruah":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ When the ark comes into the camp at Eben-ezer &ldquo;all Israel shouted a great shout, and the earth rang&rdquo; (<a href="1-samuel-4.html#v4-5">1 Samuel 4:5</a>, now on these pages), the shout of Jericho (Joshua 6:5, 20); this time nothing falls but Israel.',) + _d[5:]
+for _k, _b in [
+    ("kavod", ' ⭐ <a href="1-samuel-4.es.html#v4-18">1 Samuel 4</a> (ya en estas páginas) juega con los dos sentidos: Elí muere «porque el hombre era viejo y pesado», <em>kaved</em>, y su nieto se llama <em>I-javod</em>, «Sin gloria», porque «la gloria se ha ido al exilio de Israel» (4:21&ndash;22).'),
+    ("teruah", ' ⭐ Cuando el arca entra en el campamento de Eben-ezer «todo Israel gritó con gran júbilo, y la tierra retumbó» (<a href="1-samuel-4.es.html#v4-5">1 Samuel 4:5</a>, ya en estas páginas), el grito de Jericó (Josué 6:5, 20); esta vez no cae nada sino Israel.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam4"] = dict(era="monarchy",
+    when="Israel camps at Eben-ezer against the Philistines at Aphek and loses four thousand men. The elders fetch the ark of the covenant from Shiloh; Israel shouts so the earth rings, and the Philistines cry 'God has come into the camp' and fight. Thirty thousand fall, the ark is taken, and Hophni and Phinehas die on one day. A runner of Benjamin reaches Shiloh; Eli, ninety-eight and blind, falls backward from his seat at the mention of the ark and breaks his neck. Phinehas' wife dies in childbirth and names the boy Ichabod: 'the glory has gone into exile from Israel.'",
+    clock="The end of Eli's forty years as judge; the start of the Philistine dominance that 1 Samuel resolves under Samuel, Saul and David.")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "makkah":
+        _a = "(1 Samuel 4:8, not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="1-samuel-4.html#v4-8">1 Samuel 4:8</a>, now on these pages)'),) + _d[5:]
+_s = DICTIONARY_ES["makkah"]
+_a = "(1 Samuel 4:8, todavía no en estas páginas)"
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["makkah"] = (_s[0], _s[1].replace(_a, '(<a href="1-samuel-4.es.html#v4-8">1 Samuel 4:8</a>, ya en estas páginas)'))
+CHAPTER_ART["1sam4"] = [dict(
+    file="luyken-death-of-eli.jpg",
+    title="The Death of Eli",
+    title_es="La muerte de Elí",
+    artist="Caspar Luyken (published by Christoph Weigel)",
+    year="1708",
+    location="Rijksmuseum, Amsterdam (RP-P-OB-45.325)",
+    location_es="Rijksmuseum, Ámsterdam (RP-P-OB-45.325)",
+    alt="Etching of an old bearded man in long robes lying on his back on the paving beside the base of a stone gateway, his overturned chair behind him and his cap on the ground. A young man in a short tunic rushes toward him with arms outstretched while a youth bends over him from the doorway; beyond a round tower, tents of an army camp spread across a plain toward distant mountains. A caption below reads “Eli’s doot. I. SAMUEL: IV”.",
+    note="Caspar Luyken’s etching, made for a Nuremberg picture Bible, sets verse 18 at a city gate: the old priest has fallen backward from his seat and lies dead, while the messenger from the battle and a young man rush to him and the camp of the war spreads out on the plain behind.",
+    note_es="El aguafuerte de Caspar Luyken, hecho para una Biblia ilustrada de Núremberg, sitúa el versículo 18 en una puerta de la ciudad: el viejo sacerdote ha caído hacia atrás de su silla y yace muerto, mientras el mensajero de la batalla y un joven corren hacia él y el campamento de la guerra se extiende por la llanura detrás.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:Eli%27s_dood,_RP-P-OB-45.325.jpg",
+)]
