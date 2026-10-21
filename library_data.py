@@ -46826,3 +46826,80 @@ CHAPTER_ART["1sam4"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:Eli%27s_dood,_RP-P-OB-45.325.jpg",
 )]
+
+# --- 1 Samuel 5 ---
+DICTIONARY_ES["kaved"] = ("kaved",
+    """PESADO, de peso — y, dicho de un corazón, torpe e insensible. Es uno de los TRES verbos que el Éxodo usa para la negativa del faraón: KAVED («hacer pesado», 8:11, 28; 9:34), JAZAQ («hacer fuerte, firme», 7:13; 8:15) y QASHAH («hacer obstinado», 7:3). ⚠️ La mayoría de las versiones funden los tres en «endurecer», lo que oculta que el Éxodo describe la misma negativa desde ángulos distintos —un corazón cargado como una piedra, apuntalado como un muro, tieso como una nuca— y que el mismo libro dice a la vez que lo hizo el FARAÓN y que lo hizo DIOS, sin reconciliarlo nunca. La raíz da también <em>kavod</em>, «gloria», literalmente «peso». ⭐ En 1 Samuel el peso cambia de lado: Elí muere «viejo y pesado» (<a href="1-samuel-4.es.html#v4-18">4:18</a>), la gloria se va al exilio de Israel (4:21), y entonces «la mano de Jehová pesó sobre los de Asdod» y «pesaba mucho» en Ecrón (<a href="1-samuel-5.es.html#v5-6">5:6</a>, 11, los dos capítulos ya en estas páginas).""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "kaved":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ In 1 Samuel the weight changes sides: Eli dies &ldquo;old and heavy&rdquo; (<a href="1-samuel-4.html#v4-18">4:18</a>), the glory goes into exile from Israel (4:21), and then &ldquo;the hand of Jehovah was heavy on the people of Ashdod&rdquo; and &ldquo;very heavy&rdquo; in Ekron (<a href="1-samuel-5.html#v5-6">5:6</a>, 11, both chapters now on these pages).',) + _d[5:]
+    elif _d[0] == "ofalim":
+        _a = "1 Samuel 5:6, 9 and 12 (not yet on these pages)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '<a href="1-samuel-5.html#v5-6">1 Samuel 5:6</a>, 9 and 12 (now on these pages)'),) + _d[5:]
+    elif _d[0] == "mehumah":
+        _a = "It is what the captured ark does to the Philistine cities at 1 Samuel 5:9, <em>a very great panic</em>, and what Saul finds in the Philistine camp at 14:20, <em>every man&rsquo;s sword against his fellow</em> (neither yet on these pages)."
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'It is what the captured ark does to the Philistine cities at <a href="1-samuel-5.html#v5-9">1 Samuel 5:9</a>, <em>a very great panic</em>, and at 5:11, <em>a deadly panic</em> (now on these pages), and what Saul finds in the Philistine camp at 14:20, <em>every man&rsquo;s sword against his fellow</em> (not yet on these pages).'),) + _d[5:]
+    elif _d[0] == "sabab":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ The Philistine lords use it of the captured ark: &ldquo;Let the ark of the God of Israel be moved around to Gath&rdquo;, and Ekron cries &ldquo;They have moved the ark of the God of Israel around to me&rdquo; (<a href="1-samuel-5.html#v5-8">1 Samuel 5:8</a>&ndash;10, now on these pages), the verb four times in three verses as the ark goes round the cities.',) + _d[5:]
+for _k, _a, _b in [
+    ("ofalim", "1 Samuel 5:6, 9 y 12 (todavía no en estas páginas)", '<a href="1-samuel-5.es.html#v5-6">1 Samuel 5:6</a>, 9 y 12 (ya en estas páginas)'),
+    ("mehumah", "Es lo que el arca capturada les hace a las ciudades filisteas en 1 Samuel 5:9, <em>un pánico muy grande</em>, y lo que Saúl encuentra en el campamento filisteo en 14:20, <em>la espada de cada uno contra su compañero</em> (ninguno todavía en estas páginas).",
+     'Es lo que el arca capturada les hace a las ciudades filisteas en <a href="1-samuel-5.es.html#v5-9">1 Samuel 5:9</a>, <em>un pánico muy grande</em>, y en 5:11, <em>un pánico de muerte</em> (ya en estas páginas), y lo que Saúl encuentra en el campamento filisteo en 14:20, <em>la espada de cada uno contra su compañero</em> (todavía no en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+_s = DICTIONARY_ES["sabab"]
+DICTIONARY_ES["sabab"] = (_s[0], _s[1] + ' ⭐ Los príncipes filisteos lo usan del arca capturada: «Que el arca del Dios de Israel pase a Gat», y Ecrón clama «Me han pasado el arca del Dios de Israel» (<a href="1-samuel-5.es.html#v5-8">1 Samuel 5:8</a>&ndash;10, ya en estas páginas), el verbo cuatro veces en tres versículos mientras el arca da la vuelta por las ciudades.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "dagon":
+        _a = "(1 Samuel 5:2&ndash;5), and the Chronicler has Saul&rsquo;s head fastened in his temple (1 Chronicles 10:10), neither yet on these pages."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-5.html#v5-2">1 Samuel 5:2&ndash;5</a>, now on these pages), and the Chronicler has Saul&rsquo;s head fastened in his temple (1 Chronicles 10:10, not yet on these pages).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 5, 2), ("1 Samuel", 5, 4)]
+    elif _e["slug"] == "ashdod":
+        _a = "(1 Samuel 5:1-5)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-5.html#v5-1">1 Samuel 5:1&ndash;5</a>, now on these pages), before the city was struck with tumours and sent the ark on to Gath')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 5, 1), ("1 Samuel", 5, 6)]
+    elif _e["slug"] == "gath":
+        _e["desc"] += ' ⭐ It is the second city to hold the captured ark: the lords send it there from Ashdod, and &ldquo;the hand of Jehovah was against the city — a very great panic&rdquo;, with tumours &ldquo;from small to great&rdquo; (<a href="1-samuel-5.html#v5-8">1 Samuel 5:8&ndash;9</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 5, 8)]
+    elif _e["slug"] == "ekron":
+        _e["desc"] += ' ⭐ The third city to receive the captured ark, which cries out as one, &ldquo;They have moved the ark of the God of Israel around to me, to kill me and my people!&rdquo;, and demands it be sent home (<a href="1-samuel-5.html#v5-10">1 Samuel 5:10&ndash;12</a>, now on these pages); the Greek and Josephus send it to Ascalon instead.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 5, 10)]
+for _k, _a, _b in [
+    ("dagon", "(1 Samuel 5:2&ndash;5), y el Cronista cuenta que la cabeza de Saúl fue colgada en su templo (1 Crónicas 10:10), ninguno de los dos todavía en estas páginas.",
+     '(<a href="1-samuel-5.es.html#v5-2">1 Samuel 5:2&ndash;5</a>, ya en estas páginas), y el Cronista cuenta que la cabeza de Saúl fue colgada en su templo (1 Crónicas 10:10, todavía no en estas páginas).'),
+    ("ashdod", "(1 Samuel 5:1-5)", '(<a href="1-samuel-5.es.html#v5-1">1 Samuel 5:1&ndash;5</a>, ya en estas páginas), antes de que la ciudad fuera herida con tumores y enviara el arca a Gat'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("gath", ' ⭐ Es la segunda ciudad que retiene el arca capturada: los príncipes la envían allí desde Asdod, y «la mano de Jehová estuvo contra la ciudad —un pánico muy grande—», con tumores «desde el menor hasta el mayor» (<a href="1-samuel-5.es.html#v5-8">1 Samuel 5:8&ndash;9</a>, ya en estas páginas).'),
+    ("ekron", ' ⭐ La tercera ciudad que recibe el arca capturada, que clama como una sola: «¡Me han pasado el arca del Dios de Israel para matarme a mí y a mi pueblo!», y exige que la devuelvan (<a href="1-samuel-5.es.html#v5-10">1 Samuel 5:10&ndash;12</a>, ya en estas páginas); el griego y Josefo la envían en cambio a Ascalón.'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam5"] = dict(era="monarchy",
+    when="The Philistines carry the captured ark from Eben-ezer to Ashdod and set it beside Dagon. Two mornings running Dagon lies on his face before it, the second time with head and hands broken off on the threshold. Jehovah's hand is heavy on Ashdod with tumours; the lords move the ark to Gath, where a great panic and tumours follow, and then to Ekron, which cries out and demands that it be sent back to its place. The cry of the city goes up to the heavens.",
+    clock="The seven months the ark spends in Philistine territory (1 Samuel 6:1), late in the period of the Judges.")
+CHAPTER_ART["1sam5"] = [dict(
+    file="dura-europos-ark-temple-of-dagon.jpg",
+    title="The Ark in the Temple of Dagon (Dura-Europos synagogue, west wall)",
+    title_es="El arca en el templo de Dagón (sinagoga de Dura-Europos, muro oeste)",
+    artist="Unknown painter of the Dura-Europos synagogue",
+    year="about AD 244",
+    location="National Museum of Damascus (from the synagogue at Dura-Europos, Syria)",
+    location_es="Museo Nacional de Damasco (de la sinagoga de Dura-Europos, Siria)",
+    alt="Wall painting in warm ochres: on the left, men in pink tunics walk beside a cart drawn by two pale oxen, carrying a tall arched chest under a red canopy; on the right, before a columned temple with a small figure on an altar inside, broken statues, cult vessels and instruments lie scattered on the ground.",
+    note="One of the oldest surviving paintings of a biblical scene, from the wall of a synagogue on the Euphrates. It joins this chapter to the next: on the right the temple of Dagon at Ashdod with its images broken on the ground, on the left the ark leaving on the cart drawn by two milk cows (1 Samuel 6:7).",
+    note_es="Una de las pinturas más antiguas que se conservan de una escena bíblica, del muro de una sinagoga junto al Éufrates. Une este capítulo con el siguiente: a la derecha el templo de Dagón en Asdod con sus imágenes rotas en el suelo, a la izquierda el arca que se va en el carro tirado por dos vacas que crían (1 Samuel 6:7).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:DuraSyn-WB4-Ark_and_Temple_of_Dagon.jpg",
+)]
