@@ -46429,3 +46429,67 @@ CHAPTER_ART["ruth2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27%C3%89t%C3%A9_ou_Ruth_et_Booz.jpg",
 )]
+
+# --- Ruth 3 ---
+DICTIONARY.append(("amah", "amah", "אָמָה", "amah",
+    """HANDMAID &mdash; a female servant of a household, the word used when she stands near the family itself and can become a wife or concubine. Rachel offers Bilhah as her <em>amah</em> to bear children for her (<a href="genesis-30.html#v30-3">Genesis 30:3</a>), and Sarah calls Hagar &ldquo;this slave-woman&rdquo; when she wants her gone (<a href="genesis-21.html#v21-10">Genesis 21:10</a>), both now on these pages. ⚠ Distinct from <em><a href="dictionary.html#shifchah">shifchah</a></em>, the lower word for a serving girl; the two can be used of the same woman. ⭐ Ruth calls herself Boaz&rsquo;s <em>shifchah</em> in the field (<a href="ruth-2.html#v2-13">Ruth 2:13</a>) and his <em>amah</em> at the threshing floor, &ldquo;I am Ruth your handmaid. Spread your wing over your handmaid&rdquo; (<a href="ruth-3.html#v3-9">Ruth 3:9</a>), both now on these pages: the change of word is part of the request.""",
+    ("Ruth", 3, 9)))
+DICTIONARY_ES["amah"] = ("amá",
+    """SIERVA — una mujer al servicio de una casa, la palabra que se usa cuando está cerca de la familia misma y puede llegar a ser esposa o concubina. Raquel ofrece a Bilhá como su <em>amá</em> para que tenga hijos por ella (Génesis 30:3), y Sara llama a Agar «esta esclava» cuando quiere echarla (Génesis 21:10), los dos ya en estas páginas, todavía no en español. ⚠ Distinta de <em><a href="diccionario.html#shifchah">shifjá</a></em>, la palabra más baja para una criada; las dos pueden decirse de la misma mujer. ⭐ Rut se llama <em>shifjá</em> de Booz en el campo (<a href="ruth-2.es.html#v2-13">Rut 2:13</a>) y su <em>amá</em> en la era, «Yo soy Rut tu sierva. Extiende tu ala sobre tu sierva» (<a href="ruth-3.es.html#v3-9">Rut 3:9</a>), los dos ya en estas páginas: el cambio de palabra es parte de la petición.""")
+
+DICTIONARY.append(("shifchah", "shifchah", "שִׁפְחָה", "shifchah",
+    """MAIDSERVANT, slave-girl &mdash; a female servant, often a young one, the lower of the two Hebrew words for a woman in service. Hagar is Sarai&rsquo;s &ldquo;Egyptian slave-girl&rdquo; (<a href="genesis-16.html#v16-1">Genesis 16:1</a>) and Bilhah is given to Rachel &ldquo;as her slave-girl&rdquo; (<a href="genesis-29.html#v29-29">Genesis 29:29</a>), both now on these pages. ⚠ Distinct from <em><a href="dictionary.html#amah">amah</a></em>, the word for a servant who stands near the family and can become a wife. ⭐ In the field Ruth calls herself Boaz&rsquo;s <em>shifchah</em>, &ldquo;though I am not like one of your maidservants&rdquo; (<a href="ruth-2.html#v2-13">Ruth 2:13</a>, now on these pages); at the threshing floor she uses <em>amah</em> (3:9).""",
+    ("Genesis", 16, 1)))
+DICTIONARY_ES["shifchah"] = ("shifjá",
+    """CRIADA, sierva — una mujer al servicio de otro, a menudo joven, la más baja de las dos palabras hebreas para una mujer en servicio. Agar es la «esclava egipcia» de Saray (Génesis 16:1) y Bilhá es dada a Raquel «como esclava» (Génesis 29:29), los dos ya en estas páginas, todavía no en español. ⚠ Distinta de <em><a href="diccionario.html#amah">amá</a></em>, la palabra para una sierva que está cerca de la familia y puede llegar a ser esposa. ⭐ En el campo Rut se llama <em>shifjá</em> de Booz, «aunque yo no soy como una de tus siervas» (<a href="ruth-2.es.html#v2-13">Rut 2:13</a>, ya en estas páginas); en la era usa <em>amá</em> (3:9).""")
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in ("tsitsit", "kanaf"):
+        _a = "(Ruth 3:9, not yet on these pages)"
+        assert _d[4].count(_a) == 1, _d[0]
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, '(<a href="ruth-3.html#v3-9">Ruth 3:9</a>, now on these pages)'),) + _d[5:]
+    elif _d[0] == "chayil":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ Boaz is <em>gibbor chayil</em>, &ldquo;a mighty man of valour&rdquo; (<a href="ruth-2.html#v2-1">Ruth 2:1</a>), and he calls Ruth <em>eshet chayil</em>, &ldquo;a woman of valour&rdquo; (<a href="ruth-3.html#v3-11">Ruth 3:11</a>), both now on these pages; &ldquo;a woman of valour&rdquo; stands elsewhere only in Proverbs 12:4 and 31:10.',) + _d[5:]
+    elif _d[0] == "goel":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' At <a href="ruth-3.html#v3-12">Ruth 3:12&ndash;13</a> (now on these pages) Boaz admits &ldquo;there is a redeemer nearer than I&rdquo;, and the verb comes four times in one sentence.',) + _d[5:]
+for _k, _a, _b in [
+    ("tsitsit", "(Rut 3:9, todavía no en estas páginas)", '(<a href="ruth-3.es.html#v3-9">Rut 3:9</a>, ya en estas páginas)'),
+    ("kanaf", "(Rut 3:9, todavía no en estas páginas)", '(<a href="ruth-3.es.html#v3-9">Rut 3:9</a>, ya en estas páginas)'),
+    ("chayil", None, ' ⭐ Booz es <em>guibor jáyil</em>, «un hombre valiente y poderoso» (<a href="ruth-2.es.html#v2-1">Rut 2:1</a>), y llama a Rut <em>éshet jáyil</em>, «una mujer de valor» (<a href="ruth-3.es.html#v3-11">Rut 3:11</a>), los dos ya en estas páginas; «mujer de valor» solo vuelve en Proverbios 12:4 y 31:10.'),
+    ("goel", None, ' En <a href="ruth-3.es.html#v3-12">Rut 3:12&ndash;13</a> (ya en estas páginas) Booz admite que «hay un redentor más cercano que yo», y el verbo sale cuatro veces en una sola frase.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    if _a is None:
+        DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+    else:
+        assert _s[1].count(_a) == 1, _k
+        DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "boaz":
+        _a = "(Ruth 3&ndash;4, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="ruth-3.html#v3-9">Ruth 3</a>, now on these pages, where Ruth asks him at the threshing floor to spread his wing over her, and Ruth 4, not yet on these pages)')
+_s = ENCYCLOPEDIA_ES["boaz"]
+_a = "(Rut 3&ndash;4, todavía no en estas páginas)"
+assert _s[1].count(_a) == 1
+ENCYCLOPEDIA_ES["boaz"] = (_s[0], _s[1].replace(_a, '(<a href="ruth-3.es.html#v3-9">Rut 3</a>, ya en estas páginas, donde Rut le pide en la era que extienda su ala sobre ella, y Rut 4, todavía no en estas páginas)'))
+
+CHRON_CHAPTERS["ruth3"] = dict(era="exodus",
+    when="At the end of the harvests Naomi seeks 'rest' for Ruth and sends her by night to the threshing floor where Boaz is winnowing barley. Ruth uncovers his feet and lies down; at midnight he wakes, and she asks him to spread his wing over his handmaid, 'for you are a redeemer'. Boaz blesses her, calls her 'a woman of valour', and promises to redeem her if a nearer redeemer will not, 'as Jehovah lives'. Before dawn he sends her home with six measures of barley: 'do not go back empty to your mother-in-law'.",
+    clock="'In the days when the judges judged' (Ruth 1:1); the same harvest season as Ruth 2.")
+
+CHAPTER_ART["ruth3"] = [dict(
+    file="matson-ruth-boaz-threshing-floor-cloak.jpg",
+    title="Harvesting and threshing floor scenes in the story of Ruth & Boaz",
+    title_es="Escenas de siega y de era de la historia de Rut y Booz",
+    artist="American Colony Photo Department (G. Eric and Edith Matson Photograph Collection)",
+    year="between 1898 and 1946",
+    location="Library of Congress, Washington (Matson Collection, matpc.10143)",
+    location_es="Biblioteca del Congreso, Washington (Colección Matson, matpc.10143)",
+    alt="Black-and-white photograph of a threshing floor among olive trees: in the foreground an older man in a headcloth kneels on a striped rug, pouring grain from a sack into a white cloth held open by a young woman kneeling opposite him; behind them women stand with a sieve beside heaps of straw and a tall sack, and oxen graze in the distance.",
+    note="A photograph from the American Colony in Jerusalem, posed as a scene from the book of Ruth on a working threshing floor of the early twentieth century. It shows verse 15 as the photographers imagined it: the man measuring barley into the cloak the woman holds open, &ldquo;and he measured six of barley and laid it on her&rdquo;.",
+    note_es="Una fotografía de la American Colony de Jerusalén, preparada como escena del libro de Rut en una era en uso a comienzos del siglo XX. Muestra el versículo 15 como lo imaginaron los fotógrafos: el hombre midiendo cebada en el manto que la mujer sostiene abierto, «y él midió seis de cebada y se lo puso encima».",
+    license="Public domain (Library of Congress, no known restrictions)",
+    source_url="https://commons.wikimedia.org/wiki/File:Harvesting_and_threshing_floor_scenes_in_the_story_of_Ruth_%26_Boaz_LOC_matpc.10143.jpg",
+)]
