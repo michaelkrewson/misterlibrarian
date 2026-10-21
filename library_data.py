@@ -46116,3 +46116,61 @@ for _k, _a, _b in [
     _s = ENCYCLOPEDIA_ES[_k][1]
     assert _s.count(_a) == 1, _k
     ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], _s.replace(_a, _b))
+
+# --- Judges 19 ---
+ENCYCLOPEDIA.append(dict(slug="gibeah", name="Gibeah (of Benjamin)", kind="place", aliases=["Gibeah"],
+    refs=[("Judges", 19, 12)], videos=[],
+    coords=(31.8233, 35.2316, 0.4), approx=True,
+    modern="Usually identified with Tell el-Ful, on the northern edge of Jerusalem (reported)",
+    desc="""&ldquo;The hill&rdquo; &mdash; a town of Benjamin a few miles north of Jerusalem, on the road from Bethlehem to the hill country of Ephraim. In <a href="judges-19.html#v19-12">Judges 19</a> (now on these pages) a Levite passes Jebus by rather than lodge among foreigners, and at Gibeah nobody takes him in until an old man from Ephraim does; that night the men of the city, &ldquo;sons of worthlessness&rdquo;, surround the house in words that repeat the night at Sodom, and the Levite&rsquo;s concubine dies of what they do to her. The outrage brings all Israel to war against Benjamin in Judges 20 (not yet on these pages). It is later Saul&rsquo;s home town, &ldquo;Gibeah of Saul&rdquo; (1 Samuel 11:4, not yet on these pages), and Hosea remembers &ldquo;the days of Gibeah&rdquo; as Israel&rsquo;s deepest corruption (Hosea 9:9 and 10:9, not yet on these pages). The identification with Tell el-Ful is the usual one but has been questioned; the map point follows it."""))
+ENCYCLOPEDIA_ES["gibeah"] = ("Guibeá (de Benjamín)",
+    """«La colina» — una ciudad de Benjamín unos kilómetros al norte de Jerusalén, en el camino de Belén a la serranía de Efraín. En <a href="judges-19.es.html#v19-12">Jueces 19</a> (ya en estas páginas) un levita pasa de largo Jebús para no alojarse entre extranjeros, y en Guibeá nadie lo recibe hasta que lo recoge un anciano de Efraín; esa noche los hombres de la ciudad, «hijos de la nada», rodean la casa con palabras que repiten la noche de Sodoma, y la concubina del levita muere por lo que le hacen. La infamia lleva a todo Israel a la guerra contra Benjamín en Jueces 20 (todavía no en estas páginas). Después es la ciudad de Saúl, «Guibeá de Saúl» (1 Samuel 11:4, todavía no en estas páginas), y Oseas recuerda «los días de Guibeá» como la corrupción más honda de Israel (Oseas 9:9 y 10:9, todavía no en estas páginas). La identificación con Tell el-Ful es la habitual pero ha sido discutida; el punto del mapa la sigue.""")
+
+ENCYCLOPEDIA.append(dict(slug="levites-concubine", name="The Levite's concubine", kind="person", aliases=[],
+    refs=[("Judges", 19, 1)], videos=[],
+    desc="""A woman of Bethlehem in Judah, never named, taken as a concubine (<em>pilegesh</em>) by a Levite of the far side of the hill country of Ephraim (<a href="judges-19.html#v19-1">Judges 19</a>, now on these pages). She &ldquo;played the harlot against him&rdquo; &mdash; the A Greek text has &ldquo;was angry with him&rdquo; &mdash; and went back to her father&rsquo;s house for four months. Her husband came &ldquo;to speak to her heart&rdquo;; on the way home, at Gibeah of Benjamin, he seized her and brought her out to the men who surrounded their host&rsquo;s house, and in the morning she lay at the doorway &ldquo;with her hands on the threshold&rdquo;. The Hebrew never says when she died. He cut her body into twelve pieces and sent them through Israel, and her death is the cause of the war against Benjamin in Judges 20&ndash;21 (not yet on these pages). Josephus tells the story with the men of Gibeah seizing her themselves (<em>Antiquities</em> 5.136&ndash;149, numbered 5.2.8 in Whiston)."""))
+ENCYCLOPEDIA_ES["levites-concubine"] = ("La concubina del levita",
+    """Una mujer de Belén de Judá, cuyo nombre nunca se dice, tomada como concubina (<em>pilegesh</em>) por un levita del extremo de la serranía de Efraín (<a href="judges-19.es.html#v19-1">Jueces 19</a>, ya en estas páginas). «Se prostituyó contra él» —el texto griego A dice «se enojó con él»— y volvió cuatro meses a la casa de su padre. Su marido fue «a hablarle al corazón»; en el camino de vuelta, en Guibeá de Benjamín, él la sacó a los hombres que rodeaban la casa de su anfitrión, y por la mañana ella estaba caída a la entrada «con las manos sobre el umbral». El hebreo nunca dice cuándo murió. Él cortó su cuerpo en doce pedazos y los envió por Israel, y su muerte es la causa de la guerra contra Benjamín en Jueces 20&ndash;21 (todavía no en estas páginas). Josefo cuenta la historia haciendo que los hombres de Guibeá la arrebaten ellos mismos (<em>Antigüedades</em> 5.136&ndash;149, numerado 5.2.8 en Whiston).""")
+
+DICTIONARY_ES["pilegesh"] = ("pilegesh",
+    """CONCUBINA — una esposa secundaria, de rango menor que una <em>ishah</em> pero de veras esposa, cuyos hijos podían heredar o no según la casa. ⚠ La palabra es donde Génesis y Crónicas difieren a la vista: Génesis 25:1 llama a CETURA MUJER (<em>ishah</em>) de Abraham, 1 Crónicas 1:32 la llama su <em>pilegesh</em>. Esta traducción imprime cada libro como está y no los concilia; si el libro posterior aclara su rango frente a Sara, protege la línea de Isaac, o simplemente usa la otra palabra disponible, es discutible. ⭐ En <a href="judges-19.es.html#v19-1">Jueces 19:1</a> (ya en estas páginas) la concubina del levita es «una mujer, una concubina», <em>ishah pilegesh</em>, las dos palabras juntas, y nunca recibe nombre.""")
+DICTIONARY_ES["yada"] = ("yada",
+    """Conocer —incluido el eufemismo propio del hebreo para la intimidad («conoció el hombre a su mujer», Génesis 4:1). ⚠ Distinto de <em>nakar</em> (véase esa entrada), otra raíz que también se glosa «conocer/considerar» pero que hace el reconocimiento y no la relación: Jeremías 24:7 los mantiene a cuatro versículos de distancia a propósito, Dios «considera» (<em>nakar</em>) favorablemente a los desterrados en el v5 y luego les promete «un corazón para conocerme» (<em>yada</em>) en el v7 —la segunda es la palabra de la relación, dicha de todo un pueblo por primera vez en una promesa que este libro amplía después en el «todos me conocerán» del nuevo pacto (Jeremías 31:33). ⚠ En <a href="judges-19.es.html#v19-22">Jueces 19:22</a> y <a href="judges-19.es.html#v19-25">19:25</a> (ya en estas páginas) los hombres de Guibeá piden al huésped «para que lo conozcamos», con las palabras de Sodoma, y luego «la conocieron» a ella: el eufemismo en su uso más violento.""")
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "pilegesh":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⭐ In <a href="judges-19.html#v19-1">Judges 19:1</a> (now on these pages) the Levite&rsquo;s concubine is &ldquo;a woman, a concubine&rdquo;, <em>ishah pilegesh</em>, the two words together, and she is never named.',) + _d[5:]
+    elif _d[0] == "yada":
+        DICTIONARY[_i] = _d[:4] + (_d[4] + ' ⚠ At <a href="judges-19.html#v19-22">Judges 19:22</a> and <a href="judges-19.html#v19-25">19:25</a> (now on these pages) the men of Gibeah demand the guest &ldquo;that we may know him&rdquo;, in the words of Sodom, and then &ldquo;knew&rdquo; her: the euphemism at its most violent.',) + _d[5:]
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "ramah":
+        _e["refs"].append(("Judges", 19, 13))
+
+CHRON_CHAPTERS["judg19"] = dict(era="exodus",
+    when="A Levite of the far side of the hill country of Ephraim takes a concubine from Bethlehem in Judah; she leaves him for her father's house, and after four months he goes to bring her back. Her father keeps him feasting day after day, and on the fifth day he leaves late, passes Jebus (Jerusalem) rather than lodge among foreigners, and reaches Gibeah of Benjamin at sunset. Only an old man from Ephraim takes them in. That night the men of the city surround the house, as at Sodom; the Levite pushes his concubine out to them, and in the morning she lies at the doorway with her hands on the threshold. At home he cuts her body into twelve pieces and sends them through all Israel: 'Nothing like this has happened since the day the sons of Israel came up from Egypt.'",
+    clock="Undated within the period of the judges; Judges 20:28 puts Phinehas son of Eleazar, Aaron's grandson, in office at the time of the war that follows, which would set these closing chapters early in the period rather than after Samson.")
+
+CHAPTER_ART["judg19"] = [dict(
+    file="eeckhout-levite-at-gibeah.jpg",
+    title="The Levite at Gibeah",
+    title_es="El levita en Guibeá",
+    artist="Gerbrand van den Eeckhout",
+    year="early 1640s",
+    location="National Gallery of Art, Washington (open-access image on Wikimedia Commons)",
+    location_es="National Gallery of Art, Washington (imagen de acceso abierto en Wikimedia Commons)",
+    alt="Oil painting: a barefoot old man in a white shirt, holding a spade, with a dog at his heels, stretches out his hand toward a richly dressed man in a turban and red cloak and a woman in a blue and gold gown, who sit by the roadside; behind them a young servant stands with a saddled donkey, and ruined buildings rise against an evening sky.",
+    note="Van den Eeckhout paints verses 16&ndash;20, the one moment of welcome in the chapter: the old man from Ephraim, &ldquo;coming in from his work in the field in the evening&rdquo; with his spade still in his hand, offers the travellers his house &mdash; &ldquo;only do not spend the night in the square&rdquo;. The painter stops before the night.",
+    note_es="Van den Eeckhout pinta los versículos 16&ndash;20, el único momento de acogida del capítulo: el anciano de Efraín, que «venía de su trabajo en el campo al atardecer» con la pala todavía en la mano, ofrece su casa a los viajeros &mdash;«solo no pases la noche en la plaza». El pintor se detiene antes de la noche.",
+    license="CC0 (National Gallery of Art open access)",
+    source_url="https://commons.wikimedia.org/wiki/File:Gerbrand_van_den_Eeckhout,_The_Levite_at_Gibeah,_early_1640s,_NGA_75164.jpg",
+)]
+
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "nevalah":
+        _a = "names the gang-rape that ignites Israel's civil war (Judges 19-20)"
+        assert _d[4].count(_a) == 1
+        DICTIONARY[_i] = _d[:4] + (_d[4].replace(_a, 'names the gang-rape that ignites Israel\'s civil war (<a href="judges-19.html#v19-23">Judges 19:23&ndash;24</a>, now on these pages, and Judges 20)'),) + _d[5:]
+_s = DICTIONARY_ES["nevalah"]
+_a = "la misma palabra nombra la violación colectiva que enciende la guerra civil de Israel (Jueces 19-20), el asalto de Amnón a Tamar (2 Samuel 13:12) y el sacrilegio de Acán (Josué 7:15) — ninguno de los tres todavía en estas páginas."
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["nevalah"] = (_s[0], _s[1].replace(_a, 'la misma palabra nombra la violación colectiva que enciende la guerra civil de Israel (<a href="judges-19.es.html#v19-23">Jueces 19:23&ndash;24</a>, ya en estas páginas, y Jueces 20), el asalto de Amnón a Tamar (2 Samuel 13:12, todavía no en estas páginas) y el sacrilegio de Acán (<a href="joshua-7.es.html#v7-15">Josué 7:15</a>, ya en estas páginas).'))
