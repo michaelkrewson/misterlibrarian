@@ -47023,3 +47023,121 @@ CHAPTER_ART["1sam6"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:070.The_Ark_Is_Returned_to_Beth-shemesh.jpg",
 )]
+
+# --- 1 Samuel 7 ---
+DICTIONARY.extend([
+    ("naha", "naha", "נָהָה", "naha",
+     'TO LAMENT, to wail &mdash; a rare verb of mourning. Ezekiel is told to &ldquo;wail over the multitude of Egypt&rdquo; (Ezekiel 32:18), and Micah has a taunt-song raised with &ldquo;a bitter lament&rdquo; built from the same root (Micah 2:4; neither yet on these pages). ⭐ At <a href="1-samuel-7.html#v7-2">1 Samuel 7:2</a> (now on these pages), after twenty years with the ark at Kiriath-jearim, &ldquo;all the house of Israel lamented after Jehovah&rdquo;. &#9888; The shelf is not sure what the verb means there: the KJV and ASV say &ldquo;lamented after&rdquo;, the NWT 1984 &ldquo;went lamenting after&rdquo;, the NWT 2013 &ldquo;began to seek after&rdquo;, the Douay &ldquo;rested following&rdquo;, and the Greek &ldquo;looked after&rdquo;.',
+     ("1 Samuel", 7, 2)),
+    ("raam", "ra&lsquo;am", "רָעַם", "ra'am",
+     'TO THUNDER, to roar &mdash; of the sky, and of the sea in the psalms. Hannah&rsquo;s song says of Jehovah&rsquo;s enemies, &ldquo;against them he thunders in the heavens&rdquo; (<a href="1-samuel-2.html#v2-10">1 Samuel 2:10</a>, now on these pages). ⭐ At <a href="1-samuel-7.html#v7-10">1 Samuel 7:10</a> (now on these pages) it happens to her son&rsquo;s enemies: while Samuel offers the burnt offering at Mizpah, &ldquo;Jehovah thundered with a great voice that day against the Philistines, and threw them into confusion&rdquo;. David&rsquo;s song has Jehovah thundering &ldquo;from the heavens&rdquo; (2 Samuel 22:14), &ldquo;in the heavens&rdquo; in its twin (Psalm 18:14; neither yet on these pages). The noun for thunder in Exodus is simply <em>qolot</em>, &ldquo;voices&rdquo; (<a href="exodus-9.html#v9-23">Exodus 9:23</a>, already on these pages).',
+     ("1 Samuel", 7, 10)),
+])
+DICTIONARY_ES["naha"] = ("naha",
+    'LAMENTARSE, gemir &mdash; un verbo raro de duelo. A Ezequiel se le manda «gemir por la multitud de Egipto» (Ezequiel 32:18), y Miqueas tiene un canto de burla alzado con «un lamento amargo» hecho de la misma raíz (Miqueas 2:4; ninguno todavía en estas páginas). ⭐ En <a href="1-samuel-7.es.html#v7-2">1 Samuel 7:2</a> (ya en estas páginas), tras veinte años con el arca en Quiriat-jearim, «toda la casa de Israel se lamentó en pos de Jehová». &#9888; El estante no está seguro de qué significa allí el verbo: la RV60 dice «lamentaba en pos de», la TNM 1987 «empezó a lamentarse en pos de», la TNM 2019 «se pusieron a buscar», la NVI «buscaba con ansiedad», y el griego «miró en pos».')
+DICTIONARY_ES["raam"] = ("ra&lsquo;am",
+    'TRONAR, rugir &mdash; del cielo, y del mar en los salmos. El cántico de Ana dice de los enemigos de Jehová: «contra ellos truena en los cielos» (<a href="1-samuel-2.es.html#v2-10">1 Samuel 2:10</a>, ya en estas páginas). ⭐ En <a href="1-samuel-7.es.html#v7-10">1 Samuel 7:10</a> (ya en estas páginas) les sucede a los enemigos de su hijo: mientras Samuel ofrece el holocausto en Mizpá, «Jehová tronó con gran voz aquel día contra los filisteos, y sembró confusión en ellos». El cántico de David tiene a Jehová tronando «desde los cielos» (2 Samuel 22:14), «en los cielos» en su gemelo (Salmo 18:14; ninguno todavía en estas páginas). El sustantivo para el trueno en el Éxodo es sencillamente <em>qolot</em>, «voces» (<a href="exodus-9.es.html#v9-23">Éxodo 9:23</a>, ya en estas páginas).')
+DICTIONARY_ES["nekhar"] = ("nekhar",
+    'EXTRANJERO, extraño, ajeno &mdash; los «dioses extranjeros» (<em>elohei nekhar</em>) que Jacob manda enterrar a su casa antes de subir a Betel (<a href="genesis-35.es.html#v35-2">Génesis 35:2</a>, 4), entre ellos seguramente los terafines que Raquel había robado a Labán (31:19). «Quitar los <em>elohei nekhar</em>» se vuelve el estribillo de cada vuelta posterior a Dios &mdash;Josué en Siquem (<a href="joshua-24.es.html#v24-23">Josué 24:23</a>), Israel en los días de Jefté (<a href="judges-10.es.html#v10-16">Jueces 10:16</a>), Samuel en Mizpá (<a href="1-samuel-7.es.html#v7-3">1 Samuel 7:3</a>, todos ya en estas páginas), las grandes reformas de los reyes. La palabra nombra también al <em>ben-nekhar</em>, el «extranjero», a quien la ley a la vez protege y, en la Pascua, deja fuera (Éxodo 12:43). La RV60 dice «dioses ajenos»; la TNM 1987 «dioses extranjeros».')
+DICTIONARY_ES["ezer-kenegdo"] = ("ezer kenegdo",
+    '«Una ayuda que le corresponda» &mdash; <em>ezer</em> describe por lo general a DIOS ayudando a Israel (fuerza, no servidumbre); <em>kenegdo</em> = una contraparte a su medida. De aquí viene el inglés «helpmeet», que funde las dos palabras en una y la lee como subordinada. ⭐ La misma palabra da nombre a Eben-ezer, «piedra de ayuda», la piedra que Samuel levanta diciendo «Hasta aquí nos ayudó Jehová» (<a href="1-samuel-7.es.html#v7-12">1 Samuel 7:12</a>, ya en estas páginas).')
+
+_DICT7_EN = {
+    "kalil": ' ⭐ At <a href="1-samuel-7.html#v7-9">1 Samuel 7:9</a> (now on these pages) Samuel offers a suckling lamb &ldquo;as a whole burnt offering&rdquo;, <em>olah kalil</em>, before the thunder at Mizpah.',
+    "shofet": ' ⭐ <a href="1-samuel-7.html#v7-6">1 Samuel 7:6</a> and 15&ndash;17 (now on these pages) make Samuel the last of the line: he &ldquo;judged the sons of Israel at Mizpah&rdquo;, and then &ldquo;judged Israel all the days of his life&rdquo;, on a yearly circuit of Bethel, Gilgal and Mizpah.',
+    "sabab": ' ⭐ <a href="1-samuel-7.html#v7-16">1 Samuel 7:16</a> (now on these pages) uses it of Samuel, who &ldquo;made the circuit of Bethel and Gilgal and Mizpah&rdquo; year by year.',
+    "ezer-kenegdo": ' ⭐ The same noun names Eben-ezer, &ldquo;stone of help&rdquo;, the stone Samuel sets up saying &ldquo;Thus far Jehovah has helped us&rdquo; (<a href="1-samuel-7.html#v7-12">1 Samuel 7:12</a>, now on these pages).',
+}
+_DICT7_SWAP = {
+    "nekhar": ("Samuel (1 Samuel 7:3)", 'Samuel (<a href="1-samuel-7.html#v7-3">1 Samuel 7:3</a>, now on these pages)'),
+    "hamam": ("thunder over the Philistines (1 Samuel 7:10), and lightning in David&rsquo;s song, told twice (2 Samuel 22:15, where it is the written form, and Psalm 18:15; none yet on these pages)",
+              'thunder over the Philistines (<a href="1-samuel-7.html#v7-10">1 Samuel 7:10</a>, now on these pages), and lightning in David&rsquo;s song, told twice (2 Samuel 22:15, where it is the written form, and Psalm 18:15; neither yet on these pages)'),
+    "even": ("Samuel&rsquo;s Ebenezer (1 Samuel 7:12, not yet on these pages)", 'Samuel&rsquo;s Ebenezer (<a href="1-samuel-7.html#v7-12">1 Samuel 7:12</a>, now on these pages)'),
+    "shegar-ashtarot": ("(Judges 2:13, 1 Samuel 7:3-4, 1 Kings 11:5, none yet on these pages)",
+                        '(<a href="judges-2.html#v13">Judges 2:13</a> and <a href="1-samuel-7.html#v7-3">1 Samuel 7:3&ndash;4</a>, now on these pages; 1 Kings 11:5, not yet on these pages)'),
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT7_SWAP:
+        _a, _b = _DICT7_SWAP[_d[0]]
+        assert _d[4].count(_a) == 1, _d[0]
+        _d = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+    if _d[0] in _DICT7_EN:
+        _d = _d[:4] + (_d[4] + _DICT7_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+for _k, _a, _b in [
+    ("hamam", "el trueno sobre los filisteos (1 Samuel 7:10), y el relámpago en el cántico de David, contado dos veces (2 Samuel 22:15, donde es la forma escrita, y Salmo 18:15; ninguno todavía en estas páginas)",
+     'el trueno sobre los filisteos (<a href="1-samuel-7.es.html#v7-10">1 Samuel 7:10</a>, ya en estas páginas), y el relámpago en el cántico de David, contado dos veces (2 Samuel 22:15, donde es la forma escrita, y Salmo 18:15; ninguno de los dos todavía en estas páginas)'),
+    ("even", "el Eben-ezer de Samuel (1 Samuel 7:12, todavía no en estas páginas)", 'el Eben-ezer de Samuel (<a href="1-samuel-7.es.html#v7-12">1 Samuel 7:12</a>, ya en estas páginas)'),
+    ("shegar-ashtarot", "(Jueces 2:13, 1 Samuel 7:3-4, 1 Reyes 11:5, ninguno todavía en estas páginas)",
+     '(<a href="judges-2.es.html#v13">Jueces 2:13</a> y <a href="1-samuel-7.es.html#v7-3">1 Samuel 7:3&ndash;4</a>, ya en estas páginas; 1 Reyes 11:5, todavía no en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("kalil", ' ⭐ En <a href="1-samuel-7.es.html#v7-9">1 Samuel 7:9</a> (ya en estas páginas) Samuel ofrece un cordero de leche «entero en holocausto», <em>olah kalil</em>, antes del trueno en Mizpá.'),
+    ("shofet", ' ⭐ <a href="1-samuel-7.es.html#v7-6">1 Samuel 7:6</a> y 15&ndash;17 (ya en estas páginas) hacen de Samuel el último de la línea: «juzgó a los hijos de Israel en Mizpá», y luego «juzgó a Israel todos los días de su vida», en un recorrido anual por Betel, Gilgal y Mizpá.'),
+    ("sabab", ' ⭐ <a href="1-samuel-7.es.html#v7-16">1 Samuel 7:16</a> (ya en estas páginas) lo usa de Samuel, que cada año «recorría Betel, Gilgal y Mizpá».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "mizpah-benjamin":
+        _a = "(1 Samuel 7:5&ndash;6, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-7.html#v7-5">1 Samuel 7:5&ndash;6</a>, now on these pages), where the people pour out water before Jehovah and the Philistines are routed by thunder, and it is one of the three towns of his yearly circuit (7:16)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 5), ("1 Samuel", 7, 16)]
+    elif _e["slug"] == "ebenezer":
+        _a = "(1 Samuel 7:12, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-7.html#v7-12">1 Samuel 7:12</a>, now on these pages), setting it &ldquo;between Mizpah and Shen&rdquo;')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 12)]
+    elif _e["slug"] == "kiriath-jearim":
+        _a = ", now on these pages, and 7:1&ndash;2)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, ', and <a href="1-samuel-7.html#v7-1">7:1&ndash;2</a>, now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 1)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ After twenty years he gathers Israel at Mizpah, tells them to put away the foreign gods, prays while the Philistines attack, and sets up the stone Eben-ezer; then he &ldquo;judged Israel all the days of his life&rdquo;, going round Bethel, Gilgal and Mizpah and returning to his house at Ramah (<a href="1-samuel-7.html#v7-3">1 Samuel 7:3&ndash;17</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 3), ("1 Samuel", 7, 12), ("1 Samuel", 7, 15)]
+    elif _e["slug"] == "bethel":
+        _e["desc"] += ' ⭐ It is the first town named in Samuel&rsquo;s yearly circuit as judge, &ldquo;Bethel and Gilgal and Mizpah&rdquo; (<a href="1-samuel-7.html#v7-16">1 Samuel 7:16</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 16)]
+    elif _e["slug"] in ("ekron", "gath"):
+        _e["desc"] += ' ⭐ After the thunder at Mizpah &ldquo;the cities that the Philistines had taken from Israel returned to Israel, from Ekron as far as Gath&rdquo; (<a href="1-samuel-7.html#v7-14">1 Samuel 7:14</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 7, 14)]
+for _k, _a, _b in [
+    ("mizpah-benjamin", "(1 Samuel 7:5&ndash;6, todavía no en estas páginas)", '(<a href="1-samuel-7.es.html#v7-5">1 Samuel 7:5&ndash;6</a>, ya en estas páginas), donde el pueblo derrama agua delante de Jehová y los filisteos son derrotados por el trueno, y es una de las tres ciudades de su recorrido anual (7:16)'),
+    ("ebenezer", "(1 Samuel 7:12, todavía no en estas páginas)", '(<a href="1-samuel-7.es.html#v7-12">1 Samuel 7:12</a>, ya en estas páginas), y la pone «entre Mizpá y Sen»'),
+    ("kiriath-jearim", ", ya en estas páginas, y 7:1&ndash;2)", ', y <a href="1-samuel-7.es.html#v7-1">7:1&ndash;2</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("samuel", ' ⭐ Al cabo de veinte años reúne a Israel en Mizpá, le manda quitar los dioses extranjeros, ora mientras los filisteos atacan y levanta la piedra Eben-ezer; después «juzgó a Israel todos los días de su vida», recorriendo Betel, Gilgal y Mizpá y volviendo a su casa en Ramá (<a href="1-samuel-7.es.html#v7-3">1 Samuel 7:3&ndash;17</a>, ya en estas páginas).'),
+    ("bethel", ' ⭐ Es la primera ciudad nombrada en el recorrido anual de Samuel como juez, «Betel, Gilgal y Mizpá» (<a href="1-samuel-7.es.html#v7-16">1 Samuel 7:16</a>, ya en estas páginas).'),
+    ("ekron", ' ⭐ Después del trueno en Mizpá «las ciudades que los filisteos habían tomado a Israel volvieron a Israel, desde Ecrón hasta Gat» (<a href="1-samuel-7.es.html#v7-14">1 Samuel 7:14</a>, ya en estas páginas).'),
+    ("gath", ' ⭐ Después del trueno en Mizpá «las ciudades que los filisteos habían tomado a Israel volvieron a Israel, desde Ecrón hasta Gat» (<a href="1-samuel-7.es.html#v7-14">1 Samuel 7:14</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam7"] = dict(era="monarchy",
+    when="The men of Kiriath-jearim bring the ark to the house of Abinadab and consecrate his son Eleazar to guard it. Twenty years later Samuel calls Israel to put away the Baalim and the Ashtaroth and gathers them at Mizpah, where they pour out water, fast and confess. The Philistines attack while Samuel offers a suckling lamb; Jehovah thunders and they are routed as far as Beth-car. Samuel sets up the stone Eben-ezer, the cities from Ekron to Gath return to Israel, and Samuel judges Israel on a yearly circuit from his house at Ramah.",
+    clock="Twenty years after the ark came to Kiriath-jearim (1 Samuel 7:2); Samuel judges for the rest of his life (7:15).")
+CHAPTER_ART["1sam7"] = [dict(
+    file="rijksmuseum-samuel-offers-suckling-lamb.jpg",
+    title="Samuel Offers a Suckling Lamb to Jehovah",
+    title_es="Samuel ofrece un cordero de leche a Jehová",
+    artist="Anonymous Netherlandish draughtsman",
+    year="between 1540 and 1550",
+    location="Rijksmuseum, Amsterdam (RP-T-1992-85)",
+    location_es="Rijksmuseum, Ámsterdam (RP-T-1992-85)",
+    alt="Pen drawing: in the foreground men pour water from jars onto the ground while a crowd of elders and soldiers gathers around a rough stone altar on the right, where a small lamb lies; in the background, under streaks from the sky, armed men rout an army across a hillside.",
+    note="The Dutch title is the museum's, &ldquo;Samuel offert een zooglam aan Jahwe&rdquo;. The draughtsman packs three moments of the chapter into one sheet: the water poured out at Mizpah (verse 6), the suckling lamb on the altar (verse 9), and behind them the Philistines struck down while Jehovah thunders (verse 10).",
+    note_es="El título neerlandés es el del museo, «Samuel offert een zooglam aan Jahwe». El dibujante reúne tres momentos del capítulo en una sola hoja: el agua derramada en Mizpá (versículo 6), el cordero de leche sobre el altar (versículo 9) y, detrás, los filisteos derrotados mientras Jehová truena (versículo 10).",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Samuel_offert_een_zooglam_aan_Jahwe,_RP-T-1992-85.jpg",
+)]
