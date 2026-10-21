@@ -47141,3 +47141,88 @@ CHAPTER_ART["1sam7"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Samuel_offert_een_zooglam_aan_Jahwe,_RP-T-1992-85.jpg",
 )]
+
+# --- 1 Samuel 8 ---
+DICTIONARY.extend([
+    ("maas", "ma&rsquo;as", "מָאַס", "ma'as",
+     'TO REJECT, refuse, despise &mdash; to throw something away as worthless. In the wilderness the people &ldquo;rejected Jehovah who is among you&rdquo; when they wept for Egypt (<a href="numbers-11.html#v11-20">Numbers 11:20</a>, already on these pages). ⭐ At <a href="1-samuel-8.html#v8-7">1 Samuel 8:7</a> (now on these pages) it is Jehovah&rsquo;s verdict on the request for a king: &ldquo;it is not you they have rejected, but me they have rejected from being king over them&rdquo;. The word returns when Jehovah rejects the king they were given (1 Samuel 15:23, not yet on these pages). The KJV and ASV say &ldquo;rejected&rdquo;; the Geneva &ldquo;cast away&rdquo;.',
+     ("1 Samuel", 8, 7)),
+])
+DICTIONARY_ES["maas"] = ("ma&rsquo;as",
+    'RECHAZAR, desechar, despreciar &mdash; tirar algo como cosa sin valor. En el desierto el pueblo «rechazó a Jehová que está entre vosotros» cuando lloraba por Egipto (<a href="numbers-11.es.html#v11-20">Números 11:20</a>, ya en estas páginas). ⭐ En <a href="1-samuel-8.es.html#v8-7">1 Samuel 8:7</a> (ya en estas páginas) es el veredicto de Jehová sobre la petición de un rey: «no es a ti a quien han rechazado, sino que a mí me han rechazado para que no sea rey sobre ellos». La palabra vuelve cuando Jehová rechaza al rey que les dio (1 Samuel 15:23, todavía no en estas páginas). La RV60 dice «desechado»; la TNM 1987 «rechazado».')
+DICTIONARY_ES["betsa"] = ("betsa",
+    'Ganancia deshonesta, lucro injusto &mdash; de una raíz que significa «cortar (un pedazo para uno mismo)». Los ojos y el corazón de Joacim «no están sino en tu <em>betsa</em>» (Jeremías 22:17): la codicia que construye un palacio de cedro con trabajo no pagado. Es el vicio que descalifica a un gobernante, lo contrario del padre que «juzgó la causa del afligido y del menesteroso» (22:16). ⭐ Los primeros jueces de Israel debían ser hombres «que aborrezcan la avaricia» (<a href="exodus-18.es.html#v18-21">Éxodo 18:21</a>), y los hijos de Samuel «se torcieron tras la ganancia, y tomaron soborno, y torcieron el juicio» (<a href="1-samuel-8.es.html#v8-3">1 Samuel 8:3</a>, los dos ya en estas páginas). La RV60 dice «avaricia».')
+DICTIONARY_ES["saris"] = ("saris",
+    'Eunuco &mdash; o simplemente «oficial de la corte»: la palabra cubre las dos cosas (Potifar, un <em>saris</em> casado, muestra el sentido más amplio). Aspenaz es «jefe de los <em>sarisim</em>» (Daniel 1:3); Isaías le había dicho a Ezequías que sus descendientes serían <em>sarisim</em> en el palacio de Babilonia (Isaías 39:7), y la tradición oyó a Daniel en la profecía. ⭐ En la advertencia de Samuel el rey dará el diezmo de los campos y viñas del pueblo «a sus funcionarios», <em>sarisim</em> (<a href="1-samuel-8.es.html#v8-15">1 Samuel 8:15</a>, ya en estas páginas).')
+
+_DICT8_EN = {
+    "mishpat": ' ⭐ <a href="1-samuel-8.html#v8-3">1 Samuel 8</a> (now on these pages) uses all three: Samuel&rsquo;s sons &ldquo;bent judgment&rdquo; (8:3), the elders ask for a king &ldquo;to judge us&rdquo; (8:5), and Samuel is told to declare &ldquo;the due of the king&rdquo;, <em>mishpat ha-melekh</em> (8:9, 11), a list of what the king will take.',
+    "shochad": ' ⭐ Samuel&rsquo;s sons, judges at Beersheba, &ldquo;bent toward gain, and took a bribe, and bent judgment&rdquo; (<a href="1-samuel-8.html#v8-3">1 Samuel 8:3</a>, now on these pages), the law of <a href="deuteronomy-16.html#v16-19">Deuteronomy 16:19</a> broken clause by clause.',
+    "melekh": ' ⭐ <a href="1-samuel-8.html#v8-5">1 Samuel 8</a> (now on these pages) is where the request is made, and Samuel answers it with &ldquo;the due of the king&rdquo;: he will take sons, daughters, fields and servants, and tithe the harvest and the flocks.',
+    "maaser": ' ⭐ In Samuel&rsquo;s warning the king takes the verb for himself: &ldquo;your seed and your vineyards he will tithe&rdquo;, and &ldquo;your flocks he will tithe&rdquo; (<a href="1-samuel-8.html#v8-15">1 Samuel 8:15</a>, 17, now on these pages).',
+    "shaal": ' ⭐ <a href="1-samuel-8.html#v8-10">1 Samuel 8:10</a> (now on these pages) calls the crowd at Ramah &ldquo;the people who were asking him for a king&rdquo;, <em>ha-sho&rsquo;alim</em>, one chapter before the asked-for king, Sha&rsquo;ul, appears.',
+    "saris": ' ⭐ In Samuel&rsquo;s warning the king will give the tithe of the people&rsquo;s fields and vineyards &ldquo;to his officials&rdquo;, <em>sarisim</em> (<a href="1-samuel-8.html#v8-15">1 Samuel 8:15</a>, now on these pages).',
+}
+_DICT8_SWAP = {
+    "betsa": ("(the corrupt judges 'turn aside after betsa,' 1 Samuel 8:3)",
+              '(Samuel&rsquo;s sons &lsquo;bent toward gain, and took a bribe, and bent judgment,&rsquo; <a href="1-samuel-8.html#v8-3">1 Samuel 8:3</a>, now on these pages; the first judges were to be men &lsquo;who hate unjust gain,&rsquo; <a href="exodus-18.html#v18-21">Exodus 18:21</a>)'),
+    "maen": ("the people refused Samuel's warning about a king (1 Samuel 8:19, not yet on these pages)",
+             'the people refused Samuel\'s warning about a king (<a href="1-samuel-8.html#v8-19">1 Samuel 8:19</a>, now on these pages)'),
+    "melekh": ("(1 Samuel 8:5, 8:20)", '(<a href="1-samuel-8.html#v8-5">1 Samuel 8:5</a>, 8:20)'),
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT8_SWAP:
+        _a, _b = _DICT8_SWAP[_d[0]]
+        assert _d[4].count(_a) == 1, _d[0]
+        _d = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+    if _d[0] in _DICT8_EN:
+        _d = _d[:4] + (_d[4] + _DICT8_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+for _k, _a, _b in [
+    ("maen", "el pueblo rechazó la advertencia de Samuel sobre un rey (1 Samuel 8:19, todavía no en estas páginas)", 'el pueblo rechazó la advertencia de Samuel sobre un rey (<a href="1-samuel-8.es.html#v8-19">1 Samuel 8:19</a>, ya en estas páginas)'),
+    ("melekh", "(1 Samuel 8:5, 8:20)", '(<a href="1-samuel-8.es.html#v8-5">1 Samuel 8:5</a>, 8:20)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("mishpat", ' ⭐ <a href="1-samuel-8.es.html#v8-3">1 Samuel 8</a> (ya en estas páginas) usa los tres sentidos: los hijos de Samuel «torcieron el juicio» (8:3), los ancianos piden un rey «que nos juzgue» (8:5), y a Samuel se le manda declarar «el derecho del rey», <em>mishpat ha-melekh</em> (8:9, 11), una lista de lo que el rey tomará.'),
+    ("shochad", ' ⭐ Los hijos de Samuel, jueces en Beerseba, «se torcieron tras la ganancia, y tomaron soborno, y torcieron el juicio» (<a href="1-samuel-8.es.html#v8-3">1 Samuel 8:3</a>, ya en estas páginas), la ley de <a href="deuteronomy-16.es.html#v16-19">Deuteronomio 16:19</a> quebrantada cláusula por cláusula.'),
+    ("melekh", ' ⭐ <a href="1-samuel-8.es.html#v8-5">1 Samuel 8</a> (ya en estas páginas) es donde se hace la petición, y Samuel responde con «el derecho del rey»: tomará hijos, hijas, campos y siervos, y diezmará la cosecha y los rebaños.'),
+    ("maaser", ' ⭐ En la advertencia de Samuel el rey toma el verbo para sí: «diezmará sus sementeras y sus viñas», y «diezmará sus rebaños» (<a href="1-samuel-8.es.html#v8-15">1 Samuel 8:15</a>, 17, ya en estas páginas).'),
+    ("shaal", ' ⭐ <a href="1-samuel-8.es.html#v8-10">1 Samuel 8:10</a> (ya en estas páginas) llama a la multitud de Ramá «el pueblo que le pedía un rey», <em>ha-sho&rsquo;alim</em>, un capítulo antes de que aparezca el rey pedido, Sha&rsquo;ul.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ In old age he makes his sons Joel and Abijah judges at Beersheba; they take bribes, and the elders come to Ramah asking for &ldquo;a king to judge us, like all the nations&rdquo;. Jehovah tells him &ldquo;it is not you they have rejected, but me&rdquo;, and he warns them of &ldquo;the due of the king&rdquo; (<a href="1-samuel-8.html#v8-1">1 Samuel 8</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 8, 1), ("1 Samuel", 8, 6)]
+    elif _e["slug"] == "beersheba":
+        _e["desc"] += ' ⭐ Samuel&rsquo;s sons Joel and Abijah sit as judges there, and their bribes bring the demand for a king (<a href="1-samuel-8.html#v8-2">1 Samuel 8:2</a>&ndash;5, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 8, 2)]
+for _k, _b in [
+    ("samuel", ' ⭐ En su vejez pone a sus hijos Joel y Abías como jueces en Beerseba; aceptan sobornos, y los ancianos van a Ramá a pedir «un rey que nos juzgue, como todas las naciones». Jehová le dice «no es a ti a quien han rechazado, sino a mí», y él les advierte del «derecho del rey» (<a href="1-samuel-8.es.html#v8-1">1 Samuel 8</a>, ya en estas páginas).'),
+    ("beersheba", ' ⭐ Allí juzgan los hijos de Samuel, Joel y Abías, y sus sobornos traen la petición de un rey (<a href="1-samuel-8.es.html#v8-2">1 Samuel 8:2</a>&ndash;5, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam8"] = dict(era="monarchy",
+    when="Samuel, grown old, makes his sons Joel and Abijah judges at Beersheba; they take bribes and bend judgment. The elders of Israel come to Ramah and ask for a king to judge them like all the nations. Jehovah tells Samuel that the people have rejected not him but Jehovah as king, and to warn them of the king's due: he will take their sons, daughters, fields and servants and tithe their harvest and flocks. The people refuse to listen, and Jehovah tells Samuel to make a king reign for them.",
+    clock="Samuel's old age (1 Samuel 8:1), at the end of the period of the Judges.")
+CHAPTER_ART["1sam8"] = [dict(
+    file="rijksmuseum-israelites-ask-samuel-for-king.jpg",
+    title="The Israelites Petition Samuel for a King",
+    title_es="Los israelitas piden un rey a Samuel",
+    artist="Eighteenth-century engraver (signed in the plate)",
+    year="between 1700 and 1799",
+    location="Rijksmuseum, Amsterdam (RP-P-1934-250)",
+    location_es="Rijksmuseum, Ámsterdam (RP-P-1934-250)",
+    alt="Engraving: in a courtyard with a palm tree and arched windows, an old bearded man in a hooded cloak gestures at a group of elders, the foremost of whom, in a turban, leans toward him with open hands; a youth stands behind the old man, and a basin and a cloth lie on the ground in front.",
+    note="A Bible plate captioned in six languages, citing 1 Samuel 8:5. The Hebrew line reads <em>bnei Yisra&rsquo;el sho&rsquo;alim melekh mi-Shmu&rsquo;el</em>, &ldquo;the sons of Israel ask a king of Samuel&rdquo;, using the verb <em>sha&rsquo;al</em> of verse 10, the root of Saul&rsquo;s name.",
+    note_es="Una lámina bíblica con leyenda en seis idiomas, que cita 1 Samuel 8:5. La línea hebrea dice <em>bnei Yisra&rsquo;el sho&rsquo;alim melekh mi-Shmu&rsquo;el</em>, «los hijos de Israel piden un rey a Samuel», con el verbo <em>sha&rsquo;al</em> del versículo 10, la raíz del nombre de Saúl.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Isra%C3%ABlieten_vragen_Samuel_om_een_koning_aan_te_stellen,_RP-P-1934-250.jpg",
+)]
