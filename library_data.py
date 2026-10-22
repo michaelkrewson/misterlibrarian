@@ -47557,3 +47557,105 @@ CHAPTER_ART["1sam11"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._23r.jpg",
 )]
+
+# --- 1 Samuel 12 ---
+DICTIONARY.extend([
+    ("ratsats", "ratsats", "רָצַץ", "ratsats",
+     'TO CRUSH, break &mdash; to bruise something until it gives way, and so to oppress the weak. It is the reed that is &ldquo;crushed&rdquo;, the staff of Egypt that breaks under the hand that leans on it (2 Kings 18:21) and the &ldquo;bruised reed&rdquo; the servant will not break (Isaiah 42:3), neither yet on these pages. ⭐ It stands beside <a href="dictionary.html#ashaq">ashaq</a>, &ldquo;to oppress&rdquo;, in the curse &ldquo;you will be only oppressed and crushed, always&rdquo; (<a href="deuteronomy-28.html#v28-33">Deuteronomy 28:33</a>, now on these pages), and the same pair makes Samuel&rsquo;s defence: &ldquo;Whom have I oppressed? Whom have I crushed?&rdquo;, and the people answer &ldquo;You have not oppressed us, and you have not crushed us&rdquo; (<a href="1-samuel-12.html#v12-3">1 Samuel 12:3&ndash;4</a>, now on these pages).',
+     ("1 Samuel", 12, 3)),
+    ("saphah", "saphah", "סָפָה", "saphah",
+     'TO SWEEP AWAY, carry off &mdash; to be destroyed along with others, caught up in a ruin meant for someone else. It is Abraham&rsquo;s word over Sodom, &ldquo;Will you really sweep away the righteous with the wicked?&rdquo; (<a href="genesis-18.html#v18-23">Genesis 18:23</a>), the angels&rsquo; warning to Lot, &ldquo;or you will be swept away in the punishment of the city&rdquo; (<a href="genesis-19.html#v19-15">Genesis 19:15</a>), and Moses&rsquo; to the congregation at the tents of Korah, &ldquo;lest you be swept away in all their sins&rdquo; (<a href="numbers-16.html#v16-26">Numbers 16:26</a>), all now on these pages. ⭐ Samuel ends his farewell with it: &ldquo;But if you go on doing evil, you shall be swept away, both you and your king&rdquo; (<a href="1-samuel-12.html#v12-25">1 Samuel 12:25</a>, now on these pages), in a speech that began with Moses&rsquo; words from that same chapter of Numbers.',
+     ("1 Samuel", 12, 25)),
+])
+DICTIONARY_ES["ratsats"] = ("ratsats",
+    'QUEBRANTAR, aplastar &mdash; magullar una cosa hasta que cede, y así oprimir al débil. Es la caña «quebrada», el báculo de Egipto que se rompe bajo la mano que se apoya en él (2 Reyes 18:21), y la «caña cascada» que el siervo no quebrará (Isaías 42:3), ninguno todavía en estas páginas. ⭐ Está junto a <a href="diccionario.html#ashaq">ashaq</a>, «oprimir», en la maldición «no serás sino oprimido y quebrantado, siempre» (<a href="deuteronomy-28.es.html#v28-33">Deuteronomio 28:33</a>, ya en estas páginas), y la misma pareja forma la defensa de Samuel: «¿A quién he oprimido? ¿A quién he quebrantado?», y el pueblo responde «No nos has oprimido, ni nos has quebrantado» (<a href="1-samuel-12.es.html#v12-3">1 Samuel 12:3&ndash;4</a>, ya en estas páginas).')
+DICTIONARY_ES["saphah"] = ("safah",
+    'BARRER, arrebatar &mdash; ser destruido junto con otros, atrapado en una ruina destinada a otro. Es la palabra de Abrahán sobre Sodoma, «¿De veras barrerás al justo con el malvado?» (Génesis 18:23), la advertencia de los ángeles a Lot (Génesis 19:15), los dos ya en estas páginas, todavía no en español, y la de Moisés a la congregación ante las tiendas de Coré, «no sea que seáis barridos en todos sus pecados» (<a href="numbers-16.es.html#v16-26">Números 16:26</a>, ya en estas páginas). ⭐ Samuel termina su despedida con ella: «Pero si siguen haciendo el mal, serán barridos, tanto ustedes como su rey» (<a href="1-samuel-12.es.html#v12-25">1 Samuel 12:25</a>, ya en estas páginas), en un discurso que empezó con las palabras de Moisés de ese mismo capítulo de Números.')
+DICTIONARY_ES["chalilah"] = ("jalilah",
+    '«¡Lejos esté de ti!» &mdash; literalmente algo cercano a «profano te sea»: la exclamación de Abrahán, dos veces en un versículo (Génesis 18:25, ya en estas páginas, todavía no en español), ante la idea de que el Juez obrara injustamente. ⭐ <span data-heb="חלילה לי">«Lejos esté de mí» aparece en once versículos de la Biblia hebrea</span>; en <a href="1-samuel-12.es.html#v12-23">1 Samuel 12:23</a> (ya en estas páginas) Samuel dice «lejos esté de mí pecar contra Jehová dejando de orar por ustedes»: dejar de orar por el pueblo sería en sí un pecado.')
+
+_DICT12_EN = {
+    "chalilah": ' ⭐ <span data-heb="חלילה לי">&ldquo;Far be it from me&rdquo; stands in eleven verses of the Hebrew Bible</span>; at <a href="1-samuel-12.html#v12-23">1 Samuel 12:23</a> (now on these pages) Samuel says &ldquo;far be it from me that I should sin against Jehovah by ceasing to pray for you&rdquo;: to stop praying for the people would itself be a sin.',
+    "kofer-ransom": ' ⭐ Samuel&rsquo;s defence asks &ldquo;from whose hand have I taken a ransom, to hide my eyes with it?&rdquo; (<a href="1-samuel-12.html#v12-3">1 Samuel 12:3</a>, now on these pages): a kofer, not the shochad, &ldquo;bribe&rdquo;, that his sons took (8:3).',
+    "ashaq": ' ⭐ Paired with <a href="dictionary.html#ratsats">ratsats</a>, &ldquo;to crush&rdquo;, in Samuel&rsquo;s defence, &ldquo;Whom have I oppressed? Whom have I crushed?&rdquo; (<a href="1-samuel-12.html#v12-3">1 Samuel 12:3&ndash;4</a>, now on these pages), as in the curse of Deuteronomy 28:33.',
+    "mashiach": ' ⭐ Saul is first called Jehovah&rsquo;s anointed at <a href="1-samuel-12.html#v12-3">1 Samuel 12:3</a> and 5 (now on these pages), where Samuel calls &ldquo;Jehovah and his anointed&rdquo; to witness his own innocence.',
+    "shaal": ' ⭐ <a href="1-samuel-12.html#v12-13">1 Samuel 12:13</a> (now on these pages): &ldquo;look — the king whom you have chosen, whom you have asked for&rdquo;, she&rsquo;eltem; and 12:17, 19 name the request &ldquo;asking for yourselves a king&rdquo; an evil.',
+    "tohu": ' ⭐ The verse is now on these pages: &ldquo;And do not turn aside after the empty things, which cannot profit and cannot deliver, for they are empty&rdquo; (<a href="1-samuel-12.html#v12-21">1 Samuel 12:21</a>).',
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT12_EN:
+        _d = _d[:4] + (_d[4] + _DICT12_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+for _k, _b in [
+    ("kofer-ransom", ' ⭐ La defensa de Samuel pregunta «¿de mano de quién he tomado rescate para cubrir con él mis ojos?» (<a href="1-samuel-12.es.html#v12-3">1 Samuel 12:3</a>, ya en estas páginas): un <em>kofer</em>, no el <em>shojad</em>, «soborno», que tomaron sus hijos (8:3).'),
+    ("ashaq", ' ⭐ Unido a <a href="diccionario.html#ratsats">ratsats</a>, «quebrantar», en la defensa de Samuel, «¿A quién he oprimido? ¿A quién he quebrantado?» (<a href="1-samuel-12.es.html#v12-3">1 Samuel 12:3&ndash;4</a>, ya en estas páginas), como en la maldición de Deuteronomio 28:33.'),
+    ("mashiach", ' ⭐ Saúl es llamado por primera vez el ungido de Jehová en <a href="1-samuel-12.es.html#v12-3">1 Samuel 12:3</a> y 5 (ya en estas páginas), donde Samuel pone a «Jehová y su ungido» por testigos de su propia inocencia.'),
+    ("shaal", ' ⭐ <a href="1-samuel-12.es.html#v12-13">1 Samuel 12:13</a> (ya en estas páginas): «miren al rey que han escogido, al que pidieron», <em>she’eltem</em>; y 12:17, 19 llaman un mal a la petición, «pedir para ustedes un rey».'),
+    ("tohu", ' ⭐ El versículo está ya en estas páginas: «Y no se aparten en pos de las cosas vacías, que no aprovechan ni libran, porque son vacías» (<a href="1-samuel-12.es.html#v12-21">1 Samuel 12:21</a>).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="bedan", name="Bedan", kind="person", aliases=["Bedan"],
+    refs=[("1 Samuel", 12, 11)], videos=[],
+    desc='A deliverer named by Samuel in his farewell, between Jerubbaal and Jephthah: &ldquo;And Jehovah sent Jerubbaal and Bedan and Jephthah and Samuel&rdquo; (<a href="1-samuel-12.html#v12-11">1 Samuel 12:11</a>, now on these pages). He is not one of the judges in the book of Judges. ⚠ The Greek reads Barak, Deborah&rsquo;s general, and several modern versions follow it; some have proposed Abdon (<a href="judges-12.html#v12-13">Judges 12:13</a>, now on these pages); and the Talmud is reported to read <em>bedan</em> as <em>ben Dan</em>, &ldquo;the son of Dan&rdquo;, meaning Samson. A man named Bedan stands in a genealogy of Manasseh (1 Chronicles 7:17, not yet on these pages). The name is kept here as the Hebrew has it.'))
+ENCYCLOPEDIA_ES["bedan"] = ("Bedán",
+    'Un libertador nombrado por Samuel en su despedida, entre Jerubaal y Jefté: «Y Jehová envió a Jerubaal y a Bedán y a Jefté y a Samuel» (<a href="1-samuel-12.es.html#v12-11">1 Samuel 12:11</a>, ya en estas páginas). No es uno de los jueces del libro de Jueces. ⚠ El griego lee Barac, el general de Débora, y varias versiones modernas lo siguen; algunos han propuesto Abdón (<a href="judges-12.es.html#v12-13">Jueces 12:13</a>, ya en estas páginas); y se informa que el Talmud lee <em>bedán</em> como <em>ben Dan</em>, «el hijo de Dan», es decir, Sansón. Un hombre llamado Bedán figura en una genealogía de Manasés (1 Crónicas 7:17, todavía no en estas páginas). El nombre se conserva aquí como lo trae el hebreo.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ In his farewell he asks the people to testify against him, &ldquo;Whose ox have I taken? Or whose donkey have I taken?&rdquo;, retells the story from Egypt to Nahash, calls down thunder and rain at the wheat harvest, and promises not to cease praying for them (<a href="1-samuel-12.html#v12-3">1 Samuel 12</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 3), ("1 Samuel", 12, 18), ("1 Samuel", 12, 23)]
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' Samuel presents him as &ldquo;the king whom you have chosen, whom you have asked for&rdquo;, calls him Jehovah&rsquo;s anointed, and warns that if the people do evil &ldquo;you shall be swept away, both you and your king&rdquo; (<a href="1-samuel-12.html#v12-13">1 Samuel 12:13</a>, 25, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 13)]
+    elif _e["slug"] == "nahash":
+        _a = "Samuel later names his attack as the moment the people demanded a king (1 Samuel 12:12), and David speaks of the kindness Nahash showed him and sends condolences to his son Hanun (2 Samuel 10:2), both not yet on these pages."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'Samuel later names his attack as the moment the people demanded a king (<a href="1-samuel-12.html#v12-12">1 Samuel 12:12</a>, now on these pages), though in 1 Samuel 8 the demand comes before Nahash appears; David speaks of the kindness Nahash showed him and sends condolences to his son Hanun (2 Samuel 10:2, not yet on these pages).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 12)]
+    elif _e["slug"] == "jerubbaal":
+        _e["desc"] += ' Samuel names him first among the deliverers Jehovah sent (<a href="1-samuel-12.html#v12-11">1 Samuel 12:11</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 11)]
+    elif _e["slug"] == "jephthah":
+        _e["desc"] += ' Samuel names him among the deliverers Jehovah sent, after Jerubbaal and Bedan (<a href="1-samuel-12.html#v12-11">1 Samuel 12:11</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 11)]
+    elif _e["slug"] == "barak":
+        _e["desc"] += ' ⚠ At <a href="1-samuel-12.html#v12-11">1 Samuel 12:11</a> (now on these pages) the Greek reads his name where the Hebrew has the otherwise unknown Bedan.'
+    elif _e["slug"] == "sisera":
+        _e["desc"] += ' Samuel recalls him as the first of the oppressors into whose hand Jehovah &ldquo;sold&rdquo; Israel (<a href="1-samuel-12.html#v12-9">1 Samuel 12:9</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 12, 9)]
+for _k, _a, _b in [
+    ("nahash", "Samuel nombra después su ataque como el momento en que el pueblo pidió un rey (1 Samuel 12:12), y David habla de la bondad que Nahás le mostró y envía el pésame a su hijo Hanún (2 Samuel 10:2), los dos todavía no en estas páginas.",
+     'Samuel nombra después su ataque como el momento en que el pueblo pidió un rey (<a href="1-samuel-12.es.html#v12-12">1 Samuel 12:12</a>, ya en estas páginas), aunque en 1 Samuel 8 la petición viene antes de que aparezca Nahás; David habla de la bondad que Nahás le mostró y envía el pésame a su hijo Hanún (2 Samuel 10:2, todavía no en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("samuel", ' ⭐ En su despedida pide al pueblo que testifique contra él, «¿De quién he tomado el buey? ¿O de quién he tomado el asno?», vuelve a contar la historia desde Egipto hasta Nahás, hace venir truenos y lluvia en la siega del trigo, y promete no dejar de orar por ellos (<a href="1-samuel-12.es.html#v12-3">1 Samuel 12</a>, ya en estas páginas).'),
+    ("saul-king", ' Samuel lo presenta como «el rey que han escogido, al que pidieron», lo llama el ungido de Jehová, y advierte que si el pueblo hace el mal «serán barridos, tanto ustedes como su rey» (<a href="1-samuel-12.es.html#v12-13">1 Samuel 12:13</a>, 25, ya en estas páginas).'),
+    ("jerubbaal", ' Samuel lo nombra el primero entre los libertadores que Jehová envió (<a href="1-samuel-12.es.html#v12-11">1 Samuel 12:11</a>, ya en estas páginas).'),
+    ("jephthah", ' Samuel lo nombra entre los libertadores que Jehová envió, después de Jerubaal y Bedán (<a href="1-samuel-12.es.html#v12-11">1 Samuel 12:11</a>, ya en estas páginas).'),
+    ("barak", ' ⚠ En <a href="1-samuel-12.es.html#v12-11">1 Samuel 12:11</a> (ya en estas páginas) el griego lee su nombre donde el hebreo tiene a Bedán, por lo demás desconocido.'),
+    ("sisera", ' Samuel lo recuerda como el primero de los opresores en cuya mano Jehová «vendió» a Israel (<a href="1-samuel-12.es.html#v12-9">1 Samuel 12:9</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam12"] = dict(era="monarchy",
+    when="Samuel's farewell: he asks the people to testify whether he has taken anyone's ox or donkey or a ransom, retells Jehovah's righteous acts from Egypt through the judges to Nahash, sets two roads before people and king, and calls down thunder and rain at the wheat harvest; the people ask him to pray for them, and he promises not to cease praying, warning that if they do evil they will be swept away, they and their king.",
+    clock="After the kingship is renewed at Gilgal, at the wheat harvest (1 Samuel 11:15; 12:17).")
+
+CHAPTER_ART["1sam12"] = [dict(
+    file="luyken-samuel-thunder-sign.jpg",
+    title="Samuel Gives the People a Sign", title_es="Samuel da al pueblo una señal",
+    artist="Jan Luyken",
+    year="1708",
+    location="Rijksmuseum, Amsterdam (RP-P-OB-45.327)", location_es="Rijksmuseum, Ámsterdam (RP-P-OB-45.327)",
+    alt="Etching: under a dark sky split by zigzag lightning and slanting rain, a bearded old man in a robe and turban stands on a rock at the right, one arm stretched out; a vast crowd fills the plain toward distant hills, and in the foreground men bow, cover their faces and shrink back.",
+    note="The plate is captioned &ldquo;Samuël geeft het Volck een Teeken. 1. Sam: XII&rdquo;, &ldquo;Samuel gives the people a sign&rdquo;. Luyken shows the thunders and rain of verse 18 breaking over the gathered people while Samuel points to them, and the fear of the same verse in the men bowing before him.",
+    note_es="La lámina lleva el rótulo «Samuël geeft het Volck een Teeken. 1. Sam: XII», «Samuel da al pueblo una señal». Luyken muestra los truenos y la lluvia del versículo 18 descargando sobre el pueblo reunido mientras Samuel los señala, y el temor del mismo versículo en los hombres que se inclinan ante él.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Samuel_en_het_volk_krijgen_een_teken,_RP-P-OB-45.327.jpg",
+)]
