@@ -47659,3 +47659,143 @@ CHAPTER_ART["1sam12"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Samuel_en_het_volk_krijgen_een_teken,_RP-P-OB-45.327.jpg",
 )]
+
+# --- 1 Samuel 13 ---
+DICTIONARY.extend([
+    ("netsiv", "netsiv", "נְצִיב", "netsiv",
+     'A GARRISON, an occupying post &mdash; something set up and standing, from <em>natsav</em>, &ldquo;to stand&rdquo;, the root of <a href="dictionary.html#matsav">matsav</a> and <a href="dictionary.html#matzevah">matzevah</a>. The same letters are the &ldquo;pillar&rdquo; of salt that Lot&rsquo;s wife became (Genesis 19:26) and, in Kings, an officer set over a district. ⭐ In Saul&rsquo;s war it is the Philistine occupation itself: &ldquo;the Philistines&rsquo; garrisons&rdquo; at Gibeah of God (<a href="1-samuel-10.html#v10-5">1 Samuel 10:5</a>), and &ldquo;Jonathan struck the garrison of the Philistines that was at Geba&rdquo;, while the report credits Saul (<a href="1-samuel-13.html#v13-3">1 Samuel 13:3&ndash;4</a>), both now on these pages. In both places the Greek reads the word as a man&rsquo;s name, Nasib.',
+     ("1 Samuel", 13, 3)),
+    ("baash", "ba&rsquo;ash", "בָּאַשׁ", "baash",
+     'TO STINK &mdash; of rotting fish and manna (Exodus 7:18; 16:20), and, in the causative and reflexive, to make someone, or become, A STENCH to others: hated and in danger. Jacob to his sons after Shechem: &ldquo;making me a stench to the inhabitants of the land&rdquo; (<a href="genesis-34.html#v34-30">Genesis 34:30</a>); the foremen to Moses: &ldquo;you have made us a stench in the eyes of Pharaoh&rdquo; (<a href="exodus-5.html#v5-21">Exodus 5:21</a>), both now on these pages. ⭐ <span data-heb="נבאש">The form &ldquo;to become a stench&rdquo; stands in three verses of the Hebrew Bible</span>, all in Samuel; the first is <a href="1-samuel-13.html#v13-4">1 Samuel 13:4</a> (now on these pages), &ldquo;Israel has also become a stench to the Philistines&rdquo;, and the others are Ammon before David and Absalom before his father (2 Samuel 10:6; 16:21, not yet on these pages).',
+     ("1 Samuel", 13, 4)),
+    ("sakhal", "sakhal", "סָכַל", "sakhal",
+     'TO ACT FOOLISHLY &mdash; not stupidity but a wrong choice made by someone who should have known better. Laban says it to Jacob: &ldquo;Now you have acted foolishly&rdquo; (<a href="genesis-31.html#v31-28">Genesis 31:28</a>, now on these pages). ⭐ <span data-heb="נסכלת">The form <em>niskalta</em>, &ldquo;you have acted foolishly&rdquo;, stands in four verses of the Hebrew Bible</span>: Samuel to Saul after the sacrifice at Gilgal (<a href="1-samuel-13.html#v13-13">1 Samuel 13:13</a>, now on these pages), David of himself after the census (2 Samuel 24:10, with its parallel 1 Chronicles 21:8), and the seer Hanani to King Asa (2 Chronicles 16:9), none of the last three yet on these pages. Two kings hear it; one says it of himself.',
+     ("1 Samuel", 13, 13)),
+    ("pim", "pim", "פִּים", "pim",
+     'A PIM &mdash; the charge for sharpening a ploughshare or a mattock in the days when Israel had no smith (<a href="1-samuel-13.html#v13-21">1 Samuel 13:21</a>, now on these pages), and a word that stands nowhere else in the Bible. Later readers lost its meaning, and the versions guessed: the KJV made it &ldquo;a file&rdquo;, and the Greek turned the verse into a harvest. ⭐ Small stone weights inscribed <em>pym</em>, at about two-thirds of a shekel, have since been found in excavations (reported); the word is a weight of silver, and the verse is a price list. The NIV prints &ldquo;two-thirds of a shekel&rdquo;; the NWT 1984 keeps &ldquo;a pim&rdquo;.',
+     ("1 Samuel", 13, 21)),
+])
+DICTIONARY_ES["netsiv"] = ("netsiv",
+    'UNA GUARNICIÓN, un puesto de ocupación &mdash; algo plantado y en pie, de <em>natsav</em>, «estar en pie», la raíz de <a href="diccionario.html#matsav">matsav</a> y <a href="diccionario.html#matzevah">matsevá</a>. Las mismas letras son la «columna» de sal en que se convirtió la mujer de Lot (Génesis 19:26) y, en Reyes, un oficial puesto sobre un distrito. ⭐ En la guerra de Saúl es la ocupación filistea misma: «las guarniciones de los filisteos» en Guibeá de Dios (<a href="1-samuel-10.es.html#v10-5">1 Samuel 10:5</a>), y «Jonatán hirió la guarnición de los filisteos que estaba en Gueba», mientras la noticia se lo atribuye a Saúl (<a href="1-samuel-13.es.html#v13-3">1 Samuel 13:3&ndash;4</a>), los dos ya en estas páginas. En los dos lugares el griego lee la palabra como nombre de un hombre, Nasib.')
+DICTIONARY_ES["baash"] = ("baash",
+    'HEDER &mdash; dicho de peces y maná podridos (Éxodo 7:18; 16:20), y, en las formas causativa y reflexiva, hacer a alguien, o hacerse, UN HEDOR para otros: odiado y en peligro. Jacob a sus hijos después de Siquem: «haciéndome un hedor a los habitantes de la tierra» (<a href="genesis-34.es.html#v34-30">Génesis 34:30</a>); los capataces a Moisés: «nos han hecho odiosos ante los ojos del faraón» (<a href="exodus-5.es.html#v5-21">Éxodo 5:21</a>), los dos ya en estas páginas. ⭐ <span data-heb="נבאש">La forma «hacerse un hedor» aparece en tres versículos de la Biblia hebrea</span>, todos en Samuel; el primero es <a href="1-samuel-13.es.html#v13-4">1 Samuel 13:4</a> (ya en estas páginas), «Israel se ha hecho un hedor para los filisteos», y los otros son Amón ante David y Absalón ante su padre (2 Samuel 10:6; 16:21, todavía no en estas páginas).')
+DICTIONARY_ES["sakhal"] = ("sajal",
+    'OBRAR NECIAMENTE &mdash; no torpeza, sino una mala elección de quien debía saber más. Labán se lo dice a Jacob: «Ahora has obrado neciamente» (Génesis 31:28, ya en estas páginas, todavía no en español). ⭐ <span data-heb="נסכלת">La forma <em>niskalta</em>, «has obrado neciamente», aparece en cuatro versículos de la Biblia hebrea</span>: Samuel a Saúl después del sacrificio de Gilgal (<a href="1-samuel-13.es.html#v13-13">1 Samuel 13:13</a>, ya en estas páginas), David de sí mismo después del censo (2 Samuel 24:10, con su paralelo 1 Crónicas 21:8), y el vidente Hananí al rey Asa (2 Crónicas 16:9), ninguno de los tres últimos todavía en estas páginas. Dos reyes la oyen; uno la dice de sí mismo.')
+DICTIONARY_ES["pim"] = ("pim",
+    'UN PIM &mdash; el precio por afilar una reja o un azadón en los días en que Israel no tenía herrero (<a href="1-samuel-13.es.html#v13-21">1 Samuel 13:21</a>, ya en estas páginas), y una palabra que no aparece en ningún otro lugar de la Biblia. Los lectores posteriores perdieron su sentido, y las versiones adivinaron: la RV 1909 habla de «hacer bocas en las rejas», y el griego convirtió el versículo en una cosecha. ⭐ Desde entonces se han hallado en excavaciones pequeñas pesas de piedra con la inscripción <em>pym</em>, de unos dos tercios de siclo (se informa); la palabra es un peso de plata, y el versículo es una lista de precios. La RV60 conserva «un pim»; la NVI pone «dos tercios de un siclo de plata».')
+DICTIONARY_ES["mashchit"] = ("mashjit",
+    'EL DESTRUCTOR &mdash; «Jehová pasará de largo por aquella puerta y no dejará que el destructor entre en vuestras casas a herir» (<a href="exodus-12.es.html#v12-23">Éxodo 12:23</a>, ya en estas páginas). ⚠ El capítulo no lo armoniza con el versículo 12, donde Jehová dice «pasaré… heriré». Las dos cosas quedan: Dios hiere, y un destructor es detenido a la puerta. Lectores antiguos y modernos han tomado a <em>ha-mashjit</em> como un agente distinto (compárese el ángel destructor que se detiene en la era, 2 Samuel 24:16), como una personificación de la plaga misma, o como una manera de hablar del propio acto de Dios a cierta distancia. Hebreos 11:28 mantiene la misma doble visión: Moisés celebró la Pascua «para que el destructor de los primogénitos no los tocase». ⭐ En <a href="1-samuel-13.es.html#v13-17">1 Samuel 13:17</a> (ya en estas páginas) la misma palabra son los saqueadores que salen del campamento filisteo en tres compañías.')
+DICTIONARY_ES["ivri"] = ("ivrí",
+    '«Hebreo» &mdash; su primera aparición en la Biblia, sobre Abram (Génesis 14:13, ya en estas páginas, todavía no en español). Lo más natural es «descendiente de Éber» (10:21), el nombre señalado ya en la Tabla de las Naciones; una teoría más antigua lo une en cambio a los <em>apiru</em>, los forasteros sin tierra del antiguo Oriente Próximo. ⭐ En 1 Samuel es sobre todo el nombre que los filisteos dan a Israel (<a href="1-samuel-4.es.html#v4-9">4:9</a>); en <a href="1-samuel-13.es.html#v13-3">13:3</a> Saúl lo usa él mismo, «¡Que lo oigan los hebreos!», y en 13:7 juega con él: <em>ivrim avru</em>, «los hebreos pasaron» el Jordán (los dos ya en estas páginas).')
+
+_DICT13_EN = {
+    "mashchit": ' ⭐ At <a href="1-samuel-13.html#v13-17">1 Samuel 13:17</a> (now on these pages) the same word is the raiders who come out of the Philistine camp in three companies.',
+    "ivri": ' ⭐ In 1 Samuel it is mostly the Philistines&rsquo; name for Israel (<a href="1-samuel-4.html#v4-9">4:9</a>); at <a href="1-samuel-13.html#v13-3">13:3</a> Saul uses it himself, &ldquo;Let the Hebrews hear!&rdquo;, and at 13:7 it is a pun: <em>ivrim avru</em>, &ldquo;Hebrews crossed&rdquo; the Jordan (both now on these pages).',
+    "charash": ' ⭐ <a href="1-samuel-13.html#v13-19">1 Samuel 13:19</a> (now on these pages): &ldquo;no smith was to be found in all the land of Israel; for the Philistines said, Lest the Hebrews make sword or spear&rdquo;.',
+    "matsav": ' ⭐ <a href="1-samuel-13.html#v13-23">1 Samuel 13:23</a> (now on these pages): &ldquo;the outpost of the Philistines went out to the pass of Michmash&rdquo;.',
+    "shofar": ' ⭐ Saul blows it after Jonathan strikes the garrison at Geba: &ldquo;Let the Hebrews hear!&rdquo; (<a href="1-samuel-13.html#v13-3">1 Samuel 13:3</a>, now on these pages).',
+    "nagid": ' ⭐ At <a href="1-samuel-13.html#v13-14">1 Samuel 13:14</a> (now on these pages) Samuel tells Saul that Jehovah has commanded another man to be leader over his people, &ldquo;a man after his own heart&rdquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "barzel":
+        _a = "⚠ 1 Samuel 13:19 (not yet on these pages) reports"
+        assert _d[4].count(_a) == 1
+        _d = _d[:4] + (_d[4].replace(_a, '⚠ <a href="1-samuel-13.html#v13-19">1 Samuel 13:19</a> (now on these pages) reports'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT13_EN:
+        _d = _d[:4] + (_d[4] + _DICT13_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 1
+_s = DICTIONARY_ES["barzel"]
+_a = "⚠ 1 Samuel 13:19 (todavía no en estas páginas) informa"
+assert _s[1].count(_a) == 1
+DICTIONARY_ES["barzel"] = (_s[0], _s[1].replace(_a, '⚠ <a href="1-samuel-13.es.html#v13-19">1 Samuel 13:19</a> (ya en estas páginas) informa'))
+for _k, _b in [
+    ("charash", ' ⭐ <a href="1-samuel-13.es.html#v13-19">1 Samuel 13:19</a> (ya en estas páginas): «no se hallaba herrero en toda la tierra de Israel; porque los filisteos decían: No sea que los hebreos se hagan espada o lanza».'),
+    ("matsav", ' ⭐ <a href="1-samuel-13.es.html#v13-23">1 Samuel 13:23</a> (ya en estas páginas): «la avanzada de los filisteos salió al paso de Micmás».'),
+    ("shofar", ' ⭐ Saúl lo toca después de que Jonatán hiere la guarnición de Gueba: «¡Que lo oigan los hebreos!» (<a href="1-samuel-13.es.html#v13-3">1 Samuel 13:3</a>, ya en estas páginas).'),
+    ("nagid", ' ⭐ En <a href="1-samuel-13.es.html#v13-14">1 Samuel 13:14</a> (ya en estas páginas) Samuel dice a Saúl que Jehová ha mandado a otro hombre que sea caudillo sobre su pueblo, «un hombre conforme a su corazón».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="michmash", name="Michmash", kind="place", aliases=["Michmash"],
+    refs=[("1 Samuel", 13, 2), ("1 Samuel", 13, 5), ("1 Samuel", 13, 23)], videos=[],
+    coords=(31.8730, 35.2780, 0.3), approx=True,
+    modern="Mukhmas, northeast of Jerusalem, keeps the name",
+    desc='A town of Benjamin on the north side of a steep wadi, across from Geba. Saul holds it with two thousand men, then the Philistines camp there &ldquo;like the sand that is on the seashore&rdquo;, and their outpost goes out &ldquo;to the pass of Michmash&rdquo; (<a href="1-samuel-13.html#v13-2">1 Samuel 13:2</a>, 5, 23, now on these pages), the pass Jonathan will climb (1 Samuel 14, not yet on these pages). Isaiah&rsquo;s march of the Assyrian passes through it (Isaiah 10:28), and it is resettled after the exile (Nehemiah 11:31), neither yet on these pages. The modern village of Mukhmas keeps the name.'))
+ENCYCLOPEDIA_ES["michmash"] = ("Micmás",
+    'Una ciudad de Benjamín al norte de un barranco empinado, frente a Gueba. Saúl la ocupa con dos mil hombres, luego los filisteos acampan allí «como la arena que está a la orilla del mar», y su avanzada sale «al paso de Micmás» (<a href="1-samuel-13.es.html#v13-2">1 Samuel 13:2</a>, 5, 23, ya en estas páginas), el paso que Jonatán escalará (1 Samuel 14, todavía no en estas páginas). La marcha del asirio en Isaías pasa por ella (Isaías 10:28), y se repuebla después del exilio (Nehemías 11:31), ninguno todavía en estas páginas. La aldea moderna de Mujmás conserva el nombre.')
+
+ENCYCLOPEDIA.append(dict(slug="geba", name="Geba", kind="place", aliases=["Geba"],
+    refs=[("1 Samuel", 13, 3), ("1 Samuel", 13, 16)], videos=[],
+    coords=(31.8590, 35.2610, 0.3), approx=True,
+    modern="Jaba&rsquo;, northeast of Jerusalem, across the wadi from Mukhmas",
+    desc='&ldquo;Hill&rdquo; &mdash; a town of Benjamin facing Michmash across a steep wadi, a Levitical city (<a href="joshua-21.html#v21-17">Joshua 21:17</a>, now on these pages). Jonathan strikes the Philistine garrison there, and Saul and Jonathan hold it with six hundred men while the Philistines camp at Michmash (<a href="1-samuel-13.html#v13-3">1 Samuel 13:3</a>, 16, now on these pages). ⚠ Its Hebrew name, <em>Geva</em>, differs by one letter from <a href="encyclopedia.html#gibeah">Gibeah</a>, <em>Giv&rsquo;ah</em>, a few miles away, and the two are easily confused, by the shelf as well as by readers: in 1 Samuel 13:16 the KJV prints &ldquo;Gibeah&rdquo; where the Hebrew has Geba.'))
+ENCYCLOPEDIA_ES["geba"] = ("Gueba",
+    '«Colina» &mdash; una ciudad de Benjamín frente a Micmás al otro lado de un barranco empinado, ciudad levítica (<a href="joshua-21.es.html#v21-17">Josué 21:17</a>, ya en estas páginas). Jonatán hiere allí la guarnición filistea, y Saúl y Jonatán la ocupan con seiscientos hombres mientras los filisteos acampan en Micmás (<a href="1-samuel-13.es.html#v13-3">1 Samuel 13:3</a>, 16, ya en estas páginas). ⚠ Su nombre hebreo, <em>Gueva</em>, se diferencia en una letra de <a href="enciclopedia.html#gibeah">Guibeá</a>, <em>Guivá</em>, a pocos kilómetros, y las dos se confunden con facilidad, en el estante como entre los lectores: en 1 Samuel 13:16 la RV60 imprime «Gabaa» donde el hebreo tiene Gueba.')
+
+ENCYCLOPEDIA_ES["jonathan"] = ("Jonatán",
+    'Hijo mayor y heredero de Saúl, y amigo jurado de David &mdash; el príncipe heredero que se puso del lado del rival de su padre. Entra en la historia sin presentación, con mil hombres en Guibeá, e hiere la guarnición filistea de Gueba, aunque la noticia se la atribuye a Saúl (<a href="1-samuel-13.es.html#v13-2">1 Samuel 13:2&ndash;3</a>, ya en estas páginas); el día de la batalla solo él y su padre tienen espada (13:22). Gana una victoria temeraria en Micmás con solo su escudero (1 Samuel 14), y cuando conoce a David «corta un pacto» con él y le da su propio manto, espada, arco y cinto (18:1&ndash;4): en la práctica, le entrega las insignias de la sucesión. ⚠ Dos veces advierte a David de las intrigas de Saúl y lo defiende en la cara de su padre, y su último encuentro termina con un juramento que ata a sus descendientes (20:16&ndash;17; 23:18), un juramento que David cumple años después al buscar a Mefiboset, el hijo lisiado de Jonatán, y sentarlo a la mesa del rey (2 Samuel 9). Muere junto a su padre en Gilboa, y el lamento de David por él es la poesía más personal de los libros de Samuel. Todo ello, salvo 1 Samuel 13, todavía no en estas páginas.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "jonathan":
+        _e["desc"] += ' ⭐ He enters the story without introduction at <a href="1-samuel-13.html#v13-2">1 Samuel 13:2&ndash;3</a> (now on these pages), with a thousand men at Gibeah, and strikes the Philistine garrison at Geba, though the report credits Saul; on the day of battle only he and his father have swords (13:22).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 3), ("1 Samuel", 13, 22)]
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' ⚠ The verse that should give his age and the length of his reign has lost its number: the Hebrew reads that he was &ldquo;a son of a year&rdquo; and reigned &ldquo;two years&rdquo; (<a href="1-samuel-13.html#v13-1">1 Samuel 13:1</a>, now on these pages); Paul gives him forty years (Acts 13:21). At Gilgal, with the Philistines massing at Michmash and his men slipping away, he waits the seven days Samuel set and then offers the burnt offering himself; Samuel tells him &ldquo;your kingdom shall not stand&rdquo; and that Jehovah has sought out &ldquo;a man after his own heart&rdquo; (13:8&ndash;14).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 1), ("1 Samuel", 13, 9), ("1 Samuel", 13, 14)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' He comes to Gilgal as Saul finishes the burnt offering, asks &ldquo;What have you done?&rdquo;, and tells him &ldquo;You have acted foolishly&rdquo; and that his kingdom will not stand (<a href="1-samuel-13.html#v13-11">1 Samuel 13:11&ndash;14</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 13)]
+    elif _e["slug"] == "gilgal":
+        _e["desc"] += ' ⭐ Saul waits there the seven days Samuel set, and offers the burnt offering when Samuel does not come (<a href="1-samuel-13.html#v13-8">1 Samuel 13:8&ndash;12</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 8)]
+    elif _e["slug"] == "beth-aven":
+        _a = "1 Samuel 13:5; 14:23, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, "beth-aven"
+        _e["desc"] = _e["desc"].replace(_a, '<a href="1-samuel-13.html#v13-5">1 Samuel 13:5</a>, now on these pages; 14:23, not yet on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 5)]
+    elif _e["slug"] == "zeboiim":
+        _a = "the VALLEY of Zeboim near Michmash (1 Samuel 13:18, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, "zeboiim"
+        _e["desc"] = _e["desc"].replace(_a, 'the VALLEY of Zeboim near Michmash (<a href="1-samuel-13.html#v13-18">1 Samuel 13:18</a>, now on these pages)')
+    elif _e["slug"] == "philistines":
+        _e["desc"] += ' ⭐ In Saul&rsquo;s war they hold garrisons in Benjamin, camp at Michmash with thirty thousand chariots, send out raiders in three companies, and keep Israel without a smith, &ldquo;Lest the Hebrews make sword or spear&rdquo; (<a href="1-samuel-13.html#v13-5">1 Samuel 13</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 13, 19)]
+    elif _e["slug"] == "beth-horon":
+        _e["desc"] += ' A Philistine raiding company takes the Beth-horon road in Saul&rsquo;s war (<a href="1-samuel-13.html#v13-18">1 Samuel 13:18</a>, now on these pages).'
+for _k, _a, _b in [
+    ("beth-aven", "1 Samuel 13:5; 14:23, todavía no en estas páginas)", '<a href="1-samuel-13.es.html#v13-5">1 Samuel 13:5</a>, ya en estas páginas; 14:23, todavía no en estas páginas)'),
+    ("zeboiim", "el VALLE de Zeboím cerca de Micmás (1 Samuel 13:18, todavía no en estas páginas)", 'el VALLE de Zeboím cerca de Micmás (<a href="1-samuel-13.es.html#v13-18">1 Samuel 13:18</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("saul-king", ' ⚠ El versículo que debería dar su edad y la duración de su reinado ha perdido su número: el hebreo dice que era «hijo de un año» y que reinó «dos años» (<a href="1-samuel-13.es.html#v13-1">1 Samuel 13:1</a>, ya en estas páginas); Pablo le da cuarenta años (Hechos 13:21). En Gilgal, con los filisteos juntándose en Micmás y sus hombres dispersándose, espera los siete días que fijó Samuel y luego ofrece él mismo el holocausto; Samuel le dice «tu reino no permanecerá» y que Jehová ha buscado «un hombre conforme a su corazón» (13:8&ndash;14).'),
+    ("samuel", ' Llega a Gilgal cuando Saúl termina el holocausto, pregunta «¿Qué has hecho?», y le dice «Has obrado neciamente» y que su reino no permanecerá (<a href="1-samuel-13.es.html#v13-11">1 Samuel 13:11&ndash;14</a>, ya en estas páginas).'),
+    ("gilgal", ' ⭐ Saúl espera allí los siete días que fijó Samuel, y ofrece el holocausto cuando Samuel no llega (<a href="1-samuel-13.es.html#v13-8">1 Samuel 13:8&ndash;12</a>, ya en estas páginas).'),
+    ("philistines", ' ⭐ En la guerra de Saúl tienen guarniciones en Benjamín, acampan en Micmás con treinta mil carros, envían saqueadores en tres compañías, y mantienen a Israel sin herrero, «No sea que los hebreos se hagan espada o lanza» (<a href="1-samuel-13.es.html#v13-5">1 Samuel 13</a>, ya en estas páginas).'),
+    ("beth-horon", ' Una compañía de saqueadores filisteos toma el camino de Bet-horón en la guerra de Saúl (<a href="1-samuel-13.es.html#v13-18">1 Samuel 13:18</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam13"] = dict(era="monarchy",
+    when="Jonathan strikes the Philistine garrison at Geba, and the Philistines gather at Michmash with chariots and horsemen; the Israelites hide or cross the Jordan. Saul waits seven days at Gilgal, then offers the burnt offering himself; Samuel arrives, tells him his kingdom will not stand, and that Jehovah has sought out a man after his own heart. Saul is left with six hundred men at Geba, Philistine raiders go out in three companies, and Israel has no smith.",
+    clock="Saul's reign, its length lost from the Hebrew of 1 Samuel 13:1.")
+
+CHAPTER_ART["1sam13"] = [dict(
+    file="packwood-sacrifice-of-saul.jpg",
+    title="The Sacrifice of Saul", title_es="El sacrificio de Saúl",
+    artist="Brussels tapestry workshop",
+    year="c. 1550&ndash;1575",
+    location="Packwood House, Warwickshire (National Trust); photograph by Daderot", location_es="Packwood House, Warwickshire (National Trust); fotografía de Daderot",
+    alt="Tapestry in faded reds and blues with a border of flowers and fruit: on the left a man in armour and a red cloak kneels with his hand to his face; in the middle a fire blazes on an altar, with an ornate vase before it; on the right an old man in a turban and long robe kneels toward the flames; soldiers and onlookers stand behind among trees.",
+    note="Woven in Brussels in the third quarter of the sixteenth century, wool and silk, and shown at Packwood House under the title &ldquo;The Sacrifice of Saul&rdquo;. The scene is the burnt offering of verses 9&ndash;10, with the fire on the altar between the kneeling figures; which of them the weavers meant for Saul and which for Samuel is the house&rsquo;s reading of the tapestry rather than anything woven into it.",
+    note_es="Tejido en Bruselas en el tercer cuarto del siglo XVI, en lana y seda, y expuesto en Packwood House con el título «El sacrificio de Saúl». La escena es el holocausto de los versículos 9&ndash;10, con el fuego sobre el altar entre las figuras arrodilladas; cuál de ellas quisieron los tejedores que fuera Saúl y cuál Samuel es la lectura que la casa hace del tapiz, no algo tejido en él.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:The_Sacrifice_of_Saul,_Brussels,_c._1550-1575,_wool_and_silk_-_Packwood_House_-_Warwickshire,_England_-_DSC08874.jpg",
+)]
