@@ -48532,3 +48532,74 @@ CHAPTER_ART["psalms103"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Utrecht124_(cropped).jpg",
 )]
+
+# --- Psalm 34 ---
+DICTIONARY.extend([
+    ("taam", "ta‘am", "טַעַם", "ta‘mo",
+     'TASTE &mdash; and then the judgment a person tastes things with: good sense, discernment, and in the later books a ruling or decree. The manna&rsquo;s <em>taste was like wafers with honey</em> (<a href="exodus-16.html#v16-31">Exodus 16:31</a>) and <em>like the taste of a cake baked with oil</em> (<a href="numbers-11.html#v11-8">Numbers 11:8</a>, both already on these pages); the verb is Jonathan&rsquo;s, <em>because I tasted a little of this honey</em> (<a href="1-samuel-14.html#v14-29">1 Samuel 14:29</a>, already on these pages), and a noun from the same root names the savory food Isaac loved, <em>mat&rsquo;ammim</em> (<a href="genesis-27.html#v27-4">Genesis 27:4</a>, already on these pages). ⭐ <a href="psalms-34.html#v34-1">Psalm 34</a> (now on these pages) uses both senses eight verses apart: its heading has David change his <em>ta&lsquo;am</em>, his good sense, before the Philistine king, in the words of 1 Samuel 21:14 (not yet on these pages), and verse 9 says <em>Taste and see that Jehovah is good</em>. Abigail&rsquo;s <em>blessed be your discernment</em> (1 Samuel 25:33, not yet on these pages) is the same noun.',
+     ("Psalms", 34, 9)),
+])
+DICTIONARY_ES["taam"] = ("taam",
+    'GUSTO &mdash;y luego el juicio con que una persona gusta las cosas: buen juicio, discernimiento, y en los libros tardíos una orden o decreto. El maná tenía <em>su sabor como de hojuelas con miel</em> (<a href="exodus-16.es.html#v16-31">Éxodo 16:31</a>) y <em>como el sabor de una torta cocida con aceite</em> (<a href="numbers-11.es.html#v11-8">Números 11:8</a>, los dos ya en estas páginas); el verbo es el de Jonatán, <em>porque probé un poco de esta miel</em> (<a href="1-samuel-14.es.html#v14-29">1 Samuel 14:29</a>, ya en estas páginas), y un sustantivo de la misma raíz nombra el guiso sabroso que amaba Isaac, <em>matamim</em> (Génesis 27:4, ya en estas páginas, todavía no en español). ⭐ El <a href="psalms-34.es.html#v34-1">Salmo 34</a> (ya en estas páginas) usa los dos sentidos a ocho versículos de distancia: su encabezado hace que David cambie su <em>taam</em>, su buen juicio, delante del rey filisteo, con las palabras de 1 Samuel 21:14 (todavía no en estas páginas), y el versículo 9 dice <em>Gusten y vean que Jehová es bueno</em>. El <em>bendito sea tu discernimiento</em> de Abigail (1 Samuel 25:33, todavía no en estas páginas) es el mismo sustantivo.')
+
+DICTIONARY_ES["mirmah"] = ("mirmá",
+    'ENGAÑO, traición &mdash;«vino tu hermano con <em>mirmá</em> y tomó tu bendición» (Génesis 27:35; la KJV ‘subtilty’, la NWT ‘deception’). Se vuelve un hilo que recorre toda la vida de Jacob, el engañador engañado una y otra vez: engaña a Esaú con <em>mirmá</em> aquí, y Labán lo engañará a ÉL («¿por qué me has engañado?», Lea por Raquel, 29:25); sus hijos responden a Siquem «con <em>mirmá</em>» y lo convierten en la matanza de toda una ciudad por causa de su hermana (34:13); y esos mismos hijos engañarán un día al propio Jacob con la túnica de José teñida de sangre (37:31-33). El hombre llamado «suplantador» (<em>Yaaqov</em>) trafica con <em>mirmá</em> hasta que Dios le arranca luchando un nombre nuevo, Israel; el verdadero israelita, dirá después el Evangelio de Juan, es aquel «en quien no hay <em>mirmá</em>, engaño» (Juan 1:47).')
+
+ENCYCLOPEDIA_ES["abimelech"] = ("Abimélec (de Guerar)",
+    'Rey de Guerar &mdash;«mi padre es rey», tal vez un título dinástico más que un nombre propio (como «Faraón»; también un Abimélec se encuentra con Isaac en el capítulo 26). El rey pagano que discute de justicia con Dios a medianoche («¿matarás también a una nación justa?», 20:4, la palabra de tribunal del propio Abraham en 18:23), cuya «integridad de corazón» Dios mismo confirma, y que responde al agravio con regalos y una invitación abierta (20:14-15). Vuelve para hacer un pacto con Abraham en Beerseba (21:22-34). ⭐ El encabezado del <a href="psalms-34.es.html#v34-1">Salmo 34</a> (ya en estas páginas) da este nombre al rey filisteo ante quien David se fingió loco, al que la historia de 1 Samuel 21 llama Aquis; unos lo toman como un título de los reyes filisteos, y otros como otra forma de la tradición.')
+
+_DICT34_EN = {
+    "mirmah": ' ⭐ <a href="psalms-34.html#v34-14">Psalm 34:14</a> (now on these pages) makes keeping clear of it a condition of a long life: &lsquo;Keep your tongue from evil, and your lips from speaking deceit&rsquo;, the line 1 Peter 3:10 quotes.',
+    "chafar": ' ⭐ The homonym stands in <a href="psalms-34.html#v34-6">Psalm 34:6</a> (now on these pages): &lsquo;and their faces will not be abashed&rsquo;.',
+    "etsem": ' ⭐ <a href="psalms-34.html#v34-21">Psalm 34:21</a> (34:20 in English Bibles; now on these pages) says it of the righteous man: &lsquo;He keeps all his bones; not one of them is broken&rsquo;, and John 19:36 reads that and the Passover law together.',
+    "machaneh": ' ⭐ The verb is <a href="psalms-34.html#v34-8">Psalm 34:8</a> (now on these pages): &lsquo;The angel of Jehovah camps around those who fear him&rsquo;.',
+    "shavar": ' ⭐ <a href="psalms-34.html#v34-19">Psalm 34:19&ndash;21</a> (now on these pages) uses it twice in three verses: Jehovah is near &lsquo;to the broken of heart&rsquo;, and of the righteous man&rsquo;s bones &lsquo;not one of them is broken&rsquo;.',
+    "ashrei": ' ⭐ <a href="psalms-34.html#v34-9">Psalm 34:9</a> (now on these pages): &lsquo;Taste and see that Jehovah is good; happy is the man who takes refuge in him&rsquo;.',
+    "anav": ' ⭐ <a href="psalms-34.html#v34-3">Psalm 34:3</a> (now on these pages): &lsquo;let the humble hear and be glad&rsquo;.',
+    "padah": ' ⭐ <a href="psalms-34.html#v34-23">Psalm 34:23</a> (now on these pages) ends its alphabet with an extra line on this verb: &lsquo;Jehovah redeems the life of his servants&rsquo;.',
+    "asham": ' ⭐ <a href="psalms-34.html#v34-22">Psalm 34:22&ndash;23</a> (now on these pages) closes with the verb twice: those who hate the righteous &lsquo;will be held guilty&rsquo;, and none who take refuge in Jehovah will be.',
+    "tehillah": ' ⭐ <a href="psalms-34.html#v34-2">Psalm 34:2</a> (now on these pages): &lsquo;his praise will be continually in my mouth&rsquo;.',
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT34_EN:
+        DICTIONARY[_i] = _d[:4] + (_d[4] + _DICT34_EN[_d[0]],) + _d[5:]
+for _k, _b in [
+    ("mirmah", ' ⭐ El <a href="psalms-34.es.html#v34-14">Salmo 34:14</a> (ya en estas páginas) hace de apartarse de él una condición de la vida larga: «Guarda tu lengua del mal, y tus labios de hablar engaño», la línea que cita 1 Pedro 3:10.'),
+    ("chafar", ' ⭐ El homónimo está en el <a href="psalms-34.es.html#v34-6">Salmo 34:6</a> (ya en estas páginas): «y sus rostros no se avergonzarán».'),
+    ("etsem", ' ⭐ El <a href="psalms-34.es.html#v34-21">Salmo 34:21</a> (34:20 en las Biblias en español; ya en estas páginas) lo dice del justo: «Él guarda todos sus huesos; ni uno de ellos es quebrado», y Juan 19:36 lee eso y la ley de la Pascua juntos.'),
+    ("machaneh", ' ⭐ El verbo está en el <a href="psalms-34.es.html#v34-8">Salmo 34:8</a> (ya en estas páginas): «El ángel de Jehová acampa alrededor de los que le temen».'),
+    ("shavar", ' ⭐ El <a href="psalms-34.es.html#v34-19">Salmo 34:19&ndash;21</a> (ya en estas páginas) lo usa dos veces en tres versículos: Jehová está cerca «de los quebrantados de corazón», y de los huesos del justo «ni uno de ellos es quebrado».'),
+    ("ashrei", ' ⭐ <a href="psalms-34.es.html#v34-9">Salmo 34:9</a> (ya en estas páginas): «Gusten y vean que Jehová es bueno; feliz el hombre que se refugia en él».'),
+    ("anav", ' ⭐ <a href="psalms-34.es.html#v34-3">Salmo 34:3</a> (ya en estas páginas): «oigan los humildes y alégrense».'),
+    ("padah", ' ⭐ El <a href="psalms-34.es.html#v34-23">Salmo 34:23</a> (ya en estas páginas) termina su alfabeto con una línea de más sobre este verbo: «Jehová redime la vida de sus siervos».'),
+    ("asham", ' ⭐ El <a href="psalms-34.es.html#v34-22">Salmo 34:22&ndash;23</a> (ya en estas páginas) cierra con el verbo dos veces: los que aborrecen al justo «serán tenidos por culpables», y ninguno de los que se refugian en Jehová lo será.'),
+    ("tehillah", ' ⭐ <a href="psalms-34.es.html#v34-2">Salmo 34:2</a> (ya en estas páginas): «su alabanza estará de continuo en mi boca».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "abimelech":
+        _e["desc"] += ' ⭐ The heading of <a href="psalms-34.html#v34-1">Psalm 34</a> (now on these pages) gives this name to the Philistine king before whom David played the madman, whom the story in 1 Samuel 21 calls Achish; some take it as a title of Philistine kings, others as another form of the tradition.'
+        _e["refs"] = _e["refs"] + [("Psalms", 34, 1)]
+    elif _e["slug"] == "gath":
+        _e["desc"] += ' ⭐ The heading of <a href="psalms-34.html#v34-1">Psalm 34</a> (now on these pages) ties the psalm to David&rsquo;s first stay there, &ldquo;when he disguised his sanity before Abimelech&rdquo;.'
+_s = ENCYCLOPEDIA_ES["gath"]
+ENCYCLOPEDIA_ES["gath"] = (_s[0], _s[1] + ' ⭐ El encabezado del <a href="psalms-34.es.html#v34-1">Salmo 34</a> (ya en estas páginas) une el salmo a la primera estancia de David allí, «cuando se fingió loco delante de Abimélec».')
+
+CHRON_CHAPTERS["psalms34"] = dict(era="monarchy",
+    when="“I will bless Jehovah at all times”: an alphabetic psalm of David, headed by his escape from the Philistine king by feigning madness, in which the afflicted man calls and is heard, the angel of Jehovah camps around those who fear him, the hearer is told “Taste and see that Jehovah is good”, and of the righteous man “not one of his bones is broken”.",
+    clock="The heading sets it after David’s flight to Gath (1 Samuel 21:11–16 in the Hebrew numbering), in the years he was a fugitive from Saul, before his reign; the psalm itself names no event.")
+
+CHAPTER_ART["psalms34"] = [dict(
+    file="golden-psalter-david-achish.jpg",
+    title="David feigns madness before Achish (the Golden Psalter)", title_es="David se finge loco ante Aquis (el Salterio de Oro)",
+    artist="Unknown artist of the Golden Psalter of St Gall",
+    year="late 9th century",
+    location="Abbey Library of St Gall", location_es="Biblioteca de la Abadía de San Galo",
+    alt="A manuscript painting in green, orange and brown. On the left a bearded man labelled &lsquo;David&rsquo;, a sword hanging at his side, staggers with bent knees while two young men grip him by the arms. On the right a crowned king sits on a cushioned orange throne set on a decorated footstool, holding a long staff and raising one hand toward him.",
+    note="David before the king of Gath, feigning madness so that he would be sent away, the story the heading of this psalm points to (1 Samuel 21:11&ndash;16 in the Hebrew numbering). The story calls the king Achish; the psalm&rsquo;s heading calls him Abimelech.",
+    note_es="David ante el rey de Gat, fingiéndose loco para que lo dejaran ir, la historia a la que apunta el encabezado de este salmo (1 Samuel 21:11&ndash;16 en la numeración hebrea). La historia llama al rey Aquis; el encabezado del salmo lo llama Abimélec.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Psalterium_aureum_David_feins_lunacy.jpg",
+)]
