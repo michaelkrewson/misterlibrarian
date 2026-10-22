@@ -47407,3 +47407,153 @@ CHAPTER_ART["1sam10"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Samuel_zalft_Saul_tot_koning,_RP-P-BI-6494X.jpg",
 )]
+
+# --- 1 Samuel 11 ---
+DICTIONARY.extend([
+    ("naqar", "naqar", "נָקַר", "naqar",
+     'TO GOUGE OUT, bore out &mdash; said of eyes. ⚠ Not to be confused with <a href="dictionary.html#nakar">nakar</a>, &ldquo;to recognize&rdquo;, which differs by one letter (kaf for qof). It is the verb of Dathan and Abiram&rsquo;s taunt to Moses, &ldquo;Will you put out the eyes of these men?&rdquo; (<a href="numbers-16.html#v16-14">Numbers 16:14</a>, now on these pages), of Samson&rsquo;s blinding, &ldquo;the Philistines seized him and gouged out his eyes&rdquo; (<a href="judges-16.html#v16-21">Judges 16:21</a>, now on these pages), and of the ravens that &ldquo;pick out&rdquo; the eye that mocks a father (Proverbs 30:17, not yet on these pages). ⭐ At <a href="1-samuel-11.html#v11-2">1 Samuel 11:2</a> (now on these pages) Nahash the Ammonite offers Jabesh-gilead a covenant on condition of &ldquo;gouging out every right eye of yours&rdquo;, as a reproach on all Israel.',
+     ("1 Samuel", 11, 2)),
+    ("natach", "natach", "נָתַח", "natach",
+     'TO CUT UP, divide into pieces joint by joint; the noun <em>nettach</em> is &ldquo;a piece&rdquo;. It is first a word of the altar: &ldquo;you shall cut the ram into its pieces&rdquo; (<a href="exodus-29.html#v29-17">Exodus 29:17</a>, now on these pages), and the burnt offering is &ldquo;cut into its pieces&rdquo; (<a href="leviticus-1.html#v6">Leviticus 1:6</a>, now on these pages). ⚠ Then it is the word of the Levite at Gibeah, who &ldquo;cut her up, limb by limb, into twelve pieces, and sent her throughout all the territory of Israel&rdquo; (<a href="judges-19.html#v19-29">Judges 19:29</a>; <a href="judges-20.html#v20-6">20:6</a>, both now on these pages). ⭐ <a href="1-samuel-11.html#v11-7">1 Samuel 11:7</a> (now on these pages) repeats the act with a yoke of oxen, from the same town: Saul &ldquo;cut them up, and sent them throughout all the territory of Israel&rdquo;, to call the tribes to Jabesh-gilead. Elijah cuts up the bull on Carmel with it (1 Kings 18:23, 33, not yet on these pages).',
+     ("1 Samuel", 11, 7)),
+    ("pachad", "pachad", "פַּחַד", "pachad",
+     'DREAD, terror, sudden fear &mdash; the trembling that falls on people. &ldquo;Terror and dread fall upon them&rdquo;, sings Moses of the nations (<a href="exodus-15.html#v15-16">Exodus 15:16</a>, now on these pages), and Jehovah promises to put &ldquo;the dread of you and the fear of you on the peoples&rdquo; (<a href="deuteronomy-2.html#v2-25">Deuteronomy 2:25</a>, now on these pages). As a divine title it is <a href="dictionary.html#pachad-yitzchak">Pachad Yitzchak</a>, &ldquo;the Fear of Isaac&rdquo;. ⭐ <span data-heb="פחד יהוה">&ldquo;The dread of Jehovah&rdquo; stands in seven verses of the Hebrew Bible</span>, the first of them <a href="1-samuel-11.html#v11-7">1 Samuel 11:7</a> (now on these pages), where it falls on the people and &ldquo;they came out as one man&rdquo; behind Saul; the others are three in Isaiah 2 and three in Chronicles, none yet on these pages.',
+     ("1 Samuel", 11, 7)),
+    ("teshuah", "teshu&rsquo;ah", "תְּשׁוּעָה", "teshuah",
+     'SALVATION in its plainest sense: rescue, victory, deliverance from an enemy &mdash; a noun from <a href="dictionary.html#yasha">yasha</a>, &ldquo;to save&rdquo;, the root of <a href="dictionary.html#moshia">moshia</a>, &ldquo;one who saves&rdquo;. Samson, parched after the jawbone, says to Jehovah: &ldquo;You have given this great salvation by the hand of your servant&rdquo; (<a href="judges-15.html#v15-18">Judges 15:18</a>, now on these pages). ⭐ <a href="1-samuel-11.html#v11-9">1 Samuel 11:9</a> and 13 (now on these pages): the besieged men of Jabesh, who had asked for seven days in case there was no one to save them, are told &ldquo;Tomorrow, by the time the sun is hot, you shall have salvation&rdquo;, and after the battle Saul says &ldquo;today Jehovah has worked salvation in Israel&rdquo;. The Psalms turn the word against kings: &ldquo;do not trust in princes, in a son of man, in whom there is no salvation&rdquo; (Psalm 146:3, not yet on these pages).',
+     ("1 Samuel", 11, 9)),
+    ("chadash", "chadash", "חָדָשׁ / חִדֵּשׁ", "chadash",
+     'NEW &mdash; and as a verb, chiddesh, TO RENEW, make new again; the same root gives <em>chodesh</em>, the new moon and so the month. &ldquo;A new king arose over Egypt, who did not know Joseph&rdquo; (<a href="exodus-1.html#v8">Exodus 1:8</a>, now on these pages). ⭐ <a href="1-samuel-11.html#v11-14">1 Samuel 11:14</a> (now on these pages): after Jabesh, Samuel says &ldquo;let us go to Gilgal, and renew the kingship there&rdquo;, and the people make Saul king at Gilgal, his third making after the anointing and the choosing at Mizpah; &ldquo;renew&rdquo; is the word that joins the accounts. The verb is also the prayer &ldquo;renew a steadfast spirit within me&rdquo; (Psalm 51:12, 51:10 in English) and &ldquo;renew our days as of old&rdquo; (Lamentations 5:21), neither yet on these pages.',
+     ("1 Samuel", 11, 14)),
+])
+DICTIONARY_ES["naqar"] = ("naqar",
+    'SACAR, perforar &mdash; dicho de los ojos. ⚠ No confundir con <a href="diccionario.html#nakar">nakar</a>, «reconocer», que se diferencia en una letra (kaf por qof). Es el verbo de la burla de Datán y Abiram a Moisés, «¿Sacarás los ojos de estos hombres?» (<a href="numbers-16.es.html#v16-14">Números 16:14</a>, ya en estas páginas), de la ceguera de Sansón, «los filisteos lo agarraron y le sacaron los ojos» (<a href="judges-16.es.html#v16-21">Jueces 16:21</a>, ya en estas páginas), y de los cuervos que «sacan» el ojo que se burla del padre (Proverbios 30:17, todavía no en estas páginas). ⭐ En <a href="1-samuel-11.es.html#v11-2">1 Samuel 11:2</a> (ya en estas páginas) Nahás el amonita ofrece a Jabes de Galaad un pacto con la condición de «sacarles a cada uno el ojo derecho», como afrenta sobre todo Israel.')
+DICTIONARY_ES["natach"] = ("natach",
+    'DESPEDAZAR, cortar en piezas coyuntura por coyuntura; el sustantivo <em>nettach</em> es «una pieza». Primero es palabra del altar: «cortarás el carnero en sus piezas» (<a href="exodus-29.es.html#v29-17">Éxodo 29:17</a>, ya en estas páginas), y el holocausto se corta «en sus piezas» (Levítico 1:6, ya en estas páginas, todavía no en español). ⚠ Luego es la palabra del levita en Guibeá, que «la despedazó, miembro por miembro, en doce pedazos, y la envió por todo el territorio de Israel» (<a href="judges-19.es.html#v19-29">Jueces 19:29</a>; <a href="judges-20.es.html#v20-6">20:6</a>, los dos ya en estas páginas). ⭐ <a href="1-samuel-11.es.html#v11-7">1 Samuel 11:7</a> (ya en estas páginas) repite el acto con una yunta de bueyes, desde la misma ciudad: Saúl «los despedazó, y los envió por todo el territorio de Israel», para llamar a las tribus a Jabes de Galaad. Elías despedaza con él el toro del Carmelo (1 Reyes 18:23, 33, todavía no en estas páginas).')
+DICTIONARY_ES["pachad"] = ("pajad",
+    'PAVOR, terror, miedo repentino &mdash; el temblor que cae sobre la gente. «Caiga sobre ellos temblor y espanto», canta Moisés de las naciones (<a href="exodus-15.es.html#v15-16">Éxodo 15:16</a>, ya en estas páginas), y Jehová promete poner «tu terror y tu temor sobre los pueblos» (<a href="deuteronomy-2.es.html#v2-25">Deuteronomio 2:25</a>, ya en estas páginas). Como título divino es <a href="diccionario.html#pachad-yitzchak">Pajad Yitsjak</a>, «el Temor de Isaac». ⭐ <span data-heb="פחד יהוה">«El pavor de Jehová» aparece en siete versículos de la Biblia hebrea</span>, el primero <a href="1-samuel-11.es.html#v11-7">1 Samuel 11:7</a> (ya en estas páginas), donde cae sobre el pueblo y «salieron como un solo hombre» detrás de Saúl; los otros son tres en Isaías 2 y tres en Crónicas, ninguno todavía en estas páginas.')
+DICTIONARY_ES["teshuah"] = ("teshuá",
+    'SALVACIÓN en su sentido más llano: rescate, victoria, liberación de un enemigo &mdash; un sustantivo de <a href="diccionario.html#yasha">yasha</a>, «salvar», la raíz de <a href="diccionario.html#moshia">moshía</a>, «el que salva». Sansón, sediento después de la quijada, dice a Jehová: «Tú has dado esta gran salvación por mano de tu siervo» (<a href="judges-15.es.html#v15-18">Jueces 15:18</a>, ya en estas páginas). ⭐ <a href="1-samuel-11.es.html#v11-9">1 Samuel 11:9</a> y 13 (ya en estas páginas): a los sitiados de Jabes, que habían pedido siete días por si no había quien los salvara, se les dice «Mañana, cuando caliente el sol, tendrán salvación», y después de la batalla Saúl dice «hoy Jehová ha obrado salvación en Israel». Los Salmos vuelven la palabra contra los reyes: «no confíen en príncipes, en hijo de hombre, en quien no hay salvación» (Salmo 146:3, todavía no en estas páginas).')
+DICTIONARY_ES["chadash"] = ("jadash",
+    'NUEVO &mdash; y como verbo, <em>jiddesh</em>, RENOVAR, hacer nuevo otra vez; de la misma raíz sale <em>jodesh</em>, la luna nueva y por tanto el mes. «Y se levantó sobre Egipto un nuevo rey, que no conocía a José» (Éxodo 1:8, ya en estas páginas, todavía no en español). ⭐ <a href="1-samuel-11.es.html#v11-14">1 Samuel 11:14</a> (ya en estas páginas): después de Jabes, Samuel dice «vayamos a Gilgal, y renovemos allí el reino», y el pueblo hace rey a Saúl en Gilgal, por tercera vez después de la unción y de la elección en Mizpá; «renovar» es la palabra que une los relatos. El verbo es también la súplica «renueva un espíritu firme dentro de mí» (Salmo 51:12, 51:10 en la numeración española habitual) y «renueva nuestros días como antes» (Lamentaciones 5:21), ninguno todavía en estas páginas.')
+
+_DICT11_EN = {
+    "moshia": ' ⭐ The besieged elders of Jabesh-gilead ask for seven days, &ldquo;and if there is no one to save us, we will come out to you&rdquo;, <em>ein moshia</em> (<a href="1-samuel-11.html#v11-3">1 Samuel 11:3</a>, now on these pages); Saul comes, and the chapter ends with &ldquo;today Jehovah has worked salvation in Israel&rdquo;.',
+    "cherpah": ' ⭐ Nahash the Ammonite makes it the purpose of his terms at Jabesh-gilead: the right eyes gouged out, &ldquo;and I will lay it as a reproach on all Israel&rdquo; (<a href="1-samuel-11.html#v11-2">1 Samuel 11:2</a>, now on these pages); the chapter ends at Gilgal, the place named for the reproach of Egypt rolled away.',
+    "ashmoret": ' ⭐ <span data-heb="באשמרת הבקר">&ldquo;In the morning watch&rdquo; stands in two verses of the Hebrew Bible</span>: Exodus 14:24 and <a href="1-samuel-11.html#v11-11">1 Samuel 11:11</a> (now on these pages), where Saul&rsquo;s three companies come into the Ammonite camp.',
+    "melukhah": ' ⭐ <a href="1-samuel-11.html#v11-14">1 Samuel 11:14</a> (now on these pages): after the rescue of Jabesh, Samuel says &ldquo;let us go to Gilgal, and renew the kingship there&rdquo; (<a href="dictionary.html#chadash">chadash</a>).',
+    "tsalach": ' ⭐ It comes on Saul a second time when he hears of Jabesh-gilead, and this time it brings anger: &ldquo;the spirit of God rushed on Saul when he heard these words, and his anger burned very hot&rdquo; (<a href="1-samuel-11.html#v11-6">1 Samuel 11:6</a>, now on these pages).',
+    "nachash-serpent": ' ⭐ The name of the Ammonite king NAHASH, who besieges Jabesh-gilead (<a href="1-samuel-11.html#v11-1">1 Samuel 11:1</a>, now on these pages), is spelled with exactly these letters; whether anyone at the time heard &ldquo;serpent&rdquo; in it, the text does not say.',
+    "karat": ' ⭐ The men of Jabesh-gilead, besieged, say to Nahash the Ammonite &ldquo;Cut a covenant with us, and we will serve you&rdquo; (<a href="1-samuel-11.html#v11-1">1 Samuel 11:1</a>, now on these pages), the words of the Gibeonites to Joshua (Joshua 9:6, 11), now said by Israelites to a foreign king.',
+}
+_DICT11_SWAP = {
+    # the ein-moshia entry's list of the other occurrences
+    "*": ("Jabesh-gilead under siege (1 Samuel 11:3), Babylon abandoned by her enchanters (Isaiah 47:15), and David's enemies crying out unanswered (Psalm 18:42; none of the last three yet on these pages)",
+          'Jabesh-gilead under siege (<a href="1-samuel-11.html#v11-3">1 Samuel 11:3</a>, now on these pages), Babylon abandoned by her enchanters (Isaiah 47:15), and David\'s enemies crying out unanswered (Psalm 18:42; neither of the last two yet on these pages)'),
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _a, _b = _DICT11_SWAP["*"]
+    if _a in _d[4]:
+        _d = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT11_EN and _d[0] not in ("naqar", "natach", "pachad", "teshuah", "chadash"):
+        _d = _d[:4] + (_d[4] + _DICT11_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 1, _n
+_n = 0
+for _k in list(DICTIONARY_ES):
+    _s = DICTIONARY_ES[_k]
+    _a = "Jabes de Galaad sitiada (1 Samuel 11:3), Babilonia abandonada por sus encantadores (Isaías 47:15) y los enemigos de David clamando sin respuesta (Salmo 18:42; ninguno de los tres últimos todavía en estas páginas)"
+    if _a in _s[1]:
+        DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, 'Jabes de Galaad sitiada (<a href="1-samuel-11.es.html#v11-3">1 Samuel 11:3</a>, ya en estas páginas), Babilonia abandonada por sus encantadores (Isaías 47:15) y los enemigos de David clamando sin respuesta (Salmo 18:42; ninguno de los dos últimos todavía en estas páginas)'))
+        _n += 1
+assert _n == 1, _n
+for _k, _b in [
+    ("moshia", ' ⭐ Los ancianos sitiados de Jabes de Galaad piden siete días, «y si no hay quien nos salve, saldremos a ti», <em>ein moshía</em> (<a href="1-samuel-11.es.html#v11-3">1 Samuel 11:3</a>, ya en estas páginas); Saúl viene, y el capítulo termina con «hoy Jehová ha obrado salvación en Israel».'),
+    ("cherpah", ' ⭐ Nahás el amonita la pone como propósito de sus condiciones en Jabes de Galaad: sacarles el ojo derecho, «y lo pondré como afrenta sobre todo Israel» (<a href="1-samuel-11.es.html#v11-2">1 Samuel 11:2</a>, ya en estas páginas); el capítulo termina en Gilgal, el lugar llamado así por el oprobio de Egipto quitado de encima.'),
+    ("ashmoret", ' ⭐ <span data-heb="באשמרת הבקר">«A la vigilia de la mañana» aparece en dos versículos de la Biblia hebrea</span>: Éxodo 14:24 y <a href="1-samuel-11.es.html#v11-11">1 Samuel 11:11</a> (ya en estas páginas), donde las tres compañías de Saúl entran en el campamento amonita.'),
+    ("melukhah", ' ⭐ <a href="1-samuel-11.es.html#v11-14">1 Samuel 11:14</a> (ya en estas páginas): después de librar a Jabes, Samuel dice «vayamos a Gilgal, y renovemos allí el reino» (<a href="diccionario.html#chadash">jadash</a>).'),
+    ("tsalach", ' ⭐ Viene sobre Saúl por segunda vez cuando oye lo de Jabes de Galaad, y esta vez trae ira: «el espíritu de Dios irrumpió sobre Saúl al oír él estas palabras, y su ira se encendió en gran manera» (<a href="1-samuel-11.es.html#v11-6">1 Samuel 11:6</a>, ya en estas páginas).'),
+    ("nachash-serpent", ' ⭐ El nombre del rey amonita NAHÁS, que sitia Jabes de Galaad (<a href="1-samuel-11.es.html#v11-1">1 Samuel 11:1</a>, ya en estas páginas), se escribe exactamente con estas letras; si alguien en su tiempo oía en él «serpiente», el texto no lo dice.'),
+    ("karat", ' ⭐ Los hombres de Jabes de Galaad, sitiados, dicen a Nahás el amonita «Corta un pacto con nosotros, y te serviremos» (<a href="1-samuel-11.es.html#v11-1">1 Samuel 11:1</a>, ya en estas páginas), las palabras de los gabaonitas a Josué (Josué 9:6, 11), dichas ahora por israelitas a un rey extranjero.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="nahash", name="Nahash the Ammonite", kind="person", aliases=["Nahash"],
+    refs=[("1 Samuel", 11, 1), ("1 Samuel", 11, 2)], videos=[],
+    desc='King of the Ammonites. He besieges <a href="encyclopedia.html#jabesh-gilead">Jabesh-gilead</a> and, when the town asks for a covenant, offers one on condition of gouging out every man&rsquo;s right eye, &ldquo;as a reproach on all Israel&rdquo;; he grants seven days, and Saul, newly chosen king, musters Israel at Bezek and scatters the Ammonite camp (<a href="1-samuel-11.html#v11-1">1 Samuel 11</a>, now on these pages). His name is spelled like <a href="dictionary.html#nachash-serpent">nachash</a>, &ldquo;serpent&rdquo;. Samuel later names his attack as the moment the people demanded a king (1 Samuel 12:12), and David speaks of the kindness Nahash showed him and sends condolences to his son Hanun (2 Samuel 10:2), both not yet on these pages. ⚠ Josephus says Nahash had blinded the right eyes of the peoples beyond the Jordan he conquered, so that with the left eye behind the shield they were useless in war, and that he was killed in the battle at Jabesh (<em>Antiquities</em> 6.69&ndash;70, 79); the second claim does not sit with 2 Samuel 10:2, where he is still alive in David&rsquo;s day. A Hebrew manuscript from Qumran, 4QSam<sup>a</sup>, is reported to carry a further paragraph before the siege, about his putting out the right eyes of the Israelites beyond the Jordan (see <a href="1-samuel-10.html#v10-27">1 Samuel 10:27</a>).'))
+ENCYCLOPEDIA_ES["nahash"] = ("Nahás el amonita",
+    'Rey de los amonitas. Sitia <a href="enciclopedia.html#jabesh-gilead">Jabes de Galaad</a> y, cuando la ciudad le pide un pacto, lo ofrece con la condición de sacar a cada hombre el ojo derecho, «como afrenta sobre todo Israel»; concede siete días, y Saúl, rey recién escogido, pasa revista a Israel en Bézec y dispersa el campamento amonita (<a href="1-samuel-11.es.html#v11-1">1 Samuel 11</a>, ya en estas páginas). Su nombre se escribe como <a href="diccionario.html#nachash-serpent">najash</a>, «serpiente». Samuel nombra después su ataque como el momento en que el pueblo pidió un rey (1 Samuel 12:12), y David habla de la bondad que Nahás le mostró y envía el pésame a su hijo Hanún (2 Samuel 10:2), los dos todavía no en estas páginas. ⚠ Josefo dice que Nahás había sacado el ojo derecho a los pueblos de más allá del Jordán que conquistaba, para que, con el ojo izquierdo tras el escudo, no sirvieran para la guerra, y que murió en la batalla de Jabes (<em>Antigüedades</em> 6.69&ndash;70, 79); lo segundo no encaja con 2 Samuel 10:2, donde sigue vivo en tiempos de David. De un manuscrito hebreo de Qumrán, 4QSam<sup>a</sup>, se informa que trae antes del asedio un párrafo más, sobre cómo sacaba el ojo derecho a los israelitas de más allá del Jordán (véase <a href="1-samuel-10.es.html#v10-27">1 Samuel 10:27</a>).')
+
+ENCYCLOPEDIA.append(dict(slug="bezek", name="Bezek", kind="place", aliases=["Bezek"],
+    refs=[("1 Samuel", 11, 8)], videos=[],
+    coords=(32.3700, 35.3900, 0.4), approx=True,
+    modern="Khirbet Ibziq, northeast of Nablus, is the usual identification (reported)",
+    desc='The place where Saul &ldquo;mustered&rdquo; Israel before marching to Jabesh-gilead: &ldquo;the sons of Israel were three hundred thousand, and the men of Judah thirty thousand&rdquo; (<a href="1-samuel-11.html#v11-8">1 Samuel 11:8</a>, now on these pages). It is usually placed at Khirbet Ibziq, west of the Jordan and opposite Jabesh, a night&rsquo;s march from it. Judah fought the Canaanites &ldquo;at Bezek&rdquo; in <a href="judges-1.html#v4">Judges 1:4</a> (now on these pages); whether it is the same place is uncertain. The Greek of 1 Samuel 11:8 reads &ldquo;in Bama&rdquo;, and gives six hundred thousand and seventy thousand.'))
+ENCYCLOPEDIA_ES["bezek"] = ("Bézec",
+    'El lugar donde Saúl «pasó revista» a Israel antes de marchar a Jabes de Galaad: «fueron los hijos de Israel trescientos mil, y los hombres de Judá treinta mil» (<a href="1-samuel-11.es.html#v11-8">1 Samuel 11:8</a>, ya en estas páginas). Suele situarse en Jirbet Ibziq, al oeste del Jordán y frente a Jabes, a una noche de marcha. Judá peleó contra los cananeos «en Bézec» en <a href="judges-1.es.html#v4">Jueces 1:4</a> (ya en estas páginas); si es el mismo lugar es incierto. El griego de 1 Samuel 11:8 lee «en Bama», y da seiscientos mil y setenta mil.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "saul-king":
+        _e["desc"] += ' ⭐ When Nahash the Ammonite besieges Jabesh-gilead, Saul is coming in from the field behind his oxen; the spirit of God rushes on him, he cuts a yoke of oxen in pieces and sends them through Israel, musters the people at Bezek, and scatters the Ammonites in the morning watch. He refuses to put to death the men who had doubted him, &ldquo;for today Jehovah has worked salvation in Israel&rdquo;, and at Gilgal the people make him king before Jehovah (<a href="1-samuel-11.html#v11-6">1 Samuel 11</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 6), ("1 Samuel", 11, 13), ("1 Samuel", 11, 15)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' Saul summons Israel to come out &ldquo;after Saul and after Samuel&rdquo;, and after the victory Samuel calls the people to Gilgal to &ldquo;renew the kingship there&rdquo; (<a href="1-samuel-11.html#v11-14">1 Samuel 11:7, 14</a>, now on these pages); the Greek has Samuel anoint Saul there.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 14)]
+    elif _e["slug"] == "gilgal":
+        _e["desc"] += ' ⭐ After the rescue of Jabesh-gilead the people go to Gilgal &ldquo;and there they made Saul king before Jehovah in Gilgal&rdquo;, with sacrifices of peace offerings (<a href="1-samuel-11.html#v11-15">1 Samuel 11:15</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 15)]
+    elif _e["slug"] == "gibeah":
+        _a = "(1 Samuel 11:4, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-11.html#v11-4">1 Samuel 11:4</a>, now on these pages)')
+        _e["desc"] += ' From Gibeah Saul sends the pieces of a yoke of oxen &ldquo;throughout all the territory of Israel&rdquo;, as the Levite sent the pieces of his concubine from the same town (<a href="1-samuel-11.html#v11-7">1 Samuel 11:7</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 4)]
+    elif _e["slug"] == "jabesh-gilead":
+        _a = "(1 Samuel 11:1&ndash;11), and the men of Jabesh take down the bodies of Saul and his sons from the wall of Beth-shan and bury them (1 Samuel 31:11&ndash;13), both not yet on these pages."
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-11.html#v11-1">1 Samuel 11:1&ndash;11</a>, now on these pages), and the men of Jabesh take down the bodies of Saul and his sons from the wall of Beth-shan and bury them (1 Samuel 31:11&ndash;13, not yet on these pages).')
+        _e["desc"] += ' ⭐ Besieged by Nahash, its men offer to serve him if he will cut a covenant with them; he demands every right eye, and they ask seven days to send through Israel, &ldquo;and if there is no one to save us, we will come out to you&rdquo;. Saul&rsquo;s answer, &ldquo;Tomorrow, by the time the sun is hot, you shall have salvation&rdquo;, comes true in the morning watch (<a href="1-samuel-11.html#v11-3">1 Samuel 11:3</a>, 9&ndash;11, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 1), ("1 Samuel", 11, 9)]
+    elif _e["slug"] == "ammon":
+        _a = "Nahash demands the right eye of every man at Jabesh-gilead (1 Samuel 11)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'Nahash demands the right eye of every man at Jabesh-gilead (<a href="1-samuel-11.html#v11-2">1 Samuel 11</a>, now on these pages; <a href="encyclopedia.html#nahash">Nahash</a>)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 11, 11)]
+for _k, _a, _b in [
+    ("gibeah", "(1 Samuel 11:4, todavía no en estas páginas)", '(<a href="1-samuel-11.es.html#v11-4">1 Samuel 11:4</a>, ya en estas páginas)'),
+    ("jabesh-gilead", "(1 Samuel 11:1&ndash;11), y los hombres de Jabes bajan los cuerpos de Saúl y sus hijos del muro de Bet-seán y los sepultan (1 Samuel 31:11&ndash;13), los dos todavía no en estas páginas.",
+     '(<a href="1-samuel-11.es.html#v11-1">1 Samuel 11:1&ndash;11</a>, ya en estas páginas), y los hombres de Jabes bajan los cuerpos de Saúl y sus hijos del muro de Bet-seán y los sepultan (1 Samuel 31:11&ndash;13, todavía no en estas páginas).'),
+    ("ammon", "Nahas exige el ojo derecho de cada varón en Jabes de Galaad (1 Samuel 11)", 'Nahás exige el ojo derecho de cada varón en Jabes de Galaad (<a href="1-samuel-11.es.html#v11-2">1 Samuel 11</a>, ya en estas páginas; <a href="enciclopedia.html#nahash">Nahás</a>)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("saul-king", ' ⭐ Cuando Nahás el amonita sitia Jabes de Galaad, Saúl viene del campo detrás de sus bueyes; el espíritu de Dios irrumpe sobre él, despedaza una yunta de bueyes y envía los pedazos por Israel, pasa revista al pueblo en Bézec y dispersa a los amonitas a la vigilia de la mañana. No consiente que se dé muerte a los que habían dudado de él, «porque hoy Jehová ha obrado salvación en Israel», y en Gilgal el pueblo lo hace rey delante de Jehová (<a href="1-samuel-11.es.html#v11-6">1 Samuel 11</a>, ya en estas páginas).'),
+    ("samuel", ' Saúl convoca a Israel a salir «en pos de Saúl y en pos de Samuel», y después de la victoria Samuel llama al pueblo a Gilgal para «renovar allí el reino» (<a href="1-samuel-11.es.html#v11-14">1 Samuel 11:7, 14</a>, ya en estas páginas); el griego hace que Samuel unja allí a Saúl.'),
+    ("gilgal", ' ⭐ Después de librar a Jabes de Galaad el pueblo va a Gilgal «y allí hicieron rey a Saúl delante de Jehová en Gilgal», con sacrificios de paz (<a href="1-samuel-11.es.html#v11-15">1 Samuel 11:15</a>, ya en estas páginas).'),
+    ("gibeah", ' Desde Guibeá Saúl envía los pedazos de una yunta de bueyes «por todo el territorio de Israel», como el levita envió los pedazos de su concubina desde la misma ciudad (<a href="1-samuel-11.es.html#v11-7">1 Samuel 11:7</a>, ya en estas páginas).'),
+    ("jabesh-gilead", ' ⭐ Sitiada por Nahás, sus hombres ofrecen servirle si corta un pacto con ellos; él exige cada ojo derecho, y ellos piden siete días para enviar por Israel, «y si no hay quien nos salve, saldremos a ti». La respuesta de Saúl, «Mañana, cuando caliente el sol, tendrán salvación», se cumple a la vigilia de la mañana (<a href="1-samuel-11.es.html#v11-3">1 Samuel 11:3</a>, 9&ndash;11, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam11"] = dict(era="monarchy",
+    when="Nahash the Ammonite besieges Jabesh-gilead and demands every man's right eye; Saul, coming in from the field behind his oxen, is seized by the spirit of God, cuts a yoke of oxen in pieces and sends them through Israel, musters the people at Bezek, and scatters the Ammonite camp in the morning watch. He spares the men who had doubted him, and at Gilgal the kingship is renewed and Saul is made king before Jehovah.",
+    clock="Soon after the assembly at Mizpah; the Greek and Josephus put the siege about a month later (1 Samuel 11:1).")
+
+CHAPTER_ART["1sam11"] = [dict(
+    file="morgan-bible-saul-jabesh.jpg",
+    title="Saul Cuts Up the Oxen and Musters Israel", title_es="Saúl despedaza los bueyes y pasa revista a Israel",
+    artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+    year="c. 1250",
+    location="Morgan Library & Museum, New York (MS M.638, fol. 23r)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 23r)",
+    alt="Medieval manuscript page with two painted scenes under arcades. Top: a long-haired man stands beside two oxen while men plead with him; on the right he chops the oxen on a trestle table with a cleaver and hands a leg to soldiers with spears. Bottom: a crowned king on a throne points toward an army of knights in mail, with horses and a wagon, setting out. Captions in Latin, Persian and Hebrew script fill the margins.",
+    note="The upper scenes show Saul with his oxen as the news from Jabesh arrives, then cutting them up and handing the pieces to armed messengers (verses 5&ndash;7); below, the king sends out the muster (verse 8). The Latin caption under the pictures counts &ldquo;three hundred thousand of the sons of Israel, and thirty thousand of the tribe of Judah&rdquo;. The captions in Latin, Persian and Judeo-Persian were added by later owners of the book.",
+    note_es="Las escenas de arriba muestran a Saúl con sus bueyes cuando llega la noticia de Jabes, y luego despedazándolos y entregando los pedazos a mensajeros armados (versículos 5&ndash;7); abajo, el rey envía la convocatoria (versículo 8). El rótulo latino bajo las imágenes cuenta «trescientos mil de los hijos de Israel, y treinta mil de la tribu de Judá». Los rótulos en latín, persa y judeopersa los añadieron dueños posteriores del libro.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._23r.jpg",
+)]
