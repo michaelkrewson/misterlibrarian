@@ -1290,6 +1290,18 @@ FAVICON = ("data:image/svg+xml," + html.escape(
     "<rect x='12.6' y='14.5' width='20.8' height='17' fill='#efe6cf'/>"
     "<path d='M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z' fill='#e8c968'/></svg>", quote=True))
 
+# Installable as an app (Michael 2026-10-22): manifest.webmanifest + icons/ (drawn from the scroll
+# mark, icons/icon-source.svg). "Translation" is the Home Screen label (about 12 characters fit).
+# The status bar is the plain style, coloured by theme-color: Agorai's installed app misbehaved
+# with the see-through (black-translucent) one. No service worker yet (offline reading can follow).
+APP_TAGS = ('\n<link rel="manifest" href="/manifest.webmanifest"/>'
+            '\n<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>'
+            '\n<meta name="theme-color" content="#060b14"/>'
+            '\n<meta name="apple-mobile-web-app-capable" content="yes"/>'
+            '\n<meta name="mobile-web-app-capable" content="yes"/>'
+            '\n<meta name="apple-mobile-web-app-title" content="Translation"/>'
+            '\n<meta name="apple-mobile-web-app-status-bar-style" content="default"/>')
+
 SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
   <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
@@ -1737,7 +1749,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <meta charset="utf-8"/>{base_tag}
 <meta name="viewport" content="width=device-width, initial-scale=1"/>{robots}
 <title>{html.escape(title)}</title>{d}{og}{rss_tag}
-<link rel="icon" href="{FAVICON}"/>
+<link rel="icon" href="{FAVICON}"/>{APP_TAGS}
 <link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
 </head>
 <body>
