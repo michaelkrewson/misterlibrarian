@@ -950,3 +950,8 @@ tr.ch-dim td{opacity:0.55}
   .respond-btn{transition:none}
   .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
 }
+
+/* Installed as an app (Home Screen): a long press on one of the site's own links shows no preview, so a
+   press held by mistake can't open the page in a small Safari window (as in Agorai's app, 2026-10-22).
+   Links to other sites, and the site in Safari, keep the usual long-press menu. */
+@media (display-mode: standalone){a[href]:not([href^="http"]):not([href^="//"]):not([href^="mailto:"]),a[href^="https://mistertranslation.com"]{-webkit-touch-callout:none}}
