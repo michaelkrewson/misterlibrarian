@@ -13,6 +13,21 @@
   }
 
   var es = (document.documentElement.lang || "").slice(0, 2) === "es";
+
+  // The tab bar's Continue (build.py tab_bar): the last chapter read on this device, one per language.
+  // A chapter page remembers itself; every page points Continue there. While typing, the bar steps aside.
+  (function () {
+    var key = es ? "mt-last-es" : "mt-last-en";
+    try {
+      if (document.querySelector("article.chapter")) localStorage.setItem(key, location.pathname);
+      var last = localStorage.getItem(key), c = document.querySelector(".mt-tabbar [data-continue]");
+      if (c && last && /^\/[a-z0-9-]+\.html$/.test(last)) c.setAttribute("href", last);
+      if (c && document.querySelector("article.chapter")) { c.classList.add("on"); c.setAttribute("aria-current", "page"); }
+    } catch (x) { /* storage off: Continue stays on Genesis 1 */ }
+    var typing = function (el) { return el && (el.isContentEditable || /^(TEXTAREA|SELECT)$/.test(el.tagName) || (el.tagName === "INPUT" && !/^(checkbox|radio|button|submit|range)$/.test(el.type))); };
+    document.addEventListener("focusin", function (e) { if (typing(e.target)) document.documentElement.classList.add("mt-typing"); });
+    document.addEventListener("focusout", function () { setTimeout(function () { if (!typing(document.activeElement)) document.documentElement.classList.remove("mt-typing"); }, 50); });
+  })();
   var W = es ? {
     title: "Mister Translation en tu pantalla de inicio",
     sub: "Su propio icono, a pantalla completa, y los capítulos que lees también sin conexión.",
