@@ -47954,3 +47954,145 @@ CHAPTER_ART["1sam14"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._24r.jpg",
 )]
+
+# --- 1 Samuel 15 ---
+DICTIONARY.extend([
+    ("netsach", "netsach", "נֵצַח", "netsach",
+     'ENDURANCE, perpetuity &mdash; the noun behind the common phrase <em>la-netsach</em>, &ldquo;for ever&rdquo;, &ldquo;to the end&rdquo;. ⭐ As a title of God it stands once: &ldquo;the <em>netsach</em> of Israel will not lie and will not regret&rdquo; (<a href="1-samuel-15.html#v15-29">1 Samuel 15:29</a>, now on these pages), where this translation prints &ldquo;the Everlasting One of Israel&rdquo;, because the verse is about a God who does not change. ⚠ The shelf scatters: the KJV and ASV &ldquo;the Strength of Israel&rdquo;, the NIV &ldquo;the Glory of Israel&rdquo;, the NWT 1984 &ldquo;the Excellency of Israel&rdquo;, and the Douay, from the Latin, &ldquo;the triumpher in Israel&rdquo;. The Greek read the letters as a verb and has &ldquo;Israel will be divided in two&rdquo;.',
+     ("1 Samuel", 15, 29)),
+    ("meil", "me&rsquo;il", "מְעִיל", "me'il",
+     'A ROBE &mdash; the long outer garment of a person of standing, and the &ldquo;robe of the ephod&rdquo;, all of blue, that the high priest wears (<a href="exodus-28.html#v28-31">Exodus 28:31</a>, now on these pages). ⭐ In 1 Samuel it follows Samuel through his life: Hannah makes the boy &ldquo;a little robe&rdquo; year by year (<a href="1-samuel-2.html#v2-19">2:19</a>), and when he turns to leave Saul, &ldquo;he seized the corner of his robe, and it tore&rdquo;, and Samuel answers that Jehovah has torn the kingdom from Saul that day (<a href="1-samuel-15.html#v15-27">15:27&ndash;28</a>, both now on these pages). The word returns when Jonathan gives David his robe (18:4), when David cuts the corner of Saul&rsquo;s robe in the cave (1 Samuel 24), and when the woman of En-dor sees &ldquo;an old man coming up, wrapped in a robe&rdquo; and Saul knows it is Samuel (28:14; none yet on these pages).',
+     ("1 Samuel", 15, 27)),
+    ("chamal", "chamal", "חָמַל", "chamal",
+     'TO SPARE, to pity &mdash; to hold back from destroying something because one is moved by it. Pharaoh&rsquo;s daughter &ldquo;had compassion&rdquo; on the weeping child in the basket (<a href="exodus-2.html#v2-6">Exodus 2:6</a>), and the law forbids it toward the one who entices to other gods: &ldquo;your eye shall not pity him, and you shall not spare him&rdquo; (<a href="deuteronomy-13.html#v13-9">Deuteronomy 13:9</a>, both now on these pages). ⭐ <a href="1-samuel-15.html#v15-3">1 Samuel 15</a> (now on these pages) turns on it: Saul is told &ldquo;do not spare him&rdquo; (v3), and then &ldquo;Saul and the people spared Agag, and the best of the flock and the herd&rdquo; (v9), and Saul says &ldquo;the people spared the best of the flock&rdquo; (v15). Thirty-four verses of the Hebrew Bible carry the root.',
+     ("1 Samuel", 15, 3)),
+])
+DICTIONARY_ES["netsach"] = ("nétsaj",
+    'PERDURACIÓN, perpetuidad &mdash; el sustantivo de la frase común <em>la-nétsaj</em>, «para siempre», «hasta el fin». ⭐ Como título de Dios está una sola vez: «el <em>nétsaj</em> de Israel no mentirá ni se arrepentirá» (<a href="1-samuel-15.es.html#v15-29">1 Samuel 15:29</a>, ya en estas páginas), donde esta traducción imprime «el Eterno de Israel», porque el versículo trata de un Dios que no cambia. ⚠ El estante se dispersa: la RV60 «el que es la Gloria de Israel», la RV 1909 «el Vencedor de Israel», la TNM 1987 «la Excelencia de Israel». El griego leyó las letras como un verbo y tiene «Israel será dividido en dos».')
+DICTIONARY_ES["meil"] = ("meil",
+    'UN MANTO &mdash; la prenda larga de encima de una persona de rango, y el «manto del efod», todo de azul, que lleva el sumo sacerdote (<a href="exodus-28.es.html#v28-31">Éxodo 28:31</a>, ya en estas páginas). ⭐ En 1 Samuel acompaña a Samuel toda su vida: Ana le hace al niño «un manto pequeño» año tras año (<a href="1-samuel-2.es.html#v2-19">2:19</a>), y cuando se vuelve para dejar a Saúl, «él se asió del borde de su manto, y se rasgó», y Samuel responde que Jehová ha rasgado ese día el reino de Saúl (<a href="1-samuel-15.es.html#v15-27">15:27&ndash;28</a>, los dos ya en estas páginas). La palabra vuelve cuando Jonatán da su manto a David (18:4), cuando David corta el borde del manto de Saúl en la cueva (1 Samuel 24), y cuando la mujer de Endor ve «un anciano que sube, envuelto en un manto» y Saúl sabe que es Samuel (28:14; ninguno todavía en estas páginas).')
+DICTIONARY_ES["chamal"] = ("jamal",
+    'PERDONAR la vida, compadecerse &mdash; contenerse de destruir algo porque uno se conmueve. La hija del faraón «tuvo compasión» del niño que lloraba en la cesta (Éxodo 2:6, ya en estas páginas, todavía no en español), y la ley lo prohíbe con quien incita a otros dioses: «tu ojo no le tendrá lástima, y no lo perdonarás» (<a href="deuteronomy-13.es.html#v13-9">Deuteronomio 13:9</a>, ya en estas páginas). ⭐ <a href="1-samuel-15.es.html#v15-3">1 Samuel 15</a> (ya en estas páginas) gira sobre él: a Saúl se le dice «no lo perdones» (v3), y luego «Saúl y el pueblo perdonaron a Agag, y a lo mejor de las ovejas y de las vacas» (v9), y Saúl dice que «el pueblo perdonó lo mejor de las ovejas» (v15). Treinta y cuatro versículos de la Biblia hebrea llevan la raíz.')
+
+_DICT15_EN = {
+    "cherem": ' ⭐ <a href="1-samuel-15.html#v15-3">1 Samuel 15</a> (now on these pages) is the ban that costs a king his throne: Saul is told to devote Amalek to destruction, spares Agag and the best of the flock, and offers &ldquo;the first of the devoted things&rdquo;, <em>reshit ha-cherem</em>, as sacrifice at Gilgal (v21).',
+    "qesem": ' ⭐ <a href="1-samuel-15.html#v15-23">1 Samuel 15:23</a> (now on these pages) sets it beside disobedience: &ldquo;rebellion is the sin of divination&rdquo;.',
+    "teraphim": ' ⭐ <a href="1-samuel-15.html#v15-23">1 Samuel 15:23</a> (now on these pages) names them in Samuel&rsquo;s verdict on Saul: &ldquo;presumption is iniquity and teraphim&rdquo;.',
+    "kanaf": ' ⭐ At <a href="1-samuel-15.html#v15-27">1 Samuel 15:27</a> (now on these pages) it is the corner of a <a href="dictionary.html#meil">robe</a>: &ldquo;he seized the corner of his robe, and it tore&rdquo;.',
+    "chesed": ' ⭐ <a href="1-samuel-15.html#v15-6">1 Samuel 15:6</a> (now on these pages): Saul warns the Kenites away from Amalek &ldquo;for you did kindness with all the sons of Israel when they came up from Egypt&rdquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "nacham":
+        _a = "1 Samuel 15 makes the tension explicit: v29 argues Balaam's case almost word for word, in a chapter that says twice (vv11, 35) that Jehovah relented over making Saul king."
+        assert _d[4].count(_a) == 1, "nacham"
+        _d = _d[:4] + (_d[4].replace(_a, '<a href="1-samuel-15.html#v15-29">1 Samuel 15</a> (now on these pages) makes the tension explicit: v29 argues Balaam&rsquo;s case almost word for word, in a chapter that says twice (vv11, 35) that Jehovah regretted making Saul king; this translation prints &ldquo;regret&rdquo; in all three verses there, as in Genesis 6:6.'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "maas":
+        _a = "The word returns when Jehovah rejects the king they were given (1 Samuel 15:23, not yet on these pages)."
+        assert _d[4].count(_a) == 1, "maas"
+        _d = _d[:4] + (_d[4].replace(_a, 'The word returns when Jehovah rejects the king they were given: &ldquo;Because you have rejected the word of Jehovah, he has rejected you from being king&rdquo; (<a href="1-samuel-15.html#v15-23">1 Samuel 15:23</a>, now on these pages; again at 15:26).'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT15_EN:
+        _d = _d[:4] + (_d[4] + _DICT15_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 2, _n
+for _k, _a, _b in [
+    ("maas", "La palabra vuelve cuando Jehová rechaza al rey que les dio (1 Samuel 15:23, todavía no en estas páginas).",
+     'La palabra vuelve cuando Jehová rechaza al rey que les dio: «Por cuanto has rechazado la palabra de Jehová, él te ha rechazado para que no seas rey» (<a href="1-samuel-15.es.html#v15-23">1 Samuel 15:23</a>, ya en estas páginas; otra vez en 15:26).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("nacham", ' ⭐ <a href="1-samuel-15.es.html#v15-29">1 Samuel 15</a> (ya en estas páginas) hace explícita la tensión: el versículo 29 repite casi palabra por palabra el argumento de Balaam, «no es un ser humano para arrepentirse», en un capítulo que dice dos veces (vv11, 35) que Jehová se arrepintió de haber hecho rey a Saúl; esta traducción imprime «arrepentirse» en los tres.'),
+    ("cherem", ' ⭐ <a href="1-samuel-15.es.html#v15-3">1 Samuel 15</a> (ya en estas páginas) es el anatema que le cuesta el trono a un rey: a Saúl se le manda consagrar a Amalec a la destrucción, perdona a Agag y lo mejor de las ovejas, y ofrece «lo primero de lo consagrado», <em>reshit ha-jérem</em>, en sacrificio en Gilgal (v21).'),
+    ("qesem", ' ⭐ <a href="1-samuel-15.es.html#v15-23">1 Samuel 15:23</a> (ya en estas páginas) la pone junto a la desobediencia: «la rebelión es pecado de adivinación».'),
+    ("teraphim", ' ⭐ <a href="1-samuel-15.es.html#v15-23">1 Samuel 15:23</a> (ya en estas páginas) los nombra en la sentencia de Samuel sobre Saúl: «la porfía es iniquidad y terafim».'),
+    ("kanaf", ' ⭐ En <a href="1-samuel-15.es.html#v15-27">1 Samuel 15:27</a> (ya en estas páginas) es el borde de un <a href="diccionario.html#meil">manto</a>: «él se asió del borde de su manto, y se rasgó».'),
+    ("chesed", ' ⭐ <a href="1-samuel-15.es.html#v15-6">1 Samuel 15:6</a> (ya en estas páginas): Saúl aparta a los ceneos de Amalec «porque tú hiciste bondad con todos los hijos de Israel cuando subían de Egipto».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="telaim", name="Telaim", kind="place", coords=None, approx=True,
+    modern="Unidentified; often equated with Telem in the Negev of Judah (Joshua 15:24)",
+    aliases=["Telaim"], refs=[("1 Samuel", 15, 4)],
+    desc='The place where Saul musters the army against Amalek: &ldquo;two hundred thousand on foot, and ten thousand, the men of Judah&rdquo; (<a href="1-samuel-15.html#v15-4">1 Samuel 15:4</a>, now on these pages). The name means &ldquo;lambs&rdquo;, and the Douay, from the Latin, reads it so: &ldquo;numbered them as lambs&rdquo;. ⚠ The site is not known. Many identify it with Telem among the southern towns of Judah (<a href="joshua-15.html#v15-24">Joshua 15:24</a>, now on these pages), which would suit a march against Amalek in the south; that is a proposal, not a finding. The Greek and Josephus have Gilgal instead (<em>Antiquities</em> 6.134).'))
+ENCYCLOPEDIA_ES["telaim"] = ("Telaim",
+    'El lugar donde Saúl pasa revista al ejército contra Amalec: «doscientos mil de a pie, y diez mil, los hombres de Judá» (<a href="1-samuel-15.es.html#v15-4">1 Samuel 15:4</a>, ya en estas páginas). El nombre significa «corderos», y la Douay inglesa, desde el latín, lo lee así: «numbered them as lambs». ⚠ El sitio no se conoce. Muchos lo identifican con Telem, entre los pueblos del sur de Judá (<a href="joshua-15.es.html#v15-24">Josué 15:24</a>, ya en estas páginas), lo que convendría a una marcha contra Amalec en el sur; es una propuesta, no un hallazgo. El griego y Josefo tienen Gilgal en su lugar (<em>Antigüedades</em> 6.134).')
+ENCYCLOPEDIA.append(dict(slug="carmel-judah", name="Carmel (in Judah)", kind="place", coords=(31.425, 35.132, 0.1), approx=True,
+    modern="Khirbet el-Kirmil, south of Hebron in the Judean hills",
+    aliases=["Carmel"], refs=[("1 Samuel", 15, 12)],
+    desc='A town of Judah&rsquo;s southern hill country, listed with Maon and Ziph (<a href="joshua-15.html#v15-55">Joshua 15:55</a>, now on these pages), and not the mountain by the sea that has its own <a href="encyclopedia.html#carmel">entry</a>. ⭐ After the war with Amalek, &ldquo;Saul came to Carmel, and look &mdash; he is setting up a monument for himself&rdquo;, and the Hebrew word for the monument is <em>yad</em>, &ldquo;a hand&rdquo; (<a href="1-samuel-15.html#v15-12">1 Samuel 15:12</a>, now on these pages). It is later the home of Nabal and Abigail (1 Samuel 25:2, not yet on these pages). The old name survives in the ruin Khirbet el-Kirmil.'))
+ENCYCLOPEDIA_ES["carmel-judah"] = ("Carmel (en Judá)",
+    'Un pueblo de la montaña del sur de Judá, nombrado con Maón y Zif (<a href="joshua-15.es.html#v15-55">Josué 15:55</a>, ya en estas páginas), y no el monte junto al mar, que tiene su propia <a href="enciclopedia.html#carmel">entrada</a>. ⭐ Después de la guerra con Amalec, «Saúl vino a Carmel, y mira, se está levantando un monumento», y la palabra hebrea del monumento es <em>yad</em>, «una mano» (<a href="1-samuel-15.es.html#v15-12">1 Samuel 15:12</a>, ya en estas páginas). Más tarde es la tierra de Nabal y de Abigail (1 Samuel 25:2, todavía no en estas páginas). El nombre antiguo sobrevive en la ruina Khirbet el-Kirmil.')
+ENCYCLOPEDIA_ES["havilah"] = ("Havila",
+    'Tierra de oro, bedelio y ónice rodeada por el Pisón (Génesis 2:11-12, ya en estas páginas, todavía no en español). Joel Kramer, de Expedition Bible, siguiendo el Pisón hasta el seco Wadi Ar-Rummah, sitúa Havila a lo largo de su curso por Arabia Saudí, una región que todavía tiene decenas de minas de oro y los barrancos del Hiyaz con ónice y resinas que describe el texto. Es también un nombre en los linajes de Cus y de Joctán (10:7, 10:29). ⭐ <a href="1-samuel-15.es.html#v15-7">1 Samuel 15:7</a> (ya en estas páginas): Saúl hiere a Amalec «desde Havila según se va a Shur, que está frente a Egipto», el mismo arco de desierto en que se asentaron los hijos de Ismael (Génesis 25:18, ya en estas páginas, todavía no en español). ⚠ Si esta Havila de los desiertos del sur es la Havila de Génesis 2 no se sabe.')
+ENCYCLOPEDIA_ES["shur"] = ("Shur",
+    '«Muro» &mdash; el desierto que da a la frontera nororiental de Egipto, quizá llamado así por la línea egipcia de fuertes fronterizos, y que cruza el camino de las caravanas desde Canaán. A Agar la encuentran «en el camino de Shur» (Génesis 16:7, ya en estas páginas, todavía no en español): una egipcia que vuelve a casa. Israel cruzará el mismo desierto desde el otro lado después del paso del mar (<a href="exodus-15.es.html#v15-22">Éxodo 15:22</a>, ya en estas páginas). ⭐ <a href="1-samuel-15.es.html#v15-7">1 Samuel 15:7</a> (ya en estas páginas): Saúl hiere a Amalec «desde Havila según se va a Shur, que está frente a Egipto».')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "agag":
+        _a = "lives centuries later, in 1 Samuel 15, where Saul"
+        assert _e["desc"].count(_a) == 1, "agag"
+        _e["desc"] = _e["desc"].replace(_a, 'lives centuries later, in <a href="1-samuel-15.html#v15-8">1 Samuel 15</a> (now on these pages), where Saul')
+        _e["desc"] += ' ⭐ There he is taken alive and spared with the best of the flock (15:8&ndash;9; Josephus says for his beauty and his size, <em>Antiquities</em> 6.137), comes to Samuel &ldquo;in fetters&rdquo; saying &ldquo;Surely the bitterness of death has turned aside&rdquo;, and is hewn in pieces by Samuel &ldquo;before Jehovah at Gilgal&rdquo; (15:32&ndash;33). Haman &ldquo;the Agagite&rdquo; (Esther 3:1, not yet on these pages) is traditionally read as his descendant.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 8), ("1 Samuel", 15, 9), ("1 Samuel", 15, 32), ("1 Samuel", 15, 33)]
+    elif _e["slug"] == "amalek":
+        _a = "Saul loses his kingdom for sparing their king Agag (1 Samuel 15);"
+        assert _e["desc"].count(_a) == 1, "amalek"
+        _e["desc"] = _e["desc"].replace(_a, 'Saul loses his kingdom for sparing their king Agag (<a href="1-samuel-15.html#v15-2">1 Samuel 15</a>, now on these pages);')
+        _e["desc"] += ' ⭐ <a href="1-samuel-15.html#v15-2">1 Samuel 15</a> (now on these pages) opens with the old account, &ldquo;I have marked what Amalek did to Israel&rdquo;, and Saul strikes them &ldquo;from Havilah as you come to Shur&rdquo;; the chapter does not claim their end, and Amalekites raid again in David&rsquo;s day (1 Samuel 30, not yet on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 2), ("1 Samuel", 15, 7)]
+    elif _e["slug"] == "saul-king":
+        _a = "when told to destroy AMALEK (1 Samuel 15)"
+        assert _e["desc"].count(_a) == 1, "saul-king"
+        _e["desc"] = _e["desc"].replace(_a, 'when told to destroy AMALEK (<a href="1-samuel-15.html#v15-9">1 Samuel 15</a>, now on these pages)')
+        _e["desc"] += ' Against Amalek he musters the army at Telaim, spares the Kenites, takes Agag alive and keeps the best of the flock; he sets up a monument for himself at Carmel, tells Samuel &ldquo;I have carried out the word of Jehovah&rdquo;, and hears &ldquo;to listen is better than sacrifice&rdquo; and &ldquo;he has rejected you from being king&rdquo;. When Samuel turns to go, the robe tears, and Samuel says the kingdom is torn from him and given to a neighbour better than he (15:27&ndash;28).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 9), ("1 Samuel", 15, 23), ("1 Samuel", 15, 28)]
+    elif _e["slug"] == "kenites":
+        _e["desc"] += ' ⭐ Before the war with Amalek, Saul warns them away, &ldquo;for you did kindness with all the sons of Israel when they came up from Egypt&rdquo; (<a href="1-samuel-15.html#v15-6">1 Samuel 15:6</a>, now on these pages); Josephus calls them kin of Raguel, Moses&rsquo; father-in-law, living in the middle of Midian (<em>Antiquities</em> 6.140).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 6)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ <a href="1-samuel-15.html#v15-1">1 Samuel 15</a> (now on these pages): he sends Saul against Amalek, cries to Jehovah all night when told &ldquo;I regret that I made Saul king&rdquo;, answers Saul &ldquo;to listen is better than sacrifice&rdquo;, hews Agag in pieces at Gilgal, and goes home to Ramah, mourning for Saul and never seeing him again until the day of his death.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 22), ("1 Samuel", 15, 33), ("1 Samuel", 15, 35)]
+    elif _e["slug"] == "havilah":
+        _e["desc"] += ' ⭐ <a href="1-samuel-15.html#v15-7">1 Samuel 15:7</a> (now on these pages): Saul strikes Amalek &ldquo;from Havilah as you come to Shur, which faces Egypt&rdquo;, the same arc of desert where Ishmael&rsquo;s sons settled (<a href="genesis-25.html#v25-18">Genesis 25:18</a>, now on these pages). ⚠ Whether this Havilah of the southern deserts is the Havilah of Genesis 2 is not known.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 7)]
+    elif _e["slug"] == "shur":
+        _e["desc"] += ' ⭐ <a href="1-samuel-15.html#v15-7">1 Samuel 15:7</a> (now on these pages): Saul strikes Amalek &ldquo;from Havilah as you come to Shur, which faces Egypt&rdquo;.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 15, 7)]
+for _k, _a, _b in [
+    ("agag", "vive siglos después, en 1 Samuel 15, donde Saúl", 'vive siglos después, en <a href="1-samuel-15.es.html#v15-8">1 Samuel 15</a> (ya en estas páginas), donde Saúl'),
+    ("saul-king", "cuando se le mandó destruir a AMALEC (1 Samuel 15)", 'cuando se le mandó destruir a AMALEC (<a href="1-samuel-15.es.html#v15-9">1 Samuel 15</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("agag", ' ⭐ Allí es tomado vivo y perdonado con lo mejor del rebaño (15:8&ndash;9; Josefo dice que por su belleza y su estatura, <em>Antigüedades</em> 6.137), llega ante Samuel «encadenado» diciendo «Ciertamente se ha apartado la amargura de la muerte», y Samuel lo despedaza «delante de Jehová en Gilgal» (15:32&ndash;33). A Amán «el agagueo» (Ester 3:1, todavía no en estas páginas) se le lee tradicionalmente como descendiente suyo.'),
+    ("amalek", ' ⭐ <a href="1-samuel-15.es.html#v15-2">1 Samuel 15</a> (ya en estas páginas) abre con la vieja cuenta, «He tomado en cuenta lo que Amalec hizo a Israel», y Saúl los hiere «desde Havila según se va a Shur»; el capítulo no afirma su fin, y los amalecitas vuelven a hacer incursiones en tiempos de David (1 Samuel 30, todavía no en estas páginas).'),
+    ("saul-king", ' Contra Amalec pasa revista al ejército en Telaim, aparta a los ceneos, toma vivo a Agag y guarda lo mejor del rebaño; se levanta un monumento en Carmel, dice a Samuel «He cumplido la palabra de Jehová», y oye «escuchar es mejor que el sacrificio» y «él te ha rechazado para que no seas rey». Cuando Samuel se vuelve para irse, el manto se rasga, y Samuel le dice que el reino le es arrancado y dado a un prójimo mejor que él (15:27&ndash;28).'),
+    ("kenites", ' ⭐ Antes de la guerra con Amalec, Saúl los aparta, «porque tú hiciste bondad con todos los hijos de Israel cuando subían de Egipto» (<a href="1-samuel-15.es.html#v15-6">1 Samuel 15:6</a>, ya en estas páginas); Josefo los llama parientes de Ragüel, el suegro de Moisés, que vivían en medio de Madián (<em>Antigüedades</em> 6.140).'),
+    ("samuel", ' ⭐ <a href="1-samuel-15.es.html#v15-1">1 Samuel 15</a> (ya en estas páginas): envía a Saúl contra Amalec, clama a Jehová toda la noche cuando oye «Me arrepiento de haber hecho rey a Saúl», responde a Saúl «escuchar es mejor que el sacrificio», despedaza a Agag en Gilgal y vuelve a Ramá, haciendo duelo por Saúl, sin volver a verlo hasta el día de su muerte.'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam15"] = dict(era="monarchy",
+    when="Samuel sends Saul to devote Amalek to destruction. Saul musters the army at Telaim, warns the Kenites away, and strikes Amalek from Havilah toward Shur, but spares King Agag and the best of the flocks. Jehovah tells Samuel he regrets making Saul king; Samuel confronts Saul at Gilgal (“to listen is better than sacrifice”), rejects his plea, and the robe tears as he turns to go. Samuel hews Agag in pieces at Gilgal, goes home to Ramah, and does not see Saul again.",
+    clock="Some time after the wars of 1 Samuel 14; the confrontation at Gilgal falls on the morning after Samuel’s night of prayer (1 Samuel 15:11–12).")
+
+CHAPTER_ART["1sam15"] = [dict(
+    file="morgan-bible-samuel-agag.jpg",
+    title="Samuel, Saul and Agag", title_es="Samuel, Saúl y Agag",
+    artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+    year="c. 1250",
+    location="Morgan Library & Museum, New York (MS M.638, fol. 25r)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 25r)",
+    alt="Medieval manuscript page with four painted scenes under gilded arches. Top left: a hooded old man kneels by a tree praying, a face looking down from the sky, while a group of men stands to the right. Top right: a crowned king holds a torn piece of cloth as the hooded old man turns away pointing. Bottom left: armed guards hold a crowned prisoner in a white tunic whose ankles are chained, before a king. Bottom right: the hooded old man raises a sword over the prisoner, who lies beheaded at the foot of a tree. Latin, Persian and Hebrew-script captions fill the margins.",
+    note="Top left, Samuel cries to God through the night after hearing that God regrets making Saul king (verse 11; the Latin caption says God told him <em>quod peniteret se</em>, &ldquo;that he repented&rdquo;). Top right, Saul holds the torn piece of Samuel&rsquo;s mantle (verse 27), and the Latin caption names Saul as the one who seized it, as the Greek does. Below, Agag is brought with his ankles chained (verse 32), and Samuel strikes him down (verse 33).",
+    note_es="Arriba a la izquierda, Samuel clama a Dios toda la noche después de oír que Dios se arrepiente de haber hecho rey a Saúl (versículo 11; el rótulo latino dice que Dios le dijo <em>quod peniteret se</em>, «que se arrepentía»). Arriba a la derecha, Saúl sostiene el pedazo rasgado del manto de Samuel (versículo 27), y el rótulo latino nombra a Saúl como el que lo agarró, como hace el griego. Abajo, traen a Agag con los tobillos encadenados (versículo 32), y Samuel lo abate (versículo 33).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._25r.jpg",
+)]
