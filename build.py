@@ -57,6 +57,7 @@ ENABLE_LISTEN_BUTTON = False
 NOTES_JS_VER = _asset_ver("reader-notes.js")
 AGORAI_JS_VER = _asset_ver("agorai-verses.js")
 SHARE_JS_VER = _asset_ver("share.js")
+APP_JS_VER = _asset_ver("app-install.js")   # offline reading + the get-the-app bar (2026-10-22)
 
 # Named "Mister Translation" 2026-10-10 (Michael's call): one name for the domain, the
 # header and the Spanish twin (La Traducción Mister); Mr. Librarian stays the keeper.
@@ -1757,6 +1758,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 {header(active, lang)}
 {_page_view_script(lang)}
 <script src="share.js?v={SHARE_JS_VER}" defer></script>
+<script src="app-install.js?v={APP_JS_VER}" defer></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>

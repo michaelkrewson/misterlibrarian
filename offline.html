@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<title>Offline · Mister Translation</title>
+<link rel="manifest" href="/manifest.webmanifest"/>
+<meta name="theme-color" content="#060b14"/>
+<link rel="stylesheet" href="/style.css"/>
+<!-- Shown by sw.js when there's no network and the page asked for hasn't been read on this device yet
+     (Michael 2026-10-22). It lists the pages that are kept here, so reading can go on offline. -->
+</head>
+<body>
+<div class="wrap">
+  <main class="mt-offline">
+    <h1>You're offline · <span lang="es">Sin conexión</span></h1>
+    <p>This page hasn't been saved on this device yet. The chapters you've already read open without a connection:</p>
+    <p lang="es">Esta página aún no está guardada en este dispositivo. Los capítulos que ya leíste se abren sin conexión:</p>
+    <ul class="mt-offline-list" id="kept"></ul>
+    <p class="mt-offline-none" id="none" hidden>Nothing is saved yet: read a chapter while you're online and it will be here next time. · <span lang="es">Aún no hay nada guardado: lee un capítulo con conexión y estará aquí la próxima vez.</span></p>
+    <p><a class="btn" href="/" onclick="location.reload(); return false;">Try again · Reintentar</a></p>
+  </main>
+</div>
+<script>
+// The kept pages (sw.js, cache "mt-pages-v1"), named from their addresses: genesis-1.html → Genesis 1.
+(function () {
+  var list = document.getElementById("kept"), none = document.getElementById("none");
+  var name = function (path) {
+    if (path === "/" || path === "/index.html") return "Home";
+    var es = /\.es\.html$/.test(path), slug = path.replace(/^\//, "").replace(/(\.es)?\.html$/, "");
+    var words = slug.split(/[-/]/).map(function (w) { return /^\d+$/.test(w) ? w : w.charAt(0).toUpperCase() + w.slice(1); }).join(" ");
+    return words + (es ? " (español)" : "");
+  };
+  if (!window.caches) { none.hidden = false; return; }
+  caches.open("mt-pages-v1").then(function (c) { return c.keys(); }).then(function (keys) {
+    var paths = keys.map(function (r) { return new URL(r.url).pathname; }).filter(function (p) { return p !== "/offline.html"; });
+    paths.sort(function (a, b) { return name(a).localeCompare(name(b), undefined, { numeric: true }); });
+    if (!paths.length) { none.hidden = false; return; }
+    paths.forEach(function (p) {
+      var li = document.createElement("li"), a = document.createElement("a");
+      a.href = p; a.textContent = name(p); li.appendChild(a); list.appendChild(li);
+    });
+  }).catch(function () { none.hidden = false; });
+})();
+</script>
+</body>
+</html>
