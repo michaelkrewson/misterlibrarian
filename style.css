@@ -981,3 +981,19 @@ tr.ch-dim td{opacity:0.55}
 .mt-offline h1{font-size:22px}
 .mt-offline-list{columns:2;column-gap:24px;padding-left:18px}
 .mt-offline-list a{color:var(--gold)}
+
+/* The phone tab bar (build.py tab_bar, 2026-10-22): Home · Books · Continue · Library · Search, phones only. */
+.mt-tabbar{display:none}
+@media (max-width:700px){
+  .mt-tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;justify-content:space-around;
+    padding:6px 4px max(10px, calc(6px + env(safe-area-inset-bottom)));background:rgba(10,15,26,0.96);border-top:1px solid rgba(232,201,104,0.18);
+    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+  .mt-tab{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 2px;
+    color:var(--muted);text-decoration:none;font-size:10.5px;font-weight:700;letter-spacing:.02em}
+  .mt-tab.on{color:var(--gold)}
+  .mt-tab span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  html.mt-typing .mt-tabbar{display:none}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+  .mt-app-bar{bottom:calc(76px + env(safe-area-inset-bottom))}
+  .ml-toast{bottom:calc(84px + env(safe-area-inset-bottom))}
+}

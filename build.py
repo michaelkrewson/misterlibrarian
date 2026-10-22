@@ -1713,6 +1713,38 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
 NOINDEX_PREFIXES = ()
 
 
+# The phone tab bar (Michael 2026-10-22): Home · Books · Continue · Library · Search along the bottom
+# on phones, most of all for the installed app, which has no browser buttons. Plain links (no finger
+# handling of its own: Agorai's 10-22 lesson), root-absolute so pages in sub-folders work too.
+# "Continue" starts at Genesis 1; app-install.js points it at the last chapter read on this device.
+_TAB_ICONS = {
+    "home": "M3 11.5 12 4l9 7.5M5.5 9.5V20h5v-6h3v6h5V9.5",
+    "books": "M4 5.5C6.5 4.2 9.5 4.2 12 5.8c2.5-1.6 5.5-1.6 8-.3V19c-2.5-1.3-5.5-1.3-8 .3-2.5-1.6-5.5-1.6-8-.3zM12 5.8V19.3",
+    "continue": "M8 5.5v13l10.5-6.5z",
+    "library": "M5 4v16M9.5 4v16M14 5l4.5 15M4 20h16",
+    "search": "M10.5 4.5a6 6 0 1 0 0 12 6 6 0 0 0 0-12zM15 15l5 5",
+}
+
+def tab_bar(active, lang):
+    es = lang == "es"
+    CURRENT = ' aria-current="page"'
+    tabs = [
+        ("home", "es.html" if es else "", "Inicio" if es else "Home", active in ("home",)),
+        ("books", "es.html#capitulos" if es else "toc.html", "Libros" if es else "Books", active in ("toc",)),
+        ("continue", "genesis-1.es.html" if es else "genesis-1.html", "Seguir" if es else "Continue", False),
+        ("library", "biblioteca.html" if es else "library.html", "Biblioteca" if es else "Library", active in ("library", "biblioteca")),
+        ("search", "search.html", "Buscar" if es else "Search", active in ("search",)),
+    ]
+    items = "".join(
+        f'<a class="mt-tab{" on" if on else ""}" href="/{href}"{" data-continue" if key == "continue" else ""}'
+        f'{CURRENT if on else ""}>'
+        f'<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="{_TAB_ICONS[key]}" fill="none" '
+        f'stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        f'<span>{label}</span></a>'
+        for key, href, label, on in tabs)
+    return f'<nav class="mt-tabbar" aria-label="{"Secciones" if es else "Sections"}">{items}</nav>'
+
+
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
     # Trim here, at the choke point. Descriptions were being hand-written at ~70
     # call sites and three of them (the book intros, the testament intros, the
@@ -1767,6 +1799,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 {body}
 {ES_FOOTER if lang == "es" else FOOTER}
 </div>
+{tab_bar(active, lang)}
 </body>
 </html>
 """
