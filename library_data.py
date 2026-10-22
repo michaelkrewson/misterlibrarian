@@ -48096,3 +48096,126 @@ CHAPTER_ART["1sam15"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._25r.jpg",
 )]
+
+# --- Proverbs 3 ---
+DICTIONARY.extend([
+    ("tevunah", "tevunah", "תְּבוּנָה", "tevunah",
+     'DISCERNMENT &mdash; the sister of <a href="dictionary.html#binah">binah</a>, &lsquo;understanding&rsquo;, from the same root <em>bin</em>, to tell one thing from another; Proverbs keeps the two side by side and this translation keeps them apart, &lsquo;understanding&rsquo; for binah and &lsquo;discernment&rsquo; for tevunah, as the NWT 1984 does. ⭐ <a href="proverbs-3.html#v3-13">Proverbs 3:13</a> (now on these pages): &lsquo;Happy is the human who finds wisdom, and the human who draws out discernment&rsquo;; and six verses later it is one of the tools of creation, &lsquo;he established the heavens by discernment&rsquo; (3:19). It is the second of Bezalel&rsquo;s gifts in <a href="exodus-31.html#v31-3">Exodus 31:3</a> (now on these pages), &lsquo;in wisdom, and in understanding, and in knowledge&rsquo;, where the middle word is tevunah.',
+     ("Proverbs", 3, 13)),
+    ("tushiyyah", "tushiyyah", "תּוּשִׁיָּה", "tushiyyah",
+     'PRACTICAL WISDOM &mdash; sound counsel that works, the wisdom that gets a thing done; the NWT 1984 has &lsquo;practical wisdom&rsquo;, the KJV and ASV &lsquo;sound wisdom&rsquo;. ⭐ <a href="proverbs-3.html#v3-21">Proverbs 3:21</a> (now on these pages): &lsquo;guard practical wisdom and discretion&rsquo;. Wisdom claims it as her own, &lsquo;counsel is mine, and practical wisdom&rsquo; (Proverbs 8:14), and Isaiah says of Jehovah of armies that he is &lsquo;wonderful in counsel, great in tushiyyah&rsquo; (Isaiah 28:29; neither yet on these pages). The word is spelled two ways in the Hebrew, with and without its vowel letter; Proverbs 3:21 has the shorter spelling.',
+     ("Proverbs", 3, 21)),
+    ("kesel", "kesel", "כֶּסֶל", "kesel",
+     'CONFIDENCE &mdash; and also the LOINS, the muscles of the flank: the fat of the sacrifice is &lsquo;the fat that is on them, which is by the loins&rsquo; (<a href="leviticus-3.html#v3-4">Leviticus 3:4</a>, now on these pages). ⭐ <a href="proverbs-3.html#v3-26">Proverbs 3:26</a> (now on these pages): &lsquo;Jehovah will be your confidence, and will keep your foot from capture&rsquo;. Psalm 78:7 hopes that Israel will &lsquo;set their confidence in God&rsquo;, and Job 8:14 says of the godless that &lsquo;his confidence&rsquo; is cut off (neither yet on these pages). ⚠ The same three letters make <em>kesil</em>, the dull fool of Proverbs (see <a href="dictionary.html#kesil-evil-lets">kesil / evil / lets</a>), and <em>kislah</em>, folly, in Psalm 85:9: a confidence that is misplaced is the fool&rsquo;s kind.',
+     ("Proverbs", 3, 26)),
+])
+DICTIONARY_ES["tevunah"] = ("tevuná",
+    'DISCERNIMIENTO &mdash; hermana de <a href="diccionario.html#binah">biná</a>, «entendimiento», de la misma raíz <em>bin</em>, distinguir una cosa de otra; Proverbios pone las dos lado a lado y esta traducción las mantiene aparte, «entendimiento» para biná y «discernimiento» para tevuná, como hace la TNM 1987. ⭐ <a href="proverbs-3.es.html#v3-13">Proverbios 3:13</a> (ya en estas páginas): «Feliz el ser humano que halla la sabiduría, y el ser humano que obtiene discernimiento»; y seis versículos después es una de las herramientas de la creación, «afirmó los cielos con discernimiento» (3:19). Es el segundo de los dones de Bezalel en <a href="exodus-31.es.html#v31-3">Éxodo 31:3</a> (ya en estas páginas), «en sabiduría, y en inteligencia, y en conocimiento», donde la palabra del medio es tevuná.')
+DICTIONARY_ES["tushiyyah"] = ("tushiyá",
+    'SABIDURÍA PRÁCTICA &mdash; el consejo sólido que funciona, la sabiduría que lleva una cosa a término; la TNM 1987 tiene «sabiduría práctica», la RV60 «la ley y el consejo» en Proverbios 3:21. ⭐ <a href="proverbs-3.es.html#v3-21">Proverbios 3:21</a> (ya en estas páginas): «guarda la sabiduría práctica y la discreción». La sabiduría la reclama como suya, «mío es el consejo, y la sabiduría práctica» (Proverbios 8:14), e Isaías dice de Jehová de los ejércitos que es «admirable en consejo, grande en tushiyá» (Isaías 28:29; ninguno de los dos todavía en estas páginas). La palabra se escribe de dos maneras en el hebreo, con y sin su letra vocal; Proverbios 3:21 tiene la grafía corta.')
+DICTIONARY_ES["kesel"] = ("késel",
+    'CONFIANZA &mdash; y también los LOMOS, los músculos del costado: la grasa del sacrificio es «la grasa que está sobre ellos, la que está sobre los lomos» (<a href="leviticus-3.es.html#v3-4">Levítico 3:4</a>, ya en estas páginas). ⭐ <a href="proverbs-3.es.html#v3-26">Proverbios 3:26</a> (ya en estas páginas): «Jehová será tu confianza, y guardará tu pie de ser atrapado». El Salmo 78:7 espera que Israel ponga «en Dios su confianza», y Job 8:14 dice del impío que «su confianza» será cortada (ninguno de los dos todavía en estas páginas). ⚠ Las mismas tres letras forman <em>kesil</em>, el necio torpe de Proverbios (véase <a href="diccionario.html#kesil-evil-lets">kesil / evil / lets</a>), y <em>kislá</em>, la necedad, en el Salmo 85:9: una confianza mal puesta es la del necio.')
+
+# Spanish twins for the wisdom vocabulary of Proverbs 1, which has no Spanish edition yet
+DICTIONARY_ES["chokhmah"] = ("jojmá",
+    'SABIDURÍA &mdash; la palabra maestra, y cabeza de una familia que Proverbios mantiene cuidadosamente distinta (véanse <a href="diccionario.html#daat">daat</a>, <a href="diccionario.html#binah">biná</a>, <a href="diccionario.html#mezimmah">mezimá</a>, <a href="diccionario.html#haskel">haskel</a>): no es intelecto en bruto sino DESTREZA para vivir &mdash; la misma palabra nombra la MAESTRÍA de los artesanos del tabernáculo (<a href="exodus-31.es.html#v31-3">Éxodo 31:3</a>). La sabiduría es el conocimiento (daat) y el entendimiento (biná) puestos a trabajar bien. En Proverbios 1:20 se levanta como una mujer, la Sabiduría personificada, que clama en las calles &mdash; la Dama Sabiduría del capítulo 8. ⭐ <a href="proverbs-3.es.html#v3-19">Proverbios 3:19</a> (ya en estas páginas): «Jehová con sabiduría fundó la tierra».')
+DICTIONARY_ES["binah"] = ("biná",
+    'ENTENDIMIENTO &mdash; de <em>bin</em>, «separar, discernir ENTRE»: la facultad que distingue una cosa de otra, lo verdadero de lo falso, este camino de aquel. No es lo mismo que el conocimiento (daat, lo que uno sabe), sino el poder de DISCERNIRLO &mdash; comprender distinguiendo. Su hermana cercana, <a href="diccionario.html#tevunah">tevuná</a>, «discernimiento», de la misma raíz, entra en Proverbios 2:3 y 3:19; biná es el «entendimiento», tevuná el «discernimiento» aplicado. ⭐ <a href="proverbs-3.es.html#v3-5">Proverbios 3:5</a> (ya en estas páginas): «Confía en Jehová con todo tu corazón, y no te apoyes en tu propio entendimiento»: el libro que enseña el entendimiento se niega a hacer de él el apoyo.')
+DICTIONARY_ES["daat"] = ("daat",
+    'CONOCIMIENTO &mdash; de <em>yadá</em>, «conocer»: no solo datos guardados en la cabeza sino conocer por trato (el mismo verbo conoce a un amigo, o a un cónyuge). Es aquello de lo que «el temor de Jehová es el principio» (Proverbios 1:7) y lo que los necios «aborrecen» (1:22, 29). Distinto de la sabiduría (jojmá, la destreza que USA el conocimiento) y del entendimiento (biná, el discernimiento que lo ORDENA). ⭐ <a href="proverbs-3.es.html#v3-6">Proverbios 3:6</a> (ya en estas páginas) usa el verbo: «En todos tus caminos conócelo»; y 3:20, «por su conocimiento se abrieron los abismos».')
+DICTIONARY_ES["mezimmah"] = ("mezimá",
+    'DISCRECIÓN, discernimiento &mdash; previsión sagaz, la capacidad de pensar un asunto hasta el final (Proverbios 1:4). De <em>zamam</em>, «planear, idear» &mdash; la misma raíz sirve para tramar el MAL (Salmo 37:12), de modo que mezimá es una sagacidad moralmente neutra, la facultad de planear apuntada en la buena dirección. La TNM la vierte «capacidad de pensar»; es lo que mantiene al sabio fuera de la trampa en que cae el simple. ⭐ <a href="proverbs-3.es.html#v3-21">Proverbios 3:21</a> (ya en estas páginas): «guarda la sabiduría práctica y la discreción».')
+DICTIONARY_ES["haskel"] = ("haskel",
+    'PERSPICACIA &mdash; la destreza prudente que TIENE ÉXITO: de <em>sakal</em>, «ser prudente, obrar con sabiduría y prosperar». «La disciplina de la perspicacia» (<em>musar haskel</em>, Proverbios 1:3) es una formación que produce una vida competente y eficaz &mdash; no solo ideas correctas, sino el manejo hábil de situaciones reales. La forma nominal <em>maskil</em> da título a los salmos «hábiles». ⭐ <a href="proverbs-3.es.html#v3-4">Proverbios 3:4</a> (ya en estas páginas) usa el sustantivo emparentado: «halla favor y buena perspicacia», <em>sékhel tov</em>.')
+DICTIONARY_ES["kesil-evil-lets"] = ("kesil / evil / lets",
+    'La galería de necios de Proverbios &mdash; tres clases distintas, mantenidas distintas en esta traducción: el EVIL (1:7), el necio moral que desprecia la sabiduría; el KESIL (1:22), el necio torpe y embotado, satisfecho de sí; y el LETS (1:22), el BURLADOR, el cínico que se mofa de toda corrección &mdash; el caso más difícil, ya fuera del alcance de la enseñanza. El hebreo tiene todo un tesauro para la necedad, y el capítulo 1 abre el cajón. ⭐ <a href="proverbs-3.es.html#v3-34">Proverbios 3:34</a> (ya en estas páginas): «De los burladores él se burla, pero a los humildes da gracia»; y 3:35, «los necios se llevan la deshonra», <em>kesilim</em>.')
+DICTIONARY_ES["tehom"] = ("tehom",
+    'El abismo &mdash; el océano primordial de Génesis 1:2, cuyas fuentes vuelven a abrirse en 7:11. ⭐ <a href="proverbs-3.es.html#v3-20">Proverbios 3:20</a> (ya en estas páginas): «Por su conocimiento se abrieron los abismos», en plural, <em>tehomot</em>, con el mismo verbo del diluvio.')
+DICTIONARY_ES["yakach"] = ("yakaj",
+    'DISCUTIR UN CASO HASTA EL FONDO, llegar a un juicio entre partes &mdash; un verbo JURÍDICO (es lo que hace un juez, un árbitro o quien reprende), y en Isaías 1:18 está en la forma recíproca: que las dos partes lo resuelvan. ⚠ El «venid luego, y estemos a cuenta» ha dado a generaciones la imagen de una conversación tranquila; el escenario desde el versículo 2 es un tribunal, con el cielo y la tierra citados como testigos. Job usa el mismo verbo para su deseo de discutir su caso con Dios (13:3). ⭐ <a href="proverbs-3.es.html#v3-12">Proverbios 3:12</a> (ya en estas páginas): «porque Jehová reprende al que ama», <em>yojíaj</em>.')
+
+_DICT3_EN = {
+    "binah": ' ⭐ <a href="proverbs-3.html#v3-5">Proverbs 3:5</a> (now on these pages): &lsquo;Trust in Jehovah with all your heart, and do not lean on your own understanding&rsquo;: the book that teaches understanding refuses to make it the support.',
+    "chokhmah": ' ⭐ <a href="proverbs-3.html#v3-19">Proverbs 3:19</a> (now on these pages): &lsquo;Jehovah by wisdom founded the earth&rsquo;.',
+    "daat": ' ⭐ <a href="proverbs-3.html#v3-6">Proverbs 3:6</a> (now on these pages) uses the verb: &lsquo;In all your ways know him&rsquo;; and 3:20, &lsquo;by his knowledge the deeps burst open&rsquo;.',
+    "mezimmah": ' ⭐ <a href="proverbs-3.html#v3-21">Proverbs 3:21</a> (now on these pages): &lsquo;guard practical wisdom and discretion&rsquo;.',
+    "haskel": ' ⭐ <a href="proverbs-3.html#v3-4">Proverbs 3:4</a> (now on these pages) uses the related noun: &lsquo;find favor and good insight&rsquo;, <em>sekhel tov</em>.',
+    "kesil-evil-lets": ' ⭐ <a href="proverbs-3.html#v3-34">Proverbs 3:34</a> (now on these pages): &lsquo;The scoffers he scoffs at, but to the humble he gives grace&rsquo;; and 3:35, &lsquo;fools carry off disgrace&rsquo;, <em>kesilim</em>.',
+    "tehom": ' ⭐ <a href="proverbs-3.html#v3-20">Proverbs 3:20</a> (now on these pages): &lsquo;By his knowledge the deeps burst open&rsquo;, in the plural, <em>tehomot</em>, with the verb of the flood.',
+    "yakach": ' ⭐ <a href="proverbs-3.html#v3-12">Proverbs 3:12</a> (now on these pages): &lsquo;for whom Jehovah loves he reproves&rsquo;, <em>yokhiach</em>.',
+    "musar": ' ⭐ <a href="proverbs-3.html#v3-11">Proverbs 3:11</a> (now on these pages): &lsquo;My son, do not reject the discipline of Jehovah&rsquo;, the verse Hebrews 12:5 quotes in its Greek form.',
+    "ashrei": ' ⭐ <a href="proverbs-3.html#v3-13">Proverbs 3:13</a> (now on these pages): &lsquo;Happy is the human who finds wisdom&rsquo;, and the passage closes on the same root at 3:18, &lsquo;those who hold her fast are made happy&rsquo;.',
+    "anav": ' ⭐ At <a href="proverbs-3.html#v3-34">Proverbs 3:34</a> (now on these pages) the written text has <em>aniyyim</em>, &lsquo;the afflicted&rsquo;, and the reading is <em>anavim</em>, &lsquo;the humble&rsquo;: &lsquo;to the humble he gives grace&rsquo;.',
+    "sod": ' ⭐ <a href="proverbs-3.html#v3-32">Proverbs 3:32</a> (now on these pages): &lsquo;the devious is an abomination to Jehovah, but his close counsel is with the upright&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "peninim":
+        _a = "Wisdom is worth more than peninim at Proverbs 3:15 and 8:11,"
+        assert _d[4].count(_a) == 1, "peninim"
+        _d = _d[:4] + (_d[4].replace(_a, 'Wisdom is worth more than peninim at <a href="proverbs-3.html#v3-15">Proverbs 3:15</a> (now on these pages) and 8:11,'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "meerah":
+        _a = "Proverbs 3:33, <em>the curse of Jehovah is on the house of the wicked</em>;"
+        assert _d[4].count(_a) == 1, "meerah"
+        _d = _d[:4] + (_d[4].replace(_a, '<a href="proverbs-3.html#v3-33">Proverbs 3:33</a>, <em>the curse of Jehovah is in the house of the wicked</em>;'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "orthotomeo":
+        _a = "at Proverbs 3:6 and 11:5 (not yet on these pages)."
+        assert _d[4].count(_a) == 1, "orthotomeo"
+        _d = _d[:4] + (_d[4].replace(_a, 'at <a href="proverbs-3.html#v3-6">Proverbs 3:6</a> (now on these pages) and 11:5 (not yet on these pages).'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "paideia":
+        _a = "where it begins from Proverbs 3:11 in the Greek (not yet on these pages)."
+        assert _d[4].count(_a) == 1, "paideia"
+        _d = _d[:4] + (_d[4].replace(_a, 'where it begins from <a href="proverbs-3.html#v3-11">Proverbs 3:11</a> in the Greek (now on these pages).'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "ptoesis":
+        _a = "close to the Greek of Proverbs 3:25, &lsquo;you shall not fear terror&rsquo; (not yet on these pages, checked)."
+        assert _d[4].count(_a) == 1, "ptoesis"
+        _d = _d[:4] + (_d[4].replace(_a, 'close to the Greek of <a href="proverbs-3.html#v3-25">Proverbs 3:25</a>, &lsquo;you shall not fear terror&rsquo; (now on these pages, checked).'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT3_EN:
+        _d = _d[:4] + (_d[4] + _DICT3_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 5, _n
+for _k, _a, _b in [
+    ("peninim", "La sabiduría vale más que peninim en Proverbios 3:15 y 8:11;",
+     'La sabiduría vale más que peninim en <a href="proverbs-3.es.html#v3-15">Proverbios 3:15</a> (ya en estas páginas) y 8:11;'),
+    ("meerah", "Proverbios 3:33, <em>la maldición de Jehová está en la casa del malvado</em>;",
+     '<a href="proverbs-3.es.html#v3-33">Proverbios 3:33</a>, <em>la maldición de Jehová está en la casa del malvado</em>;'),
+    ("orthotomeo", "en Proverbios 3:6 y 11:5 (todavía no en estas páginas).",
+     'en <a href="proverbs-3.es.html#v3-6">Proverbios 3:6</a> (ya en estas páginas) y 11:5 (todavía no en estas páginas).'),
+    ("paideia", "donde parte de Proverbios 3:11 en griego (todavía no en estas páginas).",
+     'donde parte de <a href="proverbs-3.es.html#v3-11">Proverbios 3:11</a> en griego (ya en estas páginas).'),
+    ("ptoesis", "cercanas al griego de Proverbios 3:25, «no temerás espanto» (todavía no en estas páginas, comprobado).",
+     'cercanas al griego de <a href="proverbs-3.es.html#v3-25">Proverbios 3:25</a>, «no temerás espanto» (ya en estas páginas, comprobado).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("musar", ' ⭐ <a href="proverbs-3.es.html#v3-11">Proverbios 3:11</a> (ya en estas páginas): «Hijo mío, no rechaces la disciplina de Jehová», el versículo que Hebreos 12:5 cita en su forma griega.'),
+    ("ashrei", ' ⭐ <a href="proverbs-3.es.html#v3-13">Proverbios 3:13</a> (ya en estas páginas): «Feliz el ser humano que halla la sabiduría», y el pasaje cierra con la misma raíz en 3:18, «los que la retienen son felices».'),
+    ("anav", ' ⭐ En <a href="proverbs-3.es.html#v3-34">Proverbios 3:34</a> (ya en estas páginas) el texto escrito tiene <em>aniyim</em>, «los afligidos», y la lectura es <em>anavim</em>, «los humildes»: «a los humildes da gracia».'),
+    ("sod", ' ⭐ <a href="proverbs-3.es.html#v3-32">Proverbios 3:32</a> (ya en estas páginas): «el torcido es abominación para Jehová, pero su consejo íntimo está con los rectos».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["prov3"] = dict(era="monarchy",
+    when="A father's teaching: kindness and faithfulness bound on the neck, “trust in Jehovah with all your heart”, firstfruits, the discipline of Jehovah as a father's reproof, wisdom more precious than corals and a tree of life, the world founded by wisdom, and sayings on dealing with a neighbor, ending “to the humble he gives grace”.",
+    clock="Attributed to Solomon, son of David (reigned c. 970–931 BC), like the rest of the book's opening collection; wisdom literature keeps no calendar of its own.")
+
+CHAPTER_ART["prov3"] = [dict(
+    file="cleveland-proverbs-solomon-rehoboam.jpg",
+    title="Solomon Instructing Rehoboam", title_es="Salomón instruye a Roboam",
+    artist="Unknown illuminator, southern France (Toulouse?)",
+    year="c. 1275–1300",
+    location="Cleveland Museum of Art (2008.2.238.a, a Bible leaf, fol. 238r)", location_es="Museo de Arte de Cleveland (2008.2.238.a, hoja de una Biblia, fol. 238r)",
+    alt="Detail of a medieval Bible page. A tall blue and gold initial P runs down the left of a column of Latin text; inside the bowl of the letter a crowned, bearded man in a gold robe sits and points to an open book held by a young man seated at his knee. Across the top, red and blue capitals spell the book's Latin title.",
+    note="The opening of Proverbs in a thirteenth-century Latin Bible, headed <em>Parabole Salomonis</em>, &ldquo;the proverbs of Solomon&rdquo;. Inside the initial P a crowned Solomon teaches a young man with an open book, the museum&rsquo;s title naming the pupil as his son Rehoboam; the column beside it is Proverbs 1, and the lines at the foot begin <em>Audi fili mi disciplinam patris tui</em>, &ldquo;Hear, my son, your father&rsquo;s discipline&rdquo; (1:8). Chapter 3 opens with the same address, &ldquo;My son&rdquo;.",
+    note_es="La apertura de Proverbios en una Biblia latina del siglo XIII, encabezada <em>Parabole Salomonis</em>, «los proverbios de Salomón». Dentro de la inicial P, un Salomón coronado enseña a un joven con un libro abierto; el título del museo nombra al alumno como su hijo Roboam. La columna de al lado es Proverbios 1, y las líneas de abajo empiezan <em>Audi fili mi disciplinam patris tui</em>, «Oye, hijo mío, la disciplina de tu padre» (1:8). El capítulo 3 abre con la misma llamada, «Hijo mío».",
+    license="CC0 (Cleveland Museum of Art open access)",
+    source_url="https://commons.wikimedia.org/wiki/File:Southern_France,_Toulouse(%3F),_13th_century_-_Fol._238r,_Proverbs,_historiated_initial_P,_Solomon_instructing_Rehoboam_-_2008.2.238.a_-_Cleveland_Museum_of_Art.tif",
+)]
