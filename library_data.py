@@ -48289,3 +48289,72 @@ CHAPTER_ART["isa41"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Threshing-sledge.png",
 )]
+
+# --- Psalm 46 ---
+DICTIONARY.extend([
+    ("selah", "selah", "סֶלָה", "selah",
+     'A word of unknown meaning that stands at the end of lines in the Psalms and in the prayer of Habakkuk, usually taken as a direction to the musicians: a pause, an interlude, or a lifting of the voice. The Greek renders it <em>diapsalma</em>, &lsquo;interlude&rsquo;; the Latin, and so the Douay, leaves it out. It stands in seventy-four verses of the Hebrew Bible, seventy-one in the Psalms and three in Habakkuk 3. ⭐ <a href="psalms-46.html#v46-4">Psalm 46</a> (now on these pages) has it three times, after verses 4, 8 and 12, the last two after the refrain &lsquo;Jehovah of armies is with us&rsquo;. ⚠ The same letters also spell other words, such as <em>mesillah</em>, a highway, so a search on the bare letters finds more verses than the word itself.',
+     ("Psalms", 46, 4)),
+])
+DICTIONARY_ES["selah"] = ("selah",
+    'Una palabra de sentido desconocido que está al final de líneas en los Salmos y en la oración de Habacuc, tomada por lo general como una indicación a los músicos: una pausa, un interludio o una subida de la voz. El griego la vierte <em>diapsalma</em>, «interludio»; el latín, y con él la Douay, la omite. Está en setenta y cuatro versículos de la Biblia hebrea, setenta y uno en los Salmos y tres en Habacuc 3. ⭐ El <a href="psalms-46.es.html#v46-4">Salmo 46</a> (ya en estas páginas) la tiene tres veces, tras los versículos 4, 8 y 12, las dos últimas tras el estribillo «Jehová de los ejércitos está con nosotros». ⚠ Las mismas letras forman también otras palabras, como <em>mesilá</em>, calzada, de modo que una búsqueda de las letras sueltas halla más versículos que la palabra misma.')
+
+_DICT46_EN = {
+    "machseh": ' ⭐ <a href="psalms-46.html#v46-2">Psalm 46:2</a> (now on these pages): &lsquo;God is for us a refuge and strength, a help in troubles, readily found&rsquo;, the line behind Luther&rsquo;s &lsquo;A mighty fortress is our God&rsquo;.',
+    "agalah": ' ⭐ <a href="psalms-46.html#v46-10">Psalm 46:10</a> (now on these pages): &lsquo;he burns the wagons with fire&rsquo;, where the Greek read &lsquo;shields&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "raphah":
+        _a = "(Psalm 46:11 in the Hebrew numbering, not yet on these pages)"
+        assert _d[4].count(_a) == 1, "raphah"
+        _d = _d[:4] + (_d[4].replace(_a, '(<a href="psalms-46.html#v46-11">Psalm 46:11</a> in the Hebrew numbering, now on these pages)'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "mug":
+        _a = "(Psalm 46:7; Amos 9:5, neither yet on these pages)"
+        assert _d[4].count(_a) == 1, "mug"
+        _d = _d[:4] + (_d[4].replace(_a, '(<a href="psalms-46.html#v46-7">Psalm 46:7</a>, now on these pages; Amos 9:5, not yet on these pages)'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT46_EN:
+        _d = _d[:4] + (_d[4] + _DICT46_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 2, _n
+for _k, _a, _b in [
+    ("raphah", "(Salmo 46:11 en la numeración hebrea, todavía no en estas páginas)",
+     '(<a href="psalms-46.es.html#v46-11">Salmo 46:11</a> en la numeración hebrea, ya en estas páginas)'),
+    ("mug", "(Salmo 46:7; Amós 9:5, ninguno todavía en estas páginas)",
+     '(<a href="psalms-46.es.html#v46-7">Salmo 46:7</a>, ya en estas páginas; Amós 9:5, todavía no en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("machseh", ' ⭐ <a href="psalms-46.es.html#v46-2">Salmo 46:2</a> (ya en estas páginas): «Dios es para nosotros refugio y fuerza, una ayuda en las angustias, que se halla de inmediato», la línea detrás del «Castillo fuerte es nuestro Dios» de Lutero.'),
+    ("agalah", ' ⭐ <a href="psalms-46.es.html#v46-10">Salmo 46:10</a> (ya en estas páginas): «quema las carretas en el fuego», donde el griego leyó «escudos».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "korah":
+        _e["desc"] += ' ⭐ His line survived as a family of temple singers: eleven psalms are headed &lsquo;of the sons of Korah&rsquo;, among them <a href="psalms-46.html#v46-1">Psalm 46</a> (now on these pages), &lsquo;God is for us a refuge and strength&rsquo;.'
+        _e["refs"] = _e["refs"] + [("Psalms", 46, 1)]
+_s = ENCYCLOPEDIA_ES["korah"]
+ENCYCLOPEDIA_ES["korah"] = (_s[0], _s[1] + ' ⭐ Su linaje sobrevivió como una familia de cantores del templo: once salmos llevan el encabezado «de los hijos de Coré», entre ellos el <a href="psalms-46.es.html#v46-1">Salmo 46</a> (ya en estas páginas), «Dios es para nosotros refugio y fuerza».')
+
+CHRON_CHAPTERS["psalms46"] = dict(era="monarchy",
+    when="“God is for us a refuge and strength”: a song of the sons of Korah in which the earth changes and the mountains totter, a river gladdens the city of God, Jehovah of armies is “with us”, wars are made to cease, and the nations are told “Let go, and know that I am God”.",
+    clock="Undated: the heading names the singers, not the occasion. The Geneva Bible's heading ties it to Jerusalem's deliverance from Sennacherib (701 BC); the psalm itself names no event.")
+
+CHAPTER_ART["psalms46"] = [dict(
+    file="spangenberg-ein-feste-burg-1545.jpg",
+    title="Ein feste Burg ist unser Gott", title_es="Castillo fuerte es nuestro Dios",
+    artist="Martin Luther (hymn); printed in Johann Spangenberg, Kirchengesenge Deudtsch",
+    year="1545",
+    location="Magdeburg, 1545", location_es="Magdeburgo, 1545",
+    alt="A sixteenth-century printed hymn page. A heading in black-letter type reads &lsquo;Der xlvi. Psalm / Deus noster refugium et virtus / etc.&rsquo;; below it a decorated woodcut initial E begins a melody in square notes on five-line staves, with the German words of the hymn printed under the notes.",
+    note="Luther&rsquo;s hymn <em>Ein feste Burg ist unser Gott</em>, &ldquo;A mighty fortress is our God&rdquo;, printed in a Magdeburg hymnbook under the heading &ldquo;The 46th Psalm&rdquo;, with the Latin opening of the psalm, <em>Deus noster refugium et virtus</em>, &ldquo;God our refuge and strength&rdquo; (verse 2 here). The hymnbook numbers the psalm as the Hebrew does; the Latin Bible it quotes counts it as Psalm 45.",
+    note_es="El himno de Lutero <em>Ein feste Burg ist unser Gott</em>, «Castillo fuerte es nuestro Dios», impreso en un himnario de Magdeburgo bajo el encabezado «El Salmo 46», con el comienzo latino del salmo, <em>Deus noster refugium et virtus</em>, «Dios, nuestro refugio y fortaleza» (aquí el versículo 2). El himnario numera el salmo como el hebreo; la Biblia latina que cita lo cuenta como Salmo 45.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Ein_feste_Burg_1545.jpg",
+)]
