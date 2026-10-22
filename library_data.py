@@ -48219,3 +48219,73 @@ CHAPTER_ART["prov3"] = [dict(
     license="CC0 (Cleveland Museum of Art open access)",
     source_url="https://commons.wikimedia.org/wiki/File:Southern_France,_Toulouse(%3F),_13th_century_-_Fol._238r,_Proverbs,_historiated_initial_P,_Solomon_instructing_Rehoboam_-_2008.2.238.a_-_Cleveland_Museum_of_Art.tif",
 )]
+
+# --- Isaiah 41 ---
+DICTIONARY.extend([
+    ("tolaat", "tola&rsquo;at", "תּוֹלַעַת", "tola'at",
+     'A WORM, a grub &mdash; the maggot that bred in the manna left over till morning (<a href="exodus-16.html#v16-20">Exodus 16:20</a>, now on these pages). ⭐ <a href="isaiah-41.html#v41-14">Isaiah 41:14</a> (now on these pages): &lsquo;Do not be afraid, worm Jacob&rsquo;, and five verses later the worm is a threshing sledge that grinds mountains. ⚠ The same word names CRIMSON, the dye taken from a scale insect: <em>tola&rsquo;at shani</em> is the &lsquo;scarlet yarn&rsquo; of the tabernacle (<a href="exodus-25.html#v25-4">Exodus 25:4</a>), and Isaiah&rsquo;s &lsquo;if they are red as crimson&rsquo; (<a href="isaiah-1.html#v1-18">Isaiah 1:18</a>, both now on these pages) uses its short form.',
+     ("Isaiah", 41, 14)),
+    ("morag", "morag", "מוֹרַג", "morag",
+     'A THRESHING SLEDGE &mdash; a heavy board studded underneath with sharp stones or iron, dragged by oxen over the sheaves to cut the straw and loosen the grain. ⭐ <a href="isaiah-41.html#v41-15">Isaiah 41:15</a> (now on these pages): &lsquo;Look &mdash; I make you a threshing sledge, sharp, new, with double edges; you will thresh mountains and crush them&rsquo;. The word appears again when Araunah offers David his oxen and &lsquo;the threshing sledges&rsquo; for firewood (2 Samuel 24:22; 1 Chronicles 21:23, neither yet on these pages).',
+     ("Isaiah", 41, 15)),
+])
+DICTIONARY_ES["tolaat"] = ("toláat",
+    'UN GUSANO, una larva &mdash; el gusano que crió el maná guardado hasta la mañana (<a href="exodus-16.es.html#v16-20">Éxodo 16:20</a>, ya en estas páginas). ⭐ <a href="isaiah-41.es.html#v41-14">Isaías 41:14</a> (ya en estas páginas): «No tengas miedo, gusano Jacob», y cinco versículos después el gusano es un trillo que muele los montes. ⚠ La misma palabra nombra el CARMESÍ, el tinte sacado de un insecto: <em>toláat shaní</em> es la «grana» del tabernáculo (<a href="exodus-25.es.html#v25-4">Éxodo 25:4</a>), y el «si son rojos como el carmesí» de Isaías (<a href="isaiah-1.es.html#v1-18">Isaías 1:18</a>, los dos ya en estas páginas) usa su forma breve.')
+DICTIONARY_ES["morag"] = ("morag",
+    'UN TRILLO &mdash; una tabla pesada tachonada por debajo de piedras afiladas o de hierro, arrastrada por bueyes sobre las gavillas para cortar la paja y soltar el grano. ⭐ <a href="isaiah-41.es.html#v41-15">Isaías 41:15</a> (ya en estas páginas): «Mira: te pongo por trillo, afilado, nuevo, de doble filo; trillarás montes y los molerás». La palabra vuelve cuando Arauna ofrece a David sus bueyes y «los trillos» para leña (2 Samuel 24:22; 1 Crónicas 21:23, ninguno de los dos todavía en estas páginas).')
+
+# Spanish twins for entries the Isaiah 41 notes link
+DICTIONARY_ES["hadas"] = ("hadas",
+    'EL MIRTO &mdash; un arbusto bajo, fragante y siempre verde. Sus ramas están entre las «ramas de árboles frondosos» que se agitan en la fiesta de las Cabañas (Nehemías 8:15), y es la planta detrás de un nombre famoso: el nombre hebreo de Ester es HADASÁ, «mirto». En la primera visión de Zacarías la patrulla de jinetes divinos está «entre los mirtos que había en la hondonada» (1:8) &mdash; Israel imaginado como algo pequeño, fragante y a la sombra, con la caballería del cielo plantada en medio. Isaías hace del mirto una señal de la maldición invertida: «en lugar de la ortiga crecerá el mirto» (55:13). ⭐ <a href="isaiah-41.es.html#v41-19">Isaías 41:19</a> (ya en estas páginas) lo pone entre los siete árboles que Jehová plantará en el desierto.')
+DICTIONARY_ES["mevasser"] = ("mevaser",
+    'EL QUE TRAE BUENAS NUEVAS, un heraldo de buenas noticias &mdash; de <em>basar</em>, «anunciar buenas nuevas» (el corredor que trae la noticia de una victoria, 2 Samuel 18:19-27). ⚠ Es la palabra clave de dos de las líneas más citadas de la Biblia: Nahúm 2:1 (1:15 en las versiones castellanas), «he aquí sobre los montes los pies del MEVASER, que anuncia la paz», anunciando la caída de Nínive; y su gemela Isaías 52:7, «¡cuán hermosos son sobre los montes los pies del MEVASER de buenas nuevas!». El griego que traduce <em>basar</em> es <em>euangelizomai</em>, y su sustantivo <em>euangelion</em> es la palabra que traducimos EVANGELIO &mdash; de modo que el heraldo que corre por los montes con la noticia de un tirano caído es, etimológicamente, el primer «evangelista». Pablo cita la línea en <a href="romans-10.es.html#v10-15">Romanos 10:15</a> de los predicadores de Cristo. ⭐ <a href="isaiah-41.es.html#v41-27">Isaías 41:27</a> (ya en estas páginas): «y a Jerusalén doy un anunciador de buenas nuevas», donde el latín pone <em>evangelistam</em>.')
+DICTIONARY_ES["qedosh-yisrael"] = ("qedosh Yisrael",
+    'EL SANTO DE ISRAEL &mdash; el título característico de Isaías para Dios, en veinticuatro versículos de este libro y solo en seis del resto de la Biblia. ⚠ Está repartido por igual entre los capítulos 1-39 y 40-66, lo que es uno de los indicios más fuertes de que, sea cual sea el origen de las partes de Isaías, las moldeó como un solo libro gente que compartía un vocabulario. La expresión suelda dos cosas que no parecen ir juntas: <em>qadosh</em>, la palabra de la separación y la otredad absolutas, unida directamente al nombre de una pequeña nación. ⭐ <a href="isaiah-41.es.html#v41-14">Isaías 41:14</a> (ya en estas páginas) la empareja con <em>goel</em>, «tu Redentor, el Santo de Israel», y el capítulo la repite en los versículos 16 y 20.')
+
+_DICT41_EN = {
+    "goel": ' ⭐ <a href="isaiah-41.html#v41-14">Isaiah 41:14</a> (now on these pages) gives the title to God for the first time in Isaiah: &lsquo;I help you, declares Jehovah, your Redeemer, the Holy One of Israel&rsquo;; &lsquo;your Redeemer&rsquo; in that spelling returns six more times in the book.',
+    "tohu": ' ⭐ <a href="isaiah-41.html#v41-29">Isaiah 41:29</a> (now on these pages) ends the trial of the gods with it: &lsquo;their cast images are wind and empty chaos&rsquo;.',
+    "chazaq": ' ⭐ In <a href="isaiah-41.html#v41-6">Isaiah 41:6&ndash;13</a> (now on these pages) the nations say &lsquo;Be strong!&rsquo; and strengthen their idol with nails, and Jehovah answers with the same verb: &lsquo;you whom I took hold of&rsquo;, &lsquo;I take hold of your right hand&rsquo;.',
+    "qedosh-yisrael": ' ⭐ <a href="isaiah-41.html#v41-14">Isaiah 41:14</a> (now on these pages) pairs it with <em>go&rsquo;el</em>, &lsquo;your Redeemer, the Holy One of Israel&rsquo;, and the chapter repeats it at verses 16 and 20; it stands in twenty-four verses of Isaiah and six in the rest of the Bible.',
+    "hadas": ' ⭐ <a href="isaiah-41.html#v41-19">Isaiah 41:19</a> (now on these pages) sets it among the seven trees Jehovah will plant in the desert.',
+    "mevasser": ' ⭐ <a href="isaiah-41.html#v41-27">Isaiah 41:27</a> (now on these pages): &lsquo;and to Jerusalem I give a herald of good news&rsquo;, where the Latin has <em>evangelistam</em> and the Douay &lsquo;an evangelist&rsquo;.',
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT41_EN:
+        DICTIONARY[_i] = _d[:4] + (_d[4] + _DICT41_EN[_d[0]],) + _d[5:]
+for _k, _b in [
+    ("goel", ' ⭐ <a href="isaiah-41.es.html#v41-14">Isaías 41:14</a> (ya en estas páginas) da el título a Dios por primera vez en Isaías: «Yo te ayudo, declara Jehová, tu Redentor, el Santo de Israel»; «tu Redentor» con esa grafía vuelve seis veces más en el libro.'),
+    ("tohu", ' ⭐ <a href="isaiah-41.es.html#v41-29">Isaías 41:29</a> (ya en estas páginas) cierra con ella el juicio de los dioses: «sus imágenes fundidas, viento y vacío».'),
+    ("chazaq", ' ⭐ En <a href="isaiah-41.es.html#v41-6">Isaías 41:6&ndash;13</a> (ya en estas páginas) las naciones dicen «¡Sé fuerte!» y fortalecen a su ídolo con clavos, y Jehová responde con el mismo verbo: «a quien tomé», «tomo tu mano derecha».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA_ES["cyrus"] = ("Ciro",
+    'Ciro II, «el Grande» &mdash; fundador del imperio persa, que tomó Babilonia en el año 539 a.&nbsp;C. y dio el decreto que pone fin al destierro (<a href="ezra-1.es.html#v1">Esdras 1:1&ndash;4</a>, ya en estas páginas). Isaías 45:1 lo llama MASHÍAJ de Jehová, su ungido &mdash; el único extranjero de la Biblia que recibe ese título &mdash; y lo nombra siglo y medio antes, lo cual es uno de los argumentos permanentes sobre la composición de Isaías. ⚠ Su política de repatriar a los pueblos deportados y restaurar sus santuarios está atestiguada fuera de la Biblia en el CILINDRO DE CIRO (Museo Británico), un barril de arcilla inscrito tras la caída de Babilonia &mdash; en el que Ciro atribuye a MARDUK, con palabras muy cercanas a Esdras 1:2, el haberle dado los reinos y encargado la obra. ⭐ <a href="isaiah-41.es.html#v41-2">Isaías 41:2</a> y <a href="isaiah-41.es.html#v41-25">41:25</a> (ya en estas páginas) hablan, sin nombrarlo, de uno despertado «del oriente» y «del norte», que pisa a los gobernadores como el alfarero pisa el barro; Josefo dice que Ciro conoció su llamado leyendo el libro que Isaías había dejado doscientos diez años antes (<em>Antigüedades</em> 11.5).')
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "cyrus":
+        _e["desc"] += ' ⭐ <a href="isaiah-41.html#v41-2">Isaiah 41:2</a> and <a href="isaiah-41.html#v41-25">41:25</a> (now on these pages) speak, without naming him, of one roused &lsquo;from the east&rsquo; and &lsquo;from the north&rsquo;, who treads on governors as a potter treads clay; Josephus says Cyrus learned of his calling by reading the book Isaiah had left two hundred and ten years before (<em>Antiquities</em> 11.5).'
+        _e["refs"] = _e["refs"] + [("Isaiah", 41, 2), ("Isaiah", 41, 25)]
+    elif _e["slug"] == "abraham":
+        _e["desc"] += ' ⭐ <a href="isaiah-41.html#v41-8">Isaiah 41:8</a> (now on these pages) calls him &lsquo;Abraham my friend&rsquo;, <em>ohavi</em>, &lsquo;the one who loves me&rsquo;, the title James repeats, &lsquo;he was called a friend of God&rsquo; (James 2:23).'
+        _e["refs"] = _e["refs"] + [("Isaiah", 41, 8)]
+_s = ENCYCLOPEDIA_ES["abraham"]
+ENCYCLOPEDIA_ES["abraham"] = (_s[0], _s[1] + ' ⭐ <a href="isaiah-41.es.html#v41-8">Isaías 41:8</a> (ya en estas páginas) lo llama «Abraham mi amigo», <em>ohaví</em>, «el que me ama», el título que repite Santiago, «y fue llamado amigo de Dios» (Santiago 2:23).')
+
+CHRON_CHAPTERS["isa41"] = dict(era="exile",
+    when="The trial of the nations and their gods: Jehovah rouses a conqueror from the east and the north, the idol-makers nail their god so it will not totter, Israel the servant, seed of Abraham the friend, is told “do not be afraid”, the worm Jacob becomes a threshing sledge, rivers run on bare heights, and the gods are found to be wind and empty chaos.",
+    clock="⚠ Disputed as for chapter 40: the conqueror is Cyrus, who took Babylon in 539 BC; the traditional reading hears the eighth-century Isaiah foretelling him, the critical reading a prophet of the exile announcing him as he rises.")
+
+CHAPTER_ART["isa41"] = [dict(
+    file="vincent-threshing-sledge.jpg",
+    title="Threshing with a Sledge", title_es="Trillando con trillo",
+    artist="Engraving in John H. Vincent, Earthly Footsteps of the Man of Galilee",
+    year="1884",
+    location="Published by N. D. Thompson Publishing Co.", location_es="Publicado por N. D. Thompson Publishing Co.",
+    alt="Nineteenth-century engraving of a threshing floor in the hill country of the Near East. A man in a turban stands on a wooden threshing board drawn by a yoke of oxen over cut sheaves, holding the reins and a goad; a second team works behind him beside a large heap of straw, and chaff blows across the field. Hills, a village and a ruined tower fill the background.",
+    note="The <em>morag</em> of verse 15 as travellers still saw it in the nineteenth century: a wooden board, studded underneath, dragged by oxen over the sheaves while the driver stands on it for weight. Verse 16&rsquo;s winnowing, with the wind carrying off the chaff, is the next step on the same floor.",
+    note_es="El <em>morag</em> del versículo 15 tal como los viajeros todavía lo veían en el siglo XIX: una tabla de madera tachonada por debajo, arrastrada por bueyes sobre las gavillas mientras el conductor va de pie encima para darle peso. El aventar del versículo 16, con el viento llevándose el tamo, es el paso siguiente en la misma era.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Threshing-sledge.png",
+)]
