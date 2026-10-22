@@ -47315,3 +47315,95 @@ CHAPTER_ART["1sam9"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_255_Saul_meets_with_Samuel_1_Samuel_9_17_for_Brunoff_242_Sa%C3%BCl_rencontre_Samuel.jpg",
 )]
+
+# --- 1 Samuel 10 ---
+DICTIONARY.extend([
+    ("melukhah", "melukhah", "מְלוּכָה", "melukhah",
+     'KINGSHIP, royal rule &mdash; the office rather than the man (<a href="dictionary.html#melekh">melekh</a>, &ldquo;king&rdquo;). ⭐ <a href="1-samuel-10.html#v10-16">1 Samuel 10:16</a> (now on these pages): Saul tells his uncle about the donkeys, &ldquo;but the matter of the kingship, of which Samuel had spoken, he did not tell him&rdquo;; and at Mizpah &ldquo;Samuel spoke to the people the due of the kingship, and wrote it in a book, and laid it up before Jehovah&rdquo; (10:25), <em>mishpat ha-melukhah</em>, beside the &ldquo;due of the king&rdquo; of <a href="1-samuel-8.html#v8-9">8:9</a>, 11. The KJV and ASV say &ldquo;the kingdom&rdquo;, the NWT 1984 &ldquo;the kingship&rdquo;.',
+     ("1 Samuel", 10, 16)),
+])
+DICTIONARY_ES["melukhah"] = ("melujah",
+    'REALEZA, gobierno real &mdash; el cargo más que el hombre (<a href="diccionario.html#melekh">melekh</a>, «rey»). ⭐ <a href="1-samuel-10.es.html#v10-16">1 Samuel 10:16</a> (ya en estas páginas): Saúl le habla a su tío de las asnas, «pero del asunto del reino, del que Samuel había hablado, no le dijo nada»; y en Mizpá «Samuel dijo al pueblo el derecho del reino, y lo escribió en un libro, y lo depositó delante de Jehová» (10:25), <em>mishpat ha-melujah</em>, junto al «derecho del rey» de <a href="1-samuel-8.es.html#v8-9">8:9</a>, 11. La RV60 dice «el reino», la TNM 1987 «la gobernación real».')
+DICTIONARY_ES["bazah"] = ("bazah",
+    'DESPRECIAR &mdash; tratar una cosa como de ninguna cuenta, lo exactamente contrario de <em>kaved</em> («honrar», literalmente tratar como pesado). Recorre Malaquías 1 como un redoble: sacerdotes que «desprecian mi nombre» (v. 6), una mesa que «es despreciable» (vv. 7, 12). No es incredulidad; es desdén. La acusación es que a Dios se le ha hallado LIVIANO. ⭐ En <a href="1-samuel-10.es.html#v10-27">1 Samuel 10:27</a> (ya en estas páginas) unos hijos de la nada dicen de Saúl «¿Cómo nos va a salvar este?», y «lo despreciaron, y no le trajeron presente».')
+
+_DICT10_EN = {
+    "bazah": ' ⭐ At <a href="1-samuel-10.html#v10-27">1 Samuel 10:27</a> (now on these pages) sons of worthlessness say of Saul, &ldquo;How will this one save us?&rdquo;, and &ldquo;they despised him, and brought him no gift&rdquo;.',
+    "nagid": ' Samuel pours the flask of oil on Saul&rsquo;s head with the words &ldquo;Is it not that Jehovah has anointed you as leader over his inheritance?&rdquo; (<a href="1-samuel-10.html#v10-1">1 Samuel 10:1</a>, now on these pages).',
+    "chevel": ' ⭐ <a href="1-samuel-10.html#v10-5">1 Samuel 10:5</a> and 10 (now on these pages) use it of people: &ldquo;a band of prophets&rdquo;, <em>chevel nevi&rsquo;im</em>, coming down from the high place with music.',
+    "mashal": ' ⭐ <a href="1-samuel-10.html#v10-12">1 Samuel 10:12</a> (now on these pages) records the birth of one: &ldquo;Therefore it became a proverb: Is Saul also among the prophets?&rdquo;',
+    "maas": ' ⭐ Samuel says it to the people&rsquo;s faces at Mizpah: &ldquo;you today have rejected your God, who saves you out of all your evils&rdquo; (<a href="1-samuel-10.html#v10-19">1 Samuel 10:19</a>, now on these pages).',
+    "kelim": ' ⭐ At <a href="1-samuel-10.html#v10-22">1 Samuel 10:22</a> (now on these pages) the newly chosen king &ldquo;has hidden himself among the baggage&rdquo;, the <em>kelim</em>.',
+    "mishpat": ' ⭐ <a href="1-samuel-10.html#v10-25">1 Samuel 10:25</a> (now on these pages) adds <em>mishpat ha-melukhah</em>, &ldquo;the due of the kingship&rdquo;, which Samuel writes in a book and lays up before Jehovah.',
+}
+_DICT10_SWAP = {
+    "tsalach": ("now on these pages; 1 Samuel 10:10, not yet)", 'now on these pages; and Saul among the prophets, <a href="1-samuel-10.html#v10-10">1 Samuel 10:10</a>, also now on these pages)'),
+    "lakad": ("the same verb without a lot picks out Saul at 1 Samuel 10:20&ndash;21 and Jonathan at 14:41&ndash;42 (neither yet on these pages), where lots are explicit.",
+              'the same verb, again with no lot named, picks out Saul at <a href="1-samuel-10.html#v10-20">1 Samuel 10:20&ndash;21</a> (now on these pages), and Jonathan at 14:41&ndash;42 (not yet on these pages), where the lot is explicit.'),
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT10_SWAP:
+        _a, _b = _DICT10_SWAP[_d[0]]
+        assert _d[4].count(_a) == 1, _d[0]
+        _d = _d[:4] + (_d[4].replace(_a, _b),) + _d[5:]
+    if _d[0] in _DICT10_EN:
+        _d = _d[:4] + (_d[4] + _DICT10_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+for _k, _a, _b in [
+    ("tsalach", "ya en estas páginas; 1 Samuel 10:10, todavía no)", 'ya en estas páginas; y Saúl entre los profetas, <a href="1-samuel-10.es.html#v10-10">1 Samuel 10:10</a>, también ya en estas páginas)'),
+    ("lakad", "el mismo verbo sin suerte señala a Saúl en 1 Samuel 10:20&ndash;21 y a Jonatán en 14:41&ndash;42 (ninguno todavía en estas páginas), donde las suertes son explícitas.",
+     'el mismo verbo, otra vez sin nombrar suerte, señala a Saúl en <a href="1-samuel-10.es.html#v10-20">1 Samuel 10:20&ndash;21</a> (ya en estas páginas), y a Jonatán en 14:41&ndash;42 (todavía no en estas páginas), donde la suerte es explícita.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("nagid", ' Samuel derrama el frasco de aceite sobre la cabeza de Saúl con las palabras «¿No es que Jehová te ha ungido como caudillo sobre su heredad?» (<a href="1-samuel-10.es.html#v10-1">1 Samuel 10:1</a>, ya en estas páginas).'),
+    ("chevel", ' ⭐ <a href="1-samuel-10.es.html#v10-5">1 Samuel 10:5</a> y 10 (ya en estas páginas) lo usan de personas: «una banda de profetas», <em>jevel nevi&rsquo;im</em>, que baja del lugar alto con música.'),
+    ("mashal", ' ⭐ <a href="1-samuel-10.es.html#v10-12">1 Samuel 10:12</a> (ya en estas páginas) cuenta el nacimiento de uno: «Por eso se hizo proverbio: ¿También Saúl entre los profetas?».'),
+    ("maas", ' ⭐ Samuel se lo dice al pueblo a la cara en Mizpá: «ustedes hoy han rechazado a su Dios, que los salva de todos sus males» (<a href="1-samuel-10.es.html#v10-19">1 Samuel 10:19</a>, ya en estas páginas).'),
+    ("kelim", ' ⭐ En <a href="1-samuel-10.es.html#v10-22">1 Samuel 10:22</a> (ya en estas páginas) el rey recién escogido «se ha escondido entre el equipaje», los <em>kelim</em>.'),
+    ("mishpat", ' ⭐ <a href="1-samuel-10.es.html#v10-25">1 Samuel 10:25</a> (ya en estas páginas) añade <em>mishpat ha-melujah</em>, «el derecho del reino», que Samuel escribe en un libro y deposita delante de Jehová.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "saul-king":
+        _e["desc"] += ' Samuel anoints him with a flask of oil and gives him three signs; the spirit of God rushes on him among a band of prophets, and people ask &ldquo;Is Saul also among the prophets?&rdquo; At Mizpah the procedure of the lot takes Benjamin, the clan of the Matrites and Saul, who is found hiding among the baggage, and the people shout &ldquo;Long live the king!&rdquo; (<a href="1-samuel-10.html#v10-1">1 Samuel 10</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 10, 11), ("1 Samuel", 10, 21), ("1 Samuel", 10, 24)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' He anoints Saul in private, then gathers the people at Mizpah, tells them &ldquo;you today have rejected your God&rdquo;, presents Saul to them, and writes &ldquo;the due of the kingship&rdquo; in a book laid up before Jehovah (<a href="1-samuel-10.html#v10-1">1 Samuel 10</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 10, 1), ("1 Samuel", 10, 25)]
+    elif _e["slug"] == "rachel":
+        _e["desc"] += ' ⭐ <a href="1-samuel-10.html#v10-2">1 Samuel 10:2</a> (now on these pages) places &ldquo;Rachel&rsquo;s tomb&rdquo; &ldquo;in the territory of Benjamin, at Zelzah&rdquo;, north of Jerusalem, where Genesis buries her on the way to Bethlehem; the two are not reconciled.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 10, 2)]
+    elif _e["slug"] == "gibeah":
+        _e["desc"] += ' ⭐ It is Saul&rsquo;s home: he goes back &ldquo;to his house, to Gibeah&rdquo; after he is chosen, with the valiant men &ldquo;whose hearts God had touched&rdquo; (<a href="1-samuel-10.html#v10-26">1 Samuel 10:26</a>, now on these pages); the &ldquo;Gibeah of God&rdquo; where he meets the prophets (10:5, 10) may be the same town or a near one.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 10, 10), ("1 Samuel", 10, 26)]
+for _k, _b in [
+    ("saul-king", ' Samuel lo unge con un frasco de aceite y le da tres señales; el espíritu de Dios irrumpe sobre él en medio de una banda de profetas, y la gente pregunta «¿También Saúl entre los profetas?». En Mizpá el procedimiento de la suerte toma a Benjamín, al clan de los matritas y a Saúl, a quien encuentran escondido entre el equipaje, y el pueblo grita «¡Viva el rey!» (<a href="1-samuel-10.es.html#v10-1">1 Samuel 10</a>, ya en estas páginas).'),
+    ("samuel", ' Unge a Saúl en privado, luego reúne al pueblo en Mizpá, les dice «ustedes hoy han rechazado a su Dios», les presenta a Saúl y escribe «el derecho del reino» en un libro depositado delante de Jehová (<a href="1-samuel-10.es.html#v10-1">1 Samuel 10</a>, ya en estas páginas).'),
+    ("rachel", ' ⭐ <a href="1-samuel-10.es.html#v10-2">1 Samuel 10:2</a> (ya en estas páginas) sitúa «el sepulcro de Raquel» «en el territorio de Benjamín, en Selsá», al norte de Jerusalén, donde el Génesis la sepulta en el camino de Belén; las dos cosas no se concilian.'),
+    ("gibeah", ' ⭐ Es la casa de Saúl: vuelve «a su casa, a Guibeá» después de ser escogido, con los valientes «cuyo corazón Dios había tocado» (<a href="1-samuel-10.es.html#v10-26">1 Samuel 10:26</a>, ya en estas páginas); la «Guibeá de Dios» donde encuentra a los profetas (10:5, 10) puede ser la misma ciudad o una cercana.'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam10"] = dict(era="monarchy",
+    when="Samuel anoints Saul with a flask of oil as leader over Jehovah's inheritance and gives him three signs: men at Rachel's tomb with news of the donkeys, three men at the oak of Tabor who give him bread, and a band of prophets at Gibeah of God. God gives Saul another heart, the spirit rushes on him, and he prophesies. At Mizpah Samuel tells the people they have rejected God; Benjamin, the Matrites and Saul are taken, Saul is found hiding among the baggage, and the people shout 'Long live the king!' Samuel writes the due of the kingship in a book.",
+    clock="The day after Saul's anointing, and the assembly at Mizpah that follows (1 Samuel 10:9, 17).")
+CHAPTER_ART["1sam10"] = [dict(
+    file="heemskerck-samuel-anoints-saul.jpg",
+    title="Samuel Anoints Saul",
+    title_es="Samuel unge a Saúl",
+    artist="After Maarten van Heemskerck",
+    year="1549",
+    location="Rijksmuseum, Amsterdam (RP-P-BI-6494X)",
+    location_es="Rijksmuseum, Ámsterdam (RP-P-BI-6494X)",
+    alt="Engraving: under a twisted tree on the right, a bearded old man pours oil from a small flask onto the head of a young man kneeling before him, a staff on the ground; behind them a pyramid-shaped tomb, an arched bridge, and classical ruins in a wide landscape.",
+    note="The plate is inscribed &ldquo;1 regum 10&rdquo;, the old Latin Bible&rsquo;s name for this chapter, and signed with Heemskerck&rsquo;s name and the year 1549. Samuel pours the flask of oil of verse 1 on Saul&rsquo;s head under a great tree; the pyramid behind them may be meant for Rachel&rsquo;s tomb, the first sign of verse 2.",
+    note_es="La lámina lleva la inscripción «1 regum 10», el nombre de este capítulo en la antigua Biblia latina, y el nombre de Heemskerck con el año 1549. Samuel derrama el frasco de aceite del versículo 1 sobre la cabeza de Saúl bajo un gran árbol; la pirámide de detrás quizá quiera ser el sepulcro de Raquel, la primera señal del versículo 2.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Samuel_zalft_Saul_tot_koning,_RP-P-BI-6494X.jpg",
+)]
