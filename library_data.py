@@ -48358,3 +48358,100 @@ CHAPTER_ART["psalms46"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Ein_feste_Burg_1545.jpg",
 )]
+
+# --- Psalm 37 ---
+DICTIONARY.extend([
+    ("yarash", "yarash", "יָרַשׁ", "yirshu",
+     'TO POSSESS, to take possession &mdash; and, of the people already there, to dispossess: one verb covers taking a land and driving out those who hold it, and in the causative it is mostly the second. Within a family it is to inherit, to be the heir: Abram complains that <em>a member of my household will be my heir</em> (<a href="genesis-15.html#v15-3">Genesis 15:3</a>, already on these pages). Its nouns are <em><a href="dictionary.html#yerushah">yerushah</a></em> and <em><a href="dictionary.html#morashah">morashah</a></em>, a possession. It is the verb of the land-grant, <em>Go in and take possession of the land</em> (<a href="deuteronomy-1.html#v8">Deuteronomy 1:8</a>, already on these pages). ⭐ <a href="psalms-37.html#v37-11">Psalm 37</a> (now on these pages) turns the conquest verb into a promise for those who wait: <em>they will possess the land</em> at verses 9, 11, 22 and 29, and <em>he will raise you up to possess the land</em> at verse 34. Its verse 11, <em>But the humble will possess the land</em>, is the line Jesus takes up in Greek, &lsquo;they shall inherit the earth&rsquo; (<a href="matthew-5.html#v5-5">Matthew 5:5</a>, already on these pages). There in the psalm the KJV reads &lsquo;inherit the earth&rsquo;, the ASV and NIV &lsquo;inherit the land&rsquo;, the NWT 1984 &lsquo;possess the earth&rsquo;.',
+     ("Psalms", 37, 9)),
+])
+DICTIONARY_ES["yarash"] = ("yarash",
+    'POSEER, tomar posesión &mdash;y, de la gente que ya está allí, desposeer: un solo verbo cubre tomar una tierra y expulsar a quienes la tienen, y en la forma causativa es sobre todo lo segundo. Dentro de una familia es heredar, ser el heredero: Abram se queja de que <em>un miembro de mi casa será mi heredero</em> (Génesis 15:3, ya en estas páginas, todavía no en español). Sus sustantivos son <em><a href="diccionario.html#yerushah">yerushá</a></em> y <em><a href="diccionario.html#morashah">morashá</a></em>, una posesión. Es el verbo de la concesión de la tierra, <em>Entren y tomen posesión de la tierra</em> (<a href="deuteronomy-1.es.html#v8">Deuteronomio 1:8</a>, ya en estas páginas). ⭐ El <a href="psalms-37.es.html#v37-11">Salmo 37</a> (ya en estas páginas) vuelve el verbo de la conquista una promesa para los que esperan: <em>poseerán la tierra</em> en los versículos 9, 11, 22 y 29, y <em>él te levantará para poseer la tierra</em> en el versículo 34. Su versículo 11, <em>Pero los humildes poseerán la tierra</em>, es la línea que Jesús toma en griego, «heredarán la tierra» (Mateo 5:5, ya en estas páginas, todavía no en español). La RV 1909 y la RV60 leen allí en el salmo «heredarán la tierra», la TNM 1987 «poseerán la tierra», la NVI «heredarán la tierra».')
+
+_DICT37_EN = {
+    "anav": ' ⭐ <a href="psalms-37.html#v37-11">Psalm 37:11</a> (now on these pages): &lsquo;But the humble will possess the land&rsquo;, the line Jesus takes up in Greek as &lsquo;the meek&rsquo; at Matthew 5:5.',
+    "raphah": ' ⭐ <a href="psalms-37.html#v37-8">Psalm 37:8</a> (now on these pages): <em>heref</em>, &lsquo;Let go of anger, and forsake wrath&rsquo;.',
+    "acharit": ' ⭐ <a href="psalms-37.html#v37-37">Psalm 37:37&ndash;38</a> (now on these pages): &lsquo;there is an outcome for the man of peace&rsquo;, and &lsquo;the outcome of the wicked will be cut off&rsquo;; the Greek reads &lsquo;a remnant&rsquo;.',
+    "hagah": ' ⭐ <a href="psalms-37.html#v37-30">Psalm 37:30</a> (now on these pages): &lsquo;The mouth of the righteous murmurs wisdom&rsquo;.',
+    "tamim": ' ⭐ <a href="psalms-37.html#v37-18">Psalm 37:18</a> (now on these pages): &lsquo;Jehovah knows the days of the blameless&rsquo;, and at 37:37, &lsquo;Watch the blameless&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "galal":
+        _a = "(Psalm 22:9; 37:5, neither yet on these pages)"
+        assert _d[4].count(_a) == 1, "galal"
+        _d = _d[:4] + (_d[4].replace(_a, '(Psalm 22:9, not yet on these pages; <a href="psalms-37.html#v37-5">Psalm 37:5</a>, now on these pages)'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "damam":
+        _a = "<em>wait for Jehovah</em> (Psalm 37:7, not yet on these pages)"
+        assert _d[4].count(_a) == 1, "damam"
+        _d = _d[:4] + (_d[4].replace(_a, '<em>wait for Jehovah</em> (<a href="psalms-37.html#v37-7">Psalm 37:7</a>, now on these pages)'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "anog":
+        _a = "<em>delight yourself in Jehovah</em> (Psalm 37:4, not yet on these pages)"
+        assert _d[4].count(_a) == 1, "anog"
+        _d = _d[:4] + (_d[4].replace(_a, '<em>delight yourself in Jehovah</em> (<a href="psalms-37.html#v37-4">Psalm 37:4</a>, now on these pages)'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "ezrach":
+        _a = "(Psalm 37:35 uses it"
+        assert _d[4].count(_a) == 1, "ezrach"
+        _d = _d[:4] + (_d[4].replace(_a, '(<a href="psalms-37.html#v37-35">Psalm 37:35</a>, now on these pages, uses it'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "zamam":
+        _a = "One is Psalm 37:12,"
+        assert _d[4].count(_a) == 1, "zamam"
+        _d = _d[:4] + (_d[4].replace(_a, 'One is <a href="psalms-37.html#v37-12">Psalm 37:12</a> (now on these pages),'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "mezimmah":
+        _a = "(Psalm 37:12)"
+        assert _d[4].count(_a) == 1, "mezimmah"
+        _d = _d[:4] + (_d[4].replace(_a, '(<a href="psalms-37.html#v37-12">Psalm 37:12</a>, now on these pages)'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT37_EN:
+        _d = _d[:4] + (_d[4] + _DICT37_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 6, _n
+for _k, _a, _b in [
+    ("galal", "(Salmo 22:9; 37:5, ninguno todavía en estas páginas)",
+     '(Salmo 22:9, todavía no en estas páginas; <a href="psalms-37.es.html#v37-5">Salmo 37:5</a>, ya en estas páginas)'),
+    ("damam", "<em>espera en Jehová</em> (Salmo 37:7, todavía no en estas páginas)",
+     '<em>espera en Jehová</em> (<a href="psalms-37.es.html#v37-7">Salmo 37:7</a>, ya en estas páginas)'),
+    ("anog", "<em>deléitate en Jehová</em> (Salmo 37:4, todavía no en estas páginas)",
+     '<em>deléitate en Jehová</em> (<a href="psalms-37.es.html#v37-4">Salmo 37:4</a>, ya en estas páginas)'),
+    ("ezrach", "(el Salmo 37:35 la ",
+     '(el <a href="psalms-37.es.html#v37-35">Salmo 37:35</a>, ya en estas páginas, la '),
+    ("zamam", "Uno es el Salmo 37:12,",
+     'Uno es el <a href="psalms-37.es.html#v37-12">Salmo 37:12</a> (ya en estas páginas),'),
+    ("mezimmah", "(Salmo 37:12)",
+     '(<a href="psalms-37.es.html#v37-12">Salmo 37:12</a>, ya en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+DICTIONARY_ES["hagah"] = ("hagá",
+    'MURMURAR, musitar, gruñir &mdash;una palabra concreta de sonido, no la abstracción «meditar» a la que acuden casi todas las versiones. Es el ruido bajo que hace un león sobre su presa (Isaías 31:4), el gemido de una paloma, el musitar de alguien que da vueltas a algo. Aplicada a un rollo significa leer EN VOZ BAJA, a media voz, la manera antigua de estudiar dando voz a un texto una y otra vez en lugar de recorrerlo en silencio. <a href="joshua-1.es.html#v8">Josué 1:8</a> manda a Josué <em>murmurar</em> sobre el libro de la instrucción «día y noche», y el <a href="psalms-1.es.html#v2">Salmo 1:2</a> usa exactamente el mismo verbo del hombre dichoso: los dos grandes textos de «día y noche en la torá», uno abriendo los Profetas, otro abriendo los Escritos. La KJV lee ‘thou shalt meditate therein’; la NWT ‘you must read it in an undertone’, que conserva la voz. ⭐ <a href="psalms-37.es.html#v37-30">Salmo 37:30</a> (ya en estas páginas): «La boca del justo murmura sabiduría».')
+for _k, _b in [
+    ("anav", ' ⭐ <a href="psalms-37.es.html#v37-11">Salmo 37:11</a> (ya en estas páginas): «Pero los humildes poseerán la tierra», la línea que Jesús toma en griego como «los mansos» en Mateo 5:5.'),
+    ("raphah", ' ⭐ <a href="psalms-37.es.html#v37-8">Salmo 37:8</a> (ya en estas páginas): <em>heref</em>, «Suelta la ira, y deja el enojo».'),
+    ("acharit", ' ⭐ <a href="psalms-37.es.html#v37-37">Salmo 37:37&ndash;38</a> (ya en estas páginas): «hay un desenlace para el hombre de paz», y «el desenlace de los malvados será cortado»; el griego lee «un remanente».'),
+    ("tamim", ' ⭐ <a href="psalms-37.es.html#v37-18">Salmo 37:18</a> (ya en estas páginas): «Jehová conoce los días de los íntegros», y en 37:37, «Observa al íntegro».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["psalms37"] = dict(era="monarchy",
+    when="“Do not get heated over evildoers”: an alphabetic psalm of David in which the wicked wither like grass, the one who waits for Jehovah and the humble “will possess the land”, an old man has not seen the righteous forsaken, and salvation comes from Jehovah, their stronghold.",
+    clock="Undated: the heading says only “Of David”, and verse 25 speaks as an old man looking back on a long life.")
+
+CHAPTER_ART["psalms37"] = [dict(
+    file="blanchard-noli-aemulari-1746.jpg",
+    title="Noli aemulari in malignantibus", title_es="Noli aemulari in malignantibus",
+    artist="Esprit-Joseph-Antoine Blanchard (autograph score)",
+    year="1746",
+    location="Bibliothèque nationale de France, Paris", location_es="Biblioteca Nacional de Francia, París",
+    alt="A handwritten page of eighteenth-century music in brown ink. Across the top runs a heading in French script naming the psalm, its Latin opening and the composer; below it four systems of four staves each are filled with notes, with performance words such as &lsquo;fort&rsquo; and &lsquo;tres doux&rsquo; written between the staves, and a library stamp in the right margin.",
+    note="The first page of a choral setting of this psalm for the French royal chapel, in the composer&rsquo;s own hand. The heading reads &ldquo;Noli aemulari in malignantibus, psalm 36, for large choir with orchestra, for the King&rsquo;s chapel, July quarter 1746&rdquo;. <em>Noli aemulari in malignantibus</em>, &ldquo;Do not be jealous of the wicked&rdquo;, is the Latin of verse 1, the line rendered here &ldquo;Do not get heated over evildoers&rdquo;; the Latin Bible counts the psalm as 36.",
+    note_es="La primera página de una versión coral de este salmo para la capilla real francesa, de mano del compositor. El encabezado dice «Noli aemulari in malignantibus, salmo 36, para gran coro con orquesta, para la capilla del Rey, trimestre de julio de 1746». <em>Noli aemulari in malignantibus</em>, «No tengas envidia de los malignos», es el latín del versículo 1, la línea vertida aquí «No te acalores por los malhechores»; la Biblia latina cuenta el salmo como el 36.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Noli_Aemulari_in_Malingnantibus._pseaume_36._a_grand_choeur_avec_symphonie_-_pour_la_chapelle_du_Roy._Quartier_de_juillet_1746._ABlanchard_(manuscrit_autographe)_-_btv1b10023083z_(01_of_52).jpg",
+)]
