@@ -48455,3 +48455,80 @@ CHAPTER_ART["psalms37"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Noli_Aemulari_in_Malingnantibus._pseaume_36._a_grand_choeur_avec_symphonie_-_pour_la_chapelle_du_Roy._Quartier_de_juillet_1746._ABlanchard_(manuscrit_autographe)_-_btv1b10023083z_(01_of_52).jpg",
 )]
+
+# --- Psalm 103 ---
+DICTIONARY.extend([
+    ("adi", "adi", "עֲדִי", "edyekh",
+     'AN ORNAMENT &mdash; jewellery, finery, what is put on to be seen. At Horeb, after the golden calf, the people &lsquo;mourned, and no man put on his ornaments&rsquo;, and Jehovah said &lsquo;take off your ornaments from you&rsquo; (<a href="exodus-33.html#v33-4">Exodus 33:4&ndash;6</a>, already on these pages); Jeremiah asks whether a virgin can forget her ornaments (Jeremiah 2:32, not yet on these pages). ⚠ <a href="psalms-103.html#v103-5">Psalm 103:5</a> (now on these pages) is the hard case: <em>who satisfies your ADI with good</em> gives no clear sense with &lsquo;ornament&rsquo;, and the versions scatter: &lsquo;your lifetime&rsquo; (NWT 1984), &lsquo;thine old age&rsquo; (the 1917 Jewish Publication Society version), &lsquo;thy desire&rsquo; (ASV and Douay, after the Greek <em>epithymian</em>), &lsquo;thy mouth&rsquo; (KJV and Geneva). This translation reads &lsquo;your years&rsquo;, and its note says that this is a guess.',
+     ("Psalms", 103, 5)),
+])
+DICTIONARY_ES["adi"] = ("adí",
+    'UN ADORNO &mdash;joyas, galas, lo que uno se pone para ser visto. En Horeb, después del becerro de oro, el pueblo «se enlutó, y ninguno se puso sus adornos», y Jehová dijo «quítate tus adornos» (<a href="exodus-33.es.html#v33-4">Éxodo 33:4&ndash;6</a>, ya en estas páginas); Jeremías pregunta si una virgen puede olvidar sus adornos (Jeremías 2:32, todavía no en estas páginas). ⚠ El <a href="psalms-103.es.html#v103-5">Salmo 103:5</a> (ya en estas páginas) es el caso difícil: <em>el que sacia de bien tu ADÍ</em> no da un sentido claro con «adorno», y las versiones se dispersan: «tu vida entera» (TNM 1987), ‘thine old age’ (la versión de 1917 de la Jewish Publication Society), ‘thy desire’ (ASV y Douay, tras el griego <em>epithymían</em>), «tu boca» (RV 1909 y RV60). Esta traducción lee «tus años», y su nota dice que es una conjetura.')
+
+DICTIONARY_ES["gemul"] = ("guemul",
+    'UN TRATO que vuelve &mdash;una retribución, lo que uno ha hecho volviendo sobre su propia cabeza. De <em>gamal</em>, «tratar, retribuir» (también «destetar, madurar»: llevar algo a su término). ⚠ Es el gozne de Abdías: «como hiciste, se te hará; tu GUEMUL volverá sobre tu propia cabeza» (1:15) &mdash;el bumerán de la justicia exacta, medida por medida, el hecho que vuelve a quien lo hizo. Es el mismo principio que repite el Sermón del Monte («con la medida con que midan se les medirá», Mateo 7:2). La KJV lee ‘thy reward shall return’; la NIV ‘your deeds will return’.')
+DICTIONARY_ES["rachamim"] = ("rajamim",
+    'COMPASIÓN, misericordia &mdash;y la palabra está hecha sobre RÉJEM, el VIENTRE MATERNO. El término corriente del hebreo para la misericordia es amor de madre: el dolor físico de un padre o una madre por un hijo. Génesis 43 lo usa dos veces, y el emparejamiento es el milagro más callado del capítulo. Jacob ora «que El Shaddai les dé COMPASIÓN delante de aquel hombre» (43:14), y pide a Dios que ponga sentimiento de entrañas en un duro funcionario egipcio; dieciséis versículos después ese funcionario ve a su hermano menor, «su COMPASIÓN se encendió hacia su hermano» (<em>nijmerú rajamav</em>, 43:30; el verbo significa calentarse, encenderse), y tiene que salir de la sala a llorar. La oración se contesta en un cuerpo que Jacob no sabe que es el de su hijo. La KJV vierte 43:30 ‘his bowels did yearn upon his brother’: fiel de verdad a lo físico, y sencillamente envejecido hasta la comedia.')
+
+_DICT103_EN = {
+    "gemul": ' ⭐ <a href="psalms-103.html#v103-2">Psalm 103:2</a> (now on these pages) turns the word to good: &lsquo;forget none of his dealings&rsquo;; and at 103:10 the verb, &lsquo;nor dealt with us according to our iniquities&rsquo;.',
+    "rachamim": ' ⭐ <a href="psalms-103.html#v103-13">Psalm 103:13</a> (now on these pages) says the womb-word of a father: &lsquo;As a father has compassion on his children, Jehovah has compassion on those who fear him&rsquo;; at 103:4 the noun is half of a crown, &lsquo;steadfast love and compassion&rsquo;.',
+    "salach": ' ⭐ <a href="psalms-103.html#v103-3">Psalm 103:3</a> (now on these pages) opens its list of God&rsquo;s dealings with it: &lsquo;who forgives all your iniquity&rsquo;.',
+    "goel": ' ⭐ <a href="psalms-103.html#v103-4">Psalm 103:4</a> (now on these pages): &lsquo;who redeems your life from the pit&rsquo;.',
+    "nesher": ' ⭐ <a href="psalms-103.html#v103-5">Psalm 103:5</a> (now on these pages): &lsquo;your youth renews itself like the eagle&rsquo;.',
+    "ashaq": ' ⭐ <a href="psalms-103.html#v103-6">Psalm 103:6</a> (now on these pages): &lsquo;judgments for all the oppressed&rsquo;, the <em>ashuqim</em>.',
+    "alilah": ' ⭐ <a href="psalms-103.html#v103-7">Psalm 103:7</a> (now on these pages): &lsquo;his deeds to the children of Israel&rsquo;, where the Greek reads &lsquo;his wills&rsquo;.',
+    "yetzer": ' ⭐ <a href="psalms-103.html#v103-14">Psalm 103:14</a> (now on these pages) has the noun for the shape itself: &lsquo;he knows how we are formed&rsquo;.',
+    "afar": ' ⭐ <a href="psalms-103.html#v103-14">Psalm 103:14</a> (now on these pages) turns Genesis 3:19 into a reason for gentleness: &lsquo;he remembers that we are dust&rsquo;.',
+    "tzitz": ' ⭐ <a href="psalms-103.html#v103-15">Psalm 103:15</a> (now on these pages): &lsquo;like the flower of the field, so he blossoms&rsquo;, noun and verb of one root.',
+    "nefesh": ' ⭐ <a href="psalms-103.html#v103-1">Psalm 103:1</a> (now on these pages) addresses it: &lsquo;Bless Jehovah, O my soul&rsquo;, the self speaking to itself.',
+    "gibbor": ' ⭐ <a href="psalms-103.html#v103-20">Psalm 103:20</a> (now on these pages): the angels are <em>gibborei koach</em>, &lsquo;mighty in strength&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "polysplanchnos":
+        _a = "Psalm 103:8 (not yet on these pages)"
+        assert _d[4].count(_a) == 1, "polysplanchnos"
+        _d = _d[:4] + (_d[4].replace(_a, '<a href="psalms-103.html#v103-8">Psalm 103:8</a> (now on these pages)'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT103_EN:
+        _d = _d[:4] + (_d[4] + _DICT103_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 1, _n
+_s = DICTIONARY_ES["polysplanchnos"]
+_a = "Salmo 103:8 (todavía no en estas páginas)"
+assert _s[1].count(_a) == 1, "polysplanchnos es"
+DICTIONARY_ES["polysplanchnos"] = (_s[0], _s[1].replace(_a, '<a href="psalms-103.es.html#v103-8">Salmo 103:8</a> (ya en estas páginas)'))
+for _k, _b in [
+    ("gemul", ' ⭐ El <a href="psalms-103.es.html#v103-2">Salmo 103:2</a> (ya en estas páginas) vuelve la palabra hacia el bien: «no olvides ninguno de sus tratos»; y en 103:10 el verbo, «ni nos ha tratado conforme a nuestras iniquidades».'),
+    ("rachamim", ' ⭐ El <a href="psalms-103.es.html#v103-13">Salmo 103:13</a> (ya en estas páginas) dice la palabra del vientre de un padre: «Como un padre se compadece de sus hijos, se compadece Jehová de los que le temen»; en 103:4 el sustantivo es la mitad de una corona, «amor leal y compasión».'),
+    ("salach", ' ⭐ El <a href="psalms-103.es.html#v103-3">Salmo 103:3</a> (ya en estas páginas) abre con él su lista de los tratos de Dios: «el que perdona toda tu iniquidad».'),
+    ("goel", ' ⭐ <a href="psalms-103.es.html#v103-4">Salmo 103:4</a> (ya en estas páginas): «el que redime tu vida de la fosa».'),
+    ("nesher", ' ⭐ <a href="psalms-103.es.html#v103-5">Salmo 103:5</a> (ya en estas páginas): «tu juventud se renueva como el águila».'),
+    ("ashaq", ' ⭐ <a href="psalms-103.es.html#v103-6">Salmo 103:6</a> (ya en estas páginas): «juicios a favor de todos los oprimidos», los <em>ashuqim</em>.'),
+    ("alilah", ' ⭐ <a href="psalms-103.es.html#v103-7">Salmo 103:7</a> (ya en estas páginas): «sus hechos a los hijos de Israel», donde el griego lee «sus voluntades».'),
+    ("yetzer", ' ⭐ El <a href="psalms-103.es.html#v103-14">Salmo 103:14</a> (ya en estas páginas) tiene el sustantivo para la forma misma: «él sabe cómo estamos formados».'),
+    ("afar", ' ⭐ El <a href="psalms-103.es.html#v103-14">Salmo 103:14</a> (ya en estas páginas) vuelve Génesis 3:19 una razón para la ternura: «se acuerda de que somos polvo».'),
+    ("tzitz", ' ⭐ <a href="psalms-103.es.html#v103-15">Salmo 103:15</a> (ya en estas páginas): «como flor del campo, así florece», sustantivo y verbo de una sola raíz.'),
+    ("nefesh", ' ⭐ El <a href="psalms-103.es.html#v103-1">Salmo 103:1</a> (ya en estas páginas) le habla: «Bendice, alma mía, a Jehová», el ser que se habla a sí mismo.'),
+    ("gibbor", ' ⭐ <a href="psalms-103.es.html#v103-20">Salmo 103:20</a> (ya en estas páginas): los ángeles son <em>guiborei kóaj</em>, «poderosos en fuerza».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["psalms103"] = dict(era="monarchy",
+    when="“Bless Jehovah, O my soul”: a psalm of David that counts out God’s dealings — forgiveness, healing, redemption from the pit — quotes the name proclaimed to Moses, “merciful and gracious, slow to anger”, sets mortal days like grass against steadfast love from everlasting to everlasting, and calls angels, armies and all his works to bless him.",
+    clock="Undated: the heading says only “Of David”, and the psalm names no event.")
+
+CHAPTER_ART["psalms103"] = [dict(
+    file="utrecht-psalter-psalm-102.jpg",
+    title="Benedic anima mea Domino (the Utrecht Psalter)", title_es="Benedic anima mea Domino (el Salterio de Utrecht)",
+    artist="Unknown artists of the Utrecht Psalter",
+    year="9th century",
+    location="Utrecht University Library", location_es="Biblioteca de la Universidad de Utrecht",
+    alt="A pen drawing in brown ink across the top of a manuscript page. In the sky, winged angels stand to the left of a figure seated in an oval of light, and a crowd of armed figures holding banners stands to the right; a sun face and a moon face sit in the two upper corners. Below, among rocky hills, a man raises his hands toward a tree, a figure with a cross-staff stands above a gaping mouth full of small creatures, and a group of adults and children gather around a standing man. Under the drawing, red and black capitals begin the Latin text: CII IPSI DAVID, BENEDIC ANIMA MEA DOMINO.",
+    note="The drawing that opens this psalm in the Utrecht Psalter, a Latin psalter made in the ninth century, where every psalm is illustrated phrase by phrase from its own words. The heading reads &ldquo;102, of David himself: Bless the Lord, O my soul&rdquo;; the Latin Bible counts the psalm as 102. Angels and banner-bearing armies stand in the sky, as in verses 20&ndash;21; below, a gaping mouth stands for the pit of verse 4.",
+    note_es="El dibujo que abre este salmo en el Salterio de Utrecht, un salterio latino hecho en el siglo IX, donde cada salmo se ilustra frase por frase con sus propias palabras. El encabezado dice «102, del mismo David: Bendice, alma mía, al Señor»; la Biblia latina cuenta el salmo como el 102. Ángeles y ejércitos con estandartes están en el cielo, como en los versículos 20&ndash;21; abajo, unas fauces abiertas representan la fosa del versículo 4.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Utrecht124_(cropped).jpg",
+)]
