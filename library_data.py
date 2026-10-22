@@ -47799,3 +47799,158 @@ CHAPTER_ART["1sam13"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:The_Sacrifice_of_Saul,_Brussels,_c._1550-1575,_wool_and_silk_-_Packwood_House_-_Warwickshire,_England_-_DSC08874.jpg",
 )]
+
+# --- 1 Samuel 14 ---
+DICTIONARY.extend([
+    ("devash", "devash", "דְּבַשׁ", "devash",
+     'HONEY &mdash; the wild honey of rocks and forests as well as, very likely, the thick syrup of dates and grapes; the &ldquo;honey&rdquo; of &ldquo;a land flowing with milk and honey&rdquo; (Exodus 3:8). It is barred from offerings made by fire (Leviticus 2:11). Samson scrapes it from the lion&rsquo;s carcass and eats it on the road (<a href="judges-14.html#v14-9">Judges 14:9</a>, now on these pages). ⭐ <a href="1-samuel-14.html#v14-25">1 Samuel 14:25&ndash;29</a> (now on these pages): Saul&rsquo;s army comes into a forest, <em>ya&rsquo;ar</em>, where honey flows on the ground, and fears to touch it because of the king&rsquo;s oath; Jonathan dips his staff in the honeycomb, <em>ya&rsquo;rat ha-devash</em>, &ldquo;and his eyes brightened&rdquo;, and the lot later falls on him for &ldquo;a little honey&rdquo;.',
+     ("1 Samuel", 14, 25)),
+])
+DICTIONARY_ES["devash"] = ("devash",
+    'MIEL &mdash; la miel silvestre de peñas y bosques y también, muy probablemente, el jarabe espeso de dátiles y uvas; la «miel» de «una tierra que mana leche y miel» (Éxodo 3:8). Queda excluida de las ofrendas encendidas (Levítico 2:11). Sansón la saca del cadáver del león y se la come por el camino (<a href="judges-14.es.html#v14-9">Jueces 14:9</a>, ya en estas páginas). ⭐ <a href="1-samuel-14.es.html#v14-25">1 Samuel 14:25&ndash;29</a> (ya en estas páginas): el ejército de Saúl entra en un bosque, <em>yáar</em>, donde la miel corre por el suelo, y teme tocarla por el juramento del rey; Jonatán moja su vara en el panal, <em>yaarat ha-devash</em>, «y sus ojos se iluminaron», y la suerte cae después sobre él por «un poco de miel».')
+DICTIONARY_ES["urim-thummim"] = ("Urim y Tumim",
+    'Dos objetos puestos dentro del pectoral del sumo sacerdote (<a href="exodus-28.es.html#v28-30">Éxodo 28:30</a>, ya en estas páginas) y nunca descritos: ni forma, ni materia, ni instrucciones de uso, en un capítulo por lo demás obsesionado con la especificación exacta. Los nombres significan probablemente algo como «luces» y «perfecciones» o «verdad», aunque incluso esa etimología es de veras incierta; cómo funcionaban, si se echaban como suertes o se leían por alguna otra señal, es una pregunta que las antiguas fuentes rabínicas ya confesaban no poder responder con seguridad. Las versiones transliteran las dos palabras en lugar de traducirlas. ⭐ En <a href="1-samuel-14.es.html#v14-41">1 Samuel 14:41</a> (ya en estas páginas) el hebreo dice <em>havá tamim</em>, «da lo íntegro», y el griego tiene una oración mucho más larga con «da los claros» y «da la santidad», sus nombres para el Urim y el Tumim; la TNM 1987 imprime «da Tumim».')
+DICTIONARY_ES["dod"] = ("dod / dodim",
+    'AMADO &mdash; y en plural, CARICIAS, el amor. El singular <em>dod</em> es como la mujer llama al hombre a lo largo de todo el Cantar, veintiséis veces en ocho capítulos; el plural <em>dodim</em> no es afecto en abstracto sino caricias, los actos del amor (1:2, 4; 4:10; 7:13). ⚠ Las mismas tres consonantes significan también TÍO en la ley y las genealogías ordinarias (Levítico 25:49), y el nombre DAVID está formado sobre la raíz. Ezequiel 16:8 y 23:17 usan <em>dodim</em> del amor sexual en una imagen profética deliberadamente chocante, buena medida de lo fuerte que es la palabra. ⭐ El «tío de Saúl» que le pregunta adónde fue (<a href="1-samuel-10.es.html#v10-14">1 Samuel 10:14</a>) y «Abner hijo de Ner, tío de Saúl» (<a href="1-samuel-14.es.html#v14-50">14:50</a>, los dos ya en estas páginas) llevan esta palabra; en 14:50 el hebreo no dice si el tío es Abner o Ner.')
+
+_DICT14_EN = {
+    "urim-thummim": ' ⭐ At <a href="1-samuel-14.html#v14-41">1 Samuel 14:41</a> (now on these pages) the Hebrew has <em>havah tamim</em>, &ldquo;give what is whole&rdquo;, and the Greek a much longer prayer with &ldquo;give clear ones&rdquo; and &ldquo;give holiness&rdquo;, its names for Urim and Thummim; the NIV follows the Greek, and the NWT 1984 prints &ldquo;give Thummim&rdquo;.',
+    "dod": ' ⭐ &ldquo;Saul&rsquo;s uncle&rdquo; who asks him where he went (<a href="1-samuel-10.html#v10-14">1 Samuel 10:14</a>) and &ldquo;Abner son of Ner, Saul&rsquo;s uncle&rdquo; (<a href="1-samuel-14.html#v14-50">14:50</a>, both now on these pages) carry this word; at 14:50 the Hebrew does not say whether the uncle is Abner or Ner.',
+    "padah": ' ⭐ <a href="1-samuel-14.html#v14-45">1 Samuel 14:45</a> (now on these pages): after the lot falls on Jonathan and Saul swears that he will die, &ldquo;the people ransomed Jonathan, and he did not die&rdquo;; the Greek reads &ldquo;the people prayed for Jonathan&rdquo;.',
+    "ephod": ' ⭐ <a href="1-samuel-14.html#v14-3">1 Samuel 14:3</a> (now on these pages): Ahijah, Ichabod&rsquo;s nephew, is &ldquo;carrying an ephod&rdquo; with Saul at Gibeah; at 14:18, where the Hebrew has Saul call for &ldquo;the ark of God&rdquo;, the Greek reads &ldquo;the ephod&rdquo;.',
+    "goral": ' ⚠ At <a href="1-samuel-14.html#v14-42">1 Samuel 14:42</a> (now on these pages) the noun itself is not written: Saul says only &ldquo;Cast&rdquo;, and the lot is supplied by the sense.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] == "lakad":
+        _a = "and Jonathan at 14:41&ndash;42 (not yet on these pages), where the lot is explicit."
+        assert _d[4].count(_a) == 1, "lakad"
+        _d = _d[:4] + (_d[4].replace(_a, 'and Jonathan at <a href="1-samuel-14.html#v14-41">14:41&ndash;42</a> (now on these pages), where again the Hebrew names no lot: Saul says only &ldquo;Cast&rdquo;, and the Greek fills the gap with Urim and Thummim. At 14:47 the same verb has Saul &ldquo;take&rdquo; the kingship itself.'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "akhar":
+        _a = "Jonathan of Saul, <em>my father has troubled the land</em> (1 Samuel 14:29)"
+        assert _d[4].count(_a) == 1, "akhar"
+        _d = _d[:4] + (_d[4].replace(_a, 'Jonathan of Saul, <em>my father has brought trouble on the land</em> (<a href="1-samuel-14.html#v14-29">1 Samuel 14:29</a>, now on these pages)'),) + _d[5:]
+        _n += 1
+    elif _d[0] == "damam":
+        _a = "(1 Samuel 14:9) and <em>wait for Jehovah</em> (Psalm 37:7), neither yet on these pages"
+        assert _d[4].count(_a) == 1, "damam"
+        _d = _d[:4] + (_d[4].replace(_a, '(<a href="1-samuel-14.html#v14-9">1 Samuel 14:9</a>, now on these pages) and <em>wait for Jehovah</em> (Psalm 37:7, not yet on these pages)'),) + _d[5:]
+        _n += 1
+    if _d[0] in _DICT14_EN:
+        _d = _d[:4] + (_d[4] + _DICT14_EN[_d[0]],) + _d[5:]
+    DICTIONARY[_i] = _d
+assert _n == 3, _n
+for _k, _a, _b in [
+    ("lakad", "y a Jonatán en 14:41&ndash;42 (todavía no en estas páginas), donde la suerte es explícita.",
+     'y a Jonatán en <a href="1-samuel-14.es.html#v14-41">14:41&ndash;42</a> (ya en estas páginas), donde otra vez el hebreo no nombra la suerte: Saúl dice solo «Echen», y el griego llena el hueco con el Urim y el Tumim. En 14:47 el mismo verbo hace que Saúl «tome» el reino mismo.'),
+    ("akhar", "Jonatán de Saúl, <em>mi padre ha turbado la tierra</em> (1 Samuel 14:29)",
+     'Jonatán de Saúl, <em>mi padre ha traído turbación a la tierra</em> (<a href="1-samuel-14.es.html#v14-29">1 Samuel 14:29</a>, ya en estas páginas)'),
+    ("damam", "(1 Samuel 14:9) y <em>espera en Jehová</em> (Salmo 37:7), ninguno todavía en estas páginas",
+     '(<a href="1-samuel-14.es.html#v14-9">1 Samuel 14:9</a>, ya en estas páginas) y <em>espera en Jehová</em> (Salmo 37:7, todavía no en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("padah", ' ⭐ <a href="1-samuel-14.es.html#v14-45">1 Samuel 14:45</a> (ya en estas páginas): después de que la suerte cae sobre Jonatán y Saúl jura que morirá, «el pueblo rescató a Jonatán, y no murió»; el griego lee «el pueblo oró por Jonatán».'),
+    ("ephod", ' ⭐ <a href="1-samuel-14.es.html#v14-3">1 Samuel 14:3</a> (ya en estas páginas): Ahías, sobrino de Icabod, «llevaba un efod» con Saúl en Guibeá; en 14:18, donde el hebreo hace que Saúl pida «el arca de Dios», el griego lee «el efod».'),
+    ("goral", ' ⚠ En <a href="1-samuel-14.es.html#v14-42">1 Samuel 14:42</a> (ya en estas páginas) el sustantivo mismo no está escrito: Saúl dice solo «Echen», y la suerte la suple el sentido.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="abner", name="Abner son of Ner", kind="person", aliases=["Abner"],
+    refs=[("1 Samuel", 14, 50), ("1 Samuel", 14, 51)], videos=[],
+    desc='The commander of Saul&rsquo;s army, &ldquo;Abner son of Ner, Saul&rsquo;s uncle&rdquo; (<a href="1-samuel-14.html#v14-50">1 Samuel 14:50</a>, now on these pages). The Hebrew does not say whether the uncle is Abner or his father Ner; the next verse makes Ner and Kish both sons of Abiel, so that Abner is Saul&rsquo;s cousin, and Josephus says so (<em>Antiquities</em> 6.130), while 1 Chronicles 8:33 has &ldquo;Ner begot Kish&rdquo;. Josephus also names Abner as the unnamed uncle who questioned Saul after his anointing (<a href="1-samuel-10.html#v10-14">1 Samuel 10:14</a>; <em>Antiquities</em> 6.58). He brings David to Saul after Goliath, makes Ish-bosheth king after Saul&rsquo;s death, kills Asahel, goes over to David, and is murdered by Joab at Hebron, where David weeps at his grave (1 Samuel 17:55&ndash;57; 2 Samuel 2&ndash;3), none of these yet on these pages.'))
+ENCYCLOPEDIA_ES["abner"] = ("Abner hijo de Ner",
+    'El jefe del ejército de Saúl, «Abner hijo de Ner, tío de Saúl» (<a href="1-samuel-14.es.html#v14-50">1 Samuel 14:50</a>, ya en estas páginas). El hebreo no dice si el tío es Abner o su padre Ner; el versículo siguiente hace a Ner y a Cis hijos de Abiel los dos, de modo que Abner es primo de Saúl, y así lo dice Josefo (<em>Antigüedades</em> 6.130), mientras que 1 Crónicas 8:33 tiene «Ner engendró a Cis». Josefo también da a Abner como el tío sin nombre que interrogó a Saúl después de su unción (<a href="1-samuel-10.es.html#v10-14">1 Samuel 10:14</a>; <em>Antigüedades</em> 6.58). Lleva a David ante Saúl después de Goliat, hace rey a Is-boset tras la muerte de Saúl, mata a Asael, se pasa a David, y es asesinado por Joab en Hebrón, donde David llora junto a su sepulcro (1 Samuel 17:55&ndash;57; 2 Samuel 2&ndash;3), nada de ello todavía en estas páginas.')
+
+ENCYCLOPEDIA.append(dict(slug="michal", name="Michal", kind="person", aliases=["Michal"],
+    refs=[("1 Samuel", 14, 49)], videos=[],
+    desc='Saul&rsquo;s younger daughter (<a href="1-samuel-14.html#v14-49">1 Samuel 14:49</a>, now on these pages). She loves David and is given to him as wife for a hundred Philistine foreskins, lets him down from a window when Saul&rsquo;s men come for him, is given to another man, is taken back by David, and despises him for dancing before the ark, and the book says she had no child to the day of her death (1 Samuel 18&ndash;19, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23), none of these yet on these pages.'))
+ENCYCLOPEDIA_ES["michal"] = ("Mical",
+    'La hija menor de Saúl (<a href="1-samuel-14.es.html#v14-49">1 Samuel 14:49</a>, ya en estas páginas). Ama a David y le es dada por mujer a cambio de cien prepucios filisteos, lo descuelga por una ventana cuando vienen por él los hombres de Saúl, es dada a otro hombre, David la recupera, y lo desprecia por danzar delante del arca, y el libro dice que no tuvo hijos hasta el día de su muerte (1 Samuel 18&ndash;19, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23), nada de ello todavía en estas páginas.')
+
+ENCYCLOPEDIA.append(dict(slug="merab", name="Merab", kind="person", aliases=["Merab"],
+    refs=[("1 Samuel", 14, 49)], videos=[],
+    desc='Saul&rsquo;s firstborn daughter (<a href="1-samuel-14.html#v14-49">1 Samuel 14:49</a>, now on these pages). Saul promises her to David and then gives her to Adriel the Meholathite (1 Samuel 18:17&ndash;19, not yet on these pages).'))
+ENCYCLOPEDIA_ES["merab"] = ("Merab",
+    'La hija mayor de Saúl (<a href="1-samuel-14.es.html#v14-49">1 Samuel 14:49</a>, ya en estas páginas). Saúl se la promete a David y luego la da a Adriel el meholatita (1 Samuel 18:17&ndash;19, todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="ahijah-priest", name="Ahijah son of Ahitub", kind="person", aliases=["Ahijah"],
+    refs=[("1 Samuel", 14, 3), ("1 Samuel", 14, 18)], videos=[],
+    desc='A priest of the house of Eli in Saul&rsquo;s day: &ldquo;Ahijah son of Ahitub, the brother of Ichabod, son of Phinehas son of Eli, the priest of Jehovah at Shiloh, carrying an ephod&rdquo; (<a href="1-samuel-14.html#v14-3">1 Samuel 14:3</a>, now on these pages). Saul tells him to bring &ldquo;the ark of God&rdquo;, where the Greek reads &ldquo;the ephod&rdquo;, then cuts the inquiry short with &ldquo;Withdraw your hand&rdquo; (14:18&ndash;19). Josephus calls him Echias and makes him high priest (<em>Antiquities</em> 6.107). Whether he is the same man as Ahimelech son of Ahitub, the priest of Nob (1 Samuel 22:9, not yet on these pages), is argued. Not the prophet Ahijah of Shiloh in Kings.'))
+ENCYCLOPEDIA_ES["ahijah-priest"] = ("Ahías hijo de Ahitob",
+    'Un sacerdote de la casa de Elí en los días de Saúl: «Ahías hijo de Ahitob, hermano de Icabod, hijo de Finees hijo de Elí, sacerdote de Jehová en Silo, llevaba un efod» (<a href="1-samuel-14.es.html#v14-3">1 Samuel 14:3</a>, ya en estas páginas). Saúl le manda traer «el arca de Dios», donde el griego lee «el efod», y luego corta la consulta con «Retira tu mano» (14:18&ndash;19). Josefo lo llama Equías y lo hace sumo sacerdote (<em>Antigüedades</em> 6.107). Si es el mismo hombre que Ahimelec hijo de Ahitob, el sacerdote de Nob (1 Samuel 22:9, todavía no en estas páginas), se discute. No es el profeta Ahías de Silo de Reyes.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "jonathan":
+        _e["desc"] += ' ⭐ <a href="1-samuel-14.html#v14-1">1 Samuel 14</a> (now on these pages): with only his armour-bearer he climbs between the crags Bozez and Seneh to the Philistine outpost at Michmash, saying &ldquo;nothing holds Jehovah back from saving by many or by few&rdquo;, and the camp breaks in panic. Not having heard his father&rsquo;s oath, he tastes honey; the lot falls on him, he answers &ldquo;Here I am; I will die&rdquo;, and the people ransom him.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 6), ("1 Samuel", 14, 43), ("1 Samuel", 14, 45)]
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' At Michmash he sits under a pomegranate with six hundred men while Jonathan attacks; he calls for the ark (the Greek: the ephod), cuts the inquiry short, binds the army with an oath not to eat until evening, and when God does not answer, swears that the guilty will die &ldquo;even if it is in Jonathan my son&rdquo;; the lot takes Jonathan, and the people ransom him. He builds his first altar, fights Moab, Ammon, Edom, Zobah, the Philistines and Amalek, and gathers every valiant man to himself (<a href="1-samuel-14.html#v14-24">1 Samuel 14</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 24), ("1 Samuel", 14, 44), ("1 Samuel", 14, 47)]
+    elif _e["slug"] == "michmash":
+        _a = "the pass Jonathan will climb (1 Samuel 14, not yet on these pages)."
+        assert _e["desc"].count(_a) == 1, "michmash"
+        _e["desc"] = _e["desc"].replace(_a, 'the pass Jonathan climbs between the crags Bozez and Seneh (<a href="1-samuel-14.html#v14-4">1 Samuel 14:4&ndash;5</a>, now on these pages); the rout runs &ldquo;from Michmash to Aijalon&rdquo; (14:31).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 5), ("1 Samuel", 14, 31)]
+    elif _e["slug"] == "aijalon":
+        _a = "and Saul&rsquo;s army pursues the Philistines from Michmash to Aijalon (1 Samuel 14:31; neither yet on these pages)."
+        assert _e["desc"].count(_a) == 1, "aijalon"
+        _e["desc"] = _e["desc"].replace(_a, 'and Saul&rsquo;s army pursues the Philistines from Michmash to Aijalon (<a href="1-samuel-14.html#v14-31">1 Samuel 14:31</a>, now on these pages).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 31)]
+    elif _e["slug"] == "ichabod":
+        _a = "whose son Ahijah wears the ephod in Saul&rsquo;s day (1 Samuel 14:3, not yet on these pages)."
+        assert _e["desc"].count(_a) == 1, "ichabod"
+        _e["desc"] = _e["desc"].replace(_a, 'whose son <a href="encyclopedia.html#ahijah-priest">Ahijah</a> carries the ephod in Saul&rsquo;s day (<a href="1-samuel-14.html#v14-3">1 Samuel 14:3</a>, now on these pages).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 3)]
+    elif _e["slug"] == "beth-aven":
+        _a = "14:23, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, "beth-aven"
+        _e["desc"] = _e["desc"].replace(_a, '<a href="1-samuel-14.html#v14-23">14:23</a>, also now on these pages)')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 23)]
+    elif _e["slug"] == "geba":
+        _e["desc"] += ' Of the two crags at the pass, Seneh stands on the south &ldquo;in front of Geba&rdquo; (<a href="1-samuel-14.html#v14-5">1 Samuel 14:5</a>, now on these pages).'
+    elif _e["slug"] == "kish":
+        _e["desc"] += ' ⭐ <a href="1-samuel-14.html#v14-51">1 Samuel 14:51</a> (now on these pages): &ldquo;Kish was the father of Saul, and Ner the father of Abner was the son of Abiel&rdquo;; with 9:1 that makes Kish and Ner brothers, as Josephus says, though 1 Chronicles 8:33 has &ldquo;Ner begot Kish&rdquo;.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 51)]
+    elif _e["slug"] == "amalek":
+        _e["desc"] += ' Saul &ldquo;did valiantly, and struck Amalek&rdquo; (<a href="1-samuel-14.html#v14-48">1 Samuel 14:48</a>, now on these pages), the war of the next chapter.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 14, 48)]
+for _k, _a, _b in [
+    ("michmash", "el paso que Jonatán escalará (1 Samuel 14, todavía no en estas páginas).", 'el paso que Jonatán escala entre las peñas Bosés y Sené (<a href="1-samuel-14.es.html#v14-4">1 Samuel 14:4&ndash;5</a>, ya en estas páginas); la persecución va «desde Micmás hasta Ajalón» (14:31).'),
+    ("aijalon", "y el ejército de Saúl persigue a los filisteos desde Micmás hasta Ajalón (1 Samuel 14:31; ninguno todavía en estas páginas).", 'y el ejército de Saúl persigue a los filisteos desde Micmás hasta Ajalón (<a href="1-samuel-14.es.html#v14-31">1 Samuel 14:31</a>, ya en estas páginas).'),
+    ("ichabod", "cuyo hijo Ahías lleva el efod en los días de Saúl (1 Samuel 14:3, todavía no en estas páginas).", 'cuyo hijo <a href="enciclopedia.html#ahijah-priest">Ahías</a> lleva el efod en los días de Saúl (<a href="1-samuel-14.es.html#v14-3">1 Samuel 14:3</a>, ya en estas páginas).'),
+    ("beth-aven", "14:23, todavía no en estas páginas)", '<a href="1-samuel-14.es.html#v14-23">14:23</a>, también ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("jonathan", ' ⭐ <a href="1-samuel-14.es.html#v14-1">1 Samuel 14</a> (ya en estas páginas): solo con su escudero sube entre las peñas Bosés y Sené a la avanzada filistea de Micmás, diciendo «nada impide a Jehová salvar con muchos o con pocos», y el campamento se deshace en pánico. Sin haber oído el juramento de su padre, prueba la miel; la suerte cae sobre él, responde «Aquí estoy; moriré», y el pueblo lo rescata.'),
+    ("saul-king", ' En Micmás está sentado bajo un granado con seiscientos hombres mientras Jonatán ataca; pide el arca (el griego: el efod), corta la consulta, ata al ejército con un juramento de no comer hasta la tarde, y cuando Dios no responde, jura que el culpable morirá «aunque sea en Jonatán mi hijo»; la suerte toma a Jonatán, y el pueblo lo rescata. Edifica su primer altar, pelea contra Moab, Amón, Edom, Soba, los filisteos y Amalec, y junta consigo a todo hombre valiente (<a href="1-samuel-14.es.html#v14-24">1 Samuel 14</a>, ya en estas páginas).'),
+    ("geba", ' De las dos peñas del paso, Sené está al sur, «frente a Gueba» (<a href="1-samuel-14.es.html#v14-5">1 Samuel 14:5</a>, ya en estas páginas).'),
+    ("kish", ' ⭐ <a href="1-samuel-14.es.html#v14-51">1 Samuel 14:51</a> (ya en estas páginas): «Cis era el padre de Saúl, y Ner, el padre de Abner, era hijo de Abiel»; con 9:1 eso hace hermanos a Cis y a Ner, como dice Josefo, aunque 1 Crónicas 8:33 tiene «Ner engendró a Cis».'),
+    ("amalek", ' Saúl «hizo proezas, e hirió a Amalec» (<a href="1-samuel-14.es.html#v14-48">1 Samuel 14:48</a>, ya en estas páginas), la guerra del capítulo siguiente.'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam14"] = dict(era="monarchy",
+    when="Jonathan and his armour-bearer climb between the crags Bozez and Seneh to the Philistine outpost at Michmash; the camp panics and Jehovah saves Israel that day. Saul binds the army with an oath not to eat; Jonathan, unaware, tastes honey; the people eat meat with the blood and Saul builds his first altar. When God does not answer, the lot falls on Jonathan, and the people ransom him. Saul's wars and family are listed, with Abner son of Ner commanding his army.",
+    clock="The day after the stand-off at Michmash, through the night that follows (1 Samuel 14:1, 36).")
+
+CHAPTER_ART["1sam14"] = [dict(
+    file="morgan-bible-jonathan-michmash.jpg",
+    title="Jonathan Climbs to the Philistine Outpost", title_es="Jonatán sube a la avanzada filistea",
+    artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+    year="c. 1250",
+    location="Morgan Library & Museum, New York (MS M.638, fol. 24r)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 24r)",
+    alt="Medieval manuscript page with two painted scenes. Top left: a crowned king in mail sits under a flowering tree while armed men stand before him; top right: two soldiers climb a steep rocky slope on hands and feet, and at the summit a fight breaks out among the enemy. Bottom: a crowded battle of knights on horseback, a hooded figure carrying a small shrine among them, and a dead man in mail on the ground. Latin, Persian and Hebrew-script captions fill the margins.",
+    note="The upper scenes show Saul sitting under the tree with his men (verse 2; the Latin caption above names the pomegranate, <em>malo granato</em>) and Jonathan and his armour-bearer climbing the rocks to the outpost (verses 13&ndash;14). The battle below has a shrine carried into the fighting, the painter following the Hebrew&rsquo;s &ldquo;ark of God&rdquo; in verse 18, and the Latin caption beneath goes on to the honey and the curse.",
+    note_es="Las escenas de arriba muestran a Saúl sentado bajo el árbol con sus hombres (versículo 2; el rótulo latino de arriba nombra el granado, <em>malo granato</em>) y a Jonatán y su escudero trepando por las peñas hasta la avanzada (versículos 13&ndash;14). En la batalla de abajo se lleva un relicario en medio de la lucha, porque el pintor sigue el «arca de Dios» del hebreo en el versículo 18, y el rótulo latino de debajo pasa a la miel y a la maldición.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._24r.jpg",
+)]
