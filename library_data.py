@@ -49071,3 +49071,96 @@ CHAPTER_ART["1sam17"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._28v.jpg",
 )]
+
+# --- Proverbs 18 ---
+DICTIONARY.extend([
+    ("galla", "galla / hitgalla", "גָּלַע", "yitgalla",
+     """TO FLARE UP, to break out &mdash; a verb Proverbs keeps for a quarrel bursting into the open. <span data-heb="יתגלע|התגלע">It stands in three verses of the Hebrew Bible, all in Proverbs</span>: <a href="proverbs-18.html#v18-1">Proverbs 18:1</a> (now on these pages), where the man who separates himself &ldquo;flares up&rdquo; against all practical wisdom, and two sayings about quarrels (Proverbs 17:14 and 20:3, not yet on these pages): a dispute is to be dropped before it flares up, and every fool flares up. The NWT 1984 has &lsquo;break forth&rsquo;, the ASV &lsquo;rageth&rsquo;; the KJV reads 18:1 the other way, as a man who &lsquo;intermeddleth with all wisdom&rsquo;.""",
+     ("Proverbs", 18, 1)),
+    ("nirgan", "nirgan", "נִרְגָּן", "nirgan",
+     """A WHISPERER, a slanderer &mdash; from <em>ragan</em>, to mutter or grumble, the verb of &lsquo;you grumbled in your tents&rsquo; (<a href="deuteronomy-1.html#v27">Deuteronomy 1:27</a>, now on these pages). <span data-heb="נרגן">The noun stands in four verses of the Hebrew Bible, all in Proverbs.</span> ⭐ <a href="proverbs-18.html#v18-8">Proverbs 18:8</a> (now on these pages): &lsquo;The words of a whisperer are like morsels gulped down&rsquo;. The same verse returns word for word later in the book, a whisperer separates close friends, and where there is no whisperer contention goes quiet (Proverbs 26:22, 16:28 and 26:20, not yet on these pages).""",
+     ("Proverbs", 18, 8)),
+    ("mitlahamim", "mitlahamim", "מִתְלַהֲמִים", "mitlahamim",
+     """MORSELS GULPED DOWN &mdash; or so the context suggests, since the sense of the word is uncertain. <span data-heb="מתלהמים">It stands in two verses of the Hebrew Bible</span>, <a href="proverbs-18.html#v18-8">Proverbs 18:8</a> (now on these pages) and its exact double (Proverbs 26:22, not yet on these pages), so there is no third passage to test it on. Because the words it describes &lsquo;go down into the inner rooms of the belly&rsquo;, most versions make them food: the ASV has &lsquo;dainty morsels&rsquo;, the NWT 1984 &lsquo;things to be swallowed greedily&rsquo;. The KJV has a different picture, &lsquo;wounds&rsquo;.""",
+     ("Proverbs", 18, 8)),
+    ("nisgav", "nisgav", "נִשְׂגָּב", "nisgav",
+     """SET ON HIGH &mdash; high out of reach, and so safe: a height no enemy can climb. ⭐ <a href="proverbs-18.html#v18-10">Proverbs 18:10&ndash;11</a> (now on these pages) uses it twice in a row: the righteous runs into the strong tower of Jehovah&rsquo;s name &lsquo;and is set on high&rsquo;, while the rich man&rsquo;s wealth is &lsquo;like a wall set on high &mdash; in his imagination&rsquo;. The psalmist uses it of knowledge he cannot climb to, &lsquo;it is high &mdash; I cannot reach it&rsquo; (<a href="psalms-139.html#v139-6">Psalm 139:6</a>, now on these pages). Elsewhere a psalm sets it beside the name again, &lsquo;his name alone is set on high&rsquo;, and Isaiah pictures a wall set on high whose breaking comes in an instant (Psalm 148:13 and Isaiah 30:13, not yet on these pages).""",
+     ("Proverbs", 18, 10)),
+    ("ratson", "ratson", "רָצוֹן", "ratson",
+     """GOODWILL, acceptance, pleasure &mdash; the favorable disposition of the one who receives a person; kept distinct in this translation from <em>chen</em>, favor. ⭐ <a href="proverbs-18.html#v18-22">Proverbs 18:22</a> (now on these pages): &lsquo;He who has found a wife has found good, and draws out goodwill from Jehovah&rsquo;. <span data-heb="ויפק רצון">That closing line stands in two verses of the Hebrew Bible</span>; the other is Wisdom&rsquo;s own promise, &lsquo;whoever finds me finds life, and draws out goodwill from Jehovah&rsquo; (Proverbs 8:35, not yet on these pages). The ASV has &lsquo;favor&rsquo;, the NWT 1984 &lsquo;goodwill&rsquo;.""",
+     ("Proverbs", 18, 22)),
+])
+DICTIONARY_ES["galla"] = ("galá / hitgalá",
+    """ENCENDERSE, estallar &mdash;un verbo que Proverbios reserva para la riña que sale a la luz. <span data-heb="יתגלע|התגלע">Está en tres versículos de la Biblia hebrea, todos de Proverbios</span>: <a href="proverbs-18.es.html#v18-1">Proverbios 18:1</a> (ya en estas páginas), donde el que se aparta «se enciende» contra toda sabiduría práctica, y dos dichos sobre riñas (Proverbios 17:14 y 20:3, todavía no en estas páginas): hay que dejar la disputa antes de que se encienda, y todo necio se enciende. La TNM 1987 tiene «estallará»; la RV60 lee 18:1 de otro modo, «se entremete en todo negocio».""")
+DICTIONARY_ES["nirgan"] = ("nirgán",
+    """UN MURMURADOR, un calumniador &mdash;de <em>ragán</em>, murmurar, el verbo de «murmuraron en sus tiendas» (<a href="deuteronomy-1.es.html#v27">Deuteronomio 1:27</a>, ya en estas páginas). <span data-heb="נרגן">El sustantivo está en cuatro versículos de la Biblia hebrea, todos de Proverbios.</span> ⭐ <a href="proverbs-18.es.html#v18-8">Proverbios 18:8</a> (ya en estas páginas): «Las palabras del murmurador son como bocados que se tragan con avidez». El mismo versículo vuelve letra por letra más adelante en el libro, un murmurador separa a los amigos íntimos, y donde no hay murmurador la contienda se calla (Proverbios 26:22, 16:28 y 26:20, todavía no en estas páginas).""")
+DICTIONARY_ES["mitlahamim"] = ("mitlahamim",
+    """BOCADOS QUE SE TRAGAN CON AVIDEZ &mdash;o eso sugiere el contexto, porque el sentido de la palabra es incierto. <span data-heb="מתלהמים">Está en dos versículos de la Biblia hebrea</span>, <a href="proverbs-18.es.html#v18-8">Proverbios 18:8</a> (ya en estas páginas) y su doble exacto (Proverbios 26:22, todavía no en estas páginas), así que no hay un tercer pasaje con que probarla. Como las palabras que describe «bajan a las cámaras del vientre», la mayoría las hace comida: la RV60 tiene «bocados suaves», la TNM 1987 «cosas que han de tragarse vorazmente». La RV 1909 va por otro lado: «parecen blandas».""")
+DICTIONARY_ES["nisgav"] = ("nisgav",
+    """PUESTO EN ALTO &mdash;alto fuera de alcance, y por eso a salvo: una altura que ningún enemigo puede escalar. ⭐ <a href="proverbs-18.es.html#v18-10">Proverbios 18:10&ndash;11</a> (ya en estas páginas) lo usa dos veces seguidas: el justo corre a la torre fuerte del nombre de Jehová «y es puesto en alto», mientras los bienes del rico son «como muro puesto en alto, en su imaginación». El salmista lo usa del conocimiento al que no puede subir, «es alto — no puedo alcanzarlo» (<a href="psalms-139.es.html#v139-6">Salmo 139:6</a>, ya en estas páginas). En otro lugar un salmo lo pone otra vez junto al nombre, «solo su nombre es puesto en alto», e Isaías describe un muro puesto en alto cuya rotura llega en un instante (Salmo 148:13 e Isaías 30:13, todavía no en estas páginas).""")
+DICTIONARY_ES["ratson"] = ("ratsón",
+    """BENEVOLENCIA, aceptación, agrado &mdash;la disposición favorable de quien recibe a alguien; esta traducción la mantiene aparte de <em>jen</em>, el favor. ⭐ <a href="proverbs-18.es.html#v18-22">Proverbios 18:22</a> (ya en estas páginas): «El que ha hallado esposa ha hallado el bien, y obtiene benevolencia de Jehová». <span data-heb="ויפק רצון">Esa línea final está en dos versículos de la Biblia hebrea</span>; el otro es la promesa de la propia Sabiduría, «el que me halla, halla la vida, y obtiene benevolencia de Jehová» (Proverbios 8:35, todavía no en estas páginas). La RV60 tiene «la benevolencia de Jehová», la TNM 1987 «buena voluntad».""")
+DICTIONARY_ES["armon"] = ("armón",
+    """UNA CIUDADELA &mdash;el recinto fortificado o palacio-fortaleza dentro de una ciudad amurallada, la residencia de quien la gobierna. Se traduce de ordinario «palacio» o «fortaleza»; «ciudadela» conserva las dos mitades, el lujo y las defensas. ⚠ Es una de las palabras características de Amós: aparece en cada uno de los ocho oráculos de los capítulos 1-2 &mdash;el fuego siempre devora las <em>armenot</em>, nunca simplemente «la ciudad»&mdash; y sigue volviendo (3:9-11; 6:8), hasta que la clase gobernante que vive en esos edificios es todo el tema del libro. La querella de Amós no es con un país sino con una dirección. ⭐ <a href="proverbs-18.es.html#v18-19">Proverbios 18:19</a> (ya en estas páginas): «las contiendas son como el cerrojo de una ciudadela».""")
+
+_DICT18_EN = {
+    "taavah": ' ⭐ <a href="proverbs-18.html#v18-1">Proverbs 18:1</a> (now on these pages): &lsquo;He who separates himself seeks a craving&rsquo;.',
+    "tushiyyah": ' ⭐ <a href="proverbs-18.html#v18-1">Proverbs 18:1</a> (now on these pages) has the longer spelling: the man who separates himself flares up &lsquo;against all practical wisdom&rsquo;.',
+    "goral": ' ⭐ <a href="proverbs-18.html#v18-18">Proverbs 18:18</a> (now on these pages): &lsquo;The lot puts an end to contentions and separates the mighty&rsquo;.',
+    "pesha": ' ⭐ The verb behind it has a passive once, at <a href="proverbs-18.html#v18-19">Proverbs 18:19</a> (now on these pages): <em>ach nifsha</em>, &lsquo;a brother wronged&rsquo;, a brother who has been rebelled against, &lsquo;harder than a strong city&rsquo;.',
+    "dabaq": ' ⭐ <a href="proverbs-18.html#v18-24">Proverbs 18:24</a> (now on these pages) uses it of friendship: &lsquo;there is a friend who clings closer than a brother&rsquo;.',
+    "mashchit": ' ⭐ <a href="proverbs-18.html#v18-9">Proverbs 18:9</a> (now on these pages) makes it a title: the slack worker is &lsquo;a brother to a master of destruction&rsquo;, <em>ba&rsquo;al mashchit</em>.',
+    "armon": ' ⭐ <a href="proverbs-18.html#v18-19">Proverbs 18:19</a> (now on these pages): &lsquo;contentions are like the bar of a citadel&rsquo;.',
+    "maskit": ' ⭐ At <a href="proverbs-18.html#v18-11">Proverbs 18:11</a> (now on these pages) the image is inside a man&rsquo;s head: the rich man&rsquo;s wealth is like a wall set on high &lsquo;in his imagination&rsquo;, <em>be-maskito</em>. A psalm has the plural in the same inward sense, and another proverb has &lsquo;settings of silver&rsquo; (Psalm 73:7 and Proverbs 25:11, not yet on these pages).',
+}
+_DICT18_REP = {
+    "maskit": ("It is a rare word: searched consonantally, it occurs in exactly three verses of the whole Hebrew Bible.",
+               'It is a rare word: <span data-heb-read="משכית|משכיות|משכת">it stands in six verses of the Hebrew Bible</span>, counting its plural and a shorter spelling.'),
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] in _DICT18_REP:
+        _a, _b = _DICT18_REP[_d[0]]
+        assert _t.count(_a) == 1, _d[0]
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT18_EN:
+        _t = _t + _DICT18_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 9, _n
+for _k, _a, _b in [
+    ("maskit", "Es una palabra rara: buscada consonantalmente, ocurre en exactamente tres versículos de toda la Biblia hebrea.",
+     'Es una palabra rara: <span data-heb-read="משכית|משכיות|משכת">está en seis versículos de la Biblia hebrea</span>, contando su plural y una grafía más corta.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("taavah", ' ⭐ <a href="proverbs-18.es.html#v18-1">Proverbios 18:1</a> (ya en estas páginas): «El que se aparta busca lo que codicia».'),
+    ("tushiyyah", ' ⭐ <a href="proverbs-18.es.html#v18-1">Proverbios 18:1</a> (ya en estas páginas) tiene la grafía larga: el que se aparta se enciende «contra toda sabiduría práctica».'),
+    ("goral", ' ⭐ <a href="proverbs-18.es.html#v18-18">Proverbios 18:18</a> (ya en estas páginas): «La suerte pone fin a las contiendas y separa a los poderosos».'),
+    ("pesha", ' ⭐ El verbo que está detrás tiene un pasivo una sola vez, en <a href="proverbs-18.es.html#v18-19">Proverbios 18:19</a> (ya en estas páginas): <em>aj nifshá</em>, «el hermano agraviado», un hermano contra quien se han rebelado, «más duro que una ciudad fuerte».'),
+    ("dabaq", ' ⭐ <a href="proverbs-18.es.html#v18-24">Proverbios 18:24</a> (ya en estas páginas) lo usa de la amistad: «hay amigo que se aferra más que un hermano».'),
+    ("mashchit", ' ⭐ <a href="proverbs-18.es.html#v18-9">Proverbios 18:9</a> (ya en estas páginas) lo convierte en título: el flojo en su trabajo es «hermano del señor de la destrucción», <em>ba’al mashjit</em>.'),
+    ("maskit", ' ⭐ En <a href="proverbs-18.es.html#v18-11">Proverbios 18:11</a> (ya en estas páginas) la imagen está dentro de la cabeza: los bienes del rico son como muro puesto en alto «en su imaginación», <em>be-maskitó</em>. Un salmo tiene el plural en el mismo sentido interior, y otro proverbio tiene «engastes de plata» (Salmo 73:7 y Proverbios 25:11, todavía no en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["prov18"] = dict(era="monarchy",
+    when="Proverbs of Solomon on the man who cuts himself off, the fool's mouth and the whisperer's morsels, the strong tower of Jehovah's name beside the rich man's imagined wall, answering before hearing, the gift, the lot, the wronged brother, the tongue that holds death and life, finding a wife, and a friend who clings closer than a brother.",
+    clock="Part of the collection headed “The proverbs of Solomon” (10:1–22:16), attributed to Solomon, son of David (reigned c. 970–931 BC); the book keeps no calendar of its own.")
+
+CHAPTER_ART["prov18"] = [dict(
+    file="botticelli-calumny-of-apelles.jpg",
+    title="The Calumny of Apelles", title_es="La calumnia de Apeles",
+    artist="Sandro Botticelli",
+    year="c. 1496–1497",
+    location="Uffizi Gallery, Florence", location_es="Galería de los Uffizi, Florencia",
+    alt="In a marble hall of arches lined with statues, a king with long ears sits on a raised throne at the right while two women lean in to speak into his ears and a man in a dark hooded cloak reaches toward him. In the centre a woman in white and blue, a lit torch rising beside her, drags a nearly naked young man across the floor by his hair while two women arrange her hair. At the left an old woman in black turns to look at a naked woman who points upward.",
+    note="Botticelli painted the scene from a description by the Greek writer Lucian of a lost picture by Apelles, who had been slandered to King Ptolemy by a rival painter (Lucian, <em>On Not Readily Believing Slander</em> 2&ndash;5). On the throne sits a judge with ears &lsquo;almost like those of Midas&rsquo;, with Ignorance and Suspicion at his side; Slander, carrying a torch, drags her victim by the hair, led by Envy and adorned by Treachery and Deceit; at the left Repentance, in black, turns back toward Truth. Lucian defines slander as an accusation &lsquo;believed without contradiction, from one side only&rsquo;: the first in his dispute, before his neighbor comes and searches him out (Proverbs 18:17), heard by a judge who answers before he has heard (18:13).",
+    note_es="Botticelli pintó la escena a partir de la descripción que el escritor griego Luciano hace de un cuadro perdido de Apeles, a quien un pintor rival había calumniado ante el rey Ptolomeo (Luciano, <em>Que no hay que creer fácilmente a la calumnia</em> 2&ndash;5). En el trono se sienta un juez con orejas «casi como las de Midas», con la Ignorancia y la Sospecha a su lado; la Calumnia, con una antorcha, arrastra a su víctima por el pelo, guiada por la Envidia y adornada por la Insidia y el Engaño; a la izquierda el Arrepentimiento, de negro, se vuelve hacia la Verdad. Luciano define la calumnia como una acusación «creída sin réplica, de una sola parte»: el primero en su disputa, antes de que venga su prójimo y lo escudriñe (Proverbios 18:17), oído por un juez que responde antes de haber oído (18:13).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_La_calumnia_de_Apeles.jpg",
+)]
