@@ -49274,3 +49274,80 @@ CHAPTER_ART["micah6"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:139.Micah_Exhorts_the_Israelites_to_Repent.jpg",
 )]
+
+# --- Isaiah 26 ---
+DICTIONARY.extend([
+    ("rephaim-shades", "rephaim (the shades)", "רְפָאִים", "rephaim",
+     """THE SHADES &mdash; the dead in the world below, faint and silent; and, spelled the same, the name of the giant clans of old (see the encyclopedia&rsquo;s <a href="encyclopedia.html#rephaim">Rephaim</a>). ⭐ <a href="isaiah-26.html#v26-14">Isaiah 26:14</a> (now on these pages) uses it of the dead who will not come back, &lsquo;the dead do not live; the shades do not rise&rsquo;, and <a href="isaiah-26.html#v26-19">26:19</a> turns it around, &lsquo;the earth will give birth to the shades&rsquo;. The Greek reads the consonants as <em>rofe&rsquo;im</em>, &lsquo;physicians&rsquo;; the Douay, from the Latin, has &lsquo;giants&rsquo;; the NIV has &lsquo;their spirits&rsquo;. The same word stands for the dead in a psalm that asks whether the shades will rise and praise God, and in Proverbs, where the house of the strange woman leads down to them (Psalm 88:11 and Proverbs 2:18, not yet on these pages).""",
+     ("Isaiah", 26, 14)),
+])
+DICTIONARY_ES["rephaim-shades"] = ("refaím (las sombras)",
+    """LAS SOMBRAS &mdash;los muertos del mundo de abajo, débiles y callados; y, con la misma grafía, el nombre de los antiguos clanes de gigantes (véanse los <a href="enciclopedia.html#rephaim">refaítas</a> de la enciclopedia). ⭐ <a href="isaiah-26.es.html#v26-14">Isaías 26:14</a> (ya en estas páginas) la usa de los muertos que no volverán, «los muertos no viven; las sombras no se levantan», y <a href="isaiah-26.es.html#v26-19">26:19</a> le da la vuelta, «la tierra dará a luz a las sombras». El griego lee las consonantes como <em>rof’ím</em>, «médicos»; la NVI tiene «ya son sombras». La misma palabra designa a los muertos en un salmo que pregunta si las sombras se levantarán a alabar a Dios, y en Proverbios, donde la casa de la mujer extraña baja hacia ellas (Salmo 88:11 y Proverbios 2:18, todavía no en estas páginas).""")
+
+_DICT26_EN = {
+    "nisgav": ' ⭐ <a href="isaiah-26.html#v26-5">Isaiah 26:5</a> (now on these pages) brings such a height down: &lsquo;the city set on high he lays low, he lays it low to the ground&rsquo;.',
+    "shalom": ' ⭐ <a href="isaiah-26.html#v26-3">Isaiah 26:3</a> (now on these pages) says it twice, &lsquo;The steadfast mind you guard in peace, peace&rsquo;, which the KJV turns into &lsquo;perfect peace&rsquo;.',
+    "tsur": ' ⭐ <a href="isaiah-26.html#v26-4">Isaiah 26:4</a> (now on these pages): &lsquo;for in Yah, Jehovah, is a rock of ages&rsquo;, <em>tsur olamim</em>.',
+    "yah": ' ⭐ <a href="isaiah-26.html#v26-4">Isaiah 26:4</a> (now on these pages) sets the short form beside the full name: &lsquo;in Yah, Jehovah, is a rock of ages&rsquo;.',
+    "taavah": ' ⭐ <a href="isaiah-26.html#v26-8">Isaiah 26:8</a> (now on these pages) turns the word toward God: &lsquo;for your name and for your memorial is the craving of the soul&rsquo;.',
+    "paqad": ' ⭐ <a href="isaiah-26.html#v26-14">Isaiah 26</a> (now on these pages) uses it three times: God visits the dead and destroys them (v14), Israel in distress visits God (v16), and Jehovah comes out to visit the iniquity of the earth (v21).',
+    "zaam": ' ⭐ The noun is the &lsquo;indignation&rsquo; of <a href="isaiah-26.html#v26-20">Isaiah 26:20</a> (now on these pages): &lsquo;hide for a little moment, until the indignation passes over&rsquo;.',
+    "naphal": ' ⭐ It is also the verb of birth, a child falling into the world: <a href="isaiah-26.html#v26-18">Isaiah 26:18&ndash;19</a> (now on these pages), &lsquo;the inhabitants of the world have not been born&rsquo; and &lsquo;the earth will give birth to the shades&rsquo;.',
+}
+_DICT26_REP = {
+    "odin": ("The prophets use it exactly so (Isaiah 26:17; Jeremiah 22:23; Hosea 13:13), and later Jewish writing",
+             'The prophets use the image too, but not always for a birth that comes: in <a href="isaiah-26.html#v26-17">Isaiah 26:17&ndash;18</a> (now on these pages) a nation in labour gives birth only to wind, and the birth comes from the earth in v19; Jeremiah 22:23 has pangs of judgment and Hosea 13:13 a child who will not come out at the time of birth (Jeremiah 22:23 and Hosea 13:13, not yet on these pages). Later Jewish writing'),
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] in _DICT26_REP:
+        _a, _b = _DICT26_REP[_d[0]]
+        assert _t.count(_a) == 1, _d[0]
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT26_EN:
+        _t = _t + _DICT26_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 9, _n
+for _k, _a, _b in [
+    ("odin", "Los profetas la usan exactamente así (Isaías 26:17; Jeremías 22:23; Oseas 13:13), y la literatura judía posterior",
+     'Los profetas usan también la imagen, pero no siempre para un nacimiento que llega: en <a href="isaiah-26.es.html#v26-17">Isaías 26:17&ndash;18</a> (ya en estas páginas) una nación de parto da a luz solo viento, y el nacimiento viene de la tierra en el v19; Jeremías 22:23 tiene dolores de juicio y Oseas 13:13 un hijo que no sale a la hora del parto (Jeremías 22:23 y Oseas 13:13, todavía no en estas páginas). La literatura judía posterior'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("nisgav", ' ⭐ <a href="isaiah-26.es.html#v26-5">Isaías 26:5</a> (ya en estas páginas) derriba una altura así: «a la ciudad puesta en alto la humilla, la humilla hasta la tierra».'),
+    ("shalom", ' ⭐ <a href="isaiah-26.es.html#v26-3">Isaías 26:3</a> (ya en estas páginas) la dice dos veces, «Al ánimo firme lo custodias en paz, paz», que la RV60 convierte en «completa paz».'),
+    ("tsur", ' ⭐ <a href="isaiah-26.es.html#v26-4">Isaías 26:4</a> (ya en estas páginas): «porque en Yah, Jehová, hay una roca de los siglos», <em>tsur olamim</em>.'),
+    ("yah", ' ⭐ <a href="isaiah-26.es.html#v26-4">Isaías 26:4</a> (ya en estas páginas) pone la forma breve junto al nombre completo: «en Yah, Jehová, hay una roca de los siglos».'),
+    ("taavah", ' ⭐ <a href="isaiah-26.es.html#v26-8">Isaías 26:8</a> (ya en estas páginas) vuelve la palabra hacia Dios: «a tu nombre y a tu memoria se dirige el ansia del alma».'),
+    ("paqad", ' ⭐ <a href="isaiah-26.es.html#v26-14">Isaías 26</a> (ya en estas páginas) lo usa tres veces: Dios visita a los muertos y los destruye (v14), Israel en la angustia visita a Dios (v16), y Jehová sale a visitar la iniquidad de la tierra (v21).'),
+    ("zaam", ' ⭐ El sustantivo es la «indignación» de <a href="isaiah-26.es.html#v26-20">Isaías 26:20</a> (ya en estas páginas): «escóndete un breve momento, hasta que pase la indignación».'),
+    ("naphal", ' ⭐ Es también el verbo del nacimiento, el niño que cae al mundo: <a href="isaiah-26.es.html#v26-18">Isaías 26:18&ndash;19</a> (ya en estas páginas), «no han nacido los habitantes del mundo» y «la tierra dará a luz a las sombras».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "rephaim":
+        _e["desc"] = _e["desc"] + ' ⭐ The same word names the dead, the <a href="dictionary.html#rephaim-shades">shades</a>, and <a href="isaiah-26.html#v26-19">Isaiah 26:19</a> (now on these pages) may play on both: &lsquo;and the earth will give birth to the shades&rsquo; can also be read &lsquo;and the land of the Rephaim you will cast down&rsquo;, the phrase of Deuteronomy 3:13.'
+_s = ENCYCLOPEDIA_ES["rephaim"]
+ENCYCLOPEDIA_ES["rephaim"] = (_s[0], _s[1] + ' ⭐ La misma palabra designa a los muertos, las <a href="diccionario.html#rephaim-shades">sombras</a>, e <a href="isaiah-26.es.html#v26-19">Isaías 26:19</a> (ya en estas páginas) quizá juega con las dos: «y la tierra dará a luz a las sombras» puede leerse también «y la tierra de los refaítas tú la harás caer», la expresión de Deuteronomio 3:13.')
+
+CHRON_CHAPTERS["isa26"] = dict(era="monarchy",
+    when="A song for the land of Judah: a strong city with salvation for walls, peace, peace for the steadfast mind, Yah, Jehovah, a rock of ages, the city set on high brought down to the feet of the poor, a soul that craves God in the night, a nation in labour that gives birth to wind, and then the dead who will live, and a people told to hide in their inner rooms until the indignation passes.",
+    clock="⚠ Disputed: the chapter belongs to Isaiah 24–27, a section often called the Isaiah apocalypse, in the half of the book attributed to Isaiah son of Amoz (c. 740–700 BC); many critical scholars date the section much later, to the exile or after. The chapter itself names no king and no date.")
+
+CHAPTER_ART["isa26"] = [dict(
+    file="oertel-rock-of-ages.jpg",
+    title="Rock of Ages", title_es="Roca de los siglos",
+    artist="Johannes Adam Simon Oertel",
+    year="1876",
+    location="Fogg Museum, Harvard Art Museums, Cambridge, Massachusetts", location_es="Museo Fogg, Museos de Arte de Harvard, Cambridge, Massachusetts",
+    alt="A tall, narrow painting on creased canvas: a young woman in a pale dress and a red cloak kneels on a rock in a stormy sea, both arms stretched up around a rough stone cross that rises from the rock. Waves break white around her; below, a broken plank floats in the foam with a hand reaching up out of the water beside it.",
+    note="The picture takes its name from the hymn &lsquo;Rock of Ages, cleft for me&rsquo;, whose title phrase is reported to come from the margin of the King James Version at Isaiah 26:4, where the Hebrew <em>tsur olamim</em> stands; the KJV&rsquo;s own text there reads &lsquo;everlasting strength&rsquo;. Oertel painted the rock of v4 as a shelter in a storm, a woman clinging to a cross of rock while the sea breaks around her.",
+    note_es="El cuadro toma su nombre del himno «Rock of Ages, cleft for me» («Roca de los siglos, hendida por mí»), cuyo título, según se informa, viene del margen de la versión King James en Isaías 26:4, donde está el hebreo <em>tsur olamim</em>; el texto mismo de la KJV dice allí «everlasting strength». Oertel pintó la roca del v4 como refugio en una tormenta: una mujer aferrada a una cruz de roca mientras el mar rompe a su alrededor.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Johannes_Adam_Simon_Oertel_-_Rock_of_Ages_-_1895.695_-_Fogg_Museum.jpg",
+)]
