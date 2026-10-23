@@ -49409,3 +49409,80 @@ CHAPTER_ART["prov4"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Voyage_of_Life_Youth,_1842_(National_Gallery_of_Art).jpg",
 )]
+
+# --- Proverbs 16 ---
+DICTIONARY.extend([
+    ("leqach", "leqach", "לֶקַח", "leqach",
+     """LEARNING &mdash; what is taken in, from <em>laqach</em>, to take: teaching seen from the side of the one who receives it. Proverbs uses it for what the wise gain, &lsquo;let the wise hear, and add to their learning&rsquo; (<a href="proverbs-1.html#v5">Proverbs 1:5</a>), and for what a father gives, &lsquo;For good learning I give you&rsquo; (<a href="proverbs-4.html#v4-2">Proverbs 4:2</a>). ⭐ <a href="proverbs-16.html#v16-21">Proverbs 16:21</a> and <a href="proverbs-16.html#v16-23">16:23</a> (now on these pages) say learning is added by how a thing is said: &lsquo;sweetness of lips adds learning&rsquo;. In Moses&rsquo; song the same noun is rendered &lsquo;teaching&rsquo;, &lsquo;May my teaching fall like the rain&rsquo; (<a href="deuteronomy-32.html#v32-2">Deuteronomy 32:2</a>). The KJV and ASV usually have &lsquo;learning&rsquo; or &lsquo;doctrine&rsquo;.""",
+     ("Proverbs", 1, 5)),
+])
+DICTIONARY_ES["leqach"] = ("léqaj",
+    """SABER &mdash;lo que se recibe, de <em>laqaj</em>, tomar: la enseñanza vista desde el lado de quien la recibe. Proverbios la usa para lo que ganan los sabios, «oiga el sabio, y aumente su saber» (Proverbios 1:5, ya en estas páginas, todavía no en español), y para lo que da un padre, «Porque buen saber les doy» (<a href="proverbs-4.es.html#v4-2">Proverbios 4:2</a>). ⭐ <a href="proverbs-16.es.html#v16-21">Proverbios 16:21</a> y <a href="proverbs-16.es.html#v16-23">16:23</a> (ya en estas páginas) dicen que el saber se añade por la manera de decir las cosas: «la dulzura de los labios añade saber». En el cántico de Moisés el mismo sustantivo se traduce «enseñanza», «Que caiga mi enseñanza como la lluvia» (<a href="deuteronomy-32.es.html#v32-2">Deuteronomio 32:2</a>). La RV60 tiene a menudo «saber» o «doctrina».""")
+
+_DICT16_REP = {
+    "goral": [("'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33).",
+               '\'the LOT is hurled into the lap, but its every decision is from Jehovah\' (<a href="proverbs-16.html#v16-33">Proverbs 16:33</a>, now on these pages).'),
+              ("(<em>yutal</em>, Proverbs 16:33)", '(<em>yutal</em>, <a href="proverbs-16.html#v16-33">Proverbs 16:33</a>)')],
+    "malqosh": [("Job 29:23, Proverbs 16:15 — none yet on these pages)",
+                 'Job 29:23 — none yet on these pages — and <a href="proverbs-16.html#v16-15">Proverbs 16:15</a>, now on these pages)')],
+    "even": [("Proverbs 16:11 calls a merchant's set <em>the stones of the bag</em> (not yet on these pages)",
+              '<a href="proverbs-16.html#v16-11">Proverbs 16:11</a> calls a merchant\'s set <em>the stones of the bag</em> (now on these pages)')],
+    "tiferet": [("grey hair is <em>a crown of glory</em> (Proverbs 16:31) and children's glory is their fathers (17:6, neither yet on these pages)",
+                 'grey hair is <em>a crown of beauty</em> (<a href="proverbs-16.html#v16-31">Proverbs 16:31</a>, now on these pages) and children\'s glory is their fathers (17:6, not yet on these pages)')],
+    "nirgan": [("The same verse returns word for word later in the book, a whisperer separates close friends, and where there is no whisperer contention goes quiet (Proverbs 26:22, 16:28 and 26:20, not yet on these pages).",
+                'A whisperer &lsquo;separates close friends&rsquo; (<a href="proverbs-16.html#v16-28">Proverbs 16:28</a>, now on these pages). The verse of 18:8 returns word for word later in the book, and where there is no whisperer contention goes quiet (Proverbs 26:22 and 26:20, not yet on these pages).')],
+}
+_DICT16_EN = {
+    "qesem": ' ⭐ <a href="proverbs-16.html#v16-10">Proverbs 16:10</a> (now on these pages) turns the forbidden word to praise: &lsquo;Divination is on the lips of a king; in judgment his mouth does not act faithlessly&rsquo;.',
+    "galal": ' ⭐ <a href="proverbs-16.html#v16-3">Proverbs 16:3</a> (now on these pages): &lsquo;Roll your works onto Jehovah, and your plans will be established&rsquo;.',
+    "beliyaal": ' ⭐ <a href="proverbs-16.html#v16-27">Proverbs 16:27</a> (now on these pages): &lsquo;A man of worthlessness digs up evil, and on his lips it is like a scorching fire&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    for _a, _b in _DICT16_REP.get(_d[0], []):
+        assert _t.count(_a) == 1, (_d[0], _a[:40])
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT16_EN:
+        _t = _t + _DICT16_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 9, _n
+for _k, _a, _b in [
+    ("goral", "(<em>yutal</em>, Proverbios 16:33)", '(<em>yutal</em>, <a href="proverbs-16.es.html#v16-33">Proverbios 16:33</a>)'),
+    ("malqosh", "Job 29:23, Proverbios 16:15 —ninguno todavía en estas páginas—)",
+     'Job 29:23 —ninguno todavía en estas páginas— y <a href="proverbs-16.es.html#v16-15">Proverbios 16:15</a>, ya en estas páginas)'),
+    ("even", "Proverbios 16:11 llama al juego de un mercader <em>las piedras de la bolsa</em> (todavía no en estas páginas)",
+     '<a href="proverbs-16.es.html#v16-11">Proverbios 16:11</a> llama al juego de un mercader <em>las piedras de la bolsa</em> (ya en estas páginas)'),
+    ("tiferet", "las canas son <em>corona de gloria</em> (Proverbios 16:31) y la gloria de los hijos son sus padres (17:6, ninguno todavía en estas páginas)",
+     'las canas son <em>corona de hermosura</em> (<a href="proverbs-16.es.html#v16-31">Proverbios 16:31</a>, ya en estas páginas) y la gloria de los hijos son sus padres (17:6, todavía no en estas páginas)'),
+    ("nirgan", "El mismo versículo vuelve letra por letra más adelante en el libro, un murmurador separa a los amigos íntimos, y donde no hay murmurador la contienda se calla (Proverbios 26:22, 16:28 y 26:20, todavía no en estas páginas).",
+     'Un murmurador «separa a los amigos íntimos» (<a href="proverbs-16.es.html#v16-28">Proverbios 16:28</a>, ya en estas páginas). El versículo de 18:8 vuelve letra por letra más adelante en el libro, y donde no hay murmurador la contienda se calla (Proverbios 26:22 y 26:20, todavía no en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("qesem", ' ⭐ <a href="proverbs-16.es.html#v16-10">Proverbios 16:10</a> (ya en estas páginas) vuelve elogio la palabra prohibida: «Adivinación hay en los labios del rey; en el juicio su boca no es infiel».'),
+    ("galal", ' ⭐ <a href="proverbs-16.es.html#v16-3">Proverbios 16:3</a> (ya en estas páginas): «Haz rodar tus obras sobre Jehová, y tus planes serán afirmados».'),
+    ("beliyaal", ' ⭐ <a href="proverbs-16.es.html#v16-27">Proverbios 16:27</a> (ya en estas páginas): «El hombre de la nada cava el mal, y sobre sus labios es como fuego abrasador».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["prov16"] = dict(era="monarchy",
+    when="Proverbs of Solomon on the plans of the heart and the answer that belongs to Jehovah, works rolled onto him, kindness and faithfulness that atone, the king whose lips carry a verdict and whose fury is messengers of death, honest scales and the stones of the bag, pride before a crash, the whisperer who separates close friends, gray hair as a crown of beauty, and the lot hurled into the lap.",
+    clock="Part of the collection headed “The proverbs of Solomon” (10:1–22:16), attributed to Solomon, son of David (reigned c. 970–931 BC); the book keeps no calendar of its own.")
+
+CHAPTER_ART["prov16"] = [dict(
+    file="ghirlandaio-old-man-and-grandson.jpg",
+    title="An Old Man and His Grandson", title_es="Un anciano y su nieto",
+    artist="Domenico Ghirlandaio",
+    year="c. 1490",
+    location="Musée du Louvre, Paris", location_es="Museo del Louvre, París",
+    alt="Half-length portrait: a gray-haired old man in a red robe, his nose swollen and lumpy, looks down tenderly at a small fair-haired boy in red, who reaches up to his chest and gazes back at his face. Through a window behind them a winding road leads past trees to a pale mountain.",
+    note="Ghirlandaio painted the old man without flattery, his nose swollen by a skin disease and a wart on his brow, and painted the child looking at that face with nothing but love. Proverbs 16:31 says the same of age: &lsquo;Gray hair is a crown of beauty; it is found in the way of righteousness&rsquo;. The road through the window is the way.",
+    note_es="Ghirlandaio pintó al anciano sin adulación, la nariz hinchada por una enfermedad de la piel y una verruga en la frente, y pintó al niño mirando ese rostro con nada más que amor. Proverbios 16:31 dice lo mismo de la vejez: «Corona de hermosura son las canas; en el camino de la justicia se hallan». El camino que se ve por la ventana es ese camino.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Ghirlandaio,_Domenico_-_An_Old_Man_and_His_Grandson_-_Louvre_-_Google_Art_Project.jpg",
+)]
