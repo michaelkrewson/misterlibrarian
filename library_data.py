@@ -49164,3 +49164,113 @@ CHAPTER_ART["prov18"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_La_calumnia_de_Apeles.jpg",
 )]
+
+# --- Micah 6 ---
+DICTIONARY.extend([
+    ("tsana", "tsana / hatsnea", "צָנַע", "hatsnea",
+     """TO BE MODEST, to go quietly and carefully &mdash; a rare word, kept apart in this translation from <em>anav</em>, humble. <span data-heb="הצנע|צנועים">The root stands in two verses of the Hebrew Bible</span>: <a href="micah-6.html#v6-8">Micah 6:8</a> (now on these pages), &lsquo;and to walk modestly with your God&rsquo;, <em>hatsnea lekhet</em>, and a proverb, &lsquo;with the modest is wisdom&rsquo; (Proverbs 11:2, not yet on these pages). The ASV and KJV have &lsquo;walk humbly&rsquo;; the NWT 1984 &lsquo;to be modest in walking with your God&rsquo;; the Douay &lsquo;to walk solicitous&rsquo;; the Greek &lsquo;to be ready to walk&rsquo;.""",
+     ("Micah", 6, 8)),
+    ("shereqah", "shereqah", "שְׁרֵקָה", "shereqah",
+     """A HISSING &mdash; the whistle a passer-by gives at a ruin, half astonishment and half scorn, from <em>sharaq</em>, to whistle. It is nearly always paired with <em>shammah</em>, a desolation or horror: <a href="micah-6.html#v6-16">Micah 6:16</a> (now on these pages), &lsquo;so that I may make you a desolation, and her inhabitants a hissing&rsquo;, and again and again in Jeremiah, &lsquo;a curse and a desolation and a hissing and a reproach among all the nations&rsquo; (<a href="jeremiah-29.html#v29-18">Jeremiah 29:18</a>, now on these pages).""",
+     ("Micah", 6, 16)),
+])
+DICTIONARY_ES["tsana"] = ("tsaná / hatsnea",
+    """SER MODESTO, andar callado y con cuidado &mdash;una palabra rara, que esta traducción mantiene aparte de <em>anav</em>, humilde. <span data-heb="הצנע|צנועים">La raíz está en dos versículos de la Biblia hebrea</span>: <a href="micah-6.es.html#v6-8">Miqueas 6:8</a> (ya en estas páginas), «y andar con modestia con tu Dios», <em>hatsnea léjet</em>, y un proverbio, «con los modestos está la sabiduría» (Proverbios 11:2, todavía no en estas páginas). La RV60 tiene «humillarte ante tu Dios»; la TNM 1987 «ser modesto al andar con tu Dios»; el griego «estar dispuesto a andar».""")
+DICTIONARY_ES["shereqah"] = ("shereqá",
+    """UN SILBIDO &mdash;el que da quien pasa junto a una ruina, mitad asombro y mitad burla, de <em>sharaq</em>, silbar. Va casi siempre en pareja con <em>shamá</em>, desolación u horror: <a href="micah-6.es.html#v6-16">Miqueas 6:16</a> (ya en estas páginas), «para que yo haga de ti una desolación, y de sus habitantes un silbido», y una y otra vez en Jeremías, «por maldición y por asombro y por silbido y por afrenta» (<a href="jeremiah-29.es.html#v29-18">Jeremías 29:18</a>, ya en estas páginas).""")
+
+ENCYCLOPEDIA.extend([
+    dict(slug="omri", name="Omri", kind="person", aliases=["Omri"], refs=[("Micah", 6, 16)], videos=[],
+         desc="""King of Israel, the northern kingdom, and founder of the dynasty that ruled it after him. He bought the hill of Samaria from a man named Shemer for two talents of silver, built a city on it and named it after the owner (1 Kings 16:24, not yet on these pages), and Samaria remained Israel&rsquo;s capital until its fall. His son was <a href="encyclopedia.html#ahab">Ahab</a>. ⭐ <a href="micah-6.html#v6-16">Micah 6:16</a> (now on these pages) uses his name as a byword: &lsquo;the statutes of Omri are kept&rsquo;, in the place where the law expected Jehovah&rsquo;s statutes to be kept."""),
+    dict(slug="ahab", name="Ahab", kind="person", aliases=["Ahab"], refs=[("Micah", 6, 16)], videos=[],
+         desc="""King of Israel, son of <a href="encyclopedia.html#omri">Omri</a>, who reigned in Samaria twenty-two years (1 Kings 16:29, not yet on these pages). The books of Kings make his reign the setting of Elijah&rsquo;s contest with the prophets of Baal. ⭐ <a href="micah-6.html#v6-16">Micah 6:16</a> (now on these pages) names &lsquo;all the work of the house of Ahab&rsquo; beside the statutes of Omri: a dynasty remembered more than a century later as the pattern Judah was following."""),
+])
+ENCYCLOPEDIA_ES["omri"] = ("Omrí",
+    """Rey de Israel, el reino del norte, y fundador de la dinastía que lo gobernó después de él. Compró el monte de Samaria a un hombre llamado Semer por dos talentos de plata, edificó en él una ciudad y le dio el nombre del dueño (1 Reyes 16:24, todavía no en estas páginas), y Samaria siguió siendo la capital de Israel hasta su caída. Su hijo fue <a href="enciclopedia.html#ahab">Acab</a>. ⭐ <a href="micah-6.es.html#v6-16">Miqueas 6:16</a> (ya en estas páginas) usa su nombre como proverbio: «se guardan los estatutos de Omrí», en el lugar donde la ley esperaba que se guardaran los estatutos de Jehová.""")
+ENCYCLOPEDIA_ES["ahab"] = ("Acab",
+    """Rey de Israel, hijo de <a href="enciclopedia.html#omri">Omrí</a>, que reinó en Samaria veintidós años (1 Reyes 16:29, todavía no en estas páginas). Los libros de los Reyes hacen de su reinado el escenario del certamen de Elías con los profetas de Baal. ⭐ <a href="micah-6.es.html#v6-16">Miqueas 6:16</a> (ya en estas páginas) nombra «toda la obra de la casa de Acab» junto a los estatutos de Omrí: una dinastía recordada más de un siglo después como el modelo que Judá seguía.""")
+
+_MIC6_REFS = {"balak": ("Micah", 6, 5), "balaam": ("Micah", 6, 5), "shittim": ("Micah", 6, 5),
+              "gilgal": ("Micah", 6, 5), "miriam": ("Micah", 6, 4)}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _MIC6_REFS and _MIC6_REFS[_e["slug"]] not in _e["refs"]:
+        _e["refs"] = list(_e["refs"]) + [_MIC6_REFS[_e["slug"]]]
+
+_DICT6_REP = {
+    "shaal": ("Micah 6:8 (not yet on these pages) asks",
+              '<a href="micah-6.html#v6-8">Micah 6:8</a> (now on these pages) asks'),
+    "riv": ("Hosea 4:1 and Micah 6:2 both open",
+            'Hosea 4:1 and <a href="micah-6.html#v6-2">Micah 6:2</a> both open'),
+    "even": ("and Micah 6:11 <em>a bag of deceitful stones</em> (neither yet on these pages);",
+             '(not yet on these pages), and <a href="micah-6.html#v6-11">Micah 6:11</a> <em>a bag of deceitful stones</em> (now on these pages);'),
+}
+_DICT6_EN = {
+    "riv": ' ⭐ <a href="micah-6.html#v6-1">Micah 6:1&ndash;2</a> (now on these pages) uses the noun and the verb together: &lsquo;Rise, plead the dispute before the mountains&rsquo;, and &lsquo;Jehovah has a dispute with his people&rsquo;.',
+    "darash": ' ⭐ <a href="micah-6.html#v6-8">Micah 6:8</a> (now on these pages): &lsquo;what does Jehovah require of you&rsquo;, <em>doresh</em>.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] in _DICT6_REP:
+        _a, _b = _DICT6_REP[_d[0]]
+        assert _t.count(_a) == 1, _d[0]
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT6_EN:
+        _t = _t + _DICT6_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 5, _n
+for _k, _a, _b in [
+    ("shaal", "Miqueas 6:8 (todavía no en estas páginas) pregunta",
+     '<a href="micah-6.es.html#v6-8">Miqueas 6:8</a> (ya en estas páginas) pregunta'),
+    ("riv", "Oseas 4:1 y Miqueas 6:2 abren",
+     'Oseas 4:1 y <a href="micah-6.es.html#v6-2">Miqueas 6:2</a> abren'),
+    ("even", "y Miqueas 6:11 <em>una bolsa de piedras engañosas</em> (ninguno todavía en estas páginas);",
+     '(todavía no en estas páginas), y <a href="micah-6.es.html#v6-11">Miqueas 6:11</a> <em>una bolsa de piedras engañosas</em> (ya en estas páginas);'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("riv", ' ⭐ <a href="micah-6.es.html#v6-1">Miqueas 6:1&ndash;2</a> (ya en estas páginas) usa juntos el sustantivo y el verbo: «Levántate, defiende la disputa ante los montes», y «Jehová tiene una disputa con su pueblo».'),
+    ("darash", ' ⭐ <a href="micah-6.es.html#v6-8">Miqueas 6:8</a> (ya en estas páginas): «¿qué requiere Jehová de ti?», <em>doresh</em>.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "balak":
+        _a = "Micah 6:5 tells Israel"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '<a href="micah-6.html#v6-5">Micah 6:5</a> (now on these pages) tells Israel')
+    if _e["slug"] == "shittim":
+        _a = "and Micah 6:5 names it"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, 'and <a href="micah-6.html#v6-5">Micah 6:5</a> (now on these pages) names it')
+    if _e["slug"] == "miriam":
+        _a = "(Micah 6:4)"
+        assert _e["desc"].count(_a) == 1
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="micah-6.html#v6-4">Micah 6:4</a>, now on these pages)')
+for _k, _a, _b in [
+    ("shittim", "y Miqueas 6:5 lo nombra", 'y <a href="micah-6.es.html#v6-5">Miqueas 6:5</a> (ya en estas páginas) lo nombra'),
+    ("miriam", "(Miqueas 6:4)", '(<a href="micah-6.es.html#v6-4">Miqueas 6:4</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+CHRON_CHAPTERS["micah6"] = dict(era="monarchy",
+    when="Jehovah's lawsuit against his people, with the mountains as jury: what have I done to you?, the road from Shittim to Gilgal, the worshipper's rising bids from calves to a firstborn child, and the answer — to do justice, to love kindness and to walk modestly with your God; then the shrunken ephah and the bag of deceitful stones, the curses of futility, and the statutes of Omri.",
+    clock="c. 730–700 BC — Micah prophesied in the days of Jotham, Ahaz and Hezekiah, kings of Judah (Micah 1:1). The chapter itself carries no date; its Omri and Ahab are kings of the northern kingdom more than a century earlier.")
+
+CHAPTER_ART["micah6"] = [dict(
+    file="dore-micah-exhorts-israelites.jpg",
+    title="Micah Exhorts the Israelites to Repent", title_es="Miqueas exhorta a los israelitas al arrepentimiento",
+    artist="Gustave Doré (engraved by Pannemaker)",
+    year="1866",
+    location="Doré’s illustrated Bible", location_es="La Biblia ilustrada de Doré",
+    alt="A wood engraving: a bearded prophet in a long robe stands on a raised stone platform against a high wall, both arms lifted. Below him men in robes and head-cloths listen; one sits slumped on the stone with his head in his hand, others stand with arms folded, and a crowd gathers under an arched gateway behind them, with a palm tree at the right.",
+    note="Plate 139 of Gustave Doré’s illustrated Bible, signed by Doré at the lower left and by the engraver Pannemaker at the lower right. The scene is not tied to one verse; it shows the prophet as Micah 6 has him, pleading a case in public while his hearers sit or stand unmoved.",
+    note_es="Lámina 139 de la Biblia ilustrada de Gustave Doré, firmada por Doré abajo a la izquierda y por el grabador Pannemaker abajo a la derecha. La escena no está ligada a un versículo; muestra al profeta como lo presenta Miqueas 6, defendiendo un caso en público mientras sus oyentes siguen sentados o de pie sin moverse.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:139.Micah_Exhorts_the_Israelites_to_Repent.jpg",
+)]
