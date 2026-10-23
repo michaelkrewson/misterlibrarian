@@ -48603,3 +48603,95 @@ CHAPTER_ART["psalms34"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Psalterium_aureum_David_feins_lunacy.jpg",
 )]
+
+
+# --- Psalm 119 ---
+DICTIONARY.extend([
+    ("piqqudim", "piqqudim", "פִּקּוּדִים", "piqqudekha",
+     'PRECEPTS &mdash; charges laid on someone, from <em>paqad</em>, to attend to, appoint, muster, give a charge. The plural noun belongs to the Psalms: <em>those who remember his precepts, to do them</em> (<a href="psalms-103.html#v103-18">Psalm 103:18</a>, now on these pages), Psalms 19:9 and 111:7 (neither yet on these pages), and twenty-one verses of <a href="psalms-119.html#v119-4">Psalm 119</a> (now on these pages), read one by one, where it is one of the eight words for what God has said. In Numbers the same letters are the musterings of the census, those counted. The KJV and ASV read &lsquo;precepts&rsquo;, the NWT 1984 &lsquo;orders&rsquo;, and the Douay at Psalm 119:4 &lsquo;commandments&rsquo;.',
+     ("Psalms", 119, 4)),
+    ("imrah", "imrah", "אִמְרָה", "imratekha",
+     'A SAYING, an utterance &mdash; from <em>amar</em>, to say, and so a thing said, often a promise. Moses&rsquo; song has it, <em>my speech settle like the dew</em> (<a href="deuteronomy-32.html#v32-2">Deuteronomy 32:2</a>, already on these pages). ⭐ <a href="psalms-119.html#v119-11">Psalm 119</a> (now on these pages) uses it in nineteen verses, read one by one, beside <em>davar</em>, &lsquo;word&rsquo;, and this translation keeps the two apart: <em>In my heart I have treasured your saying</em> (119:11), <em>How sweet your saying is to my palate</em> (119:103), <em>Your saying is thoroughly refined</em> (119:140). The NWT 1984 keeps &lsquo;saying&rsquo;; the KJV and ASV fold it into &lsquo;word&rsquo;; the Geneva often reads &lsquo;promise&rsquo;.',
+     ("Psalms", 119, 11)),
+])
+DICTIONARY_ES["piqqudim"] = ("piqudim",
+    'PRECEPTOS &mdash;encargos puestos sobre alguien, de <em>paqad</em>, atender, designar, pasar revista, encomendar. El sustantivo plural es propio de los Salmos: <em>los que se acuerdan de sus preceptos, para cumplirlos</em> (<a href="psalms-103.es.html#v103-18">Salmo 103:18</a>, ya en estas páginas), Salmos 19:9 y 111:7 (ninguno todavía en estas páginas), y veintiún versículos del <a href="psalms-119.es.html#v119-4">Salmo 119</a> (ya en estas páginas), leídos uno por uno, donde es una de las ocho palabras para lo que Dios ha dicho. En Números las mismas letras son los recuentos del censo, los contados. La RV60 lee «mandamientos», la TNM 1987 «órdenes», la NVI «preceptos».')
+DICTIONARY_ES["imrah"] = ("imrá",
+    'UN DICHO, una expresión &mdash;de <em>amar</em>, decir, y así una cosa dicha, a menudo una promesa. El cántico de Moisés la tiene, <em>que se destile mi palabra como el rocío</em> (<a href="deuteronomy-32.es.html#v32-2">Deuteronomio 32:2</a>, ya en estas páginas). ⭐ El <a href="psalms-119.es.html#v119-11">Salmo 119</a> (ya en estas páginas) la usa en diecinueve versículos, leídos uno por uno, junto a <em>davar</em>, «palabra», y esta traducción mantiene las dos separadas: <em>En mi corazón he atesorado tu dicho</em> (119:11), <em>¡Qué dulce es tu dicho a mi paladar</em> (119:103), <em>Tu dicho está muy refinado</em> (119:140). La TNM 1987 conserva «dicho»; la RV 1909 y la RV60 alternan «dichos» y «palabra»; la NVI lee a menudo «promesa».')
+
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] == "cherpah":
+        _a = "Psalm 119:22 (not yet on these pages) asks God for what Joshua 5:9 says he did, <em>roll reproach away from me</em>,"
+        assert _t.count(_a) == 1, "cherpah"
+        _t = _t.replace(_a, '<a href="psalms-119.html#v119-22">Psalm 119:22</a> (now on these pages) asks God for what Joshua 5:9 says he did, <em>roll reproach and contempt off me</em>,'); _n += 1
+    elif _d[0] == "avad":
+        _a = "Psalm 119:176, <em>I have strayed like a lost sheep</em>, and Jeremiah 50:6's <em>lost sheep</em> (neither yet on these pages)"
+        assert _t.count(_a) == 1, "avad"
+        _t = _t.replace(_a, '<a href="psalms-119.html#v119-176">Psalm 119:176</a> (now on these pages), <em>I have strayed like a lost sheep</em>, and Jeremiah 50:6\'s <em>lost sheep</em> (not yet on these pages)'); _n += 1
+    elif _d[0] == "shagah":
+        _a = "<em>let me not stray from your commandments</em> (Psalm 119:10) and <em>you have rebuked the proud, the cursed, who stray from your commandments</em> (Psalm 119:21; neither yet on these pages)"
+        assert _t.count(_a) == 1, "shagah"
+        _t = _t.replace(_a, '<em>let me not stray from your commandments</em> (<a href="psalms-119.html#v119-10">Psalm 119:10</a>) and <em>you have rebuked the arrogant, the cursed, who stray from your commandments</em> (<a href="psalms-119.html#v119-21">Psalm 119:21</a>; both now on these pages)'); _n += 1
+    elif _d[0] == "galal":
+        _a = "<em>roll reproach away from me</em> &mdash; <span data-heb=\"גל מעלי\">a pairing that stands in one verse of the Hebrew Bible</span>, Psalm 119:22 (not yet on these pages)."
+        assert _t.count(_a) == 1, "galal"
+        _t = _t.replace(_a, '<em>roll reproach and contempt off me</em> &mdash; <span data-heb="גל מעלי">a pairing that stands in one verse of the Hebrew Bible</span>, <a href="psalms-119.html#v119-22">Psalm 119:22</a> (now on these pages).'); _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 4, _n
+for _k, _a, _b in [
+    ("cherpah", "El Salmo 119:22 (todavía no en estas páginas) pide",
+     'El <a href="psalms-119.es.html#v119-22">Salmo 119:22</a> (ya en estas páginas) pide'),
+    ("avad", "el Salmo 119:176, <em>anduve errante como oveja perdida</em>, y las <em>ovejas perdidas</em> de Jeremías 50:6 (ninguno de los dos todavía en estas páginas)",
+     'el <a href="psalms-119.es.html#v119-176">Salmo 119:176</a> (ya en estas páginas), <em>me he descarriado como oveja perdida</em>, y las <em>ovejas perdidas</em> de Jeremías 50:6 (todavía no en estas páginas)'),
+    ("shagah", "<em>no me dejes desviarme de tus mandamientos</em> (Salmo 119:10) y <em>reprendiste a los soberbios, los malditos, que se desvían de tus mandamientos</em> (Salmo 119:21; ninguno todavía en estas páginas)",
+     '<em>no me dejes desviarme de tus mandamientos</em> (<a href="psalms-119.es.html#v119-10">Salmo 119:10</a>) y <em>has reprendido a los soberbios, los malditos, que se desvían de tus mandamientos</em> (<a href="psalms-119.es.html#v119-21">Salmo 119:21</a>; los dos ya en estas páginas)'),
+    ("galal", "el Salmo 119:22 (todavía no en estas páginas)",
+     'el <a href="psalms-119.es.html#v119-22">Salmo 119:22</a> (ya en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+
+_DICT119_EN = {
+    "torah": ' ⭐ <a href="psalms-119.html#v119-1">Psalm 119</a> (now on these pages) names it in twenty-five of its 176 verses, first among eight words for what God has said: <em>Oh how I love your law! All the day it is my musing</em> (119:97).',
+    "edut": ' ⭐ In the plural, <em>edot</em>, &lsquo;testimonies&rsquo;, it is one of the eight words of <a href="psalms-119.html#v119-2">Psalm 119</a> (now on these pages): <em>Happy are those who guard his testimonies</em> (119:2).',
+    "chok": ' ⭐ <a href="psalms-119.html#v119-12">Psalm 119</a> (now on these pages) asks again and again <em>teach me your statutes</em> (119:12, 26, 64, 68, 124, 135).',
+    "mitzvah": ' ⭐ <a href="psalms-119.html#v119-96">Psalm 119:96</a> (now on these pages): <em>To all perfection I have seen an end; your commandment is exceedingly wide</em>.',
+    "mishpat": ' ⭐ <a href="psalms-119.html#v119-7">Psalm 119</a> (now on these pages) uses the plural for God&rsquo;s ordinances, <em>your righteous ordinances</em> (119:7, 62, 106, 164), and the singular for justice done, <em>I have done justice and righteousness</em> (119:121).',
+    "taam": ' ⭐ <a href="psalms-119.html#v119-66">Psalm 119:66</a> (now on these pages) asks for it: <em>Teach me good sense and knowledge</em>.',
+    "tamim": ' ⭐ <a href="psalms-119.html#v119-1">Psalm 119:1</a> (now on these pages): <em>Happy are those whose way is blameless</em>.',
+}
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT119_EN:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_d[4] + _DICT119_EN[_d[0]],) + tuple(_d[5:])
+for _k, _b in [
+    ("torah", ' ⭐ El <a href="psalms-119.es.html#v119-1">Salmo 119</a> (ya en estas páginas) la nombra en veinticinco de sus 176 versículos, la primera de ocho palabras para lo que Dios ha dicho: <em>¡Cuánto amo tu ley! Todo el día es mi meditación</em> (119:97).'),
+    ("edut", ' ⭐ En plural, <em>edot</em>, «testimonios», es una de las ocho palabras del <a href="psalms-119.es.html#v119-2">Salmo 119</a> (ya en estas páginas): <em>Felices los que custodian sus testimonios</em> (119:2).'),
+    ("chok", ' ⭐ El <a href="psalms-119.es.html#v119-12">Salmo 119</a> (ya en estas páginas) pide una y otra vez <em>enséñame tus estatutos</em> (119:12, 26, 64, 68, 124, 135).'),
+    ("mitzvah", ' ⭐ <a href="psalms-119.es.html#v119-96">Salmo 119:96</a> (ya en estas páginas): <em>A toda perfección he visto un límite; tu mandamiento es sumamente espacioso</em>.'),
+    ("mishpat", ' ⭐ El <a href="psalms-119.es.html#v119-7">Salmo 119</a> (ya en estas páginas) usa el plural para las ordenanzas de Dios, <em>tus justas ordenanzas</em> (119:7, 62, 106, 164), y el singular para la justicia hecha, <em>he hecho derecho y justicia</em> (119:121).'),
+    ("taam", ' ⭐ El <a href="psalms-119.es.html#v119-66">Salmo 119:66</a> (ya en estas páginas) lo pide: <em>Enséñame buen juicio y conocimiento</em>.'),
+    ("tamim", ' ⭐ <a href="psalms-119.es.html#v119-1">Salmo 119:1</a> (ya en estas páginas): <em>Felices los de camino intachable</em>.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["psalms119"] = dict(era="return",
+    when="“Happy are those whose way is blameless”: the longest chapter in the Bible, an alphabet of twenty-two stanzas of eight verses, in which almost every line names God’s law, testimonies, precepts, statutes, commandments, ordinances, word or saying, and which ends “I have strayed like a lost sheep; seek your servant”.",
+    clock="Undated, and the psalm has no heading; its date is disputed, and many place it after the exile, when the written law stood at the center of Israel’s life. The psalm itself names no event.")
+
+CHAPTER_ART["psalms119"] = [dict(
+    file="st-albans-psalter-lucerna.jpg",
+    title="Lucerna pedibus meis (the St Albans Psalter)", title_es="Lucerna pedibus meis (el Salterio de San Albano)",
+    artist="Unknown artist of the St Albans Psalter",
+    year="12th century",
+    location="Dombibliothek Hildesheim", location_es="Biblioteca de la Catedral de Hildesheim",
+    alt="A manuscript page in a single column of Latin text in brown ink, with red, green and blue initials. A tall painted letter L runs down the left side: in its upright stands a haloed, bearded figure holding a book, and in its foot a haloed man in a striped robe holds a tiny naked figure in one hand and points with the other to a line of red writing in the margin. The red word LUCERNA begins the text beside the letter.",
+    note="The initial L of <em>Lucerna pedibus meis verbum tuum</em>, &ldquo;Your word is a lamp to my feet&rdquo;, verse 105, which the Latin Bible counts as Psalm 118. The picture also illustrates verse 109: the man holds a small figure, his soul, in his hand, and points to the red line <em>anima mea in manibus meis semper</em>, &ldquo;my soul is in my hands always&rdquo;; the text column reads <em>in manibus tuis</em>, &ldquo;in your hands&rdquo;.",
+    note_es="La inicial L de <em>Lucerna pedibus meis verbum tuum</em>, «Lámpara es a mis pies tu palabra», el versículo 105, que la Biblia latina cuenta como Salmo 118. La imagen ilustra también el versículo 109: el hombre sostiene en la mano una figura pequeña, su alma, y señala la línea roja <em>anima mea in manibus meis semper</em>, «mi alma está siempre en mis manos»; la columna del texto lee <em>in manibus tuis</em>, «en tus manos».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Psalm_118_Initial_L.jpg",
+)]
