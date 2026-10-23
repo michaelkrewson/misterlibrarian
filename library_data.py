@@ -48884,3 +48884,190 @@ CHAPTER_ART["1sam16"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._26r.jpg",
 )]
+
+# --- 1 Samuel 17 ---
+DICTIONARY.extend([
+    ("benayim", "ish ha-benayim", "אִישׁ הַבֵּנַיִם", "ish ha-benayim",
+     'THE MAN OF THE IN-BETWEEN &mdash; the champion who steps into the gap between two drawn-up armies to decide the war by single combat; from <em>bein</em>, &ldquo;between&rdquo;. ⭐ <span data-heb="איש הבנים">The phrase stands in two verses of the Hebrew Bible</span>, both of Goliath: &ldquo;And the champion came out from the camps of the Philistines&rdquo; (<a href="1-samuel-17.html#v17-4">1 Samuel 17:4</a>, and again at 17:23, now on these pages). ⚠ The Geneva keeps the picture, &ldquo;a man between them both&rdquo;, and the RV 1909 has &laquo;un varón &hellip; que se puso entre los dos campos&raquo;; the KJV, ASV and NWT 1984 say &ldquo;champion&rdquo;; the Douay, from the Latin, &ldquo;a man baseborn&rdquo;. The Greek has &ldquo;a mighty man&rdquo;, and calls the fight a <em>monomachia</em>, single combat (17:10).',
+     ("1 Samuel", 17, 4)),
+    ("cheraf", "cheraf", "חָרַף", "charaf",
+     'TO TAUNT, to revile, to heap reproach on &mdash; the verb of <em><a href="dictionary.html#cherpah">cherpah</a></em>, &ldquo;reproach&rdquo;. The men of Succoth &ldquo;taunted&rdquo; Gideon over Zebah and Zalmunna (<a href="judges-8.html#v8-15">Judges 8:15</a>, now on these pages). ⭐ It is the word of the Goliath chapter: &ldquo;I taunt the battle lines of Israel this day&rdquo;, says the Philistine (<a href="1-samuel-17.html#v17-10">1 Samuel 17:10</a>, now on these pages); the men of Israel say it of him (17:25); and David says it three times, &ldquo;that he should taunt the battle lines of the living God&rdquo; (17:26, 36, 45). ⚠ The KJV and ASV have &ldquo;defy&rdquo;, the NWT 1984 &ldquo;taunt&rdquo;, the RV60 &laquo;provocar&raquo;.',
+     ("1 Samuel", 17, 10)),
+    ("arel", "arel", "עָרֵל", "arel",
+     'UNCIRCUMCISED &mdash; in the stories of the judges and of Saul, the standing word for the Philistines, the one neighbour of Israel that did not practise circumcision. Samson&rsquo;s parents ask why he must take a wife &ldquo;from the uncircumcised Philistines&rdquo; (<a href="judges-14.html#v14-3">Judges 14:3</a>), and Jonathan calls their outpost &ldquo;these uncircumcised&rdquo; (<a href="1-samuel-14.html#v14-6">1 Samuel 14:6</a>, both now on these pages). ⭐ David twice, &ldquo;who is this uncircumcised Philistine?&rdquo; (<a href="1-samuel-17.html#v17-26">1 Samuel 17:26</a>, 36, now on these pages), and David&rsquo;s lament for Saul and Jonathan fears &ldquo;the daughters of the uncircumcised&rdquo; exulting (<a href="2-samuel-1.html#v1-20">2 Samuel 1:20</a>, now on these pages). ⚠ The TLB has &ldquo;heathen Philistine&rdquo;.',
+     ("1 Samuel", 17, 26)),
+])
+DICTIONARY_ES["benayim"] = ("ish ha-benáyim",
+    'EL HOMBRE DE EN MEDIO &mdash; el campeón que se planta en el hueco entre dos ejércitos en orden de batalla para decidir la guerra en combate singular; de <em>bein</em>, «entre». ⭐ <span data-heb="איש הבנים">La frase está en dos versículos de la Biblia hebrea</span>, los dos de Goliat: «Y salió el campeón de los campamentos de los filisteos» (<a href="1-samuel-17.es.html#v17-4">1 Samuel 17:4</a>, y otra vez en 17:23, ya en estas páginas). ⚠ La RV 1909 conserva la imagen, «un varón … que se puso entre los dos campos», como la Ginebra inglesa, «a man between them both»; la RV60 dice «un paladín», la NVI «un famoso guerrero»; la Douay inglesa, desde el latín, «a man baseborn». El griego dice «un hombre poderoso», y llama a la pelea una <em>monomachia</em>, combate singular (17:10).')
+DICTIONARY_ES["cheraf"] = ("jeraf",
+    'INJURIAR, ultrajar, echar afrenta encima &mdash; el verbo de <em><a href="diccionario.html#cherpah">jerpá</a></em>, «afrenta». Los hombres de Sucot «injuriaron» a Gedeón por Zebaj y Zalmuna (<a href="judges-8.es.html#v8-15">Jueces 8:15</a>, ya en estas páginas). ⭐ Es la palabra del capítulo de Goliat: «Yo injurio hoy las líneas de batalla de Israel», dice el filisteo (<a href="1-samuel-17.es.html#v17-10">1 Samuel 17:10</a>, ya en estas páginas); los hombres de Israel lo dicen de él (17:25); y David lo dice tres veces, «para injuriar a las líneas de batalla del Dios viviente» (17:26, 36, 45). ⚠ La RV60 dice «provocar», la TNM 1987 «desafiar con escarnio», la NVI «desafiar».')
+DICTIONARY_ES["arel"] = ("arel",
+    'INCIRCUNCISO &mdash; en los relatos de los jueces y de Saúl, la palabra fija para los filisteos, el único vecino de Israel que no practicaba la circuncisión. Los padres de Sansón preguntan por qué ha de tomar mujer «de los filisteos incircuncisos» (<a href="judges-14.es.html#v14-3">Jueces 14:3</a>), y Jonatán llama a su avanzada «estos incircuncisos» (<a href="1-samuel-14.es.html#v14-6">1 Samuel 14:6</a>, los dos ya en estas páginas). ⭐ David dos veces, «¿quién es este filisteo incircunciso?» (<a href="1-samuel-17.es.html#v17-26">1 Samuel 17:26</a>, 36, ya en estas páginas), y el lamento de David por Saúl y Jonatán teme que «las hijas de los incircuncisos» salten de gozo (<a href="2-samuel-1.es.html#v1-20">2 Samuel 1:20</a>, ya en estas páginas). ⚠ La TLB inglesa dice «heathen Philistine».')
+
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] == "kelev":
+        _a = "(1 Samuel 17:43, not yet on these pages)"
+        assert _t.count(_a) == 1, "kelev"
+        _t = _t.replace(_a, '(<a href="1-samuel-17.html#v17-43">1 Samuel 17:43</a>, now on these pages)')
+        _n += 1
+    elif _d[0] == "kidon":
+        _a = "(1 Samuel 17:6, 45)"
+        assert _t.count(_a) == 1, "kidon"
+        _t = _t.replace(_a, '(<a href="1-samuel-17.html#v17-6">1 Samuel 17:6</a>, 45, now on these pages)')
+        _t += ' ⭐ In <a href="1-samuel-17.html#v17-6">1 Samuel 17</a> (now on these pages) the shelf splits differently than at Ai: the Greek reads a shield, <em>aspis</em>, at both verses, and the KJV (&ldquo;a target of brass&rdquo;, then &ldquo;a shield&rdquo;), the Geneva and the RV 1909 (&laquo;escudo&raquo;) follow it, while the ASV, NWT 1984 and RV60 keep &ldquo;javelin&rdquo;.'
+        _n += 1
+    elif _d[0] == "qalui":
+        _a = "(Ruth 2:14), Jesse&rsquo;s gift for Saul&rsquo;s camp (1 Samuel 17:17), Abigail&rsquo;s (25:18) and Barzillai&rsquo;s (2 Samuel 17:28; none yet on these pages)."
+        assert _t.count(_a) == 1, "qalui"
+        _t = _t.replace(_a, '(<a href="ruth-2.html#v2-14">Ruth 2:14</a>) and Jesse&rsquo;s gift for Saul&rsquo;s camp (<a href="1-samuel-17.html#v17-17">1 Samuel 17:17</a>, both now on these pages), Abigail&rsquo;s (25:18) and Barzillai&rsquo;s (2 Samuel 17:28; neither yet on these pages).')
+        _n += 1
+    elif _d[0] == "admoni":
+        _a = "(1 Samuel 17:42, not yet on these pages)"
+        assert _t.count(_a) == 1, "admoni"
+        _t = _t.replace(_a, '(<a href="1-samuel-17.html#v17-42">1 Samuel 17:42</a>, now on these pages), &ldquo;for he was a youth, and ruddy, with a beautiful appearance&rdquo;')
+        _n += 1
+    elif _d[0] == "elah":
+        _t += ' ⭐ The valley where David meets Goliath is the <em>emeq ha-elah</em>, &ldquo;the valley of the terebinth&rdquo; (<a href="1-samuel-17.html#v17-2">1 Samuel 17:2</a>, now on these pages), and two versions translate the name: the Douay &ldquo;the valley of Terebinth&rdquo;, the RV 1909 &laquo;el valle del Alcornoque&raquo;, the valley of the cork oak.'
+        _n += 1
+    elif _d[0] == "maagal":
+        _t += ' ⭐ Its feminine, <em>ma&rsquo;galah</em>, is the ring a camp is drawn up in: David &ldquo;came to the ring of the camp&rdquo; with his brothers&rsquo; food (<a href="1-samuel-17.html#v17-20">1 Samuel 17:20</a>, now on these pages), where the shelf has &ldquo;the camp enclosure&rdquo; (NWT 1984), &ldquo;the place of the wagons&rdquo; (ASV) and &ldquo;the trench&rdquo; (KJV).'
+        _n += 1
+    elif _d[0] == "kelim":
+        _t += ' ⭐ In <a href="1-samuel-17.html#v17-22">1 Samuel 17</a> (now on these pages) one word does four jobs: the baggage David leaves &ldquo;in the hand of the keeper of the baggage&rdquo; (v22), the shepherds&rsquo; bag and &ldquo;the bag&rdquo; he takes the stone from (vv40, 49), and the Philistine&rsquo;s weapons he puts in his tent (v54).'
+        _n += 1
+    if _t != _d[4]:
+        _l = list(_d); _l[4] = _t
+        DICTIONARY[_i] = type(_d)(_l)
+assert _n == 7, _n
+for _k, _a, _b in [
+    ("kelev", "(1 Samuel 17:43, todavía no en estas páginas)", '(<a href="1-samuel-17.es.html#v17-43">1 Samuel 17:43</a>, ya en estas páginas)'),
+    ("kidon", "(1 Samuel 17:6, 45)", '(<a href="1-samuel-17.es.html#v17-6">1 Samuel 17:6</a>, 45, ya en estas páginas)'),
+    ("qalui", "(Rut 2:14), el regalo de Isaí para el campamento de Saúl (1 Samuel 17:17), el de Abigaíl (25:18) y el de Barzilai (2 Samuel 17:28; ninguno todavía en estas páginas).",
+     '(<a href="ruth-2.es.html#v2-14">Rut 2:14</a>) y el regalo de Isaí para el campamento de Saúl (<a href="1-samuel-17.es.html#v17-17">1 Samuel 17:17</a>, los dos ya en estas páginas), el de Abigaíl (25:18) y el de Barzilai (2 Samuel 17:28; ninguno de los dos todavía en estas páginas).'),
+    ("admoni", "(1 Samuel 17:42, todavía no en estas páginas)", '(<a href="1-samuel-17.es.html#v17-42">1 Samuel 17:42</a>, ya en estas páginas), «porque era un muchacho, y rubicundo, de hermoso aspecto»'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("kidon", ' ⭐ En <a href="1-samuel-17.es.html#v17-6">1 Samuel 17</a> (ya en estas páginas) el estante se reparte de otro modo que en Hai: el griego lee un escudo, <em>aspís</em>, en los dos versículos, y la RV 1909 («escudo de acero») y la KJV inglesa lo siguen, mientras la RV60 y la TNM 1987 conservan «jabalina».'),
+    ("elah", ' ⭐ El valle donde David se enfrenta a Goliat es el <em>émeq ha-elá</em>, «el valle del terebinto» (<a href="1-samuel-17.es.html#v17-2">1 Samuel 17:2</a>, ya en estas páginas), y dos versiones traducen el nombre: la RV 1909 «el valle del Alcornoque», y la Douay inglesa «the valley of Terebinth».'),
+    ("maagal", ' ⭐ Su femenino, <em>maagalá</em>, es el cerco en que se dispone un campamento: David «llegó al cerco del campamento» con la comida de sus hermanos (<a href="1-samuel-17.es.html#v17-20">1 Samuel 17:20</a>, ya en estas páginas), donde el estante tiene «el cercado del campamento» (TNM 1987) y «el atrincheramiento del ejército» (RV 1909).'),
+    ("kelim", ' ⭐ En <a href="1-samuel-17.es.html#v17-22">1 Samuel 17</a> (ya en estas páginas) una sola palabra hace cuatro oficios: el equipaje que David deja «en mano del guarda del equipaje» (v22), la bolsa de pastor y «la bolsa» de donde saca la piedra (vv40, 49), y las armas del filisteo que pone en su tienda (v54).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="goliath", name="Goliath", kind="person",
+    aliases=["Goliath"], refs=[("1 Samuel", 17, 4), ("1 Samuel", 17, 23), ("1 Samuel", 17, 49), ("1 Samuel", 17, 51)], videos=[],
+    desc='The Philistine champion &ldquo;from Gath&rdquo; who challenges Israel to single combat in the valley of Elah and is killed by David with a sling and a stone (<a href="1-samuel-17.html#v17-4">1 Samuel 17</a>, now on these pages). He is called <em><a href="dictionary.html#benayim">ish ha-benayim</a></em>, &ldquo;the man of the in-between&rdquo;, the one who stands between two armies. ⚠ His height is &ldquo;six cubits and a span&rdquo; in the Hebrew, about three metres, and &ldquo;four cubits and a span&rdquo;, about two, in the Greek and in Josephus (<em>Antiquities</em> 6.9.1, Whiston). He comes from Gath, one of the three cities where Joshua 11:22 says the Anakim survived (<a href="joshua-11.html#v11-22">Joshua 11:22</a>, now on these pages). Armoured in bronze, with a spear-shaft &ldquo;like a weavers&rsquo; beam&rdquo;, he taunts &ldquo;the battle lines of the living God&rdquo; for forty days; the stone sinks into his forehead, he falls on his face to the ground, and David cuts off his head with his own sword (17:49&ndash;51). The sword is later kept at Nob (21:10, not yet on these pages). ⚠ 2 Samuel 21:19 says that Elhanan of Bethlehem &ldquo;struck Goliath the Gittite&rdquo;, whose spear-shaft was &ldquo;like a weavers&rsquo; beam&rdquo;, and 1 Chronicles 20:5 that Elhanan struck &ldquo;Lahmi the brother of Goliath&rdquo; (neither yet on these pages); readers have explained the two verses as a copyist&rsquo;s slip, as two men of the same name, or as a story that has moved from one hero to another, and these pages do not decide.'))
+ENCYCLOPEDIA_ES["goliath"] = ("Goliat",
+    'El campeón filisteo «de Gat» que desafía a Israel a combate singular en el valle de Elá y al que David mata con una honda y una piedra (<a href="1-samuel-17.es.html#v17-4">1 Samuel 17</a>, ya en estas páginas). Se le llama <em><a href="diccionario.html#benayim">ish ha-benáyim</a></em>, «el hombre de en medio», el que se planta entre dos ejércitos. ⚠ Su altura es de «seis codos y un palmo» en el hebreo, unos tres metros, y de «cuatro codos y un palmo», unos dos, en el griego y en Josefo (<em>Antigüedades</em> 6.9.1, Whiston). Viene de Gat, una de las tres ciudades donde Josué 11:22 dice que sobrevivieron los anaquitas (<a href="joshua-11.es.html#v11-22">Josué 11:22</a>, ya en estas páginas). Armado de bronce, con un asta de lanza «como un enjullo de tejedores», injuria «las líneas de batalla del Dios viviente» durante cuarenta días; la piedra se le hunde en la frente, cae sobre su rostro a tierra, y David le corta la cabeza con su propia espada (17:49&ndash;51). La espada se guarda después en Nob (21:10, todavía no en estas páginas). ⚠ 2 Samuel 21:19 dice que Eljanán de Belén «mató a Goliat el geteo», cuya asta de lanza era «como un enjullo de tejedores», y 1 Crónicas 20:5 que Eljanán mató a «Lajmí, hermano de Goliat» (ninguno de los dos todavía en estas páginas); los lectores han explicado los dos versículos como un desliz de copista, como dos hombres del mismo nombre, o como una historia que pasó de un héroe a otro, y estas páginas no deciden.')
+
+ENCYCLOPEDIA.append(dict(slug="socoh", name="Socoh (in the lowland)", kind="place", coords=(31.680, 34.962, 0.05), approx=True,
+    modern="Khirbet Shuweikeh, above the valley of Elah",
+    aliases=["Socoh"], refs=[("1 Samuel", 17, 1)], videos=[],
+    desc='A town of Judah&rsquo;s lowland, listed beside Azekah: &ldquo;Socoh, and Azekah&rdquo; (<a href="joshua-15.html#v15-35">Joshua 15:35</a>, now on these pages). ⭐ The Philistines &ldquo;were gathered at Socoh, which belongs to Judah, and they encamped between Socoh and Azekah, in Ephes-dammim&rdquo; before Goliath came out (<a href="1-samuel-17.html#v17-1">1 Samuel 17:1</a>, now on these pages). ⚠ Not the Socoh of the hill country in the same list (Joshua 15:48). The site is usually placed at Khirbet Shuweikeh, on the south side of the valley of Elah; the map point is approximate.'))
+ENCYCLOPEDIA_ES["socoh"] = ("Soco (en la Sefelá)",
+    'Un pueblo de la Sefelá de Judá, nombrado junto a Azeca: «Soco, y Azeca» (<a href="joshua-15.es.html#v15-35">Josué 15:35</a>, ya en estas páginas). ⭐ Los filisteos «se juntaron en Soco, que pertenece a Judá, y acamparon entre Soco y Azeca, en Efes-damim» antes de que saliera Goliat (<a href="1-samuel-17.es.html#v17-1">1 Samuel 17:1</a>, ya en estas páginas). ⚠ No es el Soco de la montaña de la misma lista (Josué 15:48). El sitio suele situarse en Jirbet Shuweikeh, en el lado sur del valle de Elá; el punto del mapa es aproximado.')
+
+ENCYCLOPEDIA.append(dict(slug="valley-of-elah", name="Valley of Elah", kind="place", coords=(31.690, 34.955, 0.08), approx=True,
+    modern="Wadi es-Sant, west of Bethlehem in the Judean lowland",
+    aliases=["valley of Elah"], refs=[("1 Samuel", 17, 2), ("1 Samuel", 17, 19)], videos=[],
+    desc='&ldquo;The valley of the terebinth&rdquo;, <em>emeq ha-<a href="dictionary.html#elah">elah</a></em>, one of the broad valleys that lead up from the Philistine plain into the hills of Judah. ⭐ Saul and the men of Israel &ldquo;encamped in the valley of Elah&rdquo; facing the Philistines, each army on its mountain &ldquo;with the ravine between them&rdquo;, and there David met Goliath (<a href="1-samuel-17.html#v17-2">1 Samuel 17:2&ndash;3</a>, 19, now on these pages); Goliath&rsquo;s sword is later remembered as the sword &ldquo;of the Philistine, whom you struck in the valley of Elah&rdquo; (21:10, not yet on these pages). The Douay translates the name, &ldquo;the valley of Terebinth&rdquo;. ⚠ It is usually identified with the Wadi es-Sant; the map point marks the valley, not a site.'))
+ENCYCLOPEDIA_ES["valley-of-elah"] = ("Valle de Elá",
+    '«El valle del terebinto», <em>émeq ha-<a href="diccionario.html#elah">elá</a></em>, uno de los valles anchos que suben de la llanura filistea a los montes de Judá. ⭐ Saúl y los hombres de Israel «acamparon en el valle de Elá» frente a los filisteos, cada ejército sobre su monte «con la quebrada entre ellos», y allí David se enfrentó a Goliat (<a href="1-samuel-17.es.html#v17-2">1 Samuel 17:2&ndash;3</a>, 19, ya en estas páginas); la espada de Goliat se recuerda después como la espada «del filisteo, al que heriste en el valle de Elá» (21:10, todavía no en estas páginas). La RV 1909 traduce el nombre, «el valle del Alcornoque». ⚠ Suele identificarse con el Wadi es-Sant; el punto del mapa marca el valle, no un sitio.')
+
+ENCYCLOPEDIA.append(dict(slug="ephes-dammim", name="Ephes-dammim", kind="place", coords=None, approx=True,
+    modern="Unidentified; between Socoh and Azekah",
+    aliases=["Ephes-dammim"], refs=[("1 Samuel", 17, 1)], videos=[],
+    desc='The place of the Philistine camp &ldquo;between Socoh and Azekah&rdquo; before Goliath&rsquo;s challenge (<a href="1-samuel-17.html#v17-1">1 Samuel 17:1</a>, now on these pages). The name is read as &ldquo;the end of blood&rdquo; or &ldquo;the boundary of blood&rdquo;. The Geneva has &ldquo;in the coast of Dammim&rdquo;, the Douay &ldquo;in the borders of Dommim&rdquo;. ⚠ The site is not known, and no map point is given.'))
+ENCYCLOPEDIA_ES["ephes-dammim"] = ("Efes-damim",
+    'El lugar del campamento filisteo «entre Soco y Azeca» antes del desafío de Goliat (<a href="1-samuel-17.es.html#v17-1">1 Samuel 17:1</a>, ya en estas páginas). El nombre se lee «el fin de la sangre» o «el límite de la sangre». La NVI escribe «Efesdamín»; la Douay inglesa «in the borders of Dommim». ⚠ No se sabe dónde estaba, y no se da punto en el mapa.')
+
+ENCYCLOPEDIA.append(dict(slug="shaaraim", name="Shaaraim", kind="place", coords=(31.6966, 34.9573, 0.03), approx=True,
+    modern="Proposed: Khirbet Qeiyafa, above the valley of Elah",
+    aliases=["Shaaraim"], refs=[("Joshua", 15, 36), ("1 Samuel", 17, 52)], videos=[],
+    desc='&ldquo;Two gates&rdquo; &mdash; a town of Judah&rsquo;s lowland, listed after Socoh and Azekah (<a href="joshua-15.html#v15-36">Joshua 15:36</a>, now on these pages). ⭐ After Goliath fell, &ldquo;the slain of the Philistines fell on the way of Shaaraim, as far as Gath and as far as Ekron&rdquo; (<a href="1-samuel-17.html#v17-52">1 Samuel 17:52</a>, now on these pages). ⚠ Its excavators have proposed that Khirbet Qeiyafa, a fortified site above the valley of Elah with two gates, is Shaaraim; that is a proposal, not a settled identification, and the map point is placed there on that basis.'))
+ENCYCLOPEDIA_ES["shaaraim"] = ("Saaraim",
+    '«Dos puertas» &mdash; un pueblo de la Sefelá de Judá, nombrado después de Soco y Azeca (<a href="joshua-15.es.html#v15-36">Josué 15:36</a>, ya en estas páginas). ⭐ Después de la caída de Goliat, «los muertos de los filisteos cayeron por el camino de Saaraim, hasta Gat y hasta Ecrón» (<a href="1-samuel-17.es.html#v17-52">1 Samuel 17:52</a>, ya en estas páginas). ⚠ Sus excavadores han propuesto que Jirbet Qeiyafa, un sitio fortificado sobre el valle de Elá con dos puertas, sea Saaraim; es una propuesta, no una identificación asentada, y el punto del mapa se pone allí por esa razón.')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "anakim":
+        _a = "(1 Samuel 17, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, "anakim"
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-17.html#v17-4">1 Samuel 17</a>, now on these pages)')
+    elif _e["slug"] == "azekah":
+        _a = "(1 Samuel 17:1), and Jeremiah names Lachish and Azekah as the last fortified cities of Judah still holding out against Babylon (Jeremiah 34:7; neither yet on these pages)."
+        assert _e["desc"].count(_a) == 1, "azekah"
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-17.html#v17-1">1 Samuel 17:1</a>, now on these pages), and Jeremiah names Lachish and Azekah as the last fortified cities of Judah still holding out against Babylon (Jeremiah 34:7, not yet on these pages).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 1)]
+    elif _e["slug"] == "jesse":
+        _a = "⚠ Here and at 1 Samuel 17:12 he has eight sons; 1 Chronicles 2:13&ndash;15 names seven and calls David the seventh (neither yet on these pages)."
+        assert _e["desc"].count(_a) == 1, "jesse"
+        _e["desc"] = _e["desc"].replace(_a, '⚠ Here and at <a href="1-samuel-17.html#v17-12">1 Samuel 17:12</a> (now on these pages) he has eight sons; 1 Chronicles 2:13&ndash;15 names seven and calls David the seventh (not yet on these pages). ⭐ In 1 Samuel 17 he is introduced again, &ldquo;this Ephrathite of Bethlehem in Judah&rdquo;, old in the days of Saul, and sends David to the camp with roasted grain, ten loaves and ten cheeses (17:12, 17&ndash;18).')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 12), ("1 Samuel", 17, 17), ("1 Samuel", 17, 58)]
+    elif _e["slug"] == "eliab":
+        _a = "(1 Samuel 17:13, not yet on these pages)"
+        assert _e["desc"].count(_a) == 1, "eliab"
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-17.html#v17-13">1 Samuel 17:13</a>, now on these pages)')
+        _e["desc"] += ' ⭐ There his anger burns against David: &ldquo;I know your presumption and the evil of your heart&rdquo; (<a href="1-samuel-17.html#v17-28">17:28</a>), the brother passed over because Jehovah sees the heart now claiming to see into David&rsquo;s.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 13), ("1 Samuel", 17, 28)]
+    elif _e["slug"] == "abner":
+        _a = "(1 Samuel 17:55&ndash;57; 2 Samuel 2&ndash;3), none of these yet on these pages."
+        assert _e["desc"].count(_a) == 1, "abner"
+        _e["desc"] = _e["desc"].replace(_a, '(<a href="1-samuel-17.html#v17-55">1 Samuel 17:55&ndash;57</a>, now on these pages; 2 Samuel 2&ndash;3, not yet on these pages). ⭐ Asked &ldquo;Whose son is this youth, Abner?&rdquo;, he answers &ldquo;By the life of your soul, O king, I do not know&rdquo;.')
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 55), ("1 Samuel", 17, 57)]
+    elif _e["slug"] == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-17.html#v17-12">1 Samuel 17</a> (now on these pages): sent by Jesse with food for his brothers, he hears Goliath taunt &ldquo;the battle lines of the living God&rdquo;, tells Saul of the lion and the bear, refuses Saul&rsquo;s armour, and goes out with five smooth stones and a sling &ldquo;in the name of Jehovah of armies&rdquo;; the stone sinks into the Philistine&rsquo;s forehead, and David cuts off his head with his own sword.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 12), ("1 Samuel", 17, 45), ("1 Samuel", 17, 50)]
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' Facing the Philistines in the valley of Elah, he and all Israel are &ldquo;dismayed and very afraid&rdquo; at Goliath; he dresses David in his garments, a helmet of bronze and a coat of mail, which David cannot walk in, and afterwards asks Abner &ldquo;Whose son is this youth?&rdquo; (<a href="1-samuel-17.html#v17-11">1 Samuel 17</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 11), ("1 Samuel", 17, 38), ("1 Samuel", 17, 55)]
+    elif _e["slug"] == "gath":
+        _e["desc"] += ' ⭐ Goliath is &ldquo;from Gath&rdquo;, and the pursuit after his death runs &ldquo;as far as Gath and as far as Ekron&rdquo; (<a href="1-samuel-17.html#v17-4">1 Samuel 17:4</a>, 52, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 4), ("1 Samuel", 17, 52)]
+    elif _e["slug"] == "ekron":
+        _e["desc"] += ' ⭐ After Goliath fell, Israel pursued the Philistines &ldquo;to the gates of Ekron&rdquo; (<a href="1-samuel-17.html#v17-52">1 Samuel 17:52</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 17, 52)]
+for _k, _a, _b in [
+    ("anakim", "(1 Samuel 17, todavía no en estas páginas)", '(<a href="1-samuel-17.es.html#v17-4">1 Samuel 17</a>, ya en estas páginas)'),
+    ("azekah", "(1 Samuel 17:1), y Jeremías nombra a Laquis y Azeca como las últimas ciudades fortificadas de Judá que aún resistían a Babilonia (Jeremías 34:7; ninguno todavía en estas páginas).",
+     '(<a href="1-samuel-17.es.html#v17-1">1 Samuel 17:1</a>, ya en estas páginas), y Jeremías nombra a Laquis y Azeca como las últimas ciudades fortificadas de Judá que aún resistían a Babilonia (Jeremías 34:7, todavía no en estas páginas).'),
+    ("jesse", "⚠ Aquí y en 1 Samuel 17:12 tiene ocho hijos; 1 Crónicas 2:13&ndash;15 nombra siete y llama a David el séptimo (ninguno de los dos todavía en estas páginas).",
+     '⚠ Aquí y en <a href="1-samuel-17.es.html#v17-12">1 Samuel 17:12</a> (ya en estas páginas) tiene ocho hijos; 1 Crónicas 2:13&ndash;15 nombra siete y llama a David el séptimo (todavía no en estas páginas). ⭐ En 1 Samuel 17 se le presenta otra vez, «este efrateo de Belén de Judá», viejo en los días de Saúl, y envía a David al campamento con grano tostado, diez panes y diez quesos (17:12, 17&ndash;18).'),
+    ("eliab", "(1 Samuel 17:13, todavía no en estas páginas)", '(<a href="1-samuel-17.es.html#v17-13">1 Samuel 17:13</a>, ya en estas páginas)'),
+    ("abner", "(1 Samuel 17:55&ndash;57; 2 Samuel 2&ndash;3), nada de ello todavía en estas páginas.",
+     '(<a href="1-samuel-17.es.html#v17-55">1 Samuel 17:55&ndash;57</a>, ya en estas páginas; 2 Samuel 2&ndash;3, todavía no en estas páginas). ⭐ Cuando se le pregunta «¿De quién es hijo este muchacho, Abner?», responde «Por la vida de tu alma, oh rey, que no lo sé».'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("eliab", ' ⭐ Allí su ira se enciende contra David: «Yo conozco tu presunción y la maldad de tu corazón» (<a href="1-samuel-17.es.html#v17-28">17:28</a>), el hermano descartado porque Jehová ve el corazón pretende ahora ver dentro del de David.'),
+    ("david", ' ⭐ <a href="1-samuel-17.es.html#v17-12">1 Samuel 17</a> (ya en estas páginas): enviado por Isaí con comida para sus hermanos, oye a Goliat injuriar «las líneas de batalla del Dios viviente», cuenta a Saúl lo del león y el oso, rechaza la armadura de Saúl, y sale con cinco piedras lisas y una honda «en el nombre de Jehová de los ejércitos»; la piedra se hunde en la frente del filisteo, y David le corta la cabeza con su propia espada.'),
+    ("saul-king", ' Frente a los filisteos en el valle de Elá, él y todo Israel «se desanimaron y tuvieron mucho miedo» ante Goliat; viste a David con sus ropas, un casco de bronce y una coraza, con los que David no puede andar, y después pregunta a Abner «¿De quién es hijo este muchacho?» (<a href="1-samuel-17.es.html#v17-11">1 Samuel 17</a>, ya en estas páginas).'),
+    ("gath", ' ⭐ Goliat es «de Gat», y la persecución tras su muerte llega «hasta Gat y hasta Ecrón» (<a href="1-samuel-17.es.html#v17-4">1 Samuel 17:4</a>, 52, ya en estas páginas).'),
+    ("ekron", ' ⭐ Después de la caída de Goliat, Israel persiguió a los filisteos «hasta las puertas de Ecrón» (<a href="1-samuel-17.es.html#v17-52">1 Samuel 17:52</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam17"] = dict(era="monarchy",
+    when="The Philistines camp between Socoh and Azekah, and Saul’s army faces them across the valley of Elah. For forty days Goliath of Gath, armoured in bronze, challenges Israel to single combat. Jesse sends David with food for his brothers; David hears the taunt, answers Eliab, and tells Saul of the lion and the bear. Refusing Saul’s armour, he goes out with his staff, five smooth stones and a sling in the name of Jehovah of armies; the stone sinks into Goliath’s forehead, David cuts off his head with his own sword, and Israel pursues the Philistines to Gath and Ekron. Saul asks Abner whose son the youth is.",
+    clock="Forty days of challenge, morning and evening (1 Samuel 17:16); the fight falls on the morning David arrives at the camp (17:20).")
+
+CHAPTER_ART["1sam17"] = [dict(
+    file="morgan-bible-david-goliath.jpg",
+    title="David Kills Goliath", title_es="David mata a Goliat",
+    artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+    year="c. 1250",
+    location="Morgan Library & Museum, New York (MS M.638, fol. 28v)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 28v)",
+    alt="Medieval manuscript page with painted scenes under gilded arches. Top left: a youth in an orange tunic, standing outside the painted frame, whirls a sling above his head while a giant in chain mail and a helmet, a stone on his forehead, staggers holding his sword. Top right: the youth kneels on the fallen giant and cuts off his head with the giant’s own sword, while armed men behind a hill turn and flee. Bottom left: the youth, holding up the severed head, is brought before a crowned king on a throne among his courtiers. Bottom right: a man takes off his robe and gives it to the youth. Latin, Persian and Hebrew-script captions fill the margins.",
+    note="Top, David slings the stone, standing outside the painted frame, and the stone shows on Goliath&rsquo;s forehead below his helmet (verses 48&ndash;49); then David kneels on him and cuts off his head with Goliath&rsquo;s own sword as the Philistines flee (verse 51). Below, Abner brings David before Saul with the head in his hand (verse 57), and on the right Jonathan gives David his robe, from the opening of the next chapter. The Latin caption above says the stone struck <em>tanta vi ut lapis fronti affigeretur</em>, &ldquo;with such force that the stone was fixed in his forehead&rdquo;, the Douay&rsquo;s reading.",
+    note_es="Arriba, David tira la piedra con la honda, de pie fuera del marco pintado, y la piedra se ve en la frente de Goliat bajo el casco (versículos 48&ndash;49); luego David se arrodilla sobre él y le corta la cabeza con la propia espada de Goliat mientras los filisteos huyen (versículo 51). Abajo, Abner lleva a David ante Saúl con la cabeza en la mano (versículo 57), y a la derecha Jonatán le da a David su manto, del comienzo del capítulo siguiente. El rótulo latino de arriba dice que la piedra golpeó <em>tanta vi ut lapis fronti affigeretur</em>, «con tanta fuerza que la piedra quedó clavada en la frente», la lectura de la Douay inglesa.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._28v.jpg",
+)]
