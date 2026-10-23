@@ -48695,3 +48695,87 @@ CHAPTER_ART["psalms119"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Psalm_118_Initial_L.jpg",
 )]
+
+# --- Proverbs 22 ---
+DICTIONARY.extend([
+    ("qava", "qava", "קָבַע", "qava",
+     'TO DESPOIL, rob &mdash; a rare verb whose exact sense is debated. <span data-heb-read="קבע">It stands in three verses of the Hebrew Bible</span>: <a href="proverbs-22.html#v22-23">Proverbs 22:23</a> (now on these pages), where it comes twice, <em>Jehovah will plead their case and despoil of life those who despoil them</em>, and Malachi 3:8&ndash;9 (not yet on these pages), the line the familiar versions render <em>Will a man rob God?</em> The proverb uses it beside <em>gazal</em>, the ordinary verb for robbery (22:22), and keeps them apart, which is why this translation has &ldquo;rob&rdquo; for the one and &ldquo;despoil&rdquo; for the other. Shelf at 22:23: ASV &lsquo;despoil of life those that despoil them,&rsquo; KJV &lsquo;spoil the soul of those that spoiled them,&rsquo; NWT &lsquo;rob of soul those robbing them.&rsquo;',
+     ("Proverbs", 22, 23)),
+    ("tov-ayin", "tov ayin / ra ayin", "טוֹב עַיִן / רַע עַיִן", "tov ayin",
+     'GOOD OF EYE, and its opposite, EVIL OF EYE &mdash; Hebrew&rsquo;s way of saying generous and stingy, as if giving were a matter of how one looks at another person. <span data-heb="טוב עין"><em>Tov ayin</em> stands in one verse of the Hebrew Bible</span>, <a href="proverbs-22.html#v22-9">Proverbs 22:9</a> (now on these pages): <em>Whoever has a good eye will be blessed, for he has given of his bread to the poor</em>. <em>Ra ayin</em> is the stingy host whose bread is not to be eaten (Proverbs 23:6) and the man in a hurry to be rich (Proverbs 28:22, neither yet on these pages), and the law uses the same eye as a verb: <em>and your eye be evil toward your needy brother and you give him nothing</em> (<a href="deuteronomy-15.html#v15-9">Deuteronomy 15:9</a>, now on these pages). Shelf at 22:9: Geneva &lsquo;He that hath a good eye,&rsquo; ASV &lsquo;a bountiful eye,&rsquo; NWT &lsquo;kindly in eye.&rsquo;',
+     ("Proverbs", 22, 9)),
+])
+DICTIONARY_ES["qava"] = ("qavá",
+    'DESPOJAR, robar &mdash;un verbo raro cuyo sentido exacto se discute. <span data-heb-read="קבע">Está en tres versículos de la Biblia hebrea</span>: <a href="proverbs-22.es.html#v22-23">Proverbios 22:23</a> (ya en estas páginas), donde aparece dos veces, <em>Jehová defenderá la causa de ellos y despojará de la vida a quienes los despojan</em>, y Malaquías 3:8&ndash;9 (todavía no en estas páginas), la línea que las versiones conocidas traducen <em>¿Robará el hombre a Dios?</em> El proverbio lo usa junto a <em>gazal</em>, el verbo corriente del robo (22:22), y los mantiene separados, por eso esta traducción pone «robar» para el uno y «despojar» para el otro. El estante en 22:23: RV 1909 «despojará el alma de aquellos que los despojaren», TNM «les robará el alma a los que les roban a ellos».')
+DICTIONARY_ES["tov-ayin"] = ("tov ayin / ra ayin",
+    'BUENO DE OJO, y su contrario, MALO DE OJO &mdash;la manera hebrea de decir generoso y tacaño, como si dar fuera cuestión de cómo se mira a otro. <span data-heb="טוב עין"><em>Tov ayin</em> está en un solo versículo de la Biblia hebrea</span>, <a href="proverbs-22.es.html#v22-9">Proverbios 22:9</a> (ya en estas páginas): <em>El de ojo bueno será bendecido, porque ha dado de su pan al pobre</em>. <em>Ra ayin</em> es el anfitrión tacaño cuyo pan no se debe comer (Proverbios 23:6) y el hombre con prisa por enriquecerse (Proverbios 28:22, ninguno todavía en estas páginas), y la ley usa el mismo ojo como verbo: <em>y tu ojo sea malo con tu hermano menesteroso y no le des nada</em> (<a href="deuteronomy-15.es.html#v15-9">Deuteronomio 15:9</a>, ya en estas páginas). El estante en 22:9: RV60 «El ojo misericordioso será bendito», TNM «El que es bondadoso de ojo».')
+DICTIONARY_ES["arum"] = ("arum / arumim",
+    '«Astuto» y «desnudos»: dos palabras hebreas casi idénticas; el juego de palabras cruza el corte entre los capítulos 2 y 3 del Génesis. ⭐ El mismo adjetivo es el «sagaz» de <a href="proverbs-22.es.html#v22-3">Proverbios 22:3</a> (ya en estas páginas): <em>El sagaz ve el mal y se esconde</em>, donde la astucia de la serpiente se vuelve la cualidad que mantiene vivo a su dueño.')
+DICTIONARY_ES["peti"] = ("peti",
+    'El simple &mdash;de una raíz que significa «abierto»: la mente abierta de par en par, crédula, sin formar, fácil de persuadir hacia cualquier lado (plural <em>petaím</em>, 1:4, 22). No es tonto: está SIN FORMAR; el alumno principal de Proverbios, y el blanco principal de la seducción del pecador (la misma raíz de <em>patah</em>, «seducir», 1:10). RV 1909 «los simples». ⭐ <a href="proverbs-22.es.html#v22-3">Proverbios 22:3</a> (ya en estas páginas): <em>los simples pasan de largo y pagan la pena</em>.')
+
+_DICT22_EN = {
+    "arum": ' ⭐ The same adjective is the &ldquo;shrewd&rdquo; of <a href="proverbs-22.html#v22-3">Proverbs 22:3</a> (now on these pages), <em>The shrewd sees evil and hides himself</em>, where the serpent&rsquo;s cunning becomes the quality that keeps its owner alive.',
+    "peti": ' ⭐ <a href="proverbs-22.html#v22-3">Proverbs 22:3</a> (now on these pages): <em>the simple pass on and pay the penalty</em>.',
+    "arav": ' ⭐ <a href="proverbs-22.html#v22-26">Proverbs 22:26</a> (now on these pages) warns against the same pledge: <em>Do not be among those who strike hands, among those who stand surety for loans</em>, and asks why the creditor should take your bed from under you.',
+    "zaam": ' ⭐ Its passive participle stands once, in <a href="proverbs-22.html#v22-14">Proverbs 22:14</a> (now on these pages): <em>the one Jehovah has denounced will fall into it</em>.',
+}
+_DICT22_REP = {
+    "chanukkah": ("Its most familiar English appearance is nowhere on these pages yet: a child 'trained up' in the way he should go (Proverbs 22:6, not yet on these pages) uses the same root",
+                  'Its most familiar English appearance is <a href="proverbs-22.html#v22-6">Proverbs 22:6</a> (now on these pages), <em>Train up a youth according to his way</em>, which uses the same root'),
+    "gevul": ("a proverb (Proverbs 22:28 and 23:10, both of which supply <em>your fathers</em> where Deuteronomy says only <em>the first ones</em>)",
+              'a proverb (<a href="proverbs-22.html#v22-28">Proverbs 22:28</a>, now on these pages, which supplies <em>your fathers</em> where Deuteronomy says only <em>the first ones</em>, and 23:10, not yet on these pages, which drops the clause)'),
+    "lavah": ("the proverb <em>the borrower is slave to the lender</em> (Proverbs 22:7, not yet on these pages)",
+              'the proverb <em>the borrower is servant to the man who lends</em> (<a href="proverbs-22.html#v22-7">Proverbs 22:7</a>, now on these pages)'),
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] in _DICT22_REP:
+        _a, _b = _DICT22_REP[_d[0]]
+        assert _t.count(_a) == 1, _d[0]
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT22_EN:
+        _t = _t + _DICT22_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 7, _n
+for _k, _a, _b in [
+    ("chanukkah", "Su aparici&oacute;n m&aacute;s conocida en espa&ntilde;ol todav&iacute;a no est&aacute; en estas p&aacute;ginas: un ni&ntilde;o «instruido» en el camino que debe seguir (Proverbios 22:6) usa la misma ra&iacute;z",
+     'Su aparici&oacute;n m&aacute;s conocida es <a href="proverbs-22.es.html#v22-6">Proverbios 22:6</a> (ya en estas p&aacute;ginas), <em>Instruye al muchacho conforme a su camino</em>, que usa la misma ra&iacute;z'),
+    ("gevul", "un proverbio (Proverbios 22:28 y 23:10, que además suplen <em>tus padres</em> donde Deuteronomio dice solo <em>los primeros</em>)",
+     'un proverbio (<a href="proverbs-22.es.html#v22-28">Proverbios 22:28</a>, ya en estas páginas, que suple <em>tus padres</em> donde Deuteronomio dice solo <em>los primeros</em>, y 23:10, todavía no en estas páginas, que deja fuera la cláusula)'),
+    ("lavah", "del proverbio <em>el que toma prestado es esclavo del que presta</em> (Proverbios 22:7, todavía no en estas páginas)",
+     'del proverbio <em>el que toma prestado es siervo del hombre que presta</em> (<a href="proverbs-22.es.html#v22-7">Proverbios 22:7</a>, ya en estas páginas)'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("arav", ' ⭐ <a href="proverbs-22.es.html#v22-26">Proverbios 22:26</a> (ya en estas páginas) advierte contra la misma prenda: <em>No estés entre los que chocan la mano, entre los que salen fiadores de préstamos</em>, y pregunta por qué el acreedor ha de quitarte la cama de debajo de ti.'),
+    ("zaam", ' ⭐ Su participio pasivo está una sola vez, en <a href="proverbs-22.es.html#v22-14">Proverbios 22:14</a> (ya en estas páginas): <em>aquel a quien Jehová ha denunciado caerá en ella</em>.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="amenemope", name="The Instruction of Amenemope", kind="thing", aliases=["Amenemope", "Instruction of Amenemope"],
+    refs=[("Proverbs", 22, 17)],
+    desc='An Egyptian book of teaching in thirty chapters, addressed by a scribe named Amenemope to his son. Its only complete copy is a papyrus in the British Museum (BM 10474), acquired at Thebes in 1888 and published by E. A. Wallis Budge in 1922&ndash;1923; other copies survive on ostraca and writing boards. Most scholars date its composition to the Ramesside period, roughly 1300&ndash;1075 BC, and the British Museum papyrus itself much later. In 1924 Adolf Erman listed its correspondences with Proverbs, most of them in <a href="proverbs-22.html#v22-17">Proverbs 22:17</a>&ndash;23:11, the collection headed &ldquo;the words of the wise&rdquo;: hearing the words and keeping them within, bringing back an answer to the one who sent you, not robbing the poor, not keeping company with the hot-tempered, not moving the boundary markers of the fields, and the skilled scribe who stands before kings. Its last chapter opens, as commonly translated, &ldquo;Look to these thirty chapters&rdquo;, and Erman proposed reading the disputed word of Proverbs 22:20 as &ldquo;thirty&rdquo;. &#9888; Most scholars hold that the Hebrew collection drew on the Egyptian, since the Egyptian copies are older; how directly, and through what route, is debated. (Reported from the published discussion, not verified against the papyrus.)'))
+ENCYCLOPEDIA_ES["amenemope"] = ("La Instrucción de Amenemope",
+    'Un libro egipcio de enseñanza en treinta capítulos, dirigido por un escriba llamado Amenemope a su hijo. Su única copia completa es un papiro del Museo Británico (BM 10474), adquirido en Tebas en 1888 y publicado por E. A. Wallis Budge en 1922&ndash;1923; otras copias sobreviven en óstracas y tablillas de escritura. La mayoría de los eruditos fecha su composición en el período ramésida, hacia 1300&ndash;1075 a. C., y el propio papiro del Museo Británico mucho después. En 1924 Adolf Erman enumeró sus correspondencias con Proverbios, la mayoría en <a href="proverbs-22.es.html#v22-17">Proverbios 22:17</a>&ndash;23:11, la colección encabezada «las palabras de los sabios»: oír las palabras y guardarlas dentro, devolver una respuesta al que te envió, no robar al pobre, no andar con el iracundo, no mover los mojones de los campos, y el escriba hábil que está delante de reyes. Su último capítulo empieza, según se traduce comúnmente, «Mira estos treinta capítulos», y Erman propuso leer la palabra discutida de Proverbios 22:20 como «treinta». &#9888; La mayoría de los eruditos sostiene que la colección hebrea se sirvió de la egipcia, porque las copias egipcias son más antiguas; cuán directamente, y por qué camino, se discute. (Se informa a partir de la discusión publicada, no verificado contra el papiro.)')
+
+CHRON_CHAPTERS["prov22"] = dict(era="monarchy",
+    when="Proverbs of Solomon on a good name, the rich and the poor, training a youth, borrowing and lending, the generous eye and the sluggard's lion; then, at verse 17, the opening of “the words of the wise”, a collection with close parallels in the Egyptian Instruction of Amenemope.",
+    clock="Verses 1–16 belong to the collection headed “The proverbs of Solomon” (reigned c. 970–931 BC); verses 17–29 open a separate collection of “the words of the wise”, whose parallels with an Egyptian work of roughly 1300–1075 BC suggest an older source. The book keeps no calendar of its own.")
+CHAPTER_ART["prov22"] = [dict(
+    file="amenemope-papyrus-bm.jpg",
+    title="Papyrus with the Instruction of Amenemope", title_es="Papiro con la Instrucción de Amenemope",
+    artist="Senu, son of Pemu (the copying scribe)",
+    year="1st millennium BC",
+    location="British Museum, London", location_es="Museo Británico, Londres",
+    alt="A long, pale brown strip of papyrus mounted on a dark backing, written in four columns of black Egyptian hieratic script running right to left, with a few short lines picked out in red ink; a small number 4 is written at the top between two columns.",
+    note="The Egyptian teaching that Proverbs 22:17&ndash;23:11 is most often compared with, in the copy made by the scribe Senu, son of Pemu, bought at Thebes for the British Museum in 1888. The red lines are rubrics, the ink Egyptian scribes used to mark the start of a section. Which of its thirty chapters these columns hold is not stated here.",
+    note_es="La enseñanza egipcia con la que más a menudo se compara Proverbios 22:17&ndash;23:11, en la copia hecha por el escriba Senu, hijo de Pemu, comprada en Tebas para el Museo Británico en 1888. Las líneas rojas son rúbricas, la tinta con que los escribas egipcios marcaban el comienzo de una sección. Aquí no se indica cuáles de sus treinta capítulos contienen estas columnas.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Papyrus_with_the_Instruction_of_Amenemope.jpg",
+)]
