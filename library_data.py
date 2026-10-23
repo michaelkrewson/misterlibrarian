@@ -48779,3 +48779,108 @@ CHAPTER_ART["prov22"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Papyrus_with_the_Instruction_of_Amenemope.jpg",
 )]
+
+# --- 1 Samuel 16 ---
+DICTIONARY.extend([
+    ("admoni", "admoni", "אַדְמוֹנִי", "admoni",
+     'RUDDY, reddish &mdash; from <em>adom</em>, red, the colour of Esau&rsquo;s stew and of the earth, <em>adamah</em>. ⭐ <span data-heb="אדמוני|אדמני">It stands in three verses of the Hebrew Bible</span>: Esau at his birth, &ldquo;the first came out ruddy, all of him like a hairy cloak&rdquo; (<a href="genesis-25.html#v25-25">Genesis 25:25</a>, now on these pages), and David twice, when Samuel anoints him, &ldquo;Now he was ruddy, with beautiful eyes, and good to look at&rdquo; (<a href="1-samuel-16.html#v16-12">1 Samuel 16:12</a>, now on these pages), and when Goliath looks at him (1 Samuel 17:42, not yet on these pages). ⚠ Whether the redness is of hair or of skin the Hebrew does not say, and the shelf divides: the KJV and ASV keep &ldquo;ruddy&rdquo;, the NIV makes it &ldquo;glowing with health&rdquo;, and on the Spanish shelf the RV60 has &laquo;rubio&raquo;, the NVI &laquo;pelirrojo&raquo; and the TNM 1987 &laquo;rubicundo&raquo;.',
+     ("1 Samuel", 16, 12)),
+    ("kinnor", "kinnor", "כִּנּוֹר", "kinnor",
+     'THE LYRE &mdash; a frame of strings over a sound box, played with the hand; one of the first two instruments the Bible names, for Jubal is &ldquo;the father of all who play the lyre and the pipe&rdquo; (<a href="genesis-4.html#v4-21">Genesis 4:21</a>, now on these pages). This translation keeps it apart from the <em>nevel</em>, the harp: the band of prophets Saul meets comes down &ldquo;with harp and tambourine and flute and lyre&rdquo; (<a href="1-samuel-10.html#v10-5">1 Samuel 10:5</a>, now on these pages). ⭐ It is David&rsquo;s instrument from his first day at court: Saul&rsquo;s servants seek &ldquo;a man who knows how to play the lyre&rdquo;, and &ldquo;David took the lyre and played with his hand&rdquo; (<a href="1-samuel-16.html#v16-16">1 Samuel 16:16</a>, 23, now on these pages). ⚠ The older shelf says &ldquo;harp&rdquo; (KJV, ASV, NWT 1984), and so does every version on the Spanish shelf (&laquo;arpa&raquo;); the NIV has &ldquo;lyre&rdquo;. The Greek simply transliterates it, <em>kinyra</em>.',
+     ("1 Samuel", 16, 16)),
+    ("biet", "bi&rsquo;et", "בִּעֵת", "bi'et",
+     'TO TERRIFY, to overwhelm with dread &mdash; a different root from <em><a href="dictionary.html#baat">ba&rsquo;at</a></em>, to kick, though the two sound alike. Job uses it of God, &ldquo;you terrify me through visions&rdquo; (Job 7:14), and Daniel of himself before the angel, &ldquo;I was terrified, and fell on my face&rdquo; (Daniel 8:17, both not yet on these pages). ⭐ <a href="1-samuel-16.html#v16-14">1 Samuel 16:14</a> (now on these pages): &ldquo;an evil spirit from Jehovah terrified him&rdquo;, and Saul&rsquo;s servants repeat it, &ldquo;an evil spirit of God is terrifying you&rdquo; (16:15). ⚠ The Greek has &ldquo;choked him&rdquo;, and Josephus follows it with &ldquo;suffocations&rdquo; (<em>Antiquities</em> 6.8.2, Whiston); the KJV has &ldquo;troubled&rdquo;, the NWT 1984 &ldquo;terrorized&rdquo;.',
+     ("1 Samuel", 16, 14)),
+])
+DICTIONARY_ES["admoni"] = ("admoní",
+    'RUBICUNDO, rojizo &mdash; de <em>adom</em>, rojo, el color del guiso de Esaú y de la tierra, <em>adamá</em>. ⭐ <span data-heb="אדמוני|אדמני">Está en tres versículos de la Biblia hebrea</span>: Esaú al nacer, «el primero salió rubicundo, todo él como un manto de pelo» (Génesis 25:25, ya en estas páginas, todavía no en español), y David dos veces, cuando Samuel lo unge, «Y era rubicundo, de ojos hermosos, y de buen parecer» (<a href="1-samuel-16.es.html#v16-12">1 Samuel 16:12</a>, ya en estas páginas), y cuando Goliat lo mira (1 Samuel 17:42, todavía no en estas páginas). ⚠ Si el rojo es del pelo o de la piel, el hebreo no lo dice, y el estante se reparte: la RV60 dice «rubio», la NVI «pelirrojo», la TNM 1987 «rubicundo» y la TNM 2019 «de piel sonrosada».')
+DICTIONARY_ES["kinnor"] = ("kinnor",
+    'LA LIRA &mdash; un marco de cuerdas sobre una caja de resonancia, que se toca con la mano; uno de los dos primeros instrumentos que nombra la Biblia, porque Jubal es «el padre de todos los que tocan la lira y la flauta» (Génesis 4:21, ya en estas páginas, todavía no en español). Esta traducción la distingue del <em>nével</em>, el arpa: la banda de profetas que encuentra Saúl baja con «arpa, pandero, flauta y lira» (<a href="1-samuel-10.es.html#v10-5">1 Samuel 10:5</a>, ya en estas páginas). ⭐ Es el instrumento de David desde su primer día en la corte: los siervos de Saúl buscan «un hombre que sepa tocar la lira», y «David tomaba la lira y tocaba con su mano» (<a href="1-samuel-16.es.html#v16-16">1 Samuel 16:16</a>, 23, ya en estas páginas). ⚠ Las cinco versiones del estante español dicen «arpa», como la KJV y la NWT 1984 inglesas; la NIV dice «lyre». El griego simplemente translitera la palabra, <em>kinyra</em>.')
+DICTIONARY_ES["biet"] = ("biet",
+    'ATERRAR, abrumar de pavor &mdash; una raíz distinta de <em><a href="diccionario.html#baat">baat</a></em>, cocear, aunque las dos suenan parecido. Job la usa de Dios, «me aterras con visiones» (Job 7:14), y Daniel de sí mismo ante el ángel, «me aterré, y caí sobre mi rostro» (Daniel 8:17, los dos todavía no en estas páginas). ⭐ <a href="1-samuel-16.es.html#v16-14">1 Samuel 16:14</a> (ya en estas páginas): «un espíritu malo de parte de Jehová lo aterraba», y los siervos de Saúl lo repiten, «un espíritu malo de Dios te está aterrando» (16:15). ⚠ El griego dice «lo ahogaba», y Josefo lo sigue con «ahogos» (<em>Antigüedades</em> 6.8.2, Whiston); la RV60 dice «atormentaba», la TNM 1987 «aterrorizaba».')
+
+_DICT16_EN = {
+    "qeren": ' ⭐ Kings are anointed from it: &ldquo;Fill your horn with oil&rdquo;, and &ldquo;Samuel took the horn of oil, and anointed him in the midst of his brothers&rdquo; (<a href="1-samuel-16.html#v16-13">1 Samuel 16:1</a>, 13, now on these pages), where Saul had been anointed from a flask (10:1); &ldquo;the horn of oil&rdquo; stands again only at the anointing of Solomon (<a href="1-kings-1.html#v39">1 Kings 1:39</a>, now on these pages).',
+    "tsalach": ' ⭐ It rushes on David the day Samuel anoints him, &ldquo;from that day onward&rdquo; (<a href="1-samuel-16.html#v16-13">1 Samuel 16:13</a>, now on these pages), the only time the rushing is said to last; in the next verse the spirit of Jehovah turns away from Saul.',
+    "ruach": ' ⭐ <a href="1-samuel-16.html#v16-14">1 Samuel 16:14&ndash;23</a> (now on these pages) sets two spirits side by side: the spirit of Jehovah turns away from Saul and &ldquo;an evil spirit from Jehovah&rdquo; terrifies him, and when David plays, &ldquo;Saul had relief&rdquo;, <em>ravach</em>, written with the same three letters as <em>ruach</em>.',
+    "maas": ' ⭐ <a href="1-samuel-16.html#v16-1">1 Samuel 16</a> (now on these pages) uses it twice more: of Saul, &ldquo;when I have rejected him from being king over Israel&rdquo; (v1), and of Jesse&rsquo;s eldest son, Eliab, &ldquo;for I have rejected him&rdquo; (v7).',
+    "mashiach": ' ⭐ At Bethlehem Samuel sees Jesse&rsquo;s eldest and says &ldquo;Surely his anointed is before Jehovah&rdquo;, and is told he is wrong (<a href="1-samuel-16.html#v16-6">1 Samuel 16:6&ndash;7</a>, now on these pages).',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT16_EN:
+        _d = _d[:4] + (_d[4] + _DICT16_EN[_d[0]],) + _d[5:]
+        DICTIONARY[_i] = _d
+        _n += 1
+assert _n == len(_DICT16_EN), _n
+for _k, _b in [
+    ("qeren", ' ⭐ Con él se unge a los reyes: «Llena tu cuerno de aceite», y «Samuel tomó el cuerno de aceite, y lo ungió en medio de sus hermanos» (<a href="1-samuel-16.es.html#v16-13">1 Samuel 16:1</a>, 13, ya en estas páginas), donde a Saúl se le había ungido con un frasco (10:1); «el cuerno de aceite» vuelve solo en la unción de Salomón (<a href="1-kings-1.es.html#v39">1 Reyes 1:39</a>, ya en estas páginas).'),
+    ("tsalach", ' ⭐ Irrumpe sobre David el día en que Samuel lo unge, «desde aquel día en adelante» (<a href="1-samuel-16.es.html#v16-13">1 Samuel 16:13</a>, ya en estas páginas), la única vez que se dice que la irrupción dura; en el versículo siguiente el espíritu de Jehová se aparta de Saúl.'),
+    ("ruach", ' ⭐ <a href="1-samuel-16.es.html#v16-14">1 Samuel 16:14&ndash;23</a> (ya en estas páginas) pone dos espíritus uno junto a otro: el espíritu de Jehová se aparta de Saúl y «un espíritu malo de parte de Jehová» lo aterra, y cuando David toca, «Saúl tenía alivio», <em>raváj</em>, escrito con las mismas tres letras que <em>ruaj</em>.'),
+    ("maas", ' ⭐ <a href="1-samuel-16.es.html#v16-1">1 Samuel 16</a> (ya en estas páginas) la usa dos veces más: de Saúl, «habiéndolo yo rechazado para que no sea rey sobre Israel» (v1), y del hijo mayor de Isaí, Eliab, «porque lo he rechazado» (v7).'),
+    ("mashiach", ' ⭐ En Belén Samuel ve al mayor de Isaí y dice «Seguramente delante de Jehová está su ungido», y se le dice que se equivoca (<a href="1-samuel-16.es.html#v16-6">1 Samuel 16:6&ndash;7</a>, ya en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+ENCYCLOPEDIA.append(dict(slug="eliab", name="Eliab", kind="person",
+    aliases=["Eliab"], refs=[("1 Samuel", 16, 6)], videos=[],
+    desc='The eldest son of JESSE of Bethlehem, and the first of his sons to pass before Samuel. &ldquo;When they came, he saw Eliab, and said: &lsquo;Surely his anointed is before Jehovah&rsquo;&rdquo;, and Jehovah answers &ldquo;Do not look at his appearance, or at the height of his stature, for I have rejected him&rdquo; (<a href="1-samuel-16.html#v16-6">1 Samuel 16:6&ndash;7</a>, now on these pages). Josephus calls him &ldquo;a tall and handsome man&rdquo; (<em>Antiquities</em> 6.8.1, Whiston). After him come Abinadab and Shammah; the chapter names no others. He goes to war with Saul against the Philistines as one of the three eldest (1 Samuel 17:13, not yet on these pages), and the genealogy of 1 Chronicles 2:13 lists him first of Jesse&rsquo;s sons (not yet on these pages). ⚠ Not the Eliab son of Helon, leader of Zebulun, nor the Eliab of Reuben whose sons Dathan and Abiram rebelled (Numbers 1:9; 16:1).'))
+ENCYCLOPEDIA_ES["eliab"] = ("Eliab",
+    'El hijo mayor de ISAÍ de Belén, y el primero de sus hijos que pasa delante de Samuel. «Cuando llegaron, vio a Eliab, y dijo: “Seguramente delante de Jehová está su ungido”», y Jehová responde «No mires su apariencia ni lo alto de su estatura, porque lo he rechazado» (<a href="1-samuel-16.es.html#v16-6">1 Samuel 16:6&ndash;7</a>, ya en estas páginas). Josefo lo llama un hombre alto y apuesto (<em>Antigüedades</em> 6.8.1, Whiston). Después de él vienen Abinadab y Sama; el capítulo no nombra a ningún otro. Va a la guerra con Saúl contra los filisteos como uno de los tres mayores (1 Samuel 17:13, todavía no en estas páginas), y la genealogía de 1 Crónicas 2:13 lo pone primero entre los hijos de Isaí (todavía no en estas páginas). ⚠ No es el Eliab hijo de Helón, jefe de Zabulón, ni el Eliab de Rubén cuyos hijos Datán y Abiram se rebelaron (Números 1:9; 16:1).')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "jesse":
+        _a = "In 1 Samuel 16 (not yet on these pages) Samuel comes"
+        assert _e["desc"].count(_a) == 1, "jesse"
+        _e["desc"] = _e["desc"].replace(_a, 'In <a href="1-samuel-16.html#v16-1">1 Samuel 16</a> (now on these pages) Samuel comes')
+        _e["desc"] += ' ⭐ There he makes seven of his sons pass before Samuel, Eliab, Abinadab and Shammah first, before the youngest is fetched from the flock; and he sends David to Saul with a donkey-load of bread, a skin of wine and a kid (16:10&ndash;11, 20). ⚠ Here and at 1 Samuel 17:12 he has eight sons; 1 Chronicles 2:13&ndash;15 names seven and calls David the seventh (neither yet on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 16, 1), ("1 Samuel", 16, 10), ("1 Samuel", 16, 20)]
+    elif _e["slug"] == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-16.html#v16-13">1 Samuel 16</a> (now on these pages): the youngest of Jesse&rsquo;s sons, fetched from shepherding the flock, &ldquo;ruddy, with beautiful eyes&rdquo;, and anointed by Samuel &ldquo;in the midst of his brothers&rdquo;; the spirit of Jehovah rushes on him &ldquo;from that day onward&rdquo;, and his name is first written in that book in the same verse. He comes to Saul&rsquo;s court to play the lyre when the evil spirit is on Saul, and becomes his armour-bearer.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 16, 13), ("1 Samuel", 16, 19), ("1 Samuel", 16, 21), ("1 Samuel", 16, 23)]
+    elif _e["slug"] == "bethlehem":
+        _a = "the home and city of DAVID (1 Samuel 16)"
+        assert _e["desc"].count(_a) == 1, "bethlehem"
+        _e["desc"] = _e["desc"].replace(_a, 'the home and city of DAVID (<a href="1-samuel-16.html#v16-4">1 Samuel 16</a>, now on these pages)')
+        _e["desc"] += ' ⭐ There &ldquo;the elders of the city came trembling&rdquo; to meet Samuel and asked &ldquo;Is your coming peace?&rdquo;, before he anointed Jesse&rsquo;s youngest son (<a href="1-samuel-16.html#v16-4">1 Samuel 16:4</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 16, 4)]
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ <a href="1-samuel-16.html#v16-1">1 Samuel 16</a> (now on these pages): told &ldquo;How long will you mourn for Saul?&rdquo;, he goes to Bethlehem afraid that Saul will kill him, takes Eliab for the chosen one and is told &ldquo;Jehovah sees into the heart&rdquo;, and anoints David from the horn of oil before going home to Ramah.'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 16, 2), ("1 Samuel", 16, 13)]
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' The spirit of Jehovah turns away from him and &ldquo;an evil spirit from Jehovah&rdquo; terrifies him; his servants send for a man who can play the lyre, and David comes to court, is loved, and becomes his armour-bearer (<a href="1-samuel-16.html#v16-14">1 Samuel 16:14&ndash;23</a>, now on these pages).'
+        _e["refs"] = _e["refs"] + [("1 Samuel", 16, 14), ("1 Samuel", 16, 21)]
+for _k, _a, _b in [
+    ("jesse", "En 1 Samuel 16 (todavía no en estas páginas) Samuel va", 'En <a href="1-samuel-16.es.html#v16-1">1 Samuel 16</a> (ya en estas páginas) Samuel va'),
+    ("bethlehem", "la casa y ciudad de DAVID (1 Samuel 16)", 'la casa y ciudad de DAVID (<a href="1-samuel-16.es.html#v16-4">1 Samuel 16</a>, ya en estas páginas)'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("jesse", ' ⭐ Allí hace pasar a siete de sus hijos delante de Samuel, primero Eliab, Abinadab y Sama, antes de que se mande traer al menor del rebaño; y envía a David a Saúl con pan, la carga de un asno, un odre de vino y un cabrito (16:10&ndash;11, 20). ⚠ Aquí y en 1 Samuel 17:12 tiene ocho hijos; 1 Crónicas 2:13&ndash;15 nombra siete y llama a David el séptimo (ninguno de los dos todavía en estas páginas).'),
+    ("david", ' ⭐ <a href="1-samuel-16.es.html#v16-13">1 Samuel 16</a> (ya en estas páginas): el menor de los hijos de Isaí, traído de pastorear el rebaño, «rubicundo, de ojos hermosos», y ungido por Samuel «en medio de sus hermanos»; el espíritu de Jehová irrumpe sobre él «desde aquel día en adelante», y su nombre se escribe por primera vez en ese libro en el mismo versículo. Llega a la corte de Saúl para tocar la lira cuando el espíritu malo está sobre Saúl, y llega a ser su escudero.'),
+    ("bethlehem", ' ⭐ Allí «los ancianos de la ciudad salieron temblando» al encuentro de Samuel y preguntaron «¿Es paz tu venida?», antes de que ungiera al hijo menor de Isaí (<a href="1-samuel-16.es.html#v16-4">1 Samuel 16:4</a>, ya en estas páginas).'),
+    ("samuel", ' ⭐ <a href="1-samuel-16.es.html#v16-1">1 Samuel 16</a> (ya en estas páginas): oye «¿Hasta cuándo harás duelo por Saúl?», va a Belén con miedo de que Saúl lo mate, toma a Eliab por el escogido y oye «Jehová ve dentro del corazón», y unge a David con el cuerno de aceite antes de volver a Ramá.'),
+    ("saul-king", ' El espíritu de Jehová se aparta de él y «un espíritu malo de parte de Jehová» lo aterra; sus siervos mandan buscar a un hombre que sepa tocar la lira, y David llega a la corte, es amado y llega a ser su escudero (<a href="1-samuel-16.es.html#v16-14">1 Samuel 16:14&ndash;23</a>, ya en estas páginas).'),
+]:
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam16"] = dict(era="monarchy",
+    when="Jehovah sends Samuel, still mourning for Saul, to Jesse of Bethlehem with a horn of oil and a heifer to sacrifice. Jesse’s sons pass before him, beginning with Eliab, and Samuel is told “Jehovah sees into the heart”; the youngest, David, is fetched from the flock and anointed among his brothers, and the spirit of Jehovah rushes on him. The spirit of Jehovah turns away from Saul and an evil spirit from Jehovah terrifies him; his servants send for a lyre player, and David comes to court and becomes his armour-bearer.",
+    clock="After Samuel’s parting from Saul at Gilgal (1 Samuel 15:35); the anointing falls on the day of the sacrifice at Bethlehem (1 Samuel 16:5).")
+
+CHAPTER_ART["1sam16"] = [dict(
+    file="morgan-bible-david-anointed.jpg",
+    title="Samuel Anoints David; Saul and the Evil Spirit", title_es="Samuel unge a David; Saúl y el espíritu malo",
+    artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+    year="c. 1250",
+    location="Morgan Library & Museum, New York (MS M.638, fol. 26r)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 26r)",
+    alt="Medieval manuscript page with four painted scenes under gilded arches. Top left: a group of young men stands around a bearded man. Top right: a hooded old man pours oil from a two-handled jar over the head of a curly-haired youth holding a shepherd’s crook and a pouch, while a bearded man and other young men look on and a face looks down from the sky. Bottom left: a crowned king sits on a throne, a small dark winged creature clinging to his crown at his ear and a white dove flying overhead, while young men with staffs speak to him. Bottom right: messengers with staffs address a bearded man in a doorway, a youth seated at his feet. Latin, Persian and Hebrew-script captions fill the margins.",
+    note="Top, Jesse&rsquo;s sons stand with their father, and Samuel anoints the youngest, who still carries his shepherd&rsquo;s crook (verses 10&ndash;13); the painter gives Samuel a jar, not the horn the verse names. Below, Saul sits with a dark creature at his ear (verse 14), his servants advise him to send for a musician (verses 15&ndash;17), and the messengers come to Jesse&rsquo;s door (verse 19). The Latin caption under the pictures begins <em>Qualiter spiritus bonus recedit a Saul</em>, &ldquo;how the good spirit departs from Saul&rdquo;, where the Hebrew says &ldquo;the spirit of Jehovah&rdquo;.",
+    note_es="Arriba, los hijos de Isaí están con su padre, y Samuel unge al menor, que todavía lleva su cayado de pastor (versículos 10&ndash;13); el pintor le da a Samuel un cántaro, no el cuerno que nombra el versículo. Abajo, Saúl está sentado con una criatura oscura junto al oído (versículo 14), sus siervos le aconsejan que mande buscar a un músico (versículos 15&ndash;17), y los mensajeros llegan a la puerta de Isaí (versículo 19). El rótulo latino bajo las pinturas empieza <em>Qualiter spiritus bonus recedit a Saul</em>, «cómo el espíritu bueno se aparta de Saúl», donde el hebreo dice «el espíritu de Jehová».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._26r.jpg",
+)]
