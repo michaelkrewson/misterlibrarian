@@ -49351,3 +49351,61 @@ CHAPTER_ART["isa26"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Johannes_Adam_Simon_Oertel_-_Rock_of_Ages_-_1895.695_-_Fogg_Museum.jpg",
 )]
+
+# --- Proverbs 4 ---
+DICTIONARY.extend([
+    ("magal", "ma&rsquo;gal", "מַעְגָּל", "ma&rsquo;gal",
+     """A TRACK &mdash; the rut a wheel cuts in a road, and so the worn line a traveller follows; from a root for something round, the word behind <em>agalah</em>, a cart. ⭐ <a href="proverbs-4.html#v4-11">Proverbs 4:11</a> (now on these pages): &lsquo;I have led you in tracks of uprightness&rsquo;, and <a href="proverbs-4.html#v4-26">4:26</a>, &lsquo;Level the track of your foot&rsquo;, whose Greek is the &lsquo;straight tracks&rsquo; of <a href="hebrews-12.html#v12-13">Hebrews 12:13</a> (see <em><a href="dictionary.html#trochia">trochia</a></em>). <a href="isaiah-26.html#v26-7">Isaiah 26:7</a> (now on these pages) has God do the levelling: &lsquo;you, Upright One, level the track of the righteous&rsquo;. The NWT 1984 has &lsquo;tracks of uprightness&rsquo; at Proverbs 4:11; the ASV and KJV have &lsquo;paths&rsquo;.""",
+     ("Proverbs", 4, 11)),
+])
+DICTIONARY_ES["magal"] = ("ma’gal",
+    """UNA HUELLA, un camino trillado &mdash;el surco que una rueda abre en un camino, y por eso la línea gastada que sigue el viajero; de una raíz para lo redondo, la palabra detrás de <em>agalá</em>, una carreta. ⭐ <a href="proverbs-4.es.html#v4-11">Proverbios 4:11</a> (ya en estas páginas): «te he guiado por caminos de rectitud», y <a href="proverbs-4.es.html#v4-26">4:26</a>, «Allana el camino de tu pie», cuyo griego son las «sendas rectas» de <a href="hebrews-12.es.html#v12-13">Hebreos 12:13</a> (véase <em><a href="diccionario.html#trochia">trochia</a></em>). <a href="isaiah-26.es.html#v26-7">Isaías 26:7</a> (ya en estas páginas) hace que Dios sea quien allana: «tú, el Recto, allanas el camino del justo». La TNM 1987 tiene «los senderos trillados de la rectitud» en Proverbios 4:11.""")
+DICTIONARY_ES["yachid"] = ("yajid",
+    """ÚNICO &mdash;el hijo único, y por eso el más amado: «tu hijo, tu único, a quien amas» (Génesis 22:2, ya en estas páginas, todavía no en español), la palabra de Abraham e Isaac. ⭐ <a href="proverbs-4.es.html#v4-3">Proverbios 4:3</a> (ya en estas páginas): «tierno y único delante de mi madre», el padre que enseña recordando cuando él era el hijo. La TNM 1987 tiene allí «el único»; la RV60 «único».""")
+
+_DICT4_EN = {
+    "qanah": ' ⭐ <a href="proverbs-4.html#v4-5">Proverbs 4:5&ndash;7</a> (now on these pages) uses the root five times, the verb four times and the noun once: &lsquo;Acquire wisdom, acquire understanding&rsquo;, and &lsquo;with all you have acquired, acquire understanding&rsquo;.',
+    "yachid": ' ⭐ <a href="proverbs-4.html#v4-3">Proverbs 4:3</a> (now on these pages): &lsquo;tender, and the only one in the sight of my mother&rsquo;, the father who teaches remembering when he was the son.',
+}
+_DICT4_REP = {
+    "trochia": ("from the Greek of Proverbs 4:26 (checked; not yet on these pages), where the Hebrew has &lsquo;Level the path of your foot&rsquo; (checked).",
+                'from the Greek of <a href="proverbs-4.html#v4-26">Proverbs 4:26</a> (now on these pages), where the Hebrew has &lsquo;Level the track of your foot&rsquo;; see <em><a href="dictionary.html#magal">ma&rsquo;gal</a></em>.'),
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    if _d[0] in _DICT4_REP:
+        _a, _b = _DICT4_REP[_d[0]]
+        assert _t.count(_a) == 1, _d[0]
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT4_EN:
+        _t = _t + _DICT4_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 3, _n
+for _k, _a, _b in [
+    ("trochia", "del griego de Proverbios 4:26 (comprobado; todavía no en estas páginas), donde el hebreo dice «Allana el camino de tu pie» (comprobado).",
+     'del griego de <a href="proverbs-4.es.html#v4-26">Proverbios 4:26</a> (ya en estas páginas), donde el hebreo dice «Allana el camino de tu pie»; véase <em><a href="diccionario.html#magal">ma’gal</a></em>.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+_s = DICTIONARY_ES["qanah"]
+DICTIONARY_ES["qanah"] = (_s[0], _s[1] + ' ⭐ <a href="proverbs-4.es.html#v4-5">Proverbios 4:5&ndash;7</a> (ya en estas páginas) usa la raíz cinco veces, el verbo cuatro y el sustantivo una: «Adquiere sabiduría, adquiere entendimiento», y «con todo lo que has adquirido, adquiere entendimiento».')
+
+CHRON_CHAPTERS["prov4"] = dict(era="monarchy",
+    when="A father's teaching to his sons: what his own father told him when he was a tender only child, acquire wisdom and with all you have acquired acquire understanding, the path of the wicked to be avoided, the path of the righteous like dawn growing to full day, guard your heart for from it are the goings-out of life, and a level track that turns neither right nor left.",
+    clock="Attributed to Solomon, son of David (reigned c. 970–931 BC), like the rest of the book's opening collection; wisdom literature keeps no calendar of its own.")
+
+CHAPTER_ART["prov4"] = [dict(
+    file="cole-voyage-of-life-youth.jpg",
+    title="The Voyage of Life: Youth", title_es="El viaje de la vida: la juventud",
+    artist="Thomas Cole",
+    year="1842",
+    location="National Gallery of Art, Washington", location_es="Galería Nacional de Arte, Washington",
+    alt="A wide landscape: a young man in red stands in a gilded boat on a calm river, one arm raised toward a vast white palace that floats in the sky above distant mountains. On the green bank at the right a winged figure in white, ringed with light, watches him go. Tall trees and a palm frame the river.",
+    note="The second of Cole&rsquo;s four paintings of a life as a river journey. The youth has taken the tiller himself and left his guardian on the bank, steering toward a castle in the air; the river ahead is hidden behind the trees. Proverbs 4 is a father&rsquo;s speech to sons at exactly this point, before they set out: keep to the track, look straight ahead, turn neither right nor left.",
+    note_es="El segundo de los cuatro cuadros de Cole sobre la vida como un viaje por un río. El joven ha tomado él mismo el timón y ha dejado a su guardián en la orilla, rumbo a un castillo en el aire; el río que viene está oculto detrás de los árboles. Proverbios 4 es el discurso de un padre a sus hijos justo en ese punto, antes de partir: sigue el camino, mira derecho al frente, no te desvíes ni a la derecha ni a la izquierda.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Voyage_of_Life_Youth,_1842_(National_Gallery_of_Art).jpg",
+)]
