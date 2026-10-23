@@ -49539,3 +49539,81 @@ CHAPTER_ART["psalms100"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Old_100th_(1584).jpg",
 )]
+
+# --- Psalm 56 ---
+DICTIONARY.extend([
+    ("miktam", "miktam", "מִכְתָּם", "miktam",
+     """A HEADING TERM of unknown meaning &mdash; one of the words in the psalm titles whose sense was lost before the oldest translations were made. ⭐ <a href="psalms-56.html#v56-1">Psalm 56:1</a> (now on these pages) has it, &lsquo;Of David. A miktam&rsquo;; it heads six psalms in all, 16 and 56 to 60, every one of them &lsquo;of David&rsquo;. One guess ties it to <em>ketem</em>, fine gold (&lsquo;a golden psalm&rsquo;); the Greek has <em>stēlographia</em>, an inscription on a pillar, and the Douay follows with &lsquo;for an inscription of a title&rsquo;. The ASV and KJV keep &lsquo;Michtam&rsquo;, and this translation keeps the Hebrew word.""",
+     ("Psalms", 56, 1)),
+    ("shaaf", "sha'af", "שָׁאַף", "sha'af",
+     """TO PANT, gasp &mdash; the open-mouthed breathing of a runner, of a thirsty animal, of desire. <a href="psalms-119.html#v119-131">Psalm 119:131</a> (now on these pages) has it of longing, &lsquo;I opened my mouth wide and panted&rsquo;. ⭐ <a href="psalms-56.html#v56-2">Psalm 56:2&ndash;3</a> (now on these pages) has it of pursuit, twice, &lsquo;a mortal pants after me&rsquo; and &lsquo;those who lie in wait for me pant after me&rsquo;: the hunter&rsquo;s breath close behind. The KJV and ASV took it as &lsquo;swallow up&rsquo;, the Greek as &lsquo;trample&rsquo; (the Douay&rsquo;s &lsquo;trodden me under foot&rsquo;), and the NWT 1984 has &lsquo;snapped at&rsquo;.""",
+     ("Psalms", 56, 2)),
+    ("batach", "batach", "בָּטַח", "batach",
+     """TO TRUST &mdash; to lean one&rsquo;s weight on something and be safe there; its noun <em>betach</em> is security, &lsquo;in safety&rsquo;. ⭐ <a href="psalms-56.html#v56-4">Psalm 56</a> (now on these pages) says it three times, &lsquo;On the day I am afraid, I will trust in you&rsquo; (verse 4), and twice in its refrain, &lsquo;in God I trust; I will not be afraid&rsquo; (verses 5 and 12): trust set against fear in the same breath. It is also the verb of &lsquo;Trust in Jehovah and do good&rsquo; (<a href="psalms-37.html#v37-3">Psalm 37:3</a>, already on these pages).""",
+     ("Psalms", 56, 4)),
+    ("nod-skin", "no'd", "נֹאד", "no'd",
+     """A SKIN BOTTLE &mdash; a bag sewn from an animal&rsquo;s skin, for wine, milk or water. It stands in six verses: the Gibeonites&rsquo; split wineskins (<a href="joshua-9.html#v9-4">Joshua 9:4</a>, <a href="joshua-9.html#v9-13">9:13</a>), the skin of milk Jael opened for Sisera (<a href="judges-4.html#v19">Judges 4:19</a>), the skin of wine Jesse sent with David (<a href="1-samuel-16.html#v16-20">1 Samuel 16:20</a>), &lsquo;like a wineskin in the smoke&rsquo; (<a href="psalms-119.html#v119-83">Psalm 119:83</a>), and ⭐ <a href="psalms-56.html#v56-9">Psalm 56:9</a> (all now on these pages), &lsquo;put my tears in your skin bottle&rsquo;, where <em>no&rsquo;dekha</em>, your skin bottle, rhymes with <em>nodi</em>, my wandering, in the same line. The KJV and ASV have &lsquo;thy bottle&rsquo;; the NWT 1984 &lsquo;your skin bottle&rsquo;.""",
+     ("Psalms", 56, 9)),
+])
+DICTIONARY_ES["miktam"] = ("miktam",
+    """UN TÉRMINO DE ENCABEZAMIENTO de significado desconocido —una de las palabras de los títulos de los salmos cuyo sentido se perdió antes de que se hicieran las traducciones más antiguas. ⭐ El <a href="psalms-56.es.html#v56-1">Salmo 56:1</a> (ya en estas páginas) la tiene, «De David. Miktam»; encabeza seis salmos en total, el 16 y del 56 al 60, todos ellos «de David». Una conjetura la relaciona con <em>ketem</em>, oro fino («un salmo de oro»); el griego tiene <em>stēlographía</em>, una inscripción en una columna. La RV 1909 tiene «Michtam»; la TNM 1987 «Miktam», y esta traducción conserva la palabra hebrea.""")
+DICTIONARY_ES["shaaf"] = ("sha’af",
+    """JADEAR —la respiración con la boca abierta del que corre, del animal sediento, del deseo. El <a href="psalms-119.es.html#v119-131">Salmo 119:131</a> (ya en estas páginas) la usa del anhelo, «Abrí mi boca de par en par y jadeé». ⭐ El <a href="psalms-56.es.html#v56-2">Salmo 56:2–3</a> (ya en estas páginas) la usa de la persecución, dos veces, «un mortal jadea tras de mí» y «los que me acechan jadean tras de mí»: el aliento del cazador muy de cerca. La RV 1909 y la RV60 la entienden como «devorar», el griego como «pisotear», y la TNM 1987 tiene «ha tirado a morderme».""")
+DICTIONARY_ES["batach"] = ("bataj",
+    """CONFIAR —apoyar el peso en algo y estar seguro allí; su sustantivo <em>bétaj</em> es la seguridad, «confiadamente». ⭐ El <a href="psalms-56.es.html#v56-4">Salmo 56</a> (ya en estas páginas) lo dice tres veces, «El día que tenga miedo, yo en ti confiaré» (versículo 4), y dos en su estribillo, «en Dios confío; no tendré miedo» (versículos 5 y 12): la confianza puesta frente al miedo en el mismo aliento. Es también el verbo de «Confía en Jehová y haz el bien» (<a href="psalms-37.es.html#v37-3">Salmo 37:3</a>, ya en estas páginas).""")
+DICTIONARY_ES["nod-skin"] = ("nod",
+    """UN ODRE —una bolsa cosida con la piel de un animal, para vino, leche o agua. Está en seis versículos: los odres rajados de los gabaonitas (<a href="joshua-9.es.html#v9-4">Josué 9:4</a>, <a href="joshua-9.es.html#v9-13">9:13</a>), el odre de leche que Jael abrió para Sísara (<a href="judges-4.es.html#v19">Jueces 4:19</a>), el odre de vino que Isaí envió con David (<a href="1-samuel-16.es.html#v16-20">1 Samuel 16:20</a>), «como un odre al humo» (<a href="psalms-119.es.html#v119-83">Salmo 119:83</a>), y ⭐ el <a href="psalms-56.es.html#v56-9">Salmo 56:9</a> (todos ya en estas páginas), «pon mis lágrimas en tu odre», donde <em>no’dejá</em>, tu odre, rima con <em>nodí</em>, mi andar errante, en la misma línea. La RV 1909 y la RV60 tienen «tu redoma»; la TNM 1987 «tu odre».""")
+
+# Spanish twins that were missing (the Psalm 56 notes link them in both languages)
+DICTIONARY_ES["aqev"] = ("aqev",
+    """EL TALÓN —Jacob nace agarrado del <em>aqev</em> de Esaú, «y fue llamado su nombre Ya’aqov» (Génesis 25:26), «el que agarra el talón». El nombre se vuelve un verbo de traición: «¿no se llama con razón Ya’aqov (Jacob)? Pues ya me ha SUPLANTADO (ya’aqveni) dos veces» (27:36): agarrar el talón es hacer tropezar, aventajar, suplantar. Y es la misma palabra de la primera promesa y maldición: «él te aplastará la cabeza, y tú le herirás el TALÓN» (3:15). Todo el ciclo de Jacob cabe en el puño de un recién nacido. ⭐ En el <a href="psalms-56.es.html#v56-7">Salmo 56:7</a> (ya en estas páginas) los enemigos de David «vigilan mis talones», tan de cerca lo siguen.""")
+DICTIONARY_ES["adam"] = ("adam",
+    """La humanidad / el ser humano; nombre propio solo más tarde. Juega con <em>adamá</em>, «tierra»: el terrestre sacado de la tierra. ⭐ El <a href="psalms-56.es.html#v56-12">Salmo 56:12</a> (ya en estas páginas) lo pone en su pregunta, «¿Qué puede hacerme un ser humano?», donde el versículo 5 había dicho «la carne», <em>basar</em>.""")
+DICTIONARY_ES["hithalekh"] = ("hitalej",
+    """Andar de un lado a otro, ir y venir —el verbo del andar CON Dios: Dios en el huerto (Génesis 3:8), Enoc (5:22, 24), Noé (6:9). ⭐ El <a href="psalms-56.es.html#v56-14">Salmo 56:14</a> (ya en estas páginas) termina con él, «para que ande delante de Dios en la luz de los vivientes», como el mandato a Abram, «Anda delante de mí, y sé íntegro» (Génesis 17:1); el griego lo traduce aquí, como en Génesis 17:1 y 5:22, con <em>euarestein</em>, agradar.""")
+
+_DICT56_EN = {
+    "aqev": ' ⭐ <a href="psalms-56.html#v56-7">Psalm 56:7</a> (now on these pages): David&rsquo;s enemies &lsquo;watch my heels&rsquo;, following close enough to tread on them.',
+    "adam": ' ⭐ <a href="psalms-56.html#v56-12">Psalm 56:12</a> (now on these pages) puts it in its question, &lsquo;What can a human do to me?&rsquo;, where verse 5 had &lsquo;flesh&rsquo;, <em>basar</em>.',
+    "hithalekh": ' ⭐ <a href="psalms-56.html#v56-14">Psalm 56:14</a> (now on these pages) ends with it, &lsquo;so that I may walk before God in the light of the living&rsquo;, like the command to Abram, &lsquo;Walk before me, and be blameless&rsquo; (17:1); the Greek renders it here, as at 17:1 and 5:22, with <em>euarestein</em>, to be pleasing.',
+    "sefer": ' ⭐ <a href="psalms-56.html#v56-9">Psalm 56:9</a> (now on these pages) plays on the root: &lsquo;You yourself have counted (<em>safarta</em>) my wandering &hellip; are they not in your record (<em>sifratekha</em>)?&rsquo;, a noun found only there.',
+    "neder": ' ⭐ <a href="psalms-56.html#v56-13">Psalm 56:13</a> (now on these pages): &lsquo;Your vows are upon me, God; I will pay thank offerings to you&rsquo;, the vow felt as a debt still owed.',
+    "todah": ' ⭐ Its plural, <em>todot</em>, is what <a href="psalms-56.html#v56-13">Psalm 56:13</a> (now on these pages) promises to pay: &lsquo;I will pay thank offerings to you&rsquo;.',
+    "gur": ' ⭐ The same letters make two more verbs, to dread and to stir up strife; <a href="psalms-56.html#v56-7">Psalm 56:7</a> (now on these pages) has the second, &lsquo;They stir up strife&rsquo;, which the Greek read as &lsquo;they will sojourn&rsquo;.',
+    "chanan": ' ⭐ <em>Chonneni Elohim</em>, &lsquo;Be gracious to me, God&rsquo;, opens <a href="psalms-51.html#v51-3">Psalm 51:3</a> and <a href="psalms-56.html#v56-2">Psalm 56:2</a> (both now on these pages).',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT56_EN:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_d[4] + _DICT56_EN[_d[0]],) + tuple(_d[5:]); _n += 1
+assert _n == 8, _n
+for _k, _b in [
+    ("sefer", ' ⭐ El <a href="psalms-56.es.html#v56-9">Salmo 56:9</a> (ya en estas páginas) juega con la raíz: «Tú mismo has contado (<em>safarta</em>) mi andar errante […] ¿no están en tu registro (<em>sifratejá</em>)?», un sustantivo que solo aparece allí.'),
+    ("neder", ' ⭐ <a href="psalms-56.es.html#v56-13">Salmo 56:13</a> (ya en estas páginas): «Sobre mí, oh Dios, están tus votos; te pagaré ofrendas de acción de gracias», el voto sentido como una deuda pendiente.'),
+    ("todah", ' ⭐ Su plural, <em>todot</em>, es lo que el <a href="psalms-56.es.html#v56-13">Salmo 56:13</a> (ya en estas páginas) promete pagar: «te pagaré ofrendas de acción de gracias».'),
+    ("gur", ' ⭐ Las mismas letras forman otros dos verbos, temer y promover contienda; el <a href="psalms-56.es.html#v56-7">Salmo 56:7</a> (ya en estas páginas) tiene el segundo, «Promueven contienda», que el griego leyó como «habitarán como forasteros».'),
+    ("chanan", ' ⭐ <em>Jonnení Elohim</em>, «Ten piedad de mí, oh Dios», abre el <a href="psalms-51.es.html#v51-3">Salmo 51:3</a> y el <a href="psalms-56.es.html#v56-2">Salmo 56:2</a> (los dos ya en estas páginas).'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in ("gath", "philistines"):
+        _e["refs"] = list(_e.get("refs", [])) + [("Psalms", 56, 1)]
+
+CHRON_CHAPTERS["psalms56"] = dict(era="monarchy",
+    when="“In God I trust; I will not be afraid”: a miktam of David, headed by the day the Philistines seized him in Gath, in which the hunted man is panted after and watched at the heels, asks God to count his wandering and keep his tears in a skin bottle, and ends paying vows and walking before God in the light of the living.",
+    clock="The heading sets it at David’s flight to Gath (1 Samuel 21:11–16 in the Hebrew numbering), in the years he was a fugitive from Saul, before his reign; the psalm itself names no event.")
+
+CHAPTER_ART["psalms56"] = [dict(
+    file="sadeler-de-vos-david-achish.jpg",
+    title="David feigns madness before King Achish and flees", title_es="David se finge loco ante el rey Aquis y huye",
+    artist="Aegidius Sadeler II, after Maerten de Vos; published by Johann Sadeler I",
+    year="1580–1596",
+    location="Rijksmuseum, Amsterdam (RP-P-OB-5085)", location_es="Rijksmuseum, Ámsterdam (RP-P-OB-5085)",
+    alt="An engraving of a palace hall. A king in a crown sits half-draped on a round dais, one arm stretched out, between a tall soldier in a plumed helmet and courtiers; on the left, armed men in helmets point and lunge toward the right. On the right a bearded man with wild hair, bent double and drooling into his beard, runs out of the hall carrying a long sword. Two lines of Latin verse run along the bottom, with a short Latin psalm quotation in the lower right corner.",
+    note="The story behind Psalm 56’s heading, “when the Philistines seized him in Gath”: David, recognized by the servants of Achish, plays the madman and gets away. The Latin verses say that the son of Jesse, a fugitive, came to the court of Achish, was betrayed by the report of the servants, and, fearing a welcome that could turn either way, put on a frenzy and fled. The quotation in the corner is from Psalm 34 (Psalm 33 in the Latin numbering), whose heading tells the same story.",
+    note_es="La historia detrás del encabezamiento del Salmo 56, «cuando los filisteos lo prendieron en Gat»: David, reconocido por los siervos de Aquis, se finge loco y escapa. Los versos latinos dicen que el hijo de Isaí, fugitivo, llegó a la corte de Aquis, fue delatado por el informe de los siervos y, temiendo una acogida que podía volverse de cualquier lado, fingió un frenesí y huyó. La cita de la esquina es del Salmo 34 (el 33 en la numeración latina), cuyo encabezamiento cuenta la misma historia.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:David_simuleert_krankzinnigheid_voor_koning_Achis_en_vlucht,_RP-P-OB-5085.jpg",
+)]
