@@ -49486,3 +49486,56 @@ CHAPTER_ART["prov16"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Ghirlandaio,_Domenico_-_An_Old_Man_and_His_Grandson_-_Louvre_-_Google_Art_Project.jpg",
 )]
+
+# --- Psalm 100 ---
+DICTIONARY.extend([
+    ("simchah", "simchah", "שִׂמְחָה", "simchah",
+     """JOY, gladness &mdash; the noun of <em>samach</em>, to rejoice: the ordinary Hebrew word for happiness that shows, at feasts, at weddings, at the harvest. ⭐ <a href="psalms-100.html#v100-2">Psalm 100:2</a> (now on these pages) asks the whole earth to &lsquo;Serve Jehovah with joy&rsquo;, and the same verb and noun stand together in the curses of Deuteronomy, which fall &lsquo;because you did not serve Jehovah your God with joy and with gladness of heart&rsquo; (<a href="deuteronomy-28.html#v28-47">Deuteronomy 28:47</a>, already on these pages): the thing whose absence there is a reason for judgment is here an invitation. The KJV and ASV have &lsquo;gladness&rsquo; in the psalm; the NWT 1984 &lsquo;rejoicing&rsquo;.""",
+     ("Psalms", 100, 2)),
+    ("emunah", "emunah", "אֱמוּנָה", "emunah",
+     """FAITHFULNESS, steadiness &mdash; the noun of <em><a href="dictionary.html#aman">aman</a></em>, to be firm, the root of &lsquo;amen&rsquo;: what can be leaned on without giving way. ⭐ <a href="psalms-100.html#v100-5">Psalm 100:5</a> (now on these pages) ends on it, &lsquo;and his faithfulness to generation after generation&rsquo;, beside <em>chesed</em>, steadfast love, in the line before; Psalm 119 gives it the same span, &lsquo;Your faithfulness is from generation to generation&rsquo; (<a href="psalms-119.html#v119-90">Psalm 119:90</a>, already on these pages). The Greek often has <em>alētheia</em>, truth, and so the KJV and Douay have &lsquo;his truth&rsquo; in Psalm 100; the ASV and NWT 1984 have &lsquo;faithfulness&rsquo;.""",
+     ("Psalms", 100, 5)),
+])
+DICTIONARY_ES["simchah"] = ("simjá",
+    """ALEGRÍA, gozo —el sustantivo de <em>samaj</em>, alegrarse: la palabra hebrea corriente para la felicidad que se ve, en las fiestas, en las bodas, en la cosecha. ⭐ <a href="psalms-100.es.html#v100-2">Salmo 100:2</a> (ya en estas páginas) pide a toda la tierra «Sirvan a Jehová con alegría», y el mismo verbo y el mismo sustantivo están juntos en las maldiciones del Deuteronomio, que caen «por cuanto no serviste a Jehová tu Dios con alegría y con bondad de corazón» (<a href="deuteronomy-28.es.html#v28-47">Deuteronomio 28:47</a>, ya en estas páginas): lo que allí falta y trae el juicio es aquí una invitación. La RV60 tiene «con alegría» en el salmo; la TNM 1987 «con regocijo».""")
+DICTIONARY_ES["emunah"] = ("emuná",
+    """FIDELIDAD, firmeza —el sustantivo de <em><a href="diccionario.html#aman">amán</a></em>, estar firme, la raíz de «amén»: aquello en lo que uno se puede apoyar sin que ceda. ⭐ <a href="psalms-100.es.html#v100-5">Salmo 100:5</a> (ya en estas páginas) termina con ella, «y su fidelidad de generación en generación», junto a <em>jésed</em>, el amor leal, en la línea anterior; el Salmo 119 le da el mismo alcance, «Tu fidelidad es de generación en generación» (<a href="psalms-119.es.html#v119-90">Salmo 119:90</a>, ya en estas páginas). El griego tiene a menudo <em>alētheia</em>, verdad, y por eso la RV60 tiene «su verdad» en el Salmo 100; la TNM 1987 tiene «su fidelidad».""")
+
+_DICT100_EN = {
+    "todah": ' ⭐ <a href="psalms-100.html#v100-1">Psalm 100</a> (now on these pages) is the one psalm headed <em>mizmor le-todah</em>, &lsquo;a psalm for thanksgiving&rsquo;, and it brings the word back in verse 4: &lsquo;Enter his gates with thanksgiving&rsquo;.',
+    "teruah": ' ⭐ The verb of this noun, <em>hari&rsquo;u</em>, opens <a href="psalms-100.html#v100-1">Psalm 100</a> (now on these pages): &lsquo;Shout to Jehovah, all the earth&rsquo;.',
+    "mizmor": ' ⭐ <a href="psalms-100.html#v100-1">Psalm 100</a> (now on these pages) is headed <em>mizmor le-todah</em>, &lsquo;a psalm for thanksgiving&rsquo;, a heading no other psalm carries.',
+    "roeh": ' ⭐ <a href="psalms-100.html#v100-3">Psalm 100:3</a> (now on these pages) calls a people &lsquo;the flock of his pasture&rsquo;, and <em>mar&rsquo;it</em>, pasture, is from <em>ra&rsquo;ah</em>, the verb of the shepherd.',
+    "aman": ' ⭐ Its noun <em><a href="dictionary.html#emunah">emunah</a></em>, faithfulness, closes <a href="psalms-100.html#v100-5">Psalm 100</a> (now on these pages): &lsquo;and his faithfulness to generation after generation&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    if _d[0] in _DICT100_EN:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_d[4] + _DICT100_EN[_d[0]],) + tuple(_d[5:]); _n += 1
+assert _n == 5, _n
+for _k, _b in [
+    ("todah", ' ⭐ El <a href="psalms-100.es.html#v100-1">Salmo 100</a> (ya en estas páginas) es el único salmo encabezado <em>mizmor le-todá</em>, «salmo para la acción de gracias», y la palabra vuelve en el versículo 4: «Entren por sus puertas con acción de gracias».'),
+    ("teruah", ' ⭐ El verbo de este sustantivo, <em>hariú</em>, abre el <a href="psalms-100.es.html#v100-1">Salmo 100</a> (ya en estas páginas): «Griten a Jehová, toda la tierra».'),
+    ("mizmor", ' ⭐ El <a href="psalms-100.es.html#v100-1">Salmo 100</a> (ya en estas páginas) lleva el encabezamiento <em>mizmor le-todá</em>, «salmo para la acción de gracias», que no lleva ningún otro salmo.'),
+    ("roeh", ' ⭐ El <a href="psalms-100.es.html#v100-3">Salmo 100:3</a> (ya en estas páginas) llama a un pueblo «el rebaño de su pasto», y <em>mar’it</em>, pasto, viene de <em>ra’á</em>, el verbo del pastor.'),
+    ("aman", ' ⭐ Su sustantivo <em><a href="diccionario.html#emunah">emuná</a></em>, fidelidad, cierra el <a href="psalms-100.es.html#v100-5">Salmo 100</a> (ya en estas páginas): «y su fidelidad de generación en generación».'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["psalms100"] = dict(era="monarchy",
+    when="“Shout to Jehovah, all the earth”: the one psalm headed “for thanksgiving”, calling every land to serve with joy, to know that Jehovah is God who made them and owns them as his flock, and to come through his gates and into his courts with thanks, because his steadfast love is forever.",
+    clock="Undated: the heading names no author and no occasion, only the thanksgiving, and the gates and courts it walks into are a sanctuary’s. Filed under the monarchy with the bulk of the Psalter, without confidence.")
+
+CHAPTER_ART["psalms100"] = [dict(
+    file="old-hundredth-1584.jpg",
+    title="All people that on earth do dwell (the Old Hundredth)", title_es="All people that on earth do dwell (el Old Hundredth)",
+    artist="William Kethe (words); Loys Bourgeois (music)",
+    year="1584",
+    location="The Whole Booke of Psalmes (Sternhold and Hopkins), London, pp. 172–173", location_es="The Whole Booke of Psalmes (Sternhold y Hopkins), Londres, pp. 172–173",
+    alt="An open printed book, two pages of black-letter type. Lower left, under the Latin heading “Iubilate Deo omnis terra. Psal. C.”, a large ornamental A begins a hymn printed beneath two lines of musical notation; the right page continues the music and the numbered verses, and further down a second version of the same psalm begins under the words “An other of the same”. Faint handwriting runs across the top right corner.",
+    note="Psalm 100 as English churches sang it in the sixteenth century: William Kethe’s metrical version, printed here in a 1584 edition of the Sternhold and Hopkins psalter with the tune now called the Old Hundredth, written for the Genevan Psalter. Kethe has “him serue with feare” where the Hebrew has joy, and “without our ayde he did vs make”, the written reading of verse 3. The second version on the right page takes both readings at once: “Not we our selues for we are his”.",
+    note_es="El Salmo 100 tal como lo cantaban las iglesias inglesas en el siglo XVI: la versión métrica de William Kethe, impresa aquí en una edición de 1584 del salterio de Sternhold y Hopkins con la melodía que hoy se llama Old Hundredth, escrita para el Salterio de Ginebra. Kethe dice «him serue with feare», «servidle con temor», donde el hebreo dice alegría, y «without our ayde he did vs make», «sin ayuda nuestra nos hizo», la lectura escrita del versículo 3. La segunda versión, en la página derecha, toma las dos lecturas a la vez: «Not we our selues for we are his», «no nosotros mismos, porque suyos somos».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Old_100th_(1584).jpg",
+)]
