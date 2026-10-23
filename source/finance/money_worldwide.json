@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23 14:52 UTC",
+ "generated": "2026-10-23 22:04 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-10-23",
@@ -134,9 +134,9 @@
     "m0": null,
     "m0_date": null,
     "usd_m0": null,
-    "m1": 647.897498,
-    "m1_date": "2026-08-01",
-    "usd_m1": 128.38551431685326,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
     "m2": 7743.891471,
     "m2_date": "2026-08-01",
     "usd_m2": 1534.5073756068562,
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1048595192248.9207
+    "usd": 1048542908612.178
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 432563244804.516
+    "usd": 432541676920.43
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 316138621836.26624
+    "usd": 316122858959.43195
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 314204657999.58435
+    "usd": 314188991551.44196
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 298217223616.3474
+    "usd": 298202354312.05804
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 296412190702.11096
+    "usd": 296397411397.93396
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 134088159343.2777
+    "usd": 134081473620.63998
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 113459211752.0042
+    "usd": 113453554602.07999
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 109075560388.85858
+    "usd": 109070121810.636
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 81871135752.86667
+    "usd": 81867053604.90999
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 78905724536.62111
+    "usd": 78901790245.992
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 75037796863.25732
+    "usd": 75034055430.012
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 54666711116.874756
+    "usd": 54663985399.184
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 53635263737.31108
+    "usd": 53632589448.256
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 49380543296.610916
+    "usd": 49378081150.67799
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3456251237995.4277,
+  "total_usd": 3456078907065.862,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4010.199951171875,
-  "price_as_of": "2026-10-23 14:50 UTC",
-  "world_market_value_usd": 27883245942667.26,
+  "price_usd_oz": 4010.0,
+  "price_as_of": "2026-10-23 22:02 UTC",
+  "world_market_value_usd": 27881855665930.49,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 81668.8984375,
-  "market_cap_usd": 1641741118756.9631,
+  "price_usd": 81302.46875,
+  "market_cap_usd": 1634387959451.1719,
   "btc_rank": 11,
-  "volatility_pct": 36.47893670918616,
-  "turnover_usd": 24985738884.691414,
-  "broad_yoy_pct": 0.8176261266817139,
+  "volatility_pct": 36.47623570980732,
+  "turnover_usd": 22555698302.350174,
+  "broad_yoy_pct": 0.8176196442617701,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2017,12 +2017,12 @@
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 27883245942667.26,
+    "usd": 27881855665930.49,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1641741118756.9631,
+    "usd": 1634387959451.1719,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
