@@ -49617,3 +49617,105 @@ CHAPTER_ART["psalms56"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:David_simuleert_krankzinnigheid_voor_koning_Achis_en_vlucht,_RP-P-OB-5085.jpg",
 )]
+
+# --- 1 Samuel 18 ---
+def _swap18(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D18 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D18[_d[0]] = _i
+
+def _dict18_en(slug, old=None, new=None, add=None):
+    _i = _D18[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap18(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict18_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap18(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale "not yet" claims about 1 Samuel 18
+_dict18_en("meil", "The word returns when Jonathan gives David his robe (18:4), when David cuts",
+    'The word returns when Jonathan gives David his robe (<a href="1-samuel-18.html#v18-4">18:4</a>, now on these pages), when David cuts')
+_dict18_en("meil", "(28:14; none yet on these pages).", "(28:14; neither yet on these pages).")
+_dict18_es("meil", "La palabra vuelve cuando Jonatán da su manto a David (18:4), cuando David corta",
+    'La palabra vuelve cuando Jonatán da su manto a David (<a href="1-samuel-18.es.html#v18-4">18:4</a>, ya en estas páginas), cuando David corta')
+_dict18_es("meil", "(28:14; ninguno todavía en estas páginas).", "(28:14; ninguno de los dos todavía en estas páginas).")
+_dict18_en("chaphets", "and Saul in David (1 Samuel 18:22, not yet on these pages).",
+    'and Saul in David, &lsquo;the king delights in you&rsquo; (<a href="1-samuel-18.html#v18-22">1 Samuel 18:22</a>, now on these pages), the same king who three verses later has &lsquo;no delight in a bride-price&rsquo;.')
+_dict18_es("chaphets", "y Saúl en David (1 Samuel 18:22, todavía no en estas páginas).",
+    'y Saúl en David, «el rey se complace en ti» (<a href="1-samuel-18.es.html#v18-22">1 Samuel 18:22</a>, ya en estas páginas), el mismo rey que tres versículos después «no se complace en una dote».')
+_dict18_en("qalah", "⚠ David uses it of himself at 1 Samuel 18:23, <em>a poor man and lightly esteemed</em>, and Isaiah 16:14",
+    '⚠ David uses it of himself at <a href="1-samuel-18.html#v18-23">1 Samuel 18:23</a> (now on these pages), <em>a poor man and lightly esteemed</em>, beside <em>nekallah</em>, &lsquo;a light thing&rsquo;, from <em>qalal</em>; Isaiah 16:14 uses it')
+_dict18_en("qalah", "a wound healed <em>lightly</em> (none yet on these pages).", "a wound healed <em>lightly</em> (Isaiah 16:14, Jeremiah 6:14 and 8:11, none yet on these pages).")
+_dict18_es("qalah", "⚠ David la usa de sí mismo en 1 Samuel 18:23, <em>un hombre pobre y tenido en poco</em>, e Isaías 16:14",
+    '⚠ David la usa de sí mismo en <a href="1-samuel-18.es.html#v18-23">1 Samuel 18:23</a> (ya en estas páginas), <em>un hombre pobre y tenido en poco</em>, junto a <em>neqallá</em>, «cosa liviana», de <em>qalal</em>; Isaías 16:14 la usa')
+_dict18_es("qalah", "una herida curada <em>a la ligera</em> (ninguno todavía en estas páginas).", "una herida curada <em>a la ligera</em> (Isaías 16:14, Jeremías 6:14 y 8:11, ninguno todavía en estas páginas).")
+
+# 1 Samuel 18 added to existing entries
+_dict18_en("hetil", add=' ⭐ <a href="1-samuel-18.html#v18-11">1 Samuel 18:11</a> (now on these pages) has the same verb of Saul and his spear: &lsquo;And Saul hurled the spear, and said: I will strike David to the wall.&rsquo;')
+_dict18_en("chatan", add=' ⭐ Its verb, <em>hitchatten</em>, to make oneself a son-in-law, runs through <a href="1-samuel-18.html#v18-21">1 Samuel 18:21&ndash;27</a> (now on these pages), where Saul offers David his daughters and David asks whether it is &lsquo;a light thing in your eyes to become the king&rsquo;s son-in-law&rsquo;.')
+_dict18_en("mohar", add=' ⭐ The third and last <em>mohar</em> is Saul&rsquo;s: &lsquo;The king has no delight in a bride-price, but in a hundred foreskins of the Philistines&rsquo; (<a href="1-samuel-18.html#v18-25">1 Samuel 18:25</a>, now on these pages).')
+_dict18_en("sakal", add=' ⭐ <a href="1-samuel-18.html#v18-5">1 Samuel 18</a> (now on these pages) says it of David four times, in verses 5, 14, 15 and 30: &lsquo;wherever Saul sent him, he acted wisely&rsquo;, and Saul &lsquo;saw that he was acting very wisely, and he was in dread of him&rsquo;.')
+_dict18_en("moqesh", add=' ⭐ Saul gives David his daughter Michal &lsquo;that she may be a snare to him&rsquo; (<a href="1-samuel-18.html#v18-21">1 Samuel 18:21</a>, now on these pages).')
+_dict18_en("tsalach", add=' ⭐ At <a href="1-samuel-18.html#v18-10">1 Samuel 18:10</a> (now on these pages) it is the evil spirit that rushes on Saul, and he prophesies in the midst of the house with his spear in his hand.')
+
+DICTIONARY_ES["hetil"] = ("hetil",
+    """ARROJAR, lanzar —un verbo de fuerza, más fuerte que «enviar». ⚠ Se usa tres veces en Jonás 1 y ata el capítulo: JEHOVÁ arroja un gran viento sobre el mar (1:4), los MARINEROS arrojan la carga por la borda (1:5), y al final los marineros arrojan a JONÁS al mar (1:15). El fugitivo que solo quería que lo dejaran en paz en la bodega se vuelve, con el mismo verbo, la cosa arrojada. ⭐ <a href="1-samuel-18.es.html#v18-11">1 Samuel 18:11</a> (ya en estas páginas) tiene el mismo verbo para Saúl y su lanza: «Y Saúl arrojó la lanza, y dijo: Heriré a David contra la pared».""")
+DICTIONARY_ES["chatan"] = ("jatán damim",
+    """«NOVIO (o yerno) DE SANGRE» —la frase oscura que dice Séfora en la aterradora escena de la posada de noche, cuando corta el prepucio de su hijo con un pedernal y toca con él «sus pies»: «ciertamente tú me eres un JATÁN DAMIM» (Éxodo 4:25-26). ⚠️ Una de las expresiones más oscuras de la Biblia hebrea: <em>jatán</em> es «novio / yerno» (de la raíz del parentesco por matrimonio), <em>damim</em> es «sangre» (en plural, a menudo de sangre derramada); a quién se dirige y qué significa la frase son de verdad inciertos. El sentido más probable la ata a la sangre del pacto de la circuncisión (Génesis 17), que aparta la muerte que amenazaba a la casa de Moisés. ⭐ Su verbo, <em>hitjatén</em>, hacerse yerno, recorre <a href="1-samuel-18.es.html#v18-21">1 Samuel 18:21–27</a> (ya en estas páginas), donde Saúl ofrece a David sus hijas y David pregunta si es «cosa liviana hacerse yerno del rey».""")
+DICTIONARY_ES["mohar"] = ("mohar",
+    """EL PRECIO DE LA NOVIA —la suma que la casa del novio pagaba a la familia de la novia por el matrimonio (distinta del <em>mattán</em>, un «regalo» añadido). Siquem, desesperado, dice a los hermanos de Dina que «aumenten mucho sobre mí la dote y el regalo» (Génesis 34:12): comprará su paso más allá del crimen. La ley fija un <em>mohar</em> para la muchacha seducida no comprometida (Éxodo 22:16-17). «Dote», la palabra de las versiones castellanas, corre en propiedad en la otra dirección (de la familia de la novia al novio); el <em>mohar</em> es el precio pagado POR la novia, no por ella. ⭐ El tercero y último <em>mohar</em> es el de Saúl: «El rey no se complace en una dote, sino en cien prepucios de filisteos» (<a href="1-samuel-18.es.html#v18-25">1 Samuel 18:25</a>, ya en estas páginas).""")
+for _k, _b in [
+    ("sakal", ' ⭐ <a href="1-samuel-18.es.html#v18-5">1 Samuel 18</a> (ya en estas páginas) lo dice de David cuatro veces, en los versículos 5, 14, 15 y 30: «adondequiera que Saúl lo enviaba, actuaba con acierto», y Saúl «vio que actuaba con mucho acierto, y le tenía pavor».'),
+    ("moqesh", ' ⭐ Saúl da a David a su hija Mical «para que le sea un lazo» (<a href="1-samuel-18.es.html#v18-21">1 Samuel 18:21</a>, ya en estas páginas).'),
+    ("tsalach", ' ⭐ En <a href="1-samuel-18.es.html#v18-10">1 Samuel 18:10</a> (ya en estas páginas) es el espíritu malo el que irrumpe sobre Saúl, y él profetiza en medio de la casa con la lanza en la mano.'),
+]:
+    _dict18_es(_k, add=_b)
+
+# encyclopedia
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "michal":
+        _e["desc"] = _swap18(_e["desc"], "(1 Samuel 18&ndash;19, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23), none of these yet on these pages.",
+            '(<a href="1-samuel-18.html#v18-20">1 Samuel 18:20&ndash;28</a>, now on these pages; 19:11&ndash;17, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, none of these yet on these pages).')
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 18, 20)]
+    elif _e["slug"] == "merab":
+        _e["desc"] = _swap18(_e["desc"], "(1 Samuel 18:17&ndash;19, not yet on these pages).",
+            '(<a href="1-samuel-18.html#v18-17">1 Samuel 18:17&ndash;19</a>, now on these pages).')
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 18, 17)]
+    elif _e["slug"] == "jonathan":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 18, 1)]
+ENCYCLOPEDIA_ES["michal"] = (ENCYCLOPEDIA_ES["michal"][0], _swap18(ENCYCLOPEDIA_ES["michal"][1],
+    "(1 Samuel 18&ndash;19, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23), nada de ello todavía en estas páginas.",
+    '(<a href="1-samuel-18.es.html#v18-20">1 Samuel 18:20&ndash;28</a>, ya en estas páginas; 19:11&ndash;17, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, nada de ello todavía en estas páginas).'))
+ENCYCLOPEDIA_ES["merab"] = (ENCYCLOPEDIA_ES["merab"][0], _swap18(ENCYCLOPEDIA_ES["merab"][1],
+    "(1 Samuel 18:17&ndash;19, todavía no en estas páginas).",
+    '(<a href="1-samuel-18.es.html#v18-17">1 Samuel 18:17&ndash;19</a>, ya en estas páginas).'))
+
+ENCYCLOPEDIA.append(dict(slug="adriel", name="Adriel the Meholathite", kind="person", aliases=["Adriel"],
+    refs=[("1 Samuel", 18, 19)], videos=[],
+    desc='The man to whom Saul gave his elder daughter Merab when she should have been given to David (<a href="1-samuel-18.html#v18-19">1 Samuel 18:19</a>, now on these pages). &lsquo;Meholathite&rsquo; ties him to Abel-meholah (<a href="judges-7.html#v22">Judges 7:22</a>, now on these pages). 2 Samuel 21:8 (not yet on these pages) names him as &lsquo;Adriel the son of Barzillai the Meholathite&rsquo; and gives him five sons, by a daughter of Saul whom the Hebrew there calls Michal.'))
+ENCYCLOPEDIA_ES["adriel"] = ("Adriel el meholatita",
+    'El hombre a quien Saúl dio a su hija mayor Merab cuando debía haber sido dada a David (<a href="1-samuel-18.es.html#v18-19">1 Samuel 18:19</a>, ya en estas páginas). «Meholatita» lo une a Abel-meholá (<a href="judges-7.es.html#v22">Jueces 7:22</a>, ya en estas páginas). 2 Samuel 21:8 (todavía no en estas páginas) lo nombra «Adriel hijo de Barzilai el meholatita» y le da cinco hijos, de una hija de Saúl a la que el hebreo llama allí Mical.')
+
+CHRON_CHAPTERS["1sam18"] = dict(era="monarchy",
+    when="“Saul has struck down his thousands, and David his ten thousands”: Jonathan’s soul is bound up with David’s and he gives him his robe and bow; the women’s song turns Saul against him, the evil spirit rushes on Saul and he hurls the spear; Merab is promised and given to another, and Michal, who loves David, is given to him for a hundred Philistine foreskins, of which David brings two hundred.",
+    clock="Undated: in Saul’s reign, after the fight with Goliath of chapter 17, while David serves at Saul’s court and leads his men in the Philistine wars.")
+
+CHAPTER_ART["1sam18"] = [dict(
+    file="guercino-saul-attacking-david.jpg",
+    title="Saul Attacking David", title_es="Saúl ataca a David",
+    artist="Guercino",
+    year="1646",
+    location="Galleria Nazionale d’Arte Antica, Palazzo Barberini, Rome", location_es="Galleria Nazionale d’Arte Antica, Palacio Barberini, Roma",
+    alt="A painting. On the left a bearded king in a gold crown, scale armour and a red cloak raises a long spear above his head and leans forward to throw it. On the right a young man with curly hair, in an orange tunic and blue cloak, holds a harp against his side and turns away, one hand raised toward the spear. Behind them are dark stone pillars and a blue sky with clouds.",
+    note="1 Samuel 18:10–11: the evil spirit rushes on Saul, David plays with his hand as day by day, the spear is in Saul’s hand, and Saul hurls it. Guercino paints the moment before the throw, Saul in scale armour and David still holding his instrument.",
+    note_es="1 Samuel 18:10–11: el espíritu malo irrumpe sobre Saúl, David toca con su mano como cada día, la lanza está en la mano de Saúl, y Saúl la arroja. Guercino pinta el momento antes del lanzamiento, Saúl con coraza de escamas y David sosteniendo todavía su instrumento.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Guercino_Saul_Davide.jpg",
+)]
