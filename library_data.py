@@ -49903,3 +49903,142 @@ CHAPTER_ART["dan4"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:Nebukadnezar_eet_gras_onder_de_koeien,_BK-2016-99-2.jpg",
 )]
+
+# --- 1 Samuel 19 ---
+def _swap19(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D19 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D19[_d[0]] = _i
+
+def _dict19_en(slug, old=None, new=None, add=None):
+    _i = _D19[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap19(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict19_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap19(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale "not yet" claims about 1 Samuel 19
+_dict19_en("teraphim", "in Michal's bed-decoy for David (1 Samuel 19:13),",
+    'in Michal&rsquo;s bed-decoy for David (<a href="1-samuel-19.html#v19-13">1 Samuel 19:13</a>, now on these pages),')
+_dict19_es("teraphim", "en el señuelo que Mical pone en la cama de David (1 Samuel 19:13),",
+    'en el señuelo que Mical pone en la cama de David (<a href="1-samuel-19.es.html#v19-13">1 Samuel 19:13</a>, ya en estas páginas),')
+_dict19_en("rimmah", "Saul puts the same question to Michal when she lets David escape (1 Samuel 19:17), and the medium of En-dor puts it to Saul when she recognizes him (1 Samuel 28:12, neither yet on these pages).",
+    'Saul puts the same question to Michal when she lets David escape (<a href="1-samuel-19.html#v19-17">1 Samuel 19:17</a>, now on these pages), and the medium of En-dor puts it to Saul when she recognizes him (1 Samuel 28:12, not yet on these pages).')
+_dict19_es("rimmah", "Saúl le hace la misma pregunta a Mical cuando ella deja escapar a David (1 Samuel 19:17), y la adivina de Endor se la hace a Saúl cuando lo reconoce (1 Samuel 28:12, ninguno todavía en estas páginas).",
+    'Saúl le hace la misma pregunta a Mical cuando ella deja escapar a David (<a href="1-samuel-19.es.html#v19-17">1 Samuel 19:17</a>, ya en estas páginas), y la adivina de Endor se la hace a Saúl cuando lo reconoce (1 Samuel 28:12, todavía no en estas páginas).')
+_dict19_es("rimmah", "<em>¿Por qué nos engañasteis?</em>", "<em>¿Por qué nos engañaron?</em>")
+
+# 1 Samuel 19 added to existing entries
+_dict19_en("teraphim", add=' ⭐ <a href="1-samuel-19.html#v19-13">1 Samuel 19:13&ndash;16</a> (now on these pages) has Michal put the teraphim in David&rsquo;s bed with a net of goats&rsquo; hair at its head, so that Saul&rsquo;s messengers find a figure where they expected a sick man: a daughter deceiving her father with teraphim, as Rachel did. The plural form there names a single figure. The Greek has <em>kenotaphia</em>, &lsquo;empty tombs&rsquo;.')
+_dict19_es("teraphim", add=' ⭐ <a href="1-samuel-19.es.html#v19-13">1 Samuel 19:13&ndash;16</a> (ya en estas páginas): Mical pone el terafim en la cama de David con una red de pelo de cabra a su cabecera, y los mensajeros de Saúl encuentran una figura donde esperaban a un enfermo: una hija que engaña a su padre con terafim, como Raquel. La forma plural nombra allí una sola figura. El griego tiene <em>kenotáfia</em>, «tumbas vacías».')
+_dict19_en("rimmah", add=' ⭐ The form <em>rimmitani</em>, &lsquo;you deceived me&rsquo;, stands in just these three places, Genesis 29:25, 1 Samuel 19:17 and 28:12.')
+_dict19_es("rimmah", add=' ⭐ La forma <em>rimmitani</em>, «me engañaste», está solo en estos tres lugares, Génesis 29:25, 1 Samuel 19:17 y 28:12.')
+_dict19_en("naqi", add=' ⭐ Jonathan uses the phrase to his father, &lsquo;Why then would you sin against innocent blood, by putting David to death without cause?&rsquo; (<a href="1-samuel-19.html#v19-5">1 Samuel 19:5</a>, now on these pages).')
+_dict19_es("naqi", add=' ⭐ Jonatán usa la frase ante su padre: «¿Por qué, pues, pecarías contra sangre inocente, dando muerte a David sin causa?» (<a href="1-samuel-19.es.html#v19-5">1 Samuel 19:5</a>, ya en estas páginas).')
+_dict19_en("chinnam", add=' ⭐ In <a href="1-samuel-19.html#v19-5">1 Samuel 19:5</a> (now on these pages) it is the last word of Jonathan&rsquo;s plea: &lsquo;by putting David to death <em>without cause</em>&rsquo;.')
+_dict19_en("bor", add=' ⭐ Saul, on his way to Naioth, comes to &lsquo;the great cistern that is in Secu&rsquo; (<a href="1-samuel-19.html#v19-22">1 Samuel 19:22</a>, now on these pages); the Greek reads &lsquo;the well of the threshing floor&rsquo;.')
+_dict19_en("navi", add=' ⭐ At Naioth Saul&rsquo;s messengers see &lsquo;the company of the prophets prophesying, and Samuel standing, set over them&rsquo; (<a href="1-samuel-19.html#v19-20">1 Samuel 19:20</a>, now on these pages), with a word for the group, <a href="dictionary.html#lahaqah">lahaqah</a>, found nowhere else.')
+_dict19_es("navi", add=' ⭐ En Nayot los mensajeros de Saúl ven «la compañía de los profetas profetizando, y a Samuel de pie, puesto sobre ellos» (<a href="1-samuel-19.es.html#v19-20">1 Samuel 19:20</a>, ya en estas páginas), con una palabra para el grupo, <a href="diccionario.html#lahaqah">lahaqá</a>, que no está en ningún otro lugar.')
+_dict19_en("teshuah", add=' ⭐ Jonathan reminds his father that at David&rsquo;s fight &lsquo;Jehovah worked a great salvation for all Israel&rsquo;, <em>teshu&rsquo;ah gedolah</em> (<a href="1-samuel-19.html#v19-5">1 Samuel 19:5</a>, now on these pages), a phrase that stands in four verses of the Hebrew Bible; the other three are the victories of David&rsquo;s mighty men (2 Samuel 23:10, 12; 1 Chronicles 11:14).')
+_dict19_es("teshuah", add=' ⭐ Jonatán recuerda a su padre que en la pelea de David «Jehová obró una gran salvación para todo Israel», <em>teshuá guedolá</em> (<a href="1-samuel-19.es.html#v19-5">1 Samuel 19:5</a>, ya en estas páginas), una frase que está en cuatro versículos de la Biblia hebrea; los otros tres son las victorias de los valientes de David (2 Samuel 23:10, 12; 1 Crónicas 11:14).')
+_dict19_en("chaphets", add=' ⭐ A chapter later the son&rsquo;s delight answers the father&rsquo;s: &lsquo;But Jonathan, Saul&rsquo;s son, delighted greatly in David&rsquo; (<a href="1-samuel-19.html#v19-1">1 Samuel 19:1</a>, now on these pages).')
+_dict19_es("chaphets", add=' ⭐ Un capítulo después el agrado del hijo responde al del padre: «Pero Jonatán, hijo de Saúl, se complacía mucho en David» (<a href="1-samuel-19.es.html#v19-1">1 Samuel 19:1</a>, ya en estas páginas).')
+
+# Spanish twins that were missing (the 1 Samuel 19 notes link them in both languages)
+DICTIONARY_ES["chinnam"] = ("jinnam",
+    """DE BALDE &mdash;gratis, sin pago, sin nada a cambio; de <em>jen</em>, «favor», y así: como regalo. Lleva la bisagra de dos libros. En Malaquías 1:10 los sacerdotes no quieren encender el altar <em>jinnam</em> (según una lectura, «de balde, sin paga» &mdash;así lo toman la KJV y la de Ginebra; la ASV y la NIV leen «en vano»). En Job 1:9 el Acusador hace la pregunta que todo el libro existe para responder: «¿Acaso teme Job a Dios de balde (<em>ha-jinnam</em>)?» &mdash;¿es posible una devoción desinteresada, o la piedad es siempre un trato pagado? Un tercer lugar lleva la misma palabra al puro lamento: Lamentaciones 3:52 describe a enemigos que cazan al que habla <em>jinnam</em> &mdash;sin causa, sin merecerlo&mdash;, la misma palabra que Juan 15:25 cita después de un salmo, no de este versículo, pero siguiendo el mismo hilo del sufrimiento que se llama a sí mismo inmerecido. ⭐ En <a href="1-samuel-19.es.html#v19-5">1 Samuel 19:5</a> (ya en estas páginas) es la última palabra de la súplica de Jonatán: «dando muerte a David <em>sin causa</em>».""")
+DICTIONARY_ES["bor"] = ("bor",
+    """UN POZO o cisterna &mdash;un hueco en forma de botella cortado en la roca para recoger el agua de lluvia, de paredes lisas e imposible de escalar, y por eso uno vacío es una prisión tan eficaz. Es el hoyo al que los hermanos de José lo echaron en Dotán («y la cisterna estaba vacía; no había agua en ella», 37:24), y es la palabra que el mismo José usa para su cárcel egipcia: «tampoco aquí he hecho nada para que me pusieran en la CISTERNA» (40:15). ⚠️ La KJV, la ASV y la NIV leen «dungeon», calabozo, en 40:15 mientras leen «pit», pozo, en 37:24, de modo que el lector inglés no puede oír que José describe su celda con la misma palabra que usaría para aquel hoyo en el suelo. Más tarde Jeremías es bajado a uno con lodo en el fondo (Jeremías 38:6). ⭐ Saúl, de camino a Nayot, llega a «la gran cisterna que está en Secú» (<a href="1-samuel-19.es.html#v19-22">1 Samuel 19:22</a>, ya en estas páginas); el griego lee «el pozo de la era».""")
+
+DICTIONARY.extend([
+    ("kevir", "kevir", "כְּבִיר", "kevir",
+     """A NET or mesh of some woven stuff &mdash; a word whose sense is guessed, because <span data-heb-read="כביר">as a noun it stands in two verses of the Hebrew Bible, both in one story</span>: Michal puts &lsquo;the net of goats&rsquo; hair&rsquo; at the head of the teraphim in David&rsquo;s bed (<a href="1-samuel-19.html#v19-13">1 Samuel 19:13</a> and 16, now on these pages). The same letters elsewhere spell <em>kabbir</em>, mighty, an unrelated word. Its relatives point to something meshed: <em>mikhbar</em>, the altar&rsquo;s grating, &lsquo;a network of bronze&rsquo; (<a href="exodus-27.html#v27-4">Exodus 27:4</a>), and the <em>makhber</em> Hazael soaked in water and spread over his king&rsquo;s face (2 Kings 8:15, not yet on these pages). ⚠ The versions guess differently: the ASV and KJV &lsquo;a pillow of goats&rsquo; hair&rsquo;, the NWT &lsquo;a net of goats&rsquo; hair&rsquo;, the Douay &lsquo;a goat&rsquo;s skin&rsquo;; the Greek has &lsquo;the liver of the goats&rsquo;, and Josephus builds his telling on the liver.""",
+     ("1 Samuel", 19, 13)),
+    ("lahaqah", "lahaqah", "לַהֲקָה", "lahaqah",
+     """A COMPANY, a group &mdash; of prophets, and nothing else, because <span data-heb="להקת">the word stands in one verse of the Hebrew Bible</span>: Saul&rsquo;s messengers come to Naioth and see &lsquo;the company of the prophets prophesying, and Samuel standing, set over them&rsquo; (<a href="1-samuel-19.html#v19-20">1 Samuel 19:20</a>, now on these pages). Its sense comes from the scene. The group Saul met at Gibeah was a <em>chevel</em>, a band (<a href="1-samuel-10.html#v10-5">1 Samuel 10:5</a>). ⚠ The Greek has <em>ekklēsia</em>, assembly, as for <em>qahal</em>, and the letters of <em>lahaqat</em> rearranged spell <em>qehillat</em>, &lsquo;the assembly of&rsquo;. The NWT reads &lsquo;the elderly ones of the prophets&rsquo;; the ASV and KJV &lsquo;the company of the prophets&rsquo;.""",
+     ("1 Samuel", 19, 20)),
+])
+DICTIONARY_ES["kevir"] = ("kevir",
+    """UNA RED o malla de algún tejido &mdash;una palabra cuyo sentido se adivina, porque <span data-heb-read="כביר">como sustantivo está en dos versículos de la Biblia hebrea, ambos en una misma historia</span>: Mical pone «la red de pelo de cabra» a la cabecera del terafim en la cama de David (<a href="1-samuel-19.es.html#v19-13">1 Samuel 19:13</a> y 16, ya en estas páginas). Las mismas letras forman en otros lugares <em>kabbir</em>, poderoso, una palabra sin relación. Sus parientes apuntan a algo en malla: <em>mijbar</em>, el enrejado del altar, «una red de bronce» (<a href="exodus-27.es.html#v27-4">Éxodo 27:4</a>), y el <em>majber</em> que Hazael empapó en agua y extendió sobre el rostro de su rey (2 Reyes 8:15, todavía no en estas páginas). ⚠ Las versiones adivinan de modo distinto: la RV60 «una almohada de pelo de cabra», la TNM «una red de pelo de cabra», la NVI «un tejido de pelo de cabra»; el griego tiene «el hígado de las cabras», y Josefo construye su relato sobre el hígado.""")
+DICTIONARY_ES["lahaqah"] = ("lahaqá",
+    """UNA COMPAÑÍA, un grupo &mdash;de profetas, y de nada más, porque <span data-heb="להקת">la palabra está en un solo versículo de la Biblia hebrea</span>: los mensajeros de Saúl llegan a Nayot y ven «la compañía de los profetas profetizando, y a Samuel de pie, puesto sobre ellos» (<a href="1-samuel-19.es.html#v19-20">1 Samuel 19:20</a>, ya en estas páginas). Su sentido sale de la escena. El grupo que Saúl encontró en Guibeá era un <em>jével</em>, una banda (<a href="1-samuel-10.es.html#v10-5">1 Samuel 10:5</a>). ⚠ El griego tiene <em>ekklesía</em>, asamblea, como para <em>qahal</em>, y las letras de <em>lahaqat</em> en otro orden forman <em>qehillat</em>, «la asamblea de». La TNM lee «los de edad madura de los profetas»; la RV60 «una compañía de profetas».""")
+
+# encyclopedia
+_REF19 = {"michal": [("1 Samuel", 19, 11)], "jonathan": [("1 Samuel", 19, 1)], "samuel": [("1 Samuel", 19, 18)],
+          "saul-king": [("1 Samuel", 19, 1), ("1 Samuel", 19, 24)], "david": [("1 Samuel", 19, 12)]}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REF19:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF19[_e["slug"]] if r not in _e["refs"]]
+    if _e["slug"] == "michal":
+        _e["desc"] = _swap19(_e["desc"], '(<a href="1-samuel-18.html#v18-20">1 Samuel 18:20&ndash;28</a>, now on these pages; 19:11&ndash;17, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, none of these yet on these pages).',
+            '(<a href="1-samuel-18.html#v18-20">1 Samuel 18:20&ndash;28</a> and <a href="1-samuel-19.html#v19-11">19:11&ndash;17</a>, now on these pages; 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, none of these yet on these pages).')
+        _e["desc"] += ' ⭐ <a href="1-samuel-19.html#v19-11">1 Samuel 19</a> (now on these pages): she warns David that night, lets him down through the window, puts the teraphim in his bed with a net of goats&rsquo; hair at its head, tells Saul&rsquo;s messengers he is sick, and tells her father that David threatened her.'
+    elif _e["slug"] == "jonathan":
+        _e["desc"] += ' ⭐ <a href="1-samuel-19.html#v19-1">1 Samuel 19:1&ndash;7</a> (now on these pages): told by his father to kill David, he warns him, pleads with Saul not to &ldquo;sin against innocent blood&rdquo;, wins an oath that David will not be put to death, and brings David back to court.'
+    elif _e["slug"] == "samuel":
+        _e["desc"] += ' ⭐ <a href="1-samuel-19.html#v19-18">1 Samuel 19:18&ndash;24</a> (now on these pages): David flees to him at Ramah and they stay at Naioth, where Samuel stands set over a company of prophets; Saul&rsquo;s messengers, and then Saul, prophesy there, and Saul lies naked before him all day and all night.'
+    elif _e["slug"] == "saul-king":
+        _e["desc"] += ' ⭐ <a href="1-samuel-19.html#v19-1">1 Samuel 19</a> (now on these pages): he orders David put to death, swears to Jonathan that he will not be, throws the spear at him again, sends men to watch his house, and calls him &ldquo;my enemy&rdquo;; going to Naioth to take him, he is seized by the spirit, strips, and lies naked before Samuel, and the proverb &ldquo;Is Saul also among the prophets?&rdquo; is told of him a second time.'
+    elif _e["slug"] == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-19.html#v19-8">1 Samuel 19</a> (now on these pages): he defeats the Philistines again, escapes Saul&rsquo;s spear a second time, is let down through a window by Michal, and flees to Samuel at Ramah and Naioth.'
+ENCYCLOPEDIA_ES["michal"] = (ENCYCLOPEDIA_ES["michal"][0], _swap19(ENCYCLOPEDIA_ES["michal"][1],
+    '(<a href="1-samuel-18.es.html#v18-20">1 Samuel 18:20&ndash;28</a>, ya en estas páginas; 19:11&ndash;17, 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, nada de ello todavía en estas páginas).',
+    '(<a href="1-samuel-18.es.html#v18-20">1 Samuel 18:20&ndash;28</a> y <a href="1-samuel-19.es.html#v19-11">19:11&ndash;17</a>, ya en estas páginas; 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, nada de ello todavía en estas páginas).')
+    + ' ⭐ <a href="1-samuel-19.es.html#v19-11">1 Samuel 19</a> (ya en estas páginas): avisa a David esa noche, lo hace bajar por la ventana, pone el terafim en su cama con una red de pelo de cabra a la cabecera, dice a los mensajeros de Saúl que está enfermo, y dice a su padre que David la amenazó.')
+for _k, _b in [
+    ("jonathan", ' ⭐ <a href="1-samuel-19.es.html#v19-1">1 Samuel 19:1&ndash;7</a> (ya en estas páginas): cuando su padre le ordena matar a David, lo avisa, ruega a Saúl que no «peque contra sangre inocente», obtiene un juramento de que David no morirá, y lo trae de vuelta a la corte.'),
+    ("samuel", ' ⭐ <a href="1-samuel-19.es.html#v19-18">1 Samuel 19:18&ndash;24</a> (ya en estas páginas): David huye a él en Ramá y se quedan en Nayot, donde Samuel está de pie al frente de una compañía de profetas; los mensajeros de Saúl, y luego Saúl, profetizan allí, y Saúl yace desnudo delante de él todo el día y toda la noche.'),
+    ("saul-king", ' ⭐ <a href="1-samuel-19.es.html#v19-1">1 Samuel 19</a> (ya en estas páginas): ordena dar muerte a David, jura a Jonatán que no morirá, le arroja la lanza otra vez, manda vigilar su casa, y lo llama «mi enemigo»; al ir a Nayot para prenderlo, el espíritu lo toma, se quita sus vestidos y yace desnudo delante de Samuel, y el proverbio «¿También Saúl entre los profetas?» se cuenta de él por segunda vez.'),
+    ("david", ' ⭐ <a href="1-samuel-19.es.html#v19-8">1 Samuel 19</a> (ya en estas páginas): vence otra vez a los filisteos, escapa por segunda vez de la lanza de Saúl, Mical lo hace bajar por una ventana, y huye a Samuel en Ramá y en Nayot.'),
+]:
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], ENCYCLOPEDIA_ES[_k][1] + _b)
+
+ENCYCLOPEDIA.extend([
+    dict(slug="naioth", name="Naioth (in Ramah)", kind="place", aliases=["Naioth"], refs=[("1 Samuel", 19, 18)], videos=[],
+         desc='The place &lsquo;in Ramah&rsquo; where David and Samuel stay after David escapes from Saul, and where Saul&rsquo;s messengers, and then Saul himself, are seized by the spirit and prophesy (<a href="1-samuel-19.html#v19-18">1 Samuel 19:18&ndash;24</a>, now on these pages); David flees from it at 20:1 (not yet on these pages). The scribes wrote the name נוית in all four places in chapter 19 and read it <em>Nayot</em>. No town of the name is known; the word is often taken as &lsquo;dwellings&rsquo;, from <em>naveh</em>, an abode, and so perhaps the prophets&rsquo; lodgings at Ramah rather than a separate town (reported, not decided). Josephus has Samuel leave &lsquo;the city Ramah&rsquo; for &lsquo;a certain place called Naioth&rsquo;. Where Samuel&rsquo;s Ramah was is itself argued (see <a href="encyclopedia.html#ramah">Ramah</a>), so no map position is given here.'),
+    dict(slug="secu", name="Secu", kind="place", aliases=["Secu", "Sechu"], refs=[("1 Samuel", 19, 22)], videos=[],
+         desc='A place on Saul&rsquo;s way to Ramah, with &lsquo;the great cistern that is in Secu&rsquo; (<a href="1-samuel-19.html#v19-22">1 Samuel 19:22</a>, now on these pages); it is named nowhere else, and its site is not known, so no map position is given. The Greek has &lsquo;the well of the threshing floor that is in Sephi&rsquo;, and the Douay, from the Latin, &lsquo;the great cistern, which is in Socho&rsquo;.'),
+])
+ENCYCLOPEDIA_ES["naioth"] = ("Nayot (en Ramá)",
+    'El lugar «en Ramá» donde David y Samuel se quedan después de que David escapa de Saúl, y donde los mensajeros de Saúl, y luego el propio Saúl, son tomados por el espíritu y profetizan (<a href="1-samuel-19.es.html#v19-18">1 Samuel 19:18&ndash;24</a>, ya en estas páginas); David huye de allí en 20:1 (todavía no en estas páginas). Los escribas escribieron el nombre נוית en sus cuatro lugares del capítulo 19 y lo leyeron <em>Nayot</em>. No se conoce ninguna ciudad con ese nombre; la palabra se suele entender como «moradas», de <em>navé</em>, morada, y así quizá el alojamiento de los profetas en Ramá más que una ciudad aparte (se informa, no se decide). Josefo hace que Samuel deje «la ciudad de Ramá» por «un lugar llamado Nayot». Dónde estaba la Ramá de Samuel se discute (véase <a href="enciclopedia.html#ramah">Ramá</a>), así que aquí no se da posición en el mapa.')
+ENCYCLOPEDIA_ES["secu"] = ("Secú",
+    'Un lugar en el camino de Saúl a Ramá, con «la gran cisterna que está en Secú» (<a href="1-samuel-19.es.html#v19-22">1 Samuel 19:22</a>, ya en estas páginas); no se nombra en ningún otro lugar, y no se sabe dónde estaba, así que no se da posición en el mapa. El griego tiene «el pozo de la era que está en Sefí», y la RV 1909 «el pozo grande que está en Sochô».')
+
+CHRON_CHAPTERS["1sam19"] = dict(era="monarchy",
+    when="“Is Saul also among the prophets?”: Saul orders David put to death; Jonathan pleads for him and Saul swears he will not die. After a new victory over the Philistines the evil spirit comes on Saul and he drives the spear into the wall; that night Michal lets David down through the window and puts the teraphim in his bed. David flees to Samuel at Ramah and they stay at Naioth, where three sets of Saul’s messengers and then Saul himself are seized by the spirit and prophesy, and Saul lies naked before Samuel all day and all night.",
+    clock="Undated: in Saul’s reign, after the marriage to Michal of chapter 18. The spear, the night escape and the morning watch fall within a day or two (19:10–11); Saul lies at Naioth “all that day and all that night” (19:24).")
+
+CHAPTER_ART["1sam19"] = [
+    dict(
+        file="dore-michal-lets-david-escape.jpg",
+        title="Michal Lets David Escape", title_es="Mical deja escapar a David",
+        artist="Gustave Doré",
+        year="1873",
+        location="Wood engraving, from Doré’s illustrated Bible", location_es="Grabado en madera, de la Biblia ilustrada de Doré",
+        alt="A black-and-white engraving. A young woman in a headscarf leans out of a carved stone window between columns, holding a pole across the sill and looking back over her shoulder. From the pole a long twisted cloth hangs down the wall, and a young man in a tunic, barefoot, slides down it toward the ground. Palm trees grow on either side, and the arches of a palace stand to the right.",
+        note="1 Samuel 19:12: “And Michal let David down through the window; and he went, and fled, and escaped.” Doré gives Michal a rope of twisted cloth, as Joshua 2:15 gave Rahab a rope and Josephus gives Michal “a cord”; the Hebrew of this verse names none. She looks back toward the room, where Saul’s messengers will find the teraphim in the bed.",
+        note_es="1 Samuel 19:12: «Y Mical hizo bajar a David por la ventana; y él se fue, y huyó, y escapó». Doré le da a Mical una soga de tela retorcida, como Josué 2:15 dio a Rahab una soga y Josefo da a Mical «una cuerda»; el hebreo de este versículo no nombra ninguna. Ella mira hacia la habitación, donde los mensajeros de Saúl encontrarán el terafim en la cama.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Michal_lets_David_escape_(89398919).jpg",
+    ),
+    dict(
+        file="morgan-bible-saul-spear-messengers.jpg",
+        title="Jonathan Pleads for David; the Spear Thrown Again", title_es="Jonatán intercede por David; la lanza arrojada otra vez",
+        artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+        year="c. 1250",
+        location="Morgan Library & Museum, New York (MS M.638, fol. 30v)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 30v)",
+        alt="Medieval manuscript page with four painted scenes under arcades on gold and coloured grounds. Top left: a crowned king on a throne points at two young men, one kneeling with his hands raised. Top right: knights in mail on horseback charge with swords and lances over fallen bodies. Bottom left: the enthroned king thrusts a long spear at a kneeling young man holding a harp, who raises his hand. Bottom right: the king points toward a group of soldiers in mail with axes and spears. Latin captions sit above and below the pictures, and later captions in Persian and Hebrew script run down the margins.",
+        note="Four moments of 1 Samuel 19:4–11 in order: Jonathan speaks good of David to Saul and brings him back (verses 4–7); David defeats the Philistines with a great slaughter (verse 8); Saul, with the evil spirit on him, thrusts the spear at David as he plays (verses 9–10); and the king sends men to David’s house to kill him (verse 11). The Latin caption under the spear says the king wanted to pin him with it, “but David escaped again”.",
+        note_es="Cuatro momentos de 1 Samuel 19:4–11 en orden: Jonatán habla bien de David a Saúl y lo trae de vuelta (versículos 4–7); David vence a los filisteos con una gran matanza (versículo 8); Saúl, con el espíritu malo sobre él, lanza la lanza contra David mientras toca (versículos 9–10); y el rey envía hombres a la casa de David para matarlo (versículo 11). El rótulo latino bajo la lanza dice que el rey quiso clavarlo con ella, «pero David escapó otra vez».",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._30v.jpg",
+    ),
+]
