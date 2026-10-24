@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23 22:02 UTC",
+ "generated": "2026-10-24 01:27 UTC",
  "assets": [
   {
    "name": "Gold",
@@ -140,8 +140,8 @@
    "country": "🇺🇸",
    "emoji": null,
    "domain": "apple.com",
-   "market_cap": 5074761329575.806,
-   "price": 347.7250061035156,
+   "market_cap": 5074834371736.45,
+   "price": 347.7300109863281,
    "change_pct": -0.25,
    "spark": [
     333.08,
@@ -173,7 +173,7 @@
     339.5,
     343.99,
     348.22,
-    347.725
+    347.73
    ],
    "rank": 4
   },
@@ -274,7 +274,7 @@
    "domain": null,
    "market_cap": 3035994949926.9463,
    "price": 53.959999084472656,
-   "change_pct": 0.01,
+   "change_pct": 0.0,
    "spark": [
     63.513,
     63.236,
@@ -448,9 +448,9 @@
    "country": "🌐",
    "emoji": "₿",
    "domain": null,
-   "market_cap": 1634387959451.1719,
-   "price": 81302.46875,
-   "change_pct": 0.0,
+   "market_cap": 1622155819651.1213,
+   "price": 80693.71875,
+   "change_pct": -0.18,
    "spark": [
     84379.0625,
     84034.9219,
@@ -481,7 +481,7 @@
     82941.0,
     84011.9688,
     81311.8906,
-    81302.4688
+    80693.7188
    ],
    "rank": 11
   },
@@ -799,7 +799,7 @@
  "constants": {
   "gold_tonnes": 216265,
   "silver_tonnes": 1750000,
-  "btc_circulating": 20102562.5,
-  "btc_block_height": 972835
+  "btc_circulating": 20102628.12,
+  "btc_block_height": 972856
  }
 }
