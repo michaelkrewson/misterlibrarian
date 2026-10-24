@@ -49719,3 +49719,94 @@ CHAPTER_ART["1sam18"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Guercino_Saul_Davide.jpg",
 )]
+
+# --- Proverbs 2 ---
+DICTIONARY.extend([
+    ("matmon", "matmon", "מַטְמוֹן", "matmon",
+     """HIDDEN TREASURE &mdash; a thing hidden in the ground for safekeeping, from <em>taman</em>, to hide or bury. Joseph&rsquo;s steward uses it when the brothers find their silver back in their bags: &lsquo;Your God and the God of your father gave you treasure in your bags&rsquo; (<a href="genesis-43.html#v43-23">Genesis 43:23</a>). ⭐ <a href="proverbs-2.html#v2-4">Proverbs 2:4</a> (now on these pages) makes wisdom the treasure: &lsquo;if you seek her like silver, and search for her like hidden treasures&rsquo;. Job turns the word to despair, the wretched &lsquo;who dig for it more than for hidden treasures&rsquo;, where what they dig for is death (Job 3:21, not yet on these pages). The Greek of Proverbs 2:4 has <em>thēsauroi</em>, the word of &lsquo;all the treasures of wisdom and knowledge&rsquo; in <a href="colossians-2.html#v2-3">Colossians 2:3</a>.""",
+     ("Proverbs", 2, 4)),
+    ("chasid", "chasid", "חָסִיד", "chasid",
+     """A LOYAL ONE &mdash; someone who holds to <em>chesed</em>, loyal love, the word the noun is built on; in the plural, God&rsquo;s loyal ones. ⭐ <a href="psalms-37.html#v37-28">Psalm 37:28</a>: &lsquo;Jehovah loves justice and will not forsake his loyal ones&rsquo;. Hannah&rsquo;s song has &lsquo;The feet of his faithful ones he guards&rsquo; (<a href="1-samuel-2.html#v2-9">1 Samuel 2:9</a>), and <a href="proverbs-2.html#v2-8">Proverbs 2:8</a> (now on these pages) &lsquo;he keeps the way of his loyal ones&rsquo;; in both the word is written without the letter of the plural and read as a plural, and both have the verb <em>shamar</em>, keep. The stork, <em>chasidah</em>, has the same root in its name (<a href="leviticus-11.html#v11-19">Leviticus 11:19</a>). The KJV and ASV usually have &lsquo;saints&rsquo;, the NWT 1984 &lsquo;loyal ones&rsquo;.""",
+     ("Proverbs", 2, 8)),
+    ("tahpukhot", "tahpukhot", "תַּהְפֻּכוֹת", "tahpukhot",
+     """PERVERSITIES &mdash; things turned upside down, from <em>hafakh</em>, to turn over; a plural noun, used of speech and scheming. Moses&rsquo; song calls Israel &lsquo;a generation of perversity&rsquo; (<a href="deuteronomy-32.html#v32-20">Deuteronomy 32:20</a>). ⭐ <a href="proverbs-2.html#v2-12">Proverbs 2:12</a> (now on these pages): &lsquo;from the man who speaks perversities&rsquo;, and <a href="proverbs-2.html#v2-14">2:14</a>, &lsquo;the perversities of evil&rsquo;; <a href="proverbs-16.html#v16-28">Proverbs 16:28</a> and <a href="proverbs-16.html#v16-30">16:30</a> have &lsquo;a man of perversities&rsquo; and one who shuts his eyes &lsquo;to devise perversities&rsquo;. The KJV has &lsquo;froward things&rsquo;, the ASV &lsquo;perverse things&rsquo;.""",
+     ("Proverbs", 2, 12)),
+])
+DICTIONARY_ES["matmon"] = ("matmón",
+    """TESORO ESCONDIDO &mdash;algo escondido en la tierra para guardarlo a salvo, de <em>tamán</em>, esconder o enterrar. El mayordomo de José usa la palabra cuando los hermanos encuentran su plata de vuelta en los sacos: «Su Dios y el Dios de su padre les dio un tesoro en sus sacos» (<a href="genesis-43.es.html#v43-23">Génesis 43:23</a>). ⭐ <a href="proverbs-2.es.html#v2-4">Proverbios 2:4</a> (ya en estas páginas) hace de la sabiduría el tesoro: «si la buscas como a la plata, y como a tesoros escondidos la escudriñas». Job vuelve la palabra desesperación, los desdichados «que cavan por ella más que por tesoros escondidos», donde lo que buscan es la muerte (Job 3:21, todavía no en estas páginas). El griego de Proverbios 2:4 tiene <em>thesaurói</em>, la palabra de «todos los tesoros de la sabiduría y del conocimiento» en <a href="colossians-2.es.html#v2-3">Colosenses 2:3</a>.""")
+DICTIONARY_ES["chasid"] = ("jasid",
+    """UN LEAL &mdash;quien se atiene al <em>jésed</em>, el amor leal, la palabra sobre la que se forma el sustantivo; en plural, los leales de Dios. ⭐ <a href="psalms-37.es.html#v37-28">Salmo 37:28</a>: «Jehová ama el derecho y no abandona a sus leales». El cántico de Ana tiene «Los pies de sus fieles guarda» (<a href="1-samuel-2.es.html#v2-9">1 Samuel 2:9</a>), y <a href="proverbs-2.es.html#v2-8">Proverbios 2:8</a> (ya en estas páginas) «y guarda el camino de sus leales»; en los dos la palabra está escrita sin la letra del plural y se lee como plural, y los dos tienen el verbo <em>shamar</em>, guardar. La cigüeña, <em>jasidá</em>, lleva la misma raíz en su nombre (<a href="leviticus-11.es.html#v11-19">Levítico 11:19</a>). La RV60 suele tener «santos», la TNM 1987 «leales».""")
+DICTIONARY_ES["tahpukhot"] = ("tahpujot",
+    """PERVERSIDADES &mdash;cosas puestas boca abajo, de <em>hafaj</em>, volcar; un sustantivo plural, usado del hablar y de las intrigas. El cántico de Moisés llama a Israel «una generación de perversidad» (<a href="deuteronomy-32.es.html#v32-20">Deuteronomio 32:20</a>). ⭐ <a href="proverbs-2.es.html#v2-12">Proverbios 2:12</a> (ya en estas páginas): «del hombre que habla perversidades», y <a href="proverbs-2.es.html#v2-14">2:14</a>, «las perversidades del mal»; <a href="proverbs-16.es.html#v16-28">Proverbios 16:28</a> y <a href="proverbs-16.es.html#v16-30">16:30</a> tienen «el hombre de perversidades» y el que cierra sus ojos «para tramar perversidades». La RV60 tiene «perversidades».""")
+DICTIONARY_ES["alluf"] = ("aluf",
+    """JEFE DE CLAN &mdash;la cabeza de un «millar» (<em>élef</em>), el título de los jefes de Edom, repetido como un tambor a lo largo de <a href="genesis-36.es.html#v36-15">Génesis 36</a> (el jefe Temán, el jefe Omar…). La KJV dice &lsquo;duke&rsquo;, «duque» (del latín <em>dux</em>, por la Vulgata), una corona de la Europa medieval fuera de lugar en el Seír de la Edad del Bronce; esta traducción dice «jefe». La palabra dibuja la forma temprana de Edom: no un trono sino una federación de cabezas de clan. ⭐ La misma palabra es un amigo íntimo: «el murmurador separa a los amigos íntimos» (<a href="proverbs-16.es.html#v16-28">Proverbios 16:28</a>), y en <a href="proverbs-2.es.html#v2-17">Proverbios 2:17</a> (ya en estas páginas) la mujer extraña «abandona al amigo íntimo de su juventud», el marido con quien se casó joven. Jeremías hace que Israel llame a Dios «Padre mío, amigo íntimo de mi juventud eres tú» (Jeremías 3:4, todavía no en estas páginas).""")
+DICTIONARY_ES["yirat-yhwh"] = ("yirat Jehová",
+    """«El temor de Jehová» &mdash;el lema y estribillo de Proverbios: «el principio del conocimiento» (1:7), «el principio de la sabiduría» (9:10). No es espanto sino reverencia: la actitud que el ángel halló en Abrahán en el altar, «ahora sé que temes a Dios» (Génesis 22:12). La ASV lee &lsquo;the fear of Jehovah&rsquo; con esta traducción, y la RV60 «el temor de Jehová». ⭐ <a href="proverbs-2.es.html#v2-5">Proverbios 2:5</a> (ya en estas páginas) lo pone al final de la búsqueda de la sabiduría: «entonces entenderás el temor de Jehová, y hallarás el conocimiento de Dios».""")
+
+_DICT2_REP = {
+    "nasach": [("<em>he will tear you up from your tent</em> (Psalm 52:7), <em>the treacherous will be torn up from the land</em> (Proverbs 2:22), <em>Jehovah tears up the house of the proud</em> (15:25; none yet on these pages).",
+                '<em>he will tear you up from your tent</em> (Psalm 52:7, not yet on these pages), <em>the treacherous will be torn up from it</em>, from the land (<a href="proverbs-2.html#v2-22">Proverbs 2:22</a>, now on these pages), and <em>Jehovah tears up the house of the proud</em> (Proverbs 15:25, not yet on these pages).')],
+    "rephaim-shades": [("The same word stands for the dead in a psalm that asks whether the shades will rise and praise God, and in Proverbs, where the house of the strange woman leads down to them (Psalm 88:11 and Proverbs 2:18, not yet on these pages).",
+                        'The same word stands for the dead in a psalm that asks whether the shades will rise and praise God (Psalm 88:11, not yet on these pages), and in Proverbs, where the house of the strange woman sinks down to death, and her tracks to the shades (<a href="proverbs-2.html#v2-18">Proverbs 2:18</a>, now on these pages); the Greek there has <em>gēgeneis</em>, &lsquo;the earth-born&rsquo;.')],
+    "binah": [("enters at Proverbs 2:3 and 3:19;",
+               'enters at <a href="proverbs-2.html#v2-3">Proverbs 2:3</a> and <a href="proverbs-3.html#v3-19">3:19</a>;')],
+}
+_DICT2_EN = {
+    "tevunah": ' ⭐ <a href="proverbs-2.html#v2-2">Proverbs 2</a> (now on these pages) has it four times: the heart inclined to discernment (v2), the voice lifted for it (v3), discernment from Jehovah&rsquo;s mouth (v6), and discernment that will guard you (v11).',
+    "tushiyyah": ' ⭐ <a href="proverbs-2.html#v2-7">Proverbs 2:7</a> (now on these pages): &lsquo;He stores up practical wisdom for the upright&rsquo;; the Greek there reads &lsquo;salvation&rsquo;.',
+    "mezimmah": ' ⭐ <a href="proverbs-2.html#v2-11">Proverbs 2:11</a> (now on these pages): &lsquo;discretion will keep watch over you&rsquo;.',
+    "magal": ' ⭐ <a href="proverbs-2.html#v2-9">Proverbs 2:9</a> (now on these pages): &lsquo;every good track&rsquo;; the devious have their tracks too (<a href="proverbs-2.html#v2-15">2:15</a>), and the strange woman&rsquo;s tracks go down &lsquo;to the shades&rsquo; (<a href="proverbs-2.html#v2-18">2:18</a>). The Greek of 2:9 and 2:18 has <em>axones</em>, axles.',
+    "zarah": ' ⭐ In Proverbs it names a woman: <em>ishah zarah</em>, &lsquo;the strange woman&rsquo;, one who belongs to someone else (<a href="proverbs-2.html#v2-16">Proverbs 2:16</a>, now on these pages).',
+    "nokhri": ' ⭐ <a href="proverbs-2.html#v2-16">Proverbs 2:16</a> (now on these pages) has the feminine, <em>nokhriyyah</em>, &lsquo;the foreign woman who makes her sayings smooth&rsquo;, beside the strange woman.',
+    "alluf": ' ⭐ The same word is a close friend: &lsquo;a whisperer separates close friends&rsquo; (<a href="proverbs-16.html#v16-28">Proverbs 16:28</a>), and in <a href="proverbs-2.html#v2-17">Proverbs 2:17</a> (now on these pages) the strange woman &lsquo;forsakes the close friend of her youth&rsquo;, the husband she married young. Jeremiah has Israel call God &lsquo;My father, you are the close friend of my youth&rsquo; (Jeremiah 3:4, not yet on these pages).',
+    "yirat-yhwh": ' ⭐ <a href="proverbs-2.html#v2-5">Proverbs 2:5</a> (now on these pages) puts it at the end of the search for wisdom: &lsquo;then you will understand the fear of Jehovah, and find the knowledge of God&rsquo;.',
+}
+_n = 0
+for _i, _d in enumerate(DICTIONARY):
+    _t = _d[4]
+    for _a, _b in _DICT2_REP.get(_d[0], []):
+        assert _t.count(_a) == 1, (_d[0], _a[:40])
+        _t = _t.replace(_a, _b); _n += 1
+    if _d[0] in _DICT2_EN:
+        _t = _t + _DICT2_EN[_d[0]]; _n += 1
+    if _t != _d[4]:
+        DICTIONARY[_i] = tuple(_d[:4]) + (_t,) + tuple(_d[5:])
+assert _n == 11, _n
+for _k, _a, _b in [
+    ("nasach", "<em>te arrancará de tu tienda</em> (Salmo 52:7), <em>los traidores serán arrancados de la tierra</em> (Proverbios 2:22), <em>Jehová arranca la casa de los soberbios</em> (15:25; ninguno todavía en estas páginas).",
+     '<em>te arrancará de tu tienda</em> (Salmo 52:7, todavía no en estas páginas), <em>los traidores serán arrancados de ella</em>, de la tierra (<a href="proverbs-2.es.html#v2-22">Proverbios 2:22</a>, ya en estas páginas), y <em>Jehová arranca la casa de los soberbios</em> (Proverbios 15:25, todavía no en estas páginas).'),
+    ("rephaim-shades", "La misma palabra designa a los muertos en un salmo que pregunta si las sombras se levantarán a alabar a Dios, y en Proverbios, donde la casa de la mujer extraña baja hacia ellas (Salmo 88:11 y Proverbios 2:18, todavía no en estas páginas).",
+     'La misma palabra designa a los muertos en un salmo que pregunta si las sombras se levantarán a alabar a Dios (Salmo 88:11, todavía no en estas páginas), y en Proverbios, donde la casa de la mujer extraña se hunde hacia la muerte, y sus caminos hacia las sombras (<a href="proverbs-2.es.html#v2-18">Proverbios 2:18</a>, ya en estas páginas); el griego tiene allí <em>guegueneis</em>, «los nacidos de la tierra».'),
+    ("binah", "entra en Proverbios 2:3 y 3:19;",
+     'entra en <a href="proverbs-2.es.html#v2-3">Proverbios 2:3</a> y <a href="proverbs-3.es.html#v3-19">3:19</a>;'),
+]:
+    _s = DICTIONARY_ES[_k]
+    assert _s[1].count(_a) == 1, _k
+    DICTIONARY_ES[_k] = (_s[0], _s[1].replace(_a, _b))
+for _k, _b in [
+    ("tevunah", ' ⭐ <a href="proverbs-2.es.html#v2-2">Proverbios 2</a> (ya en estas páginas) la tiene cuatro veces: el corazón inclinado al discernimiento (v. 2), la voz alzada por él (v. 3), el discernimiento que sale de la boca de Jehová (v. 6), y el discernimiento que te custodiará (v. 11).'),
+    ("tushiyyah", ' ⭐ <a href="proverbs-2.es.html#v2-7">Proverbios 2:7</a> (ya en estas páginas): «Él atesora sabiduría práctica para los rectos»; el griego lee allí «salvación».'),
+    ("mezimmah", ' ⭐ <a href="proverbs-2.es.html#v2-11">Proverbios 2:11</a> (ya en estas páginas): «la discreción te guardará».'),
+    ("magal", ' ⭐ <a href="proverbs-2.es.html#v2-9">Proverbios 2:9</a> (ya en estas páginas): «todo camino bueno»; también los desviados tienen sus caminos (<a href="proverbs-2.es.html#v2-15">2:15</a>), y los caminos de la mujer extraña bajan «hacia las sombras» (<a href="proverbs-2.es.html#v2-18">2:18</a>). El griego de 2:9 y 2:18 tiene <em>áxones</em>, ejes.'),
+    ("zarah", ' ⭐ En Proverbios nombra a una mujer: <em>ishá zará</em>, «la mujer extraña», la que pertenece a otro (<a href="proverbs-2.es.html#v2-16">Proverbios 2:16</a>, ya en estas páginas).'),
+    ("nokhri", ' ⭐ <a href="proverbs-2.es.html#v2-16">Proverbios 2:16</a> (ya en estas páginas) tiene el femenino, <em>nojriyá</em>, «la extranjera que suaviza sus dichos», junto a la mujer extraña.'),
+]:
+    _s = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["prov2"] = dict(era="monarchy",
+    when="A father's teaching in one long sentence: if the son receives his sayings and seeks wisdom like silver and hidden treasures, he will find the fear of Jehovah, who gives wisdom and stores up practical wisdom for the upright; wisdom will rescue him from the man who speaks perversities and from the strange woman whose house sinks down to the shades, so that he walks in the way of the good; the upright will dwell in the land and the treacherous be torn up from it.",
+    clock="Attributed to Solomon, son of David (reigned c. 970–931 BC), like the rest of the book's opening collection; wisdom literature keeps no calendar of its own.")
+
+CHAPTER_ART["prov2"] = [dict(
+    file="agricola-prospectors-1556.jpg",
+    title="Prospectors searching for veins", title_es="Buscadores de vetas",
+    artist="Woodcut for Georg Agricola",
+    year="1556",
+    location="De re metallica, Book II (Froben, Basel); scan: National Library of Poland", location_es="De re metallica, libro II (Froben, Basilea); escaneo: Biblioteca Nacional de Polonia",
+    alt="Black-and-white woodcut of a wooded hillside dotted with pits and heaps of stones. On the left two men in hats talk and point; beside them a bearded man walks holding a forked twig, marked A, and higher up another man strides along with a twig of his own. On the right a man lies in a fresh trench, marked B; at the bottom two men lean over a pit, one handing up a shallow dish of ore.",
+    note="Prospectors search a hillside for veins of ore: some walk with forked twigs, others dig trench after trench. In the text beside this picture Agricola weighs the twig and sends the miner instead to &lsquo;the natural indications of the veins which he can see for himself&rsquo;, digging &lsquo;until he discovers an outcrop of a vein&rsquo; (Herbert and Lou Henry Hoover&rsquo;s English, 1912). Proverbs 2:4 asks for the same labour: &lsquo;if you seek her like silver, and search for her like hidden treasures&rsquo;.",
+    note_es="Unos buscadores rastrean una ladera en busca de vetas de mineral: unos andan con varillas en horquilla, otros cavan zanja tras zanja. En el texto junto a esta imagen Agricola sopesa la varilla y manda al minero, en cambio, a «los indicios naturales de las vetas, que puede ver por sí mismo», y a cavar «hasta que descubra el afloramiento de una veta» (según la versión inglesa de Herbert y Lou Henry Hoover, 1912). Proverbios 2:4 pide el mismo trabajo: «si la buscas como a la plata, y como a tesoros escondidos la escudriñas».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:De_re_metallica_-_dowsing_(125711292).jpg",
+)]
