@@ -50042,3 +50042,149 @@ CHAPTER_ART["1sam19"] = [
         source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._30v.jpg",
     ),
 ]
+
+# --- 1 Samuel 20 ---
+def _swap20(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D20 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D20[_d[0]] = _i
+
+def _dict20_en(slug, old=None, new=None, add=None):
+    _i = _D20[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap20(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict20_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap20(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale "not yet" claims about 1 Samuel 20
+_dict20_en("miqreh", "1 Samuel 20:26 (not yet on these pages)",
+    '<a href="1-samuel-20.html#v20-26">1 Samuel 20:26</a> (now on these pages)')
+_dict20_es("miqreh", "1 Samuel 20:26 (todavía no en estas páginas)",
+    '<a href="1-samuel-20.es.html#v20-26">1 Samuel 20:26</a> (ya en estas páginas)')
+
+# 1 Samuel 20 added to existing entries
+_dict20_en("chodesh", add=' ⭐ <a href="1-samuel-20.html#v20-5">1 Samuel 20</a> (now on these pages) shows the new moon at court: a meal with the king that runs at least two days, with a fixed seat for each man, so that David&rsquo;s empty place is &lsquo;missed&rsquo; on the first day and again on &lsquo;the day after the new moon, the second [day]&rsquo; (20:5, 18, 24&ndash;27, 34).')
+_dict20_es("chodesh", add=' ⭐ <a href="1-samuel-20.es.html#v20-5">1 Samuel 20</a> (ya en estas páginas) muestra la luna nueva en la corte: una comida con el rey que dura al menos dos días, con un asiento fijo para cada hombre, de modo que el lugar vacío de David «se echa de menos» el primer día y otra vez «al día siguiente de la luna nueva, el segundo [día]» (20:5, 18, 24&ndash;27, 34).')
+_dict20_en("shaal", add=' ⭐ In <a href="1-samuel-20.html#v20-6">1 Samuel 20:6</a> and 28 (now on these pages) the excuse put before the king is built from the king&rsquo;s own name: &lsquo;David earnestly asked leave of me&rsquo;, <em>nish&rsquo;ol nish&rsquo;al</em>, the verb doubled in the form for asking something for oneself.')
+_dict20_es("shaal", add=' ⭐ En <a href="1-samuel-20.es.html#v20-6">1 Samuel 20:6</a> y 28 (ya en estas páginas) la excusa que se pone delante del rey está hecha con el nombre del propio rey: «David me pidió con insistencia permiso», <em>nishol nishal</em>, el verbo doblado en la forma de pedir algo para uno mismo.')
+_dict20_en("kalah", add=' ⭐ In <a href="1-samuel-20.html#v20-7">1 Samuel 20</a> (now on these pages) it is the word for a decision that is final: &lsquo;know that the evil is decided by him&rsquo; (20:7, 9), and when the spear is thrown, Jonathan knows &lsquo;that it was decided by his father to put David to death&rsquo; (20:33).')
+_dict20_es("kalah", add=' ⭐ En <a href="1-samuel-20.es.html#v20-7">1 Samuel 20</a> (ya en estas páginas) es la palabra de una decisión ya tomada: «sabe que el mal está decidido por él» (20:7, 9), y cuando se arroja la lanza, Jonatán sabe «que estaba decidido por su padre dar muerte a David» (20:33).')
+_dict20_en("chesed", add=' ⭐ <a href="1-samuel-20.html#v20-8">1 Samuel 20</a> (now on these pages) is a covenant asked both ways: David asks Jonathan to &lsquo;do kindness with your servant&rsquo; (20:8), and Jonathan asks David for &lsquo;the kindness of Jehovah&rsquo; while he lives and for his house forever (20:14&ndash;15); David keeps it by seeking out Jonathan&rsquo;s son &lsquo;for Jonathan&rsquo;s sake&rsquo; (2 Samuel 9:1, not yet on these pages).')
+_dict20_es("chesed", add=' ⭐ <a href="1-samuel-20.es.html#v20-8">1 Samuel 20</a> (ya en estas páginas) es un pacto pedido en los dos sentidos: David pide a Jonatán «haz bondad con tu siervo» (20:8), y Jonatán pide a David «la bondad de Jehová» mientras viva y para su casa para siempre (20:14&ndash;15); David lo cumple buscando al hijo de Jonatán «por amor de Jonatán» (2 Samuel 9:1, todavía no en estas páginas).')
+_dict20_en("karat", add=' ⭐ <a href="1-samuel-20.html#v20-15">1 Samuel 20:15&ndash;16</a> (now on these pages) uses the verb three times in two verses: &lsquo;you shall not cut off your kindness from my house&rsquo;, &lsquo;when Jehovah cuts off the enemies of David&rsquo;, and &lsquo;Jonathan cut [a covenant] with the house of David&rsquo;, where the noun is not written and the verb carries it.')
+_dict20_es("karat", add=' ⭐ <a href="1-samuel-20.es.html#v20-15">1 Samuel 20:15&ndash;16</a> (ya en estas páginas) usa el verbo tres veces en dos versículos: «no cortarás tu bondad de mi casa», «cuando Jehová corte a los enemigos de David», y «Jonatán cortó [un pacto] con la casa de David», donde el sustantivo no está escrito y lo lleva el verbo.')
+_dict20_en("paqad", add=' ⭐ In <a href="1-samuel-20.html#v20-18">1 Samuel 20</a> (now on these pages) it is to look for someone and find him wanting: &lsquo;you will be missed, for your seat will be missed&rsquo; (20:18), and &lsquo;David&rsquo;s place was missed&rsquo; on both days of the new moon (20:25, 27).')
+_dict20_es("paqad", add=' ⭐ En <a href="1-samuel-20.es.html#v20-18">1 Samuel 20</a> (ya en estas páginas) es buscar a alguien y hallarlo en falta: «se te echará de menos, porque se echará de menos tu asiento» (20:18), y «se echó de menos el lugar de David» los dos días de la luna nueva (20:25, 27).')
+_dict20_en("naar", add=' ⭐ In the arrow scene of <a href="1-samuel-20.html#v20-35">1 Samuel 20:35&ndash;41</a> (now on these pages) the <em>na&rsquo;ar</em> is &lsquo;a little boy&rsquo; who runs for the arrows and &lsquo;knew nothing&rsquo;; in giving the plan Jonathan also calls him <a href="dictionary.html#elem">elem</a>, &lsquo;the young man&rsquo; (20:22).')
+_dict20_es("naar", add=' ⭐ En la escena de las flechas de <a href="1-samuel-20.es.html#v20-35">1 Samuel 20:35&ndash;41</a> (ya en estas páginas) el <em>náar</em> es «un muchacho pequeño» que corre por las flechas y «no supo nada»; al dar el plan, Jonatán lo llama también <a href="diccionario.html#elem">élem</a>, «el joven» (20:22).')
+_dict20_en("ervah", add=' ⭐ Saul turns the law&rsquo;s phrase into an insult against his son: &lsquo;to your own shame and to the shame of your mother&rsquo;s nakedness&rsquo;, <em>ervat immekha</em>, the words of Leviticus 18:7 (<a href="1-samuel-20.html#v20-30">1 Samuel 20:30</a>, now on these pages).')
+_dict20_es("ervah", add=' ⭐ Saúl convierte la frase de la ley en un insulto contra su hijo: «para vergüenza tuya y para vergüenza de la desnudez de tu madre», <em>ervat immejá</em>, las palabras de Levítico 18:7 (<a href="1-samuel-20.es.html#v20-30">1 Samuel 20:30</a>, ya en estas páginas).')
+_dict20_en("zevach", add=' ⭐ <em>Zevach ha-yamim</em>, &lsquo;the sacrifice of the days&rsquo;, the yearly sacrifice, is Elkanah&rsquo;s at Shiloh (1 Samuel 1:21; 2:19) and the excuse David gives for leaving Saul&rsquo;s table, &lsquo;for the yearly sacrifice is there for all the family&rsquo; (<a href="1-samuel-20.html#v20-6">1 Samuel 20:6</a>, now on these pages).')
+_dict20_es("zevach", add=' ⭐ <em>Zévaj ha-yamim</em>, «el sacrificio de los días», el sacrificio anual, es el de Elcaná en Siló (1 Samuel 1:21; 2:19) y la excusa que da David para dejar la mesa de Saúl, «porque allí está el sacrificio anual de toda la familia» (<a href="1-samuel-20.es.html#v20-6">1 Samuel 20:6</a>, ya en estas páginas).')
+_dict20_en("brit", add=' ⭐ In <a href="1-samuel-20.html#v20-8">1 Samuel 20:8</a> (now on these pages) David calls the covenant Jonathan cut with him in 18:3 &lsquo;a covenant of Jehovah&rsquo;, and at 20:16 the noun is left unwritten: &lsquo;Jonathan cut [a covenant] with the house of David&rsquo;.')
+_dict20_es("brit", add=' ⭐ En <a href="1-samuel-20.es.html#v20-8">1 Samuel 20:8</a> (ya en estas páginas) David llama al pacto que Jonatán cortó con él en 18:3 «un pacto de Jehová», y en 20:16 el sustantivo queda sin escribir: «Jonatán cortó [un pacto] con la casa de David».')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("chets", "chets", "חֵץ", "chets",
+     """AN ARROW &mdash; the ordinary word, plural <em>chitstsim</em>, with a rarer singular form <em>chetsi</em>. ⭐ In <a href="1-samuel-20.html#v20-20">1 Samuel 20</a> (now on these pages) arrows are a message: Jonathan shoots three &lsquo;as though sending [them] for myself at a target&rsquo;, and where they fall tells David whether to come back or to go: &lsquo;Look &mdash; the arrows are beyond you&rsquo; means &lsquo;go; for Jehovah has let you go&rsquo; (20:20&ndash;22, 36&ndash;38). There the single arrow is <em>chetsi</em>, the form used again of the arrow that came out at King Joram&rsquo;s heart (2 Kings 9:24, not yet on these pages). ⚠ The same letters חצי spell <em>chatsi</em>, half, a different word. ⚠ In <a href="lamentations-3.html#v12">Lamentations 3:12</a> (already on these pages) the archer is God: &lsquo;He has bent his bow and set me up as a target for the arrow.&rsquo; See <a href="dictionary.html#mattarah">mattarah</a>.""",
+     ("1 Samuel", 20, 20)),
+    ("mattarah", "mattarah", "מַטָּרָה", "mattarah",
+     """A TARGET, a mark to shoot at &mdash; and, in most of its uses, a GUARD. <span data-heb="מטרה">Spelled with a final <em>he</em>, the word stands in fourteen verses of the Hebrew Bible</span>: twelve are a guard: &lsquo;the court of the guard&rsquo; where Jeremiah was held, in ten verses of Jeremiah 32&ndash;39, and in Nehemiah &lsquo;the court of the guard&rsquo; (3:25) and &lsquo;the gate of the guard&rsquo; (12:39); two are a target. One is Jonathan&rsquo;s, shooting &lsquo;as though sending [them] for myself at a target&rsquo; (<a href="1-samuel-20.html#v20-20">1 Samuel 20:20</a>, now on these pages); the other is Job&rsquo;s complaint that God &lsquo;set me up as his target&rsquo; (Job 16:12, not yet on these pages). <a href="lamentations-3.html#v12">Lamentations 3:12</a> (already on these pages) spells it with a final <em>aleph</em>: &lsquo;set me up as a target for the arrow&rsquo;. Both senses are usually traced to <em>natar</em>, to keep watch: what is watched, and who watches (reported, not decided). ⚠ The Greek of 1 Samuel 20:20 did not translate the word but wrote it as a name, <em>Amattari</em>.""",
+     ("1 Samuel", 20, 20)),
+    ("elem", "elem", "עֶלֶם", "elem",
+     """A YOUNG MAN &mdash; the masculine beside <a href="dictionary.html#almah">almah</a>, young woman, and much rarer: <span data-heb-read="עלם">the masculine noun stands in two verses of the Hebrew Bible</span>. In one it is David: after Goliath falls, Saul says &lsquo;You ask whose son the young man is&rsquo; (<a href="1-samuel-17.html#v17-56">1 Samuel 17:56</a>, already on these pages). In the other it is the boy who fetches Jonathan&rsquo;s arrows, whom Jonathan, giving David the signal, calls first &lsquo;the boy&rsquo;, <a href="dictionary.html#naar">na&rsquo;ar</a>, and then &lsquo;the young man&rsquo; (<a href="1-samuel-20.html#v20-22">1 Samuel 20:22</a>, now on these pages). ⚠ The same letters, read <em>olam</em>, are the ordinary word for &lsquo;forever&rsquo;, and they also spell forms of a verb &lsquo;to hide&rsquo; (Leviticus 20:4); a search of the letters finds all of them together.""",
+     ("1 Samuel", 17, 56)),
+])
+DICTIONARY_ES["chets"] = ("jets",
+    """UNA FLECHA &mdash;la palabra corriente, en plural <em>jitsim</em>, con una forma singular más rara, <em>jetsí</em>. ⭐ En <a href="1-samuel-20.es.html#v20-20">1 Samuel 20</a> (ya en estas páginas) las flechas son un mensaje: Jonatán tira tres «como quien las envía para sí a un blanco», y el lugar donde caen le dice a David si debe volver o irse: «Mira, las flechas están más allá de ti» quiere decir «vete; porque Jehová te ha dejado ir» (20:20&ndash;22, 36&ndash;38). Allí la flecha sola es <em>jetsí</em>, la forma que vuelve en la flecha que salió por el corazón del rey Joram (2 Reyes 9:24, todavía no en estas páginas). ⚠ Las mismas letras חצי forman <em>jatsí</em>, mitad, otra palabra. ⚠ En <a href="lamentations-3.es.html#v12">Lamentaciones 3:12</a> (ya en estas páginas) el arquero es Dios: «Ha entesado su arco y me ha puesto como blanco para la flecha». Véase <a href="diccionario.html#mattarah">mattará</a>.""")
+DICTIONARY_ES["mattarah"] = ("mattará",
+    """UN BLANCO, una marca a la que se tira &mdash;y, en la mayoría de sus usos, una GUARDIA. <span data-heb="מטרה">Escrita con <em>he</em> final, la palabra está en catorce versículos de la Biblia hebrea</span>: doce son una guardia: «el patio de la guardia» donde estuvo preso Jeremías, en diez versículos de Jeremías 32&ndash;39, y en Nehemías «el patio de la guardia» (3:25) y «la puerta de la guardia» (12:39); dos son un blanco. Uno es el de Jonatán, que tira «como quien las envía para sí a un blanco» (<a href="1-samuel-20.es.html#v20-20">1 Samuel 20:20</a>, ya en estas páginas); el otro es la queja de Job de que Dios «me puso por blanco suyo» (Job 16:12, todavía no en estas páginas). <a href="lamentations-3.es.html#v12">Lamentaciones 3:12</a> (ya en estas páginas) la escribe con <em>álef</em> final: «me ha puesto como blanco para la flecha». Los dos sentidos se suelen remontar a <em>natar</em>, vigilar: lo que se vigila, y quien vigila (se informa, no se decide). ⚠ El griego de 1 Samuel 20:20 no tradujo la palabra, sino que la escribió como un nombre, <em>Amattarí</em>.""")
+DICTIONARY_ES["elem"] = ("élem",
+    """UN JOVEN &mdash;el masculino junto a <a href="diccionario.html#almah">almá</a>, joven mujer, y mucho más raro: <span data-heb-read="עלם">el sustantivo masculino está en dos versículos de la Biblia hebrea</span>. En uno es David: después de caer Goliat, Saúl dice «Pregunta tú de quién es hijo el joven» (<a href="1-samuel-17.es.html#v17-56">1 Samuel 17:56</a>, ya en estas páginas). En el otro es el muchacho que recoge las flechas de Jonatán, a quien Jonatán, al darle la señal a David, llama primero «el muchacho», <a href="diccionario.html#naar">náar</a>, y luego «el joven» (<a href="1-samuel-20.es.html#v20-22">1 Samuel 20:22</a>, ya en estas páginas). ⚠ Las mismas letras, leídas <em>olam</em>, son la palabra corriente para «para siempre», y forman también un verbo «ocultar» (Levítico 20:4); una búsqueda de las letras las encuentra todas juntas.""")
+
+# encyclopedia
+_REF20 = {"jonathan": [("1 Samuel", 20, 1)], "david": [("1 Samuel", 20, 41)], "saul-king": [("1 Samuel", 20, 30)],
+          "abner": [("1 Samuel", 20, 25)], "jesse": [("1 Samuel", 20, 27)], "bethlehem": [("1 Samuel", 20, 6)],
+          "naioth": [("1 Samuel", 20, 1)]}
+_ADD20 = {
+    "jonathan": ' ⭐ <a href="1-samuel-20.html#v20-1">1 Samuel 20</a> (now on these pages): he promises to uncover David&rsquo;s ear, asks him for &ldquo;the kindness of Jehovah&rdquo; for himself and his house forever, cuts a covenant with the house of David, and makes David swear again &ldquo;by his love for him&rdquo;. At the new-moon meal he gives David&rsquo;s excuse, is called &ldquo;son of a perverse, rebellious woman&rdquo;, and has the spear thrown at him; next morning he gives the arrow signal, and the two part in tears: &ldquo;Go in peace&rdquo;.',
+    "david": ' ⭐ <a href="1-samuel-20.html#v20-1">1 Samuel 20</a> (now on these pages): he flees from Naioth to Jonathan, asks &ldquo;What have I done?&rdquo;, hides in the field by the stone Ezel through the new moon, and learns from the arrows that he must go; he bows three times before Jonathan, and they weep together &ldquo;until David made it great&rdquo;.',
+    "saul-king": ' ⭐ <a href="1-samuel-20.html#v20-24">1 Samuel 20</a> (now on these pages): at the new-moon meal he never says David&rsquo;s name, only &ldquo;the son of Jesse&rdquo;; he curses Jonathan as &ldquo;son of a perverse, rebellious woman&rdquo;, tells him that while David lives &ldquo;you shall not be established, you or your kingdom&rdquo;, calls David &ldquo;a son of death&rdquo;, and hurls the spear at his own son.',
+    "abner": ' ⭐ At the new-moon meal he sits at Saul&rsquo;s side, beside the empty place of David (<a href="1-samuel-20.html#v20-25">1 Samuel 20:25</a>, now on these pages).',
+    "jesse": ' ⭐ In <a href="1-samuel-20.html#v20-27">1 Samuel 20</a> (now on these pages) Saul will not say David&rsquo;s name and calls him only &ldquo;the son of Jesse&rdquo; (20:27, 30, 31).',
+    "bethlehem": ' ⭐ David&rsquo;s excuse for missing the king&rsquo;s new-moon meal is a run to Bethlehem, &ldquo;his city&rdquo;, for &ldquo;the yearly sacrifice is there for all the family&rdquo; (<a href="1-samuel-20.html#v20-6">1 Samuel 20:6</a>, 28&ndash;29, now on these pages).',
+    "naioth": ' ⭐ <a href="1-samuel-20.html#v20-1">1 Samuel 20:1</a> (now on these pages): &ldquo;And David fled from Naioth in Ramah&rdquo;, where the scribes wrote the name נוות and read it <em>Nayot</em>.',
+}
+_ADD20_ES = {
+    "jonathan": ' ⭐ <a href="1-samuel-20.es.html#v20-1">1 Samuel 20</a> (ya en estas páginas): promete descubrir el oído de David, le pide «la bondad de Jehová» para sí y para su casa para siempre, corta un pacto con la casa de David, y hace jurar otra vez a David «por el amor que le tenía». En la comida de la luna nueva da la excusa de David, es llamado «hijo de una mujer perversa y rebelde», y su padre le arroja la lanza; a la mañana siguiente da la señal de las flechas, y los dos se separan llorando: «Vete en paz».',
+    "david": ' ⭐ <a href="1-samuel-20.es.html#v20-1">1 Samuel 20</a> (ya en estas páginas): huye de Nayot a Jonatán, pregunta «¿Qué he hecho?», se esconde en el campo junto a la piedra de Ezel durante la luna nueva, y sabe por las flechas que debe irse; se inclina tres veces ante Jonatán, y lloran juntos «hasta que David lo hizo mayor».',
+    "saul-king": ' ⭐ <a href="1-samuel-20.es.html#v20-24">1 Samuel 20</a> (ya en estas páginas): en la comida de la luna nueva nunca dice el nombre de David, solo «el hijo de Isaí»; maldice a Jonatán como «hijo de una mujer perversa y rebelde», le dice que mientras David viva «no serás afirmado, ni tú ni tu reino», llama a David «hijo de muerte», y arroja la lanza contra su propio hijo.',
+    "abner": ' ⭐ En la comida de la luna nueva se sienta al lado de Saúl, junto al lugar vacío de David (<a href="1-samuel-20.es.html#v20-25">1 Samuel 20:25</a>, ya en estas páginas).',
+    "jesse": ' ⭐ En <a href="1-samuel-20.es.html#v20-27">1 Samuel 20</a> (ya en estas páginas) Saúl no quiere decir el nombre de David y lo llama solo «el hijo de Isaí» (20:27, 30, 31).',
+    "bethlehem": ' ⭐ La excusa de David para faltar a la comida de la luna nueva del rey es ir corriendo a Belén, «su ciudad», «porque allí está el sacrificio anual de toda la familia» (<a href="1-samuel-20.es.html#v20-6">1 Samuel 20:6</a>, 28&ndash;29, ya en estas páginas).',
+    "naioth": ' ⭐ <a href="1-samuel-20.es.html#v20-1">1 Samuel 20:1</a> (ya en estas páginas): «Y David huyó de Nayot, en Ramá», donde los escribas escribieron el nombre נוות y lo leyeron <em>Nayot</em>.',
+}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF20:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF20[_k] if r not in _e["refs"]]
+    if _k == "naioth":
+        _e["desc"] = _swap20(_e["desc"], "David flees from it at 20:1 (not yet on these pages).",
+            'David flees from it at <a href="1-samuel-20.html#v20-1">20:1</a> (now on these pages).')
+    if _k in _ADD20:
+        _e["desc"] += _ADD20[_k]
+ENCYCLOPEDIA_ES["naioth"] = (ENCYCLOPEDIA_ES["naioth"][0], _swap20(ENCYCLOPEDIA_ES["naioth"][1],
+    "David huye de allí en 20:1 (todavía no en estas páginas).",
+    'David huye de allí en <a href="1-samuel-20.es.html#v20-1">20:1</a> (ya en estas páginas).'))
+ENCYCLOPEDIA_ES["jonathan"] = (ENCYCLOPEDIA_ES["jonathan"][0], _swap20(ENCYCLOPEDIA_ES["jonathan"][1],
+    "Todo ello, salvo 1 Samuel 13, todavía no en estas páginas.",
+    "De todo ello, 1 Samuel 13, 14, 18, 19 y 20 y el lamento de 2 Samuel 1 ya están en estas páginas; 23:18 y 2 Samuel 9, todavía no."))
+for _k, _b in _ADD20_ES.items():
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], ENCYCLOPEDIA_ES[_k][1] + _b)
+
+ENCYCLOPEDIA.extend([
+    dict(slug="ezel", name="Ezel (the stone)", kind="place", aliases=["Ezel", "the stone Ezel"], refs=[("1 Samuel", 20, 19)], videos=[],
+         desc='A stone in the field outside the city where Saul kept the new moon, beside which David is to wait for Jonathan&rsquo;s signal: &lsquo;and sit beside the stone Ezel&rsquo; (<a href="1-samuel-20.html#v20-19">1 Samuel 20:19</a>, now on these pages). The name stands in that one verse; it may mean &lsquo;departure&rsquo;, from <em>azal</em>, to go away, which would suit the parting that happens beside it (reported, not decided). The Greek has no stone, but &lsquo;that <em>ergab</em>&rsquo;, a heap or mound, and at 20:41 has David rise &lsquo;from the <em>argab</em>&rsquo; where the Hebrew has &lsquo;from beside the south&rsquo;. The chapter does not name the city; Saul&rsquo;s own town was <a href="encyclopedia.html#gibeah">Gibeah</a>, but nothing places the stone, so no map position is given here.'),
+])
+ENCYCLOPEDIA_ES["ezel"] = ("Ezel (la piedra)",
+    'Una piedra en el campo, fuera de la ciudad donde Saúl celebraba la luna nueva, junto a la cual David ha de esperar la señal de Jonatán: «y te sentarás junto a la piedra de Ezel» (<a href="1-samuel-20.es.html#v20-19">1 Samuel 20:19</a>, ya en estas páginas). El nombre está en ese solo versículo; puede significar «partida», de <em>azal</em>, irse, que convendría a la separación que ocurre a su lado (se informa, no se decide). El griego no tiene piedra, sino «aquel <em>ergab</em>», un montón o un túmulo, y en 20:41 hace que David se levante «del <em>argab</em>» donde el hebreo dice «de junto al sur». El capítulo no nombra la ciudad; la ciudad de Saúl era <a href="enciclopedia.html#gibeah">Guibeá</a>, pero nada sitúa la piedra, así que aquí no se da posición en el mapa.')
+
+CHRON_CHAPTERS["1sam20"] = dict(era="monarchy",
+    when="“Go in peace”: David flees from Naioth to Jonathan and asks “What have I done?” They agree a test at the new moon and a signal of arrows by the stone Ezel, and Jonathan asks David for the kindness of Jehovah for his house forever. At the new-moon meal Saul notices David’s empty seat two days running, curses Jonathan, calls David “a son of death”, and hurls the spear at his own son. Next morning Jonathan shoots the arrow beyond the boy, and the two friends kiss, weep and part.",
+    clock="Undated: in Saul’s reign, straight after the flight to Naioth of chapter 19. The new-moon meal runs two days (20:5, 27), and David waits until the evening of the third (20:5, 19); the parting is “in the morning” after the second day (20:35).")
+
+CHAPTER_ART["1sam20"] = [
+    dict(
+        file="venant-parting-david-jonathan.jpg",
+        title="The Parting of David and Jonathan", title_es="La despedida de David y Jonatán",
+        artist="François Venant",
+        year="1630",
+        location="Fondation Custodia, Paris", location_es="Fondation Custodia, París",
+        alt="An oil painting of two men in a wooded landscape. On the left a young man in a plumed steel helmet and a yellow cloak edged in red kneels on one knee with his hands clasped, looking up. Over him stands a man in a white turban and a grey-blue robe with a gold sash, bending toward him with one hand held open. Dark trees fill the left side; on the right, beyond a bridge, a hill rises to a round building against a pale sky.",
+        note="1 Samuel 20:41–42: “And David rose from beside the south, and fell on his face to the ground, and bowed down three times; and they kissed each other, and wept with each other … And Jonathan said to David: ‘Go in peace.’” Venant paints the moment as one man kneeling and one standing over him in the field, with a city on the hill behind. The painting does not say which man is which; the Hebrew has David do the bowing, three times.",
+        note_es="1 Samuel 20:41–42: «Y David se levantó de junto al sur, y cayó sobre su rostro en tierra, y se inclinó tres veces; y se besaron el uno al otro, y lloraron el uno con el otro … Y Jonatán dijo a David: “Vete en paz”». Venant pinta el momento como un hombre arrodillado y otro de pie sobre él en el campo, con una ciudad en el monte al fondo. La pintura no dice cuál es cuál; el hebreo hace que sea David quien se inclina, tres veces.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Venant,_Fran%C3%A7ois_-_The_parting_of_David_and_Jonathan_-_Fondation_Custodia.jpg",
+    ),
+    dict(
+        file="morgan-bible-jonathan-field-new-moon.jpg",
+        title="Jonathan and David in the Field; the New-Moon Meal", title_es="Jonatán y David en el campo; la comida de la luna nueva",
+        artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+        year="c. 1250",
+        location="Morgan Library & Museum, New York (MS M.638, fol. 31v)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 31v)",
+        alt="Medieval manuscript page with four painted scenes under arcades on gold, blue and rose grounds, with Latin, Persian and Judeo-Persian writing in the margins. Top left: a man in a red cloak stumbles among soldiers and robed men with their hands raised. Top right: among slender trees on a blue ground, a young man in a long blue robe and orange cloak clasps hands with a man in chain mail holding a spear. Bottom left: a crowned king on a lion-headed throne swings a long spear while a youth in green kneels before him holding up a golden cup. Bottom right: four men sit at a table laid with bread, dishes and a knife.",
+        note="Three of the four scenes are from this chapter. Top right, two young men clasp hands among the trees: Jonathan and David in the field, agreeing on the signal (1 Samuel 20:11–23). Below, the king with the spear and the meal at table: the new moon at which David’s place is missed and Saul hurls the spear (20:24–33); the Latin caption under them tells how Saul, sitting at table, asked why David had not come to the feast, and Jonathan excused him. Top left is still chapter 19: Saul overcome among the prophets at Naioth (19:23–24).",
+        note_es="Tres de las cuatro escenas son de este capítulo. Arriba a la derecha, dos jóvenes se dan la mano entre los árboles: Jonatán y David en el campo, acordando la señal (1 Samuel 20:11–23). Abajo, el rey con la lanza y la comida a la mesa: la luna nueva en que se echa de menos el lugar de David y Saúl arroja la lanza (20:24–33); el rótulo latino que hay debajo cuenta cómo Saúl, sentado a la mesa, preguntó por qué David no había venido al convite, y Jonatán lo excusó. Arriba a la izquierda sigue siendo el capítulo 19: Saúl vencido entre los profetas en Nayot (19:23–24).",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._31v.jpg",
+    ),
+]
