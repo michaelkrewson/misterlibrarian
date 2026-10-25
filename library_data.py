@@ -50188,3 +50188,173 @@ CHAPTER_ART["1sam20"] = [
         source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._31v.jpg",
     ),
 ]
+
+# --- 1 Samuel 21 ---
+def _swap21(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D21 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D21[_d[0]] = _i
+
+def _dict21_en(slug, old=None, new=None, add=None):
+    _i = _D21[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap21(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict21_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap21(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale "not yet" claims about 1 Samuel 21
+_dict21_en("taam", "in the words of 1 Samuel 21:14 (not yet on these pages)",
+    'in the words of <a href="1-samuel-21.html#v21-14">1 Samuel 21:14</a> (now on these pages)')
+_dict21_es("taam", "con las palabras de 1 Samuel 21:14 (todavía no en estas páginas)",
+    'con las palabras de <a href="1-samuel-21.es.html#v21-14">1 Samuel 21:14</a> (ya en estas páginas)')
+
+# 1 Samuel 21 added to existing entries
+_dict21_en("atsar", add=' ⭐ <a href="1-samuel-21.html#v21-6">1 Samuel 21</a> (now on these pages) uses it twice in three verses at Nob: David tells the priest that &lsquo;women have been kept from us&rsquo;, <em>ishah atsurah-lanu</em> (21:6), and Doeg the Edomite is there &lsquo;detained before Jehovah&rsquo;, <em>ne&rsquo;etsar</em> (21:8), where the Greek did not translate the word but wrote it as a name, <em>Neessaran</em>.')
+_dict21_es("atsar", add=' ⭐ <a href="1-samuel-21.es.html#v21-6">1 Samuel 21</a> (ya en estas páginas) lo usa dos veces en tres versículos en Nob: David le dice al sacerdote que «se nos han apartado las mujeres», <em>ishá atsurá-lanu</em> (21:6), y Doeg el edomita está allí «detenido delante de Jehová», <em>neetsar</em> (21:8), donde el griego no tradujo la palabra, sino que la escribió como un nombre, <em>Neessarán</em>.')
+_dict21_en("kelim", add=' ⭐ At Nob (<a href="1-samuel-21.html#v21-6">1 Samuel 21</a>, now on these pages) it is first &lsquo;the vessels of the young men&rsquo;, which David says were holy, whether he means their packs or their bodies (21:6), and three verses later David&rsquo;s own &lsquo;weapons&rsquo;, which he has not brought (21:9).')
+_dict21_es("kelim", add=' ⭐ En Nob (<a href="1-samuel-21.es.html#v21-6">1 Samuel 21</a>, ya en estas páginas) es primero «los vasos de los jóvenes», que David dice que eran santos, quiera decir sus morrales o sus cuerpos (21:6), y tres versículos después las «armas» del propio David, que no ha traído (21:9).')
+_dict21_en("lechem-panim", add=' ⭐ The scene itself is <a href="1-samuel-21.html#v21-7">1 Samuel 21:7</a> (now on these pages, one verse higher than in English Bibles): &lsquo;there was no bread there but the bread of the presence, which was removed from before Jehovah, to put hot bread [there] on the day it was taken away&rsquo;. The priest asks only whether the young men have kept themselves from women.')
+_dict21_es("lechem-panim", add=' ⭐ La escena misma es <a href="1-samuel-21.es.html#v21-7">1 Samuel 21:7</a> (ya en estas páginas, un versículo más que en las Biblias castellanas): «allí no había pan sino el pan de la presencia, que había sido quitado de delante de Jehová, para poner pan caliente [allí] el día en que se quitaba». El sacerdote solo pregunta si los jóvenes se han guardado de mujeres.')
+_dict21_en("qodesh", add=' ⭐ At Nob the priest has &lsquo;no common bread&rsquo;, <em>lechem chol</em>, &lsquo;but there is holy bread&rsquo;, <em>lechem qodesh</em>, and in the next verse he gives David simply <em>qodesh</em>, &lsquo;holy [bread]&rsquo; (<a href="1-samuel-21.html#v21-5">1 Samuel 21:5&ndash;7</a>, now on these pages). See <a href="dictionary.html#chol">chol</a>.')
+_dict21_es("qodesh", add=' ⭐ En Nob el sacerdote no tiene «pan común», <em>léjem jol</em>, «pero hay pan santo», <em>léjem qódesh</em>, y en el versículo siguiente le da a David simplemente <em>qódesh</em>, «[pan] santo» (<a href="1-samuel-21.es.html#v21-5">1 Samuel 21:5&ndash;7</a>, ya en estas páginas). Véase <a href="diccionario.html#chol">jol</a>.')
+_dict21_en("ephod", add=' ⭐ At Nob, Goliath&rsquo;s sword lies &lsquo;wrapped in a cloak behind the ephod&rsquo; (<a href="1-samuel-21.html#v21-10">1 Samuel 21:10</a>, now on these pages).')
+_dict21_es("ephod", add=' ⭐ En Nob, la espada de Goliat está «envuelta en un manto detrás del efod» (<a href="1-samuel-21.es.html#v21-10">1 Samuel 21:10</a>, ya en estas páginas).')
+_dict21_en("simlah", add=' ⭐ At Nob a <em>simlah</em> keeps a trophy: the sword of Goliath is &lsquo;wrapped in a cloak behind the ephod&rsquo;, <em>lutah ba-simlah</em> (<a href="1-samuel-21.html#v21-10">1 Samuel 21:10</a>, now on these pages).')
+_dict21_es("simlah", add=' ⭐ En Nob una <em>simlá</em> guarda un trofeo: la espada de Goliat está «envuelta en un manto detrás del efod», <em>lutá ba-simlá</em> (<a href="1-samuel-21.es.html#v21-10">1 Samuel 21:10</a>, ya en estas páginas).')
+_dict21_en("naar", add=' ⭐ At Nob the plural is David&rsquo;s soldiers: &lsquo;the young men I have directed to such-and-such a place&rsquo;, and the priest&rsquo;s condition, &lsquo;if only the young men have kept themselves from women&rsquo; (<a href="1-samuel-21.html#v21-3">1 Samuel 21:3</a>, 5&ndash;6, now on these pages).')
+_dict21_es("naar", add=' ⭐ En Nob el plural son los soldados de David: «a los jóvenes los he citado a tal y cual lugar», y la condición del sacerdote, «si tan solo los jóvenes se han guardado de mujeres» (<a href="1-samuel-21.es.html#v21-3">1 Samuel 21:3</a>, 5&ndash;6, ya en estas páginas).')
+_dict21_en("taam", add=' ⭐ The story itself is <a href="1-samuel-21.html#v21-14">1 Samuel 21:14</a> (now on these pages): &lsquo;And he changed his good sense in their eyes, and played the madman in their hands&rsquo;, <em>va-yeshanno et-ta&rsquo;mo</em>.')
+_dict21_es("taam", add=' ⭐ La historia misma es <a href="1-samuel-21.es.html#v21-14">1 Samuel 21:14</a> (ya en estas páginas): «Y cambió su buen juicio a los ojos de ellos, e hizo el loco en sus manos», <em>va-yeshannó et-tamó</em>.')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("meshugga", "meshugga", "מְשֻׁגָּע", "meshugga",
+     """A MADMAN &mdash; someone out of his mind, or treated as if he were. <span data-heb="משגע">The noun stands in five verses of the Hebrew Bible</span>: the covenant curse &lsquo;you will be driven mad by the sight of your eyes&rsquo; (<a href="deuteronomy-28.html#v28-34">Deuteronomy 28:34</a>, already on these pages); Achish at Gath, &lsquo;Do I lack madmen?&rsquo; (<a href="1-samuel-21.html#v21-16">1 Samuel 21:16</a>, now on these pages); the officers&rsquo; word for the young prophet Elisha sends to anoint Jehu, &lsquo;this madman&rsquo; (2 Kings 9:11); the letter against &lsquo;every madman who prophesies&rsquo; (<a href="jeremiah-29.html#v29-26">Jeremiah 29:26</a>, already on these pages); and Hosea&rsquo;s &lsquo;the man of the spirit is mad&rsquo; (Hosea 9:7). In three of the five the madman is a prophet. ⭐ The reflexive verb, to act mad, <em>hishtagea</em>, <span data-heb="שתגע">stands in two verses</span>, both at Gath: &lsquo;you see a man acting mad&rsquo; and &lsquo;to act mad at me&rsquo; (<a href="1-samuel-21.html#v21-15">1 Samuel 21:15&ndash;16</a>); the noun <em>shiggaon</em>, madness, is the curse of <a href="deuteronomy-28.html#v28-28">Deuteronomy 28:28</a> and Jehu&rsquo;s driving, &lsquo;for he drives madly&rsquo; (2 Kings 9:20). ⚠ Not the same word as <a href="dictionary.html#shagah">shagah</a>, to stray, which has no <em>ayin</em>. Through Yiddish it passed into English as <em>meshuga</em>.""",
+     ("1 Samuel", 21, 16)),
+    ("peloni-almoni", "peloni almoni", "פְּלֹנִי אַלְמֹנִי", "peloni almoni",
+     """SO-AND-SO, SUCH-AND-SUCH &mdash; a pair of words that stands for a name the speaker knows and will not say. <span data-heb-read="פלני">The pair stands in three verses of the Hebrew Bible</span>. Boaz uses it of a man: &lsquo;Turn aside, sit down here, so-and-so&rsquo; (<a href="ruth-4.html#v4-1">Ruth 4:1</a>, already on these pages), and the nearer redeemer is never named. David uses it of a place: &lsquo;the young men I have directed to such-and-such a place&rsquo; (<a href="1-samuel-21.html#v21-3">1 Samuel 21:3</a>, now on these pages). And the king of Aram uses it of the site of his camp, &lsquo;in such-and-such a place&rsquo;, which the prophet reveals anyway (2 Kings 6:8, not yet on these pages). ⚠ In 1 Samuel 21:3 the Greek did not translate it but wrote it as a name, <em>Phellani Maemoni</em>, in &lsquo;the place called God&rsquo;s Faithfulness&rsquo;. ⚠ The letters of <em>peloni</em> also spell &lsquo;the Pelonite&rsquo;, a clan name among David&rsquo;s mighty men (1 Chronicles 11:36).""",
+     ("1 Samuel", 21, 3)),
+    ("chol", "chol", "חֹל", "chol",
+     """COMMON, ordinary, not set apart &mdash; the opposite of <a href="dictionary.html#qodesh">qodesh</a>, holy. <span data-heb-read="חל">As a noun it stands in seven verses of the Hebrew Bible</span>, and in six of them <em>qodesh</em> stands in the same verse. The priests are &lsquo;to distinguish between the holy and the common&rsquo; (<a href="leviticus-10.html#v10-10">Leviticus 10:10</a>, already on these pages); Ezekiel accuses them of failing to (Ezekiel 22:26), gives them the duty again (44:23), and builds the wall round the temple &lsquo;to separate the holy from the common&rsquo; (42:20); and in the seventh he marks the land left over for the city as common (48:15). Two of the six are at Nob, where the priest has &lsquo;no common bread&rsquo; but only holy bread, and David calls his errand &lsquo;a common journey&rsquo; (<a href="1-samuel-21.html#v21-5">1 Samuel 21:5&ndash;6</a>, now on these pages). ⚠ It is not a word for unclean: the common is clean, merely not holy. ⚠ The same two letters spell <em>hechel</em>, he began, and other words; a search of the letters finds them all together.""",
+     ("1 Samuel", 21, 5)),
+])
+DICTIONARY_ES["meshugga"] = ("meshuggá",
+    """UN LOCO &mdash;alguien fuera de sí, o tratado como si lo estuviera. <span data-heb="משגע">El sustantivo está en cinco versículos de la Biblia hebrea</span>: la maldición del pacto «enloquecerás por lo que verán tus ojos» (<a href="deuteronomy-28.es.html#v28-34">Deuteronomio 28:34</a>, ya en estas páginas); Aquis en Gat, «¿Me faltan a mí locos?» (<a href="1-samuel-21.es.html#v21-16">1 Samuel 21:16</a>, ya en estas páginas); la palabra de los oficiales para el joven profeta que Eliseo envía a ungir a Jehú, «este loco» (2 Reyes 9:11); la carta contra «todo hombre loco que se hace profeta» (<a href="jeremiah-29.es.html#v29-26">Jeremías 29:26</a>, ya en estas páginas); y el «el hombre del espíritu está loco» de Oseas (Oseas 9:7). En tres de los cinco el loco es un profeta. ⭐ El verbo reflexivo, actuar como loco, <em>hishtaguéa</em>, <span data-heb="שתגע">está en dos versículos</span>, los dos en Gat: «ven a un hombre que actúa como loco» y «a actuar como loco conmigo» (<a href="1-samuel-21.es.html#v21-15">1 Samuel 21:15&ndash;16</a>); el sustantivo <em>shiggaón</em>, locura, es la maldición de <a href="deuteronomy-28.es.html#v28-28">Deuteronomio 28:28</a> y el modo de conducir de Jehú, «porque conduce como un loco» (2 Reyes 9:20). ⚠ No es la misma palabra que <a href="diccionario.html#shagah">shagá</a>, extraviarse, que no tiene <em>áyin</em>. A través del ídish pasó al inglés como <em>meshuga</em>.""")
+DICTIONARY_ES["peloni-almoni"] = ("peloní almoní",
+    """FULANO, TAL Y CUAL &mdash;un par de palabras que ocupa el lugar de un nombre que quien habla conoce y no quiere decir. <span data-heb-read="פלני">El par está en tres versículos de la Biblia hebrea</span>. Booz lo usa de un hombre: «Desvíate, siéntate aquí, fulano» (<a href="ruth-4.es.html#v4-1">Rut 4:1</a>, ya en estas páginas), y el redentor más cercano nunca recibe nombre. David lo usa de un lugar: «a los jóvenes los he citado a tal y cual lugar» (<a href="1-samuel-21.es.html#v21-3">1 Samuel 21:3</a>, ya en estas páginas). Y el rey de Siria lo usa del sitio de su campamento, «en tal y cual lugar», que el profeta revela de todos modos (2 Reyes 6:8, todavía no en estas páginas). ⚠ En 1 Samuel 21:3 el griego no lo tradujo, sino que lo escribió como un nombre, <em>Felaní Maemoní</em>, en «el lugar llamado Fidelidad de Dios». ⚠ Las letras de <em>peloní</em> forman también «el pelonita», un nombre de clan entre los valientes de David (1 Crónicas 11:36).""")
+DICTIONARY_ES["chol"] = ("jol",
+    """COMÚN, ordinario, no apartado &mdash;lo contrario de <a href="diccionario.html#qodesh">qódesh</a>, santo. <span data-heb-read="חל">Como sustantivo está en siete versículos de la Biblia hebrea</span>, y en seis de ellos <em>qódesh</em> está en el mismo versículo. Los sacerdotes han de «distinguir entre lo santo y lo común» (<a href="leviticus-10.es.html#v10-10">Levítico 10:10</a>, ya en estas páginas); Ezequiel los acusa de no hacerlo (Ezequiel 22:26), les vuelve a dar el deber (44:23), y levanta el muro alrededor del templo «para separar lo santo de lo común» (42:20); y en el séptimo marca como común la tierra que queda para la ciudad (48:15). Dos de los seis están en Nob, donde el sacerdote no tiene «pan común», sino solo pan santo, y David llama a su encargo «un viaje común» (<a href="1-samuel-21.es.html#v21-5">1 Samuel 21:5&ndash;6</a>, ya en estas páginas). ⚠ No es una palabra para impuro: lo común es puro, solo que no es santo. ⚠ Las mismas dos letras forman <em>hejel</em>, comenzó, y otras palabras; una búsqueda de las letras las encuentra todas juntas.""")
+
+# encyclopedia
+_REF21 = {"david": [("1 Samuel", 21, 11)], "saul-king": [("1 Samuel", 21, 11)], "jonathan": [("1 Samuel", 21, 1)],
+          "goliath": [("1 Samuel", 21, 10)], "gath": [("1 Samuel", 21, 11)], "valley-of-elah": [("1 Samuel", 21, 10)],
+          "edom": [("1 Samuel", 21, 8)]}
+_ADD21 = {
+    "david": ' ⭐ <a href="1-samuel-21.html#v21-2">1 Samuel 21</a> (now on these pages): alone at Nob, he tells Ahimelech the priest that the king has sent him on a secret matter, takes the holy bread and Goliath&rsquo;s sword, and flees to Achish of Gath, where the king&rsquo;s servants call him &ldquo;the king of the land&rdquo;; afraid, he changes his good sense and plays the madman at the gate.',
+    "saul-king": ' ⭐ In <a href="1-samuel-21.html#v21-3">1 Samuel 21</a> (now on these pages) he is absent and still the axis of the chapter: David invents a &ldquo;matter&rdquo; the king has commanded, a servant of Saul is watching at Nob, and David flees &ldquo;from before Saul&rdquo; into Philistine country.',
+    "jonathan": ' ⭐ The parting ends in the first verse of <a href="1-samuel-21.html#v21-1">1 Samuel 21</a> (now on these pages): &ldquo;And he arose and went; and Jonathan came into the city.&rdquo; In English Bibles the line is the end of 20:42.',
+    "goliath": ' ⭐ <a href="1-samuel-21.html#v21-10">1 Samuel 21:10</a> (now on these pages): his sword is at Nob, &ldquo;wrapped in a cloak behind the ephod&rdquo;, and David takes it with him to Gath, Goliath&rsquo;s own city: &ldquo;There is none like it; give it to me.&rdquo;',
+    "gath": ' ⭐ The first of the two stays is <a href="1-samuel-21.html#v21-11">1 Samuel 21:11&ndash;16</a> (now on these pages, numbered 21:10&ndash;15 in English Bibles), where David arrives carrying Goliath&rsquo;s sword.',
+    "valley-of-elah": '',
+    "edom": ' ⭐ Doeg, &ldquo;the mightiest of the shepherds who belonged to Saul&rdquo;, is &ldquo;Doeg the Edomite&rdquo; (<a href="1-samuel-21.html#v21-8">1 Samuel 21:8</a>, now on these pages); the Greek calls him a Syrian, reading one letter differently.',
+}
+_ADD21_ES = {
+    "david": ' ⭐ <a href="1-samuel-21.es.html#v21-2">1 Samuel 21</a> (ya en estas páginas): solo en Nob, le dice al sacerdote Ahimelec que el rey lo ha enviado a un asunto secreto, toma el pan santo y la espada de Goliat, y huye a Aquis de Gat, donde los siervos del rey lo llaman «el rey de la tierra»; con miedo, cambia su buen juicio y hace el loco en la puerta.',
+    "saul-king": ' ⭐ En <a href="1-samuel-21.es.html#v21-3">1 Samuel 21</a> (ya en estas páginas) está ausente y sigue siendo el eje del capítulo: David inventa un «asunto» que el rey le ha mandado, un siervo de Saúl está mirando en Nob, y David huye «de delante de Saúl» a tierra filistea.',
+    "jonathan": ' ⭐ La despedida termina en el primer versículo de <a href="1-samuel-21.es.html#v21-1">1 Samuel 21</a> (ya en estas páginas): «Y él se levantó y se fue; y Jonatán entró en la ciudad». En las Biblias castellanas la línea es el final de 20:42.',
+    "goliath": ' ⭐ <a href="1-samuel-21.es.html#v21-10">1 Samuel 21:10</a> (ya en estas páginas): su espada está en Nob, «envuelta en un manto detrás del efod», y David se la lleva a Gat, la ciudad del propio Goliat: «No hay ninguna como ella; dámela».',
+    "gath": ' ⭐ La primera de las dos estancias es <a href="1-samuel-21.es.html#v21-11">1 Samuel 21:11&ndash;16</a> (ya en estas páginas, numerado 21:10&ndash;15 en las Biblias castellanas), donde David llega con la espada de Goliat.',
+    "edom": ' ⭐ Doeg, «el más fuerte de los pastores que tenía Saúl», es «Doeg el edomita» (<a href="1-samuel-21.es.html#v21-8">1 Samuel 21:8</a>, ya en estas páginas); el griego lo llama sirio, leyendo una letra de otra manera.',
+}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF21:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF21[_k] if r not in _e["refs"]]
+    if _k == "valley-of-elah":
+        _e["desc"] = _swap21(_e["desc"], "(21:10, not yet on these pages)",
+            '(<a href="1-samuel-21.html#v21-10">21:10</a>, now on these pages)')
+    if _k == "goliath":
+        _e["desc"] = _swap21(_e["desc"], "The sword is later kept at Nob (21:10, not yet on these pages).",
+            'The sword is later kept at Nob (<a href="1-samuel-21.html#v21-10">21:10</a>, now on these pages).')
+    if _k == "gath":
+        _e["desc"] = _swap21(_e["desc"], "feigning madness to escape (1 Samuel 21:10-15)",
+            "feigning madness to escape (1 Samuel 21:11&ndash;16 in the Hebrew numbering)")
+    if _k == "ahijah-priest":
+        _e["desc"] = _swap21(_e["desc"], "Whether he is the same man as Ahimelech son of Ahitub, the priest of Nob",
+            'Whether he is the same man as <a href="encyclopedia.html#ahimelech">Ahimelech</a> son of Ahitub, the priest of Nob')
+    if _ADD21.get(_k):
+        _e["desc"] += _ADD21[_k]
+ENCYCLOPEDIA_ES["valley-of-elah"] = (ENCYCLOPEDIA_ES["valley-of-elah"][0], _swap21(ENCYCLOPEDIA_ES["valley-of-elah"][1],
+    "(21:10, todavía no en estas páginas)",
+    '(<a href="1-samuel-21.es.html#v21-10">21:10</a>, ya en estas páginas)'))
+ENCYCLOPEDIA_ES["goliath"] = (ENCYCLOPEDIA_ES["goliath"][0], _swap21(ENCYCLOPEDIA_ES["goliath"][1],
+    "La espada se guarda después en Nob (21:10, todavía no en estas páginas).",
+    'La espada se guarda después en Nob (<a href="1-samuel-21.es.html#v21-10">21:10</a>, ya en estas páginas).'))
+ENCYCLOPEDIA_ES["gath"] = (ENCYCLOPEDIA_ES["gath"][0], _swap21(ENCYCLOPEDIA_ES["gath"][1],
+    "fingiendo locura para escapar (1 Samuel 21:10-15)",
+    "fingiendo locura para escapar (1 Samuel 21:11&ndash;16 en la numeración hebrea)"))
+ENCYCLOPEDIA_ES["ahijah-priest"] = (ENCYCLOPEDIA_ES["ahijah-priest"][0], _swap21(ENCYCLOPEDIA_ES["ahijah-priest"][1],
+    "Si es el mismo hombre que Ahimelec hijo de Ahitob, el sacerdote de Nob",
+    'Si es el mismo hombre que <a href="enciclopedia.html#ahimelech">Ahimelec</a> hijo de Ahitob, el sacerdote de Nob'))
+for _k, _b in _ADD21_ES.items():
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], ENCYCLOPEDIA_ES[_k][1] + _b)
+
+ENCYCLOPEDIA.extend([
+    dict(slug="nob", name="Nob", kind="place", aliases=["Nob"], coords=(31.795, 35.24, 0.03), approx=True,
+         modern="not identified; usually sought on the ridge north-east of Jerusalem, near Mount Scopus",
+         refs=[("1 Samuel", 21, 2)], videos=[],
+         desc='&ldquo;Nob, the city of the priests&rdquo; (1 Samuel 22:19, not yet on these pages), where Ahimelech served in Saul&rsquo;s day. David comes to it alone, is given the holy bread and the sword of Goliath, and is seen there by Doeg the Edomite (<a href="1-samuel-21.html#v21-2">1 Samuel 21:2&ndash;10</a>, now on these pages); the Hebrew writes the name <em>nobeh</em>, &ldquo;to Nob&rdquo;, and the Greek <em>Nomba</em>. Doeg&rsquo;s report costs the city its priests and its people (22:9&ndash;19, not yet on these pages). Isaiah sets it on the Assyrian&rsquo;s road to Jerusalem: &ldquo;This very day he will halt at Nob, and shake his fist at the mount of the daughter of Zion&rdquo; (Isaiah 10:32, not yet on these pages), and it is resettled by Benjamin after the exile (Nehemiah 11:32). ⚠ The site has not been found; Isaiah&rsquo;s line puts it within sight of Jerusalem, and it is usually looked for on the ridge north-east of the city, near Mount Scopus, so the map point marks that ridge, not a ruin.'),
+    dict(slug="ahimelech", name="Ahimelech son of Ahitub", kind="person", aliases=["Ahimelech"], refs=[("1 Samuel", 21, 2), ("1 Samuel", 21, 10)], videos=[],
+         desc='The priest of Nob in Saul&rsquo;s day, &ldquo;son of Ahitub&rdquo; (1 Samuel 22:9, 11) and father of Abiathar (22:20; 23:6; 30:7, none yet on these pages). When David comes to him alone he &ldquo;came trembling to meet David&rdquo;, believes his story of a secret errand for the king, and gives him the holy bread and the sword of Goliath (<a href="1-samuel-21.html#v21-2">1 Samuel 21:2&ndash;10</a>, now on these pages). Doeg the Edomite saw it, and in the next chapter Saul has Ahimelech and the priests of Nob killed (22:9&ndash;19, not yet on these pages). ⚠ Whether he is the same man as <a href="encyclopedia.html#ahijah-priest">Ahijah son of Ahitub</a>, who carried the ephod for Saul (<a href="1-samuel-14.html#v14-3">14:3</a>, already on these pages), is argued (reported, not decided). ⚠ The Greek calls him Abimelech, and when Jesus retells the visit, <a href="mark-2.html#v2-26">Mark 2:26</a> (already on these pages) has it happen &ldquo;in the time of Abiathar the high priest&rdquo;. Not the Hittite Ahimelech of 1 Samuel 26:6.'),
+    dict(slug="doeg", name="Doeg the Edomite", kind="person", aliases=["Doeg"], refs=[("1 Samuel", 21, 8)], videos=[],
+         desc='An Edomite in Saul&rsquo;s service, &ldquo;the mightiest of the shepherds who belonged to Saul&rdquo;, who is at the sanctuary of Nob the day David comes, &ldquo;detained before Jehovah&rdquo; (<a href="1-samuel-21.html#v21-8">1 Samuel 21:8</a>, now on these pages). The chapter names him and moves on; in the next, he tells Saul what he saw, and when Saul&rsquo;s guards will not strike the priests, Doeg kills them himself, eighty-five men, and strikes Nob with the sword (22:9&ndash;10, 18&ndash;19, not yet on these pages). David tells Abiathar, &ldquo;I knew on that day, when Doeg the Edomite was there, that he would surely tell Saul&rdquo; (22:22), and Psalm 52 is headed &ldquo;when Doeg the Edomite came and told Saul&rdquo; (neither yet on these pages). ⚠ The Greek calls him &ldquo;Doeg the Syrian&rdquo;, reading <em>Arammi</em> for <em>Adomi</em>, and has him tending Saul&rsquo;s mules.'),
+    dict(slug="achish", name="Achish king of Gath", kind="person", aliases=["Achish"], refs=[("1 Samuel", 21, 11), ("1 Samuel", 21, 15)], videos=[],
+         desc='The Philistine king of <a href="encyclopedia.html#gath">Gath</a> to whom David flees from Saul. <span data-heb-read="אכיש">He is named in twenty verses of the Hebrew Bible</span>. The first time, his servants know David as the hero of the women&rsquo;s song, David is &ldquo;very afraid of Achish&rdquo; and plays the madman, and Achish asks, &ldquo;Do I lack madmen?&rdquo; (<a href="1-samuel-21.html#v21-11">1 Samuel 21:11&ndash;16</a>, now on these pages). Later, as &ldquo;Achish son of Maoch, king of Gath&rdquo;, he takes David and six hundred men into his service and gives him Ziklag (27:2&ndash;6), trusts him, swears to him &ldquo;As Jehovah lives&rdquo;, and sends him home only because the other Philistine commanders will not have him in the battle (29:3&ndash;10, none yet on these pages). An &ldquo;Achish son of Maacah, king of Gath&rdquo; still reigns in Solomon&rsquo;s day (1 Kings 2:39&ndash;40, not yet on these pages); whether he is the same man is argued (reported, not decided). ⚠ Psalm 34&rsquo;s heading calls the king of the madness story Abimelech (<a href="psalms-34.html#v34-1">Psalm 34:1</a>, already on these pages), and the Greek calls him Anchous.'),
+])
+ENCYCLOPEDIA_ES["nob"] = ("Nob",
+    '«Nob, la ciudad de los sacerdotes» (1 Samuel 22:19, todavía no en estas páginas), donde servía Ahimelec en los días de Saúl. David llega allí solo, recibe el pan santo y la espada de Goliat, y lo ve allí Doeg el edomita (<a href="1-samuel-21.es.html#v21-2">1 Samuel 21:2&ndash;10</a>, ya en estas páginas); el hebreo escribe el nombre <em>nobé</em>, «a Nob», y el griego <em>Nombá</em>. El aviso de Doeg le cuesta a la ciudad sus sacerdotes y su gente (22:9&ndash;19, todavía no en estas páginas). Isaías la pone en el camino del asirio hacia Jerusalén: «Este mismo día se detendrá en Nob, y agitará el puño contra el monte de la hija de Sion» (Isaías 10:32, todavía no en estas páginas), y la vuelve a poblar Benjamín después del destierro (Nehemías 11:32). ⚠ El sitio no se ha encontrado; la línea de Isaías la pone a la vista de Jerusalén, y se suele buscar en la loma al nordeste de la ciudad, cerca del monte Scopus, así que el punto del mapa marca esa loma, no una ruina.')
+ENCYCLOPEDIA_ES["ahimelech"] = ("Ahimelec hijo de Ahitob",
+    'El sacerdote de Nob en los días de Saúl, «hijo de Ahitob» (1 Samuel 22:9, 11) y padre de Abiatar (22:20; 23:6; 30:7, ninguno todavía en estas páginas). Cuando David llega a él solo, «salió temblando al encuentro de David», cree su historia de un encargo secreto del rey, y le da el pan santo y la espada de Goliat (<a href="1-samuel-21.es.html#v21-2">1 Samuel 21:2&ndash;10</a>, ya en estas páginas). Doeg el edomita lo vio, y en el capítulo siguiente Saúl hace matar a Ahimelec y a los sacerdotes de Nob (22:9&ndash;19, todavía no en estas páginas). ⚠ Si es el mismo hombre que <a href="enciclopedia.html#ahijah-priest">Ahías hijo de Ahitob</a>, que llevaba el efod con Saúl (<a href="1-samuel-14.es.html#v14-3">14:3</a>, ya en estas páginas), se discute (se informa, no se decide). ⚠ El griego lo llama Abimelec, y cuando Jesús vuelve a contar la visita, <a href="mark-2.es.html#v2-26">Marcos 2:26</a> (ya en estas páginas) la sitúa «en tiempos de Abiatar el sumo sacerdote». No es el Ahimelec heteo de 1 Samuel 26:6.')
+ENCYCLOPEDIA_ES["doeg"] = ("Doeg el edomita",
+    'Un edomita al servicio de Saúl, «el más fuerte de los pastores que tenía Saúl», que está en el santuario de Nob el día en que llega David, «detenido delante de Jehová» (<a href="1-samuel-21.es.html#v21-8">1 Samuel 21:8</a>, ya en estas páginas). El capítulo lo nombra y sigue adelante; en el siguiente, cuenta a Saúl lo que vio, y cuando los guardias de Saúl no quieren herir a los sacerdotes, Doeg los mata él mismo, ochenta y cinco hombres, y hiere a Nob a filo de espada (22:9&ndash;10, 18&ndash;19, todavía no en estas páginas). David le dice a Abiatar: «Yo sabía aquel día, cuando estaba allí Doeg el edomita, que sin duda se lo contaría a Saúl» (22:22), y el Salmo 52 lleva por encabezado «cuando vino Doeg el edomita y dio aviso a Saúl» (ninguno todavía en estas páginas). ⚠ El griego lo llama «Doeg el sirio», leyendo <em>Arammí</em> en lugar de <em>Adomí</em>, y lo pone a apacentar las mulas de Saúl.')
+ENCYCLOPEDIA_ES["achish"] = ("Aquis, rey de Gat",
+    'El rey filisteo de <a href="enciclopedia.html#gath">Gat</a> al que David huye de Saúl. <span data-heb-read="אכיש">Se le nombra en veinte versículos de la Biblia hebrea</span>. La primera vez, sus siervos conocen a David como el héroe del canto de las mujeres, David «tuvo gran temor de Aquis» y hace el loco, y Aquis pregunta: «¿Me faltan a mí locos?» (<a href="1-samuel-21.es.html#v21-11">1 Samuel 21:11&ndash;16</a>, ya en estas páginas). Más tarde, como «Aquis hijo de Maoc, rey de Gat», toma a David y a seiscientos hombres a su servicio y le da Siclag (27:2&ndash;6), confía en él, le jura «Vive Jehová», y lo manda a casa solo porque los otros jefes filisteos no lo quieren en la batalla (29:3&ndash;10, ninguno todavía en estas páginas). Un «Aquis hijo de Maacá, rey de Gat» reina todavía en los días de Salomón (1 Reyes 2:39&ndash;40, todavía no en estas páginas); si es el mismo hombre, se discute (se informa, no se decide). ⚠ El encabezado del Salmo 34 llama Abimélec al rey de la historia de la locura (<a href="psalms-34.es.html#v34-1">Salmo 34:1</a>, ya en estas páginas), y el griego lo llama Anjús.')
+
+CHRON_CHAPTERS["1sam21"] = dict(era="monarchy",
+    when="“Do I lack madmen?”: Jonathan goes back into the city and David, alone, comes to Nob. He tells the trembling priest Ahimelech that the king has sent him on a secret matter, and is given the holy bread of the presence and the sword of Goliath, wrapped in a cloak behind the ephod, while Doeg the Edomite, Saul’s chief shepherd, looks on. Then he flees to Achish king of Gath, where the servants remember the song of his ten thousands; afraid, he plays the madman at the gate, and Achish wants nothing to do with him.",
+    clock="Undated: in Saul’s reign, the day after the parting at the end of chapter 20. The bread at Nob had just been changed (21:7), which Jewish tradition takes to mean a sabbath; the flight to Gath is “that day” (21:11).")
+
+CHAPTER_ART["1sam21"] = [
+    dict(
+        file="gelder-ahimelech-sword-goliath.jpg",
+        title="Ahimelech Giving the Sword of Goliath to David", title_es="Ahimelec da a David la espada de Goliat",
+        artist="Aert de Gelder",
+        year="c. 1680s",
+        location="J. Paul Getty Museum, Los Angeles", location_es="J. Paul Getty Museum, Los Ángeles",
+        alt="An oil painting of two men facing each other at half length in a dim stone room. On the left an old white-bearded priest, seen from the side, wears a white veil over a dark cap with a gold ornament, a gold brocade robe with tassels and white sleeves; he holds out a sword in its scabbard. On the right a young man with long hair, in a large brown beret and a brown-and-gold coat over a red tunic, takes the sword in both hands, looking at the priest.",
+        note="1 Samuel 21:10: “The sword of Goliath the Philistine, whom you struck in the valley of Elah — look, it is wrapped in a cloak behind the ephod … And David said: ‘There is none like it; give it to me.’” De Gelder, Rembrandt’s last pupil, paints the handing-over as a quiet exchange between an old priest and a young man in Dutch finery; the cloak the sword was wrapped in is gone, and the bread is not shown.",
+        note_es="1 Samuel 21:10: «La espada de Goliat el filisteo, al que heriste en el valle de Elá: mira, está envuelta en un manto detrás del efod … Y David dijo: “No hay ninguna como ella; dámela”». De Gelder, el último discípulo de Rembrandt, pinta la entrega como un intercambio tranquilo entre un sacerdote anciano y un joven con ropas holandesas de lujo; el manto en que estaba envuelta la espada ha desaparecido, y el pan no aparece.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Aert_de_Gelder_(Dutch_-_Ahimelech_Giving_the_Sword_of_Goliath_to_David_-_Google_Art_Project.jpg",
+    ),
+    dict(
+        file="harding-bible-david-madness-achish.jpg",
+        title="David Feigning Madness before Achish", title_es="David se finge loco delante de Aquis",
+        artist="Unknown illuminators, Cîteaux (the Bible of Stephen Harding)",
+        year="c. 1109–1111",
+        location="Bibliothèque municipale, Dijon (MS 14, fol. 13)", location_es="Bibliothèque municipale, Dijon (MS 14, fol. 13)",
+        alt="A detail of a medieval manuscript page with two scenes in red frames, drawn in blue, green, red and orange, with Latin text above and below. On the left a crowned king, labelled Achis rex, sits on a cushion holding a sword upright and pointing at a bearded man labelled David, who is being held by the arms by two other men while his legs buckle. On the right a crowd of men with swords stand close together.",
+        note="1 Samuel 21:14: “And he changed his good sense in their eyes, and played the madman in their hands.” The Latin caption above the left scene says that David changed his face before the king and pretended to be mad; the painter labels the king <em>Achis rex</em> and shows David held up by two men, “in their hands”. The caption over the right scene goes on to the next chapter: having escaped by this trick, he hid in the cave of Adullam, and the crowd are the men who gathered to him there (22:1–2).",
+        note_es="1 Samuel 21:14: «Y cambió su buen juicio a los ojos de ellos, e hizo el loco en sus manos». El rótulo latino sobre la escena de la izquierda dice que David cambió su rostro delante del rey y fingió estar loco; el pintor rotula al rey <em>Achis rex</em> y muestra a David sostenido por dos hombres, «en sus manos». El rótulo sobre la escena de la derecha sigue con el capítulo siguiente: escapado con esta artimaña, se escondió en la cueva de Adulam, y la multitud son los hombres que se juntaron con él allí (22:1–2).",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Bible_Etienne_Harding_14_13_David_simulant_la_folie_devant_Akish.jpg",
+    ),
+]
