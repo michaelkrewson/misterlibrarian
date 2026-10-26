@@ -50555,3 +50555,162 @@ for _e in ENCYCLOPEDIA:
 ENCYCLOPEDIA_ES["ahijah-priest"] = (ENCYCLOPEDIA_ES["ahijah-priest"][0], _swap22(ENCYCLOPEDIA_ES["ahijah-priest"][1],
     "(1 Samuel 22:9, todavía no en estas páginas)",
     '(<a href="1-samuel-22.es.html#v22-9">1 Samuel 22:9</a>, ya en estas páginas)'))
+
+# --- 1 Samuel 23 ---
+def _swap1s23(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D1S23 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D1S23[_d[0]] = _i
+
+def _dict1s23_en(slug, old=None, new=None, add=None):
+    _i = _D1S23[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap1s23(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict1s23_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap1s23(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# 1 Samuel 23 added to existing dictionary entries
+_dict1s23_en("nakar", add=' ⭐ In the intensive the root can mean to treat as a stranger, to disown: Saul, hearing that David has gone into Keilah, says &lsquo;God has disowned him into my hand&rsquo;, <em>nikkar oto Elohim be-yadi</em> (<a href="1-samuel-23.html#v23-7">1 Samuel 23:7</a>, now on these pages). The Greek read <em>makar</em>, &lsquo;has sold him&rsquo;, one letter different, and the NWT 1984 follows it; seven verses later the narrator says that God did not give David into his hand (23:14).')
+_dict1s23_es("nakar", add=' ⭐ En la forma intensiva la raíz puede significar tratar como extraño, repudiar: Saúl, al saber que David ha entrado en Keila, dice «Dios lo ha repudiado en mi mano», <em>nikkár otó Elohím be-yadí</em> (<a href="1-samuel-23.es.html#v23-7">1 Samuel 23:7</a>, ya en estas páginas). El griego leyó <em>makar</em>, «lo ha vendido», con una letra distinta, y la TNM 1987 lo sigue; siete versículos después el narrador dice que Dios no dio a David en su mano (23:14).')
+_dict1s23_en("chamal", add=' ⭐ Saul uses it of himself in <a href="1-samuel-23.html#v23-21">1 Samuel 23:21</a> (now on these pages): &lsquo;Blessed are you of Jehovah, for you have had pity on me&rsquo;, to the Ziphites who have offered to hand David over, with the same blessing he gave Samuel in the chapter where he spared Agag (15:13).')
+_dict1s23_es("chamal", add=' ⭐ Saúl lo usa de sí mismo en <a href="1-samuel-23.es.html#v23-21">1 Samuel 23:21</a> (ya en estas páginas): «Benditos sean ustedes de Jehová, porque se han compadecido de mí», a los zifeos que se han ofrecido a entregarle a David, con la misma bendición que dio a Samuel en el capítulo en que perdonó a Agag (15:13).')
+_dict1s23_en("arum", add=' ⭐ The verb of the same root stands doubled in <a href="1-samuel-23.html#v23-22">1 Samuel 23:22</a> (now on these pages), in Saul&rsquo;s mouth about David: &lsquo;for it has been said to me, &ldquo;He is surely cunning&rdquo;&rsquo;, <em>arom ya&rsquo;rim hu</em>. The Latin turns the sentence round and makes Saul the crafty one.')
+_dict1s23_es("arum", add=' ⭐ El verbo de la misma raíz está doblado en <a href="1-samuel-23.es.html#v23-22">1 Samuel 23:22</a> (ya en estas páginas), en boca de Saúl sobre David: «porque se me ha dicho: “De cierto es astuto”», <em>aróm yarím hu</em>. El latín le da la vuelta a la frase y hace astuto a Saúl.')
+_dict1s23_en("avvah", add=' ⭐ Outside the law the Ziphites use the phrase to the king: &lsquo;according to all the craving of your soul to come down, O king, come down&rsquo; (<a href="1-samuel-23.html#v23-20">1 Samuel 23:20</a>, now on these pages). What Saul craves is David.')
+_dict1s23_es("avvah", add=' ⭐ Fuera de la ley, los zifeos usan la frase ante el rey: «conforme a toda el ansia de tu alma de bajar, oh rey, baja» (<a href="1-samuel-23.es.html#v23-20">1 Samuel 23:20</a>, ya en estas páginas). Lo que Saúl ansía es a David.')
+_dict1s23_en("sela", add=' ⭐ In <a href="1-samuel-23.html#v23-25">1 Samuel 23:25&ndash;28</a> (now on these pages) David &lsquo;went down to the crag&rsquo; in the wilderness of Maon, and the place where Saul broke off the chase was named Sela-hammahlekoth, &lsquo;the Crag of the Divisions&rsquo; (<a href="encyclopedia.html#sela-hammahlekoth">Sela-hammahlekoth</a>).')
+_dict1s23_es("sela", add=' ⭐ En <a href="1-samuel-23.es.html#v23-25">1 Samuel 23:25&ndash;28</a> (ya en estas páginas) David «bajó al peñasco» en el desierto de Maón, y el lugar donde Saúl dejó la persecución se llamó Sela-hamajlecot, «el Peñasco de las Divisiones» (<a href="enciclopedia.html#sela-hammahlekoth">Sela-hamajlecot</a>).')
+_dict1s23_en("chalaq", add=' ⭐ Its plural noun <em>machleqot</em>, divisions, names a place in <a href="1-samuel-23.html#v23-28">1 Samuel 23:28</a> (now on these pages): Sela-hammahlekoth, the crag where Saul and David were parted when the Philistines raided the land.')
+_dict1s23_es("chalaq", add=' ⭐ Su sustantivo plural <em>majlekót</em>, divisiones, da nombre a un lugar en <a href="1-samuel-23.es.html#v23-28">1 Samuel 23:28</a> (ya en estas páginas): Sela-hamajlecot, el peñasco donde Saúl y David quedaron separados cuando los filisteos invadieron la tierra.')
+_dict1s23_en("ephod", add=' ⭐ Abiathar, the one priest who escaped Nob, brings an ephod to David: &lsquo;an ephod came down in his hand&rsquo; (<a href="1-samuel-23.html#v23-6">1 Samuel 23:6</a>, now on these pages), and when Saul marches on Keilah David says to him, &lsquo;Bring the ephod here&rsquo;, and asks Jehovah two questions (23:9&ndash;12).')
+_dict1s23_es("ephod", add=' ⭐ Abiatar, el único sacerdote que escapó de Nob, le trae un efod a David: «un efod bajó en su mano» (<a href="1-samuel-23.es.html#v23-6">1 Samuel 23:6</a>, ya en estas páginas), y cuando Saúl marcha contra Keila David le dice «Trae aquí el efod», y hace a Jehová dos preguntas (23:9&ndash;12).')
+_dict1s23_en("shaal", add=' ⭐ In <a href="1-samuel-23.html#v23-2">1 Samuel 23:2&ndash;4</a> (now on these pages) David &lsquo;inquired of Jehovah&rsquo; twice before going to Keilah, and was answered both times; when Saul had asked &lsquo;Shall I go down after the Philistines?&rsquo; he was not answered (14:37).')
+_dict1s23_es("shaal", add=' ⭐ En <a href="1-samuel-23.es.html#v23-2">1 Samuel 23:2&ndash;4</a> (ya en estas páginas) David «consultó a Jehová» dos veces antes de ir a Keila, y las dos veces recibió respuesta; cuando Saúl había preguntado «¿Bajaré tras los filisteos?», no se le respondió (14:37).')
+_dict1s23_en("metsudah", add=' ⭐ The plural of its shorter form, <em>metsadot</em>, &lsquo;the strongholds&rsquo;, is where David stays in the wilderness of Ziph and at En-gedi (<a href="1-samuel-23.html#v23-14">1 Samuel 23:14</a>, 19, 29, now on these pages); Israel hid in &lsquo;the strongholds&rsquo; from Midian (<a href="judges-6.html#v2">Judges 6:2</a>, already on these pages).')
+_dict1s23_es("metsudah", add=' ⭐ El plural de su forma breve, <em>metsadót</em>, «las fortalezas», es donde David se queda en el desierto de Zif y en En-gadi (<a href="1-samuel-23.es.html#v23-14">1 Samuel 23:14</a>, 19, 29, ya en estas páginas); Israel se escondió en «fortalezas» de Madián (<a href="judges-6.es.html#v2">Jueces 6:2</a>, ya en estas páginas).')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("sagar", "sagar / hisgir", "סָגַר", "sagar / hisgir",
+     """TO SHUT, to close &mdash; a door, a gate, a city; and in the causative, <em>hisgir</em>, to shut someone up into another&rsquo;s hand, to HAND HIM OVER. The law uses the causative of fugitives a community must not give up: &lsquo;You shall not hand over to his master a slave who has escaped to you from his master&rsquo; (<a href="deuteronomy-23.html#v23-16">Deuteronomy 23:16</a>), and the city of refuge &lsquo;shall not deliver up the manslayer into his hand&rsquo; (<a href="joshua-20.html#v20-5">Joshua 20:5</a>, both now on these pages). In the Song of Moses it stands beside <em>makar</em>, to sell: &lsquo;unless their rock had sold them, and Jehovah had given them up&rsquo; (<a href="deuteronomy-32.html#v32-30">Deuteronomy 32:30</a>, now on these pages). ⭐ <a href="1-samuel-23.html#v23-7">1 Samuel 23</a> (now on these pages) turns on both forms: Saul says that David &lsquo;has shut himself in by entering a city with gates and bars&rsquo; (23:7); David asks Jehovah, &lsquo;Will the lords of Keilah hand me over into his hand?&rsquo;, and is told &lsquo;They will hand [you] over&rsquo; (23:11&ndash;12); and the Ziphites offer the king, &lsquo;ours [is] to hand him over into the king&rsquo;s hand&rsquo; (23:20). The Greek renders the causative with verbs of shutting in.""",
+     ("1 Samuel", 23, 7)),
+    ("chafas", "chafas / chippes", "חָפַשׂ", "chafas / chippes",
+     """TO SEARCH, to search out &mdash; in the intensive, <em>chippes</em>, to go through a place, a baggage train or a crowd until the thing is found. Laban &lsquo;searched but did not find the teraphim&rsquo; (<a href="genesis-31.html#v31-35">Genesis 31:35</a>), and Joseph&rsquo;s steward &lsquo;searched &mdash; he began with the eldest and finished with the youngest&rsquo; (<a href="genesis-44.html#v44-12">Genesis 44:12</a>, both now on these pages). ⭐ In <a href="1-samuel-23.html#v23-23">1 Samuel 23:23</a> (now on these pages) it is a king&rsquo;s threat against one man: &lsquo;if he is in the land, I will search him out among all the thousands of Judah.&rsquo;""",
+     ("1 Samuel", 23, 23)),
+    ("atar-crown", "atar / atarah", "עָטַר", "atar",
+     """TO SURROUND, to ring about &mdash; and so to CROWN, to set a ring on the head; its noun <em>atarah</em> is a crown. The psalms use the verb for what God does to a human being: &lsquo;who crowns you with steadfast love and compassion&rsquo; (<a href="psalms-103.html#v103-4">Psalm 103:4</a>, now on these pages), and &lsquo;with glory and honour you crown him&rsquo; (Psalm 8:6, not yet on these pages). ⭐ In <a href="1-samuel-23.html#v23-26">1 Samuel 23:26</a> (now on these pages) it is said of soldiers: &lsquo;Saul and his men were closing in around David and his men, to seize them&rsquo;, <em>otrim</em>, and the Latin keeps the picture, <em>in modum coronae</em>, &lsquo;in the manner of a crown&rsquo;. The crown of the king of Rabbah will later be set on David&rsquo;s head (2 Samuel 12:30, not yet on these pages). ⚠ Not the <a href="dictionary.html#atar">atar</a> of Isaac&rsquo;s prayer, which is spelled with <em>tav</em> where this has <em>tet</em>.""",
+     ("1 Samuel", 23, 26)),
+])
+DICTIONARY_ES["sagar"] = ("sagar / hisguir",
+    """CERRAR &mdash;una puerta, una entrada, una ciudad; y en el causativo, <em>hisguir</em>, encerrar a alguien en la mano de otro, ENTREGARLO. La ley usa el causativo de fugitivos que una comunidad no debe entregar: «No entregarás a su amo al esclavo que se haya escapado a ti de su amo» (<a href="deuteronomy-23.es.html#v23-16">Deuteronomio 23:16</a>), y la ciudad de refugio «no entregará al homicida en su mano» (<a href="joshua-20.es.html#v20-5">Josué 20:5</a>, ambos ya en estas páginas). En el Cántico de Moisés está junto a <em>makar</em>, vender: «si no fuera que su roca los vendió, y Jehová los entregó» (<a href="deuteronomy-32.es.html#v32-30">Deuteronomio 32:30</a>, ya en estas páginas). ⭐ <a href="1-samuel-23.es.html#v23-7">1 Samuel 23</a> (ya en estas páginas) gira en torno a las dos formas: Saúl dice que David «se ha encerrado al entrar en una ciudad con puertas y barras» (23:7); David pregunta a Jehová «¿Me entregarán los señores de Keila en su mano?», y se le responde «[Te] entregarán» (23:11&ndash;12); y los zifeos le ofrecen al rey: «a nosotros [nos toca] entregarlo en la mano del rey» (23:20). El griego vierte el causativo con verbos de encerrar.""")
+DICTIONARY_ES["chafas"] = ("jafás / jippés",
+    """BUSCAR, rastrear &mdash;en la forma intensiva, <em>jippés</em>, recorrer un lugar, un equipaje o una multitud hasta dar con la cosa. Labán «buscó, pero no halló los terafim» (Génesis 31:35, ya en estas páginas, todavía no en español), y el mayordomo de José «registró &mdash;comenzó por el mayor y terminó por el menor&mdash;» (<a href="genesis-44.es.html#v44-12">Génesis 44:12</a>, ya en estas páginas). ⭐ En <a href="1-samuel-23.es.html#v23-23">1 Samuel 23:23</a> (ya en estas páginas) es la amenaza de un rey contra un solo hombre: «si está en la tierra, lo rastrearé entre todos los millares de Judá».""")
+DICTIONARY_ES["atar-crown"] = ("atar / atará",
+    """RODEAR, cercar &mdash;y de ahí CORONAR, poner un cerco en la cabeza; su sustantivo <em>atará</em> es una corona. Los salmos usan el verbo para lo que Dios hace con un ser humano: «el que te corona de amor leal y compasión» (<a href="psalms-103.es.html#v103-4">Salmo 103:4</a>, ya en estas páginas), y «lo coronaste de gloria y de honra» (Salmo 8:6, todavía no en estas páginas). ⭐ En <a href="1-samuel-23.es.html#v23-26">1 Samuel 23:26</a> (ya en estas páginas) se dice de soldados: «Saúl y sus hombres iban cercando a David y a sus hombres, para apresarlos», <em>otrím</em>, y el latín conserva la imagen, <em>in modum coronae</em>, «a manera de corona». La corona del rey de Rabá se pondrá después sobre la cabeza de David (2 Samuel 12:30, todavía no en estas páginas). ⚠ No es el <a href="diccionario.html#atar">atar</a> de la oración de Isaac, que se escribe con <em>tav</em> donde este tiene <em>tet</em>.""")
+
+# encyclopedia: refs + additions
+_REF1S23 = {"keilah": [("1 Samuel", 23, 1)], "jeshimon": [("1 Samuel", 23, 19)], "en-gedi": [("1 Samuel", 23, 29)],
+            "jonathan": [("1 Samuel", 23, 16)], "zadok-abiathar": [("1 Samuel", 23, 6)],
+            "david": [("1 Samuel", 23, 1)], "saul-king": [("1 Samuel", 23, 7)]}
+_ADD1S23 = {
+    "jeshimon": ' ⭐ 1 Samuel uses the same word for another waste: the wilderness of Judah west of the Dead Sea, where the hill of Hachilah and the wilderness of Maon lie &lsquo;south of the Jeshimon&rsquo; (<a href="1-samuel-23.html#v23-19">1 Samuel 23:19</a>, 24, now on these pages).',
+    "en-gedi": ' ⭐ <a href="1-samuel-23.html#v23-29">1 Samuel 23:29</a> (now on these pages): after Saul breaks off the chase at the Crag of the Divisions, David &lsquo;went up from there, and stayed in the strongholds of En-gedi&rsquo;. The Greek and the Latin begin chapter 24 with that verse.',
+    "jonathan": ' ⭐ <a href="1-samuel-23.html#v23-16">1 Samuel 23:16&ndash;18</a> (now on these pages) is their last meeting: he finds David at Horesh, &lsquo;strengthened his hand in God&rsquo;, and says, &lsquo;you will be king over Israel, and I will be second to you; and Saul my father also knows it is so&rsquo;; the two cut a covenant before Jehovah, and he goes home. The book next names him at his death (31:2, not yet on these pages).',
+    "zadok-abiathar": ' ⭐ At Keilah &lsquo;an ephod came down in his hand&rsquo; (<a href="1-samuel-23.html#v23-6">1 Samuel 23:6</a>, now on these pages), and David asks Jehovah through it whether the men of Keilah will hand him over (23:9&ndash;12).',
+    "david": ' ⭐ <a href="1-samuel-23.html#v23-1">1 Samuel 23</a> (now on these pages): he inquires of Jehovah, saves Keilah from the Philistines, learns through Abiathar&rsquo;s ephod that its lords would hand him over, and leaves with about six hundred men; Jonathan meets him at Horesh, the Ziphites betray him to Saul, and the Philistines call Saul away at the Crag of the Divisions.',
+    "saul-king": ' ⭐ In <a href="1-samuel-23.html#v23-7">1 Samuel 23</a> (now on these pages) he says that God has &lsquo;disowned&rsquo; David into his hand at Keilah, summons the people to besiege him, blesses the Ziphites &lsquo;for you have had pity on me&rsquo;, and is closing in on David in the wilderness of Maon when a raid of the Philistines calls him away.',
+}
+_ADD1S23_ES = {
+    "jeshimon": ' ⭐ 1 Samuel usa la misma palabra para otro yermo: el desierto de Judá al oeste del mar Muerto, donde el collado de Haquilá y el desierto de Maón están «al sur del Yesimón» (<a href="1-samuel-23.es.html#v23-19">1 Samuel 23:19</a>, 24, ya en estas páginas).',
+    "en-gedi": ' ⭐ <a href="1-samuel-23.es.html#v23-29">1 Samuel 23:29</a> (ya en estas páginas): después de que Saúl deja la persecución en el Peñasco de las Divisiones, David «subió de allí, y se quedó en las fortalezas de En-gadi». El griego y el latín empiezan el capítulo 24 con ese versículo.',
+    "jonathan": ' ⭐ <a href="1-samuel-23.es.html#v23-16">1 Samuel 23:16&ndash;18</a> (ya en estas páginas) es su último encuentro: encuentra a David en Hores, «fortaleció su mano en Dios», y le dice: «tú serás rey sobre Israel, y yo seré segundo a ti; y también Saúl mi padre sabe que es así»; los dos cortan un pacto delante de Jehová, y él se va a su casa. El libro vuelve a nombrarlo en su muerte (31:2, todavía no en estas páginas).',
+    "zadok-abiathar": ' ⭐ En Keila «un efod bajó en su mano» (<a href="1-samuel-23.es.html#v23-6">1 Samuel 23:6</a>, ya en estas páginas), y David pregunta por medio de él a Jehová si los hombres de Keila lo entregarán (23:9&ndash;12).',
+    "david": ' ⭐ <a href="1-samuel-23.es.html#v23-1">1 Samuel 23</a> (ya en estas páginas): consulta a Jehová, salva a Keila de los filisteos, sabe por el efod de Abiatar que sus señores lo entregarían, y se va con unos seiscientos hombres; Jonatán lo encuentra en Hores, los zifeos lo delatan a Saúl, y los filisteos apartan a Saúl en el Peñasco de las Divisiones.',
+    "saul-king": ' ⭐ En <a href="1-samuel-23.es.html#v23-7">1 Samuel 23</a> (ya en estas páginas) dice que Dios ha «repudiado» a David en su mano en Keila, convoca al pueblo para sitiarlo, bendice a los zifeos «porque se han compadecido de mí», y está cercando a David en el desierto de Maón cuando una incursión de los filisteos lo hace volver.',
+}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF1S23:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF1S23[_k] if r not in _e["refs"]]
+    if _k == "keilah":
+        _e["desc"] = _swap1s23(_e["desc"], "(1 Samuel 23:1&ndash;13, not yet on these pages)",
+            '(<a href="1-samuel-23.html#v23-1">1 Samuel 23:1&ndash;13</a>, now on these pages)')
+        _e["desc"] = _swap1s23(_e["desc"], 'The name stands in fifteen verses of the Hebrew Bible (<em data-heb="קעילה">Qe&lsquo;ilah</em>), eleven of them in 1 Samuel 23;',
+            '<span data-heb="קעילה|קעלה">The name stands in sixteen verses of the Hebrew Bible</span> (<em>Qe&lsquo;ilah</em>, sometimes spelled without the <em>yod</em>), twelve of them in 1 Samuel 23;')
+    if _k == "ahimelech":
+        _e["desc"] = _swap1s23(_e["desc"], "(22:20, both now on these pages; 23:6; 30:7, neither yet on these pages)",
+            '(22:20, both now on these pages; <a href="1-samuel-23.html#v23-6">23:6</a>, now on these pages; 30:7, not yet on these pages)')
+    if _ADD1S23.get(_k):
+        _e["desc"] += _ADD1S23[_k]
+ENCYCLOPEDIA_ES["keilah"] = (ENCYCLOPEDIA_ES["keilah"][0], _swap1s23(_swap1s23(ENCYCLOPEDIA_ES["keilah"][1],
+    "(1 Samuel 23:1&ndash;13, todavía no en estas páginas)",
+    '(<a href="1-samuel-23.es.html#v23-1">1 Samuel 23:1&ndash;13</a>, ya en estas páginas)'),
+    'El nombre está en quince versículos de la Biblia hebrea (<em data-heb="קעילה">Qe&lsquo;ilah</em>), once de ellos en 1 Samuel 23;',
+    '<span data-heb="קעילה|קעלה">El nombre está en dieciséis versículos de la Biblia hebrea</span> (<em>Qe&lsquo;ilah</em>, a veces escrito sin la <em>yod</em>), doce de ellos en 1 Samuel 23;'))
+ENCYCLOPEDIA_ES["ahimelech"] = (ENCYCLOPEDIA_ES["ahimelech"][0], _swap1s23(ENCYCLOPEDIA_ES["ahimelech"][1],
+    "(22:20, ambos ya en estas páginas; 23:6; 30:7, ninguno todavía en estas páginas)",
+    '(22:20, ambos ya en estas páginas; <a href="1-samuel-23.es.html#v23-6">23:6</a>, ya en estas páginas; 30:7, todavía no en estas páginas)'))
+for _k, _b in _ADD1S23_ES.items():
+    ENCYCLOPEDIA_ES[_k] = (ENCYCLOPEDIA_ES[_k][0], ENCYCLOPEDIA_ES[_k][1] + _b)
+
+ENCYCLOPEDIA.extend([
+    dict(slug="ziph", name="Ziph", kind="place", aliases=["Ziph", "wilderness of Ziph", "Ziphites"],
+         coords=(31.4795, 35.1357, 0.12), approx=True,
+         modern="Commonly identified with Tell Zif, south-east of Hebron",
+         refs=[("Joshua", 15, 55), ("1 Samuel", 23, 14), ("1 Samuel", 23, 19)], videos=[],
+         desc='A town of the hill country of Judah, listed with Maon, Carmel and Juttah (<a href="joshua-15.html#v15-55">Joshua 15:55</a>, now on these pages); another Ziph stands in the list of Judah&rsquo;s towns in the Negev (<a href="joshua-15.html#v15-24">15:24</a>). David hides in &lsquo;the wilderness of Ziph&rsquo; and its strongholds, and there Jonathan finds him at Horesh (<a href="1-samuel-23.html#v23-14">1 Samuel 23:14&ndash;18</a>, now on these pages). Then &lsquo;Ziphites went up to Saul at Gibeah&rsquo; and offered to hand him over (23:19&ndash;20); they do it again in 26:1 (not yet on these pages), and the heading of Psalm 54 remembers them. ⚠ The site is usually placed at Tell Zif, a few miles south-east of Hebron; the map point is that identification.'),
+    dict(slug="maon", name="Maon", kind="place", aliases=["Maon", "wilderness of Maon"],
+         coords=(31.4120, 35.1530, 0.12), approx=True,
+         modern="Commonly identified with Khirbet Ma&rsquo;in (Tel Ma&rsquo;on), south of Hebron",
+         refs=[("Joshua", 15, 55), ("1 Samuel", 23, 24)], videos=[],
+         desc='A town of the hill country of Judah, listed with Carmel, Ziph and Juttah (<a href="joshua-15.html#v15-55">Joshua 15:55</a>, now on these pages). In &lsquo;the wilderness of Maon, in the Arabah, south of the Jeshimon&rsquo; Saul nearly takes David: the two go round opposite sides of one mountain until a messenger calls Saul away to a Philistine raid (<a href="1-samuel-23.html#v23-24">1 Samuel 23:24&ndash;28</a>, now on these pages). It is Nabal&rsquo;s town in 25:2 (not yet on these pages). ⚠ The map point is the usual identification, Khirbet Ma&rsquo;in, south of Hebron.'),
+    dict(slug="horesh", name="Horesh", kind="place", aliases=["Horesh"],
+         modern="not identified; sometimes placed at Khirbet Khoreisa, south of Tell Zif",
+         refs=[("1 Samuel", 23, 15)], videos=[],
+         desc='The place in the wilderness of Ziph where Jonathan comes to David, &lsquo;strengthened his hand in God&rsquo;, and cuts a covenant with him, the last time the two meet (<a href="1-samuel-23.html#v23-15">1 Samuel 23:15&ndash;19</a>, now on these pages). ⚠ <em>Choresh</em> is a thicket or wooded height, and with the article the word may be &lsquo;the wood&rsquo; rather than a name; the KJV and the ASV have &lsquo;the wood&rsquo;, while the NWT, the NIV and this translation print Horesh. The Greek has &lsquo;New&rsquo;, reading one letter differently. A likeness to the name of Khirbet Khoreisa, south of Tell Zif, has been suggested, so there is no map point.'),
+    dict(slug="hachilah", name="Hachilah (the hill of)", kind="place", aliases=["Hachilah", "hill of Hachilah"],
+         modern="not identified",
+         refs=[("1 Samuel", 23, 19)], videos=[],
+         desc='A hill in the wilderness of Ziph, &lsquo;south of the Jeshimon&rsquo;, where the Ziphites tell Saul that David is hiding (<a href="1-samuel-23.html#v23-19">1 Samuel 23:19</a>, now on these pages); they say it again in 26:1, and Saul camps on it in 26:3 (neither yet on these pages). ⚠ The place has not been identified, so there is no map point.'),
+    dict(slug="sela-hammahlekoth", name="Sela-hammahlekoth", kind="place", aliases=["Sela-hammahlekoth", "Crag of the Divisions"],
+         modern="not identified",
+         refs=[("1 Samuel", 23, 28)], videos=[],
+         desc='&lsquo;The Crag of the Divisions&rsquo;, the place in the wilderness of Maon where Saul turned back from David to meet a Philistine raid (<a href="1-samuel-23.html#v23-28">1 Samuel 23:28</a>, now on these pages). <em>Sela</em> is a crag (<a href="dictionary.html#sela">sela</a>), and <em>machleqot</em> is from <em>chalaq</em>, to divide (<a href="dictionary.html#chalaq">chalaq</a>): the place where the two were parted. A second <em>chalaq</em> means smooth, and the name has also been read as the crag of slipping away; the TLB prints &lsquo;The Rock of Escape&rsquo;. ⚠ The place has not been identified, so there is no map point.'),
+])
+ENCYCLOPEDIA_ES["ziph"] = ("Zif",
+    'Ciudad de la montaña de Judá, en la lista con Maón, Carmel y Jutá (<a href="joshua-15.es.html#v15-55">Josué 15:55</a>, ya en estas páginas); otra Zif está en la lista de las ciudades de Judá en el Négueb (<a href="joshua-15.es.html#v15-24">15:24</a>). David se esconde en «el desierto de Zif» y en sus fortalezas, y allí lo encuentra Jonatán en Hores (<a href="1-samuel-23.es.html#v23-14">1 Samuel 23:14&ndash;18</a>, ya en estas páginas). Luego «subieron unos zifeos a Saúl, a Guibeá» y se ofrecieron a entregárselo (23:19&ndash;20); lo vuelven a hacer en 26:1 (todavía no en estas páginas), y el encabezado del Salmo 54 los recuerda. ⚠ El sitio suele situarse en Tell Zif, a pocos kilómetros al sureste de Hebrón; el punto del mapa es esa identificación.')
+ENCYCLOPEDIA_ES["maon"] = ("Maón",
+    'Ciudad de la montaña de Judá, en la lista con Carmel, Zif y Jutá (<a href="joshua-15.es.html#v15-55">Josué 15:55</a>, ya en estas páginas). En «el desierto de Maón, en el Arabá, al sur del Yesimón» Saúl casi atrapa a David: los dos rodean un mismo monte por lados opuestos hasta que un mensajero llama a Saúl a una incursión filistea (<a href="1-samuel-23.es.html#v23-24">1 Samuel 23:24&ndash;28</a>, ya en estas páginas). Es la ciudad de Nabal en 25:2 (todavía no en estas páginas). ⚠ El punto del mapa es la identificación habitual, Khirbet Ma’in, al sur de Hebrón.')
+ENCYCLOPEDIA_ES["horesh"] = ("Hores",
+    'El lugar del desierto de Zif donde Jonatán viene a David, «fortaleció su mano en Dios», y corta un pacto con él, la última vez que los dos se ven (<a href="1-samuel-23.es.html#v23-15">1 Samuel 23:15&ndash;19</a>, ya en estas páginas). ⚠ <em>Jóresh</em> es un matorral o una altura arbolada, y con el artículo la palabra puede ser «el bosque» más que un nombre; la RV 1909 tiene «el bosque», mientras la RV60, la TNM y esta traducción imprimen Hores. El griego tiene «Nueva», leyendo una letra de otra manera. Se ha sugerido un parecido con el nombre de Khirbet Khoreisa, al sur de Tell Zif, así que no hay punto en el mapa.')
+ENCYCLOPEDIA_ES["hachilah"] = ("Haquilá (el collado de)",
+    'Un collado del desierto de Zif, «al sur del Yesimón», donde los zifeos le dicen a Saúl que David se esconde (<a href="1-samuel-23.es.html#v23-19">1 Samuel 23:19</a>, ya en estas páginas); lo repiten en 26:1, y Saúl acampa en él en 26:3 (ninguno todavía en estas páginas). ⚠ El lugar no se ha identificado, así que no hay punto en el mapa.')
+ENCYCLOPEDIA_ES["sela-hammahlekoth"] = ("Sela-hamajlecot",
+    '«El Peñasco de las Divisiones», el lugar del desierto de Maón donde Saúl se volvió de perseguir a David para hacer frente a una incursión filistea (<a href="1-samuel-23.es.html#v23-28">1 Samuel 23:28</a>, ya en estas páginas). <em>Sela</em> es un peñasco (<a href="diccionario.html#sela">sela</a>), y <em>majlekót</em> viene de <em>jalaq</em>, dividir (<a href="diccionario.html#chalaq">jalaq</a>): el lugar donde los dos quedaron separados. Un segundo <em>jalaq</em> significa liso, y el nombre se ha leído también como el peñasco del escape. ⚠ El lugar no se ha identificado, así que no hay punto en el mapa. La RV60 lo escribe Sela-hama-lecot.')
+
+CHRON_CHAPTERS["1sam23"] = dict(era="monarchy",
+    when="“Will the lords of Keilah hand me over?”: David inquires of Jehovah and saves Keilah from a Philistine raid on its threshing floors; Abiathar comes to him with the ephod, and when Saul calls out the people to besiege the walled town, the ephod answers that Saul will come and Keilah will hand David over. David leaves with about six hundred men for the strongholds of the wilderness of Ziph. Jonathan finds him at Horesh, tells him he will be king, and the two cut a covenant before Jehovah. The Ziphites betray him to Saul; in the wilderness of Maon Saul is closing in round the mountain when a Philistine raid calls him away, and the place is named the Crag of the Divisions. David goes up to the strongholds of En-gedi.",
+    clock="Undated: in Saul’s reign, soon after the massacre at Nob in chapter 22; Saul seeks David “all the days”, and the stay in the wilderness of Ziph is of unstated length.")
+
+CHAPTER_ART["1sam23"] = [
+    dict(
+        file="morgan-bible-keilah-saul-pursues-david.jpg",
+        title="David Fights the Philistines; Saul Sends Men to Take Him; the Cave", title_es="David pelea contra los filisteos; Saúl envía hombres a prenderlo; la cueva",
+        artist="Unknown illuminators, Paris (the Morgan Crusader Bible)",
+        year="c. 1250",
+        location="Morgan Library & Museum, New York (MS M.638, fol. 33r)", location_es="Morgan Library & Museum, Nueva York (MS M.638, fol. 33r)",
+        alt="Medieval manuscript page with three painted scenes under arcades, with Latin captions above and below and Persian and Judeo-Persian writing in the margins. Top left: knights in mail on horseback and on foot fight with swords and a round orange shield, with fallen men beneath them. Top right: a column of armed riders with lances and banners rides out of a city gate. Bottom: among rocky hills a crowned king sits inside a cave while a man in mail behind him cuts at his red robe with a sword; above the cave a soldier holds up a piece of cloth, and on either side mounted men and soldiers wait.",
+        note="1 Samuel 23:1–8; 23:26 and chapter 24. The Latin caption at the top left says how, when David’s brothers and many others had gathered to him, up to four hundred men, <em>quadringentorum</em>, and news came that the Philistines were invading the land of Israel, he went and fought and defeated them: the painter keeps the number of 22:2, where the Hebrew has six hundred by 23:13 and the Greek keeps four hundred. The top right says how Saul, hearing where David was, sent a countless people to take him. The caption below begins with David fleeing to the wilderness and Saul ringing him round <em>in modum corone</em>, “in the manner of a crown”, the Latin of 23:26, and then tells the next chapter, which the lower scene paints: Saul in the cave and David cutting off the edge of his cloak (24:4–5, not yet on these pages).",
+        note_es="1 Samuel 23:1–8; 23:26 y el capítulo 24. El rótulo latino de arriba a la izquierda dice cómo, cuando los hermanos de David y muchos otros se le habían juntado, hasta cuatrocientos hombres, <em>quadringentorum</em>, y llegó la noticia de que los filisteos invadían la tierra de Israel, fue, peleó y los venció: el pintor conserva el número de 22:2, donde el hebreo tiene seiscientos en 23:13 y el griego conserva cuatrocientos. El de arriba a la derecha dice cómo Saúl, al oír dónde estaba David, envió un pueblo innumerable a prenderlo. El rótulo de abajo empieza con David huyendo al desierto y Saúl rodeándolo <em>in modum corone</em>, «a manera de corona», el latín de 23:26, y luego cuenta el capítulo siguiente, que pinta la escena de abajo: Saúl en la cueva y David cortándole la orilla del manto (24:4–5, todavía no en estas páginas).",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._33r.jpg",
+    ),
+]
