@@ -10,6 +10,8 @@
   "compatibility_date": "2026-10-01",
   "routes": [{ "pattern": "west.m8k.io", "custom_domain": true }],
   "workers_dev": true,
+  // No Agorai redirect map: BLOG only picks West's stray-path redirects in static-site.js.
+  "vars": { "BLOG": "west" },
   "assets": {
     "binding": "ASSETS",
     "directory": "../west",
