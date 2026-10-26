@@ -50714,3 +50714,142 @@ CHAPTER_ART["1sam23"] = [
         source_url="https://commons.wikimedia.org/wiki/File:Maciejowski_Bible_-_Morgan_Library_%26_Museum_MS_M.638,_fol._33r.jpg",
     ),
 ]
+
+# --- 1 Samuel 24 ---
+def _swap1s24(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D1S24 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D1S24[_d[0]] = _i
+
+def _dict1s24_en(slug, old=None, new=None, add=None):
+    _i = _D1S24[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap1s24(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict1s24_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap1s24(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# 1 Samuel 24 added to existing dictionary entries
+_dict1s24_en("meil", old="when David cuts the corner of Saul&rsquo;s robe in the cave (1 Samuel 24), and when the woman of En-dor sees &ldquo;an old man coming up, wrapped in a robe&rdquo; and Saul knows it is Samuel (28:14; neither yet on these pages).",
+    new='when David cuts the corner of Saul&rsquo;s robe in the cave (<a href="1-samuel-24.html#v24-4">1 Samuel 24:4</a>, now on these pages), and when the woman of En-dor sees &ldquo;an old man coming up, wrapped in a robe&rdquo; and Saul knows it is Samuel (28:14, not yet on these pages).')
+_dict1s24_es("meil", old="cuando David corta el borde del manto de Saúl en la cueva (1 Samuel 24), y cuando la mujer de Endor ve «un anciano que sube, envuelto en un manto» y Saúl sabe que es Samuel (28:14; ninguno de los dos todavía en estas páginas).",
+    new='cuando David corta el borde del manto de Saúl en la cueva (<a href="1-samuel-24.es.html#v24-4">1 Samuel 24:4</a>, ya en estas páginas), y cuando la mujer de Endor ve «un anciano que sube, envuelto en un manto» y Saúl sabe que es Samuel (28:14, todavía no en estas páginas).')
+_dict1s24_en("kanaf", add=' ⭐ In the cave at En-gedi David &lsquo;cut off the corner of the robe that was Saul&rsquo;s&rsquo;, and then held it up as evidence: &lsquo;see the corner of your robe in my hand&rsquo; (<a href="1-samuel-24.html#v24-4">1 Samuel 24:4</a>, 5, 11, now on these pages). The Greek calls the piece a <em>pterygion</em>, a little wing.')
+_dict1s24_es("kanaf", add=' ⭐ En la cueva de En-gadi David «cortó el borde del manto que era de Saúl», y luego lo mostró como prueba: «mira el borde de tu manto en mi mano» (<a href="1-samuel-24.es.html#v24-4">1 Samuel 24:4</a>, 5, 11, ya en estas páginas). El griego llama al pedazo <em>pterygion</em>, un ala pequeña.')
+_dict1s24_en("mashiach", add=' ⭐ In the cave at En-gedi David says it twice in one sentence, &lsquo;to my lord, to Jehovah&rsquo;s anointed, to stretch out my hand against him; for he is Jehovah&rsquo;s anointed&rsquo;, and again to Saul&rsquo;s face (<a href="1-samuel-24.html#v24-6">1 Samuel 24:6</a>, 10, now on these pages).')
+_dict1s24_es("mashiach", add=' ⭐ En la cueva de En-gadi David lo dice dos veces en una sola frase, «a mi señor, al ungido de Jehová, extender mi mano contra él; porque él es el ungido de Jehová», y otra vez ante Saúl (<a href="1-samuel-24.es.html#v24-6">1 Samuel 24:6</a>, 10, ya en estas páginas).')
+_dict1s24_en("chalilah", add=' ⭐ With Jehovah&rsquo;s name added, <em>chalilah li me-YHVH</em>, &lsquo;Far be it from me, by Jehovah&rsquo;, it is David&rsquo;s refusal to touch Saul (<a href="1-samuel-24.html#v24-6">1 Samuel 24:6</a>, now on these pages); <span data-heb="חלילה לי מיהוה">that longer form stands in three verses of the Hebrew Bible</span>, the others being 26:11 and Naboth&rsquo;s answer to Ahab (1 Kings 21:3, neither yet on these pages).')
+_dict1s24_es("chalilah", add=' ⭐ Con el nombre de Jehová añadido, <em>jalilá li me-YHVH</em>, «Lejos esté de mí, por Jehová», es la negativa de David a tocar a Saúl (<a href="1-samuel-24.es.html#v24-6">1 Samuel 24:6</a>, ya en estas páginas); <span data-heb="חלילה לי מיהוה">esa forma larga está en tres versículos de la Biblia hebrea</span>, los otros dos 26:11 y la respuesta de Nabot a Acab (1 Reyes 21:3, ninguno todavía en estas páginas).')
+_dict1s24_en("karat", add=' ⭐ <a href="1-samuel-24.html#v24-4">1 Samuel 24</a> (now on these pages) uses it of cloth and then of a family: David &lsquo;cut off the corner&rsquo; of Saul&rsquo;s robe (verses 4, 5, 11), and Saul makes him swear &lsquo;that you will not cut off my seed after me&rsquo; (<a href="1-samuel-24.html#v24-21">24:21</a>), in the causative.')
+_dict1s24_es("karat", add=' ⭐ <a href="1-samuel-24.es.html#v24-4">1 Samuel 24</a> (ya en estas páginas) lo usa de una tela y luego de una familia: David «cortó el borde» del manto de Saúl (versículos 4, 5, 11), y Saúl le hace jurar «que no cortarás mi descendencia después de mí» (<a href="1-samuel-24.es.html#v24-21">24:21</a>), en el causativo.')
+_dict1s24_en("kelev", add=' ⭐ David calls himself one before Saul: &lsquo;After whom has the king of Israel come out? &hellip; After a dead dog &mdash; after a single flea&rsquo; (<a href="1-samuel-24.html#v24-14">1 Samuel 24:14</a>, now on these pages), three chapters after Goliath&rsquo;s &lsquo;Am I a dog?&rsquo; (<a href="1-samuel-17.html#v17-43">17:43</a>).')
+_dict1s24_es("kelev", add=' ⭐ David se llama así a sí mismo ante Saúl: «¿Tras quién ha salido el rey de Israel? &hellip; Tras un perro muerto, tras una sola pulga» (<a href="1-samuel-24.es.html#v24-14">1 Samuel 24:14</a>, ya en estas páginas), después del «¿Soy yo un perro?» de Goliat (<a href="1-samuel-17.es.html#v17-43">17:43</a>).')
+_dict1s24_en("chus", add=' ⭐ The law&rsquo;s phrase supplies the missing subject in <a href="1-samuel-24.html#v24-10">1 Samuel 24:10</a> (now on these pages), where the verb is feminine and nothing is written before it: &lsquo;but [my eye] spared you&rsquo;. The KJV, ASV and Douay supply the eye; the NIV and NWT do not.')
+_dict1s24_es("chus", add=' ⭐ La frase de la ley suple el sujeto que falta en <a href="1-samuel-24.es.html#v24-10">1 Samuel 24:10</a> (ya en estas páginas), donde el verbo es femenino y no hay nada escrito antes: «pero [mi ojo] se apiadó de ti». La KJV y la Douay inglesas suplen el ojo; el estante español no.')
+_dict1s24_en("metsudah", add=' ⭐ After the oath in the cave, &lsquo;Saul went to his house; and David and his men went up to the stronghold&rsquo; (<a href="1-samuel-24.html#v24-22">1 Samuel 24:22</a>, now on these pages). The Greek reads the word there as a place name, Messara.')
+_dict1s24_es("metsudah", add=' ⭐ Después del juramento en la cueva, «Saúl se fue a su casa; y David y sus hombres subieron a la fortaleza» (<a href="1-samuel-24.es.html#v24-22">1 Samuel 24:22</a>, ya en estas páginas). El griego lee allí la palabra como nombre de lugar, Mesará.')
+_dict1s24_en("sagar", add=' ⭐ Saul uses the intensive of himself in the cave: &lsquo;Jehovah handed me over into your hand, and you did not kill me&rsquo; (<a href="1-samuel-24.html#v24-18">1 Samuel 24:18</a>, now on these pages), the form David used to Goliath, &lsquo;This day Jehovah will hand you over into my hand&rsquo; (<a href="1-samuel-17.html#v17-46">17:46</a>).')
+_dict1s24_es("sagar", add=' ⭐ Saúl usa la forma intensiva de sí mismo en la cueva: «Jehová me entregó en tu mano, y no me mataste» (<a href="1-samuel-24.es.html#v24-18">1 Samuel 24:18</a>, ya en estas páginas), la forma que David usó ante Goliat: «Este día Jehová te entregará en mi mano» (<a href="1-samuel-17.es.html#v17-46">17:46</a>).')
+_dict1s24_en("mashal", add=' ⭐ A second proverb with Saul in it: in the cave David quotes &lsquo;the proverb of the ancients&rsquo;, <em>meshal ha-qadmoni</em>, &lsquo;From the wicked comes forth wickedness&rsquo; (<a href="1-samuel-24.html#v24-13">1 Samuel 24:13</a>, now on these pages).')
+_dict1s24_es("mashal", add=' ⭐ Un segundo proverbio con Saúl: en la cueva David cita «el proverbio de los antiguos», <em>meshál ha-qadmoní</em>, «De los malvados sale la maldad» (<a href="1-samuel-24.es.html#v24-13">1 Samuel 24:13</a>, ya en estas páginas).')
+
+_dict1s24_en("mashiach", old="'Jehovah forbid that I should stretch out my hand against JEHOVAH'S ANOINTED' (1 Samuel 24:6; 26:9)",
+    new='&lsquo;Far be it from me, by Jehovah, that I should &hellip; stretch out my hand against him; for he is JEHOVAH&rsquo;S ANOINTED&rsquo; (<a href="1-samuel-24.html#v24-6">1 Samuel 24:6</a>, now on these pages; 26:9, not yet on these pages)')
+_dict1s24_es("mashiach", old="(1 Samuel 24:6; 26:9, todavía no en estas páginas)",
+    new='(<a href="1-samuel-24.es.html#v24-6">1 Samuel 24:6</a>, ya en estas páginas; 26:9, todavía no en estas páginas)')
+_dict1s24_en("kanaf", old="is how David proves he spared Saul (1 Samuel 24).",
+    new='is how David proves he spared Saul (<a href="1-samuel-24.html#v24-11">1 Samuel 24:11</a>, now on these pages).')
+_dict1s24_es("kanaf", old="es como David prueba que perdonó a Saúl (1 Samuel 24).",
+    new='es como David prueba que perdonó a Saúl (<a href="1-samuel-24.es.html#v24-11">1 Samuel 24:11</a>, ya en estas páginas).')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("yael", "ya&rsquo;el (pl. ye&rsquo;elim)", "יָעֵל", "ya&rsquo;el",
+     """THE WILD GOAT of the cliffs, the ibex, at home on rock faces too steep for anything else. Job is asked, &lsquo;Do you know the time when the wild goats of the crag give birth?&rsquo; (Job 39:1, not yet on these pages). The word is also a woman&rsquo;s name: Jael, wife of Heber the Kenite, who kills Sisera (<a href="judges-4.html#v17">Judges 4:17</a>, 21; <a href="judges-5.html#v24">5:24</a>, all now on these pages) (<a href="encyclopedia.html#jael">Jael</a>). ⭐ In <a href="1-samuel-24.html#v24-2">1 Samuel 24:2</a> (now on these pages) Saul looks for David &lsquo;on the face of the rocks of the wild goats&rsquo;, <em>tsurei ha-ye&rsquo;elim</em>, near En-gedi; the NIV prints the phrase as a name, &lsquo;the Crags of the Wild Goats&rsquo;, and the Greek writes it as one, Sadaiem.""",
+     ("1 Samuel", 24, 2)),
+    ("ballat", "ballat / ba-lat", "בַּלָּט", "ballat",
+     """QUIETLY, without a sound, unnoticed &mdash; an adverb for an approach no one hears. <span data-heb-read="בלט|בלאט">It stands in four verses of the Hebrew Bible</span>: Jael &lsquo;went softly to him&rsquo; with the tent peg (<a href="judges-4.html#v21">Judges 4:21</a>); Ruth &lsquo;came quietly, and uncovered his feet&rsquo; (<a href="ruth-3.html#v3-7">Ruth 3:7</a>); Saul tells his servants, &lsquo;Speak to David in secret&rsquo; (<a href="1-samuel-18.html#v18-22">1 Samuel 18:22</a>, all now on these pages); and ⭐ in the cave David &lsquo;cut off the corner of the robe that was Saul&rsquo;s, quietly&rsquo; (<a href="1-samuel-24.html#v24-4">1 Samuel 24:4</a>, now on these pages). ⚠ The consonants also stand inside the names Belteshazzar and Sanballat, so a search must be read, not counted.""",
+     ("1 Samuel", 24, 4)),
+    ("shasa", "shasa / shissa", "שָׁסַע", "shasa / shissa",
+     """TO SPLIT, to tear apart. In the plain stem it is the cloven hoof: the pig &lsquo;has a split hoof, cloven clear through&rsquo; (<a href="leviticus-11.html#v11-7">Leviticus 11:7</a>). In the intensive it is violent: the priest tears the bird offering &lsquo;open by its wings but shall not divide it completely&rsquo; (<a href="leviticus-1.html#v17">Leviticus 1:17</a>), and Samson tears the lion &lsquo;as one tears apart a young goat&rsquo; (<a href="judges-14.html#v14-6">Judges 14:6</a>, all now on these pages). ⭐ In <a href="1-samuel-24.html#v24-7">1 Samuel 24:7</a> (now on these pages) it is done with words: &lsquo;And David tore into his men with these words, and did not let them rise against Saul.&rsquo; The shelf softens it to stayed, checked, rebuked, dispersed; the Latin has <em>confregit</em>, broke.""",
+     ("1 Samuel", 24, 7)),
+    ("tsadah", "tsadah", "צָדָה", "tsadah",
+     """TO LIE IN WAIT, to stalk a person with intent. The asylum law turns on it: &lsquo;But if he did not lie in wait, and God let him fall into his hand, then I will appoint you a place to which he may flee&rsquo; (<a href="exodus-21.html#v21-13">Exodus 21:13</a>, now on these pages). ⭐ David uses it of Saul: &lsquo;and you are lying in wait for my life, to take it&rsquo; (<a href="1-samuel-24.html#v24-11">1 Samuel 24:11</a>, now on these pages), so that the fugitive is the one who has not lain in wait, and the king the one who has. Lamentations 4:18 (not yet on these pages) has a related form, &lsquo;they hunted our steps&rsquo;. ⚠ The same consonants spell <em>tsedah</em>, provisions for a journey (<a href="genesis-42.html#v42-25">Genesis 42:25</a>, now on these pages), a different word.""",
+     ("1 Samuel", 24, 11)),
+    ("parosh", "par&rsquo;osh", "פַּרְעֹשׁ", "par&rsquo;osh",
+     """THE FLEA. <span data-heb="פרעש">The word stands in eight verses of the Hebrew Bible</span>, and only two of them mean the insect, both in David&rsquo;s mouth before Saul: ⭐ &lsquo;After a dead dog &mdash; after a single flea&rsquo; (<a href="1-samuel-24.html#v24-14">1 Samuel 24:14</a>, now on these pages), and &lsquo;the king of Israel has come out to seek a single flea&rsquo; (26:20, not yet on these pages). The other six are the family of Parosh in the lists of Ezra and Nehemiah (Ezra 2:3, not yet on these pages).""",
+     ("1 Samuel", 24, 14)),
+    ("dayyan", "dayyan", "דַּיָּן", "dayyan",
+     """A JUDGE, one who gives a verdict &mdash; from <em>din</em>, to judge, the root of Rachel&rsquo;s &lsquo;God has judged me &hellip; therefore she named him Dan&rsquo; (<a href="genesis-30.html#v30-6">Genesis 30:6</a>) and of &lsquo;Dan shall judge his people&rsquo; (<a href="genesis-49.html#v49-16">Genesis 49:16</a>, both now on these pages). ⭐ David appeals to Jehovah as one: &lsquo;So may Jehovah be judge, and judge between me and you; and may he see, and plead my case, and judge me free of your hand&rsquo; (<a href="1-samuel-24.html#v24-15">1 Samuel 24:15</a>, now on these pages). Psalm 68:6 calls God &lsquo;a judge of widows&rsquo; (not yet on these pages). It is not <em>shofet</em>, the title of the judges of Israel (<a href="dictionary.html#shofet">shofet</a>), though the two verbs stand side by side in David&rsquo;s sentence.""",
+     ("1 Samuel", 24, 15)),
+    ("gamal", "gamal", "גָּמַל", "gamal",
+     """TO DEAL OUT, to do to someone, good or bad, and so to REPAY &mdash; and, with a child, to WEAN, and with a plant, to RIPEN: the root covers bringing a thing to its end. Isaac &lsquo;grew, and was weaned&rsquo; (<a href="genesis-21.html#v21-8">Genesis 21:8</a>); Hannah kept Samuel &lsquo;until she weaned him&rsquo; (<a href="1-samuel-1.html#v1-23">1 Samuel 1:23</a>); Aaron&rsquo;s rod &lsquo;ripened almonds&rsquo; (<a href="numbers-17.html#v17-23">Numbers 17:23</a>). Joseph&rsquo;s brothers fear he will pay them back &lsquo;for all the evil that we dealt him&rsquo; (<a href="genesis-50.html#v50-15">Genesis 50:15</a>, all now on these pages). ⭐ Saul, weeping in the cave at En-gedi: &lsquo;You are more righteous than I; for you have repaid me with good, and I have repaid you with evil&rsquo; (<a href="1-samuel-24.html#v24-17">1 Samuel 24:17</a>, now on these pages).""",
+     ("1 Samuel", 24, 17)),
+])
+DICTIONARY_ES["yael"] = ("yael (pl. yeelím)",
+    """LA CABRA MONTÉS de los riscos, el íbice, en su casa en paredes de roca demasiado empinadas para cualquier otro animal. A Job se le pregunta: «¿Sabes el tiempo en que paren las cabras monteses de las peñas?» (Job 39:1, todavía no en estas páginas). La palabra es también un nombre de mujer: Jael, mujer de Héber el ceneo, que mata a Sísara (<a href="judges-4.es.html#v17">Jueces 4:17</a>, 21; <a href="judges-5.es.html#v24">5:24</a>, todos ya en estas páginas) (<a href="enciclopedia.html#jael">Jael</a>). ⭐ En <a href="1-samuel-24.es.html#v24-2">1 Samuel 24:2</a> (ya en estas páginas) Saúl busca a David «por la faz de las rocas de las cabras monteses», <em>tsuréi ha-yeelím</em>, cerca de En-gadi; la NVI imprime la frase como nombre, «los Peñascos de las Cabras», y el griego la escribe como uno, Sadaiem.""")
+DICTIONARY_ES["ballat"] = ("balát",
+    """CALLADAMENTE, sin ruido, sin ser notado &mdash;un adverbio para un acercamiento que nadie oye. <span data-heb-read="בלט|בלאט">Está en cuatro versículos de la Biblia hebrea</span>: Jael «se acercó a él sin hacer ruido» con la estaca (<a href="judges-4.es.html#v21">Jueces 4:21</a>); Rut «vino calladamente, y descubrió sus pies» (<a href="ruth-3.es.html#v3-7">Rut 3:7</a>); Saúl dice a sus siervos: «Hablen a David en secreto» (<a href="1-samuel-18.es.html#v18-22">1 Samuel 18:22</a>, todos ya en estas páginas); y ⭐ en la cueva David «cortó el borde del manto que era de Saúl, calladamente» (<a href="1-samuel-24.es.html#v24-4">1 Samuel 24:4</a>, ya en estas páginas). ⚠ Las consonantes aparecen también dentro de los nombres Beltsasar y Sanbalat, así que una búsqueda hay que leerla, no contarla.""")
+DICTIONARY_ES["shasa"] = ("shasá / shissá",
+    """PARTIR, despedazar. En la forma simple es la pezuña hendida: el cerdo «tiene la pezuña partida, hendida por completo» (<a href="leviticus-11.es.html#v11-7">Levítico 11:7</a>). En la forma intensiva es violento: el sacerdote rasga el ave ofrecida «por sus alas» sin dividirla del todo (Levítico 1:17, ya en estas páginas, todavía no en español), y Sansón despedaza al león «como quien despedaza un cabrito» (<a href="judges-14.es.html#v14-6">Jueces 14:6</a>, ya en estas páginas). ⭐ En <a href="1-samuel-24.es.html#v24-7">1 Samuel 24:7</a> (ya en estas páginas) se hace con palabras: «Y David despedazó a sus hombres con estas palabras, y no les dejó levantarse contra Saúl». El estante lo suaviza en quebrantó, reprimió, contuvo, dispersó; el latín tiene <em>confregit</em>, quebrantó.""")
+DICTIONARY_ES["tsadah"] = ("tsadá",
+    """ACECHAR, ir tras una persona con intención. La ley del asilo gira sobre él: «Mas el que no acechó, sino que Dios lo dejó caer en su mano, yo te señalaré un lugar al cual pueda huir» (<a href="exodus-21.es.html#v21-13">Éxodo 21:13</a>, ya en estas páginas). ⭐ David lo usa de Saúl: «y tú acechas mi vida para quitármela» (<a href="1-samuel-24.es.html#v24-11">1 Samuel 24:11</a>, ya en estas páginas), de modo que el fugitivo es el que no ha acechado, y el rey el que sí. Lamentaciones 4:18 (todavía no en estas páginas) tiene una forma emparentada, «cazaron nuestros pasos». ⚠ Las mismas consonantes escriben <em>tsedá</em>, provisiones para el camino (<a href="genesis-42.es.html#v42-25">Génesis 42:25</a>, ya en estas páginas), otra palabra.""")
+DICTIONARY_ES["parosh"] = ("parósh",
+    """LA PULGA. <span data-heb="פרעש">La palabra está en ocho versículos de la Biblia hebrea</span>, y solo dos se refieren al insecto, ambos en boca de David ante Saúl: ⭐ «Tras un perro muerto, tras una sola pulga» (<a href="1-samuel-24.es.html#v24-14">1 Samuel 24:14</a>, ya en estas páginas), y «el rey de Israel ha salido a buscar una sola pulga» (26:20, todavía no en estas páginas). Los otros seis son la familia de Paros en las listas de Esdras y Nehemías (Esdras 2:3, todavía no en estas páginas).""")
+DICTIONARY_ES["dayyan"] = ("dayyán",
+    """UN JUEZ, el que da un veredicto &mdash;de <em>din</em>, juzgar, la raíz del «Dios me ha juzgado … por eso llamó su nombre Dan» de Raquel (Génesis 30:6, ya en estas páginas, todavía no en español) y de «Dan juzgará a su pueblo» (<a href="genesis-49.es.html#v49-16">Génesis 49:16</a>, ya en estas páginas). ⭐ David apela a Jehová como tal: «Sea, pues, Jehová juez, y juzgue entre tú y yo; y vea, y defienda mi causa, y me juzgue librándome de tu mano» (<a href="1-samuel-24.es.html#v24-15">1 Samuel 24:15</a>, ya en estas páginas). El Salmo 68:6 llama a Dios «juez de viudas» (todavía no en estas páginas). No es <em>shofet</em>, el título de los jueces de Israel (<a href="diccionario.html#shofet">shofet</a>), aunque los dos verbos están lado a lado en la frase de David.""")
+DICTIONARY_ES["gamal"] = ("gamal",
+    """HACER a alguien, bien o mal, y así PAGAR, RETRIBUIR &mdash;y, con un niño, DESTETAR, y con una planta, MADURAR: la raíz abarca llevar una cosa a su término. Isaac «creció, y fue destetado» (Génesis 21:8, ya en estas páginas, todavía no en español); Ana crió a Samuel «hasta destetarlo» (<a href="1-samuel-1.es.html#v1-23">1 Samuel 1:23</a>); la vara de Aarón había «madurado almendras» (<a href="numbers-17.es.html#v17-23">Números 17:23</a>). Los hermanos de José temen que les devuelva «todo el mal que le hicimos» (<a href="genesis-50.es.html#v50-15">Génesis 50:15</a>, todos ya en estas páginas). ⭐ Saúl, llorando en la cueva de En-gadi: «Tú eres más justo que yo; porque tú me has pagado con el bien, y yo te he pagado con el mal» (<a href="1-samuel-24.es.html#v24-17">1 Samuel 24:17</a>, ya en estas páginas).""")
+
+# encyclopedia: refs + additions
+_REF1S24 = {"en-gedi": [("1 Samuel", 24, 1)], "jael": [], "david": [("1 Samuel", 24, 4)], "saul-king": [("1 Samuel", 24, 3)]}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF1S24:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF1S24[_k] if r not in _e["refs"]]
+    if _k == "en-gedi":
+        _e["desc"] = _swap1s24(_e["desc"], "and cut the corner from his robe in the cave (1 Samuel 24)",
+            'and cut the corner from his robe in the cave (<a href="1-samuel-24.html#v24-1">1 Samuel 24</a>, now on these pages)')
+        _e["desc"] += ' ⭐ <a href="1-samuel-24.html#v24-1">1 Samuel 24</a> (now on these pages): Saul comes looking for David &lsquo;on the face of the rocks of the wild goats&rsquo;, goes into a cave by the sheepfolds, and David, sitting in its innermost parts, cuts off the corner of his robe and spares him.'
+    if _k == "jael":
+        _e["desc"] += ' ⭐ Her name is the word for the wild goat of the cliffs (<a href="dictionary.html#yael">ya&rsquo;el</a>), and its plural is in Saul&rsquo;s search &lsquo;on the face of the rocks of the wild goats&rsquo; (<a href="1-samuel-24.html#v24-2">1 Samuel 24:2</a>, now on these pages); the word for her coming &lsquo;softly&rsquo; to Sisera, <em>ballat</em>, is the one used of David cutting Saul&rsquo;s robe two verses later (<a href="dictionary.html#ballat">ballat</a>).'
+    if _k == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-24.html#v24-1">1 Samuel 24</a> (now on these pages): in a cave near En-gedi he cuts off the corner of Saul&rsquo;s robe and will not let his men touch &lsquo;Jehovah&rsquo;s anointed&rsquo;; he shows Saul the piece of cloth from outside the cave, Saul weeps and says &lsquo;You are more righteous than I&rsquo; and &lsquo;you will surely be king&rsquo;, and David swears not to cut off Saul&rsquo;s line.'
+    if _k == "saul-king":
+        _e["desc"] += ' ⭐ In <a href="1-samuel-24.html#v24-1">1 Samuel 24</a> (now on these pages) he comes with three thousand chosen men, goes alone into the cave where David is hiding, and is spared; when David shows him the corner of his robe he weeps, &lsquo;Is this your voice, my son David?&rsquo;, says &lsquo;I know that you will surely be king&rsquo;, and asks David to swear not to cut off his seed.'
+ENCYCLOPEDIA_ES["en-gedi"] = (ENCYCLOPEDIA_ES["en-gedi"][0], _swap1s24(ENCYCLOPEDIA_ES["en-gedi"][1],
+    "y le cortó a Saúl el borde del manto en la cueva (1 Samuel 24)",
+    'y le cortó a Saúl el borde del manto en la cueva (<a href="1-samuel-24.es.html#v24-1">1 Samuel 24</a>, ya en estas páginas)')
+    + ' ⭐ <a href="1-samuel-24.es.html#v24-1">1 Samuel 24</a> (ya en estas páginas): Saúl viene a buscar a David «por la faz de las rocas de las cabras monteses», entra en una cueva junto a los apriscos, y David, sentado en lo más hondo de ella, le corta el borde del manto y lo perdona.')
+ENCYCLOPEDIA_ES["jael"] = (ENCYCLOPEDIA_ES["jael"][0], ENCYCLOPEDIA_ES["jael"][1]
+    + ' ⭐ Su nombre es la palabra para la cabra montés de los riscos (<a href="diccionario.html#yael">yael</a>), y su plural está en la búsqueda de Saúl «por la faz de las rocas de las cabras monteses» (<a href="1-samuel-24.es.html#v24-2">1 Samuel 24:2</a>, ya en estas páginas); la palabra de su acercarse «sin hacer ruido» a Sísara, <em>balát</em>, es la que se usa de David al cortar el manto de Saúl dos versículos después (<a href="diccionario.html#ballat">balát</a>).')
+ENCYCLOPEDIA_ES["david"] = (ENCYCLOPEDIA_ES["david"][0], ENCYCLOPEDIA_ES["david"][1]
+    + ' ⭐ <a href="1-samuel-24.es.html#v24-1">1 Samuel 24</a> (ya en estas páginas): en una cueva cerca de En-gadi corta el borde del manto de Saúl y no deja que sus hombres toquen «al ungido de Jehová»; desde fuera de la cueva le muestra a Saúl el pedazo de tela, Saúl llora y dice «Tú eres más justo que yo» y «de cierto serás rey», y David jura no cortar el linaje de Saúl.')
+ENCYCLOPEDIA_ES["saul-king"] = (ENCYCLOPEDIA_ES["saul-king"][0], ENCYCLOPEDIA_ES["saul-king"][1]
+    + ' ⭐ En <a href="1-samuel-24.es.html#v24-1">1 Samuel 24</a> (ya en estas páginas) viene con tres mil hombres escogidos, entra solo en la cueva donde David se esconde, y es perdonado; cuando David le muestra el borde de su manto llora, «¿Es esta tu voz, hijo mío David?», dice «sé que de cierto serás rey», y pide a David que jure no cortar su descendencia.')
+
+CHRON_CHAPTERS["1sam24"] = dict(era="monarchy",
+    when="“You are more righteous than I”: back from the Philistine raid, Saul takes three thousand chosen men to the rocks of the wild goats near En-gedi and goes alone into a cave by the sheepfolds, where David and his men are sitting in the innermost parts. David cuts off the corner of Saul’s robe, his heart strikes him, and he will not let his men rise against Jehovah’s anointed. Outside the cave he calls after Saul, holds up the corner of the robe as proof that he has not lifted his hand, and leaves judgment to Jehovah. Saul weeps, says that David will surely be king, and makes him swear not to cut off his seed; Saul goes home and David goes up to the stronghold.",
+    clock="Undated: in Saul’s reign, straight after the Philistine raid that ends chapter 23, while David is in the strongholds of En-gedi.")
+
+CHAPTER_ART["1sam24"] = [
+    dict(
+        file="poorter-saul-david-cave-en-gedi.jpg",
+        title="Saul and David in the Cave of En-Gedi", title_es="Saúl y David en la cueva de En-gadi",
+        artist="Willem de Poorter",
+        year="between 1625 and 1650",
+        location="National Museum in Warsaw (M.Ob.1888)", location_es="Museo Nacional de Varsovia (M.Ob.1888)",
+        alt="A dark cave lit from the left. A grey-bearded king in a turban with a small crown and a long dark red robe stands in the light, one hand held out. Before him a young man in steel armour and a pink cloak kneels on one knee, one hand at the hem of the king's robe, his helmet and round shield on the ground beside him. A soldier with a spear stands in the shadow behind. Through the cave mouth at the left, soldiers with spears wait outside against a pale sky.",
+        note="1 Samuel 24:4–17. The painter brings the two halves of the chapter into one place: David kneels before Saul inside the cave, his hand at the edge of the king’s robe, while the Hebrew has him cut the corner unseen and speak to Saul only after the king has gone out and David has called after him (verses 4 and 8). Soldiers wait outside the mouth of the cave, and David’s helmet and shield lie on the ground beside him.",
+        note_es="1 Samuel 24:4–17. El pintor reúne las dos mitades del capítulo en un solo lugar: David se arrodilla ante Saúl dentro de la cueva, con la mano en el borde del manto del rey, mientras el hebreo lo hace cortar el borde sin ser visto y hablar a Saúl solo después de que el rey ha salido y David lo ha llamado (versículos 4 y 8). Unos soldados esperan fuera, a la boca de la cueva, y el yelmo y el escudo de David están en el suelo junto a él.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Willem_de_Poorter_-_Saul_and_David_in_the_cave_of_En-Gedi_-_M.Ob.1888_-_National_Museum_in_Warsaw.jpg",
+    ),
+]
