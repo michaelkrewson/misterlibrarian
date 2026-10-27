@@ -51212,3 +51212,172 @@ CHAPTER_ART["1sam26"] = [
         source_url="https://commons.wikimedia.org/wiki/File:David_spaart_het_leven_van_Saul_David_en_Saul_(serietitel),_RP-P-1904-3544.jpg",
     ),
 ]
+
+
+# --- 1 Samuel 27 ---
+def _swap1s27(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D1S27 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D1S27[_d[0]] = _i
+
+def _dict1s27_en(slug, old=None, new=None, add=None):
+    _i = _D1S27[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap1s27(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict1s27_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap1s27(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale claims flipped
+_dict1s27_en("saphah", old="&lsquo;Now I shall be swept away one day by the hand of Saul&rsquo; (27:1, not yet on these pages).",
+    new='&lsquo;Now I shall be swept away one day by the hand of Saul&rsquo; (<a href="1-samuel-27.html#v27-1">27:1</a>, now on these pages), and crosses over to the Philistines.')
+_dict1s27_es("saphah", old="«Ahora seré barrido un día por la mano de Saúl» (27:1, todavía no en estas páginas).",
+    new='«Ahora seré barrido un día por la mano de Saúl» (<a href="1-samuel-27.es.html#v27-1">27:1</a>, ya en estas páginas), y se pasa a los filisteos.')
+_dict1s27_en("noash", old="(1 Samuel 27:1, Saul giving up the chase)",
+    new='(<a href="1-samuel-27.html#v27-1">1 Samuel 27:1</a>, now on these pages, where David counts on Saul giving up the chase)')
+
+# 1 Samuel 27 added to existing dictionary entries
+_dict1s27_es("noash", add=' ⭐ <span data-heb="נואש">La palabra está en cuatro versículos de la Biblia hebrea</span>. En <a href="1-samuel-27.es.html#v27-1">1 Samuel 27:1</a> (ya en estas páginas) se dice de un hombre: David cuenta con que Saúl «desesperará de mí, de buscarme más», y en el versículo 4 Saúl ya no lo busca.')
+_dict1s27_en("baash", add=' ⭐ Achish says it of David, with the verb doubled: &lsquo;He has surely made himself a stench among his people, in Israel&rsquo;, <em>hav&rsquo;esh hiv&rsquo;ish</em> (<a href="1-samuel-27.html#v27-12">1 Samuel 27:12</a>, now on these pages): the Philistine king believes the word of 13:4 has been turned round on David.')
+_dict1s27_es("baash", add=' ⭐ Aquis lo dice de David, con el verbo doblado: «De cierto se ha hecho un hedor entre su pueblo, en Israel», <em>hav’esh hiv’ish</em> (<a href="1-samuel-27.es.html#v27-12">1 Samuel 27:12</a>, ya en estas páginas): el rey filisteo cree que la palabra de 13:4 se ha vuelto contra David.')
+_dict1s27_en("mishpat", add=' ⭐ At Ziklag it is a man&rsquo;s settled way of doing things: &lsquo;and such was his practice all the days that he stayed in the country of the Philistines&rsquo;, <em>ve-kho mishpato</em>, of David&rsquo;s raids (<a href="1-samuel-27.html#v27-11">1 Samuel 27:11</a>, now on these pages).')
+_dict1s27_es("mishpat", add=' ⭐ En Siclag es la manera fija de obrar de un hombre: «y tal era su costumbre todos los días que se quedó en el país de los filisteos», <em>ve-jó mishpató</em>, de las incursiones de David (<a href="1-samuel-27.es.html#v27-11">1 Samuel 27:11</a>, ya en estas páginas).')
+_dict1s27_en("aman", add=' ⭐ A Philistine king is given the verb of Abram and of Israel at the sea: &lsquo;And Achish believed David&rsquo;, <em>va-ya&rsquo;amen Akhish be-David</em> (<a href="1-samuel-27.html#v27-12">1 Samuel 27:12</a>, now on these pages), trusting the man who has just lied to him.')
+_dict1s27_es("aman", add=' ⭐ A un rey filisteo se le da el verbo de Abram y de Israel junto al mar: «Y Aquis creyó en David», <em>va-yaamén Ajish be-David</em> (<a href="1-samuel-27.es.html#v27-12">1 Samuel 27:12</a>, ya en estas páginas), confiando en el hombre que acaba de mentirle.')
+_dict1s27_en("olam", add=' ⭐ <span data-heb="עבד עולם">&lsquo;A servant forever&rsquo;, <em>eved olam</em>, stands in three verses of the Hebrew Bible</span>: the bored-ear slave of <a href="deuteronomy-15.html#v15-17">Deuteronomy 15:17</a>; Achish&rsquo;s hope of David, &lsquo;and he will be my servant forever&rsquo; (<a href="1-samuel-27.html#v27-12">1 Samuel 27:12</a>, both now on these pages); and the great sea-beast of Job 40:28 (not yet on these pages). The same chapter has <em>me-olam</em>, &lsquo;from of old&rsquo;, of the peoples David raids (27:8).')
+_dict1s27_es("olam", add=' ⭐ <span data-heb="עבד עולם">«Siervo para siempre», <em>éved olam</em>, está en tres versículos de la Biblia hebrea</span>: el esclavo de la oreja horadada de <a href="deuteronomy-15.es.html#v15-17">Deuteronomio 15:17</a>; la esperanza de Aquis sobre David, «y será mi siervo para siempre» (<a href="1-samuel-27.es.html#v27-12">1 Samuel 27:12</a>, ambos ya en estas páginas); y la gran bestia del mar de Job 40:28 (todavía no en estas páginas). El mismo capítulo tiene <em>me-olam</em>, «desde antiguo», de los pueblos que David saquea (27:8).')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("pashat", "pashat", "פָּשַׁט", "pashat",
+     """TO RAID, to make a sudden incursion and spread out over a land; in other forms the same root means to strip off, as Saul&rsquo;s armour is stripped from his body on Gilboa (31:9, not yet on these pages). The messenger at the mountain in the wilderness of Maon: &lsquo;the Philistines have made a raid on the land!&rsquo; (<a href="1-samuel-23.html#v23-27">1 Samuel 23:27</a>). ⭐ In Gath David and his men &lsquo;went up and raided the Geshurite and the Gizrite and the Amalekite&rsquo;, and Achish asks each time &lsquo;Where did you raid today?&rsquo; (<a href="1-samuel-27.html#v27-8">1 Samuel 27:8</a>, 10, both now on these pages). It is the verb of the Chaldeans who raid Job&rsquo;s camels (Job 1:17) and of the Amalekites who raid Ziklag while David is away (30:1, 14, none of these yet on these pages).""",
+     ("1 Samuel", 27, 8)),
+    ("malat", "malat (nimlat)", "מָלַט", "malat",
+     """TO ESCAPE, to slip away; in the causative, to save someone, to let him get away. In 1 Samuel it is the verb of David&rsquo;s flight from Saul: &lsquo;And David fled and escaped that night&rsquo; after the spear struck the wall (<a href="1-samuel-19.html#v19-10">1 Samuel 19:10</a>); Michal&rsquo;s warning, &lsquo;If you do not save your life tonight&rsquo; (19:11), and the window (19:12); the cave of Adullam (<a href="1-samuel-22.html#v22-1">22:1</a>); Keilah (<a href="1-samuel-23.html#v23-13">23:13</a>, all now on these pages). ⭐ At the start of chapter 27 David says it three times in one sentence, the verb doubled and then repeated: &lsquo;There is nothing good for me but that I should surely escape to the land of the Philistines … and I shall escape out of his hand&rsquo; (<a href="1-samuel-27.html#v27-1">1 Samuel 27:1</a>, now on these pages). It is also the angels&rsquo; word to Lot at Sodom, where it stands beside <em>safah</em> as it does in David&rsquo;s sentence: &lsquo;Escape for your life! … Escape to the hills, or you will be swept away&rsquo; (<a href="genesis-19.html#v19-17">Genesis 19:17</a>, now on these pages).""",
+     ("1 Samuel", 27, 1)),
+    ("yamim", "yamim", "יָמִים", "yamim",
+     """DAYS, and in a few places the round of days that makes a year. Elkanah went up to Shiloh &lsquo;year by year&rsquo;, <em>mi-yamim yamimah</em>, to offer &lsquo;the yearly sacrifice&rsquo;, <em>zevach ha-yamim</em> (<a href="1-samuel-1.html#v3">1 Samuel 1:3</a>, 21; <a href="1-samuel-2.html#v2-19">2:19</a>). ⭐ David&rsquo;s stay among the Philistines is given as <em>yamim ve-arba&rsquo;ah chodashim</em>, &lsquo;days and four months&rsquo;, which this translation renders &lsquo;a year and four months&rsquo; (<a href="1-samuel-27.html#v27-7">1 Samuel 27:7</a>, all now on these pages); the Greek has only &lsquo;four months&rsquo;, as does the Douay, and the Geneva has &lsquo;four months and certain days&rsquo;.""",
+     ("1 Samuel", 27, 7)),
+])
+DICTIONARY_ES["pashat"] = ("pashat",
+    'HACER UNA INCURSIÓN, caer de golpe sobre una tierra y desparramarse por ella; en otras formas la misma raíz significa despojar, como despojan a Saúl de su armadura en Gilboa (31:9, todavía no en estas páginas). El mensajero junto al monte en el desierto de Maón: «¡los filisteos han hecho una incursión en la tierra!» (<a href="1-samuel-23.es.html#v23-27">1 Samuel 23:27</a>). ⭐ En Gat David y sus hombres «subieron e hicieron incursiones contra el guesureo y el guizrita y el amalecita», y Aquis pregunta cada vez «¿Dónde hicieron incursión hoy?» (<a href="1-samuel-27.es.html#v27-8">1 Samuel 27:8</a>, 10, ambos ya en estas páginas). Es el verbo de los caldeos que caen sobre los camellos de Job (Job 1:17) y de los amalecitas que caen sobre Siclag mientras David está fuera (30:1, 14, ninguno de ellos todavía en estas páginas).')
+DICTIONARY_ES["malat"] = ("malat (nimlat)",
+    'ESCAPAR, escabullirse; en la forma causativa, salvar a alguien, dejarlo escapar. En 1 Samuel es el verbo de la huida de David delante de Saúl: «Y David huyó y escapó aquella noche» después de que la lanza se clavó en la pared (<a href="1-samuel-19.es.html#v19-10">1 Samuel 19:10</a>); el aviso de Mical, «Si no salvas tu vida esta noche» (19:11), y la ventana (19:12); la cueva de Adulam (<a href="1-samuel-22.es.html#v22-1">22:1</a>); Keila (<a href="1-samuel-23.es.html#v23-13">23:13</a>, todos ya en estas páginas). ⭐ Al comienzo del capítulo 27 David lo dice tres veces en una sola frase, el verbo doblado y luego repetido: «No hay nada bueno para mí sino que de cierto escape a la tierra de los filisteos … y escaparé de su mano» (<a href="1-samuel-27.es.html#v27-1">1 Samuel 27:1</a>, ya en estas páginas). Es también la palabra de los ángeles a Lot en Sodoma, donde está junto a <em>safá</em> como en la frase de David: «¡Escapa por tu vida! … Escapa al monte, no sea que seas barrido» (Génesis 19:17, ya en estas páginas, todavía no en español).')
+DICTIONARY_ES["yamim"] = ("yamim",
+    'DÍAS, y en algunos lugares la vuelta de días que hace un año. Elcaná subía a Silo «año tras año», <em>mi-yamim yamimá</em>, a ofrecer «el sacrificio anual», <em>zévaj ha-yamim</em> (<a href="1-samuel-1.es.html#v3">1 Samuel 1:3</a>, 21; <a href="1-samuel-2.es.html#v2-19">2:19</a>). ⭐ La estancia de David entre los filisteos se da como <em>yamim ve-arbaá jodashim</em>, «días y cuatro meses», que esta traducción vierte «un año y cuatro meses» (<a href="1-samuel-27.es.html#v27-7">1 Samuel 27:7</a>, todos ya en estas páginas); el griego tiene solo «cuatro meses», y la Reina-Valera de 1909 «cuatro meses y algunos días».')
+
+# encyclopedia: refs + additions to existing entries
+_REF1S27 = {"achish": [("1 Samuel", 27, 2)], "ziklag": [("1 Samuel", 27, 6)], "gath": [("1 Samuel", 27, 2)],
+            "geshurites": [("1 Samuel", 27, 8)], "amalek": [("1 Samuel", 27, 8)], "shur": [("1 Samuel", 27, 8)],
+            "kenites": [("1 Samuel", 27, 10)], "negev": [("1 Samuel", 27, 10)], "ahinoam": [("1 Samuel", 27, 3)],
+            "abigail": [("1 Samuel", 27, 3)], "david": [("1 Samuel", 27, 1)]}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF1S27:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF1S27[_k] if r not in _e["refs"]]
+    if _k == "achish":
+        _e["desc"] = _swap1s27(_e["desc"], "and gives him Ziklag (27:2&ndash;6), trusts him,",
+            'and gives him Ziklag (<a href="1-samuel-27.html#v27-2">27:2&ndash;6</a>, now on these pages), believes his reports of raids on Judah, &lsquo;He has surely made himself a stench among his people&rsquo; (27:12), trusts him,')
+    if _k == "ziklag":
+        _e["desc"] += ' ⭐ <a href="1-samuel-27.html#v27-6">1 Samuel 27:6</a> (now on these pages): &lsquo;And Achish gave him Ziklag on that day; therefore Ziklag has belonged to the kings of Judah to this day&rsquo;, a sentence written after the kingdom had divided. From there David raids the Geshurites, the Gizrites and the Amalekites for a year and four months.'
+    if _k == "carmel-judah":
+        _e["desc"] = _swap1s27(_e["desc"], "&lsquo;Abigail the Carmelitess&rsquo; (27:3, not yet on these pages).",
+            '&lsquo;Abigail the wife of Nabal, the Carmelitess&rsquo; (<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages).')
+    if _k == "nabal":
+        _e["desc"] = _swap1s27(_e["desc"], "in four later verses (27:3; 30:5; 2 Samuel 2:2; 3:3, none yet on these pages).",
+            'in four later verses (<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages; 30:5; 2 Samuel 2:2; 3:3, not yet on these pages).')
+    if _k == "abigail":
+        _e["desc"] = _swap1s27(_e["desc"], "She goes with David to Gath and is taken captive at Ziklag (27:3; 30:5), and bears him a son called Chileab in 2 Samuel 3:3 and Daniel in 1 Chronicles 3:1 (none of these yet on these pages).",
+            'She goes with David to Gath (<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages) and is taken captive at Ziklag (30:5), and bears him a son called Chileab in 2 Samuel 3:3 and Daniel in 1 Chronicles 3:1 (none of these yet on these pages).')
+    if _k == "ahinoam":
+        _e["desc"] = _swap1s27(_e["desc"], "and goes with him to Gath, is taken captive at Ziklag, and goes up with him to Hebron (27:3; 30:5; 2 Samuel 2:2, none of these yet on these pages).",
+            'and goes with him to Gath (<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages), is taken captive at Ziklag, and goes up with him to Hebron (30:5; 2 Samuel 2:2, neither yet on these pages).')
+    if _k == "jezreel-judah":
+        _e["desc"] = _swap1s27(_e["desc"], "who is called &lsquo;the Jezreelitess&rsquo; afterwards (27:3, not yet on these pages).",
+            'who is called &lsquo;the Jezreelitess&rsquo; afterwards (<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages).')
+    if _k == "geshurites":
+        _e["desc"] += ' ⭐ A second Geshurite people lived in the south, beside the Philistines: <a href="joshua-13.html#v13-2">Joshua 13:2</a> names &lsquo;all the regions of the Philistines, and all the Geshurite&rsquo; among the land left unconquered, and from Ziklag David &lsquo;raided the Geshurite and the Gizrite and the Amalekite&rsquo;, peoples living &lsquo;as you come to Shur&rsquo; (<a href="1-samuel-27.html#v27-8">1 Samuel 27:8</a>, now on these pages).'
+    if _k == "amalek":
+        _e["desc"] += ' ⭐ In <a href="1-samuel-27.html#v27-8">1 Samuel 27:8&ndash;9</a> (now on these pages) David, living at Ziklag, raids the Amalekite &lsquo;as you come to Shur&rsquo;, the words of Saul&rsquo;s war, and takes the flock and the herd, the donkeys and the camels.'
+    if _k == "shur":
+        _e["desc"] += ' ⭐ <a href="1-samuel-27.html#v27-8">1 Samuel 27:8</a> (now on these pages): the peoples David raids from Ziklag live &lsquo;as you come to Shur, and as far as the land of Egypt&rsquo;.'
+    if _k == "kenites":
+        _e["desc"] += ' ⭐ David names &lsquo;the Negev of the Kenite&rsquo; as one of the places he has raided, to deceive Achish (<a href="1-samuel-27.html#v27-10">1 Samuel 27:10</a>, now on these pages); later he sends them a share of the spoil of Amalek (30:29, not yet on these pages).'
+    if _k == "negev":
+        _e["desc"] += ' ⭐ <a href="1-samuel-27.html#v27-10">1 Samuel 27:10</a> (now on these pages) divides it by its peoples: &lsquo;the Negev of Judah&rsquo;, &lsquo;the Negev of the Jerahmeelite&rsquo; and &lsquo;the Negev of the Kenite&rsquo;, the places David tells Achish he has raided.'
+    if _k == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-27.html#v27-1">1 Samuel 27</a> (now on these pages): fearing he will be swept away by Saul&rsquo;s hand, he crosses over with six hundred men and their households to Achish of Gath, receives Ziklag, and for a year and four months raids the peoples of the south, leaving no one alive to tell, while he tells Achish he has raided Judah.'
+ENCYCLOPEDIA_ES["achish"] = (ENCYCLOPEDIA_ES["achish"][0], _swap1s27(ENCYCLOPEDIA_ES["achish"][1],
+    "y le da Siclag (27:2&ndash;6), confía en él,",
+    'y le da Siclag (<a href="1-samuel-27.es.html#v27-2">27:2&ndash;6</a>, ya en estas páginas), cree sus informes de incursiones contra Judá, «De cierto se ha hecho un hedor entre su pueblo» (27:12), confía en él,'))
+ENCYCLOPEDIA_ES["ziklag"] = (ENCYCLOPEDIA_ES["ziklag"][0], ENCYCLOPEDIA_ES["ziklag"][1]
+    + ' ⭐ <a href="1-samuel-27.es.html#v27-6">1 Samuel 27:6</a> (ya en estas páginas): «Y Aquis le dio Siclag aquel día; por eso Siclag ha pertenecido a los reyes de Judá hasta el día de hoy», una frase escrita después de dividido el reino. Desde allí David hace incursiones contra los guesureos, los guizritas y los amalecitas durante un año y cuatro meses.')
+ENCYCLOPEDIA_ES["carmel-judah"] = (ENCYCLOPEDIA_ES["carmel-judah"][0], _swap1s27(ENCYCLOPEDIA_ES["carmel-judah"][1],
+    "«Abigail la de Carmel» (27:3, todavía no en estas páginas).",
+    '«Abigail la mujer de Nabal, la carmelita» (<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas).'))
+ENCYCLOPEDIA_ES["nabal"] = (ENCYCLOPEDIA_ES["nabal"][0], _swap1s27(ENCYCLOPEDIA_ES["nabal"][1],
+    "en cuatro versículos posteriores (27:3; 30:5; 2 Samuel 2:2; 3:3, ninguno todavía en estas páginas).",
+    'en cuatro versículos posteriores (<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas; 30:5; 2 Samuel 2:2; 3:3, todavía no en estas páginas).'))
+ENCYCLOPEDIA_ES["abigail"] = (ENCYCLOPEDIA_ES["abigail"][0], _swap1s27(ENCYCLOPEDIA_ES["abigail"][1],
+    "Va con David a Gat y es llevada cautiva en Siclag (27:3; 30:5), y le da",
+    'Va con David a Gat (<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas) y es llevada cautiva en Siclag (30:5), y le da'))
+ENCYCLOPEDIA_ES["ahinoam"] = (ENCYCLOPEDIA_ES["ahinoam"][0], _swap1s27(ENCYCLOPEDIA_ES["ahinoam"][1],
+    "y va con él a Gat, es llevada cautiva en Siclag y sube con él a Hebrón (27:3; 30:5; 2 Samuel 2:2, ninguno de ellos todavía en estas páginas).",
+    'y va con él a Gat (<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas), es llevada cautiva en Siclag y sube con él a Hebrón (30:5; 2 Samuel 2:2, ninguno de los dos todavía en estas páginas).'))
+ENCYCLOPEDIA_ES["jezreel-judah"] = (ENCYCLOPEDIA_ES["jezreel-judah"][0], _swap1s27(ENCYCLOPEDIA_ES["jezreel-judah"][1],
+    "a quien después se llama «la jezreelita» (27:3, todavía no en estas páginas).",
+    'a quien después se llama «la jezreelita» (<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas).'))
+ENCYCLOPEDIA_ES["geshurites"] = (ENCYCLOPEDIA_ES["geshurites"][0], ENCYCLOPEDIA_ES["geshurites"][1]
+    + ' ⭐ Otro pueblo guesureo vivía en el sur, junto a los filisteos: <a href="joshua-13.es.html#v13-2">Josué 13:2</a> nombra «todas las regiones de los filisteos, y todo el guesureo» entre la tierra que quedaba por conquistar, y desde Siclag David «hizo incursiones contra el guesureo y el guizrita y el amalecita», pueblos que vivían «según se va a Shur» (<a href="1-samuel-27.es.html#v27-8">1 Samuel 27:8</a>, ya en estas páginas).')
+ENCYCLOPEDIA_ES["amalek"] = (ENCYCLOPEDIA_ES["amalek"][0], ENCYCLOPEDIA_ES["amalek"][1]
+    + ' ⭐ En <a href="1-samuel-27.es.html#v27-8">1 Samuel 27:8&ndash;9</a> (ya en estas páginas) David, que vive en Siclag, hace incursiones contra el amalecita «según se va a Shur», las palabras de la guerra de Saúl, y se lleva las ovejas y las vacas, los asnos y los camellos.')
+ENCYCLOPEDIA_ES["shur"] = (ENCYCLOPEDIA_ES["shur"][0], ENCYCLOPEDIA_ES["shur"][1]
+    + ' ⭐ <a href="1-samuel-27.es.html#v27-8">1 Samuel 27:8</a> (ya en estas páginas): los pueblos que David saquea desde Siclag viven «según se va a Shur, y hasta la tierra de Egipto».')
+ENCYCLOPEDIA_ES["kenites"] = (ENCYCLOPEDIA_ES["kenites"][0], ENCYCLOPEDIA_ES["kenites"][1]
+    + ' ⭐ David nombra «el Néguev del ceneo» como uno de los lugares que dice haber saqueado, para engañar a Aquis (<a href="1-samuel-27.es.html#v27-10">1 Samuel 27:10</a>, ya en estas páginas); después les manda una parte del botín de Amalec (30:29, todavía no en estas páginas).')
+ENCYCLOPEDIA_ES["negev"] = (ENCYCLOPEDIA_ES["negev"][0], ENCYCLOPEDIA_ES["negev"][1]
+    + ' ⭐ <a href="1-samuel-27.es.html#v27-10">1 Samuel 27:10</a> (ya en estas páginas) lo divide por sus pueblos: «el Néguev de Judá», «el Néguev del jerameelita» y «el Néguev del ceneo», los lugares que David le dice a Aquis que ha saqueado.')
+ENCYCLOPEDIA_ES["david"] = (ENCYCLOPEDIA_ES["david"][0], ENCYCLOPEDIA_ES["david"][1]
+    + ' ⭐ <a href="1-samuel-27.es.html#v27-1">1 Samuel 27</a> (ya en estas páginas): temiendo ser barrido por la mano de Saúl, pasa con seiscientos hombres y sus casas a Aquis de Gat, recibe Siclag, y durante un año y cuatro meses hace incursiones contra los pueblos del sur sin dejar a nadie con vida que lo cuente, mientras le dice a Aquis que ha atacado Judá.')
+
+# new encyclopedia entries
+ENCYCLOPEDIA.extend([
+    dict(slug="jerahmeelites", name="The Jerahmeelites", kind="people", aliases=["Jerahmeelite", "Jerahmeelites"],
+         refs=[("1 Samuel", 27, 10)], videos=[],
+         desc='A clan of the Negev, named for Jerahmeel, whom the genealogies of Chronicles make a great-grandson of Judah (1 Chronicles 2:9, 25&ndash;33, not yet on these pages). <span data-heb="הירחמאלי">&lsquo;The Jerahmeelite&rsquo; stands in two verses of the Hebrew Bible</span>: David&rsquo;s lie to Achish, that he has raided &lsquo;the Negev of the Jerahmeelite&rsquo; (<a href="1-samuel-27.html#v27-10">1 Samuel 27:10</a>, now on these pages), and his gifts from the spoil of Amalek &lsquo;to those in the cities of the Jerahmeelite&rsquo; (30:29, not yet on these pages). The people he claimed to have raided are among those he later sends presents to. The Greek of 27:10 has &lsquo;Jesmega&rsquo;.'),
+    dict(slug="girzites", name="The Girzites (or Gizrites)", kind="people", aliases=["Girzites", "Girzite", "Gizrites", "Gizrite"],
+         refs=[("1 Samuel", 27, 8)], videos=[],
+         desc='One of the three peoples David raided from Ziklag, with the Geshurites and the Amalekites (<a href="1-samuel-27.html#v27-8">1 Samuel 27:8</a>, now on these pages). The written Hebrew has <em>ha-Girzi</em> and the reading tradition <em>ha-Gizri</em> (<em>ketiv</em> and <em>qere</em>), and neither form is found in any other verse of the Hebrew Bible; this translation prints the reading, &lsquo;the Gizrite&rsquo;. The KJV follows the reading (&lsquo;Gezrites&rsquo;), and the ASV, NIV and NWT 1984 the written text (&lsquo;Girzites&rsquo;). The Greek names no third people. Some connect the reading with the town of Gezer; others take the name as that of a people known only from this verse.'),
+])
+ENCYCLOPEDIA_ES["jerahmeelites"] = ("Los jerameelitas",
+    'Un clan del Néguev, que lleva el nombre de Jerameel, a quien las genealogías de Crónicas hacen bisnieto de Judá (1 Crónicas 2:9, 25&ndash;33, todavía no en estas páginas). <span data-heb="הירחמאלי">«El jerameelita» está en dos versículos de la Biblia hebrea</span>: la mentira de David a Aquis, que ha saqueado «el Néguev del jerameelita» (<a href="1-samuel-27.es.html#v27-10">1 Samuel 27:10</a>, ya en estas páginas), y sus regalos del botín de Amalec «a los que estaban en las ciudades del jerameelita» (30:29, todavía no en estas páginas). El pueblo que dijo haber saqueado está entre aquellos a quienes después manda regalos. El griego de 27:10 tiene «Jesmegá».')
+ENCYCLOPEDIA_ES["girzites"] = ("Los guirzitas (o guizritas)",
+    'Uno de los tres pueblos que David saqueó desde Siclag, junto con los guesureos y los amalecitas (<a href="1-samuel-27.es.html#v27-8">1 Samuel 27:8</a>, ya en estas páginas). El hebreo escrito tiene <em>ha-Guirzí</em> y la tradición de lectura <em>ha-Guizrí</em> (<em>ketiv</em> y <em>qeré</em>), y ninguna de las dos formas se halla en otro versículo de la Biblia hebrea; esta traducción imprime la lectura, «el guizrita». La RV60 sigue la lectura («gezritas»), y la Reina-Valera de 1909, la NVI y la TNM el texto escrito («Gerzeos», «guirzitas»). El griego no nombra un tercer pueblo. Algunos relacionan la lectura con la ciudad de Gézer; otros toman el nombre por el de un pueblo conocido solo por este versículo.')
+
+CHRON_CHAPTERS["1sam27"] = dict(era="monarchy",
+    when="“Now I shall be swept away one day by the hand of Saul”: David crosses over with six hundred men and their households to Achish son of Maoch, king of Gath, and Saul stops seeking him. Achish gives him Ziklag, and for a year and four months David raids the Geshurites, the Gizrites and the Amalekites, leaving no one alive to tell, while he tells Achish he has raided the Negev of Judah. Achish believes him.",
+    clock="A year and four months in the country of the Philistines (27:7); after the second sparing of chapter 26.")
+
+CHAPTER_ART["1sam27"] = [
+    dict(
+        file="tissot-david-returns-to-achish.jpg",
+        title="David Returns to Achish", title_es="David vuelve a Aquis",
+        artist="James Tissot",
+        year="c. 1896–1902",
+        location="From the Old Testament series Tissot painted for his illustrated Bible",
+        location_es="De la serie del Antiguo Testamento que Tissot pintó para su Biblia ilustrada",
+        alt="A painting seen from inside a shaded room with stone pillars. In the middle distance a red-haired young man in a fleece kilt and a leather belt strides down a rocky slope toward the room, a spear in his right hand and a bundle slung over his shoulder. Behind him men carry loads on their backs and others hold up spears against a blue sky. In the foreground three bearded men in head-cloths sit at a wooden table with a round loaf, a painted jug and a small bowl, turned to watch him come.",
+        alt_es="Una pintura vista desde el interior de una sala en sombra con pilares de piedra. En el plano medio, un joven pelirrojo con faldellín de vellón y cinturón de cuero baja a grandes pasos por una ladera rocosa hacia la sala, con una lanza en la mano derecha y un fardo echado al hombro. Detrás de él, hombres llevan cargas a la espalda y otros alzan lanzas contra un cielo azul. En primer plano, tres hombres barbados con tocas están sentados a una mesa de madera con un pan redondo, una jarra pintada y un cuenco pequeño, vueltos para verlo llegar.",
+        note="1 Samuel 27:9. Tissot illustrates the end of the verse, “and he would return and come to Achish”: David walks in from a raid with a spear and a bundle, and his men behind him carry the spoil on their backs. The three men at the table are Tissot’s; the chapter shows Achish only asking “Where did you raid today?” and believing the answer.",
+        note_es="1 Samuel 27:9. Tissot ilustra el final del versículo, «y volvía y venía a Aquis»: David llega de una incursión con una lanza y un fardo, y sus hombres detrás de él cargan el botín a la espalda. Los tres hombres a la mesa son de Tissot; el capítulo solo muestra a Aquis preguntando «¿Dónde hicieron incursión hoy?» y creyendo la respuesta.",
+        license="Public domain (artist died 1902)",
+        source_url="https://commons.wikimedia.org/wiki/File:David_returns_to_Achish.jpg",
+    ),
+]
