@@ -51053,3 +51053,162 @@ CHAPTER_ART["1sam25"] = [
         source_url="https://commons.wikimedia.org/wiki/File:Toegeschreven_aan_Hans_Rottenhammer_-_The_Encounter_of_David_and_Abigail_-_281_-_Mauritshuis.jpg",
     ),
 ]
+
+
+# --- 1 Samuel 26 ---
+def _swap1s26(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D1S26 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D1S26[_d[0]] = _i
+
+def _dict1s26_en(slug, old=None, new=None, add=None):
+    _i = _D1S26[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap1s26(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict1s26_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap1s26(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale claims flipped
+_dict1s26_en("chalilah", old="the others being 26:11 and Naboth&rsquo;s answer to Ahab (1 Kings 21:3, neither yet on these pages).",
+    new='the others being <a href="1-samuel-26.html#v26-11">26:11</a>, at the second sparing (now on these pages), and Naboth&rsquo;s answer to Ahab (1 Kings 21:3, not yet on these pages).')
+_dict1s26_es("chalilah", old="los otros dos 26:11 y la respuesta de Nabot a Acab (1 Reyes 21:3, ninguno todavía en estas páginas).",
+    new='los otros dos <a href="1-samuel-26.es.html#v26-11">26:11</a>, en el segundo perdón (ya en estas páginas), y la respuesta de Nabot a Acab (1 Reyes 21:3, todavía no en estas páginas).')
+_dict1s26_en("mashiach", old="26:9, not yet on these pages)",
+    new='<a href="1-samuel-26.html#v26-9">26:9</a>, now on these pages)')
+_dict1s26_es("mashiach", old="26:9, todavía no en estas páginas)",
+    new='<a href="1-samuel-26.es.html#v26-9">26:9</a>, ya en estas páginas)')
+_dict1s26_en("parosh", old="&lsquo;the king of Israel has come out to seek a single flea&rsquo; (26:20, not yet on these pages).",
+    new='&lsquo;the king of Israel has come out to seek a single flea&rsquo; (<a href="1-samuel-26.html#v26-20">26:20</a>, now on these pages), where the Greek has &lsquo;to seek my soul&rsquo; instead.')
+_dict1s26_es("parosh", old="«el rey de Israel ha salido a buscar una sola pulga» (26:20, todavía no en estas páginas).",
+    new='«el rey de Israel ha salido a buscar una sola pulga» (<a href="1-samuel-26.es.html#v26-20">26:20</a>, ya en estas páginas), donde el griego tiene en su lugar «a buscar mi alma».')
+
+# 1 Samuel 26 added to existing dictionary entries
+_dict1s26_en("tardemah", add=' ⭐ <span data-heb="תרדמ">The noun stands in seven verses of the Hebrew Bible</span>. At <a href="1-samuel-26.html#v26-12">1 Samuel 26:12</a> (now on these pages) it is &lsquo;a deep sleep from Jehovah&rsquo;, <em>tardemat YHVH</em>, fallen on Saul&rsquo;s whole camp, so that David and Abishai walk in, take the spear and the jug of water from the king&rsquo;s head, and walk out again: &lsquo;no one who saw, and no one who knew, and no one who woke&rsquo;. The other four are Isaiah 29:10, Job 4:13 and 33:15, and Proverbs 19:15 (none yet on these pages).')
+DICTIONARY_ES["tardemah"] = ("tardemá",
+    'Un SUEÑO PROFUNDO enviado por Dios: el que cayó sobre Abram en el pacto entre los animales partidos (Génesis 15:12), la misma palabra que el sueño que Dios hizo caer sobre el ser humano en el huerto (Génesis 2:21, los dos ya en estas páginas, todavía no en español); el sueño en que Dios hace la obra. ⭐ <span data-heb="תרדמ">El sustantivo está en siete versículos de la Biblia hebrea</span>. En <a href="1-samuel-26.es.html#v26-12">1 Samuel 26:12</a> (ya en estas páginas) es «un sueño profundo de Jehová», <em>tardemat YHVH</em>, caído sobre todo el campamento de Saúl, de modo que David y Abisai entran, toman la lanza y la jarra de agua de la cabecera del rey, y vuelven a salir: «no había quien viera, ni quien supiera, ni quien despertara». Los otros cuatro son Isaías 29:10, Job 4:13 y 33:15, y Proverbios 19:15 (ninguno todavía en estas páginas).')
+_dict1s26_en("maagal", add=' ⭐ At the second sparing Saul sleeps &lsquo;within the ring&rsquo;, <em>ba-ma&rsquo;gal</em>, with the army camped round him and Abner beside him (<a href="1-samuel-26.html#v26-5">1 Samuel 26:5</a>, 7, now on these pages); the ASV has &lsquo;within the place of the wagons&rsquo; there, and the Greek <em>lampēnē</em>, a covered wagon.')
+_dict1s26_es("maagal", add=' ⭐ En el segundo perdón Saúl duerme «dentro del cerco», <em>ba-ma’gal</em>, con el ejército acampado alrededor y Abner a su lado (<a href="1-samuel-26.es.html#v26-5">1 Samuel 26:5</a>, 7, ya en estas páginas); la RV 1909 tiene allí «en la trinchera», y el griego <em>lampēnē</em>, un carro cubierto.')
+_dict1s26_en("sakhal", add=' ⭐ Saul says it of himself at the second sparing: &lsquo;Look &mdash; I have acted foolishly, and have erred very greatly&rsquo;, <em>hiskalti</em> (<a href="1-samuel-26.html#v26-21">1 Samuel 26:21</a>, now on these pages), the verdict Samuel passed on him at Gilgal, now in his own mouth.')
+_dict1s26_es("sakhal", add=' ⭐ Saúl lo dice de sí mismo en el segundo perdón: «Mira, he obrado neciamente, y he errado muchísimo», <em>hiskalti</em> (<a href="1-samuel-26.es.html#v26-21">1 Samuel 26:21</a>, ya en estas páginas), el veredicto que Samuel dictó sobre él en Gilgal, ahora en su propia boca.')
+_dict1s26_en("nakhon", add=' ⭐ With <em>el-</em>, &lsquo;for certain&rsquo;: <span data-heb="אל נכון">the phrase stands in two verses of the Hebrew Bible</span>, Saul&rsquo;s order to the Ziphites, &lsquo;come back to me with certainty&rsquo; (<a href="1-samuel-23.html#v23-23">1 Samuel 23:23</a>), and David&rsquo;s spies, who learn that Saul &lsquo;had come for certain&rsquo; (<a href="1-samuel-26.html#v26-4">26:4</a>, both now on these pages).')
+_dict1s26_es("nakhon", add=' ⭐ Con <em>el-</em>, «con certeza»: <span data-heb="אל נכון">la expresión está en dos versículos de la Biblia hebrea</span>, la orden de Saúl a los zifeos, «vuelvan a mí con certeza» (<a href="1-samuel-23.es.html#v23-23">1 Samuel 23:23</a>), y los espías de David, que saben que Saúl «había venido con certeza» (<a href="1-samuel-26.es.html#v26-4">26:4</a>, los dos ya en estas páginas).')
+_dict1s26_en("saphah", add=' ⭐ David gives it as one of three ways Saul may die without his hand: &lsquo;or he will go down into battle and be swept away&rsquo; (<a href="1-samuel-26.html#v26-10">1 Samuel 26:10</a>, now on these pages); in the next verse of the book he uses it of himself, &lsquo;Now I shall be swept away one day by the hand of Saul&rsquo; (27:1, not yet on these pages).')
+_dict1s26_es("saphah", add=' ⭐ David la da como una de tres maneras en que Saúl puede morir sin su mano: «o bajará a la batalla y será barrido» (<a href="1-samuel-26.es.html#v26-10">1 Samuel 26:10</a>, ya en estas páginas); en el siguiente versículo del libro la usa de sí mismo, «Ahora seré barrido un día por la mano de Saúl» (27:1, todavía no en estas páginas).')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("chanit", "chanit", "חֲנִית", "chanit",
+     """A SPEAR, the long thrusting weapon, and in 1 Samuel the king&rsquo;s own: &lsquo;and the spear was in Saul&rsquo;s hand&rsquo; (<a href="1-samuel-18.html#v18-10">1 Samuel 18:10</a>). Saul hurls it at David twice (<a href="1-samuel-18.html#v18-11">18:11</a>; <a href="1-samuel-19.html#v19-10">19:10</a>) and at Jonathan (<a href="1-samuel-20.html#v20-33">20:33</a>), and holds it under the tamarisk at Gibeah (<a href="1-samuel-22.html#v22-6">22:6</a>, all now on these pages). Goliath&rsquo;s had a shaft &lsquo;like a weavers&rsquo; beam&rsquo; (<a href="1-samuel-17.html#v17-7">17:7</a>). ⭐ At the second sparing it stands &lsquo;stuck in the ground at his head&rsquo; while he sleeps; Abishai asks to pin him to the ground with it, and David carries it off and calls across the valley, &lsquo;Look &mdash; the king&rsquo;s spear!&rsquo; (<a href="1-samuel-26.html#v26-7">1 Samuel 26:7</a>&ndash;22, now on these pages), where the written text has &lsquo;the spear, O king!&rsquo;. On Gilboa Saul is last seen &lsquo;leaning on his spear&rsquo; (<a href="2-samuel-1.html#v6">2 Samuel 1:6</a>, now on these pages).""",
+     ("1 Samuel", 26, 7)),
+    ("tsappachat", "tsappachat", "צַפַּחַת", "tsappachat",
+     """A JUG or flask for water or oil. <span data-heb="צפחת">The word stands in seven verses of the Hebrew Bible</span>: three at the second sparing, where David takes &lsquo;the jug of water&rsquo; from beside Saul&rsquo;s head (<a href="1-samuel-26.html#v26-11">1 Samuel 26:11</a>, 12, 16, now on these pages), and four in the story of Elijah: the widow&rsquo;s jug of oil that did not fail (1 Kings 17:12, 14, 16), and the jug of water the angel left &lsquo;at his head&rsquo; under the broom tree (1 Kings 19:6, none yet on these pages). Both times the jug stands at a sleeper&rsquo;s head; Elijah wakes to find it filled, Saul to find it gone. The Greek has <em>phakos</em>, a flask.""",
+     ("1 Samuel", 26, 11)),
+    ("nagaf", "nagaf", "נָגַף", "nagaf",
+     """TO STRIKE, to deal a blow, and often a blow from God: &lsquo;And Jehovah struck the people, because they made the calf&rsquo; (<a href="exodus-32.html#v32-35">Exodus 32:35</a>, now on these pages). ⭐ &lsquo;Jehovah struck Nabal, and he died&rsquo; (<a href="1-samuel-25.html#v25-38">1 Samuel 25:38</a>), and in the next chapter David names it first among the ways Saul may die without David&rsquo;s hand: &lsquo;Jehovah himself will strike him&rsquo; (<a href="1-samuel-26.html#v26-10">26:10</a>, both now on these pages).""",
+     ("1 Samuel", 26, 10)),
+    ("sut", "sut (hesit)", "סוּת", "sut",
+     """TO INCITE, to stir someone up against another. David to Saul: &lsquo;If it is Jehovah who has incited you against me, let him smell an offering&rsquo; (<a href="1-samuel-26.html#v26-19">1 Samuel 26:19</a>, now on these pages). The same verb names the census, &lsquo;and he incited David against them&rsquo; (2 Samuel 24:1), where Chronicles gives the inciting to Satan (1 Chronicles 21:1), and Jehovah&rsquo;s words to the Accuser, &lsquo;you incited me against him, to swallow him up for nothing&rsquo; (Job 2:3, none yet on these pages). It is also the word for a tempter to other gods: &lsquo;If your brother &hellip; entices you in secret, saying, &ldquo;Let us go and serve other gods&rdquo;&rsquo; (<a href="deuteronomy-13.html#v13-7">Deuteronomy 13:7</a>, now on these pages).""",
+     ("1 Samuel", 26, 19)),
+    ("safach", "safach (histappeach)", "סָפַח", "safach",
+     """TO ATTACH, to join on to. Its simple form is the plea of Eli&rsquo;s descendants, &lsquo;Please attach me to one of the priest&rsquo;s offices&rsquo; (<a href="1-samuel-2.html#v2-36">1 Samuel 2:36</a>, now on these pages). <span data-heb="הסתפח">Its reflexive form, &lsquo;to attach oneself&rsquo;, stands in one verse of the Hebrew Bible</span>: David&rsquo;s complaint that men &lsquo;have driven me out today from attaching myself to the inheritance of Jehovah, saying: &ldquo;Go, serve other gods&rdquo;&rsquo; (<a href="1-samuel-26.html#v26-19">1 Samuel 26:19</a>, now on these pages).""",
+     ("1 Samuel", 26, 19)),
+    ("qore", "qore", "קֹרֵא", "qore",
+     """THE PARTRIDGE, literally &lsquo;the caller&rsquo;, the bird named for its cry; the same letters are the participle of <em>qara</em>, to call. David to Saul: &lsquo;the king of Israel has come out to seek a single flea, as one hunts the partridge in the mountains&rsquo; (<a href="1-samuel-26.html#v26-20">1 Samuel 26:20</a>, now on these pages), spoken from a mountain top by the man who has just &lsquo;called out&rsquo; to Abner. The Greek has <em>nyktikorax</em>, the night-raven. Jeremiah has the bird once more: &lsquo;As the partridge that broods but does not hatch, so is he who gets riches, and not by right&rsquo;, a proverb that ends &lsquo;and at his end he will be a fool&rsquo;, <em>naval</em> (Jeremiah 17:11, not yet on these pages).""",
+     ("1 Samuel", 26, 20)),
+])
+DICTIONARY_ES["chanit"] = ("janit",
+    'UNA LANZA, el arma larga de empuje, y en 1 Samuel la del propio rey: «y la lanza estaba en la mano de Saúl» (<a href="1-samuel-18.es.html#v18-10">1 Samuel 18:10</a>). Saúl la arroja dos veces contra David (<a href="1-samuel-18.es.html#v18-11">18:11</a>; <a href="1-samuel-19.es.html#v19-10">19:10</a>) y contra Jonatán (<a href="1-samuel-20.es.html#v20-33">20:33</a>), y la tiene en la mano bajo el tamarisco de Guibeá (<a href="1-samuel-22.es.html#v22-6">22:6</a>, todos ya en estas páginas). La de Goliat tenía un asta «como un enjullo de tejedores» (<a href="1-samuel-17.es.html#v17-7">17:7</a>). ⭐ En el segundo perdón está «clavada en tierra a su cabecera» mientras duerme; Abisai pide clavarlo con ella a la tierra, y David se la lleva y llama al otro lado del valle: «Mira, ¡la lanza del rey!» (<a href="1-samuel-26.es.html#v26-7">1 Samuel 26:7</a>&ndash;22, ya en estas páginas), donde el texto escrito tiene «¡la lanza, oh rey!». En Gilboa se ve a Saúl por última vez «apoyado sobre su lanza» (<a href="2-samuel-1.es.html#v6">2 Samuel 1:6</a>, ya en estas páginas).')
+DICTIONARY_ES["tsappachat"] = ("tsappájat",
+    'UNA JARRA o frasco para agua o aceite. <span data-heb="צפחת">La palabra está en siete versículos de la Biblia hebrea</span>: tres en el segundo perdón, donde David toma «la jarra de agua» de junto a la cabeza de Saúl (<a href="1-samuel-26.es.html#v26-11">1 Samuel 26:11</a>, 12, 16, ya en estas páginas), y cuatro en la historia de Elías: la jarra de aceite de la viuda que no faltó (1 Reyes 17:12, 14, 16), y la jarra de agua que el ángel dejó «a su cabecera» bajo la retama (1 Reyes 19:6, ninguno todavía en estas páginas). Las dos veces la jarra está a la cabecera de alguien que duerme; Elías despierta y la encuentra llena, Saúl despierta y no la encuentra. El griego tiene <em>phakós</em>, un frasco.')
+DICTIONARY_ES["nagaf"] = ("nagaf",
+    'HERIR, dar un golpe, y a menudo un golpe de Dios: «Y Jehová hirió al pueblo, porque habían hecho el becerro» (<a href="exodus-32.es.html#v32-35">Éxodo 32:35</a>, ya en estas páginas). ⭐ «Jehová hirió a Nabal, y murió» (<a href="1-samuel-25.es.html#v25-38">1 Samuel 25:38</a>), y en el capítulo siguiente David la nombra la primera entre las maneras en que Saúl puede morir sin la mano de David: «Jehová mismo lo herirá» (<a href="1-samuel-26.es.html#v26-10">26:10</a>, los dos ya en estas páginas).')
+DICTIONARY_ES["sut"] = ("sut (hesit)",
+    'INCITAR, azuzar a alguien contra otro. David a Saúl: «Si es Jehová quien te ha incitado contra mí, huela él una ofrenda» (<a href="1-samuel-26.es.html#v26-19">1 Samuel 26:19</a>, ya en estas páginas). El mismo verbo nombra el censo, «e incitó a David contra ellos» (2 Samuel 24:1), donde Crónicas atribuye la incitación a Satanás (1 Crónicas 21:1), y las palabras de Jehová al acusador, «me incitaste contra él, para destruirlo sin causa» (Job 2:3, ninguno todavía en estas páginas). Es también la palabra del que tienta a seguir a otros dioses: «Si te incita tu hermano … en secreto, diciendo: “Vayamos y sirvamos a otros dioses”» (<a href="deuteronomy-13.es.html#v13-7">Deuteronomio 13:7</a>, ya en estas páginas).')
+DICTIONARY_ES["safach"] = ("safaj (histappéaj)",
+    'AGREGAR, unir a algo. Su forma simple es la súplica de los descendientes de Elí, «Te ruego que me agregues a alguno de los oficios del sacerdote» (<a href="1-samuel-2.es.html#v2-36">1 Samuel 2:36</a>, ya en estas páginas). <span data-heb="הסתפח">Su forma reflexiva, «unirse», está en un solo versículo de la Biblia hebrea</span>: la queja de David de que unos hombres «me han expulsado hoy para que no me una a la heredad de Jehová, diciendo: “Ve, sirve a otros dioses”» (<a href="1-samuel-26.es.html#v26-19">1 Samuel 26:19</a>, ya en estas páginas).')
+DICTIONARY_ES["qore"] = ("qoré",
+    'LA PERDIZ, literalmente «la que llama», el ave nombrada por su grito; las mismas letras son el participio de <em>qará</em>, llamar. David a Saúl: «el rey de Israel ha salido a buscar una sola pulga, como quien persigue a la perdiz por los montes» (<a href="1-samuel-26.es.html#v26-20">1 Samuel 26:20</a>, ya en estas páginas), dicho desde la cumbre de un monte por el hombre que acaba de «llamar» a Abner. El griego tiene <em>nyktikórax</em>, el cuervo nocturno. Jeremías tiene el ave una vez más: «Como la perdiz que empolla pero no saca cría, así es el que junta riquezas, y no con justicia», un proverbio que termina «y en su final será un necio», <em>naval</em> (Jeremías 17:11, todavía no en estas páginas).')
+
+# encyclopedia: refs + additions to existing entries
+_REF1S26 = {"ziph": [("1 Samuel", 26, 1)], "hachilah": [("1 Samuel", 26, 1)], "jeshimon": [("1 Samuel", 26, 1)],
+            "gibeah": [("1 Samuel", 26, 1)], "abner": [("1 Samuel", 26, 5)], "joab": [("1 Samuel", 26, 6)],
+            "david": [("1 Samuel", 26, 5)]}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF1S26:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF1S26[_k] if r not in _e["refs"]]
+    if _k == "ziph":
+        _e["desc"] = _swap1s26(_e["desc"], "they do it again in 26:1 (not yet on these pages), and the heading of Psalm 54 remembers them.",
+            'they do it again in <a href="1-samuel-26.html#v26-1">26:1</a> (now on these pages), and Saul goes down to the wilderness of Ziph with three thousand chosen men, where David takes his spear and his jug of water by night; the heading of Psalm 54 remembers them.')
+    if _k == "hachilah":
+        _e["desc"] = _swap1s26(_e["desc"], "they say it again in 26:1, and Saul camps on it in 26:3 (neither yet on these pages).",
+            'they say it again, &lsquo;facing the Jeshimon&rsquo;, and Saul camps on it &lsquo;by the road&rsquo; (<a href="1-samuel-26.html#v26-1">26:1</a>, 3, now on these pages); there David and Abishai find him asleep within the ring of his camp. <span data-heb="החכילה">The name stands in three verses of the Hebrew Bible</span>, 23:19 and 26:1 and 3.')
+    if _k == "jeshimon":
+        _e["desc"] += ' ⭐ At the second sparing the hill of Hachilah is &lsquo;facing the Jeshimon&rsquo;, <em>al-penei ha-yeshimon</em> (<a href="1-samuel-26.html#v26-1">1 Samuel 26:1</a>, 3, now on these pages), where 23:19 had &lsquo;south of&rsquo;.'
+    if _k == "abner":
+        _e["desc"] += ' ⭐ At the hill of Hachilah he sleeps beside the king &lsquo;within the ring&rsquo; while David and Abishai take the spear and the jug of water, and David calls to him from the mountain across the valley: &lsquo;Are you not a man? And who is like you in Israel? Then why have you not kept watch over your lord the king?&rsquo; (<a href="1-samuel-26.html#v26-5">1 Samuel 26:5</a>&ndash;16, now on these pages).'
+    if _k == "joab":
+        _e["desc"] += ' ⭐ He is first named in <a href="1-samuel-26.html#v26-6">1 Samuel 26:6</a> (now on these pages), as the brother of <a href="encyclopedia.html#abishai">Abishai</a>, in the only verse of 1 Samuel that names him; his mother is <a href="encyclopedia.html#zeruiah">Zeruiah</a>, David&rsquo;s sister (1 Chronicles 2:16, not yet on these pages).'
+    if _k == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-26.html#v26-5">1 Samuel 26</a> (now on these pages): the Ziphites betray him a second time; he goes down by night with Abishai into Saul&rsquo;s camp at the hill of Hachilah, refuses again to stretch out his hand against Jehovah&rsquo;s anointed, takes the spear and the jug of water from the sleeping king&rsquo;s head, and calls to Abner and to Saul from the mountain across the valley. Saul blesses him, &lsquo;you will both surely act and surely prevail&rsquo;, and they do not meet again.'
+ENCYCLOPEDIA_ES["ziph"] = (ENCYCLOPEDIA_ES["ziph"][0], _swap1s26(ENCYCLOPEDIA_ES["ziph"][1],
+    "lo vuelven a hacer en 26:1 (todavía no en estas páginas), y el encabezado del Salmo 54 los recuerda.",
+    'lo vuelven a hacer en <a href="1-samuel-26.es.html#v26-1">26:1</a> (ya en estas páginas), y Saúl baja al desierto de Zif con tres mil escogidos, donde David le quita de noche la lanza y la jarra de agua; el encabezado del Salmo 54 los recuerda.'))
+ENCYCLOPEDIA_ES["hachilah"] = (ENCYCLOPEDIA_ES["hachilah"][0], _swap1s26(ENCYCLOPEDIA_ES["hachilah"][1],
+    "lo repiten en 26:1, y Saúl acampa en él en 26:3 (ninguno todavía en estas páginas).",
+    'lo repiten, «frente al Yesimón», y Saúl acampa en él «junto al camino» (<a href="1-samuel-26.es.html#v26-1">26:1</a>, 3, ya en estas páginas); allí David y Abisai lo encuentran dormido dentro del cerco de su campamento. <span data-heb="החכילה">El nombre está en tres versículos de la Biblia hebrea</span>, 23:19 y 26:1 y 3.'))
+ENCYCLOPEDIA_ES["jeshimon"] = (ENCYCLOPEDIA_ES["jeshimon"][0], ENCYCLOPEDIA_ES["jeshimon"][1]
+    + ' ⭐ En el segundo perdón el collado de Haquilá está «frente al Yesimón», <em>al-penéi ha-yeshimón</em> (<a href="1-samuel-26.es.html#v26-1">1 Samuel 26:1</a>, 3, ya en estas páginas), donde 23:19 tenía «al sur de».')
+ENCYCLOPEDIA_ES["abner"] = (ENCYCLOPEDIA_ES["abner"][0], ENCYCLOPEDIA_ES["abner"][1]
+    + ' ⭐ En el collado de Haquilá duerme junto al rey «dentro del cerco» mientras David y Abisai se llevan la lanza y la jarra de agua, y David lo llama desde el monte al otro lado del valle: «¿No eres tú un hombre? ¿Y quién como tú en Israel? ¿Por qué, pues, no has vigilado a tu señor el rey?» (<a href="1-samuel-26.es.html#v26-5">1 Samuel 26:5</a>&ndash;16, ya en estas páginas).')
+ENCYCLOPEDIA_ES["david"] = (ENCYCLOPEDIA_ES["david"][0], ENCYCLOPEDIA_ES["david"][1]
+    + ' ⭐ <a href="1-samuel-26.es.html#v26-5">1 Samuel 26</a> (ya en estas páginas): los zifeos lo delatan por segunda vez; baja de noche con Abisai al campamento de Saúl en el collado de Haquilá, se niega otra vez a extender su mano contra el ungido de Jehová, toma la lanza y la jarra de agua de la cabecera del rey dormido, y llama a Abner y a Saúl desde el monte al otro lado del valle. Saúl lo bendice, «de cierto obrarás, y de cierto prevalecerás», y no vuelven a verse.')
+ENCYCLOPEDIA_ES["joab"] = ("Joab",
+    'Sobrino de David y jefe de su ejército durante todo el reinado: indispensable, leal a su manera, y una y otra vez un asesino: de Abner, de Absalón contra órdenes expresas, y de Amasa. Es también el hombre del que David se sirvió para hacer matar a Urías. En 1 Reyes 1 apoya a Adonías, y en el capítulo 2 muere asido a los cuernos del altar, por las instrucciones de David en su lecho de muerte. ⭐ Se le nombra por primera vez en <a href="1-samuel-26.es.html#v26-6">1 Samuel 26:6</a> (ya en estas páginas), como hermano de <a href="enciclopedia.html#abishai">Abisai</a>, en el único versículo de 1 Samuel que lo nombra; su madre es <a href="enciclopedia.html#zeruiah">Sarvia</a>, hermana de David (1 Crónicas 2:16, todavía no en estas páginas).')
+
+# new encyclopedia entries
+ENCYCLOPEDIA.extend([
+    dict(slug="abishai", name="Abishai son of Zeruiah", kind="person", aliases=["Abishai"],
+         refs=[("1 Samuel", 26, 6)], videos=[],
+         desc='David&rsquo;s nephew, the son of his sister <a href="encyclopedia.html#zeruiah">Zeruiah</a> and the brother of <a href="encyclopedia.html#joab">Joab</a> and Asahel (1 Chronicles 2:16, not yet on these pages). He is first named at the hill of Hachilah, when David asks who will go down with him into Saul&rsquo;s camp by night: &lsquo;And Abishai said: &ldquo;I will go down with you&rdquo;&rsquo; (<a href="1-samuel-26.html#v26-6">1 Samuel 26:6</a>, now on these pages). Standing over the sleeping king he asks leave to pin him to the ground with his own spear, &lsquo;once; and I will not do it to him twice&rsquo;, and David refuses: &lsquo;Do not destroy him&rsquo; (26:8&ndash;9). The four verses of 26:6&ndash;9 are the only ones in 1 Samuel that name him; in 2 Samuel he is one of David&rsquo;s commanders (not yet on these pages).'),
+    dict(slug="zeruiah", name="Zeruiah", kind="person", aliases=["Zeruiah"],
+         refs=[("1 Samuel", 26, 6)], videos=[],
+         desc='David&rsquo;s sister: &lsquo;And their sisters were Zeruiah and Abigail. And the sons of Zeruiah: Abishai, and Joab, and Asahel, three&rsquo; (1 Chronicles 2:16, not yet on these pages). Her sons are called by her name rather than their father&rsquo;s, first in <a href="1-samuel-26.html#v26-6">1 Samuel 26:6</a> (now on these pages), &lsquo;Abishai son of Zeruiah, Joab&rsquo;s brother&rsquo;. See <a href="encyclopedia.html#abishai">Abishai</a> and <a href="encyclopedia.html#joab">Joab</a>. ⚠ Her sister Abigail, the mother of Amasa, is not Abigail the wife of Nabal (<a href="encyclopedia.html#abigail">Abigail</a>).'),
+    dict(slug="ahimelech-hittite", name="Ahimelech the Hittite", kind="person", aliases=["Ahimelech the Hittite"],
+         refs=[("1 Samuel", 26, 6)], videos=[],
+         desc='One of David&rsquo;s men in the wilderness, asked with Abishai, &lsquo;Who will go down with me to Saul, to the camp?&rsquo; (<a href="1-samuel-26.html#v26-6">1 Samuel 26:6</a>, now on these pages). <span data-heb="אחימלך החתי">He is named in one verse of the Hebrew Bible, this one</span>, and he does not answer; Abishai goes. A Hittite in David&rsquo;s band, as Uriah the Hittite will be among his mighty men (2 Samuel 11:3; 23:39, not yet on these pages) (<a href="encyclopedia.html#hittites">Hittites</a>). ⚠ Not <a href="encyclopedia.html#ahimelech">Ahimelech the priest</a> of Nob (<a href="1-samuel-21.html#v21-2">1 Samuel 21:2</a>, now on these pages).'),
+])
+ENCYCLOPEDIA_ES["abishai"] = ("Abisai hijo de Sarvia",
+    'Sobrino de David, hijo de su hermana <a href="enciclopedia.html#zeruiah">Sarvia</a> y hermano de <a href="enciclopedia.html#joab">Joab</a> y de Asael (1 Crónicas 2:16, todavía no en estas páginas). Se le nombra por primera vez en el collado de Haquilá, cuando David pregunta quién bajará con él de noche al campamento de Saúl: «Y Abisai dijo: “Yo bajaré contigo”» (<a href="1-samuel-26.es.html#v26-6">1 Samuel 26:6</a>, ya en estas páginas). De pie junto al rey dormido pide permiso para clavarlo a la tierra con su propia lanza, «una vez; y no se lo haré dos veces», y David se niega: «No lo destruyas» (26:8&ndash;9). Los cuatro versículos de 26:6&ndash;9 son los únicos de 1 Samuel que lo nombran; en 2 Samuel es uno de los jefes de David (todavía no en estas páginas).')
+ENCYCLOPEDIA_ES["zeruiah"] = ("Sarvia",
+    'Hermana de David: «Y sus hermanas fueron Sarvia y Abigail. Y los hijos de Sarvia: Abisai, y Joab, y Asael, tres» (1 Crónicas 2:16, todavía no en estas páginas). A sus hijos se les llama por el nombre de ella y no por el de su padre, por primera vez en <a href="1-samuel-26.es.html#v26-6">1 Samuel 26:6</a> (ya en estas páginas), «Abisai hijo de Sarvia, hermano de Joab». Véanse <a href="enciclopedia.html#abishai">Abisai</a> y <a href="enciclopedia.html#joab">Joab</a>. ⚠ Su hermana Abigail, madre de Amasa, no es Abigail la mujer de Nabal (<a href="enciclopedia.html#abigail">Abigail</a>).')
+ENCYCLOPEDIA_ES["ahimelech-hittite"] = ("Ahimelec el heteo",
+    'Uno de los hombres de David en el desierto, a quien se pregunta junto con Abisai: «¿Quién bajará conmigo a Saúl, al campamento?» (<a href="1-samuel-26.es.html#v26-6">1 Samuel 26:6</a>, ya en estas páginas). <span data-heb="אחימלך החתי">Se le nombra en un solo versículo de la Biblia hebrea, este</span>, y no contesta; va Abisai. Un heteo en la banda de David, como lo será Urías el heteo entre sus valientes (2 Samuel 11:3; 23:39, todavía no en estas páginas) (<a href="enciclopedia.html#hittites">heteos</a>). ⚠ No es <a href="enciclopedia.html#ahimelech">Ahimelec el sacerdote</a> de Nob (<a href="1-samuel-21.es.html#v21-2">1 Samuel 21:2</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["1sam26"] = dict(era="monarchy",
+    when="“Is this your voice, my son David?” a second time: the Ziphites tell Saul again that David is hiding on the hill of Hachilah, and Saul goes down with three thousand chosen men. By night David and Abishai walk into the camp, where Saul sleeps within the ring with his spear stuck in the ground at his head and a deep sleep from Jehovah on them all. David will not let Abishai strike — “who has stretched out his hand against Jehovah’s anointed and been innocent?” — and takes the spear and the jug of water instead. From a mountain across the valley he shames Abner and pleads with Saul; Saul confesses “I have acted foolishly”, blesses him, and the two part for the last time.",
+    clock="Undated: in Saul’s reign, after Nabal’s death and before David goes over to Achish of Gath in chapter 27.")
+
+CHAPTER_ART["1sam26"] = [
+    dict(
+        file="collaert-francken-david-spear-jug-saul.jpg",
+        title="David spares Saul’s life", title_es="David perdona la vida de Saúl",
+        artist="Possibly Hans Collaert I, after a design by Ambrosius Francken I; published by Gerard de Jode",
+        artist_es="Posiblemente Hans Collaert I, según un diseño de Ambrosius Francken I; editado por Gerard de Jode",
+        year="1585",
+        location="Rijksmuseum, Amsterdam (RP-P-1904-3544)", location_es="Rijksmuseum, Ámsterdam (RP-P-1904-3544)",
+        alt="A black-and-white engraving with a Latin caption along the bottom edge. In the foreground a young man in a crown and Roman-style armour walks away from a curtained bed, carrying a long spear over his shoulder and a jug in his other hand. On the bed under a fringed canopy an old bearded king lies asleep, one arm hanging down; a bowl stands on a small table beside him, and several soldiers sleep slumped on the ground around the bed, with spears leaning against the tent behind them. In the background, across a ravine, the same young man stands on a far hill holding up the jug and the spear towards a group of soldiers and a man in a long robe who look across at him.",
+        note="1 Samuel 26:7–16. Two moments in one plate: in front David carries off the spear and the jug of water while the camp sleeps (verses 7–12), and behind him, across the ravine, he holds them up to Abner and the king’s men (verses 13–16). The Latin caption reads “By night David came to the royal tents; from there he carries off the cups and the arms of his king”, citing “1 Reg. 26”, the Latin name of the book. The engraver puts Saul in a curtained bed under a canopy; the Hebrew has him lying on the ground “within the ring” of his camp, with his spear “stuck in the ground at his head” (verse 7). David is crowned here, years before the anointed man is king.",
+        note_es="1 Samuel 26:7–16. Dos momentos en una sola lámina: delante, David se lleva la lanza y la jarra de agua mientras el campamento duerme (versículos 7–12), y detrás, al otro lado del barranco, se las muestra a Abner y a los hombres del rey (versículos 13–16). La leyenda latina dice «De noche llegó David a las tiendas reales; de allí se lleva las copas y las armas de su rey», y cita «1 Reg. 26», el nombre latino del libro. El grabador pone a Saúl en una cama con cortinas bajo un dosel; el hebreo lo hace dormir en el suelo «dentro del cerco» de su campamento, con la lanza «clavada en tierra a su cabecera» (versículo 7). Aquí David lleva corona, años antes de que el ungido sea rey.",
+        license="CC0 (Rijksmuseum)",
+        source_url="https://commons.wikimedia.org/wiki/File:David_spaart_het_leven_van_Saul_David_en_Saul_(serietitel),_RP-P-1904-3544.jpg",
+    ),
+]
