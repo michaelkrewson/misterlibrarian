@@ -51934,3 +51934,158 @@ CHAPTER_ART["2sam2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Abner_kills_Asahel_(34134030)_(cropped).jpg",
 )]
+
+# --- 2 Samuel 3 ---
+def _swap3(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D3 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict3_en(slug, old=None, new=None, add=None):
+    _i = _D3[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap3(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict3_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap3(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("pelekh", "pelekh", "פֶּלֶךְ", "pelekh",
+    """A SPINDLE &mdash; the shaft on which thread is spun. The capable woman&rsquo;s &lsquo;palms grip the spindle&rsquo; (<a href="proverbs-31.html#v31-19">Proverbs 31:19</a>, now on these pages). ⭐ David&rsquo;s curse on the house of Joab ends a list of misfortunes with <em>one who holds the spindle</em> (<a href="2-samuel-3.html#v3-29">2 Samuel 3:29</a>, now on these pages), a man in the work of women. ⚠ The shelf splits: the ASV, the KJV and the Geneva have &lsquo;one that leaneth on a staff&rsquo;, the NIV &lsquo;leans on a crutch&rsquo;, the NWT &lsquo;a man taking hold of the twirling spindle&rsquo; and the Douay &lsquo;holdeth the distaff&rsquo;; the Greek has a staff. The same letters also write a district in Nehemiah 3, where the verb is &lsquo;repaired&rsquo; and the word means a half-district of Jerusalem.""",
+    ("2 Samuel", 3, 29)))
+DICTIONARY_ES["pelekh"] = ("pélekh",
+    """UN HUSO &mdash;el eje en que se hila el hilo. Las palmas de la mujer capaz &laquo;agarran el huso&raquo; (<a href="proverbs-31.es.html#v31-19">Proverbios 31:19</a>, ya en estas p&aacute;ginas). ⭐ La maldici&oacute;n de David sobre la casa de Joab termina una lista de desgracias con <em>quien sostenga el huso</em> (<a href="2-samuel-3.es.html#v3-29">2 Samuel 3:29</a>, ya en estas p&aacute;ginas), un hombre en la labor de las mujeres. ⚠ El estante se divide: la RV60 tiene &laquo;quien ande con b&aacute;culo&raquo;, la NVI &laquo;que use muletas&raquo;, la TNM &laquo;hombre que asga el huso giratorio&raquo;; el griego tiene un b&aacute;culo. Las mismas letras escriben tambi&eacute;n un distrito en Nehem&iacute;as 3, donde el verbo es &laquo;reparar&raquo; y la palabra significa un medio distrito de Jerusal&eacute;n.""")
+
+_dict3_en("acharei", add=' ⭐ <a href="2-samuel-3.html#v3-16">2 Samuel 3</a> (now on these pages) keeps it going: Paltiel follows Michal &lsquo;behind her&rsquo; weeping (v16), Joab sends messengers &lsquo;after Abner&rsquo; (v26), David hears &lsquo;afterward&rsquo; (v28) and walks &lsquo;behind the bier&rsquo; (v31).')
+_dict3_es("acharei", add=' ⭐ <a href="2-samuel-3.es.html#v3-16">2 Samuel 3</a> (ya en estas p&aacute;ginas) lo mantiene: Paltiel sigue a Mical &laquo;tras ella&raquo; llorando (v16), Joab env&iacute;a mensajeros &laquo;tras Abner&raquo; (v26), David oye &laquo;despu&eacute;s&raquo; (v28) y va &laquo;detr&aacute;s del f&eacute;retro&raquo; (v31).')
+_dict3_en("chesed", add=' ⭐ Abner uses it of his own loyalty, &lsquo;Today I do kindness with the house of Saul your father&rsquo; (<a href="2-samuel-3.html#v3-8">2 Samuel 3:8</a>, now on these pages).')
+_dict3_es("chesed", add=' ⭐ Abner la usa de su propia lealtad, &laquo;Hoy hago bondad con la casa de Sa&uacute;l tu padre&raquo; (<a href="2-samuel-3.es.html#v3-8">2 Samuel 3:8</a>, ya en estas p&aacute;ginas).')
+_dict3_en("chazaq", add=' ⭐ <a href="2-samuel-3.html#v3-1">2 Samuel 3:1</a> (now on these pages) has David &lsquo;stronger and stronger&rsquo; as the house of Saul grows weaker, and verse 6 has Abner &lsquo;making himself strong&rsquo; in the house of Saul, in the reflexive form David used of himself at Ziklag (1 Samuel 30:6).')
+_dict3_es("chazaq", add=' ⭐ <a href="2-samuel-3.es.html#v3-1">2 Samuel 3:1</a> (ya en estas p&aacute;ginas) tiene a David &laquo;m&aacute;s y m&aacute;s fuerte&raquo; mientras la casa de Sa&uacute;l se debilita, y el vers&iacute;culo 6 tiene a Abner &laquo;fortaleci&eacute;ndose&raquo; en la casa de Sa&uacute;l, en la forma reflexiva que David us&oacute; de s&iacute; en Siclag (1 Samuel 30:6).')
+_dict3_en("chomesh", add=' ⭐ <a href="2-samuel-3.html#v3-27">2 Samuel 3:27</a> (now on these pages) has Joab strike Abner &lsquo;in the belly&rsquo; in the gate of Hebron, &lsquo;for the blood of Asahel his brother&rsquo;.')
+_dict3_es("chomesh", add=' ⭐ <a href="2-samuel-3.es.html#v3-27">2 Samuel 3:27</a> (ya en estas p&aacute;ginas) hace que Joab hiera a Abner &laquo;en el vientre&raquo; en la puerta de Hebr&oacute;n, &laquo;por la sangre de Asael su hermano&raquo;.')
+_dict3_en("gedud", add=' ⭐ The servants of David and Joab come &lsquo;from the raid&rsquo; with a great spoil (<a href="2-samuel-3.html#v3-22">2 Samuel 3:22</a>, now on these pages), the day Abner has gone from Hebron in peace.')
+_dict3_es("gedud", add=' ⭐ Los siervos de David y Joab vienen &laquo;de la incursi&oacute;n&raquo; con un gran bot&iacute;n (<a href="2-samuel-3.es.html#v3-22">2 Samuel 3:22</a>, ya en estas p&aacute;ginas), el d&iacute;a en que Abner se ha ido de Hebr&oacute;n en paz.')
+_dict3_en("naval", add=' ⭐ David&rsquo;s lament for Abner asks &lsquo;As a fool dies, should Abner die?&rsquo; (<a href="2-samuel-3.html#v3-33">2 Samuel 3:33</a>, now on these pages), the same letters as the name of Nabal; the Greek reads it as the name.')
+_dict3_es("naval", add=' ⭐ El lamento de David por Abner pregunta &laquo;&iquest;Como muere un necio, hab&iacute;a de morir Abner?&raquo; (<a href="2-samuel-3.es.html#v3-33">2 Samuel 3:33</a>, ya en estas p&aacute;ginas), las mismas letras que el nombre de Nabal; el griego lo lee como el nombre.')
+_dict3_en("zav", add=' ⭐ David&rsquo;s curse on the house of Joab names first &lsquo;one who has a discharge&rsquo; (<a href="2-samuel-3.html#v3-29">2 Samuel 3:29</a>, now on these pages).')
+_dict3_es("zav", add=' ⭐ La maldici&oacute;n de David sobre la casa de Joab nombra primero a &laquo;quien tenga flujo&raquo; (<a href="2-samuel-3.es.html#v3-29">2 Samuel 3:29</a>, ya en estas p&aacute;ginas).')
+_dict3_en("tzaraat", add=' ⭐ The curse of David on the house of Joab includes &lsquo;one with the scaly disease&rsquo; (<a href="2-samuel-3.html#v3-29">2 Samuel 3:29</a>, now on these pages).')
+_dict3_es("tzaraat", add=' ⭐ La maldici&oacute;n de David sobre la casa de Joab incluye a &laquo;quien tenga la enfermedad escamosa&raquo; (<a href="2-samuel-3.es.html#v3-29">2 Samuel 3:29</a>, ya en estas p&aacute;ginas).')
+_dict3_en("pilegesh", add=' ⭐ Ish-bosheth&rsquo;s charge against Abner is that he &lsquo;went in to&rsquo; Saul&rsquo;s concubine Rizpah (<a href="2-samuel-3.html#v3-7">2 Samuel 3:7</a>, now on these pages).')
+_dict3_es("pilegesh", add=' ⭐ La acusaci&oacute;n de Is-boset contra Abner es que se &laquo;lleg&oacute;&raquo; a la concubina de Sa&uacute;l, Rizpa (<a href="2-samuel-3.es.html#v3-7">2 Samuel 3:7</a>, ya en estas p&aacute;ginas).')
+_dict3_en("naqi", add=' ⭐ David declares himself and his kingdom &lsquo;innocent before Jehovah for ever of the blood of Abner&rsquo; (<a href="2-samuel-3.html#v3-28">2 Samuel 3:28</a>, now on these pages).')
+_dict3_es("naqi", add=' ⭐ David se declara a s&iacute; mismo y a su reino &laquo;inocentes delante de Jehov&aacute; para siempre de la sangre de Abner&raquo; (<a href="2-samuel-3.es.html#v3-28">2 Samuel 3:28</a>, ya en estas p&aacute;ginas).')
+_dict3_en("rakh", add=' ⭐ &lsquo;I am this day frail, though anointed king&rsquo; (<a href="2-samuel-3.html#v3-39">2 Samuel 3:39</a>, now on these pages): David says it of himself beside the sons of Zeruiah, who are &lsquo;too hard&rsquo; for him.')
+_dict3_es("rakh", add=' ⭐ &laquo;Yo soy hoy fr&aacute;gil, aunque ungido rey&raquo; (<a href="2-samuel-3.es.html#v3-39">2 Samuel 3:39</a>, ya en estas p&aacute;ginas): David lo dice de s&iacute; mismo junto a los hijos de Sarvia, que son &laquo;demasiado duros&raquo; para &eacute;l.')
+_dict3_en("shalom", add=' ⭐ &lsquo;And he went in peace&rsquo; stands in three verses of the Hebrew Bible, <a href="2-samuel-3.html#v3-21">2 Samuel 3:21&ndash;23</a> (now on these pages), of Abner leaving Hebron before Joab brings him back.')
+_dict3_es("shalom", add=' ⭐ &laquo;Y se fue en paz&raquo; est&aacute; en tres vers&iacute;culos de la Biblia hebrea, <a href="2-samuel-3.es.html#v3-21">2 Samuel 3:21&ndash;23</a> (ya en estas p&aacute;ginas), de Abner dejando Hebr&oacute;n antes de que Joab lo haga volver.')
+_dict3_en("aras", old='(2 Samuel 3:14), and', new='(<a href="2-samuel-3.html#v3-14">2 Samuel 3:14</a>, now on these pages), and')
+_dict3_en("aras", old='<em>I will betroth you to me for ever</em> (neither yet on these pages)', new='<em>I will betroth you to me for ever</em> (Hosea is not yet on these pages)')
+_dict3_es("aras", old='(2 Samuel 3:14), y', new='(<a href="2-samuel-3.es.html#v3-14">2 Samuel 3:14</a>, ya en estas páginas), y')
+_dict3_es("aras", old='<em>te desposaré conmigo para siempre</em> (ninguno todavía en estas páginas)', new='<em>te desposaré conmigo para siempre</em> (Oseas todavía no está en estas páginas)')
+
+# encyclopedia: new people and a place
+ENCYCLOPEDIA.append(dict(slug="rizpah", name="Rizpah", kind="person", aliases=["Rizpah"],
+    refs=[("2 Samuel", 3, 7)], videos=[],
+    desc='A concubine of Saul, daughter of Aiah. <a href="encyclopedia.html#ish-bosheth">Ish-bosheth</a> charges <a href="encyclopedia.html#abner">Abner</a> with having gone in to her, and the charge breaks Abner&rsquo;s loyalty to Saul&rsquo;s house (<a href="2-samuel-3.html#v3-7">2 Samuel 3:7&ndash;11</a>, now on these pages); the Hebrew does not say whether it was true. ⭐ She will keep watch over the bodies of her sons (2 Samuel 21:8&ndash;10, not yet on these pages).'))
+ENCYCLOPEDIA_ES["rizpah"] = ("Rizpa",
+    'Una concubina de Sa&uacute;l, hija de Aja. <a href="enciclopedia.html#ish-bosheth">Is-boset</a> acusa a <a href="enciclopedia.html#abner">Abner</a> de haberse llegado a ella, y la acusaci&oacute;n rompe la lealtad de Abner a la casa de Sa&uacute;l (<a href="2-samuel-3.es.html#v3-7">2 Samuel 3:7&ndash;11</a>, ya en estas p&aacute;ginas); el hebreo no dice si era cierta. ⭐ Ella velar&aacute; los cuerpos de sus hijos (2 Samuel 21:8&ndash;10, todav&iacute;a no en estas p&aacute;ginas).')
+ENCYCLOPEDIA.append(dict(slug="amnon", name="Amnon", kind="person", aliases=["Amnon"],
+    refs=[("2 Samuel", 3, 2)], videos=[],
+    desc='David&rsquo;s firstborn, born in Hebron to <a href="encyclopedia.html#ahinoam">Ahinoam</a> the Jezreelitess; first in the list of six sons (<a href="2-samuel-3.html#v3-2">2 Samuel 3:2</a>, now on these pages). ⭐ His story is told in 2 Samuel 13 (not yet on these pages).'))
+ENCYCLOPEDIA_ES["amnon"] = ("Amn&oacute;n".replace("&oacute;","ó"),
+    'El primog&eacute;nito de David, nacido en Hebr&oacute;n de <a href="enciclopedia.html#ahinoam">Ahinoam</a> la jezreelita; el primero en la lista de seis hijos (<a href="2-samuel-3.es.html#v3-2">2 Samuel 3:2</a>, ya en estas p&aacute;ginas). ⭐ Su historia se cuenta en 2 Samuel 13 (todav&iacute;a no en estas p&aacute;ginas).')
+ENCYCLOPEDIA.append(dict(slug="absalom", name="Absalom", kind="person", aliases=["Absalom"],
+    refs=[("2 Samuel", 3, 3)], videos=[],
+    desc='David&rsquo;s third son, born in Hebron to Maacah, daughter of Talmai king of <a href="encyclopedia.html#geshurites">Geshur</a> (<a href="2-samuel-3.html#v3-3">2 Samuel 3:3</a>, now on these pages). ⭐ His revolt fills 2 Samuel 15&ndash;18 (not yet on these pages).'))
+ENCYCLOPEDIA_ES["absalom"] = ("Absalón",
+    'El tercer hijo de David, nacido en Hebr&oacute;n de Maaca, hija de Talmai rey de <a href="enciclopedia.html#geshurites">Guesur</a> (<a href="2-samuel-3.es.html#v3-3">2 Samuel 3:3</a>, ya en estas p&aacute;ginas). ⭐ Su rebeli&oacute;n llena 2 Samuel 15&ndash;18 (todav&iacute;a no en estas p&aacute;ginas).')
+ENCYCLOPEDIA.append(dict(slug="bahurim", name="Bahurim", kind="place", aliases=["Bahurim"],
+    coords=(31.795, 35.262, 0.3), approx=True,
+    refs=[("2 Samuel", 3, 16)], videos=[],
+    desc='A town on the road east of Jerusalem toward the Jordan, where Paltiel turns back at Abner&rsquo;s word as he weeps after Michal (<a href="2-samuel-3.html#v3-16">2 Samuel 3:16</a>, now on these pages). The site is not certain; the map point is a guess. ⭐ Shimei will curse David there (2 Samuel 16:5, not yet on these pages).'))
+ENCYCLOPEDIA_ES["bahurim"] = ("Bahurim",
+    'Un pueblo en el camino al este de Jerusal&eacute;n hacia el Jord&aacute;n, donde Paltiel se vuelve a la palabra de Abner mientras llora tras Mical (<a href="2-samuel-3.es.html#v3-16">2 Samuel 3:16</a>, ya en estas p&aacute;ginas). El sitio no es seguro; el punto del mapa es una conjetura. ⭐ Simei maldecir&aacute; all&iacute; a David (2 Samuel 16:5, todav&iacute;a no en estas p&aacute;ginas).')
+
+_REFS3 = {
+    "abner": [("2 Samuel", 3, 6), ("2 Samuel", 3, 8), ("2 Samuel", 3, 12), ("2 Samuel", 3, 19), ("2 Samuel", 3, 27)],
+    "ish-bosheth": [("2 Samuel", 3, 7), ("2 Samuel", 3, 8), ("2 Samuel", 3, 14), ("2 Samuel", 3, 15)],
+    "joab": [("2 Samuel", 3, 22), ("2 Samuel", 3, 24), ("2 Samuel", 3, 27), ("2 Samuel", 3, 31)],
+    "abishai": [("2 Samuel", 3, 30)],
+    "asahel": [("2 Samuel", 3, 27), ("2 Samuel", 3, 30)],
+    "zeruiah": [("2 Samuel", 3, 39)],
+    "hebron": [("2 Samuel", 3, 2), ("2 Samuel", 3, 19), ("2 Samuel", 3, 20), ("2 Samuel", 3, 22), ("2 Samuel", 3, 27), ("2 Samuel", 3, 32)],
+    "michal": [("2 Samuel", 3, 13), ("2 Samuel", 3, 14)],
+    "palti": [("2 Samuel", 3, 15)],
+    "abigail": [("2 Samuel", 3, 3)],
+    "nabal": [("2 Samuel", 3, 3)],
+    "ahinoam": [("2 Samuel", 3, 2)],
+    "adonijah": [("2 Samuel", 3, 4)],
+    "geshurites": [("2 Samuel", 3, 3)],
+    "benjamin": [("2 Samuel", 3, 19)],
+    "gibeon": [("2 Samuel", 3, 30)],
+    "dan-city": [("2 Samuel", 3, 10)],
+    "beersheba": [("2 Samuel", 3, 10)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS3:
+        _e["refs"] = list(_e["refs"]) + _REFS3[_e["slug"]]
+    if _e["slug"] == "geshurites":
+        _e["desc"] = _swap3(_e["desc"], "(2 Samuel 3:3, not yet on these pages)", '(<a href="2-samuel-3.html#v3-3">2 Samuel 3:3</a>, now on these pages)')
+    elif _e["slug"] == "abner":
+        _e["desc"] = _swap3(_e["desc"], '<a href="2-samuel-2.html#v2-8">2 Samuel 2</a>, now on these pages; 2 Samuel 3, not yet on these pages)', '<a href="2-samuel-2.html#v2-8">2 Samuel 2</a> and <a href="2-samuel-3.html#v3-6">3</a>, now on these pages)')
+    elif _e["slug"] == "michal":
+        _e["desc"] = _swap3(_e["desc"], "; 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, none of these yet on these pages)", '; <a href="1-samuel-25.html#v25-44">25:44</a> and <a href="2-samuel-3.html#v3-13">2 Samuel 3:13&ndash;16</a>, now on these pages; 2 Samuel 6:16&ndash;23, not yet on these pages)')
+        _e["desc"] = _swap3(_e["desc"], "(2 Samuel 3:14&ndash;16, not yet on these pages)", '(<a href="2-samuel-3.html#v3-14">2 Samuel 3:14&ndash;16</a>, now on these pages)')
+    elif _e["slug"] == "nabal":
+        _e["desc"] = _swap3(_e["desc"], '</a> and <a href="2-samuel-2.html#v2-2">2 Samuel 2:2</a>, now on these pages; 2 Samuel 3:3, not yet on these pages)', '</a>, <a href="2-samuel-2.html#v2-2">2 Samuel 2:2</a> and <a href="2-samuel-3.html#v3-3">2 Samuel 3:3</a>, now on these pages)')
+    elif _e["slug"] == "abigail":
+        _e["desc"] = _swap3(_e["desc"], "is taken captive at Ziklag (30:5), and bears him a son called Chileab in 2 Samuel 3:3 and Daniel in 1 Chronicles 3:1 (none of these yet on these pages)", 'is taken captive at Ziklag (<a href="1-samuel-30.html#v30-5">30:5</a>, now on these pages), and bears him a son called Chileab in <a href="2-samuel-3.html#v3-3">2 Samuel 3:3</a> (now on these pages) and Daniel in 1 Chronicles 3:1 (not yet on these pages)')
+    elif _e["slug"] == "ahinoam":
+        _e["desc"] = _swap3(_e["desc"], "Amnon (2 Samuel 3:2; 1 Chronicles 3:1)", 'Amnon (<a href="2-samuel-3.html#v3-2">2 Samuel 3:2</a>, now on these pages; 1 Chronicles 3:1, not yet on these pages)')
+    elif _e["slug"] == "palti":
+        _e["desc"] = _swap3(_e["desc"], "In 2 Samuel 3:15&ndash;16 (not yet on these pages) he is called Paltiel", 'In <a href="2-samuel-3.html#v3-15">2 Samuel 3:15&ndash;16</a> (now on these pages) he is called Paltiel')
+    elif _e["slug"] == "asahel":
+        _e["desc"] = _swap3(_e["desc"], "Joab will kill Abner for his blood at Hebron (3:27), and he is counted among David&rsquo;s Thirty (23:24, neither yet on these pages)", 'Joab kills Abner for his blood at Hebron (<a href="2-samuel-3.html#v3-27">2 Samuel 3:27</a>, now on these pages), and he is counted among David&rsquo;s Thirty (23:24, not yet on these pages)')
+    elif _e["slug"] == "hebron":
+        _e["desc"] += ' ⭐ Abner comes to David here with twenty men and is feasted, is killed in the gate by Joab, and is buried here with David weeping at the grave; David&rsquo;s six sons are born here (<a href="2-samuel-3.html#v3-2">2 Samuel 3:2&ndash;5, 20&ndash;32</a>, now on these pages).'
+_ES3 = {
+    "geshurites": ("(2 Samuel 3:3, todavía no en estas páginas)", '(<a href="2-samuel-3.es.html#v3-3">2 Samuel 3:3</a>, ya en estas páginas)'),
+    "abner": ('<a href="2-samuel-2.es.html#v2-8">2 Samuel 2</a>, ya en estas páginas; 2 Samuel 3, todavía no en estas páginas)', '<a href="2-samuel-2.es.html#v2-8">2 Samuel 2</a> y <a href="2-samuel-3.es.html#v3-6">3</a>, ya en estas páginas)'),
+    "nabal": ('</a> y <a href="2-samuel-2.es.html#v2-2">2 Samuel 2:2</a>, ya en estas páginas; 2 Samuel 3:3, todavía no en estas páginas)', '</a>, <a href="2-samuel-2.es.html#v2-2">2 Samuel 2:2</a> y <a href="2-samuel-3.es.html#v3-3">2 Samuel 3:3</a>, ya en estas páginas)'),
+    "abigail": ("es llevada cautiva en Siclag (30:5), y le da un hijo llamado Quileab en 2 Samuel 3:3 y Daniel en 1 Crónicas 3:1 (ninguno de ellos todavía en estas páginas)", 'es llevada cautiva en Siclag (<a href="1-samuel-30.es.html#v30-5">30:5</a>, ya en estas páginas), y le da un hijo llamado Quileab en <a href="2-samuel-3.es.html#v3-3">2 Samuel 3:3</a> (ya en estas páginas) y Daniel en 1 Crónicas 3:1 (todavía no en estas páginas)'),
+    "ahinoam": ("Amnón (2 Samuel 3:2; 1 Crónicas 3:1)", 'Amnón (<a href="2-samuel-3.es.html#v3-2">2 Samuel 3:2</a>, ya en estas páginas; 1 Crónicas 3:1, todavía no en estas páginas)'),
+    "palti": ("En 2 Samuel 3:15&ndash;16 (todavía no en estas páginas) se le llama Paltiel", 'En <a href="2-samuel-3.es.html#v3-15">2 Samuel 3:15&ndash;16</a> (ya en estas páginas) se le llama Paltiel'),
+    "michal": ("; 25:44; 2 Samuel 3:13&ndash;16; 6:16&ndash;23, nada de ello todavía en estas páginas)", '; <a href="1-samuel-25.es.html#v25-44">25:44</a> y <a href="2-samuel-3.es.html#v3-13">2 Samuel 3:13&ndash;16</a>, ya en estas páginas; 2 Samuel 6:16&ndash;23, todavía no en estas páginas)'),
+}
+for _k, (_o, _n) in _ES3.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap3(_s[1], _o, _n))
+_s = ENCYCLOPEDIA_ES["michal"]
+ENCYCLOPEDIA_ES["michal"] = (_s[0], _swap3(_s[1], "(2 Samuel 3:14&ndash;16, todavía no en estas páginas)", '(<a href="2-samuel-3.es.html#v3-14">2 Samuel 3:14&ndash;16</a>, ya en estas páginas)'))
+_s = ENCYCLOPEDIA_ES["asahel"]
+ENCYCLOPEDIA_ES["asahel"] = (_s[0], _swap3(_s[1], "Joab matar&aacute; a Abner por su sangre en Hebr&oacute;n (3:27), y es contado entre los Treinta de David (23:24, ninguno todav&iacute;a en estas p&aacute;ginas)", 'Joab mata a Abner por su sangre en Hebrón (<a href="2-samuel-3.es.html#v3-27">2 Samuel 3:27</a>, ya en estas páginas), y es contado entre los Treinta de David (23:24, todavía no en estas páginas)'))
+_s = ENCYCLOPEDIA_ES["hebron"]
+ENCYCLOPEDIA_ES["hebron"] = (_s[0], _s[1] + ' ⭐ Abner viene aquí a David con veinte hombres y es agasajado, es muerto en la puerta por Joab, y es sepultado aquí con David llorando junto al sepulcro; los seis hijos de David nacen aquí (<a href="2-samuel-3.es.html#v3-2">2 Samuel 3:2&ndash;5, 20&ndash;32</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["2sam3"] = dict(era="monarchy",
+    when="Hebron: the long war between the house of Saul and the house of David; six sons born to David in Hebron; Abner, charged by Ish-bosheth over Saul’s concubine Rizpah, offers David all Israel, David asks for Michal and she is taken from Paltiel, and Abner speaks to the elders and to Benjamin and is feasted at Hebron and sent away in peace; Joab brings him back from the cistern of Sirah and kills him in the gate for the blood of Asahel; David disowns the blood, curses the house of Joab, follows the bier, laments, fasts until sundown, and says the sons of Zeruiah are too hard for him.",
+    clock="Undated: within David’s seven years and six months at Hebron (2 Samuel 2:11), after the battle at the pool of Gibeon (2:12–32); Ish-bosheth is still king over Israel.")
+
+CHAPTER_ART["2sam3"] = [dict(
+    file="abner-buried-hebron-panel.jpg",
+    title="David mourns Abner at his grave in Hebron", title_es="David llora a Abner junto a su sepulcro en Hebrón",
+    artist="Philips Galle, after Gerard van Groeningen",
+    year="1575",
+    location="Rijksmuseum, Amsterdam (RP-P-2015-10-114, plate 26 of 48)", location_es="Rijksmuseum, Ámsterdam (RP-P-2015-10-114, lámina 26 de 48)",
+    alt="A black-and-white engraving of a funeral. Mourners in hooded cloaks kneel and stoop around a coffin laid in the ground at the lower left, while a tall bearded man stands at the right with his hand raised; behind them stand ranks of spearmen under banners, and a walled town closes the background. The Latin title “Ingenua humanitas” runs across the top of the panel.",
+    note="2 Samuel 3:31–34. David orders Joab and all the people to tear their clothes and mourn before Abner, follows the bier himself, and weeps at the grave in Hebron; the people weep with him. This panel is one of four on an album leaf from a Latin series of 48 prints on the life of David, which gives each scene a moral title, here “Ingenua humanitas”. The print shows the grave and the great crowd, and, like the Hebrew, says nothing of Joab’s act beyond what the lament implies.",
+    note_es="2 Samuel 3:31–34. David manda a Joab y a todo el pueblo rasgar sus vestidos y hacer duelo delante de Abner, sigue él mismo el féretro, y llora junto al sepulcro en Hebrón; el pueblo llora con él. Este panel es uno de cuatro en una hoja de álbum de una serie latina de 48 grabados sobre la vida de David, que da a cada escena un título moral, aquí «Ingenua humanitas». El grabado muestra la tumba y la gran multitud, y, como el hebreo, no dice nada del acto de Joab más allá de lo que implica el lamento.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
+)]
