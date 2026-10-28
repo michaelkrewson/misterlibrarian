@@ -52089,3 +52089,99 @@ CHAPTER_ART["2sam3"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
 )]
+
+# --- 2 Samuel 4 ---
+def _swap4(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D4 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict4_en(slug, old=None, new=None, add=None):
+    _i = _D4[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap4(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict4_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap4(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+_dict4_en("raphah", add=' ⭐ <a href="2-samuel-4.html#v4-1">2 Samuel 4:1</a> (now on these pages) has Ish-bosheth&rsquo;s hands &lsquo;grow slack&rsquo; at the news of Abner&rsquo;s death, the opposite of &lsquo;let your hands be strong&rsquo; at 2:7; the phrase stands in one verse of the Hebrew Bible.')
+_dict4_es("raphah", add=' ⭐ <a href="2-samuel-4.es.html#v4-1">2 Samuel 4:1</a> (ya en estas páginas) hace que a Is-boset se le «aflojen» las manos ante la noticia de la muerte de Abner, lo contrario de «sean fuertes sus manos» en 2:7; la frase está en un versículo de la Biblia hebrea.')
+_dict4_en("gedud", add=' ⭐ Baanah and Rechab are the chiefs of Ish-bosheth&rsquo;s raiding bands (<a href="2-samuel-4.html#v4-2">2 Samuel 4:2</a>, now on these pages).')
+_dict4_es("gedud", add=' ⭐ Baana y Recab son los jefes de las bandas de incursores de Is-boset (<a href="2-samuel-4.es.html#v4-2">2 Samuel 4:2</a>, ya en estas páginas).')
+_dict4_en("chomesh", add=' ⭐ <a href="2-samuel-4.html#v4-6">2 Samuel 4:6</a> (now on these pages) is the third of the four verses: Rechab and Baanah strike Ish-bosheth &lsquo;in the belly&rsquo; as he lies at noon.')
+_dict4_es("chomesh", add=' ⭐ <a href="2-samuel-4.es.html#v4-6">2 Samuel 4:6</a> (ya en estas páginas) es el tercero de los cuatro versículos: Recab y Baana hieren a Is-boset «en el vientre» mientras reposa al mediodía.')
+_dict4_en("naqam", add=' ⭐ Rechab and Baanah say &lsquo;Jehovah has given my lord the king vengeance this day on Saul and on his seed&rsquo; (<a href="2-samuel-4.html#v4-8">2 Samuel 4:8</a>, now on these pages); the plural <em>neqamot</em> stands in five verses of the Hebrew Bible.')
+_dict4_es("naqam", add=' ⭐ Recab y Baana dicen «Jehová ha dado hoy a mi señor el rey venganza de Saúl y de su descendencia» (<a href="2-samuel-4.es.html#v4-8">2 Samuel 4:8</a>, ya en estas páginas); el plural <em>neqamot</em> está en cinco versículos de la Biblia hebrea.')
+_dict4_en("padah", add=' ⭐ David&rsquo;s oath at <a href="2-samuel-4.html#v4-9">2 Samuel 4:9</a> (now on these pages), &lsquo;As Jehovah lives, who has redeemed my soul out of all distress&rsquo;, stands in two verses of the Hebrew Bible, the other being his oath in old age (1 Kings 1:29).')
+_dict4_es("padah", add=' ⭐ El juramento de David en <a href="2-samuel-4.es.html#v4-9">2 Samuel 4:9</a> (ya en estas páginas), «Vive Jehová, que ha redimido mi alma de toda angustia», está en dos versículos de la Biblia hebrea, el otro su juramento en la vejez (1 Reyes 1:29).')
+_dict4_en("mevasser", add=' ⭐ David describes the man who brought him news of Saul&rsquo;s death as &lsquo;a bringer of good news in his own eyes&rsquo; (<a href="2-samuel-4.html#v4-10">2 Samuel 4:10</a>, now on these pages), and the reward he gave him was death.')
+_dict4_es("mevasser", add=' ⭐ David describe al hombre que le trajo noticia de la muerte de Saúl como «un portador de buenas noticias a sus propios ojos» (<a href="2-samuel-4.es.html#v4-10">2 Samuel 4:10</a>, ya en estas páginas), y el pago que le dio fue la muerte.')
+_dict4_en("baar", add=' ⭐ David uses it in the first person of Ish-bosheth&rsquo;s killers, &lsquo;shall I not now require his blood from your hand, and burn you out of the land?&rsquo; (<a href="2-samuel-4.html#v4-11">2 Samuel 4:11</a>, now on these pages), in the voice of the law&rsquo;s &lsquo;you shall burn out the evil&rsquo;.')
+_dict4_es("baar", add=' ⭐ David lo usa en primera persona de los asesinos de Is-boset, «¿no he de requerir ahora su sangre de la mano de ustedes, y quemarlos de la tierra?» (<a href="2-samuel-4.es.html#v4-11">2 Samuel 4:11</a>, ya en estas páginas), con la voz del «quemarás el mal» de la ley.')
+
+ENCYCLOPEDIA.append(dict(slug="mephibosheth", name="Mephibosheth", kind="person", aliases=["Mephibosheth"],
+    refs=[("2 Samuel", 4, 4)], videos=[],
+    desc='Jonathan&rsquo;s son and Saul&rsquo;s grandson, five years old when the report of Gilboa came from Jezreel; his nurse took him up and fled, and in her haste he fell and became lame in his feet (<a href="2-samuel-4.html#v4-4">2 Samuel 4:4</a>, now on these pages). The name is the Samuel books&rsquo; form of the Merib-baal of 1 Chronicles 8:34, set beside Ish-bosheth and Eshbaal in the note at <a href="romans-11.html#n11-3">Romans 11</a>. ⭐ David will ask for him by the kindness he swore to Jonathan (2 Samuel 9:1&ndash;13, not yet on these pages).'))
+ENCYCLOPEDIA_ES["mephibosheth"] = ("Mefi-boset",
+    'Hijo de Jonatán y nieto de Saúl, de cinco años cuando llegó de Jezreel el informe de Gilboa; su nodriza lo tomó y huyó, y en su prisa cayó y quedó lisiado de los pies (<a href="2-samuel-4.es.html#v4-4">2 Samuel 4:4</a>, ya en estas páginas). El nombre es la forma de los libros de Samuel del Merib-baal de 1 Crónicas 8:34, puesto junto a Is-boset y Esbaal en la nota de <a href="romans-11.es.html#n11-3">Romanos 11</a>. ⭐ David preguntará por él por la bondad que juró a Jonatán (2 Samuel 9:1–13, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="rechab-baanah", name="Rechab and Baanah", kind="person", aliases=["Rechab", "Baanah"],
+    refs=[("2 Samuel", 4, 2), ("2 Samuel", 4, 5), ("2 Samuel", 4, 9)], videos=[],
+    desc='Two brothers, sons of Rimmon the Beerothite, chiefs of Ish-bosheth&rsquo;s raiding bands. They enter his house at noon as fetchers of wheat, strike him in the belly, take his head to <a href="encyclopedia.html#hebron">Hebron</a> and ask David for a reward; David has them killed, their hands and feet cut off, and their bodies hanged by the pool (<a href="2-samuel-4.html#v4-2">2 Samuel 4:2&ndash;12</a>, now on these pages).'))
+ENCYCLOPEDIA_ES["rechab-baanah"] = ("Recab y Baana",
+    'Dos hermanos, hijos de Rimón el beerotita, jefes de las bandas de incursores de Is-boset. Entran en su casa al mediodía como quienes vienen a buscar trigo, lo hieren en el vientre, llevan su cabeza a <a href="enciclopedia.html#hebron">Hebrón</a> y piden una recompensa a David; David los manda matar, les corta las manos y los pies, y cuelga sus cuerpos junto al estanque (<a href="2-samuel-4.es.html#v4-2">2 Samuel 4:2–12</a>, ya en estas páginas).')
+
+_REFS4 = {
+    "ish-bosheth": [("2 Samuel", 4, 1), ("2 Samuel", 4, 5), ("2 Samuel", 4, 8), ("2 Samuel", 4, 12)],
+    "abner": [("2 Samuel", 4, 1), ("2 Samuel", 4, 12)],
+    "hebron": [("2 Samuel", 4, 1), ("2 Samuel", 4, 8), ("2 Samuel", 4, 12)],
+    "jonathan": [("2 Samuel", 4, 4)],
+    "jezreel": [("2 Samuel", 4, 4)],
+    "benjamin": [("2 Samuel", 4, 2)],
+    "beeroth": [("2 Samuel", 4, 2), ("2 Samuel", 4, 5)],
+    "ziklag": [("2 Samuel", 4, 10)],
+    "saul-king": [("2 Samuel", 4, 4), ("2 Samuel", 4, 8)],
+}
+LINK_OVERRIDES.append(("2 Samuel", 4, 4, "Jezreel", 1, "jezreel"))
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS4:
+        _e["refs"] = list(_e["refs"]) + _REFS4[_e["slug"]]
+    if _e["slug"] == "ish-bosheth":
+        _e["desc"] = _swap4(_e["desc"], "Two men of Beeroth will murder him (2 Samuel 4, not yet on these pages).", 'Two men of Beeroth, <a href="encyclopedia.html#rechab-baanah">Rechab and Baanah</a>, murder him in his bed at noon, take his head to David, and are put to death (<a href="2-samuel-4.html#v4-5">2 Samuel 4:5&ndash;12</a>, now on these pages); his head is buried in Abner&rsquo;s grave at Hebron.')
+    elif _e["slug"] == "beeroth":
+        _e["desc"] = _swap4(_e["desc"], "and 2 Samuel 4:2 says so in as many words", 'and <a href="2-samuel-4.html#v4-2">2 Samuel 4:2</a> (now on these pages) says so in as many words')
+        _e["desc"] = _swap4(_e["desc"], "(2 Samuel 23:37; none of these yet on these pages)", "(2 Samuel 23:37; neither 21:2 nor 23:37 is yet on these pages)")
+    elif _e["slug"] == "abner":
+        _e["desc"] += ' ⭐ His death leaves Ish-bosheth&rsquo;s hands slack, and Ish-bosheth&rsquo;s head is buried in his grave at Hebron (<a href="2-samuel-4.html#v4-1">2 Samuel 4:1, 12</a>, now on these pages).'
+_ES4 = {
+    "ish-bosheth": ("Dos hombres de Beerot lo asesinar&aacute;n (2 Samuel 4, todav&iacute;a no en estas p&aacute;ginas).", 'Dos hombres de Beerot, <a href="enciclopedia.html#rechab-baanah">Recab y Baana</a>, lo asesinan en su cama al mediod&iacute;a, llevan su cabeza a David, y son muertos (<a href="2-samuel-4.es.html#v4-5">2 Samuel 4:5&ndash;12</a>, ya en estas p&aacute;ginas); su cabeza es sepultada en el sepulcro de Abner en Hebr&oacute;n.'),
+    "beeroth": ("2 Samuel 4:2 lo dice con todas las letras", '<a href="2-samuel-4.es.html#v4-2">2 Samuel 4:2</a> (ya en estas páginas) lo dice con todas las letras'),
+}
+for _k, (_o, _n) in _ES4.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap4(_s[1], _o, _n))
+_s = ENCYCLOPEDIA_ES["beeroth"]
+ENCYCLOPEDIA_ES["beeroth"] = (_s[0], _swap4(_s[1], "(2 Samuel 23:37; ninguno todavía en estas páginas)", "(2 Samuel 23:37; ni 21:2 ni 23:37 está todavía en estas páginas)"))
+_s = ENCYCLOPEDIA_ES["abner"]
+ENCYCLOPEDIA_ES["abner"] = (_s[0], _s[1] + ' ⭐ Su muerte deja flojas las manos de Is-boset, y la cabeza de Is-boset es sepultada en su sepulcro en Hebrón (<a href="2-samuel-4.es.html#v4-1">2 Samuel 4:1, 12</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["2sam4"] = dict(era="monarchy",
+    when="Hebron: Ish-bosheth’s hands grow slack at Abner’s death; Jonathan’s son Mephibosheth is lame from a fall at five; Rechab and Baanah of Beeroth, chiefs of Ish-bosheth’s raiding bands, strike him in the belly at noon and carry his head to David, who answers with the oath that he has been redeemed from all distress, reminds them of the bringer of good news killed at Ziklag, and has them put to death, their hands and feet cut off and their bodies hanged by the pool at Hebron, while Ish-bosheth’s head is buried in Abner’s grave.",
+    clock="Undated: within David’s seven years and six months at Hebron (2 Samuel 2:11), after Abner’s death (3:27) and within Ish-bosheth’s two years (2:10).")
+
+CHAPTER_ART["2sam4"] = [dict(
+    file="ish-bosheth-murdered-panel.jpg",
+    title="Rechab and Baanah murder Ish-bosheth", title_es="Recab y Baana asesinan a Is-boset",
+    artist="Philips Galle, after Gerard van Groeningen",
+    year="1575",
+    location="Rijksmuseum, Amsterdam (RP-P-2015-10-114, plate 27 of 48)", location_es="Rijksmuseum, Ámsterdam (RP-P-2015-10-114, lámina 27 de 48)",
+    alt="A black-and-white engraving. In the foreground two armoured men in plumed helmets stand over a bearded man bent forward on a bed; the one at the left grips his head and lays a blade against his neck while the other strides forward with a drawn sword. At the right lie sleeping or fallen figures, and beyond them a town gate with small figures in the street. The title “Integritas” runs across the top and the reference “2. Sam. 4. 5.” stands under the picture.",
+    note="2 Samuel 4:5–7. Rechab and Baanah come about the heat of the day to the house of Ish-bosheth, enter as fetchers of wheat, strike him in the belly as he lies on his bed in his bedchamber, and remove his head. This panel is from the same Latin series on David’s life as the print at 2 Samuel 3, and carries the reference to verse 5 under the picture. It shows the murder as an open attack with swords; the Hebrew has the brothers come in under a pretext, and the Greek has a sleeping doorkeeper, and the print follows neither.",
+    note_es="2 Samuel 4:5–7. Recab y Baana llegan hacia el calor del día a la casa de Is-boset, entran como quienes vienen a buscar trigo, lo hieren en el vientre mientras yace sobre su cama en su alcoba, y le quitan la cabeza. Este panel es de la misma serie latina sobre la vida de David que el grabado de 2 Samuel 3, y lleva la referencia al versículo 5 bajo la imagen. Muestra el asesinato como un ataque abierto con espadas; el hebreo hace entrar a los hermanos con un pretexto, y el griego tiene una portera dormida, y el grabado no sigue ninguno de los dos.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
+)]
