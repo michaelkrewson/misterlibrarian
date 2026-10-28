@@ -52525,3 +52525,137 @@ CHRON_CHAPTERS["2sam7"] = dict(era="monarchy",
     clock="After the ark is set in its tent (2 Samuel 6:17) and the Philistine victories (5:17–25); the chapter says only that it was the night after Nathan’s first answer, and that Jehovah had given the king rest round about (7:1). It does not date itself within David’s forty years (5:4).")
 
 ART_SKIPPED['2sam7'] = ("Searched Wikimedia Commons on 2026-10-28 for Nathan's promise to David, David praying before the ark, and a house of cedar or the tabernacle; the hits were book scans and scenes from other chapters (Nathan's rebuke in 2 Samuel 12, and the Brunoff and Galle prints, which skip this chapter), and no picture fits the chapter, so none is recorded.")
+# --- 2 Samuel 8 ---
+def _swap8(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D8 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict8_en(slug, old=None, new=None, add=None):
+    _i = _D8[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap8(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict8_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap8(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("methegh", "metheg", "מֶתֶג", "metheg",
+    'A BRIDLE &mdash; <em>metheg</em>, the bit or bridle of a horse or donkey (Psalm 32:9; Proverbs 26:3, not yet on these pages). <a href="2-samuel-8.html#v8-1">2 Samuel 8:1</a> (now on these pages) says David took &lsquo;Metheg-ha-ammah&rsquo; out of the hand of the Philistines; <span data-heb="מתג האמה">the name stands in one verse of the Hebrew Bible</span>. <em>Ammah</em> is a cubit, a forearm or a conduit, and some read the whole &lsquo;the bridle of the mother (city)&rsquo;, while the Chronicles have &lsquo;Gath and its towns&rsquo; in its place (1 Chronicles 18:1, not yet on these pages). ⚠ Nothing in the Hebrew says what it was.',
+    ("2 Samuel", 8, 1)))
+DICTIONARY_ES["methegh"] = ("méteg",
+    'UN FRENO &mdash; <em>metheg</em>, el bocado o freno de un caballo o un asno (Salmo 32:9; Proverbios 26:3, todavía no en estas páginas). <a href="2-samuel-8.es.html#v8-1">2 Samuel 8:1</a> (ya en estas páginas) dice que David tomó «Meteg-ha-ama» de mano de los filisteos; <span data-heb="מתג האמה">el nombre está en un versículo de la Biblia hebrea</span>. <em>Ammah</em> es un codo, un antebrazo o una conducción de agua, y algunos leen el conjunto «el freno de la ciudad madre», mientras que Crónicas tiene «Gat y sus aldeas» en su lugar (1 Crónicas 18:1, todavía no en estas páginas). ⚠ Nada en el hebreo dice qué era.')
+
+DICTIONARY.append(("shelet", "shelet", "שֶׁלֶט", "shelet",
+    'A GOLD SHIELD (?) &mdash; <em>shelet</em>, the gold things on the servants of Hadadezer that David took and brought to Jerusalem (<a href="2-samuel-8.html#v8-7">2 Samuel 8:7</a>, now on these pages). <span data-heb="שלטי הזהב">&lsquo;The shields of gold&rsquo; stands in two verses of the Hebrew Bible</span>, this one and 1 Chronicles 18:7 (not yet on these pages). ⚠ The meaning is not certain: the shelf has &lsquo;shields&rsquo; (ASV, NIV), &lsquo;circular shields&rsquo; (NWT 1984) and &lsquo;arms&rsquo; (Douay), and the Greek &lsquo;bracelets&rsquo;.',
+    ("2 Samuel", 8, 7)))
+DICTIONARY_ES["shelet"] = ("shélet",
+    'UN ESCUDO DE ORO (?) &mdash; <em>shelet</em>, las cosas de oro sobre los siervos de Hadad-ezer que David tomó y trajo a Jerusalén (<a href="2-samuel-8.es.html#v8-7">2 Samuel 8:7</a>, ya en estas páginas). <span data-heb="שלטי הזהב">«Los escudos de oro» está en dos versículos de la Biblia hebrea</span>, este y 1 Crónicas 18:7 (todavía no en estas páginas). ⚠ El significado no es seguro: los estantes tienen «escudos» (RV 1909, RV60), «escudos circulares» (TNM 1987) y en inglés «arms» (Douay), y el griego «brazaletes».')
+
+DICTIONARY.append(("nitsav", "nitsav", "נִצָּב", "nitsav",
+    'A STATIONED ONE, A GARRISON &mdash; <em>nitsav</em>, a participle of &lsquo;to stand&rsquo;: Saul&rsquo;s servants &lsquo;stationed about him&rsquo; (<a href="1-samuel-22.html#v22-6">1 Samuel 22:6</a>, already on these pages), and the garrisons David sets in Aram of Damascus and in Edom (<a href="2-samuel-8.html#v8-6">2 Samuel 8:6, 14</a>, now on these pages). The shelf has &lsquo;garrisons&rsquo;, &lsquo;soldiers&rsquo; (Geneva) and &lsquo;guards&rsquo; (Douay).',
+    ("2 Samuel", 8, 6)))
+DICTIONARY_ES["nitsav"] = ("nitsav",
+    'UN APOSTADO, UNA GUARNICIÓN &mdash; <em>nitsav</em>, participio de «estar de pie»: los siervos de Saúl «apostados alrededor de él» (<a href="1-samuel-22.es.html#v22-6">1 Samuel 22:6</a>, ya en estas páginas), y las guarniciones que David pone en Aram de Damasco y en Edom (<a href="2-samuel-8.es.html#v8-6">2 Samuel 8:6, 14</a>, ya en estas páginas). Los estantes tienen «guarniciones», y en inglés «soldiers» (Geneva) y «guards» (Douay).')
+
+_dict8_en("aqar", "(2 Samuel 8:4; 1 Chronicles 18:4, neither yet on these pages)", '(<a href="2-samuel-8.html#v8-4">2 Samuel 8:4</a>, now on these pages; 1 Chronicles 18:4, not yet on these pages)')
+_dict8_es("aqar", "(2 Samuel 8:4; 1 Crónicas 18:4, ninguno todavía en estas páginas)", '(<a href="2-samuel-8.es.html#v8-4">2 Samuel 8:4</a>, ya en estas páginas; 1 Crónicas 18:4, todavía no en estas páginas)')
+_dict8_en("mishpat", add=' ⭐ &lsquo;David was doing justice and righteousness for all his people&rsquo; (<a href="2-samuel-8.html#v8-15">2 Samuel 8:15</a>, now on these pages); <span data-heb="עשה משפט וצדקה">the phrase stands in nine verses of the Hebrew Bible</span>.')
+_dict8_es("mishpat", add=' ⭐ «David hacía derecho y justicia a todo su pueblo» (<a href="2-samuel-8.es.html#v8-15">2 Samuel 8:15</a>, ya en estas páginas); <span data-heb="עשה משפט וצדקה">la frase está en nueve versículos de la Biblia hebrea</span>.')
+_dict8_en("tsedeq", add=' ⭐ The feminine <em>tsedaqah</em> is the &lsquo;righteousness&rsquo; David does for all his people (<a href="2-samuel-8.html#v8-15">2 Samuel 8:15</a>, now on these pages).')
+_dict8_es("tsedeq", add=' ⭐ El femenino <em>tsedaqah</em> es la «justicia» que David hace a todo su pueblo (<a href="2-samuel-8.es.html#v8-15">2 Samuel 8:15</a>, ya en estas páginas).')
+_dict8_en("shem", add=' ⭐ &lsquo;And David made a name when he returned from striking Aram in the Valley of Salt&rsquo; (<a href="2-samuel-8.html#v8-13">2 Samuel 8:13</a>, now on these pages), after Jehovah&rsquo;s &lsquo;I will make for you a great name&rsquo; (<a href="2-samuel-7.html#v7-9">2 Samuel 7:9</a>).')
+_dict8_es("shem", add=' ⭐ «Y David se hizo un nombre cuando volvió de herir a Aram en el valle de la Sal» (<a href="2-samuel-8.es.html#v8-13">2 Samuel 8:13</a>, ya en estas páginas), tras el «haré para ti un gran nombre» de Jehová (<a href="2-samuel-7.es.html#v7-9">2 Samuel 7:9</a>).')
+_dict8_en("minchah", add=' ⭐ Moab and Aram become &lsquo;servants to David, bearers of tribute&rsquo; (<a href="2-samuel-8.html#v8-2">2 Samuel 8:2, 6</a>, now on these pages).')
+_dict8_es("minchah", add=' ⭐ Moab y Aram llegan a ser «siervos que llevaban tributo» para David (<a href="2-samuel-8.es.html#v8-2">2 Samuel 8:2, 6</a>, ya en estas páginas).')
+_dict8_en("nechoshet", add=' ⭐ David takes &lsquo;bronze, very much&rsquo; from Betah and Berothai (<a href="2-samuel-8.html#v8-8">2 Samuel 8:8</a>, now on these pages); the Chronicles say Solomon made the bronze sea and the pillars from it (1 Chronicles 18:8, not yet on these pages).')
+_dict8_es("nechoshet", add=' ⭐ David toma «bronce, muchísimo» de Beta y de Berotai (<a href="2-samuel-8.es.html#v8-8">2 Samuel 8:8</a>, ya en estas páginas); Crónicas dice que Salomón hizo con él el mar de bronce y las columnas (1 Crónicas 18:8, todavía no en estas páginas).')
+_dict8_en("yasha", add=' ⭐ &lsquo;Jehovah saved David wherever he went&rsquo; (<a href="2-samuel-8.html#v8-6">2 Samuel 8:6, 14</a>, now on these pages), answering &lsquo;I was with you wherever you went&rsquo; (<a href="2-samuel-7.html#v7-9">2 Samuel 7:9</a>).')
+_dict8_es("yasha", add=' ⭐ «Jehová salvó a David dondequiera que fue» (<a href="2-samuel-8.es.html#v8-6">2 Samuel 8:6, 14</a>, ya en estas páginas), en respuesta al «estuve contigo por dondequiera que fuiste» (<a href="2-samuel-7.es.html#v7-9">2 Samuel 7:9</a>).')
+
+ENCYCLOPEDIA.append(dict(slug="hadadezer", name="Hadadezer", kind="person", aliases=["Hadadezer"],
+    refs=[("2 Samuel", 8, 3), ("2 Samuel", 8, 5), ("2 Samuel", 8, 7), ("2 Samuel", 8, 9), ("2 Samuel", 8, 12)], videos=[],
+    desc='Son of Rehob and king of <a href="encyclopedia.html#zobah">Zobah</a>. David strikes him as he goes to turn back his hand at the Euphrates, captures his horsemen and hamstrings his chariot horses, strikes the Aram of Damascus that comes to help him, and takes his gold shields and the bronze of his cities Betah and Berothai; <a href="encyclopedia.html#toi">Toi</a> of Hamath, who had wars with him, sends David congratulations (<a href="2-samuel-8.html#v8-3">2 Samuel 8:3&ndash;12</a>, now on these pages). ⭐ The Chronicles spell the name Hadarezer (1 Chronicles 18:3, not yet on these pages).'))
+ENCYCLOPEDIA_ES["hadadezer"] = ("Hadad-ezer",
+    'Hijo de Rehob y rey de <a href="enciclopedia.html#zobah">Soba</a>. David lo hiere cuando iba a hacer volver su mano en el Éufrates, le captura los jinetes y desjarreta sus caballos de carros, hiere a Aram de Damasco que viene en su ayuda, y toma sus escudos de oro y el bronce de sus ciudades Beta y Berotai; <a href="enciclopedia.html#toi">Toi</a> de Hamat, que había tenido guerras con él, envía felicitaciones a David (<a href="2-samuel-8.es.html#v8-3">2 Samuel 8:3–12</a>, ya en estas páginas). ⭐ Crónicas escribe el nombre Hadarézer (1 Crónicas 18:3, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="toi", name="Toi", kind="person", aliases=["Toi"],
+    refs=[("2 Samuel", 8, 9), ("2 Samuel", 8, 10)], videos=[],
+    desc='King of <a href="encyclopedia.html#hamath">Hamath</a>, an enemy of <a href="encyclopedia.html#hadadezer">Hadadezer</a>, who hears of David&rsquo;s victory and sends his son Joram with vessels of silver, gold and bronze to ask after his welfare and bless him; David dedicates the gifts to Jehovah (<a href="2-samuel-8.html#v8-9">2 Samuel 8:9&ndash;11</a>, now on these pages). ⭐ The Chronicles have &lsquo;Tou&rsquo; and his son &lsquo;Hadoram&rsquo; (1 Chronicles 18:9&ndash;10, not yet on these pages).'))
+ENCYCLOPEDIA_ES["toi"] = ("Toi",
+    'Rey de <a href="enciclopedia.html#hamath">Hamat</a>, enemigo de <a href="enciclopedia.html#hadadezer">Hadad-ezer</a>, que oye de la victoria de David y envía a su hijo Joram con utensilios de plata, oro y bronce para preguntar por su bienestar y bendecirlo; David dedica los regalos a Jehová (<a href="2-samuel-8.es.html#v8-9">2 Samuel 8:9–11</a>, ya en estas páginas). ⭐ Crónicas tiene «Tou» y a su hijo «Hadoram» (1 Crónicas 18:9–10, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="zobah", name="Zobah", kind="place", aliases=["Zobah"],
+    coords=(33.9, 36.2, 1.0), approx=True,
+    refs=[("2 Samuel", 8, 3), ("2 Samuel", 8, 5), ("2 Samuel", 8, 8), ("2 Samuel", 8, 12)], videos=[],
+    desc='An Aramean kingdom whose kings Saul fought (<a href="1-samuel-14.html#v14-47">1 Samuel 14:47</a>, already on these pages) and whose king <a href="encyclopedia.html#hadadezer">Hadadezer</a> son of Rehob David strikes (<a href="2-samuel-8.html#v8-3">2 Samuel 8:3&ndash;12</a>, now on these pages). Its site is not fixed; the coordinates are a rough point in the region north and east of Damascus, not a located city.'))
+ENCYCLOPEDIA_ES["zobah"] = ("Soba",
+    'Un reino arameo cuyos reyes combatió Saúl (<a href="1-samuel-14.es.html#v14-47">1 Samuel 14:47</a>, ya en estas páginas) y cuyo rey <a href="enciclopedia.html#hadadezer">Hadad-ezer</a> hijo de Rehob hiere David (<a href="2-samuel-8.es.html#v8-3">2 Samuel 8:3–12</a>, ya en estas páginas). Su sitio no está fijado; las coordenadas son un punto aproximado en la región al norte y al este de Damasco, no una ciudad localizada.')
+ENCYCLOPEDIA.append(dict(slug="valley-of-salt", name="The Valley of Salt", kind="place", aliases=["Valley of Salt"],
+    coords=(31.1, 35.4, 0.8), approx=True,
+    refs=[("2 Samuel", 8, 13)], videos=[],
+    desc='The place where David &lsquo;made a name&rsquo; after striking eighteen thousand &mdash; &lsquo;Aram&rsquo; in the Hebrew, Edom in the Chronicles and the Greek (<a href="2-samuel-8.html#v8-13">2 Samuel 8:13</a>, now on these pages). <span data-heb="גיא מלח">The name stands in two verses of the Hebrew Bible</span>, the other being the title of Psalm 60 (not yet on these pages). Its site is debated; the coordinates are a rough point south of the Dead Sea, not a located valley.'))
+ENCYCLOPEDIA_ES["valley-of-salt"] = ("El valle de la Sal",
+    'El lugar donde David «se hizo un nombre» tras herir a dieciocho mil — «Aram» en el hebreo, Edom en Crónicas y el griego (<a href="2-samuel-8.es.html#v8-13">2 Samuel 8:13</a>, ya en estas páginas). <span data-heb="גיא מלח">El nombre está en dos versículos de la Biblia hebrea</span>, el otro el título del Salmo 60 (todavía no en estas páginas). Su sitio se discute; las coordenadas son un punto aproximado al sur del mar Muerto, no un valle localizado.')
+ENCYCLOPEDIA.append(dict(slug="cherethites-pelethites", name="The Cherethites and the Pelethites", kind="people", aliases=["Cherethites", "Pelethites"],
+    refs=[("2 Samuel", 8, 18)], videos=[],
+    desc='David&rsquo;s guard under <a href="encyclopedia.html#benaiah">Benaiah</a> son of Jehoiada (<a href="2-samuel-8.html#v8-18">2 Samuel 8:18</a>, now on these pages). The Cherethites are named earlier as a people of the south whose Negev was raided (<a href="1-samuel-30.html#v30-14">1 Samuel 30:14</a>, already on these pages); the Cherethites and Pelethites go down with Solomon to Gihon (<a href="1-kings-1.html#v38">1 Kings 1:38, 44</a>, already on these pages). ⭐ <span data-heb="הכרתי והפלתי">The pair stands in five verses of the Hebrew Bible</span>.'))
+ENCYCLOPEDIA_ES["cherethites-pelethites"] = ("Los cereteos y los peleteos",
+    'La guardia de David bajo <a href="enciclopedia.html#benaiah">Benaía</a> hijo de Joiada (<a href="2-samuel-8.es.html#v8-18">2 Samuel 8:18</a>, ya en estas páginas). Los cereteos se nombran antes como un pueblo del sur cuyo Néguev fue asaltado (<a href="1-samuel-30.es.html#v30-14">1 Samuel 30:14</a>, ya en estas páginas); los cereteos y los peleteos bajan con Salomón a Guihón (<a href="1-kings-1.es.html#v38">1 Reyes 1:38, 44</a>, ya en estas páginas). ⭐ <span data-heb="הכרתי והפלתי">El par está en cinco versículos de la Biblia hebrea</span>.')
+ENCYCLOPEDIA.append(dict(slug="zadok", name="Zadok", kind="person", aliases=["Zadok"],
+    refs=[("2 Samuel", 8, 17)], videos=[],
+    desc='A priest, son of Ahitub, named for the first time in the Hebrew Bible in the list of David&rsquo;s officers, beside Ahimelech son of Abiathar (<a href="2-samuel-8.html#v8-17">2 Samuel 8:17</a>, now on these pages). ⭐ He is one of those who go down with Benaiah and the Cherethites and Pelethites to mount Solomon at Gihon, and he takes the horn of oil from the tent (<a href="1-kings-1.html#v38">1 Kings 1:38&ndash;39</a>, already on these pages).'))
+ENCYCLOPEDIA_ES["zadok"] = ("Sadoc",
+    'Un sacerdote, hijo de Ahitub, nombrado por primera vez en la Biblia hebrea en la lista de oficiales de David, junto a Ahimelec hijo de Abiatar (<a href="2-samuel-8.es.html#v8-17">2 Samuel 8:17</a>, ya en estas páginas). ⭐ Es uno de los que bajan con Benaía y los cereteos y peleteos para montar a Salomón en Guihón, y toma el cuerno de aceite de la tienda (<a href="1-kings-1.es.html#v38">1 Reyes 1:38–39</a>, ya en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="abiathar", name="Abiathar", kind="person", aliases=["Abiathar"],
+    refs=[("2 Samuel", 8, 17)], videos=[],
+    desc='The one son of the priest Ahimelech who escaped the slaughter at Nob and fled to David with an ephod (<a href="1-samuel-22.html#v22-20">1 Samuel 22:20</a>; <a href="1-samuel-23.html#v23-6">23:6</a>, already on these pages). In the list of David&rsquo;s officers the Hebrew has the pair reversed, &lsquo;Ahimelech son of Abiathar&rsquo; as priest beside Zadok (<a href="2-samuel-8.html#v8-17">2 Samuel 8:17</a>, now on these pages), and the Chronicles &lsquo;Abimelech son of Abiathar&rsquo; (1 Chronicles 18:16, not yet on these pages).'))
+ENCYCLOPEDIA_ES["abiathar"] = ("Abiatar",
+    'El único hijo del sacerdote Ahimelec que escapó de la matanza de Nob y huyó a David con un efod (<a href="1-samuel-22.es.html#v22-20">1 Samuel 22:20</a>; <a href="1-samuel-23.es.html#v23-6">23:6</a>, ya en estas páginas). En la lista de oficiales de David el hebreo tiene el par invertido, «Ahimelec hijo de Abiatar» como sacerdote junto a Sadoc (<a href="2-samuel-8.es.html#v8-17">2 Samuel 8:17</a>, ya en estas páginas), y Crónicas «Abimelec hijo de Abiatar» (1 Crónicas 18:16, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="benaiah", name="Benaiah", kind="person", aliases=["Benaiah"],
+    refs=[("2 Samuel", 8, 18)], videos=[],
+    desc='Son of Jehoiada, over the <a href="encyclopedia.html#cherethites-pelethites">Cherethites and the Pelethites</a> in the list of David&rsquo;s officers (<a href="2-samuel-8.html#v8-18">2 Samuel 8:18</a>, now on these pages). ⭐ He is among those who were not with Adonijah and who go down with Zadok and Nathan to mount Solomon at Gihon (<a href="1-kings-1.html#v8">1 Kings 1:8, 32&ndash;38</a>, already on these pages).'))
+ENCYCLOPEDIA_ES["benaiah"] = ("Benaía",
+    'Hijo de Joiada, sobre <a href="enciclopedia.html#cherethites-pelethites">los cereteos y los peleteos</a> en la lista de oficiales de David (<a href="2-samuel-8.es.html#v8-18">2 Samuel 8:18</a>, ya en estas páginas). ⭐ Está entre los que no estaban con Adonías y que bajan con Sadoc y Natán para montar a Salomón en Guihón (<a href="1-kings-1.es.html#v8">1 Reyes 1:8, 32–38</a>, ya en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="davids-officials", name="David&rsquo;s recorder and scribe", kind="people", aliases=["Jehoshaphat son of Ahilud", "Seraiah"],
+    refs=[("2 Samuel", 8, 16), ("2 Samuel", 8, 17)], videos=[],
+    desc='Jehoshaphat son of Ahilud, the recorder, and Seraiah, the scribe, in the list of David&rsquo;s officers beside Joab over the army, Zadok and Abiathar&rsquo;s son the priests, and Benaiah (<a href="2-samuel-8.html#v8-16">2 Samuel 8:16&ndash;17</a>, now on these pages). The later lists name the scribe Sheva (2 Samuel 20:25) and Shavsha (1 Chronicles 18:16), none of them yet on these pages.'))
+ENCYCLOPEDIA_ES["davids-officials"] = ("El cronista y el escriba de David",
+    'Josafat hijo de Ahilud, el cronista, y Seraías, el escriba, en la lista de oficiales de David junto a Joab sobre el ejército, Sadoc y el hijo de Abiatar los sacerdotes, y Benaía (<a href="2-samuel-8.es.html#v8-16">2 Samuel 8:16–17</a>, ya en estas páginas). Las listas posteriores nombran al escriba Seva (2 Samuel 20:25) y Savsa (1 Crónicas 18:16), ninguna todavía en estas páginas.')
+
+_REFS8 = {
+    "philistines": [("2 Samuel", 8, 1), ("2 Samuel", 8, 12)],
+    "moab": [("2 Samuel", 8, 2), ("2 Samuel", 8, 12)],
+    "euphrates": [("2 Samuel", 8, 3)],
+    "aram": [("2 Samuel", 8, 5), ("2 Samuel", 8, 6), ("2 Samuel", 8, 12), ("2 Samuel", 8, 13)],
+    "damascus": [("2 Samuel", 8, 5), ("2 Samuel", 8, 6)],
+    "hamath": [("2 Samuel", 8, 9)],
+    "ammon": [("2 Samuel", 8, 12)],
+    "amalek": [("2 Samuel", 8, 12)],
+    "edom": [("2 Samuel", 8, 14)],
+    "joab": [("2 Samuel", 8, 16)],
+    "zeruiah": [("2 Samuel", 8, 16)],
+    "jerusalem": [("2 Samuel", 8, 7)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS8:
+        _e["refs"] = list(_e["refs"]) + _REFS8[_e["slug"]]
+
+CHRON_CHAPTERS["2sam8"] = dict(era="monarchy",
+    when="After the ark and Jehovah’s promise: David subdues the Philistines and takes Metheg-ha-ammah; strikes Moab and measures them with the line, two lines to death and one full line to life; strikes Hadadezer son of Rehob of Zobah, captures his horsemen and hamstrings the chariot horses, strikes Aram of Damascus that comes to help him and sets garrisons there, and takes gold shields and bronze to Jerusalem; Toi of Hamath sends his son Joram with silver, gold and bronze, and David dedicates all to Jehovah; he makes a name in the Valley of Salt, sets garrisons in all Edom, reigns over all Israel doing justice and righteousness, and the chapter lists his officers.",
+    clock="After the promise of 2 Samuel 7; the chapter opens “after this” and gives no dates, only a summary of campaigns and a list of officers, and does not place them within David’s forty years (5:4).")
+
+CHAPTER_ART["2sam8"] = [dict(
+    file="tissot-moabites-taken-prisoner.jpg",
+    title="The Moabites taken prisoner", title_es="Los moabitas prisioneros",
+    artist="James Tissot",
+    year="1900",
+    location="John Rylands Library, Manchester (Special Collections R16279)", location_es="Biblioteca John Rylands, Mánchester (Colecciones Especiales R16279)",
+    alt="A pen-and-ink sketch. Long rows of bodies lie side by side on the ground, running in two bands from the foreground back toward the middle distance, with a bare path between them. A few standing figures in robes and with staves stand beside the rows, one pointing a staff or arm along them, and at the far left a group of robed figures stands close together. Behind them are crowds of upright figures, a flat expanse of water or plain, and a steep ridged hillside across the top.",
+    note="2 Samuel 8:2. David strikes Moab and measures them with the line, making them lie down on the ground, two lines to put to death and one full line to keep alive. This is one of Tissot’s pen sketches for his Old Testament illustrations, published after his death by Maurice Brunoff in 1904. It shows the Moabites laid out in rows and measured; the Hebrew counts lines and not persons, the Greek has two lines for life, and neither describes the scene beyond the measuring.",
+    note_es="2 Samuel 8:2. David hiere a Moab y los mide con el cordel, haciéndolos tender por tierra, dos cordeles para darles muerte y un cordel entero para dejarlos vivos. Es uno de los bocetos a pluma de Tissot para sus ilustraciones del Antiguo Testamento, publicados tras su muerte por Maurice Brunoff en 1904. Muestra a los moabitas tendidos en hileras y medidos; el hebreo cuenta cordeles y no personas, el griego tiene dos cordeles para la vida, y ninguno describe la escena más allá de la medición.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_298_Moabites_taken_prisoner_2_Samuel_8_2_for_Brunoff_285_Les_Moabites_prisonniers.jpg",
+)]
