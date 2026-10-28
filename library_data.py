@@ -52887,3 +52887,133 @@ CHAPTER_ART["2sam10"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Hanun_humiliates_David%27s_ambassadors.gif",
 )]
+
+# --- 2 Samuel 11 ---
+def _swap11(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D11 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict11_en(slug, old=None, new=None, add=None):
+    _i = _D11[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap11(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict11_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap11(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency11_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap11(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency11_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap11(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+DICTIONARY.append(("rachatz", "rachatz", "רָחַץ", "rachatz",
+    'TO WASH, to bathe &mdash; the body or a part of it, as against <em>kavas</em>, to launder cloth (the verb of &lsquo;Wash me thoroughly&rsquo;, <a href="psalms-51.html#v51-4">Psalm 51:4</a>, already on these pages). The woman David sees from the roof is <em>rochetzet</em>, washing (<a href="2-samuel-11.html#v11-2">2 Samuel 11:2</a>, now on these pages), and David tells Uriah &lsquo;Go down to your house, and wash your feet&rsquo; (<a href="2-samuel-11.html#v11-8">11:8</a>). After the child dies David &lsquo;arose from the earth, and washed&rsquo; (2 Samuel 12:20, not yet on these pages).',
+    ("2 Samuel", 11, 2)))
+DICTIONARY_ES["rachatz"] = ("rájatz",
+    'LAVAR, bañar &mdash; el cuerpo o una parte de él, frente a <em>kavas</em>, lavar tela (el verbo de «Lávame por completo», <a href="psalms-51.es.html#v51-4">Salmo 51:4</a>, ya en estas páginas). La mujer que David ve desde el terrado es <em>rochetzet</em>, que se lava (<a href="2-samuel-11.es.html#v11-2">2 Samuel 11:2</a>, ya en estas páginas), y David dice a Urías «Baja a tu casa, y lávate los pies» (<a href="2-samuel-11.es.html#v11-8">11:8</a>). Cuando muere el niño, David «se levantó de la tierra, y se lavó» (2 Samuel 12:20, todavía no en estas páginas).')
+
+DICTIONARY.append(("sapad", "sapad", "סָפַד", "sapad",
+    'TO MOURN, to lament aloud &mdash; the verb of David&rsquo;s order at Abner&rsquo;s death, &lsquo;mourn before Abner&rsquo; (<a href="2-samuel-3.html#v3-31">2 Samuel 3:31</a>, already on these pages), and of the mourning for Saul, &lsquo;they mourned and wept and fasted until the evening&rsquo; (<a href="2-samuel-1.html#v1-12">2 Samuel 1:12</a>). In <a href="2-samuel-11.html#v11-26">2 Samuel 11:26</a> (now on these pages) it is what Uriah&rsquo;s wife does for her husband.',
+    ("2 Samuel", 1, 12)))
+DICTIONARY_ES["sapad"] = ("sapád",
+    'HACER DUELO, lamentarse en voz alta &mdash; el verbo de la orden de David a la muerte de Abner, «hagan duelo delante de Abner» (<a href="2-samuel-3.es.html#v3-31">2 Samuel 3:31</a>, ya en estas páginas), y del duelo por Saúl, «hicieron duelo, y lloraron, y ayunaron hasta la tarde» (<a href="2-samuel-1.es.html#v1-12">2 Samuel 1:12</a>). En <a href="2-samuel-11.es.html#v11-26">2 Samuel 11:26</a> (ya en estas páginas) es lo que hace la mujer de Urías por su marido.')
+
+_dict11_en("shalach", add=' ⭐ <a href="2-samuel-11.html#v11-1">2 Samuel 11</a> (now on these pages) is built on it: David sends Joab (verse 1), sends to inquire after the woman (3), sends messengers and takes her (4), sends to Joab for Uriah (6), sends the letter by Uriah&rsquo;s hand (14) and sends and gathers her into his house (27); Bathsheba &lsquo;sent&rsquo; to tell him (5) and Joab &lsquo;sent&rsquo; the report (18).')
+_dict11_es("shalach", add=' ⭐ <a href="2-samuel-11.es.html#v11-1">2 Samuel 11</a> (ya en estas páginas) está construido sobre él: David envía a Joab (versículo 1), envía a preguntar por la mujer (3), envía mensajeros y la toma (4), envía a Joab por Urías (6), envía la carta por mano de Urías (14) y envía y la recoge en su casa (27); Betsabé «envió» a hacérselo saber (5) y Joab «envió» el informe (18).')
+_dict11_en("shalom", add=' ⭐ David asks Uriah after the <em>shalom</em> of Joab, of the people and of the war itself (<a href="2-samuel-11.html#v11-7">2 Samuel 11:7</a>, now on these pages).')
+_dict11_es("shalom", add=' ⭐ David pregunta a Urías por el <em>shalom</em> de Joab, del pueblo y de la guerra misma (<a href="2-samuel-11.es.html#v11-7">2 Samuel 11:7</a>, ya en estas páginas).')
+_dict11_en("asaf", add=' ⭐ Of a woman: David &lsquo;sent and gathered&rsquo; Bathsheba into his house once the mourning had passed (<a href="2-samuel-11.html#v11-27">2 Samuel 11:27</a>, now on these pages), after he had &lsquo;taken&rsquo; her in verse 4.')
+_dict11_es("asaf", add=' ⭐ De una mujer: David «envió y recogió» a Betsabé en su casa pasado el luto (<a href="2-samuel-11.es.html#v11-27">2 Samuel 11:27</a>, ya en estas páginas), tras haberla «tomado» en el versículo 4.')
+_dict11_en("niddah", add=' ⭐ The uncleanness of <a href="2-samuel-11.html#v11-4">2 Samuel 11:4</a> (now on these pages), from which Bathsheba &lsquo;was sanctifying herself&rsquo;, is usually read as the end of this separation (Leviticus 15:19&ndash;28); the Hebrew says only what she was doing.')
+_dict11_es("niddah", add=' ⭐ La impureza de <a href="2-samuel-11.es.html#v11-4">2 Samuel 11:4</a> (ya en estas páginas), de la cual Betsabé «se estaba santificando», suele leerse como el fin de esta separación (Levítico 15:19–28); el hebreo dice solo lo que ella estaba haciendo.')
+_dict11_en("qadash", add=' ⭐ In the reflexive stem of a woman: Bathsheba &lsquo;sanctifying herself from her uncleanness&rsquo; (<a href="2-samuel-11.html#v11-4">2 Samuel 11:4</a>, now on these pages). <span data-heb="מתקדשת">&lsquo;Sanctifying herself&rsquo; (<em>mitqaddeshet</em>) stands in one verse</span>.')
+_dict11_es("qadash", add=' ⭐ En la forma reflexiva, de una mujer: Betsabé «santificándose de su impureza» (<a href="2-samuel-11.es.html#v11-4">2 Samuel 11:4</a>, ya en estas páginas). <span data-heb="מתקדשת">«Santificándose» (<em>mitqaddeshet</em>) está en un versículo</span>.')
+_dict11_en("baal", add=' ⭐ When Uriah dies his wife &lsquo;mourned for her husband&rsquo;, <em>ba&rsquo;al</em>, after the verse has called him Uriah &lsquo;her man&rsquo;, <em>ish</em> (<a href="2-samuel-11.html#v11-26">2 Samuel 11:26</a>, now on these pages).')
+_dict11_es("baal", add=' ⭐ Cuando muere Urías su mujer «se lamentó por su marido», <em>ba&rsquo;al</em>, después de que el versículo lo ha llamado Urías «su hombre», <em>ish</em> (<a href="2-samuel-11.es.html#v11-26">2 Samuel 11:26</a>, ya en estas páginas).')
+_dict11_en("sefer", add=' ⭐ David writes a <em>sefer</em> to Joab and sends it &lsquo;by the hand of Uriah&rsquo;: the letter that carries Uriah&rsquo;s own death (<a href="2-samuel-11.html#v11-14">2 Samuel 11:14&ndash;15</a>, now on these pages).')
+_dict11_es("sefer", add=' ⭐ David escribe un <em>sefer</em> a Joab y lo envía «por mano de Urías»: la carta que lleva la propia muerte de Urías (<a href="2-samuel-11.es.html#v11-14">2 Samuel 11:14–15</a>, ya en estas páginas).')
+_dict11_en("sukkah", add=' ⭐ Uriah says &lsquo;The ark, and Israel, and Judah, are dwelling in booths&rsquo; (<a href="2-samuel-11.html#v11-11">2 Samuel 11:11</a>, now on these pages).')
+_dict11_es("sukkah", add=' ⭐ Urías dice «El arca, e Israel, y Judá, están morando en cabañas» (<a href="2-samuel-11.es.html#v11-11">2 Samuel 11:11</a>, ya en estas páginas).')
+_dict11_en("chayil", add=' ⭐ Joab puts Uriah &lsquo;at the place where he knew there were men of valor&rsquo;, <em>anshei chayil</em> (<a href="2-samuel-11.html#v11-16">2 Samuel 11:16</a>, now on these pages).')
+_dict11_es("chayil", add=' ⭐ Joab pone a Urías «en el lugar donde sabía que había hombres valientes», <em>anshei chayil</em> (<a href="2-samuel-11.es.html#v11-16">2 Samuel 11:16</a>, ya en estas páginas).')
+_dict11_en("chazaq", add=' ⭐ The root runs through three speeches: Joab&rsquo;s &lsquo;Be strong&rsquo; (10:12), David&rsquo;s letter &lsquo;the strong battle&rsquo; and his message &lsquo;make your battle strong against the city&rsquo; (<a href="2-samuel-11.html#v11-15">2 Samuel 11:15, 25</a>, now on these pages).')
+_dict11_es("chazaq", add=' ⭐ La raíz recorre tres discursos: el «Esfuérzate» de Joab (10:12), la «batalla fuerte» de la carta de David y su mensaje «haz fuerte tu batalla contra la ciudad» (<a href="2-samuel-11.es.html#v11-15">2 Samuel 11:15, 25</a>, ya en estas páginas).')
+_dict11_en("shachat", add=' ⭐ David sends Joab and all Israel and &lsquo;they ruined the sons of Ammon&rsquo; (<a href="2-samuel-11.html#v11-1">2 Samuel 11:1</a>, now on these pages).')
+_dict11_es("shachat", add=' ⭐ David envía a Joab y a todo Israel y «arruinaron a los hijos de Amón» (<a href="2-samuel-11.es.html#v11-1">2 Samuel 11:1</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="eliam", name="Eliam", kind="person", aliases=["Eliam"],
+    refs=[("2 Samuel", 11, 3)], videos=[],
+    desc='The father of <a href="encyclopedia.html#bathsheba">Bathsheba</a> (<a href="2-samuel-11.html#v11-3">2 Samuel 11:3</a>, now on these pages). An Eliam son of Ahithophel the Gilonite is listed among David&rsquo;s Thirty (2 Samuel 23:34, not yet on these pages); whether he is the same man, the text does not say. The Greek of 11:3 has <em>Eliab</em>, and the Chronicles give Bathsheba&rsquo;s father as Ammiel (1 Chronicles 3:5, not yet on these pages).'))
+ENCYCLOPEDIA_ES["eliam"] = ("Eliam",
+    'El padre de <a href="enciclopedia.html#bathsheba">Betsabé</a> (<a href="2-samuel-11.es.html#v11-3">2 Samuel 11:3</a>, ya en estas páginas). Un Eliam hijo de Ahitofel el gilonita figura entre los Treinta de David (2 Samuel 23:34, todavía no en estas páginas); si es el mismo hombre, el texto no lo dice. El griego de 11:3 tiene <em>Eliab</em>, y Crónicas da como padre de Betsabé a Amiel (1 Crónicas 3:5, todavía no en estas páginas).')
+
+_ency11_en("uriah", "the man David had killed to conceal an adultery (2 Samuel 11).", 'the man David had killed to conceal an adultery (<a href="2-samuel-11.html#v11-3">2 Samuel 11</a>, now on these pages).',
+    add=' ⭐ His name ends in Jehovah&rsquo;s, <em>Uriyyah</em>, &lsquo;Jehovah is my light&rsquo;. <span data-heb="אוריה החתי">&lsquo;Uriah the Hittite&rsquo; stands in ten verses</span>, five of them in that chapter (3, 6, 17, 21, 24).')
+_ency11_es("uriah", "el hombre a quien David hizo matar para tapar un adulterio (2 Samuel 11).", 'el hombre a quien David hizo matar para tapar un adulterio (<a href="2-samuel-11.es.html#v11-3">2 Samuel 11</a>, ya en estas páginas).',
+    add=' ⭐ Su nombre acaba en el de Jehová, <em>Uriyyah</em>, «Jehová es mi luz». <span data-heb="אוריה החתי">«Urías el heteo» está en diez versículos</span>, cinco de ellos en ese capítulo (3, 6, 17, 21, 24).')
+_ency11_en("bathsheba", "the great crime of 2 Samuel 11; mother of Solomon.", 'the great crime of <a href="2-samuel-11.html#v11-2">2 Samuel 11</a> (now on these pages); mother of Solomon. Her only words in that chapter are &lsquo;I am pregnant&rsquo; (verse 5), and the one who answers David&rsquo;s inquiry gives her a father and a husband before a name.')
+_ency11_es("bathsheba", "2 Samuel 11 no le da voz: David la ve, manda por ella, y el texto no dice qué quería ella", 'En <a href="2-samuel-11.es.html#v11-2">2 Samuel 11</a> (ya en estas páginas) sus únicas palabras son «Estoy encinta» (versículo 5): David la ve, manda por ella, y el texto no dice qué quería ella')
+_ency11_en("rabbah", "(2 Samuel 11:14-17)", '(<a href="2-samuel-11.html#v11-14">2 Samuel 11:14&ndash;17</a>, now on these pages)',
+    add=' ⭐ It is besieged while David stays in Jerusalem (<a href="2-samuel-11.html#v11-1">11:1</a>), and David tells Joab &lsquo;make your battle strong against the city, and tear it down&rsquo; (<a href="2-samuel-11.html#v11-25">11:25</a>).')
+_ency11_es("rabbah", "(2 Samuel 11:14-17)", '(<a href="2-samuel-11.es.html#v11-14">2 Samuel 11:14–17</a>, ya en estas páginas)',
+    add=' ⭐ Es sitiada mientras David se queda en Jerusalén (<a href="2-samuel-11.es.html#v11-1">11:1</a>), y David dice a Joab «haz fuerte tu batalla contra la ciudad, y derríbala» (<a href="2-samuel-11.es.html#v11-25">11:25</a>).')
+_ency11_en("ahimelech-hittite", "(2 Samuel 11:3; 23:39, not yet on these pages)", '(<a href="2-samuel-11.html#v11-3">2 Samuel 11:3</a>, now on these pages; 23:39, not yet on these pages)')
+_ency11_es("ahimelech-hittite", "(2 Samuel 11:3; 23:39, todavía no en estas páginas)", '(<a href="2-samuel-11.es.html#v11-3">2 Samuel 11:3</a>, ya en estas páginas; 23:39, todavía no en estas páginas)')
+_ency11_en("hittites", add=' ⭐ The best-known Hittite of the Samuel books is Uriah, Bathsheba&rsquo;s husband, who will not go down to his house while the ark and the army are in booths (<a href="2-samuel-11.html#v11-3">2 Samuel 11:3, 11</a>, now on these pages).')
+_ency11_es("hittites", add=' ⭐ El heteo más conocido de los libros de Samuel es Urías, el marido de Betsabé, que no quiere bajar a su casa mientras el arca y el ejército están en cabañas (<a href="2-samuel-11.es.html#v11-3">2 Samuel 11:3, 11</a>, ya en estas páginas).')
+_ency11_en("thebez", add=' ⭐ Joab recalls it in his message to David: &lsquo;Did not a woman throw an upper millstone on him from the wall, so that he died at Thebez?&rsquo; (<a href="2-samuel-11.html#v11-21">2 Samuel 11:21</a>, now on these pages).')
+_ency11_es("thebez", add=' ⭐ Joab lo recuerda en su mensaje a David: «¿No fue una mujer la que arrojó sobre él una piedra superior de molino desde el muro, y murió en Tebez?» (<a href="2-samuel-11.es.html#v11-21">2 Samuel 11:21</a>, ya en estas páginas).')
+_ency11_en("jerubbaal", add=' ⭐ In <a href="2-samuel-11.html#v11-21">2 Samuel 11:21</a> (now on these pages) his son is &lsquo;Abimelech son of Jerubbesheth&rsquo;, <em>bosheth</em>, &lsquo;shame&rsquo;, standing for <em>baal</em>.')
+_ency11_es("jerubbaal", add=' ⭐ En <a href="2-samuel-11.es.html#v11-21">2 Samuel 11:21</a> (ya en estas páginas) su hijo es «Abimelec hijo de Jerubéset», con <em>bosheth</em>, «vergüenza», en lugar de <em>baal</em>.')
+_ency11_en("joab", add=' ⭐ He puts Uriah where the best defenders stand and sends the report with the line &lsquo;Your servant Uriah the Hittite is dead also&rsquo; (<a href="2-samuel-11.html#v11-14">2 Samuel 11:14&ndash;25</a>, now on these pages).')
+_ency11_es("joab", add=' ⭐ Pone a Urías donde están los mejores defensores y envía el informe con la frase «También tu siervo Urías el heteo ha muerto» (<a href="2-samuel-11.es.html#v11-14">2 Samuel 11:14–25</a>, ya en estas páginas).')
+_ency11_en("ark-of-the-covenant", add=' ⭐ Uriah says the ark is &lsquo;dwelling in booths&rsquo; with Israel and Judah in the field (<a href="2-samuel-11.html#v11-11">2 Samuel 11:11</a>, now on these pages).')
+_ency11_es("ark-of-the-covenant", add=' ⭐ Urías dice que el arca está «morando en cabañas» con Israel y Judá en el campo (<a href="2-samuel-11.es.html#v11-11">2 Samuel 11:11</a>, ya en estas páginas).')
+
+_REFS11 = {
+    "uriah": [("2 Samuel", 11, 3), ("2 Samuel", 11, 6), ("2 Samuel", 11, 11)],
+    "bathsheba": [("2 Samuel", 11, 3), ("2 Samuel", 11, 5), ("2 Samuel", 11, 26)],
+    "rabbah": [("2 Samuel", 11, 1), ("2 Samuel", 11, 25)],
+    "hittites": [("2 Samuel", 11, 3)],
+    "thebez": [("2 Samuel", 11, 21)],
+    "jerubbaal": [("2 Samuel", 11, 21)],
+    "joab": [("2 Samuel", 11, 1), ("2 Samuel", 11, 14), ("2 Samuel", 11, 25)],
+    "ark-of-the-covenant": [("2 Samuel", 11, 11)],
+    "ammon": [("2 Samuel", 11, 1)],
+    "jerusalem": [("2 Samuel", 11, 1), ("2 Samuel", 11, 12)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS11:
+        _e["refs"] = list(_e["refs"]) + _REFS11[_e["slug"]]
+
+CHRON_CHAPTERS["2sam11"] = dict(era="monarchy",
+    when="At the return of the year David sends Joab and all Israel against Ammon and stays in Jerusalem; from his roof he sees a woman washing, learns she is Bathsheba, daughter of Eliam and wife of Uriah the Hittite, sends and takes her, and she tells him she is pregnant; he recalls Uriah from the front and tries to send him home, and when Uriah will not go down to his house while the ark and the army are in booths, even drunk, David writes a letter to Joab that Uriah carries himself; Joab sets Uriah where the best defenders are and he dies, Joab’s messenger carries the news, David tells Joab not to let it be evil in his eyes, Bathsheba mourns and David gathers her into his house, and the thing was evil in the eyes of Jehovah.",
+    clock="After the wars of 2 Samuel 10; the chapter gives no date beyond “the return of the year”. The child is born after the mourning, and the next chapter names Solomon after another son.")
+
+CHAPTER_ART["2sam11"] = [dict(
+    file="tissot-bathsheba-mourns-her-husband.jpg",
+    title="Bathsheba mourns her husband", title_es="Betsabé llora a su marido",
+    artist="James Tissot",
+    year="1900",
+    location="John Rylands Library, Manchester (Special Collections R16279)", location_es="Biblioteca John Rylands, Mánchester (Colecciones Especiales R16279)",
+    alt="A pen-and-ink sketch of a bare room with plank walls and a post at the right. A woman lies on her front on a wide floor mat or bed, her face buried in her arms and her legs stretched out behind her; cushions lie against the wall at the back.",
+    note="2 Samuel 11:26. When the wife of Uriah hears that her husband is dead, she mourns for him. This is one of Tissot’s pen sketches for his Old Testament illustrations, published after his death as chromolithographs; it shows the mourning and nothing of the rest of the chapter. The Hebrew says only that she mourned, and not how.",
+    note_es="2 Samuel 11:26. Cuando la mujer de Urías oye que su marido ha muerto, hace duelo por él. Es uno de los bocetos a pluma de Tissot para sus ilustraciones del Antiguo Testamento, publicados tras su muerte como cromolitografías; muestra el duelo y nada del resto del capítulo. El hebreo dice solo que hizo duelo, y no cómo.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_300_Bathsheba_mourns_her_husband_2_Samuel_11_26_for_Brunoff_287_Bethsab%C3%A9e_pleure_son_mari.jpg",
+)]
