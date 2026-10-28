@@ -52659,3 +52659,110 @@ CHAPTER_ART["2sam8"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_298_Moabites_taken_prisoner_2_Samuel_8_2_for_Brunoff_285_Les_Moabites_prisonniers.jpg",
 )]
+
+# --- 2 Samuel 9 ---
+def _swap9(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D9 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict9_en(slug, old=None, new=None, add=None):
+    _i = _D9[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap9(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict9_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap9(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency9_en(slug, old, new):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            _e["desc"] = _swap9(_e["desc"], old, new); return
+    raise KeyError(slug)
+
+def _ency9_es(slug, old, new):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    ENCYCLOPEDIA_ES[slug] = (_n, _swap9(_s, old, new))
+
+DICTIONARY.append(("shulchan", "shulchan", "שֻׁלְחָן", "shulchan",
+    'A TABLE &mdash; <em>shulchan</em>, the table a meal is eaten at, and in this book the king&rsquo;s table is where a man is honored. Jonathan &lsquo;rose from the table in burning anger&rsquo; when Saul&rsquo;s plan against David was plain (<a href="1-samuel-20.html#v20-34">1 Samuel 20:34</a>, already on these pages), and David promises Jonathan&rsquo;s son &lsquo;you yourself shall eat bread at my table continually&rsquo; (<a href="2-samuel-9.html#v9-7">2 Samuel 9:7</a>, now on these pages). <span data-heb="לחם על שלחני">&lsquo;Bread at my table&rsquo; stands in two verses</span>. They are verses 7 and 10 of that chapter. <span data-heb="שלחן המלך">&lsquo;The king&rsquo;s table&rsquo; stands in three verses</span>. They are <a href="1-samuel-20.html#v20-29">1 Samuel 20:29</a>, where David&rsquo;s empty place is explained away, <a href="2-samuel-9.html#v9-13">2 Samuel 9:13</a>, where Mephibosheth eats there continually, and 1 Kings 5:7, where Solomon&rsquo;s officers provision his table (not yet on these pages).',
+    ("2 Samuel", 9, 7)))
+DICTIONARY_ES["shulchan"] = ("shulján",
+    'UNA MESA &mdash; <em>shulchan</em>, la mesa en que se come, y en este libro la mesa del rey es donde se honra a un hombre. Jonatán «se levantó de la mesa con ardiente ira» cuando el plan de Saúl contra David quedó claro (<a href="1-samuel-20.es.html#v20-34">1 Samuel 20:34</a>, ya en estas páginas), y David promete al hijo de Jonatán «tú comerás pan en mi mesa continuamente» (<a href="2-samuel-9.es.html#v9-7">2 Samuel 9:7</a>, ya en estas páginas). <span data-heb="לחם על שלחני">«Pan a mi mesa» está en dos versículos</span>. Son los versículos 7 y 10 de ese capítulo. <span data-heb="שלחן המלך">«La mesa del rey» está en tres versículos</span>. Son <a href="1-samuel-20.es.html#v20-29">1 Samuel 20:29</a>, donde se explica el sitio vacío de David, <a href="2-samuel-9.es.html#v9-13">2 Samuel 9:13</a>, donde Mefi-boset come allí continuamente, y 1 Reyes 5:7, donde los oficiales de Salomón abastecen su mesa (todavía no en estas páginas).')
+
+DICTIONARY.append(("pisseach", "pisseach", "פִּסֵּחַ", "pisseach",
+    'LAME &mdash; <em>pisseach</em>, one who limps; the verb is the one in <a href="2-samuel-4.html#v4-4">2 Samuel 4:4</a> (already on these pages), &lsquo;he fell and became lame&rsquo;. <span data-heb-read="פסח">The root stands in five verses of 2 Samuel</span>: 4:4, 5:6 and 5:8 (the Jebusites&rsquo; &lsquo;blind and lame&rsquo; and David&rsquo;s hatred of them), <a href="2-samuel-9.html#v9-13">9:13</a> (now on these pages), where Mephibosheth eats at the king&rsquo;s table &lsquo;lame in both his feet&rsquo;, and 19:27 (not yet on these pages), where he says &lsquo;your servant is lame&rsquo;. &#9888; The same three letters spell the Passover, <em>pesach</em>, and the verb of Elijah&rsquo;s &lsquo;how long will you limp between two opinions?&rsquo; (1 Kings 18:21, not yet on these pages); a reader of the unpointed text has to take the sense from the sentence.',
+    ("2 Samuel", 4, 4)))
+DICTIONARY_ES["pisseach"] = ("pisséaj",
+    'COJO &mdash; <em>pisseach</em>, el que cojea; el verbo es el de <a href="2-samuel-4.es.html#v4-4">2 Samuel 4:4</a> (ya en estas páginas), «cayó y quedó cojo». <span data-heb-read="פסח">La raíz está en cinco versículos de 2 Samuel</span>: 4:4, 5:6 y 5:8 (el «ciegos y cojos» de los jebuseos y el odio de David hacia ellos), <a href="2-samuel-9.es.html#v9-13">9:13</a> (ya en estas páginas), donde Mefi-boset come a la mesa del rey «cojo de los dos pies», y 19:27 (todavía no en estas páginas), donde dice «tu siervo es cojo». &#9888; Las mismas tres letras escriben la Pascua, <em>pesaj</em>, y el verbo del «¿hasta cuándo van a cojear entre dos pensamientos?» de Elías (1 Reyes 18:21, todavía no en estas páginas); el lector del texto sin vocales tiene que tomar el sentido de la frase.')
+
+_dict9_en("chesed", "(2 Samuel 9:1, not yet on these pages)", '(<a href="2-samuel-9.html#v9-1">2 Samuel 9:1</a>, now on these pages)',
+    add=' ⭐ David asks twice for someone to do kindness with, &lsquo;for Jonathan&rsquo;s sake&rsquo; and as &lsquo;the kindness of God&rsquo; (<a href="2-samuel-9.html#v9-1">2 Samuel 9:1, 3, 7</a>, now on these pages). <span data-heb="חסד אלהים">&lsquo;The kindness of God&rsquo; stands in two verses</span>. They are verse 3 of that chapter and Psalm 52:10 (not yet on these pages).')
+_dict9_es("chesed", "(2 Samuel 9:1, todavía no en estas páginas)", '(<a href="2-samuel-9.es.html#v9-1">2 Samuel 9:1</a>, ya en estas páginas)',
+    add=' ⭐ David pide dos veces alguien con quien hacer bondad, «por amor de Jonatán» y como «la bondad de Dios» (<a href="2-samuel-9.es.html#v9-1">2 Samuel 9:1, 3, 7</a>, ya en estas páginas). <span data-heb="חסד אלהים">«La bondad de Dios» está en dos versículos</span>. Son el versículo 3 de ese capítulo y Salmo 52:10 (todavía no en estas páginas).')
+_dict9_en("kelev", add=' ⭐ Jonathan&rsquo;s son says to David, &lsquo;What is your servant, that you should turn toward a dead dog such as I?&rsquo; (<a href="2-samuel-9.html#v9-8">2 Samuel 9:8</a>, now on these pages), the words David had used of himself before Saul (<a href="1-samuel-24.html#v24-14">1 Samuel 24:14</a>, already on these pages). <span data-heb="הכלב המת">&lsquo;The dead dog&rsquo; stands in two verses</span>. They are that verse and 2 Samuel 16:9, where Abishai says it of Shimei (not yet on these pages).')
+_dict9_es("kelev", add=' ⭐ El hijo de Jonatán dice a David: «¿Qué es tu siervo, para que te vuelvas hacia un perro muerto como yo?» (<a href="2-samuel-9.es.html#v9-8">2 Samuel 9:8</a>, ya en estas páginas), las palabras que David había usado de sí mismo ante Saúl (<a href="1-samuel-24.es.html#v24-14">1 Samuel 24:14</a>, ya en estas páginas). <span data-heb="הכלב המת">«El perro muerto» está en dos versículos</span>. Son ese versículo y 2 Samuel 16:9, donde Abisai lo dice de Simei (todavía no en estas páginas).')
+_dict9_en("naar", add=' ⭐ Ziba is &lsquo;Saul&rsquo;s young man&rsquo;, <em>na&rsquo;ar</em>, in <a href="2-samuel-9.html#v9-9">2 Samuel 9:9</a> (now on these pages), though verse 2 calls him a <em>servant</em>, <em>eved</em>.')
+_dict9_es("naar", add=' ⭐ Siba es «el criado de Saúl», <em>na&rsquo;ar</em>, en <a href="2-samuel-9.es.html#v9-9">2 Samuel 9:9</a> (ya en estas páginas), aunque el versículo 2 lo llama <em>siervo</em>, <em>eved</em>.')
+
+ENCYCLOPEDIA.append(dict(slug="ziba", name="Ziba", kind="person", aliases=["Ziba"],
+    refs=[("2 Samuel", 9, 2), ("2 Samuel", 9, 9), ("2 Samuel", 9, 10), ("2 Samuel", 9, 11), ("2 Samuel", 9, 12)], videos=[],
+    desc='A servant of the house of Saul, called to David and asked about anyone left of that house (<a href="2-samuel-9.html#v9-2">2 Samuel 9:2</a>, now on these pages). He names <a href="encyclopedia.html#mephibosheth">Mephibosheth</a>, and David charges him, with his fifteen sons and twenty servants, to work Saul&rsquo;s ground for Mephibosheth, whose household he now serves (<a href="2-samuel-9.html#v9-9">9:9&ndash;12</a>). Verse 2 calls him a servant and verse 9 &lsquo;Saul&rsquo;s young man&rsquo;. ⭐ He comes back with saddled donkeys when David flees Absalom, and in the division of the land that follows (2 Samuel 16:1&ndash;4; 19:24&ndash;30, not yet on these pages).'))
+ENCYCLOPEDIA_ES["ziba"] = ("Siba",
+    'Un siervo de la casa de Saúl, llamado a David y preguntado por alguien que quede de esa casa (<a href="2-samuel-9.es.html#v9-2">2 Samuel 9:2</a>, ya en estas páginas). Nombra a <a href="enciclopedia.html#mephibosheth">Mefi-boset</a>, y David le encarga, con sus quince hijos y veinte siervos, labrar la tierra de Saúl para Mefi-boset, de cuya casa ahora es siervo (<a href="2-samuel-9.es.html#v9-9">9:9–12</a>). El versículo 2 lo llama siervo y el 9 «el criado de Saúl». ⭐ Vuelve con asnos aparejados cuando David huye de Absalón, y en el reparto de la tierra que sigue (2 Samuel 16:1–4; 19:24–30, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="machir-son-of-ammiel", name="Machir son of Ammiel", kind="person", aliases=["Machir son of Ammiel"],
+    refs=[("2 Samuel", 9, 4), ("2 Samuel", 9, 5)], videos=[],
+    desc='The man in whose house at <a href="encyclopedia.html#lo-debar">Lo-debar</a> Mephibosheth was kept until David sent for him (<a href="2-samuel-9.html#v9-4">2 Samuel 9:4&ndash;5</a>, now on these pages). <span data-heb="בן עמיאל">&lsquo;Machir son of Ammiel&rsquo; stands in three verses</span>. They are those two and the verse where he brings beds and food to David at <a href="encyclopedia.html#mahanaim">Mahanaim</a> (2 Samuel 17:27, not yet on these pages). He is not the <a href="encyclopedia.html#machir">Machir</a> son of Manasseh.'))
+ENCYCLOPEDIA_ES["machir-son-of-ammiel"] = ("Maquir hijo de Amiel",
+    'El hombre en cuya casa de <a href="enciclopedia.html#lo-debar">Lo-debar</a> estuvo Mefi-boset hasta que David lo mandó buscar (<a href="2-samuel-9.es.html#v9-4">2 Samuel 9:4–5</a>, ya en estas páginas). <span data-heb="בן עמיאל">«Maquir hijo de Amiel» está en tres versículos</span>. Son esos dos y el versículo en que trae camas y comida a David en <a href="enciclopedia.html#mahanaim">Mahanaim</a> (2 Samuel 17:27, todavía no en estas páginas). No es el <a href="enciclopedia.html#machir">Maquir</a> hijo de Manasés.')
+ENCYCLOPEDIA.append(dict(slug="lo-debar", name="Lo-debar", kind="place", aliases=["Lo-debar", "Lodebar"],
+    coords=(32.22, 35.68, 0.8), approx=True,
+    refs=[("2 Samuel", 9, 4), ("2 Samuel", 9, 5)], videos=[],
+    desc='The place east of the Jordan where <a href="encyclopedia.html#mephibosheth">Mephibosheth</a> lived in the house of <a href="encyclopedia.html#machir-son-of-ammiel">Machir son of Ammiel</a> until David sent for him (<a href="2-samuel-9.html#v9-4">2 Samuel 9:4&ndash;5</a>, now on these pages), and where Machir is placed again when he supplies David at <a href="encyclopedia.html#mahanaim">Mahanaim</a> (2 Samuel 17:27, not yet on these pages). The name is uncertain: &lsquo;no word&rsquo;, &lsquo;nothing&rsquo; or &lsquo;no pasture&rsquo;, and Amos has &lsquo;a thing of nothing&rsquo; with the same sounds (6:13, not yet on these pages). Its site is not known; the coordinates are a rough point in Gilead near Mahanaim, not a located town.'))
+ENCYCLOPEDIA_ES["lo-debar"] = ("Lo-debar",
+    'El lugar al este del Jordán donde vivió <a href="enciclopedia.html#mephibosheth">Mefi-boset</a> en casa de <a href="enciclopedia.html#machir-son-of-ammiel">Maquir hijo de Amiel</a> hasta que David lo mandó buscar (<a href="2-samuel-9.es.html#v9-4">2 Samuel 9:4–5</a>, ya en estas páginas), y donde se sitúa otra vez a Maquir cuando abastece a David en <a href="enciclopedia.html#mahanaim">Mahanaim</a> (2 Samuel 17:27, todavía no en estas páginas). El nombre es incierto: «sin palabra», «nada» o «sin pasto», y Amós tiene «una cosa de nada» con los mismos sonidos (6:13, todavía no en estas páginas). Su sitio no se conoce; las coordenadas son un punto aproximado en Galaad cerca de Mahanaim, no una ciudad localizada.')
+ENCYCLOPEDIA.append(dict(slug="mica", name="Mica", kind="person", aliases=["Mica", "Micha"],
+    refs=[("2 Samuel", 9, 12)], videos=[],
+    desc='The young son of <a href="encyclopedia.html#mephibosheth">Mephibosheth</a> (<a href="2-samuel-9.html#v9-12">2 Samuel 9:12</a>, now on these pages), through whom Jonathan&rsquo;s line goes on. The Chronicles carry it down, &lsquo;Merib-baal begot Micah&rsquo;, with Micah&rsquo;s four sons (1 Chronicles 8:34&ndash;35, not yet on these pages). The name is spelled with an aleph here, as against the prophet <a href="encyclopedia.html#micah">Micah</a>, spelled with a he.'))
+ENCYCLOPEDIA_ES["mica"] = ("Mica",
+    'El hijo pequeño de <a href="enciclopedia.html#mephibosheth">Mefi-boset</a> (<a href="2-samuel-9.es.html#v9-12">2 Samuel 9:12</a>, ya en estas páginas), por quien sigue la línea de Jonatán. Crónicas la lleva más abajo, «Merib-baal engendró a Mica», con los cuatro hijos de Mica (1 Crónicas 8:34–35, todavía no en estas páginas). El nombre se escribe aquí con álef, a diferencia del profeta <a href="enciclopedia.html#micah">Miqueas</a>, que se escribe con he.')
+
+_ency9_en("mephibosheth", "⭐ David will ask for him by the kindness he swore to Jonathan (2 Samuel 9:1&ndash;13, not yet on these pages).",
+    '⭐ David asks for him by the kindness he swore to Jonathan, has him fetched from <a href="encyclopedia.html#lo-debar">Lo-debar</a> and seats him at the king&rsquo;s table, where he eats continually, lame in both his feet (<a href="2-samuel-9.html#v9-1">2 Samuel 9:1&ndash;13</a>, now on these pages); <a href="encyclopedia.html#ziba">Ziba</a> serves his household and <a href="encyclopedia.html#mica">Mica</a> is his son.')
+_ency9_es("mephibosheth", "⭐ David preguntará por él por la bondad que juró a Jonatán (2 Samuel 9:1–13, todavía no en estas páginas).",
+    '⭐ David pregunta por él por la bondad que juró a Jonatán, lo manda traer de <a href="enciclopedia.html#lo-debar">Lo-debar</a> y lo sienta a la mesa del rey, donde come continuamente, cojo de los dos pies (<a href="2-samuel-9.es.html#v9-1">2 Samuel 9:1–13</a>, ya en estas páginas); <a href="enciclopedia.html#ziba">Siba</a> sirve a su casa y <a href="enciclopedia.html#mica">Mica</a> es su hijo.')
+_ency9_en("jonathan", "seating him at the king's table (2 Samuel 9).", 'seating him at the king\'s table (<a href="2-samuel-9.html#v9-1">2 Samuel 9</a>, now on these pages).')
+_ency9_es("jonathan", "y sentarlo a la mesa del rey (2 Samuel 9).", 'y sentarlo a la mesa del rey (<a href="2-samuel-9.es.html#v9-1">2 Samuel 9</a>, ya en estas páginas).')
+_ency9_es("jonathan", "1 Samuel 13, 14, 18, 19 y 20 y el lamento de 2 Samuel 1 ya están en estas páginas; 23:18 y 2 Samuel 9, todavía no.",
+    "1 Samuel 13, 14, 18, 19, 20 y 23, el lamento de 2 Samuel 1 y 2 Samuel 9 ya están en estas páginas.")
+
+_REFS9 = {
+    "mephibosheth": [("2 Samuel", 9, 1), ("2 Samuel", 9, 6), ("2 Samuel", 9, 13)],
+    "jonathan": [("2 Samuel", 9, 1), ("2 Samuel", 9, 3), ("2 Samuel", 9, 7)],
+    "jerusalem": [("2 Samuel", 9, 13)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS9:
+        _e["refs"] = list(_e["refs"]) + _REFS9[_e["slug"]]
+
+CHRON_CHAPTERS["2sam9"] = dict(era="monarchy",
+    when="David asks whether anyone is left of the house of Saul to whom he may do kindness for Jonathan’s sake; Ziba, a servant of that house, names Jonathan’s son, lame in his feet, in the house of Machir son of Ammiel at Lo-debar; David has him fetched, tells him not to be afraid, gives back all the field of Saul and sets him to eat at the king’s table continually; Ziba, his sons and his servants are to work the ground for him; Mephibosheth’s young son is Mica, and he lives in Jerusalem, lame in both feet.",
+    clock="After the wars of 2 Samuel 8; the chapter gives no date and does not say how long David has reigned. Mephibosheth was five at Gilboa (4:4) and now has a young son.")
+
+CHAPTER_ART["2sam9"] = [dict(
+    file="david-mephibosheth-table-panel.jpg",
+    title="David and the son of Jonathan", title_es="David y el hijo de Jonatán",
+    artist="Philips Galle, after Gerard van Groeningen",
+    year="1575",
+    location="Rijksmuseum, Amsterdam (RP-P-2015-10-115, plate 30 of 48)", location_es="Rijksmuseum, Ámsterdam (RP-P-2015-10-115, lámina 30 de 48)",
+    alt="A black-and-white engraving titled “Immortale foedus”, plate 30. In the foreground a crowned, bare-chested king sits at a table with bread and a dish of fruit, one hand held out toward a young man who sits turned toward him in a carved chair with a hand on his chest; a bearded man in a cap holds a jug on a dish behind them, and more men sit and stand at the right. At the left, in a landscape with a tower and a house on a hill, a crowned figure with a guard holding a spear stretches out an arm toward a kneeling man, a chest on the ground beside them. A Latin verse and the reference “2. Sam. 9. 1.” are printed under the picture.",
+    note="2 Samuel 9:1. This panel, “Immortale foedus”, “the undying covenant”, is from the same Latin series on David’s life as the prints at 2 Samuel 2 to 5, and carries the reference to verse 1 under the picture. The table is in the Hebrew, where David says Mephibosheth shall eat bread at his table continually (9:7, 10, 13); the chest on the ground at the left is the artist’s addition, and the Hebrew mentions none.",
+    note_es="2 Samuel 9:1. Este panel, «Immortale foedus», «el pacto inmortal», es de la misma serie latina sobre la vida de David que los grabados de 2 Samuel 2 a 5, y lleva la referencia al versículo 1 bajo la imagen. La mesa está en el hebreo, donde David dice que Mefi-boset comerá pan a su mesa continuamente (9:7, 10, 13); el cofre en el suelo, a la izquierda, es una adición del artista, y el hebreo no menciona ninguno.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:Ark_des_Verbonds_overgebracht_naar_Jeruzalem,_David_en_de_zoon_van_Jonatan,_David_en_Batseba,_Natan_berispt_David_van,_RP-P-2015-10-115.jpg",
+)]
