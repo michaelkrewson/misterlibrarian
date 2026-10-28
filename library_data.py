@@ -50991,8 +50991,6 @@ ENCYCLOPEDIA_ES["michal"] = (ENCYCLOPEDIA_ES["michal"][0], ENCYCLOPEDIA_ES["mich
     + ' ⭐ «Y Saúl había dado a Mical su hija, mujer de David, a Paltí hijo de Lais, que era de Galim» (<a href="1-samuel-25.es.html#v25-44">1 Samuel 25:44</a>, ya en estas páginas); el versículo no dice cuándo, ni por qué. David la reclamará, y su marido la seguirá llorando hasta Bahurim (2 Samuel 3:14&ndash;16, todavía no en estas páginas).')
 
 # new encyclopedia entries
-# NB: "Jezreel" in 1 Samuel 29:1, 11 is the northern valley city -- when that chapter ships, give
-# jezreel-judah and the northern entry per-verse refs (or a LINK_OVERRIDES pin) so the alias resolves.
 ENCYCLOPEDIA.extend([
     dict(slug="nabal", name="Nabal", kind="person", aliases=["Nabal"],
          refs=[("1 Samuel", 25, 3)], videos=[],
@@ -51511,3 +51509,82 @@ CHAPTER_ART["1sam28"] = [
         source_url="https://commons.wikimedia.org/wiki/File:075.Saul_and_the_Witch_of_Endor.jpg",
     ),
 ]
+
+# --- 1 Samuel 29 ---
+def _swap29(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D29 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict29_en(slug, old=None, new=None, add=None):
+    _i = _D29[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap29(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict29_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap29(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("seren", "seren (plural seranim)", "סֶרֶן", "seren",
+    """LORD OF A PHILISTINE CITY &mdash; the title the Hebrew gives the rulers of the Philistine cities, &lsquo;the five lords of the Philistines&rsquo; (<a href="judges-3.html#v3-3">Judges 3:3</a>; <a href="1-samuel-6.html#v6-16">1 Samuel 6:16</a>, both now on these pages), who act together: they are gathered over the ark (<a href="1-samuel-5.html#v5-8">5:8</a>, <a href="1-samuel-6.html#v6-12">6:12</a>) and press Delilah for Samson&rsquo;s secret (Judges 16). ⭐ <a href="1-samuel-29.html#v29-2">1 Samuel 29</a> (now on these pages) uses it of the lords at Aphek (verses 2, 6 and 7) beside <em>sarim</em>, &lsquo;commanders&rsquo; (verses 3, 4 and 9), for what appear to be the same men, and this translation keeps &lsquo;lords&rsquo; and &lsquo;commanders&rsquo; apart. The same consonants spell &lsquo;axles&rsquo; in 1 Kings 7:30 (not yet on these pages), which is why the NWT 1984 has &lsquo;axis lords&rsquo; and the TNM 1987 &laquo;se&ntilde;ores del eje&raquo;; most readers take the title as a Philistine word, which some compare with the Greek <em>tyrannos</em> (reported, not checked here). The ASV and KJV have &lsquo;lords&rsquo;, the Geneva &lsquo;princes&rsquo;.""",
+    ("1 Samuel", 29, 2)))
+DICTIONARY_ES["seren"] = ("seren (plural seranim)",
+    """SE&Ntilde;OR DE UNA CIUDAD FILISTEA &mdash;el t&iacute;tulo que el hebreo da a los gobernantes de las ciudades filisteas, &laquo;los cinco pr&iacute;ncipes de los filisteos&raquo; (<a href="judges-3.es.html#v3-3">Jueces 3:3</a>; <a href="1-samuel-6.es.html#v6-16">1 Samuel 6:16</a>, los dos ya en estas p&aacute;ginas), que act&uacute;an juntos: se re&uacute;nen por el arca (<a href="1-samuel-5.es.html#v5-8">5:8</a>, <a href="1-samuel-6.es.html#v6-12">6:12</a>) y presionan a Dalila por el secreto de Sans&oacute;n (Jueces 16). ⭐ <a href="1-samuel-29.es.html#v29-2">1 Samuel 29</a> (ya en estas p&aacute;ginas) lo usa de los pr&iacute;ncipes en Afec (versículos 2, 6 y 7) junto a <em>sarim</em>, &laquo;jefes&raquo; (versículos 3, 4 y 9), para lo que parecen ser los mismos hombres, y esta traducci&oacute;n mantiene aparte &laquo;pr&iacute;ncipes&raquo; y &laquo;jefes&raquo;. Las mismas consonantes escriben &laquo;ejes&raquo; en 1 Reyes 7:30 (todav&iacute;a no en estas p&aacute;ginas), y por eso la TNM 1987 tiene &laquo;se&ntilde;ores del eje&raquo; y la NWT 1984 &lsquo;axis lords&rsquo;; la mayor&iacute;a de los lectores toma el t&iacute;tulo como una palabra filistea, que algunos comparan con el griego <em>tyrannos</em> (se informa, no se ha comprobado aqu&iacute;). La RV60 tiene &laquo;pr&iacute;ncipes&raquo;.""")
+
+_dict29_en("satan", "1 Samuel 29:4, where Philistine commanders fear David will become one in battle;",
+    '<a href="1-samuel-29.html#v29-4">1 Samuel 29:4</a> (now on these pages), where Philistine commanders fear David will become one in battle;')
+_dict29_es("satan", "estos dos, 1 Samuel 29:4 y 2 Samuel 19:23",
+    'estos dos, <a href="1-samuel-29.es.html#v29-4">1 Samuel 29:4</a> (ya en estas páginas) y 2 Samuel 19:23')
+_dict29_en("ivri", add=' ⭐ <a href="1-samuel-29.html#v29-3">1 Samuel 29:3</a> (now on these pages) has the Philistine commanders turn it on David and his men, &lsquo;What are these Hebrews?&rsquo;, a line whose <em>ivrim</em> sounds like the <em>ovrim</em>, &lsquo;passing on&rsquo;, of the verse before.')
+_dict29_es("ivri", add=' ⭐ <a href="1-samuel-29.es.html#v29-3">1 Samuel 29:3</a> (ya en estas páginas) tiene a los jefes filisteos que lo vuelven sobre David y sus hombres, «¿Qué son estos hebreos?», una línea cuyo <em>ivrim</em> suena como el <em>ovrim</em>, «los que pasan», del versículo anterior.')
+_dict29_en("malakh", add=' ⭐ Achish tells David he is good in his eyes &lsquo;as an angel of God&rsquo; (<a href="1-samuel-29.html#v29-9">1 Samuel 29:9</a>, now on these pages), a phrase that stands in only that verse.')
+_dict29_es("malakh", add=' ⭐ Aquis dice a David que es bueno a sus ojos «como un ángel de Dios» (<a href="1-samuel-29.es.html#v29-9">1 Samuel 29:9</a>, ya en estas páginas), una frase que está solo en ese versículo.')
+
+# encyclopedia
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "achish":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 29, 3)]
+        _e["desc"] = _e["desc"] + ' ⭐ At Aphek he vouches for David before the Philistine commanders, &lsquo;I have found nothing in him&rsquo;, swears &lsquo;As Jehovah lives&rsquo; that David is upright, and sends him home when the commanders refuse to take David into the battle (<a href="1-samuel-29.html#v29-3">1 Samuel 29</a>, now on these pages).'
+    elif _e["slug"] == "aphek":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 29, 1)]
+        _e["desc"] = _e["desc"] + ' ⭐ The Philistines muster here again before the battle in which Saul dies, and David marches in the rear with Achish until the commanders send him back (<a href="1-samuel-29.html#v29-1">1 Samuel 29:1&ndash;11</a>, now on these pages).'
+    elif _e["slug"] == "jezreel":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 29, 1), ("1 Samuel", 29, 11)]
+        _e["desc"] = _e["desc"] + ' ⭐ Israel camps &lsquo;by the spring that is in Jezreel&rsquo; while the Philistines muster at Aphek, and the Philistines then &lsquo;went up to Jezreel&rsquo; (<a href="1-samuel-29.html#v29-1">1 Samuel 29:1, 11</a>, now on these pages). It is not the Jezreel of Judah (<a href="encyclopedia.html#jezreel-judah">Jezreel in Judah</a>), where Ahinoam came from.'
+    elif _e["slug"] == "en-dor":
+        _e["desc"] = _e["desc"] + ' ⭐ At <a href="1-samuel-29.html#v29-1">1 Samuel 29:1</a> (now on these pages) the Greek has Israel camping &lsquo;in Endor, the one in Jezreel&rsquo;, where the Hebrew has &lsquo;the spring that is in Jezreel&rsquo;.'
+_ES29 = {
+    "achish": ' ⭐ En Afec responde por David ante los jefes filisteos, «no he hallado nada en él», jura «Vive Jehová» que David es recto, y lo manda a casa cuando los jefes se niegan a llevar a David a la batalla (<a href="1-samuel-29.es.html#v29-3">1 Samuel 29</a>, ya en estas páginas).',
+    "aphek": ' ⭐ Los filisteos se concentran aquí otra vez antes de la batalla en que muere Saúl, y David marcha en la retaguardia con Aquis hasta que los jefes lo mandan de vuelta (<a href="1-samuel-29.es.html#v29-1">1 Samuel 29:1–11</a>, ya en estas páginas).',
+    "jezreel": ' ⭐ Israel acampa «junto al manantial que está en Jezreel» mientras los filisteos se concentran en Afec, y luego los filisteos «subieron a Jezreel» (<a href="1-samuel-29.es.html#v29-1">1 Samuel 29:1, 11</a>, ya en estas páginas). No es el Jezreel de Judá (<a href="enciclopedia.html#jezreel-judah">Jezreel en Judá</a>), de donde era Ahinoam.',
+    "en-dor": ' ⭐ En <a href="1-samuel-29.es.html#v29-1">1 Samuel 29:1</a> (ya en estas páginas) el griego pone a Israel acampado «en Endor, la que está en Jezreel», donde el hebreo tiene «el manantial que está en Jezreel».',
+}
+for _k, _b in _ES29.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+LINK_OVERRIDES.extend([
+    ("1 Samuel", 29, 1, "Jezreel", 1, "jezreel"),
+    ("1 Samuel", 29, 11, "Jezreel", 1, "jezreel"),
+])
+
+CHRON_CHAPTERS["1sam29"] = dict(era="monarchy",
+    when="“Is not this David?”: the Philistines muster at Aphek and march by hundreds and thousands, David and his men in the rear with Achish; the Philistine commanders refuse to take “these Hebrews” into the battle, afraid David will become an adversary, and quote the women’s song; Achish swears by Jehovah that David is upright and sends him home, and the Philistines go up to Jezreel.",
+    clock="Undated: in Saul’s reign, at the muster before Gilboa, while David is living at Ziklag under Achish; the chapter steps back from 28:4, where the Philistines are already at Shunem.")
+
+CHAPTER_ART["1sam29"] = [dict(
+    file="fokke-david-achish-bodyguard.jpg",
+    title="David appointed bodyguard of King Achish", title_es="David nombrado guardia personal del rey Aquis",
+    artist="Simon Fokke",
+    year="1766",
+    location="Rijksmuseum, Amsterdam (RP-P-1909-2017)", location_es="Rijksmuseum, Ámsterdam (RP-P-1909-2017)",
+    alt="An etching of a palace hall under heavy drapery. On the left a crowned, bearded king on a throne holds out a rolled document to a young soldier in a plumed helmet and cloak, who bends forward before him. Around the throne courtiers and soldiers talk among themselves and point at the pair; on the right three armed men stand in a group. Behind them an arcade opens onto a garden. The caption at the bottom reads “Negende Boek”, the ninth book.",
+    note="The Achish of 28:2, who tells David “I will make you keeper of my head all the days”, hands David the paper that makes him his bodyguard, while the court whispers and points. The courtiers’ suspicion is the commanders’ at Aphek in 29:3–5, who ask what “these Hebrews” are doing there. The etching is Simon Fokke’s own design, from a set of illustrations of the story of David and Saul.",
+    note_es="El Aquis de 28:2, que dice a David «te pondré por guarda de mi cabeza todos los días», entrega a David el papel que lo hace su guardia personal, mientras la corte murmura y señala. La sospecha de los cortesanos es la de los jefes en Afec en 29:3–5, que preguntan qué hacen allí «estos hebreos». El aguafuerte es diseño propio de Simon Fokke, de una serie de ilustraciones de la historia de David y Saúl.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:David_aangesteld_als_lijfwacht_van_koning_Achis_Negende_Boek_(titel_op_object)_David_en_Saul_(serietitel),_RP-P-1909-2017.jpg",
+)]
