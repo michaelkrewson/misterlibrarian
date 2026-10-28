@@ -52766,3 +52766,124 @@ CHAPTER_ART["2sam9"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:Ark_des_Verbonds_overgebracht_naar_Jeruzalem,_David_en_de_zoon_van_Jonatan,_David_en_Batseba,_Natan_berispt_David_van,_RP-P-2015-10-115.jpg",
 )]
+
+# --- 2 Samuel 10 ---
+def _swap10(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D10 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict10_en(slug, old=None, new=None, add=None):
+    _i = _D10[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap10(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict10_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap10(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency10_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap10(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency10_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap10(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+_dict10_en("baash", "(2 Samuel 10:6; 16:21, not yet on these pages)", '(<a href="2-samuel-10.html#v10-6">2 Samuel 10:6</a>, now on these pages; 16:21, not yet on these pages)')
+_dict10_es("baash", "(2 Samuel 10:6; 16:21, todavía no en estas páginas)", '(<a href="2-samuel-10.es.html#v10-6">2 Samuel 10:6</a>, ya en estas páginas; 16:21, todavía no en estas páginas)')
+_dict10_en("madveh", "at 2 Samuel 10:4, shares", 'at <a href="2-samuel-10.html#v10-4">2 Samuel 10:4</a> (now on these pages), shares')
+_dict10_es("madveh", "en 2 Samuel 10:4, comparte", 'en <a href="2-samuel-10.es.html#v10-4">2 Samuel 10:4</a> (ya en estas páginas), comparte')
+_dict10_en("chesed", add=' ⭐ David resolves &lsquo;I will do kindness with Hanun son of Nahash, as his father did kindness with me&rsquo; (<a href="2-samuel-10.html#v10-2">2 Samuel 10:2</a>, now on these pages), the verb of 9:1 turned toward a king&rsquo;s son, and Hanun&rsquo;s princes read it as a spy&rsquo;s cover.')
+_dict10_es("chesed", add=' ⭐ David resuelve «haré bondad con Hanún hijo de Nahás, como su padre hizo bondad conmigo» (<a href="2-samuel-10.es.html#v10-2">2 Samuel 10:2</a>, ya en estas páginas), el verbo de 9:1 vuelto hacia el hijo de un rey, y los príncipes de Hanún lo leen como tapadera de un espía.')
+_dict10_en("yasha", add=' ⭐ Joab tells Abishai &lsquo;it shall be salvation for me&rsquo; and &lsquo;I will go and save you&rsquo;, and at the end Aram &lsquo;feared to save&rsquo; the sons of Ammon (<a href="2-samuel-10.html#v10-11">2 Samuel 10:11, 19</a>, now on these pages).')
+_dict10_es("yasha", add=' ⭐ Joab dice a Abisai «será salvación para mí» y «iré y te salvaré», y al final Aram «temió salvar» a los hijos de Amón (<a href="2-samuel-10.es.html#v10-11">2 Samuel 10:11, 19</a>, ya en estas páginas).')
+_dict10_en("kalam", add=' ⭐ David&rsquo;s servants, shaved by Hanun, are <em>niklamim</em>, &lsquo;greatly humiliated&rsquo; (<a href="2-samuel-10.html#v10-5">2 Samuel 10:5</a>, now on these pages). <span data-heb="נכלמים">&lsquo;Humiliated&rsquo; (<em>niklamim</em>) stands in three verses</span>. They are that verse, 2 Samuel 19:4 and 1 Chronicles 19:5 (neither yet on these pages).')
+_dict10_es("kalam", add=' ⭐ Los siervos de David, rapados por Hanún, están <em>niklamim</em>, «muy humillados» (<a href="2-samuel-10.es.html#v10-5">2 Samuel 10:5</a>, ya en estas páginas). <span data-heb="נכלמים">«Humillados» (<em>niklamim</em>) está en tres versículos</span>. Son ese versículo, 2 Samuel 19:4 y 1 Crónicas 19:5 (ninguno todavía en estas páginas).')
+_dict10_en("chazaq", add=' ⭐ Joab says &lsquo;Be strong, and let us be strong for our people and for the cities of our God&rsquo; (<a href="2-samuel-10.html#v10-12">2 Samuel 10:12</a>, now on these pages). <span data-heb="חזק ונתחזק">&lsquo;Be strong, and let us be strong&rsquo; stands in two verses</span>. They are that verse and the Chronicles&rsquo; repetition of the speech (1 Chronicles 19:13, not yet on these pages).')
+_dict10_es("chazaq", add=' ⭐ Joab dice «Esfuérzate, y esforcémonos por nuestro pueblo y por las ciudades de nuestro Dios» (<a href="2-samuel-10.es.html#v10-12">2 Samuel 10:12</a>, ya en estas páginas). <span data-heb="חזק ונתחזק">«Esfuérzate, y esforcémonos» está en dos versículos</span>. Son ese versículo y la repetición del discurso en Crónicas (1 Crónicas 19:13, todavía no en estas páginas).')
+_dict10_en("nagaf", add=' ⭐ Of a defeat in battle: Aram &lsquo;had been beaten before Israel&rsquo;, and so had the kings who served Hadadezer (<a href="2-samuel-10.html#v10-15">2 Samuel 10:15, 19</a>, now on these pages).')
+_dict10_es("nagaf", add=' ⭐ De una derrota en batalla: Aram «había sido derrotado delante de Israel», y también los reyes que servían a Hadad-ezer (<a href="2-samuel-10.es.html#v10-15">2 Samuel 10:15, 19</a>, ya en estas páginas).')
+_dict10_en("ragal", add=' ⭐ Hanun&rsquo;s princes say David has sent his servants &lsquo;to search the city, and to spy it out, and to overturn it&rsquo; (<a href="2-samuel-10.html#v10-3">2 Samuel 10:3</a>, now on these pages).')
+_dict10_es("ragal", add=' ⭐ Los príncipes de Hanún dicen que David ha enviado sus siervos «para explorar la ciudad, y espiarla, y volcarla» (<a href="2-samuel-10.es.html#v10-3">2 Samuel 10:3</a>, ya en estas páginas).')
+_dict10_en("nacham", add=' ⭐ David sends his servants &lsquo;to comfort&rsquo; Hanun for his father, and the Ammonite princes call them &lsquo;comforters&rsquo; who are spies (<a href="2-samuel-10.html#v10-2">2 Samuel 10:2, 3</a>, now on these pages).')
+_dict10_es("nacham", add=' ⭐ David envía a sus siervos «a consolar» a Hanún por su padre, y los príncipes amonitas los llaman «consoladores» que son espías (<a href="2-samuel-10.es.html#v10-2">2 Samuel 10:2, 3</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="hanun", name="Hanun", kind="person", aliases=["Hanun", "Hanun son of Nahash"],
+    refs=[("2 Samuel", 10, 1), ("2 Samuel", 10, 2), ("2 Samuel", 10, 3), ("2 Samuel", 10, 4)], videos=[],
+    desc='Son of <a href="encyclopedia.html#nahash">Nahash</a>, who reigns over the sons of Ammon after his father. David sends comforters to him; his princes persuade him they are spies, and he shaves half of each man&rsquo;s beard and cuts their garments to the buttocks, then hires <a href="encyclopedia.html#aram">Aram</a> against Israel (<a href="2-samuel-10.html#v10-1">2 Samuel 10:1&ndash;6</a>, now on these pages). His name is spelled with the letters of <em>channun</em>, &lsquo;gracious&rsquo;, the word of &lsquo;merciful and gracious&rsquo; (<a href="exodus-34.html#v34-6">Exodus 34:6</a>, already on these pages). The Chronicles tell the same story (1 Chronicles 19:1&ndash;19, not yet on these pages).'))
+ENCYCLOPEDIA_ES["hanun"] = ("Hanún",
+    'Hijo de <a href="enciclopedia.html#nahash">Nahás</a>, que reina sobre los hijos de Amón tras su padre. David le envía consoladores; sus príncipes lo convencen de que son espías, y él rapa la mitad de la barba a cada hombre y les corta los vestidos hasta las nalgas, y luego contrata a <a href="enciclopedia.html#aram">Aram</a> contra Israel (<a href="2-samuel-10.es.html#v10-1">2 Samuel 10:1–6</a>, ya en estas páginas). Su nombre se escribe con las letras de <em>channun</em>, «clemente», la palabra de «misericordioso y clemente» (<a href="exodus-34.es.html#v34-6">Éxodo 34:6</a>, ya en estas páginas). Crónicas cuenta la misma historia (1 Crónicas 19:1–19, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="shobach", name="Shobach", kind="person", aliases=["Shobach", "Shobak", "Shophach"],
+    refs=[("2 Samuel", 10, 16), ("2 Samuel", 10, 18)], videos=[],
+    desc='The commander of Hadadezer&rsquo;s army, at the head of the Arameans from beyond the River at <a href="encyclopedia.html#helam">Helam</a>; David strikes him and he dies there (<a href="2-samuel-10.html#v10-16">2 Samuel 10:16, 18</a>, now on these pages). The Chronicles call him Shophach (1 Chronicles 19:16, 18, not yet on these pages).'))
+ENCYCLOPEDIA_ES["shobach"] = ("Sobac",
+    'El jefe del ejército de Hadad-ezer, al frente de los arameos del otro lado del Río en <a href="enciclopedia.html#helam">Helam</a>; David lo hiere y muere allí (<a href="2-samuel-10.es.html#v10-16">2 Samuel 10:16, 18</a>, ya en estas páginas). Crónicas lo llama Sofac (1 Crónicas 19:16, 18, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="helam", name="Helam", kind="place", aliases=["Helam"],
+    coords=(32.6, 35.9, 1.0), approx=True,
+    refs=[("2 Samuel", 10, 16), ("2 Samuel", 10, 17)], videos=[],
+    desc='The place where the Arameans of Hadadezer from beyond the River gathered, and where David, having crossed the Jordan, fought them (<a href="2-samuel-10.html#v10-17">2 Samuel 10:17</a>, now on these pages). The letters of verse 16 can also be read &lsquo;their army&rsquo;, and the Chronicles have no place name (1 Chronicles 19:17, not yet on these pages). Its site is not known; the coordinates are a rough point east of the Jordan, not a located town.'))
+ENCYCLOPEDIA_ES["helam"] = ("Helam",
+    'El lugar donde se reunieron los arameos de Hadad-ezer del otro lado del Río, y donde David, tras cruzar el Jordán, los combatió (<a href="2-samuel-10.es.html#v10-17">2 Samuel 10:17</a>, ya en estas páginas). Las letras del versículo 16 pueden leerse también «su ejército», y Crónicas no tiene nombre de lugar (1 Crónicas 19:17, todavía no en estas páginas). Su sitio no se conoce; las coordenadas son un punto aproximado al este del Jordán, no una ciudad localizada.')
+
+_ency10_en("nahash", "(2 Samuel 10:2, not yet on these pages)", '(<a href="2-samuel-10.html#v10-2">2 Samuel 10:2</a>, now on these pages)')
+_ency10_es("nahash", "(2 Samuel 10:2, todavía no en estas páginas)", '(<a href="2-samuel-10.es.html#v10-2">2 Samuel 10:2</a>, ya en estas páginas)')
+_ency10_en("beth-rehob", "(2 Samuel 10:6, not yet on these pages)", '(<a href="2-samuel-10.html#v10-6">2 Samuel 10:6</a>, now on these pages)')
+_ency10_es("beth-rehob", "(2 Samuel 10:6, todavía no en estas páginas)", '(<a href="2-samuel-10.es.html#v10-6">2 Samuel 10:6</a>, ya en estas páginas)')
+_ency10_en("maacathites", "(2 Samuel 10:6, 8, not yet on these pages)", '(<a href="2-samuel-10.html#v10-6">2 Samuel 10:6, 8</a>, now on these pages)')
+_ency10_es("maacathites", "(2 Samuel 10:6, 8, todavía no en estas páginas)", '(<a href="2-samuel-10.es.html#v10-6">2 Samuel 10:6, 8</a>, ya en estas páginas)')
+_ency10_en("tob", add=' ⭐ Ammon hires twelve thousand men from it, &lsquo;Ish-tob&rsquo; in the Hebrew, against David (<a href="2-samuel-10.html#v10-6">2 Samuel 10:6, 8</a>, now on these pages).')
+_ency10_es("tob", add=' ⭐ Amón contrata de allí a doce mil hombres, «Is-tob» en el hebreo, contra David (<a href="2-samuel-10.es.html#v10-6">2 Samuel 10:6, 8</a>, ya en estas páginas).')
+_ency10_en("abishai", add=' ⭐ Joab gives him the rest of the army against Ammon, with the pact &lsquo;I will go and save you&rsquo; (<a href="2-samuel-10.html#v10-10">2 Samuel 10:10&ndash;14</a>, now on these pages).')
+_ency10_es("abishai", add=' ⭐ Joab le entrega el resto del ejército contra Amón, con el pacto «iré y te salvaré» (<a href="2-samuel-10.es.html#v10-10">2 Samuel 10:10–14</a>, ya en estas páginas).')
+_ency10_en("joab", add=' ⭐ He leads the army against Ammon and Aram, divides it with his brother Abishai, and returns to Jerusalem when Ammon is shut in its city (<a href="2-samuel-10.html#v10-7">2 Samuel 10:7&ndash;14</a>, now on these pages).')
+_ency10_es("joab", add=' ⭐ Dirige el ejército contra Amón y Aram, lo reparte con su hermano Abisai, y vuelve a Jerusalén cuando Amón queda encerrado en su ciudad (<a href="2-samuel-10.es.html#v10-7">2 Samuel 10:7–14</a>, ya en estas páginas).')
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "tob":
+        _e["aliases"] = list(_e["aliases"]) + ["Ish-tob"]
+
+_REFS10 = {
+    "nahash": [("2 Samuel", 10, 1), ("2 Samuel", 10, 2)],
+    "ammon": [("2 Samuel", 10, 1), ("2 Samuel", 10, 6), ("2 Samuel", 10, 19)],
+    "aram": [("2 Samuel", 10, 6), ("2 Samuel", 10, 15), ("2 Samuel", 10, 18)],
+    "beth-rehob": [("2 Samuel", 10, 6)],
+    "zobah": [("2 Samuel", 10, 6), ("2 Samuel", 10, 8)],
+    "maacathites": [("2 Samuel", 10, 6), ("2 Samuel", 10, 8)],
+    "tob": [("2 Samuel", 10, 6), ("2 Samuel", 10, 8)],
+    "joab": [("2 Samuel", 10, 7), ("2 Samuel", 10, 9), ("2 Samuel", 10, 14)],
+    "abishai": [("2 Samuel", 10, 10), ("2 Samuel", 10, 14)],
+    "hadadezer": [("2 Samuel", 10, 16), ("2 Samuel", 10, 19)],
+    "euphrates": [("2 Samuel", 10, 16)],
+    "jericho": [("2 Samuel", 10, 5)],
+    "jerusalem": [("2 Samuel", 10, 14)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS10:
+        _e["refs"] = list(_e["refs"]) + _REFS10[_e["slug"]]
+
+CHRON_CHAPTERS["2sam10"] = dict(era="monarchy",
+    when="Hanun succeeds his father Nahash as king of the sons of Ammon; David sends servants to comfort him, and Ammon’s princes persuade him they are spies, so he shaves half their beards and cuts their garments to the buttocks; David tells the men to stay at Jericho until their beards grow; Ammon hires Aram of Beth-rehob and Zobah, the king of Maacah and Ish-tob; Joab and Abishai divide the army, Ammon is shut in its city and Joab returns to Jerusalem; Hadadezer calls Aram from beyond the River, David crosses the Jordan to Helam and strikes Aram and its commander Shobach, and Hadadezer’s servants make peace with Israel.",
+    clock="After the wars of 2 Samuel 8 and the kindness of 2 Samuel 9; the chapter gives no date, only “after this” and, in 11:1, the turn of the year when the war resumes.")
+
+CHAPTER_ART["2sam10"] = [dict(
+    file="maciejowski-hanun-humiliates-ambassadors.jpg",
+    title="Hanun humiliates David’s ambassadors", title_es="Hanún humilla a los embajadores de David",
+    artist="Unknown illuminator",
+    year="1240s",
+    location="Maciejowski Bible (Morgan Library & Museum, New York, MS M.638), leaf 40", location_es="Biblia de Maciejowski (Morgan Library & Museum, Nueva York, MS M.638), hoja 40",
+    alt="A medieval illuminated miniature on a gold ground, under a round arch with a battlemented border above. At the left a bearded man in a green tunic stands with his arms pinned by several men in blue tunics; one of them cuts at his beard with a pair of shears, and a kneeling man at the lower left cuts the hem of his tunic with another pair. At the right a crowned king sits on a seat with a sceptre, pointing at them with his other hand, and two men stand behind him.",
+    note="2 Samuel 10:4. Hanun takes David’s servants, shaves off half of their beards and cuts their garments in the middle, to their buttocks. The painter shows the shears at the beard and at the tunic and sets the king beside the scene; the Hebrew says nothing of a king looking on, and has the beards halved and the garments cut to the buttocks, where the picture shows the beard being cut off.",
+    note_es="2 Samuel 10:4. Hanún toma a los siervos de David, les rapa la mitad de la barba y les corta los vestidos por la mitad, hasta las nalgas. El pintor muestra las tijeras en la barba y en la túnica y pone al rey junto a la escena; el hebreo no dice nada de un rey que mire, y tiene las barbas por la mitad y los vestidos cortados hasta las nalgas, donde la imagen muestra la barba siendo cortada.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Hanun_humiliates_David%27s_ambassadors.gif",
+)]
