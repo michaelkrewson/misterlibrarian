@@ -52330,3 +52330,135 @@ CHAPTER_ART["2sam5"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
 )]
+# --- 2 Samuel 6 ---
+def _swap6(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D6 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict6_en(slug, old=None, new=None, add=None):
+    _i = _D6[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap6(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict6_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap6(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("tsaad", "tsa'ad", "צָעַד", "tsa'ad",
+    'A STEP, A MARCH &mdash; <em>tsa&rsquo;ad</em>, to step or stride; the noun <em>tse&rsquo;adah</em> is &lsquo;marching&rsquo; and <em>tse&rsquo;adim</em> &lsquo;steps&rsquo;. In <a href="2-samuel-5.html#v5-24">2 Samuel 5:24</a> (now on these pages) the &lsquo;sound of marching&rsquo; in the treetops tells David that Jehovah has gone out before him, and in <a href="2-samuel-6.html#v6-13">2 Samuel 6:13</a> the bearers of the ark have &lsquo;marched six steps&rsquo; when David sacrifices an ox and a fatling. <span data-heb="ששה צעדים">&lsquo;Six steps&rsquo; stands in one verse of the Hebrew Bible</span>, and <span data-heb="קול צעדה">&lsquo;the sound of marching&rsquo; in one</span>; the Chronicles&rsquo; parallel to the second has the article (1 Chronicles 14:15, not yet on these pages).',
+    ("2 Samuel", 5, 24)))
+DICTIONARY_ES["tsaad"] = ("tsa’ad",
+    'UN PASO, UNA MARCHA &mdash; <em>tsa&rsquo;ad</em>, dar un paso o caminar a zancadas; el sustantivo <em>tse&rsquo;adah</em> es «marcha» y <em>tse&rsquo;adim</em> «pasos». En <a href="2-samuel-5.es.html#v5-24">2 Samuel 5:24</a> (ya en estas páginas) el «sonido de una marcha» en las copas dice a David que Jehová ha salido delante de él, y en <a href="2-samuel-6.es.html#v6-13">2 Samuel 6:13</a> los portadores del arca han «marchado seis pasos» cuando David sacrifica un buey y un animal cebado. <span data-heb="ששה צעדים">«Seis pasos» está en un versículo de la Biblia hebrea</span>, y <span data-heb="קול צעדה">«el sonido de una marcha» en uno</span>; el paralelo de Crónicas para el segundo tiene el artículo (1 Crónicas 14:15, todavía no en estas páginas).')
+
+DICTIONARY.append(("kirker", "kirker", "כִּרְכֵּר", "kirker",
+    'WHIRLING &mdash; <em>mekharker</em>, the word for David&rsquo;s dancing before the ark: &lsquo;David was whirling with all his might&rsquo; (<a href="2-samuel-6.html#v6-14">2 Samuel 6:14</a>, now on these pages), and Michal sees him &lsquo;leaping and whirling&rsquo; (verse 16). <span data-heb="מכרכר">It stands in two verses of the Hebrew Bible</span>, these two, and nothing says what the movement was; the versions have &lsquo;danced&rsquo;, &lsquo;dancing around&rsquo; and &lsquo;leaping&rsquo;. The Chronicles tell Michal&rsquo;s looking with other verbs, &lsquo;dancing and making merry&rsquo; (1 Chronicles 15:29, not yet on these pages). See also <a href="dictionary.html#ephod">ephod</a>, the garment he wore.',
+    ("2 Samuel", 6, 14)))
+DICTIONARY_ES["kirker"] = ("kirker",
+    'GIRAR &mdash; <em>mekharker</em>, la palabra para la danza de David ante el arca: «David iba girando con todas sus fuerzas» (<a href="2-samuel-6.es.html#v6-14">2 Samuel 6:14</a>, ya en estas páginas), y Mical lo ve «saltando y girando» (versículo 16). <span data-heb="מכרכר">Está en dos versículos de la Biblia hebrea</span>, estos dos, y nada dice cuál era el movimiento; las versiones tienen «danzaba», «danzando en derredor» y «saltaba». Crónicas cuenta la mirada de Mical con otros verbos, «danzando y festejando» (1 Crónicas 15:29, todavía no en estas páginas). Véase también <a href="diccionario.html#ephod">éfod</a>, la prenda que llevaba.')
+
+DICTIONARY.append(("eshpar", "eshpar", "אֶשְׁפָּר", "eshpar",
+    'ESHPAR &mdash; one of three gifts David hands to every man and woman of Israel when the ark is in its tent (<a href="2-samuel-6.html#v6-19">2 Samuel 6:19</a>, now on these pages), after &lsquo;a loaf of bread&rsquo; (<a href="dictionary.html#challah">challah</a>) and before &lsquo;a raisin cake&rsquo; (<em>ashishah</em>). <span data-heb="אשפר">It stands in two verses of the Hebrew Bible</span>, this one and the parallel at 1 Chronicles 16:3 (not yet on these pages). ⚠ Its meaning is not known: the shelf has &lsquo;a portion of flesh&rsquo; (ASV), &lsquo;a good piece of flesh&rsquo; (KJV), &lsquo;a cake of dates&rsquo; (NIV, NWT 1984) and &lsquo;roasted beef&rsquo; (Douay), and the Greek &lsquo;a griddle-cake&rsquo;; the translation leaves the Hebrew word as it stands. The raisin cake is the <em>ashishah</em> of Song of Solomon 2:5 and Hosea 3:1 (not yet on these pages).',
+    ("2 Samuel", 6, 19)))
+DICTIONARY_ES["eshpar"] = ("eshpar",
+    'ESHPAR &mdash; uno de los tres regalos que David reparte a cada hombre y mujer de Israel cuando el arca está en su tienda (<a href="2-samuel-6.es.html#v6-19">2 Samuel 6:19</a>, ya en estas páginas), después de «una hogaza de pan» (<a href="diccionario.html#challah">jalá</a>) y antes de «una torta de pasas» (<em>ashishah</em>). <span data-heb="אשפר">Está en dos versículos de la Biblia hebrea</span>, este y el paralelo de 1 Crónicas 16:3 (todavía no en estas páginas). ⚠ Su significado no se conoce: los estantes tienen «un pedazo de carne» (RV 1909, RV60), «una torta de dátiles» (NVI, TNM 1987) y en inglés «a portion of flesh» (ASV), «a good piece of flesh» (KJV) y «roasted beef» (Douay), y el griego «una torta de plancha»; la traducción deja la palabra hebrea tal como está. La torta de pasas es la <em>ashishah</em> de Cantares 2:5 y Oseas 3:1 (todavía no en estas páginas).')
+
+_dict6_en("perets", "(2 Samuel 6:8, not yet on these pages)", '(<a href="2-samuel-6.html#v6-8">2 Samuel 6:8</a>, now on these pages)')
+_dict6_es("perets", "(2 Samuel 6:8, todavía no en estas páginas)", '(<a href="2-samuel-6.es.html#v6-8">2 Samuel 6:8</a>, ya en estas páginas)')
+_dict6_en("perets", add=' ⭐ David names the place Perez-uzzah, &lsquo;the breach of Uzzah&rsquo;, as he had named Baal-perazim; <span data-heb="פרץ עזה">the name stands in one verse of the Hebrew Bible</span>.')
+_dict6_es("perets", add=' ⭐ David llama al lugar Perez-uza, «la brecha de Uza», como había llamado Baal-perazim; <span data-heb="פרץ עזה">el nombre está en un versículo de la Biblia hebrea</span>.')
+_dict6_en("nagid", add=' ⭐ David says it himself to Michal, &lsquo;to appoint me leader over the people of Jehovah, over Israel&rsquo; (<a href="2-samuel-6.html#v6-21">2 Samuel 6:21</a>, now on these pages).')
+_dict6_es("nagid", add=' ⭐ David lo dice él mismo a Mical, «para ponerme como caudillo sobre el pueblo de Jehová, sobre Israel» (<a href="2-samuel-6.es.html#v6-21">2 Samuel 6:21</a>, ya en estas páginas).')
+_dict6_en("sachaq", add=' ⭐ David and Israel are &lsquo;making merry before Jehovah&rsquo; as the ark goes up (<a href="2-samuel-6.html#v6-5">2 Samuel 6:5</a>), and he answers Michal, &lsquo;I will make merry before Jehovah&rsquo; (<a href="2-samuel-6.html#v6-21">verse 21</a>, both now on these pages); each phrase stands in one verse of the Hebrew Bible.')
+_dict6_es("sachaq", add=' ⭐ David e Israel «festejaban delante de Jehová» cuando sube el arca (<a href="2-samuel-6.es.html#v6-5">2 Samuel 6:5</a>), y él responde a Mical, «festejaré delante de Jehová» (<a href="2-samuel-6.es.html#v6-21">versículo 21</a>, ambos ya en estas páginas); cada frase está en un versículo de la Biblia hebrea.')
+_dict6_en("kavod", add=' ⭐ Michal says &lsquo;How honored (<em>nikhbad</em>) the king of Israel has been today&rsquo;, and David answers &lsquo;with them I shall be honored (<em>ikkaved</em>)&rsquo; (<a href="2-samuel-6.html#v6-20">2 Samuel 6:20, 22</a>, now on these pages).')
+_dict6_es("kavod", add=' ⭐ Mical dice «¡Cuán honrado (<em>nikhbad</em>) ha sido hoy el rey de Israel!», y David responde «con ellas seré honrado (<em>ikkaved</em>)» (<a href="2-samuel-6.es.html#v6-20">2 Samuel 6:20, 22</a>, ya en estas páginas).')
+_dict6_en("shofar", add=' ⭐ David and all the house of Israel bring up the ark &lsquo;with a shout and with the sound of the ram&rsquo;s horn&rsquo; (<a href="2-samuel-6.html#v6-15">2 Samuel 6:15</a>, now on these pages).')
+_dict6_es("shofar", add=' ⭐ David y toda la casa de Israel suben el arca «con un grito y con sonido de cuerno de carnero» (<a href="2-samuel-6.es.html#v6-15">2 Samuel 6:15</a>, ya en estas páginas).')
+_dict6_en("challah", add=' ⭐ David gives each man and woman of Israel &lsquo;a loaf of bread&rsquo; (<em>challat lechem</em>), with an <a href="dictionary.html#eshpar">eshpar</a> and a raisin cake (<a href="2-samuel-6.html#v6-19">2 Samuel 6:19</a>, now on these pages).')
+_dict6_es("challah", add=' ⭐ David da a cada hombre y mujer de Israel «una hogaza de pan» (<em>challat lechem</em>), con un <a href="diccionario.html#eshpar">eshpar</a> y una torta de pasas (<a href="2-samuel-6.es.html#v6-19">2 Samuel 6:19</a>, ya en estas páginas).')
+_dict6_en("qalal", add=' ⭐ David tells Michal &lsquo;I will be held more lightly than this yet&rsquo; (<em>unqallothi</em>, <a href="2-samuel-6.html#v6-22">2 Samuel 6:22</a>, now on these pages).')
+_dict6_es("qalal", add=' ⭐ David dice a Mical «seré tenido en menos que esto todavía» (<em>unqallothi</em>, <a href="2-samuel-6.es.html#v6-22">2 Samuel 6:22</a>, ya en estas páginas).')
+_dict6_en("ephod", "David dancing before the ark (2 Samuel 6:14; 1 Chronicles 15:27).", 'David dancing before the ark (<a href="2-samuel-6.html#v6-14">2 Samuel 6:14</a>, now on these pages; 1 Chronicles 15:27, not yet on these pages).')
+_dict6_es("ephod", "David danzando delante del arca (2 Samuel 6:14; 1 Crónicas 15:27).", 'David danzando delante del arca (<a href="2-samuel-6.es.html#v6-14">2 Samuel 6:14</a>, ya en estas páginas; 1 Crónicas 15:27, todavía no en estas páginas).')
+_dict6_en("shemittah", "(2 Samuel 6:6, and word for word at 1 Chronicles 13:9)", '(<a href="2-samuel-6.html#v6-6">2 Samuel 6:6</a>, now on these pages, and word for word at 1 Chronicles 13:9)')
+_dict6_es("shemittah", "(2 Samuel 6:6, y palabra por palabra en 1 Crónicas 13:9)", '(<a href="2-samuel-6.es.html#v6-6">2 Samuel 6:6</a>, ya en estas páginas, y palabra por palabra en 1 Crónicas 13:9)')
+_dict6_en("shaqaph", "(Judges 5:28), Michal looks down on David dancing (2 Samuel 6:16), Jezebel paints her eyes and looks out at Jehu (2 Kings 9:30; none of the three yet on these pages)", '(<a href="judges-5.html#v28">Judges 5:28</a>, now on these pages), Michal looks down on David dancing (<a href="2-samuel-6.html#v6-16">2 Samuel 6:16</a>, now on these pages), Jezebel paints her eyes and looks out at Jehu (2 Kings 9:30, not yet on these pages)')
+_dict6_es("shaqaph", "(Jueces 5:28), Mical mira a David que danza (2 Samuel 6:16), Jezabel se pinta los ojos y se asoma a ver a Jehú (2 Reyes 9:30; ninguno de los tres todavía en estas páginas)", '(<a href="judges-5.es.html#v28">Jueces 5:28</a>, ya en estas páginas), Mical mira a David que danza (<a href="2-samuel-6.es.html#v6-16">2 Samuel 6:16</a>, ya en estas páginas), Jezabel se pinta los ojos y se asoma a ver a Jehú (2 Reyes 9:30, todavía no en estas páginas)')
+_dict6_en("tzelatzal", "(2 Samuel 6:5, Psalm 150:5, <em>loud cymbals</em>)", '(<a href="2-samuel-6.html#v6-5">2 Samuel 6:5</a>, now on these pages, and Psalm 150:5, <em>loud cymbals</em>)')
+_dict6_es("tzelatzal", "(2 Samuel 6:5, Salmo 150:5, <em>címbalos resonantes</em>)", '(<a href="2-samuel-6.es.html#v6-5">2 Samuel 6:5</a>, ya en estas páginas, y Salmo 150:5, <em>címbalos resonantes</em>)')
+_dict6_en("agalah", "(2 Samuel 6:3; 1 Chronicles 13:7, neither yet on these pages)", '(<a href="2-samuel-6.html#v6-3">2 Samuel 6:3</a>, now on these pages; 1 Chronicles 13:7, not yet on these pages)')
+_dict6_es("agalah", "(2 Samuel 6:3; 1 Crónicas 13:7, ninguno todavía en estas páginas)", '(<a href="2-samuel-6.es.html#v6-3">2 Samuel 6:3</a>, ya en estas páginas; 1 Crónicas 13:7, todavía no en estas páginas)')
+
+ENCYCLOPEDIA.append(dict(slug="uzzah", name="Uzzah", kind="person", aliases=["Uzzah", "Ahio"],
+    refs=[("2 Samuel", 6, 3), ("2 Samuel", 6, 6), ("2 Samuel", 6, 7), ("2 Samuel", 6, 8)], videos=[],
+    desc='A son of <a href="encyclopedia.html#abinadab">Abinadab</a>, who with his brother (or <em>Ahio</em>, as the Hebrew can be read) drives the new cart that carries the ark from his father&rsquo;s house on the hill. At the threshing floor of Nacon he puts out his hand to the ark and takes hold of it when the oxen let it slip, and God strikes him down &lsquo;for the error&rsquo;; he dies beside the ark (<a href="2-samuel-6.html#v6-3">2 Samuel 6:3&ndash;8</a>, now on these pages). David names the place <a href="encyclopedia.html#perez-uzzah">Perez-uzzah</a>. ⭐ The Chronicles call him Uzza and give the cause as &lsquo;because he put forth his hand to the ark&rsquo; (1 Chronicles 13:7&ndash;11, not yet on these pages).'))
+ENCYCLOPEDIA_ES["uzzah"] = ("Uza",
+    'Un hijo de <a href="enciclopedia.html#abinadab">Abinadab</a>, que con su hermano (o <em>Ahío</em>, como puede leerse el hebreo) guía el carro nuevo que lleva el arca desde la casa de su padre en la colina. En la era de Nacón extiende la mano al arca y la agarra cuando los bueyes la dejan caer, y Dios lo hiere «por el error»; muere junto al arca (<a href="2-samuel-6.es.html#v6-3">2 Samuel 6:3–8</a>, ya en estas páginas). David llama al lugar <a href="enciclopedia.html#perez-uzzah">Perez-uza</a>. ⭐ Crónicas lo llaman Uza y dan la causa como «porque extendió su mano al arca» (1 Crónicas 13:7–11, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="abinadab", name="Abinadab", kind="person", aliases=["Abinadab"],
+    refs=[("1 Samuel", 7, 1), ("2 Samuel", 6, 3), ("2 Samuel", 6, 4)], videos=[],
+    desc='A man of <a href="encyclopedia.html#kiriath-jearim">Kiriath-jearim</a> in whose house on the hill the ark stays after the Philistines send it back, with his son Eleazar consecrated to guard it (<a href="1-samuel-7.html#v7-1">1 Samuel 7:1&ndash;2</a>, now on these pages). His sons <a href="encyclopedia.html#uzzah">Uzzah</a> and Ahio drive the new cart that takes the ark out of his house (<a href="2-samuel-6.html#v6-3">2 Samuel 6:3&ndash;4</a>, now on these pages).'))
+ENCYCLOPEDIA_ES["abinadab"] = ("Abinadab",
+    'Un hombre de <a href="enciclopedia.html#kiriath-jearim">Quiriat-jearim</a> en cuya casa en la colina queda el arca cuando los filisteos la devuelven, con su hijo Eleazar consagrado para guardarla (<a href="1-samuel-7.es.html#v7-1">1 Samuel 7:1–2</a>, ya en estas páginas). Sus hijos <a href="enciclopedia.html#uzzah">Uza</a> y Ahío guían el carro nuevo que saca el arca de su casa (<a href="2-samuel-6.es.html#v6-3">2 Samuel 6:3–4</a>, ya en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="obed-edom", name="Obed-edom", kind="person", aliases=["Obed-edom"],
+    refs=[("2 Samuel", 6, 10), ("2 Samuel", 6, 11), ("2 Samuel", 6, 12)], videos=[],
+    desc='A Gittite &mdash; a man of <a href="encyclopedia.html#gath">Gath</a> &mdash; in whose house the ark stays three months after Uzzah&rsquo;s death, and whose house Jehovah blesses &lsquo;because of the ark of God&rsquo;; when David hears of it he brings the ark up to the city of David (<a href="2-samuel-6.html#v6-10">2 Samuel 6:10&ndash;12</a>, now on these pages). The text gives no reason why David turned the ark aside to him. ⭐ The Chronicles keep the name &lsquo;the Gittite&rsquo; (1 Chronicles 13:13, not yet on these pages).'))
+ENCYCLOPEDIA_ES["obed-edom"] = ("Obed-edom",
+    'Un geteo —un hombre de <a href="enciclopedia.html#gath">Gat</a>— en cuya casa queda el arca tres meses tras la muerte de Uza, y cuya casa Jehová bendice «por causa del arca de Dios»; cuando David lo oye sube el arca a la ciudad de David (<a href="2-samuel-6.es.html#v6-10">2 Samuel 6:10–12</a>, ya en estas páginas). El texto no da razón de por qué David desvió el arca hacia él. ⭐ Crónicas conserva el nombre «el geteo» (1 Crónicas 13:13, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="nacon", name="The threshing floor of Nacon", kind="place", aliases=["Nacon"],
+    coords=(31.78, 35.16, 0.3), approx=True,
+    refs=[("2 Samuel", 6, 6)], videos=[],
+    desc='The place where the oxen let the ark slip and Uzzah put out his hand to it (<a href="2-samuel-6.html#v6-6">2 Samuel 6:6</a>, now on these pages); the Chronicles call it the threshing floor of Chidon (1 Chronicles 13:9, not yet on these pages) and the Greek &lsquo;Nodab&rsquo;. Its site is not known; the coordinates are an approximate point between <a href="encyclopedia.html#kiriath-jearim">Kiriath-jearim</a> and Jerusalem, not a located place. See <a href="encyclopedia.html#perez-uzzah">Perez-uzzah</a>.'))
+ENCYCLOPEDIA_ES["nacon"] = ("La era de Nacón",
+    'El lugar donde los bueyes dejaron caer el arca y Uza extendió la mano hacia ella (<a href="2-samuel-6.es.html#v6-6">2 Samuel 6:6</a>, ya en estas páginas); Crónicas la llama la era de Quidón (1 Crónicas 13:9, todavía no en estas páginas) y el griego «Nodab». Su sitio no se conoce; las coordenadas son un punto aproximado entre <a href="enciclopedia.html#kiriath-jearim">Quiriat-jearim</a> y Jerusalén, no un lugar localizado. Véase <a href="enciclopedia.html#perez-uzzah">Perez-uza</a>.')
+ENCYCLOPEDIA.append(dict(slug="perez-uzzah", name="Perez-uzzah", kind="place", aliases=["Perez-uzzah"],
+    coords=(31.78, 35.16, 0.3), approx=True,
+    refs=[("2 Samuel", 6, 8)], videos=[],
+    desc='&lsquo;The breach of Uzzah&rsquo; &mdash; the name David gives the place where Jehovah had &lsquo;broken through in a breach against Uzzah&rsquo;, &lsquo;to this day&rsquo; (<a href="2-samuel-6.html#v6-8">2 Samuel 6:8</a>, now on these pages); the Chronicles spell it Perez-uzza (1 Chronicles 13:11, not yet on these pages). As far as the text says it is the threshing floor of <a href="encyclopedia.html#nacon">Nacon</a> where Uzzah died, and the coordinates are the same approximation. See <em><a href="dictionary.html#perets">perets</a></em>.'))
+ENCYCLOPEDIA_ES["perez-uzzah"] = ("Perez-uza",
+    '«La brecha de Uza» &mdash; el nombre que David da al lugar donde Jehová había «irrumpido con una brecha contra Uza», «hasta hoy» (<a href="2-samuel-6.es.html#v6-8">2 Samuel 6:8</a>, ya en estas páginas); Crónicas lo escriben Perez-uza (1 Crónicas 13:11, todavía no en estas páginas). Hasta donde dice el texto es la era de <a href="enciclopedia.html#nacon">Nacón</a> donde murió Uza, y las coordenadas son la misma aproximación. Véase <em><a href="diccionario.html#perets">perets</a></em>.')
+
+_REFS6 = {
+    "kiriath-jearim": [("2 Samuel", 6, 2)],
+    "michal": [("2 Samuel", 6, 16), ("2 Samuel", 6, 20), ("2 Samuel", 6, 21), ("2 Samuel", 6, 23)],
+    "gath": [("2 Samuel", 6, 10), ("2 Samuel", 6, 11)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS6:
+        _e["refs"] = list(_e["refs"]) + _REFS6[_e["slug"]]
+    if _e["slug"] == "kiriath-jearim":
+        _e["aliases"] = list(_e["aliases"]) + ["Baale-judah"]
+        _e["desc"] = _swap6(_e["desc"], "(2 Samuel 6).", '(<a href="2-samuel-6.html#v6-2">2 Samuel 6</a>, now on these pages, where it is called Baale-judah).')
+    elif _e["slug"] == "michal":
+        _e["desc"] = _swap6(_e["desc"], "2 Samuel 6:16&ndash;23, not yet on these pages)", '<a href="2-samuel-6.html#v6-16">2 Samuel 6:16&ndash;23</a>, now on these pages)')
+    elif _e["slug"] == "gath":
+        _e["desc"] += ' ⭐ <a href="encyclopedia.html#obed-edom">Obed-edom the Gittite</a>, a man of Gath, keeps the ark for three months (<a href="2-samuel-6.html#v6-10">2 Samuel 6:10&ndash;11</a>, now on these pages).'
+for _k, _o, _n in (
+    ("kiriath-jearim", "(2 Samuel 6).", '(<a href="2-samuel-6.es.html#v6-2">2 Samuel 6</a>, ya en estas páginas, donde se llama Baale-judá).'),
+    ("michal", "2 Samuel 6:16&ndash;23, todavía no en estas páginas)", '<a href="2-samuel-6.es.html#v6-16">2 Samuel 6:16–23</a>, ya en estas páginas)'),
+):
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap6(_s[1], _o, _n))
+_s = ENCYCLOPEDIA_ES["gath"]
+ENCYCLOPEDIA_ES["gath"] = (_s[0], _s[1] + ' ⭐ <a href="enciclopedia.html#obed-edom">Obed-edom el geteo</a>, un hombre de Gat, guarda el arca tres meses (<a href="2-samuel-6.es.html#v6-10">2 Samuel 6:10–11</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["2sam6"] = dict(era="monarchy",
+    when="Jerusalem: David gathers thirty thousand chosen men and sets the ark on a new cart at Baale-judah (Kiriath-jearim); Uzzah puts out his hand at the threshing floor of Nacon and dies beside the ark, and the place is named Perez-uzzah; the ark stays three months with Obed-edom the Gittite, whose house is blessed, then David brings it up with a sacrifice after six steps, whirling in a linen ephod, to the tent he has pitched; Michal despises him in her heart and meets him with mockery, and has no child to the day of her death.",
+    clock="After the capture of Zion and the Philistine battles (2 Samuel 5); the ark had stood at Kiriath-jearim since the Philistines returned it (1 Samuel 7:1–2). The chapter does not date the move; the ark stays three months with Obed-edom (6:11).")
+
+CHAPTER_ART["2sam6"] = [dict(
+    file="tissot-david-dancing-before-the-ark.jpg",
+    title="David dancing before the ark", title_es="David danza delante del arca",
+    artist="James Tissot",
+    year="1900",
+    location="John Rylands Library, Manchester (Special Collections R16279)", location_es="Biblioteca John Rylands, Mánchester (Colecciones Especiales R16279)",
+    alt="A pen-and-ink sketch. In the centre a barefoot figure in a loose, flying robe whirls on one leg with his arms raised over his head. Behind him hangs a draped tent or canopy with a pointed top; to the left a woman holds up two small cymbals and a man beside her plays a long horn, with a crowd of faces and raised spears or staves behind them; to the right more figures press forward.",
+    note="2 Samuel 6:14–15. David and all the house of Israel bring up the ark of Jehovah with a shout and the sound of the ram’s horn, and David is whirling with all his might before Jehovah, girded with a linen ephod. This is one of Tissot’s pen sketches for his Old Testament illustrations, published after his death by Maurice Brunoff in 1904. The drawing shows a loose robe, a long straight horn and a woman with small cymbals; the Hebrew has the linen ephod, the ram’s horn and the cymbals of verse 5, and names the dance with the one word mekharker.",
+    note_es="2 Samuel 6:14–15. David y toda la casa de Israel suben el arca de Jehová con un grito y con sonido de cuerno de carnero, y David va girando con todas sus fuerzas delante de Jehová, ceñido con un efod de lino. Es uno de los bocetos a pluma de Tissot para sus ilustraciones del Antiguo Testamento, publicados tras su muerte por Maurice Brunoff en 1904. El dibujo muestra una túnica suelta, un cuerno largo y recto y una mujer con pequeños címbalos; el hebreo tiene el efod de lino, el cuerno de carnero y los címbalos del versículo 5, y nombra la danza con la sola palabra mekharker.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_296_David_dancing_before_the_ark_2_Samuel_6_14_for_Brunoff_283_David_danse_devant_l%27arche.jpg",
+)]
