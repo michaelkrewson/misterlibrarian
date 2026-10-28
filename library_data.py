@@ -52185,3 +52185,148 @@ CHAPTER_ART["2sam4"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
 )]
+# --- 2 Samuel 5 ---
+def _swap5(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D5 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict5_en(slug, old=None, new=None, add=None):
+    _i = _D5[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap5(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict5_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap5(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("tsinnor", "tsinnor", "צִנּוֹר", "tsinnor",
+    'A WATER-CHANNEL &mdash; a pipe, spout or channel through which water runs or falls. <span data-heb="צנור">It stands in two verses of the Hebrew Bible</span>. In <a href="2-samuel-5.html#v5-8">2 Samuel 5:8</a> (now on these pages) David&rsquo;s challenge to whoever would take Jebusite Jerusalem is &lsquo;Whoever strikes a Jebusite, let him reach the water-channel&rsquo; &mdash; and the sentence breaks off before it says what he is to do there. The other verse is &lsquo;Deep calls to deep at the sound of your <em>tsinnorim</em>&rsquo; (Psalm 42:8, not yet on these pages). ⚠ The versions render it a watercourse, a gutter, a water shaft or a water tunnel; some readers connect it with a shaft or tunnel by which water reached the city, and the Hebrew does not describe one. See also <a href="dictionary.html#metsudah">metsudah</a>, the stronghold it belongs to.',
+    ("2 Samuel", 5, 8)))
+DICTIONARY_ES["tsinnor"] = ("tsinnor",
+    'UN CANAL DE AGUA &mdash; un caño, un surtidor o un canal por donde el agua corre o cae. <span data-heb="צנור">Está en dos versículos de la Biblia hebrea</span>. En <a href="2-samuel-5.es.html#v5-8">2 Samuel 5:8</a> (ya en estas páginas) el desafío de David a quien quiera tomar la Jerusalén jebusea es «El que hiera a un jebuseo, que alcance el canal del agua» &mdash; y la oración se corta antes de decir qué ha de hacer allí. El otro versículo es «Un abismo llama a otro abismo al ruido de tus <em>tsinnorim</em>» (Salmo 42:8, todavía no en estas páginas). ⚠ Las versiones lo traducen canal, desagüe, pozo de agua o túnel del agua; algunos lectores lo relacionan con un pozo o un túnel por donde el agua llegaba a la ciudad, y el hebreo no describe ninguno. Véase también <a href="diccionario.html#metsudah">metsudá</a>, la fortaleza a la que pertenece.')
+
+DICTIONARY.append(("millo", "ha-Millo", "הַמִּלּוֹא", "ha-millo",
+    'THE MILLO &mdash; <em>ha-Millo</em>, &lsquo;the filling&rsquo;, from the root <em>male</em>, &lsquo;to be full&rsquo;: a structure of Jerusalem that the Hebrew calls only &lsquo;the Millo&rsquo;, of which <a href="2-samuel-5.html#v5-9">2 Samuel 5:9</a> (now on these pages) says that David &lsquo;built all around, from the Millo and inward&rsquo;. <span data-heb="המלוא">With the article it stands in six verses of the Hebrew Bible</span>, Besides this one they are 1 Kings 9:15, 24 and 11:27, 1 Chronicles 11:8 and 2 Chronicles 32:5, none of them yet on these pages. &lsquo;Beth-millo&rsquo; at Shechem (<a href="judges-9.html#v9-6">Judges 9:6</a>, already on these pages) is another place from the same root. ⚠ What the Millo was &mdash; a terrace, a rampart, a fill of earth against the slope &mdash; is not said; the shelf has &lsquo;terraces&rsquo; (NIV), &lsquo;the Mound&rsquo; (NWT 1984), or the Hebrew name itself.',
+    ("2 Samuel", 5, 9)))
+DICTIONARY_ES["millo"] = ("ha-Milo",
+    'EL MILO &mdash; <em>ha-Millo</em>, «el relleno», de la raíz <em>male</em>, «estar lleno»: una construcción de Jerusalén que el hebreo llama solo «el Milo», de la cual <a href="2-samuel-5.es.html#v5-9">2 Samuel 5:9</a> (ya en estas páginas) dice que David «edificó todo alrededor, desde el Milo hacia adentro». <span data-heb="המלוא">Con artículo está en seis versículos de la Biblia hebrea</span>, Además de este son 1 Reyes 9:15, 24 y 11:27, 1 Crónicas 11:8 y 2 Crónicas 32:5, ninguno todavía en estas páginas. «Bet-milo» en Siquem (<a href="judges-9.es.html#v9-6">Jueces 9:6</a>, ya en estas páginas) es otro lugar de la misma raíz. ⚠ Qué era el Milo — una terraza, una muralla, un relleno de tierra contra la ladera — no se dice; los estantes tienen «el terraplén» (NVI), «el Montículo» (TNM 1987), o el nombre hebreo mismo.')
+
+DICTIONARY.append(("bekhaim", "bekha'im", "בְּכָאִים", "bekha'im",
+    'THE BAKHA TREES &mdash; <em>bekha&rsquo;im</em>, the trees (or bushes) in whose tops David is told to listen for the sound of marching before he strikes the Philistines (<a href="2-samuel-5.html#v5-23">2 Samuel 5:23&ndash;24</a>, now on these pages). <span data-heb="בכאים">It stands in four verses of the Hebrew Bible</span>, these two and 1 Chronicles 14:14&ndash;15 (not yet on these pages). ⚠ The tree is not known; the shelf has mulberry, poplar, balsam, pear and &lsquo;baca bushes&rsquo;. The spelling is that of &lsquo;weepers&rsquo;, from <a href="dictionary.html#bakah">bakah</a>, &lsquo;to weep&rsquo;, and the Greek reads it so, &lsquo;the weeping valley&rsquo;.',
+    ("2 Samuel", 5, 23)))
+DICTIONARY_ES["bekhaim"] = ("bekha’im",
+    'LOS ÁRBOLES BAKHA &mdash; <em>bekha&rsquo;im</em>, los árboles (o arbustos) en cuyas copas David debe escuchar el sonido de una marcha antes de herir a los filisteos (<a href="2-samuel-5.es.html#v5-23">2 Samuel 5:23&ndash;24</a>, ya en estas páginas). <span data-heb="בכאים">Está en cuatro versículos de la Biblia hebrea</span>, estos dos y 1 Crónicas 14:14&ndash;15 (todavía no en estas páginas). ⚠ El árbol no se conoce; los estantes tienen moral, álamo, bálsamo, peral y «arbustos bekja». La grafía es la de «llorones», de <a href="diccionario.html#bakah">bakah</a>, «llorar», y el griego la lee así, «el valle del llanto».')
+
+DICTIONARY.append(("atsab", "atsabbim", "עֲצַבִּים", "atsabbim",
+    'IDOLS &mdash; <em>atsabbim</em>, the images of foreign gods. <span data-heb="עצביהם">&lsquo;Their idols&rsquo; (<em>atsabbeihem</em>) stands in six verses of the Hebrew Bible</span>: the Philistines send the news of Gilboa &lsquo;to the house of their idols&rsquo; (<a href="1-samuel-31.html#v31-9">1 Samuel 31:9</a>, already on these pages), and at Baal-perazim they leave them behind and David and his men carry them away (<a href="2-samuel-5.html#v5-21">2 Samuel 5:21</a>, now on these pages); the other four are 1 Chronicles 10:9, Isaiah 46:1 and Psalms 106:36 and 115:4, not yet on these pages. Compare <a href="dictionary.html#pesel">pesel</a>, the carved image. ⚠ The shelf splits at 2 Samuel 5:21: &lsquo;took them away&rsquo; (ASV, NWT 1984, Douay), &lsquo;carried them off&rsquo; (NIV) or &lsquo;burned them&rsquo; (KJV) or &lsquo;burnt them&rsquo; (Geneva), the last two matching the Chronicles&rsquo; &lsquo;they were burned with fire&rsquo; (1 Chronicles 14:12).',
+    ("1 Samuel", 31, 9)))
+DICTIONARY_ES["atsab"] = ("atsabbim",
+    'ÍDOLOS &mdash; <em>atsabbim</em>, las imágenes de dioses extranjeros. <span data-heb="עצביהם">«Sus ídolos» (<em>atsabbeihem</em>) está en seis versículos de la Biblia hebrea</span>: los filisteos envían la noticia de Gilboa «a la casa de sus ídolos» (<a href="1-samuel-31.es.html#v31-9">1 Samuel 31:9</a>, ya en estas páginas), y en Baal-perazim los dejan atrás y David y sus hombres se los llevan (<a href="2-samuel-5.es.html#v5-21">2 Samuel 5:21</a>, ya en estas páginas); los otros cuatro son 1 Crónicas 10:9, Isaías 46:1 y los Salmos 106:36 y 115:4, todavía no en estas páginas. Compárese <a href="diccionario.html#pesel">pesel</a>, la imagen tallada. ⚠ Los estantes se dividen en 2 Samuel 5:21: «los quemaron» (RV60, RV 1909), «se los llevaron» (NVI, TNM 1987), o en inglés «took them away» (ASV, NWT 1984, Douay) y «burned them» (KJV) o «burnt them» (Geneva), esto último en línea con el «fueron quemados con fuego» de Crónicas (1 Crónicas 14:12).')
+
+_dict5_en("metsudah", "(2 Samuel 5:7, not yet on these pages)", '(<a href="2-samuel-5.html#v5-7">2 Samuel 5:7</a>, now on these pages)')
+_dict5_es("metsudah", "(2 Samuel 5:7, todavía no en estas páginas)", '(<a href="2-samuel-5.es.html#v5-7">2 Samuel 5:7</a>, ya en estas páginas)')
+_dict5_en("metsudah", add=' ⭐ In 2 Samuel 5 the word covers both the Zion David takes (verses 7 and 9) and the stronghold he goes down to when the Philistines come up (<a href="2-samuel-5.html#v5-17">verse 17</a>, now on these pages); the Hebrew does not say that they are the same place.')
+_dict5_es("metsudah", add=' ⭐ En 2 Samuel 5 la palabra abarca tanto la Sion que David toma (versículos 7 y 9) como la fortaleza a la que baja cuando suben los filisteos (<a href="2-samuel-5.es.html#v5-17">versículo 17</a>, ya en estas páginas); el hebreo no dice que sean el mismo lugar.')
+_dict5_en("nagid", add=' ⭐ The tribes quote Jehovah to David at Hebron, &lsquo;you shall shepherd my people Israel, and you shall be leader over Israel&rsquo; (<a href="2-samuel-5.html#v5-2">2 Samuel 5:2</a>, now on these pages).')
+_dict5_es("nagid", add=' ⭐ Las tribus citan a Jehová a David en Hebrón, «tú pastorearás a mi pueblo Israel, y tú serás caudillo sobre Israel» (<a href="2-samuel-5.es.html#v5-2">2 Samuel 5:2</a>, ya en estas páginas).')
+_dict5_en("perets", add=' ⭐ David names Baal-perazim, &lsquo;lord of breaches&rsquo;, for his word &lsquo;Jehovah has broken through my enemies before me, like a breach of waters&rsquo; (<a href="2-samuel-5.html#v5-20">2 Samuel 5:20</a>, now on these pages); <span data-heb="פרץ יהוה">&lsquo;Jehovah has broken through&rsquo; stands in five verses of the Hebrew Bible</span>, the next of them turned against Uzzah (2 Samuel 6:8, not yet on these pages).')
+_dict5_es("perets", add=' ⭐ David llama Baal-perazim, «señor de brechas», por su palabra «Jehová ha irrumpido entre mis enemigos delante de mí, como una brecha de aguas» (<a href="2-samuel-5.es.html#v5-20">2 Samuel 5:20</a>, ya en estas páginas); <span data-heb="פרץ יהוה">«Jehová ha irrumpido» está en cinco versículos de la Biblia hebrea</span>, el siguiente de ellos vuelto contra Uza (2 Samuel 6:8, todavía no en estas páginas).')
+_dict5_en("bakah", add=' ⭐ The same spelling is the name of the <a href="dictionary.html#bekhaim">bakha trees</a> of <a href="2-samuel-5.html#v5-23">2 Samuel 5:23&ndash;24</a> (now on these pages), which the Greek reads &lsquo;weeping&rsquo;.')
+_dict5_es("bakah", add=' ⭐ La misma grafía es el nombre de los <a href="diccionario.html#bekhaim">árboles bakha</a> de <a href="2-samuel-5.es.html#v5-23">2 Samuel 5:23–24</a> (ya en estas páginas), que el griego lee «llanto».')
+_dict5_en("charats", add=' ⭐ <em>Techerats</em> in <a href="2-samuel-5.html#v5-24">2 Samuel 5:24</a> (now on these pages), &lsquo;then you shall move decisively&rsquo;, is the word Jehovah gives David for the moment he hears the sound of marching in the treetops; <span data-heb="תחרץ">it stands in one verse of the Hebrew Bible</span>, and the shelf has &lsquo;bestir yourself&rsquo;, &lsquo;move quickly&rsquo;, &lsquo;act with decision&rsquo; and &lsquo;attack&rsquo;.')
+_dict5_es("charats", add=' ⭐ <em>Techerats</em> en <a href="2-samuel-5.es.html#v5-24">2 Samuel 5:24</a> (ya en estas páginas), «entonces te lanzarás con decisión», es la palabra que Jehová da a David para el momento en que oiga el sonido de una marcha en las copas; <span data-heb="תחרץ">está en un versículo de la Biblia hebrea</span>, y los estantes tienen «te moverás», «lánzate al ataque» y «actúa con decisión».')
+_dict5_en("shaal", add=' ⭐ David asks twice at the valley of Rephaim, and the answers differ: &lsquo;Go up&rsquo;, then &lsquo;You shall not go up; turn round behind them&rsquo; (<a href="2-samuel-5.html#v5-19">2 Samuel 5:19, 23</a>, now on these pages).')
+_dict5_es("shaal", add=' ⭐ David pregunta dos veces en el valle de Refaím, y las respuestas difieren: «Sube», luego «No subirás; da la vuelta por detrás de ellos» (<a href="2-samuel-5.es.html#v5-19">2 Samuel 5:19, 23</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="hiram", name="Hiram", kind="person", aliases=["Hiram"],
+    refs=[("2 Samuel", 5, 11)], videos=[],
+    desc='King of <a href="encyclopedia.html#tyre">Tyre</a>, who sends David messengers and cedar trees and craftsmen in wood and in stone, and they build David a house (<a href="2-samuel-5.html#v5-11">2 Samuel 5:11</a>, now on these pages). ⭐ He deals with Solomon in the same way, and their treaty is the &lsquo;covenant of brothers&rsquo; of the Tyre entry (1 Kings 5:12; 9:13, not yet on these pages).'))
+ENCYCLOPEDIA_ES["hiram"] = ("Hiram",
+    'Rey de <a href="enciclopedia.html#tyre">Tiro</a>, que envía a David mensajeros y árboles de cedro y artesanos en madera y en piedra, y le edifican una casa (<a href="2-samuel-5.es.html#v5-11">2 Samuel 5:11</a>, ya en estas páginas). ⭐ Trata con Salomón del mismo modo, y su tratado es el «pacto de hermanos» de la entrada de Tiro (1 Reyes 5:12; 9:13, todavía no en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="davids-sons-in-jerusalem", name="David&rsquo;s sons born in Jerusalem", kind="person",
+    aliases=["Shammua", "Shobab", "Ibhar", "Elishua", "Nepheg", "Japhia", "Elishama", "Eliada", "Eliphelet"],
+    refs=[("2 Samuel", 5, 14), ("2 Samuel", 5, 15), ("2 Samuel", 5, 16)], videos=[],
+    desc='The eleven names the Hebrew lists as born to David in Jerusalem: Shammua, Shobab, Nathan, Solomon, Ibhar, Elishua, Nepheg, Japhia, Elishama, Eliada and Eliphelet (<a href="2-samuel-5.html#v5-14">2 Samuel 5:14&ndash;16</a>, now on these pages), no mother named for any of them. The Chronicles repeat the list with thirteen names and &lsquo;Beeliada&rsquo; for Eliada (1 Chronicles 14:4&ndash;7, not yet on these pages). Two of the eleven are <a href="encyclopedia.html#nathan-son-of-david">Nathan</a> and <a href="encyclopedia.html#solomon">Solomon</a>, who stand in the two genealogies of Jesus. ⚠ Japhia is also the name of a king of Lachish and a town of Zebulun (<a href="joshua-10.html#v10-3">Joshua 10:3</a>; <a href="joshua-19.html#v19-12">19:12</a>, already on these pages).'))
+ENCYCLOPEDIA_ES["davids-sons-in-jerusalem"] = ("Los hijos de David nacidos en Jerusalén",
+    'Los once nombres que el hebreo enumera como nacidos a David en Jerusalén: Samúa, Sobab, Natán, Salomón, Ibhar, Elisúa, Néfeg, Jafía, Elisamá, Eliadá y Elifélet (<a href="2-samuel-5.es.html#v5-14">2 Samuel 5:14–16</a>, ya en estas páginas), sin madre nombrada para ninguno. Crónicas repite la lista con trece nombres y «Beeliada» por Eliadá (1 Crónicas 14:4–7, todavía no en estas páginas). Dos de los once son <a href="enciclopedia.html#nathan-son-of-david">Natán</a> y <a href="enciclopedia.html#solomon">Salomón</a>, que figuran en las dos genealogías de Jesús. ⚠ Jafía es también el nombre de un rey de Laquis y de un pueblo de Zabulón (<a href="joshua-10.es.html#v10-3">Josué 10:3</a>; <a href="joshua-19.es.html#v19-12">19:12</a>, ya en estas páginas).')
+ENCYCLOPEDIA.append(dict(slug="valley-of-rephaim", name="The valley of Rephaim", kind="place", aliases=["Valley of Rephaim", "valley of Rephaim"],
+    coords=(31.752, 35.205, 0.3), approx=True,
+    refs=[("Joshua", 15, 8), ("Joshua", 18, 16), ("2 Samuel", 5, 18), ("2 Samuel", 5, 22)], videos=[],
+    desc='A valley on the edge of Jerusalem: Judah&rsquo;s border climbs &lsquo;to the top of the mountain that faces the Valley of Hinnom westward, which is at the northern end of the Valley of Rephaim&rsquo; (<a href="joshua-15.html#v15-8">Joshua 15:8</a>; <a href="joshua-18.html#v18-16">18:16</a>, already on these pages). ⭐ The Philistines spread out in it twice after David is anointed over Israel, and he defeats them there (<a href="2-samuel-5.html#v5-18">2 Samuel 5:18&ndash;25</a>, now on these pages); the Greek calls it &lsquo;the valley of the Titans&rsquo;. The coordinates are a southwestern approximation near Jerusalem, not a located site. See <a href="encyclopedia.html#rephaim">the Rephaim</a>.'))
+ENCYCLOPEDIA_ES["valley-of-rephaim"] = ("El valle de Refaím",
+    'Un valle en el borde de Jerusalén: el límite de Judá sube «a la cima del monte que está frente al valle de Hinom hacia el occidente, que está en el extremo norte del valle de Refaím» (<a href="joshua-15.es.html#v15-8">Josué 15:8</a>; <a href="joshua-18.es.html#v18-16">18:16</a>, ya en estas páginas). ⭐ Los filisteos se extienden en él dos veces después de que David es ungido sobre Israel, y él los derrota allí (<a href="2-samuel-5.es.html#v5-18">2 Samuel 5:18–25</a>, ya en estas páginas); el griego lo llama «el valle de los Titanes». Las coordenadas son una aproximación al suroeste de Jerusalén, no un sitio localizado. Véanse <a href="enciclopedia.html#rephaim">los refaítas</a>.')
+ENCYCLOPEDIA.append(dict(slug="baal-perazim", name="Baal-perazim", kind="place", aliases=["Baal-perazim"],
+    coords=(31.748, 35.195, 0.3), approx=True,
+    refs=[("2 Samuel", 5, 20)], videos=[],
+    desc='&lsquo;Lord of breaches&rsquo; &mdash; the place where David strikes the Philistines and names it for his own saying, &lsquo;Jehovah has broken through my enemies before me, like a breach of waters&rsquo; (<a href="2-samuel-5.html#v5-20">2 Samuel 5:20</a>, now on these pages); the Philistines leave their idols there and David and his men carry them away. The text does not locate it beyond the valley of Rephaim, and the coordinates are an approximation. See <em><a href="dictionary.html#perets">perets</a></em>. ⭐ Isaiah has a &lsquo;Mount Perazim&rsquo; (Isaiah 28:21, not yet on these pages).'))
+ENCYCLOPEDIA_ES["baal-perazim"] = ("Baal-perazim",
+    '«Señor de brechas» &mdash; el lugar donde David hiere a los filisteos y lo nombra por su propio dicho, «Jehová ha irrumpido entre mis enemigos delante de mí, como una brecha de aguas» (<a href="2-samuel-5.es.html#v5-20">2 Samuel 5:20</a>, ya en estas páginas); los filisteos dejan allí sus ídolos y David y sus hombres se los llevan. El texto no lo ubica más allá del valle de Refaím, y las coordenadas son una aproximación. Véase <em><a href="diccionario.html#perets">perets</a></em>. ⭐ Isaías tiene un «monte Perazim» (Isaías 28:21, todavía no en estas páginas).')
+
+_REFS5 = {
+    "hebron": [("2 Samuel", 5, 1), ("2 Samuel", 5, 3), ("2 Samuel", 5, 5)],
+    "jerusalem": [("2 Samuel", 5, 5), ("2 Samuel", 5, 6), ("2 Samuel", 5, 13), ("2 Samuel", 5, 14)],
+    "jebusites": [("2 Samuel", 5, 6), ("2 Samuel", 5, 8)],
+    "zion": [("2 Samuel", 5, 7)],
+    "tyre": [("2 Samuel", 5, 11)],
+    "philistines": [("2 Samuel", 5, 17), ("2 Samuel", 5, 18), ("2 Samuel", 5, 19), ("2 Samuel", 5, 22), ("2 Samuel", 5, 24), ("2 Samuel", 5, 25)],
+    "geba": [("2 Samuel", 5, 25)],
+    "gezer": [("2 Samuel", 5, 25)],
+    "saul-king": [("2 Samuel", 5, 2)],
+    "nathan-son-of-david": [("2 Samuel", 5, 14)],
+    "solomon": [("2 Samuel", 5, 14)],
+    "rephaim": [("2 Samuel", 5, 18)],
+}
+LINK_OVERRIDES.append(("2 Samuel", 5, 14, "Nathan", 1, "nathan-son-of-david"))
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS5:
+        _e["refs"] = list(_e["refs"]) + _REFS5[_e["slug"]]
+    if _e["slug"] == "jebusites":
+        _e["desc"] = _swap5(_e["desc"], "(2 Samuel 5:6-9, not yet on these pages)", '(<a href="2-samuel-5.html#v5-6">2 Samuel 5:6-9</a>, now on these pages)')
+    elif _e["slug"] == "nathan-son-of-david":
+        _e["desc"] = _swap5(_e["desc"], "(also 2 Samuel 5:14)", '(also <a href="2-samuel-5.html#v5-14">2 Samuel 5:14</a>, now on these pages)')
+    elif _e["slug"] == "zion":
+        _e["desc"] = _swap5(_e["desc"], "(2 Samuel 5:7)", '(<a href="2-samuel-5.html#v5-7">2 Samuel 5:7</a>, now on these pages)')
+    elif _e["slug"] == "hebron":
+        _e["desc"] = _swap5(_e["desc"], "(2 Samuel 5:5)", '(<a href="2-samuel-5.html#v5-5">2 Samuel 5:5</a>, now on these pages)')
+    elif _e["slug"] == "jerusalem":
+        _e["desc"] = _swap5(_e["desc"], "(2 Samuel 5)", '(<a href="2-samuel-5.html#v5-6">2 Samuel 5</a>, now on these pages)')
+    elif _e["slug"] == "tyre":
+        _e["desc"] += ' ⭐ <a href="encyclopedia.html#hiram">Hiram</a> sends David cedar and craftsmen first (<a href="2-samuel-5.html#v5-11">2 Samuel 5:11</a>, now on these pages).'
+    elif _e["slug"] == "philistines":
+        _e["desc"] += ' ⭐ They come up twice to the <a href="encyclopedia.html#valley-of-rephaim">valley of Rephaim</a> when David is anointed over all Israel, and are struck at <a href="encyclopedia.html#baal-perazim">Baal-perazim</a> and then from Geba to Gezer (<a href="2-samuel-5.html#v5-17">2 Samuel 5:17&ndash;25</a>, now on these pages).'
+    elif _e["slug"] == "gezer":
+        _e["desc"] += ' ⭐ David strikes the Philistines &lsquo;from Geba until you come to Gezer&rsquo; (<a href="2-samuel-5.html#v5-25">2 Samuel 5:25</a>, now on these pages).'
+    elif _e["slug"] == "geba":
+        _e["desc"] += ' ⭐ It is the starting point of David&rsquo;s pursuit of the Philistines at <a href="2-samuel-5.html#v5-25">2 Samuel 5:25</a> (now on these pages), where the Greek and the Chronicles read Gibeon.'
+    elif _e["slug"] == "rephaim":
+        _e["desc"] += ' ⭐ The <a href="encyclopedia.html#valley-of-rephaim">valley of Rephaim</a> beside Jerusalem is where the Philistines spread out twice against David (<a href="2-samuel-5.html#v5-18">2 Samuel 5:18, 22</a>, now on these pages).'
+for _k, _o, _n in (
+    ("jebusites", "(2 Samuel 5:6-9, todavía no en estas páginas)", '(<a href="2-samuel-5.es.html#v5-6">2 Samuel 5:6-9</a>, ya en estas páginas)'),
+    ("nathan-son-of-david", "(también 2 Samuel 5:14)", '(también <a href="2-samuel-5.es.html#v5-14">2 Samuel 5:14</a>, ya en estas páginas)'),
+    ("zion", "(2 Samuel 5:7)", '(<a href="2-samuel-5.es.html#v5-7">2 Samuel 5:7</a>, ya en estas páginas)'),
+):
+    if _k in ENCYCLOPEDIA_ES and _o in ENCYCLOPEDIA_ES[_k][1]:
+        _s = ENCYCLOPEDIA_ES[_k]
+        ENCYCLOPEDIA_ES[_k] = (_s[0], _swap5(_s[1], _o, _n))
+
+CHRON_CHAPTERS["2sam5"] = dict(era="monarchy",
+    when="Hebron and Jerusalem: all the tribes and then all the elders of Israel come to David at Hebron, make him their bone and flesh, and anoint him king over Israel; his years are counted, seven years and six months over Judah and thirty-three in Jerusalem; he takes the Jebusite stronghold of Zion and calls it the city of David, Hiram of Tyre sends cedar and craftsmen, more wives and eleven sons are listed, and the Philistines, who come up twice into the valley of Rephaim, are struck at Baal-perazim and then from Geba to Gezer.",
+    clock="After Ish-bosheth’s death (2 Samuel 4:7–12). David reigns seven years and six months at Hebron (2:11; 5:5), then thirty-three years at Jerusalem (5:5), forty in all (5:4); the chapter does not date the Philistine campaigns within them.")
+
+CHAPTER_ART["2sam5"] = [dict(
+    file="david-king-elders-hebron-panel.jpg",
+    title="David receives the elders of Israel", title_es="David recibe a los ancianos de Israel",
+    artist="Philips Galle, after Gerard van Groeningen",
+    year="1575",
+    location="Rijksmuseum, Amsterdam (RP-P-2015-10-114, plate 28 of 48)", location_es="Rijksmuseum, Ámsterdam (RP-P-2015-10-114, lámina 28 de 48)",
+    alt="A black-and-white engraving titled “Constantiae exitus”, plate 28. A bearded king in a crown and bare-chested armour sits on a throne under a fringed canopy, a sceptre in his hand; two helmeted soldiers with spears stand behind him. In front of him a kneeling figure in a turban-like cap holds out a ring of keys, beside a woman holding a child and a bearded man. At the right stand robed men in tall caps. Behind, a walled town on a hill and a column of armed men with banners. A Latin verse and the reference “2. Sam. 5. 3.” are printed under the picture.",
+    note="2 Samuel 5:3. All the elders of Israel come to the king at Hebron, and King David makes a covenant with them before Jehovah, and they anoint him king over Israel. This panel is from the same Latin series on David’s life as the prints at 2 Samuel 2 to 4, and carries the reference to verse 3 under the picture. The keys held out to the king are the artist’s addition; the Hebrew has the elders come, the covenant made, and the anointing, and says nothing of keys.",
+    note_es="2 Samuel 5:3. Todos los ancianos de Israel vienen al rey en Hebrón, y el rey David hace con ellos un pacto delante de Jehová, y ungen a David por rey sobre Israel. Este panel es de la misma serie latina sobre la vida de David que los grabados de 2 Samuel 2 a 4, y lleva la referencia al versículo 3 bajo la imagen. Las llaves que se tienden al rey son una adición del artista; el hebreo hace venir a los ancianos, hace el pacto y la unción, y no dice nada de llaves.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:David_gezalfd_tot_koning_van_Juda,_Abner_in_Hebron_begraven,_Isboset_vermoord,_David_als_koning_van_Isra%C3%ABl,_RP-P-2015-10-114.jpg",
+)]
