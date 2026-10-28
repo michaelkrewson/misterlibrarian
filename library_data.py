@@ -53017,3 +53017,132 @@ CHAPTER_ART["2sam11"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_300_Bathsheba_mourns_her_husband_2_Samuel_11_26_for_Brunoff_287_Bethsab%C3%A9e_pleure_son_mari.jpg",
 )]
+
+# --- 2 Samuel 12 ---
+def _swap12(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D12 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict12_en(slug, old=None, new=None, add=None):
+    _i = _D12[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap12(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict12_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap12(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency12_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap12(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency12_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap12(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+DICTIONARY.append(("ben-mavet", "ben mavet", "בֶּן־מָוֶת", "ben mavet",
+    'A SON OF DEATH &mdash; a man who has earned death, or is marked for it. <span data-heb="בן מות|בני מות">&lsquo;A son of death&rsquo; and &lsquo;sons of death&rsquo; stand in three verses</span>. They are Saul&rsquo;s word of David, &lsquo;he is a son of death&rsquo; (<a href="1-samuel-20.html#v20-31">1 Samuel 20:31</a>), David&rsquo;s word of Abner and his guard, &lsquo;you are sons of death&rsquo; (<a href="1-samuel-26.html#v26-16">26:16</a>, both already on these pages), and David&rsquo;s word of the rich man in Nathan&rsquo;s parable, &lsquo;the man who did this is a son of death&rsquo; (<a href="2-samuel-12.html#v12-5">2 Samuel 12:5</a>, now on these pages), after which Nathan says &lsquo;You are the man&rsquo;. The Douay has &lsquo;a child of death&rsquo;, the ASV &lsquo;worthy to die&rsquo; and the NWT &lsquo;deserves to die&rsquo;.',
+    ("1 Samuel", 20, 31)))
+DICTIONARY_ES["ben-mavet"] = ("ben mávet",
+    'UN HIJO DE MUERTE &mdash; un hombre que ha merecido la muerte, o está marcado para ella. <span data-heb="בן מות|בני מות">«Un hijo de muerte» e «hijos de muerte» están en tres versículos</span>. Son la palabra de Saúl sobre David, «es hijo de muerte» (<a href="1-samuel-20.es.html#v20-31">1 Samuel 20:31</a>), la de David sobre Abner y su guardia, «ustedes son hijos de muerte» (<a href="1-samuel-26.es.html#v26-16">26:16</a>, ambos ya en estas páginas), y la de David sobre el rico de la parábola de Natán, «el hombre que hizo esto es hijo de muerte» (<a href="2-samuel-12.es.html#v12-5">2 Samuel 12:5</a>, ya en estas páginas), tras lo cual Natán dice «Tú eres ese hombre». La Douay inglesa tiene «a child of death», la RV60 «digno de muerte» y la TNM «merece morir».')
+
+DICTIONARY.append(("cheiq", "cheiq", "חֵיק", "cheiq",
+    'A BOSOM, a lap &mdash; the fold of the chest and arm where a child or a lamb is held. The poor man&rsquo;s ewe lamb &lsquo;in his bosom lay&rsquo; (<a href="2-samuel-12.html#v12-3">2 Samuel 12:3</a>, now on these pages), and Nathan says of Saul&rsquo;s wives &lsquo;I gave them into your bosom&rsquo; (<a href="2-samuel-12.html#v12-8">12:8</a>). <span data-heb="בחיקך">&lsquo;Into your bosom&rsquo; stands in five verses</span>. They are Sarai&rsquo;s &lsquo;I myself gave my slave-girl into your bosom&rsquo; (<a href="genesis-16.html#v16-5">Genesis 16:5</a>), Moses&rsquo; hand (<a href="exodus-4.html#v4-6">Exodus 4:6</a>), &lsquo;carry them in your bosom&rsquo; (<a href="numbers-11.html#v11-12">Numbers 11:12</a>, all already on these pages), 2 Samuel 12:8, and Abishag in <a href="1-kings-1.html#v2">1 Kings 1:2</a> (already on these pages).',
+    ("2 Samuel", 12, 3)))
+DICTIONARY_ES["cheiq"] = ("jéiq",
+    'UN SENO, un regazo &mdash; el pliegue del pecho y del brazo donde se sostiene a un niño o a un cordero. La corderita del pobre «en su seno yacía» (<a href="2-samuel-12.es.html#v12-3">2 Samuel 12:3</a>, ya en estas páginas), y Natán dice de las mujeres de Saúl «las di en tu seno» (<a href="2-samuel-12.es.html#v12-8">12:8</a>). <span data-heb="בחיקך">«En tu seno» está en cinco versículos</span>. Son el «yo misma di mi sierva en tu seno» de Sarai (Génesis 16:5, ya en estas páginas, todavía no en español), la mano de Moisés (<a href="exodus-4.es.html#v4-6">Éxodo 4:6</a>), «llévalo en tu seno» (<a href="numbers-11.es.html#v11-12">Números 11:12</a>, ya en estas páginas), 2 Samuel 12:8, y Abisag en <a href="1-kings-1.es.html#v2">1 Reyes 1:2</a> (ya en estas páginas).')
+
+DICTIONARY.append(("malben", "malben", "מַלְבֵּן", "malben",
+    'A BRICKMOLD &mdash; the frame that bricks are shaped in, and so brickwork. <span data-heb="מלבן">&lsquo;The brickmold&rsquo; stands in three verses</span>. They are Jeremiah 43:9 and Nahum 3:14 (not yet on these pages) and <a href="2-samuel-12.html#v12-31">2 Samuel 12:31</a> (now on these pages), where David &lsquo;made them pass through the brickmold&rsquo; at Rabbah. Whether that is forced labor or a killing the Hebrew does not say; the bricks of Egypt were &lsquo;mortar and bricks&rsquo; (<a href="exodus-1.html#v1-14">Exodus 1:14</a>, already on these pages), and the Chronicles read &lsquo;cut them with saws&rsquo; and have no brickmold (1 Chronicles 20:3, not yet on these pages).',
+    ("2 Samuel", 12, 31)))
+DICTIONARY_ES["malben"] = ("málben",
+    'UN MOLDE DE LADRILLOS &mdash; el marco en que se forman los ladrillos, y por tanto el ladrillar. <span data-heb="מלבן">«El molde de ladrillos» está en tres versículos</span>. Son Jeremías 43:9 y Nahúm 3:14 (todavía no en estas páginas) y <a href="2-samuel-12.es.html#v12-31">2 Samuel 12:31</a> (ya en estas páginas), donde David «hizo que pasaran por el molde de ladrillos» en Rabá. Si eso es trabajo forzado o una matanza el hebreo no lo dice; los ladrillos de Egipto eran «mezcla y ladrillos» (<a href="exodus-1.es.html#v1-14">Éxodo 1:14</a>, ya en estas páginas), y Crónicas lee «los aserró con sierras» y no tiene molde de ladrillos (1 Crónicas 20:3, todavía no en estas páginas).')
+
+DICTIONARY.append(("chata", "chata", "חָטָא", "chata",
+    'TO SIN, to miss &mdash; the ordinary verb for wrongdoing, and its form <em>chatati</em>, &lsquo;I have sinned&rsquo;, is the confession. <span data-heb="חטאתי ליהוה">&lsquo;I have sinned against Jehovah&rsquo; stands in three verses</span>. They are Pharaoh&rsquo;s (<a href="exodus-10.html#v10-16">Exodus 10:16</a>), Achan&rsquo;s (<a href="joshua-7.html#v7-20">Joshua 7:20</a>, both already on these pages) and David&rsquo;s, after Nathan&rsquo;s &lsquo;You are the man&rsquo; (<a href="2-samuel-12.html#v12-13">2 Samuel 12:13</a>, now on these pages), where Nathan answers &lsquo;Jehovah also has taken away your sin&rsquo;. Saul had said only &lsquo;I have sinned&rsquo; (<a href="1-samuel-15.html#v15-24">1 Samuel 15:24</a>, already on these pages) and asked to be honored before the elders.',
+    ("Exodus", 10, 16)))
+DICTIONARY_ES["chata"] = ("jatá",
+    'PECAR, errar &mdash; el verbo ordinario de la falta, y su forma <em>chatati</em>, «he pecado», es la confesión. <span data-heb="חטאתי ליהוה">«He pecado contra Jehová» está en tres versículos</span>. Son el del faraón (<a href="exodus-10.es.html#v10-16">Éxodo 10:16</a>), el de Acán (<a href="joshua-7.es.html#v7-20">Josué 7:20</a>, ambos ya en estas páginas) y el de David, tras el «Tú eres ese hombre» de Natán (<a href="2-samuel-12.es.html#v12-13">2 Samuel 12:13</a>, ya en estas páginas), donde Natán responde «También Jehová ha quitado tu pecado». Saúl había dicho solo «He pecado» (<a href="1-samuel-15.es.html#v15-24">1 Samuel 15:24</a>, ya en estas páginas) y pidió ser honrado ante los ancianos.')
+
+_dict12_en("rachatz", "(2 Samuel 12:20, not yet on these pages)", '(<a href="2-samuel-12.html#v12-20">2 Samuel 12:20</a>, now on these pages)')
+_dict12_es("rachatz", "(2 Samuel 12:20, todavía no en estas páginas)", '(<a href="2-samuel-12.es.html#v12-20">2 Samuel 12:20</a>, ya en estas páginas)')
+_dict12_en("seter", "(2 Samuel 12:12, not yet on these pages)", '(<a href="2-samuel-12.html#v12-12">2 Samuel 12:12</a>, now on these pages)')
+_dict12_es("seter", "(2 Samuel 12:12, todavía no en estas páginas)", '(<a href="2-samuel-12.es.html#v12-12">2 Samuel 12:12</a>, ya en estas páginas)')
+_dict12_en("atar-crown", "(2 Samuel 12:30, not yet on these pages)", '(<a href="2-samuel-12.html#v12-30">2 Samuel 12:30</a>, now on these pages)')
+_dict12_es("atar-crown", "(2 Samuel 12:30, todavía no en estas páginas)", '(<a href="2-samuel-12.es.html#v12-30">2 Samuel 12:30</a>, ya en estas páginas)')
+_dict12_en("chamal", add=' ⭐ The rich man &lsquo;spared&rsquo; to take from his own flock and took the poor man&rsquo;s lamb, and David judges that he &lsquo;had no pity&rsquo; (<a href="2-samuel-12.html#v12-4">2 Samuel 12:4, 6</a>, now on these pages). <span data-heb="ויחמל">&lsquo;And he spared&rsquo; stands in three verses</span>. They are that verse, 1 Samuel 15:9 (Saul sparing Agag, already on these pages) and 2 Samuel 21:7 (David sparing Mephibosheth, not yet on these pages).')
+_dict12_es("chamal", add=' ⭐ El rico «se abstuvo» de tomar de su propio rebaño y tomó la corderita del pobre, y David juzga que «no tuvo compasión» (<a href="2-samuel-12.es.html#v12-4">2 Samuel 12:4, 6</a>, ya en estas páginas). <span data-heb="ויחמל">«Y perdonó» (<em>vayyachmol</em>) está en tres versículos</span>. Son ese versículo, 1 Samuel 15:9 (Saúl perdonando a Agag, ya en estas páginas) y 2 Samuel 21:7 (David perdonando a Mefi-boset, todavía no en estas páginas).')
+_dict12_en("bazah", add=' ⭐ Nathan asks why David &lsquo;despised the word of Jehovah&rsquo; and says &lsquo;you despised me&rsquo; (<a href="2-samuel-12.html#v12-9">2 Samuel 12:9, 10</a>, now on these pages).')
+_dict12_es("bazah", add=' ⭐ Natán pregunta por qué David «despreció la palabra de Jehová» y dice «me despreciaste» (<a href="2-samuel-12.es.html#v12-9">2 Samuel 12:9, 10</a>, ya en estas páginas).')
+_dict12_en("chanan", add=' ⭐ David says &lsquo;Who knows whether Jehovah will be gracious to me, so that the child lives?&rsquo;, <em>yechanneni</em> (<a href="2-samuel-12.html#v12-22">2 Samuel 12:22</a>, now on these pages), the root of Hanun&rsquo;s name in the chapter before.')
+_dict12_es("chanan", add=' ⭐ David dice «¿Quién sabe si Jehová tendrá compasión de mí, y el niño vivirá?», <em>yechanneni</em> (<a href="2-samuel-12.es.html#v12-22">2 Samuel 12:22</a>, ya en estas páginas), la raíz del nombre de Hanún en el capítulo anterior.')
+_dict12_en("nagaf", add=' ⭐ Of a child: &lsquo;Jehovah struck the child that Uriah&rsquo;s wife bore to David&rsquo; (<a href="2-samuel-12.html#v12-15">2 Samuel 12:15</a>, now on these pages).')
+_dict12_es("nagaf", add=' ⭐ De un niño: «Jehová hirió al niño que la mujer de Urías había dado a luz a David» (<a href="2-samuel-12.es.html#v12-15">2 Samuel 12:15</a>, ya en estas páginas).')
+_dict12_en("nacham", add=' ⭐ David &lsquo;comforted Bathsheba his wife&rsquo; after the child&rsquo;s death (<a href="2-samuel-12.html#v12-24">2 Samuel 12:24</a>, now on these pages).')
+_dict12_es("nacham", add=' ⭐ David «consoló a Betsabé su mujer» tras la muerte del niño (<a href="2-samuel-12.es.html#v12-24">2 Samuel 12:24</a>, ya en estas páginas).')
+_dict12_en("shalom", add=' ⭐ The name <em>Shelomoh</em>, Solomon, is from it (<a href="2-samuel-12.html#v12-24">2 Samuel 12:24</a>, now on these pages).')
+_dict12_es("shalom", add=' ⭐ El nombre <em>Shelomoh</em>, Salomón, viene de ella (<a href="2-samuel-12.es.html#v12-24">2 Samuel 12:24</a>, ya en estas páginas).')
+_dict12_en("mashiach", add=' ⭐ Nathan speaks for Jehovah, &lsquo;I anointed you king over Israel&rsquo; (<a href="2-samuel-12.html#v12-7">2 Samuel 12:7</a>, now on these pages).')
+_dict12_es("mashiach", add=' ⭐ Natán habla por Jehová, «Yo te ungí rey sobre Israel» (<a href="2-samuel-12.es.html#v12-7">2 Samuel 12:7</a>, ya en estas páginas).')
+
+_ency12_en("nathan", "(2 Samuel 12), and whose", '(<a href="2-samuel-12.html#v12-1">2 Samuel 12</a>, now on these pages), and whose')
+_ency12_es("nathan", "(2 Samuel 12), y cuya", '(<a href="2-samuel-12.es.html#v12-1">2 Samuel 12</a>, ya en estas páginas), y cuya')
+_ency12_en("nathan-prophet", "(2 Samuel 12:7).", '(<a href="2-samuel-12.html#v12-7">2 Samuel 12:7</a>, now on these pages), and he comes again with the name Jedidiah (<a href="2-samuel-12.html#v12-25">12:25</a>).')
+_ency12_en("rabbah", "(2 Samuel 12:26-31)", '(<a href="2-samuel-12.html#v12-26">2 Samuel 12:26&ndash;31</a>, now on these pages)')
+_ency12_es("rabbah", "(2 Samuel 12:26-31)", '(<a href="2-samuel-12.es.html#v12-26">2 Samuel 12:26–31</a>, ya en estas páginas)')
+_ency12_en("ahinoam", "(2 Samuel 12:8, not yet on these pages)", '(<a href="2-samuel-12.html#v12-8">2 Samuel 12:8</a>, now on these pages)')
+_ency12_es("ahinoam", "(2 Samuel 12:8, todavía no en estas páginas)", '(<a href="2-samuel-12.es.html#v12-8">2 Samuel 12:8</a>, ya en estas páginas)')
+_ency12_en("solomon", add=' ⭐ Born to David and Bathsheba after the first child dies; the written text has &lsquo;he called his name Solomon&rsquo; and the reading tradition &lsquo;she called&rsquo;, and a second name, Jedidiah, &lsquo;beloved of Jehovah&rsquo;, is sent by the hand of Nathan (<a href="2-samuel-12.html#v12-24">2 Samuel 12:24&ndash;25</a>, now on these pages).')
+_ency12_es("solomon", add=' ⭐ Nacido a David y Betsabé después de morir el primer niño; el texto escrito tiene «él llamó su nombre Salomón» y la tradición de lectura «ella llamó», y un segundo nombre, Jedidías, «amado de Jehová», se envía por mano de Natán (<a href="2-samuel-12.es.html#v12-24">2 Samuel 12:24–25</a>, ya en estas páginas).')
+_ency12_en("bathsheba", add=' ⭐ David comforts her after the child dies and she bears Solomon (<a href="2-samuel-12.html#v12-24">2 Samuel 12:24</a>, now on these pages).')
+_ency12_es("bathsheba", add=' ⭐ David la consuela tras la muerte del niño y ella da a luz a Salomón (<a href="2-samuel-12.es.html#v12-24">2 Samuel 12:24</a>, ya en estas páginas).')
+_ency12_en("uriah", add=' ⭐ Nathan names the killing, &lsquo;Uriah the Hittite you struck with the sword&rsquo;, and the sword that shall never depart (<a href="2-samuel-12.html#v12-9">2 Samuel 12:9, 10</a>, now on these pages).')
+_ency12_es("uriah", add=' ⭐ Natán nombra el crimen, «A Urías el heteo heriste a espada», y la espada que nunca se apartará (<a href="2-samuel-12.es.html#v12-9">2 Samuel 12:9, 10</a>, ya en estas páginas).')
+_ency12_en("joab", add=' ⭐ He takes the royal city of Rabbah and the city of waters, then sends for David to take it &lsquo;lest I take the city, and my name be called over it&rsquo; (<a href="2-samuel-12.html#v12-26">2 Samuel 12:26&ndash;29</a>, now on these pages).')
+_ency12_es("joab", add=' ⭐ Toma la ciudad real de Rabá y la ciudad de las aguas, y manda llamar a David para que la tome «no sea que yo tome la ciudad, y se llame mi nombre sobre ella» (<a href="2-samuel-12.es.html#v12-26">2 Samuel 12:26–29</a>, ya en estas páginas).')
+_ency12_en("milcom", add=' ⭐ At Rabbah David takes the crown <em>malkam</em> from the king&rsquo;s head, &lsquo;their king&rsquo; in the pointed text and Milcom in the Greek (<a href="2-samuel-12.html#v12-30">2 Samuel 12:30</a>, now on these pages).')
+_ency12_es("milcom", add=' ⭐ En Rabá David toma la corona <em>malkam</em> de la cabeza del rey, «su rey» en el texto puntuado y Milcom en el griego (<a href="2-samuel-12.es.html#v12-30">2 Samuel 12:30</a>, ya en estas páginas).')
+
+_REFS12 = {
+    "nathan": [("2 Samuel", 12, 1), ("2 Samuel", 12, 7), ("2 Samuel", 12, 25)],
+    "nathan-prophet": [("2 Samuel", 12, 1), ("2 Samuel", 12, 7)],
+    "solomon": [("2 Samuel", 12, 24), ("2 Samuel", 12, 25)],
+    "bathsheba": [("2 Samuel", 12, 24)],
+    "uriah": [("2 Samuel", 12, 9)],
+    "rabbah": [("2 Samuel", 12, 26), ("2 Samuel", 12, 29)],
+    "joab": [("2 Samuel", 12, 26), ("2 Samuel", 12, 27)],
+    "milcom": [("2 Samuel", 12, 30)],
+    "ammon": [("2 Samuel", 12, 9), ("2 Samuel", 12, 31)],
+    "jerusalem": [("2 Samuel", 12, 31)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS12:
+        _e["refs"] = list(_e["refs"]) + _REFS12[_e["slug"]]
+
+CHRON_CHAPTERS["2sam12"] = dict(era="monarchy",
+    when="Jehovah sends Nathan to David, who tells of a rich man with many flocks who takes a poor man’s one ewe lamb; David says the man is a son of death and must pay fourfold, and Nathan says “You are the man”; Jehovah’s word recalls the anointing and the house given, names the killing of Uriah and the taking of his wife, and promises that the sword shall never depart from David’s house and that his wives will be taken in the sight of the sun; David says “I have sinned against Jehovah”, and Nathan says Jehovah has taken away his sin but the child shall die; the child is struck and dies on the seventh day after David fasts on the ground, David rises, washes and eats, and says “I am going to him”; David comforts Bathsheba and Solomon is born, and Jehovah loves him and sends by Nathan the name Jedidiah; Joab takes the royal city of Rabbah and the city of waters and calls David to take it, David takes the crown and sets the people to the saw and the brickmold, and returns to Jerusalem.",
+    clock="After the siege of Rabbah begins in 2 Samuel 11:1; the chapter gives no dates beyond the child’s seven days, and Rabbah falls after Solomon’s birth.")
+
+CHAPTER_ART["2sam12"] = [dict(
+    file="nathan-reproaches-david-panel.jpg",
+    title="Nathan reproaches David", title_es="Natán reprende a David",
+    artist="Philips Galle, after Gerard van Groeningen",
+    year="1575",
+    location="Rijksmuseum, Amsterdam (RP-P-2015-10-115, plate 32 of 48)", location_es="Rijksmuseum, Ámsterdam (RP-P-2015-10-115, lámina 32 de 48)",
+    alt="A black-and-white engraving titled “Libera monitio”, plate 32. In the foreground a bearded man in a turban-like cap and a long robe stands between a column and a hanging curtain, one hand held to his chest and the other held out toward a crowned king who sits on a throne at the right with a sceptre in one hand and the other raised. At the left, in a paved courtyard before columned buildings, several hooded figures kneel and bow, two with hands lifted, and a crowned figure lies face down on the ground in front of them; in a doorway behind, more figures gather. A Latin verse and a reference to 2 Samuel 12 are printed under the picture.",
+    note="2 Samuel 12. This panel is from the same Latin series on David’s life as the prints at 2 Samuel 2 to 5 and 9, and carries a reference to this chapter under the picture. The engraver puts Nathan’s speech to the seated king (12:7) in the same frame as David lying face down on the ground (12:16) and the weeping figures in the courtyard; the Hebrew keeps those moments apart and does not describe a company weeping.",
+    note_es="2 Samuel 12. Este panel es de la misma serie latina sobre la vida de David que los grabados de 2 Samuel 2 a 5 y 9, y lleva una referencia a este capítulo bajo la imagen. El grabador pone el discurso de Natán al rey sentado (12:7) en el mismo cuadro que David tendido boca abajo en el suelo (12:16) y las figuras que lloran en el patio; el hebreo mantiene esos momentos separados y no describe a una compañía llorando.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:Ark_des_Verbonds_overgebracht_naar_Jeruzalem,_David_en_de_zoon_van_Jonatan,_David_en_Batseba,_Natan_berispt_David_van,_RP-P-2015-10-115.jpg",
+)]
