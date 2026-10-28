@@ -52462,3 +52462,66 @@ CHAPTER_ART["2sam6"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_296_David_dancing_before_the_ark_2_Samuel_6_14_for_Brunoff_283_David_danse_devant_l%27arche.jpg",
 )]
+# --- 2 Samuel 7 ---
+def _swap7(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D7 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict7_en(slug, old=None, new=None, add=None):
+    _i = _D7[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap7(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict7_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap7(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("bayit", "bayit", "בַּיִת", "bayit",
+    'A HOUSE &mdash; <em>bayit</em>: a building, a household, a family line. <a href="2-samuel-7.html#v7-2">2 Samuel 7</a> (now on these pages) plays on all three. David lives in &lsquo;a house of cedar&rsquo; (verse 2); Jehovah asks &lsquo;Will you build me a house for my dwelling?&rsquo; (verse 5) and says &lsquo;Jehovah will make you a house&rsquo; (verse 11); the seed to come &lsquo;shall build a house for my name&rsquo; (verse 13); and David prays &lsquo;bless the house of your servant&rsquo; (verse 29). The English word &lsquo;house&rsquo; covers the same range (&lsquo;the house of David&rsquo;), and the translation keeps it throughout rather than choosing &lsquo;palace&rsquo;, &lsquo;temple&rsquo; or &lsquo;dynasty&rsquo; for each verse; the shelf does choose &mdash; the NIV has &lsquo;palace&rsquo; for David&rsquo;s own, the TLB &lsquo;temple&rsquo; and &lsquo;dynasty&rsquo;. See also <a href="dictionary.html#mishkan">mishkan</a>, the tabernacle, and <a href="dictionary.html#yeriah">yeri&rsquo;ah</a>, the curtain.',
+    ("2 Samuel", 7, 2)))
+DICTIONARY_ES["bayit"] = ("bayit",
+    'UNA CASA &mdash; <em>bayit</em>: un edificio, un hogar, un linaje. <a href="2-samuel-7.es.html#v7-2">2 Samuel 7</a> (ya en estas páginas) juega con los tres sentidos. David vive en «una casa de cedro» (versículo 2); Jehová pregunta «¿Me edificarás tú una casa para mi morada?» (versículo 5) y dice «Jehová te hará una casa» (versículo 11); la descendencia que viene «edificará una casa para mi nombre» (versículo 13); y David ora «bendice la casa de tu siervo» (versículo 29). La palabra «casa» abarca el mismo campo («la casa de David»), y la traducción la mantiene en todo el capítulo en vez de elegir «palacio», «templo» o «dinastía» para cada versículo; los estantes sí eligen &mdash; la NVI tiene «palacio» para la propia de David y «familia» o «dinastía» en la oración. Véanse también <a href="diccionario.html#mishkan">mishkan</a>, el tabernáculo, y <a href="diccionario.html#yeriah">yeri’ah</a>, la cortina.')
+
+DICTIONARY.append(("yeriah", "yeri'ah", "יְרִיעָה", "yeri'ah",
+    'A CURTAIN &mdash; <em>yeri&rsquo;ah</em>, a hanging of cloth, the sheets of which the tabernacle&rsquo;s covering was made; the plural <em>yeri&rsquo;ot</em> are the &lsquo;ten curtains&rsquo; of <a href="exodus-26.html#v26-1">Exodus 26:1</a> (already on these pages). In <a href="2-samuel-7.html#v7-2">2 Samuel 7:2</a> (now on these pages) the ark &lsquo;dwells within the curtain&rsquo;, in the singular, while David lives in a house of cedar; the shelf has &lsquo;curtains&rsquo; (ASV, KJV), &lsquo;tent cloths&rsquo; (NWT 1984), &lsquo;skins&rsquo; (Douay) and &lsquo;a tent&rsquo; (NIV, TLB). The Chronicles&rsquo; parallel says &lsquo;under curtains&rsquo; (1 Chronicles 17:1, not yet on these pages). See <a href="dictionary.html#mishkan">mishkan</a>.',
+    ("2 Samuel", 7, 2)))
+DICTIONARY_ES["yeriah"] = ("yeri’ah",
+    'UNA CORTINA &mdash; <em>yeri&rsquo;ah</em>, un lienzo colgado, de los que se hacía la cubierta del tabernáculo; el plural <em>yeri&rsquo;ot</em> son las «diez cortinas» de <a href="exodus-26.es.html#v26-1">Éxodo 26:1</a> (ya en estas páginas). En <a href="2-samuel-7.es.html#v7-2">2 Samuel 7:2</a> (ya en estas páginas) el arca «habita dentro de la cortina», en singular, mientras David vive en una casa de cedro; los estantes tienen «cortinas» (RV 1909, RV60), «telas de tienda» (TNM 1987), «el toldo de una tienda» (NVI) y en inglés «skins» (Douay). El paralelo de Crónicas dice «bajo cortinas» (1 Crónicas 17:1, todavía no en estas páginas). Véase <a href="diccionario.html#mishkan">mishkan</a>.')
+
+_dict7_en("nagid", add=' ⭐ Jehovah says it of David: &lsquo;I took you from the pasture, from following the flock, to be leader over my people, over Israel&rsquo; (<a href="2-samuel-7.html#v7-8">2 Samuel 7:8</a>, now on these pages).')
+_dict7_es("nagid", add=' ⭐ Jehová lo dice de David: «Yo te tomé del pastizal, de detrás del rebaño, para que fueras caudillo sobre mi pueblo, sobre Israel» (<a href="2-samuel-7.es.html#v7-8">2 Samuel 7:8</a>, ya en estas páginas).')
+_dict7_en("chesed", add=' ⭐ Jehovah promises the son of David &lsquo;my kindness shall not depart from him, as I removed it from Saul&rsquo; (<a href="2-samuel-7.html#v7-15">2 Samuel 7:15</a>, now on these pages).')
+_dict7_es("chesed", add=' ⭐ Jehová promete al hijo de David «mi bondad no se apartará de él, como la quité de Saúl» (<a href="2-samuel-7.es.html#v7-15">2 Samuel 7:15</a>, ya en estas páginas).')
+_dict7_en("nakhon", add=' ⭐ The throne of David is &lsquo;firm forever&rsquo; (<a href="2-samuel-7.html#v7-16">2 Samuel 7:16</a>) and David asks that his house be &lsquo;firm before you&rsquo; (<a href="2-samuel-7.html#v7-26">verse 26</a>, both now on these pages); the root <em>kun</em> runs through verses 12, 13, 16, 24 and 26.')
+_dict7_es("nakhon", add=' ⭐ El trono de David es «firme para siempre» (<a href="2-samuel-7.es.html#v7-16">2 Samuel 7:16</a>) y David pide que su casa sea «firme delante de ti» (<a href="2-samuel-7.es.html#v7-26">versículo 26</a>, ambos ya en estas páginas); la raíz <em>kun</em> recorre los versículos 12, 13, 16, 24 y 26.')
+_dict7_en("zera", add=' ⭐ Jehovah says to David &lsquo;I will raise up your seed after you, who shall come out of your own body&rsquo; (<a href="2-samuel-7.html#v7-12">2 Samuel 7:12</a>, now on these pages).')
+_dict7_es("zera", add=' ⭐ Jehová dice a David «levantaré a tu descendencia después de ti, que saldrá de tu propio cuerpo» (<a href="2-samuel-7.es.html#v7-12">2 Samuel 7:12</a>, ya en estas páginas).')
+_dict7_en("torah", add=' ⭐ In his prayer David says &lsquo;this is the law of the human&rsquo; (<em>torat ha&rsquo;adam</em>, <a href="2-samuel-7.html#v7-19">2 Samuel 7:19</a>, now on these pages); <span data-heb="תורת האדם">the phrase stands in one verse of the Hebrew Bible</span>, and the readings differ.')
+_dict7_es("torah", add=' ⭐ En su oración David dice «esta es la ley del ser humano» (<em>torat ha&rsquo;adam</em>, <a href="2-samuel-7.es.html#v7-19">2 Samuel 7:19</a>, ya en estas páginas); <span data-heb="תורת האדם">la frase está en un versículo de la Biblia hebrea</span>, y las lecturas difieren.')
+_dict7_en("naveh", add=' ⭐ Jehovah tells David &lsquo;I took you from the pasture&rsquo; (<a href="2-samuel-7.html#v7-8">2 Samuel 7:8</a>, now on these pages).')
+_dict7_es("naveh", add=' ⭐ Jehová dice a David «Yo te tomé del pastizal» (<a href="2-samuel-7.es.html#v7-8">2 Samuel 7:8</a>, ya en estas páginas).')
+_dict7_en("mishkan", add=' ⭐ Jehovah says &lsquo;I have been walking about in a tent and in a tabernacle&rsquo; (<a href="2-samuel-7.html#v7-6">2 Samuel 7:6</a>, now on these pages).')
+_dict7_es("mishkan", add=' ⭐ Jehová dice «he estado andando en una tienda y en un tabernáculo» (<a href="2-samuel-7.es.html#v7-6">2 Samuel 7:6</a>, ya en estas páginas).')
+_dict7_en("karat", add=' ⭐ Jehovah says &lsquo;I cut off all your enemies from before you&rsquo; (<a href="2-samuel-7.html#v7-9">2 Samuel 7:9</a>, now on these pages), with the verb that makes a covenant.')
+_dict7_es("karat", add=' ⭐ Jehová dice «corté a todos tus enemigos de delante de ti» (<a href="2-samuel-7.es.html#v7-9">2 Samuel 7:9</a>, ya en estas páginas), con el verbo que hace un pacto.')
+_dict7_en("aman", add=' ⭐ <em>Ne&rsquo;eman</em> is the verb of &lsquo;your house and your kingdom shall be made sure forever&rsquo; (<a href="2-samuel-7.html#v7-16">2 Samuel 7:16</a>, now on these pages).')
+_dict7_es("aman", add=' ⭐ <em>Ne&rsquo;eman</em> es el verbo de «tu casa y tu reino serán afirmados para siempre» (<a href="2-samuel-7.es.html#v7-16">2 Samuel 7:16</a>, ya en estas páginas).')
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "nathan-prophet":
+        _e["refs"] = list(_e["refs"]) + [("2 Samuel", 7, 2), ("2 Samuel", 7, 3), ("2 Samuel", 7, 4), ("2 Samuel", 7, 17)]
+        _e["desc"] = _swap7(_e["desc"], "He delivers the dynastic promise of 2 Samuel 7", 'He delivers the dynastic promise of <a href="2-samuel-7.html#v7-4">2 Samuel 7</a> (now on these pages)')
+LINK_OVERRIDES.append(("2 Samuel", 7, 2, "Nathan", 1, "nathan-prophet"))
+ENCYCLOPEDIA_ES["nathan-prophet"] = ("Natán el profeta",
+    'El profeta de la corte del reinado de David, y el hombre que dos veces cambia su rumbo. Entrega la promesa dinástica de <a href="2-samuel-7.es.html#v7-4">2 Samuel 7</a> (ya en estas páginas), «tu trono será firme para siempre», aunque su primera respuesta al deseo de David de edificar es «haz todo lo que está en tu corazón» y la palabra de Jehová le llega aquella misma noche con otra (<a href="2-samuel-7.es.html#v7-3">versículos 3–4</a>); luego confronta a David por Betsabé y Urías, y asegura la sucesión de Salomón (1 Reyes 1). Véase también <a href="enciclopedia.html#nathan">Natán</a>.')
+
+CHRON_CHAPTERS["2sam7"] = dict(era="monarchy",
+    when="Jerusalem: with the king settled in his house and given rest from his enemies, David tells Nathan he lives in a house of cedar while the ark dwells within the curtain, and Nathan says to do what is in his heart; that night the word of Jehovah comes to Nathan: Jehovah has walked in a tent and a tabernacle and never asked for a house, he took David from the pasture to be leader, and he will make David a house — a seed from his own body who will build a house for his name, a father to him as a son, with a kindness not taken away as from Saul, and a house and kingdom made sure forever; David goes in and sits before Jehovah and prays: who am I, none is like you, Israel your people established forever, make the word stand, bless the house of your servant.",
+    clock="After the ark is set in its tent (2 Samuel 6:17) and the Philistine victories (5:17–25); the chapter says only that it was the night after Nathan’s first answer, and that Jehovah had given the king rest round about (7:1). It does not date itself within David’s forty years (5:4).")
+
+ART_SKIPPED['2sam7'] = ("Searched Wikimedia Commons on 2026-10-28 for Nathan's promise to David, David praying before the ark, and a house of cedar or the tabernacle; the hits were book scans and scenes from other chapters (Nathan's rebuke in 2 Samuel 12, and the Brunoff and Galle prints, which skip this chapter), and no picture fits the chapter, so none is recorded.")
