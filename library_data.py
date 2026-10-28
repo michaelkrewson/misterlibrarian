@@ -51806,3 +51806,131 @@ CHAPTER_ART["1sam31"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:077.Jabesh-Gileadites_Recover_the_Bodies_of_Saul_and_His_Sons.jpg",
 )]
+
+# --- 2 Samuel 2 ---
+def _swap2(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D2 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict2_en(slug, old=None, new=None, add=None):
+    _i = _D2[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("acharei", "acharei", "אַחֲרֵי", "acharei",
+    """AFTER, BEHIND, FOLLOWING &mdash; the preposition that <a href="2-samuel-2.html#v2-10">2 Samuel 2</a> (now on these pages) runs on. Judah &lsquo;followed&rsquo; David (v10); Asahel &lsquo;pursued after&rsquo; Abner (v19); Joab and Abishai &lsquo;pursued after&rsquo; him (v24); the Benjamites gather &lsquo;behind&rsquo; him (v25). With &lsquo;from&rsquo;, <em>me-acharei</em>, &lsquo;from following&rsquo;, it stands in seven verses of this one chapter (<a href="2-samuel-2.html#v2-19">19</a>, <a href="2-samuel-2.html#v2-21">21</a>, <a href="2-samuel-2.html#v2-22">22</a>, <a href="2-samuel-2.html#v2-23">23</a>, <a href="2-samuel-2.html#v2-26">26</a>, <a href="2-samuel-2.html#v2-27">27</a> and <a href="2-samuel-2.html#v2-30">30</a>), always of one man who will not stop following another, or must be told to. ⭐ The word for &lsquo;the end&rsquo; in Abner&rsquo;s plea, &lsquo;it will be bitterness in the end&rsquo; (v26), <em>ba-acharonah</em>, comes from the same root: the last thing is what comes after. This translation keeps &lsquo;followed&rsquo; and &lsquo;from following&rsquo; the same throughout.""",
+    ("2 Samuel", 2, 10)))
+DICTIONARY_ES["acharei"] = ("ajarei",
+    """DESPU&Eacute;S DE, DETR&Aacute;S DE, SIGUIENDO &mdash;la preposici&oacute;n sobre la que corre <a href="2-samuel-2.es.html#v2-10">2 Samuel 2</a> (ya en estas p&aacute;ginas). Jud&aacute; &laquo;sigui&oacute;&raquo; a David (v10); Asael &laquo;persigui&oacute;&raquo; a Abner (v19); Joab y Abisai lo &laquo;persiguieron&raquo; (v24); los benjamitas se juntan &laquo;detr&aacute;s&raquo; de &eacute;l (v25). Con &laquo;de&raquo;, <em>me-ajarei</em>, &laquo;de seguir&raquo;, est&aacute; en siete vers&iacute;culos de este solo cap&iacute;tulo (<a href="2-samuel-2.es.html#v2-19">19</a>, <a href="2-samuel-2.es.html#v2-21">21</a>, <a href="2-samuel-2.es.html#v2-22">22</a>, <a href="2-samuel-2.es.html#v2-23">23</a>, <a href="2-samuel-2.es.html#v2-26">26</a>, <a href="2-samuel-2.es.html#v2-27">27</a> y <a href="2-samuel-2.es.html#v2-30">30</a>), siempre de un hombre que no quiere dejar de seguir a otro, o a quien hay que decirle que deje. ⭐ La palabra para &laquo;el final&raquo; en la s&uacute;plica de Abner, &laquo;al final ser&aacute; amargura&raquo; (v26), <em>ba-ajaron&aacute;</em>, viene de la misma ra&iacute;z: lo &uacute;ltimo es lo que viene despu&eacute;s. Esta traducci&oacute;n mantiene &laquo;sigui&oacute;&raquo; y &laquo;de seguir&raquo; iguales en todo el cap&iacute;tulo.""")
+
+_dict2_en("chomesh", add=' ⭐ With the article, <em>ha-chomesh</em> is the part of the body where a spear goes in: <a href="2-samuel-2.html#v2-23">2 Samuel 2:23</a> (now on these pages) has Abner strike Asahel &lsquo;in the belly&rsquo; with the back end of the spear, and the noun stands in four verses of the Hebrew Bible, all in 2 Samuel: this one, 3:27 (Joab and Abner), 4:6 (the murder of Ish-bosheth) and 20:10 (Joab and Amasa). ⚠ Whether it is the same word as &lsquo;a fifth&rsquo; is uncertain: the KJV and the Geneva follow the old reading &lsquo;the fifth rib&rsquo;, the ASV has &lsquo;in the body&rsquo;, the NIV &lsquo;stomach&rsquo;, the NWT &lsquo;abdomen&rsquo; and the Douay &lsquo;groin&rsquo;.')
+DICTIONARY_ES["chomesh"] = ("jómesh", 'UNA QUINTA PARTE — el veinte por ciento. Aparece dos veces en la historia de José, y la segunda vez es la primera hecha permanente: José dice a Faraón que tome una quinta parte de la cosecha durante los siete años buenos (41:34), y luego, cuando el hambre ha dejado al país sin su plata, su ganado y por fin su tierra, fija una quinta parte para Faraón como ESTATUTO «hasta hoy» (47:26). El pueblo recompra su propio excedente almacenado y lo paga con todo lo que tiene. Una corona dueña de la tierra que toma una parte fija de cada cosecha, con una hacienda de templo libre de impuestos al lado, es una descripción reconocible de la agricultura egipcia posterior: el narrador explica a sus lectores por qué el país que conocen está organizado como está.' + ' ⭐ Con el art&iacute;culo, <em>ha-j&oacute;mesh</em> es la parte del cuerpo por donde entra una lanza: <a href="2-samuel-2.es.html#v2-23">2 Samuel 2:23</a> (ya en estas p&aacute;ginas) hace que Abner hiera a Asael &laquo;en el vientre&raquo; con la parte trasera de la lanza, y el sustantivo est&aacute; en cuatro vers&iacute;culos de la Biblia hebrea, todos en 2 Samuel: este, 3:27 (Joab y Abner), 4:6 (el asesinato de Is-boset) y 20:10 (Joab y Amasa). ⚠ Que sea la misma palabra que &laquo;una quinta parte&raquo; es incierto: la RV60 sigue la lectura antigua &laquo;la quinta costilla&raquo;, la NVI tiene &laquo;el vientre&raquo; y la TNM &laquo;el abdomen&raquo;.')
+_dict2_en("chesed", add=' ⭐ David blesses the men of Jabesh-gilead for &lsquo;this kindness&rsquo; to Saul and prays &lsquo;kindness and truth&rsquo; on them (<a href="2-samuel-2.html#v2-5">2 Samuel 2:5&ndash;6</a>, now on these pages), the word Jonathan had asked of him (1 Samuel 20:14).')
+_dict2_es("chesed", add=' ⭐ David bendice a los hombres de Jabes de Galaad por &laquo;esta bondad&raquo; con Sa&uacute;l y pide para ellos &laquo;bondad y verdad&raquo; (<a href="2-samuel-2.es.html#v2-5">2 Samuel 2:5&ndash;6</a>, ya en estas p&aacute;ginas), la palabra que Jonat&aacute;n le hab&iacute;a pedido (1 Samuel 20:14).')
+_dict2_en("chazaq", add=' ⭐ <a href="2-samuel-2.html#v2-7">2 Samuel 2:7</a> (now on these pages) has David tell Jabesh &lsquo;let your hands be strong&rsquo;, and verse 16 uses the same root for the twelve men who &lsquo;seized&rsquo; one another by the head.')
+_dict2_es("chazaq", add=' ⭐ <a href="2-samuel-2.es.html#v2-7">2 Samuel 2:7</a> (ya en estas p&aacute;ginas) hace que David diga a Jabes &laquo;sean fuertes sus manos&raquo;, y el vers&iacute;culo 16 usa la misma ra&iacute;z para los doce hombres que se &laquo;agarraron&raquo; por la cabeza.')
+_dict2_en("sachaq", add=' ⭐ At the pool of Gibeon Abner says &lsquo;Let the young men arise, please, and make sport before us&rsquo; (<a href="2-samuel-2.html#v2-14">2 Samuel 2:14</a>, now on these pages), the verb of Samson&rsquo;s sport before the Philistines (<a href="judges-16.html#v16-25">Judges 16:25</a>) and of the women who &lsquo;made merry&rsquo; in 1 Samuel 18:7; here the game is twelve duels to the death.')
+_dict2_es("sachaq", add=' ⭐ En el estanque de Gabaón Abner dice &laquo;Que se levanten los j&oacute;venes, por favor, y se diviertan delante de nosotros&raquo; (<a href="2-samuel-2.es.html#v2-14">2 Samuel 2:14</a>, ya en estas p&aacute;ginas), el verbo de la diversi&oacute;n de Sans&oacute;n ante los filisteos (<a href="judges-16.es.html#v16-25">Jueces 16:25</a>) y de las mujeres que &laquo;festejaban&raquo; en 1 Samuel 18:7; aqu&iacute; el juego son doce duelos a muerte.')
+_dict2_en("nagaf", add=' ⭐ <a href="2-samuel-2.html#v2-17">2 Samuel 2:17</a> (now on these pages) has &lsquo;Abner and the men of Israel&rsquo; struck down before the servants of David, the verb of Israel struck down before the Philistines at Ebenezer (1 Samuel 4:2).')
+_dict2_es("nagaf", add=' ⭐ <a href="2-samuel-2.es.html#v2-17">2 Samuel 2:17</a> (ya en estas p&aacute;ginas) tiene a &laquo;Abner y los hombres de Israel&raquo; derrotados delante de los siervos de David, el verbo de Israel derrotado delante de los filisteos en Ebenezer (1 Samuel 4:2).')
+_dict2_en("shofar", add=' ⭐ Joab blows it to stop the pursuit of Abner, and &lsquo;all the people stood still&rsquo; (<a href="2-samuel-2.html#v2-28">2 Samuel 2:28</a>, now on these pages).')
+_dict2_es("shofar", add=' ⭐ Joab lo toca para detener la persecuci&oacute;n de Abner, y &laquo;todo el pueblo se detuvo&raquo; (<a href="2-samuel-2.es.html#v2-28">2 Samuel 2:28</a>, ya en estas p&aacute;ginas).')
+_dict2_en("taqa", add=' ⭐ <a href="2-samuel-2.html#v2-28">2 Samuel 2:28</a> (now on these pages) has &lsquo;Joab blew the horn&rsquo;, the verb with <em>shofar</em>; in this spelling the three words stand in one verse.')
+_dict2_es("taqa", add=' ⭐ <a href="2-samuel-2.es.html#v2-28">2 Samuel 2:28</a> (ya en estas p&aacute;ginas) tiene &laquo;Joab toc&oacute; el cuerno&raquo;, el verbo con <em>shofar</em>; con esta grafía las tres palabras est&aacute;n en un vers&iacute;culo.')
+_dict2_en("netsach", add=' ⭐ Abner&rsquo;s plea, &lsquo;Shall the sword devour for ever?&rsquo;, is <em>la-netsach</em> (<a href="2-samuel-2.html#v2-26">2 Samuel 2:26</a>, now on these pages); the Greek has &lsquo;for victory&rsquo;.')
+_dict2_es("netsach", add=' ⭐ La s&uacute;plica de Abner, &laquo;&iquest;Devorar&aacute; la espada para siempre?&raquo;, es <em>la-netsaj</em> (<a href="2-samuel-2.es.html#v2-26">2 Samuel 2:26</a>, ya en estas p&aacute;ginas); el griego tiene &laquo;para la victoria&raquo;.')
+
+# encyclopedia
+ENCYCLOPEDIA.append(dict(slug="asahel", name="Asahel", kind="person", aliases=["Asahel"],
+    refs=[("2 Samuel", 2, 18), ("2 Samuel", 2, 19), ("2 Samuel", 2, 23), ("2 Samuel", 2, 30), ("2 Samuel", 2, 32)], videos=[],
+    desc='The youngest-named of the three sons of <a href="encyclopedia.html#zeruiah">Zeruiah</a>, brother of <a href="encyclopedia.html#joab">Joab</a> and <a href="encyclopedia.html#abishai">Abishai</a>, &lsquo;light of foot, like one of the gazelles that are in the field&rsquo;. At the pool of Gibeon he chases <a href="encyclopedia.html#abner">Abner</a> and will not turn aside, however often Abner warns him, and Abner strikes him with the back end of the spear; he is the only man of the dead named in the chapter, and he is buried in his father&rsquo;s tomb at Bethlehem (<a href="2-samuel-2.html#v2-18">2 Samuel 2:18&ndash;23, 32</a>, now on these pages). ⭐ Joab will kill Abner for his blood at Hebron (3:27), and he is counted among David&rsquo;s Thirty (23:24, neither yet on these pages).'))
+ENCYCLOPEDIA_ES["asahel"] = ("Asael",
+    'El m&aacute;s joven de los tres hijos de <a href="enciclopedia.html#zeruiah">Sarvia</a> en el orden en que se nombran, hermano de <a href="enciclopedia.html#joab">Joab</a> y de <a href="enciclopedia.html#abishai">Abisai</a>, &laquo;ligero de pies, como una de las gacelas del campo&raquo;. En el estanque de Gabaón persigue a <a href="enciclopedia.html#abner">Abner</a> y no se aparta, por m&aacute;s que Abner le advierte, y Abner lo hiere con la parte trasera de la lanza; es el &uacute;nico hombre de los muertos nombrado en el cap&iacute;tulo, y lo sepultan en el sepulcro de su padre en Bel&eacute;n (<a href="2-samuel-2.es.html#v2-18">2 Samuel 2:18&ndash;23, 32</a>, ya en estas p&aacute;ginas). ⭐ Joab matar&aacute; a Abner por su sangre en Hebr&oacute;n (3:27), y es contado entre los Treinta de David (23:24, ninguno todav&iacute;a en estas p&aacute;ginas).')
+ENCYCLOPEDIA.append(dict(slug="ish-bosheth", name="Ish-bosheth", kind="person", aliases=["Ish-bosheth"],
+    refs=[("2 Samuel", 2, 8), ("2 Samuel", 2, 10), ("2 Samuel", 2, 12), ("2 Samuel", 2, 15)], videos=[],
+    desc='A son of Saul, made king over Israel by <a href="encyclopedia.html#abner">Abner</a> at <a href="encyclopedia.html#mahanaim">Mahanaim</a> while Judah follows David: forty years old when he began to reign, and he reigned two years (<a href="2-samuel-2.html#v2-8">2 Samuel 2:8&ndash;10</a>, now on these pages). The name means &lsquo;man of shame&rsquo;; Chronicles has Eshbaal, &lsquo;man of Baal&rsquo; (1 Chronicles 8:33; 9:39, not yet on these pages), and the note at <a href="romans-11.html#n11-3">Romans 11</a> sets the pair beside Merib-baal and Mephibosheth. The lists of Saul&rsquo;s sons in Samuel do not name him (<a href="1-samuel-14.html#v14-49">1 Samuel 14:49</a>; <a href="1-samuel-31.html#v31-2">31:2</a>). ⭐ Two men of Beeroth will murder him (2 Samuel 4, not yet on these pages).'))
+ENCYCLOPEDIA_ES["ish-bosheth"] = ("Is-boset",
+    'Un hijo de Sa&uacute;l, hecho rey sobre Israel por <a href="enciclopedia.html#abner">Abner</a> en <a href="enciclopedia.html#mahanaim">Mahanaim</a> mientras Jud&aacute; sigue a David: de cuarenta a&ntilde;os cuando comenz&oacute; a reinar, y rein&oacute; dos a&ntilde;os (<a href="2-samuel-2.es.html#v2-8">2 Samuel 2:8&ndash;10</a>, ya en estas p&aacute;ginas). El nombre significa &laquo;hombre de verg&uuml;enza&raquo;; Cr&oacute;nicas tiene Esbaal, &laquo;hombre de Baal&raquo; (1 Cr&oacute;nicas 8:33; 9:39, todav&iacute;a no en estas p&aacute;ginas), y la nota de <a href="romans-11.es.html#n11-3">Romanos 11</a> pone el par junto a Merib-baal y Mefi-boset. Las listas de los hijos de Sa&uacute;l en Samuel no lo nombran (<a href="1-samuel-14.es.html#v14-49">1 Samuel 14:49</a>; <a href="1-samuel-31.es.html#v31-2">31:2</a>). ⭐ Dos hombres de Beerot lo asesinar&aacute;n (2 Samuel 4, todav&iacute;a no en estas p&aacute;ginas).')
+
+_REFS2 = {
+    "mahanaim": [("2 Samuel", 2, 8), ("2 Samuel", 2, 12), ("2 Samuel", 2, 29)],
+    "hebron": [("2 Samuel", 2, 1), ("2 Samuel", 2, 3), ("2 Samuel", 2, 11), ("2 Samuel", 2, 32)],
+    "gibeon": [("2 Samuel", 2, 12), ("2 Samuel", 2, 13), ("2 Samuel", 2, 16)],
+    "abner": [("2 Samuel", 2, 8)],
+    "joab": [("2 Samuel", 2, 13)],
+    "abishai": [("2 Samuel", 2, 18)],
+    "zeruiah": [("2 Samuel", 2, 13), ("2 Samuel", 2, 18)],
+    "bethlehem": [("2 Samuel", 2, 32)],
+    "jabesh-gilead": [("2 Samuel", 2, 4)],
+    "benjamin": [("2 Samuel", 2, 9), ("2 Samuel", 2, 15), ("2 Samuel", 2, 25)],
+    "gilead": [("2 Samuel", 2, 9)],
+    "jezreel": [("2 Samuel", 2, 9)],
+    "ahinoam": [("2 Samuel", 2, 2)],
+    "abigail": [("2 Samuel", 2, 2)],
+    "nabal": [("2 Samuel", 2, 2)],
+}
+LINK_OVERRIDES.append(("2 Samuel", 2, 9, "Jezreel", 1, "jezreel"))
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS2:
+        _e["refs"] = list(_e["refs"]) + _REFS2[_e["slug"]]
+    if _e["slug"] == "mahanaim":
+        _e["desc"] = _swap2(_e["desc"], "(2 Samuel 2:8-9, not yet on these pages)", '(<a href="2-samuel-2.html#v2-8">2 Samuel 2:8-9</a>, now on these pages)')
+    elif _e["slug"] == "abner":
+        _e["desc"] = _swap2(_e["desc"], "2 Samuel 2&ndash;3, not yet on these pages)", '<a href="2-samuel-2.html#v2-8">2 Samuel 2</a>, now on these pages; 2 Samuel 3, not yet on these pages)')
+    elif _e["slug"] == "ahinoam":
+        _e["desc"] = _swap2(_e["desc"], "(30:5; 2 Samuel 2:2, neither yet on these pages)", '(<a href="1-samuel-30.html#v30-5">30:5</a> and <a href="2-samuel-2.html#v2-2">2 Samuel 2:2</a>, both now on these pages)')
+    elif _e["slug"] == "nabal":
+        _e["desc"] = _swap2(_e["desc"], '(<a href="1-samuel-27.html#v27-3">27:3</a>, now on these pages; 30:5; 2 Samuel 2:2; 3:3, not yet on these pages)',
+            '(<a href="1-samuel-27.html#v27-3">27:3</a>, <a href="1-samuel-30.html#v30-5">30:5</a> and <a href="2-samuel-2.html#v2-2">2 Samuel 2:2</a>, now on these pages; 2 Samuel 3:3, not yet on these pages)')
+    elif _e["slug"] == "gibeon":
+        _e["desc"] = _swap2(_e["desc"], "(2 Samuel 2).", '(<a href="2-samuel-2.html#v2-12">2 Samuel 2</a>, now on these pages).')
+    elif _e["slug"] == "jabesh-gilead":
+        _e["desc"] += ' ⭐ David blesses its men for burying Saul, &lsquo;kindness and truth&rsquo;, and tells them Judah has made him king (<a href="2-samuel-2.html#v2-4">2 Samuel 2:4&ndash;7</a>, now on these pages).'
+    elif _e["slug"] == "hebron":
+        _e["desc"] += ' ⭐ David asks Jehovah where to go up and is told &lsquo;To Hebron&rsquo;; the men of Judah anoint him king there, and he reigns there seven years and six months (<a href="2-samuel-2.html#v2-1">2 Samuel 2:1&ndash;4, 11</a>, now on these pages).'
+    elif _e["slug"] == "zeruiah":
+        _e["desc"] += ' ⭐ Her three sons are named together at the pool of Gibeon: Joab, Abishai and Asahel (<a href="2-samuel-2.html#v2-18">2 Samuel 2:18</a>, now on these pages).'
+_ES2 = {
+    "mahanaim": ("(2 Samuel 2:8-9, todavía no en estas páginas)", '(<a href="2-samuel-2.es.html#v2-8">2 Samuel 2:8-9</a>, ya en estas páginas)'),
+    "abner": ("2 Samuel 2&ndash;3, todavía no en estas páginas)", '<a href="2-samuel-2.es.html#v2-8">2 Samuel 2</a>, ya en estas páginas; 2 Samuel 3, todavía no en estas páginas)'),
+    "ahinoam": ("(30:5; 2 Samuel 2:2, ninguno de los dos todavía en estas páginas)", '(<a href="1-samuel-30.es.html#v30-5">30:5</a> y <a href="2-samuel-2.es.html#v2-2">2 Samuel 2:2</a>, los dos ya en estas páginas)'),
+    "nabal": ('(<a href="1-samuel-27.es.html#v27-3">27:3</a>, ya en estas páginas; 30:5; 2 Samuel 2:2; 3:3, todavía no en estas páginas)',
+              '(<a href="1-samuel-27.es.html#v27-3">27:3</a>, <a href="1-samuel-30.es.html#v30-5">30:5</a> y <a href="2-samuel-2.es.html#v2-2">2 Samuel 2:2</a>, ya en estas páginas; 2 Samuel 3:3, todavía no en estas páginas)'),
+    "gibeon": ("(2 Samuel 2).", '(<a href="2-samuel-2.es.html#v2-12">2 Samuel 2</a>, ya en estas páginas).'),
+}
+for _k, (_o, _n) in _ES2.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap2(_s[1], _o, _n))
+for _k, _b in {
+    "jabesh-gilead": ' ⭐ David bendice a sus hombres por haber sepultado a Saúl, «bondad y verdad», y les dice que Judá lo ha hecho rey (<a href="2-samuel-2.es.html#v2-4">2 Samuel 2:4&ndash;7</a>, ya en estas páginas).',
+    "hebron": ' ⭐ David pregunta a Jehová adónde subir y se le dice «A Hebrón»; los hombres de Judá lo ungen rey allí, y reina allí siete años y seis meses (<a href="2-samuel-2.es.html#v2-1">2 Samuel 2:1&ndash;4, 11</a>, ya en estas páginas).',
+    "zeruiah": ' ⭐ Sus tres hijos se nombran juntos en el estanque de Gabaón: Joab, Abisai y Asael (<a href="2-samuel-2.es.html#v2-18">2 Samuel 2:18</a>, ya en estas páginas).',
+}.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["2sam2"] = dict(era="monarchy",
+    when="Hebron and Gibeon: David inquires of Jehovah and is told to go up to Hebron, where the men of Judah anoint him king over the house of Judah; he blesses the men of Jabesh-gilead for burying Saul, while Abner makes Saul’s son Ish-bosheth king over Israel at Mahanaim; at the pool of Gibeon twelve men a side fall together, Abner is struck down, Asahel will not turn aside and Abner kills him with the back of the spear, Joab’s horn ends the chase, and three hundred and sixty of Abner’s men are dead against nineteen of David’s and Asahel.",
+    clock="Undated: after Saul’s death (1 Samuel 31) and David’s stay at Ziklag (2 Samuel 1:1); David reigns in Hebron seven years and six months (verse 11) and Ish-bosheth two years (verse 10).")
+
+CHAPTER_ART["2sam2"] = [dict(
+    file="weigel-abner-kills-asahel.jpg",
+    title="Abner kills Asahel", title_es="Abner mata a Asael",
+    artist="Christoph Weigel",
+    year="1695",
+    location="Print, 1695 (Wikimedia Commons)", location_es="Grabado, 1695 (Wikimedia Commons)",
+    alt="A black-and-white engraving. In the foreground a plumed, helmeted soldier holds a spear crosswise in both hands, its butt driven into a man in a cloak who falls backward with both arms thrown up; a sword lies on the ground between them. Behind them armies of spearmen mass on the plain, and on a rocky height at the upper right a group of soldiers stands looking down.",
+    note="2 Samuel 2:18–23. Asahel, as light of foot as a gazelle, has chased Abner across the field and will not turn aside; Abner, twice warning him, strikes him in the belly with the back end of the spear, so that it comes out behind him. Weigel puts the blow in front of the two armies and shows Abner reversing the spear exactly as the Hebrew says. The soldiers on the height may be read as the Benjamites who gather on the top of one hill (verse 25), though the print does not label them.",
+    note_es="2 Samuel 2:18–23. Asael, ligero de pies como una gacela, ha perseguido a Abner por el campo y no se aparta; Abner, tras advertirle dos veces, lo hiere en el vientre con la parte trasera de la lanza, de modo que le sale por detrás. Weigel pone el golpe delante de los dos ejércitos y muestra a Abner invirtiendo la lanza tal como dice el hebreo. Los soldados de la altura pueden leerse como los benjamitas que se juntan en la cima de una colina (versículo 25), aunque el grabado no los rotula.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Abner_kills_Asahel_(34134030)_(cropped).jpg",
+)]
