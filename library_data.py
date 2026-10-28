@@ -51381,3 +51381,133 @@ CHAPTER_ART["1sam27"] = [
         source_url="https://commons.wikimedia.org/wiki/File:David_returns_to_Achish.jpg",
     ),
 ]
+
+
+# --- 1 Samuel 28 ---
+def _swap1s28(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D1S28 = {}
+for _i, _d in enumerate(DICTIONARY):
+    _D1S28[_d[0]] = _i
+
+def _dict1s28_en(slug, old=None, new=None, add=None):
+    _i = _D1S28[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap1s28(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict1s28_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap1s28(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+# stale claims flipped
+_dict1s28_en("meil", old="and Saul knows it is Samuel (28:14, not yet on these pages).",
+    new='and Saul knows it is Samuel (<a href="1-samuel-28.html#v28-14">28:14</a>, now on these pages).')
+_dict1s28_es("meil", old="y Saúl sabe que es Samuel (28:14, todavía no en estas páginas).",
+    new='y Saúl sabe que es Samuel (<a href="1-samuel-28.es.html#v28-14">28:14</a>, ya en estas páginas).')
+_dict1s28_en("rimmah", old="when she recognizes him (1 Samuel 28:12, not yet on these pages).",
+    new='when she recognizes him (<a href="1-samuel-28.html#v28-12">1 Samuel 28:12</a>, now on these pages).')
+_dict1s28_es("rimmah", old="cuando lo reconoce (1 Samuel 28:12, todavía no en estas páginas).",
+    new='cuando lo reconoce (<a href="1-samuel-28.es.html#v28-12">1 Samuel 28:12</a>, ya en estas páginas).')
+_dict1s28_en("yidoni", old="the witch of En-dor twice (1 Samuel 28:3, 9)",
+    new='the woman of En-dor&rsquo;s chapter twice (<a href="1-samuel-28.html#v28-3">1 Samuel 28:3</a>, 9, now on these pages)')
+_dict1s28_es("yidoni", old="la mujer de Endor dos veces (1 Samuel 28:3, 9)",
+    new='el capítulo de la mujer de Endor dos veces (<a href="1-samuel-28.es.html#v28-3">1 Samuel 28:3</a>, 9, ya en estas páginas)')
+
+# 1 Samuel 28 added to existing dictionary entries
+_dict1s28_en("ov", add=' ⭐ <a href="1-samuel-28.html#v28-7">1 Samuel 28</a> (now on these pages) calls the woman at En-dor <em>eshet ba&rsquo;alat-ov</em>, &lsquo;a woman who is mistress of a ghost&rsquo;, a phrase found in no other verse, and Saul asks her &lsquo;Divine for me, please, by the ghost&rsquo; (28:8). In verses 3 and 9 the plural is a class of people the king had removed, and this translation renders it &lsquo;the mediums&rsquo;, as at Leviticus 20:6. The Greek calls her <em>engastrimythos</em>, &lsquo;one who speaks from the belly&rsquo;.')
+_dict1s28_es("ov", add=' ⭐ <a href="1-samuel-28.es.html#v28-7">1 Samuel 28</a> (ya en estas páginas) llama a la mujer de Endor <em>éshet baalat-ov</em>, «una mujer dueña de un espíritu de muerto», una expresión que no está en ningún otro versículo, y Saúl le pide «Adivíname, te ruego, por el espíritu de muerto» (28:8). En los versículos 3 y 9 el plural es una clase de personas que el rey había quitado, y esta traducción lo vierte «los médiums», como en Levítico 20:6. El griego la llama <em>engastrimythos</em>, «la que habla desde el vientre».')
+_dict1s28_en("elohim", add=' ⭐ At En-dor the woman says &lsquo;I see gods coming up out of the earth&rsquo;, <em>elohim &hellip; olim</em>, with a plural participle, and Saul asks in the singular &lsquo;What is his form?&rsquo; (<a href="1-samuel-28.html#v28-13">1 Samuel 28:13&ndash;14</a>, now on these pages). The shelf divides between &lsquo;gods&rsquo; (KJV, Douay, Geneva, the Greek) and &lsquo;a god&rsquo; (ASV, NWT), and the NIV has &lsquo;a ghostly figure&rsquo;.')
+_dict1s28_es("elohim", add=' ⭐ En Endor la mujer dice «Veo dioses que suben de la tierra», <em>elohim … olim</em>, con participio plural, y Saúl pregunta en singular «¿Cuál es su forma?» (<a href="1-samuel-28.es.html#v28-13">1 Samuel 28:13&ndash;14</a>, ya en estas páginas). La RV60 y la RV de 1909 tienen «dioses», como el griego; la TNM de 1987 «A un dios»; la NVI «un espíritu».')
+_dict1s28_en("qesem", add=' ⭐ The verb is what Saul asks of the woman at En-dor: &lsquo;Divine for me, please, by the ghost&rsquo;, <em>qasomi-na li ba-ov</em> (<a href="1-samuel-28.html#v28-8">1 Samuel 28:8</a>, now on these pages), the king to whom Samuel had said &lsquo;rebellion is the sin of divination&rsquo;.')
+_dict1s28_es("qesem", add=' ⭐ El verbo es lo que Saúl pide a la mujer de Endor: «Adivíname, te ruego, por el espíritu de muerto», <em>qosomí-na li ba-ov</em> (<a href="1-samuel-28.es.html#v28-8">1 Samuel 28:8</a>, ya en estas páginas), el rey a quien Samuel había dicho «la rebelión es pecado de adivinación».')
+_dict1s28_en("shaal", add=' ⭐ The name and the verb meet at the end of Saul&rsquo;s life: &lsquo;And Saul asked of Jehovah, and Jehovah did not answer him&rsquo; (<a href="1-samuel-28.html#v28-6">1 Samuel 28:6</a>), and the risen Samuel asks him &lsquo;Why then do you ask me?&rsquo; (28:16, both now on these pages).')
+_dict1s28_es("shaal", add=' ⭐ El nombre y el verbo se encuentran al final de la vida de Saúl: «Y Saúl preguntó a Jehová, y Jehová no le respondió» (<a href="1-samuel-28.es.html#v28-6">1 Samuel 28:6</a>), y Samuel, que ha subido, le pregunta «¿Y por qué me preguntas a mí?» (28:16, ambos ya en estas páginas).')
+_dict1s28_en("ragaz", add=' ⭐ Samuel&rsquo;s first words at En-dor: &lsquo;Why have you disturbed me, by bringing me up?&rsquo;, <em>hirgaztani</em> (<a href="1-samuel-28.html#v28-15">1 Samuel 28:15</a>, now on these pages), the verb Isaiah uses of Sheol &lsquo;stirred up&rsquo; to meet the king of Babylon (Isaiah 14:9, not yet on these pages).')
+_dict1s28_es("ragaz", add=' ⭐ Las primeras palabras de Samuel en Endor: «¿Por qué me has perturbado, haciéndome subir?», <em>hirgaztaní</em> (<a href="1-samuel-28.es.html#v28-15">1 Samuel 28:15</a>, ya en estas páginas), el verbo que Isaías usa del Seol que «se agita» para salir al encuentro del rey de Babilonia (Isaías 14:9, todavía no en estas páginas).')
+
+# new dictionary entries
+DICTIONARY.extend([
+    ("chapas", "chapas (hitchappes)", "חָפַשׂ", "chapas",
+     """TO SEARCH out, and in the reflexive form TO DISGUISE ONESELF, to make oneself hard to find. Saul &lsquo;disguised himself, and put on other garments&rsquo; to go to the woman at En-dor by night (<a href="1-samuel-28.html#v28-8">1 Samuel 28:8</a>, now on these pages). <span data-heb="תחפש">The letters stand in seven verses of the Hebrew Bible</span>, and five of them are the disguise: Saul; the prophet who disguised himself with ashes over his eyes before Ahab (1 Kings 20:38); Ahab himself, &lsquo;I will disguise myself and go into the battle&rsquo; (1 Kings 22:30, told again at 2 Chronicles 18:29); and Josiah at Megiddo (2 Chronicles 35:22), none of these yet on these pages. Saul, Ahab and Josiah each disguise themselves on the eve of the battle in which they die.""",
+     ("1 Samuel", 28, 8)),
+    ("marbeq", "marbeq", "מַרְבֵּק", "marbeq",
+     """THE STALL, where calves are kept and fattened; an <em>egel-marbeq</em> is a stall-fed calf. The woman of En-dor &lsquo;had a stall-fed calf in the house&rsquo;, and killed it for Saul&rsquo;s last meal (<a href="1-samuel-28.html#v28-24">1 Samuel 28:24</a>, now on these pages). <span data-heb="מרבק">The word stands in four verses of the Hebrew Bible</span>: this one, Jeremiah&rsquo;s hired soldiers &lsquo;like stall-fed calves&rsquo; (Jeremiah 46:21), the rich of Amos eating &lsquo;calves from the midst of the stall&rsquo; (Amos 6:4), and Malachi&rsquo;s &lsquo;you will go out and leap like stall-fed calves&rsquo; (Malachi 3:20 in the Hebrew numbering), none of them yet on these pages.""",
+     ("1 Samuel", 28, 24)),
+])
+DICTIONARY_ES["chapas"] = ("japás (hitjappés)",
+    'BUSCAR, rebuscar, y en la forma reflexiva DISFRAZARSE, hacerse difícil de hallar. Saúl «se disfrazó, y se puso otras ropas» para ir de noche a la mujer de Endor (<a href="1-samuel-28.es.html#v28-8">1 Samuel 28:8</a>, ya en estas páginas). <span data-heb="תחפש">Las letras están en siete versículos de la Biblia hebrea</span>, y cinco son el disfraz: Saúl; el profeta que se disfrazó con ceniza sobre los ojos delante de Acab (1 Reyes 20:38); el propio Acab, «yo me disfrazaré y entraré en la batalla» (1 Reyes 22:30, contado otra vez en 2 Crónicas 18:29); y Josías en Meguido (2 Crónicas 35:22), ninguno de ellos todavía en estas páginas. Saúl, Acab y Josías se disfrazan cada uno en la víspera de la batalla en que mueren.')
+DICTIONARY_ES["marbeq"] = ("marbéq",
+    'EL ESTABLO, donde se guardan y engordan los terneros; un <em>éguel-marbéq</em> es un ternero de engorde. La mujer de Endor «tenía en casa un ternero de engorde», y lo mató para la última comida de Saúl (<a href="1-samuel-28.es.html#v28-24">1 Samuel 28:24</a>, ya en estas páginas). <span data-heb="מרבק">La palabra está en cuatro versículos de la Biblia hebrea</span>: este, los soldados a sueldo de Jeremías «como becerros de engorde» (Jeremías 46:21), los ricos de Amós que comen «becerros de en medio del establo» (Amós 6:4), y el «saldréis y saltaréis como becerros de engorde» de Malaquías (Malaquías 3:20 en la numeración hebrea), ninguno de ellos todavía en estas páginas.')
+
+# encyclopedia: refs + additions to existing entries
+_REF1S28 = {"samuel": [("1 Samuel", 28, 3)], "gilboa": [("1 Samuel", 28, 4)], "achish": [("1 Samuel", 28, 1)],
+            "david": [("1 Samuel", 28, 1)], "amalek": [("1 Samuel", 28, 18)], "ramah": [("1 Samuel", 28, 3)]}
+for _e in ENCYCLOPEDIA:
+    _k = _e["slug"]
+    if _k in _REF1S28:
+        _e["refs"] = list(_e["refs"]) + [r for r in _REF1S28[_k] if r not in _e["refs"]]
+    if _k == "samuel":
+        _e["desc"] = _swap1s28(_e["desc"], "The book tells it again at the opening of the night at En-dor (28:3, not yet on these pages).",
+            'The book tells it again at the opening of the night at En-dor (<a href="1-samuel-28.html#v28-3">28:3</a>, now on these pages), where Saul asks a woman who is mistress of a ghost to bring him up, and the woman sees &lsquo;an old man coming up, wrapped in a robe&rsquo;. What came up has been read as Samuel himself, as a spirit in his likeness, and as the woman&rsquo;s craft; the narrator calls him Samuel throughout.')
+    if _k == "gilboa":
+        _e["desc"] += ' ⭐ Before the battle Saul camps on Gilboa facing the Philistines at Shunem, and goes by night to En-dor (<a href="1-samuel-28.html#v28-4">1 Samuel 28:4</a>, now on these pages).'
+    if _k == "achish":
+        _e["desc"] += ' ⭐ When the Philistines gather against Israel he tells David &lsquo;you will go out with me in the camp&rsquo;, and makes him &lsquo;keeper of my head all the days&rsquo; (<a href="1-samuel-28.html#v28-1">1 Samuel 28:1&ndash;2</a>, now on these pages).'
+    if _k == "david":
+        _e["desc"] += ' ⭐ <a href="1-samuel-28.html#v28-1">1 Samuel 28:1&ndash;2</a> (now on these pages): Achish calls on him to march against Israel, and he answers only &lsquo;you will know what your servant will do&rsquo;; at En-dor the risen Samuel tells Saul the kingdom has been given &lsquo;to your neighbour, to David&rsquo; (28:17).'
+    if _k == "amalek":
+        _e["desc"] += ' ⭐ At En-dor Samuel gives Amalek as the reason for Saul&rsquo;s end: &lsquo;you did not carry out his burning anger against Amalek&rsquo; (<a href="1-samuel-28.html#v28-18">1 Samuel 28:18</a>, now on these pages).'
+ENCYCLOPEDIA_ES["samuel"] = (ENCYCLOPEDIA_ES["samuel"][0], _swap1s28(ENCYCLOPEDIA_ES["samuel"][1],
+    "El libro lo vuelve a contar al abrir la noche de Endor (28:3, todavía no en estas páginas).",
+    'El libro lo vuelve a contar al abrir la noche de Endor (<a href="1-samuel-28.es.html#v28-3">28:3</a>, ya en estas páginas), donde Saúl pide a una mujer dueña de un espíritu de muerto que se lo haga subir, y la mujer ve «un hombre anciano» que sube «envuelto en un manto». Lo que subió se ha leído como Samuel mismo, como un espíritu con su apariencia, y como el arte de la mujer; el narrador lo llama Samuel en todo momento.'))
+ENCYCLOPEDIA_ES["gilboa"] = ("El monte Gilboa",
+    'La sierra en el borde sudeste del valle de Jezreel donde termina el reinado de Saúl: los filisteos formados en la llanura de abajo, Israel deshecho en las alturas, y Saúl cayendo sobre su propia espada después de que mueren tres de sus hijos (1 Samuel 31, todavía no en estas páginas). ⚠️ El lamento de David maldice la tierra misma: «Montes de Gilboa &mdash;ni rocío ni lluvia haya sobre ustedes, ni campos de ofrendas» (<a href="2-samuel-1.es.html#v21">2 Samuel 1:21</a>, ya en estas páginas). El lugar importa por su posición: quien domina el valle de Jezreel domina el camino entre Egipto y Mesopotamia, y por eso tanta historia de Israel se decide en esta sola llanura.'
+    + ' ⭐ Antes de la batalla Saúl acampa en Gilboa frente a los filisteos en Sunem, y va de noche a Endor (<a href="1-samuel-28.es.html#v28-4">1 Samuel 28:4</a>, ya en estas páginas).')
+ENCYCLOPEDIA_ES["achish"] = (ENCYCLOPEDIA_ES["achish"][0], ENCYCLOPEDIA_ES["achish"][1]
+    + ' ⭐ Cuando los filisteos se juntan contra Israel le dice a David «saldrás conmigo en el campamento», y lo pone por «guarda de mi cabeza todos los días» (<a href="1-samuel-28.es.html#v28-1">1 Samuel 28:1&ndash;2</a>, ya en estas páginas).')
+ENCYCLOPEDIA_ES["david"] = (ENCYCLOPEDIA_ES["david"][0], ENCYCLOPEDIA_ES["david"][1]
+    + ' ⭐ <a href="1-samuel-28.es.html#v28-1">1 Samuel 28:1&ndash;2</a> (ya en estas páginas): Aquis lo llama a marchar contra Israel, y él responde solo «tú sabrás lo que hará tu siervo»; en Endor Samuel le dice a Saúl que el reino ha sido dado «a tu prójimo, a David» (28:17).')
+ENCYCLOPEDIA_ES["amalek"] = (ENCYCLOPEDIA_ES["amalek"][0], ENCYCLOPEDIA_ES["amalek"][1]
+    + ' ⭐ En Endor Samuel da a Amalec como la razón del fin de Saúl: «ni ejecutaste el ardor de su ira contra Amalec» (<a href="1-samuel-28.es.html#v28-18">1 Samuel 28:18</a>, ya en estas páginas).')
+
+# new encyclopedia entries
+ENCYCLOPEDIA.extend([
+    dict(slug="en-dor", name="En-dor", kind="place", coords=(32.636, 35.389, 0.35), approx=True,
+         modern="Near the village of Indur, on the northern slope of the hill of Moreh (Givat HaMoreh), Lower Galilee; the exact site is uncertain",
+         aliases=["En-dor", "Endor"], refs=[("Joshua", 17, 11), ("1 Samuel", 28, 7)], videos=[],
+         desc='&lsquo;The spring of Dor&rsquo;, a town counted to Manasseh inside Issachar&rsquo;s land, &lsquo;and the inhabitants of En-dor and its towns&rsquo; (<a href="joshua-17.html#v17-11">Joshua 17:11</a>, now on these pages). It is where Saul&rsquo;s servants find &lsquo;a woman who is mistress of a ghost&rsquo;, and where he goes in disguise by night on the eve of Gilboa (<a href="1-samuel-28.html#v28-7">1 Samuel 28:7</a>, now on these pages), north of the Philistine camp at <a href="encyclopedia.html#shunem">Shunem</a>. Psalm 83 remembers it as a place of an old victory, &lsquo;who perished at En-dor&rsquo; (Psalm 83:11 in the Hebrew numbering, not yet on these pages).'),
+    dict(slug="shunem", name="Shunem", kind="place", coords=(32.608, 35.333, 0.35), approx=True,
+         modern="Sulam, at the foot of the hill of Moreh in the Jezreel valley, Israel",
+         aliases=["Shunem", "Shunammite"], refs=[("Joshua", 19, 18), ("1 Samuel", 28, 4)], videos=[],
+         desc='A town of Issachar, &lsquo;and Jezreel, and Chesulloth, and Shunem&rsquo; (<a href="joshua-19.html#v19-18">Joshua 19:18</a>, now on these pages), on the slope of the hill of Moreh across the valley from Gilboa. The Philistines camp there before the battle in which Saul dies (<a href="1-samuel-28.html#v28-4">1 Samuel 28:4</a>, now on these pages). It is the home of Abishag &lsquo;the Shunammite&rsquo; who nursed the old King David (<a href="1-kings-1.html#v3">1 Kings 1:3</a>, now on these pages), and of the woman who gave Elisha a room on her roof (2 Kings 4:8, not yet on these pages).'),
+])
+ENCYCLOPEDIA_ES["en-dor"] = ("En-dor",
+    '«La fuente de Dor», una ciudad contada a Manasés dentro de la tierra de Isacar, «y a los habitantes de En-dor y sus aldeas» (<a href="joshua-17.es.html#v17-11">Josué 17:11</a>, ya en estas páginas). Es donde los siervos de Saúl hallan «una mujer dueña de un espíritu de muerto», y adonde él va disfrazado de noche en la víspera de Gilboa (<a href="1-samuel-28.es.html#v28-7">1 Samuel 28:7</a>, ya en estas páginas), al norte del campamento filisteo de <a href="enciclopedia.html#shunem">Sunem</a>. El Salmo 83 la recuerda como lugar de una antigua victoria, «que perecieron en En-dor» (Salmo 83:11 en la numeración hebrea, todavía no en estas páginas).')
+ENCYCLOPEDIA_ES["shunem"] = ("Sunem",
+    'Una ciudad de Isacar, «y Jezreel, y Quesulot, y Sunem» (<a href="joshua-19.es.html#v19-18">Josué 19:18</a>, ya en estas páginas), en la ladera del collado de Moré, al otro lado del valle frente a Gilboa. Los filisteos acampan allí antes de la batalla en que muere Saúl (<a href="1-samuel-28.es.html#v28-4">1 Samuel 28:4</a>, ya en estas páginas). Es la tierra de Abisag «la sunamita», que cuidó del rey David ya viejo (<a href="1-kings-1.es.html#v3">1 Reyes 1:3</a>, ya en estas páginas), y de la mujer que dio a Eliseo un cuarto en su azotea (2 Reyes 4:8, todavía no en estas páginas).')
+
+CHRON_CHAPTERS["1sam28"] = dict(era="monarchy",
+    when="“Bring up Samuel for me”: the Philistines gather at Shunem, and Achish tells David he will march with him. Samuel is dead and Saul has removed the mediums from the land, but camped on Gilboa and answered by no dream, Urim or prophet, he goes in disguise by night to a woman at En-dor who is mistress of a ghost. She sees Samuel come up, an old man wrapped in a robe, who tells Saul that Jehovah has torn the kingdom from him and given it to David, and that tomorrow he and his sons will be with him. The woman feeds the fallen king, and they go out into the night.",
+    clock="The night before the battle of Gilboa (31), while David is with the Philistines at Aphek (29).")
+
+CHAPTER_ART["1sam28"] = [
+    dict(
+        file="dore-saul-witch-of-endor.jpg",
+        title="Saul and the Witch of Endor", title_es="Saúl y la adivina de Endor",
+        artist="Gustave Doré",
+        year="1866",
+        location="Wood engraving for La Grande Bible de Tours",
+        location_es="Grabado en madera para La Grande Bible de Tours",
+        alt="A black-and-white engraving in a dark rocky place. At the left a tall shrouded figure with a bearded face rises in a pale haze. In front of it a woman in a long robe, seen from behind, stretches out her arm and points at the figure. On the right a group of men in robes and helmets cluster round a man in armour who has collapsed backward into their arms; one man throws up both hands. In the foreground stands a brazier with snakes on the ground beside it and a spear lying across the rocks.",
+        alt_es="Un grabado en blanco y negro en un lugar rocoso y oscuro. A la izquierda se alza en una neblina pálida una alta figura amortajada de rostro barbado. Delante de ella, una mujer con manto largo, vista de espaldas, extiende el brazo y señala la figura. A la derecha, un grupo de hombres con mantos y yelmos rodea a un hombre con armadura que se ha desplomado hacia atrás en sus brazos; uno de ellos alza las dos manos. En primer plano hay un brasero con serpientes en el suelo junto a él y una lanza tendida sobre las rocas.",
+        note="1 Samuel 28:12–20. Doré shows the woman pointing at the figure that has come up, and Saul falling at the words of Samuel (verse 20). The text gives Saul two men, not the crowd Doré draws, and sets the night in the woman’s house, where she later kills the calf (verse 24); the brazier and the snakes are Doré’s.",
+        note_es="1 Samuel 28:12–20. Doré muestra a la mujer señalando la figura que ha subido, y a Saúl cayendo ante las palabras de Samuel (versículo 20). El texto da a Saúl dos hombres, no la multitud que dibuja Doré, y sitúa la noche en la casa de la mujer, donde después mata el ternero (versículo 24); el brasero y las serpientes son de Doré.",
+        license="Public domain (artist died 1883)",
+        source_url="https://commons.wikimedia.org/wiki/File:075.Saul_and_the_Witch_of_Endor.jpg",
+    ),
+]
