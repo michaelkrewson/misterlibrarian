@@ -51703,3 +51703,106 @@ CHAPTER_ART["1sam30"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:Davids_soldaten_dreigen_hem_te_stenigen,_RP-P-H-H-1240.jpg",
 )]
+
+# --- 1 Samuel 31 ---
+def _swap31(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D31 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict31_en(slug, old=None, new=None, add=None):
+    _i = _D31[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap31(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict31_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap31(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("daqar", "daqar", "דָּקַר", "daqar",
+    """TO THRUST THROUGH, to pierce with a blade &mdash; the verb of Phinehas, who &lsquo;ran the two of them through&rsquo; (<a href="numbers-25.html#v25-8">Numbers 25:8</a>, now on these pages), and of the young man who thrust Abimelech through when he asked not to be said to have died at a woman&rsquo;s hand (<a href="judges-9.html#v9-54">Judges 9:54</a>, now on these pages). ⭐ <a href="1-samuel-31.html#v31-4">1 Samuel 31:4</a> (now on these pages) has Saul ask for it twice in one verse: &lsquo;thrust me through with it, lest these uncircumcised come and thrust me through and abuse me&rsquo;. The Greek has <em>apokentein</em>, to pierce through.""",
+    ("1 Samuel", 31, 4)))
+DICTIONARY_ES["daqar"] = ("dacar",
+    """TRASPASAR, atravesar con una hoja &mdash;el verbo de Finees, que «traspasó a los dos» (<a href="numbers-25.es.html#v25-8">Números 25:8</a>, ya en estas páginas), y del joven que traspasó a Abimelec cuando pidió que no se dijera que había muerto a manos de una mujer (<a href="judges-9.es.html#v9-54">Jueces 9:54</a>, ya en estas páginas). ⭐ <a href="1-samuel-31.es.html#v31-4">1 Samuel 31:4</a> (ya en estas páginas) hace que Saúl lo pida dos veces en un solo versículo: «traspásame con ella, no sea que vengan estos incircuncisos y me traspasen y abusen de mí». El griego tiene <em>apokentein</em>, atravesar.""")
+
+DICTIONARY.append(("hitallel", "hit’allel", "הִתְעַלֵּל", "hit'allel",
+    """TO ABUSE, to make a plaything of someone &mdash; the reflexive form of a root for dealing severely with a person. It is what Egypt did to Israel (<a href="1-samuel-6.html#v6-6">1 Samuel 6:6</a>, &lsquo;dealt harshly&rsquo;), what the men of Gibeah did to the Levite&rsquo;s concubine all night (<a href="judges-19.html#v19-25">Judges 19:25</a>, &lsquo;abused her&rsquo;) and what Balaam accuses his donkey of (<a href="numbers-22.html#v22-29">Numbers 22:29</a>, &lsquo;you have made a fool of me&rsquo;), all now on these pages. ⭐ <a href="1-samuel-31.html#v31-4">1 Samuel 31:4</a> (now on these pages) is Saul&rsquo;s fear for a living king: that &lsquo;these uncircumcised&rsquo; will come and &lsquo;abuse&rsquo; him. The Greek has <em>empaizein</em>, to mock.""",
+    ("1 Samuel", 31, 4)))
+DICTIONARY_ES["hitallel"] = ("hit’alel",
+    """ABUSAR, hacer de alguien un juguete &mdash;la forma reflexiva de una raíz para tratar con dureza a una persona. Es lo que Egipto hizo a Israel (<a href="1-samuel-6.es.html#v6-6">1 Samuel 6:6</a>, «trató con dureza»), lo que los hombres de Guibeá hicieron toda la noche a la concubina del levita (<a href="judges-19.es.html#v19-25">Jueces 19:25</a>, «abusaron de ella») y de lo que Balaam acusa a su asna (<a href="numbers-22.es.html#v22-29">Números 22:29</a>, «te has burlado de mí»), todos ya en estas páginas. ⭐ <a href="1-samuel-31.es.html#v31-4">1 Samuel 31:4</a> (ya en estas páginas) es el temor de Saúl por un rey vivo: que «estos incircuncisos» vengan y «abusen» de él. El griego tiene <em>empaizein</em>, burlarse.""")
+
+DICTIONARY.append(("taqa", "taqa", "תָּקַע", "taqa",
+    """TO DRIVE IN, to fasten &mdash; the verb of a peg or a pin: Jael &lsquo;drove the peg&rsquo; into Sisera&rsquo;s temple (<a href="judges-4.html#v21">Judges 4:21</a>) and Delilah &lsquo;drove in the peg&rsquo; that held Samson&rsquo;s hair to the loom (<a href="judges-16.html#v16-14">16:14</a>, both now on these pages). The same letters also write the verb of blowing a horn, as when Ehud &lsquo;blew a ram&rsquo;s horn in the hill country of Ephraim&rsquo; (<a href="judges-3.html#v27">Judges 3:27</a>, now on these pages). ⭐ <a href="1-samuel-31.html#v31-10">1 Samuel 31:10</a> (now on these pages) has the Philistines <em>fasten</em> Saul&rsquo;s body to the wall of Beth-shan; the Hebrew says &lsquo;fastened&rsquo; and not &lsquo;hung&rsquo;, and the Greek has <em>katepexan</em>, &lsquo;fixed&rsquo;.""",
+    ("1 Samuel", 31, 10)))
+DICTIONARY_ES["taqa"] = ("taca",
+    """CLAVAR, fijar &mdash;el verbo de una estaca o de un clavo: Jael «clavó la estaca» en la sien de Sísara (<a href="judges-4.es.html#v21">Jueces 4:21</a>) y Dalila «clavó la estaca» que sujetaba el cabello de Sansón al telar (<a href="judges-16.es.html#v16-14">16:14</a>, ambos ya en estas páginas). Las mismas letras escriben también el verbo de tocar un cuerno, como cuando Aod «tocó el cuerno de carnero en la región montañosa de Efraín» (<a href="judges-3.es.html#v27">Jueces 3:27</a>, ya en estas páginas). ⭐ <a href="1-samuel-31.es.html#v31-10">1 Samuel 31:10</a> (ya en estas páginas) hace que los filisteos <em>fijen</em> el cuerpo de Saúl en el muro de Bet-seán; el hebreo dice «fijaron» y no «colgaron», y el griego tiene <em>katepexan</em>, «fijaron».""")
+
+_dict31_en("eshel", "(1 Samuel 31:13, not yet on these pages)",
+    '(<a href="1-samuel-31.html#v31-13">1 Samuel 31:13</a>, now on these pages)')
+_dict31_es("eshel", "(1 Samuel 31:13, todavía no en estas páginas)",
+    '(<a href="1-samuel-31.es.html#v31-13">1 Samuel 31:13</a>, ya en estas páginas)')
+_dict31_en("davaq", "(1 Samuel 31:2, of the Philistines catching Saul)",
+    '(<a href="1-samuel-31.html#v31-2">1 Samuel 31:2</a>, now on these pages, of the Philistines catching Saul)')
+_dict31_es("davaq", "alcanzar en una persecución (1 Samuel 31:2)",
+    'alcanzar en una persecución (<a href="1-samuel-31.es.html#v31-2">1 Samuel 31:2</a>, ya en estas páginas)')
+_dict31_en("arel", add=' ⭐ Saul&rsquo;s last words use it of the Philistines too: &lsquo;lest these uncircumcised come and thrust me through and abuse me&rsquo; (<a href="1-samuel-31.html#v31-4">1 Samuel 31:4</a>, now on these pages); <span data-heb="הערלים האלה">&lsquo;these uncircumcised&rsquo; stands in three verses of the Hebrew Bible</span>, this one, Jonathan&rsquo;s at 14:6 and 1 Chronicles 10:4.')
+_dict31_es("arel", add=' ⭐ Las últimas palabras de Saúl lo usan también de los filisteos: «no sea que vengan estos incircuncisos y me traspasen y abusen de mí» (<a href="1-samuel-31.es.html#v31-4">1 Samuel 31:4</a>, ya en estas páginas); <span data-heb="הערלים האלה">«estos incircuncisos» está en tres versículos de la Biblia hebrea</span>, este, el de Jonatán en 14:6 y 1 Crónicas 10:4.')
+_dict31_en("ashtaroth", add=' ⭐ At Saul&rsquo;s death the Philistines put his armour &lsquo;in the house of the Ashtaroth&rsquo; (<a href="1-samuel-31.html#v31-10">1 Samuel 31:10</a>, now on these pages), the goddesses Israel had put away at Mizpah (7:4) and confessed to serving (12:10).')
+_dict31_es("ashtaroth", add=' ⭐ A la muerte de Saúl los filisteos ponen sus armas «en la casa de las Astarot» (<a href="1-samuel-31.es.html#v31-10">1 Samuel 31:10</a>, ya en estas páginas), las diosas que Israel había quitado en Mizpa (7:4) y confesó haber servido (12:10).')
+_dict31_en("yabbashah", "(the consonants also spell Jabesh, the town, at 1 Samuel 31:13)",
+    '(the consonants also spell Jabesh, the town, at <a href="1-samuel-31.html#v31-13">1 Samuel 31:13</a>, now on these pages)')
+_dict31_es("yabbashah", "(las consonantes también escriben Jabes, la ciudad, en 1 Samuel 31:13)",
+    '(las consonantes también escriben Jabes, la ciudad, en <a href="1-samuel-31.es.html#v31-13">1 Samuel 31:13</a>, ya en estas páginas)')
+
+# encyclopedia
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "gilboa":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 31, 1), ("1 Samuel", 31, 8)]
+        _e["desc"] = _swap31(_e["desc"], "(1 Samuel 31).", '(<a href="1-samuel-31.html#v31-1">1 Samuel 31</a>, now on these pages).')
+    elif _e["slug"] == "beth-shean":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 31, 12)]
+        _e["desc"] = _swap31(_e["desc"], "(1 Samuel 31:10&ndash;12) and, in the Chronicler's telling, his head in the temple of Dagon (1 Chronicles 10:10), neither yet on these pages &mdash; the men",
+            '(<a href="1-samuel-31.html#v31-10">1 Samuel 31:10&ndash;12</a>, now on these pages) and, in the Chronicler\'s telling, his head in the temple of Dagon (1 Chronicles 10:10, not yet on these pages) &mdash; the men')
+    elif _e["slug"] == "jabesh-gilead":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 31, 11)]
+        _e["desc"] = _swap31(_e["desc"], "(1 Samuel 31:11&ndash;13, not yet on these pages)",
+            '(<a href="1-samuel-31.html#v31-11">1 Samuel 31:11&ndash;13</a>, now on these pages)')
+        _e["desc"] += ' ⭐ At Saul&rsquo;s death its valiant men go all night to Beth-shan, burn the bodies at Jabesh, bury the bones under the tamarisk and fast seven days (<a href="1-samuel-31.html#v31-11">1 Samuel 31:11&ndash;13</a>, now on these pages).'
+    elif _e["slug"] == "jonathan":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 31, 2)]
+        _e["desc"] = _swap31(_e["desc"], "(31:2, not yet on these pages)", '(<a href="1-samuel-31.html#v31-2">31:2</a>, now on these pages)')
+    elif _e["slug"] == "dagon":
+        _e["desc"] = _swap31(_e["desc"], "(1 Chronicles 10:10, not yet on these pages)", '(1 Chronicles 10:10, not yet on these pages; the Philistines&rsquo; own account in <a href="1-samuel-31.html#v31-10">1 Samuel 31:10</a>, now on these pages, puts the armour in the house of the Ashtaroth and has no head in a temple)')
+_ES31 = {
+    "gilboa": ("(1 Samuel 31, todavía no en estas páginas)", '(<a href="1-samuel-31.es.html#v31-1">1 Samuel 31</a>, ya en estas páginas)'),
+    "beth-shean": ("(1 Samuel 31:10&ndash;12) y, en el relato del Cronista, su cabeza en el templo de Dagón (1 Crónicas 10:10), ninguno de los dos todavía en estas páginas &mdash;los hombres",
+        '(<a href="1-samuel-31.es.html#v31-10">1 Samuel 31:10&ndash;12</a>, ya en estas páginas) y, en el relato del Cronista, su cabeza en el templo de Dagón (1 Crónicas 10:10, todavía no en estas páginas) &mdash;los hombres'),
+    "jabesh-gilead": ("(1 Samuel 31:11&ndash;13, todavía no en estas páginas)", '(<a href="1-samuel-31.es.html#v31-11">1 Samuel 31:11&ndash;13</a>, ya en estas páginas)'),
+    "jonathan": ("(31:2, todavía no en estas páginas)", '(<a href="1-samuel-31.es.html#v31-2">31:2</a>, ya en estas páginas)'),
+    "dagon": ("(1 Crónicas 10:10, todavía no en estas páginas)", '(1 Crónicas 10:10, todavía no en estas páginas; el relato propio de los filisteos en <a href="1-samuel-31.es.html#v31-10">1 Samuel 31:10</a>, ya en estas páginas, pone las armas en la casa de las Astarot y no tiene ninguna cabeza en un templo)'),
+}
+for _k, (_o, _n) in _ES31.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap31(_s[1], _o, _n))
+ENCYCLOPEDIA_ES["jabesh-gilead"] = (ENCYCLOPEDIA_ES["jabesh-gilead"][0], ENCYCLOPEDIA_ES["jabesh-gilead"][1] + ' ⭐ A la muerte de Saúl sus hombres valientes van toda la noche a Bet-seán, queman los cuerpos en Jabes, sepultan los huesos bajo el tamarisco y ayunan siete días (<a href="1-samuel-31.es.html#v31-11">1 Samuel 31:11&ndash;13</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["1sam31"] = dict(era="monarchy",
+    when="Gilboa: the Philistines fight Israel and the men of Israel flee; Jonathan, Abinadab and Malchishua are struck down, and Saul, found by the archers, asks the one who carried his armour to thrust him through and falls on his own sword; the next day the Philistines cut off his head, put his armour in the house of the Ashtaroth and fasten his body to the wall of Beth-shan, and the valiant men of Jabesh-gilead take the bodies by night, burn them, bury the bones under the tamarisk and fast seven days.",
+    clock="Undated: the day of the battle and the day after, the same days David spends at Ziklag (30:1; 2 Samuel 1:1); the chapter follows Saul’s night at En-dor in chapter 28.")
+
+CHAPTER_ART["1sam31"] = [dict(
+    file="dore-jabesh-gileadites-recover-saul.jpg",
+    title="The men of Jabesh-gilead take down the bodies of Saul and his sons", title_es="Los hombres de Jabes de Galaad bajan los cuerpos de Saúl y sus hijos",
+    artist="Gustave Doré; engraved by H. Pisan",
+    year="1866",
+    location="La Sainte Bible, Tours: Mame, 1866", location_es="La Sainte Bible, Tours: Mame, 1866",
+    alt="A night engraving under a clouded moon. Against a high wall, ladders lean up to bodies hanging head-down; a man high on a ladder, his head wrapped, holds a severed head in one hand while a bare-armed man below carries a body over his shoulder. To the left another man carries a body away on his back; to the right, hooded men crouch and bow to the ground in grief.",
+    note="1 Samuel 31:10–13. The Philistines have fastened Saul’s body to the wall of Beth-shan, and all the valiant men of Jabesh-gilead go all night to take the bodies down. Doré’s plate imagines the wall as a rock face hung with bodies and the rescuers working by ladder in the moonlight, with mourners bowed in the foreground; the Hebrew says only that the body was “fastened” and does not say how. The severed head Doré shows comes from verse 9; the Hebrew does not say what became of it, and Chronicles has it in the house of Dagon.",
+    note_es="1 Samuel 31:10–13. Los filisteos han fijado el cuerpo de Saúl en el muro de Bet-seán, y todos los hombres valientes de Jabes de Galaad van toda la noche a bajar los cuerpos. La lámina de Doré imagina el muro como una pared de roca llena de cuerpos y a los rescatadores trabajando con escalas a la luz de la luna, con plañideras inclinadas en primer plano; el hebreo dice solo que el cuerpo fue «fijado» y no dice cómo. La cabeza cortada que muestra Doré viene del versículo 9; el hebreo no dice qué se hizo de ella, y Crónicas la pone en la casa de Dagón.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:077.Jabesh-Gileadites_Recover_the_Bodies_of_Saul_and_His_Sons.jpg",
+)]
