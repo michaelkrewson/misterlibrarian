@@ -53146,3 +53146,119 @@ CHAPTER_ART["2sam12"] = [dict(
     license="CC0 (Rijksmuseum)",
     source_url="https://commons.wikimedia.org/wiki/File:Ark_des_Verbonds_overgebracht_naar_Jeruzalem,_David_en_de_zoon_van_Jonatan,_David_en_Batseba,_Natan_berispt_David_van,_RP-P-2015-10-115.jpg",
 )]
+# --- 2 Samuel 13 ---
+def _swap13(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D13 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict13_en(slug, old=None, new=None, add=None):
+    _i = _D13[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap13(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict13_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap13(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency13_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap13(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency13_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap13(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+DICTIONARY.append(("levivot", "levivot", "לְבִבוֹת", "levivot",
+    'HEART-CAKES &mdash; the cakes Amnon asks Tamar to make &lsquo;in my sight&rsquo;, from <em>lev</em>, &lsquo;heart&rsquo;. <span data-heb-read="לבבות">The noun stands in three verses</span>, 6, 8 and 10 of <a href="2-samuel-13.html#v13-6">2 Samuel 13</a> (now on these pages); the same letters in 1 Chronicles 28:9 are a different word, &lsquo;hearts&rsquo;. The verb that makes them, <span data-heb="תלבב"><em>telabbev</em>, stands in two verses</span>, 6 and 8, so that the Hebrew says she will &lsquo;heart-cake two heart-cakes&rsquo;. Whether the name is for their shape, for what they were meant to do for a sick man&rsquo;s heart, or for something else is not known. The NWT has &lsquo;heart-shaped cakes&rsquo;; the KJV &lsquo;a couple of cakes&rsquo;.',
+    ("2 Samuel", 13, 6)))
+DICTIONARY_ES["levivot"] = ("levivot",
+    'TORTAS DE CORAZÓN &mdash; las tortas que Amnón pide a Tamar que haga «ante mis ojos», de <em>lev</em>, «corazón». <span data-heb-read="לבבות">El sustantivo está en tres versículos</span>, el 6, el 8 y el 10 de <a href="2-samuel-13.es.html#v13-6">2 Samuel 13</a> (ya en estas páginas); las mismas letras en 1 Crónicas 28:9 son otra palabra, «corazones». El verbo que las hace, <span data-heb="תלבב"><em>telabbev</em>, está en dos versículos</span>, el 6 y el 8, de modo que el hebreo dice que ella «hará dos tortas de corazón» con un verbo de la misma raíz. Si el nombre es por su forma, por lo que habían de hacer por el corazón de un enfermo, o por otra cosa, no se sabe. La TNM tiene «tortas en forma de corazón»; la RV 1909 «hojuelas».')
+
+DICTIONARY.append(("shomem", "shomem / shemamah", "שֹׁמֵם", "shomem",
+    'DESOLATE, laid waste &mdash; said of a land stripped of people and of a woman left alone. <a href="2-samuel-13.html#v13-20">2 Samuel 13:20</a> (now on these pages) says Tamar &lsquo;stayed, desolate, in the house of Absalom her brother&rsquo;, in the participle <em>shomemah</em>. The noun <em>shemamah</em>, &lsquo;a desolation&rsquo;, is what Isaiah 1:7 says of a country, &lsquo;your land is a desolation&rsquo; (<a href="isaiah-1.html#v7">Isaiah 1:7</a>, already on these pages). A person is called by a word that usually belongs to ruined ground, and the verse does not say that anything was done for her. The ASV has &lsquo;remained desolate&rsquo;; the NWT &lsquo;kept from association&rsquo;.',
+    ("2 Samuel", 13, 20)))
+DICTIONARY_ES["shomem"] = ("shomem / shemamá",
+    'DESOLADA, asolada &mdash; dicho de una tierra sin gente y de una mujer dejada sola. <a href="2-samuel-13.es.html#v13-20">2 Samuel 13:20</a> (ya en estas páginas) dice que Tamar «se quedó, desolada, en casa de Absalón su hermano», con el participio <em>shomemá</em>. El sustantivo <em>shemamá</em>, «una desolación», es lo que Isaías 1:7 dice de un país, «vuestra tierra es una desolación» (<a href="isaiah-1.es.html#v7">Isaías 1:7</a>, ya en estas páginas). A una persona se le da una palabra que suele pertenecer al suelo arruinado, y el versículo no dice que se hiciera nada por ella. La RV 1909 tiene «desconsolada»; la TNM «impidiéndosele asociación».')
+
+_dict13_en("anah", "(Deuteronomy 22:29; what Amnon does to Tamar, 2 Samuel 13:14)", '(Deuteronomy 22:29; what Amnon does to Tamar, <a href="2-samuel-13.html#v13-14">2 Samuel 13:14</a>, now on these pages)')
+_dict13_es("anah", "(Deuteronomio 22:29; lo que Amnón le hace a Tamar, 2 Samuel 13:14)", '(Deuteronomio 22:29; lo que Amnón le hace a Tamar, <a href="2-samuel-13.es.html#v13-14">2 Samuel 13:14</a>, ya en estas páginas)')
+_dict13_en("anah", "and Amnon and Tamar at 2 Samuel 13 (not yet on these pages).", 'and Amnon and Tamar at <a href="2-samuel-13.html#v13-14">2 Samuel 13</a> (now on these pages), where Tamar says it first as a plea, &lsquo;do not violate me&rsquo; (13:12), and Absalom says it last, of Amnon&rsquo;s deed (13:22, 32).')
+_dict13_es("anah", "y Amnón y Tamar en 2 Samuel 13 (todavía no en estas páginas).", 'y Amnón y Tamar en <a href="2-samuel-13.es.html#v13-14">2 Samuel 13</a> (ya en estas páginas), donde Tamar lo dice primero como súplica, «no me violes» (13:12), y Absalón lo dice al final, del acto de Amnón (13:22, 32).')
+_dict13_en("nevalah", "('no such nevalah is done in Israel,' 2 Samuel 13:12)", "('no such nevalah is done in Israel,' <a href=\"2-samuel-13.html#v13-12\">2 Samuel 13:12</a>, now on these pages)")
+_dict13_es("nevalah", "(2 Samuel 13:12, todavía no en estas páginas)", '(<a href="2-samuel-13.es.html#v13-12">2 Samuel 13:12</a>, ya en estas páginas)')
+_dict13_en("ketonet-passim", "and tears after Amnon rapes her (2 Samuel 13:18-19)", 'and tears after Amnon rapes her (<a href="2-samuel-13.html#v13-18">2 Samuel 13:18&ndash;19</a>, now on these pages)')
+_dict13_en("kalah", None, None, add=' ⭐ In <a href="2-samuel-13.html#v13-39">2 Samuel 13:39</a> (now on these pages) the verb has a feminine form beside the masculine &lsquo;David the king&rsquo;, and the versions split between &lsquo;the soul of the king longed to go out to Absalom&rsquo; and &lsquo;the king ceased to go out against Absalom&rsquo;; both are readings of the same root.')
+_dict13_es("kalah", None, None, add=' ⭐ En <a href="2-samuel-13.es.html#v13-39">2 Samuel 13:39</a> (ya en estas páginas) el verbo tiene forma femenina junto al masculino «David el rey», y las versiones se dividen entre «el alma del rey anheló salir hacia Absalón» y «el rey cesó de salir contra Absalón»; las dos son lecturas de la misma raíz.')
+_dict13_en("shalach", None, None, add=' ⭐ In <a href="2-samuel-13.html#v13-16">2 Samuel 13:16</a> (now on these pages) Tamar calls Amnon&rsquo;s sending her away a greater evil than the first, and the same verb is the one in the law that says the man who violated the girl &lsquo;may not send her away all his days&rsquo; (<a href="deuteronomy-22.html#v22-29">Deuteronomy 22:29</a>, already on these pages).')
+_dict13_es("shalach", None, None, add=' ⭐ En <a href="2-samuel-13.es.html#v13-16">2 Samuel 13:16</a> (ya en estas páginas) Tamar llama al acto de Amnón de enviarla lejos un mal mayor que el primero, y es el mismo verbo de la ley que dice que el hombre que violó a la joven «no podrá despedirla en todos sus días» (<a href="deuteronomy-22.es.html#v22-29">Deuteronomio 22:29</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="tamar-david", name="Tamar, David's daughter", kind="person", aliases=["Tamar", "Tamar daughter of David", "Thamar"],
+    refs=[("2 Samuel", 13, 1), ("2 Samuel", 13, 19), ("2 Samuel", 13, 20)], videos=[],
+    desc='The &lsquo;beautiful sister&rsquo; of <a href="encyclopedia.html#absalom">Absalom</a>, loved by <a href="encyclopedia.html#amnon">Amnon</a>, who is violated by him, hated and sent away (<a href="2-samuel-13.html#v13-1">2 Samuel 13:1&ndash;19</a>, now on these pages). She wears the &lsquo;long ornamented tunic&rsquo; of the king&rsquo;s virgin daughters and tears it, puts ashes on her head and goes away crying out (<a href="2-samuel-13.html#v13-18">13:18&ndash;19</a>), and stays &lsquo;desolate&rsquo; in Absalom&rsquo;s house (<a href="2-samuel-13.html#v13-20">13:20</a>). ⚠ Not the Tamar of <a href="encyclopedia.html#tamar">Genesis 38</a>; the name is the date palm. ⭐ The Greek writes her name <em>Thēmar</em>. A daughter of Absalom has the same name (2 Samuel 14:27, not yet on these pages).'))
+ENCYCLOPEDIA_ES["tamar-david"] = ("Tamar, hija de David",
+    'La «hermana hermosa» de <a href="enciclopedia.html#absalom">Absalón</a>, amada por <a href="enciclopedia.html#amnon">Amnón</a>, que la viola, la aborrece y la echa (<a href="2-samuel-13.es.html#v13-1">2 Samuel 13:1–19</a>, ya en estas páginas). Lleva la «túnica larga y ornamentada» de las hijas vírgenes del rey y la rasga, se pone ceniza en la cabeza y se va gritando (<a href="2-samuel-13.es.html#v13-18">13:18–19</a>), y se queda «desolada» en casa de Absalón (<a href="2-samuel-13.es.html#v13-20">13:20</a>). ⚠ No es la Tamar de <a href="enciclopedia.html#tamar">Génesis 38</a>; el nombre es la palmera datilera. ⭐ El griego escribe su nombre <em>Thēmar</em>. Una hija de Absalón tiene el mismo nombre (2 Samuel 14:27, todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="jonadab-son-of-shimeah", name="Jonadab son of Shimeah", kind="person", aliases=["Jonadab", "Jehonadab", "Jonadab son of Shimeah"],
+    refs=[("2 Samuel", 13, 3), ("2 Samuel", 13, 32), ("2 Samuel", 13, 35)], videos=[],
+    desc='David&rsquo;s nephew, the son of David&rsquo;s brother Shimeah and the friend of <a href="encyclopedia.html#amnon">Amnon</a>, called &lsquo;a very wise man&rsquo; (<a href="2-samuel-13.html#v13-3">2 Samuel 13:3</a>, now on these pages). He asks why the king&rsquo;s son looks so haggard, and gives Amnon the plan of the feigned illness and the heart-cakes (<a href="2-samuel-13.html#v13-4">13:4&ndash;5</a>). When the rumor says all the king&rsquo;s sons are dead he is the one who tells David that only Amnon is dead, &lsquo;by the mouth of Absalom it was set&rsquo; (<a href="2-samuel-13.html#v13-32">13:32</a>), and he tells the king the sons have come as he said (<a href="2-samuel-13.html#v13-35">13:35</a>). The NWT 1984 spells the name Jehonadab; the ASV, KJV and NIV have Jonadab. ⭐ How he knew of Absalom&rsquo;s purpose the text does not say.'))
+ENCYCLOPEDIA_ES["jonadab-son-of-shimeah"] = ("Jonadab hijo de Simea",
+    'El sobrino de David, hijo de Simea hermano de David y amigo de <a href="enciclopedia.html#amnon">Amnón</a>, llamado «un hombre muy sabio» (<a href="2-samuel-13.es.html#v13-3">2 Samuel 13:3</a>, ya en estas páginas). Pregunta por qué el hijo del rey está tan demacrado, y da a Amnón el plan de la enfermedad fingida y las tortas de corazón (<a href="2-samuel-13.es.html#v13-4">13:4–5</a>). Cuando el rumor dice que todos los hijos del rey han muerto, es él quien dice a David que solo Amnón ha muerto, «por boca de Absalón esto había sido determinado» (<a href="2-samuel-13.es.html#v13-32">13:32</a>), y dice al rey que los hijos han llegado como él dijo (<a href="2-samuel-13.es.html#v13-35">13:35</a>). La TNM 1987 escribe el nombre Jehonadab; la RV y la NVI tienen Jonadab. ⭐ Cómo supo del propósito de Absalón no lo dice el texto.')
+
+ENCYCLOPEDIA.append(dict(slug="talmai-king-of-geshur", name="Talmai king of Geshur", kind="person", aliases=["Talmai", "Talmai son of Ammihud", "Talmai king of Geshur"],
+    refs=[("2 Samuel", 3, 3), ("2 Samuel", 13, 37)], videos=[],
+    desc='The king of <a href="encyclopedia.html#geshurites">Geshur</a>, father of Maacah and so the grandfather of <a href="encyclopedia.html#absalom">Absalom</a> (<a href="2-samuel-3.html#v3-3">2 Samuel 3:3</a>, now on these pages). After the killing of Amnon, Absalom &lsquo;fled, and went to Talmai son of Ammihud, king of Geshur&rsquo; and stayed there three years (<a href="2-samuel-13.html#v13-37">2 Samuel 13:37&ndash;38</a>, now on these pages). ⭐ His father&rsquo;s name is a <em>ketiv</em>/<em>qere</em>: the written text has Ammihur and the reading tradition Ammihud, which this translation follows; the ASV prints Ammihur.'))
+ENCYCLOPEDIA_ES["talmai-king-of-geshur"] = ("Talmai rey de Guesur",
+    'El rey de <a href="enciclopedia.html#geshurites">Guesur</a>, padre de Maaca y por tanto abuelo de <a href="enciclopedia.html#absalom">Absalón</a> (<a href="2-samuel-3.es.html#v3-3">2 Samuel 3:3</a>, ya en estas páginas). Tras la muerte de Amnón, Absalón «huyó, y se fue a Talmai hijo de Amiud, rey de Guesur» y estuvo allí tres años (<a href="2-samuel-13.es.html#v13-37">2 Samuel 13:37–38</a>, ya en estas páginas). ⭐ El nombre de su padre es un <em>ketiv</em>/<em>qeré</em>: el texto escrito tiene Amihur y la tradición de lectura Amihud, que esta traducción sigue; la RV 1909 y la NVI tienen Amiud.')
+
+ENCYCLOPEDIA.append(dict(slug="baal-hazor", name="Baal-hazor", kind="place", aliases=["Baal-hazor", "Baal Hazor"],
+    coords=(31.97, 35.29, 0.8), approx=True,
+    refs=[("2 Samuel", 13, 23)], videos=[],
+    desc='The place &lsquo;beside <a href="encyclopedia.html#ephraim">Ephraim</a>&rsquo; where <a href="encyclopedia.html#absalom">Absalom</a> had his sheep-shearers and gave the feast at which <a href="encyclopedia.html#amnon">Amnon</a> was killed (<a href="2-samuel-13.html#v13-23">2 Samuel 13:23</a>, now on these pages). The text places it only as beside Ephraim. It is commonly identified with the height called Tell Asur in the hill country north-east of <a href="encyclopedia.html#bethel">Bethel</a>, but that is a modern proposal, and the coordinates here are a rough point, not a located town.'))
+ENCYCLOPEDIA_ES["baal-hazor"] = ("Baal-hazor",
+    'El lugar «junto a <a href="enciclopedia.html#ephraim">Efraín</a>» donde <a href="enciclopedia.html#absalom">Absalón</a> tenía sus esquiladores y dio el banquete en que mataron a <a href="enciclopedia.html#amnon">Amnón</a> (<a href="2-samuel-13.es.html#v13-23">2 Samuel 13:23</a>, ya en estas páginas). El texto lo sitúa solo junto a Efraín. Se lo identifica comúnmente con la altura llamada Tell Asur en la región montañosa al noreste de <a href="enciclopedia.html#bethel">Betel</a>, pero es una propuesta moderna, y las coordenadas aquí son un punto aproximado, no una ciudad localizada.')
+
+_ency13_en("amnon", "His story is told in 2 Samuel 13 (not yet on these pages).", 'His story is told in <a href="2-samuel-13.html#v13-1">2 Samuel 13</a> (now on these pages): he loves <a href="encyclopedia.html#tamar-david">Tamar</a>, takes her by force and then hates her, and is killed by Absalom&rsquo;s servants at <a href="encyclopedia.html#baal-hazor">Baal-hazor</a> two years later (<a href="2-samuel-13.html#v13-28">13:28&ndash;29</a>).')
+_ency13_es("amnon", "Su historia se cuenta en 2 Samuel 13 (todav&iacute;a no en estas p&aacute;ginas).", 'Su historia se cuenta en <a href="2-samuel-13.es.html#v13-1">2 Samuel 13</a> (ya en estas p&aacute;ginas): ama a <a href="enciclopedia.html#tamar-david">Tamar</a>, la toma por la fuerza y luego la aborrece, y lo matan los siervos de Absal&oacute;n en <a href="enciclopedia.html#baal-hazor">Baal-hazor</a> dos a&ntilde;os despu&eacute;s (<a href="2-samuel-13.es.html#v13-28">13:28–29</a>).')
+_ency13_en("absalom", None, None, add=' In <a href="2-samuel-13.html#v13-1">2 Samuel 13</a> (now on these pages) he hears his sister&rsquo;s story and says &lsquo;be silent&rsquo;, says nothing to Amnon for two years, has him killed at the shearing, and flees to his mother&rsquo;s father <a href="encyclopedia.html#talmai-king-of-geshur">Talmai</a> in Geshur for three years (<a href="2-samuel-13.html#v13-37">13:37&ndash;38</a>).')
+_ency13_es("absalom", None, None, add=' En <a href="2-samuel-13.es.html#v13-1">2 Samuel 13</a> (ya en estas p&aacute;ginas) oye la historia de su hermana y le dice «calla», no habla con Amn&oacute;n durante dos a&ntilde;os, lo hace matar en el esquileo, y huye donde el padre de su madre, <a href="enciclopedia.html#talmai-king-of-geshur">Talmai</a>, en Guesur durante tres a&ntilde;os (<a href="2-samuel-13.es.html#v13-37">13:37–38</a>).')
+_ency13_en("tamar", "Not the same Tamar as David's daughter (2 Samuel 13)", 'Not the same Tamar as <a href="encyclopedia.html#tamar-david">David\'s daughter</a> (<a href="2-samuel-13.html#v13-1">2 Samuel 13</a>)')
+_ency13_es("tamar", "No es la misma Tamar que la hija de David (2 Samuel 13)", 'No es la misma Tamar que <a href="enciclopedia.html#tamar-david">la hija de David</a> (<a href="2-samuel-13.es.html#v13-1">2 Samuel 13</a>)')
+
+_REFS13 = {
+    "amnon": [("2 Samuel", 13, 1), ("2 Samuel", 13, 14), ("2 Samuel", 13, 29)],
+    "absalom": [("2 Samuel", 13, 1), ("2 Samuel", 13, 22), ("2 Samuel", 13, 28), ("2 Samuel", 13, 37)],
+    "ephraim": [("2 Samuel", 13, 23)],
+    "geshurites": [("2 Samuel", 13, 37)],
+    "david": [("2 Samuel", 13, 7), ("2 Samuel", 13, 39)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS13:
+        _e["refs"] = list(_e["refs"]) + _REFS13[_e["slug"]]
+
+CHRON_CHAPTERS["2sam13"] = dict(era="monarchy",
+    when="Amnon son of David loves Tamar, Absalom’s beautiful sister; on Jonadab’s advice he feigns illness and asks that she make two heart-cakes before him, and David sends her. He sends everyone out, seizes her, and violates her despite her plea; then he hates her more than he had loved her and has her put out and the door bolted. She puts ashes on her head, tears her long ornamented tunic and goes away crying out; Absalom tells her to be silent and she stays desolate in his house. David is very angry; Absalom says nothing to Amnon for two full years. At the shearing at Baal-hazor Absalom persuades David to send Amnon and the king’s sons, has his servants kill Amnon when his heart is merry with wine, and the rest flee on their mules. The rumor reaches David that all the sons are dead; Jonadab says only Amnon is dead. Absalom flees to Talmai, king of Geshur, and David mourns, and then longs to go out to him.",
+    clock="After 2 Samuel 12; the text gives two full years between the violation of Tamar and the shearing, and three years for Absalom in Geshur.")
+
+CHAPTER_ART["2sam13"] = [dict(
+    file="tissot-desolation-of-tamar.jpg",
+    title="Desolation of Tamar", title_es="La desolación de Tamar",
+    artist="James Tissot",
+    year="between circa 1896 and circa 1902",
+    location="The Jewish Museum, New York", location_es="The Jewish Museum, Nueva York",
+    alt="A watercolor of a young woman with long red-brown hair walking quickly across a tiled terrace in a palace courtyard. A light blue veil is draped over her head and streams out behind her; she wears a white gown with wide sleeves, a dark red sash and laced sandals, one hand pressed to her head and the other clenched at her chest, her mouth open as if crying out. Behind her a dark-haired man in a short tunic and a red apron stands in a doorway looking after her. A painted column and an orange curtain stand at the right, and tall red lotus-shaped patterns decorate the wall.",
+    note="2 Samuel 13. Tissot paints Tamar leaving Amnon’s house with her hand on her head (13:19). The artist gives her the veil and the sash of a woman of rank, and puts the servant who has bolted the door (13:17&ndash;18) in the doorway behind her. He does not paint the ashes or the torn tunic the verse names; the scene is his reading of the verse, made for his series of Old Testament watercolors, not a record of the text.",
+    note_es="2 Samuel 13. Tissot pinta a Tamar saliendo de la casa de Amnón con la mano sobre la cabeza (13:19). El artista le da el velo y la faja de una mujer de rango, y pone en la puerta detrás de ella al criado que ha echado el cerrojo (13:17–18). No pinta la ceniza ni la túnica rasgada que nombra el versículo; la escena es su lectura del versículo, hecha para su serie de acuarelas del Antiguo Testamento, no un registro del texto.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Desolation_of_Tamar_by_J.Tissot.jpg",
+)]
