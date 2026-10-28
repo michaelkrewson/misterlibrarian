@@ -51588,3 +51588,118 @@ CHAPTER_ART["1sam29"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:David_aangesteld_als_lijfwacht_van_koning_Achis_Negende_Boek_(titel_op_object)_David_en_Saul_(serietitel),_RP-P-1909-2017.jpg",
 )]
+
+# --- 1 Samuel 30 ---
+def _swap30(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D30 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict30_en(slug, old=None, new=None, add=None):
+    _i = _D30[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap30(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict30_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap30(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+DICTIONARY.append(("gedud", "gedud", "גְּדוּד", "gedud",
+    """A TROOP, a raiding band &mdash; from <em>gadad</em>, to cut or to gather in a troop; the word for a band of raiders, and for a body of soldiers. ⭐ <a href="1-samuel-30.html#v30-8">1 Samuel 30</a> (now on these pages) has it four times of the Amalekite raiders: David asks &lsquo;Shall I pursue this troop?&rsquo; (verse 8), the Egyptian is to bring him &lsquo;down to this troop&rsquo; (verse 15), and David says Jehovah &lsquo;has given the troop that came against us into our hand&rsquo; (verse 23). The ASV and KJV have &lsquo;troop&rsquo; (the KJV also &lsquo;company&rsquo;), the NWT 1984 &lsquo;marauder band&rsquo;, the NIV &lsquo;raiding party&rsquo;, the Douay &lsquo;robbers&rsquo;.""",
+    ("1 Samuel", 30, 8)))
+DICTIONARY_ES["gedud"] = ("guedud",
+    """UNA TROPA, una banda de incursores &mdash;de <em>gadad</em>, cortar o juntarse en tropa; la palabra para una banda de saqueadores y para un cuerpo de soldados. ⭐ <a href="1-samuel-30.es.html#v30-8">1 Samuel 30</a> (ya en estas p&aacute;ginas) la tiene cuatro veces de los incursores amalecitas: David pregunta &laquo;&iquest;Perseguir&eacute; a esta tropa?&raquo; (versículo 8), el egipcio ha de llevarlo &laquo;abajo a esta tropa&raquo; (versículo 15), y David dice que Jehov&aacute; &laquo;ha entregado en nuestra mano a la tropa que vino contra nosotros&raquo; (versículo 23). La RV60 tiene &laquo;merodeadores&raquo; y &laquo;tropa&raquo;, la TNM 1987 &laquo;partida merodeadora&raquo;, la NVI &laquo;banda de saqueadores&raquo;.""")
+
+_dict30_en("saqal", "(1 Samuel 30:6; neither yet on these pages)",
+    '(<a href="1-samuel-30.html#v30-6">1 Samuel 30:6</a>, now on these pages; 1 Kings 21:10&ndash;15 is not yet)')
+_dict30_en("saqal", "Naboth dies of it (1 Kings 21:10&ndash;15), and", "Naboth dies of it, and")
+_dict30_es("saqal", "(1 Samuel 30:6; ninguno todavía en estas páginas)",
+    '(<a href="1-samuel-30.es.html#v30-6">1 Samuel 30:6</a>, ya en estas páginas; 1 Reyes 21:10&ndash;15 todavía no)')
+_dict30_es("saqal", "Nabot muere de él (1 Reyes 21:10&ndash;15), y", "Nabot muere de él, y")
+_dict30_en("pashat", "(30:1, 14, none of these yet on these pages)",
+    '(<a href="1-samuel-30.html#v30-1">30:1, 14</a>, now on these pages; Job 1:17 is not yet)')
+_dict30_en("pashat", "who raid Job&rsquo;s camels (Job 1:17) and of", "who raid Job&rsquo;s camels and of")
+_dict30_es("pashat", "(30:1, 14, ninguno de ellos todavía en estas páginas)",
+    '(<a href="1-samuel-30.es.html#v30-1">30:1, 14</a>, ya en estas páginas; Job 1:17 todavía no)')
+_dict30_es("pashat", "sobre los camellos de Job (Job 1:17) y de", "sobre los camellos de Job y de")
+_dict30_en("natsal", add=' ⭐ <a href="1-samuel-30.html#v30-8">1 Samuel 30:8</a> (now on these pages) has Jehovah promise David &lsquo;you will surely rescue&rsquo;, and verse 18 keeps the promise with the same verb twice, &lsquo;David rescued everything &hellip; and his two wives David rescued&rsquo;.')
+_dict30_es("natsal", add=' ⭐ <a href="1-samuel-30.es.html#v30-8">1 Samuel 30:8</a> (ya en estas páginas) tiene a Jehová prometiendo a David «de cierto rescatarás», y el versículo 18 cumple la promesa con el mismo verbo dos veces, «David rescató todo … y a sus dos mujeres las rescató David».')
+_dict30_en("chazaq", add=' ⭐ At <a href="1-samuel-30.html#v30-6">1 Samuel 30:6</a> (now on these pages), with his men speaking of stoning him, &lsquo;David strengthened himself in Jehovah his God&rsquo;, in the reflexive form, where Jonathan had &lsquo;strengthened his hand in God&rsquo; at Horesh (23:16).')
+_dict30_es("chazaq", add=' ⭐ En <a href="1-samuel-30.es.html#v30-6">1 Samuel 30:6</a> (ya en estas páginas), con sus hombres hablando de apedrearlo, «David se fortaleció en Jehová su Dios», en la forma reflexiva, donde Jonatán había «fortalecido su mano en Dios» en Hores (23:16).')
+_dict30_en("kelim", add=' ⭐ In the sense of baggage it is where Saul hid (1 Samuel 10:22), where David left his own (17:22), where two hundred stayed (25:13), and the word of David&rsquo;s ruling at <a href="1-samuel-30.html#v30-24">1 Samuel 30:24</a> (now on these pages): the share of &lsquo;him who stays by the baggage&rsquo; is the share of him who goes down to the battle.')
+_dict30_es("kelim", add=' ⭐ En el sentido de equipaje es donde se escondió Saúl (1 Samuel 10:22), donde David dejó el suyo (17:22), donde se quedaron doscientos (25:13), y la palabra de la decisión de David en <a href="1-samuel-30.es.html#v30-24">1 Samuel 30:24</a> (ya en estas páginas): la parte «del que se queda junto al equipaje» es la parte del que baja a la batalla.')
+_dict30_en("chok", add=' ⭐ David &lsquo;made it a statute and an ordinance for Israel&rsquo; that the share of the baggage equals the share of the battle (<a href="1-samuel-30.html#v30-25">1 Samuel 30:25</a>, now on these pages); the pair stands in four verses of the Hebrew Bible.')
+_dict30_es("chok", add=' ⭐ David «lo estableció como estatuto y ordenanza para Israel» que la parte del equipaje iguale la parte de la batalla (<a href="1-samuel-30.es.html#v30-25">1 Samuel 30:25</a>, ya en estas páginas); el par está en cuatro versículos de la Biblia hebrea.')
+_dict30_en("beliyaal", add=' ⭐ <a href="1-samuel-30.html#v30-22">1 Samuel 30:22</a> (now on these pages) has &lsquo;every wicked man and man of worthlessness&rsquo; among David&rsquo;s own men refuse the two hundred at Besor a share, a phrase that stands in one verse of the Hebrew Bible.')
+_dict30_es("beliyaal", add=' ⭐ <a href="1-samuel-30.es.html#v30-22">1 Samuel 30:22</a> (ya en estas páginas) tiene a «todo hombre malo y de la nada» entre los propios hombres de David negando una parte a los doscientos de Besor, una frase que está en un versículo de la Biblia hebrea.')
+_dict30_en("berakhah", add=' ⭐ David sends the elders of Judah &lsquo;a blessing&rsquo; from the spoil of Amalek (<a href="1-samuel-30.html#v30-26">1 Samuel 30:26</a>, now on these pages), the word of Abigail&rsquo;s gift to him (25:27).')
+_dict30_es("berakhah", add=' ⭐ David envía a los ancianos de Judá «una bendición» del botín de Amalec (<a href="1-samuel-30.es.html#v30-26">1 Samuel 30:26</a>, ya en estas páginas), la palabra del regalo de Abigail para él (25:27).')
+_dict30_en("hithalekh", add=' ⭐ David sends gifts &lsquo;to all the places where David walked about, he and his men&rsquo; (<a href="1-samuel-30.html#v30-31">1 Samuel 30:31</a>, now on these pages), the verb of &lsquo;they went about wherever they went about&rsquo; at Keilah (23:13).')
+_dict30_es("hithalekh", add=' ⭐ David envía regalos «a todos los lugares donde David anduvo, él y sus hombres» (<a href="1-samuel-30.es.html#v30-31">1 Samuel 30:31</a>, ya en estas páginas), el verbo de «anduvieron por donde anduvieron» en Keila (23:13).')
+
+# encyclopedia
+ENCYCLOPEDIA.append(dict(slug="besor", name="The brook Besor", kind="place", aliases=["Besor"],
+    coords=(31.35, 34.4, 0.5), approx=True,
+    refs=[("1 Samuel", 30, 9), ("1 Samuel", 30, 10), ("1 Samuel", 30, 21)], videos=[],
+    desc='The torrent David reached with his six hundred men in pursuit of the Amalekites, where two hundred who were too faint to cross stayed with the baggage (<a href="1-samuel-30.html#v30-9">1 Samuel 30:9&ndash;10</a>, <a href="1-samuel-30.html#v30-21">21</a>, now on these pages). It is named only in this chapter, in three verses. It is usually taken for the wadi that runs through the northwest Negev to the sea near Gaza (reported, not verified here), so the map marks it approximately.'))
+ENCYCLOPEDIA_ES["besor"] = ("El torrente de Besor",
+    'El torrente al que llegó David con sus seiscientos hombres en persecución de los amalecitas, donde doscientos que estaban demasiado cansados para cruzar se quedaron con el equipaje (<a href="1-samuel-30.es.html#v30-9">1 Samuel 30:9&ndash;10</a>, <a href="1-samuel-30.es.html#v30-21">21</a>, ya en estas páginas). Solo se nombra en este capítulo, en tres versículos. Suele tomarse por el uadi que cruza el noroeste del Néguev hasta el mar cerca de Gaza (se informa, no se ha comprobado aquí), así que el mapa lo marca de forma aproximada.')
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "amalek":
+        _e["desc"] = _swap30(_e["desc"], "(1 Samuel 30, not yet on these pages)", '(<a href="1-samuel-30.html#v30-1">1 Samuel 30</a>, now on these pages)')
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 30, 1)]
+    elif _e["slug"] == "ziklag":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 30, 1)]
+        _e["desc"] = _swap30(_e["desc"], "(1 Samuel 30), which is the raid", '(<a href="1-samuel-30.html#v30-1">1 Samuel 30</a>, now on these pages), which is the raid')
+    elif _e["slug"] == "jerahmeelites":
+        _e["desc"] = _swap30(_e["desc"], "(30:29, not yet on these pages)", '(<a href="1-samuel-30.html#v30-29">30:29</a>, now on these pages)')
+    elif _e["slug"] == "kenites":
+        _e["desc"] = _swap30(_e["desc"], "(30:29, not yet on these pages)", '(<a href="1-samuel-30.html#v30-29">30:29</a>, now on these pages)')
+    elif _e["slug"] == "zadok-abiathar":
+        _e["desc"] = _e["desc"] + ' ⭐ At Ziklag David again asks him to &lsquo;bring the ephod here&rsquo; before the pursuit of the Amalekites (<a href="1-samuel-30.html#v30-7">1 Samuel 30:7</a>, now on these pages).'
+    elif _e["slug"] == "hormah":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 30, 30)]
+        _e["desc"] = _e["desc"] + ' ⭐ David sends a share of the spoil of Amalek to the men of Hormah (<a href="1-samuel-30.html#v30-30">1 Samuel 30:30</a>, now on these pages).'
+    elif _e["slug"] == "hebron":
+        _e["refs"] = list(_e["refs"]) + [("1 Samuel", 30, 31)]
+        _e["desc"] = _e["desc"] + ' ⭐ It is the last town in David&rsquo;s list of gifts from the spoil of Amalek (<a href="1-samuel-30.html#v30-31">1 Samuel 30:31</a>, now on these pages).'
+    elif _e["slug"] == "negev":
+        _e["desc"] = _e["desc"] + ' ⭐ The Amalekites raid the Negev and Ziklag, and &lsquo;the Negev of the Cherethites &hellip; Judah &hellip; Caleb&rsquo; (<a href="1-samuel-30.html#v30-1">1 Samuel 30:1, 14</a>, now on these pages).'
+_ES30 = {
+    "amalek": ("(1 Samuel 30, todavía no en estas páginas)", '(<a href="1-samuel-30.es.html#v30-1">1 Samuel 30</a>, ya en estas páginas)'),
+    "ziklag": ("(1 Samuel 30)", '(<a href="1-samuel-30.es.html#v30-1">1 Samuel 30</a>, ya en estas páginas)'),
+    "jerahmeelites": ("(30:29, todavía no en estas páginas)", '(<a href="1-samuel-30.es.html#v30-29">30:29</a>, ya en estas páginas)'),
+    "kenites": ("(30:29, todavía no en estas páginas)", '(<a href="1-samuel-30.es.html#v30-29">30:29</a>, ya en estas páginas)'),
+}
+for _k, (_o, _n) in _ES30.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _swap30(_s[1], _o, _n))
+for _k, _b in {
+    "zadok-abiathar": ' ⭐ En Siclag David le pide otra vez que «traiga aquí el efod» antes de perseguir a los amalecitas (<a href="1-samuel-30.es.html#v30-7">1 Samuel 30:7</a>, ya en estas páginas).',
+    "hormah": ' ⭐ David envía una parte del botín de Amalec a los hombres de Horma (<a href="1-samuel-30.es.html#v30-30">1 Samuel 30:30</a>, ya en estas páginas).',
+    "hebron": ' ⭐ Es el último pueblo de la lista de regalos de David del botín de Amalec (<a href="1-samuel-30.es.html#v30-31">1 Samuel 30:31</a>, ya en estas páginas).',
+    "negev": ' ⭐ Los amalecitas hacen incursiones contra el Néguev y Siclag, y «el Néguev de los cereteos … Judá … Caleb» (<a href="1-samuel-30.es.html#v30-1">1 Samuel 30:1, 14</a>, ya en estas páginas).',
+}.items():
+    _s = ENCYCLOPEDIA_ES[_k]
+    ENCYCLOPEDIA_ES[_k] = (_s[0], _s[1] + _b)
+
+CHRON_CHAPTERS["1sam30"] = dict(era="monarchy",
+    when="Ziklag burned: David and his men come home on the third day to find the town burned by the Amalekites and the women and children carried off, among them Ahinoam and Abigail; the men weep until they have no strength and speak of stoning him, and David strengthens himself in Jehovah, asks for the ephod, and pursues; an Egyptian slave left behind leads him to the raiders, he rescues everything, and he rules that the share of the baggage equals the share of the battle, and sends gifts to the elders of Judah.",
+    clock="Undated: the same days as the battle of Gilboa, which David hears of at Ziklag after two days (2 Samuel 1:1); the chapter follows David’s dismissal by the Philistines in chapter 29.")
+
+CHAPTER_ART["1sam30"] = [dict(
+    file="sadeler-de-vos-david-ziklag-stoning.jpg",
+    title="David threatened with stoning by his men at burning Ziklag", title_es="David amenazado de apedreamiento por sus hombres ante Siclag en llamas",
+    artist="Aegidius Sadeler II, after Maerten de Vos; published by Johann Sadeler I",
+    year="1580–1596",
+    location="Rijksmuseum, Amsterdam (RP-P-H-H-1240)", location_es="Rijksmuseum, Ámsterdam (RP-P-H-H-1240)",
+    alt="An engraving. In the foreground a crowned young man in armour stands with his hands clasped and his eyes raised to heaven; to the right a tall bearded soldier in a plumed helmet gestures upward, and to the left seated and kneeling men point at him and throw up their arms. Behind them a hilltown burns under heavy smoke, with columns of marching soldiers and riders on the plain. The words “1. Sam. 30” and a Latin verse run along the bottom, with two lines of a psalm in the corner.",
+    note="1 Samuel 30:3–6. David and his men have come home to find Ziklag burned and their families gone; the soldiers weep, the people speak of stoning him, and “David strengthened himself in Jehovah his God”. Sadeler’s plate, after a drawing by Maerten de Vos, shows David praying in front of the burning town while his men point and shout. The Latin verses under the picture say that when the Amalekites had sacked Ziklag and carried off the two wives with the children, the son of Jesse grieves with the people, anger grows and stones are ready, and he comforts himself in God. The two lines in the corner are from Psalm 37 in the Latin numbering, which is Psalm 38 in the Hebrew.",
+    note_es="1 Samuel 30:3–6. David y sus hombres han vuelto a casa y hallan Siclag quemada y a sus familias llevadas; los soldados lloran, el pueblo habla de apedrearlo, y «David se fortaleció en Jehová su Dios». La lámina de Sadeler, según un dibujo de Maerten de Vos, muestra a David orando ante el pueblo en llamas mientras sus hombres señalan y gritan. Los versos latinos bajo la imagen dicen que, cuando los amalecitas habían saqueado Siclag y se habían llevado a las dos mujeres con los niños, el hijo de Isaí se duele con el pueblo, crece la ira y las piedras están listas, y él se consuela en Dios. Las dos líneas de la esquina son del Salmo 37 en la numeración latina, que es el Salmo 38 en la hebrea.",
+    license="CC0 (Rijksmuseum)",
+    source_url="https://commons.wikimedia.org/wiki/File:Davids_soldaten_dreigen_hem_te_stenigen,_RP-P-H-H-1240.jpg",
+)]
