@@ -53582,3 +53582,191 @@ CHAPTER_ART["2sam16"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:David-fleeing-from-Jerusalem-is-cursed-by-Shimei.jpg",
 )]
+
+
+# --- 2 Samuel 17 ---
+def _swap17(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D17 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict17_en(slug, old=None, new=None, add=None):
+    _i = _D17[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap17(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict17_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap17(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency17_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap17(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency17_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap17(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("etsah", "etsah", "עֵצָה", "etsah",
+    'COUNSEL &mdash; advice, a plan laid before someone; the noun beside the verb <em>yaats</em>, to counsel. ⭐ It is the word that 2 Samuel 15&ndash;17 turns on. David prays that Ahithophel&rsquo;s counsel be turned to foolishness (<a href="2-samuel-15.html#v15-31">2 Samuel 15:31</a>, now on these pages); Ahithophel&rsquo;s counsel in those days was &lsquo;as when a man inquires of the word of God&rsquo; (<a href="2-samuel-16.html#v16-23">16:23</a>); Hushai calls the same man&rsquo;s counsel &lsquo;not good this time&rsquo; and Jehovah commands to frustrate it (<a href="2-samuel-17.html#v17-7">17:7</a>, <a href="2-samuel-17.html#v17-14">14</a>, now on these pages); and the man who &lsquo;saw that his counsel was not done&rsquo; goes home and puts his house in order (<a href="2-samuel-17.html#v17-23">17:23</a>).',
+    ("2 Samuel", 15, 31)))
+DICTIONARY_ES["etsah"] = ("etsá",
+    'CONSEJO &mdash; un parecer, un plan puesto ante alguien; el sustantivo junto al verbo <em>yaats</em>, aconsejar. ⭐ Es la palabra sobre la que gira 2 Samuel 15&ndash;17. David ora para que el consejo de Ahitofel se vuelva necedad (<a href="2-samuel-15.es.html#v15-31">2 Samuel 15:31</a>, ya en estas páginas); el consejo de Ahitofel en aquellos días era «como cuando un hombre consulta la palabra de Dios» (<a href="2-samuel-16.es.html#v16-23">16:23</a>); Husai llama al consejo del mismo hombre «no es bueno esta vez» y Jehová ordena frustrarlo (<a href="2-samuel-17.es.html#v17-7">17:7</a>, <a href="2-samuel-17.es.html#v17-14">14</a>, ya en estas páginas); y el hombre que «vio que no se hacía su consejo» se va a casa y pone en orden su casa (<a href="2-samuel-17.es.html#v17-23">17:23</a>).')
+
+DICTIONARY.append(("hefer", "hefer / lehafer", "הֵפֵר", "lehafer",
+    'TO FRUSTRATE, BREAK, ANNUL &mdash; the causative of <em>parar</em>, to break: to make a thing of no effect. It is said of covenants and of counsel. <span data-heb="הפר את בריתי">&lsquo;To break my covenant&rsquo;, <em>hefer et beriti</em>, stands in two verses</span>, <a href="deuteronomy-31.html#v31-16">Deuteronomy 31:16</a> and <a href="deuteronomy-31.html#v31-20">31:20</a> (now on these pages). ⭐ David tells Hushai that by going back to Absalom he will &lsquo;frustrate for me the counsel of Ahithophel&rsquo;, <em>vehefarta</em> (<a href="2-samuel-15.html#v15-34">2 Samuel 15:34</a>, now on these pages), and the narrator says that Jehovah had commanded <em>lehafer</em>, &lsquo;to frustrate&rsquo;, that counsel (<a href="2-samuel-17.html#v17-14">17:14</a>, now on these pages): <span data-heb="הפר את עצת">the exact words &lsquo;to frustrate the counsel of&rsquo; stand only there</span>.',
+    ("2 Samuel", 15, 34)))
+DICTIONARY_ES["hefer"] = ("lehafér",
+    'FRUSTRAR, QUEBRANTAR, ANULAR &mdash; el causativo de <em>parar</em>, quebrar: dejar una cosa sin efecto. Se dice de pactos y de consejo. <span data-heb="הפר את בריתי">«Quebrantar mi pacto», <em>hefer et beriti</em>, está en dos versículos</span>, <a href="deuteronomy-31.es.html#v31-16">Deuteronomio 31:16</a> y <a href="deuteronomy-31.es.html#v31-20">31:20</a> (ya en estas páginas). ⭐ David dice a Husai que al volver con Absalón «frustrará» para él el consejo de Ahitofel, <em>vehefarta</em> (<a href="2-samuel-15.es.html#v15-34">2 Samuel 15:34</a>, ya en estas páginas), y el narrador dice que Jehová había ordenado <em>lehafer</em>, «frustrar», ese consejo (<a href="2-samuel-17.es.html#v17-14">17:14</a>, ya en estas páginas): <span data-heb="הפר את עצת">las palabras exactas «frustrar el consejo de» están solo ahí</span>.')
+
+DICTIONARY.append(("chanaq", "chanaq", "חָנַק", "vayyehanaq",
+    'TO STRANGLE, CHOKE. ⭐ <span data-heb="ויחנק">The form <em>vayyehanaq</em>, &lsquo;and he strangled himself&rsquo;, stands only in <a href="2-samuel-17.html#v17-23">2 Samuel 17:23</a></span> (now on these pages), where Ahithophel, having put his house in order, ends his life; the ASV, NIV, TLB and Douay print &lsquo;hanged himself&rsquo;, the NWT 1984 &lsquo;strangled himself&rsquo;, and the Hebrew names no rope and no tree. Related forms are the lion that strangles prey for his lionesses, <em>mechanneq</em> (Nahum 2:13), and the noun <em>machanaq</em>, &lsquo;strangling&rsquo;, in Job 7:15 (neither yet on these pages). The Greek of Samuel has <em>apēnxato</em>, the form that stands of Judas in <a href="matthew-27.html#v27-5">Matthew 27:5</a> (now on these pages).',
+    ("2 Samuel", 17, 23)))
+DICTIONARY_ES["chanaq"] = ("vayyehánaq",
+    'ESTRANGULAR, AHOGAR. ⭐ <span data-heb="ויחנק">La forma <em>vayyehanaq</em>, «y se estranguló», está solo en <a href="2-samuel-17.es.html#v17-23">2 Samuel 17:23</a></span> (ya en estas páginas), donde Ahitofel, después de poner en orden su casa, se quita la vida; la RV 1909 y la NVI imprimen «se ahorcó», la TNM 1987 «se estranguló», y el hebreo no nombra soga ni árbol. Formas emparentadas son el león que estrangula la presa para sus leonas, <em>mechanneq</em> (Nahúm 2:13), y el sustantivo <em>machanaq</em>, «estrangulamiento», en Job 7:15 (ninguno todavía en estas páginas). El griego de Samuel tiene <em>apēnxato</em>, la forma que está de Judas en <a href="matthew-27.es.html#v27-5">Mateo 27:5</a> (ya en estas páginas).')
+
+DICTIONARY.append(("yagea", "yagea", "יָגֵעַ", "yagea",
+    'WEARY, worn out &mdash; from <em>yaga</em>, to toil until one is spent. ⭐ It is Ahithophel&rsquo;s word for David: &lsquo;while he is weary and weak of hands&rsquo; (<a href="2-samuel-17.html#v17-2">2 Samuel 17:2</a>, now on these pages), a weakness to strike at. The page&rsquo;s other word for weary is <em>ayef</em>, which the narrator uses of David and the people on the road (<a href="2-samuel-16.html#v16-14">2 Samuel 16:14</a>) and the men at Mahanaim use of the people (<a href="2-samuel-17.html#v17-29">17:29</a>, both now on these pages). <span data-heb="עיף ויגע">The two together, &lsquo;faint and weary&rsquo;, <em>ayef veyagea</em>, stand in one verse</span>, <a href="deuteronomy-25.html#v25-18">Deuteronomy 25:18</a> (now on these pages), of Israel on the road when Amalek attacked.',
+    ("2 Samuel", 17, 2)))
+DICTIONARY_ES["yagea"] = ("yagéa",
+    'CANSADO, agotado &mdash; de <em>yaga</em>, afanarse hasta quedar rendido. ⭐ Es la palabra de Ahitofel para David: «mientras está cansado y flojo de manos» (<a href="2-samuel-17.es.html#v17-2">2 Samuel 17:2</a>, ya en estas páginas), una debilidad donde golpear. La otra palabra de la página para cansado es <em>ayef</em>, que el narrador usa de David y el pueblo en el camino (<a href="2-samuel-16.es.html#v16-14">2 Samuel 16:14</a>) y los hombres de Mahanaim del pueblo (<a href="2-samuel-17.es.html#v17-29">17:29</a>, los dos ya en estas páginas). <span data-heb="עיף ויגע">Las dos juntas, «cansado y fatigado», <em>ayef veyagea</em>, están en un versículo</span>, <a href="deuteronomy-25.es.html#v25-18">Deuteronomio 25:18</a> (ya en estas páginas), de Israel en el camino cuando atacó Amalec.')
+
+# ---------- extended dictionary entries ----------
+_dict17_en("masas", None, None, add=' ⭐ Hushai&rsquo;s promise to Absalom is the same verb doubled, <em>hamos yimmas</em>, &lsquo;will utterly melt&rsquo;, said of the lion-hearted man among Absalom&rsquo;s own people (<a href="2-samuel-17.html#v17-10">2 Samuel 17:10</a>, now on these pages).')
+_dict17_es("masas", None, None, add=' ⭐ La promesa de Husai a Absalón es el mismo verbo doblado, <em>hamos yimmas</em>, «se derretirá del todo», dicho del hombre de corazón de león entre la propia gente de Absalón (<a href="2-samuel-17.es.html#v17-10">2 Samuel 17:10</a>, ya en estas páginas).')
+_dict17_en("chayil", None, None, add=' ⭐ <a href="2-samuel-17.html#v17-10">2 Samuel 17:10</a> (now on these pages) has it twice: the &lsquo;son of strength&rsquo; whose heart is as the heart of the lion, and David&rsquo;s men, who are &lsquo;sons of strength&rsquo; too.')
+_dict17_es("chayil", None, None, add=' ⭐ <a href="2-samuel-17.es.html#v17-10">2 Samuel 17:10</a> (ya en estas páginas) lo tiene dos veces: el «hijo de fuerza» cuyo corazón es como el corazón del león, y los hombres de David, que también son «hijos de fuerza».')
+_dict17_en("tseror", None, None, add=' ⭐ The same letters are a pebble in <a href="2-samuel-17.html#v17-13">2 Samuel 17:13</a> (now on these pages), where Hushai says the city will be dragged down to the wadi until &lsquo;not even a pebble&rsquo; is found there; whether the pebble is a second word or the same one is not settled here.')
+_dict17_es("tseror", None, None, add=' ⭐ Las mismas letras son una piedrecilla en <a href="2-samuel-17.es.html#v17-13">2 Samuel 17:13</a> (ya en estas páginas), donde Husai dice que la ciudad será arrastrada hasta el arroyo hasta que no se halle allí «ni una piedrecita»; si la piedrecilla es una segunda palabra o la misma no se decide aquí.')
+_dict17_en("qalui", "Abigail&rsquo;s (25:18) and Barzillai&rsquo;s (2 Samuel 17:28; neither yet on these pages)", 'Abigail&rsquo;s (<a href="1-samuel-25.html#v25-18">25:18</a>) and Barzillai&rsquo;s (<a href="2-samuel-17.html#v17-28">2 Samuel 17:28</a>, now on these pages), where <em>qali</em> stands twice in one verse')
+_dict17_es("qalui", "el de Abigaíl (25:18) y el de Barzilai (2 Samuel 17:28; ninguno de los dos todavía en estas páginas)", 'el de Abigaíl (<a href="1-samuel-25.es.html#v25-18">25:18</a>) y el de Barzilai (<a href="2-samuel-17.es.html#v17-28">2 Samuel 17:28</a>, ya en estas páginas), donde <em>qali</em> está dos veces en un versículo')
+
+# ---------- new encyclopedia entries ----------
+ENCYCLOPEDIA.append(dict(slug="amasa", name="Amasa", kind="person", aliases=["Amasa"],
+    refs=[("2 Samuel", 17, 25)], videos=[],
+    desc='The man whom Absalom sets over the army in place of <a href="encyclopedia.html#joab">Joab</a> when the rebels cross the Jordan (<a href="2-samuel-17.html#v17-25">2 Samuel 17:25</a>, now on these pages). He is the son of Ithra the Israelite, who &lsquo;went in to&rsquo; Abigal the daughter of Nahash, sister of <a href="encyclopedia.html#zeruiah">Zeruiah</a>, so that he is a cousin of Joab; 1 Chronicles 2:17 gives his father as Jether the Ishmaelite (not yet on these pages). ⚠ His mother is not the <a href="encyclopedia.html#abigail">Abigail</a> who was Nabal&rsquo;s wife. ⭐ What David says of him afterwards is in 2 Samuel 19:14 and 20:4, and Joab&rsquo;s killing of him is in 20:10 (not yet on these pages).'))
+ENCYCLOPEDIA_ES["amasa"] = ("Amasa",
+    'El hombre a quien Absalón pone sobre el ejército en lugar de <a href="enciclopedia.html#joab">Joab</a> cuando los rebeldes pasan el Jordán (<a href="2-samuel-17.es.html#v17-25">2 Samuel 17:25</a>, ya en estas páginas). Es hijo de Itra el israelita, que «entró a» Abigal hija de Nahás, hermana de <a href="enciclopedia.html#zeruiah">Sarvia</a>, de modo que es primo de Joab; 1 Crónicas 2:17 da a su padre como Jéter el ismaelita (todavía no en estas páginas). ⚠ Su madre no es la <a href="enciclopedia.html#abigail">Abigail</a> que fue mujer de Nabal. ⭐ Lo que David dice de él después está en 2 Samuel 19:14 y 20:4, y la muerte que le da Joab en 20:10 (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="barzillai-the-gileadite", name="Barzillai the Gileadite", kind="person", aliases=["Barzillai the Gileadite", "Barzillai"],
+    refs=[("2 Samuel", 17, 27)], videos=[],
+    desc='A man of <a href="encyclopedia.html#rogelim">Rogelim</a> in Gilead who, with <a href="encyclopedia.html#shobi-son-of-nahash">Shobi</a> and <a href="encyclopedia.html#machir-son-of-ammiel">Machir</a>, brings David and his people beds, basins, grain, honey, curds, sheep and cheese of the herd at <a href="encyclopedia.html#mahanaim">Mahanaim</a> (<a href="2-samuel-17.html#v17-27">2 Samuel 17:27&ndash;29</a>, now on these pages). ⭐ He comes down from Rogelim to the Jordan with the king on the return, a very old man who had provided for the king at Mahanaim, and asks to turn back and send Chimham in his place (2 Samuel 19:32&ndash;38); David&rsquo;s charge to Solomon is to show kindness to his sons (1 Kings 2:7). None of these is yet on these pages.'))
+ENCYCLOPEDIA_ES["barzillai-the-gileadite"] = ("Barzilai el galaadita",
+    'Un hombre de <a href="enciclopedia.html#rogelim">Rogelim</a> en Galaad que, con <a href="enciclopedia.html#shobi-son-of-nahash">Sobi</a> y <a href="enciclopedia.html#machir-son-of-ammiel">Maquir</a>, trae a David y a su gente camas, tazones, grano, miel, cuajada, ovejas y queso de la vacada en <a href="enciclopedia.html#mahanaim">Mahanaim</a> (<a href="2-samuel-17.es.html#v17-27">2 Samuel 17:27–29</a>, ya en estas páginas). ⭐ Baja de Rogelim hasta el Jordán con el rey en el regreso, un hombre muy anciano que había sustentado al rey en Mahanaim, y pide volverse y enviar a Quimam en su lugar (2 Samuel 19:32–38); el encargo de David a Salomón es que muestre bondad con sus hijos (1 Reyes 2:7). Ninguno de estos está todavía en estas páginas.')
+
+ENCYCLOPEDIA.append(dict(slug="shobi-son-of-nahash", name="Shobi son of Nahash", kind="person", aliases=["Shobi", "Shobi son of Nahash"],
+    refs=[("2 Samuel", 17, 27)], videos=[],
+    desc='A man of <a href="encyclopedia.html#rabbah">Rabbah</a> of the sons of Ammon, son of a Nahash, who brings supplies to David at <a href="encyclopedia.html#mahanaim">Mahanaim</a> with Machir and Barzillai (<a href="2-samuel-17.html#v17-27">2 Samuel 17:27</a>, now on these pages). The page does not say which Nahash is meant. If it is the king of Ammon (<a href="encyclopedia.html#nahash">Nahash</a>), Shobi is a brother of Hanun, who humiliated David&rsquo;s envoys (<a href="2-samuel-10.html#v10-1">2 Samuel 10:1&ndash;5</a>, now on these pages); that is an inference and not the text.'))
+ENCYCLOPEDIA_ES["shobi-son-of-nahash"] = ("Sobi hijo de Nahás",
+    'Un hombre de <a href="enciclopedia.html#rabbah">Rabá</a> de los hijos de Amón, hijo de un Nahás, que trae provisiones a David en <a href="enciclopedia.html#mahanaim">Mahanaim</a> con Maquir y Barzilai (<a href="2-samuel-17.es.html#v17-27">2 Samuel 17:27</a>, ya en estas páginas). La página no dice de qué Nahás se trata. Si es el rey de Amón (<a href="enciclopedia.html#nahash">Nahás</a>), Sobi es hermano de Hanún, que humilló a los enviados de David (<a href="2-samuel-10.es.html#v10-1">2 Samuel 10:1–5</a>, ya en estas páginas); eso es una inferencia y no el texto.')
+
+ENCYCLOPEDIA.append(dict(slug="rogelim", name="Rogelim", kind="place", aliases=["Rogelim"],
+    coords=(32.38, 35.77, 1.0), approx=True, refs=[("2 Samuel", 17, 27)], videos=[],
+    desc='The home of <a href="encyclopedia.html#barzillai-the-gileadite">Barzillai the Gileadite</a>, in Gilead east of the Jordan (<a href="2-samuel-17.html#v17-27">2 Samuel 17:27</a>, now on these pages; again in 2 Samuel 19:32, not yet on these pages). Its site is not known, and the point on the map is a guess. ⚠ It is not <a href="encyclopedia.html#en-rogel">En-rogel</a>, the spring by Jerusalem.'))
+ENCYCLOPEDIA_ES["rogelim"] = ("Rogelim",
+    'La casa de <a href="enciclopedia.html#barzillai-the-gileadite">Barzilai el galaadita</a>, en Galaad al este del Jordán (<a href="2-samuel-17.es.html#v17-27">2 Samuel 17:27</a>, ya en estas páginas; otra vez en 2 Samuel 19:32, todavía no en estas páginas). No se conoce su sitio, y el punto del mapa es una conjetura. ⚠ No es <a href="enciclopedia.html#en-rogel">En-rogel</a>, la fuente junto a Jerusalén.')
+
+ENCYCLOPEDIA.append(dict(slug="ahimaaz-son-of-zadok", name="Ahimaaz son of Zadok", kind="person", aliases=["Ahimaaz", "Ahimaaz son of Zadok"],
+    refs=[("2 Samuel", 15, 27), ("2 Samuel", 15, 36), ("2 Samuel", 17, 17)], videos=[],
+    desc='The son of <a href="encyclopedia.html#zadok">Zadok</a> the priest. David sends him back to Jerusalem with <a href="encyclopedia.html#jonathan-son-of-abiathar">Jonathan son of Abiathar</a> to carry word out of the city (<a href="2-samuel-15.html#v15-27">2 Samuel 15:27</a>, <a href="2-samuel-15.html#v15-36">36</a>, now on these pages), and in <a href="2-samuel-17.html#v17-17">2 Samuel 17:17&ndash;21</a> (now on these pages) the two wait by <a href="encyclopedia.html#en-rogel">En-rogel</a>, are seen by a young man, hide in a well at <a href="encyclopedia.html#bahurim">Bahurim</a> under a woman&rsquo;s covering, and bring David word to cross the Jordan. His running with the news of the battle is in 2 Samuel 18:19&ndash;30 (not yet on these pages).'))
+ENCYCLOPEDIA_ES["ahimaaz-son-of-zadok"] = ("Ahimaas hijo de Sadoc",
+    'El hijo de <a href="enciclopedia.html#zadok">Sadoc</a> el sacerdote. David lo envía de vuelta a Jerusalén con <a href="enciclopedia.html#jonathan-son-of-abiathar">Jonatán hijo de Abiatar</a> para llevar palabra fuera de la ciudad (<a href="2-samuel-15.es.html#v15-27">2 Samuel 15:27</a>, <a href="2-samuel-15.es.html#v15-36">36</a>, ya en estas páginas), y en <a href="2-samuel-17.es.html#v17-17">2 Samuel 17:17–21</a> (ya en estas páginas) los dos esperan junto a <a href="enciclopedia.html#en-rogel">En-rogel</a>, un joven los ve, se esconden en un pozo en <a href="enciclopedia.html#bahurim">Bahurim</a> bajo el cobertor de una mujer, y llevan a David la palabra de pasar el Jordán. Su carrera con la noticia de la batalla está en 2 Samuel 18:19–30 (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="jonathan-son-of-abiathar", name="Jonathan son of Abiathar", kind="person", aliases=["Jonathan son of Abiathar"],
+    refs=[("2 Samuel", 15, 36), ("2 Samuel", 17, 17)], videos=[],
+    desc='The son of the priest <a href="encyclopedia.html#abiathar">Abiathar</a>, and not <a href="encyclopedia.html#jonathan">Jonathan the son of Saul</a>, who is dead by now. David sends him back to Jerusalem with <a href="encyclopedia.html#ahimaaz-son-of-zadok">Ahimaaz</a> to carry word out (<a href="2-samuel-15.html#v15-27">2 Samuel 15:27</a>, <a href="2-samuel-15.html#v15-36">36</a>, now on these pages); in <a href="2-samuel-17.html#v17-17">2 Samuel 17:17&ndash;21</a> (now on these pages) he and Ahimaaz wait by <a href="encyclopedia.html#en-rogel">En-rogel</a> and hide in a well at <a href="encyclopedia.html#bahurim">Bahurim</a>.'))
+ENCYCLOPEDIA_ES["jonathan-son-of-abiathar"] = ("Jonatán hijo de Abiatar",
+    'El hijo del sacerdote <a href="enciclopedia.html#abiathar">Abiatar</a>, y no <a href="enciclopedia.html#jonathan">Jonatán el hijo de Saúl</a>, que ya está muerto. David lo envía de vuelta a Jerusalén con <a href="enciclopedia.html#ahimaaz-son-of-zadok">Ahimaas</a> para llevar palabra fuera (<a href="2-samuel-15.es.html#v15-27">2 Samuel 15:27</a>, <a href="2-samuel-15.es.html#v15-36">36</a>, ya en estas páginas); en <a href="2-samuel-17.es.html#v17-17">2 Samuel 17:17–21</a> (ya en estas páginas) él y Ahimaas esperan junto a <a href="enciclopedia.html#en-rogel">En-rogel</a> y se esconden en un pozo en <a href="enciclopedia.html#bahurim">Bahurim</a>.')
+
+# ---------- extended encyclopedia entries (flip the stale 'not yet' claims) ----------
+_ency17_en("ahithophel", "What comes of his next counsel is in 2 Samuel 17 (not yet on these pages).",
+    'In <a href="2-samuel-17.html#v17-1">2 Samuel 17:1&ndash;4</a> (now on these pages) he asks Absalom for twelve thousand men to pursue David that night and strike the king alone, and the plan is right in the eyes of Absalom and the elders; Hushai&rsquo;s counsel is taken instead, because Jehovah had commanded to frustrate his good counsel (<a href="2-samuel-17.html#v17-14">17:14</a>), and he saddles his donkey, goes to his city, sets his house in order, strangles himself and is buried in the tomb of his father (<a href="2-samuel-17.html#v17-23">17:23</a>).')
+_ency17_es("ahithophel", "Lo que resulta de su siguiente consejo está en 2 Samuel 17 (todavía no en estas páginas).",
+    'En <a href="2-samuel-17.es.html#v17-1">2 Samuel 17:1–4</a> (ya en estas páginas) pide a Absalón doce mil hombres para perseguir a David esa noche y herir al rey solo, y el plan es recto a los ojos de Absalón y de los ancianos; se toma en cambio el consejo de Husai, porque Jehová había ordenado frustrar su buen consejo (<a href="2-samuel-17.es.html#v17-14">17:14</a>), y él apareja su asno, se va a su ciudad, pone en orden su casa, se estrangula y es sepultado en el sepulcro de su padre (<a href="2-samuel-17.es.html#v17-23">17:23</a>).')
+_ency17_en("hushai-the-archite", "What he advises next is in 2 Samuel 17, and 1 Chronicles 27:33 calls him the king&rsquo;s friend (not yet on these pages).",
+    'In <a href="2-samuel-17.html#v17-5">2 Samuel 17:5&ndash;14</a> (now on these pages) Absalom calls him to answer Ahithophel&rsquo;s plan; he says it is &lsquo;not good this time&rsquo;, counsels gathering Israel from Dan to Beer-sheba with Absalom going into the battle himself, and Absalom and every man of Israel say his counsel is better; he then tells Zadok and Abiathar to send word to David to cross the Jordan (<a href="2-samuel-17.html#v17-15">17:15&ndash;16</a>). 1 Chronicles 27:33 calls him the king&rsquo;s friend (not yet on these pages).')
+_ency17_es("hushai-the-archite", "Lo que aconseja después está en 2 Samuel 17, y 1 Crónicas 27:33 lo llama el amigo del rey (todavía no en estas páginas).",
+    'En <a href="2-samuel-17.es.html#v17-5">2 Samuel 17:5–14</a> (ya en estas páginas) Absalón lo llama para responder al plan de Ahitofel; dice que «no es bueno esta vez», aconseja juntar a Israel de Dan a Beerseba con Absalón yendo él mismo a la batalla, y Absalón y todo hombre de Israel dicen que su consejo es mejor; luego dice a Sadoc y Abiatar que envíen palabra a David para que pase el Jordán (<a href="2-samuel-17.es.html#v17-15">17:15–16</a>). 1 Crónicas 27:33 lo llama el amigo del rey (todavía no en estas páginas).')
+_ency17_en("absalom", "2 Samuel 17&ndash;18 is not yet on these pages.",
+    'in <a href="2-samuel-17.html#v17-14">2 Samuel 17</a> (now on these pages) he and every man of Israel take Hushai&rsquo;s counsel over Ahithophel&rsquo;s, and he crosses the Jordan with Amasa over the army in place of Joab (<a href="2-samuel-17.html#v17-24">17:24&ndash;25</a>); 2 Samuel 18 is not yet on these pages.')
+_ency17_es("absalom", "2 Samuel 17&ndash;18 todav&iacute;a no est&aacute; en estas p&aacute;ginas.",
+    'en <a href="2-samuel-17.es.html#v17-14">2 Samuel 17</a> (ya en estas p&aacute;ginas) &eacute;l y todo hombre de Israel toman el consejo de Husai antes que el de Ahitofel, y pasa el Jord&aacute;n con Amasa sobre el ej&eacute;rcito en lugar de Joab (<a href="2-samuel-17.es.html#v17-24">17:24–25</a>); 2 Samuel 18 todav&iacute;a no est&aacute; en estas p&aacute;ginas.')
+_ency17_en("zadok", None, None, add=' ⭐ In <a href="2-samuel-17.html#v17-15">2 Samuel 17:15&ndash;21</a> (now on these pages) Hushai brings him and Abiathar both counsels and the word that David must cross the Jordan, and their sons carry it from En-rogel.')
+_ency17_es("zadok", None, None, add=' ⭐ En <a href="2-samuel-17.es.html#v17-15">2 Samuel 17:15–21</a> (ya en estas páginas) Husai le trae a él y a Abiatar los dos consejos y la palabra de que David debe pasar el Jordán, y sus hijos la llevan desde En-rogel.')
+_ency17_en("abiathar", None, None, add=' ⭐ In <a href="2-samuel-17.html#v17-15">2 Samuel 17:15&ndash;21</a> (now on these pages) Hushai tells him and Zadok both counsels, and his son Jonathan waits with Ahimaaz by En-rogel to carry the word to David.')
+_ency17_es("abiathar", None, None, add=' ⭐ En <a href="2-samuel-17.es.html#v17-15">2 Samuel 17:15–21</a> (ya en estas páginas) Husai le dice a él y a Sadoc los dos consejos, y su hijo Jonatán espera con Ahimaas junto a En-rogel para llevar la palabra a David.')
+_ency17_en("en-rogel", "David's spies waited during Absalom's revolt (2 Samuel 17:17)",
+    'the priests&rsquo; sons Jonathan and Ahimaaz waited during Absalom&rsquo;s revolt to carry word to David (<a href="2-samuel-17.html#v17-17">2 Samuel 17:17</a>, now on these pages)')
+_ency17_es("en-rogel", "los espías de David durante la rebelión de Absalón (2 Samuel 17:17)",
+    'Jonatán y Ahimaas, los hijos de los sacerdotes, durante la rebelión de Absalón para llevar palabra a David (<a href="2-samuel-17.es.html#v17-17">2 Samuel 17:17</a>, ya en estas páginas)')
+_ency17_en("bahurim", None, None, add=' ⭐ In <a href="2-samuel-17.html#v17-18">2 Samuel 17:18&ndash;20</a> (now on these pages) a man of Bahurim has a well in his courtyard in which Jonathan and Ahimaaz hide, with a covering and crushed grain spread over its mouth by a woman of the house.')
+_ency17_es("bahurim", None, None, add=' ⭐ En <a href="2-samuel-17.es.html#v17-18">2 Samuel 17:18–20</a> (ya en estas páginas) un hombre de Bahurim tiene un pozo en su patio en que se esconden Jonatán y Ahimaas, con un cobertor y grano triturado extendidos sobre su boca por una mujer de la casa.')
+_ency17_en("mahanaim", "(2 Samuel 17:24, not yet on these pages)", '(<a href="2-samuel-17.html#v17-24">2 Samuel 17:24</a>, now on these pages), where Shobi, Machir and Barzillai bring him beds and food (17:27&ndash;29)')
+_ency17_es("mahanaim", "(2 Samuel 17:24, todavía no en estas páginas)", '(<a href="2-samuel-17.es.html#v17-24">2 Samuel 17:24</a>, ya en estas páginas), donde Sobi, Maquir y Barzilai le traen camas y comida (17:27–29)')
+_ency17_en("machir-son-of-ammiel", "(2 Samuel 17:27, not yet on these pages)", '(<a href="2-samuel-17.html#v17-27">2 Samuel 17:27</a>, now on these pages)')
+_ency17_es("machir-son-of-ammiel", "(2 Samuel 17:27, todavía no en estas páginas)", '(<a href="2-samuel-17.es.html#v17-27">2 Samuel 17:27</a>, ya en estas páginas)')
+_ency17_en("lo-debar", "(2 Samuel 17:27, not yet on these pages)", '(<a href="2-samuel-17.html#v17-27">2 Samuel 17:27</a>, now on these pages)')
+_ency17_es("lo-debar", "(2 Samuel 17:27, todavía no en estas páginas)", '(<a href="2-samuel-17.es.html#v17-27">2 Samuel 17:27</a>, ya en estas páginas)')
+_ency17_en("nahash", None, None, add=' ⭐ <a href="2-samuel-17.html#v17-25">2 Samuel 17:25</a> and <a href="2-samuel-17.html#v17-27">17:27</a> (now on these pages) each name a Nahash as a father, of Abigal and of Shobi; the page does not say whether either is this king.')
+_ency17_es("nahash", None, None, add=' ⭐ <a href="2-samuel-17.es.html#v17-25">2 Samuel 17:25</a> y <a href="2-samuel-17.es.html#v17-27">17:27</a> (ya en estas páginas) nombran cada uno a un Nahás como padre, de Abigal y de Sobi; la página no dice si alguno es este rey.')
+_ency17_en("zeruiah", None, None, add=' ⭐ In <a href="2-samuel-17.html#v17-25">2 Samuel 17:25</a> (now on these pages) her sister is Abigal the daughter of Nahash, the mother of Amasa; 1 Chronicles 2:16 calls Zeruiah and Abigail the sisters of the sons of Jesse (not yet on these pages).')
+_ency17_es("zeruiah", None, None, add=' ⭐ En <a href="2-samuel-17.es.html#v17-25">2 Samuel 17:25</a> (ya en estas páginas) su hermana es Abigal hija de Nahás, la madre de Amasa; 1 Crónicas 2:16 llama a Sarvia y Abigail las hermanas de los hijos de Isaí (todavía no en estas páginas).')
+_ency17_en("abigail", "A different Abigail is David&rsquo;s sister, the mother of Amasa (1 Chronicles 2:16&ndash;17, not yet on these pages).",
+    'A different Abigail, written Abigal in <a href="2-samuel-17.html#v17-25">2 Samuel 17:25</a> (now on these pages), is the mother of Amasa and the sister of Zeruiah; there she is the daughter of Nahash, and 1 Chronicles 2:16&ndash;17 calls her a sister of the sons of Jesse (not yet on these pages).')
+_ency17_es("abigail", "Otra Abigail es la hermana de David, madre de Amasa (1 Crónicas 2:16&ndash;17, todavía no en estas páginas).",
+    'Otra Abigail, escrita Abigal en <a href="2-samuel-17.es.html#v17-25">2 Samuel 17:25</a> (ya en estas páginas), es la madre de Amasa y la hermana de Sarvia; allí es hija de Nahás, y 1 Crónicas 2:16&ndash;17 la llama hermana de los hijos de Isaí (todavía no en estas páginas).')
+
+_REFS17 = {
+    "ahithophel": [("2 Samuel", 17, 1), ("2 Samuel", 17, 23)],
+    "hushai-the-archite": [("2 Samuel", 17, 5), ("2 Samuel", 17, 15)],
+    "absalom": [("2 Samuel", 17, 14), ("2 Samuel", 17, 24)],
+    "zadok": [("2 Samuel", 17, 15)],
+    "abiathar": [("2 Samuel", 17, 15)],
+    "en-rogel": [("2 Samuel", 17, 17)],
+    "bahurim": [("2 Samuel", 17, 18)],
+    "mahanaim": [("2 Samuel", 17, 27)],
+    "machir-son-of-ammiel": [("2 Samuel", 17, 27)],
+    "lo-debar": [("2 Samuel", 17, 27)],
+    "zeruiah": [("2 Samuel", 17, 25)],
+    "rabbah": [("2 Samuel", 17, 27)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS17:
+        _have = set(_e["refs"])
+        _e["refs"] = list(_e["refs"]) + [_r for _r in _REFS17[_e["slug"]] if _r not in _have]
+
+# pin 'Jonathan' in 2 Samuel 17 to the priest's son, not to Saul's son
+LINK_OVERRIDES.extend([
+    ("2 Samuel", 17, 17, "Jonathan", 1, "jonathan-son-of-abiathar"),
+    ("2 Samuel", 17, 20, "Jonathan", 1, "jonathan-son-of-abiathar"),
+])
+
+
+CHRON_CHAPTERS["2sam17"] = dict(era="monarchy",
+    when="Ahithophel asks Absalom for twelve thousand men to pursue David that night and strike the king alone, and the plan is right in the eyes of Absalom and the elders. Absalom calls Hushai the Archite, who says the counsel is not good this time and advises gathering all Israel from Dan to Beer-sheba with Absalom going into the battle himself; Absalom and every man of Israel say that Hushai’s counsel is better, because Jehovah had commanded to frustrate the good counsel of Ahithophel. Hushai tells Zadok and Abiathar, Jonathan and Ahimaaz carry the word from En-rogel and are hidden in a well at Bahurim, and David and all the people cross the Jordan before morning. Ahithophel, seeing that his counsel was not done, goes home, sets his house in order, strangles himself and is buried in the tomb of his father. David comes to Mahanaim; Absalom crosses the Jordan with Amasa over the army and camps in Gilead; and Shobi, Machir and Barzillai bring David beds, food and drink.",
+    clock="The night after 2 Samuel 16 and the morning that follows, with Absalom in Jerusalem and David east of it; then David at Mahanaim and Absalom’s army in Gilead.")
+
+CHAPTER_ART["2sam17"] = [dict(
+    file="harding-bible-absalom-ahithophel-hushai.jpg",
+    title="Absalom between Ahitophel and Hushai", title_es="Absalón entre Ahitofel y Husai",
+    artist="Unknown illuminator, the Harding Bible",
+    year="12th century",
+    location="Dijon, Bibliothèque municipale (Harding Bible); photograph from the French Enluminures database", location_es="Dijon, Bibliothèque municipale (Biblia de Harding); fotografía de la base de datos francesa Enluminures",
+    alt="A twelfth-century manuscript illumination inside a ruled frame on cracked, aged parchment. Three standing figures. At the left a bearded man with long dark hair, in a short grey tunic and red leggings, holds an upright spear. In the middle a taller figure with long curled light hair, in a long blue robe with a red collar, holds both hands up. At the right a bearded man in an orange tunic, with a long sword at his side and a large shield marked with a red star, reaches toward the middle figure. A fourth figure, cut off by the right edge of the frame, has its red-stockinged feet hanging clear of the ground line. Small Latin lines run above and beside the figures.",
+    note="2 Samuel 17. The title is the one Commons gives the leaf, and the names written above the figures seem to agree with it as far as the cracks in the parchment allow: Ahithophel with the spear, Absalom in the middle, Hushai with the shield. It is the chapter’s contest of counsels (verses 5–14) in three figures. At the right edge a fourth figure’s feet hang clear of the ground, and the Latin at the top right seems to speak of a noose, which would set the end of verse 23 beside the debate; the crop and the damage leave that reading uncertain, and this page does not rely on it.",
+    note_es="2 Samuel 17. El título es el que Commons da a la hoja, y los nombres escritos sobre las figuras parecen concordar con él hasta donde lo permiten las grietas del pergamino: Ahitofel con la lanza, Absalón en medio, Husai con el escudo. Es la disputa de consejos del capítulo (versículos 5–14) en tres figuras. En el borde derecho los pies de una cuarta figura cuelgan sin tocar el suelo, y el latín de arriba a la derecha parece hablar de un lazo, lo que pondría el final del versículo 23 junto al debate; el recorte y el daño dejan esa lectura incierta, y esta página no se apoya en ella.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Bible_Etienne_Harding_14_13_Absalom_entre_Ahitophel_et_Husha%C3%AF.jpg",
+)]
