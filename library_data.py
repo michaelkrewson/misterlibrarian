@@ -54399,3 +54399,124 @@ CHAPTER_ART["2sam21"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:082.Rizpah%E2%80%99s_Kindness_toward_the_Dead.jpg",
 )]
+
+
+# --- 2 Samuel 22 ---
+def _swap22(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D22 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict22_en(slug, old=None, new=None, add=None):
+    _i = _D22[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict22_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency22_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap22(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency22_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("mashah", "mashah", "מָשָׁה", "mashah",
+    'TO DRAW OUT &mdash; to pull someone up out of water. It is the verb of the name Moses: &lsquo;she called his name Moses, and said: Because I drew him out of the water&rsquo; (<a href="exodus-2.html#v2-10">Exodus 2:10</a>, now on these pages), and of David&rsquo;s song, where Jehovah &lsquo;sent from on high, he took me; he drew me out of many waters&rsquo;, <em>yamsheni mimmayim rabbim</em> (<a href="2-samuel-22.html#v22-17">2 Samuel 22:17</a>, now on these pages; Psalm 18:17, not yet on these pages). The ASV has &lsquo;he drew me out of many waters&rsquo;, the NIV &lsquo;he drew me out of deep waters&rsquo; and the NWT 1984 &lsquo;drawing me out of great waters&rsquo;. In Genesis 27:12 and Judges 16:26 the letters <em>yemushsheni</em> and <em>yemushshem</em> belong to another verb, &lsquo;to feel&rsquo;.',
+    ("Exodus", 2, 10)))
+DICTIONARY_ES["mashah"] = ("mashá",
+    'SACAR, sacar a alguien del agua. Es el verbo del nombre de Moisés: «le puso por nombre Moisés, y dijo: Porque de las aguas lo saqué» (<a href="exodus-2.html#v2-10">Éxodo 2:10</a>, ya en estas páginas, todavía no en español), y del cántico de David, donde Jehová «envió desde lo alto, me tomó; me sacó de muchas aguas», <em>yamsheni mimmayim rabbim</em> (<a href="2-samuel-22.es.html#v22-17">2 Samuel 22:17</a>, ya en estas páginas; Salmo 18:17, todavía no en estas páginas). La RV 1909 tiene «sacóme de copiosas aguas», la NVI «me sacó del mar profundo» y la TNM 1987 «sacándome de grandes aguas». En Génesis 27:12 y Jueces 16:26 las letras <em>yemushsheni</em> y <em>yemushshem</em> pertenecen a otro verbo, «palpar».')
+
+DICTIONARY.append(("chafets", "chafets", "חָפֵץ", "chafets",
+    'TO DELIGHT IN, to take pleasure in &mdash; and the noun, the pleasure or the thing wanted. <a href="1-samuel-18.html#v18-22">1 Samuel 18:22</a> has Saul&rsquo;s servants tell David &lsquo;the king delights in you&rsquo;; <a href="2-samuel-15.html#v15-26">2 Samuel 15:26</a> has David say Jehovah might say &lsquo;I have no delight in you&rsquo;; <a href="2-samuel-20.html#v20-11">2 Samuel 20:11</a> has a young man of Joab cry &lsquo;Whoever delights in Joab, and whoever is David&rsquo;s&rsquo;; and in David&rsquo;s song Jehovah &lsquo;brought me out to a broad place; he rescued me, because he delighted in me&rsquo; (<a href="2-samuel-22.html#v22-20">2 Samuel 22:20</a>, all now on these pages). The ASV has &lsquo;he delighted in me&rsquo;, the NIV &lsquo;because he delighted in me&rsquo;, the NWT 1984 &lsquo;because he had found delight in me&rsquo; and the Douay &lsquo;because I pleased him&rsquo;.',
+    ("1 Samuel", 18, 22)))
+DICTIONARY_ES["chafets"] = ("jafets",
+    'DELEITARSE EN, complacerse en — y el sustantivo, el placer o lo que se quiere. <a href="1-samuel-18.es.html#v18-22">1 Samuel 18:22</a> hace que los siervos de Saúl digan a David «el rey se agrada de ti»; <a href="2-samuel-15.es.html#v15-26">2 Samuel 15:26</a> hace que David diga que Jehová podría decir «no me complazco en ti»; <a href="2-samuel-20.es.html#v20-11">2 Samuel 20:11</a> hace que un joven de Joab grite «El que se complace en Joab, y el que es de David»; y en el cántico de David Jehová «me sacó a un lugar amplio; me libró, porque se deleitó en mí» (<a href="2-samuel-22.es.html#v22-20">2 Samuel 22:20</a>, todos ya en estas páginas). La RV 1909 tiene «porque puso su voluntad en mí», la NVI «se agradó de mí» y la TNM 1987 «porque se había deleitado en mí».')
+
+DICTIONARY.append(("ner", "ner", "נֵר", "ner",
+    'A LAMP. <a href="2-samuel-21.html#v21-17">2 Samuel 21:17</a> (now on these pages) has David&rsquo;s men swear that he shall not &lsquo;put out the lamp of Israel&rsquo;, <em>ner Yisra&rsquo;el</em>, and in David&rsquo;s song Jehovah is his lamp: <em>attah niri</em>, &lsquo;you are my lamp&rsquo; (<a href="2-samuel-22.html#v22-29">2 Samuel 22:29</a>, now on these pages). The Hebrew spells the two differently: <em>ner</em> in 21:17, and with a yod, <em>niri</em>, in 22:29, where <span data-heb="נירי">the spelling <em>niri</em> stands in one verse</span>; Psalm 18:28 has <em>neri</em>, &lsquo;you light my lamp&rsquo;. The word with the yod, <em>nir</em>, is the spelling of the lamp Jehovah promises David in 1 Kings 11:36 (not yet on these pages). The ASV has &lsquo;thou art my lamp&rsquo;, the NIV &lsquo;the Lord turns my darkness into light&rsquo;, the NWT 1984 &lsquo;you are my lamp&rsquo; and the Douay &lsquo;thou art my lamp&rsquo;. See also <em><a href="dictionary.html#ner-tamid">ner tamid</a></em>.',
+    ("2 Samuel", 21, 17)))
+DICTIONARY_ES["ner"] = ("ner",
+    'UNA LÁMPARA. <a href="2-samuel-21.es.html#v21-17">2 Samuel 21:17</a> (ya en estas páginas) hace que los hombres de David juren que no «apagará la lámpara de Israel», <em>ner Yisra’el</em>, y en el cántico de David Jehová es su lámpara: <em>attah niri</em>, «tú eres mi lámpara» (<a href="2-samuel-22.es.html#v22-29">2 Samuel 22:29</a>, ya en estas páginas). El hebreo escribe las dos distinto: <em>ner</em> en 21:17, y con una yod, <em>niri</em>, en 22:29, donde <span data-heb="נירי">la grafía <em>niri</em> está en un solo versículo</span>; el Salmo 18:28 tiene <em>neri</em>, «tú enciendes mi lámpara». La palabra con la yod, <em>nir</em>, es la grafía de la lámpara que Jehová promete a David en 1 Reyes 11:36 (todavía no en estas páginas). La RV 1909 tiene «tú eres mi lámpara», la NVI «tú, Señor, iluminas mis tinieblas» y la TNM 1987 «tú eres mi lámpara». Véase también <em><a href="diccionario.html#ner-tamid">ner tamid</a></em>.')
+
+# ---------- extended dictionary entries ----------
+_dict22_en("tsur", None, None, add=' ⭐ David&rsquo;s song has two words for rock, <em>sela&rsquo;</em> in verse 2 and <em>tsur</em> in verses 3, 32 and 47, with &lsquo;who is a rock besides our God?&rsquo; (<a href="2-samuel-22.html#v22-32">2 Samuel 22:32</a>, now on these pages), Hannah&rsquo;s &lsquo;there is no rock like our God&rsquo; (<a href="1-samuel-2.html#v2-2">1 Samuel 2:2</a>).')
+_dict22_es("tsur", None, None, add=' ⭐ El cántico de David tiene dos palabras para roca, <em>sela’</em> en el versículo 2 y <em>tsur</em> en los versículos 3, 32 y 47, con «¿quién es una roca fuera de nuestro Dios?» (<a href="2-samuel-22.es.html#v22-32">2 Samuel 22:32</a>, ya en estas páginas), el «no hay roca como nuestro Dios» de Ana (<a href="1-samuel-2.es.html#v2-2">1 Samuel 2:2</a>).')
+_dict22_en("sela", None, None, add=' ⭐ &lsquo;Jehovah is my crag&rsquo;, <em>sal&rsquo;i</em>, opens David&rsquo;s song (<a href="2-samuel-22.html#v22-2">2 Samuel 22:2</a>, now on these pages); the crag is also where he went down when Saul sought him (<a href="1-samuel-23.html#v23-25">1 Samuel 23:25</a>).')
+_dict22_es("sela", None, None, add=' ⭐ «Jehová es mi peña», <em>sal’i</em>, abre el cántico de David (<a href="2-samuel-22.es.html#v22-2">2 Samuel 22:2</a>, ya en estas páginas); la peña es también adonde descendió cuando Saúl lo buscaba (<a href="1-samuel-23.es.html#v23-25">1 Samuel 23:25</a>).')
+_dict22_en("metsudah", None, None, add=' ⭐ &lsquo;Jehovah is … my stronghold&rsquo;, <em>metsudati</em>, in <a href="2-samuel-22.html#v22-2">2 Samuel 22:2</a> (now on these pages), with the plural of the word for the places David hid from Saul (<a href="1-samuel-23.html#v23-14">1 Samuel 23:14</a>).')
+_dict22_es("metsudah", None, None, add=' ⭐ «Jehová es … mi baluarte», <em>metsudati</em>, en <a href="2-samuel-22.es.html#v22-2">2 Samuel 22:2</a> (ya en estas páginas), con el plural de la palabra de los lugares donde David se escondió de Saúl (<a href="1-samuel-23.es.html#v23-14">1 Samuel 23:14</a>).')
+_dict22_en("qeren", None, None, add=' ⭐ &lsquo;The horn of my salvation&rsquo; is one of the six titles of Jehovah in <a href="2-samuel-22.html#v22-3">2 Samuel 22:3</a> (now on these pages), after Hannah&rsquo;s horn lifted high (<a href="1-samuel-2.html#v2-1">1 Samuel 2:1</a>).')
+_dict22_es("qeren", None, None, add=' ⭐ «El cuerno de mi salvación» es uno de los seis títulos de Jehová en <a href="2-samuel-22.es.html#v22-3">2 Samuel 22:3</a> (ya en estas páginas), después del cuerno alzado de Ana (<a href="1-samuel-2.es.html#v2-1">1 Samuel 2:1</a>).')
+_dict22_en("beliyaal", None, None, add=' ⭐ <em>Nachalei beliyaal</em>, &lsquo;torrents of worthlessness&rsquo;, is one of the dangers David names in his song (<a href="2-samuel-22.html#v22-5">2 Samuel 22:5</a>, now on these pages), the ASV having &lsquo;the floods of ungodliness&rsquo;, the NWT 1984 &lsquo;good-for-nothing [men]&rsquo; and the Douay &lsquo;Belial&rsquo;.')
+_dict22_es("beliyaal", None, None, add=' ⭐ <em>Nachalei beliyaal</em>, «torrentes de la nada», es uno de los peligros que David nombra en su cántico (<a href="2-samuel-22.es.html#v22-5">2 Samuel 22:5</a>, ya en estas páginas), con «arroyos de iniquidad» en la RV 1909 y «[hombres] que no servían para nada» en la TNM 1987.')
+_dict22_en("sheol", None, None, add=' ⭐ &lsquo;The cords of Sheol went around me&rsquo;, <em>chevlei She&rsquo;ol</em>, in David&rsquo;s song (<a href="2-samuel-22.html#v22-6">2 Samuel 22:6</a>, now on these pages), with &lsquo;the snares of death&rsquo;.')
+_dict22_es("sheol", None, None, add=' ⭐ «Las cuerdas del Seol me rodearon», <em>chevlei She’ol</em>, en el cántico de David (<a href="2-samuel-22.es.html#v22-6">2 Samuel 22:6</a>, ya en estas páginas), con «los lazos de la muerte».')
+_dict22_en("ruach", None, None, add=' ⭐ Jehovah &lsquo;was seen on the wings of the wind&rsquo;, <em>canfei ruach</em>, in <a href="2-samuel-22.html#v22-11">2 Samuel 22:11</a> (now on these pages); the NWT 1984 has &lsquo;the wings of a spirit&rsquo;.')
+_dict22_es("ruach", None, None, add=' ⭐ Jehová «fue visto sobre las alas del viento», <em>canfei ruach</em>, en <a href="2-samuel-22.es.html#v22-11">2 Samuel 22:11</a> (ya en estas páginas); la TNM 1987 tiene «las alas de un espíritu».')
+_dict22_en("tevel", None, None, add=' ⭐ &lsquo;The foundations of the world were laid bare, at the rebuke of Jehovah&rsquo; (<a href="2-samuel-22.html#v22-16">2 Samuel 22:16</a>, now on these pages).')
+_dict22_es("tevel", None, None, add=' ⭐ «Los cimientos del mundo quedaron al descubierto, a la reprensión de Jehová» (<a href="2-samuel-22.es.html#v22-16">2 Samuel 22:16</a>, ya en estas páginas).')
+_dict22_en("chasid", None, None, add=' ⭐ &lsquo;With the loyal you show yourself loyal&rsquo; (<a href="2-samuel-22.html#v22-26">2 Samuel 22:26</a>, now on these pages); the ASV has &lsquo;the merciful&rsquo;, the NIV &lsquo;the faithful&rsquo; and the NWT 1984 &lsquo;someone loyal&rsquo;.')
+_dict22_es("chasid", None, None, add=' ⭐ «Con el leal te muestras leal» (<a href="2-samuel-22.es.html#v22-26">2 Samuel 22:26</a>, ya en estas páginas); la RV 1909 tiene «el bueno», la NVI «quien es fiel» y la TNM 1987 «alguien leal».')
+_dict22_en("gibbor", None, None, add=' ⭐ &lsquo;With the blameless hero you show yourself blameless&rsquo;, <em>gibbor tamim</em>, in <a href="2-samuel-22.html#v22-26">2 Samuel 22:26</a> (now on these pages), where Psalm 18:26 has <em>gever tamim</em>, &lsquo;a blameless man&rsquo;.')
+_dict22_es("gibbor", None, None, add=' ⭐ «Con el héroe íntegro te muestras íntegro», <em>gibbor tamim</em>, en <a href="2-samuel-22.es.html#v22-26">2 Samuel 22:26</a> (ya en estas páginas), donde el Salmo 18:26 tiene <em>gever tamim</em>, «un hombre íntegro».')
+_dict22_en("tamim", None, None, add=' ⭐ <em>Tamim</em> is the poem&rsquo;s word for the blameless in <a href="2-samuel-22.html#v22-24">2 Samuel 22:24, 26, 31, 33</a> (now on these pages): David &lsquo;blameless toward him&rsquo;, the blameless hero, God&rsquo;s way blameless, and David&rsquo;s way made blameless.')
+_dict22_es("tamim", None, None, add=' ⭐ <em>Tamim</em> es la palabra del poema para lo íntegro en <a href="2-samuel-22.es.html#v22-24">2 Samuel 22:24, 26, 31, 33</a> (ya en estas páginas): David «íntegro para con él», el héroe íntegro, el camino de Dios íntegro, y el camino de David hecho íntegro.')
+_dict22_en("chamas", None, None, add=' ⭐ In David&rsquo;s song Jehovah is &lsquo;my savior &mdash; from violence you save me&rsquo; (<a href="2-samuel-22.html#v22-3">2 Samuel 22:3</a>, now on these pages), and at the end &lsquo;from the man of violences you deliver me&rsquo;, <em>ish chamasim</em> (22:49); Psalm 18:3 does not have the first, and Psalm 18:49 has the singular.')
+_dict22_es("chamas", None, None, add=' ⭐ En el cántico de David Jehová es «mi salvador — de la violencia me salvas» (<a href="2-samuel-22.es.html#v22-3">2 Samuel 22:3</a>, ya en estas páginas), y al final «del hombre de violencias me libras», <em>ish chamasim</em> (22:49); el Salmo 18:3 no tiene lo primero, y el Salmo 18:49 tiene el singular.')
+_dict22_en("kachash", None, None, add=' ⭐ <em>Yitkachashu li</em>, &lsquo;the sons of the stranger cringe to me&rsquo;, in <a href="2-samuel-22.html#v22-45">2 Samuel 22:45</a> (now on these pages), is the reflexive of the verb &lsquo;to lie&rsquo;; the ASV has &lsquo;shall submit themselves&rsquo;, the NIV &lsquo;cower&rsquo; and the NWT 1984 &lsquo;come cringing&rsquo;.')
+_dict22_es("kachash", None, None, add=' ⭐ <em>Yitkachashu li</em>, «los hijos del extranjero se encogen ante mí», en <a href="2-samuel-22.es.html#v22-45">2 Samuel 22:45</a> (ya en estas páginas), es el reflexivo del verbo «mentir»; la RV 1909 tiene «titubeaban», la NVI «me rinden homenaje» y la TNM 1987 «encogidos de temor».')
+_dict22_en("chesed", None, None, add=' ⭐ &lsquo;He does kindness to his anointed, to David and to his seed, forever&rsquo; closes David&rsquo;s song (<a href="2-samuel-22.html#v22-51">2 Samuel 22:51</a>, now on these pages).')
+_dict22_es("chesed", None, None, add=' ⭐ «Hace bondad a su ungido, a David y a su descendencia, para siempre» cierra el cántico de David (<a href="2-samuel-22.es.html#v22-51">2 Samuel 22:51</a>, ya en estas páginas).')
+_dict22_en("mashiach", None, None, add=' ⭐ &lsquo;His king … his anointed&rsquo; ends both Hannah&rsquo;s song (<a href="1-samuel-2.html#v2-10">1 Samuel 2:10</a>) and David&rsquo;s (<a href="2-samuel-22.html#v22-51">2 Samuel 22:51</a>, now on these pages).')
+_dict22_es("mashiach", None, None, add=' ⭐ «Su rey … su ungido» termina tanto el cántico de Ana (<a href="1-samuel-2.es.html#v2-10">1 Samuel 2:10</a>) como el de David (<a href="2-samuel-22.es.html#v22-51">2 Samuel 22:51</a>, ya en estas páginas).')
+_dict22_en("elyon", None, None, add=' ⭐ &lsquo;The Most High gave his voice&rsquo; in the thunder of David&rsquo;s song (<a href="2-samuel-22.html#v22-14">2 Samuel 22:14</a>, now on these pages).')
+_dict22_es("elyon", None, None, add=' ⭐ «El Altísimo dio su voz» en el trueno del cántico de David (<a href="2-samuel-22.es.html#v22-14">2 Samuel 22:14</a>, ya en estas páginas).')
+_dict22_en("tsidqah", None, None, add=' ⭐ &lsquo;Jehovah rewarded me according to my righteousness&rsquo; (<a href="2-samuel-22.html#v22-21">2 Samuel 22:21, 25</a>, now on these pages), said in the first person by the king of chapters 11 and 12.')
+_dict22_es("tsidqah", None, None, add=' ⭐ «Jehová me recompensó conforme a mi justicia» (<a href="2-samuel-22.es.html#v22-21">2 Samuel 22:21, 25</a>, ya en estas páginas), dicho en primera persona por el rey de los capítulos 11 y 12.')
+
+# flips of old 'not yet' claims about this chapter
+_dict22_en("oref", "(2 Samuel 22:41; Psalm 18:41, neither yet on these pages)", '(<a href="2-samuel-22.html#v22-41">2 Samuel 22:41</a>, now on these pages; Psalm 18:41, not yet on these pages)')
+_dict22_es("oref", "(2 Samuel 22:41; Salmo 18:41, ninguno todavía en estas páginas)", '(<a href="2-samuel-22.es.html#v22-41">2 Samuel 22:41</a>, ya en estas páginas; Salmo 18:41, todavía no en estas páginas)')
+_dict22_en("hamam", "(2 Samuel 22:15, where it is the written form, and Psalm 18:15; neither yet on these pages)", '(<a href="2-samuel-22.html#v22-15">2 Samuel 22:15</a>, now on these pages, where it is the written form, and Psalm 18:15, not yet on these pages)')
+_dict22_es("hamam", "(2 Samuel 22:15, donde es la forma escrita, y Salmo 18:15; ninguno de los dos todavía en estas páginas)", '(<a href="2-samuel-22.es.html#v22-15">2 Samuel 22:15</a>, ya en estas páginas, donde es la forma escrita, y Salmo 18:15, todavía no en estas páginas)')
+_dict22_en("raam", "(2 Samuel 22:14), &ldquo;in the heavens&rdquo; in its twin (Psalm 18:14; neither yet on these pages)", '(<a href="2-samuel-22.html#v22-14">2 Samuel 22:14</a>, now on these pages), &ldquo;in the heavens&rdquo; in its twin (Psalm 18:14, not yet on these pages)')
+_dict22_es("raam", "(2 Samuel 22:14), «en los cielos» en su gemelo (Salmo 18:14; ninguno todavía en estas páginas)", '(<a href="2-samuel-22.es.html#v22-14">2 Samuel 22:14</a>, ya en estas páginas), «en los cielos» en su gemelo (Salmo 18:14, todavía no en estas páginas)')
+
+# ---------- encyclopedia ----------
+_ency22_en("hannah", None, None, add=' ⭐ Her song&rsquo;s last words, &lsquo;his king &hellip; his anointed&rsquo; (<a href="1-samuel-2.html#v2-10">1 Samuel 2:10</a>), are the last words of David&rsquo;s song too (<a href="2-samuel-22.html#v22-51">2 Samuel 22:51</a>, now on these pages), and its thunder, its horn and its &lsquo;no rock like our God&rsquo; come back in it (22:3, 14, 32).')
+_ency22_es("hannah", None, None, add=' ⭐ Las últimas palabras de su cántico, «su rey … su ungido» (<a href="1-samuel-2.es.html#v2-10">1 Samuel 2:10</a>), son también las últimas palabras del cántico de David (<a href="2-samuel-22.es.html#v22-51">2 Samuel 22:51</a>, ya en estas páginas), y su trueno, su cuerno y su «no hay roca como nuestro Dios» vuelven en él (22:3, 14, 32).')
+_ency22_en("david", None, None, add=' ⭐ In <a href="2-samuel-22.html#v22-1">2 Samuel 22</a> (now on these pages) he speaks to Jehovah the words of a song &lsquo;in the day that Jehovah delivered him from the palm of all his enemies, and from the palm of Saul&rsquo;; Psalm 18 has the same song with another heading.')
+_ency22_es("david", None, None, add=' ⭐ En <a href="2-samuel-22.es.html#v22-1">2 Samuel 22</a> (ya en estas páginas) dice a Jehová las palabras de un cántico «en el día en que Jehová lo libró de la palma de todos sus enemigos, y de la palma de Saúl»; el Salmo 18 tiene el mismo cántico con otro encabezado.')
+
+CHRON_CHAPTERS["2sam22"] = dict(era="monarchy",
+    when="David speaks to Jehovah the words of a song in the day Jehovah delivered him from the palm of all his enemies and from the palm of Saul. Jehovah is his crag, stronghold, rock, shield, horn of salvation and high tower; the breakers of death, the torrents of worthlessness, the cords of Sheol and the snares of death surrounded him, and from his temple Jehovah heard his cry. The earth shakes and the foundations of the heavens tremble; smoke, fire and coals come from his nostrils and mouth; he rides a cherub on the wings of the wind, thunders from heaven, scatters his enemies with arrows and lightning, and lays bare the channels of the sea. He draws David out of many waters and brings him to a broad place because he delighted in him; David speaks of his righteousness and the cleanness of his hands. Jehovah is loyal with the loyal and twisted with the crooked, saves the afflicted and brings down the haughty, and is David’s lamp; by him David runs at a troop and leaps a wall. He trains David’s hands for war, gives him the shield of his salvation, and David pursues his enemies and finishes them; they cry and are not answered. He is delivered from the contentions of his people and kept as head of nations, and the sons of the stranger cringe. Jehovah lives; David gives thanks among the nations, and the song ends on a tower of salvation for his king, his anointed, David and his seed, forever.",
+    clock="After the wars of the last chapter, in David’s old age: a long song looking back over the years of his flight from Saul and his wars.")
+
+CHAPTER_ART["2sam22"] = [dict(
+    file="rijksmuseum-davids-lofzang.jpg",
+    title="David’s Song", title_es="El cántico de David",
+    artist="Christoffel van Sichem II and III",
+    year="1645–1646",
+    location="Woodcut, Rijksmuseum, Amsterdam (RP-P-2015-17-119-1)", location_es="Xilografía, Rijksmuseum, Ámsterdam (RP-P-2015-17-119-1)",
+    alt="A black-and-white woodcut of a bearded, crowned man in a long robe and cape, standing in a stone hall of round arches and columns. He holds a large harp against his body with his left arm and touches its strings with his right hand. At the lower left, two helmeted men look out from behind a balustrade, and one of them holds a tall spear.",
+    note="2 Samuel 22:1. The title is the museum’s, and its catalogue says David plays his harp and sings a song of thanks for being delivered from his enemies. The verse says that David “spoke” the words of the song, <em>vayedabber</em>, and says nothing of a harp or a hall; the two soldiers behind the rail are the printmakers’. None of the song’s own pictures, the crag, the waters, the thunder, is in the print.",
+    note_es="2 Samuel 22:1. El título es el del museo, y su catálogo dice que David toca su arpa y canta un canto de gracias por haber sido librado de sus enemigos. El versículo dice que David «habló» las palabras del cántico, <em>vayedabber</em>, y no dice nada de un arpa ni de una sala; los dos soldados tras la baranda son de los grabadores. Ninguna de las imágenes propias del cántico, la peña, las aguas, el trueno, está en el grabado.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Davids_lofzang,_RP-P-2015-17-119-1.jpg",
+)]
