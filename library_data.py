@@ -53770,3 +53770,139 @@ CHAPTER_ART["2sam17"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Bible_Etienne_Harding_14_13_Absalom_entre_Ahitophel_et_Husha%C3%AF.jpg",
 )]
+
+
+# --- 2 Samuel 18 ---
+def _swap18(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D18 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict18_en(slug, old=None, new=None, add=None):
+    _i = _D18[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap18(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict18_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap18(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency18_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap18(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency18_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap18(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("besorah", "besorah", "בְּשׂוֹרָה", "besorah",
+    'TIDINGS, NEWS &mdash; the noun beside the verb <em>basar</em>, to bring news, and the herald <em><a href="dictionary.html#mevasser">mevasser</a></em>. It can also be the reward given for tidings. ⭐ In <a href="2-samuel-4.html#v4-10">2 Samuel 4:10</a> (now on these pages) it is what David says he should have given the man who thought he was &lsquo;a bringer of good news&rsquo;; in <a href="2-samuel-18.html#v18-22">2 Samuel 18:22</a> (now on these pages) Joab asks Ahimaaz why he runs &lsquo;when there is no tidings to be found&rsquo;, and the ASV and the NIV read the word as the reward. <span data-heb="בשורה">The form <em>besorah</em>, spelled with the vav, stands in three verses</span>, 18:22, 25 and 27, all in that chapter: the king says of the lone runner &lsquo;there are tidings in his mouth&rsquo; and of Ahimaaz &lsquo;he comes with good tidings&rsquo;.',
+    ("2 Samuel", 4, 10)))
+DICTIONARY_ES["besorah"] = ("besorá",
+    'NOTICIA, NUEVAS &mdash; el sustantivo junto al verbo <em>basar</em>, traer noticias, y el heraldo <em><a href="diccionario.html#mevasser">mevasser</a></em>. También puede ser el pago que se da por una noticia. ⭐ En <a href="2-samuel-4.es.html#v4-10">2 Samuel 4:10</a> (ya en estas páginas) es lo que David dice que debía haber dado al hombre que se creía «portador de buenas noticias»; en <a href="2-samuel-18.es.html#v18-22">2 Samuel 18:22</a> (ya en estas páginas) Joab pregunta a Ahimaas por qué corre «si no hay noticia que se halle», y la RV 1909 y la NVI leen la palabra como el pago. <span data-heb="בשורה">La forma <em>besorah</em>, escrita con vav, está en tres versículos</span>, 18:22, 25 y 27, todos en ese capítulo: el rey dice del corredor solitario «hay noticias en su boca» y de Ahimaas «viene con buenas noticias».')
+
+DICTIONARY.append(("yad", "yad", "יָד", "yad",
+    'HAND &mdash; and the side of a thing, power, and a monument. ⭐ It is the word that the chapter of Absalom&rsquo;s death runs on. The thirds of the army are &lsquo;under the hand&rsquo; of their commanders and the king stands &lsquo;by the side&rsquo;, <em>yad</em>, of the gate (<a href="2-samuel-18.html#v18-2">2 Samuel 18:2, 4</a>); the soldier will not &lsquo;send my hand against the king&rsquo;s son&rsquo; (18:12); Ahimaaz blesses Jehovah for the men who &lsquo;lifted their hand&rsquo; (18:28); and the pillar Absalom set up for himself is <em>yad Avshalom</em>, &lsquo;Absalom&rsquo;s hand&rsquo; (<a href="2-samuel-18.html#v18-18">18:18</a>, all now on these pages). Saul at Carmel is &lsquo;setting up a monument for himself&rsquo;, in the Hebrew &lsquo;setting up a hand&rsquo; (<a href="1-samuel-15.html#v15-12">1 Samuel 15:12</a>), and Shimei says Jehovah has given the kingdom &lsquo;into the hand of Absalom&rsquo; (<a href="2-samuel-16.html#v16-8">2 Samuel 16:8</a>, both now on these pages). <span data-heb="מציב לו יד">&lsquo;Setting up for himself a hand&rsquo; stands only in 1 Samuel 15:12</span>.',
+    ("1 Samuel", 15, 12)))
+DICTIONARY_ES["yad"] = ("yad",
+    'MANO &mdash; y el lado de una cosa, el poder, y un monumento. ⭐ Es la palabra sobre la que corre el capítulo de la muerte de Absalón. Los tercios del ejército están «bajo la mano» de sus jefes y el rey se pone al lado, <em>yad</em>, de la puerta (<a href="2-samuel-18.es.html#v18-2">2 Samuel 18:2, 4</a>); el soldado no «extendería mi mano contra el hijo del rey» (18:12); Ahimaas bendice a Jehová por los hombres que «alzaron la mano» (18:28); y la columna que Absalón levantó para sí es <em>yad Avshalom</em>, «la mano de Absalón» (<a href="2-samuel-18.es.html#v18-18">18:18</a>, todos ya en estas páginas). Saúl en Carmel «se está levantando un monumento», en el hebreo «levantando una mano» (<a href="1-samuel-15.es.html#v15-12">1 Samuel 15:12</a>), y Simei dice que Jehová ha dado el reino «en mano de Absalón» (<a href="2-samuel-16.es.html#v16-8">2 Samuel 16:8</a>, los dos ya en estas páginas). <span data-heb="מציב לו יד">«Levantando para sí una mano» está solo en 1 Samuel 15:12</span>.')
+
+# ---------- extended dictionary entries ----------
+_dict18_en("elah", None, None, add=' ⭐ Absalom&rsquo;s mule runs under &lsquo;the great terebinth&rsquo;, his head is caught fast in it, and Joab drives the rods into &lsquo;the heart of the terebinth&rsquo; (<a href="2-samuel-18.html#v18-9">2 Samuel 18:9, 14</a>, now on these pages); the ASV and the Douay read it as an &lsquo;oak&rsquo; and the NWT 1984 as a &lsquo;big tree&rsquo;.')
+_dict18_es("elah", None, None, add=' ⭐ La mula de Absalón se mete bajo «el gran terebinto», su cabeza queda atrapada en él, y Joab clava las varas en «el corazón del terebinto» (<a href="2-samuel-18.es.html#v18-9">2 Samuel 18:9, 14</a>, ya en estas páginas); la RV 1909 lo lee como «alcornoque», la NVI como «encina» y la TNM 1987 como «árbol grande».')
+_dict18_en("shevet", None, None, add=' ⭐ Joab takes &lsquo;three rods&rsquo; in his hand and thrusts them into Absalom&rsquo;s heart (<a href="2-samuel-18.html#v18-14">2 Samuel 18:14</a>, now on these pages); the Hebrew does not say what the weapon was, and the ASV has &lsquo;darts&rsquo;, the NIV &lsquo;javelins&rsquo;, the TLB &lsquo;daggers&rsquo;, the Douay &lsquo;lances&rsquo; and the NWT 1984 &lsquo;shafts&rsquo;.')
+_dict18_es("shevet", None, None, add=' ⭐ Joab toma «tres varas» en su mano y las clava en el corazón de Absalón (<a href="2-samuel-18.es.html#v18-14">2 Samuel 18:14</a>, ya en estas páginas); el hebreo no dice cuál era el arma, y la RV 1909 tiene «dardos», la NVI «lanzas» y la TNM 1987 «dardos».')
+_dict18_en("naar", None, None, add=' ⭐ It is the king&rsquo;s word for Absalom on the day of his death: &lsquo;Gently for me, for the young man, for Absalom&rsquo; (<a href="2-samuel-18.html#v18-5">2 Samuel 18:5</a>, now on these pages), and again in his two questions (18:29, 32), while Joab and the soldier say &lsquo;the king&rsquo;s son&rsquo; (18:12, 20). Absalom has three sons and a daughter (<a href="2-samuel-14.html#v14-27">14:27</a>), so the word is a rank and not an age.')
+_dict18_es("naar", None, None, add=' ⭐ Es la palabra del rey para Absalón el día de su muerte: «Con suavidad por mí, con el joven, con Absalón» (<a href="2-samuel-18.es.html#v18-5">2 Samuel 18:5</a>, ya en estas páginas), y otra vez en sus dos preguntas (18:29, 32), mientras que Joab y el soldado dicen «el hijo del rey» (18:12, 20). Absalón tiene tres hijos y una hija (<a href="2-samuel-14.es.html#v14-27">14:27</a>), así que la palabra es un rango y no una edad.')
+_dict18_en("kikkar", None, None, add=' ⭐ In <a href="2-samuel-18.html#v18-23">2 Samuel 18:23</a> (now on these pages) Ahimaaz runs &lsquo;by the way of the plain&rsquo; and passes the Cushite; <span data-heb="דרך הככר">the phrase <em>derekh hakkikkar</em> stands only there</span>.')
+_dict18_es("kikkar", None, None, add=' ⭐ En <a href="2-samuel-18.es.html#v18-23">2 Samuel 18:23</a> (ya en estas páginas) Ahimaas corre «por el camino de la llanura» y pasa al cusita; <span data-heb="דרך הככר">la frase <em>derekh hakkikkar</em> está solo ahí</span>.')
+_dict18_en("shalom", None, None, add=' ⭐ In <a href="2-samuel-18.html#v18-28">2 Samuel 18:28&ndash;32</a> (now on these pages) Ahimaaz arrives crying &lsquo;Peace!&rsquo;, and the king asks twice &lsquo;Is it peace for the young man, for Absalom?&rsquo;; <span data-heb="שלום לנער">the words <em>shalom lanna&lsquo;ar</em> stand in two verses</span>, 29 and 32.')
+_dict18_es("shalom", None, None, add=' ⭐ En <a href="2-samuel-18.es.html#v18-28">2 Samuel 18:28–32</a> (ya en estas páginas) Ahimaas llega gritando «¡Paz!», y el rey pregunta dos veces «¿Hay paz para el joven, para Absalón?»; <span data-heb="שלום לנער">las palabras <em>shalom lanna‘ar</em> están en dos versículos</span>, 29 y 32.')
+_dict18_en("sagar", None, None, add=' ⭐ Ahimaaz blesses Jehovah &lsquo;who has shut up the men who lifted their hand against my lord the king&rsquo; (<a href="2-samuel-18.html#v18-28">2 Samuel 18:28</a>, now on these pages); the Douay keeps &lsquo;shut up&rsquo;, and the ASV, NIV and NWT 1984 have &lsquo;delivered up&rsquo; and &lsquo;surrendered&rsquo;.')
+_dict18_es("sagar", None, None, add=' ⭐ Ahimaas bendice a Jehová «que ha encerrado a los hombres que alzaron su mano contra mi señor el rey» (<a href="2-samuel-18.es.html#v18-28">2 Samuel 18:28</a>, ya en estas páginas); la RV 1909, la NVI y la TNM 1987 tienen «ha entregado».')
+_dict18_en("mevasser", "(the runner who brings word of a victory, 2 Samuel 18:19-27)", '(the runner who brings word of a victory, <a href="2-samuel-18.html#v18-19">2 Samuel 18:19-27</a>, now on these pages; see <em><a href="dictionary.html#besorah">besorah</a></em>)')
+_dict18_es("mevasser", "(el corredor que trae la noticia de una victoria, 2 Samuel 18:19-27)", '(el corredor que trae la noticia de una victoria, <a href="2-samuel-18.es.html#v18-19">2 Samuel 18:19-27</a>, ya en estas páginas; véase <em><a href="diccionario.html#besorah">besorah</a></em>)')
+_dict18_en("talah", "2 Samuel 18:10 (not yet on these pages), Absalom caught by his head in a terebinth;", '<a href="2-samuel-18.html#v18-10">2 Samuel 18:10</a> (now on these pages), Absalom caught by his head in a terebinth;')
+_dict18_es("talah", "2 Samuel 18:10 (todav&iacute;a no en estas p&aacute;ginas), Absal&oacute;n atrapado por la cabeza en una encina;", '<a href="2-samuel-18.es.html#v18-10">2 Samuel 18:10</a> (ya en estas p&aacute;ginas), Absal&oacute;n atrapado por la cabeza en un terebinto;')
+_dict18_en("tala", "Absalom hangs in the oak (2 Samuel 18:10)", 'Absalom hangs in the terebinth (<a href="2-samuel-18.html#v18-10">2 Samuel 18:10</a>, now on these pages)')
+_dict18_es("tala", "Absalón cuelga de la encina (2 Samuel 18:10)", 'Absalón cuelga del terebinto (<a href="2-samuel-18.es.html#v18-10">2 Samuel 18:10</a>, ya en estas páginas)')
+_dict18_en("gal", "(2 Samuel 18:17; neither yet on these pages)", '(<a href="2-samuel-18.html#v18-17">2 Samuel 18:17</a>, now on these pages)')
+_dict18_es("gal", "(2 Samuel 18:17; ninguno todavía en estas páginas)", '(<a href="2-samuel-18.es.html#v18-17">2 Samuel 18:17</a>, ya en estas páginas)')
+
+# ---------- new encyclopedia entries ----------
+ENCYCLOPEDIA.append(dict(slug="forest-of-ephraim", name="The forest of Ephraim", kind="place", aliases=["the forest of Ephraim"],
+    coords=(32.2, 35.7, 1.2), approx=True, refs=[("2 Samuel", 18, 6)], videos=[],
+    desc='The forest where David&rsquo;s army beats Absalom&rsquo;s: twenty thousand fall, and &lsquo;the forest devoured more of the people than the sword devoured&rsquo; (<a href="2-samuel-18.html#v18-6">2 Samuel 18:6&ndash;8</a>, now on these pages). Absalom is caught by his head in a terebinth in it, killed, and thrown into a pit under a great heap of stones (18:9&ndash;17). The page does not say where it was, and why a forest east of the Jordan, where Absalom&rsquo;s army had camped in Gilead (<a href="2-samuel-17.html#v17-26">17:26</a>), carries the name of <a href="encyclopedia.html#ephraim">Ephraim</a> is not explained; the point on the map is a guess.'))
+ENCYCLOPEDIA_ES["forest-of-ephraim"] = ("El bosque de Efraín",
+    'El bosque donde el ejército de David vence al de Absalón: caen veinte mil, y «el bosque devoró más del pueblo que lo que devoró la espada» (<a href="2-samuel-18.es.html#v18-6">2 Samuel 18:6–8</a>, ya en estas páginas). Absalón queda atrapado por la cabeza en un terebinto en él, es muerto, y lo echan en una fosa bajo un gran montón de piedras (18:9–17). La página no dice dónde estaba, ni explica por qué un bosque al este del Jordán, donde el ejército de Absalón había acampado en Galaad (<a href="2-samuel-17.es.html#v17-26">17:26</a>), lleva el nombre de <a href="enciclopedia.html#ephraim">Efraín</a>; el punto del mapa es una conjetura.')
+
+ENCYCLOPEDIA.append(dict(slug="kings-valley", name="The King’s Valley", kind="place", aliases=["the King’s Valley", "the king’s valley"],
+    coords=(31.78, 35.24, 3.0), approx=True, refs=[("2 Samuel", 18, 18)], videos=[],
+    desc='The valley where the king of Sodom goes out to meet Abram at &lsquo;the Valley of Shaveh (that is, the King&rsquo;s Valley)&rsquo; (<a href="genesis-14.html#v14-17">Genesis 14:17</a>, now on these pages), and where Absalom set up for himself in his lifetime the pillar called Absalom&rsquo;s hand, because he had no son to keep his name (<a href="2-samuel-18.html#v18-18">2 Samuel 18:18</a>, now on these pages). <span data-heb="עמק המלך">&lsquo;The king&rsquo;s valley&rsquo; stands in these two verses only</span>. Neither says where it was; the point on the map, near Jerusalem, is a guess.'))
+ENCYCLOPEDIA_ES["kings-valley"] = ("El Valle del Rey",
+    'El valle donde el rey de Sodoma sale al encuentro de Abram en «el valle de Save (es decir, el Valle del Rey)» (Génesis 14:17, ya en estas páginas, todavía no en español), y donde Absalón levantó para sí en vida la columna llamada la mano de Absalón, porque no tenía hijo que conservara su nombre (<a href="2-samuel-18.es.html#v18-18">2 Samuel 18:18</a>, ya en estas páginas). <span data-heb="עמק המלך">«El valle del rey» está solo en estos dos versículos</span>. Ninguno dice dónde estaba; el punto del mapa, cerca de Jerusalén, es una conjetura.')
+
+ENCYCLOPEDIA.append(dict(slug="the-cushite-runner", name="The Cushite", kind="person", aliases=["the Cushite"],
+    refs=[("2 Samuel", 18, 21), ("2 Samuel", 18, 31)], videos=[],
+    desc='The man whom Joab sends to tell the king what he has seen; he bows to Joab and runs (<a href="2-samuel-18.html#v18-21">2 Samuel 18:21&ndash;32</a>, now on these pages). He has no name: the Hebrew is <em>hakkushi</em>, &lsquo;the Cushite&rsquo;, with the article, a man from <a href="encyclopedia.html#cush">Cush</a>. <a href="encyclopedia.html#ahimaaz-son-of-zadok">Ahimaaz</a> passes him on the way of the plain and reaches the king first, but the Cushite is the one who answers the king&rsquo;s question about the young man: &lsquo;May the enemies of my lord the king ... be as the young man.&rsquo; Rahlfs&rsquo; Greek writes his name as it writes Hushai&rsquo;s, <em>Chousi</em>.'))
+ENCYCLOPEDIA_ES["the-cushite-runner"] = ("El cusita",
+    'El hombre a quien Joab envía a decir al rey lo que ha visto; se postra ante Joab y corre (<a href="2-samuel-18.es.html#v18-21">2 Samuel 18:21–32</a>, ya en estas páginas). No tiene nombre: el hebreo es <em>hakkushi</em>, «el cusita», con artículo, un hombre de <a href="enciclopedia.html#cush">Cus</a>. <a href="enciclopedia.html#ahimaaz-son-of-zadok">Ahimaas</a> lo pasa por el camino de la llanura y llega primero al rey, pero el cusita es quien responde a la pregunta del rey sobre el joven: «Sean como el joven los enemigos de mi señor el rey ...». El griego de Rahlfs escribe su nombre como el de Husai, <em>Chousi</em>.')
+
+# ---------- extended encyclopedia entries ----------
+_ency18_en("absalom", "2 Samuel 18 is not yet on these pages.",
+    'in <a href="2-samuel-18.html#v18-5">2 Samuel 18</a> (now on these pages) David charges Joab, Abishai and Ittai to deal gently with him; he is caught by his head in a terebinth in the forest of Ephraim, Joab thrusts three rods into his heart, ten of Joab&rsquo;s young men strike him dead, and he is thrown into a pit under a great heap of stones; the pillar he set up for himself in his lifetime is called Absalom&rsquo;s hand (<a href="2-samuel-18.html#v18-9">18:9&ndash;18</a>); 2 Samuel 19 is not yet on these pages.')
+_ency18_es("absalom", "2 Samuel 18 todav&iacute;a no est&aacute; en estas p&aacute;ginas.",
+    'en <a href="2-samuel-18.es.html#v18-5">2 Samuel 18</a> (ya en estas p&aacute;ginas) David encarga a Joab, Abisai e Itai que lo traten con suavidad; queda atrapado por la cabeza en un terebinto en el bosque de Efra&iacute;n, Joab le clava tres varas en el coraz&oacute;n, diez j&oacute;venes de Joab lo hieren y lo matan, y lo echan en una fosa bajo un gran mont&oacute;n de piedras; la columna que levant&oacute; para s&iacute; en vida se llama la mano de Absal&oacute;n (<a href="2-samuel-18.es.html#v18-9">18:9–18</a>); 2 Samuel 19 todav&iacute;a no est&aacute; en estas p&aacute;ginas.')
+_ency18_en("joab", None, None, add=' ⭐ In <a href="2-samuel-18.html#v18-2">2 Samuel 18</a> (now on these pages) he commands a third of the army and hears the king&rsquo;s charge to deal gently with Absalom; he refuses the soldier&rsquo;s plea, thrusts three rods into Absalom&rsquo;s heart while he is still alive in the terebinth, and ten of his armor-bearers finish him; he blows the horn to stop the pursuit and sends the Cushite, then lets Ahimaaz run (18:2, 5, 10&ndash;16, 19&ndash;23).')
+_ency18_es("joab", None, None, add=' ⭐ En <a href="2-samuel-18.es.html#v18-2">2 Samuel 18</a> (ya en estas páginas) manda un tercio del ejército y oye el encargo del rey de tratar con suavidad a Absalón; rechaza el ruego del soldado, clava tres varas en el corazón de Absalón mientras aún está vivo en el terebinto, y diez de sus escuderos lo rematan; toca el cuerno para detener la persecución y envía al cusita, y luego deja correr a Ahimaas (18:2, 5, 10–16, 19–23).')
+_ency18_en("abishai", None, None, add=' ⭐ In <a href="2-samuel-18.html#v18-2">2 Samuel 18:2, 5</a> (now on these pages) he commands a third of the army and hears the king&rsquo;s charge about Absalom.')
+_ency18_es("abishai", None, None, add=' ⭐ En <a href="2-samuel-18.es.html#v18-2">2 Samuel 18:2, 5</a> (ya en estas páginas) manda un tercio del ejército y oye el encargo del rey sobre Absalón.')
+_ency18_en("ittai-the-gittite", "puts him over a third of David&rsquo;s army.", 'puts him over a third of David&rsquo;s army, and he hears the king&rsquo;s charge about Absalom (<a href="2-samuel-18.html#v18-2">2 Samuel 18:2, 5</a>, now on these pages).')
+_ency18_es("ittai-the-gittite", "lo pone al frente de un tercio del ejército de David.", 'lo pone al frente de un tercio del ejército de David, y oye el encargo del rey sobre Absalón (<a href="2-samuel-18.es.html#v18-2">2 Samuel 18:2, 5</a>, ya en estas páginas).')
+_ency18_en("ahimaaz-son-of-zadok", "His running with the news of the battle is in 2 Samuel 18:19&ndash;30 (not yet on these pages).",
+    'In <a href="2-samuel-18.html#v18-19">2 Samuel 18:19&ndash;32</a> (now on these pages) he asks to run with the news of the battle, is told by Joab that he is not the man of tidings that day, runs by the way of the plain, passes <a href="encyclopedia.html#the-cushite-runner">the Cushite</a>, reaches the king first, and answers the king&rsquo;s question about Absalom with &lsquo;I did not know what&rsquo;.')
+_ency18_es("ahimaaz-son-of-zadok", "Su carrera con la noticia de la batalla está en 2 Samuel 18:19–30 (todavía no en estas páginas).",
+    'En <a href="2-samuel-18.es.html#v18-19">2 Samuel 18:19–32</a> (ya en estas páginas) pide correr con la noticia de la batalla, Joab le dice que ese día no es el hombre de noticias, corre por el camino de la llanura, pasa al <a href="enciclopedia.html#the-cushite-runner">cusita</a>, llega primero al rey, y responde a la pregunta del rey sobre Absalón con «no supe qué era».')
+_ency18_en("ephraim", None, None, add=' ⭐ The &lsquo;forest of Ephraim&rsquo; where Absalom&rsquo;s army is beaten (<a href="2-samuel-18.html#v18-6">2 Samuel 18:6</a>, now on these pages) is named for the tribe, and the page does not say why a forest east of the Jordan carries the name.')
+_ency18_es("ephraim", None, None, add=' ⭐ El «bosque de Efraín» donde es vencido el ejército de Absalón (<a href="2-samuel-18.es.html#v18-6">2 Samuel 18:6</a>, ya en estas páginas) lleva el nombre de la tribu, y la página no dice por qué un bosque al este del Jordán lleva ese nombre.')
+
+_REFS18 = {
+    "absalom": [("2 Samuel", 18, 5), ("2 Samuel", 18, 9)],
+    "joab": [("2 Samuel", 18, 2)],
+    "abishai": [("2 Samuel", 18, 2)],
+    "ittai-the-gittite": [("2 Samuel", 18, 2)],
+    "ahimaaz-son-of-zadok": [("2 Samuel", 18, 19), ("2 Samuel", 18, 22)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS18:
+        _have = set(_e["refs"])
+        _e["refs"] = list(_e["refs"]) + [_r for _r in _REFS18[_e["slug"]] if _r not in _have]
+
+CHRON_CHAPTERS["2sam18"] = dict(era="monarchy",
+    when="David musters the people who are with him and puts commanders of thousands and of hundreds over them, sending them out in three thirds under Joab, Abishai and Ittai the Gittite; the people will not let him go out with them, and he stands by the gate and charges the three commanders, in the hearing of all, to deal gently for his sake with the young man, Absalom. In the forest of Ephraim Israel is beaten, twenty thousand fall, and the forest devours more than the sword. Absalom, riding his mule, is caught by his head in a great terebinth; a man who saw him will not strike him, but Joab thrusts three rods into his heart and ten of his young men finish him; Joab blows the horn, and Absalom is thrown into a pit under a great heap of stones, and the pillar he set up for himself in the king’s valley is called Absalom’s hand. Ahimaaz asks to run with the news and Joab sends the Cushite instead, but Ahimaaz runs by the way of the plain and reaches David first, who sits between the two gates; he says Peace and does not say what he knows, and the Cushite, asked whether it is peace for the young man, answers that the king’s enemies be as that young man.",
+    clock="The day of the battle in the forest of Ephraim, in the land of Gilead east of the Jordan, with David waiting at the city gate; the news arrives the same day.")
+
+CHAPTER_ART["2sam18"] = [dict(
+    file="dore-death-of-absalom.jpg",
+    title="The Death of Absalom", title_es="La muerte de Absalón",
+    artist="Gustave Doré",
+    year="1866",
+    location="Illustration in Doré’s English Bible (London, 1866)", location_es="Ilustración de la Biblia inglesa de Doré (Londres, 1866)",
+    alt="A dense black-and-white wood engraving of a forest of great gnarled trees with heavy foliage. In the lower left and center, armed horsemen crowd together: at the center an armored rider with a round shield on a rearing white horse raises a bundle of three long spears high over his head, pointing them up toward a great tree trunk; beside him another rider in a white head-cloth and more men with spears and swords press in from the left. At the right, in the dark mass of foliage, a mule’s hind legs are kicking in the air and a smaller animal stands below; the figure caught in the tree is hard to make out in the shadow.",
+    note="2 Samuel 18:1–15. The title is the one Commons gives the plate, with the verses it illustrates. Doré shows Joab with the three spears raised in one hand, which is the Hebrew’s ‘three rods’ in his hand (verse 14), and the mule going on without its rider (verse 9). Where Absalom hangs the engraving is dark and the figure there cannot be made out, so the picture does not decide between a hanging by the head, which is what the Hebrew says, and by the hair, which the NIV and the TLB print.",
+    note_es="2 Samuel 18:1–15. El título es el que Commons da a la lámina, con los versículos que ilustra. Doré muestra a Joab con las tres lanzas levantadas en una mano, que son las «tres varas» del hebreo en su mano (versículo 14), y a la mula que sigue sin su jinete (versículo 9). Donde cuelga Absalón el grabado está oscuro y la figura no se distingue, así que la imagen no decide entre quedar colgado de la cabeza, que es lo que dice el hebreo, y del cabello, que es lo que imprimen la NIV y la TLB en inglés.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:080.The_Death_of_Absalom.jpg",
+)]
