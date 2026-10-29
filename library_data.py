@@ -53262,3 +53262,92 @@ CHAPTER_ART["2sam13"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Desolation_of_Tamar_by_J.Tissot.jpg",
 )]
+# --- 2 Samuel 14 ---
+def _swap14(s, old, new):
+    assert s.count(old) == 1, (old[:60], s.count(old))
+    return s.replace(old, new)
+
+_D14 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict14_en(slug, old=None, new=None, add=None):
+    _i = _D14[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap14(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict14_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap14(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency14_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap14(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency14_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap14(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+DICTIONARY.append(("matsil", "matsil", "מַצִּיל", "matsil",
+    'ONE WHO RESCUES &mdash; the participle of the verb <em>hitstsil</em>, &lsquo;to snatch away, deliver&rsquo;. <span data-heb="ואין מציל">&lsquo;And there is no one to rescue&rsquo; (<em>ve&rsquo;ein matsil</em>) stands in ten verses</span>, and it is said of someone who is caught or about to be: a far-off city taken without anyone to deliver it (<a href="judges-18.html#v18-28">Judges 18:28</a>, already on these pages), a people in the lion&rsquo;s mouth in Isaiah 5:29, Hosea 5:14 and Micah 5:7, and the two sons of the woman of Tekoa, who quarrel in a field with no one &lsquo;to rescue between them&rsquo; (<a href="2-samuel-14.html#v14-6">2 Samuel 14:6</a>, now on these pages). The wife in <a href="deuteronomy-25.html#v25-11">Deuteronomy 25:11</a> (already on these pages) is the verb in action: she &lsquo;comes near to rescue her husband&rsquo;. The <span class="tag t-nwt">NWT</span> has &lsquo;no deliverer to part them&rsquo;; the <span class="tag t-kjv">KJV</span> &lsquo;none to part them&rsquo;.',
+    ("2 Samuel", 14, 6)))
+DICTIONARY_ES["matsil"] = ("matsíl",
+    'EL QUE LIBRA &mdash; el participio del verbo <em>hitstsíl</em>, «arrebatar, librar». <span data-heb="ואין מציל">«Y no hay quien libre» (<em>ve’ein matsíl</em>) está en diez versículos</span>, y se dice de alguien que está atrapado o a punto de estarlo: una ciudad lejana tomada sin quien la librara (<a href="judges-18.es.html#v18-28">Jueces 18:28</a>, ya en estas páginas), un pueblo en la boca del león en Isaías 5:29, Oseas 5:14 y Miqueas 5:7, y los dos hijos de la mujer de Tecoa, que pelean en un campo sin quien libre «entre ellos» (<a href="2-samuel-14.es.html#v14-6">2 Samuel 14:6</a>, ya en estas páginas). La esposa de <a href="deuteronomy-25.es.html#v25-11">Deuteronomio 25:11</a> (ya en estas páginas) es el verbo en acción: «se acerca para librar a su marido». La <span class="tag t-tnm">TNM</span> tiene «sin haber un libertador que los separara»; la <span class="tag t-rv">RV&nbsp;1909</span> «no habiendo quien los despartiese».')
+
+_dict14_en("nadach", None, None, add=' ⭐ In <a href="2-samuel-14.html#v14-13">2 Samuel 14:13&ndash;14</a> (now on these pages) the woman of Tekoa turns the verb on the king and then on God: the king &lsquo;does not bring back his banished one&rsquo; (<em>nidcho</em>), and God &lsquo;devises devices, so that no banished one be banished from him&rsquo; (<em>yiddach&hellip; niddach</em>). Here the person is the one who has been pushed off the road, not the one who does the pushing.')
+_dict14_es("nadach", None, None, add=' ⭐ En <a href="2-samuel-14.es.html#v14-13">2 Samuel 14:13–14</a> (ya en estas páginas) la mujer de Tecoa vuelve el verbo contra el rey y luego sobre Dios: el rey «no hace volver a su desterrado» (<em>nidcho</em>), y Dios «piensa pensamientos para que ningún desterrado sea desterrado de él» (<em>yiddaj&hellip; niddaj</em>). Aquí la persona es la que ha sido empujada fuera del camino, no la que empuja.')
+_dict14_en("chokhmah", None, None, add=' ⭐ <span data-heb="אשה חכמה">&lsquo;A wise woman&rsquo; (<em>ishah chakhamah</em>) stands in two verses</span>: the woman of Tekoa that Joab sends for (<a href="2-samuel-14.html#v14-2">2 Samuel 14:2</a>, now on these pages) and the one who cries out to Joab from the besieged city of Abel (2 Samuel 20:16, not yet on these pages). In the first the wisdom is a skill of speech, and Joab supplies the words.')
+_dict14_es("chokhmah", None, None, add=' ⭐ <span data-heb="אשה חכמה">«Una mujer sabia» (<em>ishá jajamá</em>) está en dos versículos</span>: la mujer de Tecoa a quien Joab manda buscar (<a href="2-samuel-14.es.html#v14-2">2 Samuel 14:2</a>, ya en estas páginas) y la que grita a Joab desde la ciudad sitiada de Abel (2 Samuel 20:16, todavía no en estas páginas). En la primera la sabiduría es una destreza de palabra, y Joab pone las palabras.')
+_dict14_en("goel", "and exactly one narrative, 2 Samuel 14:11, where", 'and exactly one narrative, <a href="2-samuel-14.html#v14-11">2 Samuel 14:11</a> (now on these pages), where')
+
+ENCYCLOPEDIA.append(dict(slug="wise-woman-of-tekoa", name="The wise woman of Tekoa", kind="person", aliases=["The wise woman of Tekoa", "woman of Tekoa", "the Tekoite woman"],
+    refs=[("2 Samuel", 14, 2), ("2 Samuel", 14, 4), ("2 Samuel", 14, 19)], videos=[],
+    desc='The woman <a href="encyclopedia.html#joab">Joab</a> sends for from <a href="encyclopedia.html#tekoa">Tekoa</a> and coaches in mourning clothes, putting the words in her mouth (<a href="2-samuel-14.html#v14-2">2 Samuel 14:2&ndash;3</a>, now on these pages). She tells <a href="encyclopedia.html#david">David</a> of a widow with two sons, one of whom has killed the other in a field, and of a family that demands the survivor (<a href="2-samuel-14.html#v14-5">14:5&ndash;7</a>); she gets the king&rsquo;s oath that not one hair of his head will fall (<a href="2-samuel-14.html#v14-11">14:11</a>), and then turns the oath on him: the king who will not bring back his own banished son is &lsquo;as one guilty&rsquo; (<a href="2-samuel-14.html#v14-13">14:13</a>). When the king asks if Joab&rsquo;s hand is in it she says it is, and that he &lsquo;put all these words in the mouth of your maidservant&rsquo; (<a href="2-samuel-14.html#v14-19">14:19</a>). ⭐ She is not named, and the text does not say whether the widow was real; she is one of only two women the Hebrew calls a wise woman, the other being the woman of Abel (2 Samuel 20:16, not yet on these pages).'))
+ENCYCLOPEDIA_ES["wise-woman-of-tekoa"] = ("La mujer sabia de Tecoa",
+    'La mujer a quien <a href="enciclopedia.html#joab">Joab</a> manda buscar de <a href="enciclopedia.html#tekoa">Tecoa</a> y a quien adiestra con ropas de luto, poniéndole las palabras en la boca (<a href="2-samuel-14.es.html#v14-2">2 Samuel 14:2–3</a>, ya en estas páginas). Cuenta a <a href="enciclopedia.html#david">David</a> de una viuda con dos hijos, uno de los cuales ha matado al otro en un campo, y de una familia que exige al sobreviviente (<a href="2-samuel-14.es.html#v14-5">14:5–7</a>); obtiene el juramento del rey de que no caerá ni un cabello de su cabeza (<a href="2-samuel-14.es.html#v14-11">14:11</a>), y luego vuelve el juramento contra él: el rey que no hace volver a su propio hijo desterrado es «como un culpable» (<a href="2-samuel-14.es.html#v14-13">14:13</a>). Cuando el rey pregunta si la mano de Joab está en esto, ella dice que sí, y que él «puso todas estas palabras en boca de tu sierva» (<a href="2-samuel-14.es.html#v14-19">14:19</a>). ⭐ No se le da nombre, y el texto no dice si la viuda era real; es una de solo dos mujeres a las que el hebreo llama mujer sabia, la otra la mujer de Abel (2 Samuel 20:16, todavía no en estas páginas).')
+
+_ency14_en("tekoa", "(2 Samuel 14:1-20)", '(<a href="2-samuel-14.html#v14-2">2 Samuel 14:1&ndash;20</a>, now on these pages)')
+ENCYCLOPEDIA_ES["tekoa"] = ("Tecoa",
+    'El pueblo natal de Amós: un asentamiento de Judá a unas diez millas al sur de Jerusalén y seis al sur de Belén, en el borde del desierto que cae hacia el mar Muerto — tierra de pastos, y áspera (<a href="amos-1.es.html#v1">Amós 1:1</a>, ya en estas páginas). Roboam la fortificó (2 Crónicas 11:6). Es también la patria de la <a href="enciclopedia.html#wise-woman-of-tekoa">MUJER SABIA DE TECOA</a> a quien Joab adiestró para contar a David una parábola que le cambió la opinión sobre Absalón (<a href="2-samuel-14.es.html#v14-2">2 Samuel 14:1–20</a>, ya en estas páginas), de modo que el lugar tiene una pequeña fama de dar gente que dice a los reyes lo que no quieren oír.')
+_ency14_en("tamar-david", "A daughter of Absalom has the same name (2 Samuel 14:27, not yet on these pages).", 'A daughter of Absalom has the same name (<a href="2-samuel-14.html#v14-27">2 Samuel 14:27</a>, now on these pages).')
+_ency14_es("tamar-david", "Una hija de Absalón tiene el mismo nombre (2 Samuel 14:27, todavía no en estas páginas).", 'Una hija de Absalón tiene el mismo nombre (<a href="2-samuel-14.es.html#v14-27">2 Samuel 14:27</a>, ya en estas páginas).')
+_ency14_en("absalom", None, None, add=' In <a href="2-samuel-14.html#v14-1">2 Samuel 14</a> (now on these pages) Joab brings him back from Geshur through <a href="encyclopedia.html#wise-woman-of-tekoa">the woman of Tekoa</a>, he lives two full years in Jerusalem without seeing the king&rsquo;s face, burns Joab&rsquo;s barley to bring Joab to him, and is kissed by the king (<a href="2-samuel-14.html#v14-33">14:33</a>). The chapter describes him as without blemish from sole to crown, with hair that weighs two hundred shekels (<a href="2-samuel-14.html#v14-25">14:25&ndash;26</a>).')
+_ency14_es("absalom", None, None, add=' En <a href="2-samuel-14.es.html#v14-1">2 Samuel 14</a> (ya en estas p&aacute;ginas) Joab lo trae de vuelta de Guesur por medio de <a href="enciclopedia.html#wise-woman-of-tekoa">la mujer de Tecoa</a>, vive dos a&ntilde;os completos en Jerusal&eacute;n sin ver el rostro del rey, quema la cebada de Joab para que Joab vaya a &eacute;l, y el rey lo besa (<a href="2-samuel-14.es.html#v14-33">14:33</a>). El cap&iacute;tulo lo describe sin defecto de la planta a la coronilla, con un cabello que pesa doscientos siclos (<a href="2-samuel-14.es.html#v14-25">14:25–26</a>).')
+_ency14_en("joab", None, None, add=' In <a href="2-samuel-14.html#v14-1">2 Samuel 14</a> (now on these pages) he sees that the king&rsquo;s heart is toward Absalom, sends to Tekoa for <a href="encyclopedia.html#wise-woman-of-tekoa">a wise woman</a> and puts the words in her mouth, and goes to Geshur to bring Absalom back; when Absalom burns his barley he goes to Absalom&rsquo;s house, and then to the king (<a href="2-samuel-14.html#v14-30">14:30&ndash;33</a>).')
+_ency14_es("joab", None, None, add=' En <a href="2-samuel-14.es.html#v14-1">2 Samuel 14</a> (ya en estas p&aacute;ginas) ve que el coraz&oacute;n del rey est&aacute; hacia Absal&oacute;n, env&iacute;a a Tecoa por <a href="enciclopedia.html#wise-woman-of-tekoa">una mujer sabia</a> y le pone las palabras en la boca, y va a Guesur a traer de vuelta a Absal&oacute;n; cuando Absal&oacute;n le quema la cebada va a casa de Absal&oacute;n, y luego al rey (<a href="2-samuel-14.es.html#v14-30">14:30–33</a>).')
+
+_REFS14 = {
+    "absalom": [("2 Samuel", 14, 1), ("2 Samuel", 14, 25), ("2 Samuel", 14, 33)],
+    "joab": [("2 Samuel", 14, 1), ("2 Samuel", 14, 19), ("2 Samuel", 14, 30)],
+    "tekoa": [("2 Samuel", 14, 2)],
+    "david": [("2 Samuel", 14, 5), ("2 Samuel", 14, 33)],
+    "tamar-david": [("2 Samuel", 14, 27)],
+    "geshurites": [("2 Samuel", 14, 23)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS14:
+        _e["refs"] = list(_e["refs"]) + _REFS14[_e["slug"]]
+
+CHRON_CHAPTERS["2sam14"] = dict(era="monarchy",
+    when="Joab sees that the king’s heart is toward Absalom and sends to Tekoa for a wise woman, telling her to dress as a mourner and putting the words in her mouth. She falls before David with a story of two sons, one of whom killed the other in a field, and of a family that demands the survivor; David swears that not one hair of his head will fall. She then says that in not bringing back his own banished son the king is as one guilty, and, asked whether Joab’s hand is in it, says that it is. David tells Joab to bring Absalom back, and Joab goes to Geshur and brings him to Jerusalem, where the king says he may not see his face. Absalom is described as without blemish, with hair of two hundred shekels, and has three sons and a daughter, Tamar. After two full years he sends twice for Joab, who will not come, burns Joab’s barley to bring him, and asks to see the king’s face; Joab tells the king, Absalom bows, and the king kisses him.",
+    clock="After 2 Samuel 13 and Absalom’s three years in Geshur; the chapter gives two full years for Absalom in Jerusalem before he sees the king.")
+
+CHAPTER_ART["2sam14"] = [dict(
+    file="tissot-absalom-his-beauty.jpg",
+    title="Absalom", title_es="Absalón",
+    artist="James Tissot",
+    year="1900",
+    location="John Rylands Library, Manchester (Tissot’s pen and ink sketches for his Old Testament)", location_es="John Rylands Library, Mánchester (bocetos a pluma y tinta de Tissot para su Antiguo Testamento)",
+    alt="A pen-and-ink sketch of a bearded man with long dark hair, standing and looking out at the viewer. He wears a wrapped turban, a patterned robe with a broad sash at the waist, and a long skirt of leaf-shaped figures; one hand rests on his hip and the other on a ledge or railing beside him. A dark lattice screen fills the top of the picture and loose vertical hatching surrounds the figure.",
+    note="2 Samuel 14. This is one of the pen and ink sketches Tissot made for his Old Testament illustrations; the museum catalogue ties it to 14:25, where Absalom is praised for his beauty from sole to crown. He is drawn as a figure of rank, with the long hair of the next verse, and the artist adds nothing about the two full years in Jerusalem or the kiss. The sketch was photographed on its side and has been turned upright and cropped to the drawing.",
+    note_es="2 Samuel 14. Es uno de los bocetos a pluma y tinta que Tissot hizo para sus ilustraciones del Antiguo Testamento; el catálogo lo vincula con 14:25, donde se alaba la belleza de Absalón de la planta a la coronilla. Está dibujado como un personaje de rango, con el cabello largo del versículo siguiente, y el artista no añade nada sobre los dos años completos en Jerusalén ni sobre el beso. El boceto fue fotografiado de costado y se ha puesto derecho y recortado al dibujo.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Tissot_Drawing_305_Absalom_2_Samuel_14_25_for_Brunoff_292_Absalon.jpg",
+)]
