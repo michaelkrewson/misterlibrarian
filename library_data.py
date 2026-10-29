@@ -54929,3 +54929,109 @@ CHAPTER_ART["1kgs2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Dutch_School_-_David%27s_Dying_Charge_to_Solomon_(after_P._van_der_Horst)_-_GLAHA_43456_-_Hunterian_Museum_and_Art_Gallery.jpg",
 )]
+# --- 2 Samuel 3k ---
+def _swap3k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D3k = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict3k_en(slug, old=None, new=None, add=None):
+    _i = _D3k[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap3k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict3k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap3k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency3k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap3k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency3k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap3k(_s, old, new)
+    if add: _s = _s + add
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("shama", "shama", "שָׁמַע", "shama",
+    'TO HEAR, to listen, to obey &mdash; one verb for all three. Solomon asks for &lsquo;a hearing heart&rsquo;, <em>lev shome&rsquo;a</em>, and is given &lsquo;understanding, to hear justice&rsquo; (<a href="1-kings-3.html#v3-9">1 Kings 3:9, 11</a>, now on these pages); <span data-heb="לב שמע">&lsquo;a hearing heart&rsquo; stands only in that verse</span>. The ASV has &lsquo;an understanding heart&rsquo;, the NIV &lsquo;a discerning heart&rsquo;, the NWT 1984 &lsquo;an obedient heart&rsquo; and the TLB &lsquo;an understanding mind&rsquo;; Rahlfs&rsquo; Greek has <em>kardian akouein</em>, &lsquo;a heart to listen&rsquo;. See also <em><a href="dictionary.html#bin">bin</a></em>.',
+    ("1 Kings", 3, 9)))
+DICTIONARY_ES["shama"] = ("shamá",
+    'OÍR, escuchar, obedecer &mdash; un solo verbo para los tres. Salomón pide «un corazón que escuche», <em>lev shome’a</em>, y se le da «entendimiento para oír justicia» (<a href="1-kings-3.es.html#v3-9">1 Reyes 3:9, 11</a>, ya en estas páginas); <span data-heb="לב שמע">«un corazón que escuche» está solo en ese versículo</span>. La RV 1909 tiene «corazón dócil», la NVI «discernimiento» y la TNM 1987 «un corazón obediente»; el griego de Rahlfs tiene <em>kardian akouein</em>, «un corazón para escuchar». Véase también <em><a href="diccionario.html#bin">bin</a></em>.')
+
+DICTIONARY.append(("bin", "bin", "בִּין", "bin",
+    'TO DISCERN, to understand &mdash; the root of <em>binah</em> and of <em>navon</em>, &lsquo;understanding&rsquo;. In <a href="1-kings-3.html#v3-9">1 Kings 3</a> (now on these pages) it runs through the chapter: Solomon asks &lsquo;to discern between good and evil&rsquo; (verse 9), God gives him &lsquo;understanding&rsquo; (verse 11) and &lsquo;a wise and understanding heart&rsquo; (verse 12), and the woman <em>hitbonen</em>, &lsquo;considered&rsquo;, the dead child in the morning and saw that he was not hers (verse 21). &lsquo;A man of discernment and wisdom&rsquo; was what Pharaoh was told to look for (<a href="genesis-41.html#v41-33">Genesis 41:33</a>, now on these pages). See also <em><a href="dictionary.html#binah">binah</a></em>.',
+    ("Genesis", 41, 33)))
+DICTIONARY_ES["bin"] = ("bin",
+    'DISCERNIR, entender &mdash; la raíz de <em>binah</em> y de <em>navon</em>, «entendido». En <a href="1-kings-3.es.html#v3-9">1 Reyes 3</a> (ya en estas páginas) recorre el capítulo: Salomón pide «discernir entre el bien y el mal» (versículo 9), Dios le da «entendimiento» (versículo 11) y «un corazón sabio y entendido» (versículo 12), y la mujer <em>hitbonen</em>, «observó bien», al niño muerto por la mañana y vio que no era suyo (versículo 21). «Un hombre entendido y sabio» fue lo que se dijo al faraón que buscara (<a href="genesis-41.es.html#v41-33">Génesis 41:33</a>, ya en estas páginas). Véase también <em><a href="diccionario.html#binah">binah</a></em>.')
+
+# ---------- extended dictionary entries ----------
+_dict3k_en("bamah", None, None, add=' ⭐ &lsquo;Only the people were sacrificing at the high places, because a house had not been built for the name of Jehovah&rsquo; (<a href="1-kings-3.html#v3-2">1 Kings 3:2&ndash;4</a>, now on these pages), and &lsquo;the great high place&rsquo; at Gibeon; see <a href="encyclopedia.html#high-places">the high places</a>.')
+_dict3k_es("bamah", None, None, add=' ⭐ «Solamente, el pueblo sacrificaba en los lugares altos, porque no se había edificado casa para el nombre de Jehová» (<a href="1-kings-3.es.html#v3-2">1 Reyes 3:2–4</a>, ya en estas páginas), y «el lugar alto grande» de Gabaón; véanse <a href="enciclopedia.html#high-places">los lugares altos</a>.')
+_dict3k_en("chokhmah", None, None, add=' ⭐ &lsquo;The wisdom of God was within him, to do justice&rsquo;, <span data-heb="חכמת אלהים">a phrase that stands only in</span> <a href="1-kings-3.html#v3-28">1 Kings 3:28</a> (now on these pages), after &lsquo;a wise and understanding heart&rsquo; (3:12).')
+_dict3k_es("chokhmah", None, None, add=' ⭐ «La sabiduría de Dios estaba dentro de él, para hacer justicia», <span data-heb="חכמת אלהים">una frase que está solo en</span> <a href="1-kings-3.es.html#v3-28">1 Reyes 3:28</a> (ya en estas páginas), después de «un corazón sabio y entendido» (3:12).')
+_dict3k_en("mishpat", None, None, add=' ⭐ In <a href="1-kings-3.html#v3-11">1 Kings 3</a> (now on these pages) it is &lsquo;to hear justice&rsquo; (verse 11) and, in verse 28, both &lsquo;the judgment which the king had judged&rsquo; and &lsquo;to do justice&rsquo;.')
+_dict3k_es("mishpat", None, None, add=' ⭐ En <a href="1-kings-3.es.html#v3-11">1 Reyes 3</a> (ya en estas páginas) es «oír justicia» (versículo 11) y, en el versículo 28, tanto «el juicio que el rey había juzgado» como «hacer justicia».')
+_dict3k_en("rachamim", None, None, add=' ⭐ &lsquo;Her compassion grew warm toward her son&rsquo; (<a href="1-kings-3.html#v3-26">1 Kings 3:26</a>, now on these pages), as Joseph&rsquo;s did toward Benjamin (<a href="genesis-43.html#v43-30">Genesis 43:30</a>); <span data-heb="נכמרו רחמי">the two words together stand in two verses</span>. Rahlfs&rsquo; Greek has &lsquo;her womb was stirred&rsquo;.')
+_dict3k_es("rachamim", None, None, add=' ⭐ «Su compasión se encendió hacia su hijo» (<a href="1-kings-3.es.html#v3-26">1 Reyes 3:26</a>, ya en estas páginas), como la de José hacia Benjamín (<a href="genesis-43.es.html#v43-30">Génesis 43:30</a>); <span data-heb="נכמרו רחמי">las dos palabras juntas están en dos versículos</span>. El griego de Rahlfs tiene «su vientre se agitó».')
+_dict3k_en("zonah", None, None, add=' ⭐ &lsquo;Two women, prostitutes&rsquo; come before Solomon (<a href="1-kings-3.html#v3-16">1 Kings 3:16</a>, now on these pages); the ASV, KJV and Douay have &lsquo;harlots&rsquo;, the NIV and NWT 1984 &lsquo;prostitutes&rsquo;.')
+_dict3k_es("zonah", None, None, add=' ⭐ «Dos mujeres rameras» vienen ante Salomón (<a href="1-kings-3.es.html#v3-16">1 Reyes 3:16</a>, ya en estas páginas); la RV 1909 tiene «rameras», la NVI «prostitutas» y la TNM 1987 «prostitutas».')
+_dict3k_en("kaved", None, None, add=' ⭐ &lsquo;This weighty people of yours&rsquo;, <em>ha&rsquo;am hakaved</em> (<a href="1-kings-3.html#v3-9">1 Kings 3:9</a>, now on these pages), with the same root as the <em>kavod</em>, &lsquo;honor&rsquo;, of verse 13.')
+_dict3k_es("kaved", None, None, add=' ⭐ «Este tu pueblo de tanto peso», <em>ha’am hakaved</em> (<a href="1-kings-3.es.html#v3-9">1 Reyes 3:9</a>, ya en estas páginas), con la misma raíz que el <em>kavod</em>, «honra», del versículo 13.')
+_dict3k_en("adonai", None, None, add=' ⭐ In <a href="1-kings-3.html#v3-10">1 Kings 3:10, 15</a> (now on these pages) the Hebrew has <em>Adonai</em>, &lsquo;the Lord&rsquo;, where verse 5 has Jehovah; the NWT 1984 prints &lsquo;Jehovah&rsquo; in both.')
+_dict3k_es("adonai", None, None, add=' ⭐ En <a href="1-kings-3.es.html#v3-10">1 Reyes 3:10, 15</a> (ya en estas páginas) el hebreo tiene <em>Adonai</em>, «el Señor», donde el versículo 5 tiene Jehová; la RV 1909 imprime «Adonai» en el versículo 10.')
+_dict3k_en("naar", None, None, add=' ⭐ &lsquo;I am a little youth; I do not know how to go out or come in&rsquo; (<a href="1-kings-3.html#v3-7">1 Kings 3:7</a>, now on these pages).')
+_dict3k_es("naar", None, None, add=' ⭐ «Yo soy un jovencito; no sé salir ni entrar» (<a href="1-kings-3.es.html#v3-7">1 Reyes 3:7</a>, ya en estas páginas).')
+_dict3k_en("chesed", None, None, add=' ⭐ &lsquo;You have shown great kindness to your servant David my father&rsquo; (<a href="1-kings-3.html#v3-6">1 Kings 3:6</a>, now on these pages).')
+_dict3k_es("chesed", None, None, add=' ⭐ «Tú has hecho gran bondad a tu siervo David mi padre» (<a href="1-kings-3.es.html#v3-6">1 Reyes 3:6</a>, ya en estas páginas).')
+_dict3k_en("binah", None, None, add=' ⭐ See <em><a href="dictionary.html#bin">bin</a></em>, the root, in <a href="1-kings-3.html#v3-9">1 Kings 3</a> (now on these pages).')
+_dict3k_es("binah", None, None, add=' ⭐ Véase <em><a href="diccionario.html#bin">bin</a></em>, la raíz, en <a href="1-kings-3.es.html#v3-9">1 Reyes 3</a> (ya en estas páginas).')
+
+# flips of old claims
+_dict3k_en("madda", "the parallel at 1 Kings 3:9 has him ask", 'the parallel at <a href="1-kings-3.html#v3-9">1 Kings 3:9</a> (now on these pages) has him ask')
+_dict3k_es("madda", "el pasaje paralelo de 1 Reyes 3:9 le hace pedir", 'el pasaje paralelo de <a href="1-kings-3.es.html#v3-9">1 Reyes 3:9</a> (ya en estas páginas) le hace pedir')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="high-places", name="The high places", kind="thing", aliases=["the high places", "high places", "the great high place"], refs=[("1 Kings", 3, 2)], videos=[],
+    desc='The <em>bamot</em>, hilltop shrines where the people sacrificed. The law is to destroy the places where the nations served their gods and to seek &lsquo;the place that Jehovah your God chooses &hellip; to put his name there&rsquo; (<a href="deuteronomy-12.html#v12-2">Deuteronomy 12:2, 5</a>, now on these pages). In <a href="1-kings-3.html#v3-2">1 Kings 3:2&ndash;4</a> (now on these pages) &lsquo;only&rsquo; the people sacrificed there, &lsquo;because a house had not been built for the name of Jehovah until those days&rsquo;; Solomon &lsquo;loved Jehovah &hellip; only, at the high places he sacrificed and burned incense&rsquo;, and went to Gibeon, &lsquo;the great high place&rsquo;, where he offered a thousand burnt offerings. See <em><a href="dictionary.html#bamah">bamah</a></em> and <a href="encyclopedia.html#gibeon">Gibeon</a>.'))
+ENCYCLOPEDIA_ES["high-places"] = ("Los lugares altos",
+    'Las <em>bamot</em>, santuarios en las cumbres donde el pueblo sacrificaba. La ley es destruir los lugares donde las naciones sirvieron a sus dioses y buscar «el lugar que Jehová su Dios escoge … para poner allí su nombre» (<a href="deuteronomy-12.es.html#v12-2">Deuteronomio 12:2, 5</a>, ya en estas páginas). En <a href="1-kings-3.es.html#v3-2">1 Reyes 3:2–4</a> (ya en estas páginas) «solamente» el pueblo sacrificaba allí, «porque hasta aquellos días no se había edificado casa para el nombre de Jehová»; Salomón «amó a Jehová … solamente, en los lugares altos sacrificaba y quemaba incienso», y fue a Gabaón, «el lugar alto grande», donde ofreció mil holocaustos. Véanse <em><a href="diccionario.html#bamah">bamah</a></em> y <a href="enciclopedia.html#gibeon">Gabaón</a>.')
+
+ENCYCLOPEDIA.append(dict(slug="solomons-judgment", name="The judgment of Solomon", kind="thing", aliases=["the judgment of Solomon", "Solomon’s judgment"], refs=[("1 Kings", 3, 16)], videos=[],
+    desc='The case of the two women in <a href="1-kings-3.html#v3-16">1 Kings 3:16&ndash;28</a> (now on these pages): two prostitutes who lived in one house, one living child and one dead, and each saying the living one was hers. The king asks for a sword and orders the living child cut in two; the woman whose &lsquo;compassion grew warm&rsquo; says &lsquo;give her the living child&rsquo; and the other says &lsquo;Neither mine nor yours shall he be&rsquo;; the king answers &lsquo;she is his mother&rsquo;, and all Israel sees that &lsquo;the wisdom of God was within him, to do justice&rsquo;. &#9888; The text names neither woman nor child and says nothing of what became of them. See <em><a href="dictionary.html#rachamim">rachamim</a></em> and <em><a href="dictionary.html#zonah">zonah</a></em>.'))
+ENCYCLOPEDIA_ES["solomons-judgment"] = ("El juicio de Salomón",
+    'El caso de las dos mujeres en <a href="1-kings-3.es.html#v3-16">1 Reyes 3:16–28</a> (ya en estas páginas): dos rameras que vivían en una casa, un niño vivo y uno muerto, y cada una diciendo que el vivo era suyo. El rey pide una espada y manda partir en dos al niño vivo; la mujer cuya «compasión se encendió» dice «den a esta el niño vivo» y la otra dice «Ni mío ni tuyo será»; el rey responde «ella es su madre», y todo Israel ve que «la sabiduría de Dios estaba dentro de él, para hacer justicia». &#9888; El texto no nombra ni a las mujeres ni al niño y no dice qué fue de ellos. Véanse <em><a href="diccionario.html#rachamim">rachamim</a></em> y <em><a href="diccionario.html#zonah">zonah</a></em>.')
+
+# ---------- encyclopedia: extended ----------
+_ency3k_en("solomon", None, None, add=' ⭐ In <a href="1-kings-3.html#v3-1">1 Kings 3</a> (now on these pages) he makes a marriage alliance with Pharaoh, loves Jehovah &ldquo;only&rdquo; sacrificing at the high places, asks at Gibeon for &lsquo;a hearing heart&rsquo;, and judges the case of the two women.')
+_ency3k_es("solomon", None, None, add=' ⭐ En <a href="1-kings-3.es.html#v3-1">1 Reyes 3</a> (ya en estas páginas) se emparenta con el faraón, ama a Jehová «solamente» sacrificando en los lugares altos, pide en Gabaón «un corazón que escuche», y juzga el caso de las dos mujeres.')
+_ency3k_en("gibeon", None, None, add=' ⭐ &lsquo;The great high place&rsquo; where Solomon offers a thousand burnt offerings, and where Jehovah appears to him in a dream (<a href="1-kings-3.html#v3-4">1 Kings 3:4&ndash;5</a>, now on these pages).')
+_ency3k_es("gibeon", None, None, add=' ⭐ «El lugar alto grande» donde Salomón ofrece mil holocaustos, y donde Jehová se le aparece en sueños (<a href="1-kings-3.es.html#v3-4">1 Reyes 3:4–5</a>, ya en estas páginas).')
+_ency3k_en("ark-of-the-covenant", None, None, add=' ⭐ After the dream at Gibeon Solomon comes to Jerusalem and stands before &lsquo;the ark of the covenant of the Lord&rsquo; (<a href="1-kings-3.html#v3-15">1 Kings 3:15</a>, now on these pages).')
+_ency3k_es("ark-of-the-covenant", None, None, add=' ⭐ Después del sueño en Gabaón Salomón viene a Jerusalén y se pone delante del «arca del pacto del Señor» (<a href="1-kings-3.es.html#v3-15">1 Reyes 3:15</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["1kgs3"] = dict(era="monarchy",
+    when="Solomon makes a marriage alliance with Pharaoh and loves Jehovah, sacrificing only at the high places. At Gibeon Jehovah appears to him in a dream and says Ask what I shall give you; he asks for a hearing heart, and is given a wise and understanding heart, and riches and honor besides. He wakes, offers at the ark in Jerusalem, and judges the case of two women and one living child.",
+    clock="The first years of Solomon’s reign, before the house of Jehovah is built: a king young enough to say he does not know how to go out or come in.")
+
+CHAPTER_ART["1kgs3"] = [dict(
+    file="dore-084-judgment-of-solomon.jpg",
+    title="The Judgment of Solomon", title_es="El juicio de Salomón",
+    artist="Gustave Doré",
+    year="1866",
+    location="Wood engraving, plate 84 of Doré’s English Bible", location_es="Grabado en madera, lámina 84 de la Biblia inglesa de Doré",
+    alt="A black-and-white engraving of a crowded hall. At the top center a king in a long beaded robe and headdress stands on steps in front of an arched wall, one arm raised. At the left a woman in a dark cloak stands with her head bowed. At the lower right a kneeling woman with long hair stretches both arms up toward a soldier in armor who holds a naked infant by the leg in one hand and a short sword in the other. Elders and spearmen look on from behind.",
+    note="1 Kings 3:24&ndash;27. The title is the plate&rsquo;s. The verses say that the king asked for a sword, ordered the living child cut in two, and then said &lsquo;Give her the living child&rsquo;; they do not say who held the child or the sword, or that the king raised his arm, and they do not describe the hall.",
+    note_es="1 Reyes 3:24–27. El título es el de la lámina. Los versículos dicen que el rey pidió una espada, mandó partir en dos al niño vivo, y luego dijo «Den a esta el niño vivo»; no dicen quién sostenía al niño ni la espada, ni que el rey alzara el brazo, y no describen la sala.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:084.The_Judgment_of_Solomon.jpg",
+)]
