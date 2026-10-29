@@ -54219,3 +54219,183 @@ CHAPTER_ART["2sam20"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Joab_doodt_Amasa,_RP-P-OB-45.149.jpg",
 )]
+
+
+# --- 2 Samuel 21 ---
+def _swap21(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D21 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict21_en(slug, old=None, new=None, add=None):
+    _i = _D21[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap21(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict21_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap21(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency21_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap21(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency21_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap21(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entry ----------
+DICTIONARY.append(("harapha", "harapha", "הָרָפָה", "harapha",
+    'THE RAPHA &mdash; the singular, with the article, of the name behind the Rephaim (see the encyclopedia&rsquo;s <a href="encyclopedia.html#rephaim">Rephaim</a>), said of the four Philistines of Gath in <a href="2-samuel-21.html#v21-16">2 Samuel 21:16, 18, 20, 22</a> (now on these pages): they are &lsquo;among the born of the Rapha&rsquo; and &lsquo;born to the Rapha&rsquo;. <span data-heb-read="הרפה">The spelling <em>haRapha</em> with the article stands in those four verses in this sense</span>; 1 Chronicles 20:6 and 20:8 spell it with an alef (not yet on these pages). The ASV has &lsquo;the giant&rsquo;, the NIV &lsquo;Rapha&rsquo;, the NWT 1984 &lsquo;the Rephaim&rsquo;, the Douay &lsquo;Arapha&rsquo; and the TLB &lsquo;a giant&rsquo;.',
+    ("2 Samuel", 21, 16)))
+DICTIONARY_ES["harapha"] = ("harafá",
+    'LA RAFA &mdash; el singular, con el artículo, del nombre que está detrás de los refaítas (véase <a href="enciclopedia.html#rephaim">Refaítas</a> en la enciclopedia), dicho de los cuatro filisteos de Gat en <a href="2-samuel-21.es.html#v21-16">2 Samuel 21:16, 18, 20, 22</a> (ya en estas páginas): son «de los nacidos de la Rafa» y «nacidos de la Rafa». <span data-heb-read="הרפה">La grafía <em>haRapha</em> con el artículo está en esos cuatro versículos en este sentido</span>; 1 Crónicas 20:6 y 20:8 la escriben con alef (todavía no en estas páginas). La RV 1909 tiene «el gigante», la NVI «Rafa» y «refaíta», y la TNM 1987 «los refaím».')
+
+# ---------- extended dictionary entries ----------
+_dict21_en("damim", None, None, add=' ⭐ Jehovah&rsquo;s answer about the famine is that it is &lsquo;on Saul, and on the house of bloodshed&rsquo;, <em>beit hadamim</em> (<a href="2-samuel-21.html#v21-1">2 Samuel 21:1</a>, now on these pages); Shimei had called David &lsquo;man of bloods&rsquo; and said Jehovah had turned back upon him &lsquo;all the bloods of the house of Saul&rsquo; (<a href="2-samuel-16.html#v16-7">16:7&ndash;8</a>).')
+_dict21_es("damim", None, None, add=' ⭐ La respuesta de Jehová sobre el hambre es que es «por Saúl, y por la casa del derramamiento de sangre», <em>beit hadamim</em> (<a href="2-samuel-21.es.html#v21-1">2 Samuel 21:1</a>, ya en estas páginas); Simei había llamado a David «hombre de sangres» y dicho que Jehová había vuelto sobre él «todas las sangres de la casa de Saúl» (<a href="2-samuel-16.es.html#v16-7">16:7–8</a>).')
+_dict21_en("hoqa", "2 Samuel 21:9 shows the result &mdash; bodies left in the open on a hill until the rains came and a three-year famine broke. Same rare verb, same phrase 'to Jehovah', same logic of a national calamity ended by a public corpse.",
+    '<a href="2-samuel-21.html#v21-9">2 Samuel 21:9</a> (now on these pages) shows the result &mdash; the seven hanged on the mountain &lsquo;before Jehovah&rsquo;, and Rizpah guarding the bodies until water was poured on them from the heavens (21:10). Same verb, same phrase &lsquo;to Jehovah&rsquo;, and in both the hanging is set against a calamity on the people; in 21:14 God is entreated for the land only after the bones are buried. In 21:13 the participle <em>hammuqa&rsquo;im</em> gathers Saul, Jonathan and the seven into one company.')
+_dict21_es("hoqa", "2 Samuel 21:9 enseña el resultado &mdash;cuerpos dejados al aire en un monte hasta que vinieron las lluvias y se rompió un hambre de tres años. El mismo verbo raro, la misma fórmula «a Jehová», la misma lógica de una calamidad nacional detenida por un cadáver público.",
+    '<a href="2-samuel-21.es.html#v21-9">2 Samuel 21:9</a> (ya en estas páginas) enseña el resultado &mdash;los siete colgados en el monte «delante de Jehová», y Rizpa guardando los cuerpos hasta que se derramó agua sobre ellos desde los cielos (21:10). El mismo verbo, la misma fórmula «a Jehová», y en ambos el colgar se pone frente a una calamidad sobre el pueblo; en 21:14 Dios es rogado por la tierra solo después de sepultar los huesos. En 21:13 el participio <em>hammuqa’im</em> reúne a Saúl, a Jonatán y a los siete en una sola compañía.')
+_dict21_en("atar", None, None, add=' ⭐ <span data-heb="ויעתר אלהים">&lsquo;And God was entreated&rsquo; stands only in one verse</span>, <a href="2-samuel-21.html#v21-14">2 Samuel 21:14</a> (now on these pages), &lsquo;after that&rsquo;, after the bones of Saul and Jonathan and of the hanged are buried; the name is <em>Elohim</em>, where verse 1 had Jehovah.')
+DICTIONARY_ES["atar"] = ("atar", 'ROGAR, suplicar — y el mismo verbo, vuelto del revés, para CONCEDER la súplica: «Isaac rogó (va-ye\'tar) a Jehová por su mujer … y Jehová fue rogado (va-ye\'ater) por él» (25:21). Una sola palabra para el pedir y el responder, la oración y el sí — la manera ingeniosa del hebreo de mostrar cerrado el circuito. El inglés de la KJV conserva el eco («intreated … was intreated»); Rebeca, estéril veinte años, concibe.')
+_dict21_es("atar", None, None, add=' ⭐ <span data-heb="ויעתר אלהים">«Y Dios fue rogado» está solo en un versículo</span>, <a href="2-samuel-21.es.html#v21-14">2 Samuel 21:14</a> (ya en estas páginas), «después de eso», después de sepultar los huesos de Saúl, de Jonatán y de los colgados; el nombre es <em>Elohim</em>, donde el versículo 1 tenía Jehová.')
+_dict21_en("chamal", "and 2 Samuel 21:7 (David sparing Mephibosheth, not yet on these pages).", 'and <a href="2-samuel-21.html#v21-7">2 Samuel 21:7</a> (David sparing Mephibosheth, now on these pages).')
+_dict21_es("chamal", "y 2 Samuel 21:7 (David perdonando a Mefi-boset, todavía no en estas páginas).", 'y <a href="2-samuel-21.es.html#v21-7">2 Samuel 21:7</a> (David perdonando a Mefi-boset, ya en estas páginas).')
+_dict21_en("ganav", "with 15:6 and 21:12 the verb stands in four verses of 2 Samuel, the last not yet on these pages.", 'with 15:6 and <a href="2-samuel-21.html#v21-12">21:12</a> the verb stands in four verses of 2 Samuel, all now on these pages; in 21:12 the men of Jabesh-gilead &lsquo;stole&rsquo; the bones of Saul and Jonathan from the broad place of Beth-shan.')
+_dict21_es("ganav", "con 15:6 y 21:12 el verbo está en cuatro versículos de 2 Samuel, el último todavía no en estas páginas.", 'con 15:6 y <a href="2-samuel-21.es.html#v21-12">21:12</a> el verbo está en cuatro versículos de 2 Samuel, todos ya en estas páginas; en 21:12 los hombres de Jabes de Galaad «robaron» los huesos de Saúl y de Jonatán de la plaza de Bet-seán.')
+_dict21_en("baal", None, None, add=' ⭐ The &lsquo;owners&rsquo; of Jabesh-gilead, <em>baale Yavesh</em>, are the men from whom David takes the bones of Saul and Jonathan (<a href="2-samuel-21.html#v21-12">2 Samuel 21:12</a>, now on these pages); the ASV has &lsquo;the men of Jabesh-gilead&rsquo;, the NIV &lsquo;the citizens&rsquo; and the NWT 1984 &lsquo;the landowners&rsquo;.')
+_dict21_es("baal", None, None, add=' ⭐ Los «dueños» de Jabes de Galaad, <em>baale Yavesh</em>, son los hombres de quienes David toma los huesos de Saúl y de Jonatán (<a href="2-samuel-21.es.html#v21-12">2 Samuel 21:12</a>, ya en estas páginas); la RV 1909 tiene «los hombres de Jabes de Galaad», la NVI «los habitantes de la ciudad» y la TNM 1987 «los terratenientes».')
+_dict21_en("tsela", None, None, add=' ⭐ <em>Tsela</em> is also a town of Benjamin, Zela, where Saul and Jonathan are buried &lsquo;in the grave of Kish his father&rsquo; (<a href="2-samuel-21.html#v21-14">2 Samuel 21:14</a>, now on these pages; <a href="joshua-18.html#v18-28">Joshua 18:28</a>); the Douay renders it &lsquo;in the side&rsquo;.')
+DICTIONARY_ES["tsela"] = ("tsela", 'Costado — en todas las demás partes un costado estructural (tabernáculo, arca, templo), nunca un hueso de costilla; el «costado, no costilla» de esta traducción en 2:21 descansa en ese uso.')
+_dict21_es("tsela", None, None, add=' ⭐ <em>Tsela</em> es también un pueblo de Benjamín, Zela, donde Saúl y Jonatán son sepultados «en el sepulcro de Cis su padre» (<a href="2-samuel-21.es.html#v21-14">2 Samuel 21:14</a>, ya en estas páginas; <a href="joshua-18.es.html#v18-28">Josué 18:28</a>).')
+_dict21_en("nachalah", None, None, add=' ⭐ David asks the Gibeonites to &lsquo;bless the inheritance of Jehovah&rsquo; (<a href="2-samuel-21.html#v21-3">2 Samuel 21:3</a>, now on these pages), the phrase the wise woman of Abel used to Joab.')
+_dict21_es("nachalah", None, None, add=' ⭐ David pide a los gabaonitas que «bendigan la herencia de Jehová» (<a href="2-samuel-21.es.html#v21-3">2 Samuel 21:3</a>, ya en estas páginas), la frase que la mujer sabia de Abel usó con Joab.')
+_dict21_en("pilegesh", None, None, add=' ⭐ Rizpah is &lsquo;the concubine of Saul&rsquo; in <a href="2-samuel-21.html#v21-11">2 Samuel 21:11</a> (now on these pages), as in 3:7, and her vigil over her sons is what is told David.')
+_dict21_es("pilegesh", None, None, add=' ⭐ Rizpa es «concubina de Saúl» en <a href="2-samuel-21.es.html#v21-11">2 Samuel 21:11</a> (ya en estas páginas), como en 3:7, y lo que se dice a David es su vigilia junto a sus hijos.')
+
+# ---------- new encyclopedia entries ----------
+ENCYCLOPEDIA.append(dict(slug="gibeonites", name="The Gibeonites", kind="people", aliases=["Gibeonites", "Gibeonite"],
+    refs=[("2 Samuel", 21, 1)], videos=[],
+    desc='The people of <a href="encyclopedia.html#gibeon">Gibeon</a>, who made peace with Israel by a ruse and were spared by an oath of the chieftains (<a href="joshua-9.html#v9-15">Joshua 9:15, 18</a>, now on these pages). In <a href="2-samuel-21.html#v21-1">2 Samuel 21:1&ndash;2</a> (now on these pages) Jehovah says the famine is on Saul, &lsquo;because he put the Gibeonites to death&rsquo;, and the narrator adds that they were &lsquo;not of the sons of Israel, but of the remnant of the Amorites&rsquo;, that Israel had sworn to them, and that Saul sought to strike them down in his zeal. David asks what he can do and how he can make atonement; they refuse silver and gold and ask for seven of Saul&rsquo;s sons, whom they hang on the mountain before Jehovah (21:3&ndash;9). Joshua 9:7 calls them Hivites; the page does not reconcile the two names.'))
+ENCYCLOPEDIA_ES["gibeonites"] = ("Los gabaonitas",
+    'El pueblo de <a href="enciclopedia.html#gibeon">Gabaón</a>, que hizo paz con Israel con una astucia y fue perdonado por un juramento de los jefes (<a href="joshua-9.es.html#v9-15">Josué 9:15, 18</a>, ya en estas páginas). En <a href="2-samuel-21.es.html#v21-1">2 Samuel 21:1–2</a> (ya en estas páginas) Jehová dice que el hambre es por Saúl, «porque dio muerte a los gabaonitas», y el narrador añade que no eran «de los hijos de Israel, sino del remanente de los amorreos», que Israel les había jurado, y que Saúl procuró herirlos en su celo. David pregunta qué puede hacer y cómo hacer expiación; ellos rechazan plata y oro y piden siete hijos de Saúl, a quienes cuelgan en el monte delante de Jehová (21:3–9). Josué 9:7 los llama heveos; la página no concilia los dos nombres.')
+
+ENCYCLOPEDIA.append(dict(slug="sons-of-rizpah", name="Armoni and Mephibosheth, the sons of Rizpah", kind="people", aliases=["Armoni"],
+    refs=[("2 Samuel", 21, 8)], videos=[],
+    desc='The two sons <a href="encyclopedia.html#rizpah">Rizpah</a> daughter of Aiah bore to Saul, taken by the king with five sons of &lsquo;Michal&rsquo; and given to the Gibeonites (<a href="2-samuel-21.html#v21-8">2 Samuel 21:8</a>, now on these pages). The second shares his name with the <a href="encyclopedia.html#mephibosheth">Mephibosheth</a> son of Jonathan whom the king spares in verse 7, and the Hebrew spells the two apart: <em>Mefiyvoshet</em> with a yod in verse 7, <em>Mefivoshet</em> without it in verse 8.'))
+ENCYCLOPEDIA_ES["sons-of-rizpah"] = ("Armoní y Mefi-boset, los hijos de Rizpa",
+    'Los dos hijos que <a href="enciclopedia.html#rizpah">Rizpa</a> hija de Aja dio a luz a Saúl, tomados por el rey con cinco hijos de «Mical» y entregados a los gabaonitas (<a href="2-samuel-21.es.html#v21-8">2 Samuel 21:8</a>, ya en estas páginas). El segundo tiene el mismo nombre que el <a href="enciclopedia.html#mephibosheth">Mefi-boset</a> hijo de Jonatán a quien el rey perdona en el versículo 7, y el hebreo los escribe distinto: <em>Mefiyvoshet</em> con yod en el versículo 7, <em>Mefivoshet</em> sin ella en el 8.')
+
+ENCYCLOPEDIA.append(dict(slug="ishbi-benob", name="Ishbi-benob", kind="person", aliases=["Ishbi-benob", "Ishbibenob"],
+    refs=[("2 Samuel", 21, 16)], videos=[],
+    desc='A Philistine &lsquo;among the born of the Rapha&rsquo; whose spear weighed three hundred shekels of bronze and who &lsquo;said that he would strike David down&rsquo;; <a href="encyclopedia.html#abishai">Abishai</a> helps David and kills him, and David&rsquo;s men swear he will go out no more lest he put out &lsquo;the lamp of Israel&rsquo; (<a href="2-samuel-21.html#v21-16">2 Samuel 21:16&ndash;17</a>, now on these pages). The name is written <em>vayyeshvu</em> and read <em>Yishbi</em>; Rahlfs&rsquo; Greek has &lsquo;Iesbi&rsquo;.'))
+ENCYCLOPEDIA_ES["ishbi-benob"] = ("Isbi-benob",
+    'Un filisteo «de los nacidos de la Rafa» cuya lanza pesaba trescientos siclos de bronce y que «dijo que derribaría a David»; <a href="enciclopedia.html#abishai">Abisai</a> auxilia a David y lo mata, y los hombres de David juran que no saldrá más no sea que apague «la lámpara de Israel» (<a href="2-samuel-21.es.html#v21-16">2 Samuel 21:16–17</a>, ya en estas páginas). El nombre está escrito <em>vayyeshvu</em> y leído <em>Yishbi</em>; el griego de Rahlfs tiene «Iesbi».')
+
+ENCYCLOPEDIA.append(dict(slug="sibbecai", name="Sibbecai the Hushathite", kind="person", aliases=["Sibbecai"],
+    refs=[("2 Samuel", 21, 18)], videos=[],
+    desc='The man who struck down Saph, &lsquo;among the born of the Rapha&rsquo;, in the war at Gob (<a href="2-samuel-21.html#v21-18">2 Samuel 21:18</a>, now on these pages). 1 Chronicles 20:4 has the same war at Gezer with the giant named Sippai (not yet on these pages).'))
+ENCYCLOPEDIA_ES["sibbecai"] = ("Sibecai el husatita",
+    'El hombre que derribó a Saf, «de los nacidos de la Rafa», en la guerra de Gob (<a href="2-samuel-21.es.html#v21-18">2 Samuel 21:18</a>, ya en estas páginas). 1 Crónicas 20:4 tiene la misma guerra en Guézer con el gigante llamado Sipai (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="elhanan", name="Elhanan son of Jaare-oregim", kind="person", aliases=["Elhanan"],
+    refs=[("2 Samuel", 21, 19)], videos=[],
+    desc='A Bethlehemite who, in the war at Gob, &lsquo;struck down Goliath the Gittite&rsquo;, the shaft of whose spear was &lsquo;like a weavers&rsquo; beam&rsquo; (<a href="2-samuel-21.html#v21-19">2 Samuel 21:19</a>, now on these pages). His father&rsquo;s name ends with the word for weavers, <em>orgim</em>, which is also in the spear. The NIV, KJV and TLB print &lsquo;the brother of Goliath&rsquo;; 1 Chronicles 20:5 has Elhanan son of Jair strike &lsquo;Lahmi the brother of Goliath&rsquo; (not yet on these pages). See <a href="encyclopedia.html#goliath">Goliath</a>; these pages do not decide between the readings. 2 Samuel 23:24 has an Elhanan son of Dodo of Bethlehem among the Thirty (not yet on these pages).'))
+ENCYCLOPEDIA_ES["elhanan"] = ("Eljanán hijo de Jaare-oreguim",
+    'Un betlemita que, en la guerra de Gob, «derribó a Goliat el geteo», cuya asta de lanza era «como un enjullo de tejedores» (<a href="2-samuel-21.es.html#v21-19">2 Samuel 21:19</a>, ya en estas páginas). El nombre de su padre termina con la palabra para tejedores, <em>orgim</em>, que está también en la lanza. La NVI imprime «el hermano de Goliat»; 1 Crónicas 20:5 hace que Eljanán hijo de Jair hiera a «Lajmí, hermano de Goliat» (todavía no en estas páginas). Véase <a href="enciclopedia.html#goliath">Goliat</a>; estas páginas no deciden entre las lecturas. 2 Samuel 23:24 tiene un Eljanán hijo de Dodó de Belén entre los Treinta (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="saph", name="Saph", kind="person", aliases=["Saph"],
+    refs=[("2 Samuel", 21, 18)], videos=[],
+    desc='A Philistine &lsquo;among the born of the Rapha&rsquo; struck down by <a href="encyclopedia.html#sibbecai">Sibbecai</a> in the war at Gob (<a href="2-samuel-21.html#v21-18">2 Samuel 21:18</a>, now on these pages). 1 Chronicles 20:4 calls the giant of that war Sippai (not yet on these pages).'))
+ENCYCLOPEDIA_ES["saph"] = ("Saf",
+    'Un filisteo «de los nacidos de la Rafa» a quien derriba <a href="enciclopedia.html#sibbecai">Sibecai</a> en la guerra de Gob (<a href="2-samuel-21.es.html#v21-18">2 Samuel 21:18</a>, ya en estas páginas). 1 Crónicas 20:4 llama Sipai al gigante de esa guerra (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="jonathan-son-of-shimeah", name="Jonathan son of Shimeah", kind="person", aliases=["Jonathan son of Shimeah"],
+    refs=[("2 Samuel", 21, 21)], videos=[],
+    desc='David&rsquo;s nephew, who struck down the man with twenty-four fingers and toes at Gath when he taunted Israel (<a href="2-samuel-21.html#v21-20">2 Samuel 21:20&ndash;21</a>, now on these pages). His father is David&rsquo;s brother Shimeah, who is also the father of <a href="encyclopedia.html#jonadab-son-of-shimeah">Jonadab</a> (<a href="2-samuel-13.html#v13-3">2 Samuel 13:3</a>); the name is written <em>Shim&rsquo;i</em> and read <em>Shim&rsquo;ah</em> in 21:21.'))
+ENCYCLOPEDIA_ES["jonathan-son-of-shimeah"] = ("Jonatán hijo de Simea",
+    'El sobrino de David, que hirió al hombre de veinticuatro dedos en Gat cuando injurió a Israel (<a href="2-samuel-21.es.html#v21-20">2 Samuel 21:20–21</a>, ya en estas páginas). Su padre es Simea, hermano de David, que es también el padre de <a href="enciclopedia.html#jonadab-son-of-shimeah">Jonadab</a> (<a href="2-samuel-13.es.html#v13-3">2 Samuel 13:3</a>); el nombre está escrito <em>Shim’i</em> y leído <em>Shim’ah</em> en 21:21.')
+
+# ---------- extended / flipped encyclopedia entries ----------
+_ency21_en("goliath", "⚠ 2 Samuel 21:19 says that Elhanan of Bethlehem", '⚠ <a href="2-samuel-21.html#v21-19">2 Samuel 21:19</a> (now on these pages) says that <a href="encyclopedia.html#elhanan">Elhanan</a> of Bethlehem')
+_ency21_en("goliath", "&ldquo;Lahmi the brother of Goliath&rdquo; (neither yet on these pages)", '&ldquo;Lahmi the brother of Goliath&rdquo; (the latter not yet on these pages)')
+_ency21_es("goliath", "⚠ 2 Samuel 21:19 dice que Eljanán de Belén", '⚠ <a href="2-samuel-21.es.html#v21-19">2 Samuel 21:19</a> (ya en estas páginas) dice que <a href="enciclopedia.html#elhanan">Eljanán</a> de Belén')
+_ency21_es("goliath", "«Lajmí, hermano de Goliat» (ninguno de los dos todavía en estas páginas)", '«Lajmí, hermano de Goliat» (este último todavía no en estas páginas)')
+_ency21_en("adriel", "2 Samuel 21:8 (not yet on these pages) names him", '<a href="2-samuel-21.html#v21-8">2 Samuel 21:8</a> (now on these pages) names him')
+_ency21_es("adriel", "2 Samuel 21:8 (todavía no en estas páginas) lo nombra", '<a href="2-samuel-21.es.html#v21-8">2 Samuel 21:8</a> (ya en estas páginas) lo nombra')
+_ency21_en("rizpah", "(2 Samuel 21:8&ndash;10, not yet on these pages).", '(<a href="2-samuel-21.html#v21-8">2 Samuel 21:8&ndash;10</a>, now on these pages): she spreads sackcloth on the rock from the beginning of harvest until water is poured on the bodies, and does not let the bird of the heavens rest on them by day nor the beast of the field by night; David is told what she did (21:11). Her two sons are <a href="encyclopedia.html#sons-of-rizpah">Armoni and Mephibosheth</a>.')
+_ency21_es("rizpah", "(2 Samuel 21:8&ndash;10, todav&iacute;a no en estas p&aacute;ginas).", '(<a href="2-samuel-21.es.html#v21-8">2 Samuel 21:8&ndash;10</a>, ya en estas p&aacute;ginas): extiende el saco sobre la roca desde el comienzo de la siega hasta que se derrama agua sobre los cuerpos, y no deja que el ave de los cielos se pose sobre ellos de día ni la fiera del campo de noche; a David se le dice lo que hizo (21:11). Sus dos hijos son <a href="enciclopedia.html#sons-of-rizpah">Armoní y Mefi-boset</a>.')
+_ency21_en("beeroth", "that 2 Samuel 21:2 records; the text does not say.", 'that <a href="2-samuel-21.html#v21-2">2 Samuel 21:2</a> records (now on these pages); the text does not say.')
+_ency21_en("beeroth", "(2 Samuel 23:37; neither 21:2 nor 23:37 is yet on these pages)", '(2 Samuel 23:37, not yet on these pages)')
+_ency21_es("beeroth", "que registra 2 Samuel 21:2; el texto no lo dice.", 'que registra <a href="2-samuel-21.es.html#v21-2">2 Samuel 21:2</a> (ya en estas páginas); el texto no lo dice.')
+_ency21_es("beeroth", "(2 Samuel 23:37; ni 21:2 ni 23:37 está todavía en estas páginas)", '(2 Samuel 23:37, todavía no en estas páginas)')
+_ency21_en("gibeon", "and 2 Samuel 21 records the consequence.", 'and <a href="2-samuel-21.html#v21-1">2 Samuel 21</a> records the consequence.')
+_ency21_en("gibeon", "2 Samuel 21:2 calls them &lsquo;the remnant of the Amorites&rsquo;, and there the oath of Joshua 9 is the reason given for a three-year famine after Saul tried to wipe them out.",
+    '<a href="2-samuel-21.html#v21-2">2 Samuel 21:2</a> calls them &lsquo;the remnant of the Amorites&rsquo; and names Israel&rsquo;s oath to them, and Jehovah gives Saul&rsquo;s putting them to death as the ground of a three-year famine (21:1); see <a href="encyclopedia.html#gibeonites">the Gibeonites</a>.')
+_ency21_es("gibeon", "y 2 Samuel 21 cuenta la consecuencia.", 'y <a href="2-samuel-21.es.html#v21-1">2 Samuel 21</a> cuenta la consecuencia.')
+_ency21_es("gibeon", "2 Samuel 21:2 los llama &laquo;el resto de los amorreos&raquo;, y allí el juramento de Josué 9 es la razón dada para un hambre de tres años después de que Saúl intentara exterminarlos.",
+    '<a href="2-samuel-21.es.html#v21-2">2 Samuel 21:2</a> los llama &laquo;el resto de los amorreos&raquo; y nombra el juramento de Israel a ellos, y Jehová da la muerte que Saúl les dio como fundamento de un hambre de tres años (21:1); véase <a href="enciclopedia.html#gibeonites">los gabaonitas</a>.')
+_ency21_en("mephibosheth", None, None, add=' ⭐ The king spares him &lsquo;because of the oath of Jehovah that was between them, between David and Jonathan&rsquo; when seven of Saul&rsquo;s sons are given to the Gibeonites (<a href="2-samuel-21.html#v21-7">2 Samuel 21:7</a>, now on these pages); Rizpah&rsquo;s son of the same name is taken (<a href="encyclopedia.html#sons-of-rizpah">21:8</a>).')
+_ency21_es("mephibosheth", None, None, add=' ⭐ El rey lo perdona «por el juramento de Jehová que había entre ellos, entre David y Jonatán» cuando siete hijos de Saúl son entregados a los gabaonitas (<a href="2-samuel-21.es.html#v21-7">2 Samuel 21:7</a>, ya en estas páginas); el hijo de Rizpa del mismo nombre es tomado (<a href="enciclopedia.html#sons-of-rizpah">21:8</a>).')
+_ency21_en("abishai", None, None, add=' ⭐ He helps David against Ishbi-benob and kills the Philistine, and David&rsquo;s men swear he will go out no more to battle (<a href="2-samuel-21.html#v21-17">2 Samuel 21:17</a>, now on these pages).')
+_ency21_es("abishai", None, None, add=' ⭐ Auxilia a David contra Isbi-benob y mata al filisteo, y los hombres de David juran que no saldrá más a la batalla (<a href="2-samuel-21.es.html#v21-17">2 Samuel 21:17</a>, ya en estas páginas).')
+_ency21_en("rephaim", None, None, add=' ⭐ Four Philistines of Gath are &lsquo;born to the Rapha&rsquo; in <a href="2-samuel-21.html#v21-16">2 Samuel 21:16&ndash;22</a> (now on these pages; see <em><a href="dictionary.html#harapha">harapha</a></em>): Ishbi-benob, Saph, the man of Gath with six fingers and six toes on each limb, and Goliath the Gittite, and they fall by the hand of David and his servants.')
+_ency21_es("rephaim", None, None, add=' ⭐ Cuatro filisteos de Gat son «nacidos de la Rafa» en <a href="2-samuel-21.es.html#v21-16">2 Samuel 21:16–22</a> (ya en estas páginas; véase <em><a href="diccionario.html#harapha">harapha</a></em>): Isbi-benob, Saf, el hombre de Gat con seis dedos en cada mano y en cada pie, y Goliat el geteo, y caen por la mano de David y de sus siervos.')
+_ency21_en("jabesh-gilead", None, None, add=' ⭐ Its men are the ones from whom David takes the bones of Saul and Jonathan, who had &lsquo;stolen&rsquo; them from the broad place of Beth-shan (<a href="2-samuel-21.html#v21-12">2 Samuel 21:12</a>, now on these pages).')
+_ency21_es("jabesh-gilead", None, None, add=' ⭐ Sus hombres son aquellos de quienes David toma los huesos de Saúl y de Jonatán, que los habían «robado» de la plaza de Bet-seán (<a href="2-samuel-21.es.html#v21-12">2 Samuel 21:12</a>, ya en estas páginas).')
+_ency21_en("kish", None, None, add=' ⭐ David has the bones of Saul and Jonathan buried in Zela, in the grave of Kish his father (<a href="2-samuel-21.html#v21-14">2 Samuel 21:14</a>, now on these pages).')
+_ency21_es("kish", None, None, add=' ⭐ David hace sepultar los huesos de Saúl y de Jonatán en Zela, en el sepulcro de Cis su padre (<a href="2-samuel-21.es.html#v21-14">2 Samuel 21:14</a>, ya en estas páginas).')
+_ency21_en("gath", None, None, add=' ⭐ The man with six fingers and six toes on each limb is at Gath in <a href="2-samuel-21.html#v21-20">2 Samuel 21:20&ndash;22</a> (now on these pages), where the four born to the Rapha fall.')
+_ency21_es("gath", None, None, add=' ⭐ El hombre con seis dedos en cada mano y en cada pie está en Gat en <a href="2-samuel-21.es.html#v21-20">2 Samuel 21:20–22</a> (ya en estas páginas), donde caen los cuatro nacidos de la Rafa.')
+
+_ency21_en("beth-shean", None, None, add=' ⭐ <a href="2-samuel-21.html#v21-12">2 Samuel 21:12</a> (now on these pages) calls the place &lsquo;the broad place of Beth-shan&rsquo;, <em>rechov Beit-shan</em>, where the Philistines &lsquo;hanged&rsquo; Saul and Jonathan, and says the men of Jabesh-gilead &lsquo;stole&rsquo; the bones from it.')
+_ency21_es("beth-shean", None, None, add=' ⭐ <a href="2-samuel-21.es.html#v21-12">2 Samuel 21:12</a> (ya en estas páginas) llama al lugar «la plaza de Bet-seán», <em>rechov Beit-shan</em>, donde los filisteos «colgaron» a Saúl y a Jonatán, y dice que los hombres de Jabes de Galaad «robaron» de ella los huesos.')
+
+_REFS21 = {
+    "goliath": [("2 Samuel", 21, 19)],
+    "adriel": [("2 Samuel", 21, 8)],
+    "rizpah": [("2 Samuel", 21, 8)],
+    "beeroth": [("2 Samuel", 21, 2)],
+    "gibeon": [("2 Samuel", 21, 1)],
+    "mephibosheth": [("2 Samuel", 21, 7)],
+    "abishai": [("2 Samuel", 21, 17)],
+    "rephaim": [("2 Samuel", 21, 16)],
+    "jabesh-gilead": [("2 Samuel", 21, 12)],
+    "kish": [("2 Samuel", 21, 14)],
+    "gath": [("2 Samuel", 21, 20)],
+    "beth-shean": [("2 Samuel", 21, 12)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS21:
+        _have = set(_e["refs"])
+        _e["refs"] = list(_e["refs"]) + [_r for _r in _REFS21[_e["slug"]] if _r not in _have]
+
+CHRON_CHAPTERS["2sam21"] = dict(era="monarchy",
+    when="A famine of three years in the days of David; he seeks the face of Jehovah, who says it is on Saul and the house of bloodshed because he put the Gibeonites to death. The Gibeonites, of the remnant of the Amorites to whom Israel had sworn, refuse silver and gold and ask for seven of Saul’s sons to hang before Jehovah in Gibeah of Saul. The king spares Mephibosheth son of Jonathan because of the oath of Jehovah, takes Rizpah’s two sons, Armoni and Mephibosheth, and the five sons of Michal, and gives them to the Gibeonites, who hang them on the mountain at the beginning of barley harvest. Rizpah spreads sackcloth on the rock and keeps the birds and the beasts from the bodies until water is poured on them from the heavens. David takes the bones of Saul and Jonathan from the men of Jabesh-gilead, gathers the bones of the hanged, and buries them in Zela in the grave of Kish; after that God is entreated for the land. Four wars with the Philistines follow: Ishbi-benob, whom Abishai kills; Saph, killed by Sibbecai; Goliath the Gittite, struck down by Elhanan; and the man with twenty-four fingers and toes, killed by Jonathan son of Shimeah.",
+    clock="After Sheba’s revolt, in the years of David’s reign in Jerusalem: a famine of three years, the Gibeonites’ price, the burial of the bones at Zela, and the wars at Gob and Gath.")
+
+CHAPTER_ART["2sam21"] = [dict(
+    file="dore-rizpah-kindness-toward-the-dead.jpg",
+    title="Rizpah’s Kindness toward the Dead", title_es="La bondad de Rizpa hacia los muertos",
+    artist="Gustave Doré",
+    year="1866",
+    location="Illustration in Doré’s English Bible (London, 1866)", location_es="Ilustración de la Biblia inglesa de Doré (Londres, 1866)",
+    alt="A black-and-white wood engraving of a dusk landscape. At the upper left, on a rocky rise, stand three tall wooden posts with dark bodies hanging from them. In the middle a robed woman, seen from the side and bending back, swings a long stick or branch up toward a flock of large birds in the sky. At the lower left and right, wolf-like animals snarl and close in on her from both sides, and more crowd at the horizon on the right. Clouds fill the sky above a flat, distant shore.",
+    note="2 Samuel 21:10. The title is the one Commons gives the plate. Doré shows Rizpah keeping off the birds of the heavens by day and the beasts of the field by night in one picture, as the verse says she did; the stick in her hand is his, and the Hebrew does not mention one. He draws three posts with the bodies, where the text has seven men hanged on the mountain (verse 9), and he has her standing against the animals rather than spreading sackcloth on the rock; the sackcloth is not in the picture.",
+    note_es="2 Samuel 21:10. El título es el que Commons da a la lámina. Doré muestra a Rizpa alejando las aves de los cielos de día y las fieras del campo de noche en una sola imagen, como dice el versículo que hizo; el palo en su mano es suyo, y el hebreo no menciona ninguno. Dibuja tres postes con los cuerpos, donde el texto tiene siete hombres colgados en el monte (versículo 9), y la hace estar de pie frente a los animales en lugar de extender el saco sobre la roca; el saco no está en la imagen.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:082.Rizpah%E2%80%99s_Kindness_toward_the_Dead.jpg",
+)]
