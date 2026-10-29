@@ -54520,3 +54520,150 @@ CHAPTER_ART["2sam22"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Davids_lofzang,_RP-P-2015-17-119-1.jpg",
 )]
+# --- 2 Samuel 23 ---
+def _swap23(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D23 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict23_en(slug, old=None, new=None, add=None):
+    _i = _D23[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap23(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict23_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap23(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency23_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap23(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency23_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap23(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- extended dictionary entries ----------
+_dict23_en("neum", None, None, add=' ⭐ &lsquo;And the utterance of the man&rsquo;, <em>unne&rsquo;um hagever</em>, opens David&rsquo;s last words (<a href="2-samuel-23.html#v23-1">2 Samuel 23:1</a>, now on these pages), the same words as Balaam&rsquo;s two oracles (<a href="numbers-24.html#v24-3">Numbers 24:3, 15</a>); <span data-heb="ונאם הגבר">the phrase stands in three verses</span>.')
+_dict23_es("neum", None, None, add=' ⭐ «Y la expresión del hombre», <em>unne’um hagever</em>, abre las últimas palabras de David (<a href="2-samuel-23.es.html#v23-1">2 Samuel 23:1</a>, ya en estas páginas), las mismas palabras de los dos oráculos de Balaam (<a href="numbers-24.es.html#v24-3">Números 24:3, 15</a>); <span data-heb="ונאם הגבר">la frase está en tres versículos</span>.')
+_dict23_en("brit", None, None, add=' ⭐ &lsquo;An eternal covenant&rsquo;, <em>berit olam</em>, is what David says Jehovah has set for him, &lsquo;ordered in everything and kept&rsquo; (<a href="2-samuel-23.html#v23-5">2 Samuel 23:5</a>, now on these pages); <span data-heb="ברית">the word stands in six verses of 2 Samuel</span>: 3:12, 13, 21; 5:3; 15:24; and this one.')
+_dict23_es("brit", None, None, add=' ⭐ «Un pacto eterno», <em>berit olam</em>, es lo que David dice que Jehová ha puesto para él, «ordenado en todo y guardado» (<a href="2-samuel-23.es.html#v23-5">2 Samuel 23:5</a>, ya en estas páginas); <span data-heb="ברית">la palabra está en seis versículos de 2 Samuel</span>: 3:12, 13, 21; 5:3; 15:24; y este.')
+_dict23_en("cheraf", None, None, add=' ⭐ &lsquo;When they defied the Philistines&rsquo;, <em>bechorefam</em>, begins the story of Eleazar son of Dodo (<a href="2-samuel-23.html#v23-9">2 Samuel 23:9</a>, now on these pages); the verb is the one of Goliath&rsquo;s taunt (<a href="1-samuel-17.html#v17-10">1 Samuel 17:10</a>) and of the Gittite&rsquo;s (<a href="2-samuel-21.html#v21-21">2 Samuel 21:21</a>).')
+_dict23_es("cheraf", None, None, add=' ⭐ «Cuando injuriaron a los filisteos», <em>bechorefam</em>, empieza la historia de Eleazar hijo de Dodó (<a href="2-samuel-23.es.html#v23-9">2 Samuel 23:9</a>, ya en estas páginas); el verbo es el de la injuria de Goliat (<a href="1-samuel-17.es.html#v17-10">1 Samuel 17:10</a>) y del hombre de Gat (<a href="2-samuel-21.es.html#v21-21">2 Samuel 21:21</a>).')
+_dict23_en("davaq", None, None, add=' ⭐ Eleazar&rsquo;s &lsquo;hand clung to the sword&rsquo; (<a href="2-samuel-23.html#v23-10">2 Samuel 23:10</a>, now on these pages): the verb that joined Judah to its king in <a href="2-samuel-20.html#v20-2">2 Samuel 20:2</a>.')
+_dict23_es("davaq", None, None, add=' ⭐ La «mano se pegó a la espada» de Eleazar (<a href="2-samuel-23.es.html#v23-10">2 Samuel 23:10</a>, ya en estas páginas): el verbo que unió a Judá con su rey en <a href="2-samuel-20.es.html#v20-2">2 Samuel 20:2</a>.')
+_dict23_en("natsal", None, None, add=' ⭐ In the field of lentils the man who stood in the midst of the plot &lsquo;delivered it&rsquo;, <em>vayyatsilehah</em> (<a href="2-samuel-23.html#v23-12">2 Samuel 23:12</a>, now on these pages).')
+_dict23_es("natsal", None, None, add=' ⭐ En el campo de lentejas el que se plantó en medio de la porción «la libró», <em>vayyatsilehah</em> (<a href="2-samuel-23.es.html#v23-12">2 Samuel 23:12</a>, ya en estas páginas).')
+_dict23_en("bor", None, None, add=' ⭐ David longs for water &lsquo;from the cistern of Bethlehem, which is by the gate&rsquo; (<a href="2-samuel-23.html#v23-15">2 Samuel 23:15</a>, now on these pages).')
+_dict23_es("bor", None, None, add=' ⭐ David anhela agua «de la cisterna de Belén, que está junto a la puerta» (<a href="2-samuel-23.es.html#v23-15">2 Samuel 23:15</a>, ya en estas páginas).')
+_dict23_en("mashiach", None, None, add=' ⭐ David is &lsquo;the anointed of the God of Jacob&rsquo; at the head of his last words (<a href="2-samuel-23.html#v23-1">2 Samuel 23:1</a>, now on these pages), after the &lsquo;his anointed&rsquo; that ends his song.')
+_dict23_es("mashiach", None, None, add=' ⭐ David es «el ungido del Dios de Jacob» a la cabeza de sus últimas palabras (<a href="2-samuel-23.es.html#v23-1">2 Samuel 23:1</a>, ya en estas páginas), después del «su ungido» que cierra su cántico.')
+_dict23_en("beliyaal", None, None, add=' ⭐ &lsquo;But the worthless are like thorns thrown away, all of them&rsquo;, <em>uvliyaal</em>, in David&rsquo;s last words (<a href="2-samuel-23.html#v23-6">2 Samuel 23:6</a>, now on these pages).')
+_dict23_es("beliyaal", None, None, add=' ⭐ «Pero los de la nada son como espino arrojado lejos, todos ellos», <em>uvliyaal</em>, en las últimas palabras de David (<a href="2-samuel-23.es.html#v23-6">2 Samuel 23:6</a>, ya en estas páginas).')
+_dict23_en("gibbor", None, None, add=' ⭐ &lsquo;These are the names of the mighty men whom David had&rsquo; opens the list of the Three and the Thirty (<a href="2-samuel-23.html#v23-8">2 Samuel 23:8</a>, now on these pages).')
+_dict23_es("gibbor", None, None, add=' ⭐ «Estos son los nombres de los valientes que tuvo David» abre la lista de los Tres y los Treinta (<a href="2-samuel-23.es.html#v23-8">2 Samuel 23:8</a>, ya en estas páginas).')
+_dict23_en("chalilah", None, None, add=' ⭐ &lsquo;Far be it from me, Jehovah, that I should do this&rsquo; is David&rsquo;s answer to the water of Bethlehem (<a href="2-samuel-23.html#v23-17">2 Samuel 23:17</a>, now on these pages), with Jehovah&rsquo;s name in the middle of it.')
+_dict23_es("chalilah", None, None, add=' ⭐ «Lejos esté de mí, Jehová, hacer esto» es la respuesta de David al agua de Belén (<a href="2-samuel-23.es.html#v23-17">2 Samuel 23:17</a>, ya en estas páginas), con el nombre de Jehová en medio.')
+
+# flips of old 'not yet' claims about this chapter
+_dict23_en("teshuah", "(2 Samuel 23:10, 12; 1 Chronicles 11:14)", '(<a href="2-samuel-23.html#v23-10">2 Samuel 23:10, 12</a>, now on these pages; 1 Chronicles 11:14, not yet on these pages)')
+_dict23_es("teshuah", "(2 Samuel 23:10, 12; 1 Crónicas 11:14)", '(<a href="2-samuel-23.es.html#v23-10">2 Samuel 23:10, 12</a>, ya en estas páginas; 1 Crónicas 11:14, todavía no en estas páginas)')
+_dict23_en("metsudah", "(2 Samuel 23:13&ndash;14, not yet on these pages)", '(<a href="2-samuel-23.html#v23-13">2 Samuel 23:13&ndash;14</a>, now on these pages)')
+_dict23_es("metsudah", "(2 Samuel 23:13&ndash;14, todavía no en estas páginas)", '(<a href="2-samuel-23.es.html#v23-13">2 Samuel 23:13&ndash;14</a>, ya en estas páginas)')
+_dict23_en("matsav", "(2 Samuel 23:14)", '(<a href="2-samuel-23.html#v23-14">2 Samuel 23:14</a>, now on these pages)')
+_dict23_en("matsav", "(Isaiah 22:19; none yet on these pages)", '(Isaiah 22:19, not yet on these pages)')
+_dict23_es("matsav", "(2 Samuel 23:14)", '(<a href="2-samuel-23.es.html#v23-14">2 Samuel 23:14</a>, ya en estas páginas)')
+_dict23_es("matsav", "(Isaías 22:19; ninguno todavía en estas páginas)", '(Isaías 22:19, todavía no en estas páginas)')
+_dict23_en("mishmaat", "(2 Samuel 23:23; 1 Chronicles 11:25)", '(<a href="2-samuel-23.html#v23-23">2 Samuel 23:23</a>, now on these pages; 1 Chronicles 11:25)')
+_dict23_en("mishmaat", "none of the three is yet on these pages", 'the other two are not yet on these pages')
+_dict23_es("mishmaat", "(2 Samuel 23:23; 1 Crónicas 11:25)", '(<a href="2-samuel-23.es.html#v23-23">2 Samuel 23:23</a>, ya en estas páginas; 1 Crónicas 11:25)')
+_dict23_es("mishmaat", "ninguno de los tres está todavía en estas páginas", 'los otros dos no están todavía en estas páginas')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="davids-mighty-men", name="David’s mighty men", kind="people", aliases=["David’s mighty men", "the mighty men of David"], refs=[("2 Samuel", 23, 8)], videos=[],
+    desc='The <em>gibborim</em> of <a href="2-samuel-23.html#v23-8">2 Samuel 23:8&ndash;39</a> (now on these pages): the Three &mdash; <a href="encyclopedia.html#josheb-basshebeth">Josheb-basshebeth</a>, <a href="encyclopedia.html#eleazar-son-of-dodo">Eleazar son of Dodo</a> and <a href="encyclopedia.html#shammah-son-of-agee">Shammah son of Agee</a> &mdash; then <a href="encyclopedia.html#abishai">Abishai</a>, who is chief of the Three but &lsquo;did not come to the Three&rsquo;, and <a href="encyclopedia.html#benaiah">Benaiah</a>, who &lsquo;was more honored than the Thirty&rsquo; and &lsquo;did not come to the Three&rsquo;; then the Thirty, listed by name with their towns and clans, ending with <a href="encyclopedia.html#uriah">Uriah the Hittite</a> and the sum &lsquo;thirty-seven in all&rsquo;. The Thirty include <a href="encyclopedia.html#asahel">Asahel</a>, whom Abner killed in <a href="2-samuel-2.html#v2-18">2 Samuel 2:18&ndash;23</a>, so the list covers the whole reign and not a single day. 1 Chronicles 11:10&ndash;47 has a parallel list (not yet on these pages). &#9888; The count depends on whether &lsquo;Jashen&rsquo; in verse 32 is a man: after verse 23 the names are thirty-one without him and thirty-two with him, and with the five already named the total is thirty-six or thirty-seven.'))
+ENCYCLOPEDIA_ES["davids-mighty-men"] = ("Los valientes de David",
+    'Los <em>gibborim</em> de <a href="2-samuel-23.es.html#v23-8">2 Samuel 23:8–39</a> (ya en estas páginas): los Tres — <a href="enciclopedia.html#josheb-basshebeth">Joseb-basébet</a>, <a href="enciclopedia.html#eleazar-son-of-dodo">Eleazar hijo de Dodó</a> y <a href="enciclopedia.html#shammah-son-of-agee">Sama hijo de Age</a> —, luego <a href="enciclopedia.html#abishai">Abisai</a>, que es jefe de los tres pero «no llegó a los tres», y <a href="enciclopedia.html#benaiah">Benaía</a>, que «fue más honrado que los treinta» y «no llegó a los tres»; luego los Treinta, listados por nombre con sus pueblos y sus clanes, que terminan con <a href="enciclopedia.html#uriah">Urías el heteo</a> y la suma «treinta y siete en total». Entre los Treinta está <a href="enciclopedia.html#asahel">Asael</a>, a quien Abner mató en <a href="2-samuel-2.es.html#v2-18">2 Samuel 2:18–23</a>, así que la lista cubre todo el reinado y no un solo día. 1 Crónicas 11:10–47 tiene una lista paralela (todavía no en estas páginas). &#9888; La cuenta depende de si «Jasén» del versículo 32 es un hombre: después del versículo 23 los nombres son treinta y uno sin él y treinta y dos con él, y con los cinco ya nombrados el total es treinta y seis o treinta y siete.')
+
+ENCYCLOPEDIA.append(dict(slug="josheb-basshebeth", name="Josheb-basshebeth", kind="person", aliases=["Josheb-basshebeth"], refs=[("2 Samuel", 23, 8)], videos=[],
+    desc='A Tahchemonite, &lsquo;chief of the Three&rsquo;, who stands first in the list of <a href="encyclopedia.html#davids-mighty-men">David&rsquo;s mighty men</a>; the verse adds &lsquo;he is Adino the Eznite&rsquo; (written <em>ha&rsquo;etsno</em>, read <em>ha&rsquo;etsni</em>) and &lsquo;over eight hundred slain at one time&rsquo; (<a href="2-samuel-23.html#v23-8">2 Samuel 23:8</a>, now on these pages). 1 Chronicles 11:11 has Jashobeam, son of a Hachmonite, who lifted his spear against three hundred (not yet on these pages), and the Greek of Rahlfs has <em>Iebosthe ho Chananaios</em>. &#9888; The page does not choose among the names or the numbers.'))
+ENCYCLOPEDIA_ES["josheb-basshebeth"] = ("Joseb-basébet",
+    'Un tacmonita, «jefe de los tres», que está primero en la lista de <a href="enciclopedia.html#davids-mighty-men">los valientes de David</a>; el versículo añade «él es Adino el eznita» (escrito <em>ha’etsno</em>, leído <em>ha’etsni</em>) y «sobre ochocientos muertos de una vez» (<a href="2-samuel-23.es.html#v23-8">2 Samuel 23:8</a>, ya en estas páginas). 1 Crónicas 11:11 tiene a Jasobam, hijo de un hacmonita, que alzó su lanza contra trescientos (todavía no en estas páginas), y el griego de Rahlfs tiene <em>Iebosthe ho Chananaios</em>. &#9888; La página no elige entre los nombres ni entre las cifras.')
+
+ENCYCLOPEDIA.append(dict(slug="eleazar-son-of-dodo", name="Eleazar son of Dodo", kind="person", aliases=["Eleazar son of Dodo"], refs=[("2 Samuel", 23, 9)], videos=[],
+    desc='The second of the Three (<a href="2-samuel-23.html#v23-9">2 Samuel 23:9&ndash;10</a>, now on these pages): when the Philistines were defied and the men of Israel went up, he rose and struck them &lsquo;until his hand was weary, and his hand clung to the sword&rsquo;, and &lsquo;Jehovah wrought a great salvation that day&rsquo;. His father&rsquo;s name is written <em>Dodai</em>. The NIV names the place Pas-dammim, which is the place of 1 Chronicles 11:13 (not yet on these pages). &#9888; Not to be confused with <a href="encyclopedia.html#eleazar">Eleazar</a> the son of Aaron.'))
+ENCYCLOPEDIA_ES["eleazar-son-of-dodo"] = ("Eleazar hijo de Dodó",
+    'El segundo de los Tres (<a href="2-samuel-23.es.html#v23-9">2 Samuel 23:9–10</a>, ya en estas páginas): cuando se injurió a los filisteos y los hombres de Israel subieron, él se levantó y los hirió «hasta que se cansó su mano, y su mano se pegó a la espada», y «Jehová hizo una gran salvación aquel día». El nombre de su padre está escrito <em>Dodai</em>. La NVI nombra el lugar Pasdamín, que es el lugar de 1 Crónicas 11:13 (todavía no en estas páginas). &#9888; No debe confundirse con <a href="enciclopedia.html#eleazar">Eleazar</a> hijo de Aarón.')
+
+ENCYCLOPEDIA.append(dict(slug="shammah-son-of-agee", name="Shammah son of Agee", kind="person", aliases=["Shammah son of Agee"], refs=[("2 Samuel", 23, 11)], videos=[],
+    desc='The third of the Three: &lsquo;Shammah son of Agee the Hararite&rsquo;, who stood in the midst of a plot of the field full of lentils when the Philistines gathered and the people fled, and &lsquo;delivered it&rsquo;, so that &lsquo;Jehovah wrought a great salvation&rsquo; (<a href="2-samuel-23.html#v23-11">2 Samuel 23:11&ndash;12</a>, now on these pages). 1 Chronicles 11:13 has barley where this verse has lentils (not yet on these pages).'))
+ENCYCLOPEDIA_ES["shammah-son-of-agee"] = ("Sama hijo de Age",
+    'El tercero de los Tres: «Sama hijo de Age el hararita», que se plantó en medio de una porción del campo llena de lentejas cuando los filisteos se juntaron y el pueblo huyó, y «la libró», de modo que «Jehová hizo una gran salvación» (<a href="2-samuel-23.es.html#v23-11">2 Samuel 23:11–12</a>, ya en estas páginas). 1 Crónicas 11:13 tiene cebada donde este versículo tiene lentejas (todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="kabzeel", name="Kabzeel", kind="place", aliases=["Kabzeel"], coords=(31.2, 35.05, 0.5), approx=True,
+    modern="Uncertain; reference works place it in the Negev of Judah (reported)", refs=[("2 Samuel", 23, 20)], videos=[],
+    desc='The town of <a href="encyclopedia.html#benaiah">Benaiah son of Jehoiada</a> (<a href="2-samuel-23.html#v23-20">2 Samuel 23:20</a>, now on these pages). Joshua 15:21 lists it among the towns of Judah &lsquo;toward the border of Edom, in the Negev&rsquo; (<a href="joshua-15.html#v15-21">Joshua 15:21</a>, now on these pages), and <span data-heb="קבצאל">the name stands in four verses</span>: that one, this one, 1 Chronicles 11:22 and, as Jekabzeel, Nehemiah 11:25 (the last two not yet on these pages). &#9888; The map point is approximate, and the identification of the site is the reference works&rsquo;, reported here and not checked.'))
+ENCYCLOPEDIA_ES["kabzeel"] = ("Cabseel",
+    'El pueblo de <a href="enciclopedia.html#benaiah">Benaía hijo de Joiada</a> (<a href="2-samuel-23.es.html#v23-20">2 Samuel 23:20</a>, ya en estas páginas). Josué 15:21 lo lista entre los pueblos de Judá «hacia la frontera de Edom, en el Négueb» (<a href="joshua-15.es.html#v15-21">Josué 15:21</a>, ya en estas páginas, todavía no en español), y <span data-heb="קבצאל">el nombre está en cuatro versículos</span>: ese, este, 1 Crónicas 11:22 y, como Jecabseel, Nehemías 11:25 (los dos últimos todavía no en estas páginas). &#9888; El punto del mapa es aproximado, y la identificación del sitio es la de las obras de consulta, que se informa aquí y no se comprobó.')
+
+# ---------- encyclopedia: extended ----------
+_ency23_en("david", None, None, add=' ⭐ In <a href="2-samuel-23.html#v23-1">2 Samuel 23:1&ndash;7</a> (now on these pages) these are &lsquo;the last words of David&rsquo;: &lsquo;the anointed of the God of Jacob&rsquo;, a ruler who is like the light of the morning, and an eternal covenant with his house; and in the same chapter he pours out to Jehovah the water of the cistern of Bethlehem (23:13&ndash;17).')
+_ency23_es("david", None, None, add=' ⭐ En <a href="2-samuel-23.es.html#v23-1">2 Samuel 23:1–7</a> (ya en estas páginas) están «las últimas palabras de David»: «el ungido del Dios de Jacob», un gobernante que es como la luz de la mañana, y un pacto eterno con su casa; y en el mismo capítulo derrama a Jehová el agua de la cisterna de Belén (23:13–17).')
+_ency23_en("abishai", None, None, add=' ⭐ In <a href="2-samuel-23.html#v23-18">2 Samuel 23:18&ndash;19</a> (now on these pages) he is chief of the Three and wields his spear over three hundred slain, but &lsquo;did not come to the Three&rsquo;.')
+_ency23_es("abishai", None, None, add=' ⭐ En <a href="2-samuel-23.es.html#v23-18">2 Samuel 23:18–19</a> (ya en estas páginas) es jefe de los tres y blande su lanza sobre trescientos muertos, pero «no llegó a los tres».')
+_ency23_en("benaiah", None, None, add=' ⭐ <a href="2-samuel-23.html#v23-20">2 Samuel 23:20&ndash;23</a> (now on these pages) gives his deeds: the two Ariels of Moab, the lion in the pit on a day of snow, and the Egyptian he killed with the Egyptian&rsquo;s own spear; he is from <a href="encyclopedia.html#kabzeel">Kabzeel</a> and David sets him over his guard.')
+_ency23_es("benaiah", None, None, add=' ⭐ <a href="2-samuel-23.es.html#v23-20">2 Samuel 23:20–23</a> (ya en estas páginas) da sus hechos: los dos Ariel de Moab, el león en el foso en un día de nieve, y el egipcio al que mató con la lanza del propio egipcio; es de <a href="enciclopedia.html#kabzeel">Cabseel</a> y David lo pone sobre su guardia.')
+_ency23_en("asahel", None, None, add=' ⭐ He is the first of the Thirty named after verse 23 (<a href="2-samuel-23.html#v23-24">2 Samuel 23:24</a>, now on these pages), long after Abner killed him.')
+_ency23_es("asahel", None, None, add=' ⭐ Es el primero de los Treinta nombrados después del versículo 23 (<a href="2-samuel-23.es.html#v23-24">2 Samuel 23:24</a>, ya en estas páginas), mucho después de que Abner lo matara.')
+_ency23_en("adullam", None, None, add=' ⭐ Three of the Thirty come down to David &lsquo;to the cave of Adullam&rsquo; while a Philistine garrison is in Bethlehem (<a href="2-samuel-23.html#v23-13">2 Samuel 23:13</a>, now on these pages).')
+_ency23_es("adullam", None, None, add=' ⭐ Tres de los Treinta descienden a David «a la cueva de Adulam» mientras una guarnición filistea está en Belén (<a href="2-samuel-23.es.html#v23-13">2 Samuel 23:13</a>, ya en estas páginas).')
+_ency23_en("ephes-dammim", None, None, add=' ⭐ The NIV prints Pas-dammim in <a href="2-samuel-23.html#v23-9">2 Samuel 23:9</a> (now on these pages), the name 1 Chronicles 11:13 has (not yet on these pages).')
+_ency23_es("ephes-dammim", None, None, add=' ⭐ La NVI imprime Pasdamín en <a href="2-samuel-23.es.html#v23-9">2 Samuel 23:9</a> (ya en estas páginas), el nombre que tiene 1 Crónicas 11:13 (todavía no en estas páginas).')
+_ency23_en("ira-the-jairite", None, None, add=' ⭐ Two more men are called Ira in <a href="2-samuel-23.html#v23-26">2 Samuel 23:26, 38</a> (now on these pages): Ira son of Ikkesh the Tekoite and Ira the Ithrite, both among the Thirty.')
+_ency23_es("ira-the-jairite", None, None, add=' ⭐ Dos hombres más se llaman Ira en <a href="2-samuel-23.es.html#v23-26">2 Samuel 23:26, 38</a> (ya en estas páginas): Ira hijo de Iqués el tecoíta e Ira el itrita, ambos entre los Treinta.')
+_ency23_en("ittai-the-gittite", None, None, add=' ⭐ <a href="2-samuel-23.html#v23-29">2 Samuel 23:29</a> (now on these pages) has an Ittai son of Ribai, of Gibeah of the sons of Benjamin, among the Thirty; he is not the Gittite.')
+_ency23_es("ittai-the-gittite", None, None, add=' ⭐ <a href="2-samuel-23.es.html#v23-29">2 Samuel 23:29</a> (ya en estas páginas) tiene a un Itai hijo de Ribai, de Guibeá de los hijos de Benjamín, entre los Treinta; no es el geteo.')
+_ency23_en("pirathon", None, None, add=' ⭐ <a href="2-samuel-23.html#v23-30">2 Samuel 23:30</a> (now on these pages) has a Benaiah the Pirathonite among the Thirty; he is not Benaiah son of Jehoiada.')
+_ency23_es("pirathon", None, None, add=' ⭐ <a href="2-samuel-23.es.html#v23-30">2 Samuel 23:30</a> (ya en estas páginas) tiene a un Benaía el piratonita entre los Treinta; no es Benaía hijo de Joiada.')
+_ency23_en("sibbecai", None, None, add=' ⭐ <a href="2-samuel-23.html#v23-27">2 Samuel 23:27</a> (now on these pages) has Mebunnai the Hushathite where 1 Chronicles 11:29 has Sibbecai the Hushathite (not yet on these pages); the text does not say they are the same man.')
+_ency23_es("sibbecai", None, None, add=' ⭐ <a href="2-samuel-23.es.html#v23-27">2 Samuel 23:27</a> (ya en estas páginas) tiene a Mebunai el husatita donde 1 Crónicas 11:29 tiene a Sibecai el husatita (todavía no en estas páginas); el texto no dice que sean el mismo hombre.')
+
+# flips of old 'not yet' claims
+_ency23_en("abiezer", "(2 Samuel 23:27; 1 Chronicles 7:18; 11:28; 27:12, none yet on these pages)", '(<a href="2-samuel-23.html#v23-27">2 Samuel 23:27</a>, now on these pages; 1 Chronicles 7:18; 11:28; 27:12, not yet on these pages)')
+_ency23_en("uriah", "in the very last verse of 2 Samuel 23.", 'in the very last verse of <a href="2-samuel-23.html#v23-39">2 Samuel 23</a> (now on these pages).')
+_ency23_es("uriah", "en el último versículo de 2 Samuel 23.", 'en el último versículo de <a href="2-samuel-23.es.html#v23-39">2 Samuel 23</a> (ya en estas páginas).')
+_ency23_en("beeroth", "(2 Samuel 23:37, not yet on these pages)", '(<a href="2-samuel-23.html#v23-37">2 Samuel 23:37</a>, now on these pages)')
+_ency23_es("beeroth", "(2 Samuel 23:37, todavía no en estas páginas)", '(<a href="2-samuel-23.es.html#v23-37">2 Samuel 23:37</a>, ya en estas páginas)')
+_ency23_en("eliam", "(2 Samuel 23:34, not yet on these pages)", '(<a href="2-samuel-23.html#v23-34">2 Samuel 23:34</a>, now on these pages)')
+_ency23_es("eliam", "(2 Samuel 23:34, todavía no en estas páginas)", '(<a href="2-samuel-23.es.html#v23-34">2 Samuel 23:34</a>, ya en estas páginas)')
+_ency23_en("ahithophel", "2 Samuel 23:34 (not yet on these pages)", '<a href="2-samuel-23.html#v23-34">2 Samuel 23:34</a> (now on these pages)')
+_ency23_es("ahithophel", "2 Samuel 23:34 (todavía no en estas páginas)", '<a href="2-samuel-23.es.html#v23-34">2 Samuel 23:34</a> (ya en estas páginas)')
+_ency23_en("elhanan", "2 Samuel 23:24 has an Elhanan son of Dodo of Bethlehem among the Thirty (not yet on these pages)", '<a href="2-samuel-23.html#v23-24">2 Samuel 23:24</a> has an Elhanan son of Dodo of Bethlehem among the Thirty (now on these pages)')
+_ency23_es("elhanan", "2 Samuel 23:24 tiene un Eljanán hijo de Dodó de Belén entre los Treinta (todavía no en estas páginas)", '<a href="2-samuel-23.es.html#v23-24">2 Samuel 23:24</a> tiene un Eljanán hijo de Dodó de Belén entre los Treinta (ya en estas páginas)')
+
+CHRON_CHAPTERS["2sam23"] = dict(era="monarchy",
+    when="David speaks his last words: the anointed of the God of Jacob, a ruler like the light of the morning, an eternal covenant with his house, the worthless like thorns thrown away. Then the list of his mighty men: the Three and their deeds, the water of Bethlehem that David pours out to Jehovah, Abishai and Benaiah, and the Thirty, ending with Uriah the Hittite and the sum thirty-seven.",
+    clock="After the song of the last chapter, near the end of David’s reign: his last words, and a list that runs back across the whole reign to Asahel and forward to Uriah.")
+
+CHAPTER_ART["2sam23"] = [dict(
+    file="aic-david-cistern-water-bethlehem.jpg",
+    title="King David Receiving the Cistern Water of Bethlehem", title_es="El rey David recibe el agua de la cisterna de Belén",
+    artist="Master of the Antwerp Adoration",
+    year="between 1505 and 1525",
+    location="Oil on panel, Art Institute of Chicago (1936.127)", location_es="Óleo sobre tabla, Art Institute of Chicago (1936.127)",
+    alt="A tall, narrow painting of an old bearded king in a fur-collared blue and gold robe and dark cap, seated at the left under a green canopy. A kneeling soldier in gold armor and helmet, at the right, holds out a blue glass flask to him. Behind them stand a young man in a pink cloak holding a falcon, two other men and soldiers in steel armor with a pink banner; a gilded statue of a warrior stands on a column, and a walled city with towers is seen through arched openings. A chained monkey and a small animal sit on the checkered floor at the lower left.",
+    note="2 Samuel 23:15–17. The title is the museum&rsquo;s, and it says David <em>receives</em> the water. The verses say the opposite: the three men break through the Philistine camp and draw water from the cistern of Bethlehem, &lsquo;but he would not drink it, and poured it out to Jehovah&rsquo;. The painter has dressed the scene as a court of his own century, and it shows the moment of the offering, not the pouring out.",
+    note_es="2 Samuel 23:15–17. El título es el del museo, y dice que David <em>recibe</em> el agua. Los versículos dicen lo contrario: los tres hombres irrumpen en el campamento filisteo y sacan agua de la cisterna de Belén, «pero él no quiso beberla, y la derramó a Jehová». El pintor ha vestido la escena como una corte de su propio siglo, y muestra el momento de la ofrenda, no el derramar.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Antwerp_Mannerist_-_King_David_Receiving_the_Cistern_Water_of_Bethlehem_-_1936.127_-_Art_Institute_of_Chicago.jpg",
+)]
