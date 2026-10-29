@@ -53906,3 +53906,146 @@ CHAPTER_ART["2sam18"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:080.The_Death_of_Absalom.jpg",
 )]
+
+
+# --- 2 Samuel 19 ---
+def _swap19(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D19 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict19_en(slug, old=None, new=None, add=None):
+    _i = _D19[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap19(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict19_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap19(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency19_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap19(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency19_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap19(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("kilkal", "kilkal", "כִּלְכֵּל", "kilkal",
+    'TO SUSTAIN, to supply with food and provisions, to hold up. ⭐ Barzillai &lsquo;had sustained the king while he stayed at Mahanaim&rsquo;, and the king answers with the same verb, &lsquo;I will sustain you with me in Jerusalem&rsquo; (<a href="2-samuel-19.html#v19-33">2 Samuel 19:33&ndash;34</a>, now on these pages; the gifts themselves are in <a href="2-samuel-17.html#v17-27">17:27&ndash;29</a>). The ASV has &lsquo;sustain&rsquo;, the NIV &lsquo;provide for&rsquo; and the NWT 1984 &lsquo;supply with food&rsquo;.',
+    ("2 Samuel", 19, 33)))
+DICTIONARY_ES["kilkal"] = ("kilkál",
+    'SUSTENTAR, proveer de alimento y de provisiones, sostener. ⭐ Barzilai «había sustentado al rey mientras este estuvo en Mahanaim», y el rey responde con el mismo verbo, «yo te sustentaré conmigo en Jerusalén» (<a href="2-samuel-19.es.html#v19-33">2 Samuel 19:33–34</a>, ya en estas páginas; los regalos mismos están en <a href="2-samuel-17.es.html#v17-27">17:27–29</a>). La RV 1909 tiene «dar provisión» y «dar de comer», la NVI «proporcionar» y la TNM 1987 «proveer de alimento».')
+
+DICTIONARY.append(("dabber-al-lev", "dabber al-lev", "דַּבֵּר עַל־לֵב", "dabber al-lev",
+    'TO SPEAK TO THE HEART &mdash; to speak tenderly, to comfort or to win over. <span data-heb="דבר על לב">In this form the words stand in five verses</span>: <a href="genesis-34.html#v34-3">Genesis 34:3</a>, where Shechem &lsquo;spoke to the girl&rsquo;s heart&rsquo;; <a href="genesis-50.html#v50-21">50:21</a>, where Joseph &lsquo;comforted them, and spoke to their heart&rsquo;; <a href="judges-19.html#v19-3">Judges 19:3</a>, where the Levite goes &lsquo;to speak to her heart and bring her back&rsquo; (all now on these pages); <a href="2-samuel-19.html#v19-8">2 Samuel 19:8</a>, where Joab tells David to go out and &lsquo;speak to the heart of your servants&rsquo; (now on these pages); and 2 Chronicles 32:6 (not yet on these pages). The ASV has &lsquo;speak comfortably&rsquo;, the NIV &lsquo;encourage&rsquo;, the NWT 1984 &lsquo;speak straight to the heart&rsquo;, the Douay &lsquo;speak to the satisfaction of&rsquo; and the TLB &lsquo;congratulate&rsquo;.',
+    ("2 Samuel", 19, 8)))
+DICTIONARY_ES["dabber-al-lev"] = ("dabbér al-lev",
+    'HABLAR AL CORAZÓN &mdash; hablar con ternura, consolar o ganar a alguien. <span data-heb="דבר על לב">En esta forma las palabras están en cinco versículos</span>: <a href="genesis-34.es.html#v34-3">Génesis 34:3</a>, donde Siquem «habló al corazón de la joven»; <a href="genesis-50.es.html#v50-21">50:21</a>, donde José «los consoló, y habló a su corazón»; <a href="judges-19.es.html#v19-3">Jueces 19:3</a>, donde el levita va «para hablarle al corazón y hacerla volver» (todos ya en estas páginas); <a href="2-samuel-19.es.html#v19-8">2 Samuel 19:8</a>, donde Joab dice a David que salga y «hable al corazón de tus siervos» (ya en estas páginas); y 2 Crónicas 32:6 (todavía no en estas páginas). La RV 1909 tiene «halagar», la NVI «animar» y la TNM 1987 «hablar directamente al corazón».')
+
+# ---------- extended dictionary entries ----------
+_dict19_en("ragaz", None, None, add=' ⭐ David &lsquo;was shaken&rsquo;, <em>vayyirgaz</em>, when he hears that Absalom is dead and goes up to the room over the gate to weep (<a href="2-samuel-19.html#v19-1">2 Samuel 19:1</a>, now on these pages; 18:33 in the English versions): the ASV and the Douay have &lsquo;much moved&rsquo;, the NIV &lsquo;shaken&rsquo; and the NWT 1984 &lsquo;disturbed&rsquo;.')
+_dict19_es("ragaz", None, None, add=' ⭐ David «se estremeció», <em>vayyirgaz</em>, cuando oye que Absalón ha muerto y sube a la habitación sobre la puerta a llorar (<a href="2-samuel-19.es.html#v19-1">2 Samuel 19:1</a>, ya en estas páginas; 18:33 en las versiones): la RV 1909 tiene «se turbó», la NVI «se estremeció» y la TNM 1987 «se perturbó».')
+_dict19_en("teshuah", None, None, add=' ⭐ <a href="2-samuel-19.html#v19-3">2 Samuel 19:3</a> (now on these pages): &lsquo;the salvation of that day was turned into mourning for all the people&rsquo;, because they heard the king was grieved for his son; the ASV, NIV and Douay have &lsquo;victory&rsquo; and the NWT 1984 &lsquo;salvation&rsquo;.')
+_dict19_es("teshuah", None, None, add=' ⭐ <a href="2-samuel-19.es.html#v19-3">2 Samuel 19:3</a> (ya en estas páginas): «la salvación de aquel día se volvió luto para todo el pueblo», porque oyeron que el rey estaba afligido por su hijo; la RV 1909 y la NVI tienen «victoria» y la TNM 1987 «salvación».')
+_dict19_en("kalam", "They are that verse, 2 Samuel 19:4 and 1 Chronicles 19:5 (neither yet on these pages).", 'They are that verse, <a href="2-samuel-19.html#v19-4">2 Samuel 19:4</a> (now on these pages) and 1 Chronicles 19:5 (not yet on these pages).')
+_dict19_es("kalam", "Son ese versículo, 2 Samuel 19:4 y 1 Crónicas 19:5 (ninguno todavía en estas páginas).", 'Son ese versículo, <a href="2-samuel-19.es.html#v19-4">2 Samuel 19:4</a> (ya en estas páginas) y 1 Crónicas 19:5 (todavía no en estas páginas).')
+_dict19_en("satan", "and 2 Samuel 19:23, where David says it of the sons of Zeruiah.", 'and <a href="2-samuel-19.html#v19-23">2 Samuel 19:23</a> (now on these pages), where David says it of the sons of Zeruiah.')
+_dict19_es("satan", "y 2 Samuel 19:23—", 'y <a href="2-samuel-19.es.html#v19-23">2 Samuel 19:23</a> (ya en estas páginas)—')
+_dict19_en("ganav", None, None, add=' ⭐ In <a href="2-samuel-19.html#v19-4">2 Samuel 19:4</a> the army &lsquo;stole in&rsquo; to the city like men put to shame, and in <a href="2-samuel-19.html#v19-42">19:42</a> Israel asks why Judah has &lsquo;stolen&rsquo; the king (both now on these pages); with 15:6 and 21:12 the verb stands in four verses of 2 Samuel, the last not yet on these pages.')
+_dict19_es("ganav", None, None, add=' ⭐ En <a href="2-samuel-19.es.html#v19-4">2 Samuel 19:4</a> el ejército «entró a escondidas» en la ciudad como hombres avergonzados, y en <a href="2-samuel-19.es.html#v19-42">19:42</a> Israel pregunta por qué Judá ha «robado» al rey (ambos ya en estas páginas); con 15:6 y 21:12 el verbo está en cuatro versículos de 2 Samuel, el último todavía no en estas páginas.')
+_dict19_en("mashiach", None, None, add=' ⭐ In <a href="2-samuel-19.html#v19-22">2 Samuel 19:22</a> (now on these pages) Abishai asks whether Shimei is not to die for cursing &lsquo;Jehovah&rsquo;s anointed&rsquo;, and here it is David; in the nine verses before it the anointed is Saul. Israel&rsquo;s own &lsquo;whom we anointed over us&rsquo;, said of the dead Absalom, is in 19:11.')
+_dict19_es("mashiach", None, None, add=' ⭐ En <a href="2-samuel-19.es.html#v19-22">2 Samuel 19:22</a> (ya en estas páginas) Abisai pregunta si Simei no ha de morir por maldecir «al ungido de Jehová», y aquí es David; en los nueve versículos anteriores el ungido es Saúl. El «a quien ungimos sobre nosotros» de Israel, dicho del Absalón muerto, está en 19:11.')
+_dict19_en("qalal", None, None, add=' ⭐ The man of Israel asks the man of Judah &lsquo;why did you make light of me?&rsquo;, <em>hekelotani</em>, from the root of Shimei&rsquo;s cursing (<a href="2-samuel-19.html#v19-44">2 Samuel 19:44</a>, now on these pages).')
+_dict19_es("qalal", None, None, add=' ⭐ El hombre de Israel pregunta al hombre de Judá «¿por qué me tuviste en poco?», <em>hekelotani</em>, de la raíz del maldecir de Simei (<a href="2-samuel-19.es.html#v19-44">2 Samuel 19:44</a>, ya en estas páginas).')
+_dict19_en("avon", None, None, add=' ⭐ Shimei at the Jordan: &lsquo;Let not my lord count iniquity against me&rsquo;, <em>al-yachashav-li adoni avon</em> (<a href="2-samuel-19.html#v19-20">2 Samuel 19:20</a>, now on these pages).')
+_dict19_es("avon", None, None, add=' ⭐ Simei en el Jordán: «No me impute mi señor iniquidad», <em>al-yachashav-li adoni avon</em> (<a href="2-samuel-19.es.html#v19-20">2 Samuel 19:20</a>, ya en estas páginas).')
+_dict19_en("yad", None, None, add=' ⭐ In the quarrel over the king the man of Israel says &lsquo;I have ten hands in the king&rsquo;, <em>eser yadot</em>, which the ASV, NIV and NWT 1984 print as &lsquo;ten parts&rsquo; or &lsquo;ten shares&rsquo; (<a href="2-samuel-19.html#v19-44">2 Samuel 19:44</a>, now on these pages).')
+_dict19_es("yad", None, None, add=' ⭐ En la disputa por el rey el hombre de Israel dice «yo tengo diez manos en el rey», <em>eser yadot</em>, que la RV 1909 y la TNM 1987 imprimen «diez partes» (<a href="2-samuel-19.es.html#v19-44">2 Samuel 19:44</a>, ya en estas páginas).')
+_dict19_en("shalom", None, None, add=' ⭐ Mephibosheth comes down to meet the king and has not tended his feet &lsquo;from the day the king went until the day he came in peace&rsquo;, and says &lsquo;my lord the king has come in peace to his house&rsquo; (<a href="2-samuel-19.html#v19-25">2 Samuel 19:25, 31</a>, now on these pages).')
+_dict19_es("shalom", None, None, add=' ⭐ Mefiboset baja al encuentro del rey y no se había cuidado los pies «desde el día en que el rey se fue hasta el día en que llegó en paz», y dice «mi señor el rey ha llegado en paz a su casa» (<a href="2-samuel-19.es.html#v19-25">2 Samuel 19:25, 31</a>, ya en estas páginas).')
+
+# ---------- new encyclopedia entry ----------
+ENCYCLOPEDIA.append(dict(slug="chimham", name="Chimham", kind="person", aliases=["Chimham", "Kimham"],
+    refs=[("2 Samuel", 19, 38)], videos=[],
+    desc='The man whom Barzillai asks the king to take over the Jordan in his own place (<a href="2-samuel-19.html#v19-38">2 Samuel 19:38</a>, now on these pages); the king says &lsquo;Chimham shall cross over with me, and I will do for him what is good in your eyes&rsquo; (19:39), and he crosses to Gilgal with the king (19:41). The name is written <em>Kimham</em> in verses 38 and 39 and <em>Kimhan</em> in 41. The page does not say whether he is Barzillai&rsquo;s son. Jeremiah 41:17 names a lodging &lsquo;of Chimham&rsquo; by Bethlehem (not yet on these pages).'))
+ENCYCLOPEDIA_ES["chimham"] = ("Quimam",
+    'El hombre a quien Barzilai pide al rey que lleve al otro lado del Jordán en su lugar (<a href="2-samuel-19.es.html#v19-38">2 Samuel 19:38</a>, ya en estas páginas); el rey dice «Quimam pasará conmigo, y yo haré por él lo que es bueno a tus ojos» (19:39), y pasa a Gilgal con el rey (19:41). El nombre está escrito <em>Kimham</em> en los versículos 38 y 39 y <em>Kimhan</em> en el 41. La página no dice si es hijo de Barzilai. Jeremías 41:17 nombra una posada «de Quimam» junto a Belén (todavía no en estas páginas).')
+
+# ---------- extended encyclopedia entries (flip the stale 'not yet' claims) ----------
+_ency19_en("absalom", "2 Samuel 19 is not yet on these pages.",
+    'in <a href="2-samuel-19.html#v19-1">2 Samuel 19</a> (now on these pages) David weeps for him in the room over the gate, &lsquo;My son Absalom, my son, my son Absalom! Would that I had died, I, in your place&rsquo; (19:1, 5), and the people who won the battle steal into the city as men put to shame; 2 Samuel 20 is not yet on these pages.')
+_ency19_es("absalom", "2 Samuel 19 todav&iacute;a no est&aacute; en estas p&aacute;ginas.",
+    'en <a href="2-samuel-19.es.html#v19-1">2 Samuel 19</a> (ya en estas p&aacute;ginas) David lo llora en la habitaci&oacute;n sobre la puerta, «¡Hijo m&iacute;o Absal&oacute;n, hijo m&iacute;o, hijo m&iacute;o Absal&oacute;n! ¡Ojal&aacute; hubiera muerto yo en tu lugar!» (19:1, 5), y el pueblo que gan&oacute; la batalla entra a escondidas en la ciudad como hombres avergonzados; 2 Samuel 20 todav&iacute;a no est&aacute; en estas p&aacute;ginas.')
+_ency19_en("ziba", "Mephibosheth&rsquo;s own account is in 2 Samuel 19:24&ndash;30 (not yet on these pages).",
+    'Mephibosheth&rsquo;s own account, that his servant deceived him, is in <a href="2-samuel-19.html#v19-25">2 Samuel 19:25&ndash;31</a> (now on these pages), where Ziba comes down to the Jordan with his fifteen sons and twenty servants and the king tells Mephibosheth &lsquo;you and Ziba divide the field&rsquo;.')
+_ency19_es("ziba", "la versión de Mefiboset está en 2 Samuel 19:24–30 (todavía no en estas páginas).",
+    'la versión de Mefiboset, que su siervo lo engañó, está en <a href="2-samuel-19.es.html#v19-25">2 Samuel 19:25–31</a> (ya en estas páginas), donde Siba baja al Jordán con sus quince hijos y sus veinte siervos y el rey dice a Mefiboset «tú y Siba repártanse el campo».')
+_ency19_en("shimei-son-of-gera", "What comes of him is in 2 Samuel 19:16&ndash;24 and 1 Kings 2:8&ndash;9, 36&ndash;46 (not yet on these pages).",
+    'In <a href="2-samuel-19.html#v19-17">2 Samuel 19:17&ndash;24</a> (now on these pages) he hurries down to the Jordan with a thousand men of Benjamin, falls before the king at the crossing and says that he has sinned, and the king swears to him &lsquo;You shall not die&rsquo;; what is said of him in 1 Kings 2:8&ndash;9, 36&ndash;46 is not yet on these pages.')
+_ency19_es("shimei-son-of-gera", "Lo que resulta de él está en 2 Samuel 19:16–24 y 1 Reyes 2:8–9, 36–46 (todavía no en estas páginas).",
+    'En <a href="2-samuel-19.es.html#v19-17">2 Samuel 19:17–24</a> (ya en estas páginas) baja deprisa al Jordán con mil hombres de Benjamín, se postra ante el rey en el cruce y dice que ha pecado, y el rey le jura «No morirás»; lo que se dice de él en 1 Reyes 2:8–9, 36–46 todavía no está en estas páginas.')
+_ency19_en("amasa", "What David says of him afterwards is in 2 Samuel 19:14 and 20:4, and Joab&rsquo;s killing of him is in 20:10 (not yet on these pages).",
+    'What David says of him is in <a href="2-samuel-19.html#v19-14">2 Samuel 19:14</a> (now on these pages), that he will be commander of the army before the king &lsquo;in place of Joab&rsquo;; the king&rsquo;s charge to him is in 20:4 and Joab&rsquo;s killing of him in 20:10 (not yet on these pages).')
+_ency19_es("amasa", "Lo que David dice de él después está en 2 Samuel 19:14 y 20:4, y la muerte que le da Joab en 20:10 (todavía no en estas páginas).",
+    'Lo que David dice de él está en <a href="2-samuel-19.es.html#v19-14">2 Samuel 19:14</a> (ya en estas páginas), que será jefe del ejército delante del rey «en lugar de Joab»; el encargo del rey a él está en 20:4 y la muerte que le da Joab en 20:10 (todavía no en estas páginas).')
+_ency19_en("barzillai-the-gileadite", "and asks to turn back and send Chimham in his place (2 Samuel 19:32&ndash;38); David&rsquo;s charge to Solomon is to show kindness to his sons (1 Kings 2:7). None of these is yet on these pages.",
+    'and asks to turn back and send <a href="encyclopedia.html#chimham">Chimham</a> in his place, and the king kisses and blesses him (<a href="2-samuel-19.html#v19-32">2 Samuel 19:32&ndash;40</a>, now on these pages); David&rsquo;s charge to Solomon is to show kindness to his sons (1 Kings 2:7, not yet on these pages).')
+_ency19_es("barzillai-the-gileadite", "y pide volverse y enviar a Quimam en su lugar (2 Samuel 19:32–38); el encargo de David a Salomón es que muestre bondad con sus hijos (1 Reyes 2:7). Ninguno de estos está todavía en estas páginas.",
+    'y pide volverse y enviar a <a href="enciclopedia.html#chimham">Quimam</a> en su lugar, y el rey lo besa y lo bendice (<a href="2-samuel-19.es.html#v19-32">2 Samuel 19:32–40</a>, ya en estas páginas); el encargo de David a Salomón es que muestre bondad con sus hijos (1 Reyes 2:7, todavía no en estas páginas).')
+_ency19_en("rogelim", "again in 2 Samuel 19:32, not yet on these pages", 'again in <a href="2-samuel-19.html#v19-32">2 Samuel 19:32</a>, now on these pages')
+_ency19_es("rogelim", "otra vez en 2 Samuel 19:32, todavía no en estas páginas", 'otra vez en <a href="2-samuel-19.es.html#v19-32">2 Samuel 19:32</a>, ya en estas páginas')
+_ency19_en("mephibosheth", None, None, add=' ⭐ In <a href="2-samuel-19.html#v19-25">2 Samuel 19:25&ndash;31</a> (now on these pages) he comes down to meet the king with his feet, mustache and clothes untended since the king left, says that his servant deceived him about saddling the donkey, and when the king says &lsquo;you and Ziba divide the field&rsquo; answers &lsquo;Let him take it all, since my lord the king has come in peace to his house&rsquo;.')
+_ency19_es("mephibosheth", None, None, add=' ⭐ En <a href="2-samuel-19.es.html#v19-25">2 Samuel 19:25–31</a> (ya en estas páginas) baja al encuentro del rey con los pies, el bigote y los vestidos sin cuidar desde que el rey se fue, dice que su siervo lo engañó acerca de aparejar el asno, y cuando el rey dice «tú y Siba repártanse el campo» responde «Que tome él todo, puesto que mi señor el rey ha llegado en paz a su casa».')
+_ency19_en("abishai", None, None, add=' ⭐ In <a href="2-samuel-19.html#v19-22">2 Samuel 19:22&ndash;23</a> (now on these pages) he asks that Shimei be put to death for cursing Jehovah&rsquo;s anointed, and David answers &lsquo;What to me and to you, sons of Zeruiah&rsquo;.')
+_ency19_es("abishai", None, None, add=' ⭐ En <a href="2-samuel-19.es.html#v19-22">2 Samuel 19:22–23</a> (ya en estas páginas) pide que Simei muera por maldecir al ungido de Jehová, y David responde «¿Qué tengo yo con ustedes, hijos de Sarvia?».')
+_ency19_en("joab", None, None, add=' ⭐ In <a href="2-samuel-19.html#v19-2">2 Samuel 19:2&ndash;9</a> (now on these pages) he tells the king that he has put to shame the faces of his servants and must speak to their heart, and the king goes out and sits in the gate; in 19:14 David offers Amasa the command of the army &lsquo;in place of Joab&rsquo;.')
+_ency19_es("joab", None, None, add=' ⭐ En <a href="2-samuel-19.es.html#v19-2">2 Samuel 19:2–9</a> (ya en estas páginas) dice al rey que ha avergonzado el rostro de sus siervos y debe hablar a su corazón, y el rey sale y se sienta en la puerta; en 19:14 David ofrece a Amasa el mando del ejército «en lugar de Joab».')
+_ency19_en("gilgal", None, None, add=' ⭐ Judah comes to Gilgal to bring David back over the Jordan, and the king crosses to Gilgal with Chimham (<a href="2-samuel-19.html#v19-16">2 Samuel 19:16, 41</a>, now on these pages).')
+_ency19_es("gilgal", None, None, add=' ⭐ Judá viene a Gilgal para hacer pasar a David de vuelta por el Jordán, y el rey pasa a Gilgal con Quimam (<a href="2-samuel-19.es.html#v19-16">2 Samuel 19:16, 41</a>, ya en estas páginas).')
+
+_REFS19 = {
+    "absalom": [("2 Samuel", 19, 1)],
+    "ziba": [("2 Samuel", 19, 17)],
+    "shimei-son-of-gera": [("2 Samuel", 19, 17)],
+    "amasa": [("2 Samuel", 19, 14)],
+    "barzillai-the-gileadite": [("2 Samuel", 19, 32)],
+    "mephibosheth": [("2 Samuel", 19, 25)],
+    "abishai": [("2 Samuel", 19, 22)],
+    "joab": [("2 Samuel", 19, 2)],
+    "gilgal": [("2 Samuel", 19, 16)],
+    "rogelim": [("2 Samuel", 19, 32)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS19:
+        _have = set(_e["refs"])
+        _e["refs"] = list(_e["refs"]) + [_r for _r in _REFS19[_e["slug"]] if _r not in _have]
+
+CHRON_CHAPTERS["2sam19"] = dict(era="monarchy",
+    when="David goes up to the room over the gate and weeps, ‘My son Absalom, my son, my son Absalom! Would that I had died, I, in your place’, and the salvation of the day is turned into mourning, the people stealing into the city as men put to shame. Joab tells him he has put to shame the faces of his servants and must speak to their heart, and the king sits in the gate. The people contend throughout the tribes about bringing the king back; David sends to Zadok and Abiathar to the elders of Judah, offers Amasa the army in place of Joab, and bends the heart of Judah as one man, and the king returns to the Jordan, where Judah comes to Gilgal. Shimei, with a thousand men of Benjamin and Ziba, meets him at the crossing, and the king swears to Shimei that he shall not die; Mephibosheth, who has not tended himself since the king left, says his servant deceived him, and the king says that he and Ziba divide the field; Barzillai the Gileadite crosses the Jordan with the king, declines to go to Jerusalem, and sends Chimham in his place, and the king kisses him and blesses him. At Gilgal the man of Israel and the man of Judah quarrel over the king, and the word of Judah is the harder.",
+    clock="The days after the battle in the forest of Ephraim: from the gate at Mahanaim to the crossing of the Jordan and Gilgal, with Judah and half of Israel bringing the king back.")
+
+CHAPTER_ART["2sam19"] = [dict(
+    file="dore-david-mourns-absalom.jpg",
+    title="David Mourns the Death of Absalom", title_es="David llora la muerte de Absalón",
+    artist="Gustave Doré",
+    year="1866",
+    location="Illustration in Doré’s English Bible (London, 1866)", location_es="Ilustración de la Biblia inglesa de Doré (Londres, 1866)",
+    alt="A black-and-white wood engraving of a stone court with a patterned frieze along its walls and a column at the left. At the center a tall robed figure stands on a low platform of steps with his face turned away toward the wall and both fists raised to his head. Around him courtiers react: at the left a man in a white tunic and turban looks on with a hand at his chest, with other men crowding behind him; at the lower center and right, robed men kneel and bow with their heads to the ground; at the right, a seated man with a staff leans forward, and an armored soldier with a round shield stands apart.",
+    note="2 Samuel 19:1–8. The title is the one Commons gives the plate. Doré shows the king with his face hidden and both fists raised, where the Hebrew has him cover his face and cry out (verse 5), and the people bowed low, the army that has just stolen into the city ‘as men put to shame’ (verse 4). He sets the scene in a pillared court; the text has the room over the gate (verse 1) and the gate itself (verse 9), and the picture draws neither.",
+    note_es="2 Samuel 19:1–8. El título es el que Commons da a la lámina. Doré muestra al rey con el rostro oculto y los dos puños levantados, donde el hebreo lo hace cubrirse el rostro y clamar (versículo 5), y al pueblo inclinado hasta el suelo, el ejército que acaba de entrar a escondidas en la ciudad «como hombres avergonzados» (versículo 4). Sitúa la escena en un patio con columnas; el texto tiene la habitación sobre la puerta (versículo 1) y la puerta misma (versículo 9), y la imagen no dibuja ninguna de las dos.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:081.David_Mourns_the_Death_of_Absalom.jpg",
+)]
