@@ -54667,3 +54667,142 @@ CHAPTER_ART["2sam23"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Antwerp_Mannerist_-_King_David_Receiving_the_Cistern_Water_of_Bethlehem_-_1936.127_-_Art_Institute_of_Chicago.jpg",
 )]
+# --- 2 Samuel 24 ---
+def _swap24(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D24 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict24_en(slug, old=None, new=None, add=None):
+    _i = _D24[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap24(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict24_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap24(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency24_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap24(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency24_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap24(_s, old, new)
+    if add: _s = _s + add
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("goren", "goren", "גֹּרֶן", "goren",
+    'A THRESHING FLOOR &mdash; the open, packed ground where grain is trodden and winnowed. It is the place where Uzzah took hold of the ark, &lsquo;the threshing floor of Nacon&rsquo; (<a href="2-samuel-6.html#v6-6">2 Samuel 6:6</a>, now on these pages), and where Boaz &lsquo;winnows barley tonight&rsquo; (<a href="ruth-3.html#v3-2">Ruth 3:2</a>, now on these pages). In <span data-heb="גרן" data-heb-read="גרן">2 Samuel the word stands in five verses</span>: 6:6 and verses 16, 18, 21 and 24 of <a href="2-samuel-24.html#v24-16">2 Samuel 24</a> (now on these pages), where the angel stands by &lsquo;the threshing floor of Araunah the Jebusite&rsquo; and David buys it for an altar. The ASV and KJV have &lsquo;threshing-floor&rsquo; and &lsquo;threshingfloor&rsquo;, the Douay &lsquo;thrashingfloor&rsquo;, and the NWT 1984 &lsquo;threshing floor&rsquo;.',
+    ("2 Samuel", 6, 6)))
+DICTIONARY_ES["goren"] = ("goren",
+    'UNA ERA &mdash; el suelo abierto y apisonado donde se trilla y se avienta el grano. Es el lugar donde Uza agarró el arca, «la era de Nacón» (<a href="2-samuel-6.es.html#v6-6">2 Samuel 6:6</a>, ya en estas páginas), y donde Booz «aventa cebada esta noche» (<a href="ruth-3.es.html#v3-2">Rut 3:2</a>, ya en estas páginas). <span data-heb="גרן" data-heb-read="גרן">En 2 Samuel la palabra está en cinco versículos</span>: 6:6 y los versículos 16, 18, 21 y 24 de <a href="2-samuel-24.es.html#v24-16">2 Samuel 24</a> (ya en estas páginas), donde el ángel está junto a «la era de Arauna el jebuseo» y David la compra para un altar.')
+
+DICTIONARY.append(("shut", "shut", "שׁוּט", "shut",
+    'TO GO TO AND FRO, to range about. The king orders Joab &lsquo;Go to and fro, please, through all the tribes of Israel&rsquo;, and the round of the census is told with the same verb: &lsquo;they went to and fro through all the land&rsquo; (<a href="2-samuel-24.html#v24-2">2 Samuel 24:2, 8</a>, now on these pages). It is the &lsquo;going to and fro in the earth&rsquo; that the Accuser claims in Job 1:7 and 2:2 (<a href="job-1.html#v1-7">Job 1:7</a>, now on these pages), and the &lsquo;eyes of Jehovah&rsquo; that &lsquo;run to and fro throughout the whole earth&rsquo; in Hanani&rsquo;s word to Asa (2 Chronicles 16:9, not yet on these pages). The NWT 1984 keeps one verb in both verses of 2 Samuel 24, &lsquo;move about&rsquo; and &lsquo;moving about&rsquo;; the ASV has &lsquo;to and fro&rsquo; and &lsquo;to and from&rsquo;.',
+    ("2 Samuel", 24, 2)))
+DICTIONARY_ES["shut"] = ("shut",
+    'IR DE UN LADO A OTRO, recorrer. El rey ordena a Joab «Recorre, por favor, todas las tribus de Israel», y la vuelta del censo se cuenta con el mismo verbo: «recorrieron toda la tierra» (<a href="2-samuel-24.es.html#v24-2">2 Samuel 24:2, 8</a>, ya en estas páginas). Es el «andar de un lado a otro de la tierra» que el acusador alega en Job 1:7 y 2:2 (Job 1:7, ya en estas páginas, todavía no en español), y los «ojos de Jehová» que «recorren toda la tierra» en la palabra de Hananí a Asa (2 Crónicas 16:9, todavía no en estas páginas). La TNM 1987 guarda un solo verbo en los dos versículos de 2 Samuel 24, «Muévete» y «moviéndose»; la RV 1909 tiene «Rodea» y «andado».')
+
+DICTIONARY.append(("mivtsar", "mivtsar", "מִבְצָר", "mivtsar",
+    'A FORTRESS, a fortified place &mdash; not the <em>metsudah</em> of David&rsquo;s hiding places (see <em><a href="dictionary.html#metsudah">metsudah</a></em>). It is the &lsquo;fortified cities&rsquo; that the Reubenites and Gadites will leave their little ones in (<a href="numbers-32.html#v32-17">Numbers 32:17</a>, now on these pages), and <span data-heb="מבצר צר">the &lsquo;fortress of Tyre&rsquo;, <em>mivtsar-Tsor</em>, stands in two verses</span>: Asher&rsquo;s border (<a href="joshua-19.html#v19-29">Joshua 19:29</a>) and the round of the census (<a href="2-samuel-24.html#v24-7">2 Samuel 24:7</a>, both now on these pages). The ASV has &lsquo;the stronghold of Tyre&rsquo; in 2 Samuel, the NIV &lsquo;the fortress of Tyre&rsquo;, the NWT 1984 &lsquo;the fortress of Tyre&rsquo; and the Douay &lsquo;the walls of Tyre&rsquo;.',
+    ("Numbers", 32, 17)))
+DICTIONARY_ES["mivtsar"] = ("mivtsar",
+    'UNA FORTALEZA, un lugar fortificado &mdash; no la <em>metsudah</em> de los escondites de David (véase <em><a href="diccionario.html#metsudah">metsudah</a></em>). Son las «ciudades fortificadas» donde los rubenitas y los gaditas dejarán a sus pequeños (<a href="numbers-32.es.html#v32-17">Números 32:17</a>, ya en estas páginas), y <span data-heb="מבצר צר">la «fortaleza de Tiro», <em>mivtsar-Tsor</em>, está en dos versículos</span>: la frontera de Aser (<a href="joshua-19.es.html#v19-29">Josué 19:29</a>) y la vuelta del censo (<a href="2-samuel-24.es.html#v24-7">2 Samuel 24:7</a>, ambos ya en estas páginas). La RV 1909 tiene «la fortaleza de Tiro», la NVI «la fortaleza de Tiro» y la TNM 1987 «el fuerte de Tiro».')
+
+# ---------- extended dictionary entries ----------
+_dict24_en("sut", None, None, add=' ⭐ <a href="2-samuel-24.html#v24-1">2 Samuel 24:1</a> (now on these pages) has no named subject: the ASV has &lsquo;he moved David against them&rsquo;, the NIV &lsquo;he incited David against them&rsquo; and the NWT 1984 &lsquo;when one incited David against them&rsquo;.')
+_dict24_es("sut", None, None, add=' ⭐ <a href="2-samuel-24.es.html#v24-1">2 Samuel 24:1</a> (ya en estas páginas) no tiene sujeto nombrado: la RV 1909 tiene «incitó á David contra ellos», la NVI «el Señor incitó a David contra el pueblo» y la TNM 1987 «cuando uno incitó a David contra ellos».')
+_dict24_en("paqad", None, None, add=' ⭐ &lsquo;Muster the people&rsquo; is the verb of the king&rsquo;s order to Joab (<a href="2-samuel-24.html#v24-2">2 Samuel 24:2, 4</a>, now on these pages), and of Exodus 30:12, &lsquo;when you muster them … that there be no plague among them&rsquo; (<a href="exodus-30.html#v30-12">Exodus 30:12</a>, now on these pages).')
+_dict24_es("paqad", None, None, add=' ⭐ «Pasen revista al pueblo» es el verbo de la orden del rey a Joab (<a href="2-samuel-24.es.html#v24-2">2 Samuel 24:2, 4</a>, ya en estas páginas), y de Éxodo 30:12, «cuando pases revista a ellos … para que no haya plaga entre ellos» (<a href="exodus-30.es.html#v30-12">Éxodo 30:12</a>, ya en estas páginas).')
+_dict24_en("chafets", None, None, add=' ⭐ Joab&rsquo;s question about the census, &lsquo;why does my lord the king delight in this thing?&rsquo; (<a href="2-samuel-24.html#v24-3">2 Samuel 24:3</a>, now on these pages).')
+_dict24_es("chafets", None, None, add=' ⭐ La pregunta de Joab sobre el censo, «¿por qué se deleita mi señor el rey en esto?» (<a href="2-samuel-24.es.html#v24-3">2 Samuel 24:3</a>, ya en estas páginas).')
+_dict24_en("sakhal", None, None, add=' ⭐ David&rsquo;s &lsquo;I have acted very foolishly&rsquo; after the census is the form <em>niskalti</em> (<a href="2-samuel-24.html#v24-10">2 Samuel 24:10</a>, now on these pages).')
+_dict24_es("sakhal", None, None, add=' ⭐ El «he obrado muy neciamente» de David después del censo es la forma <em>niskalti</em> (<a href="2-samuel-24.es.html#v24-10">2 Samuel 24:10</a>, ya en estas páginas).')
+_dict24_en("avon", None, None, add=' ⭐ &lsquo;Please take away the iniquity of your servant&rsquo; is David&rsquo;s prayer after the census (<a href="2-samuel-24.html#v24-10">2 Samuel 24:10</a>, now on these pages), with the verb of Nathan&rsquo;s &lsquo;Jehovah also has taken away your sin&rsquo; (<a href="2-samuel-12.html#v12-13">2 Samuel 12:13</a>).')
+_dict24_es("avon", None, None, add=' ⭐ «Quita, por favor, la iniquidad de tu siervo» es la oración de David después del censo (<a href="2-samuel-24.es.html#v24-10">2 Samuel 24:10</a>, ya en estas páginas), con el verbo del «También Jehová ha quitado tu pecado» de Natán (<a href="2-samuel-12.es.html#v12-13">2 Samuel 12:13</a>).')
+_dict24_en("rachamim", None, None, add=' ⭐ &lsquo;Let us fall, please, into the hand of Jehovah, for his mercies are many&rsquo; (<a href="2-samuel-24.html#v24-14">2 Samuel 24:14</a>, now on these pages).')
+_dict24_es("rachamim", None, None, add=' ⭐ «Caigamos, por favor, en la mano de Jehová, porque sus misericordias son muchas» (<a href="2-samuel-24.es.html#v24-14">2 Samuel 24:14</a>, ya en estas páginas).')
+_dict24_en("dever", None, None, add=' ⭐ &lsquo;And Jehovah gave a pestilence in Israel from the morning until the appointed time&rsquo; (<a href="2-samuel-24.html#v24-15">2 Samuel 24:15</a>, now on these pages), the word for the third of Gad&rsquo;s three things (24:13); the same event is called <em>maggefah</em>, &lsquo;plague&rsquo;, in 24:21 and 25.')
+_dict24_es("dever", None, None, add=' ⭐ «Y Jehová dio una peste en Israel desde la mañana hasta el tiempo señalado» (<a href="2-samuel-24.es.html#v24-15">2 Samuel 24:15</a>, ya en estas páginas), la palabra de la tercera de las tres cosas de Gad (24:13); el mismo suceso se llama <em>maggefah</em>, «plaga», en 24:21 y 25.')
+_dict24_en("maggefah", None, None, add=' ⭐ &lsquo;That the plague may be checked from upon the people&rsquo; (<a href="2-samuel-24.html#v24-21">2 Samuel 24:21, 25</a>, now on these pages), after the <em>dever</em> of verses 13 and 15; <span data-heb="ותעצר המגפה">&lsquo;and the plague was checked&rsquo; stands in six verses</span>, among them Numbers 17:13 and 25:8.')
+_dict24_es("maggefah", None, None, add=' ⭐ «A fin de que se detenga la plaga de sobre el pueblo» (<a href="2-samuel-24.es.html#v24-21">2 Samuel 24:21, 25</a>, ya en estas páginas), después del <em>dever</em> de los versículos 13 y 15; <span data-heb="ותעצר המגפה">«y se detuvo la plaga» está en seis versículos</span>, entre ellos Números 17:13 y 25:8.')
+_dict24_en("nacham", None, None, add=' ⭐ &lsquo;And the angel put out his hand toward Jerusalem to destroy it, and Jehovah relented of the evil&rsquo; (<a href="2-samuel-24.html#v24-16">2 Samuel 24:16</a>, now on these pages); <span data-heb="וינחם יהוה אל הרעה">the phrase with <em>el</em> stands in three verses</span>, here and Jeremiah 26:13, 19.')
+_dict24_es("nacham", None, None, add=' ⭐ «Y el ángel extendió su mano hacia Jerusalén para destruirla, y Jehová se arrepintió del mal» (<a href="2-samuel-24.es.html#v24-16">2 Samuel 24:16</a>, ya en estas páginas); <span data-heb="וינחם יהוה אל הרעה">la frase con <em>el</em> está en tres versículos</span>, este y Jeremías 26:13, 19.')
+_dict24_en("chinnam", None, None, add=' ⭐ &lsquo;I will not offer up to Jehovah my God burnt offerings for nothing&rsquo; (<a href="2-samuel-24.html#v24-24">2 Samuel 24:24</a>, now on these pages).')
+_dict24_es("chinnam", None, None, add=' ⭐ «No ofreceré a Jehová mi Dios holocaustos gratis» (<a href="2-samuel-24.es.html#v24-24">2 Samuel 24:24</a>, ya en estas páginas).')
+_dict24_en("atar", None, None, add=' ⭐ &lsquo;And Jehovah was entreated for the land, and the plague was checked from upon Israel&rsquo; ends the book (<a href="2-samuel-24.html#v24-25">2 Samuel 24:25</a>, now on these pages), with Jehovah as the subject where 21:14 has God.')
+_dict24_es("atar", None, None, add=' ⭐ «Y Jehová fue rogado por la tierra, y se detuvo la plaga de sobre Israel» termina el libro (<a href="2-samuel-24.es.html#v24-25">2 Samuel 24:25</a>, ya en estas páginas), con Jehová por sujeto donde 21:14 tiene a Dios.')
+_dict24_en("mizbeach", None, None, add=' ⭐ Gad says &lsquo;Go up, raise an altar to Jehovah&rsquo;, and David builds it on the threshing floor of Araunah (<a href="2-samuel-24.html#v24-18">2 Samuel 24:18, 25</a>, now on these pages).')
+_dict24_es("mizbeach", None, None, add=' ⭐ Gad dice «Sube, levanta un altar a Jehová», y David lo edifica en la era de Arauna (<a href="2-samuel-24.es.html#v24-18">2 Samuel 24:18, 25</a>, ya en estas páginas).')
+_dict24_en("olah", None, None, add=' ⭐ &lsquo;The oxen for the burnt offering&rsquo;, and David&rsquo;s &lsquo;burnt offerings for nothing&rsquo; (<a href="2-samuel-24.html#v24-22">2 Samuel 24:22, 24</a>, now on these pages).')
+_dict24_es("olah", None, None, add=' ⭐ «Los bueyes para el holocausto», y los «holocaustos gratis» de David (<a href="2-samuel-24.es.html#v24-22">2 Samuel 24:22, 24</a>, ya en estas páginas).')
+_dict24_en("qanah", None, None, add=' ⭐ &lsquo;No, but I will surely buy it from you for a price&rsquo;, <em>qanoh eqneh</em> (<a href="2-samuel-24.html#v24-24">2 Samuel 24:24</a>, now on these pages).')
+_dict24_es("qanah", None, None, add=' ⭐ «No, sino que ciertamente te lo compraré por un precio», <em>qanoh eqneh</em> (<a href="2-samuel-24.es.html#v24-24">2 Samuel 24:24</a>, ya en estas páginas).')
+_dict24_en("metsudah", None, None, add=' ⭐ The &lsquo;fortress of Tyre&rsquo; in <a href="2-samuel-24.html#v24-7">2 Samuel 24:7</a> (now on these pages) is a different word, <em>mivtsar</em> (see <em><a href="dictionary.html#mivtsar">mivtsar</a></em>).')
+_dict24_es("metsudah", None, None, add=' ⭐ La «fortaleza de Tiro» de <a href="2-samuel-24.es.html#v24-7">2 Samuel 24:7</a> (ya en estas páginas) es otra palabra, <em>mivtsar</em> (véase <em><a href="diccionario.html#mivtsar">mivtsar</a></em>).')
+
+# flips of old 'not yet' claims about this chapter
+_dict24_en("mashchit", "2 Samuel 24:16)", '<a href="2-samuel-24.html#v24-16">2 Samuel 24:16</a>, now on these pages)')
+_dict24_es("mashchit", "2 Samuel 24:16)", '<a href="2-samuel-24.es.html#v24-16">2 Samuel 24:16</a>, ya en estas páginas)')
+_dict24_en("satan", "in which 2 Samuel 24 has JEHOVAH incite David", 'in which <a href="2-samuel-24.html#v24-1">2 Samuel 24</a> has JEHOVAH incite David')
+_dict24_en("sakhal", "(2 Samuel 24:10, with its parallel 1 Chronicles 21:8), and the seer Hanani to King Asa (2 Chronicles 16:9), none of the last three yet on these pages", '(<a href="2-samuel-24.html#v24-10">2 Samuel 24:10</a>, now on these pages, with its parallel 1 Chronicles 21:8), and the seer Hanani to King Asa (2 Chronicles 16:9), neither of the last two yet on these pages')
+_dict24_es("sakhal", "(2 Samuel 24:10, con su paralelo 1 Crónicas 21:8), y el vidente Hananí al rey Asa (2 Crónicas 16:9), ninguno de los tres últimos todavía en estas páginas", '(<a href="2-samuel-24.es.html#v24-10">2 Samuel 24:10</a>, ya en estas páginas, con su paralelo 1 Crónicas 21:8), y el vidente Hananí al rey Asa (2 Crónicas 16:9), ninguno de los dos últimos todavía en estas páginas')
+_dict24_en("morag", "(2 Samuel 24:22; 1 Chronicles 21:23, neither yet on these pages)", '(<a href="2-samuel-24.html#v24-22">2 Samuel 24:22</a>, now on these pages; 1 Chronicles 21:23, not yet on these pages)')
+_dict24_es("morag", "(2 Samuel 24:22; 1 Crónicas 21:23, ninguno de los dos todavía en estas páginas)", '(<a href="2-samuel-24.es.html#v24-22">2 Samuel 24:22</a>, ya en estas páginas; 1 Crónicas 21:23, todavía no en estas páginas)')
+_dict24_en("sut", "(2 Samuel 24:1), where Chronicles", '(<a href="2-samuel-24.html#v24-1">2 Samuel 24:1</a>, now on these pages), where Chronicles')
+_dict24_es("sut", "(2 Samuel 24:1), donde Crónicas", '(<a href="2-samuel-24.es.html#v24-1">2 Samuel 24:1</a>, ya en estas páginas), donde Crónicas')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="araunah", name="Araunah", kind="person", aliases=["Araunah"], refs=[("2 Samuel", 24, 16)], videos=[],
+    desc='The Jebusite on whose threshing floor the angel of Jehovah stood when his hand was held (<a href="2-samuel-24.html#v24-16">2 Samuel 24:16</a>, now on these pages), and from whom David buys the floor and the oxen for fifty shekels of silver so that an altar can be built (<a href="2-samuel-24.html#v24-18">24:18&ndash;25</a>). The name is spelled several ways: written <em>haornah</em> and read <em>haaravnah</em> in verse 16, written <em>aranyah</em> and read <em>aravnah</em> in verse 18, <em>Araunah</em> after that; Chronicles has Ornan (1 Chronicles 21:15, not yet on these pages) and Rahlfs&rsquo; Greek <em>Orna</em>. Verse 23 calls him &lsquo;Araunah the king&rsquo;, and the page does not say why. &#9888; The Jebusites held Jerusalem until <a href="2-samuel-5.html#v5-6">2 Samuel 5:6&ndash;9</a>; the text does not say how Araunah came to be on the threshing floor after that, or what happened to him. See <a href="encyclopedia.html#jebusites">the Jebusites</a> and <a href="encyclopedia.html#araunahs-threshing-floor">his threshing floor</a>.'))
+ENCYCLOPEDIA_ES["araunah"] = ("Arauna",
+    'El jebuseo en cuya era estaba el ángel de Jehová cuando se detuvo su mano (<a href="2-samuel-24.es.html#v24-16">2 Samuel 24:16</a>, ya en estas páginas), y a quien David compra la era y los bueyes por cincuenta siclos de plata para poder edificar un altar (<a href="2-samuel-24.es.html#v24-18">24:18–25</a>). El nombre se escribe de varias maneras: escrito <em>haornah</em> y leído <em>haaravnah</em> en el versículo 16, escrito <em>aranyah</em> y leído <em>aravnah</em> en el versículo 18, <em>Arauna</em> después; Crónicas tiene Ornán (1 Crónicas 21:15, todavía no en estas páginas) y el griego de Rahlfs <em>Orna</em>. El versículo 23 lo llama «Arauna el rey», y la página no dice por qué. &#9888; Los jebuseos tuvieron Jerusalén hasta <a href="2-samuel-5.es.html#v5-6">2 Samuel 5:6–9</a>; el texto no dice cómo llegó Arauna a estar en la era después de eso, ni qué fue de él. Véanse <a href="enciclopedia.html#jebusites">los jebuseos</a> y <a href="enciclopedia.html#araunahs-threshing-floor">su era</a>.')
+
+ENCYCLOPEDIA.append(dict(slug="araunahs-threshing-floor", name="The threshing floor of Araunah", kind="place", aliases=["the threshing floor of Araunah", "Araunah’s threshing floor"], coords=(31.778, 35.2354, 0.15), approx=True,
+    modern="Often placed on the Temple Mount, on the strength of 2 Chronicles 3:1 (reported)", refs=[("2 Samuel", 24, 16)], videos=[],
+    desc='The place where &lsquo;the angel of Jehovah was by the threshing floor of Araunah the Jebusite&rsquo; (<a href="2-samuel-24.html#v24-16">2 Samuel 24:16</a>, now on these pages), where Gad tells David to &lsquo;raise an altar&rsquo; (24:18), and where David builds it and offers burnt offerings and peace offerings (24:25), after which &lsquo;the plague was checked from upon Israel&rsquo;. The chapter does not say what the place becomes. Chronicles says &lsquo;This is the house of Jehovah God&rsquo; (1 Chronicles 22:1) and that Solomon began to build &lsquo;in mount Moriah &hellip; in the threshing floor of Ornan the Jebusite&rsquo; (2 Chronicles 3:1; neither yet on these pages), and the reference works connect that mountain with <a href="encyclopedia.html#moriah">the land of Moriah</a> and with the <a href="encyclopedia.html#first-temple">first temple</a> (reported here, not decided). See <a href="encyclopedia.html#araunah">Araunah</a> and the word <em><a href="dictionary.html#goren">goren</a></em>. &#9888; The map point is approximate, and the placing on the Temple Mount is the reference works&rsquo;, reported here and not checked.'))
+ENCYCLOPEDIA_ES["araunahs-threshing-floor"] = ("La era de Arauna",
+    'El lugar donde «el ángel de Jehová estaba junto a la era de Arauna el jebuseo» (<a href="2-samuel-24.es.html#v24-16">2 Samuel 24:16</a>, ya en estas páginas), donde Gad dice a David que «levante un altar» (24:18), y donde David lo edifica y ofrece holocaustos y ofrendas de paz (24:25), tras lo cual «se detuvo la plaga de sobre Israel». El capítulo no dice en qué se convierte el lugar. Crónicas dice «Esta es la casa de Jehová Dios» (1 Crónicas 22:1) y que Salomón empezó a edificar «en el monte Moriah … en la era de Ornán el jebuseo» (2 Crónicas 3:1; ninguno todavía en estas páginas), y las obras de consulta relacionan ese monte con <a href="enciclopedia.html#moriah">la tierra de Moriah</a> y con el <a href="enciclopedia.html#first-temple">primer templo</a> (se informa aquí, no se decide). Véanse <a href="enciclopedia.html#araunah">Arauna</a> y la palabra <em><a href="diccionario.html#goren">goren</a></em>. &#9888; El punto del mapa es aproximado, y la ubicación en el monte del Templo es la de las obras de consulta, que se informa aquí y no se comprobó.')
+
+# ---------- encyclopedia: extended ----------
+_ency24_en("gad-prophet", None, None, add=' ⭐ In <a href="2-samuel-24.html#v24-11">2 Samuel 24:11&ndash;19</a> (now on these pages) the word of Jehovah &lsquo;had come&rsquo; to him before David rose, with &lsquo;three things&rsquo; for David to choose from, and at the end he tells David to raise the altar at <a href="encyclopedia.html#araunahs-threshing-floor">the threshing floor of Araunah</a>.')
+_ency24_es("gad-prophet", None, None, add=' ⭐ En <a href="2-samuel-24.es.html#v24-11">2 Samuel 24:11–19</a> (ya en estas páginas) la palabra de Jehová «había venido» a él, con «tres cosas» para que David escoja, y al final dice a David que levante el altar en <a href="enciclopedia.html#araunahs-threshing-floor">la era de Arauna</a>.')
+_ency24_en("jebusites", None, None, add=' ⭐ <a href="2-samuel-24.html#v24-16">2 Samuel 24:16&ndash;24</a> (now on these pages) is the one place where a Jebusite is named after the taking of the stronghold: <a href="encyclopedia.html#araunah">Araunah</a>, on his threshing floor.')
+_ency24_es("jebusites", None, None, add=' ⭐ <a href="2-samuel-24.es.html#v24-16">2 Samuel 24:16–24</a> (ya en estas páginas) es el único lugar donde se nombra a un jebuseo después de la toma de la fortaleza: <a href="enciclopedia.html#araunah">Arauna</a>, en su era.')
+_ency24_en("joab", None, None, add=' ⭐ In <a href="2-samuel-24.html#v24-2">2 Samuel 24:2&ndash;4</a> (now on these pages) he is told to muster the people, asks &lsquo;why does my lord the king delight in this thing?&rsquo;, and goes out when the king&rsquo;s word prevails against him; he gives the king the sum after nine months and twenty days (24:8&ndash;9).')
+_ency24_es("joab", None, None, add=' ⭐ En <a href="2-samuel-24.es.html#v24-2">2 Samuel 24:2–4</a> (ya en estas páginas) se le ordena pasar revista al pueblo, pregunta «¿por qué se deleita mi señor el rey en esto?», y sale cuando la palabra del rey prevalece contra él; da al rey la suma al cabo de nueve meses y veinte días (24:8–9).')
+_ency24_en("david", None, None, add=' ⭐ In <a href="2-samuel-24.html#v24-1">2 Samuel 24</a> (now on these pages) he is incited to number Israel and Judah, his heart strikes him, he chooses &lsquo;the hand of Jehovah&rsquo;, asks that Jehovah&rsquo;s hand be against him and his father&rsquo;s house, and buys the threshing floor of Araunah for fifty shekels of silver; &lsquo;Jehovah was entreated for the land&rsquo; ends the book.')
+_ency24_es("david", None, None, add=' ⭐ En <a href="2-samuel-24.es.html#v24-1">2 Samuel 24</a> (ya en estas páginas) es incitado a contar a Israel y a Judá, su corazón lo golpea, escoge «la mano de Jehová», pide que la mano de Jehová sea contra él y la casa de su padre, y compra la era de Arauna por cincuenta siclos de plata; «Jehová fue rogado por la tierra» termina el libro.')
+
+# flips of old 'not yet' claims
+_ency24_en("tyre", "2 Samuel 24:7 (not yet on these pages)", '<a href="2-samuel-24.html#v24-7">2 Samuel 24:7</a> (now on these pages)')
+_ency24_es("tyre", "2 Samuel 24:7 (todavía no en estas páginas)", '<a href="2-samuel-24.es.html#v24-7">2 Samuel 24:7</a> (ya en estas páginas)')
+_ency24_en("gad-prophet", "(2 Samuel 24:11&ndash;19, not yet on these pages)", '(<a href="2-samuel-24.html#v24-11">2 Samuel 24:11&ndash;19</a>, now on these pages)')
+_ency24_es("gad-prophet", "(2 Samuel 24:11&ndash;19, todavía no en estas páginas)", '(<a href="2-samuel-24.es.html#v24-11">2 Samuel 24:11–19</a>, ya en estas páginas)')
+_ency24_en("moriah", "bought by David for an altar after the plague (2 Samuel 24; 1 Chronicles 21)", 'bought by David for an altar after the plague (<a href="2-samuel-24.html#v24-18">2 Samuel 24</a>, now on these pages; 1 Chronicles 21)')
+
+CHRON_CHAPTERS["2sam24"] = dict(era="monarchy",
+    when="The anger of Jehovah burns against Israel again, and David is incited to number Israel and Judah. Joab objects and the king prevails; the officers go round the land in nine months and twenty days and report 800,000 and 500,000. David’s heart strikes him; Gad brings three things to choose from; David chooses the hand of Jehovah, and seventy thousand die from Dan to Beersheba until Jehovah relents. David buys the threshing floor of Araunah for fifty shekels of silver, builds an altar, and the plague is checked.",
+    clock="Late in David’s reign, after his last words: the book closes on a census, a plague and an altar bought at a price.")
+
+CHAPTER_ART["2sam24"] = [dict(
+    file="rijksmuseum-david-engel-des-doods-dorsvloer.jpg",
+    title="King David Sees the Angel of Death; King David Kneels Before the Altar on the Threshing Floor", title_es="El rey David ve al ángel de la muerte; el rey David se arrodilla ante el altar en la era",
+    artist="Caspar Luyken",
+    year="1698",
+    location="Etching, Rijksmuseum, Amsterdam (RP-P-OB-44.680)", location_es="Aguafuerte, Rijksmuseum, Ámsterdam (RP-P-OB-44.680)",
+    alt="Two black-and-white etchings, one above the other, numbered 387 and 388. In the upper one a bearded man in a long tunic kneels on a terrace beside a stone balustrade, his hands clasped at his face, while an angel with wings and a sword-like object in one hand stands in clouds at the upper right, above the buildings of a city. In the lower one a flame burns on a tall square altar at the left; a bearded man in armor kneels before it with a companion, several men stand behind, and an axe, a pan and other tools lie on the ground in front.",
+    note="2 Samuel 24:16&ndash;25. The titles are the museum&rsquo;s, and its catalogue says the plate is an illustration for a Dutch edition of Josephus (1698), so it follows that retelling as well as the chapter. The verses say that David &lsquo;saw the angel who was striking the people&rsquo; and spoke to Jehovah (24:17), and that he built the altar and offered burnt offerings and peace offerings (24:25); they do not say that he knelt, in either scene.",
+    note_es="2 Samuel 24:16–25. Los títulos son los del museo, y su catálogo dice que la lámina ilustra una edición neerlandesa de Josefo (1698), así que sigue ese relato además del capítulo. Los versículos dicen que David «vio al ángel que hería al pueblo» y habló a Jehová (24:17), y que edificó el altar y ofreció holocaustos y ofrendas de paz (24:25); no dicen que se arrodillara, en ninguna de las dos escenas.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Koning_David_ziet_de_engel_des_doods_Koning_David_knielt_voor_het_altaar_op_de_dorsvloer,_RP-P-OB-44.680.jpg",
+)]
