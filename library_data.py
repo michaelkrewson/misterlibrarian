@@ -54049,3 +54049,173 @@ CHAPTER_ART["2sam19"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:081.David_Mourns_the_Death_of_Absalom.jpg",
 )]
+
+
+# --- 2 Samuel 20 ---
+def _swap20(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D20 = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict20_en(slug, old=None, new=None, add=None):
+    _i = _D20[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap20(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict20_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap20(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency20_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap20(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency20_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap20(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+
+# ---------- new dictionary entry ----------
+DICTIONARY.append(("em", "em", "אֵם", "em",
+    'A MOTHER. Said of a person it is the ordinary word; said of a city, in the mouth of the wise woman of Abel, it is a title: Joab is trying to put to death &lsquo;a city and a mother in Israel&rsquo; (<a href="2-samuel-20.html#v20-19">2 Samuel 20:19</a>, now on these pages). ⭐ Deborah says of herself &lsquo;I arose, a mother in Israel&rsquo; (<a href="judges-5.html#v7">Judges 5:7</a>, now on these pages). <span data-heb-read="אם בישראל">&lsquo;A mother in Israel&rsquo;, <em>em beYisra&rsquo;el</em>, stands in two verses</span>, these two; the third verse that spells the same letters, 2 Kings 5:15, has &lsquo;if&rsquo;. The ASV has &lsquo;a mother in Israel&rsquo; in both, the NIV &lsquo;a city that is a mother in Israel&rsquo; for the second, the NWT 1984 &lsquo;a mother in Israel&rsquo; and Rahlfs&rsquo; Greek has <em>mētropolis</em> for it, a mother-city.',
+    ("Judges", 5, 7)))
+DICTIONARY_ES["em"] = ("em",
+    'UNA MADRE. Dicho de una persona es la palabra ordinaria; dicho de una ciudad, en boca de la mujer sabia de Abel, es un título: Joab procura dar muerte a «una ciudad y una madre en Israel» (<a href="2-samuel-20.es.html#v20-19">2 Samuel 20:19</a>, ya en estas páginas). ⭐ Débora dice de sí misma «me levanté, una madre en Israel» (<a href="judges-5.es.html#v7">Jueces 5:7</a>, ya en estas páginas). <span data-heb-read="אם בישראל">«Una madre en Israel», <em>em beYisra’el</em>, está en dos versículos</span>, estos dos; el tercer versículo que escribe las mismas letras, 2 Reyes 5:15, tiene «si». La RV 1909 tiene «una ciudad que es madre de Israel» para el segundo, la NVI «muy importante en Israel» y la TNM 1987 «una madre en Israel»; el griego de Rahlfs tiene <em>mētropolis</em>, una ciudad madre.')
+
+# ---------- extended dictionary entries ----------
+_dict20_en("beliyaal", None, None, add=' ⭐ Sheba son of Bichri is &lsquo;a man of worthlessness&rsquo;, <em>ish beliyaal</em>, in <a href="2-samuel-20.html#v20-1">2 Samuel 20:1</a> (now on these pages); the ASV has &lsquo;a base fellow&rsquo;, the NIV &lsquo;a troublemaker&rsquo; and the NWT 1984 &lsquo;a good-for-nothing man&rsquo;.')
+_dict20_es("beliyaal", None, None, add=' ⭐ Seba hijo de Bicri es «un hombre de la nada», <em>ish beliyaal</em>, en <a href="2-samuel-20.es.html#v20-1">2 Samuel 20:1</a> (ya en estas páginas); la RV 1909 tiene «un hombre perverso», la NVI «un malvado» y la TNM 1987 «un hombre que no servía para nada».')
+_dict20_en("shofar", None, None, add=' ⭐ Sheba blows it to raise Israel, &lsquo;every man to his tent&rsquo;, and Joab blows it to send them home when Sheba&rsquo;s head is thrown over the wall (<a href="2-samuel-20.html#v20-1">2 Samuel 20:1, 22</a>, now on these pages); <span data-heb="ויתקע בשפר">&lsquo;and he blew the horn&rsquo;, with the horn written without the letter vav, stands in those two verses</span>.')
+_dict20_es("shofar", None, None, add=' ⭐ Seba lo toca para alzar a Israel, «cada uno a su tienda», y Joab lo toca para mandarlos a casa cuando la cabeza de Seba es arrojada por encima del muro (<a href="2-samuel-20.es.html#v20-1">2 Samuel 20:1, 22</a>, ya en estas páginas); <span data-heb="ויתקע בשפר">«y tocó el cuerno», con el cuerno escrito sin la letra vav, está en esos dos versículos</span>.')
+_dict20_en("nachalah", None, None, add=' ⭐ Sheba cries &lsquo;no inheritance for us in the son of Jesse&rsquo;, and the wise woman of Abel asks Joab why he will &lsquo;swallow up the inheritance of Jehovah&rsquo; (<a href="2-samuel-20.html#v20-1">2 Samuel 20:1, 19</a>, now on these pages).')
+_dict20_es("nachalah", None, None, add=' ⭐ Seba grita «ni herencia para nosotros en el hijo de Isaí», y la mujer sabia de Abel pregunta a Joab por qué ha de «tragarte la herencia de Jehová» (<a href="2-samuel-20.es.html#v20-1">2 Samuel 20:1, 19</a>, ya en estas páginas).')
+_dict20_en("bala", None, None, add=' ⭐ The wise woman of Abel asks Joab, &lsquo;Why will you swallow up the inheritance of Jehovah?&rsquo;, and he answers &lsquo;Far be it, far be it from me, that I should swallow up or ruin&rsquo; (<a href="2-samuel-20.html#v20-19">2 Samuel 20:19&ndash;20</a>, now on these pages); Hushai&rsquo;s warning is that the king might be swallowed up (<a href="2-samuel-17.html#v17-16">2 Samuel 17:16</a>).')
+_dict20_es("bala", None, None, add=' ⭐ La mujer sabia de Abel pregunta a Joab «¿Por qué has de tragarte la herencia de Jehová?», y él responde «Lejos, lejos esté de mí tragar o arruinar» (<a href="2-samuel-20.es.html#v20-19">2 Samuel 20:19–20</a>, ya en estas páginas); el aviso de Husai es que el rey podía ser tragado (<a href="2-samuel-17.es.html#v17-16">2 Samuel 17:16</a>).')
+_dict20_en("mas", None, None, add=' ⭐ &lsquo;Adoram was over the forced labour&rsquo; stands in the list of <a href="2-samuel-20.html#v20-24">2 Samuel 20:24</a> (now on these pages); the first list (<a href="2-samuel-8.html#v8-16">8:16&ndash;18</a>) has no one over it.')
+_dict20_es("mas", None, None, add=' ⭐ «Adoram sobre los trabajos forzados» está en la lista de <a href="2-samuel-20.es.html#v20-24">2 Samuel 20:24</a> (ya en estas páginas); la primera lista (<a href="2-samuel-8.es.html#v8-16">8:16–18</a>) no tiene a nadie sobre ellos.')
+_dict20_en("chalilah", None, None, add=' ⭐ Joab doubles it: <span data-heb="חלילה חלילה">&lsquo;Far be it, far be it from me&rsquo; stands only in one verse</span>, <a href="2-samuel-20.html#v20-20">2 Samuel 20:20</a> (now on these pages), to the wise woman of Abel.')
+_dict20_es("chalilah", None, None, add=' ⭐ Joab lo duplica: <span data-heb="חלילה חלילה">«Lejos, lejos esté de mí» está solo en un versículo</span>, <a href="2-samuel-20.es.html#v20-20">2 Samuel 20:20</a> (ya en estas páginas), a la mujer sabia de Abel.')
+_dict20_en("pilegesh", None, None, add=' ⭐ David puts the ten concubines in ward and sustains them but does not go in to them (<a href="2-samuel-20.html#v20-3">2 Samuel 20:3</a>, now on these pages).')
+_dict20_es("pilegesh", None, None, add=' ⭐ David pone a las diez concubinas en custodia y las sustenta, pero no entra a ellas (<a href="2-samuel-20.es.html#v20-3">2 Samuel 20:3</a>, ya en estas páginas).')
+_dict20_en("almanah", None, None, add=' ⭐ The ten concubines are shut up &lsquo;in a living widowhood&rsquo;, <em>almenut chayyut</em>, until the day of their death (<a href="2-samuel-20.html#v20-3">2 Samuel 20:3</a>, now on these pages); <span data-heb="אלמנות חיות">the two words together stand only there</span>.')
+_dict20_es("almanah", None, None, add=' ⭐ Las diez concubinas quedan encerradas «en una viudez en vida», <em>almenut chayyut</em>, hasta el día de su muerte (<a href="2-samuel-20.es.html#v20-3">2 Samuel 20:3</a>, ya en estas páginas); <span data-heb="אלמנות חיות">las dos palabras juntas están solo allí</span>.')
+_dict20_en("kilkal", None, None, add=' ⭐ David &lsquo;sustained&rsquo; the ten concubines he had put in ward (<a href="2-samuel-20.html#v20-3">2 Samuel 20:3</a>, now on these pages).')
+_dict20_es("kilkal", None, None, add=' ⭐ David «sustentó» a las diez concubinas que había puesto en custodia (<a href="2-samuel-20.es.html#v20-3">2 Samuel 20:3</a>, ya en estas páginas).')
+_dict20_en("shachat", None, None, add=' ⭐ The people with Joab are &lsquo;working ruin&rsquo; at the wall of Abel, and Joab tells the wise woman &lsquo;far be it from me, that I should swallow up or ruin&rsquo; (<a href="2-samuel-20.html#v20-15">2 Samuel 20:15, 20</a>, now on these pages).')
+_dict20_es("shachat", None, None, add=' ⭐ El pueblo que está con Joab «obra ruina» junto al muro de Abel, y Joab dice a la mujer sabia «lejos esté de mí tragar o arruinar» (<a href="2-samuel-20.es.html#v20-15">2 Samuel 20:15, 20</a>, ya en estas páginas).')
+_dict20_en("shalom", None, None, add=' ⭐ Joab&rsquo;s greeting to Amasa, &lsquo;Is it peace with you, my brother?&rsquo;, is <em>hashalom attah achi</em> (<a href="2-samuel-20.html#v20-9">2 Samuel 20:9</a>, now on these pages), and the next verse is his blow.')
+_dict20_es("shalom", None, None, add=' ⭐ El saludo de Joab a Amasa, «¿Hay paz contigo, hermano mío?», es <em>hashalom attah achi</em> (<a href="2-samuel-20.es.html#v20-9">2 Samuel 20:9</a>, ya en estas páginas), y el versículo siguiente es su golpe.')
+_dict20_en("yad", None, None, add=' ⭐ Joab&rsquo;s right hand takes hold of Amasa&rsquo;s beard, the verb agreeing with the hand, and the woman of Abel says of Sheba that he &lsquo;has lifted up his hand against the king&rsquo; (<a href="2-samuel-20.html#v20-9">2 Samuel 20:9, 21</a>, now on these pages).')
+_dict20_es("yad", None, None, add=' ⭐ La mano derecha de Joab toma la barba de Amasa, con el verbo concordando con la mano, y Joab dice de Seba que «ha alzado su mano contra el rey» (<a href="2-samuel-20.es.html#v20-9">2 Samuel 20:9, 21</a>, ya en estas páginas).')
+_dict20_en("natsal", None, None, add=' ⭐ David fears Sheba will find fortified cities and &lsquo;escape from our eye&rsquo;, <em>vehitsil eineinu</em> (<a href="2-samuel-20.html#v20-6">2 Samuel 20:6</a>, now on these pages); Rahlfs&rsquo; Greek has &lsquo;will shade our eyes&rsquo;.')
+_dict20_es("natsal", None, None, add=' ⭐ David teme que Seba halle ciudades fortificadas y «escape de nuestro ojo», <em>vehitsil eineinu</em> (<a href="2-samuel-20.es.html#v20-6">2 Samuel 20:6</a>, ya en estas páginas); el griego de Rahlfs tiene «sombreará nuestros ojos».')
+_dict20_en("chomesh", "and 20:10 (Joab and Amasa).", 'and <a href="2-samuel-20.html#v20-10">20:10</a> (Joab and Amasa, now on these pages).')
+_dict20_es("chomesh", "y 20:10 (Joab y Amasa).", 'y <a href="2-samuel-20.es.html#v20-10">20:10</a> (Joab y Amasa, ya en estas páginas).')
+_dict20_en("chokhmah", "(2 Samuel 20:16, not yet on these pages)", '(<a href="2-samuel-20.html#v20-16">2 Samuel 20:16</a>, now on these pages)')
+_dict20_es("chokhmah", "(2 Samuel 20:16, todavía no en estas páginas)", '(<a href="2-samuel-20.es.html#v20-16">2 Samuel 20:16</a>, ya en estas páginas)')
+
+# ---------- new encyclopedia entries ----------
+ENCYCLOPEDIA.append(dict(slug="sheba-son-of-bichri", name="Sheba son of Bichri", kind="person", aliases=["Sheba son of Bichri", "Sheba"],
+    refs=[("2 Samuel", 20, 1)], videos=[],
+    desc='A Benjaminite, &lsquo;a man of worthlessness&rsquo;, who blows the horn and cries &lsquo;We have no portion in David, and no inheritance for us in the son of Jesse; every man to his tent, O Israel!&rsquo; (<a href="2-samuel-20.html#v20-1">2 Samuel 20:1</a>, now on these pages). All the men of Israel go up after him, and the men of Judah cling to the king (20:2). David tells Abishai he will be &lsquo;worse for us than Absalom&rsquo; (20:6); he passes through the tribes of Israel to Abel of Beth-maacah and is besieged there (20:14&ndash;15). Joab calls him &lsquo;a man of the hill country of Ephraim&rsquo; (20:21), and the page does not reconcile that with Benjamin. The wise woman of Abel has his head cut off and thrown to Joab over the wall (20:22).'))
+ENCYCLOPEDIA_ES["sheba-son-of-bichri"] = ("Seba hijo de Bicri",
+    'Un benjaminita, «un hombre de la nada», que toca el cuerno y grita «No tenemos parte en David, ni herencia para nosotros en el hijo de Isaí; ¡cada uno a su tienda, Israel!» (<a href="2-samuel-20.es.html#v20-1">2 Samuel 20:1</a>, ya en estas páginas). Todo hombre de Israel sube tras él, y los hombres de Judá se mantienen unidos al rey (20:2). David dice a Abisai que será «peor para nosotros que Absalón» (20:6); pasa por las tribus de Israel hasta Abel de Bet-maaca y allí es sitiado (20:14–15). Joab lo llama «un hombre del monte de Efraín» (20:21), y la página no lo concilia con Benjamín. La mujer sabia de Abel hace que le corten la cabeza y se la arrojen a Joab por encima del muro (20:22).')
+
+ENCYCLOPEDIA.append(dict(slug="wise-woman-of-abel", name="The wise woman of Abel", kind="person", aliases=["wise woman of Abel", "the wise woman"],
+    refs=[("2 Samuel", 20, 16)], videos=[],
+    desc='The woman who calls from the wall of Abel of Beth-maacah, asks for <a href="encyclopedia.html#joab">Joab</a> by name, and says &lsquo;Hear the words of your handmaid&rsquo; (<a href="2-samuel-20.html#v20-16">2 Samuel 20:16&ndash;17</a>, now on these pages). She speaks for &lsquo;a city and a mother in Israel&rsquo; and asks why he would swallow up the inheritance of Jehovah (20:19); Joab says it is not so and asks only for Sheba (20:20&ndash;21); she says his head will be thrown over the wall, and goes to all the people &lsquo;in her wisdom&rsquo; (20:21&ndash;22). ⭐ She is not named, and the Hebrew gives no words of hers to the people. She is one of only two women the Hebrew calls a wise woman, the other being the <a href="encyclopedia.html#wise-woman-of-tekoa">woman of Tekoa</a> (<a href="2-samuel-14.html#v14-2">2 Samuel 14:2</a>).'))
+ENCYCLOPEDIA_ES["wise-woman-of-abel"] = ("La mujer sabia de Abel",
+    'La mujer que llama desde el muro de Abel de Bet-maaca, pide a <a href="enciclopedia.html#joab">Joab</a> por su nombre, y dice «Oye las palabras de tu sierva» (<a href="2-samuel-20.es.html#v20-16">2 Samuel 20:16–17</a>, ya en estas páginas). Habla por «una ciudad y una madre en Israel» y pregunta por qué él se ha de tragar la herencia de Jehová (20:19); Joab dice que no es así y pide solo a Seba (20:20–21); ella dice que su cabeza será arrojada por encima del muro, y va a todo el pueblo «con su sabiduría» (20:21–22). ⭐ No tiene nombre, y el hebreo no da palabras suyas al pueblo. Es una de solo dos mujeres a las que el hebreo llama mujer sabia, la otra la <a href="enciclopedia.html#wise-woman-of-tekoa">mujer de Tecoa</a> (<a href="2-samuel-14.es.html#v14-2">2 Samuel 14:2</a>).')
+
+ENCYCLOPEDIA.append(dict(slug="abel-beth-maacah", name="Abel of Beth-maacah", kind="place", aliases=["Abel of Beth-maacah", "Abel Beth-maacah", "Abel and Beth-maacah", "Beth-maacah"],
+    refs=[("2 Samuel", 20, 14), ("2 Samuel", 20, 15), ("2 Samuel", 20, 18)], videos=[],
+    coords=(33.2594, 35.5774, 0.05), approx=True,
+    modern='Tel Abil el-Qamh, northern Israel &mdash; the usual identification',
+    desc='A walled town in the north to which Sheba son of Bichri flees and where <a href="encyclopedia.html#joab">Joab</a> besieges him, casting up a mound against the city so that it stands at the rampart (<a href="2-samuel-20.html#v20-14">2 Samuel 20:14&ndash;15</a>, now on these pages). The Hebrew writes <em>Abelah</em> and <em>Beit Ma&rsquo;akhah</em> as two names in verse 14 and as one, &lsquo;Abel of Beth-maacah&rsquo;, in verse 15; the wise woman speaks of it simply as Abel (20:18). 1 Kings 15:20 has Ben-hadad smite it and 2 Kings 15:29 has Tiglath-pileser take it (neither yet on these pages). The identification with Tel Abil el-Qamh is the usual one, not a certain one.'))
+ENCYCLOPEDIA_ES["abel-beth-maacah"] = ("Abel de Bet-maaca",
+    'Una ciudad amurallada del norte adonde huye Seba hijo de Bicri y donde <a href="enciclopedia.html#joab">Joab</a> lo sitia, levantando una rampa contra la ciudad que queda junto al antemuro (<a href="2-samuel-20.es.html#v20-14">2 Samuel 20:14–15</a>, ya en estas páginas). El hebreo escribe <em>Abelah</em> y <em>Beit Ma’akhah</em> como dos nombres en el versículo 14 y como uno, «Abel de Bet-maaca», en el 15; la mujer sabia habla de ella simplemente como Abel (20:18). 1 Reyes 15:20 hace que Ben-hadad la hiera y 2 Reyes 15:29 que Tiglat-pileser la tome (ninguno todavía en estas páginas). La identificación con Tel Abil el-Qamh es la usual, no una cierta.')
+
+ENCYCLOPEDIA.append(dict(slug="adoram", name="Adoram", kind="person", aliases=["Adoram", "Adoniram"],
+    refs=[("2 Samuel", 20, 24)], videos=[],
+    desc='The man &lsquo;over the forced labour&rsquo; in the list of David&rsquo;s officers (<a href="2-samuel-20.html#v20-24">2 Samuel 20:24</a>, now on these pages), where the first list (<a href="2-samuel-8.html#v8-16">8:16&ndash;18</a>) had no one over it. The Hebrew here is <em>Adoram</em>; the NIV and Rahlfs&rsquo; Greek have <em>Adoniram</em>. 1 Kings 4:6 has &lsquo;Adoniram the son of Abda&rsquo; over the levy and 1 Kings 12:18 has Rehoboam send &lsquo;Adoram, who was over the levy&rsquo;, whom Israel stones (neither yet on these pages); the page does not say whether it is one man or one office.'))
+ENCYCLOPEDIA_ES["adoram"] = ("Adoram",
+    'El hombre «sobre los trabajos forzados» en la lista de los oficiales de David (<a href="2-samuel-20.es.html#v20-24">2 Samuel 20:24</a>, ya en estas páginas), donde la primera lista (<a href="2-samuel-8.es.html#v8-16">8:16–18</a>) no tenía a nadie sobre ellos. El hebreo de aquí es <em>Adoram</em>; la NVI y el griego de Rahlfs tienen <em>Adoniram</em>. 1 Reyes 4:6 tiene a «Adoniram hijo de Abda» sobre el tributo y 1 Reyes 12:18 hace que Roboam envíe a «Adoram, que estaba sobre el tributo», a quien Israel apedrea (ninguno todavía en estas páginas); la página no dice si es un solo hombre o un solo cargo.')
+
+ENCYCLOPEDIA.append(dict(slug="ira-the-jairite", name="Ira the Jairite", kind="person", aliases=["Ira the Jairite"],
+    refs=[("2 Samuel", 20, 26)], videos=[],
+    desc='Named last in the list of David&rsquo;s officers as &lsquo;a priest to David&rsquo; (<a href="2-samuel-20.html#v20-26">2 Samuel 20:26</a>, now on these pages), with the word <em>kohen</em> that <a href="2-samuel-8.html#v8-18">2 Samuel 8:18</a> used of David&rsquo;s sons. The ASV has &lsquo;chief minister&rsquo;, the KJV &lsquo;a chief ruler&rsquo;, the NIV and NWT 1984 &lsquo;priest&rsquo;. &lsquo;Jairite&rsquo; may mean of <a href="encyclopedia.html#jair">Jair</a>, whose villages are the <a href="encyclopedia.html#havvoth-jair">Havvoth-jair</a>; the text does not call him a Levite.'))
+ENCYCLOPEDIA_ES["ira-the-jairite"] = ("Ira el yairita",
+    'Nombrado el último en la lista de los oficiales de David como «sacerdote de David» (<a href="2-samuel-20.es.html#v20-26">2 Samuel 20:26</a>, ya en estas páginas), con la palabra <em>kohen</em> que <a href="2-samuel-8.es.html#v8-18">2 Samuel 8:18</a> usó de los hijos de David. La RV 1909 tiene «un jefe principal», la NVI «sacerdote personal» y la TNM 1987 «sacerdote». «Yairita» puede significar de <a href="enciclopedia.html#jair">Jair</a>, cuyas aldeas son las <a href="enciclopedia.html#havvoth-jair">Javot-jair</a>; el texto no lo llama levita.')
+
+# ---------- extended / flipped encyclopedia entries ----------
+_ency20_en("absalom", "; 2 Samuel 20 is not yet on these pages.", '; in <a href="2-samuel-20.html#v20-6">2 Samuel 20:6</a> (now on these pages) David says that Sheba son of Bichri &lsquo;will be worse for us than Absalom&rsquo;.')
+_ency20_es("absalom", "; 2 Samuel 20 todav&iacute;a no est&aacute; en estas p&aacute;ginas.", '; en <a href="2-samuel-20.es.html#v20-6">2 Samuel 20:6</a> (ya en estas p&aacute;ginas) David dice que Seba hijo de Bicri &laquo;ser&aacute; peor para nosotros que Absal&oacute;n&raquo;.')
+_ency20_en("davids-officials", "The later lists name the scribe Sheva (2 Samuel 20:25) and Shavsha (1 Chronicles 18:16), none of them yet on these pages.",
+    'The later lists name the scribe Sheva (<a href="2-samuel-20.html#v20-25">2 Samuel 20:25</a>, now on these pages) and Shavsha (1 Chronicles 18:16, not yet on these pages); the list in <a href="2-samuel-20.html#v20-23">20:23&ndash;26</a> adds <a href="encyclopedia.html#adoram">Adoram</a> over the forced labour and <a href="encyclopedia.html#ira-the-jairite">Ira the Jairite</a> as a priest.')
+_ency20_es("davids-officials", "Las listas posteriores nombran al escriba Seva (2 Samuel 20:25) y Savsa (1 Crónicas 18:16), ninguna todavía en estas páginas.",
+    'Las listas posteriores nombran al escriba Seva (<a href="2-samuel-20.es.html#v20-25">2 Samuel 20:25</a>, ya en estas páginas) y Savsa (1 Crónicas 18:16, todavía no en estas páginas); la lista de <a href="2-samuel-20.es.html#v20-23">20:23–26</a> añade a <a href="enciclopedia.html#adoram">Adoram</a> sobre los trabajos forzados y a <a href="enciclopedia.html#ira-the-jairite">Ira el yairita</a> como sacerdote.')
+_ency20_en("wise-woman-of-tekoa", "the other being the woman of Abel (2 Samuel 20:16, not yet on these pages).", 'the other being the <a href="encyclopedia.html#wise-woman-of-abel">woman of Abel</a> (<a href="2-samuel-20.html#v20-16">2 Samuel 20:16</a>, now on these pages).')
+_ency20_es("wise-woman-of-tekoa", "la otra la mujer de Abel (2 Samuel 20:16, todavía no en estas páginas).", 'la otra la <a href="enciclopedia.html#wise-woman-of-abel">mujer de Abel</a> (<a href="2-samuel-20.es.html#v20-16">2 Samuel 20:16</a>, ya en estas páginas).')
+_ency20_en("davids-ten-concubines", "15:16 and 2 Samuel 20:3 (not yet on these pages), where", '15:16 and <a href="2-samuel-20.html#v20-3">2 Samuel 20:3</a> (now on these pages), where')
+_ency20_es("davids-ten-concubines", "15:16 y 2 Samuel 20:3 (todavía no en estas páginas), donde", '15:16 y <a href="2-samuel-20.es.html#v20-3">2 Samuel 20:3</a> (ya en estas páginas), donde')
+_ency20_en("amasa", "the king&rsquo;s charge to him is in 20:4 and Joab&rsquo;s killing of him in 20:10 (not yet on these pages).",
+    'the king&rsquo;s charge to him is in <a href="2-samuel-20.html#v20-4">20:4</a>, his lateness in 20:5, and Joab&rsquo;s killing of him at the great stone in Gibeon, with the greeting &lsquo;Is it peace with you, my brother?&rsquo;, in <a href="2-samuel-20.html#v20-8">20:8&ndash;12</a> (now on these pages).')
+_ency20_es("amasa", "el encargo del rey a él está en 20:4 y la muerte que le da Joab en 20:10 (todavía no en estas páginas).",
+    'el encargo del rey a él está en <a href="2-samuel-20.es.html#v20-4">20:4</a>, su tardanza en 20:5, y la muerte que le da Joab en la gran piedra de Gabaón, con el saludo «¿Hay paz contigo, hermano mío?», en <a href="2-samuel-20.es.html#v20-8">20:8–12</a> (ya en estas páginas).')
+_ency20_en("joab", None, None, add=' ⭐ In <a href="2-samuel-20.html#v20-8">2 Samuel 20:8&ndash;13</a> (now on these pages) he meets Amasa at the great stone in Gibeon, takes his beard with the right hand and strikes him in the belly, and a young man of his calls the people &lsquo;after Joab&rsquo;; in 20:15&ndash;22 he besieges Abel of Beth-maacah, answers the wise woman &lsquo;Far be it, far be it from me&rsquo;, and blows the horn when Sheba&rsquo;s head is thrown to him; in 20:23 he is over all the army of Israel.')
+_ency20_es("joab", None, None, add=' ⭐ En <a href="2-samuel-20.es.html#v20-8">2 Samuel 20:8–13</a> (ya en estas páginas) sale al encuentro de Amasa en la gran piedra de Gabaón, toma su barba con la mano derecha y lo hiere en el vientre, y un joven suyo llama al pueblo «en pos de Joab»; en 20:15–22 sitia Abel de Bet-maaca, responde a la mujer sabia «Lejos, lejos esté de mí», y toca el cuerno cuando le arrojan la cabeza de Seba; en 20:23 está sobre todo el ejército de Israel.')
+_ency20_en("abishai", None, None, add=' ⭐ David sends him after Sheba son of Bichri, and he pursues with Joab after Amasa is dead (<a href="2-samuel-20.html#v20-6">2 Samuel 20:6, 10</a>, now on these pages).')
+_ency20_es("abishai", None, None, add=' ⭐ David lo envía tras Seba hijo de Bicri, y él persigue con Joab después de que Amasa ha muerto (<a href="2-samuel-20.es.html#v20-6">2 Samuel 20:6, 10</a>, ya en estas páginas).')
+_ency20_en("benaiah", None, None, add=' ⭐ He is over the Cherethites and the Pelethites again in the list of <a href="2-samuel-20.html#v20-23">2 Samuel 20:23</a> (now on these pages).')
+_ency20_es("benaiah", None, None, add=' ⭐ Está sobre los cereteos y los peleteos otra vez en la lista de <a href="2-samuel-20.es.html#v20-23">2 Samuel 20:23</a> (ya en estas páginas).')
+_ency20_en("gibeon", None, None, add=' ⭐ &lsquo;The great stone that is in Gibeon&rsquo; is where Amasa comes to meet the force pursuing Sheba and is killed (<a href="2-samuel-20.html#v20-8">2 Samuel 20:8&ndash;10</a>, now on these pages).')
+_ency20_es("gibeon", None, None, add=' ⭐ «La gran piedra que está en Gabaón» es donde Amasa sale al encuentro de la fuerza que persigue a Seba y es muerto (<a href="2-samuel-20.es.html#v20-8">2 Samuel 20:8–10</a>, ya en estas páginas).')
+_ency20_en("cherethites-pelethites", None, None, add=' ⭐ They go out with Joab&rsquo;s men after Sheba son of Bichri, and Benaiah is over them in the list of <a href="2-samuel-20.html#v20-7">2 Samuel 20:7, 23</a> (now on these pages).')
+_ency20_es("cherethites-pelethites", None, None, add=' ⭐ Salen con los hombres de Joab tras Seba hijo de Bicri, y Benaía está sobre ellos en la lista de <a href="2-samuel-20.es.html#v20-7">2 Samuel 20:7, 23</a> (ya en estas páginas).')
+_ency20_en("zadok-abiathar", None, None, add=' ⭐ They are named priests again in the list of <a href="2-samuel-20.html#v20-25">2 Samuel 20:25</a> (now on these pages).')
+_ency20_es("zadok-abiathar", None, None, add=' ⭐ Son nombrados sacerdotes otra vez en la lista de <a href="2-samuel-20.es.html#v20-25">2 Samuel 20:25</a> (ya en estas páginas).')
+
+_REFS20 = {
+    "absalom": [("2 Samuel", 20, 6)],
+    "amasa": [("2 Samuel", 20, 4), ("2 Samuel", 20, 8)],
+    "joab": [("2 Samuel", 20, 8)],
+    "abishai": [("2 Samuel", 20, 6)],
+    "benaiah": [("2 Samuel", 20, 23)],
+    "gibeon": [("2 Samuel", 20, 8)],
+    "cherethites-pelethites": [("2 Samuel", 20, 7)],
+    "zadok-abiathar": [("2 Samuel", 20, 25)],
+    "davids-officials": [("2 Samuel", 20, 25)],
+    "wise-woman-of-tekoa": [("2 Samuel", 20, 16)],
+    "davids-ten-concubines": [("2 Samuel", 20, 3)],
+}
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] in _REFS20:
+        _have = set(_e["refs"])
+        _e["refs"] = list(_e["refs"]) + [_r for _r in _REFS20[_e["slug"]] if _r not in _have]
+
+CHRON_CHAPTERS["2sam20"] = dict(era="monarchy",
+    when="At Gilgal a man of worthlessness, Sheba son of Bichri, a Benjaminite, blows the horn and cries ‘We have no portion in David’; every man of Israel goes up after him, and Judah clings to the king from the Jordan to Jerusalem. David puts the ten concubines he left in a house of ward, sustains them, and does not go in to them. Amasa is told to summon Judah in three days and delays beyond the time; David sends Abishai after Sheba, and Joab’s men, the Cherethites and the Pelethites and the mighty men go out. At the great stone in Gibeon Joab asks Amasa ‘Is it peace with you, my brother?’, takes his beard with the right hand, and strikes him in the belly; a young man of Joab’s calls the people after Joab, and the body is moved off the highway. Joab besieges Sheba in Abel of Beth-maacah, a wise woman speaks to him from the wall, and the people cut off Sheba’s head and throw it to Joab, who blows the horn and sends the army home. The chapter ends with the list of David’s officers.",
+    clock="After the crossing of the Jordan and the quarrel at Gilgal: Sheba’s revolt, the pursuit north to Abel of Beth-maacah, and Joab’s return to Jerusalem.")
+
+CHAPTER_ART["2sam20"] = [dict(
+    file="rijksmuseum-joab-kills-amasa.jpg",
+    title="Joab Kills Amasa", title_es="Joab mata a Amasá",
+    artist="Jan Luyken",
+    year="1704",
+    location="Etching, Rijksmuseum, Amsterdam (RP-P-OB-45.149)", location_es="Aguafuerte, Rijksmuseum, Ámsterdam (RP-P-OB-45.149)",
+    alt="A black-and-white etching of two helmeted men in short tunics standing close together in the open, with ranks of soldiers holding spears, round shields and banners behind them on both sides. The man at the left reaches one arm to the chin of the man at the right, who wears a cloak, has his mouth open and holds one hand out; the left man’s other hand is at the right man’s belt, where a short blade shows. Hills, heavy clouds and a walled town fill the distance.",
+    note="2 Samuel 20:8–10. The title is the museum’s. Luyken shows Joab holding Amasa by the chin where the Hebrew has the right hand take hold of the beard (verse 9), and the blade at Amasa’s side (verse 10); the soldiers waiting behind are the force at the great stone in Gibeon (verse 8), and the banners and the town in the distance are the print’s own. The text gives the kiss as the reason for the hand on the beard, and the print shows no kiss; it does not mark which man is which beyond its title.",
+    note_es="2 Samuel 20:8–10. El título es el del museo. Luyken muestra a Joab sujetando a Amasa por la barbilla donde el hebreo hace que la mano derecha tome la barba (versículo 9), y la hoja al costado de Amasa (versículo 10); los soldados que esperan detrás son la fuerza de la gran piedra de Gabaón (versículo 8), y los estandartes y la ciudad del fondo son propios del grabado. El texto da el beso como la razón de la mano sobre la barba, y el grabado no muestra ningún beso; no señala cuál es cada hombre más allá de su título.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Joab_doodt_Amasa,_RP-P-OB-45.149.jpg",
+)]
