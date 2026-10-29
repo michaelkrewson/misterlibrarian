@@ -55035,3 +55035,112 @@ CHAPTER_ART["1kgs3"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:084.The_Judgment_of_Solomon.jpg",
 )]
+# --- 2 Samuel 4k ---
+def _swap4k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D4k = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict4k_en(slug, old=None, new=None, add=None):
+    _i = _D4k[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap4k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict4k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap4k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency4k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap4k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency4k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap4k(_s, old, new)
+    if add: _s = _s + add
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("kilkel", "kilkel", "כִּלְכֵּל", "kilkel",
+    'TO SUSTAIN, to provide for &mdash; the verb of Barzillai, who &lsquo;had sustained the king&rsquo; at Mahanaim (<a href="2-samuel-19.html#v19-33">2 Samuel 19:33</a>, now on these pages), and of Solomon&rsquo;s twelve officers, who &lsquo;sustained the king and his household&rsquo;, each one a month in the year (<a href="1-kings-4.html#v4-7">1 Kings 4:7</a>, now on these pages). The ASV has &lsquo;provided victuals&rsquo; and &lsquo;make provision&rsquo;, the NIV &lsquo;supplied provisions&rsquo;, the NWT 1984 &lsquo;provided the king and his household with food&rsquo;.',
+    ("2 Samuel", 19, 33)))
+DICTIONARY_ES["kilkel"] = ("kilkel",
+    'SUSTENTAR, proveer &mdash; el verbo de Barzilai, que «había sustentado al rey» en Mahanaim (<a href="2-samuel-19.es.html#v19-33">2 Samuel 19:33</a>, ya en estas páginas), y de los doce oficiales de Salomón, que «sustentaban al rey y a su casa», cada uno un mes en el año (<a href="1-kings-4.es.html#v4-7">1 Reyes 4:7</a>, ya en estas páginas). La RV 1909 tiene «mantenían» y «abastecer», la NVI «abastecer» y la TNM 1987 «proveían de alimento».')
+
+DICTIONARY.append(("reah", "re&rsquo;eh", "רֵעֶה", "re’eh",
+    'A FRIEND, a companion &mdash; Hushai, &lsquo;David&rsquo;s friend&rsquo; (<a href="2-samuel-15.html#v15-37">2 Samuel 15:37</a>; <a href="2-samuel-16.html#v16-16">16:16</a>, now on these pages), and Zabud son of Nathan, &lsquo;a priest, the king&rsquo;s friend&rsquo; (<a href="1-kings-4.html#v4-5">1 Kings 4:5</a>, now on these pages); <span data-heb="רעה המלך">&lsquo;the king&rsquo;s friend&rsquo; stands only in that verse</span>. The ASV has &lsquo;chief minister, and the king&rsquo;s friend&rsquo;, the KJV &lsquo;principal officer&rsquo;, the NIV &lsquo;a priest and adviser to the king&rsquo; and the NWT 1984 &lsquo;a priest, the friend of the king&rsquo;.',
+    ("2 Samuel", 15, 37)))
+DICTIONARY_ES["reah"] = ("re’eh",
+    'UN AMIGO, un compañero &mdash; Husai, «amigo de David» (<a href="2-samuel-15.es.html#v15-37">2 Samuel 15:37</a>; <a href="2-samuel-16.es.html#v16-16">16:16</a>, ya en estas páginas), y Zabud hijo de Natán, «sacerdote, el amigo del rey» (<a href="1-kings-4.es.html#v4-5">1 Reyes 4:5</a>, ya en estas páginas); <span data-heb="רעה המלך">«el amigo del rey» está solo en ese versículo</span>. La RV 1909 tiene «principal oficial, amigo del rey», la NVI «sacerdote y consejero personal del rey» y la TNM 1987 «sacerdote, el amigo del rey».')
+
+DICTIONARY.append(("mazkir", "mazkir", "מַזְכִּיר", "mazkir",
+    'THE RECORDER &mdash; an office at the king&rsquo;s court, literally &lsquo;one who causes to remember&rsquo; (reported here, from the root <em>zakhar</em>). Jehoshaphat son of Ahilud is David&rsquo;s recorder (<a href="2-samuel-8.html#v8-16">2 Samuel 8:16</a>; <a href="2-samuel-20.html#v20-24">20:24</a>, now on these pages) and is named in Solomon&rsquo;s list (<a href="1-kings-4.html#v4-3">1 Kings 4:3</a>, now on these pages), where the text does not say whether it is the same man. The ASV and NWT 1984 have &lsquo;the recorder&rsquo;, the NIV &lsquo;recorder&rsquo;; the RV 1909 has <em>canciller</em> and the NVI <em>el secretario</em>.',
+    ("2 Samuel", 8, 16)))
+DICTIONARY_ES["mazkir"] = ("mazkir",
+    'EL CRONISTA &mdash; un cargo en la corte del rey, literalmente «el que hace recordar» (se informa aquí, de la raíz <em>zakhar</em>). Josafat hijo de Ahilud es el cronista de David (<a href="2-samuel-8.es.html#v8-16">2 Samuel 8:16</a>; <a href="2-samuel-20.es.html#v20-24">20:24</a>, ya en estas páginas) y se nombra en la lista de Salomón (<a href="1-kings-4.es.html#v4-3">1 Reyes 4:3</a>, ya en estas páginas), donde el texto no dice si es el mismo hombre. La RV 1909 tiene «canciller», la NVI «el secretario» y la TNM 1987 «el registrador».')
+
+# ---------- extended dictionary entries ----------
+_dict4k_en("nitsav", None, None, add=' ⭐ &lsquo;Azariah son of Nathan was over the officers&rsquo;, the twelve <em>nitsavim</em> who sustain the king, and &lsquo;one officer&rsquo;, <em>netsiv echad</em>, in the land of Gilead (<a href="1-kings-4.html#v4-5">1 Kings 4:5, 7, 19</a>, now on these pages).')
+_dict4k_es("nitsav", None, None, add=' ⭐ «Azarías hijo de Natán estaba sobre los oficiales», los doce <em>nitsavim</em> que sustentan al rey, y «un oficial», <em>netsiv echad</em>, en la tierra de Galaad (<a href="1-kings-4.es.html#v4-5">1 Reyes 4:5, 7, 19</a>, ya en estas páginas).')
+_dict4k_en("mas", None, None, add=' ⭐ &lsquo;Adoniram son of Abda was over the forced labor&rsquo; in Solomon&rsquo;s list (<a href="1-kings-4.html#v4-6">1 Kings 4:6</a>, now on these pages); the ASV has &lsquo;over the men subject to taskwork&rsquo;, the KJV &lsquo;over the tribute&rsquo;.')
+_dict4k_es("mas", None, None, add=' ⭐ «Adoniram hijo de Abda estaba sobre los trabajos forzados» en la lista de Salomón (<a href="1-kings-4.es.html#v4-6">1 Reyes 4:6</a>, ya en estas páginas); la RV 1909 tiene «sobre el tributo».')
+_dict4k_en("nechoshet", None, None, add=' ⭐ Argob&rsquo;s sixty cities have &lsquo;wall and bronze bar&rsquo;, <em>berich nechoshet</em> (<a href="1-kings-4.html#v4-13">1 Kings 4:13</a>, now on these pages); <span data-heb="בריח נחשת">&lsquo;bronze bar&rsquo; stands only in that verse</span>.')
+_dict4k_es("nechoshet", None, None, add=' ⭐ Las sesenta ciudades de Argob tienen «muro y cerrojo de bronce», <em>berich nechoshet</em> (<a href="1-kings-4.es.html#v4-13">1 Reyes 4:13</a>, ya en estas páginas); <span data-heb="בריח נחשת">«cerrojo de bronce» está solo en ese versículo</span>.')
+
+# flips of old 'not yet' claims
+_dict4k_en("simchah", None, None, add=' ⭐ &lsquo;Eating and drinking and rejoicing&rsquo; is Judah and Israel, as many as the sand (<a href="1-kings-4.html#v4-20">1 Kings 4:20</a>, now on these pages).')
+_dict4k_es("simchah", None, None, add=' ⭐ «Comiendo y bebiendo y alegrándose» es Judá e Israel, muchos como la arena (<a href="1-kings-4.es.html#v4-20">1 Reyes 4:20</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="solomons-officials", name="Solomon’s officials", kind="people", aliases=["Solomon’s officials"], refs=[("1 Kings", 4, 2)], videos=[],
+    desc='The list of <a href="1-kings-4.html#v4-2">1 Kings 4:2&ndash;6</a> (now on these pages): Azariah son of Zadok the priest; Elihoreph and Ahijah, sons of Shisha, scribes; Jehoshaphat son of Ahilud, the recorder; <a href="encyclopedia.html#benaiah">Benaiah</a> over the army; <a href="encyclopedia.html#zadok-abiathar">Zadok and Abiathar</a>, priests; Azariah son of Nathan over the officers; Zabud son of Nathan, a priest and the king&rsquo;s friend; Ahishar over the household; and Adoniram son of Abda over the forced labor (<a href="encyclopedia.html#adoram">Adoram</a> in David&rsquo;s list). Compare <a href="encyclopedia.html#davids-officials">David&rsquo;s officials</a>. &#9888; Abiathar is named a priest here, though <a href="1-kings-2.html#v2-26">1 Kings 2:26&ndash;27</a> has him driven out; the page does not say how the two fit.'))
+ENCYCLOPEDIA_ES["solomons-officials"] = ("Los oficiales de Salomón",
+    'La lista de <a href="1-kings-4.es.html#v4-2">1 Reyes 4:2–6</a> (ya en estas páginas): Azarías hijo de Sadoc el sacerdote; Elihoref y Ahías, hijos de Sisa, escribas; Josafat hijo de Ahilud, el cronista; <a href="enciclopedia.html#benaiah">Benaía</a> sobre el ejército; <a href="enciclopedia.html#zadok-abiathar">Sadoc y Abiatar</a>, sacerdotes; Azarías hijo de Natán sobre los oficiales; Zabud hijo de Natán, sacerdote y amigo del rey; Ahisar sobre la casa; y Adoniram hijo de Abda sobre los trabajos forzados (<a href="enciclopedia.html#adoram">Adoram</a> en la lista de David). Compárense <a href="enciclopedia.html#davids-officials">los oficiales de David</a>. &#9888; Abiatar se nombra aquí sacerdote, aunque <a href="1-kings-2.es.html#v2-26">1 Reyes 2:26–27</a> lo tiene expulsado; la página no dice cómo encajan los dos.')
+
+ENCYCLOPEDIA.append(dict(slug="solomons-twelve-officers", name="Solomon’s twelve officers", kind="people", aliases=["Solomon’s twelve officers", "the twelve officers"], refs=[("1 Kings", 4, 7)], videos=[],
+    desc='The twelve <em>nitsavim</em> who &lsquo;sustained the king and his household&rsquo;, each one a month in the year (<a href="1-kings-4.html#v4-7">1 Kings 4:7&ndash;19</a>, now on these pages): the son of Hur in the hill country of Ephraim; the son of Deker in Makaz, Shaalbim, Beth-shemesh and Elon-beth-hanan; the son of Hesed in Arubboth, with Socoh and Hepher; the son of Abinadab in the heights of Dor, married to Taphath, Solomon&rsquo;s daughter; Baana son of Ahilud in Taanach, Megiddo and Beth-shean; the son of Geber in Ramoth-gilead, Jair&rsquo;s villages and Argob; Ahinadab son of Iddo in Mahanaim; Ahimaaz in Naphtali, married to Basemath, Solomon&rsquo;s daughter; Baana son of Hushai in Asher and Bealoth; Jehoshaphat son of Paruah in Issachar; Shimei son of Ela in Benjamin; and Geber son of Uri in Gilead, &lsquo;and one officer who was in the land&rsquo;. &#9888; The versions disagree on that last phrase, and Judah is not named among the regions.'))
+ENCYCLOPEDIA_ES["solomons-twelve-officers"] = ("Los doce oficiales de Salomón",
+    'Los doce <em>nitsavim</em> que «sustentaban al rey y a su casa», cada uno un mes en el año (<a href="1-kings-4.es.html#v4-7">1 Reyes 4:7–19</a>, ya en estas páginas): el hijo de Hur en la región montañosa de Efraín; el hijo de Deker en Macaz, Saalbim, Bet-semes y Elón-bet-hanán; el hijo de Hesed en Arubot, con Soco y Hefer; el hijo de Abinadab en las alturas de Dor, casado con Tafat, hija de Salomón; Baana hijo de Ahilud en Taanac, Meguido y Bet-seán; el hijo de Geber en Ramot de Galaad, las aldeas de Jair y Argob; Ahinadab hijo de Ido en Mahanaim; Ahimaas en Neftalí, casado con Basemat, hija de Salomón; Baana hijo de Husai en Aser y Bealot; Josafat hijo de Parúa en Isacar; Simei hijo de Ela en Benjamín; y Geber hijo de Urí en Galaad, «y un oficial que estaba en la tierra». &#9888; Las versiones discrepan sobre esa última frase, y Judá no se nombra entre las regiones.')
+
+# ---------- encyclopedia: extended ----------
+_ency4k_en("davids-officials", None, None, add=' ⭐ Solomon&rsquo;s list is in <a href="1-kings-4.html#v4-2">1 Kings 4:2&ndash;6</a> (now on these pages); see <a href="encyclopedia.html#solomons-officials">Solomon&rsquo;s officials</a>.')
+_ency4k_es("davids-officials", None, None, add=' ⭐ La lista de Salomón está en <a href="1-kings-4.es.html#v4-2">1 Reyes 4:2–6</a> (ya en estas páginas); véanse <a href="enciclopedia.html#solomons-officials">los oficiales de Salomón</a>.')
+_ency4k_en("zadok-abiathar", None, None, add=' ⭐ &lsquo;Zadok and Abiathar were priests&rsquo; stands in Solomon&rsquo;s list (<a href="1-kings-4.html#v4-4">1 Kings 4:4</a>, now on these pages), after Abiathar&rsquo;s expulsion.')
+_ency4k_es("zadok-abiathar", None, None, add=' ⭐ «Sadoc y Abiatar eran sacerdotes» está en la lista de Salomón (<a href="1-kings-4.es.html#v4-4">1 Reyes 4:4</a>, ya en estas páginas), después de la expulsión de Abiatar.')
+_ency4k_en("benaiah", None, None, add=' ⭐ &lsquo;Benaiah son of Jehoiada was over the army&rsquo; in Solomon&rsquo;s list (<a href="1-kings-4.html#v4-4">1 Kings 4:4</a>, now on these pages).')
+_ency4k_es("benaiah", None, None, add=' ⭐ «Benaía hijo de Joiada estaba sobre el ejército» en la lista de Salomón (<a href="1-kings-4.es.html#v4-4">1 Reyes 4:4</a>, ya en estas páginas).')
+_ency4k_en("hushai-the-archite", None, None, add=' ⭐ A &lsquo;Baana son of Hushai&rsquo; is the officer in Asher and Bealoth (<a href="1-kings-4.html#v4-16">1 Kings 4:16</a>, now on these pages); the text does not say he is this Hushai&rsquo;s son.')
+_ency4k_es("hushai-the-archite", None, None, add=' ⭐ Un «Baana hijo de Husai» es el oficial en Aser y Bealot (<a href="1-kings-4.es.html#v4-16">1 Reyes 4:16</a>, ya en estas páginas); el texto no dice que sea el hijo de este Husai.')
+_ency4k_en("ahimaaz-son-of-zadok", None, None, add=' ⭐ An Ahimaaz, in Naphtali, &lsquo;also took Basemath the daughter of Solomon as a wife&rsquo; (<a href="1-kings-4.html#v4-15">1 Kings 4:15</a>, now on these pages); the text does not say he is Zadok&rsquo;s son.')
+_ency4k_es("ahimaaz-son-of-zadok", None, None, add=' ⭐ Un Ahimaas, en Neftalí, «también tomó por mujer a Basemat, la hija de Salomón» (<a href="1-kings-4.es.html#v4-15">1 Reyes 4:15</a>, ya en estas páginas); el texto no dice que sea el hijo de Sadoc.')
+_ency4k_en("argob", None, None, add=' ⭐ In <a href="1-kings-4.html#v4-13">1 Kings 4:13</a> (now on these pages) it is the region of the son of Geber, &lsquo;sixty great cities, with wall and bronze bar&rsquo;.')
+_ency4k_es("argob", None, None, add=' ⭐ En <a href="1-kings-4.es.html#v4-13">1 Reyes 4:13</a> (ya en estas páginas) es la región del hijo de Geber, «sesenta ciudades grandes, con muro y cerrojo de bronce».')
+_ency4k_en("mahanaim", None, None, add=' ⭐ Ahinadab son of Iddo is Solomon&rsquo;s officer in Mahanaim (<a href="1-kings-4.html#v4-14">1 Kings 4:14</a>, now on these pages).')
+_ency4k_es("mahanaim", None, None, add=' ⭐ Ahinadab hijo de Ido es el oficial de Salomón en Mahanaim (<a href="1-kings-4.es.html#v4-14">1 Reyes 4:14</a>, ya en estas páginas).')
+_ency4k_en("beth-shean", None, None, add=' ⭐ &lsquo;All Beth-shean, which is beside Zarethan below Jezreel&rsquo; is in the district of Baana son of Ahilud (<a href="1-kings-4.html#v4-12">1 Kings 4:12</a>, now on these pages).')
+_ency4k_es("beth-shean", None, None, add=' ⭐ «Todo Bet-seán, que está junto a Saretán debajo de Jezreel» está en el distrito de Baana hijo de Ahilud (<a href="1-kings-4.es.html#v4-12">1 Reyes 4:12</a>, ya en estas páginas).')
+_ency4k_en("ramoth-gilead", None, None, add=' ⭐ The seat of the son of Geber, Solomon&rsquo;s officer for Jair&rsquo;s villages and Argob (<a href="1-kings-4.html#v4-13">1 Kings 4:13</a>, now on these pages).')
+_ency4k_es("ramoth-gilead", None, None, add=' ⭐ La sede del hijo de Geber, oficial de Salomón para las aldeas de Jair y Argob (<a href="1-kings-4.es.html#v4-13">1 Reyes 4:13</a>, ya en estas páginas).')
+_ency4k_en("adoram", "1 Kings 4:6 has", '<a href="1-kings-4.html#v4-6">1 Kings 4:6</a> (now on these pages) has')
+_ency4k_es("adoram", "1 Reyes 4:6 tiene", '<a href="1-kings-4.es.html#v4-6">1 Reyes 4:6</a> (ya en estas páginas) tiene')
+_ency4k_en("zarethan", "1 Kings 4:12 spells it", '<a href="1-kings-4.html#v4-12">1 Kings 4:12</a> (now on these pages) spells it')
+_ency4k_es("zarethan", "1 Reyes 4:12 la escribe", '<a href="1-kings-4.es.html#v4-12">1 Reyes 4:12</a> (ya en estas páginas) la escribe')
+_ency4k_en("hepher", "(1 Kings 4:10, not yet on these pages)", '(<a href="1-kings-4.html#v4-10">1 Kings 4:10</a>, now on these pages)')
+_ency4k_es("hepher", "(1 Reyes 4:10, todavía no en estas páginas)", '(<a href="1-kings-4.es.html#v4-10">1 Reyes 4:10</a>, ya en estas páginas)')
+_ency4k_en("dor", "(1 Kings 4:11, not yet on these pages)", '(<a href="1-kings-4.html#v4-11">1 Kings 4:11</a>, now on these pages)')
+_ency4k_es("dor", "(1 Reyes 4:11, todavía no en estas páginas)", '(<a href="1-kings-4.es.html#v4-11">1 Reyes 4:11</a>, ya en estas páginas)')
+_ency4k_en("abel-meholah", "1 Kings 4:12 (not yet on these pages)", '<a href="1-kings-4.html#v4-12">1 Kings 4:12</a> (now on these pages)')
+_ency4k_es("abel-meholah", "1 Reyes 4:12 (todavía no en estas páginas)", '<a href="1-kings-4.es.html#v4-12">1 Reyes 4:12</a> (ya en estas páginas)')
+
+CHRON_CHAPTERS["1kgs4"] = dict(era="monarchy",
+    when="Solomon is king over all Israel. His officials are listed: priests, scribes, a recorder, the army, the household, the forced labor; and twelve officers over all Israel, each sustaining the king and his household for a month in the year, from the hill country of Ephraim to Gilead and Bashan. Two of them have married Solomon’s daughters. Judah and Israel are many, like the sand by the sea, eating and drinking and rejoicing.",
+    clock="The settled years of Solomon’s reign, with the house of Jehovah not yet built: the kingdom organized by months, and at ease.")
+
+ART_SKIPPED["1kgs4"] = "A list of officials, districts and a month-by-month supply roster: Commons searches for Solomon found nothing that depicts it, and the one candidate (a Tissot sketch) is a rotated, blurred photograph of a mounted drawing."
