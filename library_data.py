@@ -55144,3 +55144,125 @@ CHRON_CHAPTERS["1kgs4"] = dict(era="monarchy",
     clock="The settled years of Solomon’s reign, with the house of Jehovah not yet built: the kingdom organized by months, and at ease.")
 
 ART_SKIPPED["1kgs4"] = "A list of officials, districts and a month-by-month supply roster: Commons searches for Solomon found nothing that depicts it, and the one candidate (a Tissot sketch) is a rotated, blurred photograph of a mounted drawing."
+# --- 1 Kings 5 ---
+def _swap5k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D5k = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict5k_en(slug, old=None, new=None, add=None):
+    _i = _D5k[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap5k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict5k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap5k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency5k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap5k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency5k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap5k(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("radah", "radah", "רָדָה", "radah",
+    'TO RULE, to have dominion &mdash; the verb of the human given dominion over the fish of the sea (<a href="genesis-1.html#v26">Genesis 1:26</a>, now on these pages), and of Solomon, who &lsquo;ruled over all the region beyond the River, from Tiphsah to Gaza&rsquo; (<a href="1-kings-5.html#v5-4">1 Kings 5:4</a>, now on these pages). The ASV has &lsquo;had dominion&rsquo;, the NIV &lsquo;ruled over&rsquo; and the NWT 1984 &lsquo;was holding in subjection&rsquo;.',
+    ("1 Kings", 5, 4)))
+DICTIONARY_ES["radah"] = ("radah",
+    'DOMINAR, tener dominio &mdash; el verbo del ser humano al que se da dominio sobre los peces del mar (<a href="genesis-1.es.html#v26">Génesis 1:26</a>, ya en estas páginas), y de Salomón, que «dominaba sobre toda la región al otro lado del Río, desde Tifsa hasta Gaza» (<a href="1-kings-5.es.html#v5-4">1 Reyes 5:4</a>, ya en estas páginas). La RV 1909 dice «señoreaba», la NVI «El dominio de Salomón se extendía» y la TNM 1987 «tenía todo en sujeción».')
+
+DICTIONARY.append(("chefets", "chefets", "חֵפֶץ", "chéfets",
+    'DESIRE, delight &mdash; the word that runs through the exchange of Hiram and Solomon: &lsquo;I will do all your desire in the timbers of cedar&rsquo;, &lsquo;you shall do my desire, to give bread to my household&rsquo;, and Hiram gave Solomon timber &lsquo;all his desire&rsquo; (<a href="1-kings-5.html#v5-22">1 Kings 5:22&ndash;24</a>, now on these pages). The ASV has &lsquo;all thy desire&rsquo;, the NWT 1984 &lsquo;all your delight&rsquo; and the NIV &lsquo;all you want&rsquo;.',
+    ("1 Kings", 5, 22)))
+DICTIONARY_ES["chefets"] = ("chéfets",
+    'DESEO, deleite &mdash; la palabra que corre por el intercambio de Hiram y Salomón: «yo haré todo tu deseo en cuanto a las maderas de cedro», «tú harás mi deseo, dando pan a mi casa», y Hiram daba a Salomón maderas «todo su deseo» (<a href="1-kings-5.es.html#v5-22">1 Reyes 5:22–24</a>, ya en estas páginas). La RV 1909 dice «todo lo que te pluguiere», la TNM 1987 «todo lo que te deleite» y la NVI «toda la madera».')
+
+DICTIONARY.append(("lavetach", "lavetach", "לָבֶטַח", "lavetach",
+    'IN SAFETY, securely &mdash; the word of &lsquo;you shall dwell in the land in safety&rsquo; (<a href="leviticus-25.html#v25-18">Leviticus 25:18</a>, now on these pages), and of Judah and Israel, who &lsquo;dwelt securely, each man under his vine and under his fig tree&rsquo; (<a href="1-kings-5.html#v5-5">1 Kings 5:5</a>, now on these pages). The ASV has &lsquo;dwelt safely&rsquo;, the NIV &lsquo;lived in safety&rsquo; and the NWT 1984 &lsquo;continued to dwell in security&rsquo;.',
+    ("1 Kings", 5, 5)))
+DICTIONARY_ES["lavetach"] = ("lavetach",
+    'CON SEGURIDAD, seguros &mdash; la palabra de «habitaréis en la tierra con seguridad» (<a href="leviticus-25.es.html#v25-18">Levítico 25:18</a>, ya en estas páginas), y de Judá e Israel, que «habitaban seguros, cada uno bajo su vid y bajo su higuera» (<a href="1-kings-5.es.html#v5-5">1 Reyes 5:5</a>, ya en estas páginas). La RV 1909 dice «vivían seguros», la NVI «vivieron seguros» y la TNM 1987 «continuaron morando en seguridad».')
+
+DICTIONARY.append(("barburim", "barburim", "בַּרְבֻּרִים", "barburim",
+    'FATTENED FOWL (?) &mdash; the last item of Solomon&rsquo;s daily table, after the deer, gazelle and fallow deer (<a href="1-kings-5.html#v5-3">1 Kings 5:3</a>, now on these pages); <span data-heb="ברברים">the word stands only in that verse</span>, and its meaning is uncertain. The ASV has &lsquo;fatted fowl&rsquo;, the NIV &lsquo;choice fowl&rsquo;, the TLB &lsquo;plump fowl&rsquo; and the NWT 1984 &lsquo;fattened cuckoos&rsquo;.',
+    ("1 Kings", 5, 3)))
+DICTIONARY_ES["barburim"] = ("barburim",
+    'AVES CEBADAS (?) &mdash; lo último de la mesa diaria de Salomón, después del ciervo, la gacela y el gamo (<a href="1-kings-5.es.html#v5-3">1 Reyes 5:3</a>, ya en estas páginas); <span data-heb="ברברים">la palabra está solo en ese versículo</span>, y su sentido es incierto. La RV 1909 dice «aves engordadas», la NVI «aves de corral» y la TNM 1987 «cuclillos engordados».')
+
+DICTIONARY.append(("rekhesh", "rekhesh", "רֶכֶשׁ", "rékhesh",
+    'A SWIFT BEAST of the stable &mdash; &lsquo;the barley and the straw for the horses and the swift steeds&rsquo; (<a href="1-kings-5.html#v5-8">1 Kings 5:8</a>, now on these pages); the word also stands where Lachish is told to harness the chariot to it (<a href="micah-1.html#v13">Micah 1:13</a>, now on these pages). The ASV has &lsquo;swift steeds&rsquo;, the KJV &lsquo;dromedaries&rsquo;, the NIV &lsquo;the other horses&rsquo; and the NWT 1984 &lsquo;teams of horses&rsquo;.',
+    ("1 Kings", 5, 8)))
+DICTIONARY_ES["rekhesh"] = ("rékhesh",
+    'UNA BESTIA VELOZ del establo &mdash; «la cebada y la paja para los caballos y los corceles» (<a href="1-kings-5.es.html#v5-8">1 Reyes 5:8</a>, ya en estas páginas); la palabra también está donde a Laquis se le dice que ate el carro a ella (<a href="micah-1.es.html#v13">Miqueas 1:13</a>, ya en estas páginas). La RV 1909 dice «bestias de carga», la NVI «el resto de la caballería» y la TNM 1987 «tiros de caballos».')
+
+# ---------- dictionary: extended ----------
+_dict5k_en("minchah", add=' Solomon&rsquo;s kingdoms &lsquo;brought tribute&rsquo; in the same word (<a href="1-kings-5.html#v5-1">1 Kings 5:1</a>, now on these pages).')
+_dict5k_es("minchah", add=' Los reinos de Salomón «llevaban tributo» en la misma palabra (<a href="1-kings-5.es.html#v5-1">1 Reyes 5:1</a>, ya en estas páginas).')
+_dict5k_en("mas", add=' Solomon &lsquo;raised forced labor out of all Israel&rsquo;, thirty thousand men, with Adoniram over it (<a href="1-kings-5.html#v5-27">1 Kings 5:27&ndash;28</a>, now on these pages).')
+_dict5k_es("mas", add=' Salomón «levantó trabajos forzados de todo Israel», treinta mil hombres, con Adoniram sobre ellos (<a href="1-kings-5.es.html#v5-27">1 Reyes 5:27–28</a>, ya en estas páginas).')
+_dict5k_en("shalom", add=' &lsquo;There was peace between Hiram and Solomon&rsquo; (<a href="1-kings-5.html#v5-26">1 Kings 5:26</a>, now on these pages): the king&rsquo;s name and the peace in one verse.')
+_dict5k_es("shalom", add=' «Hubo paz entre Hiram y Salomón» (<a href="1-kings-5.es.html#v5-26">1 Reyes 5:26</a>, ya en estas páginas): el nombre del rey y la paz en un solo versículo.')
+_dict5k_en("mashal", add=' Solomon &lsquo;spoke three thousand proverbs&rsquo; (<a href="1-kings-5.html#v5-12">1 Kings 5:12</a>, now on these pages).')
+_dict5k_es("mashal", add=' Salomón «habló tres mil proverbios» (<a href="1-kings-5.es.html#v5-12">1 Reyes 5:12</a>, ya en estas páginas).')
+_dict5k_en("chokhmah", add=' Solomon&rsquo;s wisdom was &lsquo;greater than the wisdom of all the sons of the east&rsquo; (<a href="1-kings-5.html#v5-10">1 Kings 5:10</a>, now on these pages).')
+_dict5k_es("chokhmah", add=' La sabiduría de Salomón fue «mayor que la sabiduría de todos los hijos del oriente» (<a href="1-kings-5.es.html#v5-10">1 Reyes 5:10</a>, ya en estas páginas).')
+_dict5k_en("ahav", add=' Hiram &lsquo;had always loved David&rsquo; (<a href="1-kings-5.html#v5-15">1 Kings 5:15</a>, now on these pages).')
+_dict5k_es("ahav", add=' Hiram «siempre había amado a David» (<a href="1-kings-5.es.html#v5-15">1 Reyes 5:15</a>, ya en estas páginas).')
+_dict5k_en("nitsav", add=' The &lsquo;chiefs of the officers&rsquo; over Solomon&rsquo;s work, three thousand three hundred, are named in <a href="1-kings-5.html#v5-30">1 Kings 5:30</a> (now on these pages).')
+_dict5k_es("nitsav", add=' Los «jefes de los oficiales» sobre la obra de Salomón, tres mil trescientos, se nombran en <a href="1-kings-5.es.html#v5-30">1 Reyes 5:30</a> (ya en estas páginas).')
+
+# ---------- dictionary: stale "not yet" fixed ----------
+_dict5k_en("shulchan", "1 Kings 5:7, where Solomon&rsquo;s officers provision his table (not yet on these pages).",
+    '<a href="1-kings-5.html#v5-7">1 Kings 5:7</a>, where Solomon&rsquo;s officers provision his table (now on these pages).')
+_dict5k_es("shulchan", "1 Reyes 5:7, donde los oficiales de Salomón abastecen su mesa (todavía no en estas páginas).",
+    '<a href="1-kings-5.es.html#v5-7">1 Reyes 5:7</a>, donde los oficiales de Salomón abastecen su mesa (ya en estas páginas).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="adoniram", name="Adoniram", kind="people", aliases=["Adoniram"], refs=[("1 Kings", 4, 6)], videos=[],
+    desc='Adoniram son of Abda, the man Solomon set &lsquo;over the forced labor&rsquo; (<a href="1-kings-4.html#v4-6">1 Kings 4:6</a>, now on these pages), over the thirty thousand raised out of all Israel and sent to Lebanon in shifts of ten thousand a month (<a href="1-kings-5.html#v5-27">1 Kings 5:27&ndash;28</a>, now on these pages). Compare <a href="encyclopedia.html#adoram">Adoram</a> in David&rsquo;s list and <a href="encyclopedia.html#solomons-officials">Solomon&rsquo;s officials</a>.'))
+ENCYCLOPEDIA_ES["adoniram"] = ("Adoniram",
+    'Adoniram hijo de Abda, el hombre a quien Salomón puso «sobre los trabajos forzados» (<a href="1-kings-4.es.html#v4-6">1 Reyes 4:6</a>, ya en estas páginas), sobre los treinta mil levantados de todo Israel y enviados al Líbano en turnos de diez mil al mes (<a href="1-kings-5.es.html#v5-27">1 Reyes 5:27–28</a>, ya en estas páginas). Compárense <a href="enciclopedia.html#adoram">Adoram</a> en la lista de David y <a href="enciclopedia.html#solomons-officials">los oficiales de Salomón</a>.')
+
+ENCYCLOPEDIA.append(dict(slug="sons-of-mahol", name="The sons of Mahol", kind="people", aliases=["sons of Mahol", "Ethan the Ezrahite", "Heman", "Calcol", "Darda"], refs=[("1 Kings", 5, 11)], videos=[],
+    desc='Ethan the Ezrahite, Heman, Calcol and Darda, &lsquo;the sons of Mahol&rsquo;, the wise men than whom Solomon was wiser (<a href="1-kings-5.html#v5-11">1 Kings 5:11</a>, now on these pages); <span data-heb="בני מחול">&lsquo;the sons of Mahol&rsquo; stands only in that verse</span>. A list of the sons of a Zerah has Ethan, Heman, Calcol and Dara (1 Chronicles 2:6, not yet on these pages), and an Ethan the Ezrahite has a psalm (Psalm 89:1, not yet on these pages); the page does not say that these are the same men.'))
+ENCYCLOPEDIA_ES["sons-of-mahol"] = ("Los hijos de Mahol",
+    'Etán el ezraíta, Hemán, Calcol y Darda, «los hijos de Mahol», los sabios de quienes Salomón fue más sabio (<a href="1-kings-5.es.html#v5-11">1 Reyes 5:11</a>, ya en estas páginas); <span data-heb="בני מחול">«los hijos de Mahol» está solo en ese versículo</span>. Una lista de los hijos de un Zéraj tiene a Etán, Hemán, Calcol y Dara (1 Crónicas 2:6, todavía no en estas páginas), y un Etán el ezraíta tiene un salmo (Salmo 89:1, todavía no en estas páginas); la página no dice que sean los mismos hombres.')
+
+# ---------- encyclopedia: extended ----------
+_ency5k_en("hiram", add=' ⭐ In <a href="1-kings-5.html#v5-15">1 Kings 5:15&ndash;26</a> (now on these pages) he is &lsquo;a lover of David&rsquo;, sends his servants when Solomon is anointed, blesses Jehovah, and supplies cedar and cypress by sea in rafts in return for wheat and oil.')
+_ency5k_es("hiram", add=' ⭐ En <a href="1-kings-5.es.html#v5-15">1 Reyes 5:15–26</a> (ya en estas páginas) es «amador de David», envía sus siervos cuando Salomón es ungido, bendice a Jehová, y provee cedro y ciprés por mar en balsas a cambio de trigo y aceite.')
+_ency5k_en("sidon", add=' Solomon tells Hiram that there is no man among his own people who knows how to fell timber &lsquo;like the Sidonians&rsquo; (<a href="1-kings-5.html#v5-20">1 Kings 5:20</a>, now on these pages).')
+_ency5k_es("sidon", add=' Salomón dice a Hiram que no hay entre su pueblo hombre que sepa cortar madera «como los sidonios» (<a href="1-kings-5.es.html#v5-20">1 Reyes 5:20</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: stale "not yet" fixed ----------
+_ency5k_en("lebanon", "(1 Kings 5, forthcoming on this shelf)", '(<a href="1-kings-5.html#v5-1">1 Kings 5</a>, now on these pages)')
+_ency5k_es("lebanon", "(1 Reyes 5, aún no en esta estantería)", '(<a href="1-kings-5.es.html#v5-1">1 Reyes 5</a>, ya en estas páginas)')
+_ency5k_en("tyre", "cut a covenant' (1 Kings 5:12), with Hiram", "cut a covenant' (<a href=\"1-kings-5.html#v5-26\">1 Kings 5:26</a>, which is 5:12 in English numbering), with Hiram")
+_ency5k_es("tyre", "hicieron un pacto» (1 Reyes 5:12), con Hiram", 'hicieron un pacto» (<a href="1-kings-5.es.html#v5-26">1 Reyes 5:26</a>, que es 5:12 en la numeración de las Biblias en castellano), con Hiram')
+_ency5k_en("tyre", "1 Kings 5:25 in the Hebrew numbering; Ezekiel 27:17; neither chapter yet on these pages)",
+    '<a href="1-kings-5.html#v5-25">1 Kings 5:25</a> in the Hebrew numbering, now on these pages; Ezekiel 27:17, not yet on these pages)')
+_ency5k_es("tyre", "1 Reyes 5:25 en la numeración hebrea; Ezequiel 27:17; ninguno de los dos capítulos todavía en estas páginas)",
+    '<a href="1-kings-5.es.html#v5-25">1 Reyes 5:25</a> en la numeración hebrea, ya en estas páginas; Ezequiel 27:17, todavía no en estas páginas)')
+_ency5k_en("gebal", "(1 Kings 5:18, not yet on these pages)", '(<a href="1-kings-5.html#v5-32">1 Kings 5:32</a>, which is 5:18 in English numbering, now on these pages)')
+_ency5k_es("gebal", "(1 Reyes 5:18, todavía no en estas páginas)", '(<a href="1-kings-5.es.html#v5-32">1 Reyes 5:32</a>, que es 5:18 en la numeración de las Biblias en castellano, ya en estas páginas)')
+_ency5k_en("hiram", "(1 Kings 5:12; 9:13, not yet on these pages)", '(<a href="1-kings-5.html#v5-26">1 Kings 5:26</a>, which is 5:12 in English numbering, now on these pages; 1 Kings 9:13, not yet on these pages)')
+_ency5k_es("hiram", "(1 Reyes 5:12; 9:13, todavía no en estas páginas)", '(<a href="1-kings-5.es.html#v5-26">1 Reyes 5:26</a>, que es 5:12 en la numeración de las Biblias en castellano, ya en estas páginas; 1 Reyes 9:13, todavía no en estas páginas)')
+
+CHRON_CHAPTERS["1kgs5"] = dict(era="monarchy",
+    when="Solomon rules every kingdom from the River to the border of Egypt; his daily provision, his stalls of horses, and his wisdom, greater than the wisdom of the sons of the east, are counted. Hiram of Tyre, who had always loved David, sends cedar and cypress by sea in rafts for wheat and oil; Solomon raises a forced labor of thirty thousand out of all Israel, with seventy thousand who carry burdens and eighty thousand who cut in the mountain, to prepare the timber and the stones of the house.",
+    clock="Before the building begins, which the next chapter dates to the fourth year of Solomon’s reign: the materials are being gathered, and the kingdom is at peace.")
+
+ART_SKIPPED["1kgs5"] = "Hiram's cedar, rafts, forced labor and quarried stone: four Commons searches (Solomon and Hiram, the cedars of Lebanon, Doré, the temple quarry) returned only scanned book PDFs and a modern CC BY-SA photograph of a statue, and no public-domain picture of the chapter."
