@@ -54806,3 +54806,126 @@ CHAPTER_ART["2sam24"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Koning_David_ziet_de_engel_des_doods_Koning_David_knielt_voor_het_altaar_op_de_dorsvloer,_RP-P-OB-44.680.jpg",
 )]
+# --- 2 Samuel 2k ---
+def _swap2k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+_D2k = {_d[0]: _i for _i, _d in enumerate(DICTIONARY)}
+
+def _dict2k_en(slug, old=None, new=None, add=None):
+    _i = _D2k[slug]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency2k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+
+# ---------- new dictionary entry ----------
+DICTIONARY.append(("kun", "kun", "כּוּן", "kun",
+    'TO ESTABLISH, to make firm &mdash; the verb the Bible uses for a throne or a kingdom that is meant to last. It is Jehovah&rsquo;s promise to David, &lsquo;I will establish his kingdom&rsquo; and &lsquo;your throne shall be established forever&rsquo; (<a href="2-samuel-7.html#v7-12">2 Samuel 7:12, 13, 16</a>, now on these pages), and it frames <a href="1-kings-2.html#v2-12">1 Kings 2</a> (now on these pages): &lsquo;his kingdom was established greatly&rsquo; (verse 12), Solomon&rsquo;s &lsquo;who has established me&rsquo; (verse 24), &lsquo;the throne of David shall be established before Jehovah forever&rsquo; (verse 45), and the last sentence of the chapter, &lsquo;the kingdom was established in the hand of Solomon&rsquo; (verse 46). The ASV has &lsquo;established greatly&rsquo; in verse 12, the NIV &lsquo;firmly established&rsquo;, the NWT 1984 &lsquo;very firmly established&rsquo; and the Douay &lsquo;strengthened exceedingly&rsquo;.',
+    ("2 Samuel", 7, 12)))
+DICTIONARY_ES["kun"] = ("kun",
+    'ESTABLECER, afirmar &mdash; el verbo que la Biblia usa para un trono o un reino hecho para durar. Es la promesa de Jehová a David, «estableceré su reino» y «tu trono será firme para siempre» (<a href="2-samuel-7.es.html#v7-12">2 Samuel 7:12, 13, 16</a>, ya en estas páginas), y enmarca <a href="1-kings-2.es.html#v2-12">1 Reyes 2</a> (ya en estas páginas): «su reino fue establecido en gran manera» (versículo 12), el «que me ha establecido» de Salomón (versículo 24), «el trono de David será establecido delante de Jehová para siempre» (versículo 45), y la última frase del capítulo, «el reino fue establecido en la mano de Salomón» (versículo 46). La RV 1909 tiene «fué su reino firme en gran manera» en el versículo 12, la NVI «se consolidó firmemente» y la TNM 1987 «muy firmemente establecida».')
+
+# ---------- extended dictionary entries ----------
+_dict2k_en("shuv", None, None, add=' ⭐ <em>Hashiv panim</em>, &lsquo;to turn back a face&rsquo;, is the idiom of refusing a request: &lsquo;do not turn back my face&rsquo; and &lsquo;he will not turn back your face&rsquo; (<a href="1-kings-2.html#v2-16">1 Kings 2:16, 17, 20</a>, now on these pages). The NWT 1984 keeps the face, &lsquo;Do not turn my face away&rsquo;; the ASV has &lsquo;deny me not&rsquo;.')
+_dict2k_es("shuv", None, None, add=' ⭐ <em>Hashiv panim</em>, «hacer volver un rostro», es el modismo de rechazar una petición: «no hagas volver mi rostro» y «no hará volver tu rostro» (<a href="1-kings-2.es.html#v2-16">1 Reyes 2:16, 17, 20</a>, ya en estas páginas). La TNM 1987 guarda el rostro, «No vuelvas [de ti] mi rostro»; la RV 1909 tiene «no me hagas volver mi rostro».')
+_dict2k_en("naqah", None, None, add=' ⭐ David&rsquo;s &lsquo;do not leave him unpunished&rsquo; about Shimei is <em>al-tenaqqehu</em> (<a href="1-kings-2.html#v2-9">1 Kings 2:9</a>, now on these pages); the ASV has &lsquo;hold him not guiltless&rsquo; and the NWT 1984 &lsquo;do not leave him unpunished&rsquo;.')
+_dict2k_es("naqah", None, None, add=' ⭐ El «no lo dejes sin castigo» de David sobre Simei es <em>al-tenaqqehu</em> (<a href="1-kings-2.es.html#v2-9">1 Reyes 2:9</a>, ya en estas páginas); la RV 1909 tiene «no lo absolverás» y la TNM 1987 «no lo dejes sin castigar».')
+_dict2k_en("paga", None, None, add=' ⭐ &lsquo;Strike him down&rsquo; is the verb of the killings in <a href="1-kings-2.html#v2-25">1 Kings 2:25, 29, 31, 32, 34 and 46</a> (now on these pages): Adonijah, Joab, and Shimei, and Joab&rsquo;s own &lsquo;fell upon two men more righteous and better than he&rsquo;. The ASV has &lsquo;fell upon him&rsquo; and the NIV &lsquo;struck down&rsquo;.')
+_dict2k_es("paga", None, None, add=' ⭐ «Hiérelo» es el verbo de las muertes de <a href="1-kings-2.es.html#v2-25">1 Reyes 2:25, 29, 31, 32, 34 y 46</a> (ya en estas páginas): Adonías, Joab y Simei, y el «hirió a dos hombres más justos y mejores que él» de Joab. La RV 1909 tiene «dió sobre él» y la TNM 1987 «se arrojó sobre él».')
+_dict2k_en("shalom", None, None, add=' ⭐ In <a href="1-kings-2.html#v2-5">1 Kings 2</a> (now on these pages) it is the word of verses 5, 6, 13 and 33: the blood of war put &lsquo;in peace&rsquo;, a gray head not to go down &lsquo;in peace&rsquo;, Adonijah who comes &lsquo;in peace&rsquo;, and &lsquo;peace forever from Jehovah&rsquo; for David&rsquo;s house; the king&rsquo;s name, <em>Shelomoh</em>, is from the same root.')
+_dict2k_es("shalom", None, None, add=' ⭐ En <a href="1-kings-2.es.html#v2-5">1 Reyes 2</a> (ya en estas páginas) es la palabra de los versículos 5, 6, 13 y 33: la sangre de guerra puesta «en paz», unas canas que no han de bajar «en paz», Adonías que viene «en paz», y «paz para siempre de parte de Jehová» para la casa de David; el nombre del rey, <em>Shelomoh</em>, es de la misma raíz.')
+_dict2k_en("sheol", None, None, add=' ⭐ David&rsquo;s &lsquo;do not let his gray head go down to Sheol in peace&rsquo; and &lsquo;bring his gray head down with blood to Sheol&rsquo; (<a href="1-kings-2.html#v2-6">1 Kings 2:6, 9</a>, now on these pages) have the words of Jacob&rsquo;s &lsquo;you will bring down my gray hairs with sorrow to the grave&rsquo; (<a href="genesis-42.html#v42-38">Genesis 42:38</a>).')
+_dict2k_es("sheol", None, None, add=' ⭐ El «no dejes que sus canas bajen al Seol en paz» y el «harás bajar sus canas con sangre al Seol» de David (<a href="1-kings-2.es.html#v2-6">1 Reyes 2:6, 9</a>, ya en estas páginas) tienen las palabras del «harán descender mis canas con dolor al Seol» de Jacob (<a href="genesis-42.es.html#v42-38">Génesis 42:38</a>).')
+_dict2k_en("sakal", None, None, add=' ⭐ &lsquo;That you may act wisely in all that you do&rsquo; is David&rsquo;s charge to Solomon (<a href="1-kings-2.html#v2-3">1 Kings 2:3</a>, now on these pages), the verb of Joshua 1:7; the NWT 1984 has &lsquo;act prudently&rsquo;, where the ASV, KJV and NIV have &lsquo;prosper&rsquo;.')
+_dict2k_es("sakal", None, None, add=' ⭐ «Para que actúes con acierto en todo lo que hagas» es el encargo de David a Salomón (<a href="1-kings-2.es.html#v2-3">1 Reyes 2:3</a>, ya en estas páginas), el verbo de Josué 1:7; la TNM 1987 tiene «actúes prudentemente», donde la RV 1909 y la NVI tienen «dichoso» y «prosperarás».')
+_dict2k_en("mishmeret", None, None, add=' ⭐ &lsquo;Keep the charge of Jehovah your God&rsquo; is David&rsquo;s first word to Solomon (<a href="1-kings-2.html#v2-3">1 Kings 2:3</a>, now on these pages), in the words of the priests&rsquo; and the camp&rsquo;s duty at the tent (<a href="leviticus-8.html#v8-35">Leviticus 8:35</a>).')
+_dict2k_es("mishmeret", None, None, add=' ⭐ «Guarda el encargo de Jehová tu Dios» es la primera palabra de David a Salomón (<a href="1-kings-2.es.html#v2-3">1 Reyes 2:3</a>, ya en estas páginas), con las palabras del deber de los sacerdotes y del campamento junto a la tienda (<a href="leviticus-8.es.html#v8-35">Levítico 8:35</a>).')
+_dict2k_en("torah", None, None, add=' ⭐ &lsquo;As it is written in the law of Moses&rsquo; (<a href="1-kings-2.html#v2-3">1 Kings 2:3</a>, now on these pages) is the first time the phrase stands in the books after Joshua, which has the longer &lsquo;the book of the law of Moses&rsquo; (<a href="joshua-8.html#v8-31">Joshua 8:31</a>).')
+_dict2k_es("torah", None, None, add=' ⭐ «Como está escrito en la ley de Moisés» (<a href="1-kings-2.es.html#v2-3">1 Reyes 2:3</a>, ya en estas páginas) es la primera vez que la frase está en los libros posteriores a Josué, que tiene la forma más larga «el libro de la ley de Moisés» (<a href="joshua-8.es.html#v8-31">Josué 8:31</a>).')
+_dict2k_en("kisse", None, None, add=' ⭐ In <a href="1-kings-2.html#v2-4">1 Kings 2</a> (now on these pages) David&rsquo;s promise is &lsquo;there shall not be cut off for you a man from upon the throne of Israel&rsquo; (verse 4), and the chapter ends with &lsquo;the throne of David shall be established before Jehovah forever&rsquo; (verse 45).')
+_dict2k_es("kisse", None, None, add=' ⭐ En <a href="1-kings-2.es.html#v2-4">1 Reyes 2</a> (ya en estas páginas) la promesa de David es «no te será cortado un varón de sobre el trono de Israel» (versículo 4), y el capítulo termina con «el trono de David será establecido delante de Jehová para siempre» (versículo 45).')
+_dict2k_en("chesed", None, None, add=' ⭐ &lsquo;Show kindness to the sons of Barzillai the Gileadite&rsquo; (<a href="1-kings-2.html#v2-7">1 Kings 2:7</a>, now on these pages).')
+_dict2k_es("chesed", None, None, add=' ⭐ «A los hijos de Barzilai el galaadita muestra bondad» (<a href="1-kings-2.es.html#v2-7">1 Reyes 2:7</a>, ya en estas páginas).')
+_dict2k_en("qalal", None, None, add=' ⭐ Shimei &lsquo;cursed me with a grievous curse&rsquo; (<a href="1-kings-2.html#v2-8">1 Kings 2:8</a>, now on these pages), and is told that Solomon &lsquo;shall be blessed&rsquo; (2:45).')
+_dict2k_es("qalal", None, None, add=' ⭐ Simei «me maldijo con una maldición terrible» (<a href="1-kings-2.es.html#v2-8">1 Reyes 2:8</a>, ya en estas páginas), y se le dice que Salomón «será bendito» (2:45).')
+_dict2k_en("qeren", None, None, add=' ⭐ &lsquo;Joab … took hold of the horns of the altar&rsquo; (<a href="1-kings-2.html#v2-28">1 Kings 2:28</a>, now on these pages), as Adonijah had (1:50).')
+_dict2k_es("qeren", None, None, add=' ⭐ «Joab … se asió de los cuernos del altar» (<a href="1-kings-2.es.html#v2-28">1 Reyes 2:28</a>, ya en estas páginas), como había hecho Adonías (1:50).')
+_dict2k_en("chinnam", None, None, add=' ⭐ &lsquo;The blood shed without cause, which Joab shed&rsquo; (<a href="1-kings-2.html#v2-31">1 Kings 2:31</a>, now on these pages), the only verse with the phrase <em>demei chinnam</em>.')
+_dict2k_es("chinnam", None, None, add=' ⭐ «La sangre derramada sin causa, que derramó Joab» (<a href="1-kings-2.es.html#v2-31">1 Reyes 2:31</a>, ya en estas páginas), el único versículo con la frase <em>demei chinnam</em>.')
+_dict2k_en("ben-mavet", None, None, add=' ⭐ Abiathar is told &lsquo;you are a man of death&rsquo;, <em>ish mavet</em> (<a href="1-kings-2.html#v2-26">1 Kings 2:26</a>, now on these pages), and spared.')
+_dict2k_es("ben-mavet", None, None, add=' ⭐ A Abiatar se le dice «eres hombre de muerte», <em>ish mavet</em> (<a href="1-kings-2.es.html#v2-26">1 Reyes 2:26</a>, ya en estas páginas), y es perdonado.')
+
+# flips of old 'not yet' claims
+_dict2k_en("mizbeach", "1 Kings 2:28, not yet)", '<a href="1-kings-2.html#v2-28">1 Kings 2:28</a>, now on these pages)')
+_dict2k_es("mizbeach", "1 Reyes 2:28, todavía no)", '<a href="1-kings-2.es.html#v2-28">1 Reyes 2:28</a>, ya en estas páginas)')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="abishag", name="Abishag the Shunammite", kind="person", aliases=["Abishag", "Abishag the Shunammite"], refs=[("1 Kings", 1, 3)], videos=[],
+    desc='The young woman of <a href="encyclopedia.html#shunem">Shunem</a> sought &lsquo;throughout all the territory of Israel&rsquo; to attend the old David; she &lsquo;became the king&rsquo;s attendant and served him, but the king did not know her&rsquo; (<a href="1-kings-1.html#v3">1 Kings 1:3&ndash;4</a>, now on these pages). In <a href="1-kings-2.html#v2-13">1 Kings 2:13&ndash;25</a> (now on these pages) <a href="encyclopedia.html#adonijah">Adonijah</a> asks Bathsheba to ask Solomon for her as a wife; Solomon answers &lsquo;Ask for him the kingdom also&rsquo; and has Adonijah killed the same day. &#9888; <span data-heb="אבישג">She is named in five verses</span>, all in these two chapters, and has no words of her own; the text does not say what she wanted, or what became of her.'))
+ENCYCLOPEDIA_ES["abishag"] = ("Abisag la sunamita",
+    'La joven de <a href="enciclopedia.html#shunem">Sunem</a> buscada «en todo el territorio de Israel» para cuidar al anciano David; ella «fue cuidadora del rey y le servía, pero el rey no la conoció» (<a href="1-kings-1.es.html#v3">1 Reyes 1:3–4</a>, ya en estas páginas). En <a href="1-kings-2.es.html#v2-13">1 Reyes 2:13–25</a> (ya en estas páginas) <a href="enciclopedia.html#adonijah">Adonías</a> pide a Betsabé que pida a Salomón que se la dé por mujer; Salomón responde «Pide también para él el reino» y manda matar a Adonías ese mismo día. &#9888; <span data-heb="אבישג">Se la nombra en cinco versículos</span>, todos en estos dos capítulos, y no tiene palabras propias; el texto no dice qué quería, ni qué fue de ella.')
+
+# ---------- encyclopedia: extended ----------
+_ency2k_en("solomon", None, None, add=' ⭐ In <a href="1-kings-2.html#v2-12">1 Kings 2</a> (now on these pages) he sits on David&rsquo;s throne, has Adonijah, Joab and Shimei struck down by Benaiah, and drives Abiathar out; the chapter closes &lsquo;the kingdom was established in the hand of Solomon&rsquo; (2:46).')
+_ency2k_es("solomon", None, None, add=' ⭐ En <a href="1-kings-2.es.html#v2-12">1 Reyes 2</a> (ya en estas páginas) se sienta en el trono de David, hace que Benaía hiera a Adonías, a Joab y a Simei, y expulsa a Abiatar; el capítulo termina «el reino fue establecido en la mano de Salomón» (2:46).')
+_ency2k_en("david", None, None, add=' ⭐ His charge to Solomon (<a href="1-kings-2.html#v2-1">1 Kings 2:1&ndash;9</a>, now on these pages): &lsquo;be strong, and be a man&rsquo;, keep the charge of Jehovah, deal with Joab and Shimei, show kindness to Barzillai&rsquo;s sons; then &lsquo;David lay down with his fathers&rsquo; after forty years, seven in Hebron and thirty-three in Jerusalem (2:10&ndash;11).')
+_ency2k_es("david", None, None, add=' ⭐ Su encargo a Salomón (<a href="1-kings-2.es.html#v2-1">1 Reyes 2:1–9</a>, ya en estas páginas): «sé fuerte, y sé hombre», guarda el encargo de Jehová, trata con Joab y con Simei, muestra bondad con los hijos de Barzilai; luego «David se acostó con sus padres» tras cuarenta años, siete en Hebrón y treinta y tres en Jerusalén (2:10–11).')
+_ency2k_en("bathsheba", None, None, add=' ⭐ Adonijah asks her to speak to Solomon for Abishag; the king rises, bows down to her and has a throne set at his right hand (<a href="1-kings-2.html#v2-13">1 Kings 2:13&ndash;20</a>, now on these pages).')
+_ency2k_es("bathsheba", None, None, add=' ⭐ Adonías le pide que hable a Salomón por Abisag; el rey se levanta, se inclina ante ella y hace poner un trono a su derecha (<a href="1-kings-2.es.html#v2-13">1 Reyes 2:13–20</a>, ya en estas páginas).')
+_ency2k_en("joab", None, None, add=' ⭐ David names him in his charge to Solomon (<a href="1-kings-2.html#v2-5">1 Kings 2:5&ndash;6</a>); he flees to the Tent of Jehovah and takes hold of the horns of the altar, says &lsquo;No, for here I will die&rsquo;, and is struck down by Benaiah (2:28&ndash;34, all now on these pages).')
+_ency2k_es("joab", None, None, add=' ⭐ David lo nombra en su encargo a Salomón (<a href="1-kings-2.es.html#v2-5">1 Reyes 2:5–6</a>); huye a la tienda de Jehová y se asió de los cuernos del altar, dice «No, porque aquí moriré», y es herido por Benaía (2:28–34, todo ya en estas páginas).')
+_ency2k_en("benaiah", None, None, add=' ⭐ Solomon sends him to strike down Adonijah, Joab and Shimei (<a href="1-kings-2.html#v2-25">1 Kings 2:25, 29&ndash;34, 46</a>, now on these pages), and puts him over the army in Joab&rsquo;s place (2:35).')
+_ency2k_es("benaiah", None, None, add=' ⭐ Salomón lo envía a herir a Adonías, a Joab y a Simei (<a href="1-kings-2.es.html#v2-25">1 Reyes 2:25, 29–34, 46</a>, ya en estas páginas), y lo pone sobre el ejército en lugar de Joab (2:35).')
+_ency2k_en("zadok-abiathar", None, None, add=' ⭐ Zadok is put in Abiathar&rsquo;s place (<a href="1-kings-2.html#v2-35">1 Kings 2:35</a>, now on these pages).')
+_ency2k_es("zadok-abiathar", None, None, add=' ⭐ Sadoc es puesto en lugar de Abiatar (<a href="1-kings-2.es.html#v2-35">1 Reyes 2:35</a>, ya en estas páginas).')
+_ency2k_en("adonijah", "he asks in the next chapter for Abishag", 'he asks through Bathsheba, in <a href="1-kings-2.html#v2-13">1 Kings 2:13&ndash;25</a> (now on these pages), for <a href="encyclopedia.html#abishag">Abishag</a>')
+ENCYCLOPEDIA_ES["adonijah"] = ("Adonías",
+    'El cuarto hijo de David, de Haguit, y — con Amnón, Absalón y Quileab muertos o fuera de escena — el pretendiente vivo de más edad al trono. Se proclama rey mientras su padre agoniza (<a href="1-kings-1.es.html#v5">1 Reyes 1:5</a>), copiando casi palabra por palabra el método de su hermano Absalón, y es abandonado en su propio banquete de coronación en cuanto Salomón es ungido en Guihón. Perdonado con una condición, pide por medio de Betsabé, en <a href="1-kings-2.es.html#v2-13">1 Reyes 2:13–25</a> (ya en estas páginas), a <a href="enciclopedia.html#abishag">Abisag</a> — la cuidadora del rey moribundo — y es ejecutado por ello, siendo la petición leída, con razón o sin ella, como una nueva reclamación del trono.')
+_ency2k_en("shimei-son-of-gera", "what is said of him in 1 Kings 2:8&ndash;9, 36&ndash;46 is not yet on these pages", 'what is said of him in <a href="1-kings-2.html#v2-8">1 Kings 2:8&ndash;9, 36&ndash;46</a> is now on these pages: David&rsquo;s charge to Solomon, then a house in Jerusalem, the brook Kidron, and Gath')
+_ency2k_es("shimei-son-of-gera", "lo que se dice de él en 1 Reyes 2:8–9, 36–46 todavía no está en estas páginas", 'lo que se dice de él en <a href="1-kings-2.es.html#v2-8">1 Reyes 2:8–9, 36–46</a> ya está en estas páginas: el encargo de David a Salomón, luego una casa en Jerusalén, el torrente Cedrón, y Gat')
+_ency2k_en("barzillai-the-gileadite", "(1 Kings 2:7, not yet on these pages)", '(<a href="1-kings-2.html#v2-7">1 Kings 2:7</a>, now on these pages)')
+_ency2k_es("barzillai-the-gileadite", "(1 Reyes 2:7, todavía no en estas páginas)", '(<a href="1-kings-2.es.html#v2-7">1 Reyes 2:7</a>, ya en estas páginas)')
+_ency2k_en("achish", "(1 Kings 2:39&ndash;40, not yet on these pages)", '(<a href="1-kings-2.html#v2-39">1 Kings 2:39&ndash;40</a>, now on these pages)')
+_ency2k_es("achish", "(1 Reyes 2:39&ndash;40, todavía no en estas páginas)", '(<a href="1-kings-2.es.html#v2-39">1 Reyes 2:39–40</a>, ya en estas páginas)')
+_ency2k_en("anathoth", "(1 Kings 2:26)", '(<a href="1-kings-2.html#v2-26">1 Kings 2:26</a>, now on these pages)')
+_ency2k_en("eli", "1 Kings 2:27 (not yet on these pages)", '<a href="1-kings-2.html#v2-27">1 Kings 2:27</a> (now on these pages)')
+_ency2k_es("eli", "1 Reyes 2:27 (todavía no en estas páginas)", '<a href="1-kings-2.es.html#v2-27">1 Reyes 2:27</a> (ya en estas páginas)')
+_ency2k_en("zadok-abiathar", "(1 Kings 2:27, not yet on these pages)", '(<a href="1-kings-2.html#v2-27">1 Kings 2:27</a>, now on these pages)')
+_ency2k_es("zadok-abiathar", "(1 Reyes 2:27, todavía no en estas páginas)", '(<a href="1-kings-2.es.html#v2-27">1 Reyes 2:27</a>, ya en estas páginas)')
+
+CHRON_CHAPTERS["1kgs2"] = dict(era="monarchy",
+    when="David charges Solomon to keep the charge of Jehovah and to deal with Joab and Shimei, and to show kindness to the sons of Barzillai; he lies down with his fathers after forty years. Adonijah asks for Abishag through Bathsheba and is put to death; Abiathar is driven out to Anathoth; Joab is struck down at the altar; Shimei is kept in Jerusalem until he goes to Gath. The kingdom is established in the hand of Solomon.",
+    clock="David’s last days and the first of Solomon’s reign, one after another: the chapter runs from the deathbed to the death of Shimei, three years after the order that kept him in Jerusalem.")
+
+CHAPTER_ART["1kgs2"] = [dict(
+    file="hunterian-davids-dying-charge-to-solomon.jpg",
+    title="David’s Dying Charge to Solomon (after P. van der Horst)", title_es="El encargo de David moribundo a Salomón (según P. van der Horst)",
+    artist="Anonymous, Dutch School, after P. van der Horst",
+    year="c. 1700",
+    location="Hunterian Art Gallery, University of Glasgow (GLAHA 43456; credit Art UK)", location_es="Hunterian Art Gallery, Universidad de Glasgow (GLAHA 43456; crédito Art UK)",
+    alt="A painting of an old white-bearded man in a white cap, propped on pillows in a canopied bed hung with green curtains, one hand raised toward a young long-haired man in a green tunic and red cloak who stands at the left of the bed with a hand on his chest. A crown and two staffs or sceptres lie on the green coverlet. At the right a veiled woman in a fur-trimmed brown gown sits at the bedside with her arm on the bedframe, looking toward the old man.",
+    note="1 Kings 2:1&ndash;9. The title is the museum&rsquo;s, and it is a copy after another painter. The verses name David and Solomon (2:1) and say that David charged him; they do not mention a bed, a crown or sceptres, or a woman at the bedside.",
+    note_es="1 Reyes 2:1–9. El título es el del museo, y es una copia según otro pintor. Los versículos nombran a David y a Salomón (2:1) y dicen que David le dio un encargo; no mencionan una cama, una corona ni cetros, ni una mujer junto al lecho.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Dutch_School_-_David%27s_Dying_Charge_to_Solomon_(after_P._van_der_Horst)_-_GLAHA_43456_-_Hunterian_Museum_and_Art_Gallery.jpg",
+)]
