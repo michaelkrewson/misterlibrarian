@@ -55360,3 +55360,96 @@ CHRON_CHAPTERS["1kgs6"] = dict(era="monarchy",
     clock="Solomon’s fourth to eleventh years, the seven years of the building of the house of Jehovah.")
 
 ART_SKIPPED["1kgs6"] = "The measures, cedar walls, gold and olive-wood cherubim of the house: six Commons searches (Solomon's temple, the Holy of Holies and cherubim, Doré, Luyken) returned only scanned book PDFs, and no stand-alone public-domain picture of the chapter."
+# --- 1 Kings 7 ---
+def _swap7k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict7k_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap7k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict7k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap7k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency7k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap7k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency7k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap7k(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("mekhonah", "mekhonah", "מְכוֹנָה", "mekhonáh",
+    'A STAND &mdash; the bronze base of four cubits by four by three, ten of them, with panels between crossbars carrying lions, oxen and cherubim, and four wheels like those of a chariot, each stand carrying one <a href="dictionary.html#kiyyor">laver</a>; five were set at the right shoulder of the house and five at the left (<a href="1-kings-7.html#v7-27">1 Kings 7:27&ndash;39</a>, now on these pages). The ASV has &lsquo;bases&rsquo;, the NIV &lsquo;movable stands&rsquo; and the NWT 1984 &lsquo;carriages&rsquo;.',
+    ("1 Kings", 7, 27)))
+DICTIONARY_ES["mekhonah"] = ("mekhonáh",
+    'UNA BASA &mdash; la base de bronce de cuatro codos por cuatro por tres, diez de ellas, con paneles entre travesaños que llevaban leones, bueyes y querubines, y cuatro ruedas como las de un carro, cada basa con una <a href="diccionario.html#kiyyor">fuente</a> encima; cinco se pusieron en el hombro derecho de la casa y cinco en el izquierdo (<a href="1-kings-7.es.html#v7-27">1 Reyes 7:27–39</a>, ya en estas páginas). La RV 1909 dice «basas», la NVI «bases» y la TNM 1987 «carretillas».')
+
+DICTIONARY.append(("kiyyor", "kiyyor", "כִּיּוֹר", "kiyyór",
+    'A LAVER, a basin for washing &mdash; the &lsquo;laver of bronze&rsquo; of the tent, set between the tent of meeting and the altar (<a href="exodus-30.html#v30-18">Exodus 30:18</a>), and the ten of Solomon&rsquo;s house, forty baths each and four cubits across, one on each <a href="dictionary.html#mekhonah">stand</a> (<a href="1-kings-7.html#v7-38">1 Kings 7:38</a>, both now on these pages). The ASV has &lsquo;laver&rsquo;, the NIV and NWT 1984 &lsquo;basin&rsquo;.',
+    ("1 Kings", 7, 38)))
+DICTIONARY_ES["kiyyor"] = ("kiyyór",
+    'UNA FUENTE, una pila para lavar &mdash; la «fuente de bronce» de la tienda, puesta entre la tienda de reunión y el altar (<a href="exodus-30.es.html#v30-18">Éxodo 30:18</a>), y las diez de la casa de Salomón, de cuarenta batos cada una y cuatro codos de ancho, una sobre cada <a href="diccionario.html#mekhonah">basa</a> (<a href="1-kings-7.es.html#v7-38">1 Reyes 7:38</a>, ambos ya en estas páginas). La RV 1909 dice «fuente», la NVI «recipiente» y la TNM 1987 «fuente».')
+
+DICTIONARY.append(("yam", "yam", "יָם", "yam",
+    'THE SEA &mdash; in <a href="1-kings-7.html#v7-23">1 Kings 7:23&ndash;26</a> (now on these pages) the cast bronze basin &lsquo;the sea&rsquo;: ten cubits from brim to brim, five cubits high, a line of thirty around it, with two rows of <a href="dictionary.html#peqaim">gourds</a> under the brim, standing on twelve oxen, a handbreadth thick, and holding two thousand baths. The ASV has &lsquo;molten sea&rsquo;, the NIV &lsquo;the Sea of cast metal&rsquo;.',
+    ("1 Kings", 7, 23)))
+DICTIONARY_ES["yam"] = ("yam",
+    'EL MAR &mdash; en <a href="1-kings-7.es.html#v7-23">1 Reyes 7:23–26</a> (ya en estas páginas) la pila de bronce fundido llamada «el mar»: diez codos de borde a borde, cinco codos de alto, un cordel de treinta alrededor, con dos hileras de <a href="diccionario.html#peqaim">calabazas</a> bajo el borde, sobre doce bueyes, de un palmo de grosor y con capacidad para dos mil batos. La RV 1909 dice «un mar de fundición», la NVI «una fuente circular de metal fundido».')
+
+# ---------- dictionary: stale "not yet" fixed ----------
+_dict7k_en("seren", "in 1 Kings 7:30 (not yet on these pages)", 'in <a href="1-kings-7.html#v7-30">1 Kings 7:30</a> (now on these pages)')
+_dict7k_es("seren", "en 1 Reyes 7:30 (todav&iacute;a no en estas p&aacute;ginas)", 'en <a href="1-kings-7.es.html#v7-30">1 Reyes 7:30</a> (ya en estas p&aacute;ginas)')
+_dict7k_en("peqaim", "(1 Kings 7:24, not yet on these pages)", '(<a href="1-kings-7.html#v7-24">1 Kings 7:24</a>, now on these pages)')
+_dict7k_es("peqaim", "(1 Reyes 7:24, todavía no en estas páginas)", '(<a href="1-kings-7.es.html#v7-24">1 Reyes 7:24</a>, ya en estas páginas)')
+_dict7k_en("gedilim", "1 Kings 7:17, where", '<a href="1-kings-7.html#v7-17">1 Kings 7:17</a> (now on these pages), where')
+_dict7k_es("gedilim", "1 Reyes 7:17, donde", '<a href="1-kings-7.es.html#v7-17">1 Reyes 7:17</a> (ya en estas páginas), donde')
+_dict7k_en("batos-koros", "1 Kings 7:26)", '<a href="1-kings-7.html#v7-26">1 Kings 7:26</a>)')
+_dict7k_es("batos-koros", "1 Reyes 7:26)", '<a href="1-kings-7.es.html#v7-26">1 Reyes 7:26</a>)')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="hiram-bronze-worker", name="Hiram the bronze-worker", kind="person", aliases=["Hiram the bronze-worker", "Huram"], refs=[("1 Kings", 7, 13)], videos=[],
+    desc='The craftsman Solomon &lsquo;sent and took&rsquo; from Tyre: the son of a widow of the tribe of Naphtali, his father a man of Tyre, a worker in bronze, &lsquo;filled with the wisdom and the understanding and the knowledge&rsquo; (<a href="1-kings-7.html#v7-13">1 Kings 7:13&ndash;14</a>, now on these pages). He formed the two pillars, the sea, the ten stands and lavers, and the pots, shovels and bowls (7:15&ndash;45). The text does not say he is kin to <a href="encyclopedia.html#hiram">Hiram king of Tyre</a>. The NIV writes his name &lsquo;Huram&rsquo;.'))
+ENCYCLOPEDIA_ES["hiram-bronze-worker"] = ("Hiram el obrero en bronce",
+    'El artífice a quien Salomón «envió y tomó» de Tiro: hijo de una viuda de la tribu de Neftalí, su padre un hombre de Tiro, obrero en bronce, «lleno de la sabiduría y del entendimiento y del conocimiento» (<a href="1-kings-7.es.html#v7-13">1 Reyes 7:13–14</a>, ya en estas páginas). Formó las dos columnas, el mar, las diez basas y fuentes, y las ollas, las palas y los tazones (7:15–45). El texto no dice que sea pariente de <a href="enciclopedia.html#hiram">Hiram rey de Tiro</a>. La NVI escribe su nombre «Hiram».')
+
+ENCYCLOPEDIA.append(dict(slug="jachin-and-boaz", name="Jachin and Boaz", kind="thing", aliases=["Jachin and Boaz", "Jachin", "the two pillars"], refs=[("1 Kings", 7, 21)], videos=[],
+    desc='The two bronze pillars at the porch of the temple, eighteen cubits high with a thread of twelve cubits around, topped by capitals of five cubits with nets, chain-work, two hundred pomegranates in rows on each, and lily-work; the right pillar called Jachin and the left Boaz (<a href="1-kings-7.html#v7-15">1 Kings 7:15&ndash;22</a>, now on these pages). Jachin is also a son of Simeon (<a href="genesis-46.html#v46-10">Genesis 46:10</a>) and <a href="encyclopedia.html#boaz">Boaz</a> the man of Ruth; the verse does not say the pillars are named for them.'))
+ENCYCLOPEDIA_ES["jachin-and-boaz"] = ("Jaquín y Booz",
+    'Las dos columnas de bronce junto al pórtico del templo, de dieciocho codos de alto con un hilo de doce codos alrededor, coronadas por capiteles de cinco codos con redes, obra de cadena, doscientas granadas en hileras sobre cada uno, y obra de lirios; la columna derecha llamada Jaquín y la izquierda Booz (<a href="1-kings-7.es.html#v7-15">1 Reyes 7:15–22</a>, ya en estas páginas). Jaquín es también un hijo de Simeón (<a href="genesis-46.es.html#v46-10">Génesis 46:10</a>) y <a href="enciclopedia.html#boaz">Booz</a> el hombre de Rut; el versículo no dice que las columnas lleven su nombre.')
+
+ENCYCLOPEDIA.append(dict(slug="house-of-the-forest-of-lebanon", name="The House of the Forest of Lebanon", kind="thing", aliases=["House of the Forest of Lebanon", "the house of the forest of Lebanon"], refs=[("1 Kings", 7, 2)], videos=[],
+    desc='The hall Solomon built as part of his own house: a hundred cubits long, fifty wide and thirty high, on four rows of cedar pillars, with cedar beams, windows in three rows and doorways squared in frame (<a href="1-kings-7.html#v7-2">1 Kings 7:2&ndash;5</a>, now on these pages). It is longer by forty cubits and wider by thirty than the house of Jehovah (<a href="1-kings-6.html#v6-2">1 Kings 6:2</a>). <span data-heb="בית יער הלבנון">The name stands in five verses</span>, two of them in 1 Kings 10 (not yet on these pages).'))
+ENCYCLOPEDIA_ES["house-of-the-forest-of-lebanon"] = ("La Casa del Bosque del Líbano",
+    'La sala que Salomón edificó como parte de su propia casa: cien codos de largo, cincuenta de ancho y treinta de alto, sobre cuatro filas de columnas de cedro, con vigas de cedro, ventanas en tres filas y entradas de marco cuadrado (<a href="1-kings-7.es.html#v7-2">1 Reyes 7:2–5</a>, ya en estas páginas). Es más larga por cuarenta codos y más ancha por treinta que la casa de Jehová (<a href="1-kings-6.es.html#v6-2">1 Reyes 6:2</a>). <span data-heb="בית יער הלבנון">El nombre está en cinco versículos</span>, dos de ellos en 1 Reyes 10 (todavía no en estas páginas).')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency7k_en("hiram", add=' ⭐ A bronze-worker also named Hiram, a widow&rsquo;s son of Naphtali, casts the pillars and the sea (<a href="1-kings-7.html#v7-13">1 Kings 7:13</a>, now on these pages; see <a href="encyclopedia.html#hiram-bronze-worker">Hiram the bronze-worker</a>); the text does not say the two are kin.')
+_ency7k_es("hiram", add=' ⭐ Un obrero en bronce también llamado Hiram, hijo de una viuda de Neftalí, funde las columnas y el mar (<a href="1-kings-7.es.html#v7-13">1 Reyes 7:13</a>, ya en estas páginas; véase <a href="enciclopedia.html#hiram-bronze-worker">Hiram el obrero en bronce</a>); el texto no dice que los dos sean parientes.')
+_ency7k_en("boaz", add=' ⭐ The left pillar at the porch of the temple is named Boaz (<a href="1-kings-7.html#v7-21">1 Kings 7:21</a>, now on these pages).')
+_ency7k_es("boaz", add=' ⭐ La columna izquierda junto al pórtico del templo se llama Booz (<a href="1-kings-7.es.html#v7-21">1 Reyes 7:21</a>, ya en estas páginas).')
+_ency7k_en("first-temple", add=' ⭐ <a href="1-kings-7.html#v7-13">1 Kings 7</a> (now on these pages) gives its bronze (two pillars, the sea, ten stands and lavers, all cast by Hiram in the plain of the Jordan) and its gold (the altar, the table, ten lampstands, and the sockets of the doors).')
+_ency7k_es("first-temple", add=' ⭐ <a href="1-kings-7.es.html#v7-13">1 Reyes 7</a> (ya en estas páginas) da su bronce (dos columnas, el mar, diez basas y fuentes, todo fundido por Hiram en la llanura del Jordán) y su oro (el altar, la mesa, diez candelabros y los quicios de las puertas).')
+_ency7k_en("zarethan", "and 1 Kings 7:46 (not yet on these pages)", 'and <a href="1-kings-7.html#v7-46">1 Kings 7:46</a> (now on these pages)')
+_ency7k_es("zarethan", "ese, y 1 Reyes 7:46 (todavía no en estas páginas)", 'ese, y <a href="1-kings-7.es.html#v7-46">1 Reyes 7:46</a> (ya en estas páginas)')
+_ency7k_en("succoth", "(1 Kings 7:46)", '(<a href="1-kings-7.html#v7-46">1 Kings 7:46</a>)')
+_ency7k_es("succoth", "(1 Reyes 7:46)", '(<a href="1-kings-7.es.html#v7-46">1 Reyes 7:46</a>)')
+
+CHRON_CHAPTERS["1kgs7"] = dict(era="monarchy",
+    when="After the house of Jehovah, Solomon builds his own house for thirteen years: the House of the Forest of Lebanon, the porch of the pillars and the porch of the throne, his dwelling, and a house for Pharaoh’s daughter, all of costly stones. Hiram of Tyre, a bronze-worker, casts for the house of Jehovah two pillars (Jachin and Boaz), the sea on twelve oxen, and ten stands with ten lavers, in the plain of the Jordan between Succoth and Zarethan; Solomon makes the golden furnishings and brings in the holy things of David.",
+    clock="After the seven years of the house of Jehovah (1 Kings 6:38): the thirteen years of Solomon’s own house, and the furnishing of the temple.")
+
+ART_SKIPPED["1kgs7"] = "Hiram's pillars, the sea on twelve oxen and the stands: Commons searches (the molten sea, Jachin and Boaz, Hiram and the bronze) returned only scanned book PDFs, an AI-generated picture of the sea (not used), and a small 1903 figure of the pillars with no named artist or clear source."
