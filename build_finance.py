@@ -781,9 +781,9 @@ def _nav(active=""):
                         cls("money-worldwide")))
 
 
-AGORAI_URL = "https://agorai.m8k.io"
-# Which Agorai square each page belongs to (agorai's functions/_lib/boards.js lists the same boards
-# as "Live numbers" buttons on those squares). Anything else goes to Agorai's front page.
+AGORAI_URL = "https://micwyn.com"
+# Which Micwyn square each page belongs to (agorai's functions/_lib/boards.js lists the same boards
+# as "Live numbers" buttons on those squares). Anything else goes to Micwyn's front page.
 AGORAI_SQUARE = {"bitcoin": "/s/bitcoin", "treasuries": "/s/bitcoin", "humanity": "/s/bitcoin",
                  "crypto": "/s/bitcoin", "board": "/s/markets", "money-worldwide": "/s/markets",
                  "crypto-screener": "/s/markets"}
@@ -793,8 +793,8 @@ def _agorai_home(active=""):
     return AGORAI_URL + AGORAI_SQUARE.get(active, "/")
 
 
-# Agorai links here with ?from=<the Agorai page> (its browser only tells other sites the bare
-# origin). If it's there, the Agorai mark goes straight back to that page. Only an Agorai path
+# Micwyn links here with ?from=<the Micwyn page> (its browser only tells other sites the bare
+# origin). If it's there, the Micwyn mark goes straight back to that page. Only an Micwyn path
 # is accepted, so the parameter can't turn the mark into a link anywhere else.
 AGORAI_BACK_JS = """<script>(function(){try{var f=new URLSearchParams(location.search).get("from");
 if(!f||f.charAt(0)!=="/"||f.charAt(1)==="/"||f.charAt(1)==="\\\\")return;var u=new URL(f,"%s");
@@ -843,11 +843,11 @@ def _chrome(active=""):
                 'aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" '
                 'stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" '
                 'stroke-linejoin="round"/></svg>')
-    # Agorai's wordmark (2026-10-13, Michael's call): the Ledger's writing lives on Agorai now and
+    # Micwyn's wordmark (2026-10-13, Michael's call): the Ledger's writing lives on Micwyn now and
     # these boards are what's left here, so the top-left mark leads back there — to the square the
     # page belongs to, or to the exact page the reader came from (AGORAI_BACK_JS). The m8k mark
     # moved to the footer (_foot).
-    hublink = ('<a class="hublink agorailink" href="%s" data-agorai-back aria-label="Back to Agorai">'
+    hublink = ('<a class="hublink agorailink" href="%s" data-agorai-back aria-label="Back to Micwyn">'
                '<span class="agoraiwm">agor<span class="ai">ai</span></span></a>%s'
                % (_agorai_home(active), crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
@@ -1209,8 +1209,8 @@ def _render_default_card(path):
 
 
 def _comment_box(title, url, square="markets"):
-    """Every page's conversation lives on Agorai (2026-10-12, replacing the X buttons):
-    one "Discuss on Agorai" button; Bitcoin-tagged entries go to the Bitcoin square."""
+    """Every page's conversation lives on Micwyn (2026-10-12, replacing the X buttons):
+    one "Discuss on Micwyn" button; Bitcoin-tagged entries go to the Bitcoin square."""
     return blogkit.agorai_discuss_box(title, url, square)
 
 
@@ -2169,10 +2169,10 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     index_hits = _hits_widget("%s/index.html" % STATS_PREFIX, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
-    # Agorai launch, 2026-10-14: the entries moved there (each old entry URL 301s to its
+    # Micwyn launch, 2026-10-14: the entries moved there (each old entry URL 301s to its
     # article, cf/static-site.js). The live boards stay on this site.
     intro += ('  <p class="tag ftag" style="font-style:normal">The Librarian\'s articles now live on '
-              '<a href="https://agorai.m8k.io/u/TheLibrarian">Agorai</a>. The live boards stay here.</p>\n')
+              '<a href="https://micwyn.com/u/TheLibrarian">Micwyn</a>. The live boards stay here.</p>\n')
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=WRITING_BLURB, url=BASE_URL, active="home", ld=_ld_front(),
@@ -2296,7 +2296,7 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 @keyframes m8kLie{0%,17.5%{transform:rotate(0)}25%,42.5%{transform:rotate(90deg)}50%,67.5%{transform:rotate(180deg)}75%,92.5%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
-/* Agorai wordmark (2026-10-13): leads back to Agorai, where the writing lives now. */
+/* Micwyn wordmark (2026-10-13): leads back to Micwyn, where the writing lives now. */
 .hublink .agoraiwm{font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
   letter-spacing:-.015em;line-height:1;color:#e8eef7}
 .hublink .agoraiwm .ai{color:#ff6a3d}

@@ -4,13 +4,13 @@
 // the Bible project, Dear Mr. Librarian — never touches this Worker.
 // To move another blog: add its prefix here AND its two routes in the config.
 // Also: /bible.html → / (2026-10-10) — the Bible home became the site's front page.
-// Agorai launch (2026-10-14): Dear Mr. Librarian moved to Agorai. Each answer 301s to
-// its article (agorai-redirects.json, "ask"); the question form goes to Agorai's front
+// Micwyn launch (2026-10-14): Dear Mr. Librarian moved to Micwyn. Each answer 301s to
+// its article (agorai-redirects.json, "ask"); the question form goes to Micwyn's front
 // page (its ask box); every other /ask page goes to the Scripture square. Images, the
 // stylesheet and the feed under /ask/ still pass through to GitHub Pages.
 import MOVED_TO_AGORAI from "./agorai-redirects.json";
 
-const AGORAI = "https://agorai.m8k.io";
+const AGORAI = "https://micwyn.com";
 const ASK = MOVED_TO_AGORAI.ask || {};
 const MOVED = {
   "/finance": "https://ledger.m8k.io",

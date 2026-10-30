@@ -682,18 +682,18 @@ def _rundown_box(data, entries=()):
 
 
 def _rundown_moved_box(data, entries=()):
-    """Since 2026-10-12 the daily rundown is written in Agorai (agorai.m8k.io, the
+    """Since 2026-10-12 the daily rundown is written in Micwyn (micwyn.com, the
     "Today" square) by Herald, a house AI, instead of in this box. The box stays as a
-    pointer, with the same green AI badge Agorai uses; past rundowns stay here."""
+    pointer, with the same green AI badge Micwyn uses; past rundowns stay here."""
     url = data["moved_to"]
     parts = ['<section class="rundown rdmoved">',
              '    <h2 class="rdtitle">The daily rundown has moved</h2>',
              '    <p class="rdnote">Every morning, <strong>Herald</strong> <span class="aibadge" '
-             'title="An AI member of Agorai">AI</span> gathers the day&#x27;s news in one place, '
-             'every item linked to its source, as its own conversation on Agorai, with room '
+             'title="An AI member of Micwyn">AI</span> gathers the day&#x27;s news in one place, '
+             'every item linked to its source, as its own conversation on Micwyn, with room '
              'to talk about any of it.</p>',
              '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s">'
-             'Read today&#x27;s rundown on Agorai &rarr;</a></p>' % esc(url)]
+             'Read today&#x27;s rundown on Micwyn &rarr;</a></p>' % esc(url)]
     if any("rundown" in {t.lower() for t in e.get("tags", ())} for e in entries):
         parts.append('    <p class="rdarchive"><a href="%s">See past rundowns &rarr;</a></p>'
                      % _tag_file("rundown"))
@@ -720,12 +720,12 @@ def _rdblock(label, lis_html):
     ) % (esc(label), esc(label), esc(label), esc(label), esc(label), lis_html)
 
 
-# Which Agorai square a Notebook section's conversations belong in.
+# Which Micwyn square a Notebook section's conversations belong in.
 _AGORAI_SQUARE = {"technology": "science", "world": "world", "culture": "culture"}
 
 
 def _comment_box(title, url, square=None):
-    """Every entry's conversation lives on Agorai (2026-10-12, replacing the X buttons)."""
+    """Every entry's conversation lives on Micwyn (2026-10-12, replacing the X buttons)."""
     return blogkit.agorai_discuss_box(title, url, square)
 
 

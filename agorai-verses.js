@@ -1,26 +1,26 @@
-// agorai-verses.js — public discussion of a verse, or a few verses, on Agorai.
+// agorai-verses.js — public discussion of a verse, or a few verses, on Micwyn.
 //
 // reader-notes.js is the reader's PRIVATE margin (highlights and notes kept in this browser).
-// This is the public one, hosted on Agorai (agorai.m8k.io): every chapter has one conversation,
+// This is the public one, hosted on Micwyn (micwyn.com): every chapter has one conversation,
 // and any verse or run of verses can have its own.
 //
 //  - Each verse's ⋯ menu (reader-notes.js) gets "💬 Discuss" when this page carries an
-//    Agorai target (build.py's _note_nudge: data-agorai-page / -square / -ref). Choosing it
+//    Micwyn target (build.py's _note_nudge: data-agorai-page / -square / -ref). Choosing it
 //    selects that verse and opens a bar at the bottom of the screen; tapping other verses
 //    stretches the selection (always one unbroken run, first to last), then "Discuss" opens
-//    Agorai's page for exactly that passage (/discuss?url=<chapter>#verses-15-17). Agorai
+//    Micwyn's page for exactly that passage (/discuss?url=<chapter>#verses-15-17). Micwyn
 //    reads the verses from this page itself, so the link can't put words in a verse's mouth.
 //  - Verses that already have a conversation get a small 💬 count after their ⋯, and the
-//    chapter's own button shows how many have joined in (from Agorai's /api/discussed).
+//    chapter's own button shows how many have joined in (from Micwyn's /api/discussed).
 //  - Under the last verse (above the Translator's Notes), a "Conversations about <chapter>" box
 //    (2026-10-19): how many people are talking, the latest few comments one line each, and a
-//    "Write a comment…" box. It's a WINDOW, not a copy: the conversation lives on Agorai, and
+//    "Write a comment…" box. It's a WINDOW, not a copy: the conversation lives on Micwyn, and
 //    posting carries the typed text there (in the address's #draft= part) where it goes up as a
-//    guest, no account needed (Agorai allows 3 guest comments, then asks them to sign in). This
-//    page never hosts anyone's comments: Google credits them to Agorai, and AdSense, which judges
+//    guest, no account needed (Micwyn allows 3 guest comments, then asks them to sign in). This
+//    page never hosts anyone's comments: Google credits them to Micwyn, and AdSense, which judges
 //    a whole site, never sees a heated thread here. Loaded by script, so nothing here is indexed.
 //
-// No-ops unless the page has both verses and an Agorai target (so Spanish pages, which have
+// No-ops unless the page has both verses and an Micwyn target (so Spanish pages, which have
 // no target yet, and every non-chapter page are untouched).
 (function () {
   "use strict";
@@ -28,11 +28,11 @@
   var verses = document.querySelectorAll(".vrs[id]");
   if (!host || !verses.length) return;
 
-  var AGORAI = "https://agorai.m8k.io";
+  var AGORAI = "https://micwyn.com";
   var PAGE = host.getAttribute("data-agorai-page");          // https://mistertranslation.com/genesis-6.html
   var SQUARE = host.getAttribute("data-agorai-square") || "scripture";
   var REF = host.getAttribute("data-agorai-ref") || "";       // "Genesis 6"
-  var MAX = 40;                                               // Agorai's limit for one passage
+  var MAX = 40;                                               // Micwyn's limit for one passage
 
   window.mlAgorai = true;                                     // reader-notes.js shows "💬 Discuss" when set
 
@@ -134,7 +134,7 @@
     bar = document.createElement("div");
     bar.className = "agv-bar";
     bar.setAttribute("role", "dialog");
-    bar.setAttribute("aria-label", "Discuss verses on Agorai");
+    bar.setAttribute("aria-label", "Discuss verses on Micwyn");
     bar.innerHTML = '<span aria-hidden="true">💬</span><span><b class="agv-ref"></b><small class="agv-tip"></small></span>' +
       '<button type="button" class="agv-go">Discuss →</button><button type="button" class="agv-x" aria-label="Cancel">×</button>';
     document.body.appendChild(bar);
@@ -181,7 +181,7 @@
     if (text != null) e.textContent = text;
     return e;
   }
-  // The conversation box, built from Agorai's preview (d.chapter: url, people, latest[]) or empty.
+  // The conversation box, built from Micwyn's preview (d.chapter: url, people, latest[]) or empty.
   function convoBox(chapter, verseCount) {
     var box = el("section", "agv-convo");
     box.id = "conversation";
@@ -213,11 +213,11 @@
     ta.maxLength = 4000;
     box.appendChild(ta);
     var row = el("div", "agv-row");
-    var post = el("button", "agv-post", "Post on Agorai →");
+    var post = el("button", "agv-post", "Post on Micwyn →");
     post.type = "button";
     post.disabled = true;
     row.appendChild(post);
-    row.appendChild(el("span", "agv-fine", "No account needed. It opens on Agorai, our discussion forum, ready to post."));
+    row.appendChild(el("span", "agv-fine", "No account needed. It opens on Micwyn, our discussion forum, ready to post."));
     box.appendChild(row);
     if (verseCount) {
       box.appendChild(el("p", "agv-fine", "Plus " + verseCount + (verseCount === 1 ? " conversation" : " conversations") +
@@ -227,7 +227,7 @@
     post.addEventListener("click", function () {
       var text = ta.value.trim();
       if (!text) return;
-      // Agorai sends the chapter's conversation (or its start page) and fills the reply box from #draft=.
+      // Micwyn sends the chapter's conversation (or its start page) and fills the reply box from #draft=.
       var url = AGORAI + "/discuss?url=" + encodeURIComponent(PAGE) + "&title=" + encodeURIComponent(REF) +
         "&s=" + encodeURIComponent(SQUARE) + "#draft=" + encodeURIComponent(text);
       window.open(url, "_blank", "noopener");
@@ -261,11 +261,11 @@
         var v = byNum[t.from];
         if (!v) return;
         var anchor = v.querySelector(".v-tools") || v.querySelector(".eng") || v;
-        var b = bubble(t.url, t.posts, label(t.from, t.to) + " on Agorai");
+        var b = bubble(t.url, t.posts, label(t.from, t.to) + " on Micwyn");
         if (anchor.classList && anchor.classList.contains("v-tools")) anchor.insertAdjacentElement("afterend", b);
         else anchor.appendChild(b);
       });
     })
-    .catch(function () { /* Agorai unreachable: no counts, and the box below offers a fresh start */ })
+    .catch(function () { /* Micwyn unreachable: no counts, and the box below offers a fresh start */ })
     .then(function () { if (!placed) placeBox(convoBox(null, 0)); });
 })();

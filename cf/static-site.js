@@ -6,15 +6,15 @@
 // links). The one thing "none" drops is directory indexes, so a request for a
 // path ending in "/" is answered with that directory's index.html here.
 //
-// Agorai launch, 2026-10-14: the blogs' entries moved to Agorai. env.BLOG (set in
+// Micwyn launch, 2026-10-14: the blogs' entries moved to Micwyn. env.BLOG (set in
 // each blog's wrangler config, with assets.run_worker_first so this runs before the
 // files are served) picks that blog's map in agorai-redirects.json: an old entry URL
 // gets a 301 to its article. A blog in HOME moved whole, so its other pages (home,
-// tags, about) go to the matching place on Agorai; images, feeds and sitemaps still
+// tags, about) go to the matching place on Micwyn; images, feeds and sitemaps still
 // serve. The Ledger is not in HOME: its live boards stay here. West's BLOG has no map.
 import MOVED from "./agorai-redirects.json";
 
-const AGORAI = "https://agorai.m8k.io";
+const AGORAI = "https://micwyn.com";
 const HOME = { notebook: "/u/TheLibrarian", regimen: "/s/health", abroad: "/s/food" };
 
 // Paths Google kept asking for that never existed here (Search Console 404s, 2026-10-25):
@@ -25,7 +25,7 @@ const STRAY = { west: { "/west": "/" }, ledger: { "/mempool": "/bitcoin.html" } 
 const redirects = (blog, path) =>
   !!(MOVED[blog] || {})[path] || (!!HOME[blog] && (path.endsWith("/") || path.endsWith(".html")));
 
-// A sitemap lists only pages that are really here: a URL that 301s to Agorai is
+// A sitemap lists only pages that are really here: a URL that 301s to Micwyn is
 // dropped as the file is served (Search Console flags "Page with redirect" for any
 // that stay listed), so the builders' sitemaps can stay as they are.
 async function sitemap(request, env, blog) {
