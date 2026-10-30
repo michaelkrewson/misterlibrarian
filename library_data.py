@@ -55266,3 +55266,97 @@ CHRON_CHAPTERS["1kgs5"] = dict(era="monarchy",
     clock="Before the building begins, which the next chapter dates to the fourth year of Solomon’s reign: the materials are being gathered, and the kingdom is at peace.")
 
 ART_SKIPPED["1kgs5"] = "Hiram's cedar, rafts, forced labor and quarried stone: four Commons searches (Solomon and Hiram, the cedars of Lebanon, Doré, the temple quarry) returned only scanned book PDFs and a modern CC BY-SA photograph of a statue, and no public-domain picture of the chapter."
+
+# --- 1 Kings 6 ---
+def _swap6k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict6k_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap6k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict6k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap6k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency6k_en(slug, old=None, new=None, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap6k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency6k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap6k(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("devir", "devir", "דְּבִיר", "devir",
+    'THE INNER SANCTUARY &mdash; the back room of the house, twenty cubits in each direction (<a href="1-kings-6.html#v6-20">1 Kings 6:20</a>, now on these pages), prepared &lsquo;to put there the ark of the covenant of Jehovah&rsquo; (6:19), where the two cherubim stand (6:23) and which is also called &lsquo;the most holy place&rsquo; (6:16). The ASV and KJV have &lsquo;the oracle&rsquo;, the NIV &lsquo;the inner sanctuary&rsquo; and the NWT 1984 &lsquo;the innermost room&rsquo;. See also <a href="dictionary.html#hekhal">the temple</a>.',
+    ("1 Kings", 6, 16)))
+DICTIONARY_ES["devir"] = ("devir",
+    'EL SANTUARIO INTERIOR &mdash; la sala del fondo de la casa, de veinte codos en cada dirección (<a href="1-kings-6.es.html#v6-20">1 Reyes 6:20</a>, ya en estas páginas), preparada «para poner allí el arca del pacto de Jehová» (6:19), donde están los dos querubines (6:23) y que también se llama «el lugar santísimo» (6:16). La RV 1909 dice «el oráculo», la NVI «el santuario interno» y la TNM 1987 «el cuarto más recóndito». Véase también <a href="diccionario.html#hekhal">el templo</a>.')
+
+DICTIONARY.append(("hekhal", "hekhal", "הֵיכָל", "hekhal",
+    'THE TEMPLE &mdash; in <a href="1-kings-6.html#v6-3">1 Kings 6:3</a> and 6:17 (now on these pages) the large hall of the house, forty cubits long, in front of the <a href="dictionary.html#devir">inner sanctuary</a>; it is the word of Samuel lying down &lsquo;in the temple of Jehovah, where the ark of God was&rsquo; (<a href="1-samuel-3.html#v3-3">1 Samuel 3:3</a>, now on these pages). The ASV has &lsquo;the temple&rsquo;, the NIV &lsquo;the main hall&rsquo;.',
+    ("1 Kings", 6, 3)))
+DICTIONARY_ES["hekhal"] = ("hekhal",
+    'EL TEMPLO &mdash; en <a href="1-kings-6.es.html#v6-3">1 Reyes 6:3</a> y 6:17 (ya en estas páginas) la sala grande de la casa, de cuarenta codos de largo, delante del <a href="diccionario.html#devir">santuario interior</a>; es la palabra de Samuel acostado «en el templo de Jehová, donde estaba el arca de Dios» (<a href="1-samuel-3.es.html#v3-3">1 Samuel 3:3</a>, ya en estas páginas). La RV 1909 dice «el templo», la NVI «la nave central».')
+
+DICTIONARY.append(("yatsia", "yatsia", "יָצִיעַ", "yatsía",
+    'THE SIDE-STRUCTURE &mdash; the building of three levels against the walls of the house all around, the lowest five cubits wide, the middle six and the third seven, its rooms the <em>tsela&rsquo;ot</em> (see <a href="dictionary.html#tsela">side</a>) and its ledges the <em>migra&rsquo;ot</em> (<a href="1-kings-6.html#v6-5">1 Kings 6:5&ndash;6, 10</a>, now on these pages). The ASV has &lsquo;stories&rsquo;, the KJV &lsquo;chambers&rsquo;, the NIV &lsquo;a structure around the building, in which there were side rooms&rsquo; and the NWT 1984 &lsquo;a side structure&rsquo;.',
+    ("1 Kings", 6, 5)))
+DICTIONARY_ES["yatsia"] = ("yatsía",
+    'LA ESTRUCTURA LATERAL &mdash; el edificio de tres niveles contra las paredes de la casa alrededor, el más bajo de cinco codos de ancho, el de en medio de seis y el tercero de siete, con sus cámaras las <em>tsela’ot</em> (véase <a href="diccionario.html#tsela">lado</a>) y sus salientes las <em>migra’ot</em> (<a href="1-kings-6.es.html#v6-5">1 Reyes 6:5–6, 10</a>, ya en estas páginas). La RV 1909 dice «aposentos», la NVI «un anexo con cámaras laterales» y la TNM 1987 «una estructura lateral».')
+
+DICTIONARY.append(("gazit", "gazit", "גָּזִית", "gazít",
+    'HEWN STONE, cut stone &mdash; <span data-heb="גזית">the word stands in eleven verses of the Hebrew Bible</span>. It is the stone of the king&rsquo;s command for the foundation of the house (<a href="1-kings-5.html#v5-31">1 Kings 5:31</a>) and of the three rows of the inner court (<a href="1-kings-6.html#v6-36">6:36</a>, both now on these pages), and the stone the law of the altar forbids: &lsquo;you shall not build it of cut stone&rsquo; (<a href="exodus-20.html#v20-21">Exodus 20:21</a>, now on these pages). The ASV has &lsquo;hewn stone&rsquo;, the NIV &lsquo;dressed stone&rsquo; and the NWT 1984 &lsquo;hewn stone&rsquo;. This translation has &lsquo;hewn&rsquo; in Kings and &lsquo;cut&rsquo; in Exodus, and the page does not say how the two stand together.',
+    ("1 Kings", 6, 36)))
+DICTIONARY_ES["gazit"] = ("gazít",
+    'PIEDRA LABRADA, piedra cortada &mdash; <span data-heb="גזית">la palabra está en once versículos de la Biblia hebrea</span>. Es la piedra del mandato del rey para el cimiento de la casa (<a href="1-kings-5.es.html#v5-31">1 Reyes 5:31</a>) y de las tres hileras del atrio interior (<a href="1-kings-6.es.html#v6-36">6:36</a>, ambos ya en estas páginas), y la piedra que prohíbe la ley del altar: «no lo edificarás de piedra labrada» (<a href="exodus-20.es.html#v20-21">Éxodo 20:21</a>, ya en estas páginas). La RV 1909 dice «piedras labradas», la NVI «piedra labrada» y la TNM 1987 «piedras labradas». Esta traducción tiene «labrada» en los dos libros, y la página no dice cómo se juntan las dos cosas.')
+
+DICTIONARY.append(("berosh", "berosh", "בְּרוֹשׁ", "berosh",
+    'CYPRESS &mdash; the &lsquo;timbers of cypress&rsquo; of Hiram&rsquo;s letter (<a href="1-kings-5.html#v5-22">1 Kings 5:22</a>), the boards of the floor of the house and the wood of the two doors of the temple (<a href="1-kings-6.html#v6-15">1 Kings 6:15, 34</a>, both now on these pages). The ASV and KJV have &lsquo;fir&rsquo;, the NIV and NWT 1984 &lsquo;juniper&rsquo;, and the TLB &lsquo;cypress&rsquo;.',
+    ("1 Kings", 5, 22)))
+DICTIONARY_ES["berosh"] = ("berosh",
+    'CIPRÉS &mdash; las «maderas de ciprés» de la carta de Hiram (<a href="1-kings-5.es.html#v5-22">1 Reyes 5:22</a>), las tablas del suelo de la casa y la madera de las dos puertas del templo (<a href="1-kings-6.es.html#v6-15">1 Reyes 6:15, 34</a>, ambos ya en estas páginas). La RV 1909 dice «haya», la NVI «ciprés» y la TNM 1987 «enebro».')
+
+DICTIONARY.append(("keruv", "keruv", "כְּרוּב", "keruv",
+    'A CHERUB &mdash; the winged guardian figure stationed east of Eden (<a href="genesis-3.html#v3-24">Genesis 3:24</a>), the two of gold on the cover of the ark (<a href="exodus-25.html#v25-18">Exodus 25:18</a>), and those upon which Jehovah &lsquo;sits&rsquo; (<a href="2-samuel-6.html#v6-2">2 Samuel 6:2</a>, all now on these pages). In the inner sanctuary there are two, of olive wood, ten cubits high, with wings of five cubits each, overlaid with gold (<a href="1-kings-6.html#v6-23">1 Kings 6:23&ndash;28</a>, now on these pages), and cherubim are carved on the walls and doors (6:29, 32, 35). The verses give the wood, the height, the wings and the gold, and do not describe a face.',
+    ("1 Kings", 6, 23)))
+DICTIONARY_ES["keruv"] = ("keruv",
+    'UN QUERUBÍN &mdash; la figura alada guardiana colocada al oriente de Edén (Génesis 3:24, ya en estas páginas, todavía no en español), los dos de oro sobre la cubierta del arca (<a href="exodus-25.es.html#v25-18">Éxodo 25:18</a>), y aquellos sobre los cuales Jehová «se sienta» (<a href="2-samuel-6.es.html#v6-2">2 Samuel 6:2</a>, ya en estas páginas). En el santuario interior hay dos, de madera de olivo, de diez codos de altura, con alas de cinco codos cada una, revestidos de oro (<a href="1-kings-6.es.html#v6-23">1 Reyes 6:23–28</a>, ya en estas páginas), y hay querubines tallados en las paredes y las puertas (6:29, 32, 35). Los versículos dan la madera, la altura, las alas y el oro, y no describen un rostro.')
+
+DICTIONARY.append(("peqaim", "peqa&rsquo;im", "פְּקָעִים", "peqa’im",
+    'GOURDS &mdash; the carved ornament of the cedar on the inside of the house, &lsquo;gourds and open flowers&rsquo; (<a href="1-kings-6.html#v6-18">1 Kings 6:18</a>, now on these pages); <span data-heb="פקעים">the word stands in two verses</span>, that one and the molten sea (1 Kings 7:24, not yet on these pages). The ASV has &lsquo;knops&rsquo;, the NIV &lsquo;gourds&rsquo;, the NWT 1984 &lsquo;gourd-shaped ornaments&rsquo; and the TLB &lsquo;rosebuds&rsquo;.',
+    ("1 Kings", 6, 18)))
+DICTIONARY_ES["peqaim"] = ("peqa’im",
+    'CALABAZAS &mdash; el adorno tallado del cedro por dentro de la casa, «calabazas y flores abiertas» (<a href="1-kings-6.es.html#v6-18">1 Reyes 6:18</a>, ya en estas páginas); <span data-heb="פקעים">la palabra está en dos versículos</span>, ese y el del mar fundido (1 Reyes 7:24, todavía no en estas páginas). La RV 1909 dice «calabazas silvestres», la NVI «calabazas» y la TNM 1987 «adornos en forma de calabazas».')
+
+# ---------- stale "not yet" fixed ----------
+_dict6k_en("even", "(neither yet on these pages)", '(1 Kings 6:7 is <a href="1-kings-6.html#v6-7">now on these pages</a>; Proverbs 11:1 not yet)')
+_dict6k_es("even", "(ninguno todavía en estas páginas)", '(1 Reyes 6:7 está <a href="1-kings-6.es.html#v6-7">ya en estas páginas</a>; Proverbios 11:1 todavía no)')
+_dict6k_en("shalem", "(neither yet on these pages)", '(1 Kings 6:7 is <a href="1-kings-6.html#v6-7">now on these pages</a>; Proverbs 11:1 not yet)')
+_dict6k_es("shalem", "(ninguno todavía en estas páginas)", '(1 Reyes 6:7 está <a href="1-kings-6.es.html#v6-7">ya en estas páginas</a>; Proverbios 11:1 todavía no)')
+_dict6k_en("barzel", "Joshua 8:31 and 1 Kings 6:7 (neither yet on these pages)", '<a href="joshua-8.html#v8-31">Joshua 8:31</a> and <a href="1-kings-6.html#v6-7">1 Kings 6:7</a> (both now on these pages)')
+_dict6k_es("barzel", "Josué 8:31 y 1 Reyes 6:7 (ninguno todavía en estas páginas)", '<a href="joshua-8.es.html#v8-31">Josué 8:31</a> y <a href="1-kings-6.es.html#v6-7">1 Reyes 6:7</a> (los dos ya en estas páginas)')
+
+# ---------- encyclopedia: extended ----------
+_ency6k_en("first-temple", add=' ⭐ <a href="1-kings-6.html#v6-1">1 Kings 6</a> (now on these pages) gives its measures: sixty cubits long, twenty wide and thirty high, with a porch of twenty by ten, the temple of forty cubits and an inner sanctuary of twenty each way, the foundation laid in the second month of the fourth year and the house finished in the eighth month of the eleventh.')
+_ency6k_es("first-temple", add=' ⭐ <a href="1-kings-6.es.html#v6-1">1 Reyes 6</a> (ya en estas páginas) da sus medidas: sesenta codos de largo, veinte de ancho y treinta de alto, con un pórtico de veinte por diez, el templo de cuarenta codos y un santuario interior de veinte en cada dirección, el cimiento echado en el mes segundo del cuarto año y la casa terminada en el mes octavo del undécimo.')
+_ency6k_en("ark-of-the-covenant", add=' ⭐ Solomon prepares the <a href="dictionary.html#devir">inner sanctuary</a> &lsquo;to put there the ark of the covenant of Jehovah&rsquo;, twenty cubits each way and overlaid with pure gold, with two cherubim of olive wood across it (<a href="1-kings-6.html#v6-19">1 Kings 6:19&ndash;28</a>, now on these pages).')
+_ency6k_es("ark-of-the-covenant", add=' ⭐ Salomón prepara el <a href="diccionario.html#devir">santuario interior</a> «para poner allí el arca del pacto de Jehová», de veinte codos en cada dirección y revestido de oro puro, con dos querubines de madera de olivo a lo ancho (<a href="1-kings-6.es.html#v6-19">1 Reyes 6:19–28</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["1kgs6"] = dict(era="monarchy",
+    when="In the fourth year of Solomon’s reign, in the month of Ziv, the house of Jehovah is begun, four hundred and eighty years after the going out of Egypt: sixty cubits long, with a porch, a side-structure of three levels, walls of cedar, a floor of cypress, an inner sanctuary of pure gold with two olive-wood cherubim, carved doors, and an inner court. In the middle of the building the word of Jehovah comes to Solomon: if he walks in the statutes, Jehovah will dwell in the midst of the children of Israel. The foundation is laid in the fourth year; in the eleventh year, in the month of Bul, it is finished, seven years.",
+    clock="Solomon’s fourth to eleventh years, the seven years of the building of the house of Jehovah.")
+
+ART_SKIPPED["1kgs6"] = "The measures, cedar walls, gold and olive-wood cherubim of the house: six Commons searches (Solomon's temple, the Holy of Holies and cherubim, Doré, Luyken) returned only scanned book PDFs, and no stand-alone public-domain picture of the chapter."
