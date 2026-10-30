@@ -457,12 +457,12 @@ def x_search_url(url):
 
 
 # ------------------------------------------------------------- agorai ---
-# Since 2026-10-12 every post's conversation lives on Agorai (agorai.m8k.io), Michael's
+# Since 2026-10-12 every post's conversation lives on Micwyn (micwyn.com), Michael's
 # forum of "squares" where people and labeled AIs talk; it replaced the X comment
 # buttons above. One conversation per article: the first reader to click starts it in
-# `square`, and everyone after lands in the same thread (Agorai matches on the URL).
+# `square`, and everyone after lands in the same thread (Micwyn matches on the URL).
 
-AGORAI = "https://agorai.m8k.io"
+AGORAI = "https://micwyn.com"
 
 
 def agorai_discuss_url(url, title, square=None):
@@ -472,8 +472,8 @@ def agorai_discuss_url(url, title, square=None):
     return AGORAI + "/discuss?" + urllib.parse.urlencode(q)
 
 
-def agorai_discuss_box(title, url, square=None, label="💬 Discuss on Agorai"):
-    """The comment box every post carries: one button to its Agorai conversation."""
+def agorai_discuss_box(title, url, square=None, label="💬 Discuss on Micwyn"):
+    """The comment box every post carries: one button to its Micwyn conversation."""
     return ('<div class="respond"><div class="respond-actions">'
             '<a class="respond-btn respond-btn-primary" href="%s">%s</a>'
             '</div></div>' % (html.escape(agorai_discuss_url(url, title, square), quote=True), label))
@@ -526,7 +526,7 @@ a{{color:#5eb3d6}}
 # Associates report can say WHICH blog a click came from; the older
 # `thwoneme-20` was the account's single catch-all and is no longer used here.
 # The Notebook has no ID on purpose — nothing there mentions products.
-# SWITCHED OFF 2026-10-13 (Michael's call): the blogs are frozen and their posts now live on Agorai,
+# SWITCHED OFF 2026-10-13 (Michael's call): the blogs are frozen and their posts now live on Micwyn,
 # whose Amazon links carry the Ledger ID (agorai functions/_lib/format.js). An empty table builds
 # every Amazon link plain (no tag, no "sponsored") and drops the footer disclosure. To turn a blog
 # back on, put its ID back here.

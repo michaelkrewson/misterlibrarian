@@ -1421,7 +1421,7 @@ FAVICON = ("data:image/svg+xml," + html.escape(
 
 # Installable as an app (Michael 2026-10-22): manifest.webmanifest + icons/ (drawn from the scroll
 # mark, icons/icon-source.svg). "Translation" is the Home Screen label (about 12 characters fit).
-# The status bar is the plain style, coloured by theme-color: Agorai's installed app misbehaved
+# The status bar is the plain style, coloured by theme-color: Micwyn's installed app misbehaved
 # with the see-through (black-translucent) one. No service worker yet (offline reading can follow).
 APP_TAGS = ('\n<link rel="manifest" href="/manifest.webmanifest"/>'
             '\n<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>'
@@ -1584,7 +1584,7 @@ _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgvie
 # It sat above the brand at the top of every page until 2026-10-13, when Michael moved it
 # here, into the footer's link row, in place of a plain "m8k.io" link. The same day the line
 # of sibling blogs (Ledger, Abroad, Regimen, Notebook, Eight Miles West) left the footer: the
-# blogs are frozen and their posts now live on Agorai.
+# blogs are frozen and their posts now live on Micwyn.
 _FOOT_M8K = ('<a class="hublink foot-m8k" href="%s/" aria-label="m8k — every publication">'
              '<span class="hubwm m8kwm">m<span class="m8k8">8</span>k</span></a>' % HUB_URL)
 
@@ -1843,7 +1843,7 @@ NOINDEX_PREFIXES = ()
 
 # The phone tab bar (Michael 2026-10-22): Home · Books · Continue · Library · Search along the bottom
 # on phones, most of all for the installed app, which has no browser buttons. Plain links (no finger
-# handling of its own: Agorai's 10-22 lesson), root-absolute so pages in sub-folders work too.
+# handling of its own: Micwyn's 10-22 lesson), root-absolute so pages in sub-folders work too.
 # "Continue" starts at Genesis 1; app-install.js points it at the last chapter read on this device.
 _TAB_ICONS = {
     "home": "M3 11.5 12 4l9 7.5M5.5 9.5V20h5v-6h3v6h5V9.5",
@@ -4583,13 +4583,13 @@ def inject_chapter_art(content, slug, lang="en"):
 
 def _note_nudge(title, path, top=False, square="scripture", chapter=False):
     """The public-discussion button for a chapter/dictionary/encyclopedia/atlas/route page:
-    one pill to the page's conversation on Agorai (agorai.m8k.io), Michael's forum. The first
+    one pill to the page's conversation on Micwyn (micwyn.com), Michael's forum. The first
     reader to write starts it in `square`; everyone after lands in the same conversation.
     Replaced the two X buttons ("Take a Note" / "View Notes by Others", 2026-09-09) on
     2026-10-13 (Michael's call): the blogs and Dear Mr. Librarian already moved their
-    conversations to Agorai.
+    conversations to Micwyn.
 
-    On a chapter (`chapter=True`) the button also carries the page's Agorai address, square
+    On a chapter (`chapter=True`) the button also carries the page's Micwyn address, square
     and reference, which agorai-verses.js uses for verse-by-verse discussion: "💬 Discuss"
     in each verse's ⋯ menu, a bar to stretch the selection over a few verses, and a 💬 count
     on verses that already have a conversation. Still separate from reader-notes.js's
@@ -4606,7 +4606,7 @@ def _note_nudge(title, path, top=False, square="scripture", chapter=False):
         data = (f' data-agorai-page="{html.escape(full_url, quote=True)}"'
                 f' data-agorai-square="{html.escape(square, quote=True)}"'
                 f' data-agorai-ref="{html.escape(title, quote=True)}"')
-    label = "💬 Discuss this chapter" if chapter else "💬 Discuss on Agorai"
+    label = "💬 Discuss this chapter" if chapter else "💬 Discuss on Micwyn"
     return (f'<div class="{cls}"{data}>'
             f'<a class="respond-btn respond-btn-primary" href="{href}" target="_blank" '
             f'rel="noopener" data-agorai-chapter>{label}</a>'
