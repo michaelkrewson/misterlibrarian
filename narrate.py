@@ -116,7 +116,7 @@ def call(req, tries=4):
             if e.code in (429, 502, 503) and n < tries - 1:
                 time.sleep(3 * (n + 1)); continue
             raise RuntimeError(f"{e.code}: {msg}")
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, OSError, ConnectionError) as e:      # includes ssl.SSLError and dropped connections
             if n < tries - 1:
                 time.sleep(3 * (n + 1)); continue
             raise RuntimeError(str(e))
@@ -185,14 +185,18 @@ def main():
     ap.add_argument("--force", action="store_true", help="record chapters that already have a recording")
     ap.add_argument("--speed", type=float, default=SPEED, help="0.5 to 1.0; lower is slower (default %s)" % SPEED)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--list", help="a file of slugs, one per line: record exactly those (still skipping ones already recorded)")
     ap.add_argument("--shard", default="", help="k/n: do every n-th chapter starting at k (run n of these at once to go n times faster), e.g. 0/4")
     a = ap.parse_args()
     if not 0.5 <= a.speed <= 1.0:
         sys.exit("--speed must be between 0.5 and 1.0")
+    a.list_slugs = set(x.strip() for x in open(a.list, encoding="utf-8") if x.strip()) if a.list else None
     m = load_manifest(); m.setdefault("en", []); m.setdefault("es", [])
     todo = []
     for slug, path in pages(a.lang):
         if a.only and slug != a.only:
+            continue
+        if a.list_slugs is not None and slug not in a.list_slugs:
             continue
         if slug in m[a.lang] and not a.force:
             continue
@@ -215,7 +219,7 @@ def main():
     for slug, (head, verses) in todo:
         try:
             n, size, res = record(slug, head, verses, a.lang, k, a.speed)
-        except RuntimeError as e:
+        except Exception as e:      # one bad chapter never stops the lane
             print(f"  FAILED {slug}: {e}")
             continue
         add_to_manifest(a.lang, slug); done += 1
