@@ -54,6 +54,19 @@ AUDIO_JS_VER = _asset_ver("audio-reader.js")
 # (Michael's call: unpleasant to listen to) until real narration is generated.
 # audio-reader.js and gen_audio.py are left in place, ready to re-enable.
 ENABLE_LISTEN_BUTTON = False
+# Chapters that have a recorded narration (narrate.py records them with Cloudflare's voice, once, into R2; audio/narrated.json lists them).
+# Those chapters get a Listen button that plays the recording. A chapter without one has no Listen button: the robotic browser voice is
+# only used if ENABLE_LISTEN_BUTTON is turned on again. (Michael, 2026-11-01; AR-156.)
+NARRATION_BASE = "https://micwyn.com/narration"
+try:
+    NARRATED = {k: set(v) for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "audio", "narrated.json"), encoding="utf-8")).items()}
+except (OSError, ValueError):
+    NARRATED = {}
+
+
+def narration_url(lang, slug):
+    """The recording's address for a chapter, or "" when it hasn't been recorded."""
+    return f"{NARRATION_BASE}/{lang}/{slug}.mp3" if slug in NARRATED.get(lang, ()) else ""
 NOTES_JS_VER = _asset_ver("reader-notes.js")
 AGORAI_JS_VER = _asset_ver("agorai-verses.js")
 SHARE_JS_VER = _asset_ver("share.js")
@@ -4650,9 +4663,13 @@ def build_chapter_pages(chapters):
         # present; otherwise the Listen button reads the page aloud in the
         # browser. gen_audio.py produces those files.
         mp3_rel = f"audio/{book_slug(book)}-{num}.mp3"
-        audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
+        mp3_url = narration_url("en", f"{book_slug(book)}-{num}")
+        if mp3_url:
+            audio_attr = f' data-audio="{mp3_url}"'
+        else:
+            audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
         listen_btn = (f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
-                      if ENABLE_LISTEN_BUTTON else "")
+                      if (mp3_url or ENABLE_LISTEN_BUTTON) else "")
         es_file = chapter_filename(book, num)[:-5] + ".es.html"
         es_btn = ((f'<button class="tgl" id="esptgl" onclick="toggleEsp()">Mostrar español</button>'
                    f'<a class="tgl" href="{es_file}" title="Edición en español">\U0001F310 Español</a>')
