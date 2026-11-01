@@ -26,3 +26,6 @@ source/shelf/
 # Book compile output (build_west_book.py) — a build product, never committed
 book/
 .wrangler/
+
+audio/narrated.json.lock
+audio/narrated.json.tmp
