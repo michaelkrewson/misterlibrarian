@@ -18,7 +18,7 @@ key Claude posts to Micwyn with. The key is read from the Keychain each run and 
 Each recorded English chapter page gets its Listen button added in place (a full python3 build.py does the same for every recorded chapter).
 Then: git add audio/narrated.json *.html && git commit && git push.
 """
-import argparse, glob, html as _html, json, os, re, subprocess, sys, tempfile, time
+import argparse, fcntl, glob, html as _html, json, os, re, subprocess, sys, tempfile, time
 import urllib.error, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -48,11 +48,16 @@ def load_manifest():
         return {"en": [], "es": []}
 
 
-def save_manifest(m):
+def add_to_manifest(lang, slug):
+    """Note a recorded chapter. Several lanes can run at once (--shard), so the file is re-read under a lock and added to, never overwritten."""
     os.makedirs(os.path.dirname(MANIFEST), exist_ok=True)
-    tmp = MANIFEST + ".tmp"
-    json.dump({k: sorted(set(v)) for k, v in m.items()}, open(tmp, "w", encoding="utf-8"), indent=0)
-    os.replace(tmp, MANIFEST)
+    with open(MANIFEST + ".lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        m = load_manifest(); m.setdefault("en", []); m.setdefault("es", [])
+        m[lang] = sorted(set(m[lang]) | {slug})
+        tmp = MANIFEST + ".tmp"
+        json.dump({k: sorted(set(v)) for k, v in m.items()}, open(tmp, "w", encoding="utf-8"), indent=0)
+        os.replace(tmp, MANIFEST)
 
 
 def pages(lang):
@@ -180,6 +185,7 @@ def main():
     ap.add_argument("--force", action="store_true", help="record chapters that already have a recording")
     ap.add_argument("--speed", type=float, default=SPEED, help="0.5 to 1.0; lower is slower (default %s)" % SPEED)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--shard", default="", help="k/n: do every n-th chapter starting at k (run n of these at once to go n times faster), e.g. 0/4")
     a = ap.parse_args()
     if not 0.5 <= a.speed <= 1.0:
         sys.exit("--speed must be between 0.5 and 1.0")
@@ -193,6 +199,9 @@ def main():
         c = chapter(path, a.lang)
         if c:
             todo.append((slug, c))
+    if a.shard:
+        k0, n0 = (int(x) for x in a.shard.split("/"))
+        todo = todo[k0::n0]
     if a.limit:
         todo = todo[: a.limit]
     chars = sum(len(h) + sum(len(v) for v in vs) for _, (h, vs) in todo)
@@ -209,7 +218,7 @@ def main():
         except RuntimeError as e:
             print(f"  FAILED {slug}: {e}")
             continue
-        m[a.lang].append(slug); save_manifest(m); done += 1
+        add_to_manifest(a.lang, slug); done += 1
         patched = patch_page(os.path.join(HERE, slug + ".html"), a.lang, slug)
         print(f"  {slug}: {n} pieces, {size / 1024:.0f} KB  → https://micwyn.com{res.get('url', '')}" + ("  (Listen button added to the page)" if patched else ""))
     print(f"Recorded {done} of {len(todo)}. Next: python3 build.py, then commit audio/narrated.json and the pages.")
