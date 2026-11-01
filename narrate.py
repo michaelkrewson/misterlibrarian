@@ -158,19 +158,18 @@ def record(slug, head, verses, lang, k, speed=SPEED):
 
 
 LISTEN = '<button class="tgl tgl-audio" id="audiotgl" data-audio="{url}">🔊 Listen</button>'
+LISTEN_ES = '<button class="tgl tgl-audio" id="audiotgl" data-audio="{url}">🔊 Escuchar</button>'
 
 
 def patch_page(path, lang, slug):
     """Give an already built chapter page its Listen button, without rebuilding the whole site (build.py does the same on a full build).
-    Idempotent: a page that has the button just gets its address refreshed. English chapter pages only for now."""
-    if lang != "en":
-        return False
+    Idempotent: a page that has the button just gets its address refreshed. """
     url = f"https://micwyn.com/narration/{lang}/{slug}.mp3"
     page = open(path, encoding="utf-8").read()
     if 'id="audiotgl"' in page:
         new = re.sub(r'(id="audiotgl"[^>]*?data-audio=")[^"]*(")', r"\g<1>" + url + r"\g<2>", page, count=1)
     else:
-        new = page.replace('<div class="tgl-group">', '<div class="tgl-group">' + LISTEN.format(url=url), 1)
+        new = page.replace('<div class="tgl-group">', '<div class="tgl-group">' + (LISTEN_ES if lang == "es" else LISTEN).format(url=url), 1)
     if new == page:
         return False
     open(path, "w", encoding="utf-8").write(new)
@@ -223,7 +222,7 @@ def main():
             print(f"  FAILED {slug}: {e}")
             continue
         add_to_manifest(a.lang, slug); done += 1
-        patched = patch_page(os.path.join(HERE, slug + ".html"), a.lang, slug)
+        patched = patch_page(path, a.lang, slug)
         print(f"  {slug}: {n} pieces, {size / 1024:.0f} KB  → https://micwyn.com{res.get('url', '')}" + ("  (Listen button added to the page)" if patched else ""))
     print(f"Recorded {done} of {len(todo)}. Next: python3 build.py, then commit audio/narrated.json and the pages.")
 

@@ -6064,7 +6064,11 @@ def build_es():
         # _source_lang() existed. ES_LANG_LABEL mirrors that fix.
         _src = _source_lang(book, num)
         _lbl = {"Greek": "griego", "Aramaic": "arameo", "Hebrew": "hebreo"}[_src]
+        _es_mp3 = narration_url("es", en_file[:-5])
+        _es_listen = (f'<button class="tgl tgl-audio" id="audiotgl" data-audio="{_es_mp3}">\U0001F50A Escuchar</button>'
+                      if _es_mp3 else "")
         toggle = (f'<div class="togglebar"><div class="tgl-group">'
+                  f'{_es_listen}'
                   f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar {_lbl}</button>'
                   f'<a class="tgl" href="{en_file}" title="Ver en inglés">\U0001F310 English</a>'
                   f'</div></div>')
