@@ -25,6 +25,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = "https://micwyn.com/api/v1/narrate"
 MANIFEST = os.path.join(HERE, "audio", "narrated.json")
 CHUNK_CHARS = 1000
+SPEED = 0.88          # 1.0 is the voice as it speaks; below 1 slows it down without changing its pitch (ffmpeg atempo). Michael asked for slower, 2026-11-01.
+PAUSE_HEAD, PAUSE_PIECE = 0.9, 0.5      # seconds of quiet after the chapter heading, and between pieces
 UA = "curl/8.7.1"        # Cloudflare refuses Python's default agent
 
 HEAD = {"en": "{book}, chapter {num}.", "es": "{book}, capítulo {num}."}
@@ -85,8 +87,8 @@ def chapter(path, lang):
 
 
 def pieces(head, verses):
-    """The heading and verses in pieces of at most CHUNK_CHARS, cut between verses."""
-    out, cur = [], head
+    """The heading as its own piece, then the verses in pieces of at most CHUNK_CHARS, cut between verses."""
+    out, cur = [head], ""
     for v in verses:
         if len(cur) + 1 + len(v) > CHUNK_CHARS and cur:
             out.append(cur); cur = ""
@@ -115,7 +117,15 @@ def call(req, tries=4):
             raise RuntimeError(str(e))
 
 
-def record(slug, head, verses, lang, k):
+def silence(td, seconds, name):
+    p = os.path.join(td, name)
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(seconds), p], capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError("ffmpeg: " + r.stderr[:200])
+    return p
+
+
+def record(slug, head, verses, lang, k, speed=SPEED):
     with tempfile.TemporaryDirectory() as td:
         wavs = []
         for i, text in enumerate(pieces(head, verses)):
@@ -125,9 +135,15 @@ def record(slug, head, verses, lang, k):
                 raise RuntimeError("the voice didn't answer with audio")
             p = os.path.join(td, f"{i:03d}.wav"); open(p, "wb").write(wav); wavs.append(p)
         lst = os.path.join(td, "list.txt")
-        open(lst, "w").write("".join(f"file '{p}'\n" for p in wavs))
+        long_gap, short_gap = silence(td, PAUSE_HEAD, "gap_head.wav"), silence(td, PAUSE_PIECE, "gap_piece.wav")
+        rows = []
+        for i, p in enumerate(wavs):
+            rows.append(p)
+            if i < len(wavs) - 1:
+                rows.append(long_gap if i == 0 else short_gap)
+        open(lst, "w").write("".join(f"file '{p}'\n" for p in rows))
         mp3 = os.path.join(td, "chapter.mp3")
-        r = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-ar", "22050",
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-ar", "22050", "-filter:a", f"atempo={speed}",
                             "-codec:a", "libmp3lame", "-b:a", "64k", mp3], capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError("ffmpeg: " + r.stderr[:200])
@@ -162,8 +178,11 @@ def main():
     ap.add_argument("--only", help="one chapter's slug, e.g. genesis-1")
     ap.add_argument("--limit", type=int, default=0, help="stop after this many chapters")
     ap.add_argument("--force", action="store_true", help="record chapters that already have a recording")
+    ap.add_argument("--speed", type=float, default=SPEED, help="0.5 to 1.0; lower is slower (default %s)" % SPEED)
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
+    if not 0.5 <= a.speed <= 1.0:
+        sys.exit("--speed must be between 0.5 and 1.0")
     m = load_manifest(); m.setdefault("en", []); m.setdefault("es", [])
     todo = []
     for slug, path in pages(a.lang):
@@ -186,7 +205,7 @@ def main():
     done = 0
     for slug, (head, verses) in todo:
         try:
-            n, size, res = record(slug, head, verses, a.lang, k)
+            n, size, res = record(slug, head, verses, a.lang, k, a.speed)
         except RuntimeError as e:
             print(f"  FAILED {slug}: {e}")
             continue
