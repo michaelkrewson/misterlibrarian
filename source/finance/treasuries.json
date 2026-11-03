@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 18:21 UTC",
+ "generated": "2026-11-03 19:42 UTC",
  "btc_price": 77572.8671875,
  "btc_price_source": "asset_board.json",
  "btc_price_as_of": "2026-11-03 18:21 UTC",
@@ -81,6 +81,21 @@
    "rank_category": 2
   },
   {
+   "name": "Tether Holdings",
+   "category": "private",
+   "ticker": null,
+   "country": "🇧🇻",
+   "domain": "tether.to",
+   "btc_holdings": 150000.0,
+   "value_usd": 11635930078.125,
+   "pct_of_21m": 0.7142874157557537,
+   "source_note": "CEO Paolo Ardoino, Plan ₿ Forum keynote 2026-11-03 (\"give or take 150,000 bitcoin\"), per CoinDesk; unaudited — Tether's Q3 2026 BDO reserve attestation implies ~100,060 BTC, and Ardoino didn't say where the rest is held",
+   "as_of": "2026-11-03",
+   "verified": true,
+   "rank_overall": 6,
+   "rank_category": 1
+  },
+  {
    "name": "Wrapped Bitcoin (WBTC) reserve",
    "category": "defi",
    "ticker": null,
@@ -92,7 +107,7 @@
    "source_note": "custodied 1:1 backing for the WBTC token supply (BitGo/BiT Global); moves with token supply",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 6,
+   "rank_overall": 7,
    "rank_category": 1
   },
   {
@@ -107,8 +122,8 @@
    "source_note": "2021 treasury-diversification announcement; unconfirmed since — domain deliberately omitted: block.one and Block Inc's block.xyz collide under this site's domain->filename slug, and Block Inc is the one worth getting right",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 7,
-   "rank_category": 1
+   "rank_overall": 8,
+   "rank_category": 2
   },
   {
    "name": "Grayscale Bitcoin Trust",
@@ -122,23 +137,8 @@
    "source_note": "verified via bitcointreasuries.net; converted from the legacy closed-end trust, still shrinking to outflows",
    "as_of": "2026-08-21",
    "verified": true,
-   "rank_overall": 8,
-   "rank_category": 3
-  },
-  {
-   "name": "Tether Holdings",
-   "category": "private",
-   "ticker": null,
-   "country": "🇧🇻",
-   "domain": "tether.to",
-   "btc_holdings": 100000.0,
-   "value_usd": 7757286718.75,
-   "pct_of_21m": 0.4761916105038358,
-   "source_note": "reserve attestations; approximate",
-   "as_of": "2026-09-06",
-   "verified": false,
    "rank_overall": 9,
-   "rank_category": 2
+   "rank_category": 3
   },
   {
    "name": "United Kingdom",
@@ -1298,8 +1298,8 @@
  ],
  "totals": {
   "public": {
-   "btc": 1111532.09,
-   "value_usd": 86224731192.2143,
+   "btc": 1111532.0899999999,
+   "value_usd": 86224731192.21431,
    "count": 30
   },
   "mining": {
@@ -1308,8 +1308,8 @@
    "count": 17
   },
   "private": {
-   "btc": 295000.0,
-   "value_usd": 22883995820.3125,
+   "btc": 345000.0,
+   "value_usd": 26762639179.6875,
    "count": 5
   },
   "etf": {
@@ -1328,8 +1328,8 @@
    "count": 5
   }
  },
- "grand_total_btc": 3584045.09,
- "grand_total_value_usd": 278024653760.5815,
- "grand_total_pct_of_21m": 17.06692203525465,
+ "grand_total_btc": 3634045.09,
+ "grand_total_value_usd": 281903297119.9565,
+ "grand_total_pct_of_21m": 17.30501784050657,
  "count": 86
 }
