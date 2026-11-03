@@ -848,7 +848,11 @@ def _chrome(active=""):
     # page belongs to, or to the exact page the reader came from (AGORAI_BACK_JS). The m8k mark
     # moved to the footer (_foot).
     hublink = ('<a class="hublink agorailink" href="%s" data-agorai-back aria-label="Back to Micwyn">'
-               '<span class="agoraiwm">agor<span class="ai">ai</span></span></a>%s'
+               '<span class="agoraiwm">M\u0131<svg class="mwm-orb" viewBox="0 0 200 200" aria-hidden="true" focusable="false">'
+               '<defs><radialGradient id="mwmG" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#FFB84D"/><stop offset=".55" stop-color="#FF7A45"/>'
+               '<stop offset="1" stop-color="#E8502A"/></radialGradient></defs><circle cx="100" cy="100" r="86" fill="url(#mwmG)"/>'
+               '<circle cx="66" cy="56" r="8" fill="#FFF1D6"/><rect x="68" y="88" width="17" height="38" rx="8.5" fill="#2A1A4A"/>'
+               '<rect x="115" y="88" width="17" height="38" rx="8.5" fill="#2A1A4A"/></svg>cwyn</span></a>%s'
                % (_agorai_home(active), crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
@@ -2297,9 +2301,11 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 @media (prefers-reduced-motion:reduce){.m8k8{animation:none}}
 @media (max-width:480px){.hublink .hubwm.m8kwm{display:inline-block}}
 /* Micwyn wordmark (2026-10-13): leads back to Micwyn, where the writing lives now. */
-.hublink .agoraiwm{font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
-  letter-spacing:-.015em;line-height:1;color:#e8eef7}
-.hublink .agoraiwm .ai{color:#ff6a3d}
+/* Since 2026-11-01 the site is Micwyn: its wordmark, the dotless ı under the orange Spark (as on micwyn.com). */
+.hublink .agoraiwm{position:relative;display:inline-block;font-family:Georgia,'Times New Roman',serif;font-size:27px;font-weight:600;
+  letter-spacing:-.015em;line-height:1;padding-top:.12em;background:linear-gradient(90deg,#ff6a3d,#ffd23f);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hublink .agoraiwm .mwm-orb{position:absolute;top:-.2em;left:1.02em;width:.42em;height:.42em;overflow:visible}
 .hublink:hover .agoraiwm{text-decoration:none}
 footer .foot-m8k{margin:18px 0 0}
 footer .foot-m8k .hubwm.m8kwm{font-size:21px}
