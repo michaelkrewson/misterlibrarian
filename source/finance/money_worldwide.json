@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 05:52 UTC",
+ "generated": "2026-11-04 14:11 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-11-03",
@@ -68,13 +68,13 @@
     "m0_date": "2026-09-04",
     "m1": 11348.41738137896,
     "m1_date": "2026-09",
-    "m2": 16505.67605641139,
-    "m2_date": "2026-09",
+    "m2": null,
+    "m2_date": null,
     "m3": 17710.486337207505,
     "m3_date": "2026-09",
     "usd_m0": 4435.6254122276505,
     "usd_m1": 12686.458119212279,
-    "usd_m2": 18451.7859170865,
+    "usd_m2": null,
     "usd_m3": 19798.64994713146,
     "broad_usd": 19798.64994713146,
     "broad_yoy_pct": 4.317779939903388,
@@ -153,9 +153,9 @@
     "flag": "🇬🇧",
     "currency": "GBP",
     "source": "Bank of England IADB — M0 (Notes & Coin in circulation, monthly average, + Reserve Balances at the Bank of England, both not seasonally adjusted: the Bank discontinued its own \"M0\" label in 2006 and replaced it with exactly these two series, published to be read together, matching its own M0 definition of currency + banks' operational deposits at the Bank) + M2 (\"Retail M4\", the Bank's own parenthetical equivalence for this concept in its M4 documentation — the household/business retail slice of M4 as against wholesale deposits, NOT a classic M1-plus-savings-deposits M2, seasonally adjusted) + M4 (shown in the M3 column: the UK discontinued M1/M2/M3-class reporting in 2006, so M4 is its own broadest published aggregate today, seasonally adjusted); no current UK M1-class series was found — the Bank's own M0 and M4 detail pages define those two but neither defines a current M1; £ millions",
-    "m0": 748.669,
-    "m0_date": "2026-09-30",
-    "usd_m0": 1004.0218863572356,
+    "m0": 751.483,
+    "m0_date": "2026-10-31",
+    "usd_m0": 1007.7956736894336,
     "m1": null,
     "m1_date": null,
     "usd_m1": null,
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1043260984533.4792
+    "usd": 1060858737388.338
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 430362793939.48395
+    "usd": 437622164507.3004
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 314530423469.3337
+    "usd": 319835930662.26544
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 312606297714.01556
+    "usd": 317879348704.7067
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 296700191470.0526
+    "usd": 301704937855.5547
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 294904340765.089
+    "usd": 299878794695.1665
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 133406052368.72229
+    "usd": 135656349057.40459
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 112882044311.99579
+    "usd": 114786141510.11157
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 108520692599.9414
+    "usd": 110351222406.31181
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 81454656975.13332
+    "usd": 82828636203.31915
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 78504330816.9789
+    "usd": 79828543868.39578
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 74656079306.34267
+    "usd": 75915379953.27834
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 54388621350.32524
+    "usd": 55306050000.32649
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 53362420947.48892
+    "usd": 54262539622.96184
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 49129344285.78908
+    "usd": 49958059316.33266
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3438669274854.172,
+  "total_usd": 3496672835751.774,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 3989.800048828125,
-  "price_as_of": "2026-11-04 05:51 UTC",
-  "world_market_value_usd": 27741403764924.74,
+  "price_usd_oz": 4057.10009765625,
+  "price_as_of": "2026-11-04 14:09 UTC",
+  "world_market_value_usd": 28209346470095.773,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 77944.40625,
-  "market_cap_usd": 1567285173315.8203,
+  "price_usd": 78190.046875,
+  "market_cap_usd": 1572235444853.6943,
   "btc_rank": 13,
-  "volatility_pct": null,
-  "turnover_usd": null,
-  "broad_yoy_pct": 0.8174094727867423,
+  "volatility_pct": 36.2289150945361,
+  "turnover_usd": 31132759122.878506,
+  "broad_yoy_pct": 0.8174037560060285,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2017,12 +2017,12 @@
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 27741403764924.74,
+    "usd": 28209346470095.773,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1567285173315.8203,
+    "usd": 1572235444853.6943,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
