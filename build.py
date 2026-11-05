@@ -1015,6 +1015,8 @@ TEASERS_ES = {
     "exod1": "Una familia se vuelve nación, un nuevo rey teme, y dos parteras desobedecen a Faraón.",
     "exod2": "Un arca entre los juncos, una princesa, y un hombre que mata, huye y espera junto a un pozo en Madián.",
     "exod3": "La zarza que arde y no se consume, la tierra santa y el Nombre: «YO SERÉ LO QUE SERÉ».",
+    "rev1":  "La revelación comienza: el Nombre que se niega a declinarse, Patmos, y uno semejante a un hijo de hombre entre siete candelabros.",
+    "rev2":  "Las cartas comienzan: Éfeso, Esmirna, Pérgamo y Tiatira, y el primer amor dejado.",
     "gen34": "El capítulo oscuro de Siquem: Dina es violada, y sus hermanos responden «con engaño».",
     "gen35": "Jacob cumple su voto en Betel y entierra los dioses extranjeros — y el camino se cobra a Débora, a Raquel y a Isaac.",
     "gen36": "El libro se detiene a catalogar a Esaú: sus mujeres, los jefes de Edom y, escondido en la lista, el nacimiento de Amalec.",

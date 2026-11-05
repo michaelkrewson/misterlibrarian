@@ -336,6 +336,39 @@ def parse(s: str) -> tuple[str, dict[int, str]]:
     return pub, out
 
 
+# Whole Bibles from JW's public download service, parsed to {"book-chapter": {verse: text}}
+# and kept in the archive and S3 (2026-11-05). tnm2019 and nwt2013 are the same editions
+# WOL serves: 99.99% of the verses compared were identical. tnm1987 is NOT Rbi8: the
+# service only has `bi12`, the same text without references, which also drops most of
+# Rbi8's editorial brackets. It can confirm wording, not brackets or notes.
+OFFICIAL_TEXT = {
+    "tnm2019": ("tnm2019-official_S.json.gz", "official EPUB"),
+    "nwt2013": ("nwt2013-official_E.json.gz", "official EPUB"),
+    "tnm1987": ("tnm1987-bi12_S.json.gz", "bi12: no references, most brackets dropped"),
+}
+_official_cache: dict[str, dict] = {}
+
+
+def official_text(version: str, book_no: int, ch: int) -> dict[int, str]:
+    """Saved whole-Bible text for one chapter, or {} if this version has none."""
+    if version not in OFFICIAL_TEXT:
+        return {}
+    name, note = OFFICIAL_TEXT[version]
+    if name not in _official_cache:
+        path = ARCHIVE / name
+        blob = path.read_bytes() if path.exists() else None
+        if blob is None:
+            mds = _s3()
+            blob = mds.get_blob(S3_CATEGORY, name) if mds else None
+        if not blob:
+            return {}
+        _official_cache[name] = json.loads(gzip.decompress(blob).decode("utf-8"))
+    verses = _official_cache[name].get(f"{book_no}-{ch}", {})
+    if verses:
+        print(f"[shelf_text] WOL unavailable; using saved {version} ({note})", file=sys.stderr)
+    return {int(v): t for v, t in verses.items()}
+
+
 def chapter(version: str, book: str, ch: int, *, refresh: bool = False,
             quiet: bool = False) -> dict[int, str]:
     """Verse text for one chapter, with the edition guard enforced."""
@@ -344,7 +377,13 @@ def chapter(version: str, book: str, ch: int, *, refresh: bool = False,
     if nt_only and book_no < _NT_FROM:
         raise SystemExit(f"[shelf_text] {label} covers the NT only; {name} is not in it")
 
-    raw = fetch(version, book_no, ch, refresh=refresh, quiet=quiet)
+    try:
+        raw = fetch(version, book_no, ch, refresh=refresh, quiet=quiet)
+    except SystemExit:
+        verses = official_text(version, book_no, ch)
+        if not verses:
+            raise
+        return verses
     got, verses = parse(raw)
     if got != pub:
         # The whole reason this tool exists. Never print text we cannot name.
