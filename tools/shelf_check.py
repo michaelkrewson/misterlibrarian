@@ -549,6 +549,12 @@ def main():
                     if src not in cache:
                         raw = wol_text(a.book, a.chapter, src) if kind == "wol" \
                               else bg_text(a.shelf_dir, src)
+                        # WOL's bot check (2026-11-05) cut off chapters not yet in
+                        # the archive. KJV and ASV are the same public-domain text
+                        # at BibleGateway; the NWT and TNM have no second source,
+                        # so those stay NO DATA rather than being guessed at.
+                        if not raw and kind == "wol" and src in ("kjv", "asv"):
+                            raw = bg_text(a.shelf_dir, src.upper())
                         cache[src] = _expand_ranges(raw) if raw else raw
                     text = cache[src]
                     if not text:
