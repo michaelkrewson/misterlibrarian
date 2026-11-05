@@ -176,6 +176,8 @@ def _archive_root() -> Path:
 
 ARCHIVE = _archive_root() / "source" / "shelf"
 MANIFEST = ARCHIVE / "MANIFEST.json"
+MIN_PAGE_CHARS = 2000   # the shortest real chapter page is far larger than this
+MIN_BLOB_BYTES = 500    # same threshold fetch() already applies to the local file
 
 
 def blob_name(version: str, book_no: int, chapter: int) -> str:
@@ -217,7 +219,13 @@ def live_fetch(version: str, book_no: int, chapter: int) -> str:
     url = url_for(version, book_no, chapter)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=45) as r:
-        return r.read().decode("utf-8", "replace")
+        raw = r.read().decode("utf-8", "replace")
+    # Refuse here, before store(): fetch() archives what this returns ahead of the
+    # edition guard, so an empty 202 would otherwise reach the manifest and S3.
+    if len(raw) < MIN_PAGE_CHARS:
+        raise SystemExit(f"[shelf_text] {url} returned {len(raw)} characters, not a "
+                         f"chapter page. Nothing stored; try again later.")
+    return raw
 
 
 def store(version: str, book_no: int, chapter: int, raw: str,
@@ -264,7 +272,10 @@ def fetch(version: str, book_no: int, chapter: int, *,
                 blob = mds.get_blob(S3_CATEGORY, name)
             except Exception:
                 blob = None
-            if blob:
+            # A real chapter gzips to ~13 KB. Anything this small is an empty page
+            # stored before live_fetch refused them (WOL answers a burst with an
+            # HTTP 202 and no body), so it counts as absent, not as a chapter.
+            if blob and len(blob) > MIN_BLOB_BYTES:
                 ARCHIVE.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(blob)
                 if not quiet:
