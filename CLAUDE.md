@@ -514,7 +514,8 @@ understand.
    - **FETCH every shelf quote you print. Never write one from memory.** For the NWT/TNM, ASV
      and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`.
      ⚠ **Since 2026-11-05 wol.jw.org answers with an AWS WAF bot challenge (HTTP 202, empty body):**
-     only chapters already in the archive still work (all NWT 1984; TNM/ASV/KJV partly). Don't work
+     only chapters already in the archive or S3 still work (all NWT 1984; TNM/ASV/KJV partly; S3 holds more
+     than the local folder, and `shelf_text.py` checks it). Don't work
      around the challenge. Fetch KJV/ASV with `tools/fetch_shelf_bg.py <Book> <Ch> <dir> KJV,ASV`
      (`shelf_check.py` falls back to them); for a chapter with no archived TNM, cite only the RV 1909,
      RV60 and NVI, and tally what was read ("ten versions read"), never "the whole shelf". History:

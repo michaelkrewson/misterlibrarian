@@ -355,8 +355,10 @@ wol.jw.org began answering scripted requests with HTTP 202, an empty body and `x
 20-byte blobs (NWT 2013, TNM 1987, TNM 2019, ASV and KJV of 1 Kings 10) reached the local archive, the manifest and
 S3, and the next run "restored" one from S3 and failed the edition guard with `pub-?`. Audit: those five were the only
 empty blobs of 2,691, all from that session. Fixed: `live_fetch` refuses anything but a real 200 page and stores
-nothing, and `fetch` treats a blob under 500 bytes as absent. The local five were removed. The five stubs remain in S3
-(`market_data_store` has no delete call) and are now ignored. The challenge is the site's decision, so it is not to be
+nothing, and `fetch` treats a blob under 500 bytes as absent. The local five were removed. Five stubs remain in S3
+(`market_data_store` has no delete call) and are now ignored; four more, for Matthew 5 and 6 in the TNM, were written the
+same hour by another session still on the old tool. S3 holds more of the shelf than the local archive (3,230 blobs
+against 2,691), but by chapter as fetched: there is no whole-Bible TNM anywhere in the bucket. The challenge is the site's decision, so it is not to be
 solved or spoofed. KJV and ASV come from BibleGateway instead; the NWT 1984 is fully archived; the TNM has no second
 source, so a chapter not yet archived cites the RV 1909, RV60 and NVI only.
 
