@@ -517,8 +517,9 @@ understand.
      only chapters already in the archive or S3 still work (all NWT 1984; TNM/ASV/KJV partly; S3 holds more
      than the local folder, and `shelf_text.py` checks it). Don't work
      around the challenge. Fetch KJV/ASV with `tools/fetch_shelf_bg.py <Book> <Ch> <dir> KJV,ASV`
-     (`shelf_check.py` falls back to them); for a chapter with no archived TNM, cite only the RV 1909,
-     RV60 and NVI, and tally what was read ("ten versions read"), never "the whole shelf". History:
+     (`shelf_check.py` falls back to them); for the TNM, ask Michael to open WOL in Safari, then run
+     `python3 tools/wol_from_safari.py <Book> <Ch> tnm1987 tnm2019` (one chapter at a time, only at his direction, never
+     a sweep). Without that, cite only the RV 1909, RV60 and NVI, and tally what was read ("ten versions read"), never "the whole shelf". History:
      `claude-docs/chapter_checklist_history.md`.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
