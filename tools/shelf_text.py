@@ -146,6 +146,10 @@ def resolve(book: str, chapter: int) -> tuple[int, str]:
     return _NUM[key], WOL_ORDER[_NUM[key] - 1]
 
 
+MIN_PAGE_BYTES = 2000   # a real WOL chapter page is 60 KB+ of HTML
+MIN_BLOB_BYTES = 500    # same floor fetch() already applies to a local blob
+
+
 def url_for(version: str, book_no: int, chapter: int) -> str:
     loc, root, lp, pub, _label, _nt = EDITIONS[version]
     return f"https://wol.jw.org/{loc}/wol/b/{root}/{lp}/{pub}/{book_no}/{chapter}"
@@ -217,7 +221,16 @@ def live_fetch(version: str, book_no: int, chapter: int) -> str:
     url = url_for(version, book_no, chapter)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=45) as r:
-        return r.read().decode("utf-8", "replace")
+        status, waf = r.status, r.headers.get("x-amzn-waf-action")
+        raw = r.read().decode("utf-8", "replace")
+    # WOL answers a bot check with 202 and an EMPTY body (2026-11-05). urllib calls
+    # that success, and storing it poisons the archive and S3 for good, so anything
+    # that is not a real page stops here. Never "solve" the challenge; report it.
+    if status != 200 or len(raw) < MIN_PAGE_BYTES:
+        raise SystemExit(f"[shelf_text] WOL refused {url}: HTTP {status}, {len(raw)} "
+                         f"bytes, waf={waf}. Nothing was stored. This edition is "
+                         f"unavailable unless it is already in the archive.")
+    return raw
 
 
 def store(version: str, book_no: int, chapter: int, raw: str,
@@ -264,7 +277,8 @@ def fetch(version: str, book_no: int, chapter: int, *,
                 blob = mds.get_blob(S3_CATEGORY, name)
             except Exception:
                 blob = None
-            if blob:
+            # A stub is a stored empty response, not a chapter: treat it as absent.
+            if blob and len(blob) >= MIN_BLOB_BYTES:
                 ARCHIVE.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(blob)
                 if not quiet:

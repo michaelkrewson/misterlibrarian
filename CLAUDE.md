@@ -513,6 +513,12 @@ understand.
      rather than verified, or cut it.
    - **FETCH every shelf quote you print. Never write one from memory.** For the NWT/TNM, ASV
      and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`.
+     ⚠ **Since 2026-11-05 wol.jw.org answers with an AWS WAF bot challenge (HTTP 202, empty body):**
+     only chapters already in the archive still work (all NWT 1984; TNM/ASV/KJV partly). Don't work
+     around the challenge. Fetch KJV/ASV with `tools/fetch_shelf_bg.py <Book> <Ch> <dir> KJV,ASV`
+     (`shelf_check.py` falls back to them); for a chapter with no archived TNM, cite only the RV 1909,
+     RV60 and NVI, and tally what was read ("ten versions read"), never "the whole shelf". History:
+     `claude-docs/chapter_checklist_history.md`.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
      Written rules compete for attention and lose; scripts do not. Traps: ⚠ **an OFFSET
