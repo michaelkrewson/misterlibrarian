@@ -513,13 +513,14 @@ understand.
      rather than verified, or cut it.
    - **FETCH every shelf quote you print. Never write one from memory.** For the NWT/TNM, ASV
      and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`.
-     ⚠ **Since 2026-11-05 wol.jw.org answers with an AWS WAF bot challenge (HTTP 202, empty body):**
-     only chapters already in the archive or S3 still work (all NWT 1984; TNM/ASV/KJV partly; S3 holds more
-     than the local folder, and `shelf_text.py` checks it). Don't work
-     around the challenge. Fetch KJV/ASV with `tools/fetch_shelf_bg.py <Book> <Ch> <dir> KJV,ASV`
-     (`shelf_check.py` falls back to them); for the TNM, ask Michael to open WOL in Safari, then run
-     `python3 tools/wol_from_safari.py <Book> <Ch> tnm1987 tnm2019` (one chapter at a time, only at his direction, never
-     a sweep). Without that, cite only the RV 1909, RV60 and NVI, and tally what was read ("ten versions read"), never "the whole shelf". History:
+     ⚠ **Since 2026-11-05 wol.jw.org answers with an AWS WAF bot challenge (HTTP 202, empty body).** Don't work
+     around the challenge. `shelf_text.py` now falls back on its own to whole Bibles from JW's public download
+     service, saved privately in the archive and S3: **TNM 2019 and NWT 2013** are the same editions WOL serves
+     (99.99% of verses compared were identical). **TNM 1987 falls back to `bi12`, not `Rbi8`**: same text, but no
+     references, and most of Rbi8's editorial brackets are gone, so it confirms wording only. Never claim a
+     bracket or footnote from it, and say on the page which edition a chapter cites. Real `Rbi8` pages recovered
+     from Internet Archive snapshots are in the archive too. NWT 1984 is archived in full. KJV/ASV: `tools/fetch_shelf_bg.py
+     <Book> <Ch> <dir> KJV,ASV` (`shelf_check.py` falls back to them). History:
      `claude-docs/chapter_checklist_history.md`.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
