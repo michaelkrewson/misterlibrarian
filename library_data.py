@@ -55845,3 +55845,48 @@ CHAPTER_ART["1kgs12"] = [dict(
     license="Public domain (artist died 1543)",
     source_url="https://commons.wikimedia.org/wiki/File:Hans_Holbein_d._J._-_The_Arrogance_of_Rehoboam_-_WGA11598.jpg",
 )]
+
+# --- 1 Kings 13 ---
+# The Spanish chapter links these two, and neither had a Spanish entry.
+DICTIONARY_ES["hoy"] = ("hoy",
+    '¡AY! &mdash; un grito que sirve a la vez para la advertencia del profeta y para el llanto sobre un muerto. En <a href="1-kings-13.es.html#v13-30">1 Reyes 13:30</a> (ya en estas páginas) es el duelo por el varón de Dios: «¡Ay, hermano mío!». En Jeremías 22:18 (ya en estas páginas, todavía no en español) es el duelo que no se le dará a Joacim hijo de Josías.')
+ENCYCLOPEDIA_ES["josiah"] = ("Josías",
+    'Rey de Judá, de la casa de David, nombrado de antemano por el varón de Dios ante el altar de Betel: «Josías de nombre» (<a href="1-kings-13.es.html#v13-2">1 Reyes 13:2</a>, ya en estas páginas). Sacrificó a los sacerdotes de los lugares altos sobre ese altar y quemó huesos en él, pero dejó en paz los huesos del varón de Dios (2 Reyes 23:15–18, todavía no en estas páginas). Su hijo Joacim no recibirá el duelo «¡Ay, hermano mío!» (Jeremías 22:18, ya en estas páginas, todavía no en español).')
+
+ENCYCLOPEDIA.append(dict(slug="man-of-god-from-judah", name="The Man of God from Judah", kind="person", aliases=["man of God from Judah"], refs=[("1 Kings", 13, 1)], videos=[],
+    desc='An unnamed prophet who comes to Bethel &lsquo;by the word of Jehovah&rsquo;, cries against Jeroboam&rsquo;s altar and names Josiah in advance (<a href="1-kings-13.html#v13-1">1 Kings 13:1&ndash;2</a>, now on these pages). He refuses the king&rsquo;s table, then believes an old prophet&rsquo;s lie, eats, and is killed by a lion on the road. His grave stands at Bethel, and Josiah orders that his bones be left alone (2 Kings 23:17&ndash;18, not yet on these pages).'))
+ENCYCLOPEDIA_ES["man-of-god-from-judah"] = ("El varón de Dios de Judá",
+    'Un profeta sin nombre que viene a Betel «por la palabra de Jehová», clama contra el altar de Jeroboam y nombra de antemano a Josías (<a href="1-kings-13.es.html#v13-1">1 Reyes 13:1–2</a>, ya en estas páginas). Rechaza la mesa del rey, luego cree la mentira de un profeta anciano, come, y un león lo mata en el camino. Su sepultura está en Betel, y Josías ordena que dejen en paz sus huesos (2 Reyes 23:17–18, todavía no en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="old-prophet-of-bethel", name="The Old Prophet of Bethel", kind="person", aliases=["old prophet of Bethel"], refs=[("1 Kings", 13, 11)], videos=[],
+    desc='An unnamed prophet living at Bethel who rides after the man of God from Judah and brings him back with a lie, &lsquo;an angel spoke to me by the word of Jehovah&rsquo;; &lsquo;He lied to him&rsquo; (<a href="1-kings-13.html#v13-18">1 Kings 13:18</a>, now on these pages). The word of Jehovah then comes to him at the table, and he speaks it. He buries the man of God in his own grave and asks to lie beside him. The verses give no reason for what he did.'))
+ENCYCLOPEDIA_ES["old-prophet-of-bethel"] = ("El profeta anciano de Betel",
+    'Un profeta sin nombre que vive en Betel, cabalga tras el varón de Dios de Judá y lo hace volver con una mentira, «un ángel me habló por la palabra de Jehová»; «Le mintió» (<a href="1-kings-13.es.html#v13-18">1 Reyes 13:18</a>, ya en estas páginas). Luego la palabra de Jehová viene a él en la mesa, y él la dice. Sepulta al varón de Dios en su propia sepultura y pide yacer junto a él. Los versículos no dan razón de lo que hizo.')
+
+# ---------- extended ----------
+_ency9k_en("josiah", ' &#11088; <a href="1-kings-13.html#v13-2">1 Kings 13:2</a> (now on these pages): the man of God names him at the altar of Bethel, &lsquo;Josiah by name&rsquo;.')
+_ency9k_en("jeroboam", ' &#11088; <a href="1-kings-13.html#v13-4">1 Kings 13:4</a> (now on these pages): he stretches out his hand against the man of God and it dries up, and it comes back when the man of God entreats Jehovah; his altar is torn. &lsquo;After this thing Jeroboam did not return from his evil way&rsquo; (13:33).')
+_ency9k_es("jeroboam", ' &#11088; <a href="1-kings-13.es.html#v13-4">1 Reyes 13:4</a> (ya en estas páginas): extiende la mano contra el varón de Dios y se le seca, y vuelve cuando el varón de Dios implora a Jehová; su altar es rasgado. «Después de esto Jeroboam no volvió de su mal camino» (13:33).')
+_ency9k_en("bethel", ' &#11088; <a href="1-kings-13.html#v13-1">1 Kings 13</a> (now on these pages): the man of God from Judah cries against the altar here, and it is torn.')
+_ency9k_es("bethel", ' &#11088; <a href="1-kings-13.es.html#v13-1">1 Reyes 13</a> (ya en estas páginas): el varón de Dios de Judá clama aquí contra el altar, y este es rasgado.')
+_ency9k_en("samaria", ' &#11088; <a href="1-kings-13.html#v13-32">1 Kings 13:32</a> (now on these pages) speaks of &lsquo;the cities of Samaria&rsquo; before the city exists: Omri builds it in 1 Kings 16:24 (not yet on these pages).')
+_ency9k_es("samaria", ' &#11088; <a href="1-kings-13.es.html#v13-32">1 Reyes 13:32</a> (ya en estas páginas) habla de «las ciudades de Samaria» antes de que exista la ciudad: Omri la edifica en 1 Reyes 16:24 (todavía no en estas páginas).')
+_dict9k_en("hoy", ' &#11088; <a href="1-kings-13.html#v13-30">1 Kings 13:30</a> (now on these pages): &lsquo;Alas, my brother!&rsquo;, the mourning over the man of God. That cry stands in two verses, this one and Jeremiah 22:18.')
+
+CHRON_CHAPTERS["1kgs13"] = dict(era="monarchy",
+    when="A man of God from Judah comes to Bethel by the word of Jehovah and cries against Jeroboam&rsquo;s altar, naming Josiah in advance. Jeroboam&rsquo;s hand dries up, the altar is torn, and the hand is given back. The man of God refuses the king&rsquo;s table, but an old prophet of Bethel brings him back with a lie; the word of Jehovah comes to the liar at the table, and a lion kills the man of God on the road. The old prophet buries him in his own grave. Jeroboam does not turn from his way.",
+    clock="At Bethel, during the feast Jeroboam devised (1 Kings 12:33). The chapter gives no year.")
+
+CHAPTER_ART["1kgs13"] = [dict(
+    file="fragonard-jeroboam-sacrificing.jpg",
+    title="Jeroboam Offering Sacrifice to the Idol", title_es="Jeroboam ofreciendo sacrificio al ídolo",
+    artist="Jean-Honoré Fragonard", artist_es="Jean-Honoré Fragonard",
+    year="1752",
+    location="Oil on canvas", location_es="Óleo sobre lienzo",
+    alt="An oil painting of a columned hall with a golden calf high on a pedestal. At the right, an old king in a white turban and a robe of gold brocade reels backward with one arm stretched out stiffly, held up by two attendants. At the left, an old man in a pale cloak raises one hand toward heaven. Between them smoke rises from a broken altar, and people kneel in the foreground among scattered vessels.",
+    alt_es="Una pintura al óleo de una sala con columnas y un becerro de oro en lo alto de un pedestal. A la derecha, un rey anciano con turbante blanco y túnica de brocado de oro retrocede tambaleándose con un brazo rígido y extendido, sostenido por dos servidores. A la izquierda, un anciano con manto pálido levanta una mano hacia el cielo. Entre ellos sube humo de un altar roto, y hay gente arrodillada en primer plano entre vasijas esparcidas.",
+    note="1 Kings 13:1&ndash;6. The title is the one on the file, though the scene is this chapter&rsquo;s: the altar torn and the king&rsquo;s stretched-out hand dried up. The verses do not say that a calf stood over the altar, how the king was dressed, or that anyone held him up, and the painter gives the man of God a gesture the text does not mention.",
+    note_es="1 Reyes 13:1–6. El título es el del archivo, aunque la escena es la de este capítulo: el altar rasgado y la mano extendida del rey seca. Los versículos no dicen que hubiera un becerro sobre el altar, cómo vestía el rey ni que alguien lo sostuviera, y el pintor da al varón de Dios un gesto que el texto no menciona.",
+    license="Public domain (artist died 1806)",
+    source_url="https://commons.wikimedia.org/wiki/File:Jean-Honoré_Fragonard_-_Jeroboam_Offering_Sacrifice_for_the_Idol_-_WGA08049.jpg",
+)]
