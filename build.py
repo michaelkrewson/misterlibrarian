@@ -1629,15 +1629,21 @@ ES_FOOTER = f"""<footer class="site-foot">
 </footer>"""
 
 
-def _goatcounter_script():
+# Pages that must never load AdSense. 1 Kings 10 carries Poynter's painting, where the queen is
+# bare-breasted; a fine-art nude is right for the chapter and wrong for ads (Michael, 2026-11-05).
+# Keyed on the filename page() is given. check_no_ad_pages() fails the build if one leaks.
+NO_AD_PAGES = {"1-kings-10.html", "1-kings-10.es.html"}
+
+
+def _goatcounter_script(ads=True):
     """Sitewide, cookie-less visit tracking (GoatCounter) injected into every page's <head>.
     No-op until GOATCOUNTER_CODE is set above."""
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
             f'async src="//gc.zgo.at/count.js"></script>'
-            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
+            + (f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+               f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>' if ads else ""))
 
 
 def _stats_box():
@@ -1935,7 +1941,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <meta name="viewport" content="width=device-width, initial-scale=1"/>{robots}
 <title>{html.escape(title)}</title>{d}{og}{rss_tag}
 <link rel="icon" href="{FAVICON}"/>{APP_TAGS}
-<link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
+<link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script(ads=url not in NO_AD_PAGES)}
 </head>
 <body>
 <div class="wrap">
@@ -7041,6 +7047,14 @@ def check_chron_coverage(chapters):
                            "one is fine; see the docstring above for the pattern)")
 
 
+def check_no_ad_pages():
+    """Fail the build if a page in NO_AD_PAGES was written with the AdSense script."""
+    bad = [p for p in sorted(NO_AD_PAGES)
+           if "adsbygoogle" in open(os.path.join(OUT, p), encoding="utf-8").read()]
+    if bad:
+        raise SystemExit("AdSense script on a no-ads page: " + ", ".join(bad))
+
+
 def check_chapter_art_coverage(chapters):
     """Every shipped chapter needs a DECISION about art, not necessarily art itself.
     CHAPTER_ART's own docstring says a chapter with none is a no-op — true, but that
@@ -7188,6 +7202,7 @@ def main():
     check_built_descriptions()
     save_card_manifest()
     report_card_budget()
+    check_no_ad_pages()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp/{n_things}c, "
           f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), search index {n_search} items, "
