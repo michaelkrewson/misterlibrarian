@@ -359,8 +359,10 @@ nothing, and `fetch` treats a blob under 500 bytes as absent. The local five wer
 (`market_data_store` has no delete call) and are now ignored; four more, for Matthew 5 and 6 in the TNM, were written the
 same hour by another session still on the old tool. S3 holds more of the shelf than the local archive (3,230 blobs
 against 2,691), but by chapter as fetched: there is no whole-Bible TNM anywhere in the bucket. The challenge is the site's decision, so it is not to be
-solved or spoofed. KJV and ASV come from BibleGateway instead; the NWT 1984 is fully archived; the TNM has no second
-source, so a chapter not yet archived cites the RV 1909, RV60 and NVI only.
+solved or spoofed. KJV and ASV come from BibleGateway instead; the NWT 1984 is fully archived. The TNM has no second
+source, so when Michael has WOL open in Safari, `tools/wol_from_safari.py` reads one chapter at a time through a
+temporary tab in his own browser, at his direction. Without that, a chapter not yet archived cites the RV 1909, RV60
+and NVI only.
 
 The same chapter found a shipped false claim: the 2 Chronicles 1 note said the ASV has "from Kue", where it prints "in
 droves, each drove at a price". Reading a parallel already on these pages before translating is what surfaced it.
