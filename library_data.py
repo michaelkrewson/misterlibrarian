@@ -56657,6 +56657,123 @@ CHAPTER_ART["1kgs20"] = [dict(
     source_url="https://commons.wikimedia.org/wiki/File:Les_cinq_rois_bouvent_sous_la_tente_(1_Kings_20_12)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_Charles_Hoffbauer_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
 )]
 
+# --- 1 Kings 21 ---
+DICTIONARY.append(("laqaq", "laqaq", "לָקַק", "laqaq",
+    'TO LAP, to lick, as a dog does; in the imperfect, <em>yalaq</em>. Gideon&rsquo;s men lap &lsquo;as a dog laps&rsquo; (<a href="judges-7.html#v5">Judges 7:5</a>), and the dogs lick the blood of Naboth (<a href="1-kings-21.html#v21-19">1 Kings 21:19</a>, both now on these pages) and of Ahab (1 Kings 22:38, not yet on these pages).',
+    ("1 Kings", 21, 19)))
+DICTIONARY_ES["laqaq"] = ("laqaq",
+    'LAMER, como hace un perro; en imperfecto, <em>yalaq</em>. Los hombres de Gedeón lamen «como lame un perro» (<a href="judges-7.es.html#v5">Jueces 7:5</a>), y los perros lamen la sangre de Nabot (<a href="1-kings-21.es.html#v21-19">1 Reyes 21:19</a>, ambos ya en estas páginas) y la de Acab (1 Reyes 22:38, todavía no en estas páginas).')
+
+DICTIONARY.append(("tsom", "tsom", "צוֹם", "tsom",
+    'A FAST. <span data-heb="קראו צום">&lsquo;Proclaim a fast&rsquo; stands in four verses of the Hebrew Bible</span>: Jezebel&rsquo;s letters and their carrying out (<a href="1-kings-21.html#v21-9">1 Kings 21:9</a>, <a href="1-kings-21.html#v21-12">12</a>, now on these pages), Jeremiah 36:9, and Nineveh at Jonah 3:5 (neither yet on these pages). The verb stands at <a href="1-kings-21.html#v21-27">1 Kings 21:27</a> of Ahab himself, after the sentence.',
+    ("1 Kings", 21, 9)))
+DICTIONARY_ES["tsom"] = ("tsom",
+    'UN AYUNO. <span data-heb="קראו צום">«Proclamen un ayuno» está en cuatro versículos de la Biblia hebrea</span>: las cartas de Jezabel y su cumplimiento (<a href="1-kings-21.es.html#v21-9">1 Reyes 21:9</a>, <a href="1-kings-21.es.html#v21-12">12</a>, ya en estas páginas), Jeremías 36:9, y Nínive en Jonás 3:5 (ninguno de los dos todavía en estas páginas). El verbo está en <a href="1-kings-21.es.html#v21-27">1 Reyes 21:27</a> del propio Acab, después de la sentencia.')
+
+DICTIONARY.append(("kana", "kana", "כָּנַע", "kana",
+    'TO BE BROUGHT LOW; in the form used of a person who does it to himself, TO HUMBLE ONESELF. Jehovah asks Elijah &lsquo;Have you seen how Ahab has humbled himself before me?&rsquo; (<a href="1-kings-21.html#v21-29">1 Kings 21:29</a>, now on these pages). It is said of Josiah at 2 Kings 22:19, and it is a favourite of 2 Chronicles (neither yet on these pages). The NWT 1984 has &lsquo;humbled himself on my account&rsquo;.',
+    ("1 Kings", 21, 29)))
+DICTIONARY_ES["kana"] = ("kana",
+    'SER ABATIDO; en la forma que se usa de quien lo hace consigo mismo, HUMILLARSE. Jehová pregunta a Elías «¿Has visto cómo Acab se ha humillado delante de mí?» (<a href="1-kings-21.es.html#v21-29">1 Reyes 21:29</a>, ya en estas páginas). Se dice de Josías en 2 Reyes 22:19, y es un verbo preferido de 2 Crónicas (ninguno de los dos todavía en estas páginas). La TNM 1987 dice «se ha humillado Acab a causa de mí».')
+
+DICTIONARY.append(("chel", "chel", "חֵל", "chel",
+    'A RAMPART, the outer wall or the bank before it. &lsquo;The dogs shall eat Jezebel in the rampart of Jezreel&rsquo; (<a href="1-kings-21.html#v21-23">1 Kings 21:23</a>, now on these pages). The telling at 2 Kings 9:10, 36 (not yet on these pages) has <em>cheleq</em>, &lsquo;portion, plot&rsquo;, one letter longer. The ASV has &lsquo;rampart&rsquo;, the KJV and the NIV &lsquo;wall&rsquo;, and the NWT 1984 &lsquo;plot of land&rsquo;.',
+    ("1 Kings", 21, 23)))
+DICTIONARY_ES["chel"] = ("jel",
+    'UN ANTEMURO, la muralla exterior o el talud delante de ella. «Los perros comerán a Jezabel en el antemuro de Jezreel» (<a href="1-kings-21.es.html#v21-23">1 Reyes 21:23</a>, ya en estas páginas). El relato de 2 Reyes 9:10, 36 (todavía no en estas páginas) tiene <em>jeleq</em>, «porción, parcela», una letra más larga. La RV 1909 dice «la barbacana», la RV60 y la NVI «el muro», y la TNM 1987 «la porción de terreno».')
+
+DICTIONARY_ES["chotam"] = ("jotam",
+    'UN SELLO: el anillo grabado que se apretaba en cera o arcilla para estampar en un documento la autoridad de un rey. &#11088; Jezabel escribe cartas en nombre de Acab y las sella «con su sello» (<a href="1-kings-21.es.html#v21-8">1 Reyes 21:8</a>, ya en estas páginas).')
+_dict9k_en("chotam", ' &#11088; Jezebel writes letters in Ahab&rsquo;s name and seals them &lsquo;with his seal&rsquo; (<a href="1-kings-21.html#v21-8">1 Kings 21:8</a>, now on these pages).')
+
+ENCYCLOPEDIA.append(dict(slug="naboth", name="Naboth the Jezreelite", kind="person", aliases=["Naboth"], refs=[("1 Kings", 21, 1), ("1 Kings", 21, 3), ("1 Kings", 21, 13), ("1 Kings", 21, 19)], videos=[],
+    desc='The man who would not give Ahab his vineyard. &lsquo;Far be it from me, by Jehovah, that I should give you the inheritance of my fathers&rsquo; (<a href="1-kings-21.html#v21-3">1 Kings 21:3</a>, now on these pages) is the only thing he says. Jezebel has him seated at the head of the people at a fast, accused by two sons of worthlessness of having &lsquo;blessed&rsquo; God and the king, and stoned outside the city (21:9&ndash;13). 2 Kings 9:26 (not yet on these pages) adds his sons&rsquo; blood, and Joram&rsquo;s body is thrown on his plot. He has no father&rsquo;s name and no tribe in the text.'))
+ENCYCLOPEDIA_ES["naboth"] = ("Nabot el jezreelita",
+    'El hombre que no quiso dar su viña a Acab. «Lejos esté de mí, por Jehová, que yo te dé la heredad de mis padres» (<a href="1-kings-21.es.html#v21-3">1 Reyes 21:3</a>, ya en estas páginas) es lo único que dice. Jezabel hace que lo sienten a la cabeza del pueblo en un ayuno, que dos hijos de la nada lo acusen de haber «bendecido» a Dios y al rey, y que lo apedreen fuera de la ciudad (21:9–13). 2 Reyes 9:26 (todavía no en estas páginas) añade la sangre de sus hijos, y el cuerpo de Joram es arrojado en su parcela. El texto no le da nombre de padre ni tribu.')
+
+for _s, _r in (("ahab", ("1 Kings", 21, 1)), ("jezreel", ("1 Kings", 21, 1)), ("samaria", ("1 Kings", 21, 1)), ("jezebel", ("1 Kings", 21, 5)), ("elijah", ("1 Kings", 21, 17)), ("jeroboam", ("1 Kings", 21, 22)), ("baasha", ("1 Kings", 21, 22)), ("amorites", ("1 Kings", 21, 26))):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == _s:
+            _e["refs"] = list(_e["refs"]) + [_r]
+
+_F21 = [
+ ("and Naboth&rsquo;s answer to Ahab (1 Kings 21:3, not yet on these pages)", 'and Naboth&rsquo;s answer to Ahab (<a href="1-kings-21.html#v21-3">1 Kings 21:3</a>, now on these pages)'),
+ ("y la respuesta de Nabot a Acab (1 Reyes 21:3, todavía no en estas páginas)", 'y la respuesta de Nabot a Acab (<a href="1-kings-21.es.html#v21-3">1 Reyes 21:3</a>, ya en estas páginas)'),
+ ("the false witnesses against Naboth, 1 Kings 21:10)", 'the false witnesses against Naboth, <a href="1-kings-21.html#v21-10">1 Kings 21:10</a>, now on these pages)'),
+ ("los falsos testigos contra Nabot en 1 Reyes 21:10)", 'los falsos testigos contra Nabot en <a href="1-kings-21.es.html#v21-10">1 Reyes 21:10</a>, ya en estas páginas)'),
+ ("(1 Kings 21:20, 25); and of the northern kingdom at 2 Kings 17:17 (none yet on these p", '(<a href="1-kings-21.html#v21-20">1 Kings 21:20</a>, <a href="1-kings-21.html#v21-25">25</a>, now on these pages); and of the northern kingdom at 2 Kings 17:17 (not yet on these p'),
+ ("(1 Reyes 21:20, 25); y del reino del norte en 2 Reyes 17:17 (ninguno todavía en estas", '(<a href="1-kings-21.es.html#v21-20">1 Reyes 21:20</a>, <a href="1-kings-21.es.html#v21-25">25</a>, ya en estas páginas); y del reino del norte en 2 Reyes 17:17 (todavía no en estas'),
+ ("now on these pages; 1 Kings 21:10&ndash;15 is not yet)", 'now on these pages; <a href="1-kings-21.html#v21-10">1 Kings 21:10&ndash;15</a>, now on these pages)'),
+ ("ya en estas páginas; 1 Reyes 21:10&ndash;15 todavía no)", 'ya en estas páginas; <a href="1-kings-21.es.html#v21-10">1 Reyes 21:10&ndash;15</a>, ya en estas páginas)'),
+ ("of Ahab (1 Kings 21:20 and 25) and of Israel", 'of Ahab (<a href="1-kings-21.html#v21-20">1 Kings 21:20</a> and <a href="1-kings-21.html#v21-25">25</a>) and of Israel'),
+ ("de Acab (1 Reyes 21:20 y 25) y de Israel", 'de Acab (<a href="1-kings-21.es.html#v21-20">1 Reyes 21:20</a> y <a href="1-kings-21.es.html#v21-25">25</a>) y de Israel'),
+ ("and Ahab&rsquo;s twice (1 Kings 21:21; 2 Kings 9:8, both not yet on these pages)", 'and Ahab&rsquo;s twice (<a href="1-kings-21.html#v21-21">1 Kings 21:21</a>, now on these pages; 2 Kings 9:8, not yet on these pages)'),
+ ("y dos veces la de Acab (1 Reyes 21:21; 2 Reyes 9:8, esos dos todavía no en estas páginas)", 'y dos veces la de Acab (<a href="1-kings-21.es.html#v21-21">1 Reyes 21:21</a>, ya en estas páginas; 2 Reyes 9:8, todavía no en estas páginas)'),
+ ("(both now on these pages), 1 Kings 21:21 and 2 Kings 9:8 (neither yet on these pages)", '(both now on these pages), <a href="1-kings-21.html#v21-21">1 Kings 21:21</a> (now on these pages) and 2 Kings 9:8 (not yet on these pages)'),
+ ("(ambos ya en estas páginas), 1 Reyes 21:21 y 2 Reyes 9:8 (ninguno de los dos todavía en estas páginas)", '(ambos ya en estas páginas), <a href="1-kings-21.es.html#v21-21">1 Reyes 21:21</a> (ya en estas páginas) y 2 Reyes 9:8 (todavía no en estas páginas)'),
+ ("and from Naboth (1 Kings 21:4, not yet on these pages)", 'and from Naboth (<a href="1-kings-21.html#v21-4">1 Kings 21:4</a>, now on these pages)'),
+ ("y desde Nabot (1 Reyes 21:4, todavía no en estas páginas)", 'y desde Nabot (<a href="1-kings-21.es.html#v21-4">1 Reyes 21:4</a>, ya en estas páginas)'),
+ ("beside NABOTH's vineyard (1 Kings 21),", 'beside NABOTH\'s vineyard (<a href="1-kings-21.html#v21-1">1 Kings 21</a>, now on these pages),'),
+ ("junto a la viña de Nabot (1 Reyes 21, todavía no en estas páginas)", 'junto a la viña de Nabot (<a href="1-kings-21.es.html#v21-1">1 Reyes 21</a>, ya en estas páginas)'),
+ ("now on these pages; 1 Kings 21; 2 Kings 9:30&ndash;37, not yet on these pages)", 'now on these pages; <a href="1-kings-21.html#v21-5">1 Kings 21</a>, now on these pages; 2 Kings 9:30&ndash;37, not yet on these pages)'),
+ ("ya en estas páginas; 1 Reyes 21; 2 Reyes 9:30–37, todavía no en estas páginas)", 'ya en estas páginas; <a href="1-kings-21.es.html#v21-5">1 Reyes 21</a>, ya en estas páginas; 2 Reyes 9:30–37, todavía no en estas páginas)'),
+]
+_seen21 = set()
+def _f21(_t):
+    for _a, _b in _F21:
+        if _a in _t:
+            _seen21.add(_a)
+            _t = _t.replace(_a, _b)
+    return _t
+for _i, _d in enumerate(DICTIONARY):
+    DICTIONARY[_i] = tuple(_d[:4]) + (_f21(_d[4]),) + tuple(_d[5:])
+for _e in ENCYCLOPEDIA:
+    _e["desc"] = _f21(_e["desc"])
+for _k, _v in list(DICTIONARY_ES.items()):
+    DICTIONARY_ES[_k] = (_v[0], _f21(_v[1]))
+for _k, _v in list(ENCYCLOPEDIA_ES.items()):
+    ENCYCLOPEDIA_ES[_k] = (_v[0], _f21(_v[1]))
+assert len(_seen21) == len(_F21), [_a[:50] for _a, _b in _F21 if _a not in _seen21]
+
+_ency9k_en("ahab", ' &#11088; <a href="1-kings-21.html#v21-1">1 Kings 21</a> (now on these pages): he offers for Naboth&rsquo;s vineyard, goes to bed when refused, takes possession when Naboth is dead, and hears &lsquo;Have you murdered, and also taken possession?&rsquo;. He puts on sackcloth, and the evil is put off to his son&rsquo;s days.')
+_ency9k_es("ahab", ' &#11088; <a href="1-kings-21.es.html#v21-1">1 Reyes 21</a> (ya en estas páginas): ofrece por la viña de Nabot, se acuesta cuando se la niegan, toma posesión cuando Nabot ha muerto, y oye «¿Has asesinado, y también has tomado posesión?». Se pone saco, y el mal se aplaza a los días de su hijo.')
+_ency9k_en("jezebel", ' &#11088; <a href="1-kings-21.html#v21-7">1 Kings 21:7&ndash;15</a> (now on these pages): &lsquo;I will give you the vineyard&rsquo;. She writes letters in Ahab&rsquo;s name and sets up the trial of Naboth, and the dogs are promised her at the rampart of Jezreel (21:23).')
+_ency9k_es("jezebel", ' &#11088; <a href="1-kings-21.es.html#v21-7">1 Reyes 21:7–15</a> (ya en estas páginas): «Yo te daré la viña». Escribe cartas en nombre de Acab y prepara el juicio de Nabot, y se le prometen los perros en el antemuro de Jezreel (21:23).')
+_ency9k_en("elijah", ' &#11088; <a href="1-kings-21.html#v21-17">1 Kings 21:17&ndash;24</a> (now on these pages): he is sent down to Naboth&rsquo;s vineyard, and Ahab says &lsquo;Have you found me, my enemy?&rsquo;.')
+_ency9k_es("elijah", ' &#11088; <a href="1-kings-21.es.html#v21-17">1 Reyes 21:17–24</a> (ya en estas páginas): es enviado a la viña de Nabot, y Acab dice «¿Me has hallado, enemigo mío?».')
+_ency9k_en("jezreel", ' &#11088; <a href="1-kings-21.html#v21-1">1 Kings 21:1</a> (now on these pages): Naboth&rsquo;s vineyard stands beside Ahab&rsquo;s palace here.')
+_ency9k_es("jezreel", ' &#11088; <a href="1-kings-21.es.html#v21-1">1 Reyes 21:1</a> (ya en estas páginas): la viña de Nabot está aquí junto al palacio de Acab.')
+_dict9k_en("yarash", ' &#11088; <a href="1-kings-21.html#v21-15">1 Kings 21:15</a>, <a href="1-kings-21.html#v21-16">16</a>, <a href="1-kings-21.html#v21-18">18</a>, <a href="1-kings-21.html#v21-19">19</a> and <a href="1-kings-21.html#v21-26">26</a> (now on these pages): Ahab &lsquo;takes possession&rsquo; of Naboth&rsquo;s vineyard with the verb of the conquest, and the Amorite is the one Jehovah &lsquo;dispossessed&rsquo;.')
+_dict9k_es("yarash", ' &#11088; <a href="1-kings-21.es.html#v21-15">1 Reyes 21:15</a>, <a href="1-kings-21.es.html#v21-16">16</a>, <a href="1-kings-21.es.html#v21-18">18</a>, <a href="1-kings-21.es.html#v21-19">19</a> y <a href="1-kings-21.es.html#v21-26">26</a> (ya en estas páginas): Acab «toma posesión» de la viña de Nabot con el verbo de la conquista, y el amorreo es aquel a quien Jehová «desalojó».')
+_dict9k_en("ratsach", ' &#11088; &lsquo;Have you murdered, and also taken possession?&rsquo;, said to Ahab, who threw no stone (<a href="1-kings-21.html#v21-19">1 Kings 21:19</a>, now on these pages).')
+_dict9k_es("ratsach", ' &#11088; «¿Has asesinado, y también has tomado posesión?», dicho a Acab, que no arrojó ninguna piedra (<a href="1-kings-21.es.html#v21-19">1 Reyes 21:19</a>, ya en estas páginas).')
+_dict9k_en("nachalah", ' &#11088; &lsquo;Far be it from me, by Jehovah, that I should give you the inheritance of my fathers&rsquo; (<a href="1-kings-21.html#v21-3">1 Kings 21:3</a>, now on these pages).')
+_dict9k_es("nachalah", ' &#11088; «Lejos esté de mí, por Jehová, que yo te dé la heredad de mis padres» (<a href="1-kings-21.es.html#v21-3">1 Reyes 21:3</a>, ya en estas páginas).')
+_dict9k_en("kerem", ' &#11088; Naboth&rsquo;s vineyard, which a king wanted for a garden of greens (<a href="1-kings-21.html#v21-1">1 Kings 21</a>, now on these pages).')
+_dict9k_es("kerem", ' &#11088; La viña de Nabot, que un rey quería para huerto de hortalizas (<a href="1-kings-21.es.html#v21-1">1 Reyes 21</a>, ya en estas páginas).')
+_dict9k_en("saq", ' &#11088; Ahab himself puts it on his flesh after the sentence (<a href="1-kings-21.html#v21-27">1 Kings 21:27</a>, now on these pages).')
+_dict9k_es("saq", ' &#11088; El propio Acab se la pone sobre la carne tras la sentencia (<a href="1-kings-21.es.html#v21-27">1 Reyes 21:27</a>, ya en estas páginas).')
+_dict9k_en("gillulim", ' &#11088; &lsquo;He acted very abominably in going after the idols&rsquo;, of Ahab (<a href="1-kings-21.html#v21-26">1 Kings 21:26</a>, now on these pages).')
+_dict9k_es("gillulim", ' &#11088; «Actuó de manera muy abominable al ir tras los ídolos», de Acab (<a href="1-kings-21.es.html#v21-26">1 Reyes 21:26</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["1kgs21"] = dict(era="monarchy",
+    when="Naboth of Jezreel will not give Ahab the inheritance of his fathers. Jezebel writes letters in the king&rsquo;s name, and two sons of worthlessness bear witness at a fast; Naboth is stoned, and Ahab goes down to take possession. Elijah meets him in the vineyard with the sentence on Jeroboam&rsquo;s house, and when Ahab puts on sackcloth the evil is put off to his son&rsquo;s days.",
+    clock="&lsquo;After these things&rsquo; is the only date, and the chapter comes after the two Aramean campaigns. The three years without war of 1 Kings 22:1 (not yet on these pages) follow it in the Hebrew.")
+
+CHAPTER_ART["1kgs21"] = [dict(
+    file="leighton-jezebel-and-ahab.jpg",
+    title="Jezebel and Ahab", title_es="Jezabel y Acab",
+    artist="Frederic, Lord Leighton", artist_es="Frederic, Lord Leighton",
+    year="1863",
+    location="Scarborough Art Gallery", location_es="Scarborough Art Gallery",
+    alt="A large painting of three standing figures. On the right a tall gaunt bearded man in a dark cloak and an orange robe, a cloth on his head, stands barefoot in an arched doorway and looks across, a stick or tablet in his hand. On the left a woman in a dark green cloak and a gold crown walks away, her head turned back over her shoulder, her face tense. Behind her a man in a white turban, a pale pink wrap and a red cloak shrinks past her with his head bowed. Vine leaves and a tree trunk stand against a white wall and blue sky.",
+    alt_es="Una gran pintura de tres figuras de pie. A la derecha, un hombre alto, enjuto y barbado, con manto oscuro y túnica naranja y un paño en la cabeza, está descalzo en un portal arqueado y mira de frente, con un palo o una tablilla en la mano. A la izquierda, una mujer con manto verde oscuro y corona de oro se aleja con la cabeza vuelta por encima del hombro y el rostro tenso. Detrás de ella, un hombre con turbante blanco, un paño rosa pálido y un manto rojo se encoge al pasar con la cabeza baja. Hojas de parra y un tronco se recortan contra un muro blanco y un cielo azul.",
+    note="1 Kings 21:20. Oil on canvas. The scene is the painter&rsquo;s own: the Hebrew has Elijah meet Ahab in the vineyard, and it does not put Jezebel there, or a doorway. Ahab shrinking behind her has nothing to say in the painting; in the verse he speaks first.",
+    note_es="1 Reyes 21:20. Óleo sobre lienzo. La escena es del pintor: el hebreo hace que Elías encuentre a Acab en la viña, y no pone allí a Jezabel, ni un portal. Acab, encogido tras ella, no tiene nada que decir en la pintura; en el versículo él habla primero.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Frederic_Leighton_(1830-1896)_-_Jezebel_and_Ahab_-_SMG.289_-_Scarborough_Art_Gallery.jpg",
+)]
+
 # Spanish twins for the Revelation 1-2 backfill (2026-11-05).
 DICTIONARY_ES["pantokrator"] = ("pantokratōr", "«El Todopoderoso», literalmente «el que lo sostiene todo» &mdash;la traducción griega de El Shaddai y de «Jehová de los ejércitos». La palabra que las Biblias antiguas aplicaron a Shaddai (Génesis 17:1) es NATIVA en <a href=\"revelation-1.es.html#v8\">Apocalipsis 1:8</a>: el Apocalipsis la usa nueve veces, el resto del Nuevo Testamento una.")
 DICTIONARY_ES["ho-on"] = ("ho ōn", "«El que es» &mdash;la traducción griega de la explicación del nombre divino en la zarza (<a href=\"exodus-3.es.html#v3-14\">Éxodo 3:14</a>). El Apocalipsis lo despliega en tres tiempos («el que es, y que era, y que viene») y se niega a declinarlo: la ruptura gramatical deliberada de <a href=\"revelation-1.es.html#v4\">1:4</a>.")
