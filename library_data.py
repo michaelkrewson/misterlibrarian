@@ -10810,7 +10810,7 @@ XREFS = [
     (("Amos", 1, 1), ("Isaiah", 1, 1), "Uzziah of Judah, the other king who dates this book — and the king in whose death-year Isaiah was called"),
     (("Amos", 1, 2), ("Joel", 1, 19), "the pastures mourn — and Joel 4:16 repeats this verse's opening almost word for word; nobody can say which prophet quoted which"),
     (("Amos", 1, 11), ("Hosea", 1, 6), "rachamim, womb-mercy — named onto a daughter in Hosea, destroyed by a brother-nation here"),
-    (("Amos", 1, 11), ("Genesis", 6, 11), "shachat, to RUIN — the verb tolled three times over the pre-flood world, turned here on a man's own capacity for pity"),
+    (("Amos", 1, 11), ("Genesis", 6, 11), "shachat, to RUIN — the verb tolled four times over the pre-flood world, turned here on a man's own capacity for pity"),
     (("Amos", 1, 11), ("Genesis", 27, 41), "'he pursued his BROTHER with the sword' — Esau's grudge, still running a thousand years later"),
     (("Amos", 1, 12), ("Genesis", 36, 11), "Teman — Esau's grandson, and the Edomite district his clan named"),
     (("Amos", 1, 13), ("Genesis", 31, 21), "Gilead — the treaty-highlands, threshed by one neighbour and disembowelled by another"),
@@ -35769,13 +35769,13 @@ DICTIONARY_ES["nichoach"] = ("reyach nichoach",
 DICTIONARY_ES["toldot"] = ("toldot",
     "«Generaciones»: el marcador estructural propio de Génesis; diez encabezados <em>toldot</em>, «estas son las "
     "generaciones de…», organizan el libro (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; 25:12; 25:19; 36:1, repetido para Esaú en 36:9; "
-    "37:2; Génesis 6–33 ya en estas páginas, todavía no en español).")
+    "37:2; Génesis 7–33 ya en estas páginas, todavía no en español).")
 
 
 
 # ---- 2026-10-10 follow-up: Spanish twins for entries the Spanish library already links to ----
 ENCYCLOPEDIA_ES["nephilim-entry"] = ("Los nefilim",
-    "«En la tierra en aquellos días —y también después» (Génesis 6:4, ya en estas páginas, todavía no en español), en torno "
+    "«En la tierra en aquellos días —y también después» (<a href=\"genesis-6.es.html#v6-4\">Génesis 6:4</a>), en torno "
     "al episodio de los hijos de Dios; «los valientes de antaño, los hombres de renombre». El significado se desconoce; los "
     "traductores griegos escribieron «gigantes». Reaparecen en exactamente un versículo más, el informe de los exploradores en "
     "<a href=\"numbers-13.es.html#v13-33\">Números 13:33</a>, que es también el único lugar donde se los enlaza con los "
@@ -55669,7 +55669,7 @@ CHAPTER_ART["1kgs10"] = [dict(
 # that existed only in English.
 DICTIONARY_ES["shuf"] = ("shuf", "APLASTAR / HERIR &mdash;el verbo raro (en solo tres versículos de la Biblia) de la cabeza de la serpiente y el talón de la descendencia, en <a href=\"genesis-3.es.html#v3-15\">Génesis 3:15</a>.")
 DICTIONARY_ES["teshuqah"] = ("teshuká", "DESEO &mdash;unido a <em>mashal</em> («dominar») tanto en <a href=\"genesis-3.es.html#v3-16\">Génesis 3:16</a> como en <a href=\"genesis-4.es.html#v4-7\">Génesis 4:7</a>, a quince versículos de distancia en la secuencia del texto.")
-DICTIONARY_ES["itsavon"] = ("itsavón", "DOLOR, TRABAJO DOLOROSO &mdash;el dolor de la mujer y la fatiga del hombre en las sentencias del Edén (<a href=\"genesis-3.es.html#v3-16\">Génesis 3:16-17</a>); la misma raíz llega al corazón afligido de Dios en Génesis 6:6 (ya en estas páginas, todavía no en español).")
+DICTIONARY_ES["itsavon"] = ("itsavón", "DOLOR, TRABAJO DOLOROSO &mdash;el dolor de la mujer y la fatiga del hombre en las sentencias del Edén (<a href=\"genesis-3.es.html#v3-16\">Génesis 3:16-17</a>); la misma raíz llega al corazón afligido de Dios en <a href=\"genesis-6.es.html#v6-6\">Génesis 6:6</a>.")
 ENCYCLOPEDIA_ES["eden"] = ("Edén", "La región del jardín, «al oriente» (2:8), regada por un río que se divide en cuatro. Dos de los cuatro ríos son con certeza el Tigris y el Éufrates, lo que sitúa la geografía a grandes rasgos en Mesopotamia; los otros dos (Pisón y Guihón) siguen sin identificarse desde hace mucho. Joel Kramer, de Expedition Bible, propone el seco Wadi Ar-Rummah, rastreado a través de Arabia con satélites y trabajo de campo, y con depósitos de roca que coinciden desde su fuente hasta su fin, como el Pisón, que se uniría al Tigris y al Éufrates cerca de la cabecera del golfo Pérsico; eso situaría el Edén en la zona del actual Kuwait, o justo frente a su costa, bajo el golfo. Guardado por querubines tras la expulsión (3:24).")
 ENCYCLOPEDIA_ES["eve"] = ("Eva (Javá)", "«Madre de todos los vivientes»: el primer nombre personal dado a un ser humano (3:20), con un juego de palabras sobre <em>jai</em>, «vida». Ella misma dio nombre al hijo caído y al señalado (4:1, 4:25).")
 
@@ -56094,6 +56094,8 @@ ENCYCLOPEDIA_ES["john-of-patmos"] = ("Juan (del Apocalipsis)", "El vidente del A
 ENCYCLOPEDIA_ES["patmos"] = ("Patmos", "Una pequeña isla rocosa del Dodecaneso, frente a la costa de Asia Menor, a unos 60 km de Mileto. Roma usaba tales islas para el destierro, y Juan «llegó a estar» aquí «por causa de la palabra de Dios y del testimonio de Jesús» (1:9): exilio por predicar, en la lectura natural. La Cueva del Apocalipsis de la isla se muestra a los peregrinos como el lugar desde tiempos bizantinos.")
 ENCYCLOPEDIA_ES["seven-churches"] = ("Las siete congregaciones de Asia", "Éfeso, Esmirna, Pérgamo, Tiatira, Sardis, Filadelfia y Laodicea (1:11), siete congregaciones de la provincia romana de Asia, nombradas en el orden exacto de un correo: subiendo por la costa, y luego tierra adentro y al sur. El Apocalipsis es una carta circular, y la lista es su ruta. Las cuatro primeras cartas llegan en el capítulo 2; Sardis, Filadelfia y Laodicea reciben las suyas en el capítulo 3.")
 ENCYCLOPEDIA_ES["smyrna"] = ("Esmirna", "La hermosa ciudad portuaria (Apocalipsis 2:8-11), una de las dos únicas de las siete sin ningún reproche. Ciudad rica, congregación pobre, sufrimiento limitado («diez días»), y una orden cumplida al pie de la letra dos generaciones después, cuando su obispo Policarpo fue martirizado en el estadio (c. 155 d. C.), negándose a retractarse. Habitada sin interrupción desde entonces: la actual Esmirna (İzmir).")
+DICTIONARY_ES["tevah"] = ("tevah", "El arca: una caja o cofre, no un barco (sin vela, timón ni remos); su único otro uso es el arca de papiro de Moisés (<a href=\"exodus-2.es.html#v2-3\">Éxodo 2:3</a>).")
+DICTIONARY_ES["mabul"] = ("mabul", "EL diluvio: término técnico usado solo de este suceso (más el Salmo 29:10), nunca de una inundación corriente.")
 ENCYCLOPEDIA_ES["methuselah"] = ("Matusalén", "El hombre más longevo de la Biblia: 969 años (<a href=\"genesis-5.es.html#v5-27\">Génesis 5:27</a>); según los números masoréticos, su muerte cae exactamente en el año del diluvio.")
 ENCYCLOPEDIA_ES["shem-ham-japheth"] = ("Sem, Cam y Jafet", "Los tres hijos de Noé (<a href=\"genesis-5.es.html#v5-32\">Génesis 5:32</a>), padres de los setenta pueblos de la Tabla de las Naciones (Génesis 10). Sem, cuyo nombre significa «Nombre», encabeza la línea que el relato sigue hasta Abram; la mirada de Cam a su padre trae el oráculo contra Canaán (9:22-27); los pueblos costeros de Jafet se extienden hacia el oeste.")
 DICTIONARY_ES["demut"] = ("demut", "SEMEJANZA, parecido: una de las dos palabras (con <em>mar'eh</em>, «apariencia») que sostienen Ezequiel 1, donde entre las dos aparecen unas veinte veces en veintiocho versículos. La cautela es la teología: Ezequiel nunca dice que vio a Dios, solo «la apariencia de la SEMEJANZA de la gloria de Jehová». Es también la palabra de <a href=\"genesis-1.es.html#v26\">Génesis 1:26</a>, la humanidad hecha a imagen de Dios y conforme a su <em>demut</em>, y Adán la pasa a Set en <a href=\"genesis-5.es.html#v5-3\">Génesis 5:3</a>.")
