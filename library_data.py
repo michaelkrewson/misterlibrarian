@@ -56402,6 +56402,119 @@ CHAPTER_ART["1kgs18"] = [dict(
     source_url="https://commons.wikimedia.org/wiki/File:Dresden,_Gem%C3%A4ldegalerie_Alte_Meister,_Lucas_Cranach_d.J.,_Elias_und_die_Baalspriester.jpg",
 )]
 
+# --- 1 Kings 19 ---
+DICTIONARY.append(("rotem", "rotem", "רֹתֶם", "rotem",
+    'THE BROOM, a desert shrub. Elijah sits down under one a day into the wilderness beyond Beersheba and asks to die, and sleeps under it (<a href="1-kings-19.html#v19-4">1 Kings 19:4</a>, <a href="1-kings-19.html#v19-5">5</a>, now on these pages). It is also in Job 30:4 and Psalm 120:4 (neither yet on these pages). The ASV, the KJV, the Geneva and the Douay have &lsquo;juniper&rsquo;, which is a different plant.',
+    ("1 Kings", 19, 4)))
+DICTIONARY_ES["rotem"] = ("rotem",
+    'LA RETAMA, un arbusto del desierto. Elías se sienta bajo una a un día de camino más allá de Beerseba, pide morir y duerme debajo de ella (<a href="1-kings-19.es.html#v19-4">1 Reyes 19:4</a>, <a href="1-kings-19.es.html#v19-5">5</a>, ya en estas páginas). También está en Job 30:4 y en el Salmo 120:4 (ninguno de los dos todavía en estas páginas). La RV60 y la RV 1909 dicen «enebro», que es otra planta.')
+
+DICTIONARY.append(("demamah", "demamah", "דְּמָמָה", "demamah",
+    'SILENCE, stillness. <span data-heb="דממה">The word stands in three verses of the Hebrew Bible</span>: <em>qol demamah daqqah</em>, &lsquo;a voice of thin silence&rsquo;, after the fire at Horeb (<a href="1-kings-19.html#v19-12">1 Kings 19:12</a>, now on these pages), the storm stilled at Psalm 107:29, and &lsquo;silence and a voice&rsquo; at Job 4:16 (neither yet on these pages). The ASV and the KJV have &lsquo;a still small voice&rsquo;, the NIV &lsquo;a gentle whisper&rsquo;, and the NWT 1984 &lsquo;a calm, low voice&rsquo;. The Hebrew joins a word for sound to a word for no sound.',
+    ("1 Kings", 19, 12)))
+DICTIONARY_ES["demamah"] = ("demamah",
+    'SILENCIO, quietud. <span data-heb="דממה">La palabra está en tres versículos de la Biblia hebrea</span>: <em>qol demamah daqqah</em>, «una voz de silencio delgado», tras el fuego en Horeb (<a href="1-kings-19.es.html#v19-12">1 Reyes 19:12</a>, ya en estas páginas), la tormenta calmada del Salmo 107:29, y «silencio y una voz» en Job 4:16 (ninguno de los dos todavía en estas páginas). La RV60 dice «un silbo apacible y delicado», la NVI «un suave murmullo», y la TNM 1987 «una voz calmada y baja». El hebreo une una palabra de sonido a una palabra de ausencia de sonido.')
+
+DICTIONARY.append(("sharet", "sharet", "שֵׁרֵת", "sharet",
+    'TO MINISTER, to attend on someone as his personal aide. It is Joshua&rsquo;s word, &lsquo;Joshua his minister&rsquo; (<a href="exodus-24.html#v24-13">Exodus 24:13</a>) and &lsquo;Moses&rsquo; attendant&rsquo; (<a href="joshua-1.html#v1-1">Joshua 1:1</a>), and Elisha&rsquo;s, who &lsquo;went after Elijah, and ministered to him&rsquo; (<a href="1-kings-19.html#v19-21">1 Kings 19:21</a>, all now on these pages). It is a different word from <em>eved</em>, a servant.',
+    ("1 Kings", 19, 21)))
+DICTIONARY_ES["sharet"] = ("sharet",
+    'MINISTRAR, atender a alguien como ayudante personal. Es la palabra de Josué, «Josué su servidor» (<a href="exodus-24.es.html#v24-13">Éxodo 24:13</a>) y «ayudante de Moisés» (<a href="joshua-1.es.html#v1-1">Josué 1:1</a>), y de Eliseo, que «fue tras Elías, y le ministraba» (<a href="1-kings-19.es.html#v19-21">1 Reyes 19:21</a>, todos ya en estas páginas). Es otra palabra que <em>eved</em>, siervo.')
+
+ENCYCLOPEDIA.append(dict(slug="jehu-son-of-nimshi", name="Jehu son of Nimshi", kind="person", aliases=["Jehu"], refs=[("1 Kings", 19, 16), ("1 Kings", 19, 17), ("Hosea", 1, 4)], videos=[],
+    desc='The man Elijah is told to anoint king over Israel (<a href="1-kings-19.html#v19-16">1 Kings 19:16</a>, now on these pages). In 2 Kings 9&ndash;10 (not yet on these pages) one of the sons of the prophets anoints him at Elisha&rsquo;s word, and he ends the house of Ahab. 2 Kings 9:2 calls him son of Jehoshaphat son of Nimshi. He is not the prophet <a href="encyclopedia.html#jehu-son-of-hanani">Jehu son of Hanani</a>. ⚠ <a href="hosea-1.html#v4">Hosea 1:4</a> (now on these pages) sets the blood of Jezreel to the account of his house. Shalmaneser III&rsquo;s Black Obelisk is reported to show him bowing.'))
+ENCYCLOPEDIA_ES["jehu-son-of-nimshi"] = ("Jehú hijo de Nimsi",
+    'El hombre a quien se manda a Elías ungir por rey sobre Israel (<a href="1-kings-19.es.html#v19-16">1 Reyes 19:16</a>, ya en estas páginas). En 2 Reyes 9–10 (todavía no en estas páginas) uno de los hijos de los profetas lo unge por orden de Eliseo, y él acaba con la casa de Acab. 2 Reyes 9:2 lo llama hijo de Josafat hijo de Nimsi. No es el profeta <a href="enciclopedia.html#jehu-son-of-hanani">Jehú hijo de Hanani</a>. ⚠ <a href="hosea-1.es.html#v4">Oseas 1:4</a> (ya en estas páginas) pone la sangre de Jezreel a la cuenta de su casa. Se informa que el Obelisco Negro de Salmanasar III lo muestra postrado.')
+
+ENCYCLOPEDIA_ES["hazael"] = ("Hazael",
+    'Rey de Aram-Damasco en la segunda mitad del siglo IX a. C., y el enemigo más destructivo de Israel antes de Asiria. Llegó al trono por un asesinato: 2 Reyes 8:15 hace que ahogue a su amo enfermo Ben-adad con un paño mojado, el día después de que Eliseo llorara delante de él. Luego tomó todo Galaad a Israel (2 Reyes 10:32–33), capturó Gat (2 Reyes 12:17) y tuvo que ser comprado para que dejara Jerusalén con el tesoro del templo. ⚠ Está inusualmente bien atestiguado fuera de la Biblia: inscripciones asirias de Salmanasar III lo llaman «hijo de nadie», su frase corriente para un usurpador, y la estela aramea de victoria hallada en Tel Dan en 1993, que contiene la mención extrabíblica más antigua de la «casa de David», se le atribuye por lo general. Amós nombra su dinastía, no su país: el fuego cae sobre «la casa de Hazael» y «los palacios de Ben-adad».')
+
+for _s, _r in (("elijah", ("1 Kings", 19, 1)), ("ahab", ("1 Kings", 19, 1)), ("jezebel", ("1 Kings", 19, 1)), ("beersheba", ("1 Kings", 19, 3)), ("horeb", ("1 Kings", 19, 8)), ("damascus", ("1 Kings", 19, 15)), ("hazael", ("1 Kings", 19, 15)), ("aram", ("1 Kings", 19, 15)), ("elisha", ("1 Kings", 19, 16)), ("abel-meholah", ("1 Kings", 19, 16)), ("baal", ("1 Kings", 19, 18))):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == _s:
+            _e["refs"] = list(_e["refs"]) + [_r]
+
+_F19 = [
+ ("(Zechariah 13:4; none yet on these pages)", "(Zechariah 13:4; the rest not yet on these pages)"),
+ ("(Zacarías 13:4; ninguno todavía en estas páginas)", "(Zacarías 13:4; los demás todavía no en estas páginas)"),
+ ("(1 Kings 19:13, 19; 2 Kings 2:8, 13, 14)", '(<a href="1-kings-19.html#v19-13">1 Kings 19:13</a>, <a href="1-kings-19.html#v19-19">19</a>, now on these pages; 2 Kings 2:8, 13, 14)'),
+ ("(1 Reyes 19:13, 19; 2 Reyes 2:8, 13, 14)", '(<a href="1-kings-19.es.html#v19-13">1 Reyes 19:13</a>, <a href="1-kings-19.es.html#v19-19">19</a>, ya en estas páginas; 2 Reyes 2:8, 13, 14)'),
+ ("(1 Kings 19:6, not yet on these pages)", '(<a href="1-kings-19.html#v19-6">1 Kings 19:6</a>, now on these pages)'),
+ ("(1 Reyes 19:6, todavía no en estas páginas)", '(<a href="1-kings-19.es.html#v19-6">1 Reyes 19:6</a>, ya en estas páginas)'),
+ ("(1 Kings 19:16-21)", '(<a href="1-kings-19.html#v19-16">1 Kings 19:16&ndash;21</a>, now on these pages)'),
+ ("(1 Reyes 19:16-21)", '(<a href="1-kings-19.es.html#v19-16">1 Reyes 19:16–21</a>, ya en estas páginas)'),
+ ("where Paul quotes 1 Kings 19:18,", 'where Paul quotes <a href="1-kings-19.html#v19-18">1 Kings 19:18</a>,'),
+ ("donde Pablo cita 1 Reyes 19:18,", 'donde Pablo cita <a href="1-kings-19.es.html#v19-18">1 Reyes 19:18</a>,'),
+ ("quotes his complaint from 1 Kings 19:10 and 19:14 and the answer of 19:18,", 'quotes his complaint from <a href="1-kings-19.html#v19-10">1 Kings 19:10</a> and 19:14 and the answer of 19:18,'),
+ ("cita su queja de 1 Reyes 19:10 y 19:14 y la respuesta de 19:18,", 'cita su queja de <a href="1-kings-19.es.html#v19-10">1 Reyes 19:10</a> y 19:14 y la respuesta de 19:18,'),
+ ("(1 Kings 19 not yet on these pages)", '(<a href="1-kings-19.html">1 Kings 19</a>, now on these pages)'),
+ ("(1 Reyes 19 todavía no en estas páginas)", '(<a href="1-kings-19.es.html">1 Reyes 19</a>, ya en estas páginas)'),
+ ("1 Kings 19:16 (not yet on these pages)", '<a href="1-kings-19.html#v19-16">1 Kings 19:16</a> (now on these pages)'),
+ ("1 Reyes 19:16 (todavía no en estas páginas)", '<a href="1-kings-19.es.html#v19-16">1 Reyes 19:16</a> (ya en estas páginas)'),
+ ("1 Reyes 4:12 (todavía no en estas páginas), que lo usa", '<a href="1-kings-4.es.html#v4-12">1 Reyes 4:12</a> (ya en estas páginas), que lo usa'),
+ ("now on these pages; 1 Kings 19:2; 21; 2 Kings 9:30&ndash;37, not yet on these pages)", 'now on these pages; <a href="1-kings-19.html#v19-2">1 Kings 19:2</a>, now on these pages; 1 Kings 21; 2 Kings 9:30&ndash;37, not yet on these pages)'),
+ ("ya en estas páginas; 1 Reyes 19:2; 21; 2 Reyes 9:30–37, todavía no en estas páginas)", 'ya en estas páginas; <a href="1-kings-19.es.html#v19-2">1 Reyes 19:2</a>, ya en estas páginas; 1 Reyes 21; 2 Reyes 9:30–37, todavía no en estas páginas)'),
+ ("and hears God not in wind, earthquake or fire but in a thin whisper of silence.", "and at Horeb finds Jehovah in neither wind, earthquake nor fire, and then hears a voice of thin silence."),
+ ("y oye a Dios no en el viento, ni en el terremoto, ni en el fuego, sino en un delgado susurro de silencio.", "y en Horeb no halla a Jehová ni en el viento, ni en el terremoto, ni en el fuego, y luego oye una voz de silencio delgado."),
+]
+_seen19 = set()
+def _f19(_t):
+    for _a, _b in _F19:
+        if _a in _t:
+            _seen19.add(_a)
+            _t = _t.replace(_a, _b)
+    return _t
+for _i, _d in enumerate(DICTIONARY):
+    DICTIONARY[_i] = tuple(_d[:4]) + (_f19(_d[4]),) + tuple(_d[5:])
+for _e in ENCYCLOPEDIA:
+    _e["desc"] = _f19(_e["desc"])
+for _k, _v in list(DICTIONARY_ES.items()):
+    DICTIONARY_ES[_k] = (_v[0], _f19(_v[1]))
+for _k, _v in list(ENCYCLOPEDIA_ES.items()):
+    ENCYCLOPEDIA_ES[_k] = (_v[0], _f19(_v[1]))
+assert len(_seen19) == len(_F19), [_a[:50] for _a, _b in _F19 if _a not in _seen19]
+
+for _e in ENCYCLOPEDIA:
+    if _e["slug"] == "jehu-son-of-hanani" and "Jehu" not in _e.get("aliases", []):
+        _e["aliases"] = list(_e.get("aliases", [])) + ["Jehu"]
+
+_ency9k_en("elijah", ' &#11088; <a href="1-kings-19.html#v19-1">1 Kings 19</a> (now on these pages): he goes for his soul to Beersheba, asks to die under a broom tree, is fed by an angel, walks forty days to Horeb, gives the same answer twice, and throws his mantle on Elisha.')
+_ency9k_es("elijah", ' &#11088; <a href="1-kings-19.es.html#v19-1">1 Reyes 19</a> (ya en estas páginas): se va por su alma a Beerseba, pide morir bajo una retama, lo alimenta un ángel, anda cuarenta días hasta Horeb, da la misma respuesta dos veces y echa su manto sobre Eliseo.')
+_ency9k_en("elisha", ' &#11088; <a href="1-kings-19.html#v19-19">1 Kings 19:19&ndash;21</a> (now on these pages): plowing with twelve yoke, he has Elijah&rsquo;s mantle thrown on him, sacrifices the oxen, and goes after him as his minister.')
+_ency9k_es("elisha", ' &#11088; <a href="1-kings-19.es.html#v19-19">1 Reyes 19:19–21</a> (ya en estas páginas): arando con doce yuntas, recibe el manto de Elías, sacrifica los bueyes y va tras él para ministrarle.')
+_ency9k_en("hazael", ' &#11088; <a href="1-kings-19.html#v19-15">1 Kings 19:15</a> (now on these pages): Elijah is told to anoint him as king over Aram.')
+_ency9k_es("hazael", ' &#11088; <a href="1-kings-19.es.html#v19-15">1 Reyes 19:15</a> (ya en estas páginas): se manda a Elías ungirlo por rey sobre Aram.')
+_ency9k_en("horeb", ' &#11088; <a href="1-kings-19.html#v19-8">1 Kings 19:8&ndash;14</a> (now on these pages): Elijah comes here after forty days and forty nights, and Jehovah is not in the wind, the earthquake or the fire.')
+_ency9k_es("horeb", ' &#11088; <a href="1-kings-19.es.html#v19-8">1 Reyes 19:8–14</a> (ya en estas páginas): Elías llega aquí tras cuarenta días y cuarenta noches, y Jehová no está en el viento, ni en el terremoto, ni en el fuego.')
+_ency9k_en("beersheba", ' &#11088; <a href="1-kings-19.html#v19-3">1 Kings 19:3</a> (now on these pages): &lsquo;Beersheba, which belongs to Judah&rsquo;, where Elijah leaves his young man.')
+_ency9k_es("beersheba", ' &#11088; <a href="1-kings-19.es.html#v19-3">1 Reyes 19:3</a> (ya en estas páginas): «Beerseba, que es de Judá», donde Elías deja a su criado.')
+_ency9k_en("jezebel", ' &#11088; <a href="1-kings-19.html#v19-2">1 Kings 19:2</a> (now on these pages): she swears by the gods to have Elijah&rsquo;s soul by tomorrow.')
+_ency9k_es("jezebel", ' &#11088; <a href="1-kings-19.es.html#v19-2">1 Reyes 19:2</a> (ya en estas páginas): jura por los dioses tener el alma de Elías para mañana.')
+_dict9k_en("qanna", ' &#11088; <a href="1-kings-19.html#v19-10">1 Kings 19:10</a>, <a href="1-kings-19.html#v19-14">14</a> (now on these pages): &lsquo;With zeal I have been zealous&rsquo;, Elijah&rsquo;s answer at Horeb, both times.')
+_dict9k_es("qanna", ' &#11088; <a href="1-kings-19.es.html#v19-10">1 Reyes 19:10</a>, <a href="1-kings-19.es.html#v19-14">14</a> (ya en estas páginas): «Con celo he celado», la respuesta de Elías en Horeb, las dos veces.')
+_dict9k_en("nefesh", ' &#11088; <a href="1-kings-19.html#v19-2">1 Kings 19</a> (now on these pages): the word stands seven times in the chapter, from Jezebel&rsquo;s oath to &lsquo;take my soul&rsquo; and &lsquo;they are seeking my soul&rsquo;.')
+_dict9k_es("nefesh", ' &#11088; <a href="1-kings-19.es.html#v19-2">1 Reyes 19</a> (ya en estas páginas): la palabra está siete veces en el capítulo, desde el juramento de Jezabel hasta «toma mi alma» y «buscan mi alma».')
+_dict9k_en("malakh", ' &#11088; <a href="1-kings-19.html#v19-2">1 Kings 19:2</a>, <a href="1-kings-19.html#v19-5">5</a> (now on these pages): the same word for Jezebel&rsquo;s messenger and for the angel who feeds Elijah.')
+_dict9k_es("malakh", ' &#11088; <a href="1-kings-19.es.html#v19-2">1 Reyes 19:2</a>, <a href="1-kings-19.es.html#v19-5">5</a> (ya en estas páginas): la misma palabra para el mensajero de Jezabel y para el ángel que alimenta a Elías.')
+
+CHRON_CHAPTERS["1kgs19"] = dict(era="monarchy",
+    when="Jezebel swears to have Elijah&rsquo;s soul, and he goes to Beersheba and a day beyond, and asks to die under a broom tree. An angel feeds him twice, and he walks forty days and forty nights to Horeb, where Jehovah is not in the wind, the earthquake or the fire. He is sent back to anoint Hazael, Jehu and Elisha, and he throws his mantle on Elisha at the plow.",
+    clock="The chapter follows Carmel directly and gives no date. Forty days and forty nights is its only count of time.")
+
+CHAPTER_ART["1kgs19"] = [dict(
+    file="leighton-elijah-in-the-wilderness.jpg",
+    title="Elijah in the Wilderness", title_es="Elías en el desierto",
+    artist="Frederic, Lord Leighton", artist_es="Frederic, Lord Leighton",
+    year="1877&ndash;78",
+    location="Walker Art Gallery, Liverpool", location_es="Walker Art Gallery, Liverpool",
+    alt="A tall painting. A large muscular man sleeps on his back across a brown cloak spread on the rocks, his arms thrown up behind his head. An angel in a pale robe, with long wings of grey, rose and white and a halo, stands over him, bending her head and setting down a round jug. A round loaf lies on the rock beside it. The sky behind is pale and banded with cloud.",
+    alt_es="Una pintura alta. Un hombre grande y musculoso duerme de espaldas sobre un manto marrón extendido en las rocas, con los brazos echados detrás de la cabeza. Un ángel de túnica pálida, con largas alas grises, rosadas y blancas y un halo, está de pie junto a él, inclinando la cabeza y dejando una jarra redonda. Un pan redondo yace sobre la roca a su lado. El cielo del fondo es pálido y con franjas de nubes.",
+    note="1 Kings 19:5&ndash;6. Oil on canvas. The cake and the jug are there at his head, and the angel has come to touch him. The verse says a broom tree, and Leighton gives bare rock. The wings and the halo are the painter&rsquo;s: the Hebrew word means a messenger, and it is the word for Jezebel&rsquo;s.",
+    note_es="1 Reyes 19:5–6. Óleo sobre lienzo. La torta y la jarra están a su cabecera, y el ángel ha venido a tocarlo. El versículo dice una retama, y Leighton pone roca desnuda. Las alas y el halo son del pintor: la palabra hebrea significa mensajero, y es la misma del de Jezabel.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Frederic,_Lord_Leighton_-_Elijah_in_the_Wilderness_-_Google_Art_Project.jpg",
+)]
+
 # Spanish twins for the Revelation 1-2 backfill (2026-11-05).
 DICTIONARY_ES["pantokrator"] = ("pantokratōr", "«El Todopoderoso», literalmente «el que lo sostiene todo» &mdash;la traducción griega de El Shaddai y de «Jehová de los ejércitos». La palabra que las Biblias antiguas aplicaron a Shaddai (Génesis 17:1) es NATIVA en <a href=\"revelation-1.es.html#v8\">Apocalipsis 1:8</a>: el Apocalipsis la usa nueve veces, el resto del Nuevo Testamento una.")
 DICTIONARY_ES["ho-on"] = ("ho ōn", "«El que es» &mdash;la traducción griega de la explicación del nombre divino en la zarza (<a href=\"exodus-3.es.html#v3-14\">Éxodo 3:14</a>). El Apocalipsis lo despliega en tres tiempos («el que es, y que era, y que viene») y se niega a declinarlo: la ruptura gramatical deliberada de <a href=\"revelation-1.es.html#v4\">1:4</a>.")
