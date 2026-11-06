@@ -56515,6 +56515,148 @@ CHAPTER_ART["1kgs19"] = [dict(
     source_url="https://commons.wikimedia.org/wiki/File:Frederic,_Lord_Leighton_-_Elijah_in_the_Wilderness_-_Google_Art_Project.jpg",
 )]
 
+# --- 1 Kings 20 ---
+DICTIONARY.append(("bene-ha-neviim", "benei ha-nevi&rsquo;im", "בְּנֵי הַנְּבִיאִים", "benei ha-nevi'im",
+    'THE SONS OF THE PROPHETS: members of a company of prophets, and not their children. <span data-heb="בני הנביאים">The phrase stands in ten verses of the Hebrew Bible</span>: first at <a href="1-kings-20.html#v20-35">1 Kings 20:35</a> (now on these pages), and then nine times in 2 Kings, from 2:3 on, around Elisha (not yet on these pages). They have wives (2 Kings 4:1), and they live together in a place that grows too small (2 Kings 6:1). The NIV has &lsquo;the company of the prophets&rsquo;. Amos denies being one: &lsquo;I am no prophet, nor a son of a prophet&rsquo; (Amos 7:14, not yet on these pages).',
+    ("1 Kings", 20, 35)))
+DICTIONARY_ES["bene-ha-neviim"] = ("benei ha-neviím",
+    'LOS HIJOS DE LOS PROFETAS: miembros de una compañía de profetas, no sus descendientes. <span data-heb="בני הנביאים">La frase está en diez versículos de la Biblia hebrea</span>: primero en <a href="1-kings-20.es.html#v20-35">1 Reyes 20:35</a> (ya en estas páginas), y luego nueve veces en 2 Reyes, desde 2:3, en torno a Eliseo (todavía no en estas páginas). Tienen mujeres (2 Reyes 4:1), y viven juntos en un lugar que se les queda pequeño (2 Reyes 6:1). La NVI dice «la comunidad de profetas». Amós niega ser uno de ellos: «No soy profeta, ni hijo de profeta» (Amós 7:14, todavía no en estas páginas).')
+
+DICTIONARY.append(("afer", "afer", "אֲפֵר", "afer",
+    'A BANDAGE or headband, worn over the eyes. With these vowels the word stands only at <a href="1-kings-20.html#v20-38">1 Kings 20:38</a> and <a href="1-kings-20.html#v20-41">41</a> (now on these pages), where a prophet disguises himself with it. The ASV and the NIV have &lsquo;headband&rsquo;, and the NWT 1984 and the Greek &lsquo;bandage&rsquo;. The KJV and the Geneva have &lsquo;ashes&rsquo;, which is <em>efer</em>, the same letters with other vowels.',
+    ("1 Kings", 20, 38)))
+DICTIONARY_ES["afer"] = ("afer",
+    'UNA VENDA o cinta, llevada sobre los ojos. Con estas vocales la palabra está solo en <a href="1-kings-20.es.html#v20-38">1 Reyes 20:38</a> y <a href="1-kings-20.es.html#v20-41">41</a> (ya en estas páginas), donde un profeta se disfraza con ella. La RV60 y la TNM 1987 dicen «venda», con la griega, y la RV 1909 «velo». Algunas versiones inglesas antiguas tienen «cenizas», que es <em>efer</em>, las mismas letras con otras vocales.')
+
+DICTIONARY.append(("chasif", "chasif", "חָשִׂיף", "chasif",
+    'A LITTLE FLOCK, as far as the sense of the verse shows. The word is found as a noun only at <a href="1-kings-20.html#v20-27">1 Kings 20:27</a> (now on these pages), &lsquo;like two little flocks of goats&rsquo;, Israel camped opposite Aram. The verb with those letters means to strip or lay bare (Isaiah 47:2, not yet on these pages). The shelf agrees on &lsquo;little flocks&rsquo; because the picture requires something small.',
+    ("1 Kings", 20, 27)))
+DICTIONARY_ES["chasif"] = ("jasif",
+    'UN PEQUEÑO REBAÑO, hasta donde lo muestra el sentido del versículo. La palabra se halla como sustantivo solo en <a href="1-kings-20.es.html#v20-27">1 Reyes 20:27</a> (ya en estas páginas), «como dos pequeños rebaños de cabras», Israel acampado frente a Aram. El verbo con esas letras significa despojar o desnudar (Isaías 47:2, todavía no en estas páginas). La estantería coincide en «rebaños pequeños» porque la imagen exige algo pequeño.')
+
+DICTIONARY.append(("chalat", "chalat", "חָלַט", "chalat",
+    'TO SEIZE ON, perhaps, or to take as settled. <span data-heb="ויחלטו">The verb stands in one verse of the Hebrew Bible</span>, <a href="1-kings-20.html#v20-33">1 Kings 20:33</a> (now on these pages), where Ben-hadad&rsquo;s men catch at Ahab&rsquo;s word, so its sense is taken from the setting. The root means &lsquo;to decide&rsquo; in modern Hebrew. The NIV has &lsquo;quick to pick up his word&rsquo;, and the NWT 1984 &lsquo;took it as a decision of his own accord&rsquo;.',
+    ("1 Kings", 20, 33)))
+DICTIONARY_ES["chalat"] = ("jalat",
+    'AFERRARSE, quizá, o dar por decidido. <span data-heb="ויחלטו">El verbo está en un versículo de la Biblia hebrea</span>, <a href="1-kings-20.es.html#v20-33">1 Reyes 20:33</a> (ya en estas páginas), donde los hombres de Ben-adad se agarran a la palabra de Acab, de modo que su sentido se saca del contexto. La raíz significa «decidir» en hebreo moderno. La RV60 dice «tomar la palabra de su boca», y la TNM 1987 «lo tomaron como decisión espontánea de parte de él».')
+
+DICTIONARY.append(("asar", "asar", "אָסַר", "asar",
+    'TO TIE, to bind: a rope, a captive, a horse to a chariot. With &lsquo;battle&rsquo; as its object it stands twice: &lsquo;Who will bind the battle?&rsquo; (<a href="1-kings-20.html#v20-14">1 Kings 20:14</a>, now on these pages), and Abijah at 2 Chronicles 13:3 (not yet on these pages). The KJV has &lsquo;order the battle&rsquo; and the ASV &lsquo;begin the battle&rsquo;. English &lsquo;join battle&rsquo; is the same picture.',
+    ("1 Kings", 20, 14)))
+DICTIONARY_ES["asar"] = ("asar",
+    'ATAR, sujetar: una soga, un cautivo, un caballo a un carro. Con «batalla» como objeto está dos veces: «¿Quién atará la batalla?» (<a href="1-kings-20.es.html#v20-14">1 Reyes 20:14</a>, ya en estas páginas), y Abías en 2 Crónicas 13:3 (todavía no en estas páginas). La RV60 dice «comenzará la batalla». El español «trabar batalla» es la misma imagen.')
+
+DICTIONARY.append(("shoal", "sho&lsquo;al", "שֹׁעַל", "sho'al",
+    'THE HOLLOW OF THE HAND, a handful. Ben-hadad swears that the dust of Samaria will not suffice &lsquo;for handfuls&rsquo; for his men (<a href="1-kings-20.html#v20-10">1 Kings 20:10</a>, now on these pages). Isaiah has the waters measured in one (<a href="isaiah-40.html#v40-12">Isaiah 40:12</a>, now on these pages), and Ezekiel 13:19 (not yet on these pages) has &lsquo;handfuls of barley&rsquo;. The Greek read the letters at 1 Kings 20:10 as <em>shualim</em>, &lsquo;foxes&rsquo;.',
+    ("1 Kings", 20, 10)))
+DICTIONARY_ES["shoal"] = ("shoal",
+    'EL HUECO DE LA MANO, un puñado. Ben-adad jura que el polvo de Samaria no bastará «para los puñados» de sus hombres (<a href="1-kings-20.es.html#v20-10">1 Reyes 20:10</a>, ya en estas páginas). Isaías mide las aguas en uno (<a href="isaiah-40.es.html#v40-12">Isaías 40:12</a>, ya en estas páginas), y Ezequiel 13:19 (todavía no en estas páginas) tiene «puñados de cebada». La griega leyó las letras de 1 Reyes 20:10 como <em>shualim</em>, «zorras».')
+
+DICTIONARY.append(("medinah", "medinah", "מְדִינָה", "medinah",
+    'A PROVINCE, a district under a ruler. It stands four times in <a href="1-kings-20.html#v20-14">1 Kings 20</a> (now on these pages), &lsquo;the young men of the princes of the provinces&rsquo;, and it belongs mostly to the later books, Esther above all. Lamentations 1:1 calls Jerusalem &lsquo;princess among the provinces&rsquo; (not yet on these pages). The NWT 1984 has &lsquo;jurisdictional districts&rsquo;.',
+    ("1 Kings", 20, 14)))
+DICTIONARY_ES["medinah"] = ("medinah",
+    'UNA PROVINCIA, un distrito bajo un gobernante. Está cuatro veces en <a href="1-kings-20.es.html#v20-14">1 Reyes 20</a> (ya en estas páginas), «los jóvenes de los príncipes de las provincias», y pertenece sobre todo a los libros tardíos, ante todo a Ester. Lamentaciones 1:1 llama a Jerusalén «princesa entre las provincias» (todavía no en estas páginas). La TNM 1987 dice «distritos jurisdiccionales».')
+
+DICTIONARY.append(("zaef", "za&lsquo;ef", "זָעֵף", "za'ef",
+    'RAGING, in a temper. <span data-heb="סר וזעף">Paired with <em>sar</em>, &lsquo;sullen&rsquo;, it stands in two verses of the Hebrew Bible</span>, both of Ahab: going home from the prophet (<a href="1-kings-20.html#v20-43">1 Kings 20:43</a>, now on these pages) and from Naboth (1 Kings 21:4, not yet on these pages). The ASV and the KJV have &lsquo;heavy and displeased&rsquo;, the NIV &lsquo;Sullen and angry&rsquo;, and the NWT 1984 &lsquo;sullen and dejected&rsquo;.',
+    ("1 Kings", 20, 43)))
+DICTIONARY_ES["zaef"] = ("zaef",
+    'AIRADO, de mal humor. <span data-heb="סר וזעף">Junto con <em>sar</em>, «huraño», está en dos versículos de la Biblia hebrea</span>, los dos de Acab: cuando vuelve a casa desde el profeta (<a href="1-kings-20.es.html#v20-43">1 Reyes 20:43</a>, ya en estas páginas) y desde Nabot (1 Reyes 21:4, todavía no en estas páginas). La RV60 dice «triste y enojado», la NVI «deprimido y malhumorado», y la TNM 1987 «sombrío y decaído».')
+
+DICTIONARY_ES["hamon"] = ("hamon",
+    'Una multitud, una muchedumbre que ruge: la palabra escondida en el nuevo nombre de Abraham, <em>av hamon goyim</em>, «padre de multitud de naciones» (Génesis 17:4–5). &#11088; «Toda esta gran multitud» es el ejército de Aram, dos veces (<a href="1-kings-20.es.html#v20-13">1 Reyes 20:13</a>, <a href="1-kings-20.es.html#v20-28">28</a>, ya en estas páginas).')
+DICTIONARY_ES["pechah"] = ("pejah",
+    'GOBERNADOR: una palabra prestada (acadio <em>pihatu</em>, más tarde persa) para el funcionario imperial puesto sobre una provincia, NO un rey nativo. Es el cargo que Zorobabel tiene sobre Judá bajo Darío (Hageo 1:1, 14), y el mismo título que Nehemías tendrá y del que se negará a sacar provecho (Nehemías 5:14–18). Su carácter corriente es lo que importa: la casa de David gobierna ahora como un administrador medio de Persia, y aun eso solo por nombramiento imperial. &#11088; El término ya aparece mucho antes: «los gobernadores de la tierra» (<a href="1-kings-10.es.html#v10-15">1 Reyes 10:15</a>), y los gobernadores que reemplazan a los reyes de Ben-adad (<a href="1-kings-20.es.html#v20-24">1 Reyes 20:24</a>, ambos ya en estas páginas).')
+DICTIONARY_ES["saq"] = ("saq",
+    'SACO: tela áspera y oscura de pelo de cabra, llevada sobre la piel como vestido de luto y arrepentimiento. Entra en la Biblia con Jacob, como respuesta de un padre a una mentira sobre su hijo (Génesis 37:34), y se queda: el rey de Nínive cambia su manto por ella (Jonás 3:6), y los dos testigos del Apocalipsis profetizan con ella (Apocalipsis 11:3). &#11088; Los siervos de Ben-adad se la ciñen, con sogas en la cabeza, para pedir su vida (<a href="1-kings-20.es.html#v20-31">1 Reyes 20:31</a>, <a href="1-kings-20.es.html#v20-32">32</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="ben-hadad-king-of-aram", name="Ben-hadad king of Aram", kind="person", aliases=[], refs=[("1 Kings", 20, 1), ("1 Kings", 20, 20), ("1 Kings", 20, 26), ("1 Kings", 20, 34)], videos=[],
+    desc='King of Aram at Damascus in Ahab&rsquo;s reign, who besieges Samaria with thirty-two kings (<a href="1-kings-20.html#v20-1">1 Kings 20:1</a>, now on these pages), is drinking himself drunk when the young men come out at noon, loses again at Aphek, sends his servants in sackcloth, and is called &lsquo;my brother&rsquo; and sent away with a covenant (20:32&ndash;34). The chapter gives him no father&rsquo;s name. ⚠ Whether he is <a href="encyclopedia.html#ben-hadad-son-of-tabrimmon">Ben-hadad son of Tabrimmon</a> or a later king of that name is argued. The Assyrian account of Qarqar is reported to name the king of Damascus in Ahab&rsquo;s time as Hadadezer, and some identify the two.'))
+ENCYCLOPEDIA_ES["ben-hadad-king-of-aram"] = ("Ben-adad rey de Aram",
+    'Rey de Aram en Damasco en el reinado de Acab, que sitia Samaria con treinta y dos reyes (<a href="1-kings-20.es.html#v20-1">1 Reyes 20:1</a>, ya en estas páginas), está bebiendo hasta emborracharse cuando los jóvenes salen al mediodía, pierde otra vez en Afec, envía a sus siervos vestidos de saco, y es llamado «mi hermano» y enviado con un pacto (20:32–34). El capítulo no da el nombre de su padre. ⚠ Se discute si es <a href="enciclopedia.html#ben-hadad-son-of-tabrimmon">Ben-adad hijo de Tabrimón</a> o un rey posterior del mismo nombre. Se informa que el relato asirio de Qarqar nombra al rey de Damasco del tiempo de Acab como Hadad-ezer, y algunos identifican a los dos.')
+
+ENCYCLOPEDIA.append(dict(slug="aphek-of-aram", name="Aphek (Golan)", kind="place", aliases=["Aphek"], coords=(32.78, 35.70, 3.0), approx=True,
+    modern="usually placed east of the Sea of Galilee; the site is not certain",
+    refs=[("1 Kings", 20, 26), ("1 Kings", 20, 30), ("2 Kings", 13, 17)], videos=[],
+    desc='Where Ben-hadad goes up a second time to fight Israel, on the plain his advisers wanted, and where the wall falls on twenty-seven thousand of his men (<a href="1-kings-20.html#v20-26">1 Kings 20:26</a>, <a href="1-kings-20.html#v20-30">30</a>, now on these pages). Elisha promises King Joash a victory over Aram &lsquo;at Aphek&rsquo; (2 Kings 13:17, not yet on these pages). ⚠ It is usually placed east of the Sea of Galilee, and the site is not certain. It is not the <a href="encyclopedia.html#aphek">Aphek of the Sharon</a>: the name means &lsquo;stronghold&rsquo; and it recurs.'))
+ENCYCLOPEDIA_ES["aphek-of-aram"] = ("Afec (Golán)",
+    'Donde Ben-adad sube por segunda vez a pelear contra Israel, en la llanura que querían sus consejeros, y donde el muro cae sobre veintisiete mil de sus hombres (<a href="1-kings-20.es.html#v20-26">1 Reyes 20:26</a>, <a href="1-kings-20.es.html#v20-30">30</a>, ya en estas páginas). Eliseo promete al rey Joás una victoria sobre Aram «en Afec» (2 Reyes 13:17, todavía no en estas páginas). ⚠ Se suele situar al este del mar de Galilea, y el sitio no es seguro. No es el <a href="enciclopedia.html#aphek">Afec del Sarón</a>: el nombre significa «fortaleza» y se repite.')
+
+for _s, _r in (("aram", ("1 Kings", 20, 1)), ("samaria", ("1 Kings", 20, 1)), ("ahab", ("1 Kings", 20, 2)), ("damascus", ("1 Kings", 20, 34))):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == _s:
+            _e["refs"] = list(_e["refs"]) + [_r]
+
+_F20 = [
+ ("is where Ben-hadad of Aram is defeated (1 Kings 20, not yet on these pages)", 'is where Ben-hadad of Aram is defeated (<a href="1-kings-20.html#v20-26">1 Kings 20</a>, now on these pages)'),
+ ("es donde Ben-adad de Aram es derrotado (1 Reyes 20, todavía no en estas páginas)", 'es donde Ben-adad de Aram es derrotado (<a href="1-kings-20.es.html#v20-26">1 Reyes 20</a>, ya en estas páginas)'),
+ ("the prophet who disguised himself with ashes over his eyes before Ahab (1 Kings 20:38);", 'the prophet who disguised himself with a bandage over his eyes before Ahab (<a href="1-kings-20.html#v20-38">1 Kings 20:38</a>, now on these pages);'),
+ ("el profeta que se disfrazó con ceniza sobre los ojos delante de Acab (1 Reyes 20:38);", 'el profeta que se disfrazó con una venda sobre los ojos delante de Acab (<a href="1-kings-20.es.html#v20-38">1 Reyes 20:38</a>, ya en estas páginas);'),
+ ("(2 Chronicles 35:22), none of these yet on these pages.", "(2 Chronicles 35:22), the last three not yet on these pages."),
+ ("(2 Crónicas 35:22), ninguno de ellos todavía en estas páginas.", "(2 Crónicas 35:22), los tres últimos todavía no en estas páginas."),
+ ("the Ben-hadad of 1 Kings 20 (not yet on these pages) is this king", 'the <a href="encyclopedia.html#ben-hadad-king-of-aram">Ben-hadad of 1 Kings 20</a> (now on these pages) is this king'),
+ ("el Ben-adad de 1 Reyes 20 (todavía no en estas páginas) es este rey", 'el <a href="enciclopedia.html#ben-hadad-king-of-aram">Ben-adad de 1 Reyes 20</a> (ya en estas páginas) es este rey'),
+ ("and Ben-hadad in his booths (1 Kings 20:16, not yet on these pages)", 'and Ben-hadad in his booths (<a href="1-kings-20.html#v20-16">1 Kings 20:16</a>, now on these pages)'),
+ ("y Ben-adad en sus enramadas (1 Reyes 20:16, todavía no en estas páginas)", 'y Ben-adad en sus cabañas (<a href="1-kings-20.es.html#v20-16">1 Reyes 20:16</a>, ya en estas páginas)'),
+]
+_seen20 = set()
+def _f20(_t):
+    for _a, _b in _F20:
+        if _a in _t:
+            _seen20.add(_a)
+            _t = _t.replace(_a, _b)
+    return _t
+for _i, _d in enumerate(DICTIONARY):
+    DICTIONARY[_i] = tuple(_d[:4]) + (_f20(_d[4]),) + tuple(_d[5:])
+for _e in ENCYCLOPEDIA:
+    _e["desc"] = _f20(_e["desc"])
+for _k, _v in list(DICTIONARY_ES.items()):
+    DICTIONARY_ES[_k] = (_v[0], _f20(_v[1]))
+for _k, _v in list(ENCYCLOPEDIA_ES.items()):
+    ENCYCLOPEDIA_ES[_k] = (_v[0], _f20(_v[1]))
+assert len(_seen20) == len(_F20), [_a[:50] for _a, _b in _F20 if _a not in _seen20]
+
+_ency9k_en("ahab", ' &#11088; <a href="1-kings-20.html#v20-1">1 Kings 20</a> (now on these pages): besieged in Samaria, he says &lsquo;yours I am&rsquo; to Ben-hadad, then &lsquo;Let not the one who girds on boast&rsquo;. He wins twice on the word of unnamed prophets, calls Ben-hadad &lsquo;my brother&rsquo;, cuts a covenant, and is told his soul will stand in place of the other man&rsquo;s.')
+_ency9k_es("ahab", ' &#11088; <a href="1-kings-20.es.html#v20-1">1 Reyes 20</a> (ya en estas páginas): sitiado en Samaria, dice «tuyo soy» a Ben-adad, y luego «No se jacte el que se ciñe». Gana dos veces por la palabra de profetas sin nombre, llama a Ben-adad «mi hermano», corta un pacto, y oye que su alma será en lugar de la del otro.')
+_ency9k_en("samaria", ' &#11088; <a href="1-kings-20.html#v20-1">1 Kings 20</a> (now on these pages): besieged by Ben-hadad, who swears its dust will not fill his men&rsquo;s hands.')
+_ency9k_es("samaria", ' &#11088; <a href="1-reyes-20.es.html#v20-1">1 Reyes 20</a> (ya en estas páginas): sitiada por Ben-adad, que jura que su polvo no llenará las manos de sus hombres.'.replace("1-reyes-20", "1-kings-20"))
+_ency9k_en("damascus", ' &#11088; <a href="1-kings-20.html#v20-34">1 Kings 20:34</a> (now on these pages): Ben-hadad offers Ahab streets in it.')
+_ency9k_es("damascus", ' &#11088; <a href="1-kings-20.es.html#v20-34">1 Reyes 20:34</a> (ya en estas páginas): Ben-adad ofrece a Acab calles en ella.')
+_dict9k_en("paqad", ' &#11088; <a href="1-kings-20.html#v20-15">1 Kings 20:15</a>, <a href="1-kings-20.html#v20-26">26</a>, <a href="1-kings-20.html#v20-27">27</a>, <a href="1-kings-20.html#v20-39">39</a> (now on these pages): the verb that musters both armies, and, in the passive, &lsquo;if he goes missing&rsquo;.')
+_dict9k_es("paqad", ' &#11088; <a href="1-kings-20.es.html#v20-15">1 Reyes 20:15</a>, <a href="1-kings-20.es.html#v20-26">26</a>, <a href="1-kings-20.es.html#v20-27">27</a>, <a href="1-kings-20.es.html#v20-39">39</a> (ya en estas páginas): el verbo que pasa revista a los dos ejércitos, y, en pasiva, «si llega a faltar».')
+_dict9k_en("kilkel", ' &#11088; <a href="1-kings-20.html#v20-27">1 Kings 20:27</a> (now on these pages): Israel&rsquo;s army, &lsquo;mustered and sustained&rsquo;.')
+_dict9k_es("kilkel", ' &#11088; <a href="1-kings-20.es.html#v20-27">1 Reyes 20:27</a> (ya en estas páginas): el ejército de Israel, «pasaron revista y fueron sustentados».')
+_dict9k_en("chesed", ' ⭐ &lsquo;Kings of kindness&rsquo;, <em>malkhei chesed</em>, what Ben-hadad&rsquo;s servants say of Israel&rsquo;s kings (<a href="1-kings-20.html#v20-31">1 Kings 20:31</a>, now on these pages).')
+_dict9k_es("chesed", ' ⭐ «Reyes de bondad», <em>malkhei jésed</em>, lo que los siervos de Ben-adad dicen de los reyes de Israel (<a href="1-kings-20.es.html#v20-31">1 Reyes 20:31</a>, ya en estas páginas).')
+_dict9k_en("charats", ' &#11088; &lsquo;You yourself have decided it&rsquo;, Ahab to the disguised prophet (<a href="1-kings-20.html#v20-40">1 Kings 20:40</a>, now on these pages).')
+_dict9k_es("charats", ' &#11088; «Tú mismo lo has decidido», Acab al profeta disfrazado (<a href="1-kings-20.es.html#v20-40">1 Reyes 20:40</a>, ya en estas páginas).')
+_dict9k_en("cherem", ' &#11088; <em>Ish chermi</em>, &lsquo;the man I devoted to destruction&rsquo;, said of Ben-hadad after Ahab has let him go (<a href="1-kings-20.html#v20-42">1 Kings 20:42</a>, now on these pages).')
+_dict9k_es("cherem", ' &#11088; <em>Ish jermí</em>, «el hombre que consagré a la destrucción», dicho de Ben-adad después de que Acab lo dejó ir (<a href="1-kings-20.es.html#v20-42">1 Reyes 20:42</a>, ya en estas páginas).')
+_dict9k_en("nefesh", ' &#11088; <a href="1-kings-20.html#v20-39">1 Kings 20:39</a>, <a href="1-kings-20.html#v20-42">42</a> (now on these pages): &lsquo;your soul in place of his soul&rsquo;, in the prophet&rsquo;s tale and in Jehovah&rsquo;s sentence.')
+_dict9k_es("nefesh", ' &#11088; <a href="1-kings-20.es.html#v20-39">1 Reyes 20:39</a>, <a href="1-kings-20.es.html#v20-42">42</a> (ya en estas páginas): «tu alma en lugar de su alma», en el relato del profeta y en la sentencia de Jehová.')
+_dict9k_en("pechah", ' &#11088; The word is much older than Persia in Kings: &lsquo;the governors of the land&rsquo; (<a href="1-kings-10.html#v10-15">1 Kings 10:15</a>), and the governors who replace Ben-hadad&rsquo;s kings (<a href="1-kings-20.html#v20-24">1 Kings 20:24</a>, both now on these pages).')
+_dict9k_en("hamon", ' &#11088; &lsquo;All this great multitude&rsquo; is the army of Aram, twice (<a href="1-kings-20.html#v20-13">1 Kings 20:13</a>, <a href="1-kings-20.html#v20-28">28</a>, now on these pages).')
+_dict9k_en("saq", ' &#11088; Ben-hadad&rsquo;s servants gird it on, with ropes on their heads, to ask for his life (<a href="1-kings-20.html#v20-31">1 Kings 20:31</a>, <a href="1-kings-20.html#v20-32">32</a>, now on these pages).')
+
+CHRON_CHAPTERS["1kgs20"] = dict(era="monarchy",
+    when="Ben-hadad of Aram besieges Samaria with thirty-two kings. An unnamed prophet promises Ahab the victory, and the young men of the princes of the provinces go out at noon. At the return of the year Aram comes again to Aphek and loses again. Ahab calls Ben-hadad his brother and cuts a covenant, and a prophet in a bandage tells him what that will cost.",
+    clock="Two campaigns a year apart, joined by &lsquo;at the return of the year&rsquo;. 1 Kings 22:1 will count three years without war after them (not yet on these pages). The Assyrian account puts Ahab at Qarqar in 853 BC, as reported.")
+
+CHAPTER_ART["1kgs20"] = [dict(
+    file="tissot-hoffbauer-kings-drinking-in-the-tent.jpg",
+    title="The Kings Drink under the Tent", title_es="Los reyes beben bajo la tienda",
+    artist="James Tissot, painted by Charles Hoffbauer", artist_es="James Tissot, pintado por Charles Hoffbauer",
+    year="1904",
+    location="La Sainte Bible, Paris: M. de Brunoff, 1904; photograph by Phillip Medhurst", location_es="La Sainte Bible, París: M. de Brunoff, 1904; fotografía de Phillip Medhurst",
+    alt="A wide colour plate. Under a dark awning slung between trees, bearded men in bright patterned robes and white caps sit around a small table with two tall jars and a cup. The man at the centre, in red, leans on a staff and points with his raised hand. Beside him a man in yellow tips back a jar and drinks. On the left two soldiers stand with their backs to the viewer, and a figure crouches on the ground by the tent.",
+    alt_es="Una lámina ancha en color. Bajo un toldo oscuro tendido entre árboles, hombres barbados con túnicas de colores estampadas y gorros blancos se sientan alrededor de una mesita con dos jarras altas y una copa. El hombre del centro, de rojo, se apoya en un bastón y señala con la mano levantada. A su lado un hombre de amarillo inclina una jarra y bebe. A la izquierda dos soldados están de pie de espaldas, y una figura se agacha en el suelo junto a la tienda.",
+    note="1 Kings 20:12, 16. Tissot sketched it before his death in 1902, and Hoffbauer painted it for the 1904 Bible, whose caption is &lsquo;The five kings drink under the tent&rsquo;. The verse has thirty-two. The Hebrew says &lsquo;booths&rsquo;, and the plate has a cloth awning. The pointing man may be giving the order of verse 12, one word long.",
+    note_es="1 Reyes 20:12, 16. Tissot lo esbozó antes de morir en 1902, y Hoffbauer lo pintó para la Biblia de 1904, cuyo título es «Los cinco reyes beben bajo la tienda». El versículo dice treinta y dos. El hebreo dice «cabañas», y la lámina tiene un toldo de tela. El hombre que señala quizá da la orden del versículo 12, de una sola palabra.",
+    license="CC BY-SA 4.0",
+    source_url="https://commons.wikimedia.org/wiki/File:Les_cinq_rois_bouvent_sous_la_tente_(1_Kings_20_12)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_Charles_Hoffbauer_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+)]
+
 # Spanish twins for the Revelation 1-2 backfill (2026-11-05).
 DICTIONARY_ES["pantokrator"] = ("pantokratōr", "«El Todopoderoso», literalmente «el que lo sostiene todo» &mdash;la traducción griega de El Shaddai y de «Jehová de los ejércitos». La palabra que las Biblias antiguas aplicaron a Shaddai (Génesis 17:1) es NATIVA en <a href=\"revelation-1.es.html#v8\">Apocalipsis 1:8</a>: el Apocalipsis la usa nueve veces, el resto del Nuevo Testamento una.")
 DICTIONARY_ES["ho-on"] = ("ho ōn", "«El que es» &mdash;la traducción griega de la explicación del nombre divino en la zarza (<a href=\"exodus-3.es.html#v3-14\">Éxodo 3:14</a>). El Apocalipsis lo despliega en tres tiempos («el que es, y que era, y que viene») y se niega a declinarlo: la ruptura gramatical deliberada de <a href=\"revelation-1.es.html#v4\">1:4</a>.")
