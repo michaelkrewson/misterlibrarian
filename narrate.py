@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Record the narration of Mister Translation chapters, once, with Cloudflare's voice (MeloTTS), and keep it in R2.
+"""Record the narration of Mister Translation chapters, once, with Grok's voice, and keep it in R2.
 
 How it works (AR-156): for each chapter page this reads the verses, sends them in pieces of about 1,000 characters to Micwyn's
-narrate endpoint (which speaks them with MeloTTS and answers with WAV), joins and compresses the pieces to a small MP3 with ffmpeg,
+narrate endpoint (which speaks them with Grok and answers with MP3), joins and compresses the pieces to one small MP3 with ffmpeg,
 uploads the MP3 (kept at https://micwyn.com/narration/<lang>/<slug>.mp3) and notes the chapter in audio/narrated.json. build.py reads
 that file: a chapter with a recording gets a Listen button that plays it; a chapter without one has no Listen button.
+Chapters recorded before 2026-11-06 are in the old MeloTTS voice (Cloudflare retires it on 11-20); Michael said to leave them, not redo them.
 
     python3 narrate.py --only genesis-1             # one chapter (English)
     python3 narrate.py --limit 20                   # the next 20 chapters that have no recording
-    python3 narrate.py                              # every chapter that has none (about 640 English chapters, under a dollar)
+    python3 narrate.py                              # every chapter that has none (about $0.06 a chapter)
     python3 narrate.py --lang es                    # the Spanish editions (the *.es.html pages)
     python3 narrate.py --only genesis-1 --force     # record it again
     python3 narrate.py --dry-run                    # say what would be recorded
@@ -130,15 +131,29 @@ def silence(td, seconds, name):
     return p
 
 
+def to_wav(td, i, audio):
+    """One spoken piece as a WAV in the same shape as the silences, so the pieces join cleanly whatever the voice answered with."""
+    if audio[:4] == b"RIFF":
+        ext = "wav"
+    elif audio[:3] == b"ID3" or (len(audio) > 1 and audio[0] == 0xFF and audio[1] & 0xE0 == 0xE0):
+        ext = "mp3"
+    else:
+        raise RuntimeError("the voice didn't answer with audio")
+    src, out = os.path.join(td, f"raw{i:03d}.{ext}"), os.path.join(td, f"{i:03d}.wav")
+    open(src, "wb").write(audio)
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-ac", "1", "-ar", "44100", "-c:a", "pcm_s16le", out], capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError("ffmpeg: " + r.stderr[:200])
+    return out
+
+
 def record(slug, head, verses, lang, k, speed=SPEED):
     with tempfile.TemporaryDirectory() as td:
         wavs = []
         for i, text in enumerate(pieces(head, verses)):
             body = json.dumps({"lang": lang, "text": text}).encode()
-            wav = call(urllib.request.Request(API, data=body, method="POST", headers={"Authorization": "Bearer " + k, "Content-Type": "application/json", "User-Agent": UA}))
-            if wav[:4] != b"RIFF":
-                raise RuntimeError("the voice didn't answer with audio")
-            p = os.path.join(td, f"{i:03d}.wav"); open(p, "wb").write(wav); wavs.append(p)
+            audio = call(urllib.request.Request(API, data=body, method="POST", headers={"Authorization": "Bearer " + k, "Content-Type": "application/json", "User-Agent": UA}))
+            wavs.append(to_wav(td, i, audio))
         lst = os.path.join(td, "list.txt")
         long_gap, short_gap = silence(td, PAUSE_HEAD, "gap_head.wav"), silence(td, PAUSE_PIECE, "gap_piece.wav")
         rows = []
