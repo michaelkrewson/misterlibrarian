@@ -11070,7 +11070,7 @@ XREFS = [
     ((30, 3),  (16, 2),  "'that I may be BUILT UP through her' — ibbaneh, the ben/banah pun; Rachel gives Bilhah to Jacob in the exact words and gesture with which Sarai gave Hagar to Abram (16:2): the barren matriarch building a house through a maidservant"),
     ((30, 22), (8, 1),   "'God REMEMBERED Rachel' — zakhar, the verb that turns a story: as 'God remembered Noah' and the flood began to recede (8:1), so God remembers Rachel and opens her womb"),
     ((30, 22), (29, 31), "God opens Rachel's womb — the mercy that had opened Leah's (29:31); both sisters' children come as God's gift, not by the mandrakes or the striving of this chapter"),
-    ((30, 27), (12, 3),  "'Jehovah has blessed me FOR YOUR SAKE' — Laban, a pagan, blessed on Jacob's account: the Abrahamic promise that 'in you all the families of the earth will be blessed' (12:3) at work, as it later will be through Joseph in Egypt"),
+    ((30, 27), (12, 3),  "'Jehovah has blessed me FOR YOUR SAKE' — Laban, a pagan, blessed on Jacob's account: the Abrahamic promise that 'through you all the families of the ground will be blessed' (12:3) at work, as it later will be through Joseph in Egypt"),
     ((30, 43), (17, 2),  "'the man increased EXCEEDINGLY' — me'od me'od, the 'very, very' of the multiply-blessing spoken over Abraham (17:2), now filling Jacob's flocks and household in Laban's own land"),
 
     # ---- Genesis 31 ----
@@ -11142,7 +11142,7 @@ XREFS = [
     # ---- Genesis 39 ----
     ((39, 6),  (29, 17), "yefeh to'ar vifeh mar'eh — 'beautiful in form and lovely to look at,' word for word the Hebrew used of RACHEL, and of no one else in the Bible. Joseph has his mother's face, and the narrator mentions it one verse before his master's wife looks at him"),
     ((39, 12), (37, 23), "the second garment. His brothers stripped his ornamented tunic and used it to tell his father a lie; a second garment is taken off him, kept back deliberately, and used to tell his master another. Twice stripped, twice the cloth speaks against him, and both times he says nothing"),
-    ((39, 5),  (12, 3),  "'in you all the families of the earth will be blessed' — the promise operating in miniature and out of sight: an Egyptian slave-owner's whole estate is blessed 'for Joseph's sake,' and he never learns why"),
+    ((39, 5),  (12, 3),  "'through you all the families of the ground will be blessed' — the promise operating in miniature and out of sight: an Egyptian slave-owner's whole estate is blessed 'for Joseph's sake,' and he never learns why"),
     ((39, 14), (14, 13), "ivri, 'Hebrew' — the outsider-word, first used of Abram and now spat by an Egyptian woman rallying the household staff: 'he has brought US in a HEBREW man'"),
     ((39, 14), (21, 9),  "letsacheq, 'to laugh at' — the laughter-root that named ISAAC, turned cruel once already when Sarah saw Ishmael metsacheq and demanded he be cast out, and now weaponised against Rachel's son by a stranger"),
     ((39, 9),  (20, 6),  "'sin against God' — Joseph names the wrong as God's before it is Potiphar's; at Gerar it was God who said 'I kept you from sinning against me,' to a pagan king in a dream about another man's wife"),
