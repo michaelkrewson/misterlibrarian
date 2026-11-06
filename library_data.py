@@ -56277,6 +56277,131 @@ CHAPTER_ART["1kgs17"] = [dict(
     source_url="https://commons.wikimedia.org/wiki/File:Ford_Madox_Brown_-_Elijah_and_the_Widow%27s_Son_-_Google_Art_Project.jpg",
 )]
 
+# --- 1 Kings 18 ---
+DICTIONARY.append(("seippim", "se&rsquo;ippim", "סְעִפִּים", "se'ippim",
+    'A word of uncertain sense, in Elijah&rsquo;s question on Carmel: &lsquo;How long will you go limping on the two opinions?&rsquo; (<a href="1-kings-18.html#v18-21">1 Kings 18:21</a>, now on these pages). <span data-heb="סעפים">The letters stand in two verses of the Hebrew Bible</span>, the other being &lsquo;those who are of two minds&rsquo; (<a href="psalms-119.html#v119-113">Psalm 119:113</a>, now on these pages). Related words are boughs (Ezekiel 31:6) and clefts in rock (Isaiah 2:21), neither yet on these pages, so the picture may be a fork. The KJV and the NIV have &lsquo;opinions&rsquo;, the ASV and the Douay &lsquo;sides&rsquo;, and the Greek Bible in the Vaticanus tradition &lsquo;hams&rsquo;. &lsquo;Opinions&rsquo; is a guess, and this page says so.',
+    ("1 Kings", 18, 21)))
+DICTIONARY_ES["seippim"] = ("se&rsquo;ippim",
+    'Palabra de sentido incierto, en la pregunta de Elías en el Carmelo: «¿Hasta cuándo irán cojeando sobre las dos opiniones?» (<a href="1-kings-18.es.html#v18-21">1 Reyes 18:21</a>, ya en estas páginas). <span data-heb="סעפים">Las letras están en dos versículos de la Biblia hebrea</span>, el otro es «los de ánimo dividido» (<a href="psalms-119.es.html#v119-113">Salmo 119:113</a>, ya en estas páginas). Palabras afines son las ramas (Ezequiel 31:6) y las hendiduras de la roca (Isaías 2:21), ninguno todavía en estas páginas, de modo que la imagen puede ser una horquilla. La RV60 dice «pensamientos», la TNM 1987 «opiniones», y la Biblia griega de la tradición del Vaticano «jarretes». «Opiniones» es una conjetura, y esta página lo dice.')
+
+DICTIONARY.append(("hatal", "hatal", "הָתַל", "hatal",
+    'TO MOCK, to make a fool of. It is Delilah&rsquo;s complaint, &lsquo;you have mocked me&rsquo; (<a href="judges-16.html#v16-10">Judges 16:10</a>, now on these pages), and what Elijah does to the prophets of Baal at noon (<a href="1-kings-18.html#v18-27">1 Kings 18:27</a>, now on these pages). <span data-heb="ויהתל">The form <em>vayehattel</em> stands in one verse of the Hebrew Bible</span>.',
+    ("1 Kings", 18, 27)))
+DICTIONARY_ES["hatal"] = ("hatal",
+    'BURLARSE, dejar en ridículo. Es la queja de Dalila, «te has burlado de mí» (<a href="judges-16.es.html#v16-10">Jueces 16:10</a>, ya en estas páginas), y lo que Elías hace con los profetas de Baal al mediodía (<a href="1-kings-18.es.html#v18-27">1 Reyes 18:27</a>, ya en estas páginas). <span data-heb="ויהתל">La forma <em>vayehattel</em> está en un versículo de la Biblia hebrea</span>.')
+
+DICTIONARY.append(("sig", "siach / sig", "שִׂיחַ / שִׂיג", "siach, sig",
+    'The two nouns of Elijah&rsquo;s taunt, &lsquo;he is deep in thought, or he has stepped aside&rsquo; (<a href="1-kings-18.html#v18-27">1 Kings 18:27</a>, now on these pages). <em>Siach</em> is usually musing or complaint, and <em>sig</em> looks like the root for moving away. ⚠ Gary Rendsburg argues that the pair means the god is busy excreting, and reports that the Targum and Rashi take &lsquo;stepped aside&rsquo; that way (<em>Catholic Biblical Quarterly</em> 50, 1988). The NWT 1984 has &lsquo;he has excrement and has to go to the privy&rsquo; and the TLB &lsquo;out sitting on the toilet&rsquo;. The KJV has &lsquo;pursuing&rsquo;, and the NIV &lsquo;busy&rsquo;.',
+    ("1 Kings", 18, 27)))
+DICTIONARY_ES["sig"] = ("siach / sig",
+    'Los dos sustantivos de la burla de Elías, «está absorto en sus pensamientos, o se ha apartado» (<a href="1-kings-18.es.html#v18-27">1 Reyes 18:27</a>, ya en estas páginas). <em>Siach</em> suele ser meditación o queja, y <em>sig</em> parece la raíz de apartarse. ⚠ Gary Rendsburg sostiene que el par significa que el dios está ocupado defecando, e informa que el Targum y Rashi entienden así «se ha apartado» (<em>Catholic Biblical Quarterly</em> 50, 1988). La TNM 1987 dice «tiene excremento y tiene que ir al excusado», y la TNM 2019 «se fue a hacer sus necesidades». La RV60 dice «tiene algún trabajo», y la NVI «esté ocupado».')
+
+DICTIONARY.append(("gahar", "gahar", "גָּהַר", "gahar",
+    'TO CROUCH, to bend down over. <span data-heb="ויגהר">The word stands in three verses of the Hebrew Bible</span>: Elijah on the top of Carmel with his face between his knees (<a href="1-kings-18.html#v18-42">1 Kings 18:42</a>, now on these pages), and Elisha twice over the Shunammite&rsquo;s son (2 Kings 4:34&ndash;35, not yet on these pages).',
+    ("1 Kings", 18, 42)))
+DICTIONARY_ES["gahar"] = ("gahar",
+    'AGACHARSE, inclinarse sobre. <span data-heb="ויגהר">La palabra está en tres versículos de la Biblia hebrea</span>: Elías en la cumbre del Carmelo con el rostro entre las rodillas (<a href="1-kings-18.es.html#v18-42">1 Reyes 18:42</a>, ya en estas páginas), y Eliseo dos veces sobre el hijo de la sunamita (2 Reyes 4:34–35, todavía no en estas páginas).')
+
+DICTIONARY.append(("shinnes", "shinnes", "שִׁנֵּס", "shinnes",
+    'TO BIND UP, of the loins. <span data-heb="וישנס">The word stands in one verse of the Hebrew Bible</span>, when the hand of Jehovah is on Elijah and he runs before Ahab&rsquo;s chariot (<a href="1-kings-18.html#v18-46">1 Kings 18:46</a>, now on these pages). It is not the usual verb for girding, the one of <a href="exodus-12.html#v12-11">Exodus 12:11</a> (now on these pages). The ASV and the KJV have &lsquo;girded up his loins&rsquo;, and the NIV &lsquo;tucking his cloak into his belt&rsquo;.',
+    ("1 Kings", 18, 46)))
+DICTIONARY_ES["shinnes"] = ("shinnes",
+    'SUJETAR, los lomos. <span data-heb="וישנס">La palabra está en un versículo de la Biblia hebrea</span>, cuando la mano de Jehová está sobre Elías y corre delante del carro de Acab (<a href="1-kings-18.es.html#v18-46">1 Reyes 18:46</a>, ya en estas páginas). No es el verbo habitual de ceñirse, el de <a href="exodus-12.es.html#v12-11">Éxodo 12:11</a> (ya en estas páginas). La RV60 dice «ciñó sus lomos», y la NVI «se ajustó el manto con el cinturón».')
+
+ENCYCLOPEDIA.append(dict(slug="obadiah-steward", name="Obadiah, Ahab&rsquo;s steward", kind="person", aliases=["Obadiah"], refs=[("1 Kings", 18, 3), ("1 Kings", 18, 7), ("1 Kings", 18, 16)], videos=[],
+    desc='The man &lsquo;over the household&rsquo; in Ahab&rsquo;s palace, who &lsquo;feared Jehovah greatly&rsquo; and, when Jezebel cut off the prophets of Jehovah, hid a hundred of them, fifty men in a cave, and sustained them with bread and water (<a href="1-kings-18.html#v18-3">1 Kings 18:3&ndash;4</a>, now on these pages). He searches the land for grass, meets Elijah on the road, falls on his face and is told to say &lsquo;Look &mdash; Elijah&rsquo;, which he is sure will kill him (<a href="1-kings-18.html#v18-7">18:7&ndash;16</a>). His name means &lsquo;servant of Jehovah&rsquo;. ⚠ Nothing in the text connects him with the prophet of the book of <a href="encyclopedia.html#obadiah">Obadiah</a>. Later rabbinic tradition is reported to make them one man.'))
+ENCYCLOPEDIA_ES["obadiah-steward"] = ("Abdías, mayordomo de Acab",
+    'El hombre que estaba «sobre la casa» en el palacio de Acab, que «temía mucho a Jehová» y, cuando Jezabel exterminó a los profetas de Jehová, escondió a cien de ellos, cincuenta hombres en una cueva, y los sustentó con pan y agua (<a href="1-kings-18.es.html#v18-3">1 Reyes 18:3–4</a>, ya en estas páginas). Busca hierba por la tierra, se encuentra con Elías en el camino, cae sobre su rostro y recibe la orden de decir «Mira, Elías», que está seguro de que lo matará (<a href="1-kings-18.es.html#v18-7">18:7–16</a>). Su nombre significa «siervo de Jehová». ⚠ Nada en el texto lo une con el profeta del libro de <a href="enciclopedia.html#obadiah">Abdías</a>. Se informa que la tradición rabínica posterior hace de los dos un solo hombre.')
+
+for _s, _r in (("elijah", ("1 Kings", 18, 1)), ("ahab", ("1 Kings", 18, 1)), ("samaria", ("1 Kings", 18, 2)), ("jezebel", ("1 Kings", 18, 4)), ("carmel", ("1 Kings", 18, 19)), ("baal", ("1 Kings", 18, 19)), ("kishon", ("1 Kings", 18, 40)), ("jezreel", ("1 Kings", 18, 45))):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == _s:
+            _e["refs"] = list(_e["refs"]) + [_r]
+
+_F18 = [
+ ("(1 Kings 18:21, 26 — the prophets 'limping' at their altar)", '(<a href="1-kings-18.html#v18-21">1 Kings 18:21</a>, <a href="1-kings-18.html#v18-26">26</a>, now on these pages — the prophets \'limping\' at their altar)'),
+ ("(1 Reyes 18:21, 26 —los profetas «cojeando» junto a su altar)", '(<a href="1-kings-18.es.html#v18-21">1 Reyes 18:21</a>, <a href="1-kings-18.es.html#v18-26">26</a>, ya en estas páginas —los profetas «cojeando» junto a su altar)'),
+ ("1 Kings 18:31 (not yet on these pages)", '<a href="1-kings-18.html#v18-31">1 Kings 18:31</a> (now on these pages)'),
+ ("1 Reyes 18:31 (todavía no en estas páginas)", '<a href="1-kings-18.es.html#v18-31">1 Reyes 18:31</a> (ya en estas páginas)'),
+ ("<em>is it you, you troubler of Israel?</em>, and the answer, <em>I have not troubled Israel, but you</em> (1 Kings 18:17&ndash;18)", '<em>Is this you, troubler of Israel?</em>, and the answer, <em>I have not troubled Israel, but you</em> (<a href="1-kings-18.html#v18-17">1 Kings 18:17&ndash;18</a>, now on these pages)'),
+ ("(1 Reyes 18:17&ndash;18)", '(<a href="1-kings-18.es.html#v18-17">1 Reyes 18:17&ndash;18</a>, ya en estas páginas)'),
+ ("the Spirit of Jehovah carries a person away, 1 Kings 18:12 and 2 Kings 2:16 (not yet on these pages)", 'the spirit of Jehovah carries a person away, <a href="1-kings-18.html#v18-12">1 Kings 18:12</a> (now on these pages) and 2 Kings 2:16 (not yet on these pages)'),
+ ("el Espíritu de Jehová lleva a una persona, 1 Reyes 18:12 y 2 Reyes 2:16 (todavía no en estas páginas)", 'el espíritu de Jehová lleva a una persona, <a href="1-kings-18.es.html#v18-12">1 Reyes 18:12</a> (ya en estas páginas) y 2 Reyes 2:16 (todavía no en estas páginas)'),
+ ("(1 Kings 18:23, 33, not yet on these pages)", '(<a href="1-kings-18.html#v18-23">1 Kings 18:23</a>, <a href="1-kings-18.html#v18-33">33</a>, now on these pages)'),
+ ("(1 Reyes 18:23, 33, todavía no en estas páginas)", '(<a href="1-kings-18.es.html#v18-23">1 Reyes 18:23</a>, <a href="1-kings-18.es.html#v18-33">33</a>, ya en estas páginas)'),
+ ("&lsquo;how long will you limp between two opinions?&rsquo; (1 Kings 18:21, not yet on these pages)", '&lsquo;How long will you go limping on the two opinions?&rsquo; (<a href="1-kings-18.html#v18-21">1 Kings 18:21</a>, now on these pages)'),
+ ("«¿hasta cuándo van a cojear entre dos pensamientos?» de Elías (1 Reyes 18:21, todavía no en estas páginas)", '«¿Hasta cuándo irán cojeando sobre las dos opiniones?» de Elías (<a href="1-kings-18.es.html#v18-21">1 Reyes 18:21</a>, ya en estas páginas)'),
+ ("1 Kings 18 not yet on these pages", '<a href="1-kings-18.html">1 Kings 18</a>, now on these pages'),
+ ("1 Reyes 18 todavía no en estas páginas", '<a href="1-kings-18.es.html">1 Reyes 18</a>, ya en estas páginas'),
+ ("seven times (1 Kings 18).", 'seven times (<a href="1-kings-18.html#v18-42">1 Kings 18:42&ndash;43</a>, now on these pages).'),
+ ("iba siete veces a mirar el mar (1 Reyes 18).", 'iba siete veces a mirar el mar (<a href="1-kings-18.es.html#v18-42">1 Reyes 18:42–43</a>, ya en estas páginas).'),
+ ("in two caves (1 Kings 18:3-4)", 'by fifty in a cave (<a href="1-kings-18.html#v18-3">1 Kings 18:3&ndash;4</a>, now on these pages)'),
+ ("(1 Kings 18:4; 19:2; 21; 2 Kings 9:30&ndash;37, not yet on these pages)", '(<a href="1-kings-18.html#v18-4">1 Kings 18:4</a>, now on these pages; 1 Kings 19:2; 21; 2 Kings 9:30&ndash;37, not yet on these pages)'),
+ ("(1 Reyes 18:4; 19:2; 21; 2 Reyes 9:30–37, todavía no en estas páginas)", '(<a href="1-kings-18.es.html#v18-4">1 Reyes 18:4</a>, ya en estas páginas; 1 Reyes 19:2; 21; 2 Reyes 9:30–37, todavía no en estas páginas)'),
+ ("¿eres tú, el que turba a Israel?", "¿Eres tú, el que turba a Israel?"),
+]
+def _f18(_t):
+    for _a, _b in _F18:
+        _t = _t.replace(_a, _b)
+    return _t
+for _i, _d in enumerate(DICTIONARY):
+    DICTIONARY[_i] = tuple(_d[:4]) + (_f18(_d[4]),) + tuple(_d[5:])
+for _e in ENCYCLOPEDIA:
+    _e["desc"] = _f18(_e["desc"])
+for _k, _v in list(DICTIONARY_ES.items()):
+    DICTIONARY_ES[_k] = (_v[0], _f18(_v[1]))
+for _k, _v in list(ENCYCLOPEDIA_ES.items()):
+    ENCYCLOPEDIA_ES[_k] = (_v[0], _f18(_v[1]))
+
+_ency9k_en("elijah", ' &#11088; <a href="1-kings-18.html#v18-1">1 Kings 18</a> (now on these pages): he shows himself to Ahab in the third year, asks Israel how long it will go limping, mocks the prophets of Baal, heals the altar of Jehovah on Carmel, sees the fire fall, slaughters the prophets at the Kishon, crouches for the rain, and runs before Ahab&rsquo;s chariot to Jezreel. ⚠ Thomas M&uuml;ntzer cited the killing at the Kishon in 1524 as a warrant against religious opponents, a misuse the note on <a href="1-kings-18.html#v18-40">verse 40</a> treats directly.')
+_ency9k_es("elijah", ' &#11088; <a href="1-kings-18.es.html#v18-1">1 Reyes 18</a> (ya en estas páginas): se muestra a Acab en el año tercero, pregunta a Israel hasta cuándo irá cojeando, se burla de los profetas de Baal, sana el altar de Jehová en el Carmelo, ve caer el fuego, degüella a los profetas en el Quisón, se agacha esperando la lluvia y corre delante del carro de Acab hasta Jezreel. ⚠ Thomas Müntzer citó en 1524 la matanza del Quisón como autorización contra adversarios religiosos, un mal uso que la nota al <a href="1-kings-18.es.html#v18-40">versículo 40</a> trata directamente.')
+_ency9k_en("ahab", ' &#11088; <a href="1-kings-18.html#v18-17">1 Kings 18</a> (now on these pages): he looks for grass in person, calls Elijah &lsquo;troubler of Israel&rsquo;, gathers Israel at Carmel, and rides to Jezreel with the prophet running ahead of him.')
+_ency9k_es("ahab", ' &#11088; <a href="1-kings-18.es.html#v18-17">1 Reyes 18</a> (ya en estas páginas): busca hierba en persona, llama a Elías «el que turba a Israel», reúne a Israel en el Carmelo, y va a Jezreel en su carro con el profeta corriendo delante.')
+_ency9k_en("jezebel", ' &#11088; <a href="1-kings-18.html#v18-4">1 Kings 18:4</a>, <a href="1-kings-18.html#v18-13">13</a>, <a href="1-kings-18.html#v18-19">19</a> (now on these pages): she cuts off the prophets of Jehovah, and four hundred and fifty prophets of Baal and four hundred of the Asherah eat at her table.')
+_ency9k_es("jezebel", ' &#11088; <a href="1-kings-18.es.html#v18-4">1 Reyes 18:4</a>, <a href="1-kings-18.es.html#v18-13">13</a>, <a href="1-kings-18.es.html#v18-19">19</a> (ya en estas páginas): extermina a los profetas de Jehová, y cuatrocientos cincuenta profetas de Baal y cuatrocientos de la Aserá comen a su mesa.')
+_ency9k_en("kishon", ' &#11088; <a href="1-kings-18.html#v18-40">1 Kings 18:40</a> (now on these pages): Elijah brings the prophets of Baal down to it and slaughters them there.')
+_ency9k_es("kishon", ' &#11088; <a href="1-kings-18.es.html#v18-40">1 Reyes 18:40</a> (ya en estas páginas): Elías baja allí a los profetas de Baal y los degüella.')
+_ency9k_en("carmel", ' &#11088; Tacitus says of Carmel, in Fyfe&rsquo;s translation, &lsquo;There is no image or temple: only an altar where they reverently worship&rsquo; (<em>Histories</em> 2.78).')
+_ency9k_es("carmel", ' &#11088; Tácito dice del Carmelo, en la traducción inglesa de Fyfe: &lsquo;There is no image or temple: only an altar where they reverently worship&rsquo; (<em>Historias</em> 2.78).')
+_ency9k_en("jezreel", ' &#11088; <a href="1-kings-18.html#v18-45">1 Kings 18:45&ndash;46</a> (now on these pages): Ahab rides there in the rain, with Elijah running ahead of him.')
+_ency9k_es("jezreel", ' &#11088; <a href="1-kings-18.es.html#v18-45">1 Reyes 18:45–46</a> (ya en estas páginas): Acab va allí bajo la lluvia, con Elías corriendo delante.')
+_ency9k_en("samaria", ' &#11088; <a href="1-kings-18.html#v18-2">1 Kings 18:2</a> (now on these pages): the famine is severe there in the third year of the drought.')
+_ency9k_es("samaria", ' &#11088; <a href="1-kings-18.es.html#v18-2">1 Reyes 18:2</a> (ya en estas páginas): el hambre es fuerte allí en el año tercero de la sequía.')
+_ency9k_en("baal", ' &#11088; <a href="1-kings-18.html#v18-19">1 Kings 18</a> (now on these pages): four hundred and fifty prophets call on him from morning until the grain offering, limping around their altar, and there is no voice. Elijah&rsquo;s taunt that he is &lsquo;asleep&rsquo; may have had a target in the Tyrian rite of waking the god, a reading the note on <a href="1-kings-18.html#v18-27">verse 27</a> gives with its limits.')
+_ency9k_es("baal", ' &#11088; <a href="1-kings-18.es.html#v18-19">1 Reyes 18</a> (ya en estas páginas): cuatrocientos cincuenta profetas lo invocan desde la mañana hasta la ofrenda de grano, cojeando alrededor de su altar, y no hay voz. La burla de Elías de que «duerme» pudo tener un blanco en el rito tirio de despertar al dios, lectura que la nota al <a href="1-kings-18.es.html#v18-27">versículo 27</a> da con sus límites.')
+_dict9k_en("kad", ' &#11088; <a href="1-kings-18.html#v18-34">1 Kings 18:34</a> (now on these pages): Elijah has four filled with water, three times, in the third year of the drought.')
+_dict9k_es("kad", ' &#11088; <a href="1-kings-18.es.html#v18-34">1 Reyes 18:34</a> (ya en estas páginas): Elías manda llenar cuatro de agua, tres veces, en el año tercero de la sequía.')
+_dict9k_en("kilkel", ' &#11088; <a href="1-kings-18.html#v18-4">1 Kings 18:4</a>, <a href="1-kings-18.html#v18-13">13</a> (now on these pages): Obadiah sustains a hundred prophets with bread and water.')
+_dict9k_es("kilkel", ' &#11088; <a href="1-kings-18.es.html#v18-4">1 Reyes 18:4</a>, <a href="1-kings-18.es.html#v18-13">13</a> (ya en estas páginas): Abdías sustenta a cien profetas con pan y agua.')
+_dict9k_en("akhar", ' &#11088; <a href="1-kings-18.html#v18-17">1 Kings 18:17</a> (now on these pages): the word stands on Ahab&rsquo;s lips as a noun, &lsquo;troubler&rsquo;, and Elijah gives the verb back.')
+_dict9k_es("akhar", ' &#11088; <a href="1-kings-18.es.html#v18-17">1 Reyes 18:17</a> (ya en estas páginas): la palabra está en labios de Acab como sustantivo, «el que turba», y Elías le devuelve el verbo.')
+_dict9k_en("minchah", ' &#11088; <a href="1-kings-18.html#v18-29">1 Kings 18:29</a>, <a href="1-kings-18.html#v18-36">36</a> (now on these pages): &lsquo;the going up of the grain offering&rsquo; marks the hour, with no &lsquo;evening&rsquo; in the Hebrew.')
+_dict9k_es("minchah", ' &#11088; <a href="1-kings-18.es.html#v18-29">1 Reyes 18:29</a>, <a href="1-kings-18.es.html#v18-36">36</a> (ya en estas páginas): «la subida de la ofrenda de grano» marca la hora, sin «tarde» en el hebreo.')
+_dict9k_en("asherah", ' &#11088; <a href="1-kings-18.html#v18-19">1 Kings 18:19</a> (now on these pages): four hundred prophets of the Asherah eat at Jezebel&rsquo;s table, are summoned to Carmel, and are not mentioned again.')
+_dict9k_es("asherah", ' &#11088; <a href="1-kings-18.es.html#v18-19">1 Reyes 18:19</a> (ya en estas páginas): cuatrocientos profetas de la Aserá comen a la mesa de Jezabel, son convocados al Carmelo y no se mencionan más.')
+_dict9k_en("shechitah", ' &#11088; <a href="1-kings-18.html#v18-40">1 Kings 18:40</a> (now on these pages): the verb is used of men, the prophets of Baal at the Kishon.')
+_dict9k_es("shechitah", ' &#11088; <a href="1-kings-18.es.html#v18-40">1 Reyes 18:40</a> (ya en estas páginas): el verbo se usa de hombres, los profetas de Baal en el Quisón.')
+_dict9k_en("atsar", ' &#11088; <a href="1-kings-18.html#v18-44">1 Kings 18:44</a> (now on these pages): the verb of the shut heavens, turned on the king: &lsquo;so that the rain does not shut you in&rsquo;.')
+_dict9k_es("atsar", ' &#11088; <a href="1-kings-18.es.html#v18-44">1 Reyes 18:44</a> (ya en estas páginas): el verbo de los cielos cerrados, vuelto contra el rey: «para que la lluvia no te cierre el paso».')
+
+CHRON_CHAPTERS["1kgs18"] = dict(era="monarchy",
+    when="In the third year Elijah shows himself to Ahab, after Obadiah the steward has been sent ahead. On Mount Carmel the prophets of Baal call until the grain offering and no one answers; Elijah heals the altar of Jehovah, the fire falls, the people cry &lsquo;Jehovah, he is God&rsquo;, and the prophets of Baal are slaughtered at the Kishon. The rain comes, and Elijah runs before Ahab&rsquo;s chariot to Jezreel.",
+    clock="&lsquo;In the third year&rsquo;, of what the verse does not say. Luke 4:25 and James 5:17 give the drought three years and six months.")
+
+CHAPTER_ART["1kgs18"] = [dict(
+    file="cranach-elijah-priests-of-baal.jpg",
+    title="Elijah and the Priests of Baal", title_es="Elías y los sacerdotes de Baal",
+    artist="Lucas Cranach the Younger", artist_es="Lucas Cranach el Joven",
+    year="1545",
+    location="Gemäldegalerie Alte Meister, Dresden", location_es="Gemäldegalerie Alte Meister, Dresde",
+    alt="A wide painting. On the left a column of fire falls from a dark cloud onto a stone altar with burning wood on it, and red flames lick the grey water in a round trench at its foot. Metal ewers stand at the lower left. On the right a crowd in sixteenth-century dress presses around a second altar, where a bull&rsquo;s head lies on unlit wood, and a king in a red robe and fur collar stands among them. Women and children cry out at the left, and in the distance, at the edge of a river, small figures are being struck down. Crags, a castle and fir trees fill the background.",
+    alt_es="Una pintura ancha. A la izquierda una columna de fuego cae de una nube oscura sobre un altar de piedra con leña ardiendo, y llamas rojas lamen el agua gris de una zanja redonda a su pie. Abajo a la izquierda hay jarros de metal. A la derecha una multitud con ropas del siglo XVI se apretuja en torno a un segundo altar, donde una cabeza de toro yace sobre leña sin encender, y entre ellos está un rey con manto rojo y cuello de piel. Mujeres y niños gritan a la izquierda, y a lo lejos, a la orilla de un río, unas figuras pequeñas son abatidas. Al fondo hay peñascos, un castillo y abetos.",
+    note="1 Kings 18:38&ndash;40. The fire falls on one altar and the other stands unlit, with the bull still on the wood. The red tongues in the trench are the painter&rsquo;s answer to &lsquo;it licked up&rsquo;. The verse has clay jars, and these are metal ewers. The killing at the Kishon is painted small in the distance, at the water&rsquo;s edge. The crags, the castle and the clothes are northern Europe in 1545. Photograph by Dguendel.",
+    note_es="1 Reyes 18:38–40. El fuego cae sobre un altar y el otro sigue sin encender, con el toro aún sobre la leña. Las lenguas rojas de la zanja son la respuesta del pintor a «la lamió». El versículo tiene tinajas de barro, y estos son jarros de metal. La matanza del Quisón está pintada en pequeño, a lo lejos, a la orilla del agua. Los peñascos, el castillo y las ropas son del norte de Europa en 1545. Fotografía de Dguendel.",
+    license="CC BY 4.0",
+    source_url="https://commons.wikimedia.org/wiki/File:Dresden,_Gem%C3%A4ldegalerie_Alte_Meister,_Lucas_Cranach_d.J.,_Elias_und_die_Baalspriester.jpg",
+)]
+
 # Spanish twins for the Revelation 1-2 backfill (2026-11-05).
 DICTIONARY_ES["pantokrator"] = ("pantokratōr", "«El Todopoderoso», literalmente «el que lo sostiene todo» &mdash;la traducción griega de El Shaddai y de «Jehová de los ejércitos». La palabra que las Biblias antiguas aplicaron a Shaddai (Génesis 17:1) es NATIVA en <a href=\"revelation-1.es.html#v8\">Apocalipsis 1:8</a>: el Apocalipsis la usa nueve veces, el resto del Nuevo Testamento una.")
 DICTIONARY_ES["ho-on"] = ("ho ōn", "«El que es» &mdash;la traducción griega de la explicación del nombre divino en la zarza (<a href=\"exodus-3.es.html#v3-14\">Éxodo 3:14</a>). El Apocalipsis lo despliega en tres tiempos («el que es, y que era, y que viene») y se niega a declinarlo: la ruptura gramatical deliberada de <a href=\"revelation-1.es.html#v4\">1:4</a>.")
