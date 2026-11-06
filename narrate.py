@@ -26,7 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = "https://micwyn.com/api/v1/narrate"
 MANIFEST = os.path.join(HERE, "audio", "narrated.json")
 CHUNK_CHARS = 1000
-SPEED = 0.88          # 1.0 is the voice as it speaks; below 1 slows it down without changing its pitch (ffmpeg atempo). Michael asked for slower, 2026-11-01.
+SPEED = 1.0           # 1.0 is the voice as it speaks; below 1 slows it down without changing its pitch (ffmpeg atempo). Grok's own pace, measured 11-06 at 16.3 characters a second, is already a little slower than MeloTTS at the 0.88 Michael asked for (17.1).
 PAUSE_HEAD, PAUSE_PIECE = 0.9, 0.5      # seconds of quiet after the chapter heading, and between pieces
 UA = "curl/8.7.1"        # Cloudflare refuses Python's default agent
 
