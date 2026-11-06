@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 18:39 UTC",
+ "generated": "2026-11-06 06:29 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-11-05",
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1075737038910.3491
+    "usd": 1059838919199.1261
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 443759715424.102
+    "usd": 437201472262.765
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 324321556548.4048
+    "usd": 319528467954.7838
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 322337533975.71875
+    "usd": 317573766886.5449
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 305936280708.1812
+    "usd": 301414904722.4368
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 304084526307.00757
+    "usd": 299590517058.74713
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 137558898372.896
+    "usd": 135525940731.22969
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 116395990930.91199
+    "usd": 114675796003.34819
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 111898873099.49039
+    "usd": 110245140248.67339
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 83990288910.374
+    "usd": 82749011888.77966
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 80948120965.58879
+    "usd": 79751803584.1467
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 76980075820.2168
+    "usd": 75842401447.66891
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 56081704721.2576
+    "usd": 55252883528.885956
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 55023559349.1584
+    "usd": 54210376292.49188
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 50658709689.2492
+    "usd": 49910033942.36632
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3545712873732.9067,
+  "total_usd": 3493311435751.9946,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4114.0,
-  "price_as_of": "2026-11-05 18:38 UTC",
-  "world_market_value_usd": 28604976112129.184,
+  "price_usd_oz": 4053.199951171875,
+  "price_as_of": "2026-11-06 06:28 UTC",
+  "world_market_value_usd": 28182228434845.566,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 75932.5234375,
-  "market_cap_usd": 1526877994573.9263,
+  "price_usd": 75524.1015625,
+  "market_cap_usd": 1518684420705.3223,
   "btc_rank": 11,
-  "volatility_pct": 36.60646872394897,
-  "turnover_usd": 39935027460.56343,
-  "broad_yoy_pct": 0.8173841936191341,
+  "volatility_pct": 36.552057012035434,
+  "turnover_usd": 44792048227.65627,
+  "broad_yoy_pct": 0.8173739042704662,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2017,12 +2017,12 @@
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 28604976112129.184,
+    "usd": 28182228434845.566,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1526877994573.9263,
+    "usd": 1518684420705.3223,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
