@@ -56809,3 +56809,155 @@ ENCYCLOPEDIA_ES["seth"] = ("Set", "«Puesto» (<em>shat</em>) en lugar de Abel (
 ENCYCLOPEDIA_ES["enoch-cain-son"] = ("Enoc (hijo de Caín)", "Hijo de Caín (<a href=\"genesis-4.es.html#v4-17\">Génesis 4:17</a>): no el hombre que anduvo con Dios un capítulo después (5:21-24), sino otro Enoc. Caín da su nombre a la primera ciudad de la Biblia.")
 ENCYCLOPEDIA_ES["tigris"] = ("Tigris (Chidekel)", "El tercer río del Edén (<a href=\"genesis-2.es.html#v2-14\">Génesis 2:14</a>), «que corre al oriente de Asur»: uno de los dos grandes ríos de Mesopotamia, que todavía corre por Irak. El nombre hebreo Chidekel coincide con el acadio Idiqlat.")
 ENCYCLOPEDIA_ES["pergamum"] = ("Pérgamo", "Antigua capital real de Asia, escalonada en su monte: «donde está el trono de Satanás» (Apocalipsis 2:12-17). Los candidatos: el Gran Altar de Zeus (excavado y llevado a Berlín, hoy en el Museo de Pérgamo), el primer templo del culto imperial de la provincia, o el santuario de Asclepio con su serpiente; quizá todo el perfil de la ciudad a la vez. Aquí fue muerto Antipas, el único mártir con nombre del libro.")
+
+# --- 1 Kings 22 ---
+def _swap22(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict22_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict22_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency22_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap22(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency22_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap22(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("naggach", "naggach", "נָגַח", "naggach",
+    'TO GORE, as an ox does: the ox of the law that gores a man (<a href="exodus-21.html#v21-28">Exodus 21:28</a>, now on these pages). ⭐ In the intensive form it is what Joseph&rsquo;s horns will do, &lsquo;with them he shall gore the peoples&rsquo; (<a href="deuteronomy-33.html#v33-17">Deuteronomy 33:17</a>, now on these pages), and Zedekiah son of Chenaanah makes horns of iron to act it out: &lsquo;With these you shall gore Aram&rsquo; (<a href="1-kings-22.html#v22-11">1 Kings 22:11</a>, now on these pages). The ASV and the KJV have &lsquo;push&rsquo;.',
+    ("1 Kings", 22, 11)))
+DICTIONARY_ES["naggach"] = ("naggaj",
+    'ACORNEAR, como hace un buey: el buey de la ley que acornea a un hombre (<a href="exodus-21.es.html#v21-28">Éxodo 21:28</a>, ya en estas páginas). ⭐ En la forma intensiva es lo que harán los cuernos de José, «con ellos acorneará a los pueblos» (<a href="deuteronomy-33.es.html#v33-17">Deuteronomio 33:17</a>, ya en estas páginas), y Sedequías hijo de Quenaana se hace cuernos de hierro para representarlo: «Con estos acornearás a Aram» (<a href="1-kings-22.es.html#v22-11">1 Reyes 22:11</a>, ya en estas páginas). La RV60 tiene «acornearás», y la TNM 1987 «empujarás».')
+
+DICTIONARY.append(("cheder", "cheder", "חֶדֶר", "cheder",
+    'AN INNER ROOM, a chamber, the part of a house furthest from the door. ⭐ &lsquo;Chamber within chamber&rsquo; is where Ben-hadad runs at Aphek (<a href="1-kings-20.html#v20-30">1 Kings 20:30</a>, now on these pages), where Micaiah tells Zedekiah he will run (<a href="1-kings-22.html#v22-25">1 Kings 22:25</a>, now on these pages), and where Jehu is anointed (2 Kings 9:2, not yet on these pages).',
+    ("1 Kings", 22, 25)))
+DICTIONARY_ES["cheder"] = ("jéder",
+    'UNA CÁMARA interior, la parte de la casa más lejana de la puerta. ⭐ «Cámara dentro de cámara» es adonde huye Ben-adad en Afec (<a href="1-kings-20.es.html#v20-30">1 Reyes 20:30</a>, ya en estas páginas), adonde Micaías le dice a Sedequías que huirá (<a href="1-kings-22.es.html#v22-25">1 Reyes 22:25</a>, ya en estas páginas), y donde ungen a Jehú (2 Reyes 9:2, todavía no en estas páginas).')
+
+DICTIONARY.append(("kele", "kele", "כֶּלֶא", "kele",
+    'CONFINEMENT. <span data-heb="בית הכלא"><em>Beit ha-kele</em>, &lsquo;the house of confinement&rsquo;, stands in four verses of the Hebrew Bible</span>: Micaiah&rsquo;s prison (<a href="1-kings-22.html#v22-27">1 Kings 22:27</a>, now on these pages), its copy in 2 Chronicles 18:26, and Jeremiah&rsquo;s (Jeremiah 37:15, 18, not yet on these pages). A king who does not like a prophet&rsquo;s word has somewhere to put him.',
+    ("1 Kings", 22, 27)))
+DICTIONARY_ES["kele"] = ("kéle",
+    'RECLUSIÓN. <span data-heb="בית הכלא"><em>Beit ha-kele</em>, «la casa de reclusión», está en cuatro versículos de la Biblia hebrea</span>: la cárcel de Micaías (<a href="1-kings-22.es.html#v22-27">1 Reyes 22:27</a>, ya en estas páginas), su copia en 2 Crónicas 18:26, y la de Jeremías (Jeremías 37:15, 18, todavía no en estas páginas). Un rey a quien no le gusta la palabra de un profeta tiene dónde ponerlo.')
+
+DICTIONARY.append(("shiryon", "shiryon / shiryan", "שִׁרְיוֹן", "shiryon / shiryan",
+    'A COAT OF MAIL, armour of overlapping scales. Goliath wears one (<a href="1-samuel-17.html#v17-5">1 Samuel 17:5</a>, now on these pages), and Saul puts one on David (<a href="1-samuel-17.html#v17-38">17:38</a>). ⭐ At <a href="1-kings-22.html#v22-34">1 Kings 22:34</a> (now on these pages) it is spelled <em>shiryan</em>, and the arrow finds the gap.',
+    ("1 Kings", 22, 34)))
+DICTIONARY_ES["shiryon"] = ("shiryón / shiryán",
+    'UNA COTA DE MALLA, armadura de escamas superpuestas. Goliat lleva una (<a href="1-samuel-17.es.html#v17-5">1 Samuel 17:5</a>, ya en estas páginas), y Saúl le pone una a David (<a href="1-samuel-17.es.html#v17-38">17:38</a>). ⭐ En <a href="1-kings-22.es.html#v22-34">1 Reyes 22:34</a> (ya en estas páginas) se escribe <em>shiryán</em>, y la flecha halla el hueco.')
+
+DICTIONARY.append(("rinnah", "rinnah", "רִנָּה", "rinnah",
+    'A RINGING CRY, often of joy and also of prayer: &lsquo;the cry and the prayer&rsquo; of Solomon&rsquo;s dedication (<a href="1-kings-8.html#v8-28">1 Kings 8:28</a>, now on these pages). ⭐ At <a href="1-kings-22.html#v22-36">1 Kings 22:36</a> (now on these pages) it is what passes through the camp at sunset, and the king is dead.',
+    ("1 Kings", 22, 36)))
+DICTIONARY_ES["rinnah"] = ("rinnáh",
+    'UN GRITO RESONANTE, a menudo de alegría y también de oración: «el clamor y la oración» de la dedicación de Salomón (<a href="1-kings-8.es.html#v8-28">1 Reyes 8:28</a>, ya en estas páginas). ⭐ En <a href="1-kings-22.es.html#v22-36">1 Reyes 22:36</a> (ya en estas páginas) es lo que pasa por el campamento al ponerse el sol, y el rey ha muerto.')
+
+DICTIONARY.append(("shen", "shen", "שֵׁן", "shen",
+    'A TOOTH, as in &lsquo;tooth for tooth&rsquo; (<a href="exodus-21.html#v21-24">Exodus 21:24</a>, now on these pages), and so IVORY: Solomon&rsquo;s &lsquo;great ivory throne&rsquo; (<a href="1-kings-10.html#v10-18">1 Kings 10:18</a>, now on these pages). ⭐ Ahab&rsquo;s &lsquo;house of ivory&rsquo; is named in his closing record (<a href="1-kings-22.html#v22-39">1 Kings 22:39</a>, now on these pages), and Amos has &lsquo;the houses of ivory&rsquo; perish (Amos 3:15, not yet on these pages).',
+    ("1 Kings", 22, 39)))
+DICTIONARY_ES["shen"] = ("shen",
+    'UN DIENTE, como en «diente por diente» (<a href="exodus-21.es.html#v21-24">Éxodo 21:24</a>, ya en estas páginas), y de ahí MARFIL: el gran trono de marfil de Salomón (<a href="1-kings-10.es.html#v10-18">1 Reyes 10:18</a>, ya en estas páginas). ⭐ La «casa de marfil» de Acab se nombra en su registro final (<a href="1-kings-22.es.html#v22-39">1 Reyes 22:39</a>, ya en estas páginas), y Amós hace perecer «las casas de marfil» (Amós 3:15, todavía no en estas páginas).')
+
+DICTIONARY_ES["tom"] = ("tom",
+    'Integridad, plenitud: el sustantivo de <em>tamim</em>. Abimelec la alega y Dios la confirma (Génesis 20:5–6). Los doscientos de Absalón iban «en su integridad; y no sabían nada» (<a href="2-samuel-15.es.html#v15-11">2 Samuel 15:11</a>, ya en estas páginas). ⭐ El arquero de <a href="1-kings-22.es.html#v22-34">1 Reyes 22:34</a> (ya en estas páginas) tira «en su inocencia»: el mismo sustantivo, y el mismo no saber.')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict22_en("patah", "to 'entice' Ahab (1 Kings 22) and", 'to \'entice\' Ahab (<a href="1-kings-22.html#v22-20">1 Kings 22:20&ndash;22</a>, now on these pages) and')
+_dict22_es("patah", "a <em>inducir</em> a Acab (1 Reyes 22) y", 'a <em>seducir</em> a Acab (<a href="1-kings-22.es.html#v22-20">1 Reyes 22:20–22</a>, ya en estas páginas) y')
+_dict22_en("chapas", "&lsquo;I will disguise myself and go into the battle&rsquo; (1 Kings 22:30, told again at 2 Chronicles 18:29); and Josiah at Megiddo (2 Chronicles 35:22), the last three not yet on these pages.",
+    '&lsquo;I will disguise myself and go into the war&rsquo; (<a href="1-kings-22.html#v22-30">1 Kings 22:30</a>, now on these pages, told again at 2 Chronicles 18:29); and Josiah at Megiddo (2 Chronicles 35:22, not yet on these pages).')
+_dict22_es("chapas", "«yo me disfrazaré y entraré en la batalla» (1 Reyes 22:30, contado otra vez en 2 Crónicas 18:29); y Josías en Meguido (2 Crónicas 35:22), los tres últimos todavía no en estas páginas.",
+    '«Me disfrazaré y entraré en la guerra» (<a href="1-kings-22.es.html#v22-30">1 Reyes 22:30</a>, ya en estas páginas, contado otra vez en 2 Crónicas 18:29); y Josías en Meguido (2 Crónicas 35:22, todavía no en estas páginas).')
+_dict22_en("sheqer", add=' ⭐ <a href="1-kings-22.html#v22-22">1 Kings 22:22&ndash;23</a> (now on these pages) has &lsquo;a spirit of falsehood&rsquo; in the mouth of all Ahab&rsquo;s prophets, and says who put it there.')
+_dict22_es("sheqer", add=' ⭐ <a href="1-kings-22.es.html#v22-22">1 Reyes 22:22–23</a> (ya en estas páginas) tiene «un espíritu de falsedad» en la boca de todos los profetas de Acab, y dice quién lo puso allí.')
+_dict22_en("adonai", add=' ⭐ At <a href="1-kings-22.html#v22-6">1 Kings 22:6</a> (now on these pages) the four hundred prophets say <em>Adonai</em>, and at verse 12 they say Jehovah; the ASV prints &lsquo;the Lord&rsquo; at verse 6 and &lsquo;Jehovah&rsquo; at verse 12.')
+_dict22_es("adonai", add=' ⭐ En <a href="1-kings-22.es.html#v22-6">1 Reyes 22:6</a> (ya en estas páginas) los cuatrocientos profetas dicen <em>Adonai</em>, y en el versículo 12 dicen Jehová; la RV 1909 imprime «el Señor» en el versículo 6 y «Jehová» en el versículo 12.')
+_dict22_en("qeren", add=' ⭐ Zedekiah son of Chenaanah makes himself &lsquo;horns of iron&rsquo; (<a href="1-kings-22.html#v22-11">1 Kings 22:11</a>, now on these pages), with the verb of Deuteronomy 33:17.')
+_dict22_es("qeren", add=' ⭐ Sedequías hijo de Quenaana se hace «cuernos de hierro» (<a href="1-kings-22.es.html#v22-11">1 Reyes 22:11</a>, ya en estas páginas), con el verbo de Deuteronomio 33:17.')
+_dict22_en("lachats", add=' ⭐ &lsquo;Bread of oppression and water of oppression&rsquo; is the prison diet a king orders for a prophet (<a href="1-kings-22.html#v22-27">1 Kings 22:27</a>, now on these pages).')
+_dict22_es("lachats", add=' ⭐ «Pan de opresión y agua de opresión» es la dieta de cárcel que un rey ordena para un profeta (<a href="1-kings-22.es.html#v22-27">1 Reyes 22:27</a>, ya en estas páginas).')
+_dict22_en("zonah", add=' ⭐ At <a href="1-kings-22.html#v22-38">1 Kings 22:38</a> (now on these pages) the plural &lsquo;bathed&rsquo; at the pool of Samaria; the Targum reads a word for weapons here, and the KJV and the Geneva follow with &lsquo;armour&rsquo;.')
+_dict22_es("zonah", add=' ⭐ En <a href="1-kings-22.es.html#v22-38">1 Reyes 22:38</a> (ya en estas páginas) el plural «se bañaron» en el estanque de Samaria; el Targum lee aquí una palabra para armas, y la RV 1909 la sigue con «sus armas».')
+_dict22_en("nitsav", add=' ⭐ &lsquo;There was no king in Edom; an officer was king&rsquo; (<a href="1-kings-22.html#v22-48">1 Kings 22:48</a>, now on these pages).')
+_dict22_es("nitsav", add=' ⭐ «No había rey en Edom; un oficial era rey» (<a href="1-kings-22.es.html#v22-48">1 Reyes 22:48</a>, ya en estas páginas).')
+_dict22_en("qadesh", add=' ⭐ Jehoshaphat burns out the rest of them (<a href="1-kings-22.html#v22-47">1 Kings 22:47</a>, now on these pages), so Asa&rsquo;s purge left some.')
+_dict22_es("qadesh", add=' ⭐ Josafat quema de la tierra al resto (<a href="1-kings-22.es.html#v22-47">1 Reyes 22:47</a>, ya en estas páginas), así que la limpieza de Asa dejó algunos.')
+_dict22_en("tom", add=' ⭐ The archer of <a href="1-kings-22.html#v22-34">1 Kings 22:34</a> (now on these pages) draws his bow &lsquo;in his innocence&rsquo;: the same noun as Absalom&rsquo;s two hundred, who went &lsquo;in their integrity&rsquo; (<a href="2-samuel-15.html#v15-11">2 Samuel 15:11</a>, now on these pages).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="micaiah", name="Micaiah son of Imlah", kind="person", aliases=["Micaiah son of Imlah", "Micaiah"],
+    refs=[("1 Kings", 22, 8)], videos=[],
+    desc='The prophet Ahab says he hates, &lsquo;for he does not prophesy good about me, but only evil&rsquo; (<a href="1-kings-22.html#v22-8">1 Kings 22:8</a>, now on these pages). His name, <em>Mikhayehu</em>, is &lsquo;Who is like Jehovah?&rsquo;, the long form of Micah&rsquo;s. He swears to say what Jehovah says, repeats the four hundred almost word for word, and then, made to swear, tells what he saw: Israel like sheep with no shepherd, and Jehovah on his throne asking who will entice Ahab. Struck on the cheek and sent to prison on bread of oppression, he stakes his name on the result (22:28). The text does not say what became of him. ⚠ Josephus makes him the prophet with the bandage in 1 Kings 20, and already under guard (<em>Antiquities</em> 8.389, 8.403, Niese&rsquo;s Greek); the Hebrew does not.'))
+ENCYCLOPEDIA_ES["micaiah"] = ("Micaías hijo de Imla",
+    'El profeta a quien Acab dice aborrecer, «porque no profetiza bien de mí, sino solo mal» (<a href="1-kings-22.es.html#v22-8">1 Reyes 22:8</a>, ya en estas páginas). Su nombre, <em>Mikhayehu</em>, es «¿Quién como Jehová?», la forma larga del de Miqueas. Jura decir lo que Jehová diga, repite a los cuatrocientos casi palabra por palabra, y luego, obligado a jurar, cuenta lo que vio: Israel como ovejas sin pastor, y Jehová en su trono preguntando quién seducirá a Acab. Herido en la mejilla y enviado a la cárcel con pan de opresión, apuesta su nombre al resultado (22:28). El texto no dice qué fue de él. ⚠ Josefo lo hace el profeta de la venda de 1 Reyes 20, y ya bajo custodia (<em>Antigüedades</em> 8.389, 8.403, griego de Niese); el hebreo no.')
+
+ENCYCLOPEDIA.append(dict(slug="zedekiah-son-of-chenaanah", name="Zedekiah son of Chenaanah", kind="person", aliases=["Zedekiah son of Chenaanah"],
+    refs=[("1 Kings", 22, 11)], videos=[],
+    desc='The spokesman of the four hundred prophets, who makes himself horns of iron and says, &lsquo;Thus says Jehovah: With these you shall gore Aram&rsquo; (<a href="1-kings-22.html#v22-11">1 Kings 22:11</a>, now on these pages). He strikes Micaiah on the cheek, and is told he will go &lsquo;chamber within chamber to hide&rsquo; (22:24&ndash;25). The text does not say whether he did. ⚠ The Talmud asks what he could have done, since a spirit misled him, and answers that he should have noticed that all four hundred used the same words (Sanhedrin 89a). He is not the last king of Judah, who has the same name.'))
+ENCYCLOPEDIA_ES["zedekiah-son-of-chenaanah"] = ("Sedequías hijo de Quenaana",
+    'El portavoz de los cuatrocientos profetas, que se hace cuernos de hierro y dice: «Así dice Jehová: Con estos acornearás a Aram» (<a href="1-kings-22.es.html#v22-11">1 Reyes 22:11</a>, ya en estas páginas). Hiere a Micaías en la mejilla, y se le dice que entrará «cámara dentro de cámara para esconderte» (22:24–25). El texto no dice si lo hizo. ⚠ El Talmud pregunta qué podía haber hecho, ya que un espíritu lo engañó, y responde que debió notar que los cuatrocientos usaban las mismas palabras (Sanedrín 89a). No es el último rey de Judá, que tiene el mismo nombre.')
+
+ENCYCLOPEDIA_ES["ahaziah-israel"] = ("Ocozías de Israel",
+    'Hijo de Acab y Jezabel, rey de Israel apenas dos años (c. 853-852 a. C.). Reina «en el camino de su padre y en el camino de su madre» (<a href="1-kings-22.es.html#v22-53">1 Reyes 22:53</a>, ya en estas páginas). Pide a Josafat que sus siervos vayan en las naves, y Josafat no quiere (22:50). Todo su reinado registrado es una caída por la celosía de un techo y sus consecuencias: herido, envía a Baal-zebub de Ecrón (<a href="2-kings-1.es.html#v2">2 Reyes 1:2</a>, ya en estas páginas), Elías lo intercepta, y muere sin hijos. ⚠ No debe confundirse con Ocozías de Judá, su sobrino y tocayo (2 Reyes 8–9, todavía no en estas páginas).')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency22_en("ahaziah-israel", add=' &#11088; He reigns &lsquo;in the way of his father and in the way of his mother&rsquo; (<a href="1-kings-22.html#v22-53">1 Kings 22:53</a>, now on these pages), and Jehoshaphat will not let his servants on the ships (22:50).', ref=("1 Kings", 22, 40))
+_ency22_en("jehoshaphat-king-of-judah", "His own notice waits for 1 Kings 22:41 (not yet on these pages).",
+    'His own notice comes at <a href="1-kings-22.html#v22-41">1 Kings 22:41&ndash;51</a> (now on these pages): twenty-five years, the way of Asa, the high places left standing, and ships of Tarshish broken at Ezion-geber. &#11088; Before that he goes up to Ramoth-gilead with the king of Israel, &lsquo;I am as you are&rsquo;, and asks if there is a prophet of Jehovah still (22:4, 7). His name means &lsquo;Jehovah has judged&rsquo;.', ref=("1 Kings", 22, 2))
+_ency22_es("jehoshaphat-king-of-judah", "Su propia noticia espera hasta 1 Reyes 22:41 (todavía no en estas páginas).",
+    'Su propia noticia llega en <a href="1-kings-22.es.html#v22-41">1 Reyes 22:41–51</a> (ya en estas páginas): veinticinco años, el camino de Asa, los lugares altos en pie, y naves de Tarsis rotas en Ezión-guéber. &#11088; Antes sube a Ramot de Galaad con el rey de Israel, «Yo soy como tú», y pregunta si hay todavía un profeta de Jehová (22:4, 7). Su nombre significa «Jehová ha juzgado».')
+_ency22_en("ahab", add=' &#11088; <a href="1-kings-22.html#v22-1">1 Kings 22</a> (now on these pages): he goes up to Ramoth-gilead against the word of Micaiah, disguises himself, and is hit by a man who was not aiming. The dogs lick his blood at the pool of Samaria. In that story only Jehovah calls him by name (22:20).', ref=("1 Kings", 22, 20))
+_ency22_es("ahab", add=' &#11088; <a href="1-kings-22.es.html#v22-1">1 Reyes 22</a> (ya en estas páginas): sube a Ramot de Galaad contra la palabra de Micaías, se disfraza, y lo hiere un hombre que no apuntaba. Los perros lamen su sangre en el estanque de Samaria. En esa historia solo Jehová lo llama por su nombre (22:20).')
+_ency22_en("ramoth-gilead", "the site of Ahab's death (1 Kings 22) and Jehu's anointing (2 Kings 9), neither yet on these pages.",
+    'the site of Ahab\'s death (<a href="1-kings-22.html#v22-3">1 Kings 22</a>, now on these pages) and Jehu\'s anointing (2 Kings 9, not yet on these pages).', ref=("1 Kings", 22, 3))
+_ency22_es("ramoth-gilead", "el sitio de la muerte de Acab (1 Reyes 22) y de la unción de Jehú (2 Reyes 9), ninguno todavía en estas páginas",
+    'el sitio de la muerte de Acab (<a href="1-kings-22.es.html#v22-3">1 Reyes 22</a>, ya en estas páginas) y de la unción de Jehú (2 Reyes 9, todavía no en estas páginas)')
+_ency22_en("tarshish", "(1 Kings 22:49, not yet on these pages)", '(<a href="1-kings-22.html#v22-49">1 Kings 22:49</a>, now on these pages)', ref=("1 Kings", 22, 49))
+_ency22_es("tarshish", "(1 Reyes 22:49, todavía no en estas páginas)", '(<a href="1-kings-22.es.html#v22-49">1 Reyes 22:49</a>, ya en estas páginas)')
+_ency22_en("ophir", add=' &#11088; Jehoshaphat&rsquo;s ships are built to go there for gold and are broken at Ezion-geber (<a href="1-kings-22.html#v22-49">1 Kings 22:49</a>, now on these pages).', ref=("1 Kings", 22, 49))
+_ency22_es("ophir", add=' &#11088; Las naves de Josafat se hacen para ir allí por oro y se rompen en Ezión-guéber (<a href="1-kings-22.es.html#v22-49">1 Reyes 22:49</a>, ya en estas páginas).')
+_ency22_en("ezion-geber", add=' &#11088; Jehoshaphat&rsquo;s ships of Tarshish are broken there before they sail (<a href="1-kings-22.html#v22-49">1 Kings 22:49</a>, now on these pages).', ref=("1 Kings", 22, 49))
+_ency22_es("ezion-geber", add=' &#11088; Allí se rompen las naves de Tarsis de Josafat antes de zarpar (<a href="1-kings-22.es.html#v22-49">1 Reyes 22:49</a>, ya en estas páginas).')
+_ency22_en("samaria", ref=("1 Kings", 22, 10))
+_ency22_en("edom", ref=("1 Kings", 22, 48))
+CHRON_CHAPTERS["1kgs20"]["clock"] = _swap22(CHRON_CHAPTERS["1kgs20"]["clock"], "1 Kings 22:1 will count three years without war after them (not yet on these pages).", '<a href="1-kings-22.html#v22-1">1 Kings 22:1</a> counts three years without war after them (now on these pages).')
+CHRON_CHAPTERS["1kgs21"]["clock"] = _swap22(CHRON_CHAPTERS["1kgs21"]["clock"], "1 Kings 22:1 (not yet on these pages)", '<a href="1-kings-22.html#v22-1">1 Kings 22:1</a> (now on these pages)')
+
+CHRON_CHAPTERS["1kgs22"] = dict(era="monarchy",
+    when="After three years without war the king of Israel asks Jehoshaphat to go up with him to Ramoth-gilead. Four hundred prophets say go; Micaiah son of Imlah tells what he saw in the court of Jehovah. The king goes up disguised, and a man draws a bow in his innocence. The dogs lick his blood at the pool of Samaria. Jehoshaphat’s reign is recorded, and Ahaziah son of Ahab begins.",
+    clock="&lsquo;Three years’, and &lsquo;in the third year’, from the covenant of 1 Kings 20:34. Jehoshaphat begins in Ahab’s fourth year and Ahaziah in Jehoshaphat’s seventeenth, and the sums do not close exactly.")
+
+CHAPTER_ART["1kgs22"] = [dict(
+    file="dore-death-of-ahab.jpg",
+    title="The Death of Ahab", title_es="La muerte de Acab",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Wood engraving, from Doré’s illustrated Bible", location_es="Grabado en madera, de la Biblia ilustrada de Doré",
+    alt="A black-and-white engraving of a battlefield at sunset. A king, bare-chested, slumps back in a chariot with an ornate curved rim, his head turned up to the sky, a spear beside him. Soldiers with long spears stand at the horses’ heads. On the right, cloaked figures bow their heads or crouch beside the chariot in grief. Bodies lie in the foreground. Far off on the left, the armies are still fighting under rays from a low sun.",
+    alt_es="Un grabado en blanco y negro de un campo de batalla al atardecer. Un rey, con el pecho desnudo, se recuesta en un carro de borde curvo y adornado, con la cabeza vuelta hacia el cielo y una lanza a su lado. Soldados con lanzas largas están a la cabeza de los caballos. A la derecha, figuras con mantos inclinan la cabeza o se agachan junto al carro en duelo. En primer plano yacen cuerpos. A lo lejos, a la izquierda, los ejércitos aún pelean bajo los rayos de un sol bajo.",
+    note="1 Kings 22:35&ndash;36. The low sun is the verse’s. The Hebrew has him held standing, facing Aram, in a coat of mail; Doré has him seated, bare-chested, with mourners the verse does not mention.",
+    note_es="1 Reyes 22:35–36. El sol bajo es el del versículo. El hebreo lo tiene mantenido en pie, frente a Aram, con cota de malla; Doré lo sienta con el pecho desnudo, y con dolientes que el versículo no menciona.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:093.The_Death_of_Ahab.jpg",
+)]
