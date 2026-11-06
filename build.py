@@ -1008,6 +1008,7 @@ TEASERS_ES = {
     "amos1": "Un criador de ovejas de una aldea de Judá se planta en el reino del norte, en su momento más rico, y empieza condenando a todos los demás — Damasco, Gaza, Tiro, Edom, Amón — cinco naciones sentenciadas con una fórmula que sonará OCHO veces, y cuya octava apunta a los que llevan toda la lista asintiendo. Ninguna acusación es de idolatría: todas son atrocidades contra seres humanos —trillar una región con trillos de hierro, vender poblaciones enteras, olvidar un pacto de hermanos, cazar al propio gemelo y «arruinar sus entrañas de compasión» (palabra construida sobre el hebreo de ÚTERO)— y, la única con motivo declarado, abrir en canal a las mujeres encintas de Galaad para ensanchar una frontera. ⚠ Y el libro se fecha dos veces: por dos reyes, y por un terremoto — «dos años antes DEL terremoto», con artículo, porque sus lectores sabían cuál.",
     "gen1":  "Los siete días — el día uno, la bóveda, y la imagen de Dios.",
     "gen2":  "El séptimo día, la llegada del Nombre, y «costado», no «costilla».",
+    "gen4":  "El primer asesinato, el primer poema y la pregunta «¿Soy yo el guarda de mi hermano?».",
     "gen3":  "La serpiente, la caída y el juego de palabras entre «desnudos» y «astuta» que cruza el corte de capítulo.",
     "john1": "«En el principio era la Palabra»: el Prólogo, el testimonio del Bautista y los primeros discípulos, hasta la escalera de Jacob.",
     "mat5":  "Comienza el Sermón del Monte: las bienaventuranzas, la sal y la luz, y seis veces «pero yo les digo».",
