@@ -7104,6 +7104,18 @@ def check_chapter_art_coverage(chapters):
 # a tag that just labels a reference is dropped ("(Ezekiel 36:26)"), and one that is part of a
 # sentence is reworded ("Psalm 32 is yet to come in this translation"). Spanish likewise.
 # "now on these pages" (the shipped marker) is left alone.
+# Older Spanish sources spell accents as entities, so every Spanish pattern accepts both spellings.
+_TA = r"(?:todav(?:í|&iacute;)a|a(?:ú|&uacute;)n)"
+_PG = r"p(?:á|&aacute;)ginas"
+_ES = r"espa(?:ñ|&ntilde;)ol"
+_EST = r"estanter(?:í|&iacute;)a"
+_ES_TAG = rf"(?:estas\s+{_PG}(?:\s+en\s+{_ES})?|{_ES}|esta\s+{_EST})"
+# "ya en estas páginas, todavía no en español": the chapter exists in English and has no Spanish
+# page. The whole flag has to go; dropping only the second half leaves "(Génesis 9:29, ya en estas
+# páginas)", an unlinked promise of a page the Spanish reader can't reach (found 2026-11-05).
+# The plain "ya en estas páginas" is the "now on these pages" marker and is left alone.
+_YA_NO_ES = rf"ya\s+en\s+estas\s+{_PG},\s+{_TA}\s+no\s+en\s+{_ES}"
+_YA_QUANT = r"(?:ambos|ambas|todos|todas|los\s+dos|las\s+dos|estos\s+tres|el\s+capítulo)"
 _PENDING_RULES = [
     # English: a parenthesis that is only the tag
     (re.compile(r" ?\((?:not|none|neither) yet on these pages\)"), ""),
@@ -7113,16 +7125,29 @@ _PENDING_RULES = [
     (re.compile(r"\b(?:not|none|neither) yet on these pages\b"), "yet to come in this translation"),
     # English: the negative came earlier ("neither chapter is yet on these pages", "none of them yet…")
     (re.compile(r"\byet on these pages\b"), "translated here yet"),
+    # Spanish, the combined flag: a parenthesis that is only the flag ("(ambos ya en estas…)")
+    (re.compile(rf" ?\((?:{_YA_QUANT}\s+)?{_YA_NO_ES}\)"), ""),
+    # Spanish, the combined flag: first item in a parenthesis that carries on
+    (re.compile(rf"\({_YA_NO_ES}[,;]\s+"), "("),
+    # Spanish, the combined flag: after a reference, with or without "ambos" and the like
+    (re.compile(rf"(?:[,;]|\s*(?:—|&mdash;))\s*(?:{_YA_QUANT}\s+)?{_YA_NO_ES}(?=[);:,.\s<&…])"), ""),
+    # Spanish, the combined flag: cut off by a preview's length limit
+    (re.compile(rf"(?:[,;]\s+| ?\()ya\s+en\s+estas\s+{_PG},\s+t[a-zíó&;]*(?:\s+[a-zñ&;]*){{0,3}}…"), "…"),
+    # Spanish, the combined flag: predicate of a sentence
+    (re.compile(rf"\b(está|están)\s+{_YA_NO_ES}"), r"\1 aún sin versión en español"),
+    # Spanish, the combined flag: anywhere else it follows a word
+    (re.compile(rf"\s+{_YA_NO_ES}(?=[);:,.\s<&…])"), ""),
     # Spanish: a parenthesis that is only the tag
-    (re.compile(r" ?\((?:todavía|aún)\s+no\s+en\s+(?:estas\s+páginas(?:\s+en\s+español)?|español|esta\s+estantería)\)"), ""),
+    (re.compile(rf" ?\({_TA}\s+no\s+en\s+{_ES_TAG}\)"), ""),
     # Spanish: the tag after a reference
-    (re.compile(r"[,;] (?:todavía|aún)\s+no\s+en\s+(?:estas\s+páginas(?:\s+en\s+español)?|español|esta\s+estantería)(?=[);:,.\s<&])"), ""),
+    (re.compile(rf"[,;] {_TA}\s+no\s+en\s+{_ES_TAG}(?=[);:,.\s<&])"), ""),
     # Spanish: inside a sentence
-    (re.compile(r"\b(?:todavía|aún)\s+no\s+(está|están)\s+en\s+estas\s+páginas(?:\s+en\s+español)?\b"), r"\1 aún por llegar en esta traducción"),
-    (re.compile(r"\b(?:todavía|aún)\s+no\s+en\s+estas\s+páginas(?:\s+en\s+español)?\b"), "aún por llegar en esta traducción"),
-    (re.compile(r"\b(?:todavía|aún)\s+no\s+en\s+español\b"), "aún sin versión en español"),
+    (re.compile(rf"\b{_TA}\s+no\s+(está|están)\s+en\s+estas\s+{_PG}(?:\s+en\s+{_ES})?\b"), r"\1 aún por llegar en esta traducción"),
+    (re.compile(rf"\b{_TA}\s+no\s+en\s+estas\s+{_PG}(?:\s+en\s+{_ES})?\b"), "aún por llegar en esta traducción"),
+    (re.compile(rf"\b{_TA}\s+no\s+en\s+{_ES}\b"), "aún sin versión en español"),
 ]
 # The blogs are built by their own builders and now live on m8k.io; this pass is the Bible site's.
+_PENDING_HINTS = ("yet on these pages", "estas páginas", "estas p&aacute;ginas", "no en español", "no en espa&ntilde;ol", "esta estantería", "esta estanter&iacute;a")
 _PENDING_SKIP_DIRS = {"finance", "health", "notebook", "travel", "west", "source", "tools", "research", "claude-docs", "img", "cf"}
 
 
@@ -7161,7 +7186,7 @@ def tidy_pending_notes():
             path = os.path.join(root, f)
             with open(path, encoding="utf-8") as fh:
                 s = fh.read()
-            if "yet on these pages" not in s and "estas páginas" not in s and "no en español" not in s and "esta estantería" not in s:
+            if not any(k in s for k in _PENDING_HINTS):
                 continue
             t = tidy_pending_text(s)
             if t != s:
