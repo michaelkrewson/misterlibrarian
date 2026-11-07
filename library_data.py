@@ -57077,3 +57077,109 @@ CHAPTER_ART["2kgs2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:095.Elijah_Ascends_to_Heaven_in_a_Chariot_of_Fire.jpg",
 )]
+
+# --- 2 Kings 3 ---
+def _swap2k3(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k3_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k3(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k3_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k3(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k3_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k3(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k3_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k3(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("nagan", "nagan / menaggen", "נָגַן", "nagan / menaggen",
+    'TO PLAY STRINGS; <em>menaggen</em>, one who plays. It is what David was sent for, a man &lsquo;who knows how to play the lyre&rsquo; (<a href="1-samuel-16.html#v16-16">1 Samuel 16:16</a>, now on these pages). ⭐ Elisha asks for a <em>menaggen</em>, and the hand of Jehovah comes on him as the man plays (<a href="2-kings-3.html#v3-15">2 Kings 3:15</a>, now on these pages). The word does not name the instrument: the shelf has &lsquo;minstrel&rsquo;, &lsquo;harpist&rsquo; and &lsquo;lute&rsquo;.',
+    ("2 Kings", 3, 15)))
+DICTIONARY_ES["nagan"] = ("nagán / menaggén",
+    'TOCAR CUERDAS; <em>menaggen</em>, el que toca. Es aquello para lo que buscaron a David, un hombre «que sepa tocar la lira» (<a href="1-samuel-16.es.html#v16-16">1 Samuel 16:16</a>, ya en estas páginas). ⭐ Eliseo pide un <em>menaggen</em>, y la mano de Jehová viene sobre él mientras el hombre toca (<a href="2-kings-3.es.html#v3-15">2 Reyes 3:15</a>, ya en estas páginas). La palabra no nombra el instrumento.')
+
+DICTIONARY.append(("qetsef", "qetsef", "קֶצֶף", "qetsef",
+    'FURY, a wrath that boils over. It is the word of &lsquo;in great fury&rsquo; at <a href="deuteronomy-29.html#v29-27">Deuteronomy 29:27</a> (now on these pages), and <em>qetsef gadol</em>, &lsquo;great fury&rsquo;, is otherwise always Jehovah&rsquo;s. ⚠ The exception is the hardest: &lsquo;And there was great fury against Israel&rsquo; after the king of Moab&rsquo;s sacrifice (<a href="2-kings-3.html#v3-27">2 Kings 3:27</a>, now on these pages), where the verse does not say whose it was.',
+    ("2 Kings", 3, 27)))
+DICTIONARY_ES["qetsef"] = ("qétsef",
+    'FUROR, una ira que hierve. Es la palabra de «con gran indignación» en <a href="deuteronomy-29.es.html#v29-27">Deuteronomio 29:27</a> (ya en estas páginas), y <em>qetsef gadol</em>, «gran furor», es en lo demás siempre de Jehová. ⚠ La excepción es la más difícil: «Y hubo gran furor contra Israel» tras el sacrificio del rey de Moab (<a href="2-kings-3.es.html#v3-27">2 Reyes 3:27</a>, ya en estas páginas), donde el versículo no dice de quién fue.')
+
+DICTIONARY_ES["noqed"] = ("noqed",
+    'UN CRIADOR DE OVEJAS, palabra que está solo dos veces en la Biblia hebrea. <a href="amos-1.es.html#v1">Amós 1:1</a> (ya en estas páginas) cuenta a Amós entre los <em>noqedim</em> de Tecoa, y <a href="2-kings-3.es.html#v3-4">2 Reyes 3:4</a> (ya en estas páginas) llama <em>noqed</em> a Mesa rey de Moab, que pagaba a Israel cien mil corderos. No es la palabra corriente para pastor, y el griego de 2 Reyes solo la copia: <em>nōkēd</em>.')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict2k3_en("noqed", "2 Kings 3:4 calls MESHA KING OF MOAB a noqed", '<a href="2-kings-3.html#v3-4">2 Kings 3:4</a> (now on these pages) calls MESHA KING OF MOAB a noqed')
+_dict2k3_en("matzevah", add=' ⭐ Jehoram son of Ahab removes &lsquo;the standing stone of Baal&rsquo; (<a href="2-kings-3.html#v3-2">2 Kings 3:2</a>, now on these pages).')
+_dict2k3_es("matzevah", add=' ⭐ Joram hijo de Acab quita «la piedra alzada de Baal» (<a href="2-kings-3.es.html#v3-2">2 Reyes 3:2</a>, ya en estas páginas).')
+_dict2k3_en("pesha", add=' ⭐ The verb is used of Moab&rsquo;s break with Israel (<a href="2-kings-3.html#v3-5">2 Kings 3:5</a>, now on these pages).')
+_dict2k3_es("pesha", add=' ⭐ El verbo se usa de la ruptura de Moab con Israel (<a href="2-kings-3.es.html#v3-5">2 Reyes 3:5</a>, ya en estas páginas).')
+_dict2k3_en("olah", add=' ⚠ The king of Moab brings his firstborn up as an <em>olah</em> on the wall (<a href="2-kings-3.html#v3-27">2 Kings 3:27</a>, now on these pages).')
+_dict2k3_es("olah", add=' ⚠ El rey de Moab sube a su primogénito como <em>olah</em> sobre el muro (<a href="2-kings-3.es.html#v3-27">2 Reyes 3:27</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="mesha", name="Mesha king of Moab", kind="person", aliases=["Mesha"],
+    refs=[("2 Kings", 3, 4)], videos=[],
+    desc='The king of Moab, a sheep-breeder, who paid Israel a tribute in lambs and rams and rebelled when Ahab died (<a href="2-kings-3.html#v3-4">2 Kings 3:4&ndash;5</a>, now on these pages). Besieged by Israel, Judah and Edom, he brought up his firstborn son as a burnt offering on the wall, and the armies went home (3:27). ⭐ He is one of the few people in Kings who speaks for himself: the Mesha Stele, a basalt inscription usually dated about 840 BC, found at Dhiban in 1868, opens &lsquo;I am Mesha, son of Kemosh(yat), king of Moab, the Dibonite&rsquo;, as it is usually translated. It says that Omri oppressed Moab because Chemosh was angry with his land, and tells how Chemosh gave Mesha back his towns. It names no king of Israel but Omri, and it names Jehovah, whose vessels Mesha says he took at Nebo. What can be read does not describe the siege of 2 Kings 3, and its last lines are lost. It was broken up in 1869, and put back together with the help of a paper impression taken before the break. It is in the Louvre.'))
+ENCYCLOPEDIA_ES["mesha"] = ("Mesa rey de Moab",
+    'El rey de Moab, criador de ovejas, que pagaba a Israel un tributo de corderos y carneros y se rebeló cuando murió Acab (<a href="2-kings-3.es.html#v3-4">2 Reyes 3:4–5</a>, ya en estas páginas). Sitiado por Israel, Judá y Edom, subió a su hijo primogénito en holocausto sobre el muro, y los ejércitos volvieron a casa (3:27). ⭐ Es de las pocas personas de Reyes que hablan por sí mismas: la Estela de Mesa, una inscripción en basalto fechada por lo común hacia 840 a. C., hallada en Dhiban en 1868, empieza «Yo soy Mesa, hijo de Kemosh(yat), rey de Moab, el dibonita», como suele traducirse. Dice que Omri oprimió a Moab porque Quemos estaba enojado con su tierra, y cuenta cómo Quemos devolvió a Mesa sus ciudades. No nombra a ningún rey de Israel salvo Omri, y nombra a Jehová, cuyos vasos Mesa dice haber tomado en Nebo. Lo que puede leerse no describe el sitio de 2 Reyes 3, y sus últimas líneas se han perdido. Fue rota en 1869, y recompuesta con ayuda de una impresión en papel tomada antes de la rotura. Está en el Louvre.')
+
+ENCYCLOPEDIA.append(dict(slug="jehoram-israel", name="Jehoram of Israel", kind="person", aliases=["Jehoram son of Ahab"],
+    refs=[("2 Kings", 3, 1)], videos=[],
+    desc='Son of Ahab and brother of Ahaziah, king of Israel for twelve years (<a href="2-kings-3.html#v3-1">2 Kings 3:1</a>, now on these pages). He did evil, &lsquo;only not like his father and like his mother&rsquo;, and removed the standing stone of Baal. He marches on Moab with Jehoshaphat and the king of Edom. ⚠ Not to be confused with Jehoram of Judah, Jehoshaphat&rsquo;s son, who reigns at the same time (<a href="2-kings-1.html#v17">2 Kings 1:17</a>, now on these pages). The Hebrew calls this king both Jehoram and Joram, and some versions use only Joram.'))
+ENCYCLOPEDIA_ES["jehoram-israel"] = ("Joram de Israel",
+    'Hijo de Acab y hermano de Ocozías, rey de Israel doce años (<a href="2-kings-3.es.html#v3-1">2 Reyes 3:1</a>, ya en estas páginas). Hizo lo malo, «solo que no como su padre y como su madre», y quitó la piedra alzada de Baal. Marcha contra Moab con Josafat y el rey de Edom. ⚠ No debe confundirse con Joram de Judá, hijo de Josafat, que reina al mismo tiempo (<a href="2-kings-1.es.html#v17">2 Reyes 1:17</a>, ya en estas páginas).')
+
+ENCYCLOPEDIA.append(dict(slug="kir-hareseth", name="Kir-hareseth", kind="place", aliases=["Kir-hareseth"],
+    coords=(31.18, 35.70, 0.1), approx=True, modern="Usually identified with el-Kerak, Jordan",
+    refs=[("2 Kings", 3, 25)], videos=[],
+    desc='The Moabite stronghold where the campaign of <a href="2-kings-3.html#v3-25">2 Kings 3:25</a> (now on these pages) ends, with slingers around it and the king of Moab inside. The army leaves it standing. Isaiah and Jeremiah lament it, also as Kir-heres (Isaiah 16:7, 11; Jeremiah 48:31, 36, not yet on these pages). It is usually identified with el-Kerak in Jordan, though the identification is not certain.'))
+ENCYCLOPEDIA_ES["kir-hareseth"] = ("Kir-hareset",
+    'La fortaleza moabita donde termina la campaña de <a href="2-kings-3.es.html#v3-25">2 Reyes 3:25</a> (ya en estas páginas), con honderos alrededor y el rey de Moab dentro. El ejército la deja en pie. Isaías y Jeremías la lloran, también como Kir-heres (Isaías 16:7, 11; Jeremías 48:31, 36, todavía no en estas páginas). Suele identificarse con el-Kerak, en Jordania, aunque la identificación no es segura.')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k3_en("chemosh", "⚠ 2 Kings 3:27 reports Mesha sacrificing his own eldest son on the wall during a siege;", '⚠ <a href="2-kings-3.html#v3-27">2 Kings 3:27</a> (now on these pages) reports the king of Moab sacrificing his eldest son on the wall during a siege, and it does not say to whom;')
+_ency2k3_es("chemosh", "⚠ 2 Reyes 3:27 relata que Mesa sacrificó a su propio primogénito sobre la muralla durante un asedio.", '⚠ <a href="2-kings-3.es.html#v3-27">2 Reyes 3:27</a> (ya en estas páginas) relata que el rey de Moab sacrificó a su primogénito sobre el muro durante un asedio, y no dice a quién.')
+_ency2k3_en("moab", add=' &#11088; <a href="2-kings-3.html#v3-4">2 Kings 3</a> (now on these pages): Mesha rebels when Ahab dies, and three kings march around the Dead Sea against him.', ref=("2 Kings", 3, 4))
+_ency2k3_es("moab", add=' &#11088; <a href="2-kings-3.es.html#v3-4">2 Reyes 3</a> (ya en estas páginas): Mesa se rebela cuando muere Acab, y tres reyes marchan contra él rodeando el mar Muerto.')
+_ency2k3_en("elisha", add=' &#11088; <a href="2-kings-3.html#v3-11">2 Kings 3:11&ndash;19</a> (now on these pages): he is with the army in the desert, known as the man &lsquo;who poured water on the hands of Elijah&rsquo;, and asks for a player before he speaks.', ref=("2 Kings", 3, 11))
+_ency2k3_es("elisha", add=' &#11088; <a href="2-kings-3.es.html#v3-11">2 Reyes 3:11–19</a> (ya en estas páginas): está con el ejército en el desierto, conocido como el que «echaba agua en las manos de Elías», y pide un tañedor antes de hablar.')
+_ency2k3_en("jehoshaphat-king-of-judah", add=' &#11088; He goes up again with Ahab&rsquo;s son against Moab, in the same words (<a href="2-kings-3.html#v3-7">2 Kings 3:7</a>, now on these pages).', ref=("2 Kings", 3, 1))
+_ency2k3_es("jehoshaphat-king-of-judah", add=' &#11088; Sube otra vez con el hijo de Acab contra Moab, con las mismas palabras (<a href="2-kings-3.es.html#v3-7">2 Reyes 3:7</a>, ya en estas páginas).')
+_ency2k3_en("edom", ref=("2 Kings", 3, 8))
+
+CHRON_CHAPTERS["2kgs3"] = dict(era="monarchy",
+    when="Mesha of Moab rebels after Ahab’s death. Jehoram of Israel, Jehoshaphat and the king of Edom go around by the wilderness and run out of water. Elisha calls for a player and promises water and Moab. Water comes from Edom, Moab takes it for blood and is routed, and at Kir-hareseth the king of Moab offers his firstborn on the wall, and the armies go home.",
+    clock="Jehoram’s eighteenth-year date (3:1) stands beside the different reckoning of 1:17. The Mesha Stele, usually dated about 840 BC, gives Moab’s own account of these years, and what can be read of it does not describe this campaign.")
+
+CHAPTER_ART["2kgs3"] = [dict(
+    file="mesha-stele-louvre.jpg",
+    title="The Mesha Stele", title_es="La Estela de Mesa",
+    artist="Inscription of Mesha, king of Moab; photograph by Tangopaso", artist_es="Inscripción de Mesa, rey de Moab; fotografía de Tangopaso",
+    year="about 840 BC",
+    location="Musée du Louvre, Paris, AO 5066", location_es="Museo del Louvre, París, AO 5066",
+    alt="A tall slab of dark stone with a rounded top and a raised border, standing against a pale wall. Rows of small incised letters cross its face. Large rough patches and clear cracks show that it was broken and put back together.",
+    alt_es="Una alta losa de piedra oscura con la parte superior redondeada y un borde en relieve, de pie contra una pared clara. Hileras de pequeñas letras incisas cruzan su cara. Grandes zonas ásperas y grietas visibles muestran que fue rota y recompuesta.",
+    note="2 Kings 3:4&ndash;5. This is the king of this chapter, in his own words and his own script, at about the time of the events. It was found at Dhiban in 1868, broken up in 1869, and put back together with the help of a paper impression taken before the break. The joins can be seen.",
+    note_es="2 Reyes 3:4–5. Es el rey de este capítulo, con sus propias palabras y su propia escritura, más o menos en la época de los hechos. Se halló en Dhiban en 1868, fue rota en 1869 y recompuesta con ayuda de una impresión en papel tomada antes de la rotura. Se ven las junturas.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Mesha_stele_(Louvre,_AO_5066).jpg",
+)]
