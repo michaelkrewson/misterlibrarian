@@ -56960,3 +56960,120 @@ CHAPTER_ART["1kgs22"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:093.The_Death_of_Ahab.jpg",
 )]
+
+# --- 2 Kings 2 ---
+def _swap2k(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("searah", "se'arah", "סְעָרָה", "se'arah",
+    'A STORM, a whirlwind. Elijah goes up in it, with the article both times, &lsquo;the whirlwind&rsquo; (<a href="2-kings-2.html#v2-1">2 Kings 2:1</a>, <a href="2-kings-2.html#v2-11">11</a>, now on these pages). ⭐ Jehovah answers Job out of it (Job 38:1, not yet on these pages). The Greek has <em>sysseismos</em>, a shaking, at 2 Kings 2, its word for the earthquake at Horeb.',
+    ("2 Kings", 2, 1)))
+DICTIONARY_ES["searah"] = ("se'arah",
+    'UNA TEMPESTAD, un torbellino. Elías sube en él, con artículo las dos veces, «el torbellino» (<a href="2-kings-2.es.html#v2-1">2 Reyes 2:1</a>, <a href="2-kings-2.es.html#v2-11">11</a>, ya en estas páginas). ⭐ Jehová responde a Job desde él (Job 38:1, todavía no en estas páginas). El griego tiene <em>sysseismos</em>, sacudida, en 2 Reyes 2, su palabra para el terremoto de Horeb.')
+
+DICTIONARY.append(("tselochit", "tselochit", "צְלֹחִית", "tselochit",
+    'A JAR or small dish, of a kind nobody can now describe: the word stands only at <a href="2-kings-2.html#v2-20">2 Kings 2:20</a> (now on these pages), the new vessel that carries Elisha&rsquo;s salt. The shelf has &lsquo;cruse&rsquo;, &lsquo;bowl&rsquo; and &lsquo;vessel&rsquo;.',
+    ("2 Kings", 2, 20)))
+DICTIONARY_ES["tselochit"] = ("tselojit",
+    'UN JARRO o plato pequeño, de una clase que hoy nadie puede describir: la palabra está solo en <a href="2-kings-2.es.html#v2-20">2 Reyes 2:20</a> (ya en estas páginas), la vasija nueva que lleva la sal de Eliseo. El estante tiene «botija», «vasija» y «escudilla».')
+
+DICTIONARY.append(("qereach", "qereach", "קֵרֵחַ", "qereach",
+    'BALD. The law rules on it: &lsquo;he is bald &mdash; he is clean&rsquo; (<a href="leviticus-13.html#v13-40">Leviticus 13:40</a>, now on these pages). ⭐ It is the taunt at Bethel, &lsquo;Go up, baldhead!&rsquo; (<a href="2-kings-2.html#v2-23">2 Kings 2:23</a>, now on these pages), thrown at the heir of &lsquo;a man possessed of hair&rsquo; (<a href="2-kings-1.html#v8">2 Kings 1:8</a>, now on these pages).',
+    ("2 Kings", 2, 23)))
+DICTIONARY_ES["qereach"] = ("qereaj",
+    'CALVO. La ley lo resuelve: «está calvo &mdash;está puro» (<a href="leviticus-13.es.html#v13-40">Levítico 13:40</a>, ya en estas páginas). ⭐ Es la burla de Betel, «¡Sube, calvo!» (<a href="2-kings-2.es.html#v2-23">2 Reyes 2:23</a>, ya en estas páginas), lanzada al heredero de «un hombre poseedor de pelo» (<a href="2-kings-1.es.html#v8">2 Reyes 1:8</a>, ya en estas páginas).')
+
+DICTIONARY.append(("dov", "dov", "דֹּב", "dov",
+    'A BEAR. David fought one for his sheep (<a href="1-samuel-17.html#v17-34">1 Samuel 17:34</a>, now on these pages). ⭐ The bear of the proverbs is &lsquo;bereaved&rsquo; (<a href="2-samuel-17.html#v17-8">2 Samuel 17:8</a>, now on these pages; Proverbs 17:12 and Hosea 13:8, not yet on these pages). At <a href="2-kings-2.html#v2-24">2 Kings 2:24</a> (now on these pages) there are two, and the feminine numeral makes them she-bears.',
+    ("2 Kings", 2, 24)))
+DICTIONARY_ES["dov"] = ("dov",
+    'UN OSO. David peleó con uno por sus ovejas (<a href="1-samuel-17.es.html#v17-34">1 Samuel 17:34</a>, ya en estas páginas). ⭐ La osa de los proverbios es la «privada de sus crías» (<a href="2-samuel-17.es.html#v17-8">2 Samuel 17:8</a>, ya en estas páginas; Proverbios 17:12 y Oseas 13:8, todavía no en estas páginas). En <a href="2-kings-2.es.html#v2-24">2 Reyes 2:24</a> (ya en estas páginas) son dos, y el numeral femenino las hace osas.')
+
+DICTIONARY.append(("shakal", "shakal", "שָׁכַל", "shakal",
+    'TO LOSE CHILDREN, to be bereaved; in the intensive, to bereave, to miscarry. Rebekah fears it, &lsquo;Why should I be bereaved of you both in one day?&rsquo; (<a href="genesis-27.html#v27-45">Genesis 27:45</a>, now on these pages), and the law promises against it (<a href="exodus-23.html#v23-26">Exodus 23:26</a>, now on these pages). ⭐ The land at Jericho &lsquo;bereaves&rsquo; until Elisha&rsquo;s salt (<a href="2-kings-2.html#v2-19">2 Kings 2:19</a>, <a href="2-kings-2.html#v2-21">21</a>, now on these pages). The shelf divides between miscarriage and barren ground.',
+    ("2 Kings", 2, 19)))
+DICTIONARY_ES["shakal"] = ("shakal",
+    'PERDER HIJOS, quedar sin ellos; en la forma intensiva, dejar sin hijos, abortar. Rebeca lo teme en Génesis 27:45 (ya en estas páginas, todavía no en español), y la ley promete contra ello (<a href="exodus-23.es.html#v23-26">Éxodo 23:26</a>, ya en estas páginas). ⭐ La tierra de Jericó «deja sin hijos» hasta la sal de Eliseo (<a href="2-kings-2.es.html#v2-19">2 Reyes 2:19</a>, <a href="2-kings-2.es.html#v2-21">21</a>, ya en estas páginas). El estante se divide entre aborto y tierra estéril.')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict2k_en("melach", "(2 Kings 2:20-21, not yet on these pages)", '(<a href="2-kings-2.html#v2-20">2 Kings 2:20&ndash;21</a>, now on these pages)')
+_dict2k_es("melach", "(2 Reyes 2:20-21, todavía no en estas páginas)", '(<a href="2-kings-2.es.html#v2-20">2 Reyes 2:20–21</a>, ya en estas páginas)')
+_dict2k_en("charavah", "2 Kings 2:8 (not yet on these pages)", '<a href="2-kings-2.html#v2-8">2 Kings 2:8</a> (now on these pages)')
+_dict2k_es("charavah", "2 Reyes 2:8 (todavía no en estas páginas)", '<a href="2-kings-2.es.html#v2-8">2 Reyes 2:8</a> (ya en estas páginas)')
+_dict2k_en("adderet", "now on these pages; 2 Kings 2:8, 13, 14)", 'now on these pages; <a href="2-kings-2.html#v2-8">2 Kings 2:8, 13, 14</a>, now on these pages)')
+_dict2k_es("adderet", "ya en estas páginas; 2 Reyes 2:8, 13, 14)", 'ya en estas páginas; <a href="2-kings-2.es.html#v2-8">2 Reyes 2:8, 13, 14</a>, ya en estas páginas)')
+_dict2k_en("harpazo", "2 Kings 2:16 (not yet on these pages)", '<a href="2-kings-2.html#v2-16">2 Kings 2:16</a> (now on these pages)')
+_dict2k_es("harpazo", "2 Reyes 2:16 (todavía no en estas páginas)", '<a href="2-kings-2.es.html#v2-16">2 Reyes 2:16</a> (ya en estas páginas)')
+_dict2k_en("analambano", "(2 Kings 2:9-11)", '(<a href="2-kings-2.html#v2-9">2 Kings 2:9&ndash;11</a>, now on these pages)')
+_dict2k_es("analambano", "(2 Reyes 2:9-11)", '(<a href="2-kings-2.es.html#v2-9">2 Reyes 2:9–11</a>, ya en estas páginas)')
+_dict2k_en("bekhorah", "2 Kings 2:9, Elisha asking", '<a href="2-kings-2.html#v2-9">2 Kings 2:9</a> (now on these pages), Elisha asking')
+_dict2k_en("naar", add=' ⭐ <em>Ne&rsquo;arim qetannim</em>, &lsquo;little youths&rsquo;, mock Elisha at Bethel (<a href="2-kings-2.html#v2-23">2 Kings 2:23</a>, now on these pages), the phrase Solomon uses of himself as king (<a href="1-kings-3.html#v3-7">1 Kings 3:7</a>, now on these pages). The shelf runs from &lsquo;little children&rsquo; to &lsquo;a gang of young men&rsquo;, and the words do not give an age.')
+_dict2k_es("naar", add=' ⭐ <em>Ne’arim qetannim</em>, «jovencitos», se burlan de Eliseo en Betel (<a href="2-kings-2.es.html#v2-23">2 Reyes 2:23</a>, ya en estas páginas), la frase que Salomón usa de sí mismo siendo rey (<a href="1-kings-3.es.html#v3-7">1 Reyes 3:7</a>, ya en estas páginas). Las palabras no dan una edad.')
+
+# ---------- encyclopedia: new entry ----------
+ENCYCLOPEDIA.append(dict(slug="sons-of-the-prophets", name="The sons of the prophets", kind="thing", aliases=["the sons of the prophets", "sons of the prophets"],
+    refs=[("1 Kings", 20, 35), ("2 Kings", 2, 3)], videos=[],
+    desc='Bands of prophets who appear around Elijah and Elisha. <span data-heb="בני הנביאים">The phrase stands in ten verses of the Hebrew Bible</span>, all of them in Kings, from <a href="1-kings-20.html#v20-35">1 Kings 20:35</a> (now on these pages) on. &lsquo;Sons&rsquo; is usually taken to mark membership of a group, not birth. They are at Bethel and Jericho and they know that Elijah will be taken (<a href="2-kings-2.html#v2-3">2 Kings 2:3</a>, <a href="2-kings-2.html#v2-5">5</a>, now on these pages), and fifty of them watch from far off. One of them has a widow who comes to Elisha for help (2 Kings 4:1, not yet on these pages), so they are not all young, and not all single. The text does not say how they were organised. The TLB&rsquo;s &lsquo;Seminary&rsquo; is its own.'))
+ENCYCLOPEDIA_ES["sons-of-the-prophets"] = ("Los hijos de los profetas",
+    'Grupos de profetas que aparecen en torno a Elías y Eliseo. <span data-heb="בני הנביאים">La frase está en diez versículos de la Biblia hebrea</span>, todos en Reyes, desde <a href="1-kings-20.es.html#v20-35">1 Reyes 20:35</a> (ya en estas páginas). «Hijos» suele entenderse como pertenencia a un grupo, no nacimiento. Están en Betel y en Jericó y saben que Elías será tomado (<a href="2-kings-2.es.html#v2-3">2 Reyes 2:3</a>, <a href="2-kings-2.es.html#v2-5">5</a>, ya en estas páginas), y cincuenta de ellos miran desde lejos. Uno de ellos deja una viuda que acude a Eliseo (2 Reyes 4:1, todavía no en estas páginas), así que no todos son jóvenes ni solteros. El texto no dice cómo estaban organizados.')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k_en("elisha", "(2 Kings 2:9)", '(<a href="2-kings-2.html#v2-9">2 Kings 2:9</a>, now on these pages)', ref=("2 Kings", 2, 1))
+_ency2k_en("elisha", "None of the Elisha chapters is yet on these pages.", 'The rest of the Elisha chapters are not yet on these pages.', add=' &#11088; <a href="2-kings-2.html#v2-1">2 Kings 2</a> (now on these pages): he will not leave Elijah, asks for the firstborn&rsquo;s double share, sees him taken, lifts the mantle, heals the spring at Jericho, and curses the youths at Bethel.')
+_ency2k_es("elisha", "(2 Reyes 2:9)", '(<a href="2-kings-2.es.html#v2-9">2 Reyes 2:9</a>, ya en estas páginas)')
+_ency2k_es("elisha", "Ninguno de los capítulos de Eliseo está todavía en estas páginas.", 'El resto de los capítulos de Eliseo todavía no está en estas páginas.', add=' &#11088; <a href="2-kings-2.es.html#v2-1">2 Reyes 2</a> (ya en estas páginas): no quiere dejar a Elías, pide la porción doble del primogénito, lo ve tomado, levanta el manto, sana el manantial de Jericó y maldice a los jovencitos de Betel.')
+_ency2k_en("elijah", add=' &#11088; <a href="2-kings-2.html#v2-1">2 Kings 2</a> (now on these pages): he walks from Gilgal to the Jordan, divides it with his mantle, and goes up in the whirlwind. The chariot of fire parts him from Elisha; the Hebrew does not put him in it.', ref=("2 Kings", 2, 1))
+_ency2k_es("elijah", add=' &#11088; <a href="2-kings-2.es.html#v2-1">2 Reyes 2</a> (ya en estas páginas): camina de Gilgal al Jordán, lo divide con su manto y sube en el torbellino. El carro de fuego lo separa de Eliseo; el hebreo no lo pone en él.')
+_ency2k_en("jordan", "the same river Elijah will divide (2 Kings 2:8) and Naaman be dipped in (5:14)", 'the same river Elijah divides (<a href="2-kings-2.html#v2-8">2 Kings 2:8</a>, now on these pages) and Naaman will be dipped in (5:14)', ref=("2 Kings", 2, 6))
+_ency2k_en("jericho", add=' &#11088; Elisha heals its spring with salt, and the water is &lsquo;healed, to this day&rsquo; (<a href="2-kings-2.html#v2-19">2 Kings 2:19&ndash;22</a>, now on these pages). Josephus tells the same story of a spring beside the old city (<em>Jewish War</em> 4.459&ndash;464).', ref=("2 Kings", 2, 4))
+_ency2k_es("jericho", add=' &#11088; Eliseo sana su manantial con sal, y el agua queda sana «hasta el día de hoy» (<a href="2-kings-2.es.html#v2-19">2 Reyes 2:19–22</a>, ya en estas páginas). Josefo cuenta la misma historia de un manantial junto a la ciudad antigua (<em>Guerra de los judíos</em> 4.459–464).')
+_ency2k_en("bethel", ref=("2 Kings", 2, 2))
+_ency2k_en("gilgal", ref=("2 Kings", 2, 1))
+_ency2k_en("carmel", ref=("2 Kings", 2, 25))
+
+CHRON_CHAPTERS["2kgs2"] = dict(era="monarchy",
+    when="Elijah walks from Gilgal to Bethel to Jericho to the Jordan, and Elisha will not leave him. He divides the river with his mantle; a chariot of fire parts the two of them, and he goes up in the whirlwind. Elisha takes up the mantle, heals the spring at Jericho, and is mocked on the road to Bethel.",
+    clock="The chapter has no date. It stands between the death of Ahaziah (2 Kings 1:17) and the account of Jehoram of Israel (3:1), and 2 Chronicles 21:12 (not yet on these pages) has a letter from Elijah that readers date in different ways.")
+
+CHAPTER_ART["2kgs2"] = [dict(
+    file="dore-elijah-ascends.jpg",
+    title="Elijah Ascends to Heaven in a Chariot of Fire", title_es="Elías sube al cielo en un carro de fuego",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Wood engraving, from Doré’s illustrated Bible", location_es="Grabado en madera, de la Biblia ilustrada de Doré",
+    alt="A black-and-white engraving. High in dark clouds, an old bearded man in long robes stands in a small chariot with his right arm raised, and flames stream behind him. The chariot is drawn by horses with great wings. Far below, a bearded man in a heavy cloak has fallen back on broad stone steps beside a massive wall, his face turned up to the sky.",
+    alt_es="Un grabado en blanco y negro. En lo alto, entre nubes oscuras, un anciano barbado de largas vestiduras está de pie en un pequeño carro con el brazo derecho en alto, y las llamas ondean tras él. Tiran del carro caballos con grandes alas. Muy abajo, un hombre barbado con un manto pesado ha caído hacia atrás sobre anchos escalones de piedra junto a un muro macizo, con el rostro vuelto al cielo.",
+    note="2 Kings 2:11&ndash;12. This is the picture most readers have, and the Hebrew does not paint it. Doré puts Elijah in the chariot; the verse has the chariot part the two men, and Elijah go up in the whirlwind. The horses are of fire, without wings, and the two men are past the Jordan, not on stone steps.",
+    note_es="2 Reyes 2:11–12. Esta es la imagen que tienen la mayoría de los lectores, y el hebreo no la pinta. Doré pone a Elías en el carro; el versículo hace que el carro separe a los dos hombres y que Elías suba en el torbellino. Los caballos son de fuego, sin alas, y los dos hombres están al otro lado del Jordán, no sobre escalones de piedra.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:095.Elijah_Ascends_to_Heaven_in_a_Chariot_of_Fire.jpg",
+)]
