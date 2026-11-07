@@ -40,22 +40,41 @@ async function sitemap(request, env, blog) {
   return new Response(xml, { headers });
 }
 
+// Security headers on every response (AR-635). HSTS without includeSubDomains/preload on purpose: it is one site's promise.
+// frame-ancestors only: a script CSP would break the AdSense, YouTube and X embeds these pages carry.
+const SECURITY = {
+  "strict-transport-security": "max-age=31536000",
+  "x-content-type-options": "nosniff",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "content-security-policy": "frame-ancestors 'self'",
+};
+export function secure(res) {
+  const headers = new Headers(res.headers);        // a redirect's own headers are read-only, so copy
+  for (const [k, v] of Object.entries(SECURITY)) headers.set(k, v);
+  return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
+}
+
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
-    const blog = env.BLOG || "";
-    const stray = (STRAY[blog] || {})[url.pathname];
-    if (stray) return Response.redirect(url.origin + stray, 301);
-    if (url.pathname === "/sitemap.xml" && (MOVED[blog] || HOME[blog])) return sitemap(request, env, blog);
-    const to = (MOVED[blog] || {})[url.pathname];
-    if (to) return Response.redirect(AGORAI + to, 301);
-    if (HOME[blog] && (url.pathname.endsWith("/") || url.pathname.endsWith(".html"))) {
-      return Response.redirect(AGORAI + HOME[blog], 301);
-    }
-    if (url.pathname.endsWith("/")) {
-      url.pathname += "index.html";
-      return env.ASSETS.fetch(new Request(url, request));
-    }
-    return env.ASSETS.fetch(request);
+    return secure(await route(request, env));
   },
 };
+
+async function route(request, env) {
+  const url = new URL(request.url);
+  const blog = env.BLOG || "";
+  const stray = (STRAY[blog] || {})[url.pathname];
+  if (stray) return Response.redirect(url.origin + stray, 301);
+  if (url.pathname === "/sitemap.xml" && (MOVED[blog] || HOME[blog])) return sitemap(request, env, blog);
+  const to = (MOVED[blog] || {})[url.pathname];
+  if (to) return Response.redirect(AGORAI + to, 301);
+  if (HOME[blog] && (url.pathname.endsWith("/") || url.pathname.endsWith(".html"))) {
+    return Response.redirect(AGORAI + HOME[blog], 301);
+  }
+  if (url.pathname.endsWith("/")) {
+    url.pathname += "index.html";
+    return env.ASSETS.fetch(new Request(url, request));
+  }
+  return env.ASSETS.fetch(request);
+}
