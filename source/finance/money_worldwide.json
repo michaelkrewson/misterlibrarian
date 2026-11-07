@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 13:55 UTC",
+ "generated": "2026-11-07 22:39 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-11-06",
@@ -624,7 +624,7 @@
   "total_usd": 3512013865559.8438,
   "world_official_tonnes_estimate": 36600,
   "price_usd_oz": 4074.89990234375,
-  "price_as_of": "2026-11-07 13:53 UTC",
+  "price_as_of": "2026-11-07 22:37 UTC",
   "world_market_value_usd": 28333109957671.492,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 75831.7578125,
-  "market_cap_usd": 1524910533416.3735,
+  "price_usd": 75673.578125,
+  "market_cap_usd": 1521743630508.789,
   "btc_rank": 11,
-  "volatility_pct": null,
-  "turnover_usd": null,
-  "broad_yoy_pct": 0.8173526918679754,
+  "volatility_pct": 36.51316788505375,
+  "turnover_usd": 11246355504.731037,
+  "broad_yoy_pct": 0.817345197654072,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2022,7 +2022,7 @@
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1524910533416.3735,
+    "usd": 1521743630508.789,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
