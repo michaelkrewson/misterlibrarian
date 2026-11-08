@@ -4691,6 +4691,30 @@ def _note_nudge(title, path, top=False, square="scripture", chapter=False):
             '</div>')
 
 
+# Hand-picked Micwyn conversations that discuss how a religious body READS a passage.
+# (book, chapter) -> [(micwyn path, link text)]. The text must say whose reading it is: a link
+# on a Bible page can otherwise look like this site's own commentary (Michael 2026-11-08).
+# Styled inline on purpose: a style.css edit re-hashes the ?v= on every one of ~9,500 pages.
+MICWYN_RELATED = {
+    ("Psalms", 91): [("/t/1714", "How Jehovah's Witnesses now read this psalm (Watchtower, Nov 2026)")],
+    ("Matthew", 4): [("/t/1714", "How Jehovah's Witnesses now read Satan's quotation of Psalm 91 (Watchtower, Nov 2026)")],
+    ("Revelation", 17): [("/t/1715", "Jehovah's Witnesses revise what moves the nations in verses 16-17 (Watchtower, Nov 2025)")],
+}
+
+
+def _micwyn_related(book, num):
+    """A small 'Discussed on Micwyn' line for chapters in MICWYN_RELATED, else ''."""
+    rows = MICWYN_RELATED.get((book, num))
+    if not rows:
+        return ""
+    links = "".join(
+        f'<li><a href="https://micwyn.com{html.escape(p, quote=True)}" target="_blank" '
+        f'rel="noopener" style="text-decoration:underline">{html.escape(t)}</a></li>'
+        for p, t in rows)
+    return ('<div class="micwyn-related" style="max-width:760px;margin:-6px auto 16px;font-size:12.5px">'
+            f'<b>Discussed on Micwyn</b><ul style="margin:4px 0 0;padding-left:18px">{links}</ul></div>')
+
+
 def _insert_before_first_verse(content, html_block):
     """Splice `html_block` in immediately before the first verse (the first
     `<div class="vrs"`) — the exact spot reader-notes.js's removed chap-notes
@@ -4718,7 +4742,8 @@ def build_chapter_pages(chapters):
         content, has_es = inject_spanish(content, slug, es_panels)
         content = _insert_before_first_verse(
             content, _note_nudge(f"{book} {num}", chapter_filename(book, num), top=True,
-                        square="scripture/greek" if _is_nt(book) else "scripture/hebrew", chapter=True))
+                        square="scripture/greek" if _is_nt(book) else "scripture/hebrew", chapter=True)
+            + _micwyn_related(book, num))
         orig_lang = _source_lang(book, num)   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
