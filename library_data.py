@@ -57286,3 +57286,92 @@ CHAPTER_ART["2kgs4"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Augustin_Hirschvogel,_Elisha_Raises_the_Son_of_the_Shunammite,_1547,_NGA_39364.jpg",
 )]
+
+# --- 2 Kings 5 ---
+def _swap2k5(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k5_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k5(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k5_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k5(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k5_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k5(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k5_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k5(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entry ----------
+# the entry for asaf already exists (the idiom of dying); extend it for the cure
+_dict2k5_en("asaf", add=' &#11088; The same verb is the cure in <a href="2-kings-5.html#v5-3">2 Kings 5:3</a> (now on these pages): the girl says the prophet &lsquo;would gather him in&rsquo; from his scaly disease, the letter says &lsquo;you shall gather him in&rsquo; (5:6), the king of Israel asks whether he is to &lsquo;gather a man in&rsquo; (5:7), and Naaman had thought Elisha would &lsquo;gather in&rsquo; the one with the scaly disease (5:11): four verses. It is also the verb of Miriam in <a href="numbers-12.html#v12-14">Numbers 12:14&ndash;15</a> (now on these pages), shut up outside the camp seven days and then &lsquo;gathered back in&rsquo;. &#9888; Whether the verb keeps that picture of the camp in Kings or means only &lsquo;take away&rsquo; is open, and the English shelf spreads: &lsquo;recover&rsquo; (ASV, KJV, NWT 1984), &lsquo;cure&rsquo; (NIV), &lsquo;heal&rsquo; (TLB, Douay), &lsquo;deliver&rsquo; (Geneva). The Greek Bible in the Vaticanus tradition has the compound <em>aposynaxei</em>, &lsquo;gather away&rsquo;. See <a href="dictionary.html#tzaraat">tzaraat</a>.')
+_dict2k5_es("asaf", add=' &#11088; El mismo verbo es la cura en <a href="2-kings-5.es.html#v5-3">2 Reyes 5:3</a> (ya en estas páginas): la niña dice que el profeta «lo recogería» de su enfermedad escamosa, la carta dice «tú lo recogerás» (5:6), el rey de Israel pregunta si ha de «recoger a un hombre» (5:7), y Naamán había pensado que Eliseo «recogería» al que tiene la enfermedad escamosa (5:11): cuatro versículos. Es también el verbo de Miriam en <a href="numbers-12.es.html#v12-14">Números 12:14–15</a> (ya en estas páginas), encerrada fuera del campamento siete días y luego «recogida de nuevo». &#9888; Si el verbo conserva en Reyes esa imagen del campamento o significa solo «quitar» queda abierto, y el estante español se reparte: «sanaría» (RV 1909, RV60, NVI) y «daría recobro» (TNM 1987). El griego de la tradición del Vaticano tiene el compuesto <em>aposynaxei</em>, «recoger lejos». Véase <a href="diccionario.html#tzaraat">tzaraat</a>.')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict2k5_en("taval", "and 2 Kings 5:14 (not yet on these pages), Naaman going down", "and <a href=\"2-kings-5.html#v5-14\">2 Kings 5:14</a> (now on these pages), Naaman going down")
+_dict2k5_es("taval", "y 2 Reyes 5:14 (todavía no en estas páginas), Naamán bajando", "y <a href=\"2-kings-5.es.html#v5-14\">2 Reyes 5:14</a> (ya en estas páginas), Naamán bajando")
+_dict2k5_en("tzaraat", add=' &#11088; <a href="2-kings-5.html#v5-1">2 Kings 5</a> (now on these pages): the root stands in six of its verses (1, 3, 6, 7, 11 and 27); Naaman is &lsquo;one with the scaly disease&rsquo; in Aram, and Gehazi goes out from Elisha &lsquo;one with the scaly disease, white as snow&rsquo; (5:27). See <a href="dictionary.html#asaf">asaf</a>.')
+_dict2k5_es("tzaraat", add=' &#11088; <a href="2-kings-5.es.html#v5-1">2 Reyes 5</a> (ya en estas páginas): la raíz está en seis de sus versículos (1, 3, 6, 7, 11 y 27); Naamán es «uno con la enfermedad escamosa» en Aram, y Giezi sale de delante de Eliseo «uno con la enfermedad escamosa, blanco como la nieve» (5:27). Véase <a href="diccionario.html#asaf">asaf</a>.')
+_dict2k5_en("ketiv-qere", add=' &#11088; 2 Kings 5 has two pairs, Amanah for Abanah at verse 12 and <em>me&rsquo;ayin</em> at verse 25, and a bare <em>na</em> at verse 18 with no reading beside it (<a href="2-kings-5.html#v5-12">2 Kings 5:12</a>, now on these pages).')
+_dict2k5_es("ketiv-qere", add=' &#11088; 2 Reyes 5 tiene dos pares, Amaná por Abaná en el versículo 12 y <em>me’ayin</em> en el 25, y un <em>na</em> desnudo en el 18 sin lectura a su lado (<a href="2-kings-5.es.html#v5-12">2 Reyes 5:12</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="abana-pharpar", name="Amanah and Pharpar", kind="place", aliases=["Amanah", "Abana", "Abanah", "Pharpar"],
+    coords=(33.51, 36.29, 0.2), approx=True, modern="Often identified with the Barada and the A'waj, the rivers of the Damascus oasis; not certain",
+    refs=[("2 Kings", 5, 12)], videos=[],
+    desc='The two rivers of Damascus that Naaman names, &lsquo;better than all the waters of Israel&rsquo; (<a href="2-kings-5.html#v5-12">2 Kings 5:12</a>, now on these pages). The Hebrew line prints the first as <em>avanah</em> and reads it <em>amanah</em>, and Radak says the river was called both; the Greek Bible in the Vaticanus tradition has Abana and Pharphar. The verse names only these two. The coordinates are those of Damascus and are approximate.'))
+ENCYCLOPEDIA_ES["abana-pharpar"] = ("Amaná y Farfar",
+    'Los dos ríos de Damasco que Naamán nombra, «mejores que todas las aguas de Israel» (<a href="2-kings-5.es.html#v5-12">2 Reyes 5:12</a>, ya en estas páginas). La línea hebrea imprime el primero como <em>avanah</em> y lo lee <em>amanah</em>, y Radak dice que el río se llamaba de ambas maneras; el griego de la tradición del Vaticano tiene Abana y Pharphar. El versículo nombra solo estos dos. Las coordenadas son las de Damasco y son aproximadas.')
+
+ENCYCLOPEDIA.append(dict(slug="house-of-rimmon", name="The house of Rimmon", kind="thing", aliases=["house of Rimmon", "Rimmon"],
+    refs=[("2 Kings", 5, 18)], videos=[],
+    desc='The house where Naaman&rsquo;s king bows down, and where Naaman asks to be pardoned for bowing beside him (<a href="2-kings-5.html#v5-18">2 Kings 5:18</a>, now on these pages). The phrase stands in this one verse, three times. Rashi says only &lsquo;the name of an idol&rsquo;, and the king of Aram at <a href="1-kings-15.html#v15-18">1 Kings 15:18</a> (now on these pages) is Ben-hadad son of Tabrimmon, a name that ends in the same word. The verse does not say where the house stood, and Elisha answers, &lsquo;Go in peace&rsquo;.'))
+ENCYCLOPEDIA_ES["house-of-rimmon"] = ("La casa de Rimón",
+    'La casa donde el rey de Naamán se inclina, y donde Naamán pide ser perdonado por inclinarse a su lado (<a href="2-kings-5.es.html#v5-18">2 Reyes 5:18</a>, ya en estas páginas). La frase está en este solo versículo, tres veces. Rashi dice solo «nombre de un ídolo», y el rey de Aram de <a href="1-kings-15.es.html#v15-18">1 Reyes 15:18</a> (ya en estas páginas) es Ben-adad hijo de Tabrimón, un nombre que termina con la misma palabra. El versículo no dice dónde estaba la casa, y Eliseo responde: «Ve en paz».')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k5_en("naaman", "2 Kings 5 is not yet on these pages.", "&#11088; <a href=\"2-kings-5.html#v5-1\">2 Kings 5</a> is now on these pages: he is \"one with the scaly disease\" in Aram, asks pardon for bowing in the <a href=\"encyclopedia.html#house-of-rimmon\">house of Rimmon</a>, and leaves Elisha clean.", ref=("2 Kings", 5, 1))
+_ency2k5_es("naaman", "2 Reyes 5 no está todavía en estas páginas.", "&#11088; <a href=\"2-kings-5.es.html#v5-1\">2 Reyes 5</a> ya está en estas páginas: es «uno con la enfermedad escamosa» en Aram, pide perdón por inclinarse en la <a href=\"enciclopedia.html#house-of-rimmon\">casa de Rimón</a>, y se va limpio de Eliseo.")
+_ency2k5_en("gehazi", "His story continues in 2 Kings 5 and 8 (not yet on these pages).", "&#11088; In <a href=\"2-kings-5.html#v5-20\">2 Kings 5:20&ndash;27</a> (now on these pages) he runs after Naaman for what Elisha would not take, lies to Elisha, and goes out from him &lsquo;one with the scaly disease, white as snow&rsquo;; 2 Kings 8:4&ndash;5 (not yet on these pages) has him telling a king the great things Elisha has done.", ref=("2 Kings", 5, 20))
+_ency2k5_es("gehazi", "Su historia sigue en 2 Reyes 5 y 8 (todavía no en estas páginas).", "&#11088; En <a href=\"2-kings-5.es.html#v5-20\">2 Reyes 5:20–27</a> (ya en estas páginas) corre tras Naamán por lo que Eliseo no quiso tomar, miente a Eliseo, y sale de delante de él «uno con la enfermedad escamosa, blanco como la nieve»; 2 Reyes 8:4–5 (todavía no en estas páginas) lo tiene contando a un rey las grandes cosas que ha hecho Eliseo.")
+_ency2k5_en("elisha", add=' &#11088; <a href="2-kings-5.html#v5-8">2 Kings 5</a> (now on these pages): he sends a messenger to Naaman instead of coming out, refuses the blessing Naaman offers, and tells Gehazi that his heart went with him.')
+_ency2k5_es("elisha", add=' &#11088; <a href="2-kings-5.es.html#v5-8">2 Reyes 5</a> (ya en estas páginas): envía un mensajero a Naamán en vez de salir, rehúsa la bendición que Naamán le ofrece, y dice a Giezi que su corazón fue con él.')
+_ency2k5_en("jordan", add=' &#11088; Naaman goes down and dips in it seven times (<a href="2-kings-5.html#v5-14">2 Kings 5:14</a>, now on these pages).')
+_ency2k5_es("jordan", add=' &#11088; Naamán baja y se sumerge en él siete veces (<a href="2-kings-5.es.html#v5-14">2 Reyes 5:14</a>, ya en estas páginas).')
+_ency2k5_en("damascus", add=' &#11088; Its rivers, <a href="encyclopedia.html#abana-pharpar">Amanah and Pharpar</a>, are the ones Naaman thinks better than all the waters of Israel (<a href="2-kings-5.html#v5-12">2 Kings 5:12</a>, now on these pages).')
+_ency2k5_es("damascus", add=' &#11088; Sus ríos, <a href="enciclopedia.html#abana-pharpar">Amaná y Farfar</a>, son los que Naamán cree mejores que todas las aguas de Israel (<a href="2-kings-5.es.html#v5-12">2 Reyes 5:12</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["2kgs5"] = dict(era="monarchy",
+    when="A captive girl from Israel tells the wife of Naaman, the commander of Aram’s army, who has the scaly disease, that a prophet in Samaria could gather him in. The king of Aram sends him with a letter and gifts to the king of Israel, who tears his clothes; Elisha sends word that Naaman should come to him. Elisha does not come out, and tells him through a messenger to wash in the Jordan seven times. Naaman is angry, his servants talk him round, he dips seven times and is clean, and he offers a blessing that Elisha refuses. Gehazi runs after him, takes two talents of silver and two changes of garments by a lie, and is told that Naaman’s disease will cling to him and his seed.",
+    clock="The chapter names no king and gives no date. Aram and Israel are at war in raiding bands (5:2), and the king of Israel is not named; the verse does not say which reign this is.")
+
+CHAPTER_ART["2kgs5"] = [dict(
+    file="hirschvogel-naaman-cured.jpg",
+    title="Naaman Is Cured of Leprosy", title_es="Naamán es curado de la lepra",
+    artist="Augustin Hirschvogel", artist_es="Augustin Hirschvogel",
+    year="1547",
+    location="National Gallery of Art, Washington (NGA 39365)", location_es="Galería Nacional de Arte, Washington (NGA 39365)",
+    alt="A square etching of a river bank. A bearded man, bare to the waist, kneels in the water and dips his hands in. On the bank at the left stand two men, one in a plumed helmet and armour and one in a turban-like cap holding a folded cloth. In the background a chariot with horses stands before a classical building, a kneeling figure bows at the steps of a doorway, and a robed man stands in the doorway. Four lines of German verse are lettered beneath, with the date 1547.",
+    alt_es="Un aguafuerte cuadrado de la orilla de un río. Un hombre barbado, desnudo hasta la cintura, se arrodilla en el agua y sumerge las manos. En la orilla, a la izquierda, hay dos hombres de pie, uno con yelmo de penacho y armadura y otro con un gorro de aspecto de turbante que sostiene una tela doblada. Al fondo, un carro con caballos ante un edificio clásico, una figura arrodillada se inclina en los escalones de una puerta y un hombre con túnica está en el umbral. Debajo hay cuatro líneas de verso alemán y la fecha 1547.",
+    note="2 Kings 5:9&ndash;14. The etching is dated 1547 and lettered beneath with four lines of German verse and the reference &ldquo;4. Reg. 5&rdquo; (the Vulgate&rsquo;s fourth book of Kings is our 2 Kings). In one plate it shows Naaman at the door of the house, where Elisha stands, and Naaman in the river. The Hebrew says that Elisha sent a messenger and does not come out (5:10); the door scene is the artist&rsquo;s way of putting two moments of the story into one picture.",
+    note_es="2 Reyes 5:9–14. El aguafuerte está fechado en 1547 y rotulado debajo con cuatro líneas de verso alemán y la referencia «4. Reg. 5» (el cuarto libro de los Reyes de la Vulgata es nuestro 2 Reyes). En una sola lámina muestra a Naamán a la puerta de la casa, donde está Eliseo, y a Naamán en el río. El hebreo dice que Eliseo envió un mensajero y no sale (5:10); la escena de la puerta es la manera que tiene el artista de poner dos momentos de la historia en una sola imagen.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Augustin_Hirschvogel,_Naaman_is_Cured_of_Leprosy,_1547,_NGA_39365.jpg",
+)]
