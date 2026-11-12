@@ -57375,3 +57375,79 @@ CHAPTER_ART["2kgs5"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Augustin_Hirschvogel,_Naaman_is_Cured_of_Leprosy,_1547,_NGA_39365.jpg",
 )]
+
+# --- 2 Kings 6 ---
+def _swap2k6(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k6_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k6(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k6_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k6(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k6_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k6(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k6_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k6(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entry ----------
+DICTIONARY.append(("sanverim", "sanverim", "סַנְוֵרִים", "basanverim",
+    'BLINDNESS, a struck blindness &mdash; the Hebrew word <span data-heb="סנורים">stands in <strong>two verses</strong> of the Hebrew Bible</span>. At <a href="genesis-19.html#v19-11">Genesis 19:11</a> (now on these pages) the men at Lot&rsquo;s door are &lsquo;struck with blindness&rsquo; and cannot find the doorway; at <a href="2-kings-6.html#v6-18">2 Kings 6:18</a> (now on these pages) Elisha asks Jehovah to &lsquo;strike this nation with blindness&rsquo;, and the troop that came down to Dothan cannot find the city. &#9888; Rashi notes that in the curse Elisha did not say the Name, and that in each opening of eyes he did. The Greek Bible in the Vaticanus tradition has <em>aorasia</em>, &lsquo;unseeing&rsquo;, in the Kings verse; Josephus has a mist over the eyes instead (<em>Antiquities</em> 9.56).',
+    ("2 Kings", 6, 18)))
+DICTIONARY_ES["sanverim"] = ("sanverim",
+    'CEGUERA, una ceguera infligida &mdash;la palabra hebrea <span data-heb="סנורים">está en <strong>dos versículos</strong> de la Biblia hebrea</span>. En Génesis 19:11 (ya en estas páginas, todavía no en español) los hombres a la puerta de Lot son «heridos con ceguera» y no pueden hallar la entrada; en <a href="2-kings-6.es.html#v6-18">2 Reyes 6:18</a> (ya en estas páginas) Eliseo pide a Jehová que «hiera a esta nación con ceguera», y la tropa que bajó a Dotán no puede hallar la ciudad. &#9888; Rashi anota que en la maldición Eliseo no dijo el Nombre, y que en cada apertura de ojos sí lo dijo. El griego de la tradición del Vaticano tiene <em>aorasia</em>, «falta de visión», en el versículo de Reyes; Josefo tiene en cambio una neblina sobre los ojos (<em>Antigüedades</em> 9.56).')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict2k6_en("peloni-almoni", "(2 Kings 6:8, not yet on these pages)", "(<a href=\"2-kings-6.html#v6-8\">2 Kings 6:8</a>, now on these pages)")
+_dict2k6_es("peloni-almoni", "(2 Reyes 6:8, todavía no en estas páginas)", "(<a href=\"2-kings-6.es.html#v6-8\">2 Reyes 6:8</a>, ya en estas páginas)")
+_dict2k6_en("ketiv-qere", add=' &#11088; 2 Kings 6:25 prints &lsquo;dove&rsquo;s dung&rsquo; as <em>chari yonim</em> written and <em>divyonim</em> read (<a href="2-kings-6.html#v6-25">2 Kings 6:25</a>, now on these pages).')
+_dict2k6_es("ketiv-qere", add=' &#11088; 2 Reyes 6:25 imprime «estiércol de palomas» como <em>chari yonim</em> escrito y <em>divyonim</em> leído (<a href="2-kings-6.es.html#v6-25">2 Reyes 6:25</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k6_en("dothan", "(2 Kings 6:13-17)", "(<a href=\"2-kings-6.html#v6-13\">2 Kings 6:13&ndash;17</a>, now on these pages)", ref=("2 Kings", 6, 13))
+ENCYCLOPEDIA_ES["dothan"] = ("Dotán",
+    'El pueblo de pastoreo donde José halló por fin a sus hermanos, y fue despojado, echado a una cisterna seca y vendido (<a href="genesis-37.es.html#v37-17">Génesis 37:17</a>&ndash;28, ya en estas páginas). Se identifica bien con Tell Dotán, unos veinte kilómetros al norte de Siquem. El pueblo vuelve una vez más: en Dotán el criado de Eliseo ve el monte lleno de caballos y carros de fuego (<a href="2-kings-6.es.html#v6-13">2 Reyes 6:13–17</a>, ya en estas páginas), y el rey de Aram envía allí una fuerza pesada por la noche para tomar a un solo hombre.')
+_ency2k6_en("elisha", add=' &#11088; <a href="2-kings-6.html#v6-1">2 Kings 6</a> (now on these pages): he makes a borrowed iron float, warns the king of Israel of every Aramean camp, asks Jehovah to open his attendant&rsquo;s eyes on Dothan and then to strike the Arameans with blindness, leads them to Samaria and has them fed, and says in his house, with the elders, that the king&rsquo;s messenger is coming for his head.')
+_ency2k6_es("elisha", add=' &#11088; <a href="2-kings-6.es.html#v6-1">2 Reyes 6</a> (ya en estas páginas): hace flotar un hierro prestado, avisa al rey de Israel de cada campamento arameo, pide a Jehová que abra los ojos de su ayudante en Dotán y luego que hiera a los arameos con ceguera, los lleva a Samaria y hace que les den de comer, y dice en su casa, con los ancianos, que el mensajero del rey viene por su cabeza.')
+_ency2k6_en("jordan", add=' &#11088; The sons of the prophets go to it for beams, and the iron falls into it (<a href="2-kings-6.html#v6-4">2 Kings 6:4&ndash;7</a>, now on these pages).')
+_ency2k6_es("jordan", add=' &#11088; Los hijos de los profetas van a él por vigas, y el hierro cae en él (<a href="2-kings-6.es.html#v6-4">2 Reyes 6:4–7</a>, ya en estas páginas).')
+_ency2k6_en("samaria", add=' &#11088; In <a href="2-kings-6.html#v6-19">2 Kings 6</a> (now on these pages) Elisha leads a blinded Aramean troop into it, and Ben-hadad then besieges it until a donkey&rsquo;s head is worth eighty of silver.')
+_ency2k6_es("samaria", add=' &#11088; En <a href="2-kings-6.es.html#v6-19">2 Reyes 6</a> (ya en estas páginas) Eliseo lleva a una tropa aramea cegada hasta ella, y luego Ben-adad la sitia hasta que la cabeza de un asno vale ochenta de plata.')
+_ency2k6_en("ben-hadad-king-of-aram", add=' &#11088; A Ben-hadad king of Aram gathers all his camp and besieges Samaria in <a href="2-kings-6.html#v6-24">2 Kings 6:24</a> (now on these pages); that chapter does not say whether he is this king.')
+_ency2k6_es("ben-hadad-king-of-aram", add=' &#11088; Un Ben-adad rey de Aram reúne todo su campamento y sitia Samaria en <a href="2-kings-6.es.html#v6-24">2 Reyes 6:24</a> (ya en estas páginas); ese capítulo no dice si es este rey.')
+
+CHRON_CHAPTERS["2kgs6"] = dict(era="monarchy",
+    when="The sons of the prophets cut beams at the Jordan, and an iron borrowed from another falls into the water; Elisha throws in a stick and it floats. He warns the king of Israel of each Aramean camp, and the king of Aram, sure of a traitor, hears that it is Elisha who tells the king of Israel the words he speaks in his bedchamber, and sends a force to Dothan by night. Elisha’s attendant sees the mountain full of horses and chariots of fire; the Arameans are struck with blindness, led to Samaria, given a feast and sent home. Ben-hadad then besieges Samaria, and in the famine a woman cries to the king about two sons and a pot; the king tears his clothes, with sackcloth underneath, and swears to take Elisha’s head.",
+    clock="The chapter names no king of Israel and gives no date. Ben-hadad is named once, at 6:24; the verse does not say whether he is the king of verses 8 to 23.")
+
+CHAPTER_ART["2kgs6"] = [dict(
+    file="rijksmuseum-elisha-blinded-army.jpg",
+    title="Elisha brings the blinded Aramean army to the king of Israel", title_es="Eliseo lleva al ejército arameo cegado ante el rey de Israel",
+    artist="Rijksmuseum (series “Oudtestamentische strijdscènes”)", artist_es="Rijksmuseum (serie «Oudtestamentische strijdscènes»)",
+    year="1613",
+    location="Rijksmuseum, Amsterdam (RP-P-OB-37.449)", location_es="Rijksmuseum, Ámsterdam (RP-P-OB-37.449)",
+    alt="A horizontal etching of a walled city square filled with armed men, horses and banners. In the foreground soldiers with spears and plumed helmets stand and sit on a stone ledge, one bent over with his head in his hands, and two cloaked figures at the left point toward the crowd. Latin verse is lettered beneath, with the plate number 20.",
+    alt_es="Un aguafuerte horizontal de una plaza amurallada llena de hombres armados, caballos y estandartes. En primer plano, soldados con lanzas y cascos de penacho están de pie y sentados en un reborde de piedra, uno inclinado con la cabeza entre las manos, y dos figuras con capa a la izquierda señalan hacia la multitud. Debajo hay versos en latín y el número de lámina 20.",
+    note="2 Kings 6:18&ndash;23. The caption reads &ldquo;Excaecatur exercitus, dum Eliseo manus inferre tentat&rdquo;, which is Latin for &ldquo;the army is blinded while it tries to lay hands on Elisha&rdquo;. The Hebrew says that the troop came down to take him, that Elisha prayed for blindness and led them to Samaria, and that the king of Israel then asks whether to strike them (6:18&ndash;21); the print shows a whole army in the city.",
+    note_es="2 Reyes 6:18–23. El pie dice «Excaecatur exercitus, dum Eliseo manus inferre tentat», que en latín es «el ejército es cegado mientras intenta ponerle las manos encima a Eliseo». El hebreo dice que la tropa bajó para tomarlo, que Eliseo oró pidiendo ceguera y los llevó a Samaria, y que el rey de Israel pregunta entonces si ha de herirlos (6:18–21); la lámina muestra a todo un ejército en la ciudad.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Elisa_brengt_het_geblindeerde_Syrische_leger_bij_de_koning_van_Isra%C3%ABl_Excae_catur_exercitus,_dum_eliseo_manus_inferre_tentat_(titel_op_object)_Oudtestamentische_strijdsc%C3%A8nes_(serietitel),_RP-P-OB-37.449.jpg",
+)]
