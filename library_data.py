@@ -57451,3 +57451,95 @@ CHAPTER_ART["2kgs6"] = [dict(
     license="CC0",
     source_url="https://commons.wikimedia.org/wiki/File:Elisa_brengt_het_geblindeerde_Syrische_leger_bij_de_koning_van_Isra%C3%ABl_Excae_catur_exercitus,_dum_eliseo_manus_inferre_tentat_(titel_op_object)_Oudtestamentische_strijdsc%C3%A8nes_(serietitel),_RP-P-OB-37.449.jpg",
 )]
+
+# --- 2 Kings 7 ---
+def _swap2k7(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k7_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k7(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k7_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k7(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k7_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k7(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k7_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k7(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entries ----------
+DICTIONARY.append(("shalish", "shalish", "שָׁלִישׁ", "ha-shalish",
+    'THE THIRD, an officer &mdash; the title of the man &lsquo;on whose hand the king leaned&rsquo; at <a href="2-kings-7.html#v7-2">2 Kings 7:2</a> (now on these pages), who says the promised price cannot be, is told &lsquo;you shall see it with your eyes, but from there you shall not eat&rsquo;, and is trampled in the gate (7:17&ndash;20). &#9888; The English shelf spreads: &lsquo;captain&rsquo; (ASV), &lsquo;lord&rsquo; (KJV), &lsquo;prince&rsquo; (Geneva), &lsquo;officer&rsquo; (NIV), &lsquo;adjutant&rsquo; (NWT 1984); the Greek Bible in the Vaticanus tradition has <em>tristatēs</em>, and Josephus &lsquo;the commander of the third part&rsquo; (<em>Antiquities</em> 9.73).',
+    ("2 Kings", 7, 2)))
+DICTIONARY_ES["shalish"] = ("shalish",
+    'EL TERCERO, un oficial &mdash;el título del hombre «en cuya mano se apoyaba el rey» en <a href="2-kings-7.es.html#v7-2">2 Reyes 7:2</a> (ya en estas páginas), que dice que el precio prometido no puede ser, a quien se le dice «lo verás con tus ojos, pero de allí no comerás», y que es pisoteado en la puerta (7:17–20). &#9888; El estante español se reparte: «príncipe» (RV 1909, RV60), «ayudante personal del rey» (NVI), «adjutor» (TNM 1987); el griego de la tradición del Vaticano tiene <em>tristatēs</em>, y Josefo «el comandante de la tercera parte» (<em>Antigüedades</em> 9.73).')
+
+DICTIONARY.append(("arubbah", "arubbah", "אֲרֻבָּה", "arubbot",
+    'A FLOODGATE, a window &mdash; with &lsquo;the heavens&rsquo;, the openings the flood came through. <span data-heb="ארבות בשמים">&lsquo;Floodgates in the heavens&rsquo; stands in <strong>two verses</strong> of the Hebrew Bible</span>, <a href="2-kings-7.html#v7-2">2 Kings 7:2</a> and 7:19 (now on these pages), where an officer says that not even that could bring the promised flour; <span data-heb="ארבת השמים">&lsquo;the floodgates of the heavens&rsquo; stands in <strong>two</strong></span>, <a href="genesis-7.html#v7-11">Genesis 7:11</a> (now on these pages) and 8:2. &#9888; The ASV, KJV and Geneva have &lsquo;windows&rsquo;; the NIV, NWT 1984 and Douay have &lsquo;floodgates&rsquo;. The Greek Bible in the Vaticanus tradition has <em>katarraktas</em>.',
+    ("2 Kings", 7, 2)))
+DICTIONARY_ES["arubbah"] = ("arubbah",
+    'UNA COMPUERTA, una ventana &mdash;con «los cielos», las aberturas por donde vino el diluvio. <span data-heb="ארבות בשמים">«Compuertas en los cielos» está en <strong>dos versículos</strong> de la Biblia hebrea</span>, <a href="2-kings-7.es.html#v7-2">2 Reyes 7:2</a> y 7:19 (ya en estas páginas), donde un oficial dice que ni eso podría traer la harina prometida; <span data-heb="ארבת השמים">«las compuertas de los cielos» está en <strong>dos</strong></span>, <a href="genesis-7.es.html#v7-11">Génesis 7:11</a> (ya en estas páginas) y 8:2. &#9888; La RV 1909 y la RV60 tienen «ventanas»; la NVI y la TNM 1987 «compuertas». El griego de la tradición del Vaticano tiene <em>katarraktas</em>.')
+
+# ---------- dictionary: extended ----------
+_dict2k7_en("besorah", add=' &#11088; <a href="2-kings-7.html#v7-9">2 Kings 7:9</a> (now on these pages) has it spelled without the vav, in <em>yom besorah</em>, &lsquo;a day of good news&rsquo;, which the four men with the scaly disease say they are keeping to themselves; the phrase stands in one verse. The Greek Bible in the Vaticanus tradition has <em>hēmera euangelias</em>.')
+_dict2k7_es("besorah", add=' &#11088; <a href="2-kings-7.es.html#v7-9">2 Reyes 7:9</a> (ya en estas páginas) la tiene escrita sin vav, en <em>yom besorah</em>, «día de buenas noticias», que los cuatro hombres con la enfermedad escamosa dicen que se están guardando; la frase está en un solo versículo. El griego de la tradición del Vaticano tiene <em>hēmera euangelias</em>.')
+_dict2k7_en("ketiv-qere", add=' &#11088; 2 Kings 7 has three pairs, at verses 12, 13 and 15, each written with one extra <em>he</em> (<a href="2-kings-7.html#v7-12">2 Kings 7:12</a>, now on these pages).')
+_dict2k7_es("ketiv-qere", add=' &#11088; 2 Reyes 7 tiene tres pares, en los versículos 12, 13 y 15, cada uno escrito con una <em>he</em> de más (<a href="2-kings-7.es.html#v7-12">2 Reyes 7:12</a>, ya en estas páginas).')
+_dict2k7_en("tzaraat", add=' &#11088; Four men with it sit at the gate of Samaria in <a href="2-kings-7.html#v7-3">2 Kings 7:3</a> (now on these pages).')
+_dict2k7_es("tzaraat", add=' &#11088; Cuatro hombres con ella se sientan a la puerta de Samaria en <a href="2-kings-7.es.html#v7-3">2 Reyes 7:3</a> (ya en estas páginas).')
+
+# ---------- encyclopedia: new entry ----------
+ENCYCLOPEDIA.append(dict(slug="four-men-with-the-scaly-disease", name="The four men with the scaly disease", kind="people", aliases=["four lepers"],
+    refs=[("2 Kings", 7, 3)], videos=[],
+    desc='Four men at the entrance of the gate of Samaria in the siege, who reason that death waits in the city and at the gate and so go to the camp of Aram, find it empty, eat, hide silver and gold and garments, and tell the king&rsquo;s house (<a href="2-kings-7.html#v7-3">2 Kings 7:3&ndash;11</a>, now on these pages). &#9888; Rashi says they were Gehazi and his sons (Sanhedrin 107b), and Radak says the Rabbis say so; the verse does not name them.'))
+ENCYCLOPEDIA_ES["four-men-with-the-scaly-disease"] = ("Los cuatro hombres con la enfermedad escamosa",
+    'Cuatro hombres a la entrada de la puerta de Samaria durante el asedio, que razonan que la muerte espera en la ciudad y en la puerta, y por eso van al campamento de Aram, lo hallan vacío, comen, esconden plata y oro y vestidos, y avisan a la casa del rey (<a href="2-kings-7.es.html#v7-3">2 Reyes 7:3–11</a>, ya en estas páginas). &#9888; Rashi dice que eran Giezi y sus hijos (Sanedrín 107b), y Radak dice que los rabinos lo dicen; el versículo no los nombra.')
+
+# ---------- encyclopedia: extended ----------
+_ency2k7_en("samaria", add=' &#11088; In <a href="2-kings-7.html#v7-1">2 Kings 7</a> (now on these pages) Elisha promises a seah of fine flour for a shekel in its gate by tomorrow, the camp of Aram is found empty, and the promise comes true.')
+_ency2k7_es("samaria", add=' &#11088; En <a href="2-kings-7.es.html#v7-1">2 Reyes 7</a> (ya en estas páginas) Eliseo promete una seá de flor de harina por un siclo en su puerta para mañana, el campamento de Aram se halla vacío, y la promesa se cumple.')
+_ency2k7_en("gehazi", add=' Rashi and Radak say the four men with the scaly disease at the gate of Samaria were Gehazi and his sons (<a href="2-kings-7.html#v7-3">2 Kings 7:3</a>, now on these pages); the verse does not name them.')
+_ency2k7_es("gehazi", add=' Rashi y Radak dicen que los cuatro hombres con la enfermedad escamosa a la puerta de Samaria eran Giezi y sus hijos (<a href="2-kings-7.es.html#v7-3">2 Reyes 7:3</a>, ya en estas páginas); el versículo no los nombra.')
+_ency2k7_en("hittites", add=' &#11088; In <a href="2-kings-7.html#v7-6">2 Kings 7:6</a> (now on these pages) the camp of Aram thinks the king of Israel has hired &lsquo;the kings of the Hittites and the kings of Egypt&rsquo; against it.')
+_ency2k7_es("hittites", add=' &#11088; En <a href="2-kings-7.es.html#v7-6">2 Reyes 7:6</a> (ya en estas páginas) el campamento de Aram piensa que el rey de Israel ha contratado contra él a «los reyes de los heteos y a los reyes de Egipto».')
+_ency2k7_en("egypt", add=' &#11088; The camp of Aram flees from the sound of &lsquo;the kings of Egypt&rsquo; they think Israel has hired (<a href="2-kings-7.html#v7-6">2 Kings 7:6</a>, now on these pages).')
+_ency2k7_es("egypt", add=' &#11088; El campamento de Aram huye del sonido de «los reyes de Egipto» que cree que Israel ha contratado (<a href="2-kings-7.es.html#v7-6">2 Reyes 7:6</a>, ya en estas páginas).')
+_ency2k7_en("jordan", add=' &#11088; The Arameans throw away garments and vessels all the way to it (<a href="2-kings-7.html#v7-15">2 Kings 7:15</a>, now on these pages).')
+_ency2k7_es("jordan", add=' &#11088; Los arameos arrojan vestidos y vasijas por todo el camino hasta él (<a href="2-kings-7.es.html#v7-15">2 Reyes 7:15</a>, ya en estas páginas).')
+_ency2k7_en("elisha", add=' &#11088; <a href="2-kings-7.html#v7-1">2 Kings 7</a> (now on these pages): he promises cheap flour in the gate of Samaria for tomorrow and tells the doubting officer he will see it and not eat; he is named only in the first verse.')
+_ency2k7_es("elisha", add=' &#11088; <a href="2-kings-7.es.html#v7-1">2 Reyes 7</a> (ya en estas páginas): promete harina barata en la puerta de Samaria para mañana y dice al oficial incrédulo que lo verá y no comerá; se nombra solo en el primer versículo.')
+
+CHRON_CHAPTERS["2kgs7"] = dict(era="monarchy",
+    when="Elisha says that by tomorrow a seah of fine flour will cost a shekel in the gate of Samaria; the officer on whose hand the king leans says it cannot be, and is told he will see it and not eat. Four men with the scaly disease at the gate go to the camp of Aram at twilight and find it empty, because the Lord had made the camp hear chariots and horses. They eat, hide silver, gold and garments, and tell the gatekeepers; the king suspects an ambush and sends two chariots, which follow a road of thrown-away garments to the Jordan. The people plunder the camp, the prices come true, and the officer is trampled in the gate.",
+    clock="The chapter names no king and gives no date. It follows the siege of 2 Kings 6:24 and does not say how long the siege had lasted.")
+
+CHAPTER_ART["2kgs7"] = [dict(
+    file="dore-famine-in-samaria.jpg",
+    title="The Famine in Samaria", title_es="El hambre en Samaria",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Wood engraving for La Sainte Bible (Commons file 096.A)", location_es="Grabado en madera para La Sainte Bible (archivo de Commons 096.A)",
+    alt="A black-and-white engraving of a crowned king in a long embroidered robe, holding a scepter and standing on stone steps with spearmen and officers behind him. At his feet a woman in a head-cloth kneels and reaches up toward him with both hands, and starving or dead people lie in heaps around the steps.",
+    alt_es="Un grabado en blanco y negro de un rey coronado con una larga túnica bordada, que sostiene un cetro y está de pie sobre unos escalones de piedra con lanceros y oficiales detrás. A sus pies una mujer con un paño en la cabeza se arrodilla y alza ambas manos hacia él, y personas hambrientas o muertas yacen amontonadas alrededor de los escalones.",
+    note="2 Kings 6:26&ndash;30, the siege that the promise of 2 Kings 7:1 answers. The plate shows the king and a woman who cries to him; the Hebrew has the king passing by on the wall (6:26), and the engraver has put him on steps.",
+    note_es="2 Reyes 6:26–30, el asedio al que responde la promesa de 2 Reyes 7:1. La lámina muestra al rey y a una mujer que clama a él; el hebreo tiene al rey pasando por el muro (6:26), y el grabador lo ha puesto sobre unos escalones.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:096.A_Famine_in_Samaria.jpg",
+)]
