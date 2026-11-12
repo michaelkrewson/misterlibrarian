@@ -57543,3 +57543,119 @@ CHAPTER_ART["2kgs7"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:096.A_Famine_in_Samaria.jpg",
 )]
+
+# --- 2 Kings 7 ---
+def _swap2k8(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k8_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _swap2k8(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k8_es(slug, old=None, new=None, add=None):
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _swap2k8(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k8_en(slug, old=None, new=None, add=None, ref=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _swap2k8(_e["desc"], old, new)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k8_es(slug, old=None, new=None, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _swap2k8(_s, old, new)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+# ---------- new dictionary entry ----------
+DICTIONARY.append(("hechayah", "he'chayah", "הֶחֱיָה", "he'chayah",
+    'TO BRING TO LIFE, to make alive &mdash; the causative of <em>chayah</em>, &lsquo;live&rsquo;. &#11088; It is what the king of Israel says belongs to God (<a href="2-kings-5.html#v5-7">2 Kings 5:7</a>, now on these pages: &lsquo;Am I God, to kill and to make alive?&rsquo;), and it is what <a href="2-kings-8.html#v8-1">2 Kings 8:1 and 5</a> (now on these pages) say Elisha did to the Shunammite&rsquo;s son: four times in those six verses, in the narrator&rsquo;s voice and in Gehazi&rsquo;s. The same chapter has the plain verb in Ben-hadad&rsquo;s question, &lsquo;Shall I recover from this illness?&rsquo; and in Elisha&rsquo;s answer. &#9888; The English shelf spreads: &lsquo;restored to life&rsquo; (ASV, KJV, NIV, Douay), &lsquo;brought back to life&rsquo; (TLB), &lsquo;revived&rsquo; (NWT 1984).',
+    ("2 Kings", 8, 1)))
+DICTIONARY_ES["hechayah"] = ("he'chayah",
+    'DAR VIDA, hacer vivir &mdash;el causativo de <em>chayah</em>, «vivir». &#11088; Es lo que el rey de Israel dice que pertenece a Dios (<a href="2-kings-5.es.html#v5-7">2 Reyes 5:7</a>, ya en estas páginas: «¿Soy yo Dios, para matar y para dar vida?»), y es lo que <a href="2-kings-8.es.html#v8-1">2 Reyes 8:1 y 5</a> (ya en estas páginas) dicen que Eliseo hizo al hijo de la sunamita: cuatro veces en esos seis versículos, en la voz del narrador y en la de Giezi. El mismo capítulo tiene el verbo simple en la pregunta de Ben-adad, «¿Sanaré de esta enfermedad?», y en la respuesta de Eliseo. &#9888; El estante español se reparte: «había hecho vivir» (RV 1909, RV60), «había revivido» (NVI), «había revivificado» (TNM 1987).')
+
+# ---------- dictionary: extended and stale "not yet" fixed ----------
+_dict2k8_en("saris", add=' &#11088; The king gives the Shunammite one at <a href="2-kings-8.html#v8-6">2 Kings 8:6</a> (now on these pages), to return all that was hers; the ASV and KJV have &lsquo;a certain officer&rsquo;, the NIV &lsquo;an official&rsquo;, the NWT 1984 &lsquo;a court official&rsquo;, and the Geneva and Douay &lsquo;an eunuch&rsquo;.')
+_dict2k8_es("saris", add=' &#11088; El rey le da uno a la sunamita en <a href="2-kings-8.es.html#v8-6">2 Reyes 8:6</a> (ya en estas páginas), para devolverle todo lo que era suyo; la RV 1909 tiene «un eunuco», la RV60 «un oficial», la NVI «un funcionario» y la TNM 1987 «un oficial de la corte».')
+_dict2k8_en("kelev", add=' &#11088; Hazael says it of himself to Elisha: <span data-heb="עבדך הכלב">&lsquo;your servant, the dog&rsquo; stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="2-kings-8.html#v8-13">2 Kings 8:13</a> (now on these pages).')
+_dict2k8_es("kelev", add=' &#11088; Hazael lo dice de sí mismo a Eliseo: <span data-heb="עבדך הכלב">«tu siervo, el perro» está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="2-kings-8.es.html#v8-13">2 Reyes 8:13</a> (ya en estas páginas).')
+_dict2k8_en("nir", "2 Kings 8:19 and 2 Chronicles 21:7 (those two not yet on these pages)", "<a href=\"2-kings-8.html#v8-19\">2 Kings 8:19</a> (now on these pages) and 2 Chronicles 21:7 (not yet on these pages)")
+_dict2k8_es("nir", "2 Reyes 8:19 y 2 Crónicas 21:7 (esos dos todavía no en estas páginas)", "<a href=\"2-kings-8.es.html#v8-19\">2 Reyes 8:19</a> (ya en estas páginas) y 2 Crónicas 21:7 (todavía no en estas páginas)")
+_dict2k8_en("kevir", "the <em>makhber</em> Hazael soaked in water and spread over his king&rsquo;s face (2 Kings 8:15, not yet on these pages)", "the <em>makhber</em> that was soaked in water and spread over the king&rsquo;s face (<a href=\"2-kings-8.html#v8-15\">2 Kings 8:15</a>, now on these pages; the verse says only &lsquo;he took&rsquo;, and Radak and Josephus name Hazael)")
+_dict2k8_es("kevir", "el <em>majber</em> que Hazael empapó en agua y extendió sobre el rostro de su rey (2 Reyes 8:15, todavía no en estas páginas)", "el <em>majber</em> que se empapó en agua y se extendió sobre el rostro del rey (<a href=\"2-kings-8.es.html#v8-15\">2 Reyes 8:15</a>, ya en estas páginas; el versículo dice solo «tomó», y Radak y Josefo nombran a Hazael)")
+_dict2k8_en("ketiv-qere", add=' &#11088; 2 Kings 8 has three pairs, at verses 1, 10 and 17; the one at verse 10, <em>lo</em> written &lsquo;not&rsquo; and read &lsquo;to him&rsquo;, changes what Elisha tells Hazael to say (<a href="2-kings-8.html#v8-10">2 Kings 8:10</a>, now on these pages).')
+_dict2k8_es("ketiv-qere", add=' &#11088; 2 Reyes 8 tiene tres pares, en los versículos 1, 10 y 17; el del versículo 10, <em>lo</em> escrito «no» y leído «a él», cambia lo que Eliseo dice a Hazael que diga (<a href="2-kings-8.es.html#v8-10">2 Reyes 8:10</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: new entries ----------
+ENCYCLOPEDIA.append(dict(slug="jehoram-judah", name="Jehoram of Judah", kind="person", aliases=["Jehoram son of Jehoshaphat", "Joram of Judah"],
+    refs=[("2 Kings", 8, 16)], videos=[],
+    desc='Jehoshaphat&rsquo;s son, who begins to reign at thirty-two and reigns eight years (<a href="2-kings-8.html#v8-16">2 Kings 8:16&ndash;24</a>, now on these pages). He &lsquo;walked in the way of the kings of Israel&rsquo; because Ahab&rsquo;s daughter was his wife; Jehovah did not destroy Judah, for David&rsquo;s sake, &lsquo;a lamp for his sons&rsquo;. Edom and Libnah rebelled in his days. &#9888; The Hebrew prints his name both Jehoram and Joram, and the king of Israel has both too; see <a href="encyclopedia.html#jehoram-israel">Jehoram of Israel</a>. Josephus adds that he killed his brothers and was buried outside the royal tombs; this chapter does not say so.'))
+ENCYCLOPEDIA_ES["jehoram-judah"] = ("Jehoram de Judá",
+    'El hijo de Josafat, que empieza a reinar a los treinta y dos años y reina ocho años (<a href="2-kings-8.es.html#v8-16">2 Reyes 8:16–24</a>, ya en estas páginas). «Anduvo en el camino de los reyes de Israel» porque la hija de Acab era su mujer; Jehová no destruyó a Judá, por amor a David, «una lámpara para sus hijos». Edom y Libna se rebelaron en sus días. &#9888; El hebreo imprime su nombre como Jehoram y como Joram, y el rey de Israel tiene ambos también; véase <a href="enciclopedia.html#jehoram-israel">Joram de Israel</a>. Josefo añade que mató a sus hermanos y fue sepultado fuera de las tumbas reales; este capítulo no lo dice.')
+
+ENCYCLOPEDIA.append(dict(slug="ahaziah-judah", name="Ahaziah of Judah", kind="person", aliases=["Ahaziah son of Jehoram"],
+    refs=[("2 Kings", 8, 25)], videos=[],
+    desc='Jehoram&rsquo;s son, twenty-two when he begins and king for one year, whose mother is Athaliah and who is &lsquo;a son-in-law of the house of Ahab&rsquo; (<a href="2-kings-8.html#v8-25">2 Kings 8:25&ndash;29</a>, now on these pages). He goes with Joram of Israel to war against Hazael at Ramoth-gilead and then down to Jezreel to see him. &#9888; The chapter dates his accession to the twelfth year of Joram; 2 Kings 9:29 (not yet on these pages) says the eleventh. Radak notes that the Chronicles give his age as forty-two. Not to be confused with <a href="encyclopedia.html#ahaziah-israel">Ahaziah of Israel</a>, his uncle.'))
+ENCYCLOPEDIA_ES["ahaziah-judah"] = ("Ocozías de Judá",
+    'El hijo de Jehoram, de veintidós años al empezar y rey por un año, cuya madre es Atalía y que es «yerno de la casa de Acab» (<a href="2-kings-8.es.html#v8-25">2 Reyes 8:25–29</a>, ya en estas páginas). Va con Joram de Israel a la guerra contra Hazael en Ramot de Galaad y luego baja a Jezreel a verlo. &#9888; El capítulo fecha su subida al trono en el año doce de Joram; 2 Reyes 9:29 (todavía no en estas páginas) dice el once. Radak anota que las Crónicas dan su edad como cuarenta y dos. No debe confundirse con <a href="enciclopedia.html#ahaziah-israel">Ocozías de Israel</a>, su tío.')
+
+ENCYCLOPEDIA.append(dict(slug="athaliah", name="Athaliah", kind="person", aliases=["Athaliah daughter of Omri"],
+    refs=[("2 Kings", 8, 18)], videos=[],
+    desc='The wife of Jehoram of Judah and mother of Ahaziah of Judah (<a href="2-kings-8.html#v8-18">2 Kings 8:18, 26</a>, now on these pages). Verse 18 calls Jehoram&rsquo;s wife &lsquo;the daughter of Ahab&rsquo;, and verse 26 calls Athaliah &lsquo;daughter of Omri&rsquo;; the NIV, TLB and NWT 1984 have &lsquo;granddaughter&rsquo; there, and Omri was Ahab&rsquo;s father. 2 Kings 11:1 (not yet on these pages) has her destroy the royal seed when her son is dead. Josephus has her teach her husband to worship foreign gods.'))
+ENCYCLOPEDIA_ES["athaliah"] = ("Atalía",
+    'La mujer de Jehoram de Judá y madre de Ocozías de Judá (<a href="2-kings-8.es.html#v8-18">2 Reyes 8:18, 26</a>, ya en estas páginas). El versículo 18 llama a la mujer de Jehoram «la hija de Acab», y el 26 llama a Atalía «hija de Omri»; la NVI y la TNM 1987 tienen «nieta» allí, y Omri era el padre de Acab. 2 Reyes 11:1 (todavía no en estas páginas) la hace destruir la descendencia real cuando su hijo está muerto. Josefo la hace enseñar a su marido a adorar dioses extranjeros.')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k8_en("gehazi", "2 Kings 8:4&ndash;5 (not yet on these pages) has him telling a king the great things Elisha has done.", "<a href=\"2-kings-8.html#v8-4\">2 Kings 8:4&ndash;5</a> (now on these pages) has him telling a king the great things Elisha has done, and naming the woman and her son.")
+_ency2k8_es("gehazi", "2 Reyes 8:4–5 (todavía no en estas páginas) lo tiene contando a un rey las grandes cosas que ha hecho Eliseo.", "<a href=\"2-kings-8.es.html#v8-4\">2 Reyes 8:4–5</a> (ya en estas páginas) lo tiene contando a un rey las grandes cosas que ha hecho Eliseo, y nombrando a la mujer y a su hijo.")
+_ency2k8_en("ahaziah-israel", "(2 Kings 8-9)", "(<a href=\"2-kings-8.html#v8-25\">2 Kings 8&ndash;9</a>, 8 now on these pages)")
+_ency2k8_es("ahaziah-israel", "(2 Reyes 8–9, todavía no en estas páginas)", "(<a href=\"2-kings-8.es.html#v8-25\">2 Reyes 8–9</a>, el 8 ya en estas páginas)")
+_ency2k8_en("hazael", add=' &#11088; <a href="2-kings-8.html#v8-8">2 Kings 8:8&ndash;15</a> (now on these pages): Ben-hadad sends him to Elisha with forty camels&rsquo; burden, Elisha weeps and says he will be king over Aram and do evil to Israel, and he takes the cloth to Ben-hadad&rsquo;s face and reigns in his place; at 8:28 he is the king Joram fights at Ramoth-gilead.')
+_ency2k8_es("hazael", add=' &#11088; <a href="2-kings-8.es.html#v8-8">2 Reyes 8:8–15</a> (ya en estas páginas): Ben-adad lo envía a Eliseo con la carga de cuarenta camellos, Eliseo llora y dice que será rey sobre Aram y hará mal a Israel, y él toma el paño al rostro de Ben-adad y reina en su lugar; en 8:28 es el rey contra quien pelea Joram en Ramot de Galaad.')
+_ency2k8_en("ben-hadad-king-of-aram", add=' &#11088; In <a href="2-kings-8.html#v8-7">2 Kings 8:7&ndash;15</a> (now on these pages) a Ben-hadad king of Aram is sick at Damascus, sends Hazael to ask Elisha whether he will recover, and dies the next day under a wet cloth; the chapter does not say whether he is this king.')
+_ency2k8_es("ben-hadad-king-of-aram", add=' &#11088; En <a href="2-kings-8.es.html#v8-7">2 Reyes 8:7–15</a> (ya en estas páginas) un Ben-adad rey de Aram está enfermo en Damasco, envía a Hazael a preguntar a Eliseo si sanará, y muere al día siguiente bajo un paño mojado; el capítulo no dice si es este rey.')
+_ency2k8_en("damascus", add=' &#11088; Elisha comes to it and weeps over Hazael (<a href="2-kings-8.html#v8-7">2 Kings 8:7&ndash;13</a>, now on these pages).')
+_ency2k8_es("damascus", add=' &#11088; Eliseo llega a ella y llora ante Hazael (<a href="2-kings-8.es.html#v8-7">2 Reyes 8:7–13</a>, ya en estas páginas).')
+_ency2k8_en("elisha", add=' &#11088; <a href="2-kings-8.html#v8-1">2 Kings 8</a> (now on these pages): he tells the Shunammite to leave for a seven-year famine, comes to Damascus where Ben-hadad is sick, holds his face and weeps before Hazael, and says Jehovah has shown him Hazael as king over Aram.')
+_ency2k8_es("elisha", add=' &#11088; <a href="2-kings-8.es.html#v8-1">2 Reyes 8</a> (ya en estas páginas): dice a la sunamita que se vaya por un hambre de siete años, llega a Damasco donde Ben-adad está enfermo, mantiene su rostro y llora ante Hazael, y dice que Jehová le ha mostrado a Hazael como rey sobre Aram.')
+_ency2k8_en("edom", add=' &#11088; It rebels from under the hand of Judah in the days of Jehoram, and makes a king over itself (<a href="2-kings-8.html#v8-20">2 Kings 8:20&ndash;22</a>, now on these pages); Radak says Zair, where Jehoram crosses over, is a city of Edom.')
+_ency2k8_es("edom", add=' &#11088; Se rebela de debajo de la mano de Judá en los días de Jehoram, y pone un rey sobre sí (<a href="2-kings-8.es.html#v8-20">2 Reyes 8:20–22</a>, ya en estas páginas); Radak dice que Zair, adonde pasa Jehoram, es una ciudad de Edom.')
+_ency2k8_en("libnah", add=' &#11088; It rebels at the same time as Edom (<a href="2-kings-8.html#v8-22">2 Kings 8:22</a>, now on these pages).')
+_ency2k8_es("libnah", add=' &#11088; Se rebela al mismo tiempo que Edom (<a href="2-kings-8.es.html#v8-22">2 Reyes 8:22</a>, ya en estas páginas).')
+_ency2k8_en("jezreel", add=' &#11088; Joram returns there to be healed of his wounds, and Ahaziah of Judah goes down to see him (<a href="2-kings-8.html#v8-29">2 Kings 8:29</a>, now on these pages).')
+_ency2k8_es("jezreel", add=' &#11088; Joram vuelve allí para ser curado de sus heridas, y Ocozías de Judá baja a verlo (<a href="2-kings-8.es.html#v8-29">2 Reyes 8:29</a>, ya en estas páginas).')
+_ency2k8_en("ramoth-gilead", add=' &#11088; Joram of Israel is wounded there by the Arameans in the war with Hazael (<a href="2-kings-8.html#v8-28">2 Kings 8:28</a>, now on these pages); the next verse calls the place Ramah.')
+_ency2k8_es("ramoth-gilead", add=' &#11088; Joram de Israel es herido allí por los arameos en la guerra con Hazael (<a href="2-kings-8.es.html#v8-28">2 Reyes 8:28</a>, ya en estas páginas); el versículo siguiente llama al lugar Ramá.')
+_ency2k8_en("philistines", add=' &#11088; The Shunammite sojourns in their land seven years in the famine (<a href="2-kings-8.html#v8-2">2 Kings 8:2&ndash;3</a>, now on these pages).')
+_ency2k8_es("philistines", add=' &#11088; La sunamita reside en su tierra siete años durante el hambre (<a href="2-kings-8.es.html#v8-2">2 Reyes 8:2–3</a>, ya en estas páginas).')
+_ency2k8_en("jehoram-israel", add=' &#11088; In <a href="2-kings-8.html#v8-16">2 Kings 8</a> (now on these pages) the Hebrew prints him as Joram; he is wounded at Ramoth-gilead and goes to Jezreel to be healed (8:28&ndash;29).')
+_ency2k8_es("jehoram-israel", add=' &#11088; En <a href="2-kings-8.es.html#v8-16">2 Reyes 8</a> (ya en estas páginas) el hebreo lo imprime como Joram; es herido en Ramot de Galaad y va a Jezreel para ser curado (8:28–29).')
+_ency2k8_en("omri", add=' &#11088; Athaliah, Ahaziah of Judah&rsquo;s mother, is called his daughter at <a href="2-kings-8.html#v8-26">2 Kings 8:26</a> (now on these pages); some versions have &lsquo;granddaughter&rsquo;.')
+_ency2k8_es("omri", add=' &#11088; Atalía, la madre de Ocozías de Judá, es llamada su hija en <a href="2-kings-8.es.html#v8-26">2 Reyes 8:26</a> (ya en estas páginas); algunas versiones tienen «nieta».')
+
+CHRON_CHAPTERS["2kgs8"] = dict(era="monarchy",
+    when="Elisha tells the Shunammite to leave before a famine of seven years, and when she comes back and cries to the king for her house and field, he is talking with Gehazi about all the great things Elisha has done, and she is brought in as the woman whose son Elisha brought to life; the king returns all that was hers. Elisha comes to Damascus, where Ben-hadad is sick; Hazael brings forty camels’ burden and asks whether the king will recover. Elisha says he will, and that Jehovah has shown him he will die, holds his face and weeps, and says Jehovah has shown him Hazael as king over Aram. The next day Hazael spreads a wet cloth over the king’s face and reigns in his place. Jehoram of Judah, whose wife is Ahab’s daughter, reigns eight years while Edom and Libnah rebel; his son Ahaziah reigns one year and goes with Joram of Israel to Ramoth-gilead, where Joram is wounded and goes to Jezreel to be healed.",
+    clock="The chapter dates the accession of Jehoram of Judah to the fifth year of Joram of Israel, and of Ahaziah of Judah to the twelfth. It does not date the Shunammite’s return, and it does not say how the seven years of famine relate to the famine of 2 Kings 4:38.")
+
+CHAPTER_ART["2kgs8"] = [dict(
+    file="smith-palestine-elijah-elisha-map.jpg",
+    title="Palestine in the times of Elijah and Elisha, about 860–800 B.C.", title_es="Palestina en tiempos de Elías y Eliseo, hacia 860–800 a. C.",
+    artist="George Adam Smith", artist_es="George Adam Smith",
+    year="1915",
+    location="Map from Smith, Historical Atlas of the Holy Land (Commons file)", location_es="Mapa de Smith, Historical Atlas of the Holy Land (archivo de Commons)",
+    alt="A colour relief map of the land between the Mediterranean and the desert east of the Jordan. Damascus stands at the upper right, the Sea of Chinnereth and the Jordan run down the middle to the Dead Sea, and the kingdoms of Israel and Judah are tinted pink, with the Philistines, Ammon, Moab and Edom marked around them.",
+    alt_es="Un mapa en relieve a color de la tierra entre el Mediterráneo y el desierto al este del Jordán. Damasco está arriba a la derecha, el mar de Quineret y el Jordán bajan por el centro hasta el mar Muerto, y los reinos de Israel y de Judá están teñidos de rosa, con los filisteos, Amón, Moab y Edom marcados a su alrededor.",
+    note="2 Kings 8. The map is dated about 860&ndash;800 BC and carries its own note that the boundaries are only approximate. It shows the places the chapter names: Damascus, Samaria and Jezreel, the Jordan, Ramoth-gilead east of it, and Edom to the south.",
+    note_es="2 Reyes 8. El mapa está fechado hacia 860–800 a. C. y lleva su propia nota de que los límites son solo aproximados. Muestra los lugares que nombra el capítulo: Damasco, Samaria y Jezreel, el Jordán, Ramot de Galaad al este de él, y Edom al sur.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Palestine_in_the_times_of_Elijah_and_Elisha_(Smith,_1915).jpg",
+)]
