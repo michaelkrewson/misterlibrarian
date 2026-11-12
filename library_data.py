@@ -57659,3 +57659,198 @@ CHAPTER_ART["2kgs8"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Palestine_in_the_times_of_Elijah_and_Elisha_(Smith,_1915).jpg",
 )]
+
+# --- 2 Kings 9 ---
+import re as _re9
+def _one9(s, old, new, rx=False):
+    if rx:
+        assert len(_re9.findall(old, s)) == 1, (old[:70], len(_re9.findall(old, s)))
+        return _re9.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict2k9_en(slug, old=None, new=None, add=None, rx=False):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one9(_s, old, new, rx)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict2k9_es(slug, old=None, new=None, add=None, rx=False):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one9(_s, old, new, rx)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency2k9_en(slug, old=None, new=None, add=None, ref=None, rx=False):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if old is not None: _e["desc"] = _one9(_e["desc"], old, new, rx)
+            if add: _e["desc"] = _e["desc"] + add
+            if ref: _e.setdefault("refs", []).append(ref)
+            return
+    raise KeyError(slug)
+
+def _ency2k9_es(slug, old=None, new=None, add=None, rx=False):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if old is not None: _s = _one9(_s, old, new, rx)
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _L9(es, txt, n, ch='2 Kings'):
+    return '<a href="2-kings-9.%shtml#v9-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+# ---------- new dictionary entries ----------
+assert not any(_d[0] in ("pak", "pukh", "domen", "shifat") for _d in DICTIONARY)
+DICTIONARY.append(("pak", "pak", "פַּךְ", "pak",
+    'A FLASK &mdash; a small vessel for oil, poured from the hand. &#11088; <span data-heb="פך השמן">&lsquo;The flask of oil&rsquo; (<em>pak ha-shemen</em>) stands in <strong>three verses</strong> of the Hebrew Bible</span>: Samuel anoints Saul from it (<a href="1-samuel-10.html#v10-1">1 Samuel 10:1</a>, now on these pages), and Elisha sends a young man with it to anoint Jehu (<a href="2-kings-9.html#v9-1">2 Kings 9:1, 3</a>, now on these pages). Solomon is anointed from a horn (<a href="1-kings-1.html#v39">1 Kings 1:39</a>, now on these pages), and Radak reports the rabbis&rsquo; line between them: the kingships anointed from a flask, Saul&rsquo;s and Jehu&rsquo;s, did not last, and those anointed from a horn, David&rsquo;s and Solomon&rsquo;s, did. &#9888; The English shelf spreads: &lsquo;box&rsquo; (KJV), &lsquo;vial&rsquo; (ASV, TLB), &lsquo;little bottle&rsquo; (Douay), &lsquo;flask&rsquo; (NIV, NWT 1984). Not the same word as <a href="dictionary.html#pach">pach</a>, a snare.',
+    ("1 Samuel", 10, 1)))
+DICTIONARY_ES["pak"] = ("pak",
+    'UN FRASCO &mdash;un recipiente pequeño para aceite, que se vierte desde la mano. &#11088; <span data-heb="פך השמן">«El frasco de aceite» (<em>pak ha-shemen</em>) está en <strong>tres versículos</strong> de la Biblia hebrea</span>: Samuel unge a Saúl con él (<a href="1-samuel-10.es.html#v10-1">1 Samuel 10:1</a>, ya en estas páginas), y Eliseo envía a un joven con él para ungir a Jehú (<a href="2-kings-9.es.html#v9-1">2 Reyes 9:1, 3</a>, ya en estas páginas). Salomón es ungido con un cuerno (<a href="1-kings-1.es.html#v39">1 Reyes 1:39</a>, ya en estas páginas), y Radak cuenta la línea que los rabinos trazan entre ellos: los reinados ungidos con un frasco, el de Saúl y el de Jehú, no duraron, y los ungidos con un cuerno, el de David y el de Salomón, sí. &#9888; El estante español se reparte: «redoma» (RV60), «alcuza» (RV 1909), «frasco» (NVI, TNM 1987). No es la misma palabra que <a href="diccionario.html#pach">pach</a>, una trampa.')
+
+DICTIONARY.append(("pukh", "pukh", "פּוּךְ", "pukh",
+    'KOHL &mdash; black eye-paint, a powder of antimony. &#11088; <span data-heb="בפוך">&lsquo;In kohl&rsquo; (<em>be-fukh</em>) stands in <strong>three verses</strong> of the Hebrew Bible</span>: Jezebel puts it on her eyes when Jehu comes to Jezreel (<a href="2-kings-9.html#v9-30">2 Kings 9:30</a>, now on these pages); Isaiah 54:11, where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (neither of those two yet on these pages). &#9888; The English shelf spreads: &lsquo;painted her face&rsquo; (KJV, Geneva), &lsquo;painted her eyes&rsquo; (ASV), &lsquo;put on eye makeup&rsquo; (NIV), &lsquo;painted her eyelids&rsquo; (TLB), &lsquo;painted her face with stibic stone&rsquo; (Douay), &lsquo;paint her eyes with black paint&rsquo; (NWT 1984). The Spanish RV60 has &lsquo;antimonio&rsquo;.',
+    ("2 Kings", 9, 30)))
+DICTIONARY_ES["pukh"] = ("pukh",
+    'ANTIMONIO &mdash;pintura negra para los ojos, un polvo de antimonio. &#11088; <span data-heb="בפוך">«Con antimonio» (<em>be-fuj</em>) está en <strong>tres versículos</strong> de la Biblia hebrea</span>: Jezabel se lo pone en los ojos cuando Jehú llega a Jezreel (<a href="2-kings-9.es.html#v9-30">2 Reyes 9:30</a>, ya en estas páginas); Isaías 54:11, donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (ninguno de los dos todavía en estas páginas). &#9888; El estante español se reparte: «se pintó los ojos con antimonio» (RV60), «adornó sus ojos con alcohol» (RV 1909), «se sombreó los ojos» (NVI), «pintarse los ojos con pintura negra» (TNM 1987).')
+
+DICTIONARY.append(("domen", "domen", "דֹּמֶן", "domen",
+    'DUNG &mdash; manure spread on a field, the picture of a body left where it fell. &#11088; It is what Jezebel&rsquo;s corpse will be, &lsquo;like dung on the face of the field in the plot of Jezreel, so that they shall not say: This is Jezebel&rsquo; (<a href="2-kings-9.html#v9-37">2 Kings 9:37</a>, now on these pages), and the slain of Jehovah in Jeremiah (<a href="jeremiah-25.html#v25-33">Jeremiah 25:33</a>, now on these pages; the word is also at Jeremiah 8:2 and 16:4 and Psalm 83:11, not yet on these pages). Radak gives the Targum, &lsquo;like dung scattered on the face of the field&rsquo;. &#9888; Not the <a href="dictionary.html#galal-dung">galal</a> of 1 Kings 14:10. The KJV, the ASV and the NIV have &lsquo;dung&rsquo;, the TLB and the NWT 1984 &lsquo;manure&rsquo;.',
+    ("2 Kings", 9, 37)))
+DICTIONARY_ES["domen"] = ("domen",
+    'ESTIÉRCOL &mdash;abono esparcido en un campo, la imagen de un cuerpo dejado donde cayó. &#11088; Es lo que será el cadáver de Jezabel, «como estiércol sobre la faz del campo en la parcela de Jezreel, de modo que no digan: Esta es Jezabel» (<a href="2-kings-9.es.html#v9-37">2 Reyes 9:37</a>, ya en estas páginas), y los muertos de Jehová en Jeremías (<a href="jeremiah-25.es.html#v25-33">Jeremías 25:33</a>, ya en estas páginas; la palabra está también en Jeremías 8:2 y 16:4 y el Salmo 83:11, todavía no en estas páginas). Radak da el Targum, «como estiércol esparcido sobre la faz del campo». &#9888; No es el <a href="diccionario.html#galal-dung">galal</a> de 1 Reyes 14:10. La RV60, la RV 1909, la NVI y la TNM 1987 tienen todas «estiércol».')
+
+DICTIONARY.append(("shifat", "shifat", "שִׁפְעַת", "shifat",
+    'AN ABUNDANCE, a multitude &mdash; an overflow of something. &#11088; <span data-heb="שפעת">The word stands in <strong>five verses</strong> of the Hebrew Bible</span>: an abundance of water (Job 22:11; 38:34), of camels (Isaiah 60:6) and of horses (Ezekiel 26:10), none of them yet on these pages, and the watchman on the tower at Jezreel, who sees &lsquo;the multitude of Jehu&rsquo; coming and says &lsquo;I see a multitude&rsquo; (<a href="2-kings-9.html#v9-17">2 Kings 9:17</a>, now on these pages). &#9888; The English shelf spreads: &lsquo;company&rsquo; (KJV, ASV), &lsquo;troops&rsquo; (NIV), &lsquo;troop&rsquo; (Douay), &lsquo;heaving mass&rsquo; (NWT 1984). The Greek has &lsquo;dust&rsquo;.',
+    ("2 Kings", 9, 17)))
+DICTIONARY_ES["shifat"] = ("shifat",
+    'UNA ABUNDANCIA, una multitud &mdash;un desbordamiento de algo. &#11088; <span data-heb="שפעת">La palabra está en <strong>cinco versículos</strong> de la Biblia hebrea</span>: una abundancia de agua (Job 22:11; 38:34), de camellos (Isaías 60:6) y de caballos (Ezequiel 26:10), ninguno todavía en estas páginas, y el centinela de la torre de Jezreel, que ve «la multitud de Jehú» que viene y dice «Veo una multitud» (<a href="2-kings-9.es.html#v9-17">2 Reyes 9:17</a>, ya en estas páginas). &#9888; El estante español se reparte: «tropa» (RV60), «cuadrilla» (RV 1909), «tropas» (NVI), «oleada en masa» (TNM 1987). El griego tiene «polvo».')
+
+# ---------- new encyclopedia entries ----------
+assert not any(_e["slug"] in ("bidkar", "ibleam", "beth-haggan") for _e in ENCYCLOPEDIA)
+ENCYCLOPEDIA.append(dict(slug="bidkar", name="Bidkar", kind="person", aliases=["Bidkar the officer"],
+    refs=[("2 Kings", 9, 25)], videos=[],
+    desc='Jehu&rsquo;s officer (<em>shalish</em>), who rode with him behind Ahab, and whom Jehu tells to throw Joram&rsquo;s body into the plot of Naboth (<a href="2-kings-9.html#v9-25">2 Kings 9:25</a>, now on these pages). His name appears nowhere else in the Hebrew Bible. The shelf calls him &lsquo;captain&rsquo; (KJV, ASV, Douay), &lsquo;chariot officer&rsquo; (NIV), &lsquo;assistant&rsquo; (TLB) and &lsquo;adjutant&rsquo; (NWT 1984); Josephus makes him the commander of the third division.'))
+ENCYCLOPEDIA_ES["bidkar"] = ("Bidcar",
+    'El oficial de Jehú (<em>shalish</em>), que cabalgó con él detrás de Acab, y a quien Jehú manda arrojar el cuerpo de Joram en la parcela de Nabot (<a href="2-kings-9.es.html#v9-25">2 Reyes 9:25</a>, ya en estas páginas). Su nombre no aparece en ningún otro lugar de la Biblia hebrea. El estante lo llama «capitán» (RV60, RV 1909), «ayudante» (NVI) y «adjutor» (TNM 1987); Josefo lo hace jefe de la tercera división.')
+
+ENCYCLOPEDIA.append(dict(slug="ibleam", name="Ibleam", kind="place", aliases=["Ibleam", "Gur", "ascent of Gur"],
+    coords=(32.4553, 35.2884, 1.5), approx=True, modern="usually placed at Khirbet Belameh near Jenin; not certain",
+    refs=[("2 Kings", 9, 27)], videos=[],
+    desc='A town in the north, by the ascent of Gur, where Ahaziah of Judah is struck in his chariot as he flees from Jehu before dying at Megiddo (<a href="2-kings-9.html#v9-27">2 Kings 9:27</a>, now on these pages). The Greek has &lsquo;Gai, which is Ibleam&rsquo;. &#9888; Its site is not settled, and nothing in the chapter says where Gur itself lay beyond &lsquo;by Ibleam&rsquo;.'))
+ENCYCLOPEDIA_ES["ibleam"] = ("Ibleam",
+    'Una ciudad del norte, junto a la subida de Gur, donde Ocozías de Judá es herido en su carro cuando huye de Jehú antes de morir en Meguido (<a href="2-kings-9.es.html#v9-27">2 Reyes 9:27</a>, ya en estas páginas). El griego tiene «Gai, que es Ibleam». &#9888; Su ubicación no está resuelta, y nada en el capítulo dice dónde estaba Gur más allá de «junto a Ibleam».')
+
+ENCYCLOPEDIA.append(dict(slug="beth-haggan", name="Beth-haggan", kind="place", aliases=["Beth-haggan", "the garden house"],
+    coords=(32.4608, 35.3, 3.0), approx=True, modern="often identified with Jenin (En-gannim); not certain",
+    refs=[("2 Kings", 9, 27)], videos=[],
+    desc='&lsquo;The garden house&rsquo;, by whose way Ahaziah of Judah flees from Jezreel (<a href="2-kings-9.html#v9-27">2 Kings 9:27</a>, now on these pages). The Hebrew is <em>derekh beth ha-gan</em>, which the KJV and ASV give as &lsquo;the way of the garden house&rsquo;, the NIV as &lsquo;the road to Beth Haggan&rsquo;, and the Greek keeps as a name, <em>Baithgan</em>. &#9888; Whether it is a place name or a plain &lsquo;house of the garden&rsquo; is the question; the identification with Jenin is a proposal.'))
+ENCYCLOPEDIA_ES["beth-haggan"] = ("Bet-haggán",
+    '«La casa del huerto», por cuyo camino huye Ocozías de Judá de Jezreel (<a href="2-kings-9.es.html#v9-27">2 Reyes 9:27</a>, ya en estas páginas). El hebreo es <em>derekh beth ha-gan</em>, que la RV60 y la RV 1909 dan como «el camino de la casa del huerto», la NVI como «en dirección a Bet Hagán», y el griego conserva como nombre, <em>Baithgan</em>. &#9888; Si es un nombre de lugar o simplemente «la casa del huerto» es la cuestión; la identificación con Jenin es una propuesta.')
+
+# ---------- dictionary: stale "not yet" fixed ----------
+_dict2k9_en("shemittah", "(2 Kings 9:33)", '(' + _L9(False, '2 Kings 9:33', 33) + ', now on these pages)')
+_dict2k9_es("shemittah", "(2 Reyes 9:33)", '(' + _L9(True, '2 Reyes 9:33', 33) + ', ya en estas páginas)')
+_dict2k9_en("shaqaph", "(2 Kings 9:30, not yet on these pages)", '(' + _L9(False, '2 Kings 9:30', 30) + ', now on these pages)')
+_dict2k9_es("shaqaph", "(2 Reyes 9:30, todavía no en estas páginas)", '(' + _L9(True, '2 Reyes 9:30', 30) + ', ya en estas páginas)')
+_dict2k9_en("shiggaon", "; 2 Kings 9:20, where the watchman", '; ' + _L9(False, '2 Kings 9:20', 20) + ' (now on these pages), where the watchman')
+_dict2k9_en("shiggaon", "Zechariah 12:4 (neither yet on these pages)", "Zechariah 12:4 (not yet on these pages)")
+_dict2k9_en("shiggaon", "(2 Kings 9:11)", '(' + _L9(False, '2 Kings 9:11', 11) + ', now on these pages)')
+_dict2k9_es("shiggaon", "; 2 Reyes 9:20, donde el atalaya", '; ' + _L9(True, '2 Reyes 9:20', 20) + ' (ya en estas páginas), donde el atalaya')
+_dict2k9_es("shiggaon", "Zacarías 12:4 (ninguno todavía en estas páginas)", "Zacarías 12:4 (todavía no en estas páginas)")
+_dict2k9_es("shiggaon", "(2 Reyes 9:11)", '(' + _L9(True, '2 Reyes 9:11', 11) + ', ya en estas páginas)')
+_dict2k9_en("chets", "(2 Kings 9:24, not yet on these pages)", '(' + _L9(False, '2 Kings 9:24', 24) + ', now on these pages)')
+_dict2k9_es("chets", "(2 Reyes 9:24, todavía no en estas páginas)", '(' + _L9(True, '2 Reyes 9:24', 24) + ', ya en estas páginas)')
+_dict2k9_en("meshugga", "(2 Kings 9:11)", '(' + _L9(False, '2 Kings 9:11', 11) + ', now on these pages)')
+_dict2k9_es("meshugga", "(2 Reyes 9:11)", '(' + _L9(True, '2 Reyes 9:11', 11) + ', ya en estas páginas)')
+_dict2k9_en("meshugga", "&lsquo;for he drives madly&rsquo; (2 Kings 9:20)", '&lsquo;for he drives madly&rsquo; (' + _L9(False, '2 Kings 9:20', 20) + ', now on these pages)')
+_dict2k9_es("meshugga", "«porque conduce como un loco» (2 Reyes 9:20)", '«porque conduce como un loco» (' + _L9(True, '2 Reyes 9:20', 20) + ', ya en estas páginas)')
+_dict2k9_en("mashtin-beqir", "2 Kings 9:8, not yet on these pages)", _L9(False, '2 Kings 9:8', 8) + ', now on these pages)')
+_dict2k9_es("mashtin-beqir", "2 Reyes 9:8, todavía no en estas páginas)", _L9(True, '2 Reyes 9:8', 8) + ', ya en estas páginas)')
+_dict2k9_en("atsur-veazuv", "and 2 Kings 9:8 (not yet on these pages)", 'and ' + _L9(False, '2 Kings 9:8', 8) + ' (now on these pages)')
+_dict2k9_es("atsur-veazuv", "y 2 Reyes 9:8 (todavía no en estas páginas)", 'y ' + _L9(True, '2 Reyes 9:8', 8) + ' (ya en estas páginas)')
+_dict2k9_en("chel", "The telling at 2 Kings 9:10, 36 (not yet on these pages)", 'The telling at ' + _L9(False, '2 Kings 9:10, 36', 10) + ' (now on these pages)')
+_dict2k9_es("chel", "El relato de 2 Reyes 9:10, 36 (todavía no en estas páginas)", 'El relato de ' + _L9(True, '2 Reyes 9:10, 36', 10) + ' (ya en estas páginas)')
+_dict2k9_en("cheder", "(2 Kings 9:2, not yet on these pages)", '(' + _L9(False, '2 Kings 9:2', 2) + ', now on these pages)')
+_dict2k9_es("cheder", "(2 Reyes 9:2, todavía no en estas páginas)", '(' + _L9(True, '2 Reyes 9:2', 2) + ', ya en estas páginas)')
+_dict2k9_en("saris", add=' &#11088; Jezebel&rsquo;s two or three look down from the window when Jehu calls, and drop her (<a href="2-kings-9.html#v9-32">2 Kings 9:32&ndash;33</a>, now on these pages); the KJV, ASV, NIV, TLB and Geneva have &lsquo;eunuchs&rsquo;, the NWT 1984 &lsquo;court officials&rsquo;.')
+_dict2k9_es("saris", add=' &#11088; Los dos o tres de Jezabel se asoman a la ventana cuando Jehú llama, y la dejan caer (<a href="2-kings-9.es.html#v9-32">2 Reyes 9:32–33</a>, ya en estas páginas); la RV60 y la RV 1909 tienen «eunucos», la NVI «oficiales» y la TNM 1987 «oficiales de la corte».')
+_dict2k9_en("shalish", add=' &#11088; Bidkar is Jehu&rsquo;s (<a href="2-kings-9.html#v9-25">2 Kings 9:25</a>, now on these pages).')
+_dict2k9_es("shalish", add=' &#11088; Bidcar es el de Jehú (<a href="2-kings-9.es.html#v9-25">2 Reyes 9:25</a>, ya en estas páginas).')
+_dict2k9_en("gulgolet", add=' &#11088; All that is left of Jezebel is &lsquo;the skull and the feet and the palms of the hands&rsquo; (<a href="2-kings-9.html#v9-35">2 Kings 9:35</a>, now on these pages).')
+_dict2k9_es("gulgolet", add=' &#11088; Todo lo que queda de Jezabel es «el cráneo y los pies y las palmas de las manos» (<a href="2-kings-9.es.html#v9-35">2 Reyes 9:35</a>, ya en estas páginas).')
+_dict2k9_en("kelev", add=' &#11088; The dogs are the word on Jezebel, &lsquo;in the plot of Jezreel the dogs shall eat the flesh of Jezebel&rsquo; (<a href="2-kings-9.html#v9-36">2 Kings 9:10, 36</a>, now on these pages).')
+_dict2k9_es("kelev", add=' &#11088; Los perros son la palabra sobre Jezabel, «en la parcela de Jezreel los perros comerán la carne de Jezabel» (<a href="2-kings-9.es.html#v9-36">2 Reyes 9:10, 36</a>, ya en estas páginas).')
+_dict2k9_en("ketiv-qere", add=' &#11088; 2 Kings 9 has three pairs, at verses 15, 33 and 37 (<a href="2-kings-9.html#v9-15">2 Kings 9:15</a>, now on these pages): <em>lagid</em> written and <em>lehagid</em> read; <em>shamtuha</em> with a masculine ending written and a feminine one read; and <em>we-hayt</em> written, <em>we-hayetah</em> read.')
+_dict2k9_es("ketiv-qere", add=' &#11088; 2 Reyes 9 tiene tres pares, en los versículos 15, 33 y 37 (<a href="2-kings-9.es.html#v9-15">2 Reyes 9:15</a>, ya en estas páginas): <em>lagid</em> escrito y <em>lehagid</em> leído; <em>shamtuha</em> con terminación masculina escrita y femenina leída; y <em>we-hayt</em> escrito, <em>we-hayetah</em> leído.')
+_dict2k9_en("shofar", add=' &#11088; The commanders blow it on the steps and cry that Jehu has become king (<a href="2-kings-9.html#v9-13">2 Kings 9:13</a>, now on these pages), as at Solomon&rsquo;s anointing.')
+_dict2k9_es("shofar", add=' &#11088; Los jefes lo tocan en las gradas y gritan que Jehú ha llegado a ser rey (<a href="2-kings-9.es.html#v9-13">2 Reyes 9:13</a>, ya en estas páginas), como en la unción de Salomón.')
+_dict2k9_en("qeshet", add=' &#11088; Jehu &lsquo;filled his hand with the bow&rsquo; before he shot Joram (<a href="2-kings-9.html#v9-24">2 Kings 9:24</a>, now on these pages).')
+_dict2k9_es("qeshet", add=' &#11088; Jehú «llenó su mano con el arco» antes de herir a Joram (<a href="2-kings-9.es.html#v9-24">2 Reyes 9:24</a>, ya en estas páginas).')
+_dict2k9_en("kesher", add=' &#11088; &lsquo;Jehu son of Jehoshaphat son of Nimshi conspired against Joram&rsquo; (<a href="2-kings-9.html#v9-14">2 Kings 9:14</a>, now on these pages).')
+_dict2k9_es("kesher", add=' &#11088; «Jehú hijo de Josafat hijo de Nimsi conspiró contra Joram» (<a href="2-kings-9.es.html#v9-14">2 Reyes 9:14</a>, ya en estas páginas).')
+_dict2k9_en("zenunim", add=' &#11088; Jehu says it of Jezebel to her son, &lsquo;the promiscuity of Jezebel your mother and her sorceries&rsquo; (<a href="2-kings-9.html#v9-22">2 Kings 9:22</a>, now on these pages).')
+_dict2k9_es("zenunim", add=' &#11088; Jehú lo dice de Jezabel a su hijo, «las prostituciones de Jezabel tu madre y sus hechicerías» (<a href="2-kings-9.es.html#v9-22">2 Reyes 9:22</a>, ya en estas páginas).')
+_dict2k9_en("mirmah", add=' &#11088; It is Joram&rsquo;s cry to Ahaziah as he flees, &lsquo;Treachery, Ahaziah!&rsquo; (<a href="2-kings-9.html#v9-23">2 Kings 9:23</a>, now on these pages).')
+_dict2k9_es("mirmah", add=' &#11088; Es el grito de Joram a Ocozías mientras huye, «¡Traición, Ocozías!» (<a href="2-kings-9.es.html#v9-23">2 Reyes 9:23</a>, ya en estas páginas).')
+_dict2k9_en("massa", add=' &#11088; Jehu says Jehovah &lsquo;lifted this burden&rsquo; against Ahab, and quotes it (<a href="2-kings-9.html#v9-25">2 Kings 9:25</a>, now on these pages).')
+_dict2k9_es("massa", add=' &#11088; Jehú dice que Jehová «levantó esta carga» contra Acab, y la cita (<a href="2-kings-9.es.html#v9-25">2 Reyes 9:25</a>, ya en estas páginas).')
+_dict2k9_en("shalom", add=' &#11088; &lsquo;Is it peace?&rsquo; is asked four times at Jezreel, and Jehu answers &lsquo;What have you to do with peace?&rsquo; (<a href="2-kings-9.html#v9-17">2 Kings 9:17&ndash;22</a>, now on these pages).')
+_dict2k9_es("shalom", add=' &#11088; «¿Hay paz?» se pregunta cuatro veces en Jezreel, y Jehú responde «¿Qué tienes tú que ver con la paz?» (<a href="2-kings-9.es.html#v9-17">2 Reyes 9:17–22</a>, ya en estas páginas).')
+_dict2k9_en("mashiach", add=' &#11088; A young man sent by Elisha pours oil on Jehu&rsquo;s head and says &lsquo;I have anointed you king over Israel&rsquo; (<a href="2-kings-9.html#v9-3">2 Kings 9:3, 6, 12</a>, now on these pages).')
+_dict2k9_es("mashiach", add=' &#11088; Un joven enviado por Eliseo derrama aceite sobre la cabeza de Jehú y dice «Te he ungido rey sobre Israel» (<a href="2-kings-9.es.html#v9-3">2 Reyes 9:3, 6, 12</a>, ya en estas páginas).')
+
+# ---------- encyclopedia: extended and stale "not yet" fixed ----------
+_ency2k9_en("ramoth-gilead", "Jehu's anointing (2 Kings 9, not yet on these pages)", "Jehu's anointing (" + _L9(False, '2 Kings 9', 1) + ", now on these pages)")
+_ency2k9_es("ramoth-gilead", "de la unción de Jehú (2 Reyes 9, todavía no en estas páginas)", "de la unción de Jehú (" + _L9(True, '2 Reyes 9', 1) + ", ya en estas páginas)")
+_ency2k9_en("jezreel", "in 2 Kings 9-10: Joram", "in " + _L9(False, '2 Kings 9', 14) + "-10: Joram")
+_ency2k9_es("jezreel", "en 2 Reyes 9&ndash;10: Joram", "en " + _L9(True, '2 Reyes 9', 14) + "&ndash;10: Joram")
+_ency2k9_en("jezreel", add=' &#11088; Joram lies there wounded and Ahaziah has gone down to see him when Jehu rides in; Jezebel looks out from a window, and Joram dies in Naboth&rsquo;s plot (<a href="2-kings-9.html#v9-15">2 Kings 9:15&ndash;37</a>, now on these pages).')
+_ency2k9_es("jezreel", add=' &#11088; Joram yace allí herido y Ocozías ha bajado a verlo cuando Jehú entra a caballo; Jezabel se asoma a una ventana, y Joram muere en la parcela de Nabot (<a href="2-kings-9.es.html#v9-15">2 Reyes 9:15–37</a>, ya en estas páginas).')
+_ency2k9_en("zimri-king-of-israel", "(2 Kings 9:31, not yet on these pages)", "(" + _L9(False, '2 Kings 9:31', 31) + ", now on these pages)")
+_ency2k9_es("zimri-king-of-israel", "(2 Reyes 9:31, todavía no en estas páginas)", "(" + _L9(True, '2 Reyes 9:31', 31) + ", ya en estas páginas)")
+_ency2k9_en("jezebel", "2 Kings 9:30&ndash;37, not yet on these pages)", _L9(False, '2 Kings 9:30&ndash;37', 30) + ", now on these pages)")
+_ency2k9_es("jezebel", "2 Reyes 9:30–37, todavía no en estas páginas)", _L9(True, '2 Reyes 9:30–37', 30) + ", ya en estas páginas)")
+_ency2k9_en("jehu-son-of-nimshi", "In 2 Kings 9&ndash;10 (not yet on these pages) one of the sons of the prophets anoints him at Elisha&rsquo;s word, and he ends the house of Ahab. 2 Kings 9:2 calls him",
+    "In " + _L9(False, '2 Kings 9', 1) + " (now on these pages) a young man of the sons of the prophets anoints him at Elisha&rsquo;s word, the army cries &lsquo;Jehu has become king!&rsquo;, and he kills Joram and Ahaziah and has Jezebel dropped from a window; the end of Ahab&rsquo;s house goes on in 2 Kings 10 (not yet on these pages). " + _L9(False, '2 Kings 9:2', 2) + " calls him")
+_ency2k9_es("jehu-son-of-nimshi", "En 2 Reyes 9–10 (todavía no en estas páginas) uno de los hijos de los profetas lo unge por orden de Eliseo, y él acaba con la casa de Acab. 2 Reyes 9:2 lo llama",
+    "En " + _L9(True, '2 Reyes 9', 1) + " (ya en estas páginas) un joven de los hijos de los profetas lo unge por orden de Eliseo, el ejército grita «¡Jehú ha llegado a ser rey!», y él mata a Joram y a Ocozías y hace dejar caer a Jezabel de una ventana; el fin de la casa de Acab sigue en 2 Reyes 10 (todavía no en estas páginas). " + _L9(True, '2 Reyes 9:2', 2) + " lo llama")
+_ency2k9_en("naboth", "2 Kings 9:26 (not yet on these pages) adds", _L9(False, '2 Kings 9:26', 26) + " (now on these pages) adds")
+_ency2k9_es("naboth", "2 Reyes 9:26 (todavía no en estas páginas) añade", _L9(True, '2 Reyes 9:26', 26) + " (ya en estas páginas) añade")
+_ency2k9_en("ahaziah-judah", "2 Kings 9:29 (not yet on these pages) says the eleventh. Radak notes that the Chronicles give his age as forty-two.", _L9(False, '2 Kings 9:29', 29) + " (now on these pages) says the eleventh. Radak notes that the Chronicles give his age as forty-two. &#11088; Jehu has him struck in his chariot at the ascent of Gur, and he dies at Megiddo (" + _L9(False, '2 Kings 9:27', 27) + ", now on these pages).")
+_ency2k9_es("ahaziah-judah", "2 Reyes 9:29 (todavía no en estas páginas) dice el once. Radak anota que las Crónicas dan su edad como cuarenta y dos.", _L9(True, '2 Reyes 9:29', 29) + " (ya en estas páginas) dice el once. Radak anota que las Crónicas dan su edad como cuarenta y dos. &#11088; Jehú lo hace herir en su carro en la subida de Gur, y muere en Meguido (" + _L9(True, '2 Reyes 9:27', 27) + ", ya en estas páginas).")
+_ency2k9_en("megiddo", add=' &#11088; Ahaziah of Judah flees there wounded and dies (<a href="2-kings-9.html#v9-27">2 Kings 9:27</a>, now on these pages).')
+_ency2k9_es("megiddo", add=' &#11088; Ocozías de Judá huye allí herido y muere (<a href="2-kings-9.es.html#v9-27">2 Reyes 9:27</a>, ya en estas páginas).')
+_ency2k9_en("sons-of-the-prophets", add=' &#11088; One of them is sent by Elisha with a flask of oil to anoint Jehu (<a href="2-kings-9.html#v9-1">2 Kings 9:1&ndash;6</a>, now on these pages).')
+_ency2k9_es("sons-of-the-prophets", add=' &#11088; Eliseo envía a uno de ellos con un frasco de aceite a ungir a Jehú (<a href="2-kings-9.es.html#v9-1">2 Reyes 9:1–6</a>, ya en estas páginas).')
+_ency2k9_en("elisha", add=' &#11088; <a href="2-kings-9.html#v9-1">2 Kings 9</a> (now on these pages): he does not go himself but sends a young man of the sons of the prophets with a flask of oil to Ramoth-gilead to anoint Jehu.')
+_ency2k9_es("elisha", add=' &#11088; <a href="2-kings-9.es.html#v9-1">2 Reyes 9</a> (ya en estas páginas): no va él mismo sino que envía a un joven de los hijos de los profetas con un frasco de aceite a Ramot de Galaad a ungir a Jehú.')
+_ency2k9_en("elijah", add=' &#11088; Jehu quotes his word against Jezebel as &lsquo;by the hand of his servant Elijah the Tishbite&rsquo; (<a href="2-kings-9.html#v9-36">2 Kings 9:36</a>, now on these pages).')
+_ency2k9_es("elijah", add=' &#11088; Jehú cita su palabra contra Jezabel como «por mano de su siervo Elías el tisbita» (<a href="2-kings-9.es.html#v9-36">2 Reyes 9:36</a>, ya en estas páginas).')
+_ency2k9_en("jonah", add=' &#11088; Rashi says he was the young man Elisha sent to anoint Jehu, and Radak writes that &lsquo;they said&rsquo; so (<a href="2-kings-9.html#v9-1">2 Kings 9:1&ndash;4</a>, now on these pages); the chapter itself names no one.')
+_ency2k9_es("jonah", add=' &#11088; Rashi dice que era el joven que Eliseo envió a ungir a Jehú, y Radak escribe que «dijeron» que lo era (<a href="2-kings-9.es.html#v9-1">2 Reyes 9:1–4</a>, ya en estas páginas); el capítulo mismo no nombra a nadie.')
+_ency2k9_en("jehoram-israel", add=' &#11088; In <a href="2-kings-9.html#v9-14">2 Kings 9</a> (now on these pages) he lies wounded at Jezreel, goes out in his chariot to meet Jehu, and is shot in the heart; the Hebrew prints his name Joram at verses 14 and 16 and Jehoram at 15, 17 and 21&ndash;24.')
+_ency2k9_es("jehoram-israel", add=' &#11088; En <a href="2-kings-9.es.html#v9-14">2 Reyes 9</a> (ya en estas páginas) yace herido en Jezreel, sale en su carro al encuentro de Jehú y recibe una flecha en el corazón; el hebreo imprime su nombre Joram en los versículos 14 y 16 y Jehoram en 15, 17 y 21–24.')
+_ency2k9_en("ahab", add=' &#11088; Jehu is told to strike his house, &lsquo;your master&rsquo;, and throws his son&rsquo;s body in Naboth&rsquo;s plot (<a href="2-kings-9.html#v9-7">2 Kings 9:7&ndash;10, 25&ndash;26</a>, now on these pages).')
+_ency2k9_es("ahab", add=' &#11088; A Jehú se le manda herir su casa, «tu señor», y arroja el cuerpo de su hijo en la parcela de Nabot (<a href="2-kings-9.es.html#v9-7">2 Reyes 9:7–10, 25–26</a>, ya en estas páginas).')
+_ency2k9_en("hazael", add=' &#11088; Joram and all Israel had been guarding Ramoth-gilead against him when Jehu conspired (<a href="2-kings-9.html#v9-14">2 Kings 9:14&ndash;15</a>, now on these pages).')
+_ency2k9_es("hazael", add=' &#11088; Joram y todo Israel habían estado guardando Ramot de Galaad contra él cuando Jehú conspiró (<a href="2-kings-9.es.html#v9-14">2 Reyes 9:14–15</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["2kgs9"] = dict(era="monarchy",
+    when="Elisha sends a young man of the sons of the prophets to Ramoth-gilead with a flask of oil, to bring Jehu son of Jehoshaphat son of Nimshi into a back room and anoint him king over Israel, and to flee. The young man pours the oil and tells Jehu to strike the house of Ahab and avenge the prophets’ blood on Jezebel; the commanders call him a madman, then spread their cloaks for Jehu on the steps and blow the horn. Jehu conspires against Joram, who lies wounded at Jezreel with Ahaziah of Judah visiting, and drives there; Joram sends two riders and goes out himself, and Jehu shoots him in Naboth’s plot. Ahaziah flees and is struck at the ascent of Gur and dies at Megiddo. Jezebel paints her eyes and looks out; Jehu has her dropped from the window, and the dogs leave only her skull, feet and palms.",
+    clock="The chapter dates the accession of Ahaziah of Judah to the eleventh year of Joram of Israel, where 2 Kings 8:25 has the twelfth. It does not say how long Joram had been at Jezreel, or how many days pass between Jehu’s anointing and his arrival there.")
+
+CHAPTER_ART["2kgs9"] = [dict(
+    file="dore-jehus-companions-find-jezebels-remains.jpg",
+    title="Jehu’s Companions Find Jezebel’s Remains", title_es="Los compañeros de Jehú hallan los restos de Jezabel",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Doré’s Bible illustrations, engraved by H. Pisan (Commons file)", location_es="Ilustraciones bíblicas de Doré, grabadas por H. Pisan (archivo de Commons)",
+    alt="A black-and-white engraving of a night scene beside a high cracked wall under a half moon. Three robed men stand together, two holding spears, and a fourth kneels and reaches toward a woman’s head lying on the ground, with a hand and part of an arm lying near it. A dog is slinking away at the right.",
+    alt_es="Un grabado en blanco y negro de una escena nocturna junto a un alto muro agrietado bajo una media luna. Tres hombres con túnicas están juntos, dos con lanzas, y un cuarto está arrodillado y extiende la mano hacia la cabeza de una mujer tendida en el suelo, con una mano y parte de un brazo cerca de ella. Un perro se aleja a la derecha.",
+    note="2 Kings 9:35. The engraving shows the burial party at the wall, with what the dogs left of Jezebel; the verse names only the skull, the feet and the palms of the hands, and the picture adds the dog and the night.",
+    note_es="2 Reyes 9:35. El grabado muestra a los que fueron a sepultarla junto al muro, con lo que dejaron los perros de Jezabel; el versículo nombra solo el cráneo, los pies y las palmas de las manos, y la imagen añade el perro y la noche.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:098.Jehu%27s_Companions_Find_Jezebel%27s_Remains.jpg",
+)]
