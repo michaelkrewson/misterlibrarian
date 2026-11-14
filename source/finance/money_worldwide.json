@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14 10:01 UTC",
+ "generated": "2026-11-14 16:35 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-11-13",
@@ -332,16 +332,16 @@
     "m0": null,
     "m0_date": null,
     "usd_m0": null,
-    "m1": 320.3637,
-    "m1_date": "2026Aug",
-    "usd_m1": 248.71027094169708,
-    "m2": 898.667,
-    "m2_date": "2026Aug",
-    "usd_m2": 697.668659265585,
-    "m3": 915.1936999999999,
-    "m3_date": "2026Aug",
-    "usd_m3": 710.4989519447247,
-    "broad_usd": 710.4989519447247,
+    "m1": 321.3657,
+    "m1_date": "2026Sep",
+    "usd_m1": 249.4881608570763,
+    "m2": 903.7594,
+    "m2_date": "2026Sep",
+    "usd_m2": 701.6220790311311,
+    "m3": 920.4168000000001,
+    "m3_date": "2026Sep",
+    "usd_m3": 714.5538389876563,
+    "broad_usd": 714.5538389876563,
     "broad_yoy_pct": null,
     "volatility_pct": 3.460248685564716,
     "turnover_usd": null
@@ -464,7 +464,7 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 125862.01076612496,
+  "total_broad_usd_b": 125866.0656531679,
   "n_resolved": 15,
   "n_total": 20
  },
@@ -624,7 +624,7 @@
   "total_usd": 3349466240719.18,
   "world_official_tonnes_estimate": 36600,
   "price_usd_oz": 3886.300048828125,
-  "price_as_of": "2026-11-14 10:00 UTC",
+  "price_as_of": "2026-11-14 16:33 UTC",
   "world_market_value_usd": 27021759859332.766,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
@@ -2003,16 +2003,16 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 67345.7578125,
-  "market_cap_usd": 1354442096626.284,
+  "price_usd": 65311.80859375,
+  "market_cap_usd": 1313542930461.4258,
   "btc_rank": 13,
-  "volatility_pct": 36.46772632471874,
-  "turnover_usd": 33240779573.608677,
-  "broad_yoy_pct": 0.8172455024861213,
+  "volatility_pct": 36.63379712443329,
+  "turnover_usd": 33586594964.019135,
+  "broad_yoy_pct": 0.8172410578327481,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
-    "usd": 125862010766124.97,
+    "usd": 125866065653167.89,
     "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
@@ -2022,7 +2022,7 @@
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1354442096626.284,
+    "usd": 1313542930461.4258,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
