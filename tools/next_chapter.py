@@ -8,7 +8,8 @@
 
 The ORDER lives in tools/chapter_priority.py (it is a judgment and rarely changes). What is LEFT is
 read from CHAPTERS in build.py and from source/es/, so shipping a chapter removes it from the queue
-with no edit anywhere. A new chapter ships in BOTH languages together (CLAUDE.md, per-chapter
+with no edit anywhere. CLAIMING: push a branch named for the chapter (psalms-22) and open a draft PR titled
+"Psalms 22: ..."; open PRs show as IN PROGRESS here and on the cards (they need `gh`; without it the claims are just not shown). A new chapter ships in BOTH languages together (CLAUDE.md, per-chapter
 checklist), so the English queue is also the queue for new Spanish chapters; the Spanish card is only
 the BACKFILL: chapters that went live in English before their Spanish twin was written.
 """
@@ -106,7 +107,33 @@ def label(k):
     return "%s %d" % k
 
 
-def render_en(queue, reasons, done):
+def open_claims():
+    """-> {(book, chapter): "PR #N"} for chapters somebody has an open PR on. Fails OPEN (empty) if gh is unavailable.
+
+    A session CLAIMS a chapter by pushing a branch named for it (psalms-22) and opening a draft PR whose title
+    names it ("Psalms 22: ..."). Nothing is written to the repo to claim, so a claim cannot go stale on main."""
+    import json
+    import subprocess
+    try:
+        out = subprocess.run(["gh", "pr", "list", "--state", "open", "--limit", "100", "--json", "number,title,headRefName"],
+                             capture_output=True, text=True, timeout=30, cwd=ROOT).stdout
+        prs = json.loads(out or "[]")
+    except Exception:
+        return {}
+    names = sorted((b for b, _ in CANON), key=len, reverse=True)
+    pat = re.compile(r"\b(%s)\s+(\d{1,3})\b" % "|".join(re.escape(n) for n in names), re.I)
+    claims = {}
+    for pr in prs:
+        hay = pr.get("title", "") + " " + pr.get("headRefName", "").replace("-", " ")
+        for m in pat.finditer(hay):
+            book = next((b for b, _ in CANON if b.lower() == m.group(1).lower()), None)
+            if book:
+                claims[(book, int(m.group(2)))] = "PR #%d" % pr["number"]
+    return claims
+
+
+def render_en(queue, reasons, done, claims=None):
+    claims = claims or {}
     tot = sum(n for _, n in CANON)
     lines = [
         "# Mister Translation: chapters still to translate, in priority order",
@@ -155,12 +182,16 @@ def render_en(queue, reasons, done):
         if t != current:
             lines.append("| | **%s** | |" % title)
             current = t
-        lines.append("| %d | %s | %s |" % (i, label(k), reasons.get(k, "")))
+        why = reasons.get(k, "")
+        if k in claims:
+            why = "**IN PROGRESS (%s)** " % claims[k] + why
+        lines.append("| %d | %s | %s |" % (i, label(k), why))
     lines.append("")
     return "\n".join(lines)
 
 
-def render_es(back, done_count):
+def render_es(back, done_count, claims=None):
+    claims = claims or {}
     lines = [
         "# Mister Translation en espa&ntilde;ol: the Spanish backfill".replace("&ntilde;", "ñ"),
         "",
@@ -183,6 +214,8 @@ def render_es(back, done_count):
              ("Daniel", 1): "the four in Babylon; the king's food"}
     for i, k in enumerate(back, 1):
         n = notes.get(k, "Genesis, in book order (in progress)" if k[0] == "Genesis" else "")
+        if k in claims:
+            n = "**IN PROGRESS (%s)** " % claims[k] + n
         lines.append("| %d | %s | %s |" % (i, label(k), n))
     lines.append("")
     return "\n".join(lines)
@@ -198,18 +231,20 @@ def main():
     gsc = read_gsc(a.gsc) if a.gsc else None
     queue, reasons = english_queue(done, gsc)
     back = spanish_backfill(done, done_spanish())
+    claims = open_claims()
     if a.write:
-        open(os.path.join(ROOT, "TRANSLATION_QUEUE_EN.md"), "w", encoding="utf8").write(render_en(queue, reasons, done))
-        open(os.path.join(ROOT, "TRANSLATION_QUEUE_ES.md"), "w", encoding="utf8").write(render_es(back, len(done)))
+        open(os.path.join(ROOT, "TRANSLATION_QUEUE_EN.md"), "w", encoding="utf8").write(render_en(queue, reasons, done, claims))
+        open(os.path.join(ROOT, "TRANSLATION_QUEUE_ES.md"), "w", encoding="utf8").write(render_es(back, len(done), claims))
         print("wrote TRANSLATION_QUEUE_EN.md (%d chapters) and TRANSLATION_QUEUE_ES.md (%d)" % (len(queue), len(back)))
         return 0
     print("English: %d chapters remain. Next %d (each ships in English AND Spanish):" % (len(queue), a.n))
     for i, k in enumerate(queue[: a.n], 1):
-        print("  %2d. %-18s %s%s" % (i, label(k), reasons.get(k, ""),
-                                     "   [GSC impressions: %d]" % gsc[k] if gsc and gsc.get(k) else ""))
+        print("  %2d. %-18s %s%s%s" % (i, label(k), reasons.get(k, ""),
+                                       "   [GSC impressions: %d]" % gsc[k] if gsc and gsc.get(k) else "",
+                                       "   <-- IN PROGRESS (%s), take the next one" % claims[k] if k in claims else ""))
     print("\nSpanish backfill: %d chapters have English and no Spanish. Next %d:" % (len(back), a.n))
     for i, k in enumerate(back[: a.n], 1):
-        print("  %2d. %s" % (i, label(k)))
+        print("  %2d. %s%s" % (i, label(k), "   <-- IN PROGRESS (%s)" % claims[k] if k in claims else ""))
     return 0
 
 
