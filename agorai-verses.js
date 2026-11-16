@@ -20,6 +20,11 @@
 //    page never hosts anyone's comments: Google credits them to Micwyn, and AdSense, which judges
 //    a whole site, never sees a heated thread here. Loaded by script, so nothing here is indexed.
 //
+//  - "Mentioned in" (2026-11-15): a verse that members have LINKED to from some other Micwyn
+//    conversation (a post that says "Luke 19:40") gets a 🔗 count; tapping it lists those
+//    conversations, each opening at the citing post. Links to the chapter as a whole are listed
+//    in the box under the chapter. Micwyn decides what is public; this only shows its answer.
+//
 // No-ops unless the page has both verses and an Micwyn target (so Spanish pages, which have
 // no target yet, and every non-chapter page are untouched).
 (function () {
@@ -85,6 +90,10 @@
     ".agv-post{background:var(--gold,#e8c968);color:#0b1929;border:0;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;cursor:pointer}" +
     ".agv-post[disabled]{opacity:.5;cursor:default}" +
     ".agv-fine{color:var(--muted,#94a3b8);font-size:12.5px}" +
+    ".agv-ment{display:block;margin:6px 0 6px 22px;padding:8px 12px;border-left:3px solid rgba(94,179,214,.45);font:14px/1.5 system-ui,-apple-system,sans-serif}" +
+    ".agv-ment b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted,#94a3b8);margin-bottom:2px}" +
+    ".agv-ment a{display:block;padding:3px 0;color:#5eb3d6;text-decoration:none}.agv-ment a:hover{text-decoration:underline}" +
+    ".agv-bub.agv-link{background:none;cursor:pointer;font-family:inherit}" +
     ".agv-jump{margin-left:10px;font-size:13px;color:var(--muted,#94a3b8);text-decoration:none;align-self:center}" +
     ".agv-jump:hover{color:var(--text,#e2e8f0)}";
   document.head.appendChild(css);
@@ -240,13 +249,58 @@
     last.insertAdjacentElement("afterend", box);
   }
 
+  // "Mentioned in": conversations elsewhere on Micwyn that link to a verse (verse 0 = the chapter itself).
+  function mentionList(items, heading) {
+    var box = el("div", "agv-ment");
+    box.appendChild(el("b", null, heading));
+    items.forEach(function (m) {
+      var a = el("a", null, m.title || "A conversation");
+      a.href = m.url; a.target = "_blank"; a.rel = "noopener";
+      box.appendChild(a);
+    });
+    return box;
+  }
+  function mentionBubble(v, items, n) {
+    var anchor = v.querySelector(".v-tools") || v.querySelector(".eng") || v;
+    var b = el("button", "agv-bub agv-link", "🔗 " + items.length);
+    b.type = "button";
+    b.title = "Conversations that mention " + label(n, n);
+    b.setAttribute("aria-expanded", "false");
+    var open = null;
+    b.addEventListener("click", function (e) {
+      e.preventDefault(); e.stopPropagation();
+      if (open) { open.remove(); open = null; b.setAttribute("aria-expanded", "false"); return; }
+      open = mentionList(items, "Mentioned in");
+      v.insertAdjacentElement("afterend", open);
+      b.setAttribute("aria-expanded", "true");
+    });
+    if (anchor.classList && anchor.classList.contains("v-tools")) anchor.insertAdjacentElement("afterend", b);
+    else anchor.appendChild(b);
+  }
+  function showMentions(list, box) {
+    var byVerse = {}, whole = [];
+    (list || []).forEach(function (m) {
+      if (!m || !m.url || typeof m.verse !== "number") return;
+      if (m.verse === 0) whole.push(m);
+      else (byVerse[m.verse] = byVerse[m.verse] || []).push(m);
+    });
+    Object.keys(byVerse).forEach(function (k) { if (byNum[k]) mentionBubble(byNum[k], byVerse[k], +k); });
+    if (whole.length && box) {
+      var ta = box.querySelector("textarea");
+      var l = mentionList(whole, "Also mentioned in");
+      if (ta) box.insertBefore(l, ta); else box.appendChild(l);
+    }
+  }
+
   var placed = false;
   fetch(AGORAI + "/api/discussed?url=" + encodeURIComponent(PAGE))
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d) return;
-      placeBox(convoBox(d.chapter, (d.verses || []).length));
+      var cbox = convoBox(d.chapter, (d.verses || []).length);
+      placeBox(cbox);
       placed = true;
+      try { showMentions(d.mentions, cbox); } catch (e) { /* the marks are a bonus; never break the page */ }
       if (d.chapter) {
         var btn = host.querySelector("[data-agorai-chapter]");
         if (btn) btn.textContent += " · " + d.chapter.posts;
