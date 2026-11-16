@@ -58161,3 +58161,117 @@ CHAPTER_ART["psalms22"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Psalm_21_Initial_D_(cropped).jpg",
 )]
+
+# --- Isaiah 43 ---
+import re as _re43
+def _one43(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict43_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one43(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict43_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one43(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency43_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency43_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _I43(es, txt, n):
+    return '<a href="isaiah-43.%shtml#v43-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+assert not any(_d[0] in ("qaneh", "ani-hu") for _d in DICTIONARY)
+assert not any(_e["slug"] == "seba" for _e in ENCYCLOPEDIA)
+DICTIONARY.append(("qaneh", "qaneh", "קָנֶה", "qaneh",
+    'A CANE, a reed &mdash; and, in the incense and the anointing oil, the aromatic cane, calamus. &#11088; &lsquo;You have not bought me calamus with silver&rsquo; (<a href="isaiah-43.html#v43-24">Isaiah 43:24</a>, now on these pages), where it is set beside the verb <em>qanah</em>, &lsquo;to buy&rsquo; (<a href="dictionary.html#qanah">dictionary</a>), though the two words are of different roots. Rashi says it grew in the Land of Israel and need not be bought; Radak, that it came from a far country, as in &lsquo;the good cane from a far country&rsquo; (Jeremiah 6:20, not yet on these pages). &#9888; The KJV, ASV and Douay have &lsquo;sweet cane&rsquo;, the NIV &lsquo;fragrant calamus&rsquo;, the NWT 1984 &lsquo;[sweet] cane&rsquo;, and the TLB &lsquo;sweet-smelling incense&rsquo;.',
+    ("Isaiah", 43, 24)))
+DICTIONARY_ES["qaneh"] = ("qaneh",
+    'UNA CAÑA, un junco &mdash;y, en el incienso y en el aceite de la unción, la caña aromática, el cálamo. &#11088; «No me compraste caña aromática con plata» (<a href="isaiah-43.es.html#v43-24">Isaías 43:24</a>, ya en estas páginas), donde está junto al verbo <em>qaná</em>, «comprar» (<a href="diccionario.html#qanah">diccionario</a>), aunque las dos palabras son de raíces distintas. Rashi dice que crecía en la tierra de Israel y no hacía falta comprarla; Radak, que venía de un país lejano, como en «la buena caña de tierra lejana» (Jeremías 6:20, todavía no en estas páginas). &#9888; La RV60, la RV 1909 y la NVI tienen «caña aromática», y la TNM 1987 «caña [aromática]».')
+
+DICTIONARY.append(("ani-hu", "ani hu", "אֲנִי הוּא", "ani hu",
+    '&lsquo;I AM HE&rsquo; &mdash; God&rsquo;s declaration that he is the one, the same, and no other. &#11088; <span data-heb-read="אני הוא">In God&rsquo;s own mouth it stands in <strong>seven verses</strong> of the Hebrew Bible</span>: <a href="deuteronomy-32.html#v32-39">Deuteronomy 32:39</a>, <a href="isaiah-41.html#v41-4">Isaiah 41:4</a>, <a href="isaiah-43.html#v43-10">Isaiah 43:10 and 13</a> (now on these pages), and Isaiah 46:4, 48:12 and 52:6 (those three not yet on these pages); the eighth verse that contains the letters is a man&rsquo;s own confession. The doubled <em>anokhi anokhi hu</em>, &lsquo;I, I am he&rsquo;, is a different phrase and stands in two verses, <a href="isaiah-43.html#v43-25">Isaiah 43:25</a> and 51:12. &#9888; The ASV and KJV have &lsquo;I am he&rsquo;, the NWT 1984 &lsquo;I am the same One&rsquo;, and the Greek Isaiah &lsquo;I am&rsquo; (<em>egō eimi</em>) at 43:10 and 43:25. Ibn Ezra says the words state the oneness above which there is nothing, since everything that exists is not itself.',
+    ("Isaiah", 43, 10)))
+DICTIONARY_ES["ani-hu"] = ("ani hu",
+    '«YO SOY ÉL» &mdash;la declaración de Dios de que él es el único, el mismo, y ningún otro. &#11088; <span data-heb-read="אני הוא">En boca del propio Dios está en <strong>siete versículos</strong> de la Biblia hebrea</span>: <a href="deuteronomy-32.es.html#v32-39">Deuteronomio 32:39</a>, <a href="isaiah-41.es.html#v41-4">Isaías 41:4</a>, <a href="isaiah-43.es.html#v43-10">Isaías 43:10 y 13</a> (ya en estas páginas), e Isaías 46:4, 48:12 y 52:6 (esos tres todavía no en estas páginas); el octavo versículo que contiene las letras es la confesión de un hombre. El doble <em>anojí anojí hu</em>, «yo, yo soy él», es otra frase y está en dos versículos, <a href="isaiah-43.es.html#v43-25">Isaías 43:25</a> y 51:12. &#9888; La RV60 y la NVI tienen «yo mismo soy» y «yo soy», la TNM 1987 «yo soy el Mismo», y el Isaías griego «yo soy» (<em>egō eimi</em>) en 43:10 y 43:25. Ibn Ezra dice que las palabras enuncian la unicidad sobre la cual nada hay, pues todo lo que existe no es él mismo.')
+
+ENCYCLOPEDIA.append(dict(slug="seba", name="Seba", kind="people", aliases=["Sheba and Seba"],
+    refs=[("Isaiah", 43, 3)], videos=[],
+    desc='A people or land beside Egypt and Cush, named as part of Israel&rsquo;s ransom: &lsquo;I have given Egypt as your ransom, Cush and Seba in your place&rsquo; (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages). Seba is the first of the sons of Cush in the Table of Nations. The KJV and ASV print &lsquo;Ethiopia and Seba&rsquo;, the NIV &lsquo;Cush and Seba&rsquo;, and the Greek has <em>Soēnēn</em>, &lsquo;Syene&rsquo;. &#9888; Where Seba lay is not settled; Radak and Ibn Ezra read the three names as nations that suffered in Israel&rsquo;s place.'))
+ENCYCLOPEDIA_ES["seba"] = ("Seba",
+    'Un pueblo o tierra junto a Egipto y Cus, nombrado como parte del rescate de Israel: «He dado a Egipto como tu rescate, a Cus y a Seba en tu lugar» (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas). Seba es el primero de los hijos de Cus en la Tabla de las Naciones. La RV60 y la RV 1909 imprimen «a Etiopía y a Seba», la NVI «a Cus y a Seba», y el griego tiene <em>Soēnēn</em>, «Siene». &#9888; Dónde estaba Seba no está resuelto; Radak e Ibn Ezra leen los tres nombres como naciones que sufrieron en lugar de Israel.')
+ENCYCLOPEDIA_ES["chaldeans"] = ("Caldeos",
+    'Los NEOBABILONIOS &mdash;un pueblo del sur de Mesopotamia que se apoderó del trono de Babilonia bajo Nabopolasar (626 a. C.), destruyó a Asiria y Nínive con los medos (612), y bajo su hijo NABUCODONOSOR aplastó a Egipto en Carquemis (605) para convertirse en la potencia dominante. &#11088; En <a href="isaiah-43.es.html#v43-14">Isaías 43:14</a> (ya en estas páginas) son los «caldeos en las naves de su griterío», que Jehová hará descender.')
+
+_dict43_en("goel", add=' &#11088; &lsquo;Do not be afraid, for I have redeemed you&rsquo;, and &lsquo;your Redeemer, the Holy One of Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1, 14</a>, now on these pages); the NWT 1984 has &lsquo;repurchased&rsquo; and &lsquo;Repurchaser&rsquo;.')
+_dict43_es("goel", add=' &#11088; «No tengas miedo, porque te he redimido», y «el Redentor de ustedes, el Santo de Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1, 14</a>, ya en estas páginas); la TNM 1987 tiene «recomprado» y «Recomprador».')
+_dict43_en("bara", add=' &#11088; &lsquo;He who created you, Jacob, and he who formed you, Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1</a>, now on these pages); verse 7 has all three verbs, created, formed, made, for the one people.')
+_dict43_es("bara", add=' &#11088; «El que te creó, Jacob, y el que te formó, Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1</a>, ya en estas páginas); el versículo 7 tiene los tres verbos, creó, formó, hizo, para un solo pueblo.')
+_dict43_en("yatsar", add=' &#11088; In <a href="isaiah-43.html#v43-1">Isaiah 43:1, 7, 21</a> (now on these pages) it is what Jehovah did to Israel, &lsquo;the people I formed for myself&rsquo;.')
+_dict43_es("yatsar", add=' &#11088; En <a href="isaiah-43.es.html#v43-1">Isaías 43:1, 7, 21</a> (ya en estas páginas) es lo que Jehová hizo con Israel, «el pueblo que formé para mí».')
+_dict43_en("kofer-ransom", add=' &#11088; <span data-heb="נתתי כפרך">&lsquo;I have given your ransom&rsquo; (<em>natati kofrekha</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-43.html#v43-3">Isaiah 43:3</a> (now on these pages): Egypt, Cush and Seba in Israel&rsquo;s place.')
+_dict43_es("kofer-ransom", add=' &#11088; <span data-heb="נתתי כפרך">«He dado tu rescate» (<em>natatí kofrejá</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-3">Isaías 43:3</a> (ya en estas páginas): Egipto, Cus y Seba en lugar de Israel.')
+_dict43_en("ed", add=' &#11088; <span data-heb="אתם עדי">&lsquo;You are my witnesses&rsquo; (<em>atem &lsquo;edai</em>) stands in <strong>three verses</strong> of the Hebrew Bible</span>: <a href="isaiah-43.html#v43-10">Isaiah 43:10 and 12</a> (now on these pages) and 44:8 (not yet on these pages).')
+_dict43_es("ed", add=' &#11088; <span data-heb="אתם עדי">«Ustedes son mis testigos» (<em>atem ‘edái</em>) está en <strong>tres versículos</strong> de la Biblia hebrea</span>: <a href="isaiah-43.es.html#v43-10">Isaías 43:10 y 12</a> (ya en estas páginas) y 44:8 (todavía no en estas páginas).')
+_dict43_en("zar", add=' &#11088; &lsquo;There was no stranger among you&rsquo; (<a href="isaiah-43.html#v43-12">Isaiah 43:12</a>, now on these pages), where the KJV and ASV add &lsquo;god&rsquo; and the Hebrew does not.')
+_dict43_es("zar", add=' &#11088; «No hubo entre ustedes ningún extraño» (<a href="isaiah-43.es.html#v43-12">Isaías 43:12</a>, ya en estas páginas), donde la RV60 añade «dios» y el hebreo no.')
+_dict43_en("zakhar", add=' &#11088; &lsquo;Do not remember the former things&rsquo; and &lsquo;Remind me&rsquo; (<a href="isaiah-43.html#v43-18">Isaiah 43:18, 26</a>, now on these pages).')
+_dict43_es("zakhar", add=' &#11088; «No recuerden las cosas primeras» y «Hazme recordar» (<a href="isaiah-43.es.html#v43-18">Isaías 43:18, 26</a>, ya en estas páginas).')
+_dict43_en("chadash", add=' &#11088; &lsquo;Look — I am doing a new thing&rsquo; (<a href="isaiah-43.html#v43-19">Isaiah 43:19</a>, now on these pages), in the feminine, as at Jeremiah 31:21.')
+_dict43_es("chadash", add=' &#11088; «Mira, yo hago algo nuevo» (<a href="isaiah-43.es.html#v43-19">Isaías 43:19</a>, ya en estas páginas), en femenino, como en Jeremías 31:21.')
+_dict43_en("sapar", add=' &#11088; &lsquo;That they may recount my praise&rsquo; and &lsquo;recount it yourself, so that you may be justified&rsquo; (<a href="isaiah-43.html#v43-21">Isaiah 43:21, 26</a>, now on these pages).')
+_dict43_es("sapar", add=' &#11088; «Para que cuente mi alabanza» y «cuéntalo tú, para que seas justificado» (<a href="isaiah-43.es.html#v43-21">Isaías 43:21, 26</a>, ya en estas páginas).')
+_dict43_en("yagea", add=' &#11088; The verb <em>yaga&rsquo;</em>, &lsquo;to weary&rsquo;, is said of God three times at <a href="isaiah-43.html#v43-22">Isaiah 43:22&ndash;24</a> (now on these pages): &lsquo;you have wearied of me&rsquo;, &lsquo;nor wearied you&rsquo;, &lsquo;you have wearied me&rsquo;.')
+_dict43_es("yagea", add=' &#11088; El verbo <em>yaga’</em>, «cansarse», se dice de Dios tres veces en <a href="isaiah-43.es.html#v43-22">Isaías 43:22–24</a> (ya en estas páginas): «te has cansado de mí», «ni te cansé», «me has cansado».')
+_dict43_en("machah", add=' &#11088; <span data-heb="מחה פשעיך">&lsquo;Blots out your transgressions&rsquo; (<em>mocheh peshaekha</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-43.html#v43-25">Isaiah 43:25</a> (now on these pages).')
+_dict43_es("machah", add=' &#11088; <span data-heb="מחה פשעיך">«Borra tus transgresiones» (<em>mojé peshaéja</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-25">Isaías 43:25</a> (ya en estas páginas).')
+_dict43_en("melits", add=' &#11088; &lsquo;Your interpreters transgressed against me&rsquo; (<a href="isaiah-43.html#v43-27">Isaiah 43:27</a>, now on these pages); the KJV and ASV have &lsquo;teachers&rsquo;, the NIV &lsquo;those I sent to teach you&rsquo;, the NWT 1984 &lsquo;spokesmen&rsquo;.')
+DICTIONARY_ES["melits"] = ("melits",
+    'UN INTÉRPRETE, intermediario, portavoz &mdash;de <em>lits</em>, mediar. Aparece en Génesis exactamente una vez, en la línea más callada y devastadora del capítulo 42: los hermanos hablan libremente en hebreo delante del gobernador egipcio, confesándose entre sí que son culpables de lo que hicieron a su hermano, «y no sabían que José estaba escuchando, PORQUE EL INTÉRPRETE ESTABA ENTRE ELLOS» (<a href="genesis-42.es.html#v42-23">Génesis 42:23</a>, ya en estas páginas). El traductor es el disfraz. &#11088; <span data-heb="ומליציך">«Tus intérpretes» (<em>u-melitséja</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-27">Isaías 43:27</a> (ya en estas páginas): «tus intérpretes se rebelaron contra mí»; la RV60 y la RV 1909 tienen «enseñadores» y la NVI y la TNM 1987 «voceros».')
+_dict43_en("cherem", add=' &#11088; &lsquo;I gave Jacob to the ban, and Israel to reviling&rsquo; (<a href="isaiah-43.html#v43-28">Isaiah 43:28</a>, now on these pages); the NWT 1984 has &lsquo;a man devoted to destruction&rsquo;.')
+_dict43_es("cherem", add=' &#11088; «Entregué a Jacob al anatema, y a Israel a los denuestos» (<a href="isaiah-43.es.html#v43-28">Isaías 43:28</a>, ya en estas páginas); la TNM 1987 tiene «hombre dado por entero a la destrucción».')
+_dict43_en("arete", "from the Greek of Isaiah 43:21.", "from the Greek of " + _I43(False, 'Isaiah 43:21', 21) + " (now on these pages).")
+_dict43_es("arete", "del griego de Isaías 43:21", "del griego de " + _I43(True, 'Isaías 43:21', 21) + " (ya en estas páginas)")
+_ency43_en("egypt", add=' &#11088; Given with Cush and Seba as Israel&rsquo;s ransom (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages); Rashi reads it as the death of Egypt&rsquo;s firstborn.')
+_ency43_es("egypt", add=' &#11088; Dado con Cus y Seba como rescate de Israel (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas); Rashi lo lee como la muerte de los primogénitos de Egipto.')
+_ency43_en("cush", add=' &#11088; &lsquo;Cush and Seba in your place&rsquo; (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages); Radak reads it of Tirhakah king of Cush, whom Sennacherib turned to fight.')
+_ency43_es("cush", add=' &#11088; «A Cus y a Seba en tu lugar» (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas); Radak lo lee de Tirhaca rey de Cus, contra quien se volvió Senaquerib.')
+_ency43_en("babylon", add=' &#11088; &lsquo;For your sake I have sent to Babylon&rsquo; (<a href="isaiah-43.html#v43-14">Isaiah 43:14</a>, now on these pages), with the Chaldeans in the ships of their shouting.')
+_ency43_es("babylon", add=' &#11088; «Por causa de ustedes he enviado a Babilonia» (<a href="isaiah-43.es.html#v43-14">Isaías 43:14</a>, ya en estas páginas), con los caldeos en las naves de su griterío.')
+_ency43_en("chaldeans", add=' &#11088; In <a href="isaiah-43.html#v43-14">Isaiah 43:14</a> (now on these pages) they are the &lsquo;Chaldeans in the ships of their shouting&rsquo;, brought down.')
+_ency43_en("jacob", add=' &#11088; &lsquo;He who created you, Jacob, and he who formed you, Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1</a>, now on these pages), and given to the ban at 43:28.')
+ENCYCLOPEDIA_ES["jacob"] = ("Jacob (Israel)", 'El tercer patriarca, y aquel de quien toma nombre la nación &mdash;nacido agarrando el TALÓN (<em>aqev</em>) de su gemelo, por lo que se llamó YA\'AQOV, «el que sujeta el talón», un nombre que se vuelve sinónimo del suplantador que hace tropezar y se excede (Génesis 25:26; 27:36). Compra la primogenitura de Esaú por un guiso, le roba la bendición con ayuda de su madre, y huye a casa de Labán en la tierra antigua, donde a su vez es burlado (Lea por Raquel) y engendra once hijos y una hija en veinte años duros. Al luchar con un desconocido en el Jaboc recibe el nombre de ISRAEL, «el que lucha con Dios» (32:28); sus doce hijos son las doce tribus. Un hombre defectuoso, ávido, inolvidable, a quien Dios elige de todos modos &mdash;«el Dios de Abraham, Isaac y Jacob»&mdash; y cuya historia llena el resto del Génesis (caps. 25–50). &#11088; «El que te creó, Jacob, y el que te formó, Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1</a>, ya en estas páginas), y entregado al anatema en 43:28.')
+
+CHRON_CHAPTERS["isa43"] = dict(era="exile",
+    when="“Do not be afraid, for I have redeemed you”: Jehovah, who created Jacob and formed Israel, promises to be with his people through water and fire, gives Egypt, Cush and Seba as their ransom, and says he will bring their seed from east and west. The nations are put on trial and asked for witnesses; Israel is his witness, he alone is Jehovah and saviour, and no one can rescue from his hand. He has sent to Babylon and will bring its Chaldeans down in their ships, and tells them not to remember the former things, for he is doing a new thing, a way in the wilderness and rivers in the wasteland, for the people formed to recount his praise. Then the tone turns: they have not called on him or brought offerings, they have made him serve with their sins, and he, he, blots out their transgressions for his own sake; he tells them to plead, accuses their first father and their interpreters, and ends by giving Jacob to the ban.",
+    clock="The chapter names no king and no date. Babylon is spoken of as about to fall, and Radak reads it either of Sennacherib’s fall or of Cyrus, while Ibn Ezra reads it of Media and Persia taking Babylon.")
+
+CHAPTER_ART["isa43"] = [dict(
+    file="dore-egyptians-drown-in-the-sea.jpg",
+    title="The Egyptians Drown in the Sea", title_es="Los egipcios se ahogan en el mar",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Doré’s Bible illustrations, engraved by Pannemaker (Commons file)", location_es="Ilustraciones bíblicas de Doré, grabadas por Pannemaker (archivo de Commons)",
+    alt="A black-and-white engraving of a storm-dark sea. Two great walls of water curve in from the left and right, and between them a mass of riders and horses tumbles and sinks in the foreground. In the distance a crowd stands on a hill under a break in the clouds, with one figure at the top raising both arms.",
+    alt_es="Un grabado en blanco y negro de un mar oscurecido por la tormenta. Dos grandes muros de agua se curvan desde la izquierda y la derecha, y entre ellos una masa de jinetes y caballos cae y se hunde en primer plano. A lo lejos una multitud está sobre una colina bajo un claro entre las nubes, con una figura en lo alto que levanta ambos brazos.",
+    note="Isaiah 43:16&ndash;17. The verses recall the sea, &lsquo;who brings out chariot and horse, army and might together; they lie down, they will not rise&rsquo;. The engraving is Doré&rsquo;s of the sea at the Exodus; the chapter itself names neither Egypt&rsquo;s drowning nor Moses, and Rashi reads the passage as the Sea of Reeds.",
+    note_es="Isaías 43:16–17. Los versículos recuerdan el mar, «el que saca carro y caballo, ejército y poderío a una; se tienden, no se levantarán». El grabado es el de Doré del mar en el Éxodo; el capítulo mismo no nombra el ahogamiento de Egipto ni a Moisés, y Rashi lee el pasaje como el mar Rojo.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:037.The_Egyptians_Drown_in_the_Sea.jpg",
+)]
