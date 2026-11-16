@@ -58275,3 +58275,97 @@ CHAPTER_ART["isa43"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:037.The_Egyptians_Drown_in_the_Sea.jpg",
 )]
+
+# --- Psalm 150 ---
+import re as _re150
+def _one150(s, old, new, rx=False):
+    if rx:
+        assert len(_re150.findall(old, s)) == 1, (old[:70], len(_re150.findall(old, s)))
+        return _re150.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict150_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one150(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict150_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one150(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency150_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency150_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P150(es, txt, n):
+    return '<a href="psalms-150.%shtml#v150-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("tof", "ugav") for _d in DICTIONARY)
+
+DICTIONARY.append(("tof", "tof", "תֹּף", "tof",
+    'A TIMBREL &mdash; a hand drum, held in the hand and struck, and the instrument of the women&rsquo;s victory dance. &#11088; Miriam &lsquo;took a timbrel in her hand, and all the women went out after her with timbrels and dances&rsquo; (<a href="exodus-15.html#v15-20">Exodus 15:20</a>, now on these pages), and the last psalm calls for the same pair, &lsquo;timbrel and dance&rsquo; (<a href="psalms-150.html#v150-4">Psalm 150:4</a>, now on these pages). &#9888; The shelf has three words for it: &lsquo;timbrel&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;tambourine&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;drums&rsquo; (<span class="tag t-tlb">TLB</span>). The translation keeps &lsquo;timbrel&rsquo; for <em>tof</em> and &lsquo;dance&rsquo; for the <em>machol</em> that stands beside it.',
+    ("Psalms", 150, 4)))
+DICTIONARY_ES["tof"] = ("tof",
+    'UN PANDERO &mdash;un tambor de mano, que se sostiene y se golpea, y el instrumento de la danza de victoria de las mujeres. &#11088; Miriam «tomó un pandero en su mano, y todas las mujeres salieron en pos de ella con panderos y danzas» (<a href="exodus-15.es.html#v15-20">Éxodo 15:20</a>, ya en estas páginas), y el último salmo pide el mismo par, «pandero y danza» (<a href="psalms-150.es.html#v150-4">Salmo 150:4</a>, ya en estas páginas). &#9888; La traducción conserva «pandero» para <em>tof</em> y «danza» para el <em>machol</em> que va a su lado.')
+
+DICTIONARY.append(("ugav", "ugav", "עוּגָב", "ugav",
+    'A PIPE &mdash; a wind instrument, and with the lyre the first of all instruments the Bible names: Jubal is &lsquo;the father of all who play the lyre and the pipe&rsquo; (<a href="genesis-4.html#v4-21">Genesis 4:21</a>, now on these pages). &#11088; <span data-heb="עוגב">Spelled with the <em>vav</em>, the word stands in <strong>two verses</strong> of the Hebrew Bible</span>: Genesis 4:21 and Job 21:12 (not yet on these pages), where the wicked &lsquo;rejoice at the sound of the pipe&rsquo;. Spelled without it, it is the last instrument of the last psalm, &lsquo;strings and pipe&rsquo; (<a href="psalms-150.html#v150-4">Psalm 150:4</a>, now on these pages), and Job&rsquo;s own, &lsquo;my pipe to the voice of those who weep&rsquo; (Job 30:31). &#9888; The older shelf has &lsquo;organ&rsquo;, from the Greek <em>organon</em>, &lsquo;instrument&rsquo; (in Psalm 150:4 the <span class="tag t-kjv">KJV</span>, the <span class="tag t-gnv">Geneva</span> and the <span class="tag t-drb">Douay</span> all have &lsquo;organs&rsquo;), and the <span class="tag t-niv">NIV</span> and the <span class="tag t-nwt">NWT&nbsp;1984</span> have &lsquo;pipe&rsquo; in Psalm 150. The translation keeps &lsquo;pipe&rsquo; every time.',
+    ("Psalms", 150, 4)))
+DICTIONARY_ES["ugav"] = ("ugav",
+    'UNA FLAUTA &mdash;un instrumento de viento, y con la lira el primero de todos los que nombra la Biblia: Jubal es «el padre de todos los que tocan la lira y la flauta» (<a href="genesis-4.es.html#v4-21">Génesis 4:21</a>, ya en estas páginas). &#11088; <span data-heb="עוגב">Escrita con <em>vav</em>, la palabra está en <strong>dos versículos</strong> de la Biblia hebrea</span>: Génesis 4:21 y Job 21:12 (todavía no en estas páginas), donde los malvados «se alegran al son de la flauta». Escrita sin ella, es el último instrumento del último salmo, «cuerdas y flauta» (<a href="psalms-150.es.html#v150-4">Salmo 150:4</a>, ya en estas páginas), y el de Job, «mi flauta, a la voz de los que lloran» (Job 30:31). &#9888; La traducción conserva «flauta» todas las veces.')
+
+# ---------- extensions ----------
+_dict150_en("yah", add=' &#11088; The last five psalms, 146&ndash;150, each open and close with <em>hallelu-Yah</em>; <a href="psalms-150.html#v150-6">Psalm 150:6</a> (now on these pages) has the name twice, once as the object of &lsquo;let everything that breathes praise Jah&rsquo; and once in the fused call that ends the book.')
+_dict150_es("yah", add=' &#11088; Los últimos cinco salmos, 146&ndash;150, abren y cierran todos con <em>halelu-Yah</em>; <a href="psalms-150.es.html#v150-6">Salmo 150:6</a> (ya en estas páginas) la tiene dos veces, una como llamado fusionado y otra como objeto de «todo lo que respira alabe a Jah».')
+_dict150_en("hallelouia", "from Psalm 104 to Psalm 150 (not yet on these pages)", "from Psalm 104 to Psalm 150 (<a href=\"psalms-150.html#v150-1\">Psalm 150</a> now on these pages)")
+_dict150_es("hallelouia", "desde el Salmo 104 hasta el Salmo 150 (todavía no en estas páginas)", "desde el Salmo 104 hasta el Salmo 150 (<a href=\"psalms-150.es.html#v150-1\">Salmo 150</a> ya en estas páginas)")
+_dict150_en("tzelatzal", "and Psalm 150:5, <em>loud cymbals</em>)", "and <a href=\"psalms-150.html#v150-5\">Psalm 150:5</a>, now on these pages, <em>cymbals of hearing</em> and <em>cymbals of the shout</em>)")
+_dict150_es("tzelatzal", "y Salmo 150:5, <em>címbalos resonantes</em>)", "y <a href=\"psalms-150.es.html#v150-5\">Salmo 150:5</a>, ya en estas páginas, <em>címbalos de oír</em> y <em>címbalos del clamor</em>)")
+_dict150_en("raqia", add=' &#11088; The last psalm calls the vault &lsquo;the vault of his strength&rsquo; and asks that God be praised in it (<a href="psalms-150.html#v150-1">Psalm 150:1</a>, now on these pages); Ibn Ezra cites Rabbi Judah Halevi, who takes the phrase for the ark instead of the sky.')
+DICTIONARY_ES["raqia"] = ("raqia",
+    'La BÓVEDA del cielo &mdash;de una raíz que significa «martillar, extender a golpes»; en la Septuaginta <em>stereōma</em>, «estructura firme», y en la Vulgata <em>firmamentum</em>, de donde «firmamento». &#11088; <a href="genesis-1.es.html#v6">Génesis 1:6</a> (ya en estas páginas) la hace el segundo día, y el último salmo manda alabar a Dios «en la bóveda de su fuerza» (<a href="psalms-150.es.html#v150-1">Salmo 150:1</a>, ya en estas páginas); Ibn Ezra cita al rabino Yehudá Haleví, que toma la frase por el arca y no por el cielo.')
+_dict150_en("shofar", add=' &#11088; <a href="psalms-150.html#v150-3">Psalm 150:3</a> (now on these pages) has &lsquo;the blast of the ram&rsquo;s horn&rsquo; first in the orchestra; the shelf has &lsquo;trumpet&rsquo; in the <span class="tag t-kjv">KJV</span> and the <span class="tag t-niv">NIV</span>, and only the <span class="tag t-nwt">NWT&nbsp;1984</span> keeps &lsquo;horn&rsquo;.')
+_dict150_es("shofar", add=' &#11088; <a href="psalms-150.es.html#v150-3">Salmo 150:3</a> (ya en estas páginas) tiene «el toque del cuerno de carnero» primero en la orquesta; el estante tiene «bocina» en la <span class="tag t-rv">RV 1909</span> y la <span class="tag t-rv60">RV60</span>, y solo la <span class="tag t-tnm">TNM</span> conserva «cuerno».')
+_dict150_en("nevel", add=' &#11088; In the last psalm it is the harp, beside the lyre: &lsquo;praise him with harp and lyre&rsquo; (<a href="psalms-150.html#v150-3">Psalm 150:3</a>, now on these pages); Ibn Ezra says it has ten holes.')
+_dict150_es("nevel", add=' &#11088; En el último salmo es el arpa, junto a la lira: «alábenlo con arpa y lira» (<a href="psalms-150.es.html#v150-3">Salmo 150:3</a>, ya en estas páginas); Ibn Ezra dice que tiene diez agujeros.')
+_dict150_en("kinnor", add=' &#11088; It stands second in the orchestra of <a href="psalms-150.html#v150-3">Psalm 150:3</a> (now on these pages), after the harp.')
+_dict150_es("kinnor", add=' &#11088; Está en segundo lugar en la orquesta del <a href="psalms-150.es.html#v150-3">Salmo 150:3</a> (ya en estas páginas), después del arpa.')
+_dict150_en("teruah", add=' &#11088; In the last psalm the shout is given to the cymbals: &lsquo;cymbals of the shout&rsquo; (<a href="psalms-150.html#v150-5">Psalm 150:5</a>, now on these pages).')
+_dict150_es("teruah", add=' &#11088; En el último salmo el clamor se le da a los címbalos: «címbalos del clamor» (<a href="psalms-150.es.html#v150-5">Salmo 150:5</a>, ya en estas páginas).')
+_dict150_en("sapar", add=' &#11088; Ibn Ezra reads &lsquo;praise him for his mighty acts&rsquo; as &lsquo;recount them&rsquo; (<a href="psalms-150.html#v150-2">Psalm 150:2</a>, now on these pages).')
+_dict150_es("sapar", add=' &#11088; Ibn Ezra lee «alábenlo por sus proezas» como «cuéntenlas» (<a href="psalms-150.es.html#v150-2">Salmo 150:2</a>, ya en estas páginas).')
+_dict150_en("neshama", add=' &#11088; <span data-heb="כל הנשמה">With the article, &lsquo;all the breath&rsquo; (<em>kol ha-neshamah</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="joshua-10.html#v10-40">Joshua 10:40</a>, where it is devoted to destruction, and <a href="psalms-150.html#v150-6">Psalm 150:6</a> (both now on these pages), where it is called to praise.')
+_dict150_es("neshama", add=' &#11088; <span data-heb="כל הנשמה">Con artículo, «todo el aliento» (<em>kol ha-neshamá</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="joshua-10.es.html#v10-40">Josué 10:40</a>, donde se consagra a la destrucción, y <a href="psalms-150.es.html#v150-6">Salmo 150:6</a> (ambos ya en estas páginas), donde se le llama a alabar.')
+
+CHRON_CHAPTERS["psalms150"] = dict(era="monarchy",
+    when="&ldquo;Praise God in his sanctuary&rdquo;: the last psalm of the Psalter, six verses of one command, &ldquo;praise him&rdquo;, with ram&rsquo;s horn, harp and lyre, timbrel and dance, strings and pipe, and cymbals, ending with every breath.",
+    clock="Undated: the psalm has no heading, no author and no occasion. It names the sanctuary and a temple&rsquo;s kinds of instrument, and it is filed here under the monarchy as an undated psalm, as Psalm 100 is.")
+
+CHAPTER_ART["psalms150"] = [dict(
+    file="della-robbia-cantoria-cymbals-psalm-150.jpg",
+    title="Children playing the cymbals, panel of the Cantoria", title_es="Niños tocando los címbalos, panel de la Cantoria",
+    artist="Luca della Robbia (Italian, 1400–1482)", artist_es="Luca della Robbia (italiano, 1400–1482)",
+    year="circa 1438",
+    location="Museo dell'Opera del Duomo, Florence, via Commons", location_es="Museo dell'Opera del Duomo, Florencia, vía Commons",
+    alt="A pale marble relief of seven children crowded into one square panel, most of them holding pairs of round cymbals. On the left a barefoot boy in a loose tunic tilts back his head, mouth open, and lifts a cymbal high above him. A smaller child with a cap kneels at the centre, his head resting against a cymbal he holds in front of him. On the right a smiling boy with a wreath of leaves in his hair holds a cymbal up over his head. Other children look out between them from the background.",
+    alt_es="Un relieve de mármol pálido con siete niños apretados en un panel cuadrado, casi todos con pares de címbalos redondos. A la izquierda, un niño descalzo con una túnica suelta echa la cabeza hacia atrás, con la boca abierta, y alza un címbalo sobre sí. Un niño más pequeño con gorro está de rodillas en el centro, con la cabeza apoyada en un címbalo que sostiene delante. A la derecha, un niño sonriente con una corona de hojas en el pelo sostiene un címbalo sobre la cabeza. Otros niños asoman entre ellos desde el fondo.",
+    note="Psalm 150:5. One of the panels that illustrate Psalm 150 on the singers&rsquo; gallery made for the cathedral organ in Florence, with its other panels of boys singing and playing the timbrel. The psalm&rsquo;s own words are &lsquo;cymbals of hearing&rsquo; and &lsquo;cymbals of the shout&rsquo;; the relief shows the shout.",
+    note_es="Salmo 150:5. Uno de los paneles que ilustran el Salmo 150 en la tribuna de los cantores hecha para el órgano de la catedral de Florencia, junto a otros de niños que cantan y tocan el pandero. Las palabras del salmo son «címbalos de oír» y «címbalos del clamor»; el relieve muestra el clamor.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Cantoria_Della_Robbia_OPA_Florence_4.jpg",
+)]
