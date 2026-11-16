@@ -58038,3 +58038,126 @@ CHAPTER_ART["habakkuk3"] = [dict(
 
 DICTIONARY_ES["massa"] = ("massa",
     "CARGA &mdash; o pronunciamiento. Se apoya en <em>nasa</em>, &laquo;levantar&raquo;, de modo que puede significar una CARGA levantada sobre los hombros o una VOZ levantada; los profetas lo usan para encabezar un or&aacute;culo y las versiones se dividen (la KJV y la ASV &laquo;burden&raquo;, la NWT &laquo;pronouncement&raquo;, la NIV &laquo;prophecy&raquo;). Es la primera palabra de Malaqu&iacute;as, y la misma ra&iacute;z pregunta dos vers&iacute;culos despu&eacute;s si alguien &laquo;alzar&aacute; tu rostro&raquo;. &#11088; Jeh&uacute; dice que Jehov&aacute; &laquo;levant&oacute; esta carga&raquo; contra Acab, y la cita (2 Reyes 9:25, ya en estas p&aacute;ginas). &#9888; <a href=\"habakkuk-1.es.html#v1\">Habacuc 1:1</a> llama &laquo;carga&raquo; a lo que ve el profeta, y <a href=\"habakkuk-3.es.html#v1\">Habacuc 3:1</a> llama &laquo;oraci&oacute;n&raquo; a lo que dice.")
+
+# --- Psalm 22 ---
+import re as _re22
+def _one22(s, old, new, rx=False):
+    if rx:
+        assert len(_re22.findall(old, s)) == 1, (old[:70], len(_re22.findall(old, s)))
+        return _re22.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict22_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict22_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency22_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency22_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P22(es, txt, n):
+    return '<a href="psalms-22.%shtml#v22-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+assert not any(_d[0] in ("azav", "kaari", "dunag", "ayyelet") for _d in DICTIONARY)
+DICTIONARY.append(("azav", "azav", "עָזַב", "azav",
+    'TO FORSAKE, to leave behind, to let go &mdash; the verb of the cry &lsquo;My God, my God, why have you forsaken me?&rsquo; (<a href="psalms-22.html#v22-2">Psalm 22:2</a> in the Hebrew numbering, 22:1 in an English Bible, now on these pages). &#11088; <span data-heb="עזבתני">&lsquo;You have forsaken me&rsquo; (<em>azavtani</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: here, and <a href="deuteronomy-28.html#v28-20">Deuteronomy 28:20</a> (now on these pages), where God says it of Israel, &lsquo;because of the evil of your deeds, in that you have forsaken me&rsquo;. Matthew and Mark put the psalm&rsquo;s line on Jesus at the cross (<a href="matthew-27.html#v27-46">Matthew 27:46</a>; <a href="mark-15.html#v15-34">Mark 15:34</a>, now on these pages); the Greek verb is <a href="dictionary.html#enkataleipo">enkataleipo</a>. &#9888; The NWT 1984 and the TNM 1987 have &lsquo;left me&rsquo; and &lsquo;dejado&rsquo;.',
+    ("Psalms", 22, 2)))
+DICTIONARY_ES["azav"] = ("azav",
+    'ABANDONAR, dejar atrás, soltar &mdash;el verbo del grito «Dios mío, Dios mío, ¿por qué me has abandonado?» (<a href="psalms-22.es.html#v22-2">Salmo 22:2</a> en la numeración hebrea, 22:1 en una Biblia castellana, ya en estas páginas). &#11088; <span data-heb="עזבתני">«Me has abandonado» (<em>azavtaní</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: aquí, y <a href="deuteronomy-28.es.html#v28-20">Deuteronomio 28:20</a> (ya en estas páginas), donde Dios lo dice de Israel, «a causa de la maldad de tus obras, por la que me has abandonado». Mateo y Marcos ponen la línea del salmo en Jesús en la cruz (<a href="matthew-27.es.html#v27-46">Mateo 27:46</a>; <a href="mark-15.es.html#v15-34">Marcos 15:34</a>, ya en estas páginas); el verbo griego es <a href="diccionario.html#enkataleipo">enkataleipo</a>. &#9888; La RV60 tiene «desamparado» y la RV 1909 y la TNM 1987 «dejado».')
+
+DICTIONARY.append(("kaari", "ka'ari / ka'aru", "כָּאֲרִי", "ka'ari",
+    '&lsquo;LIKE A LION&rsquo; &mdash; and the word whose reading divides the shelf. <span data-heb="כארי ידי ורגלי">&lsquo;Like a lion, my hands and my feet&rsquo; (<em>ka&rsquo;ari yadai ve-raglai</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="psalms-22.html#v22-17">Psalm 22:17</a> in the Hebrew numbering (22:16 in an English Bible, now on these pages), and it has no verb. The printed Hebrew reads <em>ka&rsquo;ari</em>, &lsquo;like a lion&rsquo;. The Greek Psalter reads &lsquo;they dug my hands and my feet&rsquo; (<em>ōryxan</em>), and the Douay follows it; the KJV, ASV, Geneva, NIV and TLB have &lsquo;pierced&rsquo;; the NWT 1984 keeps the Hebrew, &lsquo;Like a lion [they are at] my hands and my feet&rsquo;. Rashi, Radak and Ibn Ezra all keep &lsquo;like a lion&rsquo;, and Radak, writing against the Christian reading of the psalm, says the word was altered from <em>ka&rsquo;ari</em> to <em>ka&rsquo;aru</em>, &lsquo;they dug&rsquo; (Exodus 21:33). &#9888; A Dead Sea scroll of Psalms from Nahal Hever is reported to read <em>ka&rsquo;aru</em>; that report was not checked. The translation prints the Hebrew as it stands.',
+    ("Psalms", 22, 17)))
+DICTIONARY_ES["kaari"] = ("ka'ari / ka'aru",
+    '«COMO LEÓN» &mdash;y la palabra cuya lectura divide el estante. <span data-heb="כארי ידי ורגלי">«Como león, mis manos y mis pies» (<em>ka&rsquo;ari yadai ve-raglai</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="psalms-22.es.html#v22-17">Salmo 22:17</a> en la numeración hebrea (22:16 en una Biblia castellana, ya en estas páginas), y no tiene verbo. El hebreo impreso lee <em>ka&rsquo;ari</em>, «como león». El Salterio griego lee «cavaron mis manos y mis pies» (<em>ōryxan</em>); la RV60, la RV 1909 y la NVI tienen «horadaron» y «traspasado»; la TNM 1987 mantiene el hebreo, «Como un león acometen mis manos y mis pies». Rashi, Radak e Ibn Ezra mantienen todos «como león», y Radak, escribiendo contra la lectura cristiana del salmo, dice que la palabra fue alterada de <em>ka&rsquo;ari</em> a <em>ka&rsquo;aru</em>, «cavaron» (Éxodo 21:33). &#9888; Un rollo del Mar Muerto de los Salmos de Najal Hever se cuenta que lee <em>ka&rsquo;aru</em>; ese dato no se comprobó. La traducción imprime el hebreo tal como está.')
+
+DICTIONARY.append(("dunag", "donag", "דּוֹנַג", "donag",
+    'WAX &mdash; what melts. &#11088; <span data-heb="דונג">The word stands in <strong>four verses</strong> of the Hebrew Bible</span>: the psalmist&rsquo;s heart in <a href="psalms-22.html#v22-15">Psalm 22:15</a> (22:14 in an English Bible, now on these pages), &lsquo;like wax, melted within my innards&rsquo;, and Micah 1:4, Psalms 68:3 and 97:5, where mountains melt like wax and the wicked perish like wax before fire (those three not yet on these pages). &#9888; The ASV, KJV and NIV have &lsquo;wax&rsquo; and the Greek Psalter <em>kēros</em>.',
+    ("Psalms", 22, 15)))
+DICTIONARY_ES["dunag"] = ("donag",
+    'CERA &mdash;lo que se derrite. &#11088; <span data-heb="דונג">La palabra está en <strong>cuatro versículos</strong> de la Biblia hebrea</span>: el corazón del salmista en el <a href="psalms-22.es.html#v22-15">Salmo 22:15</a> (22:14 en una Biblia castellana, ya en estas páginas), «como cera, derretido dentro de mis entrañas», y Miqueas 1:4, Salmos 68:3 y 97:5, donde los montes se derriten como cera y los impíos perecen como cera ante el fuego (esos tres todavía no en estas páginas). &#9888; La RV60, la RV 1909, la NVI y la TNM 1987 tienen «cera», y el Salterio griego <em>kēros</em>.')
+
+DICTIONARY.append(("ayyelet", "ayyelet", "אַיֶּלֶת", "ayyelet",
+    'A HIND, a doe &mdash; the female of the deer. &#11088; It is in the heading of <a href="psalms-22.html#v22-1">Psalm 22</a> (now on these pages), &lsquo;On &ldquo;The Hind of the Dawn&rdquo;&rsquo;, <em>ayyelet ha-shachar</em>. Rashi gives an instrument, or Israel the beloved hind who looks forth like the dawn (Song 6:10, not yet on these pages), and the Sages&rsquo; Esther; Radak adds a psalm sung at first light, the morning star, and David fleeing Saul; Ibn Ezra rejects the instrument and takes it as the opening of a love song, &lsquo;a loving hind&rsquo; (Proverbs 5:19, not yet on these pages). &#9888; Not the same word as <em>eyaluti</em>, &lsquo;my strength&rsquo;, in verse 20, though Radak connects them.',
+    ("Psalms", 22, 1)))
+DICTIONARY_ES["ayyelet"] = ("ayyelet",
+    'UNA CIERVA, una cierva joven &mdash;la hembra del ciervo. &#11088; Está en el encabezamiento del <a href="psalms-22.es.html#v22-1">Salmo 22</a> (ya en estas páginas), «Sobre &ldquo;La cierva del alba&rdquo;», <em>ayyelet ha-shájar</em>. Rashi da un instrumento, o Israel la cierva amada que se asoma como el alba (Cantares 6:10, todavía no en estas páginas), y la Ester de los Sabios; Radak añade un salmo cantado al despuntar la luz, el lucero de la mañana y David huyendo de Saúl; Ibn Ezra rechaza el instrumento y lo toma como el comienzo de un canto de amor, «cierva amorosa» (Proverbios 5:19, todavía no en estas páginas). &#9888; No es la misma palabra que <em>eyalutí</em>, «fuerza mía», en el versículo 20, aunque Radak las conecta.')
+
+# ES twins that did not exist
+DICTIONARY_ES["shaag"] = ("sha'ag",
+    'RUGIR &mdash;específicamente el rugido de un LEÓN, y en el uso hebreo sobre todo el rugido sobre la presa, el sonido que se hace después de matar y no mientras se caza. &#9888; Es lo primero que hace Dios en el libro de Amós («Jehová RUGE desde Sión», 1:2), y lo da un hombre que había pasado la vida en el borde del desierto de Judá, donde el sonido era un peligro de trabajo y no una imagen. Amós lo hace suyo en 3:8: «un león ha rugido, ¿quién no temerá? El Señor Jehová ha hablado, ¿quién no profetizará?». El mismo verbo se usa de Dios en Jeremías 25:30, Oseas 11:10 y Joel 4:16, y de los enemigos en los Salmos; 1 Pedro 5:8 se lo da, en griego, al adversario (<em>ōryomai</em>). &#11088; En el <a href="psalms-22.es.html#v22-2">Salmo 22</a> (ya en estas páginas) el sustantivo <em>sha&rsquo;agá</em> es el «rugido» del salmista en el versículo 2, y el verbo es el del león que «despedaza y ruge» en el versículo 14.')
+DICTIONARY_ES["sapar"] = ("sapar",
+    'CONTAR, y por tanto RELATAR &mdash;decir una cosa de principio a fin. Los dos sentidos siguen unidos: la misma raíz da «número» (<em>mispár</em>) y «rollo» (<em>séfer</em>). Lleva el propósito que Dios declara para las plagas: «para que mi nombre sea DECLARADO en toda la tierra» (Éxodo 9:16) y «para que RELATES a oídos de tu hijo y del hijo de tu hijo» (10:2). &#9888; Ese segundo uso hace de las plagas un relato que se está haciendo a propósito: la liberación está diseñada desde el principio para ser contada, por lo que la Pascua se guarda con un niño que pregunta y un padre que responde. «Los cielos RELATAN la gloria de Dios» (Salmo 19:1) es el mismo verbo. &#11088; El <a href="psalms-22.es.html#v22-18">Salmo 22</a> (ya en estas páginas) lo usa tres veces: «puedo contar todos mis huesos» (versículo 18), «contaré tu nombre a mis hermanos» (23) y «se contará del Señor a la generación» (31).')
+
+# ---------- dictionary: stale "not yet" fixed and extended ----------
+_dict22_en("galal", "(Psalm 22:9, not yet on these pages;", "(" + _P22(False, 'Psalm 22:9', 9) + ", now on these pages;")
+_dict22_es("galal", "(Salmo 22:9, todavía no en estas páginas;", "(" + _P22(True, 'Salmo 22:9', 9) + ", ya en estas páginas;")
+_dict22_en("enkataleipo", "from Psalm 22:1 (22:2 in the Hebrew);", "from Psalm 22:1 (" + _P22(False, '22:2 in the Hebrew', 2) + ", now on these pages);")
+_dict22_es("enkataleipo", "del Salmo 22:1 (22:2 en el hebreo);", "del Salmo 22:1 (" + _P22(True, '22:2 en el hebreo', 2) + ", ya en estas páginas);")
+_dict22_en("oryomai", "In the Greek of Psalm 22:13 (21:14 in the Greek numbering)", "In the Greek of Psalm 22:13 (" + _P22(False, '22:14 in the Hebrew', 14) + ", 21:14 in the Greek numbering)")
+_dict22_es("oryomai", "En el griego del Salmo 22:13 (21:14 en la numeración griega)", "En el griego del Salmo 22:13 (" + _P22(True, '22:14 en el hebreo', 14) + ", 21:14 en la numeración griega)")
+_dict22_en("oryomai", "(both checked; Psalm 22 not yet on these pages)", "(both checked; Psalm 22 now on these pages)")
+_dict22_es("oryomai", "(ambos comprobados; Salmo 22 todavía no en estas páginas)", "(ambos comprobados; Salmo 22 ya en estas páginas)")
+_dict22_en("yachid", add=' &#11088; <span data-heb="יחידתי">&lsquo;My only one&rsquo; (<em>yechidati</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="psalms-22.html#v22-21">Psalm 22:21</a> (now on these pages), &lsquo;my soul from the sword, my only one from the hand of the dog&rsquo;, and Psalm 35:17 (not yet on these pages).')
+_dict22_es("yachid", add=' &#11088; <span data-heb="יחידתי">«Mi única» (<em>yejidatí</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="psalms-22.es.html#v22-21">Salmo 22:21</a> (ya en estas páginas), «mi alma de la espada, mi única de la mano del perro», y Salmo 35:17 (todavía no en estas páginas).')
+_dict22_en("goral", add=' &#11088; <a href="psalms-22.html#v22-19">Psalm 22:19</a> (now on these pages) is the verse behind the soldiers&rsquo; lots at the cross: &lsquo;they cast lots&rsquo; is, literally, &lsquo;make a lot fall&rsquo; (<em>hippil goral</em>).')
+_dict22_es("goral", add=' &#11088; El <a href="psalms-22.es.html#v22-19">Salmo 22:19</a> (ya en estas páginas) es el versículo detrás de las suertes de los soldados en la cruz: «echan suertes» es, literalmente, «hacen caer una suerte» (<em>hippíl gorál</em>).')
+_dict22_en("tolaat", add=' &#11088; &lsquo;But I am a worm and not a man&rsquo; is <a href="psalms-22.html#v22-7">Psalm 22:7</a> (now on these pages).')
+_dict22_es("tolaat", add=' &#11088; «Pero yo soy un gusano y no un hombre» es el <a href="psalms-22.es.html#v22-7">Salmo 22:7</a> (ya en estas páginas).')
+_dict22_en("reem", add=' &#11088; &lsquo;From the horns of the wild oxen you have answered me&rsquo; is the turn of <a href="psalms-22.html#v22-22">Psalm 22:22</a> (now on these pages); the KJV has &lsquo;unicorns&rsquo;.')
+_dict22_es("reem", add=' &#11088; «Y de los cuernos de los toros salvajes me has respondido» es el giro del <a href="psalms-22.es.html#v22-22">Salmo 22:22</a> (ya en estas páginas); la RV 1909 tiene «unicornios».')
+_dict22_en("natsal", add=' &#11088; Psalm 22 uses it for &lsquo;rescue&rsquo; at verses 9 and 21, apart from <em>palat</em>, &lsquo;deliver&rsquo;, and <em>malat</em>, &lsquo;escape&rsquo; (<a href="psalms-22.html#v22-9">Psalm 22:9, 21</a>, now on these pages).')
+_dict22_es("natsal", add=' &#11088; El Salmo 22 lo usa para «rescatar» en los versículos 9 y 21, aparte de <em>palat</em>, «librar», y <em>malat</em>, «escapar» (<a href="psalms-22.es.html#v22-9">Salmo 22:9, 21</a>, ya en estas páginas).')
+_dict22_en("qahal", add=' &#11088; &lsquo;In the midst of the congregation I will praise you&rsquo; is <a href="psalms-22.html#v22-23">Psalm 22:23</a> (now on these pages), the line Hebrews 2:12 quotes.')
+_dict22_es("qahal", add=' &#11088; «En medio de la congregación te alabaré» es el <a href="psalms-22.es.html#v22-23">Salmo 22:23</a> (ya en estas páginas), la línea que cita Hebreos 2:12.')
+_dict22_en("kelev", add=' &#11088; &lsquo;Dogs have surrounded me&rsquo; and &lsquo;the hand of the dog&rsquo; (<a href="psalms-22.html#v22-17">Psalm 22:17, 21</a>, now on these pages).')
+_dict22_es("kelev", add=' &#11088; «Perros me han rodeado» y «la mano del perro» (<a href="psalms-22.es.html#v22-17">Salmo 22:17, 21</a>, ya en estas páginas).')
+_dict22_en("shaag", add=' &#11088; In <a href="psalms-22.html#v22-2">Psalm 22</a> (now on these pages) the noun <em>sha&rsquo;agah</em> is the psalmist&rsquo;s own &lsquo;roaring&rsquo; in verse 2, and the verb is the lion&rsquo;s at verse 14.')
+_dict22_en("sapar", add=' &#11088; <a href="psalms-22.html#v22-18">Psalm 22</a> (now on these pages) uses it three times: &lsquo;I can count all my bones&rsquo; (verse 18), &lsquo;I will recount your name to my brothers&rsquo; (23) and &lsquo;it shall be recounted of the Lord to the generation&rsquo; (31).')
+_dict22_en("batach", add=' &#11088; <a href="psalms-22.html#v22-5">Psalm 22:5&ndash;6</a> (now on these pages) says it three times of the fathers, and verse 10 of the baby at the breast.')
+_dict22_es("batach", add=' &#11088; El <a href="psalms-22.es.html#v22-5">Salmo 22:5–6</a> (ya en estas páginas) lo dice tres veces de los padres, y el versículo 10 del bebé en el pecho.')
+_dict22_en("anav", add=' &#11088; &lsquo;The humble shall eat and be satisfied&rsquo; (<a href="psalms-22.html#v22-27">Psalm 22:27</a>, now on these pages).')
+_dict22_es("anav", add=' &#11088; «Comerán los humildes y se saciarán» (<a href="psalms-22.es.html#v22-27">Salmo 22:27</a>, ya en estas páginas).')
+_dict22_en("melukhah", add=' &#11088; &lsquo;For the kingship is Jehovah&rsquo;s&rsquo; (<a href="psalms-22.html#v22-29">Psalm 22:29</a>, now on these pages).')
+_dict22_es("melukhah", add=' &#11088; «Porque de Jehová es el reino» (<a href="psalms-22.es.html#v22-29">Salmo 22:29</a>, ya en estas páginas).')
+_dict22_en("chefets", add=' &#11088; The mockers say it of the sufferer, &lsquo;let him deliver him, for he delights in him&rsquo; (<a href="psalms-22.html#v22-9">Psalm 22:9</a>, now on these pages).')
+_dict22_es("chefets", add=' &#11088; Los burladores lo dicen del que sufre, «que lo libre, porque se deleita en él» (<a href="psalms-22.es.html#v22-9">Salmo 22:9</a>, ya en estas páginas).')
+_ency22_en("bashan", add=' &#11088; &lsquo;The mighty ones of Bashan&rsquo; are the bulls that surround the psalmist (<a href="psalms-22.html#v22-13">Psalm 22:13</a>, now on these pages).')
+_ency22_es("bashan", add=' &#11088; «Los fuertes de Basán» son los toros que rodean al salmista (<a href="psalms-22.es.html#v22-13">Salmo 22:13</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["psalms22"] = dict(era="monarchy",
+    when="“My God, my God, why have you forsaken me”: a psalm of David, headed “The Hind of the Dawn”, in which a sufferer who calls by day and by night with no answer remembers the fathers who trusted, is mocked as a worm, is surrounded by bulls, dogs and a lion, and has every bone counted and his garments divided; at verse 22 he says he has been answered, and the psalm turns to praise in the congregation, the humble who eat, the ends of the earth, and a people yet to be born.",
+    clock="The heading names no event and the psalm names none; it is not dated beyond “a psalm of David”. Matthew and Mark put its opening line on Jesus at the cross, and Matthew, Mark and John put verse 19 on the soldiers; the psalm itself says nothing of a cross.")
+
+CHAPTER_ART["psalms22"] = [dict(
+    file="psalter-psalm-21-initial-d-12th-century.jpg",
+    title="Initial D of Psalm 22 (Vulgate 21), St Albans Psalter", title_es="Inicial D del Salmo 22 (Vulgata 21), Salterio de St Albans",
+    artist="Unknown artist", artist_es="Artista desconocido",
+    year="12th century",
+    location="St Albans Psalter (Albani-Psalter), via Commons (cropped)", location_es="Salterio de St Albans (Albani-Psalter), vía Commons (recortado)",
+    alt="A decorated capital D from a medieval psalter, in red, blue, green and gold. Inside the letter a bare-chested man in a cloth around his waist is caught among bulls, dogs and other beasts that press up from below and from the sides; he raises his arms and kicks out a leg. A few words of the Latin text show at the right edge.",
+    alt_es="Una letra D capital decorada de un salterio medieval, en rojo, azul, verde y oro. Dentro de la letra, un hombre con el torso desnudo y un paño en la cintura está atrapado entre toros, perros y otras bestias que lo aprietan desde abajo y por los lados; levanta los brazos y alza una pierna. Unas pocas palabras del texto latino se ven en el borde derecho.",
+    note="Psalm 22:13&ndash;17. The Latin Bibles number this psalm 21, and its first words, <em>Deus, Deus meus, respice in me</em>, are the ones this capital opens. The beasts are the bulls, the dogs and the lion of the psalm; the Commons file describes the initial and does not say which verse the artist had in mind.",
+    note_es="Salmo 22:13–17. Las Biblias latinas numeran este salmo 21, y sus primeras palabras, <em>Deus, Deus meus, respice in me</em>, son las que abre esta capital. Las bestias son los toros, los perros y el león del salmo; el archivo de Commons describe la inicial y no dice qué versículo tenía en mente el artista.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Psalm_21_Initial_D_(cropped).jpg",
+)]
