@@ -427,10 +427,15 @@ traps) — is preserved verbatim in `claude-docs/chapter_checklist_history.md`.*
 your first chapter in a session, and whenever a check below fails in a way you don't
 understand.
 
-**Which chapter next:** run `python3 tools/next_chapter.py`. It computes what is left from `CHAPTERS` and orders it by demand
-(the order is a judgment kept in `tools/chapter_priority.py`; the two cards `TRANSLATION_QUEUE_EN.md` and `TRANSLATION_QUEUE_ES.md` are
-snapshots of its output, refreshed with `--write`). A new chapter ships in BOTH languages; the Spanish card is only the backfill of chapters
-live in English with no Spanish twin. Check open PRs first so a chapter is not started twice.
+**Which chapter next, and the start/finish protocol (Michael's ask, 2026-11-16):** run `python3 tools/next_chapter.py`. It computes what is left
+from `CHAPTERS` and orders it by demand (the order is a judgment kept in `tools/chapter_priority.py`; the cards `TRANSLATION_QUEUE_EN.md` and
+`TRANSLATION_QUEUE_ES.md` are generated snapshots of its output, never hand-edited).
+- **START a chapter:** take the first one not marked IN PROGRESS, then claim it right away by pushing a branch named for it (`psalms-22`) and
+  opening a **draft PR titled "Psalms 22: ..."**. The tool reads open PRs, so every other session sees the claim on its next run, and a claim
+  cannot go stale on `main` (the PR closes when the chapter lands). This replaces the old "check `CHAPTERS` and open PRs by hand".
+- **FINISH a chapter:** in the same commit as the chapter, run `python3 tools/next_chapter.py --write` so the two cards drop it.
+- A new chapter ships in BOTH languages; the Spanish card is only the backfill of chapters live in English with no Spanish twin (claim those
+  the same way, e.g. a branch `matthew-10-es` and a PR titled "Matthew 10 (Spanish): ...").
 
 1. **Get the source chapter FROM OUR OWN ARCHIVE — never curl the supplier.**
    `python3 tools/source_text.py <Book> <Chapter>` (add `--raw` for the archived
