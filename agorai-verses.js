@@ -25,12 +25,44 @@
 //    conversations, each opening at the citing post. Links to the chapter as a whole are listed
 //    in the box under the chapter. Micwyn decides what is public; this only shows its answer.
 //
+// (Book pages: a "Mentioned in conversations" list, added 2026-11-15.)
 // No-ops unless the page has both verses and an Micwyn target (so Spanish pages, which have
 // no target yet, and every non-chapter page are untouched).
 (function () {
   "use strict";
   var host = document.querySelector("[data-agorai-page]");
   var verses = document.querySelectorAll(".vrs[id]");
+
+  // A book's page (book-habakkuk.html) lists the conversations that link to it: that is where Micwyn sends a
+  // reference to a chapter that isn't translated yet. Nothing else on these pages changes.
+  var bookPage = /\/book-[a-z0-9-]+\.html$/.test(location.pathname);
+  if (bookPage && !host) {
+    var foot = document.querySelector("footer.site-foot");
+    if (!foot) return;
+    fetch("https://micwyn.com/api/discussed?url=" + encodeURIComponent("https://mistertranslation.com" + location.pathname))
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        var items = ((d && d.mentions) || []).filter(function (m) { return m && m.url && m.title; });
+        if (!items.length) return;
+        var st = document.createElement("style");
+        st.textContent = ".agv-bookm{max-width:760px;margin:26px auto;padding:16px 20px;border:1px solid var(--border,rgba(255,255,255,.1));border-radius:14px;font:15px/1.6 system-ui,-apple-system,sans-serif}" +
+          ".agv-bookm h2{margin:0 0 6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted,#94a3b8)}" +
+          ".agv-bookm a{display:block;padding:4px 0;color:#5eb3d6;text-decoration:none}.agv-bookm a:hover{text-decoration:underline}";
+        document.head.appendChild(st);
+        var box = document.createElement("section");
+        box.className = "agv-bookm";
+        box.setAttribute("aria-label", "Conversations that mention this book");
+        var h = document.createElement("h2"); h.textContent = "Mentioned in conversations"; box.appendChild(h);
+        items.forEach(function (m) {
+          var a = document.createElement("a");
+          a.href = m.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = m.title;
+          box.appendChild(a);
+        });
+        foot.insertAdjacentElement("beforebegin", box);
+      })
+      .catch(function () { /* Micwyn unreachable: the page is as it was */ });
+    return;
+  }
   if (!host || !verses.length) return;
 
   var AGORAI = "https://micwyn.com";
