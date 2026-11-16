@@ -427,6 +427,11 @@ traps) — is preserved verbatim in `claude-docs/chapter_checklist_history.md`.*
 your first chapter in a session, and whenever a check below fails in a way you don't
 understand.
 
+**Which chapter next:** run `python3 tools/next_chapter.py`. It computes what is left from `CHAPTERS` and orders it by demand
+(the order is a judgment kept in `tools/chapter_priority.py`; the two cards `TRANSLATION_QUEUE_EN.md` and `TRANSLATION_QUEUE_ES.md` are
+snapshots of its output, refreshed with `--write`). A new chapter ships in BOTH languages; the Spanish card is only the backfill of chapters
+live in English with no Spanish twin. Check open PRs first so a chapter is not started twice.
+
 1. **Get the source chapter FROM OUR OWN ARCHIVE — never curl the supplier.**
    `python3 tools/source_text.py <Book> <Chapter>` (add `--raw` for the archived
    file itself). All 1,189 chapters of Hebrew and Greek were mirrored to
