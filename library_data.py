@@ -58482,3 +58482,106 @@ CHAPTER_ART["psalms118"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Christ%27s_Entry_into_Jerusalem.jpg",
 )]
+
+# --- Psalm 155 ---
+import re as _re155
+def _one155(s, old, new, rx=False):
+    if rx:
+        assert len(_re155.findall(old, s)) == 1, (old[:70], len(_re155.findall(old, s)))
+        return _re155.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict155_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one155(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict155_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one155(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency155_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency155_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P155(es, txt, n):
+    return '<a href="isaiah-55.%shtml#v155-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("reiqam", "sirpad") for _d in DICTIONARY)
+
+DICTIONARY.append(("reiqam", "reiqam", "רֵיקָם", "reiqam",
+    'EMPTY, empty-handed &mdash; the word of what comes back without what it went for. <span data-heb="ריקם">It stands in <strong>twenty-three verses</strong> of the Hebrew Bible</span>. The bow of Jonathan &lsquo;did not turn back&rsquo; and the sword of Saul &lsquo;did not return empty&rsquo; (<a href="2-samuel-1.html#v22">2 Samuel 1:22</a>), the ark is not to be sent away empty (<a href="1-samuel-6.html#v6-3">1 Samuel 6:3</a>), and Naomi says &lsquo;I went out full, and Jehovah has brought me back empty&rsquo; (<a href="ruth-1.html#v21">Ruth 1:21</a>, all now on these pages). &#11088; In <a href="isaiah-55.html#v55-11">Isaiah 55:11</a> (now on these pages) it is a word that goes out of Jehovah&rsquo;s mouth: &lsquo;it shall not return to me empty&rsquo;. The shelf has &lsquo;void&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;empty&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;without results&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).',
+    ("Isaiah", 55, 11)))
+DICTIONARY_ES["reiqam"] = ("reiqam",
+    'VACÍO, con las manos vacías &mdash;la palabra de lo que vuelve sin aquello por lo que fue. <span data-heb="ריקם">Está en <strong>veintitrés versículos</strong> de la Biblia hebrea</span>. El arco de Jonatán «no volvía atrás» y la espada de Saúl no «volvía vacía» (<a href="2-samuel-1.es.html#v22">2 Samuel 1:22</a>), el arca no ha de enviarse vacía (<a href="1-samuel-6.es.html#v6-3">1 Samuel 6:3</a>), y Noemí dice «Yo salí llena, y vacía me ha hecho volver Jehová» (<a href="ruth-1.es.html#v21">Rut 1:21</a>, todos ya en estas páginas). &#11088; En <a href="isaiah-55.es.html#v55-11">Isaías 55:11</a> (ya en estas páginas) es una palabra que sale de la boca de Jehová: «no volverá a mí vacía».')
+
+DICTIONARY.append(("sirpad", "sirpad / na'atsuts", "סִרְפָּד", "sirpad",
+    'A NETTLE, and beside it the THORNBUSH. <span data-heb="סרפד">The word <em>sirpad</em> stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> (now on these pages), so what the plant is is a guess: the <span class="tag t-kjv">KJV</span> has &lsquo;the brier&rsquo;, the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;the stinging nettle&rsquo; and the <span class="tag t-drb">Douay</span> &lsquo;the nettle&rsquo;. <span data-heb="נעצוץ|נעצוצים">Its partner <em>na&rsquo;atsuts</em>, &lsquo;thornbush&rsquo;, stands in <strong>two verses</strong></span>: in the plural at <a href="isaiah-7.html#v7-19">Isaiah 7:19</a>, where the bees and flies settle on all the thornbushes, and here in the singular, where the juniper takes its place.',
+    ("Isaiah", 55, 13)))
+DICTIONARY_ES["sirpad"] = ("sirpad / na'atsuts",
+    'UNA ORTIGA, y a su lado el ESPINO. <span data-heb="סרפד">La palabra <em>sirpad</em> está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> (ya en estas páginas), de modo que qué planta es una conjetura. <span data-heb="נעצוץ|נעצוצים">Su compañero <em>na&rsquo;atsuts</em>, «espino», está en <strong>dos versículos</strong></span>: en plural en <a href="isaiah-7.es.html#v7-19">Isaías 7:19</a>, donde las abejas y las moscas se posan en todos los espinos, y aquí en singular, donde el enebro ocupa su lugar.')
+
+# ---------- stale not-yet fixed ----------
+
+# ---------- extensions ----------
+_dict155_en("hoy", add=' &#11088; <a href="isaiah-55.html#v55-1">Isaiah 55:1</a> (now on these pages) turns it into a summons, &lsquo;Ho, everyone who thirsts&rsquo;; <a href="zechariah-2.html#v2-10">Zechariah 2:10</a> (now on these pages) has it as a call to flee.')
+_dict155_es("hoy", add=' &#11088; <a href="isaiah-55.es.html#v55-1">Isaías 55:1</a> (ya en estas páginas) lo vuelve una convocatoria, «¡Eh, todos los que tienen sed!»; <a href="zechariah-2.es.html#v2-10">Zacarías 2:10</a> (ya en estas páginas) lo tiene como llamado a huir.')
+_dict155_en("dashen", add=' &#11088; &lsquo;Let your soul delight in fatness&rsquo; (<a href="isaiah-55.html#v55-2">Isaiah 55:2</a>, now on these pages).')
+_dict155_es("dashen", add=' &#11088; «Deléitese su alma en la grosura» (<a href="isaiah-55.es.html#v55-2">Isaías 55:2</a>, ya en estas páginas).')
+_dict155_en("karat", add=' &#11088; &lsquo;I will cut for you an everlasting covenant&rsquo; (<a href="isaiah-55.html#v55-3">Isaiah 55:3</a>) and a sign that &lsquo;shall not be cut off&rsquo; (<a href="isaiah-55.html#v55-13">55:13</a>), the same root at the two ends of the chapter (now on these pages).')
+_dict155_es("karat", add=' &#11088; «Cortaré con ustedes un pacto eterno» (<a href="isaiah-55.es.html#v55-3">Isaías 55:3</a>) y una señal que «no será cortada» (<a href="isaiah-55.es.html#v55-13">55:13</a>), la misma raíz en los dos extremos del capítulo (ya en estas páginas).')
+_dict155_en("chesed", add=' &#11088; <span data-heb="חסדי דוד|חסדי דויד">The words <em>chasdei David</em>, &lsquo;the steadfast loves of David&rsquo;, stand in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="isaiah-55.html#v55-3">Isaiah 55:3</a> (now on these pages) and 2 Chronicles 6:42 (not yet on these pages).')
+_dict155_es("chesed", add=' &#11088; <span data-heb="חסדי דוד|חסדי דויד">Las palabras <em>jasdei David</em>, «los amores leales de David», están en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="isaiah-55.es.html#v55-3">Isaías 55:3</a> (ya en estas páginas) y 2 Crónicas 6:42 (todavía no en estas páginas).')
+_dict155_en("aman", add=' &#11088; &lsquo;The faithful ones&rsquo;, <em>ha-ne&rsquo;emanim</em>, of David&rsquo;s steadfast loves (<a href="isaiah-55.html#v55-3">Isaiah 55:3</a>, now on these pages) is from this root, as is the promise that David&rsquo;s house &lsquo;shall be made sure&rsquo; (<a href="2-samuel-7.html#v7-16">2 Samuel 7:16</a>).')
+_dict155_es("aman", add=' &#11088; «Los fieles», <em>ha-ne&rsquo;emanim</em>, de los amores leales de David (<a href="isaiah-55.es.html#v55-3">Isaías 55:3</a>, ya en estas páginas) es de esta raíz, como la promesa de que la casa de David «será afirmada» (<a href="2-samuel-7.es.html#v7-16">2 Samuel 7:16</a>).')
+_dict155_en("ed", add=' &#11088; &lsquo;I have given him as a witness to the peoples&rsquo; (<a href="isaiah-55.html#v55-4">Isaiah 55:4</a>, now on these pages).')
+_dict155_es("ed", add=' &#11088; «Lo he dado como testigo a los pueblos» (<a href="isaiah-55.es.html#v55-4">Isaías 55:4</a>, ya en estas páginas).')
+_dict155_en("nagid", add=' &#11088; &lsquo;A leader and commander for the peoples&rsquo; (<a href="isaiah-55.html#v55-4">Isaiah 55:4</a>, now on these pages).')
+_dict155_es("nagid", add=' &#11088; «Caudillo y comandante de los pueblos» (<a href="isaiah-55.es.html#v55-4">Isaías 55:4</a>, ya en estas páginas).')
+_dict155_en("derekh", add=' &#11088; &lsquo;Let the wicked leave his way&rsquo;, and &lsquo;your ways are not my ways&rsquo; (<a href="isaiah-55.html#v55-7">Isaiah 55:7&ndash;9</a>, now on these pages).')
+_dict155_es("derekh", add=' &#11088; «Deje el malvado su camino», y «sus caminos no son mis caminos» (<a href="isaiah-55.es.html#v55-7">Isaías 55:7&ndash;9</a>, ya en estas páginas).')
+_dict155_en("machashavah", add=' &#11088; <a href="isaiah-55.html#v55-8">Isaiah 55:8&ndash;9</a> (now on these pages) is the verse: &lsquo;my thoughts are not your thoughts&rsquo;, as high as the heavens are above the earth.')
+_dict155_es("machashavah", add=' &#11088; <a href="isaiah-55.es.html#v55-8">Isaías 55:8&ndash;9</a> (ya en estas páginas) es el versículo: «mis pensamientos no son sus pensamientos», tan altos como los cielos sobre la tierra.')
+_dict155_en("shuv", add=' &#11088; &lsquo;Let him return to Jehovah, and he will have compassion on him&rsquo; (<a href="isaiah-55.html#v55-7">Isaiah 55:7</a>, now on these pages).')
+_dict155_es("shuv", add=' &#11088; «Vuélvase a Jehová, y él tendrá compasión de él» (<a href="isaiah-55.es.html#v55-7">Isaías 55:7</a>, ya en estas páginas).')
+_dict155_en("salach", add=' &#11088; <span data-heb="ירבה לסלוח">The words <em>yarbeh lisloach</em>, &lsquo;he multiplies to forgive&rsquo;, stand in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-55.html#v55-7">Isaiah 55:7</a> (now on these pages).')
+_dict155_es("salach", add=' &#11088; <span data-heb="ירבה לסלוח">Las palabras <em>yarbeh lisloaj</em>, «multiplica para perdonar», están en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-55.es.html#v55-7">Isaías 55:7</a> (ya en estas páginas).')
+_dict155_en("tsalach", add=' &#11088; The word that goes out of Jehovah&rsquo;s mouth &lsquo;shall succeed in that for which I sent it&rsquo; (<a href="isaiah-55.html#v55-11">Isaiah 55:11</a>, now on these pages), the verb of &lsquo;grant success, please&rsquo; at <a href="psalms-118.html#v118-25">Psalm 118:25</a>.')
+_dict155_es("tsalach", add=' &#11088; La palabra que sale de la boca de Jehová «tendrá éxito en aquello para lo cual la envié» (<a href="isaiah-55.es.html#v55-11">Isaías 55:11</a>, ya en estas páginas), el verbo de «da éxito, por favor» en el <a href="psalms-118.es.html#v118-25">Salmo 118:25</a>.')
+_dict155_en("berosh", add=' &#11088; <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> (now on these pages) has it, with the myrtle, in place of the thornbush: this translation prints &lsquo;juniper&rsquo; there, as at <a href="isaiah-41.html#v41-19">Isaiah 41:19</a>, and &lsquo;cypress&rsquo; for the temple timber of Kings; the Hebrew word is the same and the tree is not certain.')
+_dict155_es("berosh", add=' &#11088; <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> (ya en estas páginas) lo tiene, con el mirto, en lugar del espino: esta traducción imprime «enebro» ahí, como en <a href="isaiah-41.es.html#v41-19">Isaías 41:19</a>, y «ciprés» para la madera del templo en Reyes; la palabra hebrea es la misma y el árbol no es seguro.')
+_dict155_en("hadas", add=' &#11088; &lsquo;Instead of the nettle shall come up the myrtle&rsquo; (<a href="isaiah-55.html#v55-13">Isaiah 55:13</a>, now on these pages).')
+_dict155_es("hadas", add=' &#11088; «En lugar de la ortiga subirá el mirto» (<a href="isaiah-55.es.html#v55-13">Isaías 55:13</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["isa55"] = dict(era="exile",
+    when="&ldquo;Ho, everyone who thirsts&rdquo;: the closing chapter of the run of comfort that opens at Isaiah 40, an invitation to buy wine and milk without money, an everlasting covenant of David&rsquo;s steadfast loves, a call to seek Jehovah while he can be found, thoughts higher than ours, a word that does not return empty, and a juniper in place of the thornbush.",
+    clock="Undated in the chapter itself. Placed with the exile because it speaks of going out in joy and being led forth in peace, as Rashi and Radak read it, from the exile; Ibn Ezra reads it of the return from Babylon and again of a later one.")
+
+CHAPTER_ART["isa55"] = [dict(
+    file="dore-the-prophet-isaiah.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Gustave Dor&eacute; (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Wood engraving, via Commons", location_es="Grabado en madera, vía Commons",
+    alt="A black-and-white engraving of a bearded man in a hooded robe kneeling on a flat rock at dawn, his head bowed and his hands resting in front of him. Behind him a wide, shallow river or lake catches the light under a cloudy sky, with low hills in the distance. Spiky plants grow in the foreground and at the right edge.",
+    alt_es="Un grabado en blanco y negro de un hombre barbudo con túnica con capucha, arrodillado sobre una roca plana al amanecer, con la cabeza inclinada y las manos descansando delante de él. Detrás, un río o lago ancho y poco profundo capta la luz bajo un cielo nublado, con colinas bajas a lo lejos. Plantas espinosas crecen en primer plano y en el borde derecho.",
+    note="Isaiah 55:1&ndash;13. Dor&eacute;&rsquo;s plate of the prophet is general and not drawn from this chapter. It has water, a landscape and wild plants in the foreground, and the chapter has all three: the waters of verse 1, the rain of verse 10, and the thornbush and nettle of verse 13.",
+    note_es="Isaías 55:1–13. La lámina de Doré del profeta es general y no está tomada de este capítulo. Tiene agua, un paisaje y plantas silvestres en primer plano, y el capítulo tiene las tres cosas: las aguas del versículo 1, la lluvia del versículo 10, y el espino y la ortiga del versículo 13.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:120.The_Prophet_Isaiah.jpg",
+)]
