@@ -58688,3 +58688,172 @@ CHAPTER_ART["psalms19"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_-_King_David_Playing_the_Harp_-_Google_Art_Project.jpg",
 )]
+
+
+# Appended to library_data.py for Isaiah 6 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('ritspah', 'ritspah', 'רִצְפָּה', 'ritspah', 'A GLOWING STONE &mdash; a stone heated in the fire, the thing a seraph carries to Isaiah&rsquo;s lips with tongs from the altar (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages). &#9888; It is not <em>gachelet</em>, the common word for a coal. &#11088; The same root is the hot stones on which Elijah&rsquo;s cake was baked (<em>retsafim</em>, <a href="1-kings-19.html#v19-6">1 Kings 19:6</a>, now on these pages) and, in the same consonants, a paved floor (Ezekiel 40:17 and 2 Chronicles 7:3, not yet on these pages). The KJV and the NIV read &lsquo;a live coal&rsquo;, the NWT 1984 &lsquo;a glowing coal&rsquo; and the Geneva &lsquo;an hot coal&rsquo;; this translation prints &lsquo;a glowing stone&rsquo;.', ('Isaiah', 6, 6)))
+DICTIONARY.append(('shulim', 'shulim', 'שׁוּלִים', 'shulav', 'THE HEM, the skirts &mdash; the lower edge of a robe. Isaiah sees the Lord&rsquo;s skirts filling the temple (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages). <span data-heb="שוליו">The word with this ending stands in two verses of the Hebrew Bible</span>: that one, and the hem of the priest&rsquo;s robe, where pomegranates and golden bells are set so that its sound is heard when Aaron goes into the holy place &lsquo;so that he does not die&rsquo; (<a href="exodus-28.html#v28-33">Exodus 28:33</a>&ndash;<a href="exodus-28.html#v28-35">35</a>, now on these pages). The KJV and the ASV read &lsquo;his train&rsquo;, the NIV &lsquo;the train of his robe&rsquo; and the NWT 1984 &lsquo;his skirts&rsquo;.', ('Isaiah', 6, 1)))
+DICTIONARY.append(('amot-hasippim', 'amot ha-sippim', 'אַמּוֹת הַסִּפִּים', 'amot ha-sippim', 'THE POSTS OF THE THRESHOLDS &mdash; what shook at the voice of the seraphim (<a href="isaiah-6.html#v6-4">Isaiah 6:4</a>, now on these pages). <span data-heb="אמות הספים">The phrase stands in one verse of the Hebrew Bible</span>. <em>Amah</em> is elsewhere the cubit, the length of a forearm, and here it has to be whatever holds a door, so the versions disagree: the KJV has &lsquo;the posts of the door&rsquo;, the ASV &lsquo;the foundations of the thresholds&rsquo;, the NIV &lsquo;the doorposts and thresholds&rsquo;, the NWT 1984 &lsquo;the pivots of the thresholds&rsquo;, the Geneva &lsquo;the lintels of the door cheeks&rsquo; and the Douay &lsquo;the lintels of the doors&rsquo;. &#9888; Not the <em><a href="dictionary.html#amah">amah</a></em> of Ruth 3:9, a handmaid: the two are spelled with the same consonants and are different words.', ('Isaiah', 6, 4)))
+DICTIONARY.append(('shalleket', 'shalleket', 'שַׁלֶּכֶת', 'be-shalleket', 'THE FELLING &mdash; the cutting down or casting down of a tree, the moment at which the terebinth and the oak &lsquo;in the felling&rsquo; still keep a stump (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages). The noun is rare; it is also the name of the Shalleketh Gate (1 Chronicles 26:16, not yet on these pages), and both are built on <em>shalakh</em>, to cast. The KJV reads &lsquo;when they cast their leaves&rsquo;, the Geneva the same, the NIV &lsquo;when they are cut down&rsquo; and the ASV &lsquo;when they are felled&rsquo;.', ('Isaiah', 6, 13)))
+DICTIONARY.append(('asiriyah', 'asiriyah', 'עֲשִׂרִיָּה', 'asiriyah', 'A TENTH &mdash; the one in ten that is left. <span data-heb="עשיריה">The form stands in one verse of the Hebrew Bible</span>: <em>and if a tenth is still in it, it will return and be for burning</em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages). It is built on the number ten, like <em><a href="dictionary.html#maaser">ma&rsquo;aser</a></em>, the tithe, and the Douay, following the Latin, reads &lsquo;a tithing&rsquo;; the TLB glosses it &lsquo;a tenth&mdash;a remnant&mdash;will survive&rsquo;. The Hebrew says only a tenth.', ('Isaiah', 6, 13)))
+DICTIONARY.append(('melqachayim', 'melqachayim', 'מֶלְקָחַיִם', 'melqachayim', 'TONGS &mdash; a dual form, the pair of arms that lifts a hot thing without a hand on it. <span data-heb="מלקחים">It stands in three verses of the Hebrew Bible</span>: the golden tongs among the furnishings of the temple (<a href="1-kings-7.html#v7-49">1 Kings 7:49</a>, now on these pages, and 2 Chronicles 4:21, not yet), and the seraph&rsquo;s tongs, with which he takes a glowing stone from the altar to Isaiah&rsquo;s mouth (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages). The tool of the sanctuary is the tool of the vision.', ('Isaiah', 6, 6)))
+DICTIONARY.append(('shamen', 'shamen', 'שָׁמֵן', 'hashmen', 'TO GROW FAT &mdash; and, in the causative, to MAKE FAT: the heart that Isaiah is told to make fat (<em>hashmen</em>, <a href="isaiah-6.html#v6-10">Isaiah 6:10</a>, now on these pages). It is the verb of &lsquo;Jeshurun grew fat and kicked&rsquo; (<a href="deuteronomy-32.html#v32-15">Deuteronomy 32:15</a>, now on these pages), so the order to the prophet uses the word the song of Moses uses for a people that has become heavy with its own prosperity. The verse gives three verbs for three organs, and the other two are <em><a href="dictionary.html#kaved">hakhbed</a></em>, &lsquo;make heavy&rsquo;, for the ears and <em>hasha&rsquo;</em>, &lsquo;shut&rsquo; or &lsquo;smear over&rsquo;, for the eyes. The KJV reads &lsquo;fat&rsquo;, the NIV &lsquo;calloused&rsquo; and the NWT 1984 &lsquo;unreceptive&rsquo;.', ('Isaiah', 6, 10)))
+DICTIONARY.append(('ashan', 'ashan', 'עָשָׁן', 'ashan', 'SMOKE &mdash; what fills the house when the seraphim cry (<a href="isaiah-6.html#v6-4">Isaiah 6:4</a>, now on these pages), and what wrapped Sinai: &lsquo;Mount Sinai was all in smoke, because Jehovah had come down on it in fire&rsquo; (<a href="exodus-19.html#v19-18">Exodus 19:18</a>, now on these pages). &#9888; At the tent of meeting and at Solomon&rsquo;s house the word is not smoke but cloud, <em>anan</em> (<a href="exodus-40.html#v40-34">Exodus 40:34</a>, <a href="1-kings-8.html#v8-10">1 Kings 8:10</a>, now on these pages), so Isaiah&rsquo;s house is filled with the word of the mountain and not the word of the tent. John of Patmos sees the temple &lsquo;filled with smoke&rsquo; in turn (<a href="revelation-15.html#v15-8">Revelation 15:8</a>, now on these pages).', ('Isaiah', 6, 4)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['ritspah'] = ('ritsp&aacute;', 'UNA PIEDRA CANDENTE &mdash; una piedra calentada al fuego, lo que un serafín lleva a los labios de Isaías con unas tenazas desde el altar (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas). &#9888; No es <em>gajélet</em>, la palabra común para una brasa. &#11088; La misma raíz son las piedras calientes sobre las que se coció la torta de Elías (<em>retsafim</em>, <a href="1-kings-19.es.html#v19-6">1 Reyes 19:6</a>, ya en estas páginas) y, con las mismas consonantes, un pavimento (Ezequiel 40:17 y 2 Crónicas 7:3, todavía no en estas páginas). La RV 1909 y la RV60 leen &laquo;un carbón encendido&raquo;, la NVI &laquo;una brasa&raquo; y la TNM 1987 &laquo;una brasa relumbrante&raquo;; esta traducción imprime &laquo;una piedra candente&raquo;.')
+DICTIONARY_ES['shulim'] = ('shul&aacute;v', 'EL BORDE, las faldas &mdash; la orilla inferior de un manto. Isaías ve las faldas del Señor llenando el templo (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas). <span data-heb="שוליו">La palabra con esta terminación está en dos versículos de la Biblia hebrea</span>: ese, y el borde del manto del sacerdote, donde se ponen granadas y campanillas de oro para que se oiga su sonido cuando Aarón entra en el lugar santo, &laquo;para que no muera&raquo; (<a href="exodus-28.es.html#v28-33">Éxodo 28:33</a>&ndash;<a href="exodus-28.es.html#v28-35">35</a>, ya en estas páginas). La RV 1909 y la RV60 leen &laquo;sus faldas&raquo;, la NVI &laquo;las orlas de su manto&raquo; y la TNM 1987 &laquo;sus faldas&raquo;.')
+DICTIONARY_ES['amot-hasippim'] = ('amot ha-sip&iacute;m', 'LOS POSTES DE LOS UMBRALES &mdash; lo que se sacudió a la voz de los serafines (<a href="isaiah-6.es.html#v6-4">Isaías 6:4</a>, ya en estas páginas). <span data-heb="אמות הספים">La frase está en un versículo de la Biblia hebrea</span>. <em>Amá</em> es en otros lugares el codo, la longitud de un antebrazo, y aquí tiene que ser lo que sostiene una puerta, así que las versiones discrepan: la RV 1909 dice &laquo;los quiciales de las puestas&raquo;, la RV60 &laquo;los quiciales de las puertas&raquo;, la NVI &laquo;los umbrales de las puertas&raquo; y la TNM 1987 &laquo;los quicios de los umbrales&raquo;. &#9888; No es la <em><a href="diccionario.html#amah">amá</a></em> de Rut 3:9, una sierva: las dos se escriben con las mismas consonantes y son palabras distintas.')
+DICTIONARY_ES['shalleket'] = ('be-shal&eacute;ket', 'LA TALA &mdash; el cortar o echar abajo un árbol, el momento en que el terebinto y el roble &laquo;en la tala&raquo; todavía guardan un tocón (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas). El sustantivo es raro; es también el nombre de la Puerta de Shalléket (1 Crónicas 26:16, todavía no en estas páginas), y ambos se construyen sobre <em>shalaj</em>, echar. La RV 1909 lee &laquo;en la tala queda el tronco&raquo; y la RV60 &laquo;al ser cortados aún queda el tronco&raquo;.')
+DICTIONARY_ES['asiriyah'] = ('asiriy&aacute;', 'UNA DÉCIMA PARTE &mdash; la una de cada diez que queda. <span data-heb="עשיריה">La forma está en un versículo de la Biblia hebrea</span>: <em>y si aún queda en ella una décima parte, volverá y será para quema</em> (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas). Se construye sobre el número diez, como <em><a href="diccionario.html#maaser">ma&rsquo;aser</a></em>, el diezmo, y la Douay, siguiendo el latín, lee &laquo;a tithing&raquo;. El hebreo dice solo una décima.')
+DICTIONARY_ES['melqachayim'] = ('melqaj&aacute;yim', 'TENAZAS &mdash; una forma dual, el par de brazos que levanta una cosa caliente sin una mano encima. <span data-heb="מלקחים">Está en tres versículos de la Biblia hebrea</span>: las tenazas de oro entre el mobiliario del templo (<a href="1-kings-7.es.html#v7-49">1 Reyes 7:49</a>, ya en estas páginas, y 2 Crónicas 4:21, todavía no) y las tenazas del serafín, con las que toma una piedra candente del altar hasta la boca de Isaías (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas). La herramienta del santuario es la herramienta de la visión.')
+DICTIONARY_ES['shamen'] = ('hashm&eacute;n', 'ENGORDAR &mdash; y, en causativo, HACER ENGORDAR: el corazón que a Isaías se le dice que haga engordar (<em>hashmen</em>, <a href="isaiah-6.es.html#v6-10">Isaías 6:10</a>, ya en estas páginas). Es el verbo de &laquo;Jesurún engordó y dio patadas&raquo; (<a href="deuteronomy-32.es.html#v32-15">Deuteronomio 32:15</a>, ya en estas páginas), así que la orden al profeta usa la palabra que el cántico de Moisés usa para un pueblo que se ha vuelto pesado con su propia prosperidad. El versículo da tres verbos para tres órganos, y los otros dos son <em><a href="diccionario.html#kaved">hajbed</a></em>, &laquo;haz pesados&raquo;, para los oídos, y <em>hasha</em>, &laquo;cierra&raquo; o &laquo;unta&raquo;, para los ojos. La RV 1909 y la RV60 leen &laquo;engruesa&raquo;, la NVI &laquo;haz insensible&raquo; y la TNM 1987 &laquo;indispuesto a recibir&raquo;.')
+DICTIONARY_ES['ashan'] = ('ash&aacute;n', 'HUMO &mdash; lo que llena la casa cuando gritan los serafines (<a href="isaiah-6.es.html#v6-4">Isaías 6:4</a>, ya en estas páginas), y lo que envolvió el Sinaí: &laquo;todo el monte Sinaí humeaba, porque Jehová había descendido sobre él en fuego&raquo; (<a href="exodus-19.es.html#v19-18">Éxodo 19:18</a>, ya en estas páginas). &#9888; En la tienda de reunión y en la casa de Salomón la palabra no es humo sino nube, <em>anán</em> (<a href="exodus-40.es.html#v40-34">Éxodo 40:34</a>, <a href="1-kings-8.es.html#v8-10">1 Reyes 8:10</a>, ya en estas páginas), de modo que la casa de Isaías se llena con la palabra del monte y no con la de la tienda. Juan en Patmos ve a su vez el templo &laquo;lleno de humo&raquo; (<a href="revelation-15.es.html#v15-8">Apocalipsis 15:8</a>, ya en estas páginas).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah hears the word three times at once, &lsquo;Holy, holy, holy is Jehovah of armies&rsquo; (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), <span data-heb="קדוש קדוש קדוש">a threefold form that stands in one verse of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraphim make the glory the fullness of the earth, &lsquo;the fullness of all the earth is his glory&rsquo; (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), and the NWT 1984 is the one version on the shelf that prints it that way.',) + _t[5:]
+    if _t[0] == 'tame':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah says of himself and his people that they are &lsquo;unclean of lips&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="טמא שפתים">a phrase that stands in one verse of the Hebrew Bible</span>; the nearest Law is the one with the scaly disease, who covers his upper lip and calls &lsquo;Unclean!&rsquo; (<a href="leviticus-13.html#v13-45">Leviticus 13:45</a>).',) + _t[5:]
+    if _t[0] == 'hineni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; At <a href="isaiah-6.html#v6-8">Isaiah 6:8</a> (now on these pages) it is joined to a verb of his own, <em>hineni shelacheni</em>, &lsquo;Here I am; send me&rsquo;, <span data-heb="הנני שלחני">a pair that stands in one verse of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kaved':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah is told to do to the people&rsquo;s ears what Pharaoh did to his own heart: <em>hakhbed</em>, &lsquo;make heavy&rsquo; (<a href="isaiah-6.html#v6-10">Isaiah 6:10</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The verb is in the last clause of <a href="isaiah-6.html#v6-10">Isaiah 6:10</a> (&lsquo;and it turn and be healed&rsquo;) and in the tenth that &lsquo;will return&rsquo; at 6:13 (both now on these pages), the verb of the name Shear-jashub (<a href="isaiah-7.html#v7-3">Isaiah 7:3</a>).',) + _t[5:]
+    if _t[0] == 'kaphar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah&rsquo;s sin &lsquo;is atoned for&rsquo; in the passive, <em>tekhuppar</em>, by a stone from the altar (<a href="isaiah-6.html#v6-7">Isaiah 6:7</a>, now on these pages); compare the iniquity that &lsquo;shall not be atoned for by sacrifice or by offering&rsquo; (<a href="1-samuel-3.html#v3-14">1 Samuel 3:14</a>).',) + _t[5:]
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Your iniquity has departed&rsquo; (<a href="isaiah-6.html#v6-7">Isaiah 6:7</a>, now on these pages): the iniquity goes of its own accord, <em>sar</em>, while the sin &lsquo;is atoned for&rsquo;.',) + _t[5:]
+    if _t[0] == 'tzevaot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraphim sing the title (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), and Isaiah says his eyes have seen &lsquo;the King, Jehovah of armies&rsquo; (6:5).',) + _t[5:]
+    if _t[0] == 'adonai':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, 8 and 11 (now on these pages) have <em>Adonai</em>, &lsquo;the Lord&rsquo;, and verses 3, 5 and 12 have the name Jehovah.',) + _t[5:]
+    if _t[0] == 'kisse':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;On a throne, high and lifted up&rsquo; (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages); the adjectives could belong to the throne or to the one on it.',) + _t[5:]
+    if _t[0] == 'hekhal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;His skirts filled the temple&rsquo; (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages); in verse 4 the same building is <em>ha-bayit</em>, &lsquo;the house&rsquo;.',) + _t[5:]
+    if _t[0] == 'matzevah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The stump of <a href="isaiah-6.html#v6-13">Isaiah 6:13</a> (now on these pages), <em>matsevet</em>, is spelled and pointed exactly as Jacob&rsquo;s pillar of stone at <a href="genesis-35.html#v35-14">Genesis 35:14</a>.',) + _t[5:]
+    if _t[0] == 'zera':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;A holy seed is its stump&rsquo; (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages), the other adjective for the people the book called &lsquo;a seed of evildoers&rsquo; (<a href="isaiah-1.html#v4">Isaiah 1:4</a>).',) + _t[5:]
+    if _t[0] == 'baar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The tenth that is left is &lsquo;for burning&rsquo;, <em>le-va&rsquo;er</em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The book&rsquo;s other word for what is left is a tenth, <em><a href="dictionary.html#asiriyah">asiriyah</a></em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages), and Shear-jashub is the remnant that returns (<a href="isaiah-7.html#v7-3">Isaiah 7:3</a>).',) + _t[5:]
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Six wings, <em>kenafayim</em>, to each seraph, two to cover the face, two to cover the feet and two to fly (<a href="isaiah-6.html#v6-2">Isaiah 6:2</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'damam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah&rsquo;s cry <em>nidmeiti</em>, &lsquo;I am undone&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="נדמיתי">a form that stands in one verse of the Hebrew Bible</span>, comes from a verb that can mean to be cut off or to be silenced; the NWT 1984 has &lsquo;as good as brought to silence&rsquo; and the Douay &lsquo;I have held my peace&rsquo;.',) + _t[5:]
+    if _t[0] == 'saraf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-6.html#v6-2">Isaiah 6:2</a> and 6 are now on these pages: the seraphim, their six wings, and the glowing stone carried with tongs; the Hebrew word for what he carries is <em><a href="dictionary.html#ritspah">ritspah</a></em>, a glowing stone, where the shelf has a coal.',) + _t[5:]
+    if _t[0] == 'hoy':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah answers the woes he has been calling down with the other cry, <em>oi li</em>, &lsquo;woe to me&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="אוי לי">two words that stand in four verses of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'melekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;My eyes have seen the King, Jehovah of armies&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages): the title that King Uzziah held in the first verse, given to the one whose hem filled the temple.',) + _t[5:]
+    if _t[0] == 'mizbeach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraph takes the glowing stone &lsquo;from off the altar&rsquo; (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages); the text does not say which altar.',) + _t[5:]
+    if _t[0] == 'adamah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;And the ground is left a desolation&rsquo; (<a href="isaiah-6.html#v6-11">Isaiah 6:11</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shalach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Whom shall I send?&rsquo; and the answer <em>shelacheni</em>, &lsquo;send me&rsquo; (<a href="isaiah-6.html#v6-8">Isaiah 6:8</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'azav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <em>Ha-azuvah</em>, &lsquo;the abandonment&rsquo;, with the article, <span data-heb="העזובה">stands in one verse of the Hebrew Bible</span>: &lsquo;the abandonment is great in the midst of the land&rsquo; (<a href="isaiah-6.html#v6-12">Isaiah 6:12</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'elah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Like the terebinth and like the oak&rsquo; (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages): what a felled one keeps is the image of a holy seed.',) + _t[5:]
+_d = DICTIONARY_ES['kadosh']
+DICTIONARY_ES['kadosh'] = (_d[0], _d[1] + ' &#11088; Isaías oye la palabra tres veces a la vez, &laquo;Santo, santo, santo es Jehová de los ejércitos&raquo; (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), <span data-heb="קדוש קדוש קדוש">una forma triple que está en un versículo de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kavod']
+DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; Los serafines hacen de la gloria la plenitud de la tierra, &laquo;la plenitud de toda la tierra es su gloria&raquo; (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), y la TNM 1987 es la versión del estante que la imprime así.')
+_d = DICTIONARY_ES['tame']
+DICTIONARY_ES['tame'] = (_d[0], _d[1] + ' &#11088; Isaías dice de sí mismo y de su pueblo que son &laquo;impuros de labios&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="טמא שפתים">una frase que está en un versículo de la Biblia hebrea</span>; lo más cercano en la Ley es el que tiene la enfermedad escamosa, que se cubre el labio superior y clama &laquo;¡Impuro!&raquo; (<a href="leviticus-13.es.html#v13-45">Levítico 13:45</a>).')
+_d = DICTIONARY_ES['hineni']
+DICTIONARY_ES['hineni'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-6.es.html#v6-8">Isaías 6:8</a> (ya en estas páginas) se une a un verbo propio, <em>hineni shelajeni</em>, &laquo;Aquí estoy; envíame a mí&raquo;, <span data-heb="הנני שלחני">un par que está en un versículo de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kaved']
+DICTIONARY_ES['kaved'] = (_d[0], _d[1] + ' &#11088; A Isaías se le dice que haga a los oídos del pueblo lo que Faraón hizo a su propio corazón: <em>hajbed</em>, &laquo;haz pesados&raquo; (<a href="isaiah-6.es.html#v6-10">Isaías 6:10</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shuv']
+DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; El verbo está en la última cláusula de <a href="isaiah-6.es.html#v6-10">Isaías 6:10</a> (&laquo;y se vuelva y sea sanado&raquo;) y en la décima parte que &laquo;volverá&raquo; en 6:13 (ambos ya en estas páginas), el verbo del nombre Sear-jasub (<a href="isaiah-7.es.html#v7-3">Isaías 7:3</a>).')
+_d = DICTIONARY_ES['kaphar']
+DICTIONARY_ES['kaphar'] = (_d[0], _d[1] + ' &#11088; El pecado de Isaías &laquo;queda expiado&raquo; en pasivo, <em>tejupar</em>, por una piedra del altar (<a href="isaiah-6.es.html#v6-7">Isaías 6:7</a>, ya en estas páginas); compárese la iniquidad que &laquo;no será expiada con sacrificio ni con ofrenda&raquo; (<a href="1-samuel-3.es.html#v3-14">1 Samuel 3:14</a>).')
+_d = DICTIONARY_ES['avon']
+DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; &laquo;Tu iniquidad se ha apartado&raquo; (<a href="isaiah-6.es.html#v6-7">Isaías 6:7</a>, ya en estas páginas): la iniquidad se va por sí misma, <em>sar</em>, mientras que el pecado &laquo;queda expiado&raquo;.')
+_d = DICTIONARY_ES['tzevaot']
+DICTIONARY_ES['tzevaot'] = (_d[0], _d[1] + ' &#11088; Los serafines cantan el título (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), e Isaías dice que sus ojos han visto &laquo;al Rey, a Jehová de los ejércitos&raquo; (6:5).')
+_d = DICTIONARY_ES['adonai']
+DICTIONARY_ES['adonai'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, 8 y 11 (ya en estas páginas) tienen <em>Adonai</em>, &laquo;el Señor&raquo;, y los versículos 3, 5 y 12 tienen el nombre Jehová.')
+_d = DICTIONARY_ES['kisse']
+DICTIONARY_ES['kisse'] = (_d[0], _d[1] + ' &#11088; &laquo;Sobre un trono alto y elevado&raquo; (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas); los adjetivos pueden pertenecer al trono o al que está en él.')
+_d = DICTIONARY_ES['hekhal']
+DICTIONARY_ES['hekhal'] = (_d[0], _d[1] + ' &#11088; &laquo;Sus faldas llenaban el templo&raquo; (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas); en el versículo 4 el mismo edificio es <em>ha-bayit</em>, &laquo;la casa&raquo;.')
+_d = DICTIONARY_ES['matzevah']
+DICTIONARY_ES['matzevah'] = (_d[0], _d[1] + ' &#11088; El tocón de <a href="isaiah-6.es.html#v6-13">Isaías 6:13</a> (ya en estas páginas), <em>matsévet</em>, se escribe y se puntúa exactamente como la columna de piedra de Jacob en <a href="genesis-35.es.html#v35-14">Génesis 35:14</a>.')
+_d = DICTIONARY_ES['zera']
+DICTIONARY_ES['zera'] = (_d[0], _d[1] + ' &#11088; &laquo;Una simiente santa es su tocón&raquo; (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas), el otro adjetivo para el pueblo que el libro llamó &laquo;simiente de malhechores&raquo; (<a href="isaiah-1.es.html#v4">Isaías 1:4</a>).')
+_d = DICTIONARY_ES['baar']
+DICTIONARY_ES['baar'] = (_d[0], _d[1] + ' &#11088; La décima parte que queda es &laquo;para quema&raquo;, <em>le-vaer</em> (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['kanaf']
+DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; Seis alas, <em>kenafáyim</em>, para cada serafín, dos para cubrir el rostro, dos para cubrir los pies y dos para volar (<a href="isaiah-6.es.html#v6-2">Isaías 6:2</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['damam']
+DICTIONARY_ES['damam'] = (_d[0], _d[1] + ' &#11088; El grito de Isaías <em>nidmeití</em>, &laquo;estoy deshecho&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="נדמיתי">una forma que está en un versículo de la Biblia hebrea</span>, viene de un verbo que puede significar ser cortado o ser silenciado; la TNM 1987 dice &laquo;puedo darme como reducido a silencio&raquo; y la Douay &laquo;I have held my peace&raquo;.')
+_d = DICTIONARY_ES['saraf']
+DICTIONARY_ES['saraf'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-6.es.html#v6-2">Isaías 6:2</a> y 6 ya están en estas páginas: los serafines, sus seis alas y la piedra candente llevada con tenazas; la palabra hebrea para lo que lleva es <em><a href="diccionario.html#ritspah">ritspá</a></em>, una piedra candente, donde el estante tiene una brasa.')
+_d = DICTIONARY_ES['hoy']
+DICTIONARY_ES['hoy'] = (_d[0], _d[1] + ' &#11088; Isaías responde a los ayes que ha estado lanzando con el otro grito, <em>oi li</em>, &laquo;ay de mí&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="אוי לי">dos palabras que están en cuatro versículos de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['melekh']
+DICTIONARY_ES['melekh'] = (_d[0], _d[1] + ' &#11088; &laquo;Mis ojos han visto al Rey, a Jehová de los ejércitos&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas): el título que el rey Uzías tenía en el primer versículo, dado al que tenía el borde llenando el templo.')
+_d = DICTIONARY_ES['mizbeach']
+DICTIONARY_ES['mizbeach'] = (_d[0], _d[1] + ' &#11088; El serafín toma la piedra candente &laquo;de sobre el altar&raquo; (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas); el texto no dice cuál altar.')
+_d = DICTIONARY_ES['adamah']
+DICTIONARY_ES['adamah'] = (_d[0], _d[1] + ' &#11088; &laquo;Y el suelo quede hecho una desolación&raquo; (<a href="isaiah-6.es.html#v6-11">Isaías 6:11</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shalach']
+DICTIONARY_ES['shalach'] = (_d[0], _d[1] + ' &#11088; &laquo;¿A quién enviaré?&raquo; y la respuesta <em>shelajeni</em>, &laquo;envíame a mí&raquo; (<a href="isaiah-6.es.html#v6-8">Isaías 6:8</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['azav']
+DICTIONARY_ES['azav'] = (_d[0], _d[1] + ' &#11088; <em>Ha-azuvá</em>, &laquo;el abandono&raquo;, con el artículo, <span data-heb="העזובה">está en un versículo de la Biblia hebrea</span>: &laquo;sea grande el abandono en medio de la tierra&raquo; (<a href="isaiah-6.es.html#v6-12">Isaías 6:12</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['elah']
+DICTIONARY_ES['elah'] = (_d[0], _d[1] + ' &#11088; &laquo;Como el terebinto y como el roble&raquo; (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas): lo que guarda uno talado es la imagen de una simiente santa.')
+
+# ---- XREFS for Isaiah 6
+XREFS.extend([
+    (("Isaiah", 6, 4), ("Revelation", 15, 8), "the house filled with smoke, and the temple filled with smoke from the glory of God"),
+    (("Isaiah", 6, 9), ("Matthew", 13, 14), "hear indeed but do not understand: the Hebrew order to the prophet, and its Greek citation"),
+    (("Isaiah", 6, 9), ("Acts", 28, 26), "the same passage, quoted by Paul at Rome"),
+    (("Isaiah", 6, 10), ("John", 12, 40), "he has blinded their eyes: John's citation of the verse, joined to Isaiah 53:1"),
+    (("Isaiah", 6, 1), ("John", 12, 41), "Isaiah saw his glory: the throne vision in the Fourth Gospel"),
+    (("Isaiah", 6, 8), ("1 Kings", 22, 20), "a question put to the heavenly company, and a volunteer"),
+    (("Isaiah", 6, 7), ("Jeremiah", 1, 9), "and he touched my mouth: the same words, a seraph's and Jehovah's"),
+    (("Isaiah", 6, 10), ("Exodus", 8, 11), "make heavy: what Pharaoh did to his own heart, and what the prophet is told to do to the ears"),
+])
+
+# ---- Uzziah now has a vision that dates from his death
+for _i, _e in enumerate(ENCYCLOPEDIA):
+    if isinstance(_e, dict) and _e.get('slug') == 'uzziah':
+        _refs = list(_e.get('refs', []))
+        if ('Isaiah', 6, 1) not in _refs:
+            _refs.append(('Isaiah', 6, 1))
+        _e['refs'] = _refs
+
+
+
+CHRON_CHAPTERS["isa6"] = dict(era="monarchy",
+    when="&ldquo;Here am I; send me&rdquo;: in the year King Uzziah died, Isaiah sees the Lord on a throne with his skirts filling the temple, and seraphim with six wings who cry &ldquo;Holy, holy, holy&rdquo;. He is undone, a man of unclean lips among a people of unclean lips; a seraph touches his mouth with a glowing stone from the altar and says that his iniquity has departed and his sin is atoned for. He answers the question &ldquo;Whom shall I send?&rdquo; with &ldquo;send me&rdquo;, and is sent to a people whose heart is to be made fat, whose ears are to be made heavy and whose eyes are to be shut, until cities lie waste; a tenth that returns is burned again, and a holy seed is its stump.",
+    clock="Uzziah reigned about fifty-two years in the eighth century BC, and Isaiah 1:1 dates the book in the days of Uzziah, Jotham, Ahaz and Hezekiah; the chapter dates itself to the year of Uzziah&rsquo;s death and the library gives no more exact year. Isaiah 7:3 shows Isaiah and his son Shear-jashub meeting Ahaz.")
+
+
+CHAPTER_ART["isa6"] = [dict(
+    file="michelangelo-isaiah-sistine-chapel.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Michelangelo", artist_es="Miguel Ángel",
+    year="c. 1509",
+    location="Sistine Chapel ceiling, Vatican", location_es="Bóveda de la Capilla Sixtina, Vaticano",
+    alt="A fresco of an older man with short grey curly hair, seated and turned to the left, looking down and to one side with his brow drawn. He wears a long pink robe with a pale yellow sleeve, a green cloak over his shoulders and a blue-and-grey drape, and his bare feet rest on a stone step. A closed book with a blue cover and orange pages is held against his knee in one hand, and the other hand is raised with a finger pointing up. Behind his shoulder a curly-haired child leans out with an arm stretched wide, and a second child peers from behind the cloak at the left edge.",
+    alt_es="Un fresco de un hombre mayor de cabello corto, gris y rizado, sentado y vuelto hacia la izquierda, mirando hacia abajo y de lado con el ceño fruncido. Lleva una larga túnica rosa con una manga amarillo pálido, un manto verde sobre los hombros y un paño azul y gris, y sus pies descalzos descansan sobre un escalón de piedra. Un libro cerrado de tapa azul y hojas anaranjadas se apoya contra su rodilla en una mano, y la otra mano está levantada con un dedo apuntando hacia arriba. Detrás de su hombro un niño de cabello rizado se asoma con un brazo extendido, y un segundo niño mira desde detrás del manto en el borde izquierdo.",
+    note="Isaiah 6. Michelangelo&rsquo;s Isaiah is not a picture of this chapter&rsquo;s vision: it has no throne, no seraph and no stone from the altar. It shows the prophet seated with a closed book on his knee and one hand raised, turned toward a child behind him as though called away from his reading, and that is the use made of it here: the chapter is the one scene in the book in which Isaiah is the person addressed. It is a fresco on the ceiling of the Sistine Chapel, and the web copy is a smaller reproduction of a photograph of it.",
+    note_es="Isaías 6. El Isaías de Miguel Ángel no es una imagen de la visión de este capítulo: no tiene trono, ni serafín, ni piedra del altar. Muestra al profeta sentado con un libro cerrado sobre la rodilla y una mano levantada, vuelto hacia un niño detrás de él como si lo llamaran lejos de su lectura, y ese es el uso que se le da aquí: el capítulo es la única escena del libro en que Isaías es el interpelado. Es un fresco en la bóveda de la Capilla Sixtina, y la copia web es una reproducción más pequeña de una fotografía.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jesaja_(Michelangelo).jpg",
+)]

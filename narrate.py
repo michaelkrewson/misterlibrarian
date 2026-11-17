@@ -207,6 +207,7 @@ def main():
     a.list_slugs = set(x.strip() for x in open(a.list, encoding="utf-8") if x.strip()) if a.list else None
     m = load_manifest(); m.setdefault("en", []); m.setdefault("es", [])
     todo = []
+    paths = {}     # slug -> its page; the loop variable `path` ends on the LAST page, not the one just recorded
     for slug, path in pages(a.lang):
         if a.only and slug != a.only:
             continue
@@ -217,6 +218,7 @@ def main():
         c = chapter(path, a.lang)
         if c:
             todo.append((slug, c))
+            paths[slug] = path
     if a.shard:
         k0, n0 = (int(x) for x in a.shard.split("/"))
         todo = todo[k0::n0]
@@ -237,7 +239,7 @@ def main():
             print(f"  FAILED {slug}: {e}")
             continue
         add_to_manifest(a.lang, slug); done += 1
-        patched = patch_page(path, a.lang, slug)
+        patched = patch_page(paths[slug], a.lang, slug)
         print(f"  {slug}: {n} pieces, {size / 1024:.0f} KB  → https://micwyn.com{res.get('url', '')}" + ("  (Listen button added to the page)" if patched else ""))
     print(f"Recorded {done} of {len(todo)}. Next: python3 build.py, then commit audio/narrated.json and the pages.")
 
