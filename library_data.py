@@ -58369,3 +58369,116 @@ CHAPTER_ART["psalms150"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Cantoria_Della_Robbia_OPA_Florence_4.jpg",
 )]
+
+# --- Psalm 118 ---
+import re as _re118
+def _one118(s, old, new, rx=False):
+    if rx:
+        assert len(_re118.findall(old, s)) == 1, (old[:70], len(_re118.findall(old, s)))
+        return _re118.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict118_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one118(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict118_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one118(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency118_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency118_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P118(es, txt, n):
+    return '<a href="psalms-118.%shtml#v118-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("yadah", "metsar", "pinnah") for _d in DICTIONARY)
+
+DICTIONARY.append(("yadah", "yadah / hodu", "יָדָה", "yadah",
+    'TO GIVE THANKS, to confess &mdash; the verb that opens and closes Psalm 118, <em>hodu</em>, &lsquo;give thanks&rsquo; (<a href="psalms-118.html#v118-1">Psalm 118:1</a> and <a href="psalms-118.html#v118-29">29</a>, now on these pages), and comes back as &lsquo;I will give thanks&rsquo; in verses 19, 21 and 28. It is the root of Judah&rsquo;s name (<a href="genesis-29.html#v29-35">Genesis 29:35</a>). &#9888; The shelf splits on it inside the one psalm: the <span class="tag t-kjv">KJV</span> has &lsquo;give thanks&rsquo; in verse 1 and &lsquo;I will praise&rsquo; in verses 19, 21 and 28, the <span class="tag t-asv">ASV</span> &lsquo;give thanks&rsquo; each time, and the <span class="tag t-drb">Douay</span>, after the Greek <em>exomologeomai</em>, &lsquo;give praise&rsquo; and &lsquo;give glory&rsquo;. The translation keeps &lsquo;give thanks&rsquo; every time.',
+    ("Psalms", 118, 1)))
+DICTIONARY_ES["yadah"] = ("yadá / hodú",
+    'DAR GRACIAS, confesar &mdash;el verbo con que abre y cierra el Salmo 118, <em>hodu</em>, «den gracias» (<a href="psalms-118.es.html#v118-1">Salmo 118:1</a> y <a href="psalms-118.es.html#v118-29">29</a>, ya en estas páginas), y que vuelve como «daré gracias» en los versículos 19, 21 y 28. Es la raíz del nombre de Judá (Génesis 29:35, ya en estas páginas, todavía no en español). &#9888; La traducción mantiene «dar gracias» todas las veces; la RV 1909 y la RV60 tienen «alabad» y «alabaré».')
+
+DICTIONARY.append(("metsar", "metsar / merchav", "מֵצַר", "metsar",
+    'A NARROW PLACE, a strait &mdash; distress, and its opposite is <em>merchav</em>, a wide-open place. &#11088; <a href="psalms-118.html#v118-5">Psalm 118:5</a> (now on these pages) has both in one line, &lsquo;From the narrow place I called on Jah; Jah answered me with a wide-open place&rsquo;, and Ibn Ezra calls the pairing, with Jah named twice, a witticism of the holy tongue. David&rsquo;s song has the second half, &lsquo;he brought me out to a broad place&rsquo; (<a href="2-samuel-22.html#v22-20">2 Samuel 22:20</a>, now on these pages). The Greek has <em>thlipsis</em>, &lsquo;affliction&rsquo;, and <em>platusmos</em>, &lsquo;a broadening&rsquo;.',
+    ("Psalms", 118, 5)))
+DICTIONARY_ES["metsar"] = ("metsar / merjav",
+    'UN LUGAR ESTRECHO, un apuro &mdash;angustia, y su contrario es <em>merjav</em>, un lugar espacioso. &#11088; <a href="psalms-118.es.html#v118-5">Salmo 118:5</a> (ya en estas páginas) tiene los dos en una línea, «Desde la angustia invoqué a Jah; Jah me respondió con un lugar espacioso», e Ibn Ezra llama al par, con Jah nombrado dos veces, una gracia de la lengua santa. El cántico de David tiene la segunda mitad, «me sacó a un lugar amplio» (<a href="2-samuel-22.es.html#v22-20">2 Samuel 22:20</a>, ya en estas páginas).')
+
+DICTIONARY.append(("pinnah", "pinnah", "פִּנָּה", "pinnah",
+    'A CORNER &mdash; of a building, and in one phrase of one verse the place where a stone becomes the head. <span data-heb="ראש פנה">The words <em>rosh pinnah</em>, &lsquo;head of the corner&rsquo;, stand in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="psalms-118.html#v118-22">Psalm 118:22</a> (now on these pages), &lsquo;The stone the builders rejected has become the head of the corner&rsquo;, and the New Testament quotes it at Matthew 21:42, Mark 12:10, Luke 20:17, Acts 4:11 and 1 Peter 2:7. &#9888; The shelf splits on the stone&rsquo;s place: the <span class="tag t-kjv">KJV</span> has &lsquo;the head stone of the corner&rsquo;, the <span class="tag t-niv">NIV</span> &lsquo;the cornerstone&rsquo;, the <span class="tag t-tlb">TLB</span> &lsquo;the capstone of the arch&rsquo;. A cornerstone is laid at the foundation and a capstone set on top, and the Hebrew, like the Greek <em>kephalē gōnias</em>, says only &lsquo;head&rsquo;. Rashi reads the stone as a people lowly among the nations; Radak as Israel, or as David when Samuel came to anoint him.',
+    ("Psalms", 118, 22)))
+DICTIONARY_ES["pinnah"] = ("pinná",
+    'UN ÁNGULO, una esquina &mdash;de un edificio, y en una frase de un versículo el lugar donde una piedra llega a ser cabeza. <span data-heb="ראש פנה">Las palabras <em>rosh pinnah</em>, «cabeza del ángulo», están en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="psalms-118.es.html#v118-22">Salmo 118:22</a> (ya en estas páginas), «La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo», y el Nuevo Testamento lo cita en Mateo 21:42, Marcos 12:10, Lucas 20:17, Hechos 4:11 y 1 Pedro 2:7. &#9888; Una piedra angular se pone en el cimiento y una clave arriba, y el hebreo, como el griego <em>kephalē gōnias</em>, solo dice «cabeza». Rashi lee la piedra como un pueblo humilde entre las naciones; Radak como Israel, o como David cuando Samuel vino a ungirlo.')
+
+# ---------- stale not-yet fixed ----------
+_dict118_en("apodokimazo", "from Psalm 118:22 (not yet on these pages)", "from <a href=\"psalms-118.html#v118-22\">Psalm 118:22</a> (now on these pages)")
+_dict118_es("apodokimazo", "del Salmo 118:22 (todavía no en estas páginas)", "del <a href=\"psalms-118.es.html#v118-22\">Salmo 118:22</a> (ya en estas páginas)")
+_dict118_en("boethos", "from the Greek of Psalm 118:6, 117:6 in the Greek Psalter (checked; not yet on these pages)", "from the Greek of <a href=\"psalms-118.html#v118-6\">Psalm 118:6</a>, 117:6 in the Greek Psalter (checked; now on these pages)")
+_dict118_es("boethos", "del griego del Salmo 118:6, 117:6 en el Salterio griego (comprobado; todavía no en estas páginas)", "del griego del <a href=\"psalms-118.es.html#v118-6\">Salmo 118:6</a>, 117:6 en el Salterio griego (comprobado; ya en estas páginas)")
+
+# ---------- extensions ----------
+_dict118_en("chesed", add=' &#11088; <span data-heb="כי לעולם חסדו">The refrain &lsquo;for his steadfast love is forever&rsquo; stands in <strong>forty-one verses</strong> of the Hebrew Bible</span>, and five of them are <a href="psalms-118.html#v118-1">Psalm 118</a>&rsquo;s own, verses 1&ndash;4 and 29 (now on these pages).')
+_dict118_es("chesed", add=' &#11088; <span data-heb="כי לעולם חסדו">El estribillo «porque para siempre es su amor leal» está en <strong>cuarenta y un versículos</strong> de la Biblia hebrea</span>, y cinco son los del <a href="psalms-118.es.html#v118-1">Salmo 118</a>, los versículos 1&ndash;4 y 29 (ya en estas páginas).')
+_dict118_en("batach", add=' &#11088; <a href="psalms-118.html#v118-8">Psalm 118:8&ndash;9</a> (now on these pages) sets it beside <em>chasah</em>, &lsquo;take refuge&rsquo;: &lsquo;It is better to take refuge in Jehovah than to trust in a human.&rsquo;')
+_dict118_es("batach", add=' &#11088; <a href="psalms-118.es.html#v118-8">Salmo 118:8&ndash;9</a> (ya en estas páginas) lo pone junto a <em>jasá</em>, «refugiarse»: «Mejor es refugiarse en Jehová que confiar en un ser humano».')
+_dict118_en("nadiv", add=' &#11088; &lsquo;It is better to take refuge in Jehovah than to trust in nobles&rsquo; (<a href="psalms-118.html#v118-9">Psalm 118:9</a>, now on these pages).')
+_dict118_es("nadiv", add=' &#11088; «Mejor es refugiarse en Jehová que confiar en los nobles» (<a href="psalms-118.es.html#v118-9">Salmo 118:9</a>, ya en estas páginas).')
+_dict118_en("mul", add=' &#11088; <span data-heb="אמילם">The verb <em>amilam</em>, &lsquo;I cut them off&rsquo;, stands in <strong>three verses</strong> of the Hebrew Bible</span>, all three in <a href="psalms-118.html#v118-10">Psalm 118:10&ndash;12</a> (now on these pages), and it is spelled like this verb; whether it is the same root, the lexicons divide.')
+_dict118_es("mul", add=' &#11088; <span data-heb="אמילם">El verbo <em>amilam</em>, «las corté», está en <strong>tres versículos</strong> de la Biblia hebrea</span>, los tres en el <a href="psalms-118.es.html#v118-10">Salmo 118:10&ndash;12</a> (ya en estas páginas), y se escribe como este verbo; si es la misma raíz, los léxicos se dividen.')
+_dict118_en("hosanna", add=' &#11088; The psalm itself is on these pages now: <a href="psalms-118.html#v118-25">Psalm 118:25</a>, &lsquo;Ah, Jehovah, save, please!&rsquo;, with its second cry, &lsquo;grant success, please&rsquo;, which Nehemiah prays in 1:11.')
+_dict118_es("hosanna", add=' &#11088; El salmo mismo está ya en estas páginas: <a href="psalms-118.es.html#v118-25">Salmo 118:25</a>, «¡Ah, Jehová, salva, por favor!», con su segundo grito, «da éxito, por favor», que Nehemías ora en 1:11.')
+_dict118_en("chayil", add=' &#11088; &lsquo;The right hand of Jehovah does valiantly&rsquo; (<em>oseh chayil</em>), twice (<a href="psalms-118.html#v118-15">Psalm 118:15&ndash;16</a>, now on these pages).')
+_dict118_es("chayil", add=' &#11088; «La diestra de Jehová actúa con valentía» (<em>oseh jáyil</em>), dos veces (<a href="psalms-118.es.html#v118-15">Salmo 118:15&ndash;16</a>, ya en estas páginas).')
+_dict118_en("sapar", add=' &#11088; &lsquo;I will not die, but live, and I will recount the deeds of Jah&rsquo; (<a href="psalms-118.html#v118-17">Psalm 118:17</a>, now on these pages).')
+_dict118_es("sapar", add=' &#11088; «No moriré, sino que viviré, y relataré las obras de Jah» (<a href="psalms-118.es.html#v118-17">Salmo 118:17</a>, ya en estas páginas).')
+_dict118_en("musar", add=' &#11088; &lsquo;Jah has disciplined me severely, but he has not given me over to death&rsquo; (<a href="psalms-118.html#v118-18">Psalm 118:18</a>, now on these pages), with the verb doubled.')
+_dict118_es("musar", add=' &#11088; «Jah me ha castigado con dureza, pero no me ha entregado a la muerte» (<a href="psalms-118.es.html#v118-18">Salmo 118:18</a>, ya en estas páginas), con el verbo duplicado.')
+_dict118_en("tsedeq", add=' &#11088; &lsquo;Open to me the gates of righteousness&rsquo; (<a href="psalms-118.html#v118-19">Psalm 118:19</a>, now on these pages).')
+_dict118_es("tsedeq", add=' &#11088; «Ábranme las puertas de la justicia» (<a href="psalms-118.es.html#v118-19">Salmo 118:19</a>, ya en estas páginas).')
+_dict118_en("qeren", add=' &#11088; &lsquo;Bind the festival with cords, up to the horns of the altar&rsquo; (<a href="psalms-118.html#v118-27">Psalm 118:27</a>, now on these pages).')
+_dict118_es("qeren", add=' &#11088; «Aten la fiesta con cuerdas, hasta los cuernos del altar» (<a href="psalms-118.es.html#v118-27">Salmo 118:27</a>, ya en estas páginas).')
+_dict118_en("mizbeach", add=' &#11088; <a href="psalms-118.html#v118-27">Psalm 118:27</a> (now on these pages) binds the festival offering &lsquo;up to the horns of the altar&rsquo;.')
+_dict118_es("mizbeach", add=' &#11088; <a href="psalms-118.es.html#v118-27">Salmo 118:27</a> (ya en estas páginas) ata la ofrenda de la fiesta «hasta los cuernos del altar».')
+_dict118_en("adam", add=' &#11088; &lsquo;What can a human do to me?&rsquo; asks <a href="psalms-118.html#v118-6">Psalm 118:6</a> (now on these pages), and verse 8 says it is better to take refuge in Jehovah than to trust in a human.')
+_dict118_es("adam", add=' &#11088; «¿Qué puede hacerme un ser humano?», pregunta el <a href="psalms-118.es.html#v118-6">Salmo 118:6</a> (ya en estas páginas), y el versículo 8 dice que es mejor refugiarse en Jehová que confiar en un ser humano.')
+_dict118_en("even", add=' &#11088; &lsquo;The stone the builders rejected has become the head of the corner&rsquo; (<a href="psalms-118.html#v118-22">Psalm 118:22</a>, now on these pages; <a href="dictionary.html#pinnah">pinnah</a>).')
+_dict118_es("even", add=' &#11088; «La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo» (<a href="psalms-118.es.html#v118-22">Salmo 118:22</a>, ya en estas páginas; <a href="diccionario.html#pinnah">pinná</a>).')
+_dict118_en("yah", add=' &#11088; <a href="psalms-118.html#v118-5">Psalm 118</a> (now on these pages) uses Jah in verses 5, 14, 17, 18 and 19, and the full name everywhere else.')
+_dict118_es("yah", add=' &#11088; El <a href="psalms-118.es.html#v118-5">Salmo 118</a> (ya en estas páginas) usa Jah en los versículos 5, 14, 17, 18 y 19, y el nombre completo en todo lo demás.')
+
+CHRON_CHAPTERS["psalms118"] = dict(era="monarchy",
+    when="&ldquo;Give thanks to Jehovah, for he is good&rdquo;: a thanksgiving liturgy with four voices, a rescue from the narrow place, a procession to the gate of righteousness, the stone the builders rejected, and a festival bound to the horns of the altar.",
+    clock="Undated: the psalm has no heading, no author and no occasion. The commentators divide on whether it is David&rsquo;s or Israel&rsquo;s out of exile, and it is filed here under the monarchy as an undated psalm, as Psalm 100 is.")
+
+CHAPTER_ART["psalms118"] = [dict(
+    file="dore-christs-entry-into-jerusalem.jpg",
+    title="Christ&rsquo;s Entry into Jerusalem", title_es="La entrada de Cristo en Jerusalén",
+    artist="Gustave Doré (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Oil sketch, via Commons", location_es="Boceto al óleo, vía Commons",
+    alt="A loosely painted oil sketch in pale greys, whites and greens. A dark robed figure seen from behind walks down the middle toward a tall arched gateway, with a white city small and bright in the sky beyond it. On both sides crowds in white robes press in and bow low, many of them stooping to the ground over a strip of green that may be branches. A few figures raise their arms, and ribbons and banners trail down from the top of the frame.",
+    alt_es="Un boceto al óleo pintado con soltura en grises claros, blancos y verdes. Una figura oscura con túnica, vista de espaldas, camina por el centro hacia una alta puerta en arco, con una ciudad blanca pequeña y luminosa en el cielo más allá. A ambos lados, multitudes con túnicas blancas se apiñan y se inclinan, muchos agachados hasta el suelo sobre una franja verde que quizá sean ramas. Algunas figuras alzan los brazos, y cintas y estandartes cuelgan desde lo alto del cuadro.",
+    note="Psalm 118:25&ndash;26. The crowd at Matthew 21:9 shouts &lsquo;Hosanna&rsquo; and &lsquo;Blessed is the one who comes in the name of Jehovah&rsquo;, which are these two verses. The sketch is Doré&rsquo;s of the entry into Jerusalem; the psalm itself says nothing of a city or a ride, and it names a procession to the horns of the altar.",
+    note_es="Salmo 118:25–26. La multitud de Mateo 21:9 grita «Hosanna» y «Bendito el que viene en el nombre de Jehová», que son estos dos versículos. El boceto es de Doré, de la entrada en Jerusalén; el salmo mismo no dice nada de una ciudad ni de una cabalgata, y nombra una procesión hasta los cuernos del altar.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Christ%27s_Entry_into_Jerusalem.jpg",
+)]
