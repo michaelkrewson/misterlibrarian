@@ -59841,3 +59841,123 @@ CHAPTER_ART["dan6"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions%27_Den_-_Google_Art_Project.jpg')]
 
+
+
+# Appended to library_data.py for Job 38 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('chatullah', 'chatullah', 'חֲתֻלָּה', 'chatullah', 'A SWADDLING BAND &mdash; the cloth a newborn is wrapped in. <span data-heb="ערפל חתלתו">&lsquo;Thick darkness its swaddling band&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-9">Job 38:9</a> (now on these pages), where the sea is a newborn with a cloud for its garment. &#9888; The shelf prints &lsquo;a swaddlingband&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;its swaddling band&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;wrapped it in thick darkness&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;swaddling bands&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 38, 9)))
+DICTIONARY.append(('kimah', 'kimah', 'כִּימָה', 'kimah', 'KIMAH &mdash; a star group, usually taken as the Pleiades. <span data-heb="מעדנות כימה">&lsquo;The bonds of the Pleiades&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-31">Job 38:31</a> (now on these pages), with <em>kesil</em>, Orion. &#9888; The shelf prints &lsquo;Pleiades&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>) and &lsquo;the Kimah constellation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Job', 38, 31)))
+DICTIONARY.append(('ayish', 'ayish', 'עַיִשׁ', 'ayish', 'AYISH &mdash; a star group with &lsquo;sons&rsquo;, taken as the Bear. <span data-heb="ועיש על בניה">&lsquo;And the Bear, with her sons&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-32">Job 38:32</a> (now on these pages). &#9888; The shelf prints &lsquo;Arcturus with his sons&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the Bear with its cubs&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the Ash constellation alongside its sons&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Job', 38, 32)))
+DICTIONARY.append(('mazzarot', 'mazzarot', 'מַזָּרוֹת', 'mazzarot', 'MAZZAROTH &mdash; a word for a group of stars or the circle of the zodiac, brought out &lsquo;in its season&rsquo;. <span data-heb="מזרות">The word stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-32">Job 38:32</a> (now on these pages). &#9888; The shelf prints &lsquo;Mazzaroth&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the constellations&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the Mazzaroth constellation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the day star&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 38, 32)))
+DICTIONARY.append(('tuchot', 'tuchot', 'טֻחוֹת', 'tuchot', 'THE INWARD PARTS &mdash; a rare word: <span data-heb-read="טחות">the consonants stand in two verses once the hits are read</span>, <a href="job-38.html#v38-36">Job 38:36</a> (now on these pages) and <a href="psalms-51.html#v51-8">Psalm 51:8</a>, &lsquo;you desire truth in the inward parts&rsquo;. &#9888; The shelf prints &lsquo;the inward parts&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the ibis&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the cloud layers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the heart of man&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;intuition and instinct&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Job', 38, 36)))
+DICTIONARY.append(('sekhvi', 'sekhvi', 'שֶׂכְוִי', 'sekhvi', 'SEKHVI &mdash; a word that stands in one verse of the Hebrew Bible and that nobody has been able to settle: the mind, the heart, a bird, a rooster. <span data-heb="שכוי">It stands in this one verse</span>, <a href="job-38.html#v38-36">Job 38:36</a> (now on these pages), the second of the two rare words of that verse. &#9888; The shelf prints &lsquo;the heart&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the rooster&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the sky phenomenon&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the cock&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;instinct&rsquo;.', ('Job', 38, 36)))
+DICTIONARY.append(('egel-drop', 'egel (drop)', 'אֶגֶל', 'egel', 'A DROP &mdash; a drop of dew. <span data-heb="אגלי טל">&lsquo;The drops of dew&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-28">Job 38:28</a> (now on these pages), the dew that has a father. &#9888; The shelf prints &lsquo;drops of dew&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the dewdrops&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;dew&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Job', 38, 28)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['chatullah'] = ('chatullah', 'UN PAÑAL, la tela en que se envuelve a un recién nacido. <span data-heb="ערפל חתלתו">&laquo;Densas tinieblas por su pañal&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-9">Job 38:9</a> (ya en estas páginas), donde el mar es un recién nacido con una nube por vestido. &#9888; El estante imprime &laquo;su faja&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;su pañal&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;lo envolví con densas tinieblas&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['kimah'] = ('kimah', 'KIMÁ &mdash; un grupo de estrellas, por lo común tomado por las Pléyades. <span data-heb="מעדנות כימה">&laquo;Los lazos de las Pléyades&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-31">Job 38:31</a> (ya en estas páginas), junto con <em>kesil</em>, Orión. &#9888; El estante imprime &laquo;Pléyades&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la constelación Kimá&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['ayish'] = ('ayish', 'AYISH &mdash; un grupo de estrellas con &laquo;hijos&raquo;, tomado por la Osa. <span data-heb="ועיש על בניה">&laquo;Y la Osa, con sus hijos&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-32">Job 38:32</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el Arcturo con sus hijos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;la Osa Mayor con sus hijos&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la Osa Mayor y la Menor&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;la constelación Ash al lado de sus hijos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['mazzarot'] = ('mazzarot', 'MAZZAROT &mdash; una palabra para un grupo de estrellas o el círculo del zodiaco, sacado &laquo;a su tiempo&raquo;. <span data-heb="מזרות">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-32">Job 38:32</a> (ya en estas páginas). &#9888; El estante imprime &laquo;los signos de los cielos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;las constelaciones&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la constelación Mazarot&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tuchot'] = ('tuchot', 'LO INTERIOR &mdash; una palabra rara: <span data-heb-read="טחות">las consonantes están en dos versículos una vez leídos los resultados</span>, <a href="job-38.es.html#v38-36">Job 38:36</a> (ya en estas páginas) y el <a href="psalms-51.es.html#v51-8">Salmo 51:8</a>, &laquo;tú quieres la verdad en lo íntimo&raquo;. &#9888; El estante imprime &laquo;en el interior&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;en el corazón&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;en las capas de las nubes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;dentro de las nubes&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['sekhvi'] = ('sekhvi', 'SEKHVI &mdash; una palabra que está en un versículo de la Biblia hebrea y que nadie ha podido fijar: la mente, el corazón, un ave, un gallo. <span data-heb="שכוי">Está en este único versículo</span>, <a href="job-38.es.html#v38-36">Job 38:36</a> (ya en estas páginas), la segunda de las dos palabras raras de ese versículo. &#9888; El estante imprime &laquo;la inteligencia&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;el espíritu&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la mente&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;el fenómeno celeste&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;los fenómenos celestes&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['egel-drop'] = ('egel', 'UNA GOTA &mdash; una gota de rocío. <span data-heb="אגלי טל">&laquo;Las gotas del rocío&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-28">Job 38:28</a> (ya en estas páginas), el rocío que tiene padre. &#9888; El estante imprime &laquo;las gotas del rocío&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;las gotas de rocío&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-1">Job 38:1</a> (now on these pages) has the storm written as one word and read as two, <em>minhas&rsquo;arah</em> and <em>min hase&rsquo;arah</em>, and <a href="job-38.html#v38-12">Job 38:12</a> has <em>yeda&rsquo;ta</em> written <em>yeda&rsquo;tah</em>.',) + _t[5:]
+    if _t[0] == 'otsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-22">Job 38:22</a> (now on these pages) has the storehouses of the snow and of the hail; <span data-heb="אוצרות ברד">&lsquo;the storehouses of hail&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-13">Job 38:13</a> (now on these pages) has <span data-heb="בכנפות הארץ">&lsquo;the edges of the earth&rsquo;, which stands in this one verse</span>, the dawn taking hold of them to shake the wicked out.',) + _t[5:]
+    if _t[0] == 'pinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-6">Job 38:6</a> (now on these pages) has <span data-heb="אבן פנתה">&lsquo;its cornerstone&rsquo;, which stands in this one verse</span>, the stone of the foundation of the earth.',) + _t[5:]
+    if _t[0] == 'shachar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-12">Job 38:12</a> (now on these pages) asks Job whether he has made the dawn know its place: <span data-heb="ידעת השחר מקמו">&lsquo;the dawn its place&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tehom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-16">Job 38:16</a> (now on these pages) has <span data-heb="חקר תהום">&lsquo;the search of the deep&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tsalmavet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-17">Job 38:17</a> (now on these pages) has <span data-heb="שערי צלמות">&lsquo;the gates of deep darkness&rsquo;, which stands in this one verse</span>, beside the gates of death.',) + _t[5:]
+    if _t[0] == 'chuqqah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-33">Job 38:33</a> (now on these pages) has <span data-heb="חקות שמים">&lsquo;the statutes of heaven&rsquo;, which stands in two verses</span>, this one and Jeremiah 33:25.',) + _t[5:]
+    if _t[0] == 'barad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-22">Job 38:22</a> (now on these pages) has the storehouses of the hail, kept &lsquo;for a day of battle and war&rsquo; (<a href="job-38.html#v38-23">verse 23</a>).',) + _t[5:]
+    if _t[0] == 'lavi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-39">Job 38:39</a> (now on these pages) has <span data-heb="ללביא טרף">&lsquo;prey for the lioness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-1">Job 38:1</a> (ya en estas páginas) tiene la tempestad escrita como una palabra y leída como dos, <em>minhas&rsquo;arah</em> y <em>min hase&rsquo;arah</em>, y <a href="job-38.es.html#v38-12">Job 38:12</a> tiene <em>yeda&rsquo;ta</em> escrito <em>yeda&rsquo;tah</em>.')
+if 'otsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['otsar']
+    DICTIONARY_ES['otsar'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-22">Job 38:22</a> (ya en estas páginas) tiene los almacenes de la nieve y del granizo; <span data-heb="אוצרות ברד">&laquo;los almacenes del granizo&raquo; está en este único versículo</span>.')
+if 'kanaf' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kanaf']
+    DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-13">Job 38:13</a> (ya en estas páginas) tiene <span data-heb="בכנפות הארץ">&laquo;los bordes de la tierra&raquo;, que está en este único versículo</span>, el alba tomándolos para sacudir de ellos a los impíos.')
+if 'pinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pinnah']
+    DICTIONARY_ES['pinnah'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-6">Job 38:6</a> (ya en estas páginas) tiene <span data-heb="אבן פנתה">&laquo;su piedra angular&raquo;, que está en este único versículo</span>, la piedra del cimiento de la tierra.')
+if 'shachar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shachar']
+    DICTIONARY_ES['shachar'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-12">Job 38:12</a> (ya en estas páginas) pregunta a Job si ha hecho conocer al alba su lugar: <span data-heb="ידעת השחר מקמו">&laquo;al alba su lugar&raquo; está en este único versículo</span>.')
+if 'tehom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehom']
+    DICTIONARY_ES['tehom'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-16">Job 38:16</a> (ya en estas páginas) tiene <span data-heb="חקר תהום">&laquo;la búsqueda del abismo&raquo;, que está en este único versículo</span>.')
+if 'tsalmavet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsalmavet']
+    DICTIONARY_ES['tsalmavet'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-17">Job 38:17</a> (ya en estas páginas) tiene <span data-heb="שערי צלמות">&laquo;las puertas de la oscuridad profunda&raquo;, que está en este único versículo</span>, junto a las puertas de la muerte.')
+if 'chuqqah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chuqqah']
+    DICTIONARY_ES['chuqqah'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-33">Job 38:33</a> (ya en estas páginas) tiene <span data-heb="חקות שמים">&laquo;los estatutos de los cielos&raquo;, que está en dos versículos</span>, este y Jeremías 33:25.')
+if 'barad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['barad']
+    DICTIONARY_ES['barad'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-22">Job 38:22</a> (ya en estas páginas) tiene los almacenes del granizo, guardados &laquo;para el día de batalla y de guerra&raquo; (<a href="job-38.es.html#v38-23">versículo 23</a>).')
+if 'lavi' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['lavi']
+    DICTIONARY_ES['lavi'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-39">Job 38:39</a> (ya en estas páginas) tiene <span data-heb="ללביא טרף">&laquo;presa para la leona&raquo;, que está en este único versículo</span>.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'searah':
+        assert '(Job 38:1, not yet on these pages)' in _t[4], 'searah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Job 38:1, not yet on these pages)', '(<a href="job-38.html#v38-1">Job 38:1</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['searah']
+assert '(Job 38:1, todavía no en estas páginas)' in _d[1], 'searah'
+DICTIONARY_ES['searah'] = (_d[0], _d[1].replace('(Job 38:1, todavía no en estas páginas)', '(<a href="job-38.es.html#v38-1">Job 38:1</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Job', 38, 1), ('2 Kings', 2, 1), 'out of the storm — the wind that takes Elijah, and the voice that answers Job'),
+    (('Job', 38, 6), ('Psalms', 118, 22), 'the cornerstone — laid at the founding of the earth, rejected and made the head'),
+    (('Job', 38, 7), ('Job', 1, 6), 'the sons of God — before Jehovah in heaven, and shouting at the foundation'),
+    (('Job', 38, 7), ('Genesis', 6, 2), 'the sons of God'),
+    (('Job', 38, 8), ('Genesis', 1, 9), 'the waters gathered — the sea shut in with doors'),
+    (('Job', 38, 12), ('Psalms', 63, 2), 'the dawn — sought, and commanded'),
+    (('Job', 38, 17), ('Psalms', 23, 4), 'deep darkness — the gates of it, and the valley of it'),
+    (('Job', 38, 23), ('Exodus', 9, 23), 'hail held for a day of war — the plague of Egypt'),
+    (('Job', 38, 23), ('Joshua', 10, 11), 'hail held for a day of war — Gibeon'),
+    (('Job', 38, 33), ('Jeremiah', 31, 35), 'the statutes of the moon and stars — the order that is not set aside'),
+    (('Job', 38, 36), ('Psalms', 51, 8), 'the inward parts — wisdom, and truth'),
+    (('Job', 38, 41), ('Luke', 12, 24), 'consider the ravens — God feeds them'),
+    (('Job', 38, 41), ('1 Kings', 17, 6), 'the ravens that fed Elijah'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["job38"] = dict(era='patriarchs',
+    when='Jehovah answers Job out of the storm: who darkens counsel with words without knowledge; where was Job when the earth was founded, its cornerstone laid, and the morning stars sang; who shut the sea with doors and said thus far; has Job commanded the morning, entered the springs of the sea and the gates of death, seen the storehouses of snow and hail; has the rain a father, can he bind the Pleiades and loosen Orion, send the lightnings, tip the water-skins of heaven; and who hunts for the lioness and prepares food for the raven.',
+    clock='Undated. The book gives no date and names no king; the answer from the storm is the book&rsquo;s own turning point, after the three friends and Elihu have spoken, and it takes the questions of the earlier chapters and answers none of them directly. &#9888; The speech is addressed to Job alone, and Job&rsquo;s reply is in 40:3&ndash;5 and 42:1&ndash;6, not on this page.')
+
+CHAPTER_ART["job38"] = [dict(
+    file='blake-job-14-morning-stars.jpg',
+    title='When the Morning Stars Sang Together', title_es='Cuando cantaban juntas las estrellas de la mañana',
+    artist='William Blake', artist_es='William Blake',
+    year='1825', location='Illustrations of the Book of Job, plate 14 (Yale Center for British Art)', location_es='Ilustraciones del libro de Job, lámina 14 (Yale Center for British Art)',
+    alt='A framed black-and-white engraving. In the centre panel four winged angels stand in a row at the top with their arms raised, among stars; below them a seated bearded figure with a halo stretches out both arms, with a winged horse and a winged youth on one side and a coiled serpent and a crescent moon on the other; beneath the cloud a woman and four bearded men kneel and look up. Margins carry small scenes of the first days of creation and the captions &lsquo;When the morning Stars sang together, &amp; all the Sons of God shouted for joy&rsquo; and &lsquo;Canst thou bind the sweet influences of Pleiades or loose the bands of Orion&rsquo;.',
+    alt_es='Un grabado enmarcado en blanco y negro. En el panel central cuatro ángeles alados están en fila arriba con los brazos levantados, entre estrellas; debajo de ellos una figura barbada sentada con un halo extiende los dos brazos, con un caballo alado y un joven alado a un lado y una serpiente enroscada y una luna creciente al otro; bajo la nube una mujer y cuatro hombres barbados están arrodillados y miran hacia arriba. Los márgenes llevan pequeñas escenas de los primeros días de la creación y los textos &lsquo;When the morning Stars sang together, &amp; all the Sons of God shouted for joy&rsquo; y &lsquo;Canst thou bind the sweet influences of Pleiades or loose the bands of Orion&rsquo;.',
+    note='Job 38:7 and 38:31. Blake draws the verse he prints at the foot: the morning stars as four angels with raised arms, Jehovah above and Job, his wife and the three friends in the cave below. The margins also carry the captions of the days of creation, and the Pleiades and Orion line across the top; none of these is in the Hebrew of the verse, which says only that the stars sang and the sons of God shouted.',
+    note_es='Job 38:7 y 38:31. Blake dibuja el versículo que imprime al pie: las estrellas de la mañana como cuatro ángeles con los brazos levantados, Jehová arriba y Job, su mujer y los tres amigos en la cueva de abajo. Los márgenes llevan también los textos de los días de la creación, y las Pléyades y Orión en la línea de arriba; nada de esto está en el hebreo del versículo, que solo dice que cantaban las estrellas y gritaban los hijos de Dios.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_14,_When_the_Morning_Stars_Sang_Together_-_B1978.43.1516_-_Yale_Center_for_British_Art.jpg')]
+
