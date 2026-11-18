@@ -60100,3 +60100,102 @@ CHAPTER_ART["isa11"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Edward_Hicks,_Peaceable_Kingdom,_c._1834,_NGA_59908.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 138 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('gamar', 'gamar', 'גָּמַר', 'gamar', 'TO COMPLETE, to bring to an end &mdash; <span data-heb="יגמר בעדי">&lsquo;Jehovah will complete [it] for me&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-8">Psalm 138:8</a> (now on these pages). &#9888; The shelf prints &lsquo;will perfect&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;will complete&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;will vindicate&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;will perform his work&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;will work out his plans&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;will repay&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 138, 8)))
+DICTIONARY.append(('rahav', 'rahav', 'רָהַב', 'tarhiveni', 'TO MAKE BOLD &mdash; the verb of <em>tarhiveni</em>: <span data-heb="תרהבני">&lsquo;you made me bold&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-3">Psalm 138:3</a> (now on these pages), a rare verb of pressing forward. &#9888; The shelf prints &lsquo;you greatly emboldened me&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;encourage&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;strengthenedst&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;hast increased strength&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;make me bold&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 138, 3)))
+DICTIONARY.append(('shafal', 'shafal', 'שָׁפָל', 'shafal', 'LOW, lowly &mdash; the one Jehovah sees: <span data-heb="רם יהוה ושפל יראה">&lsquo;Jehovah is high, and he sees the lowly&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-6">Psalm 138:6</a> (now on these pages). &#9888; The shelf prints &lsquo;the lowly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the humble one&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the low&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 138, 6)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['gamar'] = ('gamar', 'COMPLETAR, llevar a su fin &mdash; <span data-heb="יגמר בעדי">&laquo;Jehová completará [esto] por mí&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-8">Salmo 138:8</a> (ya en estas páginas). &#9888; El estante imprime &laquo;cumplirá su propósito&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;completará lo que es a mi favor&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['rahav'] = ('tarhiveni', 'HACER OSADO &mdash; el verbo de <em>tarhiveni</em>: <span data-heb="תרהבני">&laquo;me hiciste osado&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-3">Salmo 138:3</a> (ya en estas páginas), un verbo raro de avanzar con empuje. &#9888; El estante imprime &laquo;me fortaleciste con vigor&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;me infundiste ánimo&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;hacerme denodado&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['shafal'] = ('shafal', 'BAJO, humilde &mdash; el que Jehová ve: <span data-heb="רם יהוה ושפל יראה">&laquo;Jehová es excelso, y ve al humilde&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-6">Salmo 138:6</a> (ya en estas páginas). &#9888; El estante imprime &laquo;al humilde&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has <span data-heb="על חסדך ועל אמתך">&lsquo;for your steadfast love and for your truth&rsquo;, which stands in this one verse</span>, and <a href="psalms-138.html#v138-8">verse 8</a> has <span data-heb="חסדך לעולם">&lsquo;your steadfast love is forever&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) tiene <span data-heb="על חסדך ועל אמתך">&laquo;por tu misericordia y por tu verdad&raquo;, que está en este único versículo</span>, y <a href="psalms-138.es.html#v138-8">el versículo 8</a> tiene <span data-heb="חסדך לעולם">&laquo;tu misericordia es para siempre&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) pairs it with <em>chesed</em>: &lsquo;for your steadfast love and for your truth&rsquo;.',) + _t[5:]
+if 'emet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emet']
+    DICTIONARY_ES['emet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) lo empareja con <em>chesed</em>: &laquo;por tu misericordia y por tu verdad&raquo;.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'raphah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-8">Psalm 138:8</a> (now on these pages) has <span data-heb="מעשי ידיך אל תרף">&lsquo;do not let go of the works of your hands&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'raphah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['raphah']
+    DICTIONARY_ES['raphah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-8">Salmo 138:8</a> (ya en estas páginas) tiene <span data-heb="מעשי ידיך אל תרף">&laquo;no sueltes las obras de tus manos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-7">Psalm 138:7</a> (now on these pages) has <span data-heb="אלך בקרב צרה">&lsquo;if I walk in the midst of trouble&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tsarah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsarah']
+    DICTIONARY_ES['tsarah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-7">Salmo 138:7</a> (ya en estas páginas) tiene <span data-heb="אלך בקרב צרה">&laquo;si ando en medio de la angustia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hekhal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has <span data-heb="אשתחוה אל היכל קדשך">&lsquo;I will bow down toward your holy temple&rsquo;, which stands in two verses</span>, here and Psalm 5:8 (not yet on these pages).',) + _t[5:]
+if 'hekhal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hekhal']
+    DICTIONARY_ES['hekhal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) tiene <span data-heb="אשתחוה אל היכל קדשך">&laquo;me postraré hacia tu santo templo&raquo;, que está en dos versículos</span>, este y Salmo 5:8 (todavía no en estas páginas).')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yadah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-1">Psalm 138:1</a> and <a href="psalms-138.html#v138-4">verse 4</a> (now on these pages) have the verb twice: the psalmist gives thanks in front of gods, and the kings of the earth give thanks when they hear.',) + _t[5:]
+if 'yadah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yadah']
+    DICTIONARY_ES['yadah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-1">Salmo 138:1</a> y <a href="psalms-138.es.html#v138-4">el versículo 4</a> (ya en estas páginas) tienen el verbo dos veces: el salmista da gracias delante de los dioses, y los reyes de la tierra dan gracias cuando oyen.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hishtachavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has it toward the holy temple.',) + _t[5:]
+if 'hishtachavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hishtachavah']
+    DICTIONARY_ES['hishtachavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) lo tiene hacia el santo templo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'af':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-7">Psalm 138:7</a> (now on these pages) has <em>al af oyevai</em>, &lsquo;against the anger of my enemies&rsquo;.',) + _t[5:]
+if 'af' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['af']
+    DICTIONARY_ES['af'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-7">Salmo 138:7</a> (ya en estas páginas) tiene <em>al af oyevai</em>, &laquo;contra la ira de mis enemigos&raquo;.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 138, 1), ('Psalms', 119, 46), 'in front of — gods here, kings there'),
+    (('Psalms', 138, 1), ('Psalms', 119, 10), 'with all my heart'),
+    (('Psalms', 138, 2), ('1 Kings', 8, 30), 'prayer toward the house'),
+    (('Psalms', 138, 2), ('Daniel', 6, 11), 'bowing toward Jerusalem'),
+    (('Psalms', 138, 2), ('Exodus', 34, 6), 'steadfast love and truth'),
+    (('Psalms', 138, 5), ('Psalms', 103, 7), 'the ways of Jehovah'),
+    (('Psalms', 138, 6), ('Proverbs', 3, 34), 'the high who sees the lowly'),
+    (('Psalms', 138, 6), ('James', 4, 6), 'the humble'),
+    (('Psalms', 138, 7), ('Psalms', 23, 4), 'walking in the midst of trouble'),
+    (('Psalms', 138, 7), ('Exodus', 15, 6), 'your right hand'),
+    (('Psalms', 138, 8), ('Psalms', 118, 1), 'his steadfast love is forever'),
+    (('Psalms', 138, 8), ('Psalms', 8, 7), 'the works of your hands'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms138"] = dict(era='monarchy',
+    when='A psalm headed &ldquo;of David&rdquo;: thanks with all the heart in front of gods, a bow toward the holy temple for steadfast love and truth, the word magnified above the name; the day of calling answered with boldness; the kings of the earth giving thanks; the high Jehovah who sees the lowly; and, in the midst of trouble, a hand stretched out, a right hand that saves, and a prayer not to be let go of the works of his hands.',
+    clock='Undated. The heading names David and nothing else: no occasion, no king, no battle. &#9888; The psalm speaks of a holy temple (<em>hekhal</em>), which the heading does not place in time, so this page sets it among the monarchy by the name of David and says no more.')
+
+CHAPTER_ART["psalms138"] = [dict(
+    file='paris-psalter-david-composing.jpg',
+    title='David Composing the Psalms (Paris Psalter, folio 1v)', title_es='David componiendo los salmos (Salterio de París, folio 1v)',
+    artist='Byzantine illuminator, Constantinople', artist_es='Iluminador bizantino, Constantinopla',
+    year='c. 960', location='Bibliothèque nationale de France, MS gr. 139', location_es='Biblioteca Nacional de Francia, MS gr. 139',
+    alt='A framed Byzantine miniature in blue, gold and red. In the centre a young man in a white tunic and red cloak sits on a rock playing a small box-like lyre, with a woman in a red headband and blue skirt seated beside him with a hand on his shoulder. Around them sheep, goats and a brown dog graze or sit; at the lower right a reclining man in a green cloth with a leaf crown leans on a rock, and at the upper right a woman looks out from behind a column wrapped with a red ribbon. Greek letters mark the figures, and a blue city sits at the upper left.',
+    alt_es='Una miniatura bizantina enmarcada en azul, oro y rojo. En el centro un joven con túnica blanca y manto rojo está sentado en una roca tocando una pequeña lira en forma de caja, con una mujer de cinta roja en el cabello y falda azul sentada a su lado con una mano en su hombro. A su alrededor ovejas, cabras y un perro pardo pacen o están sentados; abajo a la derecha un hombre reclinado con un paño verde y corona de hojas se apoya en una roca, y arriba a la derecha una mujer asoma tras una columna envuelta con una cinta roja. Letras griegas marcan las figuras y una ciudad azul aparece arriba a la izquierda.',
+    note='The whole psalter heads with David, and this page is its frontispiece: a shepherd-poet with a lyre, the allegorical figure of Melody at his shoulder, Echo behind the column, and the mountain of Bethlehem as the reclining figure at the lower right. The Hebrew of Psalm 138 gives the heading &ldquo;of David&rdquo; and no scene; the miniature is a tenth-century picture of the idea of David singing, not of this psalm.',
+    note_es='El salterio entero empieza con David, y esta página es su frontispicio: un pastor-poeta con una lira, la figura alegórica de la Melodía a su hombro, Eco tras la columna, y el monte de Belén como la figura reclinada abajo a la derecha. El hebreo del Salmo 138 da el encabezado &laquo;de David&raquo; y ninguna escena; la miniatura es una imagen del siglo X de la idea de David cantando, no de este salmo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Psautier_de_Paris,_MSS._gr._139,_fol._1v.jpg')]
+
