@@ -59568,3 +59568,104 @@ CHAPTER_ART["psalms63"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Scapegoat.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 42 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('afiq', 'afiq', 'אָפִיק', 'afiq', 'A STREAM, a watercourse &mdash; a channel with water in it, or the bed that holds it. <span data-heb="אפיקי מים">&lsquo;Streams of water&rsquo; stands in four verses of the Hebrew Bible</span>: <a href="joel-1.html#v20">Joel 1:20</a> (now on these pages), Psalm 18:16, <a href="psalms-42.html#v42-2">Psalm 42:2</a> (now on these pages) and Song of Solomon 5:12. &#11088; In Joel the streams have dried up and the beasts pant; in the psalm the deer pants for them (<a href="dictionary.html#taarog">ta&rsquo;arog</a>). &#9888; The shelf prints &lsquo;water brooks&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;streams of water&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the water streams&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;fountains of water&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, only &lsquo;water&rsquo;.', ('Psalms', 42, 2)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['afiq'] = ('afiq', 'UNA CORRIENTE, un cauce &mdash; un canal con agua, o el lecho que la contiene. <span data-heb="אפיקי מים">&laquo;Corrientes de agua&raquo; está en cuatro versículos de la Biblia hebrea</span>: <a href="joel-1.es.html#v20">Joel 1:20</a> (ya en estas páginas), Salmo 18:16, <a href="psalms-42.es.html#v42-2">Salmo 42:2</a> (ya en estas páginas) y Cantares 5:12. &#11088; En Joel las corrientes se han secado y las bestias jadean; en el salmo el ciervo jadea por ellas (<a href="diccionario.html#taarog">ta&rsquo;arog</a>). &#9888; El estante imprime &laquo;las corrientes de las aguas&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;las corrientes de agua&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- Spanish twin for the existing taarog entry
+DICTIONARY_ES['taarog'] = ("ta'arog", 'ANHELAR, jadear &mdash; un verbo raro que está solo TRES veces en la Biblia hebrea: dos en el Salmo 42:2, en una de las líneas más conocidas de la escritura, &laquo;como el ciervo JADEA por las corrientes de agua, así mi alma jadea por ti, Dios&raquo;, y una en Joel 1:20, donde son las bestias del campo las que jadean ante cauces secos. La palabra es de la garganta: el ciervo sediento y el alma sedienta hacen el mismo sonido.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'taarog':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-2">Psalm 42:2</a> (now on these pages) is the verse that gives the verb its fame, and <span data-heb="תערג">the form stands in this one verse</span>, twice; Joel 1:20 has it once, with a <em>vav</em>, of the beasts at a dry streambed (<a href="dictionary.html#afiq">afiq</a>).',) + _t[5:]
+    if _t[0] == 'el-chai':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-3">Psalm 42:3</a> (now on these pages) has the soul thirst for it: <span data-heb="צמאה נפשי לאלהים">&lsquo;my soul thirsts for God&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tehom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) has deep call to deep: <span data-heb="תהום אל תהום קורא">&lsquo;deep calls to deep&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-6">Psalm 42:6</a> (now on these pages) is the soul addressed by the psalmist, &lsquo;why are you bowed down, my soul?&rsquo;, said three times in Psalms 42&ndash;43.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-9">Psalm 42:9</a> (now on these pages) has <span data-heb="יצוה יהוה חסדו">&lsquo;Jehovah commands his steadfast love&rsquo;, which stands in this one verse</span>, by day, with his song by night.',) + _t[5:]
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-10">Psalm 42:10</a> (now on these pages) is the rock the psalmist addresses: <span data-heb="לאל סלעי">&lsquo;to God my rock&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tsinnor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) is the verse of the water-pipes: <span data-heb="צנוריך">&lsquo;your cataracts&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'gal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) has <span data-heb="כל משבריך וגליך עלי עברו">&lsquo;all your breakers and your waves have passed over me&rsquo;, which stands in two verses</span>, this one and Jonah 2:4.',) + _t[5:]
+_d = DICTIONARY_ES['taarog']
+DICTIONARY_ES['taarog'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-2">Salmo 42:2</a> (ya en estas páginas) es el versículo que da al verbo su fama, y <span data-heb="תערג">la forma está en este único versículo</span>, dos veces; Joel 1:20 la tiene una vez, con <em>vav</em>, de las bestias ante un cauce seco (<a href="diccionario.html#afiq">afiq</a>).')
+_d = DICTIONARY_ES['el-chai']
+DICTIONARY_ES['el-chai'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-3">Salmo 42:3</a> (ya en estas páginas) hace que el alma tenga sed de él: <span data-heb="צמאה נפשי לאלהים">&laquo;mi alma tiene sed de Dios&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['tehom']
+DICTIONARY_ES['tehom'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) tiene a un abismo llamando a otro: <span data-heb="תהום אל תהום קורא">&laquo;un abismo llama a otro abismo&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nefesh']
+DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-6">Salmo 42:6</a> (ya en estas páginas) es el alma a la que habla el salmista, &laquo;¿por qué estás abatida, alma mía?&raquo;, dicho tres veces en los Salmos 42&ndash;43.')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-9">Salmo 42:9</a> (ya en estas páginas) tiene <span data-heb="יצוה יהוה חסדו">&laquo;Jehová manda su amor leal&raquo;, que está en este único versículo</span>, de día, con su canción de noche.')
+_d = DICTIONARY_ES['sela']
+DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-10">Salmo 42:10</a> (ya en estas páginas) es la roca a la que habla el salmista: <span data-heb="לאל סלעי">&laquo;a Dios, mi roca&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['tsinnor']
+DICTIONARY_ES['tsinnor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) es el versículo de los canales: <span data-heb="צנוריך">&laquo;tus cataratas&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['gal']
+DICTIONARY_ES['gal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) tiene <span data-heb="כל משבריך וגליך עלי עברו">&laquo;todas tus rompientes y tus olas han pasado sobre mí&raquo;, que está en dos versículos</span>, este y Jonás 2:4.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'el-chai':
+        assert 'and Psalms 42:3 and 84:3, the soul' in _t[4], 'el-chai'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('and Psalms 42:3 and 84:3, the soul', 'and <a href="psalms-42.html#v42-3">Psalm 42:3</a> (now on these pages) and Psalm 84:3, the soul'),) + _t[5:]
+_d = DICTIONARY_ES['el-chai']
+assert 'y los Salmos 42:3 y 84:3, el alma' in _d[1], 'el-chai'
+DICTIONARY_ES['el-chai'] = (_d[0], _d[1].replace('y los Salmos 42:3 y 84:3, el alma', 'y el <a href="psalms-42.es.html#v42-3">Salmo 42:3</a> (ya en estas páginas) y el Salmo 84:3, el alma'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsinnor':
+        assert '(Psalm 42:8, not yet on these pages)' in _t[4], 'tsinnor'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Psalm 42:8, not yet on these pages)', '(<a href="psalms-42.html#v42-8">Psalm 42:8</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['tsinnor']
+assert '(Salmo 42:8, todavía no en estas páginas)' in _d[1], 'tsinnor'
+DICTIONARY_ES['tsinnor'] = (_d[0], _d[1].replace('(Salmo 42:8, todavía no en estas páginas)', '(<a href="psalms-42.es.html#v42-8">Salmo 42:8</a>, ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gal':
+        assert '(Jonah 2:4; Psalm 42:8, neither yet on these pages)' in _t[4], 'gal'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Jonah 2:4; Psalm 42:8, neither yet on these pages)', '(Jonah 2:4, not yet on these pages; <a href="psalms-42.html#v42-8">Psalm 42:8</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['gal']
+assert '(Jonás 2:4; Salmo 42:8, ninguno todavía en estas páginas)' in _d[1], 'gal'
+DICTIONARY_ES['gal'] = (_d[0], _d[1].replace('(Jonás 2:4; Salmo 42:8, ninguno todavía en estas páginas)', '(Jonás 2:4, todavía no en estas páginas; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 42, 2), ('Joel', 1, 20), 'the verb that pants — the deer at the streams, the beasts at the dry streams'),
+    (('Psalms', 42, 3), ('Psalms', 63, 2), 'my soul thirsts — the same soul, in the same wilderness of longing'),
+    (('Psalms', 42, 4), ('Jeremiah', 2, 28), 'where is your God? — asked of the psalmist, and of the idols'),
+    (('Psalms', 42, 5), ('1 Samuel', 1, 15), 'I will pour out my soul — Hannah at Shiloh, the psalmist in memory of the festival'),
+    (('Psalms', 42, 8), ('Genesis', 1, 2), 'the deep — tehom, calling'),
+    (('Psalms', 42, 8), ('2 Samuel', 5, 8), 'tsinnor — the water-pipe word'),
+    (('Psalms', 42, 8), ('Psalms', 130, 1), 'out of the depths — a different word for deep'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms42"] = dict(era='monarchy',
+    when='A maskil of the sons of Korah: a soul that pants for God like a deer for streams of water, thirsts for the living God and asks when it will see his face; tears for bread, and the taunt &ldquo;Where is your God?&rdquo;; the memory of going to the house of God in the festival throng; a soul addressed and bidden to wait for God; remembering him from the land of Jordan and the Hermons while deep calls to deep and the waves pass over; Jehovah commands his steadfast love by day and his song is with me by night; and the question and the refrain again.',
+    clock='Undated. The heading names the sons of Korah, the temple singers, and no occasion; the speaker is far from the house of God, in the north near Jordan and Hermon, which is as much as the psalm says of where. &#9888; Psalm 43 carries the same refrain a third time and has no heading of its own, so some readers take the two as one poem.')
+
+CHAPTER_ART["psalms42"] = [dict(
+    file='landseer-monarch-of-the-glen.jpg',
+    title='The Monarch of the Glen', title_es='El monarca del valle',
+    artist='Edwin Landseer', artist_es='Edwin Landseer',
+    year='1851', location='Scottish Government Art Collection (on loan to the National Galleries of Scotland)', location_es='Colección de Arte del Gobierno Escocés (en préstamo a las Galerías Nacionales de Escocia)',
+    alt='An oil painting of a large red deer stag standing on a heathery crest with his head raised and a huge pair of antlers, in front of misty blue-grey mountains and low cloud.',
+    alt_es='Un óleo de un gran ciervo rojo de pie en una cresta de brezo con la cabeza levantada y una enorme cornamenta, frente a montañas brumosas de azul grisáceo y nubes bajas.',
+    note='Psalm 42. Landseer&rsquo;s stag is a Scottish red deer in Highland mist, not a deer in the Hebrew hills, and he is standing, not thirsting; the painting shows the animal of the first verse, <em>ayyal</em>, at his height and with no water in sight. It is here for the animal and for the mountain air of the psalm&rsquo;s Hermon.',
+    note_es='Salmo 42. El ciervo de Landseer es un ciervo rojo escocés en la niebla de las tierras altas, no un ciervo de los montes hebreos, y está de pie, no sediento; el cuadro muestra al animal del primer versículo, <em>ayyal</em>, en su plenitud y sin agua a la vista. Está aquí por el animal y por el aire de montaña del Hermón del salmo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:The_Monarch_of_the_Glen,_Edwin_Landseer,_1851.png')]
+
