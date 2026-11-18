@@ -59186,3 +59186,121 @@ CHAPTER_ART["psalms130"] = [dict(
     note_es='Salmo 130. La figura de Friedrich está sola al borde de un mar más oscuro que el cielo, y no hace otra cosa que mirarlo; no es una escena del salmo, y el cuadro no trata de la oración de un monje de la Biblia. Lo que comparte con el salmo es el tamaño de la espera: las profundidades de un lado, y sobre ellas una mañana que todavía no llega.',
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg')]
+
+
+# Appended to library_data.py for 2 Chronicles 7 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('rapha', 'rapha', 'רָפָא', 'rapha', 'TO HEAL &mdash; to mend what is broken, said of a wound, a body, a people and a land. In <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) Jehovah promises, &lsquo;I will heal their land&rsquo;: <span data-heb="וארפא את ארצם">the line stands in this one verse of the Hebrew Bible</span>, and what is healed is the land, <em>artzam</em>, &lsquo;their land&rsquo;, not the people. &#11088; The verb comes after the forgiving of the sin, and the ground it names is the same one verse 20 has Jehovah plucking them from. &#9888; Seven versions print &lsquo;heal their land&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-tlb">TLB</span>). The name <em>Rephaim</em>, the shades, is spelled with the same three consonants and is a different word (see <a href="dictionary.html#rephaim-shades">rephaim</a>).', ('2 Chronicles', 7, 14)))
+DICTIONARY.append(('sheninah', 'sheninah', 'שְׁנִינָה', 'sheninah', 'A BYWORD &mdash; a sharp saying, from the root &lsquo;to sharpen&rsquo;: the thing people say about you, with an edge. <span data-heb="שנינה">It stands in four verses of the Hebrew Bible</span>: <a href="deuteronomy-28.html#v28-37">Deuteronomy 28:37</a>, <a href="1-kings-9.html#v9-7">1 Kings 9:7</a>, <a href="jeremiah-24.html#v24-9">Jeremiah 24:9</a> (all now on these pages) and <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages). &#11088; Three of the four set it beside <em>mashal</em>, &lsquo;a proverb&rsquo;, in the pair <span data-heb="למשל ולשנינה">&lsquo;a proverb and a byword&rsquo;, which stands in three verses</span>: Deuteronomy, Kings and Chronicles. &#9888; The shelf prints &lsquo;a proverb and a byword&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a byword and an object of ridicule&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a proverbial saying and a taunt&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a byword, and an example&rsquo; (<span class="tag t-drb">Douay</span>).', ('2 Chronicles', 7, 20)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['rapha'] = ('rapha', 'SANAR &mdash; remediar lo roto, dicho de una herida, un cuerpo, un pueblo y una tierra. En <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) Jehová promete, &laquo;sanaré su tierra&raquo;: <span data-heb="וארפא את ארצם">la línea está en este único versículo de la Biblia hebrea</span>, y lo que se sana es la tierra, <em>artzam</em>, &laquo;su tierra&raquo;, no el pueblo. &#11088; El verbo viene después del perdón del pecado, y el suelo que nombra es el mismo del que el versículo 20 tiene a Jehová arrancándolos. &#9888; Cuatro de las cinco imprimen &laquo;sanaré su tierra&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y la <span class="tag t-nvi">NVI</span> dice &laquo;restauraré su tierra&raquo;. El nombre <em>Refaím</em>, las sombras, se escribe con las mismas tres consonantes y es otra palabra (véase <a href="diccionario.html#rephaim-shades">refaím</a>).')
+DICTIONARY_ES['sheninah'] = ('sheninah', 'UN REFRÁN &mdash; un dicho cortante, de la raíz &laquo;afilar&raquo;: lo que la gente dice de ti, con filo. <span data-heb="שנינה">Está en cuatro versículos de la Biblia hebrea</span>: <a href="deuteronomy-28.es.html#v28-37">Deuteronomio 28:37</a>, <a href="1-kings-9.es.html#v9-7">1 Reyes 9:7</a>, <a href="jeremiah-24.es.html#v24-9">Jeremías 24:9</a> (todos ya en estas páginas) y <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas). &#11088; Tres de los cuatro la ponen junto a <em>mashal</em>, &laquo;proverbio&raquo;, en el par <span data-heb="למשל ולשנינה">&laquo;proverbio y refrán&raquo;, que está en tres versículos</span>: Deuteronomio, Reyes y Crónicas. &#9888; El estante imprime &laquo;proverbio y fábula&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;burla y escarnio&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;objeto de burla&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;un dicho proverbial y escarnio&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;objeto de desprecio y motivo de burla&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kana':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) is the verse people know it from, &lsquo;if my people &hellip; humble themselves&rsquo;. <span data-heb="ויכנעו">The form <em>vayikkane&rsquo;u</em> stands in seven verses of the Hebrew Bible</span>: in two of them people humble themselves (that one and 2 Chronicles 12:6, not yet on these pages) and in the other five a people is subdued (Judges 11:33, 1 Samuel 7:13, 1 Chronicles 20:4, 2 Chronicles 13:18 and Psalm 106:42).',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-3">2 Chronicles 7:3</a> and <a href="2-chronicles-7.html#v7-6">7:6</a> (now on these pages) carry it in the refrain the singers sing, &lsquo;for he is good, for his steadfast love is forever&rsquo;; <span data-heb="כי טוב כי לעולם חסדו">the whole refrain stands in nine verses of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-1">2 Chronicles 7:1&ndash;3</a> (now on these pages) is the glory that fills the house so that the priests cannot enter, as the cloud did at the tent (<a href="exodus-40.html#v40-35">Exodus 40:35</a>) and in <a href="1-kings-8.html#v8-11">1 Kings 8:11</a>.',) + _t[5:]
+    if _t[0] == 'zevach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-12">2 Chronicles 7:12</a> (now on these pages) has Jehovah choose the temple &lsquo;as a house of sacrifice&rsquo;, <em>beit zavach</em>; <span data-heb-read="בית זבח">the pair stands in one verse once the hits are read</span>.',) + _t[5:]
+    if _t[0] == 'chagav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-13">2 Chronicles 7:13</a> (now on these pages) lists it among the three troubles Jehovah says he may send, with the shut heavens and the pestilence: the shelf has &lsquo;the locusts&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the grasshoppers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the grasshopper&rsquo; (<span class="tag t-gnv">Geneva</span>).',) + _t[5:]
+    if _t[0] == 'dever':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-13">2 Chronicles 7:13</a> (now on these pages) is the third of the three ifs, &lsquo;if I send pestilence among my people&rsquo;, the pestilence of <a href="1-kings-8.html#v8-37">1 Kings 8:37</a>.',) + _t[5:]
+    if _t[0] == 'salach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) has the line <span data-heb="ואסלח לחטאתם">&lsquo;and I will forgive their sin&rsquo;, which stands in this one verse of the Hebrew Bible</span>, between &lsquo;I will hear from the heavens&rsquo; and &lsquo;I will heal their land&rsquo;.',) + _t[5:]
+    if _t[0] == 'natash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages) has <span data-heb="ונתשתים">the verb <em>untashtim</em>, &lsquo;and I will pluck them up&rsquo;, in this one verse</span>, and it is the ground that is Jehovah&rsquo;s: &lsquo;from my ground that I gave them&rsquo;.',) + _t[5:]
+    if _t[0] == 'elyon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-21">2 Chronicles 7:21</a> (now on these pages) has <em>elyon</em>, &lsquo;high&rsquo;, in the past tense, &lsquo;this house, which was high&rsquo;, where <a href="1-kings-9.html#v9-8">1 Kings 9:8</a> has it in the future; the shelf prints &lsquo;which is high&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;which is most high&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;heaps of ruins&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a heap of rubble&rsquo; (<span class="tag t-niv">NIV</span>).',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) is the last of the four verbs the people are asked for: humble themselves, pray, seek my face, <em>turn</em>, &lsquo;from their evil ways&rsquo;; <a href="2-chronicles-7.html#v7-19">2 Chronicles 7:19</a> has the same verb for the turning away.',) + _t[5:]
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) has <span data-heb="ויבקשו פני">&lsquo;and seek my face&rsquo; in this one verse</span>; its near relative <em>uvaqshu fanai</em> is Hosea 5:15 (not yet on these pages).',) + _t[5:]
+    if _t[0] == 'chatzotzrah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-6">2 Chronicles 7:6</a> (now on these pages) has the priests sounding them opposite the Levites, and the Hebrew prints the word twice, written and read (see <a href="dictionary.html#ketiv-qere">ketiv/qere</a>).',) + _t[5:]
+    if _t[0] == 'chanukkah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-5">2 Chronicles 7:5</a> (now on these pages) has <span data-heb="ויחנכו את בית">&lsquo;and they dedicated the house&rsquo;, which stands in two verses</span>, the other being <a href="1-kings-8.html#v8-63">1 Kings 8:63</a>.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages) makes the temple <em>mashal</em> and <em>sheninah</em>, &lsquo;a proverb and a byword&rsquo; (<a href="dictionary.html#sheninah">byword</a>).',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-6">2 Chronicles 7:6</a> (now on these pages) has the word for &lsquo;trumpets&rsquo; written with an extra <em>tsade</em> and read without it, and the Hebrew column keeps both.',) + _t[5:]
+_d = DICTIONARY_ES['kana']
+DICTIONARY_ES['kana'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) es el versículo donde más se conoce, &laquo;si se humillare mi pueblo&raquo;. <span data-heb="ויכנעו">La forma <em>vayikkane&rsquo;u</em> está en siete versículos de la Biblia hebrea</span>: en dos de ellos las personas se humillan (ese y 2 Crónicas 12:6, todavía no en estas páginas) y en los otros cinco un pueblo es sometido (Jueces 11:33, 1 Samuel 7:13, 1 Crónicas 20:4, 2 Crónicas 13:18 y Salmo 106:42).')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-3">2 Crónicas 7:3</a> y <a href="2-chronicles-7.es.html#v7-6">7:6</a> (ya en estas páginas) lo llevan en el estribillo que cantan los cantores, &laquo;porque él es bueno, porque su amor leal es para siempre&raquo;; <span data-heb="כי טוב כי לעולם חסדו">el estribillo entero está en nueve versículos de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kavod']
+DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-1">2 Crónicas 7:1&ndash;3</a> (ya en estas páginas) es la gloria que llena la casa de modo que los sacerdotes no pueden entrar, como la nube en la tienda (<a href="exodus-40.es.html#v40-35">Éxodo 40:35</a>) y en <a href="1-kings-8.es.html#v8-11">1 Reyes 8:11</a>.')
+_d = DICTIONARY_ES['zevach']
+DICTIONARY_ES['zevach'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-12">2 Crónicas 7:12</a> (ya en estas páginas) hace que Jehová escoja el templo &laquo;como casa de sacrificio&raquo;, <em>beit zavach</em>; <span data-heb-read="בית זבח">el par está en un versículo una vez leídos los resultados</span>.')
+_d = DICTIONARY_ES['chagav']
+DICTIONARY_ES['chagav'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-13">2 Crónicas 7:13</a> (ya en estas páginas) lo enumera entre las tres desgracias que Jehová dice que puede enviar, con los cielos cerrados y la pestilencia: el estante tiene &laquo;la langosta&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;los saltamontes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['dever']
+DICTIONARY_ES['dever'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-13">2 Crónicas 7:13</a> (ya en estas páginas) es el tercero de los tres «si», &laquo;si envío pestilencia a mi pueblo&raquo;, la pestilencia de <a href="1-kings-8.es.html#v8-37">1 Reyes 8:37</a>.')
+_d = DICTIONARY_ES['salach']
+DICTIONARY_ES['salach'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) tiene la línea <span data-heb="ואסלח לחטאתם">&laquo;y perdonaré su pecado&raquo;, que está en este único versículo de la Biblia hebrea</span>, entre &laquo;oiré desde los cielos&raquo; y &laquo;sanaré su tierra&raquo;.')
+_d = DICTIONARY_ES['natash']
+DICTIONARY_ES['natash'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas) tiene <span data-heb="ונתשתים">el verbo <em>untashtim</em>, &laquo;y los arrancaré&raquo;, en este único versículo</span>, y es el suelo el que es de Jehová: &laquo;de mi suelo que les di&raquo;.')
+_d = DICTIONARY_ES['elyon']
+DICTIONARY_ES['elyon'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-21">2 Crónicas 7:21</a> (ya en estas páginas) tiene <em>elyon</em>, &laquo;alta&raquo;, en pasado, &laquo;esta casa, que era alta&raquo;, donde <a href="1-kings-9.es.html#v9-8">1 Reyes 9:8</a> lo tiene en futuro; el estante imprime &laquo;habrá sido ilustre&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;tan excelsa&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;imponente&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;montones de ruinas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['shuv']
+DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) es el último de los cuatro verbos que se piden al pueblo: humillarse, orar, buscar mi rostro, <em>volverse</em>, &laquo;de sus malos caminos&raquo;; <a href="2-chronicles-7.es.html#v7-19">2 Crónicas 7:19</a> tiene el mismo verbo para el apartarse.')
+_d = DICTIONARY_ES['panim']
+DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) tiene <span data-heb="ויבקשו פני">&laquo;y busquen mi rostro&raquo; en este único versículo</span>; su pariente cercano, <em>uvaqshu fanai</em>, es Oseas 5:15 (todavía no en estas páginas).')
+_d = DICTIONARY_ES['chatzotzrah']
+DICTIONARY_ES['chatzotzrah'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-6">2 Crónicas 7:6</a> (ya en estas páginas) tiene a los sacerdotes tocándolas frente a los levitas, y el hebreo imprime la palabra dos veces, escrita y leída (véase <a href="diccionario.html#ketiv-qere">ketiv/qere</a>).')
+_d = DICTIONARY_ES['chanukkah']
+DICTIONARY_ES['chanukkah'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-5">2 Crónicas 7:5</a> (ya en estas páginas) tiene <span data-heb="ויחנכו את בית">&laquo;y dedicaron la casa&raquo;, que está en dos versículos</span>, el otro es <a href="1-kings-8.es.html#v8-63">1 Reyes 8:63</a>.')
+_d = DICTIONARY_ES['mashal']
+DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas) hace del templo <em>mashal</em> y <em>sheninah</em>, &laquo;proverbio y refrán&raquo; (<a href="diccionario.html#sheninah">refrán</a>).')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-6">2 Crónicas 7:6</a> (ya en estas páginas) tiene la palabra «trompetas» escrita con una <em>tsade</em> de más y leída sin ella, y la columna hebrea conserva las dos.')
+
+# ---- flips: two existing entries mentioned 2 Chronicles 7 before it was on these pages
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'atzarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace("Solomon's dedication at 2 Chronicles 7:9", 'Solomon\'s dedication at <a href="2-chronicles-7.html#v7-9">2 Chronicles 7:9</a>'),) + _t[5:]
+    if _t[0] == 'ritspah':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Ezekiel 40:17 and 2 Chronicles 7:3, not yet on these pages', 'Ezekiel 40:17, not yet on these pages, and <a href="2-chronicles-7.html#v7-3">2 Chronicles 7:3</a>, now on these pages'),) + _t[5:]
+_d = DICTIONARY_ES['ritspah']
+DICTIONARY_ES['ritspah'] = (_d[0], _d[1].replace('Ezequiel 40:17 y 2 Crónicas 7:3, todavía no en estas páginas', 'Ezequiel 40:17, todavía no en estas páginas, y <a href="2-chronicles-7.es.html#v7-3">2 Crónicas 7:3</a>, ya en estas páginas'))
+
+
+# ---- XREFS for 2 Chronicles 7 (skip any pair already present, either direction)
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('2 Chronicles', 7, 1), ('Leviticus', 9, 24), 'fire from before Jehovah consumes the burnt offering — Aaron’s first sacrifice and Solomon’s dedication'),
+    (('2 Chronicles', 7, 2), ('Exodus', 40, 35), 'the glory fills the house and the one who serves cannot enter — Moses at the tent, the priests at the temple'),
+    (('2 Chronicles', 7, 5), ('1 Kings', 8, 63), '22,000 cattle and 120,000 sheep, and the house dedicated — the same numbers in Kings'),
+    (('2 Chronicles', 7, 12), ('1 Kings', 9, 2), 'the second appearance — Kings gives no hour, Chronicles says by night'),
+    (('2 Chronicles', 7, 13), ('1 Kings', 8, 35), 'the shut heavens, the locust and the pestilence of Solomon’s prayer, now Jehovah’s ifs'),
+    (('2 Chronicles', 7, 15), ('Psalms', 130, 2), 'ears attentive — the psalmist asks for what Jehovah promises the house of prayer'),
+    (('2 Chronicles', 7, 18), ('1 Kings', 9, 5), 'not cut off a man — Chronicles ends it ‘ruling in Israel’, Kings ‘over Israel forever’'),
+    (('2 Chronicles', 7, 20), ('Deuteronomy', 28, 37), 'a proverb and a byword — the curse of the law, now said of the house'),
+    (('2 Chronicles', 7, 21), ('Deuteronomy', 29, 23), '‘why has Jehovah done thus to this land’ — asked of the land, then of the house'),
+    (('2 Chronicles', 7, 22), ('1 Kings', 9, 9), 'the answer to why — ‘the God of their fathers, who brought them out’ against Kings’ ‘their God, who brought their fathers out’'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["2chr7"] = dict(era='monarchy',
+    when='The dedication of the temple finishes: fire comes down and the glory fills the house so that the priests cannot enter, the people bow with their faces to the ground, twenty-two thousand cattle and a hundred and twenty thousand sheep are offered, a fourteen-day festival ends on the twenty-third day, and Jehovah appears to Solomon by night with the verse about humbling, seeking and healing and a warning of what will happen to the house if the people leave him.',
+    clock='About 959 BC on the usual reckoning of Solomon&rsquo;s temple, the seventh month of its dedication year; the parallel account is 1 Kings 8&ndash;9, and Chronicles, written centuries later, adds the fire, the night and the verse about healing the land. &#9888; The date of the dedication is a reckoning, not something the chapter states; it gives only the month and the day.')
+
+CHAPTER_ART["2chr7"] = [dict(
+    file='tissot-solomon-dedicates-the-temple.jpg',
+    title='Solomon Dedicates the Temple at Jerusalem', title_es='Salomón dedica el templo de Jerusalén',
+    artist='James Tissot', artist_es='James Tissot',
+    year='1901', location='Study drawing for the Brunoff Old Testament; photographed in its mount', location_es='Dibujo de estudio para el Antiguo Testamento de Brunoff; fotografiado en su paspartú',
+    alt='A pen-and-ink drawing in brown and black with crossing blue pencil lines. On the right a bearded man in a long robe and sash stands on stone steps with both arms raised, beside the rounded top of an altar. Behind him are tall pillars. On the left a dense crowd in rows of hooded heads bends forward, the nearest men bowed almost to the ground.',
+    alt_es='Un dibujo a pluma en marrón y negro con líneas cruzadas de lápiz azul. A la derecha, un hombre barbado con túnica larga y faja está de pie sobre unos escalones de piedra con los dos brazos levantados, junto a la parte superior redondeada de un altar. Detrás de él hay altas columnas. A la izquierda, una multitud densa en filas de cabezas cubiertas se inclina hacia delante, y los más cercanos casi tocan el suelo.',
+    note='2 Chronicles 7:1&ndash;3. Tissot drew the dedication from 1 Kings 8:13, and this is a small study, with the blue lines of a draughtsman&rsquo;s layout still across it. It has Solomon with his arms raised and a crowd bowing, which is what verse 3 describes; it has no fire and no cloud, and the chapter&rsquo;s fire is not in the picture.',
+    note_es='2 Crónicas 7:1&ndash;3. Tissot dibujó la dedicación a partir de 1 Reyes 8:13, y este es un pequeño estudio, con las líneas azules de un trazado todavía sobre él. Tiene a Salomón con los brazos levantados y a una multitud inclinada, que es lo que describe el versículo 3; no tiene fuego ni nube, y el fuego del capítulo no está en el cuadro.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Tissot_Drawing_331_Solomon_dedicates_the_Temple_at_Jerusalem_1_Kings_8_13_for_Brunoff_303_La_d%C3%A9dicace_par_Salomon_du_temple.jpg')]
+
