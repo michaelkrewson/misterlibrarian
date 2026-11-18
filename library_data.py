@@ -59380,3 +59380,101 @@ CHAPTER_ART["psalms90"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Voyage_of_Life_Old_Age,_1842_(National_Gallery_of_Art).jpg')]
 
+
+
+# Appended to library_data.py for Isaiah 61 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('peer', "pe'er", 'פְּאֵר', "pe'er", 'A HEADDRESS &mdash; an ornament worn on the head, a turban, a crown of beauty; the noun for what makes a head fine. <span data-heb="פאר תחת אפר">&lsquo;A headdress in place of ashes&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages), and the two words are the same three consonants in another order, <em>pe&rsquo;er</em> and <a href="dictionary.html#efer">efer</a>, ashes: what the mourners put on their heads is exchanged for what goes on the same place. &#11088; The bridegroom of <a href="isaiah-61.html#v61-10">verse 10</a> puts one on &lsquo;as a priest&rsquo;. &#9888; The shelf prints &lsquo;beauty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;a garland&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a crown of beauty&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a headdress&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a crown&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 3)))
+DICTIONARY.append(('chavash', 'chavash', 'חָבַשׁ', 'chavash', 'TO BIND UP &mdash; to wrap a wound or a broken limb, to saddle a donkey, to put on a headdress. <span data-heb="לחבש לנשברי לב">&lsquo;To bind up the broken in heart&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages), the line Luke 4:18 reads in Nazareth. &#11088; The next word is <em>deror</em>, liberty (<a href="dictionary.html#deror">deror</a>), and the line before it, &lsquo;to bring good news to the lowly&rsquo;, <a href="isaiah-61.html#v61-1">is in the same verse</a>. &#9888; The shelf prints &lsquo;to bind up the brokenhearted&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;to comfort the brokenhearted&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;to heal the contrite of heart&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 1)))
+DICTIONARY.append(('eilei', 'eilei hatsedek', 'אֵילֵי הַצֶּדֶק', 'eilei hatsedek', 'OAKS OF RIGHTEOUSNESS &mdash; <em>eilei</em> is a strong tree, an oak or terebinth, and the same consonants can be read as rams or mighty ones. <span data-heb="אילי הצדק">&lsquo;Oaks of righteousness&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages), and <span data-heb="מטע יהוה">&lsquo;the planting of Jehovah&rsquo; stands in this one verse</span> too. &#9888; The shelf prints &lsquo;trees of righteousness&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;oaks of righteousness&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;big trees of righteousness&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;strong and graceful oaks&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;the mighty ones of justice&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['peer'] = ("pe'er", 'UN ADORNO PARA LA CABEZA &mdash; un ornamento que se lleva en la cabeza, un turbante, una corona de belleza. <span data-heb="פאר תחת אפר">&laquo;Un adorno para la cabeza en lugar de ceniza&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas), y las dos palabras son las mismas tres consonantes en otro orden, <em>pe&rsquo;er</em> y <a href="diccionario.html#efer">efer</a>, ceniza: lo que los enlutados se ponen en la cabeza se cambia por lo que va en el mismo lugar. &#11088; El novio del <a href="isaiah-61.es.html#v61-10">versículo 10</a> se pone uno &laquo;como sacerdote&raquo;. &#9888; El estante imprime &laquo;gloria&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;una corona&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;una prenda de adorno para la cabeza&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;un adorno para la cabeza&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['chavash'] = ('chavash', 'VENDAR &mdash; envolver una herida o un miembro roto, aparejar un asno, ponerse un tocado. <span data-heb="לחבש לנשברי לב">&laquo;Vendar a los quebrantados de corazón&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas), la línea que Lucas 4:18 lee en Nazaret. &#11088; La palabra siguiente es <em>deror</em>, libertad (<a href="diccionario.html#deror">deror</a>), y la línea anterior, &laquo;llevar buenas noticias a los humildes&raquo;, <a href="isaiah-61.es.html#v61-1">está en el mismo versículo</a>. &#9888; El estante imprime &laquo;a vendar a los quebrantados de corazón&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;a sanar los corazones heridos&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;vendar a los que tienen el corazón destrozado&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['eilei'] = ('eilei hatsedek', 'ROBLES DE JUSTICIA &mdash; <em>eilei</em> es un árbol fuerte, un roble o terebinto, y las mismas consonantes pueden leerse como carneros o poderosos. <span data-heb="אילי הצדק">&laquo;Robles de justicia&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas), y <span data-heb="מטע יהוה">&laquo;el plantío de Jehová&raquo; está también en este único versículo</span>. &#9888; El estante imprime &laquo;árboles de justicia&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>) y &laquo;robles de justicia&raquo; (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'deror':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) has <span data-heb="לקרא לשבוים דרור">&lsquo;to proclaim to captives liberty&rsquo;, which stands in this one verse</span>, the line Luke 4:18 puts in Jesus&rsquo; mouth; the shelf has &lsquo;liberty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;freedom&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a release&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;liberty to captives&rsquo; (<span class="tag t-tlb">TLB</span>).',) + _t[5:]
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) is an anointing by the Spirit for speaking: <span data-heb="משח יהוה אתי">&lsquo;Jehovah has anointed me&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nacham':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) has <span data-heb="לנחם כל אבלים">&lsquo;to comfort all who mourn&rsquo;, which stands in this one verse</span>, the promise the Beatitude takes up in <a href="matthew-5.html#v5-4">Matthew 5:4</a>.',) + _t[5:]
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages) sets <a href="dictionary.html#peer">pe&rsquo;er</a>, a headdress, in place of <em>efer</em>, ashes: the same three consonants in another order.',) + _t[5:]
+    if _t[0] == 'anav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) is <span data-heb="לבשר ענוים">&lsquo;to bring good news to the lowly&rsquo;, which stands in this one verse</span>; the shelf has &lsquo;the meek&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;the poor&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the suffering and afflicted&rsquo; (<span class="tag t-tlb">TLB</span>).',) + _t[5:]
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) has <span data-heb="שנת רצון">&lsquo;a year of favor&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'naqam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) pairs it with the year: <span data-heb="יום נקם">&lsquo;a day of vengeance&rsquo; stands in four verses</span>, this one, Isaiah 34:8, Isaiah 63:4 and Proverbs 6:34.',) + _t[5:]
+    if _t[0] == 'tsemach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-11">Isaiah 61:11</a> (now on these pages) uses the verb for the last image of the chapter, the earth and garden sprouting righteousness and praise; <span data-heb="תצמיח">the form <em>tatsmiach</em> stands in three verses</span>, Genesis 3:18, Isaiah 45:8 and this one.',) + _t[5:]
+_d = DICTIONARY_ES['deror']
+DICTIONARY_ES['deror'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) tiene <span data-heb="לקרא לשבוים דרור">&laquo;proclamar a los cautivos libertad&raquo;, que está en este único versículo</span>, la línea que Lucas 4:18 pone en la boca de Jesús; el estante tiene &laquo;libertad&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['mashiach']
+DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) es una unción por el Espíritu para hablar: <span data-heb="משח יהוה אתי">&laquo;Jehová me ha ungido&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nacham']
+DICTIONARY_ES['nacham'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) tiene <span data-heb="לנחם כל אבלים">&laquo;consolar a todos los que están de duelo&raquo;, que está en este único versículo</span>, la promesa que recoge la bienaventuranza en <a href="matthew-5.es.html#v5-4">Mateo 5:4</a>.')
+_d = DICTIONARY_ES['efer']
+DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas) pone <a href="diccionario.html#peer">pe&rsquo;er</a>, un adorno para la cabeza, en lugar de <em>efer</em>, ceniza: las mismas tres consonantes en otro orden.')
+_d = DICTIONARY_ES['anav']
+DICTIONARY_ES['anav'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) es <span data-heb="לבשר ענוים">&laquo;llevar buenas noticias a los humildes&raquo;, que está en este único versículo</span>; el estante tiene &laquo;los abatidos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;los pobres&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;los mansos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+_d = DICTIONARY_ES['ratson']
+DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) tiene <span data-heb="שנת רצון">&laquo;un año de favor&raquo;, que está en este único versículo</span>.')
+_d = DICTIONARY_ES['naqam']
+DICTIONARY_ES['naqam'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) lo pone con el año: <span data-heb="יום נקם">&laquo;un día de venganza&raquo; está en cuatro versículos</span>, este, Isaías 34:8, Isaías 63:4 y Proverbios 6:34.')
+_d = DICTIONARY_ES['tsemach']
+DICTIONARY_ES['tsemach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-11">Isaías 61:11</a> (ya en estas páginas) usa el verbo para la última imagen del capítulo, la tierra y el huerto haciendo brotar justicia y alabanza; <span data-heb="תצמיח">la forma <em>tatsmiach</em> está en tres versículos</span>, Génesis 3:18, Isaías 45:8 y este.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dektos':
+        assert '(Isaiah 61:2, not yet on these pages, where the Hebrew has' in _t[4]
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Isaiah 61:2, not yet on these pages, where the Hebrew has', '(<a href="isaiah-61.html#v61-2">Isaiah 61:2</a>, now on these pages, where the Hebrew has'),) + _t[5:]
+_d = DICTIONARY_ES['dektos']
+assert '(Isaías 61:2, todavía no en estas páginas, donde el hebreo dice' in _d[1]
+DICTIONARY_ES['dektos'] = (_d[0], _d[1].replace('(Isaías 61:2, todavía no en estas páginas, donde el hebreo dice', '(<a href="isaiah-61.es.html#v61-2">Isaías 61:2</a>, ya en estas páginas, donde el hebreo dice'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'deror':
+        assert "'to proclaim DEROR to captives' (not yet on these pages)" in _t[4]
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace("'to proclaim DEROR to captives' (not yet on these pages)", '\'to proclaim DEROR to captives\' (<a href="isaiah-61.html#v61-1">now on these pages</a>)'),) + _t[5:]
+_d = DICTIONARY_ES['deror']
+assert '«proclamar DEROR a los cautivos» (todav&iacute;a no en estas p&aacute;ginas)' in _d[1]
+DICTIONARY_ES['deror'] = (_d[0], _d[1].replace('«proclamar DEROR a los cautivos» (todav&iacute;a no en estas p&aacute;ginas)', '«proclamar DEROR a los cautivos» (<a href="isaiah-61.es.html#v61-1">ya en estas p&aacute;ginas</a>)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 61, 1), ('Luke', 4, 18), 'the reading at Nazareth — Isaiah 61:1 in Hebrew, and what the Greek changed'),
+    (('Isaiah', 61, 1), ('Matthew', 11, 5), 'good news brought to the poor — the verb of Isaiah 61:1'),
+    (('Isaiah', 61, 1), ('Leviticus', 25, 10), 'liberty proclaimed — the jubilee word, now for captives'),
+    (('Isaiah', 61, 2), ('Isaiah', 40, 1), 'comfort — the verb that opens Isaiah 40'),
+    (('Isaiah', 61, 2), ('Matthew', 5, 4), 'those who mourn will be comforted — the Beatitude on Isaiah 61:2'),
+    (('Isaiah', 61, 4), ('Jeremiah', 25, 9), 'the ruins of long ago — the ruins Jehovah made in Jeremiah, now rebuilt'),
+    (('Isaiah', 61, 6), ('Exodus', 19, 6), 'a nation of priests — Sinai’s kingdom of priests, said to the restored'),
+    (('Isaiah', 61, 8), ('Isaiah', 55, 3), 'an everlasting covenant I will cut'),
+    (('Isaiah', 61, 10), ('Revelation', 21, 2), 'a bride adorned — the new Jerusalem'),
+    (('Isaiah', 61, 11), ('Genesis', 3, 18), 'sprout — the earth that sprouted thorns now sprouts righteousness'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa61"] = dict(era='exile',
+    when='A speaker anointed by the Spirit to bring good news to the lowly, bind up the broken in heart and proclaim liberty, a year of favor and a day of vengeance, and to comfort the mourners of Zion: a headdress for ashes, oaks of righteousness, the old ruins rebuilt, strangers as shepherds, a people called priests, a double portion, an everlasting covenant, and a garment of salvation like a bridegroom&rsquo;s, with righteousness sprouting before all the nations.',
+    clock='Undated in the chapter itself. It is filed with the exile and return because the ruined cities and the mourners of Zion are the picture it works with; the chapter does not name a king, a year or an event. &#9888; Who the speaker is, the prophet or the servant, is left open by the Hebrew, and the reading at Nazareth (Luke 4:18&ndash;21) is one answer to it.')
+
+CHAPTER_ART["isa61"] = [dict(
+    file='tissot-brow-of-the-hill-nazareth.jpg',
+    title='The Brow of the Hill near Nazareth', title_es='La escarpa de la colina cerca de Nazaret',
+    artist='James Tissot', artist_es='James Tissot',
+    year='c. 1886&ndash;1894', location='Brooklyn Museum', location_es='Brooklyn Museum',
+    alt='A watercolor of a rocky hillside path crowded with robed men. A crowd streams along the ridge at the top with raised arms, a second crowd climbs the stony path in the foreground, and a single figure in a dark blue robe walks alone in the middle of the slope, between them, above a sheer rock face.',
+    alt_es='Una acuarela de un sendero rocoso de colina lleno de hombres con túnicas. Una multitud avanza por la cresta en lo alto con los brazos levantados, otra sube por el camino empedrado en primer plano, y una sola figura con túnica azul oscura camina sola en medio de la ladera, entre ellas, sobre una pared de roca vertical.',
+    note='Isaiah 61. Tissot&rsquo;s Nazareth mob, from the scene that follows the reading (Luke 4:28&ndash;30): the congregation that has just heard &ldquo;to proclaim liberty&rdquo; leads him to the edge of the hill. It is not a picture of the chapter, only of what the reading of its first two verses brought on.',
+    note_es='Isaías 61. La turba de Nazaret de Tissot, de la escena que sigue a la lectura (Lucas 4:28&ndash;30): la congregación que acaba de oír «a proclamar libertad» lo lleva hasta el borde de la colina. No es un cuadro del capítulo, solo de lo que provocó la lectura de sus dos primeros versículos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Brow_of_the_Hill_near_Nazareth_(L%27escarpement_de_Nazareth)_-_James_Tissot.jpg')]
+
