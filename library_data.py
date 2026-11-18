@@ -59961,3 +59961,142 @@ CHAPTER_ART["job38"] = [dict(
     license='CC0',
     source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_14,_When_the_Morning_Stars_Sang_Together_-_B1978.43.1516_-_Yale_Center_for_British_Art.jpg')]
 
+
+
+# Appended to library_data.py for Isaiah 11 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('choter', 'choter', 'חֹטֶר', 'choter', 'A SHOOT, a rod &mdash; <span data-heb="חטר">the word stands in two verses of the Hebrew Bible</span>: the shoot out of the stump of Jesse, <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages), and the rod of pride in Proverbs 14:3 (not yet on these pages). &#9888; The shelf prints &lsquo;a rod&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;A shoot&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a Shoot&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;a twig&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('netser', 'netser', 'נֵצֶר', 'netser', 'A BRANCH, a green shoot &mdash; <span data-heb="ונצר משרשיו יפרה">&lsquo;and a branch from his roots will bear fruit&rsquo; stands in this one verse</span>, <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages). Many readers hear it behind &lsquo;Nazarene&rsquo; in <a href="matthew-2.html#v2-23">Matthew 2:23</a> (now on these pages), where Matthew names &lsquo;the prophets&rsquo; and no single verse; that is a reading, not a count. &#9888; The shelf prints &lsquo;a Branch&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;a sprout&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a flower&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('geza', 'geza', 'גֶּזַע', 'geza&lsquo;', 'A STUMP &mdash; what is left of a tree that has been cut down. <span data-heb="גזע">The word stands in three verses of the Hebrew Bible</span>: <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages), <a href="isaiah-40.html#v40-24">Isaiah 40:24</a> (now on these pages) and Job 14:8 (not yet on these pages). &#9888; The shelf prints &lsquo;the stump of Jesse&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the stem of Jesse&rsquo; (<span class="tag t-kjv">KJV</span>) and &lsquo;the root of Jesse&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('meri', 'meri', 'מְרִיא', 'meri', 'A FATLING &mdash; a fed animal, the one fattened for the feast: <em>&lsquo;the calf and the young lion and the fatling together&rsquo;</em>, <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages), and the sacrificed ox and fatling of <a href="2-samuel-6.html#v6-13">2 Samuel 6:13</a> (now on these pages). &#9888; The shelf prints &lsquo;the fatling&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the fat beast&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;the sheep&rsquo; (<span class="tag t-drb">Douay</span>), &lsquo;the yearling&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the well-fed animal&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 11, 6)))
+DICTIONARY.append(('peten', 'peten', 'פֶּתֶן', 'peten', 'A COBRA, an asp &mdash; the snake of the hole where the nursing child plays, <a href="isaiah-11.html#v11-8">Isaiah 11:8</a> (now on these pages), and of the lion and the cobra that are trodden in <a href="psalms-91.html#v91-13">Psalm 91:13</a> (now on these pages). &#9888; The shelf prints &lsquo;the asp&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the cobra&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;poisonous snakes&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 11, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['choter'] = ('choter', 'UN RETOÑO, una vara &mdash; <span data-heb="חטר">la palabra está en dos versículos de la Biblia hebrea</span>: el retoño del tocón de Isaí, <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas), y la vara del orgullo de Proverbios 14:3 (todavía no en estas páginas). &#9888; El estante imprime &laquo;una vara&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;un retoño&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una ramita&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['netser'] = ('netser', 'UNA RAMA, un brote verde &mdash; <span data-heb="ונצר משרשיו יפרה">&laquo;y una rama de sus raíces dará fruto&raquo; está en este único versículo</span>, <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas). Muchos lectores la oyen detrás de &laquo;Nazareno&raquo; en <a href="matthew-2.es.html#v2-23">Mateo 2:23</a> (ya en estas páginas), donde Mateo nombra &laquo;los profetas&raquo; y ningún versículo en particular; eso es una lectura, no una cuenta. &#9888; El estante imprime &laquo;un vástago&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;un renuevo&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;un brote&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['geza'] = ('geza&lsquo;', 'UN TOCÓN &mdash; lo que queda de un árbol cortado. <span data-heb="גזע">La palabra está en tres versículos de la Biblia hebrea</span>: <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas), <a href="isaiah-40.es.html#v40-24">Isaías 40:24</a> (ya en estas páginas) y Job 14:8 (todavía no en estas páginas). &#9888; El estante imprime &laquo;el tronco de Isaí&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;el tocón de Jesé&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['meri'] = ('meri', 'UN ANIMAL CEBADO &mdash; un animal alimentado, el engordado para el banquete: <em>&laquo;el becerro y el leoncillo y el animal cebado juntos&raquo;</em>, <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas), y el buey y el animal cebado sacrificados de <a href="2-samuel-6.es.html#v6-13">2 Samuel 6:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la bestia doméstica&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;el animal bien alimentado&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['peten'] = ('peten', 'UNA COBRA, un áspid &mdash; la serpiente del agujero donde juega el niño de pecho, <a href="isaiah-11.es.html#v11-8">Isaías 11:8</a> (ya en estas páginas), y del león y la cobra que se pisan en el <a href="psalms-91.es.html#v91-13">Salmo 91:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el áspid&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la cobra&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nes':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-10">Isaiah 11:10</a> (now on these pages) has the root of Jesse standing as <em>nes</em> for the peoples, and <a href="isaiah-11.html#v11-12">Isaiah 11:12</a> has it raised for the nations.',) + _t[5:]
+if 'nes' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nes']
+    DICTIONARY_ES['nes'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-10">Isaías 11:10</a> (ya en estas páginas) tiene la raíz de Isaí en pie como <em>nes</em> para los pueblos, y <a href="isaiah-11.es.html#v11-12">Isaías 11:12</a> lo tiene alzado para las naciones.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'cherem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-15">Isaiah 11:15</a> (now on these pages) turns the verb on a sea: Jehovah will devote to destruction the tongue of the Egyptian sea.',) + _t[5:]
+if 'cherem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['cherem']
+    DICTIONARY_ES['cherem'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-15">Isaías 11:15</a> (ya en estas páginas) vuelve el verbo contra un mar: Jehová destinará a la destrucción la lengua del mar de Egipto.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-11">Isaiah 11:11</a> and <a href="isaiah-11.html#v11-16">verse 16</a> (now on these pages) have the remnant of his people that remains, with a highway out of Assyria for it.',) + _t[5:]
+if 'sheerit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sheerit']
+    DICTIONARY_ES['sheerit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-11">Isaías 11:11</a> y <a href="isaiah-11.es.html#v11-16">versículo 16</a> (ya en estas páginas) tienen el resto de su pueblo que queda, con una calzada para él desde Asiria.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-12">Isaiah 11:12</a> (now on these pages) has <span data-heb="מארבע כנפות הארץ">&lsquo;from the four corners of the earth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kanaf' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kanaf']
+    DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-12">Isaías 11:12</a> (ya en estas páginas) tiene <span data-heb="מארבע כנפות הארץ">&laquo;desde las cuatro puntas de la tierra&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'egel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The calf of the peaceable kingdom lies down with the young lion in <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages).',) + _t[5:]
+if 'egel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['egel']
+    DICTIONARY_ES['egel'] = (_d[0], _d[1] + ' &#11088; El becerro del reino de paz se echa con el leoncillo en <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas).')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'naar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages) has <span data-heb="ונער קטן נהג בם">&lsquo;and a little boy will lead them&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'naar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['naar']
+    DICTIONARY_ES['naar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas) tiene <span data-heb="ונער קטן נהג בם">&laquo;y un muchachito los guiará&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'parah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-7">Isaiah 11:7</a> (now on these pages) has the cow feeding with the bear: <span data-heb="ופרה ודב תרעינה">&lsquo;the cow and the bear will graze&rsquo; stands in this one verse</span>.',) + _t[5:]
+if 'parah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['parah']
+    DICTIONARY_ES['parah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-7">Isaías 11:7</a> (ya en estas páginas) tiene la vaca paciendo con la osa: <span data-heb="ופרה ודב תרעינה">&laquo;la vaca y la osa pacerán&raquo; está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dov':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-7">Isaiah 11:7</a> (now on these pages) has the bear feeding beside the cow.',) + _t[5:]
+if 'dov' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['dov']
+    DICTIONARY_ES['dov'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-7">Isaías 11:7</a> (ya en estas páginas) tiene el oso paciendo junto a la vaca.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shevet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-4">Isaiah 11:4</a> (now on these pages) has <span data-heb="שבט פיו">&lsquo;the rod of his mouth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shevet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevet']
+    DICTIONARY_ES['shevet'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-4">Isaías 11:4</a> (ya en estas páginas) tiene <span data-heb="שבט פיו">&laquo;la vara de su boca&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'menuchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-10">Isaiah 11:10</a> (now on these pages) has <span data-heb="מנחתו כבוד">&lsquo;his resting place will be glorious&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'menuchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['menuchah']
+    DICTIONARY_ES['menuchah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-10">Isaías 11:10</a> (ya en estas páginas) tiene <span data-heb="מנחתו כבוד">&laquo;su lugar de reposo será glorioso&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsedeq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-5">Isaiah 11:5</a> (now on these pages) has righteousness as the belt of his loins.',) + _t[5:]
+if 'tsedeq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsedeq']
+    DICTIONARY_ES['tsedeq'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-5">Isaías 11:5</a> (ya en estas páginas) tiene la justicia como el cinto de sus lomos.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emunah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-5">Isaiah 11:5</a> (now on these pages) has faithfulness as the belt of his loins, beside righteousness.',) + _t[5:]
+if 'emunah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emunah']
+    DICTIONARY_ES['emunah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-5">Isaías 11:5</a> (ya en estas páginas) tiene la fidelidad como el cinto de sus lomos, junto a la justicia.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-2">Isaiah 11:2</a> (now on these pages) names the spirit four times in one verse, the Spirit of Jehovah and then three pairs; <a href="isaiah-11.html#v11-4">verse 4</a> has the breath of his lips.',) + _t[5:]
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-2">Isaías 11:2</a> (ya en estas páginas) nombra el espíritu cuatro veces en un versículo, el Espíritu de Jehová y luego tres pares; <a href="isaiah-11.es.html#v11-4">el versículo 4</a> tiene el soplo de sus labios.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mishmaat':
+        assert '(Isaiah 11:14); the other two are not yet on these pages' in _t[4], 'mishmaat'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Isaiah 11:14); the other two are not yet on these pages', '(<a href="isaiah-11.html#v11-14">Isaiah 11:14</a>, now on these pages); the other two are not yet on these pages'),) + _t[5:]
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 11, 1), ('1 Samuel', 16, 1), 'the stump of Jesse — the father of David, from whom the shoot comes'),
+    (('Isaiah', 11, 1), ('Matthew', 2, 23), "the branch — netser, heard behind 'Nazarene'"),
+    (('Isaiah', 11, 1), ('Jeremiah', 23, 5), 'the line of David as a sprout — a different Hebrew word, tsemach'),
+    (('Isaiah', 11, 2), ('Numbers', 11, 25), 'the Spirit resting — on the seventy elders, and on the shoot of Jesse'),
+    (('Isaiah', 11, 4), ('2 Thessalonians', 2, 8), 'the breath of his lips — and the lawless one slain with the breath of his mouth'),
+    (('Isaiah', 11, 4), ('Revelation', 19, 15), 'the rod of his mouth — the sword that comes out of it'),
+    (('Isaiah', 11, 5), ('Ephesians', 6, 14), 'the belt of righteousness and faithfulness — truth on the loins'),
+    (('Isaiah', 11, 9), ('Habakkuk', 2, 14), 'the earth full of the knowledge of Jehovah, as the waters cover the sea'),
+    (('Isaiah', 11, 10), ('Romans', 15, 12), 'the root of Jesse — cited by Paul for the nations'),
+    (('Isaiah', 11, 10), ('Revelation', 5, 5), 'the Root of David — who has conquered'),
+    (('Isaiah', 11, 15), ('Exodus', 14, 21), 'the sea divided, and a way through it'),
+    (('Isaiah', 11, 16), ('Isaiah', 40, 3), 'a highway in the wilderness for the remnant'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa11"] = dict(era='monarchy',
+    when='A shoot comes out of the stump of Jesse and the Spirit of Jehovah rests on him: wisdom, counsel, the fear of Jehovah; he judges the poor with righteousness and strikes the earth with the rod of his mouth. The wolf sojourns with the lamb and a little boy leads them; there is no harm in all the holy mountain. The root of Jesse stands as a banner for the peoples, the Lord gathers the remnant a second time from eight places, Ephraim and Judah stop being rivals, and a highway opens from Assyria.',
+    clock='Undated in the chapter. It follows the felling of the Assyrian forest at the close of Isaiah 10, while Assyria is the threat; Isaiah 6:1 dates his own vision to the year King Uzziah died. &#9888; The chapter names no king and no date for the shoot; it names Jesse, David&rsquo;s father, and the stump.')
+
+CHAPTER_ART["isa11"] = [dict(
+    file='hicks-peaceable-kingdom.jpg',
+    title='The Peaceable Kingdom', title_es='El reino apacible',
+    artist='Edward Hicks', artist_es='Edward Hicks',
+    year='c. 1834', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='An oil painting of a clearing at the edge of a river. On the right a crowd of animals sits close together: a large long-horned ox with a white face, a maned lion, a striped big cat, a grey wolf, a lamb and a spotted kid, a leopard, a black bear and a white-faced bull, with a small child in a pale shift leaning on the big cat. In the front a girl in a white dress with a red cloak and a baby in a loincloth reach toward the animals. On the far left, across a gap, a small group of men in eighteenth-century coats stand with a group of feathered Native American men beside a river.',
+    alt_es='Un óleo de un claro a la orilla de un río. A la derecha, una multitud de animales sentados muy juntos: un gran buey de cuernos largos y cara blanca, un león con melena, un gran felino rayado, un lobo gris, un cordero y un cabrito manchado, un leopardo, un oso negro y un toro de cara blanca, con un niño pequeño de camisa clara apoyado en el gran felino. Al frente, una niña de vestido blanco con una capa roja y un bebé en pañal extienden las manos hacia los animales. A la izquierda, al otro lado de un hueco, un pequeño grupo de hombres con casacas del siglo XVIII está junto a un grupo de hombres nativos americanos con plumas, a la orilla de un río.',
+    note='Isaiah 11:6&ndash;9. Hicks, a Quaker minister who painted this scene many times, draws the wolf, the lamb, the leopard, the kid, the lion and the little child of the chapter, and adds the ox and the bear and a second child; the treaty scene at the left, a gathering of settlers and Native Americans, is his own and is not in Isaiah. The Hebrew does not say whether the animals are creatures or a picture of the nations.',
+    note_es='Isaías 11:6&ndash;9. Hicks, ministro cuáquero que pintó esta escena muchas veces, dibuja el lobo, el cordero, el leopardo, el cabrito, el león y el niño pequeño del capítulo, y añade el buey y el oso y un segundo niño; la escena del tratado a la izquierda, una reunión de colonos y nativos americanos, es suya y no está en Isaías. El hebreo no dice si los animales son criaturas o una imagen de las naciones.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Edward_Hicks,_Peaceable_Kingdom,_c._1834,_NGA_59908.jpg')]
+
