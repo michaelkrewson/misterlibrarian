@@ -60364,3 +60364,122 @@ CHAPTER_ART["isa58"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:De_zeven_werken_van_barmhartigheid_Rijksmuseum_SK-A-2815-1.jpeg')]
 
+
+
+# Appended to library_data.py for Esther 4 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('patshegen', 'patshegen', 'פַּתְשֶׁגֶן', 'patshegen', 'A COPY &mdash; a word taken from Persian, the copy of a written law: <span data-heb="פתשגן">it stands in three verses of the Hebrew Bible</span>, Esther 3:14, <a href="esther-4.html#v4-8">Esther 4:8</a> (now on these pages) and Esther 8:13 (the other two not yet on these pages). &#9888; The shelf prints &lsquo;the copy of the writing of the decree&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a copy of the text of the edict&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a copy of the writing of the law&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a copy of the king&rsquo;s decree&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Esther', 4, 8)))
+DICTIONARY.append(('revach', 'revach', 'רֶוַח', 'revach', 'RELIEF, room, breathing space &mdash; <span data-heb="רוח והצלה">&lsquo;relief and deliverance&rsquo; stands in this one verse</span>, <a href="esther-4.html#v4-14">Esther 4:14</a> (now on these pages); the same word is the gap Jacob orders between his droves, <a href="genesis-32.html#v32-17">Genesis 32:17</a> (now on these pages). &#9888; The shelf prints &lsquo;enlargement and deliverance&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;relief and deliverance&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;comfort and deliverance&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;the Jews shall be delivered by some other occasion&rsquo; (<span class="tag t-drb">Douay</span>).', ('Esther', 4, 14)))
+DICTIONARY.append(('sharvit', 'sharvit', 'שַׁרְבִיט', 'sharvit', 'A SCEPTER &mdash; the rod the king holds out: <span data-heb="שרביט הזהב">&lsquo;the golden scepter&rsquo; stands in two verses of the Hebrew Bible</span>, <a href="esther-4.html#v4-11">Esther 4:11</a> (now on these pages) and Esther 5:2 (not yet on these pages). &#9888; The shelf prints &lsquo;the golden sceptre&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;the gold scepter&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;the golden scepter&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the golden rod&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Esther', 4, 11)))
+DICTIONARY.append(('titchalchal', 'titchalchal', 'תִּתְחַלְחַל', 'vattitchalchal', 'TO WRITHE, to be shaken with anguish &mdash; <span data-heb="ותתחלחל">&lsquo;and she writhed&rsquo; stands in this one verse</span>, <a href="esther-4.html#v4-4">Esther 4:4</a> (now on these pages), the queen when she hears of Mordecai in sackcloth. &#9888; The shelf prints &lsquo;exceedingly grieved&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;in great distress&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;deeply distressed&rsquo; (<span class="tag t-tlb">TLB</span>), &lsquo;very much pained&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;in a consternation&rsquo; (<span class="tag t-drb">Douay</span>).', ('Esther', 4, 4)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['patshegen'] = ('patshegen', 'UNA COPIA &mdash; una palabra tomada del persa, la copia de una ley escrita: <span data-heb="פתשגן">está en tres versículos de la Biblia hebrea</span>, Ester 3:14, <a href="esther-4.es.html#v4-8">Ester 4:8</a> (ya en estas páginas) y Ester 8:13 (los otros dos todavía no en estas páginas). &#9888; El estante imprime &laquo;la copia del decreto&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;una copia del texto del edicto&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una copia del escrito de la ley&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['revach'] = ('revach', 'ALIVIO, espacio, respiro &mdash; <span data-heb="רוח והצלה">&laquo;alivio y liberación&raquo; está en este único versículo</span>, <a href="esther-4.es.html#v4-14">Ester 4:14</a> (ya en estas páginas); la misma palabra es el hueco que Jacob manda dejar entre sus rebaños, <a href="genesis-32.html#v32-17">Génesis 32:17</a> (ya en estas páginas, en la página inglesa). &#9888; El estante imprime &laquo;respiro y liberación&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;alivio y liberación&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;ayuda y liberación&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['sharvit'] = ('sharvit', 'UN CETRO &mdash; la vara que el rey extiende: <span data-heb="שרביט הזהב">&laquo;el cetro de oro&raquo; está en dos versículos de la Biblia hebrea</span>, <a href="esther-4.es.html#v4-11">Ester 4:11</a> (ya en estas páginas) y Ester 5:2 (todavía no en estas páginas). &#9888; El estante imprime &laquo;el cetro de oro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['titchalchal'] = ('vattitchalchal', 'RETORCERSE, ser sacudida de angustia &mdash; <span data-heb="ותתחלחל">&laquo;y se retorció&raquo; está en este único versículo</span>, <a href="esther-4.es.html#v4-4">Ester 4:4</a> (ya en estas páginas), la reina al enterarse de Mardoqueo en cilicio. &#9888; El estante imprime &laquo;tuvo gran dolor&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;se angustió mucho&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;quedó muy adolorida&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-1">Esther 4:1</a> and <a href="esther-4.html#v4-3">verse 3</a> (now on these pages) have it with ashes, <span data-heb="שק ואפר">which stands in four verses</span>: Esther 4:1, 4:3, <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> and Daniel 9:3.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-1">Ester 4:1</a> y <a href="esther-4.es.html#v4-3">el versículo 3</a> (ya en estas páginas) lo tienen con ceniza, <span data-heb="שק ואפר">que está en cuatro versículos</span>: Ester 4:1, 4:3, <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> y Daniel 9:3.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-1">Esther 4:1</a> (now on these pages) has it with sackcloth, and <a href="esther-4.html#v4-3">verse 3</a> has them spread as a bed for the many.',) + _t[5:]
+if 'efer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efer']
+    DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-1">Ester 4:1</a> (ya en estas páginas) lo tiene con el cilicio, y <a href="esther-4.es.html#v4-3">el versículo 3</a> los tiene tendidos como lecho para muchos.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shaar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-2">Esther 4:2</a> (now on these pages) has <span data-heb="אין לבוא אל שער המלך">&lsquo;for none could come into the king&rsquo;s gate&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shaar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaar']
+    DICTIONARY_ES['shaar'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-2">Ester 4:2</a> (ya en estas páginas) tiene <span data-heb="אין לבוא אל שער המלך">&laquo;porque no se podía entrar por la puerta del rey&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'medinah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a> (now on these pages) has the word doubled, &lsquo;province and province&rsquo;, wherever the king&rsquo;s word reached; <a href="esther-4.html#v4-11">verse 11</a> has &lsquo;the provinces of the king&rsquo;.',) + _t[5:]
+if 'medinah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['medinah']
+    DICTIONARY_ES['medinah'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a> (ya en estas páginas) tiene la palabra doblada, «provincia y provincia», dondequiera que llegaba la palabra del rey; <a href="esther-4.es.html#v4-11">el versículo 11</a> tiene «las provincias del rey».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have the fast: in every province, and the three days Esther asks of the Jews of Shushan.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) tienen el ayuno: en cada provincia, y los tres días que Ester pide a los judíos de Susa.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-4">Esther 4:4</a> (now on these pages) has the maids&rsquo; coming written <em>tavo&rsquo;ina</em> and read <em>tavo&rsquo;na</em>, and <a href="esther-4.html#v4-7">verse 7</a> has &lsquo;the Jews&rsquo; written <em>biyehudiyyim</em> and read <em>bayehudim</em>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-4">Ester 4:4</a> (ya en estas páginas) tiene la llegada de las doncellas escrita <em>tavo&rsquo;ina</em> y leída <em>tavo&rsquo;na</em>, y <a href="esther-4.es.html#v4-7">el versículo 7</a> tiene «los judíos» escrito <em>biyehudiyyim</em> y leído <em>bayehudim</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saris':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-4">Esther 4:4</a> and <a href="esther-4.html#v4-5">verse 5</a> (now on these pages) have the queen&rsquo;s eunuchs, and Hatach, one of the king&rsquo;s eunuchs set to attend her.',) + _t[5:]
+if 'saris' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saris']
+    DICTIONARY_ES['saris'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-4">Ester 4:4</a> y <a href="esther-4.es.html#v4-5">el versículo 5</a> (ya en estas páginas) tienen los eunucos de la reina, y a Hatac, uno de los eunucos del rey puesto a su servicio.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a>, <a href="esther-4.html#v4-8">verse 8</a>, <a href="esther-4.html#v4-11">verse 11</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages): the king&rsquo;s law that reaches the provinces, the written law copied for Esther, the one law of the inner court, and the law she will go in against.',) + _t[5:]
+if 'dat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['dat']
+    DICTIONARY_ES['dat'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a>, <a href="esther-4.es.html#v4-8">el versículo 8</a>, <a href="esther-4.es.html#v4-11">el versículo 11</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas): la ley del rey que llega a las provincias, la ley escrita copiada para Ester, la única ley del patio interior, y la ley contra la que ella entrará.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chatzer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-11">Esther 4:11</a> (now on these pages) has the inner court, <em>hechatser hapnimit</em>, where the one law is death unless the golden scepter is held out.',) + _t[5:]
+if 'chatzer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chatzer']
+    DICTIONARY_ES['chatzer'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-11">Ester 4:11</a> (ya en estas páginas) tiene el patio interior, <em>hechatser hapnimit</em>, donde la única ley es la muerte salvo que se extienda el cetro de oro.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'abad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have the verb twice: &lsquo;you and your father&rsquo;s house will perish&rsquo; and <span data-heb="כאשר אבדתי אבדתי">&lsquo;if I perish, I perish&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'abad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['abad']
+    DICTIONARY_ES['abad'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) tienen el verbo dos veces: «tú y la casa de tu padre pereceréis» y <span data-heb="כאשר אבדתי אבדתי">«si perezco, que perezca», que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have it twice, the last as &lsquo;if I perish, I perish&rsquo;.',) + _t[5:]
+if 'avad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avad']
+    DICTIONARY_ES['avad'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) lo tienen dos veces, la última como «si perezco, que perezca».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yada':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> (now on these pages) has <span data-heb="ומי יודע">&lsquo;and who knows&rsquo;, which stands in three verses</span>, the question put to Esther.',) + _t[5:]
+if 'yada' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yada']
+    DICTIONARY_ES['yada'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> (ya en estas páginas) tiene <span data-heb="ומי יודע">&laquo;y quién sabe&raquo;, que está en tres versículos</span>, la pregunta hecha a Ester.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Esther', 4, 1), ('Isaiah', 58, 5), 'sackcloth and ashes — and the fast Jehovah questions'),
+    (('Esther', 4, 14), ('Genesis', 32, 17), 'revach — room between the droves'),
+    (('Esther', 4, 14), ('2 Samuel', 12, 22), "'who knows' — the hope that grace may come"),
+    (('Esther', 4, 14), ('Psalms', 90, 11), "'who knows'"),
+    (('Esther', 4, 16), ('Genesis', 43, 14), "'if I perish, I perish' — 'if I am bereaved, I am bereaved'"),
+    (('Esther', 4, 16), ('Isaiah', 58, 6), 'the fast that is chosen'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["est4"] = dict(era='return',
+    when='Mordecai in sackcloth and ashes at the king&rsquo;s gate; fasting and mourning in every province; the queen shaken, sending clothes and then Hatach; the exact sum of the money and the copy of the written law; the one law of the inner court and thirty days uncalled; &ldquo;do not imagine&rdquo;, relief and deliverance from another place, and &ldquo;who knows whether for a time like this&rdquo;; and a three-day fast before she goes in against the law.',
+    clock='Undated in the chapter itself; the book&rsquo;s own sequence puts it after the decree of the thirteenth day of the first month (Esther 3:12, not yet on these pages) and before Esther goes in, in the twelfth year of Xerxes by the book&rsquo;s reckoning (about 474 BC). &#9888; The date rests on the book&rsquo;s chronology as the site has it for Esther 1 (the third year, 483 BC, and the seventh year, 479); this chapter names no year of its own.')
+
+CHAPTER_ART["est4"] = [dict(
+    file='de-gelder-esther-and-mordecai.jpg',
+    title='Esther and Mordecai', title_es='Ester y Mardoqueo',
+    artist='Aert de Gelder', artist_es='Aert de Gelder',
+    year='1685', location='Museum of Fine Arts, Budapest', location_es='Museo de Bellas Artes, Budapest',
+    alt='A dark oil painting of two figures. At the left an older man with a grey beard in a dark cloak and a banded cap leans toward the right and raises one hand, with the thumb and forefinger together as if making a point. At the right a woman in a white lace veil, a pearl necklace and a patterned gown sits looking at him, one hand on her chest and the other on the arm of her chair; in front of her on a red-covered table lies an open book.',
+    alt_es='Un óleo oscuro de dos figuras. A la izquierda un hombre mayor de barba gris, con capa oscura y gorro con banda, se inclina hacia la derecha y levanta una mano, con el pulgar y el índice juntos como para subrayar algo. A la derecha una mujer con velo de encaje blanco, collar de perlas y vestido estampado está sentada mirándolo, con una mano en el pecho y la otra en el brazo de su sillón; delante de ella, sobre una mesa cubierta de rojo, hay un libro abierto.',
+    note='Esther 4:13&ndash;14. De Gelder paints the two of them alone and close together, Mordecai speaking and the queen listening, which is the exchange of the middle of the chapter; the book on the table, the veil and the seventeenth-century dress are the painter&rsquo;s own, and the chapter has Mordecai and Esther speaking only through Hatach, with no face-to-face scene.',
+    note_es='Ester 4:13&ndash;14. De Gelder pinta a los dos solos y muy juntos, Mardoqueo hablando y la reina escuchando, que es el intercambio de la mitad del capítulo; el libro sobre la mesa, el velo y el traje del siglo XVII son del propio pintor, y el capítulo hace hablar a Mardoqueo y a Ester solo por medio de Hatac, sin escena cara a cara.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Aert_de_Gelder_-_Esther_and_Mordecai_-_WGA8524.jpg')]
+
