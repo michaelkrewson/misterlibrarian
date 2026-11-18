@@ -60199,3 +60199,168 @@ CHAPTER_ART["psalms138"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Psautier_de_Paris,_MSS._gr._139,_fol._1v.jpg')]
 
+
+
+# Appended to library_data.py for Isaiah 58 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('agmon', 'agmon', 'אַגְמוֹן', 'agmon', 'A RUSH, a reed &mdash; the plant that bends: <span data-heb="כאגמן ראשו">&lsquo;like a rush his head&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages), the bowed head of a fast. &#9888; The shelf prints &lsquo;a bulrush&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a reed&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a rush&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;like a circle&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 5)))
+DICTIONARY.append(('chartsubbot', 'chartsubbot', 'חַרְצֻבּוֹת', 'chartsubbot', 'BONDS, shackles &mdash; a rare word: <span data-heb="חרצבות">it stands in two verses of the Hebrew Bible</span>, <span data-heb="פתח חרצבות רשע">&lsquo;to loosen the bonds of wickedness&rsquo;, which stands in this one verse</span>, <a href="isaiah-58.html#v58-6">Isaiah 58:6</a> (now on these pages), and Psalm 73:4 (not yet on these pages). &#9888; The shelf prints &lsquo;bands&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;chains&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;fetters&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 58, 6)))
+DICTIONARY.append(('ratsuts', 'ratsuts', 'רָצוּץ', 'retsutsim', 'CRUSHED &mdash; the broken, the oppressed: <span data-heb="שלח רצוצים חפשים">&lsquo;to send the crushed away free&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-6">Isaiah 58:6</a> (now on these pages), the line that <a href="luke-4.html#v4-18">Luke 4:18</a> (now on these pages) takes from the Greek of this verse. &#9888; The shelf prints &lsquo;the oppressed&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the crushed ones&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;them that are broken&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 6)))
+DICTIONARY.append(('tsachtsachot', 'tsachtsachot', 'צַחְצָחוֹת', 'tsachtsachot', 'PARCHED PLACES &mdash; a word that <span data-heb="בצחצחות">stands in this one verse</span>: <span data-heb="בצחצחות נפשך">&lsquo;satisfy your soul in parched places&rsquo;</span>, <a href="isaiah-58.html#v58-11">Isaiah 58:11</a> (now on these pages). &#9888; The shelf prints &lsquo;drought&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a sun-scorched land&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a scorched land&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, reading it as bright, &lsquo;brightness&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 11)))
+DICTIONARY.append(('kazav', 'kazav', 'כָּזַב', 'yekhazzevu', 'TO LIE, to fail &mdash; the verb of a spring that deceives: <span data-heb="אשר לא יכזבו מימיו">&lsquo;whose waters do not lie&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-11">Isaiah 58:11</a> (now on these pages). &#9888; The shelf prints &lsquo;whose waters fail not&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;whose waters never fail&rsquo; (<span class="tag t-niv">NIV</span>) and, literally, &lsquo;the waters of which do not lie&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 58, 11)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['agmon'] = ('agmon', 'UN JUNCO, una caña &mdash; la planta que se dobla: <span data-heb="כאגמן ראשו">&laquo;como junco su cabeza&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas), la cabeza inclinada de un ayuno. &#9888; El estante imprime &laquo;como junco&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chartsubbot'] = ('chartsubbot', 'LIGADURAS, grilletes &mdash; una palabra rara: <span data-heb="חרצבות">está en dos versículos de la Biblia hebrea</span>, <span data-heb="פתח חרצבות רשע">&laquo;desatar las ligaduras de la maldad&raquo;, que está en este único versículo</span>, <a href="isaiah-58.es.html#v58-6">Isaías 58:6</a> (ya en estas páginas), y el Salmo 73:4 (todavía no en estas páginas). &#9888; El estante imprime &laquo;ligaduras&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;cadenas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;grilletes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['ratsuts'] = ('retsutsim', 'APLASTADO, quebrantado &mdash; el roto, el oprimido: <span data-heb="שלח רצוצים חפשים">&laquo;enviar libres a los quebrantados&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-6">Isaías 58:6</a> (ya en estas páginas), la línea que <a href="luke-4.es.html#v4-18">Lucas 4:18</a> (ya en estas páginas) toma del griego de este versículo. &#9888; El estante imprime &laquo;los quebrantados&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;los oprimidos&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;los aplastados&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tsachtsachot'] = ('tsachtsachot', 'LUGARES RESECOS &mdash; una palabra que <span data-heb="בצחצחות">está en este único versículo</span>: <span data-heb="בצחצחות נפשך">&laquo;saciará tu alma en lugares resecos&raquo;</span>, <a href="isaiah-58.es.html#v58-11">Isaías 58:11</a> (ya en estas páginas). &#9888; El estante imprime &laquo;las sequías&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;tierras resecas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una tierra abrasada&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kazav'] = ('yekhazzevu', 'MENTIR, fallar &mdash; el verbo de un manantial que engaña: <span data-heb="אשר לא יכזבו מימיו">&laquo;cuyas aguas no mienten&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-11">Isaías 58:11</a> (ya en estas páginas). &#9888; El estante imprime &laquo;cuyas aguas nunca faltan&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;cuyas aguas no se agotan&raquo; (<span class="tag t-nvi">NVI</span>) y, literalmente, &laquo;cuyas aguas no mienten&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shofar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-1">Isaiah 58:1</a> (now on these pages) has the voice raised like a ram&rsquo;s horn: <span data-heb="כשופר הרם קולך">&lsquo;raise your voice like a ram&rsquo;s horn&rsquo; stands in this one verse</span>.',) + _t[5:]
+if 'shofar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shofar']
+    DICTIONARY_ES['shofar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-1">Isaías 58:1</a> (ya en estas páginas) tiene la voz alzada como un cuerno de carnero: <span data-heb="כשופר הרם קולך">&laquo;alza tu voz como un cuerno de carnero&raquo; está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-2">Isaiah 58:2</a>, <a href="isaiah-58.html#v58-3">verse 3</a> and <a href="isaiah-58.html#v58-13">verse 13</a> (now on these pages) carry the root as sincere delight and as self-interest.',) + _t[5:]
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-2">Isaías 58:2</a>, <a href="isaiah-58.es.html#v58-3">el versículo 3</a> y <a href="isaiah-58.es.html#v58-13">el versículo 13</a> (ya en estas páginas) llevan la raíz como deleite sincero y como interés propio.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a>, <a href="isaiah-58.html#v58-5">verse 5</a> and <a href="isaiah-58.html#v58-6">verse 6</a> (now on these pages) are the chapter of the fast: &lsquo;is this the fast I choose?&rsquo;.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a>, <a href="isaiah-58.es.html#v58-5">el versículo 5</a> y <a href="isaiah-58.es.html#v58-6">el versículo 6</a> (ya en estas páginas) son el capítulo del ayuno: &laquo;¿es este el ayuno que yo escojo?&raquo;.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a> (now on these pages) has <span data-heb="ענינו נפשנו">&lsquo;we afflicted our soul&rsquo;, which stands in this one verse</span>, and <a href="isaiah-58.html#v58-5">verse 5</a> the day for a man to afflict his soul.',) + _t[5:]
+if 'anah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anah']
+    DICTIONARY_ES['anah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a> (ya en estas páginas) tiene <span data-heb="ענינו נפשנו">&laquo;afligimos nuestra alma&raquo;, que está en este único versículo</span>, y <a href="isaiah-58.es.html#v58-5">el versículo 5</a> el día para que el hombre aflija su alma.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'noges':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a> (now on these pages) has the verb of the taskmasters turned on the fasters: <em>tigghesu</em>, &lsquo;you drive&rsquo; your workers.',) + _t[5:]
+if 'noges' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['noges']
+    DICTIONARY_ES['noges'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a> (ya en estas páginas) tiene el verbo de los capataces vuelto contra los que ayunan: <em>tigghesu</em>, «apremiáis» a vuestros trabajadores.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'perets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-12">Isaiah 58:12</a> (now on these pages) has <span data-heb="גדר פרץ">&lsquo;the repairer of the breach&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'perets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['perets']
+    DICTIONARY_ES['perets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-12">Isaías 58:12</a> (ya en estas páginas) tiene <span data-heb="גדר פרץ">&laquo;el reparador de la brecha&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-14">Isaiah 58:14</a> (now on these pages) has the high places written <em>bamoti</em> and read <em>bamatei</em>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-14">Isaías 58:14</a> (ya en estas páginas) tiene las alturas escritas <em>bamoti</em> y leídas <em>bamatei</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hineni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-9">Isaiah 58:9</a> (now on these pages) has it in the mouth of Jehovah: &lsquo;Here I am&rsquo;, in answer to a call.',) + _t[5:]
+if 'hineni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hineni']
+    DICTIONARY_ES['hineni'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-9">Isaías 58:9</a> (ya en estas páginas) lo tiene en boca de Jehová: «Aquí estoy», en respuesta a un clamor.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaved':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has the holy day of Jehovah &lsquo;honored&rsquo; and the verb &lsquo;honor it&rsquo;.',) + _t[5:]
+if 'kaved' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaved']
+    DICTIONARY_ES['kaved'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene el día santo de Jehová «honrado» y el verbo «lo honras».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages) has <span data-heb="ושק ואפר יציע">&lsquo;sackcloth and ashes he spreads&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas) tiene <span data-heb="ושק ואפר יציע">&laquo;cilicio y ceniza tiende&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages) pairs it with sackcloth for the bowed head of a fast.',) + _t[5:]
+if 'efer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efer']
+    DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas) lo empareja con el cilicio para la cabeza inclinada de un ayuno.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shachar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-8">Isaiah 58:8</a> (now on these pages) has <span data-heb="יבקע כשחר אורך">&lsquo;your light will break out like the dawn&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shachar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shachar']
+    DICTIONARY_ES['shachar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-8">Isaías 58:8</a> (ya en estas páginas) tiene <span data-heb="יבקע כשחר אורך">&laquo;tu luz brotará como el alba&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anog':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has <span data-heb="וקראת לשבת ענג">&lsquo;and call the sabbath a delight&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'anog' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anog']
+    DICTIONARY_ES['anog'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene <span data-heb="וקראת לשבת ענג">&laquo;y llamas al sábado delicia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-10">Isaiah 58:10</a> (now on these pages) has the self given to the hungry: <span data-heb="ותפק לרעב נפשך">&lsquo;and you pour out your soul for the hungry&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nefesh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nefesh']
+    DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-10">Isaías 58:10</a> (ya en estas páginas) tiene el yo dado al hambriento: <span data-heb="ותפק לרעב נפשך">&laquo;y derramas tu alma por el hambriento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shabbat-noun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has the sabbath turned from the foot&rsquo;s own pleasure and called a delight.',) + _t[5:]
+if 'shabbat-noun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shabbat-noun']
+    DICTIONARY_ES['shabbat-noun'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene el sábado apartado del gusto propio del pie y llamado delicia.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'inuy-nefesh':
+        assert 'at Isaiah 58:3, 5 and Psalm 35:13 (neither yet on these pages)' in _t[4], 'inuy-nefesh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('at Isaiah 58:3, 5 and Psalm 35:13 (neither yet on these pages)', 'at <a href="isaiah-58.html#v58-3">Isaiah 58:3</a>, <a href="isaiah-58.html#v58-5">5</a> (now on these pages) and Psalm 35:13 (not yet on these pages)'),) + _t[5:]
+if 'inuy-nefesh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['inuy-nefesh']
+    assert 'en Isa&iacute;as 58:3, 5 y Salmo 35:13 (ninguno todav&iacute;a en estas p&aacute;ginas)' in _d[1], 'inuy-nefesh'
+    DICTIONARY_ES['inuy-nefesh'] = (_d[0], _d[1].replace('en Isa&iacute;as 58:3, 5 y Salmo 35:13 (ninguno todav&iacute;a en estas p&aacute;ginas)', 'en <a href="isaiah-58.es.html#v58-3">Isa&iacute;as 58:3</a>, <a href="isaiah-58.es.html#v58-5">5</a> (ya en estas p&aacute;ginas) y Salmo 35:13 (todav&iacute;a no en estas p&aacute;ginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'alam':
+        assert 'Isaiah 58:7 is the one that matters (not yet on these pages)' in _t[4], 'alam'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Isaiah 58:7 is the one that matters (not yet on these pages)', '<a href="isaiah-58.html#v58-7">Isaiah 58:7</a> is the one that matters (now on these pages)'),) + _t[5:]
+if 'alam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['alam']
+    assert 'Isaías 58:7 (todavía no en estas páginas)' in _d[1], 'alam'
+    DICTIONARY_ES['alam'] = (_d[0], _d[1].replace('Isaías 58:7 (todavía no en estas páginas)', '<a href="isaiah-58.es.html#v58-7">Isaías 58:7</a> (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 58, 3), ('Leviticus', 16, 29), 'afflicting the soul'),
+    (('Isaiah', 58, 3), ('Exodus', 5, 6), "the taskmasters' verb, turned on the fasters"),
+    (('Isaiah', 58, 5), ('Matthew', 6, 16), 'the fast that is not for show'),
+    (('Isaiah', 58, 6), ('Luke', 4, 18), 'send the crushed free — spliced into the reading of Isaiah 61'),
+    (('Isaiah', 58, 6), ('Isaiah', 61, 1), 'the oppressed set free'),
+    (('Isaiah', 58, 7), ('Matthew', 25, 35), 'the hungry fed, the naked covered'),
+    (('Isaiah', 58, 7), ('Isaiah', 1, 17), 'relieve the oppressed — the same demand'),
+    (('Isaiah', 58, 9), ('Isaiah', 6, 8), "'Here I am' — in the prophet's mouth, and now in God's"),
+    (('Isaiah', 58, 10), ('Isaiah', 9, 1), 'light in the darkness'),
+    (('Isaiah', 58, 11), ('Jeremiah', 31, 12), 'like a watered garden'),
+    (('Isaiah', 58, 12), ('Isaiah', 61, 4), 'build the ruins of long ago'),
+    (('Isaiah', 58, 13), ('Exodus', 20, 8), 'remember the sabbath day'),
+    (('Isaiah', 58, 14), ('Psalms', 37, 4), 'delight yourself in Jehovah'),
+    (('Isaiah', 58, 14), ('Deuteronomy', 32, 13), 'ride on the high places of the earth'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa58"] = dict(era='exile',
+    when='A people that seeks God every day and asks why its fasting is not seen; the answer, that on the fast day they find their own pleasure and drive their workers; the fast that Jehovah chooses (loosen the yoke, break your bread for the hungry, do not hide from your own flesh); the light that breaks out like the dawn, &ldquo;Here I am&rdquo;, the repairer of the breach; and the sabbath called a delight.',
+    clock='Undated. The chapter names no king, no city and no occasion, and it sits in the second half of Isaiah, which this site files with the exile; the ruins to be built (verse 12) and the paths to be restored are what the chapter itself says. &#9888; The book&rsquo;s own place for it is a cry to a people that already fasts and keeps the sabbath, and nothing in it fixes the year.')
+
+CHAPTER_ART["isa58"] = [dict(
+    file='master-of-alkmaar-feeding-the-hungry.jpg',
+    title='The Seven Works of Mercy: Feeding the Hungry', title_es='Las siete obras de misericordia: dar de comer al hambriento',
+    artist='Master of Alkmaar', artist_es='Maestro de Alkmaar',
+    year='1504', location='Rijksmuseum, Amsterdam', location_es='Rijksmuseum, Ámsterdam',
+    alt='A tall oil panel of a Dutch street in sunlight. At the left a woman in a white cap and apron stands in a doorway holding a basket of round loaves, and a young man in a black cap and dark coat takes loaves from it and hands them to a crowd of poor people: a woman in green and a pink headcloth, an old man in a torn red cloak, a child held up, and, kneeling on the cobbles in the foreground, a crippled man in blue who stretches up a hand. A long-haired figure in grey stands among them, and a small dog sits at the lower left. Behind, in the square, a man plays a lute among market stalls, and the paint is lost along the top edge.',
+    alt_es='Un alto panel al óleo de una calle holandesa a plena luz. A la izquierda una mujer con toca blanca y delantal está en una puerta con una cesta de panes redondos, y un joven con gorro negro y abrigo oscuro toma panes de ella y los reparte a una multitud de pobres: una mujer de verde y pañuelo rosa, un anciano con una capa roja rota, un niño en alto y, arrodillado sobre los adoquines en primer plano, un hombre lisiado de azul que levanta una mano. Entre ellos hay una figura de pelo largo con ropa gris, y un perrito está sentado abajo a la izquierda. Al fondo, en la plaza, un hombre toca un laúd entre puestos de mercado, y se ha perdido la pintura en el borde superior.',
+    note='Isaiah 58:7. The panel is the first of seven by the Master of Alkmaar on the works of mercy, and the Rijksmuseum&rsquo;s catalogue says Christ is among the hungry; it is the chapter&rsquo;s &ldquo;break your bread for the hungry&rdquo; set in a sixteenth-century Dutch street, which is the painter&rsquo;s own scene and not Isaiah&rsquo;s. Another panel of the same series, clothing the naked, is on the James 2 page.',
+    note_es='Isaías 58:7. El panel es el primero de siete del Maestro de Alkmaar sobre las obras de misericordia, y el catálogo del Rijksmuseum dice que Cristo está entre los hambrientos; es el «parte tu pan al hambriento» del capítulo puesto en una calle holandesa del siglo XVI, que es la escena del pintor y no la de Isaías. Otro panel de la misma serie, vestir al desnudo, está en la página de Santiago 2.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:De_zeven_werken_van_barmhartigheid_Rijksmuseum_SK-A-2815-1.jpeg')]
+
