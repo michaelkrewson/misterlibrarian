@@ -59669,3 +59669,102 @@ CHAPTER_ART["psalms42"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:The_Monarch_of_the_Glen,_Edwin_Landseer,_1851.png')]
 
+
+
+# Appended to library_data.py for Ezekiel 37 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('gidim', 'gidim', 'גִּדִים', 'gidim', 'SINEWS &mdash; the tendons and cords that bind a body together. <span data-heb="גידים">The word stands in six verses of the Hebrew Bible</span>, among them Job 10:11 and <a href="ezekiel-37.html#v37-6">Ezekiel 37:6</a> (now on these pages), where they are the first thing God lays on the dry bones. &#11088; The rebuilding goes inward to outward: sinews, flesh, skin, and last the breath. &#9888; The shelf prints &lsquo;sinews&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;tendons&rsquo; (<span class="tag t-niv">NIV</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;muscles&rsquo;.', ('Ezekiel', 37, 6)))
+DICTIONARY.append(('biqah', "biq'ah", 'בִּקְעָה', "biq'ah", 'A VALLEY, a broad plain between hills &mdash; from <em>baqa</em>, to split. <span data-heb="בתוך הבקעה">&lsquo;In the middle of the valley&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-1">Ezekiel 37:1</a> (now on these pages), where the valley is full of bones. &#9888; The shelf prints &lsquo;the valley&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the valley plain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;a plain&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;a valley full of old, dry bones&rsquo;.', ('Ezekiel', 37, 1)))
+DICTIONARY.append(('raash', "ra'ash", 'רַעַשׁ', "ra'ash", 'A RATTLING, a quaking &mdash; the sound of something shaking. <span data-heb="והנה רעש">&lsquo;And behold, a rattling&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="ezekiel-37.html#v37-7">Ezekiel 37:7</a> (now on these pages), where the bones come together bone to its bone, and Jeremiah 4:24, where the mountains quake. &#9888; The shelf prints &lsquo;a shaking&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;a rattling sound&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a rattling&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;a commotion&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;a rattling noise&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Ezekiel', 37, 7)))
+DICTIONARY.append(('qever', 'qever', 'קֶבֶר', 'qever', 'A GRAVE, a burial place. <span data-heb="פתח את קברותיכם">&lsquo;I am opening your graves&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-12">Ezekiel 37:12</a> (now on these pages), and the graves are opened again in verse 13: the people say their bones are dry and their hope is lost, and God answers by opening the place they are put. &#9888; The shelf prints &lsquo;graves&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;burial places&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;sepulchres&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;graves of exile&rsquo;, which adds a word the Hebrew does not have.', ('Ezekiel', 37, 12)))
+DICTIONARY.append(('etz', 'etz', 'עֵץ', 'etz', 'WOOD, a tree, a stick. <span data-heb="קח לך עץ אחד">&lsquo;Take for yourself one stick&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-16">Ezekiel 37:16</a> (now on these pages), the first of the two pieces of wood on which the prophet writes Judah and Joseph and then joins in his hand. &#9888; The shelf prints &lsquo;stick&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;a stick of wood&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a piece of wood&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;Take a stick and carve on it&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Ezekiel', 37, 16)))
+DICTIONARY.append(('miqdash', 'miqdash', 'מִקְדָּשׁ', 'miqdash', 'A SANCTUARY &mdash; a holy place, from <em>qadash</em>, to be set apart. <span data-heb="ונתתי את מקדשי בתוכם">&lsquo;And I will set my sanctuary in their midst&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-26">Ezekiel 37:26</a> (now on these pages), and <span data-heb="מקדש את ישראל">&lsquo;who sanctifies Israel&rsquo; stands in this one verse</span>, <a href="ezekiel-37.html#v37-28">Ezekiel 37:28</a>. &#9888; The shelf prints &lsquo;my sanctuary&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), and for the <span class="tag t-tlb">TLB</span> &lsquo;my Temple&rsquo;.', ('Ezekiel', 37, 26)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['gidim'] = ('gidim', 'TENDONES &mdash; las cuerdas que atan un cuerpo. <span data-heb="גידים">La palabra está en seis versículos de la Biblia hebrea</span>, entre ellos Job 10:11 y <a href="ezekiel-37.es.html#v37-6">Ezequiel 37:6</a> (ya en estas páginas), donde es lo primero que Dios pone sobre los huesos secos. &#11088; La reconstrucción va de dentro hacia fuera: tendones, carne, piel, y al final el aliento. &#9888; El estante imprime &laquo;nervios&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;tendones&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['biqah'] = ('biqah', 'UN VALLE, una llanura ancha entre colinas &mdash; de <em>baqa</em>, partir. <span data-heb="בתוך הבקעה">&laquo;En medio del valle&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-1">Ezequiel 37:1</a> (ya en estas páginas), donde el valle está lleno de huesos. &#9888; El estante imprime &laquo;un campo&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;un valle&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la llanura&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['raash'] = ('raash', 'UN ESTRUENDO, un temblor &mdash; el sonido de algo que se sacude. <span data-heb="והנה רעש">&laquo;Y he aquí un estruendo&raquo; está en dos versículos de la Biblia hebrea</span>: <a href="ezekiel-37.es.html#v37-7">Ezequiel 37:7</a> (ya en estas páginas), donde los huesos se juntan, hueso a su hueso, y Jeremías 4:24, donde tiemblan los montes. &#9888; El estante imprime &laquo;un temblor&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;un ruido que sacudió la tierra&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;un matraqueo&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;un traqueteo intenso&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['qever'] = ('qever', 'UN SEPULCRO, un lugar de entierro. <span data-heb="פתח את קברותיכם">&laquo;Yo abro sus sepulcros&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-12">Ezequiel 37:12</a> (ya en estas páginas), y los sepulcros se abren otra vez en el versículo 13: el pueblo dice que sus huesos están secos y que su esperanza se ha perdido, y Dios responde abriendo el lugar donde los ponen. &#9888; El estante imprime &laquo;sepulcros&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;tumbas&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;sepulturas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['etz'] = ('etz', 'MADERA, un árbol, un palo. <span data-heb="קח לך עץ אחד">&laquo;Toma para ti un palo&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-16">Ezequiel 37:16</a> (ya en estas páginas), el primero de los dos trozos de madera en que el profeta escribe Judá y José y luego junta en su mano. &#9888; El estante imprime &laquo;un palo&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;una vara&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['miqdash'] = ('miqdash', 'UN SANTUARIO &mdash; un lugar santo, de <em>qadash</em>, ser apartado. <span data-heb="ונתתי את מקדשי בתוכם">&laquo;Y pondré mi santuario en medio de ellos&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-26">Ezequiel 37:26</a> (ya en estas páginas), y <span data-heb="מקדש את ישראל">&laquo;el que santifica a Israel&raquo; está en este único versículo</span>, <a href="ezekiel-37.es.html#v37-28">Ezequiel 37:28</a>. &#9888; El estante imprime &laquo;mi santuario&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-5">Ezekiel 37:5&ndash;14</a> (now on these pages) is the chapter of the word: breath, wind and spirit in one noun. <span data-heb="מביא בכם רוח">&lsquo;I am bringing breath into you&rsquo; stands in this one verse</span>, <span data-heb="וחייתם">and &lsquo;and you will live&rsquo; stands in three</span>; the shelf prints &lsquo;breath&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;spirit&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;the wind&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>, in verse 9).',) + _t[5:]
+    if _t[0] == 'etsem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-7">Ezekiel 37:7</a> (now on these pages) has <span data-heb="עצם אל עצמו">&lsquo;bone to its bone&rsquo;, which stands in this one verse</span>, the bones of the valley coming together.',) + _t[5:]
+    if _t[0] == 'chayil':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-10">Ezekiel 37:10</a> (now on these pages) has <span data-heb="חיל גדול מאד מאד">&lsquo;an army, very, very great&rsquo;, which stands in this one verse</span>, the bones risen and standing.',) + _t[5:]
+    if _t[0] == 'tiqvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-11">Ezekiel 37:11</a> (now on these pages) quotes the people: <span data-heb="ואבדה תקותנו">&lsquo;and our hope is lost&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nasi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-25">Ezekiel 37:25</a> (now on these pages) has <span data-heb="נשיא להם לעולם">&lsquo;prince to them forever&rsquo;, which stands in this one verse</span>, said of David my servant.',) + _t[5:]
+    if _t[0] == 'gillulim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-23">Ezekiel 37:23</a> (now on these pages) has <span data-heb="בגלוליהם ובשקוציהם">&lsquo;with their idols and with their detestable things&rsquo;, which stands in this one verse</span>; the <span class="tag t-nwt">NWT&nbsp;1984</span> prints &lsquo;dungy idols&rsquo;.',) + _t[5:]
+    if _t[0] == 'mishkan':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-27">Ezekiel 37:27</a> (now on these pages) has <span data-heb="והיה משכני עליהם">&lsquo;and my dwelling will be over them&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-22">Ezekiel 37:22</a> (now on these pages) has the verb written <em>yihyeh</em>, &lsquo;he will be&rsquo;, and read <em>yihyu</em>, &lsquo;they will be&rsquo;, in &lsquo;they will no more be two nations&rsquo;.',) + _t[5:]
+_d = DICTIONARY_ES['ruach']
+DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-5">Ezequiel 37:5&ndash;14</a> (ya en estas páginas) es el capítulo de la palabra: aliento, viento y espíritu en un solo sustantivo. <span data-heb="מביא בכם רוח">&laquo;Yo hago entrar aliento en ustedes&raquo; está en este único versículo</span>, <span data-heb="וחייתם">y &laquo;y vivirán&raquo; está en tres</span>; el estante imprime &laquo;espíritu&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;aliento&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;viento&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, en el versículo 9).')
+_d = DICTIONARY_ES['etsem']
+DICTIONARY_ES['etsem'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-7">Ezequiel 37:7</a> (ya en estas páginas) tiene <span data-heb="עצם אל עצמו">&laquo;hueso a su hueso&raquo;, que está en este único versículo</span>, los huesos del valle juntándose.')
+_d = DICTIONARY_ES['chayil']
+DICTIONARY_ES['chayil'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-10">Ezequiel 37:10</a> (ya en estas páginas) tiene <span data-heb="חיל גדול מאד מאד">&laquo;un ejército muy, muy grande&raquo;, que está en este único versículo</span>, los huesos levantados y de pie.')
+_d = DICTIONARY_ES['tiqvah']
+DICTIONARY_ES['tiqvah'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-11">Ezequiel 37:11</a> (ya en estas páginas) cita al pueblo: <span data-heb="ואבדה תקותנו">&laquo;y se ha perdido nuestra esperanza&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nasi']
+DICTIONARY_ES['nasi'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-25">Ezequiel 37:25</a> (ya en estas páginas) tiene <span data-heb="נשיא להם לעולם">&laquo;príncipe para ellos para siempre&raquo;, que está en este único versículo</span>, dicho de David mi siervo.')
+_d = DICTIONARY_ES['gillulim']
+DICTIONARY_ES['gillulim'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-23">Ezequiel 37:23</a> (ya en estas páginas) tiene <span data-heb="בגלוליהם ובשקוציהם">&laquo;con sus ídolos y con sus cosas detestables&raquo;, que está en este único versículo</span>; la <span class="tag t-tnm">TNM&nbsp;1987</span> imprime &laquo;ídolos estercolizos&raquo;.')
+_d = DICTIONARY_ES['mishkan']
+DICTIONARY_ES['mishkan'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-27">Ezequiel 37:27</a> (ya en estas páginas) tiene <span data-heb="והיה משכני עליהם">&laquo;y mi morada estará sobre ellos&raquo;, que está en este único versículo</span>.')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-22">Ezequiel 37:22</a> (ya en estas páginas) tiene el verbo escrito <em>yihyeh</em>, «será», y leído <em>yihyu</em>, «serán», en «nunca más serán dos naciones».')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emphysao':
+        assert '(Ezekiel 37, not yet on these pages)' in _t[4], 'emphysao'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Ezekiel 37, not yet on these pages)', '(<a href="ezekiel-37.html#v37-9">Ezekiel 37</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['emphysao']
+assert '(Ezequiel 37, todavía no en estas páginas)' in _d[1], 'emphysao'
+DICTIONARY_ES['emphysao'] = (_d[0], _d[1].replace('(Ezequiel 37, todavía no en estas páginas)', '(<a href="ezekiel-37.es.html#v37-9">Ezequiel 37</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Ezekiel', 37, 5), ('Genesis', 2, 7), 'God breathes into the dust and it lives — the breath, again, into the bones'),
+    (('Ezekiel', 37, 9), ('John', 20, 22), 'he breathed on them — the verb of the valley, the verb of the upper room'),
+    (('Ezekiel', 37, 10), ('Revelation', 11, 11), 'the breath of life enters them and they stand — the valley, reduced to two bodies'),
+    (('Ezekiel', 37, 16), ('1 Kings', 12, 16), 'Judah and Joseph — the two pieces of wood and the two kingdoms'),
+    (('Ezekiel', 37, 16), ('Numbers', 17, 3), 'a name written on wood — the staffs of the tribes'),
+    (('Ezekiel', 37, 22), ('2 Samuel', 7, 23), 'one nation — Israel as unlike any other nation, now one again'),
+    (('Ezekiel', 37, 23), ('Titus', 2, 14), 'they will be my people; I will cleanse them'),
+    (('Ezekiel', 37, 24), ('2 Samuel', 7, 16), 'my servant David, king — the house made sure forever'),
+    (('Ezekiel', 37, 26), ('Isaiah', 55, 3), 'an everlasting covenant'),
+    (('Ezekiel', 37, 26), ('Numbers', 25, 12), 'a covenant of peace — Phinehas, and the people'),
+    (('Ezekiel', 37, 27), ('Leviticus', 26, 11), 'my dwelling set among them'),
+    (('Ezekiel', 37, 28), ('Exodus', 31, 13), 'I am Jehovah who sanctifies'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["ezek37"] = dict(era='exile',
+    when='A vision in a valley full of dry bones: the prophet is asked whether they can live, told to prophesy to the bones and then to the breath, and they rise, an army; the bones are the whole house of Israel, who say their hope is lost, and Jehovah will open their graves and put his spirit in them; two sticks, Judah and Joseph, joined in one hand; one nation and one king, David my servant, a covenant of peace, and a sanctuary in their midst forever.',
+    clock='Undated in the chapter itself. It is placed with the exile because the people in the vision are cut off from their land and the promise is to bring them back to it; the book dates its other visions from the deportation of 597 BC, and this one carries no date. &#9888; The chapter reads the bones as the whole house of Israel, not as individuals rising, and the Hebrew says so in verse 11.')
+
+CHAPTER_ART["ezek37"] = [dict(
+    file='dore-valley-of-dry-bones.jpg',
+    title='The Vision of the Valley of Dry Bones', title_es='La visión del valle de los huesos secos',
+    artist='Gustave Doré', artist_es='Gustave Doré',
+    year='1866', location='Wood engraving for the Doré Bible', location_es='Grabado en madera para la Biblia de Doré',
+    alt='A black-and-white wood engraving of a night valley crowded with skeletons. At the top a bearded figure in a long robe stands on a cloud under a crescent moon, looking down. Below him the skeletons rise from the ground, some wrapped in cloth with arms raised, some sitting, some fallen, among scattered skulls and bones; at upper left two half-formed figures with flesh on their bodies stand or sit.',
+    alt_es='Un grabado en madera en blanco y negro de un valle nocturno lleno de esqueletos. Arriba, una figura barbada con túnica larga está de pie sobre una nube bajo una luna creciente, mirando hacia abajo. Debajo de ella los esqueletos se levantan del suelo, algunos envueltos en telas con los brazos en alto, otros sentados, otros caídos, entre cráneos y huesos dispersos; arriba a la izquierda, dos figuras a medio formar con carne en el cuerpo están de pie o sentadas.',
+    note='Ezekiel 37. Doré draws the order of verses 7 and 8 as one scene: bones joining, some already with flesh, and the prophet above them. The cloud and the moon are his, not the text&rsquo;s; the Hebrew has only the valley, and does not say it was night.',
+    note_es='Ezequiel 37. Doré dibuja el orden de los versículos 7 y 8 como una sola escena: huesos que se juntan, algunos ya con carne, y el profeta encima. La nube y la luna son suyas, no del texto; el hebreo solo tiene el valle, y no dice que fuera de noche.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:127.Ezekiel%E2%80%99s_Vision_of_the_Valley_of_Dry_Bones.jpg')]
+
