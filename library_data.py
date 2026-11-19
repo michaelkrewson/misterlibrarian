@@ -62597,3 +62597,83 @@ CHAPTER_ART["isa35"] = [dict(
     license='CC BY 4.0',
     source_url='https://commons.wikimedia.org/wiki/File:Wilderness_of_Engedi,_with_the_monastery_of_St._Saba,_lookin_Wellcome_V0049464.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 145 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('kafaf', 'kafaf', 'כָּפַף', 'kafaf', 'TO BOW, to bend down &mdash; the root of <em>kefufim</em>, &lsquo;the bowed down&rsquo;, the ones Jehovah raises. <span data-heb="זוקף לכל הכפופים">&lsquo;raises up all who are bowed down&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-145.html#v145-14">Psalm 145:14</a> (now on these pages), beside the verb <em>zaqaf</em>, &lsquo;to raise up&rsquo;. &#9888; The shelf prints &lsquo;bowed down&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;cast down&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;those bent beneath their loads&rsquo; (<span class="tag t-tlb">TLB</span>). A woman bent double is stood straight in <a href="luke-13.html#v13-13">Luke 13:13</a>.', ('Psalms', 145, 14)))
+DICTIONARY.append(('sabar', 'sabar', 'שָׂבַר', 'sabar', 'TO LOOK WITH HOPE, to wait expectantly &mdash; the eyes turned toward one who is expected to give. <span data-heb="עיני כל אליך ישברו">&lsquo;the eyes of all look to you with hope&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-145.html#v145-15">Psalm 145:15</a> (now on these pages), where the thing awaited is food in its time. &#9888; The shelf prints &lsquo;wait upon thee&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;look to you&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;look hopefully&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;hope in thee&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;look up to you for help&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 145, 15)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['kafaf'] = ('kafaf', 'DOBLARSE, encorvarse &mdash; la raíz de <em>kefufim</em>, «los encorvados», los que Jehová levanta. <span data-heb="זוקף לכל הכפופים">«levanta a todos los encorvados» está en este único versículo de la Biblia hebrea</span>, <a href="psalms-145.es.html#v145-14">Salmo 145:14</a> (ya en estas páginas), junto al verbo <em>zaqaf</em>, «levantar». &#9888; El estante imprime «oprimidos» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «agobiados» (<span class="tag t-nvi">NVI</span>) y «encorvados» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>). Una mujer doblada se pone derecha en <a href="luke-13.html#v13-13">Lucas 13:13</a>.')
+DICTIONARY_ES['sabar'] = ('sabar', 'MIRAR CON ESPERANZA, esperar con expectación &mdash; los ojos vueltos hacia quien se espera que dé. <span data-heb="עיני כל אליך ישברו">«los ojos de todos esperan en ti» está en este único versículo de la Biblia hebrea</span>, <a href="psalms-145.es.html#v145-15">Salmo 145:15</a> (ya en estas páginas), donde lo esperado es el alimento a su tiempo. &#9888; El estante imprime «esperan en ti» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «se posan en ti» (<span class="tag t-nvi">NVI</span>), «miran con esperanza» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «miran con ojos llenos de esperanza» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-8">Psalm 145:8</a> (now on these pages): <span data-heb="ארך אפים וגדל חסד">&lsquo;slow to anger and great in loyal love&rsquo; stands in this one verse</span>, and <span data-heb="גדל חסד">&lsquo;great in loyal love&rsquo; stands in three verses</span>, with Genesis 19:19 and Numbers 14:19.',) + _t[5:]
+    if _t[0] == 'chasid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-10">Psalm 145:10</a> and <a href="psalms-145.html#v145-17">145:17</a> (now on these pages): <em>chasidekha</em>, &lsquo;your loyal ones&rsquo;, bless him, and he himself is <em>chasid</em> &lsquo;in all his works&rsquo; &mdash; and the shelf prints the word as &lsquo;saints&rsquo;, &lsquo;faithful people&rsquo;, &lsquo;loyal ones&rsquo; and, of him, &lsquo;holy&rsquo;, &lsquo;gracious&rsquo;, &lsquo;faithful&rsquo; and &lsquo;loyal&rsquo;.',) + _t[5:]
+    if _t[0] == 'tehillah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-1">Psalm 145:1</a> (now on these pages): <span data-heb="תהלה לדוד">&lsquo;A praise, of David&rsquo; stands in this one verse</span>, the only psalm so headed, and the last verse, <a href="psalms-145.html#v145-21">145:21</a>, is <em>tehillat Yehovah</em>, &lsquo;the praise of Jehovah&rsquo;.',) + _t[5:]
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-16">Psalm 145:16</a> and <a href="psalms-145.html#v145-19">145:19</a> (now on these pages): the open hand satisfies every living thing with <em>ratson</em>, and Jehovah &lsquo;does&rsquo; the <em>ratson</em> of those who fear him; the shelf prints &lsquo;desire&rsquo;, &lsquo;good pleasure&rsquo;, &lsquo;blessing&rsquo; and &lsquo;will&rsquo;.',) + _t[5:]
+    if _t[0] == 'shamar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-20">Psalm 145:20</a> (now on these pages): <span data-heb="שומר יהוה את כל אהביו">&lsquo;Jehovah guards all who love him&rsquo; stands in this one verse</span>; the next verb, <em>yashmid</em>, &lsquo;will destroy&rsquo;, differs from <em>shomer</em> by one letter.',) + _t[5:]
+    if _t[0] == 'shamad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-20">Psalm 145:20</a> (now on these pages): <em>yashmid</em>, &lsquo;will destroy&rsquo;, said of all the wicked, one letter from the <em>shomer</em>, &lsquo;guards&rsquo;, said of all who love him.',) + _t[5:]
+    if _t[0] == 'acrostic':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-1">Psalm 145:1</a> (now on these pages): <strong>Psalm 145</strong> is the cleanest alphabet psalm on these pages, all twenty-one letters present except <em>nun</em>, which is missing between <em>mem</em> (verse 13) and <em>samekh</em> (verse 14).',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-8">Salmo 145:8</a> (ya en estas páginas): <span data-heb="ארך אפים וגדל חסד">«lento para la ira y grande en amor leal» está en este único versículo</span>, y <span data-heb="גדל חסד">«grande en amor leal» está en tres versículos</span>, con Génesis 19:19 y Números 14:19.')
+if 'chasid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chasid']
+    DICTIONARY_ES['chasid'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-10">Salmo 145:10</a> y <a href="psalms-145.es.html#v145-17">145:17</a> (ya en estas páginas): <em>chasidekha</em>, «tus leales», lo bendicen, y él mismo es <em>chasid</em> «en todas sus obras» &mdash; y el estante imprime la palabra como «santos», «fieles», «leales» y, de él, «misericordioso», «bondadoso» y «leal».')
+if 'tehillah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehillah']
+    DICTIONARY_ES['tehillah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-1">Salmo 145:1</a> (ya en estas páginas): <span data-heb="תהלה לדוד">«Alabanza, de David» está en este único versículo</span>, el único salmo así encabezado, y el último versículo, <a href="psalms-145.es.html#v145-21">145:21</a>, es <em>tehillat Yehovah</em>, «la alabanza de Jehová».')
+if 'ratson' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ratson']
+    DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-16">Salmo 145:16</a> y <a href="psalms-145.es.html#v145-19">145:19</a> (ya en estas páginas): la mano abierta satisface a todo ser viviente con <em>ratson</em>, y Jehová «hace» el <em>ratson</em> de los que le temen; el estante imprime «deseo», «bendición» y «favores».')
+if 'shamar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamar']
+    DICTIONARY_ES['shamar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-20">Salmo 145:20</a> (ya en estas páginas): <span data-heb="שומר יהוה את כל אהביו">«Jehová guarda a todos los que lo aman» está en este único versículo</span>; el verbo siguiente, <em>yashmid</em>, «destruirá», se distingue de <em>shomer</em> por una letra.')
+if 'shamad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamad']
+    DICTIONARY_ES['shamad'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-20">Salmo 145:20</a> (ya en estas páginas): <em>yashmid</em>, «destruirá», dicho de todos los impíos, a una letra de <em>shomer</em>, «guarda», dicho de todos los que lo aman.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 145, 8), ('Exodus', 34, 6), 'the God of Exodus: gracious, compassionate, slow to anger'),
+    (('Psalms', 145, 8), ('Numbers', 14, 18), 'Moses quotes the formula back'),
+    (('Psalms', 145, 13), ('Daniel', 3, 33), 'his kingdom is an everlasting kingdom'),
+    (('Psalms', 145, 13), ('Daniel', 4, 31), 'his dominion from generation to generation'),
+    (('Psalms', 145, 13), ('Daniel', 7, 27), 'his kingdom is an everlasting kingdom'),
+    (('Psalms', 145, 14), ('Luke', 13, 13), 'a bent woman made straight'),
+    (('Psalms', 145, 15), ('Matthew', 6, 26), 'your heavenly Father feeds them'),
+    (('Psalms', 145, 18), ('Deuteronomy', 4, 7), 'so near whenever we call'),
+    (('Psalms', 145, 18), ('Psalms', 34, 18), 'near to the brokenhearted'),
+    (('Psalms', 145, 1), ('Psalms', 25, 1), 'another alphabet psalm'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms145"] = dict(era='monarchy',
+    when='An alphabet psalm headed &lsquo;A praise, of David&rsquo;: the speaker will exalt and bless the name of his God the King forever; Jehovah is great and greatly to be praised, one generation lauding his works to another, gracious and compassionate, slow to anger and great in loyal love, good to all; his works give thanks and his loyal ones bless; they speak of the glory of his kingdom, a kingdom of all ages; he upholds all who fall and raises the bowed down; the eyes of all look to him and he opens his hand; he is righteous, near to all who call on him in truth, does the goodwill of those who fear him, guards all who love him and destroys all the wicked; and let all flesh bless his holy name forever and ever. The line for the letter nun is missing.',
+    clock='Headed &lsquo;of David&rsquo; and undated by the psalm itself. &#9888; The chapter carries no event and no place; the heading is the only mark of its author.')
+
+CHAPTER_ART["psalms145"] = [dict(
+    file='paris-psalter-david-wisdom-prophecy.jpg',
+    title='David between Wisdom and Prophecy', title_es='David entre la Sabidur&iacute;a y la Profec&iacute;a',
+    artist='Byzantine illuminator, Paris Psalter', artist_es='Iluminador bizantino, Salterio de Par&iacute;s',
+    year='10th century', location='Illuminated manuscript, Bibliothèque nationale de France, MS gr. 139, f. 7v', location_es='Manuscrito iluminado, Bibliothèque nationale de France, MS gr. 139, f. 7v',
+    alt='A full-page Byzantine miniature on a gold ground inside a red and blue border. A bearded king with a crown and halo stands in the center in a dark patterned robe, holding an open book and raising two fingers. A white dove hovers above his head. To his left stands a haloed young woman in a blue cloak holding a red book, labelled in Greek as Wisdom; to his right a haloed young woman in a red cloak holding a scroll and touching his book, labelled Prophecy. Greek letters are written beside each figure.',
+    alt_es='Una miniatura bizantina a p&aacute;gina completa sobre fondo dorado, con un marco rojo y azul. Un rey barbudo con corona y aureola est&aacute; de pie en el centro con una t&uacute;nica oscura estampada, sosteniendo un libro abierto y alzando dos dedos. Una paloma blanca revolotea sobre su cabeza. A su izquierda est&aacute; una joven con aureola y manto azul que sostiene un libro rojo, rotulada en griego como Sabidur&iacute;a; a su derecha una joven con aureola y manto rojo que sostiene un rollo y toca su libro, rotulada Profec&iacute;a. Hay letras griegas escritas junto a cada figura.',
+    note='Psalm 145:1, &lsquo;A praise, of David&rsquo;. The Byzantine painter shows David as a crowned and haloed king with an open psalter, with two women named in Greek, Wisdom and Prophecy, at his sides and a dove above. None of that is in the psalm, whose heading says only &lsquo;of David&rsquo;; the figures, the dove and the Greek lettering are the manuscript&rsquo;s, and the book David holds is the painter&rsquo;s way of saying that the psalms are his.',
+    note_es='Salmo 145:1, &laquo;Alabanza, de David&raquo;. El pintor bizantino muestra a David como un rey coronado y con aureola con un salterio abierto, con dos mujeres nombradas en griego, Sabidur&iacute;a y Profec&iacute;a, a sus lados y una paloma encima. Nada de eso est&aacute; en el salmo, cuyo encabezamiento dice solo &laquo;de David&raquo;; las figuras, la paloma y las letras griegas son del manuscrito, y el libro que David sostiene es la manera que tiene el pintor de decir que los salmos son suyos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Paris_psaulter_gr139_fol7v.jpg')]
+
