@@ -61113,3 +61113,144 @@ CHAPTER_ART["mal3"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:El_Greco_(Domenikos_Theotokopoulos)_-_Christ_Driving_the_Money_Changers_from_the_Temple_-_Google_Art_Project.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 25 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('reshet', 'reshet', 'רֶשֶׁת', 'reshet', 'A NET &mdash; the trap that holds the feet: <span data-heb="הוא יוציא מרשת רגלי">&lsquo;for he will bring my feet out of the net&rsquo; stands in this one verse</span>, <a href="psalms-25.html#v25-15">Psalm 25:15</a> (now on these pages). &#9888; The shelf prints &lsquo;the net&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the snare&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>).', ('Psalms', 25, 15)))
+DICTIONARY.append(('neurim', 'neurim', 'נְעוּרִים', 'ne&rsquo;urai', 'YOUTH &mdash; the early years of a life: <span data-heb="חטאות נעורי">&lsquo;the sins of my youth&rsquo; stands in this one verse</span>, <a href="psalms-25.html#v25-7">Psalm 25:7</a> (now on these pages). &#9888; The shelf prints &lsquo;the sins of my youth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>).', ('Psalms', 25, 7)))
+DICTIONARY.append(('bosh', 'bosh', 'בּוֹשׁ', 'yevoshu', 'TO BE ASHAMED &mdash; to be let down, disappointed in what one trusted: <span data-heb="אל אבושה">&lsquo;let me not be ashamed&rsquo; stands in four verses of the Hebrew Bible</span>, and <a href="psalms-25.html#v25-3">Psalm 25:3</a> (now on these pages) has <span data-heb="גם כל קויך לא יבשו">&lsquo;yes, none who wait for you will be ashamed&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;ashamed&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;put to shame&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;confounded&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 25, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['reshet'] = ('reshet', 'UNA RED &mdash; la trampa que sujeta los pies: <span data-heb="הוא יוציא מרשת רגלי">&laquo;porque él sacará mis pies de la red&raquo; está en este único versículo</span>, <a href="psalms-25.es.html#v25-15">Salmo 25:15</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la red&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;la trampa&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['neurim'] = ('ne&rsquo;urai', 'JUVENTUD &mdash; los primeros años de una vida: <span data-heb="חטאות נעורי">&laquo;los pecados de mi juventud&raquo; está en este único versículo</span>, <a href="psalms-25.es.html#v25-7">Salmo 25:7</a> (ya en estas páginas). &#9888; El estante imprime &laquo;los pecados de mi juventud&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['bosh'] = ('yevoshu', 'AVERGONZARSE &mdash; ser defraudado, quedar decepcionado en lo que se confió: <span data-heb="אל אבושה">&laquo;no sea yo avergonzado&raquo; está en cuatro versículos de la Biblia hebrea</span>, y <a href="psalms-25.es.html#v25-3">Salmo 25:3</a> (ya en estas páginas) tiene <span data-heb="גם כל קויך לא יבשו">&laquo;sí, ninguno de los que esperan en ti será avergonzado&raquo;, que está en este único versículo</span>. &#9888; El estante imprime &laquo;avergonzado&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;confundido&raquo; (<span class="tag t-rv60">RV60</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-1">Psalm 25:1</a> and <a href="psalms-25.html#v25-18">verse 18</a> (now on these pages) have it twice: <span data-heb="נפשי אשא">&lsquo;I lift up my soul&rsquo;, which stands in two verses</span>, and &lsquo;lift away all my sins&rsquo;.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-1">Salmo 25:1</a> y <a href="psalms-25.es.html#v25-18">el versículo 18</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="נפשי אשא">&laquo;levanto mi alma&raquo;, que está en dos versículos</span>, y «quita todos mis pecados».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'batach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-2">Psalm 25:2</a> (now on these pages) has &lsquo;in you I have trusted&rsquo; as the second word of the line that should begin with <em>bet</em>.',) + _t[5:]
+if 'batach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['batach']
+    DICTIONARY_ES['batach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-2">Salmo 25:2</a> (ya en estas páginas) tiene «en ti he confiado» como segunda palabra de la línea que debía empezar con <em>bet</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-3">Psalm 25:3</a> and <a href="psalms-25.html#v25-5">verse 5</a> (now on these pages) have the waiting: <span data-heb="גם כל קויך לא יבשו">&lsquo;none who wait for you will be ashamed&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'qavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qavah']
+    DICTIONARY_ES['qavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-3">Salmo 25:3</a> y <a href="psalms-25.es.html#v25-5">el versículo 5</a> (ya en estas páginas) tienen la espera: <span data-heb="גם כל קויך לא יבשו">&laquo;ninguno de los que esperan en ti será avergonzado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'derekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-4">Psalm 25:4</a> (now on these pages) has <span data-heb="דרכיך יהוה הודיעני">&lsquo;your ways, Jehovah, make known to me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'derekh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['derekh']
+    DICTIONARY_ES['derekh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-4">Salmo 25:4</a> (ya en estas páginas) tiene <span data-heb="דרכיך יהוה הודיעני">&laquo;tus caminos, Jehová, hazme conocer&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-6">Psalm 25:6</a>, <a href="psalms-25.html#v25-7">verse 7</a> and <a href="psalms-25.html#v25-10">verse 10</a> (now on these pages) have it three times, beside compassion, &lsquo;according to your steadfast love remember me&rsquo;, and &lsquo;steadfast love and truth&rsquo;.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-6">Salmo 25:6</a>, <a href="psalms-25.es.html#v25-7">el versículo 7</a> y <a href="psalms-25.es.html#v25-10">el versículo 10</a> (ya en estas páginas) lo tienen tres veces, junto a la compasión, «conforme a tu misericordia acuérdate de mí» y «misericordia y verdad».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zakhar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-6">Psalm 25:6</a> and <a href="psalms-25.html#v25-7">verse 7</a> (now on these pages) turn the verb both ways: <span data-heb="זכר רחמיך יהוה וחסדיך">&lsquo;remember your compassion, Jehovah, and your steadfast love&rsquo;, which stands in this one verse</span>, and &lsquo;do not remember&rsquo; the sins of youth.',) + _t[5:]
+if 'zakhar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zakhar']
+    DICTIONARY_ES['zakhar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-6">Salmo 25:6</a> y <a href="psalms-25.es.html#v25-7">el versículo 7</a> (ya en estas páginas) vuelven el verbo de las dos maneras: <span data-heb="זכר רחמיך יהוה וחסדיך">&laquo;acuérdate de tus compasiones, Jehová, y de tu misericordia&raquo;, que está en este único versículo</span>, y «no te acuerdes» de los pecados de la juventud.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-9">Psalm 25:9</a> (now on these pages) has <span data-heb="ידרך ענוים במשפט">&lsquo;he guides the meek in judgment&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'anav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anav']
+    DICTIONARY_ES['anav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-9">Salmo 25:9</a> (ya en estas páginas) tiene <span data-heb="ידרך ענוים במשפט">&laquo;encamina a los mansos en el juicio&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'salach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-11">Psalm 25:11</a> (now on these pages) has <span data-heb="וסלחת לעוני כי רב הוא">&lsquo;you will pardon my iniquity, for it is great&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'salach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['salach']
+    DICTIONARY_ES['salach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-11">Salmo 25:11</a> (ya en estas páginas) tiene <span data-heb="וסלחת לעוני כי רב הוא">&laquo;perdonarás mi iniquidad, porque es grande&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-11">Psalm 25:11</a> (now on these pages) has the iniquity pardoned for the name&rsquo;s sake.',) + _t[5:]
+if 'avon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avon']
+    DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-11">Salmo 25:11</a> (ya en estas páginas) tiene la iniquidad perdonada por amor del nombre.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-14">Psalm 25:14</a> (now on these pages) has <span data-heb="סוד יהוה ליראיו">&lsquo;the counsel of Jehovah is for those who fear him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sod' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sod']
+    DICTIONARY_ES['sod'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-14">Salmo 25:14</a> (ya en estas páginas) tiene <span data-heb="סוד יהוה ליראיו">&laquo;el consejo de Jehová es para los que le temen&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'regel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-15">Psalm 25:15</a> (now on these pages) has the feet brought out of the net.',) + _t[5:]
+if 'regel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['regel']
+    DICTIONARY_ES['regel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-15">Salmo 25:15</a> (ya en estas páginas) tiene los pies sacados de la red.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chanan':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-16">Psalm 25:16</a> (now on these pages) has <span data-heb="פנה אלי וחנני">&lsquo;turn to me and be gracious to me&rsquo;, which stands in three verses</span>.',) + _t[5:]
+if 'chanan' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chanan']
+    DICTIONARY_ES['chanan'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-16">Salmo 25:16</a> (ya en estas páginas) tiene <span data-heb="פנה אלי וחנני">&laquo;vuélvete a mí y ten misericordia de mí&raquo;, que está en tres versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yachid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-16">Psalm 25:16</a> (now on these pages) has <span data-heb="כי יחיד ועני אני">&lsquo;for I am alone and afflicted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'yachid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yachid']
+    DICTIONARY_ES['yachid'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-16">Salmo 25:16</a> (ya en estas páginas) tiene <span data-heb="כי יחיד ועני אני">&laquo;porque estoy solo y afligido&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-21">Psalm 25:21</a> (now on these pages) has <span data-heb="תם וישר יצרוני">&lsquo;integrity and uprightness will watch over me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tom']
+    DICTIONARY_ES['tom'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-21">Salmo 25:21</a> (ya en estas páginas) tiene <span data-heb="תם וישר יצרוני">&laquo;integridad y rectitud me guardarán&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'padah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-22">Psalm 25:22</a> (now on these pages) has <span data-heb="פדה אלהים את ישראל מכל צרותיו">&lsquo;redeem Israel, God, out of all his troubles&rsquo;, which stands in this one verse</span>, the extra line after the last letter.',) + _t[5:]
+if 'padah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['padah']
+    DICTIONARY_ES['padah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-22">Salmo 25:22</a> (ya en estas páginas) tiene <span data-heb="פדה אלהים את ישראל מכל צרותיו">&laquo;redime, oh Dios, a Israel de todas sus angustias&raquo;, que está en este único versículo</span>, la línea de más después de la última letra.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'acrostic':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-1">Psalm 25:1</a> to <a href="psalms-25.html#v25-22">22</a> (now on these pages) are the alphabet psalm with the <em>vav</em> missing, no <em>qof</em>, <em>resh</em> twice and an extra <em>pe</em> at the end.',) + _t[5:]
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 25, 1), ('Psalms', 24, 4), 'lift up my soul — a gift here, a denial there'),
+    (('Psalms', 25, 5), ('Psalms', 23, 3), 'lead me — the guide of the paths'),
+    (('Psalms', 25, 10), ('Exodus', 34, 6), 'steadfast love and truth'),
+    (('Psalms', 25, 11), ('Exodus', 34, 9), 'pardon our iniquity'),
+    (('Psalms', 25, 13), ('Psalms', 37, 11), 'the meek and the seed that inherits the land'),
+    (('Psalms', 25, 15), ('Psalms', 91, 3), 'the net of the fowler'),
+    (('Psalms', 25, 16), ('Psalms', 119, 132), 'turn to me and be gracious to me'),
+    (('Psalms', 25, 18), ('Psalms', 119, 153), 'see my affliction'),
+    (('Psalms', 25, 22), ('Psalms', 34, 23), 'the extra pe — redeem'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms25"] = dict(era='monarchy',
+    when='An alphabet psalm headed &ldquo;of David&rdquo;: to Jehovah the soul is lifted, trust and the prayer not to be ashamed; ways and paths, truth, compassion remembered and the sins of youth not remembered; Jehovah good and upright, teaching sinners and the meek, with all his paths steadfast love and truth; the man who fears him, his counsel and his covenant; eyes toward him, the net; a prayer in loneliness, affliction, many enemies; and, with an extra line outside the alphabet, Israel redeemed from all his troubles.',
+    clock='Undated. The heading names David and gives no occasion; the psalm gives nothing to date it. &#9888; Its alphabet is broken in four places (no <em>vav</em>, no <em>qof</em>, <em>resh</em> twice, an extra <em>pe</em>), and this page keeps the lines as they are written.')
+
+CHAPTER_ART["psalms25"] = [dict(
+    file='durer-praying-hands.jpg',
+    title='Praying Hands (Study of an Apostle&rsquo;s Hands)', title_es='Manos orantes (estudio de las manos de un apóstol)',
+    artist='Albrecht Dürer', artist_es='Alberto Durero',
+    year='1508', location='Albertina, Vienna', location_es='Albertina, Viena',
+    alt='A drawing in dark ink with white highlights on blue-green prepared paper. Two hands with fingers pressed together point upward and slightly to the left, drawn from the side and above, with a rolled linen cuff on the wrist; the veins and knuckles are shown in fine hatching, and there is nothing else on the sheet.',
+    alt_es='Un dibujo a tinta oscura con realces blancos sobre papel preparado verdeazulado. Dos manos con los dedos juntos apuntan hacia arriba y un poco a la izquierda, dibujadas de lado y desde arriba, con un puño de lino enrollado en la muñeca; las venas y los nudillos se muestran con un sombreado fino, y no hay nada más en la hoja.',
+    note='Psalm 25:1. Dürer drew these hands in 1508 as a study for an apostle in an altarpiece, and the picture has become the common image of prayer; it is not a scene of the psalm, which has no hands, only a soul lifted up, eyes toward Jehovah and feet freed from a net.',
+    note_es='Salmo 25:1. Durero dibujó estas manos en 1508 como estudio de un apóstol para un retablo, y el dibujo se ha vuelto la imagen común de la oración; no es una escena del salmo, que no tiene manos, solo un alma levantada, ojos hacia Jehová y pies librados de una red.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Praying_Hands,_1508_-_Google_Art_Project.jpg')]
+
