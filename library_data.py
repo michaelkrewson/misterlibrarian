@@ -61651,3 +61651,106 @@ CHAPTER_ART["psalms40"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Folio_96r_-_Psalm_XXXIX.jpg')]
 
+
+
+# Appended to library_data.py for Job 42 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shevut', 'shevut', 'שְׁבוּת', 'shevut', 'A CAPTIVITY, and the idiom <em>shuv shevut</em>, &lsquo;turn the captivity&rsquo;, for a restoration: a people brought back (<a href="deuteronomy-30.html#v30-3">Deuteronomy 30:3</a>, now on these pages) and, here, one man. <a href="job-42.html#v42-10">Job 42:10</a> (now on these pages) is a ketiv/qere pair, written <em>shevit</em> and read <em>shevut</em>. Whether the noun comes from &lsquo;captive&rsquo; or from &lsquo;return&rsquo; has long been argued. &#9888; The shelf prints &lsquo;turned the captivity of Job&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;restored his fortunes&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;turned back the captive condition of Job&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;restored his wealth and happiness&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;was turned at the penance of Job&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 10)))
+DICTIONARY.append(('nezem', 'nezem', 'נֶזֶם', 'nezem', 'A RING worn in the nose or the ear. Ten verses carry these three consonants: Genesis 24:22, 24:30 and 24:47 (Rebekah&rsquo;s, and 24:47 says &lsquo;on her nose&rsquo;), Exodus 35:22, Judges 8:24&ndash;25, Ezekiel 16:12, <a href="job-42.html#v42-11">Job 42:11</a>, and Proverbs 11:22 and 25:12 (the search matches letters, not lemmas). <span data-heb="נזם זהב">&lsquo;A ring of gold&rsquo; stands in four verses</span>: <a href="genesis-24.html#v24-22">Genesis 24:22</a> (now on these pages), here and the two in Proverbs. &#9888; The shelf prints &lsquo;an earring of gold&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;a ring of gold&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a gold ring&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;one earring of gold&rsquo; (<span class="tag t-drb">Douay</span>), where Genesis 24:22 has a nose-ring.', ('Job', 42, 11)))
+DICTIONARY.append(('ketsiah', 'ketsi&rsquo;ah', 'קְצִיעָה', 'ketsi&rsquo;ah', 'CASSIA, a spice made from bark, and the name of Job&rsquo;s second daughter. <span data-heb="קציעה">The consonants stand in this one verse</span>, <a href="job-42.html#v42-14">Job 42:14</a> (now on these pages); in the plural, <em>qetsi&rsquo;ot</em>, the word is one of the spices of Psalm 45:9 (<span data-heb="קציעות">which stands in this one verse</span>, not yet on these pages). &#9888; The shelf prints the name as &lsquo;Kezia&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Keziah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>) and, translated, &lsquo;Cassia&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 14)))
+DICTIONARY.append(('puk', 'puk', 'פּוּךְ', 'puk', 'KOHL, the black eye-paint, and the stone it is made from. <span data-heb="בפוך">&lsquo;In kohl&rsquo; stands in three verses</span>: <a href="2-kings-9.html#v9-30">2 Kings 9:30</a> (now on these pages), Jeremiah 4:30 (not yet on these pages) and <a href="isaiah-54.html#v54-11">Isaiah 54:11</a>, where Jehovah lays the stones &lsquo;in kohl&rsquo; (now on these pages). <span data-heb="קרן הפוך">&lsquo;Keren-happuch&rsquo;, the third daughter&rsquo;s name, stands in this one verse</span>, <a href="job-42.html#v42-14">Job 42:14</a> (now on these pages): &lsquo;horn of kohl&rsquo;, the horn presumably the box it was kept in, which the text does not say. &#9888; The shelf prints the name unchanged (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and, translated, &lsquo;Cornustibil&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shevut'] = ('shevut', 'UN CAUTIVERIO, y la expresión <em>shuv shevut</em>, «hacer volver el cautiverio», para una restauración: un pueblo traído de vuelta (<a href="deuteronomy-30.es.html#v30-3">Deuteronomio 30:3</a>, ya en estas páginas) y, aquí, un solo hombre. <a href="job-42.es.html#v42-10">Job 42:10</a> (ya en estas páginas) es un par ketiv/qere, escrito <em>shevit</em> y leído <em>shevut</em>. Si el sustantivo viene de «cautivo» o de «volver» se discute desde hace mucho. &#9888; El estante imprime «mudó Jehová la aflicción de Job» (<span class="tag t-rv">RV&nbsp;1909</span>), «quitó Jehová la aflicción de Job» (<span class="tag t-rv60">RV60</span>), «lo hizo prosperar de nuevo» (<span class="tag t-nvi">NVI</span>), «volvió atrás la condición de cautiverio de Job» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «acabó con el sufrimiento de Job» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['nezem'] = ('nezem', 'UNA ARGOLLA que se lleva en la nariz o en la oreja. Diez versículos llevan estas tres consonantes: Génesis 24:22, 24:30 y 24:47 (la de Rebeca, y 24:47 dice «en su nariz»), Éxodo 35:22, Jueces 8:24&ndash;25, Ezequiel 16:12, <a href="job-42.es.html#v42-11">Job 42:11</a> y Proverbios 11:22 y 25:12 (la búsqueda compara letras, no lemas). <span data-heb="נזם זהב">«Un anillo de oro» está en cuatro versículos</span>: <a href="genesis-24.html#v24-22">Génesis 24:22</a> (ya en estas páginas, todavía sin página en español), este y los dos de Proverbios. &#9888; El estante imprime «un zarcillo de oro» (<span class="tag t-rv">RV&nbsp;1909</span>), «un anillo de oro» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>), donde Génesis 24:22 tiene una argolla de nariz.')
+DICTIONARY_ES['ketsiah'] = ('ketsiah', 'LA CASIA, una especia hecha de corteza, y el nombre de la segunda hija de Job. <span data-heb="קציעה">Las consonantes están en este único versículo</span>, <a href="job-42.es.html#v42-14">Job 42:14</a> (ya en estas páginas); en plural, <em>qetsi&rsquo;ot</em>, la palabra es una de las especias del Salmo 45:9 (<span data-heb="קציעות">que está en este único versículo</span>, todavía no en estas páginas). &#9888; El estante imprime el nombre como «Cesiah» (<span class="tag t-rv">RV&nbsp;1909</span>), «Cesia» (<span class="tag t-rv60">RV60</span>), «Quesia» (<span class="tag t-nvi">NVI</span>) y «Quesías» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['puk'] = ('puk', 'EL ANTIMONIO, el afeite negro de los ojos, y la piedra de la que se hace. <span data-heb="בפוך">«En antimonio» está en tres versículos</span>: <a href="2-kings-9.es.html#v9-30">2 Reyes 9:30</a> (ya en estas páginas), Jeremías 4:30 (todavía no en estas páginas) e <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a>, donde Jehová pone las piedras «en antimonio» (ya en estas páginas). <span data-heb="קרן הפוך">«Keren-happuch», el nombre de la tercera hija, está en este único versículo</span>, <a href="job-42.es.html#v42-14">Job 42:14</a> (ya en estas páginas): «cuerno de antimonio», el cuerno presumiblemente la caja en que se guardaba, lo que el texto no dice. &#9888; El estante imprime el nombre sin cambiar (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-2">Job 42:2</a> (now on these pages) has three pairs in one chapter: verse 2 written <em>yada&rsquo;ta</em>, &lsquo;you know&rsquo;, and read <em>yada&rsquo;ti</em>, &lsquo;I know&rsquo;; verse 10 written <em>shevit</em> and read <em>shevut</em>; and verse 16 written <em>vayar</em> and read <em>vayire</em>.',) + _t[5:]
+    if _t[0] == 'mezimmah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-2">Job 42:2</a> (now on these pages): <span data-heb="ולא יבצר ממך מזמה">&lsquo;no purpose is beyond you&rsquo; stands in this one verse</span>, where the plan is God&rsquo;s; the same verb of being beyond is in Genesis 11:6, of Babel&rsquo;s.',) + _t[5:]
+    if _t[0] == 'maas':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-6">Job 42:6</a> (now on these pages) has <em>em&rsquo;as</em> with no object at all: &lsquo;Therefore I reject, and I repent&rsquo;; in Job 9:21 the same verb takes &lsquo;my life&rsquo;.',) + _t[5:]
+    if _t[0] == 'nicham':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-6">Job 42:6</a> (now on these pages) has <em>nichamti</em>, &lsquo;I repent&rsquo;, and <a href="job-42.html#v42-11">verse 11</a> has <em>vayenachamu</em>, &lsquo;they comforted him&rsquo;, from the same root.',) + _t[5:]
+    if _t[0] == 'olah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has seven bulls and seven rams as an <em>olah</em> for the three friends; Job&rsquo;s own, for his children, is in <a href="job-1.html#v5">Job 1:5</a>.',) + _t[5:]
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has <span data-heb="פניו אשא">&lsquo;his face only will I lift up&rsquo;, which stands in this one verse</span>, and <a href="job-42.html#v42-9">verse 9</a> says it was done: &lsquo;Jehovah lifted up Job&rsquo;s face&rsquo;.',) + _t[5:]
+    if _t[0] == 'nevalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has <span data-heb="לבלתי עשות עמכם נבלה">&lsquo;so as not to do folly with you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'acharit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-12">Job 42:12</a> (now on these pages) has <span data-heb="ברך את אחרית">&lsquo;blessed the latter end&rsquo;, which stands in this one verse</span>: the end of Job, blessed more than his beginning.',) + _t[5:]
+    if _t[0] == 'nachalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-15">Job 42:15</a> (now on these pages): <span data-heb="ויתן להם אביהם נחלה">&lsquo;and their father gave them an inheritance&rsquo; stands in this one verse</span>, to daughters among seven brothers.',) + _t[5:]
+    if _t[0] == 'kesitah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-11">Job 42:11</a> (now on these pages): each guest gives Job one <em>kesitah</em> and a ring of gold.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-2">Job 42:2</a> (ya en estas páginas) tiene tres pares en un capítulo: el versículo 2 escrito <em>yada&rsquo;ta</em>, «tú sabes», y leído <em>yada&rsquo;ti</em>, «yo sé»; el versículo 10 escrito <em>shevit</em> y leído <em>shevut</em>; y el versículo 16 escrito <em>vayar</em> y leído <em>vayire</em>.')
+if 'mezimmah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mezimmah']
+    DICTIONARY_ES['mezimmah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-2">Job 42:2</a> (ya en estas páginas): <span data-heb="ולא יבצר ממך מזמה">«ningún propósito se te puede impedir» está en este único versículo</span>, donde el plan es de Dios; el mismo verbo está en Génesis 11:6, del de Babel.')
+if 'maas' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['maas']
+    DICTIONARY_ES['maas'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-6">Job 42:6</a> (ya en estas páginas) tiene <em>em&rsquo;as</em> sin complemento alguno: «Por eso rechazo, y me arrepiento»; en Job 9:21 el mismo verbo lleva «mi vida».')
+if 'olah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olah']
+    DICTIONARY_ES['olah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene siete toros y siete carneros como una <em>olá</em> por los tres amigos; la del propio Job, por sus hijos, está en <a href="job-1.es.html#v5">Job 1:5</a>.')
+if 'panim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['panim']
+    DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene <span data-heb="פניו אשא">«solo su rostro levantaré», que está en este único versículo</span>, y <a href="job-42.es.html#v42-9">el versículo 9</a> dice que se hizo: «Jehová levantó el rostro de Job».')
+if 'nevalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nevalah']
+    DICTIONARY_ES['nevalah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene <span data-heb="לבלתי עשות עמכם נבלה">«para no hacer con ustedes una insensatez», que está en este único versículo</span>.')
+if 'acharit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['acharit']
+    DICTIONARY_ES['acharit'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-12">Job 42:12</a> (ya en estas páginas) tiene <span data-heb="ברך את אחרית">«bendijo el final», que está en este único versículo</span>: el final de Job, bendecido más que su principio.')
+if 'nachalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nachalah']
+    DICTIONARY_ES['nachalah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-15">Job 42:15</a> (ya en estas páginas): <span data-heb="ויתן להם אביהם נחלה">«y su padre les dio herencia» está en este único versículo</span>, a hijas entre siete hermanos.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Job', 42, 2), ('Genesis', 11, 6), "nothing is beyond them / nothing is beyond you — the same verb, Babel's plan and God's"),
+    (('Job', 42, 3), ('Job', 38, 2), 'who is this that darkens / hides counsel without knowledge'),
+    (('Job', 42, 5), ('Exodus', 33, 20), 'the eye that sees — and a man cannot see and live'),
+    (('Job', 42, 6), ('Genesis', 18, 27), 'dust and ashes'),
+    (('Job', 42, 6), ('Genesis', 6, 6), 'the same verb, nacham — Jehovah regretted, Job repents'),
+    (('Job', 42, 8), ('Numbers', 23, 1), 'seven bulls and seven rams'),
+    (('Job', 42, 8), ('Genesis', 20, 7), 'he will pray for you — the offender goes to the one he wronged'),
+    (('Job', 42, 8), ('Job', 1, 5), "a burnt offering — Job's, for his children; the friends', now, by Job"),
+    (('Job', 42, 10), ('Deuteronomy', 30, 3), 'turn the captivity'),
+    (('Job', 42, 11), ('Genesis', 33, 19), 'one kesitah'),
+    (('Job', 42, 11), ('Genesis', 24, 22), 'a ring of gold, nezem'),
+    (('Job', 42, 12), ('Job', 1, 3), 'the same four numbers, doubled'),
+    (('Job', 42, 12), ('Job', 1, 21), "blessed — Job's word at the loss, Jehovah's word at the end"),
+    (('Job', 42, 14), ('Isaiah', 54, 11), "kohl — the stones laid in it; the third daughter's name"),
+    (('Job', 42, 15), ('Numbers', 27, 7), 'an inheritance for daughters among their brothers'),
+    (('Job', 42, 17), ('Genesis', 35, 29), 'old and full of days'),
+    (('Job', 42, 17), ('Genesis', 25, 8), 'old, and satisfied'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["job42"] = dict(era='patriarchs',
+    when='Job answers Jehovah: I know you can do all things; I spoke what I did not understand; I had heard of you, and now my eye has seen you; therefore I reject, and I repent, upon dust and ashes. Jehovah tells Eliphaz that he and his two friends have not spoken to him what is right, as his servant Job has, and sends them with seven bulls and seven rams for Job to pray over; Jehovah turns the captivity of Job and adds to all he had, to double; his family comes and eats with him; and Job has seven sons and three named daughters, an inheritance given to the daughters among their brothers, a hundred and forty years more, four generations, and dies old and full of days.',
+    clock='Undated. The book gives no date and names no king; the epilogue is the last chapter of the book and the only place it speaks of what happened after the suffering. &#9888; Job speaks for the last time in verses 1&ndash;6; the rest is told about him.')
+
+CHAPTER_ART["job42"] = [dict(
+    file='blake-job-20-daughters.jpg',
+    title='Job and His Daughters', title_es='Job y sus hijas',
+    artist='William Blake', artist_es='William Blake',
+    year='1825', location='Illustrations of the Book of Job, plate 20 (Yale Center for British Art)', location_es='Ilustraciones del libro de Job, lámina 20 (Yale Center for British Art)',
+    alt='A framed black-and-white engraving. In the centre panel an old bearded man sits on a bench with both arms stretched wide; a young woman sits against him on each side and a third kneels bowed in front of him. Above him a cloud with a face, and two bowed figures; in a round frame at each side an earlier scene, armed men fighting on the left and a running figure before a whirlwind on the right. The margins are vines, a lyre and a lute, with the captions &lsquo;There were not found Women fair as the Daughters of Job in all the Land &amp; their Father gave them Inheritance among their Brethren&rsquo;, &lsquo;How precious are thy thoughts unto me O God how great is the sum of them&rsquo; and &lsquo;If I ascend up into Heaven thou art there If I make my bed in Hell behold Thou art there&rsquo;.',
+    alt_es='Un grabado enmarcado en blanco y negro. En el panel central un anciano barbado está sentado en un banco con los dos brazos extendidos; una joven está sentada junto a él a cada lado y una tercera está arrodillada e inclinada ante él. Sobre él, una nube con un rostro y dos figuras inclinadas; en un marco redondo a cada lado una escena anterior, hombres armados luchando a la izquierda y una figura que corre ante un torbellino a la derecha. Los márgenes son vides, una lira y un laúd, con los textos &lsquo;There were not found Women fair as the Daughters of Job in all the Land &amp; their Father gave them Inheritance among their Brethren&rsquo;, &lsquo;How precious are thy thoughts unto me O God how great is the sum of them&rsquo; y &lsquo;If I ascend up into Heaven thou art there If I make my bed in Hell behold Thou art there&rsquo;.',
+    note='Job 42:15. Blake draws the verse he prints at the foot: the daughters beside their father, who sits with his arms stretched out. The three young women, the two round pictures of the old disasters and the cloud above are Blake&rsquo;s; the Hebrew says only that no women were so beautiful and that their father gave them an inheritance among their brothers, and never says where Job sat or what he did with his hands. The two lines in the margin are from the Psalms.',
+    note_es='Job 42:15. Blake dibuja el versículo que imprime al pie: las hijas junto a su padre, que está sentado con los brazos extendidos. Las tres jóvenes, los dos cuadros redondos de los viejos desastres y la nube de arriba son de Blake; el hebreo dice solo que ninguna mujer era tan hermosa y que su padre les dio herencia entre sus hermanos, y nunca dice dónde se sentó Job ni qué hizo con las manos. Las dos líneas del margen son de los Salmos.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_20,_Job_and_His_Daughters_-_B1978.43.1522_-_Yale_Center_for_British_Art.jpg')]
+
