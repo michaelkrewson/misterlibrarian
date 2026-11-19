@@ -62758,3 +62758,106 @@ CHAPTER_ART["psalms62"] = [dict(
     license='CC0',
     source_url='https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_David_in_Prayer_-_1974.257_-_Cleveland_Museum_of_Art.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 18 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('merchav', 'merchav', 'מֶרְחָב', 'merchav', 'A BROAD PLACE, open room &mdash; from <em>rachav</em>, &lsquo;to be wide&rsquo;; the opposite of <em>tsar</em>, a narrow place, distress. <span data-heb="ויוציאני למרחב">&lsquo;and he brought me out to a broad place&rsquo; stands in this one verse</span>, <a href="psalms-18.html#v18-19">Psalm 18:19</a> (now on these pages), where it answers the <em>tsar</em> of verse 6, and the verb <em>tarchiv</em>, &lsquo;you make broad&rsquo;, of the same root, is at <a href="psalms-18.html#v18-36">18:36</a>. &#9888; The shelf prints &lsquo;a large place&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;a spacious place&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a roomy place&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a place of safety&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 18, 19)))
+DICTIONARY.append(('qiddem', 'qiddem', 'קִדֵּם', 'qiddem', 'TO COME BEFORE, to meet, to confront &mdash; the root of <em>qedem</em>, &lsquo;before, east&rsquo;; a thing that gets to you first. At <a href="psalms-18.html#v18-5">Psalm 18:5</a> (now on these pages) &lsquo;the snares of death confronted me&rsquo; and at <a href="psalms-18.html#v18-18">18:18</a> &lsquo;they confronted me in the day of my calamity&rsquo;: the same verb, <em>qiddemuni</em>, both times. &#9888; The <span class="tag t-kjv">KJV</span> prints &lsquo;prevented me&rsquo; in both, in the old sense of &lsquo;came before me&rsquo;, where the <span class="tag t-niv">NIV</span> has &lsquo;confronted&rsquo;, the <span class="tag t-asv">ASV</span> &lsquo;came upon me&rsquo; and the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;kept confronting me&rsquo;.', ('Psalms', 18, 5)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['merchav'] = ('merchav', 'UN LUGAR ANCHO, espacio abierto &mdash; de <em>rachav</em>, «ser ancho»; lo contrario de <em>tsar</em>, un lugar estrecho, la angustia. <span data-heb="ויוציאני למרחב">«y me sacó a lugar espacioso» está en este único versículo</span>, <a href="psalms-18.es.html#v18-19">Salmo 18:19</a> (ya en estas páginas), donde responde al <em>tsar</em> del versículo 6, y el verbo <em>tarchiv</em>, «ensanchas», de la misma raíz, está en <a href="psalms-18.es.html#v18-36">18:36</a>. &#9888; El estante imprime «lugar espacioso» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «anchura» (<span class="tag t-rv">RV&nbsp;1909</span>) y «un lugar seguro» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['qiddem'] = ('qiddem', 'VENIR ANTES, salir al encuentro, enfrentarse &mdash; la raíz de <em>qedem</em>, «delante, oriente»; lo que llega a ti primero. En <a href="psalms-18.es.html#v18-5">Salmo 18:5</a> (ya en estas páginas) «los lazos de la muerte me salieron al encuentro» y en <a href="psalms-18.es.html#v18-18">18:18</a> «me salieron al encuentro en el día de mi quebranto»: el mismo verbo, <em>qiddemuni</em>, las dos veces. &#9888; La <span class="tag t-rv">RV&nbsp;1909</span> lo imprime «Previniéronme» en el versículo 5 y «Asaltáronme» en el 18, la <span class="tag t-rv60">RV60</span> «me tendieron» y «me asaltaron», la <span class="tag t-nvi">NVI</span> «me atraparon» y «me salieron al encuentro» y la <span class="tag t-tnm">TNM&nbsp;1987</span> «se presentaron delante de mí» y «Siguieron presentándose delante de mí».')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-23">Psalm 18:23</a>, <a href="psalms-18.html#v18-26">18:26</a>, <a href="psalms-18.html#v18-30">18:30</a> and <a href="psalms-18.html#v18-32">18:32</a> (now on these pages): four <em>tamim</em> in one psalm &mdash; the speaker is blameless with God, God shows himself blameless with the blameless man, his way is blameless, and he makes the speaker&rsquo;s way blameless.',) + _t[5:]
+    if _t[0] == 'chevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-4">Psalm 18:4</a> and <a href="psalms-18.html#v18-5">18:5</a> (now on these pages): <span data-heb="אפפוני חבלי מות">&lsquo;the cords of death surrounded me&rsquo; stands in two verses</span>, here and Psalm 116:3, and the cords of Sheol follow (2 Samuel 22:5 has &lsquo;the breakers of death&rsquo; instead).',) + _t[5:]
+    if _t[0] == 'mashah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-16">Psalm 18:16</a> (now on these pages): <span data-heb="ישלח ממרום יקחני ימשני ממים רבים">&lsquo;He sent from on high, he took me; he drew me out of many waters&rsquo; stands in two verses</span>, here and 2 Samuel 22:17; the verb <em>yamsheni</em>, &lsquo;he drew me out&rsquo;, is the verb of the name of Moses.',) + _t[5:]
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-2">Psalm 18:2</a> (now on these pages): <em>sal&rsquo;i</em>, &lsquo;my crag&rsquo;, is the first of the psalm&rsquo;s names of safety, beside <em>tsuri</em>, &lsquo;my rock&rsquo;.',) + _t[5:]
+    if _t[0] == 'ner':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-28">Psalm 18:28</a> (now on these pages): <span data-heb="כי אתה תאיר נרי">&lsquo;For you light my lamp&rsquo; stands in this one verse</span>, where 2 Samuel 22:29 has the other spelling, <em>niri</em>, &lsquo;you are my lamp&rsquo;.',) + _t[5:]
+    if _t[0] == 'shafal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-27">Psalm 18:27</a> (now on these pages): <span data-heb="ועינים רמות תשפיל">&lsquo;haughty eyes you bring low&rsquo; stands in this one verse</span>, the verb of <em>tashpil</em>, the root of Daniel 5:22 and 7:24.',) + _t[5:]
+    if _t[0] == 'moshe':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-16">Psalm 18:16</a> (now on these pages): David is &lsquo;drawn out of many waters&rsquo; with the verb of Moses&rsquo;s name, <em>yamsheni</em>, from <em>mashah</em>.',) + _t[5:]
+if 'tamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tamim']
+    DICTIONARY_ES['tamim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-23">Salmo 18:23</a>, <a href="psalms-18.es.html#v18-26">18:26</a>, <a href="psalms-18.es.html#v18-30">18:30</a> y <a href="psalms-18.es.html#v18-32">18:32</a> (ya en estas páginas): cuatro <em>tamim</em> en un solo salmo &mdash; el que habla es íntegro con Dios, Dios se muestra íntegro con el hombre íntegro, su camino es íntegro, y hace íntegro el camino del que habla.')
+if 'chevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chevel']
+    DICTIONARY_ES['chevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-4">Salmo 18:4</a> y <a href="psalms-18.es.html#v18-5">18:5</a> (ya en estas páginas): <span data-heb="אפפוני חבלי מות">«las ligaduras de la muerte me rodearon» está en dos versículos</span>, este y el Salmo 116:3, y siguen las ligaduras del Seol (2 Samuel 22:5 tiene «las olas de la muerte» en su lugar).')
+if 'mashah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashah']
+    DICTIONARY_ES['mashah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-16">Salmo 18:16</a> (ya en estas páginas): <span data-heb="ישלח ממרום יקחני ימשני ממים רבים">«Envió desde lo alto, me tomó; me sacó de muchas aguas» está en dos versículos</span>, este y 2 Samuel 22:17; el verbo <em>yamsheni</em>, «me sacó», es el verbo del nombre de Moisés.')
+if 'sela' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sela']
+    DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-2">Salmo 18:2</a> (ya en estas páginas): <em>sal&rsquo;i</em>, «mi peñasco», es el primero de los nombres de seguridad del salmo, junto a <em>tsuri</em>, «mi roca».')
+if 'ner' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ner']
+    DICTIONARY_ES['ner'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-28">Salmo 18:28</a> (ya en estas páginas): <span data-heb="כי אתה תאיר נרי">«Porque tú enciendes mi lámpara» está en este único versículo</span>, donde 2 Samuel 22:29 tiene la otra grafía, <em>niri</em>, «tú eres mi lámpara».')
+if 'shafal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shafal']
+    DICTIONARY_ES['shafal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-27">Salmo 18:27</a> (ya en estas páginas): <span data-heb="ועינים רמות תשפיל">«los ojos altivos humillas» está en este único versículo</span>, el verbo de <em>tashpil</em>, la raíz de Daniel 5:22 y 7:24.')
+if 'moshe' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['moshe']
+    DICTIONARY_ES['moshe'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-16">Salmo 18:16</a> (ya en estas páginas): David es «sacado de muchas aguas» con el verbo del nombre de Moisés, <em>yamsheni</em>, de <em>mashah</em>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 18, 1), ('2 Samuel', 22, 1), 'the same song, with its heading'),
+    (('Psalms', 18, 7), ('Exodus', 19, 18), 'smoke and fire at the mountain'),
+    (('Psalms', 18, 13), ('Exodus', 9, 24), 'hail and coals of fire'),
+    (('Psalms', 18, 13), ('1 Samuel', 2, 10), 'Jehovah thunders from heaven'),
+    (('Psalms', 18, 15), ('Exodus', 15, 8), 'the blast of your nostrils'),
+    (('Psalms', 18, 16), ('Exodus', 2, 10), 'drawn out of the water'),
+    (('Psalms', 18, 27), ('Daniel', 5, 22), 'bring low'),
+    (('Psalms', 18, 28), ('2 Samuel', 21, 17), 'the lamp of Israel'),
+    (('Psalms', 18, 31), ('1 Samuel', 2, 2), 'no rock like our God'),
+    (('Psalms', 18, 49), ('Romans', 15, 9), 'among the nations, and sing to your name'),
+    (('Psalms', 18, 50), ('2 Samuel', 7, 15), 'kindness to his anointed, to David and his seed'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+import re as _re18
+def _f18(t):
+    t = _re18.sub(r'Psalm 18:(\d+), not yet on these\s+pages', lambda m: '<a href="psalms-18.html#v18-%d">Psalm 18:%s</a>, now on these pages' % (int(m.group(1)) - 1, m.group(1)), t)
+    t = _re18.sub(r'Salmo 18:(\d+), todav(?:í|&iacute;)a no en estas\s+p(?:á|&aacute;)ginas', lambda m: '<a href="psalms-18.es.html#v18-%d">Salmo 18:%s</a>, ya en estas páginas' % (int(m.group(1)) - 1, m.group(1)), t)
+    return t
+def _w18(o):
+    if isinstance(o, str): return _f18(o)
+    if isinstance(o, list): return [_w18(x) for x in o]
+    if isinstance(o, tuple): return tuple(_w18(x) for x in o)
+    if isinstance(o, dict): return {k: _w18(v) for k, v in o.items()}
+    return o
+DICTIONARY[:] = _w18(DICTIONARY)
+for _k in list(DICTIONARY_ES): DICTIONARY_ES[_k] = _w18(DICTIONARY_ES[_k])
+for _n18 in ('ENCYCLOPEDIA', 'ENCYCLOPEDIA_ES'):
+    _o = globals().get(_n18)
+    if isinstance(_o, list): _o[:] = _w18(_o)
+    elif isinstance(_o, dict):
+        for _k in list(_o): _o[_k] = _w18(_o[_k])
+
+CHRON_CHAPTERS["psalms18"] = dict(era='monarchy',
+    when='A song of David the servant of Jehovah, spoken in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul, the same song as 2 Samuel 22: I love you, Jehovah, my strength, my crag and stronghold, my high tower; the cords of death and Sheol, and in my distress I called, and he heard from his temple; the earth shook and he came down on a cherub in darkness, hail and coals of fire, thunder and arrows, the channels of the waters seen; he drew me out of many waters to a broad place because he delighted in me; the claim of clean hands and kept ways, God showing himself as each is; a lamp, a troop, a wall, hinds&rsquo; feet, a bow of bronze; the enemies pursued and no savior answered; head of nations, Jehovah lives, thanks among the nations, and kindness to his anointed, to David and to his seed, forever.',
+    clock='Headed &lsquo;in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul&rsquo;; the psalm itself names no battle and no place. &#9888; It is a twin of 2 Samuel 22, placed there in the appendix to David&rsquo;s reign; the two differ by dozens of small readings, and neither says which is first.')
+
+CHAPTER_ART["psalms18"] = [dict(
+    file='dore-david-saul-cave.jpg',
+    title='David Shows Saul How He Spared His Life', title_es='David muestra a Sa&uacute;l c&oacute;mo le perdon&oacute; la vida',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating 1 Samuel 24)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra 1 Samuel 24)',
+    alt='A dark engraving of a rocky gorge. At the top, along the edge of a high cliff, a long column of armed men and horsemen with raised spears files across the ridge under a stormy sky. Far below, on a lit ledge in front of a cave mouth, a man in a pale robe stands with one arm raised, holding up a scrap of cloth; a few robed men stand near the dark cave opening at the left, and another leans on a stone slab at the right. Mountains rise in the distance.',
+    alt_es='Un grabado oscuro de una garganta rocosa. Arriba, por el borde de un alto acantilado, una larga columna de hombres armados y jinetes con lanzas en alto desfila por la cresta bajo un cielo tormentoso. Muy abajo, en una repisa iluminada frente a la boca de una cueva, un hombre con t&uacute;nica p&aacute;lida est&aacute; de pie con un brazo alzado, sosteniendo un trozo de tela; unos pocos hombres con t&uacute;nica est&aacute;n junto a la oscura entrada de la cueva a la izquierda, y otro se apoya en una losa de piedra a la derecha. A lo lejos se alzan monta&ntilde;as.',
+    note='Psalm 18:1. The heading says David sang this song &lsquo;in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul&rsquo;, and does not say which day. Dor&eacute; draws the cave of 1 Samuel 24, where David, hidden below the cliff on which Saul&rsquo;s men march, held up the cut corner of Saul&rsquo;s robe, the episode of David sparing Saul; the psalm tells none of this, and the cave, the host on the ridge and the cloth are the engraver&rsquo;s.',
+    note_es='Salmo 18:1. El encabezamiento dice que David cant&oacute; este cantar &laquo;el d&iacute;a que Jehov&aacute; lo libr&oacute; de la palma de todos sus enemigos y de la mano de Sa&uacute;l&raquo;, y no dice cu&aacute;l d&iacute;a. Dor&eacute; dibuja la cueva de 1 Samuel 24, donde David, escondido bajo el acantilado por el que marchan los hombres de Sa&uacute;l, alz&oacute; el borde cortado del manto de Sa&uacute;l, el episodio en que David perdon&oacute; a Sa&uacute;l; el salmo no cuenta nada de esto, y la cueva, el ej&eacute;rcito en la cresta y el trozo de tela son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:074.David_Shows_Saul_How_He_Spared_His_Life.jpg')]
+
