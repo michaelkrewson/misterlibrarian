@@ -62063,3 +62063,170 @@ CHAPTER_ART["micah5"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Bethlehem_April_6th_1839_LCCN2002717531.jpg')]
 
+
+
+# Appended to library_data.py for Zephaniah 3 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('pochaz', 'pochaz', 'פֹּחֵז', 'pochazim', 'RECKLESS, frothy, light: the word for a person who boils over, with no weight. <span data-heb="פחזים">The plural stands in this one form</span> in <a href="zephaniah-3.html#v3-4">Zephaniah 3:4</a> (now on these pages), of the prophets who are <em>pochazim, anshei bogedot</em>, &lsquo;reckless, men of treacheries&rsquo;; it is the same consonants as the word for a wild unruliness of Reuben (Genesis 49:4). &#9888; The shelf prints &lsquo;light&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;unprincipled&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;insolent&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;senseless&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;liars&rsquo;.', ('Zephaniah', 3, 4)))
+DICTIONARY.append(('zeev-erev', 'ze&rsquo;ev erev', 'זְאֵב עֶרֶב', 'ze&rsquo;evei erev', 'AN EVENING WOLF, a wolf that hunts at dusk and eats through the night. <span data-heb="זאבי ערב">&lsquo;Evening wolves&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="zephaniah-3.html#v3-3">Zephaniah 3:3</a> (now on these pages), of Jerusalem&rsquo;s judges who &lsquo;do not gnaw until the morning&rsquo;, and <a href="habakkuk-1.html#v8">Habakkuk 1:8</a>, of the Chaldean horses (now on these pages). &#9888; The shelf prints &lsquo;evening wolves&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;wolves in the evening&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;ravenous wolves at evening time&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Zephaniah', 3, 3)))
+DICTIONARY.append(('nuge', 'nuge moed', 'נוּגֵי מִמּוֹעֵד', 'nugei mimmoed', 'THOSE GRIEVED FAR FROM THE APPOINTED FEAST: the words are <em>nugei mimmoed</em>, from <em>yagah</em>, to grieve, and <em>moed</em>, an appointed time. <span data-heb="נוגי ממועד">They stand in this one verse of the Hebrew Bible</span>, <a href="zephaniah-3.html#v3-18">Zephaniah 3:18</a> (now on these pages), a line the versions read in six ways. &#9888; The shelf prints &lsquo;them that are sorrowful for the solemn assembly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;all who mourn over the loss of your appointed festivals&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the ones grief-stricken in absence from [your] festal season&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the afflicted&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;the triflers that were departed from the law&rsquo; (<span class="tag t-drb">Douay</span>).', ('Zephaniah', 3, 18)))
+DICTIONARY.append(('tsolea', 'tsole&rsquo;ah', 'הַצֹּלֵעָה', 'ha-tsole&rsquo;ah', 'THE LAME ONE, the one who limps. <span data-heb="הצלעה">&lsquo;The lame&rsquo; stands in three verses of the Hebrew Bible</span>: Micah 4:6 and 4:7 (not yet on these pages) and <a href="zephaniah-3.html#v3-19">Zephaniah 3:19</a> (now on these pages), always with <em>ha-niddachah</em>, the driven away. Jacob leaves Peniel limping, with the verb of the same root (<a href="genesis-32.html#v32-32">Genesis 32:32</a>, now on these pages). &#9888; The shelf prints &lsquo;her that halteth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;that which is lame&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;the lame&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;her that is limping&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the weak and helpless ones&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Zephaniah', 3, 19)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['pochaz'] = ('pochaz', 'IMPRUDENTE, espumoso, liviano: la palabra para quien hierve sin peso. <span data-heb="פחזים">El plural está solo en esta forma</span> en <a href="zephaniah-3.es.html#v3-4">Sofonías 3:4</a> (ya en estas páginas), de los profetas que son <em>pochazim, anshei bogedot</em>, «livianos, hombres de traiciones»; son las mismas consonantes que la palabra para la desenfrenada turbulencia de Rubén (Génesis 49:4). &#9888; El estante imprime «livianos» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «inescrupulosos» (<span class="tag t-nvi">NVI</span>), «insolentes» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['zeev-erev'] = ('zeev-erev', 'UN LOBO DE LA TARDE, un lobo que caza al anochecer y come por la noche. <span data-heb="זאבי ערב">«Lobos de la tarde» está en dos versículos de la Biblia hebrea</span>: <a href="zephaniah-3.es.html#v3-3">Sofonías 3:3</a> (ya en estas páginas), de los jueces de Jerusalén que «no roen hasta la mañana», y <a href="habakkuk-1.es.html#v8">Habacuc 1:8</a>, de los caballos de los caldeos (ya en estas páginas). &#9888; El estante imprime «lobos de tarde» (<span class="tag t-rv">RV&nbsp;1909</span>), «lobos nocturnos» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['nuge'] = ('nuge', 'LOS AFLIGIDOS LEJOS DE LA FIESTA SEÑALADA: las palabras son <em>nugei mimmoed</em>, de <em>yagah</em>, afligirse, y <em>moed</em>, un tiempo señalado. <span data-heb="נוגי ממועד">Están en este único versículo de la Biblia hebrea</span>, <a href="zephaniah-3.es.html#v3-18">Sofonías 3:18</a> (ya en estas páginas), una línea que las versiones leen de seis maneras. &#9888; El estante imprime «los fastidiados por causa del largo tiempo» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «las tristezas» (<span class="tag t-nvi">NVI</span>), «los que están desconsolados por su ausencia de [tu] período de fiesta» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «los que están tristes por no asistir a tus fiestas» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['tsolea'] = ('tsolea', 'LA COJA, la que renquea. <span data-heb="הצלעה">«La coja» está en tres versículos de la Biblia hebrea</span>: Miqueas 4:6 y 4:7 (todavía no en estas páginas) y <a href="zephaniah-3.es.html#v3-19">Sofonías 3:19</a> (ya en estas páginas), siempre con <em>ha-niddachah</em>, la dispersada. Jacob sale de Peniel cojeando, con el verbo de la misma raíz (<a href="genesis-32.html#v32-32">Génesis 32:32</a>, ya en estas páginas, todavía sin página en español). &#9888; El estante imprime «la coja» (<span class="tag t-rv">RV&nbsp;1909</span>), «la que cojea» (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «la oveja que cojea» (<span class="tag t-nvi">NVI</span>) y «los que cojean» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'marah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-1">Zephaniah 3:1</a> (now on these pages): <span data-heb="הוי מראה">&lsquo;Woe to the rebellious&rsquo; stands in this one verse</span>; the <span class="tag t-kjv">KJV</span> has &lsquo;filthy&rsquo; for the same word.',) + _t[5:]
+    if _t[0] == 'musar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-2">Zephaniah 3:2</a> (now on these pages): <span data-heb="לא לקחה מוסר">&lsquo;she did not take correction&rsquo; stands in this one verse</span>, and at verse 7 the hope is <span data-heb="תקחי מוסר">&lsquo;you will take correction&rsquo;</span>.',) + _t[5:]
+    if _t[0] == 'avel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages): <span data-heb="לא יעשה עולה">&lsquo;he does no injustice&rsquo;</span> is said of Jehovah in the midst of the city.',) + _t[5:]
+    if _t[0] == 'bosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages) has <em>boshet</em>, &lsquo;the unjust one knows no shame&rsquo;, and verses 11 and 19 return to it: not ashamed in that day, and praise &lsquo;where their shame was&rsquo;.',) + _t[5:]
+    if _t[0] == 'saphah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-9">Zephaniah 3:9</a> (now on these pages): <span data-heb="שפה ברורה">&lsquo;a pure lip&rsquo; stands in this one verse</span>, given to the peoples after the &lsquo;one lip&rsquo; of Genesis 11:1.',) + _t[5:]
+    if _t[0] == 'shekhem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-9">Zephaniah 3:9</a> (now on these pages): <span data-heb="שכם אחד">&lsquo;with one shoulder&rsquo; stands in two verses</span>, here and Genesis 48:22.',) + _t[5:]
+    if _t[0] == 'alaz':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-14">Zephaniah 3:14</a> (now on these pages) has <em>ve&rsquo;ilzi</em>, &lsquo;exult&rsquo;, said to the daughter of Jerusalem; verse 11 has the proudly exulting ones, <em>alizei</em>, removed from her midst.',) + _t[5:]
+    if _t[0] == 'simchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-14">Zephaniah 3:14</a> (now on these pages): <em>simchi</em>, &lsquo;be glad&rsquo;, is said to the daughter, and at verse 17 he rejoices over her <em>besimchah</em>, with joy.',) + _t[5:]
+    if _t[0] == 'gibbor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="גבור יושיע">&lsquo;a mighty one who saves&rsquo; stands in this one verse</span>, in the midst of Jerusalem.',) + _t[5:]
+    if _t[0] == 'sus':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="ישיש עליך">&lsquo;he will rejoice over you&rsquo; stands in two verses</span>, here and Isaiah 62:5.',) + _t[5:]
+    if _t[0] == 'charash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="יחריש באהבתו">&lsquo;he will be silent in his love&rsquo; stands in this one verse</span>; the <span class="tag t-kjv">KJV</span> has &lsquo;he will rest in his love&rsquo; and the <span class="tag t-niv">NIV</span> &lsquo;he will no longer rebuke you&rsquo;.',) + _t[5:]
+    if _t[0] == 'rinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="יגיל עליך ברנה">&lsquo;he will exult over you with singing&rsquo; stands in this one verse</span>, the noun of <em>roni</em>, &lsquo;sing&rsquo;, said to the daughter of Zion at verse 14.',) + _t[5:]
+    if _t[0] == 'shevut':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-20">Zephaniah 3:20</a> (now on these pages): <span data-heb="בשובי את שבותיכם">&lsquo;when I turn back your captivity&rsquo; stands in this one verse</span>, the last words of the chapter before <em>amar Yehovah</em>.',) + _t[5:]
+    if _t[0] == 'tehillah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-19">Zephaniah 3:19</a> (now on these pages): <span data-heb="לתהלה ולשם">&lsquo;for praise and for a name&rsquo; stands in two verses</span>, Deuteronomy 26:19 and here, and at verse 20 the order is reversed.',) + _t[5:]
+    if _t[0] == 'moed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-18">Zephaniah 3:18</a> (now on these pages): <span data-heb="נוגי ממועד">&lsquo;those grieved far from the appointed feast&rsquo; stands in this one verse</span>, a line that the shelf reads six ways.',) + _t[5:]
+    if _t[0] == 'yanah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-1">Zephaniah 3:1</a> (now on these pages): <span data-heb="העיר היונה">&lsquo;the city, the oppressing one&rsquo;, <em>ha-ir ha-yonah</em>, stands in this one verse</span>; its letters are also those of the dove.',) + _t[5:]
+if 'marah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['marah']
+    DICTIONARY_ES['marah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-1">Sofonías 3:1</a> (ya en estas páginas): <span data-heb="הוי מראה">«¡Ay de la rebelde!» está en este único versículo</span>; la <span class="tag t-rv">RV&nbsp;1909</span> dice «ensuciada» para la misma palabra.')
+if 'musar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['musar']
+    DICTIONARY_ES['musar'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-2">Sofonías 3:2</a> (ya en estas páginas): <span data-heb="לא לקחה מוסר">«no tomó corrección» está en este único versículo</span>, y en el versículo 7 la esperanza es <span data-heb="תקחי מוסר">«tomarás corrección»</span>.')
+if 'avel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avel']
+    DICTIONARY_ES['avel'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas): <span data-heb="לא יעשה עולה">«no hace injusticia»</span> se dice de Jehová en medio de la ciudad.')
+if 'bosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bosh']
+    DICTIONARY_ES['bosh'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas) tiene <em>boshet</em>, «el injusto no conoce la vergüenza», y los versículos 11 y 19 vuelven a ella: no avergonzada en aquel día, y alabanza «donde fue su vergüenza».')
+if 'saphah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saphah']
+    DICTIONARY_ES['saphah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-9">Sofonías 3:9</a> (ya en estas páginas): <span data-heb="שפה ברורה">«un labio puro» está en este único versículo</span>, dado a los pueblos tras el «un solo labio» de Génesis 11:1.')
+if 'shekhem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shekhem']
+    DICTIONARY_ES['shekhem'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-9">Sofonías 3:9</a> (ya en estas páginas): <span data-heb="שכם אחד">«con un solo hombro» está en dos versículos</span>, este y Génesis 48:22.')
+if 'alaz' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['alaz']
+    DICTIONARY_ES['alaz'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-14">Sofonías 3:14</a> (ya en estas páginas) tiene <em>ve&rsquo;ilzi</em>, «regocíjate», dicho a la hija de Jerusalén; el versículo 11 tiene a los altivos que se alborozan, <em>alizei</em>, quitados de en medio de ella.')
+if 'simchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['simchah']
+    DICTIONARY_ES['simchah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-14">Sofonías 3:14</a> (ya en estas páginas): <em>simchi</em>, «alégrate», se dice a la hija, y en el versículo 17 él se alegra sobre ella <em>besimchah</em>, con alegría.')
+if 'gibbor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gibbor']
+    DICTIONARY_ES['gibbor'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="גבור יושיע">«poderoso que salva» está en este único versículo</span>, en medio de Jerusalén.')
+if 'sus' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sus']
+    DICTIONARY_ES['sus'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="ישיש עליך">«se gozará sobre ti» está en dos versículos</span>, este e Isaías 62:5.')
+if 'charash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['charash']
+    DICTIONARY_ES['charash'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="יחריש באהבתו">«callará en su amor» está en este único versículo</span>; la <span class="tag t-nvi">NVI</span> dice «te renovará con su amor».')
+if 'rinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rinnah']
+    DICTIONARY_ES['rinnah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="יגיל עליך ברנה">«se regocijará sobre ti con cantos» está en este único versículo</span>, el sustantivo de <em>roni</em>, «canta», dicho a la hija de Sión en el versículo 14.')
+if 'shevut' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevut']
+    DICTIONARY_ES['shevut'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-20">Sofonías 3:20</a> (ya en estas páginas): <span data-heb="בשובי את שבותיכם">«cuando haga volver su cautiverio» está en este único versículo</span>, las últimas palabras del capítulo antes de <em>amar Yehovah</em>.')
+if 'tehillah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehillah']
+    DICTIONARY_ES['tehillah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-19">Sofonías 3:19</a> (ya en estas páginas): <span data-heb="לתהלה ולשם">«por alabanza y por nombre» está en dos versículos</span>, Deuteronomio 26:19 y este, y en el versículo 20 el orden se invierte.')
+if 'moed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['moed']
+    DICTIONARY_ES['moed'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-18">Sofonías 3:18</a> (ya en estas páginas): <span data-heb="נוגי ממועד">«los afligidos lejos de la fiesta señalada» está en este único versículo</span>, una línea que el estante lee de seis maneras.')
+if 'yanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yanah']
+    DICTIONARY_ES['yanah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-1">Sofonías 3:1</a> (ya en estas páginas): <span data-heb="העיר היונה">«la ciudad, la opresora», <em>ha-ir ha-yonah</em>, está en este único versículo</span>; sus letras son también las de la paloma.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yanah':
+        assert 'with its participle (none yet on these pages)' in _t[4], 'yanah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('with its participle (none yet on these pages)', 'with its participle (the others not yet on these pages)'),) + _t[5:]
+if 'yanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yanah']
+    assert 'con su participio (ninguno todavía en estas páginas)' in _d[1], 'yanah'
+    DICTIONARY_ES['yanah'] = (_d[0], _d[1].replace('con su participio (ninguno todavía en estas páginas)', 'con su participio (los demás todavía no en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avel':
+        assert 'Zephaniah 3:5 (not yet on these pages)' in _t[4], 'avel'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Zephaniah 3:5 (not yet on these pages)', '<a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages)'),) + _t[5:]
+if 'avel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avel']
+    assert 'Sofonías 3:5 (todavía no en estas páginas)' in _d[1], 'avel'
+    DICTIONARY_ES['avel'] = (_d[0], _d[1].replace('Sofonías 3:5 (todavía no en estas páginas)', '<a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sis':
+        assert 'at 65:19 and Zephaniah 3:17 (none yet on these pages)' in _t[4], 'sis'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('at 65:19 and Zephaniah 3:17 (none yet on these pages)', 'at 65:19 and <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages; the other two not yet)'),) + _t[5:]
+if 'sis' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sis']
+    assert 'en 65:19 y Sofonías 3:17 (ninguno todavía en estas páginas)' in _d[1], 'sis'
+    DICTIONARY_ES['sis'] = (_d[0], _d[1].replace('en 65:19 y Sofonías 3:17 (ninguno todavía en estas páginas)', 'en 65:19 y <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas; los otros dos todavía no)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Zephaniah', 3, 1), ('Genesis', 8, 8), 'ha-yonah — the dove, and the oppressing'),
+    (('Zephaniah', 3, 3), ('Habakkuk', 1, 8), 'evening wolves'),
+    (('Zephaniah', 3, 5), ('Deuteronomy', 32, 4), 'he does no injustice'),
+    (('Zephaniah', 3, 5), ('Isaiah', 40, 26), 'it does not fail'),
+    (('Zephaniah', 3, 5), ('Exodus', 16, 21), 'morning by morning'),
+    (('Zephaniah', 3, 6), ('Zephaniah', 1, 16), 'corner towers'),
+    (('Zephaniah', 3, 8), ('Zephaniah', 1, 18), 'in the fire of my jealousy all the earth will be consumed'),
+    (('Zephaniah', 3, 9), ('Genesis', 11, 1), 'a pure lip — one lip, again'),
+    (('Zephaniah', 3, 9), ('Genesis', 48, 22), 'one shoulder'),
+    (('Zephaniah', 3, 13), ('Leviticus', 26, 6), 'none to make you afraid'),
+    (('Zephaniah', 3, 13), ('Psalms', 23, 2), 'pasture and lie down'),
+    (('Zephaniah', 3, 14), ('Isaiah', 54, 1), 'Sing'),
+    (('Zephaniah', 3, 16), ('Isaiah', 54, 4), 'do not fear'),
+    (('Zephaniah', 3, 16), ('Genesis', 21, 17), 'do not fear — to a woman'),
+    (('Zephaniah', 3, 17), ('Deuteronomy', 7, 21), 'Jehovah your God is in the midst of you'),
+    (('Zephaniah', 3, 19), ('Genesis', 32, 32), 'the lame'),
+    (('Zephaniah', 3, 19), ('Deuteronomy', 26, 19), 'for praise and for a name'),
+    (('Zephaniah', 3, 20), ('Deuteronomy', 30, 3), 'turn back the captivity'),
+    (('Zephaniah', 3, 20), ('Job', 42, 10), 'turn back the captivity'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["zephaniah3"] = dict(era='divided',
+    when='Woe to the rebellious, polluted, oppressing city that did not listen, take correction, trust or draw near; princes like lions, judges like evening wolves, reckless prophets, priests who profane what is holy; Jehovah righteous in her midst and giving his judgment every morning while they rose early to corrupt; wait for me for the day I rise up; then a pure lip, and offerings from beyond the rivers of Cush; an afflicted and poor people left in her midst, the remnant of Israel who pasture and lie down; sing, daughter of Zion, for the King of Israel is in your midst and he will exult over you with singing; and the lame and the driven away gathered, a name and a praise, when I turn back your captivity.',
+    clock='Seventh century BC; the book dates Zephaniah to the reign of Josiah. &#9888; Verses 1&ndash;7 name no city, and the dating of the verses of promise at the end of the chapter, 14&ndash;20, is argued.')
+
+CHAPTER_ART["zephaniah3"] = [dict(
+    file='zephaniah-yaroslavl-icon.jpg',
+    title='The Prophet Zephaniah (Safoniy)', title_es='El profeta Sofonías (Safoniy)',
+    artist='Anonymous Russian icon painter', artist_es='Pintor de iconos ruso anónimo',
+    year='second half of the 18th century', location='Yaroslavl; from a prophets&rsquo; row of an iconostasis (private collection)', location_es='Yaroslavl; de una hilera de profetas de un iconostasio (colección privada)',
+    alt='An icon of a standing bearded man with a bald head and a gold halo, in a blue robe and a crimson mantle that swings out behind him. His right hand is raised with the palm up and his left hand, lowered, holds a small scroll with lines of Church Slavonic writing; more Slavonic letters stand at the top. He stands barefoot on a dark band against a pale background, inside a gold border with worn edges.',
+    alt_es='Un icono de un hombre barbado de pie, calvo, con un halo de oro, con una túnica azul y un manto carmesí que ondea tras él. Su mano derecha está alzada con la palma hacia arriba y la izquierda, baja, sostiene un pequeño rollo con líneas de escritura en eslavo eclesiástico; más letras eslavas están arriba. Está descalzo sobre una franja oscura contra un fondo pálido, dentro de un borde dorado de bordes gastados.',
+    note='Zephaniah 3. This is the prophet himself, not a scene from the chapter: an iconostasis had a row of prophets, each holding a scroll with a line of his book. The scroll here carries Church Slavonic writing that this note does not claim to read; the pose, the colors and the inscription are the icon painter&rsquo;s, and the song of verse 17 is not in the picture.',
+    note_es='Sofonías 3. Este es el profeta mismo, no una escena del capítulo: un iconostasio tenía una hilera de profetas, cada uno con un rollo que llevaba una línea de su libro. El rollo de aquí lleva escritura en eslavo eclesiástico que esta nota no pretende leer; la pose, los colores y la inscripción son del pintor del icono, y el canto del versículo 17 no está en la imagen.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Zephaniah_from_Yaroslavl_(18_c,_priv.coll).jpg')]
+
