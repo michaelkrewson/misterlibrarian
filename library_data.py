@@ -61449,3 +61449,205 @@ CHAPTER_ART["dan9"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Daniel%27s_Prayer_and_the_Angel_Gabriel.tif')]
 
+
+
+# Appended to library_data.py for Psalm 40 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('karah', 'karah', 'כָּרָה', 'karith', 'TO DIG &mdash; to dig a pit or a well, to bore: <span data-heb="אזנים כרית לי">&lsquo;ears you have dug for me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages). &#9888; The shelf prints &lsquo;opened&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;pierced&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;prepared&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Psalms', 40, 7)))
+DICTIONARY.append(('megillah', 'megillah', 'מְגִלָּה', 'bimgillat', 'A SCROLL &mdash; a roll of writing: <span data-heb="במגלת ספר כתוב עלי">&lsquo;in the scroll of the book it is written of me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-8">Psalm 40:8</a> (now on these pages). &#9888; The shelf prints &lsquo;the volume of the book&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the scroll&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the roll of the book&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the head of the book&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 40, 8)))
+DICTIONARY.append(('kala-restrain', 'kala', 'כָּלָא', 'ekhla', 'TO HOLD BACK &mdash; to restrain, to shut up: <span data-heb="הנה שפתי לא אכלא">&lsquo;see, I do not hold back my lips&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-10">Psalm 40:10</a> (now on these pages), and <span data-heb="לא תכלא רחמיך ממני">&lsquo;you will not hold back your compassions from me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-12">verse 12</a>. &#9888; The shelf prints &lsquo;refrained&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;seal&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;restrain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 10, and &lsquo;withhold&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;restrain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 12.', ('Psalms', 40, 10)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['karah'] = ('karith', 'CAVAR &mdash; cavar un pozo, perforar: <span data-heb="אזנים כרית לי">&laquo;oídos me has cavado&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas). &#9888; El estante imprime &laquo;abierto&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;abriste&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['megillah'] = ('bimgillat', 'UN ROLLO &mdash; un rollo de escritura: <span data-heb="במגלת ספר כתוב עלי">&laquo;en el rollo del libro está escrito de mí&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-8">Salmo 40:8</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el rollo del libro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kala-restrain'] = ('ekhla', 'DETENER &mdash; contener, encerrar: <span data-heb="הנה שפתי לא אכלא">&laquo;mira, no detengo mis labios&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-10">Salmo 40:10</a> (ya en estas páginas), y <span data-heb="לא תכלא רחמיך ממני">&laquo;no detendrás tus compasiones de mí&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-12">el versículo 12</a>. &#9888; El estante imprime &laquo;refrené&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;restrinjo&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) en el versículo 10, y &laquo;retengas&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;restrinjas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) en el 12.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-5">Psalm 40:5</a> (now on these pages) has <span data-heb="אשרי הגבר אשר שם יהוה מבטחו">&lsquo;happy is the strong man who has made Jehovah his trust&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-5">Salmo 40:5</a> (ya en estas páginas) tiene <span data-heb="אשרי הגבר אשר שם יהוה מבטחו">&laquo;feliz el hombre fuerte que ha puesto a Jehová por su confianza&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kasah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="צדקתך לא כסיתי בתוך לבי">&lsquo;your righteousness I have not covered in the midst of my heart&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kasah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kasah']
+    DICTIONARY_ES['kasah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="צדקתך לא כסיתי בתוך לבי">&laquo;tu justicia no he cubierto en medio de mi corazón&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="חסדך ואמתך">&lsquo;your steadfast love and your truth&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="חסדך ואמתך">&laquo;tu misericordia y tu verdad&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="חסדך ואמתך">&lsquo;your steadfast love and your truth&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'emet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emet']
+    DICTIONARY_ES['emet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="חסדך ואמתך">&laquo;tu misericordia y tu verdad&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rachamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-12">Psalm 40:12</a> (now on these pages) has <span data-heb="לא תכלא רחמיך ממני">&lsquo;you will not hold back your compassions from me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rachamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rachamim']
+    DICTIONARY_ES['rachamim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-12">Salmo 40:12</a> (ya en estas páginas) tiene <span data-heb="לא תכלא רחמיך ממני">&laquo;no detendrás tus compasiones de mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qahal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-10">Psalm 40:10</a> (now on these pages) has <span data-heb="בקהל רב">&lsquo;in the great congregation&rsquo;, which stands in four verses</span>.',) + _t[5:]
+if 'qahal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qahal']
+    DICTIONARY_ES['qahal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-10">Salmo 40:10</a> (ya en estas páginas) tiene <span data-heb="בקהל רב">&laquo;en la gran congregación&raquo;, que está en cuatro versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'bor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-3">Psalm 40:3</a> (now on these pages) has <span data-heb="ויעלני מבור שאון">&lsquo;and he brought me up out of the pit of tumult&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'bor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bor']
+    DICTIONARY_ES['bor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-3">Salmo 40:3</a> (ya en estas páginas) tiene <span data-heb="ויעלני מבור שאון">&laquo;y me hizo subir del pozo del estruendo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chadash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-4">Psalm 40:4</a> (now on these pages) has <span data-heb="ויתן בפי שיר חדש">&lsquo;and he put a new song in my mouth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chadash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chadash']
+    DICTIONARY_ES['chadash'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-4">Salmo 40:4</a> (ya en estas páginas) tiene <span data-heb="ויתן בפי שיר חדש">&laquo;y puso en mi boca un cántico nuevo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-3">Psalm 40:3</a> (now on these pages) has <span data-heb="ויקם על סלע רגלי">&lsquo;and he set my feet on a rock&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sela' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sela']
+    DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-3">Salmo 40:3</a> (ya en estas páginas) tiene <span data-heb="ויקם על סלע רגלי">&laquo;y puso mis pies sobre una roca&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zevach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="זבח ומנחה לא חפצת">&lsquo;sacrifice and offering you did not delight in&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'zevach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zevach']
+    DICTIONARY_ES['zevach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="זבח ומנחה לא חפצת">&laquo;sacrificio y ofrenda no te deleitaron&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'minchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="זבח ומנחה לא חפצת">&lsquo;sacrifice and offering you did not delight in&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'minchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['minchah']
+    DICTIONARY_ES['minchah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="זבח ומנחה לא חפצת">&laquo;sacrificio y ofrenda no te deleitaron&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'olah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="עולה וחטאה לא שאלת">&lsquo;burnt offering and sin offering you did not ask&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'olah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olah']
+    DICTIONARY_ES['olah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="עולה וחטאה לא שאלת">&laquo;holocausto y ofrenda por el pecado no pediste&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chaphets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="לעשות רצונך אלהי חפצתי">&lsquo;to do your will, my God, I delighted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chaphets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chaphets']
+    DICTIONARY_ES['chaphets'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="לעשות רצונך אלהי חפצתי">&laquo;hacer tu voluntad, Dios mío, me deleitó&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sefer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-8">Psalm 40:8</a> (now on these pages) has <span data-heb="במגלת ספר כתוב עלי">&lsquo;in the scroll of the book it is written of me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sefer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sefer']
+    DICTIONARY_ES['sefer'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-8">Salmo 40:8</a> (ya en estas páginas) tiene <span data-heb="במגלת ספר כתוב עלי">&laquo;en el rollo del libro está escrito de mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'torah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="ותורתך בתוך מעי">&lsquo;and your law is within my inward parts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'torah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['torah']
+    DICTIONARY_ES['torah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="ותורתך בתוך מעי">&laquo;y tu ley está dentro de mis entrañas&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="לעשות רצונך אלהי חפצתי">&lsquo;to do your will, my God, I delighted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ratson' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ratson']
+    DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="לעשות רצונך אלהי חפצתי">&laquo;hacer tu voluntad, Dios mío, me deleitó&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pala':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-6">Psalm 40:6</a> (now on these pages) has <span data-heb="נפלאתיך ומחשבתיך">&lsquo;your wonders and your thoughts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'pala' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pala']
+    DICTIONARY_ES['pala'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-6">Salmo 40:6</a> (ya en estas páginas) tiene <span data-heb="נפלאתיך ומחשבתיך">&laquo;tus maravillas y tus pensamientos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'machashavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-6">Psalm 40:6</a> (now on these pages) has <span data-heb="נפלאתיך ומחשבתיך">&lsquo;your wonders and your thoughts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'machashavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['machashavah']
+    DICTIONARY_ES['machashavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-6">Salmo 40:6</a> (ya en estas páginas) tiene <span data-heb="נפלאתיך ומחשבתיך">&laquo;tus maravillas y tus pensamientos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rahav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-5">Psalm 40:5</a> (now on these pages) has <span data-heb="ולא פנה אל רהבים">&lsquo;and has not turned to the proud&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rahav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rahav']
+    DICTIONARY_ES['rahav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-5">Salmo 40:5</a> (ya en estas páginas) tiene <span data-heb="ולא פנה אל רהבים">&laquo;y no se ha vuelto a los soberbios&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emunah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="אמונתך ותשועתך אמרתי">&lsquo;your faithfulness and your salvation I have spoken&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'emunah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emunah']
+    DICTIONARY_ES['emunah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="אמונתך ותשועתך אמרתי">&laquo;tu fidelidad y tu salvación he hablado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'teshuah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="אמונתך ותשועתך אמרתי">&lsquo;your faithfulness and your salvation I have spoken&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'teshuah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['teshuah']
+    DICTIONARY_ES['teshuah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="אמונתך ותשועתך אמרתי">&laquo;tu fidelidad y tu salvación he hablado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-13">Psalm 40:13</a> (now on these pages) has <span data-heb="השיגוני עונתי">&lsquo;my iniquities have overtaken me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'avon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avon']
+    DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-13">Salmo 40:13</a> (ya en estas páginas) tiene <span data-heb="השיגוני עונתי">&laquo;mis iniquidades me han alcanzado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'bosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-15">Psalm 40:15</a> (now on these pages) has <span data-heb="יבשו ויחפרו יחד">&lsquo;let them be ashamed and confounded together&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'bosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bosh']
+    DICTIONARY_ES['bosh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-15">Salmo 40:15</a> (ya en estas páginas) tiene <span data-heb="יבשו ויחפרו יחד">&laquo;sean avergonzados y confundidos a una&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'oni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="ואני עני ואביון">&lsquo;and I am poor and needy&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'oni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['oni']
+    DICTIONARY_ES['oni'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="ואני עני ואביון">&laquo;y yo estoy afligido y necesitado&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'evyon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="ואני עני ואביון">&lsquo;and I am poor and needy&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'evyon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['evyon']
+    DICTIONARY_ES['evyon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="ואני עני ואביון">&laquo;y yo estoy afligido y necesitado&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chashav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="אדני יחשב לי">&lsquo;the Lord thinks of me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chashav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chashav']
+    DICTIONARY_ES['chashav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="אדני יחשב לי">&laquo;el Señor piensa en mí&raquo;, que está en este único versículo</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 40, 7), ('Hebrews', 10, 5), 'ears you have dug / a body you prepared — the quotation'),
+    (('Psalms', 40, 7), ('1 Samuel', 15, 22), 'sacrifice and offering not delighted in'),
+    (('Psalms', 40, 7), ('Psalms', 51, 18), 'you do not delight in sacrifice'),
+    (('Psalms', 40, 5), ('Psalms', 32, 1), 'happy — the strong man who trusts'),
+    (('Psalms', 40, 11), ('Psalms', 32, 5), 'not covered — the verb of confession'),
+    (('Psalms', 40, 10), ('Psalms', 22, 26), 'in the great congregation'),
+    (('Psalms', 40, 18), ('Psalms', 32, 2), 'Jehovah counts — the verb of reckoning'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms40"] = dict(era='monarchy',
+    when='A psalm of David for the director: waiting, waiting for Jehovah, who brings the psalmist up out of the pit of tumult and the miry clay, sets his feet on a rock and puts a new song in his mouth; happy the strong man who trusts and does not turn to the proud; the wonders and thoughts too many to number; sacrifice and offering not delighted in, ears dug, here I have come, in the scroll it is written of me; the glad news of righteousness told in the great congregation, steadfast love and truth not hidden; evils without number and iniquities overtaken him; and a prayer to be delivered, the shamed and the glad, and I am poor and needy, the Lord thinks of me.',
+    clock='Undated. The heading names David and the director and gives no occasion; the psalm gives nothing to date it. &#9888; Its last verses (14&ndash;18) are repeated, with small changes, as Psalm 70.')
+
+CHAPTER_ART["psalms40"] = [dict(
+    file='tres-riches-heures-f96r-psalm-39.jpg',
+    title='Folio 96r, Psalm 39 (Latin numbering): Expectans expectavi (Très Riches Heures du duc de Berry)', title_es='Folio 96r, Salmo 39 (numeración latina): Expectans expectavi (Très Riches Heures du duc de Berry)',
+    artist='Illuminators of the Très Riches Heures', artist_es='Iluminadores de las Très Riches Heures',
+    year='15th century', location='Musée Condé, Chantilly', location_es='Museo Condé, Chantilly',
+    alt='Part of an illuminated manuscript page. On the left, columns of black Latin text with small decorated capitals and a flowered border; on the right, a gold-framed miniature of a bearded, crowned man in a long grey robe with a white collar, kneeling with open hands among dark rocky peaks that burn with flames on their summits, with a few faces showing in the stone at the right edge. Beneath the miniature a large decorated initial begins the words Expectans expectavi Dominum.',
+    alt_es='Parte de una página de manuscrito iluminado. A la izquierda, columnas de texto latino negro con pequeñas capitales decoradas y una orla de flores; a la derecha, una miniatura con marco de oro de un hombre barbado y coronado, con una larga túnica gris y un cuello blanco, arrodillado con las manos abiertas entre peñascos oscuros que arden en llamas en sus cimas, con unos pocos rostros que asoman en la piedra en el borde derecho. Debajo de la miniatura una gran inicial decorada abre las palabras Expectans expectavi Dominum.',
+    note='Psalm 40:2. The page where this psalm begins in the Latin Bible, where it is Psalm 39: the lower right reads <em>Expectans expectavi Dominum</em>, &ldquo;waiting I waited for the Lord&rdquo;. The miniature beside it, of a crowned man kneeling among burning rocks, is the illuminator&rsquo;s own scene; the psalm itself has no fire, only a pit, a rock and a new song.',
+    note_es='Salmo 40:2. La página donde empieza este salmo en la Biblia latina, donde es el Salmo 39: abajo a la derecha se lee <em>Expectans expectavi Dominum</em>, «esperando esperé al Señor». La miniatura a su lado, de un hombre coronado arrodillado entre rocas ardientes, es la escena propia del iluminador; el salmo mismo no tiene fuego, solo un pozo, una roca y un cántico nuevo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Folio_96r_-_Psalm_XXXIX.jpg')]
+
