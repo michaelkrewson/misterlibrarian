@@ -52541,10 +52541,10 @@ def _dict8_es(slug, old=None, new=None, add=None):
     DICTIONARY_ES[slug] = (_h, _s)
 
 DICTIONARY.append(("methegh", "metheg", "מֶתֶג", "metheg",
-    'A BRIDLE &mdash; <em>metheg</em>, the bit or bridle of a horse or donkey (Psalm 32:9; Proverbs 26:3, not yet on these pages). <a href="2-samuel-8.html#v8-1">2 Samuel 8:1</a> (now on these pages) says David took &lsquo;Metheg-ha-ammah&rsquo; out of the hand of the Philistines; <span data-heb="מתג האמה">the name stands in one verse of the Hebrew Bible</span>. <em>Ammah</em> is a cubit, a forearm or a conduit, and some read the whole &lsquo;the bridle of the mother (city)&rsquo;, while the Chronicles have &lsquo;Gath and its towns&rsquo; in its place (1 Chronicles 18:1, not yet on these pages). ⚠ Nothing in the Hebrew says what it was.',
+    'A BRIDLE &mdash; <em>metheg</em>, the bit or bridle of a horse or donkey (<a href="psalms-32.html#v32-9">Psalm 32:9</a>, now on these pages; Proverbs 26:3, not yet on these pages). <a href="2-samuel-8.html#v8-1">2 Samuel 8:1</a> (now on these pages) says David took &lsquo;Metheg-ha-ammah&rsquo; out of the hand of the Philistines; <span data-heb="מתג האמה">the name stands in one verse of the Hebrew Bible</span>. <em>Ammah</em> is a cubit, a forearm or a conduit, and some read the whole &lsquo;the bridle of the mother (city)&rsquo;, while the Chronicles have &lsquo;Gath and its towns&rsquo; in its place (1 Chronicles 18:1, not yet on these pages). ⚠ Nothing in the Hebrew says what it was.',
     ("2 Samuel", 8, 1)))
 DICTIONARY_ES["methegh"] = ("méteg",
-    'UN FRENO &mdash; <em>metheg</em>, el bocado o freno de un caballo o un asno (Salmo 32:9; Proverbios 26:3, todavía no en estas páginas). <a href="2-samuel-8.es.html#v8-1">2 Samuel 8:1</a> (ya en estas páginas) dice que David tomó «Meteg-ha-ama» de mano de los filisteos; <span data-heb="מתג האמה">el nombre está en un versículo de la Biblia hebrea</span>. <em>Ammah</em> es un codo, un antebrazo o una conducción de agua, y algunos leen el conjunto «el freno de la ciudad madre», mientras que Crónicas tiene «Gat y sus aldeas» en su lugar (1 Crónicas 18:1, todavía no en estas páginas). ⚠ Nada en el hebreo dice qué era.')
+    'UN FRENO &mdash; <em>metheg</em>, el bocado o freno de un caballo o un asno (<a href="psalms-32.es.html#v32-9">Salmo 32:9</a>, ya en estas páginas; Proverbios 26:3, todavía no en estas páginas). <a href="2-samuel-8.es.html#v8-1">2 Samuel 8:1</a> (ya en estas páginas) dice que David tomó «Meteg-ha-ama» de mano de los filisteos; <span data-heb="מתג האמה">el nombre está en un versículo de la Biblia hebrea</span>. <em>Ammah</em> es un codo, un antebrazo o una conducción de agua, y algunos leen el conjunto «el freno de la ciudad madre», mientras que Crónicas tiene «Gat y sus aldeas» en su lugar (1 Crónicas 18:1, todavía no en estas páginas). ⚠ Nada en el hebreo dice qué era.')
 
 DICTIONARY.append(("shelet", "shelet", "שֶׁלֶט", "shelet",
     'A GOLD SHIELD (?) &mdash; <em>shelet</em>, the gold things on the servants of Hadadezer that David took and brought to Jerusalem (<a href="2-samuel-8.html#v8-7">2 Samuel 8:7</a>, now on these pages). <span data-heb="שלטי הזהב">&lsquo;The shields of gold&rsquo; stands in two verses of the Hebrew Bible</span>, this one and 1 Chronicles 18:7 (not yet on these pages). ⚠ The meaning is not certain: the shelf has &lsquo;shields&rsquo; (ASV, NIV), &lsquo;circular shields&rsquo; (NWT 1984) and &lsquo;arms&rsquo; (Douay), and the Greek &lsquo;bracelets&rsquo;.',
@@ -61253,4 +61253,86 @@ CHAPTER_ART["psalms25"] = [dict(
     note_es='Salmo 25:1. Durero dibujó estas manos en 1508 como estudio de un apóstol para un retablo, y el dibujo se ha vuelto la imagen común de la oración; no es una escena del salmo, que no tiene manos, solo un alma levantada, ojos hacia Jehová y pies librados de una red.',
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Praying_Hands,_1508_-_Google_Art_Project.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 32 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('kasah', 'kasah', 'כָּסָה', 'kasah', 'TO COVER &mdash; to put a covering over: <span data-heb="כסוי חטאה">&lsquo;whose sin is covered&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-1">Psalm 32:1</a> (now on these pages), and <span data-heb="ועוני לא כסיתי">&lsquo;my iniquity I did not cover&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-5">verse 5</a>: the sin God covers is the sin the man does not. &#9888; The shelf prints &lsquo;covered&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 1, and &lsquo;hid&rsquo; (<span class="tag t-kjv">KJV</span>) or &lsquo;cover up&rsquo; (<span class="tag t-niv">NIV</span>) at verse 5.', ('Psalms', 32, 1)))
+DICTIONARY.append(('resen', 'resen', 'רֶסֶן', 'resen', 'A BRIDLE &mdash; the headstall or halter of a horse: <span data-heb="במתג ורסן">&lsquo;bit and bridle&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-9">Psalm 32:9</a> (now on these pages), beside <em>metheg</em>, the bit. &#9888; The shelf prints &lsquo;bridle&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>) and &lsquo;halter&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 32, 9)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['kasah'] = ('kasah', 'CUBRIR &mdash; poner una cubierta encima: <span data-heb="כסוי חטאה">&laquo;cuyo pecado está cubierto&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> (ya en estas páginas), y <span data-heb="ועוני לא כסיתי">&laquo;mi iniquidad no cubrí&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-5">el versículo 5</a>: el pecado que Dios cubre es el pecado que el hombre no cubre. &#9888; El estante imprime &laquo;cubierto&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) en el versículo 1, y &laquo;encubrí&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) u &laquo;oculté&raquo; (<span class="tag t-nvi">NVI</span>) en el 5.')
+DICTIONARY_ES['resen'] = ('resen', 'UN CABESTRO &mdash; la cabezada o el ronzal de un caballo: <span data-heb="במתג ורסן">&laquo;freno y cabestro&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-9">Salmo 32:9</a> (ya en estas páginas), junto a <em>metheg</em>, el freno. &#9888; El estante imprime &laquo;cabestro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;riendas&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;brida&raquo; (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-1">Psalm 32:1</a> and <a href="psalms-32.html#v32-2">verse 2</a> (now on these pages) say it twice: <span data-heb="אשרי נשוי פשע">&lsquo;happy is the one whose transgression is lifted off&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> y <a href="psalms-32.es.html#v32-2">el versículo 2</a> (ya en estas páginas) lo dicen dos veces: <span data-heb="אשרי נשוי פשע">&laquo;feliz el que tiene la transgresión quitada&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-1">Psalm 32:1</a> and <a href="psalms-32.html#v32-5">verse 5</a> (now on these pages) have the lifting off of transgression and iniquity: <span data-heb="ואתה נשאת עון חטאתי">&lsquo;and you lifted off the iniquity of my sin&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> y <a href="psalms-32.es.html#v32-5">el versículo 5</a> (ya en estas páginas) tienen el quitar la transgresión y la iniquidad: <span data-heb="ואתה נשאת עון חטאתי">&laquo;y tú quitaste la iniquidad de mi pecado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chashav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-2">Psalm 32:2</a> (now on these pages) has <span data-heb="לא יחשב יהוה לו עון">&lsquo;Jehovah does not count iniquity&rsquo;, which stands in this one verse</span>, the verb Paul quotes in Romans 4:7&ndash;8.',) + _t[5:]
+if 'chashav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chashav']
+    DICTIONARY_ES['chashav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-2">Salmo 32:2</a> (ya en estas páginas) tiene <span data-heb="לא יחשב יהוה לו עון">&laquo;Jehová no cuenta la iniquidad&raquo;, que está en este único versículo</span>, el verbo que Pablo cita en Romanos 4:7&ndash;8.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'seter':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-7">Psalm 32:7</a> (now on these pages) has <span data-heb="אתה סתר לי">&lsquo;you are a hiding place for me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'seter' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['seter']
+    DICTIONARY_ES['seter'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-7">Salmo 32:7</a> (ya en estas páginas) tiene <span data-heb="אתה סתר לי">&laquo;tú eres un escondite para mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sabab':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-7">Psalm 32:7</a> and <a href="psalms-32.html#v32-10">verse 10</a> (now on these pages) have it twice: songs of deliverance round him, steadfast love round him.',) + _t[5:]
+if 'sabab' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sabab']
+    DICTIONARY_ES['sabab'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-7">Salmo 32:7</a> y <a href="psalms-32.es.html#v32-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces: cantos de liberación a su alrededor, misericordia a su alrededor.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sakal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-8">Psalm 32:8</a> (now on these pages) has <span data-heb="אשכילך">&lsquo;I will give you insight&rsquo;, which stands in this one verse</span> in this form, the verb of the title <em>maskil</em> at verse 1.',) + _t[5:]
+if 'sakal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakal']
+    DICTIONARY_ES['sakal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-8">Salmo 32:8</a> (ya en estas páginas) tiene <span data-heb="אשכילך">&laquo;te daré perspicacia&raquo;, que está en este único versículo</span> en esta forma, el verbo del encabezado <em>maskil</em> del versículo 1.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 32, 1), ('Psalms', 1, 1), "happy is the one — the Psalter's first word again"),
+    (('Psalms', 32, 1), ('Exodus', 34, 7), 'lifting iniquity and transgression'),
+    (('Psalms', 32, 1), ('Leviticus', 16, 22), "lift off — the scapegoat's verb"),
+    (('Psalms', 32, 2), ('Romans', 4, 7), "Jehovah does not count iniquity — Paul's witness"),
+    (('Psalms', 32, 5), ('1 John', 1, 9), 'confess and be forgiven'),
+    (('Psalms', 32, 5), ('2 Samuel', 12, 13), 'I have sinned — and you lifted it off'),
+    (('Psalms', 32, 6), ('Isaiah', 55, 6), 'while he may be found'),
+    (('Psalms', 32, 7), ('Psalms', 91, 1), 'a hiding place'),
+    (('Psalms', 32, 7), ('Psalms', 27, 5), 'a hiding place'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms32"] = dict(era='monarchy',
+    when='A maskil of David: happy the one whose transgression is lifted off and sin covered, to whom Jehovah does not count iniquity; the silence that wore the bones away, the hand heavy day and night, the sin made known and the iniquity lifted off; every loyal one praying at a time of finding, a hiding place and songs of deliverance; a voice that will give insight and counsel, and the warning not to be like a horse or a mule; the many pains of the wicked, steadfast love round the one who trusts, and the righteous called to rejoice.',
+    clock='Undated. The heading names David and a maskil and gives no occasion; readers have joined it to David&rsquo;s sin with Bathsheba, and that is a reading and not something the psalm says.')
+
+CHAPTER_ART["psalms32"] = [dict(
+    file='durer-small-horse-1505.jpg',
+    title='The Small Horse', title_es='El caballito',
+    artist='Albrecht Dürer', artist_es='Alberto Durero',
+    year='1505', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='An engraving in fine dark lines on cream paper. A stocky horse with a flowing mane stands in profile facing left under a ruined stone arch, one front hoof raised; behind it a halberd leans against the wall beside a piece of armour and a bowl of flame on a broken block, and a small stone with the artist&rsquo;s monogram lies in the foreground. The date 1505 is cut into the sky in the archway. The horse wears no bridle.',
+    alt_es='Un grabado de líneas oscuras y finas sobre papel crema. Un caballo robusto de crin abundante está de perfil, mirando a la izquierda, bajo un arco de piedra en ruinas, con una mano levantada; detrás de él una alabarda se apoya en la pared junto a una pieza de armadura y un cuenco de fuego sobre un bloque roto, y una piedrecita con el monograma del artista yace en primer plano. La fecha 1505 está grabada en el cielo del arco. El caballo no lleva brida.',
+    note='Psalm 32:9. Dürer engraved this horse in 1505 as a study of a well-proportioned animal, not as a scene from the psalm; the horse here wears no bit and no bridle, and the psalm&rsquo;s warning is about the one that must be brought near by them.',
+    note_es='Salmo 32:9. Durero grabó este caballo en 1505 como estudio de un animal bien proporcionado, no como escena del salmo; el caballo de aquí no lleva freno ni brida, y la advertencia del salmo es sobre el que hay que acercar con ellos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Small_Horse,_1505,_NGA_6676.jpg')]
 
