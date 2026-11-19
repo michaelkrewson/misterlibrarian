@@ -60819,3 +60819,130 @@ CHAPTER_ART["isa54"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Hannah_VICTORS,_Jan.jpg')]
 
+
+
+
+# Appended to library_data.py for Joel 2 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shalam', 'shalam', 'שָׁלַם', 'shillamti', 'TO MAKE WHOLE, to repay &mdash; <span data-heb="ושלמתי לכם">&lsquo;and I will restore to you&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages), where the years the locust has eaten are paid back. &#9888; The shelf prints &lsquo;restore&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;repay&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;make compensation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;render&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;give back&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Joel', 2, 25)))
+DICTIONARY.append(('bashar', 'bashar', 'בָּשָׂר', 'basar', 'FLESH &mdash; the body, and all that lives in a body: <span data-heb="אשפוך את רוחי על כל בשר">&lsquo;I will pour out my spirit on all flesh&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-28">Joel 2:28</a> (now on these pages), quoted at <a href="acts-2.html#v2-17">Acts 2:17</a> (now on these pages). &#9888; The shelf prints &lsquo;all flesh&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;every sort of flesh&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;all people&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;all of you&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Joel', 2, 28)))
+DICTIONARY.append(('moreh', 'moreh', 'מוֹרֶה', 'moreh', 'THE EARLY RAIN, or a teacher &mdash; the same three letters name both: <span data-heb="המורה לצדקה">&lsquo;the <em>moreh</em> in righteousness&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-23">Joel 2:23</a> (now on these pages), and the teacher or the oracle-giver of the hill of Moreh at <a href="judges-7.html#v1">Judges 7:1</a> (now on these pages). &#9888; The shelf prints &lsquo;the former rain moderately&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the autumn rains&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the rain of righteousness&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;tokens of forgiveness&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;a teacher of justice&rsquo; (<span class="tag t-drb">Douay</span>).', ('Joel', 2, 23)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shalam'] = ('shillamti', 'HACER ÍNTEGRO, pagar de vuelta &mdash; <span data-heb="ושלמתי לכם">&laquo;y os restituiré&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas), donde los años que comió la langosta se pagan de vuelta. &#9888; El estante imprime &laquo;restituiré&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;compensaré&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['bashar'] = ('basar', 'CARNE &mdash; el cuerpo, y todo lo que vive en un cuerpo: <span data-heb="אשפוך את רוחי על כל בשר">&laquo;derramaré mi espíritu sobre toda carne&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-28">Joel 2:28</a> (ya en estas páginas), citado en <a href="acts-2.es.html#v2-17">Hechos 2:17</a> (ya en estas páginas). &#9888; El estante imprime &laquo;toda carne&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;toda clase de carne&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;todo ser humano&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;todo tipo de personas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['moreh'] = ('moreh', 'LA LLUVIA TEMPRANA, o un maestro &mdash; las mismas tres letras nombran las dos cosas: <span data-heb="המורה לצדקה">&laquo;el <em>moreh</em> en justicia&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-23">Joel 2:23</a> (ya en estas páginas), y el maestro o dador de oráculos del cerro de Moré de <a href="judges-7.es.html#v1">Jueces 7:1</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la primera lluvia a su tiempo&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;las lluvias de otoño&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;la lluvia de otoño&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shofar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-1">Joel 2:1</a> and <a href="joel-2.html#v2-15">verse 15</a> (now on these pages) have <span data-heb="תקעו שופר בציון">&lsquo;blow a shofar in Zion&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'shofar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shofar']
+    DICTIONARY_ES['shofar'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-1">Joel 2:1</a> y <a href="joel-2.es.html#v2-15">el versículo 15</a> (ya en estas páginas) tienen <span data-heb="תקעו שופר בציון">&laquo;tocad el shofar en Sión&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-12">Joel 2:12</a> and <a href="joel-2.html#v2-15">verse 15</a> (now on these pages) call for the fast: <span data-heb="בצום ובבכי ובמספד">&lsquo;with fasting and with weeping and with mourning&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-12">Joel 2:12</a> y <a href="joel-2.es.html#v2-15">el versículo 15</a> (ya en estas páginas) llaman al ayuno: <span data-heb="בצום ובבכי ובמספד">&laquo;con ayuno y con lloro y con lamento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malqosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-23">Joel 2:23</a> (now on these pages) has <span data-heb="מורה ומלקוש">&lsquo;the early rain and the late rain&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'malqosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malqosh']
+    DICTIONARY_ES['malqosh'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-23">Joel 2:23</a> (ya en estas páginas) tiene <span data-heb="מורה ומלקוש">&laquo;la lluvia temprana y la tardía&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'arbeh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages) has the four locust words again in the opposite order, the swarmer first: <span data-heb="הארבה הילק והחסיל והגזם">&lsquo;the swarmer, the licker, the finisher and the shearer&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'arbeh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['arbeh']
+    DICTIONARY_ES['arbeh'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas) tiene otra vez las cuatro palabras de la langosta en el orden opuesto, el enjambre primero: <span data-heb="הארבה הילק והחסיל והגזם">&laquo;el enjambre, el lamedor, el rematador y el esquilador&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gazam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages) has the shearer last of the four.',) + _t[5:]
+if 'gazam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gazam']
+    DICTIONARY_ES['gazam'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas) tiene al esquilador al final de los cuatro.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-28">Joel 2:28</a> and <a href="joel-2.html#v2-29">verse 29</a> (now on these pages) have the spirit poured out on all flesh, on sons and daughters, on old men and young, and on the servants.',) + _t[5:]
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-28">Joel 2:28</a> y <a href="joel-2.es.html#v2-29">el versículo 29</a> (ya en estas páginas) tienen el espíritu derramado sobre toda carne, sobre hijos e hijas, ancianos y jóvenes, y los siervos.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malqosh':
+        assert 'Hosea 6:3, Joel 2:23, Zechariah 10:1, Job 29:23 — none yet on these pages — and ' in _t[4], 'malqosh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Hosea 6:3, Joel 2:23, Zechariah 10:1, Job 29:23 — none yet on these pages — and ', 'Hosea 6:3, Zechariah 10:1, Job 29:23 — none yet on these pages — and <a href="joel-2.html#v2-23">Joel 2:23</a> and '),) + _t[5:]
+if 'malqosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malqosh']
+    assert 'Oseas 6:3, Joel 2:23, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y ' in _d[1], 'malqosh'
+    DICTIONARY_ES['malqosh'] = (_d[0], _d[1].replace('Oseas 6:3, Joel 2:23, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y ', 'Oseas 6:3, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y <a href="joel-2.es.html#v2-23">Joel 2:23</a> y '))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'araphel':
+        assert 'of Joel 2:2 (not yet on these pages) and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (now on these pages)' in _t[4], 'araphel'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('of Joel 2:2 (not yet on these pages) and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (now on these pages)', 'of <a href="joel-2.html#v2-2">Joel 2:2</a> and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (both now on these pages)'),) + _t[5:]
+if 'araphel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['araphel']
+    assert 'de Joel 2:2 (todavía no en estas páginas) y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ya en estas páginas)' in _d[1], 'araphel'
+    DICTIONARY_ES['araphel'] = (_d[0], _d[1].replace('de Joel 2:2 (todavía no en estas páginas) y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ya en estas páginas)', 'de <a href="joel-2.es.html#v2-2">Joel 2:2</a> y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ambos ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chuppah':
+        assert 'Joel 2:16 says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (not yet on these pages)' in _t[4], 'chuppah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Joel 2:16 says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (not yet on these pages)', '<a href="joel-2.html#v2-16">Joel 2:16</a> says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (now on these pages)'),) + _t[5:]
+if 'chuppah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chuppah']
+    assert 'Joel 2:16 dice <em>salga el novio de su aposento, y la novia de su dosel</em> (todav&iacute;a no en estas p&aacute;ginas)' in _d[1], 'chuppah'
+    DICTIONARY_ES['chuppah'] = (_d[0], _d[1].replace('Joel 2:16 dice <em>salga el novio de su aposento, y la novia de su dosel</em> (todav&iacute;a no en estas p&aacute;ginas)', '<a href="joel-2.es.html#v2-16">Joel 2:16</a> dice <em>salga el novio de su aposento, y la novia de su dosel</em> (ya en estas p&aacute;ginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsiyah':
+        assert 'Hosea 2:5 and Joel 2:20 (not yet on these pages)' in _t[4], 'tsiyah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Hosea 2:5 and Joel 2:20 (not yet on these pages)', 'Hosea 2:5 (not yet on these pages) and <a href="joel-2.html#v2-20">Joel 2:20</a> (now on these pages)'),) + _t[5:]
+if 'tsiyah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsiyah']
+    assert 'Oseas 2:5 y Joel 2:20 (todavía no en estas páginas)' in _d[1], 'tsiyah'
+    DICTIONARY_ES['tsiyah'] = (_d[0], _d[1].replace('Oseas 2:5 y Joel 2:20 (todavía no en estas páginas)', 'Oseas 2:5 (todavía no en estas páginas) y <a href="joel-2.es.html#v2-20">Joel 2:20</a> (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Joel', 2, 1), ('Joel', 1, 15), 'the day of Jehovah near'),
+    (('Joel', 2, 2), ('Zephaniah', 1, 15), 'a day of darkness and gloom, a day of cloud and thick darkness'),
+    (('Joel', 2, 3), ('Genesis', 2, 8), 'the garden of Eden before it'),
+    (('Joel', 2, 12), ('Esther', 4, 3), 'fasting, weeping, mourning'),
+    (('Joel', 2, 13), ('Exodus', 34, 6), 'gracious and merciful, slow to anger'),
+    (('Joel', 2, 13), ('Psalms', 103, 8), 'gracious and merciful'),
+    (('Joel', 2, 14), ('2 Samuel', 12, 22), 'who knows?'),
+    (('Joel', 2, 14), ('Esther', 4, 14), 'who knows?'),
+    (('Joel', 2, 15), ('Joel', 1, 14), 'sanctify a fast, call a solemn assembly'),
+    (('Joel', 2, 17), ('Psalms', 42, 4), 'where is their God?'),
+    (('Joel', 2, 23), ('Judges', 7, 1), 'moreh — the early rain and the teacher'),
+    (('Joel', 2, 25), ('Joel', 1, 4), 'the four locust words'),
+    (('Joel', 2, 28), ('Acts', 2, 17), 'quoted at Pentecost'),
+    (('Joel', 2, 28), ('Numbers', 11, 29), "would that all Jehovah's people were prophets"),
+    (('Joel', 2, 31), ('Revelation', 6, 12), 'the sun black, the moon as blood'),
+    (('Joel', 2, 32), ('Romans', 10, 13), 'everyone who calls on the name'),
+    (('Joel', 2, 32), ('Obadiah', 1, 17), 'on Mount Zion there will be those who escape'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["joel2"] = dict(era='monarchy',
+    when='The shofar sounds in Zion and the day of Jehovah comes as an army of locusts, fire before and behind, Eden turned to wilderness; then &ldquo;even now&rdquo;, return with all your heart, tear your heart and not your garments, and a fast, an assembly and the priests weeping between the porch and the altar; Jehovah is jealous for his land and answers with grain, wine and oil; the early rain comes, the years the locust has eaten are restored, and afterward the spirit is poured out on all flesh, with wonders and the promise that everyone who calls on the name of Jehovah will escape.',
+    clock='Undatable, as in chapter 1: the heading names no king and nothing in the book supplies one, so this page files it under the monarchy by the same default. &#9888; English Bibles count verses 28&ndash;32 of this chapter as Joel 2, and the Hebrew Bible counts them as 3:1&ndash;5 of a four-chapter book; this page keeps the English count and says so in its last note.')
+
+CHAPTER_ART["joel2"] = [dict(
+    file='michelangelo-joel-sistine.jpg',
+    title='The Prophet Joel', title_es='El profeta Joel',
+    artist='Michelangelo', artist_es='Miguel Ángel',
+    year='c. 1509', location='Sistine Chapel ceiling, Vatican', location_es='Techo de la Capilla Sixtina, Vaticano',
+    alt='A fresco of an old man with white hair seated on a stone throne, leaning slightly forward and reading a long scroll held open in both hands. He wears a grey-blue robe with a green neckline and a blue sash, and a large red mantle falls across his knees and legs. Behind him two small winged youths look on, one reading over his shoulder at the left and one pointing from the right; a book rests on a slanted stand beside him, and his bare foot rests on the step in front.',
+    alt_es='Un fresco de un anciano de pelo blanco sentado en un trono de piedra, inclinado un poco hacia delante y leyendo un largo rollo abierto con las dos manos. Lleva una túnica gris azulada con cuello verde y una faja azul, y un gran manto rojo le cae sobre las rodillas y las piernas. Detrás de él dos pequeños jóvenes alados miran, uno leyendo por encima de su hombro a la izquierda y otro señalando desde la derecha; un libro descansa en un atril inclinado a su lado, y su pie descalzo se apoya en el escalón delante.',
+    note='Joel, the book that opens with locusts and ends with the pouring out of the spirit on all flesh. Michelangelo shows him as an old man absorbed in a scroll, with no locusts, no fire and no trumpet; the reading prophet is the painter&rsquo;s own picture, and the book gives Joel only a father&rsquo;s name (Pethuel, 1:1).',
+    note_es='Joel, el libro que empieza con langostas y termina con el derramamiento del espíritu sobre toda carne. Miguel Ángel lo muestra como un anciano absorto en un rollo, sin langostas, sin fuego y sin trompeta; el profeta que lee es la imagen propia del pintor, y el libro solo le da a Joel el nombre de un padre (Petuel, 1:1).',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Joel_(Michelangelo).jpg')]
+
