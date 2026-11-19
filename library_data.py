@@ -60483,3 +60483,156 @@ CHAPTER_ART["est4"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Aert_de_Gelder_-_Esther_and_Mordecai_-_WGA8524.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 24 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('petach', 'petach', 'פֶּתַח', 'pithei', 'AN OPENING, a doorway &mdash; the doors the King of glory comes through: <span data-heb="פתחי עולם">&lsquo;doors of long ago&rsquo; stands in two verses</span>, <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages). &#9888; The shelf prints &lsquo;everlasting doors&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;ancient doors&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;long-lasting entrances&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;ancient gates&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;eternal gates&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 24, 7)))
+DICTIONARY.append(('izuz', 'izuz', 'עִזּוּז', 'izzuz', 'STRONG, mighty &mdash; the first of the two words of the answer: <span data-heb="עזוז וגבור">&lsquo;strong and mighty&rsquo; stands in this one verse</span>, <a href="psalms-24.html#v24-8">Psalm 24:8</a> (now on these pages), beside <em>gibbor</em>. &#9888; The shelf prints &lsquo;strong and mighty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>), all alike.', ('Psalms', 24, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['petach'] = ('pithei', 'UNA ABERTURA, una entrada &mdash; las puertas por donde entra el Rey de la gloria: <span data-heb="פתחי עולם">&laquo;puertas de antaño&raquo; está en dos versículos</span>, <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas). &#9888; El estante imprime &laquo;puertas eternas&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;puertas antiguas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;entradas de larga duración&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['izuz'] = ('izzuz', 'FUERTE, poderoso &mdash; la primera de las dos palabras de la respuesta: <span data-heb="עזוז וגבור">&laquo;fuerte y poderoso&raquo; está en este único versículo</span>, <a href="psalms-24.es.html#v24-8">Salmo 24:8</a> (ya en estas páginas), junto a <em>gibbor</em>. &#9888; El estante imprime &laquo;el fuerte y valiente&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;fuerte y poderoso&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-1">Psalm 24:1</a> (now on these pages) has <span data-heb="תבל וישבי בה">&lsquo;the world and those who dwell in it&rsquo;, which stands in two verses</span>, here and Psalm 98:7.',) + _t[5:]
+if 'tevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tevel']
+    DICTIONARY_ES['tevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-1">Salmo 24:1</a> (ya en estas páginas) tiene <span data-heb="תבל וישבי בה">&laquo;el mundo y los que habitan en él&raquo;, que está en dos versículos</span>, este y el Salmo 98:7.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-2">Psalm 24:2</a> (now on these pages) has <span data-heb="ועל נהרות יכוננה">&lsquo;and upon rivers he establishes it&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kun']
+    DICTIONARY_ES['kun'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-2">Salmo 24:2</a> (ya en estas páginas) tiene <span data-heb="ועל נהרות יכוננה">&laquo;y sobre ríos la establece&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'naqi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="נקי כפים">&lsquo;clean of hands&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'naqi' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['naqi']
+    DICTIONARY_ES['naqi'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="נקי כפים">&laquo;limpio de manos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaph':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has the hands in the pair &lsquo;clean of hands and pure of heart&rsquo;.',) + _t[5:]
+if 'kaph' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaph']
+    DICTIONARY_ES['kaph'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene las manos en el par «limpio de manos y puro de corazón».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="לא נשא לשוא נפשי">&lsquo;who has not lifted up my soul to what is false&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shav']
+    DICTIONARY_ES['shav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="לא נשא לשוא נפשי">&laquo;que no ha elevado mi alma a lo falso&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> and <a href="psalms-24.html#v24-5">verse 5</a> (now on these pages) have it twice: the soul lifted up to what is false, and the blessing carried away.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> y <a href="psalms-24.es.html#v24-5">el versículo 5</a> (ya en estas páginas) lo tienen dos veces: el alma elevada a lo falso, y la bendición llevada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mirmah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="ולא נשבע למרמה">&lsquo;and has not sworn to deceive&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mirmah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mirmah']
+    DICTIONARY_ES['mirmah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="ולא נשבע למרמה">&laquo;ni jurado para engañar&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'berakhah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-5">Psalm 24:5</a> (now on these pages) has <span data-heb="ישא ברכה מאת יהוה">&lsquo;he will carry away blessing from Jehovah&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'berakhah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['berakhah']
+    DICTIONARY_ES['berakhah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-5">Salmo 24:5</a> (ya en estas páginas) tiene <span data-heb="ישא ברכה מאת יהוה">&laquo;él llevará bendición de Jehová&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yasha':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-5">Psalm 24:5</a> (now on these pages) has <span data-heb="מאלהי ישעו">&lsquo;from the God of his salvation&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'yasha' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yasha']
+    DICTIONARY_ES['yasha'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-5">Salmo 24:5</a> (ya en estas páginas) tiene <span data-heb="מאלהי ישעו">&laquo;del Dios de su salvación&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'darash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> (now on these pages) has <span data-heb="דור דרשו">&lsquo;the generation of those who seek him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'darash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['darash']
+    DICTIONARY_ES['darash'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> (ya en estas páginas) tiene <span data-heb="דור דרשו">&laquo;la generación de los que lo buscan&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> (now on these pages) has <span data-heb="מבקשי פניך">&lsquo;those who seek your face&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'panim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['panim']
+    DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> (ya en estas páginas) tiene <span data-heb="מבקשי פניך">&laquo;los que buscan tu rostro&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shaar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages) have <span data-heb="שאו שערים ראשיכם">&lsquo;lift up your heads, gates&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'shaar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaar']
+    DICTIONARY_ES['shaar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas) tienen <span data-heb="שאו שערים ראשיכם">&laquo;alzad, puertas, vuestras cabezas&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages) have the doors of long ago, <em>pithei olam</em>.',) + _t[5:]
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas) tienen las puertas de antaño, <em>pithei olam</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'melekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> to <a href="psalms-24.html#v24-10">10</a> (now on these pages) have <span data-heb="מלך הכבוד">&lsquo;the King of glory&rsquo;, which stands in four verses</span>, all in this psalm.',) + _t[5:]
+if 'melekh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['melekh']
+    DICTIONARY_ES['melekh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> a <a href="psalms-24.es.html#v24-10">10</a> (ya en estas páginas) tienen <span data-heb="מלך הכבוד">&laquo;el Rey de la gloria&raquo;, que está en cuatro versículos</span>, todos en este salmo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> to <a href="psalms-24.html#v24-10">10</a> (now on these pages) have the glory in <span data-heb="מלך הכבוד">&lsquo;the King of glory&rsquo;, in four verses</span>, all in this psalm.',) + _t[5:]
+if 'kavod' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kavod']
+    DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> a <a href="psalms-24.es.html#v24-10">10</a> (ya en estas páginas) tienen la gloria en <span data-heb="מלך הכבוד">&laquo;el Rey de la gloria&raquo;, en cuatro versículos</span>, todos en este salmo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tzevaot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-10">Psalm 24:10</a> (now on these pages) has Jehovah of hosts as the last answer: <span data-heb="הוא מלך הכבוד">&lsquo;he is the King of glory&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tzevaot' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tzevaot']
+    DICTIONARY_ES['tzevaot'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-10">Salmo 24:10</a> (ya en estas páginas) tiene a Jehová de los ejércitos como la última respuesta: <span data-heb="הוא מלך הכבוד">&laquo;él es el Rey de la gloria&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'selah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> and <a href="psalms-24.html#v24-10">verse 10</a> (now on these pages) have it twice, closing the question of who may go up and the psalm itself.',) + _t[5:]
+if 'selah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selah']
+    DICTIONARY_ES['selah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> y <a href="psalms-24.es.html#v24-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces, cerrando la pregunta de quién puede subir y el salmo mismo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mizmor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-1">Psalm 24:1</a> (now on these pages) has the heading &lsquo;of David, a psalm&rsquo; as part of verse 1.',) + _t[5:]
+if 'mizmor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mizmor']
+    DICTIONARY_ES['mizmor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-1">Salmo 24:1</a> (ya en estas páginas) tiene el encabezado «de David, salmo» como parte del versículo 1.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 24, 1), ('1 Corinthians', 10, 26), "the earth is the Lord's — quoted by Paul"),
+    (('Psalms', 24, 1), ('Exodus', 19, 5), 'all the earth is mine'),
+    (('Psalms', 24, 2), ('Genesis', 1, 9), 'the waters, and the dry land set on them'),
+    (('Psalms', 24, 3), ('Psalms', 118, 19), 'the gate of Jehovah — who may enter'),
+    (('Psalms', 24, 3), ('Isaiah', 26, 2), 'open the gates — who may enter'),
+    (('Psalms', 24, 4), ('Matthew', 5, 8), 'the pure in heart'),
+    (('Psalms', 24, 4), ('James', 4, 8), 'cleanse your hands, purify your hearts'),
+    (('Psalms', 24, 7), ('2 Samuel', 6, 12), 'the ark brought up — the gates lifted (a later reading)'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms24"] = dict(era='monarchy',
+    when='A psalm headed &ldquo;of David&rdquo;: the earth and all in it belong to Jehovah, founded on seas and rivers; who may go up his mountain (clean hands, a pure heart, the soul not lifted to what is false); the generation that seeks his face; and the gates and doors of long ago told to lift up their heads for the King of glory, Jehovah strong and mighty, Jehovah of hosts.',
+    clock='Undated. The heading names David and gives no occasion, and the psalm names no event; later readers have set it at the going up of the ark (2 Samuel 6), which is a reading and not something the psalm says. &#9888; This page sets it among the monarchy by the name of David and says no more.')
+
+CHAPTER_ART["psalms24"] = [dict(
+    file='tissot-david-danced-before-the-lord.jpg',
+    title='David Danced Before the Lord with All His Might', title_es='David danzaba con toda su fuerza delante de Jehová',
+    artist='James Tissot', artist_es='James Tissot',
+    year='c. 1896&ndash;1902', location='The Jewish Museum, New York (Tissot&rsquo;s Old Testament series)', location_es='The Jewish Museum, Nueva York (serie del Antiguo Testamento de Tissot)',
+    alt='A grey-toned illustration of an outdoor procession among tall reeds. In the middle a man in a white robe with a decorated sash dances with raised hands and bent knee. At the left, behind a standing woman with a dark patterned dress, a man in white plays a pipe, and behind them rises a tall curtained canopy with a radiating design. At the right, two women hold up tambourines among a crowd of men in striped cloaks and headcloths.',
+    alt_es='Una ilustración en tonos grises de una procesión al aire libre entre altas cañas. En el centro un hombre con túnica blanca y faja decorada danza con las manos en alto y la rodilla doblada. A la izquierda, detrás de una mujer de pie con vestido oscuro estampado, un hombre de blanco toca una flauta, y tras ellos se alza un alto dosel con cortinas y un diseño radiante. A la derecha, dos mujeres alzan panderos entre una multitud de hombres con capas rayadas y tocados.',
+    note='Psalm 24:7&ndash;10. This is Tissot&rsquo;s picture of 2 Samuel 6:14, the ark going up with the dancing of David, set here because later readers have heard the lifting of the gates in that procession. The psalm itself names no occasion, no ark and no dancing; it asks who may go up the mountain and who the King of glory is.',
+    note_es='Salmo 24:7&ndash;10. Es la imagen de Tissot de 2 Samuel 6:14, el arca subiendo con la danza de David, puesta aquí porque lectores posteriores han oído el alzarse de las puertas en esa procesión. El salmo mismo no nombra ninguna ocasión, ningún arca ni ninguna danza; pregunta quién puede subir al monte y quién es el Rey de la gloria.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Tissot_David_Danced_Before_the_Lord_with_All_His_Might.jpg')]
+
