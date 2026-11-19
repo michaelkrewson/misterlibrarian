@@ -61754,3 +61754,106 @@ CHAPTER_ART["job42"] = [dict(
     license='CC0',
     source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_20,_Job_and_His_Daughters_-_B1978.43.1522_-_Yale_Center_for_British_Art.jpg')]
 
+
+
+# Appended to library_data.py for Ecclesiastes 12 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('aviyyonah', 'aviyyonah', 'אֲבִיּוֹנָה', 'aviyyonah', 'THE CAPER BERRY, or what the caper berry stands for. <span data-heb="האביונה">The word stands in this one verse of the Hebrew Bible</span>, <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages), in a list of what fails in old age: &lsquo;the almond tree blossoms, the grasshopper drags itself along, and the <em>aviyyonah</em> bursts&rsquo;. The caper berry was eaten to rouse the appetite, which is the older reading of the line; its consonants are those of <em>evyon</em>, &lsquo;needy&rsquo;, with a final <em>-ah</em>. &#9888; The shelf prints &lsquo;desire shall fail&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;desire no longer is stirred&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;concupiscence shall be driven away&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;the caper berry bursts&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the caper tree shall be destroyed&rsquo; (<span class="tag t-drb">Douay</span>).', ('Ecclesiastes', 12, 5)))
+DICTIONARY.append(('asuppah', 'asuppah', 'אֲסֻפָּה', 'asuppah', 'A COLLECTION, something gathered: from <em>asaf</em>, to gather, the root that also gives the assembly of Qohelet&rsquo;s name. <span data-heb="בעלי אספות">&lsquo;Masters of collections&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ecclesiastes-12.html#v12-11">Ecclesiastes 12:11</a> (now on these pages): the wise men&rsquo;s words are goads, and those who gather them are nails driven in. &#9888; The shelf prints &lsquo;masters of assemblies&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;collected sayings&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;those indulging in collections [of sentences]&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;by the counsel of masters&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;Students are wise who master what their teachers tell them&rsquo;.', ('Ecclesiastes', 12, 11)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['aviyyonah'] = ('aviyyonah', 'LA BAYA DE LA ALCAPARRA, o lo que representa. <span data-heb="האביונה">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas), en una lista de lo que falla en la vejez: «el almendro florece, el saltamontes se arrastra, y la <em>aviyyonah</em> revienta». La baya de la alcaparra se comía para abrir el apetito, que es la lectura más antigua de la línea; sus consonantes son las de <em>evyon</em>, «necesitado», con una <em>-ah</em> final. &#9888; El estante imprime «se perderá el apetito» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «se perderá el deseo» (<span class="tag t-nvi">NVI</span>), «la baya de la alcaparra se revienta» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «la alcaparra reviente» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['asuppah'] = ('asuppah', 'UNA COLECCIÓN, algo reunido: de <em>asaf</em>, reunir, la raíz que da también la asamblea del nombre de Qohelet. <span data-heb="בעלי אספות">«Maestros de colecciones» está en este único versículo de la Biblia hebrea</span>, <a href="ecclesiastes-12.es.html#v12-11">Eclesiastés 12:11</a> (ya en estas páginas): las palabras de los sabios son aguijones, y quienes las reúnen son clavos hincados. &#9888; El estante imprime «los maestros de las congregaciones» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «sus colecciones de dichos» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «los que se entregan a las colecciones de sentencias» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-6">Ecclesiastes 12:6</a> (now on these pages) has the verb of the silver cord written <em>yirchaq</em> and read <em>yeratek</em>; the Hebrew column keeps both.',) + _t[5:]
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-1">Ecclesiastes 12:1</a> (now on these pages) has <span data-heb="אין לי בהם חפץ">&lsquo;I have no delight in them&rsquo;, which stands in this one verse</span>, and <a href="ecclesiastes-12.html#v12-10">verse 10</a> has <span data-heb="דברי חפץ">&lsquo;words of delight&rsquo;, which stands in this one verse</span>: the years without it, and the words that have it.',) + _t[5:]
+    if _t[0] == 'hevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-8">Ecclesiastes 12:8</a> (now on these pages) closes the book&rsquo;s frame: <span data-heb="הבל הבלים">&lsquo;vapor of vapors&rsquo; stands in two verses</span>, 1:2 and this one, and <span data-heb="הכל הבל">&lsquo;all is vapor&rsquo; in six</span>.',) + _t[5:]
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-7">Ecclesiastes 12:7</a> (now on these pages): <span data-heb="והרוח תשוב">&lsquo;and the breath returns&rsquo; stands in this one verse</span>, <span data-heb="אל האלהים אשר נתנה">&lsquo;to God who gave it&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has <span data-heb="בית עולמו">&lsquo;his everlasting house&rsquo;, which stands in this one verse</span>, where man goes when the mourners are in the street.',) + _t[5:]
+    if _t[0] == 'bor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-6">Ecclesiastes 12:6</a> (now on these pages) has the wheel crushed at <em>ha-bor</em>, the cistern, the last word of the verse.',) + _t[5:]
+    if _t[0] == 'mitzvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-13">Ecclesiastes 12:13</a> (now on these pages): <span data-heb="ואת מצותיו שמור">&lsquo;and keep his commandments&rsquo; stands in this one verse</span>, the last command of the book.',) + _t[5:]
+    if _t[0] == 'roeh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-11">Ecclesiastes 12:11</a> (now on these pages) has <span data-heb="מרעה אחד">&lsquo;from one shepherd&rsquo;, which stands in this one verse</span>, an unnamed shepherd.',) + _t[5:]
+    if _t[0] == 'shaqed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has the almond tree that blossoms among the signs of old age.',) + _t[5:]
+    if _t[0] == 'chagav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has the <em>chagav</em> that <em>yistabbel</em>, drags itself along; <span data-heb="ויסתבל">the verb stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'qets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-12">Ecclesiastes 12:12</a> (now on these pages): <span data-heb="אין קץ">&lsquo;there is no end&rsquo; stands in five verses</span>, of making many books.',) + _t[5:]
+    if _t[0] == 'zakhar-remember':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-1">Ecclesiastes 12:1</a> (now on these pages) has the imperative, <span data-heb="וזכר את בוראיך">&lsquo;And remember your Creator&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-6">Eclesiastés 12:6</a> (ya en estas páginas) tiene el verbo del cordón de plata escrito <em>yirchaq</em> y leído <em>yeratek</em>; la columna hebrea conserva las dos.')
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-1">Eclesiastés 12:1</a> (ya en estas páginas) tiene <span data-heb="אין לי בהם חפץ">«No tengo en ellos deleite», que está en este único versículo</span>, y <a href="ecclesiastes-12.es.html#v12-10">el versículo 10</a> tiene <span data-heb="דברי חפץ">«palabras de deleite», que está en este único versículo</span>: los años sin él, y las palabras que lo tienen.')
+if 'hevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hevel']
+    DICTIONARY_ES['hevel'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-8">Eclesiastés 12:8</a> (ya en estas páginas) cierra el marco del libro: <span data-heb="הבל הבלים">«vapor de vapores» está en dos versículos</span>, 1:2 y este, y <span data-heb="הכל הבל">«todo es vapor» en seis</span>.')
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-7">Eclesiastés 12:7</a> (ya en estas páginas): <span data-heb="והרוח תשוב">«y el aliento vuelva» está en este único versículo</span>, <span data-heb="אל האלהים אשר נתנה">«a Dios que lo dio» está en este único versículo</span>.')
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene <span data-heb="בית עולמו">«su casa eterna», que está en este único versículo</span>, adonde va el hombre cuando los plañideros están en la calle.')
+if 'bor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bor']
+    DICTIONARY_ES['bor'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-6">Eclesiastés 12:6</a> (ya en estas páginas) tiene la rueda rota en <em>ha-bor</em>, la cisterna, la última palabra del versículo.')
+if 'mitzvah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mitzvah']
+    DICTIONARY_ES['mitzvah'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-13">Eclesiastés 12:13</a> (ya en estas páginas): <span data-heb="ואת מצותיו שמור">«y guarda sus mandamientos» está en este único versículo</span>, el último mandato del libro.')
+if 'roeh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['roeh']
+    DICTIONARY_ES['roeh'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-11">Eclesiastés 12:11</a> (ya en estas páginas) tiene <span data-heb="מרעה אחד">«de un solo pastor», que está en este único versículo</span>, un pastor sin nombre.')
+if 'shaqed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaqed']
+    DICTIONARY_ES['shaqed'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene el almendro que florece entre las señales de la vejez.')
+if 'chagav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chagav']
+    DICTIONARY_ES['chagav'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene el <em>chagav</em> que <em>yistabbel</em>, se arrastra; <span data-heb="ויסתבל">el verbo está en este único versículo</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Ecclesiastes', 12, 7), ('Genesis', 3, 19), 'to dust you shall return — the dust returns to the earth'),
+    (('Ecclesiastes', 12, 7), ('Genesis', 2, 7), 'the dust and the breath, taken apart'),
+    (('Ecclesiastes', 12, 7), ('Ecclesiastes', 3, 21), 'the breath: a question at 3:21, a statement here'),
+    (('Ecclesiastes', 12, 8), ('Ecclesiastes', 1, 2), 'vapor of vapors — the frame of the book'),
+    (('Ecclesiastes', 12, 10), ('Ecclesiastes', 3, 1), 'chefets — delight, purpose'),
+    (('Ecclesiastes', 12, 11), ('1 Samuel', 13, 21), 'the goad, dorban'),
+    (('Ecclesiastes', 12, 11), ('Ezekiel', 37, 24), 'one shepherd'),
+    (('Ecclesiastes', 12, 12), ('Isaiah', 9, 6), 'there is no end'),
+    (('Ecclesiastes', 12, 14), ('Job', 42, 3), "the hidden thing — the same root as 'hides counsel'"),
+    (('Ecclesiastes', 12, 3), ('Malachi', 3, 10), 'arubbot — the windows'),
+    (('Ecclesiastes', 12, 9), ('Proverbs', 18, 15), 'the ear — izzen, to weigh by listening'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["qoh12"] = dict(era='monarchy',
+    when='Remember your Creator in the days of your youth, before the days of evil and before the lights go out; the house, the mill, the almond tree, the silver cord and the golden bowl; the dust returns to the earth and the breath to God who gave it; vapor of vapors, all is vapor; Qohelet taught, weighed and set in order many proverbs; words of the wise are goads and nails given from one shepherd; of making many books there is no end; fear God and keep his commandments, for this is the whole of man; God will bring every work into judgment.',
+    clock='Same setting as chapters 1 and 3, filed under the monarchy because the speaker claims it. &#9888; Verses 9&ndash;14 speak of Qohelet in the third person and address a pupil, so the book&rsquo;s last voice is not the I of 1:12 and is not named.')
+
+CHAPTER_ART["qoh12"] = [dict(
+    file='holbein-dance-of-death-old-man.jpg',
+    title='The Old Man (Der Alt man)', title_es='El anciano (Der Alt man)',
+    artist='Hans Holbein the Younger', artist_es='Hans Holbein el Joven',
+    year='c. 1526', location='The Dance of Death, woodcut (Cleveland Museum of Art)', location_es='La danza de la muerte, xilografía (Cleveland Museum of Art)',
+    alt='A black-and-white woodcut with the title &lsquo;Der Alt man&rsquo; above. A bent old man with a long beard, in a fur-trimmed gown, walks with a stick; at his side a skeleton leans an arm on his shoulder and plays a stringed instrument with two sticks. An open grave lies in the foreground, an hourglass stands on a wall at the left, and clouds fill the sky.',
+    alt_es='Una xilografía en blanco y negro con el título &lsquo;Der Alt man&rsquo; arriba. Un anciano encorvado de larga barba, con una túnica ribeteada de piel, camina con un bastón; a su lado un esqueleto apoya un brazo en su hombro y toca un instrumento de cuerdas con dos palillos. Una tumba abierta está en primer plano, un reloj de arena está sobre un muro a la izquierda, y las nubes llenan el cielo.',
+    note='Ecclesiastes 12:1&ndash;7. Holbein&rsquo;s old man is bent, as verse 3&rsquo;s strong men are, and the grave is open in front of him; the hourglass and the skeleton with its instrument are Holbein&rsquo;s. The Hebrew has no skeleton and no grave: it has a house, a mill, an almond tree and a cord, and says only that man goes to his everlasting house and the mourners go about the street. The picture takes the old reading of the chapter, the body of an old man, and puts Death beside him.',
+    note_es='Eclesiastés 12:1&ndash;7. El anciano de Holbein está encorvado, como los fuertes del versículo 3, y la tumba está abierta ante él; el reloj de arena y el esqueleto con su instrumento son de Holbein. El hebreo no tiene esqueleto ni tumba: tiene una casa, un molino, un almendro y un cordón, y dice solo que el hombre va a su casa eterna y los plañideros andan por la calle. El cuadro toma la lectura antigua del capítulo, el cuerpo de un anciano, y pone a la Muerte a su lado.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:Hans_Holbein_-_Dance_of_Death-_The_Old_Man_-_1929.165_-_Cleveland_Museum_of_Art.jpg')]
+
