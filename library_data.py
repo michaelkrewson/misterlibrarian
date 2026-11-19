@@ -60946,3 +60946,170 @@ CHAPTER_ART["joel2"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Joel_(Michelangelo).jpg')]
 
+
+
+# Appended to library_data.py for Malachi 3 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('tsaraf', 'tsaraf', 'צָרַף', 'metsaref', 'TO REFINE &mdash; the refiner who melts out the dross: <span data-heb="כאש מצרף">&lsquo;like a refiner&rsquo;s fire&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-2">Malachi 3:2</a> (now on these pages), and <span data-heb="וישב מצרף ומטהר כסף">&lsquo;he will sit as a refiner and purifier of silver&rsquo;, which stands in this one verse</span>, <a href="malachi-3.html#v3-3">verse 3</a>. &#9888; The shelf prints &lsquo;a refiner&rsquo;s fire&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a refining fire&rsquo; (<span class="tag t-drb">Douay</span>).', ('Malachi', 3, 2)))
+DICTIONARY.append(('borit', 'borit', 'בֹּרִית', 'borit', 'LYE, soap &mdash; the cleanser of the launderers: <span data-heb="וכברית מכבסים">&lsquo;and like the lye of launderers&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-2">Malachi 3:2</a> (now on these pages). &#9888; The shelf prints &lsquo;fullers&rsquo; soap&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a launderer&rsquo;s soap&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the lye of laundrymen&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the fuller&rsquo;s herb&rsquo; (<span class="tag t-drb">Douay</span>).', ('Malachi', 3, 2)))
+DICTIONARY.append(('qedoranit', 'qedoranit', 'קְדֹרַנִּית', 'qedoranit', 'MOURNFULLY, in dark clothes &mdash; a word found nowhere else: <span data-heb="הלכנו קדרנית">&lsquo;we walked in mourning&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-14">Malachi 3:14</a> (now on these pages), said by the people who complain that serving God is vain. &#9888; The shelf prints &lsquo;mournfully&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;like mourners&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;dejectedly&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Malachi', 3, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['tsaraf'] = ('metsaref', 'REFINAR &mdash; el fundidor que separa la escoria: <span data-heb="כאש מצרף">&laquo;como fuego de fundidor&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-2">Malaquías 3:2</a> (ya en estas páginas), y <span data-heb="וישב מצרף ומטהר כסף">&laquo;se sentará como fundidor y purificador de plata&raquo;, que está en este único versículo</span>, <a href="malachi-3.es.html#v3-3">el versículo 3</a>. &#9888; El estante imprime &laquo;fuego purificador&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;fuego de fundidor&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;el fuego de un refinador&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['borit'] = ('borit', 'LEJÍA, jabón &mdash; el limpiador de los lavanderos: <span data-heb="וכברית מכבסים">&laquo;y como lejía de lavanderos&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-2">Malaquías 3:2</a> (ya en estas páginas). &#9888; El estante imprime &laquo;jabón de lavadores&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;jabón de lavandero&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;la lejía de los lavanderos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['qedoranit'] = ('qedoranit', 'EN LUTO, con ropa oscura &mdash; una palabra que no está en ningún otro sitio: <span data-heb="הלכנו קדרנית">&laquo;anduvimos enlutados&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-14">Malaquías 3:14</a> (ya en estas páginas), dicho por los que se quejan de que servir a Dios es en vano. &#9888; El estante imprime &laquo;afligidos&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;vestirnos de luto&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;contristados&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malakh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-1">Malachi 3:1</a> (now on these pages) has it twice: <span data-heb="הנני שלח מלאכי">&lsquo;look, I am sending my messenger&rsquo;, which stands in this one verse</span>, and <span data-heb="מלאך הברית">&lsquo;the messenger of the covenant&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'malakh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malakh']
+    DICTIONARY_ES['malakh'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-1">Malaquías 3:1</a> (ya en estas páginas) lo tiene dos veces: <span data-heb="הנני שלח מלאכי">&laquo;mirad, yo envío a mi mensajero&raquo;, que está en este único versículo</span>, y <span data-heb="מלאך הברית">&laquo;el mensajero del pacto&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-1">Malachi 3:1</a> (now on these pages) has <span data-heb="מלאך הברית">&lsquo;the messenger of the covenant&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-1">Malaquías 3:1</a> (ya en estas páginas) tiene <span data-heb="מלאך הברית">&laquo;el mensajero del pacto&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'minchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-3">Malachi 3:3</a> and <a href="malachi-3.html#v3-4">verse 4</a> (now on these pages) have the offering twice: <span data-heb="מגישי מנחה בצדקה">&lsquo;those who bring near an offering in righteousness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'minchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['minchah']
+    DICTIONARY_ES['minchah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-3">Malaquías 3:3</a> y <a href="malachi-3.es.html#v3-4">el versículo 4</a> (ya en estas páginas) tienen la ofrenda dos veces: <span data-heb="מגישי מנחה בצדקה">&laquo;los que acercan una ofrenda en justicia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) has <span data-heb="עד ממהר">&lsquo;a swift witness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ed']
+    DICTIONARY_ES['ed'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) tiene <span data-heb="עד ממהר">&laquo;un testigo veloz&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-7">Malachi 3:7</a> and <a href="malachi-3.html#v3-18">verse 18</a> (now on these pages) have it: <span data-heb="שובו אלי ואשובה אליכם">&lsquo;return to me, and I will return to you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shuv' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shuv']
+    DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-7">Malaquías 3:7</a> y <a href="malachi-3.es.html#v3-18">el versículo 18</a> (ya en estas páginas) lo tienen: <span data-heb="שובו אלי ואשובה אליכם">&laquo;volved a mí, y yo volveré a vosotros&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'maaser':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-8">Malachi 3:8</a> and <a href="malachi-3.html#v3-10">verse 10</a> (now on these pages) have the tithe: <span data-heb="המעשר והתרומה">&lsquo;the tithe and the contribution&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'maaser' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['maaser']
+    DICTIONARY_ES['maaser'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-8">Malaquías 3:8</a> y <a href="malachi-3.es.html#v3-10">el versículo 10</a> (ya en estas páginas) tienen el diezmo: <span data-heb="המעשר והתרומה">&laquo;el diezmo y la contribución&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'terumah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-8">Malachi 3:8</a> (now on these pages) has <span data-heb="המעשר והתרומה">&lsquo;the tithe and the contribution&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'terumah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['terumah']
+    DICTIONARY_ES['terumah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-8">Malaquías 3:8</a> (ya en estas páginas) tiene <span data-heb="המעשר והתרומה">&laquo;el diezmo y la contribución&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'otsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="הביאו את כל המעשר אל בית האוצר">&lsquo;bring all the tithe to the storehouse&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'otsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['otsar']
+    DICTIONARY_ES['otsar'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="הביאו את כל המעשר אל בית האוצר">&laquo;traed todo el diezmo al alfolí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'arubbah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="אם לא אפתח לכם את ארבות השמים">&lsquo;whether I will not open to you the windows of heaven&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'arubbah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['arubbah']
+    DICTIONARY_ES['arubbah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="אם לא אפתח לכם את ארבות השמים">&laquo;si no os abriré las ventanas de los cielos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'berakhah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="עד בלי די">&lsquo;until there is no more enough&rsquo;, which stands in this one verse</span>, after the blessing emptied out.',) + _t[5:]
+if 'berakhah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['berakhah']
+    DICTIONARY_ES['berakhah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="עד בלי די">&laquo;hasta que no haya más suficiencia&raquo;, que está en este único versículo</span>, tras la bendición vaciada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zikkaron':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-16">Malachi 3:16</a> (now on these pages) has <span data-heb="ספר זכרון">&lsquo;a book of remembrance&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'zikkaron' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zikkaron']
+    DICTIONARY_ES['zikkaron'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-16">Malaquías 3:16</a> (ya en estas páginas) tiene <span data-heb="ספר זכרון">&laquo;un libro de memoria&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chamal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-17">Malachi 3:17</a> (now on these pages) has <span data-heb="וחמלתי עליהם כאשר יחמל איש על בנו העבד אתו">&lsquo;and I will have compassion on them as a man has compassion on his son who serves him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chamal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chamal']
+    DICTIONARY_ES['chamal'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-17">Malaquías 3:17</a> (ya en estas páginas) tiene <span data-heb="וחמלתי עליהם כאשר יחמל איש על בנו העבד אתו">&laquo;y tendré compasión de ellos como un hombre tiene compasión de su hijo que le sirve&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'segullah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-17">Malachi 3:17</a> (now on these pages) has the treasured possession of the faithful, on &lsquo;the day that I am making&rsquo;.',) + _t[5:]
+if 'segullah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['segullah']
+    DICTIONARY_ES['segullah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-17">Malaquías 3:17</a> (ya en estas páginas) tiene la posesión preciada de los fieles, en «el día que yo hago».')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sakhir':
+        assert 'Malachi 3:5 (not yet on these pages) lists' in _t[4], 'sakhir'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 (not yet on these pages) lists', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) lists'),) + _t[5:]
+if 'sakhir' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakhir']
+    assert 'Malaquías 3:5 (todavía no en estas páginas) pone' in _d[1], 'sakhir'
+    DICTIONARY_ES['sakhir'] = (_d[0], _d[1].replace('Malaquías 3:5 (todavía no en estas páginas) pone', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) pone'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashaq':
+        assert 'Malachi 3:5 (not yet on these pages) turns it' in _t[4], 'ashaq'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 (not yet on these pages) turns it', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) turns it'),) + _t[5:]
+if 'ashaq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashaq']
+    assert 'Malaquías 3:5 (todavía no en estas páginas) la convierte' in _d[1], 'ashaq'
+    DICTIONARY_ES['ashaq'] = (_d[0], _d[1].replace('Malaquías 3:5 (todavía no en estas páginas) la convierte', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) la convierte'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'almanah':
+        assert 'Malachi 3:5 — and Psalm 146:9' in _t[4], 'almanah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 — and Psalm 146:9', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) — and Psalm 146:9'),) + _t[5:]
+if 'almanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['almanah']
+    assert 'Malaquías 3:5— y el Salmo 146:9' in _d[1], 'almanah'
+    DICTIONARY_ES['almanah'] = (_d[0], _d[1].replace('Malaquías 3:5— y el Salmo 146:9', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) — y el Salmo 146:9'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qava':
+        assert 'Malachi 3:8&ndash;9 (not yet on these pages)' in _t[4], 'qava'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:8&ndash;9 (not yet on these pages)', '<a href="malachi-3.html#v3-8">Malachi 3:8</a>&ndash;9 (now on these pages)'),) + _t[5:]
+if 'qava' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qava']
+    assert 'Malaquías 3:8&ndash;9 (todavía no en estas páginas)' in _d[1], 'qava'
+    DICTIONARY_ES['qava'] = (_d[0], _d[1].replace('Malaquías 3:8&ndash;9 (todavía no en estas páginas)', '<a href="malachi-3.es.html#v3-8">Malaquías 3:8</a>&ndash;9 (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Malachi', 3, 1), ('Malachi', 1, 1), "'my messenger' — Malachi's own name"),
+    (('Malachi', 3, 1), ('Isaiah', 40, 3), 'clear the way'),
+    (('Malachi', 3, 1), ('Matthew', 11, 10), 'quoted of John the Baptist'),
+    (('Malachi', 3, 1), ('Mark', 1, 2), 'quoted of John the Baptist'),
+    (('Malachi', 3, 1), ('Luke', 7, 27), 'quoted of John the Baptist'),
+    (('Malachi', 3, 5), ('Exodus', 22, 21), 'the widow, the orphan and the sojourner'),
+    (('Malachi', 3, 7), ('Zechariah', 1, 3), 'return to me, and I will return to you'),
+    (('Malachi', 3, 8), ('Proverbs', 22, 23), "the verb 'to rob'"),
+    (('Malachi', 3, 8), ('Leviticus', 27, 30), 'the tithe'),
+    (('Malachi', 3, 8), ('Deuteronomy', 14, 22), 'the tithe'),
+    (('Malachi', 3, 10), ('Deuteronomy', 6, 16), "'do not test Jehovah' — and 'test me'"),
+    (('Malachi', 3, 10), ('Genesis', 7, 11), 'the windows of heaven'),
+    (('Malachi', 3, 10), ('2 Kings', 7, 2), 'the windows of heaven'),
+    (('Malachi', 3, 16), ('Psalms', 56, 9), 'the book of remembrance'),
+    (('Malachi', 3, 16), ('Revelation', 20, 12), 'the books'),
+    (('Malachi', 3, 17), ('Exodus', 19, 5), 'a treasured possession'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["mal3"] = dict(era='return',
+    when='Jehovah sends his messenger to clear a way and suddenly comes to his temple; the refiner&rsquo;s fire purifies the sons of Levi; he comes near for judgment against sorcerers, adulterers, false swearers and those who defraud the hired worker, the widow, the orphan and the sojourner; &ldquo;return to me&rdquo;; the people who rob God in the tithe and the contribution are invited to test him; the complaint that serving God is vain; and the book of remembrance for those who fear him, his treasured possession.',
+    clock='Undated. The book names no king; it speaks of a governor (Malachi 1:8) and of a rebuilt temple whose offerings are polluted, and is placed in the period after the return and the second temple, usually in the fifth century BC, though the date rests on those hints alone. &#9888; This page keeps the English chapter, verses 1&ndash;18; the Hebrew chapter continues to 3:24, and verses 19&ndash;24 are Malachi 4 in English Bibles.')
+
+CHAPTER_ART["mal3"] = [dict(
+    file='el-greco-christ-driving-money-changers.jpg',
+    title='Christ Driving the Money Changers from the Temple', title_es='Cristo expulsa a los cambistas del templo',
+    artist='El Greco', artist_es='El Greco',
+    year='c. 1570', location='Minneapolis Institute of Art', location_es='Minneapolis Institute of Art',
+    alt='A crowded, brightly coloured oil painting of a temple court with tall columns, and an arch in the middle opening on a blue sky and a street of classical buildings. In the centre Jesus, in a pink robe and a blue cloak, raises a whip in his right hand and strides forward. Around him men and women recoil and shield their heads; at the lower left a woman in a pink dress sits beside a cage of doves, at the right an old man in blue crouches over a basket, and a woman carrying baskets on a pole and a naked child look back. At the lower right four men, one of them in a dark cap, watch from the edge, and in the far right doorway a few figures stand in shadow.',
+    alt_es='Un óleo abarrotado y de colores vivos de un patio de templo con altas columnas y un arco en el centro que se abre a un cielo azul y una calle de edificios clásicos. En el centro Jesús, con túnica rosa y manto azul, levanta un látigo con la mano derecha y avanza. A su alrededor hombres y mujeres retroceden y se protegen la cabeza; abajo a la izquierda una mujer de vestido rosa está sentada junto a una jaula de palomas, a la derecha un anciano de azul se encorva sobre una cesta, y una mujer que lleva cestas en una vara y un niño desnudo miran atrás. Abajo a la derecha cuatro hombres, uno de ellos con gorro oscuro, miran desde el borde, y en la puerta del fondo a la derecha unas figuras están en sombra.',
+    note='Malachi 3:1. The Lord who comes suddenly to his temple is the verse the Gospels see fulfilled in the temple, and El Greco paints the moment in the courts, with the money changers and the dove sellers; but the picture is of the Gospel scene (Matthew 21:12&ndash;13), not of anything in Malachi, whose verse speaks of a refiner&rsquo;s fire and not of a whip.',
+    note_es='Malaquías 3:1. El Señor que viene de repente a su templo es el versículo que los Evangelios ven cumplido en el templo, y El Greco pinta el momento en los atrios, con los cambistas y los vendedores de palomas; pero el cuadro es de la escena del Evangelio (Mateo 21:12&ndash;13), no de nada de Malaquías, cuyo versículo habla de un fuego de fundidor y no de un látigo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:El_Greco_(Domenikos_Theotokopoulos)_-_Christ_Driving_the_Money_Changers_from_the_Temple_-_Google_Art_Project.jpg')]
+
