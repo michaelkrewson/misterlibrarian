@@ -61857,3 +61857,106 @@ CHAPTER_ART["qoh12"] = [dict(
     license='CC0',
     source_url='https://commons.wikimedia.org/wiki/File:Hans_Holbein_-_Dance_of_Death-_The_Old_Man_-_1929.165_-_Cleveland_Museum_of_Art.jpg')]
 
+
+
+# Appended to library_data.py for Nehemiah 8 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('maoz', 'ma&rsquo;oz', 'מָעוֹז', 'ma&rsquo;oz', 'A STRONGHOLD, a fortified place to run to. <span data-heb="מעזכם">&lsquo;Your stronghold&rsquo; (<em>ma&rsquo;uzzekhem</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages): &lsquo;the joy of Jehovah is your stronghold&rsquo;. It is the word of &lsquo;Jehovah is the stronghold of my life&rsquo; (<a href="psalms-27.html#v27-1">Psalm 27:1</a>, now on these pages). &#9888; The shelf prints &lsquo;strength&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-tlb">TLB</span>), &lsquo;our strength&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;stronghold&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Nehemiah', 8, 10)))
+DICTIONARY.append(('chedvah', 'chedvah', 'חֶדְוָה', 'chedvat', 'JOY, gladness. <span data-heb="חדות יהוה">&lsquo;The joy of Jehovah&rsquo; (<em>chedvat Yehovah</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages). It is not the <em>simchah</em> of the same chapter (verses 12 and 17, <a href="dictionary.html#simchah">simchah</a>), which is the people&rsquo;s own gladness, but the joy that belongs to Jehovah. &#9888; The shelf prints &lsquo;the joy of the Lord&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>) and &lsquo;the joy of Jehovah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Nehemiah', 8, 10)))
+DICTIONARY.append(('mephorash', 'mephorash', 'מְפֹרָשׁ', 'mephorash', 'MADE DISTINCT, spelled out: the passive participle of <em>parash</em>, to separate. In <a href="nehemiah-8.html#v8-8">Nehemiah 8:8</a> (now on these pages) it describes how the law was read, and the question is whether it means read distinctly or read with explanation. &#9888; The shelf prints &lsquo;distinctly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;making it clear&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;it being expounded&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;distinctly and plainly to be understood&rsquo; (<span class="tag t-drb">Douay</span>).', ('Nehemiah', 8, 8)))
+DICTIONARY.append(('miqra', 'miqra', 'מִקְרָא', 'miqra', 'A READING, a calling: the noun of <em>qara</em>, to read or to call. <span data-heb="במקרא">&lsquo;In the reading&rsquo; (<em>ba-miqra</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-8">Nehemiah 8:8</a> (now on these pages). The same consonants are the <em>miqra</em> of &lsquo;holy convocation&rsquo; (<a href="leviticus-23.html#v23-36">Leviticus 23:36</a>, now on these pages), the calling together of a feast. &#9888; The shelf prints &lsquo;the reading&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;what was being read&rsquo; (<span class="tag t-niv">NIV</span>) and nothing for it in the <span class="tag t-drb">Douay</span>.', ('Nehemiah', 8, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['maoz'] = ('maoz', 'UNA FORTALEZA, un lugar fortificado al que correr. <span data-heb="מעזכם">«Su fortaleza» (<em>ma&rsquo;uzzekhem</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas): «el gozo de Jehová es su fortaleza». Es la palabra de «Jehová es la fortaleza de mi vida» (<a href="psalms-27.es.html#v27-1">Salmo 27:1</a>, ya en estas páginas). &#9888; El estante imprime «vuestra fortaleza» (<span class="tag t-rv">RV&nbsp;1909</span>), «vuestra fuerza» (<span class="tag t-rv60">RV60</span>), «su fortaleza» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «su plaza fuerte» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chedvah'] = ('chedvah', 'ALEGRÍA, gozo. <span data-heb="חדות יהוה">«El gozo de Jehová» (<em>chedvat Yehovah</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas). No es la <em>simjá</em> del mismo capítulo (versículos 12 y 17, <a href="diccionario.html#simchah">simjá</a>), la alegría propia del pueblo, sino el gozo que pertenece a Jehová. &#9888; El estante imprime «el gozo de Jehová» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «el gozo del Señor» (<span class="tag t-nvi">NVI</span>) y «la felicidad que viene de Jehová» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['mephorash'] = ('mephorash', 'HECHO DISTINTO, expuesto: el participio pasivo de <em>parash</em>, separar. En <a href="nehemiah-8.es.html#v8-8">Nehemías 8:8</a> (ya en estas páginas) describe cómo se leyó la ley, y la pregunta es si significa leída distintamente o leída con explicación. &#9888; El estante imprime «claramente» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «con claridad» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «la cual se exponía» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['miqra'] = ('miqra', 'UNA LECTURA, una convocación: el sustantivo de <em>qara</em>, leer o llamar. <span data-heb="במקרא">«En la lectura» (<em>ba-miqra</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-8">Nehemías 8:8</a> (ya en estas páginas). Las mismas consonantes son el <em>miqra</em> de «santa convocación» (<a href="leviticus-23.es.html#v23-36">Levítico 23:36</a>, ya en estas páginas), el llamado a reunirse de una fiesta. &#9888; El estante imprime «la lectura» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «su lectura» (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'atzarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-18">Nehemiah 8:18</a> (now on these pages): <span data-heb="עצרת כמשפט">&lsquo;a solemn assembly, according to the ordinance&rsquo; stands in this one verse</span>, the eighth day after the seven days of booths.',) + _t[5:]
+    if _t[0] == 'hadas':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-15">Nehemiah 8:15</a> (now on these pages) has the myrtle among the leaves brought to make booths, with the olive, the oil tree, the palm and the thick tree.',) + _t[5:]
+    if _t[0] == 'sukkah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-14">Nehemiah 8:14</a> (now on these pages): <span data-heb="ישבו בני ישראל בסכות">&lsquo;that the sons of Israel should dwell in booths&rsquo; stands in this one verse</span>, and at verses 15&ndash;17 the booths are built on roofs, in courts and in the two squares.',) + _t[5:]
+    if _t[0] == 'amen':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-6">Nehemiah 8:6</a> (now on these pages): <span data-heb="אמן אמן">&lsquo;Amen, Amen&rsquo; stands in two verses</span>, Numbers 5:22 and this one.',) + _t[5:]
+    if _t[0] == 'simchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-12">Nehemiah 8:12</a> (now on these pages): <span data-heb="שמחה גדולה">&lsquo;great joy&rsquo; stands in nine verses</span>, this one and verse 17 among them, and the reason given is that they had understood.',) + _t[5:]
+    if _t[0] == 'shamen':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-15">Nehemiah 8:15</a> (now on these pages): <span data-heb="עץ שמן">&lsquo;the oil tree&rsquo; stands in two verses</span>, here and Isaiah 41:19.',) + _t[5:]
+    if _t[0] == 'qadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-9">Nehemiah 8:9</a> (now on these pages) calls the day holy three times, at verses 9, 10 and 11, to people who are weeping.',) + _t[5:]
+    if _t[0] == 'nakhon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages): <span data-heb="לאין נכון לו">&lsquo;to him for whom nothing is prepared&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'sakal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-13">Nehemiah 8:13</a> (now on these pages): <span data-heb="ולהשכיל">&lsquo;to gain insight&rsquo; stands in two verses</span>, Daniel 9:13 and this one.',) + _t[5:]
+if 'atzarah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['atzarah']
+    DICTIONARY_ES['atzarah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-18">Nehemías 8:18</a> (ya en estas páginas): <span data-heb="עצרת כמשפט">«una asamblea solemne, conforme a la ordenanza» está en este único versículo</span>, el octavo día tras los siete de las cabañas.')
+if 'hadas' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hadas']
+    DICTIONARY_ES['hadas'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-15">Nehemías 8:15</a> (ya en estas páginas) tiene el arrayán entre las hojas traídas para hacer cabañas, con el olivo, el árbol de aceite, la palmera y el árbol espeso.')
+if 'sukkah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sukkah']
+    DICTIONARY_ES['sukkah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-14">Nehemías 8:14</a> (ya en estas páginas): <span data-heb="ישבו בני ישראל בסכות">«que los hijos de Israel habitaran en cabañas» está en este único versículo</span>, y en los versículos 15&ndash;17 las cabañas se levantan en terrados, patios y en las dos plazas.')
+if 'amen' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['amen']
+    DICTIONARY_ES['amen'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-6">Nehemías 8:6</a> (ya en estas páginas): <span data-heb="אמן אמן">«Amén, amén» está en dos versículos</span>, Números 5:22 y este.')
+if 'simchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['simchah']
+    DICTIONARY_ES['simchah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-12">Nehemías 8:12</a> (ya en estas páginas): <span data-heb="שמחה גדולה">«gran alegría» está en nueve versículos</span>, entre ellos este y el versículo 17, y la razón dada es que habían entendido.')
+if 'shamen' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamen']
+    DICTIONARY_ES['shamen'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-15">Nehemías 8:15</a> (ya en estas páginas): <span data-heb="עץ שמן">«el árbol de aceite» está en dos versículos</span>, este e Isaías 41:19.')
+if 'qadosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qadosh']
+    DICTIONARY_ES['qadosh'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-9">Nehemías 8:9</a> (ya en estas páginas) llama santo al día tres veces, en los versículos 9, 10 y 11, a un pueblo que llora.')
+if 'nakhon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nakhon']
+    DICTIONARY_ES['nakhon'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas): <span data-heb="לאין נכון לו">«al que no tiene nada preparado» está en este único versículo</span>.')
+if 'sakal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakal']
+    DICTIONARY_ES['sakal'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-13">Nehemías 8:13</a> (ya en estas páginas): <span data-heb="ולהשכיל">«para adquirir perspicacia» está en dos versículos</span>, Daniel 9:13 y este.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Nehemiah', 8, 1), ('Judges', 20, 1), 'as one man — the congregation assembled, for war there and for a book here'),
+    (('Nehemiah', 8, 2), ('Leviticus', 23, 24), 'the first day of the seventh month'),
+    (('Nehemiah', 8, 3), ('Deuteronomy', 31, 11), 'the law read in their hearing'),
+    (('Nehemiah', 8, 6), ('Numbers', 5, 22), 'Amen, Amen'),
+    (('Nehemiah', 8, 6), ('Exodus', 4, 31), 'they bowed and prostrated themselves'),
+    (('Nehemiah', 8, 6), ('2 Chronicles', 7, 3), 'faces to the ground'),
+    (('Nehemiah', 8, 10), ('Psalms', 27, 1), "stronghold — ma'oz"),
+    (('Nehemiah', 8, 10), ('Genesis', 45, 5), 'do not be grieved'),
+    (('Nehemiah', 8, 10), ('Genesis', 6, 6), "the root of grief — Jehovah's regret"),
+    (('Nehemiah', 8, 13), ('Daniel', 9, 13), 'to gain insight'),
+    (('Nehemiah', 8, 14), ('Leviticus', 23, 42), 'dwell in booths'),
+    (('Nehemiah', 8, 15), ('Leviticus', 23, 40), 'the boughs — here leaves, and for building'),
+    (('Nehemiah', 8, 15), ('Isaiah', 41, 19), 'the oil tree'),
+    (('Nehemiah', 8, 15), ('Ezra', 1, 1), 'pass a voice — a proclamation'),
+    (('Nehemiah', 8, 18), ('Leviticus', 23, 36), 'the eighth day, a solemn assembly'),
+    (('Nehemiah', 8, 2), ('Joshua', 6, 21), 'from man to woman — Jericho'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["neh8"] = dict(era='return',
+    when='All the people gather as one man at the Water Gate and ask Ezra for the book of the law; Ezra reads from the light until midday on the first day of the seventh month from a tower of wood, the people stand, answer Amen, Amen and bow; the Levites cause the people to understand; the people weep, and Nehemiah, Ezra and the Levites tell them not to mourn, to eat the fat, drink the sweet and send portions, for the joy of Jehovah is their stronghold; on the second day they find the booths written, make them of leaves on roofs, in courts and in the squares, and Ezra reads day by day through the feast, with great joy.',
+    clock='Undated in the chapter, which gives only the first day of the seventh month and the feast that follows; filed under the return from exile. &#9888; The book of Ezra-Nehemiah places this chapter after the wall and the lists, and the Greek 1 Esdras places the reading with the Ezra material instead.')
+
+CHAPTER_ART["neh8"] = [dict(
+    file='dore-ezra-reads-the-law.jpg',
+    title='Ezra Reads the Law to the People', title_es='Esdras lee la ley al pueblo',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='La Sainte Bible, Dor&eacute; Bible illustrations (wood engraving)', location_es='La Sainte Bible, ilustraciones de Dor&eacute; (grabado en madera)',
+    alt='A black-and-white wood engraving. An old bearded man in a turban and long robe stands on a stone platform with steps, holding up a two-lobed tablet covered with lines of writing and pointing at it with one hand. Around him stand and crouch listeners in head-cloths and shawls; one in the lower left bows her head, and a figure at the lower right turns away with the face covered.',
+    alt_es='Un grabado en madera en blanco y negro. Un anciano barbado con turbante y larga túnica está de pie sobre una plataforma de piedra con escalones, sosteniendo en alto una tablilla de dos lóbulos cubierta de líneas de escritura y señalándola con una mano. A su alrededor están de pie y agachados oyentes con tocados y chales; una en la parte inferior izquierda inclina la cabeza, y una figura abajo a la derecha se vuelve con el rostro cubierto.',
+    note='Nehemiah 8:1&ndash;12. Dor&eacute;&rsquo;s Ezra stands on stone steps and holds up a tablet; the Hebrew has a tower of wood and a <em>sefer</em>, a book or scroll, opened before the eyes of the people. The tablet, the steps and the listeners drawn in the foreground, one with her head bowed, are Dor&eacute;&rsquo;s, and the picture has the weeping of verse 9 but not the standing of verse 5 or the thirteen men beside the reader.',
+    note_es='Nehem&iacute;as 8:1&ndash;12. El Esdras de Dor&eacute; est&aacute; sobre escalones de piedra y sostiene una tablilla; el hebreo tiene una torre de madera y un <em>sefer</em>, un libro o rollo, abierto ante los ojos del pueblo. La tablilla, los escalones y los oyentes del primer plano, uno con la cabeza inclinada, son de Dor&eacute;, y el cuadro tiene el llanto del versículo 9 pero no el ponerse de pie del versículo 5 ni los trece hombres junto al lector.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:109.Ezra_Reads_the_Law_to_the_People.jpg')]
+
