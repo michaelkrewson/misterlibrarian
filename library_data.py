@@ -62677,3 +62677,84 @@ CHAPTER_ART["psalms145"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Paris_psaulter_gr139_fol7v.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 62 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('misgav', 'misgav', 'מִשְׂגָּב', 'misgav', 'A HIGH PLACE, a refuge set out of reach &mdash; from <em>sagav</em>, &lsquo;to be high&rsquo;; the height an enemy cannot climb. <span data-heb="משגבי">&lsquo;my high tower&rsquo;, <em>misgavi</em>, stands in seven verses of the Hebrew Bible</span>: 2 Samuel 22:3, Psalm 18:2, Psalm 59:9 and 59:17, Psalm 62:2 and 62:6 (<a href="psalms-62.html#v62-2">62:2</a> and <a href="psalms-62.html#v62-6">62:6</a>, now on these pages) and Psalm 144:2 (the Hebrew Bible numbers 18:2, 59:9 and 59:17 as 18:3, 59:10 and 59:18; none yet on these pages but Psalm 62). In Psalm 62 it is the answer to a plot to throw a man down from his height (verse 4). &#9888; The shelf prints &lsquo;defence&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;high tower&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;fortress&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;secure height&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;protector&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 62, 2)))
+DICTIONARY.append(('dumiyyah', 'dumiyyah', 'דֻּמִיָּה', 'dumiyyah', 'STILLNESS, SILENCE &mdash; the noun of the quiet that waits; its verb form is the order <em>domi</em>, &lsquo;be still&rsquo;. <span data-heb="דומיה">The noun stands in two verses of the Hebrew Bible</span>: Psalm 39:2 (the Hebrew Bible&rsquo;s 39:3), where the speaker is silent and it hurts (not yet on these pages), and <a href="psalms-62.html#v62-1">Psalm 62:1</a> (now on these pages), <span data-heb="אך אל אלהים דומיה נפשי">&lsquo;Only for God is my soul stillness&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;waiteth upon God&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;waiteth in silence&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;finds rest in God&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;be subject to God&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 62, 1)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['misgav'] = ('misgav', 'UN LUGAR ALTO, un refugio puesto fuera de alcance &mdash; de <em>sagav</em>, «ser alto»; la altura que un enemigo no puede escalar. <span data-heb="משגבי">«mi altura segura», <em>misgavi</em>, está en siete versículos de la Biblia hebrea</span>: 2 Samuel 22:3, Salmo 18:2, Salmo 59:9 y 59:17, Salmo 62:2 y 62:6 (<a href="psalms-62.es.html#v62-2">62:2</a> y <a href="psalms-62.es.html#v62-6">62:6</a>, ya en estas páginas) y Salmo 144:2 (la Biblia hebrea numera 18:2, 59:9 y 59:17 como 18:3, 59:10 y 59:18; ninguno todavía en estas páginas salvo el Salmo 62). En el Salmo 62 es la respuesta a un plan de derribar a un hombre desde su altura (versículo 4). &#9888; El estante imprime «refugio» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «altura segura» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['dumiyyah'] = ('dumiyyah', 'QUIETUD, SILENCIO &mdash; el sustantivo de la calma que espera; su forma verbal es la orden <em>domi</em>, «quédate quieta». <span data-heb="דומיה">El sustantivo está en dos versículos de la Biblia hebrea</span>: Salmo 39:2 (el 39:3 de la Biblia hebrea), donde el que habla calla y le duele (todavía no en estas páginas), y <a href="psalms-62.es.html#v62-1">Salmo 62:1</a> (ya en estas páginas), <span data-heb="אך אל אלהים דומיה נפשי">«Solo para Dios es mi alma quietud», que está en este único versículo</span>. &#9888; El estante imprime «acallada» (<span class="tag t-rv60">RV60</span>), «callada» (<span class="tag t-rv">RV&nbsp;1909</span>), «halla descanso» (<span class="tag t-nvi">NVI</span>) y «esperando en silencio» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-9">Psalm 62:9</a> and <a href="psalms-62.html#v62-10">62:10</a> (now on these pages): <span data-heb="אך הבל בני אדם">&lsquo;Only a breath are the sons of Adam&rsquo; stands in this one verse</span>, and the verb of verse 10, <em>tehbalu</em>, &lsquo;do not become vain&rsquo;, is built on the same root.',) + _t[5:]
+    if _t[0] == 'selah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-4">Psalm 62:4</a> and <a href="psalms-62.html#v62-8">62:8</a> (now on these pages): <em>Selah</em> closes the plot of the mouths that bless and the heart that curses, and the call to pour out the heart before a God who is a refuge.',) + _t[5:]
+    if _t[0] == 'tsur':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-2">Psalm 62:2</a>, <a href="psalms-62.html#v62-6">62:6</a> and <a href="psalms-62.html#v62-7">62:7</a> (now on these pages): &lsquo;my rock and my salvation&rsquo; is said twice, the second time without &lsquo;greatly&rsquo;, and &lsquo;the rock of my strength, my refuge&rsquo; at verse 7.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-12">Psalm 62:12</a> (now on these pages): <span data-heb="ולך אדני חסד">&lsquo;and to you, Lord, loyal love&rsquo; stands in this one verse</span>, beside the strength that belongs to God at verse 11.',) + _t[5:]
+    if _t[0] == 'yeshuah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-1">Psalm 62:1</a> (now on these pages): <em>yeshu&rsquo;ati</em>, &lsquo;my salvation&rsquo;, is said at verses 1, 2 and 6, and the other form, <em>yish&rsquo;i</em>, at verse 7.',) + _t[5:]
+    if _t[0] == 'batach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-8">Psalm 62:8</a> and <a href="psalms-62.html#v62-10">62:10</a> (now on these pages): the people are told to trust (<em>bitchu</em>) in him at all times, and not to trust (<em>tivtechu</em>) in oppression.',) + _t[5:]
+    if _t[0] == 'tiqvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-5">Psalm 62:5</a> (now on these pages): &lsquo;for from him is my hope&rsquo;, <em>tiqvati</em>, in the place where verse 1 had &lsquo;my salvation&rsquo;.',) + _t[5:]
+if 'hevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hevel']
+    DICTIONARY_ES['hevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-9">Salmo 62:9</a> y <a href="psalms-62.es.html#v62-10">62:10</a> (ya en estas páginas): <span data-heb="אך הבל בני אדם">«Solo un soplo son los hijos de Adán» está en este único versículo</span>, y el verbo del versículo 10, <em>tehbalu</em>, «no os hagáis vanos», se construye sobre la misma raíz.')
+if 'selah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selah']
+    DICTIONARY_ES['selah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-4">Salmo 62:4</a> y <a href="psalms-62.es.html#v62-8">62:8</a> (ya en estas páginas): <em>Selah</em> cierra el plan de las bocas que bendicen y del corazón que maldice, y la llamada a derramar el corazón ante un Dios que es refugio.')
+if 'tsur' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsur']
+    DICTIONARY_ES['tsur'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-2">Salmo 62:2</a>, <a href="psalms-62.es.html#v62-6">62:6</a> y <a href="psalms-62.es.html#v62-7">62:7</a> (ya en estas páginas): «mi roca y mi salvación» se dice dos veces, la segunda sin «mucho», y «la roca de mi fortaleza, mi refugio» en el versículo 7.')
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-12">Salmo 62:12</a> (ya en estas páginas): <span data-heb="ולך אדני חסד">«y tuyo, Señor, es el amor leal» está en este único versículo</span>, junto a la fuerza que es de Dios en el versículo 11.')
+if 'yeshuah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yeshuah']
+    DICTIONARY_ES['yeshuah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-1">Salmo 62:1</a> (ya en estas páginas): <em>yeshu&rsquo;ati</em>, «mi salvación», se dice en los versículos 1, 2 y 6, y la otra forma, <em>yish&rsquo;i</em>, en el 7.')
+if 'batach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['batach']
+    DICTIONARY_ES['batach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-8">Salmo 62:8</a> y <a href="psalms-62.es.html#v62-10">62:10</a> (ya en estas páginas): se dice al pueblo que confíe (<em>bitchu</em>) en él en todo tiempo, y que no confíe (<em>tivtechu</em>) en la opresión.')
+if 'tiqvah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tiqvah']
+    DICTIONARY_ES['tiqvah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-5">Salmo 62:5</a> (ya en estas páginas): «porque de él es mi esperanza», <em>tiqvati</em>, en el lugar donde el versículo 1 tenía «mi salvación».')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 62, 8), ('1 Samuel', 1, 15), 'pouring out the soul before Jehovah'),
+    (('Psalms', 62, 8), ('Psalms', 42, 5), 'pouring out the soul'),
+    (('Psalms', 62, 8), ('Psalms', 46, 2), 'God is a refuge for us'),
+    (('Psalms', 62, 9), ('Daniel', 5, 27), 'weighed in the balances'),
+    (('Psalms', 62, 12), ('Matthew', 16, 27), 'he will repay each according to what he has done'),
+    (('Psalms', 62, 12), ('Romans', 2, 6), 'he will render to each according to his works'),
+    (('Psalms', 62, 12), ('Revelation', 22, 12), 'to give back to each as his work is'),
+    (('Psalms', 62, 12), ('2 Timothy', 4, 14), 'the Lord will repay him according to his works'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms62"] = dict(era='monarchy',
+    when='A psalm of David for the leader, on Jeduthun: only for God is his soul stillness, he his rock and salvation and high tower, not greatly moved; against the men who rush on one man like a leaning wall and plot to thrust him from his height, blessing with the mouth and cursing inwardly; his soul told to be still, the rock again and not moved at all, salvation and glory upon God, and the people told to trust and pour out their hearts; the sons of Adam and of men a breath, lighter than a breath in the scales, no trust in oppression or robbery or wealth; once God has spoken and twice it was heard, strength is God&rsquo;s and loyal love the Lord&rsquo;s, and he repays a man according to his work.',
+    clock='Headed &lsquo;for the leader, on Jeduthun&rsquo; and &lsquo;of David&rsquo;; the psalm itself gives no event or date. &#9888; The enemies are not named and the plot is not placed, and the Name is not written in it.')
+
+CHAPTER_ART["psalms62"] = [dict(
+    file='rembrandt-david-prayer.jpg',
+    title='David in Prayer', title_es='David en oraci&oacute;n',
+    artist='Rembrandt van Rijn', artist_es='Rembrandt van Rijn',
+    year='1652', location='Etching, Cleveland Museum of Art', location_es='Aguafuerte, Cleveland Museum of Art',
+    alt='A small dark etching of a figure kneeling at the side of a curtained bed. The person, seen from behind and the side in a long pale cloak, kneels on the step with hands raised close to the face, looking up into the shadowed canopy; heavy curtains fall from the top, a bedpost with a hanging cloth stands at the left, a book lies on a stool at the right, and a harp lies on the floor in the front.',
+    alt_es='Un peque&ntilde;o aguafuerte oscuro de una figura arrodillada junto a una cama con cortinas. La persona, vista de espaldas y de lado, con un largo manto p&aacute;lido, se arrodilla en el escal&oacute;n con las manos alzadas cerca del rostro, mirando hacia el dosel en sombra; pesadas cortinas caen desde arriba, a la izquierda hay un poste de la cama con una tela colgada, a la derecha un libro sobre un taburete, y en primer plano un arpa en el suelo.',
+    note='Psalm 62:1 and 5. The psalm names the speaker only as David and says nothing of a bedchamber, a harp or a book; the room, the harp and the kneeling are Rembrandt&rsquo;s way of showing a man whose soul is still for God.',
+    note_es='Salmo 62:1 y 5. El salmo nombra al que habla solo como David y no dice nada de una alcoba, un arpa o un libro; el cuarto, el arpa y el arrodillarse son la manera que tiene Rembrandt de mostrar a un hombre cuya alma est&aacute; quieta ante Dios.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_David_in_Prayer_-_1974.257_-_Cleveland_Museum_of_Art.jpg')]
+
