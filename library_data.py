@@ -61960,3 +61960,106 @@ CHAPTER_ART["neh8"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:109.Ezra_Reads_the_Law_to_the_People.jpg')]
 
+
+
+# Appended to library_data.py for Micah 5 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('efrat', 'Ephrath / Ephrathah', 'אֶפְרָת', 'efrat', 'EPHRATH, the old name that goes with Bethlehem, and EPHRATHAH, the same name with an ending. <span data-heb="בית לחם אפרתה">&lsquo;Bethlehem Ephrathah&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages). Rachel is buried &lsquo;on the way to Ephrath &mdash; that is, Bethlehem&rsquo; (<a href="genesis-35.html#v35-19">Genesis 35:19</a>, now on these pages), Ruth is blessed in Ephrathah (<a href="ruth-4.html#v4-11">Ruth 4:11</a>) and David is an Ephrathite of Bethlehem (<a href="1-samuel-17.html#v17-12">1 Samuel 17:12</a>). &#9888; The shelf prints &lsquo;Ephratah&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span> &lsquo;Ephrata&rsquo;), &lsquo;Ephrathah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;Ephrathah&rsquo; with a hyphenated Bethlehem (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Micah', 5, 1)))
+DICTIONARY.append(('motsaah', 'motsa&rsquo;ah', 'מוֹצָאָה', 'motsa&rsquo;ot', 'A GOING FORTH, an exit; in the plural, goings forth, origins. <span data-heb="ומוצאתיו">&lsquo;And his goings forth&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages), the noun of the verb <em>yetse</em>, &lsquo;will come out&rsquo;, that opens the same line. &#9888; The shelf prints &lsquo;goings forth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;origins&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;origin&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;going forth&rsquo; (<span class="tag t-drb">Douay</span>).', ('Micah', 5, 1)))
+DICTIONARY.append(('nasikh', 'nasikh', 'נָסִיךְ', 'nesikhei', 'A PRINCE, a leader (the word also means a drink poured out). <span data-heb="נסיכי אדם">&lsquo;Princes of men&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages), the eight that follow the seven shepherds. &#9888; The shelf prints &lsquo;principal men&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>), &lsquo;commanders&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;dukes of mankind&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;princes&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Micah', 5, 4)))
+DICTIONARY.append(('revivim', 'revivim', 'רְבִיבִים', 'revivim', 'SHOWERS, heavy rain on the grass. <span data-heb="כרביבים עלי עשב">&lsquo;Like showers on the grass&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="deuteronomy-32.html#v32-2">Deuteronomy 32:2</a>, where the teaching falls like them (now on these pages), and <a href="micah-5.html#v5-6">Micah 5:6</a> (now on these pages), where the remnant of Jacob is like them. &#9888; The shelf prints &lsquo;showers&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;copious showers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;drops&rsquo; (<span class="tag t-drb">Douay</span>).', ('Micah', 5, 6)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['efrat'] = ('efrat', 'EFRAT, el nombre antiguo que acompaña a Belén, y EFRATA, el mismo nombre con una terminación. <span data-heb="בית לחם אפרתה">«Belén Efrata» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas). Raquel es sepultada «en el camino de Efrata — esto es, Belén» (<a href="genesis-35.es.html#v35-19">Génesis 35:19</a>, ya en estas páginas), Rut es bendecida en Efrata (<a href="ruth-4.es.html#v4-11">Rut 4:11</a>) y David es un efrateo de Belén (<a href="1-samuel-17.es.html#v17-12">1 Samuel 17:12</a>). &#9888; El estante imprime «Ephrata» (<span class="tag t-rv">RV&nbsp;1909</span>), «Efrata» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «Efrata» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['motsaah'] = ('motsaah', 'UNA SALIDA, una procedencia; en plural, salidas, orígenes. <span data-heb="ומוצאתיו">«Y sus salidas» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas), el sustantivo del verbo <em>yetse</em>, «saldrá», que abre la misma línea. &#9888; El estante imprime «sus salidas» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «sus orígenes» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «cuyo origen» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['nasikh'] = ('nasikh', 'UN PRÍNCIPE, un jefe (la palabra significa también una bebida derramada). <span data-heb="נסיכי אדם">«Príncipes de hombres» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas), los ocho que siguen a los siete pastores. &#9888; El estante imprime «hombres principales» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «príncipes del pueblo» (<span class="tag t-nvi">NVI</span>), «adalides de la humanidad» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «príncipes de la humanidad» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['revivim'] = ('revivim', 'AGUACEROS, lluvia fuerte sobre la hierba. <span data-heb="כרביבים עלי עשב">«Como lluvias sobre la hierba» está en dos versículos de la Biblia hebrea</span>: <a href="deuteronomy-32.es.html#v32-2">Deuteronomio 32:2</a>, donde la enseñanza cae como ellas (ya en estas páginas), y <a href="micah-5.es.html#v5-6">Miqueas 5:6</a> (ya en estas páginas), donde el remanente de Jacob es como ellas. &#9888; El estante imprime «lluvias» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «abundante lluvia» (<span class="tag t-nvi">NVI</span>), «chaparrones copiosos» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «aguaceros» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-6">Micah 5:6</a> (now on these pages): <span data-heb="שארית יעקב">&lsquo;the remnant of Jacob&rsquo; stands in two verses</span>, 6 and 7, once like dew and once like a lion.',) + _t[5:]
+    if _t[0] == 'shalom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages): <span data-heb="והיה זה שלום">&lsquo;And this one will be peace&rsquo; stands in this one verse</span>, with no &lsquo;our&rsquo; in the Hebrew.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="מושל בישראל">&lsquo;ruler in Israel&rsquo; stands in two verses</span>, this one and 2 Chronicles 7:18; the Hebrew has no king.',) + _t[5:]
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="מקדם מימי עולם">&lsquo;from of old, from the days of olam&rsquo; stands in this one verse</span>, of the goings forth of the one who comes out of Bethlehem.',) + _t[5:]
+    if _t[0] == 'elef':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="אלפי יהודה">&lsquo;the thousands of Judah&rsquo; stands in four verses</span>, 1 Samuel 23:23, here and Zechariah 12:5&ndash;6; Bethlehem is little to be among them.',) + _t[5:]
+    if _t[0] == 'asherah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-13">Micah 5:13</a> (now on these pages): <span data-heb="אשיריך">&lsquo;your Asherim&rsquo; stands in this one verse</span>, uprooted from among the people.',) + _t[5:]
+    if _t[0] == 'karat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-9">Micah 5:9</a> (now on these pages) has <em>hikhrati</em>, &lsquo;I will cut off&rsquo;, four times, at verses 9&ndash;12, after <em>yikkaretu</em> at verse 8: horses, cities, sorceries, carved images.',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-2">Micah 5:2</a> (now on these pages): the rest of his brothers will return, <em>yeshuvun</em>; the Douay reads it &lsquo;shall be converted&rsquo;, and at verse 3 the consonants of <em>veyashavu</em> can be read as dwelling or as returning.',) + _t[5:]
+    if _t[0] == 'ra-ah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-3">Micah 5:3</a> (now on these pages): <span data-heb="ורעה בעז יהוה">&lsquo;and shepherd in the strength of Jehovah&rsquo; stands in this one verse</span>, and the same verb is at verse 5, of the land of Assyria.',) + _t[5:]
+    if _t[0] == 'armon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages) has the Assyrian treading on <em>armenoteinu</em>, &lsquo;our palaces&rsquo;.',) + _t[5:]
+if 'shalom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shalom']
+    DICTIONARY_ES['shalom'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas): <span data-heb="והיה זה שלום">«Y este será paz» está en este único versículo</span>, sin «nuestra» en el hebreo.')
+if 'mashal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashal']
+    DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="מושל בישראל">«gobernante en Israel» está en dos versículos</span>, este y 2 Crónicas 7:18; el hebreo no tiene rey.')
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="מקדם מימי עולם">«desde antiguo, desde los días de olam» está en este único versículo</span>, de las salidas del que sale de Belén.')
+if 'elef' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['elef']
+    DICTIONARY_ES['elef'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="אלפי יהודה">«los millares de Judá» está en cuatro versículos</span>, 1 Samuel 23:23, este y Zacarías 12:5&ndash;6; Belén es pequeña para estar entre ellos.')
+if 'asherah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['asherah']
+    DICTIONARY_ES['asherah'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-13">Miqueas 5:13</a> (ya en estas páginas): <span data-heb="אשיריך">«tus Aserim» está en este único versículo</span>, arrancados de en medio del pueblo.')
+if 'karat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['karat']
+    DICTIONARY_ES['karat'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-9">Miqueas 5:9</a> (ya en estas páginas) tiene <em>hikhrati</em>, «cortaré», cuatro veces, en los versículos 9&ndash;12, tras <em>yikkaretu</em> en el versículo 8: caballos, ciudades, hechicerías, imágenes talladas.')
+if 'shuv' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shuv']
+    DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-2">Miqueas 5:2</a> (ya en estas páginas): el resto de sus hermanos volverá, <em>yeshuvun</em>; en el versículo 3 las consonantes de <em>veyashavu</em> pueden leerse como habitar o como volver.')
+if 'armon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['armon']
+    DICTIONARY_ES['armon'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas) tiene al asirio pisando <em>armenoteinu</em>, «nuestros palacios».')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Micah', 5, 1), ('Matthew', 2, 6), 'Bethlehem — little, and not the least of the rulers of Judah'),
+    (('Micah', 5, 1), ('2 Samuel', 5, 2), 'you shall shepherd my people Israel — the clause Matthew adds'),
+    (('Micah', 5, 1), ('Genesis', 35, 19), 'Ephrath, that is Bethlehem'),
+    (('Micah', 5, 1), ('Ruth', 4, 11), 'Ephrathah and Bethlehem'),
+    (('Micah', 5, 1), ('1 Samuel', 17, 12), 'an Ephrathite of Bethlehem — David'),
+    (('Micah', 5, 1), ('2 Chronicles', 7, 18), 'a man ruling in Israel'),
+    (('Micah', 5, 1), ('John', 7, 42), 'Bethlehem, where David was'),
+    (('Micah', 5, 2), ('Isaiah', 7, 14), 'she who bears'),
+    (('Micah', 5, 4), ('Ephesians', 2, 14), 'he is our peace'),
+    (('Micah', 5, 4), ('Amos', 1, 3), 'a number, and the next'),
+    (('Micah', 5, 5), ('Genesis', 10, 11), 'the land of Nimrod and Assyria'),
+    (('Micah', 5, 6), ('Deuteronomy', 32, 2), 'like showers on the grass'),
+    (('Micah', 5, 9), ('Deuteronomy', 17, 16), 'horses'),
+    (('Micah', 5, 11), ('Exodus', 7, 11), 'sorceries'),
+    (('Micah', 5, 12), ('Leviticus', 26, 1), 'carved image and pillar'),
+    (('Micah', 5, 13), ('Deuteronomy', 16, 21), 'Asherah'),
+    (('Micah', 5, 14), ('Micah', 6, 1), 'have not listened — Hear, please'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["micah5"] = dict(era='divided',
+    when='Bethlehem Ephrathah, little among the thousands of Judah: from you one will come out to Jehovah to be ruler in Israel, whose goings forth are from of old; he gives them up until she who bears has borne; the one who stands and shepherds in the strength of Jehovah, and this one will be peace when Assyria comes, with seven shepherds and eight princes; the remnant of Jacob like dew from Jehovah and like a lion among the nations; and Jehovah cuts off horses, chariots, cities, sorceries, carved images, pillars and Asherim, and takes vengeance on the nations that have not listened.',
+    clock='Eighth century BC, with the Assyrian threat of verses 4&ndash;5 as the horizon; the book dates Micah to the reigns of Jotham, Ahaz and Hezekiah. &#9888; The chapter is numbered five in the Hebrew and in this page from Bethlehem on; the English Bibles number the same verse 5:2.')
+
+CHAPTER_ART["micah5"] = [dict(
+    file='roberts-bethlehem-1839.jpg',
+    title='Bethlehem, April 6th 1839', title_es='Belén, 6 de abril de 1839',
+    artist='David Roberts (lithograph by Louis Haghe)', artist_es='David Roberts (litografía de Louis Haghe)',
+    year='1843', location='The Holy Land, Syria, Idumea, Arabia, Egypt and Nubia (Library of Congress)', location_es='Tierra Santa, Siria, Idumea, Arabia, Egipto y Nubia (Biblioteca del Congreso)',
+    alt='A tinted lithograph of a hill town seen from a height. Pale stone buildings, with a long walled complex at the left, stand along a ridge above terraced slopes and a dark wooded ravine; a wall with a small round tower runs down a path in the lower left, three small figures sit and stand on a rock ledge at the lower right, and bare ridges fade into the distance under a pale sky.',
+    alt_es='Una litografía tintada de un pueblo en una colina visto desde lo alto. Edificios de piedra clara, con un largo conjunto amurallado a la izquierda, se alinean en una cresta sobre laderas en terrazas y un barranco oscuro arbolado; un muro con una pequeña torre redonda baja por un sendero en la parte inferior izquierda, tres figuras pequeñas están sentadas y de pie en un saliente de roca abajo a la derecha, y cordilleras desnudas se pierden a lo lejos bajo un cielo pálido.',
+    note='Micah 5:1. Roberts drew Bethlehem as a hill town on a ridge, which is what the Hebrew &lsquo;little to be among the thousands of Judah&rsquo; sets beside the question of its size; the town, the tower and the three travelers are the artist&rsquo;s, from his journey of 1839, more than two and a half thousand years after the prophet. The picture shows the place and nothing of the promise, and the large complex at the left is a later church and convent.',
+    note_es='Miqueas 5:1. Roberts dibujó Belén como un pueblo de colina sobre una cresta, que es lo que el hebreo «pequeña para estar entre los millares de Judá» pone junto a la cuestión de su tamaño; el pueblo, la torre y los tres viajeros son del artista, de su viaje de 1839, más de dos mil quinientos años después del profeta. El cuadro muestra el lugar y nada de la promesa, y el gran conjunto de la izquierda es una iglesia y convento posteriores.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Bethlehem_April_6th_1839_LCCN2002717531.jpg')]
+
