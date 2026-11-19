@@ -60636,3 +60636,186 @@ CHAPTER_ART["psalms24"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Tissot_David_Danced_Before_the_Lord_with_All_His_Might.jpg')]
 
+
+
+# Appended to library_data.py for Isaiah 54 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('aqarah', 'aqarah', 'עֲקָרָה', 'aqarah', 'BARREN &mdash; the woman who has not borne: <span data-heb="רני עקרה לא ילדה">&lsquo;sing, barren one who did not bear&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-1">Isaiah 54:1</a> (now on these pages), where she is told to sing before the child; Sarah (<a href="genesis-11.html#v11-30">Genesis 11:30</a>) and Hannah (<a href="1-samuel-2.html#v2-5">1 Samuel 2:5</a>) are barren on these pages too. &#9888; The shelf prints &lsquo;barren&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;barren woman&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;childless woman&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 54, 1)))
+DICTIONARY.append(('sappir', 'sappir', 'סַפִּיר', 'sappirim', 'A SAPPHIRE &mdash; the foundation stone: <span data-heb="ספירים">&lsquo;sapphires&rsquo; stands in two verses of the Hebrew Bible</span>, <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) and Song of Solomon 5:14 (not yet on these pages). &#9888; The shelf prints &lsquo;sapphires&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>) and, in the NIV, &lsquo;lapis lazuli&rsquo; (<span class="tag t-niv">NIV</span>).', ('Isaiah', 54, 11)))
+DICTIONARY.append(('kadkod', 'kadkod', 'כַּדְכֹּד', 'kadkod', 'KADKOD &mdash; a precious stone whose name is not settled: <span data-heb="כדכד">it stands in two verses of the Hebrew Bible</span>, <span data-heb="וישמתי כדכד שמשתיך">the pinnacles made of it</span> at <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages), and Ezekiel 27:16 (not yet on these pages). &#9888; The shelf prints &lsquo;agates&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;rubies&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;jasper&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;emeralds&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Isaiah', 54, 12)))
+DICTIONARY.append(('eqdach', 'eqdach', 'אֶקְדָּח', 'eqdach', 'EQDACH &mdash; a stone named for fire, probably from a word for kindling: <span data-heb="אקדח">it stands in this one verse</span>, <em>gates of eqdach stones</em>, <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages). &#9888; The shelf prints &lsquo;carbuncles&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;sparkling jewels&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;fiery glowing stones&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;graven stones&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 54, 12)))
+DICTIONARY.append(('limmud', 'limmud', 'לִמּוּד', 'limmudei', 'TAUGHT &mdash; one who is taught, a pupil: <span data-heb="למודי יהוה">&lsquo;taught of Jehovah&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-13">Isaiah 54:13</a> (now on these pages), quoted by Jesus at <a href="john-6.html#v6-45">John 6:45</a> (now on these pages). &#9888; The shelf prints &lsquo;taught of the Lord&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;taught by the Lord&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;persons taught by Jehovah&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;taught by me&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 54, 13)))
+DICTIONARY.append(('keli', 'keli', 'כְּלִי', 'keli', 'A TOOL, a vessel, a weapon &mdash; one word for all three: the smith brings out a tool, <span data-heb="ומוציא כלי למעשהו">&lsquo;and brings out a tool for his work&rsquo;</span>, <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages), and <span data-heb="כל כלי יוצר עליך לא יצלח">&lsquo;every weapon formed against you will not succeed&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-17">verse 17</a>. &#9888; The shelf prints &lsquo;instrument&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>) and &lsquo;weapon&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) for the same word.', ('Isaiah', 54, 17)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['aqarah'] = ('aqarah', 'ESTÉRIL &mdash; la mujer que no ha dado a luz: <span data-heb="רני עקרה לא ילדה">&laquo;canta, estéril que no diste a luz&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-1">Isaías 54:1</a> (ya en estas páginas), donde se le manda cantar antes del hijo; Sara (<a href="genesis-11.es.html#v11-30">Génesis 11:30</a>) y Ana (<a href="1-samuel-2.es.html#v2-5">1 Samuel 2:5</a>) son estériles también en estas páginas. &#9888; El estante imprime &laquo;estéril&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['sappir'] = ('sappirim', 'UN ZAFIRO &mdash; la piedra del cimiento: <span data-heb="ספירים">&laquo;zafiros&raquo; está en dos versículos de la Biblia hebrea</span>, <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) y Cantares 5:14 (todavía no en estas páginas). &#9888; El estante imprime &laquo;zafiros&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kadkod'] = ('kadkod', 'KADKOD &mdash; una piedra preciosa cuyo nombre no está fijado: <span data-heb="כדכד">está en dos versículos de la Biblia hebrea</span>, las almenas hechas de ella en <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas), y Ezequiel 27:16 (todavía no en estas páginas). &#9888; El estante imprime &laquo;piedras preciosas&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;rubíes&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;rubíes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['eqdach'] = ('eqdach', 'EQDACH &mdash; una piedra llamada por el fuego: <span data-heb="אקדח">está en este único versículo</span>, <em>puertas de piedras eqdach</em>, <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas). &#9888; El estante imprime &laquo;piedras de carbunclo&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;piedras relumbrantes como el fuego&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['limmud'] = ('limmudei', 'ENSEÑADO &mdash; el que es enseñado, un discípulo: <span data-heb="למודי יהוה">&laquo;enseñados por Jehová&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-13">Isaías 54:13</a> (ya en estas páginas), citado por Jesús en <a href="john-6.es.html#v6-45">Juan 6:45</a> (ya en estas páginas). &#9888; El estante imprime &laquo;enseñados por Jehová&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['keli'] = ('keli', 'UNA HERRAMIENTA, una vasija, un arma &mdash; una sola palabra para las tres: el herrero saca una herramienta, <span data-heb="ומוציא כלי למעשהו">&laquo;y saca la herramienta para su obra&raquo;</span>, <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas), y <span data-heb="כל כלי יוצר עליך לא יצלח">&laquo;toda arma forjada contra ti no prosperará&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-17">el versículo 17</a>. &#9888; El estante imprime &laquo;herramienta&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;arma&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) para la misma palabra.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'baal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> (now on these pages) has <span data-heb="בעליך עשיך">&lsquo;your husband, your Maker&rsquo;, which stands in this one verse</span>, both words written in the plural; <a href="isaiah-54.html#v54-1">verse 1</a> has the married wife, the woman who has a <em>baal</em>.',) + _t[5:]
+if 'baal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['baal']
+    DICTIONARY_ES['baal'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> (ya en estas páginas) tiene <span data-heb="בעליך עשיך">&laquo;tu marido, tu Hacedor&raquo;, que está en este único versículo</span>, las dos palabras escritas en plural; <a href="isaiah-54.es.html#v54-1">el versículo 1</a> tiene a la casada, la mujer que tiene un <em>baal</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'goel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> and <a href="isaiah-54.html#v54-8">verse 8</a> (now on these pages) have the redeemer: <span data-heb="וגאלך קדוש ישראל">&lsquo;and your redeemer the Holy One of Israel&rsquo;, which stands in two verses</span>, here and Isaiah 41:14.',) + _t[5:]
+if 'goel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['goel']
+    DICTIONARY_ES['goel'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> y <a href="isaiah-54.es.html#v54-8">el versículo 8</a> (ya en estas páginas) tienen al redentor: <span data-heb="וגאלך קדוש ישראל">&laquo;y tu redentor el Santo de Israel&raquo;, que está en dos versículos</span>, este e Isaías 41:14.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> (now on these pages) has the Holy One of Israel as the redeemer of the forsaken wife.',) + _t[5:]
+if 'qadosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qadosh']
+    DICTIONARY_ES['qadosh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> (ya en estas páginas) tiene al Santo de Israel como redentor de la esposa abandonada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'azav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-6">Isaiah 54:6</a> and <a href="isaiah-54.html#v54-7">verse 7</a> (now on these pages) have it twice: <span data-heb="עזובה ועצובת רוח">&lsquo;forsaken and grieved in spirit&rsquo;, which stands in this one verse</span>, and <span data-heb="ברגע קטן עזבתיך">&lsquo;for a small moment I forsook you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'azav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['azav']
+    DICTIONARY_ES['azav'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-6">Isaías 54:6</a> y <a href="isaiah-54.es.html#v54-7">el versículo 7</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="עזובה ועצובת רוח">&laquo;abandonada y afligida de espíritu&raquo;, que está en este único versículo</span>, y <span data-heb="ברגע קטן עזבתיך">&laquo;por un breve momento te abandoné&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'raga':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-7">Isaiah 54:7</a> and <a href="isaiah-54.html#v54-8">verse 8</a> (now on these pages) have the moment twice: <span data-heb="הסתרתי פני רגע">&lsquo;I hid my face for a moment&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'raga' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['raga']
+    DICTIONARY_ES['raga'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-7">Isaías 54:7</a> y <a href="isaiah-54.es.html#v54-8">el versículo 8</a> (ya en estas páginas) tienen el momento dos veces: <span data-heb="הסתרתי פני רגע">&laquo;escondí mi rostro por un momento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qetsef':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-8">Isaiah 54:8</a> (now on these pages) has <span data-heb="בשצף קצף">&lsquo;in an overflow of anger&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'qetsef' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qetsef']
+    DICTIONARY_ES['qetsef'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-8">Isaías 54:8</a> (ya en estas páginas) tiene <span data-heb="בשצף קצף">&laquo;en un desborde de ira&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-8">Isaiah 54:8</a> and <a href="isaiah-54.html#v54-10">verse 10</a> (now on these pages) have it twice: <span data-heb="בחסד עולם רחמתיך">&lsquo;with steadfast love everlasting I have had mercy on you&rsquo;, which stands in this one verse</span>, and the love that does not depart when the mountains do.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-8">Isaías 54:8</a> y <a href="isaiah-54.es.html#v54-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="בחסד עולם רחמתיך">&laquo;con misericordia eterna he tenido compasión de ti&raquo;, que está en este único versículo</span>, y el amor que no se aparta cuando se apartan los montes.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-10">Isaiah 54:10</a> (now on these pages) has <span data-heb="ברית שלומי">&lsquo;my covenant of peace&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-10">Isaías 54:10</a> (ya en estas páginas) tiene <span data-heb="ברית שלומי">&laquo;mi pacto de paz&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shalom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-10">Isaiah 54:10</a> and <a href="isaiah-54.html#v54-13">verse 13</a> (now on these pages) have the covenant of peace and <span data-heb="ורב שלום בניך">&lsquo;great will be the peace of your sons&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shalom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shalom']
+    DICTIONARY_ES['shalom'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-10">Isaías 54:10</a> y <a href="isaiah-54.es.html#v54-13">el versículo 13</a> (ya en estas páginas) tienen el pacto de paz y <span data-heb="ורב שלום בניך">&laquo;grande será la paz de tus hijos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages) has <span data-heb="אבני חפץ">&lsquo;stones of delight&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas) tiene <span data-heb="אבני חפץ">&laquo;piedras de deleite&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tzedaqah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-14">Isaiah 54:14</a> and <a href="isaiah-54.html#v54-17">verse 17</a> (now on these pages) have it twice: <span data-heb="בצדקה תכונני">&lsquo;in righteousness you will be established&rsquo;, which stands in this one verse</span>, and the righteousness of the servants that is &lsquo;from me&rsquo;.',) + _t[5:]
+if 'tzedaqah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tzedaqah']
+    DICTIONARY_ES['tzedaqah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-14">Isaías 54:14</a> y <a href="isaiah-54.es.html#v54-17">el versículo 17</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="בצדקה תכונני">&laquo;en justicia serás establecida&raquo;, que está en este único versículo</span>, y la justicia de los siervos que es «de mí».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'charash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages) has <span data-heb="בראתי חרש">&lsquo;I have created the smith&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'charash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['charash']
+    DICTIONARY_ES['charash'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas) tiene <span data-heb="בראתי חרש">&laquo;yo he creado al herrero&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mashchit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages) has <span data-heb="בראתי משחית">&lsquo;I have created the destroyer&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mashchit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashchit']
+    DICTIONARY_ES['mashchit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas) tiene <span data-heb="בראתי משחית">&laquo;yo he creado al destructor&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nachalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-17">Isaiah 54:17</a> (now on these pages) has <span data-heb="נחלת עבדי יהוה">&lsquo;the inheritance of the servants of Jehovah&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nachalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nachalah']
+    DICTIONARY_ES['nachalah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-17">Isaías 54:17</a> (ya en estas páginas) tiene <span data-heb="נחלת עבדי יהוה">&laquo;la herencia de los siervos de Jehová&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yatsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-17">Isaiah 54:17</a> (now on these pages) has the participle <em>yutsar</em>, &lsquo;formed&rsquo;, for the weapon made against the city.',) + _t[5:]
+if 'yatsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yatsar']
+    DICTIONARY_ES['yatsar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-17">Isaías 54:17</a> (ya en estas páginas) tiene el participio <em>yutsar</em>, «forjada», para el arma hecha contra la ciudad.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gur':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-15">Isaiah 54:15</a> (now on these pages) has <span data-heb="הן גור יגור אפס">&lsquo;if anyone stirs up strife, it is nothing&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'gur' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gur']
+    DICTIONARY_ES['gur'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-15">Isaías 54:15</a> (ya en estas páginas) tiene <span data-heb="הן גור יגור אפס">&laquo;si alguien provoca contienda, no es de mi parte&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pukh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) has <span data-heb="מרביץ בפוך אבניך">&lsquo;laying your stones in kohl&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'pukh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pukh']
+    DICTIONARY_ES['pukh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) tiene <span data-heb="מרביץ בפוך אבניך">&laquo;asiento tus piedras en antimonio&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'oni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) has <span data-heb="עניה סערה">&lsquo;afflicted one, storm-tossed&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'oni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['oni']
+    DICTIONARY_ES['oni'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) tiene <span data-heb="עניה סערה">&laquo;afligida, azotada por la tormenta&raquo;, que está en este único versículo</span>.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'theodidaktos':
+        assert 'the Greek of Isaiah 54:13 has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (not yet on these pages)' in _t[4], 'theodidaktos'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('the Greek of Isaiah 54:13 has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (not yet on these pages)', 'the Greek of <a href="isaiah-54.html#v54-13">Isaiah 54:13</a> has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (now on these pages)'),) + _t[5:]
+if 'theodidaktos' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['theodidaktos']
+    assert 'el griego de Isaías 54:13 tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (todavía no en estas páginas)' in _d[1], 'theodidaktos'
+    DICTIONARY_ES['theodidaktos'] = (_d[0], _d[1].replace('el griego de Isaías 54:13 tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (todavía no en estas páginas)', 'el griego de <a href="isaiah-54.es.html#v54-13">Isaías 54:13</a> tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pukh':
+        assert 'Isaiah 54:11, where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (neither of those two yet on these pages)' in _t[4], 'pukh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Isaiah 54:11, where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (neither of those two yet on these pages)', '<a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages), where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (not yet on these pages)'),) + _t[5:]
+if 'pukh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pukh']
+    assert 'Isaías 54:11, donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (ninguno de los dos todavía en estas páginas)' in _d[1], 'pukh'
+    DICTIONARY_ES['pukh'] = (_d[0], _d[1].replace('Isaías 54:11, donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (ninguno de los dos todavía en estas páginas)', '<a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas), donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (todavía no en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 54, 1), ('Genesis', 11, 30), 'the barren woman who is told to sing'),
+    (('Isaiah', 54, 1), ('1 Samuel', 2, 5), 'the barren has borne seven'),
+    (('Isaiah', 54, 1), ('Galatians', 4, 27), "quoted by Paul, 'Rejoice, barren one'"),
+    (('Isaiah', 54, 3), ('Genesis', 28, 14), 'to the right and to the left — the seed spreads out'),
+    (('Isaiah', 54, 5), ('Jeremiah', 31, 31), "'though I was a husband to them'"),
+    (('Isaiah', 54, 5), ('Isaiah', 41, 14), 'your redeemer, the Holy One of Israel'),
+    (('Isaiah', 54, 9), ('Genesis', 9, 11), 'the oath of the waters of Noah'),
+    (('Isaiah', 54, 10), ('Isaiah', 55, 3), 'the covenant of peace — the everlasting covenant'),
+    (('Isaiah', 54, 12), ('Revelation', 21, 19), 'the jewels of the foundations and gates'),
+    (('Isaiah', 54, 13), ('John', 6, 45), "'taught of God' — quoted by Jesus"),
+    (('Isaiah', 54, 16), ('Isaiah', 43, 1), 'the one who creates'),
+    (('Isaiah', 54, 17), ('Isaiah', 53, 11), 'the Servant, and the servants'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa54"] = dict(era='exile',
+    when='A barren woman is told to sing and to enlarge her tent; her shame of youth and widowhood forgotten, and her Maker is her husband; forsaken for a small moment and gathered with great mercies, with the oath of the waters of Noah and the covenant of peace that outlasts the mountains; the afflicted city to be built with sapphires and fiery stones, its sons taught of Jehovah; and the smith and the destroyer both created, so that no weapon formed against her succeeds.',
+    clock='Undated. The chapter follows the Servant of Isaiah 53 and sits in the second half of Isaiah, which this site files with the exile; it names no king and no city but speaks to a woman, the afflicted one, whose desolate cities are to be settled. &#9888; Nothing in it fixes a year, and who the woman is, a city, a people or the wife of Jehovah, is said by the images and not named.')
+
+CHAPTER_ART["isa54"] = [dict(
+    file='victors-hannah.jpg',
+    title='Hannah Giving Her Son Samuel to the Priest', title_es='Ana entrega a su hijo Samuel al sacerdote',
+    artist='Jan Victors', artist_es='Jan Victors',
+    year='1645', location='Gem&auml;ldegalerie, Staatliche Museen zu Berlin', location_es='Gem&auml;ldegalerie, Staatliche Museen de Berl&iacute;n',
+    alt='A dark oil painting of an interior. At the right an old bearded priest in a white mitre and a red robe embroidered with gold sits in a carved chair and rests one hand on the head of a small fair-haired boy in a dark velvet coat, who stands at his knee. At the left of the boy a young woman in a black cap, a green mantle and a gold silk skirt kneels on a green carpet with one hand raised toward the priest; behind them a man in a turban and a dark fur-trimmed coat stands with his hands clasped, and on a table at the back is a gold ewer.',
+    alt_es='Un óleo oscuro de un interior. A la derecha un anciano sacerdote barbado, con mitra blanca y túnica roja bordada de oro, está sentado en un sillón tallado y apoya una mano en la cabeza de un niño pequeño de pelo rubio y abrigo de terciopelo oscuro, que está de pie junto a su rodilla. A la izquierda del niño una mujer joven con gorro negro, manto verde y falda de seda dorada está de rodillas sobre una alfombra verde con una mano alzada hacia el sacerdote; detrás de ellos un hombre con turbante y abrigo oscuro con ribete de piel está de pie con las manos juntas, y sobre una mesa al fondo hay una jarra dorada.',
+    note='Isaiah 54:1. The barren woman who is told to sing has her image in Hannah, whose song is at 1 Samuel 2 and who here gives the child she prayed for to Eli. Victors&rsquo;s Dutch dress and room are his own; the chapter does not name Hannah, and Paul takes the barren woman of verse 1 as Jerusalem above (Galatians 4:26&ndash;27), not as any one mother.',
+    note_es='Isaías 54:1. La estéril a quien se manda cantar tiene su imagen en Ana, cuyo cántico está en 1 Samuel 2 y que aquí entrega a Elí el niño por el que oró. El traje y el cuarto holandeses de Victors son suyos; el capítulo no nombra a Ana, y Pablo toma a la estéril del versículo 1 como la Jerusalén de arriba (Gálatas 4:26&ndash;27), no como una madre concreta.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Hannah_VICTORS,_Jan.jpg')]
+
