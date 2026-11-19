@@ -61336,3 +61336,116 @@ CHAPTER_ART["psalms32"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Small_Horse,_1505,_NGA_6676.jpg')]
 
+
+
+# Appended to library_data.py for Daniel 9 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shavua', 'shavua', 'שָׁבוּעַ', 'shavu&rsquo;im', 'A SEVEN, A WEEK &mdash; a period made of seven: <span data-heb="שבעים שבעים נחתך">&lsquo;sevens, seventy, are cut off&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages), the plural <em>shavu&rsquo;im</em> then used for &lsquo;seven sevens&rsquo; and &lsquo;sixty-two sevens&rsquo; at verse 25 and &lsquo;one seven&rsquo; at verse 27. &#9888; The shelf prints &lsquo;weeks&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>) and &lsquo;sevens&rsquo; (<span class="tag t-niv">NIV</span>).', ('Daniel', 9, 24)))
+DICTIONARY.append(('chatak', 'chatak', 'חָתַךְ', 'nechtak', 'TO CUT OFF, TO DECREE &mdash; a rare verb for cutting a portion off: <span data-heb="שבעים שבעים נחתך">&lsquo;sevens, seventy, are cut off&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages). &#9888; The shelf prints &lsquo;determined&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;decreed&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;shortened&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 9, 24)))
+DICTIONARY.append(('chalah', 'chalah', 'חָלָה', 'chilinu', 'TO SOFTEN THE FACE &mdash; to entreat, to make gentle the face of another: <span data-heb="ולא חלינו את פני יהוה אלהינו">&lsquo;and we have not softened the face of Jehovah our God&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-13">Daniel 9:13</a> (now on these pages). &#9888; The shelf prints &lsquo;softened the face&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;made our prayer before&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;sought the favor&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;entreated not thy face&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 9, 13)))
+DICTIONARY.append(('shaqad', 'shaqad', 'שָׁקַד', 'vayyishqod', 'TO WATCH, TO KEEP AWAKE &mdash; the verb of the almond rod at <a href="jeremiah-1.html#v12">Jeremiah 1:12</a> (now on these pages): <span data-heb="וישקד יהוה על הרעה">&lsquo;and Jehovah watched over the evil&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-14">Daniel 9:14</a> (now on these pages). &#9888; The shelf prints &lsquo;watched&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;did not hesitate&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;kept alert&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Daniel', 9, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shavua'] = ('shavu&rsquo;im', 'UN SIETE, UNA SEMANA &mdash; un período hecho de siete: <span data-heb="שבעים שבעים נחתך">&laquo;sietes, setenta, están cortados&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas), el plural <em>shavu&rsquo;im</em> usado luego para «siete sietes» y «sesenta y dos sietes» en el versículo 25 y «un siete» en el 27. &#9888; El estante imprime &laquo;semanas&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chatak'] = ('nechtak', 'CORTAR, DECRETAR &mdash; un verbo raro para cortar una porción: <span data-heb="שבעים שבעים נחתך">&laquo;sietes, setenta, están cortados&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas). &#9888; El estante imprime &laquo;determinadas&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;decretadas&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['chalah'] = ('chilinu', 'ABLANDAR EL ROSTRO &mdash; implorar, hacer suave el rostro de otro: <span data-heb="ולא חלינו את פני יהוה אלהינו">&laquo;y no hemos ablandado el rostro de Jehová nuestro Dios&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-13">Daniel 9:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;ablandado el rostro&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;implorado el favor&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;buscado tu favor&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['shaqad'] = ('vayyishqod', 'VELAR, ESTAR DESPIERTO &mdash; el verbo de la vara de almendro de <a href="jeremiah-1.es.html#v12">Jeremías 1:12</a> (ya en estas páginas): <span data-heb="וישקד יהוה על הרעה">&laquo;y Jehová veló sobre el mal&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-14">Daniel 9:14</a> (ya en estas páginas). &#9888; El estante imprime &laquo;veló&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;no dudó&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;se mantuvo alerta&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-25">Daniel 9:25</a> and <a href="daniel-9.html#v9-26">verse 26</a> (now on these pages) have it twice, without the article: <span data-heb="משיח נגיד">&lsquo;an anointed one, a leader&rsquo;, which stands in this one verse</span>, and <span data-heb="יכרת משיח ואין לו">&lsquo;an anointed one shall be cut off, and have nothing&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mashiach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashiach']
+    DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-25">Daniel 9:25</a> y <a href="daniel-9.es.html#v9-26">el versículo 26</a> (ya en estas páginas) lo tienen dos veces, sin artículo: <span data-heb="משיח נגיד">&laquo;un ungido, un caudillo&raquo;, que está en este único versículo</span>, y <span data-heb="יכרת משיח ואין לו">&laquo;un ungido será cortado, y no tendrá nada&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nagid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-25">Daniel 9:25</a> (now on these pages) has <span data-heb="משיח נגיד">&lsquo;an anointed one, a leader&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nagid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nagid']
+    DICTIONARY_ES['nagid'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-25">Daniel 9:25</a> (ya en estas páginas) tiene <span data-heb="משיח נגיד">&laquo;un ungido, un caudillo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shiqquts':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-27">Daniel 9:27</a> (now on these pages) has <span data-heb="ועל כנף שקוצים משמם">&lsquo;on the wing of abominations one who makes desolate&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shiqquts' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shiqquts']
+    DICTIONARY_ES['shiqquts'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-27">Daniel 9:27</a> (ya en estas páginas) tiene <span data-heb="ועל כנף שקוצים משמם">&laquo;sobre el ala de las abominaciones uno que desola&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a> (now on these pages) has <span data-heb="בצום ושק ואפר">&lsquo;with fasting and sackcloth and ashes&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a> (ya en estas páginas) tiene <span data-heb="בצום ושק ואפר">&laquo;con ayuno y cilicio y ceniza&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a> (now on these pages) has the fast beside sackcloth and ashes.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a> (ya en estas páginas) tiene el ayuno junto al cilicio y la ceniza.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tachanun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a>, <a href="daniel-9.html#v9-17">verse 17</a> and <a href="daniel-9.html#v9-18">verse 18</a> (now on these pages) have the pleadings of Daniel&rsquo;s prayer.',) + _t[5:]
+if 'tachanun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tachanun']
+    DICTIONARY_ES['tachanun'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a>, <a href="daniel-9.es.html#v9-17">el versículo 17</a> y <a href="daniel-9.es.html#v9-18">el versículo 18</a> (ya en estas páginas) tienen los ruegos de la oración de Daniel.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rachamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-9">Daniel 9:9</a> (now on these pages) has <span data-heb="הרחמים והסלחות">&lsquo;the compassions and the forgivenesses&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rachamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rachamim']
+    DICTIONARY_ES['rachamim'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-9">Daniel 9:9</a> (ya en estas páginas) tiene <span data-heb="הרחמים והסלחות">&laquo;las compasiones y los perdones&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'selichah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-9">Daniel 9:9</a> (now on these pages) has the plural beside the compassions: <span data-heb="הרחמים והסלחות">&lsquo;the compassions and the forgivenesses&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'selichah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selichah']
+    DICTIONARY_ES['selichah'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-9">Daniel 9:9</a> (ya en estas páginas) tiene el plural junto a las compasiones: <span data-heb="הרחמים והסלחות">&laquo;las compasiones y los perdones&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaphar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages) has <span data-heb="ולכפר עון">&lsquo;and to cover iniquity&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kaphar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaphar']
+    DICTIONARY_ES['kaphar'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas) tiene <span data-heb="ולכפר עון">&laquo;y cubrir la iniquidad&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-4">Daniel 9:4</a> (now on these pages) has <span data-heb="שמר הברית והחסד">&lsquo;keeping the covenant and the steadfast love&rsquo;, which stands in four verses</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-4">Daniel 9:4</a> (ya en estas páginas) tiene <span data-heb="שמר הברית והחסד">&laquo;guardando el pacto y la misericordia&raquo;, que está en cuatro versículos</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Daniel', 9, 2), ('Jeremiah', 25, 11), 'seventy years — the number Daniel finds in the books'),
+    (('Daniel', 9, 2), ('Jeremiah', 29, 10), 'seventy years — the word to the exiles'),
+    (('Daniel', 9, 4), ('Deuteronomy', 7, 9), 'keeping the covenant and the steadfast love'),
+    (('Daniel', 9, 4), ('1 Kings', 8, 23), "keeping the covenant and the steadfast love — Solomon's words"),
+    (('Daniel', 9, 9), ('Exodus', 34, 9), 'pardon — the compassions and the forgivenesses'),
+    (('Daniel', 9, 11), ('Deuteronomy', 28, 15), 'the curse and the oath that is written'),
+    (('Daniel', 9, 11), ('Leviticus', 26, 14), 'the curse and the oath that is written'),
+    (('Daniel', 9, 14), ('Jeremiah', 1, 12), 'Jehovah watched — the verb of the almond rod'),
+    (('Daniel', 9, 17), ('Numbers', 6, 25), 'make your face shine'),
+    (('Daniel', 9, 27), ('Daniel', 11, 31), 'the abomination that desolates'),
+    (('Daniel', 9, 27), ('Daniel', 12, 11), 'the abomination that desolates'),
+    (('Daniel', 9, 27), ('Matthew', 24, 15), 'the abomination that desolates — Daniel the prophet'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["dan9"] = dict(era='exile',
+    when='In the first year of Darius the Mede, Daniel reads in the books the seventy years of Jeremiah and sets his face to pray: a confession in the plural, we have sinned, to the God who keeps the covenant and the steadfast love; the curse written in the law of Moses poured out; and now, hear, forgive, listen and act, for your name is called on your city. While he is still speaking Gabriel comes with understanding, and a word of seventy sevens for his people and holy city: six things to be done, a word to restore and rebuild, an anointed one cut off, the city and sanctuary destroyed, a covenant made strong for the many, and sacrifice made to cease.',
+    clock='The first year of Darius son of Ahasuerus, of the seed of the Medes, who was made king over the kingdom of the Chaldeans. The prayer is dated by the evening offering (verse 21). &#9888; The sevens are not dated in the chapter, and this page does not date them.')
+
+CHAPTER_ART["dan9"] = [dict(
+    file='daniel-prayer-angel-gabriel-1886.jpg',
+    title='Daniel&rsquo;s Prayer and the Angel Gabriel', title_es='La oración de Daniel y el ángel Gabriel',
+    artist='Unknown engraver', artist_es='Grabador desconocido',
+    year='1886', location='Wood engraving, published 1886', location_es='Grabado en madera, publicado en 1886',
+    alt='A black-and-white wood engraving. A bearded man in a heavy robe kneels on a stone ledge at the lower left, his face lifted and his palms opened, one hand lower than the other. Above him on the right a winged young figure with a star on the brow and a star-tipped staff flies in from the sky and reaches out one hand to touch him on the shoulder; clouds and a dark hill fill the background.',
+    alt_es='Un grabado en madera en blanco y negro. Un hombre barbado con un manto pesado está arrodillado sobre un borde de piedra abajo a la izquierda, con el rostro levantado y las palmas abiertas, una mano más baja que la otra. Encima de él, a la derecha, una figura joven alada con una estrella en la frente y un báculo rematado en estrella vuela desde el cielo y extiende una mano para tocarlo en el hombro; nubes y un monte oscuro llenan el fondo.',
+    note='Daniel 9:21. An unnamed engraver&rsquo;s picture of the moment the verse describes: Gabriel, in swift flight, touching Daniel while he is still in prayer. The engraving is of the 19th century, and the star-crowned angel is the artist&rsquo;s invention; the text gives no description of Gabriel beyond a man in flight.',
+    note_es='Daniel 9:21. La imagen de un grabador sin nombre del momento que describe el versículo: Gabriel, en vuelo veloz, tocando a Daniel mientras aún está en oración. El grabado es del siglo XIX, y el ángel con corona de estrella es invención del artista; el texto no describe a Gabriel más que como un varón en vuelo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Daniel%27s_Prayer_and_the_Angel_Gabriel.tif')]
+
