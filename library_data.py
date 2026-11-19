@@ -62230,3 +62230,100 @@ CHAPTER_ART["zephaniah3"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Zephaniah_from_Yaroslavl_(18_c,_priv.coll).jpg')]
 
+
+
+# Appended to library_data.py for 1 Chronicles 4 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('etsev', 'etsev / otsev', 'עֶצֶב', 'etsev', 'PAIN, grief, toil: the word of the first labor, and the one under Jabez&rsquo;s name. <span data-heb="בעצב">The consonants stand in four verses of the Hebrew Bible</span>: <a href="genesis-3.html#v3-16">Genesis 3:16</a>, &lsquo;in pain you will bring forth children&rsquo; (now on these pages), 3:17 (as <em>itsavon</em>), <a href="1-chronicles-4.html#v4-9">1 Chronicles 4:9</a> (now on these pages), &lsquo;Because I bore him in pain&rsquo;, and Proverbs 15:13 (not yet on these pages). The same root ends Jabez&rsquo;s prayer, <span data-heb="לבלתי עצבי">&lsquo;that it may not pain me&rsquo;, which stands in this one verse</span> (<a href="1-chronicles-4.html#v4-10">1 Chronicles 4:10</a>). &#9888; The shelf prints &lsquo;sorrow&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>), &lsquo;pain&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;sorrow&rsquo; for the second (<span class="tag t-asv">ASV</span> &lsquo;that it be not to my sorrow&rsquo;).', ('1 Chronicles', 4, 9)))
+DICTIONARY.append(('meunim', 'Meunim', 'הַמְּעוּנִים', 'ha-me&rsquo;unim', 'THE MEUNIM, the Meunites, a people of the south; the name is also that of Maon, a place. <span data-heb="המעונים">&lsquo;The Meunim&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages), where the Simeonites strike them and devote them to destruction in the days of Hezekiah, and 2 Chronicles 26:7 (not yet on these pages). The verse has a ketiv/qere pair: written <em>ha-me&rsquo;inim</em>, read <em>ha-me&rsquo;unim</em>. &#9888; The shelf prints &lsquo;the habitations&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the Meunim&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the Meunites&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the inhabitants&rsquo; (<span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>).', ('1 Chronicles', 4, 41)))
+DICTIONARY.append(('yehudiyah', 'ha-Yehudiyyah', 'הַיְּהֻדִיָּה', 'ha-Yehudiyyah', 'THE JUDAHITE WOMAN, a woman of Judah; the word is the feminine of &lsquo;Judahite&rsquo;, the article included. <span data-heb="היהדיה">It stands in this one verse of the Hebrew Bible</span>, <a href="1-chronicles-4.html#v4-18">1 Chronicles 4:18</a> (now on these pages), of Mered&rsquo;s wife who bore Jered, Heber and Jekuthiel, alongside Bithiah the daughter of Pharaoh. &#9888; The shelf prints it as a name, &lsquo;Jehudijah&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Judaia&rsquo; (<span class="tag t-drb">Douay</span>), and as a description, &lsquo;his wife from the tribe of Judah&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;his Jewish wife&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('1 Chronicles', 4, 18)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['etsev'] = ('etsev', 'DOLOR, pena, fatiga: la palabra del primer parto, y la que está bajo el nombre de Jabez. <span data-heb="בעצב">Las consonantes están en cuatro versículos de la Biblia hebrea</span>: <a href="genesis-3.es.html#v3-16">Génesis 3:16</a>, «con dolor darás a luz los hijos» (ya en estas páginas), 3:17 (como <em>itsavon</em>), <a href="1-chronicles-4.es.html#v4-9">1 Crónicas 4:9</a> (ya en estas páginas), «Porque lo di a luz con dolor», y Proverbios 15:13 (todavía no en estas páginas). La misma raíz termina la oración de Jabez, <span data-heb="לבלתי עצבי">«para que no me cause dolor», que está en este único versículo</span> (<a href="1-chronicles-4.es.html#v4-10">1 Crónicas 4:10</a>). &#9888; El estante imprime «en dolor» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «con aflicción» (<span class="tag t-nvi">NVI</span>) y «con dolor» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['meunim'] = ('meunim', 'LOS MEUNIM, los meunitas, un pueblo del sur; el nombre es también el de Maón, un lugar. <span data-heb="המעונים">«Los meunim» está en dos versículos de la Biblia hebrea</span>: <a href="1-chronicles-4.es.html#v4-41">1 Crónicas 4:41</a> (ya en estas páginas), donde los simeonitas los golpean y los consagran a la destrucción en los días de Ezequías, y 2 Crónicas 26:7 (todavía no en estas páginas). El versículo tiene un par ketiv/qere: escrito <em>ha-me&rsquo;inim</em>, leído <em>ha-me&rsquo;unim</em>. &#9888; El estante imprime «estancias» (<span class="tag t-rv">RV&nbsp;1909</span>), «cabañas» (<span class="tag t-rv60">RV60</span>), «los meunitas» (<span class="tag t-nvi">NVI</span>) y «los meunim» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['yehudiyah'] = ('yehudiyah', 'LA MUJER JUDÍA, una mujer de Judá; la palabra es el femenino de «judío», con el artículo. <span data-heb="היהדיה">Está en este único versículo de la Biblia hebrea</span>, <a href="1-chronicles-4.es.html#v4-18">1 Crónicas 4:18</a> (ya en estas páginas), de la mujer de Mered que dio a luz a Jered, Heber y Jecutiel, junto a Bitía hija del faraón. &#9888; El estante la imprime como nombre, «Judaía» (<span class="tag t-rv">RV&nbsp;1909</span>) y «Jehudaía» (<span class="tag t-rv60">RV60</span>), y como descripción, «era de la tribu de Judá» (<span class="tag t-nvi">NVI</span>) y «su esposa judía» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-7">1 Chronicles 4:7</a> (now on these pages) has three pairs in one chapter: verse 7 written <em>Yitshar</em> and read <em>Tsochar</em>, verse 20 written <em>Tolon</em> and read <em>Tilon</em>, and verse 41 written <em>ha-me&rsquo;inim</em> and read <em>ha-me&rsquo;unim</em>.',) + _t[5:]
+    if _t[0] == 'baal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-22">1 Chronicles 4:22</a> (now on these pages): <span data-heb="אשר בעלו למואב">&lsquo;who were lords in Moab&rsquo; stands in this one verse</span>, a verb that is read as ruling or as marrying.',) + _t[5:]
+    if _t[0] == 'cherem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages): <span data-heb="ויחרימם עד היום הזה">&lsquo;and devoted them to destruction until this day&rsquo; stands in this one verse</span>, of the Meunim struck in the days of Hezekiah.',) + _t[5:]
+    if _t[0] == 'gevul':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-10">1 Chronicles 4:10</a> (now on these pages): <span data-heb="והרבית את גבולי">&lsquo;and enlarge my border&rsquo; stands in this one verse</span>, in the prayer of Jabez.',) + _t[5:]
+    if _t[0] == 'yatsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-23">1 Chronicles 4:23</a> (now on these pages): <span data-heb="היוצרים">&lsquo;the potters&rsquo; stands in this one verse</span>, who dwelt with the king in his work.',) + _t[5:]
+    if _t[0] == 'efrat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-4">1 Chronicles 4:4</a> (now on these pages): <span data-heb="בכור אפרתה">&lsquo;the firstborn of Ephrathah&rsquo; stands in two verses</span>, 2:50 and here, and Hur is the father of Bethlehem.',) + _t[5:]
+    if _t[0] == 'itsavon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-9">1 Chronicles 4:9</a> (now on these pages) has <em>be&rsquo;otsev</em>, &lsquo;in pain&rsquo;, in the name of Jabez; the same root closes his prayer at verse 10.',) + _t[5:]
+    if _t[0] == 'maon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages) has <em>ha-me&rsquo;unim</em>, the Meunim, struck and devoted to destruction in the days of Hezekiah.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-7">1 Crónicas 4:7</a> (ya en estas páginas) tiene tres pares en un capítulo: el versículo 7 escrito <em>Yitshar</em> y leído <em>Tsochar</em>, el versículo 20 escrito <em>Tolon</em> y leído <em>Tilon</em>, y el versículo 41 escrito <em>ha-me&rsquo;inim</em> y leído <em>ha-me&rsquo;unim</em>.')
+if 'baal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['baal']
+    DICTIONARY_ES['baal'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-22">1 Crónicas 4:22</a> (ya en estas páginas): <span data-heb="אשר בעלו למואב">«que fueron señores en Moab» está en este único versículo</span>, un verbo que se lee como gobernar o como casarse.')
+if 'cherem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['cherem']
+    DICTIONARY_ES['cherem'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-41">1 Crónicas 4:41</a> (ya en estas páginas): <span data-heb="ויחרימם עד היום הזה">«y los consagraron a la destrucción hasta este día» está en este único versículo</span>, de los meunim golpeados en los días de Ezequías.')
+if 'gevul' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gevul']
+    DICTIONARY_ES['gevul'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-10">1 Crónicas 4:10</a> (ya en estas páginas): <span data-heb="והרבית את גבולי">«y ensanchas mi territorio» está en este único versículo</span>, en la oración de Jabez.')
+if 'yatsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yatsar']
+    DICTIONARY_ES['yatsar'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-23">1 Crónicas 4:23</a> (ya en estas páginas): <span data-heb="היוצרים">«los alfareros» está en este único versículo</span>, que habitaban con el rey en su obra.')
+if 'efrat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efrat']
+    DICTIONARY_ES['efrat'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-4">1 Crónicas 4:4</a> (ya en estas páginas): <span data-heb="בכור אפרתה">«el primogénito de Efrata» está en dos versículos</span>, 2:50 y este, y Hur es el padre de Belén.')
+if 'itsavon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['itsavon']
+    DICTIONARY_ES['itsavon'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-9">1 Crónicas 4:9</a> (ya en estas páginas) tiene <em>be&rsquo;otsev</em>, «con dolor», en el nombre de Jabez; la misma raíz cierra su oración en el versículo 10.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('1 Chronicles', 4, 4), ('Micah', 5, 1), 'Ephrathah, the father of Bethlehem'),
+    (('1 Chronicles', 4, 4), ('Genesis', 35, 19), 'Ephrath, that is Bethlehem'),
+    (('1 Chronicles', 4, 1), ('Genesis', 46, 12), 'the sons of Judah — Perez, and Hezron his son'),
+    (('1 Chronicles', 4, 5), ('Amos', 1, 1), 'Tekoa'),
+    (('1 Chronicles', 4, 9), ('Genesis', 3, 16), 'in pain — the word of the first labor'),
+    (('1 Chronicles', 4, 13), ('Joshua', 15, 17), 'Othniel the son of Kenaz'),
+    (('1 Chronicles', 4, 18), ('Exodus', 2, 5), 'the daughter of Pharaoh'),
+    (('1 Chronicles', 4, 22), ('Ruth', 1, 1), 'Moab, and Lehem — a Bethlehem family'),
+    (('1 Chronicles', 4, 23), ('Jeremiah', 18, 2), 'the potters'),
+    (('1 Chronicles', 4, 27), ('Genesis', 49, 7), 'Simeon divided and scattered'),
+    (('1 Chronicles', 4, 27), ('Joshua', 19, 1), 'Simeon in the midst of Judah'),
+    (('1 Chronicles', 4, 28), ('Joshua', 19, 2), 'the cities of Simeon'),
+    (('1 Chronicles', 4, 30), ('1 Samuel', 27, 6), 'Ziklag'),
+    (('1 Chronicles', 4, 38), ('Genesis', 30, 30), 'broke out in multitude'),
+    (('1 Chronicles', 4, 40), ('Genesis', 34, 21), 'wide of hands'),
+    (('1 Chronicles', 4, 40), ('Judges', 18, 7), 'quiet and at ease'),
+    (('1 Chronicles', 4, 40), ('Genesis', 10, 6), 'from Ham'),
+    (('1 Chronicles', 4, 42), ('Genesis', 36, 8), 'Mount Seir'),
+    (('1 Chronicles', 4, 43), ('Exodus', 17, 14), 'the remnant of Amalek'),
+    (('1 Chronicles', 4, 43), ('Deuteronomy', 25, 19), 'blot out the remembrance of Amalek'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["1chr4"] = dict(era='return',
+    when='The sons of Judah, Hur the firstborn of Ephrathah and father of Bethlehem, Ashhur and his two wives; Jabez, more honored than his brothers, named by his mother for pain, who calls on the God of Israel in a prayer of four requests that ends on the same word, and God brings what he asked; Chelub, Kenaz, Caleb, Mered with Bithiah daughter of Pharaoh, the potters who dwelt with the king; the sons of Simeon, Shimei with his sixteen sons, the cities until David reigned; and, in the days of Hezekiah, the princes of Simeon who find wide, quiet pasture at Gedor, strike the Hamites and the Meunim, and settle on Mount Seir after the remnant of Amalek.',
+    clock='Filed under the return from exile as a Chronicler&rsquo;s text, with a genealogy that reaches back to the patriarchs and forward to the days of Hezekiah (verse 41, c. 715&ndash;686 BC). &#9888; The chapter says its own records are ancient (verse 22) and that its settlement lasted &lsquo;until this day&rsquo; (verses 41 and 43), which is the Chronicler&rsquo;s day, not Hezekiah&rsquo;s.')
+
+CHAPTER_ART["1chr4"] = [dict(
+    file='roberts-hebron-1839.jpg',
+    title='Hebron, March 18th 1839', title_es='Hebrón, 18 de marzo de 1839',
+    artist='David Roberts', artist_es='David Roberts',
+    year='1839', location='The Holy Land, tinted lithograph (Cleveland Museum of Art)', location_es='Tierra Santa, litografía tintada (Cleveland Museum of Art)',
+    alt='A wide tinted lithograph of a hill town in a broad valley. Pale flat-roofed stone houses climb the slopes around a large walled building with two slender towers on the right; a long hill rises behind, with more buildings on a ridge at the left. A track runs from the lower left toward the town, with a few riders on it; in the foreground travelers with white bundles and saddle gear rest on a sloping bank under a rocky hillside, and clumps of trees stand in the valley.',
+    alt_es='Una amplia litografía tintada de un pueblo en una colina dentro de un valle ancho. Casas de piedra claras y de techo plano suben por las laderas alrededor de un gran edificio amurallado con dos torres delgadas a la derecha; una larga colina se alza detr&aacute;s, con m&aacute;s edificios sobre una cresta a la izquierda. Un camino va desde abajo a la izquierda hacia el pueblo, con unos jinetes; en primer plano unos viajeros con fardos blancos y aparejos descansan en un talud bajo una ladera rocosa, y grupos de &aacute;rboles se alzan en el valle.',
+    note='1 Chronicles 4:40. Hebron is not named in this chapter; it is the town Caleb received (Joshua 14:13), and the chapter is full of Caleb&rsquo;s and Judah&rsquo;s clans. Roberts drew it from the road, with a wide valley and a quiet hill country around it, which is the nearest this note can come to &lsquo;wide of hands, and quiet and at ease&rsquo; of the Simeonites&rsquo; pasture at Gedor. The town, the mosque with its towers (a later building) and the travelers are Roberts&rsquo;s, from his journey of 1839.',
+    note_es='1 Cr&oacute;nicas 4:40. Hebr&oacute;n no se nombra en este cap&iacute;tulo; es el pueblo que recibi&oacute; Caleb (Josu&eacute; 14:13), y el cap&iacute;tulo est&aacute; lleno de los clanes de Caleb y de Jud&aacute;. Roberts lo dibuj&oacute; desde el camino, con un valle ancho y una sierra tranquila alrededor, que es lo m&aacute;s cerca que esta nota puede llegar a &laquo;ancha de manos, y quieta y tranquila&raquo; del pasto de los simeonitas en Gedor. El pueblo, la mezquita con sus torres (un edificio posterior) y los viajeros son de Roberts, de su viaje de 1839.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:David_Roberts_-_Hebron_-_1927.140_-_Cleveland_Museum_of_Art.jpg')]
+
