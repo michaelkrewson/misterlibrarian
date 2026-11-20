@@ -63008,3 +63008,98 @@ CHAPTER_ART["jer17"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:123.Baruch_Writes_Jeremiah%27s_Prophecies.jpg')]
 
+
+
+# Appended to library_data.py for Jeremiah 33 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('arukhah', 'arukhah', 'אֲרֻכָה', 'arukhah', 'THE NEW FLESH that grows over a wound, a closing-up, healing &mdash; from <em>arakh</em>, to be long, to lengthen: the skin is drawn out over the place that was torn. <span data-heb="מעלה לה ארכה ומרפא">&lsquo;bringing up for her health and healing&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-6">Jeremiah 33:6</a> (now on these pages), said of Jerusalem. &#9888; The shelf prints &lsquo;health&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;a recuperation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, for the whole clause, &lsquo;I will close their wounds&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 6)))
+DICTIONARY.append(('atteret', 'atteret', 'עֲתֶרֶת', '&lsquo;atteret', 'ABUNDANCE, a thick plenty &mdash; a rare word, from the same letters as <em>&lsquo;atar</em>, to be abundant (and, in another form, to entreat). <span data-heb="עתרת שלום ואמת">&lsquo;an abundance of peace and truth&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-6">Jeremiah 33:6</a> (now on these pages). &#9888; The shelf prints &lsquo;abundance&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;abundant&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;prayer&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 6)))
+DICTIONARY.append(('betsurot', 'betsurot', 'בְּצֻרוֹת', 'betsurot', 'FORTIFIED, INACCESSIBLE THINGS &mdash; from <em>batsar</em>, to cut off, to fortify, the root of <em>mivtsar</em>, a fortified city. <span data-heb="גדלות ובצרות">&lsquo;great and inaccessible things&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-3">Jeremiah 33:3</a> (now on these pages), where Jehovah promises to tell a man shut up in a prison yard things walled off from him. &#9888; The shelf prints &lsquo;mighty&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;difficult&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;unsearchable&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;incomprehensible&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;sure&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['arukhah'] = ('arukhah', 'LA CARNE NUEVA que crece sobre una herida, un cerrarse, sanidad &mdash; de <em>arakh</em>, alargarse: la piel se extiende sobre el lugar que estaba desgarrado. <span data-heb="מעלה לה ארכה ומרפא">«haciendo subir para ella sanidad y medicina» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-6">Jeremías 33:6</a> (ya en estas páginas), dicho de Jerusalén. &#9888; La estantería imprime «sanidad» (<span class="tag t-rv60">RV60</span>), «salud» (<span class="tag t-nvi">NVI</span>) y «un recobro» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['atteret'] = ('atteret', 'ABUNDANCIA, una plenitud espesa &mdash; una palabra rara, con las mismas letras que <em>&lsquo;atar</em>, abundar (y, en otra forma, suplicar). <span data-heb="עתרת שלום ואמת">«abundancia de paz y de verdad» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-6">Jeremías 33:6</a> (ya en estas páginas). &#9888; La estantería imprime «abundancia» (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y «abundante» (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['betsurot'] = ('betsurot', 'COSAS FORTIFICADAS, INACCESIBLES &mdash; de <em>batsar</em>, cortar, fortificar, la raíz de <em>mivtsar</em>, ciudad fortificada. <span data-heb="גדלות ובצרות">«cosas grandes e inaccesibles» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-3">Jeremías 33:3</a> (ya en estas páginas), donde Jehová promete decirle a un hombre encerrado en un patio de prisión cosas amuralladas para él. &#9888; La estantería imprime «dificultosas» (<span class="tag t-rv">RV&nbsp;1909</span>), «ocultas» (<span class="tag t-rv60">RV60</span>), «inaccesibles» (<span class="tag t-nvi">NVI</span>) e «incomprensibles» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsemach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-15">Jeremiah 33:15</a> (now on these pages): <span data-heb="צמח צדקה">&lsquo;a Branch of righteousness&rsquo; stands in this one verse</span>, the sibling of the &lsquo;righteous Branch&rsquo; of <a href="jeremiah-23.html#v23-5">Jeremiah 23:5</a>.',) + _t[5:]
+    if _t[0] == 'shevut':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-7">Jeremiah 33:7</a> (now on these pages): <span data-heb="והשבתי את שבות יהודה">&lsquo;and I will bring back the captivity of Judah&rsquo; stands in this one verse</span>, and the pledge returns at <a href="jeremiah-33.html#v33-11">33:11</a> and <a href="jeremiah-33.html#v33-26">33:26</a>.',) + _t[5:]
+    if _t[0] == 'todah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-11">Jeremiah 33:11</a> (now on these pages): <span data-heb="תודה בית יהוה">&lsquo;a thanksgiving offering to the house of Jehovah&rsquo; stands in two verses</span>, here and <a href="jeremiah-17.html#v17-26">Jeremiah 17:26</a>, a promise here and a condition there.',) + _t[5:]
+    if _t[0] == 'karat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-17">Jeremiah 33:17</a> (now on these pages): <span data-heb="לא יכרת לדוד איש">&lsquo;there will not be cut off for David a man&rsquo; stands in this one verse</span>, the verb of cutting a covenant said of a line that will not be cut.',) + _t[5:]
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-20">Jeremiah 33:20</a> (now on these pages): <span data-heb="בריתי היום ואת בריתי הלילה">&lsquo;my covenant of the day and my covenant of the night&rsquo; stands in this one verse</span>, the covenant that is set beside the covenant with David.',) + _t[5:]
+    if _t[0] == 'mishpachah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-24">Jeremiah 33:24</a> (now on these pages): <span data-heb="שתי המשפחות">&lsquo;the two families&rsquo; stands in this one verse</span>, and the Hebrew does not say which two.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-26">Jeremiah 33:26</a> (now on these pages): <span data-heb="כי אשוב אשיב את שבותם">&lsquo;for I will restore their captivity&rsquo; stands in this one verse</span>, written <em>ashuv</em>, &lsquo;I will return&rsquo;, and read <em>ashiv</em>, &lsquo;I will bring back&rsquo;.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-11">Jeremiah 33:11</a> (now on these pages): <span data-heb="כי לעולם חסדו">&lsquo;for his loyal love is forever&rsquo; stands in more than thirty verses</span>, among them <a href="psalms-118.html#v118-1">Psalm 118:1</a>; here it is sung at a wedding in a ruined city.',) + _t[5:]
+if 'tsemach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsemach']
+    DICTIONARY_ES['tsemach'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-15">Jeremías 33:15</a> (ya en estas páginas): <span data-heb="צמח צדקה">«un Renuevo de justicia» está en este único versículo</span>, el hermano del «Renuevo justo» de <a href="jeremiah-23.es.html#v23-5">Jeremías 23:5</a>.')
+if 'shevut' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevut']
+    DICTIONARY_ES['shevut'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-7">Jeremías 33:7</a> (ya en estas páginas): <span data-heb="והשבתי את שבות יהודה">«y haré volver la cautividad de Judá» está en este único versículo</span>, y la promesa vuelve en <a href="jeremiah-33.es.html#v33-11">33:11</a> y <a href="jeremiah-33.es.html#v33-26">33:26</a>.')
+if 'todah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['todah']
+    DICTIONARY_ES['todah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-11">Jeremías 33:11</a> (ya en estas páginas): <span data-heb="תודה בית יהוה">«una ofrenda de acción de gracias a la casa de Jehová» está en dos versículos</span>, este y <a href="jeremiah-17.es.html#v17-26">Jeremías 17:26</a>, una promesa aquí y una condición allí.')
+if 'karat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['karat']
+    DICTIONARY_ES['karat'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-17">Jeremías 33:17</a> (ya en estas páginas): <span data-heb="לא יכרת לדוד איש">«no será cortado a David un hombre» está en este único versículo</span>, el verbo de cortar un pacto dicho de una línea que no será cortada.')
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-20">Jeremías 33:20</a> (ya en estas páginas): <span data-heb="בריתי היום ואת בריתי הלילה">«mi pacto del día y mi pacto de la noche» está en este único versículo</span>, el pacto que se pone junto al pacto con David.')
+if 'mishpachah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mishpachah']
+    DICTIONARY_ES['mishpachah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-24">Jeremías 33:24</a> (ya en estas páginas): <span data-heb="שתי המשפחות">«las dos familias» está en este único versículo</span>, y el hebreo no dice cuáles dos.')
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-26">Jeremías 33:26</a> (ya en estas páginas): <span data-heb="כי אשוב אשיב את שבותם">«porque haré volver a sus cautivos» está en este único versículo</span>, escrito <em>ashuv</em>, «volveré», y leído <em>ashiv</em>, «haré volver».')
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-11">Jeremías 33:11</a> (ya en estas páginas): <span data-heb="כי לעולם חסדו">«porque para siempre es su amor leal» está en más de treinta versículos</span>, entre ellos <a href="psalms-118.es.html#v118-1">Salmo 118:1</a>; aquí se canta en una boda en una ciudad en ruinas.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Jeremiah', 33, 3), ('Psalms', 91, 15), 'he will call me and I will answer him'),
+    (('Jeremiah', 33, 3), ('Jeremiah', 29, 12), 'call upon me'),
+    (('Jeremiah', 33, 11), ('Jeremiah', 25, 10), 'the voice of the bridegroom and the voice of the bride'),
+    (('Jeremiah', 33, 11), ('Psalms', 118, 1), 'give thanks, for he is good'),
+    (('Jeremiah', 33, 11), ('Jeremiah', 17, 26), 'a thanksgiving offering to the house of Jehovah'),
+    (('Jeremiah', 33, 12), ('Psalms', 23, 2), 'makes them lie down'),
+    (('Jeremiah', 33, 13), ('Leviticus', 27, 32), 'passing under the hand that counts'),
+    (('Jeremiah', 33, 15), ('Jeremiah', 23, 5), 'a righteous Branch'),
+    (('Jeremiah', 33, 15), ('Zechariah', 3, 8), 'my servant the Branch'),
+    (('Jeremiah', 33, 16), ('Jeremiah', 23, 6), 'Jehovah Is Our Righteousness'),
+    (('Jeremiah', 33, 17), ('1 Kings', 8, 25), 'not cut off a man to sit on the throne'),
+    (('Jeremiah', 33, 17), ('2 Samuel', 7, 16), 'your throne will be established forever'),
+    (('Jeremiah', 33, 20), ('Genesis', 8, 22), 'day and night shall not cease'),
+    (('Jeremiah', 33, 22), ('Genesis', 22, 17), 'stars of the heavens and sand on the seashore'),
+    (('Jeremiah', 33, 22), ('Genesis', 15, 5), 'count the stars'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["jer33"] = dict(era='exile',
+    when='A second word to Jeremiah while he was still shut up in the courtyard of the guard, in the siege of Jerusalem: call to me and I will answer you, and I will tell you great and inaccessible things; the houses torn down for the siege and the city\'s dead; health and healing, the captivity of Judah and Israel brought back, the iniquity cleansed; the voices of the bridegroom and the bride heard again in the desolate cities, and shepherds with flocks passing under the counter\'s hand; the Branch of righteousness for David and the name Jehovah Is Our Righteousness; a man for David and for the Levites as long as day and night keep their covenant, the seed multiplied like the stars and the sand; and an answer to those who say that the two families were rejected.',
+    clock='Headed &lsquo;a second time, while he was still shut up in the courtyard of the guard&rsquo;, in the siege of chapter 32, whose date is the tenth year of Zedekiah. &#9888; Verses 14&ndash;26 are not in the Greek Jeremiah, and the shelf does not say when they were added.')
+
+CHAPTER_ART["jer33"] = [dict(
+    file='dore-001-creation-of-light.jpg',
+    title='The Creation of Light', title_es='La creaci&oacute;n de la luz',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating Genesis 1:3)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra G&eacute;nesis 1:3)',
+    alt='A black-and-white engraving of a heavy sky. At the upper left a burst of white light fans out in long straight rays from the edge of a dark mass of cloud at the centre, and the rays cross banks of billowing cloud. Below, a dim flat expanse of water and a dark shoreline lie in shadow under the sky.',
+    alt_es='Un grabado en blanco y negro de un cielo cargado. Arriba a la izquierda un estallido de luz blanca se abre en largos rayos rectos desde el borde de una masa oscura de nubes en el centro, y los rayos atraviesan bancos de nubes hinchadas. Abajo, una extensi&oacute;n plana y tenue de agua y una costa oscura quedan en sombra bajo el cielo.',
+    note='Jeremiah 33:20. The chapter argues from &lsquo;my covenant of the day and my covenant of the night&rsquo;, that day and night will come in their time as long as David has a son. Dor&eacute; draws the first day of Genesis 1:3, light breaking out of cloud over water; the scene is not in this chapter, and the clouds and rays are the engraver&rsquo;s.',
+    note_es='Jerem&iacute;as 33:20. El cap&iacute;tulo argumenta desde &laquo;mi pacto del d&iacute;a y mi pacto de la noche&raquo;, que el d&iacute;a y la noche vendr&aacute;n a su tiempo mientras David tenga un hijo. Dor&eacute; dibuja el primer d&iacute;a de G&eacute;nesis 1:3, la luz que irrumpe de entre las nubes sobre el agua; la escena no est&aacute; en este cap&iacute;tulo, y las nubes y los rayos son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:001.The_Creation_of_Light.jpg')]
+
