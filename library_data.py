@@ -202,7 +202,7 @@ DICTIONARY = [
      "CONTINUAL, regular &mdash; not a sacrifice-word originally, but an ordinary adverb of unbroken repetition. <a href=\"numbers-28.html#v28-3\">Numbers 28:3</a> makes it the name of an institution: the <em>olat tamid</em>, the twice-daily lamb first commanded at Exodus 29:38-42 (already on these pages) and reaffirmed here, unchanged, a whole wilderness generation later. ⭐ The whole chapter is built on the word's own sense: every other occasion &mdash; sabbath, new moon, festival &mdash; is offered <em>besides</em> the tamid, never instead of it; the continual offering is the one thing this chapter never lets a reader forget is still running underneath everything else.",
      ("Numbers", 28, 3)),
     ("chodesh", "chodesh", "חֹדֶשׁ", "chodesh",
-     "NEW MOON, and by extension MONTH &mdash; the same word does both jobs, because the Hebrew calendar is lunar and a new month begins the moment the new moon is sighted. <a href=\"numbers-28.html#v28-11\">Numbers 28:11</a> calls it, literally, 'the head <em>[rosh]</em> of your months' &mdash; the ordinary modern term <em>rosh chodesh</em> is built directly from this verse's own vocabulary. ⭐ The root is <em>chadash</em>, 'new', which is also the beginning of <em>lev chadash</em>, 'a new heart' (Ezekiel 36:26, not yet on these pages) &mdash; the same word for a sky-object renewing itself monthly and for a heart renewed once.",
+     "NEW MOON, and by extension MONTH &mdash; the same word does both jobs, because the Hebrew calendar is lunar and a new month begins the moment the new moon is sighted. <a href=\"numbers-28.html#v28-11\">Numbers 28:11</a> calls it, literally, 'the head <em>[rosh]</em> of your months' &mdash; the ordinary modern term <em>rosh chodesh</em> is built directly from this verse's own vocabulary. ⭐ The root is <em>chadash</em>, 'new', which is also the beginning of <em>lev chadash</em>, 'a new heart' (<a href=\"ezekiel-36.html#v36-26\">Ezekiel 36:26</a>, now on these pages) &mdash; the same word for a sky-object renewing itself monthly and for a heart renewed once.",
      ("Numbers", 28, 11)),
     ("saraf", "saraf", "שָׂרָף", "saraf",
      "THE BURNING ONE &mdash; the creature Jehovah sends against Israel at <a href=\"numbers-21.html#v21-6\">Numbers 21:6</a>, and the being Isaiah sees standing above the throne. It is the ordinary root for burning used as a noun. ⚠ In the PLURAL it stands in exactly three verses of the Hebrew Bible: Numbers 21:6, where it is a snake, and Isaiah 6:2 and 6:6, where six-winged <em>seraphim</em> attend God and one of them carries a live coal to the prophet\u2019s mouth. Almost every version transliterates it in Isaiah and translates it in Numbers, so an English reader has no way to know they are the same word. Whether the burning is the bite (a viper\u2019s venom inflames) or the creature (a bright or fiery-looking snake; winged uraeus-serpents guard thrones throughout Egyptian royal art, and Isaiah\u2019s seraphim fly) is genuinely unsettled, and both readings are old. The singular also turns up as a modifier of <em>nachash</em> at Deuteronomy 8:15 and alone at Isaiah 14:29 and 30:6, where it flies. ⚠ Do not confuse it with the passive participle <em>saruf</em>, \u2018burned\u2019, which is spelled with the same consonants: <a href=\"numbers-17.html#v17-4\">Numbers 17:4</a> calls Korah\u2019s two hundred and fifty incinerated men <em>ha-serufim</em>, and a letter-search will return that verse alongside the real ones.",
@@ -4556,7 +4556,7 @@ DICTIONARY = [
      "SYROPHOENICIAN (feminine) &mdash; a live, ordinary first-century ethnic-geographic label for a Phoenician of the Roman province of Syria. &#9888; Matthew's account of this same encounter instead calls the woman a <a href=\"dictionary.html#chananaios\">Chananaia</a>, 'Canaanite' (15:22, already on these pages) &mdash; an Old Testament ethnonym a thousand years obsolete as everyday speech by this date. Mark's word is the one a first-century Gentile would actually have used of herself; Matthew's is a deliberate archaism reaching back to Israel's ancient enemy. Two Gospels, one woman, two words doing very different work.",
      ("Mark", 7, 26)),
     ("mogilalos", "mogilalos", "μογιλάλος", "mogilalos",
-     "SPEAKING WITH DIFFICULTY, having an impediment &mdash; built from mogis, 'hardly, with difficulty', and lalos, 'talking'. &#9888; It occurs exactly once in the whole New Testament, and its only other appearance anywhere in Greek Scripture is the Septuagint's own Isaiah 35:6, part of a prophecy of the messianic age: 'the tongue of the mogilalōn will speak plainly' (not yet on these pages). Mark reaches for this single rare word at exactly the healing that enacts it (7:32), without ever naming Isaiah &mdash; the vocabulary alone carries the claim.",
+     "SPEAKING WITH DIFFICULTY, having an impediment &mdash; built from mogis, 'hardly, with difficulty', and lalos, 'talking'. &#9888; It occurs exactly once in the whole New Testament, and its only other appearance anywhere in Greek Scripture is the Septuagint's own <a href=\"isaiah-35.html#v35-6\">Isaiah 35:6</a>, part of a prophecy of the messianic age: 'the tongue of the mogilalōn will speak plainly' (now on these pages). Mark reaches for this single rare word at exactly the healing that enacts it (7:32), without ever naming Isaiah &mdash; the vocabulary alone carries the claim.",
      ("Mark", 7, 32)),
     ("ephphatha", "Ephphatha", "Εφφαθα", "Ephphatha",
      "BE OPENED &mdash; Aramaic, transliterated directly into the Greek text and then translated for the reader, exactly as this Gospel already does with Boanerges (3:17), <a href=\"dictionary.html#talitha\">Talitha koum</a> (5:41) and Corban (7:11), and will do again at Gethsemane's 'Abba' (14:36) and the cross's 'Eloi, Eloi' (15:34) — the second of the four times, after Talitha koum, that Mark preserves the actual sound of Jesus's own spoken words before explaining what they meant, as though the original syllables themselves are part of what is being reported, not only their sense.",
@@ -4818,7 +4818,7 @@ DICTIONARY = [
     ('katasophizomai', 'katasophizomai', 'κατασοφίζομαι', 'katasophizomai', 'TO OUTWIT, TO DEAL CRAFTILY WITH &mdash; <em>kata</em>, &lsquo;against, down,&rsquo; plus <em>sophizō</em>, &lsquo;to make wise, to be clever&rsquo;: to get the better of someone by cunning. &#9888; It stands in one verse of the New Testament, <a href="acts-7.html#v7-19">Acts 7:19</a>, where the king &lsquo;outwitting our race&rsquo; afflicts the fathers; its source is the Greek of <a href="exodus-1.html#v10">Exodus 1:10</a> (<em>katasophisōmetha autous</em>), where this translation reads &lsquo;let us outwit them.&rsquo; Shelf at Acts 7:19: KJV &lsquo;dealt subtilly,&rsquo; Geneva &lsquo;dealt subtly,&rsquo; ASV &lsquo;dealt craftily,&rsquo; Douay &lsquo;dealing craftily,&rsquo; NIV &lsquo;dealt treacherously,&rsquo; NWT 1984 &lsquo;used statecraft against,&rsquo; TLB &lsquo;plotted against.&rsquo;', ('Acts', 7, 19)),
     ('ektheta', 'ekthetos', 'ἔκθετος', 'ekthetos', 'EXPOSED, PUT OUT &mdash; <em>ek</em>, &lsquo;out,&rsquo; plus <em>tithēmi</em>, &lsquo;to put&rsquo;: an infant put out in the open to die. &#9888; It stands in one verse of the New Testament, <a href="acts-7.html#v7-19">Acts 7:19</a>, where the king afflicts the fathers &lsquo;by making their infants be exposed, so that they would not be kept alive&rsquo;; the verb <em>ektithēmi</em> is the &lsquo;exposed&rsquo; of <a href="acts-7.html#v7-21">Acts 7:21</a>, said of the child Moses. What <a href="exodus-1.html#v16">Exodus 1:16 and 22</a> give is an order to kill the sons at birth and then to throw every son into the Nile; &lsquo;expose&rsquo; is Acts&rsquo;s own word for it. The purpose clause uses <em>zōogoneō</em>, &lsquo;to keep alive,&rsquo; which stands in three verses of the New Testament (<a href="luke-17.html#v17-33">Luke 17:33</a>, Acts 7:19 and 1 Timothy 6:13, not yet on these pages) and in the Greek of Exodus 1:17, 18 and 22. Shelf at Acts 7:19: KJV &lsquo;cast out their young children,&rsquo; ASV &lsquo;cast out their babes,&rsquo; Douay and NWT 1984 &lsquo;expose,&rsquo; NIV &lsquo;throw out their newborn babies,&rsquo; TLB &lsquo;abandon their children in the fields,&rsquo; which the Greek does not say.', ('Acts', 7, 19)),
     ('asteios', 'asteios', 'ἀστεῖος', 'asteios', 'WELL-FORMED, PRESENTABLE &mdash; literally &lsquo;of the town&rsquo; (<em>astu</em>): urbane, refined, and of a child, handsome. &#9888; It stands in two verses of the New Testament, both of the baby Moses and both from <a href="exodus-2.html#v2-2">Exodus 2:2</a>, where the Hebrew has <em>tov</em>, &lsquo;good,&rsquo; and the Greek <em>asteion</em>: <a href="acts-7.html#v7-20">Acts 7:20</a> and <a href="hebrews-11.html#v11-23">Hebrews 11:23</a>, which this translation reads &lsquo;well-formed&rsquo; and explains. In Acts the dative <em>tō theō</em>, &lsquo;to God,&rsquo; is read two ways on the shelf: as a superlative, NWT 1984 &lsquo;divinely beautiful&rsquo; and TLB &lsquo;a child of divine beauty,&rsquo; and as a verdict in God&rsquo;s sight, Douay &lsquo;acceptable to God&rsquo; and Geneva &lsquo;acceptable unto God&rsquo;; KJV and ASV &lsquo;exceeding fair,&rsquo; NIV &lsquo;no ordinary child.&rsquo; The &lsquo;town clerk&rsquo; of Acts 19:35 is a different word.', ('Acts', 7, 20)),
-    ('lytrotes', 'lytrōtēs', 'λυτρωτής', 'lytrōtēs', 'A REDEEMER &mdash; the noun of <em>lytroō</em>, &lsquo;to ransom, to redeem,&rsquo; from <em>lytron</em>, the ransom price. &#9888; It stands in one verse of the New Testament, <a href="acts-7.html#v7-35">Acts 7:35</a>, where God sends Moses &lsquo;as both ruler and redeemer.&rsquo; Its relatives are the hope on the Emmaus road, &lsquo;the one who was going to redeem Israel&rsquo; (<a href="luke-24.html#v24-21">Luke 24:21</a>), and Zechariah&rsquo;s <em>lytrōsis</em>, &lsquo;redemption&rsquo; (<a href="luke-1.html#v68">Luke 1:68</a>); in the Greek of Psalm 18:15 (Psalm 19:14 in the Hebrew numbering; not yet on these pages) <em>lytrōtēs</em> renders the Hebrew <em>go&rsquo;el</em>. Shelf at Acts 7:35: only the Douay prints &lsquo;redeemer&rsquo;; KJV, ASV, NIV and NWT 1984 &lsquo;deliverer,&rsquo; Geneva &lsquo;a deliverer,&rsquo; TLB &lsquo;savior.&rsquo;', ('Acts', 7, 35)),
+    ('lytrotes', 'lytrōtēs', 'λυτρωτής', 'lytrōtēs', 'A REDEEMER &mdash; the noun of <em>lytroō</em>, &lsquo;to ransom, to redeem,&rsquo; from <em>lytron</em>, the ransom price. &#9888; It stands in one verse of the New Testament, <a href="acts-7.html#v7-35">Acts 7:35</a>, where God sends Moses &lsquo;as both ruler and redeemer.&rsquo; Its relatives are the hope on the Emmaus road, &lsquo;the one who was going to redeem Israel&rsquo; (<a href="luke-24.html#v24-21">Luke 24:21</a>), and Zechariah&rsquo;s <em>lytrōsis</em>, &lsquo;redemption&rsquo; (<a href="luke-1.html#v68">Luke 1:68</a>); in the Greek of Psalm 18:15 (<a href="psalms-19.html#v19-15">Psalm 19:15</a> in the Hebrew numbering, now on these pages) <em>lytrōtēs</em> renders the Hebrew <em>go&rsquo;el</em>. Shelf at Acts 7:35: only the Douay prints &lsquo;redeemer&rsquo;; KJV, ASV, NIV and NWT 1984 &lsquo;deliverer,&rsquo; Geneva &lsquo;a deliverer,&rsquo; TLB &lsquo;savior.&rsquo;', ('Acts', 7, 35)),
     ('logion', 'logion', 'λόγιον', 'logion', 'AN ORACLE, AN UTTERANCE &mdash; from <em>logos</em>, &lsquo;word&rsquo;: a divine saying, something spoken that carries authority. &#9888; It stands in four verses of the New Testament: <a href="acts-7.html#v7-38">Acts 7:38</a>, where Moses received &lsquo;living oracles to give to us&rsquo;; Romans 3:2, where the Jews were entrusted with &lsquo;the oracles of God&rsquo;; Hebrews 5:12; and 1 Peter 4:11, &lsquo;as oracles of God&rsquo; (the last three not yet on these pages). Shelf at Acts 7:38: KJV &lsquo;the lively oracles,&rsquo; ASV &lsquo;living oracles,&rsquo; Douay &lsquo;the words of life,&rsquo; NIV &lsquo;living words,&rsquo; NWT 1984 &lsquo;living sacred pronouncements,&rsquo; TLB &lsquo;the Living Word,&rsquo; which turns the plural into a title.', ('Acts', 7, 38)),
     ('moschopoieo', 'moschopoieō', 'μοσχοποιέω', 'moschopoieō', 'TO MAKE A CALF &mdash; <em>moschos</em>, &lsquo;calf,&rsquo; plus <em>poieō</em>, &lsquo;to make.&rsquo; It stands in one verse of the New Testament, <a href="acts-7.html#v7-41">Acts 7:41</a>, where Israel &lsquo;made a calf in those days&rsquo; at the foot of Sinai. The calf of <a href="exodus-32.html#v32-4">Exodus 32:4</a> is in the Greek <em>moschos chōneutos</em>, &lsquo;a molten calf,&rsquo; and the verse goes on, in the Greek, &lsquo;These are your gods, O Israel.&rsquo; Shelf: KJV, ASV, Douay, Geneva and NWT 1984 &lsquo;made a calf,&rsquo; NIV &lsquo;made an idol in the form of a calf,&rsquo; TLB &lsquo;made a calf idol.&rsquo;', ('Acts', 7, 41)),
     ('cheiropoietos', 'cheiropoiētos', 'χειροποίητος', 'cheiropoiētos', 'MADE WITH HANDS &mdash; <em>cheir</em>, &lsquo;hand,&rsquo; plus <em>poieō</em>, &lsquo;to make.&rsquo; &#9888; In the Greek Old Testament it is the word for idols: Brenton&rsquo;s Greek of <a href="leviticus-26.html#v26-1">Leviticus 26:1</a> has &lsquo;you shall not make for yourselves <em>cheiropoiēta</em>,&rsquo; where the Hebrew has &lsquo;idols,&rsquo; and Isaiah 2:18 (not yet on these pages) has &lsquo;they shall hide all the <em>cheiropoiēta</em>.&rsquo; In the New Testament it stands in six verses: <a href="mark-14.html#v14-58">Mark 14:58</a> (the witnesses against Jesus, &lsquo;this sanctuary made with hands&rsquo;), <a href="acts-7.html#v7-48">Acts 7:48</a> (&lsquo;the Most High does not dwell in things made with hands&rsquo;), Acts 17:24, <a href="ephesians-2.html#v2-11">Ephesians 2:11</a>, Hebrews 9:11 and 9:24; its negative, <em>acheiropoiētos</em>, &lsquo;not made with hands,&rsquo; stands in three, Mark 14:58, 2 Corinthians 5:1 and Colossians 2:11. The Greek has only the adjective at Acts 7:48; the Byzantine text adds <em>naois</em>, &lsquo;temples,&rsquo; and KJV, Geneva and TLB print &lsquo;temples,&rsquo; where ASV, Douay, NIV and NWT 1984 print &lsquo;houses.&rsquo;', ('Acts', 7, 48)),
@@ -9695,7 +9695,7 @@ ENCYCLOPEDIA = [
     dict(slug="sharon", name="The Sharon", kind="place", aliases=["Sharon", "Lasharon"],
          modern="The coastal plain between Joppa and Mount Carmel, Israel",
          refs=[("Joshua", 12, 18), ("Acts", 9, 35)], videos=[],
-         desc="The coastal lowland running from Joppa north toward Carmel, named here as a king's own title rather than a city &mdash; 'the king of the Sharon' (<a href=\"joshua-12.html#v12-18\">Joshua 12:18</a>, now on these pages), the only region, rather than town, to govern a king anywhere on this chapter's list. Later books remember it as fertile pastureland (1 Chronicles 27:29, not yet on these pages) and as a byword for splendor &mdash; 'the splendor of Carmel and Sharon' (Isaiah 35:2, not yet on these pages) &mdash; and the beloved of the Song of Songs calls herself 'the rose of Sharon' (Song of Songs 2:1, not yet on these pages)." + ' &#9888; In the New Testament it is the country around <a href="encyclopedia.html#lydda">Lydda</a>: at <a href="acts-9.html#v9-35">Acts 9:35</a> &lsquo;all who lived at Lydda and the Sharon&rsquo; saw Aeneas rise and turned to the Lord.'),
+         desc="The coastal lowland running from Joppa north toward Carmel, named here as a king's own title rather than a city &mdash; 'the king of the Sharon' (<a href=\"joshua-12.html#v12-18\">Joshua 12:18</a>, now on these pages), the only region, rather than town, to govern a king anywhere on this chapter's list. Later books remember it as fertile pastureland (1 Chronicles 27:29, not yet on these pages) and as a byword for splendor &mdash; 'the splendor of Carmel and Sharon' (<a href=\"isaiah-35.html#v35-2\">Isaiah 35:2</a>, now on these pages) &mdash; and the beloved of the Song of Songs calls herself 'the rose of Sharon' (Song of Songs 2:1, not yet on these pages)." + ' &#9888; In the New Testament it is the country around <a href="encyclopedia.html#lydda">Lydda</a>: at <a href="acts-9.html#v9-35">Acts 9:35</a> &lsquo;all who lived at Lydda and the Sharon&rsquo; saw Aeneas rise and turned to the Lord.'),
     dict(slug="taanach", name="Taanach", kind="place", aliases=["Taanach"],
          coords=(32.5225, 35.2969, 0.4),
          modern="Tell Ta'annek, near Megiddo, Israel",
@@ -10789,7 +10789,7 @@ XREFS = [
     [["Romans", 1, 23], ["Zephaniah", 1, 3], "the same de-creation move: Zephaniah sweeps the Genesis 1 creature-list off the ground, Romans has humanity trade its glory down through it"],
     [["Romans", 1, 1], ["Jeremiah", 1, 5], "'set apart' — aphōrismenos; Jeremiah was known in the womb and set apart before he was born, and Paul takes the prophets' own word for his commission"],
     [["Romans", 1, 3], ["2 Samuel", 7, 12], "'from the seed of David according to the flesh' — the covenant promise of an heir on David's throne, cited in what may be a creed older than the letter"],
-    [["Romans", 1, 20], ["Psalms", 19, 1], "'the heavens declare the glory of God' — the psalm behind the claim that his eternal power and divinity are seen in the things he made"],
+    [["Romans", 1, 20], ["Psalms", 19, 2], "'the heavens declare the glory of God' — the psalm behind the claim that his eternal power and divinity are seen in the things he made"],
     [["Romans", 1, 25], ["Jeremiah", 2, 11], "'my people have exchanged their glory for what does not profit' — the same trade, charged against Israel by a prophet before Paul charges it against the nations"],
     [["Acts", 1, 1], ["Luke", 1, 3], "the same Theophilus, and 'the first account' — the seam that makes Luke and Acts one two-volume work by one hand"],
     [["Acts", 1, 5], ["Mark", 1, 8], "John's own promise — 'I baptized you with water, but he will baptize you with the Holy Spirit' — quoted back by the risen Jesus ten days before it happens"],
@@ -18211,7 +18211,7 @@ DICTIONARY_ES = {
     "urim": ("Urim", "EL OR\u00c1CULO SACERDOTAL &mdash;un objeto o par de objetos guardados en el pectoral del sumo sacerdote, con los que se planteaba una pregunta a Dios y se obten\u00eda respuesta. Qu\u00e9 eran f\u00edsicamente no se describe en ninguna parte y no se puede recuperar; el nombre parece el plural de \u00abluz\u00bb. ⭐ Buscada en el texto archivado la palabra est\u00e1 en seis vers\u00edculos, y forman un arco completo: instituido en \u00c9xodo 28:30 y puesto sobre Aar\u00f3n en Lev\u00edtico 8:8; entregado a Josu\u00e9 en <a href=\"numbers-27.es.html#v27-21\">N\u00fameros 27:21</a> como el canal por el que ahora debe consultar, ya que no tiene el acceso directo de Mois\u00e9s; <strong>fallando a Sa\u00fal en 1 Samuel 28:6</strong>, donde Jehov\u00e1 no le responde \u00abni por sue\u00f1os, ni por Urim, ni por profetas\u00bb y \u00e9l acude a una m\u00e9dium; y desaparecido para el regreso, cuando Esdras 2:63 y Nehem\u00edas 7:65 aplazan una cuesti\u00f3n sacerdotal hasta que se levante un sacerdote con Urim y Tumim. ⚠ Un s\u00e9ptimo resultado conson\u00e1ntico, el Salmo 136:7, es el plural corriente de \u00abluz\u00bb en \u00abel que hizo las grandes lumbreras\u00bb: ruido, y conviene leerlo en vez de contarlo. ⚠ Una forma posesiva sufijada, <em>ureicha</em>, «TU Urim», también está en <a href=\"deuteronomy-33.es.html#v33-8\">Deuteronomio 33:8</a>, dicha de Leví como tribu —una forma consonántica distinta del plural desnudo que cuenta esta entrada, así que queda fuera de los seis por una técnica, aunque en la cronología propia de la historia es la primera mención del objeto, antes de que él ni el pectoral de Aarón se hayan descrito en Éxodo."),
     "roeh": ("ro&rsquo;eh", "UN PASTOR &mdash;la palabra corriente para quien guarda ovejas, y la imagen est\u00e1ndar de la Biblia para un gobernante. ⭐ La frase <em>ka-tson asher en lahem ro'eh</em>, \u00abcomo ovejas que no tienen pastor\u00bb, est\u00e1 en exactamente dos vers\u00edculos de la Biblia hebrea. <a href=\"numbers-27.es.html#v27-17\">N\u00fameros 27:17</a> es Mois\u00e9s pidiendo un sucesor para que la congregaci\u00f3n no se convierta en eso; 1 Reyes 22:17 es el profeta Miqueas dici\u00e9ndole a Acab que ha visto a todo Israel esparcido por los montes con esas mismas palabras, dichas a un rey que sale a campa\u00f1a y muere en ese mismo cap\u00edtulo. ⚠ As\u00ed que los dos due\u00f1os hebreos de la imagen son un caudillo organizando su relevo y un profeta informando a un rey de que \u00e9l no lo es. Desde entonces se ha vuelto un lugar com\u00fan, que es exactamente lo que no era."),
     "tamid": ("tamid", "CONTINUO, regular &mdash;no es originalmente una palabra de sacrificio, sino un adverbio corriente de repetición ininterrumpida. <a href=\"numbers-28.es.html#v28-3\">Números 28:3</a> lo convierte en el nombre de una institución: la <em>olat tamid</em>, el cordero de dos veces al día instituido primero en Éxodo 29:38-42 (ya en estas páginas) y reafirmado aquí, sin cambios, toda una generación del desierto después. ⭐ Todo el capítulo está construido sobre el sentido mismo de la palabra: toda otra ocasión &mdash;sábado, luna nueva, fiesta&mdash; se ofrece <em>además</em> del tamid, nunca en su lugar; la ofrenda continua es lo único que este capítulo nunca deja que el lector olvide que sigue en marcha debajo de todo lo demás."),
-    "chodesh": ("jodesh", "LUNA NUEVA, y por extensión MES &mdash;la misma palabra hace los dos trabajos, porque el calendario hebreo es lunar y un mes nuevo empieza en el momento en que se avista la luna nueva. <a href=\"numbers-28.es.html#v28-11\">Números 28:11</a> lo llama, literalmente, «la cabeza <em>[rosh]</em> de vuestros meses» &mdash;el término moderno corriente <em>rosh jodesh</em> se construye directamente sobre el vocabulario de este mismo versículo. ⭐ La raíz es <em>jadash</em>, «nuevo», la misma que empieza <em>lev jadash</em>, «un corazón nuevo» (Ezequiel 36:26, todavía no en estas páginas) &mdash;la misma palabra para un objeto del cielo que se renueva cada mes y para un corazón que se renueva una sola vez."),
+    "chodesh": ("jodesh", "LUNA NUEVA, y por extensión MES &mdash;la misma palabra hace los dos trabajos, porque el calendario hebreo es lunar y un mes nuevo empieza en el momento en que se avista la luna nueva. <a href=\"numbers-28.es.html#v28-11\">Números 28:11</a> lo llama, literalmente, «la cabeza <em>[rosh]</em> de vuestros meses» &mdash;el término moderno corriente <em>rosh jodesh</em> se construye directamente sobre el vocabulario de este mismo versículo. ⭐ La raíz es <em>jadash</em>, «nuevo», la misma que empieza <em>lev jadash</em>, «un corazón nuevo» (<a href=\"ezekiel-36.es.html#v36-26\">Ezequiel 36:26</a>, ya en estas páginas) &mdash;la misma palabra para un objeto del cielo que se renueva cada mes y para un corazón que se renueva una sola vez."),
     "mashal": ("mashal", "PROVERBIO &mdash;el t\u00edtulo mismo del libro es su plural, <em>Mishlei</em>, \u00ablos proverbios de Salom\u00f3n\u00bb (1:1). Un <em>mashal</em> es un dicho que funciona por SEMEJANZA (las mismas letras escriben tambi\u00e9n \u00abgobernar\u00bb, que los l\u00e9xicos registran como una segunda ra\u00edz): una comparaci\u00f3n lo bastante compacta para regir una vida. Va desde una sentencia de una l\u00ednea hasta un canto burlesco y las par\u00e1bolas de Jes\u00fas. \u2b50 <a href=\"numbers-21.es.html#v21-27\">N\u00fameros 21:27</a> es el extremo burlesco de ese registro, y aporta una forma que no aparece en ning\u00fan otro sitio: <em>ha-moshlim</em>, \u00ablos que hablan en <em>mashal</em>\u00bb, est\u00e1 en exactamente un vers\u00edculo de la Biblia hebrea, e introduce una balada amorrea capturada que se burla de Moab. \u26a0 Y hay en la palabra un chiste que ninguna versi\u00f3n puede imprimir: las mismas letras escriben a la vez \u00abser como\u00bb y \u00abGOBERNAR\u00bb, de modo que los versificadores y el rey del que cantan se escriben igual."),
     "nachash": ("nachash", "PRACTICAR ADIVINACI\u00d3N &mdash;leer presagios. El mayordomo de Jos\u00e9 dice de la copa de plata que su se\u00f1or \u00abciertamente adivina con ella\u00bb (44:5), y Jos\u00e9 repite la afirmaci\u00f3n a la cara de sus hermanos (44:15). La pr\u00e1ctica es real y egipcia: la LECANOMANCIA \u2014leer las formas que hace el aceite vertido en agua dentro de un cuenco\u2014 est\u00e1 atestiguada por todo el antiguo Cercano Oriente. \u26a0\ufe0f Tambi\u00e9n queda rotundamente prohibida en la Tor\u00e1 (Lev\u00edtico 19:26; Deuteronomio 18:10), lo que deja una pregunta honrada que el texto nunca responde: \u00bfdescribe Jos\u00e9 lo que hace, o mantiene una fachada egipcia que incluye fama de mago? \u26a0\ufe0f <strong>No confundir este verbo con su gemelo, el sustantivo corriente <em><a href=\"diccionario.html#nachash-serpent\">nachash</a></em>, \u00abserpiente\u00bb</strong>, que tiene su propia entrada: las mismas tres consonantes, usadas por la Biblia como dos palabras distintas. \u2b50 <a href=\"deuteronomy-18.es.html#v18-10\">Deuteronomio 18:10</a> ya est\u00e1 en estas p\u00e1ginas, y proh\u00edbe el participio sin rodeos &mdash;<em>menajesh</em>, quien lee presagios, cuarto en una lista de ocho oficios. \u26a0 As\u00ed que el canon de la Tor\u00e1 tiene la pr\u00e1ctica reclamada por Jos\u00e9, negada de Israel por un adivino profesional y prohibida por su nombre, en ese orden."),
     "saraf": ("saraf", "EL ARDIENTE &mdash;la criatura que Jehov\u00e1 env\u00eda contra Israel en <a href=\"numbers-21.es.html#v21-6\">N\u00fameros 21:6</a>, y el ser que Isa\u00edas ve de pie por encima del trono. Es la ra\u00edz corriente de \u00abquemar\u00bb usada como sustantivo. ⚠ En PLURAL aparece en exactamente tres vers\u00edculos de la Biblia hebrea: N\u00fameros 21:6, donde es una serpiente, e Isa\u00edas 6:2 y 6:6, donde unos <em>serafines</em> de seis alas asisten a Dios y uno lleva una brasa encendida a la boca del profeta. Casi todas las versiones lo transliteran en Isa\u00edas y lo traducen en N\u00fameros, de modo que el lector no tiene c\u00f3mo saber que es la misma palabra. Si lo que arde es la mordedura (el veneno de una v\u00edbora inflama) o la criatura (una serpiente de aspecto brillante; en el arte real egipcio las serpientes aladas custodian tronos, y los serafines de Isa\u00edas vuelan) no est\u00e1 resuelto, y ambas lecturas son antiguas. ⚠ No confundir con el participio pasivo <em>saruf</em>, \u00abquemado\u00bb, que se escribe con las mismas consonantes: N\u00fameros 17:4 llama <em>ha-serufim</em> a los doscientos cincuenta hombres incinerados en la rebeli\u00f3n de Cor\u00e9."),
@@ -32428,7 +32428,7 @@ ENCYCLOPEDIA_ES["ephraim"] = ("Efraín", "El hijo menor de José, nacido en Egip
 ENCYCLOPEDIA_ES["bethel"] = ("Betel", "Una ciudad de la montaña en la propia frontera sur de Efraín, renombrada por Jacob tras su sueño de una escalera entre la tierra y el cielo: «Ciertamente Jehová está en este lugar» (Génesis 28:19, todavía no en estas páginas, como todo el capítulo 28 en español) &mdash;«pero el nombre de la ciudad antes era Luz». Jacob vuelve y la renombra una segunda vez, construye un altar y la llama El-betel (<a href=\"genesis-35.es.html#v35-7\">Génesis 35:7</a>, ya en estas páginas). <a href=\"joshua-16.es.html#v16-2\">Josué 16:2</a> (ya en estas páginas) traza el límite de este capítulo «de Betel a Luz» sin repetir ninguna de las dos glosas de Génesis de que los dos nombres son un solo lugar &mdash;la única de tres apariciones hebreas de esta forma direccional que no lo hace. Siglos después Jeroboam levanta aquí uno de sus dos becerros de oro (1 Reyes 12:29, ya en estas páginas), y a Amós se le dice abiertamente que deje de profetizar en ella (Amós 7:13, todavía no en estas páginas) &mdash;la casa de Dios soñada se vuelve el propio santuario idólatra del reino.")
 ENCYCLOPEDIA_ES["hepher"] =("Hefer", "Una ciudad cuyo rey hirió Josué (<a href=\"joshua-12.es.html#v12-17\">Josué 12:17</a>, ya en estas páginas). El mismo nombre pertenece a un antepasado de un clan de Manasés: «Zelofehad hijo de Hefer» (<a href=\"numbers-27.es.html#v27-1\">Números 27:1</a>; <a href=\"numbers-26.es.html#v26-32\">26:32</a>, ambos ya en estas páginas) &mdash;el padre detrás del propio nombre de <a href=\"enciclopedia.html#tirzah\">Tirsa</a>, dos capítulos antes de que este le dé a Tirsa una ciudad que haga juego. Salomón administra después un distrito llamado «la tierra de Hefer» (1 Reyes 4:10, todavía no en estas páginas); si la ciudad, el clan y el distrito son el mismo Hefer o tres nombres que comparten por casualidad una palabra hebrea común no se dice, y esta traducción no lo resuelve.")
 ENCYCLOPEDIA_ES["aphek"] =("Afec (Sarón)", "Una ciudad cuyo rey hirió Josué, en la llanura del Sarón (<a href=\"joshua-12.es.html#v12-18\">Josué 12:18</a>, ya en estas páginas). La mayoría de los geógrafos la sitúan en los manantiales de Ras el-Ain, el mismo sitio donde acampan los filisteos antes de capturar el arca y matar a los dos hijos de Elí (1 Samuel 4, todavía no en estas páginas) &mdash;el rey de una ciudad conquistada herido aquí, y el mismo terreno todavía sin conquistar generaciones después. Herodes la reconstruirá después como Antípatris (Hechos 23:31, todavía no en estas páginas). Un Afec distinto, en el Golán, es donde Ben-adad de Aram es derrotado (1 Reyes 20, todavía no en estas páginas); el nombre simplemente significa «fortaleza, plaza fuerte» y se repite donde quiera que un manantial hiciera que mereciera la pena construir una.")
-ENCYCLOPEDIA_ES["sharon"] =("El Sarón", "La llanura costera que corre desde Jope hacia el norte, hacia el Carmelo, nombrada aquí como título propio de un rey en vez de una ciudad &mdash;«el rey del Sarón» (<a href=\"joshua-12.es.html#v12-18\">Josué 12:18</a>, ya en estas páginas), la única región, en vez de pueblo, que gobierna a un rey en toda la lista de este capítulo. Libros posteriores la recuerdan como tierra de pastos fértil (1 Crónicas 27:29, todavía no en estas páginas) y como sinónimo de esplendor &mdash;«el esplendor del Carmelo y el Sarón» (Isaías 35:2, todavía no en estas páginas)&mdash;, y la amada del Cantar de los Cantares se llama a sí misma «la rosa del Sarón» (Cantar de los Cantares 2:1, todavía no en estas páginas)." + ' &#9888; En el Nuevo Testamento es el país alrededor de <a href="enciclopedia.html#lydda">Lida</a>: en <a href="acts-9.es.html#v9-35">Hechos 9:35</a> «todos los que vivían en Lida y en el Sarón» vieron levantarse a Eneas y se volvieron al Señor.')
+ENCYCLOPEDIA_ES["sharon"] =("El Sarón", "La llanura costera que corre desde Jope hacia el norte, hacia el Carmelo, nombrada aquí como título propio de un rey en vez de una ciudad &mdash;«el rey del Sarón» (<a href=\"joshua-12.es.html#v12-18\">Josué 12:18</a>, ya en estas páginas), la única región, en vez de pueblo, que gobierna a un rey en toda la lista de este capítulo. Libros posteriores la recuerdan como tierra de pastos fértil (1 Crónicas 27:29, todavía no en estas páginas) y como sinónimo de esplendor &mdash;«el esplendor del Carmelo y el Sarón» (<a href=\"isaiah-35.es.html#v35-2\">Isaías 35:2</a>, ya en estas páginas)&mdash;, y la amada del Cantar de los Cantares se llama a sí misma «la rosa del Sarón» (Cantar de los Cantares 2:1, todavía no en estas páginas)." + ' &#9888; En el Nuevo Testamento es el país alrededor de <a href="enciclopedia.html#lydda">Lida</a>: en <a href="acts-9.es.html#v9-35">Hechos 9:35</a> «todos los que vivían en Lida y en el Sarón» vieron levantarse a Eneas y se volvieron al Señor.')
 ENCYCLOPEDIA_ES["taanach"] =("Taanac", "Una ciudad cuyo rey hirió Josué, emparejada en este versículo con <a href=\"enciclopedia.html#megiddo\">Meguido</a> como lo será dos veces más (<a href=\"joshua-12.es.html#v12-21\">Josué 12:21</a>, ya en estas páginas). Manasés no logra expulsar a sus cananeos (Jueces 1:27, ya en estas páginas), y el propio cántico de victoria de Débora sitúa una batalla «junto a las aguas de Meguido» nombrando a Taanac en el mismo verso (Jueces 5:19, ya en estas páginas) &mdash;el mismo emparejamiento, un rey herido y una ciudad sin conquistar, repitiéndose como campo de batalla generaciones después.")
 ENCYCLOPEDIA_ES["megiddo"] =("Meguido", "Una ciudad cuyo rey hirió Josué (<a href=\"joshua-12.es.html#v12-21\">Josué 12:21</a>, ya en estas páginas), aunque sus cananeos nunca son expulsados de verdad (Jueces 1:27, ya en estas páginas) hasta que Salomón la edifica, con Hazor y Gezer, generaciones después (<a href='1-kings-9.es.html#v9-15'>1 Reyes 9:15</a>, ya en estas páginas). Guardando el paso donde el camino costero entra al valle de Jezreel, se peleó por ella durante mil años antes de este capítulo y mucho después &mdash;los propios anales del faraón Tutmosis III registran una batalla aquí siglos antes, fuera por completo de la Biblia. El nombre sobrevive, transliterado en vez de traducido, como el escenario de la batalla final del Nuevo Testamento: «un lugar llamado en hebreo Armagedón» (Apocalipsis 16:16, todavía no en estas páginas) &mdash;la mayoría lee <em>har</em>, «monte», como un apego suelto a una ciudad que de hecho está en una llanura.")
 ENCYCLOPEDIA_ES["kedesh"] =("Cedes", "Una ciudad cuyo rey hirió Josué (<a href=\"joshua-12.es.html#v12-22\">Josué 12:22</a>, ya en estas páginas) &mdash;no <a href=\"enciclopedia.html#kadesh\">Cades-barnea</a>, el oasis del desierto muy al sur, un nombre distinto bajo una ortografía española parecida. Esta Cedes, en la propia montaña de Neftalí, será nombrada una de las seis ciudades de refugio (Josué 20, todavía no en estas páginas), y es el pueblo natal de Barac, el general que por fin derrota a un rey llamado Jabín, todavía reinando en Hazor (Jueces 4:6, ya en estas páginas) &mdash;los mismos dos nombres que el propio capítulo once de este libro ya señaló como sobrevivientes a la vida de un solo rey.")
@@ -32657,7 +32657,7 @@ ENCYCLOPEDIA_ES['theodotos-inscription'] = ('La inscripción de Teodoto', 'Una i
 DICTIONARY_ES['katasophizomai'] = ('katasophízomai', 'BURLAR CON ASTUCIA, USAR DE ASTUCIA CONTRA &mdash;<em>kata</em>, «contra, abajo», más <em>sophizō</em>, «hacer sabio, ser hábil»: llevar ventaja a alguien con ardid. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="acts-7.es.html#v7-19">Hechos 7:19</a>, donde el rey que «usa de astucia contra nuestra raza» aflige a los padres; su fuente es el griego de Éxodo 1:10 (<em>katasophisōmetha autous</em>), donde Faraón propone burlar a Israel con astucia. El estante en Hechos 7:19: RV 1909 «usando de astucia con nuestro linaje», RV60 «usando de astucia con nuestro pueblo», NVI «usó de artimañas», TNM 1987 «empleó astucia estatal en contra de nuestra raza» y TNM 2019 «actuó con astucia contra nuestro pueblo». (Éxodo 1, ya en estas páginas, todavía no en español.)')
 DICTIONARY_ES['ektheta'] = ('ékthetos', 'EXPUESTO, PUESTO AFUERA &mdash;<em>ek</em>, «fuera», más <em>tithēmi</em>, «poner»: un niño puesto a la intemperie para que muera. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="acts-7.es.html#v7-19">Hechos 7:19</a>, donde el rey aflige a los padres «haciendo que sus niños fueran expuestos, para que no se les conservara la vida»; el verbo <em>ektithēmi</em> es el «expuesto» de <a href="acts-7.es.html#v7-21">Hechos 7:21</a>, dicho del niño Moisés. Lo que dan Éxodo 1:16 y 22 es una orden de matar a los hijos varones al nacer y luego de arrojar a todo hijo varón al Nilo; «exponer» es la palabra propia de Hechos para ello. La cláusula de propósito usa <em>zōogoneō</em>, «conservar con vida», que está en tres versículos del Nuevo Testamento (<a href="luke-17.es.html#v17-33">Lucas 17:33</a>, Hechos 7:19 y 1 Timoteo 6:13, todavía no en estas páginas) y en el griego de Éxodo 1:17, 18 y 22. El estante en Hechos 7:19: RV 1909 «pusiesen á peligro de muerte sus niños», RV60 «expusiesen a la muerte a sus niños», NVI «dejar abandonados a sus hijos recién nacidos», TNM 1987 «exponer a sus criaturas» y TNM 2019 «abandonar a sus bebés». (Éxodo 1, ya en estas páginas, todavía no en español.)')
 DICTIONARY_ES['asteios'] = ('astéios', 'BIEN FORMADO, PRESENTABLE &mdash;literalmente «de la ciudad» (<em>astu</em>): urbano, refinado, y de un niño, hermoso. &#9888; Está en dos versículos del Nuevo Testamento, ambos del bebé Moisés y ambos de Éxodo 2:2, donde el hebreo tiene <em>tov</em>, «bueno», y el griego <em>asteion</em>: <a href="acts-7.es.html#v7-20">Hechos 7:20</a> y <a href="hebrews-11.es.html#v11-23">Hebreos 11:23</a>, que esta traducción lee «bien formado» y explica. En Hechos el dativo <em>tō theō</em>, «a Dios», se lee de dos maneras en el estante: como superlativo, TNM 1987 «divinamente hermoso» y TNM 2019 «extremadamente hermoso», y como un veredicto a vista de Dios, NVI «hermoso a los ojos de Dios», RV 1909 «agradable á Dios» y RV60 «agradable a Dios». El «escribano» de Hechos 19:35 es otra palabra. (Éxodo 2, ya en estas páginas, todavía no en español.)')
-DICTIONARY_ES['lytrotes'] = ('lytrōtḗs', 'UN REDENTOR &mdash;el sustantivo de <em>lytroō</em>, «rescatar, redimir», de <em>lytron</em>, el precio del rescate. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="acts-7.es.html#v7-35">Hechos 7:35</a>, donde Dios envía a Moisés «como gobernante y redentor». Sus parientes son la esperanza en el camino a Emaús, «el que iba a redimir a Israel» (<a href="luke-24.es.html#v24-21">Lucas 24:21</a>), y la <em>lytrōsis</em>, «redención», de Zacarías (<a href="luke-1.es.html#v68">Lucas 1:68</a>); en el griego del Salmo 18:15 (Salmo 19:14 en la numeración hebrea; todavía no en estas páginas) <em>lytrōtēs</em> traduce el hebreo <em>go’el</em>. El estante en Hechos 7:35: solo la RV 1909 imprime «redentor» («príncipe y redentor»); RV60 y NVI «gobernante y libertador», TNM 1987 y 2019 «libertador».')
+DICTIONARY_ES['lytrotes'] = ('lytrōtḗs', 'UN REDENTOR &mdash;el sustantivo de <em>lytroō</em>, «rescatar, redimir», de <em>lytron</em>, el precio del rescate. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="acts-7.es.html#v7-35">Hechos 7:35</a>, donde Dios envía a Moisés «como gobernante y redentor». Sus parientes son la esperanza en el camino a Emaús, «el que iba a redimir a Israel» (<a href="luke-24.es.html#v24-21">Lucas 24:21</a>), y la <em>lytrōsis</em>, «redención», de Zacarías (<a href="luke-1.es.html#v68">Lucas 1:68</a>); en el griego del Salmo 18:15 (<a href="psalms-19.es.html#v19-15">Salmo 19:15</a> en la numeración hebrea, ya en estas páginas) <em>lytrōtēs</em> traduce el hebreo <em>go’el</em>. El estante en Hechos 7:35: solo la RV 1909 imprime «redentor» («príncipe y redentor»); RV60 y NVI «gobernante y libertador», TNM 1987 y 2019 «libertador».')
 DICTIONARY_ES['logion'] = ('lógion', 'UN ORÁCULO, UNA DECLARACIÓN &mdash;de <em>logos</em>, «palabra»: un dicho divino, algo hablado que lleva autoridad. &#9888; Está en cuatro versículos del Nuevo Testamento: <a href="acts-7.es.html#v7-38">Hechos 7:38</a>, donde Moisés recibió «oráculos vivientes para darnos a nosotros»; Romanos 3:2, donde a los judíos se les confiaron «los oráculos de Dios»; Hebreos 5:12; y 1 Pedro 4:11, «como oráculos de Dios» (los tres últimos todavía no en estas páginas). El estante en Hechos 7:38: RV 1909, RV60 y NVI «palabras de vida», TNM 1987 «vivas y sagradas declaraciones formales» y TNM 2019 «declaraciones sagradas y vivas».')
 DICTIONARY_ES['moschopoieo'] = ('moschopoiéō', 'HACER UN BECERRO &mdash;<em>moschos</em>, «becerro», más <em>poieō</em>, «hacer». Está en un solo versículo del Nuevo Testamento, <a href="acts-7.es.html#v7-41">Hechos 7:41</a>, donde Israel «hizo un becerro en aquellos días» al pie del Sinaí. El becerro de <a href="exodus-32.es.html#v32-4">Éxodo 32:4</a> es en el griego <em>moschos chōneutos</em>, «un becerro de fundición», y el versículo sigue, en el griego, «Estos son tus dioses, Israel». El estante: RV 1909, RV60 y TNM 1987 «hicieron un becerro», NVI «se hicieron un ídolo en forma de becerro».')
 DICTIONARY_ES['cheiropoietos'] = ('cheiropoiētos', 'HECHO POR MANOS &mdash;<em>cheir</em>, «mano», más <em>poieō</em>, «hacer». &#9888; En el Antiguo Testamento griego es la palabra para los ídolos: el griego de Brenton de <a href="leviticus-26.es.html#v26-1">Levítico 26:1</a> tiene «no harán para ustedes <em>cheiropoiēta</em>», donde el hebreo tiene «ídolos», e Isaías 2:18 (todavía no en estas páginas) tiene «esconderán todos los <em>cheiropoiēta</em>». En el Nuevo Testamento está en seis versículos: <a href="mark-14.es.html#v14-58">Marcos 14:58</a> (los testigos contra Jesús, «este santuario hecho por manos»), <a href="acts-7.es.html#v7-48">Hechos 7:48</a> («el Altísimo no habita en cosas hechas por manos»), Hechos 17:24, <a href="ephesians-2.es.html#v2-11">Efesios 2:11</a>, Hebreos 9:11 y 9:24; su negativo, <em>acheiropoiētos</em>, «no hecho por manos», está en tres, Marcos 14:58, 2 Corintios 5:1 y Colosenses 2:11. En Hechos 7:48 el griego tiene solo el adjetivo; el texto bizantino añade <em>naois</em>, «templos», y la RV 1909 y la RV60 imprimen «templos», donde la NVI y la TNM imprimen «casas».')
@@ -40585,10 +40585,10 @@ DICTIONARY_ES['goes'] = ('góēs',
     'UN HECHICERO, un encantador, y de ahí un ESTAFADOR que obra con trucos; un charlatán. &#9888; Está en un solo versículo del Nuevo Testamento, <a href="2-timothy-3.es.html#v3-13">2 Timoteo 3:13</a>, «los hombres malos y los charlatanes progresarán de mal en peor, engañando y siendo engañados», cinco versículos después de los magos del faraón, Janes y Jambres (<a href="2-timothy-3.es.html#v3-8">3:8</a>). RV60 «los engañadores»; TNM 1987 «impostores»; NVI «farsantes».')
 
 DICTIONARY.append(('sophizo', 'sophizō', 'σοφίζω', 'sophizō',
-    'TO MAKE WISE; in the middle and passive, to devise cleverly &mdash; from <em>sophos</em>, &lsquo;wise.&rsquo; &#9888; It stands in two verses of the New Testament, and the two pull apart: the sacred writings &lsquo;able to make you wise for salvation&rsquo; at <a href="2-timothy-3.html#v3-15">2 Timothy 3:15</a>, and the &lsquo;cleverly devised myths&rsquo; that 2 Peter disowns at <a href="2-peter-1.html#v16">2 Peter 1:16</a>. The Greek of Psalm 19:7 (18:8 in its numbering) has &lsquo;the testimony of Jehovah is faithful, making infants wise&rsquo; (not yet on these pages; the Hebrew has the name, the Greek <em>kyrios</em>). KJV at 2 Timothy 3:15 &lsquo;to make thee wise unto salvation.&rsquo;',
+    'TO MAKE WISE; in the middle and passive, to devise cleverly &mdash; from <em>sophos</em>, &lsquo;wise.&rsquo; &#9888; It stands in two verses of the New Testament, and the two pull apart: the sacred writings &lsquo;able to make you wise for salvation&rsquo; at <a href="2-timothy-3.html#v3-15">2 Timothy 3:15</a>, and the &lsquo;cleverly devised myths&rsquo; that 2 Peter disowns at <a href="2-peter-1.html#v16">2 Peter 1:16</a>. The Greek of Psalm 19:7 (18:8 in its numbering) has &lsquo;the testimony of Jehovah is faithful, making infants wise&rsquo; (<a href="psalms-19.html#v19-8">Psalm 19:8</a> in the Hebrew, now on these pages; the Hebrew has the name, the Greek <em>kyrios</em>). KJV at 2 Timothy 3:15 &lsquo;to make thee wise unto salvation.&rsquo;',
     ('2 Timothy', 3, 15)))
 DICTIONARY_ES['sophizo'] = ('sofízō',
-    'HACER SABIO; en voz media y pasiva, idear con astucia &mdash; de <em>sophos</em>, «sabio». &#9888; Está en dos versículos del Nuevo Testamento, y los dos tiran en sentidos opuestos: las sagradas letras «que pueden hacerte sabio para la salvación» en <a href="2-timothy-3.es.html#v3-15">2 Timoteo 3:15</a>, y las «fábulas artificiosas» que 2 Pedro rechaza en <a href="2-peter-1.es.html#v16">2 Pedro 1:16</a>. El griego del Salmo 19:7 (18:8 en su numeración) dice «el testimonio de Jehová es fiel, hace sabios a los pequeños» (todavía no en estas páginas; el hebreo trae el nombre, el griego <em>kyrios</em>). RV60 en 2 Timoteo 3:15 «te pueden hacer sabio para la salvación».')
+    'HACER SABIO; en voz media y pasiva, idear con astucia &mdash; de <em>sophos</em>, «sabio». &#9888; Está en dos versículos del Nuevo Testamento, y los dos tiran en sentidos opuestos: las sagradas letras «que pueden hacerte sabio para la salvación» en <a href="2-timothy-3.es.html#v3-15">2 Timoteo 3:15</a>, y las «fábulas artificiosas» que 2 Pedro rechaza en <a href="2-peter-1.es.html#v16">2 Pedro 1:16</a>. El griego del Salmo 19:7 (18:8 en su numeración) dice «el testimonio de Jehová es fiel, hace sabios a los pequeños» (<a href="psalms-19.es.html#v19-8">Salmo 19:8</a> en el hebreo, ya en estas páginas; el hebreo trae el nombre, el griego <em>kyrios</em>). RV60 en 2 Timoteo 3:15 «te pueden hacer sabio para la salvación».')
 
 DICTIONARY.append(('theopneustos', 'theopneustos', 'θεόπνευστος', 'theopneustos',
     'GOD-BREATHED &mdash; <em>theos</em>, &lsquo;God,&rsquo; and <em>pne&#333;</em>, &lsquo;to breathe, to blow,&rsquo; the stem of <em>pneuma</em>, &lsquo;breath, wind, spirit.&rsquo; &#9888; It stands in one verse of the New Testament, <a href="2-timothy-3.html#v3-16">2 Timothy 3:16</a>, &lsquo;All Scripture is God-breathed and profitable.&rsquo; Its form is that of <em>theodidaktos</em>, &lsquo;taught by God,&rsquo; at <a href="1-thessalonians-4.html#v4-9">1 Thessalonians 4:9</a>, so it is read as &lsquo;breathed by God.&rsquo; The Latin rendered it <em>divinitus inspirata</em>, and the English word &lsquo;inspiration&rsquo; comes from that Latin through the KJV&rsquo;s &lsquo;given by inspiration of God.&rsquo; Whether the picture is of God breathing the writings out or breathing into them is debated, and so is whether the adjective is said of all Scripture (&lsquo;All Scripture is God-breathed&rsquo;) or picks out the Scripture meant (&lsquo;Every God-breathed Scripture is also profitable,&rsquo; the Vulgate and the ASV); the note on the verse sets out both. NIV &lsquo;God-breathed&rsquo;; NWT 1984 &lsquo;inspired of God.&rsquo;',
@@ -45142,10 +45142,10 @@ DICTIONARY_ES['batrachos'] = ('bátrachos',
     'RANA. &#9888; Está en un solo versículo del Nuevo Testamento: «tres espíritus inmundos como ranas» que salen de la boca del dragón, de la bestia y del falso profeta en la sexta copa (<a href="revelation-16.es.html#v16-13">Apocalipsis 16:13</a>). Las ranas recuerdan la segunda plaga de Egipto, cuando «subieron las ranas y cubrieron la tierra de Egipto» (<a href="exodus-8.es.html#v8-2">Éxodo 8:2</a>), un animal impuro que croa sin parar. RV60 «tres espíritus inmundos a manera de ranas»; TNM 1987 «tres expresiones inspiradas inmundas [que se parecían] a ranas».')
 
 DICTIONARY.append(('harmagedon', 'Harmagedōn', 'Ἁρμαγεδών', 'Harmagedōn',
-    'HARMAGEDON, ARMAGEDDON &mdash; &lsquo;the place called in Hebrew Harmagedon&rsquo; where the spirits from the dragon, the beast and the false prophet gather the kings of the whole inhabited earth &lsquo;for the war of the great day of God the Almighty&rsquo; (<a href="revelation-16.html#v16-16">Revelation 16:16</a>). &#9888; It stands only there. The usual reading takes it as <em>har M&#277;giddo</em>, &lsquo;mountain of Megiddo,&rsquo; the city by whose waters the kings of Canaan fought (<a href="judges-5.html#v19">Judges 5:19</a>) (<a href="encyclopedia.html#megiddo">encyclopedia</a>); but Megiddo is a mound in a plain, not a mountain, and other readings are offered, among them <em>har mo&lsquo;ed</em>, &lsquo;the mount of assembly,&rsquo; Isaiah 14:13 (not yet on these pages). The critical Greek writes it with an opening <em>H</em>; the Latin and the older printed Greek do not, whence the English &lsquo;Armageddon.&rsquo; ASV &lsquo;Har-magedon&rsquo;; KJV &lsquo;Armageddon.&rsquo;',
+    'HARMAGEDON, ARMAGEDDON &mdash; &lsquo;the place called in Hebrew Harmagedon&rsquo; where the spirits from the dragon, the beast and the false prophet gather the kings of the whole inhabited earth &lsquo;for the war of the great day of God the Almighty&rsquo; (<a href="revelation-16.html#v16-16">Revelation 16:16</a>). &#9888; It stands only there. The usual reading takes it as <em>har M&#277;giddo</em>, &lsquo;mountain of Megiddo,&rsquo; the city by whose waters the kings of Canaan fought (<a href="judges-5.html#v19">Judges 5:19</a>) (<a href="encyclopedia.html#megiddo">encyclopedia</a>); but Megiddo is a mound in a plain, not a mountain, and other readings are offered, among them <em>har mo&lsquo;ed</em>, &lsquo;the mount of assembly,&rsquo; <a href="isaiah-14.html#v14-13">Isaiah 14:13</a> (now on these pages). The critical Greek writes it with an opening <em>H</em>; the Latin and the older printed Greek do not, whence the English &lsquo;Armageddon.&rsquo; ASV &lsquo;Har-magedon&rsquo;; KJV &lsquo;Armageddon.&rsquo;',
     ('Revelation', 16, 16)))
 DICTIONARY_ES['harmagedon'] = ('Harmagedṓn',
-    'ARMAGEDÓN, HARMAGEDÓN &mdash; «el lugar que en hebreo se llama Armagedón», donde los espíritus que salen del dragón, de la bestia y del falso profeta reúnen a los reyes de toda la tierra habitada «para la guerra del gran día de Dios el Todopoderoso» (<a href="revelation-16.es.html#v16-16">Apocalipsis 16:16</a>). &#9888; Está solo allí. La lectura usual lo toma como <em>har Meguidó</em>, «monte de Meguido», la ciudad junto a cuyas aguas pelearon los reyes de Canaán (<a href="judges-5.es.html#v19">Jueces 5:19</a>) (<a href="enciclopedia.html#megiddo">enciclopedia</a>); pero Meguido es un montículo en una llanura, no un monte, y se proponen otras lecturas, entre ellas <em>har mo‘ed</em>, «el monte de la asamblea», Isaías 14:13 (todavía no en estas páginas). El griego crítico lo escribe con <em>H</em> inicial; el latín y el griego impreso antiguo no, de donde «Armagedón». RV60 «Armagedón»; TNM 1987 «Har–Magedón».')
+    'ARMAGEDÓN, HARMAGEDÓN &mdash; «el lugar que en hebreo se llama Armagedón», donde los espíritus que salen del dragón, de la bestia y del falso profeta reúnen a los reyes de toda la tierra habitada «para la guerra del gran día de Dios el Todopoderoso» (<a href="revelation-16.es.html#v16-16">Apocalipsis 16:16</a>). &#9888; Está solo allí. La lectura usual lo toma como <em>har Meguidó</em>, «monte de Meguido», la ciudad junto a cuyas aguas pelearon los reyes de Canaán (<a href="judges-5.es.html#v19">Jueces 5:19</a>) (<a href="enciclopedia.html#megiddo">enciclopedia</a>); pero Meguido es un montículo en una llanura, no un monte, y se proponen otras lecturas, entre ellas <em>har mo‘ed</em>, «el monte de la asamblea», <a href="isaiah-14.es.html#v14-13">Isaías 14:13</a> (ya en estas páginas). El griego crítico lo escribe con <em>H</em> inicial; el latín y el griego impreso antiguo no, de donde «Armagedón». RV60 «Armagedón»; TNM 1987 «Har–Magedón».')
 
 DICTIONARY.append(('chalaza', 'chalaza', 'χάλαζα', 'chalaza',
     'HAIL. &#9888; It stands in three verses of the New Testament, all in Revelation: the first trumpet&rsquo;s &lsquo;hail and fire, mixed with blood&rsquo; (<a href="revelation-8.html#v8-7">Revelation 8:7</a>), the &lsquo;great hail&rsquo; when the temple in heaven is opened (<a href="revelation-11.html#v11-19">11:19</a>), and the seventh bowl&rsquo;s &lsquo;great hail, as heavy as a talent&rsquo; (<a href="revelation-16.html#v16-21">16:21</a>), the word <em>talantiaios</em> standing only there. Behind them is the seventh plague of Egypt, &lsquo;hail, and fire flashing in the midst of the hail&rsquo; (<a href="exodus-9.html#v9-24">Exodus 9:24</a>), and the great stones Jehovah threw from the heavens at Beth-horon (<a href="joshua-10.html#v10-11">Joshua 10:11</a>). KJV &lsquo;every stone about the weight of a talent&rsquo;; NIV &lsquo;each weighing about a hundred pounds.&rsquo;',
@@ -49816,7 +49816,7 @@ DICTIONARY.extend([
      """A TREE &mdash; the ordinary Aramaic word, which later Hebrew took over: the Mishnah dates &lsquo;the new year for the tree&rsquo;, <em>rosh ha-shanah la-ilan</em>, to the first of Shevat (Rosh Hashanah 1:1), and <em>ilan</em> is the everyday word for a tree in Hebrew today. ⭐ In the Bible it stands only in <a href="daniel-4.html#v4-7">Daniel 4</a> (now on these pages), in six verses: Nebuchadnezzar&rsquo;s dream of a tree &lsquo;in the middle of the earth&rsquo; whose height reached to the heavens, with the beasts of the field under it and the birds of the heavens in its branches, cut down to a stump in a band of iron and bronze; and Daniel&rsquo;s answer, &lsquo;it is you, O king&rsquo; (verse 19).""",
      ("Daniel", 4, 7)),
     ("iddan", "&lsquo;iddan", "עִדָּן", "&lsquo;iddan",
-     """A TIME, a set span &mdash; the Aramaic word for a period whose length the context gives, or does not. In Daniel it is &lsquo;the moment&rsquo; the music sounds (<a href="daniel-3.html#v3-5">3:5</a>), the &lsquo;times and the seasons&rsquo; that God changes (<a href="daniel-2.html#v2-21">2:21</a>), and ⭐ the &lsquo;seven times&rsquo; that pass over Nebuchadnezzar in <a href="daniel-4.html#v4-13">Daniel 4</a> (now on these pages; verses 13, 20, 22 and 29). How long those were, the Aramaic does not say: the Old Greek and Josephus have &lsquo;seven years&rsquo;, Theodotion keeps &lsquo;seven times&rsquo;, and the NIV and KJV keep &lsquo;seven times&rsquo; while the TLB has &lsquo;seven years&rsquo;. The word returns at Daniel 7:25, &lsquo;a time, times, and half a time&rsquo; (not yet on these pages).""",
+     """A TIME, a set span &mdash; the Aramaic word for a period whose length the context gives, or does not. In Daniel it is &lsquo;the moment&rsquo; the music sounds (<a href="daniel-3.html#v3-5">3:5</a>), the &lsquo;times and the seasons&rsquo; that God changes (<a href="daniel-2.html#v2-21">2:21</a>), and ⭐ the &lsquo;seven times&rsquo; that pass over Nebuchadnezzar in <a href="daniel-4.html#v4-13">Daniel 4</a> (now on these pages; verses 13, 20, 22 and 29). How long those were, the Aramaic does not say: the Old Greek and Josephus have &lsquo;seven years&rsquo;, Theodotion keeps &lsquo;seven times&rsquo;, and the NIV and KJV keep &lsquo;seven times&rsquo; while the TLB has &lsquo;seven years&rsquo;. The word returns at <a href="daniel-7.html#v7-25">Daniel 7:25</a>, &lsquo;a time, times, and half a time&rsquo; (now on these pages).""",
      ("Daniel", 4, 13)),
     ("tsidqah-aram", "tsidqah", "צִדְקָה", "tsidqah",
      """RIGHTEOUSNESS, and in later usage CHARITY &mdash; the Aramaic of the Hebrew <a href="dictionary.html#tzedaqah">tzedaqah</a>. ⭐ It stands once in the Aramaic of the Bible, in Daniel&rsquo;s counsel to Nebuchadnezzar at <a href="daniel-4.html#v4-24">Daniel 4:24</a> (now on these pages): &lsquo;break off your sins by righteousness, and your iniquities by showing mercy to the afflicted&rsquo;. The two halves of the verse can be read as one idea, a righteousness that is mercy to the poor. Both Greek versions read &lsquo;redeem your sins by almsgiving&rsquo;, and the Douay, from the Latin, &lsquo;redeem thou thy sins with alms&rsquo;; the Geneva, KJV and ASV have &lsquo;break off thy sins by righteousness&rsquo;, the NIV &lsquo;Renounce your sins by doing what is right&rsquo;. In later Jewish usage the word means alms, the gift to the poor, as <em>tzedakah</em> does in Hebrew today. This translation prints &lsquo;righteousness&rsquo; and gives the other reading in the note.""",
@@ -49827,7 +49827,7 @@ DICTIONARY_ES["ir-watcher"] = ("‘ir",
 DICTIONARY_ES["ilan"] = ("ilán",
     """UN ÁRBOL —la palabra aramea corriente, que el hebreo posterior adoptó: la Misná fija «el año nuevo del árbol», <em>rosh ha-shaná la-ilán</em>, el primero de Shevat (Rosh Hashaná 1:1), e <em>ilán</em> es la palabra de todos los días para un árbol en el hebreo de hoy. ⭐ En la Biblia solo está en <a href="daniel-4.es.html#v4-7">Daniel 4</a> (ya en estas páginas), en seis versículos: el sueño de Nabucodonosor de un árbol «en medio de la tierra» cuya altura llegaba hasta el cielo, con las bestias del campo debajo y las aves del cielo en sus ramas, derribado hasta el tocón con una atadura de hierro y de bronce; y la respuesta de Daniel, «eres tú, oh rey» (versículo 19).""")
 DICTIONARY_ES["iddan"] = ("‘idán",
-    """UN TIEMPO, un plazo fijo —la palabra aramea para un período cuya duración da el contexto, o no la da. En Daniel es «el momento» en que suena la música (<a href="daniel-3.es.html#v3-5">3:5</a>), «los tiempos y las sazones» que Dios cambia (<a href="daniel-2.es.html#v2-21">2:21</a>), y ⭐ los «siete tiempos» que pasan sobre Nabucodonosor en <a href="daniel-4.es.html#v4-13">Daniel 4</a> (ya en estas páginas; versículos 13, 20, 22 y 29). Cuánto duraron, el arameo no lo dice: el griego antiguo y Josefo tienen «siete años», Teodoción conserva «siete tiempos», y la NVI pone «siete años» donde la RV60 y la TNM 1987 dicen «siete tiempos». La palabra vuelve en Daniel 7:25, «un tiempo, tiempos y medio tiempo» (todavía no en estas páginas).""")
+    """UN TIEMPO, un plazo fijo —la palabra aramea para un período cuya duración da el contexto, o no la da. En Daniel es «el momento» en que suena la música (<a href="daniel-3.es.html#v3-5">3:5</a>), «los tiempos y las sazones» que Dios cambia (<a href="daniel-2.es.html#v2-21">2:21</a>), y ⭐ los «siete tiempos» que pasan sobre Nabucodonosor en <a href="daniel-4.es.html#v4-13">Daniel 4</a> (ya en estas páginas; versículos 13, 20, 22 y 29). Cuánto duraron, el arameo no lo dice: el griego antiguo y Josefo tienen «siete años», Teodoción conserva «siete tiempos», y la NVI pone «siete años» donde la RV60 y la TNM 1987 dicen «siete tiempos». La palabra vuelve en <a href="daniel-7.es.html#v7-25">Daniel 7:25</a>, «un tiempo, tiempos y medio tiempo» (ya en estas páginas).""")
 DICTIONARY_ES["tsidqah-aram"] = ("tsidqá",
     """JUSTICIA, y en el uso posterior CARIDAD —el arameo del hebreo <a href="diccionario.html#tzedaqah">tsedaqá</a>. ⭐ Está una sola vez en el arameo de la Biblia, en el consejo de Daniel a Nabucodonosor en <a href="daniel-4.es.html#v4-24">Daniel 4:24</a> (ya en estas páginas): «rompe con tus pecados mediante la justicia, y con tus iniquidades mostrando misericordia a los afligidos». Las dos mitades del versículo pueden leerse como una sola idea, una justicia que es misericordia con el pobre. Las dos versiones griegas leen «redime tus pecados con limosnas»; la RV 1909 conserva el verbo, «redime tus pecados con justicia», y la RV60 también, «tus pecados redime con justicia»; la NVI tiene «Renuncie usted a sus pecados y actúe con justicia». En el uso judío posterior la palabra significa limosna, el don al pobre, como <em>tsedaká</em> en el hebreo de hoy. Esta traducción imprime «justicia» y da la otra lectura en la nota.""")
 
@@ -49860,10 +49860,10 @@ for _k, _b in [
 
 ENCYCLOPEDIA.extend([
     dict(slug="nabonidus", name="Nabonidus", kind="person", aliases=["Nabonidus"], refs=[("Daniel", 4, 30)], videos=[],
-         desc="""The last king of Babylon (556&ndash;539 BC), not of Nebuchadnezzar&rsquo;s family, and the father of Belshazzar, whom he left in charge at Babylon while he himself stayed about ten years at the oasis of Teima in north-western Arabia; Babylon fell to Cyrus at the end of his reign (all reported, from the Babylonian chronicles and his own inscriptions, not checked here). His name is not in the Bible. ⭐ He matters to <a href="daniel-4.html#v4-30">Daniel 4</a> (now on these pages) because a text found among the Dead Sea Scrolls, the Prayer of Nabonidus, has him struck by an illness for seven years at Teima and healed when a Jewish exile forgave his sins (reported). Some readers think Daniel 4 retells a story first told of Nabonidus under the name of the more famous king; others hold that it records an episode of Nebuchadnezzar&rsquo;s own reign that left no other record. Daniel 5 calls Belshazzar Nebuchadnezzar&rsquo;s son (not yet on these pages)."""),
+         desc="""The last king of Babylon (556&ndash;539 BC), not of Nebuchadnezzar&rsquo;s family, and the father of Belshazzar, whom he left in charge at Babylon while he himself stayed about ten years at the oasis of Teima in north-western Arabia; Babylon fell to Cyrus at the end of his reign (all reported, from the Babylonian chronicles and his own inscriptions, not checked here). His name is not in the Bible. ⭐ He matters to <a href="daniel-4.html#v4-30">Daniel 4</a> (now on these pages) because a text found among the Dead Sea Scrolls, the Prayer of Nabonidus, has him struck by an illness for seven years at Teima and healed when a Jewish exile forgave his sins (reported). Some readers think Daniel 4 retells a story first told of Nabonidus under the name of the more famous king; others hold that it records an episode of Nebuchadnezzar&rsquo;s own reign that left no other record. <a href="daniel-5.html#v5-22">Daniel 5:22</a> calls Belshazzar Nebuchadnezzar&rsquo;s son (now on these pages)."""),
 ])
 ENCYCLOPEDIA_ES["nabonidus"] = ("Nabonido",
-    """El último rey de Babilonia (556-539 a. C.), que no era de la familia de Nabucodonosor, y padre de Belsasar, a quien dejó al mando en Babilonia mientras él pasaba unos diez años en el oasis de Teima, en el noroeste de Arabia; Babilonia cayó ante Ciro al final de su reinado (todo ello referido, según las crónicas babilónicas y sus propias inscripciones, no comprobado aquí). Su nombre no está en la Biblia. ⭐ Importa para <a href="daniel-4.es.html#v4-30">Daniel 4</a> (ya en estas páginas) porque un texto hallado entre los Rollos del Mar Muerto, la Oración de Nabonido, lo presenta herido por una enfermedad durante siete años en Teima y sanado cuando un exiliado judío le perdonó sus pecados (dato referido). Algunos lectores piensan que Daniel 4 vuelve a contar una historia narrada primero de Nabonido con el nombre del rey más famoso; otros sostienen que recoge un episodio del reinado del propio Nabucodonosor que no dejó otro registro. Daniel 5 llama a Belsasar hijo de Nabucodonosor (todavía no en estas páginas).""")
+    """El último rey de Babilonia (556-539 a. C.), que no era de la familia de Nabucodonosor, y padre de Belsasar, a quien dejó al mando en Babilonia mientras él pasaba unos diez años en el oasis de Teima, en el noroeste de Arabia; Babilonia cayó ante Ciro al final de su reinado (todo ello referido, según las crónicas babilónicas y sus propias inscripciones, no comprobado aquí). Su nombre no está en la Biblia. ⭐ Importa para <a href="daniel-4.es.html#v4-30">Daniel 4</a> (ya en estas páginas) porque un texto hallado entre los Rollos del Mar Muerto, la Oración de Nabonido, lo presenta herido por una enfermedad durante siete años en Teima y sanado cuando un exiliado judío le perdonó sus pecados (dato referido). Algunos lectores piensan que Daniel 4 vuelve a contar una historia narrada primero de Nabonido con el nombre del rey más famoso; otros sostienen que recoge un episodio del reinado del propio Nabucodonosor que no dejó otro registro. <a href="daniel-5.es.html#v5-22">Daniel 5:22</a> llama a Belsasar hijo de Nabucodonosor (ya en estas páginas).""")
 ENCYCLOPEDIA_ES["daniel"] = ("Daniel (Beltsasar)",
     """«Dios es mi juez» —un judaíta de familia noble llevado a Babilonia en la primera deportación (605 a. C.) y que recibió el nombre babilonio de BELTSASAR (1:7). Formado para la corte real, rechaza la comida del rey, resulta diez veces más sabio que los magos y llega a gobernar la provincia de Babilonia después de revelar e interpretar el sueño de Nabucodonosor (cap. 2), el primero de una serie en la que lee lo que ningún sabio puede leer: la escritura en la pared de Belsasar y sus propias visiones de las cuatro bestias, las setenta semanas y la resurrección. Librado del foso de los leones bajo Darío, sirve hasta el período persa. El libro lleva su nombre y, desde el capítulo 7, habla con su propia voz («Yo, Daniel»). Sus tres amigos son SADRAC, MESAC y ABED-NEGO. ⭐ En <a href="daniel-4.es.html#v4-5">Daniel 4:5</a> (ya en estas páginas) Nabucodonosor explica el nombre: «según el nombre de mi dios».""")
 
@@ -51115,7 +51115,7 @@ DICTIONARY.extend([
      """TO ATTACH, to join on to. Its simple form is the plea of Eli&rsquo;s descendants, &lsquo;Please attach me to one of the priest&rsquo;s offices&rsquo; (<a href="1-samuel-2.html#v2-36">1 Samuel 2:36</a>, now on these pages). <span data-heb="הסתפח">Its reflexive form, &lsquo;to attach oneself&rsquo;, stands in one verse of the Hebrew Bible</span>: David&rsquo;s complaint that men &lsquo;have driven me out today from attaching myself to the inheritance of Jehovah, saying: &ldquo;Go, serve other gods&rdquo;&rsquo; (<a href="1-samuel-26.html#v26-19">1 Samuel 26:19</a>, now on these pages).""",
      ("1 Samuel", 26, 19)),
     ("qore", "qore", "קֹרֵא", "qore",
-     """THE PARTRIDGE, literally &lsquo;the caller&rsquo;, the bird named for its cry; the same letters are the participle of <em>qara</em>, to call. David to Saul: &lsquo;the king of Israel has come out to seek a single flea, as one hunts the partridge in the mountains&rsquo; (<a href="1-samuel-26.html#v26-20">1 Samuel 26:20</a>, now on these pages), spoken from a mountain top by the man who has just &lsquo;called out&rsquo; to Abner. The Greek has <em>nyktikorax</em>, the night-raven. Jeremiah has the bird once more: &lsquo;As the partridge that broods but does not hatch, so is he who gets riches, and not by right&rsquo;, a proverb that ends &lsquo;and at his end he will be a fool&rsquo;, <em>naval</em> (Jeremiah 17:11, not yet on these pages).""",
+     """THE PARTRIDGE, literally &lsquo;the caller&rsquo;, the bird named for its cry; the same letters are the participle of <em>qara</em>, to call. David to Saul: &lsquo;the king of Israel has come out to seek a single flea, as one hunts the partridge in the mountains&rsquo; (<a href="1-samuel-26.html#v26-20">1 Samuel 26:20</a>, now on these pages), spoken from a mountain top by the man who has just &lsquo;called out&rsquo; to Abner. The Greek has <em>nyktikorax</em>, the night-raven. Jeremiah has the bird once more: &lsquo;As the partridge that broods but does not hatch, so is he who gets riches, and not by right&rsquo;, a proverb that ends &lsquo;and at his end he will be a fool&rsquo;, <em>naval</em> (<a href="jeremiah-17.html#v17-11">Jeremiah 17:11</a>, now on these pages).""",
      ("1 Samuel", 26, 20)),
 ])
 DICTIONARY_ES["chanit"] = ("janit",
@@ -51129,7 +51129,7 @@ DICTIONARY_ES["sut"] = ("sut (hesit)",
 DICTIONARY_ES["safach"] = ("safaj (histappéaj)",
     'AGREGAR, unir a algo. Su forma simple es la súplica de los descendientes de Elí, «Te ruego que me agregues a alguno de los oficios del sacerdote» (<a href="1-samuel-2.es.html#v2-36">1 Samuel 2:36</a>, ya en estas páginas). <span data-heb="הסתפח">Su forma reflexiva, «unirse», está en un solo versículo de la Biblia hebrea</span>: la queja de David de que unos hombres «me han expulsado hoy para que no me una a la heredad de Jehová, diciendo: “Ve, sirve a otros dioses”» (<a href="1-samuel-26.es.html#v26-19">1 Samuel 26:19</a>, ya en estas páginas).')
 DICTIONARY_ES["qore"] = ("qoré",
-    'LA PERDIZ, literalmente «la que llama», el ave nombrada por su grito; las mismas letras son el participio de <em>qará</em>, llamar. David a Saúl: «el rey de Israel ha salido a buscar una sola pulga, como quien persigue a la perdiz por los montes» (<a href="1-samuel-26.es.html#v26-20">1 Samuel 26:20</a>, ya en estas páginas), dicho desde la cumbre de un monte por el hombre que acaba de «llamar» a Abner. El griego tiene <em>nyktikórax</em>, el cuervo nocturno. Jeremías tiene el ave una vez más: «Como la perdiz que empolla pero no saca cría, así es el que junta riquezas, y no con justicia», un proverbio que termina «y en su final será un necio», <em>naval</em> (Jeremías 17:11, todavía no en estas páginas).')
+    'LA PERDIZ, literalmente «la que llama», el ave nombrada por su grito; las mismas letras son el participio de <em>qará</em>, llamar. David a Saúl: «el rey de Israel ha salido a buscar una sola pulga, como quien persigue a la perdiz por los montes» (<a href="1-samuel-26.es.html#v26-20">1 Samuel 26:20</a>, ya en estas páginas), dicho desde la cumbre de un monte por el hombre que acaba de «llamar» a Abner. El griego tiene <em>nyktikórax</em>, el cuervo nocturno. Jeremías tiene el ave una vez más: «Como la perdiz que empolla pero no saca cría, así es el que junta riquezas, y no con justicia», un proverbio que termina «y en su final será un necio», <em>naval</em> (<a href="jeremiah-17.es.html#v17-11">Jeremías 17:11</a>, ya en estas páginas).')
 
 # encyclopedia: refs + additions to existing entries
 _REF1S26 = {"ziph": [("1 Samuel", 26, 1)], "hachilah": [("1 Samuel", 26, 1)], "jeshimon": [("1 Samuel", 26, 1)],
@@ -51421,8 +51421,8 @@ _dict1s28_en("qesem", add=' ⭐ The verb is what Saul asks of the woman at En-do
 _dict1s28_es("qesem", add=' ⭐ El verbo es lo que Saúl pide a la mujer de Endor: «Adivíname, te ruego, por el espíritu de muerto», <em>qosomí-na li ba-ov</em> (<a href="1-samuel-28.es.html#v28-8">1 Samuel 28:8</a>, ya en estas páginas), el rey a quien Samuel había dicho «la rebelión es pecado de adivinación».')
 _dict1s28_en("shaal", add=' ⭐ The name and the verb meet at the end of Saul&rsquo;s life: &lsquo;And Saul asked of Jehovah, and Jehovah did not answer him&rsquo; (<a href="1-samuel-28.html#v28-6">1 Samuel 28:6</a>), and the risen Samuel asks him &lsquo;Why then do you ask me?&rsquo; (28:16, both now on these pages).')
 _dict1s28_es("shaal", add=' ⭐ El nombre y el verbo se encuentran al final de la vida de Saúl: «Y Saúl preguntó a Jehová, y Jehová no le respondió» (<a href="1-samuel-28.es.html#v28-6">1 Samuel 28:6</a>), y Samuel, que ha subido, le pregunta «¿Y por qué me preguntas a mí?» (28:16, ambos ya en estas páginas).')
-_dict1s28_en("ragaz", add=' ⭐ Samuel&rsquo;s first words at En-dor: &lsquo;Why have you disturbed me, by bringing me up?&rsquo;, <em>hirgaztani</em> (<a href="1-samuel-28.html#v28-15">1 Samuel 28:15</a>, now on these pages), the verb Isaiah uses of Sheol &lsquo;stirred up&rsquo; to meet the king of Babylon (Isaiah 14:9, not yet on these pages).')
-_dict1s28_es("ragaz", add=' ⭐ Las primeras palabras de Samuel en Endor: «¿Por qué me has perturbado, haciéndome subir?», <em>hirgaztaní</em> (<a href="1-samuel-28.es.html#v28-15">1 Samuel 28:15</a>, ya en estas páginas), el verbo que Isaías usa del Seol que «se agita» para salir al encuentro del rey de Babilonia (Isaías 14:9, todavía no en estas páginas).')
+_dict1s28_en("ragaz", add=' ⭐ Samuel&rsquo;s first words at En-dor: &lsquo;Why have you disturbed me, by bringing me up?&rsquo;, <em>hirgaztani</em> (<a href="1-samuel-28.html#v28-15">1 Samuel 28:15</a>, now on these pages), the verb Isaiah uses of Sheol &lsquo;stirred up&rsquo; to meet the king of Babylon (<a href="isaiah-14.html#v14-9">Isaiah 14:9</a>, now on these pages).')
+_dict1s28_es("ragaz", add=' ⭐ Las primeras palabras de Samuel en Endor: «¿Por qué me has perturbado, haciéndome subir?», <em>hirgaztaní</em> (<a href="1-samuel-28.es.html#v28-15">1 Samuel 28:15</a>, ya en estas páginas), el verbo que Isaías usa del Seol que «se agita» para salir al encuentro del rey de Babilonia (<a href="isaiah-14.es.html#v14-9">Isaías 14:9</a>, ya en estas páginas).')
 
 # new dictionary entries
 DICTIONARY.extend([
@@ -52541,10 +52541,10 @@ def _dict8_es(slug, old=None, new=None, add=None):
     DICTIONARY_ES[slug] = (_h, _s)
 
 DICTIONARY.append(("methegh", "metheg", "מֶתֶג", "metheg",
-    'A BRIDLE &mdash; <em>metheg</em>, the bit or bridle of a horse or donkey (Psalm 32:9; Proverbs 26:3, not yet on these pages). <a href="2-samuel-8.html#v8-1">2 Samuel 8:1</a> (now on these pages) says David took &lsquo;Metheg-ha-ammah&rsquo; out of the hand of the Philistines; <span data-heb="מתג האמה">the name stands in one verse of the Hebrew Bible</span>. <em>Ammah</em> is a cubit, a forearm or a conduit, and some read the whole &lsquo;the bridle of the mother (city)&rsquo;, while the Chronicles have &lsquo;Gath and its towns&rsquo; in its place (1 Chronicles 18:1, not yet on these pages). ⚠ Nothing in the Hebrew says what it was.',
+    'A BRIDLE &mdash; <em>metheg</em>, the bit or bridle of a horse or donkey (<a href="psalms-32.html#v32-9">Psalm 32:9</a>, now on these pages; Proverbs 26:3, not yet on these pages). <a href="2-samuel-8.html#v8-1">2 Samuel 8:1</a> (now on these pages) says David took &lsquo;Metheg-ha-ammah&rsquo; out of the hand of the Philistines; <span data-heb="מתג האמה">the name stands in one verse of the Hebrew Bible</span>. <em>Ammah</em> is a cubit, a forearm or a conduit, and some read the whole &lsquo;the bridle of the mother (city)&rsquo;, while the Chronicles have &lsquo;Gath and its towns&rsquo; in its place (1 Chronicles 18:1, not yet on these pages). ⚠ Nothing in the Hebrew says what it was.',
     ("2 Samuel", 8, 1)))
 DICTIONARY_ES["methegh"] = ("méteg",
-    'UN FRENO &mdash; <em>metheg</em>, el bocado o freno de un caballo o un asno (Salmo 32:9; Proverbios 26:3, todavía no en estas páginas). <a href="2-samuel-8.es.html#v8-1">2 Samuel 8:1</a> (ya en estas páginas) dice que David tomó «Meteg-ha-ama» de mano de los filisteos; <span data-heb="מתג האמה">el nombre está en un versículo de la Biblia hebrea</span>. <em>Ammah</em> es un codo, un antebrazo o una conducción de agua, y algunos leen el conjunto «el freno de la ciudad madre», mientras que Crónicas tiene «Gat y sus aldeas» en su lugar (1 Crónicas 18:1, todavía no en estas páginas). ⚠ Nada en el hebreo dice qué era.')
+    'UN FRENO &mdash; <em>metheg</em>, el bocado o freno de un caballo o un asno (<a href="psalms-32.es.html#v32-9">Salmo 32:9</a>, ya en estas páginas; Proverbios 26:3, todavía no en estas páginas). <a href="2-samuel-8.es.html#v8-1">2 Samuel 8:1</a> (ya en estas páginas) dice que David tomó «Meteg-ha-ama» de mano de los filisteos; <span data-heb="מתג האמה">el nombre está en un versículo de la Biblia hebrea</span>. <em>Ammah</em> es un codo, un antebrazo o una conducción de agua, y algunos leen el conjunto «el freno de la ciudad madre», mientras que Crónicas tiene «Gat y sus aldeas» en su lugar (1 Crónicas 18:1, todavía no en estas páginas). ⚠ Nada en el hebreo dice qué era.')
 
 DICTIONARY.append(("shelet", "shelet", "שֶׁלֶט", "shelet",
     'A GOLD SHIELD (?) &mdash; <em>shelet</em>, the gold things on the servants of Hadadezer that David took and brought to Jerusalem (<a href="2-samuel-8.html#v8-7">2 Samuel 8:7</a>, now on these pages). <span data-heb="שלטי הזהב">&lsquo;The shields of gold&rsquo; stands in two verses of the Hebrew Bible</span>, this one and 1 Chronicles 18:7 (not yet on these pages). ⚠ The meaning is not certain: the shelf has &lsquo;shields&rsquo; (ASV, NIV), &lsquo;circular shields&rsquo; (NWT 1984) and &lsquo;arms&rsquo; (Douay), and the Greek &lsquo;bracelets&rsquo;.',
@@ -58038,3 +58038,5273 @@ CHAPTER_ART["habakkuk3"] = [dict(
 
 DICTIONARY_ES["massa"] = ("massa",
     "CARGA &mdash; o pronunciamiento. Se apoya en <em>nasa</em>, &laquo;levantar&raquo;, de modo que puede significar una CARGA levantada sobre los hombros o una VOZ levantada; los profetas lo usan para encabezar un or&aacute;culo y las versiones se dividen (la KJV y la ASV &laquo;burden&raquo;, la NWT &laquo;pronouncement&raquo;, la NIV &laquo;prophecy&raquo;). Es la primera palabra de Malaqu&iacute;as, y la misma ra&iacute;z pregunta dos vers&iacute;culos despu&eacute;s si alguien &laquo;alzar&aacute; tu rostro&raquo;. &#11088; Jeh&uacute; dice que Jehov&aacute; &laquo;levant&oacute; esta carga&raquo; contra Acab, y la cita (2 Reyes 9:25, ya en estas p&aacute;ginas). &#9888; <a href=\"habakkuk-1.es.html#v1\">Habacuc 1:1</a> llama &laquo;carga&raquo; a lo que ve el profeta, y <a href=\"habakkuk-3.es.html#v1\">Habacuc 3:1</a> llama &laquo;oraci&oacute;n&raquo; a lo que dice.")
+
+# --- Psalm 22 ---
+import re as _re22
+def _one22(s, old, new, rx=False):
+    if rx:
+        assert len(_re22.findall(old, s)) == 1, (old[:70], len(_re22.findall(old, s)))
+        return _re22.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict22_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict22_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one22(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency22_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency22_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P22(es, txt, n):
+    return '<a href="psalms-22.%shtml#v22-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+assert not any(_d[0] in ("azav", "kaari", "dunag", "ayyelet") for _d in DICTIONARY)
+DICTIONARY.append(("azav", "azav", "עָזַב", "azav",
+    'TO FORSAKE, to leave behind, to let go &mdash; the verb of the cry &lsquo;My God, my God, why have you forsaken me?&rsquo; (<a href="psalms-22.html#v22-2">Psalm 22:2</a> in the Hebrew numbering, 22:1 in an English Bible, now on these pages). &#11088; <span data-heb="עזבתני">&lsquo;You have forsaken me&rsquo; (<em>azavtani</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: here, and <a href="deuteronomy-28.html#v28-20">Deuteronomy 28:20</a> (now on these pages), where God says it of Israel, &lsquo;because of the evil of your deeds, in that you have forsaken me&rsquo;. Matthew and Mark put the psalm&rsquo;s line on Jesus at the cross (<a href="matthew-27.html#v27-46">Matthew 27:46</a>; <a href="mark-15.html#v15-34">Mark 15:34</a>, now on these pages); the Greek verb is <a href="dictionary.html#enkataleipo">enkataleipo</a>. &#9888; The NWT 1984 and the TNM 1987 have &lsquo;left me&rsquo; and &lsquo;dejado&rsquo;.',
+    ("Psalms", 22, 2)))
+DICTIONARY_ES["azav"] = ("azav",
+    'ABANDONAR, dejar atrás, soltar &mdash;el verbo del grito «Dios mío, Dios mío, ¿por qué me has abandonado?» (<a href="psalms-22.es.html#v22-2">Salmo 22:2</a> en la numeración hebrea, 22:1 en una Biblia castellana, ya en estas páginas). &#11088; <span data-heb="עזבתני">«Me has abandonado» (<em>azavtaní</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: aquí, y <a href="deuteronomy-28.es.html#v28-20">Deuteronomio 28:20</a> (ya en estas páginas), donde Dios lo dice de Israel, «a causa de la maldad de tus obras, por la que me has abandonado». Mateo y Marcos ponen la línea del salmo en Jesús en la cruz (<a href="matthew-27.es.html#v27-46">Mateo 27:46</a>; <a href="mark-15.es.html#v15-34">Marcos 15:34</a>, ya en estas páginas); el verbo griego es <a href="diccionario.html#enkataleipo">enkataleipo</a>. &#9888; La RV60 tiene «desamparado» y la RV 1909 y la TNM 1987 «dejado».')
+
+DICTIONARY.append(("kaari", "ka'ari / ka'aru", "כָּאֲרִי", "ka'ari",
+    '&lsquo;LIKE A LION&rsquo; &mdash; and the word whose reading divides the shelf. <span data-heb="כארי ידי ורגלי">&lsquo;Like a lion, my hands and my feet&rsquo; (<em>ka&rsquo;ari yadai ve-raglai</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="psalms-22.html#v22-17">Psalm 22:17</a> in the Hebrew numbering (22:16 in an English Bible, now on these pages), and it has no verb. The printed Hebrew reads <em>ka&rsquo;ari</em>, &lsquo;like a lion&rsquo;. The Greek Psalter reads &lsquo;they dug my hands and my feet&rsquo; (<em>ōryxan</em>), and the Douay follows it; the KJV, ASV, Geneva, NIV and TLB have &lsquo;pierced&rsquo;; the NWT 1984 keeps the Hebrew, &lsquo;Like a lion [they are at] my hands and my feet&rsquo;. Rashi, Radak and Ibn Ezra all keep &lsquo;like a lion&rsquo;, and Radak, writing against the Christian reading of the psalm, says the word was altered from <em>ka&rsquo;ari</em> to <em>ka&rsquo;aru</em>, &lsquo;they dug&rsquo; (Exodus 21:33). &#9888; A Dead Sea scroll of Psalms from Nahal Hever is reported to read <em>ka&rsquo;aru</em>; that report was not checked. The translation prints the Hebrew as it stands.',
+    ("Psalms", 22, 17)))
+DICTIONARY_ES["kaari"] = ("ka'ari / ka'aru",
+    '«COMO LEÓN» &mdash;y la palabra cuya lectura divide el estante. <span data-heb="כארי ידי ורגלי">«Como león, mis manos y mis pies» (<em>ka&rsquo;ari yadai ve-raglai</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="psalms-22.es.html#v22-17">Salmo 22:17</a> en la numeración hebrea (22:16 en una Biblia castellana, ya en estas páginas), y no tiene verbo. El hebreo impreso lee <em>ka&rsquo;ari</em>, «como león». El Salterio griego lee «cavaron mis manos y mis pies» (<em>ōryxan</em>); la RV60, la RV 1909 y la NVI tienen «horadaron» y «traspasado»; la TNM 1987 mantiene el hebreo, «Como un león acometen mis manos y mis pies». Rashi, Radak e Ibn Ezra mantienen todos «como león», y Radak, escribiendo contra la lectura cristiana del salmo, dice que la palabra fue alterada de <em>ka&rsquo;ari</em> a <em>ka&rsquo;aru</em>, «cavaron» (Éxodo 21:33). &#9888; Un rollo del Mar Muerto de los Salmos de Najal Hever se cuenta que lee <em>ka&rsquo;aru</em>; ese dato no se comprobó. La traducción imprime el hebreo tal como está.')
+
+DICTIONARY.append(("dunag", "donag", "דּוֹנַג", "donag",
+    'WAX &mdash; what melts. &#11088; <span data-heb="דונג">The word stands in <strong>four verses</strong> of the Hebrew Bible</span>: the psalmist&rsquo;s heart in <a href="psalms-22.html#v22-15">Psalm 22:15</a> (22:14 in an English Bible, now on these pages), &lsquo;like wax, melted within my innards&rsquo;, and Micah 1:4, Psalms 68:3 and 97:5, where mountains melt like wax and the wicked perish like wax before fire (those three not yet on these pages). &#9888; The ASV, KJV and NIV have &lsquo;wax&rsquo; and the Greek Psalter <em>kēros</em>.',
+    ("Psalms", 22, 15)))
+DICTIONARY_ES["dunag"] = ("donag",
+    'CERA &mdash;lo que se derrite. &#11088; <span data-heb="דונג">La palabra está en <strong>cuatro versículos</strong> de la Biblia hebrea</span>: el corazón del salmista en el <a href="psalms-22.es.html#v22-15">Salmo 22:15</a> (22:14 en una Biblia castellana, ya en estas páginas), «como cera, derretido dentro de mis entrañas», y Miqueas 1:4, Salmos 68:3 y 97:5, donde los montes se derriten como cera y los impíos perecen como cera ante el fuego (esos tres todavía no en estas páginas). &#9888; La RV60, la RV 1909, la NVI y la TNM 1987 tienen «cera», y el Salterio griego <em>kēros</em>.')
+
+DICTIONARY.append(("ayyelet", "ayyelet", "אַיֶּלֶת", "ayyelet",
+    'A HIND, a doe &mdash; the female of the deer. &#11088; It is in the heading of <a href="psalms-22.html#v22-1">Psalm 22</a> (now on these pages), &lsquo;On &ldquo;The Hind of the Dawn&rdquo;&rsquo;, <em>ayyelet ha-shachar</em>. Rashi gives an instrument, or Israel the beloved hind who looks forth like the dawn (Song 6:10, not yet on these pages), and the Sages&rsquo; Esther; Radak adds a psalm sung at first light, the morning star, and David fleeing Saul; Ibn Ezra rejects the instrument and takes it as the opening of a love song, &lsquo;a loving hind&rsquo; (Proverbs 5:19, not yet on these pages). &#9888; Not the same word as <em>eyaluti</em>, &lsquo;my strength&rsquo;, in verse 20, though Radak connects them.',
+    ("Psalms", 22, 1)))
+DICTIONARY_ES["ayyelet"] = ("ayyelet",
+    'UNA CIERVA, una cierva joven &mdash;la hembra del ciervo. &#11088; Está en el encabezamiento del <a href="psalms-22.es.html#v22-1">Salmo 22</a> (ya en estas páginas), «Sobre &ldquo;La cierva del alba&rdquo;», <em>ayyelet ha-shájar</em>. Rashi da un instrumento, o Israel la cierva amada que se asoma como el alba (Cantares 6:10, todavía no en estas páginas), y la Ester de los Sabios; Radak añade un salmo cantado al despuntar la luz, el lucero de la mañana y David huyendo de Saúl; Ibn Ezra rechaza el instrumento y lo toma como el comienzo de un canto de amor, «cierva amorosa» (Proverbios 5:19, todavía no en estas páginas). &#9888; No es la misma palabra que <em>eyalutí</em>, «fuerza mía», en el versículo 20, aunque Radak las conecta.')
+
+# ES twins that did not exist
+DICTIONARY_ES["shaag"] = ("sha'ag",
+    'RUGIR &mdash;específicamente el rugido de un LEÓN, y en el uso hebreo sobre todo el rugido sobre la presa, el sonido que se hace después de matar y no mientras se caza. &#9888; Es lo primero que hace Dios en el libro de Amós («Jehová RUGE desde Sión», 1:2), y lo da un hombre que había pasado la vida en el borde del desierto de Judá, donde el sonido era un peligro de trabajo y no una imagen. Amós lo hace suyo en 3:8: «un león ha rugido, ¿quién no temerá? El Señor Jehová ha hablado, ¿quién no profetizará?». El mismo verbo se usa de Dios en Jeremías 25:30, Oseas 11:10 y Joel 4:16, y de los enemigos en los Salmos; 1 Pedro 5:8 se lo da, en griego, al adversario (<em>ōryomai</em>). &#11088; En el <a href="psalms-22.es.html#v22-2">Salmo 22</a> (ya en estas páginas) el sustantivo <em>sha&rsquo;agá</em> es el «rugido» del salmista en el versículo 2, y el verbo es el del león que «despedaza y ruge» en el versículo 14.')
+DICTIONARY_ES["sapar"] = ("sapar",
+    'CONTAR, y por tanto RELATAR &mdash;decir una cosa de principio a fin. Los dos sentidos siguen unidos: la misma raíz da «número» (<em>mispár</em>) y «rollo» (<em>séfer</em>). Lleva el propósito que Dios declara para las plagas: «para que mi nombre sea DECLARADO en toda la tierra» (Éxodo 9:16) y «para que RELATES a oídos de tu hijo y del hijo de tu hijo» (10:2). &#9888; Ese segundo uso hace de las plagas un relato que se está haciendo a propósito: la liberación está diseñada desde el principio para ser contada, por lo que la Pascua se guarda con un niño que pregunta y un padre que responde. «Los cielos RELATAN la gloria de Dios» (Salmo 19:1) es el mismo verbo. &#11088; El <a href="psalms-22.es.html#v22-18">Salmo 22</a> (ya en estas páginas) lo usa tres veces: «puedo contar todos mis huesos» (versículo 18), «contaré tu nombre a mis hermanos» (23) y «se contará del Señor a la generación» (31).')
+
+# ---------- dictionary: stale "not yet" fixed and extended ----------
+_dict22_en("galal", "(Psalm 22:9, not yet on these pages;", "(" + _P22(False, 'Psalm 22:9', 9) + ", now on these pages;")
+_dict22_es("galal", "(Salmo 22:9, todavía no en estas páginas;", "(" + _P22(True, 'Salmo 22:9', 9) + ", ya en estas páginas;")
+_dict22_en("enkataleipo", "from Psalm 22:1 (22:2 in the Hebrew);", "from Psalm 22:1 (" + _P22(False, '22:2 in the Hebrew', 2) + ", now on these pages);")
+_dict22_es("enkataleipo", "del Salmo 22:1 (22:2 en el hebreo);", "del Salmo 22:1 (" + _P22(True, '22:2 en el hebreo', 2) + ", ya en estas páginas);")
+_dict22_en("oryomai", "In the Greek of Psalm 22:13 (21:14 in the Greek numbering)", "In the Greek of Psalm 22:13 (" + _P22(False, '22:14 in the Hebrew', 14) + ", 21:14 in the Greek numbering)")
+_dict22_es("oryomai", "En el griego del Salmo 22:13 (21:14 en la numeración griega)", "En el griego del Salmo 22:13 (" + _P22(True, '22:14 en el hebreo', 14) + ", 21:14 en la numeración griega)")
+_dict22_en("oryomai", "(both checked; Psalm 22 not yet on these pages)", "(both checked; Psalm 22 now on these pages)")
+_dict22_es("oryomai", "(ambos comprobados; Salmo 22 todavía no en estas páginas)", "(ambos comprobados; Salmo 22 ya en estas páginas)")
+_dict22_en("yachid", add=' &#11088; <span data-heb="יחידתי">&lsquo;My only one&rsquo; (<em>yechidati</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="psalms-22.html#v22-21">Psalm 22:21</a> (now on these pages), &lsquo;my soul from the sword, my only one from the hand of the dog&rsquo;, and Psalm 35:17 (not yet on these pages).')
+_dict22_es("yachid", add=' &#11088; <span data-heb="יחידתי">«Mi única» (<em>yejidatí</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="psalms-22.es.html#v22-21">Salmo 22:21</a> (ya en estas páginas), «mi alma de la espada, mi única de la mano del perro», y Salmo 35:17 (todavía no en estas páginas).')
+_dict22_en("goral", add=' &#11088; <a href="psalms-22.html#v22-19">Psalm 22:19</a> (now on these pages) is the verse behind the soldiers&rsquo; lots at the cross: &lsquo;they cast lots&rsquo; is, literally, &lsquo;make a lot fall&rsquo; (<em>hippil goral</em>).')
+_dict22_es("goral", add=' &#11088; El <a href="psalms-22.es.html#v22-19">Salmo 22:19</a> (ya en estas páginas) es el versículo detrás de las suertes de los soldados en la cruz: «echan suertes» es, literalmente, «hacen caer una suerte» (<em>hippíl gorál</em>).')
+_dict22_en("tolaat", add=' &#11088; &lsquo;But I am a worm and not a man&rsquo; is <a href="psalms-22.html#v22-7">Psalm 22:7</a> (now on these pages).')
+_dict22_es("tolaat", add=' &#11088; «Pero yo soy un gusano y no un hombre» es el <a href="psalms-22.es.html#v22-7">Salmo 22:7</a> (ya en estas páginas).')
+_dict22_en("reem", add=' &#11088; &lsquo;From the horns of the wild oxen you have answered me&rsquo; is the turn of <a href="psalms-22.html#v22-22">Psalm 22:22</a> (now on these pages); the KJV has &lsquo;unicorns&rsquo;.')
+_dict22_es("reem", add=' &#11088; «Y de los cuernos de los toros salvajes me has respondido» es el giro del <a href="psalms-22.es.html#v22-22">Salmo 22:22</a> (ya en estas páginas); la RV 1909 tiene «unicornios».')
+_dict22_en("natsal", add=' &#11088; Psalm 22 uses it for &lsquo;rescue&rsquo; at verses 9 and 21, apart from <em>palat</em>, &lsquo;deliver&rsquo;, and <em>malat</em>, &lsquo;escape&rsquo; (<a href="psalms-22.html#v22-9">Psalm 22:9, 21</a>, now on these pages).')
+_dict22_es("natsal", add=' &#11088; El Salmo 22 lo usa para «rescatar» en los versículos 9 y 21, aparte de <em>palat</em>, «librar», y <em>malat</em>, «escapar» (<a href="psalms-22.es.html#v22-9">Salmo 22:9, 21</a>, ya en estas páginas).')
+_dict22_en("qahal", add=' &#11088; &lsquo;In the midst of the congregation I will praise you&rsquo; is <a href="psalms-22.html#v22-23">Psalm 22:23</a> (now on these pages), the line Hebrews 2:12 quotes.')
+_dict22_es("qahal", add=' &#11088; «En medio de la congregación te alabaré» es el <a href="psalms-22.es.html#v22-23">Salmo 22:23</a> (ya en estas páginas), la línea que cita Hebreos 2:12.')
+_dict22_en("kelev", add=' &#11088; &lsquo;Dogs have surrounded me&rsquo; and &lsquo;the hand of the dog&rsquo; (<a href="psalms-22.html#v22-17">Psalm 22:17, 21</a>, now on these pages).')
+_dict22_es("kelev", add=' &#11088; «Perros me han rodeado» y «la mano del perro» (<a href="psalms-22.es.html#v22-17">Salmo 22:17, 21</a>, ya en estas páginas).')
+_dict22_en("shaag", add=' &#11088; In <a href="psalms-22.html#v22-2">Psalm 22</a> (now on these pages) the noun <em>sha&rsquo;agah</em> is the psalmist&rsquo;s own &lsquo;roaring&rsquo; in verse 2, and the verb is the lion&rsquo;s at verse 14.')
+_dict22_en("sapar", add=' &#11088; <a href="psalms-22.html#v22-18">Psalm 22</a> (now on these pages) uses it three times: &lsquo;I can count all my bones&rsquo; (verse 18), &lsquo;I will recount your name to my brothers&rsquo; (23) and &lsquo;it shall be recounted of the Lord to the generation&rsquo; (31).')
+_dict22_en("batach", add=' &#11088; <a href="psalms-22.html#v22-5">Psalm 22:5&ndash;6</a> (now on these pages) says it three times of the fathers, and verse 10 of the baby at the breast.')
+_dict22_es("batach", add=' &#11088; El <a href="psalms-22.es.html#v22-5">Salmo 22:5–6</a> (ya en estas páginas) lo dice tres veces de los padres, y el versículo 10 del bebé en el pecho.')
+_dict22_en("anav", add=' &#11088; &lsquo;The humble shall eat and be satisfied&rsquo; (<a href="psalms-22.html#v22-27">Psalm 22:27</a>, now on these pages).')
+_dict22_es("anav", add=' &#11088; «Comerán los humildes y se saciarán» (<a href="psalms-22.es.html#v22-27">Salmo 22:27</a>, ya en estas páginas).')
+_dict22_en("melukhah", add=' &#11088; &lsquo;For the kingship is Jehovah&rsquo;s&rsquo; (<a href="psalms-22.html#v22-29">Psalm 22:29</a>, now on these pages).')
+_dict22_es("melukhah", add=' &#11088; «Porque de Jehová es el reino» (<a href="psalms-22.es.html#v22-29">Salmo 22:29</a>, ya en estas páginas).')
+_dict22_en("chefets", add=' &#11088; The mockers say it of the sufferer, &lsquo;let him deliver him, for he delights in him&rsquo; (<a href="psalms-22.html#v22-9">Psalm 22:9</a>, now on these pages).')
+_dict22_es("chefets", add=' &#11088; Los burladores lo dicen del que sufre, «que lo libre, porque se deleita en él» (<a href="psalms-22.es.html#v22-9">Salmo 22:9</a>, ya en estas páginas).')
+_ency22_en("bashan", add=' &#11088; &lsquo;The mighty ones of Bashan&rsquo; are the bulls that surround the psalmist (<a href="psalms-22.html#v22-13">Psalm 22:13</a>, now on these pages).')
+_ency22_es("bashan", add=' &#11088; «Los fuertes de Basán» son los toros que rodean al salmista (<a href="psalms-22.es.html#v22-13">Salmo 22:13</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["psalms22"] = dict(era="monarchy",
+    when="“My God, my God, why have you forsaken me”: a psalm of David, headed “The Hind of the Dawn”, in which a sufferer who calls by day and by night with no answer remembers the fathers who trusted, is mocked as a worm, is surrounded by bulls, dogs and a lion, and has every bone counted and his garments divided; at verse 22 he says he has been answered, and the psalm turns to praise in the congregation, the humble who eat, the ends of the earth, and a people yet to be born.",
+    clock="The heading names no event and the psalm names none; it is not dated beyond “a psalm of David”. Matthew and Mark put its opening line on Jesus at the cross, and Matthew, Mark and John put verse 19 on the soldiers; the psalm itself says nothing of a cross.")
+
+CHAPTER_ART["psalms22"] = [dict(
+    file="psalter-psalm-21-initial-d-12th-century.jpg",
+    title="Initial D of Psalm 22 (Vulgate 21), St Albans Psalter", title_es="Inicial D del Salmo 22 (Vulgata 21), Salterio de St Albans",
+    artist="Unknown artist", artist_es="Artista desconocido",
+    year="12th century",
+    location="St Albans Psalter (Albani-Psalter), via Commons (cropped)", location_es="Salterio de St Albans (Albani-Psalter), vía Commons (recortado)",
+    alt="A decorated capital D from a medieval psalter, in red, blue, green and gold. Inside the letter a bare-chested man in a cloth around his waist is caught among bulls, dogs and other beasts that press up from below and from the sides; he raises his arms and kicks out a leg. A few words of the Latin text show at the right edge.",
+    alt_es="Una letra D capital decorada de un salterio medieval, en rojo, azul, verde y oro. Dentro de la letra, un hombre con el torso desnudo y un paño en la cintura está atrapado entre toros, perros y otras bestias que lo aprietan desde abajo y por los lados; levanta los brazos y alza una pierna. Unas pocas palabras del texto latino se ven en el borde derecho.",
+    note="Psalm 22:13&ndash;17. The Latin Bibles number this psalm 21, and its first words, <em>Deus, Deus meus, respice in me</em>, are the ones this capital opens. The beasts are the bulls, the dogs and the lion of the psalm; the Commons file describes the initial and does not say which verse the artist had in mind.",
+    note_es="Salmo 22:13–17. Las Biblias latinas numeran este salmo 21, y sus primeras palabras, <em>Deus, Deus meus, respice in me</em>, son las que abre esta capital. Las bestias son los toros, los perros y el león del salmo; el archivo de Commons describe la inicial y no dice qué versículo tenía en mente el artista.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Psalm_21_Initial_D_(cropped).jpg",
+)]
+
+# --- Isaiah 43 ---
+import re as _re43
+def _one43(s, old, new):
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict43_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one43(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict43_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one43(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency43_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency43_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _I43(es, txt, n):
+    return '<a href="isaiah-43.%shtml#v43-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+assert not any(_d[0] in ("qaneh", "ani-hu") for _d in DICTIONARY)
+assert not any(_e["slug"] == "seba" for _e in ENCYCLOPEDIA)
+DICTIONARY.append(("qaneh", "qaneh", "קָנֶה", "qaneh",
+    'A CANE, a reed &mdash; and, in the incense and the anointing oil, the aromatic cane, calamus. &#11088; &lsquo;You have not bought me calamus with silver&rsquo; (<a href="isaiah-43.html#v43-24">Isaiah 43:24</a>, now on these pages), where it is set beside the verb <em>qanah</em>, &lsquo;to buy&rsquo; (<a href="dictionary.html#qanah">dictionary</a>), though the two words are of different roots. Rashi says it grew in the Land of Israel and need not be bought; Radak, that it came from a far country, as in &lsquo;the good cane from a far country&rsquo; (Jeremiah 6:20, not yet on these pages). &#9888; The KJV, ASV and Douay have &lsquo;sweet cane&rsquo;, the NIV &lsquo;fragrant calamus&rsquo;, the NWT 1984 &lsquo;[sweet] cane&rsquo;, and the TLB &lsquo;sweet-smelling incense&rsquo;.',
+    ("Isaiah", 43, 24)))
+DICTIONARY_ES["qaneh"] = ("qaneh",
+    'UNA CAÑA, un junco &mdash;y, en el incienso y en el aceite de la unción, la caña aromática, el cálamo. &#11088; «No me compraste caña aromática con plata» (<a href="isaiah-43.es.html#v43-24">Isaías 43:24</a>, ya en estas páginas), donde está junto al verbo <em>qaná</em>, «comprar» (<a href="diccionario.html#qanah">diccionario</a>), aunque las dos palabras son de raíces distintas. Rashi dice que crecía en la tierra de Israel y no hacía falta comprarla; Radak, que venía de un país lejano, como en «la buena caña de tierra lejana» (Jeremías 6:20, todavía no en estas páginas). &#9888; La RV60, la RV 1909 y la NVI tienen «caña aromática», y la TNM 1987 «caña [aromática]».')
+
+DICTIONARY.append(("ani-hu", "ani hu", "אֲנִי הוּא", "ani hu",
+    '&lsquo;I AM HE&rsquo; &mdash; God&rsquo;s declaration that he is the one, the same, and no other. &#11088; <span data-heb-read="אני הוא">In God&rsquo;s own mouth it stands in <strong>seven verses</strong> of the Hebrew Bible</span>: <a href="deuteronomy-32.html#v32-39">Deuteronomy 32:39</a>, <a href="isaiah-41.html#v41-4">Isaiah 41:4</a>, <a href="isaiah-43.html#v43-10">Isaiah 43:10 and 13</a> (now on these pages), and Isaiah 46:4, 48:12 and 52:6 (those three not yet on these pages); the eighth verse that contains the letters is a man&rsquo;s own confession. The doubled <em>anokhi anokhi hu</em>, &lsquo;I, I am he&rsquo;, is a different phrase and stands in two verses, <a href="isaiah-43.html#v43-25">Isaiah 43:25</a> and 51:12. &#9888; The ASV and KJV have &lsquo;I am he&rsquo;, the NWT 1984 &lsquo;I am the same One&rsquo;, and the Greek Isaiah &lsquo;I am&rsquo; (<em>egō eimi</em>) at 43:10 and 43:25. Ibn Ezra says the words state the oneness above which there is nothing, since everything that exists is not itself.',
+    ("Isaiah", 43, 10)))
+DICTIONARY_ES["ani-hu"] = ("ani hu",
+    '«YO SOY ÉL» &mdash;la declaración de Dios de que él es el único, el mismo, y ningún otro. &#11088; <span data-heb-read="אני הוא">En boca del propio Dios está en <strong>siete versículos</strong> de la Biblia hebrea</span>: <a href="deuteronomy-32.es.html#v32-39">Deuteronomio 32:39</a>, <a href="isaiah-41.es.html#v41-4">Isaías 41:4</a>, <a href="isaiah-43.es.html#v43-10">Isaías 43:10 y 13</a> (ya en estas páginas), e Isaías 46:4, 48:12 y 52:6 (esos tres todavía no en estas páginas); el octavo versículo que contiene las letras es la confesión de un hombre. El doble <em>anojí anojí hu</em>, «yo, yo soy él», es otra frase y está en dos versículos, <a href="isaiah-43.es.html#v43-25">Isaías 43:25</a> y 51:12. &#9888; La RV60 y la NVI tienen «yo mismo soy» y «yo soy», la TNM 1987 «yo soy el Mismo», y el Isaías griego «yo soy» (<em>egō eimi</em>) en 43:10 y 43:25. Ibn Ezra dice que las palabras enuncian la unicidad sobre la cual nada hay, pues todo lo que existe no es él mismo.')
+
+ENCYCLOPEDIA.append(dict(slug="seba", name="Seba", kind="people", aliases=["Sheba and Seba"],
+    refs=[("Isaiah", 43, 3)], videos=[],
+    desc='A people or land beside Egypt and Cush, named as part of Israel&rsquo;s ransom: &lsquo;I have given Egypt as your ransom, Cush and Seba in your place&rsquo; (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages). Seba is the first of the sons of Cush in the Table of Nations. The KJV and ASV print &lsquo;Ethiopia and Seba&rsquo;, the NIV &lsquo;Cush and Seba&rsquo;, and the Greek has <em>Soēnēn</em>, &lsquo;Syene&rsquo;. &#9888; Where Seba lay is not settled; Radak and Ibn Ezra read the three names as nations that suffered in Israel&rsquo;s place.'))
+ENCYCLOPEDIA_ES["seba"] = ("Seba",
+    'Un pueblo o tierra junto a Egipto y Cus, nombrado como parte del rescate de Israel: «He dado a Egipto como tu rescate, a Cus y a Seba en tu lugar» (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas). Seba es el primero de los hijos de Cus en la Tabla de las Naciones. La RV60 y la RV 1909 imprimen «a Etiopía y a Seba», la NVI «a Cus y a Seba», y el griego tiene <em>Soēnēn</em>, «Siene». &#9888; Dónde estaba Seba no está resuelto; Radak e Ibn Ezra leen los tres nombres como naciones que sufrieron en lugar de Israel.')
+ENCYCLOPEDIA_ES["chaldeans"] = ("Caldeos",
+    'Los NEOBABILONIOS &mdash;un pueblo del sur de Mesopotamia que se apoderó del trono de Babilonia bajo Nabopolasar (626 a. C.), destruyó a Asiria y Nínive con los medos (612), y bajo su hijo NABUCODONOSOR aplastó a Egipto en Carquemis (605) para convertirse en la potencia dominante. &#11088; En <a href="isaiah-43.es.html#v43-14">Isaías 43:14</a> (ya en estas páginas) son los «caldeos en las naves de su griterío», que Jehová hará descender.')
+
+_dict43_en("goel", add=' &#11088; &lsquo;Do not be afraid, for I have redeemed you&rsquo;, and &lsquo;your Redeemer, the Holy One of Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1, 14</a>, now on these pages); the NWT 1984 has &lsquo;repurchased&rsquo; and &lsquo;Repurchaser&rsquo;.')
+_dict43_es("goel", add=' &#11088; «No tengas miedo, porque te he redimido», y «el Redentor de ustedes, el Santo de Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1, 14</a>, ya en estas páginas); la TNM 1987 tiene «recomprado» y «Recomprador».')
+_dict43_en("bara", add=' &#11088; &lsquo;He who created you, Jacob, and he who formed you, Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1</a>, now on these pages); verse 7 has all three verbs, created, formed, made, for the one people.')
+_dict43_es("bara", add=' &#11088; «El que te creó, Jacob, y el que te formó, Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1</a>, ya en estas páginas); el versículo 7 tiene los tres verbos, creó, formó, hizo, para un solo pueblo.')
+_dict43_en("yatsar", add=' &#11088; In <a href="isaiah-43.html#v43-1">Isaiah 43:1, 7, 21</a> (now on these pages) it is what Jehovah did to Israel, &lsquo;the people I formed for myself&rsquo;.')
+_dict43_es("yatsar", add=' &#11088; En <a href="isaiah-43.es.html#v43-1">Isaías 43:1, 7, 21</a> (ya en estas páginas) es lo que Jehová hizo con Israel, «el pueblo que formé para mí».')
+_dict43_en("kofer-ransom", add=' &#11088; <span data-heb="נתתי כפרך">&lsquo;I have given your ransom&rsquo; (<em>natati kofrekha</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-43.html#v43-3">Isaiah 43:3</a> (now on these pages): Egypt, Cush and Seba in Israel&rsquo;s place.')
+_dict43_es("kofer-ransom", add=' &#11088; <span data-heb="נתתי כפרך">«He dado tu rescate» (<em>natatí kofrejá</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-3">Isaías 43:3</a> (ya en estas páginas): Egipto, Cus y Seba en lugar de Israel.')
+_dict43_en("ed", add=' &#11088; <span data-heb="אתם עדי">&lsquo;You are my witnesses&rsquo; (<em>atem &lsquo;edai</em>) stands in <strong>three verses</strong> of the Hebrew Bible</span>: <a href="isaiah-43.html#v43-10">Isaiah 43:10 and 12</a> (now on these pages) and 44:8 (not yet on these pages).')
+_dict43_es("ed", add=' &#11088; <span data-heb="אתם עדי">«Ustedes son mis testigos» (<em>atem ‘edái</em>) está en <strong>tres versículos</strong> de la Biblia hebrea</span>: <a href="isaiah-43.es.html#v43-10">Isaías 43:10 y 12</a> (ya en estas páginas) y 44:8 (todavía no en estas páginas).')
+_dict43_en("zar", add=' &#11088; &lsquo;There was no stranger among you&rsquo; (<a href="isaiah-43.html#v43-12">Isaiah 43:12</a>, now on these pages), where the KJV and ASV add &lsquo;god&rsquo; and the Hebrew does not.')
+_dict43_es("zar", add=' &#11088; «No hubo entre ustedes ningún extraño» (<a href="isaiah-43.es.html#v43-12">Isaías 43:12</a>, ya en estas páginas), donde la RV60 añade «dios» y el hebreo no.')
+_dict43_en("zakhar", add=' &#11088; &lsquo;Do not remember the former things&rsquo; and &lsquo;Remind me&rsquo; (<a href="isaiah-43.html#v43-18">Isaiah 43:18, 26</a>, now on these pages).')
+_dict43_es("zakhar", add=' &#11088; «No recuerden las cosas primeras» y «Hazme recordar» (<a href="isaiah-43.es.html#v43-18">Isaías 43:18, 26</a>, ya en estas páginas).')
+_dict43_en("chadash", add=' &#11088; &lsquo;Look — I am doing a new thing&rsquo; (<a href="isaiah-43.html#v43-19">Isaiah 43:19</a>, now on these pages), in the feminine, as at Jeremiah 31:21.')
+_dict43_es("chadash", add=' &#11088; «Mira, yo hago algo nuevo» (<a href="isaiah-43.es.html#v43-19">Isaías 43:19</a>, ya en estas páginas), en femenino, como en Jeremías 31:21.')
+_dict43_en("sapar", add=' &#11088; &lsquo;That they may recount my praise&rsquo; and &lsquo;recount it yourself, so that you may be justified&rsquo; (<a href="isaiah-43.html#v43-21">Isaiah 43:21, 26</a>, now on these pages).')
+_dict43_es("sapar", add=' &#11088; «Para que cuente mi alabanza» y «cuéntalo tú, para que seas justificado» (<a href="isaiah-43.es.html#v43-21">Isaías 43:21, 26</a>, ya en estas páginas).')
+_dict43_en("yagea", add=' &#11088; The verb <em>yaga&rsquo;</em>, &lsquo;to weary&rsquo;, is said of God three times at <a href="isaiah-43.html#v43-22">Isaiah 43:22&ndash;24</a> (now on these pages): &lsquo;you have wearied of me&rsquo;, &lsquo;nor wearied you&rsquo;, &lsquo;you have wearied me&rsquo;.')
+_dict43_es("yagea", add=' &#11088; El verbo <em>yaga’</em>, «cansarse», se dice de Dios tres veces en <a href="isaiah-43.es.html#v43-22">Isaías 43:22–24</a> (ya en estas páginas): «te has cansado de mí», «ni te cansé», «me has cansado».')
+_dict43_en("machah", add=' &#11088; <span data-heb="מחה פשעיך">&lsquo;Blots out your transgressions&rsquo; (<em>mocheh peshaekha</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-43.html#v43-25">Isaiah 43:25</a> (now on these pages).')
+_dict43_es("machah", add=' &#11088; <span data-heb="מחה פשעיך">«Borra tus transgresiones» (<em>mojé peshaéja</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-25">Isaías 43:25</a> (ya en estas páginas).')
+_dict43_en("melits", add=' &#11088; &lsquo;Your interpreters transgressed against me&rsquo; (<a href="isaiah-43.html#v43-27">Isaiah 43:27</a>, now on these pages); the KJV and ASV have &lsquo;teachers&rsquo;, the NIV &lsquo;those I sent to teach you&rsquo;, the NWT 1984 &lsquo;spokesmen&rsquo;.')
+DICTIONARY_ES["melits"] = ("melits",
+    'UN INTÉRPRETE, intermediario, portavoz &mdash;de <em>lits</em>, mediar. Aparece en Génesis exactamente una vez, en la línea más callada y devastadora del capítulo 42: los hermanos hablan libremente en hebreo delante del gobernador egipcio, confesándose entre sí que son culpables de lo que hicieron a su hermano, «y no sabían que José estaba escuchando, PORQUE EL INTÉRPRETE ESTABA ENTRE ELLOS» (<a href="genesis-42.es.html#v42-23">Génesis 42:23</a>, ya en estas páginas). El traductor es el disfraz. &#11088; <span data-heb="ומליציך">«Tus intérpretes» (<em>u-melitséja</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-43.es.html#v43-27">Isaías 43:27</a> (ya en estas páginas): «tus intérpretes se rebelaron contra mí»; la RV60 y la RV 1909 tienen «enseñadores» y la NVI y la TNM 1987 «voceros».')
+_dict43_en("cherem", add=' &#11088; &lsquo;I gave Jacob to the ban, and Israel to reviling&rsquo; (<a href="isaiah-43.html#v43-28">Isaiah 43:28</a>, now on these pages); the NWT 1984 has &lsquo;a man devoted to destruction&rsquo;.')
+_dict43_es("cherem", add=' &#11088; «Entregué a Jacob al anatema, y a Israel a los denuestos» (<a href="isaiah-43.es.html#v43-28">Isaías 43:28</a>, ya en estas páginas); la TNM 1987 tiene «hombre dado por entero a la destrucción».')
+_dict43_en("arete", "from the Greek of Isaiah 43:21.", "from the Greek of " + _I43(False, 'Isaiah 43:21', 21) + " (now on these pages).")
+_dict43_es("arete", "del griego de Isaías 43:21", "del griego de " + _I43(True, 'Isaías 43:21', 21) + " (ya en estas páginas)")
+_ency43_en("egypt", add=' &#11088; Given with Cush and Seba as Israel&rsquo;s ransom (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages); Rashi reads it as the death of Egypt&rsquo;s firstborn.')
+_ency43_es("egypt", add=' &#11088; Dado con Cus y Seba como rescate de Israel (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas); Rashi lo lee como la muerte de los primogénitos de Egipto.')
+_ency43_en("cush", add=' &#11088; &lsquo;Cush and Seba in your place&rsquo; (<a href="isaiah-43.html#v43-3">Isaiah 43:3</a>, now on these pages); Radak reads it of Tirhakah king of Cush, whom Sennacherib turned to fight.')
+_ency43_es("cush", add=' &#11088; «A Cus y a Seba en tu lugar» (<a href="isaiah-43.es.html#v43-3">Isaías 43:3</a>, ya en estas páginas); Radak lo lee de Tirhaca rey de Cus, contra quien se volvió Senaquerib.')
+_ency43_en("babylon", add=' &#11088; &lsquo;For your sake I have sent to Babylon&rsquo; (<a href="isaiah-43.html#v43-14">Isaiah 43:14</a>, now on these pages), with the Chaldeans in the ships of their shouting.')
+_ency43_es("babylon", add=' &#11088; «Por causa de ustedes he enviado a Babilonia» (<a href="isaiah-43.es.html#v43-14">Isaías 43:14</a>, ya en estas páginas), con los caldeos en las naves de su griterío.')
+_ency43_en("chaldeans", add=' &#11088; In <a href="isaiah-43.html#v43-14">Isaiah 43:14</a> (now on these pages) they are the &lsquo;Chaldeans in the ships of their shouting&rsquo;, brought down.')
+_ency43_en("jacob", add=' &#11088; &lsquo;He who created you, Jacob, and he who formed you, Israel&rsquo; (<a href="isaiah-43.html#v43-1">Isaiah 43:1</a>, now on these pages), and given to the ban at 43:28.')
+ENCYCLOPEDIA_ES["jacob"] = ("Jacob (Israel)", 'El tercer patriarca, y aquel de quien toma nombre la nación &mdash;nacido agarrando el TALÓN (<em>aqev</em>) de su gemelo, por lo que se llamó YA\'AQOV, «el que sujeta el talón», un nombre que se vuelve sinónimo del suplantador que hace tropezar y se excede (Génesis 25:26; 27:36). Compra la primogenitura de Esaú por un guiso, le roba la bendición con ayuda de su madre, y huye a casa de Labán en la tierra antigua, donde a su vez es burlado (Lea por Raquel) y engendra once hijos y una hija en veinte años duros. Al luchar con un desconocido en el Jaboc recibe el nombre de ISRAEL, «el que lucha con Dios» (32:28); sus doce hijos son las doce tribus. Un hombre defectuoso, ávido, inolvidable, a quien Dios elige de todos modos &mdash;«el Dios de Abraham, Isaac y Jacob»&mdash; y cuya historia llena el resto del Génesis (caps. 25–50). &#11088; «El que te creó, Jacob, y el que te formó, Israel» (<a href="isaiah-43.es.html#v43-1">Isaías 43:1</a>, ya en estas páginas), y entregado al anatema en 43:28.')
+
+CHRON_CHAPTERS["isa43"] = dict(era="exile",
+    when="“Do not be afraid, for I have redeemed you”: Jehovah, who created Jacob and formed Israel, promises to be with his people through water and fire, gives Egypt, Cush and Seba as their ransom, and says he will bring their seed from east and west. The nations are put on trial and asked for witnesses; Israel is his witness, he alone is Jehovah and saviour, and no one can rescue from his hand. He has sent to Babylon and will bring its Chaldeans down in their ships, and tells them not to remember the former things, for he is doing a new thing, a way in the wilderness and rivers in the wasteland, for the people formed to recount his praise. Then the tone turns: they have not called on him or brought offerings, they have made him serve with their sins, and he, he, blots out their transgressions for his own sake; he tells them to plead, accuses their first father and their interpreters, and ends by giving Jacob to the ban.",
+    clock="The chapter names no king and no date. Babylon is spoken of as about to fall, and Radak reads it either of Sennacherib’s fall or of Cyrus, while Ibn Ezra reads it of Media and Persia taking Babylon.")
+
+CHAPTER_ART["isa43"] = [dict(
+    file="dore-egyptians-drown-in-the-sea.jpg",
+    title="The Egyptians Drown in the Sea", title_es="Los egipcios se ahogan en el mar",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Doré’s Bible illustrations, engraved by Pannemaker (Commons file)", location_es="Ilustraciones bíblicas de Doré, grabadas por Pannemaker (archivo de Commons)",
+    alt="A black-and-white engraving of a storm-dark sea. Two great walls of water curve in from the left and right, and between them a mass of riders and horses tumbles and sinks in the foreground. In the distance a crowd stands on a hill under a break in the clouds, with one figure at the top raising both arms.",
+    alt_es="Un grabado en blanco y negro de un mar oscurecido por la tormenta. Dos grandes muros de agua se curvan desde la izquierda y la derecha, y entre ellos una masa de jinetes y caballos cae y se hunde en primer plano. A lo lejos una multitud está sobre una colina bajo un claro entre las nubes, con una figura en lo alto que levanta ambos brazos.",
+    note="Isaiah 43:16&ndash;17. The verses recall the sea, &lsquo;who brings out chariot and horse, army and might together; they lie down, they will not rise&rsquo;. The engraving is Doré&rsquo;s of the sea at the Exodus; the chapter itself names neither Egypt&rsquo;s drowning nor Moses, and Rashi reads the passage as the Sea of Reeds.",
+    note_es="Isaías 43:16–17. Los versículos recuerdan el mar, «el que saca carro y caballo, ejército y poderío a una; se tienden, no se levantarán». El grabado es el de Doré del mar en el Éxodo; el capítulo mismo no nombra el ahogamiento de Egipto ni a Moisés, y Rashi lee el pasaje como el mar Rojo.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:037.The_Egyptians_Drown_in_the_Sea.jpg",
+)]
+
+# --- Psalm 150 ---
+import re as _re150
+def _one150(s, old, new, rx=False):
+    if rx:
+        assert len(_re150.findall(old, s)) == 1, (old[:70], len(_re150.findall(old, s)))
+        return _re150.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict150_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one150(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict150_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one150(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency150_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency150_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P150(es, txt, n):
+    return '<a href="psalms-150.%shtml#v150-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("tof", "ugav") for _d in DICTIONARY)
+
+DICTIONARY.append(("tof", "tof", "תֹּף", "tof",
+    'A TIMBREL &mdash; a hand drum, held in the hand and struck, and the instrument of the women&rsquo;s victory dance. &#11088; Miriam &lsquo;took a timbrel in her hand, and all the women went out after her with timbrels and dances&rsquo; (<a href="exodus-15.html#v15-20">Exodus 15:20</a>, now on these pages), and the last psalm calls for the same pair, &lsquo;timbrel and dance&rsquo; (<a href="psalms-150.html#v150-4">Psalm 150:4</a>, now on these pages). &#9888; The shelf has three words for it: &lsquo;timbrel&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;tambourine&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;drums&rsquo; (<span class="tag t-tlb">TLB</span>). The translation keeps &lsquo;timbrel&rsquo; for <em>tof</em> and &lsquo;dance&rsquo; for the <em>machol</em> that stands beside it.',
+    ("Psalms", 150, 4)))
+DICTIONARY_ES["tof"] = ("tof",
+    'UN PANDERO &mdash;un tambor de mano, que se sostiene y se golpea, y el instrumento de la danza de victoria de las mujeres. &#11088; Miriam «tomó un pandero en su mano, y todas las mujeres salieron en pos de ella con panderos y danzas» (<a href="exodus-15.es.html#v15-20">Éxodo 15:20</a>, ya en estas páginas), y el último salmo pide el mismo par, «pandero y danza» (<a href="psalms-150.es.html#v150-4">Salmo 150:4</a>, ya en estas páginas). &#9888; La traducción conserva «pandero» para <em>tof</em> y «danza» para el <em>machol</em> que va a su lado.')
+
+DICTIONARY.append(("ugav", "ugav", "עוּגָב", "ugav",
+    'A PIPE &mdash; a wind instrument, and with the lyre the first of all instruments the Bible names: Jubal is &lsquo;the father of all who play the lyre and the pipe&rsquo; (<a href="genesis-4.html#v4-21">Genesis 4:21</a>, now on these pages). &#11088; <span data-heb="עוגב">Spelled with the <em>vav</em>, the word stands in <strong>two verses</strong> of the Hebrew Bible</span>: Genesis 4:21 and Job 21:12 (not yet on these pages), where the wicked &lsquo;rejoice at the sound of the pipe&rsquo;. Spelled without it, it is the last instrument of the last psalm, &lsquo;strings and pipe&rsquo; (<a href="psalms-150.html#v150-4">Psalm 150:4</a>, now on these pages), and Job&rsquo;s own, &lsquo;my pipe to the voice of those who weep&rsquo; (Job 30:31). &#9888; The older shelf has &lsquo;organ&rsquo;, from the Greek <em>organon</em>, &lsquo;instrument&rsquo; (in Psalm 150:4 the <span class="tag t-kjv">KJV</span>, the <span class="tag t-gnv">Geneva</span> and the <span class="tag t-drb">Douay</span> all have &lsquo;organs&rsquo;), and the <span class="tag t-niv">NIV</span> and the <span class="tag t-nwt">NWT&nbsp;1984</span> have &lsquo;pipe&rsquo; in Psalm 150. The translation keeps &lsquo;pipe&rsquo; every time.',
+    ("Psalms", 150, 4)))
+DICTIONARY_ES["ugav"] = ("ugav",
+    'UNA FLAUTA &mdash;un instrumento de viento, y con la lira el primero de todos los que nombra la Biblia: Jubal es «el padre de todos los que tocan la lira y la flauta» (<a href="genesis-4.es.html#v4-21">Génesis 4:21</a>, ya en estas páginas). &#11088; <span data-heb="עוגב">Escrita con <em>vav</em>, la palabra está en <strong>dos versículos</strong> de la Biblia hebrea</span>: Génesis 4:21 y Job 21:12 (todavía no en estas páginas), donde los malvados «se alegran al son de la flauta». Escrita sin ella, es el último instrumento del último salmo, «cuerdas y flauta» (<a href="psalms-150.es.html#v150-4">Salmo 150:4</a>, ya en estas páginas), y el de Job, «mi flauta, a la voz de los que lloran» (Job 30:31). &#9888; La traducción conserva «flauta» todas las veces.')
+
+# ---------- extensions ----------
+_dict150_en("yah", add=' &#11088; The last five psalms, 146&ndash;150, each open and close with <em>hallelu-Yah</em>; <a href="psalms-150.html#v150-6">Psalm 150:6</a> (now on these pages) has the name twice, once as the object of &lsquo;let everything that breathes praise Jah&rsquo; and once in the fused call that ends the book.')
+_dict150_es("yah", add=' &#11088; Los últimos cinco salmos, 146&ndash;150, abren y cierran todos con <em>halelu-Yah</em>; <a href="psalms-150.es.html#v150-6">Salmo 150:6</a> (ya en estas páginas) la tiene dos veces, una como llamado fusionado y otra como objeto de «todo lo que respira alabe a Jah».')
+_dict150_en("hallelouia", "from Psalm 104 to Psalm 150 (not yet on these pages)", "from Psalm 104 to Psalm 150 (<a href=\"psalms-150.html#v150-1\">Psalm 150</a> now on these pages)")
+_dict150_es("hallelouia", "desde el Salmo 104 hasta el Salmo 150 (todavía no en estas páginas)", "desde el Salmo 104 hasta el Salmo 150 (<a href=\"psalms-150.es.html#v150-1\">Salmo 150</a> ya en estas páginas)")
+_dict150_en("tzelatzal", "and Psalm 150:5, <em>loud cymbals</em>)", "and <a href=\"psalms-150.html#v150-5\">Psalm 150:5</a>, now on these pages, <em>cymbals of hearing</em> and <em>cymbals of the shout</em>)")
+_dict150_es("tzelatzal", "y Salmo 150:5, <em>címbalos resonantes</em>)", "y <a href=\"psalms-150.es.html#v150-5\">Salmo 150:5</a>, ya en estas páginas, <em>címbalos de oír</em> y <em>címbalos del clamor</em>)")
+_dict150_en("raqia", add=' &#11088; The last psalm calls the vault &lsquo;the vault of his strength&rsquo; and asks that God be praised in it (<a href="psalms-150.html#v150-1">Psalm 150:1</a>, now on these pages); Ibn Ezra cites Rabbi Judah Halevi, who takes the phrase for the ark instead of the sky.')
+DICTIONARY_ES["raqia"] = ("raqia",
+    'La BÓVEDA del cielo &mdash;de una raíz que significa «martillar, extender a golpes»; en la Septuaginta <em>stereōma</em>, «estructura firme», y en la Vulgata <em>firmamentum</em>, de donde «firmamento». &#11088; <a href="genesis-1.es.html#v6">Génesis 1:6</a> (ya en estas páginas) la hace el segundo día, y el último salmo manda alabar a Dios «en la bóveda de su fuerza» (<a href="psalms-150.es.html#v150-1">Salmo 150:1</a>, ya en estas páginas); Ibn Ezra cita al rabino Yehudá Haleví, que toma la frase por el arca y no por el cielo.')
+_dict150_en("shofar", add=' &#11088; <a href="psalms-150.html#v150-3">Psalm 150:3</a> (now on these pages) has &lsquo;the blast of the ram&rsquo;s horn&rsquo; first in the orchestra; the shelf has &lsquo;trumpet&rsquo; in the <span class="tag t-kjv">KJV</span> and the <span class="tag t-niv">NIV</span>, and only the <span class="tag t-nwt">NWT&nbsp;1984</span> keeps &lsquo;horn&rsquo;.')
+_dict150_es("shofar", add=' &#11088; <a href="psalms-150.es.html#v150-3">Salmo 150:3</a> (ya en estas páginas) tiene «el toque del cuerno de carnero» primero en la orquesta; el estante tiene «bocina» en la <span class="tag t-rv">RV 1909</span> y la <span class="tag t-rv60">RV60</span>, y solo la <span class="tag t-tnm">TNM</span> conserva «cuerno».')
+_dict150_en("nevel", add=' &#11088; In the last psalm it is the harp, beside the lyre: &lsquo;praise him with harp and lyre&rsquo; (<a href="psalms-150.html#v150-3">Psalm 150:3</a>, now on these pages); Ibn Ezra says it has ten holes.')
+_dict150_es("nevel", add=' &#11088; En el último salmo es el arpa, junto a la lira: «alábenlo con arpa y lira» (<a href="psalms-150.es.html#v150-3">Salmo 150:3</a>, ya en estas páginas); Ibn Ezra dice que tiene diez agujeros.')
+_dict150_en("kinnor", add=' &#11088; It stands second in the orchestra of <a href="psalms-150.html#v150-3">Psalm 150:3</a> (now on these pages), after the harp.')
+_dict150_es("kinnor", add=' &#11088; Está en segundo lugar en la orquesta del <a href="psalms-150.es.html#v150-3">Salmo 150:3</a> (ya en estas páginas), después del arpa.')
+_dict150_en("teruah", add=' &#11088; In the last psalm the shout is given to the cymbals: &lsquo;cymbals of the shout&rsquo; (<a href="psalms-150.html#v150-5">Psalm 150:5</a>, now on these pages).')
+_dict150_es("teruah", add=' &#11088; En el último salmo el clamor se le da a los címbalos: «címbalos del clamor» (<a href="psalms-150.es.html#v150-5">Salmo 150:5</a>, ya en estas páginas).')
+_dict150_en("sapar", add=' &#11088; Ibn Ezra reads &lsquo;praise him for his mighty acts&rsquo; as &lsquo;recount them&rsquo; (<a href="psalms-150.html#v150-2">Psalm 150:2</a>, now on these pages).')
+_dict150_es("sapar", add=' &#11088; Ibn Ezra lee «alábenlo por sus proezas» como «cuéntenlas» (<a href="psalms-150.es.html#v150-2">Salmo 150:2</a>, ya en estas páginas).')
+_dict150_en("neshama", add=' &#11088; <span data-heb="כל הנשמה">With the article, &lsquo;all the breath&rsquo; (<em>kol ha-neshamah</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="joshua-10.html#v10-40">Joshua 10:40</a>, where it is devoted to destruction, and <a href="psalms-150.html#v150-6">Psalm 150:6</a> (both now on these pages), where it is called to praise.')
+_dict150_es("neshama", add=' &#11088; <span data-heb="כל הנשמה">Con artículo, «todo el aliento» (<em>kol ha-neshamá</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="joshua-10.es.html#v10-40">Josué 10:40</a>, donde se consagra a la destrucción, y <a href="psalms-150.es.html#v150-6">Salmo 150:6</a> (ambos ya en estas páginas), donde se le llama a alabar.')
+
+CHRON_CHAPTERS["psalms150"] = dict(era="monarchy",
+    when="&ldquo;Praise God in his sanctuary&rdquo;: the last psalm of the Psalter, six verses of one command, &ldquo;praise him&rdquo;, with ram&rsquo;s horn, harp and lyre, timbrel and dance, strings and pipe, and cymbals, ending with every breath.",
+    clock="Undated: the psalm has no heading, no author and no occasion. It names the sanctuary and a temple&rsquo;s kinds of instrument, and it is filed here under the monarchy as an undated psalm, as Psalm 100 is.")
+
+CHAPTER_ART["psalms150"] = [dict(
+    file="della-robbia-cantoria-cymbals-psalm-150.jpg",
+    title="Children playing the cymbals, panel of the Cantoria", title_es="Niños tocando los címbalos, panel de la Cantoria",
+    artist="Luca della Robbia (Italian, 1400–1482)", artist_es="Luca della Robbia (italiano, 1400–1482)",
+    year="circa 1438",
+    location="Museo dell'Opera del Duomo, Florence, via Commons", location_es="Museo dell'Opera del Duomo, Florencia, vía Commons",
+    alt="A pale marble relief of seven children crowded into one square panel, most of them holding pairs of round cymbals. On the left a barefoot boy in a loose tunic tilts back his head, mouth open, and lifts a cymbal high above him. A smaller child with a cap kneels at the centre, his head resting against a cymbal he holds in front of him. On the right a smiling boy with a wreath of leaves in his hair holds a cymbal up over his head. Other children look out between them from the background.",
+    alt_es="Un relieve de mármol pálido con siete niños apretados en un panel cuadrado, casi todos con pares de címbalos redondos. A la izquierda, un niño descalzo con una túnica suelta echa la cabeza hacia atrás, con la boca abierta, y alza un címbalo sobre sí. Un niño más pequeño con gorro está de rodillas en el centro, con la cabeza apoyada en un címbalo que sostiene delante. A la derecha, un niño sonriente con una corona de hojas en el pelo sostiene un címbalo sobre la cabeza. Otros niños asoman entre ellos desde el fondo.",
+    note="Psalm 150:5. One of the panels that illustrate Psalm 150 on the singers&rsquo; gallery made for the cathedral organ in Florence, with its other panels of boys singing and playing the timbrel. The psalm&rsquo;s own words are &lsquo;cymbals of hearing&rsquo; and &lsquo;cymbals of the shout&rsquo;; the relief shows the shout.",
+    note_es="Salmo 150:5. Uno de los paneles que ilustran el Salmo 150 en la tribuna de los cantores hecha para el órgano de la catedral de Florencia, junto a otros de niños que cantan y tocan el pandero. Las palabras del salmo son «címbalos de oír» y «címbalos del clamor»; el relieve muestra el clamor.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Cantoria_Della_Robbia_OPA_Florence_4.jpg",
+)]
+
+# --- Psalm 118 ---
+import re as _re118
+def _one118(s, old, new, rx=False):
+    if rx:
+        assert len(_re118.findall(old, s)) == 1, (old[:70], len(_re118.findall(old, s)))
+        return _re118.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict118_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one118(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict118_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one118(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency118_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency118_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P118(es, txt, n):
+    return '<a href="psalms-118.%shtml#v118-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("yadah", "metsar", "pinnah") for _d in DICTIONARY)
+
+DICTIONARY.append(("yadah", "yadah / hodu", "יָדָה", "yadah",
+    'TO GIVE THANKS, to confess &mdash; the verb that opens and closes Psalm 118, <em>hodu</em>, &lsquo;give thanks&rsquo; (<a href="psalms-118.html#v118-1">Psalm 118:1</a> and <a href="psalms-118.html#v118-29">29</a>, now on these pages), and comes back as &lsquo;I will give thanks&rsquo; in verses 19, 21 and 28. It is the root of Judah&rsquo;s name (<a href="genesis-29.html#v29-35">Genesis 29:35</a>). &#9888; The shelf splits on it inside the one psalm: the <span class="tag t-kjv">KJV</span> has &lsquo;give thanks&rsquo; in verse 1 and &lsquo;I will praise&rsquo; in verses 19, 21 and 28, the <span class="tag t-asv">ASV</span> &lsquo;give thanks&rsquo; each time, and the <span class="tag t-drb">Douay</span>, after the Greek <em>exomologeomai</em>, &lsquo;give praise&rsquo; and &lsquo;give glory&rsquo;. The translation keeps &lsquo;give thanks&rsquo; every time.',
+    ("Psalms", 118, 1)))
+DICTIONARY_ES["yadah"] = ("yadá / hodú",
+    'DAR GRACIAS, confesar &mdash;el verbo con que abre y cierra el Salmo 118, <em>hodu</em>, «den gracias» (<a href="psalms-118.es.html#v118-1">Salmo 118:1</a> y <a href="psalms-118.es.html#v118-29">29</a>, ya en estas páginas), y que vuelve como «daré gracias» en los versículos 19, 21 y 28. Es la raíz del nombre de Judá (Génesis 29:35, ya en estas páginas, todavía no en español). &#9888; La traducción mantiene «dar gracias» todas las veces; la RV 1909 y la RV60 tienen «alabad» y «alabaré».')
+
+DICTIONARY.append(("metsar", "metsar / merchav", "מֵצַר", "metsar",
+    'A NARROW PLACE, a strait &mdash; distress, and its opposite is <em>merchav</em>, a wide-open place. &#11088; <a href="psalms-118.html#v118-5">Psalm 118:5</a> (now on these pages) has both in one line, &lsquo;From the narrow place I called on Jah; Jah answered me with a wide-open place&rsquo;, and Ibn Ezra calls the pairing, with Jah named twice, a witticism of the holy tongue. David&rsquo;s song has the second half, &lsquo;he brought me out to a broad place&rsquo; (<a href="2-samuel-22.html#v22-20">2 Samuel 22:20</a>, now on these pages). The Greek has <em>thlipsis</em>, &lsquo;affliction&rsquo;, and <em>platusmos</em>, &lsquo;a broadening&rsquo;.',
+    ("Psalms", 118, 5)))
+DICTIONARY_ES["metsar"] = ("metsar / merjav",
+    'UN LUGAR ESTRECHO, un apuro &mdash;angustia, y su contrario es <em>merjav</em>, un lugar espacioso. &#11088; <a href="psalms-118.es.html#v118-5">Salmo 118:5</a> (ya en estas páginas) tiene los dos en una línea, «Desde la angustia invoqué a Jah; Jah me respondió con un lugar espacioso», e Ibn Ezra llama al par, con Jah nombrado dos veces, una gracia de la lengua santa. El cántico de David tiene la segunda mitad, «me sacó a un lugar amplio» (<a href="2-samuel-22.es.html#v22-20">2 Samuel 22:20</a>, ya en estas páginas).')
+
+DICTIONARY.append(("pinnah", "pinnah", "פִּנָּה", "pinnah",
+    'A CORNER &mdash; of a building, and in one phrase of one verse the place where a stone becomes the head. <span data-heb="ראש פנה">The words <em>rosh pinnah</em>, &lsquo;head of the corner&rsquo;, stand in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="psalms-118.html#v118-22">Psalm 118:22</a> (now on these pages), &lsquo;The stone the builders rejected has become the head of the corner&rsquo;, and the New Testament quotes it at Matthew 21:42, Mark 12:10, Luke 20:17, Acts 4:11 and 1 Peter 2:7. &#9888; The shelf splits on the stone&rsquo;s place: the <span class="tag t-kjv">KJV</span> has &lsquo;the head stone of the corner&rsquo;, the <span class="tag t-niv">NIV</span> &lsquo;the cornerstone&rsquo;, the <span class="tag t-tlb">TLB</span> &lsquo;the capstone of the arch&rsquo;. A cornerstone is laid at the foundation and a capstone set on top, and the Hebrew, like the Greek <em>kephalē gōnias</em>, says only &lsquo;head&rsquo;. Rashi reads the stone as a people lowly among the nations; Radak as Israel, or as David when Samuel came to anoint him.',
+    ("Psalms", 118, 22)))
+DICTIONARY_ES["pinnah"] = ("pinná",
+    'UN ÁNGULO, una esquina &mdash;de un edificio, y en una frase de un versículo el lugar donde una piedra llega a ser cabeza. <span data-heb="ראש פנה">Las palabras <em>rosh pinnah</em>, «cabeza del ángulo», están en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="psalms-118.es.html#v118-22">Salmo 118:22</a> (ya en estas páginas), «La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo», y el Nuevo Testamento lo cita en Mateo 21:42, Marcos 12:10, Lucas 20:17, Hechos 4:11 y 1 Pedro 2:7. &#9888; Una piedra angular se pone en el cimiento y una clave arriba, y el hebreo, como el griego <em>kephalē gōnias</em>, solo dice «cabeza». Rashi lee la piedra como un pueblo humilde entre las naciones; Radak como Israel, o como David cuando Samuel vino a ungirlo.')
+
+# ---------- stale not-yet fixed ----------
+_dict118_en("apodokimazo", "from Psalm 118:22 (not yet on these pages)", "from <a href=\"psalms-118.html#v118-22\">Psalm 118:22</a> (now on these pages)")
+_dict118_es("apodokimazo", "del Salmo 118:22 (todavía no en estas páginas)", "del <a href=\"psalms-118.es.html#v118-22\">Salmo 118:22</a> (ya en estas páginas)")
+_dict118_en("boethos", "from the Greek of Psalm 118:6, 117:6 in the Greek Psalter (checked; not yet on these pages)", "from the Greek of <a href=\"psalms-118.html#v118-6\">Psalm 118:6</a>, 117:6 in the Greek Psalter (checked; now on these pages)")
+_dict118_es("boethos", "del griego del Salmo 118:6, 117:6 en el Salterio griego (comprobado; todavía no en estas páginas)", "del griego del <a href=\"psalms-118.es.html#v118-6\">Salmo 118:6</a>, 117:6 en el Salterio griego (comprobado; ya en estas páginas)")
+
+# ---------- extensions ----------
+_dict118_en("chesed", add=' &#11088; <span data-heb="כי לעולם חסדו">The refrain &lsquo;for his steadfast love is forever&rsquo; stands in <strong>forty-one verses</strong> of the Hebrew Bible</span>, and five of them are <a href="psalms-118.html#v118-1">Psalm 118</a>&rsquo;s own, verses 1&ndash;4 and 29 (now on these pages).')
+_dict118_es("chesed", add=' &#11088; <span data-heb="כי לעולם חסדו">El estribillo «porque para siempre es su amor leal» está en <strong>cuarenta y un versículos</strong> de la Biblia hebrea</span>, y cinco son los del <a href="psalms-118.es.html#v118-1">Salmo 118</a>, los versículos 1&ndash;4 y 29 (ya en estas páginas).')
+_dict118_en("batach", add=' &#11088; <a href="psalms-118.html#v118-8">Psalm 118:8&ndash;9</a> (now on these pages) sets it beside <em>chasah</em>, &lsquo;take refuge&rsquo;: &lsquo;It is better to take refuge in Jehovah than to trust in a human.&rsquo;')
+_dict118_es("batach", add=' &#11088; <a href="psalms-118.es.html#v118-8">Salmo 118:8&ndash;9</a> (ya en estas páginas) lo pone junto a <em>jasá</em>, «refugiarse»: «Mejor es refugiarse en Jehová que confiar en un ser humano».')
+_dict118_en("nadiv", add=' &#11088; &lsquo;It is better to take refuge in Jehovah than to trust in nobles&rsquo; (<a href="psalms-118.html#v118-9">Psalm 118:9</a>, now on these pages).')
+_dict118_es("nadiv", add=' &#11088; «Mejor es refugiarse en Jehová que confiar en los nobles» (<a href="psalms-118.es.html#v118-9">Salmo 118:9</a>, ya en estas páginas).')
+_dict118_en("mul", add=' &#11088; <span data-heb="אמילם">The verb <em>amilam</em>, &lsquo;I cut them off&rsquo;, stands in <strong>three verses</strong> of the Hebrew Bible</span>, all three in <a href="psalms-118.html#v118-10">Psalm 118:10&ndash;12</a> (now on these pages), and it is spelled like this verb; whether it is the same root, the lexicons divide.')
+_dict118_es("mul", add=' &#11088; <span data-heb="אמילם">El verbo <em>amilam</em>, «las corté», está en <strong>tres versículos</strong> de la Biblia hebrea</span>, los tres en el <a href="psalms-118.es.html#v118-10">Salmo 118:10&ndash;12</a> (ya en estas páginas), y se escribe como este verbo; si es la misma raíz, los léxicos se dividen.')
+_dict118_en("hosanna", add=' &#11088; The psalm itself is on these pages now: <a href="psalms-118.html#v118-25">Psalm 118:25</a>, &lsquo;Ah, Jehovah, save, please!&rsquo;, with its second cry, &lsquo;grant success, please&rsquo;, which Nehemiah prays in 1:11.')
+_dict118_es("hosanna", add=' &#11088; El salmo mismo está ya en estas páginas: <a href="psalms-118.es.html#v118-25">Salmo 118:25</a>, «¡Ah, Jehová, salva, por favor!», con su segundo grito, «da éxito, por favor», que Nehemías ora en 1:11.')
+_dict118_en("chayil", add=' &#11088; &lsquo;The right hand of Jehovah does valiantly&rsquo; (<em>oseh chayil</em>), twice (<a href="psalms-118.html#v118-15">Psalm 118:15&ndash;16</a>, now on these pages).')
+_dict118_es("chayil", add=' &#11088; «La diestra de Jehová actúa con valentía» (<em>oseh jáyil</em>), dos veces (<a href="psalms-118.es.html#v118-15">Salmo 118:15&ndash;16</a>, ya en estas páginas).')
+_dict118_en("sapar", add=' &#11088; &lsquo;I will not die, but live, and I will recount the deeds of Jah&rsquo; (<a href="psalms-118.html#v118-17">Psalm 118:17</a>, now on these pages).')
+_dict118_es("sapar", add=' &#11088; «No moriré, sino que viviré, y relataré las obras de Jah» (<a href="psalms-118.es.html#v118-17">Salmo 118:17</a>, ya en estas páginas).')
+_dict118_en("musar", add=' &#11088; &lsquo;Jah has disciplined me severely, but he has not given me over to death&rsquo; (<a href="psalms-118.html#v118-18">Psalm 118:18</a>, now on these pages), with the verb doubled.')
+_dict118_es("musar", add=' &#11088; «Jah me ha castigado con dureza, pero no me ha entregado a la muerte» (<a href="psalms-118.es.html#v118-18">Salmo 118:18</a>, ya en estas páginas), con el verbo duplicado.')
+_dict118_en("tsedeq", add=' &#11088; &lsquo;Open to me the gates of righteousness&rsquo; (<a href="psalms-118.html#v118-19">Psalm 118:19</a>, now on these pages).')
+_dict118_es("tsedeq", add=' &#11088; «Ábranme las puertas de la justicia» (<a href="psalms-118.es.html#v118-19">Salmo 118:19</a>, ya en estas páginas).')
+_dict118_en("qeren", add=' &#11088; &lsquo;Bind the festival with cords, up to the horns of the altar&rsquo; (<a href="psalms-118.html#v118-27">Psalm 118:27</a>, now on these pages).')
+_dict118_es("qeren", add=' &#11088; «Aten la fiesta con cuerdas, hasta los cuernos del altar» (<a href="psalms-118.es.html#v118-27">Salmo 118:27</a>, ya en estas páginas).')
+_dict118_en("mizbeach", add=' &#11088; <a href="psalms-118.html#v118-27">Psalm 118:27</a> (now on these pages) binds the festival offering &lsquo;up to the horns of the altar&rsquo;.')
+_dict118_es("mizbeach", add=' &#11088; <a href="psalms-118.es.html#v118-27">Salmo 118:27</a> (ya en estas páginas) ata la ofrenda de la fiesta «hasta los cuernos del altar».')
+_dict118_en("adam", add=' &#11088; &lsquo;What can a human do to me?&rsquo; asks <a href="psalms-118.html#v118-6">Psalm 118:6</a> (now on these pages), and verse 8 says it is better to take refuge in Jehovah than to trust in a human.')
+_dict118_es("adam", add=' &#11088; «¿Qué puede hacerme un ser humano?», pregunta el <a href="psalms-118.es.html#v118-6">Salmo 118:6</a> (ya en estas páginas), y el versículo 8 dice que es mejor refugiarse en Jehová que confiar en un ser humano.')
+_dict118_en("even", add=' &#11088; &lsquo;The stone the builders rejected has become the head of the corner&rsquo; (<a href="psalms-118.html#v118-22">Psalm 118:22</a>, now on these pages; <a href="dictionary.html#pinnah">pinnah</a>).')
+_dict118_es("even", add=' &#11088; «La piedra que desecharon los edificadores ha venido a ser cabeza del ángulo» (<a href="psalms-118.es.html#v118-22">Salmo 118:22</a>, ya en estas páginas; <a href="diccionario.html#pinnah">pinná</a>).')
+_dict118_en("yah", add=' &#11088; <a href="psalms-118.html#v118-5">Psalm 118</a> (now on these pages) uses Jah in verses 5, 14, 17, 18 and 19, and the full name everywhere else.')
+_dict118_es("yah", add=' &#11088; El <a href="psalms-118.es.html#v118-5">Salmo 118</a> (ya en estas páginas) usa Jah en los versículos 5, 14, 17, 18 y 19, y el nombre completo en todo lo demás.')
+
+CHRON_CHAPTERS["psalms118"] = dict(era="monarchy",
+    when="&ldquo;Give thanks to Jehovah, for he is good&rdquo;: a thanksgiving liturgy with four voices, a rescue from the narrow place, a procession to the gate of righteousness, the stone the builders rejected, and a festival bound to the horns of the altar.",
+    clock="Undated: the psalm has no heading, no author and no occasion. The commentators divide on whether it is David&rsquo;s or Israel&rsquo;s out of exile, and it is filed here under the monarchy as an undated psalm, as Psalm 100 is.")
+
+CHAPTER_ART["psalms118"] = [dict(
+    file="dore-christs-entry-into-jerusalem.jpg",
+    title="Christ&rsquo;s Entry into Jerusalem", title_es="La entrada de Cristo en Jerusalén",
+    artist="Gustave Doré (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Oil sketch, via Commons", location_es="Boceto al óleo, vía Commons",
+    alt="A loosely painted oil sketch in pale greys, whites and greens. A dark robed figure seen from behind walks down the middle toward a tall arched gateway, with a white city small and bright in the sky beyond it. On both sides crowds in white robes press in and bow low, many of them stooping to the ground over a strip of green that may be branches. A few figures raise their arms, and ribbons and banners trail down from the top of the frame.",
+    alt_es="Un boceto al óleo pintado con soltura en grises claros, blancos y verdes. Una figura oscura con túnica, vista de espaldas, camina por el centro hacia una alta puerta en arco, con una ciudad blanca pequeña y luminosa en el cielo más allá. A ambos lados, multitudes con túnicas blancas se apiñan y se inclinan, muchos agachados hasta el suelo sobre una franja verde que quizá sean ramas. Algunas figuras alzan los brazos, y cintas y estandartes cuelgan desde lo alto del cuadro.",
+    note="Psalm 118:25&ndash;26. The crowd at Matthew 21:9 shouts &lsquo;Hosanna&rsquo; and &lsquo;Blessed is the one who comes in the name of Jehovah&rsquo;, which are these two verses. The sketch is Doré&rsquo;s of the entry into Jerusalem; the psalm itself says nothing of a city or a ride, and it names a procession to the horns of the altar.",
+    note_es="Salmo 118:25–26. La multitud de Mateo 21:9 grita «Hosanna» y «Bendito el que viene en el nombre de Jehová», que son estos dos versículos. El boceto es de Doré, de la entrada en Jerusalén; el salmo mismo no dice nada de una ciudad ni de una cabalgata, y nombra una procesión hasta los cuernos del altar.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Christ%27s_Entry_into_Jerusalem.jpg",
+)]
+
+# --- Psalm 155 ---
+import re as _re155
+def _one155(s, old, new, rx=False):
+    if rx:
+        assert len(_re155.findall(old, s)) == 1, (old[:70], len(_re155.findall(old, s)))
+        return _re155.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict155_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one155(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict155_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one155(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency155_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency155_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P155(es, txt, n):
+    return '<a href="isaiah-55.%shtml#v155-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("reiqam", "sirpad") for _d in DICTIONARY)
+
+DICTIONARY.append(("reiqam", "reiqam", "רֵיקָם", "reiqam",
+    'EMPTY, empty-handed &mdash; the word of what comes back without what it went for. <span data-heb="ריקם">It stands in <strong>twenty-three verses</strong> of the Hebrew Bible</span>. The bow of Jonathan &lsquo;did not turn back&rsquo; and the sword of Saul &lsquo;did not return empty&rsquo; (<a href="2-samuel-1.html#v22">2 Samuel 1:22</a>), the ark is not to be sent away empty (<a href="1-samuel-6.html#v6-3">1 Samuel 6:3</a>), and Naomi says &lsquo;I went out full, and Jehovah has brought me back empty&rsquo; (<a href="ruth-1.html#v21">Ruth 1:21</a>, all now on these pages). &#11088; In <a href="isaiah-55.html#v55-11">Isaiah 55:11</a> (now on these pages) it is a word that goes out of Jehovah&rsquo;s mouth: &lsquo;it shall not return to me empty&rsquo;. The shelf has &lsquo;void&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;empty&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;without results&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).',
+    ("Isaiah", 55, 11)))
+DICTIONARY_ES["reiqam"] = ("reiqam",
+    'VACÍO, con las manos vacías &mdash;la palabra de lo que vuelve sin aquello por lo que fue. <span data-heb="ריקם">Está en <strong>veintitrés versículos</strong> de la Biblia hebrea</span>. El arco de Jonatán «no volvía atrás» y la espada de Saúl no «volvía vacía» (<a href="2-samuel-1.es.html#v22">2 Samuel 1:22</a>), el arca no ha de enviarse vacía (<a href="1-samuel-6.es.html#v6-3">1 Samuel 6:3</a>), y Noemí dice «Yo salí llena, y vacía me ha hecho volver Jehová» (<a href="ruth-1.es.html#v21">Rut 1:21</a>, todos ya en estas páginas). &#11088; En <a href="isaiah-55.es.html#v55-11">Isaías 55:11</a> (ya en estas páginas) es una palabra que sale de la boca de Jehová: «no volverá a mí vacía».')
+
+DICTIONARY.append(("sirpad", "sirpad / na'atsuts", "סִרְפָּד", "sirpad",
+    'A NETTLE, and beside it the THORNBUSH. <span data-heb="סרפד">The word <em>sirpad</em> stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> (now on these pages), so what the plant is is a guess: the <span class="tag t-kjv">KJV</span> has &lsquo;the brier&rsquo;, the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;the stinging nettle&rsquo; and the <span class="tag t-drb">Douay</span> &lsquo;the nettle&rsquo;. <span data-heb="נעצוץ|נעצוצים">Its partner <em>na&rsquo;atsuts</em>, &lsquo;thornbush&rsquo;, stands in <strong>two verses</strong></span>: in the plural at <a href="isaiah-7.html#v7-19">Isaiah 7:19</a>, where the bees and flies settle on all the thornbushes, and here in the singular, where the juniper takes its place.',
+    ("Isaiah", 55, 13)))
+DICTIONARY_ES["sirpad"] = ("sirpad / na'atsuts",
+    'UNA ORTIGA, y a su lado el ESPINO. <span data-heb="סרפד">La palabra <em>sirpad</em> está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> (ya en estas páginas), de modo que qué planta es una conjetura. <span data-heb="נעצוץ|נעצוצים">Su compañero <em>na&rsquo;atsuts</em>, «espino», está en <strong>dos versículos</strong></span>: en plural en <a href="isaiah-7.es.html#v7-19">Isaías 7:19</a>, donde las abejas y las moscas se posan en todos los espinos, y aquí en singular, donde el enebro ocupa su lugar.')
+
+# ---------- stale not-yet fixed ----------
+
+# ---------- extensions ----------
+_dict155_en("hoy", add=' &#11088; <a href="isaiah-55.html#v55-1">Isaiah 55:1</a> (now on these pages) turns it into a summons, &lsquo;Ho, everyone who thirsts&rsquo;; <a href="zechariah-2.html#v2-10">Zechariah 2:10</a> (now on these pages) has it as a call to flee.')
+_dict155_es("hoy", add=' &#11088; <a href="isaiah-55.es.html#v55-1">Isaías 55:1</a> (ya en estas páginas) lo vuelve una convocatoria, «¡Eh, todos los que tienen sed!»; <a href="zechariah-2.es.html#v2-10">Zacarías 2:10</a> (ya en estas páginas) lo tiene como llamado a huir.')
+_dict155_en("dashen", add=' &#11088; &lsquo;Let your soul delight in fatness&rsquo; (<a href="isaiah-55.html#v55-2">Isaiah 55:2</a>, now on these pages).')
+_dict155_es("dashen", add=' &#11088; «Deléitese su alma en la grosura» (<a href="isaiah-55.es.html#v55-2">Isaías 55:2</a>, ya en estas páginas).')
+_dict155_en("karat", add=' &#11088; &lsquo;I will cut for you an everlasting covenant&rsquo; (<a href="isaiah-55.html#v55-3">Isaiah 55:3</a>) and a sign that &lsquo;shall not be cut off&rsquo; (<a href="isaiah-55.html#v55-13">55:13</a>), the same root at the two ends of the chapter (now on these pages).')
+_dict155_es("karat", add=' &#11088; «Cortaré con ustedes un pacto eterno» (<a href="isaiah-55.es.html#v55-3">Isaías 55:3</a>) y una señal que «no será cortada» (<a href="isaiah-55.es.html#v55-13">55:13</a>), la misma raíz en los dos extremos del capítulo (ya en estas páginas).')
+_dict155_en("chesed", add=' &#11088; <span data-heb="חסדי דוד|חסדי דויד">The words <em>chasdei David</em>, &lsquo;the steadfast loves of David&rsquo;, stand in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="isaiah-55.html#v55-3">Isaiah 55:3</a> (now on these pages) and 2 Chronicles 6:42 (not yet on these pages).')
+_dict155_es("chesed", add=' &#11088; <span data-heb="חסדי דוד|חסדי דויד">Las palabras <em>jasdei David</em>, «los amores leales de David», están en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="isaiah-55.es.html#v55-3">Isaías 55:3</a> (ya en estas páginas) y 2 Crónicas 6:42 (todavía no en estas páginas).')
+_dict155_en("aman", add=' &#11088; &lsquo;The faithful ones&rsquo;, <em>ha-ne&rsquo;emanim</em>, of David&rsquo;s steadfast loves (<a href="isaiah-55.html#v55-3">Isaiah 55:3</a>, now on these pages) is from this root, as is the promise that David&rsquo;s house &lsquo;shall be made sure&rsquo; (<a href="2-samuel-7.html#v7-16">2 Samuel 7:16</a>).')
+_dict155_es("aman", add=' &#11088; «Los fieles», <em>ha-ne&rsquo;emanim</em>, de los amores leales de David (<a href="isaiah-55.es.html#v55-3">Isaías 55:3</a>, ya en estas páginas) es de esta raíz, como la promesa de que la casa de David «será afirmada» (<a href="2-samuel-7.es.html#v7-16">2 Samuel 7:16</a>).')
+_dict155_en("ed", add=' &#11088; &lsquo;I have given him as a witness to the peoples&rsquo; (<a href="isaiah-55.html#v55-4">Isaiah 55:4</a>, now on these pages).')
+_dict155_es("ed", add=' &#11088; «Lo he dado como testigo a los pueblos» (<a href="isaiah-55.es.html#v55-4">Isaías 55:4</a>, ya en estas páginas).')
+_dict155_en("nagid", add=' &#11088; &lsquo;A leader and commander for the peoples&rsquo; (<a href="isaiah-55.html#v55-4">Isaiah 55:4</a>, now on these pages).')
+_dict155_es("nagid", add=' &#11088; «Caudillo y comandante de los pueblos» (<a href="isaiah-55.es.html#v55-4">Isaías 55:4</a>, ya en estas páginas).')
+_dict155_en("derekh", add=' &#11088; &lsquo;Let the wicked leave his way&rsquo;, and &lsquo;your ways are not my ways&rsquo; (<a href="isaiah-55.html#v55-7">Isaiah 55:7&ndash;9</a>, now on these pages).')
+_dict155_es("derekh", add=' &#11088; «Deje el malvado su camino», y «sus caminos no son mis caminos» (<a href="isaiah-55.es.html#v55-7">Isaías 55:7&ndash;9</a>, ya en estas páginas).')
+_dict155_en("machashavah", add=' &#11088; <a href="isaiah-55.html#v55-8">Isaiah 55:8&ndash;9</a> (now on these pages) is the verse: &lsquo;my thoughts are not your thoughts&rsquo;, as high as the heavens are above the earth.')
+_dict155_es("machashavah", add=' &#11088; <a href="isaiah-55.es.html#v55-8">Isaías 55:8&ndash;9</a> (ya en estas páginas) es el versículo: «mis pensamientos no son sus pensamientos», tan altos como los cielos sobre la tierra.')
+_dict155_en("shuv", add=' &#11088; &lsquo;Let him return to Jehovah, and he will have compassion on him&rsquo; (<a href="isaiah-55.html#v55-7">Isaiah 55:7</a>, now on these pages).')
+_dict155_es("shuv", add=' &#11088; «Vuélvase a Jehová, y él tendrá compasión de él» (<a href="isaiah-55.es.html#v55-7">Isaías 55:7</a>, ya en estas páginas).')
+_dict155_en("salach", add=' &#11088; <span data-heb="ירבה לסלוח">The words <em>yarbeh lisloach</em>, &lsquo;he multiplies to forgive&rsquo;, stand in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="isaiah-55.html#v55-7">Isaiah 55:7</a> (now on these pages).')
+_dict155_es("salach", add=' &#11088; <span data-heb="ירבה לסלוח">Las palabras <em>yarbeh lisloaj</em>, «multiplica para perdonar», están en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="isaiah-55.es.html#v55-7">Isaías 55:7</a> (ya en estas páginas).')
+_dict155_en("tsalach", add=' &#11088; The word that goes out of Jehovah&rsquo;s mouth &lsquo;shall succeed in that for which I sent it&rsquo; (<a href="isaiah-55.html#v55-11">Isaiah 55:11</a>, now on these pages), the verb of &lsquo;grant success, please&rsquo; at <a href="psalms-118.html#v118-25">Psalm 118:25</a>.')
+_dict155_es("tsalach", add=' &#11088; La palabra que sale de la boca de Jehová «tendrá éxito en aquello para lo cual la envié» (<a href="isaiah-55.es.html#v55-11">Isaías 55:11</a>, ya en estas páginas), el verbo de «da éxito, por favor» en el <a href="psalms-118.es.html#v118-25">Salmo 118:25</a>.')
+_dict155_en("berosh", add=' &#11088; <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> (now on these pages) has it, with the myrtle, in place of the thornbush: this translation prints &lsquo;juniper&rsquo; there, as at <a href="isaiah-41.html#v41-19">Isaiah 41:19</a>, and &lsquo;cypress&rsquo; for the temple timber of Kings; the Hebrew word is the same and the tree is not certain.')
+_dict155_es("berosh", add=' &#11088; <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> (ya en estas páginas) lo tiene, con el mirto, en lugar del espino: esta traducción imprime «enebro» ahí, como en <a href="isaiah-41.es.html#v41-19">Isaías 41:19</a>, y «ciprés» para la madera del templo en Reyes; la palabra hebrea es la misma y el árbol no es seguro.')
+_dict155_en("hadas", add=' &#11088; &lsquo;Instead of the nettle shall come up the myrtle&rsquo; (<a href="isaiah-55.html#v55-13">Isaiah 55:13</a>, now on these pages).')
+_dict155_es("hadas", add=' &#11088; «En lugar de la ortiga subirá el mirto» (<a href="isaiah-55.es.html#v55-13">Isaías 55:13</a>, ya en estas páginas).')
+
+CHRON_CHAPTERS["isa55"] = dict(era="exile",
+    when="&ldquo;Ho, everyone who thirsts&rdquo;: the closing chapter of the run of comfort that opens at Isaiah 40, an invitation to buy wine and milk without money, an everlasting covenant of David&rsquo;s steadfast loves, a call to seek Jehovah while he can be found, thoughts higher than ours, a word that does not return empty, and a juniper in place of the thornbush.",
+    clock="Undated in the chapter itself. Placed with the exile because it speaks of going out in joy and being led forth in peace, as Rashi and Radak read it, from the exile; Ibn Ezra reads it of the return from Babylon and again of a later one.")
+
+CHAPTER_ART["isa55"] = [dict(
+    file="dore-the-prophet-isaiah.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Gustave Dor&eacute; (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Wood engraving, via Commons", location_es="Grabado en madera, vía Commons",
+    alt="A black-and-white engraving of a bearded man in a hooded robe kneeling on a flat rock at dawn, his head bowed and his hands resting in front of him. Behind him a wide, shallow river or lake catches the light under a cloudy sky, with low hills in the distance. Spiky plants grow in the foreground and at the right edge.",
+    alt_es="Un grabado en blanco y negro de un hombre barbudo con túnica con capucha, arrodillado sobre una roca plana al amanecer, con la cabeza inclinada y las manos descansando delante de él. Detrás, un río o lago ancho y poco profundo capta la luz bajo un cielo nublado, con colinas bajas a lo lejos. Plantas espinosas crecen en primer plano y en el borde derecho.",
+    note="Isaiah 55:1&ndash;13. Dor&eacute;&rsquo;s plate of the prophet is general and not drawn from this chapter. It has water, a landscape and wild plants in the foreground, and the chapter has all three: the waters of verse 1, the rain of verse 10, and the thornbush and nettle of verse 13.",
+    note_es="Isaías 55:1–13. La lámina de Doré del profeta es general y no está tomada de este capítulo. Tiene agua, un paisaje y plantas silvestres en primer plano, y el capítulo tiene las tres cosas: las aguas del versículo 1, la lluvia del versículo 10, y el espino y la ortiga del versículo 13.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:120.The_Prophet_Isaiah.jpg",
+)]
+
+
+# Appended to library_data.py for Psalm 19 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('tevel-world', 'tevel (the world)', 'תֵּבֵל', 'tevel', 'THE INHABITED WORLD &mdash; the land with people on it, a poet&rsquo;s word for the whole of it: <em>to the end of the world their words</em> (<a href="psalms-19.html#v19-5">Psalm 19:5</a>, now on these pages), and <em>the foundations of the world were laid bare</em> (<a href="2-samuel-22.html#v22-16">2 Samuel 22:16</a>, now on these pages). &#9888; It is not the <em><a href="dictionary.html#tevel">tevel</a></em> of Leviticus 18:23, &lsquo;a perversion&rsquo;: the two are spelled with the same consonants and are different words. The Greek of Romans 10:18, which quotes this psalm, has <em>oikoumen&#275;</em>, &lsquo;the inhabited world&rsquo; (<a href="romans-10.html#v10-18">Romans 10:18</a>, now on these pages). The KJV and the ASV read &lsquo;the world&rsquo;, and the NWT 1984 &lsquo;the productive land&rsquo;.', ('Psalms', 19, 5)))
+DICTIONARY.append(('chuppah', 'chuppah', 'חֻפָּה', 'chuppah', 'A CANOPY, a covering &mdash; what a bridegroom comes out of. The sun comes out <em>like a bridegroom from his canopy</em> (<a href="psalms-19.html#v19-6">Psalm 19:6</a>, now on these pages); Joel 2:16 says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (not yet on these pages); and at Isaiah 4:5 it is a canopy of glory over Zion (not yet on these pages). It is the word that later Hebrew uses for the wedding canopy. The KJV, the ASV and the NIV read &lsquo;his chamber&rsquo;, and the NWT 1984 &lsquo;his nuptial chamber&rsquo;.', ('Psalms', 19, 6)))
+DICTIONARY.append(('tequfah', 'tequfah', 'תְּקוּפָה', 'tequfato', 'A TURNING, a circuit &mdash; the coming-round of a period of time. The sun&rsquo;s <em>circuit is to their other ends</em> (<a href="psalms-19.html#v19-7">Psalm 19:7</a>, now on these pages); the feast of ingathering is <em>at the turn of the year</em> (<a href="exodus-34.html#v34-22">Exodus 34:22</a>, now on these pages); Hannah conceives <em>at the turn of the days</em>, the plural spelled <em>tequfot</em> without its <em>vav</em> (<a href="1-samuel-1.html#v20">1 Samuel 1:20</a>, now on these pages); and <em>at the turn of the year</em> the army of Aram came up (2 Chronicles 24:23, not yet on these pages). &#11088; The sun&rsquo;s circuit and the year&rsquo;s turn are one word. Later Hebrew uses it for the seasons.', ('Psalms', 19, 7)))
+DICTIONARY.append(('chammah', 'chammah', 'חַמָּה', 'mei-chammato', 'HEAT &mdash; and an old poetic name for the SUN itself. <em>Nothing is hidden from his heat</em> (<a href="psalms-19.html#v19-7">Psalm 19:7</a>, now on these pages); <em>the moon will be abashed and the sun ashamed</em> (Isaiah 24:23, not yet on these pages); the bride is <em>clear as the sun</em> (Song of Solomon 6:10, not yet on these pages). &#9888; Not <em><a href="dictionary.html#chemah-fury">chemah</a></em>, fury, which is a different word.', ('Psalms', 19, 7)))
+DICTIONARY.append(('yashar', 'yashar', 'יָשָׁר', 'yesharim', 'UPRIGHT, straight, level &mdash; a road without a bend, said of people and of what God lays down. <em>The precepts of Jehovah are upright</em> (<a href="psalms-19.html#v19-9">Psalm 19:9</a>, now on these pages), and the Song of Moses ends its praise of the Rock, <em>righteous and upright is he</em> (<a href="deuteronomy-32.html#v32-4">Deuteronomy 32:4</a>, now on these pages). The same root names Israel&rsquo;s poetic title <a href="dictionary.html#yeshurun">Yeshurun</a>, &lsquo;the upright one&rsquo;, and the lost <a href="dictionary.html#sefer-hayashar">Book of Jashar</a>. The KJV, the ASV and the NIV read &lsquo;right&rsquo;, and the NWT 1984 &lsquo;upright&rsquo;.', ('Psalms', 19, 9)))
+DICTIONARY.append(('barah', 'barah', 'בָּרָה', 'barah', 'CLEAR, bright, pure &mdash; the adjective of the commandment that <em>lights up the eyes</em> (<a href="psalms-19.html#v19-9">Psalm 19:9</a>, now on these pages) and the word the Song of Songs uses of the sun: the bride is <em>clear as the sun</em> (Song of Solomon 6:10, not yet on these pages). The KJV reads &lsquo;pure&rsquo;, the NIV &lsquo;radiant&rsquo;, the NWT 1984 &lsquo;clean&rsquo; and the Douay &lsquo;lightsome&rsquo;.', ('Psalms', 19, 9)))
+DICTIONARY.append(('paz', 'paz', 'פָּז', 'paz', 'FINE GOLD &mdash; refined, the best of the gold, and it stands beside plain gold. <em>More than gold, than much fine gold</em> (<a href="psalms-19.html#v19-11">Psalm 19:11</a>, now on these pages); <em>more than gold, more than fine gold</em> (<a href="psalms-119.html#v119-127">Psalm 119:127</a>, now on these pages); and wisdom&rsquo;s fruit is better <em>than gold, and than fine gold</em> (Proverbs 8:19, not yet on these pages). A participle of the same root is <em>zahav mufaz</em>, &lsquo;refined gold&rsquo;, on Solomon&rsquo;s throne (1 Kings 10:18, not yet on these pages). The KJV reads &lsquo;fine gold&rsquo;, the NIV &lsquo;pure gold&rsquo; and the NWT 1984 &lsquo;refined gold&rsquo;.', ('Psalms', 19, 11)))
+DICTIONARY.append(('nofet', 'nofet tsufim', 'נֹפֶת צוּפִים', 'nofet tsufim', 'THE DRIP OF THE COMBS &mdash; <em>nofet</em> is honey that drips, and <em>tsuf</em> is the honeycomb: <span data-heb="נפת צופים">the phrase stands in one verse of the Hebrew Bible</span>, <a href="psalms-19.html#v19-11">Psalm 19:11</a> (now on these pages). The two words are found apart: <em>tsuf-devash</em>, &lsquo;a honeycomb&rsquo;, is how Proverbs names pleasant words (<a href="proverbs-16.html#v16-24">Proverbs 16:24</a>, now on these pages), and <em>nofet</em> alone is the sweetness of Proverbs 24:13 and of the bride&rsquo;s dripping lips (Song of Solomon 4:11; neither yet on these pages). The KJV reads &lsquo;the honeycomb&rsquo;, the ASV &lsquo;the droppings of the honeycomb&rsquo; and the NWT 1984 &lsquo;the flowing honey of the combs&rsquo;. See also <a href="dictionary.html#devash">devash</a>.', ('Psalms', 19, 11)))
+DICTIONARY.append(('shegiah', "shegi'ot", 'שְׁגִיאוֹת', "shegi'ot", 'ERRORS &mdash; a plural that <span data-heb="שגיאות">stands in one verse of the Hebrew Bible</span>, <a href="psalms-19.html#v19-13">Psalm 19:13</a> (now on these pages): <em>Errors &mdash; who can discern them?</em> &#9888; It belongs to the family of <em>shegagah</em>, a sin &lsquo;through error&rsquo;, the kind with its own sacrifice (<a href="leviticus-4.html#v4-2">Leviticus 4:2</a>, <a href="numbers-15.html#v15-27">Numbers 15:27</a>, now on these pages), as against the sin done with a high hand (<a href="numbers-15.html#v15-30">Numbers 15:30</a>). The KJV and the NIV read &lsquo;errors&rsquo;, and the NWT 1984 &lsquo;mistakes&rsquo;.', ('Psalms', 19, 13)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['tevel-world'] = ('tevel', 'EL MUNDO HABITADO &mdash; la tierra con gente en ella, una palabra de poeta para el todo: <em>hasta el extremo del mundo sus palabras</em> (<a href="psalms-19.es.html#v19-5">Salmo 19:5</a>, ya en estas p&aacute;ginas), y <em>los cimientos del mundo quedaron al descubierto</em> (<a href="2-samuel-22.es.html#v22-16">2 Samuel 22:16</a>, ya en estas p&aacute;ginas). &#9888; No es el <em><a href="diccionario.html#tevel">tevel</a></em> de Lev&iacute;tico 18:23, &laquo;perversi&oacute;n&raquo;: las dos se escriben con las mismas consonantes y son palabras distintas. El griego de Romanos 10:18, que cita este salmo, tiene <em>oikoumen&#275;</em>, &laquo;el mundo habitado&raquo; (<a href="romans-10.es.html#v10-18">Romanos 10:18</a>, ya en estas p&aacute;ginas). La RV60 lee &laquo;el mundo&raquo; y la TNM 1987 &laquo;la tierra productiva&raquo;.')
+DICTIONARY_ES['chuppah'] = ('jup&aacute;', 'UN DOSEL, una cubierta &mdash; de lo que sale un novio. El sol sale <em>como un novio de su dosel</em> (<a href="psalms-19.es.html#v19-6">Salmo 19:6</a>, ya en estas p&aacute;ginas); Joel 2:16 dice <em>salga el novio de su aposento, y la novia de su dosel</em> (todav&iacute;a no en estas p&aacute;ginas); y en Isa&iacute;as 4:5 es un dosel de gloria sobre Si&oacute;n (todav&iacute;a no en estas p&aacute;ginas). Es la palabra que el hebreo posterior usa para el dosel de la boda. La RV 1909 y la RV60 leen &laquo;su t&aacute;lamo&raquo; y la TNM 1987 &laquo;su c&aacute;mara nupcial&raquo;.')
+DICTIONARY_ES['tequfah'] = ('tequf&aacute;', 'UN GIRO, un circuito &mdash; el volver a su punto de un per&iacute;odo de tiempo. El <em>giro</em> del sol llega a sus otros extremos (<a href="psalms-19.es.html#v19-7">Salmo 19:7</a>, ya en estas p&aacute;ginas); la fiesta de la cosecha es <em>al fin del a&ntilde;o</em> (<a href="exodus-34.es.html#v34-22">&Eacute;xodo 34:22</a>, ya en estas p&aacute;ginas); Ana concibe <em>al cabo de los d&iacute;as</em>, con el plural escrito <em>tequfot</em> sin su <em>vav</em> (<a href="1-samuel-1.es.html#v20">1 Samuel 1:20</a>, ya en estas p&aacute;ginas); y <em>al giro del a&ntilde;o</em> subi&oacute; el ej&eacute;rcito de Aram (2 Cr&oacute;nicas 24:23, todav&iacute;a no en estas p&aacute;ginas). &#11088; El giro del sol y el giro del a&ntilde;o son una sola palabra. El hebreo posterior la usa para las estaciones.')
+DICTIONARY_ES['chammah'] = ('jam&aacute;', 'CALOR &mdash; y un viejo nombre po&eacute;tico del propio SOL. <em>Nada hay oculto a su calor</em> (<a href="psalms-19.es.html#v19-7">Salmo 19:7</a>, ya en estas p&aacute;ginas); <em>la luna se avergonzar&aacute; y el sol se confundir&aacute;</em> (Isa&iacute;as 24:23, todav&iacute;a no en estas p&aacute;ginas); la amada es <em>clara como el sol</em> (Cantar de los Cantares 6:10, todav&iacute;a no en estas p&aacute;ginas). &#9888; No es <em><a href="diccionario.html#chemah-fury">chemah</a></em>, la furia, que es otra palabra.')
+DICTIONARY_ES['yashar'] = ('yesharim', 'RECTO, derecho, llano &mdash; un camino sin curvas, dicho de personas y de lo que Dios establece. <em>Los preceptos de Jehov&aacute; son rectos</em> (<a href="psalms-19.es.html#v19-9">Salmo 19:9</a>, ya en estas p&aacute;ginas), y el C&aacute;ntico de Mois&eacute;s termina su alabanza de la Roca con <em>justo y recto es &eacute;l</em> (<a href="deuteronomy-32.es.html#v32-4">Deuteronomio 32:4</a>, ya en estas p&aacute;ginas). La misma ra&iacute;z da el t&iacute;tulo po&eacute;tico de Israel <a href="diccionario.html#yeshurun">Yesur&uacute;n</a>, &laquo;el recto&raquo;, y el perdido <a href="diccionario.html#sefer-hayashar">Libro de Jaser</a>. La RV60 lee &laquo;rectos&raquo; y la TNM 1987 &laquo;rectas&raquo;.')
+DICTIONARY_ES['barah'] = ('bar&aacute;', 'CLARO, brillante, puro &mdash; el adjetivo del mandamiento que <em>ilumina los ojos</em> (<a href="psalms-19.es.html#v19-9">Salmo 19:9</a>, ya en estas p&aacute;ginas) y la palabra que el Cantar de los Cantares usa del sol: la amada es <em>clara como el sol</em> (Cantar de los Cantares 6:10, todav&iacute;a no en estas p&aacute;ginas). La RV60 lee &laquo;puro&raquo;, la NVI &laquo;claro&raquo; y la TNM 1987 &laquo;limpio&raquo;.')
+DICTIONARY_ES['paz'] = ('paz', 'ORO FINO &mdash; refinado, lo mejor del oro, y se pone junto al oro com&uacute;n. <em>M&aacute;s que el oro, que mucho oro fino</em> (<a href="psalms-19.es.html#v19-11">Salmo 19:11</a>, ya en estas p&aacute;ginas); <em>m&aacute;s que el oro, m&aacute;s que el oro fino</em> (<a href="psalms-119.es.html#v119-127">Salmo 119:127</a>, ya en estas p&aacute;ginas); y el fruto de la sabidur&iacute;a es mejor <em>que el oro, y que el oro fino</em> (Proverbios 8:19, todav&iacute;a no en estas p&aacute;ginas). Un participio de la misma ra&iacute;z es <em>zahav mufaz</em>, &laquo;oro refinado&raquo;, en el trono de Salom&oacute;n (1 Reyes 10:18, todav&iacute;a no en estas p&aacute;ginas). La RV60 lee &laquo;oro afinado&raquo;, la NVI &laquo;oro refinado&raquo; y la TNM 1987 &laquo;oro refinado&raquo;.')
+DICTIONARY_ES['nofet'] = ('n&oacute;fet tsufim', 'EL GOTEO DE LOS PANALES &mdash; <em>nofet</em> es la miel que gotea, y <em>tsuf</em> es el panal: <span data-heb="נפת צופים">la frase est&aacute; en un vers&iacute;culo de la Biblia hebrea</span>, el <a href="psalms-19.es.html#v19-11">Salmo 19:11</a> (ya en estas p&aacute;ginas). Las dos palabras se hallan por separado: <em>tsuf-devash</em>, &laquo;un panal&raquo;, es como Proverbios llama a las palabras agradables (<a href="proverbs-16.es.html#v16-24">Proverbios 16:24</a>, ya en estas p&aacute;ginas), y <em>nofet</em> sola es la dulzura de Proverbios 24:13 y de los labios que gotean de la novia (Cantar de los Cantares 4:11; ninguno todav&iacute;a en estas p&aacute;ginas). La RV60 lee &laquo;la que destila del panal&raquo;, la NVI &laquo;la miel que destila del panal&raquo; y la TNM 1987 &laquo;la miel que fluye de los panales&raquo;. Vea tambi&eacute;n <a href="diccionario.html#devash">devash</a>.')
+DICTIONARY_ES['shegiah'] = ('shegi&rsquo;ot', 'ERRORES &mdash; un plural que <span data-heb="שגיאות">est&aacute; en un vers&iacute;culo de la Biblia hebrea</span>, el <a href="psalms-19.es.html#v19-13">Salmo 19:13</a> (ya en estas p&aacute;ginas): <em>Los errores: &iquest;qui&eacute;n puede discernirlos?</em> &#9888; Pertenece a la familia de <em>shegag&aacute;</em>, un pecado &laquo;por error&raquo;, el que tiene su propio sacrificio (<a href="leviticus-4.es.html#v4-2">Lev&iacute;tico 4:2</a>, <a href="numbers-15.es.html#v15-27">N&uacute;meros 15:27</a>, ya en estas p&aacute;ginas), frente al pecado hecho con mano alzada (<a href="numbers-15.es.html#v15-30">N&uacute;meros 15:30</a>). La RV60 lee &laquo;errores&raquo;, la NVI &laquo;errores&raquo; y la TNM 1987 &laquo;equivocaciones&raquo;.')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'torah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-19.html#v19-8">Psalm 19:8&ndash;10</a> (now on these pages) sets six names for what God has laid down side by side, each with Jehovah: the law, the testimony, the precepts, the commandment, the fear and the ordinances.',) + _t[5:]
+    if _t[0] == 'hagah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The noun <em>hegyon</em> is built on it: <em>the meditation of my heart</em> closes <a href="psalms-19.html#v19-15">Psalm 19</a> (now on these pages), and the noun stands in three verses of the Hebrew Bible, Psalm 9:17, Psalm 19:15 and Psalm 92:4.',) + _t[5:]
+    if _t[0] == 'tamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The feminine <em>temimah</em> is the law of <a href="psalms-19.html#v19-8">Psalm 19:8</a> (now on these pages), and the servant who prays to be kept from the arrogant says <em>then I shall be whole</em>, <em>etam</em>, from the verb <em><a href="dictionary.html#tamam">tamam</a></em> (<a href="psalms-19.html#v19-14">19:14</a>). The sun&rsquo;s day at Gibeon is <em>a whole day</em> in the same word (<a href="joshua-10.html#v10-13">Joshua 10:13</a>).',) + _t[5:]
+    if _t[0] == 'nistarot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The root is in <a href="psalms-19.html#v19-7">Psalm 19:7</a> (now on these pages), where <em>nothing is hidden</em> from the sun&rsquo;s heat, and returns six verses later in the prayer <em>from the hidden ones clear me</em> (<a href="psalms-19.html#v19-13">19:13</a>).',) + _t[5:]
+    if _t[0] == 'naqah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; At <a href="exodus-34.html#v34-7">Exodus 34:7</a> Jehovah says of himself <em>he will by no means clear the guilty</em> (<em>ve-naqqeh lo yenaqqeh</em>), and at <a href="psalms-19.html#v19-13">Psalm 19:13&ndash;14</a> (both now on these pages) the servant asks <em>clear me</em> and says <em>I shall be cleared of great transgression</em>.',) + _t[5:]
+    if _t[0] == 'eqev':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-19.html#v19-12">Psalm 19:12</a> (now on these pages) puts the word after the keeping: <em>in keeping them there is great reward</em>, with the same two nouns that follow it at Deuteronomy 7:12, the ordinances and the keeping.',) + _t[5:]
+    if _t[0] == 'raqia':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-19.html#v19-2">Psalm 19:2</a> (now on these pages): <em>the vault tells of the work of his hands</em>.',) + _t[5:]
+    if _t[0] == 'gibbor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The sun &lsquo;rejoices like a warrior to run his course&rsquo; (<a href="psalms-19.html#v19-6">Psalm 19:6</a>, now on these pages); the Douay and the Reina-Valera read &lsquo;giant&rsquo; and &laquo;gigante&raquo;.',) + _t[5:]
+_d = DICTIONARY_ES['torah']
+DICTIONARY_ES['torah'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-19.es.html#v19-8">Salmo 19:8&ndash;10</a> (ya en estas p&aacute;ginas) pone lado a lado seis nombres para lo que Dios ha establecido, cada uno con Jehov&aacute;: la ley, el testimonio, los preceptos, el mandamiento, el temor y las ordenanzas.')
+_d = DICTIONARY_ES['hagah']
+DICTIONARY_ES['hagah'] = (_d[0], _d[1] + ' &#11088; El sustantivo <em>hegyon</em> se construye sobre ella: <em>la meditaci&oacute;n de mi coraz&oacute;n</em> cierra el <a href="psalms-19.es.html#v19-15">Salmo 19</a> (ya en estas p&aacute;ginas), y el sustantivo est&aacute; en tres vers&iacute;culos de la Biblia hebrea, el Salmo 9:17, el Salmo 19:15 y el Salmo 92:4.')
+_d = DICTIONARY_ES['tamim']
+DICTIONARY_ES['tamim'] = (_d[0], _d[1] + ' &#11088; El femenino <em>temim&aacute;</em> es la ley del <a href="psalms-19.es.html#v19-8">Salmo 19:8</a> (ya en estas p&aacute;ginas), y el siervo que ora por ser detenido de los soberbios dice <em>entonces ser&eacute; &iacute;ntegro</em>, <em>etam</em>, del verbo <em><a href="diccionario.html#tamam">tamam</a></em> (<a href="psalms-19.es.html#v19-14">19:14</a>). El d&iacute;a del sol en Gaba&oacute;n es <em>un d&iacute;a entero</em> con la misma palabra (<a href="joshua-10.es.html#v10-13">Josu&eacute; 10:13</a>).')
+_d = DICTIONARY_ES['nistarot']
+DICTIONARY_ES['nistarot'] = (_d[0], _d[1] + ' &#11088; La ra&iacute;z est&aacute; en el <a href="psalms-19.es.html#v19-7">Salmo 19:7</a> (ya en estas p&aacute;ginas), donde <em>nada hay oculto</em> al calor del sol, y vuelve seis vers&iacute;culos despu&eacute;s en la oraci&oacute;n <em>de los ocultos, t&eacute;nme por inocente</em> (<a href="psalms-19.es.html#v19-13">19:13</a>).')
+_d = DICTIONARY_ES['naqah']
+DICTIONARY_ES['naqah'] = (_d[0], _d[1] + ' &#11088; En <a href="exodus-34.es.html#v34-7">&Eacute;xodo 34:7</a> Jehov&aacute; dice de s&iacute; mismo <em>de ning&uacute;n modo tendr&aacute; por inocente al culpable</em> (<em>ve-naqqeh lo yenaqqeh</em>), y en el <a href="psalms-19.es.html#v19-13">Salmo 19:13&ndash;14</a> (ambos ya en estas p&aacute;ginas) el siervo pide <em>t&eacute;nme por inocente</em> y dice <em>quedar&eacute; inocente de gran transgresi&oacute;n</em>.')
+_d = DICTIONARY_ES['eqev']
+DICTIONARY_ES['eqev'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-19.es.html#v19-12">Salmo 19:12</a> (ya en estas p&aacute;ginas) pone la palabra tras el guardar: <em>en guardarlos hay gran recompensa</em>, con los mismos dos sustantivos que la siguen en Deuteronomio 7:12, las ordenanzas y el guardar.')
+_d = DICTIONARY_ES['raqia']
+DICTIONARY_ES['raqia'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-19.es.html#v19-2">Salmo 19:2</a> (ya en estas p&aacute;ginas): <em>la b&oacute;veda narra la obra de sus manos</em>.')
+_d = DICTIONARY_ES['gibbor']
+DICTIONARY_ES['gibbor'] = (_d[0], _d[1] + ' &#11088; El sol &laquo;se alegra como un guerrero de correr su camino&raquo; (<a href="psalms-19.es.html#v19-6">Salmo 19:6</a>, ya en estas p&aacute;ginas); la Douay y la Reina-Valera leen &lsquo;giant&rsquo; y &laquo;gigante&raquo;.')
+
+# ---- repairs: piqqudim (Psalm 19 is now on these pages), tevel (2 Samuel 22:16 is the other word), zadon (Numbers 15:30 is a high hand, not zadon)
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'piqqudim':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Psalms 19:9 and 111:7 (neither yet on these pages)', '<a href="psalms-19.html#v19-9">Psalm 19:9</a> (now on these pages) and 111:7 (not yet on these pages)'),) + _t[5:]
+    if _t[0] == 'tevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('⭐ &lsquo;The foundations of the world were laid bare, at the rebuke of Jehovah&rsquo; (<a href="2-samuel-22.html#v22-16">2 Samuel 22:16</a>, now on these pages).', '&#9888; Not to be confused with <em><a href="dictionary.html#tevel-world">tevel</a></em>, &lsquo;the inhabited world&rsquo;, a different word with the same consonants: <em>the foundations of the world were laid bare</em> (<a href="2-samuel-22.html#v22-16">2 Samuel 22:16</a>) belongs to that one.'),) + _t[5:]
+    if _t[0] == 'zadon':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('the same root behind the \'high-handed\' (bezadon) deliberate sin that has no sacrifice (<a href="numbers-15.html#n15-30">Numbers 15:30</a>, already on these pages) and the', 'the same root behind <em>bezadon</em>, \'with insolence\', the way a man defies the judge at the central court (<a href="deuteronomy-17.html#v17-12">Deuteronomy 17:12</a>, already on these pages), and the'),) + _t[5:]
+_d = DICTIONARY_ES['piqqudim']
+DICTIONARY_ES['piqqudim'] = (_d[0], _d[1].replace('Salmos 19:9 y 111:7 (ninguno todav&iacute;a en estas p&aacute;ginas)', '<a href="psalms-19.es.html#v19-9">Salmo 19:9</a> (ya en estas p&aacute;ginas) y 111:7 (todav&iacute;a no en estas p&aacute;ginas)').replace('Salmos 19:9 y 111:7 (ninguno todavía en estas páginas)', '<a href="psalms-19.es.html#v19-9">Salmo 19:9</a> (ya en estas páginas) y 111:7 (todavía no en estas páginas)'))
+_d = DICTIONARY_ES['zadon']
+DICTIONARY_ES['zadon'] = (_d[0], _d[1].replace('la misma que está detrás del pecado «con mano alzada» (<em>bezadon</em>) que no tiene sacrificio (<a href="numbers-15.es.html#n15-30">Números 15:30</a>) y de las aguas', 'la misma que está detrás de <em>bezadon</em>, «con insolencia», como desafía un hombre al juez del tribunal central (<a href="deuteronomy-17.es.html#v17-12">Deuteronomio 17:12</a>) y de las aguas'))
+
+_d = DICTIONARY_ES['tevel']
+DICTIONARY_ES['tevel'] = (_d[0], _d[1].replace('⭐ «Los cimientos del mundo quedaron al descubierto, a la reprensión de Jehová» (<a href="2-samuel-22.es.html#v22-16">2 Samuel 22:16</a>, ya en estas páginas).', '&#9888; No debe confundirse con <em><a href="diccionario.html#tevel-world">tevel</a></em>, «el mundo habitado», otra palabra con las mismas consonantes: «los cimientos del mundo quedaron al descubierto» (<a href="2-samuel-22.es.html#v22-16">2 Samuel 22:16</a>) pertenece a esa.'))
+
+# ---- zedim in Psalm 19:14 and Psalm 119
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zadon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The plural adjective <em>zedim</em>, &lsquo;the arrogant&rsquo;, is people in seven of the eight Psalms verses that have it, six of them in Psalm 119, and it is read as people in <a href="psalms-19.html#v19-14">Psalm 19:14</a> (now on these pages), where the shelf reads &lsquo;presumptuous sins&rsquo;. The high-handed sin of <a href="numbers-15.html#v15-30">Numbers 15:30</a> is <em>be-yad ramah</em>, &lsquo;with a high hand&rsquo;, a different phrase.',) + _t[5:]
+_d = DICTIONARY_ES['zadon']
+DICTIONARY_ES['zadon'] = (_d[0], _d[1] + ' &#11088; El adjetivo plural <em>zedim</em>, &laquo;los soberbios&raquo;, son personas en siete de los ocho vers&iacute;culos de los Salmos que lo tienen, seis de ellos en el Salmo 119, y se lee como personas en el <a href="psalms-19.es.html#v19-14">Salmo 19:14</a> (ya en estas p&aacute;ginas), donde el estante lee &laquo;pecados presuntuosos&raquo;. El pecado con mano alzada de <a href="numbers-15.es.html#v15-30">N&uacute;meros 15:30</a> es <em>be-yad ram&aacute;</em>, &laquo;con mano alzada&raquo;, una frase distinta.')
+
+
+CHRON_CHAPTERS["psalms19"] = dict(era="monarchy",
+    when="&ldquo;The heavens recount the glory of God&rdquo;: a psalm of David in two halves. The first lets a sky pour out speech that has no words and sends its line to the ends of the world, and sets a tent in it for the sun, which comes out like a bridegroom and runs like a warrior; the second turns to the law of Jehovah, six names for it in three verses, more to be desired than gold and sweeter than honey, and ends with a servant asking to be cleared of hidden errors and kept from the arrogant, and for the words of his mouth and the meditation of his heart to be accepted.",
+    clock="The heading names no event and the psalm names none; it is not dated beyond &ldquo;a psalm of David&rdquo;, and it is filed here under the monarchy as an undated psalm, as Psalm 100 is. Romans 10:18 quotes verse 5 of it.")
+
+
+CHAPTER_ART["psalms19"] = [dict(
+    file="van-honthorst-king-david-playing-the-harp.jpg",
+    title="King David Playing the Harp", title_es="El rey David tocando el arpa",
+    artist="Gerard van Honthorst", artist_es="Gerard van Honthorst",
+    year="1622",
+    location="Centraal Museum, Utrecht", location_es="Centraal Museum, Utrecht",
+    alt="A half-length oil portrait of a bearded man with dark curly hair, turned three-quarters and looking straight up with his mouth a little open. He wears a striped cloth wound round his head with a small gold crown on top, a fur collar spotted dark on white, and a heavy gold-patterned robe with a jewelled red cuff. His left hand rests on the carved scroll of a harp whose strings run down the right edge of the picture. The background is a plain dark grey-brown.",
+    alt_es="Un retrato al óleo de medio cuerpo de un hombre barbado de cabello oscuro y rizado, vuelto de tres cuartos y mirando directamente hacia arriba con la boca algo abierta. Lleva una tela a rayas enrollada en la cabeza con una pequeña corona de oro encima, un cuello de piel manchado de oscuro sobre blanco y una pesada túnica de dibujos dorados con un puño rojo con joyas. Su mano izquierda descansa sobre la voluta tallada de un arpa cuyas cuerdas bajan por el borde derecho del cuadro. El fondo es un gris pardo liso y oscuro.",
+    note="Psalm 19. Honthorst paints David, to whom the heading gives the psalm, with his face turned up and his mouth open; the picture is not a scene from the psalm, and the psalm names no instrument. What it shares with the psalm is the upturned look, at a sky that, in the psalm, speaks with no words.",
+    note_es="Salmo 19. Honthorst pinta a David, a quien el encabezado atribuye el salmo, con el rostro vuelto hacia arriba y la boca abierta; el cuadro no es una escena del salmo, y el salmo no nombra ningún instrumento. Lo que comparte con el salmo es la mirada levantada, hacia un cielo que, en el salmo, habla sin palabras.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_-_King_David_Playing_the_Harp_-_Google_Art_Project.jpg",
+)]
+
+
+# Appended to library_data.py for Isaiah 6 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('ritspah', 'ritspah', 'רִצְפָּה', 'ritspah', 'A GLOWING STONE &mdash; a stone heated in the fire, the thing a seraph carries to Isaiah&rsquo;s lips with tongs from the altar (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages). &#9888; It is not <em>gachelet</em>, the common word for a coal. &#11088; The same root is the hot stones on which Elijah&rsquo;s cake was baked (<em>retsafim</em>, <a href="1-kings-19.html#v19-6">1 Kings 19:6</a>, now on these pages) and, in the same consonants, a paved floor (Ezekiel 40:17 and 2 Chronicles 7:3, not yet on these pages). The KJV and the NIV read &lsquo;a live coal&rsquo;, the NWT 1984 &lsquo;a glowing coal&rsquo; and the Geneva &lsquo;an hot coal&rsquo;; this translation prints &lsquo;a glowing stone&rsquo;.', ('Isaiah', 6, 6)))
+DICTIONARY.append(('shulim', 'shulim', 'שׁוּלִים', 'shulav', 'THE HEM, the skirts &mdash; the lower edge of a robe. Isaiah sees the Lord&rsquo;s skirts filling the temple (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages). <span data-heb="שוליו">The word with this ending stands in two verses of the Hebrew Bible</span>: that one, and the hem of the priest&rsquo;s robe, where pomegranates and golden bells are set so that its sound is heard when Aaron goes into the holy place &lsquo;so that he does not die&rsquo; (<a href="exodus-28.html#v28-33">Exodus 28:33</a>&ndash;<a href="exodus-28.html#v28-35">35</a>, now on these pages). The KJV and the ASV read &lsquo;his train&rsquo;, the NIV &lsquo;the train of his robe&rsquo; and the NWT 1984 &lsquo;his skirts&rsquo;.', ('Isaiah', 6, 1)))
+DICTIONARY.append(('amot-hasippim', 'amot ha-sippim', 'אַמּוֹת הַסִּפִּים', 'amot ha-sippim', 'THE POSTS OF THE THRESHOLDS &mdash; what shook at the voice of the seraphim (<a href="isaiah-6.html#v6-4">Isaiah 6:4</a>, now on these pages). <span data-heb="אמות הספים">The phrase stands in one verse of the Hebrew Bible</span>. <em>Amah</em> is elsewhere the cubit, the length of a forearm, and here it has to be whatever holds a door, so the versions disagree: the KJV has &lsquo;the posts of the door&rsquo;, the ASV &lsquo;the foundations of the thresholds&rsquo;, the NIV &lsquo;the doorposts and thresholds&rsquo;, the NWT 1984 &lsquo;the pivots of the thresholds&rsquo;, the Geneva &lsquo;the lintels of the door cheeks&rsquo; and the Douay &lsquo;the lintels of the doors&rsquo;. &#9888; Not the <em><a href="dictionary.html#amah">amah</a></em> of Ruth 3:9, a handmaid: the two are spelled with the same consonants and are different words.', ('Isaiah', 6, 4)))
+DICTIONARY.append(('shalleket', 'shalleket', 'שַׁלֶּכֶת', 'be-shalleket', 'THE FELLING &mdash; the cutting down or casting down of a tree, the moment at which the terebinth and the oak &lsquo;in the felling&rsquo; still keep a stump (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages). The noun is rare; it is also the name of the Shalleketh Gate (1 Chronicles 26:16, not yet on these pages), and both are built on <em>shalakh</em>, to cast. The KJV reads &lsquo;when they cast their leaves&rsquo;, the Geneva the same, the NIV &lsquo;when they are cut down&rsquo; and the ASV &lsquo;when they are felled&rsquo;.', ('Isaiah', 6, 13)))
+DICTIONARY.append(('asiriyah', 'asiriyah', 'עֲשִׂרִיָּה', 'asiriyah', 'A TENTH &mdash; the one in ten that is left. <span data-heb="עשיריה">The form stands in one verse of the Hebrew Bible</span>: <em>and if a tenth is still in it, it will return and be for burning</em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages). It is built on the number ten, like <em><a href="dictionary.html#maaser">ma&rsquo;aser</a></em>, the tithe, and the Douay, following the Latin, reads &lsquo;a tithing&rsquo;; the TLB glosses it &lsquo;a tenth&mdash;a remnant&mdash;will survive&rsquo;. The Hebrew says only a tenth.', ('Isaiah', 6, 13)))
+DICTIONARY.append(('melqachayim', 'melqachayim', 'מֶלְקָחַיִם', 'melqachayim', 'TONGS &mdash; a dual form, the pair of arms that lifts a hot thing without a hand on it. <span data-heb="מלקחים">It stands in three verses of the Hebrew Bible</span>: the golden tongs among the furnishings of the temple (<a href="1-kings-7.html#v7-49">1 Kings 7:49</a>, now on these pages, and 2 Chronicles 4:21, not yet), and the seraph&rsquo;s tongs, with which he takes a glowing stone from the altar to Isaiah&rsquo;s mouth (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages). The tool of the sanctuary is the tool of the vision.', ('Isaiah', 6, 6)))
+DICTIONARY.append(('shamen', 'shamen', 'שָׁמֵן', 'hashmen', 'TO GROW FAT &mdash; and, in the causative, to MAKE FAT: the heart that Isaiah is told to make fat (<em>hashmen</em>, <a href="isaiah-6.html#v6-10">Isaiah 6:10</a>, now on these pages). It is the verb of &lsquo;Jeshurun grew fat and kicked&rsquo; (<a href="deuteronomy-32.html#v32-15">Deuteronomy 32:15</a>, now on these pages), so the order to the prophet uses the word the song of Moses uses for a people that has become heavy with its own prosperity. The verse gives three verbs for three organs, and the other two are <em><a href="dictionary.html#kaved">hakhbed</a></em>, &lsquo;make heavy&rsquo;, for the ears and <em>hasha&rsquo;</em>, &lsquo;shut&rsquo; or &lsquo;smear over&rsquo;, for the eyes. The KJV reads &lsquo;fat&rsquo;, the NIV &lsquo;calloused&rsquo; and the NWT 1984 &lsquo;unreceptive&rsquo;.', ('Isaiah', 6, 10)))
+DICTIONARY.append(('ashan', 'ashan', 'עָשָׁן', 'ashan', 'SMOKE &mdash; what fills the house when the seraphim cry (<a href="isaiah-6.html#v6-4">Isaiah 6:4</a>, now on these pages), and what wrapped Sinai: &lsquo;Mount Sinai was all in smoke, because Jehovah had come down on it in fire&rsquo; (<a href="exodus-19.html#v19-18">Exodus 19:18</a>, now on these pages). &#9888; At the tent of meeting and at Solomon&rsquo;s house the word is not smoke but cloud, <em>anan</em> (<a href="exodus-40.html#v40-34">Exodus 40:34</a>, <a href="1-kings-8.html#v8-10">1 Kings 8:10</a>, now on these pages), so Isaiah&rsquo;s house is filled with the word of the mountain and not the word of the tent. John of Patmos sees the temple &lsquo;filled with smoke&rsquo; in turn (<a href="revelation-15.html#v15-8">Revelation 15:8</a>, now on these pages).', ('Isaiah', 6, 4)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['ritspah'] = ('ritsp&aacute;', 'UNA PIEDRA CANDENTE &mdash; una piedra calentada al fuego, lo que un serafín lleva a los labios de Isaías con unas tenazas desde el altar (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas). &#9888; No es <em>gajélet</em>, la palabra común para una brasa. &#11088; La misma raíz son las piedras calientes sobre las que se coció la torta de Elías (<em>retsafim</em>, <a href="1-kings-19.es.html#v19-6">1 Reyes 19:6</a>, ya en estas páginas) y, con las mismas consonantes, un pavimento (Ezequiel 40:17 y 2 Crónicas 7:3, todavía no en estas páginas). La RV 1909 y la RV60 leen &laquo;un carbón encendido&raquo;, la NVI &laquo;una brasa&raquo; y la TNM 1987 &laquo;una brasa relumbrante&raquo;; esta traducción imprime &laquo;una piedra candente&raquo;.')
+DICTIONARY_ES['shulim'] = ('shul&aacute;v', 'EL BORDE, las faldas &mdash; la orilla inferior de un manto. Isaías ve las faldas del Señor llenando el templo (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas). <span data-heb="שוליו">La palabra con esta terminación está en dos versículos de la Biblia hebrea</span>: ese, y el borde del manto del sacerdote, donde se ponen granadas y campanillas de oro para que se oiga su sonido cuando Aarón entra en el lugar santo, &laquo;para que no muera&raquo; (<a href="exodus-28.es.html#v28-33">Éxodo 28:33</a>&ndash;<a href="exodus-28.es.html#v28-35">35</a>, ya en estas páginas). La RV 1909 y la RV60 leen &laquo;sus faldas&raquo;, la NVI &laquo;las orlas de su manto&raquo; y la TNM 1987 &laquo;sus faldas&raquo;.')
+DICTIONARY_ES['amot-hasippim'] = ('amot ha-sip&iacute;m', 'LOS POSTES DE LOS UMBRALES &mdash; lo que se sacudió a la voz de los serafines (<a href="isaiah-6.es.html#v6-4">Isaías 6:4</a>, ya en estas páginas). <span data-heb="אמות הספים">La frase está en un versículo de la Biblia hebrea</span>. <em>Amá</em> es en otros lugares el codo, la longitud de un antebrazo, y aquí tiene que ser lo que sostiene una puerta, así que las versiones discrepan: la RV 1909 dice &laquo;los quiciales de las puestas&raquo;, la RV60 &laquo;los quiciales de las puertas&raquo;, la NVI &laquo;los umbrales de las puertas&raquo; y la TNM 1987 &laquo;los quicios de los umbrales&raquo;. &#9888; No es la <em><a href="diccionario.html#amah">amá</a></em> de Rut 3:9, una sierva: las dos se escriben con las mismas consonantes y son palabras distintas.')
+DICTIONARY_ES['shalleket'] = ('be-shal&eacute;ket', 'LA TALA &mdash; el cortar o echar abajo un árbol, el momento en que el terebinto y el roble &laquo;en la tala&raquo; todavía guardan un tocón (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas). El sustantivo es raro; es también el nombre de la Puerta de Shalléket (1 Crónicas 26:16, todavía no en estas páginas), y ambos se construyen sobre <em>shalaj</em>, echar. La RV 1909 lee &laquo;en la tala queda el tronco&raquo; y la RV60 &laquo;al ser cortados aún queda el tronco&raquo;.')
+DICTIONARY_ES['asiriyah'] = ('asiriy&aacute;', 'UNA DÉCIMA PARTE &mdash; la una de cada diez que queda. <span data-heb="עשיריה">La forma está en un versículo de la Biblia hebrea</span>: <em>y si aún queda en ella una décima parte, volverá y será para quema</em> (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas). Se construye sobre el número diez, como <em><a href="diccionario.html#maaser">ma&rsquo;aser</a></em>, el diezmo, y la Douay, siguiendo el latín, lee &laquo;a tithing&raquo;. El hebreo dice solo una décima.')
+DICTIONARY_ES['melqachayim'] = ('melqaj&aacute;yim', 'TENAZAS &mdash; una forma dual, el par de brazos que levanta una cosa caliente sin una mano encima. <span data-heb="מלקחים">Está en tres versículos de la Biblia hebrea</span>: las tenazas de oro entre el mobiliario del templo (<a href="1-kings-7.es.html#v7-49">1 Reyes 7:49</a>, ya en estas páginas, y 2 Crónicas 4:21, todavía no) y las tenazas del serafín, con las que toma una piedra candente del altar hasta la boca de Isaías (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas). La herramienta del santuario es la herramienta de la visión.')
+DICTIONARY_ES['shamen'] = ('hashm&eacute;n', 'ENGORDAR &mdash; y, en causativo, HACER ENGORDAR: el corazón que a Isaías se le dice que haga engordar (<em>hashmen</em>, <a href="isaiah-6.es.html#v6-10">Isaías 6:10</a>, ya en estas páginas). Es el verbo de &laquo;Jesurún engordó y dio patadas&raquo; (<a href="deuteronomy-32.es.html#v32-15">Deuteronomio 32:15</a>, ya en estas páginas), así que la orden al profeta usa la palabra que el cántico de Moisés usa para un pueblo que se ha vuelto pesado con su propia prosperidad. El versículo da tres verbos para tres órganos, y los otros dos son <em><a href="diccionario.html#kaved">hajbed</a></em>, &laquo;haz pesados&raquo;, para los oídos, y <em>hasha</em>, &laquo;cierra&raquo; o &laquo;unta&raquo;, para los ojos. La RV 1909 y la RV60 leen &laquo;engruesa&raquo;, la NVI &laquo;haz insensible&raquo; y la TNM 1987 &laquo;indispuesto a recibir&raquo;.')
+DICTIONARY_ES['ashan'] = ('ash&aacute;n', 'HUMO &mdash; lo que llena la casa cuando gritan los serafines (<a href="isaiah-6.es.html#v6-4">Isaías 6:4</a>, ya en estas páginas), y lo que envolvió el Sinaí: &laquo;todo el monte Sinaí humeaba, porque Jehová había descendido sobre él en fuego&raquo; (<a href="exodus-19.es.html#v19-18">Éxodo 19:18</a>, ya en estas páginas). &#9888; En la tienda de reunión y en la casa de Salomón la palabra no es humo sino nube, <em>anán</em> (<a href="exodus-40.es.html#v40-34">Éxodo 40:34</a>, <a href="1-kings-8.es.html#v8-10">1 Reyes 8:10</a>, ya en estas páginas), de modo que la casa de Isaías se llena con la palabra del monte y no con la de la tienda. Juan en Patmos ve a su vez el templo &laquo;lleno de humo&raquo; (<a href="revelation-15.es.html#v15-8">Apocalipsis 15:8</a>, ya en estas páginas).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah hears the word three times at once, &lsquo;Holy, holy, holy is Jehovah of armies&rsquo; (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), <span data-heb="קדוש קדוש קדוש">a threefold form that stands in one verse of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraphim make the glory the fullness of the earth, &lsquo;the fullness of all the earth is his glory&rsquo; (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), and the NWT 1984 is the one version on the shelf that prints it that way.',) + _t[5:]
+    if _t[0] == 'tame':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah says of himself and his people that they are &lsquo;unclean of lips&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="טמא שפתים">a phrase that stands in one verse of the Hebrew Bible</span>; the nearest Law is the one with the scaly disease, who covers his upper lip and calls &lsquo;Unclean!&rsquo; (<a href="leviticus-13.html#v13-45">Leviticus 13:45</a>).',) + _t[5:]
+    if _t[0] == 'hineni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; At <a href="isaiah-6.html#v6-8">Isaiah 6:8</a> (now on these pages) it is joined to a verb of his own, <em>hineni shelacheni</em>, &lsquo;Here I am; send me&rsquo;, <span data-heb="הנני שלחני">a pair that stands in one verse of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kaved':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah is told to do to the people&rsquo;s ears what Pharaoh did to his own heart: <em>hakhbed</em>, &lsquo;make heavy&rsquo; (<a href="isaiah-6.html#v6-10">Isaiah 6:10</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The verb is in the last clause of <a href="isaiah-6.html#v6-10">Isaiah 6:10</a> (&lsquo;and it turn and be healed&rsquo;) and in the tenth that &lsquo;will return&rsquo; at 6:13 (both now on these pages), the verb of the name Shear-jashub (<a href="isaiah-7.html#v7-3">Isaiah 7:3</a>).',) + _t[5:]
+    if _t[0] == 'kaphar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah&rsquo;s sin &lsquo;is atoned for&rsquo; in the passive, <em>tekhuppar</em>, by a stone from the altar (<a href="isaiah-6.html#v6-7">Isaiah 6:7</a>, now on these pages); compare the iniquity that &lsquo;shall not be atoned for by sacrifice or by offering&rsquo; (<a href="1-samuel-3.html#v3-14">1 Samuel 3:14</a>).',) + _t[5:]
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Your iniquity has departed&rsquo; (<a href="isaiah-6.html#v6-7">Isaiah 6:7</a>, now on these pages): the iniquity goes of its own accord, <em>sar</em>, while the sin &lsquo;is atoned for&rsquo;.',) + _t[5:]
+    if _t[0] == 'tzevaot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraphim sing the title (<a href="isaiah-6.html#v6-3">Isaiah 6:3</a>, now on these pages), and Isaiah says his eyes have seen &lsquo;the King, Jehovah of armies&rsquo; (6:5).',) + _t[5:]
+    if _t[0] == 'adonai':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, 8 and 11 (now on these pages) have <em>Adonai</em>, &lsquo;the Lord&rsquo;, and verses 3, 5 and 12 have the name Jehovah.',) + _t[5:]
+    if _t[0] == 'kisse':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;On a throne, high and lifted up&rsquo; (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages); the adjectives could belong to the throne or to the one on it.',) + _t[5:]
+    if _t[0] == 'hekhal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;His skirts filled the temple&rsquo; (<a href="isaiah-6.html#v6-1">Isaiah 6:1</a>, now on these pages); in verse 4 the same building is <em>ha-bayit</em>, &lsquo;the house&rsquo;.',) + _t[5:]
+    if _t[0] == 'matzevah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The stump of <a href="isaiah-6.html#v6-13">Isaiah 6:13</a> (now on these pages), <em>matsevet</em>, is spelled and pointed exactly as Jacob&rsquo;s pillar of stone at <a href="genesis-35.html#v35-14">Genesis 35:14</a>.',) + _t[5:]
+    if _t[0] == 'zera':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;A holy seed is its stump&rsquo; (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages), the other adjective for the people the book called &lsquo;a seed of evildoers&rsquo; (<a href="isaiah-1.html#v4">Isaiah 1:4</a>).',) + _t[5:]
+    if _t[0] == 'baar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The tenth that is left is &lsquo;for burning&rsquo;, <em>le-va&rsquo;er</em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The book&rsquo;s other word for what is left is a tenth, <em><a href="dictionary.html#asiriyah">asiriyah</a></em> (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages), and Shear-jashub is the remnant that returns (<a href="isaiah-7.html#v7-3">Isaiah 7:3</a>).',) + _t[5:]
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Six wings, <em>kenafayim</em>, to each seraph, two to cover the face, two to cover the feet and two to fly (<a href="isaiah-6.html#v6-2">Isaiah 6:2</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'damam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah&rsquo;s cry <em>nidmeiti</em>, &lsquo;I am undone&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="נדמיתי">a form that stands in one verse of the Hebrew Bible</span>, comes from a verb that can mean to be cut off or to be silenced; the NWT 1984 has &lsquo;as good as brought to silence&rsquo; and the Douay &lsquo;I have held my peace&rsquo;.',) + _t[5:]
+    if _t[0] == 'saraf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-6.html#v6-2">Isaiah 6:2</a> and 6 are now on these pages: the seraphim, their six wings, and the glowing stone carried with tongs; the Hebrew word for what he carries is <em><a href="dictionary.html#ritspah">ritspah</a></em>, a glowing stone, where the shelf has a coal.',) + _t[5:]
+    if _t[0] == 'hoy':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah answers the woes he has been calling down with the other cry, <em>oi li</em>, &lsquo;woe to me&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages), <span data-heb="אוי לי">two words that stand in four verses of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'melekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;My eyes have seen the King, Jehovah of armies&rsquo; (<a href="isaiah-6.html#v6-5">Isaiah 6:5</a>, now on these pages): the title that King Uzziah held in the first verse, given to the one whose hem filled the temple.',) + _t[5:]
+    if _t[0] == 'mizbeach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The seraph takes the glowing stone &lsquo;from off the altar&rsquo; (<a href="isaiah-6.html#v6-6">Isaiah 6:6</a>, now on these pages); the text does not say which altar.',) + _t[5:]
+    if _t[0] == 'adamah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;And the ground is left a desolation&rsquo; (<a href="isaiah-6.html#v6-11">Isaiah 6:11</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shalach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Whom shall I send?&rsquo; and the answer <em>shelacheni</em>, &lsquo;send me&rsquo; (<a href="isaiah-6.html#v6-8">Isaiah 6:8</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'azav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <em>Ha-azuvah</em>, &lsquo;the abandonment&rsquo;, with the article, <span data-heb="העזובה">stands in one verse of the Hebrew Bible</span>: &lsquo;the abandonment is great in the midst of the land&rsquo; (<a href="isaiah-6.html#v6-12">Isaiah 6:12</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'elah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; &lsquo;Like the terebinth and like the oak&rsquo; (<a href="isaiah-6.html#v6-13">Isaiah 6:13</a>, now on these pages): what a felled one keeps is the image of a holy seed.',) + _t[5:]
+_d = DICTIONARY_ES['kadosh']
+DICTIONARY_ES['kadosh'] = (_d[0], _d[1] + ' &#11088; Isaías oye la palabra tres veces a la vez, &laquo;Santo, santo, santo es Jehová de los ejércitos&raquo; (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), <span data-heb="קדוש קדוש קדוש">una forma triple que está en un versículo de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kavod']
+DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; Los serafines hacen de la gloria la plenitud de la tierra, &laquo;la plenitud de toda la tierra es su gloria&raquo; (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), y la TNM 1987 es la versión del estante que la imprime así.')
+_d = DICTIONARY_ES['tame']
+DICTIONARY_ES['tame'] = (_d[0], _d[1] + ' &#11088; Isaías dice de sí mismo y de su pueblo que son &laquo;impuros de labios&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="טמא שפתים">una frase que está en un versículo de la Biblia hebrea</span>; lo más cercano en la Ley es el que tiene la enfermedad escamosa, que se cubre el labio superior y clama &laquo;¡Impuro!&raquo; (<a href="leviticus-13.es.html#v13-45">Levítico 13:45</a>).')
+_d = DICTIONARY_ES['hineni']
+DICTIONARY_ES['hineni'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-6.es.html#v6-8">Isaías 6:8</a> (ya en estas páginas) se une a un verbo propio, <em>hineni shelajeni</em>, &laquo;Aquí estoy; envíame a mí&raquo;, <span data-heb="הנני שלחני">un par que está en un versículo de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kaved']
+DICTIONARY_ES['kaved'] = (_d[0], _d[1] + ' &#11088; A Isaías se le dice que haga a los oídos del pueblo lo que Faraón hizo a su propio corazón: <em>hajbed</em>, &laquo;haz pesados&raquo; (<a href="isaiah-6.es.html#v6-10">Isaías 6:10</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shuv']
+DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; El verbo está en la última cláusula de <a href="isaiah-6.es.html#v6-10">Isaías 6:10</a> (&laquo;y se vuelva y sea sanado&raquo;) y en la décima parte que &laquo;volverá&raquo; en 6:13 (ambos ya en estas páginas), el verbo del nombre Sear-jasub (<a href="isaiah-7.es.html#v7-3">Isaías 7:3</a>).')
+_d = DICTIONARY_ES['kaphar']
+DICTIONARY_ES['kaphar'] = (_d[0], _d[1] + ' &#11088; El pecado de Isaías &laquo;queda expiado&raquo; en pasivo, <em>tejupar</em>, por una piedra del altar (<a href="isaiah-6.es.html#v6-7">Isaías 6:7</a>, ya en estas páginas); compárese la iniquidad que &laquo;no será expiada con sacrificio ni con ofrenda&raquo; (<a href="1-samuel-3.es.html#v3-14">1 Samuel 3:14</a>).')
+_d = DICTIONARY_ES['avon']
+DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; &laquo;Tu iniquidad se ha apartado&raquo; (<a href="isaiah-6.es.html#v6-7">Isaías 6:7</a>, ya en estas páginas): la iniquidad se va por sí misma, <em>sar</em>, mientras que el pecado &laquo;queda expiado&raquo;.')
+_d = DICTIONARY_ES['tzevaot']
+DICTIONARY_ES['tzevaot'] = (_d[0], _d[1] + ' &#11088; Los serafines cantan el título (<a href="isaiah-6.es.html#v6-3">Isaías 6:3</a>, ya en estas páginas), e Isaías dice que sus ojos han visto &laquo;al Rey, a Jehová de los ejércitos&raquo; (6:5).')
+_d = DICTIONARY_ES['adonai']
+DICTIONARY_ES['adonai'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, 8 y 11 (ya en estas páginas) tienen <em>Adonai</em>, &laquo;el Señor&raquo;, y los versículos 3, 5 y 12 tienen el nombre Jehová.')
+_d = DICTIONARY_ES['kisse']
+DICTIONARY_ES['kisse'] = (_d[0], _d[1] + ' &#11088; &laquo;Sobre un trono alto y elevado&raquo; (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas); los adjetivos pueden pertenecer al trono o al que está en él.')
+_d = DICTIONARY_ES['hekhal']
+DICTIONARY_ES['hekhal'] = (_d[0], _d[1] + ' &#11088; &laquo;Sus faldas llenaban el templo&raquo; (<a href="isaiah-6.es.html#v6-1">Isaías 6:1</a>, ya en estas páginas); en el versículo 4 el mismo edificio es <em>ha-bayit</em>, &laquo;la casa&raquo;.')
+_d = DICTIONARY_ES['matzevah']
+DICTIONARY_ES['matzevah'] = (_d[0], _d[1] + ' &#11088; El tocón de <a href="isaiah-6.es.html#v6-13">Isaías 6:13</a> (ya en estas páginas), <em>matsévet</em>, se escribe y se puntúa exactamente como la columna de piedra de Jacob en <a href="genesis-35.es.html#v35-14">Génesis 35:14</a>.')
+_d = DICTIONARY_ES['zera']
+DICTIONARY_ES['zera'] = (_d[0], _d[1] + ' &#11088; &laquo;Una simiente santa es su tocón&raquo; (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas), el otro adjetivo para el pueblo que el libro llamó &laquo;simiente de malhechores&raquo; (<a href="isaiah-1.es.html#v4">Isaías 1:4</a>).')
+_d = DICTIONARY_ES['baar']
+DICTIONARY_ES['baar'] = (_d[0], _d[1] + ' &#11088; La décima parte que queda es &laquo;para quema&raquo;, <em>le-vaer</em> (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['kanaf']
+DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; Seis alas, <em>kenafáyim</em>, para cada serafín, dos para cubrir el rostro, dos para cubrir los pies y dos para volar (<a href="isaiah-6.es.html#v6-2">Isaías 6:2</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['damam']
+DICTIONARY_ES['damam'] = (_d[0], _d[1] + ' &#11088; El grito de Isaías <em>nidmeití</em>, &laquo;estoy deshecho&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="נדמיתי">una forma que está en un versículo de la Biblia hebrea</span>, viene de un verbo que puede significar ser cortado o ser silenciado; la TNM 1987 dice &laquo;puedo darme como reducido a silencio&raquo; y la Douay &laquo;I have held my peace&raquo;.')
+_d = DICTIONARY_ES['saraf']
+DICTIONARY_ES['saraf'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-6.es.html#v6-2">Isaías 6:2</a> y 6 ya están en estas páginas: los serafines, sus seis alas y la piedra candente llevada con tenazas; la palabra hebrea para lo que lleva es <em><a href="diccionario.html#ritspah">ritspá</a></em>, una piedra candente, donde el estante tiene una brasa.')
+_d = DICTIONARY_ES['hoy']
+DICTIONARY_ES['hoy'] = (_d[0], _d[1] + ' &#11088; Isaías responde a los ayes que ha estado lanzando con el otro grito, <em>oi li</em>, &laquo;ay de mí&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas), <span data-heb="אוי לי">dos palabras que están en cuatro versículos de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['melekh']
+DICTIONARY_ES['melekh'] = (_d[0], _d[1] + ' &#11088; &laquo;Mis ojos han visto al Rey, a Jehová de los ejércitos&raquo; (<a href="isaiah-6.es.html#v6-5">Isaías 6:5</a>, ya en estas páginas): el título que el rey Uzías tenía en el primer versículo, dado al que tenía el borde llenando el templo.')
+_d = DICTIONARY_ES['mizbeach']
+DICTIONARY_ES['mizbeach'] = (_d[0], _d[1] + ' &#11088; El serafín toma la piedra candente &laquo;de sobre el altar&raquo; (<a href="isaiah-6.es.html#v6-6">Isaías 6:6</a>, ya en estas páginas); el texto no dice cuál altar.')
+_d = DICTIONARY_ES['adamah']
+DICTIONARY_ES['adamah'] = (_d[0], _d[1] + ' &#11088; &laquo;Y el suelo quede hecho una desolación&raquo; (<a href="isaiah-6.es.html#v6-11">Isaías 6:11</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shalach']
+DICTIONARY_ES['shalach'] = (_d[0], _d[1] + ' &#11088; &laquo;¿A quién enviaré?&raquo; y la respuesta <em>shelajeni</em>, &laquo;envíame a mí&raquo; (<a href="isaiah-6.es.html#v6-8">Isaías 6:8</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['azav']
+DICTIONARY_ES['azav'] = (_d[0], _d[1] + ' &#11088; <em>Ha-azuvá</em>, &laquo;el abandono&raquo;, con el artículo, <span data-heb="העזובה">está en un versículo de la Biblia hebrea</span>: &laquo;sea grande el abandono en medio de la tierra&raquo; (<a href="isaiah-6.es.html#v6-12">Isaías 6:12</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['elah']
+DICTIONARY_ES['elah'] = (_d[0], _d[1] + ' &#11088; &laquo;Como el terebinto y como el roble&raquo; (<a href="isaiah-6.es.html#v6-13">Isaías 6:13</a>, ya en estas páginas): lo que guarda uno talado es la imagen de una simiente santa.')
+
+# ---- XREFS for Isaiah 6
+XREFS.extend([
+    (("Isaiah", 6, 4), ("Revelation", 15, 8), "the house filled with smoke, and the temple filled with smoke from the glory of God"),
+    (("Isaiah", 6, 9), ("Matthew", 13, 14), "hear indeed but do not understand: the Hebrew order to the prophet, and its Greek citation"),
+    (("Isaiah", 6, 9), ("Acts", 28, 26), "the same passage, quoted by Paul at Rome"),
+    (("Isaiah", 6, 10), ("John", 12, 40), "he has blinded their eyes: John's citation of the verse, joined to Isaiah 53:1"),
+    (("Isaiah", 6, 1), ("John", 12, 41), "Isaiah saw his glory: the throne vision in the Fourth Gospel"),
+    (("Isaiah", 6, 8), ("1 Kings", 22, 20), "a question put to the heavenly company, and a volunteer"),
+    (("Isaiah", 6, 7), ("Jeremiah", 1, 9), "and he touched my mouth: the same words, a seraph's and Jehovah's"),
+    (("Isaiah", 6, 10), ("Exodus", 8, 11), "make heavy: what Pharaoh did to his own heart, and what the prophet is told to do to the ears"),
+])
+
+# ---- Uzziah now has a vision that dates from his death
+for _i, _e in enumerate(ENCYCLOPEDIA):
+    if isinstance(_e, dict) and _e.get('slug') == 'uzziah':
+        _refs = list(_e.get('refs', []))
+        if ('Isaiah', 6, 1) not in _refs:
+            _refs.append(('Isaiah', 6, 1))
+        _e['refs'] = _refs
+
+
+
+CHRON_CHAPTERS["isa6"] = dict(era="monarchy",
+    when="&ldquo;Here am I; send me&rdquo;: in the year King Uzziah died, Isaiah sees the Lord on a throne with his skirts filling the temple, and seraphim with six wings who cry &ldquo;Holy, holy, holy&rdquo;. He is undone, a man of unclean lips among a people of unclean lips; a seraph touches his mouth with a glowing stone from the altar and says that his iniquity has departed and his sin is atoned for. He answers the question &ldquo;Whom shall I send?&rdquo; with &ldquo;send me&rdquo;, and is sent to a people whose heart is to be made fat, whose ears are to be made heavy and whose eyes are to be shut, until cities lie waste; a tenth that returns is burned again, and a holy seed is its stump.",
+    clock="Uzziah reigned about fifty-two years in the eighth century BC, and Isaiah 1:1 dates the book in the days of Uzziah, Jotham, Ahaz and Hezekiah; the chapter dates itself to the year of Uzziah&rsquo;s death and the library gives no more exact year. Isaiah 7:3 shows Isaiah and his son Shear-jashub meeting Ahaz.")
+
+
+CHAPTER_ART["isa6"] = [dict(
+    file="michelangelo-isaiah-sistine-chapel.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Michelangelo", artist_es="Miguel Ángel",
+    year="c. 1509",
+    location="Sistine Chapel ceiling, Vatican", location_es="Bóveda de la Capilla Sixtina, Vaticano",
+    alt="A fresco of an older man with short grey curly hair, seated and turned to the left, looking down and to one side with his brow drawn. He wears a long pink robe with a pale yellow sleeve, a green cloak over his shoulders and a blue-and-grey drape, and his bare feet rest on a stone step. A closed book with a blue cover and orange pages is held against his knee in one hand, and the other hand is raised with a finger pointing up. Behind his shoulder a curly-haired child leans out with an arm stretched wide, and a second child peers from behind the cloak at the left edge.",
+    alt_es="Un fresco de un hombre mayor de cabello corto, gris y rizado, sentado y vuelto hacia la izquierda, mirando hacia abajo y de lado con el ceño fruncido. Lleva una larga túnica rosa con una manga amarillo pálido, un manto verde sobre los hombros y un paño azul y gris, y sus pies descalzos descansan sobre un escalón de piedra. Un libro cerrado de tapa azul y hojas anaranjadas se apoya contra su rodilla en una mano, y la otra mano está levantada con un dedo apuntando hacia arriba. Detrás de su hombro un niño de cabello rizado se asoma con un brazo extendido, y un segundo niño mira desde detrás del manto en el borde izquierdo.",
+    note="Isaiah 6. Michelangelo&rsquo;s Isaiah is not a picture of this chapter&rsquo;s vision: it has no throne, no seraph and no stone from the altar. It shows the prophet seated with a closed book on his knee and one hand raised, turned toward a child behind him as though called away from his reading, and that is the use made of it here: the chapter is the one scene in the book in which Isaiah is the person addressed. It is a fresco on the ceiling of the Sistine Chapel, and the web copy is a smaller reproduction of a photograph of it.",
+    note_es="Isaías 6. El Isaías de Miguel Ángel no es una imagen de la visión de este capítulo: no tiene trono, ni serafín, ni piedra del altar. Muestra al profeta sentado con un libro cerrado sobre la rodilla y una mano levantada, vuelto hacia un niño detrás de él como si lo llamaran lejos de su lectura, y ese es el uso que se le da aquí: el capítulo es la única escena del libro en que Isaías es el interpelado. Es un fresco en la bóveda de la Capilla Sixtina, y la copia web es una reproducción más pequeña de una fotografía.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jesaja_(Michelangelo).jpg",
+)]
+
+
+# Appended to library_data.py for Psalm 8 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('adir', 'adir', 'אַדִּיר', 'adir', 'MIGHTY &mdash; what is strong enough to be great. <span data-heb-read="אדיר">The word and its family stand in twenty-three verses of the Hebrew Bible</span>, and the first is the Egyptians sinking &lsquo;like lead in the mighty waters&rsquo; (<a href="exodus-15.html#v15-10">Exodus 15:10</a>, now on these pages). &#11088; <a href="psalms-8.html#v8-2">Psalm 8:2</a> (now on these pages) makes it the word for a name, <em>how mighty is your name in all the earth</em>, and says it again as the last line of the psalm. &#9888; The shelf prints it &lsquo;excellent&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;majestic&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;admirable&rsquo; (<span class="tag t-drb">Douay</span>); this library prints &lsquo;mighty&rsquo; and keeps &lsquo;majesty&rsquo; for <a href="dictionary.html#hod">hod</a>.', ('Psalms', 8, 2)))
+DICTIONARY.append(('hadar', 'hadar', 'הָדָר', 'hadar', 'SPLENDOR &mdash; the dress of a king or of God, the visible beauty of a presence. &#11088; <span data-heb="הוד והדר">With <em>hod</em>, majesty (<a href="dictionary.html#hod">hod</a>), it stands in six verses of the Hebrew Bible</span>: before Jehovah (1 Chronicles 16:27, Psalm 96:6), put on by him (Psalm 104:1), his work (Psalm 111:3), set on a king (Psalm 21:6), and the dress he tells Job to put on (Job 40:10), none of them yet on these pages. &#11088; <a href="psalms-8.html#v8-6">Psalm 8:6</a> (now on these pages) gives it to the human being, with <a href="dictionary.html#kavod">kavod</a>, as a crown, and <span data-heb="כבוד והדר">that pair stands in no other verse</span>. The shelf prints it &lsquo;honour&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;honor&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;splendor&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 8, 6)))
+DICTIONARY.append(('enosh', 'enosh', 'אֱנוֹשׁ', 'enosh', 'A MORTAL &mdash; the poetic word for a human being, set beside <a href="dictionary.html#adam">adam</a> and <em>ben-adam</em>, &lsquo;son of man&rsquo;; and the name of Seth&rsquo;s son, Enosh (<a href="genesis-4.html#v4-26">Genesis 4:26</a>, now on these pages). &#11088; <span data-heb="מה אנוש">&lsquo;What is a mortal&rsquo; stands in three verses of the Hebrew Bible</span>: <a href="psalms-8.html#v8-5">Psalm 8:5</a> (now on these pages), which wonders at the answer, and Job 7:17 and 15:14, which do not (not yet on these pages). Psalm 144:3 turns the pair round, <em>what is a human, that you should know him, a son of a mortal</em> (not yet on these pages). &#9888; The shelf prints &lsquo;man&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>), &lsquo;mankind&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;mortal man&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); this library prints &lsquo;a mortal&rsquo; and keeps &lsquo;human&rsquo; for <em>adam</em>.', ('Psalms', 8, 5)))
+DICTIONARY.append(('yareach', 'yareach', 'יָרֵחַ', 'yareach', 'THE MOON &mdash; the ordinary word for it, where <a href="genesis-1.html#v16">Genesis 1:16</a> (now on these pages) says only &lsquo;the lesser light&rsquo;. <span data-heb="ירח וכוכבים">&lsquo;The moon and the stars&rsquo; stands in three verses of the Hebrew Bible</span>: Jeremiah 31:34, which is 31:35 in most English Bibles, where they are set for light by night after the sun for light by day (not yet on these pages); Psalm 136:9, where they are to govern the night as the sun governs the day in 136:8 (not yet on these pages); and <a href="psalms-8.html#v8-4">Psalm 8:4</a> (now on these pages), the one of the three with no sun beside it.', ('Psalms', 8, 4)))
+DICTIONARY.append(('yoneq', 'yoneq', 'יוֹנֵק', 'yoneq', 'A SUCKLING &mdash; a child at the breast, from <em>yanaq</em>, to suck. It goes with <a href="dictionary.html#olal">olal</a>, a small child: <span data-heb="עולל ויונק">&lsquo;child and suckling&rsquo; stands in two verses of the Hebrew Bible</span>, Jeremiah 44:7 (not yet on these pages) and <a href="lamentations-2.html#v11">Lamentations 2:11</a> (now on these pages), and &lsquo;from child to suckling&rsquo; is the strike on Nob (<a href="1-samuel-22.html#v22-19">1 Samuel 22:19</a>, now on these pages). &#11088; <a href="psalms-8.html#v8-3">Psalm 8:3</a> (now on these pages) makes their mouths the place where God founds his strength.', ('Psalms', 8, 3)))
+DICTIONARY.append(('olal', 'olal / olelim', 'עוֹלָל', 'olelim', 'A SMALL CHILD &mdash; the plural, <em>olelim</em>, stands at <a href="psalms-8.html#v8-3">Psalm 8:3</a> (now on these pages), &lsquo;out of the mouth of children and sucklings&rsquo;; the singular is spelled like the verb to glean, <em>olel</em>, and is read from the verse: &lsquo;child and suckling&rsquo; (Jeremiah 44:7, not yet on these pages; <a href="lamentations-2.html#v11">Lamentations 2:11</a>, now on these pages) and &lsquo;from child to suckling&rsquo; (<a href="1-samuel-22.html#v22-19">1 Samuel 22:19</a>, now on these pages), always beside <a href="dictionary.html#yoneq">yoneq</a>. &#9888; The same consonants spell <a href="dictionary.html#olel">olel</a>, to glean, an unrelated word &mdash; read the hits. The shelf prints &lsquo;babes&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;children&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;infants&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 8, 3)))
+DICTIONARY.append(('gittit', 'gittit', 'גִּתִּית', 'al-hagittit', 'GITTITH &mdash; a word in three psalm headings, <em>al-hagittit</em>, &lsquo;upon the Gittith&rsquo;: <span data-heb="על הגתית">Psalm 8:1, Psalm 81:1 and Psalm 84:1 are the only verses that have it</span> (the last two not yet on these pages). Nothing in the text says what it is. &#9888; Its letters are those of <em>gat</em>, Gath, the Philistine city where David stayed with Achish (<a href="1-samuel-27.html#v27-3">1 Samuel 27:3</a>, now on these pages), and of <em>gat</em>, a winepress (<a href="judges-6.html#v11">Judges 6:11</a>, now on these pages). The <span class="tag t-nwt">NWT&nbsp;1984</span> transliterates it, &lsquo;the Gitʹtith&rsquo;; the <span class="tag t-rv">RV&nbsp;1909</span> does too, &lsquo;sobre Gittith&rsquo;; the <span class="tag t-drb">Douay</span>, which translates the Latin, has &lsquo;for the presses&rsquo;. This library prints it as the name it is and does not vote.', ('Psalms', 8, 1)))
+DICTIONARY.append(('chasar', 'chasar', 'חָסַר', 'chasar', 'TO LACK &mdash; to be short of, and in the intensive to MAKE lack: <em>vatechasserehu</em>, &lsquo;you have made him lack&rsquo; a little of God (<a href="psalms-8.html#v8-6">Psalm 8:6</a>, now on these pages). It is the verb of the wilderness years, &lsquo;you have lacked nothing&rsquo; (<a href="deuteronomy-2.html#v2-7">Deuteronomy 2:7</a>, now on these pages), and of the shepherd psalm, &lsquo;I lack nothing&rsquo; (<a href="psalms-23.html#v23-1">Psalm 23:1</a>, now on these pages). &#9888; With <em>min</em>, &lsquo;from&rsquo;, as in <em>me-elohim</em>, it is how Hebrew says less than: the shelf prints &lsquo;lower than&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;less than&rsquo; (<span class="tag t-drb">Douay</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 8, 6)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['adir'] = ('adir', 'PODEROSO &mdash; lo que es lo bastante fuerte para ser grande. <span data-heb-read="אדיר">La palabra y su familia están en veintitrés versículos de la Biblia hebrea</span>, y el primero es el de los egipcios que se hunden &laquo;como plomo en las aguas impetuosas&raquo; (<a href="exodus-15.es.html#v15-10">Éxodo 15:10</a>, ya en estas páginas). &#11088; El <a href="psalms-8.es.html#v8-2">Salmo 8:2</a> (ya en estas páginas) la hace la palabra de un nombre, <em>qué poderoso es tu nombre en toda la tierra</em>, y la repite como última línea del salmo. &#9888; El estante la imprime &laquo;grande&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;glorioso&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;imponente&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;majestuoso&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>); esta biblioteca imprime &laquo;poderoso&raquo; y guarda &laquo;majestad&raquo; para <a href="diccionario.html#hod">hod</a>.')
+DICTIONARY_ES['hadar'] = ('hadar', 'ESPLENDOR &mdash; el vestido de un rey o de Dios, la belleza visible de una presencia. &#11088; <span data-heb="הוד והדר">Con <em>hod</em>, majestad (<a href="diccionario.html#hod">hod</a>), está en seis versículos de la Biblia hebrea</span>: delante de Jehová (1 Crónicas 16:27, Salmo 96:6), puesto por él (Salmo 104:1), su obra (Salmo 111:3), puesto sobre un rey (Salmo 21:6) y el vestido que dice a Job que se ponga (Job 40:10), ninguno todavía en estas páginas. &#11088; El <a href="psalms-8.es.html#v8-6">Salmo 8:6</a> (ya en estas páginas) se lo da al ser humano, con <a href="diccionario.html#kavod">kavod</a>, como corona, y <span data-heb="כבוד והדר">ese par no está en ningún otro versículo</span>. El estante la imprime &laquo;lustre&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;honra&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;esplendor&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['enosh'] = ('enosh', 'UN MORTAL &mdash; la palabra poética para un ser humano, puesta junto a <a href="diccionario.html#adam">adam</a> y <em>ben-adam</em>, &laquo;hijo de hombre&raquo;; y el nombre del hijo de Set, Enós (<a href="genesis-4.es.html#v4-26">Génesis 4:26</a>, ya en estas páginas). &#11088; <span data-heb="מה אנוש">&laquo;¿Qué es un mortal?&raquo; está en tres versículos de la Biblia hebrea</span>: el <a href="psalms-8.es.html#v8-5">Salmo 8:5</a> (ya en estas páginas), que se asombra de la respuesta, y Job 7:17 y 15:14, que no (todavía no en estas páginas). El Salmo 144:3 da la vuelta al par, <em>qué es un ser humano, para que lo conozcas, un hijo de mortal</em> (todavía no en estas páginas). &#9888; El estante imprime &laquo;hombre&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;hombre mortal&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>); esta biblioteca imprime &laquo;un mortal&raquo; y guarda &laquo;ser humano&raquo; para <em>adam</em>.')
+DICTIONARY_ES['yareach'] = ('yareaj', 'LA LUNA &mdash; la palabra corriente para ella, donde <a href="genesis-1.es.html#v16">Génesis 1:16</a> (ya en estas páginas) dice solo &laquo;la lumbrera menor&raquo;. <span data-heb="ירח וכוכבים">&laquo;La luna y las estrellas&raquo; está en tres versículos de la Biblia hebrea</span>: Jeremías 31:34, que es 31:35 en la mayoría de las Biblias, donde se ponen para luz de noche después del sol para luz de día (todavía no en estas páginas); el Salmo 136:9, donde han de gobernar la noche como el sol gobierna el día en 136:8 (todavía no en estas páginas); y el <a href="psalms-8.es.html#v8-4">Salmo 8:4</a> (ya en estas páginas), el único de los tres sin sol a su lado.')
+DICTIONARY_ES['yoneq'] = ('yoneq', 'UNO QUE MAMA &mdash; un niño de pecho, de <em>yanaq</em>, mamar. Va con <a href="diccionario.html#olal">olal</a>, un niño pequeño: <span data-heb="עולל ויונק">&laquo;niño y el que mama&raquo; está en dos versículos de la Biblia hebrea</span>, Jeremías 44:7 (todavía no en estas páginas) y <a href="lamentations-2.es.html#v11">Lamentaciones 2:11</a> (ya en estas páginas), y &laquo;desde el niño hasta el de pecho&raquo; es el golpe contra Nob (<a href="1-samuel-22.es.html#v22-19">1 Samuel 22:19</a>, ya en estas páginas). &#11088; El <a href="psalms-8.es.html#v8-3">Salmo 8:3</a> (ya en estas páginas) hace de sus bocas el lugar donde Dios funda su fuerza.')
+DICTIONARY_ES['olal'] = ('olelim', 'UN NIÑO PEQUEÑO &mdash; el plural, <em>olelim</em>, está en el <a href="psalms-8.es.html#v8-3">Salmo 8:3</a> (ya en estas páginas), &laquo;de la boca de los niños y de los que maman&raquo;; el singular se escribe como el verbo rebuscar, <em>olel</em>, y se lee por el versículo: &laquo;niño y el que mama&raquo; (Jeremías 44:7, todavía no en estas páginas; <a href="lamentations-2.es.html#v11">Lamentaciones 2:11</a>, ya en estas páginas) y &laquo;desde el niño hasta el de pecho&raquo; (<a href="1-samuel-22.es.html#v22-19">1 Samuel 22:19</a>, ya en estas páginas), siempre junto a <a href="diccionario.html#yoneq">yoneq</a>. &#9888; Las mismas consonantes escriben <a href="diccionario.html#olel">olel</a>, rebuscar, una palabra sin relación &mdash;hay que leer los resultados. El estante imprime &laquo;chiquitos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;niños&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;pequeñitos&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['gittit'] = ('al-hagitit', 'GITIT &mdash; una palabra en tres encabezados de salmo, <em>al-hagittit</em>, &laquo;sobre la Gitit&raquo;: <span data-heb="על הגתית">el Salmo 8:1, el Salmo 81:1 y el Salmo 84:1 son los únicos versículos que la tienen</span> (los dos últimos todavía no en estas páginas). Nada en el texto dice qué es. &#9888; Sus letras son las de <em>gat</em>, Gat, la ciudad filistea donde David se quedó con Aquis (<a href="1-samuel-27.es.html#v27-3">1 Samuel 27:3</a>, ya en estas páginas), y las de <em>gat</em>, un lagar (<a href="judges-6.es.html#v11">Jueces 6:11</a>, ya en estas páginas). La <span class="tag t-rv">RV&nbsp;1909</span> la transcribe, &laquo;sobre Gittith&raquo;; la <span class="tag t-drb">Douay</span>, que traduce del latín, tiene &laquo;for the presses&raquo;, es decir, los lagares. Esta biblioteca la imprime como el nombre que es y no vota.')
+DICTIONARY_ES['chasar'] = ('jasar', 'CARECER &mdash; quedarse corto, y en el intensivo HACER carecer: <em>vatechasserehu</em>, &laquo;lo has hecho carecer&raquo; de un poco de Dios (<a href="psalms-8.es.html#v8-6">Salmo 8:6</a>, ya en estas páginas). Es el verbo de los años del desierto, &laquo;nada te ha faltado&raquo; (<a href="deuteronomy-2.es.html#v2-7">Deuteronomio 2:7</a>, ya en estas páginas), y del salmo del pastor, &laquo;nada me falta&raquo; (<a href="psalms-23.es.html#v23-1">Salmo 23:1</a>, ya en estas páginas). &#9888; Con <em>min</em>, &laquo;de&raquo;, como en <em>me-elohim</em>, es como el hebreo dice menos que: el estante imprime &laquo;menor que&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-8.html#v8-2">Psalm 8:2</a> (now on these pages) puts it above the heavens, <em>you who have set your majesty above the heavens</em>, and the same psalm gives its partner <a href="dictionary.html#hadar">hadar</a> to the human being at 8:6.',) + _t[5:]
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; At <a href="psalms-8.html#v8-6">Psalm 8:6</a> (now on these pages) it is what the human being is crowned with, beside <a href="dictionary.html#hadar">hadar</a>, splendor.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The causative, <em>tamshilehu</em>, &lsquo;you make him govern&rsquo;, is the verb of <a href="psalms-8.html#v8-7">Psalm 8:7</a> (now on these pages) and the verb the sun and moon have at <a href="genesis-1.html#v18">Genesis 1:18</a> (now on these pages); <a href="genesis-1.html#v26">Genesis 1:26</a> and 1:28 use <a href="dictionary.html#radah">radah</a> for the human being.',) + _t[5:]
+    if _t[0] == 'paqad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; In <a href="psalms-8.html#v8-5">Psalm 8:5</a> (now on these pages) God &lsquo;attends to&rsquo; a mortal, and the same verb at Job 7:18, &lsquo;that you attend to him every morning&rsquo;, turns the wonder into a complaint (not yet on these pages).',) + _t[5:]
+    if _t[0] == 'zakhar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-8.html#v8-5">Psalm 8:5</a> (now on these pages) asks it of a human being: <em>what is a mortal, that you remember him</em>.',) + _t[5:]
+    if _t[0] == 'naqam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The reflexive participle, <em>mitnaqqem</em>, &lsquo;the one who avenges himself&rsquo;, stands in two verses, <a href="psalms-8.html#v8-3">Psalm 8:3</a> (now on these pages) and Psalm 44:17, each time after &lsquo;the enemy&rsquo;.',) + _t[5:]
+    if _t[0] == 'kokhav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-8.html#v8-4">Psalm 8:4</a> (now on these pages) has the stars with the moon and without the sun: see <a href="dictionary.html#yareach">yareach</a>.',) + _t[5:]
+    if _t[0] == 'kun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; It is the verb of the moon and the stars &lsquo;that you have set firm&rsquo; (<a href="psalms-8.html#v8-4">Psalm 8:4</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'elohim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#9888; <a href="psalms-8.html#v8-6">Psalm 8:6</a> (now on these pages) has it with no verb to say how many: <em>you have made him lack a little of God</em>, which the shelf prints &lsquo;God&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;the angels&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>) and &lsquo;godlike ones&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).',) + _t[5:]
+    if _t[0] == 'adam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-8.html#v8-5">Psalm 8:5</a> (now on these pages) sets <em>ben-adam</em>, &lsquo;son of man&rsquo;, beside <a href="dictionary.html#enosh">enosh</a>, &lsquo;a mortal&rsquo;.',) + _t[5:]
+    if _t[0] == 'behemah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The plural stands in <a href="psalms-8.html#v8-8">Psalm 8:8</a> (now on these pages), <em>behemot sadai</em>, the beasts of the field, where the same list at <a href="genesis-1.html#v26">Genesis 1:26</a> has <em>behemah</em> for the livestock.',) + _t[5:]
+_d = DICTIONARY_ES['hod']
+DICTIONARY_ES['hod'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-8.es.html#v8-2">Salmo 8:2</a> (ya en estas páginas) la pone por encima de los cielos, <em>tú que has puesto tu majestad sobre los cielos</em>, y el mismo salmo da su pareja <a href="diccionario.html#hadar">hadar</a> al ser humano en 8:6.')
+_d = DICTIONARY_ES['kavod']
+DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; En el <a href="psalms-8.es.html#v8-6">Salmo 8:6</a> (ya en estas páginas) es aquello con que se corona al ser humano, junto a <a href="diccionario.html#hadar">hadar</a>, esplendor.')
+_d = DICTIONARY_ES['mashal']
+DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; El causativo, <em>tamshilehu</em>, &laquo;lo haces gobernar&raquo;, es el verbo del <a href="psalms-8.es.html#v8-7">Salmo 8:7</a> (ya en estas páginas) y el verbo que tienen el sol y la luna en <a href="genesis-1.es.html#v18">Génesis 1:18</a> (ya en estas páginas); <a href="genesis-1.es.html#v26">Génesis 1:26</a> y 1:28 usan <a href="diccionario.html#radah">radah</a> para el ser humano.')
+_d = DICTIONARY_ES['paqad']
+DICTIONARY_ES['paqad'] = (_d[0], _d[1] + ' &#11088; En el <a href="psalms-8.es.html#v8-5">Salmo 8:5</a> (ya en estas páginas) Dios &laquo;atiende&raquo; a un mortal, y el mismo verbo en Job 7:18, &laquo;para que lo atiendas cada mañana&raquo;, vuelve el asombro una queja (todavía no en estas páginas).')
+_d = DICTIONARY_ES['zakhar']
+DICTIONARY_ES['zakhar'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-8.es.html#v8-5">Salmo 8:5</a> (ya en estas páginas) lo pregunta de un ser humano: <em>qué es un mortal, para que te acuerdes de él</em>.')
+_d = DICTIONARY_ES['naqam']
+DICTIONARY_ES['naqam'] = (_d[0], _d[1] + ' &#11088; El participio reflexivo, <em>mitnaqqem</em>, &laquo;el que se venga a sí mismo&raquo;, está en dos versículos, el <a href="psalms-8.es.html#v8-3">Salmo 8:3</a> (ya en estas páginas) y el Salmo 44:17, las dos veces después de &laquo;el enemigo&raquo;.')
+_d = DICTIONARY_ES['kokhav']
+DICTIONARY_ES['kokhav'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-8.es.html#v8-4">Salmo 8:4</a> (ya en estas páginas) tiene las estrellas con la luna y sin el sol: véase <a href="diccionario.html#yareach">yareach</a>.')
+_d = DICTIONARY_ES['kun']
+DICTIONARY_ES['kun'] = (_d[0], _d[1] + ' &#11088; Es el verbo de la luna y las estrellas &laquo;que has afirmado&raquo; (<a href="psalms-8.es.html#v8-4">Salmo 8:4</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['elohim']
+DICTIONARY_ES['elohim'] = (_d[0], _d[1] + ' &#9888; El <a href="psalms-8.es.html#v8-6">Salmo 8:6</a> (ya en estas páginas) la tiene sin un verbo que diga cuántos: <em>lo has hecho carecer de un poco de Dios</em>, que el estante imprime &laquo;los ángeles&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;los que tienen parecido a Dios&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;los seres divinos&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+_d = DICTIONARY_ES['adam']
+DICTIONARY_ES['adam'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-8.es.html#v8-5">Salmo 8:5</a> (ya en estas páginas) pone <em>ben-adam</em>, &laquo;hijo de hombre&raquo;, junto a <a href="diccionario.html#enosh">enosh</a>, &laquo;un mortal&raquo;.')
+_d = DICTIONARY_ES['behemah']
+DICTIONARY_ES['behemah'] = (_d[0], _d[1] + ' &#11088; El plural está en el <a href="psalms-8.es.html#v8-8">Salmo 8:8</a> (ya en estas páginas), <em>behemot sadai</em>, las bestias del campo, donde la misma lista de <a href="genesis-1.es.html#v26">Génesis 1:26</a> tiene <em>behemah</em> para el ganado.')
+
+# ---- flip the old 'not yet on these pages' mentions of Psalm 8 and link the child-word note
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'atar-crown':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Psalm 8:6, not yet on these pages)', '(<a href="psalms-8.html#v8-6">Psalm 8:6</a>, now on these pages)'),) + _t[5:]
+    if _t[0] == 'olel':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('a small child (Psalm 8:3, Lamentations 2:11), an unrelated word', 'a small child (<a href="psalms-8.html#v8-3">Psalm 8:3</a>, <a href="lamentations-2.html#v11">Lamentations 2:11</a>; see <a href="dictionary.html#olal">olal</a>), an unrelated word'),) + _t[5:]
+_d = DICTIONARY_ES['atar-crown']
+DICTIONARY_ES['atar-crown'] = (_d[0], _d[1].replace('(Salmo 8:6, todavía no en estas páginas)', '(<a href="psalms-8.es.html#v8-6">Salmo 8:6</a>, ya en estas páginas)'))
+_d = DICTIONARY_ES['olel']
+DICTIONARY_ES['olel'] = (_d[0], _d[1].replace('un niño pequeño (Salmo 8:3, Lamentaciones 2:11), una palabra sin relación', 'un niño pequeño (<a href="psalms-8.es.html#v8-3">Salmo 8:3</a>, <a href="lamentations-2.es.html#v11">Lamentaciones 2:11</a>; véase <a href="diccionario.html#olal">olal</a>), una palabra sin relación'))
+
+# ---- XREFS for Psalm 8
+XREFS.extend([
+    (("Psalms", 8, 3), ("Matthew", 21, 16), "out of the mouth of infants: the Hebrew has strength, the Greek praise"),
+    (("Psalms", 8, 5), ("Hebrews", 2, 6), "what is a human being: the psalm, quoted in the Greek"),
+    (("Psalms", 8, 6), ("Hebrews", 2, 7), "a little lower: the Hebrew of the psalm, and Hebrews' for a little while"),
+    (("Psalms", 8, 7), ("Hebrews", 2, 8), "all things under his feet"),
+    (("Psalms", 8, 7), ("1 Corinthians", 15, 27), "all things under his feet"),
+    (("Psalms", 8, 7), ("Ephesians", 1, 22), "all things under his feet"),
+    (("Psalms", 8, 7), ("Genesis", 1, 26), "the human among the creatures: a different verb, and the list the other way round"),
+])
+
+
+CHRON_CHAPTERS["psalms8"] = dict(era='monarchy',
+    when='&ldquo;Jehovah our Lord, how mighty is your name in all the earth&rdquo;: a short psalm of David, headed &ldquo;upon the Gittith&rdquo;, that opens and closes on the same line. Between the two, a speaker looks up at the moon and the stars, the work of God&rsquo;s fingers, and asks what a mortal is that God should remember him; the answer is a crown of glory and splendor, a governing over the works of God&rsquo;s hands, and all things, sheep, oxen, beasts, birds and fish, under his feet, with a line about the mouths of children and sucklings in the middle.',
+    clock='The heading names no event and the psalm names none; it is not dated beyond &ldquo;a psalm of David&rdquo;, and it is filed here under the monarchy as an undated psalm, as Psalm 19 is. Matthew 21:16 quotes verse 3 of it in its Greek form, and Hebrews 2:6&ndash;8 quotes verses 5&ndash;7.')
+
+# ---- extend the existing finger-of-God entry (etzba) instead of adding a duplicate
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'etzba':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <span data-heb="מעשה אצבעתיך">&lsquo;The work of your fingers&rsquo; stands in one verse of the Hebrew Bible</span>, <a href="psalms-8.html#v8-4">Psalm 8:4</a> (now on these pages), and what the fingers made is the moon and the stars. <span data-heb="אצבע אלהים">&lsquo;The finger of God&rsquo; itself stands in exactly three verses</span>: the two above and Exodus 8:15.',) + _t[5:]
+_d = DICTIONARY_ES['etzba']
+DICTIONARY_ES['etzba'] = (_d[0], _d[1] + ' &#11088; <span data-heb="מעשה אצבעתיך">&laquo;La obra de tus dedos&raquo; está en un versículo de la Biblia hebrea</span>, el <a href="psalms-8.es.html#v8-4">Salmo 8:4</a> (ya en estas páginas), y lo que hicieron los dedos es la luna y las estrellas. <span data-heb="אצבע אלהים">&laquo;El dedo de Dios&raquo; mismo está en exactamente tres versículos</span>: los dos de arriba y Éxodo 8:15.')
+
+CHAPTER_ART["psalms8"] = [dict(
+    file='van-gogh-the-starry-night.jpg',
+    title='The Starry Night', title_es='La noche estrellada',
+    artist='Vincent van Gogh', artist_es='Vincent van Gogh',
+    year='1889', location='Museum of Modern Art, New York', location_es='Museum of Modern Art, Nueva York',
+    alt='An oil painting of a night sky made of swirling blue and white brushstrokes, with a large crescent moon glowing orange and yellow at the upper right and ten bright stars ringed with halos across the top. A dark flame-shaped cypress rises at the left. Below, a small village with a church spire and a few lit windows sits quietly under rolling blue hills.',
+    alt_es='Una pintura al óleo de un cielo nocturno hecho de remolinos de pinceladas azules y blancas, con una gran luna creciente anaranjada y amarilla arriba a la derecha y diez estrellas brillantes con halos por la parte alta. A la izquierda se alza un ciprés oscuro con forma de llama. Abajo, un pequeño pueblo con la aguja de una iglesia y unas pocas ventanas encendidas reposa tranquilo bajo colinas azules.',
+    note='Psalm 8. Van Gogh painted this in 1889 while staying at the asylum in Saint-Rémy; it is not a scene from the psalm, and the psalm names no village or tree. What it shares with the psalm is the sky the psalm looks at: the moon and the stars, and nothing else lit but a few windows, and a small place under a very large night.',
+    note_es='Salmo 8. Van Gogh lo pintó en 1889 mientras estaba en el asilo de Saint-Rémy; no es una escena del salmo, y el salmo no nombra ningún pueblo ni árbol. Lo que comparte con el salmo es el cielo que el salmo mira: la luna y las estrellas, y nada más encendido salvo unas ventanas, y un lugar pequeño bajo una noche muy grande.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:VanGogh-starry_night.jpg')]
+
+
+# Appended to library_data.py for Isaiah 9 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('nagah', 'nagah', 'נָגַהּ', 'nagah', 'TO SHINE &mdash; the verb of a light that comes up on people: <em>or nagah aleihem</em>, &lsquo;light has shone on them&rsquo; (<a href="isaiah-9.html#v9-1">Isaiah 9:1</a>, now on these pages). The shelf prints &lsquo;hath the light shined&rsquo; (<span class="tag t-kjv">KJV</span>) and &lsquo;a light has dawned&rsquo; (<span class="tag t-niv">NIV</span>), and Matthew puts the line in Greek as a light that &lsquo;dawned&rsquo; on those sitting in the region and shadow of death (<a href="matthew-4.html#v4-16">Matthew 4:16</a>, now on these pages).', ('Isaiah', 9, 1)))
+DICTIONARY.append(('noges', 'noges', 'נֹגֵשׂ', 'noges', 'A TASKMASTER &mdash; the one who exacts and drives: the Egyptians&rsquo; <em>nogsav</em>, &lsquo;because of their taskmasters&rsquo; (<a href="exodus-3.html#v3-7">Exodus 3:7</a>, now on these pages), and <em>hannogsim</em>, &lsquo;Pharaoh commanded the taskmasters of the people&rsquo; (<a href="exodus-5.html#v5-6">Exodus 5:6</a>, now on these pages). &#11088; <a href="isaiah-9.html#v9-3">Isaiah 9:3</a> (now on these pages) gives the same word to the one whose rod is broken, <em>the rod of his taskmaster</em>. &#9888; The shelf prints &lsquo;oppressor&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;the one driving them to work&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), the one that keeps the work in the word.', ('Isaiah', 9, 3)))
+DICTIONARY.append(('misrah', 'misrah', 'מִשְׂרָה', 'ha-misrah', 'GOVERNMENT, rule &mdash; the office of governing. <span data-heb="המשרה">With the article it stands in two verses of the Hebrew Bible</span>, and both are Isaiah&rsquo;s: the government on the child&rsquo;s shoulder (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>) and its increase (<a href="isaiah-9.html#v9-6">9:6</a>), now on these pages. &#9888; The shelf prints &lsquo;government&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;princely rule&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 9, 5)))
+DICTIONARY.append(('yoetz', 'yoetz', 'יוֹעֵץ', 'yoetz', 'A COUNSELOR &mdash; one who gives counsel, the person where <a href="dictionary.html#etsah">etsah</a> is the counsel itself. &#11088; With <em>pele</em>, a wonder (<a href="dictionary.html#pala">pala</a>), it makes the first name of the child, <em>pele yoetz</em>, &lsquo;Wonderful Counselor&rsquo; (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages), and <span data-heb="פלא יועץ">that title stands in no other verse of the Hebrew Bible</span>. &#9888; The shelf cuts it in two, &lsquo;Wonderful, Counsellor&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-tlb">TLB</span>), or keeps it whole, &lsquo;Wonderful Counselor&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 9, 5)))
+DICTIONARY.append(('el-gibbor', 'El gibbor', 'אֵל גִּבּוֹר', 'El gibbor', 'MIGHTY GOD &mdash; <em>El</em>, God, and <a href="dictionary.html#gibbor">gibbor</a>, a mighty one. <span data-heb-read="אל גבור">The two words stand side by side in two verses of the Hebrew Bible</span>: the name of the child (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages) and the God to whom a remnant of Jacob returns (Isaiah 10:21, not yet on these pages), where the printed text puts a comma between them. &#9888; Names in Isaiah are often whole sentences, as <a href="dictionary.html#immanu-el">Immanuel</a> is, so the phrase can be a title for the child or a sentence about God; the library prints the Hebrew and does not choose. Moses has the two words apart in a title of God, &lsquo;the great God, the mighty and the fearsome&rsquo; (<a href="deuteronomy-10.html#v10-17">Deuteronomy 10:17</a>, now on these pages). The shelf prints &lsquo;The mighty God&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-tlb">TLB</span>), &lsquo;Mighty God&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;God the Mighty&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 9, 5)))
+DICTIONARY.append(('avi-ad', 'Avi-ad', 'אֲבִי־עַד', 'Avi-ad', 'FATHER OF ETERNITY &mdash; <em>avi</em>, &lsquo;father of&rsquo;, with <em>ad</em>, perpetuity, a time that does not stop. <span data-heb="אבי עד">The phrase stands in one verse of the Hebrew Bible</span>, the third name of the child (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages). &#9888; The shelf prints &lsquo;everlasting Father&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-tlb">TLB</span>), &lsquo;Eternal Father&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;Father of the world to come&rsquo; (<span class="tag t-drb">Douay</span>); this library prints the shape of the Hebrew.', ('Isaiah', 9, 5)))
+DICTIONARY.append(('saon', "se'on", 'סְאוֹן', "se'on", 'A BOOT &mdash; a word that <span data-heb="סאון">stands in no other verse of the Hebrew Bible</span>: the boot of the one who tramps in the tumult, and every garment rolled in blood, destined for burning (<a href="isaiah-9.html#v9-4">Isaiah 9:4</a>, now on these pages). &#9888; With nothing else to check it against, the shelf guesses: &lsquo;boot&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;armor&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;battle&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>) and &lsquo;violent taking of spoils&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 9, 4)))
+DICTIONARY.append(('shiqmah', 'shiqmah', 'שִׁקְמָה', 'shiqmim', 'A SYCAMORE-FIG &mdash; the tree of the lowland that bears figs, <em>shiqmim</em> in the plural. &#11088; In <a href="isaiah-9.html#v9-9">Isaiah 9:9</a> (now on these pages) it is what the proud say will be cut down and replaced with cedars, and it stands beside the cedar once more where Solomon makes cedars &lsquo;as plentiful as the sycamore-figs of the lowland&rsquo; (<a href="1-kings-10.html#v10-27">1 Kings 10:27</a>, now on these pages). &#9888; The shelf prints &lsquo;sycomores&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;sycamores&rsquo; (<span class="tag t-drb">Douay</span>), &lsquo;Sycamore trees&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;wild fig trees&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;fig trees&rsquo; (<span class="tag t-niv">NIV</span>).', ('Isaiah', 9, 9)))
+DICTIONARY.append(('kippah-agmon', 'kippah ve-agmon', 'כִּפָּה וְאַגְמוֹן', 'kippah ve-agmon', 'PALM-BRANCH AND RUSH &mdash; <em>kippah</em>, a palm branch, and <em>agmon</em>, a rush or reed at the water: the top and the bottom of a plant, which with <em>rosh</em> and <em>zanav</em>, &lsquo;head and tail&rsquo;, say everyone. <span data-heb="כפה ואגמון">The pair stands in two verses of the Hebrew Bible</span>, <a href="isaiah-9.html#v9-13">Isaiah 9:13</a> (now on these pages) and Isaiah 19:15, of Egypt (not yet on these pages). &#9888; The shelf prints &lsquo;palm-branch and rush&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;palm branch and reed&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;branch and rush&rsquo; (<span class="tag t-kjv">KJV</span>) and &lsquo;shoot and rush&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 9, 13)))
+DICTIONARY.append(('shamir-shayit', 'shamir vashayit', 'שָׁמִיר וָשַׁיִת', 'shamir vashayit', 'BRIERS AND THORNS &mdash; the land gone wild. <span data-heb="שמיר ושית">The pair stands in four verses of the Hebrew Bible</span>: the vineyard Jehovah lets grow over (Isaiah 5:6, not yet on these pages), the land that will be briers and thorns when the invaders come (<a href="isaiah-7.html#v7-24">Isaiah 7:24</a> and <a href="isaiah-7.html#v7-25">7:25</a>, now on these pages), and the fire that eats them, which is wickedness (<a href="isaiah-9.html#v9-17">Isaiah 9:17</a>, now on these pages). The shelf prints &lsquo;briers and thorns&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>).', ('Isaiah', 9, 17)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['nagah'] = ('nagah', 'BRILLAR &mdash; el verbo de una luz que sale sobre la gente: <em>or nagah aleihem</em>, &laquo;ha brillado luz sobre ellos&raquo; (<a href="isaiah-9.es.html#v9-1">Isaías 9:1</a>, ya en estas páginas). El estante imprime &laquo;luz resplandeció sobre ellos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>) y &laquo;una luz ha resplandecido&raquo; (<span class="tag t-nvi">NVI</span>), y Mateo pone la línea en griego como una luz que &laquo;amaneció&raquo; sobre los sentados en región y sombra de muerte (<a href="matthew-4.es.html#v4-16">Mateo 4:16</a>, ya en estas páginas).')
+DICTIONARY_ES['noges'] = ('noguesh', 'UN CAPATAZ &mdash; el que exige y arrea: el <em>nogsav</em> de los egipcios, &laquo;a causa de sus capataces&raquo; (<a href="exodus-3.es.html#v3-7">Éxodo 3:7</a>, ya en estas páginas), y <em>hannogsim</em>, &laquo;el faraón mandó a los capataces del pueblo&raquo; (<a href="exodus-5.es.html#v5-6">Éxodo 5:6</a>, ya en estas páginas). &#11088; <a href="isaiah-9.es.html#v9-3">Isaías 9:3</a> (ya en estas páginas) da la misma palabra al que tiene la vara quebrada, <em>la vara de su capataz</em>. &#9888; El estante imprime &laquo;exactor&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;opresor&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;el que los obligaba a trabajar&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>), la que guarda el trabajo en la palabra.')
+DICTIONARY_ES['misrah'] = ('ha-misrá', 'GOBIERNO, mando &mdash; el cargo de gobernar. <span data-heb="המשרה">Con el artículo está en dos versículos de la Biblia hebrea</span>, y los dos son de Isaías: el gobierno sobre el hombro del niño (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>) y su aumento (<a href="isaiah-9.es.html#v9-6">9:6</a>), ya en estas páginas. &#9888; El estante imprime &laquo;principado&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;soberanía&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;regir principesco&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['yoetz'] = ('yoets', 'UN CONSEJERO &mdash; el que da consejo, la persona donde <a href="diccionario.html#etsah">etsah</a> es el consejo mismo. &#11088; Con <em>pele</em>, una maravilla (<a href="diccionario.html#pala">pala</a>), forma el primer nombre del niño, <em>pele yoetz</em>, &laquo;Maravilloso Consejero&raquo; (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas), y <span data-heb="פלא יועץ">ese título no está en ningún otro versículo de la Biblia hebrea</span>. &#9888; El estante lo parte en dos, &laquo;Admirable, Consejero&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), o lo guarda entero, &laquo;Consejero Admirable&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;Maravilloso Consejero&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['el-gibbor'] = ('El guibor', 'DIOS PODEROSO &mdash; <em>El</em>, Dios, y <a href="diccionario.html#gibbor">gibbor</a>, un poderoso. <span data-heb-read="אל גבור">Las dos palabras están juntas en dos versículos de la Biblia hebrea</span>: el nombre del niño (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas) y el Dios al que vuelve un remanente de Jacob (Isaías 10:21, todavía no en estas páginas), donde el texto impreso pone una coma entre ellas. &#9888; Los nombres de Isaías son a menudo oraciones enteras, como lo es <a href="diccionario.html#immanu-el">Emanuel</a>, así que la frase puede ser un título para el niño o una oración sobre Dios; la biblioteca imprime el hebreo y no escoge. Moisés tiene las dos palabras separadas en un título de Dios, &laquo;el Dios grande, el poderoso y el temible&raquo; (<a href="deuteronomy-10.es.html#v10-17">Deuteronomio 10:17</a>, ya en estas páginas). El estante imprime &laquo;Dios fuerte&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;Dios Fuerte&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;Dios Poderoso&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['avi-ad'] = ('Avi-ad', 'PADRE DE LA ETERNIDAD &mdash; <em>avi</em>, &laquo;padre de&raquo;, con <em>ad</em>, perpetuidad, un tiempo que no se detiene. <span data-heb="אבי עד">La frase está en un versículo de la Biblia hebrea</span>, el tercer nombre del niño (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas). &#9888; El estante imprime &laquo;Padre eterno&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;Padre Eterno&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>); esta biblioteca imprime la forma del hebreo.')
+DICTIONARY_ES['saon'] = ('seón', 'UNA BOTA &mdash; una palabra que <span data-heb="סאון">no está en ningún otro versículo de la Biblia hebrea</span>: la bota del que pisotea en el estruendo, y todo manto revolcado en sangre, destinado a la quema (<a href="isaiah-9.es.html#v9-4">Isaías 9:4</a>, ya en estas páginas). &#9888; Sin nada más con que comprobarla, el estante adivina: &laquo;calzado&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;botas&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;batalla&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>).')
+DICTIONARY_ES['shiqmah'] = ('shiqmim', 'UN SICÓMORO &mdash; el árbol de la tierra baja que da higos, <em>shiqmim</em> en plural. &#11088; En <a href="isaiah-9.es.html#v9-9">Isaías 9:9</a> (ya en estas páginas) es lo que los soberbios dicen que será cortado y repuesto con cedros, y está junto al cedro otra vez donde Salomón hace los cedros &laquo;tan abundantes como los sicómoros de la Sefela&raquo; (<a href="1-kings-10.es.html#v10-27">1 Reyes 10:27</a>, ya en estas páginas). &#9888; El estante imprime &laquo;cabrahigos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;cabrahígos&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;vigas de higuera&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;sicómoros&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kippah-agmon'] = ('kippá ve-agmón', 'RAMA DE PALMA Y JUNCO &mdash; <em>kippah</em>, una rama de palma, y <em>agmon</em>, un junco o caña junto al agua: lo alto y lo bajo de una planta, que con <em>rosh</em> y <em>zanav</em>, &laquo;cabeza y cola&raquo;, dicen todo el mundo. <span data-heb="כפה ואגמון">El par está en dos versículos de la Biblia hebrea</span>, <a href="isaiah-9.es.html#v9-13">Isaías 9:13</a> (ya en estas páginas) e Isaías 19:15, de Egipto (todavía no en estas páginas). &#9888; El estante imprime &laquo;rama y caña&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la palmera y el junco&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;tallo y junco&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['shamir-shayit'] = ('shamir vashayit', 'ZARZAS Y ESPINOS &mdash; la tierra vuelta silvestre. <span data-heb="שמיר ושית">El par está en cuatro versículos de la Biblia hebrea</span>: la viña que Jehová deja crecer silvestre (Isaías 5:6, todavía no en estas páginas), la tierra que será zarzas y espinos cuando vengan los invasores (<a href="isaiah-7.es.html#v7-24">Isaías 7:24</a> y <a href="isaiah-7.es.html#v7-25">7:25</a>, ya en estas páginas) y el fuego que los come, que es la maldad (<a href="isaiah-9.es.html#v9-17">Isaías 9:17</a>, ya en estas páginas). El estante imprime &laquo;cardos y espinas&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>) y &laquo;cardos y espinos&raquo; (<span class="tag t-rv60">RV60</span>).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah 9 carries two: at <a href="isaiah-9.html#v9-2">9:2</a> the consonants say <em>lo</em>, &lsquo;not&rsquo;, and the reading says <em>lo</em>, &lsquo;to it&rsquo;, and at <a href="isaiah-9.html#v9-6">9:6</a> the written word has a closed, final-form <em>mem</em> inside it, <em>lam rabbeh</em>, and the reading is <em>lemarbeh</em> (now on these pages).',) + _t[5:]
+    if _t[0] == 'tsalmavet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; It is the &lsquo;land of deepest darkness&rsquo; where the people walk until the light shines (<a href="isaiah-9.html#v9-1">Isaiah 9:1</a>, now on these pages), the verse Matthew quotes at <a href="matthew-4.html#v4-16">Matthew 4:16</a>.',) + _t[5:]
+    if _t[0] == 'pala':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The noun is the first half of the first name of the child, <em>pele yoetz</em>, &lsquo;Wonderful Counselor&rsquo; (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages; see <a href="dictionary.html#yoetz">yoetz</a>).',) + _t[5:]
+    if _t[0] == 'etsah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The one who gives it is the <a href="dictionary.html#yoetz">yoetz</a>, the counselor of <a href="isaiah-9.html#v9-5">Isaiah 9:5</a> (now on these pages).',) + _t[5:]
+    if _t[0] == 'gibbor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; With <em>El</em> it is the second name of the child, <a href="dictionary.html#el-gibbor">El gibbor</a> (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shalom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-9.html#v9-5">Isaiah 9:5</a> (now on these pages) has it in the last name of the child, <em>Sar-shalom</em>, &lsquo;Prince of Peace&rsquo;, and <a href="isaiah-9.html#v9-6">9:6</a> in a peace that has no end; <span data-heb="לשלום אין קץ">&lsquo;peace, no end&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'sar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <span data-heb="שר שלום">&lsquo;Prince of Peace&rsquo; stands in one verse</span>, the fourth name of the child (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shevet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; In <a href="isaiah-9.html#v9-3">Isaiah 9:3</a> (now on these pages) it is the rod of the taskmaster, broken as in the day of Midian.',) + _t[5:]
+    if _t[0] == 'matteh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; In <a href="isaiah-9.html#v9-3">Isaiah 9:3</a> (now on these pages) it is the staff of the people&rsquo;s shoulder, broken with the yoke and the rod.',) + _t[5:]
+    if _t[0] == 'kun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The causative, <em>lehakhin</em>, &lsquo;to establish&rsquo;, is the verb of the throne of David in <a href="isaiah-9.html#v9-6">Isaiah 9:6</a> (now on these pages), as it is in the promise of <a href="2-samuel-7.html#v7-13">2 Samuel 7:13</a>.',) + _t[5:]
+    if _t[0] == 'qinah-jealousy':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <span data-heb="קנאת יהוה צבאות תעשה זאת">&lsquo;The zeal of Jehovah of armies will do this&rsquo; stands in three verses</span>, <a href="isaiah-9.html#v9-6">Isaiah 9:6</a> (now on these pages), Isaiah 37:32 and 2 Kings 19:31.',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <span data-heb="בכל זאת לא שב אפו">The refrain &lsquo;for all this his anger has not turned back&rsquo; stands in five verses</span>, three of them in <a href="isaiah-9.html#v9-11">Isaiah 9:11, 16, 20</a> (now on these pages), and the people &lsquo;have not turned back&rsquo; to the one who strikes them in the same chapter (9:12).',) + _t[5:]
+    if _t[0] == 'bala':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; In <a href="isaiah-9.html#v9-15">Isaiah 9:15</a> (now on these pages) the people led astray are <em>mevullaim</em>, &lsquo;swallowed up&rsquo;.',) + _t[5:]
+    if _t[0] == 'chanaph':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; At <a href="isaiah-9.html#v9-16">Isaiah 9:16</a> (now on these pages) the adjective is <em>chanef</em>, &lsquo;godless&rsquo;, of a people of whom all are godless and evil.',) + _t[5:]
+    if _t[0] == 'immanu-el':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Isaiah 9:5 gives the child four names that are phrases, in the same manner (<a href="isaiah-9.html#v9-5">Isaiah 9:5</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'shalal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-9.html#v9-2">Isaiah 9:2</a> (now on these pages) sets the joy of dividing it beside the joy of harvest.',) + _t[5:]
+    if _t[0] == 'zanav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-9.html#v9-13">Isaiah 9:13</a> (now on these pages) cuts off head and tail in one day, and verse 14 says who they are.',) + _t[5:]
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; Isaías 9 lleva dos: en <a href="isaiah-9.es.html#v9-2">9:2</a> las consonantes dicen <em>lo</em>, &laquo;no&raquo;, y la lectura dice <em>lo</em>, &laquo;para ella&raquo;, y en <a href="isaiah-9.es.html#v9-6">9:6</a> la palabra escrita tiene una <em>mem</em> cerrada, de forma final, dentro de ella, <em>lam rabbeh</em>, y la lectura es <em>lemarbeh</em> (ya en estas páginas).')
+_d = DICTIONARY_ES['tsalmavet']
+DICTIONARY_ES['tsalmavet'] = (_d[0], _d[1] + ' &#11088; Es la &laquo;tierra de la más profunda oscuridad&raquo; donde anda el pueblo hasta que brilla la luz (<a href="isaiah-9.es.html#v9-1">Isaías 9:1</a>, ya en estas páginas), el versículo que Mateo cita en <a href="matthew-4.es.html#v4-16">Mateo 4:16</a>.')
+_d = DICTIONARY_ES['pala']
+DICTIONARY_ES['pala'] = (_d[0], _d[1] + ' &#11088; El sustantivo es la primera mitad del primer nombre del niño, <em>pele yoetz</em>, &laquo;Maravilloso Consejero&raquo; (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas; véase <a href="diccionario.html#yoetz">yoetz</a>).')
+_d = DICTIONARY_ES['etsah']
+DICTIONARY_ES['etsah'] = (_d[0], _d[1] + ' &#11088; El que la da es el <a href="diccionario.html#yoetz">yoetz</a>, el consejero de <a href="isaiah-9.es.html#v9-5">Isaías 9:5</a> (ya en estas páginas).')
+_d = DICTIONARY_ES['gibbor']
+DICTIONARY_ES['gibbor'] = (_d[0], _d[1] + ' &#11088; Con <em>El</em> es el segundo nombre del niño, <a href="diccionario.html#el-gibbor">El gibbor</a> (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shalom']
+DICTIONARY_ES['shalom'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-9.es.html#v9-5">Isaías 9:5</a> (ya en estas páginas) lo tiene en el último nombre del niño, <em>Sar-shalom</em>, &laquo;Príncipe de Paz&raquo;, y <a href="isaiah-9.es.html#v9-6">9:6</a> en una paz que no tiene fin; <span data-heb="לשלום אין קץ">&laquo;paz, sin fin&raquo; está en este solo versículo</span>.')
+_d = DICTIONARY_ES['sar']
+DICTIONARY_ES['sar'] = (_d[0], _d[1] + ' &#11088; <span data-heb="שר שלום">&laquo;Príncipe de Paz&raquo; está en un versículo</span>, el cuarto nombre del niño (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shevet']
+DICTIONARY_ES['shevet'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-9.es.html#v9-3">Isaías 9:3</a> (ya en estas páginas) es la vara del capataz, quebrada como en el día de Madián.')
+_d = DICTIONARY_ES['matteh']
+DICTIONARY_ES['matteh'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-9.es.html#v9-3">Isaías 9:3</a> (ya en estas páginas) es el bastón del hombro del pueblo, quebrado junto con el yugo y la vara.')
+_d = DICTIONARY_ES['kun']
+DICTIONARY_ES['kun'] = (_d[0], _d[1] + ' &#11088; El causativo, <em>lehakhin</em>, &laquo;establecer&raquo;, es el verbo del trono de David en <a href="isaiah-9.es.html#v9-6">Isaías 9:6</a> (ya en estas páginas), como lo es en la promesa de <a href="2-samuel-7.es.html#v7-13">2 Samuel 7:13</a>.')
+_d = DICTIONARY_ES['qinah-jealousy']
+DICTIONARY_ES['qinah-jealousy'] = (_d[0], _d[1] + ' &#11088; <span data-heb="קנאת יהוה צבאות תעשה זאת">&laquo;El celo de Jehová de los ejércitos hará esto&raquo; está en tres versículos</span>, <a href="isaiah-9.es.html#v9-6">Isaías 9:6</a> (ya en estas páginas), Isaías 37:32 y 2 Reyes 19:31.')
+_d = DICTIONARY_ES['shuv']
+DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <span data-heb="בכל זאת לא שב אפו">El estribillo &laquo;con todo esto su ira no se ha vuelto atrás&raquo; está en cinco versículos</span>, tres de ellos en <a href="isaiah-9.es.html#v9-11">Isaías 9:11, 16, 20</a> (ya en estas páginas), y el pueblo &laquo;no se ha vuelto&raquo; al que lo golpea en el mismo capítulo (9:12).')
+_d = DICTIONARY_ES['bala']
+DICTIONARY_ES['bala'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-9.es.html#v9-15">Isaías 9:15</a> (ya en estas páginas) el pueblo extraviado es <em>mevullaim</em>, &laquo;tragado&raquo;.')
+_d = DICTIONARY_ES['chanaph']
+DICTIONARY_ES['chanaph'] = (_d[0], _d[1] + ' &#11088; En <a href="isaiah-9.es.html#v9-16">Isaías 9:16</a> (ya en estas páginas) el adjetivo es <em>chanef</em>, &laquo;impío&raquo;, de un pueblo del que todos son impíos y malos.')
+_d = DICTIONARY_ES['immanu-el']
+DICTIONARY_ES['immanu-el'] = (_d[0], _d[1] + ' &#11088; Isaías 9:5 da al niño cuatro nombres que son frases, del mismo modo (<a href="isaiah-9.es.html#v9-5">Isaías 9:5</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['shalal']
+DICTIONARY_ES['shalal'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-9.es.html#v9-2">Isaías 9:2</a> (ya en estas páginas) pone la alegría de repartirlo junto a la alegría de la siega.')
+_d = DICTIONARY_ES['zanav']
+DICTIONARY_ES['zanav'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-9.es.html#v9-13">Isaías 9:13</a> (ya en estas páginas) corta cabeza y cola en un solo día, y el versículo 14 dice quiénes son.')
+
+# ---- flip the old 'not yet on these pages' mentions of Isaiah 9:14 in the zanav entry
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zanav':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Isaiah 9:14 glosses it', '<a href="isaiah-9.html#v9-14">Isaiah 9:14</a> glosses it').replace('(9:15 in English numbering; not yet on these pages)', '(9:15 in English numbering; now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['zanav']
+DICTIONARY_ES['zanav'] = (_d[0], _d[1].replace('Isaías 9:14 lo glosa', '<a href="isaiah-9.es.html#v9-14">Isaías 9:14</a> lo glosa').replace('(9:15 en la numeración inglesa; todavía no en estas páginas)', '(9:15 en la numeración inglesa; ya en estas páginas)'))
+
+
+# ---- XREFS for Isaiah 9
+XREFS.extend([
+    (("Isaiah", 9, 3), ("Judges", 7, 25), "the day of Midian: Gideon's victory"),
+    (("Isaiah", 9, 3), ("Exodus", 3, 7), "the taskmaster: the word of Egypt's taskmasters"),
+    (("Isaiah", 9, 5), ("Isaiah", 7, 14), "a child, a son, and a name: the sign of Immanuel"),
+    (("Isaiah", 9, 6), ("Luke", 1, 32), "the throne of David, and no end"),
+    (("Isaiah", 9, 6), ("2 Samuel", 7, 13), "establish the throne of his kingdom forever"),
+    (("Isaiah", 9, 9), ("1 Kings", 10, 27), "cedars and sycamore-figs"),
+    (("Isaiah", 9, 13), ("Deuteronomy", 28, 13), "the head and not the tail"),
+])
+
+
+CHRON_CHAPTERS["isa9"] = dict(era='monarchy',
+    when='&ldquo;The people walking in the darkness have seen a great light&rdquo;: a poem of Isaiah that goes from light, joy and a broken yoke &ldquo;as in the day of Midian&rdquo; to a child who is born and a son who is given, with the government on his shoulder and four names, Wonderful Counselor, Mighty God, Father of Eternity and Prince of Peace, a throne of David with no end of peace, and then a word sent into Jacob against Ephraim and Samaria, with the refrain &ldquo;for all this his anger has not turned back, and his hand is stretched out still&rdquo; closing three of its stanzas.',
+    clock='The poem names no date, but its enemies are Aram, with Rezin, and Ephraim, with Samaria, the two kingdoms that went up against Jerusalem in the days of Ahaz (Isaiah 7:1), and it is filed here under the monarchy beside Isaiah 7. Matthew quotes its first two verses at Matthew 4:15&ndash;16, and Luke 1:32&ndash;33 echoes its throne of David.')
+
+CHAPTER_ART["isa9"] = [dict(
+    file='dore-the-midianites-are-routed.jpg',
+    title='The Midianites Are Routed', title_es='Los madianitas son puestos en fuga',
+    artist='Gustave Doré', artist_es='Gustave Doré',
+    year='1866', location='Wood engraving for the Doré Bible', location_es='Grabado en madera para la Biblia de Doré',
+    alt='A black-and-white wood engraving of a night battle. On a hill at the top right a line of men hold up blazing torches that throw smoke into the dark sky, above rows of pointed tents. Below them, in the camp, men and horses rear and tumble over each other in panic, some trampled, some fleeing, with spears and robes in a tangle across the whole foreground.',
+    alt_es='Un grabado en madera en blanco y negro de una batalla nocturna. En una colina arriba a la derecha una fila de hombres levanta antorchas encendidas que lanzan humo al cielo oscuro, sobre hileras de tiendas puntiagudas. Debajo, en el campamento, hombres y caballos se encabritan y caen unos sobre otros presas del pánico, algunos pisoteados, otros huyendo, con lanzas y mantos enredados por todo el primer plano.',
+    note='Isaiah 9. Doré engraves the night in Judges 7, Gideon&rsquo;s attack on the camp of Midian with torches and trumpets; it is not a scene from the poem, but verse 3 points straight at it, &ldquo;as in the day of Midian&rdquo;, and the picture is a night with lights held up in it, the one thing the first verse of the poem asks for.',
+    note_es='Isaías 9. Doré graba la noche de Jueces 7, el ataque de Gedeón al campamento de Madián con antorchas y trompetas; no es una escena del poema, pero el versículo 3 apunta directamente a ella, &laquo;como en el día de Madián&raquo;, y el cuadro es una noche con luces en alto, lo único que pide el primer versículo del poema.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:055.The_Midianites_Are_Routed.jpg')]
+
+
+# Appended to library_data.py for Psalm 130 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('maamaq', "ma'amaqqim", 'מַעֲמַקִּים', "ma'amaqqim", 'THE DEPTHS &mdash; the plural of <em>ma&rsquo;amaq</em>, the deep places. <span data-heb="ממעמקים">The form <em>mima&rsquo;amaqqim</em>, &lsquo;out of the depths&rsquo;, stands in one verse of the Hebrew Bible</span>, <a href="psalms-130.html#v130-1">Psalm 130:1</a> (now on these pages). &#11088; Its relatives are the depths of water: &lsquo;the depths of the sea&rsquo; (Isaiah 51:10), &lsquo;the depths of the waters&rsquo; (Psalm 69:3, 69:15) and Tyre broken &lsquo;in the depths of the waters&rsquo; (Ezekiel 27:34), none yet on these pages; so the cry is that of someone under. &#9888; The shelf prints &lsquo;the depths&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the deep places&rsquo; (<span class="tag t-gnv">Geneva</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;the depths of despair&rsquo;, which adds a word the Hebrew does not have.', ('Psalms', 130, 1)))
+DICTIONARY.append(('tachanun', 'tachanun', 'תַּחֲנוּן', 'tachanunai', 'A SUPPLICATION &mdash; a request for favor, from the root of <em>chen</em>, grace. It is always plural when it is a person&rsquo;s voice: <em>qol tachanunai</em>, &lsquo;the voice of my supplications&rsquo; (<a href="psalms-130.html#v130-2">Psalm 130:2</a>, now on these pages), the thing the psalmist asks God&rsquo;s ears to be attentive to. &#9888; The shelf prints &lsquo;supplications&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;supplication&rsquo; (<span class="tag t-drb">Douay</span>), &lsquo;my cry for mercy&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;my entreaties&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;my prayers&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Psalms', 130, 2)))
+DICTIONARY.append(('selichah', 'selichah', 'סְלִיחָה', 'has-selichah', 'FORGIVENESS &mdash; the noun of the verb <em>salach</em>, to forgive, the one of &lsquo;who forgives all your iniquity&rsquo; (<a href="psalms-103.html#v103-3">Psalm 103:3</a>, now on these pages). <span data-heb="סליחה">The singular stands in one verse of the Hebrew Bible</span>, <a href="psalms-130.html#v130-4">Psalm 130:4</a> (now on these pages), &lsquo;with you is forgiveness, so that you may be feared&rsquo;; the plural, <em>selichot</em>, is in Nehemiah 9:17 (not yet on these pages). &#9888; The shelf prints &lsquo;forgiveness&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>), &lsquo;merciful forgiveness&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;mercy&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Psalms', 130, 4)))
+DICTIONARY.append(('qavah', 'qavah', 'קָוָה', 'qavah', 'TO WAIT FOR &mdash; to look for something that has not come, with the whole self: <em>qiviti</em>, &lsquo;I wait&rsquo;, and <em>qivta nafshi</em>, &lsquo;my soul waits&rsquo; (<a href="psalms-130.html#v130-5">Psalm 130:5</a>, now on these pages). <span data-heb="קויתי יהוה">&lsquo;I wait for Jehovah&rsquo; stands in three verses of the Hebrew Bible</span>: that one, Psalm 40:2 (not yet on these pages) and Jacob&rsquo;s &lsquo;For your salvation I have waited, Jehovah&rsquo; (<a href="genesis-49.html#v49-18">Genesis 49:18</a>, now on these pages). The same verb is &lsquo;Wait for Jehovah; be strong&rsquo; (<a href="psalms-27.html#v27-14">Psalm 27:14</a>) and the ones &lsquo;who wait for Jehovah&rsquo; who &lsquo;renew their strength&rsquo; (<a href="isaiah-40.html#v40-31">Isaiah 40:31</a>), both now on these pages. It sits beside <a href="dictionary.html#yachal">yachal</a>, to hope, in the same verse.', ('Psalms', 130, 5)))
+DICTIONARY.append(('yachal', 'yachal', 'יָחַל', 'hochalti', 'TO HOPE &mdash; to hold on for something promised: <em>le-dvaro hochalti</em>, &lsquo;for his word I hope&rsquo; (<a href="psalms-130.html#v130-5">Psalm 130:5</a>, now on these pages), and in the command that ends the psalm, <em>yachel Yisrael el-Yehovah</em>, &lsquo;Israel, hope in Jehovah&rsquo; (<a href="psalms-130.html#v130-7">130:7</a>); <span data-heb="יחל ישראל">those two words stand in two verses of the Hebrew Bible</span>, the other being Psalm 131:3 (not yet on these pages). &#9888; It is paired with <a href="dictionary.html#qavah">qavah</a>, to wait, in verse 5, and the <span class="tag t-nwt">NWT&nbsp;1984</span> swaps them, &lsquo;I have hoped, O Jehovah, my soul has hoped, And for his word I have waited&rsquo;.', ('Psalms', 130, 5)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['maamaq'] = ("ma'amaqqim", 'LAS PROFUNDIDADES &mdash; el plural de <em>ma&rsquo;amaq</em>, los lugares hondos. <span data-heb="ממעמקים">La forma <em>mima&rsquo;amaqqim</em>, &laquo;de las profundidades&raquo;, está en un versículo de la Biblia hebrea</span>, el <a href="psalms-130.es.html#v130-1">Salmo 130:1</a> (ya en estas páginas). &#11088; Sus parientes son las profundidades del agua: &laquo;las profundidades del mar&raquo; (Isaías 51:10), &laquo;las profundidades de las aguas&raquo; (Salmo 69:3, 69:15) y Tiro quebrada &laquo;en las profundidades de las aguas&raquo; (Ezequiel 27:34), ninguno todavía en estas páginas; así que el grito es el de alguien que está debajo. &#9888; El estante imprime &laquo;los profundos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;lo profundo&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;lo más profundo de mi ser&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;las profundidades&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tachanun'] = ('tachanunai', 'UNA SÚPLICA &mdash; una petición de favor, de la raíz de <em>chen</em>, gracia. Cuando es la voz de una persona está siempre en plural: <em>qol tachanunai</em>, &laquo;la voz de mis súplicas&raquo; (<a href="psalms-130.es.html#v130-2">Salmo 130:2</a>, ya en estas páginas), lo que el salmista pide a los oídos de Dios que atiendan. &#9888; El estante imprime &laquo;súplica&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;mi voz suplicante&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;mis súplicas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;mis ruegos por ayuda&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['selichah'] = ('has-selijá', 'PERDÓN &mdash; el sustantivo del verbo <em>salach</em>, perdonar, el de &laquo;el que perdona toda tu iniquidad&raquo; (<a href="psalms-103.es.html#v103-3">Salmo 103:3</a>, ya en estas páginas). <span data-heb="סליחה">El singular está en un versículo de la Biblia hebrea</span>, el <a href="psalms-130.es.html#v130-4">Salmo 130:4</a> (ya en estas páginas), &laquo;contigo está el perdón, para que seas temido&raquo;; el plural, <em>selichot</em>, está en Nehemías 9:17 (todavía no en estas páginas). &#9888; El estante imprime &laquo;perdón&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;verdadero perdón&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['qavah'] = ('qavah', 'ESPERAR A &mdash; buscar con la mirada algo que no ha llegado, con todo el ser: <em>qiviti</em>, &laquo;espero&raquo;, y <em>qivta nafshi</em>, &laquo;mi alma espera&raquo; (<a href="psalms-130.es.html#v130-5">Salmo 130:5</a>, ya en estas páginas). <span data-heb="קויתי יהוה">&laquo;Espero a Jehová&raquo; está en tres versículos de la Biblia hebrea</span>: ese, el Salmo 40:2 (todavía no en estas páginas) y el &laquo;Tu salvación he esperado, Jehová&raquo; de Jacob (<a href="genesis-49.es.html#v49-18">Génesis 49:18</a>, ya en estas páginas). El mismo verbo es &laquo;Espera a Jehová; esfuérzate&raquo; (<a href="psalms-27.es.html#v27-14">Salmo 27:14</a>) y los &laquo;que esperan a Jehová&raquo; que &laquo;tendrán nuevas fuerzas&raquo; (<a href="isaiah-40.es.html#v40-31">Isaías 40:31</a>), ambos ya en estas páginas. Está junto a <a href="diccionario.html#yachal">yachal</a>, tener esperanza, en el mismo versículo.')
+DICTIONARY_ES['yachal'] = ('hochalti', 'TENER ESPERANZA &mdash; aferrarse a algo prometido: <em>le-dvaro hochalti</em>, &laquo;en su palabra tengo esperanza&raquo; (<a href="psalms-130.es.html#v130-5">Salmo 130:5</a>, ya en estas páginas), y en la orden que cierra el salmo, <em>yachel Yisrael el-Yehovah</em>, &laquo;Israel, ten esperanza en Jehová&raquo; (<a href="psalms-130.es.html#v130-7">130:7</a>); <span data-heb="יחל ישראל">esas dos palabras están en dos versículos de la Biblia hebrea</span>, el otro es el Salmo 131:3 (todavía no en estas páginas). &#9888; Va junto a <a href="diccionario.html#qavah">qavah</a>, esperar, en el versículo 5, y la <span class="tag t-tnm">TNM&nbsp;1987</span> los cambia de lugar, &laquo;He tenido esperanza, oh Jehová, mi alma ha tenido esperanza, y su palabra he esperado&raquo;.')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-3">Psalm 130:3</a> (now on these pages) puts it in a question, &lsquo;If you keep iniquities, Yah, Lord, who can stand?&rsquo;, joined to the verb by a hyphen; the <span class="tag t-nwt">NWT&nbsp;1984</span> prints &lsquo;O Jah, O Jehovah&rsquo;.',) + _t[5:]
+    if _t[0] == 'shamar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-3">Psalm 130:3</a> and <a href="psalms-130.html#v130-6">130:6</a> (now on these pages) use it for two watchers: God, who might &lsquo;keep iniquities&rsquo;, and the &lsquo;watchmen for the morning&rsquo;.',) + _t[5:]
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-3">Psalm 130:3</a> asks who could stand if God kept <em>avonot</em>, and <a href="psalms-130.html#v130-8">130:8</a> answers that he will redeem Israel &lsquo;from all his iniquities&rsquo; (now on these pages).',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-7">Psalm 130:7</a> (now on these pages) gives it as the reason for hope, &lsquo;with Jehovah is steadfast love, and plentiful with him is redemption&rsquo;.',) + _t[5:]
+    if _t[0] == 'padah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-8">Psalm 130:8</a> (now on these pages) has it for the last line of a psalm, &lsquo;he will redeem Israel from all his iniquities&rsquo;, and the noun <em>pedut</em> in 130:7; <span data-heb-read="פדות">the noun stands in three verses once the hits are read</span>, the others being Psalm 111:9 and Isaiah 50:2 (not yet on these pages).',) + _t[5:]
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; In <a href="psalms-130.html#v130-5">Psalm 130:5&ndash;6</a> (now on these pages) it is the one who waits, &lsquo;my soul waits&rsquo;, and &lsquo;my soul is for the Lord&rsquo;; the <span class="tag t-niv">NIV</span> prints &lsquo;my whole being waits&rsquo;.',) + _t[5:]
+    if _t[0] == 'yare':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-130.html#v130-4">Psalm 130:4</a> (now on these pages) makes fear the purpose of forgiveness, <em>lema&rsquo;an tivvare</em>, &lsquo;so that you may be feared&rsquo;.',) + _t[5:]
+_d = DICTIONARY_ES['yah']
+DICTIONARY_ES['yah'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-3">Salmo 130:3</a> (ya en estas páginas) lo pone en una pregunta, &laquo;Si guardas las iniquidades, Yah, Señor, ¿quién puede mantenerse en pie?&raquo;, unido al verbo por un guion; la <span class="tag t-tnm">TNM&nbsp;1987</span> imprime &laquo;oh Jah, oh Jehová&raquo;.')
+_d = DICTIONARY_ES['shamar']
+DICTIONARY_ES['shamar'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-3">Salmo 130:3</a> y <a href="psalms-130.es.html#v130-6">130:6</a> (ya en estas páginas) lo usan para dos vigilantes: Dios, que podría &laquo;guardar las iniquidades&raquo;, y los &laquo;centinelas para la mañana&raquo;.')
+_d = DICTIONARY_ES['avon']
+DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-3">Salmo 130:3</a> pregunta quién podría mantenerse en pie si Dios guardara las <em>avonot</em>, y <a href="psalms-130.es.html#v130-8">130:8</a> responde que redimirá a Israel &laquo;de todas sus iniquidades&raquo; (ya en estas páginas).')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-7">Salmo 130:7</a> (ya en estas páginas) lo da como razón de la esperanza, &laquo;con Jehová está el amor leal, y abundante con él la redención&raquo;.')
+_d = DICTIONARY_ES['padah']
+DICTIONARY_ES['padah'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-8">Salmo 130:8</a> (ya en estas páginas) lo tiene para la última línea de un salmo, &laquo;él redimirá a Israel de todas sus iniquidades&raquo;, y el sustantivo <em>pedut</em> en 130:7; <span data-heb-read="פדות">el sustantivo está en tres versículos una vez leídos los resultados</span>, los otros son el Salmo 111:9 e Isaías 50:2 (todavía no en estas páginas).')
+_d = DICTIONARY_ES['nefesh']
+DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; En el <a href="psalms-130.es.html#v130-5">Salmo 130:5&ndash;6</a> (ya en estas páginas) es el que espera, &laquo;mi alma espera&raquo;, y &laquo;mi alma es para el Señor&raquo;; la <span class="tag t-tnm">TNM&nbsp;2019</span> imprime &laquo;todo mi ser pone su esperanza en él&raquo;.')
+_d = DICTIONARY_ES['yare']
+DICTIONARY_ES['yare'] = (_d[0], _d[1] + ' &#11088; El <a href="psalms-130.es.html#v130-4">Salmo 130:4</a> (ya en estas páginas) hace del temor el propósito del perdón, <em>lema&rsquo;an tivvare</em>, &laquo;para que seas temido&raquo;.')
+
+# ---- ma-alot: two of the fifteen are now on these pages
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ma-alot':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Psalm 121 is the first of the fifteen on this shelf; the other fourteen remain untranslated here.', 'Psalm 121 and <a href="psalms-130.html#v130-1">Psalm 130</a> are the two of the fifteen on this shelf; the other thirteen remain untranslated here.'),) + _t[5:]
+
+
+# ---- XREFS for Psalm 130
+XREFS.extend([
+    (("Psalms", 130, 4), ("Psalms", 103, 3), "forgiveness, and the verb of who forgives all your iniquity"),
+    (("Psalms", 130, 8), ("Titus", 2, 14), "redeem from all iniquity"),
+    (("Psalms", 130, 5), ("Genesis", 49, 18), "I wait for Jehovah"),
+    (("Psalms", 130, 7), ("Exodus", 34, 7), "steadfast love, and the forgiving of iniquity"),
+])
+
+CHRON_CHAPTERS["psalms130"] = dict(era='monarchy',
+    when='&ldquo;Out of the depths I have called you, Jehovah&rdquo;: one of the songs of ascents, in eight verses. A voice from the deeps asks to be heard, asks who could stand if God kept iniquities, says that forgiveness is with him so that he may be feared, waits for him more than watchmen for the morning, twice, and turns to tell Israel to hope, because with Jehovah are steadfast love and plentiful redemption, and he will redeem Israel from all his iniquities.',
+    clock='The heading names no author and no event, and the psalm does not either; it is not dated, and it is filed here under the monarchy as an undated psalm, as Psalm 121 is. It is one of the fifteen songs of ascents, Psalms 120 to 134.')
+
+
+CHAPTER_ART["psalms130"] = [dict(
+    file='friedrich-monk-by-the-sea.jpg',
+    title='The Monk by the Sea', title_es='El monje junto al mar',
+    artist='Caspar David Friedrich', artist_es='Caspar David Friedrich',
+    year='1808&ndash;1810', location='Alte Nationalgalerie, Berlin', location_es='Alte Nationalgalerie, Berlín',
+    alt='A very wide oil painting that is almost all sky and sea. A narrow strip of pale dunes runs along the bottom, with one tiny dark figure standing at the water&rsquo;s edge on the left. Beyond him lies a flat, near-black sea with a few white flecks, and above it a huge sky that grades from heavy grey-green fog to a faint pale blue and thin light clouds at the top.',
+    alt_es='Un óleo muy ancho que es casi todo cielo y mar. Una estrecha franja de dunas pálidas corre por abajo, con una diminuta figura oscura de pie a la orilla del agua, a la izquierda. Más allá hay un mar plano, casi negro, con unas pocas motas blancas, y encima un cielo inmenso que va de una pesada niebla gris verdosa a un azul pálido tenue y finas nubes claras arriba.',
+    note='Psalm 130. Friedrich&rsquo;s figure stands alone at the edge of a sea that is darker than the sky, and does nothing but face it; it is not a scene from the psalm, and the painting is not about a monk&rsquo;s prayer in the Bible. What it shares with the psalm is the size of the waiting: the depths on one side, and above them a morning that has not come.',
+    note_es='Salmo 130. La figura de Friedrich está sola al borde de un mar más oscuro que el cielo, y no hace otra cosa que mirarlo; no es una escena del salmo, y el cuadro no trata de la oración de un monje de la Biblia. Lo que comparte con el salmo es el tamaño de la espera: las profundidades de un lado, y sobre ellas una mañana que todavía no llega.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg')]
+
+
+# Appended to library_data.py for 2 Chronicles 7 (both languages). Plain characters and HTML entities only.
+
+# ---------------------------------------------------------------- dictionary (EN)
+DICTIONARY.append(('rapha', 'rapha', 'רָפָא', 'rapha', 'TO HEAL &mdash; to mend what is broken, said of a wound, a body, a people and a land. In <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) Jehovah promises, &lsquo;I will heal their land&rsquo;: <span data-heb="וארפא את ארצם">the line stands in this one verse of the Hebrew Bible</span>, and what is healed is the land, <em>artzam</em>, &lsquo;their land&rsquo;, not the people. &#11088; The verb comes after the forgiving of the sin, and the ground it names is the same one verse 20 has Jehovah plucking them from. &#9888; Seven versions print &lsquo;heal their land&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-tlb">TLB</span>). The name <em>Rephaim</em>, the shades, is spelled with the same three consonants and is a different word (see <a href="dictionary.html#rephaim-shades">rephaim</a>).', ('2 Chronicles', 7, 14)))
+DICTIONARY.append(('sheninah', 'sheninah', 'שְׁנִינָה', 'sheninah', 'A BYWORD &mdash; a sharp saying, from the root &lsquo;to sharpen&rsquo;: the thing people say about you, with an edge. <span data-heb="שנינה">It stands in four verses of the Hebrew Bible</span>: <a href="deuteronomy-28.html#v28-37">Deuteronomy 28:37</a>, <a href="1-kings-9.html#v9-7">1 Kings 9:7</a>, <a href="jeremiah-24.html#v24-9">Jeremiah 24:9</a> (all now on these pages) and <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages). &#11088; Three of the four set it beside <em>mashal</em>, &lsquo;a proverb&rsquo;, in the pair <span data-heb="למשל ולשנינה">&lsquo;a proverb and a byword&rsquo;, which stands in three verses</span>: Deuteronomy, Kings and Chronicles. &#9888; The shelf prints &lsquo;a proverb and a byword&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a byword and an object of ridicule&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a proverbial saying and a taunt&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a byword, and an example&rsquo; (<span class="tag t-drb">Douay</span>).', ('2 Chronicles', 7, 20)))
+
+# ---------------------------------------------------------------- dictionary (ES)
+DICTIONARY_ES['rapha'] = ('rapha', 'SANAR &mdash; remediar lo roto, dicho de una herida, un cuerpo, un pueblo y una tierra. En <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) Jehová promete, &laquo;sanaré su tierra&raquo;: <span data-heb="וארפא את ארצם">la línea está en este único versículo de la Biblia hebrea</span>, y lo que se sana es la tierra, <em>artzam</em>, &laquo;su tierra&raquo;, no el pueblo. &#11088; El verbo viene después del perdón del pecado, y el suelo que nombra es el mismo del que el versículo 20 tiene a Jehová arrancándolos. &#9888; Cuatro de las cinco imprimen &laquo;sanaré su tierra&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y la <span class="tag t-nvi">NVI</span> dice &laquo;restauraré su tierra&raquo;. El nombre <em>Refaím</em>, las sombras, se escribe con las mismas tres consonantes y es otra palabra (véase <a href="diccionario.html#rephaim-shades">refaím</a>).')
+DICTIONARY_ES['sheninah'] = ('sheninah', 'UN REFRÁN &mdash; un dicho cortante, de la raíz &laquo;afilar&raquo;: lo que la gente dice de ti, con filo. <span data-heb="שנינה">Está en cuatro versículos de la Biblia hebrea</span>: <a href="deuteronomy-28.es.html#v28-37">Deuteronomio 28:37</a>, <a href="1-kings-9.es.html#v9-7">1 Reyes 9:7</a>, <a href="jeremiah-24.es.html#v24-9">Jeremías 24:9</a> (todos ya en estas páginas) y <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas). &#11088; Tres de los cuatro la ponen junto a <em>mashal</em>, &laquo;proverbio&raquo;, en el par <span data-heb="למשל ולשנינה">&laquo;proverbio y refrán&raquo;, que está en tres versículos</span>: Deuteronomio, Reyes y Crónicas. &#9888; El estante imprime &laquo;proverbio y fábula&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;burla y escarnio&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;objeto de burla&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;un dicho proverbial y escarnio&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;objeto de desprecio y motivo de burla&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---------------------------------------------------------------- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kana':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) is the verse people know it from, &lsquo;if my people &hellip; humble themselves&rsquo;. <span data-heb="ויכנעו">The form <em>vayikkane&rsquo;u</em> stands in seven verses of the Hebrew Bible</span>: in two of them people humble themselves (that one and 2 Chronicles 12:6, not yet on these pages) and in the other five a people is subdued (Judges 11:33, 1 Samuel 7:13, 1 Chronicles 20:4, 2 Chronicles 13:18 and Psalm 106:42).',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-3">2 Chronicles 7:3</a> and <a href="2-chronicles-7.html#v7-6">7:6</a> (now on these pages) carry it in the refrain the singers sing, &lsquo;for he is good, for his steadfast love is forever&rsquo;; <span data-heb="כי טוב כי לעולם חסדו">the whole refrain stands in nine verses of the Hebrew Bible</span>.',) + _t[5:]
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-1">2 Chronicles 7:1&ndash;3</a> (now on these pages) is the glory that fills the house so that the priests cannot enter, as the cloud did at the tent (<a href="exodus-40.html#v40-35">Exodus 40:35</a>) and in <a href="1-kings-8.html#v8-11">1 Kings 8:11</a>.',) + _t[5:]
+    if _t[0] == 'zevach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-12">2 Chronicles 7:12</a> (now on these pages) has Jehovah choose the temple &lsquo;as a house of sacrifice&rsquo;, <em>beit zavach</em>; <span data-heb-read="בית זבח">the pair stands in one verse once the hits are read</span>.',) + _t[5:]
+    if _t[0] == 'chagav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-13">2 Chronicles 7:13</a> (now on these pages) lists it among the three troubles Jehovah says he may send, with the shut heavens and the pestilence: the shelf has &lsquo;the locusts&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the grasshoppers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the grasshopper&rsquo; (<span class="tag t-gnv">Geneva</span>).',) + _t[5:]
+    if _t[0] == 'dever':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-13">2 Chronicles 7:13</a> (now on these pages) is the third of the three ifs, &lsquo;if I send pestilence among my people&rsquo;, the pestilence of <a href="1-kings-8.html#v8-37">1 Kings 8:37</a>.',) + _t[5:]
+    if _t[0] == 'salach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) has the line <span data-heb="ואסלח לחטאתם">&lsquo;and I will forgive their sin&rsquo;, which stands in this one verse of the Hebrew Bible</span>, between &lsquo;I will hear from the heavens&rsquo; and &lsquo;I will heal their land&rsquo;.',) + _t[5:]
+    if _t[0] == 'natash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages) has <span data-heb="ונתשתים">the verb <em>untashtim</em>, &lsquo;and I will pluck them up&rsquo;, in this one verse</span>, and it is the ground that is Jehovah&rsquo;s: &lsquo;from my ground that I gave them&rsquo;.',) + _t[5:]
+    if _t[0] == 'elyon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-21">2 Chronicles 7:21</a> (now on these pages) has <em>elyon</em>, &lsquo;high&rsquo;, in the past tense, &lsquo;this house, which was high&rsquo;, where <a href="1-kings-9.html#v9-8">1 Kings 9:8</a> has it in the future; the shelf prints &lsquo;which is high&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;which is most high&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;heaps of ruins&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a heap of rubble&rsquo; (<span class="tag t-niv">NIV</span>).',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) is the last of the four verbs the people are asked for: humble themselves, pray, seek my face, <em>turn</em>, &lsquo;from their evil ways&rsquo;; <a href="2-chronicles-7.html#v7-19">2 Chronicles 7:19</a> has the same verb for the turning away.',) + _t[5:]
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-14">2 Chronicles 7:14</a> (now on these pages) has <span data-heb="ויבקשו פני">&lsquo;and seek my face&rsquo; in this one verse</span>; its near relative <em>uvaqshu fanai</em> is Hosea 5:15 (not yet on these pages).',) + _t[5:]
+    if _t[0] == 'chatzotzrah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-6">2 Chronicles 7:6</a> (now on these pages) has the priests sounding them opposite the Levites, and the Hebrew prints the word twice, written and read (see <a href="dictionary.html#ketiv-qere">ketiv/qere</a>).',) + _t[5:]
+    if _t[0] == 'chanukkah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-5">2 Chronicles 7:5</a> (now on these pages) has <span data-heb="ויחנכו את בית">&lsquo;and they dedicated the house&rsquo;, which stands in two verses</span>, the other being <a href="1-kings-8.html#v8-63">1 Kings 8:63</a>.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-20">2 Chronicles 7:20</a> (now on these pages) makes the temple <em>mashal</em> and <em>sheninah</em>, &lsquo;a proverb and a byword&rsquo; (<a href="dictionary.html#sheninah">byword</a>).',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="2-chronicles-7.html#v7-6">2 Chronicles 7:6</a> (now on these pages) has the word for &lsquo;trumpets&rsquo; written with an extra <em>tsade</em> and read without it, and the Hebrew column keeps both.',) + _t[5:]
+_d = DICTIONARY_ES['kana']
+DICTIONARY_ES['kana'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) es el versículo donde más se conoce, &laquo;si se humillare mi pueblo&raquo;. <span data-heb="ויכנעו">La forma <em>vayikkane&rsquo;u</em> está en siete versículos de la Biblia hebrea</span>: en dos de ellos las personas se humillan (ese y 2 Crónicas 12:6, todavía no en estas páginas) y en los otros cinco un pueblo es sometido (Jueces 11:33, 1 Samuel 7:13, 1 Crónicas 20:4, 2 Crónicas 13:18 y Salmo 106:42).')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-3">2 Crónicas 7:3</a> y <a href="2-chronicles-7.es.html#v7-6">7:6</a> (ya en estas páginas) lo llevan en el estribillo que cantan los cantores, &laquo;porque él es bueno, porque su amor leal es para siempre&raquo;; <span data-heb="כי טוב כי לעולם חסדו">el estribillo entero está en nueve versículos de la Biblia hebrea</span>.')
+_d = DICTIONARY_ES['kavod']
+DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-1">2 Crónicas 7:1&ndash;3</a> (ya en estas páginas) es la gloria que llena la casa de modo que los sacerdotes no pueden entrar, como la nube en la tienda (<a href="exodus-40.es.html#v40-35">Éxodo 40:35</a>) y en <a href="1-kings-8.es.html#v8-11">1 Reyes 8:11</a>.')
+_d = DICTIONARY_ES['zevach']
+DICTIONARY_ES['zevach'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-12">2 Crónicas 7:12</a> (ya en estas páginas) hace que Jehová escoja el templo &laquo;como casa de sacrificio&raquo;, <em>beit zavach</em>; <span data-heb-read="בית זבח">el par está en un versículo una vez leídos los resultados</span>.')
+_d = DICTIONARY_ES['chagav']
+DICTIONARY_ES['chagav'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-13">2 Crónicas 7:13</a> (ya en estas páginas) lo enumera entre las tres desgracias que Jehová dice que puede enviar, con los cielos cerrados y la pestilencia: el estante tiene &laquo;la langosta&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;los saltamontes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['dever']
+DICTIONARY_ES['dever'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-13">2 Crónicas 7:13</a> (ya en estas páginas) es el tercero de los tres «si», &laquo;si envío pestilencia a mi pueblo&raquo;, la pestilencia de <a href="1-kings-8.es.html#v8-37">1 Reyes 8:37</a>.')
+_d = DICTIONARY_ES['salach']
+DICTIONARY_ES['salach'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) tiene la línea <span data-heb="ואסלח לחטאתם">&laquo;y perdonaré su pecado&raquo;, que está en este único versículo de la Biblia hebrea</span>, entre &laquo;oiré desde los cielos&raquo; y &laquo;sanaré su tierra&raquo;.')
+_d = DICTIONARY_ES['natash']
+DICTIONARY_ES['natash'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas) tiene <span data-heb="ונתשתים">el verbo <em>untashtim</em>, &laquo;y los arrancaré&raquo;, en este único versículo</span>, y es el suelo el que es de Jehová: &laquo;de mi suelo que les di&raquo;.')
+_d = DICTIONARY_ES['elyon']
+DICTIONARY_ES['elyon'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-21">2 Crónicas 7:21</a> (ya en estas páginas) tiene <em>elyon</em>, &laquo;alta&raquo;, en pasado, &laquo;esta casa, que era alta&raquo;, donde <a href="1-kings-9.es.html#v9-8">1 Reyes 9:8</a> lo tiene en futuro; el estante imprime &laquo;habrá sido ilustre&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;tan excelsa&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;imponente&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;montones de ruinas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['shuv']
+DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) es el último de los cuatro verbos que se piden al pueblo: humillarse, orar, buscar mi rostro, <em>volverse</em>, &laquo;de sus malos caminos&raquo;; <a href="2-chronicles-7.es.html#v7-19">2 Crónicas 7:19</a> tiene el mismo verbo para el apartarse.')
+_d = DICTIONARY_ES['panim']
+DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-14">2 Crónicas 7:14</a> (ya en estas páginas) tiene <span data-heb="ויבקשו פני">&laquo;y busquen mi rostro&raquo; en este único versículo</span>; su pariente cercano, <em>uvaqshu fanai</em>, es Oseas 5:15 (todavía no en estas páginas).')
+_d = DICTIONARY_ES['chatzotzrah']
+DICTIONARY_ES['chatzotzrah'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-6">2 Crónicas 7:6</a> (ya en estas páginas) tiene a los sacerdotes tocándolas frente a los levitas, y el hebreo imprime la palabra dos veces, escrita y leída (véase <a href="diccionario.html#ketiv-qere">ketiv/qere</a>).')
+_d = DICTIONARY_ES['chanukkah']
+DICTIONARY_ES['chanukkah'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-5">2 Crónicas 7:5</a> (ya en estas páginas) tiene <span data-heb="ויחנכו את בית">&laquo;y dedicaron la casa&raquo;, que está en dos versículos</span>, el otro es <a href="1-kings-8.es.html#v8-63">1 Reyes 8:63</a>.')
+_d = DICTIONARY_ES['mashal']
+DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-20">2 Crónicas 7:20</a> (ya en estas páginas) hace del templo <em>mashal</em> y <em>sheninah</em>, &laquo;proverbio y refrán&raquo; (<a href="diccionario.html#sheninah">refrán</a>).')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="2-chronicles-7.es.html#v7-6">2 Crónicas 7:6</a> (ya en estas páginas) tiene la palabra «trompetas» escrita con una <em>tsade</em> de más y leída sin ella, y la columna hebrea conserva las dos.')
+
+# ---- flips: two existing entries mentioned 2 Chronicles 7 before it was on these pages
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'atzarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace("Solomon's dedication at 2 Chronicles 7:9", 'Solomon\'s dedication at <a href="2-chronicles-7.html#v7-9">2 Chronicles 7:9</a>'),) + _t[5:]
+    if _t[0] == 'ritspah':
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Ezekiel 40:17 and 2 Chronicles 7:3, not yet on these pages', 'Ezekiel 40:17, not yet on these pages, and <a href="2-chronicles-7.html#v7-3">2 Chronicles 7:3</a>, now on these pages'),) + _t[5:]
+_d = DICTIONARY_ES['ritspah']
+DICTIONARY_ES['ritspah'] = (_d[0], _d[1].replace('Ezequiel 40:17 y 2 Crónicas 7:3, todavía no en estas páginas', 'Ezequiel 40:17, todavía no en estas páginas, y <a href="2-chronicles-7.es.html#v7-3">2 Crónicas 7:3</a>, ya en estas páginas'))
+
+
+# ---- XREFS for 2 Chronicles 7 (skip any pair already present, either direction)
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('2 Chronicles', 7, 1), ('Leviticus', 9, 24), 'fire from before Jehovah consumes the burnt offering — Aaron’s first sacrifice and Solomon’s dedication'),
+    (('2 Chronicles', 7, 2), ('Exodus', 40, 35), 'the glory fills the house and the one who serves cannot enter — Moses at the tent, the priests at the temple'),
+    (('2 Chronicles', 7, 5), ('1 Kings', 8, 63), '22,000 cattle and 120,000 sheep, and the house dedicated — the same numbers in Kings'),
+    (('2 Chronicles', 7, 12), ('1 Kings', 9, 2), 'the second appearance — Kings gives no hour, Chronicles says by night'),
+    (('2 Chronicles', 7, 13), ('1 Kings', 8, 35), 'the shut heavens, the locust and the pestilence of Solomon’s prayer, now Jehovah’s ifs'),
+    (('2 Chronicles', 7, 15), ('Psalms', 130, 2), 'ears attentive — the psalmist asks for what Jehovah promises the house of prayer'),
+    (('2 Chronicles', 7, 18), ('1 Kings', 9, 5), 'not cut off a man — Chronicles ends it ‘ruling in Israel’, Kings ‘over Israel forever’'),
+    (('2 Chronicles', 7, 20), ('Deuteronomy', 28, 37), 'a proverb and a byword — the curse of the law, now said of the house'),
+    (('2 Chronicles', 7, 21), ('Deuteronomy', 29, 23), '‘why has Jehovah done thus to this land’ — asked of the land, then of the house'),
+    (('2 Chronicles', 7, 22), ('1 Kings', 9, 9), 'the answer to why — ‘the God of their fathers, who brought them out’ against Kings’ ‘their God, who brought their fathers out’'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["2chr7"] = dict(era='monarchy',
+    when='The dedication of the temple finishes: fire comes down and the glory fills the house so that the priests cannot enter, the people bow with their faces to the ground, twenty-two thousand cattle and a hundred and twenty thousand sheep are offered, a fourteen-day festival ends on the twenty-third day, and Jehovah appears to Solomon by night with the verse about humbling, seeking and healing and a warning of what will happen to the house if the people leave him.',
+    clock='About 959 BC on the usual reckoning of Solomon&rsquo;s temple, the seventh month of its dedication year; the parallel account is 1 Kings 8&ndash;9, and Chronicles, written centuries later, adds the fire, the night and the verse about healing the land. &#9888; The date of the dedication is a reckoning, not something the chapter states; it gives only the month and the day.')
+
+CHAPTER_ART["2chr7"] = [dict(
+    file='tissot-solomon-dedicates-the-temple.jpg',
+    title='Solomon Dedicates the Temple at Jerusalem', title_es='Salomón dedica el templo de Jerusalén',
+    artist='James Tissot', artist_es='James Tissot',
+    year='1901', location='Study drawing for the Brunoff Old Testament; photographed in its mount', location_es='Dibujo de estudio para el Antiguo Testamento de Brunoff; fotografiado en su paspartú',
+    alt='A pen-and-ink drawing in brown and black with crossing blue pencil lines. On the right a bearded man in a long robe and sash stands on stone steps with both arms raised, beside the rounded top of an altar. Behind him are tall pillars. On the left a dense crowd in rows of hooded heads bends forward, the nearest men bowed almost to the ground.',
+    alt_es='Un dibujo a pluma en marrón y negro con líneas cruzadas de lápiz azul. A la derecha, un hombre barbado con túnica larga y faja está de pie sobre unos escalones de piedra con los dos brazos levantados, junto a la parte superior redondeada de un altar. Detrás de él hay altas columnas. A la izquierda, una multitud densa en filas de cabezas cubiertas se inclina hacia delante, y los más cercanos casi tocan el suelo.',
+    note='2 Chronicles 7:1&ndash;3. Tissot drew the dedication from 1 Kings 8:13, and this is a small study, with the blue lines of a draughtsman&rsquo;s layout still across it. It has Solomon with his arms raised and a crowd bowing, which is what verse 3 describes; it has no fire and no cloud, and the chapter&rsquo;s fire is not in the picture.',
+    note_es='2 Crónicas 7:1&ndash;3. Tissot dibujó la dedicación a partir de 1 Reyes 8:13, y este es un pequeño estudio, con las líneas azules de un trazado todavía sobre él. Tiene a Salomón con los brazos levantados y a una multitud inclinada, que es lo que describe el versículo 3; no tiene fuego ni nube, y el fuego del capítulo no está en el cuadro.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Tissot_Drawing_331_Solomon_dedicates_the_Temple_at_Jerusalem_1_Kings_8_13_for_Brunoff_303_La_d%C3%A9dicace_par_Salomon_du_temple.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 90 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('maon', "ma'on", 'מָעוֹן', "ma'on", 'A DWELLING &mdash; a home, a lair, a refuge. <span data-heb="מעון אתה">&lsquo;A dwelling place are you&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-90.html#v90-1">Psalm 90:1</a> (now on these pages), the first line of the prayer of Moses. &#11088; Moses uses a near form in his last blessing, &lsquo;a dwelling place is the God of old&rsquo; (<a href="deuteronomy-33.html#v33-27">Deuteronomy 33:27</a>, now on these pages), and the next psalm has &lsquo;you have made the Most High your dwelling&rsquo; (<a href="psalms-91.html#v91-9">Psalm 91:9</a>). &#9888; The shelf prints &lsquo;our dwelling place&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>), &lsquo;a real dwelling&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;our home&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;our refuge&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 90, 1)))
+DICTIONARY.append(('dakka', 'dakka', 'דַּכָּא', 'dakka', 'CRUSHING &mdash; what is ground fine, crushed matter. <span data-heb="עד דכא">&lsquo;To crushing&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-90.html#v90-3">Psalm 90:3</a> (now on these pages): &lsquo;You turn man back to crushing, and say, Return.&rsquo; &#11088; It is the answer to Eden, &lsquo;to dust you will return&rsquo; (<a href="genesis-3.html#v3-19">Genesis 3:19</a>, now on these pages), with the dust ground down. &#9888; The shelf has &lsquo;destruction&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;dust&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;crushed matter&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, for the <span class="tag t-drb">Douay</span>, the Latin&rsquo;s &lsquo;Turn not man away to be brought low&rsquo;.', ('Psalms', 90, 3)))
+DICTIONARY.append(('ashmurah', 'ashmurah', 'אַשְׁמוּרָה', 'ashmurah', 'A WATCH &mdash; one turn of the guard through the night, from <em>shamar</em>, to keep. <span data-heb="ואשמורה">The word stands in this one verse of the Hebrew Bible</span>, <a href="psalms-90.html#v90-4">Psalm 90:4</a> (now on these pages): &lsquo;a thousand years in your eyes are like yesterday when it passes, and a watch in the night&rsquo;. &#11088; The watchmen of <a href="psalms-130.html#v130-6">Psalm 130:6</a> keep the same watch, and 2 Peter turns the sum around (<a href="2-peter-3.html#v3-8">2 Peter 3:8</a>). &#9888; The shelf prints &lsquo;a watch in the night&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>), &lsquo;a watch during the night&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;a single hour&rsquo;.', ('Psalms', 90, 4)))
+DICTIONARY.append(('alumenu', 'alumenu', 'עֲלֻמֵנוּ', 'alumenu', 'OUR HIDDEN THINGS &mdash; from <em>alam</em>, to hide, to conceal. <span data-heb="עלמנו">The form stands in this one verse of the Hebrew Bible</span>, <a href="psalms-90.html#v90-8">Psalm 90:8</a> (now on these pages): &lsquo;our hidden things in the light of your face&rsquo;. &#11088; The sins nobody has seen, set where God can see them. &#9888; The shelf prints &lsquo;our secret sins&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;our hidden things&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;our secret sins&rsquo; (<span class="tag t-tlb">TLB</span>) and, for the <span class="tag t-drb">Douay</span>, &lsquo;our life&rsquo;.', ('Psalms', 90, 8)))
+DICTIONARY.append(('noam', "no'am", 'נֹעַם', "no'am", 'FAVOR, PLEASANTNESS &mdash; what makes a thing sweet to be near. <span data-heb="נעם אדני">&lsquo;The favor of the Lord&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-90.html#v90-17">Psalm 90:17</a> (now on these pages), the last prayer of the psalm, answered by the establishing of the work of the hands. &#9888; The shelf prints &lsquo;the beauty of the Lord&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;the favor of the Lord&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the pleasantness of Jehovah&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the brightness of the Lord&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;let the Lord our God favor us&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 90, 17)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['maon'] = ("ma'on", 'UNA MORADA &mdash; un hogar, una guarida, un refugio. <span data-heb="מעון אתה">&laquo;Una morada eres tú&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-90.es.html#v90-1">Salmo 90:1</a> (ya en estas páginas), la primera línea de la oración de Moisés. &#11088; Moisés usa una forma cercana en su última bendición, &laquo;una morada es el Dios de antiguo&raquo; (<a href="deuteronomy-33.es.html#v33-27">Deuteronomio 33:27</a>, ya en estas páginas), y el salmo siguiente tiene &laquo;has puesto al Altísimo por tu morada&raquo; (<a href="psalms-91.es.html#v91-9">Salmo 91:9</a>). &#9888; El estante imprime &laquo;refugio&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;morada&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['dakka'] = ('dakka', 'APLASTAMIENTO &mdash; lo molido fino, materia triturada. <span data-heb="עד דכא">&laquo;Al aplastamiento&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-90.es.html#v90-3">Salmo 90:3</a> (ya en estas páginas): &laquo;Tú haces volver al hombre al aplastamiento, y dices: Vuelvan&raquo;. &#11088; Es la respuesta al Edén, &laquo;al polvo volverás&raquo; (<a href="genesis-3.es.html#v3-19">Génesis 3:19</a>, ya en estas páginas), con el polvo molido. &#9888; El estante tiene &laquo;quebrantado&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;polvo&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;materia triturada&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['ashmurah'] = ('ashmurah', 'UNA VIGILIA &mdash; un turno de la guardia durante la noche, de <em>shamar</em>, guardar. <span data-heb="ואשמורה">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="psalms-90.es.html#v90-4">Salmo 90:4</a> (ya en estas páginas): &laquo;mil años a tus ojos son como el día de ayer cuando pasa, y una vigilia en la noche&raquo;. &#11088; Los centinelas del <a href="psalms-130.es.html#v130-6">Salmo 130:6</a> guardan la misma vigilia, y 2 Pedro da vuelta la suma (<a href="2-peter-3.es.html#v3-8">2 Pedro 3:8</a>). &#9888; El estante imprime &laquo;una de las vigilias de la noche&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;una vigilia de la noche&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;una vigilia durante la noche&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['alumenu'] = ('alumenu', 'NUESTRAS COSAS OCULTAS &mdash; de <em>alam</em>, esconder, ocultar. <span data-heb="עלמנו">La forma está en este único versículo de la Biblia hebrea</span>, <a href="psalms-90.es.html#v90-8">Salmo 90:8</a> (ya en estas páginas): &laquo;nuestras cosas ocultas a la luz de tu rostro&raquo;. &#11088; Los pecados que nadie ha visto, puestos donde Dios puede verlos. &#9888; El estante imprime &laquo;nuestros yerros&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;nuestros pecados secretos&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;nuestras cosas escondidas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;nuestros secretos&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['noam'] = ("no'am", 'FAVOR, AMABILIDAD &mdash; lo que hace dulce estar cerca de algo. <span data-heb="נעם אדני">&laquo;El favor del Señor&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-90.es.html#v90-17">Salmo 90:17</a> (ya en estas páginas), la última petición del salmo, respondida con el establecer la obra de las manos. &#9888; El estante imprime &laquo;la luz de Jehová&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;el favor del Señor&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;la agradabilidad de Jehová&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;la bendición de Jehová&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hagah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The noun <em>hegeh</em>, from the same consonants, is the sigh or murmur of <a href="psalms-90.html#v90-9">Psalm 90:9</a> (now on these pages), &lsquo;we finish our years like a sigh&rsquo;; <span data-heb="כמו הגה">&lsquo;like a sigh&rsquo; stands in this one verse</span>. The shelf prints &lsquo;a tale that is told&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a thought&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;a moan&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a whisper&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;sighing&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;a spider&rsquo; (<span class="tag t-drb">Douay</span>).',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-90.html#v90-14">Psalm 90:14</a> (now on these pages) asks for it as the morning meal: <span data-heb="שבענו בבקר חסדך">&lsquo;satisfy us in the morning with your steadfast love&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-90.html#v90-8">Psalm 90:8</a> (now on these pages) sets the hidden things &lsquo;in the light of your face&rsquo;, <em>limeor panekha</em>.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-90.html#v90-8">Psalm 90:8</a> (now on these pages) has the first word printed as written, <em>shat</em>, and as read, <em>shattah</em>, &lsquo;you set&rsquo;, with the final letter missing from the written form.',) + _t[5:]
+    if _t[0] == 'nacham':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-90.html#v90-13">Psalm 90:13</a> (now on these pages) uses the Exodus plea word for word: <span data-heb="והנחם על">&lsquo;and relent concerning&rsquo; stands in two verses</span>, this one and Moses&rsquo; plea at the golden calf (<a href="exodus-32.html#v32-12">Exodus 32:12</a>, now on these pages).',) + _t[5:]
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-90.html#v90-8">Psalm 90:8</a> (now on these pages) has God set our <em>avonot</em> &lsquo;before you&rsquo;, the same iniquities of <a href="psalms-130.html#v130-3">Psalm 130:3</a>.',) + _t[5:]
+_d = DICTIONARY_ES['hagah']
+DICTIONARY_ES['hagah'] = (_d[0], _d[1] + ' &#11088; El sustantivo <em>hegeh</em>, con las mismas consonantes, es el suspiro o murmullo del <a href="psalms-90.es.html#v90-9">Salmo 90:9</a> (ya en estas páginas), &laquo;acabamos nuestros años como un suspiro&raquo;; <span data-heb="כמו הגה">&laquo;como un suspiro&raquo; está en este único versículo</span>. El estante imprime &laquo;un pensamiento&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;un suspiro&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;un susurro&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-90.es.html#v90-14">Salmo 90:14</a> (ya en estas páginas) lo pide como la comida de la mañana: <span data-heb="שבענו בבקר חסדך">&laquo;sácianos por la mañana con tu amor leal&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['panim']
+DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-90.es.html#v90-8">Salmo 90:8</a> (ya en estas páginas) pone las cosas ocultas &laquo;a la luz de tu rostro&raquo;, <em>limeor panekha</em>.')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-90.es.html#v90-8">Salmo 90:8</a> (ya en estas páginas) tiene la primera palabra impresa como se escribió, <em>shat</em>, y como se leía, <em>shattah</em>, «has puesto», con la letra final ausente de la forma escrita.')
+_d = DICTIONARY_ES['nacham']
+DICTIONARY_ES['nacham'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-90.es.html#v90-13">Salmo 90:13</a> (ya en estas páginas) usa el ruego de Éxodo palabra por palabra: <span data-heb="והנחם על">&laquo;y siente pesar por&raquo; está en dos versículos</span>, este y el ruego de Moisés ante el becerro de oro (<a href="exodus-32.es.html#v32-12">Éxodo 32:12</a>, ya en estas páginas).')
+_d = DICTIONARY_ES['avon']
+DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-90.es.html#v90-8">Salmo 90:8</a> (ya en estas páginas) hace que Dios ponga nuestras <em>avonot</em> «delante de ti», las mismas iniquidades del <a href="psalms-130.es.html#v130-3">Salmo 130:3</a>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 90, 1), ('Deuteronomy', 33, 27), 'a dwelling place is the God of old — Moses’ last blessing and the first line of his prayer'),
+    (('Psalms', 90, 3), ('Genesis', 3, 19), 'return to dust — the verb of Eden, now said as a command'),
+    (('Psalms', 90, 4), ('2 Peter', 3, 8), 'a thousand years like a day — the psalm’s half, and the letter’s other half'),
+    (('Psalms', 90, 5), ('Isaiah', 40, 6), 'grass that passes in the morning'),
+    (('Psalms', 90, 6), ('Psalms', 103, 15), 'the days of man like grass — in the morning it blossoms'),
+    (('Psalms', 90, 10), ('Jeremiah', 25, 11), 'seventy years — a life, and a nation’s exile'),
+    (('Psalms', 90, 13), ('Exodus', 32, 12), 'return … and relent concerning — Moses’ plea at the golden calf, word for word'),
+    (('Psalms', 90, 1), ('Psalms', 91, 9), 'a dwelling place — the next psalm has the Most High as your dwelling'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms90"] = dict(era='exodus',
+    when='A prayer headed &ldquo;of Moses, the man of God&rdquo;: Jehovah is the dwelling of every generation, older than the mountains; man is turned back to crushing and the days are grass that passes by evening; our hidden things stand in the light of his face; seventy years, or eighty; a plea to number our days, and for Jehovah to return and relent, to satisfy us in the morning, and to establish the work of our hands.',
+    clock='Undated. The heading names Moses and no occasion, and the psalm names none; it is filed here, beside the other Moses texts, as a psalm the heading attributes to the wilderness years, not one the text dates. &#9888; Whether Moses wrote it is a question the Hebrew does not answer, only that the prayer is &ldquo;of&rdquo; him.')
+
+CHAPTER_ART["psalms90"] = [dict(
+    file='cole-voyage-of-life-old-age.jpg',
+    title='The Voyage of Life: Old Age', title_es='El viaje de la vida: la vejez',
+    artist='Thomas Cole', artist_es='Thomas Cole',
+    year='1842', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='A dark oil painting of a wide, still sea under a huge bank of storm cloud, with a shaft of pale golden light breaking through at the upper left. In the lower right a small gold boat carries an old man in red who looks up with his hands raised, and a white winged angel with a halo hovers over him pointing toward the light. A second tiny angel flies in the clouds in the centre, and rocks rise at the right.',
+    alt_es='Un óleo oscuro de un mar ancho y quieto bajo un enorme banco de nubes de tormenta, con un rayo de luz dorada pálida que se abre paso arriba a la izquierda. Abajo a la derecha, un pequeño bote dorado lleva a un anciano de rojo que mira hacia arriba con las manos levantadas, y un ángel blanco alado con halo flota sobre él señalando hacia la luz. Otro pequeño ángel vuela entre las nubes en el centro, y a la derecha se alzan rocas.',
+    note='Psalm 90. The last of Cole&rsquo;s four paintings of a life in a boat on a river, here at the end, where the river has become a sea and the old man is looking up. It is not an illustration of the psalm, and the painting has no Moses and no scripture in it; what it shares with the psalm is the horizon: a person near the end of the days, and a light that is still some way off.',
+    note_es='Salmo 90. El último de los cuatro cuadros de Cole de una vida en un bote sobre un río, aquí al final, donde el río se ha vuelto mar y el anciano mira hacia arriba. No es una ilustración del salmo, y el cuadro no tiene a Moisés ni escritura alguna; lo que comparte con el salmo es el horizonte: una persona cerca del final de los días, y una luz que todavía está algo lejos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Voyage_of_Life_Old_Age,_1842_(National_Gallery_of_Art).jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 61 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('peer', "pe'er", 'פְּאֵר', "pe'er", 'A HEADDRESS &mdash; an ornament worn on the head, a turban, a crown of beauty; the noun for what makes a head fine. <span data-heb="פאר תחת אפר">&lsquo;A headdress in place of ashes&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages), and the two words are the same three consonants in another order, <em>pe&rsquo;er</em> and <a href="dictionary.html#efer">efer</a>, ashes: what the mourners put on their heads is exchanged for what goes on the same place. &#11088; The bridegroom of <a href="isaiah-61.html#v61-10">verse 10</a> puts one on &lsquo;as a priest&rsquo;. &#9888; The shelf prints &lsquo;beauty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;a garland&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a crown of beauty&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a headdress&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a crown&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 3)))
+DICTIONARY.append(('chavash', 'chavash', 'חָבַשׁ', 'chavash', 'TO BIND UP &mdash; to wrap a wound or a broken limb, to saddle a donkey, to put on a headdress. <span data-heb="לחבש לנשברי לב">&lsquo;To bind up the broken in heart&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages), the line Luke 4:18 reads in Nazareth. &#11088; The next word is <em>deror</em>, liberty (<a href="dictionary.html#deror">deror</a>), and the line before it, &lsquo;to bring good news to the lowly&rsquo;, <a href="isaiah-61.html#v61-1">is in the same verse</a>. &#9888; The shelf prints &lsquo;to bind up the brokenhearted&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;to comfort the brokenhearted&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;to heal the contrite of heart&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 1)))
+DICTIONARY.append(('eilei', 'eilei hatsedek', 'אֵילֵי הַצֶּדֶק', 'eilei hatsedek', 'OAKS OF RIGHTEOUSNESS &mdash; <em>eilei</em> is a strong tree, an oak or terebinth, and the same consonants can be read as rams or mighty ones. <span data-heb="אילי הצדק">&lsquo;Oaks of righteousness&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages), and <span data-heb="מטע יהוה">&lsquo;the planting of Jehovah&rsquo; stands in this one verse</span> too. &#9888; The shelf prints &lsquo;trees of righteousness&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;oaks of righteousness&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;big trees of righteousness&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;strong and graceful oaks&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;the mighty ones of justice&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 61, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['peer'] = ("pe'er", 'UN ADORNO PARA LA CABEZA &mdash; un ornamento que se lleva en la cabeza, un turbante, una corona de belleza. <span data-heb="פאר תחת אפר">&laquo;Un adorno para la cabeza en lugar de ceniza&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas), y las dos palabras son las mismas tres consonantes en otro orden, <em>pe&rsquo;er</em> y <a href="diccionario.html#efer">efer</a>, ceniza: lo que los enlutados se ponen en la cabeza se cambia por lo que va en el mismo lugar. &#11088; El novio del <a href="isaiah-61.es.html#v61-10">versículo 10</a> se pone uno &laquo;como sacerdote&raquo;. &#9888; El estante imprime &laquo;gloria&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;una corona&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;una prenda de adorno para la cabeza&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;un adorno para la cabeza&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['chavash'] = ('chavash', 'VENDAR &mdash; envolver una herida o un miembro roto, aparejar un asno, ponerse un tocado. <span data-heb="לחבש לנשברי לב">&laquo;Vendar a los quebrantados de corazón&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas), la línea que Lucas 4:18 lee en Nazaret. &#11088; La palabra siguiente es <em>deror</em>, libertad (<a href="diccionario.html#deror">deror</a>), y la línea anterior, &laquo;llevar buenas noticias a los humildes&raquo;, <a href="isaiah-61.es.html#v61-1">está en el mismo versículo</a>. &#9888; El estante imprime &laquo;a vendar a los quebrantados de corazón&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;a sanar los corazones heridos&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;vendar a los que tienen el corazón destrozado&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['eilei'] = ('eilei hatsedek', 'ROBLES DE JUSTICIA &mdash; <em>eilei</em> es un árbol fuerte, un roble o terebinto, y las mismas consonantes pueden leerse como carneros o poderosos. <span data-heb="אילי הצדק">&laquo;Robles de justicia&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas), y <span data-heb="מטע יהוה">&laquo;el plantío de Jehová&raquo; está también en este único versículo</span>. &#9888; El estante imprime &laquo;árboles de justicia&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>) y &laquo;robles de justicia&raquo; (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'deror':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) has <span data-heb="לקרא לשבוים דרור">&lsquo;to proclaim to captives liberty&rsquo;, which stands in this one verse</span>, the line Luke 4:18 puts in Jesus&rsquo; mouth; the shelf has &lsquo;liberty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;freedom&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a release&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;liberty to captives&rsquo; (<span class="tag t-tlb">TLB</span>).',) + _t[5:]
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) is an anointing by the Spirit for speaking: <span data-heb="משח יהוה אתי">&lsquo;Jehovah has anointed me&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nacham':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) has <span data-heb="לנחם כל אבלים">&lsquo;to comfort all who mourn&rsquo;, which stands in this one verse</span>, the promise the Beatitude takes up in <a href="matthew-5.html#v5-4">Matthew 5:4</a>.',) + _t[5:]
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> (now on these pages) sets <a href="dictionary.html#peer">pe&rsquo;er</a>, a headdress, in place of <em>efer</em>, ashes: the same three consonants in another order.',) + _t[5:]
+    if _t[0] == 'anav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-1">Isaiah 61:1</a> (now on these pages) is <span data-heb="לבשר ענוים">&lsquo;to bring good news to the lowly&rsquo;, which stands in this one verse</span>; the shelf has &lsquo;the meek&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;the poor&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the suffering and afflicted&rsquo; (<span class="tag t-tlb">TLB</span>).',) + _t[5:]
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) has <span data-heb="שנת רצון">&lsquo;a year of favor&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'naqam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-2">Isaiah 61:2</a> (now on these pages) pairs it with the year: <span data-heb="יום נקם">&lsquo;a day of vengeance&rsquo; stands in four verses</span>, this one, Isaiah 34:8, Isaiah 63:4 and Proverbs 6:34.',) + _t[5:]
+    if _t[0] == 'tsemach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-61.html#v61-11">Isaiah 61:11</a> (now on these pages) uses the verb for the last image of the chapter, the earth and garden sprouting righteousness and praise; <span data-heb="תצמיח">the form <em>tatsmiach</em> stands in three verses</span>, Genesis 3:18, Isaiah 45:8 and this one.',) + _t[5:]
+_d = DICTIONARY_ES['deror']
+DICTIONARY_ES['deror'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) tiene <span data-heb="לקרא לשבוים דרור">&laquo;proclamar a los cautivos libertad&raquo;, que está en este único versículo</span>, la línea que Lucas 4:18 pone en la boca de Jesús; el estante tiene &laquo;libertad&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+_d = DICTIONARY_ES['mashiach']
+DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) es una unción por el Espíritu para hablar: <span data-heb="משח יהוה אתי">&laquo;Jehová me ha ungido&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nacham']
+DICTIONARY_ES['nacham'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) tiene <span data-heb="לנחם כל אבלים">&laquo;consolar a todos los que están de duelo&raquo;, que está en este único versículo</span>, la promesa que recoge la bienaventuranza en <a href="matthew-5.es.html#v5-4">Mateo 5:4</a>.')
+_d = DICTIONARY_ES['efer']
+DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> (ya en estas páginas) pone <a href="diccionario.html#peer">pe&rsquo;er</a>, un adorno para la cabeza, en lugar de <em>efer</em>, ceniza: las mismas tres consonantes en otro orden.')
+_d = DICTIONARY_ES['anav']
+DICTIONARY_ES['anav'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-1">Isaías 61:1</a> (ya en estas páginas) es <span data-heb="לבשר ענוים">&laquo;llevar buenas noticias a los humildes&raquo;, que está en este único versículo</span>; el estante tiene &laquo;los abatidos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;los pobres&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;los mansos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+_d = DICTIONARY_ES['ratson']
+DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) tiene <span data-heb="שנת רצון">&laquo;un año de favor&raquo;, que está en este único versículo</span>.')
+_d = DICTIONARY_ES['naqam']
+DICTIONARY_ES['naqam'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-2">Isaías 61:2</a> (ya en estas páginas) lo pone con el año: <span data-heb="יום נקם">&laquo;un día de venganza&raquo; está en cuatro versículos</span>, este, Isaías 34:8, Isaías 63:4 y Proverbios 6:34.')
+_d = DICTIONARY_ES['tsemach']
+DICTIONARY_ES['tsemach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-61.es.html#v61-11">Isaías 61:11</a> (ya en estas páginas) usa el verbo para la última imagen del capítulo, la tierra y el huerto haciendo brotar justicia y alabanza; <span data-heb="תצמיח">la forma <em>tatsmiach</em> está en tres versículos</span>, Génesis 3:18, Isaías 45:8 y este.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dektos':
+        assert '(Isaiah 61:2, not yet on these pages, where the Hebrew has' in _t[4]
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Isaiah 61:2, not yet on these pages, where the Hebrew has', '(<a href="isaiah-61.html#v61-2">Isaiah 61:2</a>, now on these pages, where the Hebrew has'),) + _t[5:]
+_d = DICTIONARY_ES['dektos']
+assert '(Isaías 61:2, todavía no en estas páginas, donde el hebreo dice' in _d[1]
+DICTIONARY_ES['dektos'] = (_d[0], _d[1].replace('(Isaías 61:2, todavía no en estas páginas, donde el hebreo dice', '(<a href="isaiah-61.es.html#v61-2">Isaías 61:2</a>, ya en estas páginas, donde el hebreo dice'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'deror':
+        assert "'to proclaim DEROR to captives' (not yet on these pages)" in _t[4]
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace("'to proclaim DEROR to captives' (not yet on these pages)", '\'to proclaim DEROR to captives\' (<a href="isaiah-61.html#v61-1">now on these pages</a>)'),) + _t[5:]
+_d = DICTIONARY_ES['deror']
+assert '«proclamar DEROR a los cautivos» (todav&iacute;a no en estas p&aacute;ginas)' in _d[1]
+DICTIONARY_ES['deror'] = (_d[0], _d[1].replace('«proclamar DEROR a los cautivos» (todav&iacute;a no en estas p&aacute;ginas)', '«proclamar DEROR a los cautivos» (<a href="isaiah-61.es.html#v61-1">ya en estas p&aacute;ginas</a>)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 61, 1), ('Luke', 4, 18), 'the reading at Nazareth — Isaiah 61:1 in Hebrew, and what the Greek changed'),
+    (('Isaiah', 61, 1), ('Matthew', 11, 5), 'good news brought to the poor — the verb of Isaiah 61:1'),
+    (('Isaiah', 61, 1), ('Leviticus', 25, 10), 'liberty proclaimed — the jubilee word, now for captives'),
+    (('Isaiah', 61, 2), ('Isaiah', 40, 1), 'comfort — the verb that opens Isaiah 40'),
+    (('Isaiah', 61, 2), ('Matthew', 5, 4), 'those who mourn will be comforted — the Beatitude on Isaiah 61:2'),
+    (('Isaiah', 61, 4), ('Jeremiah', 25, 9), 'the ruins of long ago — the ruins Jehovah made in Jeremiah, now rebuilt'),
+    (('Isaiah', 61, 6), ('Exodus', 19, 6), 'a nation of priests — Sinai’s kingdom of priests, said to the restored'),
+    (('Isaiah', 61, 8), ('Isaiah', 55, 3), 'an everlasting covenant I will cut'),
+    (('Isaiah', 61, 10), ('Revelation', 21, 2), 'a bride adorned — the new Jerusalem'),
+    (('Isaiah', 61, 11), ('Genesis', 3, 18), 'sprout — the earth that sprouted thorns now sprouts righteousness'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa61"] = dict(era='exile',
+    when='A speaker anointed by the Spirit to bring good news to the lowly, bind up the broken in heart and proclaim liberty, a year of favor and a day of vengeance, and to comfort the mourners of Zion: a headdress for ashes, oaks of righteousness, the old ruins rebuilt, strangers as shepherds, a people called priests, a double portion, an everlasting covenant, and a garment of salvation like a bridegroom&rsquo;s, with righteousness sprouting before all the nations.',
+    clock='Undated in the chapter itself. It is filed with the exile and return because the ruined cities and the mourners of Zion are the picture it works with; the chapter does not name a king, a year or an event. &#9888; Who the speaker is, the prophet or the servant, is left open by the Hebrew, and the reading at Nazareth (Luke 4:18&ndash;21) is one answer to it.')
+
+CHAPTER_ART["isa61"] = [dict(
+    file='tissot-brow-of-the-hill-nazareth.jpg',
+    title='The Brow of the Hill near Nazareth', title_es='La escarpa de la colina cerca de Nazaret',
+    artist='James Tissot', artist_es='James Tissot',
+    year='c. 1886&ndash;1894', location='Brooklyn Museum', location_es='Brooklyn Museum',
+    alt='A watercolor of a rocky hillside path crowded with robed men. A crowd streams along the ridge at the top with raised arms, a second crowd climbs the stony path in the foreground, and a single figure in a dark blue robe walks alone in the middle of the slope, between them, above a sheer rock face.',
+    alt_es='Una acuarela de un sendero rocoso de colina lleno de hombres con túnicas. Una multitud avanza por la cresta en lo alto con los brazos levantados, otra sube por el camino empedrado en primer plano, y una sola figura con túnica azul oscura camina sola en medio de la ladera, entre ellas, sobre una pared de roca vertical.',
+    note='Isaiah 61. Tissot&rsquo;s Nazareth mob, from the scene that follows the reading (Luke 4:28&ndash;30): the congregation that has just heard &ldquo;to proclaim liberty&rdquo; leads him to the edge of the hill. It is not a picture of the chapter, only of what the reading of its first two verses brought on.',
+    note_es='Isaías 61. La turba de Nazaret de Tissot, de la escena que sigue a la lectura (Lucas 4:28&ndash;30): la congregación que acaba de oír «a proclamar libertad» lo lleva hasta el borde de la colina. No es un cuadro del capítulo, solo de lo que provocó la lectura de sus dos primeros versículos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Brow_of_the_Hill_near_Nazareth_(L%27escarpement_de_Nazareth)_-_James_Tissot.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 63 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shachar', 'shachar', 'שַׁחַר', 'shachar', 'THE DAWN &mdash; first light; and the verb made from it, to seek at first light, to seek early. <span data-heb="אשחרך">&lsquo;I seek you at the dawn&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="psalms-63.html#v63-2">Psalm 63:2</a> (now on these pages) and <a href="isaiah-26.html#v26-9">Isaiah 26:9</a>, &lsquo;my spirit within me seeks you&rsquo;. &#9888; The shelf prints &lsquo;early will I seek thee&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;earnestly will I seek thee&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;earnestly I seek you&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;I keep looking for you&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;to thee do I watch at break of day&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 63, 2)))
+DICTIONARY.append(('kamah', 'kamah', 'כָּמַהּ', 'kamah', 'TO PINE, to long until the body aches. <span data-heb="כמה לך">&lsquo;Pines for you&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-63.html#v63-2">Psalm 63:2</a> (now on these pages), said of the <em>basar</em>, the flesh, as the verb before it, <em>tsame&rsquo;ah</em>, is said of the soul. &#9888; The shelf prints &lsquo;my flesh longeth for thee&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;my whole being longs for you&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;my flesh has grown faint&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;for thee my flesh, O how many ways!&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 63, 2)))
+DICTIONARY.append(('tsiyah', 'tsiyah', 'צִיָּה', 'tsiyah', 'DRYNESS &mdash; parched ground, a land with no rain. <span data-heb="ארץ ציה">&lsquo;A land of dryness&rsquo; stands in nine verses of the Hebrew Bible</span>, among them <a href="isaiah-41.html#v41-18">Isaiah 41:18</a> and <a href="jeremiah-2.html#v2-6">Jeremiah 2:6</a> (now on these pages) and Hosea 2:5 and Joel 2:20 (not yet on these pages), and <span data-heb="ציה ועיף">&lsquo;dryness and weariness&rsquo; stands in one</span>, <a href="psalms-63.html#v63-2">Psalm 63:2</a> (now on these pages). &#9888; The shelf prints &lsquo;a dry and thirsty land&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a dry and weary land&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a dry and parched land&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;a land dry and exhausted&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 63, 2)))
+DICTIONARY.append(('yatsua', 'yatsua', 'יָצוּעַ', 'yatsua', 'A BED, a couch &mdash; the place where one is laid out. <span data-heb="על יצועי">&lsquo;On my bed&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-63.html#v63-7">Psalm 63:7</a> (now on these pages): the soul remembers God there, and in the night watches murmurs of him. &#9888; The shelf prints &lsquo;upon my bed&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>), &lsquo;on my bed&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;upon my lounge&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;I lie awake at night&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 63, 7)))
+DICTIONARY.append(('shual', "shu'al", 'שׁוּעָל', "shu'al", 'A FOX, a jackal &mdash; the scavenger of the open country. <span data-heb="מנת שעלים">&lsquo;A portion for foxes&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-63.html#v63-11">Psalm 63:11</a> (now on these pages): the enemies given over to the sword become what the foxes divide; the Song of Solomon has the little foxes of 2:15 (not yet on these pages). &#9888; The shelf prints &lsquo;foxes&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;jackals&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>).', ('Psalms', 63, 11)))
+DICTIONARY.append(('tamakh', 'tamakh', 'תָּמַךְ', 'tamakh', 'TO UPHOLD, to take hold of and hold up. <span data-heb="תמכה ימינך">&lsquo;Your right hand has taken hold&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-63.html#v63-9">Psalm 63:9</a> (now on these pages), the answer to the soul that clings: the soul <em>davaq</em>, the hand <em>tamakh</em>. &#9888; The shelf prints &lsquo;upholdeth me&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-niv">NIV</span>), &lsquo;keeps fast hold&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;hath received me&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;protected by your strong right arm&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 63, 9)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shachar'] = ('shachar', 'EL ALBA &mdash; la primera luz; y el verbo hecho de ella, buscar con la primera luz, buscar temprano. <span data-heb="אשחרך">&laquo;Te busco al alba&raquo; está en dos versículos de la Biblia hebrea</span>: <a href="psalms-63.es.html#v63-2">Salmo 63:2</a> (ya en estas páginas) e <a href="isaiah-26.es.html#v26-9">Isaías 26:9</a>, &laquo;mi espíritu dentro de mí te busca&raquo;. &#9888; El estante imprime &laquo;levantaréme á ti de mañana&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;de madrugada te buscaré&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;yo te busco intensamente&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;sigo buscándote&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['kamah'] = ('kamah', 'ANHELAR, consumirse de deseo hasta que duele el cuerpo. <span data-heb="כמה לך">&laquo;Se consume por ti&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-63.es.html#v63-2">Salmo 63:2</a> (ya en estas páginas), dicho del <em>basar</em>, la carne, como el verbo anterior, <em>tsame&rsquo;ah</em>, se dice del alma. &#9888; El estante imprime &laquo;mi carne te desea&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;mi carne te anhela&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;todo mi ser te anhela&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;mi carne ha desmayado de anhelo&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tsiyah'] = ('tsiyah', 'SEQUEDAD &mdash; tierra reseca, un país sin lluvia. <span data-heb="ארץ ציה">&laquo;Tierra de sequedad&raquo; está en nueve versículos de la Biblia hebrea</span>, entre ellos <a href="isaiah-41.es.html#v41-18">Isaías 41:18</a> y <a href="jeremiah-2.es.html#v2-6">Jeremías 2:6</a> (ya en estas páginas) y Oseas 2:5 y Joel 2:20 (todavía no en estas páginas), y <span data-heb="ציה ועיף">&laquo;sequedad y cansancio&raquo; está en uno</span>, <a href="psalms-63.es.html#v63-2">Salmo 63:2</a> (ya en estas páginas). &#9888; El estante imprime &laquo;tierra de sequedad y transida&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;tierra seca y árida&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;tierra seca, sedienta&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;tierra seca y agotada&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['yatsua'] = ('yatsua', 'UN LECHO, un canapé &mdash; el lugar donde uno se tiende. <span data-heb="על יצועי">&laquo;En mi lecho&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-63.es.html#v63-7">Salmo 63:7</a> (ya en estas páginas): allí el alma se acuerda de Dios y en las vigilias de la noche murmura de él. &#9888; El estante imprime &laquo;en mi lecho&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;sobre mi canapé&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;en mi cama&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['shual'] = ('shual', 'UNA ZORRA, un chacal &mdash; el carroñero del campo abierto. <span data-heb="מנת שעלים">&laquo;Porción de zorras&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-63.es.html#v63-11">Salmo 63:11</a> (ya en estas páginas): los enemigos entregados a la espada se vuelven lo que se reparten las zorras; el Cantar de los Cantares tiene las zorras pequeñas de 2:15 (todavía no en estas páginas). &#9888; El estante imprime &laquo;zorras&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;chacales&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['tamakh'] = ('tamakh', 'SOSTENER, asir y sostener. <span data-heb="תמכה ימינך">&laquo;Tu diestra se ha asido&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="psalms-63.es.html#v63-9">Salmo 63:9</a> (ya en estas páginas), la respuesta al alma que se aferra: el alma <em>davaq</em>, la mano <em>tamakh</em>. &#9888; El estante imprime &laquo;me ha sostenido&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;me sostiene&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;me tiene firmemente asido&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;me agarra con fuerza&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-4">Psalm 63:4</a> (now on these pages) has <span data-heb="טוב חסדך מחיים">&lsquo;your steadfast love is better than life&rsquo;, which stands in this one verse</span>; <span data-heb="כי טוב חסדך">&lsquo;for your steadfast love is good&rsquo; stands in three verses</span>.',) + _t[5:]
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-2">Psalm 63:2</a> (now on these pages) has <span data-heb="צמאה לך נפשי">&lsquo;thirsts for you, my soul&rsquo;, which stands in this one verse</span>, and <a href="psalms-63.html#v63-9">Psalm 63:9</a> has the soul that clings.',) + _t[5:]
+    if _t[0] == 'hagah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-7">Psalm 63:7</a> (now on these pages) has the verb in the first person, <em>ehgeh</em>, &lsquo;I murmur&rsquo;: <span data-heb="אהגה בך">&lsquo;I murmur of you&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'ashmurah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-7">Psalm 63:7</a> (now on these pages) has the plural, <span data-heb="באשמרות">&lsquo;in the watches&rsquo;, which stands in this one verse</span>: the night guard-shifts of the sleepless.',) + _t[5:]
+    if _t[0] == 'chelev':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-6">Psalm 63:6</a> (now on these pages) has it as a picture of being filled: <span data-heb="כמו חלב ודשן">&lsquo;as with fat and richness&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'dashen':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-6">Psalm 63:6</a> (now on these pages) pairs it with <em>chelev</em>: &lsquo;as with fat and richness my soul will be satisfied&rsquo;.',) + _t[5:]
+    if _t[0] == 'ayeph':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-2">Psalm 63:2</a> (now on these pages) puts it in the land of the thirsty, <span data-heb="ציה ועיף">&lsquo;dryness and weariness&rsquo;</span>, and 2 Samuel 17:29 has David&rsquo;s people &lsquo;weary and thirsty&rsquo; in the wilderness (<a href="2-samuel-17.html#v17-29">2 Samuel 17:29</a>).',) + _t[5:]
+    if _t[0] == 'davaq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-9">Psalm 63:9</a> (now on these pages) turns the verb of Eden to God: <span data-heb="דבקה נפשי אחריך">&lsquo;my soul clings after you&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'qodesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-63.html#v63-3">Psalm 63:3</a> (now on these pages) is the place where the soul has seen God: <span data-heb="בקדש חזיתך">&lsquo;in the sanctuary I have beheld you&rsquo; stands in this one verse</span>.',) + _t[5:]
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-4">Salmo 63:4</a> (ya en estas páginas) tiene <span data-heb="טוב חסדך מחיים">&laquo;tu amor leal es mejor que la vida&raquo;, que está en este único versículo</span>; <span data-heb="כי טוב חסדך">&laquo;porque tu amor leal es bueno&raquo; está en tres versículos</span>.')
+_d = DICTIONARY_ES['nefesh']
+DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-2">Salmo 63:2</a> (ya en estas páginas) tiene <span data-heb="צמאה לך נפשי">&laquo;tiene sed de ti, mi alma&raquo;, que está en este único versículo</span>, y <a href="psalms-63.es.html#v63-9">Salmo 63:9</a> tiene el alma que se aferra.')
+_d = DICTIONARY_ES['hagah']
+DICTIONARY_ES['hagah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-7">Salmo 63:7</a> (ya en estas páginas) tiene el verbo en primera persona, <em>ehgeh</em>, &laquo;murmuro&raquo;: <span data-heb="אהגה בך">&laquo;murmuro de ti&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['ashmurah']
+DICTIONARY_ES['ashmurah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-7">Salmo 63:7</a> (ya en estas páginas) tiene el plural, <span data-heb="באשמרות">&laquo;en las vigilias&raquo;, que está en este único versículo</span>: los turnos de guardia de la noche de los que no duermen.')
+_d = DICTIONARY_ES['chelev']
+DICTIONARY_ES['chelev'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-6">Salmo 63:6</a> (ya en estas páginas) lo tiene como imagen de ser llenado: <span data-heb="כמו חלב ודשן">&laquo;como de grosura y de riqueza&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['dashen']
+DICTIONARY_ES['dashen'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-6">Salmo 63:6</a> (ya en estas páginas) lo une con <em>chelev</em>: &laquo;como de grosura y de riqueza será saciada mi alma&raquo;.')
+_d = DICTIONARY_ES['ayeph']
+DICTIONARY_ES['ayeph'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-2">Salmo 63:2</a> (ya en estas páginas) lo pone en la tierra de los sedientos, <span data-heb="ציה ועיף">&laquo;sequedad y cansancio&raquo;</span>, y 2 Samuel 17:29 tiene al pueblo de David &laquo;cansado y sediento&raquo; en el desierto (<a href="2-samuel-17.es.html#v17-29">2 Samuel 17:29</a>).')
+_d = DICTIONARY_ES['davaq']
+DICTIONARY_ES['davaq'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-9">Salmo 63:9</a> (ya en estas páginas) vuelve el verbo del Edén hacia Dios: <span data-heb="דבקה נפשי אחריך">&laquo;mi alma se aferra tras de ti&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['qodesh']
+DICTIONARY_ES['qodesh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-63.es.html#v63-3">Salmo 63:3</a> (ya en estas páginas) es el lugar donde el alma ha visto a Dios: <span data-heb="בקדש חזיתך">&laquo;en el santuario te he contemplado&raquo; está en este único versículo</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 63, 2), ('Isaiah', 26, 9), 'I seek you — the verb of the dawn, said of the soul in the night'),
+    (('Psalms', 63, 2), ('2 Samuel', 17, 29), 'weary and thirsty in the wilderness — David’s people, and David’s psalm'),
+    (('Psalms', 63, 5), ('Psalms', 119, 48), 'I will lift my palms'),
+    (('Psalms', 63, 6), ('Isaiah', 55, 2), 'fat and richness — the soul filled, the soul invited'),
+    (('Psalms', 63, 7), ('Psalms', 90, 4), 'the night watches'),
+    (('Psalms', 63, 9), ('Genesis', 2, 24), 'cling — the verb of Eden, turned toward God'),
+    (('Psalms', 63, 11), ('Jeremiah', 18, 21), 'given over to the hands of the sword'),
+    (('Psalms', 63, 1), ('1 Samuel', 23, 14), 'David in the wilderness — Ziph, one of the occasions the heading could mean'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms63"] = dict(era='monarchy',
+    when='A psalm headed &ldquo;of David, when he was in the wilderness of Judah&rdquo;: God is my God, I seek you at the dawn, my soul thirsts and my flesh pines in a land of dryness without water; in the sanctuary I have beheld your might and glory, your steadfast love is better than life; on my bed I remember you and in the night watches I murmur of you, in the shadow of your wings I sing; my soul clings after you and your right hand holds me; those who seek my soul for ruin go down to the earth and to the foxes; and the king rejoices in God.',
+    clock='Undated. The heading names David and the wilderness of Judah and no event, and David is in the wilderness more than once, under Saul and under Absalom; the psalm itself does not say which. &#9888; The verse calling someone &ldquo;the king&rdquo; (verse 12) is part of why readers have set it in David&rsquo;s kingship, and nothing in the Hebrew settles it.')
+
+CHAPTER_ART["psalms63"] = [dict(
+    file='holman-hunt-the-scapegoat.jpg',
+    title='The Scapegoat', title_es='El chivo expiatorio',
+    artist='William Holman Hunt', artist_es='William Holman Hunt',
+    year='1854&ndash;1855', location='Lady Lever Art Gallery, Port Sunlight (this version)', location_es='Lady Lever Art Gallery, Port Sunlight (esta versión)',
+    alt='A wide oil painting of a shaggy pale goat with a red band on its horns, standing and looking back over its shoulder on a flat, glistening salt shore. Behind it is a still water, a range of violet and rust mountains, a yellow-grey sunset sky with a small pale moon at the upper left, and scattered bones and dead brush at the edges.',
+    alt_es='Un óleo ancho de un chivo peludo y pálido con una banda roja en los cuernos, de pie y mirando hacia atrás sobre una orilla de sal llana y reluciente. Detrás hay un agua quieta, una cordillera de tonos violeta y óxido, un cielo de atardecer amarillo grisáceo con una pequeña luna pálida arriba a la izquierda, y huesos y arbustos secos dispersos en los bordes.',
+    note='Psalm 63. Hunt painted this on the shore of the Dead Sea, in the country east of the wilderness of Judah, and its subject is the goat of the Day of Atonement, not David. What it shares with the psalm is the ground: a salt flat, dry and bright, with bones lying in it, a land &ldquo;of dryness and weariness, without water&rdquo;.',
+    note_es='Salmo 63. Hunt pintó esto a orillas del Mar Muerto, en la tierra al este del desierto de Judá, y su tema es el chivo del Día de la Expiación, no David. Lo que comparte con el salmo es el suelo: una llanura de sal, seca y brillante, con huesos tendidos en ella, una tierra «de sequedad y de cansancio, sin agua».',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Scapegoat.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 42 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('afiq', 'afiq', 'אָפִיק', 'afiq', 'A STREAM, a watercourse &mdash; a channel with water in it, or the bed that holds it. <span data-heb="אפיקי מים">&lsquo;Streams of water&rsquo; stands in four verses of the Hebrew Bible</span>: <a href="joel-1.html#v20">Joel 1:20</a> (now on these pages), Psalm 18:16, <a href="psalms-42.html#v42-2">Psalm 42:2</a> (now on these pages) and Song of Solomon 5:12. &#11088; In Joel the streams have dried up and the beasts pant; in the psalm the deer pants for them (<a href="dictionary.html#taarog">ta&rsquo;arog</a>). &#9888; The shelf prints &lsquo;water brooks&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;streams of water&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the water streams&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;fountains of water&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, only &lsquo;water&rsquo;.', ('Psalms', 42, 2)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['afiq'] = ('afiq', 'UNA CORRIENTE, un cauce &mdash; un canal con agua, o el lecho que la contiene. <span data-heb="אפיקי מים">&laquo;Corrientes de agua&raquo; está en cuatro versículos de la Biblia hebrea</span>: <a href="joel-1.es.html#v20">Joel 1:20</a> (ya en estas páginas), Salmo 18:16, <a href="psalms-42.es.html#v42-2">Salmo 42:2</a> (ya en estas páginas) y Cantares 5:12. &#11088; En Joel las corrientes se han secado y las bestias jadean; en el salmo el ciervo jadea por ellas (<a href="diccionario.html#taarog">ta&rsquo;arog</a>). &#9888; El estante imprime &laquo;las corrientes de las aguas&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;las corrientes de agua&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- Spanish twin for the existing taarog entry
+DICTIONARY_ES['taarog'] = ("ta'arog", 'ANHELAR, jadear &mdash; un verbo raro que está solo TRES veces en la Biblia hebrea: dos en el Salmo 42:2, en una de las líneas más conocidas de la escritura, &laquo;como el ciervo JADEA por las corrientes de agua, así mi alma jadea por ti, Dios&raquo;, y una en Joel 1:20, donde son las bestias del campo las que jadean ante cauces secos. La palabra es de la garganta: el ciervo sediento y el alma sedienta hacen el mismo sonido.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'taarog':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-2">Psalm 42:2</a> (now on these pages) is the verse that gives the verb its fame, and <span data-heb="תערג">the form stands in this one verse</span>, twice; Joel 1:20 has it once, with a <em>vav</em>, of the beasts at a dry streambed (<a href="dictionary.html#afiq">afiq</a>).',) + _t[5:]
+    if _t[0] == 'el-chai':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-3">Psalm 42:3</a> (now on these pages) has the soul thirst for it: <span data-heb="צמאה נפשי לאלהים">&lsquo;my soul thirsts for God&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tehom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) has deep call to deep: <span data-heb="תהום אל תהום קורא">&lsquo;deep calls to deep&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-6">Psalm 42:6</a> (now on these pages) is the soul addressed by the psalmist, &lsquo;why are you bowed down, my soul?&rsquo;, said three times in Psalms 42&ndash;43.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-9">Psalm 42:9</a> (now on these pages) has <span data-heb="יצוה יהוה חסדו">&lsquo;Jehovah commands his steadfast love&rsquo;, which stands in this one verse</span>, by day, with his song by night.',) + _t[5:]
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-10">Psalm 42:10</a> (now on these pages) is the rock the psalmist addresses: <span data-heb="לאל סלעי">&lsquo;to God my rock&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tsinnor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) is the verse of the water-pipes: <span data-heb="צנוריך">&lsquo;your cataracts&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'gal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-42.html#v42-8">Psalm 42:8</a> (now on these pages) has <span data-heb="כל משבריך וגליך עלי עברו">&lsquo;all your breakers and your waves have passed over me&rsquo;, which stands in two verses</span>, this one and Jonah 2:4.',) + _t[5:]
+_d = DICTIONARY_ES['taarog']
+DICTIONARY_ES['taarog'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-2">Salmo 42:2</a> (ya en estas páginas) es el versículo que da al verbo su fama, y <span data-heb="תערג">la forma está en este único versículo</span>, dos veces; Joel 1:20 la tiene una vez, con <em>vav</em>, de las bestias ante un cauce seco (<a href="diccionario.html#afiq">afiq</a>).')
+_d = DICTIONARY_ES['el-chai']
+DICTIONARY_ES['el-chai'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-3">Salmo 42:3</a> (ya en estas páginas) hace que el alma tenga sed de él: <span data-heb="צמאה נפשי לאלהים">&laquo;mi alma tiene sed de Dios&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['tehom']
+DICTIONARY_ES['tehom'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) tiene a un abismo llamando a otro: <span data-heb="תהום אל תהום קורא">&laquo;un abismo llama a otro abismo&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nefesh']
+DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-6">Salmo 42:6</a> (ya en estas páginas) es el alma a la que habla el salmista, &laquo;¿por qué estás abatida, alma mía?&raquo;, dicho tres veces en los Salmos 42&ndash;43.')
+_d = DICTIONARY_ES['chesed']
+DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-9">Salmo 42:9</a> (ya en estas páginas) tiene <span data-heb="יצוה יהוה חסדו">&laquo;Jehová manda su amor leal&raquo;, que está en este único versículo</span>, de día, con su canción de noche.')
+_d = DICTIONARY_ES['sela']
+DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-10">Salmo 42:10</a> (ya en estas páginas) es la roca a la que habla el salmista: <span data-heb="לאל סלעי">&laquo;a Dios, mi roca&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['tsinnor']
+DICTIONARY_ES['tsinnor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) es el versículo de los canales: <span data-heb="צנוריך">&laquo;tus cataratas&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['gal']
+DICTIONARY_ES['gal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a> (ya en estas páginas) tiene <span data-heb="כל משבריך וגליך עלי עברו">&laquo;todas tus rompientes y tus olas han pasado sobre mí&raquo;, que está en dos versículos</span>, este y Jonás 2:4.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'el-chai':
+        assert 'and Psalms 42:3 and 84:3, the soul' in _t[4], 'el-chai'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('and Psalms 42:3 and 84:3, the soul', 'and <a href="psalms-42.html#v42-3">Psalm 42:3</a> (now on these pages) and Psalm 84:3, the soul'),) + _t[5:]
+_d = DICTIONARY_ES['el-chai']
+assert 'y los Salmos 42:3 y 84:3, el alma' in _d[1], 'el-chai'
+DICTIONARY_ES['el-chai'] = (_d[0], _d[1].replace('y los Salmos 42:3 y 84:3, el alma', 'y el <a href="psalms-42.es.html#v42-3">Salmo 42:3</a> (ya en estas páginas) y el Salmo 84:3, el alma'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsinnor':
+        assert '(Psalm 42:8, not yet on these pages)' in _t[4], 'tsinnor'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Psalm 42:8, not yet on these pages)', '(<a href="psalms-42.html#v42-8">Psalm 42:8</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['tsinnor']
+assert '(Salmo 42:8, todavía no en estas páginas)' in _d[1], 'tsinnor'
+DICTIONARY_ES['tsinnor'] = (_d[0], _d[1].replace('(Salmo 42:8, todavía no en estas páginas)', '(<a href="psalms-42.es.html#v42-8">Salmo 42:8</a>, ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gal':
+        assert '(Jonah 2:4; Psalm 42:8, neither yet on these pages)' in _t[4], 'gal'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Jonah 2:4; Psalm 42:8, neither yet on these pages)', '(Jonah 2:4, not yet on these pages; <a href="psalms-42.html#v42-8">Psalm 42:8</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['gal']
+assert '(Jonás 2:4; Salmo 42:8, ninguno todavía en estas páginas)' in _d[1], 'gal'
+DICTIONARY_ES['gal'] = (_d[0], _d[1].replace('(Jonás 2:4; Salmo 42:8, ninguno todavía en estas páginas)', '(Jonás 2:4, todavía no en estas páginas; <a href="psalms-42.es.html#v42-8">Salmo 42:8</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 42, 2), ('Joel', 1, 20), 'the verb that pants — the deer at the streams, the beasts at the dry streams'),
+    (('Psalms', 42, 3), ('Psalms', 63, 2), 'my soul thirsts — the same soul, in the same wilderness of longing'),
+    (('Psalms', 42, 4), ('Jeremiah', 2, 28), 'where is your God? — asked of the psalmist, and of the idols'),
+    (('Psalms', 42, 5), ('1 Samuel', 1, 15), 'I will pour out my soul — Hannah at Shiloh, the psalmist in memory of the festival'),
+    (('Psalms', 42, 8), ('Genesis', 1, 2), 'the deep — tehom, calling'),
+    (('Psalms', 42, 8), ('2 Samuel', 5, 8), 'tsinnor — the water-pipe word'),
+    (('Psalms', 42, 8), ('Psalms', 130, 1), 'out of the depths — a different word for deep'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms42"] = dict(era='monarchy',
+    when='A maskil of the sons of Korah: a soul that pants for God like a deer for streams of water, thirsts for the living God and asks when it will see his face; tears for bread, and the taunt &ldquo;Where is your God?&rdquo;; the memory of going to the house of God in the festival throng; a soul addressed and bidden to wait for God; remembering him from the land of Jordan and the Hermons while deep calls to deep and the waves pass over; Jehovah commands his steadfast love by day and his song is with me by night; and the question and the refrain again.',
+    clock='Undated. The heading names the sons of Korah, the temple singers, and no occasion; the speaker is far from the house of God, in the north near Jordan and Hermon, which is as much as the psalm says of where. &#9888; Psalm 43 carries the same refrain a third time and has no heading of its own, so some readers take the two as one poem.')
+
+CHAPTER_ART["psalms42"] = [dict(
+    file='landseer-monarch-of-the-glen.jpg',
+    title='The Monarch of the Glen', title_es='El monarca del valle',
+    artist='Edwin Landseer', artist_es='Edwin Landseer',
+    year='1851', location='Scottish Government Art Collection (on loan to the National Galleries of Scotland)', location_es='Colección de Arte del Gobierno Escocés (en préstamo a las Galerías Nacionales de Escocia)',
+    alt='An oil painting of a large red deer stag standing on a heathery crest with his head raised and a huge pair of antlers, in front of misty blue-grey mountains and low cloud.',
+    alt_es='Un óleo de un gran ciervo rojo de pie en una cresta de brezo con la cabeza levantada y una enorme cornamenta, frente a montañas brumosas de azul grisáceo y nubes bajas.',
+    note='Psalm 42. Landseer&rsquo;s stag is a Scottish red deer in Highland mist, not a deer in the Hebrew hills, and he is standing, not thirsting; the painting shows the animal of the first verse, <em>ayyal</em>, at his height and with no water in sight. It is here for the animal and for the mountain air of the psalm&rsquo;s Hermon.',
+    note_es='Salmo 42. El ciervo de Landseer es un ciervo rojo escocés en la niebla de las tierras altas, no un ciervo de los montes hebreos, y está de pie, no sediento; el cuadro muestra al animal del primer versículo, <em>ayyal</em>, en su plenitud y sin agua a la vista. Está aquí por el animal y por el aire de montaña del Hermón del salmo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:The_Monarch_of_the_Glen,_Edwin_Landseer,_1851.png')]
+
+
+
+# Appended to library_data.py for Ezekiel 37 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('gidim', 'gidim', 'גִּדִים', 'gidim', 'SINEWS &mdash; the tendons and cords that bind a body together. <span data-heb="גידים">The word stands in six verses of the Hebrew Bible</span>, among them Job 10:11 and <a href="ezekiel-37.html#v37-6">Ezekiel 37:6</a> (now on these pages), where they are the first thing God lays on the dry bones. &#11088; The rebuilding goes inward to outward: sinews, flesh, skin, and last the breath. &#9888; The shelf prints &lsquo;sinews&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;tendons&rsquo; (<span class="tag t-niv">NIV</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;muscles&rsquo;.', ('Ezekiel', 37, 6)))
+DICTIONARY.append(('biqah', "biq'ah", 'בִּקְעָה', "biq'ah", 'A VALLEY, a broad plain between hills &mdash; from <em>baqa</em>, to split. <span data-heb="בתוך הבקעה">&lsquo;In the middle of the valley&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-1">Ezekiel 37:1</a> (now on these pages), where the valley is full of bones. &#9888; The shelf prints &lsquo;the valley&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the valley plain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;a plain&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;a valley full of old, dry bones&rsquo;.', ('Ezekiel', 37, 1)))
+DICTIONARY.append(('raash', "ra'ash", 'רַעַשׁ', "ra'ash", 'A RATTLING, a quaking &mdash; the sound of something shaking. <span data-heb="והנה רעש">&lsquo;And behold, a rattling&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="ezekiel-37.html#v37-7">Ezekiel 37:7</a> (now on these pages), where the bones come together bone to its bone, and Jeremiah 4:24, where the mountains quake. &#9888; The shelf prints &lsquo;a shaking&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;a rattling sound&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a rattling&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;a commotion&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;a rattling noise&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Ezekiel', 37, 7)))
+DICTIONARY.append(('qever', 'qever', 'קֶבֶר', 'qever', 'A GRAVE, a burial place. <span data-heb="פתח את קברותיכם">&lsquo;I am opening your graves&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-12">Ezekiel 37:12</a> (now on these pages), and the graves are opened again in verse 13: the people say their bones are dry and their hope is lost, and God answers by opening the place they are put. &#9888; The shelf prints &lsquo;graves&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;burial places&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;sepulchres&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;graves of exile&rsquo;, which adds a word the Hebrew does not have.', ('Ezekiel', 37, 12)))
+DICTIONARY.append(('etz', 'etz', 'עֵץ', 'etz', 'WOOD, a tree, a stick. <span data-heb="קח לך עץ אחד">&lsquo;Take for yourself one stick&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-16">Ezekiel 37:16</a> (now on these pages), the first of the two pieces of wood on which the prophet writes Judah and Joseph and then joins in his hand. &#9888; The shelf prints &lsquo;stick&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;a stick of wood&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a piece of wood&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;Take a stick and carve on it&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Ezekiel', 37, 16)))
+DICTIONARY.append(('miqdash', 'miqdash', 'מִקְדָּשׁ', 'miqdash', 'A SANCTUARY &mdash; a holy place, from <em>qadash</em>, to be set apart. <span data-heb="ונתתי את מקדשי בתוכם">&lsquo;And I will set my sanctuary in their midst&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ezekiel-37.html#v37-26">Ezekiel 37:26</a> (now on these pages), and <span data-heb="מקדש את ישראל">&lsquo;who sanctifies Israel&rsquo; stands in this one verse</span>, <a href="ezekiel-37.html#v37-28">Ezekiel 37:28</a>. &#9888; The shelf prints &lsquo;my sanctuary&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), and for the <span class="tag t-tlb">TLB</span> &lsquo;my Temple&rsquo;.', ('Ezekiel', 37, 26)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['gidim'] = ('gidim', 'TENDONES &mdash; las cuerdas que atan un cuerpo. <span data-heb="גידים">La palabra está en seis versículos de la Biblia hebrea</span>, entre ellos Job 10:11 y <a href="ezekiel-37.es.html#v37-6">Ezequiel 37:6</a> (ya en estas páginas), donde es lo primero que Dios pone sobre los huesos secos. &#11088; La reconstrucción va de dentro hacia fuera: tendones, carne, piel, y al final el aliento. &#9888; El estante imprime &laquo;nervios&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;tendones&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['biqah'] = ('biqah', 'UN VALLE, una llanura ancha entre colinas &mdash; de <em>baqa</em>, partir. <span data-heb="בתוך הבקעה">&laquo;En medio del valle&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-1">Ezequiel 37:1</a> (ya en estas páginas), donde el valle está lleno de huesos. &#9888; El estante imprime &laquo;un campo&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;un valle&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la llanura&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['raash'] = ('raash', 'UN ESTRUENDO, un temblor &mdash; el sonido de algo que se sacude. <span data-heb="והנה רעש">&laquo;Y he aquí un estruendo&raquo; está en dos versículos de la Biblia hebrea</span>: <a href="ezekiel-37.es.html#v37-7">Ezequiel 37:7</a> (ya en estas páginas), donde los huesos se juntan, hueso a su hueso, y Jeremías 4:24, donde tiemblan los montes. &#9888; El estante imprime &laquo;un temblor&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;un ruido que sacudió la tierra&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;un matraqueo&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;un traqueteo intenso&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['qever'] = ('qever', 'UN SEPULCRO, un lugar de entierro. <span data-heb="פתח את קברותיכם">&laquo;Yo abro sus sepulcros&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-12">Ezequiel 37:12</a> (ya en estas páginas), y los sepulcros se abren otra vez en el versículo 13: el pueblo dice que sus huesos están secos y que su esperanza se ha perdido, y Dios responde abriendo el lugar donde los ponen. &#9888; El estante imprime &laquo;sepulcros&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;tumbas&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;sepulturas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['etz'] = ('etz', 'MADERA, un árbol, un palo. <span data-heb="קח לך עץ אחד">&laquo;Toma para ti un palo&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-16">Ezequiel 37:16</a> (ya en estas páginas), el primero de los dos trozos de madera en que el profeta escribe Judá y José y luego junta en su mano. &#9888; El estante imprime &laquo;un palo&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;una vara&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['miqdash'] = ('miqdash', 'UN SANTUARIO &mdash; un lugar santo, de <em>qadash</em>, ser apartado. <span data-heb="ונתתי את מקדשי בתוכם">&laquo;Y pondré mi santuario en medio de ellos&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="ezekiel-37.es.html#v37-26">Ezequiel 37:26</a> (ya en estas páginas), y <span data-heb="מקדש את ישראל">&laquo;el que santifica a Israel&raquo; está en este único versículo</span>, <a href="ezekiel-37.es.html#v37-28">Ezequiel 37:28</a>. &#9888; El estante imprime &laquo;mi santuario&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-5">Ezekiel 37:5&ndash;14</a> (now on these pages) is the chapter of the word: breath, wind and spirit in one noun. <span data-heb="מביא בכם רוח">&lsquo;I am bringing breath into you&rsquo; stands in this one verse</span>, <span data-heb="וחייתם">and &lsquo;and you will live&rsquo; stands in three</span>; the shelf prints &lsquo;breath&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;spirit&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;the wind&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>, in verse 9).',) + _t[5:]
+    if _t[0] == 'etsem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-7">Ezekiel 37:7</a> (now on these pages) has <span data-heb="עצם אל עצמו">&lsquo;bone to its bone&rsquo;, which stands in this one verse</span>, the bones of the valley coming together.',) + _t[5:]
+    if _t[0] == 'chayil':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-10">Ezekiel 37:10</a> (now on these pages) has <span data-heb="חיל גדול מאד מאד">&lsquo;an army, very, very great&rsquo;, which stands in this one verse</span>, the bones risen and standing.',) + _t[5:]
+    if _t[0] == 'tiqvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-11">Ezekiel 37:11</a> (now on these pages) quotes the people: <span data-heb="ואבדה תקותנו">&lsquo;and our hope is lost&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'nasi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-25">Ezekiel 37:25</a> (now on these pages) has <span data-heb="נשיא להם לעולם">&lsquo;prince to them forever&rsquo;, which stands in this one verse</span>, said of David my servant.',) + _t[5:]
+    if _t[0] == 'gillulim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-23">Ezekiel 37:23</a> (now on these pages) has <span data-heb="בגלוליהם ובשקוציהם">&lsquo;with their idols and with their detestable things&rsquo;, which stands in this one verse</span>; the <span class="tag t-nwt">NWT&nbsp;1984</span> prints &lsquo;dungy idols&rsquo;.',) + _t[5:]
+    if _t[0] == 'mishkan':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-27">Ezekiel 37:27</a> (now on these pages) has <span data-heb="והיה משכני עליהם">&lsquo;and my dwelling will be over them&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ezekiel-37.html#v37-22">Ezekiel 37:22</a> (now on these pages) has the verb written <em>yihyeh</em>, &lsquo;he will be&rsquo;, and read <em>yihyu</em>, &lsquo;they will be&rsquo;, in &lsquo;they will no more be two nations&rsquo;.',) + _t[5:]
+_d = DICTIONARY_ES['ruach']
+DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-5">Ezequiel 37:5&ndash;14</a> (ya en estas páginas) es el capítulo de la palabra: aliento, viento y espíritu en un solo sustantivo. <span data-heb="מביא בכם רוח">&laquo;Yo hago entrar aliento en ustedes&raquo; está en este único versículo</span>, <span data-heb="וחייתם">y &laquo;y vivirán&raquo; está en tres</span>; el estante imprime &laquo;espíritu&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;aliento&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;viento&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, en el versículo 9).')
+_d = DICTIONARY_ES['etsem']
+DICTIONARY_ES['etsem'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-7">Ezequiel 37:7</a> (ya en estas páginas) tiene <span data-heb="עצם אל עצמו">&laquo;hueso a su hueso&raquo;, que está en este único versículo</span>, los huesos del valle juntándose.')
+_d = DICTIONARY_ES['chayil']
+DICTIONARY_ES['chayil'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-10">Ezequiel 37:10</a> (ya en estas páginas) tiene <span data-heb="חיל גדול מאד מאד">&laquo;un ejército muy, muy grande&raquo;, que está en este único versículo</span>, los huesos levantados y de pie.')
+_d = DICTIONARY_ES['tiqvah']
+DICTIONARY_ES['tiqvah'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-11">Ezequiel 37:11</a> (ya en estas páginas) cita al pueblo: <span data-heb="ואבדה תקותנו">&laquo;y se ha perdido nuestra esperanza&raquo; está en este único versículo</span>.')
+_d = DICTIONARY_ES['nasi']
+DICTIONARY_ES['nasi'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-25">Ezequiel 37:25</a> (ya en estas páginas) tiene <span data-heb="נשיא להם לעולם">&laquo;príncipe para ellos para siempre&raquo;, que está en este único versículo</span>, dicho de David mi siervo.')
+_d = DICTIONARY_ES['gillulim']
+DICTIONARY_ES['gillulim'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-23">Ezequiel 37:23</a> (ya en estas páginas) tiene <span data-heb="בגלוליהם ובשקוציהם">&laquo;con sus ídolos y con sus cosas detestables&raquo;, que está en este único versículo</span>; la <span class="tag t-tnm">TNM&nbsp;1987</span> imprime &laquo;ídolos estercolizos&raquo;.')
+_d = DICTIONARY_ES['mishkan']
+DICTIONARY_ES['mishkan'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-27">Ezequiel 37:27</a> (ya en estas páginas) tiene <span data-heb="והיה משכני עליהם">&laquo;y mi morada estará sobre ellos&raquo;, que está en este único versículo</span>.')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="ezekiel-37.es.html#v37-22">Ezequiel 37:22</a> (ya en estas páginas) tiene el verbo escrito <em>yihyeh</em>, «será», y leído <em>yihyu</em>, «serán», en «nunca más serán dos naciones».')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emphysao':
+        assert '(Ezekiel 37, not yet on these pages)' in _t[4], 'emphysao'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Ezekiel 37, not yet on these pages)', '(<a href="ezekiel-37.html#v37-9">Ezekiel 37</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['emphysao']
+assert '(Ezequiel 37, todavía no en estas páginas)' in _d[1], 'emphysao'
+DICTIONARY_ES['emphysao'] = (_d[0], _d[1].replace('(Ezequiel 37, todavía no en estas páginas)', '(<a href="ezekiel-37.es.html#v37-9">Ezequiel 37</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Ezekiel', 37, 5), ('Genesis', 2, 7), 'God breathes into the dust and it lives — the breath, again, into the bones'),
+    (('Ezekiel', 37, 9), ('John', 20, 22), 'he breathed on them — the verb of the valley, the verb of the upper room'),
+    (('Ezekiel', 37, 10), ('Revelation', 11, 11), 'the breath of life enters them and they stand — the valley, reduced to two bodies'),
+    (('Ezekiel', 37, 16), ('1 Kings', 12, 16), 'Judah and Joseph — the two pieces of wood and the two kingdoms'),
+    (('Ezekiel', 37, 16), ('Numbers', 17, 3), 'a name written on wood — the staffs of the tribes'),
+    (('Ezekiel', 37, 22), ('2 Samuel', 7, 23), 'one nation — Israel as unlike any other nation, now one again'),
+    (('Ezekiel', 37, 23), ('Titus', 2, 14), 'they will be my people; I will cleanse them'),
+    (('Ezekiel', 37, 24), ('2 Samuel', 7, 16), 'my servant David, king — the house made sure forever'),
+    (('Ezekiel', 37, 26), ('Isaiah', 55, 3), 'an everlasting covenant'),
+    (('Ezekiel', 37, 26), ('Numbers', 25, 12), 'a covenant of peace — Phinehas, and the people'),
+    (('Ezekiel', 37, 27), ('Leviticus', 26, 11), 'my dwelling set among them'),
+    (('Ezekiel', 37, 28), ('Exodus', 31, 13), 'I am Jehovah who sanctifies'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["ezek37"] = dict(era='exile',
+    when='A vision in a valley full of dry bones: the prophet is asked whether they can live, told to prophesy to the bones and then to the breath, and they rise, an army; the bones are the whole house of Israel, who say their hope is lost, and Jehovah will open their graves and put his spirit in them; two sticks, Judah and Joseph, joined in one hand; one nation and one king, David my servant, a covenant of peace, and a sanctuary in their midst forever.',
+    clock='Undated in the chapter itself. It is placed with the exile because the people in the vision are cut off from their land and the promise is to bring them back to it; the book dates its other visions from the deportation of 597 BC, and this one carries no date. &#9888; The chapter reads the bones as the whole house of Israel, not as individuals rising, and the Hebrew says so in verse 11.')
+
+CHAPTER_ART["ezek37"] = [dict(
+    file='dore-valley-of-dry-bones.jpg',
+    title='The Vision of the Valley of Dry Bones', title_es='La visión del valle de los huesos secos',
+    artist='Gustave Doré', artist_es='Gustave Doré',
+    year='1866', location='Wood engraving for the Doré Bible', location_es='Grabado en madera para la Biblia de Doré',
+    alt='A black-and-white wood engraving of a night valley crowded with skeletons. At the top a bearded figure in a long robe stands on a cloud under a crescent moon, looking down. Below him the skeletons rise from the ground, some wrapped in cloth with arms raised, some sitting, some fallen, among scattered skulls and bones; at upper left two half-formed figures with flesh on their bodies stand or sit.',
+    alt_es='Un grabado en madera en blanco y negro de un valle nocturno lleno de esqueletos. Arriba, una figura barbada con túnica larga está de pie sobre una nube bajo una luna creciente, mirando hacia abajo. Debajo de ella los esqueletos se levantan del suelo, algunos envueltos en telas con los brazos en alto, otros sentados, otros caídos, entre cráneos y huesos dispersos; arriba a la izquierda, dos figuras a medio formar con carne en el cuerpo están de pie o sentadas.',
+    note='Ezekiel 37. Doré draws the order of verses 7 and 8 as one scene: bones joining, some already with flesh, and the prophet above them. The cloud and the moon are his, not the text&rsquo;s; the Hebrew has only the valley, and does not say it was night.',
+    note_es='Ezequiel 37. Doré dibuja el orden de los versículos 7 y 8 como una sola escena: huesos que se juntan, algunos ya con carne, y el profeta encima. La nube y la luna son suyas, no del texto; el hebreo solo tiene el valle, y no dice que fuera de noche.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:127.Ezekiel%E2%80%99s_Vision_of_the_Valley_of_Dry_Bones.jpg')]
+
+
+
+# Appended to library_data.py for Daniel 6 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('sarkhin', 'sarekhin', 'סָרְכִין', 'sarekhin', 'PRESIDENTS &mdash; the three officers set over the hundred and twenty satraps, of whom Daniel is one; a Persian loan word in the Aramaic of Daniel. <a href="daniel-6.html#v6-3">Daniel 6:3 (Hebrew numbering)</a> (now on these pages): &lsquo;and over them three presidents, of whom Daniel was one&rsquo;. &#9888; The shelf prints &lsquo;presidents&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;administrators&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;high officials&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;princes&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 6, 3)))
+DICTIONARY.append(('achashdarpan', 'achashdarpan', 'אֲחַשְׁדַּרְפְּנַיָּא', 'achashdarpenaya', 'SATRAPS &mdash; the provincial governors of the Persian empire; a Persian loan word. <a href="daniel-6.html#v6-2">Daniel 6:2 (Hebrew numbering)</a> (now on these pages) sets a hundred and twenty of them over the kingdom, and the rival officers of verses 5&ndash;8 are drawn from them and the presidents. &#9888; The shelf prints &lsquo;princes&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;satraps&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;governors&rsquo; (<span class="tag t-drb">Douay</span>, <span class="tag t-tlb">TLB</span>).', ('Daniel', 6, 2)))
+DICTIONARY.append(('gov', 'gov', 'גֹּב', 'gov', 'A DEN, a pit &mdash; the lions&rsquo; den of Daniel 6. <span data-heb="גוב אריותא">&lsquo;The den of lions&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="daniel-6.html#v6-13">Daniel 6:13 (Hebrew numbering)</a> and <a href="daniel-6.html#v6-25">Daniel 6:25 (Hebrew numbering)</a> (now on these pages), the first of them the penalty named in the interdict; the same pit is called <em>gubba</em> in verses 8, 18, 20 and 21, with the emphatic ending. &#9888; The shelf prints &lsquo;den&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;pit&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Daniel', 6, 13)))
+DICTIONARY.append(('yattira', 'yattira', 'יַתִּירָא', 'yattira', 'EXTRAORDINARY, more than usual &mdash; extra, left over. <span data-heb="רוח יתירא">&lsquo;An extraordinary spirit&rsquo; stands in one verse of the Hebrew Bible</span>, <a href="daniel-6.html#v6-4">Daniel 6:4 (Hebrew numbering)</a> (now on these pages), said of Daniel; the book has the near form in <a href="daniel-5.html#v5-12">Daniel 5:12</a> (now on these pages). &#9888; The shelf prints &lsquo;an excellent spirit&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;exceptional qualities&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;an extraordinary spirit&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;a greater spirit of God&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;great ability&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Daniel', 6, 4)))
+DICTIONARY.append(('shaparpara', 'shefarpara', 'שַׁפְרְפָרָא', 'shafarpara', 'DAWN, first light &mdash; a word that stands in one verse of the Hebrew Bible. <span data-heb="בשפרפרא">&lsquo;At dawn&rsquo; stands in this one verse</span>, <a href="daniel-6.html#v6-20">Daniel 6:20 (Hebrew numbering)</a> (now on these pages): the king gets up at first light and runs to the den. &#9888; The shelf prints &lsquo;very early in the morning&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;at the first light of dawn&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;at dawn&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;very early the next morning&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Daniel', 6, 20)))
+DICTIONARY.append(('qarts', 'qarts', 'קַרְצָא', 'qartsa', 'A PIECE, a morsel &mdash; in the idiom &lsquo;to eat the pieces of&rsquo; someone, to slander him, as a wild beast tears a body. <span data-heb="אכלו קרצוהי">&lsquo;Had eaten his pieces&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="daniel-6.html#v6-25">Daniel 6:25 (Hebrew numbering)</a> (now on these pages), said of the men who accused Daniel; the same idiom, in another form, is Daniel 3:8 (<a href="daniel-3.html#v3-8">now on these pages</a>), of the Chaldeans who accused the three Jews. &#9888; The shelf prints &lsquo;accused&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;falsely accused&rsquo; (<span class="tag t-niv">NIV</span>), and none of the seven prints the picture.', ('Daniel', 6, 25)))
+DICTIONARY.append(('izqa', 'izqa', 'עִזְקָא', 'izqa', 'A SIGNET RING &mdash; the ring that seals. <span data-heb="בעזקת רברבנוהי">&lsquo;With the signet of his nobles&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="daniel-6.html#v6-18">Daniel 6:18 (Hebrew numbering)</a> (now on these pages), where the king seals the stone on the den with his own ring and the rings of his nobles, so that nothing can be done to Daniel without both. &#9888; The shelf prints &lsquo;signet&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;signet ring&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;ring&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 6, 18)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['sarkhin'] = ('sarekhin', 'PRESIDENTES &mdash; los tres funcionarios puestos sobre los ciento veinte sátrapas, uno de los cuales es Daniel; una palabra persa tomada en el arameo de Daniel. <a href="daniel-6.es.html#v6-3">Daniel 6:3 (numeración hebrea)</a> (ya en estas páginas): &laquo;y sobre ellos tres presidentes, de los cuales Daniel era uno&raquo;. &#9888; El estante imprime &laquo;presidentes&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;gobernadores&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;administradores&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;altos funcionarios&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['achashdarpan'] = ('achashdarpan', 'SÁTRAPAS &mdash; los gobernadores de provincia del imperio persa; una palabra persa tomada. <a href="daniel-6.es.html#v6-2">Daniel 6:2 (numeración hebrea)</a> (ya en estas páginas) pone ciento veinte sobre el reino, y los funcionarios rivales de los versículos 5&ndash;8 salen de ellos y de los presidentes. &#9888; El estante imprime &laquo;gobernadores&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;sátrapas&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['gov'] = ('gov', 'UN FOSO, una fosa &mdash; el foso de los leones de Daniel 6. <span data-heb="גוב אריותא">&laquo;El foso de los leones&raquo; está en dos versículos de la Biblia hebrea</span>: <a href="daniel-6.es.html#v6-13">Daniel 6:13 (numeración hebrea)</a> y <a href="daniel-6.es.html#v6-25">Daniel 6:25 (numeración hebrea)</a> (ya en estas páginas), el primero la pena que nombra el interdicto; el mismo foso se llama <em>gubba</em> en los versículos 8, 18, 20 y 21, con la terminación enfática. &#9888; El estante imprime &laquo;foso&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['yattira'] = ('yattira', 'EXTRAORDINARIO, más de lo usual &mdash; extra, sobrante. <span data-heb="רוח יתירא">&laquo;Un espíritu extraordinario&raquo; está en un versículo de la Biblia hebrea</span>, <a href="daniel-6.es.html#v6-4">Daniel 6:4 (numeración hebrea)</a> (ya en estas páginas), dicho de Daniel; el libro tiene la forma cercana en <a href="daniel-5.es.html#v5-12">Daniel 5:12</a> (ya en estas páginas). &#9888; El estante imprime &laquo;más abundancia de espíritu&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;un espíritu superior&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;extraordinarias cualidades&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;un espíritu extraordinario&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['shaparpara'] = ('shefarpara', 'EL ALBA, la primera luz &mdash; una palabra que está en un versículo de la Biblia hebrea. <span data-heb="בשפרפרא">&laquo;Al alba&raquo; está en este único versículo</span>, <a href="daniel-6.es.html#v6-20">Daniel 6:20 (numeración hebrea)</a> (ya en estas páginas): el rey se levanta con la primera luz y corre al foso. &#9888; El estante imprime &laquo;muy de mañana&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;Tan pronto como amaneció&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;al rayar el alba&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;con el primer rayo de luz del amanecer&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['qarts'] = ('qartsa', 'UN PEDAZO, un bocado &mdash; en el modismo &laquo;comer los pedazos de&raquo; alguien, calumniarlo, como una fiera despedaza un cuerpo. <span data-heb="אכלו קרצוהי">&laquo;Habían comido sus pedazos&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="daniel-6.es.html#v6-25">Daniel 6:25 (numeración hebrea)</a> (ya en estas páginas), dicho de los hombres que acusaron a Daniel; el mismo modismo, en otra forma, es Daniel 3:8 (<a href="daniel-3.es.html#v3-8">ya en estas páginas</a>), de los caldeos que acusaron a los tres judíos. &#9888; El estante imprime &laquo;acusado&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>), y ninguna de las cinco imprime la imagen.')
+DICTIONARY_ES['izqa'] = ('izqa', 'UN ANILLO DE SELLAR &mdash; el anillo que sella. <span data-heb="בעזקת רברבנוהי">&laquo;Con el anillo de sus nobles&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="daniel-6.es.html#v6-18">Daniel 6:18 (numeración hebrea)</a> (ya en estas páginas), donde el rey sella la piedra del foso con su propio anillo y los anillos de sus nobles, de modo que nada pueda hacerse a Daniel sin los dos. &#9888; El estante imprime &laquo;anillo&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;anillo de sellar&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-6.html#v6-6">Daniel 6:6 (Hebrew numbering)</a> (now on these pages) has Daniel&rsquo;s rivals plan to find him out <span data-heb="בדת אלהה">&lsquo;in the law of his God&rsquo;, which stands in this one verse</span>, and the law that cannot be undone is <span data-heb="דת מדי ופרס">&lsquo;the law of Media and Persia&rsquo;, which stands in two verses</span>, <a href="daniel-6.html#v6-9">Daniel 6:9 (Hebrew numbering)</a> and <a href="daniel-6.html#v6-13">Daniel 6:13 (Hebrew numbering)</a>.',) + _t[5:]
+    if _t[0] == 'shezav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The Hebrew-numbered verses of Daniel 6 that carry it are <a href="daniel-6.html#v6-15">Daniel 6:15 (Hebrew numbering)</a> (the king &lsquo;to rescue him&rsquo;), <a href="daniel-6.html#v6-17">Daniel 6:17 (Hebrew numbering)</a> (<span data-heb="ישיזבנך">&lsquo;he will rescue you&rsquo;, which stands in this one verse</span>), verse 21 (&lsquo;able to rescue you from the lions?&rsquo;) and verse 28 (&lsquo;he rescues and delivers&rsquo;), all now on these pages.',) + _t[5:]
+    if _t[0] == 'el-chai':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-6.html#v6-21">Daniel 6:21 (Hebrew numbering)</a> (now on these pages) has the king call Daniel <span data-heb="עבד אלהא חיא">&lsquo;servant of the living God&rsquo;, which stands in this one verse</span>, with the Aramaic <span data-heb="אלהא חיא">&lsquo;the living God&rsquo; in two verses</span>, here and <a href="daniel-6.html#v6-27">Daniel 6:27 (Hebrew numbering)</a>.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; Daniel 6 has eight such pairs in all (<a href="daniel-6.html#v6-1">Daniel 6:1 (Hebrew numbering)</a> and verses 14, 17, 21, 23, 26, 27 and 29, now on these pages), most of them a small difference of spelling in the Aramaic.',) + _t[5:]
+DICTIONARY_ES['dat'] = ('dat', 'UNA LEY, un decreto &mdash; una palabra persa tomada, que en el arameo de Daniel es la ley de la corte y la ley de un Dios.' + ' &#11088; <a href="daniel-6.es.html#v6-6">Daniel 6:6 (numeración hebrea)</a> (ya en estas páginas) tiene a los rivales de Daniel planeando hallarlo <span data-heb="בדת אלהה">&laquo;en la ley de su Dios&raquo;, que está en este único versículo</span>, y la ley que no puede deshacerse es <span data-heb="דת מדי ופרס">&laquo;la ley de Media y de Persia&raquo;, que está en dos versículos</span>, <a href="daniel-6.es.html#v6-9">Daniel 6:9 (numeración hebrea)</a> y <a href="daniel-6.es.html#v6-13">Daniel 6:13 (numeración hebrea)</a>.')
+_d = DICTIONARY_ES['shezav']
+DICTIONARY_ES['shezav'] = (_d[0], _d[1] + ' &#11088; Los versículos de Daniel 6, en numeración hebrea, que lo llevan son <a href="daniel-6.es.html#v6-15">Daniel 6:15 (numeración hebrea)</a> (el rey, &laquo;para rescatarlo&raquo;), <a href="daniel-6.es.html#v6-17">Daniel 6:17 (numeración hebrea)</a> (<span data-heb="ישיזבנך">&laquo;él te rescatará&raquo;, que está en este único versículo</span>), el versículo 21 (&laquo;¿ha podido rescatarte de los leones?&raquo;) y el versículo 28 (&laquo;él rescata y libra&raquo;), todos ya en estas páginas.')
+_d = DICTIONARY_ES['el-chai']
+DICTIONARY_ES['el-chai'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-6.es.html#v6-21">Daniel 6:21 (numeración hebrea)</a> (ya en estas páginas) hace que el rey llame a Daniel <span data-heb="עבד אלהא חיא">&laquo;siervo del Dios vivo&raquo;, que está en este único versículo</span>, con el arameo <span data-heb="אלהא חיא">&laquo;el Dios vivo&raquo; en dos versículos</span>, este y <a href="daniel-6.es.html#v6-27">Daniel 6:27 (numeración hebrea)</a>.')
+_d = DICTIONARY_ES['ketiv-qere']
+DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; Daniel 6 tiene ocho pares así en total (<a href="daniel-6.es.html#v6-1">Daniel 6:1 (numeración hebrea)</a> y los versículos 14, 17, 21, 23, 26, 27 y 29, ya en estas páginas), la mayoría una pequeña diferencia de ortografía en el arameo.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Daniel', 6, 18), ('Matthew', 27, 66), 'a stone sealed over a place — the den of Daniel and the tomb'),
+    (('Daniel', 6, 17), ('Daniel', 3, 15), 'he will rescue you — the verb of the furnace, said by a king'),
+    (('Daniel', 6, 23), ('Daniel', 3, 28), 'sent his angel — the furnace and the den'),
+    (('Daniel', 6, 23), ('Hebrews', 11, 33), 'stopped the mouths of lions'),
+    (('Daniel', 6, 25), ('Daniel', 3, 8), 'ate the pieces — the accusers of the three and of Daniel'),
+    (('Daniel', 6, 25), ('Deuteronomy', 24, 16), 'the children thrown in with their fathers — against the law of Moses'),
+    (('Daniel', 6, 11), ('1 Kings', 8, 48), 'praying toward Jerusalem'),
+    (('Daniel', 6, 9), ('Esther', 1, 19), 'a law of the Persian court that cannot be changed'),
+    (('Daniel', 6, 28), ('Deuteronomy', 6, 22), 'signs and wonders'),
+    (('Daniel', 6, 29), ('Ezra', 1, 1), 'Cyrus the Persian — the king of the return'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["dan6"] = dict(era='exile',
+    when='Darius the Mede sets a hundred and twenty satraps and three presidents over the kingdom, with Daniel one of the three; his rivals, finding no fault, trap him in the law of his God with a thirty-day interdict that the king signs; Daniel prays three times a day toward Jerusalem and is thrown into the den of lions, the stone sealed; the king fasts, runs at dawn, and finds him unhurt, because he trusted in his God; the accusers are thrown in and killed, and the king writes to all peoples that the God of Daniel is the living God, whose kingdom is not destroyed.',
+    clock='Placed in the first year of Darius the Mede, after the fall of Babylon (about 539 BC by the book&rsquo;s own sequence); the same chapter ends with Daniel prospering under Cyrus the Persian. &#9888; Darius the Mede is not named in any other source, and who he is has been disputed; the Hebrew gives only the name and the age of sixty-two.')
+
+CHAPTER_ART["dan6"] = [dict(
+    file='rubens-daniel-in-the-lions-den.jpg',
+    title='Daniel in the Lions&rsquo; Den', title_es='Daniel en el foso de los leones',
+    artist='Peter Paul Rubens', artist_es='Peter Paul Rubens',
+    year='c. 1614&ndash;1616', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='A dark oil painting of a cave full of large lions. In the middle right a bare-chested young man with long hair sits on a red cloth with his hands clasped and his eyes raised upward. Around him lions lie, stand and snarl; one at the centre top roars; bones and a skull lie on the ground at the bottom.',
+    alt_es='Un óleo oscuro de una cueva llena de grandes leones. Al centro-derecha, un joven de torso desnudo y cabello largo está sentado sobre una tela roja con las manos juntas y los ojos alzados. A su alrededor los leones yacen, están de pie y gruñen; uno en el centro arriba ruge; abajo hay huesos y un cráneo en el suelo.',
+    note='Daniel 6. Rubens has the prayer, the lions and the cave, and the lions are looking at Daniel; he leaves out the stone and the angel of verse 23. The bones at the foot of the picture are his, and are not in the text until verse 25, where they belong to the accusers.',
+    note_es='Daniel 6. Rubens tiene la oración, los leones y la cueva, y los leones miran a Daniel; deja fuera la piedra y el ángel del versículo 23. Los huesos al pie del cuadro son suyos, y no están en el texto hasta el versículo 25, donde son de los acusadores.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions%27_Den_-_Google_Art_Project.jpg')]
+
+
+
+# Appended to library_data.py for Job 38 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('chatullah', 'chatullah', 'חֲתֻלָּה', 'chatullah', 'A SWADDLING BAND &mdash; the cloth a newborn is wrapped in. <span data-heb="ערפל חתלתו">&lsquo;Thick darkness its swaddling band&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-9">Job 38:9</a> (now on these pages), where the sea is a newborn with a cloud for its garment. &#9888; The shelf prints &lsquo;a swaddlingband&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;its swaddling band&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;wrapped it in thick darkness&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;swaddling bands&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 38, 9)))
+DICTIONARY.append(('kimah', 'kimah', 'כִּימָה', 'kimah', 'KIMAH &mdash; a star group, usually taken as the Pleiades. <span data-heb="מעדנות כימה">&lsquo;The bonds of the Pleiades&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-31">Job 38:31</a> (now on these pages), with <em>kesil</em>, Orion. &#9888; The shelf prints &lsquo;Pleiades&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>) and &lsquo;the Kimah constellation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Job', 38, 31)))
+DICTIONARY.append(('ayish', 'ayish', 'עַיִשׁ', 'ayish', 'AYISH &mdash; a star group with &lsquo;sons&rsquo;, taken as the Bear. <span data-heb="ועיש על בניה">&lsquo;And the Bear, with her sons&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-32">Job 38:32</a> (now on these pages). &#9888; The shelf prints &lsquo;Arcturus with his sons&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the Bear with its cubs&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the Ash constellation alongside its sons&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Job', 38, 32)))
+DICTIONARY.append(('mazzarot', 'mazzarot', 'מַזָּרוֹת', 'mazzarot', 'MAZZAROTH &mdash; a word for a group of stars or the circle of the zodiac, brought out &lsquo;in its season&rsquo;. <span data-heb="מזרות">The word stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-32">Job 38:32</a> (now on these pages). &#9888; The shelf prints &lsquo;Mazzaroth&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the constellations&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the Mazzaroth constellation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the day star&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 38, 32)))
+DICTIONARY.append(('tuchot', 'tuchot', 'טֻחוֹת', 'tuchot', 'THE INWARD PARTS &mdash; a rare word: <span data-heb-read="טחות">the consonants stand in two verses once the hits are read</span>, <a href="job-38.html#v38-36">Job 38:36</a> (now on these pages) and <a href="psalms-51.html#v51-8">Psalm 51:8</a>, &lsquo;you desire truth in the inward parts&rsquo;. &#9888; The shelf prints &lsquo;the inward parts&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the ibis&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the cloud layers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the heart of man&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;intuition and instinct&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Job', 38, 36)))
+DICTIONARY.append(('sekhvi', 'sekhvi', 'שֶׂכְוִי', 'sekhvi', 'SEKHVI &mdash; a word that stands in one verse of the Hebrew Bible and that nobody has been able to settle: the mind, the heart, a bird, a rooster. <span data-heb="שכוי">It stands in this one verse</span>, <a href="job-38.html#v38-36">Job 38:36</a> (now on these pages), the second of the two rare words of that verse. &#9888; The shelf prints &lsquo;the heart&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the rooster&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the sky phenomenon&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the cock&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;instinct&rsquo;.', ('Job', 38, 36)))
+DICTIONARY.append(('egel-drop', 'egel (drop)', 'אֶגֶל', 'egel', 'A DROP &mdash; a drop of dew. <span data-heb="אגלי טל">&lsquo;The drops of dew&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="job-38.html#v38-28">Job 38:28</a> (now on these pages), the dew that has a father. &#9888; The shelf prints &lsquo;drops of dew&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the dewdrops&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;dew&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Job', 38, 28)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['chatullah'] = ('chatullah', 'UN PAÑAL, la tela en que se envuelve a un recién nacido. <span data-heb="ערפל חתלתו">&laquo;Densas tinieblas por su pañal&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-9">Job 38:9</a> (ya en estas páginas), donde el mar es un recién nacido con una nube por vestido. &#9888; El estante imprime &laquo;su faja&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), &laquo;su pañal&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;lo envolví con densas tinieblas&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['kimah'] = ('kimah', 'KIMÁ &mdash; un grupo de estrellas, por lo común tomado por las Pléyades. <span data-heb="מעדנות כימה">&laquo;Los lazos de las Pléyades&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-31">Job 38:31</a> (ya en estas páginas), junto con <em>kesil</em>, Orión. &#9888; El estante imprime &laquo;Pléyades&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la constelación Kimá&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['ayish'] = ('ayish', 'AYISH &mdash; un grupo de estrellas con &laquo;hijos&raquo;, tomado por la Osa. <span data-heb="ועיש על בניה">&laquo;Y la Osa, con sus hijos&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-32">Job 38:32</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el Arcturo con sus hijos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;la Osa Mayor con sus hijos&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la Osa Mayor y la Menor&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;la constelación Ash al lado de sus hijos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['mazzarot'] = ('mazzarot', 'MAZZAROT &mdash; una palabra para un grupo de estrellas o el círculo del zodiaco, sacado &laquo;a su tiempo&raquo;. <span data-heb="מזרות">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-32">Job 38:32</a> (ya en estas páginas). &#9888; El estante imprime &laquo;los signos de los cielos&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;las constelaciones&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;la constelación Mazarot&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tuchot'] = ('tuchot', 'LO INTERIOR &mdash; una palabra rara: <span data-heb-read="טחות">las consonantes están en dos versículos una vez leídos los resultados</span>, <a href="job-38.es.html#v38-36">Job 38:36</a> (ya en estas páginas) y el <a href="psalms-51.es.html#v51-8">Salmo 51:8</a>, &laquo;tú quieres la verdad en lo íntimo&raquo;. &#9888; El estante imprime &laquo;en el interior&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;en el corazón&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), &laquo;en las capas de las nubes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;dentro de las nubes&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['sekhvi'] = ('sekhvi', 'SEKHVI &mdash; una palabra que está en un versículo de la Biblia hebrea y que nadie ha podido fijar: la mente, el corazón, un ave, un gallo. <span data-heb="שכוי">Está en este único versículo</span>, <a href="job-38.es.html#v38-36">Job 38:36</a> (ya en estas páginas), la segunda de las dos palabras raras de ese versículo. &#9888; El estante imprime &laquo;la inteligencia&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>), &laquo;el espíritu&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la mente&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;el fenómeno celeste&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;los fenómenos celestes&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['egel-drop'] = ('egel', 'UNA GOTA &mdash; una gota de rocío. <span data-heb="אגלי טל">&laquo;Las gotas del rocío&raquo; está en este único versículo de la Biblia hebrea</span>, <a href="job-38.es.html#v38-28">Job 38:28</a> (ya en estas páginas), el rocío que tiene padre. &#9888; El estante imprime &laquo;las gotas del rocío&raquo; (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;las gotas de rocío&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-1">Job 38:1</a> (now on these pages) has the storm written as one word and read as two, <em>minhas&rsquo;arah</em> and <em>min hase&rsquo;arah</em>, and <a href="job-38.html#v38-12">Job 38:12</a> has <em>yeda&rsquo;ta</em> written <em>yeda&rsquo;tah</em>.',) + _t[5:]
+    if _t[0] == 'otsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-22">Job 38:22</a> (now on these pages) has the storehouses of the snow and of the hail; <span data-heb="אוצרות ברד">&lsquo;the storehouses of hail&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-13">Job 38:13</a> (now on these pages) has <span data-heb="בכנפות הארץ">&lsquo;the edges of the earth&rsquo;, which stands in this one verse</span>, the dawn taking hold of them to shake the wicked out.',) + _t[5:]
+    if _t[0] == 'pinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-6">Job 38:6</a> (now on these pages) has <span data-heb="אבן פנתה">&lsquo;its cornerstone&rsquo;, which stands in this one verse</span>, the stone of the foundation of the earth.',) + _t[5:]
+    if _t[0] == 'shachar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-12">Job 38:12</a> (now on these pages) asks Job whether he has made the dawn know its place: <span data-heb="ידעת השחר מקמו">&lsquo;the dawn its place&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tehom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-16">Job 38:16</a> (now on these pages) has <span data-heb="חקר תהום">&lsquo;the search of the deep&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'tsalmavet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-17">Job 38:17</a> (now on these pages) has <span data-heb="שערי צלמות">&lsquo;the gates of deep darkness&rsquo;, which stands in this one verse</span>, beside the gates of death.',) + _t[5:]
+    if _t[0] == 'chuqqah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-33">Job 38:33</a> (now on these pages) has <span data-heb="חקות שמים">&lsquo;the statutes of heaven&rsquo;, which stands in two verses</span>, this one and Jeremiah 33:25.',) + _t[5:]
+    if _t[0] == 'barad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-22">Job 38:22</a> (now on these pages) has the storehouses of the hail, kept &lsquo;for a day of battle and war&rsquo; (<a href="job-38.html#v38-23">verse 23</a>).',) + _t[5:]
+    if _t[0] == 'lavi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-38.html#v38-39">Job 38:39</a> (now on these pages) has <span data-heb="ללביא טרף">&lsquo;prey for the lioness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-1">Job 38:1</a> (ya en estas páginas) tiene la tempestad escrita como una palabra y leída como dos, <em>minhas&rsquo;arah</em> y <em>min hase&rsquo;arah</em>, y <a href="job-38.es.html#v38-12">Job 38:12</a> tiene <em>yeda&rsquo;ta</em> escrito <em>yeda&rsquo;tah</em>.')
+if 'otsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['otsar']
+    DICTIONARY_ES['otsar'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-22">Job 38:22</a> (ya en estas páginas) tiene los almacenes de la nieve y del granizo; <span data-heb="אוצרות ברד">&laquo;los almacenes del granizo&raquo; está en este único versículo</span>.')
+if 'kanaf' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kanaf']
+    DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-13">Job 38:13</a> (ya en estas páginas) tiene <span data-heb="בכנפות הארץ">&laquo;los bordes de la tierra&raquo;, que está en este único versículo</span>, el alba tomándolos para sacudir de ellos a los impíos.')
+if 'pinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pinnah']
+    DICTIONARY_ES['pinnah'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-6">Job 38:6</a> (ya en estas páginas) tiene <span data-heb="אבן פנתה">&laquo;su piedra angular&raquo;, que está en este único versículo</span>, la piedra del cimiento de la tierra.')
+if 'shachar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shachar']
+    DICTIONARY_ES['shachar'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-12">Job 38:12</a> (ya en estas páginas) pregunta a Job si ha hecho conocer al alba su lugar: <span data-heb="ידעת השחר מקמו">&laquo;al alba su lugar&raquo; está en este único versículo</span>.')
+if 'tehom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehom']
+    DICTIONARY_ES['tehom'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-16">Job 38:16</a> (ya en estas páginas) tiene <span data-heb="חקר תהום">&laquo;la búsqueda del abismo&raquo;, que está en este único versículo</span>.')
+if 'tsalmavet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsalmavet']
+    DICTIONARY_ES['tsalmavet'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-17">Job 38:17</a> (ya en estas páginas) tiene <span data-heb="שערי צלמות">&laquo;las puertas de la oscuridad profunda&raquo;, que está en este único versículo</span>, junto a las puertas de la muerte.')
+if 'chuqqah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chuqqah']
+    DICTIONARY_ES['chuqqah'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-33">Job 38:33</a> (ya en estas páginas) tiene <span data-heb="חקות שמים">&laquo;los estatutos de los cielos&raquo;, que está en dos versículos</span>, este y Jeremías 33:25.')
+if 'barad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['barad']
+    DICTIONARY_ES['barad'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-22">Job 38:22</a> (ya en estas páginas) tiene los almacenes del granizo, guardados &laquo;para el día de batalla y de guerra&raquo; (<a href="job-38.es.html#v38-23">versículo 23</a>).')
+if 'lavi' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['lavi']
+    DICTIONARY_ES['lavi'] = (_d[0], _d[1] + ' &#11088; <a href="job-38.es.html#v38-39">Job 38:39</a> (ya en estas páginas) tiene <span data-heb="ללביא טרף">&laquo;presa para la leona&raquo;, que está en este único versículo</span>.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'searah':
+        assert '(Job 38:1, not yet on these pages)' in _t[4], 'searah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Job 38:1, not yet on these pages)', '(<a href="job-38.html#v38-1">Job 38:1</a>, now on these pages)'),) + _t[5:]
+_d = DICTIONARY_ES['searah']
+assert '(Job 38:1, todavía no en estas páginas)' in _d[1], 'searah'
+DICTIONARY_ES['searah'] = (_d[0], _d[1].replace('(Job 38:1, todavía no en estas páginas)', '(<a href="job-38.es.html#v38-1">Job 38:1</a>, ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Job', 38, 1), ('2 Kings', 2, 1), 'out of the storm — the wind that takes Elijah, and the voice that answers Job'),
+    (('Job', 38, 6), ('Psalms', 118, 22), 'the cornerstone — laid at the founding of the earth, rejected and made the head'),
+    (('Job', 38, 7), ('Job', 1, 6), 'the sons of God — before Jehovah in heaven, and shouting at the foundation'),
+    (('Job', 38, 7), ('Genesis', 6, 2), 'the sons of God'),
+    (('Job', 38, 8), ('Genesis', 1, 9), 'the waters gathered — the sea shut in with doors'),
+    (('Job', 38, 12), ('Psalms', 63, 2), 'the dawn — sought, and commanded'),
+    (('Job', 38, 17), ('Psalms', 23, 4), 'deep darkness — the gates of it, and the valley of it'),
+    (('Job', 38, 23), ('Exodus', 9, 23), 'hail held for a day of war — the plague of Egypt'),
+    (('Job', 38, 23), ('Joshua', 10, 11), 'hail held for a day of war — Gibeon'),
+    (('Job', 38, 33), ('Jeremiah', 31, 35), 'the statutes of the moon and stars — the order that is not set aside'),
+    (('Job', 38, 36), ('Psalms', 51, 8), 'the inward parts — wisdom, and truth'),
+    (('Job', 38, 41), ('Luke', 12, 24), 'consider the ravens — God feeds them'),
+    (('Job', 38, 41), ('1 Kings', 17, 6), 'the ravens that fed Elijah'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["job38"] = dict(era='patriarchs',
+    when='Jehovah answers Job out of the storm: who darkens counsel with words without knowledge; where was Job when the earth was founded, its cornerstone laid, and the morning stars sang; who shut the sea with doors and said thus far; has Job commanded the morning, entered the springs of the sea and the gates of death, seen the storehouses of snow and hail; has the rain a father, can he bind the Pleiades and loosen Orion, send the lightnings, tip the water-skins of heaven; and who hunts for the lioness and prepares food for the raven.',
+    clock='Undated. The book gives no date and names no king; the answer from the storm is the book&rsquo;s own turning point, after the three friends and Elihu have spoken, and it takes the questions of the earlier chapters and answers none of them directly. &#9888; The speech is addressed to Job alone, and Job&rsquo;s reply is in 40:3&ndash;5 and 42:1&ndash;6, not on this page.')
+
+CHAPTER_ART["job38"] = [dict(
+    file='blake-job-14-morning-stars.jpg',
+    title='When the Morning Stars Sang Together', title_es='Cuando cantaban juntas las estrellas de la mañana',
+    artist='William Blake', artist_es='William Blake',
+    year='1825', location='Illustrations of the Book of Job, plate 14 (Yale Center for British Art)', location_es='Ilustraciones del libro de Job, lámina 14 (Yale Center for British Art)',
+    alt='A framed black-and-white engraving. In the centre panel four winged angels stand in a row at the top with their arms raised, among stars; below them a seated bearded figure with a halo stretches out both arms, with a winged horse and a winged youth on one side and a coiled serpent and a crescent moon on the other; beneath the cloud a woman and four bearded men kneel and look up. Margins carry small scenes of the first days of creation and the captions &lsquo;When the morning Stars sang together, &amp; all the Sons of God shouted for joy&rsquo; and &lsquo;Canst thou bind the sweet influences of Pleiades or loose the bands of Orion&rsquo;.',
+    alt_es='Un grabado enmarcado en blanco y negro. En el panel central cuatro ángeles alados están en fila arriba con los brazos levantados, entre estrellas; debajo de ellos una figura barbada sentada con un halo extiende los dos brazos, con un caballo alado y un joven alado a un lado y una serpiente enroscada y una luna creciente al otro; bajo la nube una mujer y cuatro hombres barbados están arrodillados y miran hacia arriba. Los márgenes llevan pequeñas escenas de los primeros días de la creación y los textos &lsquo;When the morning Stars sang together, &amp; all the Sons of God shouted for joy&rsquo; y &lsquo;Canst thou bind the sweet influences of Pleiades or loose the bands of Orion&rsquo;.',
+    note='Job 38:7 and 38:31. Blake draws the verse he prints at the foot: the morning stars as four angels with raised arms, Jehovah above and Job, his wife and the three friends in the cave below. The margins also carry the captions of the days of creation, and the Pleiades and Orion line across the top; none of these is in the Hebrew of the verse, which says only that the stars sang and the sons of God shouted.',
+    note_es='Job 38:7 y 38:31. Blake dibuja el versículo que imprime al pie: las estrellas de la mañana como cuatro ángeles con los brazos levantados, Jehová arriba y Job, su mujer y los tres amigos en la cueva de abajo. Los márgenes llevan también los textos de los días de la creación, y las Pléyades y Orión en la línea de arriba; nada de esto está en el hebreo del versículo, que solo dice que cantaban las estrellas y gritaban los hijos de Dios.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_14,_When_the_Morning_Stars_Sang_Together_-_B1978.43.1516_-_Yale_Center_for_British_Art.jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 11 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('choter', 'choter', 'חֹטֶר', 'choter', 'A SHOOT, a rod &mdash; <span data-heb="חטר">the word stands in two verses of the Hebrew Bible</span>: the shoot out of the stump of Jesse, <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages), and the rod of pride in Proverbs 14:3 (not yet on these pages). &#9888; The shelf prints &lsquo;a rod&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;A shoot&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a Shoot&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;a twig&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('netser', 'netser', 'נֵצֶר', 'netser', 'A BRANCH, a green shoot &mdash; <span data-heb="ונצר משרשיו יפרה">&lsquo;and a branch from his roots will bear fruit&rsquo; stands in this one verse</span>, <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages). Many readers hear it behind &lsquo;Nazarene&rsquo; in <a href="matthew-2.html#v2-23">Matthew 2:23</a> (now on these pages), where Matthew names &lsquo;the prophets&rsquo; and no single verse; that is a reading, not a count. &#9888; The shelf prints &lsquo;a Branch&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;a sprout&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a flower&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('geza', 'geza', 'גֶּזַע', 'geza&lsquo;', 'A STUMP &mdash; what is left of a tree that has been cut down. <span data-heb="גזע">The word stands in three verses of the Hebrew Bible</span>: <a href="isaiah-11.html#v11-1">Isaiah 11:1</a> (now on these pages), <a href="isaiah-40.html#v40-24">Isaiah 40:24</a> (now on these pages) and Job 14:8 (not yet on these pages). &#9888; The shelf prints &lsquo;the stump of Jesse&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the stem of Jesse&rsquo; (<span class="tag t-kjv">KJV</span>) and &lsquo;the root of Jesse&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 11, 1)))
+DICTIONARY.append(('meri', 'meri', 'מְרִיא', 'meri', 'A FATLING &mdash; a fed animal, the one fattened for the feast: <em>&lsquo;the calf and the young lion and the fatling together&rsquo;</em>, <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages), and the sacrificed ox and fatling of <a href="2-samuel-6.html#v6-13">2 Samuel 6:13</a> (now on these pages). &#9888; The shelf prints &lsquo;the fatling&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the fat beast&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;the sheep&rsquo; (<span class="tag t-drb">Douay</span>), &lsquo;the yearling&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the well-fed animal&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 11, 6)))
+DICTIONARY.append(('peten', 'peten', 'פֶּתֶן', 'peten', 'A COBRA, an asp &mdash; the snake of the hole where the nursing child plays, <a href="isaiah-11.html#v11-8">Isaiah 11:8</a> (now on these pages), and of the lion and the cobra that are trodden in <a href="psalms-91.html#v91-13">Psalm 91:13</a> (now on these pages). &#9888; The shelf prints &lsquo;the asp&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;the cobra&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;poisonous snakes&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 11, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['choter'] = ('choter', 'UN RETOÑO, una vara &mdash; <span data-heb="חטר">la palabra está en dos versículos de la Biblia hebrea</span>: el retoño del tocón de Isaí, <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas), y la vara del orgullo de Proverbios 14:3 (todavía no en estas páginas). &#9888; El estante imprime &laquo;una vara&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;un retoño&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una ramita&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['netser'] = ('netser', 'UNA RAMA, un brote verde &mdash; <span data-heb="ונצר משרשיו יפרה">&laquo;y una rama de sus raíces dará fruto&raquo; está en este único versículo</span>, <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas). Muchos lectores la oyen detrás de &laquo;Nazareno&raquo; en <a href="matthew-2.es.html#v2-23">Mateo 2:23</a> (ya en estas páginas), donde Mateo nombra &laquo;los profetas&raquo; y ningún versículo en particular; eso es una lectura, no una cuenta. &#9888; El estante imprime &laquo;un vástago&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;un renuevo&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;un brote&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['geza'] = ('geza&lsquo;', 'UN TOCÓN &mdash; lo que queda de un árbol cortado. <span data-heb="גזע">La palabra está en tres versículos de la Biblia hebrea</span>: <a href="isaiah-11.es.html#v11-1">Isaías 11:1</a> (ya en estas páginas), <a href="isaiah-40.es.html#v40-24">Isaías 40:24</a> (ya en estas páginas) y Job 14:8 (todavía no en estas páginas). &#9888; El estante imprime &laquo;el tronco de Isaí&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;el tocón de Jesé&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['meri'] = ('meri', 'UN ANIMAL CEBADO &mdash; un animal alimentado, el engordado para el banquete: <em>&laquo;el becerro y el leoncillo y el animal cebado juntos&raquo;</em>, <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas), y el buey y el animal cebado sacrificados de <a href="2-samuel-6.es.html#v6-13">2 Samuel 6:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la bestia doméstica&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;el animal bien alimentado&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['peten'] = ('peten', 'UNA COBRA, un áspid &mdash; la serpiente del agujero donde juega el niño de pecho, <a href="isaiah-11.es.html#v11-8">Isaías 11:8</a> (ya en estas páginas), y del león y la cobra que se pisan en el <a href="psalms-91.es.html#v91-13">Salmo 91:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el áspid&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;la cobra&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nes':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-10">Isaiah 11:10</a> (now on these pages) has the root of Jesse standing as <em>nes</em> for the peoples, and <a href="isaiah-11.html#v11-12">Isaiah 11:12</a> has it raised for the nations.',) + _t[5:]
+if 'nes' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nes']
+    DICTIONARY_ES['nes'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-10">Isaías 11:10</a> (ya en estas páginas) tiene la raíz de Isaí en pie como <em>nes</em> para los pueblos, y <a href="isaiah-11.es.html#v11-12">Isaías 11:12</a> lo tiene alzado para las naciones.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'cherem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-15">Isaiah 11:15</a> (now on these pages) turns the verb on a sea: Jehovah will devote to destruction the tongue of the Egyptian sea.',) + _t[5:]
+if 'cherem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['cherem']
+    DICTIONARY_ES['cherem'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-15">Isaías 11:15</a> (ya en estas páginas) vuelve el verbo contra un mar: Jehová destinará a la destrucción la lengua del mar de Egipto.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-11">Isaiah 11:11</a> and <a href="isaiah-11.html#v11-16">verse 16</a> (now on these pages) have the remnant of his people that remains, with a highway out of Assyria for it.',) + _t[5:]
+if 'sheerit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sheerit']
+    DICTIONARY_ES['sheerit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-11">Isaías 11:11</a> y <a href="isaiah-11.es.html#v11-16">versículo 16</a> (ya en estas páginas) tienen el resto de su pueblo que queda, con una calzada para él desde Asiria.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kanaf':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-12">Isaiah 11:12</a> (now on these pages) has <span data-heb="מארבע כנפות הארץ">&lsquo;from the four corners of the earth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kanaf' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kanaf']
+    DICTIONARY_ES['kanaf'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-12">Isaías 11:12</a> (ya en estas páginas) tiene <span data-heb="מארבע כנפות הארץ">&laquo;desde las cuatro puntas de la tierra&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'egel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The calf of the peaceable kingdom lies down with the young lion in <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages).',) + _t[5:]
+if 'egel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['egel']
+    DICTIONARY_ES['egel'] = (_d[0], _d[1] + ' &#11088; El becerro del reino de paz se echa con el leoncillo en <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas).')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'naar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-6">Isaiah 11:6</a> (now on these pages) has <span data-heb="ונער קטן נהג בם">&lsquo;and a little boy will lead them&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'naar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['naar']
+    DICTIONARY_ES['naar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-6">Isaías 11:6</a> (ya en estas páginas) tiene <span data-heb="ונער קטן נהג בם">&laquo;y un muchachito los guiará&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'parah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-7">Isaiah 11:7</a> (now on these pages) has the cow feeding with the bear: <span data-heb="ופרה ודב תרעינה">&lsquo;the cow and the bear will graze&rsquo; stands in this one verse</span>.',) + _t[5:]
+if 'parah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['parah']
+    DICTIONARY_ES['parah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-7">Isaías 11:7</a> (ya en estas páginas) tiene la vaca paciendo con la osa: <span data-heb="ופרה ודב תרעינה">&laquo;la vaca y la osa pacerán&raquo; está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dov':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-7">Isaiah 11:7</a> (now on these pages) has the bear feeding beside the cow.',) + _t[5:]
+if 'dov' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['dov']
+    DICTIONARY_ES['dov'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-7">Isaías 11:7</a> (ya en estas páginas) tiene el oso paciendo junto a la vaca.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shevet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-4">Isaiah 11:4</a> (now on these pages) has <span data-heb="שבט פיו">&lsquo;the rod of his mouth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shevet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevet']
+    DICTIONARY_ES['shevet'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-4">Isaías 11:4</a> (ya en estas páginas) tiene <span data-heb="שבט פיו">&laquo;la vara de su boca&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'menuchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-10">Isaiah 11:10</a> (now on these pages) has <span data-heb="מנחתו כבוד">&lsquo;his resting place will be glorious&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'menuchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['menuchah']
+    DICTIONARY_ES['menuchah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-10">Isaías 11:10</a> (ya en estas páginas) tiene <span data-heb="מנחתו כבוד">&laquo;su lugar de reposo será glorioso&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsedeq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-5">Isaiah 11:5</a> (now on these pages) has righteousness as the belt of his loins.',) + _t[5:]
+if 'tsedeq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsedeq']
+    DICTIONARY_ES['tsedeq'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-5">Isaías 11:5</a> (ya en estas páginas) tiene la justicia como el cinto de sus lomos.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emunah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-5">Isaiah 11:5</a> (now on these pages) has faithfulness as the belt of his loins, beside righteousness.',) + _t[5:]
+if 'emunah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emunah']
+    DICTIONARY_ES['emunah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-5">Isaías 11:5</a> (ya en estas páginas) tiene la fidelidad como el cinto de sus lomos, junto a la justicia.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-11.html#v11-2">Isaiah 11:2</a> (now on these pages) names the spirit four times in one verse, the Spirit of Jehovah and then three pairs; <a href="isaiah-11.html#v11-4">verse 4</a> has the breath of his lips.',) + _t[5:]
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-11.es.html#v11-2">Isaías 11:2</a> (ya en estas páginas) nombra el espíritu cuatro veces en un versículo, el Espíritu de Jehová y luego tres pares; <a href="isaiah-11.es.html#v11-4">el versículo 4</a> tiene el soplo de sus labios.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mishmaat':
+        assert '(Isaiah 11:14); the other two are not yet on these pages' in _t[4], 'mishmaat'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('(Isaiah 11:14); the other two are not yet on these pages', '(<a href="isaiah-11.html#v11-14">Isaiah 11:14</a>, now on these pages); the other two are not yet on these pages'),) + _t[5:]
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 11, 1), ('1 Samuel', 16, 1), 'the stump of Jesse — the father of David, from whom the shoot comes'),
+    (('Isaiah', 11, 1), ('Matthew', 2, 23), "the branch — netser, heard behind 'Nazarene'"),
+    (('Isaiah', 11, 1), ('Jeremiah', 23, 5), 'the line of David as a sprout — a different Hebrew word, tsemach'),
+    (('Isaiah', 11, 2), ('Numbers', 11, 25), 'the Spirit resting — on the seventy elders, and on the shoot of Jesse'),
+    (('Isaiah', 11, 4), ('2 Thessalonians', 2, 8), 'the breath of his lips — and the lawless one slain with the breath of his mouth'),
+    (('Isaiah', 11, 4), ('Revelation', 19, 15), 'the rod of his mouth — the sword that comes out of it'),
+    (('Isaiah', 11, 5), ('Ephesians', 6, 14), 'the belt of righteousness and faithfulness — truth on the loins'),
+    (('Isaiah', 11, 9), ('Habakkuk', 2, 14), 'the earth full of the knowledge of Jehovah, as the waters cover the sea'),
+    (('Isaiah', 11, 10), ('Romans', 15, 12), 'the root of Jesse — cited by Paul for the nations'),
+    (('Isaiah', 11, 10), ('Revelation', 5, 5), 'the Root of David — who has conquered'),
+    (('Isaiah', 11, 15), ('Exodus', 14, 21), 'the sea divided, and a way through it'),
+    (('Isaiah', 11, 16), ('Isaiah', 40, 3), 'a highway in the wilderness for the remnant'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa11"] = dict(era='monarchy',
+    when='A shoot comes out of the stump of Jesse and the Spirit of Jehovah rests on him: wisdom, counsel, the fear of Jehovah; he judges the poor with righteousness and strikes the earth with the rod of his mouth. The wolf sojourns with the lamb and a little boy leads them; there is no harm in all the holy mountain. The root of Jesse stands as a banner for the peoples, the Lord gathers the remnant a second time from eight places, Ephraim and Judah stop being rivals, and a highway opens from Assyria.',
+    clock='Undated in the chapter. It follows the felling of the Assyrian forest at the close of Isaiah 10, while Assyria is the threat; Isaiah 6:1 dates his own vision to the year King Uzziah died. &#9888; The chapter names no king and no date for the shoot; it names Jesse, David&rsquo;s father, and the stump.')
+
+CHAPTER_ART["isa11"] = [dict(
+    file='hicks-peaceable-kingdom.jpg',
+    title='The Peaceable Kingdom', title_es='El reino apacible',
+    artist='Edward Hicks', artist_es='Edward Hicks',
+    year='c. 1834', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='An oil painting of a clearing at the edge of a river. On the right a crowd of animals sits close together: a large long-horned ox with a white face, a maned lion, a striped big cat, a grey wolf, a lamb and a spotted kid, a leopard, a black bear and a white-faced bull, with a small child in a pale shift leaning on the big cat. In the front a girl in a white dress with a red cloak and a baby in a loincloth reach toward the animals. On the far left, across a gap, a small group of men in eighteenth-century coats stand with a group of feathered Native American men beside a river.',
+    alt_es='Un óleo de un claro a la orilla de un río. A la derecha, una multitud de animales sentados muy juntos: un gran buey de cuernos largos y cara blanca, un león con melena, un gran felino rayado, un lobo gris, un cordero y un cabrito manchado, un leopardo, un oso negro y un toro de cara blanca, con un niño pequeño de camisa clara apoyado en el gran felino. Al frente, una niña de vestido blanco con una capa roja y un bebé en pañal extienden las manos hacia los animales. A la izquierda, al otro lado de un hueco, un pequeño grupo de hombres con casacas del siglo XVIII está junto a un grupo de hombres nativos americanos con plumas, a la orilla de un río.',
+    note='Isaiah 11:6&ndash;9. Hicks, a Quaker minister who painted this scene many times, draws the wolf, the lamb, the leopard, the kid, the lion and the little child of the chapter, and adds the ox and the bear and a second child; the treaty scene at the left, a gathering of settlers and Native Americans, is his own and is not in Isaiah. The Hebrew does not say whether the animals are creatures or a picture of the nations.',
+    note_es='Isaías 11:6&ndash;9. Hicks, ministro cuáquero que pintó esta escena muchas veces, dibuja el lobo, el cordero, el leopardo, el cabrito, el león y el niño pequeño del capítulo, y añade el buey y el oso y un segundo niño; la escena del tratado a la izquierda, una reunión de colonos y nativos americanos, es suya y no está en Isaías. El hebreo no dice si los animales son criaturas o una imagen de las naciones.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Edward_Hicks,_Peaceable_Kingdom,_c._1834,_NGA_59908.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 138 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('gamar', 'gamar', 'גָּמַר', 'gamar', 'TO COMPLETE, to bring to an end &mdash; <span data-heb="יגמר בעדי">&lsquo;Jehovah will complete [it] for me&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-8">Psalm 138:8</a> (now on these pages). &#9888; The shelf prints &lsquo;will perfect&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;will complete&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;will vindicate&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;will perform his work&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;will work out his plans&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;will repay&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 138, 8)))
+DICTIONARY.append(('rahav', 'rahav', 'רָהַב', 'tarhiveni', 'TO MAKE BOLD &mdash; the verb of <em>tarhiveni</em>: <span data-heb="תרהבני">&lsquo;you made me bold&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-3">Psalm 138:3</a> (now on these pages), a rare verb of pressing forward. &#9888; The shelf prints &lsquo;you greatly emboldened me&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;encourage&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;strengthenedst&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;hast increased strength&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;make me bold&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 138, 3)))
+DICTIONARY.append(('shafal', 'shafal', 'שָׁפָל', 'shafal', 'LOW, lowly &mdash; the one Jehovah sees: <span data-heb="רם יהוה ושפל יראה">&lsquo;Jehovah is high, and he sees the lowly&rsquo; stands in this one verse</span>, <a href="psalms-138.html#v138-6">Psalm 138:6</a> (now on these pages). &#9888; The shelf prints &lsquo;the lowly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the humble one&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the low&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 138, 6)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['gamar'] = ('gamar', 'COMPLETAR, llevar a su fin &mdash; <span data-heb="יגמר בעדי">&laquo;Jehová completará [esto] por mí&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-8">Salmo 138:8</a> (ya en estas páginas). &#9888; El estante imprime &laquo;cumplirá su propósito&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;completará lo que es a mi favor&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['rahav'] = ('tarhiveni', 'HACER OSADO &mdash; el verbo de <em>tarhiveni</em>: <span data-heb="תרהבני">&laquo;me hiciste osado&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-3">Salmo 138:3</a> (ya en estas páginas), un verbo raro de avanzar con empuje. &#9888; El estante imprime &laquo;me fortaleciste con vigor&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;me infundiste ánimo&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;hacerme denodado&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['shafal'] = ('shafal', 'BAJO, humilde &mdash; el que Jehová ve: <span data-heb="רם יהוה ושפל יראה">&laquo;Jehová es excelso, y ve al humilde&raquo; está en este único versículo</span>, <a href="psalms-138.es.html#v138-6">Salmo 138:6</a> (ya en estas páginas). &#9888; El estante imprime &laquo;al humilde&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has <span data-heb="על חסדך ועל אמתך">&lsquo;for your steadfast love and for your truth&rsquo;, which stands in this one verse</span>, and <a href="psalms-138.html#v138-8">verse 8</a> has <span data-heb="חסדך לעולם">&lsquo;your steadfast love is forever&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) tiene <span data-heb="על חסדך ועל אמתך">&laquo;por tu misericordia y por tu verdad&raquo;, que está en este único versículo</span>, y <a href="psalms-138.es.html#v138-8">el versículo 8</a> tiene <span data-heb="חסדך לעולם">&laquo;tu misericordia es para siempre&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) pairs it with <em>chesed</em>: &lsquo;for your steadfast love and for your truth&rsquo;.',) + _t[5:]
+if 'emet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emet']
+    DICTIONARY_ES['emet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) lo empareja con <em>chesed</em>: &laquo;por tu misericordia y por tu verdad&raquo;.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'raphah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-8">Psalm 138:8</a> (now on these pages) has <span data-heb="מעשי ידיך אל תרף">&lsquo;do not let go of the works of your hands&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'raphah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['raphah']
+    DICTIONARY_ES['raphah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-8">Salmo 138:8</a> (ya en estas páginas) tiene <span data-heb="מעשי ידיך אל תרף">&laquo;no sueltes las obras de tus manos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-7">Psalm 138:7</a> (now on these pages) has <span data-heb="אלך בקרב צרה">&lsquo;if I walk in the midst of trouble&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tsarah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsarah']
+    DICTIONARY_ES['tsarah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-7">Salmo 138:7</a> (ya en estas páginas) tiene <span data-heb="אלך בקרב צרה">&laquo;si ando en medio de la angustia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hekhal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has <span data-heb="אשתחוה אל היכל קדשך">&lsquo;I will bow down toward your holy temple&rsquo;, which stands in two verses</span>, here and Psalm 5:8 (not yet on these pages).',) + _t[5:]
+if 'hekhal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hekhal']
+    DICTIONARY_ES['hekhal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) tiene <span data-heb="אשתחוה אל היכל קדשך">&laquo;me postraré hacia tu santo templo&raquo;, que está en dos versículos</span>, este y Salmo 5:8 (todavía no en estas páginas).')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yadah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-1">Psalm 138:1</a> and <a href="psalms-138.html#v138-4">verse 4</a> (now on these pages) have the verb twice: the psalmist gives thanks in front of gods, and the kings of the earth give thanks when they hear.',) + _t[5:]
+if 'yadah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yadah']
+    DICTIONARY_ES['yadah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-1">Salmo 138:1</a> y <a href="psalms-138.es.html#v138-4">el versículo 4</a> (ya en estas páginas) tienen el verbo dos veces: el salmista da gracias delante de los dioses, y los reyes de la tierra dan gracias cuando oyen.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hishtachavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-2">Psalm 138:2</a> (now on these pages) has it toward the holy temple.',) + _t[5:]
+if 'hishtachavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hishtachavah']
+    DICTIONARY_ES['hishtachavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-2">Salmo 138:2</a> (ya en estas páginas) lo tiene hacia el santo templo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'af':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-138.html#v138-7">Psalm 138:7</a> (now on these pages) has <em>al af oyevai</em>, &lsquo;against the anger of my enemies&rsquo;.',) + _t[5:]
+if 'af' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['af']
+    DICTIONARY_ES['af'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-138.es.html#v138-7">Salmo 138:7</a> (ya en estas páginas) tiene <em>al af oyevai</em>, &laquo;contra la ira de mis enemigos&raquo;.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 138, 1), ('Psalms', 119, 46), 'in front of — gods here, kings there'),
+    (('Psalms', 138, 1), ('Psalms', 119, 10), 'with all my heart'),
+    (('Psalms', 138, 2), ('1 Kings', 8, 30), 'prayer toward the house'),
+    (('Psalms', 138, 2), ('Daniel', 6, 11), 'bowing toward Jerusalem'),
+    (('Psalms', 138, 2), ('Exodus', 34, 6), 'steadfast love and truth'),
+    (('Psalms', 138, 5), ('Psalms', 103, 7), 'the ways of Jehovah'),
+    (('Psalms', 138, 6), ('Proverbs', 3, 34), 'the high who sees the lowly'),
+    (('Psalms', 138, 6), ('James', 4, 6), 'the humble'),
+    (('Psalms', 138, 7), ('Psalms', 23, 4), 'walking in the midst of trouble'),
+    (('Psalms', 138, 7), ('Exodus', 15, 6), 'your right hand'),
+    (('Psalms', 138, 8), ('Psalms', 118, 1), 'his steadfast love is forever'),
+    (('Psalms', 138, 8), ('Psalms', 8, 7), 'the works of your hands'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms138"] = dict(era='monarchy',
+    when='A psalm headed &ldquo;of David&rdquo;: thanks with all the heart in front of gods, a bow toward the holy temple for steadfast love and truth, the word magnified above the name; the day of calling answered with boldness; the kings of the earth giving thanks; the high Jehovah who sees the lowly; and, in the midst of trouble, a hand stretched out, a right hand that saves, and a prayer not to be let go of the works of his hands.',
+    clock='Undated. The heading names David and nothing else: no occasion, no king, no battle. &#9888; The psalm speaks of a holy temple (<em>hekhal</em>), which the heading does not place in time, so this page sets it among the monarchy by the name of David and says no more.')
+
+CHAPTER_ART["psalms138"] = [dict(
+    file='paris-psalter-david-composing.jpg',
+    title='David Composing the Psalms (Paris Psalter, folio 1v)', title_es='David componiendo los salmos (Salterio de París, folio 1v)',
+    artist='Byzantine illuminator, Constantinople', artist_es='Iluminador bizantino, Constantinopla',
+    year='c. 960', location='Bibliothèque nationale de France, MS gr. 139', location_es='Biblioteca Nacional de Francia, MS gr. 139',
+    alt='A framed Byzantine miniature in blue, gold and red. In the centre a young man in a white tunic and red cloak sits on a rock playing a small box-like lyre, with a woman in a red headband and blue skirt seated beside him with a hand on his shoulder. Around them sheep, goats and a brown dog graze or sit; at the lower right a reclining man in a green cloth with a leaf crown leans on a rock, and at the upper right a woman looks out from behind a column wrapped with a red ribbon. Greek letters mark the figures, and a blue city sits at the upper left.',
+    alt_es='Una miniatura bizantina enmarcada en azul, oro y rojo. En el centro un joven con túnica blanca y manto rojo está sentado en una roca tocando una pequeña lira en forma de caja, con una mujer de cinta roja en el cabello y falda azul sentada a su lado con una mano en su hombro. A su alrededor ovejas, cabras y un perro pardo pacen o están sentados; abajo a la derecha un hombre reclinado con un paño verde y corona de hojas se apoya en una roca, y arriba a la derecha una mujer asoma tras una columna envuelta con una cinta roja. Letras griegas marcan las figuras y una ciudad azul aparece arriba a la izquierda.',
+    note='The whole psalter heads with David, and this page is its frontispiece: a shepherd-poet with a lyre, the allegorical figure of Melody at his shoulder, Echo behind the column, and the mountain of Bethlehem as the reclining figure at the lower right. The Hebrew of Psalm 138 gives the heading &ldquo;of David&rdquo; and no scene; the miniature is a tenth-century picture of the idea of David singing, not of this psalm.',
+    note_es='El salterio entero empieza con David, y esta página es su frontispicio: un pastor-poeta con una lira, la figura alegórica de la Melodía a su hombro, Eco tras la columna, y el monte de Belén como la figura reclinada abajo a la derecha. El hebreo del Salmo 138 da el encabezado &laquo;de David&raquo; y ninguna escena; la miniatura es una imagen del siglo X de la idea de David cantando, no de este salmo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Psautier_de_Paris,_MSS._gr._139,_fol._1v.jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 58 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('agmon', 'agmon', 'אַגְמוֹן', 'agmon', 'A RUSH, a reed &mdash; the plant that bends: <span data-heb="כאגמן ראשו">&lsquo;like a rush his head&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages), the bowed head of a fast. &#9888; The shelf prints &lsquo;a bulrush&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a reed&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a rush&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;like a circle&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 5)))
+DICTIONARY.append(('chartsubbot', 'chartsubbot', 'חַרְצֻבּוֹת', 'chartsubbot', 'BONDS, shackles &mdash; a rare word: <span data-heb="חרצבות">it stands in two verses of the Hebrew Bible</span>, <span data-heb="פתח חרצבות רשע">&lsquo;to loosen the bonds of wickedness&rsquo;, which stands in this one verse</span>, <a href="isaiah-58.html#v58-6">Isaiah 58:6</a> (now on these pages), and Psalm 73:4 (not yet on these pages). &#9888; The shelf prints &lsquo;bands&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;chains&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;fetters&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 58, 6)))
+DICTIONARY.append(('ratsuts', 'ratsuts', 'רָצוּץ', 'retsutsim', 'CRUSHED &mdash; the broken, the oppressed: <span data-heb="שלח רצוצים חפשים">&lsquo;to send the crushed away free&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-6">Isaiah 58:6</a> (now on these pages), the line that <a href="luke-4.html#v4-18">Luke 4:18</a> (now on these pages) takes from the Greek of this verse. &#9888; The shelf prints &lsquo;the oppressed&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;the crushed ones&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;them that are broken&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 6)))
+DICTIONARY.append(('tsachtsachot', 'tsachtsachot', 'צַחְצָחוֹת', 'tsachtsachot', 'PARCHED PLACES &mdash; a word that <span data-heb="בצחצחות">stands in this one verse</span>: <span data-heb="בצחצחות נפשך">&lsquo;satisfy your soul in parched places&rsquo;</span>, <a href="isaiah-58.html#v58-11">Isaiah 58:11</a> (now on these pages). &#9888; The shelf prints &lsquo;drought&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a sun-scorched land&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a scorched land&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, reading it as bright, &lsquo;brightness&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 58, 11)))
+DICTIONARY.append(('kazav', 'kazav', 'כָּזַב', 'yekhazzevu', 'TO LIE, to fail &mdash; the verb of a spring that deceives: <span data-heb="אשר לא יכזבו מימיו">&lsquo;whose waters do not lie&rsquo; stands in this one verse</span>, <a href="isaiah-58.html#v58-11">Isaiah 58:11</a> (now on these pages). &#9888; The shelf prints &lsquo;whose waters fail not&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;whose waters never fail&rsquo; (<span class="tag t-niv">NIV</span>) and, literally, &lsquo;the waters of which do not lie&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Isaiah', 58, 11)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['agmon'] = ('agmon', 'UN JUNCO, una caña &mdash; la planta que se dobla: <span data-heb="כאגמן ראשו">&laquo;como junco su cabeza&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas), la cabeza inclinada de un ayuno. &#9888; El estante imprime &laquo;como junco&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chartsubbot'] = ('chartsubbot', 'LIGADURAS, grilletes &mdash; una palabra rara: <span data-heb="חרצבות">está en dos versículos de la Biblia hebrea</span>, <span data-heb="פתח חרצבות רשע">&laquo;desatar las ligaduras de la maldad&raquo;, que está en este único versículo</span>, <a href="isaiah-58.es.html#v58-6">Isaías 58:6</a> (ya en estas páginas), y el Salmo 73:4 (todavía no en estas páginas). &#9888; El estante imprime &laquo;ligaduras&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;cadenas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;grilletes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['ratsuts'] = ('retsutsim', 'APLASTADO, quebrantado &mdash; el roto, el oprimido: <span data-heb="שלח רצוצים חפשים">&laquo;enviar libres a los quebrantados&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-6">Isaías 58:6</a> (ya en estas páginas), la línea que <a href="luke-4.es.html#v4-18">Lucas 4:18</a> (ya en estas páginas) toma del griego de este versículo. &#9888; El estante imprime &laquo;los quebrantados&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;los oprimidos&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;los aplastados&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['tsachtsachot'] = ('tsachtsachot', 'LUGARES RESECOS &mdash; una palabra que <span data-heb="בצחצחות">está en este único versículo</span>: <span data-heb="בצחצחות נפשך">&laquo;saciará tu alma en lugares resecos&raquo;</span>, <a href="isaiah-58.es.html#v58-11">Isaías 58:11</a> (ya en estas páginas). &#9888; El estante imprime &laquo;las sequías&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;tierras resecas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una tierra abrasada&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kazav'] = ('yekhazzevu', 'MENTIR, fallar &mdash; el verbo de un manantial que engaña: <span data-heb="אשר לא יכזבו מימיו">&laquo;cuyas aguas no mienten&raquo; está en este único versículo</span>, <a href="isaiah-58.es.html#v58-11">Isaías 58:11</a> (ya en estas páginas). &#9888; El estante imprime &laquo;cuyas aguas nunca faltan&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;cuyas aguas no se agotan&raquo; (<span class="tag t-nvi">NVI</span>) y, literalmente, &laquo;cuyas aguas no mienten&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shofar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-1">Isaiah 58:1</a> (now on these pages) has the voice raised like a ram&rsquo;s horn: <span data-heb="כשופר הרם קולך">&lsquo;raise your voice like a ram&rsquo;s horn&rsquo; stands in this one verse</span>.',) + _t[5:]
+if 'shofar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shofar']
+    DICTIONARY_ES['shofar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-1">Isaías 58:1</a> (ya en estas páginas) tiene la voz alzada como un cuerno de carnero: <span data-heb="כשופר הרם קולך">&laquo;alza tu voz como un cuerno de carnero&raquo; está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-2">Isaiah 58:2</a>, <a href="isaiah-58.html#v58-3">verse 3</a> and <a href="isaiah-58.html#v58-13">verse 13</a> (now on these pages) carry the root as sincere delight and as self-interest.',) + _t[5:]
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-2">Isaías 58:2</a>, <a href="isaiah-58.es.html#v58-3">el versículo 3</a> y <a href="isaiah-58.es.html#v58-13">el versículo 13</a> (ya en estas páginas) llevan la raíz como deleite sincero y como interés propio.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a>, <a href="isaiah-58.html#v58-5">verse 5</a> and <a href="isaiah-58.html#v58-6">verse 6</a> (now on these pages) are the chapter of the fast: &lsquo;is this the fast I choose?&rsquo;.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a>, <a href="isaiah-58.es.html#v58-5">el versículo 5</a> y <a href="isaiah-58.es.html#v58-6">el versículo 6</a> (ya en estas páginas) son el capítulo del ayuno: &laquo;¿es este el ayuno que yo escojo?&raquo;.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a> (now on these pages) has <span data-heb="ענינו נפשנו">&lsquo;we afflicted our soul&rsquo;, which stands in this one verse</span>, and <a href="isaiah-58.html#v58-5">verse 5</a> the day for a man to afflict his soul.',) + _t[5:]
+if 'anah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anah']
+    DICTIONARY_ES['anah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a> (ya en estas páginas) tiene <span data-heb="ענינו נפשנו">&laquo;afligimos nuestra alma&raquo;, que está en este único versículo</span>, y <a href="isaiah-58.es.html#v58-5">el versículo 5</a> el día para que el hombre aflija su alma.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'noges':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-3">Isaiah 58:3</a> (now on these pages) has the verb of the taskmasters turned on the fasters: <em>tigghesu</em>, &lsquo;you drive&rsquo; your workers.',) + _t[5:]
+if 'noges' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['noges']
+    DICTIONARY_ES['noges'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-3">Isaías 58:3</a> (ya en estas páginas) tiene el verbo de los capataces vuelto contra los que ayunan: <em>tigghesu</em>, «apremiáis» a vuestros trabajadores.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'perets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-12">Isaiah 58:12</a> (now on these pages) has <span data-heb="גדר פרץ">&lsquo;the repairer of the breach&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'perets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['perets']
+    DICTIONARY_ES['perets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-12">Isaías 58:12</a> (ya en estas páginas) tiene <span data-heb="גדר פרץ">&laquo;el reparador de la brecha&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-14">Isaiah 58:14</a> (now on these pages) has the high places written <em>bamoti</em> and read <em>bamatei</em>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-14">Isaías 58:14</a> (ya en estas páginas) tiene las alturas escritas <em>bamoti</em> y leídas <em>bamatei</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hineni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-9">Isaiah 58:9</a> (now on these pages) has it in the mouth of Jehovah: &lsquo;Here I am&rsquo;, in answer to a call.',) + _t[5:]
+if 'hineni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hineni']
+    DICTIONARY_ES['hineni'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-9">Isaías 58:9</a> (ya en estas páginas) lo tiene en boca de Jehová: «Aquí estoy», en respuesta a un clamor.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaved':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has the holy day of Jehovah &lsquo;honored&rsquo; and the verb &lsquo;honor it&rsquo;.',) + _t[5:]
+if 'kaved' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaved']
+    DICTIONARY_ES['kaved'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene el día santo de Jehová «honrado» y el verbo «lo honras».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages) has <span data-heb="ושק ואפר יציע">&lsquo;sackcloth and ashes he spreads&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas) tiene <span data-heb="ושק ואפר יציע">&laquo;cilicio y ceniza tiende&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> (now on these pages) pairs it with sackcloth for the bowed head of a fast.',) + _t[5:]
+if 'efer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efer']
+    DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> (ya en estas páginas) lo empareja con el cilicio para la cabeza inclinada de un ayuno.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shachar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-8">Isaiah 58:8</a> (now on these pages) has <span data-heb="יבקע כשחר אורך">&lsquo;your light will break out like the dawn&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shachar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shachar']
+    DICTIONARY_ES['shachar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-8">Isaías 58:8</a> (ya en estas páginas) tiene <span data-heb="יבקע כשחר אורך">&laquo;tu luz brotará como el alba&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anog':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has <span data-heb="וקראת לשבת ענג">&lsquo;and call the sabbath a delight&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'anog' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anog']
+    DICTIONARY_ES['anog'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene <span data-heb="וקראת לשבת ענג">&laquo;y llamas al sábado delicia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nefesh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-10">Isaiah 58:10</a> (now on these pages) has the self given to the hungry: <span data-heb="ותפק לרעב נפשך">&lsquo;and you pour out your soul for the hungry&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nefesh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nefesh']
+    DICTIONARY_ES['nefesh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-10">Isaías 58:10</a> (ya en estas páginas) tiene el yo dado al hambriento: <span data-heb="ותפק לרעב נפשך">&laquo;y derramas tu alma por el hambriento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shabbat-noun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-58.html#v58-13">Isaiah 58:13</a> (now on these pages) has the sabbath turned from the foot&rsquo;s own pleasure and called a delight.',) + _t[5:]
+if 'shabbat-noun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shabbat-noun']
+    DICTIONARY_ES['shabbat-noun'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-58.es.html#v58-13">Isaías 58:13</a> (ya en estas páginas) tiene el sábado apartado del gusto propio del pie y llamado delicia.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'inuy-nefesh':
+        assert 'at Isaiah 58:3, 5 and Psalm 35:13 (neither yet on these pages)' in _t[4], 'inuy-nefesh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('at Isaiah 58:3, 5 and Psalm 35:13 (neither yet on these pages)', 'at <a href="isaiah-58.html#v58-3">Isaiah 58:3</a>, <a href="isaiah-58.html#v58-5">5</a> (now on these pages) and Psalm 35:13 (not yet on these pages)'),) + _t[5:]
+if 'inuy-nefesh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['inuy-nefesh']
+    assert 'en Isa&iacute;as 58:3, 5 y Salmo 35:13 (ninguno todav&iacute;a en estas p&aacute;ginas)' in _d[1], 'inuy-nefesh'
+    DICTIONARY_ES['inuy-nefesh'] = (_d[0], _d[1].replace('en Isa&iacute;as 58:3, 5 y Salmo 35:13 (ninguno todav&iacute;a en estas p&aacute;ginas)', 'en <a href="isaiah-58.es.html#v58-3">Isa&iacute;as 58:3</a>, <a href="isaiah-58.es.html#v58-5">5</a> (ya en estas p&aacute;ginas) y Salmo 35:13 (todav&iacute;a no en estas p&aacute;ginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'alam':
+        assert 'Isaiah 58:7 is the one that matters (not yet on these pages)' in _t[4], 'alam'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Isaiah 58:7 is the one that matters (not yet on these pages)', '<a href="isaiah-58.html#v58-7">Isaiah 58:7</a> is the one that matters (now on these pages)'),) + _t[5:]
+if 'alam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['alam']
+    assert 'Isaías 58:7 (todavía no en estas páginas)' in _d[1], 'alam'
+    DICTIONARY_ES['alam'] = (_d[0], _d[1].replace('Isaías 58:7 (todavía no en estas páginas)', '<a href="isaiah-58.es.html#v58-7">Isaías 58:7</a> (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 58, 3), ('Leviticus', 16, 29), 'afflicting the soul'),
+    (('Isaiah', 58, 3), ('Exodus', 5, 6), "the taskmasters' verb, turned on the fasters"),
+    (('Isaiah', 58, 5), ('Matthew', 6, 16), 'the fast that is not for show'),
+    (('Isaiah', 58, 6), ('Luke', 4, 18), 'send the crushed free — spliced into the reading of Isaiah 61'),
+    (('Isaiah', 58, 6), ('Isaiah', 61, 1), 'the oppressed set free'),
+    (('Isaiah', 58, 7), ('Matthew', 25, 35), 'the hungry fed, the naked covered'),
+    (('Isaiah', 58, 7), ('Isaiah', 1, 17), 'relieve the oppressed — the same demand'),
+    (('Isaiah', 58, 9), ('Isaiah', 6, 8), "'Here I am' — in the prophet's mouth, and now in God's"),
+    (('Isaiah', 58, 10), ('Isaiah', 9, 1), 'light in the darkness'),
+    (('Isaiah', 58, 11), ('Jeremiah', 31, 12), 'like a watered garden'),
+    (('Isaiah', 58, 12), ('Isaiah', 61, 4), 'build the ruins of long ago'),
+    (('Isaiah', 58, 13), ('Exodus', 20, 8), 'remember the sabbath day'),
+    (('Isaiah', 58, 14), ('Psalms', 37, 4), 'delight yourself in Jehovah'),
+    (('Isaiah', 58, 14), ('Deuteronomy', 32, 13), 'ride on the high places of the earth'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa58"] = dict(era='exile',
+    when='A people that seeks God every day and asks why its fasting is not seen; the answer, that on the fast day they find their own pleasure and drive their workers; the fast that Jehovah chooses (loosen the yoke, break your bread for the hungry, do not hide from your own flesh); the light that breaks out like the dawn, &ldquo;Here I am&rdquo;, the repairer of the breach; and the sabbath called a delight.',
+    clock='Undated. The chapter names no king, no city and no occasion, and it sits in the second half of Isaiah, which this site files with the exile; the ruins to be built (verse 12) and the paths to be restored are what the chapter itself says. &#9888; The book&rsquo;s own place for it is a cry to a people that already fasts and keeps the sabbath, and nothing in it fixes the year.')
+
+CHAPTER_ART["isa58"] = [dict(
+    file='master-of-alkmaar-feeding-the-hungry.jpg',
+    title='The Seven Works of Mercy: Feeding the Hungry', title_es='Las siete obras de misericordia: dar de comer al hambriento',
+    artist='Master of Alkmaar', artist_es='Maestro de Alkmaar',
+    year='1504', location='Rijksmuseum, Amsterdam', location_es='Rijksmuseum, Ámsterdam',
+    alt='A tall oil panel of a Dutch street in sunlight. At the left a woman in a white cap and apron stands in a doorway holding a basket of round loaves, and a young man in a black cap and dark coat takes loaves from it and hands them to a crowd of poor people: a woman in green and a pink headcloth, an old man in a torn red cloak, a child held up, and, kneeling on the cobbles in the foreground, a crippled man in blue who stretches up a hand. A long-haired figure in grey stands among them, and a small dog sits at the lower left. Behind, in the square, a man plays a lute among market stalls, and the paint is lost along the top edge.',
+    alt_es='Un alto panel al óleo de una calle holandesa a plena luz. A la izquierda una mujer con toca blanca y delantal está en una puerta con una cesta de panes redondos, y un joven con gorro negro y abrigo oscuro toma panes de ella y los reparte a una multitud de pobres: una mujer de verde y pañuelo rosa, un anciano con una capa roja rota, un niño en alto y, arrodillado sobre los adoquines en primer plano, un hombre lisiado de azul que levanta una mano. Entre ellos hay una figura de pelo largo con ropa gris, y un perrito está sentado abajo a la izquierda. Al fondo, en la plaza, un hombre toca un laúd entre puestos de mercado, y se ha perdido la pintura en el borde superior.',
+    note='Isaiah 58:7. The panel is the first of seven by the Master of Alkmaar on the works of mercy, and the Rijksmuseum&rsquo;s catalogue says Christ is among the hungry; it is the chapter&rsquo;s &ldquo;break your bread for the hungry&rdquo; set in a sixteenth-century Dutch street, which is the painter&rsquo;s own scene and not Isaiah&rsquo;s. Another panel of the same series, clothing the naked, is on the James 2 page.',
+    note_es='Isaías 58:7. El panel es el primero de siete del Maestro de Alkmaar sobre las obras de misericordia, y el catálogo del Rijksmuseum dice que Cristo está entre los hambrientos; es el «parte tu pan al hambriento» del capítulo puesto en una calle holandesa del siglo XVI, que es la escena del pintor y no la de Isaías. Otro panel de la misma serie, vestir al desnudo, está en la página de Santiago 2.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:De_zeven_werken_van_barmhartigheid_Rijksmuseum_SK-A-2815-1.jpeg')]
+
+
+
+# Appended to library_data.py for Esther 4 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('patshegen', 'patshegen', 'פַּתְשֶׁגֶן', 'patshegen', 'A COPY &mdash; a word taken from Persian, the copy of a written law: <span data-heb="פתשגן">it stands in three verses of the Hebrew Bible</span>, Esther 3:14, <a href="esther-4.html#v4-8">Esther 4:8</a> (now on these pages) and Esther 8:13 (the other two not yet on these pages). &#9888; The shelf prints &lsquo;the copy of the writing of the decree&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a copy of the text of the edict&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a copy of the writing of the law&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a copy of the king&rsquo;s decree&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Esther', 4, 8)))
+DICTIONARY.append(('revach', 'revach', 'רֶוַח', 'revach', 'RELIEF, room, breathing space &mdash; <span data-heb="רוח והצלה">&lsquo;relief and deliverance&rsquo; stands in this one verse</span>, <a href="esther-4.html#v4-14">Esther 4:14</a> (now on these pages); the same word is the gap Jacob orders between his droves, <a href="genesis-32.html#v32-17">Genesis 32:17</a> (now on these pages). &#9888; The shelf prints &lsquo;enlargement and deliverance&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;relief and deliverance&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;comfort and deliverance&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;the Jews shall be delivered by some other occasion&rsquo; (<span class="tag t-drb">Douay</span>).', ('Esther', 4, 14)))
+DICTIONARY.append(('sharvit', 'sharvit', 'שַׁרְבִיט', 'sharvit', 'A SCEPTER &mdash; the rod the king holds out: <span data-heb="שרביט הזהב">&lsquo;the golden scepter&rsquo; stands in two verses of the Hebrew Bible</span>, <a href="esther-4.html#v4-11">Esther 4:11</a> (now on these pages) and Esther 5:2 (not yet on these pages). &#9888; The shelf prints &lsquo;the golden sceptre&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;the gold scepter&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-tlb">TLB</span>), &lsquo;the golden scepter&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the golden rod&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Esther', 4, 11)))
+DICTIONARY.append(('titchalchal', 'titchalchal', 'תִּתְחַלְחַל', 'vattitchalchal', 'TO WRITHE, to be shaken with anguish &mdash; <span data-heb="ותתחלחל">&lsquo;and she writhed&rsquo; stands in this one verse</span>, <a href="esther-4.html#v4-4">Esther 4:4</a> (now on these pages), the queen when she hears of Mordecai in sackcloth. &#9888; The shelf prints &lsquo;exceedingly grieved&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;in great distress&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;deeply distressed&rsquo; (<span class="tag t-tlb">TLB</span>), &lsquo;very much pained&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;in a consternation&rsquo; (<span class="tag t-drb">Douay</span>).', ('Esther', 4, 4)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['patshegen'] = ('patshegen', 'UNA COPIA &mdash; una palabra tomada del persa, la copia de una ley escrita: <span data-heb="פתשגן">está en tres versículos de la Biblia hebrea</span>, Ester 3:14, <a href="esther-4.es.html#v4-8">Ester 4:8</a> (ya en estas páginas) y Ester 8:13 (los otros dos todavía no en estas páginas). &#9888; El estante imprime &laquo;la copia del decreto&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;una copia del texto del edicto&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;una copia del escrito de la ley&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['revach'] = ('revach', 'ALIVIO, espacio, respiro &mdash; <span data-heb="רוח והצלה">&laquo;alivio y liberación&raquo; está en este único versículo</span>, <a href="esther-4.es.html#v4-14">Ester 4:14</a> (ya en estas páginas); la misma palabra es el hueco que Jacob manda dejar entre sus rebaños, <a href="genesis-32.html#v32-17">Génesis 32:17</a> (ya en estas páginas, en la página inglesa). &#9888; El estante imprime &laquo;respiro y liberación&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;alivio y liberación&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;ayuda y liberación&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['sharvit'] = ('sharvit', 'UN CETRO &mdash; la vara que el rey extiende: <span data-heb="שרביט הזהב">&laquo;el cetro de oro&raquo; está en dos versículos de la Biblia hebrea</span>, <a href="esther-4.es.html#v4-11">Ester 4:11</a> (ya en estas páginas) y Ester 5:2 (todavía no en estas páginas). &#9888; El estante imprime &laquo;el cetro de oro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['titchalchal'] = ('vattitchalchal', 'RETORCERSE, ser sacudida de angustia &mdash; <span data-heb="ותתחלחל">&laquo;y se retorció&raquo; está en este único versículo</span>, <a href="esther-4.es.html#v4-4">Ester 4:4</a> (ya en estas páginas), la reina al enterarse de Mardoqueo en cilicio. &#9888; El estante imprime &laquo;tuvo gran dolor&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;se angustió mucho&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;quedó muy adolorida&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-1">Esther 4:1</a> and <a href="esther-4.html#v4-3">verse 3</a> (now on these pages) have it with ashes, <span data-heb="שק ואפר">which stands in four verses</span>: Esther 4:1, 4:3, <a href="isaiah-58.html#v58-5">Isaiah 58:5</a> and Daniel 9:3.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-1">Ester 4:1</a> y <a href="esther-4.es.html#v4-3">el versículo 3</a> (ya en estas páginas) lo tienen con ceniza, <span data-heb="שק ואפר">que está en cuatro versículos</span>: Ester 4:1, 4:3, <a href="isaiah-58.es.html#v58-5">Isaías 58:5</a> y Daniel 9:3.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'efer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-1">Esther 4:1</a> (now on these pages) has it with sackcloth, and <a href="esther-4.html#v4-3">verse 3</a> has them spread as a bed for the many.',) + _t[5:]
+if 'efer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efer']
+    DICTIONARY_ES['efer'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-1">Ester 4:1</a> (ya en estas páginas) lo tiene con el cilicio, y <a href="esther-4.es.html#v4-3">el versículo 3</a> los tiene tendidos como lecho para muchos.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shaar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-2">Esther 4:2</a> (now on these pages) has <span data-heb="אין לבוא אל שער המלך">&lsquo;for none could come into the king&rsquo;s gate&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shaar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaar']
+    DICTIONARY_ES['shaar'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-2">Ester 4:2</a> (ya en estas páginas) tiene <span data-heb="אין לבוא אל שער המלך">&laquo;porque no se podía entrar por la puerta del rey&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'medinah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a> (now on these pages) has the word doubled, &lsquo;province and province&rsquo;, wherever the king&rsquo;s word reached; <a href="esther-4.html#v4-11">verse 11</a> has &lsquo;the provinces of the king&rsquo;.',) + _t[5:]
+if 'medinah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['medinah']
+    DICTIONARY_ES['medinah'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a> (ya en estas páginas) tiene la palabra doblada, «provincia y provincia», dondequiera que llegaba la palabra del rey; <a href="esther-4.es.html#v4-11">el versículo 11</a> tiene «las provincias del rey».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have the fast: in every province, and the three days Esther asks of the Jews of Shushan.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) tienen el ayuno: en cada provincia, y los tres días que Ester pide a los judíos de Susa.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-4">Esther 4:4</a> (now on these pages) has the maids&rsquo; coming written <em>tavo&rsquo;ina</em> and read <em>tavo&rsquo;na</em>, and <a href="esther-4.html#v4-7">verse 7</a> has &lsquo;the Jews&rsquo; written <em>biyehudiyyim</em> and read <em>bayehudim</em>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-4">Ester 4:4</a> (ya en estas páginas) tiene la llegada de las doncellas escrita <em>tavo&rsquo;ina</em> y leída <em>tavo&rsquo;na</em>, y <a href="esther-4.es.html#v4-7">el versículo 7</a> tiene «los judíos» escrito <em>biyehudiyyim</em> y leído <em>bayehudim</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saris':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-4">Esther 4:4</a> and <a href="esther-4.html#v4-5">verse 5</a> (now on these pages) have the queen&rsquo;s eunuchs, and Hatach, one of the king&rsquo;s eunuchs set to attend her.',) + _t[5:]
+if 'saris' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saris']
+    DICTIONARY_ES['saris'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-4">Ester 4:4</a> y <a href="esther-4.es.html#v4-5">el versículo 5</a> (ya en estas páginas) tienen los eunucos de la reina, y a Hatac, uno de los eunucos del rey puesto a su servicio.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'dat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-3">Esther 4:3</a>, <a href="esther-4.html#v4-8">verse 8</a>, <a href="esther-4.html#v4-11">verse 11</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages): the king&rsquo;s law that reaches the provinces, the written law copied for Esther, the one law of the inner court, and the law she will go in against.',) + _t[5:]
+if 'dat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['dat']
+    DICTIONARY_ES['dat'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-3">Ester 4:3</a>, <a href="esther-4.es.html#v4-8">el versículo 8</a>, <a href="esther-4.es.html#v4-11">el versículo 11</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas): la ley del rey que llega a las provincias, la ley escrita copiada para Ester, la única ley del patio interior, y la ley contra la que ella entrará.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chatzer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-11">Esther 4:11</a> (now on these pages) has the inner court, <em>hechatser hapnimit</em>, where the one law is death unless the golden scepter is held out.',) + _t[5:]
+if 'chatzer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chatzer']
+    DICTIONARY_ES['chatzer'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-11">Ester 4:11</a> (ya en estas páginas) tiene el patio interior, <em>hechatser hapnimit</em>, donde la única ley es la muerte salvo que se extienda el cetro de oro.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'abad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have the verb twice: &lsquo;you and your father&rsquo;s house will perish&rsquo; and <span data-heb="כאשר אבדתי אבדתי">&lsquo;if I perish, I perish&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'abad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['abad']
+    DICTIONARY_ES['abad'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) tienen el verbo dos veces: «tú y la casa de tu padre pereceréis» y <span data-heb="כאשר אבדתי אבדתי">«si perezco, que perezca», que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> and <a href="esther-4.html#v4-16">verse 16</a> (now on these pages) have it twice, the last as &lsquo;if I perish, I perish&rsquo;.',) + _t[5:]
+if 'avad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avad']
+    DICTIONARY_ES['avad'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> y <a href="esther-4.es.html#v4-16">el versículo 16</a> (ya en estas páginas) lo tienen dos veces, la última como «si perezco, que perezca».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yada':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="esther-4.html#v4-14">Esther 4:14</a> (now on these pages) has <span data-heb="ומי יודע">&lsquo;and who knows&rsquo;, which stands in three verses</span>, the question put to Esther.',) + _t[5:]
+if 'yada' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yada']
+    DICTIONARY_ES['yada'] = (_d[0], _d[1] + ' &#11088; <a href="esther-4.es.html#v4-14">Ester 4:14</a> (ya en estas páginas) tiene <span data-heb="ומי יודע">&laquo;y quién sabe&raquo;, que está en tres versículos</span>, la pregunta hecha a Ester.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Esther', 4, 1), ('Isaiah', 58, 5), 'sackcloth and ashes — and the fast Jehovah questions'),
+    (('Esther', 4, 14), ('Genesis', 32, 17), 'revach — room between the droves'),
+    (('Esther', 4, 14), ('2 Samuel', 12, 22), "'who knows' — the hope that grace may come"),
+    (('Esther', 4, 14), ('Psalms', 90, 11), "'who knows'"),
+    (('Esther', 4, 16), ('Genesis', 43, 14), "'if I perish, I perish' — 'if I am bereaved, I am bereaved'"),
+    (('Esther', 4, 16), ('Isaiah', 58, 6), 'the fast that is chosen'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["est4"] = dict(era='return',
+    when='Mordecai in sackcloth and ashes at the king&rsquo;s gate; fasting and mourning in every province; the queen shaken, sending clothes and then Hatach; the exact sum of the money and the copy of the written law; the one law of the inner court and thirty days uncalled; &ldquo;do not imagine&rdquo;, relief and deliverance from another place, and &ldquo;who knows whether for a time like this&rdquo;; and a three-day fast before she goes in against the law.',
+    clock='Undated in the chapter itself; the book&rsquo;s own sequence puts it after the decree of the thirteenth day of the first month (Esther 3:12, not yet on these pages) and before Esther goes in, in the twelfth year of Xerxes by the book&rsquo;s reckoning (about 474 BC). &#9888; The date rests on the book&rsquo;s chronology as the site has it for Esther 1 (the third year, 483 BC, and the seventh year, 479); this chapter names no year of its own.')
+
+CHAPTER_ART["est4"] = [dict(
+    file='de-gelder-esther-and-mordecai.jpg',
+    title='Esther and Mordecai', title_es='Ester y Mardoqueo',
+    artist='Aert de Gelder', artist_es='Aert de Gelder',
+    year='1685', location='Museum of Fine Arts, Budapest', location_es='Museo de Bellas Artes, Budapest',
+    alt='A dark oil painting of two figures. At the left an older man with a grey beard in a dark cloak and a banded cap leans toward the right and raises one hand, with the thumb and forefinger together as if making a point. At the right a woman in a white lace veil, a pearl necklace and a patterned gown sits looking at him, one hand on her chest and the other on the arm of her chair; in front of her on a red-covered table lies an open book.',
+    alt_es='Un óleo oscuro de dos figuras. A la izquierda un hombre mayor de barba gris, con capa oscura y gorro con banda, se inclina hacia la derecha y levanta una mano, con el pulgar y el índice juntos como para subrayar algo. A la derecha una mujer con velo de encaje blanco, collar de perlas y vestido estampado está sentada mirándolo, con una mano en el pecho y la otra en el brazo de su sillón; delante de ella, sobre una mesa cubierta de rojo, hay un libro abierto.',
+    note='Esther 4:13&ndash;14. De Gelder paints the two of them alone and close together, Mordecai speaking and the queen listening, which is the exchange of the middle of the chapter; the book on the table, the veil and the seventeenth-century dress are the painter&rsquo;s own, and the chapter has Mordecai and Esther speaking only through Hatach, with no face-to-face scene.',
+    note_es='Ester 4:13&ndash;14. De Gelder pinta a los dos solos y muy juntos, Mardoqueo hablando y la reina escuchando, que es el intercambio de la mitad del capítulo; el libro sobre la mesa, el velo y el traje del siglo XVII son del propio pintor, y el capítulo hace hablar a Mardoqueo y a Ester solo por medio de Hatac, sin escena cara a cara.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Aert_de_Gelder_-_Esther_and_Mordecai_-_WGA8524.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 24 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('petach', 'petach', 'פֶּתַח', 'pithei', 'AN OPENING, a doorway &mdash; the doors the King of glory comes through: <span data-heb="פתחי עולם">&lsquo;doors of long ago&rsquo; stands in two verses</span>, <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages). &#9888; The shelf prints &lsquo;everlasting doors&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;ancient doors&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;long-lasting entrances&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;ancient gates&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;eternal gates&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 24, 7)))
+DICTIONARY.append(('izuz', 'izuz', 'עִזּוּז', 'izzuz', 'STRONG, mighty &mdash; the first of the two words of the answer: <span data-heb="עזוז וגבור">&lsquo;strong and mighty&rsquo; stands in this one verse</span>, <a href="psalms-24.html#v24-8">Psalm 24:8</a> (now on these pages), beside <em>gibbor</em>. &#9888; The shelf prints &lsquo;strong and mighty&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>), all alike.', ('Psalms', 24, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['petach'] = ('pithei', 'UNA ABERTURA, una entrada &mdash; las puertas por donde entra el Rey de la gloria: <span data-heb="פתחי עולם">&laquo;puertas de antaño&raquo; está en dos versículos</span>, <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas). &#9888; El estante imprime &laquo;puertas eternas&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;puertas antiguas&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;entradas de larga duración&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['izuz'] = ('izzuz', 'FUERTE, poderoso &mdash; la primera de las dos palabras de la respuesta: <span data-heb="עזוז וגבור">&laquo;fuerte y poderoso&raquo; está en este único versículo</span>, <a href="psalms-24.es.html#v24-8">Salmo 24:8</a> (ya en estas páginas), junto a <em>gibbor</em>. &#9888; El estante imprime &laquo;el fuerte y valiente&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;fuerte y poderoso&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-1">Psalm 24:1</a> (now on these pages) has <span data-heb="תבל וישבי בה">&lsquo;the world and those who dwell in it&rsquo;, which stands in two verses</span>, here and Psalm 98:7.',) + _t[5:]
+if 'tevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tevel']
+    DICTIONARY_ES['tevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-1">Salmo 24:1</a> (ya en estas páginas) tiene <span data-heb="תבל וישבי בה">&laquo;el mundo y los que habitan en él&raquo;, que está en dos versículos</span>, este y el Salmo 98:7.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-2">Psalm 24:2</a> (now on these pages) has <span data-heb="ועל נהרות יכוננה">&lsquo;and upon rivers he establishes it&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kun']
+    DICTIONARY_ES['kun'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-2">Salmo 24:2</a> (ya en estas páginas) tiene <span data-heb="ועל נהרות יכוננה">&laquo;y sobre ríos la establece&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'naqi':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="נקי כפים">&lsquo;clean of hands&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'naqi' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['naqi']
+    DICTIONARY_ES['naqi'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="נקי כפים">&laquo;limpio de manos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaph':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has the hands in the pair &lsquo;clean of hands and pure of heart&rsquo;.',) + _t[5:]
+if 'kaph' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaph']
+    DICTIONARY_ES['kaph'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene las manos en el par «limpio de manos y puro de corazón».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="לא נשא לשוא נפשי">&lsquo;who has not lifted up my soul to what is false&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shav']
+    DICTIONARY_ES['shav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="לא נשא לשוא נפשי">&laquo;que no ha elevado mi alma a lo falso&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> and <a href="psalms-24.html#v24-5">verse 5</a> (now on these pages) have it twice: the soul lifted up to what is false, and the blessing carried away.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> y <a href="psalms-24.es.html#v24-5">el versículo 5</a> (ya en estas páginas) lo tienen dos veces: el alma elevada a lo falso, y la bendición llevada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mirmah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-4">Psalm 24:4</a> (now on these pages) has <span data-heb="ולא נשבע למרמה">&lsquo;and has not sworn to deceive&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mirmah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mirmah']
+    DICTIONARY_ES['mirmah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-4">Salmo 24:4</a> (ya en estas páginas) tiene <span data-heb="ולא נשבע למרמה">&laquo;ni jurado para engañar&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'berakhah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-5">Psalm 24:5</a> (now on these pages) has <span data-heb="ישא ברכה מאת יהוה">&lsquo;he will carry away blessing from Jehovah&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'berakhah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['berakhah']
+    DICTIONARY_ES['berakhah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-5">Salmo 24:5</a> (ya en estas páginas) tiene <span data-heb="ישא ברכה מאת יהוה">&laquo;él llevará bendición de Jehová&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yasha':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-5">Psalm 24:5</a> (now on these pages) has <span data-heb="מאלהי ישעו">&lsquo;from the God of his salvation&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'yasha' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yasha']
+    DICTIONARY_ES['yasha'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-5">Salmo 24:5</a> (ya en estas páginas) tiene <span data-heb="מאלהי ישעו">&laquo;del Dios de su salvación&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'darash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> (now on these pages) has <span data-heb="דור דרשו">&lsquo;the generation of those who seek him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'darash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['darash']
+    DICTIONARY_ES['darash'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> (ya en estas páginas) tiene <span data-heb="דור דרשו">&laquo;la generación de los que lo buscan&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> (now on these pages) has <span data-heb="מבקשי פניך">&lsquo;those who seek your face&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'panim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['panim']
+    DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> (ya en estas páginas) tiene <span data-heb="מבקשי פניך">&laquo;los que buscan tu rostro&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shaar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages) have <span data-heb="שאו שערים ראשיכם">&lsquo;lift up your heads, gates&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'shaar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaar']
+    DICTIONARY_ES['shaar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas) tienen <span data-heb="שאו שערים ראשיכם">&laquo;alzad, puertas, vuestras cabezas&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> and <a href="psalms-24.html#v24-9">verse 9</a> (now on these pages) have the doors of long ago, <em>pithei olam</em>.',) + _t[5:]
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> y <a href="psalms-24.es.html#v24-9">el versículo 9</a> (ya en estas páginas) tienen las puertas de antaño, <em>pithei olam</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'melekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> to <a href="psalms-24.html#v24-10">10</a> (now on these pages) have <span data-heb="מלך הכבוד">&lsquo;the King of glory&rsquo;, which stands in four verses</span>, all in this psalm.',) + _t[5:]
+if 'melekh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['melekh']
+    DICTIONARY_ES['melekh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> a <a href="psalms-24.es.html#v24-10">10</a> (ya en estas páginas) tienen <span data-heb="מלך הכבוד">&laquo;el Rey de la gloria&raquo;, que está en cuatro versículos</span>, todos en este salmo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kavod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-7">Psalm 24:7</a> to <a href="psalms-24.html#v24-10">10</a> (now on these pages) have the glory in <span data-heb="מלך הכבוד">&lsquo;the King of glory&rsquo;, in four verses</span>, all in this psalm.',) + _t[5:]
+if 'kavod' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kavod']
+    DICTIONARY_ES['kavod'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-7">Salmo 24:7</a> a <a href="psalms-24.es.html#v24-10">10</a> (ya en estas páginas) tienen la gloria en <span data-heb="מלך הכבוד">&laquo;el Rey de la gloria&raquo;, en cuatro versículos</span>, todos en este salmo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tzevaot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-10">Psalm 24:10</a> (now on these pages) has Jehovah of hosts as the last answer: <span data-heb="הוא מלך הכבוד">&lsquo;he is the King of glory&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tzevaot' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tzevaot']
+    DICTIONARY_ES['tzevaot'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-10">Salmo 24:10</a> (ya en estas páginas) tiene a Jehová de los ejércitos como la última respuesta: <span data-heb="הוא מלך הכבוד">&laquo;él es el Rey de la gloria&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'selah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-6">Psalm 24:6</a> and <a href="psalms-24.html#v24-10">verse 10</a> (now on these pages) have it twice, closing the question of who may go up and the psalm itself.',) + _t[5:]
+if 'selah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selah']
+    DICTIONARY_ES['selah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-6">Salmo 24:6</a> y <a href="psalms-24.es.html#v24-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces, cerrando la pregunta de quién puede subir y el salmo mismo.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mizmor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-24.html#v24-1">Psalm 24:1</a> (now on these pages) has the heading &lsquo;of David, a psalm&rsquo; as part of verse 1.',) + _t[5:]
+if 'mizmor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mizmor']
+    DICTIONARY_ES['mizmor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-24.es.html#v24-1">Salmo 24:1</a> (ya en estas páginas) tiene el encabezado «de David, salmo» como parte del versículo 1.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 24, 1), ('1 Corinthians', 10, 26), "the earth is the Lord's — quoted by Paul"),
+    (('Psalms', 24, 1), ('Exodus', 19, 5), 'all the earth is mine'),
+    (('Psalms', 24, 2), ('Genesis', 1, 9), 'the waters, and the dry land set on them'),
+    (('Psalms', 24, 3), ('Psalms', 118, 19), 'the gate of Jehovah — who may enter'),
+    (('Psalms', 24, 3), ('Isaiah', 26, 2), 'open the gates — who may enter'),
+    (('Psalms', 24, 4), ('Matthew', 5, 8), 'the pure in heart'),
+    (('Psalms', 24, 4), ('James', 4, 8), 'cleanse your hands, purify your hearts'),
+    (('Psalms', 24, 7), ('2 Samuel', 6, 12), 'the ark brought up — the gates lifted (a later reading)'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms24"] = dict(era='monarchy',
+    when='A psalm headed &ldquo;of David&rdquo;: the earth and all in it belong to Jehovah, founded on seas and rivers; who may go up his mountain (clean hands, a pure heart, the soul not lifted to what is false); the generation that seeks his face; and the gates and doors of long ago told to lift up their heads for the King of glory, Jehovah strong and mighty, Jehovah of hosts.',
+    clock='Undated. The heading names David and gives no occasion, and the psalm names no event; later readers have set it at the going up of the ark (2 Samuel 6), which is a reading and not something the psalm says. &#9888; This page sets it among the monarchy by the name of David and says no more.')
+
+CHAPTER_ART["psalms24"] = [dict(
+    file='tissot-david-danced-before-the-lord.jpg',
+    title='David Danced Before the Lord with All His Might', title_es='David danzaba con toda su fuerza delante de Jehová',
+    artist='James Tissot', artist_es='James Tissot',
+    year='c. 1896&ndash;1902', location='The Jewish Museum, New York (Tissot&rsquo;s Old Testament series)', location_es='The Jewish Museum, Nueva York (serie del Antiguo Testamento de Tissot)',
+    alt='A grey-toned illustration of an outdoor procession among tall reeds. In the middle a man in a white robe with a decorated sash dances with raised hands and bent knee. At the left, behind a standing woman with a dark patterned dress, a man in white plays a pipe, and behind them rises a tall curtained canopy with a radiating design. At the right, two women hold up tambourines among a crowd of men in striped cloaks and headcloths.',
+    alt_es='Una ilustración en tonos grises de una procesión al aire libre entre altas cañas. En el centro un hombre con túnica blanca y faja decorada danza con las manos en alto y la rodilla doblada. A la izquierda, detrás de una mujer de pie con vestido oscuro estampado, un hombre de blanco toca una flauta, y tras ellos se alza un alto dosel con cortinas y un diseño radiante. A la derecha, dos mujeres alzan panderos entre una multitud de hombres con capas rayadas y tocados.',
+    note='Psalm 24:7&ndash;10. This is Tissot&rsquo;s picture of 2 Samuel 6:14, the ark going up with the dancing of David, set here because later readers have heard the lifting of the gates in that procession. The psalm itself names no occasion, no ark and no dancing; it asks who may go up the mountain and who the King of glory is.',
+    note_es='Salmo 24:7&ndash;10. Es la imagen de Tissot de 2 Samuel 6:14, el arca subiendo con la danza de David, puesta aquí porque lectores posteriores han oído el alzarse de las puertas en esa procesión. El salmo mismo no nombra ninguna ocasión, ningún arca ni ninguna danza; pregunta quién puede subir al monte y quién es el Rey de la gloria.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Tissot_David_Danced_Before_the_Lord_with_All_His_Might.jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 54 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('aqarah', 'aqarah', 'עֲקָרָה', 'aqarah', 'BARREN &mdash; the woman who has not borne: <span data-heb="רני עקרה לא ילדה">&lsquo;sing, barren one who did not bear&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-1">Isaiah 54:1</a> (now on these pages), where she is told to sing before the child; Sarah (<a href="genesis-11.html#v11-30">Genesis 11:30</a>) and Hannah (<a href="1-samuel-2.html#v2-5">1 Samuel 2:5</a>) are barren on these pages too. &#9888; The shelf prints &lsquo;barren&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;barren woman&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;childless woman&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 54, 1)))
+DICTIONARY.append(('sappir', 'sappir', 'סַפִּיר', 'sappirim', 'A SAPPHIRE &mdash; the foundation stone: <span data-heb="ספירים">&lsquo;sapphires&rsquo; stands in two verses of the Hebrew Bible</span>, <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) and Song of Solomon 5:14 (not yet on these pages). &#9888; The shelf prints &lsquo;sapphires&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-drb">Douay</span>) and, in the NIV, &lsquo;lapis lazuli&rsquo; (<span class="tag t-niv">NIV</span>).', ('Isaiah', 54, 11)))
+DICTIONARY.append(('kadkod', 'kadkod', 'כַּדְכֹּד', 'kadkod', 'KADKOD &mdash; a precious stone whose name is not settled: <span data-heb="כדכד">it stands in two verses of the Hebrew Bible</span>, <span data-heb="וישמתי כדכד שמשתיך">the pinnacles made of it</span> at <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages), and Ezekiel 27:16 (not yet on these pages). &#9888; The shelf prints &lsquo;agates&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;rubies&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;jasper&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;emeralds&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Isaiah', 54, 12)))
+DICTIONARY.append(('eqdach', 'eqdach', 'אֶקְדָּח', 'eqdach', 'EQDACH &mdash; a stone named for fire, probably from a word for kindling: <span data-heb="אקדח">it stands in this one verse</span>, <em>gates of eqdach stones</em>, <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages). &#9888; The shelf prints &lsquo;carbuncles&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;sparkling jewels&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;fiery glowing stones&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;graven stones&rsquo; (<span class="tag t-drb">Douay</span>).', ('Isaiah', 54, 12)))
+DICTIONARY.append(('limmud', 'limmud', 'לִמּוּד', 'limmudei', 'TAUGHT &mdash; one who is taught, a pupil: <span data-heb="למודי יהוה">&lsquo;taught of Jehovah&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-13">Isaiah 54:13</a> (now on these pages), quoted by Jesus at <a href="john-6.html#v6-45">John 6:45</a> (now on these pages). &#9888; The shelf prints &lsquo;taught of the Lord&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;taught by the Lord&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;persons taught by Jehovah&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;taught by me&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 54, 13)))
+DICTIONARY.append(('keli', 'keli', 'כְּלִי', 'keli', 'A TOOL, a vessel, a weapon &mdash; one word for all three: the smith brings out a tool, <span data-heb="ומוציא כלי למעשהו">&lsquo;and brings out a tool for his work&rsquo;</span>, <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages), and <span data-heb="כל כלי יוצר עליך לא יצלח">&lsquo;every weapon formed against you will not succeed&rsquo; stands in this one verse</span>, <a href="isaiah-54.html#v54-17">verse 17</a>. &#9888; The shelf prints &lsquo;instrument&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>) and &lsquo;weapon&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) for the same word.', ('Isaiah', 54, 17)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['aqarah'] = ('aqarah', 'ESTÉRIL &mdash; la mujer que no ha dado a luz: <span data-heb="רני עקרה לא ילדה">&laquo;canta, estéril que no diste a luz&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-1">Isaías 54:1</a> (ya en estas páginas), donde se le manda cantar antes del hijo; Sara (<a href="genesis-11.es.html#v11-30">Génesis 11:30</a>) y Ana (<a href="1-samuel-2.es.html#v2-5">1 Samuel 2:5</a>) son estériles también en estas páginas. &#9888; El estante imprime &laquo;estéril&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['sappir'] = ('sappirim', 'UN ZAFIRO &mdash; la piedra del cimiento: <span data-heb="ספירים">&laquo;zafiros&raquo; está en dos versículos de la Biblia hebrea</span>, <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) y Cantares 5:14 (todavía no en estas páginas). &#9888; El estante imprime &laquo;zafiros&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kadkod'] = ('kadkod', 'KADKOD &mdash; una piedra preciosa cuyo nombre no está fijado: <span data-heb="כדכד">está en dos versículos de la Biblia hebrea</span>, las almenas hechas de ella en <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas), y Ezequiel 27:16 (todavía no en estas páginas). &#9888; El estante imprime &laquo;piedras preciosas&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;rubíes&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;rubíes&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['eqdach'] = ('eqdach', 'EQDACH &mdash; una piedra llamada por el fuego: <span data-heb="אקדח">está en este único versículo</span>, <em>puertas de piedras eqdach</em>, <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas). &#9888; El estante imprime &laquo;piedras de carbunclo&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;piedras relumbrantes como el fuego&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['limmud'] = ('limmudei', 'ENSEÑADO &mdash; el que es enseñado, un discípulo: <span data-heb="למודי יהוה">&laquo;enseñados por Jehová&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-13">Isaías 54:13</a> (ya en estas páginas), citado por Jesús en <a href="john-6.es.html#v6-45">Juan 6:45</a> (ya en estas páginas). &#9888; El estante imprime &laquo;enseñados por Jehová&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['keli'] = ('keli', 'UNA HERRAMIENTA, una vasija, un arma &mdash; una sola palabra para las tres: el herrero saca una herramienta, <span data-heb="ומוציא כלי למעשהו">&laquo;y saca la herramienta para su obra&raquo;</span>, <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas), y <span data-heb="כל כלי יוצר עליך לא יצלח">&laquo;toda arma forjada contra ti no prosperará&raquo; está en este único versículo</span>, <a href="isaiah-54.es.html#v54-17">el versículo 17</a>. &#9888; El estante imprime &laquo;herramienta&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;arma&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) para la misma palabra.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'baal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> (now on these pages) has <span data-heb="בעליך עשיך">&lsquo;your husband, your Maker&rsquo;, which stands in this one verse</span>, both words written in the plural; <a href="isaiah-54.html#v54-1">verse 1</a> has the married wife, the woman who has a <em>baal</em>.',) + _t[5:]
+if 'baal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['baal']
+    DICTIONARY_ES['baal'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> (ya en estas páginas) tiene <span data-heb="בעליך עשיך">&laquo;tu marido, tu Hacedor&raquo;, que está en este único versículo</span>, las dos palabras escritas en plural; <a href="isaiah-54.es.html#v54-1">el versículo 1</a> tiene a la casada, la mujer que tiene un <em>baal</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'goel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> and <a href="isaiah-54.html#v54-8">verse 8</a> (now on these pages) have the redeemer: <span data-heb="וגאלך קדוש ישראל">&lsquo;and your redeemer the Holy One of Israel&rsquo;, which stands in two verses</span>, here and Isaiah 41:14.',) + _t[5:]
+if 'goel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['goel']
+    DICTIONARY_ES['goel'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> y <a href="isaiah-54.es.html#v54-8">el versículo 8</a> (ya en estas páginas) tienen al redentor: <span data-heb="וגאלך קדוש ישראל">&laquo;y tu redentor el Santo de Israel&raquo;, que está en dos versículos</span>, este e Isaías 41:14.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-5">Isaiah 54:5</a> (now on these pages) has the Holy One of Israel as the redeemer of the forsaken wife.',) + _t[5:]
+if 'qadosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qadosh']
+    DICTIONARY_ES['qadosh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-5">Isaías 54:5</a> (ya en estas páginas) tiene al Santo de Israel como redentor de la esposa abandonada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'azav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-6">Isaiah 54:6</a> and <a href="isaiah-54.html#v54-7">verse 7</a> (now on these pages) have it twice: <span data-heb="עזובה ועצובת רוח">&lsquo;forsaken and grieved in spirit&rsquo;, which stands in this one verse</span>, and <span data-heb="ברגע קטן עזבתיך">&lsquo;for a small moment I forsook you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'azav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['azav']
+    DICTIONARY_ES['azav'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-6">Isaías 54:6</a> y <a href="isaiah-54.es.html#v54-7">el versículo 7</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="עזובה ועצובת רוח">&laquo;abandonada y afligida de espíritu&raquo;, que está en este único versículo</span>, y <span data-heb="ברגע קטן עזבתיך">&laquo;por un breve momento te abandoné&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'raga':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-7">Isaiah 54:7</a> and <a href="isaiah-54.html#v54-8">verse 8</a> (now on these pages) have the moment twice: <span data-heb="הסתרתי פני רגע">&lsquo;I hid my face for a moment&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'raga' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['raga']
+    DICTIONARY_ES['raga'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-7">Isaías 54:7</a> y <a href="isaiah-54.es.html#v54-8">el versículo 8</a> (ya en estas páginas) tienen el momento dos veces: <span data-heb="הסתרתי פני רגע">&laquo;escondí mi rostro por un momento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qetsef':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-8">Isaiah 54:8</a> (now on these pages) has <span data-heb="בשצף קצף">&lsquo;in an overflow of anger&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'qetsef' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qetsef']
+    DICTIONARY_ES['qetsef'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-8">Isaías 54:8</a> (ya en estas páginas) tiene <span data-heb="בשצף קצף">&laquo;en un desborde de ira&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-8">Isaiah 54:8</a> and <a href="isaiah-54.html#v54-10">verse 10</a> (now on these pages) have it twice: <span data-heb="בחסד עולם רחמתיך">&lsquo;with steadfast love everlasting I have had mercy on you&rsquo;, which stands in this one verse</span>, and the love that does not depart when the mountains do.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-8">Isaías 54:8</a> y <a href="isaiah-54.es.html#v54-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="בחסד עולם רחמתיך">&laquo;con misericordia eterna he tenido compasión de ti&raquo;, que está en este único versículo</span>, y el amor que no se aparta cuando se apartan los montes.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-10">Isaiah 54:10</a> (now on these pages) has <span data-heb="ברית שלומי">&lsquo;my covenant of peace&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-10">Isaías 54:10</a> (ya en estas páginas) tiene <span data-heb="ברית שלומי">&laquo;mi pacto de paz&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shalom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-10">Isaiah 54:10</a> and <a href="isaiah-54.html#v54-13">verse 13</a> (now on these pages) have the covenant of peace and <span data-heb="ורב שלום בניך">&lsquo;great will be the peace of your sons&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shalom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shalom']
+    DICTIONARY_ES['shalom'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-10">Isaías 54:10</a> y <a href="isaiah-54.es.html#v54-13">el versículo 13</a> (ya en estas páginas) tienen el pacto de paz y <span data-heb="ורב שלום בניך">&laquo;grande será la paz de tus hijos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-12">Isaiah 54:12</a> (now on these pages) has <span data-heb="אבני חפץ">&lsquo;stones of delight&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-12">Isaías 54:12</a> (ya en estas páginas) tiene <span data-heb="אבני חפץ">&laquo;piedras de deleite&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tzedaqah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-14">Isaiah 54:14</a> and <a href="isaiah-54.html#v54-17">verse 17</a> (now on these pages) have it twice: <span data-heb="בצדקה תכונני">&lsquo;in righteousness you will be established&rsquo;, which stands in this one verse</span>, and the righteousness of the servants that is &lsquo;from me&rsquo;.',) + _t[5:]
+if 'tzedaqah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tzedaqah']
+    DICTIONARY_ES['tzedaqah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-14">Isaías 54:14</a> y <a href="isaiah-54.es.html#v54-17">el versículo 17</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="בצדקה תכונני">&laquo;en justicia serás establecida&raquo;, que está en este único versículo</span>, y la justicia de los siervos que es «de mí».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'charash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages) has <span data-heb="בראתי חרש">&lsquo;I have created the smith&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'charash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['charash']
+    DICTIONARY_ES['charash'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas) tiene <span data-heb="בראתי חרש">&laquo;yo he creado al herrero&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mashchit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-16">Isaiah 54:16</a> (now on these pages) has <span data-heb="בראתי משחית">&lsquo;I have created the destroyer&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mashchit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashchit']
+    DICTIONARY_ES['mashchit'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-16">Isaías 54:16</a> (ya en estas páginas) tiene <span data-heb="בראתי משחית">&laquo;yo he creado al destructor&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nachalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-17">Isaiah 54:17</a> (now on these pages) has <span data-heb="נחלת עבדי יהוה">&lsquo;the inheritance of the servants of Jehovah&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nachalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nachalah']
+    DICTIONARY_ES['nachalah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-17">Isaías 54:17</a> (ya en estas páginas) tiene <span data-heb="נחלת עבדי יהוה">&laquo;la herencia de los siervos de Jehová&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yatsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-17">Isaiah 54:17</a> (now on these pages) has the participle <em>yutsar</em>, &lsquo;formed&rsquo;, for the weapon made against the city.',) + _t[5:]
+if 'yatsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yatsar']
+    DICTIONARY_ES['yatsar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-17">Isaías 54:17</a> (ya en estas páginas) tiene el participio <em>yutsar</em>, «forjada», para el arma hecha contra la ciudad.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gur':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-15">Isaiah 54:15</a> (now on these pages) has <span data-heb="הן גור יגור אפס">&lsquo;if anyone stirs up strife, it is nothing&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'gur' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gur']
+    DICTIONARY_ES['gur'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-15">Isaías 54:15</a> (ya en estas páginas) tiene <span data-heb="הן גור יגור אפס">&laquo;si alguien provoca contienda, no es de mi parte&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pukh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) has <span data-heb="מרביץ בפוך אבניך">&lsquo;laying your stones in kohl&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'pukh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pukh']
+    DICTIONARY_ES['pukh'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) tiene <span data-heb="מרביץ בפוך אבניך">&laquo;asiento tus piedras en antimonio&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'oni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages) has <span data-heb="עניה סערה">&lsquo;afflicted one, storm-tossed&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'oni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['oni']
+    DICTIONARY_ES['oni'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas) tiene <span data-heb="עניה סערה">&laquo;afligida, azotada por la tormenta&raquo;, que está en este único versículo</span>.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'theodidaktos':
+        assert 'the Greek of Isaiah 54:13 has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (not yet on these pages)' in _t[4], 'theodidaktos'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('the Greek of Isaiah 54:13 has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (not yet on these pages)', 'the Greek of <a href="isaiah-54.html#v54-13">Isaiah 54:13</a> has the two words apart, all Zion&rsquo;s sons &lsquo;taught of God&rsquo; (now on these pages)'),) + _t[5:]
+if 'theodidaktos' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['theodidaktos']
+    assert 'el griego de Isaías 54:13 tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (todavía no en estas páginas)' in _d[1], 'theodidaktos'
+    DICTIONARY_ES['theodidaktos'] = (_d[0], _d[1].replace('el griego de Isaías 54:13 tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (todavía no en estas páginas)', 'el griego de <a href="isaiah-54.es.html#v54-13">Isaías 54:13</a> tiene las dos palabras separadas, todos los hijos de Sion «enseñados de Dios» (ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pukh':
+        assert 'Isaiah 54:11, where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (neither of those two yet on these pages)' in _t[4], 'pukh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Isaiah 54:11, where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (neither of those two yet on these pages)', '<a href="isaiah-54.html#v54-11">Isaiah 54:11</a> (now on these pages), where it is what a rebuilt city&rsquo;s stones are set in; and Jeremiah 4:30, where one who dresses up for her lovers &lsquo;enlarges her eyes&rsquo; with it, in vain (not yet on these pages)'),) + _t[5:]
+if 'pukh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pukh']
+    assert 'Isaías 54:11, donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (ninguno de los dos todavía en estas páginas)' in _d[1], 'pukh'
+    DICTIONARY_ES['pukh'] = (_d[0], _d[1].replace('Isaías 54:11, donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (ninguno de los dos todavía en estas páginas)', '<a href="isaiah-54.es.html#v54-11">Isaías 54:11</a> (ya en estas páginas), donde es aquello en que se asientan las piedras de una ciudad reconstruida; y Jeremías 4:30, donde la que se adorna para sus amantes «agranda sus ojos» con él, en vano (todavía no en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 54, 1), ('Genesis', 11, 30), 'the barren woman who is told to sing'),
+    (('Isaiah', 54, 1), ('1 Samuel', 2, 5), 'the barren has borne seven'),
+    (('Isaiah', 54, 1), ('Galatians', 4, 27), "quoted by Paul, 'Rejoice, barren one'"),
+    (('Isaiah', 54, 3), ('Genesis', 28, 14), 'to the right and to the left — the seed spreads out'),
+    (('Isaiah', 54, 5), ('Jeremiah', 31, 31), "'though I was a husband to them'"),
+    (('Isaiah', 54, 5), ('Isaiah', 41, 14), 'your redeemer, the Holy One of Israel'),
+    (('Isaiah', 54, 9), ('Genesis', 9, 11), 'the oath of the waters of Noah'),
+    (('Isaiah', 54, 10), ('Isaiah', 55, 3), 'the covenant of peace — the everlasting covenant'),
+    (('Isaiah', 54, 12), ('Revelation', 21, 19), 'the jewels of the foundations and gates'),
+    (('Isaiah', 54, 13), ('John', 6, 45), "'taught of God' — quoted by Jesus"),
+    (('Isaiah', 54, 16), ('Isaiah', 43, 1), 'the one who creates'),
+    (('Isaiah', 54, 17), ('Isaiah', 53, 11), 'the Servant, and the servants'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa54"] = dict(era='exile',
+    when='A barren woman is told to sing and to enlarge her tent; her shame of youth and widowhood forgotten, and her Maker is her husband; forsaken for a small moment and gathered with great mercies, with the oath of the waters of Noah and the covenant of peace that outlasts the mountains; the afflicted city to be built with sapphires and fiery stones, its sons taught of Jehovah; and the smith and the destroyer both created, so that no weapon formed against her succeeds.',
+    clock='Undated. The chapter follows the Servant of Isaiah 53 and sits in the second half of Isaiah, which this site files with the exile; it names no king and no city but speaks to a woman, the afflicted one, whose desolate cities are to be settled. &#9888; Nothing in it fixes a year, and who the woman is, a city, a people or the wife of Jehovah, is said by the images and not named.')
+
+CHAPTER_ART["isa54"] = [dict(
+    file='victors-hannah.jpg',
+    title='Hannah Giving Her Son Samuel to the Priest', title_es='Ana entrega a su hijo Samuel al sacerdote',
+    artist='Jan Victors', artist_es='Jan Victors',
+    year='1645', location='Gem&auml;ldegalerie, Staatliche Museen zu Berlin', location_es='Gem&auml;ldegalerie, Staatliche Museen de Berl&iacute;n',
+    alt='A dark oil painting of an interior. At the right an old bearded priest in a white mitre and a red robe embroidered with gold sits in a carved chair and rests one hand on the head of a small fair-haired boy in a dark velvet coat, who stands at his knee. At the left of the boy a young woman in a black cap, a green mantle and a gold silk skirt kneels on a green carpet with one hand raised toward the priest; behind them a man in a turban and a dark fur-trimmed coat stands with his hands clasped, and on a table at the back is a gold ewer.',
+    alt_es='Un óleo oscuro de un interior. A la derecha un anciano sacerdote barbado, con mitra blanca y túnica roja bordada de oro, está sentado en un sillón tallado y apoya una mano en la cabeza de un niño pequeño de pelo rubio y abrigo de terciopelo oscuro, que está de pie junto a su rodilla. A la izquierda del niño una mujer joven con gorro negro, manto verde y falda de seda dorada está de rodillas sobre una alfombra verde con una mano alzada hacia el sacerdote; detrás de ellos un hombre con turbante y abrigo oscuro con ribete de piel está de pie con las manos juntas, y sobre una mesa al fondo hay una jarra dorada.',
+    note='Isaiah 54:1. The barren woman who is told to sing has her image in Hannah, whose song is at 1 Samuel 2 and who here gives the child she prayed for to Eli. Victors&rsquo;s Dutch dress and room are his own; the chapter does not name Hannah, and Paul takes the barren woman of verse 1 as Jerusalem above (Galatians 4:26&ndash;27), not as any one mother.',
+    note_es='Isaías 54:1. La estéril a quien se manda cantar tiene su imagen en Ana, cuyo cántico está en 1 Samuel 2 y que aquí entrega a Elí el niño por el que oró. El traje y el cuarto holandeses de Victors son suyos; el capítulo no nombra a Ana, y Pablo toma a la estéril del versículo 1 como la Jerusalén de arriba (Gálatas 4:26&ndash;27), no como una madre concreta.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Hannah_VICTORS,_Jan.jpg')]
+
+
+
+
+# Appended to library_data.py for Joel 2 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shalam', 'shalam', 'שָׁלַם', 'shillamti', 'TO MAKE WHOLE, to repay &mdash; <span data-heb="ושלמתי לכם">&lsquo;and I will restore to you&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages), where the years the locust has eaten are paid back. &#9888; The shelf prints &lsquo;restore&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;repay&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;make compensation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;render&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;give back&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Joel', 2, 25)))
+DICTIONARY.append(('bashar', 'bashar', 'בָּשָׂר', 'basar', 'FLESH &mdash; the body, and all that lives in a body: <span data-heb="אשפוך את רוחי על כל בשר">&lsquo;I will pour out my spirit on all flesh&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-28">Joel 2:28</a> (now on these pages), quoted at <a href="acts-2.html#v2-17">Acts 2:17</a> (now on these pages). &#9888; The shelf prints &lsquo;all flesh&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;every sort of flesh&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;all people&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;all of you&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Joel', 2, 28)))
+DICTIONARY.append(('moreh', 'moreh', 'מוֹרֶה', 'moreh', 'THE EARLY RAIN, or a teacher &mdash; the same three letters name both: <span data-heb="המורה לצדקה">&lsquo;the <em>moreh</em> in righteousness&rsquo; stands in this one verse</span>, <a href="joel-2.html#v2-23">Joel 2:23</a> (now on these pages), and the teacher or the oracle-giver of the hill of Moreh at <a href="judges-7.html#v1">Judges 7:1</a> (now on these pages). &#9888; The shelf prints &lsquo;the former rain moderately&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the autumn rains&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the rain of righteousness&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;tokens of forgiveness&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;a teacher of justice&rsquo; (<span class="tag t-drb">Douay</span>).', ('Joel', 2, 23)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shalam'] = ('shillamti', 'HACER ÍNTEGRO, pagar de vuelta &mdash; <span data-heb="ושלמתי לכם">&laquo;y os restituiré&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas), donde los años que comió la langosta se pagan de vuelta. &#9888; El estante imprime &laquo;restituiré&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;compensaré&raquo; (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['bashar'] = ('basar', 'CARNE &mdash; el cuerpo, y todo lo que vive en un cuerpo: <span data-heb="אשפוך את רוחי על כל בשר">&laquo;derramaré mi espíritu sobre toda carne&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-28">Joel 2:28</a> (ya en estas páginas), citado en <a href="acts-2.es.html#v2-17">Hechos 2:17</a> (ya en estas páginas). &#9888; El estante imprime &laquo;toda carne&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;toda clase de carne&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;todo ser humano&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;todo tipo de personas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['moreh'] = ('moreh', 'LA LLUVIA TEMPRANA, o un maestro &mdash; las mismas tres letras nombran las dos cosas: <span data-heb="המורה לצדקה">&laquo;el <em>moreh</em> en justicia&raquo; está en este único versículo</span>, <a href="joel-2.es.html#v2-23">Joel 2:23</a> (ya en estas páginas), y el maestro o dador de oráculos del cerro de Moré de <a href="judges-7.es.html#v1">Jueces 7:1</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la primera lluvia a su tiempo&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;las lluvias de otoño&raquo; (<span class="tag t-nvi">NVI</span>), &laquo;la lluvia de otoño&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shofar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-1">Joel 2:1</a> and <a href="joel-2.html#v2-15">verse 15</a> (now on these pages) have <span data-heb="תקעו שופר בציון">&lsquo;blow a shofar in Zion&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'shofar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shofar']
+    DICTIONARY_ES['shofar'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-1">Joel 2:1</a> y <a href="joel-2.es.html#v2-15">el versículo 15</a> (ya en estas páginas) tienen <span data-heb="תקעו שופר בציון">&laquo;tocad el shofar en Sión&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-12">Joel 2:12</a> and <a href="joel-2.html#v2-15">verse 15</a> (now on these pages) call for the fast: <span data-heb="בצום ובבכי ובמספד">&lsquo;with fasting and with weeping and with mourning&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-12">Joel 2:12</a> y <a href="joel-2.es.html#v2-15">el versículo 15</a> (ya en estas páginas) llaman al ayuno: <span data-heb="בצום ובבכי ובמספד">&laquo;con ayuno y con lloro y con lamento&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malqosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-23">Joel 2:23</a> (now on these pages) has <span data-heb="מורה ומלקוש">&lsquo;the early rain and the late rain&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'malqosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malqosh']
+    DICTIONARY_ES['malqosh'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-23">Joel 2:23</a> (ya en estas páginas) tiene <span data-heb="מורה ומלקוש">&laquo;la lluvia temprana y la tardía&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'arbeh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages) has the four locust words again in the opposite order, the swarmer first: <span data-heb="הארבה הילק והחסיל והגזם">&lsquo;the swarmer, the licker, the finisher and the shearer&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'arbeh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['arbeh']
+    DICTIONARY_ES['arbeh'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas) tiene otra vez las cuatro palabras de la langosta en el orden opuesto, el enjambre primero: <span data-heb="הארבה הילק והחסיל והגזם">&laquo;el enjambre, el lamedor, el rematador y el esquilador&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'gazam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-25">Joel 2:25</a> (now on these pages) has the shearer last of the four.',) + _t[5:]
+if 'gazam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gazam']
+    DICTIONARY_ES['gazam'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-25">Joel 2:25</a> (ya en estas páginas) tiene al esquilador al final de los cuatro.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="joel-2.html#v2-28">Joel 2:28</a> and <a href="joel-2.html#v2-29">verse 29</a> (now on these pages) have the spirit poured out on all flesh, on sons and daughters, on old men and young, and on the servants.',) + _t[5:]
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="joel-2.es.html#v2-28">Joel 2:28</a> y <a href="joel-2.es.html#v2-29">el versículo 29</a> (ya en estas páginas) tienen el espíritu derramado sobre toda carne, sobre hijos e hijas, ancianos y jóvenes, y los siervos.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malqosh':
+        assert 'Hosea 6:3, Joel 2:23, Zechariah 10:1, Job 29:23 — none yet on these pages — and ' in _t[4], 'malqosh'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Hosea 6:3, Joel 2:23, Zechariah 10:1, Job 29:23 — none yet on these pages — and ', 'Hosea 6:3, Zechariah 10:1, Job 29:23 — none yet on these pages — and <a href="joel-2.html#v2-23">Joel 2:23</a> and '),) + _t[5:]
+if 'malqosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malqosh']
+    assert 'Oseas 6:3, Joel 2:23, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y ' in _d[1], 'malqosh'
+    DICTIONARY_ES['malqosh'] = (_d[0], _d[1].replace('Oseas 6:3, Joel 2:23, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y ', 'Oseas 6:3, Zacarías 10:1, Job 29:23 —ninguno todavía en estas páginas— y <a href="joel-2.es.html#v2-23">Joel 2:23</a> y '))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'araphel':
+        assert 'of Joel 2:2 (not yet on these pages) and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (now on these pages)' in _t[4], 'araphel'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('of Joel 2:2 (not yet on these pages) and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (now on these pages)', 'of <a href="joel-2.html#v2-2">Joel 2:2</a> and <a href="zephaniah-1.html#v15">Zephaniah 1:15</a> (both now on these pages)'),) + _t[5:]
+if 'araphel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['araphel']
+    assert 'de Joel 2:2 (todavía no en estas páginas) y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ya en estas páginas)' in _d[1], 'araphel'
+    DICTIONARY_ES['araphel'] = (_d[0], _d[1].replace('de Joel 2:2 (todavía no en estas páginas) y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ya en estas páginas)', 'de <a href="joel-2.es.html#v2-2">Joel 2:2</a> y <a href="zephaniah-1.es.html#v15">Sofonías 1:15</a> (ambos ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chuppah':
+        assert 'Joel 2:16 says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (not yet on these pages)' in _t[4], 'chuppah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Joel 2:16 says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (not yet on these pages)', '<a href="joel-2.html#v2-16">Joel 2:16</a> says <em>let the bridegroom come out from his room, and the bride from her canopy</em> (now on these pages)'),) + _t[5:]
+if 'chuppah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chuppah']
+    assert 'Joel 2:16 dice <em>salga el novio de su aposento, y la novia de su dosel</em> (todav&iacute;a no en estas p&aacute;ginas)' in _d[1], 'chuppah'
+    DICTIONARY_ES['chuppah'] = (_d[0], _d[1].replace('Joel 2:16 dice <em>salga el novio de su aposento, y la novia de su dosel</em> (todav&iacute;a no en estas p&aacute;ginas)', '<a href="joel-2.es.html#v2-16">Joel 2:16</a> dice <em>salga el novio de su aposento, y la novia de su dosel</em> (ya en estas p&aacute;ginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsiyah':
+        assert 'Hosea 2:5 and Joel 2:20 (not yet on these pages)' in _t[4], 'tsiyah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Hosea 2:5 and Joel 2:20 (not yet on these pages)', 'Hosea 2:5 (not yet on these pages) and <a href="joel-2.html#v2-20">Joel 2:20</a> (now on these pages)'),) + _t[5:]
+if 'tsiyah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsiyah']
+    assert 'Oseas 2:5 y Joel 2:20 (todavía no en estas páginas)' in _d[1], 'tsiyah'
+    DICTIONARY_ES['tsiyah'] = (_d[0], _d[1].replace('Oseas 2:5 y Joel 2:20 (todavía no en estas páginas)', 'Oseas 2:5 (todavía no en estas páginas) y <a href="joel-2.es.html#v2-20">Joel 2:20</a> (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Joel', 2, 1), ('Joel', 1, 15), 'the day of Jehovah near'),
+    (('Joel', 2, 2), ('Zephaniah', 1, 15), 'a day of darkness and gloom, a day of cloud and thick darkness'),
+    (('Joel', 2, 3), ('Genesis', 2, 8), 'the garden of Eden before it'),
+    (('Joel', 2, 12), ('Esther', 4, 3), 'fasting, weeping, mourning'),
+    (('Joel', 2, 13), ('Exodus', 34, 6), 'gracious and merciful, slow to anger'),
+    (('Joel', 2, 13), ('Psalms', 103, 8), 'gracious and merciful'),
+    (('Joel', 2, 14), ('2 Samuel', 12, 22), 'who knows?'),
+    (('Joel', 2, 14), ('Esther', 4, 14), 'who knows?'),
+    (('Joel', 2, 15), ('Joel', 1, 14), 'sanctify a fast, call a solemn assembly'),
+    (('Joel', 2, 17), ('Psalms', 42, 4), 'where is their God?'),
+    (('Joel', 2, 23), ('Judges', 7, 1), 'moreh — the early rain and the teacher'),
+    (('Joel', 2, 25), ('Joel', 1, 4), 'the four locust words'),
+    (('Joel', 2, 28), ('Acts', 2, 17), 'quoted at Pentecost'),
+    (('Joel', 2, 28), ('Numbers', 11, 29), "would that all Jehovah's people were prophets"),
+    (('Joel', 2, 31), ('Revelation', 6, 12), 'the sun black, the moon as blood'),
+    (('Joel', 2, 32), ('Romans', 10, 13), 'everyone who calls on the name'),
+    (('Joel', 2, 32), ('Obadiah', 1, 17), 'on Mount Zion there will be those who escape'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["joel2"] = dict(era='monarchy',
+    when='The shofar sounds in Zion and the day of Jehovah comes as an army of locusts, fire before and behind, Eden turned to wilderness; then &ldquo;even now&rdquo;, return with all your heart, tear your heart and not your garments, and a fast, an assembly and the priests weeping between the porch and the altar; Jehovah is jealous for his land and answers with grain, wine and oil; the early rain comes, the years the locust has eaten are restored, and afterward the spirit is poured out on all flesh, with wonders and the promise that everyone who calls on the name of Jehovah will escape.',
+    clock='Undatable, as in chapter 1: the heading names no king and nothing in the book supplies one, so this page files it under the monarchy by the same default. &#9888; English Bibles count verses 28&ndash;32 of this chapter as Joel 2, and the Hebrew Bible counts them as 3:1&ndash;5 of a four-chapter book; this page keeps the English count and says so in its last note.')
+
+CHAPTER_ART["joel2"] = [dict(
+    file='michelangelo-joel-sistine.jpg',
+    title='The Prophet Joel', title_es='El profeta Joel',
+    artist='Michelangelo', artist_es='Miguel Ángel',
+    year='c. 1509', location='Sistine Chapel ceiling, Vatican', location_es='Techo de la Capilla Sixtina, Vaticano',
+    alt='A fresco of an old man with white hair seated on a stone throne, leaning slightly forward and reading a long scroll held open in both hands. He wears a grey-blue robe with a green neckline and a blue sash, and a large red mantle falls across his knees and legs. Behind him two small winged youths look on, one reading over his shoulder at the left and one pointing from the right; a book rests on a slanted stand beside him, and his bare foot rests on the step in front.',
+    alt_es='Un fresco de un anciano de pelo blanco sentado en un trono de piedra, inclinado un poco hacia delante y leyendo un largo rollo abierto con las dos manos. Lleva una túnica gris azulada con cuello verde y una faja azul, y un gran manto rojo le cae sobre las rodillas y las piernas. Detrás de él dos pequeños jóvenes alados miran, uno leyendo por encima de su hombro a la izquierda y otro señalando desde la derecha; un libro descansa en un atril inclinado a su lado, y su pie descalzo se apoya en el escalón delante.',
+    note='Joel, the book that opens with locusts and ends with the pouring out of the spirit on all flesh. Michelangelo shows him as an old man absorbed in a scroll, with no locusts, no fire and no trumpet; the reading prophet is the painter&rsquo;s own picture, and the book gives Joel only a father&rsquo;s name (Pethuel, 1:1).',
+    note_es='Joel, el libro que empieza con langostas y termina con el derramamiento del espíritu sobre toda carne. Miguel Ángel lo muestra como un anciano absorto en un rollo, sin langostas, sin fuego y sin trompeta; el profeta que lee es la imagen propia del pintor, y el libro solo le da a Joel el nombre de un padre (Petuel, 1:1).',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Joel_(Michelangelo).jpg')]
+
+
+
+# Appended to library_data.py for Malachi 3 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('tsaraf', 'tsaraf', 'צָרַף', 'metsaref', 'TO REFINE &mdash; the refiner who melts out the dross: <span data-heb="כאש מצרף">&lsquo;like a refiner&rsquo;s fire&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-2">Malachi 3:2</a> (now on these pages), and <span data-heb="וישב מצרף ומטהר כסף">&lsquo;he will sit as a refiner and purifier of silver&rsquo;, which stands in this one verse</span>, <a href="malachi-3.html#v3-3">verse 3</a>. &#9888; The shelf prints &lsquo;a refiner&rsquo;s fire&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a refining fire&rsquo; (<span class="tag t-drb">Douay</span>).', ('Malachi', 3, 2)))
+DICTIONARY.append(('borit', 'borit', 'בֹּרִית', 'borit', 'LYE, soap &mdash; the cleanser of the launderers: <span data-heb="וכברית מכבסים">&lsquo;and like the lye of launderers&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-2">Malachi 3:2</a> (now on these pages). &#9888; The shelf prints &lsquo;fullers&rsquo; soap&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a launderer&rsquo;s soap&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the lye of laundrymen&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the fuller&rsquo;s herb&rsquo; (<span class="tag t-drb">Douay</span>).', ('Malachi', 3, 2)))
+DICTIONARY.append(('qedoranit', 'qedoranit', 'קְדֹרַנִּית', 'qedoranit', 'MOURNFULLY, in dark clothes &mdash; a word found nowhere else: <span data-heb="הלכנו קדרנית">&lsquo;we walked in mourning&rsquo; stands in this one verse</span>, <a href="malachi-3.html#v3-14">Malachi 3:14</a> (now on these pages), said by the people who complain that serving God is vain. &#9888; The shelf prints &lsquo;mournfully&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;like mourners&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;dejectedly&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Malachi', 3, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['tsaraf'] = ('metsaref', 'REFINAR &mdash; el fundidor que separa la escoria: <span data-heb="כאש מצרף">&laquo;como fuego de fundidor&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-2">Malaquías 3:2</a> (ya en estas páginas), y <span data-heb="וישב מצרף ומטהר כסף">&laquo;se sentará como fundidor y purificador de plata&raquo;, que está en este único versículo</span>, <a href="malachi-3.es.html#v3-3">el versículo 3</a>. &#9888; El estante imprime &laquo;fuego purificador&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;fuego de fundidor&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;el fuego de un refinador&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['borit'] = ('borit', 'LEJÍA, jabón &mdash; el limpiador de los lavanderos: <span data-heb="וכברית מכבסים">&laquo;y como lejía de lavanderos&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-2">Malaquías 3:2</a> (ya en estas páginas). &#9888; El estante imprime &laquo;jabón de lavadores&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;jabón de lavandero&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;la lejía de los lavanderos&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['qedoranit'] = ('qedoranit', 'EN LUTO, con ropa oscura &mdash; una palabra que no está en ningún otro sitio: <span data-heb="הלכנו קדרנית">&laquo;anduvimos enlutados&raquo; está en este único versículo</span>, <a href="malachi-3.es.html#v3-14">Malaquías 3:14</a> (ya en estas páginas), dicho por los que se quejan de que servir a Dios es en vano. &#9888; El estante imprime &laquo;afligidos&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;vestirnos de luto&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;contristados&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'malakh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-1">Malachi 3:1</a> (now on these pages) has it twice: <span data-heb="הנני שלח מלאכי">&lsquo;look, I am sending my messenger&rsquo;, which stands in this one verse</span>, and <span data-heb="מלאך הברית">&lsquo;the messenger of the covenant&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'malakh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['malakh']
+    DICTIONARY_ES['malakh'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-1">Malaquías 3:1</a> (ya en estas páginas) lo tiene dos veces: <span data-heb="הנני שלח מלאכי">&laquo;mirad, yo envío a mi mensajero&raquo;, que está en este único versículo</span>, y <span data-heb="מלאך הברית">&laquo;el mensajero del pacto&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-1">Malachi 3:1</a> (now on these pages) has <span data-heb="מלאך הברית">&lsquo;the messenger of the covenant&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-1">Malaquías 3:1</a> (ya en estas páginas) tiene <span data-heb="מלאך הברית">&laquo;el mensajero del pacto&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'minchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-3">Malachi 3:3</a> and <a href="malachi-3.html#v3-4">verse 4</a> (now on these pages) have the offering twice: <span data-heb="מגישי מנחה בצדקה">&lsquo;those who bring near an offering in righteousness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'minchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['minchah']
+    DICTIONARY_ES['minchah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-3">Malaquías 3:3</a> y <a href="malachi-3.es.html#v3-4">el versículo 4</a> (ya en estas páginas) tienen la ofrenda dos veces: <span data-heb="מגישי מנחה בצדקה">&laquo;los que acercan una ofrenda en justicia&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) has <span data-heb="עד ממהר">&lsquo;a swift witness&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ed']
+    DICTIONARY_ES['ed'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) tiene <span data-heb="עד ממהר">&laquo;un testigo veloz&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-7">Malachi 3:7</a> and <a href="malachi-3.html#v3-18">verse 18</a> (now on these pages) have it: <span data-heb="שובו אלי ואשובה אליכם">&lsquo;return to me, and I will return to you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shuv' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shuv']
+    DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-7">Malaquías 3:7</a> y <a href="malachi-3.es.html#v3-18">el versículo 18</a> (ya en estas páginas) lo tienen: <span data-heb="שובו אלי ואשובה אליכם">&laquo;volved a mí, y yo volveré a vosotros&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'maaser':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-8">Malachi 3:8</a> and <a href="malachi-3.html#v3-10">verse 10</a> (now on these pages) have the tithe: <span data-heb="המעשר והתרומה">&lsquo;the tithe and the contribution&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'maaser' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['maaser']
+    DICTIONARY_ES['maaser'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-8">Malaquías 3:8</a> y <a href="malachi-3.es.html#v3-10">el versículo 10</a> (ya en estas páginas) tienen el diezmo: <span data-heb="המעשר והתרומה">&laquo;el diezmo y la contribución&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'terumah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-8">Malachi 3:8</a> (now on these pages) has <span data-heb="המעשר והתרומה">&lsquo;the tithe and the contribution&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'terumah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['terumah']
+    DICTIONARY_ES['terumah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-8">Malaquías 3:8</a> (ya en estas páginas) tiene <span data-heb="המעשר והתרומה">&laquo;el diezmo y la contribución&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'otsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="הביאו את כל המעשר אל בית האוצר">&lsquo;bring all the tithe to the storehouse&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'otsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['otsar']
+    DICTIONARY_ES['otsar'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="הביאו את כל המעשר אל בית האוצר">&laquo;traed todo el diezmo al alfolí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'arubbah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="אם לא אפתח לכם את ארבות השמים">&lsquo;whether I will not open to you the windows of heaven&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'arubbah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['arubbah']
+    DICTIONARY_ES['arubbah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="אם לא אפתח לכם את ארבות השמים">&laquo;si no os abriré las ventanas de los cielos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'berakhah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-10">Malachi 3:10</a> (now on these pages) has <span data-heb="עד בלי די">&lsquo;until there is no more enough&rsquo;, which stands in this one verse</span>, after the blessing emptied out.',) + _t[5:]
+if 'berakhah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['berakhah']
+    DICTIONARY_ES['berakhah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-10">Malaquías 3:10</a> (ya en estas páginas) tiene <span data-heb="עד בלי די">&laquo;hasta que no haya más suficiencia&raquo;, que está en este único versículo</span>, tras la bendición vaciada.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zikkaron':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-16">Malachi 3:16</a> (now on these pages) has <span data-heb="ספר זכרון">&lsquo;a book of remembrance&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'zikkaron' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zikkaron']
+    DICTIONARY_ES['zikkaron'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-16">Malaquías 3:16</a> (ya en estas páginas) tiene <span data-heb="ספר זכרון">&laquo;un libro de memoria&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chamal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-17">Malachi 3:17</a> (now on these pages) has <span data-heb="וחמלתי עליהם כאשר יחמל איש על בנו העבד אתו">&lsquo;and I will have compassion on them as a man has compassion on his son who serves him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chamal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chamal']
+    DICTIONARY_ES['chamal'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-17">Malaquías 3:17</a> (ya en estas páginas) tiene <span data-heb="וחמלתי עליהם כאשר יחמל איש על בנו העבד אתו">&laquo;y tendré compasión de ellos como un hombre tiene compasión de su hijo que le sirve&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'segullah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="malachi-3.html#v3-17">Malachi 3:17</a> (now on these pages) has the treasured possession of the faithful, on &lsquo;the day that I am making&rsquo;.',) + _t[5:]
+if 'segullah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['segullah']
+    DICTIONARY_ES['segullah'] = (_d[0], _d[1] + ' &#11088; <a href="malachi-3.es.html#v3-17">Malaquías 3:17</a> (ya en estas páginas) tiene la posesión preciada de los fieles, en «el día que yo hago».')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sakhir':
+        assert 'Malachi 3:5 (not yet on these pages) lists' in _t[4], 'sakhir'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 (not yet on these pages) lists', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) lists'),) + _t[5:]
+if 'sakhir' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakhir']
+    assert 'Malaquías 3:5 (todavía no en estas páginas) pone' in _d[1], 'sakhir'
+    DICTIONARY_ES['sakhir'] = (_d[0], _d[1].replace('Malaquías 3:5 (todavía no en estas páginas) pone', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) pone'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashaq':
+        assert 'Malachi 3:5 (not yet on these pages) turns it' in _t[4], 'ashaq'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 (not yet on these pages) turns it', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) turns it'),) + _t[5:]
+if 'ashaq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashaq']
+    assert 'Malaquías 3:5 (todavía no en estas páginas) la convierte' in _d[1], 'ashaq'
+    DICTIONARY_ES['ashaq'] = (_d[0], _d[1].replace('Malaquías 3:5 (todavía no en estas páginas) la convierte', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) la convierte'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'almanah':
+        assert 'Malachi 3:5 — and Psalm 146:9' in _t[4], 'almanah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:5 — and Psalm 146:9', '<a href="malachi-3.html#v3-5">Malachi 3:5</a> (now on these pages) — and Psalm 146:9'),) + _t[5:]
+if 'almanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['almanah']
+    assert 'Malaquías 3:5— y el Salmo 146:9' in _d[1], 'almanah'
+    DICTIONARY_ES['almanah'] = (_d[0], _d[1].replace('Malaquías 3:5— y el Salmo 146:9', '<a href="malachi-3.es.html#v3-5">Malaquías 3:5</a> (ya en estas páginas) — y el Salmo 146:9'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qava':
+        assert 'Malachi 3:8&ndash;9 (not yet on these pages)' in _t[4], 'qava'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Malachi 3:8&ndash;9 (not yet on these pages)', '<a href="malachi-3.html#v3-8">Malachi 3:8</a>&ndash;9 (now on these pages)'),) + _t[5:]
+if 'qava' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qava']
+    assert 'Malaquías 3:8&ndash;9 (todavía no en estas páginas)' in _d[1], 'qava'
+    DICTIONARY_ES['qava'] = (_d[0], _d[1].replace('Malaquías 3:8&ndash;9 (todavía no en estas páginas)', '<a href="malachi-3.es.html#v3-8">Malaquías 3:8</a>&ndash;9 (ya en estas páginas)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Malachi', 3, 1), ('Malachi', 1, 1), "'my messenger' — Malachi's own name"),
+    (('Malachi', 3, 1), ('Isaiah', 40, 3), 'clear the way'),
+    (('Malachi', 3, 1), ('Matthew', 11, 10), 'quoted of John the Baptist'),
+    (('Malachi', 3, 1), ('Mark', 1, 2), 'quoted of John the Baptist'),
+    (('Malachi', 3, 1), ('Luke', 7, 27), 'quoted of John the Baptist'),
+    (('Malachi', 3, 5), ('Exodus', 22, 21), 'the widow, the orphan and the sojourner'),
+    (('Malachi', 3, 7), ('Zechariah', 1, 3), 'return to me, and I will return to you'),
+    (('Malachi', 3, 8), ('Proverbs', 22, 23), "the verb 'to rob'"),
+    (('Malachi', 3, 8), ('Leviticus', 27, 30), 'the tithe'),
+    (('Malachi', 3, 8), ('Deuteronomy', 14, 22), 'the tithe'),
+    (('Malachi', 3, 10), ('Deuteronomy', 6, 16), "'do not test Jehovah' — and 'test me'"),
+    (('Malachi', 3, 10), ('Genesis', 7, 11), 'the windows of heaven'),
+    (('Malachi', 3, 10), ('2 Kings', 7, 2), 'the windows of heaven'),
+    (('Malachi', 3, 16), ('Psalms', 56, 9), 'the book of remembrance'),
+    (('Malachi', 3, 16), ('Revelation', 20, 12), 'the books'),
+    (('Malachi', 3, 17), ('Exodus', 19, 5), 'a treasured possession'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["mal3"] = dict(era='return',
+    when='Jehovah sends his messenger to clear a way and suddenly comes to his temple; the refiner&rsquo;s fire purifies the sons of Levi; he comes near for judgment against sorcerers, adulterers, false swearers and those who defraud the hired worker, the widow, the orphan and the sojourner; &ldquo;return to me&rdquo;; the people who rob God in the tithe and the contribution are invited to test him; the complaint that serving God is vain; and the book of remembrance for those who fear him, his treasured possession.',
+    clock='Undated. The book names no king; it speaks of a governor (Malachi 1:8) and of a rebuilt temple whose offerings are polluted, and is placed in the period after the return and the second temple, usually in the fifth century BC, though the date rests on those hints alone. &#9888; This page keeps the English chapter, verses 1&ndash;18; the Hebrew chapter continues to 3:24, and verses 19&ndash;24 are Malachi 4 in English Bibles.')
+
+CHAPTER_ART["mal3"] = [dict(
+    file='el-greco-christ-driving-money-changers.jpg',
+    title='Christ Driving the Money Changers from the Temple', title_es='Cristo expulsa a los cambistas del templo',
+    artist='El Greco', artist_es='El Greco',
+    year='c. 1570', location='Minneapolis Institute of Art', location_es='Minneapolis Institute of Art',
+    alt='A crowded, brightly coloured oil painting of a temple court with tall columns, and an arch in the middle opening on a blue sky and a street of classical buildings. In the centre Jesus, in a pink robe and a blue cloak, raises a whip in his right hand and strides forward. Around him men and women recoil and shield their heads; at the lower left a woman in a pink dress sits beside a cage of doves, at the right an old man in blue crouches over a basket, and a woman carrying baskets on a pole and a naked child look back. At the lower right four men, one of them in a dark cap, watch from the edge, and in the far right doorway a few figures stand in shadow.',
+    alt_es='Un óleo abarrotado y de colores vivos de un patio de templo con altas columnas y un arco en el centro que se abre a un cielo azul y una calle de edificios clásicos. En el centro Jesús, con túnica rosa y manto azul, levanta un látigo con la mano derecha y avanza. A su alrededor hombres y mujeres retroceden y se protegen la cabeza; abajo a la izquierda una mujer de vestido rosa está sentada junto a una jaula de palomas, a la derecha un anciano de azul se encorva sobre una cesta, y una mujer que lleva cestas en una vara y un niño desnudo miran atrás. Abajo a la derecha cuatro hombres, uno de ellos con gorro oscuro, miran desde el borde, y en la puerta del fondo a la derecha unas figuras están en sombra.',
+    note='Malachi 3:1. The Lord who comes suddenly to his temple is the verse the Gospels see fulfilled in the temple, and El Greco paints the moment in the courts, with the money changers and the dove sellers; but the picture is of the Gospel scene (Matthew 21:12&ndash;13), not of anything in Malachi, whose verse speaks of a refiner&rsquo;s fire and not of a whip.',
+    note_es='Malaquías 3:1. El Señor que viene de repente a su templo es el versículo que los Evangelios ven cumplido en el templo, y El Greco pinta el momento en los atrios, con los cambistas y los vendedores de palomas; pero el cuadro es de la escena del Evangelio (Mateo 21:12&ndash;13), no de nada de Malaquías, cuyo versículo habla de un fuego de fundidor y no de un látigo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:El_Greco_(Domenikos_Theotokopoulos)_-_Christ_Driving_the_Money_Changers_from_the_Temple_-_Google_Art_Project.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 25 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('reshet', 'reshet', 'רֶשֶׁת', 'reshet', 'A NET &mdash; the trap that holds the feet: <span data-heb="הוא יוציא מרשת רגלי">&lsquo;for he will bring my feet out of the net&rsquo; stands in this one verse</span>, <a href="psalms-25.html#v25-15">Psalm 25:15</a> (now on these pages). &#9888; The shelf prints &lsquo;the net&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the snare&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>).', ('Psalms', 25, 15)))
+DICTIONARY.append(('neurim', 'neurim', 'נְעוּרִים', 'ne&rsquo;urai', 'YOUTH &mdash; the early years of a life: <span data-heb="חטאות נעורי">&lsquo;the sins of my youth&rsquo; stands in this one verse</span>, <a href="psalms-25.html#v25-7">Psalm 25:7</a> (now on these pages). &#9888; The shelf prints &lsquo;the sins of my youth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>).', ('Psalms', 25, 7)))
+DICTIONARY.append(('bosh', 'bosh', 'בּוֹשׁ', 'yevoshu', 'TO BE ASHAMED &mdash; to be let down, disappointed in what one trusted: <span data-heb="אל אבושה">&lsquo;let me not be ashamed&rsquo; stands in four verses of the Hebrew Bible</span>, and <a href="psalms-25.html#v25-3">Psalm 25:3</a> (now on these pages) has <span data-heb="גם כל קויך לא יבשו">&lsquo;yes, none who wait for you will be ashamed&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;ashamed&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;put to shame&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;confounded&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 25, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['reshet'] = ('reshet', 'UNA RED &mdash; la trampa que sujeta los pies: <span data-heb="הוא יוציא מרשת רגלי">&laquo;porque él sacará mis pies de la red&raquo; está en este único versículo</span>, <a href="psalms-25.es.html#v25-15">Salmo 25:15</a> (ya en estas páginas). &#9888; El estante imprime &laquo;la red&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;la trampa&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['neurim'] = ('ne&rsquo;urai', 'JUVENTUD &mdash; los primeros años de una vida: <span data-heb="חטאות נעורי">&laquo;los pecados de mi juventud&raquo; está en este único versículo</span>, <a href="psalms-25.es.html#v25-7">Salmo 25:7</a> (ya en estas páginas). &#9888; El estante imprime &laquo;los pecados de mi juventud&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['bosh'] = ('yevoshu', 'AVERGONZARSE &mdash; ser defraudado, quedar decepcionado en lo que se confió: <span data-heb="אל אבושה">&laquo;no sea yo avergonzado&raquo; está en cuatro versículos de la Biblia hebrea</span>, y <a href="psalms-25.es.html#v25-3">Salmo 25:3</a> (ya en estas páginas) tiene <span data-heb="גם כל קויך לא יבשו">&laquo;sí, ninguno de los que esperan en ti será avergonzado&raquo;, que está en este único versículo</span>. &#9888; El estante imprime &laquo;avergonzado&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;confundido&raquo; (<span class="tag t-rv60">RV60</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-1">Psalm 25:1</a> and <a href="psalms-25.html#v25-18">verse 18</a> (now on these pages) have it twice: <span data-heb="נפשי אשא">&lsquo;I lift up my soul&rsquo;, which stands in two verses</span>, and &lsquo;lift away all my sins&rsquo;.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-1">Salmo 25:1</a> y <a href="psalms-25.es.html#v25-18">el versículo 18</a> (ya en estas páginas) lo tienen dos veces: <span data-heb="נפשי אשא">&laquo;levanto mi alma&raquo;, que está en dos versículos</span>, y «quita todos mis pecados».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'batach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-2">Psalm 25:2</a> (now on these pages) has &lsquo;in you I have trusted&rsquo; as the second word of the line that should begin with <em>bet</em>.',) + _t[5:]
+if 'batach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['batach']
+    DICTIONARY_ES['batach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-2">Salmo 25:2</a> (ya en estas páginas) tiene «en ti he confiado» como segunda palabra de la línea que debía empezar con <em>bet</em>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-3">Psalm 25:3</a> and <a href="psalms-25.html#v25-5">verse 5</a> (now on these pages) have the waiting: <span data-heb="גם כל קויך לא יבשו">&lsquo;none who wait for you will be ashamed&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'qavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qavah']
+    DICTIONARY_ES['qavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-3">Salmo 25:3</a> y <a href="psalms-25.es.html#v25-5">el versículo 5</a> (ya en estas páginas) tienen la espera: <span data-heb="גם כל קויך לא יבשו">&laquo;ninguno de los que esperan en ti será avergonzado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'derekh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-4">Psalm 25:4</a> (now on these pages) has <span data-heb="דרכיך יהוה הודיעני">&lsquo;your ways, Jehovah, make known to me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'derekh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['derekh']
+    DICTIONARY_ES['derekh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-4">Salmo 25:4</a> (ya en estas páginas) tiene <span data-heb="דרכיך יהוה הודיעני">&laquo;tus caminos, Jehová, hazme conocer&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-6">Psalm 25:6</a>, <a href="psalms-25.html#v25-7">verse 7</a> and <a href="psalms-25.html#v25-10">verse 10</a> (now on these pages) have it three times, beside compassion, &lsquo;according to your steadfast love remember me&rsquo;, and &lsquo;steadfast love and truth&rsquo;.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-6">Salmo 25:6</a>, <a href="psalms-25.es.html#v25-7">el versículo 7</a> y <a href="psalms-25.es.html#v25-10">el versículo 10</a> (ya en estas páginas) lo tienen tres veces, junto a la compasión, «conforme a tu misericordia acuérdate de mí» y «misericordia y verdad».')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zakhar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-6">Psalm 25:6</a> and <a href="psalms-25.html#v25-7">verse 7</a> (now on these pages) turn the verb both ways: <span data-heb="זכר רחמיך יהוה וחסדיך">&lsquo;remember your compassion, Jehovah, and your steadfast love&rsquo;, which stands in this one verse</span>, and &lsquo;do not remember&rsquo; the sins of youth.',) + _t[5:]
+if 'zakhar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zakhar']
+    DICTIONARY_ES['zakhar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-6">Salmo 25:6</a> y <a href="psalms-25.es.html#v25-7">el versículo 7</a> (ya en estas páginas) vuelven el verbo de las dos maneras: <span data-heb="זכר רחמיך יהוה וחסדיך">&laquo;acuérdate de tus compasiones, Jehová, y de tu misericordia&raquo;, que está en este único versículo</span>, y «no te acuerdes» de los pecados de la juventud.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'anav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-9">Psalm 25:9</a> (now on these pages) has <span data-heb="ידרך ענוים במשפט">&lsquo;he guides the meek in judgment&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'anav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['anav']
+    DICTIONARY_ES['anav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-9">Salmo 25:9</a> (ya en estas páginas) tiene <span data-heb="ידרך ענוים במשפט">&laquo;encamina a los mansos en el juicio&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'salach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-11">Psalm 25:11</a> (now on these pages) has <span data-heb="וסלחת לעוני כי רב הוא">&lsquo;you will pardon my iniquity, for it is great&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'salach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['salach']
+    DICTIONARY_ES['salach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-11">Salmo 25:11</a> (ya en estas páginas) tiene <span data-heb="וסלחת לעוני כי רב הוא">&laquo;perdonarás mi iniquidad, porque es grande&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-11">Psalm 25:11</a> (now on these pages) has the iniquity pardoned for the name&rsquo;s sake.',) + _t[5:]
+if 'avon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avon']
+    DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-11">Salmo 25:11</a> (ya en estas páginas) tiene la iniquidad perdonada por amor del nombre.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sod':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-14">Psalm 25:14</a> (now on these pages) has <span data-heb="סוד יהוה ליראיו">&lsquo;the counsel of Jehovah is for those who fear him&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sod' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sod']
+    DICTIONARY_ES['sod'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-14">Salmo 25:14</a> (ya en estas páginas) tiene <span data-heb="סוד יהוה ליראיו">&laquo;el consejo de Jehová es para los que le temen&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'regel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-15">Psalm 25:15</a> (now on these pages) has the feet brought out of the net.',) + _t[5:]
+if 'regel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['regel']
+    DICTIONARY_ES['regel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-15">Salmo 25:15</a> (ya en estas páginas) tiene los pies sacados de la red.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chanan':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-16">Psalm 25:16</a> (now on these pages) has <span data-heb="פנה אלי וחנני">&lsquo;turn to me and be gracious to me&rsquo;, which stands in three verses</span>.',) + _t[5:]
+if 'chanan' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chanan']
+    DICTIONARY_ES['chanan'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-16">Salmo 25:16</a> (ya en estas páginas) tiene <span data-heb="פנה אלי וחנני">&laquo;vuélvete a mí y ten misericordia de mí&raquo;, que está en tres versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yachid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-16">Psalm 25:16</a> (now on these pages) has <span data-heb="כי יחיד ועני אני">&lsquo;for I am alone and afflicted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'yachid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yachid']
+    DICTIONARY_ES['yachid'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-16">Salmo 25:16</a> (ya en estas páginas) tiene <span data-heb="כי יחיד ועני אני">&laquo;porque estoy solo y afligido&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-21">Psalm 25:21</a> (now on these pages) has <span data-heb="תם וישר יצרוני">&lsquo;integrity and uprightness will watch over me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'tom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tom']
+    DICTIONARY_ES['tom'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-21">Salmo 25:21</a> (ya en estas páginas) tiene <span data-heb="תם וישר יצרוני">&laquo;integridad y rectitud me guardarán&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'padah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-22">Psalm 25:22</a> (now on these pages) has <span data-heb="פדה אלהים את ישראל מכל צרותיו">&lsquo;redeem Israel, God, out of all his troubles&rsquo;, which stands in this one verse</span>, the extra line after the last letter.',) + _t[5:]
+if 'padah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['padah']
+    DICTIONARY_ES['padah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-25.es.html#v25-22">Salmo 25:22</a> (ya en estas páginas) tiene <span data-heb="פדה אלהים את ישראל מכל צרותיו">&laquo;redime, oh Dios, a Israel de todas sus angustias&raquo;, que está en este único versículo</span>, la línea de más después de la última letra.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'acrostic':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-25.html#v25-1">Psalm 25:1</a> to <a href="psalms-25.html#v25-22">22</a> (now on these pages) are the alphabet psalm with the <em>vav</em> missing, no <em>qof</em>, <em>resh</em> twice and an extra <em>pe</em> at the end.',) + _t[5:]
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 25, 1), ('Psalms', 24, 4), 'lift up my soul — a gift here, a denial there'),
+    (('Psalms', 25, 5), ('Psalms', 23, 3), 'lead me — the guide of the paths'),
+    (('Psalms', 25, 10), ('Exodus', 34, 6), 'steadfast love and truth'),
+    (('Psalms', 25, 11), ('Exodus', 34, 9), 'pardon our iniquity'),
+    (('Psalms', 25, 13), ('Psalms', 37, 11), 'the meek and the seed that inherits the land'),
+    (('Psalms', 25, 15), ('Psalms', 91, 3), 'the net of the fowler'),
+    (('Psalms', 25, 16), ('Psalms', 119, 132), 'turn to me and be gracious to me'),
+    (('Psalms', 25, 18), ('Psalms', 119, 153), 'see my affliction'),
+    (('Psalms', 25, 22), ('Psalms', 34, 23), 'the extra pe — redeem'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms25"] = dict(era='monarchy',
+    when='An alphabet psalm headed &ldquo;of David&rdquo;: to Jehovah the soul is lifted, trust and the prayer not to be ashamed; ways and paths, truth, compassion remembered and the sins of youth not remembered; Jehovah good and upright, teaching sinners and the meek, with all his paths steadfast love and truth; the man who fears him, his counsel and his covenant; eyes toward him, the net; a prayer in loneliness, affliction, many enemies; and, with an extra line outside the alphabet, Israel redeemed from all his troubles.',
+    clock='Undated. The heading names David and gives no occasion; the psalm gives nothing to date it. &#9888; Its alphabet is broken in four places (no <em>vav</em>, no <em>qof</em>, <em>resh</em> twice, an extra <em>pe</em>), and this page keeps the lines as they are written.')
+
+CHAPTER_ART["psalms25"] = [dict(
+    file='durer-praying-hands.jpg',
+    title='Praying Hands (Study of an Apostle&rsquo;s Hands)', title_es='Manos orantes (estudio de las manos de un apóstol)',
+    artist='Albrecht Dürer', artist_es='Alberto Durero',
+    year='1508', location='Albertina, Vienna', location_es='Albertina, Viena',
+    alt='A drawing in dark ink with white highlights on blue-green prepared paper. Two hands with fingers pressed together point upward and slightly to the left, drawn from the side and above, with a rolled linen cuff on the wrist; the veins and knuckles are shown in fine hatching, and there is nothing else on the sheet.',
+    alt_es='Un dibujo a tinta oscura con realces blancos sobre papel preparado verdeazulado. Dos manos con los dedos juntos apuntan hacia arriba y un poco a la izquierda, dibujadas de lado y desde arriba, con un puño de lino enrollado en la muñeca; las venas y los nudillos se muestran con un sombreado fino, y no hay nada más en la hoja.',
+    note='Psalm 25:1. Dürer drew these hands in 1508 as a study for an apostle in an altarpiece, and the picture has become the common image of prayer; it is not a scene of the psalm, which has no hands, only a soul lifted up, eyes toward Jehovah and feet freed from a net.',
+    note_es='Salmo 25:1. Durero dibujó estas manos en 1508 como estudio de un apóstol para un retablo, y el dibujo se ha vuelto la imagen común de la oración; no es una escena del salmo, que no tiene manos, solo un alma levantada, ojos hacia Jehová y pies librados de una red.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Praying_Hands,_1508_-_Google_Art_Project.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 32 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('kasah', 'kasah', 'כָּסָה', 'kasah', 'TO COVER &mdash; to put a covering over: <span data-heb="כסוי חטאה">&lsquo;whose sin is covered&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-1">Psalm 32:1</a> (now on these pages), and <span data-heb="ועוני לא כסיתי">&lsquo;my iniquity I did not cover&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-5">verse 5</a>: the sin God covers is the sin the man does not. &#9888; The shelf prints &lsquo;covered&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 1, and &lsquo;hid&rsquo; (<span class="tag t-kjv">KJV</span>) or &lsquo;cover up&rsquo; (<span class="tag t-niv">NIV</span>) at verse 5.', ('Psalms', 32, 1)))
+DICTIONARY.append(('resen', 'resen', 'רֶסֶן', 'resen', 'A BRIDLE &mdash; the headstall or halter of a horse: <span data-heb="במתג ורסן">&lsquo;bit and bridle&rsquo; stands in this one verse</span>, <a href="psalms-32.html#v32-9">Psalm 32:9</a> (now on these pages), beside <em>metheg</em>, the bit. &#9888; The shelf prints &lsquo;bridle&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>) and &lsquo;halter&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Psalms', 32, 9)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['kasah'] = ('kasah', 'CUBRIR &mdash; poner una cubierta encima: <span data-heb="כסוי חטאה">&laquo;cuyo pecado está cubierto&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> (ya en estas páginas), y <span data-heb="ועוני לא כסיתי">&laquo;mi iniquidad no cubrí&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-5">el versículo 5</a>: el pecado que Dios cubre es el pecado que el hombre no cubre. &#9888; El estante imprime &laquo;cubierto&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) en el versículo 1, y &laquo;encubrí&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) u &laquo;oculté&raquo; (<span class="tag t-nvi">NVI</span>) en el 5.')
+DICTIONARY_ES['resen'] = ('resen', 'UN CABESTRO &mdash; la cabezada o el ronzal de un caballo: <span data-heb="במתג ורסן">&laquo;freno y cabestro&raquo; está en este único versículo</span>, <a href="psalms-32.es.html#v32-9">Salmo 32:9</a> (ya en estas páginas), junto a <em>metheg</em>, el freno. &#9888; El estante imprime &laquo;cabestro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;riendas&raquo; (<span class="tag t-tnm">TNM&nbsp;2019</span>) y &laquo;brida&raquo; (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-1">Psalm 32:1</a> and <a href="psalms-32.html#v32-2">verse 2</a> (now on these pages) say it twice: <span data-heb="אשרי נשוי פשע">&lsquo;happy is the one whose transgression is lifted off&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> y <a href="psalms-32.es.html#v32-2">el versículo 2</a> (ya en estas páginas) lo dicen dos veces: <span data-heb="אשרי נשוי פשע">&laquo;feliz el que tiene la transgresión quitada&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nasa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-1">Psalm 32:1</a> and <a href="psalms-32.html#v32-5">verse 5</a> (now on these pages) have the lifting off of transgression and iniquity: <span data-heb="ואתה נשאת עון חטאתי">&lsquo;and you lifted off the iniquity of my sin&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nasa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nasa']
+    DICTIONARY_ES['nasa'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-1">Salmo 32:1</a> y <a href="psalms-32.es.html#v32-5">el versículo 5</a> (ya en estas páginas) tienen el quitar la transgresión y la iniquidad: <span data-heb="ואתה נשאת עון חטאתי">&laquo;y tú quitaste la iniquidad de mi pecado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chashav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-2">Psalm 32:2</a> (now on these pages) has <span data-heb="לא יחשב יהוה לו עון">&lsquo;Jehovah does not count iniquity&rsquo;, which stands in this one verse</span>, the verb Paul quotes in Romans 4:7&ndash;8.',) + _t[5:]
+if 'chashav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chashav']
+    DICTIONARY_ES['chashav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-2">Salmo 32:2</a> (ya en estas páginas) tiene <span data-heb="לא יחשב יהוה לו עון">&laquo;Jehová no cuenta la iniquidad&raquo;, que está en este único versículo</span>, el verbo que Pablo cita en Romanos 4:7&ndash;8.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'seter':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-7">Psalm 32:7</a> (now on these pages) has <span data-heb="אתה סתר לי">&lsquo;you are a hiding place for me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'seter' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['seter']
+    DICTIONARY_ES['seter'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-7">Salmo 32:7</a> (ya en estas páginas) tiene <span data-heb="אתה סתר לי">&laquo;tú eres un escondite para mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sabab':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-7">Psalm 32:7</a> and <a href="psalms-32.html#v32-10">verse 10</a> (now on these pages) have it twice: songs of deliverance round him, steadfast love round him.',) + _t[5:]
+if 'sabab' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sabab']
+    DICTIONARY_ES['sabab'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-7">Salmo 32:7</a> y <a href="psalms-32.es.html#v32-10">el versículo 10</a> (ya en estas páginas) lo tienen dos veces: cantos de liberación a su alrededor, misericordia a su alrededor.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sakal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-32.html#v32-8">Psalm 32:8</a> (now on these pages) has <span data-heb="אשכילך">&lsquo;I will give you insight&rsquo;, which stands in this one verse</span> in this form, the verb of the title <em>maskil</em> at verse 1.',) + _t[5:]
+if 'sakal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakal']
+    DICTIONARY_ES['sakal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-32.es.html#v32-8">Salmo 32:8</a> (ya en estas páginas) tiene <span data-heb="אשכילך">&laquo;te daré perspicacia&raquo;, que está en este único versículo</span> en esta forma, el verbo del encabezado <em>maskil</em> del versículo 1.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 32, 1), ('Psalms', 1, 1), "happy is the one — the Psalter's first word again"),
+    (('Psalms', 32, 1), ('Exodus', 34, 7), 'lifting iniquity and transgression'),
+    (('Psalms', 32, 1), ('Leviticus', 16, 22), "lift off — the scapegoat's verb"),
+    (('Psalms', 32, 2), ('Romans', 4, 7), "Jehovah does not count iniquity — Paul's witness"),
+    (('Psalms', 32, 5), ('1 John', 1, 9), 'confess and be forgiven'),
+    (('Psalms', 32, 5), ('2 Samuel', 12, 13), 'I have sinned — and you lifted it off'),
+    (('Psalms', 32, 6), ('Isaiah', 55, 6), 'while he may be found'),
+    (('Psalms', 32, 7), ('Psalms', 91, 1), 'a hiding place'),
+    (('Psalms', 32, 7), ('Psalms', 27, 5), 'a hiding place'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms32"] = dict(era='monarchy',
+    when='A maskil of David: happy the one whose transgression is lifted off and sin covered, to whom Jehovah does not count iniquity; the silence that wore the bones away, the hand heavy day and night, the sin made known and the iniquity lifted off; every loyal one praying at a time of finding, a hiding place and songs of deliverance; a voice that will give insight and counsel, and the warning not to be like a horse or a mule; the many pains of the wicked, steadfast love round the one who trusts, and the righteous called to rejoice.',
+    clock='Undated. The heading names David and a maskil and gives no occasion; readers have joined it to David&rsquo;s sin with Bathsheba, and that is a reading and not something the psalm says.')
+
+CHAPTER_ART["psalms32"] = [dict(
+    file='durer-small-horse-1505.jpg',
+    title='The Small Horse', title_es='El caballito',
+    artist='Albrecht Dürer', artist_es='Alberto Durero',
+    year='1505', location='National Gallery of Art, Washington', location_es='Galería Nacional de Arte, Washington',
+    alt='An engraving in fine dark lines on cream paper. A stocky horse with a flowing mane stands in profile facing left under a ruined stone arch, one front hoof raised; behind it a halberd leans against the wall beside a piece of armour and a bowl of flame on a broken block, and a small stone with the artist&rsquo;s monogram lies in the foreground. The date 1505 is cut into the sky in the archway. The horse wears no bridle.',
+    alt_es='Un grabado de líneas oscuras y finas sobre papel crema. Un caballo robusto de crin abundante está de perfil, mirando a la izquierda, bajo un arco de piedra en ruinas, con una mano levantada; detrás de él una alabarda se apoya en la pared junto a una pieza de armadura y un cuenco de fuego sobre un bloque roto, y una piedrecita con el monograma del artista yace en primer plano. La fecha 1505 está grabada en el cielo del arco. El caballo no lleva brida.',
+    note='Psalm 32:9. Dürer engraved this horse in 1505 as a study of a well-proportioned animal, not as a scene from the psalm; the horse here wears no bit and no bridle, and the psalm&rsquo;s warning is about the one that must be brought near by them.',
+    note_es='Salmo 32:9. Durero grabó este caballo en 1505 como estudio de un animal bien proporcionado, no como escena del salmo; el caballo de aquí no lleva freno ni brida, y la advertencia del salmo es sobre el que hay que acercar con ellos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Small_Horse,_1505,_NGA_6676.jpg')]
+
+
+
+# Appended to library_data.py for Daniel 9 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shavua', 'shavua', 'שָׁבוּעַ', 'shavu&rsquo;im', 'A SEVEN, A WEEK &mdash; a period made of seven: <span data-heb="שבעים שבעים נחתך">&lsquo;sevens, seventy, are cut off&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages), the plural <em>shavu&rsquo;im</em> then used for &lsquo;seven sevens&rsquo; and &lsquo;sixty-two sevens&rsquo; at verse 25 and &lsquo;one seven&rsquo; at verse 27. &#9888; The shelf prints &lsquo;weeks&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>) and &lsquo;sevens&rsquo; (<span class="tag t-niv">NIV</span>).', ('Daniel', 9, 24)))
+DICTIONARY.append(('chatak', 'chatak', 'חָתַךְ', 'nechtak', 'TO CUT OFF, TO DECREE &mdash; a rare verb for cutting a portion off: <span data-heb="שבעים שבעים נחתך">&lsquo;sevens, seventy, are cut off&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages). &#9888; The shelf prints &lsquo;determined&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;decreed&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;shortened&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 9, 24)))
+DICTIONARY.append(('chalah', 'chalah', 'חָלָה', 'chilinu', 'TO SOFTEN THE FACE &mdash; to entreat, to make gentle the face of another: <span data-heb="ולא חלינו את פני יהוה אלהינו">&lsquo;and we have not softened the face of Jehovah our God&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-13">Daniel 9:13</a> (now on these pages). &#9888; The shelf prints &lsquo;softened the face&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;made our prayer before&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;sought the favor&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;entreated not thy face&rsquo; (<span class="tag t-drb">Douay</span>).', ('Daniel', 9, 13)))
+DICTIONARY.append(('shaqad', 'shaqad', 'שָׁקַד', 'vayyishqod', 'TO WATCH, TO KEEP AWAKE &mdash; the verb of the almond rod at <a href="jeremiah-1.html#v12">Jeremiah 1:12</a> (now on these pages): <span data-heb="וישקד יהוה על הרעה">&lsquo;and Jehovah watched over the evil&rsquo; stands in this one verse</span>, <a href="daniel-9.html#v9-14">Daniel 9:14</a> (now on these pages). &#9888; The shelf prints &lsquo;watched&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>), &lsquo;did not hesitate&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;kept alert&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Daniel', 9, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shavua'] = ('shavu&rsquo;im', 'UN SIETE, UNA SEMANA &mdash; un período hecho de siete: <span data-heb="שבעים שבעים נחתך">&laquo;sietes, setenta, están cortados&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas), el plural <em>shavu&rsquo;im</em> usado luego para «siete sietes» y «sesenta y dos sietes» en el versículo 25 y «un siete» en el 27. &#9888; El estante imprime &laquo;semanas&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chatak'] = ('nechtak', 'CORTAR, DECRETAR &mdash; un verbo raro para cortar una porción: <span data-heb="שבעים שבעים נחתך">&laquo;sietes, setenta, están cortados&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas). &#9888; El estante imprime &laquo;determinadas&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y &laquo;decretadas&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['chalah'] = ('chilinu', 'ABLANDAR EL ROSTRO &mdash; implorar, hacer suave el rostro de otro: <span data-heb="ולא חלינו את פני יהוה אלהינו">&laquo;y no hemos ablandado el rostro de Jehová nuestro Dios&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-13">Daniel 9:13</a> (ya en estas páginas). &#9888; El estante imprime &laquo;ablandado el rostro&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>), &laquo;implorado el favor&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;buscado tu favor&raquo; (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['shaqad'] = ('vayyishqod', 'VELAR, ESTAR DESPIERTO &mdash; el verbo de la vara de almendro de <a href="jeremiah-1.es.html#v12">Jeremías 1:12</a> (ya en estas páginas): <span data-heb="וישקד יהוה על הרעה">&laquo;y Jehová veló sobre el mal&raquo; está en este único versículo</span>, <a href="daniel-9.es.html#v9-14">Daniel 9:14</a> (ya en estas páginas). &#9888; El estante imprime &laquo;veló&raquo; (<span class="tag t-rv60">RV60</span>), &laquo;no dudó&raquo; (<span class="tag t-nvi">NVI</span>) y &laquo;se mantuvo alerta&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-25">Daniel 9:25</a> and <a href="daniel-9.html#v9-26">verse 26</a> (now on these pages) have it twice, without the article: <span data-heb="משיח נגיד">&lsquo;an anointed one, a leader&rsquo;, which stands in this one verse</span>, and <span data-heb="יכרת משיח ואין לו">&lsquo;an anointed one shall be cut off, and have nothing&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'mashiach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashiach']
+    DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-25">Daniel 9:25</a> y <a href="daniel-9.es.html#v9-26">el versículo 26</a> (ya en estas páginas) lo tienen dos veces, sin artículo: <span data-heb="משיח נגיד">&laquo;un ungido, un caudillo&raquo;, que está en este único versículo</span>, y <span data-heb="יכרת משיח ואין לו">&laquo;un ungido será cortado, y no tendrá nada&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'nagid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-25">Daniel 9:25</a> (now on these pages) has <span data-heb="משיח נגיד">&lsquo;an anointed one, a leader&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'nagid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nagid']
+    DICTIONARY_ES['nagid'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-25">Daniel 9:25</a> (ya en estas páginas) tiene <span data-heb="משיח נגיד">&laquo;un ungido, un caudillo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'shiqquts':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-27">Daniel 9:27</a> (now on these pages) has <span data-heb="ועל כנף שקוצים משמם">&lsquo;on the wing of abominations one who makes desolate&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'shiqquts' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shiqquts']
+    DICTIONARY_ES['shiqquts'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-27">Daniel 9:27</a> (ya en estas páginas) tiene <span data-heb="ועל כנף שקוצים משמם">&laquo;sobre el ala de las abominaciones uno que desola&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'saq':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a> (now on these pages) has <span data-heb="בצום ושק ואפר">&lsquo;with fasting and sackcloth and ashes&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'saq' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saq']
+    DICTIONARY_ES['saq'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a> (ya en estas páginas) tiene <span data-heb="בצום ושק ואפר">&laquo;con ayuno y cilicio y ceniza&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a> (now on these pages) has the fast beside sackcloth and ashes.',) + _t[5:]
+if 'tsom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsom']
+    DICTIONARY_ES['tsom'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a> (ya en estas páginas) tiene el ayuno junto al cilicio y la ceniza.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tachanun':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-3">Daniel 9:3</a>, <a href="daniel-9.html#v9-17">verse 17</a> and <a href="daniel-9.html#v9-18">verse 18</a> (now on these pages) have the pleadings of Daniel&rsquo;s prayer.',) + _t[5:]
+if 'tachanun' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tachanun']
+    DICTIONARY_ES['tachanun'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-3">Daniel 9:3</a>, <a href="daniel-9.es.html#v9-17">el versículo 17</a> y <a href="daniel-9.es.html#v9-18">el versículo 18</a> (ya en estas páginas) tienen los ruegos de la oración de Daniel.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rachamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-9">Daniel 9:9</a> (now on these pages) has <span data-heb="הרחמים והסלחות">&lsquo;the compassions and the forgivenesses&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rachamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rachamim']
+    DICTIONARY_ES['rachamim'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-9">Daniel 9:9</a> (ya en estas páginas) tiene <span data-heb="הרחמים והסלחות">&laquo;las compasiones y los perdones&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'selichah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-9">Daniel 9:9</a> (now on these pages) has the plural beside the compassions: <span data-heb="הרחמים והסלחות">&lsquo;the compassions and the forgivenesses&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'selichah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selichah']
+    DICTIONARY_ES['selichah'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-9">Daniel 9:9</a> (ya en estas páginas) tiene el plural junto a las compasiones: <span data-heb="הרחמים והסלחות">&laquo;las compasiones y los perdones&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kaphar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-24">Daniel 9:24</a> (now on these pages) has <span data-heb="ולכפר עון">&lsquo;and to cover iniquity&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kaphar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kaphar']
+    DICTIONARY_ES['kaphar'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-24">Daniel 9:24</a> (ya en estas páginas) tiene <span data-heb="ולכפר עון">&laquo;y cubrir la iniquidad&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-9.html#v9-4">Daniel 9:4</a> (now on these pages) has <span data-heb="שמר הברית והחסד">&lsquo;keeping the covenant and the steadfast love&rsquo;, which stands in four verses</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-9.es.html#v9-4">Daniel 9:4</a> (ya en estas páginas) tiene <span data-heb="שמר הברית והחסד">&laquo;guardando el pacto y la misericordia&raquo;, que está en cuatro versículos</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Daniel', 9, 2), ('Jeremiah', 25, 11), 'seventy years — the number Daniel finds in the books'),
+    (('Daniel', 9, 2), ('Jeremiah', 29, 10), 'seventy years — the word to the exiles'),
+    (('Daniel', 9, 4), ('Deuteronomy', 7, 9), 'keeping the covenant and the steadfast love'),
+    (('Daniel', 9, 4), ('1 Kings', 8, 23), "keeping the covenant and the steadfast love — Solomon's words"),
+    (('Daniel', 9, 9), ('Exodus', 34, 9), 'pardon — the compassions and the forgivenesses'),
+    (('Daniel', 9, 11), ('Deuteronomy', 28, 15), 'the curse and the oath that is written'),
+    (('Daniel', 9, 11), ('Leviticus', 26, 14), 'the curse and the oath that is written'),
+    (('Daniel', 9, 14), ('Jeremiah', 1, 12), 'Jehovah watched — the verb of the almond rod'),
+    (('Daniel', 9, 17), ('Numbers', 6, 25), 'make your face shine'),
+    (('Daniel', 9, 27), ('Daniel', 11, 31), 'the abomination that desolates'),
+    (('Daniel', 9, 27), ('Daniel', 12, 11), 'the abomination that desolates'),
+    (('Daniel', 9, 27), ('Matthew', 24, 15), 'the abomination that desolates — Daniel the prophet'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["dan9"] = dict(era='exile',
+    when='In the first year of Darius the Mede, Daniel reads in the books the seventy years of Jeremiah and sets his face to pray: a confession in the plural, we have sinned, to the God who keeps the covenant and the steadfast love; the curse written in the law of Moses poured out; and now, hear, forgive, listen and act, for your name is called on your city. While he is still speaking Gabriel comes with understanding, and a word of seventy sevens for his people and holy city: six things to be done, a word to restore and rebuild, an anointed one cut off, the city and sanctuary destroyed, a covenant made strong for the many, and sacrifice made to cease.',
+    clock='The first year of Darius son of Ahasuerus, of the seed of the Medes, who was made king over the kingdom of the Chaldeans. The prayer is dated by the evening offering (verse 21). &#9888; The sevens are not dated in the chapter, and this page does not date them.')
+
+CHAPTER_ART["dan9"] = [dict(
+    file='daniel-prayer-angel-gabriel-1886.jpg',
+    title='Daniel&rsquo;s Prayer and the Angel Gabriel', title_es='La oración de Daniel y el ángel Gabriel',
+    artist='Unknown engraver', artist_es='Grabador desconocido',
+    year='1886', location='Wood engraving, published 1886', location_es='Grabado en madera, publicado en 1886',
+    alt='A black-and-white wood engraving. A bearded man in a heavy robe kneels on a stone ledge at the lower left, his face lifted and his palms opened, one hand lower than the other. Above him on the right a winged young figure with a star on the brow and a star-tipped staff flies in from the sky and reaches out one hand to touch him on the shoulder; clouds and a dark hill fill the background.',
+    alt_es='Un grabado en madera en blanco y negro. Un hombre barbado con un manto pesado está arrodillado sobre un borde de piedra abajo a la izquierda, con el rostro levantado y las palmas abiertas, una mano más baja que la otra. Encima de él, a la derecha, una figura joven alada con una estrella en la frente y un báculo rematado en estrella vuela desde el cielo y extiende una mano para tocarlo en el hombro; nubes y un monte oscuro llenan el fondo.',
+    note='Daniel 9:21. An unnamed engraver&rsquo;s picture of the moment the verse describes: Gabriel, in swift flight, touching Daniel while he is still in prayer. The engraving is of the 19th century, and the star-crowned angel is the artist&rsquo;s invention; the text gives no description of Gabriel beyond a man in flight.',
+    note_es='Daniel 9:21. La imagen de un grabador sin nombre del momento que describe el versículo: Gabriel, en vuelo veloz, tocando a Daniel mientras aún está en oración. El grabado es del siglo XIX, y el ángel con corona de estrella es invención del artista; el texto no describe a Gabriel más que como un varón en vuelo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Daniel%27s_Prayer_and_the_Angel_Gabriel.tif')]
+
+
+
+# Appended to library_data.py for Psalm 40 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('karah', 'karah', 'כָּרָה', 'karith', 'TO DIG &mdash; to dig a pit or a well, to bore: <span data-heb="אזנים כרית לי">&lsquo;ears you have dug for me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages). &#9888; The shelf prints &lsquo;opened&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;pierced&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;prepared&rsquo; (<span class="tag t-gnv">Geneva</span>).', ('Psalms', 40, 7)))
+DICTIONARY.append(('megillah', 'megillah', 'מְגִלָּה', 'bimgillat', 'A SCROLL &mdash; a roll of writing: <span data-heb="במגלת ספר כתוב עלי">&lsquo;in the scroll of the book it is written of me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-8">Psalm 40:8</a> (now on these pages). &#9888; The shelf prints &lsquo;the volume of the book&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the scroll&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the roll of the book&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the head of the book&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 40, 8)))
+DICTIONARY.append(('kala-restrain', 'kala', 'כָּלָא', 'ekhla', 'TO HOLD BACK &mdash; to restrain, to shut up: <span data-heb="הנה שפתי לא אכלא">&lsquo;see, I do not hold back my lips&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-10">Psalm 40:10</a> (now on these pages), and <span data-heb="לא תכלא רחמיך ממני">&lsquo;you will not hold back your compassions from me&rsquo; stands in this one verse</span>, <a href="psalms-40.html#v40-12">verse 12</a>. &#9888; The shelf prints &lsquo;refrained&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;seal&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;restrain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 10, and &lsquo;withhold&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;restrain&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) at verse 12.', ('Psalms', 40, 10)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['karah'] = ('karith', 'CAVAR &mdash; cavar un pozo, perforar: <span data-heb="אזנים כרית לי">&laquo;oídos me has cavado&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas). &#9888; El estante imprime &laquo;abierto&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y &laquo;abriste&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['megillah'] = ('bimgillat', 'UN ROLLO &mdash; un rollo de escritura: <span data-heb="במגלת ספר כתוב עלי">&laquo;en el rollo del libro está escrito de mí&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-8">Salmo 40:8</a> (ya en estas páginas). &#9888; El estante imprime &laquo;el rollo del libro&raquo; (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['kala-restrain'] = ('ekhla', 'DETENER &mdash; contener, encerrar: <span data-heb="הנה שפתי לא אכלא">&laquo;mira, no detengo mis labios&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-10">Salmo 40:10</a> (ya en estas páginas), y <span data-heb="לא תכלא רחמיך ממני">&laquo;no detendrás tus compasiones de mí&raquo; está en este único versículo</span>, <a href="psalms-40.es.html#v40-12">el versículo 12</a>. &#9888; El estante imprime &laquo;refrené&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;restrinjo&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) en el versículo 10, y &laquo;retengas&raquo; (<span class="tag t-rv60">RV60</span>) y &laquo;restrinjas&raquo; (<span class="tag t-tnm">TNM&nbsp;1987</span>) en el 12.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-5">Psalm 40:5</a> (now on these pages) has <span data-heb="אשרי הגבר אשר שם יהוה מבטחו">&lsquo;happy is the strong man who has made Jehovah his trust&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-5">Salmo 40:5</a> (ya en estas páginas) tiene <span data-heb="אשרי הגבר אשר שם יהוה מבטחו">&laquo;feliz el hombre fuerte que ha puesto a Jehová por su confianza&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kasah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="צדקתך לא כסיתי בתוך לבי">&lsquo;your righteousness I have not covered in the midst of my heart&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'kasah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kasah']
+    DICTIONARY_ES['kasah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="צדקתך לא כסיתי בתוך לבי">&laquo;tu justicia no he cubierto en medio de mi corazón&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="חסדך ואמתך">&lsquo;your steadfast love and your truth&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="חסדך ואמתך">&laquo;tu misericordia y tu verdad&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="חסדך ואמתך">&lsquo;your steadfast love and your truth&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'emet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emet']
+    DICTIONARY_ES['emet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="חסדך ואמתך">&laquo;tu misericordia y tu verdad&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rachamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-12">Psalm 40:12</a> (now on these pages) has <span data-heb="לא תכלא רחמיך ממני">&lsquo;you will not hold back your compassions from me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rachamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rachamim']
+    DICTIONARY_ES['rachamim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-12">Salmo 40:12</a> (ya en estas páginas) tiene <span data-heb="לא תכלא רחמיך ממני">&laquo;no detendrás tus compasiones de mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'qahal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-10">Psalm 40:10</a> (now on these pages) has <span data-heb="בקהל רב">&lsquo;in the great congregation&rsquo;, which stands in four verses</span>.',) + _t[5:]
+if 'qahal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qahal']
+    DICTIONARY_ES['qahal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-10">Salmo 40:10</a> (ya en estas páginas) tiene <span data-heb="בקהל רב">&laquo;en la gran congregación&raquo;, que está en cuatro versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'bor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-3">Psalm 40:3</a> (now on these pages) has <span data-heb="ויעלני מבור שאון">&lsquo;and he brought me up out of the pit of tumult&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'bor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bor']
+    DICTIONARY_ES['bor'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-3">Salmo 40:3</a> (ya en estas páginas) tiene <span data-heb="ויעלני מבור שאון">&laquo;y me hizo subir del pozo del estruendo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chadash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-4">Psalm 40:4</a> (now on these pages) has <span data-heb="ויתן בפי שיר חדש">&lsquo;and he put a new song in my mouth&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chadash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chadash']
+    DICTIONARY_ES['chadash'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-4">Salmo 40:4</a> (ya en estas páginas) tiene <span data-heb="ויתן בפי שיר חדש">&laquo;y puso en mi boca un cántico nuevo&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-3">Psalm 40:3</a> (now on these pages) has <span data-heb="ויקם על סלע רגלי">&lsquo;and he set my feet on a rock&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sela' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sela']
+    DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-3">Salmo 40:3</a> (ya en estas páginas) tiene <span data-heb="ויקם על סלע רגלי">&laquo;y puso mis pies sobre una roca&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'zevach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="זבח ומנחה לא חפצת">&lsquo;sacrifice and offering you did not delight in&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'zevach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['zevach']
+    DICTIONARY_ES['zevach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="זבח ומנחה לא חפצת">&laquo;sacrificio y ofrenda no te deleitaron&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'minchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="זבח ומנחה לא חפצת">&lsquo;sacrifice and offering you did not delight in&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'minchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['minchah']
+    DICTIONARY_ES['minchah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="זבח ומנחה לא חפצת">&laquo;sacrificio y ofrenda no te deleitaron&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'olah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-7">Psalm 40:7</a> (now on these pages) has <span data-heb="עולה וחטאה לא שאלת">&lsquo;burnt offering and sin offering you did not ask&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'olah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olah']
+    DICTIONARY_ES['olah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-7">Salmo 40:7</a> (ya en estas páginas) tiene <span data-heb="עולה וחטאה לא שאלת">&laquo;holocausto y ofrenda por el pecado no pediste&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chaphets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="לעשות רצונך אלהי חפצתי">&lsquo;to do your will, my God, I delighted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chaphets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chaphets']
+    DICTIONARY_ES['chaphets'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="לעשות רצונך אלהי חפצתי">&laquo;hacer tu voluntad, Dios mío, me deleitó&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sefer':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-8">Psalm 40:8</a> (now on these pages) has <span data-heb="במגלת ספר כתוב עלי">&lsquo;in the scroll of the book it is written of me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'sefer' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sefer']
+    DICTIONARY_ES['sefer'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-8">Salmo 40:8</a> (ya en estas páginas) tiene <span data-heb="במגלת ספר כתוב עלי">&laquo;en el rollo del libro está escrito de mí&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'torah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="ותורתך בתוך מעי">&lsquo;and your law is within my inward parts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'torah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['torah']
+    DICTIONARY_ES['torah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="ותורתך בתוך מעי">&laquo;y tu ley está dentro de mis entrañas&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-9">Psalm 40:9</a> (now on these pages) has <span data-heb="לעשות רצונך אלהי חפצתי">&lsquo;to do your will, my God, I delighted&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ratson' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ratson']
+    DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-9">Salmo 40:9</a> (ya en estas páginas) tiene <span data-heb="לעשות רצונך אלהי חפצתי">&laquo;hacer tu voluntad, Dios mío, me deleitó&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'pala':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-6">Psalm 40:6</a> (now on these pages) has <span data-heb="נפלאתיך ומחשבתיך">&lsquo;your wonders and your thoughts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'pala' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['pala']
+    DICTIONARY_ES['pala'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-6">Salmo 40:6</a> (ya en estas páginas) tiene <span data-heb="נפלאתיך ומחשבתיך">&laquo;tus maravillas y tus pensamientos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'machashavah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-6">Psalm 40:6</a> (now on these pages) has <span data-heb="נפלאתיך ומחשבתיך">&lsquo;your wonders and your thoughts&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'machashavah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['machashavah']
+    DICTIONARY_ES['machashavah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-6">Salmo 40:6</a> (ya en estas páginas) tiene <span data-heb="נפלאתיך ומחשבתיך">&laquo;tus maravillas y tus pensamientos&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rahav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-5">Psalm 40:5</a> (now on these pages) has <span data-heb="ולא פנה אל רהבים">&lsquo;and has not turned to the proud&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'rahav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rahav']
+    DICTIONARY_ES['rahav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-5">Salmo 40:5</a> (ya en estas páginas) tiene <span data-heb="ולא פנה אל רהבים">&laquo;y no se ha vuelto a los soberbios&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'emunah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="אמונתך ותשועתך אמרתי">&lsquo;your faithfulness and your salvation I have spoken&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'emunah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['emunah']
+    DICTIONARY_ES['emunah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="אמונתך ותשועתך אמרתי">&laquo;tu fidelidad y tu salvación he hablado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'teshuah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-11">Psalm 40:11</a> (now on these pages) has <span data-heb="אמונתך ותשועתך אמרתי">&lsquo;your faithfulness and your salvation I have spoken&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'teshuah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['teshuah']
+    DICTIONARY_ES['teshuah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-11">Salmo 40:11</a> (ya en estas páginas) tiene <span data-heb="אמונתך ותשועתך אמרתי">&laquo;tu fidelidad y tu salvación he hablado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-13">Psalm 40:13</a> (now on these pages) has <span data-heb="השיגוני עונתי">&lsquo;my iniquities have overtaken me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'avon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avon']
+    DICTIONARY_ES['avon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-13">Salmo 40:13</a> (ya en estas páginas) tiene <span data-heb="השיגוני עונתי">&laquo;mis iniquidades me han alcanzado&raquo;, que está en este único versículo</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'bosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-15">Psalm 40:15</a> (now on these pages) has <span data-heb="יבשו ויחפרו יחד">&lsquo;let them be ashamed and confounded together&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'bosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bosh']
+    DICTIONARY_ES['bosh'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-15">Salmo 40:15</a> (ya en estas páginas) tiene <span data-heb="יבשו ויחפרו יחד">&laquo;sean avergonzados y confundidos a una&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'oni':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="ואני עני ואביון">&lsquo;and I am poor and needy&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'oni' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['oni']
+    DICTIONARY_ES['oni'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="ואני עני ואביון">&laquo;y yo estoy afligido y necesitado&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'evyon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="ואני עני ואביון">&lsquo;and I am poor and needy&rsquo;, which stands in two verses</span>.',) + _t[5:]
+if 'evyon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['evyon']
+    DICTIONARY_ES['evyon'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="ואני עני ואביון">&laquo;y yo estoy afligido y necesitado&raquo;, que está en dos versículos</span>.')
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chashav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-40.html#v40-18">Psalm 40:18</a> (now on these pages) has <span data-heb="אדני יחשב לי">&lsquo;the Lord thinks of me&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'chashav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chashav']
+    DICTIONARY_ES['chashav'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-40.es.html#v40-18">Salmo 40:18</a> (ya en estas páginas) tiene <span data-heb="אדני יחשב לי">&laquo;el Señor piensa en mí&raquo;, que está en este único versículo</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 40, 7), ('Hebrews', 10, 5), 'ears you have dug / a body you prepared — the quotation'),
+    (('Psalms', 40, 7), ('1 Samuel', 15, 22), 'sacrifice and offering not delighted in'),
+    (('Psalms', 40, 7), ('Psalms', 51, 18), 'you do not delight in sacrifice'),
+    (('Psalms', 40, 5), ('Psalms', 32, 1), 'happy — the strong man who trusts'),
+    (('Psalms', 40, 11), ('Psalms', 32, 5), 'not covered — the verb of confession'),
+    (('Psalms', 40, 10), ('Psalms', 22, 26), 'in the great congregation'),
+    (('Psalms', 40, 18), ('Psalms', 32, 2), 'Jehovah counts — the verb of reckoning'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms40"] = dict(era='monarchy',
+    when='A psalm of David for the director: waiting, waiting for Jehovah, who brings the psalmist up out of the pit of tumult and the miry clay, sets his feet on a rock and puts a new song in his mouth; happy the strong man who trusts and does not turn to the proud; the wonders and thoughts too many to number; sacrifice and offering not delighted in, ears dug, here I have come, in the scroll it is written of me; the glad news of righteousness told in the great congregation, steadfast love and truth not hidden; evils without number and iniquities overtaken him; and a prayer to be delivered, the shamed and the glad, and I am poor and needy, the Lord thinks of me.',
+    clock='Undated. The heading names David and the director and gives no occasion; the psalm gives nothing to date it. &#9888; Its last verses (14&ndash;18) are repeated, with small changes, as Psalm 70.')
+
+CHAPTER_ART["psalms40"] = [dict(
+    file='tres-riches-heures-f96r-psalm-39.jpg',
+    title='Folio 96r, Psalm 39 (Latin numbering): Expectans expectavi (Très Riches Heures du duc de Berry)', title_es='Folio 96r, Salmo 39 (numeración latina): Expectans expectavi (Très Riches Heures du duc de Berry)',
+    artist='Illuminators of the Très Riches Heures', artist_es='Iluminadores de las Très Riches Heures',
+    year='15th century', location='Musée Condé, Chantilly', location_es='Museo Condé, Chantilly',
+    alt='Part of an illuminated manuscript page. On the left, columns of black Latin text with small decorated capitals and a flowered border; on the right, a gold-framed miniature of a bearded, crowned man in a long grey robe with a white collar, kneeling with open hands among dark rocky peaks that burn with flames on their summits, with a few faces showing in the stone at the right edge. Beneath the miniature a large decorated initial begins the words Expectans expectavi Dominum.',
+    alt_es='Parte de una página de manuscrito iluminado. A la izquierda, columnas de texto latino negro con pequeñas capitales decoradas y una orla de flores; a la derecha, una miniatura con marco de oro de un hombre barbado y coronado, con una larga túnica gris y un cuello blanco, arrodillado con las manos abiertas entre peñascos oscuros que arden en llamas en sus cimas, con unos pocos rostros que asoman en la piedra en el borde derecho. Debajo de la miniatura una gran inicial decorada abre las palabras Expectans expectavi Dominum.',
+    note='Psalm 40:2. The page where this psalm begins in the Latin Bible, where it is Psalm 39: the lower right reads <em>Expectans expectavi Dominum</em>, &ldquo;waiting I waited for the Lord&rdquo;. The miniature beside it, of a crowned man kneeling among burning rocks, is the illuminator&rsquo;s own scene; the psalm itself has no fire, only a pit, a rock and a new song.',
+    note_es='Salmo 40:2. La página donde empieza este salmo en la Biblia latina, donde es el Salmo 39: abajo a la derecha se lee <em>Expectans expectavi Dominum</em>, «esperando esperé al Señor». La miniatura a su lado, de un hombre coronado arrodillado entre rocas ardientes, es la escena propia del iluminador; el salmo mismo no tiene fuego, solo un pozo, una roca y un cántico nuevo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Folio_96r_-_Psalm_XXXIX.jpg')]
+
+
+
+# Appended to library_data.py for Job 42 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('shevut', 'shevut', 'שְׁבוּת', 'shevut', 'A CAPTIVITY, and the idiom <em>shuv shevut</em>, &lsquo;turn the captivity&rsquo;, for a restoration: a people brought back (<a href="deuteronomy-30.html#v30-3">Deuteronomy 30:3</a>, now on these pages) and, here, one man. <a href="job-42.html#v42-10">Job 42:10</a> (now on these pages) is a ketiv/qere pair, written <em>shevit</em> and read <em>shevut</em>. Whether the noun comes from &lsquo;captive&rsquo; or from &lsquo;return&rsquo; has long been argued. &#9888; The shelf prints &lsquo;turned the captivity of Job&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;restored his fortunes&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;turned back the captive condition of Job&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;restored his wealth and happiness&rsquo; (<span class="tag t-tlb">TLB</span>) and &lsquo;was turned at the penance of Job&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 10)))
+DICTIONARY.append(('nezem', 'nezem', 'נֶזֶם', 'nezem', 'A RING worn in the nose or the ear. Ten verses carry these three consonants: Genesis 24:22, 24:30 and 24:47 (Rebekah&rsquo;s, and 24:47 says &lsquo;on her nose&rsquo;), Exodus 35:22, Judges 8:24&ndash;25, Ezekiel 16:12, <a href="job-42.html#v42-11">Job 42:11</a>, and Proverbs 11:22 and 25:12 (the search matches letters, not lemmas). <span data-heb="נזם זהב">&lsquo;A ring of gold&rsquo; stands in four verses</span>: <a href="genesis-24.html#v24-22">Genesis 24:22</a> (now on these pages), here and the two in Proverbs. &#9888; The shelf prints &lsquo;an earring of gold&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;a ring of gold&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a gold ring&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;one earring of gold&rsquo; (<span class="tag t-drb">Douay</span>), where Genesis 24:22 has a nose-ring.', ('Job', 42, 11)))
+DICTIONARY.append(('ketsiah', 'ketsi&rsquo;ah', 'קְצִיעָה', 'ketsi&rsquo;ah', 'CASSIA, a spice made from bark, and the name of Job&rsquo;s second daughter. <span data-heb="קציעה">The consonants stand in this one verse</span>, <a href="job-42.html#v42-14">Job 42:14</a> (now on these pages); in the plural, <em>qetsi&rsquo;ot</em>, the word is one of the spices of Psalm 45:9 (<span data-heb="קציעות">which stands in this one verse</span>, not yet on these pages). &#9888; The shelf prints the name as &lsquo;Kezia&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Keziah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>) and, translated, &lsquo;Cassia&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 14)))
+DICTIONARY.append(('puk', 'puk', 'פּוּךְ', 'puk', 'KOHL, the black eye-paint, and the stone it is made from. <span data-heb="בפוך">&lsquo;In kohl&rsquo; stands in three verses</span>: <a href="2-kings-9.html#v9-30">2 Kings 9:30</a> (now on these pages), Jeremiah 4:30 (not yet on these pages) and <a href="isaiah-54.html#v54-11">Isaiah 54:11</a>, where Jehovah lays the stones &lsquo;in kohl&rsquo; (now on these pages). <span data-heb="קרן הפוך">&lsquo;Keren-happuch&rsquo;, the third daughter&rsquo;s name, stands in this one verse</span>, <a href="job-42.html#v42-14">Job 42:14</a> (now on these pages): &lsquo;horn of kohl&rsquo;, the horn presumably the box it was kept in, which the text does not say. &#9888; The shelf prints the name unchanged (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and, translated, &lsquo;Cornustibil&rsquo; (<span class="tag t-drb">Douay</span>).', ('Job', 42, 14)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['shevut'] = ('shevut', 'UN CAUTIVERIO, y la expresión <em>shuv shevut</em>, «hacer volver el cautiverio», para una restauración: un pueblo traído de vuelta (<a href="deuteronomy-30.es.html#v30-3">Deuteronomio 30:3</a>, ya en estas páginas) y, aquí, un solo hombre. <a href="job-42.es.html#v42-10">Job 42:10</a> (ya en estas páginas) es un par ketiv/qere, escrito <em>shevit</em> y leído <em>shevut</em>. Si el sustantivo viene de «cautivo» o de «volver» se discute desde hace mucho. &#9888; El estante imprime «mudó Jehová la aflicción de Job» (<span class="tag t-rv">RV&nbsp;1909</span>), «quitó Jehová la aflicción de Job» (<span class="tag t-rv60">RV60</span>), «lo hizo prosperar de nuevo» (<span class="tag t-nvi">NVI</span>), «volvió atrás la condición de cautiverio de Job» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «acabó con el sufrimiento de Job» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['nezem'] = ('nezem', 'UNA ARGOLLA que se lleva en la nariz o en la oreja. Diez versículos llevan estas tres consonantes: Génesis 24:22, 24:30 y 24:47 (la de Rebeca, y 24:47 dice «en su nariz»), Éxodo 35:22, Jueces 8:24&ndash;25, Ezequiel 16:12, <a href="job-42.es.html#v42-11">Job 42:11</a> y Proverbios 11:22 y 25:12 (la búsqueda compara letras, no lemas). <span data-heb="נזם זהב">«Un anillo de oro» está en cuatro versículos</span>: <a href="genesis-24.html#v24-22">Génesis 24:22</a> (ya en estas páginas, todavía sin página en español), este y los dos de Proverbios. &#9888; El estante imprime «un zarcillo de oro» (<span class="tag t-rv">RV&nbsp;1909</span>), «un anillo de oro» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>), donde Génesis 24:22 tiene una argolla de nariz.')
+DICTIONARY_ES['ketsiah'] = ('ketsiah', 'LA CASIA, una especia hecha de corteza, y el nombre de la segunda hija de Job. <span data-heb="קציעה">Las consonantes están en este único versículo</span>, <a href="job-42.es.html#v42-14">Job 42:14</a> (ya en estas páginas); en plural, <em>qetsi&rsquo;ot</em>, la palabra es una de las especias del Salmo 45:9 (<span data-heb="קציעות">que está en este único versículo</span>, todavía no en estas páginas). &#9888; El estante imprime el nombre como «Cesiah» (<span class="tag t-rv">RV&nbsp;1909</span>), «Cesia» (<span class="tag t-rv60">RV60</span>), «Quesia» (<span class="tag t-nvi">NVI</span>) y «Quesías» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['puk'] = ('puk', 'EL ANTIMONIO, el afeite negro de los ojos, y la piedra de la que se hace. <span data-heb="בפוך">«En antimonio» está en tres versículos</span>: <a href="2-kings-9.es.html#v9-30">2 Reyes 9:30</a> (ya en estas páginas), Jeremías 4:30 (todavía no en estas páginas) e <a href="isaiah-54.es.html#v54-11">Isaías 54:11</a>, donde Jehová pone las piedras «en antimonio» (ya en estas páginas). <span data-heb="קרן הפוך">«Keren-happuch», el nombre de la tercera hija, está en este único versículo</span>, <a href="job-42.es.html#v42-14">Job 42:14</a> (ya en estas páginas): «cuerno de antimonio», el cuerno presumiblemente la caja en que se guardaba, lo que el texto no dice. &#9888; El estante imprime el nombre sin cambiar (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-2">Job 42:2</a> (now on these pages) has three pairs in one chapter: verse 2 written <em>yada&rsquo;ta</em>, &lsquo;you know&rsquo;, and read <em>yada&rsquo;ti</em>, &lsquo;I know&rsquo;; verse 10 written <em>shevit</em> and read <em>shevut</em>; and verse 16 written <em>vayar</em> and read <em>vayire</em>.',) + _t[5:]
+    if _t[0] == 'mezimmah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-2">Job 42:2</a> (now on these pages): <span data-heb="ולא יבצר ממך מזמה">&lsquo;no purpose is beyond you&rsquo; stands in this one verse</span>, where the plan is God&rsquo;s; the same verb of being beyond is in Genesis 11:6, of Babel&rsquo;s.',) + _t[5:]
+    if _t[0] == 'maas':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-6">Job 42:6</a> (now on these pages) has <em>em&rsquo;as</em> with no object at all: &lsquo;Therefore I reject, and I repent&rsquo;; in Job 9:21 the same verb takes &lsquo;my life&rsquo;.',) + _t[5:]
+    if _t[0] == 'nicham':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-6">Job 42:6</a> (now on these pages) has <em>nichamti</em>, &lsquo;I repent&rsquo;, and <a href="job-42.html#v42-11">verse 11</a> has <em>vayenachamu</em>, &lsquo;they comforted him&rsquo;, from the same root.',) + _t[5:]
+    if _t[0] == 'olah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has seven bulls and seven rams as an <em>olah</em> for the three friends; Job&rsquo;s own, for his children, is in <a href="job-1.html#v5">Job 1:5</a>.',) + _t[5:]
+    if _t[0] == 'panim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has <span data-heb="פניו אשא">&lsquo;his face only will I lift up&rsquo;, which stands in this one verse</span>, and <a href="job-42.html#v42-9">verse 9</a> says it was done: &lsquo;Jehovah lifted up Job&rsquo;s face&rsquo;.',) + _t[5:]
+    if _t[0] == 'nevalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-8">Job 42:8</a> (now on these pages) has <span data-heb="לבלתי עשות עמכם נבלה">&lsquo;so as not to do folly with you&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'acharit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-12">Job 42:12</a> (now on these pages) has <span data-heb="ברך את אחרית">&lsquo;blessed the latter end&rsquo;, which stands in this one verse</span>: the end of Job, blessed more than his beginning.',) + _t[5:]
+    if _t[0] == 'nachalah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-15">Job 42:15</a> (now on these pages): <span data-heb="ויתן להם אביהם נחלה">&lsquo;and their father gave them an inheritance&rsquo; stands in this one verse</span>, to daughters among seven brothers.',) + _t[5:]
+    if _t[0] == 'kesitah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="job-42.html#v42-11">Job 42:11</a> (now on these pages): each guest gives Job one <em>kesitah</em> and a ring of gold.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-2">Job 42:2</a> (ya en estas páginas) tiene tres pares en un capítulo: el versículo 2 escrito <em>yada&rsquo;ta</em>, «tú sabes», y leído <em>yada&rsquo;ti</em>, «yo sé»; el versículo 10 escrito <em>shevit</em> y leído <em>shevut</em>; y el versículo 16 escrito <em>vayar</em> y leído <em>vayire</em>.')
+if 'mezimmah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mezimmah']
+    DICTIONARY_ES['mezimmah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-2">Job 42:2</a> (ya en estas páginas): <span data-heb="ולא יבצר ממך מזמה">«ningún propósito se te puede impedir» está en este único versículo</span>, donde el plan es de Dios; el mismo verbo está en Génesis 11:6, del de Babel.')
+if 'maas' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['maas']
+    DICTIONARY_ES['maas'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-6">Job 42:6</a> (ya en estas páginas) tiene <em>em&rsquo;as</em> sin complemento alguno: «Por eso rechazo, y me arrepiento»; en Job 9:21 el mismo verbo lleva «mi vida».')
+if 'olah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olah']
+    DICTIONARY_ES['olah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene siete toros y siete carneros como una <em>olá</em> por los tres amigos; la del propio Job, por sus hijos, está en <a href="job-1.es.html#v5">Job 1:5</a>.')
+if 'panim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['panim']
+    DICTIONARY_ES['panim'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene <span data-heb="פניו אשא">«solo su rostro levantaré», que está en este único versículo</span>, y <a href="job-42.es.html#v42-9">el versículo 9</a> dice que se hizo: «Jehová levantó el rostro de Job».')
+if 'nevalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nevalah']
+    DICTIONARY_ES['nevalah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-8">Job 42:8</a> (ya en estas páginas) tiene <span data-heb="לבלתי עשות עמכם נבלה">«para no hacer con ustedes una insensatez», que está en este único versículo</span>.')
+if 'acharit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['acharit']
+    DICTIONARY_ES['acharit'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-12">Job 42:12</a> (ya en estas páginas) tiene <span data-heb="ברך את אחרית">«bendijo el final», que está en este único versículo</span>: el final de Job, bendecido más que su principio.')
+if 'nachalah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nachalah']
+    DICTIONARY_ES['nachalah'] = (_d[0], _d[1] + ' &#11088; <a href="job-42.es.html#v42-15">Job 42:15</a> (ya en estas páginas): <span data-heb="ויתן להם אביהם נחלה">«y su padre les dio herencia» está en este único versículo</span>, a hijas entre siete hermanos.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Job', 42, 2), ('Genesis', 11, 6), "nothing is beyond them / nothing is beyond you — the same verb, Babel's plan and God's"),
+    (('Job', 42, 3), ('Job', 38, 2), 'who is this that darkens / hides counsel without knowledge'),
+    (('Job', 42, 5), ('Exodus', 33, 20), 'the eye that sees — and a man cannot see and live'),
+    (('Job', 42, 6), ('Genesis', 18, 27), 'dust and ashes'),
+    (('Job', 42, 6), ('Genesis', 6, 6), 'the same verb, nacham — Jehovah regretted, Job repents'),
+    (('Job', 42, 8), ('Numbers', 23, 1), 'seven bulls and seven rams'),
+    (('Job', 42, 8), ('Genesis', 20, 7), 'he will pray for you — the offender goes to the one he wronged'),
+    (('Job', 42, 8), ('Job', 1, 5), "a burnt offering — Job's, for his children; the friends', now, by Job"),
+    (('Job', 42, 10), ('Deuteronomy', 30, 3), 'turn the captivity'),
+    (('Job', 42, 11), ('Genesis', 33, 19), 'one kesitah'),
+    (('Job', 42, 11), ('Genesis', 24, 22), 'a ring of gold, nezem'),
+    (('Job', 42, 12), ('Job', 1, 3), 'the same four numbers, doubled'),
+    (('Job', 42, 12), ('Job', 1, 21), "blessed — Job's word at the loss, Jehovah's word at the end"),
+    (('Job', 42, 14), ('Isaiah', 54, 11), "kohl — the stones laid in it; the third daughter's name"),
+    (('Job', 42, 15), ('Numbers', 27, 7), 'an inheritance for daughters among their brothers'),
+    (('Job', 42, 17), ('Genesis', 35, 29), 'old and full of days'),
+    (('Job', 42, 17), ('Genesis', 25, 8), 'old, and satisfied'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["job42"] = dict(era='patriarchs',
+    when='Job answers Jehovah: I know you can do all things; I spoke what I did not understand; I had heard of you, and now my eye has seen you; therefore I reject, and I repent, upon dust and ashes. Jehovah tells Eliphaz that he and his two friends have not spoken to him what is right, as his servant Job has, and sends them with seven bulls and seven rams for Job to pray over; Jehovah turns the captivity of Job and adds to all he had, to double; his family comes and eats with him; and Job has seven sons and three named daughters, an inheritance given to the daughters among their brothers, a hundred and forty years more, four generations, and dies old and full of days.',
+    clock='Undated. The book gives no date and names no king; the epilogue is the last chapter of the book and the only place it speaks of what happened after the suffering. &#9888; Job speaks for the last time in verses 1&ndash;6; the rest is told about him.')
+
+CHAPTER_ART["job42"] = [dict(
+    file='blake-job-20-daughters.jpg',
+    title='Job and His Daughters', title_es='Job y sus hijas',
+    artist='William Blake', artist_es='William Blake',
+    year='1825', location='Illustrations of the Book of Job, plate 20 (Yale Center for British Art)', location_es='Ilustraciones del libro de Job, lámina 20 (Yale Center for British Art)',
+    alt='A framed black-and-white engraving. In the centre panel an old bearded man sits on a bench with both arms stretched wide; a young woman sits against him on each side and a third kneels bowed in front of him. Above him a cloud with a face, and two bowed figures; in a round frame at each side an earlier scene, armed men fighting on the left and a running figure before a whirlwind on the right. The margins are vines, a lyre and a lute, with the captions &lsquo;There were not found Women fair as the Daughters of Job in all the Land &amp; their Father gave them Inheritance among their Brethren&rsquo;, &lsquo;How precious are thy thoughts unto me O God how great is the sum of them&rsquo; and &lsquo;If I ascend up into Heaven thou art there If I make my bed in Hell behold Thou art there&rsquo;.',
+    alt_es='Un grabado enmarcado en blanco y negro. En el panel central un anciano barbado está sentado en un banco con los dos brazos extendidos; una joven está sentada junto a él a cada lado y una tercera está arrodillada e inclinada ante él. Sobre él, una nube con un rostro y dos figuras inclinadas; en un marco redondo a cada lado una escena anterior, hombres armados luchando a la izquierda y una figura que corre ante un torbellino a la derecha. Los márgenes son vides, una lira y un laúd, con los textos &lsquo;There were not found Women fair as the Daughters of Job in all the Land &amp; their Father gave them Inheritance among their Brethren&rsquo;, &lsquo;How precious are thy thoughts unto me O God how great is the sum of them&rsquo; y &lsquo;If I ascend up into Heaven thou art there If I make my bed in Hell behold Thou art there&rsquo;.',
+    note='Job 42:15. Blake draws the verse he prints at the foot: the daughters beside their father, who sits with his arms stretched out. The three young women, the two round pictures of the old disasters and the cloud above are Blake&rsquo;s; the Hebrew says only that no women were so beautiful and that their father gave them an inheritance among their brothers, and never says where Job sat or what he did with his hands. The two lines in the margin are from the Psalms.',
+    note_es='Job 42:15. Blake dibuja el versículo que imprime al pie: las hijas junto a su padre, que está sentado con los brazos extendidos. Las tres jóvenes, los dos cuadros redondos de los viejos desastres y la nube de arriba son de Blake; el hebreo dice solo que ninguna mujer era tan hermosa y que su padre les dio herencia entre sus hermanos, y nunca dice dónde se sentó Job ni qué hizo con las manos. Las dos líneas del margen son de los Salmos.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:William_Blake_-_Book_of_Job,_Plate_20,_Job_and_His_Daughters_-_B1978.43.1522_-_Yale_Center_for_British_Art.jpg')]
+
+
+
+# Appended to library_data.py for Ecclesiastes 12 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('aviyyonah', 'aviyyonah', 'אֲבִיּוֹנָה', 'aviyyonah', 'THE CAPER BERRY, or what the caper berry stands for. <span data-heb="האביונה">The word stands in this one verse of the Hebrew Bible</span>, <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages), in a list of what fails in old age: &lsquo;the almond tree blossoms, the grasshopper drags itself along, and the <em>aviyyonah</em> bursts&rsquo;. The caper berry was eaten to rouse the appetite, which is the older reading of the line; its consonants are those of <em>evyon</em>, &lsquo;needy&rsquo;, with a final <em>-ah</em>. &#9888; The shelf prints &lsquo;desire shall fail&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;desire no longer is stirred&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;concupiscence shall be driven away&rsquo; (<span class="tag t-gnv">Geneva</span>), &lsquo;the caper berry bursts&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the caper tree shall be destroyed&rsquo; (<span class="tag t-drb">Douay</span>).', ('Ecclesiastes', 12, 5)))
+DICTIONARY.append(('asuppah', 'asuppah', 'אֲסֻפָּה', 'asuppah', 'A COLLECTION, something gathered: from <em>asaf</em>, to gather, the root that also gives the assembly of Qohelet&rsquo;s name. <span data-heb="בעלי אספות">&lsquo;Masters of collections&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="ecclesiastes-12.html#v12-11">Ecclesiastes 12:11</a> (now on these pages): the wise men&rsquo;s words are goads, and those who gather them are nails driven in. &#9888; The shelf prints &lsquo;masters of assemblies&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;collected sayings&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;those indulging in collections [of sentences]&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;by the counsel of masters&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;Students are wise who master what their teachers tell them&rsquo;.', ('Ecclesiastes', 12, 11)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['aviyyonah'] = ('aviyyonah', 'LA BAYA DE LA ALCAPARRA, o lo que representa. <span data-heb="האביונה">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas), en una lista de lo que falla en la vejez: «el almendro florece, el saltamontes se arrastra, y la <em>aviyyonah</em> revienta». La baya de la alcaparra se comía para abrir el apetito, que es la lectura más antigua de la línea; sus consonantes son las de <em>evyon</em>, «necesitado», con una <em>-ah</em> final. &#9888; El estante imprime «se perderá el apetito» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «se perderá el deseo» (<span class="tag t-nvi">NVI</span>), «la baya de la alcaparra se revienta» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «la alcaparra reviente» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['asuppah'] = ('asuppah', 'UNA COLECCIÓN, algo reunido: de <em>asaf</em>, reunir, la raíz que da también la asamblea del nombre de Qohelet. <span data-heb="בעלי אספות">«Maestros de colecciones» está en este único versículo de la Biblia hebrea</span>, <a href="ecclesiastes-12.es.html#v12-11">Eclesiastés 12:11</a> (ya en estas páginas): las palabras de los sabios son aguijones, y quienes las reúnen son clavos hincados. &#9888; El estante imprime «los maestros de las congregaciones» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «sus colecciones de dichos» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «los que se entregan a las colecciones de sentencias» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-6">Ecclesiastes 12:6</a> (now on these pages) has the verb of the silver cord written <em>yirchaq</em> and read <em>yeratek</em>; the Hebrew column keeps both.',) + _t[5:]
+    if _t[0] == 'chefets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-1">Ecclesiastes 12:1</a> (now on these pages) has <span data-heb="אין לי בהם חפץ">&lsquo;I have no delight in them&rsquo;, which stands in this one verse</span>, and <a href="ecclesiastes-12.html#v12-10">verse 10</a> has <span data-heb="דברי חפץ">&lsquo;words of delight&rsquo;, which stands in this one verse</span>: the years without it, and the words that have it.',) + _t[5:]
+    if _t[0] == 'hevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-8">Ecclesiastes 12:8</a> (now on these pages) closes the book&rsquo;s frame: <span data-heb="הבל הבלים">&lsquo;vapor of vapors&rsquo; stands in two verses</span>, 1:2 and this one, and <span data-heb="הכל הבל">&lsquo;all is vapor&rsquo; in six</span>.',) + _t[5:]
+    if _t[0] == 'ruach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-7">Ecclesiastes 12:7</a> (now on these pages): <span data-heb="והרוח תשוב">&lsquo;and the breath returns&rsquo; stands in this one verse</span>, <span data-heb="אל האלהים אשר נתנה">&lsquo;to God who gave it&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has <span data-heb="בית עולמו">&lsquo;his everlasting house&rsquo;, which stands in this one verse</span>, where man goes when the mourners are in the street.',) + _t[5:]
+    if _t[0] == 'bor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-6">Ecclesiastes 12:6</a> (now on these pages) has the wheel crushed at <em>ha-bor</em>, the cistern, the last word of the verse.',) + _t[5:]
+    if _t[0] == 'mitzvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-13">Ecclesiastes 12:13</a> (now on these pages): <span data-heb="ואת מצותיו שמור">&lsquo;and keep his commandments&rsquo; stands in this one verse</span>, the last command of the book.',) + _t[5:]
+    if _t[0] == 'roeh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-11">Ecclesiastes 12:11</a> (now on these pages) has <span data-heb="מרעה אחד">&lsquo;from one shepherd&rsquo;, which stands in this one verse</span>, an unnamed shepherd.',) + _t[5:]
+    if _t[0] == 'shaqed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has the almond tree that blossoms among the signs of old age.',) + _t[5:]
+    if _t[0] == 'chagav':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-5">Ecclesiastes 12:5</a> (now on these pages) has the <em>chagav</em> that <em>yistabbel</em>, drags itself along; <span data-heb="ויסתבל">the verb stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'qets':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-12">Ecclesiastes 12:12</a> (now on these pages): <span data-heb="אין קץ">&lsquo;there is no end&rsquo; stands in five verses</span>, of making many books.',) + _t[5:]
+    if _t[0] == 'zakhar-remember':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="ecclesiastes-12.html#v12-1">Ecclesiastes 12:1</a> (now on these pages) has the imperative, <span data-heb="וזכר את בוראיך">&lsquo;And remember your Creator&rsquo;, which stands in this one verse</span>.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-6">Eclesiastés 12:6</a> (ya en estas páginas) tiene el verbo del cordón de plata escrito <em>yirchaq</em> y leído <em>yeratek</em>; la columna hebrea conserva las dos.')
+if 'chefets' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chefets']
+    DICTIONARY_ES['chefets'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-1">Eclesiastés 12:1</a> (ya en estas páginas) tiene <span data-heb="אין לי בהם חפץ">«No tengo en ellos deleite», que está en este único versículo</span>, y <a href="ecclesiastes-12.es.html#v12-10">el versículo 10</a> tiene <span data-heb="דברי חפץ">«palabras de deleite», que está en este único versículo</span>: los años sin él, y las palabras que lo tienen.')
+if 'hevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hevel']
+    DICTIONARY_ES['hevel'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-8">Eclesiastés 12:8</a> (ya en estas páginas) cierra el marco del libro: <span data-heb="הבל הבלים">«vapor de vapores» está en dos versículos</span>, 1:2 y este, y <span data-heb="הכל הבל">«todo es vapor» en seis</span>.')
+if 'ruach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ruach']
+    DICTIONARY_ES['ruach'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-7">Eclesiastés 12:7</a> (ya en estas páginas): <span data-heb="והרוח תשוב">«y el aliento vuelva» está en este único versículo</span>, <span data-heb="אל האלהים אשר נתנה">«a Dios que lo dio» está en este único versículo</span>.')
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene <span data-heb="בית עולמו">«su casa eterna», que está en este único versículo</span>, adonde va el hombre cuando los plañideros están en la calle.')
+if 'bor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bor']
+    DICTIONARY_ES['bor'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-6">Eclesiastés 12:6</a> (ya en estas páginas) tiene la rueda rota en <em>ha-bor</em>, la cisterna, la última palabra del versículo.')
+if 'mitzvah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mitzvah']
+    DICTIONARY_ES['mitzvah'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-13">Eclesiastés 12:13</a> (ya en estas páginas): <span data-heb="ואת מצותיו שמור">«y guarda sus mandamientos» está en este único versículo</span>, el último mandato del libro.')
+if 'roeh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['roeh']
+    DICTIONARY_ES['roeh'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-11">Eclesiastés 12:11</a> (ya en estas páginas) tiene <span data-heb="מרעה אחד">«de un solo pastor», que está en este único versículo</span>, un pastor sin nombre.')
+if 'shaqed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shaqed']
+    DICTIONARY_ES['shaqed'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene el almendro que florece entre las señales de la vejez.')
+if 'chagav' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chagav']
+    DICTIONARY_ES['chagav'] = (_d[0], _d[1] + ' &#11088; <a href="ecclesiastes-12.es.html#v12-5">Eclesiastés 12:5</a> (ya en estas páginas) tiene el <em>chagav</em> que <em>yistabbel</em>, se arrastra; <span data-heb="ויסתבל">el verbo está en este único versículo</span>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Ecclesiastes', 12, 7), ('Genesis', 3, 19), 'to dust you shall return — the dust returns to the earth'),
+    (('Ecclesiastes', 12, 7), ('Genesis', 2, 7), 'the dust and the breath, taken apart'),
+    (('Ecclesiastes', 12, 7), ('Ecclesiastes', 3, 21), 'the breath: a question at 3:21, a statement here'),
+    (('Ecclesiastes', 12, 8), ('Ecclesiastes', 1, 2), 'vapor of vapors — the frame of the book'),
+    (('Ecclesiastes', 12, 10), ('Ecclesiastes', 3, 1), 'chefets — delight, purpose'),
+    (('Ecclesiastes', 12, 11), ('1 Samuel', 13, 21), 'the goad, dorban'),
+    (('Ecclesiastes', 12, 11), ('Ezekiel', 37, 24), 'one shepherd'),
+    (('Ecclesiastes', 12, 12), ('Isaiah', 9, 6), 'there is no end'),
+    (('Ecclesiastes', 12, 14), ('Job', 42, 3), "the hidden thing — the same root as 'hides counsel'"),
+    (('Ecclesiastes', 12, 3), ('Malachi', 3, 10), 'arubbot — the windows'),
+    (('Ecclesiastes', 12, 9), ('Proverbs', 18, 15), 'the ear — izzen, to weigh by listening'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["qoh12"] = dict(era='monarchy',
+    when='Remember your Creator in the days of your youth, before the days of evil and before the lights go out; the house, the mill, the almond tree, the silver cord and the golden bowl; the dust returns to the earth and the breath to God who gave it; vapor of vapors, all is vapor; Qohelet taught, weighed and set in order many proverbs; words of the wise are goads and nails given from one shepherd; of making many books there is no end; fear God and keep his commandments, for this is the whole of man; God will bring every work into judgment.',
+    clock='Same setting as chapters 1 and 3, filed under the monarchy because the speaker claims it. &#9888; Verses 9&ndash;14 speak of Qohelet in the third person and address a pupil, so the book&rsquo;s last voice is not the I of 1:12 and is not named.')
+
+CHAPTER_ART["qoh12"] = [dict(
+    file='holbein-dance-of-death-old-man.jpg',
+    title='The Old Man (Der Alt man)', title_es='El anciano (Der Alt man)',
+    artist='Hans Holbein the Younger', artist_es='Hans Holbein el Joven',
+    year='c. 1526', location='The Dance of Death, woodcut (Cleveland Museum of Art)', location_es='La danza de la muerte, xilografía (Cleveland Museum of Art)',
+    alt='A black-and-white woodcut with the title &lsquo;Der Alt man&rsquo; above. A bent old man with a long beard, in a fur-trimmed gown, walks with a stick; at his side a skeleton leans an arm on his shoulder and plays a stringed instrument with two sticks. An open grave lies in the foreground, an hourglass stands on a wall at the left, and clouds fill the sky.',
+    alt_es='Una xilografía en blanco y negro con el título &lsquo;Der Alt man&rsquo; arriba. Un anciano encorvado de larga barba, con una túnica ribeteada de piel, camina con un bastón; a su lado un esqueleto apoya un brazo en su hombro y toca un instrumento de cuerdas con dos palillos. Una tumba abierta está en primer plano, un reloj de arena está sobre un muro a la izquierda, y las nubes llenan el cielo.',
+    note='Ecclesiastes 12:1&ndash;7. Holbein&rsquo;s old man is bent, as verse 3&rsquo;s strong men are, and the grave is open in front of him; the hourglass and the skeleton with its instrument are Holbein&rsquo;s. The Hebrew has no skeleton and no grave: it has a house, a mill, an almond tree and a cord, and says only that man goes to his everlasting house and the mourners go about the street. The picture takes the old reading of the chapter, the body of an old man, and puts Death beside him.',
+    note_es='Eclesiastés 12:1&ndash;7. El anciano de Holbein está encorvado, como los fuertes del versículo 3, y la tumba está abierta ante él; el reloj de arena y el esqueleto con su instrumento son de Holbein. El hebreo no tiene esqueleto ni tumba: tiene una casa, un molino, un almendro y un cordón, y dice solo que el hombre va a su casa eterna y los plañideros andan por la calle. El cuadro toma la lectura antigua del capítulo, el cuerpo de un anciano, y pone a la Muerte a su lado.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:Hans_Holbein_-_Dance_of_Death-_The_Old_Man_-_1929.165_-_Cleveland_Museum_of_Art.jpg')]
+
+
+
+# Appended to library_data.py for Nehemiah 8 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('maoz', 'ma&rsquo;oz', 'מָעוֹז', 'ma&rsquo;oz', 'A STRONGHOLD, a fortified place to run to. <span data-heb="מעזכם">&lsquo;Your stronghold&rsquo; (<em>ma&rsquo;uzzekhem</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages): &lsquo;the joy of Jehovah is your stronghold&rsquo;. It is the word of &lsquo;Jehovah is the stronghold of my life&rsquo; (<a href="psalms-27.html#v27-1">Psalm 27:1</a>, now on these pages). &#9888; The shelf prints &lsquo;strength&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-tlb">TLB</span>), &lsquo;our strength&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;stronghold&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Nehemiah', 8, 10)))
+DICTIONARY.append(('chedvah', 'chedvah', 'חֶדְוָה', 'chedvat', 'JOY, gladness. <span data-heb="חדות יהוה">&lsquo;The joy of Jehovah&rsquo; (<em>chedvat Yehovah</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages). It is not the <em>simchah</em> of the same chapter (verses 12 and 17, <a href="dictionary.html#simchah">simchah</a>), which is the people&rsquo;s own gladness, but the joy that belongs to Jehovah. &#9888; The shelf prints &lsquo;the joy of the Lord&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>) and &lsquo;the joy of Jehovah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Nehemiah', 8, 10)))
+DICTIONARY.append(('mephorash', 'mephorash', 'מְפֹרָשׁ', 'mephorash', 'MADE DISTINCT, spelled out: the passive participle of <em>parash</em>, to separate. In <a href="nehemiah-8.html#v8-8">Nehemiah 8:8</a> (now on these pages) it describes how the law was read, and the question is whether it means read distinctly or read with explanation. &#9888; The shelf prints &lsquo;distinctly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;making it clear&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;it being expounded&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;distinctly and plainly to be understood&rsquo; (<span class="tag t-drb">Douay</span>).', ('Nehemiah', 8, 8)))
+DICTIONARY.append(('miqra', 'miqra', 'מִקְרָא', 'miqra', 'A READING, a calling: the noun of <em>qara</em>, to read or to call. <span data-heb="במקרא">&lsquo;In the reading&rsquo; (<em>ba-miqra</em>) stands in this one verse of the Hebrew Bible</span>, <a href="nehemiah-8.html#v8-8">Nehemiah 8:8</a> (now on these pages). The same consonants are the <em>miqra</em> of &lsquo;holy convocation&rsquo; (<a href="leviticus-23.html#v23-36">Leviticus 23:36</a>, now on these pages), the calling together of a feast. &#9888; The shelf prints &lsquo;the reading&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;what was being read&rsquo; (<span class="tag t-niv">NIV</span>) and nothing for it in the <span class="tag t-drb">Douay</span>.', ('Nehemiah', 8, 8)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['maoz'] = ('maoz', 'UNA FORTALEZA, un lugar fortificado al que correr. <span data-heb="מעזכם">«Su fortaleza» (<em>ma&rsquo;uzzekhem</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas): «el gozo de Jehová es su fortaleza». Es la palabra de «Jehová es la fortaleza de mi vida» (<a href="psalms-27.es.html#v27-1">Salmo 27:1</a>, ya en estas páginas). &#9888; El estante imprime «vuestra fortaleza» (<span class="tag t-rv">RV&nbsp;1909</span>), «vuestra fuerza» (<span class="tag t-rv60">RV60</span>), «su fortaleza» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «su plaza fuerte» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['chedvah'] = ('chedvah', 'ALEGRÍA, gozo. <span data-heb="חדות יהוה">«El gozo de Jehová» (<em>chedvat Yehovah</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas). No es la <em>simjá</em> del mismo capítulo (versículos 12 y 17, <a href="diccionario.html#simchah">simjá</a>), la alegría propia del pueblo, sino el gozo que pertenece a Jehová. &#9888; El estante imprime «el gozo de Jehová» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «el gozo del Señor» (<span class="tag t-nvi">NVI</span>) y «la felicidad que viene de Jehová» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['mephorash'] = ('mephorash', 'HECHO DISTINTO, expuesto: el participio pasivo de <em>parash</em>, separar. En <a href="nehemiah-8.es.html#v8-8">Nehemías 8:8</a> (ya en estas páginas) describe cómo se leyó la ley, y la pregunta es si significa leída distintamente o leída con explicación. &#9888; El estante imprime «claramente» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «con claridad» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «la cual se exponía» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['miqra'] = ('miqra', 'UNA LECTURA, una convocación: el sustantivo de <em>qara</em>, leer o llamar. <span data-heb="במקרא">«En la lectura» (<em>ba-miqra</em>) está en este único versículo de la Biblia hebrea</span>, <a href="nehemiah-8.es.html#v8-8">Nehemías 8:8</a> (ya en estas páginas). Las mismas consonantes son el <em>miqra</em> de «santa convocación» (<a href="leviticus-23.es.html#v23-36">Levítico 23:36</a>, ya en estas páginas), el llamado a reunirse de una fiesta. &#9888; El estante imprime «la lectura» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «su lectura» (<span class="tag t-nvi">NVI</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'atzarah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-18">Nehemiah 8:18</a> (now on these pages): <span data-heb="עצרת כמשפט">&lsquo;a solemn assembly, according to the ordinance&rsquo; stands in this one verse</span>, the eighth day after the seven days of booths.',) + _t[5:]
+    if _t[0] == 'hadas':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-15">Nehemiah 8:15</a> (now on these pages) has the myrtle among the leaves brought to make booths, with the olive, the oil tree, the palm and the thick tree.',) + _t[5:]
+    if _t[0] == 'sukkah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-14">Nehemiah 8:14</a> (now on these pages): <span data-heb="ישבו בני ישראל בסכות">&lsquo;that the sons of Israel should dwell in booths&rsquo; stands in this one verse</span>, and at verses 15&ndash;17 the booths are built on roofs, in courts and in the two squares.',) + _t[5:]
+    if _t[0] == 'amen':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-6">Nehemiah 8:6</a> (now on these pages): <span data-heb="אמן אמן">&lsquo;Amen, Amen&rsquo; stands in two verses</span>, Numbers 5:22 and this one.',) + _t[5:]
+    if _t[0] == 'simchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-12">Nehemiah 8:12</a> (now on these pages): <span data-heb="שמחה גדולה">&lsquo;great joy&rsquo; stands in nine verses</span>, this one and verse 17 among them, and the reason given is that they had understood.',) + _t[5:]
+    if _t[0] == 'shamen':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-15">Nehemiah 8:15</a> (now on these pages): <span data-heb="עץ שמן">&lsquo;the oil tree&rsquo; stands in two verses</span>, here and Isaiah 41:19.',) + _t[5:]
+    if _t[0] == 'qadosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-9">Nehemiah 8:9</a> (now on these pages) calls the day holy three times, at verses 9, 10 and 11, to people who are weeping.',) + _t[5:]
+    if _t[0] == 'nakhon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-10">Nehemiah 8:10</a> (now on these pages): <span data-heb="לאין נכון לו">&lsquo;to him for whom nothing is prepared&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'sakal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="nehemiah-8.html#v8-13">Nehemiah 8:13</a> (now on these pages): <span data-heb="ולהשכיל">&lsquo;to gain insight&rsquo; stands in two verses</span>, Daniel 9:13 and this one.',) + _t[5:]
+if 'atzarah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['atzarah']
+    DICTIONARY_ES['atzarah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-18">Nehemías 8:18</a> (ya en estas páginas): <span data-heb="עצרת כמשפט">«una asamblea solemne, conforme a la ordenanza» está en este único versículo</span>, el octavo día tras los siete de las cabañas.')
+if 'hadas' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hadas']
+    DICTIONARY_ES['hadas'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-15">Nehemías 8:15</a> (ya en estas páginas) tiene el arrayán entre las hojas traídas para hacer cabañas, con el olivo, el árbol de aceite, la palmera y el árbol espeso.')
+if 'sukkah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sukkah']
+    DICTIONARY_ES['sukkah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-14">Nehemías 8:14</a> (ya en estas páginas): <span data-heb="ישבו בני ישראל בסכות">«que los hijos de Israel habitaran en cabañas» está en este único versículo</span>, y en los versículos 15&ndash;17 las cabañas se levantan en terrados, patios y en las dos plazas.')
+if 'amen' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['amen']
+    DICTIONARY_ES['amen'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-6">Nehemías 8:6</a> (ya en estas páginas): <span data-heb="אמן אמן">«Amén, amén» está en dos versículos</span>, Números 5:22 y este.')
+if 'simchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['simchah']
+    DICTIONARY_ES['simchah'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-12">Nehemías 8:12</a> (ya en estas páginas): <span data-heb="שמחה גדולה">«gran alegría» está en nueve versículos</span>, entre ellos este y el versículo 17, y la razón dada es que habían entendido.')
+if 'shamen' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamen']
+    DICTIONARY_ES['shamen'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-15">Nehemías 8:15</a> (ya en estas páginas): <span data-heb="עץ שמן">«el árbol de aceite» está en dos versículos</span>, este e Isaías 41:19.')
+if 'qadosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['qadosh']
+    DICTIONARY_ES['qadosh'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-9">Nehemías 8:9</a> (ya en estas páginas) llama santo al día tres veces, en los versículos 9, 10 y 11, a un pueblo que llora.')
+if 'nakhon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['nakhon']
+    DICTIONARY_ES['nakhon'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-10">Nehemías 8:10</a> (ya en estas páginas): <span data-heb="לאין נכון לו">«al que no tiene nada preparado» está en este único versículo</span>.')
+if 'sakal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sakal']
+    DICTIONARY_ES['sakal'] = (_d[0], _d[1] + ' &#11088; <a href="nehemiah-8.es.html#v8-13">Nehemías 8:13</a> (ya en estas páginas): <span data-heb="ולהשכיל">«para adquirir perspicacia» está en dos versículos</span>, Daniel 9:13 y este.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Nehemiah', 8, 1), ('Judges', 20, 1), 'as one man — the congregation assembled, for war there and for a book here'),
+    (('Nehemiah', 8, 2), ('Leviticus', 23, 24), 'the first day of the seventh month'),
+    (('Nehemiah', 8, 3), ('Deuteronomy', 31, 11), 'the law read in their hearing'),
+    (('Nehemiah', 8, 6), ('Numbers', 5, 22), 'Amen, Amen'),
+    (('Nehemiah', 8, 6), ('Exodus', 4, 31), 'they bowed and prostrated themselves'),
+    (('Nehemiah', 8, 6), ('2 Chronicles', 7, 3), 'faces to the ground'),
+    (('Nehemiah', 8, 10), ('Psalms', 27, 1), "stronghold — ma'oz"),
+    (('Nehemiah', 8, 10), ('Genesis', 45, 5), 'do not be grieved'),
+    (('Nehemiah', 8, 10), ('Genesis', 6, 6), "the root of grief — Jehovah's regret"),
+    (('Nehemiah', 8, 13), ('Daniel', 9, 13), 'to gain insight'),
+    (('Nehemiah', 8, 14), ('Leviticus', 23, 42), 'dwell in booths'),
+    (('Nehemiah', 8, 15), ('Leviticus', 23, 40), 'the boughs — here leaves, and for building'),
+    (('Nehemiah', 8, 15), ('Isaiah', 41, 19), 'the oil tree'),
+    (('Nehemiah', 8, 15), ('Ezra', 1, 1), 'pass a voice — a proclamation'),
+    (('Nehemiah', 8, 18), ('Leviticus', 23, 36), 'the eighth day, a solemn assembly'),
+    (('Nehemiah', 8, 2), ('Joshua', 6, 21), 'from man to woman — Jericho'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["neh8"] = dict(era='return',
+    when='All the people gather as one man at the Water Gate and ask Ezra for the book of the law; Ezra reads from the light until midday on the first day of the seventh month from a tower of wood, the people stand, answer Amen, Amen and bow; the Levites cause the people to understand; the people weep, and Nehemiah, Ezra and the Levites tell them not to mourn, to eat the fat, drink the sweet and send portions, for the joy of Jehovah is their stronghold; on the second day they find the booths written, make them of leaves on roofs, in courts and in the squares, and Ezra reads day by day through the feast, with great joy.',
+    clock='Undated in the chapter, which gives only the first day of the seventh month and the feast that follows; filed under the return from exile. &#9888; The book of Ezra-Nehemiah places this chapter after the wall and the lists, and the Greek 1 Esdras places the reading with the Ezra material instead.')
+
+CHAPTER_ART["neh8"] = [dict(
+    file='dore-ezra-reads-the-law.jpg',
+    title='Ezra Reads the Law to the People', title_es='Esdras lee la ley al pueblo',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='La Sainte Bible, Dor&eacute; Bible illustrations (wood engraving)', location_es='La Sainte Bible, ilustraciones de Dor&eacute; (grabado en madera)',
+    alt='A black-and-white wood engraving. An old bearded man in a turban and long robe stands on a stone platform with steps, holding up a two-lobed tablet covered with lines of writing and pointing at it with one hand. Around him stand and crouch listeners in head-cloths and shawls; one in the lower left bows her head, and a figure at the lower right turns away with the face covered.',
+    alt_es='Un grabado en madera en blanco y negro. Un anciano barbado con turbante y larga túnica está de pie sobre una plataforma de piedra con escalones, sosteniendo en alto una tablilla de dos lóbulos cubierta de líneas de escritura y señalándola con una mano. A su alrededor están de pie y agachados oyentes con tocados y chales; una en la parte inferior izquierda inclina la cabeza, y una figura abajo a la derecha se vuelve con el rostro cubierto.',
+    note='Nehemiah 8:1&ndash;12. Dor&eacute;&rsquo;s Ezra stands on stone steps and holds up a tablet; the Hebrew has a tower of wood and a <em>sefer</em>, a book or scroll, opened before the eyes of the people. The tablet, the steps and the listeners drawn in the foreground, one with her head bowed, are Dor&eacute;&rsquo;s, and the picture has the weeping of verse 9 but not the standing of verse 5 or the thirteen men beside the reader.',
+    note_es='Nehem&iacute;as 8:1&ndash;12. El Esdras de Dor&eacute; est&aacute; sobre escalones de piedra y sostiene una tablilla; el hebreo tiene una torre de madera y un <em>sefer</em>, un libro o rollo, abierto ante los ojos del pueblo. La tablilla, los escalones y los oyentes del primer plano, uno con la cabeza inclinada, son de Dor&eacute;, y el cuadro tiene el llanto del versículo 9 pero no el ponerse de pie del versículo 5 ni los trece hombres junto al lector.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:109.Ezra_Reads_the_Law_to_the_People.jpg')]
+
+
+
+# Appended to library_data.py for Micah 5 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('efrat', 'Ephrath / Ephrathah', 'אֶפְרָת', 'efrat', 'EPHRATH, the old name that goes with Bethlehem, and EPHRATHAH, the same name with an ending. <span data-heb="בית לחם אפרתה">&lsquo;Bethlehem Ephrathah&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages). Rachel is buried &lsquo;on the way to Ephrath &mdash; that is, Bethlehem&rsquo; (<a href="genesis-35.html#v35-19">Genesis 35:19</a>, now on these pages), Ruth is blessed in Ephrathah (<a href="ruth-4.html#v4-11">Ruth 4:11</a>) and David is an Ephrathite of Bethlehem (<a href="1-samuel-17.html#v17-12">1 Samuel 17:12</a>). &#9888; The shelf prints &lsquo;Ephratah&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span> &lsquo;Ephrata&rsquo;), &lsquo;Ephrathah&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>) and &lsquo;Ephrathah&rsquo; with a hyphenated Bethlehem (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('Micah', 5, 1)))
+DICTIONARY.append(('motsaah', 'motsa&rsquo;ah', 'מוֹצָאָה', 'motsa&rsquo;ot', 'A GOING FORTH, an exit; in the plural, goings forth, origins. <span data-heb="ומוצאתיו">&lsquo;And his goings forth&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages), the noun of the verb <em>yetse</em>, &lsquo;will come out&rsquo;, that opens the same line. &#9888; The shelf prints &lsquo;goings forth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;origins&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;origin&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;going forth&rsquo; (<span class="tag t-drb">Douay</span>).', ('Micah', 5, 1)))
+DICTIONARY.append(('nasikh', 'nasikh', 'נָסִיךְ', 'nesikhei', 'A PRINCE, a leader (the word also means a drink poured out). <span data-heb="נסיכי אדם">&lsquo;Princes of men&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages), the eight that follow the seven shepherds. &#9888; The shelf prints &lsquo;principal men&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>), &lsquo;commanders&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;dukes of mankind&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;princes&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Micah', 5, 4)))
+DICTIONARY.append(('revivim', 'revivim', 'רְבִיבִים', 'revivim', 'SHOWERS, heavy rain on the grass. <span data-heb="כרביבים עלי עשב">&lsquo;Like showers on the grass&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="deuteronomy-32.html#v32-2">Deuteronomy 32:2</a>, where the teaching falls like them (now on these pages), and <a href="micah-5.html#v5-6">Micah 5:6</a> (now on these pages), where the remnant of Jacob is like them. &#9888; The shelf prints &lsquo;showers&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;copious showers&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;drops&rsquo; (<span class="tag t-drb">Douay</span>).', ('Micah', 5, 6)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['efrat'] = ('efrat', 'EFRAT, el nombre antiguo que acompaña a Belén, y EFRATA, el mismo nombre con una terminación. <span data-heb="בית לחם אפרתה">«Belén Efrata» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas). Raquel es sepultada «en el camino de Efrata — esto es, Belén» (<a href="genesis-35.es.html#v35-19">Génesis 35:19</a>, ya en estas páginas), Rut es bendecida en Efrata (<a href="ruth-4.es.html#v4-11">Rut 4:11</a>) y David es un efrateo de Belén (<a href="1-samuel-17.es.html#v17-12">1 Samuel 17:12</a>). &#9888; El estante imprime «Ephrata» (<span class="tag t-rv">RV&nbsp;1909</span>), «Efrata» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «Efrata» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['motsaah'] = ('motsaah', 'UNA SALIDA, una procedencia; en plural, salidas, orígenes. <span data-heb="ומוצאתיו">«Y sus salidas» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas), el sustantivo del verbo <em>yetse</em>, «saldrá», que abre la misma línea. &#9888; El estante imprime «sus salidas» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «sus orígenes» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y «cuyo origen» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['nasikh'] = ('nasikh', 'UN PRÍNCIPE, un jefe (la palabra significa también una bebida derramada). <span data-heb="נסיכי אדם">«Príncipes de hombres» está en este único versículo de la Biblia hebrea</span>, <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas), los ocho que siguen a los siete pastores. &#9888; El estante imprime «hombres principales» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «príncipes del pueblo» (<span class="tag t-nvi">NVI</span>), «adalides de la humanidad» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «príncipes de la humanidad» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['revivim'] = ('revivim', 'AGUACEROS, lluvia fuerte sobre la hierba. <span data-heb="כרביבים עלי עשב">«Como lluvias sobre la hierba» está en dos versículos de la Biblia hebrea</span>: <a href="deuteronomy-32.es.html#v32-2">Deuteronomio 32:2</a>, donde la enseñanza cae como ellas (ya en estas páginas), y <a href="micah-5.es.html#v5-6">Miqueas 5:6</a> (ya en estas páginas), donde el remanente de Jacob es como ellas. &#9888; El estante imprime «lluvias» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «abundante lluvia» (<span class="tag t-nvi">NVI</span>), «chaparrones copiosos» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «aguaceros» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sheerit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-6">Micah 5:6</a> (now on these pages): <span data-heb="שארית יעקב">&lsquo;the remnant of Jacob&rsquo; stands in two verses</span>, 6 and 7, once like dew and once like a lion.',) + _t[5:]
+    if _t[0] == 'shalom':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages): <span data-heb="והיה זה שלום">&lsquo;And this one will be peace&rsquo; stands in this one verse</span>, with no &lsquo;our&rsquo; in the Hebrew.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="מושל בישראל">&lsquo;ruler in Israel&rsquo; stands in two verses</span>, this one and 2 Chronicles 7:18; the Hebrew has no king.',) + _t[5:]
+    if _t[0] == 'olam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="מקדם מימי עולם">&lsquo;from of old, from the days of olam&rsquo; stands in this one verse</span>, of the goings forth of the one who comes out of Bethlehem.',) + _t[5:]
+    if _t[0] == 'elef':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-1">Micah 5:1</a> (now on these pages): <span data-heb="אלפי יהודה">&lsquo;the thousands of Judah&rsquo; stands in four verses</span>, 1 Samuel 23:23, here and Zechariah 12:5&ndash;6; Bethlehem is little to be among them.',) + _t[5:]
+    if _t[0] == 'asherah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-13">Micah 5:13</a> (now on these pages): <span data-heb="אשיריך">&lsquo;your Asherim&rsquo; stands in this one verse</span>, uprooted from among the people.',) + _t[5:]
+    if _t[0] == 'karat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-9">Micah 5:9</a> (now on these pages) has <em>hikhrati</em>, &lsquo;I will cut off&rsquo;, four times, at verses 9&ndash;12, after <em>yikkaretu</em> at verse 8: horses, cities, sorceries, carved images.',) + _t[5:]
+    if _t[0] == 'shuv':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-2">Micah 5:2</a> (now on these pages): the rest of his brothers will return, <em>yeshuvun</em>; the Douay reads it &lsquo;shall be converted&rsquo;, and at verse 3 the consonants of <em>veyashavu</em> can be read as dwelling or as returning.',) + _t[5:]
+    if _t[0] == 'ra-ah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-3">Micah 5:3</a> (now on these pages): <span data-heb="ורעה בעז יהוה">&lsquo;and shepherd in the strength of Jehovah&rsquo; stands in this one verse</span>, and the same verb is at verse 5, of the land of Assyria.',) + _t[5:]
+    if _t[0] == 'armon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="micah-5.html#v5-4">Micah 5:4</a> (now on these pages) has the Assyrian treading on <em>armenoteinu</em>, &lsquo;our palaces&rsquo;.',) + _t[5:]
+if 'shalom' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shalom']
+    DICTIONARY_ES['shalom'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas): <span data-heb="והיה זה שלום">«Y este será paz» está en este único versículo</span>, sin «nuestra» en el hebreo.')
+if 'mashal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashal']
+    DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="מושל בישראל">«gobernante en Israel» está en dos versículos</span>, este y 2 Crónicas 7:18; el hebreo no tiene rey.')
+if 'olam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['olam']
+    DICTIONARY_ES['olam'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="מקדם מימי עולם">«desde antiguo, desde los días de olam» está en este único versículo</span>, de las salidas del que sale de Belén.')
+if 'elef' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['elef']
+    DICTIONARY_ES['elef'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-1">Miqueas 5:1</a> (ya en estas páginas): <span data-heb="אלפי יהודה">«los millares de Judá» está en cuatro versículos</span>, 1 Samuel 23:23, este y Zacarías 12:5&ndash;6; Belén es pequeña para estar entre ellos.')
+if 'asherah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['asherah']
+    DICTIONARY_ES['asherah'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-13">Miqueas 5:13</a> (ya en estas páginas): <span data-heb="אשיריך">«tus Aserim» está en este único versículo</span>, arrancados de en medio del pueblo.')
+if 'karat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['karat']
+    DICTIONARY_ES['karat'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-9">Miqueas 5:9</a> (ya en estas páginas) tiene <em>hikhrati</em>, «cortaré», cuatro veces, en los versículos 9&ndash;12, tras <em>yikkaretu</em> en el versículo 8: caballos, ciudades, hechicerías, imágenes talladas.')
+if 'shuv' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shuv']
+    DICTIONARY_ES['shuv'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-2">Miqueas 5:2</a> (ya en estas páginas): el resto de sus hermanos volverá, <em>yeshuvun</em>; en el versículo 3 las consonantes de <em>veyashavu</em> pueden leerse como habitar o como volver.')
+if 'armon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['armon']
+    DICTIONARY_ES['armon'] = (_d[0], _d[1] + ' &#11088; <a href="micah-5.es.html#v5-4">Miqueas 5:4</a> (ya en estas páginas) tiene al asirio pisando <em>armenoteinu</em>, «nuestros palacios».')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Micah', 5, 1), ('Matthew', 2, 6), 'Bethlehem — little, and not the least of the rulers of Judah'),
+    (('Micah', 5, 1), ('2 Samuel', 5, 2), 'you shall shepherd my people Israel — the clause Matthew adds'),
+    (('Micah', 5, 1), ('Genesis', 35, 19), 'Ephrath, that is Bethlehem'),
+    (('Micah', 5, 1), ('Ruth', 4, 11), 'Ephrathah and Bethlehem'),
+    (('Micah', 5, 1), ('1 Samuel', 17, 12), 'an Ephrathite of Bethlehem — David'),
+    (('Micah', 5, 1), ('2 Chronicles', 7, 18), 'a man ruling in Israel'),
+    (('Micah', 5, 1), ('John', 7, 42), 'Bethlehem, where David was'),
+    (('Micah', 5, 2), ('Isaiah', 7, 14), 'she who bears'),
+    (('Micah', 5, 4), ('Ephesians', 2, 14), 'he is our peace'),
+    (('Micah', 5, 4), ('Amos', 1, 3), 'a number, and the next'),
+    (('Micah', 5, 5), ('Genesis', 10, 11), 'the land of Nimrod and Assyria'),
+    (('Micah', 5, 6), ('Deuteronomy', 32, 2), 'like showers on the grass'),
+    (('Micah', 5, 9), ('Deuteronomy', 17, 16), 'horses'),
+    (('Micah', 5, 11), ('Exodus', 7, 11), 'sorceries'),
+    (('Micah', 5, 12), ('Leviticus', 26, 1), 'carved image and pillar'),
+    (('Micah', 5, 13), ('Deuteronomy', 16, 21), 'Asherah'),
+    (('Micah', 5, 14), ('Micah', 6, 1), 'have not listened — Hear, please'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["micah5"] = dict(era='divided',
+    when='Bethlehem Ephrathah, little among the thousands of Judah: from you one will come out to Jehovah to be ruler in Israel, whose goings forth are from of old; he gives them up until she who bears has borne; the one who stands and shepherds in the strength of Jehovah, and this one will be peace when Assyria comes, with seven shepherds and eight princes; the remnant of Jacob like dew from Jehovah and like a lion among the nations; and Jehovah cuts off horses, chariots, cities, sorceries, carved images, pillars and Asherim, and takes vengeance on the nations that have not listened.',
+    clock='Eighth century BC, with the Assyrian threat of verses 4&ndash;5 as the horizon; the book dates Micah to the reigns of Jotham, Ahaz and Hezekiah. &#9888; The chapter is numbered five in the Hebrew and in this page from Bethlehem on; the English Bibles number the same verse 5:2.')
+
+CHAPTER_ART["micah5"] = [dict(
+    file='roberts-bethlehem-1839.jpg',
+    title='Bethlehem, April 6th 1839', title_es='Belén, 6 de abril de 1839',
+    artist='David Roberts (lithograph by Louis Haghe)', artist_es='David Roberts (litografía de Louis Haghe)',
+    year='1843', location='The Holy Land, Syria, Idumea, Arabia, Egypt and Nubia (Library of Congress)', location_es='Tierra Santa, Siria, Idumea, Arabia, Egipto y Nubia (Biblioteca del Congreso)',
+    alt='A tinted lithograph of a hill town seen from a height. Pale stone buildings, with a long walled complex at the left, stand along a ridge above terraced slopes and a dark wooded ravine; a wall with a small round tower runs down a path in the lower left, three small figures sit and stand on a rock ledge at the lower right, and bare ridges fade into the distance under a pale sky.',
+    alt_es='Una litografía tintada de un pueblo en una colina visto desde lo alto. Edificios de piedra clara, con un largo conjunto amurallado a la izquierda, se alinean en una cresta sobre laderas en terrazas y un barranco oscuro arbolado; un muro con una pequeña torre redonda baja por un sendero en la parte inferior izquierda, tres figuras pequeñas están sentadas y de pie en un saliente de roca abajo a la derecha, y cordilleras desnudas se pierden a lo lejos bajo un cielo pálido.',
+    note='Micah 5:1. Roberts drew Bethlehem as a hill town on a ridge, which is what the Hebrew &lsquo;little to be among the thousands of Judah&rsquo; sets beside the question of its size; the town, the tower and the three travelers are the artist&rsquo;s, from his journey of 1839, more than two and a half thousand years after the prophet. The picture shows the place and nothing of the promise, and the large complex at the left is a later church and convent.',
+    note_es='Miqueas 5:1. Roberts dibujó Belén como un pueblo de colina sobre una cresta, que es lo que el hebreo «pequeña para estar entre los millares de Judá» pone junto a la cuestión de su tamaño; el pueblo, la torre y los tres viajeros son del artista, de su viaje de 1839, más de dos mil quinientos años después del profeta. El cuadro muestra el lugar y nada de la promesa, y el gran conjunto de la izquierda es una iglesia y convento posteriores.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Bethlehem_April_6th_1839_LCCN2002717531.jpg')]
+
+
+
+# Appended to library_data.py for Zephaniah 3 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('pochaz', 'pochaz', 'פֹּחֵז', 'pochazim', 'RECKLESS, frothy, light: the word for a person who boils over, with no weight. <span data-heb="פחזים">The plural stands in this one form</span> in <a href="zephaniah-3.html#v3-4">Zephaniah 3:4</a> (now on these pages), of the prophets who are <em>pochazim, anshei bogedot</em>, &lsquo;reckless, men of treacheries&rsquo;; it is the same consonants as the word for a wild unruliness of Reuben (Genesis 49:4). &#9888; The shelf prints &lsquo;light&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;unprincipled&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;insolent&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;senseless&rsquo; (<span class="tag t-drb">Douay</span>) and, for the <span class="tag t-tlb">TLB</span>, &lsquo;liars&rsquo;.', ('Zephaniah', 3, 4)))
+DICTIONARY.append(('zeev-erev', 'ze&rsquo;ev erev', 'זְאֵב עֶרֶב', 'ze&rsquo;evei erev', 'AN EVENING WOLF, a wolf that hunts at dusk and eats through the night. <span data-heb="זאבי ערב">&lsquo;Evening wolves&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="zephaniah-3.html#v3-3">Zephaniah 3:3</a> (now on these pages), of Jerusalem&rsquo;s judges who &lsquo;do not gnaw until the morning&rsquo;, and <a href="habakkuk-1.html#v8">Habakkuk 1:8</a>, of the Chaldean horses (now on these pages). &#9888; The shelf prints &lsquo;evening wolves&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-drb">Douay</span>), &lsquo;wolves in the evening&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;ravenous wolves at evening time&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Zephaniah', 3, 3)))
+DICTIONARY.append(('nuge', 'nuge moed', 'נוּגֵי מִמּוֹעֵד', 'nugei mimmoed', 'THOSE GRIEVED FAR FROM THE APPOINTED FEAST: the words are <em>nugei mimmoed</em>, from <em>yagah</em>, to grieve, and <em>moed</em>, an appointed time. <span data-heb="נוגי ממועד">They stand in this one verse of the Hebrew Bible</span>, <a href="zephaniah-3.html#v3-18">Zephaniah 3:18</a> (now on these pages), a line the versions read in six ways. &#9888; The shelf prints &lsquo;them that are sorrowful for the solemn assembly&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;all who mourn over the loss of your appointed festivals&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;the ones grief-stricken in absence from [your] festal season&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the afflicted&rsquo; (<span class="tag t-gnv">Geneva</span>) and &lsquo;the triflers that were departed from the law&rsquo; (<span class="tag t-drb">Douay</span>).', ('Zephaniah', 3, 18)))
+DICTIONARY.append(('tsolea', 'tsole&rsquo;ah', 'הַצֹּלֵעָה', 'ha-tsole&rsquo;ah', 'THE LAME ONE, the one who limps. <span data-heb="הצלעה">&lsquo;The lame&rsquo; stands in three verses of the Hebrew Bible</span>: Micah 4:6 and 4:7 (not yet on these pages) and <a href="zephaniah-3.html#v3-19">Zephaniah 3:19</a> (now on these pages), always with <em>ha-niddachah</em>, the driven away. Jacob leaves Peniel limping, with the verb of the same root (<a href="genesis-32.html#v32-32">Genesis 32:32</a>, now on these pages). &#9888; The shelf prints &lsquo;her that halteth&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;that which is lame&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;the lame&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;her that is limping&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;the weak and helpless ones&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Zephaniah', 3, 19)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['pochaz'] = ('pochaz', 'IMPRUDENTE, espumoso, liviano: la palabra para quien hierve sin peso. <span data-heb="פחזים">El plural está solo en esta forma</span> en <a href="zephaniah-3.es.html#v3-4">Sofonías 3:4</a> (ya en estas páginas), de los profetas que son <em>pochazim, anshei bogedot</em>, «livianos, hombres de traiciones»; son las mismas consonantes que la palabra para la desenfrenada turbulencia de Rubén (Génesis 49:4). &#9888; El estante imprime «livianos» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «inescrupulosos» (<span class="tag t-nvi">NVI</span>), «insolentes» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['zeev-erev'] = ('zeev-erev', 'UN LOBO DE LA TARDE, un lobo que caza al anochecer y come por la noche. <span data-heb="זאבי ערב">«Lobos de la tarde» está en dos versículos de la Biblia hebrea</span>: <a href="zephaniah-3.es.html#v3-3">Sofonías 3:3</a> (ya en estas páginas), de los jueces de Jerusalén que «no roen hasta la mañana», y <a href="habakkuk-1.es.html#v8">Habacuc 1:8</a>, de los caballos de los caldeos (ya en estas páginas). &#9888; El estante imprime «lobos de tarde» (<span class="tag t-rv">RV&nbsp;1909</span>), «lobos nocturnos» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['nuge'] = ('nuge', 'LOS AFLIGIDOS LEJOS DE LA FIESTA SEÑALADA: las palabras son <em>nugei mimmoed</em>, de <em>yagah</em>, afligirse, y <em>moed</em>, un tiempo señalado. <span data-heb="נוגי ממועד">Están en este único versículo de la Biblia hebrea</span>, <a href="zephaniah-3.es.html#v3-18">Sofonías 3:18</a> (ya en estas páginas), una línea que las versiones leen de seis maneras. &#9888; El estante imprime «los fastidiados por causa del largo tiempo» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «las tristezas» (<span class="tag t-nvi">NVI</span>), «los que están desconsolados por su ausencia de [tu] período de fiesta» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «los que están tristes por no asistir a tus fiestas» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['tsolea'] = ('tsolea', 'LA COJA, la que renquea. <span data-heb="הצלעה">«La coja» está en tres versículos de la Biblia hebrea</span>: Miqueas 4:6 y 4:7 (todavía no en estas páginas) y <a href="zephaniah-3.es.html#v3-19">Sofonías 3:19</a> (ya en estas páginas), siempre con <em>ha-niddachah</em>, la dispersada. Jacob sale de Peniel cojeando, con el verbo de la misma raíz (<a href="genesis-32.html#v32-32">Génesis 32:32</a>, ya en estas páginas, todavía sin página en español). &#9888; El estante imprime «la coja» (<span class="tag t-rv">RV&nbsp;1909</span>), «la que cojea» (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «la oveja que cojea» (<span class="tag t-nvi">NVI</span>) y «los que cojean» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'marah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-1">Zephaniah 3:1</a> (now on these pages): <span data-heb="הוי מראה">&lsquo;Woe to the rebellious&rsquo; stands in this one verse</span>; the <span class="tag t-kjv">KJV</span> has &lsquo;filthy&rsquo; for the same word.',) + _t[5:]
+    if _t[0] == 'musar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-2">Zephaniah 3:2</a> (now on these pages): <span data-heb="לא לקחה מוסר">&lsquo;she did not take correction&rsquo; stands in this one verse</span>, and at verse 7 the hope is <span data-heb="תקחי מוסר">&lsquo;you will take correction&rsquo;</span>.',) + _t[5:]
+    if _t[0] == 'avel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages): <span data-heb="לא יעשה עולה">&lsquo;he does no injustice&rsquo;</span> is said of Jehovah in the midst of the city.',) + _t[5:]
+    if _t[0] == 'bosh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages) has <em>boshet</em>, &lsquo;the unjust one knows no shame&rsquo;, and verses 11 and 19 return to it: not ashamed in that day, and praise &lsquo;where their shame was&rsquo;.',) + _t[5:]
+    if _t[0] == 'saphah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-9">Zephaniah 3:9</a> (now on these pages): <span data-heb="שפה ברורה">&lsquo;a pure lip&rsquo; stands in this one verse</span>, given to the peoples after the &lsquo;one lip&rsquo; of Genesis 11:1.',) + _t[5:]
+    if _t[0] == 'shekhem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-9">Zephaniah 3:9</a> (now on these pages): <span data-heb="שכם אחד">&lsquo;with one shoulder&rsquo; stands in two verses</span>, here and Genesis 48:22.',) + _t[5:]
+    if _t[0] == 'alaz':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-14">Zephaniah 3:14</a> (now on these pages) has <em>ve&rsquo;ilzi</em>, &lsquo;exult&rsquo;, said to the daughter of Jerusalem; verse 11 has the proudly exulting ones, <em>alizei</em>, removed from her midst.',) + _t[5:]
+    if _t[0] == 'simchah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-14">Zephaniah 3:14</a> (now on these pages): <em>simchi</em>, &lsquo;be glad&rsquo;, is said to the daughter, and at verse 17 he rejoices over her <em>besimchah</em>, with joy.',) + _t[5:]
+    if _t[0] == 'gibbor':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="גבור יושיע">&lsquo;a mighty one who saves&rsquo; stands in this one verse</span>, in the midst of Jerusalem.',) + _t[5:]
+    if _t[0] == 'sus':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="ישיש עליך">&lsquo;he will rejoice over you&rsquo; stands in two verses</span>, here and Isaiah 62:5.',) + _t[5:]
+    if _t[0] == 'charash':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="יחריש באהבתו">&lsquo;he will be silent in his love&rsquo; stands in this one verse</span>; the <span class="tag t-kjv">KJV</span> has &lsquo;he will rest in his love&rsquo; and the <span class="tag t-niv">NIV</span> &lsquo;he will no longer rebuke you&rsquo;.',) + _t[5:]
+    if _t[0] == 'rinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages): <span data-heb="יגיל עליך ברנה">&lsquo;he will exult over you with singing&rsquo; stands in this one verse</span>, the noun of <em>roni</em>, &lsquo;sing&rsquo;, said to the daughter of Zion at verse 14.',) + _t[5:]
+    if _t[0] == 'shevut':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-20">Zephaniah 3:20</a> (now on these pages): <span data-heb="בשובי את שבותיכם">&lsquo;when I turn back your captivity&rsquo; stands in this one verse</span>, the last words of the chapter before <em>amar Yehovah</em>.',) + _t[5:]
+    if _t[0] == 'tehillah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-19">Zephaniah 3:19</a> (now on these pages): <span data-heb="לתהלה ולשם">&lsquo;for praise and for a name&rsquo; stands in two verses</span>, Deuteronomy 26:19 and here, and at verse 20 the order is reversed.',) + _t[5:]
+    if _t[0] == 'moed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-18">Zephaniah 3:18</a> (now on these pages): <span data-heb="נוגי ממועד">&lsquo;those grieved far from the appointed feast&rsquo; stands in this one verse</span>, a line that the shelf reads six ways.',) + _t[5:]
+    if _t[0] == 'yanah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="zephaniah-3.html#v3-1">Zephaniah 3:1</a> (now on these pages): <span data-heb="העיר היונה">&lsquo;the city, the oppressing one&rsquo;, <em>ha-ir ha-yonah</em>, stands in this one verse</span>; its letters are also those of the dove.',) + _t[5:]
+if 'marah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['marah']
+    DICTIONARY_ES['marah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-1">Sofonías 3:1</a> (ya en estas páginas): <span data-heb="הוי מראה">«¡Ay de la rebelde!» está en este único versículo</span>; la <span class="tag t-rv">RV&nbsp;1909</span> dice «ensuciada» para la misma palabra.')
+if 'musar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['musar']
+    DICTIONARY_ES['musar'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-2">Sofonías 3:2</a> (ya en estas páginas): <span data-heb="לא לקחה מוסר">«no tomó corrección» está en este único versículo</span>, y en el versículo 7 la esperanza es <span data-heb="תקחי מוסר">«tomarás corrección»</span>.')
+if 'avel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avel']
+    DICTIONARY_ES['avel'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas): <span data-heb="לא יעשה עולה">«no hace injusticia»</span> se dice de Jehová en medio de la ciudad.')
+if 'bosh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['bosh']
+    DICTIONARY_ES['bosh'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas) tiene <em>boshet</em>, «el injusto no conoce la vergüenza», y los versículos 11 y 19 vuelven a ella: no avergonzada en aquel día, y alabanza «donde fue su vergüenza».')
+if 'saphah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['saphah']
+    DICTIONARY_ES['saphah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-9">Sofonías 3:9</a> (ya en estas páginas): <span data-heb="שפה ברורה">«un labio puro» está en este único versículo</span>, dado a los pueblos tras el «un solo labio» de Génesis 11:1.')
+if 'shekhem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shekhem']
+    DICTIONARY_ES['shekhem'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-9">Sofonías 3:9</a> (ya en estas páginas): <span data-heb="שכם אחד">«con un solo hombro» está en dos versículos</span>, este y Génesis 48:22.')
+if 'alaz' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['alaz']
+    DICTIONARY_ES['alaz'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-14">Sofonías 3:14</a> (ya en estas páginas) tiene <em>ve&rsquo;ilzi</em>, «regocíjate», dicho a la hija de Jerusalén; el versículo 11 tiene a los altivos que se alborozan, <em>alizei</em>, quitados de en medio de ella.')
+if 'simchah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['simchah']
+    DICTIONARY_ES['simchah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-14">Sofonías 3:14</a> (ya en estas páginas): <em>simchi</em>, «alégrate», se dice a la hija, y en el versículo 17 él se alegra sobre ella <em>besimchah</em>, con alegría.')
+if 'gibbor' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gibbor']
+    DICTIONARY_ES['gibbor'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="גבור יושיע">«poderoso que salva» está en este único versículo</span>, en medio de Jerusalén.')
+if 'sus' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sus']
+    DICTIONARY_ES['sus'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="ישיש עליך">«se gozará sobre ti» está en dos versículos</span>, este e Isaías 62:5.')
+if 'charash' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['charash']
+    DICTIONARY_ES['charash'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="יחריש באהבתו">«callará en su amor» está en este único versículo</span>; la <span class="tag t-nvi">NVI</span> dice «te renovará con su amor».')
+if 'rinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rinnah']
+    DICTIONARY_ES['rinnah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas): <span data-heb="יגיל עליך ברנה">«se regocijará sobre ti con cantos» está en este único versículo</span>, el sustantivo de <em>roni</em>, «canta», dicho a la hija de Sión en el versículo 14.')
+if 'shevut' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevut']
+    DICTIONARY_ES['shevut'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-20">Sofonías 3:20</a> (ya en estas páginas): <span data-heb="בשובי את שבותיכם">«cuando haga volver su cautiverio» está en este único versículo</span>, las últimas palabras del capítulo antes de <em>amar Yehovah</em>.')
+if 'tehillah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehillah']
+    DICTIONARY_ES['tehillah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-19">Sofonías 3:19</a> (ya en estas páginas): <span data-heb="לתהלה ולשם">«por alabanza y por nombre» está en dos versículos</span>, Deuteronomio 26:19 y este, y en el versículo 20 el orden se invierte.')
+if 'moed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['moed']
+    DICTIONARY_ES['moed'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-18">Sofonías 3:18</a> (ya en estas páginas): <span data-heb="נוגי ממועד">«los afligidos lejos de la fiesta señalada» está en este único versículo</span>, una línea que el estante lee de seis maneras.')
+if 'yanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yanah']
+    DICTIONARY_ES['yanah'] = (_d[0], _d[1] + ' &#11088; <a href="zephaniah-3.es.html#v3-1">Sofonías 3:1</a> (ya en estas páginas): <span data-heb="העיר היונה">«la ciudad, la opresora», <em>ha-ir ha-yonah</em>, está en este único versículo</span>; sus letras son también las de la paloma.')
+
+# ---- flips
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'yanah':
+        assert 'with its participle (none yet on these pages)' in _t[4], 'yanah'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('with its participle (none yet on these pages)', 'with its participle (the others not yet on these pages)'),) + _t[5:]
+if 'yanah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yanah']
+    assert 'con su participio (ninguno todavía en estas páginas)' in _d[1], 'yanah'
+    DICTIONARY_ES['yanah'] = (_d[0], _d[1].replace('con su participio (ninguno todavía en estas páginas)', 'con su participio (los demás todavía no en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'avel':
+        assert 'Zephaniah 3:5 (not yet on these pages)' in _t[4], 'avel'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('Zephaniah 3:5 (not yet on these pages)', '<a href="zephaniah-3.html#v3-5">Zephaniah 3:5</a> (now on these pages)'),) + _t[5:]
+if 'avel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['avel']
+    assert 'Sofonías 3:5 (todavía no en estas páginas)' in _d[1], 'avel'
+    DICTIONARY_ES['avel'] = (_d[0], _d[1].replace('Sofonías 3:5 (todavía no en estas páginas)', '<a href="zephaniah-3.es.html#v3-5">Sofonías 3:5</a> (ya en estas páginas)'))
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'sis':
+        assert 'at 65:19 and Zephaniah 3:17 (none yet on these pages)' in _t[4], 'sis'
+        DICTIONARY[_i] = _t[:4] + (_t[4].replace('at 65:19 and Zephaniah 3:17 (none yet on these pages)', 'at 65:19 and <a href="zephaniah-3.html#v3-17">Zephaniah 3:17</a> (now on these pages; the other two not yet)'),) + _t[5:]
+if 'sis' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sis']
+    assert 'en 65:19 y Sofonías 3:17 (ninguno todavía en estas páginas)' in _d[1], 'sis'
+    DICTIONARY_ES['sis'] = (_d[0], _d[1].replace('en 65:19 y Sofonías 3:17 (ninguno todavía en estas páginas)', 'en 65:19 y <a href="zephaniah-3.es.html#v3-17">Sofonías 3:17</a> (ya en estas páginas; los otros dos todavía no)'))
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Zephaniah', 3, 1), ('Genesis', 8, 8), 'ha-yonah — the dove, and the oppressing'),
+    (('Zephaniah', 3, 3), ('Habakkuk', 1, 8), 'evening wolves'),
+    (('Zephaniah', 3, 5), ('Deuteronomy', 32, 4), 'he does no injustice'),
+    (('Zephaniah', 3, 5), ('Isaiah', 40, 26), 'it does not fail'),
+    (('Zephaniah', 3, 5), ('Exodus', 16, 21), 'morning by morning'),
+    (('Zephaniah', 3, 6), ('Zephaniah', 1, 16), 'corner towers'),
+    (('Zephaniah', 3, 8), ('Zephaniah', 1, 18), 'in the fire of my jealousy all the earth will be consumed'),
+    (('Zephaniah', 3, 9), ('Genesis', 11, 1), 'a pure lip — one lip, again'),
+    (('Zephaniah', 3, 9), ('Genesis', 48, 22), 'one shoulder'),
+    (('Zephaniah', 3, 13), ('Leviticus', 26, 6), 'none to make you afraid'),
+    (('Zephaniah', 3, 13), ('Psalms', 23, 2), 'pasture and lie down'),
+    (('Zephaniah', 3, 14), ('Isaiah', 54, 1), 'Sing'),
+    (('Zephaniah', 3, 16), ('Isaiah', 54, 4), 'do not fear'),
+    (('Zephaniah', 3, 16), ('Genesis', 21, 17), 'do not fear — to a woman'),
+    (('Zephaniah', 3, 17), ('Deuteronomy', 7, 21), 'Jehovah your God is in the midst of you'),
+    (('Zephaniah', 3, 19), ('Genesis', 32, 32), 'the lame'),
+    (('Zephaniah', 3, 19), ('Deuteronomy', 26, 19), 'for praise and for a name'),
+    (('Zephaniah', 3, 20), ('Deuteronomy', 30, 3), 'turn back the captivity'),
+    (('Zephaniah', 3, 20), ('Job', 42, 10), 'turn back the captivity'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["zephaniah3"] = dict(era='divided',
+    when='Woe to the rebellious, polluted, oppressing city that did not listen, take correction, trust or draw near; princes like lions, judges like evening wolves, reckless prophets, priests who profane what is holy; Jehovah righteous in her midst and giving his judgment every morning while they rose early to corrupt; wait for me for the day I rise up; then a pure lip, and offerings from beyond the rivers of Cush; an afflicted and poor people left in her midst, the remnant of Israel who pasture and lie down; sing, daughter of Zion, for the King of Israel is in your midst and he will exult over you with singing; and the lame and the driven away gathered, a name and a praise, when I turn back your captivity.',
+    clock='Seventh century BC; the book dates Zephaniah to the reign of Josiah. &#9888; Verses 1&ndash;7 name no city, and the dating of the verses of promise at the end of the chapter, 14&ndash;20, is argued.')
+
+CHAPTER_ART["zephaniah3"] = [dict(
+    file='zephaniah-yaroslavl-icon.jpg',
+    title='The Prophet Zephaniah (Safoniy)', title_es='El profeta Sofonías (Safoniy)',
+    artist='Anonymous Russian icon painter', artist_es='Pintor de iconos ruso anónimo',
+    year='second half of the 18th century', location='Yaroslavl; from a prophets&rsquo; row of an iconostasis (private collection)', location_es='Yaroslavl; de una hilera de profetas de un iconostasio (colección privada)',
+    alt='An icon of a standing bearded man with a bald head and a gold halo, in a blue robe and a crimson mantle that swings out behind him. His right hand is raised with the palm up and his left hand, lowered, holds a small scroll with lines of Church Slavonic writing; more Slavonic letters stand at the top. He stands barefoot on a dark band against a pale background, inside a gold border with worn edges.',
+    alt_es='Un icono de un hombre barbado de pie, calvo, con un halo de oro, con una túnica azul y un manto carmesí que ondea tras él. Su mano derecha está alzada con la palma hacia arriba y la izquierda, baja, sostiene un pequeño rollo con líneas de escritura en eslavo eclesiástico; más letras eslavas están arriba. Está descalzo sobre una franja oscura contra un fondo pálido, dentro de un borde dorado de bordes gastados.',
+    note='Zephaniah 3. This is the prophet himself, not a scene from the chapter: an iconostasis had a row of prophets, each holding a scroll with a line of his book. The scroll here carries Church Slavonic writing that this note does not claim to read; the pose, the colors and the inscription are the icon painter&rsquo;s, and the song of verse 17 is not in the picture.',
+    note_es='Sofonías 3. Este es el profeta mismo, no una escena del capítulo: un iconostasio tenía una hilera de profetas, cada uno con un rollo que llevaba una línea de su libro. El rollo de aquí lleva escritura en eslavo eclesiástico que esta nota no pretende leer; la pose, los colores y la inscripción son del pintor del icono, y el canto del versículo 17 no está en la imagen.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Zephaniah_from_Yaroslavl_(18_c,_priv.coll).jpg')]
+
+
+
+# Appended to library_data.py for 1 Chronicles 4 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('etsev', 'etsev / otsev', 'עֶצֶב', 'etsev', 'PAIN, grief, toil: the word of the first labor, and the one under Jabez&rsquo;s name. <span data-heb="בעצב">The consonants stand in four verses of the Hebrew Bible</span>: <a href="genesis-3.html#v3-16">Genesis 3:16</a>, &lsquo;in pain you will bring forth children&rsquo; (now on these pages), 3:17 (as <em>itsavon</em>), <a href="1-chronicles-4.html#v4-9">1 Chronicles 4:9</a> (now on these pages), &lsquo;Because I bore him in pain&rsquo;, and Proverbs 15:13 (not yet on these pages). The same root ends Jabez&rsquo;s prayer, <span data-heb="לבלתי עצבי">&lsquo;that it may not pain me&rsquo;, which stands in this one verse</span> (<a href="1-chronicles-4.html#v4-10">1 Chronicles 4:10</a>). &#9888; The shelf prints &lsquo;sorrow&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-drb">Douay</span>), &lsquo;pain&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;sorrow&rsquo; for the second (<span class="tag t-asv">ASV</span> &lsquo;that it be not to my sorrow&rsquo;).', ('1 Chronicles', 4, 9)))
+DICTIONARY.append(('meunim', 'Meunim', 'הַמְּעוּנִים', 'ha-me&rsquo;unim', 'THE MEUNIM, the Meunites, a people of the south; the name is also that of Maon, a place. <span data-heb="המעונים">&lsquo;The Meunim&rsquo; stands in two verses of the Hebrew Bible</span>: <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages), where the Simeonites strike them and devote them to destruction in the days of Hezekiah, and 2 Chronicles 26:7 (not yet on these pages). The verse has a ketiv/qere pair: written <em>ha-me&rsquo;inim</em>, read <em>ha-me&rsquo;unim</em>. &#9888; The shelf prints &lsquo;the habitations&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the Meunim&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;the Meunites&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the inhabitants&rsquo; (<span class="tag t-drb">Douay</span>, <span class="tag t-gnv">Geneva</span>).', ('1 Chronicles', 4, 41)))
+DICTIONARY.append(('yehudiyah', 'ha-Yehudiyyah', 'הַיְּהֻדִיָּה', 'ha-Yehudiyyah', 'THE JUDAHITE WOMAN, a woman of Judah; the word is the feminine of &lsquo;Judahite&rsquo;, the article included. <span data-heb="היהדיה">It stands in this one verse of the Hebrew Bible</span>, <a href="1-chronicles-4.html#v4-18">1 Chronicles 4:18</a> (now on these pages), of Mered&rsquo;s wife who bore Jered, Heber and Jekuthiel, alongside Bithiah the daughter of Pharaoh. &#9888; The shelf prints it as a name, &lsquo;Jehudijah&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Judaia&rsquo; (<span class="tag t-drb">Douay</span>), and as a description, &lsquo;his wife from the tribe of Judah&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;his Jewish wife&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>).', ('1 Chronicles', 4, 18)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['etsev'] = ('etsev', 'DOLOR, pena, fatiga: la palabra del primer parto, y la que está bajo el nombre de Jabez. <span data-heb="בעצב">Las consonantes están en cuatro versículos de la Biblia hebrea</span>: <a href="genesis-3.es.html#v3-16">Génesis 3:16</a>, «con dolor darás a luz los hijos» (ya en estas páginas), 3:17 (como <em>itsavon</em>), <a href="1-chronicles-4.es.html#v4-9">1 Crónicas 4:9</a> (ya en estas páginas), «Porque lo di a luz con dolor», y Proverbios 15:13 (todavía no en estas páginas). La misma raíz termina la oración de Jabez, <span data-heb="לבלתי עצבי">«para que no me cause dolor», que está en este único versículo</span> (<a href="1-chronicles-4.es.html#v4-10">1 Crónicas 4:10</a>). &#9888; El estante imprime «en dolor» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «con aflicción» (<span class="tag t-nvi">NVI</span>) y «con dolor» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['meunim'] = ('meunim', 'LOS MEUNIM, los meunitas, un pueblo del sur; el nombre es también el de Maón, un lugar. <span data-heb="המעונים">«Los meunim» está en dos versículos de la Biblia hebrea</span>: <a href="1-chronicles-4.es.html#v4-41">1 Crónicas 4:41</a> (ya en estas páginas), donde los simeonitas los golpean y los consagran a la destrucción en los días de Ezequías, y 2 Crónicas 26:7 (todavía no en estas páginas). El versículo tiene un par ketiv/qere: escrito <em>ha-me&rsquo;inim</em>, leído <em>ha-me&rsquo;unim</em>. &#9888; El estante imprime «estancias» (<span class="tag t-rv">RV&nbsp;1909</span>), «cabañas» (<span class="tag t-rv60">RV60</span>), «los meunitas» (<span class="tag t-nvi">NVI</span>) y «los meunim» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['yehudiyah'] = ('yehudiyah', 'LA MUJER JUDÍA, una mujer de Judá; la palabra es el femenino de «judío», con el artículo. <span data-heb="היהדיה">Está en este único versículo de la Biblia hebrea</span>, <a href="1-chronicles-4.es.html#v4-18">1 Crónicas 4:18</a> (ya en estas páginas), de la mujer de Mered que dio a luz a Jered, Heber y Jecutiel, junto a Bitía hija del faraón. &#9888; El estante la imprime como nombre, «Judaía» (<span class="tag t-rv">RV&nbsp;1909</span>) y «Jehudaía» (<span class="tag t-rv60">RV60</span>), y como descripción, «era de la tribu de Judá» (<span class="tag t-nvi">NVI</span>) y «su esposa judía» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-7">1 Chronicles 4:7</a> (now on these pages) has three pairs in one chapter: verse 7 written <em>Yitshar</em> and read <em>Tsochar</em>, verse 20 written <em>Tolon</em> and read <em>Tilon</em>, and verse 41 written <em>ha-me&rsquo;inim</em> and read <em>ha-me&rsquo;unim</em>.',) + _t[5:]
+    if _t[0] == 'baal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-22">1 Chronicles 4:22</a> (now on these pages): <span data-heb="אשר בעלו למואב">&lsquo;who were lords in Moab&rsquo; stands in this one verse</span>, a verb that is read as ruling or as marrying.',) + _t[5:]
+    if _t[0] == 'cherem':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages): <span data-heb="ויחרימם עד היום הזה">&lsquo;and devoted them to destruction until this day&rsquo; stands in this one verse</span>, of the Meunim struck in the days of Hezekiah.',) + _t[5:]
+    if _t[0] == 'gevul':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-10">1 Chronicles 4:10</a> (now on these pages): <span data-heb="והרבית את גבולי">&lsquo;and enlarge my border&rsquo; stands in this one verse</span>, in the prayer of Jabez.',) + _t[5:]
+    if _t[0] == 'yatsar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-23">1 Chronicles 4:23</a> (now on these pages): <span data-heb="היוצרים">&lsquo;the potters&rsquo; stands in this one verse</span>, who dwelt with the king in his work.',) + _t[5:]
+    if _t[0] == 'efrat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-4">1 Chronicles 4:4</a> (now on these pages): <span data-heb="בכור אפרתה">&lsquo;the firstborn of Ephrathah&rsquo; stands in two verses</span>, 2:50 and here, and Hur is the father of Bethlehem.',) + _t[5:]
+    if _t[0] == 'itsavon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-9">1 Chronicles 4:9</a> (now on these pages) has <em>be&rsquo;otsev</em>, &lsquo;in pain&rsquo;, in the name of Jabez; the same root closes his prayer at verse 10.',) + _t[5:]
+    if _t[0] == 'maon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="1-chronicles-4.html#v4-41">1 Chronicles 4:41</a> (now on these pages) has <em>ha-me&rsquo;unim</em>, the Meunim, struck and devoted to destruction in the days of Hezekiah.',) + _t[5:]
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-7">1 Crónicas 4:7</a> (ya en estas páginas) tiene tres pares en un capítulo: el versículo 7 escrito <em>Yitshar</em> y leído <em>Tsochar</em>, el versículo 20 escrito <em>Tolon</em> y leído <em>Tilon</em>, y el versículo 41 escrito <em>ha-me&rsquo;inim</em> y leído <em>ha-me&rsquo;unim</em>.')
+if 'baal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['baal']
+    DICTIONARY_ES['baal'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-22">1 Crónicas 4:22</a> (ya en estas páginas): <span data-heb="אשר בעלו למואב">«que fueron señores en Moab» está en este único versículo</span>, un verbo que se lee como gobernar o como casarse.')
+if 'cherem' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['cherem']
+    DICTIONARY_ES['cherem'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-41">1 Crónicas 4:41</a> (ya en estas páginas): <span data-heb="ויחרימם עד היום הזה">«y los consagraron a la destrucción hasta este día» está en este único versículo</span>, de los meunim golpeados en los días de Ezequías.')
+if 'gevul' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gevul']
+    DICTIONARY_ES['gevul'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-10">1 Crónicas 4:10</a> (ya en estas páginas): <span data-heb="והרבית את גבולי">«y ensanchas mi territorio» está en este único versículo</span>, en la oración de Jabez.')
+if 'yatsar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yatsar']
+    DICTIONARY_ES['yatsar'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-23">1 Crónicas 4:23</a> (ya en estas páginas): <span data-heb="היוצרים">«los alfareros» está en este único versículo</span>, que habitaban con el rey en su obra.')
+if 'efrat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['efrat']
+    DICTIONARY_ES['efrat'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-4">1 Crónicas 4:4</a> (ya en estas páginas): <span data-heb="בכור אפרתה">«el primogénito de Efrata» está en dos versículos</span>, 2:50 y este, y Hur es el padre de Belén.')
+if 'itsavon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['itsavon']
+    DICTIONARY_ES['itsavon'] = (_d[0], _d[1] + ' &#11088; <a href="1-chronicles-4.es.html#v4-9">1 Crónicas 4:9</a> (ya en estas páginas) tiene <em>be&rsquo;otsev</em>, «con dolor», en el nombre de Jabez; la misma raíz cierra su oración en el versículo 10.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('1 Chronicles', 4, 4), ('Micah', 5, 1), 'Ephrathah, the father of Bethlehem'),
+    (('1 Chronicles', 4, 4), ('Genesis', 35, 19), 'Ephrath, that is Bethlehem'),
+    (('1 Chronicles', 4, 1), ('Genesis', 46, 12), 'the sons of Judah — Perez, and Hezron his son'),
+    (('1 Chronicles', 4, 5), ('Amos', 1, 1), 'Tekoa'),
+    (('1 Chronicles', 4, 9), ('Genesis', 3, 16), 'in pain — the word of the first labor'),
+    (('1 Chronicles', 4, 13), ('Joshua', 15, 17), 'Othniel the son of Kenaz'),
+    (('1 Chronicles', 4, 18), ('Exodus', 2, 5), 'the daughter of Pharaoh'),
+    (('1 Chronicles', 4, 22), ('Ruth', 1, 1), 'Moab, and Lehem — a Bethlehem family'),
+    (('1 Chronicles', 4, 23), ('Jeremiah', 18, 2), 'the potters'),
+    (('1 Chronicles', 4, 27), ('Genesis', 49, 7), 'Simeon divided and scattered'),
+    (('1 Chronicles', 4, 27), ('Joshua', 19, 1), 'Simeon in the midst of Judah'),
+    (('1 Chronicles', 4, 28), ('Joshua', 19, 2), 'the cities of Simeon'),
+    (('1 Chronicles', 4, 30), ('1 Samuel', 27, 6), 'Ziklag'),
+    (('1 Chronicles', 4, 38), ('Genesis', 30, 30), 'broke out in multitude'),
+    (('1 Chronicles', 4, 40), ('Genesis', 34, 21), 'wide of hands'),
+    (('1 Chronicles', 4, 40), ('Judges', 18, 7), 'quiet and at ease'),
+    (('1 Chronicles', 4, 40), ('Genesis', 10, 6), 'from Ham'),
+    (('1 Chronicles', 4, 42), ('Genesis', 36, 8), 'Mount Seir'),
+    (('1 Chronicles', 4, 43), ('Exodus', 17, 14), 'the remnant of Amalek'),
+    (('1 Chronicles', 4, 43), ('Deuteronomy', 25, 19), 'blot out the remembrance of Amalek'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["1chr4"] = dict(era='return',
+    when='The sons of Judah, Hur the firstborn of Ephrathah and father of Bethlehem, Ashhur and his two wives; Jabez, more honored than his brothers, named by his mother for pain, who calls on the God of Israel in a prayer of four requests that ends on the same word, and God brings what he asked; Chelub, Kenaz, Caleb, Mered with Bithiah daughter of Pharaoh, the potters who dwelt with the king; the sons of Simeon, Shimei with his sixteen sons, the cities until David reigned; and, in the days of Hezekiah, the princes of Simeon who find wide, quiet pasture at Gedor, strike the Hamites and the Meunim, and settle on Mount Seir after the remnant of Amalek.',
+    clock='Filed under the return from exile as a Chronicler&rsquo;s text, with a genealogy that reaches back to the patriarchs and forward to the days of Hezekiah (verse 41, c. 715&ndash;686 BC). &#9888; The chapter says its own records are ancient (verse 22) and that its settlement lasted &lsquo;until this day&rsquo; (verses 41 and 43), which is the Chronicler&rsquo;s day, not Hezekiah&rsquo;s.')
+
+CHAPTER_ART["1chr4"] = [dict(
+    file='roberts-hebron-1839.jpg',
+    title='Hebron, March 18th 1839', title_es='Hebrón, 18 de marzo de 1839',
+    artist='David Roberts', artist_es='David Roberts',
+    year='1839', location='The Holy Land, tinted lithograph (Cleveland Museum of Art)', location_es='Tierra Santa, litografía tintada (Cleveland Museum of Art)',
+    alt='A wide tinted lithograph of a hill town in a broad valley. Pale flat-roofed stone houses climb the slopes around a large walled building with two slender towers on the right; a long hill rises behind, with more buildings on a ridge at the left. A track runs from the lower left toward the town, with a few riders on it; in the foreground travelers with white bundles and saddle gear rest on a sloping bank under a rocky hillside, and clumps of trees stand in the valley.',
+    alt_es='Una amplia litografía tintada de un pueblo en una colina dentro de un valle ancho. Casas de piedra claras y de techo plano suben por las laderas alrededor de un gran edificio amurallado con dos torres delgadas a la derecha; una larga colina se alza detr&aacute;s, con m&aacute;s edificios sobre una cresta a la izquierda. Un camino va desde abajo a la izquierda hacia el pueblo, con unos jinetes; en primer plano unos viajeros con fardos blancos y aparejos descansan en un talud bajo una ladera rocosa, y grupos de &aacute;rboles se alzan en el valle.',
+    note='1 Chronicles 4:40. Hebron is not named in this chapter; it is the town Caleb received (Joshua 14:13), and the chapter is full of Caleb&rsquo;s and Judah&rsquo;s clans. Roberts drew it from the road, with a wide valley and a quiet hill country around it, which is the nearest this note can come to &lsquo;wide of hands, and quiet and at ease&rsquo; of the Simeonites&rsquo; pasture at Gedor. The town, the mosque with its towers (a later building) and the travelers are Roberts&rsquo;s, from his journey of 1839.',
+    note_es='1 Cr&oacute;nicas 4:40. Hebr&oacute;n no se nombra en este cap&iacute;tulo; es el pueblo que recibi&oacute; Caleb (Josu&eacute; 14:13), y el cap&iacute;tulo est&aacute; lleno de los clanes de Caleb y de Jud&aacute;. Roberts lo dibuj&oacute; desde el camino, con un valle ancho y una sierra tranquila alrededor, que es lo m&aacute;s cerca que esta nota puede llegar a &laquo;ancha de manos, y quieta y tranquila&raquo; del pasto de los simeonitas en Gedor. El pueblo, la mezquita con sus torres (un edificio posterior) y los viajeros son de Roberts, de su viaje de 1839.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:David_Roberts_-_Hebron_-_1927.140_-_Cleveland_Museum_of_Art.jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 14 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('helel', 'helel', 'הֵילֵל', 'helel', 'SHINING ONE, from <em>halal</em>, &lsquo;to shine&rsquo;. <span data-heb="הילל בן שחר">&lsquo;Helel, son of Dawn&rsquo; stands in this one verse of the Hebrew Bible</span> (<a href="isaiah-14.html#v14-12">Isaiah 14:12</a>, now on these pages), in the taunt over the king of Babylon, and the word is a proper name or title for a bright body in the dawn sky. The same consonants stand in four other verses as forms of &lsquo;howl&rsquo; (Jeremiah 47:2, Ezekiel 21:17, Joel 1:5, Zechariah 11:2; none yet on these pages). &#9888; The shelf prints &lsquo;Lucifer&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>), &lsquo;day-star&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;morning star&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;shining one&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>). <em>Lucifer</em> is the Latin for &lsquo;light-bearer&rsquo; and not a Hebrew word; the Hebrew verse is a taunt over a king who is called a man in verse 16.', ('Isaiah', 14, 12)))
+DICTIONARY.append(('qippod', 'qippod', 'קִפֹּד', 'qippod', 'A SMALL ANIMAL OF RUINS, the one that takes over a ruined city; its identity is not settled. <span data-heb="קפד">The consonants stand in four verses of the Hebrew Bible</span>: <a href="isaiah-14.html#v14-23">Isaiah 14:23</a> (now on these pages), &lsquo;a possession for the <em>qippod</em>&rsquo; in the ruin of Babylon, Isaiah 38:12 (as a verb, &lsquo;I have rolled up&rsquo;), Ezekiel 7:25 (as a noun, &lsquo;anguish&rsquo;) and Zephaniah 2:14, where it lodges among the capitals of Nineveh (not yet on these pages). &#9888; The shelf prints &lsquo;bittern&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;porcupine&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-tlb">TLB</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;owls&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;hedgehog&rsquo; (<span class="tag t-gnv">Geneva</span>) and <em>ericius</em> (<span class="tag t-drb">Douay</span>).', ('Isaiah', 14, 23)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['helel'] = ('helel', 'EL RESPLANDECIENTE, de <em>halal</em>, «brillar». <span data-heb="הילל בן שחר">«Helel, hijo del alba» está en este único versículo de la Biblia hebrea</span> (<a href="isaiah-14.es.html#v14-12">Isaías 14:12</a>, ya en estas páginas), en la burla sobre el rey de Babilonia, y la palabra es un nombre o título propio de un cuerpo brillante en el cielo del alba. Las mismas consonantes están en otros cuatro versículos como formas de «aullar» (Jeremías 47:2, Ezequiel 21:17, Joel 1:5, Zacarías 11:2; ninguno todavía en estas páginas). &#9888; El estante imprime «Lucero» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «el resplandeciente» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>). <em>Lucifer</em> es el latín para «portador de luz» y no una palabra hebrea; el versículo hebreo es una burla sobre un rey a quien el versículo 16 llama un varón.')
+DICTIONARY_ES['qippod'] = ('qippod', 'UN ANIMAL PEQUEÑO DE LAS RUINAS, el que se apodera de una ciudad en ruinas; su identidad no está resuelta. <span data-heb="קפד">Las consonantes están en cuatro versículos de la Biblia hebrea</span>: <a href="isaiah-14.es.html#v14-23">Isaías 14:23</a> (ya en estas páginas), «posesión del <em>qippod</em>» en la ruina de Babilonia, Isaías 38:12 (como verbo, «he enrollado»), Ezequiel 7:25 (como sustantivo, «angustia») y Sofonías 2:14, donde se aloja entre los capiteles de Nínive (todavía no en estas páginas). &#9888; El estante imprime «erizos» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «lechuzas» (<span class="tag t-nvi">NVI</span>) y «puercoespines» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'rinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-14.html#v14-7">Isaiah 14:7</a> (now on these pages): <span data-heb="פצחו רנה">&lsquo;they break forth into singing&rsquo; stands in this one verse</span>, of the whole earth at rest once the oppressor is gone.',) + _t[5:]
+    if _t[0] == 'mashal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-14.html#v14-4">Isaiah 14:4</a> (now on these pages): <span data-heb="המשל הזה">&lsquo;this <em>mashal</em>&rsquo; stands in five verses</span>, here, Ezekiel 12:22&ndash;23 and 18:2&ndash;3, and is said &lsquo;against the king of Babylon&rsquo;; the verb of verse 10, <em>nimshalta</em>, shares its consonants.',) + _t[5:]
+    if _t[0] == 'sheol':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-14.html#v14-9">Isaiah 14:9</a> (now on these pages): <span data-heb="אך אל שאול תורד">&lsquo;Yet you shall be brought down to Sheol&rsquo; stands in this one verse</span> (verse 15), after the Sheol that is stirred up for the king at verse 9.',) + _t[5:]
+    if _t[0] == 'rephaim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-14.html#v14-9">Isaiah 14:9</a> (now on these pages): the Sheol below stirs up the <em>rephaim</em> to meet the king of Babylon.',) + _t[5:]
+if 'rinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rinnah']
+    DICTIONARY_ES['rinnah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-14.es.html#v14-7">Isaías 14:7</a> (ya en estas páginas): <span data-heb="פצחו רנה">«prorrumpen en cantos» está en este único versículo</span>, de toda la tierra en reposo cuando el opresor ya no está.')
+if 'mashal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashal']
+    DICTIONARY_ES['mashal'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-14.es.html#v14-4">Isaías 14:4</a> (ya en estas páginas): <span data-heb="המשל הזה">«este <em>mashal</em>» está en cinco versículos</span>, este, Ezequiel 12:22&ndash;23 y 18:2&ndash;3, y se dice «contra el rey de Babilonia»; el verbo del versículo 10, <em>nimshalta</em>, comparte sus consonantes.')
+if 'sheol' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sheol']
+    DICTIONARY_ES['sheol'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-14.es.html#v14-9">Isaías 14:9</a> (ya en estas páginas): <span data-heb="אך אל שאול תורד">«Pero serás derribado al Seol» está en este único versículo</span> (versículo 15), después del Seol que se agita por el rey en el versículo 9.')
+if 'rephaim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rephaim']
+    DICTIONARY_ES['rephaim'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-14.es.html#v14-9">Isaías 14:9</a> (ya en estas páginas): el Seol de abajo despierta a los <em>refaítas</em> para salir al encuentro del rey de Babilonia.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 14, 1), ('Exodus', 1, 14), "the hard service — now the oppressor's"),
+    (('Isaiah', 14, 12), ('Luke', 10, 18), 'Satan fall like lightning — a later reading'),
+    (('Isaiah', 14, 12), ('Revelation', 12, 9), 'the dragon thrown down — a later reading'),
+    (('Isaiah', 14, 13), ('Genesis', 11, 4), 'a tower with its top in the heavens; a name'),
+    (('Isaiah', 14, 13), ('Genesis', 14, 18), 'God Most High'),
+    (('Isaiah', 14, 13), ('Luke', 10, 15), 'Capernaum, exalted to heaven, brought down to Hades'),
+    (('Isaiah', 14, 19), ('Isaiah', 11, 1), 'the shoot that is cast off'),
+    (('Isaiah', 14, 20), ('Genesis', 49, 6), 'not to be joined'),
+    (('Isaiah', 14, 25), ('Isaiah', 9, 3), 'yoke, burden, and rod'),
+    (('Isaiah', 14, 28), ('Isaiah', 6, 1), 'the year the king died'),
+    (('Isaiah', 14, 30), ('Zephaniah', 3, 13), 'the poor feed and lie down'),
+    (('Isaiah', 14, 32), ('Zephaniah', 3, 12), 'the afflicted take refuge'),
+    (('Isaiah', 14, 9), ('1 Samuel', 28, 15), 'stirred up from below'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa14"] = dict(era='monarchy',
+    when='A taunt over the king of Babylon: the earth at rest, the cypresses glad, Sheol stirred up to meet him, Helel fallen from the heavens after five &lsquo;I will&rsquo;s, and the man cast out of his grave like a rejected shoot; then the oath of Jehovah of armies, Assyria broken in his land, a word for Philistia in the year King Ahaz died, and Jehovah founding Zion as refuge for his afflicted.',
+    clock='Dated by its own last section to the year King Ahaz died (verse 28, usually put near 715 BC); the taunt over Babylon (verses 4&ndash;23) is placed by the book in the Assyrian age, before Babylon is the great power. &#9888; Verse 25 breaks Assyria in Jehovah&rsquo;s land inside the Babylon oracle; the chapter holds both empires together.')
+
+CHAPTER_ART["isa14"] = [dict(
+    file='dore-isaiah-babylon.jpg',
+    title='Isaiah&rsquo;s Vision of the Destruction of Babylon', title_es='La visi&oacute;n de Isa&iacute;as sobre la destrucci&oacute;n de Babilonia',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating Isaiah 13)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra Isa&iacute;as 13)',
+    alt='A dark engraving of a ruined city under a stormy sky. In the lower left a robed figure with one arm raised kneels or leans on a broken stone slab. Beyond, broken columns, arches and a curved tiered amphitheater stretch toward a pale distant town on a far hill, with birds flying low over the rubble; heaped fallen stones fill the right foreground.',
+    alt_es='Un grabado oscuro de una ciudad en ruinas bajo un cielo tormentoso. En la parte inferior izquierda una figura con t&uacute;nica y un brazo levantado se arrodilla o se apoya sobre una losa de piedra rota. M&aacute;s all&aacute;, columnas rotas, arcos y un anfiteatro curvo de gradas se extienden hacia un pueblo p&aacute;lido en una colina lejana, con aves que vuelan bajo sobre los escombros; piedras ca&iacute;das amontonadas llenan el primer plano derecho.',
+    note='Isaiah 13:1&ndash;22, the oracle just before this chapter, and the ruin of Babylon that the taunt of 14:4&ndash;23 celebrates. Dor&eacute; drew the prophet and the ruins; the birds and the broken city are his, and the text names wild creatures that take over the ruin (13:21&ndash;22; 14:23). The engraving is the artist&rsquo;s picture of the oracle, not a record of Babylon.',
+    note_es='Isa&iacute;as 13:1&ndash;22, el or&aacute;culo justo antes de este cap&iacute;tulo, y la ruina de Babilonia que celebra la burla de 14:4&ndash;23. Dor&eacute; dibuj&oacute; al profeta y las ruinas; las aves y la ciudad rota son suyas, y el texto nombra criaturas salvajes que se apoderan de la ruina (13:21&ndash;22; 14:23). El grabado es la imagen que el artista hace del or&aacute;culo, no un registro de Babilonia.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:121.Isaiah%27s_Vision_of_the_Destruction_of_Babylon.jpg')]
+
+
+
+# Appended to library_data.py for Daniel 5 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('mene-tekel', 'mene, tekel, peres', 'מְנֵא תְּקֵל פַּרְסִין', 'mene tekel parsin', 'THE WRITING ON THE WALL, four words that the verses read as three. <span data-heb="מנא מנא תקל">&lsquo;mene, mene, tekel&rsquo; stands in this one verse of the Hebrew Bible</span> and <span data-heb="פרסין">&lsquo;parsin&rsquo; stands in this one verse</span>, <a href="daniel-5.html#v5-25">Daniel 5:25</a> (now on these pages). The reading is given in verses 26&ndash;28: <em>mene</em> as <em>menah</em>, &lsquo;he has numbered&rsquo;; <em>tekel</em> as <em>tekiltah</em>, &lsquo;you have been weighed&rsquo;; <em>peres</em> as <em>perisat</em>, &lsquo;it has been divided&rsquo;, with <em>paras</em>, Persia, a syllable away. &#9888; The shelf prints &lsquo;Mene, Mene, Tekel, Upharsin&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;mene, mene, tekel, parsin&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;MANE, THECEL, PHARES&rsquo; (<span class="tag t-drb">Douay</span>). The <span class="tag t-niv">NIV</span> and the <span class="tag t-nwt">NWT&nbsp;1984</span> read mene as numbering &lsquo;the days of&rsquo; the reign, words the Aramaic does not have.', ('Daniel', 5, 25)))
+DICTIONARY.append(('qitrin', 'qitrin', 'קִטְרִין', 'qitrin', 'KNOTS, JOINTS, the ties of a body or a problem. The king&rsquo;s collapse at <a href="daniel-5.html#v5-6">Daniel 5:6</a> (now on these pages) is <em>qitrei chartseh mishtarayin</em>, &lsquo;the knots of his loins are loosed&rsquo;, and what Daniel is said to do at verses 12 and 16 is <em>meshare qitrin</em>, &lsquo;loosing knots&rsquo;: the same noun and the same root for loosing, in one chapter. &#9888; The shelf hides the match: <span class="tag t-kjv">KJV</span> &lsquo;the joints of his loins were loosed&rsquo; and &lsquo;dissolving of doubts&rsquo;; <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;his hip joints were loosening&rsquo; and &lsquo;the untying of knots&rsquo;.', ('Daniel', 5, 6)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['mene-tekel'] = ('mene-tekel', 'LA ESCRITURA EN LA PARED, cuatro palabras que los versículos leen como tres. <span data-heb="מנא מנא תקל">«mene, mene, tekel» está en este único versículo de la Biblia hebrea</span> y <span data-heb="פרסין">«parsin» está en este único versículo</span>, <a href="daniel-5.es.html#v5-25">Daniel 5:25</a> (ya en estas páginas). La lectura se da en los versículos 26&ndash;28: <em>mene</em> como <em>menah</em>, «ha contado»; <em>tekel</em> como <em>tekiltah</em>, «has sido pesado»; <em>peres</em> como <em>perisat</em>, «ha sido dividido», con <em>paras</em>, Persia, a una sílaba. &#9888; El estante imprime «MENE, MENE, TEKEL, UPHARSIN» (<span class="tag t-rv">RV&nbsp;1909</span>), «MENE, MENE, TEKEL, UPARSIN» (<span class="tag t-rv60">RV60</span>) y «MENÉ, MENÉ, TEQUEL y PARSÍN» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>). La <span class="tag t-tnm">TNM&nbsp;1987</span> y la <span class="tag t-tnm">TNM&nbsp;2019</span> leen mene como numerar «los días de» el reino, palabras que el arameo no tiene.')
+DICTIONARY_ES['qitrin'] = ('qitrin', 'NUDOS, COYUNTURAS, las ataduras de un cuerpo o de un problema. El desplome del rey en <a href="daniel-5.es.html#v5-6">Daniel 5:6</a> (ya en estas páginas) es <em>qitrei chartseh mishtarayin</em>, «los nudos de sus lomos se sueltan», y lo que se dice que Daniel hace en los versículos 12 y 16 es <em>meshare qitrin</em>, «soltar nudos»: el mismo sustantivo y la misma raíz para soltar, en un solo capítulo. &#9888; El estante oculta la coincidencia: <span class="tag t-rv">RV&nbsp;1909</span> «desatáronse las ceñiduras de sus lomos» y «deshaciendo dudas»; <span class="tag t-tnm">TNM&nbsp;1987</span> «las coyunturas de sus caderas estuvieron aflojándose» y «el desatar nudos».')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'kelim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-5.html#v5-2">Daniel 5:2</a> and <a href="daniel-5.html#v5-3">Daniel 5:3</a> (now on these pages): <span data-heb="מאני דהבא">&lsquo;the vessels of gold&rsquo; stands in two verses</span>, the temple&rsquo;s vessels brought to Belshazzar&rsquo;s feast.',) + _t[5:]
+if 'kelim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kelim']
+    DICTIONARY_ES['kelim'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-5.es.html#v5-2">Daniel 5:2</a> y <a href="daniel-5.es.html#v5-3">Daniel 5:3</a> (ya en estas páginas): <span data-heb="מאני דהבא">«los vasos de oro» está en dos versículos</span>, los vasos del templo traídos al banquete de Belsasar.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Daniel', 5, 2), ('Daniel', 1, 2), 'the vessels carried from the temple'),
+    (('Daniel', 5, 10), ('Daniel', 6, 7), 'O king, live forever'),
+    (('Daniel', 5, 11), ('Daniel', 4, 5), 'the spirit of the holy gods'),
+    (('Daniel', 5, 13), ('Daniel', 1, 6), 'the exiles of Judah'),
+    (('Daniel', 5, 20), ('Isaiah', 14, 13), 'the heart lifted up against the Most High'),
+    (('Daniel', 5, 21), ('Daniel', 4, 30), 'driven out, grass like oxen, the dew of heaven'),
+    (('Daniel', 5, 23), ('Daniel', 4, 34), 'the King of heaven — those who walk in pride'),
+    (('Daniel', 5, 31), ('Daniel', 6, 1), 'Darius the Mede and the satraps'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["dan5"] = dict(era='exile',
+    when='Belshazzar feasts a thousand lords from the temple&rsquo;s vessels and praises the gods of gold and silver; fingers of a man&rsquo;s hand write on the plaster by the lampstand; his knees knock, the wise men cannot read it, and the queen remembers a man in the kingdom in whom is the spirit of the holy gods; Daniel refuses the gifts, tells the king the story of Nebuchadnezzar&rsquo;s pride and fall, and reads the writing, mene, tekel, peres: numbered, weighed, divided; he is clothed in purple and made third; that night Belshazzar is killed, and Darius the Mede receives the kingdom at sixty-two.',
+    clock='Placed on the night Babylon falls (about 539 BC by the book&rsquo;s own sequence, the same year Daniel 6 opens). &#9888; The chapter calls Nebuchadnezzar Belshazzar&rsquo;s father and does not say who killed him or how the city fell; Babylonian records name Belshazzar as the son of Nabonidus.')
+
+CHAPTER_ART["dan5"] = [dict(
+    file='rembrandt-belshazzars-feast.jpg',
+    title='Belshazzar&rsquo;s Feast', title_es='El banquete de Belsasar',
+    artist='Rembrandt van Rijn', artist_es='Rembrandt van Rijn',
+    year='c. 1635&ndash;1638', location='Oil on canvas, National Gallery, London', location_es='&Oacute;leo sobre lienzo, National Gallery, Londres',
+    alt='A dark oil painting of a feast broken off. A bearded king in a tall pale turban with a jeweled crown and a gold-embroidered, fur-trimmed robe twists away from the table, one arm flung out toward the upper right, where a hand comes out of a cloud of glowing light and writes bright Hebrew letters in vertical columns. A woman at the left stares with wide eyes and clasped hands and a bearded man beside her gapes; a woman in the foreground at the right, in a red dress, shrinks back with her face hidden while she tips a gold goblet so the wine spills; grapes and a gold dish lie on the table before the king.',
+    alt_es='Una pintura al &oacute;leo, oscura, de un banquete interrumpido. Un rey barbudo con un alto turbante p&aacute;lido, una corona con joyas y una t&uacute;nica bordada en oro con ribete de piel se gira lejos de la mesa, con un brazo extendido hacia arriba a la derecha, donde una mano sale de una nube de luz brillante y escribe letras hebreas luminosas en columnas verticales. Una mujer a la izquierda mira con los ojos muy abiertos y las manos juntas, y un hombre barbudo a su lado abre la boca; en primer plano a la derecha una mujer con vestido rojo se encoge con el rostro oculto mientras inclina una copa de oro y se derrama el vino; sobre la mesa ante el rey hay uvas y una fuente de oro.',
+    note='Daniel 5:1&ndash;5. Rembrandt paints the king, the guests, the gold vessel and the hand writing with letters of fire. The chapter itself says only that the king sees &lsquo;the part of the hand that wrote&rsquo; and the writing; the queen comes in later (verse 10), the vessel the woman tips is the painter&rsquo;s staging of the temple&rsquo;s vessels, and the letters in columns are his, in Hebrew square letters; the text of the chapter is Aramaic.',
+    note_es='Daniel 5:1&ndash;5. Rembrandt pinta al rey, a los invitados, el vaso de oro y la mano que escribe con letras de fuego. El propio cap&iacute;tulo dice solo que el rey ve &laquo;la parte de la mano que escrib&iacute;a&raquo; y la escritura; la reina entra m&aacute;s tarde (vers&iacute;culo 10), el vaso que inclina la mujer es la puesta en escena que el pintor hace de los vasos del templo, y las letras en columnas son suyas, en letras cuadradas hebreas; el texto del cap&iacute;tulo est&aacute; en arameo.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Rembrandt-Belsazar.jpg')]
+
+
+
+# Appended to library_data.py for Daniel 7 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('attiq-yomin', 'attiq yomin', 'עַתִּיק יוֹמִין', 'attiq yomin', 'THE ANCIENT OF DAYS &mdash; <em>attiq</em>, &lsquo;advanced, old&rsquo;, and <em>yomin</em>, &lsquo;days&rsquo;: the figure who sits in judgment in Daniel 7. <span data-heb="עתיק יומין">&lsquo;attiq yomin&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="daniel-7.html#v7-9">Daniel 7:9</a> (now on these pages), and <span data-heb="עתיק יומיא">the form <em>attiq yomaya</em> stands in two verses</span>, <a href="daniel-7.html#v7-13">7:13</a> and <a href="daniel-7.html#v7-22">7:22</a>. It is a description, not a name: white clothing, hair like pure wool, a throne of flames on burning wheels. &#9888; The shelf prints &lsquo;Ancient of days&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;one that was ancient of days&rsquo; (<span class="tag t-asv">ASV</span>) and &lsquo;the Ancient of Days&mdash;the Almighty God&rsquo; (<span class="tag t-tlb">TLB</span>), the gloss being the translators&rsquo;.', ('Daniel', 7, 9)))
+DICTIONARY.append(('bar-enash', 'bar enash', 'בַּר אֱנָשׁ', 'bar enash', 'A SON OF MAN &mdash; <em>bar</em>, &lsquo;son&rsquo;, and <em>enash</em>, &lsquo;man, humankind&rsquo;: the ordinary Aramaic idiom for a human being. <span data-heb="כבר אנש">&lsquo;like a son of man&rsquo;, <em>kevar enash</em>, stands in this one verse of the Hebrew Bible</span>, <a href="daniel-7.html#v7-13">Daniel 7:13</a> (now on these pages), after four beasts: the <em>ke-</em> is &lsquo;like&rsquo;, and there is no article. &#9888; The shelf prints &lsquo;one like the Son of man&rsquo; with capitals (<span class="tag t-kjv">KJV</span>), &lsquo;one like the son of man&rsquo; (<span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>), &lsquo;one like unto a son of man&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;one like a son of man&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;someone like a son of man&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a Man&mdash;or so he seemed to be&rsquo; (<span class="tag t-tlb">TLB</span>). The Greek of the Gospels is <a href="dictionary.html#huios-tou-anthropou">huios tou anthr&#333;pou</a>.', ('Daniel', 7, 13)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['attiq-yomin'] = ('attiq-yomin', 'EL ANCIANO DE DÍAS &mdash; <em>attiq</em>, «avanzado, viejo», y <em>yomin</em>, «días»: la figura que se sienta a juzgar en Daniel 7. <span data-heb="עתיק יומין">«attiq yomin» está en este único versículo de la Biblia hebrea</span>, <a href="daniel-7.es.html#v7-9">Daniel 7:9</a> (ya en estas páginas), y <span data-heb="עתיק יומיא">la forma <em>attiq yomaya</em> está en dos versículos</span>, <a href="daniel-7.es.html#v7-13">7:13</a> y <a href="daniel-7.es.html#v7-22">7:22</a>. Es una descripción, no un nombre: ropa blanca, pelo como lana limpia, un trono de llamas sobre ruedas ardientes. &#9888; El estante imprime «un Anciano de grande edad» (<span class="tag t-rv">RV&nbsp;1909</span>), «un Anciano de días» (<span class="tag t-rv60">RV60</span>) y «el Anciano de Días» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['bar-enash'] = ('bar-enash', 'UN HIJO DE HOMBRE &mdash; <em>bar</em>, «hijo», y <em>enash</em>, «hombre, humanidad»: la expresión aramea corriente para un ser humano. <span data-heb="כבר אנש">«como un hijo de hombre», <em>kevar enash</em>, está en este único versículo de la Biblia hebrea</span>, <a href="daniel-7.es.html#v7-13">Daniel 7:13</a> (ya en estas páginas), después de cuatro bestias: el <em>ke-</em> es «como», y no hay artículo. &#9888; El estante imprime «uno como un hijo de hombre» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>), «como un hijo de hombre que venía» (<span class="tag t-rv">RV&nbsp;1909</span>) y «alguien como un hijo del hombre» (<span class="tag t-tnm">TNM&nbsp;1987</span>). El griego de los Evangelios es <a href="diccionario.html#huios-tou-anthropou">huios tou anthr&#333;pou</a>.')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'iddan':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-7.html#v7-25">Daniel 7:25</a> (now on these pages): <span data-heb="עדן ועדנין ופלג עדן">&lsquo;a time and times and half a time&rsquo; stands in this one verse</span>, with the word in its plural, <em>iddanin</em>.',) + _t[5:]
+    if _t[0] == 'elyon':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="daniel-7.html#v7-18">Daniel 7:18</a> (now on these pages): <span data-heb="קדישי עליונין">&lsquo;the holy ones of the Most High&rsquo; stands in four verses</span>, 18, 22, 25 and 27, with the Aramaic plural <em>elyonin</em>.',) + _t[5:]
+    if _t[0] == 'huios-tou-anthropou':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; The Aramaic behind the phrase, <em>kevar enash</em>, is at <a href="daniel-7.html#v7-13">Daniel 7:13</a> (now on these pages), where there is no article.',) + _t[5:]
+if 'iddan' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['iddan']
+    DICTIONARY_ES['iddan'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-7.es.html#v7-25">Daniel 7:25</a> (ya en estas páginas): <span data-heb="עדן ועדנין ופלג עדן">«un tiempo y tiempos y medio tiempo» está en este único versículo</span>, con la palabra en plural, <em>iddanin</em>.')
+if 'elyon' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['elyon']
+    DICTIONARY_ES['elyon'] = (_d[0], _d[1] + ' &#11088; <a href="daniel-7.es.html#v7-18">Daniel 7:18</a> (ya en estas páginas): <span data-heb="קדישי עליונין">«los santos del Altísimo» está en cuatro versículos</span>, 18, 22, 25 y 27, con el plural arameo <em>elyonin</em>.')
+if 'huios-tou-anthropou' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['huios-tou-anthropou']
+    DICTIONARY_ES['huios-tou-anthropou'] = (_d[0], _d[1] + ' &#11088; El arameo detrás de la frase, <em>kevar enash</em>, está en <a href="daniel-7.es.html#v7-13">Daniel 7:13</a> (ya en estas páginas), donde no hay artículo.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Daniel', 7, 4), ('Daniel', 4, 13), "a heart given — the beast's heart and the man's"),
+    (('Daniel', 7, 7), ('Revelation', 13, 2), 'the beast made of the four'),
+    (('Daniel', 7, 10), ('Revelation', 20, 12), 'the books were opened'),
+    (('Daniel', 7, 10), ('Revelation', 5, 11), 'thousand thousands and ten thousand times ten thousand'),
+    (('Daniel', 7, 13), ('Matthew', 26, 64), 'coming on the clouds of heaven'),
+    (('Daniel', 7, 13), ('Mark', 14, 62), 'coming with the clouds of heaven'),
+    (('Daniel', 7, 13), ('Revelation', 1, 7), 'he is coming with the clouds'),
+    (('Daniel', 7, 13), ('Acts', 1, 9), 'a cloud took him up'),
+    (('Daniel', 7, 14), ('Daniel', 3, 12), 'serve — the verb of serving gods'),
+    (('Daniel', 7, 14), ('Daniel', 6, 27), 'a kingdom that will not be destroyed'),
+    (('Daniel', 7, 24), ('Revelation', 17, 12), 'ten horns, ten kings'),
+    (('Daniel', 7, 24), ('Daniel', 5, 19), 'brought low'),
+    (('Daniel', 7, 25), ('Daniel', 12, 7), 'a time, times and half a time'),
+    (('Daniel', 7, 25), ('Revelation', 12, 14), 'a time, and times, and half a time'),
+    (('Daniel', 7, 27), ('Daniel', 3, 33), 'his kingdom is an everlasting kingdom'),
+    (('Daniel', 7, 28), ('Daniel', 5, 6), 'thoughts that alarm, a countenance changed'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["dan7"] = dict(era='exile',
+    when='In the first year of Belshazzar, Daniel dreams of the four winds on the great sea and four great beasts, each different: a lion with eagle&rsquo;s wings and a man&rsquo;s heart, a bear raised on one side, a leopard with four wings and four heads, and a fourth beast with iron teeth and ten horns, among which comes a little horn with eyes and a mouth; thrones are placed, the Ancient of Days sits with books opened and a river of fire, the beast is killed, and one like a son of man comes with the clouds to the Ancient of Days and is given dominion; an attendant tells him the four beasts are four kings, the fourth a fourth kingdom, the horn a king who wars on the holy ones for a time, times and half a time, until the court sits and the kingdom is given to the people of the holy ones of the Most High; Daniel keeps it in his heart.',
+    clock='Dated by its own first verse to the first year of Belshazzar (before the feast of Daniel 5 and the vision of Daniel 8, which is dated to his third year). The last of the book&rsquo;s Aramaic chapters. &#9888; The chapter does not name the four kingdoms or the ten kings; identifications are later readings.')
+
+CHAPTER_ART["dan7"] = [dict(
+    file='silos-daniel-four-beasts.jpg',
+    title='Daniel&rsquo;s vision of the four beasts from the sea and the Ancient of Days', title_es='La visi&oacute;n de Daniel de las cuatro bestias del mar y del Anciano de D&iacute;as',
+    artist='Silos Apocalypse (Beatus manuscript)', artist_es='Apocalipsis de Silos (c&oacute;dice de Beato)',
+    year='1109', location='Illuminated manuscript, f. 240, British Library, Add MS 11695', location_es='Manuscrito iluminado, f. 240, British Library, Add MS 11695',
+    alt='A tall illuminated manuscript page. At the top, a haloed figure in a red and gold robe sits enthroned inside a pointed oval frame set with jewels, one hand raised and a book on his knee, between two large red wheels; around the oval is a ring of angels&rsquo; faces, and long dark and pink wings fan out beyond it. A long red river runs down from the throne to the bottom of the page. Around it are four beasts: at the upper left an orange winged creature, at the upper right a spotted yellow winged leopard with four heads, at the lower right a brown bear, and at the lower left a dark beast with horns and a small human face between them. Lines of Latin run across the top.',
+    alt_es='Una p&aacute;gina alta de manuscrito iluminado. Arriba, una figura con aureola y t&uacute;nica roja y dorada est&aacute; sentada en un trono dentro de un marco ovalado apuntado y adornado con joyas, con una mano alzada y un libro sobre la rodilla, entre dos grandes ruedas rojas; alrededor del &oacute;valo hay un c&iacute;rculo de rostros de &aacute;ngeles, y largas alas oscuras y rosadas se abren m&aacute;s all&aacute;. Un largo r&iacute;o rojo baja desde el trono hasta el pie de la p&aacute;gina. A su alrededor hay cuatro bestias: arriba a la izquierda una criatura alada naranja, arriba a la derecha un leopardo amarillo moteado con alas y cuatro cabezas, abajo a la derecha un oso pardo, y abajo a la izquierda una bestia oscura con cuernos y una peque&ntilde;a cara humana entre ellos. Renglones de latín cruzan la parte superior.',
+    note='Daniel 7:1&ndash;10. The painter puts the four beasts around the throne, the two wheels (verse 9), the river of fire (verse 10) and a ring of attendants (verse 10), and the Latin at the top gives the date of verse 1 and, below it, &lsquo;the judgment sat and the books were opened&rsquo; (verse 10). The haloed, dark-haired figure holding a book is the painter&rsquo;s reading of the Ancient of Days; the chapter says only white clothing and hair like pure wool. The small human face among the fourth beast&rsquo;s horns stands for the horn with eyes (verse 8).',
+    note_es='Daniel 7:1&ndash;10. El pintor pone las cuatro bestias alrededor del trono, las dos ruedas (vers&iacute;culo 9), el r&iacute;o de fuego (vers&iacute;culo 10) y un c&iacute;rculo de asistentes (vers&iacute;culo 10), y el latín de arriba da la fecha del vers&iacute;culo 1 y, debajo, &laquo;el juicio se sent&oacute; y los libros fueron abiertos&raquo; (vers&iacute;culo 10). La figura con aureola, de pelo oscuro y con un libro, es la lectura que el pintor hace del Anciano de D&iacute;as; el cap&iacute;tulo dice solo ropa blanca y pelo como lana limpia. La peque&ntilde;a cara humana entre los cuernos de la cuarta bestia representa el cuerno con ojos (vers&iacute;culo 8).',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:Daniel%27s_vision_of_the_four_beasts_from_the_sea_and_the_Ancient_of_Days_-_Silos_Apocalypse_(1109),_f.240_-_BL_Add_MS_11695.jpg')]
+
+
+
+# Appended to library_data.py for Isaiah 35 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('chavatselet', 'chavatselet', 'חֲבַצֶּלֶת', 'chavatselet', 'A FLOWER OF THE FIELD whose identity has never been settled. <span data-heb="חבצלת">The word stands in two verses of the Hebrew Bible</span>: <a href="isaiah-35.html#v35-1">Isaiah 35:1</a> (now on these pages), where the desert blossoms like it, and Song of Solomon 2:1, <em>chavatselet haSharon</em> (not yet on these pages). &#9888; The shelf prints &lsquo;the rose&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-gnv">Geneva</span>), &lsquo;the lily&rsquo; (<span class="tag t-drb">Douay</span>), &lsquo;the crocus&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the saffron&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); these pages leave the word as it is.', ('Isaiah', 35, 1)))
+DICTIONARY.append(('maslul', 'maslul', 'מַסְלוּל', 'maslul', 'A HIGHWAY, a built-up road, a causeway. <span data-heb="מסלול">The word stands in this one verse of the Hebrew Bible</span>, <a href="isaiah-35.html#v35-8">Isaiah 35:8</a> (now on these pages), beside <em>derekh</em>, &lsquo;way&rsquo;; the related <em>mesillah</em> is the word at Isaiah 40:3 and 11:16. The road is named <span data-heb="דרך הקדש">&lsquo;the Way of Holiness&rsquo;, <em>derekh haqodesh</em>, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;an highway&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a highway&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a main road&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Isaiah', 35, 8)))
+DICTIONARY.append(('tannim', 'tannim', 'תַּנִּים', 'tannim', 'JACKALS &mdash; the wild canines of ruins and wasteland, the animals of the abandoned place; not to be confused with <em>tannin</em> (a sea monster, <a href="dictionary.html#tannin">tannin</a>). <span data-heb="נוה תנים">&lsquo;the abode of jackals&rsquo; stands in two verses</span>: Isaiah 34:13, of a ruined land (not yet on these pages), and <a href="isaiah-35.html#v35-7">Isaiah 35:7</a> (now on these pages), where the same place becomes grass, reed and papyrus. &#9888; The shelf prints &lsquo;dragons&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-gnv">Geneva</span>, <span class="tag t-drb">Douay</span>) and &lsquo;jackals&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>).', ('Isaiah', 35, 7)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['chavatselet'] = ('chavatselet', 'UNA FLOR DEL CAMPO cuya identidad nunca se ha resuelto. <span data-heb="חבצלת">La palabra está en dos versículos de la Biblia hebrea</span>: <a href="isaiah-35.es.html#v35-1">Isaías 35:1</a> (ya en estas páginas), donde el desierto florece como ella, y Cantar de los Cantares 2:1, <em>chavatselet haSharon</em> (todavía no en estas páginas). &#9888; El estante imprime «la rosa» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «el azafrán» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>); estas páginas dejan la palabra como está.')
+DICTIONARY_ES['maslul'] = ('maslul', 'UNA CALZADA, un camino levantado. <span data-heb="מסלול">La palabra está en este único versículo de la Biblia hebrea</span>, <a href="isaiah-35.es.html#v35-8">Isaías 35:8</a> (ya en estas páginas), junto a <em>derekh</em>, «camino»; la emparentada <em>mesillah</em> es la palabra de Isaías 40:3 y 11:16. El camino se llama <span data-heb="דרך הקדש">«el Camino de Santidad», <em>derekh haqodesh</em>, que está en este único versículo</span>. &#9888; El estante imprime «calzada» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y «una senda» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['tannim'] = ('tannim', 'CHACALES &mdash; los cánidos salvajes de las ruinas y los yermos, los animales del lugar abandonado; no han de confundirse con <em>tannin</em> (un monstruo marino, <a href="diccionario.html#tannin">tannin</a>). <span data-heb="נוה תנים">«la morada de los chacales» está en dos versículos</span>: Isaías 34:13, de una tierra en ruinas (todavía no en estas páginas), y <a href="isaiah-35.es.html#v35-7">Isaías 35:7</a> (ya en estas páginas), donde el mismo lugar se hace hierba, caña y papiro. &#9888; El estante imprime «chacales» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'padah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-35.html#v35-10">Isaiah 35:10</a> (now on these pages): <em>pedu&rsquo;ei Yehovah</em>, &lsquo;the ransomed of Jehovah&rsquo;, who return to Zion; the redeemed of verse 9 are <em>ge&rsquo;ulim</em>, from the other root.',) + _t[5:]
+    if _t[0] == 'naqam':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-35.html#v35-4">Isaiah 35:4</a> (now on these pages): <span data-heb="נקם יבוא">&lsquo;vengeance comes&rsquo; stands in this one verse</span>, beside the recompense of God.',) + _t[5:]
+    if _t[0] == 'gemul':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-35.html#v35-4">Isaiah 35:4</a> (now on these pages): <span data-heb="גמול אלהים">&lsquo;the recompense of God&rsquo; stands in this one verse</span>.',) + _t[5:]
+    if _t[0] == 'rinnah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-35.html#v35-10">Isaiah 35:10</a> (now on these pages): the redeemed come to Zion <em>berinnah</em>, with the cry of joy that is the third of the chapter (<em>ranen</em> at verse 2, <em>tarun</em> at verse 6).',) + _t[5:]
+    if _t[0] == 'hadar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="isaiah-35.html#v35-2">Isaiah 35:2</a> (now on these pages): <span data-heb="הדר אלהינו">&lsquo;the splendor of our God&rsquo; stands in this one verse</span>, beside &lsquo;the glory of Jehovah&rsquo;.',) + _t[5:]
+if 'padah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['padah']
+    DICTIONARY_ES['padah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-35.es.html#v35-10">Isaías 35:10</a> (ya en estas páginas): <em>pedu&rsquo;ei Yehovah</em>, «los rescatados de Jehová», que vuelven a Sión; los redimidos del versículo 9 son <em>ge&rsquo;ulim</em>, de la otra raíz.')
+if 'naqam' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['naqam']
+    DICTIONARY_ES['naqam'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-35.es.html#v35-4">Isaías 35:4</a> (ya en estas páginas): <span data-heb="נקם יבוא">«viene la venganza» está en este único versículo</span>, junto a la retribución de Dios.')
+if 'gemul' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['gemul']
+    DICTIONARY_ES['gemul'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-35.es.html#v35-4">Isaías 35:4</a> (ya en estas páginas): <span data-heb="גמול אלהים">«la retribución de Dios» está en este único versículo</span>.')
+if 'rinnah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['rinnah']
+    DICTIONARY_ES['rinnah'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-35.es.html#v35-10">Isaías 35:10</a> (ya en estas páginas): los redimidos llegan a Sión <em>berinnah</em>, con el grito de alegría que es el tercero del capítulo (<em>ranen</em> en el versículo 2, <em>tarun</em> en el 6).')
+if 'hadar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hadar']
+    DICTIONARY_ES['hadar'] = (_d[0], _d[1] + ' &#11088; <a href="isaiah-35.es.html#v35-2">Isaías 35:2</a> (ya en estas páginas): <span data-heb="הדר אלהינו">«el esplendor de nuestro Dios» está en este único versículo</span>, junto a «la gloria de Jehová».')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Isaiah', 35, 2), ('Isaiah', 40, 5), 'all flesh together shall see the glory of Jehovah'),
+    (('Isaiah', 35, 3), ('Hebrews', 12, 12), 'strengthen the hands that hang down and the paralyzed knees'),
+    (('Isaiah', 35, 4), ('Isaiah', 40, 9), 'behold your God'),
+    (('Isaiah', 35, 5), ('Matthew', 11, 5), 'the blind receive sight, the lame walk, the deaf hear'),
+    (('Isaiah', 35, 5), ('Luke', 7, 22), 'the blind receive sight, the lame walk, the deaf hear'),
+    (('Isaiah', 35, 5), ('Mark', 7, 37), 'he makes the deaf hear and the mute speak'),
+    (('Isaiah', 35, 6), ('Acts', 3, 8), 'walking and leaping and praising God'),
+    (('Isaiah', 35, 8), ('Isaiah', 40, 3), 'a highway for our God'),
+    (('Isaiah', 35, 8), ('Isaiah', 11, 16), 'a highway for the remnant'),
+    (('Isaiah', 35, 9), ('Isaiah', 11, 6), 'no lion — the wild changed'),
+    (('Isaiah', 35, 10), ('Isaiah', 61, 7), 'everlasting joy'),
+    (('Isaiah', 35, 10), ('Jeremiah', 31, 11), 'ransomed and redeemed'),
+    (('Isaiah', 35, 10), ('Revelation', 21, 4), 'sorrow and sighing flee — no more mourning'),
+    (('Isaiah', 35, 10), ('Revelation', 7, 17), 'every tear wiped away'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["isa35"] = dict(era='monarchy',
+    when='The wilderness and the dry land are glad and blossom like the chavatselet, the glory of Lebanon given to them; the slack hands and stumbling knees are told to be strong, and the hasty of heart to fear not, for God comes with vengeance and recompense and saves; the eyes of the blind open, the lame leap, the tongue of the mute cries out, and waters burst out of the wilderness, turning the burning sand to a pool and the jackals&rsquo; abode to reed; a highway, the Way of Holiness, on which no unclean passes and no lion goes, where the redeemed walk and the ransomed of Jehovah come to Zion with singing, gladness overtaking them and sorrow and sighing fleeing.',
+    clock='Undated in the book; it stands in the first half of Isaiah, after the desolation of chapter 34 (the same &lsquo;abode of jackals&rsquo; is there) and before the Hezekiah chapters. &#9888; Nothing in the chapter names a place or a king, and where the redeemed return from is not said.')
+
+CHAPTER_ART["isa35"] = [dict(
+    file='roberts-engedi-saba-1839.jpg',
+    title='Wilderness of Engedi, with the monastery of St. Saba, looking toward the Dead Sea', title_es='El desierto de Engadi, con el monasterio de San Saba, mirando hacia el Mar Muerto',
+    artist='David Roberts (lithograph by Louis Haghe); Wellcome Collection, CC BY 4.0', artist_es='David Roberts (litograf&iacute;a de Louis Haghe); Wellcome Collection, CC BY 4.0',
+    year='1843 (drawn 1839)', location='The Holy Land, coloured lithograph', location_es='Tierra Santa, litograf&iacute;a coloreada',
+    alt='A wide tinted lithograph of a barren mountain landscape seen from above. Bare tan and grey ridges and cliffs fall away on both sides toward a narrow gorge in the middle, where a small cluster of towers and white buildings stands at the head of a track; a short line of travelers and pack animals winds down the track toward the viewer. A few dark trees cling to the rocks in the lower right and center, and in the far distance a long pale stretch of water lies below flat-topped hills under a hazy sky.',
+    alt_es='Una amplia litograf&iacute;a tintada de un paisaje monta&ntilde;oso &aacute;rido visto desde arriba. Crestas y acantilados desnudos, pardos y grises, caen a ambos lados hacia una garganta estrecha en el centro, donde un peque&ntilde;o grupo de torres y edificios blancos se alza a la cabeza de un sendero; una corta fila de viajeros y bestias de carga baja por el sendero hacia el espectador. Unos pocos &aacute;rboles oscuros se aferran a las rocas abajo a la derecha y en el centro, y a lo lejos se extiende una larga franja p&aacute;lida de agua bajo colinas de cima plana y un cielo brumoso.',
+    note='Isaiah 35:1 and 8. A wilderness with a track through it, drawn on the road between Jerusalem and the Dead Sea; the lettering on the plate reads &lsquo;Convent of S. Saba, April 1839&rsquo;, and the museum catalogues it under Engedi. The chapter itself names no place; the dry land, the road and the travelers are what the verses speak of, and the monastery, the gorge and the sea are Roberts&rsquo;s. Nothing in the picture is in bloom; it is the wilderness the verses start from.',
+    note_es='Isa&iacute;as 35:1 y 8. Un desierto con un sendero que lo cruza, dibujado en el camino entre Jerusal&eacute;n y el Mar Muerto; la leyenda de la l&aacute;mina dice &laquo;Convent of S. Saba, April 1839&raquo;, y el museo la cataloga bajo Engadi. El propio cap&iacute;tulo no nombra ning&uacute;n lugar; la tierra seca, el camino y los viajeros son de lo que hablan los vers&iacute;culos, y el monasterio, la garganta y el mar son de Roberts. Nada en la imagen est&aacute; en flor; es el desierto del que parten los vers&iacute;culos.',
+    license='CC BY 4.0',
+    source_url='https://commons.wikimedia.org/wiki/File:Wilderness_of_Engedi,_with_the_monastery_of_St._Saba,_lookin_Wellcome_V0049464.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 145 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('kafaf', 'kafaf', 'כָּפַף', 'kafaf', 'TO BOW, to bend down &mdash; the root of <em>kefufim</em>, &lsquo;the bowed down&rsquo;, the ones Jehovah raises. <span data-heb="זוקף לכל הכפופים">&lsquo;raises up all who are bowed down&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-145.html#v145-14">Psalm 145:14</a> (now on these pages), beside the verb <em>zaqaf</em>, &lsquo;to raise up&rsquo;. &#9888; The shelf prints &lsquo;bowed down&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;cast down&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;those bent beneath their loads&rsquo; (<span class="tag t-tlb">TLB</span>). A woman bent double is stood straight in <a href="luke-13.html#v13-13">Luke 13:13</a>.', ('Psalms', 145, 14)))
+DICTIONARY.append(('sabar', 'sabar', 'שָׂבַר', 'sabar', 'TO LOOK WITH HOPE, to wait expectantly &mdash; the eyes turned toward one who is expected to give. <span data-heb="עיני כל אליך ישברו">&lsquo;the eyes of all look to you with hope&rsquo; stands in this one verse of the Hebrew Bible</span>, <a href="psalms-145.html#v145-15">Psalm 145:15</a> (now on these pages), where the thing awaited is food in its time. &#9888; The shelf prints &lsquo;wait upon thee&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;look to you&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;look hopefully&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;hope in thee&rsquo; (<span class="tag t-drb">Douay</span>) and &lsquo;look up to you for help&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 145, 15)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['kafaf'] = ('kafaf', 'DOBLARSE, encorvarse &mdash; la raíz de <em>kefufim</em>, «los encorvados», los que Jehová levanta. <span data-heb="זוקף לכל הכפופים">«levanta a todos los encorvados» está en este único versículo de la Biblia hebrea</span>, <a href="psalms-145.es.html#v145-14">Salmo 145:14</a> (ya en estas páginas), junto al verbo <em>zaqaf</em>, «levantar». &#9888; El estante imprime «oprimidos» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «agobiados» (<span class="tag t-nvi">NVI</span>) y «encorvados» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>). Una mujer doblada se pone derecha en <a href="luke-13.html#v13-13">Lucas 13:13</a>.')
+DICTIONARY_ES['sabar'] = ('sabar', 'MIRAR CON ESPERANZA, esperar con expectación &mdash; los ojos vueltos hacia quien se espera que dé. <span data-heb="עיני כל אליך ישברו">«los ojos de todos esperan en ti» está en este único versículo de la Biblia hebrea</span>, <a href="psalms-145.es.html#v145-15">Salmo 145:15</a> (ya en estas páginas), donde lo esperado es el alimento a su tiempo. &#9888; El estante imprime «esperan en ti» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>), «se posan en ti» (<span class="tag t-nvi">NVI</span>), «miran con esperanza» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «miran con ojos llenos de esperanza» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-8">Psalm 145:8</a> (now on these pages): <span data-heb="ארך אפים וגדל חסד">&lsquo;slow to anger and great in loyal love&rsquo; stands in this one verse</span>, and <span data-heb="גדל חסד">&lsquo;great in loyal love&rsquo; stands in three verses</span>, with Genesis 19:19 and Numbers 14:19.',) + _t[5:]
+    if _t[0] == 'chasid':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-10">Psalm 145:10</a> and <a href="psalms-145.html#v145-17">145:17</a> (now on these pages): <em>chasidekha</em>, &lsquo;your loyal ones&rsquo;, bless him, and he himself is <em>chasid</em> &lsquo;in all his works&rsquo; &mdash; and the shelf prints the word as &lsquo;saints&rsquo;, &lsquo;faithful people&rsquo;, &lsquo;loyal ones&rsquo; and, of him, &lsquo;holy&rsquo;, &lsquo;gracious&rsquo;, &lsquo;faithful&rsquo; and &lsquo;loyal&rsquo;.',) + _t[5:]
+    if _t[0] == 'tehillah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-1">Psalm 145:1</a> (now on these pages): <span data-heb="תהלה לדוד">&lsquo;A praise, of David&rsquo; stands in this one verse</span>, the only psalm so headed, and the last verse, <a href="psalms-145.html#v145-21">145:21</a>, is <em>tehillat Yehovah</em>, &lsquo;the praise of Jehovah&rsquo;.',) + _t[5:]
+    if _t[0] == 'ratson':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-16">Psalm 145:16</a> and <a href="psalms-145.html#v145-19">145:19</a> (now on these pages): the open hand satisfies every living thing with <em>ratson</em>, and Jehovah &lsquo;does&rsquo; the <em>ratson</em> of those who fear him; the shelf prints &lsquo;desire&rsquo;, &lsquo;good pleasure&rsquo;, &lsquo;blessing&rsquo; and &lsquo;will&rsquo;.',) + _t[5:]
+    if _t[0] == 'shamar':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-20">Psalm 145:20</a> (now on these pages): <span data-heb="שומר יהוה את כל אהביו">&lsquo;Jehovah guards all who love him&rsquo; stands in this one verse</span>; the next verb, <em>yashmid</em>, &lsquo;will destroy&rsquo;, differs from <em>shomer</em> by one letter.',) + _t[5:]
+    if _t[0] == 'shamad':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-20">Psalm 145:20</a> (now on these pages): <em>yashmid</em>, &lsquo;will destroy&rsquo;, said of all the wicked, one letter from the <em>shomer</em>, &lsquo;guards&rsquo;, said of all who love him.',) + _t[5:]
+    if _t[0] == 'acrostic':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-145.html#v145-1">Psalm 145:1</a> (now on these pages): <strong>Psalm 145</strong> is the cleanest alphabet psalm on these pages, all twenty-one letters present except <em>nun</em>, which is missing between <em>mem</em> (verse 13) and <em>samekh</em> (verse 14).',) + _t[5:]
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-8">Salmo 145:8</a> (ya en estas páginas): <span data-heb="ארך אפים וגדל חסד">«lento para la ira y grande en amor leal» está en este único versículo</span>, y <span data-heb="גדל חסד">«grande en amor leal» está en tres versículos</span>, con Génesis 19:19 y Números 14:19.')
+if 'chasid' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chasid']
+    DICTIONARY_ES['chasid'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-10">Salmo 145:10</a> y <a href="psalms-145.es.html#v145-17">145:17</a> (ya en estas páginas): <em>chasidekha</em>, «tus leales», lo bendicen, y él mismo es <em>chasid</em> «en todas sus obras» &mdash; y el estante imprime la palabra como «santos», «fieles», «leales» y, de él, «misericordioso», «bondadoso» y «leal».')
+if 'tehillah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tehillah']
+    DICTIONARY_ES['tehillah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-1">Salmo 145:1</a> (ya en estas páginas): <span data-heb="תהלה לדוד">«Alabanza, de David» está en este único versículo</span>, el único salmo así encabezado, y el último versículo, <a href="psalms-145.es.html#v145-21">145:21</a>, es <em>tehillat Yehovah</em>, «la alabanza de Jehová».')
+if 'ratson' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ratson']
+    DICTIONARY_ES['ratson'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-16">Salmo 145:16</a> y <a href="psalms-145.es.html#v145-19">145:19</a> (ya en estas páginas): la mano abierta satisface a todo ser viviente con <em>ratson</em>, y Jehová «hace» el <em>ratson</em> de los que le temen; el estante imprime «deseo», «bendición» y «favores».')
+if 'shamar' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamar']
+    DICTIONARY_ES['shamar'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-20">Salmo 145:20</a> (ya en estas páginas): <span data-heb="שומר יהוה את כל אהביו">«Jehová guarda a todos los que lo aman» está en este único versículo</span>; el verbo siguiente, <em>yashmid</em>, «destruirá», se distingue de <em>shomer</em> por una letra.')
+if 'shamad' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shamad']
+    DICTIONARY_ES['shamad'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-145.es.html#v145-20">Salmo 145:20</a> (ya en estas páginas): <em>yashmid</em>, «destruirá», dicho de todos los impíos, a una letra de <em>shomer</em>, «guarda», dicho de todos los que lo aman.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 145, 8), ('Exodus', 34, 6), 'the God of Exodus: gracious, compassionate, slow to anger'),
+    (('Psalms', 145, 8), ('Numbers', 14, 18), 'Moses quotes the formula back'),
+    (('Psalms', 145, 13), ('Daniel', 3, 33), 'his kingdom is an everlasting kingdom'),
+    (('Psalms', 145, 13), ('Daniel', 4, 31), 'his dominion from generation to generation'),
+    (('Psalms', 145, 13), ('Daniel', 7, 27), 'his kingdom is an everlasting kingdom'),
+    (('Psalms', 145, 14), ('Luke', 13, 13), 'a bent woman made straight'),
+    (('Psalms', 145, 15), ('Matthew', 6, 26), 'your heavenly Father feeds them'),
+    (('Psalms', 145, 18), ('Deuteronomy', 4, 7), 'so near whenever we call'),
+    (('Psalms', 145, 18), ('Psalms', 34, 18), 'near to the brokenhearted'),
+    (('Psalms', 145, 1), ('Psalms', 25, 1), 'another alphabet psalm'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms145"] = dict(era='monarchy',
+    when='An alphabet psalm headed &lsquo;A praise, of David&rsquo;: the speaker will exalt and bless the name of his God the King forever; Jehovah is great and greatly to be praised, one generation lauding his works to another, gracious and compassionate, slow to anger and great in loyal love, good to all; his works give thanks and his loyal ones bless; they speak of the glory of his kingdom, a kingdom of all ages; he upholds all who fall and raises the bowed down; the eyes of all look to him and he opens his hand; he is righteous, near to all who call on him in truth, does the goodwill of those who fear him, guards all who love him and destroys all the wicked; and let all flesh bless his holy name forever and ever. The line for the letter nun is missing.',
+    clock='Headed &lsquo;of David&rsquo; and undated by the psalm itself. &#9888; The chapter carries no event and no place; the heading is the only mark of its author.')
+
+CHAPTER_ART["psalms145"] = [dict(
+    file='paris-psalter-david-wisdom-prophecy.jpg',
+    title='David between Wisdom and Prophecy', title_es='David entre la Sabidur&iacute;a y la Profec&iacute;a',
+    artist='Byzantine illuminator, Paris Psalter', artist_es='Iluminador bizantino, Salterio de Par&iacute;s',
+    year='10th century', location='Illuminated manuscript, Bibliothèque nationale de France, MS gr. 139, f. 7v', location_es='Manuscrito iluminado, Bibliothèque nationale de France, MS gr. 139, f. 7v',
+    alt='A full-page Byzantine miniature on a gold ground inside a red and blue border. A bearded king with a crown and halo stands in the center in a dark patterned robe, holding an open book and raising two fingers. A white dove hovers above his head. To his left stands a haloed young woman in a blue cloak holding a red book, labelled in Greek as Wisdom; to his right a haloed young woman in a red cloak holding a scroll and touching his book, labelled Prophecy. Greek letters are written beside each figure.',
+    alt_es='Una miniatura bizantina a p&aacute;gina completa sobre fondo dorado, con un marco rojo y azul. Un rey barbudo con corona y aureola est&aacute; de pie en el centro con una t&uacute;nica oscura estampada, sosteniendo un libro abierto y alzando dos dedos. Una paloma blanca revolotea sobre su cabeza. A su izquierda est&aacute; una joven con aureola y manto azul que sostiene un libro rojo, rotulada en griego como Sabidur&iacute;a; a su derecha una joven con aureola y manto rojo que sostiene un rollo y toca su libro, rotulada Profec&iacute;a. Hay letras griegas escritas junto a cada figura.',
+    note='Psalm 145:1, &lsquo;A praise, of David&rsquo;. The Byzantine painter shows David as a crowned and haloed king with an open psalter, with two women named in Greek, Wisdom and Prophecy, at his sides and a dove above. None of that is in the psalm, whose heading says only &lsquo;of David&rsquo;; the figures, the dove and the Greek lettering are the manuscript&rsquo;s, and the book David holds is the painter&rsquo;s way of saying that the psalms are his.',
+    note_es='Salmo 145:1, &laquo;Alabanza, de David&raquo;. El pintor bizantino muestra a David como un rey coronado y con aureola con un salterio abierto, con dos mujeres nombradas en griego, Sabidur&iacute;a y Profec&iacute;a, a sus lados y una paloma encima. Nada de eso est&aacute; en el salmo, cuyo encabezamiento dice solo &laquo;de David&raquo;; las figuras, la paloma y las letras griegas son del manuscrito, y el libro que David sostiene es la manera que tiene el pintor de decir que los salmos son suyos.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Paris_psaulter_gr139_fol7v.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 62 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('misgav', 'misgav', 'מִשְׂגָּב', 'misgav', 'A HIGH PLACE, a refuge set out of reach &mdash; from <em>sagav</em>, &lsquo;to be high&rsquo;; the height an enemy cannot climb. <span data-heb="משגבי">&lsquo;my high tower&rsquo;, <em>misgavi</em>, stands in seven verses of the Hebrew Bible</span>: 2 Samuel 22:3, Psalm 18:2, Psalm 59:9 and 59:17, Psalm 62:2 and 62:6 (<a href="psalms-62.html#v62-2">62:2</a> and <a href="psalms-62.html#v62-6">62:6</a>, now on these pages) and Psalm 144:2 (the Hebrew Bible numbers 18:2, 59:9 and 59:17 as 18:3, 59:10 and 59:18; none yet on these pages but Psalm 62). In Psalm 62 it is the answer to a plot to throw a man down from his height (verse 4). &#9888; The shelf prints &lsquo;defence&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;high tower&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;fortress&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;secure height&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;protector&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 62, 2)))
+DICTIONARY.append(('dumiyyah', 'dumiyyah', 'דֻּמִיָּה', 'dumiyyah', 'STILLNESS, SILENCE &mdash; the noun of the quiet that waits; its verb form is the order <em>domi</em>, &lsquo;be still&rsquo;. <span data-heb="דומיה">The noun stands in two verses of the Hebrew Bible</span>: Psalm 39:2 (the Hebrew Bible&rsquo;s 39:3), where the speaker is silent and it hurts (not yet on these pages), and <a href="psalms-62.html#v62-1">Psalm 62:1</a> (now on these pages), <span data-heb="אך אל אלהים דומיה נפשי">&lsquo;Only for God is my soul stillness&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;waiteth upon God&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;waiteth in silence&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;finds rest in God&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;be subject to God&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 62, 1)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['misgav'] = ('misgav', 'UN LUGAR ALTO, un refugio puesto fuera de alcance &mdash; de <em>sagav</em>, «ser alto»; la altura que un enemigo no puede escalar. <span data-heb="משגבי">«mi altura segura», <em>misgavi</em>, está en siete versículos de la Biblia hebrea</span>: 2 Samuel 22:3, Salmo 18:2, Salmo 59:9 y 59:17, Salmo 62:2 y 62:6 (<a href="psalms-62.es.html#v62-2">62:2</a> y <a href="psalms-62.es.html#v62-6">62:6</a>, ya en estas páginas) y Salmo 144:2 (la Biblia hebrea numera 18:2, 59:9 y 59:17 como 18:3, 59:10 y 59:18; ninguno todavía en estas páginas salvo el Salmo 62). En el Salmo 62 es la respuesta a un plan de derribar a un hombre desde su altura (versículo 4). &#9888; El estante imprime «refugio» (<span class="tag t-rv">RV&nbsp;1909</span>, <span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «altura segura» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['dumiyyah'] = ('dumiyyah', 'QUIETUD, SILENCIO &mdash; el sustantivo de la calma que espera; su forma verbal es la orden <em>domi</em>, «quédate quieta». <span data-heb="דומיה">El sustantivo está en dos versículos de la Biblia hebrea</span>: Salmo 39:2 (el 39:3 de la Biblia hebrea), donde el que habla calla y le duele (todavía no en estas páginas), y <a href="psalms-62.es.html#v62-1">Salmo 62:1</a> (ya en estas páginas), <span data-heb="אך אל אלהים דומיה נפשי">«Solo para Dios es mi alma quietud», que está en este único versículo</span>. &#9888; El estante imprime «acallada» (<span class="tag t-rv60">RV60</span>), «callada» (<span class="tag t-rv">RV&nbsp;1909</span>), «halla descanso» (<span class="tag t-nvi">NVI</span>) y «esperando en silencio» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-9">Psalm 62:9</a> and <a href="psalms-62.html#v62-10">62:10</a> (now on these pages): <span data-heb="אך הבל בני אדם">&lsquo;Only a breath are the sons of Adam&rsquo; stands in this one verse</span>, and the verb of verse 10, <em>tehbalu</em>, &lsquo;do not become vain&rsquo;, is built on the same root.',) + _t[5:]
+    if _t[0] == 'selah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-4">Psalm 62:4</a> and <a href="psalms-62.html#v62-8">62:8</a> (now on these pages): <em>Selah</em> closes the plot of the mouths that bless and the heart that curses, and the call to pour out the heart before a God who is a refuge.',) + _t[5:]
+    if _t[0] == 'tsur':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-2">Psalm 62:2</a>, <a href="psalms-62.html#v62-6">62:6</a> and <a href="psalms-62.html#v62-7">62:7</a> (now on these pages): &lsquo;my rock and my salvation&rsquo; is said twice, the second time without &lsquo;greatly&rsquo;, and &lsquo;the rock of my strength, my refuge&rsquo; at verse 7.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-12">Psalm 62:12</a> (now on these pages): <span data-heb="ולך אדני חסד">&lsquo;and to you, Lord, loyal love&rsquo; stands in this one verse</span>, beside the strength that belongs to God at verse 11.',) + _t[5:]
+    if _t[0] == 'yeshuah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-1">Psalm 62:1</a> (now on these pages): <em>yeshu&rsquo;ati</em>, &lsquo;my salvation&rsquo;, is said at verses 1, 2 and 6, and the other form, <em>yish&rsquo;i</em>, at verse 7.',) + _t[5:]
+    if _t[0] == 'batach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-8">Psalm 62:8</a> and <a href="psalms-62.html#v62-10">62:10</a> (now on these pages): the people are told to trust (<em>bitchu</em>) in him at all times, and not to trust (<em>tivtechu</em>) in oppression.',) + _t[5:]
+    if _t[0] == 'tiqvah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-62.html#v62-5">Psalm 62:5</a> (now on these pages): &lsquo;for from him is my hope&rsquo;, <em>tiqvati</em>, in the place where verse 1 had &lsquo;my salvation&rsquo;.',) + _t[5:]
+if 'hevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hevel']
+    DICTIONARY_ES['hevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-9">Salmo 62:9</a> y <a href="psalms-62.es.html#v62-10">62:10</a> (ya en estas páginas): <span data-heb="אך הבל בני אדם">«Solo un soplo son los hijos de Adán» está en este único versículo</span>, y el verbo del versículo 10, <em>tehbalu</em>, «no os hagáis vanos», se construye sobre la misma raíz.')
+if 'selah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['selah']
+    DICTIONARY_ES['selah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-4">Salmo 62:4</a> y <a href="psalms-62.es.html#v62-8">62:8</a> (ya en estas páginas): <em>Selah</em> cierra el plan de las bocas que bendicen y del corazón que maldice, y la llamada a derramar el corazón ante un Dios que es refugio.')
+if 'tsur' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsur']
+    DICTIONARY_ES['tsur'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-2">Salmo 62:2</a>, <a href="psalms-62.es.html#v62-6">62:6</a> y <a href="psalms-62.es.html#v62-7">62:7</a> (ya en estas páginas): «mi roca y mi salvación» se dice dos veces, la segunda sin «mucho», y «la roca de mi fortaleza, mi refugio» en el versículo 7.')
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-12">Salmo 62:12</a> (ya en estas páginas): <span data-heb="ולך אדני חסד">«y tuyo, Señor, es el amor leal» está en este único versículo</span>, junto a la fuerza que es de Dios en el versículo 11.')
+if 'yeshuah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['yeshuah']
+    DICTIONARY_ES['yeshuah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-1">Salmo 62:1</a> (ya en estas páginas): <em>yeshu&rsquo;ati</em>, «mi salvación», se dice en los versículos 1, 2 y 6, y la otra forma, <em>yish&rsquo;i</em>, en el 7.')
+if 'batach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['batach']
+    DICTIONARY_ES['batach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-8">Salmo 62:8</a> y <a href="psalms-62.es.html#v62-10">62:10</a> (ya en estas páginas): se dice al pueblo que confíe (<em>bitchu</em>) en él en todo tiempo, y que no confíe (<em>tivtechu</em>) en la opresión.')
+if 'tiqvah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tiqvah']
+    DICTIONARY_ES['tiqvah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-62.es.html#v62-5">Salmo 62:5</a> (ya en estas páginas): «porque de él es mi esperanza», <em>tiqvati</em>, en el lugar donde el versículo 1 tenía «mi salvación».')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 62, 8), ('1 Samuel', 1, 15), 'pouring out the soul before Jehovah'),
+    (('Psalms', 62, 8), ('Psalms', 42, 5), 'pouring out the soul'),
+    (('Psalms', 62, 8), ('Psalms', 46, 2), 'God is a refuge for us'),
+    (('Psalms', 62, 9), ('Daniel', 5, 27), 'weighed in the balances'),
+    (('Psalms', 62, 12), ('Matthew', 16, 27), 'he will repay each according to what he has done'),
+    (('Psalms', 62, 12), ('Romans', 2, 6), 'he will render to each according to his works'),
+    (('Psalms', 62, 12), ('Revelation', 22, 12), 'to give back to each as his work is'),
+    (('Psalms', 62, 12), ('2 Timothy', 4, 14), 'the Lord will repay him according to his works'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms62"] = dict(era='monarchy',
+    when='A psalm of David for the leader, on Jeduthun: only for God is his soul stillness, he his rock and salvation and high tower, not greatly moved; against the men who rush on one man like a leaning wall and plot to thrust him from his height, blessing with the mouth and cursing inwardly; his soul told to be still, the rock again and not moved at all, salvation and glory upon God, and the people told to trust and pour out their hearts; the sons of Adam and of men a breath, lighter than a breath in the scales, no trust in oppression or robbery or wealth; once God has spoken and twice it was heard, strength is God&rsquo;s and loyal love the Lord&rsquo;s, and he repays a man according to his work.',
+    clock='Headed &lsquo;for the leader, on Jeduthun&rsquo; and &lsquo;of David&rsquo;; the psalm itself gives no event or date. &#9888; The enemies are not named and the plot is not placed, and the Name is not written in it.')
+
+CHAPTER_ART["psalms62"] = [dict(
+    file='rembrandt-david-prayer.jpg',
+    title='David in Prayer', title_es='David en oraci&oacute;n',
+    artist='Rembrandt van Rijn', artist_es='Rembrandt van Rijn',
+    year='1652', location='Etching, Cleveland Museum of Art', location_es='Aguafuerte, Cleveland Museum of Art',
+    alt='A small dark etching of a figure kneeling at the side of a curtained bed. The person, seen from behind and the side in a long pale cloak, kneels on the step with hands raised close to the face, looking up into the shadowed canopy; heavy curtains fall from the top, a bedpost with a hanging cloth stands at the left, a book lies on a stool at the right, and a harp lies on the floor in the front.',
+    alt_es='Un peque&ntilde;o aguafuerte oscuro de una figura arrodillada junto a una cama con cortinas. La persona, vista de espaldas y de lado, con un largo manto p&aacute;lido, se arrodilla en el escal&oacute;n con las manos alzadas cerca del rostro, mirando hacia el dosel en sombra; pesadas cortinas caen desde arriba, a la izquierda hay un poste de la cama con una tela colgada, a la derecha un libro sobre un taburete, y en primer plano un arpa en el suelo.',
+    note='Psalm 62:1 and 5. The psalm names the speaker only as David and says nothing of a bedchamber, a harp or a book; the room, the harp and the kneeling are Rembrandt&rsquo;s way of showing a man whose soul is still for God.',
+    note_es='Salmo 62:1 y 5. El salmo nombra al que habla solo como David y no dice nada de una alcoba, un arpa o un libro; el cuarto, el arpa y el arrodillarse son la manera que tiene Rembrandt de mostrar a un hombre cuya alma est&aacute; quieta ante Dios.',
+    license='CC0',
+    source_url='https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_David_in_Prayer_-_1974.257_-_Cleveland_Museum_of_Art.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 18 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('merchav', 'merchav', 'מֶרְחָב', 'merchav', 'A BROAD PLACE, open room &mdash; from <em>rachav</em>, &lsquo;to be wide&rsquo;; the opposite of <em>tsar</em>, a narrow place, distress. <span data-heb="ויוציאני למרחב">&lsquo;and he brought me out to a broad place&rsquo; stands in this one verse</span>, <a href="psalms-18.html#v18-19">Psalm 18:19</a> (now on these pages), where it answers the <em>tsar</em> of verse 6, and the verb <em>tarchiv</em>, &lsquo;you make broad&rsquo;, of the same root, is at <a href="psalms-18.html#v18-36">18:36</a>. &#9888; The shelf prints &lsquo;a large place&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;a spacious place&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;a roomy place&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a place of safety&rsquo; (<span class="tag t-tlb">TLB</span>).', ('Psalms', 18, 19)))
+DICTIONARY.append(('qiddem', 'qiddem', 'קִדֵּם', 'qiddem', 'TO COME BEFORE, to meet, to confront &mdash; the root of <em>qedem</em>, &lsquo;before, east&rsquo;; a thing that gets to you first. At <a href="psalms-18.html#v18-5">Psalm 18:5</a> (now on these pages) &lsquo;the snares of death confronted me&rsquo; and at <a href="psalms-18.html#v18-18">18:18</a> &lsquo;they confronted me in the day of my calamity&rsquo;: the same verb, <em>qiddemuni</em>, both times. &#9888; The <span class="tag t-kjv">KJV</span> prints &lsquo;prevented me&rsquo; in both, in the old sense of &lsquo;came before me&rsquo;, where the <span class="tag t-niv">NIV</span> has &lsquo;confronted&rsquo;, the <span class="tag t-asv">ASV</span> &lsquo;came upon me&rsquo; and the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;kept confronting me&rsquo;.', ('Psalms', 18, 5)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['merchav'] = ('merchav', 'UN LUGAR ANCHO, espacio abierto &mdash; de <em>rachav</em>, «ser ancho»; lo contrario de <em>tsar</em>, un lugar estrecho, la angustia. <span data-heb="ויוציאני למרחב">«y me sacó a lugar espacioso» está en este único versículo</span>, <a href="psalms-18.es.html#v18-19">Salmo 18:19</a> (ya en estas páginas), donde responde al <em>tsar</em> del versículo 6, y el verbo <em>tarchiv</em>, «ensanchas», de la misma raíz, está en <a href="psalms-18.es.html#v18-36">18:36</a>. &#9888; El estante imprime «lugar espacioso» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>), «anchura» (<span class="tag t-rv">RV&nbsp;1909</span>) y «un lugar seguro» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['qiddem'] = ('qiddem', 'VENIR ANTES, salir al encuentro, enfrentarse &mdash; la raíz de <em>qedem</em>, «delante, oriente»; lo que llega a ti primero. En <a href="psalms-18.es.html#v18-5">Salmo 18:5</a> (ya en estas páginas) «los lazos de la muerte me salieron al encuentro» y en <a href="psalms-18.es.html#v18-18">18:18</a> «me salieron al encuentro en el día de mi quebranto»: el mismo verbo, <em>qiddemuni</em>, las dos veces. &#9888; La <span class="tag t-rv">RV&nbsp;1909</span> lo imprime «Previniéronme» en el versículo 5 y «Asaltáronme» en el 18, la <span class="tag t-rv60">RV60</span> «me tendieron» y «me asaltaron», la <span class="tag t-nvi">NVI</span> «me atraparon» y «me salieron al encuentro» y la <span class="tag t-tnm">TNM&nbsp;1987</span> «se presentaron delante de mí» y «Siguieron presentándose delante de mí».')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tamim':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-23">Psalm 18:23</a>, <a href="psalms-18.html#v18-26">18:26</a>, <a href="psalms-18.html#v18-30">18:30</a> and <a href="psalms-18.html#v18-32">18:32</a> (now on these pages): four <em>tamim</em> in one psalm &mdash; the speaker is blameless with God, God shows himself blameless with the blameless man, his way is blameless, and he makes the speaker&rsquo;s way blameless.',) + _t[5:]
+    if _t[0] == 'chevel':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-4">Psalm 18:4</a> and <a href="psalms-18.html#v18-5">18:5</a> (now on these pages): <span data-heb="אפפוני חבלי מות">&lsquo;the cords of death surrounded me&rsquo; stands in two verses</span>, here and Psalm 116:3, and the cords of Sheol follow (2 Samuel 22:5 has &lsquo;the breakers of death&rsquo; instead).',) + _t[5:]
+    if _t[0] == 'mashah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-16">Psalm 18:16</a> (now on these pages): <span data-heb="ישלח ממרום יקחני ימשני ממים רבים">&lsquo;He sent from on high, he took me; he drew me out of many waters&rsquo; stands in two verses</span>, here and 2 Samuel 22:17; the verb <em>yamsheni</em>, &lsquo;he drew me out&rsquo;, is the verb of the name of Moses.',) + _t[5:]
+    if _t[0] == 'sela':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-2">Psalm 18:2</a> (now on these pages): <em>sal&rsquo;i</em>, &lsquo;my crag&rsquo;, is the first of the psalm&rsquo;s names of safety, beside <em>tsuri</em>, &lsquo;my rock&rsquo;.',) + _t[5:]
+    if _t[0] == 'ner':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-28">Psalm 18:28</a> (now on these pages): <span data-heb="כי אתה תאיר נרי">&lsquo;For you light my lamp&rsquo; stands in this one verse</span>, where 2 Samuel 22:29 has the other spelling, <em>niri</em>, &lsquo;you are my lamp&rsquo;.',) + _t[5:]
+    if _t[0] == 'shafal':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-27">Psalm 18:27</a> (now on these pages): <span data-heb="ועינים רמות תשפיל">&lsquo;haughty eyes you bring low&rsquo; stands in this one verse</span>, the verb of <em>tashpil</em>, the root of Daniel 5:22 and 7:24.',) + _t[5:]
+    if _t[0] == 'moshe':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-18.html#v18-16">Psalm 18:16</a> (now on these pages): David is &lsquo;drawn out of many waters&rsquo; with the verb of Moses&rsquo;s name, <em>yamsheni</em>, from <em>mashah</em>.',) + _t[5:]
+if 'tamim' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tamim']
+    DICTIONARY_ES['tamim'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-23">Salmo 18:23</a>, <a href="psalms-18.es.html#v18-26">18:26</a>, <a href="psalms-18.es.html#v18-30">18:30</a> y <a href="psalms-18.es.html#v18-32">18:32</a> (ya en estas páginas): cuatro <em>tamim</em> en un solo salmo &mdash; el que habla es íntegro con Dios, Dios se muestra íntegro con el hombre íntegro, su camino es íntegro, y hace íntegro el camino del que habla.')
+if 'chevel' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chevel']
+    DICTIONARY_ES['chevel'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-4">Salmo 18:4</a> y <a href="psalms-18.es.html#v18-5">18:5</a> (ya en estas páginas): <span data-heb="אפפוני חבלי מות">«las ligaduras de la muerte me rodearon» está en dos versículos</span>, este y el Salmo 116:3, y siguen las ligaduras del Seol (2 Samuel 22:5 tiene «las olas de la muerte» en su lugar).')
+if 'mashah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashah']
+    DICTIONARY_ES['mashah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-16">Salmo 18:16</a> (ya en estas páginas): <span data-heb="ישלח ממרום יקחני ימשני ממים רבים">«Envió desde lo alto, me tomó; me sacó de muchas aguas» está en dos versículos</span>, este y 2 Samuel 22:17; el verbo <em>yamsheni</em>, «me sacó», es el verbo del nombre de Moisés.')
+if 'sela' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['sela']
+    DICTIONARY_ES['sela'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-2">Salmo 18:2</a> (ya en estas páginas): <em>sal&rsquo;i</em>, «mi peñasco», es el primero de los nombres de seguridad del salmo, junto a <em>tsuri</em>, «mi roca».')
+if 'ner' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ner']
+    DICTIONARY_ES['ner'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-28">Salmo 18:28</a> (ya en estas páginas): <span data-heb="כי אתה תאיר נרי">«Porque tú enciendes mi lámpara» está en este único versículo</span>, donde 2 Samuel 22:29 tiene la otra grafía, <em>niri</em>, «tú eres mi lámpara».')
+if 'shafal' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shafal']
+    DICTIONARY_ES['shafal'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-27">Salmo 18:27</a> (ya en estas páginas): <span data-heb="ועינים רמות תשפיל">«los ojos altivos humillas» está en este único versículo</span>, el verbo de <em>tashpil</em>, la raíz de Daniel 5:22 y 7:24.')
+if 'moshe' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['moshe']
+    DICTIONARY_ES['moshe'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-18.es.html#v18-16">Salmo 18:16</a> (ya en estas páginas): David es «sacado de muchas aguas» con el verbo del nombre de Moisés, <em>yamsheni</em>, de <em>mashah</em>.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 18, 1), ('2 Samuel', 22, 1), 'the same song, with its heading'),
+    (('Psalms', 18, 7), ('Exodus', 19, 18), 'smoke and fire at the mountain'),
+    (('Psalms', 18, 13), ('Exodus', 9, 24), 'hail and coals of fire'),
+    (('Psalms', 18, 13), ('1 Samuel', 2, 10), 'Jehovah thunders from heaven'),
+    (('Psalms', 18, 15), ('Exodus', 15, 8), 'the blast of your nostrils'),
+    (('Psalms', 18, 16), ('Exodus', 2, 10), 'drawn out of the water'),
+    (('Psalms', 18, 27), ('Daniel', 5, 22), 'bring low'),
+    (('Psalms', 18, 28), ('2 Samuel', 21, 17), 'the lamp of Israel'),
+    (('Psalms', 18, 31), ('1 Samuel', 2, 2), 'no rock like our God'),
+    (('Psalms', 18, 49), ('Romans', 15, 9), 'among the nations, and sing to your name'),
+    (('Psalms', 18, 50), ('2 Samuel', 7, 15), 'kindness to his anointed, to David and his seed'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+import re as _re18
+def _f18(t):
+    t = _re18.sub(r'Psalm 18:(\d+), not yet on these\s+pages', lambda m: '<a href="psalms-18.html#v18-%d">Psalm 18:%s</a>, now on these pages' % (int(m.group(1)) - 1, m.group(1)), t)
+    t = _re18.sub(r'Salmo 18:(\d+), todav(?:í|&iacute;)a no en estas\s+p(?:á|&aacute;)ginas', lambda m: '<a href="psalms-18.es.html#v18-%d">Salmo 18:%s</a>, ya en estas páginas' % (int(m.group(1)) - 1, m.group(1)), t)
+    return t
+def _w18(o):
+    if isinstance(o, str): return _f18(o)
+    if isinstance(o, list): return [_w18(x) for x in o]
+    if isinstance(o, tuple): return tuple(_w18(x) for x in o)
+    if isinstance(o, dict): return {k: _w18(v) for k, v in o.items()}
+    return o
+DICTIONARY[:] = _w18(DICTIONARY)
+for _k in list(DICTIONARY_ES): DICTIONARY_ES[_k] = _w18(DICTIONARY_ES[_k])
+for _n18 in ('ENCYCLOPEDIA', 'ENCYCLOPEDIA_ES'):
+    _o = globals().get(_n18)
+    if isinstance(_o, list): _o[:] = _w18(_o)
+    elif isinstance(_o, dict):
+        for _k in list(_o): _o[_k] = _w18(_o[_k])
+
+CHRON_CHAPTERS["psalms18"] = dict(era='monarchy',
+    when='A song of David the servant of Jehovah, spoken in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul, the same song as 2 Samuel 22: I love you, Jehovah, my strength, my crag and stronghold, my high tower; the cords of death and Sheol, and in my distress I called, and he heard from his temple; the earth shook and he came down on a cherub in darkness, hail and coals of fire, thunder and arrows, the channels of the waters seen; he drew me out of many waters to a broad place because he delighted in me; the claim of clean hands and kept ways, God showing himself as each is; a lamp, a troop, a wall, hinds&rsquo; feet, a bow of bronze; the enemies pursued and no savior answered; head of nations, Jehovah lives, thanks among the nations, and kindness to his anointed, to David and to his seed, forever.',
+    clock='Headed &lsquo;in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul&rsquo;; the psalm itself names no battle and no place. &#9888; It is a twin of 2 Samuel 22, placed there in the appendix to David&rsquo;s reign; the two differ by dozens of small readings, and neither says which is first.')
+
+CHAPTER_ART["psalms18"] = [dict(
+    file='dore-david-saul-cave.jpg',
+    title='David Shows Saul How He Spared His Life', title_es='David muestra a Sa&uacute;l c&oacute;mo le perdon&oacute; la vida',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating 1 Samuel 24)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra 1 Samuel 24)',
+    alt='A dark engraving of a rocky gorge. At the top, along the edge of a high cliff, a long column of armed men and horsemen with raised spears files across the ridge under a stormy sky. Far below, on a lit ledge in front of a cave mouth, a man in a pale robe stands with one arm raised, holding up a scrap of cloth; a few robed men stand near the dark cave opening at the left, and another leans on a stone slab at the right. Mountains rise in the distance.',
+    alt_es='Un grabado oscuro de una garganta rocosa. Arriba, por el borde de un alto acantilado, una larga columna de hombres armados y jinetes con lanzas en alto desfila por la cresta bajo un cielo tormentoso. Muy abajo, en una repisa iluminada frente a la boca de una cueva, un hombre con t&uacute;nica p&aacute;lida est&aacute; de pie con un brazo alzado, sosteniendo un trozo de tela; unos pocos hombres con t&uacute;nica est&aacute;n junto a la oscura entrada de la cueva a la izquierda, y otro se apoya en una losa de piedra a la derecha. A lo lejos se alzan monta&ntilde;as.',
+    note='Psalm 18:1. The heading says David sang this song &lsquo;in the day Jehovah delivered him from the palm of all his enemies and from the hand of Saul&rsquo;, and does not say which day. Dor&eacute; draws the cave of 1 Samuel 24, where David, hidden below the cliff on which Saul&rsquo;s men march, held up the cut corner of Saul&rsquo;s robe, the episode of David sparing Saul; the psalm tells none of this, and the cave, the host on the ridge and the cloth are the engraver&rsquo;s.',
+    note_es='Salmo 18:1. El encabezamiento dice que David cant&oacute; este cantar &laquo;el d&iacute;a que Jehov&aacute; lo libr&oacute; de la palma de todos sus enemigos y de la mano de Sa&uacute;l&raquo;, y no dice cu&aacute;l d&iacute;a. Dor&eacute; dibuja la cueva de 1 Samuel 24, donde David, escondido bajo el acantilado por el que marchan los hombres de Sa&uacute;l, alz&oacute; el borde cortado del manto de Sa&uacute;l, el episodio en que David perdon&oacute; a Sa&uacute;l; el salmo no cuenta nada de esto, y la cueva, el ej&eacute;rcito en la cresta y el trozo de tela son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:074.David_Shows_Saul_How_He_Spared_His_Life.jpg')]
+
+
+
+# Appended to library_data.py for Psalm 2 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('nasakh', 'nasakh', 'נָסַךְ', 'nasakh', 'TO POUR OUT, to pour a libation; in the passive-sense form <em>nissakhti</em>, to be set up, installed (as an image is cast by pouring metal). <span data-heb="נסכתי">The form <em>nasachti</em>, &lsquo;I have set&rsquo;, stands in two verses</span>: <a href="psalms-2.html#v2-6">Psalm 2:6</a> (now on these pages), where Jehovah says &lsquo;I&mdash;I have set my king on Zion&rsquo;, and Proverbs 8:23 (not yet on these pages), where Wisdom says she was set up before the earth. &#9888; The shelf prints &lsquo;set&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;installed&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;enthroned&rsquo; (<span class="tag t-tlb">TLB</span>); the <span class="tag t-drb">Douay</span> has the king speak and says &lsquo;I am appointed king by him&rsquo;.', ('Psalms', 2, 6)))
+DICTIONARY.append(('bar-son', 'bar', 'בַּר', 'bar', 'SON in Aramaic; in Hebrew a word for PURE, clean (grain winnowed of chaff). The Hebrew word for son is <em>ben</em>, used at <a href="psalms-2.html#v2-7">Psalm 2:7</a>, and then at <a href="psalms-2.html#v2-12">2:12</a> the line <span data-heb="נשקו בר">&lsquo;<em>nashqu var</em>&rsquo; stands in this one verse</span>, &lsquo;kiss the son&rsquo; if <em>bar</em> is Aramaic, &lsquo;kiss purely&rsquo; if it is the Hebrew adjective. The same Aramaic <em>bar</em> is in <em>kevar enash</em>, &lsquo;one like a son of man&rsquo; (<a href="daniel-7.html#v7-13">Daniel 7:13</a>, now on these pages), and the Hebrew <em>bar</em>, &lsquo;pure&rsquo;, is in <em>bar levav</em>, &lsquo;pure of heart&rsquo; (<a href="psalms-24.html#v24-4">Psalm 24:4</a>, now on these pages). &#9888; The shelf prints &lsquo;Kiss the Son&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Kiss the son&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;Kiss his son&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;Embrace discipline&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 2, 12)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['nasakh'] = ('nasakh', 'DERRAMAR, verter una libación; en la forma de sentido pasivo <em>nissakhti</em>, ser establecida, instalada (como se funde una imagen vertiendo el metal). <span data-heb="נסכתי">La forma <em>nasachti</em>, «he puesto», está en dos versículos</span>: <a href="psalms-2.es.html#v2-6">Salmo 2:6</a> (ya en estas páginas), donde Jehová dice «yo—yo he puesto a mi rey sobre Sión», y Proverbios 8:23 (todavía no en estas páginas), donde la Sabiduría dice que fue establecida antes de la tierra. &#9888; La estantería imprime «puesto» (<span class="tag t-rv60">RV60</span>, <span class="tag t-rv">RV&nbsp;1909</span>), «establecido» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) e «instalado» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['bar-son'] = ('bar-son', 'HIJO en arameo; en hebreo una palabra para PURO, limpio (el grano aventado sin paja). La palabra hebrea para hijo es <em>ben</em>, usada en <a href="psalms-2.es.html#v2-7">Salmo 2:7</a>, y luego en <a href="psalms-2.es.html#v2-12">2:12</a> la línea <span data-heb="נשקו בר">«<em>nashqu var</em>» está en este único versículo</span>, «besad al hijo» si <em>bar</em> es arameo, «besad con pureza» si es el adjetivo hebreo. El mismo <em>bar</em> arameo está en <em>kevar enash</em>, «uno como hijo de hombre» (<a href="daniel-7.es.html#v7-13">Daniel 7:13</a>, ya en estas páginas), y el <em>bar</em> hebreo, «puro», está en <em>bar levav</em>, «limpio de corazón» (<a href="psalms-24.es.html#v24-4">Salmo 24:4</a>, ya en estas páginas). &#9888; La estantería imprime «Besad al Hijo» (<span class="tag t-rv">RV&nbsp;1909</span>), «Honrad al Hijo» (<span class="tag t-rv60">RV60</span>), «Besen al hijo» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y «Honren al hijo» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hagah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-1">Psalm 2:1</a> (now on these pages): <span data-heb="יהגו ריק">&lsquo;mutter an empty thing&rsquo; stands in this one verse</span>, the nations&rsquo; <em>yehgu</em> set against the man of <a href="psalms-1.html#v2">Psalm 1:2</a> who mutters the law day and night.',) + _t[5:]
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-2">Psalm 2:2</a> (now on these pages): <span data-heb="על יהוה ועל משיחו">&lsquo;against Jehovah and against his anointed&rsquo; stands in this one verse</span>, the kings of the earth taking their stand against both.',) + _t[5:]
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-12">Psalm 2:12</a> (now on these pages): <span data-heb="אשרי כל חוסי בו">&lsquo;happy are all who take refuge in him&rsquo; stands in this one verse</span>, the last line of the psalm answering the first word of <a href="psalms-1.html#v1">Psalm 1:1</a>.',) + _t[5:]
+    if _t[0] == 'shevet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-9">Psalm 2:9</a> (now on these pages): <span data-heb="שבט ברזל">&lsquo;a rod of iron&rsquo; stands in this one verse</span>, the rod that breaks the nations (or, read <em>tir&rsquo;em</em>, shepherds them, as Revelation 2:27 and 19:15 take it).',) + _t[5:]
+if 'hagah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hagah']
+    DICTIONARY_ES['hagah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-1">Salmo 2:1</a> (ya en estas páginas): <span data-heb="יהגו ריק">«murmuran una cosa vacía» está en este único versículo</span>, el <em>yehgu</em> de las naciones frente al hombre del <a href="psalms-1.es.html#v2">Salmo 1:2</a> que murmura la ley de día y de noche.')
+if 'mashiach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashiach']
+    DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-2">Salmo 2:2</a> (ya en estas páginas): <span data-heb="על יהוה ועל משיחו">«contra Jehová y contra su ungido» está en este único versículo</span>, los reyes de la tierra plantándose contra los dos.')
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-12">Salmo 2:12</a> (ya en estas páginas): <span data-heb="אשרי כל חוסי בו">«felices todos los que se refugian en él» está en este único versículo</span>, la última línea del salmo respondiendo a la primera palabra del <a href="psalms-1.es.html#v1">Salmo 1:1</a>.')
+if 'shevet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevet']
+    DICTIONARY_ES['shevet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-9">Salmo 2:9</a> (ya en estas páginas): <span data-heb="שבט ברזל">«vara de hierro» está en este único versículo</span>, la vara que quebranta a las naciones (o, leído <em>tir&rsquo;em</em>, las pastorea, como lo toman Apocalipsis 2:27 y 19:15).')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 2, 1), ('Psalms', 1, 2), 'the man mutters the law, the nations mutter nothing'),
+    (('Psalms', 2, 2), ('Acts', 4, 25), 'against Jehovah and against his anointed'),
+    (('Psalms', 2, 7), ('Acts', 13, 33), 'you are my son, today I have fathered you'),
+    (('Psalms', 2, 7), ('Hebrews', 1, 5), 'you are my son'),
+    (('Psalms', 2, 7), ('2 Samuel', 7, 14), 'I will be to him a father'),
+    (('Psalms', 2, 9), ('Revelation', 2, 27), "a rod of iron, the potter's vessel"),
+    (('Psalms', 2, 9), ('Jeremiah', 19, 11), "break as one breaks a potter's vessel"),
+    (('Psalms', 2, 8), ('Daniel', 7, 14), 'the nations given as inheritance'),
+    (('Psalms', 2, 12), ('Daniel', 7, 13), 'bar, son'),
+    (('Psalms', 2, 12), ('Psalms', 1, 6), 'perish in the way'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms2"] = dict(era='monarchy',
+    when='A psalm with no heading, opening with a question: why the nations are in tumult and the kings of the earth take their stand against Jehovah and his anointed, saying let us tear off their bonds; the one who sits in the heavens laughs and then speaks in anger; the king set on Zion, my holy mountain, tells the decree, You are my son, today I have fathered you; ask of me and I will give nations, you will break them with a rod of iron; the closing call to the kings to be wise, serve Jehovah with fear, kiss the son lest you perish in the way, and happy are all who take refuge in him.',
+    clock='No heading and no date in the psalm itself. &#9888; Nothing in it names a king or a war; the New Testament calls it David&rsquo;s (Acts 4:25) and reads it of the Messiah, and the shelf is not agreed on whether the last line says &lsquo;son&rsquo;.')
+
+CHAPTER_ART["psalms2"] = [dict(
+    file='floris-galle-solomon-anointed.jpg',
+    title='Solomon Anointed King', title_es='Salom&oacute;n ungido rey',
+    artist='Philips Galle, after Frans Floris', artist_es='Philips Galle, seg&uacute;n Frans Floris',
+    year='n.d. (16th century)', location='Engraving, Royal Library of Belgium (print S.I 54153)', location_es='Grabado, Biblioteca Real de B&eacute;lgica (estampa S.I 54153)',
+    alt='A black-and-white engraving of a street scene before grand classical buildings. At the centre a young man in a soldier&rsquo;s tunic kneels on a low step with his hands crossed on his chest while a bearded man in a long robe pours oil from a curled horn onto his head; a second bearded man stands close behind. At the right a man blows a long horn beside a saddled mule with a fringed cloth, and more horn-blowers and people with raised arms fill the square behind. At the left an old man in a heavy cloak walks away and a boy looks on. A Latin caption runs along the bottom.',
+    alt_es='Un grabado en blanco y negro de una escena de calle ante grandes edificios cl&aacute;sicos. En el centro un joven con t&uacute;nica de soldado est&aacute; arrodillado en un escal&oacute;n bajo con las manos cruzadas sobre el pecho mientras un hombre barbado con t&uacute;nica larga le vierte aceite de un cuerno curvo sobre la cabeza; otro hombre barbado est&aacute; justo detr&aacute;s. A la derecha un hombre toca un largo cuerno junto a una mula ensillada con un pa&ntilde;o con flecos, y m&aacute;s trompeteros y gente con los brazos en alto llenan la plaza al fondo. A la izquierda un anciano con un manto pesado se aleja y un muchacho mira. Una leyenda en lat&iacute;n recorre la parte inferior.',
+    note='Psalm 2:6. &lsquo;I&mdash;I have set my king on Zion&rsquo;. The Latin caption says that when King David was dead his son Solomon succeeded him, anointed king by Nathan the prophet and Zadok the priest (1 Kings 1). The psalm names no scene; the oil, the horns and the mule are the engraver&rsquo;s picture of a king installed on Zion, from the story where the same two men anoint him.',
+    note_es='Salmo 2:6. &laquo;Yo&mdash;yo he puesto a mi rey sobre Si&oacute;n&raquo;. La leyenda en lat&iacute;n dice que, muerto el rey David, le sucedi&oacute; su hijo Salom&oacute;n, ungido rey por Nat&aacute;n el profeta y Sadoc el sacerdote (1 Reyes 1). El salmo no nombra ninguna escena; el aceite, los cuernos y la mula son la imagen del grabador de un rey instalado en Si&oacute;n, tomada del relato donde los mismos dos hombres lo ungen.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Solomon_Anointed_King_s.d_print_by_Frans_Floris_I,_S.I_54153,_Prints_Department,_Royal_Library_of_Belgium.jpg')]
+
+
+
+# Appended to library_data.py for Jeremiah 17 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('anush', 'anush', 'אָנוּשׁ', 'anush', 'INCURABLE, desperate &mdash; of a wound or a sickness that nothing heals. <span data-heb="ואנש הוא">&lsquo;and incurable&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-9">Jeremiah 17:9</a> (now on these pages), said of the heart, and the same word returns at <a href="jeremiah-17.html#v17-16">17:16</a> in <span data-heb="יום אנוש">&lsquo;the incurable day&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;desperately wicked&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;beyond cure&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;desperate&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), and for the day &lsquo;the woeful day&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the day of despair&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the desperate day&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); the <span class="tag t-drb">Douay</span> has &lsquo;unsearchable&rsquo; for the heart.', ('Jeremiah', 17, 9)))
+DICTIONARY.append(('aqov', 'aqov', 'עָקֹב', 'aqov', 'CROOKED, deceitful &mdash; from <em>aqav</em>, to take by the heel, the root of <em>Ya&rsquo;aqov</em>, Jacob. <span data-heb="עקב הלב מכל">&lsquo;the heart is crooked above all things&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-9">Jeremiah 17:9</a> (now on these pages). The root is the verb of Esau&rsquo;s complaint at <a href="genesis-27.html#v27-36">Genesis 27:36</a> (now on these pages), &lsquo;he has supplanted me these two times&rsquo;. &#9888; The shelf prints &lsquo;deceitful&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;more treacherous&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;perverse&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 17, 9)))
+DICTIONARY.append(('shamir', 'shamir', 'שָׁמִיר', 'shamir', 'A VERY HARD STONE, the diamond or emery that cuts other stone &mdash; also a thorny growth (Isaiah 5:6). <span data-heb="בצפרן שמיר">&lsquo;with the point of a diamond&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-1">Jeremiah 17:1</a> (now on these pages), where Judah&rsquo;s sin is cut into the tablet of the heart. &#9888; The shelf prints &lsquo;the point of a diamond&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;a diamond point&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;a flint point&rsquo; (<span class="tag t-niv">NIV</span>).', ('Jeremiah', 17, 1)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['anush'] = ('anush', 'INCURABLE, desesperado &mdash; de una herida o una enfermedad que nada sana. <span data-heb="ואנש הוא">«e incurable» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-9">Jeremías 17:9</a> (ya en estas páginas), dicho del corazón, y la misma palabra vuelve en <a href="jeremiah-17.es.html#v17-16">17:16</a> en <span data-heb="יום אנוש">«el día incurable», que está en este único versículo</span>. &#9888; La estantería imprime «perverso» (<span class="tag t-rv60">RV60</span>) , «No tiene remedio» (<span class="tag t-nvi">NVI</span>) y «desesperado» (<span class="tag t-tnm">TNM&nbsp;1987</span>), y para el día «día de calamidad» (<span class="tag t-rv60">RV60</span>), «el día de la desesperación» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «el día del desastre» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['aqov'] = ('aqov', 'TORCIDO, engañoso &mdash; de <em>aqav</em>, agarrar del talón, la raíz de <em>Ya&rsquo;aqov</em>, Jacob. <span data-heb="עקב הלב מכל">«torcido es el corazón más que todas las cosas» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-9">Jeremías 17:9</a> (ya en estas páginas). La raíz es el verbo de la queja de Esaú en <a href="genesis-27.html#v27-36">Génesis 27:36</a> (ya en estas páginas, todavía sin página en español), «me ha suplantado ya dos veces». &#9888; La estantería imprime «Engañoso» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «más traicionero» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['shamir'] = ('shamir', 'UNA PIEDRA DURÍSIMA, el diamante o el esmeril que corta otra piedra &mdash; también una maleza espinosa (Isaías 5:6). <span data-heb="בצפרן שמיר">«con punta de diamante» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-1">Jeremías 17:1</a> (ya en estas páginas), donde el pecado de Judá se graba en la tabla del corazón. &#9888; La estantería imprime «punta de diamante» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'machseh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-17">Jeremiah 17:17</a> (now on these pages): <span data-heb="מחסי אתה ביום רעה">&lsquo;you are my refuge in the day of evil&rsquo; stands in this one verse</span>; the shelf splits between &lsquo;hope&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>) and &lsquo;refuge&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>).',) + _t[5:]
+    if _t[0] == 'miqveh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-13">Jeremiah 17:13</a> (now on these pages): <span data-heb="מקוה ישראל יהוה">&lsquo;hope of Israel, Jehovah&rsquo; stands in this one verse</span>, and the verse goes on to <span data-heb="מקור מים חיים">&lsquo;the fountain of living water&rsquo;, which stands in two verses</span>, here and <a href="jeremiah-2.html#v2-13">Jeremiah 2:13</a>, so the &lsquo;hope&rsquo; sits beside a word for water.',) + _t[5:]
+    if _t[0] == 'massa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-21">Jeremiah 17:21</a> (now on these pages): <span data-heb="ואל תשאו משא ביום השבת">&lsquo;and do not lift a load on the day of the sabbath&rsquo; stands in this one verse</span>; the load is carried in and out of the gates of Jerusalem, and the chapter ends with a fire in those gates.',) + _t[5:]
+    if _t[0] == 'shemittah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-4">Jeremiah 17:4</a> (now on these pages): <span data-heb="ושמטתה">&lsquo;and you will let go&rsquo; stands in this one verse</span>, the verb of the release, said of Judah letting go of its inheritance.',) + _t[5:]
+    if _t[0] == 'kelayot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-10">Jeremiah 17:10</a> (now on these pages): <span data-heb="חקר לב בחן כליות">&lsquo;search the heart, test the kidneys&rsquo; stands in this one verse</span>, and <span data-heb="בחן כליות">&lsquo;test the kidneys&rsquo; stands in two verses</span>, here and Jeremiah 11:20.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-8">Jeremiah 17:8</a> (now on these pages): <span data-heb="ולא ירא יראה">&lsquo;and he will not see (or fear)&rsquo; stands in this one verse</span>, written <em>yira</em>, &lsquo;he will fear&rsquo;, and read <em>yireh</em>, &lsquo;he will see&rsquo;; the shelf follows both.',) + _t[5:]
+if 'machseh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['machseh']
+    DICTIONARY_ES['machseh'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-17">Jeremías 17:17</a> (ya en estas páginas): <span data-heb="מחסי אתה ביום רעה">«tú eres mi refugio en el día malo» está en este único versículo</span>; el estante se divide entre «esperanza» (<span class="tag t-rv">RV&nbsp;1909</span>) y «refugio» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>).')
+if 'miqveh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['miqveh']
+    DICTIONARY_ES['miqveh'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-13">Jeremías 17:13</a> (ya en estas páginas): <span data-heb="מקוה ישראל יהוה">«esperanza de Israel, Jehová» está en este único versículo</span>, y el versículo sigue con <span data-heb="מקור מים חיים">«la fuente de agua viva», que está en dos versículos</span>, este y <a href="jeremiah-2.es.html#v2-13">Jeremías 2:13</a>, de modo que la «esperanza» queda junto a una palabra de agua.')
+if 'massa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['massa']
+    DICTIONARY_ES['massa'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-21">Jeremías 17:21</a> (ya en estas páginas): <span data-heb="ואל תשאו משא ביום השבת">«y no levantéis carga en el día del sábado» está en este único versículo</span>; la carga se mete y se saca por las puertas de Jerusalén, y el capítulo termina con un fuego en esas puertas.')
+if 'shemittah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shemittah']
+    DICTIONARY_ES['shemittah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-4">Jeremías 17:4</a> (ya en estas páginas): <span data-heb="ושמטתה">«y soltarás» está en este único versículo</span>, el verbo de la liberación, dicho de Judá soltando su heredad.')
+if 'kelayot' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kelayot']
+    DICTIONARY_ES['kelayot'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-10">Jeremías 17:10</a> (ya en estas páginas): <span data-heb="חקר לב בחן כליות">«escudriño el corazón, pruebo los riñones» está en este único versículo</span>, y <span data-heb="בחן כליות">«pruebo los riñones» está en dos versículos</span>, este y Jeremías 11:20.')
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-8">Jeremías 17:8</a> (ya en estas páginas): <span data-heb="ולא ירא יראה">«y no verá (o temerá)» está en este único versículo</span>, escrito <em>yira</em>, «temerá», y leído <em>yireh</em>, «verá»; el estante sigue ambas.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Jeremiah', 17, 1), ('Proverbs', 3, 3), 'the tablet of the heart'),
+    (('Jeremiah', 17, 1), ('2 Corinthians', 3, 3), 'not on tablets of stone but on tablets of human hearts'),
+    (('Jeremiah', 17, 4), ('Deuteronomy', 32, 22), 'a fire kindled in my anger'),
+    (('Jeremiah', 17, 8), ('Psalms', 1, 3), 'a tree planted by water'),
+    (('Jeremiah', 17, 9), ('Genesis', 27, 36), "aqov, the root of Jacob's name"),
+    (('Jeremiah', 17, 10), ('Psalms', 139, 23), 'search me and know my heart'),
+    (('Jeremiah', 17, 13), ('Jeremiah', 2, 13), 'the fountain of living water'),
+    (('Jeremiah', 17, 21), ('Exodus', 20, 8), 'remember the sabbath day'),
+    (('Jeremiah', 17, 27), ('Amos', 1, 14), 'I will kindle a fire'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["jer17"] = dict(era='exile',
+    when='A chapter of two men and two cities: the sin of Judah written with a pen of iron and a diamond point on the tablet of the heart; the cursed man who trusts in man, like a shrub in a salt land, and the blessed man who trusts in Jehovah, like a tree planted by water; the heart crooked above all things, searched by Jehovah; the partridge and the riches left half-way; the fountain of living water forsaken; Jeremiah\'s prayer to be healed, his claim that he did not hurry away from shepherding, and his prayer against his pursuers; and the sabbath at the gates of Jerusalem, a load not to be lifted, with a city full of kings and offerings if they listen and a fire in its gates if they do not.',
+    clock='Undated by the chapter itself; its gate-sermon is placed in the reign of the last kings of Judah, before the fall of Jerusalem. &#9888; Nothing in it names a king, and the shelf is not agreed on when the sermon was given.')
+
+CHAPTER_ART["jer17"] = [dict(
+    file='dore-123-baruch-writes-jeremiah.jpg',
+    title='Baruch Writes Jeremiah&rsquo;s Prophecies', title_es='Baruc escribe las profec&iacute;as de Jerem&iacute;as',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating Jeremiah 36)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra Jerem&iacute;as 36)',
+    alt='A dark engraving of a rocky chamber with a shaft of light falling from the upper right. An old bearded man in a long fringed robe with a patterned breastplate stands looking up into the light, one hand pressed to his chest and the other held out to the side. At his feet a younger man in a hooded cloak kneels, resting a large tablet on his knee and writing on it with a quill, while the old man rests a hand on the kneeling man&rsquo;s shoulder.',
+    alt_es='Un grabado oscuro de una c&aacute;mara rocosa con un rayo de luz que cae desde arriba a la derecha. Un anciano barbado con una t&uacute;nica larga con flecos y un pectoral con dibujos est&aacute; de pie mirando hacia la luz, con una mano apretada contra el pecho y la otra extendida a un lado. A sus pies un hombre m&aacute;s joven con capa y capucha est&aacute; arrodillado, con una tablilla grande apoyada en la rodilla, escribiendo en ella con una pluma, mientras el anciano apoya una mano en el hombro del arrodillado.',
+    note='Jeremiah 17:1. The chapter opens with sin written with a pen of iron on the tablet of the heart. Dor&eacute; draws a different writing from the same book: Baruch taking down the words of Jeremiah (Jeremiah 36), with the prophet in a shaft of light. The scene is not in this chapter, and the room, the light and the tablet are the engraver&rsquo;s.',
+    note_es='Jerem&iacute;as 17:1. El cap&iacute;tulo abre con el pecado escrito con cincel de hierro en la tabla del coraz&oacute;n. Dor&eacute; dibuja otra escritura del mismo libro: Baruc tomando las palabras de Jerem&iacute;as (Jerem&iacute;as 36), con el profeta bajo un rayo de luz. La escena no est&aacute; en este cap&iacute;tulo, y la c&aacute;mara, la luz y la tablilla son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:123.Baruch_Writes_Jeremiah%27s_Prophecies.jpg')]
+
+
+
+# Appended to library_data.py for Jeremiah 33 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('arukhah', 'arukhah', 'אֲרֻכָה', 'arukhah', 'THE NEW FLESH that grows over a wound, a closing-up, healing &mdash; from <em>arakh</em>, to be long, to lengthen: the skin is drawn out over the place that was torn. <span data-heb="מעלה לה ארכה ומרפא">&lsquo;bringing up for her health and healing&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-6">Jeremiah 33:6</a> (now on these pages), said of Jerusalem. &#9888; The shelf prints &lsquo;health&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;a recuperation&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and, for the whole clause, &lsquo;I will close their wounds&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 6)))
+DICTIONARY.append(('atteret', 'atteret', 'עֲתֶרֶת', '&lsquo;atteret', 'ABUNDANCE, a thick plenty &mdash; a rare word, from the same letters as <em>&lsquo;atar</em>, to be abundant (and, in another form, to entreat). <span data-heb="עתרת שלום ואמת">&lsquo;an abundance of peace and truth&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-6">Jeremiah 33:6</a> (now on these pages). &#9888; The shelf prints &lsquo;abundance&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;abundant&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;prayer&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 6)))
+DICTIONARY.append(('betsurot', 'betsurot', 'בְּצֻרוֹת', 'betsurot', 'FORTIFIED, INACCESSIBLE THINGS &mdash; from <em>batsar</em>, to cut off, to fortify, the root of <em>mivtsar</em>, a fortified city. <span data-heb="גדלות ובצרות">&lsquo;great and inaccessible things&rsquo; stands in this one verse</span>, <a href="jeremiah-33.html#v33-3">Jeremiah 33:3</a> (now on these pages), where Jehovah promises to tell a man shut up in a prison yard things walled off from him. &#9888; The shelf prints &lsquo;mighty&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;difficult&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;unsearchable&rsquo; (<span class="tag t-niv">NIV</span>), &lsquo;incomprehensible&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;sure&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 33, 3)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['arukhah'] = ('arukhah', 'LA CARNE NUEVA que crece sobre una herida, un cerrarse, sanidad &mdash; de <em>arakh</em>, alargarse: la piel se extiende sobre el lugar que estaba desgarrado. <span data-heb="מעלה לה ארכה ומרפא">«haciendo subir para ella sanidad y medicina» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-6">Jeremías 33:6</a> (ya en estas páginas), dicho de Jerusalén. &#9888; La estantería imprime «sanidad» (<span class="tag t-rv60">RV60</span>), «salud» (<span class="tag t-nvi">NVI</span>) y «un recobro» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['atteret'] = ('atteret', 'ABUNDANCIA, una plenitud espesa &mdash; una palabra rara, con las mismas letras que <em>&lsquo;atar</em>, abundar (y, en otra forma, suplicar). <span data-heb="עתרת שלום ואמת">«abundancia de paz y de verdad» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-6">Jeremías 33:6</a> (ya en estas páginas). &#9888; La estantería imprime «abundancia» (<span class="tag t-rv60">RV60</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y «abundante» (<span class="tag t-nvi">NVI</span>).')
+DICTIONARY_ES['betsurot'] = ('betsurot', 'COSAS FORTIFICADAS, INACCESIBLES &mdash; de <em>batsar</em>, cortar, fortificar, la raíz de <em>mivtsar</em>, ciudad fortificada. <span data-heb="גדלות ובצרות">«cosas grandes e inaccesibles» está en este único versículo</span>, <a href="jeremiah-33.es.html#v33-3">Jeremías 33:3</a> (ya en estas páginas), donde Jehová promete decirle a un hombre encerrado en un patio de prisión cosas amuralladas para él. &#9888; La estantería imprime «dificultosas» (<span class="tag t-rv">RV&nbsp;1909</span>), «ocultas» (<span class="tag t-rv60">RV60</span>), «inaccesibles» (<span class="tag t-nvi">NVI</span>) e «incomprensibles» (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'tsemach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-15">Jeremiah 33:15</a> (now on these pages): <span data-heb="צמח צדקה">&lsquo;a Branch of righteousness&rsquo; stands in this one verse</span>, the sibling of the &lsquo;righteous Branch&rsquo; of <a href="jeremiah-23.html#v23-5">Jeremiah 23:5</a>.',) + _t[5:]
+    if _t[0] == 'shevut':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-7">Jeremiah 33:7</a> (now on these pages): <span data-heb="והשבתי את שבות יהודה">&lsquo;and I will bring back the captivity of Judah&rsquo; stands in this one verse</span>, and the pledge returns at <a href="jeremiah-33.html#v33-11">33:11</a> and <a href="jeremiah-33.html#v33-26">33:26</a>.',) + _t[5:]
+    if _t[0] == 'todah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-11">Jeremiah 33:11</a> (now on these pages): <span data-heb="תודה בית יהוה">&lsquo;a thanksgiving offering to the house of Jehovah&rsquo; stands in two verses</span>, here and <a href="jeremiah-17.html#v17-26">Jeremiah 17:26</a>, a promise here and a condition there.',) + _t[5:]
+    if _t[0] == 'karat':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-17">Jeremiah 33:17</a> (now on these pages): <span data-heb="לא יכרת לדוד איש">&lsquo;there will not be cut off for David a man&rsquo; stands in this one verse</span>, the verb of cutting a covenant said of a line that will not be cut.',) + _t[5:]
+    if _t[0] == 'brit':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-20">Jeremiah 33:20</a> (now on these pages): <span data-heb="בריתי היום ואת בריתי הלילה">&lsquo;my covenant of the day and my covenant of the night&rsquo; stands in this one verse</span>, the covenant that is set beside the covenant with David.',) + _t[5:]
+    if _t[0] == 'mishpachah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-24">Jeremiah 33:24</a> (now on these pages): <span data-heb="שתי המשפחות">&lsquo;the two families&rsquo; stands in this one verse</span>, and the Hebrew does not say which two.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-26">Jeremiah 33:26</a> (now on these pages): <span data-heb="כי אשוב אשיב את שבותם">&lsquo;for I will restore their captivity&rsquo; stands in this one verse</span>, written <em>ashuv</em>, &lsquo;I will return&rsquo;, and read <em>ashiv</em>, &lsquo;I will bring back&rsquo;.',) + _t[5:]
+    if _t[0] == 'chesed':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-33.html#v33-11">Jeremiah 33:11</a> (now on these pages): <span data-heb="כי לעולם חסדו">&lsquo;for his loyal love is forever&rsquo; stands in more than thirty verses</span>, among them <a href="psalms-118.html#v118-1">Psalm 118:1</a>; here it is sung at a wedding in a ruined city.',) + _t[5:]
+if 'tsemach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['tsemach']
+    DICTIONARY_ES['tsemach'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-15">Jeremías 33:15</a> (ya en estas páginas): <span data-heb="צמח צדקה">«un Renuevo de justicia» está en este único versículo</span>, el hermano del «Renuevo justo» de <a href="jeremiah-23.es.html#v23-5">Jeremías 23:5</a>.')
+if 'shevut' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevut']
+    DICTIONARY_ES['shevut'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-7">Jeremías 33:7</a> (ya en estas páginas): <span data-heb="והשבתי את שבות יהודה">«y haré volver la cautividad de Judá» está en este único versículo</span>, y la promesa vuelve en <a href="jeremiah-33.es.html#v33-11">33:11</a> y <a href="jeremiah-33.es.html#v33-26">33:26</a>.')
+if 'todah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['todah']
+    DICTIONARY_ES['todah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-11">Jeremías 33:11</a> (ya en estas páginas): <span data-heb="תודה בית יהוה">«una ofrenda de acción de gracias a la casa de Jehová» está en dos versículos</span>, este y <a href="jeremiah-17.es.html#v17-26">Jeremías 17:26</a>, una promesa aquí y una condición allí.')
+if 'karat' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['karat']
+    DICTIONARY_ES['karat'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-17">Jeremías 33:17</a> (ya en estas páginas): <span data-heb="לא יכרת לדוד איש">«no será cortado a David un hombre» está en este único versículo</span>, el verbo de cortar un pacto dicho de una línea que no será cortada.')
+if 'brit' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['brit']
+    DICTIONARY_ES['brit'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-20">Jeremías 33:20</a> (ya en estas páginas): <span data-heb="בריתי היום ואת בריתי הלילה">«mi pacto del día y mi pacto de la noche» está en este único versículo</span>, el pacto que se pone junto al pacto con David.')
+if 'mishpachah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mishpachah']
+    DICTIONARY_ES['mishpachah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-24">Jeremías 33:24</a> (ya en estas páginas): <span data-heb="שתי המשפחות">«las dos familias» está en este único versículo</span>, y el hebreo no dice cuáles dos.')
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-26">Jeremías 33:26</a> (ya en estas páginas): <span data-heb="כי אשוב אשיב את שבותם">«porque haré volver a sus cautivos» está en este único versículo</span>, escrito <em>ashuv</em>, «volveré», y leído <em>ashiv</em>, «haré volver».')
+if 'chesed' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['chesed']
+    DICTIONARY_ES['chesed'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-33.es.html#v33-11">Jeremías 33:11</a> (ya en estas páginas): <span data-heb="כי לעולם חסדו">«porque para siempre es su amor leal» está en más de treinta versículos</span>, entre ellos <a href="psalms-118.es.html#v118-1">Salmo 118:1</a>; aquí se canta en una boda en una ciudad en ruinas.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Jeremiah', 33, 3), ('Psalms', 91, 15), 'he will call me and I will answer him'),
+    (('Jeremiah', 33, 3), ('Jeremiah', 29, 12), 'call upon me'),
+    (('Jeremiah', 33, 11), ('Jeremiah', 25, 10), 'the voice of the bridegroom and the voice of the bride'),
+    (('Jeremiah', 33, 11), ('Psalms', 118, 1), 'give thanks, for he is good'),
+    (('Jeremiah', 33, 11), ('Jeremiah', 17, 26), 'a thanksgiving offering to the house of Jehovah'),
+    (('Jeremiah', 33, 12), ('Psalms', 23, 2), 'makes them lie down'),
+    (('Jeremiah', 33, 13), ('Leviticus', 27, 32), 'passing under the hand that counts'),
+    (('Jeremiah', 33, 15), ('Jeremiah', 23, 5), 'a righteous Branch'),
+    (('Jeremiah', 33, 15), ('Zechariah', 3, 8), 'my servant the Branch'),
+    (('Jeremiah', 33, 16), ('Jeremiah', 23, 6), 'Jehovah Is Our Righteousness'),
+    (('Jeremiah', 33, 17), ('1 Kings', 8, 25), 'not cut off a man to sit on the throne'),
+    (('Jeremiah', 33, 17), ('2 Samuel', 7, 16), 'your throne will be established forever'),
+    (('Jeremiah', 33, 20), ('Genesis', 8, 22), 'day and night shall not cease'),
+    (('Jeremiah', 33, 22), ('Genesis', 22, 17), 'stars of the heavens and sand on the seashore'),
+    (('Jeremiah', 33, 22), ('Genesis', 15, 5), 'count the stars'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["jer33"] = dict(era='exile',
+    when='A second word to Jeremiah while he was still shut up in the courtyard of the guard, in the siege of Jerusalem: call to me and I will answer you, and I will tell you great and inaccessible things; the houses torn down for the siege and the city\'s dead; health and healing, the captivity of Judah and Israel brought back, the iniquity cleansed; the voices of the bridegroom and the bride heard again in the desolate cities, and shepherds with flocks passing under the counter\'s hand; the Branch of righteousness for David and the name Jehovah Is Our Righteousness; a man for David and for the Levites as long as day and night keep their covenant, the seed multiplied like the stars and the sand; and an answer to those who say that the two families were rejected.',
+    clock='Headed &lsquo;a second time, while he was still shut up in the courtyard of the guard&rsquo;, in the siege of chapter 32, whose date is the tenth year of Zedekiah. &#9888; Verses 14&ndash;26 are not in the Greek Jeremiah, and the shelf does not say when they were added.')
+
+CHAPTER_ART["jer33"] = [dict(
+    file='dore-001-creation-of-light.jpg',
+    title='The Creation of Light', title_es='La creaci&oacute;n de la luz',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating Genesis 1:3)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra G&eacute;nesis 1:3)',
+    alt='A black-and-white engraving of a heavy sky. At the upper left a burst of white light fans out in long straight rays from the edge of a dark mass of cloud at the centre, and the rays cross banks of billowing cloud. Below, a dim flat expanse of water and a dark shoreline lie in shadow under the sky.',
+    alt_es='Un grabado en blanco y negro de un cielo cargado. Arriba a la izquierda un estallido de luz blanca se abre en largos rayos rectos desde el borde de una masa oscura de nubes en el centro, y los rayos atraviesan bancos de nubes hinchadas. Abajo, una extensi&oacute;n plana y tenue de agua y una costa oscura quedan en sombra bajo el cielo.',
+    note='Jeremiah 33:20. The chapter argues from &lsquo;my covenant of the day and my covenant of the night&rsquo;, that day and night will come in their time as long as David has a son. Dor&eacute; draws the first day of Genesis 1:3, light breaking out of cloud over water; the scene is not in this chapter, and the clouds and rays are the engraver&rsquo;s.',
+    note_es='Jerem&iacute;as 33:20. El cap&iacute;tulo argumenta desde &laquo;mi pacto del d&iacute;a y mi pacto de la noche&raquo;, que el d&iacute;a y la noche vendr&aacute;n a su tiempo mientras David tenga un hijo. Dor&eacute; dibuja el primer d&iacute;a de G&eacute;nesis 1:3, la luz que irrumpe de entre las nubes sobre el agua; la escena no est&aacute; en este cap&iacute;tulo, y las nubes y los rayos son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:001.The_Creation_of_Light.jpg')]
+
+
+
+# Appended to library_data.py for Ezekiel 36 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('lev', 'lev', 'לֵב', 'lev', 'THE HEART &mdash; the inner self. In Hebrew it is where a person thinks, remembers and decides as well as feels, which is why a heart can be given &ldquo;to know&rdquo; Jehovah (<a href="jeremiah-24.html#v24-7">Jeremiah 24:7</a>, now on these pages) and why a law can be written on it (<a href="jeremiah-31.html#v31-32">Jeremiah 31:32</a>, now on these pages). &#11088; <a href="ezekiel-36.html#v36-26">Ezekiel 36:26</a> (now on these pages) is the chapter of the exchange: <span data-heb="לב חדש">&lsquo;a new heart&rsquo; stands in two verses of the Hebrew Bible</span>, Ezekiel 18:31 and this one; <span data-heb="לב האבן">&lsquo;the heart of stone&rsquo; stands in two verses</span>, Ezekiel 11:19 and this one; and <span data-heb="לב בשר">&lsquo;a heart of flesh&rsquo; stands in the same two</span>. &#9888; The shelf prints &lsquo;stony heart&rsquo; (<span class="tag t-kjv">KJV</span>) and &lsquo;heart of stone&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), and the <span class="tag t-tlb">TLB</span> adds &lsquo;new hearts of love&rsquo;, which the Hebrew does not say.', ('Ezekiel', 36, 26)))
+DICTIONARY.append(('zaraq', 'zaraq', 'זָרַק', 'zaraq', 'TO DASH, TO THROW &mdash; a quick scattering motion. Moses throws soot toward the heavens before Pharaoh (<a href="exodus-9.html#v9-8">Exodus 9:8</a>, now on these pages) and dashes half the blood against the altar (<a href="exodus-24.html#v24-6">Exodus 24:6</a>, now on these pages). &#11088; <a href="ezekiel-36.html#v36-25">Ezekiel 36:25</a> (now on these pages) uses it for clean water: <span data-heb="מים טהורים">&lsquo;clean water&rsquo; stands in this one verse of the Hebrew Bible</span>. &#9888; It is not <em>hizzah</em>, the &lsquo;sprinkle&rsquo; of the purification water in <a href="numbers-19.html#v19-18">Numbers 19:18</a> (now on these pages), though the shelf treats them alike: &lsquo;sprinkle&rsquo; in the <span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span> and both <span class="tag t-nwt">NWT</span> editions, &lsquo;pour&rsquo; in the <span class="tag t-gnv">Geneva</span> and the <span class="tag t-drb">Douay</span>.', ('Ezekiel', 36, 25)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['lev'] = ('lev', 'EL CORAZÓN &mdash; el yo interior. En hebreo es donde una persona piensa, recuerda y decide además de sentir, y por eso un corazón puede darse «para conocer» a Jehová (<a href="jeremiah-24.es.html#v24-7">Jeremías 24:7</a>, ya en estas páginas) y una ley puede escribirse en él (<a href="jeremiah-31.es.html#v31-32">Jeremías 31:32</a>, ya en estas páginas). &#11088; <a href="ezekiel-36.es.html#v36-26">Ezequiel 36:26</a> (ya en estas páginas) es el capítulo del intercambio: <span data-heb="לב חדש">«un corazón nuevo» está en dos versículos de la Biblia hebrea</span>, Ezequiel 18:31 y este; <span data-heb="לב האבן">«el corazón de piedra» está en dos versículos</span>, Ezequiel 11:19 y este; y <span data-heb="לב בשר">«un corazón de carne» está en los mismos dos</span>. &#9888; El estante imprime «corazón de piedra» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['zaraq'] = ('zaraq', 'ARROJAR, LANZAR &mdash; un movimiento rápido de esparcir. Moisés arroja hollín hacia los cielos delante de Faraón (<a href="exodus-9.es.html#v9-8">Éxodo 9:8</a>, ya en estas páginas) y lanza la mitad de la sangre contra el altar (<a href="exodus-24.es.html#v24-6">Éxodo 24:6</a>, ya en estas páginas). &#11088; <a href="ezekiel-36.es.html#v36-25">Ezequiel 36:25</a> (ya en estas páginas) lo usa para el agua limpia: <span data-heb="מים טהורים">«agua limpia» está en este único versículo de la Biblia hebrea</span>. &#9888; No es <em>hizzah</em>, el «rociar» del agua de purificación de <a href="numbers-19.es.html#v19-18">Números 19:18</a> (ya en estas páginas), aunque el estante los trata igual: «rociaré» en la <span class="tag t-nvi">NVI</span> y en la <span class="tag t-tnm">TNM&nbsp;1987</span>, «esparciré» en la <span class="tag t-rv">RV&nbsp;1909</span> y la <span class="tag t-rv60">RV60</span>.')
+
+# ---- extensions (EN)
+_E36_EN = {
+ 'dibbah': ' &#11088; <a href="ezekiel-36.html#v36-3">Ezekiel 36:3</a> (now on these pages) has <span data-heb="דבת עם">&lsquo;the ill report of the people&rsquo;, which stands in this one verse</span>, said of the land of Israel, and verse 13 gives the saying itself, &lsquo;a devourer of humankind&rsquo;, which is the spies&rsquo; own word of Numbers 13:32 turned on the land.',
+ 'ketiv-qere': ' &#11088; <a href="ezekiel-36.html#v36-13">Ezekiel 36:13&ndash;15</a> (now on these pages) has five pairs in three verses: the old spelling of &lsquo;you&rsquo; and <em>goyekh</em>, &lsquo;your nation&rsquo;, read <em>goyayikh</em>, &lsquo;your nations&rsquo;, at verse 13; the same nation pair and a verb written <em>tikhshali</em>, &lsquo;you will cause to stumble&rsquo;, read <em>teshakkeli</em>, &lsquo;you will bereave&rsquo;, at verse 14; and the nation pair again at verse 15.',
+ 'niddah': ' &#11088; <a href="ezekiel-36.html#v36-17">Ezekiel 36:17</a> (now on these pages) has <span data-heb="כטמאת הנדה">&lsquo;like the uncleanness of a woman in her menstrual impurity&rsquo;, which stands in this one verse</span>, said of Israel&rsquo;s way before Jehovah.',
+ 'chalal': ' &#11088; <a href="ezekiel-36.html#v36-20">Ezekiel 36:20&ndash;23</a> (now on these pages) is the chapter of the profaned name: the house of Israel profane it among the nations by being talked about, and Jehovah says he will sanctify his great name in them before the nations&rsquo; eyes.',
+ 'shakal': ' &#11088; <a href="ezekiel-36.html#v36-12">Ezekiel 36:12&ndash;15</a> (now on these pages) has the land told that it will &lsquo;no more bereave&rsquo; its people of children, and the verb is written and read in two ways at verse 14.',
+ 'darash': ' &#11088; <a href="ezekiel-36.html#v36-37">Ezekiel 36:37</a> (now on these pages) has <span data-heb="עוד זאת אדרש">&lsquo;I will yet be sought out&rsquo;, which stands in this one verse</span>, Jehovah letting himself be asked for what he has already promised.',
+ 'gillulim': ' &#11088; <a href="ezekiel-36.html#v36-18">Ezekiel 36:18 and 25</a> (now on these pages) name the idols twice: the land was made unclean &lsquo;with their idols&rsquo;, and the promised water cleanses &lsquo;from all your idols&rsquo;; the <span class="tag t-nwt">NWT&nbsp;1984</span> prints &lsquo;dungy idols&rsquo; and the <span class="tag t-nwt">NWT&nbsp;2013</span> &lsquo;disgusting idols&rsquo;.',
+ 'migrash': ' &#11088; <a href="ezekiel-36.html#v36-5">Ezekiel 36:5</a> (now on these pages) has Edom taking Israel&rsquo;s land &lsquo;for the sake of its pastureland, for plunder&rsquo;, and the shelf splits between a pasture (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and a casting out (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>).',
+ 'bamah': ' &#11088; <a href="ezekiel-36.html#v36-2">Ezekiel 36:2</a> (now on these pages) has the enemy&rsquo;s cry over <span data-heb="ובמות עולם">&lsquo;the ancient high places&rsquo;, which stands in this one verse</span>.',
+}
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] in _E36_EN:
+        DICTIONARY[_i] = _t[:4] + (_t[4] + _E36_EN[_t[0]],) + _t[5:]
+
+# ---- extensions (ES)
+_E36_ES = {
+ 'dibbah': ' &#11088; <a href="ezekiel-36.es.html#v36-3">Ezequiel 36:3</a> (ya en estas páginas) tiene <span data-heb="דבת עם">«el mal rumor del pueblo», que está en este único versículo</span>, dicho de la tierra de Israel, y el versículo 13 da el dicho mismo, «devoradora de seres humanos», que es la propia palabra de los espías de Números 13:32 vuelta contra la tierra.',
+ 'ketiv-qere': ' &#11088; <a href="ezekiel-36.es.html#v36-13">Ezequiel 36:13&ndash;15</a> (ya en estas páginas) tiene cinco pares en tres versículos: la ortografía antigua de «tú» y <em>goyekh</em>, «tu nación», leído <em>goyayikh</em>, «tus naciones», en el versículo 13; el mismo par de la nación y un verbo escrito <em>tikhshali</em>, «harás tropezar», leído <em>teshakkeli</em>, «privarás de hijos», en el versículo 14; y otra vez el par de la nación en el versículo 15.',
+ 'niddah': ' &#11088; <a href="ezekiel-36.es.html#v36-17">Ezequiel 36:17</a> (ya en estas páginas) tiene <span data-heb="כטמאת הנדה">«como la inmundicia de la mujer en su impureza menstrual», que está en este único versículo</span>, dicho del camino de Israel delante de Jehová.',
+ 'chalal': ' &#11088; <a href="ezekiel-36.es.html#v36-20">Ezequiel 36:20&ndash;23</a> (ya en estas páginas) es el capítulo del nombre profanado: la casa de Israel lo profana entre las naciones por lo que se dice de ella, y Jehová dice que santificará su gran nombre en ellos delante de los ojos de las naciones.',
+ 'shakal': ' &#11088; <a href="ezekiel-36.es.html#v36-12">Ezequiel 36:12&ndash;15</a> (ya en estas páginas) dice a la tierra «no volverás más a dejarlos sin hijos», y el verbo está escrito y leído de dos maneras en el versículo 14.',
+ 'darash': ' &#11088; <a href="ezekiel-36.es.html#v36-37">Ezequiel 36:37</a> (ya en estas páginas) tiene <span data-heb="עוד זאת אדרש">«aún seré buscado», que está en este único versículo</span>, Jehová dejándose pedir lo que ya ha prometido.',
+ 'gillulim': ' &#11088; <a href="ezekiel-36.es.html#v36-18">Ezequiel 36:18 y 25</a> (ya en estas páginas) nombran los ídolos dos veces: la tierra fue contaminada «con sus ídolos», y el agua prometida limpia «de todos sus ídolos»; la <span class="tag t-tnm">TNM&nbsp;1987</span> imprime «ídolos estercolizos» y la <span class="tag t-tnm">TNM&nbsp;2019</span> «ídolos repugnantes».',
+ 'migrash': ' &#11088; <a href="ezekiel-36.es.html#v36-5">Ezequiel 36:5</a> (ya en estas páginas) tiene a Edom tomando la tierra de Israel «por su pastizal, para saquearlo», y el estante se divide entre un pasto (<span class="tag t-tnm">TNM&nbsp;1987</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) y una expulsión (<span class="tag t-rv60">RV60</span>).',
+ 'bamah': ' &#11088; <a href="ezekiel-36.es.html#v36-2">Ezequiel 36:2</a> (ya en estas páginas) tiene el grito del enemigo sobre <span data-heb="ובמות עולם">«los lugares altos antiguos», que está en este único versículo</span>.',
+}
+for _k, _s in _E36_ES.items():
+    _d = DICTIONARY_ES[_k]
+    DICTIONARY_ES[_k] = (_d[0], _d[1] + _s)
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Ezekiel', 36, 3), ('Numbers', 13, 32), 'an ill report of the land, again'),
+    (('Ezekiel', 36, 13), ('Numbers', 13, 32), 'a land that eats up its inhabitants'),
+    (('Ezekiel', 36, 7), ('Exodus', 6, 8), 'the hand lifted in oath over the land'),
+    (('Ezekiel', 36, 17), ('Leviticus', 15, 19), 'impurity compared to the monthly separation'),
+    (('Ezekiel', 36, 17), ('Leviticus', 18, 28), 'a defiled land that vomits out its people'),
+    (('Ezekiel', 36, 20), ('Leviticus', 22, 32), 'do not profane my holy name'),
+    (('Ezekiel', 36, 22), ('Deuteronomy', 9, 5), 'not for your sake'),
+    (('Ezekiel', 36, 24), ('Ezekiel', 37, 21), 'take, gather, bring'),
+    (('Ezekiel', 36, 25), ('John', 3, 5), 'water and spirit'),
+    (('Ezekiel', 36, 25), ('Hebrews', 10, 22), 'bodies washed with pure water'),
+    (('Ezekiel', 36, 26), ('Jeremiah', 31, 32), 'the law written on the heart'),
+    (('Ezekiel', 36, 26), ('Psalms', 51, 12), 'a clean heart, create one for me'),
+    (('Ezekiel', 36, 26), ('2 Corinthians', 3, 3), 'tablets of hearts of flesh'),
+    (('Ezekiel', 36, 26), ('Deuteronomy', 30, 6), 'a circumcised heart'),
+    (('Ezekiel', 36, 27), ('Ezekiel', 37, 24), 'statutes and judgments, in the other order'),
+    (('Ezekiel', 36, 28), ('Leviticus', 26, 12), 'I will be your God, and you will be my people'),
+    (('Ezekiel', 36, 29), ('2 Kings', 8, 1), 'Jehovah calls for a famine; here he calls to the grain'),
+    (('Ezekiel', 36, 35), ('Joel', 2, 3), 'the garden of Eden, reversed'),
+    (('Ezekiel', 36, 35), ('Genesis', 2, 8), 'the garden planted in Eden'),
+    (('Ezekiel', 36, 36), ('Jeremiah', 24, 6), 'build and plant'),
+    (('Ezekiel', 36, 36), ('Ezekiel', 37, 14), 'I have spoken and done it'),
+    (('Ezekiel', 36, 37), ('Jeremiah', 33, 3), 'call to me, and I will answer'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["ezek36"] = dict(era='exile',
+    when='A word to the mountains of Israel: the nations that gloated over the land will bear their own shame, and the mountains will bear fruit for the people who are about to come home. The house of Israel defiled the ground by their way and were scattered, and the nations said of them that the people of Jehovah had to leave his land. Jehovah acts for his holy name, not for their sake: he will take them from the nations, sprinkle clean water on them, give them a new heart and put his spirit within them, call to the grain, and rebuild the ruined cities until the land is like the garden of Eden and the cities are full of people like a flock.',
+    clock='Undated in the chapter itself. It sits in the book among the words of restoration that follow the news that Jerusalem has been struck (Ezekiel 33:21, not yet on these pages, dated to the twelfth year of the exile), and it speaks of the land lying desolate and of the people scattered among the nations. &#9888; Nothing in the chapter fixes a day, and the order of the book is the only guide.')
+
+CHAPTER_ART["ezek36"] = [dict(
+    file='dore-ezekiel-prophesying.jpg',
+    title='Ezekiel Prophesying', title_es='Ezequiel profetizando',
+    artist='Gustave Doré, engraved by Charles Laplante', artist_es='Gustave Doré, grabado de Charles Laplante',
+    year='c. 1870', location='Wood engraving, Cassell, Petter &amp; Galpin edition of the Doré Bible', location_es='Grabado en madera, edición Cassell, Petter &amp; Galpin de la Biblia de Doré',
+    alt='A black-and-white wood engraving of a bearded prophet in a long robe standing on a rocky height at dusk, one arm raised and pointing upward. Around his feet sit three listeners in cloaks and head cloths, one with his head in his hand; farther down the slope a group of figures with a shepherd&rsquo;s staff, and low hills under a darkening sky behind them.',
+    alt_es='Un grabado en madera en blanco y negro de un profeta barbado con túnica larga, de pie sobre una altura rocosa al anochecer, con un brazo levantado señalando hacia arriba. A sus pies hay tres oyentes con mantos y tocados, uno con la cabeza apoyada en la mano; más abajo en la ladera, un grupo de figuras con un cayado de pastor, y colinas bajas bajo un cielo que oscurece.',
+    note='Ezekiel 36. This Doré plate was made for the prophet in general, not for this chapter, and it is lettered only &ldquo;Ezekiel Prophesying&rdquo;. It fits verse 1 loosely: the prophet is told to speak to the mountains of Israel, and Doré puts him on a height with hills behind him. The listeners, the dusk and the shepherd&rsquo;s staff are his, not the text&rsquo;s.',
+    note_es='Ezequiel 36. Esta lámina de Doré se hizo para el profeta en general y no para este capítulo, y lleva solo el rótulo &laquo;Ezekiel Prophesying&raquo;. Encaja de forma imprecisa con el versículo 1: al profeta se le manda hablar a los montes de Israel, y Doré lo sitúa en una altura con colinas detrás. Los oyentes, el anochecer y el cayado de pastor son suyos, no del texto.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Ezekiel_Prophesying_%E2%80%94_Dor%C3%A9_Bible_illustration_(Cassell,_c.1870).jpg')]
+
+# --- Psalm 34 ---
+import re as _re34
+def _one34(s, old, new, rx=False):
+    if rx:
+        assert len(_re34.findall(old, s)) == 1, (old[:70], len(_re34.findall(old, s)))
+        return _re34.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict34_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one34(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict34_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one34(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency34_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency34_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P34(es, txt, n):
+    return '<a href="ezekiel-34.%shtml#v34-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("baz", "biqqer", "tson", "matta") for _d in DICTIONARY)
+
+DICTIONARY.append(("baz", "baz", "בַּז", "baz",
+    'PLUNDER, spoil &mdash; what is taken by force. The spies&rsquo; report in Numbers 14 uses it of the people&rsquo;s own families, &lsquo;Our wives and our little ones will become plunder&rsquo; (<a href="numbers-14.html#v14-3">Numbers 14:3</a>, and again at 14:31, now on these pages), and <a href="ezekiel-34.html#v34-8">Ezekiel 34</a> (now on these pages) makes it the word of the whole chapter: the flock &lsquo;became plunder&rsquo; (verse 8), God will save it &lsquo;and they will no longer be plunder&rsquo; (22), and they &lsquo;will no longer be plunder for the nations&rsquo; (28). &#9888; Not the same word as <em>bazah</em>, &lsquo;despise&rsquo;. The shelf has &lsquo;prey&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;plundered&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;plunder&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); the translation prints &lsquo;plunder&rsquo; every time.',
+    ("Ezekiel", 34, 8)))
+DICTIONARY_ES["baz"] = ("baz",
+    'BOTÍN, presa &mdash;lo que se toma por la fuerza. El informe de los espías en Números 14 lo usa de las propias familias del pueblo, «Nuestras mujeres y nuestros pequeños serán botín» (<a href="numbers-14.es.html#v14-3">Números 14:3</a>, y otra vez en 14:31, ya en estas páginas), y <a href="ezekiel-34.es.html#v34-8">Ezequiel 34</a> (ya en estas páginas) lo hace la palabra de todo el capítulo: el rebaño «fue botín» (versículo 8), Dios lo salvará «y no serán más botín» (22), y «no serán más botín de las naciones» (28). &#9888; No es la misma palabra que <em>bazá</em>, «despreciar». La traducción imprime «botín» todas las veces.')
+
+DICTIONARY.append(("biqqer", "biqqer", "בִּקֵּר", "biqqer",
+    'TO INSPECT, go over one by one &mdash; the verb of a shepherd counting his flock, and of a priest looking over an offering. <a href="leviticus-27.html#v27-33">Leviticus 27:33</a> uses it of the tithe of the flock, &lsquo;He shall not inspect whether it is good or bad&rsquo;, and <a href="psalms-27.html#v27-4">Psalm 27:4</a> of the temple, &lsquo;to inspect his temple&rsquo; (both now on these pages). &#11088; <a href="ezekiel-34.html#v34-11">Ezekiel 34:11&ndash;12</a> (now on these pages) puts it in God&rsquo;s mouth beside <em>darash</em>, &lsquo;search for&rsquo;: &lsquo;I myself will search for my sheep and inspect them&rsquo;, as a shepherd inspects his flock on the day he is among his scattered sheep. Rashi says it is the language of visiting the sick. The <span class="tag t-kjv">KJV</span> has &lsquo;seek them out&rsquo; and the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;care for them&rsquo;; the translation prints &lsquo;inspect&rsquo;.',
+    ("Ezekiel", 34, 11)))
+DICTIONARY_ES["biqqer"] = ("biqqer",
+    'EXAMINAR, repasar una por una &mdash;el verbo de un pastor que cuenta su rebaño, y de un sacerdote que mira una ofrenda. <a href="leviticus-27.es.html#v27-33">Levítico 27:33</a> lo usa del diezmo del rebaño, «No examinará si es bueno o malo», y el <a href="psalms-27.es.html#v27-4">Salmo 27:4</a> del templo, «examinar su templo» (ambos ya en estas páginas). &#11088; <a href="ezekiel-34.es.html#v34-11">Ezequiel 34:11&ndash;12</a> (ya en estas páginas) lo pone en boca de Dios junto a <em>darash</em>, «buscar»: «yo mismo buscaré a mis ovejas y las examinaré», como un pastor examina su rebaño el día que está en medio de sus ovejas dispersas. Rashi dice que es el lenguaje de visitar a los enfermos.')
+
+DICTIONARY.append(("tson", "tson", "צֹאן", "tson",
+    'FLOCK &mdash; sheep and goats together, a collective noun, and in Hebrew grammar a feminine one. Moses asks for a shepherd lest the congregation be &lsquo;like sheep that have no shepherd&rsquo; (<a href="numbers-27.html#v27-17">Numbers 27:17</a>), and the people are &lsquo;the flock of his pasture&rsquo; (<a href="psalms-100.html#v100-3">Psalm 100:3</a>, both now on these pages). &#11088; <span data-heb="צאן מרעיתי">&lsquo;The flock of my pasture&rsquo; (<em>tson mar&rsquo;iti</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="jeremiah-23.html#v23-1">Jeremiah 23:1</a>, where it opens the woe on the shepherds, and <a href="ezekiel-34.html#v34-31">Ezekiel 34:31</a>, where it closes the chapter on them (now on these pages).',
+    ("Ezekiel", 34, 31)))
+DICTIONARY_ES["tson"] = ("tson",
+    'REBAÑO &mdash;ovejas y cabras juntas, un sustantivo colectivo, y en la gramática hebrea femenino. Moisés pide un pastor para que la congregación no sea «como ovejas que no tienen pastor» (<a href="numbers-27.es.html#v27-17">Números 27:17</a>), y el pueblo es «el rebaño de su pasto» (<a href="psalms-100.es.html#v100-3">Salmo 100:3</a>, ambos ya en estas páginas). &#11088; <span data-heb="צאן מרעיתי">«El rebaño de mi pasto» (<em>tson mar&rsquo;iti</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="jeremiah-23.es.html#v23-1">Jeremías 23:1</a>, donde abre el ay sobre los pastores, y <a href="ezekiel-34.es.html#v34-31">Ezequiel 34:31</a>, donde cierra el capítulo sobre ellos (ya en estas páginas).')
+
+DICTIONARY.append(("matta", "matta", "מַטָּע", "matta",
+    'A PLANTING &mdash; what is planted, from <em>nata</em>, &lsquo;to plant&rsquo;. &#11088; <a href="ezekiel-34.html#v34-29">Ezekiel 34:29</a> (now on these pages) promises &lsquo;a planting for a name&rsquo;, and the oaks of righteousness are &lsquo;the planting of Jehovah&rsquo; (<a href="isaiah-61.html#v61-3">Isaiah 61:3</a>, now on these pages), while <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> ends on the same two words, &lsquo;for a name&rsquo;. &#9888; It is not the <em>tsemach</em>, the Sprout, of <a href="jeremiah-33.html#v33-15">Jeremiah 33:15</a> (<a href="dictionary.html#tsemach">dictionary</a>). The shelf has &lsquo;a plant of renown&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a plantation for renown&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a planting for a name&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a bud of renown&rsquo; (<span class="tag t-drb">Douay</span>).',
+    ("Ezekiel", 34, 29)))
+DICTIONARY_ES["matta"] = ("matta",
+    'UN PLANTÍO &mdash;lo que se planta, de <em>nata</em>, «plantar». &#11088; <a href="ezekiel-34.es.html#v34-29">Ezequiel 34:29</a> (ya en estas páginas) promete «un plantío para un nombre», y los robles de justicia son «el plantío de Jehová» (<a href="isaiah-61.es.html#v61-3">Isaías 61:3</a>, ya en estas páginas), y <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> termina en las mismas dos palabras, «para un nombre». &#9888; No es el <em>tsémaj</em>, el Renuevo, de <a href="jeremiah-33.es.html#v33-15">Jeremías 33:15</a> (<a href="diccionario.html#tsemach">diccionario</a>).')
+
+# ---------- extensions ----------
+_dict34_en("roeh", add=' &#11088; <a href="ezekiel-34.html#v34-2">Ezekiel 34</a> (now on these pages) is the whole indictment of Israel&rsquo;s own shepherds, with the root in every verse: &lsquo;Should not the shepherds shepherd the flock?&rsquo;, and the answer, &lsquo;I myself will shepherd my sheep&rsquo; (verse 15), and &lsquo;one shepherd&rsquo;, David (verse 23).')
+_dict34_es("roeh", add=' &#11088; <a href="ezekiel-34.es.html#v34-2">Ezequiel 34</a> (ya en estas páginas) es toda la acusación contra los propios pastores de Israel, con la raíz en cada versículo: «¿No deben los pastores pastorear el rebaño?», y la respuesta, «Yo mismo pastorearé a mis ovejas» (versículo 15), y «un solo pastor», David (versículo 23).')
+_dict34_en("hoy", add=' &#11088; <a href="ezekiel-34.html#v34-2">Ezekiel 34:2</a> (now on these pages) opens it on the shepherds, as <a href="jeremiah-23.html#v23-1">Jeremiah 23:1</a> does: &lsquo;Woe to the shepherds of Israel who have been shepherding themselves!&rsquo;')
+_dict34_es("hoy", add=' &#11088; <a href="ezekiel-34.es.html#v34-2">Ezequiel 34:2</a> (ya en estas páginas) lo abre sobre los pastores, como <a href="jeremiah-23.es.html#v23-1">Jeremías 23:1</a>: «¡Ay de los pastores de Israel, que se han pastoreado a sí mismos!»')
+_dict34_en("chelev", add=' &#11088; &lsquo;You eat the fat&rsquo; is the shepherds&rsquo; charge (<a href="ezekiel-34.html#v34-3">Ezekiel 34:3</a>, now on these pages); the consonants are also those of &lsquo;milk&rsquo;, and the <span class="tag t-niv">NIV</span> reads &lsquo;curds&rsquo;.')
+_dict34_es("chelev", add=' &#11088; «Comen la grosura» es la acusación contra los pastores (<a href="ezekiel-34.es.html#v34-3">Ezequiel 34:3</a>, ya en estas páginas); las consonantes son también las de «leche», y la <span class="tag t-rv">RV 1909</span> lee «la leche».')
+_dict34_en("perekh", add=' &#11088; <span data-heb="בפרך">&lsquo;With crushing harshness&rsquo; (<em>be-farekh</em>) stands in <strong>six verses</strong> of the Hebrew Bible</span>: Exodus 1:13&ndash;14, Leviticus 25:43, 46 and 53, and <a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a> (now on these pages), where the shepherds rule the flock &lsquo;with force&rsquo; and with it.')
+_dict34_es("perekh", add=' &#11088; <span data-heb="בפרך">«Con dureza aplastante» (<em>be-farekh</em>) está en <strong>seis versículos</strong> de la Biblia hebrea</span>: Éxodo 1:13&ndash;14, Levítico 25:43, 46 y 53, y <a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a> (ya en estas páginas), donde los pastores dominan al rebaño «con fuerza» y con ella.')
+_dict34_en("radah", add=' &#11088; &lsquo;With force you have ruled them&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>, now on these pages), the verb that goes with &lsquo;harshness&rsquo; in Leviticus 25.')
+_dict34_es("radah", add=' &#11088; «Con fuerza las han dominado» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>, ya en estas páginas), el verbo que acompaña a «dureza» en Levítico 25.')
+_dict34_en("darash", add=' &#11088; In <a href="ezekiel-34.html#v34-6">Ezekiel 34</a> (now on these pages) it is the missing verb of verse 6, &lsquo;none searching&rsquo;, then the demand of verse 10, &lsquo;I will demand an accounting for my flock&rsquo;, then God&rsquo;s own, &lsquo;I myself will search for my sheep&rsquo; (11).')
+_dict34_es("darash", add=' &#11088; En <a href="ezekiel-34.es.html#v34-6">Ezequiel 34</a> (ya en estas páginas) es el verbo que falta en el versículo 6, «sin quien las buscara», luego la demanda del versículo 10, «demandaré mi rebaño», luego la de Dios mismo, «yo mismo buscaré a mis ovejas» (11).')
+_dict34_en("chavash", add=' &#11088; &lsquo;The broken you have not bound up&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>) and &lsquo;the broken I will bind up&rsquo; (34:16), the shepherd&rsquo;s work (now on these pages).')
+_dict34_es("chavash", add=' &#11088; «A la quebrada no la han vendado» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>) y «a la quebrada vendaré» (34:16), la obra del pastor (ya en estas páginas).')
+_dict34_en("nadach", add=' &#11088; &lsquo;The driven away you have not brought back&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>, now on these pages), and &lsquo;the driven away I will bring back&rsquo; (34:16).')
+_dict34_es("nadach", add=' &#11088; «A la descarriada no la han hecho volver» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>, ya en estas páginas), y «a la descarriada haré volver» (34:16).')
+_dict34_en("nasi", add=' &#11088; David is &lsquo;a prince among them&rsquo; (<a href="ezekiel-34.html#v34-24">Ezekiel 34:24</a>, now on these pages), where <a href="ezekiel-37.html#v37-24">Ezekiel 37:24</a> has &lsquo;king&rsquo; and 37:25 &lsquo;prince&rsquo;.')
+_dict34_es("nasi", add=' &#11088; David es «príncipe en medio de ellos» (<a href="ezekiel-34.es.html#v34-24">Ezequiel 34:24</a>, ya en estas páginas), donde <a href="ezekiel-37.es.html#v37-24">Ezequiel 37:24</a> tiene «rey» y 37:25 «príncipe».')
+_dict34_en("shalom", add=' &#11088; <span data-heb="ברית שלום">&lsquo;A covenant of peace&rsquo; (<em>berit shalom</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="ezekiel-34.html#v34-25">Ezekiel 34:25</a> (now on these pages) and Ezekiel 37:26.')
+_dict34_es("shalom", add=' &#11088; <span data-heb="ברית שלום">«Un pacto de paz» (<em>berit shalom</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="ezekiel-34.es.html#v34-25">Ezequiel 34:25</a> (ya en estas páginas) y Ezequiel 37:26.')
+_dict34_en("karat", add=' &#11088; &lsquo;I will cut with them a covenant of peace&rsquo; (<a href="ezekiel-34.html#v34-25">Ezekiel 34:25</a>, now on these pages), the covenant of Leviticus 26 made again.')
+_dict34_es("karat", add=' &#11088; «Cortaré con ellos un pacto de paz» (<a href="ezekiel-34.es.html#v34-25">Ezequiel 34:25</a>, ya en estas páginas), el pacto de Levítico 26 hecho otra vez.')
+_dict34_en("ol", add=' &#11088; <span data-heb="מטות עלם">&lsquo;The bars of their yoke&rsquo; (<em>motot ulam</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="ezekiel-34.html#v34-27">Ezekiel 34:27</a> (now on these pages), recalling Leviticus 26:13.')
+_dict34_es("ol", add=' &#11088; <span data-heb="מטות עלם">«Las coyundas de su yugo» (<em>motot ulam</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="ezekiel-34.es.html#v34-27">Ezequiel 34:27</a> (ya en estas páginas), que recuerda Levítico 26:13.')
+_dict34_en("adam", add=' &#11088; &lsquo;You are humankind&rsquo; closes <a href="ezekiel-34.html#v34-31">Ezekiel 34</a> (now on these pages), said to the sheep.')
+_dict34_es("adam", add=' &#11088; «Son seres humanos» cierra <a href="ezekiel-34.es.html#v34-31">Ezequiel 34</a> (ya en estas páginas), dicho a las ovejas.')
+_dict34_en("adamah", add=' &#11088; God brings the flock &lsquo;to their own ground&rsquo; (<a href="ezekiel-34.html#v34-13">Ezekiel 34:13</a>, now on these pages), as at 36:24.')
+_dict34_es("adamah", add=' &#11088; Dios trae al rebaño «a su propio suelo» (<a href="ezekiel-34.es.html#v34-13">Ezequiel 34:13</a>, ya en estas páginas), como en 36:24.')
+_dict34_en("mishpat", add=' &#11088; &lsquo;I will shepherd them with justice&rsquo; (<a href="ezekiel-34.html#v34-16">Ezekiel 34:16</a>) and &lsquo;I will judge between sheep and sheep&rsquo; (34:17, 20, 22), now on these pages.')
+_dict34_es("mishpat", add=' &#11088; «Las pastorearé con justicia» (<a href="ezekiel-34.es.html#v34-16">Ezequiel 34:16</a>) y «juzgo entre oveja y oveja» (34:17, 20, 22), ya en estas páginas.')
+_dict34_en("tsemach", add=' &#11088; <a href="ezekiel-34.html#v34-29">Ezekiel 34:29</a> (now on these pages) has a <em>matta</em>, a planting, for David&rsquo;s time and not this word (<a href="dictionary.html#matta">dictionary</a>).')
+_dict34_es("tsemach", add=' &#11088; <a href="ezekiel-34.es.html#v34-29">Ezequiel 34:29</a> (ya en estas páginas) tiene una <em>matta</em>, un plantío, para el tiempo de David y no esta palabra (<a href="diccionario.html#matta">diccionario</a>).')
+
+CHRON_CHAPTERS["ezek34"] = dict(era="exile",
+    when="&ldquo;Woe to the shepherds of Israel who have been shepherding themselves&rdquo;: the indictment of Israel&rsquo;s own rulers, five failures with a flock scattered on the mountains, and the answer, &ldquo;I myself will search for my sheep&rdquo;; a judgment between sheep and sheep, one shepherd, my servant David, a covenant of peace, and a flock that is humankind.",
+    clock="Undated in the chapter itself, and placed with the exile because it speaks of a flock scattered among the peoples and gathered back to its own ground, as Rashi and Radak read it. Ezekiel 36 and 37, which come after it in the book, are on these pages beside it.")
+
+CHAPTER_ART["ezek34"] = [dict(
+    file="holman-hunt-the-hireling-shepherd.jpg",
+    title="The Hireling Shepherd", title_es="El pastor asalariado",
+    artist="William Holman Hunt (English, 1827&ndash;1910)", artist_es="William Holman Hunt (inglés, 1827&ndash;1910)",
+    year="1851",
+    location="Oil painting, via Commons", location_es="Óleo, vía Commons",
+    alt="A bright, richly detailed oil painting of a country scene under willow trees. In the foreground a red-haired young shepherd in a blue scarf leans in close to a young woman with long red hair and a red shawl, who sits holding a lamb on her lap beside green apples. Behind them a flock of sheep is spread across a meadow, some lying down, one wandering at the right toward a field of ripe wheat. Wildflowers and a small pool of water lie in the foreground.",
+    alt_es="Un óleo luminoso y muy detallado de una escena campestre bajo sauces. En primer plano, un joven pastor pelirrojo con un pañuelo azul se inclina junto a una joven de cabello largo rojizo y chal rojo, sentada con un cordero en el regazo junto a manzanas verdes. Detrás, un rebaño de ovejas se extiende por un prado, algunas echadas, una que se aleja a la derecha hacia un campo de trigo maduro. Flores silvestres y un pequeño charco ocupan el primer plano.",
+    note="Ezekiel 34:2&ndash;6. The painting is Victorian and was not made for this chapter, and its shepherd is the figure the New Testament calls the hired hand (John 10:12), not Ezekiel&rsquo;s rulers. What it shows is what the chapter charges: a shepherd turned toward his own company while the flock is left to wander.",
+    note_es="Ezequiel 34:2–6. El cuadro es victoriano y no se hizo para este capítulo, y su pastor es la figura que el Nuevo Testamento llama el asalariado (Juan 10:12), no los gobernantes de Ezequiel. Lo que muestra es lo que acusa el capítulo: un pastor vuelto hacia su propia compañía mientras el rebaño queda a la deriva.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Hireling_Shepherd.jpg",
+)]
