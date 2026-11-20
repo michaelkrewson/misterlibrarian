@@ -1,0 +1,57 @@
+# Retry a failed GitHub Pages deploy for mistertranslation.com.
+# pages-build-deployment is GitHub's own workflow and cannot be edited; on 2026-11-10 it timed out at
+# "syncing_files" and a chapter was a 404 for ~5 hours. This re-requests the build when the latest one
+# errored (or does not match main's head), up to 2 times, then fails loudly so one email goes out.
+# Two triggers on purpose: workflow_run (fast) and a 30-minute schedule (covers the case where
+# workflow_run does not fire for the built-in workflow).
+name: pages-retry
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+    branches: [main]
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+permissions:
+  pages: write
+  contents: read
+concurrency:
+  group: pages-retry
+  cancel-in-progress: false
+jobs:
+  retry:
+    # a workflow_run for a SUCCESS needs no action; schedule/manual runs always check.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check latest Pages build, retry if broken
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -u
+          head=$(gh api "repos/$REPO/commits/main" -q .sha)
+          latest() { gh api "repos/$REPO/pages/builds/latest" -q '[.status,.commit]|@tsv'; }
+          wait_done() {   # poll up to ~15 min until not building/queued
+            for i in $(seq 1 45); do
+              read -r st cm < <(latest)
+              case "$st" in building|queued) sleep 20 ;; *) echo "$st $cm"; return ;; esac
+            done
+            echo "building $cm"
+          }
+          read -r st cm < <(wait_done)
+          echo "latest: status=$st commit=$cm main=$head"
+          if [ "$st" = "built" ] && [ "$cm" = "$head" ]; then echo "healthy, nothing to do"; exit 0; fi
+          if [ "$st" = "building" ]; then echo "still building after 15 min; leaving it"; exit 0; fi
+          for attempt in 1 2; do
+            echo "retry $attempt: requesting a Pages build"
+            gh api -X POST "repos/$REPO/pages/builds" >/dev/null
+            sleep 30
+            read -r st cm < <(wait_done)
+            echo "after retry $attempt: status=$st commit=$cm"
+            if [ "$st" = "built" ]; then exit 0; fi
+          done
+          echo "::error::Pages build still failing after 2 retries (status=$st). Needs a human."
+          exit 1
