@@ -63308,3 +63308,104 @@ CHAPTER_ART["ezek34"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Hireling_Shepherd.jpg",
 )]
+# --- Isaiah 60 ---
+# --- Psalm 60 ---
+import re as _re60
+def _one60(s, old, new, rx=False):
+    if rx:
+        assert len(_re60.findall(old, s)) == 1, (old[:70], len(_re60.findall(old, s)))
+        return _re60.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict60_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one60(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict60_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one60(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency60_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency60_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+assert not any(_d[0] == "evel" for _d in DICTIONARY)
+
+DICTIONARY.append(("evel", "evel", "אֵבֶל", "evel",
+    'MOURNING &mdash;the grief of a death or a disaster, and the days set aside for it. Joseph &lsquo;made a mourning for his father seven days&rsquo; (<a href="genesis-50.html#v50-10">Genesis 50:10</a>). &#11088; <a href="isaiah-60.html#v60-20">Isaiah 60:20</a> (now on these pages) ends on it: &lsquo;the days of your mourning will be finished&rsquo;, and <a href="isaiah-61.html#v61-3">Isaiah 61:3</a> gives the mourners &lsquo;the oil of gladness&rsquo; in its place. &#9888; It is not <em>avel</em>, injustice, which begins with a different letter, <em>ayin</em> (<a href="dictionary.html#avel">dictionary</a>).',
+    ("Isaiah", 60, 20)))
+DICTIONARY_ES["evel"] = ("evel",
+    'LUTO &mdash;el dolor por una muerte o un desastre, y los días apartados para él. José «hizo duelo por su padre siete días» (<a href="genesis-50.es.html#v50-10">Génesis 50:10</a>). &#11088; <a href="isaiah-60.es.html#v60-20">Isaías 60:20</a> (ya en estas páginas) termina con él: «se habrán cumplido los días de tu luto», y <a href="isaiah-61.es.html#v61-3">Isaías 61:3</a> da a los enlutados «óleo de alegría» en su lugar. &#9888; No es <em>avel</em>, injusticia, que empieza con otra letra, <em>ayin</em> (<a href="diccionario.html#avel">diccionario</a>).')
+
+# ---------- flips ----------
+_dict60_en("shifat", old='(Job 22:11; 38:34), of camels (Isaiah 60:6) and of horses (Ezekiel 26:10), none of them yet on these pages, and',
+    new='(Job 22:11; 38:34, not yet on these pages), of camels (<a href="isaiah-60.html#v60-6">Isaiah 60:6</a>, now on these pages) and of horses (Ezekiel 26:10, not yet on these pages), and')
+_dict60_es("shifat", old='(Job 22:11; 38:34), de camellos (Isaías 60:6) y de caballos (Ezequiel 26:10), ninguno todavía en estas páginas, y',
+    new='(Job 22:11; 38:34, todavía no en estas páginas), de camellos (<a href="isaiah-60.es.html#v60-6">Isaías 60:6</a>, ya en estas páginas) y de caballos (Ezequiel 26:10, todavía no en estas páginas), y')
+_dict60_en("senuah", old='two are Isaiah 60:15 and Proverbs 30:23 (neither yet on these pages), where',
+    new='two are <a href="isaiah-60.html#v60-15">Isaiah 60:15</a> (now on these pages) and Proverbs 30:23 (not yet on these pages), where')
+_dict60_es("senuah", old='dos son Isa&iacute;as 60:15 y Proverbios 30:23 (ninguno todav&iacute;a en estas p&aacute;ginas), donde',
+    new='dos son <a href="isaiah-60.es.html#v60-15">Isa&iacute;as 60:15</a> (ya en estas p&aacute;ginas) y Proverbios 30:23 (todav&iacute;a no en estas p&aacute;ginas), donde')
+
+# ---------- extensions ----------
+_dict60_en("senuah", add=' &#11088; &lsquo;Forsaken&rsquo; is what Zion has been, and the verse turns it: &lsquo;Instead of your being forsaken and hated &hellip; I will make you an eternal pride&rsquo; (<a href="isaiah-60.html#v60-15">Isaiah 60:15</a>, now on these pages).')
+_dict60_es("senuah", add=' &#11088; «Abandonada» es lo que Sión ha sido, y el versículo lo vuelve: «En lugar de haber sido abandonada y aborrecida &hellip; te pondré por orgullo eterno» (<a href="isaiah-60.es.html#v60-15">Isaías 60:15</a>, ya en estas páginas).')
+_dict60_en("matta", add=' &#11088; &lsquo;The branch of my planting&rsquo; closes the chapter (<a href="isaiah-60.html#v60-21">Isaiah 60:21</a>, now on these pages), the written form <em>matta&rsquo;o</em> and the read form <em>matta&rsquo;ai</em> differing by one letter.')
+_dict60_es("matta", add=' &#11088; «La rama de mi plantío» cierra el capítulo (<a href="isaiah-60.es.html#v60-21">Isaías 60:21</a>, ya en estas páginas), con la forma escrita <em>matta&rsquo;o</em> y la leída <em>matta&rsquo;ai</em>, que difieren en una letra.')
+_dict60_en("goel", add=' &#11088; &lsquo;Your Redeemer, the Mighty One of Jacob&rsquo; (<a href="isaiah-60.html#v60-16">Isaiah 60:16</a>, now on these pages), as at <a href="isaiah-49.html#v49-26">Isaiah 49:26</a> (not yet on these pages).')
+_dict60_es("goel", add=' &#11088; «Tu Redentor, el Poderoso de Jacob» (<a href="isaiah-60.es.html#v60-16">Isaías 60:16</a>, ya en estas páginas), como en Isaías 49:26 (todavía no en estas páginas).')
+
+# ---------- encyclopedia ----------
+ENCYCLOPEDIA.append(dict(slug="nebaioth", name="Nebaioth", kind="people", aliases=["Nebaioth"],
+    refs=[("Genesis", 25, 13), ("Isaiah", 60, 7)], videos=[],
+    desc="The firstborn son of ISHMAEL (Genesis 25:13), and the Arab tribe that bears his name. Isaiah 60:7 sets &lsquo;the rams of Nebaioth&rsquo; beside the flocks of KEDAR as offerings that will come up on Jehovah&rsquo;s altar. &#9888; Whether the Nabataeans of Petra descend from him is a guess, not something the text says."))
+ENCYCLOPEDIA_ES["nebaioth"] = ("Nebaiot",
+    "El primogénito de ISMAEL (Génesis 25:13), y la tribu árabe que lleva su nombre. Isaías 60:7 pone «los carneros de Nebaiot» junto a los rebaños de CEDAR como ofrendas que subirán al altar de Jehová. &#9888; Si los nabateos de Petra descienden de él es una conjetura, no algo que diga el texto.")
+ENCYCLOPEDIA.append(dict(slug="ephah", name="Ephah", kind="people", aliases=["Ephah"],
+    refs=[("Genesis", 25, 4), ("Isaiah", 60, 6)], videos=[],
+    desc="A son of MIDIAN (Genesis 25:4) and the tribe that came from him. Isaiah 60:6 names it with Midian and Sheba as the source of the dromedaries that cover the land, bringing gold and frankincense."))
+ENCYCLOPEDIA_ES["ephah"] = ("Efa",
+    "Un hijo de MADIÁN (Génesis 25:4) y la tribu que salió de él. Isaías 60:6 lo nombra con Madián y Sabá como la procedencia de los dromedarios que cubren la tierra, con oro e incienso.")
+ENCYCLOPEDIA_ES["kedar"] = ("Cedar",
+    "Una tribu árabe nómada y la región por donde andaba, en los desiertos al este y al sureste de Israel. Cedar es el segundo hijo de ISMAEL (Génesis 25:13), y la tribu se vuelve la abreviatura bíblica del nómada árabe: Isaías cuenta su gloria en arqueros (21:16-17), Jeremías hace que Nabucodonosor la ataque (49:28-33), Ezequiel enumera a sus príncipes que comercian ovejas con Tiro (27:21). &#9888; Entra en el Cantar por sus TIENDAS, tejidas de pelo negro de cabra, a las que la mujer compara su piel tostada por el sol.")
+_ency60_en("kedar", add=" &#11088; In Isaiah 60:7 its flocks &lsquo;will be gathered to you&rsquo; for Jehovah&rsquo;s altar, beside NEBAIOTH.")
+_ency60_es("kedar", add=" &#11088; En Isaías 60:7 sus rebaños «serán reunidos para ti» para el altar de Jehová, junto a NEBAIOT.")
+_ency60_en("midian", add=" &#11088; Isaiah 60:6 has &lsquo;dromedaries of Midian and Ephah&rsquo; covering the land.")
+_ency60_es("midian", add=" &#11088; Isaías 60:6 tiene «dromedarios de Madián y de Efa» cubriendo la tierra.")
+_ency60_en("tarshish", add=" &#11088; Isaiah 60:9 has &lsquo;ships of Tarshish&rsquo; first among those that bring the sons home.")
+_ency60_es("tarshish", add=" &#11088; Isaías 60:9 pone las «naves de Tarsis» al frente de las que traen a los hijos de vuelta.")
+_ency60_en("lebanon", add=" &#11088; &lsquo;The glory of Lebanon&rsquo; comes to the sanctuary in Isaiah 60:13: juniper, ash and cypress together.")
+_ency60_es("lebanon", add=" &#11088; «La gloria del Líbano» llega al santuario en Isaías 60:13: enebro, fresno y ciprés juntos.")
+
+CHRON_CHAPTERS["isa60"] = dict(era="exile",
+    when="&ldquo;Arise, shine, for your light has come&rdquo;: Zion called up out of the dark while thick darkness covers the peoples, nations walking to her light, her sons and daughters carried home, camels, gold and frankincense, ships of Tarshish, foreign builders, gates that stay open, the sun and moon no longer needed because Jehovah is the everlasting light, and the branch of his planting, the smallest becoming a thousand.",
+    clock="Undated in the chapter itself, and filed with the exile and return because it addresses a ruined Zion whose children are still far off. The chapter names no king, year or event. &#9888; Isaiah 61, which follows it, is on these pages beside it.")
+
+CHAPTER_ART["isa60"] = [dict(
+    file="claude-lorrain-embarkation-of-the-queen-of-sheba.jpg",
+    title="Seaport with the Embarkation of the Queen of Sheba", title_es="Puerto con el embarque de la reina de Sabá",
+    artist="Claude Lorrain (French, 1600&ndash;1682)", artist_es="Claudio de Lorena (francés, 1600&ndash;1682)",
+    year="1648",
+    location="National Gallery, London, via Commons", location_es="National Gallery, Londres, vía Commons",
+    alt="A luminous harbor painting at sunrise. At left a ruined classical colonnade frames tall-masted ships at anchor; at right a grand palace with a balustrade and a flight of steps runs down to the water where richly dressed figures gather. In the foreground porters load a chest into a rowing boat, and a round stone tower stands in the middle distance with a ship under way beside it, the low sun breaking a gold light across the water.",
+    alt_es="Una pintura luminosa de un puerto al amanecer. A la izquierda, una columnata clásica en ruinas enmarca navíos de altos mástiles anclados; a la derecha, un gran palacio con balaustrada y una escalinata baja hasta el agua, donde se reúnen figuras ricamente vestidas. En primer plano, unos cargadores suben un cofre a un bote de remos; una torre redonda de piedra se alza a media distancia con un navío en marcha, y el sol bajo extiende una luz dorada sobre el agua.",
+    note="Isaiah 60:5&ndash;9. The painting was not made for this chapter: it shows the Queen of Sheba setting out (1 Kings 10), not Zion&rsquo;s sons coming home. What it shares with the chapter is the picture the verses draw, ships coming in over a bright sea with their cargo, &lsquo;the ships of Tarshish first&rsquo;.",
+    note_es="Isaías 60:5–9. El cuadro no se hizo para este capítulo: muestra a la reina de Sabá que parte (1 Reyes 10), no a los hijos de Sión que vuelven. Lo que comparte con el capítulo es la imagen que dibujan los versículos, naves que llegan sobre un mar luminoso con su carga, «las naves de Tarsis primero».",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Seaport_with_the_Embarkation_of_the_Queen_of_Sheba_-_WGA05002.jpg",
+)]
