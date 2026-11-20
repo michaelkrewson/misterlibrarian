@@ -62861,3 +62861,71 @@ CHAPTER_ART["psalms18"] = [dict(
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:074.David_Shows_Saul_How_He_Spared_His_Life.jpg')]
 
+
+
+# Appended to library_data.py for Psalm 2 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('nasakh', 'nasakh', 'נָסַךְ', 'nasakh', 'TO POUR OUT, to pour a libation; in the passive-sense form <em>nissakhti</em>, to be set up, installed (as an image is cast by pouring metal). <span data-heb="נסכתי">The form <em>nasachti</em>, &lsquo;I have set&rsquo;, stands in two verses</span>: <a href="psalms-2.html#v2-6">Psalm 2:6</a> (now on these pages), where Jehovah says &lsquo;I&mdash;I have set my king on Zion&rsquo;, and Proverbs 8:23 (not yet on these pages), where Wisdom says she was set up before the earth. &#9888; The shelf prints &lsquo;set&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;installed&rsquo; (<span class="tag t-niv">NIV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;enthroned&rsquo; (<span class="tag t-tlb">TLB</span>); the <span class="tag t-drb">Douay</span> has the king speak and says &lsquo;I am appointed king by him&rsquo;.', ('Psalms', 2, 6)))
+DICTIONARY.append(('bar-son', 'bar', 'בַּר', 'bar', 'SON in Aramaic; in Hebrew a word for PURE, clean (grain winnowed of chaff). The Hebrew word for son is <em>ben</em>, used at <a href="psalms-2.html#v2-7">Psalm 2:7</a>, and then at <a href="psalms-2.html#v2-12">2:12</a> the line <span data-heb="נשקו בר">&lsquo;<em>nashqu var</em>&rsquo; stands in this one verse</span>, &lsquo;kiss the son&rsquo; if <em>bar</em> is Aramaic, &lsquo;kiss purely&rsquo; if it is the Hebrew adjective. The same Aramaic <em>bar</em> is in <em>kevar enash</em>, &lsquo;one like a son of man&rsquo; (<a href="daniel-7.html#v7-13">Daniel 7:13</a>, now on these pages), and the Hebrew <em>bar</em>, &lsquo;pure&rsquo;, is in <em>bar levav</em>, &lsquo;pure of heart&rsquo; (<a href="psalms-24.html#v24-4">Psalm 24:4</a>, now on these pages). &#9888; The shelf prints &lsquo;Kiss the Son&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;Kiss the son&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-nwt">NWT&nbsp;1984</span>), &lsquo;Kiss his son&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;Embrace discipline&rsquo; (<span class="tag t-drb">Douay</span>).', ('Psalms', 2, 12)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['nasakh'] = ('nasakh', 'DERRAMAR, verter una libación; en la forma de sentido pasivo <em>nissakhti</em>, ser establecida, instalada (como se funde una imagen vertiendo el metal). <span data-heb="נסכתי">La forma <em>nasachti</em>, «he puesto», está en dos versículos</span>: <a href="psalms-2.es.html#v2-6">Salmo 2:6</a> (ya en estas páginas), donde Jehová dice «yo—yo he puesto a mi rey sobre Sión», y Proverbios 8:23 (todavía no en estas páginas), donde la Sabiduría dice que fue establecida antes de la tierra. &#9888; La estantería imprime «puesto» (<span class="tag t-rv60">RV60</span>, <span class="tag t-rv">RV&nbsp;1909</span>), «establecido» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;2019</span>) e «instalado» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['bar-son'] = ('bar-son', 'HIJO en arameo; en hebreo una palabra para PURO, limpio (el grano aventado sin paja). La palabra hebrea para hijo es <em>ben</em>, usada en <a href="psalms-2.es.html#v2-7">Salmo 2:7</a>, y luego en <a href="psalms-2.es.html#v2-12">2:12</a> la línea <span data-heb="נשקו בר">«<em>nashqu var</em>» está en este único versículo</span>, «besad al hijo» si <em>bar</em> es arameo, «besad con pureza» si es el adjetivo hebreo. El mismo <em>bar</em> arameo está en <em>kevar enash</em>, «uno como hijo de hombre» (<a href="daniel-7.es.html#v7-13">Daniel 7:13</a>, ya en estas páginas), y el <em>bar</em> hebreo, «puro», está en <em>bar levav</em>, «limpio de corazón» (<a href="psalms-24.es.html#v24-4">Salmo 24:4</a>, ya en estas páginas). &#9888; La estantería imprime «Besad al Hijo» (<span class="tag t-rv">RV&nbsp;1909</span>), «Honrad al Hijo» (<span class="tag t-rv60">RV60</span>), «Besen al hijo» (<span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>) y «Honren al hijo» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'hagah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-1">Psalm 2:1</a> (now on these pages): <span data-heb="יהגו ריק">&lsquo;mutter an empty thing&rsquo; stands in this one verse</span>, the nations&rsquo; <em>yehgu</em> set against the man of <a href="psalms-1.html#v2">Psalm 1:2</a> who mutters the law day and night.',) + _t[5:]
+    if _t[0] == 'mashiach':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-2">Psalm 2:2</a> (now on these pages): <span data-heb="על יהוה ועל משיחו">&lsquo;against Jehovah and against his anointed&rsquo; stands in this one verse</span>, the kings of the earth taking their stand against both.',) + _t[5:]
+    if _t[0] == 'ashrei':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-12">Psalm 2:12</a> (now on these pages): <span data-heb="אשרי כל חוסי בו">&lsquo;happy are all who take refuge in him&rsquo; stands in this one verse</span>, the last line of the psalm answering the first word of <a href="psalms-1.html#v1">Psalm 1:1</a>.',) + _t[5:]
+    if _t[0] == 'shevet':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="psalms-2.html#v2-9">Psalm 2:9</a> (now on these pages): <span data-heb="שבט ברזל">&lsquo;a rod of iron&rsquo; stands in this one verse</span>, the rod that breaks the nations (or, read <em>tir&rsquo;em</em>, shepherds them, as Revelation 2:27 and 19:15 take it).',) + _t[5:]
+if 'hagah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['hagah']
+    DICTIONARY_ES['hagah'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-1">Salmo 2:1</a> (ya en estas páginas): <span data-heb="יהגו ריק">«murmuran una cosa vacía» está en este único versículo</span>, el <em>yehgu</em> de las naciones frente al hombre del <a href="psalms-1.es.html#v2">Salmo 1:2</a> que murmura la ley de día y de noche.')
+if 'mashiach' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['mashiach']
+    DICTIONARY_ES['mashiach'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-2">Salmo 2:2</a> (ya en estas páginas): <span data-heb="על יהוה ועל משיחו">«contra Jehová y contra su ungido» está en este único versículo</span>, los reyes de la tierra plantándose contra los dos.')
+if 'ashrei' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ashrei']
+    DICTIONARY_ES['ashrei'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-12">Salmo 2:12</a> (ya en estas páginas): <span data-heb="אשרי כל חוסי בו">«felices todos los que se refugian en él» está en este único versículo</span>, la última línea del salmo respondiendo a la primera palabra del <a href="psalms-1.es.html#v1">Salmo 1:1</a>.')
+if 'shevet' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shevet']
+    DICTIONARY_ES['shevet'] = (_d[0], _d[1] + ' &#11088; <a href="psalms-2.es.html#v2-9">Salmo 2:9</a> (ya en estas páginas): <span data-heb="שבט ברזל">«vara de hierro» está en este único versículo</span>, la vara que quebranta a las naciones (o, leído <em>tir&rsquo;em</em>, las pastorea, como lo toman Apocalipsis 2:27 y 19:15).')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Psalms', 2, 1), ('Psalms', 1, 2), 'the man mutters the law, the nations mutter nothing'),
+    (('Psalms', 2, 2), ('Acts', 4, 25), 'against Jehovah and against his anointed'),
+    (('Psalms', 2, 7), ('Acts', 13, 33), 'you are my son, today I have fathered you'),
+    (('Psalms', 2, 7), ('Hebrews', 1, 5), 'you are my son'),
+    (('Psalms', 2, 7), ('2 Samuel', 7, 14), 'I will be to him a father'),
+    (('Psalms', 2, 9), ('Revelation', 2, 27), "a rod of iron, the potter's vessel"),
+    (('Psalms', 2, 9), ('Jeremiah', 19, 11), "break as one breaks a potter's vessel"),
+    (('Psalms', 2, 8), ('Daniel', 7, 14), 'the nations given as inheritance'),
+    (('Psalms', 2, 12), ('Daniel', 7, 13), 'bar, son'),
+    (('Psalms', 2, 12), ('Psalms', 1, 6), 'perish in the way'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["psalms2"] = dict(era='monarchy',
+    when='A psalm with no heading, opening with a question: why the nations are in tumult and the kings of the earth take their stand against Jehovah and his anointed, saying let us tear off their bonds; the one who sits in the heavens laughs and then speaks in anger; the king set on Zion, my holy mountain, tells the decree, You are my son, today I have fathered you; ask of me and I will give nations, you will break them with a rod of iron; the closing call to the kings to be wise, serve Jehovah with fear, kiss the son lest you perish in the way, and happy are all who take refuge in him.',
+    clock='No heading and no date in the psalm itself. &#9888; Nothing in it names a king or a war; the New Testament calls it David&rsquo;s (Acts 4:25) and reads it of the Messiah, and the shelf is not agreed on whether the last line says &lsquo;son&rsquo;.')
+
+CHAPTER_ART["psalms2"] = [dict(
+    file='floris-galle-solomon-anointed.jpg',
+    title='Solomon Anointed King', title_es='Salom&oacute;n ungido rey',
+    artist='Philips Galle, after Frans Floris', artist_es='Philips Galle, seg&uacute;n Frans Floris',
+    year='n.d. (16th century)', location='Engraving, Royal Library of Belgium (print S.I 54153)', location_es='Grabado, Biblioteca Real de B&eacute;lgica (estampa S.I 54153)',
+    alt='A black-and-white engraving of a street scene before grand classical buildings. At the centre a young man in a soldier&rsquo;s tunic kneels on a low step with his hands crossed on his chest while a bearded man in a long robe pours oil from a curled horn onto his head; a second bearded man stands close behind. At the right a man blows a long horn beside a saddled mule with a fringed cloth, and more horn-blowers and people with raised arms fill the square behind. At the left an old man in a heavy cloak walks away and a boy looks on. A Latin caption runs along the bottom.',
+    alt_es='Un grabado en blanco y negro de una escena de calle ante grandes edificios cl&aacute;sicos. En el centro un joven con t&uacute;nica de soldado est&aacute; arrodillado en un escal&oacute;n bajo con las manos cruzadas sobre el pecho mientras un hombre barbado con t&uacute;nica larga le vierte aceite de un cuerno curvo sobre la cabeza; otro hombre barbado est&aacute; justo detr&aacute;s. A la derecha un hombre toca un largo cuerno junto a una mula ensillada con un pa&ntilde;o con flecos, y m&aacute;s trompeteros y gente con los brazos en alto llenan la plaza al fondo. A la izquierda un anciano con un manto pesado se aleja y un muchacho mira. Una leyenda en lat&iacute;n recorre la parte inferior.',
+    note='Psalm 2:6. &lsquo;I&mdash;I have set my king on Zion&rsquo;. The Latin caption says that when King David was dead his son Solomon succeeded him, anointed king by Nathan the prophet and Zadok the priest (1 Kings 1). The psalm names no scene; the oil, the horns and the mule are the engraver&rsquo;s picture of a king installed on Zion, from the story where the same two men anoint him.',
+    note_es='Salmo 2:6. &laquo;Yo&mdash;yo he puesto a mi rey sobre Si&oacute;n&raquo;. La leyenda en lat&iacute;n dice que, muerto el rey David, le sucedi&oacute; su hijo Salom&oacute;n, ungido rey por Nat&aacute;n el profeta y Sadoc el sacerdote (1 Reyes 1). El salmo no nombra ninguna escena; el aceite, los cuernos y la mula son la imagen del grabador de un rey instalado en Si&oacute;n, tomada del relato donde los mismos dos hombres lo ungen.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:Solomon_Anointed_King_s.d_print_by_Frans_Floris_I,_S.I_54153,_Prints_Department,_Royal_Library_of_Belgium.jpg')]
+
