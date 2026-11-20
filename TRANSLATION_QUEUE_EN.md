@@ -26,7 +26,7 @@ the library stays connected whichever order we take.
 | # | Chapter | Why people look for it |
 |--:|---------|------------------------|
 | | **Tier 2 - well known by passage or by story, then the rest of the famous Psalms, Proverbs, Isaiah, Job and the prophets** | |
-| 1 | Isaiah 60 | 'arise, shine, for your light has come' |
+| 1 | Isaiah 60 | **IN PROGRESS (PR #935)** 'arise, shine, for your light has come' |
 | 2 | Isaiah 49 | the servant, light to the nations; 'can a woman forget her nursing child' |
 | 3 | Song of Solomon 2 | 'I am the rose of Sharon'; 'my beloved is mine' |
 | 4 | Song of Solomon 8 | 'love is as strong as death' |
