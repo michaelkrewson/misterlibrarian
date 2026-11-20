@@ -11,7 +11,7 @@ English card, `TRANSLATION_QUEUE_EN.md`; this card is only the catch-up.
 
 | # | Chapter | Note |
 |--:|---------|------|
-| 1 | Matthew 10 | the twelve; 'sheep among wolves'; 10:34 'not peace but a sword' |
+| 1 | Matthew 10 | **IN PROGRESS (PR #936)** the twelve; 'sheep among wolves'; 10:34 'not peace but a sword' |
 | 2 | Matthew 9 | healings; 'the harvest is plentiful' |
 | 3 | Daniel 12 | 'many who sleep in the dust of the earth shall awake' |
 | 4 | Daniel 11 | the long prophecy of the kings of the north and south |
