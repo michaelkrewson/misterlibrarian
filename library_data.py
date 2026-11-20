@@ -63191,3 +63191,120 @@ CHAPTER_ART["ezek36"] = [dict(
     note_es='Ezequiel 36. Esta lámina de Doré se hizo para el profeta en general y no para este capítulo, y lleva solo el rótulo &laquo;Ezekiel Prophesying&raquo;. Encaja de forma imprecisa con el versículo 1: al profeta se le manda hablar a los montes de Israel, y Doré lo sitúa en una altura con colinas detrás. Los oyentes, el anochecer y el cayado de pastor son suyos, no del texto.',
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Ezekiel_Prophesying_%E2%80%94_Dor%C3%A9_Bible_illustration_(Cassell,_c.1870).jpg')]
+
+# --- Psalm 34 ---
+import re as _re34
+def _one34(s, old, new, rx=False):
+    if rx:
+        assert len(_re34.findall(old, s)) == 1, (old[:70], len(_re34.findall(old, s)))
+        return _re34.sub(old, lambda m: new, s)
+    assert s.count(old) == 1, (old[:70], s.count(old))
+    return s.replace(old, new)
+
+def _dict34_en(slug, old=None, new=None, add=None):
+    _i = [_k for _k, _d in enumerate(DICTIONARY) if _d[0] == slug][0]; _d = DICTIONARY[_i]; _s = _d[4]
+    if old is not None: _s = _one34(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY[_i] = tuple(_d[:4]) + (_s,) + tuple(_d[5:])
+
+def _dict34_es(slug, old=None, new=None, add=None):
+    if slug not in DICTIONARY_ES:
+        return
+    _h, _s = DICTIONARY_ES[slug]
+    if old is not None: _s = _one34(_s, old, new)
+    if add: _s = _s + add
+    DICTIONARY_ES[slug] = (_h, _s)
+
+def _ency34_en(slug, add=None):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            if add: _e["desc"] = _e["desc"] + add
+            return
+    raise KeyError(slug)
+
+def _ency34_es(slug, add=None):
+    _n, _s = ENCYCLOPEDIA_ES[slug]
+    if add: _s = _s + add
+    ENCYCLOPEDIA_ES[slug] = (_n, _s)
+
+def _P34(es, txt, n):
+    return '<a href="ezekiel-34.%shtml#v34-%s">%s</a>' % ('es.' if es else '', n, txt)
+
+
+assert not any(_d[0] in ("baz", "biqqer", "tson", "matta") for _d in DICTIONARY)
+
+DICTIONARY.append(("baz", "baz", "בַּז", "baz",
+    'PLUNDER, spoil &mdash; what is taken by force. The spies&rsquo; report in Numbers 14 uses it of the people&rsquo;s own families, &lsquo;Our wives and our little ones will become plunder&rsquo; (<a href="numbers-14.html#v14-3">Numbers 14:3</a>, and again at 14:31, now on these pages), and <a href="ezekiel-34.html#v34-8">Ezekiel 34</a> (now on these pages) makes it the word of the whole chapter: the flock &lsquo;became plunder&rsquo; (verse 8), God will save it &lsquo;and they will no longer be plunder&rsquo; (22), and they &lsquo;will no longer be plunder for the nations&rsquo; (28). &#9888; Not the same word as <em>bazah</em>, &lsquo;despise&rsquo;. The shelf has &lsquo;prey&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;plundered&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;plunder&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); the translation prints &lsquo;plunder&rsquo; every time.',
+    ("Ezekiel", 34, 8)))
+DICTIONARY_ES["baz"] = ("baz",
+    'BOTÍN, presa &mdash;lo que se toma por la fuerza. El informe de los espías en Números 14 lo usa de las propias familias del pueblo, «Nuestras mujeres y nuestros pequeños serán botín» (<a href="numbers-14.es.html#v14-3">Números 14:3</a>, y otra vez en 14:31, ya en estas páginas), y <a href="ezekiel-34.es.html#v34-8">Ezequiel 34</a> (ya en estas páginas) lo hace la palabra de todo el capítulo: el rebaño «fue botín» (versículo 8), Dios lo salvará «y no serán más botín» (22), y «no serán más botín de las naciones» (28). &#9888; No es la misma palabra que <em>bazá</em>, «despreciar». La traducción imprime «botín» todas las veces.')
+
+DICTIONARY.append(("biqqer", "biqqer", "בִּקֵּר", "biqqer",
+    'TO INSPECT, go over one by one &mdash; the verb of a shepherd counting his flock, and of a priest looking over an offering. <a href="leviticus-27.html#v27-33">Leviticus 27:33</a> uses it of the tithe of the flock, &lsquo;He shall not inspect whether it is good or bad&rsquo;, and <a href="psalms-27.html#v27-4">Psalm 27:4</a> of the temple, &lsquo;to inspect his temple&rsquo; (both now on these pages). &#11088; <a href="ezekiel-34.html#v34-11">Ezekiel 34:11&ndash;12</a> (now on these pages) puts it in God&rsquo;s mouth beside <em>darash</em>, &lsquo;search for&rsquo;: &lsquo;I myself will search for my sheep and inspect them&rsquo;, as a shepherd inspects his flock on the day he is among his scattered sheep. Rashi says it is the language of visiting the sick. The <span class="tag t-kjv">KJV</span> has &lsquo;seek them out&rsquo; and the <span class="tag t-nwt">NWT&nbsp;1984</span> &lsquo;care for them&rsquo;; the translation prints &lsquo;inspect&rsquo;.',
+    ("Ezekiel", 34, 11)))
+DICTIONARY_ES["biqqer"] = ("biqqer",
+    'EXAMINAR, repasar una por una &mdash;el verbo de un pastor que cuenta su rebaño, y de un sacerdote que mira una ofrenda. <a href="leviticus-27.es.html#v27-33">Levítico 27:33</a> lo usa del diezmo del rebaño, «No examinará si es bueno o malo», y el <a href="psalms-27.es.html#v27-4">Salmo 27:4</a> del templo, «examinar su templo» (ambos ya en estas páginas). &#11088; <a href="ezekiel-34.es.html#v34-11">Ezequiel 34:11&ndash;12</a> (ya en estas páginas) lo pone en boca de Dios junto a <em>darash</em>, «buscar»: «yo mismo buscaré a mis ovejas y las examinaré», como un pastor examina su rebaño el día que está en medio de sus ovejas dispersas. Rashi dice que es el lenguaje de visitar a los enfermos.')
+
+DICTIONARY.append(("tson", "tson", "צֹאן", "tson",
+    'FLOCK &mdash; sheep and goats together, a collective noun, and in Hebrew grammar a feminine one. Moses asks for a shepherd lest the congregation be &lsquo;like sheep that have no shepherd&rsquo; (<a href="numbers-27.html#v27-17">Numbers 27:17</a>), and the people are &lsquo;the flock of his pasture&rsquo; (<a href="psalms-100.html#v100-3">Psalm 100:3</a>, both now on these pages). &#11088; <span data-heb="צאן מרעיתי">&lsquo;The flock of my pasture&rsquo; (<em>tson mar&rsquo;iti</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="jeremiah-23.html#v23-1">Jeremiah 23:1</a>, where it opens the woe on the shepherds, and <a href="ezekiel-34.html#v34-31">Ezekiel 34:31</a>, where it closes the chapter on them (now on these pages).',
+    ("Ezekiel", 34, 31)))
+DICTIONARY_ES["tson"] = ("tson",
+    'REBAÑO &mdash;ovejas y cabras juntas, un sustantivo colectivo, y en la gramática hebrea femenino. Moisés pide un pastor para que la congregación no sea «como ovejas que no tienen pastor» (<a href="numbers-27.es.html#v27-17">Números 27:17</a>), y el pueblo es «el rebaño de su pasto» (<a href="psalms-100.es.html#v100-3">Salmo 100:3</a>, ambos ya en estas páginas). &#11088; <span data-heb="צאן מרעיתי">«El rebaño de mi pasto» (<em>tson mar&rsquo;iti</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="jeremiah-23.es.html#v23-1">Jeremías 23:1</a>, donde abre el ay sobre los pastores, y <a href="ezekiel-34.es.html#v34-31">Ezequiel 34:31</a>, donde cierra el capítulo sobre ellos (ya en estas páginas).')
+
+DICTIONARY.append(("matta", "matta", "מַטָּע", "matta",
+    'A PLANTING &mdash; what is planted, from <em>nata</em>, &lsquo;to plant&rsquo;. &#11088; <a href="ezekiel-34.html#v34-29">Ezekiel 34:29</a> (now on these pages) promises &lsquo;a planting for a name&rsquo;, and the oaks of righteousness are &lsquo;the planting of Jehovah&rsquo; (<a href="isaiah-61.html#v61-3">Isaiah 61:3</a>, now on these pages), while <a href="isaiah-55.html#v55-13">Isaiah 55:13</a> ends on the same two words, &lsquo;for a name&rsquo;. &#9888; It is not the <em>tsemach</em>, the Sprout, of <a href="jeremiah-33.html#v33-15">Jeremiah 33:15</a> (<a href="dictionary.html#tsemach">dictionary</a>). The shelf has &lsquo;a plant of renown&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;a plantation for renown&rsquo; (<span class="tag t-asv">ASV</span>), &lsquo;a planting for a name&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;a bud of renown&rsquo; (<span class="tag t-drb">Douay</span>).',
+    ("Ezekiel", 34, 29)))
+DICTIONARY_ES["matta"] = ("matta",
+    'UN PLANTÍO &mdash;lo que se planta, de <em>nata</em>, «plantar». &#11088; <a href="ezekiel-34.es.html#v34-29">Ezequiel 34:29</a> (ya en estas páginas) promete «un plantío para un nombre», y los robles de justicia son «el plantío de Jehová» (<a href="isaiah-61.es.html#v61-3">Isaías 61:3</a>, ya en estas páginas), y <a href="isaiah-55.es.html#v55-13">Isaías 55:13</a> termina en las mismas dos palabras, «para un nombre». &#9888; No es el <em>tsémaj</em>, el Renuevo, de <a href="jeremiah-33.es.html#v33-15">Jeremías 33:15</a> (<a href="diccionario.html#tsemach">diccionario</a>).')
+
+# ---------- extensions ----------
+_dict34_en("roeh", add=' &#11088; <a href="ezekiel-34.html#v34-2">Ezekiel 34</a> (now on these pages) is the whole indictment of Israel&rsquo;s own shepherds, with the root in every verse: &lsquo;Should not the shepherds shepherd the flock?&rsquo;, and the answer, &lsquo;I myself will shepherd my sheep&rsquo; (verse 15), and &lsquo;one shepherd&rsquo;, David (verse 23).')
+_dict34_es("roeh", add=' &#11088; <a href="ezekiel-34.es.html#v34-2">Ezequiel 34</a> (ya en estas páginas) es toda la acusación contra los propios pastores de Israel, con la raíz en cada versículo: «¿No deben los pastores pastorear el rebaño?», y la respuesta, «Yo mismo pastorearé a mis ovejas» (versículo 15), y «un solo pastor», David (versículo 23).')
+_dict34_en("hoy", add=' &#11088; <a href="ezekiel-34.html#v34-2">Ezekiel 34:2</a> (now on these pages) opens it on the shepherds, as <a href="jeremiah-23.html#v23-1">Jeremiah 23:1</a> does: &lsquo;Woe to the shepherds of Israel who have been shepherding themselves!&rsquo;')
+_dict34_es("hoy", add=' &#11088; <a href="ezekiel-34.es.html#v34-2">Ezequiel 34:2</a> (ya en estas páginas) lo abre sobre los pastores, como <a href="jeremiah-23.es.html#v23-1">Jeremías 23:1</a>: «¡Ay de los pastores de Israel, que se han pastoreado a sí mismos!»')
+_dict34_en("chelev", add=' &#11088; &lsquo;You eat the fat&rsquo; is the shepherds&rsquo; charge (<a href="ezekiel-34.html#v34-3">Ezekiel 34:3</a>, now on these pages); the consonants are also those of &lsquo;milk&rsquo;, and the <span class="tag t-niv">NIV</span> reads &lsquo;curds&rsquo;.')
+_dict34_es("chelev", add=' &#11088; «Comen la grosura» es la acusación contra los pastores (<a href="ezekiel-34.es.html#v34-3">Ezequiel 34:3</a>, ya en estas páginas); las consonantes son también las de «leche», y la <span class="tag t-rv">RV 1909</span> lee «la leche».')
+_dict34_en("perekh", add=' &#11088; <span data-heb="בפרך">&lsquo;With crushing harshness&rsquo; (<em>be-farekh</em>) stands in <strong>six verses</strong> of the Hebrew Bible</span>: Exodus 1:13&ndash;14, Leviticus 25:43, 46 and 53, and <a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a> (now on these pages), where the shepherds rule the flock &lsquo;with force&rsquo; and with it.')
+_dict34_es("perekh", add=' &#11088; <span data-heb="בפרך">«Con dureza aplastante» (<em>be-farekh</em>) está en <strong>seis versículos</strong> de la Biblia hebrea</span>: Éxodo 1:13&ndash;14, Levítico 25:43, 46 y 53, y <a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a> (ya en estas páginas), donde los pastores dominan al rebaño «con fuerza» y con ella.')
+_dict34_en("radah", add=' &#11088; &lsquo;With force you have ruled them&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>, now on these pages), the verb that goes with &lsquo;harshness&rsquo; in Leviticus 25.')
+_dict34_es("radah", add=' &#11088; «Con fuerza las han dominado» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>, ya en estas páginas), el verbo que acompaña a «dureza» en Levítico 25.')
+_dict34_en("darash", add=' &#11088; In <a href="ezekiel-34.html#v34-6">Ezekiel 34</a> (now on these pages) it is the missing verb of verse 6, &lsquo;none searching&rsquo;, then the demand of verse 10, &lsquo;I will demand an accounting for my flock&rsquo;, then God&rsquo;s own, &lsquo;I myself will search for my sheep&rsquo; (11).')
+_dict34_es("darash", add=' &#11088; En <a href="ezekiel-34.es.html#v34-6">Ezequiel 34</a> (ya en estas páginas) es el verbo que falta en el versículo 6, «sin quien las buscara», luego la demanda del versículo 10, «demandaré mi rebaño», luego la de Dios mismo, «yo mismo buscaré a mis ovejas» (11).')
+_dict34_en("chavash", add=' &#11088; &lsquo;The broken you have not bound up&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>) and &lsquo;the broken I will bind up&rsquo; (34:16), the shepherd&rsquo;s work (now on these pages).')
+_dict34_es("chavash", add=' &#11088; «A la quebrada no la han vendado» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>) y «a la quebrada vendaré» (34:16), la obra del pastor (ya en estas páginas).')
+_dict34_en("nadach", add=' &#11088; &lsquo;The driven away you have not brought back&rsquo; (<a href="ezekiel-34.html#v34-4">Ezekiel 34:4</a>, now on these pages), and &lsquo;the driven away I will bring back&rsquo; (34:16).')
+_dict34_es("nadach", add=' &#11088; «A la descarriada no la han hecho volver» (<a href="ezekiel-34.es.html#v34-4">Ezequiel 34:4</a>, ya en estas páginas), y «a la descarriada haré volver» (34:16).')
+_dict34_en("nasi", add=' &#11088; David is &lsquo;a prince among them&rsquo; (<a href="ezekiel-34.html#v34-24">Ezekiel 34:24</a>, now on these pages), where <a href="ezekiel-37.html#v37-24">Ezekiel 37:24</a> has &lsquo;king&rsquo; and 37:25 &lsquo;prince&rsquo;.')
+_dict34_es("nasi", add=' &#11088; David es «príncipe en medio de ellos» (<a href="ezekiel-34.es.html#v34-24">Ezequiel 34:24</a>, ya en estas páginas), donde <a href="ezekiel-37.es.html#v37-24">Ezequiel 37:24</a> tiene «rey» y 37:25 «príncipe».')
+_dict34_en("shalom", add=' &#11088; <span data-heb="ברית שלום">&lsquo;A covenant of peace&rsquo; (<em>berit shalom</em>) stands in <strong>two verses</strong> of the Hebrew Bible</span>: <a href="ezekiel-34.html#v34-25">Ezekiel 34:25</a> (now on these pages) and Ezekiel 37:26.')
+_dict34_es("shalom", add=' &#11088; <span data-heb="ברית שלום">«Un pacto de paz» (<em>berit shalom</em>) está en <strong>dos versículos</strong> de la Biblia hebrea</span>: <a href="ezekiel-34.es.html#v34-25">Ezequiel 34:25</a> (ya en estas páginas) y Ezequiel 37:26.')
+_dict34_en("karat", add=' &#11088; &lsquo;I will cut with them a covenant of peace&rsquo; (<a href="ezekiel-34.html#v34-25">Ezekiel 34:25</a>, now on these pages), the covenant of Leviticus 26 made again.')
+_dict34_es("karat", add=' &#11088; «Cortaré con ellos un pacto de paz» (<a href="ezekiel-34.es.html#v34-25">Ezequiel 34:25</a>, ya en estas páginas), el pacto de Levítico 26 hecho otra vez.')
+_dict34_en("ol", add=' &#11088; <span data-heb="מטות עלם">&lsquo;The bars of their yoke&rsquo; (<em>motot ulam</em>) stands in <strong>one verse</strong> of the Hebrew Bible</span>, <a href="ezekiel-34.html#v34-27">Ezekiel 34:27</a> (now on these pages), recalling Leviticus 26:13.')
+_dict34_es("ol", add=' &#11088; <span data-heb="מטות עלם">«Las coyundas de su yugo» (<em>motot ulam</em>) está en <strong>un solo versículo</strong> de la Biblia hebrea</span>, <a href="ezekiel-34.es.html#v34-27">Ezequiel 34:27</a> (ya en estas páginas), que recuerda Levítico 26:13.')
+_dict34_en("adam", add=' &#11088; &lsquo;You are humankind&rsquo; closes <a href="ezekiel-34.html#v34-31">Ezekiel 34</a> (now on these pages), said to the sheep.')
+_dict34_es("adam", add=' &#11088; «Son seres humanos» cierra <a href="ezekiel-34.es.html#v34-31">Ezequiel 34</a> (ya en estas páginas), dicho a las ovejas.')
+_dict34_en("adamah", add=' &#11088; God brings the flock &lsquo;to their own ground&rsquo; (<a href="ezekiel-34.html#v34-13">Ezekiel 34:13</a>, now on these pages), as at 36:24.')
+_dict34_es("adamah", add=' &#11088; Dios trae al rebaño «a su propio suelo» (<a href="ezekiel-34.es.html#v34-13">Ezequiel 34:13</a>, ya en estas páginas), como en 36:24.')
+_dict34_en("mishpat", add=' &#11088; &lsquo;I will shepherd them with justice&rsquo; (<a href="ezekiel-34.html#v34-16">Ezekiel 34:16</a>) and &lsquo;I will judge between sheep and sheep&rsquo; (34:17, 20, 22), now on these pages.')
+_dict34_es("mishpat", add=' &#11088; «Las pastorearé con justicia» (<a href="ezekiel-34.es.html#v34-16">Ezequiel 34:16</a>) y «juzgo entre oveja y oveja» (34:17, 20, 22), ya en estas páginas.')
+_dict34_en("tsemach", add=' &#11088; <a href="ezekiel-34.html#v34-29">Ezekiel 34:29</a> (now on these pages) has a <em>matta</em>, a planting, for David&rsquo;s time and not this word (<a href="dictionary.html#matta">dictionary</a>).')
+_dict34_es("tsemach", add=' &#11088; <a href="ezekiel-34.es.html#v34-29">Ezequiel 34:29</a> (ya en estas páginas) tiene una <em>matta</em>, un plantío, para el tiempo de David y no esta palabra (<a href="diccionario.html#matta">diccionario</a>).')
+
+CHRON_CHAPTERS["ezek34"] = dict(era="exile",
+    when="&ldquo;Woe to the shepherds of Israel who have been shepherding themselves&rdquo;: the indictment of Israel&rsquo;s own rulers, five failures with a flock scattered on the mountains, and the answer, &ldquo;I myself will search for my sheep&rdquo;; a judgment between sheep and sheep, one shepherd, my servant David, a covenant of peace, and a flock that is humankind.",
+    clock="Undated in the chapter itself, and placed with the exile because it speaks of a flock scattered among the peoples and gathered back to its own ground, as Rashi and Radak read it. Ezekiel 36 and 37, which come after it in the book, are on these pages beside it.")
+
+CHAPTER_ART["ezek34"] = [dict(
+    file="holman-hunt-the-hireling-shepherd.jpg",
+    title="The Hireling Shepherd", title_es="El pastor asalariado",
+    artist="William Holman Hunt (English, 1827&ndash;1910)", artist_es="William Holman Hunt (inglés, 1827&ndash;1910)",
+    year="1851",
+    location="Oil painting, via Commons", location_es="Óleo, vía Commons",
+    alt="A bright, richly detailed oil painting of a country scene under willow trees. In the foreground a red-haired young shepherd in a blue scarf leans in close to a young woman with long red hair and a red shawl, who sits holding a lamb on her lap beside green apples. Behind them a flock of sheep is spread across a meadow, some lying down, one wandering at the right toward a field of ripe wheat. Wildflowers and a small pool of water lie in the foreground.",
+    alt_es="Un óleo luminoso y muy detallado de una escena campestre bajo sauces. En primer plano, un joven pastor pelirrojo con un pañuelo azul se inclina junto a una joven de cabello largo rojizo y chal rojo, sentada con un cordero en el regazo junto a manzanas verdes. Detrás, un rebaño de ovejas se extiende por un prado, algunas echadas, una que se aleja a la derecha hacia un campo de trigo maduro. Flores silvestres y un pequeño charco ocupan el primer plano.",
+    note="Ezekiel 34:2&ndash;6. The painting is Victorian and was not made for this chapter, and its shepherd is the figure the New Testament calls the hired hand (John 10:12), not Ezekiel&rsquo;s rulers. What it shows is what the chapter charges: a shepherd turned toward his own company while the flock is left to wander.",
+    note_es="Ezequiel 34:2–6. El cuadro es victoriano y no se hizo para este capítulo, y su pastor es la figura que el Nuevo Testamento llama el asalariado (Juan 10:12), no los gobernantes de Ezequiel. Lo que muestra es lo que acusa el capítulo: un pastor vuelto hacia su propia compañía mientras el rebaño queda a la deriva.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Hireling_Shepherd.jpg",
+)]
