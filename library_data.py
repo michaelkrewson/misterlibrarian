@@ -51115,7 +51115,7 @@ DICTIONARY.extend([
      """TO ATTACH, to join on to. Its simple form is the plea of Eli&rsquo;s descendants, &lsquo;Please attach me to one of the priest&rsquo;s offices&rsquo; (<a href="1-samuel-2.html#v2-36">1 Samuel 2:36</a>, now on these pages). <span data-heb="הסתפח">Its reflexive form, &lsquo;to attach oneself&rsquo;, stands in one verse of the Hebrew Bible</span>: David&rsquo;s complaint that men &lsquo;have driven me out today from attaching myself to the inheritance of Jehovah, saying: &ldquo;Go, serve other gods&rdquo;&rsquo; (<a href="1-samuel-26.html#v26-19">1 Samuel 26:19</a>, now on these pages).""",
      ("1 Samuel", 26, 19)),
     ("qore", "qore", "קֹרֵא", "qore",
-     """THE PARTRIDGE, literally &lsquo;the caller&rsquo;, the bird named for its cry; the same letters are the participle of <em>qara</em>, to call. David to Saul: &lsquo;the king of Israel has come out to seek a single flea, as one hunts the partridge in the mountains&rsquo; (<a href="1-samuel-26.html#v26-20">1 Samuel 26:20</a>, now on these pages), spoken from a mountain top by the man who has just &lsquo;called out&rsquo; to Abner. The Greek has <em>nyktikorax</em>, the night-raven. Jeremiah has the bird once more: &lsquo;As the partridge that broods but does not hatch, so is he who gets riches, and not by right&rsquo;, a proverb that ends &lsquo;and at his end he will be a fool&rsquo;, <em>naval</em> (Jeremiah 17:11, not yet on these pages).""",
+     """THE PARTRIDGE, literally &lsquo;the caller&rsquo;, the bird named for its cry; the same letters are the participle of <em>qara</em>, to call. David to Saul: &lsquo;the king of Israel has come out to seek a single flea, as one hunts the partridge in the mountains&rsquo; (<a href="1-samuel-26.html#v26-20">1 Samuel 26:20</a>, now on these pages), spoken from a mountain top by the man who has just &lsquo;called out&rsquo; to Abner. The Greek has <em>nyktikorax</em>, the night-raven. Jeremiah has the bird once more: &lsquo;As the partridge that broods but does not hatch, so is he who gets riches, and not by right&rsquo;, a proverb that ends &lsquo;and at his end he will be a fool&rsquo;, <em>naval</em> (<a href="jeremiah-17.html#v17-11">Jeremiah 17:11</a>, now on these pages).""",
      ("1 Samuel", 26, 20)),
 ])
 DICTIONARY_ES["chanit"] = ("janit",
@@ -51129,7 +51129,7 @@ DICTIONARY_ES["sut"] = ("sut (hesit)",
 DICTIONARY_ES["safach"] = ("safaj (histappéaj)",
     'AGREGAR, unir a algo. Su forma simple es la súplica de los descendientes de Elí, «Te ruego que me agregues a alguno de los oficios del sacerdote» (<a href="1-samuel-2.es.html#v2-36">1 Samuel 2:36</a>, ya en estas páginas). <span data-heb="הסתפח">Su forma reflexiva, «unirse», está en un solo versículo de la Biblia hebrea</span>: la queja de David de que unos hombres «me han expulsado hoy para que no me una a la heredad de Jehová, diciendo: “Ve, sirve a otros dioses”» (<a href="1-samuel-26.es.html#v26-19">1 Samuel 26:19</a>, ya en estas páginas).')
 DICTIONARY_ES["qore"] = ("qoré",
-    'LA PERDIZ, literalmente «la que llama», el ave nombrada por su grito; las mismas letras son el participio de <em>qará</em>, llamar. David a Saúl: «el rey de Israel ha salido a buscar una sola pulga, como quien persigue a la perdiz por los montes» (<a href="1-samuel-26.es.html#v26-20">1 Samuel 26:20</a>, ya en estas páginas), dicho desde la cumbre de un monte por el hombre que acaba de «llamar» a Abner. El griego tiene <em>nyktikórax</em>, el cuervo nocturno. Jeremías tiene el ave una vez más: «Como la perdiz que empolla pero no saca cría, así es el que junta riquezas, y no con justicia», un proverbio que termina «y en su final será un necio», <em>naval</em> (Jeremías 17:11, todavía no en estas páginas).')
+    'LA PERDIZ, literalmente «la que llama», el ave nombrada por su grito; las mismas letras son el participio de <em>qará</em>, llamar. David a Saúl: «el rey de Israel ha salido a buscar una sola pulga, como quien persigue a la perdiz por los montes» (<a href="1-samuel-26.es.html#v26-20">1 Samuel 26:20</a>, ya en estas páginas), dicho desde la cumbre de un monte por el hombre que acaba de «llamar» a Abner. El griego tiene <em>nyktikórax</em>, el cuervo nocturno. Jeremías tiene el ave una vez más: «Como la perdiz que empolla pero no saca cría, así es el que junta riquezas, y no con justicia», un proverbio que termina «y en su final será un necio», <em>naval</em> (<a href="jeremiah-17.es.html#v17-11">Jeremías 17:11</a>, ya en estas páginas).')
 
 # encyclopedia: refs + additions to existing entries
 _REF1S26 = {"ziph": [("1 Samuel", 26, 1)], "hachilah": [("1 Samuel", 26, 1)], "jeshimon": [("1 Samuel", 26, 1)],
@@ -62928,4 +62928,83 @@ CHAPTER_ART["psalms2"] = [dict(
     note_es='Salmo 2:6. &laquo;Yo&mdash;yo he puesto a mi rey sobre Si&oacute;n&raquo;. La leyenda en lat&iacute;n dice que, muerto el rey David, le sucedi&oacute; su hijo Salom&oacute;n, ungido rey por Nat&aacute;n el profeta y Sadoc el sacerdote (1 Reyes 1). El salmo no nombra ninguna escena; el aceite, los cuernos y la mula son la imagen del grabador de un rey instalado en Si&oacute;n, tomada del relato donde los mismos dos hombres lo ungen.',
     license='Public domain',
     source_url='https://commons.wikimedia.org/wiki/File:Solomon_Anointed_King_s.d_print_by_Frans_Floris_I,_S.I_54153,_Prints_Department,_Royal_Library_of_Belgium.jpg')]
+
+
+
+# Appended to library_data.py for Jeremiah 17 (both languages).
+
+# ---- dictionary (EN)
+DICTIONARY.append(('anush', 'anush', 'אָנוּשׁ', 'anush', 'INCURABLE, desperate &mdash; of a wound or a sickness that nothing heals. <span data-heb="ואנש הוא">&lsquo;and incurable&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-9">Jeremiah 17:9</a> (now on these pages), said of the heart, and the same word returns at <a href="jeremiah-17.html#v17-16">17:16</a> in <span data-heb="יום אנוש">&lsquo;the incurable day&rsquo;, which stands in this one verse</span>. &#9888; The shelf prints &lsquo;desperately wicked&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;beyond cure&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;desperate&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>), and for the day &lsquo;the woeful day&rsquo; (<span class="tag t-kjv">KJV</span>), &lsquo;the day of despair&rsquo; (<span class="tag t-niv">NIV</span>) and &lsquo;the desperate day&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>); the <span class="tag t-drb">Douay</span> has &lsquo;unsearchable&rsquo; for the heart.', ('Jeremiah', 17, 9)))
+DICTIONARY.append(('aqov', 'aqov', 'עָקֹב', 'aqov', 'CROOKED, deceitful &mdash; from <em>aqav</em>, to take by the heel, the root of <em>Ya&rsquo;aqov</em>, Jacob. <span data-heb="עקב הלב מכל">&lsquo;the heart is crooked above all things&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-9">Jeremiah 17:9</a> (now on these pages). The root is the verb of Esau&rsquo;s complaint at <a href="genesis-27.html#v27-36">Genesis 27:36</a> (now on these pages), &lsquo;he has supplanted me these two times&rsquo;. &#9888; The shelf prints &lsquo;deceitful&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-niv">NIV</span>), &lsquo;more treacherous&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>) and &lsquo;perverse&rsquo; (<span class="tag t-drb">Douay</span>).', ('Jeremiah', 17, 9)))
+DICTIONARY.append(('shamir', 'shamir', 'שָׁמִיר', 'shamir', 'A VERY HARD STONE, the diamond or emery that cuts other stone &mdash; also a thorny growth (Isaiah 5:6). <span data-heb="בצפרן שמיר">&lsquo;with the point of a diamond&rsquo; stands in this one verse</span>, <a href="jeremiah-17.html#v17-1">Jeremiah 17:1</a> (now on these pages), where Judah&rsquo;s sin is cut into the tablet of the heart. &#9888; The shelf prints &lsquo;the point of a diamond&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-asv">ASV</span>), &lsquo;a diamond point&rsquo; (<span class="tag t-nwt">NWT&nbsp;1984</span>, <span class="tag t-tlb">TLB</span>) and &lsquo;a flint point&rsquo; (<span class="tag t-niv">NIV</span>).', ('Jeremiah', 17, 1)))
+
+# ---- dictionary (ES)
+DICTIONARY_ES['anush'] = ('anush', 'INCURABLE, desesperado &mdash; de una herida o una enfermedad que nada sana. <span data-heb="ואנש הוא">«e incurable» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-9">Jeremías 17:9</a> (ya en estas páginas), dicho del corazón, y la misma palabra vuelve en <a href="jeremiah-17.es.html#v17-16">17:16</a> en <span data-heb="יום אנוש">«el día incurable», que está en este único versículo</span>. &#9888; La estantería imprime «perverso» (<span class="tag t-rv60">RV60</span>) , «No tiene remedio» (<span class="tag t-nvi">NVI</span>) y «desesperado» (<span class="tag t-tnm">TNM&nbsp;1987</span>), y para el día «día de calamidad» (<span class="tag t-rv60">RV60</span>), «el día de la desesperación» (<span class="tag t-tnm">TNM&nbsp;1987</span>) y «el día del desastre» (<span class="tag t-tnm">TNM&nbsp;2019</span>).')
+DICTIONARY_ES['aqov'] = ('aqov', 'TORCIDO, engañoso &mdash; de <em>aqav</em>, agarrar del talón, la raíz de <em>Ya&rsquo;aqov</em>, Jacob. <span data-heb="עקב הלב מכל">«torcido es el corazón más que todas las cosas» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-9">Jeremías 17:9</a> (ya en estas páginas). La raíz es el verbo de la queja de Esaú en <a href="genesis-27.html#v27-36">Génesis 27:36</a> (ya en estas páginas, todavía sin página en español), «me ha suplantado ya dos veces». &#9888; La estantería imprime «Engañoso» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>) y «más traicionero» (<span class="tag t-tnm">TNM&nbsp;1987</span>).')
+DICTIONARY_ES['shamir'] = ('shamir', 'UNA PIEDRA DURÍSIMA, el diamante o el esmeril que corta otra piedra &mdash; también una maleza espinosa (Isaías 5:6). <span data-heb="בצפרן שמיר">«con punta de diamante» está en este único versículo</span>, <a href="jeremiah-17.es.html#v17-1">Jeremías 17:1</a> (ya en estas páginas), donde el pecado de Judá se graba en la tabla del corazón. &#9888; La estantería imprime «punta de diamante» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>, <span class="tag t-tnm">TNM&nbsp;1987</span>).')
+
+# ---- extensions
+for _i, _t in enumerate(DICTIONARY):
+    if _t[0] == 'machseh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-17">Jeremiah 17:17</a> (now on these pages): <span data-heb="מחסי אתה ביום רעה">&lsquo;you are my refuge in the day of evil&rsquo; stands in this one verse</span>; the shelf splits between &lsquo;hope&rsquo; (<span class="tag t-kjv">KJV</span>, <span class="tag t-drb">Douay</span>) and &lsquo;refuge&rsquo; (<span class="tag t-asv">ASV</span>, <span class="tag t-niv">NIV</span>).',) + _t[5:]
+    if _t[0] == 'miqveh':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-13">Jeremiah 17:13</a> (now on these pages): <span data-heb="מקוה ישראל יהוה">&lsquo;hope of Israel, Jehovah&rsquo; stands in this one verse</span>, and the verse goes on to <span data-heb="מקור מים חיים">&lsquo;the fountain of living water&rsquo;, which stands in two verses</span>, here and <a href="jeremiah-2.html#v2-13">Jeremiah 2:13</a>, so the &lsquo;hope&rsquo; sits beside a word for water.',) + _t[5:]
+    if _t[0] == 'massa':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-21">Jeremiah 17:21</a> (now on these pages): <span data-heb="ואל תשאו משא ביום השבת">&lsquo;and do not lift a load on the day of the sabbath&rsquo; stands in this one verse</span>; the load is carried in and out of the gates of Jerusalem, and the chapter ends with a fire in those gates.',) + _t[5:]
+    if _t[0] == 'shemittah':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-4">Jeremiah 17:4</a> (now on these pages): <span data-heb="ושמטתה">&lsquo;and you will let go&rsquo; stands in this one verse</span>, the verb of the release, said of Judah letting go of its inheritance.',) + _t[5:]
+    if _t[0] == 'kelayot':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-10">Jeremiah 17:10</a> (now on these pages): <span data-heb="חקר לב בחן כליות">&lsquo;search the heart, test the kidneys&rsquo; stands in this one verse</span>, and <span data-heb="בחן כליות">&lsquo;test the kidneys&rsquo; stands in two verses</span>, here and Jeremiah 11:20.',) + _t[5:]
+    if _t[0] == 'ketiv-qere':
+        DICTIONARY[_i] = _t[:4] + (_t[4] + ' &#11088; <a href="jeremiah-17.html#v17-8">Jeremiah 17:8</a> (now on these pages): <span data-heb="ולא ירא יראה">&lsquo;and he will not see (or fear)&rsquo; stands in this one verse</span>, written <em>yira</em>, &lsquo;he will fear&rsquo;, and read <em>yireh</em>, &lsquo;he will see&rsquo;; the shelf follows both.',) + _t[5:]
+if 'machseh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['machseh']
+    DICTIONARY_ES['machseh'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-17">Jeremías 17:17</a> (ya en estas páginas): <span data-heb="מחסי אתה ביום רעה">«tú eres mi refugio en el día malo» está en este único versículo</span>; el estante se divide entre «esperanza» (<span class="tag t-rv">RV&nbsp;1909</span>) y «refugio» (<span class="tag t-rv60">RV60</span>, <span class="tag t-nvi">NVI</span>).')
+if 'miqveh' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['miqveh']
+    DICTIONARY_ES['miqveh'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-13">Jeremías 17:13</a> (ya en estas páginas): <span data-heb="מקוה ישראל יהוה">«esperanza de Israel, Jehová» está en este único versículo</span>, y el versículo sigue con <span data-heb="מקור מים חיים">«la fuente de agua viva», que está en dos versículos</span>, este y <a href="jeremiah-2.es.html#v2-13">Jeremías 2:13</a>, de modo que la «esperanza» queda junto a una palabra de agua.')
+if 'massa' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['massa']
+    DICTIONARY_ES['massa'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-21">Jeremías 17:21</a> (ya en estas páginas): <span data-heb="ואל תשאו משא ביום השבת">«y no levantéis carga en el día del sábado» está en este único versículo</span>; la carga se mete y se saca por las puertas de Jerusalén, y el capítulo termina con un fuego en esas puertas.')
+if 'shemittah' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['shemittah']
+    DICTIONARY_ES['shemittah'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-4">Jeremías 17:4</a> (ya en estas páginas): <span data-heb="ושמטתה">«y soltarás» está en este único versículo</span>, el verbo de la liberación, dicho de Judá soltando su heredad.')
+if 'kelayot' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['kelayot']
+    DICTIONARY_ES['kelayot'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-10">Jeremías 17:10</a> (ya en estas páginas): <span data-heb="חקר לב בחן כליות">«escudriño el corazón, pruebo los riñones» está en este único versículo</span>, y <span data-heb="בחן כליות">«pruebo los riñones» está en dos versículos</span>, este y Jeremías 11:20.')
+if 'ketiv-qere' in DICTIONARY_ES:
+    _d = DICTIONARY_ES['ketiv-qere']
+    DICTIONARY_ES['ketiv-qere'] = (_d[0], _d[1] + ' &#11088; <a href="jeremiah-17.es.html#v17-8">Jeremías 17:8</a> (ya en estas páginas): <span data-heb="ולא ירא יראה">«y no verá (o temerá)» está en este único versículo</span>, escrito <em>yira</em>, «temerá», y leído <em>yireh</em>, «verá»; el estante sigue ambas.')
+
+# ---- XREFS
+_have = {(tuple(a), tuple(b)) for a, b, _n in XREFS} | {(tuple(b), tuple(a)) for a, b, _n in XREFS}
+for _a, _b, _n in [
+    (('Jeremiah', 17, 1), ('Proverbs', 3, 3), 'the tablet of the heart'),
+    (('Jeremiah', 17, 1), ('2 Corinthians', 3, 3), 'not on tablets of stone but on tablets of human hearts'),
+    (('Jeremiah', 17, 4), ('Deuteronomy', 32, 22), 'a fire kindled in my anger'),
+    (('Jeremiah', 17, 8), ('Psalms', 1, 3), 'a tree planted by water'),
+    (('Jeremiah', 17, 9), ('Genesis', 27, 36), "aqov, the root of Jacob's name"),
+    (('Jeremiah', 17, 10), ('Psalms', 139, 23), 'search me and know my heart'),
+    (('Jeremiah', 17, 13), ('Jeremiah', 2, 13), 'the fountain of living water'),
+    (('Jeremiah', 17, 21), ('Exodus', 20, 8), 'remember the sabbath day'),
+    (('Jeremiah', 17, 27), ('Amos', 1, 14), 'I will kindle a fire'),
+]:
+    if (tuple(_a), tuple(_b)) not in _have:
+        XREFS.append((_a, _b, _n))
+
+CHRON_CHAPTERS["jer17"] = dict(era='exile',
+    when='A chapter of two men and two cities: the sin of Judah written with a pen of iron and a diamond point on the tablet of the heart; the cursed man who trusts in man, like a shrub in a salt land, and the blessed man who trusts in Jehovah, like a tree planted by water; the heart crooked above all things, searched by Jehovah; the partridge and the riches left half-way; the fountain of living water forsaken; Jeremiah\'s prayer to be healed, his claim that he did not hurry away from shepherding, and his prayer against his pursuers; and the sabbath at the gates of Jerusalem, a load not to be lifted, with a city full of kings and offerings if they listen and a fire in its gates if they do not.',
+    clock='Undated by the chapter itself; its gate-sermon is placed in the reign of the last kings of Judah, before the fall of Jerusalem. &#9888; Nothing in it names a king, and the shelf is not agreed on when the sermon was given.')
+
+CHAPTER_ART["jer17"] = [dict(
+    file='dore-123-baruch-writes-jeremiah.jpg',
+    title='Baruch Writes Jeremiah&rsquo;s Prophecies', title_es='Baruc escribe las profec&iacute;as de Jerem&iacute;as',
+    artist='Gustave Dor&eacute;', artist_es='Gustave Dor&eacute;',
+    year='1866', location='Wood engraving for the Dor&eacute; Bible (illustrating Jeremiah 36)', location_es='Grabado en madera para la Biblia de Dor&eacute; (ilustra Jerem&iacute;as 36)',
+    alt='A dark engraving of a rocky chamber with a shaft of light falling from the upper right. An old bearded man in a long fringed robe with a patterned breastplate stands looking up into the light, one hand pressed to his chest and the other held out to the side. At his feet a younger man in a hooded cloak kneels, resting a large tablet on his knee and writing on it with a quill, while the old man rests a hand on the kneeling man&rsquo;s shoulder.',
+    alt_es='Un grabado oscuro de una c&aacute;mara rocosa con un rayo de luz que cae desde arriba a la derecha. Un anciano barbado con una t&uacute;nica larga con flecos y un pectoral con dibujos est&aacute; de pie mirando hacia la luz, con una mano apretada contra el pecho y la otra extendida a un lado. A sus pies un hombre m&aacute;s joven con capa y capucha est&aacute; arrodillado, con una tablilla grande apoyada en la rodilla, escribiendo en ella con una pluma, mientras el anciano apoya una mano en el hombro del arrodillado.',
+    note='Jeremiah 17:1. The chapter opens with sin written with a pen of iron on the tablet of the heart. Dor&eacute; draws a different writing from the same book: Baruch taking down the words of Jeremiah (Jeremiah 36), with the prophet in a shaft of light. The scene is not in this chapter, and the room, the light and the tablet are the engraver&rsquo;s.',
+    note_es='Jerem&iacute;as 17:1. El cap&iacute;tulo abre con el pecado escrito con cincel de hierro en la tabla del coraz&oacute;n. Dor&eacute; dibuja otra escritura del mismo libro: Baruc tomando las palabras de Jerem&iacute;as (Jerem&iacute;as 36), con el profeta bajo un rayo de luz. La escena no est&aacute; en este cap&iacute;tulo, y la c&aacute;mara, la luz y la tablilla son del grabador.',
+    license='Public domain',
+    source_url='https://commons.wikimedia.org/wiki/File:123.Baruch_Writes_Jeremiah%27s_Prophecies.jpg')]
 
