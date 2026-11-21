@@ -190,6 +190,7 @@ def _stock_price(ticker):
 
 def compute():
     """The ranked CEBE board, or None if nothing usable. Never raises."""
+    _fresh = _load_freshness()
     if not os.path.exists(SEED):
         print("  ! no source/finance/cebe_seed.json — nothing to compute", file=sys.stderr)
         return None
@@ -290,6 +291,9 @@ def compute():
             "debt_usd": round(debt),
             "preferred_usd": round(preferred),
             "cash_usd": round(cash) if cash else None,
+            "figures_confirmed": _fresh.get(ticker, {}).get("confirmed"),      # tools/figure_freshness.py sidecar
+            "figures_age_days": _fresh.get(ticker, {}).get("age_days"),
+            "figures_stale": bool(_fresh.get(ticker, {}).get("stale")),
             "claims_usd": round(claims),
             "claims_pct": round(claims / btc_nav * 100, 1) if btc_nav else None,
             "cebe_usd": round(cebe_usd),
@@ -326,6 +330,15 @@ def compute():
         "count": len(rows),
         "excluded_count": len(companies) - len(rows),
     }
+
+
+def _load_freshness():
+    try:
+        with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "source", "finance",
+                               "cebe_freshness.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
 
 
 def main():

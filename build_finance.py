@@ -4347,6 +4347,16 @@ def _cbe_stress_cell(r):
             f'<span class="{cls50}">{_cbe_int(s50)}</span></span>')
 
 
+def _cbe_stale_mark(r):
+    """A small warning mark when this row's curated figures haven't been touched or re-confirmed in too long
+    (tools/figure_freshness.py: 60 days hand-curated, 135 for a row on a quarterly SEC refresh)."""
+    if not r.get("figures_stale"):
+        return ""
+    tip = esc(f"These figures were last confirmed {r.get('figures_age_days')} days ago "
+              f"({r.get('figures_confirmed')}). They are curated from the company's filings and may be behind.")
+    return f' <span title="{tip}" style="color:#b8860b;cursor:help;font-size:.85em">&#9888;</span>'
+
+
 def cebe_row(r):
     kind_label = {"miner": "Miner", "exchange": "Exchange"}.get(r["kind"], "Treasury")
     where = esc(r.get("country") or "")
@@ -4383,7 +4393,7 @@ def cebe_row(r):
         <td class="{claims_cls}">{_cbe_int(r['cebe_btc'])} BTC</td>
         <td class="cbe-hl" style="font-weight:700">{_cbe_int(r['cebe_sats_per_100'])}</td>
         <td>{_cbe_int(r['cebe_sats_per_share'])}</td>
-        <td>{_btc_amt(r['btc_holdings'])}</td>
+        <td>{_btc_amt(r['btc_holdings'])}{_cbe_stale_mark(r)}</td>
         <td title="{claims_tip}" class="{claims_cls}">{money_cap(r['claims_usd']) if r['claims_usd'] >= 0 else '-' + money_cap(-r['claims_usd'])}</td>
         <td>{_cbe_coverage_cell(r)}</td>
         <td>{_cbe_stress_cell(r)}</td>

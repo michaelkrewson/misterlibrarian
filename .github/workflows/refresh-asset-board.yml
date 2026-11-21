@@ -155,6 +155,12 @@ jobs:
       # price), so it shares that dependency with the asset-board step but
       # runs as its own call in case Yahoo blocks it specifically for a
       # ticker the asset board never touches (e.g. a thin OTC-pink quote).
+      # Flags rows whose curated figures haven't been touched or re-confirmed in too long (60 days; 135 for rows on a
+      # quarterly SEC refresh) and prints a ::warning:: per stale row. Must run AFTER the SEC refreshers above and
+      # BEFORE the CEBE compute, which copies the result onto each row. Never fails.
+      - name: Check CEBE figure freshness
+        run: python3 tools/figure_freshness.py
+
       - name: Compute the CEBE board
         run: python3 tools/fetch_cebe.py
 
