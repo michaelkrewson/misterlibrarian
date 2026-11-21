@@ -101,12 +101,118 @@ def _edit(path: str, new_row, find, dry: bool) -> bool:
     return False
 
 
+# ── Quarterly balance-sheet figures from the 10-Q/10-K XBRL (SEC companyfacts) ─────────────────────────────
+# Only the three that map to ONE clean us-gaap tag (verified 2026-11-21 against Strategy's Q2 and Q3 2026 10-Qs;
+# the Q2 preferred figure matched the seed's hand-sourced $15,462,056,000 exactly):
+#   debt_usd            <- LongTermDebt                           (Q3: 6,715,414,000; strategy.com showed $6.714B)
+#   preferred_liq_usd   <- TemporaryEquityLiquidationPreference   (Q3: 14,109,839,000)
+#   operating_cf_usd    <- trailing twelve months of NetCashProvidedByUsedInOperatingActivities
+# NOT automated (no clean tag, or a definition call): cash, diluted/basic shares, the blended preferred dividend
+# rate. They stay curated.
+FACTS_URL = f"https://data.sec.gov/api/xbrl/companyfacts/CIK{CIK}.json"
+
+
+def _d(s):
+    return datetime.strptime(s, "%Y-%m-%d").date()
+
+
+def _usd(facts, tag):
+    return facts["facts"]["us-gaap"][tag]["units"]["USD"]
+
+
+def _latest_instant(facts, tag):
+    es = [e for e in _usd(facts, tag) if not e.get("start") and e.get("form") in ("10-Q", "10-K")]
+    return max(es, key=lambda e: (e["end"], e["filed"])) if es else None
+
+
+def _ytd(facts, tag, start, end):
+    es = [e for e in _usd(facts, tag) if e.get("start") == start and e["end"] == end and e.get("form") in ("10-Q", "10-K")]
+    return max(es, key=lambda e: e["filed"])["val"] if es else None
+
+
+def _ttm_opcf(facts, end):
+    """Trailing-twelve-month operating cash flow ending `end`, or None when any needed period is missing."""
+    tag, e = "NetCashProvidedByUsedInOperatingActivities", _d(end)
+    cur = _ytd(facts, tag, f"{e.year}-01-01", end)
+    if cur is None:
+        return None
+    if (e.month, e.day) == (12, 31):
+        return cur
+    prior_ytd = _ytd(facts, tag, f"{e.year - 1}-01-01", f"{e.year - 1}-{e.month:02d}-{e.day:02d}")
+    prior_fy = _ytd(facts, tag, f"{e.year - 1}-01-01", f"{e.year - 1}-12-31")
+    if prior_ytd is None or prior_fy is None:
+        return None
+    return prior_fy + cur - prior_ytd
+
+
+def extract_quarterly(facts):
+    """PURE. {period_end, debt_usd, preferred_liq_usd, operating_cf_usd|None} from companyfacts, or None.
+    Debt and preferred must come from the SAME period end (a half-updated pair is never used)."""
+    try:
+        debt = _latest_instant(facts, "LongTermDebt")
+        pref = _latest_instant(facts, "TemporaryEquityLiquidationPreference")
+        if not debt or not pref or debt["end"] != pref["end"]:
+            return None
+        if not (0 < debt["val"] < 5e10 and 0 < pref["val"] < 1e11):
+            return None
+        return {"period_end": debt["end"], "debt_usd": int(debt["val"]), "preferred_liq_usd": int(pref["val"]),
+                "operating_cf_usd": _ttm_opcf(facts, debt["end"])}
+    except (KeyError, ValueError, TypeError):
+        return None
+
+
+def quarterly_plausible(new: dict, row: dict):
+    """(ok, reason): never go backwards in time, never accept a >2x / <0.5x jump in one quarter."""
+    if row.get("quarterly_as_of") and new["period_end"] <= row["quarterly_as_of"]:
+        return False, "not newer than the seed's quarter"
+    for k in ("debt_usd", "preferred_liq_usd"):
+        old = row.get(k) or 0
+        if old and not (0.5 <= new[k] / old <= 2.0):
+            return False, f"{k} moved from {old:,.0f} to {new[k]:,}"
+    return True, "ok"
+
+
+def _cebe_quarterly_row(new: dict):
+    def edit(line):
+        line = re.sub(r'"debt_usd": \d+', f'"debt_usd": {new["debt_usd"]}', line, count=1)
+        line = re.sub(r'"preferred_liq_usd": \d+', f'"preferred_liq_usd": {new["preferred_liq_usd"]}', line, count=1)
+        if new.get("operating_cf_usd") is not None:
+            line = re.sub(r'"operating_cf_usd": -?\d+', f'"operating_cf_usd": {int(new["operating_cf_usd"])}', line, count=1)
+        if '"quarterly_as_of"' in line:
+            return re.sub(r'"quarterly_as_of": "[^"]*"', f'"quarterly_as_of": "{new["period_end"]}"', line, count=1)
+        return line.replace(', "kind":', f', "quarterly_as_of": "{new["period_end"]}", "kind":', 1)
+    return edit
+
+
+def refresh_quarterly(contact: str, dry: bool) -> None:
+    ua = f"Ledger research ({contact})"
+    try:
+        new = extract_quarterly(json.loads(_get(FACTS_URL, ua)))
+    except Exception as exc:
+        print(f"  ! Strategy quarterly fetch failed ({type(exc).__name__}) — quarterly figures left as they are", file=sys.stderr)
+        return
+    if not new:
+        print("  ! no consistent quarterly XBRL figures — left as they are", file=sys.stderr)
+        return
+    row = next((c for c in json.load(open(CEBE, encoding="utf-8")).get("companies", []) if c.get("ticker") == "MSTR"), None)
+    if not row:
+        return
+    ok, why = quarterly_plausible(new, row)
+    if not ok:
+        print(f"  quarterly figures unchanged ({why})")
+        return
+    changed = _edit(CEBE, _cebe_quarterly_row(new), lambda l: '"ticker": "MSTR"' in l, dry)
+    print(f"Strategy quarterly {'would set' if dry else 'set'} from the {new['period_end']} filing "
+          f"(debt ${new['debt_usd']:,}, preferred ${new['preferred_liq_usd']:,}, op cash flow TTM {new['operating_cf_usd']}): {changed}")
+
+
 def main(argv) -> int:
     dry = "--dry-run" in argv
     contact = os.environ.get("SEC_CONTACT", "").strip()
     if not contact:
         print("no SEC_CONTACT — Strategy seeds left as they are")
         return 0
+    refresh_quarterly(contact, dry)                # independent of the weekly 8-K: either may fail without the other
     try:
         got = latest(contact)
     except Exception as exc:                       # network/SEC trouble must never fail the board refresh
