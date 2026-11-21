@@ -112,11 +112,11 @@
   "stale": true
  },
  "MARA": {
-  "age_days": 74,
-  "changed": "2026-09-08",
-  "confirmed": "2026-09-08",
-  "fingerprint": "2e0ec7272e13",
-  "stale": true
+  "age_days": 0,
+  "changed": "2026-11-21",
+  "confirmed": "2026-11-21",
+  "fingerprint": "e9ab2039d288",
+  "stale": false
  },
  "MSTR": {
   "age_days": 0,
@@ -161,11 +161,11 @@
   "stale": true
  },
  "XXI": {
-  "age_days": 74,
-  "changed": "2026-09-08",
-  "confirmed": "2026-09-08",
-  "fingerprint": "fd697ae6dbc8",
-  "stale": true
+  "age_days": 0,
+  "changed": "2026-11-21",
+  "confirmed": "2026-11-21",
+  "fingerprint": "f4a8c1846320",
+  "stale": false
  },
  "XYZ": {
   "age_days": 74,
