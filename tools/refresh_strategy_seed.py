@@ -107,8 +107,10 @@ def _edit(path: str, new_row, find, dry: bool) -> bool:
 #   debt_usd            <- LongTermDebt                           (Q3: 6,715,414,000; strategy.com showed $6.714B)
 #   preferred_liq_usd   <- TemporaryEquityLiquidationPreference   (Q3: 14,109,839,000)
 #   operating_cf_usd    <- trailing twelve months of NetCashProvidedByUsedInOperatingActivities
-# NOT automated (no clean tag, or a definition call): cash, diluted/basic shares, the blended preferred dividend
-# rate. They stay curated.
+#   cash_usd            <- CashAndCashEquivalentsAtCarryingValue + AvailableForSaleSecuritiesDebtSecuritiesCurrent
+#                          (Q3: 2,501,456,000 + 3,404,457,000 = 5,905,913,000; definition chosen 2026-11-21 with Michael:
+#                          cash plus short-term investments, because Strategy parks its USD reserve in short-term securities)
+# NOT automated (no clean tag): diluted/basic shares, the blended preferred dividend rate. They stay curated.
 FACTS_URL = f"https://data.sec.gov/api/xbrl/companyfacts/CIK{CIK}.json"
 
 
@@ -145,6 +147,25 @@ def _ttm_opcf(facts, end):
     return prior_fy + cur - prior_ytd
 
 
+def _instant_at(facts, tag, end):
+    es = [e for e in _usd(facts, tag) if not e.get("start") and e["end"] == end and e.get("form") in ("10-Q", "10-K")]
+    return max(es, key=lambda e: e["filed"])["val"] if es else None
+
+
+def _cash(facts, end):
+    """Cash and cash equivalents PLUS short-term (available-for-sale) investments at `end` — the USD reserve
+    Strategy holds to pay its preferred dividends, which is what 'cash on hand' means for the claims waterfall.
+    Both pieces must exist for that period or the figure is None (a half-count would silently understate it)."""
+    try:
+        cash = _instant_at(facts, "CashAndCashEquivalentsAtCarryingValue", end)
+        sti = _instant_at(facts, "AvailableForSaleSecuritiesDebtSecuritiesCurrent", end)
+    except KeyError:
+        return None
+    if cash is None or sti is None or cash < 0 or sti < 0:
+        return None
+    return int(cash + sti)
+
+
 def extract_quarterly(facts):
     """PURE. {period_end, debt_usd, preferred_liq_usd, operating_cf_usd|None} from companyfacts, or None.
     Debt and preferred must come from the SAME period end (a half-updated pair is never used)."""
@@ -156,15 +177,15 @@ def extract_quarterly(facts):
         if not (0 < debt["val"] < 5e10 and 0 < pref["val"] < 1e11):
             return None
         return {"period_end": debt["end"], "debt_usd": int(debt["val"]), "preferred_liq_usd": int(pref["val"]),
-                "operating_cf_usd": _ttm_opcf(facts, debt["end"])}
+                "operating_cf_usd": _ttm_opcf(facts, debt["end"]), "cash_usd": _cash(facts, debt["end"])}
     except (KeyError, ValueError, TypeError):
         return None
 
 
 def quarterly_plausible(new: dict, row: dict):
     """(ok, reason): never go backwards in time, never accept a >2x / <0.5x jump in one quarter."""
-    if row.get("quarterly_as_of") and new["period_end"] <= row["quarterly_as_of"]:
-        return False, "not newer than the seed's quarter"
+    if row.get("quarterly_as_of") and new["period_end"] < row["quarterly_as_of"]:
+        return False, "older than the seed's quarter"       # the SAME quarter is fine: _edit is a no-op if nothing differs
     for k in ("debt_usd", "preferred_liq_usd"):
         old = row.get(k) or 0
         if old and not (0.5 <= new[k] / old <= 2.0):
@@ -178,6 +199,11 @@ def _cebe_quarterly_row(new: dict):
         line = re.sub(r'"preferred_liq_usd": \d+', f'"preferred_liq_usd": {new["preferred_liq_usd"]}', line, count=1)
         if new.get("operating_cf_usd") is not None:
             line = re.sub(r'"operating_cf_usd": -?\d+', f'"operating_cf_usd": {int(new["operating_cf_usd"])}', line, count=1)
+        if new.get("cash_usd") is not None:
+            if '"cash_usd"' in line:
+                line = re.sub(r'"cash_usd": \d+', f'"cash_usd": {int(new["cash_usd"])}', line, count=1)
+            else:
+                line = line.replace(', "kind":', f', "cash_usd": {int(new["cash_usd"])}, "kind":', 1)
         if '"quarterly_as_of"' in line:
             return re.sub(r'"quarterly_as_of": "[^"]*"', f'"quarterly_as_of": "{new["period_end"]}"', line, count=1)
         return line.replace(', "kind":', f', "quarterly_as_of": "{new["period_end"]}", "kind":', 1)
@@ -203,7 +229,8 @@ def refresh_quarterly(contact: str, dry: bool) -> None:
         return
     changed = _edit(CEBE, _cebe_quarterly_row(new), lambda l: '"ticker": "MSTR"' in l, dry)
     print(f"Strategy quarterly {'would set' if dry else 'set'} from the {new['period_end']} filing "
-          f"(debt ${new['debt_usd']:,}, preferred ${new['preferred_liq_usd']:,}, op cash flow TTM {new['operating_cf_usd']}): {changed}")
+          f"(debt ${new['debt_usd']:,}, preferred ${new['preferred_liq_usd']:,}, cash {new['cash_usd']}, "
+          f"op cash flow TTM {new['operating_cf_usd']}): {changed}")
 
 
 def main(argv) -> int:

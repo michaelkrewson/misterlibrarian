@@ -4434,7 +4434,7 @@ def _cebe_methods_panel(board):
     services its preferred dividends and debt coupons as a going concern and
     the BTC just compounds; low CEBE coverage is a solvency-stress signal, not
     evidence the stock is mispriced right now. Debt, preferred, and cash
-    figures are curated approximations refreshed periodically from filings.
+    figures are curated approximations refreshed periodically from filings — except Strategy's, which are read from its latest 10-Q on SEC EDGAR (its cash is cash and equivalents plus short-term investments).
     {f"{excluded} compan{'y' if excluded == 1 else 'ies'} from the same curated list "
       "were checked and left off this run because yfinance could not price "
       f"{'it' if excluded == 1 else 'them'}, or the most recent quote was too old to "
