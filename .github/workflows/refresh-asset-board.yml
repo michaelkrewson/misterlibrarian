@@ -122,6 +122,15 @@ jobs:
       # seed file failing to parse must not cost the other two boards their
       # refresh. Needs no pip install — it reads the price the asset-board step
       # above already fetched, with a keyless fallback of its own.
+      # Strategy's bitcoin count comes from its own weekly 8-K on SEC EDGAR (2026-11-21: it was typed in by hand
+      # and sat days behind each Monday filing). Runs BEFORE the two steps that read the seeds. Needs the repo
+      # secret SEC_CONTACT (SEC fair access asks for a contact in the User-Agent); without it, or on any
+      # failure/implausible reading, it changes nothing and exits 0 — it can never cost another board its refresh.
+      - name: Refresh Strategy's holdings from its 8-K
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python3 tools/refresh_strategy_seed.py
+
       - name: Compute the Treasuries board
         run: python3 tools/fetch_treasuries.py
 
