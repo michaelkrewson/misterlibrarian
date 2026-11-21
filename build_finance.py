@@ -4434,7 +4434,7 @@ def _cebe_methods_panel(board):
     services its preferred dividends and debt coupons as a going concern and
     the BTC just compounds; low CEBE coverage is a solvency-stress signal, not
     evidence the stock is mispriced right now. Debt, preferred, and cash
-    figures are curated approximations refreshed periodically from filings — except Strategy's and Strive's, which are read from their own SEC filings on EDGAR (Strategy: its latest 10-Q, cash is cash and equivalents plus short-term investments; Strive: its weekly 8-K, cash is cash and equivalents only, preferred is SATA plus SATS shares at their $100 stated amount).
+    figures are curated approximations refreshed periodically from filings — except Strategy's, Strive's, MARA's and Twenty One's, which are read from their own SEC filings on EDGAR (MARA and Twenty One: bitcoin and cash from the latest 10-Q, plus MARA's debt; Strategy: its latest 10-Q, cash is cash and equivalents plus short-term investments; Strive: its weekly 8-K, cash is cash and equivalents only, preferred is SATA plus SATS shares at their $100 stated amount).
     {f"{excluded} compan{'y' if excluded == 1 else 'ies'} from the same curated list "
       "were checked and left off this run because yfinance could not price "
       f"{'it' if excluded == 1 else 'them'}, or the most recent quote was too old to "

@@ -138,6 +138,13 @@ jobs:
           SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python3 tools/refresh_strive_seed.py
 
+      # MARA and Twenty One Capital file no weekly holdings 8-K, so their bitcoin / cash (and MARA's debt) come
+      # from the latest 10-Q — quarterly. Same SEC_CONTACT, same fail-keeps-last-good.
+      - name: Refresh MARA and Twenty One from their 10-Qs
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python3 tools/refresh_quarterly_seeds.py
+
       - name: Compute the Treasuries board
         run: python3 tools/fetch_treasuries.py
 
