@@ -231,7 +231,7 @@ def compute():
 
         debt = float(c.get("debt_usd") or 0)
         preferred = float(c.get("preferred_liq_usd") or 0)
-        cash = float(c.get("cash_usd") or 0)      # MSTR: cash + short-term investments from its latest 10-Q (tools/refresh_strategy_seed.py); 0 for others
+        cash = float(c.get("cash_usd") or 0)      # MSTR (+ ASST via refresh_strive_seed.py): cash + short-term investments from its latest 10-Q (tools/refresh_strategy_seed.py); 0 for others
         cost = float(c.get("cost_basis") or 0)
 
         mcap = price * shares

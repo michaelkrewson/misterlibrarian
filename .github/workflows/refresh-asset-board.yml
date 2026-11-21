@@ -131,6 +131,13 @@ jobs:
           SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
         run: python3 tools/refresh_strategy_seed.py
 
+      # Strive's row (bitcoin, shares, cash, SATA/SATS preferred) comes from its own Monday 8-K the same way.
+      # Seeded by hand 2026-11-21 (its row had sat months behind); same SEC_CONTACT, same fail-keeps-last-good.
+      - name: Refresh Strive's holdings from its 8-K
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python3 tools/refresh_strive_seed.py
+
       - name: Compute the Treasuries board
         run: python3 tools/fetch_treasuries.py
 
