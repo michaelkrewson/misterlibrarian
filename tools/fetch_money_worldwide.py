@@ -1730,6 +1730,24 @@ def compute():
         print("  ! every section failed — nothing to write", file=sys.stderr)
         return None
 
+    # A section that failed THIS run (e.g. the IMF DataMapper 429-ing a CI
+    # runner, 2026-11-21) keeps its last good value instead of being written as
+    # null — a null section crashed build_finance and failed every refresh.
+    prev = _load_json_file(OUT) or {}
+    def _keep(name, fresh):
+        if fresh:
+            return fresh
+        old = prev.get(name)
+        if old:
+            print("  ! %s unresolved this run — keeping the previous one" % name,
+                  file=sys.stderr)
+        return old
+    fx = _keep("fx", fx)
+    money_supply = _keep("money_supply", money_supply)
+    reserves_fx = _keep("reserves_fx", reserves_fx)
+    gold = _keep("gold", gold)
+    debt_gdp = _keep("debt_gdp", debt_gdp)
+
     return {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "fx": fx,

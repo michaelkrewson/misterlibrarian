@@ -7487,7 +7487,13 @@ def main():
     # 2026-09-08 into a hub + one page per section — see MW_SECTIONS).
     if money_worldwide:
         write("money-worldwide.html", build_money_worldwide_hub(money_worldwide))
+        _mw_need = {"exchange-rates": "fx", "money-supply": "money_supply",
+                    "reserves": "reserves_fx", "gold": "gold", "debt-gdp": "debt_gdp"}
         for key in MW_SECTION_ORDER:
+            if _mw_need.get(key) and not money_worldwide.get(_mw_need[key]):
+                print("  ! money-worldwide '%s' has no data — leaving its last page "
+                      "in place" % key, file=sys.stderr)
+                continue
             write(MW_SECTIONS[key]["file"],
                   build_money_worldwide_section(money_worldwide, key))
     else:
