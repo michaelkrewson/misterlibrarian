@@ -3,8 +3,8 @@
   "as_of": "2026-09-08",
   "companies": [
     {"ticker": "MSTR", "name": "Strategy (MicroStrategy)", "country": "🇺🇸", "domain": "strategy.com", "btc_holdings": 850849, "shares_out": 388617000, "cost_basis": 75452, "debt_usd": 6715414000, "preferred_liq_usd": 14109839000, "preferred_div_rate_pct": 11.17, "operating_cf_usd": -7362000, "quarterly_as_of": "2026-09-30", "cash_usd": 5905913000, "kind": "treasury"},
-    {"ticker": "XXI", "name": "Twenty One Capital", "country": "🇺🇸", "btc_holdings": 43514, "shares_out": 346810000, "cost_basis": 84865, "debt_usd": 486500000, "preferred_liq_usd": 0, "kind": "treasury"},
-    {"ticker": "MARA", "name": "MARA Holdings", "country": "🇺🇸", "domain": "mara.com", "btc_holdings": 36303, "shares_out": 350000000, "cost_basis": 45000, "debt_usd": 2500000000, "preferred_liq_usd": 0, "kind": "miner"},
+    {"ticker": "XXI", "name": "Twenty One Capital", "country": "🇺🇸", "btc_holdings": 43514, "shares_out": 346810000, "cost_basis": 84865, "debt_usd": 486500000, "preferred_liq_usd": 0, "cash_usd": 102846000, "quarterly_as_of": "2026-09-30", "kind": "treasury"},
+    {"ticker": "MARA", "name": "MARA Holdings", "country": "🇺🇸", "domain": "mara.com", "btc_holdings": 34012, "shares_out": 350000000, "cost_basis": 45000, "debt_usd": 3019332000, "preferred_liq_usd": 0, "cash_usd": 946545000, "quarterly_as_of": "2026-09-30", "kind": "miner"},
     {"ticker": "BSTR", "name": "Bitcoin Standard Treasury", "country": "🇺🇸", "btc_holdings": 30021, "shares_out": 300000000, "cost_basis": 50000, "debt_usd": 575000000, "preferred_liq_usd": 0, "kind": "treasury"},
     {"ticker": "BLSH", "name": "Bullish", "country": "🇺🇸", "domain": "bullish.com", "btc_holdings": 24400, "shares_out": 161206073, "cost_basis": 50000, "debt_usd": 0, "preferred_liq_usd": 0, "kind": "exchange"},
     {"ticker": "ASST", "name": "Strive Asset Management", "country": "🇺🇸", "domain": "strive.com", "btc_holdings": 43404, "shares_out": 127331109, "cost_basis": 91500, "debt_usd": 0, "preferred_liq_usd": 2117121300, "cash_usd": 465300000, "holdings_as_of": "2026-11-13", "kind": "treasury"},
