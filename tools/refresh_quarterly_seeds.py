@@ -44,6 +44,13 @@ COMPANIES = {
     # collateral (still owned): "we held approximately 12,205 bitcoins and had a receivable for 1,719 bitcoin" (2026-06-30).
     "CLSK": {"cik": "827876", "holdings": "text", "debt": "LongTermDebt",
              "pattern": re.compile(r"we held approximately ([\d,]+) bitcoins(?: and had a receivable for ([\d,]+) bitcoin)?")},
+    # HOLDINGS ONLY for the next two ("cash": False, no debt): their cash and debt are not bitcoin-strategy figures, and the
+    # board's debt is deliberately 0 / curated for them. Hut 8's filing is consolidated with American Bitcoin (ABTC):
+    # "we held approximately 16,787 Bitcoin, comprising approximately 8,360 Bitcoin held by Hut 8 and approximately 8,427
+    # Bitcoin held by American Bitcoin" — take ONLY Hut 8's own, or ABTC's row would be counted twice.
+    "HUT": {"cik": "1964789", "holdings": "text", "debt": None, "cash": False,
+            "pattern": re.compile(r"comprising approximately ([\d,]+) Bitcoin held by Hut 8")},
+    "XYZ": {"cik": "1512673", "holdings": "xbrl", "debt": None, "cash": False},     # Block: CryptoAssetNumberOfUnits (9,237)
 }
 
 
@@ -87,7 +94,7 @@ def extract(tkr: str, text: str, facts: dict, end: str):
     if not hold or hold <= 0:
         return {}
     out = {"btc_holdings": int(hold)}
-    cash = _instant(facts, "CashAndCashEquivalentsAtCarryingValue", end)
+    cash = _instant(facts, "CashAndCashEquivalentsAtCarryingValue", end) if cfg.get("cash", True) else None
     if cash is not None and cash >= 0:
         out["cash_usd"] = int(cash)
     if cfg["debt"]:
