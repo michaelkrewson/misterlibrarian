@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Keep MARA's and Twenty One Capital's CEBE rows current from their own quarterly 10-Q on SEC EDGAR.
+"""Keep MARA's, Twenty One's, Riot's and CleanSpark's CEBE rows current from their own latest 10-Q/10-K on SEC EDGAR.
 
 Neither company publishes a weekly holdings 8-K (checked 2026-11-21: their 8-Ks are results letters, notes pricing,
 board changes), so unlike Strategy / Strive this is QUARTERLY — it moves when a 10-Q lands. Read per company:
@@ -32,11 +32,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CEBE = os.path.join(ROOT, "source", "finance", "cebe_seed.json")
 MAX_HOLD_MOVE = 0.40
 
+# holdings "text" -> regex over the filing text (groups are summed); "xbrl" -> us-gaap CryptoAssetNumberOfUnits.
 COMPANIES = {
-    "MARA": {"cik": "1507605", "holdings": "text", "debt": "LongTermDebt"},
+    "MARA": {"cik": "1507605", "holdings": "text", "debt": "LongTermDebt",
+             "pattern": re.compile(r"Total bitcoin holdings ([\d,]+)")},
     "XXI": {"cik": "2070457", "holdings": "xbrl", "debt": None},
+    # Riot sold 20,264 bitcoin in 2026 (10-Q: "reducing our bitcoin holdings to 2,418 bitcoin as of September 30, 2026");
+    # the same 2,418 is tagged CryptoAssetNumberOfUnits (unit label "item").
+    "RIOT": {"cik": "1167419", "holdings": "xbrl", "debt": "LongTermDebt"},
+    # CleanSpark (fiscal year ends Sept 30, so its latest filing may be a 10-K): bitcoin held PLUS bitcoin posted as
+    # collateral (still owned): "we held approximately 12,205 bitcoins and had a receivable for 1,719 bitcoin" (2026-06-30).
+    "CLSK": {"cik": "827876", "holdings": "text", "debt": "LongTermDebt",
+             "pattern": re.compile(r"we held approximately ([\d,]+) bitcoins(?: and had a receivable for ([\d,]+) bitcoin)?")},
 }
-_MARA_HOLD = re.compile(r"Total bitcoin holdings ([\d,]+)")
 
 
 def _get(url: str, ua: str) -> str:
@@ -65,15 +73,17 @@ def _instant(facts: dict, tag: str, end: str, units=("USD",)):
     return best["val"] if best else None
 
 
-def mara_holdings(text: str):
-    m = _MARA_HOLD.search(text)
-    return int(m.group(1).replace(",", "")) if m else None
+def text_holdings(tkr: str, text: str):
+    m = COMPANIES[tkr]["pattern"].search(text)
+    if not m:
+        return None
+    return sum(int(g.replace(",", "")) for g in m.groups() if g)
 
 
 def extract(tkr: str, text: str, facts: dict, end: str):
     """Figures for one company at period `end`, only those that could be read; {} when the holdings can't be."""
     cfg = COMPANIES[tkr]
-    hold = mara_holdings(text) if cfg["holdings"] == "text" else _instant(facts, "CryptoAssetNumberOfUnits", end, None)
+    hold = text_holdings(tkr, text) if cfg["holdings"] == "text" else _instant(facts, "CryptoAssetNumberOfUnits", end, None)
     if not hold or hold <= 0:
         return {}
     out = {"btc_holdings": int(hold)}
@@ -133,9 +143,9 @@ def refresh_one(tkr: str, contact: str, dry: bool) -> None:
     cfg = COMPANIES[tkr]
     cik10 = cfg["cik"].zfill(10)
     rec = json.loads(_get(f"https://data.sec.gov/submissions/CIK{cik10}.json", ua))["filings"]["recent"]
-    i = next((n for n, f in enumerate(rec["form"]) if f == "10-Q"), None)
+    i = next((n for n, f in enumerate(rec["form"]) if f in ("10-Q", "10-K")), None)
     if i is None:
-        print(f"  ! {tkr}: no recent 10-Q — left as is", file=sys.stderr)
+        print(f"  ! {tkr}: no recent 10-Q/10-K — left as is", file=sys.stderr)
         return
     end = rec["reportDate"][i]
     url = f"https://www.sec.gov/Archives/edgar/data/{cfg['cik']}/{rec['accessionNumber'][i].replace('-', '')}/{rec['primaryDocument'][i]}"

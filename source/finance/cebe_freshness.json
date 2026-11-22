@@ -49,11 +49,11 @@
   "stale": true
  },
  "CLSK": {
-  "age_days": 74,
-  "changed": "2026-09-08",
-  "confirmed": "2026-09-08",
-  "fingerprint": "f99e815154c1",
-  "stale": true
+  "age_days": 0,
+  "changed": "2026-11-21",
+  "confirmed": "2026-11-21",
+  "fingerprint": "a552afa09ab1",
+  "stale": false
  },
  "COIN": {
   "age_days": 74,
@@ -133,11 +133,11 @@
   "stale": true
  },
  "RIOT": {
-  "age_days": 74,
-  "changed": "2026-09-08",
-  "confirmed": "2026-09-08",
-  "fingerprint": "1cd41a95aa0f",
-  "stale": true
+  "age_days": 0,
+  "changed": "2026-11-21",
+  "confirmed": "2026-11-21",
+  "fingerprint": "14523e06473e",
+  "stale": false
  },
  "TSLA": {
   "age_days": 74,
