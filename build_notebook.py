@@ -211,6 +211,7 @@ ACCENT = "#8fa3ff"
 ACCENT_RGB = "143,163,255"
 
 SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+READBAR_JS_VER = blogkit.asset_ver(OUT, "reading-bar.js")   # the reading-progress line (2026-11-24)
 RUNDOWN_JS_VER = blogkit.asset_ver(OUT, "rundown.js")
 
 
@@ -800,6 +801,7 @@ def build_entry_page(e, pool=()):
 <div class="wrap">
   %(chrome)s
 <script src="share.js?v=%(sharever)s" defer></script>
+<script src="reading-bar.js?v=%(barver)s" defer></script>
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
     %(sec_line)s
@@ -824,7 +826,7 @@ def build_entry_page(e, pool=()):
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
         "goat": _goatcounter(e["noads"]),
         "chrome": _chrome(e["section"]),
-        "sharever": SHARE_JS_VER,
+        "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER,
         "sec_line": sec_line,
         "hero": _entry_hero(e),
         "body": e["body"],
@@ -970,7 +972,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
