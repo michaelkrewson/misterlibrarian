@@ -183,6 +183,7 @@ ACCENT = "#4fa8dc"
 ACCENT_RGB = "79,168,220"
 
 SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+READBAR_JS_VER = blogkit.asset_ver(OUT, "reading-bar.js")   # the reading-progress line (2026-11-24)
 
 
 def esc(s):
@@ -393,6 +394,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <div class="wrap">
   %(chrome)s
 <script src="share.js?v=%(sharever)s" defer></script>
+<script src="reading-bar.js?v=%(barver)s" defer></script>
 %(body)s
   %(foot)s
 </div>
@@ -401,7 +403,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
        "site": esc(SITE_NAME), "ogt": og_type, "author": esc(AUTHOR),
        "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
-       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
@@ -548,6 +550,7 @@ def build_chapter_page(c, live):
 <div class="wrap">
   %(chrome)s
 <script src="share.js?v=%(sharever)s" defer></script>
+<script src="reading-bar.js?v=%(barver)s" defer></script>
   %(draft)s
   <article class="entry chapter">
     <p class="edate"><a class="esec" href="index.html#part-%(pkey)s">Part %(pnum)s · %(pname_u)s</a> · Chapter %(num)d</p>
@@ -569,7 +572,7 @@ def build_chapter_page(c, live):
         "pname": esc(_part_name(c["part"])), "pname_u": esc(_part_name(c["part"]).upper()),
         "num": c["num"], "author": esc(AUTHOR),
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
-        "goat": _goatcounter(), "chrome": _chrome(""), "sharever": SHARE_JS_VER, "draft": draft_banner,
+        "goat": _goatcounter(), "chrome": _chrome(""), "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER, "draft": draft_banner,
         "dateline": dateline, "people": people, "hero": _hero(c),
         "body": _prepare_plates(c["body"]),
         "ogimg": og_image, "card": card,

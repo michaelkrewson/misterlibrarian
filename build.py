@@ -71,6 +71,12 @@ NOTES_JS_VER = _asset_ver("reader-notes.js")
 AGORAI_JS_VER = _asset_ver("agorai-verses.js")
 SHARE_JS_VER = _asset_ver("share.js")
 APP_JS_VER = _asset_ver("app-install.js")   # offline reading + the get-the-app bar (2026-10-22)
+READBAR_JS_VER = _asset_ver("reading-bar.js")   # the reading-progress line (2026-11-24)
+
+
+def _readbar_tag(body):
+    """The reading-progress script, on pages that hold chapter text only (verse cards, dictionary and the rest have no text to measure)."""
+    return f'\n<script src="reading-bar.js?v={READBAR_JS_VER}" defer></script>' if '<article class="chapter' in body else ""
 
 # Named "Mister Translation" 2026-10-10 (Michael's call): one name for the domain, the
 # header and the Spanish twin (La Traducción Mister); Mr. Librarian stays the keeper.
@@ -2114,7 +2120,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <script src="app-install.js?v={APP_JS_VER}" defer></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
-<script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
+<script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>{_readbar_tag(body)}
 <script src="agorai-verses.js?v={AGORAI_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
