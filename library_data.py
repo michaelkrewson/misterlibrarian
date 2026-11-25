@@ -4130,7 +4130,7 @@ DICTIONARY = [
      "the false witness (<a href=\"deuteronomy-19.html#v19-21\">19:21</a>) and the woman of <a "
      "href=\"deuteronomy-25.html#v25-12\">25:12</a> — and each time it is the pity of the one who must carry the "
      "sentence out that is forbidden, not the victim's. ⚠ The head word alone is wider: Ezekiel makes it God's own "
-     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a> and <a href=\"ezekiel-7.html#v7-9\">7:9</a>, and <a href=\"ezekiel-8.html#v8-18\">8:18</a>, now on these pages; 9:10 not yet), and Jonah 4:10–11 (not yet on these pages) turns "
+     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.html#v7-9\">7:9</a> and <a href=\"ezekiel-8.html#v8-18\">8:18</a>, now on these pages; 9:10 not yet), and Jonah 4:10–11 (not yet on these pages) turns "
      "it the other way — <em>you pitied the gourd … and should I not pity Nineveh?</em> ⚠ It is not "
      "<em>racham</em>, compassion from the womb, nor <em>chamal</em>, to spare in the sense of holding back; 13:9 "
      "has this word and <em>chamal</em> side by side. <em>Chus</em> is the softening of a gaze.",
@@ -31191,7 +31191,7 @@ DICTIONARY_ES["chus"] = ("chus / tachos",
     "19:13</a>), el testigo falso (<a href=\"deuteronomy-19.es.html#v19-21\">19:21</a>) y la mujer de <a "
     "href=\"deuteronomy-25.es.html#v25-12\">25:12</a>—, y cada vez es la compasión de quien tiene que ejecutar la "
     "sentencia la que se prohíbe, no la de la víctima. ⚠ La palabra sola es más ancha: Ezequiel la hace estribillo "
-    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a> y <a href=\"ezekiel-7.es.html#v7-9\">7:9</a>, y <a href=\"ezekiel-8.es.html#v8-18\">8:18</a>, ya en estas páginas; 9:10 todavía no), y Jonás 4:10–11 (todavía no en estas "
+    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.es.html#v7-9\">7:9</a> y <a href=\"ezekiel-8.es.html#v8-18\">8:18</a>, ya en estas páginas; 9:10 todavía no), y Jonás 4:10–11 (todavía no en estas "
     "páginas) le da la vuelta —<em>tú tuviste lástima de la calabacera … ¿y no he de tenerla yo de Nínive?</em> "
     "⚠ No es <em>racham</em>, la compasión que sale de las entrañas, ni <em>chamal</em>, perdonar en el sentido "
     "de contenerse; 13:9 tiene esta palabra y <em>chamal</em> una junto a otra. <em>Chus</em> es el ablandarse de "
@@ -63773,6 +63773,7 @@ CHAPTER_ART["ezek7"] = [dict(
 # ======================================================================== Ezekiel 8 (both languages)
 _dict155_en('chashmal', add=' <a href="ezekiel-8.html#v8-2">Ezekiel 8:2</a> (now on these pages) is the third of the three.')
 _dict155_en('tsitsit', add=' &#11088; <a href="ezekiel-8.html#v8-3">Ezekiel 8:3</a> is now on these pages.')
+_dict155_es('tsitsit', add=' &#11088; <a href="ezekiel-8.es.html#v8-3">Ezequiel 8:3</a> ya está en estas páginas.')
 _dict155_en('qinah-jealousy', add=' &#11088; <a href="ezekiel-8.html#v8-3">Ezekiel 8:3 and 5</a> (now on these pages): &lsquo;the image of jealousy&rsquo; at the gate in Jerusalem.')
 _dict155_es('qinah-jealousy', add=' &#11088; <a href="ezekiel-8.es.html#v8-3">Ezequiel 8:3 y 5</a> (ya en estas páginas): «la imagen de los celos» junto a la puerta en Jerusalén.')
 _dict155_en('sheqets', add=' &#11088; <a href="ezekiel-8.html#v8-10">Ezekiel 8:10</a> (now on these pages): a detestable thing carved on a wall in the Temple.')
@@ -63786,7 +63787,7 @@ _enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-8.es.html">Ezequiel 8</a> (ya 
 
 CHRON_CHAPTERS["ezek8"] = dict(era="exile",
     when="A dated vision: with the elders of Judah sitting before him, Ezekiel is carried in visions of God to Jerusalem and shown the image of jealousy at the gate, seventy elders with censers before carved figures, women weeping for Tammuz, and about twenty-five men bowing to the sun with their backs to the temple.",
-    clock="The sixth year, sixth month, fifth day: the year after the date of chapter 1 as the exile of King Jehoiachin is counted.")
+    clock="The sixth year, sixth month, fifth day: evidently the sixth year of King Jehoiachin&rsquo;s exile, since chapter 1 identifies its own date as the fifth.")
 
 CHAPTER_ART["ezek8"] = [dict(
     file="cma-bible-leaf-ezekiel-8.jpg",
