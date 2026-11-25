@@ -63492,3 +63492,38 @@ CHAPTER_ART["lam4"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:096.A_Famine_in_Samaria.jpg",
 )]
+
+
+# ======================================================================== Lamentations 5 (both languages)
+_dict155_en('zakhar', add=' &#11088; <a href="lamentations-5.html#v1">Lamentations 5:1</a> (now on these pages) opens on the imperative, <em>zekhor Yhvh</em>, &lsquo;Remember, Jehovah&rsquo;, asking him to do what the verb does in Genesis, which is to act. <span data-heb="זכר יהוה">The letters stand in three verses of the Hebrew Bible</span>; the others are Psalm 137:7 and Jeremiah 44:21 (neither yet on these pages).')
+_dict155_es('zakhar', add=' &#11088; <a href="lamentations-5.es.html#v1">Lamentaciones 5:1</a> (ya en estas páginas) se abre con el imperativo, <em>zekhor Yhvh</em>, «Acuérdate, Jehová», pidiéndole que haga lo que el verbo hace en Génesis, que es actuar. <span data-heb="זכר יהוה">Las letras están en tres versículos de la Biblia hebrea</span>; los otros son el Salmo 137:7 y Jeremías 44:21 (ninguno todavía en estas páginas).')
+_dict155_en('avon', add=' &#11088; <a href="lamentations-5.html#v7">Lamentations 5:7</a> (now on these pages): &lsquo;our fathers sinned and are no more; and we have borne their iniquities&rsquo;. The shelf splits again between the guilt and its price (<span class="tag t-asv">ASV</span> &lsquo;iniquities&rsquo;, <span class="tag t-niv">NIV</span> &lsquo;punishment&rsquo;).')
+_dict155_es('avon', add=' &#11088; <a href="lamentations-5.es.html#v7">Lamentaciones 5:7</a> (ya en estas páginas): «nuestros padres pecaron y ya no existen; y nosotros hemos llevado sus iniquidades». El estante se divide otra vez entre la culpa y su precio (<span class="tag t-rv60">RV60</span> «castigo», <span class="tag t-tnm">TNM&nbsp;1987</span> «errores»).')
+_dict155_en('shuv', add=' &#11088; <a href="lamentations-5.html#v21">Lamentations 5:21</a> (now on these pages): <em>hashivenu Yhvh elekha ve-nashuvah</em>, &lsquo;bring us back to you, Jehovah, and we shall come back&rsquo;, the request that Jehovah turn the people first, where <a href="lamentations-3.html#v40">Lamentations 3:40</a> had the people resolve it of themselves.')
+_dict155_es('shuv', add=' &#11088; <a href="lamentations-5.es.html#v21">Lamentaciones 5:21</a> (ya en estas páginas): <em>hashivenu Yhvh elekha ve-nashuvah</em>, «vuélvenos a ti, Jehová, y volveremos», el ruego de que Jehová haga volver primero al pueblo, donde <a href="lamentations-3.es.html#v40">Lamentaciones 3:40</a> había hecho que el pueblo lo resolviera de sí mismo.')
+_dict155_en('shual', add=' &#11088; <a href="lamentations-5.html#v18">Lamentations 5:18</a> (now on these pages): foxes (or, in the <span class="tag t-niv">NIV</span>, jackals) walk on the desolate Mount Zion; <span data-heb="שועלים">the spelling with the vav stands in two verses of the Hebrew Bible</span>, here and Samson&rsquo;s foxes at <a href="judges-15.html#v15-4">Judges 15:4</a> (now on these pages).')
+_dict155_es('shual', add=' &#11088; <a href="lamentations-5.es.html#v18">Lamentaciones 5:18</a> (ya en estas páginas): zorras (o, en la <span class="tag t-nvi">NVI</span>, chacales) andan por el monte Sion desolado; <span data-heb="שועלים">la grafía con vav está en dos versículos de la Biblia hebrea</span>, aquí y las zorras de Sansón en <a href="judges-15.es.html#v15-4">Jueces 15:4</a> (ya en estas páginas).')
+_dict155_en('ketiv-qere', add=' &#11088; <a href="lamentations-5.html#v1">Lamentations 5</a> (now on these pages) has six written/read pairs in five verses: 1, 3, 5, 7 (twice) and 21.')
+_dict155_es('ketiv-qere', add=' &#11088; <a href="lamentations-5.es.html#v1">Lamentaciones 5</a> (ya en estas páginas) tiene seis pares escrito/leído en cinco versículos: 1, 3, 5, 7 (dos veces) y 21.')
+_enc_l4_en("egypt", " &#11088; <a href=\"lamentations-5.html#v6\">Lamentations 5:6</a> (now on these pages): &lsquo;To Egypt we gave the hand, and to Assyria, to be satisfied with bread&rsquo;.")
+_enc_l4_es("egypt", " &#11088; <a href=\"lamentations-5.es.html#v6\">Lamentaciones 5:6</a> (ya en estas páginas): «A Egipto dimos la mano, y a Asiria, para saciarnos de pan».")
+_enc_l4_en("assyria", " &#11088; <a href=\"lamentations-5.html#v6\">Lamentations 5:6</a> (now on these pages) names it beside Egypt as a power the people gave the hand to for bread.")
+_enc_l4_es("assyria", " &#11088; <a href=\"lamentations-5.es.html#v6\">Lamentaciones 5:6</a> (ya en estas páginas) la nombra junto a Egipto como un poder al que el pueblo dio la mano por pan.")
+
+CHRON_CHAPTERS["lam5"] = dict(era="exile",
+    when="The last chapter: a prayer in the plural with no acrostic but the acrostic's twenty-two verses. The inheritance is in strangers' hands, the mothers are like widows, water and wood are bought, slaves rule, women are humbled, princes hanged and elders unhonored, the dance has turned to mourning and foxes walk on Mount Zion; then 'You, Jehovah, sit forever; bring us back', and a last verse that ends on 'unless you have utterly rejected us'.",
+    clock="Same setting as chapters 1 to 4, Jerusalem after the siege that ended in 586 BC, and undated within the chapter itself. The chapter speaks of famine, forced labor and foreign rule, and names Egypt and Assyria without a date.")
+
+CHAPTER_ART["lam5"] = [dict(
+    file="bendemann-jews-mourning-in-exile.jpg",
+    title="Jews Mourning in Exile", title_es="Judíos llorando en el destierro",
+    artist="Eduard Bendemann", artist_es="Eduard Bendemann",
+    year="1832",
+    location="Wallraf-Richartz-Museum, Cologne", location_es="Wallraf-Richartz-Museum, Colonia",
+    alt="A semicircular painting: a shackled old man in red sits by a river with a harp laid on the ground beside him, a nursing mother on his right and a young woman with a second idle harp on his left, walled cities on both horizons and a fruiting vine overhead",
+    alt_es="Una pintura semicircular: un anciano encadenado, vestido de rojo, está sentado junto a un río con un arpa dejada en el suelo a su lado, una madre que amamanta a su derecha y una joven con una segunda arpa inactiva a su izquierda, ciudades amuralladas en ambos horizontes y una vid con fruto encima",
+    note="Not drawn from Lamentations; the same painting stands on <a href=\"leviticus-26.html\">Leviticus 26</a> and <a href=\"jeremiah-29.html\">Jeremiah 29</a>. It is used here for what the chapter says of mourning and music: the young men have ceased from their music and the dance has turned to mourning (<a href=\"lamentations-5.html#v14\">Lamentations 5:14&ndash;15</a>), and Bendemann&rsquo;s two harps lie unplayed. The nursing mother is only a likeness: the chapter&rsquo;s mothers are like widows (<a href=\"lamentations-5.html#v3\">5:3</a>).",
+    note_es="No está tomada de Lamentaciones; la misma pintura está en <a href=\"leviticus-26.es.html\">Levítico 26</a> y en <a href=\"jeremiah-29.es.html\">Jeremías 29</a>. Se usa aquí por lo que el capítulo dice del luto y la música: los jóvenes han cesado de su música y la danza se ha vuelto luto (<a href=\"lamentations-5.es.html#v14\">Lamentaciones 5:14&ndash;15</a>), y las dos arpas de Bendemann yacen sin tocar. La madre que amamanta es solo un parecido: las madres del capítulo son como viudas (<a href=\"lamentations-5.es.html#v3\">5:3</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jews_Mourning_in_Exile_-_Eduard_Bendemann_-_Wallraf-Richartz-Museum_%26_Fondation_Corboud-6071_(without_frame).jpg",
+)]
