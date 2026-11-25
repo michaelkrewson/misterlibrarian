@@ -63423,5 +63423,16 @@ CHRON_CHAPTERS["isa49"] = dict(era="exile",
     when="&ldquo;Listen to me, you islands&rdquo;: the servant who was called from the womb, hidden like an arrow in a quiver, named Israel and sent to Israel, and told that the task is too light, so he is made a light of nations. A time of favor, prisoners told to come out, a road made of mountains; Zion says she is forsaken, a nursing mother cannot forget, and the barren city is too cramped for the children who come back.",
     clock="Undated in the chapter itself, and filed with the exile and return because it speaks to a Zion with no children and a gathering still to come. The chapter names no king, year or event. &#9888; Isaiah 53, with the same servant, and Isaiah 54, with the same barren woman, are on these pages beside it.")
 
-# PROVISIONAL (Isaiah 49): waiting on Michael's decision about art; do not merge until he answers.
-ART_SKIPPED["isa49"] = ("Searched Wikimedia Commons on 2026-11-24 for Doré's Isaiah plates, Rembrandt's Simeon with the child, Tissot's lament over Jerusalem, a mother nursing a child as Zion, and Doré or Tissot scenes of the return from exile; the only fit was Doré's portrait of the prophet, which already stands on Isaiah 55, and nothing else was found. No image is recorded.")
+CHAPTER_ART["isa49"] = [dict(
+    file="dore-the-prophet-isaiah.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Gustave Dor&eacute; (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Wood engraving, via Commons", location_es="Grabado en madera, vía Commons",
+    alt="A black-and-white engraving of a bearded man in a hooded robe kneeling on a flat rock at dawn, his head bowed and his hands resting in front of him. Behind him a wide, shallow river or lake catches the light under a cloudy sky, with low hills in the distance. Spiky plants grow in the foreground and at the right edge.",
+    alt_es="Un grabado en blanco y negro de un hombre barbudo con túnica con capucha, arrodillado sobre una roca plana al amanecer, con la cabeza inclinada y las manos descansando delante de él. Detrás, un río o lago ancho y poco profundo capta la luz bajo un cielo nublado, con colinas bajas a lo lejos. Plantas espinosas crecen en primer plano y en el borde derecho.",
+    note="Isaiah 49:1&ndash;26. The same plate stands on <a href=\"isaiah-55.html\">Isaiah 55</a>: Dor&eacute;&rsquo;s portrait of the prophet is general and not drawn from this chapter, and no other fitting image was found. It is used here for a listener bowed at first light, since the chapter opens &lsquo;Listen to me, you islands&rsquo; (verse 1) and names a &lsquo;light of nations&rsquo; (verse 6).",
+    note_es="Isaías 49:1–26. La misma lámina está en <a href=\"isaiah-55.es.html\">Isaías 55</a>: el retrato del profeta de Doré es general y no está tomado de este capítulo, y no se halló otra imagen adecuada. Se usa aquí por un oyente inclinado a la primera luz, pues el capítulo empieza «Escúchenme, islas» (versículo 1) y nombra una «luz de las naciones» (versículo 6).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:120.The_Prophet_Isaiah.jpg",
+)]
