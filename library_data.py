@@ -63409,3 +63409,19 @@ CHAPTER_ART["isa60"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Seaport_with_the_Embarkation_of_the_Queen_of_Sheba_-_WGA05002.jpg",
 )]
+
+
+# --- Isaiah 49 ---
+assert not any(_d[0] == "chaqah" for _d in DICTIONARY)
+DICTIONARY.append(("chaqah", "chaqah", "חָקַק", "chaqah",
+    "TO ENGRAVE, TO CUT INTO — the verb is for marks that are cut and not written. At <a href=\"isaiah-49.html#v49-16\">Isaiah 49:16</a> the thing cut is a city: <em>hen al-kappayim chaqotikh</em>, &lsquo;Look, on the palms I have engraved you&rsquo;, and the next line says what is cut, &lsquo;your walls are before me continually&rsquo;. &#9888; The <span class=\"tag t-tlb\">TLB</span> has &lsquo;I have tattooed your name upon my palm&rsquo;, which gives the line a name and a tattoo that the Hebrew does not mention: the object of the verb is Zion herself. Ezekiel is told to take a brick and to cut a city into it, &lsquo;and engrave on it a city, Jerusalem&rsquo; (Ezekiel 4:1, not yet on these pages), the same verb in the same shape for the same city.",
+    ("Isaiah", 49, 16)))
+DICTIONARY_ES["chaqah"] = ("chaqah",
+    "GRABAR, CORTAR EN — el verbo es para marcas que se cortan y no se escriben. En <a href=\"isaiah-49.es.html#v49-16\">Isaías 49:16</a> lo cortado es una ciudad: <em>hen al-kappayim chaqotikh</em>, «Mira, en las palmas te he grabado», y la línea siguiente dice qué se corta, «tus muros están delante de mí de continuo». &#9888; Ninguna de las versiones españolas de la estantería dice «tatuado»; una paráfrasis inglesa, la <span class=\"tag t-tlb\">TLB</span>, sí lo dice («I have tattooed your name upon my palm»), y así da a la línea un nombre y un tatuaje que el hebreo no menciona: el objeto del verbo es Sión misma. A Ezequiel se le manda tomar un ladrillo y cortar en él una ciudad, «y grabarás sobre él una ciudad, Jerusalén» (Ezequiel 4:1, todavía no en estas páginas), el mismo verbo en la misma forma para la misma ciudad.")
+
+CHRON_CHAPTERS["isa49"] = dict(era="exile",
+    when="&ldquo;Listen to me, you islands&rdquo;: the servant who was called from the womb, hidden like an arrow in a quiver, named Israel and sent to Israel, and told that the task is too light, so he is made a light of nations. A time of favor, prisoners told to come out, a road made of mountains; Zion says she is forsaken, a nursing mother cannot forget, and the barren city is too cramped for the children who come back.",
+    clock="Undated in the chapter itself, and filed with the exile and return because it speaks to a Zion with no children and a gathering still to come. The chapter names no king, year or event. &#9888; Isaiah 53, with the same servant, and Isaiah 54, with the same barren woman, are on these pages beside it.")
+
+# PROVISIONAL (Isaiah 49): waiting on Michael's decision about art; do not merge until he answers.
+ART_SKIPPED["isa49"] = ("Searched Wikimedia Commons on 2026-11-24 for Doré's Isaiah plates, Rembrandt's Simeon with the child, Tissot's lament over Jerusalem, a mother nursing a child as Zion, and Doré or Tissot scenes of the return from exile; the only fit was Doré's portrait of the prophet, which already stands on Isaiah 55, and nothing else was found. No image is recorded.")
