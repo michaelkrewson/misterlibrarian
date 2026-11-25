@@ -63979,7 +63979,7 @@ _ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-14.html">Ezekiel 14</a> (
 _enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-14.es.html">Ezequiel 14</a> (ya en estas páginas): unos ancianos con ídolos sobre su corazón vienen a él, y nombra a tres hombres que solo se salvarían a sí mismos.')
 
 CHRON_CHAPTERS["ezek14"] = dict(era="exile",
-    when="Elders of Israel sit before Ezekiel with their idols upon their heart; he is told that whoever so comes to a prophet will be answered by Jehovah himself, and that when Jehovah sends famine, beasts, sword or pestilence on a land, Noah, Daniel and Job would deliver only themselves; yet some who escape Jerusalem will come out to the exiles.",
+    when="Elders of Israel sit before Ezekiel with their idols upon their heart; he is told that whoever so comes to a prophet will be answered by Jehovah himself, and that when Jehovah sends famine, beasts, sword or pestilence on a land, Noah, Daniel and Job would deliver only themselves; yet some who escape Jerusalem will come out to those who hear him.",
     clock="The chapter gives no date.")
 
 CHAPTER_ART["ezek14"] = [dict(
