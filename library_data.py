@@ -63959,3 +63959,39 @@ CHAPTER_ART["ezek13"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1914.825",
 )]
+
+
+# ======================================================================== Ezekiel 14 (both languages)
+_dict155_en('gillulim', add=' &#11088; <a href="ezekiel-14.html#v14-3">Ezekiel 14:3&ndash;7</a> (now on these pages): elders bring up their idols upon their heart.')
+_dict155_es('gillulim', add=' &#11088; <a href="ezekiel-14.es.html#v14-3">Ezequiel 14:3&ndash;7</a> (ya en estas páginas): unos ancianos hacen subir sus ídolos sobre su corazón.')
+_dict155_en('patah', add=' &#11088; <a href="ezekiel-14.html#v14-9">Ezekiel 14:9</a> (now on these pages): Jehovah says he has enticed the prophet who is enticed.')
+_dict155_es('patah', add=' &#11088; <a href="ezekiel-14.es.html#v14-9">Ezequiel 14:9</a> (ya en estas páginas): Jehová dice que él sedujo al profeta seducido.')
+_dict155_en('matteh', add=' &#11088; <a href="ezekiel-14.html#v14-13">Ezekiel 14:13</a> (now on these pages): the staff of bread broken in a land that trespasses.')
+_dict155_es('matteh', add=' &#11088; <a href="ezekiel-14.es.html#v14-13">Ezequiel 14:13</a> (ya en estas páginas): el sustento del pan quebrado en una tierra que transgrede.')
+_dict155_en('peletah', add=' &#11088; <a href="ezekiel-14.html#v14-22">Ezekiel 14:22</a> (now on these pages): some who escape are brought out of Jerusalem.')
+_ency155_en('noah', add=' &#11088; <a href="ezekiel-14.html#v14-14">Ezekiel 14:14 and 20</a> (now on these pages) name him with Daniel and Job.')
+_enc_l4_es('noah', ' &#11088; <a href="ezekiel-14.es.html#v14-14">Ezequiel 14:14 y 20</a> (ya en estas páginas) lo nombran con Daniel y Job.')
+_ency155_en('job-person', add=' &#11088; <a href="ezekiel-14.html#v14-14">Ezekiel 14</a> is now on these pages.')
+_enc_l4_es('job-person', ' &#11088; <a href="ezekiel-14.es.html#v14-14">Ezequiel 14</a> ya está en estas páginas.')
+_ency155_en('daniel', add=' &#11088; <a href="ezekiel-14.html#v14-14">Ezekiel 14:14 and 20</a> (now on these pages) name a Daniel with Noah and Job; the text writes the name there without its <em>yod</em>.')
+_enc_l4_es('daniel', ' &#11088; <a href="ezekiel-14.es.html#v14-14">Ezequiel 14:14 y 20</a> (ya en estas páginas) nombran a un Daniel con Noé y Job; allí el texto escribe el nombre sin su <em>yod</em>.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-14.html">Ezekiel 14</a> (now on these pages): elders with idols upon their heart come to him, and he names three men who could save only themselves.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-14.es.html">Ezequiel 14</a> (ya en estas páginas): unos ancianos con ídolos sobre su corazón vienen a él, y nombra a tres hombres que solo se salvarían a sí mismos.')
+
+CHRON_CHAPTERS["ezek14"] = dict(era="exile",
+    when="Elders of Israel sit before Ezekiel with their idols upon their heart; he is told that whoever so comes to a prophet will be answered by Jehovah himself, and that when Jehovah sends famine, beasts, sword or pestilence on a land, Noah, Daniel and Job would deliver only themselves; yet some who escape Jerusalem will come out to the exiles.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek14"] = [dict(
+    file="blake-job-1-thus-did-job-continually.jpg",
+    title="The Book of Job, plate 1: Thus did Job continually",
+    title_es="El libro de Job, lámina 1: «Thus did Job continually» (así hacía Job continuamente)",
+    artist="William Blake", artist_es="William Blake",
+    year="1825", location="Cleveland Museum of Art, 1963.303.2", location_es="Museo de Arte de Cleveland, 1963.303.2",
+    alt="An engraving of a bearded man and a woman seated under a tree with open books, kneeling young men and women around them and sheep lying in front.",
+    alt_es="Un grabado de un hombre barbado y una mujer sentados bajo un árbol con libros abiertos, jóvenes arrodillados alrededor y ovejas echadas delante.",
+    note="Blake's plate for the opening of the book of Job: Job with his family. Job is one of the three men named in verses 14 and 20, who could not have saved a son or daughter. The plate was made for Job's book, not for this chapter.",
+    note_es="La lámina de Blake para el comienzo del libro de Job: Job con su familia. Job es uno de los tres hombres nombrados en los versículos 14 y 20, que no habrían salvado hijo ni hija. La lámina se hizo para el libro de Job, no para este capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1963.303.2",
+)]
