@@ -63891,8 +63891,8 @@ CHAPTER_ART["ezek11"] = [dict(
     year="1839", location="Cleveland Museum of Art, 1927.110", location_es="Museo de Arte de Cleveland, 1927.110",
     alt="A lithograph of a tall stone monument with a pointed top in a rocky valley, with small figures in the foreground and a bare hill behind.",
     alt_es="Una litografía de un alto monumento de piedra con remate puntiagudo en un valle rocoso, con figuras pequeñas en primer plano y una colina desnuda detrás.",
-    note="Roberts shows the valley on Jerusalem's east side and the high ground there. The monument is much later than Ezekiel, and verse 23 names no mountain.",
-    note_es="Roberts muestra el valle del lado oriental de Jerusalén y las alturas de allí. El monumento es muy posterior a Ezequiel, y el versículo 23 no nombra ningún monte.",
+    note="A lithograph titled with the Valley of Jehoshaphat, near Jerusalem. Verse 23 names no mountain, and the picture is not offered as the place it means.",
+    note_es="Una litografía titulada con el valle de Josafat, junto a Jerusalén. El versículo 23 no nombra ningún monte, y la imagen no se ofrece como el lugar al que se refiere.",
     license="CC0",
     source_url="https://clevelandart.org/art/1927.110",
 )]
