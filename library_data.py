@@ -63569,3 +63569,36 @@ CHAPTER_ART["ezek2"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Ezekiel_01.jpg",
 )]
+
+
+# ======================================================================== Ezekiel 3 (both languages)
+DICTIONARY.append(('tsofeh', 'tsofeh (watchman)', 'צֹפֶה', 'tsofeh',
+    'WATCHMAN, lookout &mdash; one posted to see from a height and call out. David&rsquo;s watchman goes up to the roof over the gate (<a href="2-samuel-18.html#v18-24">2 Samuel 18:24</a>), and Habakkuk says he will stand at his watch (<a href="habakkuk-2.html#v1">Habakkuk 2:1</a>, both now on these pages). Ezekiel is made one: <span data-heb="צפה נתתיך">&lsquo;I have made you a watchman&rsquo; stands in two verses of the Hebrew Bible</span>, <a href="ezekiel-3.html#v3-17">Ezekiel 3:17</a> (now on these pages) and 33:7 (not yet on these pages).',
+    ('Ezekiel', 3, 17)))
+DICTIONARY_ES["tsofeh"] = ("tsofeh",
+    'ATALAYA, centinela &mdash; el que está puesto para ver desde lo alto y dar voces. El atalaya de David sube al techo sobre la puerta (<a href="2-samuel-18.es.html#v18-24">2 Samuel 18:24</a>), y Habacuc dice que estará en su puesto (<a href="habakkuk-2.es.html#v1">Habacuc 2:1</a>, ambos ya en estas páginas). A Ezequiel se le pone como tal: <span data-heb="צפה נתתיך">«Te he puesto por atalaya» está en dos versículos de la Biblia hebrea</span>, <a href="ezekiel-3.es.html#v3-17">Ezequiel 3:17</a> (ya en estas páginas) y 33:7 (todavía no en estas páginas).')
+_dict155_en('chazaq', add=' &#11088; <a href="ezekiel-3.html#v3-8">Ezekiel 3:8&ndash;9</a> (now on these pages) turns the root on the prophet&rsquo;s own face and forehead, &lsquo;strong against their faces&rsquo;; the name <em>Yechezqel</em> is built on it.')
+_dict155_es('chazaq', add=' &#11088; <a href="ezekiel-3.es.html#v3-8">Ezequiel 3:8&ndash;9</a> (ya en estas páginas) vuelve la raíz sobre el rostro y la frente del profeta, «fuerte frente a sus rostros»; el nombre <em>Yejezqel</em> está hecho sobre ella.')
+_dict155_en('shamir', add=' &#11088; <a href="ezekiel-3.html#v3-9">Ezekiel 3:9</a> (now on these pages): Jehovah makes the prophet&rsquo;s forehead like <em>shamir</em>, harder than flint.')
+_dict155_es('shamir', add=' &#11088; <a href="ezekiel-3.es.html#v3-9">Ezequiel 3:9</a> (ya en estas páginas): Jehová hace la frente del profeta como <em>shamir</em>, más dura que el pedernal.')
+_dict155_en('golah', add=' &#11088; <a href="ezekiel-3.html#v3-11">Ezekiel 3:11</a> and <a href="ezekiel-3.html#v3-15">3:15</a> (now on these pages) send the prophet to the <em>golah</em> and set him down among them at Tel-abib.')
+_dict155_es('golah', add=' &#11088; <a href="ezekiel-3.es.html#v3-11">Ezequiel 3:11</a> y <a href="ezekiel-3.es.html#v3-15">3:15</a> (ya en estas páginas) envían al profeta a la <em>golah</em> y lo ponen entre ellos en Tel-abib.')
+_dict155_en('biqah', add=' &#11088; <a href="ezekiel-3.html#v3-22">Ezekiel 3:22&ndash;23</a> (now on these pages): the prophet goes out to the valley and finds the glory standing there.')
+_dict155_es('biqah', add=' &#11088; <a href="ezekiel-3.es.html#v3-22">Ezequiel 3:22&ndash;23</a> (ya en estas páginas): el profeta sale al valle y halla la gloria de pie allí.')
+_dict155_en('aviv', add=' &#11088; It is half of a place name: <a href="ezekiel-3.html#v3-15">Tel-abib</a> (now on these pages), a mound of green ears, which the <span class="tag t-drb">Douay</span> translates as &lsquo;the heap of new corn&rsquo;.')
+_dict155_es('aviv', add=' &#11088; Es la mitad de un nombre de lugar: <a href="ezekiel-3.es.html#v3-15">Tel-abib</a> (ya en estas páginas), un montículo de espigas verdes, que la Douay, en inglés, traduce «the heap of new corn».')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-3.html">Ezekiel 3</a> (now on these pages): he eats the scroll, is carried to Tel-abib, is made a watchman for the house of Israel, and is shut in his house and struck mute.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-3.es.html">Ezequiel 3</a> (ya en estas páginas): come el rollo, es llevado a Tel-abib, es puesto como atalaya de la casa de Israel, y es encerrado en su casa y enmudecido.')
+ENCYCLOPEDIA.append(dict(slug="tel-abib", name="Tel-abib", kind="place", aliases=["Tel-abib"],
+    coords=(32.13, 45.19, 1.2), approx=True, modern="Site unknown; a settlement of Judean exiles by the Chebar canal, in the Nippur district of southern Mesopotamia",
+    desc="The settlement of Judean exiles by the river CHEBAR where Ezekiel came and sat for seven days (<a href=\"ezekiel-3.html#v3-15\">Ezekiel 3:15</a>, now on these pages). The name is <em>tel</em>, a mound, and <em>aviv</em>, the green ear of grain; the Douay translates it as &lsquo;the heap of new corn&rsquo;. Its site has not been identified; the map pin is only the Chebar district.",
+    refs=[("Ezekiel", 3, 15)], videos=[]))
+ENCYCLOPEDIA_ES["tel-abib"] = ("Tel-abib",
+    "El asentamiento de desterrados de Judá junto al río QUEBAR donde Ezequiel llegó y se sentó siete días (<a href=\"ezekiel-3.es.html#v3-15\">Ezequiel 3:15</a>, ya en estas páginas). El nombre es <em>tel</em>, montículo, y <em>aviv</em>, la espiga verde; la Douay, en inglés, lo traduce «the heap of new corn». No se ha identificado su sitio; la marca del mapa es solo la comarca del Quebar.")
+
+CHRON_CHAPTERS["ezek3"] = dict(era="exile",
+    when="Ezekiel eats the scroll, is strengthened against a house that will not listen, and is carried to Tel-abib, where he sits seven days stunned. He is made a watchman, goes out to the valley where the glory stands, and is shut up in his house, bound and mute until Jehovah speaks.",
+    clock="Follows chapters 1 and 2 in the fifth year of King Jehoiachin&rsquo;s exile (1:2). The seven days of verse 15 and 16 are the only dating within the chapter.")
+
+# PROVISIONAL (Ezekiel 3): waiting on Michael's decision about art; do not merge until he answers.
+ART_SKIPPED["ezek3"] = ("Searched Wikimedia Commons on 2026-11-25 for Ezekiel eating the scroll, the watchman, Tel-abib and other plates; the only usable pieces found are already on these pages (Dor&eacute;'s Ezekiel Prophesying on Ezekiel 36, Michelangelo's Ezekiel on Ezekiel 2, D&uuml;rer's John Devouring the Book on Revelation 10). No image is recorded here yet.")
