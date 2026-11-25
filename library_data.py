@@ -63729,8 +63729,8 @@ CHAPTER_ART["ezek6"] = [dict(
     year="2008", location="Tel Megiddo", location_es="Tel Meguido",
     alt="A large round platform of piled stones among low excavated walls, below an earth cliff, with palm trees behind.",
     alt_es="Una gran plataforma redonda de piedras apiladas entre muros bajos excavados, bajo un corte de tierra, con palmeras al fondo.",
-    note="An open-air altar of the kind of site the Bible calls a high place. It is Canaanite and far older than Ezekiel: the platform is usually dated to the Early Bronze Age, so it is not one of the altars this chapter speaks to.",
-    note_es="Un altar al aire libre, del tipo de lugar que la Biblia llama lugar alto. Es cananeo y mucho más antiguo que Ezequiel: la plataforma suele fecharse en la Edad del Bronce Antiguo, así que no es uno de los altares a los que habla este capítulo.",
+    note="An open-air altar of the kind of site the Bible calls a high place. It stands in what the photographer calls a Canaanite temple, so it is not offered as one of the altars this chapter speaks to.",
+    note_es="Un altar al aire libre, del tipo de lugar que la Biblia llama lugar alto. Está en lo que el fotógrafo llama un templo cananeo, así que no se ofrece como uno de los altares a los que habla este capítulo.",
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Rounded_altar_in_megiddo_temple.jpg",
 )]
