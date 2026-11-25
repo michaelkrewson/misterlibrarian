@@ -63649,7 +63649,7 @@ CHAPTER_ART["ezek4"] = [dict(
     file="assyrian-attack-on-a-town.jpg",
     title="Assyrian Attack on a Town", title_es="Ataque asirio a una ciudad",
     artist="Assyrian sculptor, name unknown", artist_es="Escultor asirio de nombre desconocido",
-    year="865–860",
+    year="865–860 BC",
     location="Relief from the North-West Palace at Nimrud, British Museum (photograph: Capillon)", location_es="Relieve del Palacio Noroeste de Nimrud, Museo Británico (fotografía: Capillon)",
     alt="A carved stone relief. At the left a wheeled siege engine covered in woven panels drives a long battering ram into the wall of a fortified town, where stones are falling from a broken tower. Archers shoot from a tower on the engine and from the town walls, which have crenellated tops and an arched gate.",
     alt_es="Un relieve tallado en piedra. A la izquierda, una máquina de sitio con ruedas, cubierta de paneles trenzados, clava un largo ariete en el muro de una ciudad fortificada, donde caen piedras de una torre rota. Arqueros disparan desde una torre de la máquina y desde las murallas, que tienen almenas y una puerta en arco.",
@@ -63677,5 +63677,16 @@ CHRON_CHAPTERS["ezek5"] = dict(era="exile",
     when="The hair: Ezekiel shaves with a sword, divides the hair into thirds to be burned, struck and scattered, ties a few in his garment and throws some of those into the fire. Then the judgment is spoken: Jerusalem, set in the middle of the nations, has done worse than they; fathers will eat sons and sons fathers; and famine, beasts, pestilence and sword are sent.",
     clock="Follows chapter 4 in the early years of the exile of King Jehoiachin. The chapter gives no date.")
 
-# PROVISIONAL (Ezekiel 5): waiting on Michael's decision about art; do not merge until he answers.
-ART_SKIPPED["ezek5"] = ("Searched Wikimedia Commons on 2026-11-25 for Ezekiel shaving with a sword, cutting and weighing his hair, and ancient balance scales; nothing fitting was found. The pieces already on these pages that touch the chapter are Doré's Ezekiel Prophesying (Ezekiel 36), Michelangelo's Ezekiel (Ezekiel 2) and Doré's Famine in Samaria (2 Kings 7 and Lamentations 4). No image is recorded here yet.")
+CHAPTER_ART["ezek5"] = [dict(
+    file="bunting-clover-leaf-map-1581.jpg",
+    title="The Whole World in a Clover Leaf", title_es="El mundo entero en una hoja de trébol",
+    artist="Heinrich Bünting", artist_es="Heinrich Bünting",
+    year="1581",
+    location="Woodcut map printed in Magdeburg", location_es="Mapa xilográfico impreso en Magdeburgo",
+    alt="A colored woodcut map in the shape of a clover leaf on a wavy sea. Three leaves are labeled Europe in red, Asia in green and Africa in yellow, with little drawings of towns, and they meet at a round center showing a walled city labeled Jerusalem. England and Scandinavia are small shapes above, America is in the lower left corner, and a ship and sea creatures swim around.",
+    alt_es="Un mapa xilográfico coloreado en forma de hoja de trébol sobre un mar ondulado. Tres hojas llevan los nombres de Europa en rojo, Asia en verde y África en amarillo, con pequeños dibujos de ciudades, y se unen en un centro redondo con una ciudad amurallada rotulada Jerusalén. Inglaterra y Escandinavia son pequeñas formas arriba, América está en la esquina inferior izquierda, y un barco y criaturas marinas nadan alrededor.",
+    note="Not drawn from Ezekiel. The map puts Jerusalem at the center of the continents, which pictures the words of <a href=\"ezekiel-5.html#v5-5\">Ezekiel 5:5</a>, &lsquo;I have set her in the middle of the nations&rsquo;. The verse says it of her place among the nations around her.",
+    note_es="No está tomado de Ezequiel. El mapa pone a Jerusalén en el centro de los continentes, lo que pinta las palabras de <a href=\"ezekiel-5.es.html#v5-5\">Ezequiel 5:5</a>, «la he puesto en medio de las naciones». El versículo lo dice de su lugar entre las naciones que la rodean.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:1581_Bunting_clover_leaf_map.jpg",
+)]
