@@ -63409,3 +63409,30 @@ CHAPTER_ART["isa60"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Seaport_with_the_Embarkation_of_the_Queen_of_Sheba_-_WGA05002.jpg",
 )]
+
+
+# --- Isaiah 49 ---
+assert not any(_d[0] == "chaqah" for _d in DICTIONARY)
+DICTIONARY.append(("chaqah", "chaqah", "חָקַק", "chaqah",
+    "TO ENGRAVE, TO CUT INTO — the verb is for marks that are cut and not written. At <a href=\"isaiah-49.html#v49-16\">Isaiah 49:16</a> the thing cut is a city: <em>hen al-kappayim chaqotikh</em>, &lsquo;Look, on the palms I have engraved you&rsquo;, and the next line says what is cut, &lsquo;your walls are before me continually&rsquo;. &#9888; The <span class=\"tag t-tlb\">TLB</span> has &lsquo;I have tattooed your name upon my palm&rsquo;, which gives the line a name and a tattoo that the Hebrew does not mention: the object of the verb is Zion herself. Ezekiel is told to take a brick and to cut a city into it, &lsquo;and engrave on it a city, Jerusalem&rsquo; (Ezekiel 4:1, not yet on these pages), the same verb in the same shape for the same city.",
+    ("Isaiah", 49, 16)))
+DICTIONARY_ES["chaqah"] = ("chaqah",
+    "GRABAR, CORTAR EN — el verbo es para marcas que se cortan y no se escriben. En <a href=\"isaiah-49.es.html#v49-16\">Isaías 49:16</a> lo cortado es una ciudad: <em>hen al-kappayim chaqotikh</em>, «Mira, en las palmas te he grabado», y la línea siguiente dice qué se corta, «tus muros están delante de mí de continuo». &#9888; Ninguna de las versiones españolas de la estantería dice «tatuado»; una paráfrasis inglesa, la <span class=\"tag t-tlb\">TLB</span>, sí lo dice («I have tattooed your name upon my palm»), y así da a la línea un nombre y un tatuaje que el hebreo no menciona: el objeto del verbo es Sión misma. A Ezequiel se le manda tomar un ladrillo y cortar en él una ciudad, «y grabarás sobre él una ciudad, Jerusalén» (Ezequiel 4:1, todavía no en estas páginas), el mismo verbo en la misma forma para la misma ciudad.")
+
+CHRON_CHAPTERS["isa49"] = dict(era="exile",
+    when="&ldquo;Listen to me, you islands&rdquo;: the servant who was called from the womb, hidden like an arrow in a quiver, named Israel and sent to Israel, and told that the task is too light, so he is made a light of nations. A time of favor, prisoners told to come out, a road made of mountains; Zion says she is forsaken, a nursing mother cannot forget, and the barren city is too cramped for the children who come back.",
+    clock="Undated in the chapter itself, and filed with the exile and return because it speaks to a Zion with no children and a gathering still to come. The chapter names no king, year or event. &#9888; Isaiah 53, with the same servant, and Isaiah 54, with the same barren woman, are on these pages beside it.")
+
+CHAPTER_ART["isa49"] = [dict(
+    file="dore-the-prophet-isaiah.jpg",
+    title="The Prophet Isaiah", title_es="El profeta Isaías",
+    artist="Gustave Dor&eacute; (French, 1832&ndash;1883)", artist_es="Gustave Doré (francés, 1832&ndash;1883)",
+    year="19th century",
+    location="Wood engraving, via Commons", location_es="Grabado en madera, vía Commons",
+    alt="A black-and-white engraving of a bearded man in a hooded robe kneeling on a flat rock at dawn, his head bowed and his hands resting in front of him. Behind him a wide, shallow river or lake catches the light under a cloudy sky, with low hills in the distance. Spiky plants grow in the foreground and at the right edge.",
+    alt_es="Un grabado en blanco y negro de un hombre barbudo con túnica con capucha, arrodillado sobre una roca plana al amanecer, con la cabeza inclinada y las manos descansando delante de él. Detrás, un río o lago ancho y poco profundo capta la luz bajo un cielo nublado, con colinas bajas a lo lejos. Plantas espinosas crecen en primer plano y en el borde derecho.",
+    note="Isaiah 49:1&ndash;26. The same plate stands on <a href=\"isaiah-55.html\">Isaiah 55</a>: Dor&eacute;&rsquo;s portrait of the prophet is general and not drawn from this chapter, and no other fitting image was found. It is used here for a listener bowed at first light, since the chapter opens &lsquo;Listen to me, you islands&rsquo; (verse 1) and names a &lsquo;light of nations&rsquo; (verse 6).",
+    note_es="Isaías 49:1–26. La misma lámina está en <a href=\"isaiah-55.es.html\">Isaías 55</a>: el retrato del profeta de Doré es general y no está tomado de este capítulo, y no se halló otra imagen adecuada. Se usa aquí por un oyente inclinado a la primera luz, pues el capítulo empieza «Escúchenme, islas» (versículo 1) y nombra una «luz de las naciones» (versículo 6).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:120.The_Prophet_Isaiah.jpg",
+)]
