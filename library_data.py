@@ -63865,3 +63865,34 @@ CHAPTER_ART["ezek10"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1968.46",
 )]
+
+
+# ======================================================================== Ezekiel 11 (both languages)
+_dict155_en('lev', add=' &#11088; <a href="ezekiel-11.html#v11-19">Ezekiel 11:19</a> (now on these pages): one heart, and a heart of flesh for the heart of stone.')
+_dict155_es('lev', add=' &#11088; <a href="ezekiel-11.es.html#v11-19">Ezequiel 11:19</a> (ya en estas páginas): un solo corazón, y un corazón de carne en lugar del de piedra.')
+_dict155_en('miqdash', add=' &#11088; <a href="ezekiel-11.html#v11-16">Ezekiel 11:16</a> (now on these pages): &lsquo;a little sanctuary&rsquo; for the exiles.')
+_dict155_es('miqdash', add=' &#11088; <a href="ezekiel-11.es.html#v11-16">Ezequiel 11:16</a> (ya en estas páginas): «un pequeño santuario» para los desterrados.')
+_dict155_en('goel', add=' &#11088; <a href="ezekiel-11.html#v11-15">Ezekiel 11:15</a> (now on these pages) calls the exiles &lsquo;the men of your redemption&rsquo; (<em>ge&rsquo;ullah</em>).')
+_dict155_es('goel', add=' &#11088; <a href="ezekiel-11.es.html#v11-15">Ezequiel 11:15</a> (ya en estas páginas) llama a los desterrados «los hombres de tu redención» (<em>ge&rsquo;ullá</em>).')
+_dict155_en('kavod', add=' &#11088; <a href="ezekiel-11.html#v11-23">Ezekiel 11:23</a> (now on these pages): the glory leaves the city and stands on the mountain to its east.')
+_dict155_es('kavod', add=' &#11088; <a href="ezekiel-11.es.html#v11-23">Ezequiel 11:23</a> (ya en estas páginas): la gloria deja la ciudad y se pone sobre el monte a su oriente.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-11.html">Ezekiel 11</a> (now on these pages): the vision ends as the glory leaves the city, and he is brought back to tell the exiles.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-11.es.html">Ezequiel 11</a> (ya en estas páginas): la visión termina cuando la gloria deja la ciudad, y él es llevado de vuelta a contarlo a los desterrados.')
+
+CHRON_CHAPTERS["ezek11"] = dict(era="exile",
+    when="The end of the vision: at the east gate Ezekiel prophesies against twenty-five men and Pelatiah dies; he is told that the scattered exiles will be gathered and given one heart and a new spirit; the glory goes up from the city to the mountain on its east; and he is brought back to Chaldea and tells the exiles what he was shown.",
+    clock="Closes the vision that began at 8:1, dated there to the sixth year, sixth month, fifth day.")
+
+CHAPTER_ART["ezek11"] = [dict(
+    file="roberts-valley-of-jehoshaphat.jpg",
+    title="Absalom's Pillar, Valley of Jehoshaphat",
+    title_es="La columna de Absalón, valle de Josafat",
+    artist="David Roberts", artist_es="David Roberts",
+    year="1839", location="Cleveland Museum of Art, 1927.110", location_es="Museo de Arte de Cleveland, 1927.110",
+    alt="A lithograph of a tall stone monument with a pointed top in a rocky valley, with small figures in the foreground and a bare hill behind.",
+    alt_es="Una litografía de un alto monumento de piedra con remate puntiagudo en un valle rocoso, con figuras pequeñas en primer plano y una colina desnuda detrás.",
+    note="Roberts shows the valley on Jerusalem's east side and the high ground there. The monument is much later than Ezekiel, and verse 23 names no mountain.",
+    note_es="Roberts muestra el valle del lado oriental de Jerusalén y las alturas de allí. El monumento es muy posterior a Ezequiel, y el versículo 23 no nombra ningún monte.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1927.110",
+)]
