@@ -4130,7 +4130,7 @@ DICTIONARY = [
      "the false witness (<a href=\"deuteronomy-19.html#v19-21\">19:21</a>) and the woman of <a "
      "href=\"deuteronomy-25.html#v25-12\">25:12</a> — and each time it is the pity of the one who must carry the "
      "sentence out that is forbidden, not the victim's. ⚠ The head word alone is wider: Ezekiel makes it God's own "
-     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.html#v7-9\">7:9</a> and <a href=\"ezekiel-8.html#v8-18\">8:18</a>, now on these pages; 9:10 not yet), and Jonah 4:10–11 (not yet on these pages) turns "
+     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.html#v7-9\">7:9</a> and <a href=\"ezekiel-8.html#v8-18\">8:18</a>, and <a href=\"ezekiel-9.html#v9-10\">9:10</a>, all now on these pages), and Jonah 4:10–11 (not yet on these pages) turns "
      "it the other way — <em>you pitied the gourd … and should I not pity Nineveh?</em> ⚠ It is not "
      "<em>racham</em>, compassion from the womb, nor <em>chamal</em>, to spare in the sense of holding back; 13:9 "
      "has this word and <em>chamal</em> side by side. <em>Chus</em> is the softening of a gaze.",
@@ -31191,7 +31191,7 @@ DICTIONARY_ES["chus"] = ("chus / tachos",
     "19:13</a>), el testigo falso (<a href=\"deuteronomy-19.es.html#v19-21\">19:21</a>) y la mujer de <a "
     "href=\"deuteronomy-25.es.html#v25-12\">25:12</a>—, y cada vez es la compasión de quien tiene que ejecutar la "
     "sentencia la que se prohíbe, no la de la víctima. ⚠ La palabra sola es más ancha: Ezequiel la hace estribillo "
-    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.es.html#v7-9\">7:9</a> y <a href=\"ezekiel-8.es.html#v8-18\">8:18</a>, ya en estas páginas; 9:10 todavía no), y Jonás 4:10–11 (todavía no en estas "
+    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a>, <a href=\"ezekiel-7.es.html#v7-9\">7:9</a> y <a href=\"ezekiel-8.es.html#v8-18\">8:18</a>, y <a href=\"ezekiel-9.es.html#v9-10\">9:10</a>, todos ya en estas páginas), y Jonás 4:10–11 (todavía no en estas "
     "páginas) le da la vuelta —<em>tú tuviste lástima de la calabacera … ¿y no he de tenerla yo de Nínive?</em> "
     "⚠ No es <em>racham</em>, la compasión que sale de las entrañas, ni <em>chamal</em>, perdonar en el sentido "
     "de contenerse; 13:9 tiene esta palabra y <em>chamal</em> una junto a otra. <em>Chus</em> es el ablandarse de "
@@ -63801,4 +63801,37 @@ CHAPTER_ART["ezek8"] = [dict(
     note_es="Hoja derecha de un bifolio. Tiene este capítulo en latín desde el versículo 2 hasta el final; el IX en rojo y azul de la segunda columna es donde empieza el capítulo 9. En el versículo 14 el latín tiene a las mujeres llorando a Adonis.",
     license="CC0",
     source_url="https://clevelandart.org/art/1959.272",
+)]
+
+
+# ======================================================================== Ezekiel 9 (both languages)
+_dict155_en('keruv', add=' &#11088; <a href="ezekiel-9.html#v9-3">Ezekiel 9:3</a> (now on these pages): the glory goes up from the cherub to the threshold of the house.')
+_dict155_es('keruv', add=' &#11088; <a href="ezekiel-9.es.html#v9-3">Ezequiel 9:3</a> (ya en estas páginas): la gloria se eleva del querubín al umbral de la casa.')
+_dict155_en('mashchit', add=' &#11088; <a href="ezekiel-9.html#v9-6">Ezekiel 9:6</a> (now on these pages): the men with weapons are to kill &lsquo;to destruction&rsquo; (<em>lemashchit</em>), sparing whoever has the mark.')
+_dict155_es('mashchit', add=' &#11088; <a href="ezekiel-9.es.html#v9-6">Ezequiel 9:6</a> (ya en estas páginas): los hombres armados han de matar «para destrucción» (<em>lemashjit</em>), salvo a quien tenga la marca.')
+_dict155_en('damim', add=' &#11088; <a href="ezekiel-9.html#v9-9">Ezekiel 9:9</a> (now on these pages): the land is filled with blood.')
+_dict155_es('damim', add=' &#11088; <a href="ezekiel-9.es.html#v9-9">Ezequiel 9:9</a> (ya en estas páginas): la tierra está llena de sangre.')
+_dict155_en('chus', add=' &#11088; <a href="ezekiel-9.html#v9-5">Ezekiel 9:5 and 10</a> (now on these pages): first a command to the men with weapons, then God&rsquo;s own eye.')
+_dict155_es('chus', add=' &#11088; <a href="ezekiel-9.es.html#v9-5">Ezequiel 9:5 y 10</a> (ya en estas páginas): primero una orden a los hombres armados, luego el ojo de Dios.')
+_dict155_en('kavod', add=' &#11088; <a href="ezekiel-9.html#v9-3">Ezekiel 9:3</a> (now on these pages): the glory moves to the threshold of the house.')
+_dict155_es('kavod', add=' &#11088; <a href="ezekiel-9.es.html#v9-3">Ezequiel 9:3</a> (ya en estas páginas): la gloria pasa al umbral de la casa.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-9.html">Ezekiel 9</a> (now on these pages): he sees a man in linen mark foreheads in Jerusalem, and pleads for what remains of Israel.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-9.es.html">Ezequiel 9</a> (ya en estas páginas): ve a un hombre de lino marcar frentes en Jerusalén, y ruega por lo que queda de Israel.')
+
+CHRON_CHAPTERS["ezek9"] = dict(era="exile",
+    when="Within the same vision: six men with weapons and a man clothed in linen with a writer's inkhorn stand by the bronze altar; the man marks the foreheads of those who grieve over the city's abominations; the others strike, beginning at the sanctuary; Ezekiel cries out for what remains of Israel; the man in linen reports that it is done.",
+    clock="Continues the vision of chapter 8, dated there to the sixth year, sixth month, fifth day.")
+
+CHAPTER_ART["ezek9"] = [dict(
+    file="egyptian-scribes-palette.jpg",
+    title="A scribe's palette",
+    title_es="Una paleta de escriba",
+    artist="Egyptian, New Kingdom", artist_es="Egipcio, Imperio Nuevo",
+    year="1540–1186 BC", location="Cleveland Museum of Art, 1914.727", location_es="Museo de Arte de Cleveland, 1914.727",
+    alt="A long, narrow, dark wooden tablet with two small round ink wells near one end and a long recess in the middle.",
+    alt_es="Una tablilla de madera oscura, larga y estrecha, con dos pequeños pocillos redondos para tinta cerca de un extremo y un hueco alargado en el centro.",
+    note="A scribe's writing kit, of the kind the man in linen carries at his waist. It is Egyptian and older than Ezekiel; it shows what a writer's equipment could look like, not the object in the vision.",
+    note_es="El equipo de escritura de un escriba, del tipo que el hombre de lino lleva en los lomos. Es egipcio y más antiguo que Ezequiel; muestra cómo podía ser el equipo de un escriba, no el objeto de la visión.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1914.727",
 )]
