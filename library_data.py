@@ -63649,7 +63649,7 @@ CHAPTER_ART["ezek4"] = [dict(
     file="assyrian-attack-on-a-town.jpg",
     title="Assyrian Attack on a Town", title_es="Ataque asirio a una ciudad",
     artist="Assyrian sculptor, name unknown", artist_es="Escultor asirio de nombre desconocido",
-    year="865–860",
+    year="865–860 BC",
     location="Relief from the North-West Palace at Nimrud, British Museum (photograph: Capillon)", location_es="Relieve del Palacio Noroeste de Nimrud, Museo Británico (fotografía: Capillon)",
     alt="A carved stone relief. At the left a wheeled siege engine covered in woven panels drives a long battering ram into the wall of a fortified town, where stones are falling from a broken tower. Archers shoot from a tower on the engine and from the town walls, which have crenellated tops and an arched gate.",
     alt_es="Un relieve tallado en piedra. A la izquierda, una máquina de sitio con ruedas, cubierta de paneles trenzados, clava un largo ariete en el muro de una ciudad fortificada, donde caen piedras de una torre rota. Arqueros disparan desde una torre de la máquina y desde las murallas, que tienen almenas y una puerta en arco.",
@@ -63657,4 +63657,36 @@ CHAPTER_ART["ezek4"] = [dict(
     note_es="No es una imagen de Jerusalén ni del ejército de Babilonia: es un sitio asirio tallado hacia 865–860 a. C. Muestra lo que nombra <a href=\"ezekiel-4.es.html#v4-2\">Ezequiel 4:2</a>, arietes puestos contra una ciudad amurallada, desde el lado de los sitiadores.",
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Assyrian_Attack_on_a_Town.jpg",
+)]
+
+
+# ======================================================================== Ezekiel 5 (both languages)
+DICTIONARY.append(('taar', 'ta&rsquo;ar (razor)', 'תַּעַר', 'ta\'ar',
+    'A RAZOR &mdash; and also the sheath of a sword, as at Ezekiel 21:8 (not yet on these pages). Ezekiel is told to take a sharp sword as a barber&rsquo;s razor and shave his head and beard (<a href="ezekiel-5.html#v5-1">Ezekiel 5:1</a>, now on these pages). <span data-heb="תער הגלבים">&lsquo;A barber&rsquo;s razor&rsquo; stands in this one verse</span>. A Nazirite&rsquo;s head is not to be touched by a razor (<a href="numbers-6.html#v6-5">Numbers 6:5</a>, now on these pages), and Isaiah pictures Jehovah shaving with a hired one (<a href="isaiah-7.html#v7-20">Isaiah 7:20</a>, now on these pages).',
+    ('Ezekiel', 5, 1)))
+DICTIONARY_ES["taar"] = ("ta'ar",
+    'UNA NAVAJA &mdash; y también la vaina de una espada, como en Ezequiel 21:8 (todavía no en estas páginas). A Ezequiel se le manda tomar una espada afilada como navaja de barbero y afeitarse cabeza y barba (<a href="ezekiel-5.es.html#v5-1">Ezequiel 5:1</a>, ya en estas páginas). <span data-heb="תער הגלבים">«Navaja de barbero» está en este único versículo</span>. La cabeza del nazareo no ha de tocarla navaja (<a href="numbers-6.es.html#v6-5">Números 6:5</a>, ya en estas páginas), e Isaías pinta a Jehová afeitando con una alquilada (<a href="isaiah-7.es.html#v7-20">Isaías 7:20</a>, ya en estas páginas).')
+_dict155_en('kanaf', add=' &#11088; <a href="ezekiel-5.html#v5-3">Ezekiel 5:3</a> (now on these pages): a few hairs are tied in the skirts of the prophet&rsquo;s garment.')
+_dict155_es('kanaf', add=' &#11088; <a href="ezekiel-5.es.html#v5-3">Ezequiel 5:3</a> (ya en estas páginas): unos pocos cabellos se atan en las faldas del manto del profeta.')
+_dict155_en('chets', add=' &#11088; <a href="ezekiel-5.html#v5-16">Ezekiel 5:16</a> (now on these pages) has <em>chitstsei ha-ra&rsquo;av</em>, &lsquo;the arrows of famine&rsquo;.')
+_dict155_es('chets', add=' &#11088; <a href="ezekiel-5.es.html#v5-16">Ezequiel 5:16</a> (ya en estas páginas) tiene <em>chitstsei ha-ra&rsquo;av</em>, «las flechas del hambre».')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-5.html">Ezekiel 5</a> (now on these pages): he shaves his head and beard with a sword, divides the hair into thirds, and the judgment on Jerusalem is spelled out.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-5.es.html">Ezequiel 5</a> (ya en estas páginas): se afeita cabeza y barba con una espada, divide el cabello en tercios, y se declara el juicio sobre Jerusalén.')
+
+CHRON_CHAPTERS["ezek5"] = dict(era="exile",
+    when="The hair: Ezekiel shaves with a sword, divides the hair into thirds to be burned, struck and scattered, ties a few in his garment and throws some of those into the fire. Then the judgment is spoken: Jerusalem, set in the middle of the nations, has done worse than they; fathers will eat sons and sons fathers; and famine, beasts, pestilence and sword are sent.",
+    clock="Follows chapter 4 in the early years of the exile of King Jehoiachin. The chapter gives no date.")
+
+CHAPTER_ART["ezek5"] = [dict(
+    file="bunting-clover-leaf-map-1581.jpg",
+    title="The Whole World in a Clover Leaf", title_es="El mundo entero en una hoja de trébol",
+    artist="Heinrich Bünting", artist_es="Heinrich Bünting",
+    year="1581",
+    location="Woodcut map printed in Magdeburg", location_es="Mapa xilográfico impreso en Magdeburgo",
+    alt="A colored woodcut map in the shape of a clover leaf on a wavy sea. Three leaves are labeled Europe in red, Asia in green and Africa in yellow, with little drawings of towns, and they meet at a round center showing a walled city labeled Jerusalem. England and Scandinavia are small shapes above, America is in the lower left corner, and a ship and sea creatures swim around.",
+    alt_es="Un mapa xilográfico coloreado en forma de hoja de trébol sobre un mar ondulado. Tres hojas llevan los nombres de Europa en rojo, Asia en verde y África en amarillo, con pequeños dibujos de ciudades, y se unen en un centro redondo con una ciudad amurallada rotulada Jerusalén. Inglaterra y Escandinavia son pequeñas formas arriba, América está en la esquina inferior izquierda, y un barco y criaturas marinas nadan alrededor.",
+    note="Not drawn from Ezekiel. The map puts Jerusalem at the center of the continents, which pictures the words of <a href=\"ezekiel-5.html#v5-5\">Ezekiel 5:5</a>, &lsquo;I have set her in the middle of the nations&rsquo;. The verse says it of her place among the nations around her.",
+    note_es="No está tomado de Ezequiel. El mapa pone a Jerusalén en el centro de los continentes, lo que pinta las palabras de <a href=\"ezekiel-5.es.html#v5-5\">Ezequiel 5:5</a>, «la he puesto en medio de las naciones». El versículo lo dice de su lugar entre las naciones que la rodean.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:1581_Bunting_clover_leaf_map.jpg",
 )]
