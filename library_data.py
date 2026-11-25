@@ -63835,3 +63835,33 @@ CHAPTER_ART["ezek9"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1914.727",
 )]
+
+
+# ======================================================================== Ezekiel 10 (both languages)
+_dict155_en('keruv', add=' &#11088; <a href="ezekiel-10.html#v10-20">Ezekiel 10:20</a> (now on these pages): the prophet knows that the living creatures of chapter 1 were cherubim.')
+_dict155_es('keruv', add=' &#11088; <a href="ezekiel-10.es.html#v10-20">Ezequiel 10:20</a> (ya en estas páginas): el profeta sabe que los seres vivientes del capítulo 1 eran querubines.')
+_dict155_en('ofan', add=' &#11088; <a href="ezekiel-10.html#v10-9">Ezekiel 10:9&ndash;13</a> (now on these pages) sees the four wheels again and also calls them <em>galgal</em>, wheelwork.')
+_dict155_en('shaddai', add=' &#11088; <a href="ezekiel-10.html#v10-5">Ezekiel 10:5</a> (now on these pages): the wings of the cherubim sound like the voice of El Shaddai.')
+_dict155_es('shaddai', add=' &#11088; <a href="ezekiel-10.es.html#v10-5">Ezequiel 10:5</a> (ya en estas páginas): las alas de los querubines suenan como la voz de El Shadday.')
+_dict155_en('kavod', add=' &#11088; <a href="ezekiel-10.html#v10-18">Ezekiel 10:18&ndash;19</a> (now on these pages): the glory leaves the threshold, and is over the cherubim at the east gate.')
+_dict155_es('kavod', add=' &#11088; <a href="ezekiel-10.es.html#v10-18">Ezequiel 10:18&ndash;19</a> (ya en estas páginas): la gloria deja el umbral y está sobre los querubines en la puerta oriental.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-10.html">Ezekiel 10</a> (now on these pages): he sees the living creatures again and knows them as cherubim, and the glory moves to the east gate.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-10.es.html">Ezequiel 10</a> (ya en estas páginas): ve de nuevo a los seres vivientes y sabe que son querubines, y la gloria pasa a la puerta oriental.')
+
+CHRON_CHAPTERS["ezek10"] = dict(era="exile",
+    when="Within the same vision: the man in linen is told to take coals of fire from among the cherubim to throw over the city; the cloud fills the house; the wheels and the four faces of chapter 1 are seen again, and the prophet knows the living creatures to be cherubim; the glory leaves the threshold and is over them at the east gate.",
+    clock="Continues the vision of chapter 8, dated there to the sixth year, sixth month, fifth day.")
+
+CHAPTER_ART["ezek10"] = [dict(
+    file="nimrud-ivory-winged-sphinx.jpg",
+    title="Ivory plaque of a winged sphinx",
+    title_es="Placa de marfil con una esfinge alada",
+    artist="Phoenician style, found at Nimrud", artist_es="Estilo fenicio, hallada en Nimrud",
+    year="900–800 BC", location="Cleveland Museum of Art, 1968.46", location_es="Museo de Arte de Cleveland, 1968.46",
+    alt="A small carved ivory figure in profile with a human head, a patterned wing and animal paws.",
+    alt_es="Una pequeña figura de marfil tallado, de perfil, con cabeza humana, un ala labrada y patas de animal.",
+    note="A composite winged creature from the ancient Near East, the world of figures the note on chapter 1 compares the cherubim to. It is not a picture of what Ezekiel saw: this one has one face.",
+    note_es="Una criatura alada compuesta del antiguo Oriente Próximo, el mundo de figuras con que la nota del capítulo 1 compara a los querubines. No es una imagen de lo que vio Ezequiel: esta tiene un solo rostro.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1968.46",
+)]
