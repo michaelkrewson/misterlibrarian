@@ -63690,3 +63690,47 @@ CHAPTER_ART["ezek5"] = [dict(
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:1581_Bunting_clover_leaf_map.jpg",
 )]
+
+
+# ======================================================================== Ezekiel 6 (both languages)
+DICTIONARY.append(('chamman', 'chamman (incense altar)', 'חַמָּן', 'chamman',
+    'AN INCENSE ALTAR, or incense stand; used in the plural, <em>chammanim</em>. Older versions read a link with the sun and print &lsquo;sun-images&rsquo; or &lsquo;images&rsquo;. It stands beside the high places in <a href="leviticus-26.html#v26-30">Leviticus 26:30</a> and <a href="ezekiel-6.html#v6-4">Ezekiel 6:4 and 6</a> (both now on these pages), the three verses with <span data-heb="חמניכם">&lsquo;your incense altars&rsquo; (<em>chammanekhem</em>), which stands in three verses</span>. Isaiah 17:8 and 27:9 and 2 Chronicles 14:4 and 34:4, 7 (none yet on these pages) also have the word.',
+    ('Leviticus', 26, 30)))
+DICTIONARY_ES["chamman"] = ("jamán (altar de incienso)",
+    'UN ALTAR DE INCIENSO, o soporte de incienso; se usa en plural, <em>jamanim</em>. Las versiones antiguas lo relacionan con el sol e imprimen «imágenes del sol». Está junto a los lugares altos en <a href="leviticus-26.es.html#v26-30">Levítico 26:30</a> y <a href="ezekiel-6.es.html#v6-4">Ezequiel 6:4 y 6</a> (ambos ya en estas páginas), los tres versículos con <span data-heb="חמניכם">«sus altares de incienso» (<em>jamanekhem</em>), que está en tres versículos</span>. También tienen la palabra Isaías 17:8 y 27:9 y 2 Crónicas 14:4 y 34:4, 7 (ninguno todavía en estas páginas).')
+_dict155_en('bamah', add=' &#11088; <a href="ezekiel-6.html#v6-3">Ezekiel 6:3 and 6</a> (now on these pages): a sword is brought on the mountains to destroy their high places.')
+_dict155_es('bamah', add=' &#11088; <a href="ezekiel-6.es.html#v6-3">Ezequiel 6:3 y 6</a> (ya en estas páginas): se trae una espada sobre los montes para destruir sus lugares altos.')
+_dict155_en('gillulim', add=' &#11088; <a href="ezekiel-6.html#v6-4">Ezekiel 6</a> (now on these pages) has the word in verses 4, 5, 6, 9 and twice in 13: the slain fall before the idols.')
+_dict155_es('gillulim', add=' &#11088; <a href="ezekiel-6.es.html#v6-4">Ezequiel 6</a> (ya en estas páginas) tiene la palabra en los versículos 4, 5, 6, 9 y dos veces en el 13: los muertos caen delante de los ídolos.')
+_dict155_en('chinnam', add=' &#11088; <a href="ezekiel-6.html#v6-10">Ezekiel 6:10</a> (now on these pages): &lsquo;not for nothing did I say that I would do this evil to them&rsquo;.')
+_dict155_es('chinnam', add=' &#11088; <a href="ezekiel-6.es.html#v6-10">Ezequiel 6:10</a> (ya en estas páginas): «no de balde dije que les haría este mal».')
+_dict155_en('dever', add=' &#11088; <a href="ezekiel-6.html#v6-11">Ezekiel 6:11&ndash;12</a> (now on these pages): sword, famine and pestilence, shared out by distance.')
+_dict155_es('dever', add=' &#11088; <a href="ezekiel-6.es.html#v6-11">Ezequiel 6:11&ndash;12</a> (ya en estas páginas): espada, hambre y pestilencia, repartidas según la distancia.')
+_dict155_en('elah', add=' &#11088; <a href="ezekiel-6.html#v6-13">Ezekiel 6:13</a> (now on these pages): offerings to idols are made under every thick terebinth.')
+_dict155_es('elah', add=' &#11088; <a href="ezekiel-6.es.html#v6-13">Ezequiel 6:13</a> (ya en estas páginas): se ofrece a los ídolos debajo de todo terebinto espeso.')
+_dict155_en('nichoach', add=' &#11088; <a href="ezekiel-6.html#v6-13">Ezekiel 6:13</a> (now on these pages) uses the same words of offerings to idols.')
+_dict155_es('nichoach', add=' &#11088; <a href="ezekiel-6.es.html#v6-13">Ezequiel 6:13</a> (ya en estas páginas) usa las mismas palabras de ofrendas a los ídolos.')
+_ency155_en('high-places', add=' &#11088; <a href="ezekiel-6.html#v6-3">Ezekiel 6</a> (now on these pages) addresses the mountains of Israel and announces that their high places will be destroyed.')
+_enc_l4_es('high-places', ' &#11088; <a href="ezekiel-6.es.html#v6-3">Ezequiel 6</a> (ya en estas páginas) habla a los montes de Israel y anuncia que sus lugares altos serán destruidos.')
+_ency155_en('riblah', add=' &#11088; <a href="ezekiel-6.html#v6-14">Ezekiel 6:14</a> (now on these pages) has &lsquo;Diblah&rsquo;; some read &lsquo;Riblah&rsquo; there, the two Hebrew letters being alike. This translation prints Diblah.')
+_enc_l4_es('riblah', ' &#11088; <a href="ezekiel-6.es.html#v6-14">Ezequiel 6:14</a> (ya en estas páginas) tiene «Diblá»; algunos leen allí «Ribla», por el parecido de las dos letras hebreas. Esta traducción imprime Diblá.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-6.html">Ezekiel 6</a> (now on these pages): he sets his face toward the mountains of Israel and prophesies the end of their high places, altars and idols.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-6.es.html">Ezequiel 6</a> (ya en estas páginas): pone su rostro hacia los montes de Israel y profetiza el fin de sus lugares altos, altares e ídolos.')
+
+CHRON_CHAPTERS["ezek6"] = dict(era="exile",
+    when="The word against the mountains: Ezekiel sets his face toward the mountains of Israel and announces a sword against their high places, altars, incense altars and idols; some will escape among the nations and remember; he is to strike his hand, stamp his foot and cry 'Alas'; sword, famine and pestilence will take those far, near and left.",
+    clock="Follows chapter 5 in the early years of the exile of King Jehoiachin. The chapter gives no date.")
+
+CHAPTER_ART["ezek6"] = [dict(
+    file="megiddo-round-altar.jpg",
+    title="A round altar in a Canaanite temple area at Megiddo",
+    title_es="Un altar redondo en una zona de templos cananeos en Meguido",
+    artist="Avishai Teicher", artist_es="Avishai Teicher",
+    year="2008", location="Tel Megiddo", location_es="Tel Meguido",
+    alt="A large round platform of piled stones among low excavated walls, below an earth cliff, with palm trees behind.",
+    alt_es="Una gran plataforma redonda de piedras apiladas entre muros bajos excavados, bajo un corte de tierra, con palmeras al fondo.",
+    note="An open-air altar of the kind of site the Bible calls a high place. It stands in what the photographer calls a Canaanite temple, so it is not offered as one of the altars this chapter speaks to.",
+    note_es="Un altar al aire libre, del tipo de lugar que la Biblia llama lugar alto. Está en lo que el fotógrafo llama un templo cananeo, así que no se ofrece como uno de los altares a los que habla este capítulo.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Rounded_altar_in_megiddo_temple.jpg",
+)]
