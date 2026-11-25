@@ -63479,5 +63479,16 @@ CHRON_CHAPTERS["lam4"] = dict(era="exile",
     when="The second single acrostic and the book's most graphic chapter after chapter 2: gold dimmed and holy stones poured out in every street, children without bread, women who boiled their own children, the anointed of Jehovah taken in a pit, and a closing turn to Edom: Zion's iniquity is finished, Edom's is still to be uncovered.",
     clock="Same setting as chapters 1 to 3, Jerusalem after the siege that ended in 586 BC, and undated within the chapter itself. Verse 20 speaks of the capture of 'the anointed of Jehovah' without naming him; the capture of Zedekiah is told at 2 Kings 25:4-7 (not yet on these pages).")
 
-# PROVISIONAL (Lamentations 4): waiting on Michael's decision about art; do not merge until he answers.
-ART_SKIPPED["lam4"] = ("Searched Wikimedia Commons on 2026-11-24 for Doré and other paintings of the fall of Jerusalem, Jeremiah lamenting, and the siege famine; the hits were book scans, and the plates already on these pages are Rembrandt's Jeremiah (Jeremiah 1), Hayez's destruction of the temple (Matthew 24) and Doré's famine in Samaria (2 Kings 7), the last of which shows the siege of 2 Kings 6:24-30 that this chapter's note on verse 10 cites. No image is recorded here yet.")
+CHAPTER_ART["lam4"] = [dict(
+    file="dore-famine-in-samaria.jpg",
+    title="The Famine in Samaria", title_es="El hambre en Samaria",
+    artist="Gustave Doré", artist_es="Gustave Doré",
+    year="1866",
+    location="Wood engraving for La Sainte Bible (Commons file 096.A)", location_es="Grabado en madera para La Sainte Bible (archivo de Commons 096.A)",
+    alt="A black-and-white engraving of a crowned king in a long embroidered robe, holding a scepter and standing on stone steps with spearmen and officers behind him. At his feet a woman in a head-cloth kneels and reaches up toward him with both hands, and starving or dead people lie in heaps around the steps.",
+    alt_es="Un grabado en blanco y negro de un rey coronado con una larga túnica bordada, que sostiene un cetro y está de pie sobre unos escalones de piedra con lanceros y oficiales detrás. A sus pies una mujer con un paño en la cabeza se arrodilla y alza ambas manos hacia él, y personas hambrientas o muertas yacen amontonadas alrededor de los escalones.",
+    note="Not drawn from Lamentations. The plate shows the siege of Samaria in <a href=\"2-kings-6.html#v6-26\">2 Kings 6:26&ndash;30</a>, the passage this chapter&rsquo;s note on verse 10 cites for the women who boiled their children (<a href=\"lamentations-4.html#v10\">Lamentations 4:10</a>). The same plate also stands on <a href=\"2-kings-7.html\">2 Kings 7</a>; no other fitting image was found.",
+    note_es="No está tomada de Lamentaciones. La lámina muestra el asedio de Samaria de <a href=\"2-kings-6.es.html#v6-26\">2 Reyes 6:26–30</a>, el pasaje que la nota de este capítulo sobre el versículo 10 cita para las mujeres que cocieron a sus hijos (<a href=\"lamentations-4.es.html#v10\">Lamentaciones 4:10</a>). La misma lámina está también en <a href=\"2-kings-7.es.html\">2 Reyes 7</a>; no se halló otra imagen adecuada.",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:096.A_Famine_in_Samaria.jpg",
+)]
