@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24 17:23 UTC",
+ "generated": "2026-11-25 02:09 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-11-24",
@@ -41,20 +41,20 @@
     "area": "United States",
     "flag": "🇺🇸",
     "currency": "USD",
-    "m0": 5449.8,
+    "m0": 5460.2,
     "m0_label": "Monetary base",
-    "m0_date": "2026-09-01",
-    "m1": 20061.2,
-    "m1_date": "2026-09-01",
-    "m2": 23413.9,
-    "m2_date": "2026-09-01",
+    "m0_date": "2026-10-01",
+    "m1": 20166.9,
+    "m1_date": "2026-10-01",
+    "m2": 23532.8,
+    "m2_date": "2026-10-01",
     "m3": null,
-    "usd_m0": 5449.8,
-    "usd_m1": 20061.2,
-    "usd_m2": 23413.9,
+    "usd_m0": 5460.2,
+    "usd_m1": 20166.9,
+    "usd_m2": 23532.8,
     "usd_m3": null,
-    "broad_usd": 23413.9,
-    "broad_yoy_pct": 5.709912773373316,
+    "broad_usd": 23532.8,
+    "broad_yoy_pct": 5.893417210020213,
     "volatility_pct": null,
     "turnover_usd": 8563200000000.0,
     "source": "Federal Reserve H.6 (via FRED, billions of dollars)"
@@ -78,7 +78,7 @@
     "usd_m3": 19415.986600166096,
     "broad_usd": 19415.986600166096,
     "broad_yoy_pct": 4.317779939903388,
-    "volatility_pct": 5.540839588082546,
+    "volatility_pct": 5.52195239500129,
     "turnover_usd": 2774400000000.0,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
    },
@@ -101,7 +101,7 @@
     "usd_m3": 2879.1121658407205,
     "broad_usd": 2879.1121658407205,
     "broad_yoy_pct": 4.815261660556325,
-    "volatility_pct": 4.337246286804863,
+    "volatility_pct": 4.330207189717847,
     "turnover_usd": 556800000000.0
    },
    {
@@ -123,7 +123,7 @@
     "usd_m3": 1491.0140394441526,
     "broad_usd": 1491.0140394441526,
     "broad_yoy_pct": 3.878994856507889,
-    "volatility_pct": 6.877451454257575,
+    "volatility_pct": 6.856863020050246,
     "turnover_usd": 614400000000.0
    },
    {
@@ -145,7 +145,7 @@
     "usd_m3": 2427.161862275755,
     "broad_usd": 2427.161862275755,
     "broad_yoy_pct": 9.679866615770916,
-    "volatility_pct": 15.387116518568703,
+    "volatility_pct": 15.416696815336994,
     "turnover_usd": 86400000000.00002
    },
    {
@@ -167,7 +167,7 @@
     "usd_m3": 4336.142400586787,
     "broad_usd": 4336.142400586787,
     "broad_yoy_pct": 3.653174195649189,
-    "volatility_pct": 6.028533438712587,
+    "volatility_pct": 6.022953419004972,
     "turnover_usd": 979199999999.9999
    },
    {
@@ -189,7 +189,7 @@
     "usd_m3": 372.9209558823529,
     "broad_usd": 372.9209558823529,
     "broad_yoy_pct": 7.158175338761019,
-    "volatility_pct": 8.205469357186448,
+    "volatility_pct": 8.203504949362138,
     "turnover_usd": 124800000000.00002
    },
    {
@@ -211,7 +211,7 @@
     "usd_m3": null,
     "broad_usd": 53343.836746942754,
     "broad_yoy_pct": null,
-    "volatility_pct": 2.07989316559972,
+    "volatility_pct": 2.0826418681882988,
     "turnover_usd": 816000000000.0
    },
    {
@@ -233,7 +233,7 @@
     "usd_m3": 3634.1386138613857,
     "broad_usd": 3634.1386138613857,
     "broad_yoy_pct": null,
-    "volatility_pct": 5.372111184740151,
+    "volatility_pct": 5.378224374590549,
     "turnover_usd": 182400000000.0
    },
    {
@@ -255,7 +255,7 @@
     "usd_m3": 10266.920223800842,
     "broad_usd": 10266.920223800842,
     "broad_yoy_pct": 0.9072675878671221,
-    "volatility_pct": 7.603900847444218,
+    "volatility_pct": 7.561677839698458,
     "turnover_usd": 1612800000000.0
    },
    {
@@ -277,7 +277,7 @@
     "usd_m3": 2323.836089526466,
     "broad_usd": 2323.836089526466,
     "broad_yoy_pct": 6.020664788049568,
-    "volatility_pct": 7.898939661269896,
+    "volatility_pct": 7.91279018002915,
     "turnover_usd": 585600000000.0
    },
    {
@@ -299,7 +299,7 @@
     "usd_m3": 316.18369562028806,
     "broad_usd": 316.18369562028806,
     "broad_yoy_pct": 8.091157756945112,
-    "volatility_pct": 5.540015859397047,
+    "volatility_pct": 5.521134711368551,
     "turnover_usd": 67199999999.99999
    },
    {
@@ -321,7 +321,7 @@
     "usd_m3": 509.42590837591473,
     "broad_usd": 509.42590837591473,
     "broad_yoy_pct": null,
-    "volatility_pct": 9.27012982686542,
+    "volatility_pct": 9.266637613839238,
     "turnover_usd": null
    },
    {
@@ -343,7 +343,7 @@
     "usd_m3": 713.5567098224669,
     "broad_usd": 713.5567098224669,
     "broad_yoy_pct": null,
-    "volatility_pct": 3.454672713360227,
+    "volatility_pct": 3.4508162710333066,
     "turnover_usd": null
    },
    {
@@ -365,7 +365,7 @@
     "usd_m3": 250.8425429478061,
     "broad_usd": 250.8425429478061,
     "broad_yoy_pct": null,
-    "volatility_pct": 8.38902545288538,
+    "volatility_pct": 8.40284273900761,
     "turnover_usd": null
    },
    {
@@ -464,7 +464,7 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 125694.97855509378,
+  "total_broad_usd_b": 125813.87855509379,
   "n_resolved": 15,
   "n_total": 20
  },
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 934327548592.182
+    "usd": 927581299654.382
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 385425909938.125
+    "usd": 382642968196.293
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 281688325236.4478
+    "usd": 279654413716.0389
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 279965109543.72894
+    "usd": 277943640385.8021
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 265719859817.25284
+    "usd": 263801247522.51144
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 264111525170.71515
+    "usd": 262204525747.62375
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 119476288028.50969
+    "usd": 118613617563.08339
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 101095320639.5082
+    "usd": 100365368707.22441
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 97189365069.34538
+    "usd": 96487615825.35437
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 72949464325.09967
+    "usd": 72422737646.69034
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 70307200262.93071
+    "usd": 69799551873.66061
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 66860768877.49292
+    "usd": 66378005213.18705
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 48709563580.85395
+    "usd": 48357859468.026306
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 47790515211.40388
+    "usd": 47445447025.23336
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 43999440687.42232
+    "usd": 43681745698.71244
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3079616204981.0186,
+  "total_usd": 3057380044243.823,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 3573.199951171875,
-  "price_as_of": "2026-11-24 17:22 UTC",
-  "world_market_value_usd": 24844749452390.047,
+  "price_usd_oz": 3547.39990234375,
+  "price_as_of": "2026-11-25 02:08 UTC",
+  "world_market_value_usd": 24665359617577.145,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,26 +2003,26 @@
   "world_debt_usd_b": 120669.37616820235
  },
  "bitcoin": {
-  "price_usd": 59684.0703125,
-  "market_cap_usd": 1200652878687.9395,
+  "price_usd": 59007.48828125,
+  "market_cap_usd": 1187052720056.9392,
   "btc_rank": 15,
   "volatility_pct": null,
   "turnover_usd": null,
-  "broad_yoy_pct": 0.8170407268300851,
+  "broad_yoy_pct": 0.81703349217394,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
-    "usd": 125694978555093.78,
+    "usd": 125813878555093.8,
     "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 24844749452390.047,
+    "usd": 24665359617577.145,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1200652878687.9395,
+    "usd": 1187052720056.9392,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
