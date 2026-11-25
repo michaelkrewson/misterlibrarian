@@ -183,6 +183,7 @@ ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 ACCENT = "#f7931a"
 
 SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+READBAR_JS_VER = blogkit.asset_ver(OUT, "reading-bar.js")   # the reading-progress line (2026-11-24)
 
 # The Ledger's email list (2026-09-21) — a Substack publication used ONLY as a
 # mailing list + subscribe page, not as a second place this blog gets written.
@@ -1519,6 +1520,7 @@ def build_entry_page(e, board=None, pool=()):
 <div class="wrap">
   %(chrome)s
 <script src="share.js?v=%(sharever)s" defer></script>
+<script src="reading-bar.js?v=%(barver)s" defer></script>
   %(banner)s
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
@@ -1551,7 +1553,7 @@ def build_entry_page(e, board=None, pool=()):
         # section current — the newspaper convention of telling an arriving
         # reader which neighbourhood they landed in.
         "chrome": _chrome("home"),
-        "sharever": SHARE_JS_VER,
+        "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER,
         "banner": banner,
         "date": date_line,
         "hero": _entry_hero(e),
@@ -1759,7 +1761,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        # which silently paints the thing black rather than erroring.
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "barver": READBAR_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
