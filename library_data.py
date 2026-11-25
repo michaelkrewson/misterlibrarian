@@ -63514,5 +63514,16 @@ CHRON_CHAPTERS["lam5"] = dict(era="exile",
     when="The last chapter: a prayer in the plural with no acrostic but the acrostic's twenty-two verses. The inheritance is in strangers' hands, the mothers are like widows, water and wood are bought, slaves rule, women are humbled, princes hanged and elders unhonored, the dance has turned to mourning and foxes walk on Mount Zion; then 'You, Jehovah, sit forever; bring us back', and a last verse that ends on 'unless you have utterly rejected us'.",
     clock="Same setting as chapters 1 to 4, Jerusalem after the siege that ended in 586 BC, and undated within the chapter itself. The chapter speaks of famine, forced labor and foreign rule, and names Egypt and Assyria without a date.")
 
-# PROVISIONAL (Lamentations 5): waiting on Michael's decision about art; do not merge until he answers.
-ART_SKIPPED["lam5"] = ("Searched Wikimedia Commons on 2026-11-25 for paintings of Jeremiah lamenting, Jerusalem in ruins and Doré plates of the destruction; the hits were Rembrandt's Jeremiah (already on Jeremiah 1) and book scans. The plate already on these pages that fits the chapter's mourning best is Bendemann's Jews Mourning in Exile (Leviticus 26, Jeremiah 29). No image is recorded here yet.")
+CHAPTER_ART["lam5"] = [dict(
+    file="bendemann-jews-mourning-in-exile.jpg",
+    title="Jews Mourning in Exile", title_es="Judíos llorando en el destierro",
+    artist="Eduard Bendemann", artist_es="Eduard Bendemann",
+    year="1832",
+    location="Wallraf-Richartz-Museum, Cologne", location_es="Wallraf-Richartz-Museum, Colonia",
+    alt="A semicircular painting: a shackled old man in red sits by a river with a harp laid on the ground beside him, a nursing mother on his right and a young woman with a second idle harp on his left, walled cities on both horizons and a fruiting vine overhead",
+    alt_es="Una pintura semicircular: un anciano encadenado, vestido de rojo, está sentado junto a un río con un arpa dejada en el suelo a su lado, una madre que amamanta a su derecha y una joven con una segunda arpa inactiva a su izquierda, ciudades amuralladas en ambos horizontes y una vid con fruto encima",
+    note="Not drawn from Lamentations; the same painting stands on <a href=\"leviticus-26.html\">Leviticus 26</a> and <a href=\"jeremiah-29.html\">Jeremiah 29</a>. It is used here for what the chapter says of mourning and music: the young men have ceased from their music and the dance has turned to mourning (<a href=\"lamentations-5.html#v14\">Lamentations 5:14&ndash;15</a>), and Bendemann&rsquo;s two harps lie unplayed. The nursing mother is only a likeness: the chapter&rsquo;s mothers are like widows (<a href=\"lamentations-5.html#v3\">5:3</a>).",
+    note_es="No está tomada de Lamentaciones; la misma pintura está en <a href=\"leviticus-26.es.html\">Levítico 26</a> y en <a href=\"jeremiah-29.es.html\">Jeremías 29</a>. Se usa aquí por lo que el capítulo dice del luto y la música: los jóvenes han cesado de su música y la danza se ha vuelto luto (<a href=\"lamentations-5.es.html#v14\">Lamentaciones 5:14&ndash;15</a>), y las dos arpas de Bendemann yacen sin tocar. La madre que amamanta es solo un parecido: las madres del capítulo son como viudas (<a href=\"lamentations-5.es.html#v3\">5:3</a>).",
+    license="Public domain",
+    source_url="https://commons.wikimedia.org/wiki/File:Jews_Mourning_in_Exile_-_Eduard_Bendemann_-_Wallraf-Richartz-Museum_%26_Fondation_Corboud-6071_(without_frame).jpg",
+)]
