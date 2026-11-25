@@ -2771,7 +2771,7 @@ DICTIONARY = [
      "JUDGMENTS — from shaphat, 'to judge,' and here specifically the fixed phrase asah shephatim, 'to EXECUTE judgments,' used of a decisive, punitive act rather than a courtroom verdict. Exodus 12:12 (already on these pages) has Jehovah say, on the night of the tenth plague, 'against all the gods of Egypt I WILL execute judgments' (e'eseh shephatim, future tense); Numbers 33:4 reports the same two Hebrew words in the perfect — 'upon their gods Jehovah executed judgments' (asah shephatim) — forty years later, in the itinerary's own opening line. Searched consonantally, this exact collocation, Egypt's gods paired with this verb, occurs in exactly these two verses and nowhere else in the Hebrew Bible: a promise made in the future tense, collected in the perfect.",
      ("Exodus", 12, 12)),
     ("maskit", "maskit", "מַשְׂכִּית", "maskit",
-     "A FIGURED STONE — from a root for seeing or picturing, an object carved or set with an image meant to be gazed at. It is a rare word: searched consonantally, it occurs in exactly three verses of the whole Hebrew Bible. Numbers 33:52 lists it as the first of three things Israel must destroy in Canaan — figured stones, molten images (massekah — already this project's own word for the golden calf, Exodus 32:4), and high places (bamah) — three objects, three verbs, kept apart rather than flattened into one English word. Leviticus 26:1 (already on these pages) forbids setting one up 'to bow down upon it'; Ezekiel 8:12 (not yet on these pages) has the elders of Israel worship idols in a private 'chamber of his maskit,' in the dark, convinced 'Jehovah does not see us.'",
+     "A FIGURED STONE — from a root for seeing or picturing, an object carved or set with an image meant to be gazed at. It is a rare word: searched consonantally, it occurs in exactly three verses of the whole Hebrew Bible. Numbers 33:52 lists it as the first of three things Israel must destroy in Canaan — figured stones, molten images (massekah — already this project's own word for the golden calf, Exodus 32:4), and high places (bamah) — three objects, three verbs, kept apart rather than flattened into one English word. Leviticus 26:1 (already on these pages) forbids setting one up 'to bow down upon it'; Ezekiel 8:12 (now on these pages) has the elders of Israel at work in the dark, each in the 'chambers of his imagery' (maskit), convinced 'Jehovah does not see us.'",
      ("Numbers", 33, 52)),
     ("sikkim", "sikkim", "שִׂכִּים", "sikkim",
      "BARBS, thorns — paired at Numbers 33:55 with the near-synonym tzeninim: 'those you leave remaining of them will be as sikkim in your eyes, and as tzeninim in your sides.' Both nouns are true hapax legomena — searched consonantally, neither occurs anywhere else in the whole Hebrew Bible (the other hits for sikkim's own root all belong to an unrelated verb, 'to rise early,' or to the word for darkness). ⚠ The shelf agrees almost universally that whichever word is 'thorns' belongs in the sides and the sharper one in the eyes, but reaches for a different specific English or Spanish word nearly every time — pricks, barbs, irritants, aguijones, púas, astillas — while the Douay-Rheims, working from the Vulgate, breaks the pattern completely: 'nails in your eyes, and spears in your sides.' Joshua 23:13 (now on these pages) reuses tzeninim, and reassigns it to the EYES instead of the sides, paired with a snare and a trap this chapter does not have.",
@@ -4130,7 +4130,7 @@ DICTIONARY = [
      "the false witness (<a href=\"deuteronomy-19.html#v19-21\">19:21</a>) and the woman of <a "
      "href=\"deuteronomy-25.html#v25-12\">25:12</a> — and each time it is the pity of the one who must carry the "
      "sentence out that is forbidden, not the victim's. ⚠ The head word alone is wider: Ezekiel makes it God's own "
-     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a> and <a href=\"ezekiel-7.html#v7-9\">7:9</a>, now on these pages; 8:18 and 9:10 not yet), and Jonah 4:10–11 (not yet on these pages) turns "
+     "refrain, <em>my eye will not pity</em> (<a href=\"ezekiel-5.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.html#v7-4\">7:4</a> and <a href=\"ezekiel-7.html#v7-9\">7:9</a>, and <a href=\"ezekiel-8.html#v8-18\">8:18</a>, now on these pages; 9:10 not yet), and Jonah 4:10–11 (not yet on these pages) turns "
      "it the other way — <em>you pitied the gourd … and should I not pity Nineveh?</em> ⚠ It is not "
      "<em>racham</em>, compassion from the womb, nor <em>chamal</em>, to spare in the sense of holding back; 13:9 "
      "has this word and <em>chamal</em> side by side. <em>Chus</em> is the softening of a gaze.",
@@ -31191,7 +31191,7 @@ DICTIONARY_ES["chus"] = ("chus / tachos",
     "19:13</a>), el testigo falso (<a href=\"deuteronomy-19.es.html#v19-21\">19:21</a>) y la mujer de <a "
     "href=\"deuteronomy-25.es.html#v25-12\">25:12</a>—, y cada vez es la compasión de quien tiene que ejecutar la "
     "sentencia la que se prohíbe, no la de la víctima. ⚠ La palabra sola es más ancha: Ezequiel la hace estribillo "
-    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a> y <a href=\"ezekiel-7.es.html#v7-9\">7:9</a>, ya en estas páginas; 8:18 y 9:10 todavía no), y Jonás 4:10–11 (todavía no en estas "
+    "del propio Dios, <em>mi ojo no perdonará</em> (<a href=\"ezekiel-5.es.html#v5-11\">5:11</a>, <a href=\"ezekiel-7.es.html#v7-4\">7:4</a> y <a href=\"ezekiel-7.es.html#v7-9\">7:9</a>, y <a href=\"ezekiel-8.es.html#v8-18\">8:18</a>, ya en estas páginas; 9:10 todavía no), y Jonás 4:10–11 (todavía no en estas "
     "páginas) le da la vuelta —<em>tú tuviste lástima de la calabacera … ¿y no he de tenerla yo de Nínive?</em> "
     "⚠ No es <em>racham</em>, la compasión que sale de las entrañas, ni <em>chamal</em>, perdonar en el sentido "
     "de contenerse; 13:9 tiene esta palabra y <em>chamal</em> una junto a otra. <em>Chus</em> es el ablandarse de "
@@ -56097,10 +56097,10 @@ DICTIONARY_ES["shikkor"] = ("shikkor",
     'BORRACHO, ebrio. De la raíz de <em><a href="diccionario.html#shekhar">shekhar</a></em>, bebida fuerte. <span data-heb="שתה שכור">«Bebiendo hasta emborracharse», <em>shoteh shikkor</em>, está en dos versículos de la Biblia hebrea</span>: Ela en Tirsa (<a href="1-kings-16.es.html#v16-9">1 Reyes 16:9</a>, ya en estas páginas), muerto donde está sentado, y Ben-adad en sus enramadas (1 Reyes 20:16, todavía no en estas páginas).')
 
 DICTIONARY.append(("naqel", "naqel", "נָקֵל", "naqél",
-    'A LIGHT THING, a trifle, something easy. With the question-letter it is <em>ha-naqel</em>, &lsquo;was it a light thing?&rsquo;, said of Ahab walking in the sins of Jeroboam (<a href="1-kings-16.html#v16-31">1 Kings 16:31</a>, now on these pages) and of the house of Judah (Ezekiel 8:17, not yet on these pages). In both places the point is what comes next, which is worse.',
+    'A LIGHT THING, a trifle, something easy. With the question-letter it is <em>ha-naqel</em>, &lsquo;was it a light thing?&rsquo;, said of Ahab walking in the sins of Jeroboam (<a href="1-kings-16.html#v16-31">1 Kings 16:31</a>, now on these pages) and of the house of Judah (<a href="ezekiel-8.html#v8-17">Ezekiel 8:17</a>, now on these pages). In both places the point is what comes next, which is worse.',
     ("1 Kings", 16, 31)))
 DICTIONARY_ES["naqel"] = ("naqel",
-    'COSA LIGERA, una nimiedad, algo fácil. Con la letra interrogativa es <em>ha-naqel</em>, «¿era cosa ligera?», dicho de Acab, que anda en los pecados de Jeroboam (<a href="1-kings-16.es.html#v16-31">1 Reyes 16:31</a>, ya en estas páginas), y de la casa de Judá (Ezequiel 8:17, todavía no en estas páginas). En los dos lugares lo que importa es lo que viene después, que es peor.')
+    'COSA LIGERA, una nimiedad, algo fácil. Con la letra interrogativa es <em>ha-naqel</em>, «¿era cosa ligera?», dicho de Acab, que anda en los pecados de Jeroboam (<a href="1-kings-16.es.html#v16-31">1 Reyes 16:31</a>, ya en estas páginas), y de la casa de Judá (<a href="ezekiel-8.es.html#v8-17">Ezequiel 8:17</a>, ya en estas páginas). En los dos lugares lo que importa es lo que viene después, que es peor.')
 
 ENCYCLOPEDIA.append(dict(slug="jehu-son-of-hanani", name="Jehu son of Hanani", kind="person", aliases=["Jehu son of Hanani"], refs=[("1 Kings", 16, 1)], videos=[],
     desc='A prophet, and not the Jehu who later takes the throne. He gives Baasha the sentence on the house of Jeroboam with the name changed (<a href="1-kings-16.html#v16-1">1 Kings 16:1&ndash;7</a>, now on these pages), and Zimri carries it out (<a href="1-kings-16.html#v16-12">16:12</a>). Chronicles has a Jehu son of Hanani rebuking Jehoshaphat, and says his words were taken up into the book of the kings of Israel (2 Chronicles 19:2; 20:34, not yet on these pages). The Hanani who rebukes Asa there is usually taken for his father (16:7).'))
@@ -63767,4 +63767,37 @@ CHAPTER_ART["ezek7"] = [dict(
     note_es="Una pintura del cautiverio que siguió a la caída de Jerusalén. Ezequiel 7 anuncia ese fin de antemano y no lo narra.",
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Tissot_The_Flight_of_the_Prisoners.jpg",
+)]
+
+
+# ======================================================================== Ezekiel 8 (both languages)
+_dict155_en('chashmal', add=' <a href="ezekiel-8.html#v8-2">Ezekiel 8:2</a> (now on these pages) is the third of the three.')
+_dict155_en('tsitsit', add=' &#11088; <a href="ezekiel-8.html#v8-3">Ezekiel 8:3</a> is now on these pages.')
+_dict155_en('qinah-jealousy', add=' &#11088; <a href="ezekiel-8.html#v8-3">Ezekiel 8:3 and 5</a> (now on these pages): &lsquo;the image of jealousy&rsquo; at the gate in Jerusalem.')
+_dict155_es('qinah-jealousy', add=' &#11088; <a href="ezekiel-8.es.html#v8-3">Ezequiel 8:3 y 5</a> (ya en estas páginas): «la imagen de los celos» junto a la puerta en Jerusalén.')
+_dict155_en('sheqets', add=' &#11088; <a href="ezekiel-8.html#v8-10">Ezekiel 8:10</a> (now on these pages): a detestable thing carved on a wall in the Temple.')
+_dict155_es('sheqets', add=' &#11088; <a href="ezekiel-8.es.html#v8-10">Ezequiel 8:10</a> (ya en estas páginas): una cosa detestable grabada en una pared del Templo.')
+_dict155_en('gillulim', add=' &#11088; <a href="ezekiel-8.html#v8-10">Ezekiel 8:10</a> (now on these pages): &lsquo;all the idols of the house of Israel&rsquo; carved on the wall.')
+_dict155_es('gillulim', add=' &#11088; <a href="ezekiel-8.es.html#v8-10">Ezequiel 8:10</a> (ya en estas páginas): «todos los ídolos de la casa de Israel» grabados en la pared.')
+_dict155_en('kavod', add=' &#11088; <a href="ezekiel-8.html#v8-4">Ezekiel 8:4</a> (now on these pages): &lsquo;the glory of the God of Israel&rsquo; stands in Jerusalem, as in the valley.')
+_dict155_es('kavod', add=' &#11088; <a href="ezekiel-8.es.html#v8-4">Ezequiel 8:4</a> (ya en estas páginas): «la gloria del Dios de Israel» está en Jerusalén, como en el valle.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-8.html">Ezekiel 8</a> (now on these pages): carried in visions to Jerusalem, he is shown what is done in the Temple.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-8.es.html">Ezequiel 8</a> (ya en estas páginas): llevado en visiones a Jerusalén, se le muestra lo que se hace en el Templo.')
+
+CHRON_CHAPTERS["ezek8"] = dict(era="exile",
+    when="A dated vision: with the elders of Judah sitting before him, Ezekiel is carried in visions of God to Jerusalem and shown the image of jealousy at the gate, seventy elders with censers before carved figures, women weeping for Tammuz, and about twenty-five men bowing to the sun with their backs to the temple.",
+    clock="The sixth year, sixth month, fifth day: the year after the date of chapter 1 as the exile of King Jehoiachin is counted.")
+
+CHAPTER_ART["ezek8"] = [dict(
+    file="cma-bible-leaf-ezekiel-8.jpg",
+    title="A Bible leaf carrying Ezekiel 8 in Latin",
+    title_es="Una hoja de Biblia con Ezequiel 8 en latín",
+    artist="Unknown scribe, Paris", artist_es="Copista desconocido, París",
+    year="c. 1290", location="Cleveland Museum of Art, 1959.272", location_es="Museo de Arte de Cleveland, 1959.272",
+    alt="A parchment page of two columns of dense Latin script with decorated initials; a red and blue IX marks a new chapter in the second column.",
+    alt_es="Una página de pergamino con dos columnas de apretada escritura latina e iniciales decoradas; un IX en rojo y azul señala un nuevo capítulo en la segunda columna.",
+    note="Right-hand leaf of a bifolium. It has this chapter in Latin from verse 2 to the end; the red and blue IX in the second column is where chapter 9 begins. At verse 14 the Latin has the women mourning Adonis.",
+    note_es="Hoja derecha de un bifolio. Tiene este capítulo en latín desde el versículo 2 hasta el final; el IX en rojo y azul de la segunda columna es donde empieza el capítulo 9. En el versículo 14 el latín tiene a las mujeres llorando a Adonis.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1959.272",
 )]
