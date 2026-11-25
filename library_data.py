@@ -56545,10 +56545,10 @@ DICTIONARY_ES["asar"] = ("asar",
     'ATAR, sujetar: una soga, un cautivo, un caballo a un carro. Con «batalla» como objeto está dos veces: «¿Quién atará la batalla?» (<a href="1-kings-20.es.html#v20-14">1 Reyes 20:14</a>, ya en estas páginas), y Abías en 2 Crónicas 13:3 (todavía no en estas páginas). La RV60 dice «comenzará la batalla». El español «trabar batalla» es la misma imagen.')
 
 DICTIONARY.append(("shoal", "sho&lsquo;al", "שֹׁעַל", "sho'al",
-    'THE HOLLOW OF THE HAND, a handful. Ben-hadad swears that the dust of Samaria will not suffice &lsquo;for handfuls&rsquo; for his men (<a href="1-kings-20.html#v20-10">1 Kings 20:10</a>, now on these pages). Isaiah has the waters measured in one (<a href="isaiah-40.html#v40-12">Isaiah 40:12</a>, now on these pages), and Ezekiel 13:19 (not yet on these pages) has &lsquo;handfuls of barley&rsquo;. The Greek read the letters at 1 Kings 20:10 as <em>shualim</em>, &lsquo;foxes&rsquo;.',
+    'THE HOLLOW OF THE HAND, a handful. Ben-hadad swears that the dust of Samaria will not suffice &lsquo;for handfuls&rsquo; for his men (<a href="1-kings-20.html#v20-10">1 Kings 20:10</a>, now on these pages). Isaiah has the waters measured in one (<a href="isaiah-40.html#v40-12">Isaiah 40:12</a>, now on these pages), and <a href="ezekiel-13.html#v13-19">Ezekiel 13:19</a> (now on these pages) has &lsquo;handfuls of barley&rsquo;. The Greek read the letters at 1 Kings 20:10 as <em>shualim</em>, &lsquo;foxes&rsquo;.',
     ("1 Kings", 20, 10)))
 DICTIONARY_ES["shoal"] = ("shoal",
-    'EL HUECO DE LA MANO, un puñado. Ben-adad jura que el polvo de Samaria no bastará «para los puñados» de sus hombres (<a href="1-kings-20.es.html#v20-10">1 Reyes 20:10</a>, ya en estas páginas). Isaías mide las aguas en uno (<a href="isaiah-40.es.html#v40-12">Isaías 40:12</a>, ya en estas páginas), y Ezequiel 13:19 (todavía no en estas páginas) tiene «puñados de cebada». La griega leyó las letras de 1 Reyes 20:10 como <em>shualim</em>, «zorras».')
+    'EL HUECO DE LA MANO, un puñado. Ben-adad jura que el polvo de Samaria no bastará «para los puñados» de sus hombres (<a href="1-kings-20.es.html#v20-10">1 Reyes 20:10</a>, ya en estas páginas). Isaías mide las aguas en uno (<a href="isaiah-40.es.html#v40-12">Isaías 40:12</a>, ya en estas páginas), y <a href="ezekiel-13.es.html#v13-19">Ezequiel 13:19</a> (ya en estas páginas) tiene «puñados de cebada». La griega leyó las letras de 1 Reyes 20:10 como <em>shualim</em>, «zorras».')
 
 DICTIONARY.append(("medinah", "medinah", "מְדִינָה", "medinah",
     'A PROVINCE, a district under a ruler. It stands four times in <a href="1-kings-20.html#v20-14">1 Kings 20</a> (now on these pages), &lsquo;the young men of the princes of the provinces&rsquo;, and it belongs mostly to the later books, Esther above all. Lamentations 1:1 calls Jerusalem &lsquo;princess among the provinces&rsquo; (not yet on these pages). The NWT 1984 has &lsquo;jurisdictional districts&rsquo;.',
@@ -63926,4 +63926,36 @@ CHAPTER_ART["ezek12"] = [dict(
     note_es="Una vista del siglo XIX: viajeros cargados ante una puerta de la muralla de Jerusalén tal como la mostró Roberts. No es una imagen del destierro, y la salida de este capítulo es un boquete cavado en una pared, no una puerta.",
     license="CC0",
     source_url="https://clevelandart.org/art/1927.88",
+)]
+
+
+# ======================================================================== Ezekiel 13 (both languages)
+DICTIONARY.append(("tafel", "tafel", "תָּפֵל", "tafel",
+    "WHITEWASH, as this translation has it at <a href=\"ezekiel-13.html#v13-10\">Ezekiel 13:10&ndash;15</a>: what the prophets daub on a flimsy wall. It comes again at Ezekiel 22:28 (not yet on these pages). The same letters are at <a href=\"lamentations-2.html#v14\">Lamentations 2:14</a>, where the page prints &lsquo;emptiness&rsquo;, and at Job 6:6 (not yet on these pages), of food eaten without salt.", ("Ezekiel", 13, 10)))
+DICTIONARY_ES["tafel"] = ("tafel", "CAL, como lo pone esta traducción en <a href=\"ezekiel-13.es.html#v13-10\">Ezequiel 13:10&ndash;15</a>: lo que los profetas untan en una pared endeble. Vuelve en Ezequiel 22:28 (todavía no en estas páginas). Las mismas letras están en <a href=\"lamentations-2.es.html#v14\">Lamentaciones 2:14</a>, donde la página imprime «engaño», y en Job 6:6 (todavía no en estas páginas), de la comida sin sal.")
+_dict155_en('shav', add=' &#11088; <a href="ezekiel-13.html#v13-6">Ezekiel 13:6&ndash;9</a> (now on these pages): the prophets see emptiness and speak it.')
+_dict155_es('shav', add=' &#11088; <a href="ezekiel-13.es.html#v13-6">Ezequiel 13:6&ndash;9</a> (ya en estas páginas): los profetas ven vanidad y la hablan.')
+_dict155_en('qesem', add=' &#11088; <a href="ezekiel-13.html#v13-6">Ezekiel 13:6&ndash;9 and 23</a> (now on these pages): lying divination, which will be divined no more.')
+_dict155_es('qesem', add=' &#11088; <a href="ezekiel-13.es.html#v13-6">Ezequiel 13:6&ndash;9 y 23</a> (ya en estas páginas): adivinación mentirosa, que ya no se adivinará.')
+_dict155_en('nefesh', add=' &#11088; <a href="ezekiel-13.html#v13-18">Ezekiel 13:18&ndash;20</a> (now on these pages): the souls that the women hunt.')
+_dict155_es('nefesh', add=' &#11088; <a href="ezekiel-13.es.html#v13-18">Ezequiel 13:18&ndash;20</a> (ya en estas páginas): las almas que las mujeres cazan.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-13.html">Ezekiel 13</a> (now on these pages): he speaks against prophets who say &lsquo;peace&rsquo; and against women who hunt souls with bands and veils.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-13.es.html">Ezequiel 13</a> (ya en estas páginas): habla contra los profetas que dicen «paz» y contra las mujeres que cazan almas con cintas y velos.')
+
+CHRON_CHAPTERS["ezek13"] = dict(era="exile",
+    when="Ezekiel is sent to speak against the prophets of Israel who prophesy out of their own heart and say 'peace' where there is none, likened to those who whitewash a flimsy wall, and against women among the people who prophesy and hunt souls with bands and veils.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek13"] = [dict(
+    file="egyptian-plasterers-float.jpg",
+    title="Plasterer's float",
+    title_es="Llana de yesero",
+    artist="Unknown Egyptian maker", artist_es="Autor egipcio desconocido",
+    year="1980–1648 BCE", location="Cleveland Museum of Art, 1914.825", location_es="Museo de Arte de Cleveland, 1914.825",
+    alt="A pale, smooth stone tool with a flat base and an arched handle, photographed on a grey ground.",
+    alt_es="Una herramienta de piedra clara y lisa, de base plana y asa en arco, fotografiada sobre fondo gris.",
+    note="An Egyptian plasterer's float of travertine, shown for the trade that verses 10 to 15 use as their picture. It is not from Israel, is far older than the exile, and has no known tie to this chapter.",
+    note_es="Una llana de yesero egipcia, de travertino, mostrada por el oficio que los versículos 10 a 15 toman como imagen. No es de Israel, es muy anterior al destierro y no se le conoce vínculo con este capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1914.825",
 )]
