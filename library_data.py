@@ -63642,19 +63642,19 @@ _ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-4.html">Ezekiel 4</a> (no
 _enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-4.es.html">Ezequiel 4</a> (ya en estas páginas): graba Jerusalén en un ladrillo, la sitia, se acuesta de lado y come pan racionado.')
 
 CHRON_CHAPTERS["ezek4"] = dict(era="exile",
-    when="The first acted prophecy: Jerusalem engraved on a brick and put under siege, an iron griddle for a wall, the prophet lying on his left side three hundred and ninety days for Israel and forty on his right for Judah, bread of mixed grains by weight and water by measure, baked over cattle dung, and the staff of bread to be broken.",
+    when="An acted prophecy: Jerusalem engraved on a brick and put under siege, an iron griddle for a wall, the prophet lying on his left side three hundred and ninety days for Israel and forty on his right for Judah, bread of mixed grains by weight and water by measure, baked over cattle dung, and the staff of bread to be broken.",
     clock="Follows chapter 3 in the early years of the exile of King Jehoiachin. The chapter gives day counts but no date.")
 
 CHAPTER_ART["ezek4"] = [dict(
     file="assyrian-attack-on-a-town.jpg",
     title="Assyrian Attack on a Town", title_es="Ataque asirio a una ciudad",
     artist="Assyrian sculptor, name unknown", artist_es="Escultor asirio de nombre desconocido",
-    year="—",
-    location="Stone relief, photograph via Wikimedia Commons", location_es="Relieve en piedra, fotografía vía Wikimedia Commons",
+    year="865–860",
+    location="Relief from the North-West Palace at Nimrud, British Museum (photograph: Capillon)", location_es="Relieve del Palacio Noroeste de Nimrud, Museo Británico (fotografía: Capillon)",
     alt="A carved stone relief. At the left a wheeled siege engine covered in woven panels drives a long battering ram into the wall of a fortified town, where stones are falling from a broken tower. Archers shoot from a tower on the engine and from the town walls, which have crenellated tops and an arched gate.",
     alt_es="Un relieve tallado en piedra. A la izquierda, una máquina de sitio con ruedas, cubierta de paneles trenzados, clava un largo ariete en el muro de una ciudad fortificada, donde caen piedras de una torre rota. Arqueros disparan desde una torre de la máquina y desde las murallas, que tienen almenas y una puerta en arco.",
-    note="Not a picture of Jerusalem: it shows what <a href=\"ezekiel-4.html#v4-2\">Ezekiel 4:2</a> names, battering rams set against a walled city, from the side of the besiegers.",
-    note_es="No es una imagen de Jerusalén: muestra lo que nombra <a href=\"ezekiel-4.es.html#v4-2\">Ezequiel 4:2</a>, arietes puestos contra una ciudad amurallada, desde el lado de los sitiadores.",
+    note="Not a picture of Jerusalem and not Babylon&rsquo;s army: an Assyrian siege carved about 865&ndash;860 BC. It shows what <a href=\"ezekiel-4.html#v4-2\">Ezekiel 4:2</a> names, battering rams set against a walled city, from the side of the besiegers.",
+    note_es="No es una imagen de Jerusalén ni del ejército de Babilonia: es un sitio asirio tallado hacia 865–860 a. C. Muestra lo que nombra <a href=\"ezekiel-4.es.html#v4-2\">Ezequiel 4:2</a>, arietes puestos contra una ciudad amurallada, desde el lado de los sitiadores.",
     license="Public domain",
     source_url="https://commons.wikimedia.org/wiki/File:Assyrian_Attack_on_a_Town.jpg",
 )]
