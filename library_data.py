@@ -63600,5 +63600,16 @@ CHRON_CHAPTERS["ezek3"] = dict(era="exile",
     when="Ezekiel eats the scroll, is strengthened against a house that will not listen, and is carried to Tel-abib, where he sits seven days stunned. He is made a watchman, goes out to the valley where the glory stands, and is shut up in his house, bound and mute until Jehovah speaks.",
     clock="Follows chapters 1 and 2 in the fifth year of King Jehoiachin&rsquo;s exile (1:2). The seven days of verse 15 and 16 are the only dating within the chapter.")
 
-# PROVISIONAL (Ezekiel 3): waiting on Michael's decision about art; do not merge until he answers.
-ART_SKIPPED["ezek3"] = ("Searched Wikimedia Commons on 2026-11-25 for Ezekiel eating the scroll, the watchman, Tel-abib and other plates; the only usable pieces found are already on these pages (Doré's Ezekiel Prophesying on Ezekiel 36, Michelangelo's Ezekiel on Ezekiel 2, Dürer's John Devouring the Book on Revelation 10). No image is recorded here yet.")
+CHAPTER_ART["ezek3"] = [dict(
+    file="durer-john-devours-scroll.jpg",
+    title="Saint John Devouring the Book", title_es="San Juan devora el libro",
+    artist="Albrecht Dürer", artist_es="Alberto Durero",
+    year="1498",
+    location="Woodcut from the Apocalypse series, Metropolitan Museum of Art, New York", location_es="Xilografía de la serie del Apocalipsis, Metropolitan Museum of Art, Nueva York",
+    alt="A black-and-white woodcut. A long-haired man in heavy robes kneels at the right and lifts an open book to his mouth, while a hand reaching out of a cloud holds it too. Beside him two columns topped with flames stand on the shore, with a haloed head blazing with rays above them and a winged angel higher up. The sea, with ships and a swan, lies to the left, and an inkwell and another book lie on the ground.",
+    alt_es="Una xilografía en blanco y negro. Un hombre de cabello largo y ropas pesadas, arrodillado a la derecha, se lleva a la boca un libro abierto, que también sostiene una mano que sale de una nube. A su lado se alzan en la orilla dos columnas coronadas de llamas, con una cabeza nimbada que irradia luz encima y un ángel alado más arriba. A la izquierda hay un mar con barcos y un cisne, y en el suelo un tintero y otro libro.",
+    note="Not drawn from Ezekiel: D&uuml;rer shows John eating the little book of <a href=\"revelation-10.html#v10-9\">Revelation 10:9&ndash;10</a>, where the plate also stands. It is used here because it is the same act as <a href=\"ezekiel-3.html#v3-1\">Ezekiel 3:1&ndash;3</a>: a book held out, eaten, and sweet in the mouth. In Revelation it also turns bitter in the stomach, which Ezekiel does not say.",
+    note_es="No está tomada de Ezequiel: Durero muestra a Juan comiendo el librito de <a href=\"revelation-10.es.html#v10-9\">Apocalipsis 10:9&ndash;10</a>, donde la lámina también está. Se usa aquí porque es el mismo acto de <a href=\"ezekiel-3.es.html#v3-1\">Ezequiel 3:1&ndash;3</a>: un libro tendido, comido y dulce en la boca. En Apocalipsis además se vuelve amargo en el estómago, cosa que Ezequiel no dice.",
+    license="CC0",
+    source_url="https://commons.wikimedia.org/wiki/File:Saint_John_Devouring_the_Book,_from_The_Apocalypse_MET_DP816918.jpg",
+)]
