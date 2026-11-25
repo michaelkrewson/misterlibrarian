@@ -63896,3 +63896,34 @@ CHAPTER_ART["ezek11"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1927.110",
 )]
+
+
+# ======================================================================== Ezekiel 12 (both languages)
+_dict155_en('meri-rebellion', add=' &#11088; <a href="ezekiel-12.html#v12-2">Ezekiel 12:2</a> (now on these pages): the house has eyes to see and does not see.')
+_dict155_es('meri-rebellion', add=' &#11088; <a href="ezekiel-12.es.html#v12-2">Ezequiel 12:2</a> (ya en estas páginas): la casa tiene ojos para ver y no ve.')
+_dict155_en('mofet', add=' &#11088; <a href="ezekiel-12.html#v12-6">Ezekiel 12:6 and 11</a> (now on these pages): the prophet himself is made a portent to the house of Israel.')
+_dict155_es('mofet', add=' &#11088; <a href="ezekiel-12.es.html#v12-6">Ezequiel 12:6 y 11</a> (ya en estas páginas): el profeta mismo es puesto por portento a la casa de Israel.')
+_dict155_en('massa', add=' &#11088; <a href="ezekiel-12.html#v12-10">Ezekiel 12:10</a> (now on these pages) sets <em>nasi</em>, prince, beside <em>massa</em>, burden.')
+_dict155_es('massa', add=' &#11088; <a href="ezekiel-12.es.html#v12-10">Ezequiel 12:10</a> (ya en estas páginas) pone <em>nasí</em>, príncipe, junto a <em>massá</em>, carga.')
+_dict155_en('mashal', add=' &#11088; <a href="ezekiel-12.html#v12-22">Ezekiel 12:22&ndash;23</a> is now on these pages.')
+_dict155_es('mashal', add=' &#11088; <a href="ezekiel-12.es.html#v12-22">Ezequiel 12:22&ndash;23</a> ya está en estas páginas.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-12.html">Ezekiel 12</a> (now on these pages): he acts out an exile through a hole in a wall, and answers two sayings about vision.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-12.es.html">Ezequiel 12</a> (ya en estas páginas): representa un destierro por un boquete en la pared y responde a dos dichos sobre la visión.')
+
+CHRON_CHAPTERS["ezek12"] = dict(era="exile",
+    when="Among the exiles: Ezekiel packs an exile's baggage by day, digs through the wall in the evening and carries it out in the dark with his face covered, as a portent of the prince in Jerusalem; he eats and drinks in anxiety; and he answers the sayings that every vision fails and that his visions are for far off.",
+    clock="Follows the vision of chapters 8 to 11. The chapter gives no date.")
+
+CHAPTER_ART["ezek12"] = [dict(
+    file="roberts-gate-of-damascus.jpg",
+    title="Gate of Damascus, Jerusalem",
+    title_es="La puerta de Damasco, Jerusalén",
+    artist="David Roberts", artist_es="David Roberts",
+    year="1839", location="Cleveland Museum of Art, 1927.88", location_es="Museo de Arte de Cleveland, 1927.88",
+    alt="A lithograph of a tall crenellated city wall with an arched gate; loaded camels and travellers stand on the track in front of it.",
+    alt_es="Una litografía de una alta muralla almenada con una puerta en arco; camellos cargados y viajeros están en el camino delante de ella.",
+    note="A nineteenth-century view: loaded travellers outside a gate in the wall of Jerusalem as Roberts showed it. It is not a picture of the exile, and the way out in this chapter is a hole dug through a wall, not a gate.",
+    note_es="Una vista del siglo XIX: viajeros cargados ante una puerta de la muralla de Jerusalén tal como la mostró Roberts. No es una imagen del destierro, y la salida de este capítulo es un boquete cavado en una pared, no una puerta.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1927.88",
+)]
