@@ -64084,8 +64084,8 @@ _dict155_en('tsalach', add=' &#11088; <a href="ezekiel-17.html#v17-9">Ezekiel 17
 _dict155_es('tsalach', add=' &#11088; <a href="ezekiel-17.es.html#v17-9">Ezequiel 17:9</a> (ya en estas páginas): «¿prosperará?», preguntado de nuevo en los versículos 10 y 15.')
 _dict155_en('brit', add=' &#11088; <a href="ezekiel-17.html#v17-15">Ezekiel 17:15</a> (now on these pages): &lsquo;shall he break the covenant and escape?&rsquo;')
 _dict155_es('brit', add=' &#11088; <a href="ezekiel-17.es.html#v17-15">Ezequiel 17:15</a> (ya en estas páginas): «¿quebrantará el pacto y escapará?».')
-_dict155_en('meri', add=' &#11088; <a href="ezekiel-17.html#v17-12">Ezekiel 17:12</a> (now on these pages): the explanation is spoken to the rebellious house.')
-_dict155_es('meri', add=' &#11088; <a href="ezekiel-17.es.html#v17-12">Ezequiel 17:12</a> (ya en estas páginas): la explicación se dice a la casa rebelde.')
+_dict155_en('meri-rebellion', add=' &#11088; <a href="ezekiel-17.html#v17-12">Ezekiel 17:12</a> (now on these pages): the explanation is spoken to the rebellious house.')
+_dict155_es('meri-rebellion', add=' &#11088; <a href="ezekiel-17.es.html#v17-12">Ezequiel 17:12</a> (ya en estas páginas): la explicación se dice a la casa rebelde.')
 _ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-17.html">Ezekiel 17</a> (now on these pages): the riddle of two eagles and a vine, its explanation, and a cedar shoot that Jehovah says he will plant.')
 _enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-17.es.html">Ezequiel 17</a> (ya en estas páginas): el enigma de las dos águilas y la vid, su explicación, y un renuevo de cedro que Jehová dice que plantará.')
 _ency155_en('lebanon', add=' &#11088; <a href="ezekiel-17.html#v17-3">Ezekiel 17:3</a> (now on these pages): in the riddle, an eagle comes to Lebanon and takes the top of a cedar.')
@@ -64103,8 +64103,8 @@ CHAPTER_ART["ezek17"] = [dict(
     year="1755", location="Cleveland Museum of Art, 1977.31", location_es="Museo de Arte de Cleveland, 1977.31",
     alt="Detail of a Chinese ink painting: an eagle with raised wings leans out from the top of a tall, narrow trunk.",
     alt_es="Detalle de una pintura china a tinta: un águila con las alas alzadas se asoma desde lo alto de un tronco alto y estrecho.",
-    note="An eagle at the top of a trunk, which the museum describes as covered with a twisted vine. A detail of a Chinese hanging scroll of 1755, not made for this chapter; the tree is not identified as a cedar.",
-    note_es="Un águila en lo alto de un tronco que el museo describe como cubierto por una enredadera retorcida. Detalle de un rollo colgante chino de 1755, no hecho para este capítulo; el árbol no se identifica como un cedro.",
+    note="An eagle at the top of a trunk. A detail of a Chinese hanging scroll of 1755, not made for this chapter; the tree is not identified as a cedar.",
+    note_es="Un águila en lo alto de un tronco. Detalle de un rollo colgante chino de 1755, no hecho para este capítulo; el árbol no se identifica como un cedro.",
     license="CC0",
     source_url="https://clevelandart.org/art/1977.31",
 )]
