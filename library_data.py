@@ -64070,3 +64070,41 @@ CHAPTER_ART["ezek16"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1985.174",
 )]
+
+# ======================================================================== Ezekiel 17 (both languages)
+_dict155_en('chidah', add=' &#11088; <a href="ezekiel-17.html#v17-2">Ezekiel 17:2</a> (now on these pages): Ezekiel is told to put a riddle to the house of Israel.')
+_dict155_es('chidah', add=' &#11088; <a href="ezekiel-17.es.html#v17-2">Ezequiel 17:2</a> (ya en estas páginas): Ezequiel debe proponer un enigma a la casa de Israel.')
+_dict155_en('mashal', add=' &#11088; <a href="ezekiel-17.html#v17-2">Ezekiel 17:2</a> (now on these pages): the parable of the two eagles and the vine.')
+_dict155_es('mashal', add=' &#11088; <a href="ezekiel-17.es.html#v17-2">Ezequiel 17:2</a> (ya en estas páginas): la parábola de las dos águilas y la vid.')
+_dict155_en('nesher', add=' &#11088; <a href="ezekiel-17.html#v17-3">Ezekiel 17:3</a> (now on these pages): the great eagle that takes the treetop of the cedar, and verse 7 another.')
+_dict155_es('nesher', add=' &#11088; <a href="ezekiel-17.es.html#v17-3">Ezequiel 17:3</a> (ya en estas páginas): la gran águila que toma la copa del cedro, y en el versículo 7 otra.')
+_dict155_en('gefen', add=' &#11088; <a href="ezekiel-17.html#v17-6">Ezekiel 17:6</a> (now on these pages): the seed becomes a low, sprawling vine that turns from one eagle to another.')
+_dict155_es('gefen', add=' &#11088; <a href="ezekiel-17.es.html#v17-6">Ezequiel 17:6</a> (ya en estas páginas): la semilla se hace una vid baja y desparramada que se vuelve de un águila a otra.')
+_dict155_en('tsalach', add=' &#11088; <a href="ezekiel-17.html#v17-9">Ezekiel 17:9</a> (now on these pages): &lsquo;will it succeed?&rsquo;, asked again at verses 10 and 15.')
+_dict155_es('tsalach', add=' &#11088; <a href="ezekiel-17.es.html#v17-9">Ezequiel 17:9</a> (ya en estas páginas): «¿prosperará?», preguntado de nuevo en los versículos 10 y 15.')
+_dict155_en('brit', add=' &#11088; <a href="ezekiel-17.html#v17-15">Ezekiel 17:15</a> (now on these pages): &lsquo;shall he break the covenant and escape?&rsquo;')
+_dict155_es('brit', add=' &#11088; <a href="ezekiel-17.es.html#v17-15">Ezequiel 17:15</a> (ya en estas páginas): «¿quebrantará el pacto y escapará?».')
+_dict155_en('meri', add=' &#11088; <a href="ezekiel-17.html#v17-12">Ezekiel 17:12</a> (now on these pages): the explanation is spoken to the rebellious house.')
+_dict155_es('meri', add=' &#11088; <a href="ezekiel-17.es.html#v17-12">Ezequiel 17:12</a> (ya en estas páginas): la explicación se dice a la casa rebelde.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-17.html">Ezekiel 17</a> (now on these pages): the riddle of two eagles and a vine, its explanation, and a cedar shoot that Jehovah says he will plant.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-17.es.html">Ezequiel 17</a> (ya en estas páginas): el enigma de las dos águilas y la vid, su explicación, y un renuevo de cedro que Jehová dice que plantará.')
+_ency155_en('lebanon', add=' &#11088; <a href="ezekiel-17.html#v17-3">Ezekiel 17:3</a> (now on these pages): in the riddle, an eagle comes to Lebanon and takes the top of a cedar.')
+_enc_l4_es('lebanon', ' &#11088; <a href="ezekiel-17.es.html#v17-3">Ezequiel 17:3</a> (ya en estas páginas): en el enigma, un águila llega al Líbano y toma la copa de un cedro.')
+
+CHRON_CHAPTERS["ezek17"] = dict(era="exile",
+    when="Ezekiel puts a riddle of two eagles and a vine, and is told its meaning: the king of Babylon took Jerusalem's king and set up one of the royal seed under oath, who turned to Egypt. Jehovah says he himself will plant a shoot from the cedar.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek17"] = [dict(
+    file="huang-shen-eagle-on-tree-trunk.jpg",
+    title="Eagle on a Tree Trunk",
+    title_es="Águila sobre un tronco",
+    artist="Huang Shen", artist_es="Huang Shen",
+    year="1755", location="Cleveland Museum of Art, 1977.31", location_es="Museo de Arte de Cleveland, 1977.31",
+    alt="A Chinese ink painting on a hanging scroll: an eagle leans out from the top of a tall, bare trunk wound with a vine, beside a column of calligraphy.",
+    alt_es="Una pintura china a tinta en un rollo colgante: un águila se asoma desde lo alto de un tronco largo y desnudo envuelto por una enredadera, junto a una columna de caligrafía.",
+    note="An eagle at the top of a trunk wound with a twisting vine. A Chinese painting of 1755, not made for this chapter, and the tree is not shown as a cedar.",
+    note_es="Un águila en lo alto de un tronco envuelto por una enredadera retorcida. Una pintura china de 1755, no hecha para este capítulo, y el árbol no aparece como un cedro.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1977.31",
+)]
