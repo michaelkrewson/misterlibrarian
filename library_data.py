@@ -3808,7 +3808,7 @@ DICTIONARY = [
      "Jael drives one through Sisera's temple (Judges 4:21, and the song at 5:26); Samson's hair is woven to a "
      "loom's pin (Judges 16:14); Eliakim is fastened <em>as a peg in a sure place</em> and then the peg gives "
      "way (Isaiah 22:23, 25); and Ezra 9:8 calls the returned remnant <em>a peg in his holy place</em>, a "
-     "foothold. The Judges passages are now on these pages; the rest are not yet.",
+     "foothold. The Judges passages are now on these pages; the Isaiah 22 and Ezra 9 verses are not yet.",
      ("Deuteronomy", 23, 14)),
     ("yanah", "yanah", "יָנָה", "yanah",
      "TO WRONG, oppress, maltreat &mdash; a verb for the abuse of someone weaker, most often in a "
@@ -30722,7 +30722,7 @@ DICTIONARY_ES["yated"] = ("yated",
     "luego figurada: Jael le clava una en la sien a Sísara (Jueces 4:21, y el cántico en 5:26); el cabello de Sansón "
     "se teje a la clavija de un telar (Jueces 16:14); a Eliaquim se lo fija <em>como estaca en lugar firme</em> y "
     "después la estaca cede (Isaías 22:23, 25); y Esdras 9:8 llama al resto que volvió <em>una estaca en su lugar "
-    "santo</em>, un punto de apoyo. Ninguno de esos está todavía en estas páginas.")
+    "santo</em>, un punto de apoyo. Los pasajes de Jueces ya están en estas páginas; los de Isaías 22 y Esdras 9, todavía no.")
 
 DICTIONARY_ES["yanah"] = ("yaná",
     "MALTRATAR, oprimir, hacer agravio —un verbo para el abuso del más débil, casi siempre en una transacción, y en "
@@ -64020,7 +64020,7 @@ CHAPTER_ART["ezek15"] = [dict(
     title="Grapevine (eight-panel folding screen)",
     title_es="Vid (biombo de ocho paneles)",
     artist="Choe Seok-hwan", artist_es="Choe Seok-hwan",
-    year="early 1800s, Korea", location="Cleveland Museum of Art, 2015.510", location_es="Museo de Arte de Cleveland, 2015.510",
+    year="c. 1800–1850", location="Cleveland Museum of Art, 2015.510", location_es="Museo de Arte de Cleveland, 2015.510",
     alt="An ink painting across eight panels of a grapevine with a dark twisting stem, leaves, tendrils and bunches of grapes.",
     alt_es="Una pintura a tinta en ocho paneles de una vid con un tronco oscuro y retorcido, hojas, zarcillos y racimos de uvas.",
     note="A vine's dark, twisting wood among its leaves and grapes. The chapter asks about the wood and says nothing of fruit. A Korean painting of the early 1800s, not made for this chapter.",
