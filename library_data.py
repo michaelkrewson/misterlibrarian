@@ -63995,3 +63995,36 @@ CHAPTER_ART["ezek14"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1963.303.2",
 )]
+
+
+# ======================================================================== Ezekiel 15 (both languages)
+_dict155_en('gefen', add=' &#11088; <a href="ezekiel-15.html#v15-2">Ezekiel 15</a> (now on these pages): the wood of the vine, given to the fire, as the inhabitants of Jerusalem are.')
+_dict155_es('gefen', add=' &#11088; <a href="ezekiel-15.es.html#v15-2">Ezequiel 15</a> (ya en estas páginas): la madera de la vid, dada al fuego, como los habitantes de Jerusalén.')
+_dict155_en('yated', add=' &#11088; <a href="ezekiel-15.html#v15-3">Ezekiel 15:3</a> (now on these pages): the question whether even a peg is taken from the vine.')
+_dict155_es('yated', add=' &#11088; <a href="ezekiel-15.es.html#v15-3">Ezequiel 15:3</a> (ya en estas páginas): la pregunta de si de la vid se toma siquiera una estaca.')
+_dict155_en('tsalach', add=' &#11088; <a href="ezekiel-15.html#v15-4">Ezekiel 15:4</a> (now on these pages): of charred vine wood, &lsquo;is it fit for any work?&rsquo;')
+_dict155_es('tsalach', add=' &#11088; <a href="ezekiel-15.es.html#v15-4">Ezequiel 15:4</a> (ya en estas páginas): de la madera chamuscada, «¿sirve para alguna obra?».')
+_dict155_en('tamim', add=' &#11088; <a href="ezekiel-15.html#v15-5">Ezekiel 15:5</a> (now on these pages): said of wood while it is still whole.')
+_dict155_es('tamim', add=' &#11088; <a href="ezekiel-15.es.html#v15-5">Ezequiel 15:5</a> (ya en estas páginas): dicho de la madera cuando todavía está entera.')
+_dict155_en('maal', add=' &#11088; <a href="ezekiel-15.html#v15-8">Ezekiel 15:8</a> (now on these pages): the land is made a desolation because they have committed a trespass.')
+_dict155_es('maal', add=' &#11088; <a href="ezekiel-15.es.html#v15-8">Ezequiel 15:8</a> (ya en estas páginas): la tierra queda desolada porque han cometido una transgresión.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-15.html">Ezekiel 15</a> (now on these pages): a question about the wood of the vine, and its answer for Jerusalem.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-15.es.html">Ezequiel 15</a> (ya en estas páginas): una pregunta sobre la madera de la vid y su respuesta para Jerusalén.')
+
+CHRON_CHAPTERS["ezek15"] = dict(era="exile",
+    when="Ezekiel is asked what the wood of the vine is good for; as it is given to the fire, so Jehovah says he has given the inhabitants of Jerusalem, and the land will be made a desolation.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek15"] = [dict(
+    file="choe-seokhwan-grapevine-screen.jpg",
+    title="Grapevine (eight-panel folding screen)",
+    title_es="Vid (biombo de ocho paneles)",
+    artist="Choe Seok-hwan", artist_es="Choe Seok-hwan",
+    year="early 1800s, Korea", location="Cleveland Museum of Art, 2015.510", location_es="Museo de Arte de Cleveland, 2015.510",
+    alt="An ink painting across eight panels of a grapevine with a dark twisting stem, leaves, tendrils and bunches of grapes.",
+    alt_es="Una pintura a tinta en ocho paneles de una vid con un tronco oscuro y retorcido, hojas, zarcillos y racimos de uvas.",
+    note="A vine's dark, twisting wood among its leaves and grapes. The chapter asks about the wood and says nothing of fruit. A Korean painting of the early 1800s, not made for this chapter.",
+    note_es="La madera oscura y retorcida de una vid entre sus hojas y uvas. El capítulo pregunta por la madera y no dice nada del fruto. Una pintura coreana de comienzos del siglo XIX, no hecha para este capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/2015.510",
+)]
