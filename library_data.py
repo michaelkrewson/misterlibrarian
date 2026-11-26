@@ -3923,7 +3923,7 @@ DICTIONARY = [
      "goes down; <a href=\"deuteronomy-24.html#v24-6\">Deuteronomy 24:6</a>, twice in one short verse, the "
      "hand-mill that may not be taken because <em>it is a life he is taking in pledge</em>; and <a "
      "href=\"deuteronomy-24.html#v24-17\">24:17</a>, the widow's garment that may not be taken at all. Outside "
-     "the Torah it is the prophets' test of a man: Ezekiel 18:7 lists restoring the debtor's pledge among the "
+     "the Torah it is the prophets' test of a man: <a href=\"ezekiel-18.html#v18-7\">Ezekiel 18:7</a> (now on these pages) lists returning the pledge among the "
      "marks of the righteous and 18:16 says of the righteous son that <em>he has taken no pledge</em>; Amos "
      "2:8 has Israel lying down <em>on garments taken in pledge beside every altar</em>; Job 22:6 is "
      "Eliphaz's charge, <em>you have taken pledges from your brothers for nothing</em>, and Job 24:3 the "
@@ -4150,7 +4150,7 @@ DICTIONARY = [
      "does injustice is an abomination to Jehovah</em>. ⚠ <a href=\"deuteronomy-32.html#v32-4\">Deuteronomy 32:4</a> "
      "(already on these pages) denies it of "
      "God in one word, <em>a God of faithfulness and without injustice</em>, and Zephaniah 3:5 (not yet on these "
-     "pages) repeats the denial with the root's feminine form, <em>he does no injustice</em>; Ezekiel 18 (not yet "
+     "pages) repeats the denial with the root's feminine form, <em>he does no injustice</em>; <a href=\"ezekiel-18.html#v18-24\">Ezekiel 18</a> (now "
      "on these pages) makes <em>doing avel</em> the thing a righteous man turns to and dies of (18:24, 26).",
      ("Deuteronomy", 25, 16)),
     ("zanav", "zanav", "זָנָב", "zanav / zinnev",
@@ -30923,9 +30923,9 @@ DICTIONARY_ES["chaval"] = ("javal",
     "se ponga el sol; <a href=\"deuteronomy-24.es.html#v24-6\">Deuteronomio 24:6</a>, dos veces en un solo "
     "versículo corto, el molino de mano que no puede tomarse porque <em>es una vida lo que toma en "
     "prenda</em>; y <a href=\"deuteronomy-24.es.html#v24-17\">24:17</a>, el vestido de la viuda que no puede "
-    "tomarse en absoluto. Fuera de la Torá es la prueba que los profetas hacen a un hombre: Ezequiel 18:7 "
+    "tomarse en absoluto. Fuera de la Torá es la prueba que los profetas hacen a un hombre: <a href=\"ezekiel-18.es.html#v18-7\">Ezequiel 18:7</a> (ya en estas páginas) "
     "cuenta devolver la prenda al deudor entre las señales del justo y 18:16 dice del hijo justo que <em>no "
-    "ha tomado prenda</em>; Amós 2:8 tiene a Israel acostándose <em>sobre ropas tomadas en prenda junto a "
+    "ha tomado ninguna prenda</em>; Amós 2:8 tiene a Israel acostándose <em>sobre ropas tomadas en prenda junto a "
     "todo altar</em>; Job 22:6 es la acusación de Elifaz, <em>tomaste prendas de tus hermanos sin causa</em>, "
     "y Job 24:3 los malvados tomando <em>en prenda el buey de la viuda</em> (ninguno todavía en estas "
     "páginas). ⚠ Las mismas tres consonantes escriben una cuerda, una región, un piloto de barco, destruir y "
@@ -31212,8 +31212,8 @@ DICTIONARY_ES["avel"] = ("avel",
     "el que hace injusticia es abominación a Jehová</em>. ⚠ <a href=\"deuteronomy-32.es.html#v32-4\">Deuteronomio "
     "32:4</a> (ya en estas páginas) la "
     "niega de Dios en una palabra, <em>Dios de fidelidad y sin injusticia</em>, y Sofonías 3:5 (todavía no en "
-    "estas páginas) repite la negación con la forma femenina de la raíz, <em>no hace injusticia</em>; Ezequiel 18 "
-    "(todavía no en estas páginas) hace de <em>hacer avel</em> aquello a lo que un justo se vuelve y de lo que "
+    "estas páginas) repite la negación con la forma femenina de la raíz, <em>no hace injusticia</em>; <a href=\"ezekiel-18.es.html#v18-24\">Ezequiel 18</a> "
+    "(ya en estas páginas) hace de <em>hacer avel</em> aquello a lo que un justo se vuelve y de lo que "
     "muere (18:24, 26).")
 
 DICTIONARY_ES["zanav"] = ("zanav / zinnev",
@@ -64107,4 +64107,52 @@ CHAPTER_ART["ezek17"] = [dict(
     note_es="Un águila en lo alto de un tronco. Detalle de un rollo colgante chino de 1755, no hecho para este capítulo; el árbol no se identifica como un cedro.",
     license="CC0",
     source_url="https://clevelandart.org/art/1977.31",
+)]
+
+# ======================================================================== Ezekiel 18 (both languages)
+DICTIONARY.append(('boser', 'boser', 'בֹּסֶר', 'boser', 'UNRIPE GRAPES, sour fruit. The vine in Isaiah 18:5 has it ripening after the blossom, Job 15:33 speaks of it shaken off a vine, and it is the fruit of the proverb about fathers and children: <a href="jeremiah-31.html#v31-28">Jeremiah 31:28</a> and <a href="ezekiel-18.html#v18-2">Ezekiel 18:2</a> (31:29 in English Bibles for the first).', ('Ezekiel', 18, 2)))
+DICTIONARY_ES['boser'] = ('boser', 'UVAS SIN MADURAR, fruta agria. En Isaías 18:5 va madurando tras la flor, Job 15:33 habla de ella sacudida de una vid, y es la fruta del proverbio sobre padres e hijos: <a href="jeremiah-31.es.html#v31-28">Jeremías 31:28</a> (31:29 en las Biblias en español) y <a href="ezekiel-18.es.html#v18-2">Ezequiel 18:2</a>.')
+_dict155_en('mashal', add=' &#11088; <a href="ezekiel-18.html#v18-2">Ezekiel 18:2</a> (now on these pages): the proverb of the sour grapes, which is to be used no more.')
+_dict155_es('mashal', add=' &#11088; <a href="ezekiel-18.es.html#v18-2">Ezequiel 18:2</a> (ya en estas páginas): el proverbio de las uvas agrias, que ya no se ha de usar.')
+_dict155_en('nefesh', add=' &#11088; <a href="ezekiel-18.html#v18-4">Ezekiel 18:4</a> (now on these pages): &lsquo;all the souls are mine &hellip; the soul that sins, it shall die&rsquo;, said again at verse 20.')
+_dict155_es('nefesh', add=' &#11088; <a href="ezekiel-18.es.html#v18-4">Ezequiel 18:4</a> (ya en estas páginas): «todas las almas son mías &hellip; el alma que peque, esa morirá», repetido en el versículo 20.')
+_dict155_en('avon', add=' &#11088; <a href="ezekiel-18.html#v18-20">Ezekiel 18:20</a> (now on these pages): a son shall not bear the father&rsquo;s iniquity, nor a father the son&rsquo;s.')
+_dict155_es('avon', add=' &#11088; <a href="ezekiel-18.es.html#v18-20">Ezequiel 18:20</a> (ya en estas páginas): el hijo no cargará con la iniquidad del padre, ni el padre con la del hijo.')
+_dict155_en('shuv', add=' &#11088; <a href="ezekiel-18.html#v18-30">Ezekiel 18:30</a> (now on these pages): &lsquo;turn back, and turn away&rsquo;, closing a chapter about turning in either direction.')
+_dict155_es('shuv', add=' &#11088; <a href="ezekiel-18.es.html#v18-30">Ezequiel 18:30</a> (ya en estas páginas): «vuélvanse, y apártense», al cierre de un capítulo sobre volverse en un sentido o en otro.')
+_dict155_en('lev', add=' &#11088; <a href="ezekiel-18.html#v18-31">Ezekiel 18:31</a> (now on these pages): the hearers are told to make themselves a new heart.')
+_dict155_es('lev', add=' &#11088; <a href="ezekiel-18.es.html#v18-31">Ezequiel 18:31</a> (ya en estas páginas): a los oyentes se les manda hacerse un corazón nuevo.')
+_dict155_en('ruach', add=' &#11088; <a href="ezekiel-18.html#v18-31">Ezekiel 18:31</a> (now on these pages): &lsquo;a new heart and a new spirit&rsquo;.')
+_dict155_es('ruach', add=' &#11088; <a href="ezekiel-18.es.html#v18-31">Ezequiel 18:31</a> (ya en estas páginas): «un corazón nuevo y un espíritu nuevo».')
+_dict155_en('niddah', add=' &#11088; <a href="ezekiel-18.html#v18-6">Ezekiel 18:6</a> (now on these pages): the righteous man does not approach a woman in her impurity.')
+_dict155_es('niddah', add=' &#11088; <a href="ezekiel-18.es.html#v18-6">Ezequiel 18:6</a> (ya en estas páginas): el justo no se acerca a una mujer en su impureza.')
+_dict155_en('gillulim', add=' &#11088; <a href="ezekiel-18.html#v18-6">Ezekiel 18:6</a> (now on these pages): the righteous man has not lifted his eyes to the idols of the house of Israel.')
+_dict155_es('gillulim', add=' &#11088; <a href="ezekiel-18.es.html#v18-6">Ezequiel 18:6</a> (ya en estas páginas): el justo no ha alzado sus ojos a los ídolos de la casa de Israel.')
+_dict155_en('pesha', add=' &#11088; <a href="ezekiel-18.html#v18-31">Ezekiel 18:31</a> (now on these pages): &lsquo;throw off from yourselves all your transgressions&rsquo;.')
+_dict155_es('pesha', add=' &#11088; <a href="ezekiel-18.es.html#v18-31">Ezequiel 18:31</a> (ya en estas páginas): «arrojen de ustedes todas sus rebeliones».')
+_dict155_en('tzaddiq', add=' &#11088; <a href="ezekiel-18.html#v18-5">Ezekiel 18:5</a> (now on these pages): the chapter&rsquo;s first case, a man who is righteous.')
+_dict155_es('tzaddiq', add=' &#11088; <a href="ezekiel-18.es.html#v18-5">Ezequiel 18:5</a> (ya en estas páginas): el primer caso del capítulo, un hombre que es justo.')
+_dict155_en('tzedaqah', add=' &#11088; <a href="ezekiel-18.html#v18-20">Ezekiel 18:20</a> (now on these pages): the righteousness of the righteous shall be upon him.')
+_dict155_es('tzedaqah', add=' &#11088; <a href="ezekiel-18.es.html#v18-20">Ezequiel 18:20</a> (ya en estas páginas): la justicia del justo será sobre él.')
+_dict155_en('neshekh', add=' &#11088; <a href="ezekiel-18.html#v18-8">Ezekiel 18:8</a> (now on these pages): refusing both is a mark of the righteous man; verses 13 and 17 name the pair again.')
+_dict155_es('neshekh', add=' &#11088; <a href="ezekiel-18.es.html#v18-8">Ezequiel 18:8</a> (ya en estas páginas): rehusar ambos es señal del justo; los versículos 13 y 17 vuelven a nombrar la pareja.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-18.html">Ezekiel 18</a> (now on these pages): the proverb of the sour grapes answered: the one who sins dies, and the one who turns back lives.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-18.es.html">Ezequiel 18</a> (ya en estas páginas): la respuesta al proverbio de las uvas agrias: el que peca muere, y el que se vuelve vive.')
+
+CHRON_CHAPTERS["ezek18"] = dict(era="exile",
+    when="Ezekiel is told to answer a proverb used in Israel, that children pay for their fathers: each one is judged by his own ways, and whoever turns back will live.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek18"] = [dict(
+    file="sugai-baikan-grapes.jpg",
+    title="Grapes (detail)",
+    title_es="Uvas (detalle)",
+    artist="Sugai Baikan", artist_es="Sugai Baikan",
+    year="1800s", year_es="siglo XIX", location="Cleveland Museum of Art, 1985.247", location_es="Museo de Arte de Cleveland, 1985.247",
+    alt="Detail of a Japanese ink painting: dark vine leaves and a cluster of pale green grapes.",
+    alt_es="Detalle de una pintura japonesa a tinta: hojas oscuras de vid y un racimo de uvas verde pálido.",
+    note="Pale grapes on a vine. A detail of a Japanese hanging scroll of the 1800s, not made for this chapter; the museum title says grapes, not sour ones.",
+    note_es="Uvas pálidas en una vid. Detalle de un rollo colgante japonés del siglo XIX, no hecho para este capítulo; el título del museo dice uvas, no agraces.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1985.247",
 )]
