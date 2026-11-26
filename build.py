@@ -4784,11 +4784,12 @@ def _chapter_art_html(art, lang="en"):
     src = html.escape(art["source_url"], quote=True)
     seen = "Ver el original" if es else "View the original"
     artist = art.get("artist_es") if es and art.get("artist_es") else art["artist"]
+    year = art.get("year_es") if es and art.get("year_es") else art["year"]
     # These fields are plain text, but library_data writes many of them with HTML entities
     # (&rsquo;, &ndash;, &eacute;); decode first so escaping does not print the entity itself.
     plain = lambda s: html.escape(html.unescape(s))
     line = (f'<span class="art-artist">{plain(artist)}</span>, '
-            f'{plain(art["year"])} · {plain(where)}')
+            f'{plain(year)} · {plain(where)}')
     notep = f'<p class="art-note">{note}</p>' if note else ""
     return f"""<figure class="chapter-art">
   <img src="{path}" alt="{html.escape(html.unescape(art['alt']), quote=True)}" loading="lazy"/>

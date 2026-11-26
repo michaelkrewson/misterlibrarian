@@ -64062,7 +64062,7 @@ CHAPTER_ART["ezek16"] = [dict(
     title="Earrings",
     title_es="Pendientes",
     artist="Unknown goldsmith, Roman-period Syria", artist_es="Orfebre desconocido, Siria de época romana",
-    year="100 BCE–100 CE", location="Cleveland Museum of Art, 1985.174", location_es="Museo de Arte de Cleveland, 1985.174",
+    year="100 BCE–100 CE", year_es="100 a. C.–100 d. C.", location="Cleveland Museum of Art, 1985.174", location_es="Museo de Arte de Cleveland, 1985.174",
     alt="Two gold hoop earrings, each with a dark red oval garnet and two rows of small gold balls.",
     alt_es="Dos pendientes de aro de oro, cada uno con un granate ovalado rojo oscuro y dos hileras de bolitas de oro.",
     note="Gold earrings, of the kind of adornment verses 11 and 12 list among the gifts. Made in Syria some centuries after Ezekiel, and not for this chapter.",
