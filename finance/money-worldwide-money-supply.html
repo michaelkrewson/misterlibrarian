@@ -752,7 +752,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🏦</span> Money Supply</h1>
   <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. 15 of 20 economies tracked here have a real, live figure today; the rest show "—" with their own source-note under the area name — a genuinely investigated economy with no working live source yet, not a guess or a silent drop. Click any column to sort.</p>
-  <p class="stamp">Updated 2026-11-26 04:52 UTC · see <a
+  <p class="stamp">Updated 2026-11-26 14:55 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -775,14 +775,14 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td title="2026-10-01">$23,532,800,000,000</td>
         <td class="mw-sub">—</td>
       </tr>
-      <tr data-m0="4338.811796739166" data-m1="12409.558750100012" data-m2="18049.05035201193" data-m3="19366.51722512822">
+      <tr data-m0="4338.811796739166" data-m1="12398.353509742521" data-m2="18043.766350406066" data-m3="19390.552792664952">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
           <span class="nm"><span class="n1">Euro area</span>
           <span class="mw-sub">European Central Bank BSI dataset (billions of euro → USD at today&#x27;s rate)</span></span></span></td>
         <td title="3,967.8 EURB as of 2026-09-04">$4,338,811,796,739</td>
-        <td title="11,348.4 EURB as of 2026-09">$12,409,558,750,100</td>
-        <td title="16,505.7 EURB as of 2026-09">$18,049,050,352,012</td>
-        <td title="17,710.5 EURB as of 2026-09">$19,366,517,225,128</td>
+        <td title="11,338.2 EURB as of 2026-10">$12,398,353,509,743</td>
+        <td title="16,500.8 EURB as of 2026-10">$18,043,766,350,406</td>
+        <td title="17,732.5 EURB as of 2026-10">$19,390,552,792,665</td>
       </tr>
       <tr data-m0="139.73137887501755" data-m1="1712.673586758311" data-m2="2009.181512133539" data-m3="2893.045307897321">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
@@ -865,23 +865,23 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td class="mw-sub">—</td>
         <td title="3,499.0 AUDB as of 30/09/2026">$2,298,797,713,685</td>
       </tr>
-      <tr data-m1="247.5204236891386" data-m2="282.92118738295875" data-m3="315.3788038389513">
+      <tr data-m1="250.92540086610487" data-m2="287.8992860486891" data-m3="317.79375877808985">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
           <span class="nm"><span class="n1">Denmark</span>
           <span class="mw-sub">Danmarks Nationalbank — table DNMNOGL &quot;Key figures for the MFI sector&quot; on the api.statbank.dk PxWebAPI instance it shares with Statistics Denmark (a different dialect from Norway&#x27;s SSB PxWebAPI: metadata lives at a &quot;tableinfo&quot; endpoint and the data query is a plain GET with variable-name params, not a POST json-stat2 body — the earlier note&#x27;s blocker was the wrong request shape, not a missing endpoint). SEKTORNAT pinned to &quot;all sectors domestic and foreign&quot; (the headline total, not a sector breakdown). No M0 published in this table. DKK million.</span></span></span></td>
         <td class="mw-sub">—</td>
-        <td title="1,691.9 DKKB as of 2026M09">$247,520,423,689</td>
-        <td title="1,933.8 DKKB as of 2026M09">$282,921,187,383</td>
-        <td title="2,155.7 DKKB as of 2026M09">$315,378,803,839</td>
+        <td title="1,715.1 DKKB as of 2026M10">$250,925,400,866</td>
+        <td title="1,967.8 DKKB as of 2026M10">$287,899,286,049</td>
+        <td title="2,172.2 DKKB as of 2026M10">$317,793,758,778</td>
       </tr>
-      <tr data-m1="407.57402091948427" data-m2="502.928046703965" data-m3="507.3341765993676">
+      <tr data-m1="404.6519095110679" data-m2="499.25614205789344" data-m3="503.782534663099">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
           <span class="nm"><span class="n1">Sweden</span>
           <span class="mw-sub">Statistics Sweden (SCB) PxWebApi — table FM5001, the &quot;Outstanding money supply, SEK millions&quot; content code (as against the table&#x27;s other content code, 12-month growth rate, which this board doesn&#x27;t want); M1/M2/M3, sourced from Sveriges Riksbank. The same PxWebApi 1.0 software as Norway&#x27;s SSB, but M1/M2/M3 live on their own &quot;Penningm&quot; dimension here rather than through ContentsCode directly, so this needed its own small provider (`scb_pxweb`) sharing the same underlying query helper. No M0/monetary-base table found on this API within reasonable effort, despite Sweden&#x27;s own textbook M0 definition (banknotes and coins held by the public) being real and commonly cited elsewhere. SEK million.</span></span></span></td>
         <td class="mw-sub">—</td>
-        <td title="4,188.8 SEKB as of 2026M09">$407,574,020,919</td>
-        <td title="5,168.8 SEKB as of 2026M09">$502,928,046,704</td>
-        <td title="5,214.1 SEKB as of 2026M09">$507,334,176,599</td>
+        <td title="4,158.8 SEKB as of 2026M10">$404,651,909,511</td>
+        <td title="5,131.1 SEKB as of 2026M10">$499,256,142,058</td>
+        <td title="5,177.6 SEKB as of 2026M10">$503,782,534,663</td>
       </tr>
       <tr data-m1="248.7158114697005" data-m2="699.4500425663648" data-m3="712.3417692129093">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
@@ -951,9 +951,9 @@ table.mw-sort td.mw-nm{white-space:normal}
       <tr>
         <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
         <td>$17,990,628,910,478</td>
-        <td>$62,907,008,088,962</td>
-        <td>$112,770,919,744,015</td>
-        <td>$48,866,682,501,114</td>
+        <td>$62,896,285,714,373</td>
+        <td>$112,766,941,936,428</td>
+        <td>$48,889,581,381,654</td>
       </tr>
     </tfoot>
   </table>
