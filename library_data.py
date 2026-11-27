@@ -64396,3 +64396,17 @@ CHAPTER_ART["ezek24"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1992.64",
 )]
+
+CHAPTER_ART["ezek25"] = [dict(
+    file="cma-roberts-dead-sea-towards-moab.jpg",
+    title="The Dead Sea Looking Towards Moab",
+    title_es="El mar Muerto mirando hacia Moab",
+    artist="David Roberts (Scottish, 1796–1864)", artist_es="David Roberts (escocés, 1796–1864)",
+    year="1839", year_es="1839", location="Cleveland Museum of Art, 1927.111", location_es="Museo de Arte de Cleveland, 1927.111",
+    alt="Color lithograph of walled stone buildings on a cliff above a deep ravine, with the Dead Sea and a long line of hills beyond.",
+    alt_es="Litografía en color de unos edificios de piedra amurallados sobre un risco, encima de un barranco profundo, con el mar Muerto y una larga línea de montes al fondo.",
+    note="The hills across the water are the side the title calls Moab (verses 8 to 11). The view is of the nineteenth century; the buildings in front are not from Ezekiel&rsquo;s time.",
+    note_es="Los montes del otro lado del agua son el lado que el título llama Moab (versículos 8 a 11). La vista es del siglo XIX; los edificios del primer plano no son de la época de Ezequiel.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1927.111",
+)]
