@@ -64496,8 +64496,8 @@ _dict155_es('matzevah', add=' &#11088; <a href="ezekiel-26.es.html#v26-11">Ezequ
 # ======================================================================== Ezekiel 27 (both languages)
 _dict155_en('kadkod', old='and Ezekiel 27:16 (not yet on these pages).', new='and <a href="ezekiel-27.html#v27-16">Ezekiel 27:16</a> (now on these pages).')
 _dict155_es('kadkod', old='y Ezequiel 27:16 (todavía no en estas páginas).', new='y <a href="ezekiel-27.es.html#v27-16">Ezequiel 27:16</a> (ya en estas páginas).')
-_dict155_en('maamaq', old='(Ezekiel 27:34), none yet on these pages;', new='(<a href="ezekiel-27.html#v27-34">Ezekiel 27:34</a>), only the last yet on these pages;')
-_dict155_es('maamaq', old='(Ezequiel 27:34), ninguno todavía en estas páginas;', new='(<a href="ezekiel-27.es.html#v27-34">Ezequiel 27:34</a>), solo el último ya en estas páginas;')
+_dict155_en('maamaq', old='(Ezekiel 27:34), none yet on these pages;', new='(<a href="ezekiel-27.html#v27-34">Ezekiel 27:34</a>), only the last now on these pages;')
+_dict155_es('maamaq', old='(Ezequiel 27:34), ninguno todavía en estas páginas;', new='(<a href="ezekiel-27.es.html#v27-34">Ezequiel 27:34</a>), solo el último ahora en estas páginas;')
 def _flip27(slug, old_en, new_en, old_es, new_es):
     for _e in ENCYCLOPEDIA:
         if _e["slug"] == slug:
@@ -64555,8 +64555,8 @@ CHAPTER_ART["ezek27"] = [dict(
     title_es="Dos barcas con plañideras",
     artist="Unknown maker, Egypt, Late period", artist_es="Autor desconocido, Egipto, Período Tardío",
     year="c. 667–647 BCE", year_es="hacia 667–647 a. C.", location="Cleveland Museum of Art, 1951.282", location_es="Museo de Arte de Cleveland, 1951.282",
-    alt="Limestone relief of two long boats with oars, crowded with women raising their arms in mourning, each steered by a man.",
-    alt_es="Relieve de piedra caliza con dos barcas largas con remos, llenas de mujeres que alzan los brazos en señal de duelo, cada una gobernada por un hombre.",
+    alt="Limestone relief of two long boats with oars, crowded with women raising their arms in mourning, with a man standing at one end of each.",
+    alt_es="Relieve de piedra caliza con dos barcas largas con remos, llenas de mujeres que alzan los brazos en señal de duelo, con un hombre de pie en un extremo de cada una.",
     note="Boats, oars and mourners, for a dirge over a ship. The relief shows part of an Egyptian funeral flotilla; it is not Tyre or its sailors.",
     note_es="Barcas, remos y dolientes, para una endecha por una nave. El relieve muestra parte de una flotilla funeraria egipcia; no es Tiro ni sus marineros.",
     license="CC0",
