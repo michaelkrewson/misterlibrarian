@@ -64562,3 +64562,49 @@ CHAPTER_ART["ezek27"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1951.282",
 )]
+
+# ======================================================================== Ezekiel 28 (both languages)
+_dict155_en('nagid', add=' &#11088; <a href="ezekiel-28.html#v28-2">Ezekiel 28:2</a> (now on these pages): &lsquo;say to the leader of Tyre&rsquo;.')
+_dict155_es('nagid', add=' &#11088; <a href="ezekiel-28.es.html#v28-2">Ezequiel 28:2</a> (ya en estas páginas): «di al caudillo de Tiro».')
+_dict155_en('arel', add=' &#11088; <a href="ezekiel-28.html#v28-10">Ezekiel 28:10</a> (now on these pages): &lsquo;the deaths of the uncircumcised you will die&rsquo;.')
+_dict155_es('arel', add=' &#11088; <a href="ezekiel-28.es.html#v28-10">Ezequiel 28:10</a> (ya en estas páginas): «las muertes de los incircuncisos morirás».')
+_dict155_en('qinah', add=' &#11088; <a href="ezekiel-28.html#v28-12">Ezekiel 28:12</a> (now on these pages): a dirge over the king of Tyre.')
+_dict155_es('qinah', add=' &#11088; <a href="ezekiel-28.es.html#v28-12">Ezequiel 28:12</a> (ya en estas páginas): una endecha por el rey de Tiro.')
+_dict155_en('sappir', add=' &#11088; <a href="ezekiel-28.html#v28-13">Ezekiel 28:13</a> (now on these pages): sapphire among the stones of the king of Tyre&rsquo;s covering.')
+_dict155_es('sappir', add=' &#11088; <a href="ezekiel-28.es.html#v28-13">Ezequiel 28:13</a> (ya en estas páginas): zafiro entre las piedras de la cubierta del rey de Tiro.')
+_dict155_en('keruv', add=' &#11088; <a href="ezekiel-28.html#v28-14">Ezekiel 28:14</a> (now on these pages): &lsquo;an anointed cherub that screens&rsquo; (also verse 16).')
+_dict155_es('keruv', add=' &#11088; <a href="ezekiel-28.es.html#v28-14">Ezequiel 28:14</a> (ya en estas páginas): «un querubín ungido que cubre» (también el versículo 16).')
+_dict155_en('shachat', add=' &#11088; <a href="ezekiel-28.html#v28-17">Ezekiel 28:17</a> (now on these pages): &lsquo;you ruined your wisdom&rsquo;.')
+_dict155_es('shachat', add=' &#11088; <a href="ezekiel-28.es.html#v28-17">Ezequiel 28:17</a> (ya en estas páginas): «arruinaste tu sabiduría».')
+_dict155_en('dever', add=' &#11088; <a href="ezekiel-28.html#v28-23">Ezekiel 28:23</a> (now on these pages): &lsquo;I will send pestilence into her&rsquo;, of Sidon.')
+_dict155_es('dever', add=' &#11088; <a href="ezekiel-28.es.html#v28-23">Ezequiel 28:23</a> (ya en estas páginas): «enviaré a ella pestilencia», de Sidón.')
+_ency155_en('daniel', add=' &#11088; <a href="ezekiel-28.html#v28-3">Ezekiel 28:3</a> (now on these pages): Tyre&rsquo;s leader is told, &lsquo;you are wiser than Daniel&rsquo;; the written form again lacks the yod.')
+_enc_l4_es('daniel', ' &#11088; <a href="ezekiel-28.es.html#v28-3">Ezequiel 28:3</a> (ya en estas páginas): se dice al caudillo de Tiro: «tú eres más sabio que Daniel»; la forma escrita vuelve a carecer de la yod.')
+_ency155_en('tyre', add=' &#11088; <a href="ezekiel-28.html#v28-12">Ezekiel 28:12</a> (now on these pages): a dirge over the king of Tyre, who was in Eden, the garden of God.')
+_enc_l4_es('tyre', ' &#11088; <a href="ezekiel-28.es.html#v28-12">Ezequiel 28:12</a> (ya en estas páginas): una endecha por el rey de Tiro, que estuvo en Edén, el jardín de Dios.')
+_ency155_en('sidon', add=' &#11088; <a href="ezekiel-28.html#v28-22">Ezekiel 28:22</a> (now on these pages): &lsquo;Look, I am against you, O Sidon&rsquo;.')
+_enc_l4_es('sidon', ' &#11088; <a href="ezekiel-28.es.html#v28-22">Ezequiel 28:22</a> (ya en estas páginas): «Mira, yo estoy contra ti, oh Sidón».')
+_ency155_en('jacob', add=' &#11088; <a href="ezekiel-28.html#v28-25">Ezekiel 28:25</a> (now on these pages): Israel will dwell on the ground given &lsquo;to my servant Jacob&rsquo;.')
+_enc_l4_es('jacob', ' &#11088; <a href="ezekiel-28.es.html#v28-25">Ezequiel 28:25</a> (ya en estas páginas): Israel habitará en el suelo dado «a mi siervo Jacob».')
+_ency155_en('satan', add=' &#11088; <a href="ezekiel-28.html#v28-12">Ezekiel 28:12</a> (now on these pages): the passage often drawn on for a fall of Satan names its subject as the king of Tyre.')
+_enc_l4_es('satan', ' &#11088; <a href="ezekiel-28.es.html#v28-12">Ezequiel 28:12</a> (ya en estas páginas): el pasaje que suele citarse para una caída de Satanás nombra como sujeto al rey de Tiro.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-28.html">Ezekiel 28</a> (now on these pages): words to the leader and the king of Tyre and against Sidon, then Israel dwelling securely.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-28.es.html">Ezequiel 28</a> (ya en estas páginas): palabras al caudillo y al rey de Tiro y contra Sidón, y después Israel habitando seguro.')
+
+CHRON_CHAPTERS["ezek28"] = dict(era="exile",
+    when="Ezekiel is told to speak to the leader of Tyre, to take up a dirge over its king, to prophesy against Sidon, and to say that Israel will dwell securely on its ground.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek28"] = [dict(
+    file="nimrud-ivory-ram-sphinxes-tree.jpg",
+    title="Ram-Headed Sphinxes Flanking a Sacred Tree",
+    title_es="Esfinges con cabeza de carnero a los lados de un árbol sagrado",
+    artist="Unknown maker, Phoenician style", artist_es="Autor desconocido, estilo fenicio",
+    year="900–800 BCE", year_es="900–800 a. C.", location="Cleveland Museum of Art, 1968.47", location_es="Museo de Arte de Cleveland, 1968.47",
+    alt="Carved ivory plaque with an ornate tree in the middle and a ram-headed creature on each side.",
+    alt_es="Placa de marfil tallada con un árbol ornamentado en el centro y una criatura con cabeza de carnero a cada lado.",
+    note="An ivory in the Phoenician style, from Nimrud in Assyria. Tyre was a Phoenician city. The creatures are sphinxes, not the cherub of this chapter.",
+    note_es="Un marfil de estilo fenicio, hallado en Nimrud, en Asiria. Tiro era una ciudad fenicia. Las criaturas son esfinges, no el querubín de este capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1968.47",
+)]
