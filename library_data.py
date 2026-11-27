@@ -3972,8 +3972,8 @@ DICTIONARY = [
      "man</em> stands in <strong>one verse</strong> of the Hebrew Bible</span>, that one; Malachi 3:5 (not "
      "yet on these pages) turns it into a class of person, <em>those who oppress the hired man in his "
      "wages</em>, listed with sorcerers, adulterers and perjurers; and the noun <em>osheq</em> is the "
-     "prophets' word for what the powerful do to the rest — Ezekiel 22:29, <em>the people of the land have "
-     "practised extortion</em>. The shelf at 24:14: <span class=\"tag t-kjv\">KJV</span> 'oppress', <span "
+     "prophets' word for what the powerful do to the rest — <a href=\"ezekiel-22.html#v22-29\">Ezekiel 22:29</a> (now on these pages), <em>the people of the land have "
+     "practiced oppression</em>. The shelf at 24:14: <span class=\"tag t-kjv\">KJV</span> 'oppress', <span "
      "class=\"tag t-niv\">NIV</span> 'take advantage of', <span class=\"tag t-nwt\">NWT 1984</span> 'defraud', "
      "<span class=\"tag t-drb\">Douay</span> 'refuse the hire of', <span class=\"tag t-rv\">RV 1909</span> «hacer "
      "agravio», <span class=\"tag t-rv60\">RV60</span> «oprimir», <span class=\"tag t-nvi\">NVI</span> "
@@ -4048,7 +4048,7 @@ DICTIONARY = [
      "homonym, to roast (Psalm 38:8's burning loins), shares the letters and nothing else. The shelf reads "
      "'seem vile' (KJV, ASV), 'appear despised' (Geneva), 'degraded' (NIV, TLB), 'disgraced' (NWT 1984) and, "
      "after its Latin, 'shamefully torn' (Douay)."
-     " ⭐ Its causative, <em>maqleh</em>, is the second of Deuteronomy 27&rsquo;s twelve curses: <em>cursed is he who makes light of his father or his mother</em> (<a href=\"deuteronomy-27.html#v27-16\">27:16</a>, now on these pages) &mdash; <span data-heb=\"מקלה\">a form in <strong>one verse</strong> of the Hebrew Bible</span>, and the exact opposite of the commandment&rsquo;s <em>honour</em>, <em>kabbed</em>, make heavy. Ezekiel 22:7 (not yet on these pages) indicts Jerusalem with the same verb, <em>father and mother they made light of in you</em>.",
+     " ⭐ Its causative, <em>maqleh</em>, is the second of Deuteronomy 27&rsquo;s twelve curses: <em>cursed is he who makes light of his father or his mother</em> (<a href=\"deuteronomy-27.html#v27-16\">27:16</a>, now on these pages) &mdash; <span data-heb=\"מקלה\">a form in <strong>one verse</strong> of the Hebrew Bible</span>, and the exact opposite of the commandment&rsquo;s <em>honour</em>, <em>kabbed</em>, make heavy. <a href=\"ezekiel-22.html#v22-7\">Ezekiel 22:7</a> (now on these pages) indicts Jerusalem with a kindred verb, <em>father and mother they made light of in you</em>.",
      ("Deuteronomy", 25, 3)),
     ("chasam", "chasam", "חָסַם", "chasam",
      "TO MUZZLE — to stop a mouth; and, once, to block a road. <span data-heb=\"חסם|חסמת\">The verb stands in "
@@ -30974,7 +30974,7 @@ DICTIONARY_ES["ashaq"] = ("ashaq",
     "<strong>un versículo</strong> de la Biblia hebrea</span>, ese; Malaquías 3:5 (todavía no en estas "
     "páginas) la convierte en una clase de persona, <em>los que oprimen al jornalero en su salario</em>, en "
     "una lista con hechiceros, adúlteros y perjuros; y el sustantivo <em>óshek</em> es la palabra de los "
-    "profetas para lo que los poderosos hacen con los demás —Ezequiel 22:29, <em>el pueblo de la tierra ha "
+    "profetas para lo que los poderosos hacen con los demás —<a href=\"ezekiel-22.es.html#v22-29\">Ezequiel 22:29</a> (ya en estas páginas), <em>el pueblo de la tierra ha "
     "practicado la extorsión</em>. El estante en 24:14: <span class=\"tag t-rv\">RV 1909</span> «hacer "
     "agravio», <span class=\"tag t-rv60\">RV60</span> «oprimir», <span class=\"tag t-nvi\">NVI</span> "
     "«aprovecharse de», <span class=\"tag t-kjv\">KJV</span> «oppress», <span class=\"tag t-niv\">NIV</span> "
@@ -31108,7 +31108,7 @@ DICTIONARY_ES["qalah"] = ("qalah / niqlah",
     "no la misma palabra; un tercer homónimo, tostar (los lomos ardientes del Salmo 38:8), comparte las letras y "
     "nada más. El estante lee «seem vile» (KJV, ASV), «appear despised» (Ginebra), «degraded» (NIV, TLB), "
     "«disgraced» (NWT 1984) y, siguiendo a su latín, «shamefully torn» (Douay); la RV 1909 «se envilezca»."
-    " ⭐ Su causativo, <em>maqleh</em>, es la segunda de las doce maldiciones de Deuteronomio 27: <em>maldito el que tenga en poco a su padre o a su madre</em> (<a href=\"deuteronomy-27.es.html#v27-16\">27:16</a>, ya en estas páginas) —<span data-heb=\"מקלה\">una forma en <strong>un versículo</strong> de la Biblia hebrea</span>, y el contrario exacto del <em>honra</em> del mandamiento, <em>kabbed</em>, haz pesado. Ezequiel 22:7 (todavía no en estas páginas) acusa a Jerusalén con el mismo verbo, <em>a padre y madre tuvieron en poco en ti</em>.")
+    " ⭐ Su causativo, <em>maqleh</em>, es la segunda de las doce maldiciones de Deuteronomio 27: <em>maldito el que tenga en poco a su padre o a su madre</em> (<a href=\"deuteronomy-27.es.html#v27-16\">27:16</a>, ya en estas páginas) —<span data-heb=\"מקלה\">una forma en <strong>un versículo</strong> de la Biblia hebrea</span>, y el contrario exacto del <em>honra</em> del mandamiento, <em>kabbed</em>, haz pesado. <a href=\"ezekiel-22.es.html#v22-7\">Ezequiel 22:7</a> (ya en estas páginas) acusa a Jerusalén con un verbo emparentado, <em>a padre y madre tuvieron en poco en ti</em>.")
 
 DICTIONARY_ES["chasam"] = ("chasam",
     "PONER BOZAL —tapar una boca; y, una vez, obstruir un camino. <span data-heb=\"חסם|חסמת\">El verbo está en "
@@ -50239,7 +50239,7 @@ DICTIONARY.extend([
      """SO-AND-SO, SUCH-AND-SUCH &mdash; a pair of words that stands for a name the speaker knows and will not say. <span data-heb-read="פלני">The pair stands in three verses of the Hebrew Bible</span>. Boaz uses it of a man: &lsquo;Turn aside, sit down here, so-and-so&rsquo; (<a href="ruth-4.html#v4-1">Ruth 4:1</a>, already on these pages), and the nearer redeemer is never named. David uses it of a place: &lsquo;the young men I have directed to such-and-such a place&rsquo; (<a href="1-samuel-21.html#v21-3">1 Samuel 21:3</a>, now on these pages). And the king of Aram uses it of the site of his camp, &lsquo;in such-and-such a place&rsquo;, which the prophet reveals anyway (2 Kings 6:8, not yet on these pages). ⚠ In 1 Samuel 21:3 the Greek did not translate it but wrote it as a name, <em>Phellani Maemoni</em>, in &lsquo;the place called God&rsquo;s Faithfulness&rsquo;. ⚠ The letters of <em>peloni</em> also spell &lsquo;the Pelonite&rsquo;, a clan name among David&rsquo;s mighty men (1 Chronicles 11:36).""",
      ("1 Samuel", 21, 3)),
     ("chol", "chol", "חֹל", "chol",
-     """COMMON, ordinary, not set apart &mdash; the opposite of <a href="dictionary.html#qodesh">qodesh</a>, holy. <span data-heb-read="חל">As a noun it stands in seven verses of the Hebrew Bible</span>, and in six of them <em>qodesh</em> stands in the same verse. The priests are &lsquo;to distinguish between the holy and the common&rsquo; (<a href="leviticus-10.html#v10-10">Leviticus 10:10</a>, already on these pages); Ezekiel accuses them of failing to (Ezekiel 22:26), gives them the duty again (44:23), and builds the wall round the temple &lsquo;to separate the holy from the common&rsquo; (42:20); and in the seventh he marks the land left over for the city as common (48:15). Two of the six are at Nob, where the priest has &lsquo;no common bread&rsquo; but only holy bread, and David calls his errand &lsquo;a common journey&rsquo; (<a href="1-samuel-21.html#v21-5">1 Samuel 21:5&ndash;6</a>, now on these pages). ⚠ It is not a word for unclean: the common is clean, merely not holy. ⚠ The same two letters spell <em>hechel</em>, he began, and other words; a search of the letters finds them all together.""",
+     """COMMON, ordinary, not set apart &mdash; the opposite of <a href="dictionary.html#qodesh">qodesh</a>, holy. <span data-heb-read="חל">As a noun it stands in seven verses of the Hebrew Bible</span>, and in six of them <em>qodesh</em> stands in the same verse. The priests are &lsquo;to distinguish between the holy and the common&rsquo; (<a href="leviticus-10.html#v10-10">Leviticus 10:10</a>, already on these pages); Ezekiel accuses them of failing to (<a href=\"ezekiel-22.html#v22-26\">Ezekiel 22:26</a>, now on these pages), gives them the duty again (44:23), and builds the wall round the temple &lsquo;to separate the holy from the common&rsquo; (42:20); and in the seventh he marks the land left over for the city as common (48:15). Two of the six are at Nob, where the priest has &lsquo;no common bread&rsquo; but only holy bread, and David calls his errand &lsquo;a common journey&rsquo; (<a href="1-samuel-21.html#v21-5">1 Samuel 21:5&ndash;6</a>, now on these pages). ⚠ It is not a word for unclean: the common is clean, merely not holy. ⚠ The same two letters spell <em>hechel</em>, he began, and other words; a search of the letters finds them all together.""",
      ("1 Samuel", 21, 5)),
 ])
 DICTIONARY_ES["meshugga"] = ("meshuggá",
@@ -50247,7 +50247,7 @@ DICTIONARY_ES["meshugga"] = ("meshuggá",
 DICTIONARY_ES["peloni-almoni"] = ("peloní almoní",
     """FULANO, TAL Y CUAL &mdash;un par de palabras que ocupa el lugar de un nombre que quien habla conoce y no quiere decir. <span data-heb-read="פלני">El par está en tres versículos de la Biblia hebrea</span>. Booz lo usa de un hombre: «Desvíate, siéntate aquí, fulano» (<a href="ruth-4.es.html#v4-1">Rut 4:1</a>, ya en estas páginas), y el redentor más cercano nunca recibe nombre. David lo usa de un lugar: «a los jóvenes los he citado a tal y cual lugar» (<a href="1-samuel-21.es.html#v21-3">1 Samuel 21:3</a>, ya en estas páginas). Y el rey de Siria lo usa del sitio de su campamento, «en tal y cual lugar», que el profeta revela de todos modos (2 Reyes 6:8, todavía no en estas páginas). ⚠ En 1 Samuel 21:3 el griego no lo tradujo, sino que lo escribió como un nombre, <em>Felaní Maemoní</em>, en «el lugar llamado Fidelidad de Dios». ⚠ Las letras de <em>peloní</em> forman también «el pelonita», un nombre de clan entre los valientes de David (1 Crónicas 11:36).""")
 DICTIONARY_ES["chol"] = ("jol",
-    """COMÚN, ordinario, no apartado &mdash;lo contrario de <a href="diccionario.html#qodesh">qódesh</a>, santo. <span data-heb-read="חל">Como sustantivo está en siete versículos de la Biblia hebrea</span>, y en seis de ellos <em>qódesh</em> está en el mismo versículo. Los sacerdotes han de «distinguir entre lo santo y lo común» (<a href="leviticus-10.es.html#v10-10">Levítico 10:10</a>, ya en estas páginas); Ezequiel los acusa de no hacerlo (Ezequiel 22:26), les vuelve a dar el deber (44:23), y levanta el muro alrededor del templo «para separar lo santo de lo común» (42:20); y en el séptimo marca como común la tierra que queda para la ciudad (48:15). Dos de los seis están en Nob, donde el sacerdote no tiene «pan común», sino solo pan santo, y David llama a su encargo «un viaje común» (<a href="1-samuel-21.es.html#v21-5">1 Samuel 21:5&ndash;6</a>, ya en estas páginas). ⚠ No es una palabra para impuro: lo común es puro, solo que no es santo. ⚠ Las mismas dos letras forman <em>hejel</em>, comenzó, y otras palabras; una búsqueda de las letras las encuentra todas juntas.""")
+    """COMÚN, ordinario, no apartado &mdash;lo contrario de <a href="diccionario.html#qodesh">qódesh</a>, santo. <span data-heb-read="חל">Como sustantivo está en siete versículos de la Biblia hebrea</span>, y en seis de ellos <em>qódesh</em> está en el mismo versículo. Los sacerdotes han de «distinguir entre lo santo y lo común» (<a href="leviticus-10.es.html#v10-10">Levítico 10:10</a>, ya en estas páginas); Ezequiel los acusa de no hacerlo (<a href=\"ezekiel-22.es.html#v22-26\">Ezequiel 22:26</a>, ya en estas páginas), les vuelve a dar el deber (44:23), y levanta el muro alrededor del templo «para separar lo santo de lo común» (42:20); y en el séptimo marca como común la tierra que queda para la ciudad (48:15). Dos de los seis están en Nob, donde el sacerdote no tiene «pan común», sino solo pan santo, y David llama a su encargo «un viaje común» (<a href="1-samuel-21.es.html#v21-5">1 Samuel 21:5&ndash;6</a>, ya en estas páginas). ⚠ No es una palabra para impuro: lo común es puro, solo que no es santo. ⚠ Las mismas dos letras forman <em>hejel</em>, comenzó, y otras palabras; una búsqueda de las letras las encuentra todas juntas.""")
 
 # encyclopedia
 _REF21 = {"david": [("1 Samuel", 21, 11)], "saul-king": [("1 Samuel", 21, 11)], "jonathan": [("1 Samuel", 21, 1)],
@@ -63931,8 +63931,8 @@ CHAPTER_ART["ezek12"] = [dict(
 
 # ======================================================================== Ezekiel 13 (both languages)
 DICTIONARY.append(("tafel", "tafel", "תָּפֵל", "tafel",
-    "WHITEWASH, as this translation has it at <a href=\"ezekiel-13.html#v13-10\">Ezekiel 13:10&ndash;15</a>: what the prophets daub on a partition. It comes again at Ezekiel 22:28 (not yet on these pages). The same letters are at <a href=\"lamentations-2.html#v14\">Lamentations 2:14</a>, where the page prints it &lsquo;emptiness&rsquo;, and at Job 6:6 (not yet on these pages), of food eaten without salt.", ("Ezekiel", 13, 10)))
-DICTIONARY_ES["tafel"] = ("tafel", "CAL, como lo pone esta traducción en <a href=\"ezekiel-13.es.html#v13-10\">Ezequiel 13:10&ndash;15</a>: lo que los profetas untan en un tabique. Vuelve en Ezequiel 22:28 (todavía no en estas páginas). Las mismas letras están en <a href=\"lamentations-2.es.html#v14\">Lamentaciones 2:14</a>, donde la página la imprime «engaño», y en Job 6:6 (todavía no en estas páginas), de la comida sin sal.")
+    "WHITEWASH, as this translation has it at <a href=\"ezekiel-13.html#v13-10\">Ezekiel 13:10&ndash;15</a>: what the prophets daub on a partition. It comes again at <a href=\"ezekiel-22.html#v22-28\">Ezekiel 22:28</a> (now on these pages). The same letters are at <a href=\"lamentations-2.html#v14\">Lamentations 2:14</a>, where the page prints it &lsquo;emptiness&rsquo;, and at Job 6:6 (not yet on these pages), of food eaten without salt.", ("Ezekiel", 13, 10)))
+DICTIONARY_ES["tafel"] = ("tafel", "CAL, como lo pone esta traducción en <a href=\"ezekiel-13.es.html#v13-10\">Ezequiel 13:10&ndash;15</a>: lo que los profetas untan en un tabique. Vuelve en <a href=\"ezekiel-22.es.html#v22-28\">Ezequiel 22:28</a> (ya en estas páginas). Las mismas letras están en <a href=\"lamentations-2.es.html#v14\">Lamentaciones 2:14</a>, donde la página la imprime «engaño», y en Job 6:6 (todavía no en estas páginas), de la comida sin sal.")
 _dict155_en('shav', add=' &#11088; <a href="ezekiel-13.html#v13-6">Ezekiel 13:6&ndash;9</a> (now on these pages): the prophets see emptiness and speak it.')
 _dict155_es('shav', add=' &#11088; <a href="ezekiel-13.es.html#v13-6">Ezequiel 13:6&ndash;9</a> (ya en estas páginas): los profetas ven vanidad y la hablan.')
 _dict155_en('qesem', add=' &#11088; <a href="ezekiel-13.html#v13-6">Ezekiel 13:6&ndash;9 and 23</a> (now on these pages): lying divination, which will be divined no more.')
@@ -64283,4 +64283,40 @@ CHAPTER_ART["ezek21"] = [dict(
     note_es="Una hoja de bronce sin su empuñadura, de Irán. Es anterior a Ezequiel y no es un arma babilónica; solo representa la espada del capítulo.",
     license="CC0",
     source_url="https://clevelandart.org/art/1942.553",
+)]
+
+# ======================================================================== Ezekiel 22 (both languages)
+_dict155_en('damim', add=' &#11088; <a href="ezekiel-22.html#v22-2">Ezekiel 22:2</a> (now on these pages): Jerusalem is &lsquo;the city of blood&rsquo;.')
+_dict155_es('damim', add=' &#11088; <a href="ezekiel-22.es.html#v22-2">Ezequiel 22:2</a> (ya en estas páginas): Jerusalén es «la ciudad de sangre».')
+_dict155_en('mehumah', add=' &#11088; <a href="ezekiel-22.html#v22-5">Ezekiel 22:5</a> (now on these pages): the city is &lsquo;great in panic&rsquo;.')
+_dict155_es('mehumah', add=' &#11088; <a href="ezekiel-22.es.html#v22-5">Ezequiel 22:5</a> (ya en estas páginas): la ciudad es «grande en pánico».')
+_dict155_en('zimmah', add=' &#11088; <a href="ezekiel-22.html#v22-9">Ezekiel 22:9</a> (now on these pages): &lsquo;depravity they have done in your midst&rsquo;.')
+_dict155_es('zimmah', add=' &#11088; <a href="ezekiel-22.es.html#v22-9">Ezequiel 22:9</a> (ya en estas páginas): «perversidad han hecho en medio de ti».')
+_dict155_en('qesher', add=' &#11088; <a href="ezekiel-22.html#v22-25">Ezekiel 22:25</a> (now on these pages): a conspiracy of her prophets, like a lion tearing prey.')
+_dict155_es('qesher', add=' &#11088; <a href="ezekiel-22.es.html#v22-25">Ezequiel 22:25</a> (ya en estas páginas): una conspiración de sus profetas, como león que desgarra presa.')
+_dict155_en('chamas', add=' &#11088; <a href="ezekiel-22.html#v22-26">Ezekiel 22:26</a> (now on these pages): &lsquo;her priests have done violence to my law&rsquo;.')
+_dict155_es('chamas', add=' &#11088; <a href="ezekiel-22.es.html#v22-26">Ezequiel 22:26</a> (ya en estas páginas): «sus sacerdotes han hecho violencia a mi ley».')
+_dict155_en('perets', add=' &#11088; <a href="ezekiel-22.html#v22-30">Ezekiel 22:30</a> (now on these pages): a man is sought to stand in the breach, and none is found.')
+_dict155_es('perets', add=' &#11088; <a href="ezekiel-22.es.html#v22-30">Ezequiel 22:30</a> (ya en estas páginas): se busca un hombre que se ponga en la brecha, y no se halla.')
+_dict155_en('zaam', add=' &#11088; <a href="ezekiel-22.html#v22-31">Ezekiel 22:31</a> (now on these pages): &lsquo;I have poured out my indignation on them&rsquo; (also verse 24).')
+_dict155_es('zaam', add=' &#11088; <a href="ezekiel-22.es.html#v22-31">Ezequiel 22:31</a> (ya en estas páginas): «he derramado sobre ellos mi indignación» (también el versículo 24).')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-22.html">Ezekiel 22</a> (now on these pages): Jerusalem as the city of blood, the house of Israel as dross in a furnace, and a search for one man to stand in the breach.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-22.es.html">Ezequiel 22</a> (ya en estas páginas): Jerusalén como ciudad de sangre, la casa de Israel como escoria en un horno, y la búsqueda de un hombre que se ponga en la brecha.')
+
+CHRON_CHAPTERS["ezek22"] = dict(era="exile",
+    when="Ezekiel is told to charge Jerusalem as the city of blood, to speak of its people as dross in a furnace, and to name the wrongs of its prophets, priests, princes and people.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek22"] = [dict(
+    file="meunier-the-furnace.jpg",
+    title="The Furnace",
+    title_es="El horno",
+    artist="Constantin Meunier", artist_es="Constantin Meunier",
+    year="c. 1890–1900", year_es="hacia 1890–1900", location="Cleveland Museum of Art, 1946.347", location_es="Museo de Arte de Cleveland, 1946.347",
+    alt="Photograph of a square bronze relief showing three workers bending and pushing with long tools at the mouth of a furnace.",
+    alt_es="Fotografía de un relieve cuadrado de bronce con tres obreros que se inclinan y empujan con herramientas largas ante la boca de un horno.",
+    note="Workers at a furnace, the picture of verses 18 to 22. A Belgian bronze of industrial labour, not an ancient refinery and not made for this chapter.",
+    note_es="Obreros ante un horno, la imagen de los versículos 18 a 22. Un bronce belga sobre el trabajo industrial, no una refinería antigua ni hecho para este capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1946.347",
 )]
