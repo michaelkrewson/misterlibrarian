@@ -64447,3 +64447,46 @@ _enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-25.es.html">Ezequiel 25</a> (y
 CHRON_CHAPTERS["ezek25"] = dict(era="exile",
     when="Ezekiel is told to speak against Ammon, Moab, Edom and the Philistines, each for what it said or did against Judah and Israel.",
     clock="The chapter gives no date.")
+
+# ======================================================================== Ezekiel 26 (both languages)
+_dict60_en("shifat", old="(Ezekiel 26:10, not yet on these pages), and", new='(<a href="ezekiel-26.html#v26-10">Ezekiel 26:10</a>, now on these pages), and')
+_dict60_es("shifat", old="de caballos (Ezequiel 26:10, todavía no en estas páginas), y", new='de caballos (<a href="ezekiel-26.es.html#v26-10">Ezequiel 26:10</a>, ya en estas páginas), y')
+DICTIONARY_ES["qinah"] = ("quiná", 'UN LAMENTO, una endecha fúnebre formal &mdash;el poema y también el acto de entonarlo («David entonó este lamento», 2 Samuel 1:17). Es un género reconocido, con su propio ritmo cojo, y su señal es un grito repetido: aquí «¡Cómo han caído los valientes!», tres veces (vv19, 25, 27). &#9888;&#65039; No debe confundirse con <em>qin&rsquo;ah</em>, «celo», una palabra hebrea sin relación que se translitera parecido. Un lamento no es un obituario equilibrado: el de David no dice nada de la locura de Saúl, de la lanza que le arrojó ni de los años de persecución. Todo su oficio es alabar y llorar. El libro de LAMENTACIONES se nombra por esta palabra en la tradición hebrea (Eikhah, «Cómo…», es su grito inicial), y Amós parodia la forma con efecto devastador (5:1-2). &#11088; <a href="ezekiel-19.es.html#v19-1">Ezequiel 19:1</a> (ya en estas páginas): se manda a Ezequiel levantar una endecha por los príncipes de Israel.')
+_dict155_en('baz', add=' &#11088; <a href="ezekiel-26.html#v26-5">Ezekiel 26:5</a> (now on these pages): Tyre &lsquo;will become plunder to the nations&rsquo;.')
+_dict155_es('baz', add=' &#11088; <a href="ezekiel-26.es.html#v26-5">Ezequiel 26:5</a> (ya en estas páginas): Tiro «vendrá a ser botín para las naciones».')
+_dict155_en('kinnor', add=' &#11088; <a href="ezekiel-26.html#v26-13">Ezekiel 26:13</a> (now on these pages): &lsquo;the sound of your lyres will be heard no more&rsquo;.')
+_dict155_es('kinnor', add=' &#11088; <a href="ezekiel-26.es.html#v26-13">Ezequiel 26:13</a> (ya en estas páginas): «el son de tus liras no se oirá más».')
+_dict155_en('nasi', add=' &#11088; <a href="ezekiel-26.html#v26-16">Ezekiel 26:16</a> (now on these pages): &lsquo;all the princes of the sea&rsquo; come down from their thrones.')
+_dict155_es('nasi', add=' &#11088; <a href="ezekiel-26.es.html#v26-16">Ezequiel 26:16</a> (ya en estas páginas): «todos los príncipes del mar» descienden de sus tronos.')
+_dict155_en('qinah', add=' &#11088; <a href="ezekiel-26.html#v26-17">Ezekiel 26:17</a> (now on these pages): the princes of the sea take up a dirge over Tyre.')
+_dict155_es('qinah', add=' &#11088; <a href="ezekiel-26.es.html#v26-17">Ezequiel 26:17</a> (ya en estas páginas): los príncipes del mar levantan una endecha por Tiro.')
+_dict155_en('tehom', add=' &#11088; <a href="ezekiel-26.html#v26-19">Ezekiel 26:19</a> (now on these pages): &lsquo;when I bring up the deep over you&rsquo;.')
+_dict155_es('tehom', add=' &#11088; <a href="ezekiel-26.es.html#v26-19">Ezequiel 26:19</a> (ya en estas páginas): «cuando haga subir sobre ti el abismo».')
+_dict155_en('bor', add=' &#11088; <a href="ezekiel-26.html#v26-20">Ezekiel 26:20</a> (now on these pages): &lsquo;those who go down to the pit&rsquo;, twice, of the dead.')
+_dict155_es('bor', add=' &#11088; <a href="ezekiel-26.es.html#v26-20">Ezequiel 26:20</a> (ya en estas páginas): «los que descienden a la fosa», dos veces, de los muertos.')
+_dict155_en('tzvi', add=' &#11088; <a href="ezekiel-26.html#v26-20">Ezekiel 26:20</a> (now on these pages): &lsquo;I will set glory in the land of the living&rsquo;.')
+_dict155_es('tzvi', add=' &#11088; <a href="ezekiel-26.es.html#v26-20">Ezequiel 26:20</a> (ya en estas páginas): «pondré gloria en la tierra de los vivientes».')
+_ency155_en('tyre', add=' &#11088; <a href="ezekiel-26.html#v26-2">Ezekiel 26:2</a> (now on these pages): Tyre says &lsquo;Aha&rsquo; over Jerusalem, and is to be made a bare rock where nets are spread.')
+_enc_l4_es('tyre', ' &#11088; <a href="ezekiel-26.es.html#v26-2">Ezequiel 26:2</a> (ya en estas páginas): Tiro dice «¡Ajá!» sobre Jerusalén, y ha de quedar como roca desnuda donde se tienden redes.')
+_ency155_en('nebuchadnezzar', add=' &#11088; <a href="ezekiel-26.html#v26-7">Ezekiel 26:7</a> (now on these pages): he is brought against Tyre from the north, &lsquo;king of kings&rsquo;, spelled Nebuchadrezzar.')
+_enc_l4_es('nebuchadnezzar', ' &#11088; <a href="ezekiel-26.es.html#v26-7">Ezequiel 26:7</a> (ya en estas páginas): es traído contra Tiro desde el norte, «rey de reyes».')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-26.html">Ezekiel 26</a> (now on these pages): against Tyre, which is to become a bare rock, and the dirge of the princes of the sea.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-26.es.html">Ezequiel 26</a> (ya en estas páginas): contra Tiro, que ha de quedar como roca desnuda, y la endecha de los príncipes del mar.')
+
+CHRON_CHAPTERS["ezek26"] = dict(era="exile",
+    when="Ezekiel speaks against Tyre, which exulted over Jerusalem: nations and Nebuchadrezzar will come against it, and the princes of the sea will raise a dirge over it.",
+    clock="The eleventh year, on the first of the month; no month is named.")
+
+CHAPTER_ART["ezek26"] = [dict(
+    file="cma-roberts-tyre-from-isthmus.jpg",
+    title="Sur or Tsor, Ancient Tyre from the Isthmus",
+    title_es="Sur o Tsor, la antigua Tiro desde el istmo",
+    artist="David Roberts (Scottish, 1796–1864)", artist_es="David Roberts (escocés, 1796–1864)",
+    year="1839", year_es="1839", location="Cleveland Museum of Art, 1927.135", location_es="Museo de Arte de Cleveland, 1927.135",
+    alt="Color lithograph of a town on a low headland with the sea on both sides, seen from a neck of land where fallen columns lie in the foreground.",
+    alt_es="Litografía en color de una población sobre un promontorio bajo con el mar a ambos lados, vista desde una lengua de tierra con columnas caídas en primer plano.",
+    note="Tyre as it looked from the isthmus in April 1839, the date lettered on the plate. The town shown is of a much later age than Ezekiel&rsquo;s.",
+    note_es="Tiro vista desde el istmo en abril de 1839, la fecha escrita en la lámina. La población que se ve es de una época muy posterior a la de Ezequiel.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1927.135",
+)]
