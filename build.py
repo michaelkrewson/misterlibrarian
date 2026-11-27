@@ -1852,8 +1852,12 @@ ES_FOOTER = f"""<footer class="site-foot">
 
 # Pages that must never load AdSense. 1 Kings 10 carries Poynter's painting, where the queen is
 # bare-breasted; a fine-art nude is right for the chapter and wrong for ads (Michael, 2026-11-05).
+# Ezekiel 16 and 23 are faithful translations of sexually blunt Hebrew, so they carry no ads
+# (Michael, 2026-11-27). To switch ads off on another chapter, add BOTH its filenames here.
 # Keyed on the filename page() is given. check_no_ad_pages() fails the build if one leaks.
-NO_AD_PAGES = {"1-kings-10.html", "1-kings-10.es.html"}
+NO_AD_PAGES = {"1-kings-10.html", "1-kings-10.es.html",
+               "ezekiel-16.html", "ezekiel-16.es.html",
+               "ezekiel-23.html", "ezekiel-23.es.html"}
 
 
 def _goatcounter_script(ads=True):
