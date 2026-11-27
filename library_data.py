@@ -64492,3 +64492,73 @@ CHAPTER_ART["ezek26"] = [dict(
 )]
 _dict155_en('matzevah', add=' &#11088; <a href="ezekiel-26.html#v26-11">Ezekiel 26:11</a> (now on these pages): &lsquo;the standing stones of your power&rsquo;, of Tyre.')
 _dict155_es('matzevah', add=' &#11088; <a href="ezekiel-26.es.html#v26-11">Ezequiel 26:11</a> (ya en estas páginas): «las piedras alzadas de tu poder», de Tiro.')
+
+# ======================================================================== Ezekiel 27 (both languages)
+_dict155_en('kadkod', old='and Ezekiel 27:16 (not yet on these pages).', new='and <a href="ezekiel-27.html#v27-16">Ezekiel 27:16</a> (now on these pages).')
+_dict155_es('kadkod', old='y Ezequiel 27:16 (todavía no en estas páginas).', new='y <a href="ezekiel-27.es.html#v27-16">Ezequiel 27:16</a> (ya en estas páginas).')
+_dict155_en('maamaq', old='(Ezekiel 27:34), none yet on these pages;', new='(<a href="ezekiel-27.html#v27-34">Ezekiel 27:34</a>), only the last now on these pages;')
+_dict155_es('maamaq', old='(Ezequiel 27:34), ninguno todavía en estas páginas;', new='(<a href="ezekiel-27.es.html#v27-34">Ezequiel 27:34</a>), solo el último ahora en estas páginas;')
+def _flip27(slug, old_en, new_en, old_es, new_es):
+    for _e in ENCYCLOPEDIA:
+        if _e["slug"] == slug:
+            assert _e["desc"].count(old_en) == 1, (slug, old_en)
+            _e["desc"] = _e["desc"].replace(old_en, new_en)
+    if old_es is not None:
+        _n, _s = ENCYCLOPEDIA_ES[slug]
+        assert _s.count(old_es) == 1, (slug, old_es)
+        ENCYCLOPEDIA_ES[slug] = (_n, _s.replace(old_es, new_es))
+_flip27('tyre', 'Ezekiel 27:17, not yet on these pages', '<a href="ezekiel-27.html#v27-17">Ezekiel 27:17</a>, now on these pages', 'Ezequiel 27:17, todavía no en estas páginas', '<a href="ezekiel-27.es.html#v27-17">Ezequiel 27:17</a>, ya en estas páginas')
+_flip27('gebal', "&lsquo;elders and skilled men&rsquo; as the shipwrights who caulked Tyre's own vessels (Ezekiel 27:9, not yet on these pages)", '&lsquo;elders&rsquo; and &lsquo;wise men&rsquo; as those repairing Tyre&rsquo;s damage (<a href="ezekiel-27.html#v27-9">Ezekiel 27:9</a>, now on these pages)', '«ancianos y hombres hábiles» como los calafateadores de los propios barcos de Tiro (Ezequiel 27:9, todavía no en estas páginas)', '«ancianos» y «sabios» como los que reparan las averías de Tiro (<a href="ezekiel-27.es.html#v27-9">Ezequiel 27:9</a>, ya en estas páginas)')
+_flip27('tarshish', 'Ezekiel 27:12 has Tarshish', '<a href="ezekiel-27.html#v27-12">Ezekiel 27:12</a> (now on these pages) has Tarshish', None, None)
+_dict155_en('qinah', add=' &#11088; <a href="ezekiel-27.html#v27-2">Ezekiel 27:2</a> (now on these pages): &lsquo;take up a dirge for Tyre&rsquo;.')
+_dict155_es('qinah', add=' &#11088; <a href="ezekiel-27.es.html#v27-2">Ezequiel 27:2</a> (ya en estas páginas): «levanta una endecha por Tiro».')
+_dict155_en('berosh', add=' &#11088; <a href="ezekiel-27.html#v27-5">Ezekiel 27:5</a> (now on these pages): the planks of the ship Tyre are of cypress from Senir.')
+_dict155_es('berosh', add=' &#11088; <a href="ezekiel-27.es.html#v27-5">Ezequiel 27:5</a> (ya en estas páginas): los tablones de la nave Tiro son de ciprés de Senir.')
+_dict155_en('nes', add=' &#11088; <a href="ezekiel-27.html#v27-7">Ezekiel 27:7</a> (now on these pages): Tyre&rsquo;s sail is &lsquo;to be your banner&rsquo;.')
+_dict155_es('nes', add=' &#11088; <a href="ezekiel-27.es.html#v27-7">Ezequiel 27:7</a> (ya en estas páginas): la vela de Tiro ha de «servirte de estandarte».')
+_dict155_en('tekhelet', add=' &#11088; <a href="ezekiel-27.html#v27-7">Ezekiel 27:7</a> (now on these pages): &lsquo;blue and purple&rsquo; for Tyre&rsquo;s covering.')
+_dict155_es('tekhelet', add=' &#11088; <a href="ezekiel-27.es.html#v27-7">Ezequiel 27:7</a> (ya en estas páginas): «azul y púrpura» para la cubierta de Tiro.')
+_dict155_en('magen', add=' &#11088; <a href="ezekiel-27.html#v27-10">Ezekiel 27:10</a> (now on these pages): &lsquo;small shield and helmet&rsquo; hung in Tyre.')
+_dict155_es('magen', add=' &#11088; <a href="ezekiel-27.es.html#v27-10">Ezequiel 27:10</a> (ya en estas páginas): «escudo pequeño y yelmo» colgados en Tiro.')
+_dict155_en('nechoshet', add=' &#11088; <a href="ezekiel-27.html#v27-13">Ezekiel 27:13</a> (now on these pages): &lsquo;vessels of bronze&rsquo; among the barter.')
+_dict155_es('nechoshet', add=' &#11088; <a href="ezekiel-27.es.html#v27-13">Ezequiel 27:13</a> (ya en estas páginas): «vasijas de bronce» en el trueque.')
+_dict155_en('shen', add=' &#11088; <a href="ezekiel-27.html#v27-15">Ezekiel 27:15</a> (now on these pages): &lsquo;horns of ivory&rsquo; brought as payment.')
+_dict155_es('shen', add=' &#11088; <a href="ezekiel-27.es.html#v27-15">Ezequiel 27:15</a> (ya en estas páginas): «cuernos de marfil» traídos en pago.')
+_dict155_en('nasi', add=' &#11088; <a href="ezekiel-27.html#v27-21">Ezekiel 27:21</a> (now on these pages): &lsquo;all the princes of Kedar&rsquo;.')
+_dict155_es('nasi', add=' &#11088; <a href="ezekiel-27.es.html#v27-21">Ezequiel 27:21</a> (ya en estas páginas): «todos los príncipes de Cedar».')
+_dict155_en('efer', add=' &#11088; <a href="ezekiel-27.html#v27-30">Ezekiel 27:30</a> (now on these pages): &lsquo;in ashes they will roll&rsquo;.')
+_dict155_es('efer', add=' &#11088; <a href="ezekiel-27.es.html#v27-30">Ezequiel 27:30</a> (ya en estas páginas): «en cenizas se revolcarán».')
+_dict155_en('saq', add=' &#11088; <a href="ezekiel-27.html#v27-31">Ezekiel 27:31</a> (now on these pages): the mourners &lsquo;gird on sackcloth&rsquo;.')
+_dict155_es('saq', add=' &#11088; <a href="ezekiel-27.es.html#v27-31">Ezequiel 27:31</a> (ya en estas páginas): los dolientes «se ceñirán de saco».')
+_dict155_en('qorchah', add=' &#11088; <a href="ezekiel-27.html#v27-31">Ezekiel 27:31</a> (now on these pages): &lsquo;they will make themselves bald for you&rsquo;.')
+_dict155_es('qorchah', add=' &#11088; <a href="ezekiel-27.es.html#v27-31">Ezequiel 27:31</a> (ya en estas páginas): «se harán calvos por ti».')
+_ency155_en('tyre', add=' &#11088; <a href="ezekiel-27.html#v27-3">Ezekiel 27:3</a> (now on these pages): Tyre, pictured as a ship, calls herself the perfection of beauty and is wrecked in the heart of the seas.')
+_enc_l4_es('tyre', ' &#11088; <a href="ezekiel-27.es.html#v27-3">Ezequiel 27:3</a> (ya en estas páginas): Tiro, pintada como una nave, se llama de perfecta hermosura y naufraga en el corazón de los mares.')
+_ency155_en('sidon', add=' &#11088; <a href="ezekiel-27.html#v27-8">Ezekiel 27:8</a> (now on these pages): men of Sidon row for Tyre.')
+_enc_l4_es('sidon', ' &#11088; <a href="ezekiel-27.es.html#v27-8">Ezequiel 27:8</a> (ya en estas páginas): hombres de Sidón reman para Tiro.')
+_ency155_en('kittim', add=' &#11088; <a href="ezekiel-27.html#v27-6">Ezekiel 27:6</a> (now on these pages): ivory with boxwood from the islands of Kittim.')
+_enc_l4_es('kittim', ' &#11088; <a href="ezekiel-27.es.html#v27-6">Ezequiel 27:6</a> (ya en estas páginas): marfil con boj de las islas de Quitim.')
+_ency155_en('damascus', add=' &#11088; <a href="ezekiel-27.html#v27-18">Ezekiel 27:18</a> (now on these pages): Damascus trades wine of Helbon and white wool to Tyre.')
+_enc_l4_es('damascus', ' &#11088; <a href="ezekiel-27.es.html#v27-18">Ezequiel 27:18</a> (ya en estas páginas): Damasco comercia vino de Helbón y lana blanca con Tiro.')
+_ency155_en('kedar', add=' &#11088; <a href="ezekiel-27.html#v27-21">Ezekiel 27:21</a> (now on these pages): the princes of Kedar deal with Tyre in lambs, rams and he-goats.')
+_enc_l4_es('kedar', ' &#11088; <a href="ezekiel-27.es.html#v27-21">Ezequiel 27:21</a> (ya en estas páginas): los príncipes de Cedar comercian con Tiro en corderos, carneros y machos cabríos.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-27.html">Ezekiel 27</a> (now on these pages): the dirge for Tyre as a ship, with the list of those who traded with her.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-27.es.html">Ezequiel 27</a> (ya en estas páginas): la endecha por Tiro como una nave, con la lista de los que comerciaban con ella.')
+
+CHRON_CHAPTERS["ezek27"] = dict(era="exile",
+    when="Ezekiel is told to take up a dirge for Tyre, pictured as a great ship, with its crew and traders, broken in the heart of the seas.",
+    clock="The chapter gives no date.")
+
+CHAPTER_ART["ezek27"] = [dict(
+    file="cma-egyptian-boats-female-mourners.jpg",
+    title="Two Boats with Female Mourners",
+    title_es="Dos barcas con plañideras",
+    artist="Unknown maker, Egypt, Late period", artist_es="Autor desconocido, Egipto, Período Tardío",
+    year="c. 667–647 BCE", year_es="hacia 667–647 a. C.", location="Cleveland Museum of Art, 1951.282", location_es="Museo de Arte de Cleveland, 1951.282",
+    alt="Limestone relief of two long boats with oars, crowded with women raising their arms in mourning, with a man standing at one end of each.",
+    alt_es="Relieve de piedra caliza con dos barcas largas con remos, llenas de mujeres que alzan los brazos en señal de duelo, con un hombre de pie en un extremo de cada una.",
+    note="Boats, oars and mourners, for a dirge over a ship. The relief shows part of an Egyptian funeral flotilla; it is not Tyre or its sailors.",
+    note_es="Barcas, remos y dolientes, para una endecha por una nave. El relieve muestra parte de una flotilla funeraria egipcia; no es Tiro ni sus marineros.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1951.282",
+)]
