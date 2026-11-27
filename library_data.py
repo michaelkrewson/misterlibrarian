@@ -4048,7 +4048,7 @@ DICTIONARY = [
      "homonym, to roast (Psalm 38:8's burning loins), shares the letters and nothing else. The shelf reads "
      "'seem vile' (KJV, ASV), 'appear despised' (Geneva), 'degraded' (NIV, TLB), 'disgraced' (NWT 1984) and, "
      "after its Latin, 'shamefully torn' (Douay)."
-     " ⭐ Its causative, <em>maqleh</em>, is the second of Deuteronomy 27&rsquo;s twelve curses: <em>cursed is he who makes light of his father or his mother</em> (<a href=\"deuteronomy-27.html#v27-16\">27:16</a>, now on these pages) &mdash; <span data-heb=\"מקלה\">a form in <strong>one verse</strong> of the Hebrew Bible</span>, and the exact opposite of the commandment&rsquo;s <em>honour</em>, <em>kabbed</em>, make heavy. <a href=\"ezekiel-22.html#v22-7\">Ezekiel 22:7</a> (now on these pages) indicts Jerusalem with the same verb, <em>father and mother they made light of in you</em>.",
+     " ⭐ Its causative, <em>maqleh</em>, is the second of Deuteronomy 27&rsquo;s twelve curses: <em>cursed is he who makes light of his father or his mother</em> (<a href=\"deuteronomy-27.html#v27-16\">27:16</a>, now on these pages) &mdash; <span data-heb=\"מקלה\">a form in <strong>one verse</strong> of the Hebrew Bible</span>, and the exact opposite of the commandment&rsquo;s <em>honour</em>, <em>kabbed</em>, make heavy. <a href=\"ezekiel-22.html#v22-7\">Ezekiel 22:7</a> (now on these pages) indicts Jerusalem with a kindred verb, <em>father and mother they made light of in you</em>.",
      ("Deuteronomy", 25, 3)),
     ("chasam", "chasam", "חָסַם", "chasam",
      "TO MUZZLE — to stop a mouth; and, once, to block a road. <span data-heb=\"חסם|חסמת\">The verb stands in "
@@ -31108,7 +31108,7 @@ DICTIONARY_ES["qalah"] = ("qalah / niqlah",
     "no la misma palabra; un tercer homónimo, tostar (los lomos ardientes del Salmo 38:8), comparte las letras y "
     "nada más. El estante lee «seem vile» (KJV, ASV), «appear despised» (Ginebra), «degraded» (NIV, TLB), "
     "«disgraced» (NWT 1984) y, siguiendo a su latín, «shamefully torn» (Douay); la RV 1909 «se envilezca»."
-    " ⭐ Su causativo, <em>maqleh</em>, es la segunda de las doce maldiciones de Deuteronomio 27: <em>maldito el que tenga en poco a su padre o a su madre</em> (<a href=\"deuteronomy-27.es.html#v27-16\">27:16</a>, ya en estas páginas) —<span data-heb=\"מקלה\">una forma en <strong>un versículo</strong> de la Biblia hebrea</span>, y el contrario exacto del <em>honra</em> del mandamiento, <em>kabbed</em>, haz pesado. <a href=\"ezekiel-22.es.html#v22-7\">Ezequiel 22:7</a> (ya en estas páginas) acusa a Jerusalén con el mismo verbo, <em>a padre y madre tuvieron en poco en ti</em>.")
+    " ⭐ Su causativo, <em>maqleh</em>, es la segunda de las doce maldiciones de Deuteronomio 27: <em>maldito el que tenga en poco a su padre o a su madre</em> (<a href=\"deuteronomy-27.es.html#v27-16\">27:16</a>, ya en estas páginas) —<span data-heb=\"מקלה\">una forma en <strong>un versículo</strong> de la Biblia hebrea</span>, y el contrario exacto del <em>honra</em> del mandamiento, <em>kabbed</em>, haz pesado. <a href=\"ezekiel-22.es.html#v22-7\">Ezequiel 22:7</a> (ya en estas páginas) acusa a Jerusalén con un verbo emparentado, <em>a padre y madre tuvieron en poco en ti</em>.")
 
 DICTIONARY_ES["chasam"] = ("chasam",
     "PONER BOZAL —tapar una boca; y, una vez, obstruir un camino. <span data-heb=\"חסם|חסמת\">El verbo está en "
