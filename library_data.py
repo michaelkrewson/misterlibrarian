@@ -64214,7 +64214,7 @@ _dict155_en('shabbat-noun', add=' &#11088; <a href="ezekiel-20.html#v20-12">Ezek
 _dict155_es('shabbat-noun', add=' &#11088; <a href="ezekiel-20.es.html#v20-12">Ezequiel 20:12</a> (ya en estas páginas): los sábados se dan como señal, y luego son profanados.')
 _dict155_en('ot', add=' &#11088; <a href="ezekiel-20.html#v20-12">Ezekiel 20:12</a> (now on these pages): the Sabbaths are &lsquo;a sign between me and them&rsquo;.')
 _dict155_es('ot', add=' &#11088; <a href="ezekiel-20.es.html#v20-12">Ezequiel 20:12</a> (ya en estas páginas): los sábados son «una señal entre yo y ellos».')
-_dict155_en('marah', add=' &#11088; <a href="ezekiel-20.html#v20-8">Ezekiel 20:8</a> (now on these pages): &lsquo;they rebelled against me&rsquo;, said again of the next generation at verses 13 and 21.')
+_dict155_en('marah', add=' &#11088; <a href="ezekiel-20.html#v20-8">Ezekiel 20:8</a> (now on these pages): &lsquo;they rebelled against me&rsquo;, said of the first generation again at verse 13 and of their sons at verse 21.')
 _dict155_es('marah', add=' &#11088; <a href="ezekiel-20.es.html#v20-8">Ezequiel 20:8</a> (ya en estas páginas): «se rebelaron contra mí», dicho otra vez en los versículos 13 y 21.')
 _dict155_en('shevet', add=' &#11088; <a href="ezekiel-20.html#v20-37">Ezekiel 20:37</a> (now on these pages): &lsquo;I will make you pass under the rod&rsquo;.')
 _dict155_es('shevet', add=' &#11088; <a href="ezekiel-20.es.html#v20-37">Ezequiel 20:37</a> (ya en estas páginas): «los haré pasar bajo la vara».')
