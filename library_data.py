@@ -64485,8 +64485,10 @@ CHAPTER_ART["ezek26"] = [dict(
     year="1839", year_es="1839", location="Cleveland Museum of Art, 1927.135", location_es="Museo de Arte de Cleveland, 1927.135",
     alt="Color lithograph of a town on a low headland with the sea on both sides, seen from a neck of land where fallen columns lie in the foreground.",
     alt_es="Litografía en color de una población sobre un promontorio bajo con el mar a ambos lados, vista desde una lengua de tierra con columnas caídas en primer plano.",
-    note="Tyre as it looked from the isthmus in April 1839, the date lettered on the plate. The town shown is of a much later age than Ezekiel&rsquo;s.",
-    note_es="Tiro vista desde el istmo en abril de 1839, la fecha escrita en la lámina. La población que se ve es de una época muy posterior a la de Ezequiel.",
+    note="Tyre seen from the isthmus, in 1839.",
+    note_es="Tiro vista desde el istmo, en 1839.",
     license="CC0",
     source_url="https://clevelandart.org/art/1927.135",
 )]
+_dict155_en('matzevah', add=' &#11088; <a href="ezekiel-26.html#v26-11">Ezekiel 26:11</a> (now on these pages): &lsquo;the standing stones of your power&rsquo;, of Tyre.')
+_dict155_es('matzevah', add=' &#11088; <a href="ezekiel-26.es.html#v26-11">Ezequiel 26:11</a> (ya en estas páginas): «las piedras alzadas de tu poder», de Tiro.')
