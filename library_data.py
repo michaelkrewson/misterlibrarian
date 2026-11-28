@@ -64608,3 +64608,50 @@ CHAPTER_ART["ezek28"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1968.47",
 )]
+
+# ======================================================================== Ezekiel 29 (both languages)
+DICTIONARY_ES.setdefault("yeor", ("yeor", 'El NILO &mdash;la palabra que Egipto mismo daba a su río (egipcio itrw), usada en hebreo casi solo para el Nilo (la KJV inglesa dice &laquo;the river&raquo;; la NWT inglesa, &laquo;the Nile River&raquo;). Los niños son arrojados al ye&rsquo;or (1:22), el mismo río en que flotará una cesta (2:3), y el primero que las plagas convierten en sangre (7:20). Prestada una vez, memorablemente, para el Tigris de la visión de Daniel (Daniel 12:5).'))
+_dict155_en('tannin', add=' &#11088; <a href="ezekiel-29.html#v29-3">Ezekiel 29:3</a> (now on these pages): Pharaoh is &lsquo;the great sea-beast&rsquo;, spelled here <em>tannim</em>.')
+_dict155_es('tannin', add=' &#11088; <a href="ezekiel-29.es.html#v29-3">Ezequiel 29:3</a> (ya en estas páginas): el faraón es «la gran bestia marina», escrita aquí <em>tannim</em>.')
+_dict155_en('yeor', add=' &#11088; <a href="ezekiel-29.html#v29-3">Ezekiel 29:3</a> (now on these pages): &lsquo;My Nile is my own&rsquo;; the plural is printed &lsquo;canals&rsquo;.')
+_dict155_es('yeor', add=' &#11088; <a href="ezekiel-29.es.html#v29-3">Ezequiel 29:3</a> (ya en estas páginas): «Mi Nilo es mío»; el plural se imprime «canales».')
+_dict155_en('qaneh', add=' &#11088; <a href="ezekiel-29.html#v29-6">Ezekiel 29:6</a> (now on these pages): Egypt has been &lsquo;a staff of reed&rsquo; to Israel.')
+_dict155_es('qaneh', add=' &#11088; <a href="ezekiel-29.es.html#v29-6">Ezequiel 29:6</a> (ya en estas páginas): Egipto ha sido «un bastón de caña» para Israel.')
+_dict155_en('shevut', add=' &#11088; <a href="ezekiel-29.html#v29-14">Ezekiel 29:14</a> (now on these pages): &lsquo;I will turn the captivity of Egypt&rsquo;.')
+_dict155_es('shevut', add=' &#11088; <a href="ezekiel-29.es.html#v29-14">Ezequiel 29:14</a> (ya en estas páginas): «haré volver el cautiverio de Egipto».')
+_dict155_en('shafal', add=' &#11088; <a href="ezekiel-29.html#v29-14">Ezekiel 29:14</a> (now on these pages): Egypt will be &lsquo;a low kingdom&rsquo;.')
+_dict155_es('shafal', add=' &#11088; <a href="ezekiel-29.es.html#v29-14">Ezequiel 29:14</a> (ya en estas páginas): Egipto será «un reino bajo».')
+_dict155_en('sakhar', add=' &#11088; <a href="ezekiel-29.html#v29-18">Ezekiel 29:18</a> (now on these pages): no wages from Tyre, and Egypt as wages (also verse 19).')
+_dict155_es('sakhar', add=' &#11088; <a href="ezekiel-29.es.html#v29-18">Ezequiel 29:18</a> (ya en estas páginas): ningún salario de Tiro, y Egipto como salario (también el versículo 19).')
+_dict155_en('baz', add=' &#11088; <a href="ezekiel-29.html#v29-19">Ezekiel 29:19</a> (now on these pages): &lsquo;take her spoil and seize her plunder&rsquo;.')
+_dict155_es('baz', add=' &#11088; <a href="ezekiel-29.es.html#v29-19">Ezequiel 29:19</a> (ya en estas páginas): «tomará su despojo y arrebatará su botín».')
+_dict155_en('qeren', add=' &#11088; <a href="ezekiel-29.html#v29-21">Ezekiel 29:21</a> (now on these pages): &lsquo;I will make a horn sprout for the house of Israel&rsquo;.')
+_dict155_es('qeren', add=' &#11088; <a href="ezekiel-29.es.html#v29-21">Ezequiel 29:21</a> (ya en estas páginas): «haré brotar un cuerno para la casa de Israel».')
+_ency155_en('pharaoh', add=' &#11088; <a href="ezekiel-29.html#v29-3">Ezekiel 29:3</a> (now on these pages): an unnamed Pharaoh is called the great sea-beast in the midst of his canals.')
+_enc_l4_es('pharaoh', ' &#11088; <a href="ezekiel-29.es.html#v29-3">Ezequiel 29:3</a> (ya en estas páginas): un faraón sin nombre es llamado la gran bestia marina en medio de sus canales.')
+_ency155_en('egypt', add=' &#11088; <a href="ezekiel-29.html#v29-9">Ezekiel 29:9</a> (now on these pages): Egypt is to be desolate forty years and then to be a low kingdom.')
+_enc_l4_es('egypt', ' &#11088; <a href="ezekiel-29.es.html#v29-9">Ezequiel 29:9</a> (ya en estas páginas): Egipto ha de quedar desolado cuarenta años y después ser un reino bajo.')
+_ency155_en('cush', add=' &#11088; <a href="ezekiel-29.html#v29-10">Ezekiel 29:10</a> (now on these pages): the desolation reaches to the border of Cush.')
+_enc_l4_es('cush', ' &#11088; <a href="ezekiel-29.es.html#v29-10">Ezequiel 29:10</a> (ya en estas páginas): la desolación llega hasta la frontera de Cus.')
+_ency155_en('nebuchadnezzar', add=' &#11088; <a href="ezekiel-29.html#v29-19">Ezekiel 29:19</a> (now on these pages): Egypt is given to him as wages for his army&rsquo;s service against Tyre.')
+_enc_l4_es('nebuchadnezzar', ' &#11088; <a href="ezekiel-29.es.html#v29-19">Ezequiel 29:19</a> (ya en estas páginas): se le da Egipto como salario por el servicio de su ejército contra Tiro.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-29.html">Ezekiel 29</a> (now on these pages): against Pharaoh and Egypt, and Egypt given to Nebuchadrezzar as wages.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-29.es.html">Ezequiel 29</a> (ya en estas páginas): contra el faraón y Egipto, y Egipto dado a Nabucodonosor como salario.')
+
+CHRON_CHAPTERS["ezek29"] = dict(era="exile",
+    when="Ezekiel prophesies against Pharaoh and all Egypt; a later word in the same chapter gives Egypt to Nebuchadrezzar as wages for his army.",
+    clock="The tenth year, tenth month, twelfth day; verse 17 is dated in the twenty-seventh year, on the first of the first month.")
+
+CHAPTER_ART["ezek29"] = [dict(
+    file="cma-egyptian-spearing-fish.jpg",
+    title="Spearing Fish",
+    title_es="Pesca de peces con arpón",
+    artist="Unknown maker, Egypt, Late period", artist_es="Autor desconocido, Egipto, Período Tardío",
+    year="c. 667–647 BCE", year_es="hacia 667–647 a. C.", location="Cleveland Museum of Art, 1949.499", location_es="Museo de Arte de Cleveland, 1949.499",
+    alt="Painted limestone relief of two large fish on a spear against blue water, with tall papyrus stems around them.",
+    alt_es="Relieve de piedra caliza pintada con dos peces grandes ensartados contra agua azul, rodeados de tallos altos de papiro.",
+    note="Egyptian fish among papyrus, for the fish of verses 4 and 5. It is a scene of fishing, not an illustration of the chapter.",
+    note_es="Peces egipcios entre papiros, para los peces de los versículos 4 y 5. Es una escena de pesca, no una ilustración del capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1949.499",
+)]
