@@ -64655,3 +64655,53 @@ CHAPTER_ART["ezek29"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1949.499",
 )]
+
+# ======================================================================== Ezekiel 30 (both languages)
+_dict155_en('yom-yhwh', add=' &#11088; <a href="ezekiel-30.html#v30-3">Ezekiel 30:3</a> (now on these pages): &lsquo;a day is near for Jehovah&rsquo;, over Egypt.')
+_dict155_es('yom-yhwh', add=' &#11088; <a href="ezekiel-30.es.html#v30-3">Ezequiel 30:3</a> (ya en estas páginas): «un día está cerca para Jehová», sobre Egipto.')
+_dict155_en('hamon', add=' &#11088; <a href="ezekiel-30.html#v30-4">Ezekiel 30:4</a> (now on these pages): &lsquo;they will take her multitude&rsquo; (also verses 10 and 15).')
+_dict155_es('hamon', add=' &#11088; <a href="ezekiel-30.es.html#v30-4">Ezequiel 30:4</a> (ya en estas páginas): «se llevarán su multitud» (también los versículos 10 y 15).')
+_dict155_en('yeor', add=' &#11088; <a href="ezekiel-30.html#v30-12">Ezekiel 30:12</a> (now on these pages): &lsquo;I will make the canals dry land&rsquo;.')
+_dict155_es('yeor', add=' &#11088; <a href="ezekiel-30.es.html#v30-12">Ezequiel 30:12</a> (ya en estas páginas): «haré de los canales tierra seca».')
+_dict155_en('gillulim', add=' &#11088; <a href="ezekiel-30.html#v30-13">Ezekiel 30:13</a> (now on these pages): &lsquo;I will make the idols perish&rsquo;, in Egypt.')
+_dict155_es('gillulim', add=' &#11088; <a href="ezekiel-30.es.html#v30-13">Ezequiel 30:13</a> (ya en estas páginas): «haré perecer los ídolos», en Egipto.')
+_dict155_en('elil', add=' &#11088; <a href="ezekiel-30.html#v30-13">Ezekiel 30:13</a> (now on these pages): &lsquo;make the worthless things cease from Noph&rsquo;.')
+_dict155_es('elil', add=' &#11088; <a href="ezekiel-30.es.html#v30-13">Ezequiel 30:13</a> (ya en estas páginas): «haré cesar de Nof las cosas vanas».')
+_dict155_en('shephatim', add=' &#11088; <a href="ezekiel-30.html#v30-14">Ezekiel 30:14</a> (now on these pages): &lsquo;do acts of judgment in No&rsquo; (also verse 19).')
+_dict155_es('shephatim', add=' &#11088; <a href="ezekiel-30.es.html#v30-14">Ezequiel 30:14</a> (ya en estas páginas): «haré actos de juicio en No» (también el versículo 19).')
+_dict155_en('zeroa', add=' &#11088; <a href="ezekiel-30.html#v30-21">Ezekiel 30:21</a> (now on these pages): Pharaoh&rsquo;s arm is broken, and the king of Babylon&rsquo;s arms are strengthened.')
+_dict155_es('zeroa', add=' &#11088; <a href="ezekiel-30.es.html#v30-21">Ezequiel 30:21</a> (ya en estas páginas): el brazo del faraón está quebrado, y los brazos del rey de Babilonia se fortalecen.')
+_dict155_en('chavash', add=' &#11088; <a href="ezekiel-30.html#v30-21">Ezekiel 30:21</a> (now on these pages): the broken arm has not been bound up.')
+_dict155_es('chavash', add=' &#11088; <a href="ezekiel-30.es.html#v30-21">Ezequiel 30:21</a> (ya en estas páginas): el brazo quebrado no ha sido vendado.')
+_ency155_en('cush', add=' &#11088; <a href="ezekiel-30.html#v30-4">Ezekiel 30:4</a> (now on these pages): anguish comes on Cush when the slain fall in Egypt.')
+_enc_l4_es('cush', ' &#11088; <a href="ezekiel-30.es.html#v30-4">Ezequiel 30:4</a> (ya en estas páginas): la angustia viene sobre Cus cuando caen los muertos en Egipto.')
+_ency155_en('egypt', add=' &#11088; <a href="ezekiel-30.html#v30-6">Ezekiel 30:6</a> (now on these pages): those who support Egypt fall, and her cities are named one by one.')
+_enc_l4_es('egypt', ' &#11088; <a href="ezekiel-30.es.html#v30-6">Ezequiel 30:6</a> (ya en estas páginas): caen los que sostienen a Egipto, y se nombran sus ciudades una por una.')
+_ency155_en('nebuchadnezzar', add=' &#11088; <a href="ezekiel-30.html#v30-10">Ezekiel 30:10</a> (now on these pages): by his hand the multitude of Egypt is to cease.')
+_enc_l4_es('nebuchadnezzar', ' &#11088; <a href="ezekiel-30.es.html#v30-10">Ezequiel 30:10</a> (ya en estas páginas): por su mano ha de cesar la multitud de Egipto.')
+_ency155_en('zoan', add=' &#11088; <a href="ezekiel-30.html#v30-14">Ezekiel 30:14</a> (now on these pages): &lsquo;set a fire in Zoan&rsquo;.')
+_enc_l4_es('zoan', ' &#11088; <a href="ezekiel-30.es.html#v30-14">Ezequiel 30:14</a> (ya en estas páginas): «prenderé fuego en Zoán».')
+_ency155_en('on-heliopolis', add=' &#11088; <a href="ezekiel-30.html#v30-17">Ezekiel 30:17</a> (now on these pages): the young men of Aven, pointed as &lsquo;wickedness&rsquo;, fall by the sword.')
+_enc_l4_es('on-heliopolis', ' &#11088; <a href="ezekiel-30.es.html#v30-17">Ezequiel 30:17</a> (ya en estas páginas): los jóvenes de Avén, puntuado como «maldad», caen a espada.')
+_ency155_en('pharaoh', add=' &#11088; <a href="ezekiel-30.html#v30-21">Ezekiel 30:21</a> (now on these pages): the arm of an unnamed Pharaoh is broken.')
+_enc_l4_es('pharaoh', ' &#11088; <a href="ezekiel-30.es.html#v30-21">Ezequiel 30:21</a> (ya en estas páginas): el brazo de un faraón sin nombre está quebrado.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-30.html">Ezekiel 30</a> (now on these pages): a day is near for Egypt, and Pharaoh&rsquo;s arm is broken.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-30.es.html">Ezequiel 30</a> (ya en estas páginas): un día está cerca para Egipto, y el brazo del faraón está quebrado.')
+
+CHRON_CHAPTERS["ezek30"] = dict(era="exile",
+    when="Ezekiel is told to say that a day is near for Egypt and its allies, and that the arm of Pharaoh is broken while the king of Babylon's arms are strengthened.",
+    clock="Verses 1 to 19 give no date; verse 20 is dated in the eleventh year, on the seventh of the first month.")
+
+CHAPTER_ART["ezek30"] = [dict(
+    file="cma-frith-fallen-statue-thebes.jpg",
+    title="Fallen Statue at the Ramesseum, Thebes",
+    title_es="Estatua caída en el Ramesseum, Tebas",
+    artist="Francis Frith (British, 1822–1898)", artist_es="Francis Frith (británico, 1822–1898)",
+    year="1857", year_es="1857", location="Cleveland Museum of Art, 1992.236", location_es="Museo de Arte de Cleveland, 1992.236",
+    alt="Black-and-white photograph of tall carved figures beside a huge fallen statue in pieces, with a few people and donkeys in front.",
+    alt_es="Fotografía en blanco y negro de altas figuras talladas junto a una enorme estatua caída en pedazos, con algunas personas y burros delante.",
+    note="Some versions print &lsquo;Thebes&rsquo; where this chapter has &lsquo;No&rsquo; (verses 14 to 16). The photograph is of 1857 and is not a scene from the chapter.",
+    note_es="Algunas versiones imprimen «Tebas» donde este capítulo tiene «No» (versículos 14 a 16). La fotografía es de 1857 y no es una escena del capítulo.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/1992.236",
+)]
