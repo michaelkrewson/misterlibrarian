@@ -64705,3 +64705,5 @@ CHAPTER_ART["ezek30"] = [dict(
     license="CC0",
     source_url="https://clevelandart.org/art/1992.236",
 )]
+DICTIONARY_ES.setdefault("yom-yhwh", ("yom YHWH", 'EL DÍA DE JEHOVÁ &mdash;el día en que Dios actúa de modo decisivo para juzgar y vindicar. &#9888; En Joel se vuelve doctrina: la frase aparece cinco veces en sus cuatro capítulos, más concentrada que en ningún otro lugar de la Biblia. Y el punto que el lector no debe perder es que NO ES SOLO PARA LOS ENEMIGOS DE ISRAEL: Amós ya lo había dicho con amargura («¿para qué queréis el día de Jehová? es tinieblas y no luz», 5:18), y en Joel las langostas sobre los propios campos de Judá son su borde cercano. Sigue por Sofonías, Malaquías y, en vestido griego, hasta el «día del Señor» del Nuevo Testamento. &#11088; <a href="ezekiel-30.es.html#v30-3">Ezequiel 30:3</a> (ya en estas páginas): «un día está cerca para Jehová», sobre Egipto; el versículo no usa la frase misma.'))
+_dict155_en("yom-yhwh", add=' The verse has &lsquo;for Jehovah&rsquo;, not the phrase itself.')
