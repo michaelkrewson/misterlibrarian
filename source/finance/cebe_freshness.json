@@ -1,181 +1,181 @@
 {
  "ABTC": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "5c49aad80902",
   "stale": true
  },
  "ASST": {
-  "age_days": 4,
+  "age_days": 5,
   "changed": "2026-11-23",
   "confirmed": "2026-11-23",
   "fingerprint": "55e3a753bcb8",
   "stale": false
  },
  "BLSH": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "46987431e23a",
   "stale": true
  },
  "BSTR": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "184ed6d0ce51",
   "stale": true
  },
  "CAN": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "349e05ec78e3",
   "stale": true
  },
  "CANG": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "7a57761b8ef6",
   "stale": true
  },
  "CIFR": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "9a4169b27659",
   "stale": true
  },
  "CLSK": {
-  "age_days": 6,
+  "age_days": 7,
   "changed": "2026-11-21",
   "confirmed": "2026-11-21",
   "fingerprint": "a552afa09ab1",
   "stale": false
  },
  "COIN": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "81db267a0e8e",
   "stale": true
  },
  "CPTLF": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "a85c13c2f9a5",
   "stale": true
  },
  "DDC": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "c9b79e5c68cf",
   "stale": true
  },
  "DJT": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "e6b43e97d812",
   "stale": true
  },
  "FUFU": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "52321afeb4e5",
   "stale": true
  },
  "HOGPF": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "a184d1f95a1a",
   "stale": true
  },
  "HUT": {
-  "age_days": 5,
+  "age_days": 6,
   "changed": "2026-11-22",
   "confirmed": "2026-11-22",
   "fingerprint": "600ffe11092a",
   "stale": false
  },
  "KULR": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "dbe2d14b7d85",
   "stale": true
  },
  "MARA": {
-  "age_days": 6,
+  "age_days": 7,
   "changed": "2026-11-21",
   "confirmed": "2026-11-21",
   "fingerprint": "e9ab2039d288",
   "stale": false
  },
  "MSTR": {
-  "age_days": 4,
+  "age_days": 5,
   "changed": "2026-11-23",
   "confirmed": "2026-11-23",
   "fingerprint": "850e20318012",
   "stale": false
  },
  "MTPLF": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "2dc246f0d422",
   "stale": true
  },
  "RIOT": {
-  "age_days": 6,
+  "age_days": 7,
   "changed": "2026-11-21",
   "confirmed": "2026-11-21",
   "fingerprint": "14523e06473e",
   "stale": false
  },
  "TSLA": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "13d1beeca7ad",
   "stale": true
  },
  "TSWCF": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "3fc51800db30",
   "stale": true
  },
  "VIDA": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "3d1a57f05de7",
   "stale": true
  },
  "XXI": {
-  "age_days": 6,
+  "age_days": 7,
   "changed": "2026-11-21",
   "confirmed": "2026-11-21",
   "fingerprint": "f4a8c1846320",
   "stale": false
  },
  "XYZ": {
-  "age_days": 5,
+  "age_days": 6,
   "changed": "2026-11-22",
   "confirmed": "2026-11-22",
   "fingerprint": "1230ab333fae",
   "stale": false
  },
  "ZOOZ": {
-  "age_days": 80,
+  "age_days": 81,
   "changed": "2026-09-08",
   "confirmed": "2026-09-08",
   "fingerprint": "7076bb0f2ef4",
