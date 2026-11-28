@@ -64707,3 +64707,47 @@ CHAPTER_ART["ezek30"] = [dict(
 )]
 DICTIONARY_ES.setdefault("yom-yhwh", ("yom YHWH", 'EL DÍA DE JEHOVÁ &mdash;el día en que Dios actúa de modo decisivo para juzgar y vindicar. &#9888; En Joel se vuelve doctrina: la frase aparece cinco veces en sus cuatro capítulos, más concentrada que en ningún otro lugar de la Biblia. Y el punto que el lector no debe perder es que NO ES SOLO PARA LOS ENEMIGOS DE ISRAEL: Amós ya lo había dicho con amargura («¿para qué queréis el día de Jehová? es tinieblas y no luz», 5:18), y en Joel las langostas sobre los propios campos de Judá son su borde cercano. Sigue por Sofonías, Malaquías y, en vestido griego, hasta el «día del Señor» del Nuevo Testamento. &#11088; <a href="ezekiel-30.es.html#v30-3">Ezequiel 30:3</a> (ya en estas páginas): «un día está cerca para Jehová», sobre Egipto; el versículo no usa la frase misma.'))
 _dict155_en("yom-yhwh", add=' The verse has &lsquo;for Jehovah&rsquo;, not the phrase itself.')
+
+# ======================================================================== Ezekiel 31 (both languages)
+_dict155_en('seippim', old='boughs (Ezekiel 31:6) and clefts in rock (Isaiah 2:21), neither yet on these pages', new='the forks of a tree (<a href="ezekiel-31.html#v31-6">Ezekiel 31:6</a>, now on these pages) and clefts in rock (Isaiah 2:21, not yet on these pages)')
+_dict155_es('seippim', old='las ramas (Ezequiel 31:6) y las hendiduras de la roca (Isaías 2:21), ninguno todavía en estas páginas', new='las horquillas de un árbol (<a href="ezekiel-31.es.html#v31-6">Ezequiel 31:6</a>, ya en estas páginas) y las hendiduras de la roca (Isaías 2:21, todavía no en estas páginas)')
+_dict155_en('tsel', add=' &#11088; <a href="ezekiel-31.html#v31-6">Ezekiel 31:6</a> (now on these pages): &lsquo;in its shade sat all the many nations&rsquo;.')
+_dict155_es('tsel', add=' &#11088; <a href="ezekiel-31.es.html#v31-6">Ezequiel 31:6</a> (ya en estas páginas): «a su sombra se sentaban todas las muchas naciones».')
+_dict155_en('sheol', add=' &#11088; <a href="ezekiel-31.html#v31-15">Ezekiel 31:15</a> (now on these pages): &lsquo;on the day it went down to Sheol&rsquo; (also verses 16 and 17).')
+_dict155_es('sheol', add=' &#11088; <a href="ezekiel-31.es.html#v31-15">Ezequiel 31:15</a> (ya en estas páginas): «el día en que descendió al Seol» (también los versículos 16 y 17).')
+_dict155_en('tehom', add=' &#11088; <a href="ezekiel-31.html#v31-15">Ezekiel 31:15</a> (now on these pages): the deep is covered in mourning for the fallen tree.')
+_dict155_es('tehom', add=' &#11088; <a href="ezekiel-31.es.html#v31-15">Ezequiel 31:15</a> (ya en estas páginas): se cubre el abismo en duelo por el árbol caído.')
+_dict155_en('bor', add=' &#11088; <a href="ezekiel-31.html#v31-16">Ezekiel 31:16</a> (now on these pages): &lsquo;with those who go down to the pit&rsquo;.')
+_dict155_es('bor', add=' &#11088; <a href="ezekiel-31.es.html#v31-16">Ezequiel 31:16</a> (ya en estas páginas): «con los que descienden a la fosa».')
+_dict155_en('kavod', add=' &#11088; <a href="ezekiel-31.html#v31-18">Ezekiel 31:18</a> (now on these pages): &lsquo;Whom are you like in this way, in glory and in greatness&rsquo;.')
+_dict155_es('kavod', add=' &#11088; <a href="ezekiel-31.es.html#v31-18">Ezequiel 31:18</a> (ya en estas páginas): «¿A quién te pareces así, en gloria y en grandeza?».')
+_dict155_en('arel', add=' &#11088; <a href="ezekiel-31.html#v31-18">Ezekiel 31:18</a> (now on these pages): &lsquo;in the midst of the uncircumcised you will lie&rsquo;.')
+_dict155_es('arel', add=' &#11088; <a href="ezekiel-31.es.html#v31-18">Ezequiel 31:18</a> (ya en estas páginas): «en medio de los incircuncisos yacerás».')
+_ency155_en('pharaoh', add=' &#11088; <a href="ezekiel-31.html#v31-2">Ezekiel 31:2</a> (now on these pages): an unnamed Pharaoh is asked whom he is like, and is shown a fallen cedar.')
+_enc_l4_es('pharaoh', ' &#11088; <a href="ezekiel-31.es.html#v31-2">Ezequiel 31:2</a> (ya en estas páginas): a un faraón sin nombre se le pregunta a quién se parece, y se le muestra un cedro caído.')
+_ency155_en('assyria', add=' &#11088; <a href="ezekiel-31.html#v31-3">Ezekiel 31:3</a> (now on these pages): Assyria is pictured as a cedar in Lebanon, cut down by strangers.')
+_enc_l4_es('assyria', ' &#11088; <a href="ezekiel-31.es.html#v31-3">Ezequiel 31:3</a> (ya en estas páginas): Asiria se pinta como un cedro en el Líbano, cortado por extraños.')
+_ency155_en('lebanon', add=' &#11088; <a href="ezekiel-31.html#v31-3">Ezekiel 31:3</a> (now on these pages): the great cedar stands in Lebanon, and Lebanon is darkened over it (verse 15).')
+_enc_l4_es('lebanon', ' &#11088; <a href="ezekiel-31.es.html#v31-3">Ezequiel 31:3</a> (ya en estas páginas): el gran cedro está en el Líbano, y el Líbano se oscurece por él (versículo 15).')
+_ency155_en('eden', add=' &#11088; <a href="ezekiel-31.html#v31-9">Ezekiel 31:9</a> (now on these pages): the trees of Eden in the garden of God envy the cedar.')
+_enc_l4_es('eden', ' &#11088; <a href="ezekiel-31.es.html#v31-9">Ezequiel 31:9</a> (ya en estas páginas): los árboles de Edén en el jardín de Dios envidian al cedro.')
+_ency155_en('ezekiel', add=' &#11088; <a href="ezekiel-31.html">Ezekiel 31</a> (now on these pages): Assyria as a great cedar brought down to Sheol, said to Pharaoh and his multitude.')
+_enc_l4_es('ezekiel', ' &#11088; <a href="ezekiel-31.es.html">Ezequiel 31</a> (ya en estas páginas): Asiria como un gran cedro bajado al Seol, dicho al faraón y a su multitud.')
+
+CHRON_CHAPTERS["ezek31"] = dict(era="exile",
+    when="Ezekiel is told to ask Pharaoh and his multitude whom they are like, and to picture Assyria as a cedar cut down and brought to Sheol.",
+    clock="The eleventh year, third month, first day.")
+
+CHAPTER_ART["ezek31"] = [dict(
+    file="cma-cozens-cedar.jpg",
+    title="Delineations of the General Character Ramifications and Foliage of Forest Trees: Cedar",
+    title_es="Delineations of the General Character Ramifications and Foliage of Forest Trees: Cedar",
+    artist="John Robert Cozens (British, 1752–1797)", artist_es="John Robert Cozens (británico, 1752–1797)",
+    year="1789", year_es="1789", location="Cleveland Museum of Art, 2008.56", location_es="Museo de Arte de Cleveland, 2008.56",
+    alt="Etching of a broad, flat-layered cedar on a slope, with a wooded mountain behind it.",
+    alt_es="Grabado de un cedro ancho, de ramas en capas planas, en una ladera, con un monte boscoso detrás.",
+    note="A cedar on a slope, for the cedar of verses 3 to 9.",
+    note_es="Un cedro en una ladera, para el cedro de los versículos 3 a 9.",
+    license="CC0",
+    source_url="https://clevelandart.org/art/2008.56",
+)]
