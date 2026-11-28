@@ -64740,14 +64740,14 @@ CHRON_CHAPTERS["ezek31"] = dict(era="exile",
 
 CHAPTER_ART["ezek31"] = [dict(
     file="cma-cozens-cedar.jpg",
-    title="Cedar, from Delineations of Forest Trees",
-    title_es="Cedro, de Delineations of Forest Trees",
+    title="Delineations of the General Character Ramifications and Foliage of Forest Trees: Cedar",
+    title_es="Delineations of the General Character Ramifications and Foliage of Forest Trees: Cedar",
     artist="John Robert Cozens (British, 1752–1797)", artist_es="John Robert Cozens (británico, 1752–1797)",
     year="1789", year_es="1789", location="Cleveland Museum of Art, 2008.56", location_es="Museo de Arte de Cleveland, 2008.56",
     alt="Etching of a broad, flat-layered cedar on a slope, with a wooded mountain behind it.",
     alt_es="Grabado de un cedro ancho, de ramas en capas planas, en una ladera, con un monte boscoso detrás.",
-    note="A study of a cedar, for the cedar of verses 3 to 9. It was drawn as a study of the tree, not of this chapter.",
-    note_es="Un estudio de un cedro, para el cedro de los versículos 3 a 9. Se hizo como estudio del árbol, no de este capítulo.",
+    note="A cedar on a slope, for the cedar of verses 3 to 9.",
+    note_es="Un cedro en una ladera, para el cedro de los versículos 3 a 9.",
     license="CC0",
     source_url="https://clevelandart.org/art/2008.56",
 )]
